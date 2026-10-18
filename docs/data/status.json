@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T20:37:27+00:00",
+ "generated": "2026-10-18T20:39:29+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -13,15 +13,18 @@
    "game": "fool-the-algorithm",
    "task": "forager feel",
    "since": "2026-10-18T20:37:05+00:00",
-   "activity": "2026-10-18T20:37:27+00:00",
-   "commit": null
+   "activity": "2026-10-18T20:39:27+00:00",
+   "commit": {
+    "at": "2026-10-18T20:37:32+00:00",
+    "subject": "start: the-forager feel and visual pass"
+   }
   },
   {
    "worker": "Claude",
-   "game": "life-statistics",
-   "task": "review of life statistics guide",
-   "since": "2026-10-18T20:22:50+00:00",
-   "activity": "2026-10-18T20:37:21+00:00",
+   "game": "machine-rhythm",
+   "task": "review of machine rhythm guide",
+   "since": "2026-10-18T20:38:24+00:00",
+   "activity": "2026-10-18T20:39:26+00:00",
    "commit": null
   }
  ],
@@ -51,7 +54,7 @@
   },
   {
    "day": "2026-10-18",
-   "changes": 109
+   "changes": 111
   }
  ],
  "houseRules": 15,
@@ -2632,33 +2635,33 @@
    "title": "Life from Statistics",
    "line": "One person's life lies face down as five picture tiles.",
    "url": "https://chenhsieh.github.io/life-statistics/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Hard to follow",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/life-statistics-1.webp",
-   "lastChange": "2026-10-18T19:40:45+00:00",
+   "lastChange": "2026-10-18T20:37:31+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 191550,
     "codexUsdEst": 0.23,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 6,
     "earlierUsdEst": 21.6,
-    "totalUsdEst": 21.83
+    "totalUsdEst": 25.43
    },
    "tasks": [
     {
      "title": "review of life statistics guide",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "",
      "since": "2026-10-18T20:22:50+00:00",
-     "done": null,
+     "done": "2026-10-18T20:22:50+00:00",
      "reviewed": false,
      "commit": null,
      "result": ""
@@ -2670,14 +2673,19 @@
      "plan": "Rewrite the goal and How to play around one core idea, one page per rule.",
      "since": "2026-10-18T17:30:12+00:00",
      "done": "2026-10-18T17:30:12+00:00",
-     "reviewed": false,
+     "reviewed": true,
      "commit": null,
      "result": "Core: “Flip a life clue, then choose the place it fits.” Six one-rule demo pages now lead into level 1’s hand coach."
     }
    ],
    "verdict": null,
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-18T20:37:31+00:00",
+     "ok": true,
+     "note": "review R08: on-screen instruction line, stale truth test fixed"
+    },
     {
      "at": "2026-10-18T19:40:45+00:00",
      "ok": true,
@@ -2720,26 +2728,37 @@
    "title": "Lindy Shelf",
    "line": "Stock a small shop's shelf for one week by dragging each.",
    "url": "https://chenhsieh.github.io/lindy-shelf/",
-   "stage": "review",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Rules unclear",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/lindy-shelf-1.webp",
-   "lastChange": "2026-10-18T19:54:03+00:00",
+   "lastChange": "2026-10-18T20:38:24+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 181898,
     "codexUsdEst": 0.22,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 4,
     "earlierUsdEst": 14.4,
-    "totalUsdEst": 14.62
+    "totalUsdEst": 18.22
    },
    "tasks": [
+    {
+     "title": "review of lindy rules",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-18T20:37:31+00:00",
+     "done": "2026-10-18T20:37:31+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "lindy rules",
      "state": "done",
@@ -2747,14 +2766,19 @@
      "plan": "Every refused placement explains itself; check the shelf rule follows the Lindy effect.",
      "since": "2026-10-18T17:30:12+00:00",
      "done": "2026-10-18T17:30:12+00:00",
-     "reviewed": false,
+     "reviewed": true,
      "commit": null,
      "result": "Players now get on-board reasons for expiry, overlap, and truck refusals, including milk’s use-by day."
     }
    ],
    "verdict": null,
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-18T20:38:24+00:00",
+     "ok": true,
+     "note": "review R09: refusal reasons work live; no change;"
+    },
     {
      "at": "2026-10-18T19:54:03+00:00",
      "ok": true,
@@ -2845,7 +2869,7 @@
    "title": "Machine Rhythm",
    "line": "A toy line runs on its own beat and every machine stamps.",
    "url": "https://chenhsieh.github.io/machine-rhythm/",
-   "stage": "review",
+   "stage": "building",
    "who": "Claude",
    "priority": "P3",
    "priorityNote": "No guidance yet",
@@ -2865,6 +2889,17 @@
     "totalUsdEst": 11.08
    },
    "tasks": [
+    {
+     "title": "review of machine rhythm guide",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-18T20:38:24+00:00",
+     "done": null,
+     "reviewed": false,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "machine rhythm guide",
      "state": "done",
@@ -5123,7 +5158,10 @@
      "since": "2026-10-18T20:37:05+00:00",
      "done": null,
      "reviewed": false,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-18T20:37:32+00:00",
+      "subject": "start: the-forager feel and visual pass"
+     },
      "result": ""
     },
     {
