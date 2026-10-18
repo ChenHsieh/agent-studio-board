@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T19:36:26+00:00",
+ "generated": "2026-10-18T19:38:28+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -13,7 +13,7 @@
    "game": "life-statistics",
    "task": "life statistics guide",
    "since": "2026-10-18T19:24:46+00:00",
-   "activity": "2026-10-18T19:36:10+00:00",
+   "activity": "2026-10-18T19:38:25+00:00",
    "commit": {
     "at": "2026-10-18T19:34:24+00:00",
     "subject": "fix: label guide page controls"
@@ -21,10 +21,10 @@
   },
   {
    "worker": "Claude",
-   "game": "dough-boundary",
-   "task": "review of dough legend",
-   "since": "2026-10-18T19:24:59+00:00",
-   "activity": "2026-10-18T19:29:35+00:00",
+   "game": "floating-city",
+   "task": "review of floating city fix",
+   "since": "2026-10-18T19:37:32+00:00",
+   "activity": "2026-10-18T19:37:32+00:00",
    "commit": null
   }
  ],
@@ -816,19 +816,30 @@
    "title": "Cymatic Plate",
    "line": "Ring notes on a brass plate covered in sand and watch the.",
    "url": "https://chenhsieh.github.io/cymatic-plate/",
-   "stage": "review",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/cymatic-plate-1.webp",
-   "lastChange": "2026-10-18T18:42:00+00:00",
+   "lastChange": "2026-10-18T19:37:32+00:00",
    "cost": {
     "apiUsd": 3.26,
     "codexRuns": 2,
-    "claudeRuns": 1
+    "claudeRuns": 2
    },
    "tasks": [
+    {
+     "title": "review of cymatic sound",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-18T19:36:42+00:00",
+     "done": "2026-10-18T19:36:42+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "cymatic sound",
      "state": "done",
@@ -836,7 +847,7 @@
      "plan": "A soft tone on each tap, matched to the note, with a remembered mute switch.",
      "since": "2026-10-18T17:30:12+00:00",
      "done": "2026-10-18T17:30:12+00:00",
-     "reviewed": false,
+     "reviewed": true,
      "commit": null,
      "result": "Soft, note-matched tap tones are live; direct plate pokes get a quieter echo, and Sound remains saved and optional."
     },
@@ -864,6 +875,11 @@
     }
    ],
    "history": [
+    {
+     "at": "2026-10-18T19:37:32+00:00",
+     "ok": true,
+     "note": "review R04: tap tones raised to audible levels, poke an octave up"
+    },
     {
      "at": "2026-10-18T18:42:00+00:00",
      "ok": true,
@@ -951,26 +967,26 @@
    "title": "Dough Boundary",
    "line": "Press one dough patch into a touching dough patch.",
    "url": "https://chenhsieh.github.io/dough-boundary/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Goal and colour chart",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/dough-boundary-1.webp",
-   "lastChange": "2026-10-18T18:34:48+00:00",
+   "lastChange": "2026-10-18T19:36:41+00:00",
    "cost": {
     "apiUsd": 6.45,
     "codexRuns": 2,
-    "claudeRuns": 0
+    "claudeRuns": 1
    },
    "tasks": [
     {
      "title": "review of dough legend",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "",
      "since": "2026-10-18T19:24:59+00:00",
-     "done": null,
+     "done": "2026-10-18T19:24:59+00:00",
      "reviewed": false,
      "commit": null,
      "result": ""
@@ -982,7 +998,7 @@
      "plan": "A readable goal, a clearer win face, a softer palette, and a colour-mixing chart in How to play.",
      "since": "2026-10-18T17:30:12+00:00",
      "done": "2026-10-18T17:30:12+00:00",
-     "reviewed": false,
+     "reviewed": true,
      "commit": null,
      "result": "Labelled targets, softer dough, clear win stamp, and mixing charts are in."
     },
@@ -999,6 +1015,11 @@
     }
    ],
    "history": [
+    {
+     "at": "2026-10-18T19:36:41+00:00",
+     "ok": true,
+     "note": "review R03: chart names brown as the end point (was wrong), target says presses, two broken tests fixed"
+    },
     {
      "at": "2026-10-18T18:34:48+00:00",
      "ok": true,
@@ -1264,7 +1285,7 @@
    "title": "Floating City",
    "line": "A one-minute phone game about carving a concrete city.",
    "url": "https://chenhsieh.github.io/floating-city/",
-   "stage": "review",
+   "stage": "building",
    "who": "Claude",
    "priority": "P3",
    "priorityNote": "Broken on level 2",
@@ -1277,6 +1298,17 @@
     "claudeRuns": 0
    },
    "tasks": [
+    {
+     "title": "review of floating city fix",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-18T19:37:32+00:00",
+     "done": null,
+     "reviewed": false,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "floating city fix",
      "state": "done",
