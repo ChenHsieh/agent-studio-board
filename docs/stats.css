@@ -1,0 +1,20 @@
+section { margin-top: 26px; }
+.note { font-size: 14.5px; color: var(--muted); margin: 0 0 10px; max-width: 62ch; }
+.portfolio { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 0 18px; }
+.portfolio h3 { font: 600 12px var(--mono); text-transform: uppercase; letter-spacing: 0.06em; margin: 8px 0 4px; padding-top: 6px; border-top: 2px solid var(--ink); }
+.portfolio ol { list-style: none; margin: 0 0 12px; padding: 0; }
+.portfolio li { display: flex; justify-content: space-between; gap: 8px; padding: 4px 0; border-bottom: 1px dotted var(--rule); font-size: 15px; }
+.portfolio li span { font: 12px var(--mono); color: var(--muted); white-space: nowrap; }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font: 12px var(--mono); margin-bottom: 8px; }
+.legend i { display: inline-block; width: 10px; height: 10px; margin-right: 5px; vertical-align: -1px; }
+.bar-row { display: grid; grid-template-columns: minmax(96px, 30%) 1fr 64px; align-items: center; gap: 8px; padding: 3px 0; font-size: 14px; }
+.bar-row .lbl { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bar-row .val { font: 12px var(--mono); text-align: right; }
+.bar { display: flex; height: 14px; background: var(--tone); }
+.bar i { display: block; height: 100%; }
+.days { display: flex; align-items: flex-end; gap: 6px; height: 160px; border-bottom: 1px solid var(--ink); }
+.days div { flex: 1; background: var(--ink); position: relative; min-width: 14px; }
+.days div b { position: absolute; top: -18px; left: 0; right: 0; text-align: center; font: 12px var(--mono); }
+.daylbl { display: flex; gap: 6px; }
+.daylbl span { flex: 1; text-align: center; font: 11px var(--mono); color: var(--muted); min-width: 14px; }
+.rates li { margin-bottom: 8px; font-size: 14.5px; }

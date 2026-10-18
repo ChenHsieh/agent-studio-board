@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Studio board · stats</title>
+<link rel="stylesheet" href="board.css">
+<link rel="stylesheet" href="stats.css">
+</head>
+<body>
+<header class="top">
+  <h1>Stats <span id="project">loading</span></h1>
+  <p class="fresh"><a href="./">← Board</a> · <span id="fresh"></span></p>
+</header>
+
+<section>
+  <h2>Portfolio</h2>
+  <p class="note">Each item sits under its latest verdict, ordered by priority and then by what it has cost so far.</p>
+  <div id="portfolio" class="portfolio"></div>
+</section>
+
+<section>
+  <h2>Where the money went</h2>
+  <p class="note" id="money-note"></p>
+  <div id="legend" class="legend"></div>
+  <div id="money"></div>
+</section>
+
+<section>
+  <h2>Changes shipped per day</h2>
+  <div id="days"></div>
+</section>
+
+<section>
+  <h2>How the estimates are made</h2>
+  <ul id="rates" class="rates"></ul>
+</section>
+<script src="stats.js"></script>
+</body>
+</html>

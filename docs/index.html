@@ -11,7 +11,7 @@
 <body>
 <header class="top">
   <h1>Studio board <span id="project">loading</span></h1>
-  <p class="fresh" id="fresh">Loading the board…</p>
+  <p class="fresh"><span id="fresh">Loading the board…</span> · <a href="stats.html">Stats</a></p>
 </header>
 <p class="blurb" id="blurb"></p>
 
@@ -34,7 +34,8 @@
 
 <nav class="controls" aria-label="Filter">
   <div class="seg" role="group" aria-label="Show">
-    <button data-view="active" aria-pressed="true">In progress</button>
+    <button data-view="needs" aria-pressed="true">Needs you</button>
+    <button data-view="active" aria-pressed="false">Working</button>
     <button data-view="priority" aria-pressed="false">Priority</button>
     <button data-view="all" aria-pressed="false">All</button>
     <button data-view="shelf" aria-pressed="false">Shelf</button>
@@ -46,7 +47,8 @@
 
 <footer class="foot">
   <p>Stages: <b class="st building">building</b> an agent is on it · <b class="st review">review</b> built, waiting for a second look · <b class="st queued">queued</b> waiting for a builder · <b class="st planning">planning</b> waiting for a design pass · <b class="st live">live</b> nothing in flight · <b class="st shelf">shelf</b> parked.</p>
-  <p>Cost: API dollars are metered spend. Codex and Claude runs are counts, since those plans are flat-rate. The page reads <a href="data/status.json">data/status.json</a>, which a script rewrites whenever a task moves or an agent commits, and checks again every 90 seconds.</p>
+  <p>Verdicts: <b class="vd ship">ship</b> ready to show people · <b class="vd revise">revise</b> worth more work · <b class="vd shelf">shelf</b> parked. "Needs you" lists what waits on a human: a new version to play, or a question.</p>
+  <p>Cost: API dollars are metered. Codex and in-session Claude runs are on flat plans, so they are shown as what they would have cost metered: Codex at its list token price, Claude at the average cost of a comparable metered run; rounds before the task queue existed are counted the same way. Details on the <a href="stats.html">stats page</a>. The page reads <a href="data/status.json">data/status.json</a>, which a script rewrites whenever a task moves or an agent commits, and checks again every 90 seconds.</p>
 </footer>
 <script src="board.js"></script>
 </body>
