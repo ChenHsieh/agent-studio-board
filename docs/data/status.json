@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T20:59:51+00:00",
+ "generated": "2026-10-18T21:01:54+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -13,7 +13,7 @@
    "game": "drawing-circles",
    "task": "drawing cards",
    "since": "2026-10-18T20:58:15+00:00",
-   "activity": "2026-10-18T20:59:42+00:00",
+   "activity": "2026-10-18T21:01:46+00:00",
    "commit": {
     "at": "2026-10-18T20:58:43+00:00",
     "subject": "start: sketch cards, ladder, endless and daily"
@@ -21,10 +21,10 @@
   },
   {
    "worker": "Claude",
-   "game": "material-boards",
-   "task": "review of material cute",
-   "since": "2026-10-18T20:56:01+00:00",
-   "activity": "2026-10-18T20:56:01+00:00",
+   "game": "copy-paste",
+   "task": "review of princess story",
+   "since": "2026-10-18T21:01:13+00:00",
+   "activity": "2026-10-18T21:01:53+00:00",
    "commit": null
   }
  ],
@@ -54,7 +54,7 @@
   },
   {
    "day": "2026-10-18",
-   "changes": 113
+   "changes": 114
   }
  ],
  "houseRules": 15,
@@ -2239,7 +2239,7 @@
    "title": "Hello Princess",
    "line": "Find the princess's first invitation among the copies.",
    "url": "https://chenhsieh.github.io/copy-paste/",
-   "stage": "review",
+   "stage": "building",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Close; story and name",
@@ -2259,6 +2259,17 @@
     "totalUsdEst": 53.46
    },
    "tasks": [
+    {
+     "title": "review of princess story",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-18T21:01:13+00:00",
+     "done": null,
+     "reviewed": false,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "princess story",
      "state": "done",
@@ -3075,33 +3086,33 @@
    "title": "Material Boards",
    "line": "Drop mirror, glass and wood tiles on a pinned sample.",
    "url": "https://chenhsieh.github.io/material-boards/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Visual pass",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/material-boards-1.webp",
-   "lastChange": "2026-10-18T20:25:53+00:00",
+   "lastChange": "2026-10-18T21:01:10+00:00",
    "cost": {
     "apiUsd": 14.39,
     "codexRuns": 1,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 165051,
     "codexUsdEst": 0.2,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 4,
     "earlierUsdEst": 14.4,
-    "totalUsdEst": 28.99
+    "totalUsdEst": 32.59
    },
    "tasks": [
     {
      "title": "review of material cute",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "",
      "since": "2026-10-18T20:56:01+00:00",
-     "done": null,
+     "done": "2026-10-18T20:56:01+00:00",
      "reviewed": false,
      "commit": null,
      "result": ""
@@ -3113,14 +3124,19 @@
      "plan": "Visual pass toward a cuter, cleaner style; rules unchanged.",
      "since": "2026-10-18T17:30:12+00:00",
      "done": "2026-10-18T17:30:12+00:00",
-     "reviewed": false,
+     "reviewed": true,
      "commit": null,
      "result": "Cute, high-contrast material tiles and star-crystals now read cleanly at 320 px; closest prior art: Laser Maze. Twist idea: collectible material buddies."
     }
    ],
    "verdict": null,
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-18T21:01:10+00:00",
+     "ok": true,
+     "note": "review R11: published Codex cute pass (was unpushed), checked live"
+    },
     {
      "at": "2026-10-18T20:25:53+00:00",
      "ok": false,
