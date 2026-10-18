@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T19:38:28+00:00",
+ "generated": "2026-10-18T19:40:30+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -13,7 +13,7 @@
    "game": "life-statistics",
    "task": "life statistics guide",
    "since": "2026-10-18T19:24:46+00:00",
-   "activity": "2026-10-18T19:38:25+00:00",
+   "activity": "2026-10-18T19:40:13+00:00",
    "commit": {
     "at": "2026-10-18T19:34:24+00:00",
     "subject": "fix: label guide page controls"
@@ -21,10 +21,10 @@
   },
   {
    "worker": "Claude",
-   "game": "floating-city",
-   "task": "review of floating city fix",
-   "since": "2026-10-18T19:37:32+00:00",
-   "activity": "2026-10-18T19:37:32+00:00",
+   "game": "floor-area",
+   "task": "review of floor area credit",
+   "since": "2026-10-18T19:40:23+00:00",
+   "activity": "2026-10-18T19:40:23+00:00",
    "commit": null
   }
  ],
@@ -1285,26 +1285,26 @@
    "title": "Floating City",
    "line": "A one-minute phone game about carving a concrete city.",
    "url": "https://chenhsieh.github.io/floating-city/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Broken on level 2",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/floating-city-1.webp",
-   "lastChange": "2026-10-18T18:59:31+00:00",
+   "lastChange": "2026-10-18T19:40:23+00:00",
    "cost": {
     "apiUsd": 10.87,
     "codexRuns": 1,
-    "claudeRuns": 0
+    "claudeRuns": 1
    },
    "tasks": [
     {
      "title": "review of floating city fix",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "",
      "since": "2026-10-18T19:37:32+00:00",
-     "done": null,
+     "done": "2026-10-18T19:37:32+00:00",
      "reviewed": false,
      "commit": null,
      "result": ""
@@ -1316,12 +1316,17 @@
      "plan": "Reproduce and fix the level-2 touch bug, add a test that fails on the old build, and make all 12 levels finishable by touch.",
      "since": "2026-10-18T17:30:12+00:00",
      "done": "2026-10-18T17:30:12+00:00",
-     "reviewed": false,
+     "reviewed": true,
      "commit": null,
      "result": "Fixed: floating rooms now keep touch targets after lift-off; level 2 shows glowing rooms, and old saves are preserved."
     }
    ],
    "history": [
+    {
+     "at": "2026-10-18T19:40:23+00:00",
+     "ok": true,
+     "note": "review R05: level 2 room taps work by touch at both sizes; no change needed"
+    },
     {
      "at": "2026-10-18T18:59:31+00:00",
      "ok": true,
@@ -1379,7 +1384,7 @@
    "title": "Floor Area",
    "line": "Drop floor slabs from a crane onto a city lot so the.",
    "url": "https://chenhsieh.github.io/floor-area/",
-   "stage": "review",
+   "stage": "building",
    "who": "Claude",
    "priority": "P4",
    "priorityNote": "",
@@ -1392,6 +1397,17 @@
     "claudeRuns": 0
    },
    "tasks": [
+    {
+     "title": "review of floor area credit",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-18T19:40:23+00:00",
+     "done": null,
+     "reviewed": false,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "floor area credit",
      "state": "done",
