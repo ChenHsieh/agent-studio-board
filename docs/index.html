@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Studio board</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='2' y='3' width='12' height='2' fill='%231d1b17'/%3E%3Crect x='2' y='7' width='8' height='2' fill='%23b5562d'/%3E%3Crect x='2' y='11' width='10' height='2' fill='%231d1b17'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="board.css">
+</head>
+<body>
+<header class="top">
+  <h1>Studio board <span id="project">loading</span></h1>
+  <p class="fresh" id="fresh">Loading the board…</p>
+</header>
+<p class="blurb" id="blurb"></p>
+
+<section class="flow" aria-label="How work moves">
+  <ol>
+    <li><b>Plan</b> feedback becomes a written task</li>
+    <li><b>Queue</b> tasks wait for a builder</li>
+    <li><b>Build</b> an agent works on a branch and commits</li>
+    <li><b>Review</b> a second agent plays it and fixes slips</li>
+    <li><b>Live</b> published, nothing in flight</li>
+  </ol>
+</section>
+
+<section class="now" aria-labelledby="now-h">
+  <h2 id="now-h">Working now</h2>
+  <ol id="lanes" class="lanes"></ol>
+</section>
+
+<section class="tally" id="tally" aria-label="Totals"></section>
+
+<nav class="controls" aria-label="Filter">
+  <div class="seg" role="group" aria-label="Show">
+    <button data-view="active" aria-pressed="true">In progress</button>
+    <button data-view="priority" aria-pressed="false">Priority</button>
+    <button data-view="all" aria-pressed="false">All</button>
+    <button data-view="shelf" aria-pressed="false">Shelf</button>
+  </div>
+  <input id="q" type="search" placeholder="Find" autocomplete="off">
+</nav>
+
+<ol id="games" class="games"></ol>
+
+<footer class="foot">
+  <p>Stages: <b class="st building">building</b> an agent is on it · <b class="st review">review</b> built, waiting for a second look · <b class="st queued">queued</b> waiting for a builder · <b class="st planning">planning</b> waiting for a design pass · <b class="st live">live</b> nothing in flight · <b class="st shelf">shelf</b> parked.</p>
+  <p>Cost: API dollars are metered spend. Codex and Claude runs are counts, since those plans are flat-rate. The page reads <a href="data/status.json">data/status.json</a>, which a script rewrites whenever a task moves or an agent commits, and checks again every 90 seconds.</p>
+</footer>
+<script src="board.js"></script>
+</body>
+</html>

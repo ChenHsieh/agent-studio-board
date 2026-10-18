@@ -1,0 +1,4997 @@
+{
+ "generated": "2026-10-18T18:02:06+00:00",
+ "project": {
+  "name": "Play Lab",
+  "noun": "game",
+  "nounPlural": "games",
+  "url": "https://chenhsieh.github.io/play-lab/",
+  "blurb": "A small studio of browser games, built by a queue of coding agents and reviewed by another."
+ },
+ "lanes": [
+  {
+   "worker": "Codex",
+   "game": "the-zipper",
+   "task": "zipper guide",
+   "since": "2026-10-18T17:56:09+00:00",
+   "activity": "2026-10-18T18:02:04+00:00",
+   "commit": {
+    "at": "2026-10-18T17:56:56+00:00",
+    "subject": "start: zipper guide"
+   }
+  }
+ ],
+ "codexLanes": 1,
+ "claudeWorkers": 0,
+ "apiSpentUsd": 304.56,
+ "houseRules": 15,
+ "games": [
+  {
+   "id": "acrylic-beacon",
+   "title": "Acrylic Beacon",
+   "line": "Turn a lamp to guide a boat to shore.",
+   "url": "https://chenhsieh.github.io/acrylic-beacon/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/acrylic-beacon-1.webp",
+   "lastChange": "2026-10-17T22:08:17+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-17T22:08:17+00:00",
+     "ok": true,
+     "note": "CREDIT line at the end of the play screen, EN+ZH (KUBO lamp, Origami Group)"
+    }
+   ]
+  },
+  {
+   "id": "alias-loaf",
+   "title": "Alias Loaf",
+   "line": "Set the cutter to catch one seed family.",
+   "url": "https://chenhsieh.github.io/alias-loaf/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/alias-loaf-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "align-hero",
+   "title": "Align Hero",
+   "line": "Two lines of letters, one slipped. Find where it slipped.",
+   "url": "https://chenhsieh.github.io/align-hero/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/align-hero-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "anechoic-fugue",
+   "title": "Anechoic Fugue",
+   "line": "Place speakers so the sleeper's chair goes quiet.",
+   "url": "https://chenhsieh.github.io/anechoic-fugue/",
+   "stage": "planning",
+   "who": "Claude",
+   "priority": "P3",
+   "priorityNote": "Core mechanism unclear",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/anechoic-fugue-1.webp",
+   "lastChange": "2026-10-18T09:31:43+00:00",
+   "cost": {
+    "apiUsd": 17.97,
+    "codexRuns": 1,
+    "claudeRuns": 0
+   },
+   "tasks": [
+    {
+     "title": "anechoic rethink",
+     "state": "planned",
+     "worker": "Claude",
+     "plan": "Rethink the core: find an object whose way of cancelling noise reads at a glance, then rebuild the hard levels around it.",
+     "since": "2026-10-18T15:39:00+00:00",
+     "done": null,
+     "reviewed": false,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "anechoic fugue",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T16:37:47+00:00",
+     "done": "2026-10-17T16:37:47+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Picking up a placed speaker now moves that speaker; before, it grabbed a fresh one from the tray. The s"
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-18T09:31:43+00:00",
+     "ok": true,
+     "note": "fix- live: restored the shared UI selector and input-ready demo hook; repo tests, UI gate, and 390x844/320 visual checks pass. playable_gate remains incompatible with the intentional 600 ms uncovered win beat; documented in GATE_ISSUES.md."
+    },
+    {
+     "at": "2026-10-18T08:45:19+00:00",
+     "ok": false,
+     "note": "fix- restores the shared UI hooks and passes ui_gate; not published because playable_gate's single-tap probe cannot perform this drag-only game's lit move (all levels refused)."
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-17T20:14:19+00:00",
+     "ok": true,
+     "note": "feel+art pass live (main ): drag lifts and follows the finger with ease and snap, settles/returns animated; press 7-16 ms, move p95 31 ms, release 22-29 ms (test/feel/drag.mjs); designed sound (breathing 98 Hz snore glides to exact silence, enveloped to"
+    },
+    {
+     "at": "2026-10-16T08:16:37+00:00",
+     "ok": true,
+     "note": "IMPROVED 6/7 (item 6 partial: flip needed in rooms 7 and 8, not room 3, which cannot need a flip and keep the measured opening curve; main , live bytes match)"
+    },
+    {
+     "at": "2026-10-15T20:12:00+00:00",
+     "ok": true,
+     "note": "playable gate PASS round 2"
+    },
+    {
+     "at": "2026-10-15T20:01:51+00:00",
+     "ok": true,
+     "note": "playable gate FAIL round 1"
+    },
+    {
+     "at": "2026-10-15T19:39:34+00:00",
+     "ok": true,
+     "note": "build start in"
+    },
+    {
+     "at": "2026-10-15T19:39:22+00:00",
+     "ok": true,
+     "note": "START job V1="
+    }
+   ]
+  },
+  {
+   "id": "bead-ring-route",
+   "title": "Bead Ring Route",
+   "line": "Tip the ring to roll a bead into its seat.",
+   "url": "https://chenhsieh.github.io/bead-ring-route/",
+   "stage": "shelf",
+   "who": null,
+   "priority": "P4",
+   "priorityNote": "",
+   "shelfNote": "illusion ring does not read for first-timers; visual awful. Needs a rethink, not polish.",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/bead-ring-route-1.webp",
+   "lastChange": "2026-10-16T07:44:18+00:00",
+   "cost": {
+    "apiUsd": 4.93,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-16T07:44:18+00:00",
+     "ok": true,
+     "note": "IMPROVED 7/7"
+    }
+   ]
+  },
+  {
+   "id": "beetle-in-a-box",
+   "title": "Beetle in a Box",
+   "line": "",
+   "url": "https://chenhsieh.github.io/beetle-in-a-box/",
+   "stage": "planning",
+   "who": "Claude",
+   "priority": "P3",
+   "priorityNote": "Sound-symbolism direction",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/beetle-in-a-box-1.webp",
+   "lastChange": "2026-10-17T19:42:17+00:00",
+   "cost": {
+    "apiUsd": 16.14,
+    "codexRuns": 1,
+    "claudeRuns": 0
+   },
+   "tasks": [
+    {
+     "title": "beetle bouba",
+     "state": "planned",
+     "worker": "Claude",
+     "plan": "Research sound symbolism (bouba/kiki) and test a version where well-chosen made-up words are understood and random ones are not.",
+     "since": "2026-10-18T15:08:38+00:00",
+     "done": null,
+     "reviewed": false,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "beetle in a box",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T16:37:47+00:00",
+     "done": "2026-10-17T16:37:47+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "The first screen now says \"You play with two computer friends, Pip and Bo\", and both are drawn as people who react. You tap a made-up word like \"zib\". Each fr"
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-17T19:42:17+00:00",
+     "ok": true,
+     "note": "simplified: bot/playable/UI gates PASS; live main ; decision in expert/beetle-in-a-box/packages/D"
+    },
+    {
+     "at": "2026-10-16T08:16:15+00:00",
+     "ok": true,
+     "note": "IMPROVED 8/8"
+    },
+    {
+     "at": "2026-10-15T20:19:25+00:00",
+     "ok": true,
+     "note": "playable gate PASS round 2"
+    },
+    {
+     "at": "2026-10-15T20:09:31+00:00",
+     "ok": true,
+     "note": "playable gate FAIL round 1"
+    },
+    {
+     "at": "2026-10-15T19:44:37+00:00",
+     "ok": true,
+     "note": "build start in"
+    },
+    {
+     "at": "2026-10-15T19:44:23+00:00",
+     "ok": true,
+     "note": "START job V1="
+    }
+   ]
+  },
+  {
+   "id": "billboard-wars",
+   "title": "Billboard Wars",
+   "line": "Hang a bigger sign beside a smaller one and claim the.",
+   "url": "https://chenhsieh.github.io/billboard-wars/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/billboard-wars-1.webp",
+   "lastChange": "2026-10-17T21:41:35+00:00",
+   "cost": {
+    "apiUsd": 7.75,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T08:10:13+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/billboard-wars/ (improve round )"
+    },
+    {
+     "at": "2026-10-16T00:53:43+00:00",
+     "ok": true,
+     "note": "playable gate FAIL after UI1"
+    },
+    {
+     "at": "2026-10-15T23:14:47+00:00",
+     "ok": true,
+     "note": "STILL HELD: blocked only by new playable-gate no-title rule, needs UI retrofit; see pipeline/GATE_ISSUES.md"
+    },
+    {
+     "at": "2026-10-15T21:34:50+00:00",
+     "ok": true,
+     "note": "NOT_PUBLISHED (auto): checks not green, see"
+    },
+    {
+     "at": "2026-10-15T21:19:48+00:00",
+     "ok": true,
+     "note": "playable gate PASS round 1"
+    },
+    {
+     "at": "2026-10-15T20:29:48+00:00",
+     "ok": true,
+     "note": "build start in"
+    },
+    {
+     "at": "2026-10-15T20:29:24+00:00",
+     "ok": true,
+     "note": "START job V1="
+    }
+   ]
+  },
+  {
+   "id": "bioredactle",
+   "title": "BioRedactle",
+   "line": "Reveal a paper's title with word tiles.",
+   "url": "https://chenhsieh.github.io/BioRedactle-nextjs/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/bioredactle-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "BioRedactle-nextjs",
+   "title": "Bioredactle Nextjs",
+   "line": "",
+   "url": "https://chenhsieh.github.io/BioRedactle-nextjs/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "lastChange": "2026-10-17T23:15:14+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-17T23:15:14+00:00",
+     "ok": true,
+     "note": "CREDIT line in both How to play dialogs (Redactle by John Turner, 2022); README already credited; published with scripts/deploy-pages.sh because the Actions run never gets a runner (it also committed generated puzzles ); live gh-pages"
+    }
+   ]
+  },
+  {
+   "id": "biosteganography",
+   "title": "Biosteganography",
+   "line": "Straighten the stripes to find a hidden repeat.",
+   "url": "https://chenhsieh.github.io/biosteganography/demo/snap.html",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/biosteganography-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "bluebook-guess",
+   "title": "Bluebook Guess",
+   "line": "Place a US Air Force case file in time and place.",
+   "url": "https://chenhsieh.github.io/bluebook-guess/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/bluebook-guess-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "chai-boil",
+   "title": "Chai Boil",
+   "line": "One pot, one dial: let the chai rise to the rim, not over it.",
+   "url": "https://chenhsieh.github.io/chai-boil/",
+   "stage": "planning",
+   "who": "Claude",
+   "priority": "P3",
+   "priorityNote": "Potion-making direction",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/chai-boil-1.webp",
+   "lastChange": "2026-10-17T21:41:35+00:00",
+   "cost": {
+    "apiUsd": 6.73,
+    "codexRuns": 1,
+    "claudeRuns": 0
+   },
+   "tasks": [
+    {
+     "title": "chai potion",
+     "state": "planned",
+     "worker": "Claude",
+     "plan": "Turn the balance toy into potion making: ingredients, a small story, the same tactile pour.",
+     "since": "2026-10-18T15:08:38+00:00",
+     "done": null,
+     "reviewed": false,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "chai boil",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T16:37:47+00:00",
+     "done": "2026-10-17T16:37:47+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "A leftover background command was stopped when it hit its time limit. Its job was the edit to the Play Lab hub's game list (the `catalog.json` file), and that edit had already gone through before the command stalled;..."
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-17T21:25:34+00:00",
+     "ok": true,
+     "note": "first card: goal + dial (2 lines); New pour on first ready pot, rises on glass 2, lag on glass 3, each with a rehearsal on the real pot; How to play pages (LIVE )"
+    },
+    {
+     "at": "2026-10-17T17:02:20+00:00",
+     "ok": true,
+     "note": "Taste pass: rebuilt as one-screen toy (one pot, one dial, one glass; continuous foam with turn-down lag; boil-over crown and drips; hold-to-pour; 1/2/3 rises; daily shelf). Video credit removed from game, README and hub. main , hub ; live verifie"
+    },
+    {
+     "at": "2026-10-16T09:10:30+00:00",
+     "ok": true,
+     "note": "IMPROVED 8/8 (main ; level 2 also start foam 3 for D8; shared-kit How to play fix not sent)"
+    },
+    {
+     "at": "2026-10-16T02:36:30+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/chai-boil/ (claude builder, batch4)"
+    }
+   ]
+  },
+  {
+   "id": "clay-clock",
+   "title": "Clay Clock",
+   "line": "Press clay jars in the right order.",
+   "url": "https://chenhsieh.github.io/clay-clock/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/clay-clock-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "colony-count",
+   "title": "Colony Count",
+   "line": "Solve three daily levels, then freeze finished plates.",
+   "url": "https://chenhsieh.github.io/colony-count/",
+   "stage": "live",
+   "who": null,
+   "priority": "P1",
+   "priorityNote": "Flagship; has its own owner",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
+   "lastChange": "2026-10-18T15:31:08+00:00",
+   "cost": {
+    "apiUsd": 22.88,
+    "codexRuns": 3,
+    "claudeRuns": 1
+   },
+   "tasks": [
+    {
+     "title": "colony count more finish",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-17T23:16:10+00:00",
+     "done": "2026-10-17T23:16:10+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "For a player: Colony Count now has a Four colours tier after Hard. It has 24 plates with a fourth colony (an aqua-blue triangle), taught on its first plate with one new-rule card. Endless mode builds plates on the..."
+    },
+    {
+     "title": "colony theme biz",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T21:06:30+00:00",
+     "done": "2026-10-17T21:06:30+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "An old background search was stopped when it hit its time limit. It doesn't affect the work: The report and the four mocks are finished and unchanged."
+    },
+    {
+     "title": "colony count more",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T20:55:49+00:00",
+     "done": "2026-10-17T20:55:49+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "That notification is the earlier local run that included Expert. It was stopped at the time limit, and Slurm task 5 already covered the same plates minus Expert (all unique). Still waiting on the Medium and Hard Endless..."
+    },
+    {
+     "title": "colony count",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T16:37:11+00:00",
+     "done": "2026-10-17T16:37:11+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "1. For a player: Turning Rule out on no longer shifts the grid. The cause was a leftover style that padded every square, which pushed the bo"
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-18T15:31:08+00:00",
+     "ok": true,
+     "note": "cc-quiet- live : quiet board in all animal themes: open squares plain soft tiles (texture only on the rim), marked-empty a step darker with the empty sign; squares under 36 px get eyes-only pieces and a numbered one carries its number on a clean"
+    },
+    {
+     "at": "2026-10-18T07:40:26+00:00",
+     "ok": true,
+     "note": "cc-r4- live : Zoom button in the plate corner when squares are under 34 px (320x568 10x10 Hard daily 24->44 px, plate scrolls in its frame, clues pinned, tap places one colony, drag only scrolls, Fit returns); kitten solve now a clearly visible"
+    },
+    {
+     "at": "2026-10-18T07:19:47+00:00",
+     "ok": true,
+     "note": "cc-r3- live : new Bare spots tier after Expert (8x8, 24 plates; a number on an empty square counts colonies of any colour touching it), one-rule card + How to play page + tap/hint text; independent counter"
+    },
+    {
+     "at": "2026-10-18T06:17:27+00:00",
+     "ok": true,
+     "note": "cc-r2- live : solved moment per theme (mushroom glowing threads, one per touching same-kind pair so each number = its threads, checked in test; kitten sunbeam slide; duckling ripples; penguin snow), one quiet sound each, silent with Sound off, s"
+    },
+    {
+     "at": "2026-10-18T06:02:29+00:00",
+     "ok": true,
+     "note": "cc-r1- live :"
+    },
+    {
+     "at": "2026-10-18T01:25:01+00:00",
+     "ok": true,
+     "note": "cc-refine-4 live : home screen no longer overlaps (hero under bar, tagline behind Continue; menu scrolls; test at 390x844/375x667/390x664), animal faces with personalities that turn toward same-kind neighbours and react (happy/startled/blink/asleep), th"
+    },
+    {
+     "at": "2026-10-18T00:49:08+00:00",
+     "ok": true,
+     "note": "cc-refine-3 (themes) live : Theme picker on home (Colonies, Kittens open; Ducklings 5 dailies; Penguins Easy 12; Mushrooms a Four colours plate), cosmetic CSS layer, settled art on solve, old saves untouched; 493 frozen plates unchanged"
+    },
+    {
+     "at": "2026-10-18T00:21:07+00:00",
+     "ok": true,
+     "note": "cc-refine-2 live : How to play shows every rule after Skip (bug: only page 1), tapping a line with every colour explains its empty squares, finished daily offers next size; 3 result buttons on one row on short phones"
+    },
+    {
+     "at": "2026-10-18T00:05:36+00:00",
+     "ok": true,
+     "note": "cc-refine-1 live : daily in three sizes (Easy/Medium/Hard; Medium plate+id unchanged; 732 new dailies unique), daily share links open today's daily, one-line colour bar, New-here link steps aside, 320x568 hint clip fixed"
+    },
+    {
+     "at": "2026-10-17T23:31:31+00:00",
+     "ok": true,
+     "note": "Four colours tier (blue triangle, 24 plates after Hard) + Endless mode with plate codes merged to main and live; old plates hash-frozen (493), old save loads intact; uniqueness: 400 Endless seeds per tier (starter/easy/medium/hard/four) + all level pla"
+    },
+    {
+     "at": "2026-10-17T21:50:51+00:00",
+     "ok": true,
+     "note": "theme+business study (design only): THEME_BIZ_20261017.md + 4 mocks in theme_20261017/; recommends kittens-in-sunbeam theme, LINE stickers as business case; repo untouched"
+    },
+    {
+     "at": "2026-10-17T21:25:34+00:00",
+     "ok": true,
+     "note": "How to play card 130 words -> one page per rule met (page 1 goal + counts); lessons 2-3 New tag + hand on the plate; hearts taught on Starter 1 (LIVE )"
+    }
+   ]
+  },
+  {
+   "id": "combining-games",
+   "title": "Combining Games",
+   "line": "Read about who gets to judge a game.",
+   "url": "https://chenhsieh.github.io/combining-games/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/combining-games-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "compoem",
+   "title": "Compoem",
+   "line": "Browse web-native computational literature.",
+   "url": "https://chenhsieh.github.io/compoem/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/compoem-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "connectle",
+   "title": "Connectle",
+   "line": "Hop through fly neurons to reach a body part.",
+   "url": "https://chenhsieh.github.io/connectle/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/connectle-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "nesting-scrap",
+   "title": "Cookie Cutter",
+   "line": "Cut cookies from a sheet of dough and leave as little.",
+   "url": "https://chenhsieh.github.io/nesting-scrap/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/nesting-scrap-1.webp",
+   "lastChange": "2026-10-18T01:08:17+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 1
+   },
+   "tasks": [
+    {
+     "title": "nesting scrap",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-17T16:38:08+00:00",
+     "done": "2026-10-17T16:38:08+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Cookie Cutter (nesting-scrap): LIVE at https://chenhsieh.github.io/nesting-scrap/ (main , rollback tag pre-improve-; live bytes match, first-card test passes against the live site)."
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-18T01:08:17+00:00",
+     "ok": true,
+     "note": "LIVE : first card = goal + drag rule, fits 320x568; How to play one page per rule joining on levels 2-3, level 2 turn loop + New lines; R_20261016 items 1,2,3,5,7,8 in; old saves keep everything (test); item 4 (How to play word at 390) dropped, ui_gate"
+    },
+    {
+     "at": "2026-10-17T22:43:45+00:00",
+     "ok": true,
+     "note": "CREDIT line on the How to play card under the rules, EN+ZH (Block Blast, Woodoku, Rosenberg's Patchwork, Lapas nesting sheet); README already credited; live"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T00:31:45+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/nesting-scrap/ (claude builder)"
+    }
+   ]
+  },
+  {
+   "id": "copy-paste",
+   "title": "Copy Paste",
+   "line": "Find the original card among the copies.",
+   "url": "https://chenhsieh.github.io/copy-paste/",
+   "stage": "live",
+   "who": null,
+   "priority": "P2",
+   "priorityNote": "Close; story and name",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/copy-paste-1.webp",
+   "lastChange": "2026-10-18T17:59:10+00:00",
+   "cost": {
+    "apiUsd": 16.91,
+    "codexRuns": 2,
+    "claudeRuns": 2
+   },
+   "tasks": [
+    {
+     "title": "copy paste story",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Check the connection-line logic, add a story told across the levels, and pick a name that comes from it.",
+     "since": "2026-10-18T15:08:38+00:00",
+     "done": "2026-10-18T15:08:38+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "S3 Copy Paste: logic check, story, name. LIVE https://chenhsieh.github.io/copy-paste/ (main , rollback tag pre-story-); hub card renamed (play-lab main , deployed)."
+    },
+    {
+     "title": "cp scribes publish",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-18T07:41:46+00:00",
+     "done": "2026-10-18T07:41:46+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Players get fairer levels 10 and 11 (the original is always the one card with the most one-picture neighbours) and a new Scribes row after level 6: six puzzles where red old letters (þe, ƿet, niȝt) disappear when a line..."
+    },
+    {
+     "title": "copy paste scribes",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T19:45:17+00:00",
+     "done": "2026-10-17T19:45:17+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Levels 10–11 now guarantee unique neighbour-count originals; Scribes adds six one-way old-letter puzzles with a looping S1 demo."
+    },
+    {
+     "title": "copy paste",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T16:37:11+00:00",
+     "done": "2026-10-17T16:37:11+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "What a player notices: the pictures are redrawn and sharp on a phone, and they still read at 320 px wide with 30 cards on screen. A first tap only chooses a card (it lifts and gets a ring); a second tap or \"Pick this..."
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-18T17:59:10+00:00",
+     "ok": true,
+     "note": "Hello Princess rename, story page with captioned strips, family regroup after the find, rule card says any earlier card; logic verified (0 bad lines)"
+    },
+    {
+     "at": "2026-10-18T14:24:02+00:00",
+     "ok": false,
+     "note": "followup- verified locally; push to configured origin blocked by egress policy."
+    },
+    {
+     "at": "2026-10-18T12:15:00+00:00",
+     "ok": true,
+     "note": "tap- live: 10 px finger slides stay taps; browser regression passes."
+    },
+    {
+     "at": "2026-10-18T08:07:09+00:00",
+     "ok": true,
+     "note": "levels 10-11 redealt fair; Scribes row (6 old-letter puzzles after level 6) live, S1 teaches the rule with an on-board þe->the loop; old saves kept (level 10/11 in-progress restarts), test added"
+    },
+    {
+     "at": "2026-10-18T06:47:24+00:00",
+     "ok": false,
+     "note": "push to origin blocked pending user source-egress approval."
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-17T18:02:24+00:00",
+     "ok": true,
+     "note": "LIVE : sharp redrawn pictures (where/who/what/mood) at device pixel ratio; tap chooses, second tap or Pick commits; Why fold replaced by one-line credit; each level original is a panel of 3 four-panel strips; strategy measured (STRATEGY_20261017.md: str"
+    },
+    {
+     "at": "2026-10-16T08:22:57+00:00",
+     "ok": true,
+     "note": "IMPROVED 8/8"
+    },
+    {
+     "at": "2026-10-15T19:43:56+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/copy-paste/ (auto, 15:43)"
+    },
+    {
+     "at": "2026-10-15T19:15:25+00:00",
+     "ok": true,
+     "note": "playable gate PASS round 1"
+    },
+    {
+     "at": "2026-10-15T19:00:01+00:00",
+     "ok": true,
+     "note": "build start in"
+    },
+    {
+     "at": "2026-10-15T18:59:22+00:00",
+     "ok": true,
+     "note": "START job V1="
+    }
+   ]
+  },
+  {
+   "id": "curve-shot",
+   "title": "Curve Shot",
+   "line": "A one-thumb crazy golf toy: drag back from the ball.",
+   "url": "https://chenhsieh.github.io/curve-shot/",
+   "stage": "live",
+   "who": null,
+   "priority": "P2",
+   "priorityNote": "Remade; phone test",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/curve-shot-1.webp",
+   "lastChange": "2026-10-17T19:58:19+00:00",
+   "cost": {
+    "apiUsd": 12.34,
+    "codexRuns": 1,
+    "claudeRuns": 0
+   },
+   "tasks": [
+    {
+     "title": "curve shot",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T16:37:47+00:00",
+     "done": "2026-10-17T16:37:47+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "1. **What changed:** Curve Shot is now a pop garden. You pull back to roll a ball up a printed play mat, and it pops open where it stops. The tile under it decides what it becomes: a pond makes a Drip, a sun makes a..."
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-17T19:58:19+00:00",
+     "ok": true,
+     "note": "REMAKE live (main , rollback tags pre-curve-remake-[b]): pop garden on a play mat; ball pops open where it stops, tile decides the figure (Drip/Sunny/Sprout), Sprout with Drip+Sunny beside blooms; standing figures block, spin swipe hooks late; r"
+    },
+    {
+     "at": "2026-10-17T04:02:45+00:00",
+     "ok": true,
+     "note": "IMPROVED 8/8 (gate D1 fix: the bend-teaching rule moved off the shared centre green onto level 3 only, so level 7 is a real choice again; level 3 marked introduction since the hand shows its pull; main -> , rollback tag pre-improve-2026"
+    },
+    {
+     "at": "2026-10-16T00:18:01+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/curve-shot/ (claude builder)"
+    }
+   ]
+  },
+  {
+   "id": "cymatic-plate",
+   "title": "Cymatic Plate",
+   "line": "Ring notes on a brass plate covered in sand and watch the.",
+   "url": "https://chenhsieh.github.io/cymatic-plate/",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P1",
+   "priorityNote": "Strong; polish and sound",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/cymatic-plate-1.webp",
+   "lastChange": "2026-10-18T15:06:30+00:00",
+   "cost": {
+    "apiUsd": 3.26,
+    "codexRuns": 1,
+    "claudeRuns": 1
+   },
+   "tasks": [
+    {
+     "title": "cymatic sound",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "A soft tone on each tap, matched to the note, with a remembered mute switch.",
+     "since": "2026-10-18T17:30:12+00:00",
+     "done": null,
+     "reviewed": false,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "cymatic depth",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-18T14:44:21+00:00",
+     "done": "2026-10-18T14:44:21+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "What a player sees now: the brass plate has a thick rim lit from the upper left and casts a soft shadow. Each grain of sand casts a tiny shadow, some grains glint, and the shadow slips off while a grain jumps. Play..."
+    },
+    {
+     "title": "cymatic plate",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T16:37:47+00:00",
+     "done": "2026-10-17T16:37:47+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "The first visit now plays a 12-second animated scene on the How to play card, and early levels each say their one new idea in a line above the board. The scene runs as numbered captions in English and Chinese: a brass..."
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-18T15:06:30+00:00",
+     "ok": true,
+     "note": "depth pass live (main ): thick lit brass rim + plate shadow, sand grains cast shadows/glints, solve tips plate up to a 3/4 view on its stand with the bow before the card (reduced motion cuts), solved sound = the bowed last note, Levels is a shelf of 3/4"
+    },
+    {
+     "at": "2026-10-18T13:48:12+00:00",
+     "ok": true,
+     "note": "nextboard- live : board no longer regrows 0.55 s after Next level (notes jumped 110 px at 320)"
+    },
+    {
+     "at": "2026-10-18T12:15:00+00:00",
+     "ok": true,
+     "note": "tap- live: 10 px finger slides resolve at the pressed note; browser regression passes."
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-17T18:52:03+00:00",
+     "ok": true,
+     "note": "opening scene on first-visit card (plate on stem, sand sprinkled, bow, sand to lines, tilt to top-down, drop into ring = room 1); one idea line on levels 1-5,7,8; rules v2; PRIORART_20261017.md with water (inverse plate) and ferrofluid chapter designs, not bui"
+    },
+    {
+     "at": "2026-10-16T08:36:17+00:00",
+     "ok": true,
+     "note": "IMPROVED 8/8"
+    },
+    {
+     "at": "2026-10-16T01:40:04+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/cymatic-plate/ (claude builder, batch3)"
+    }
+   ]
+  },
+  {
+   "id": "denovo-gene-birth",
+   "title": "De novo Gene Birth",
+   "line": "Run and jump through a newborn gene story.",
+   "url": "https://chenhsieh.github.io/denovo-gene-birth/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/denovo-gene-birth-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "do-what-you-think",
+   "title": "Do What You Think",
+   "line": "Guide AI agents through one night on call.",
+   "url": "https://chenhsieh.github.io/do-what-you-think/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/do-what-you-think-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "dough-boundary",
+   "title": "Dough Boundary",
+   "line": "Press one dough patch into a touching dough patch.",
+   "url": "https://chenhsieh.github.io/dough-boundary/",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "Goal and colour chart",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/dough-boundary-1.webp",
+   "lastChange": "2026-10-17T21:41:35+00:00",
+   "cost": {
+    "apiUsd": 6.45,
+    "codexRuns": 1,
+    "claudeRuns": 0
+   },
+   "tasks": [
+    {
+     "title": "dough legend",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "A readable goal, a clearer win face, a softer palette, and a colour-mixing chart in How to play.",
+     "since": "2026-10-18T17:30:12+00:00",
+     "done": null,
+     "reviewed": false,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "dough boundary",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T16:37:11+00:00",
+     "done": "2026-10-17T16:37:11+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "The goal line comes first (\"Make every dough a colour on the recipe card. Fewer presses is better\"), and the recipe card on the tray shows the one to three"
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-17T21:25:34+00:00",
+     "ok": true,
+     "note": "first card: goal + first mix (2 lines, 22 words); existing per-level New rule strip kept; How to play pages rules met so far (LIVE )"
+    },
+    {
+     "at": "2026-10-17T17:43:57+00:00",
+     "ok": true,
+     "note": "redesigned: doughs mix into new colours (recipe card goal, mixing irreversible, nuts keep doughs apart, dye sprinkles), goal line first, one rule per level with looping animation, 0.9 s press animation; bot gate PASS, greedy misses star from L6; PRIORART_20261"
+    },
+    {
+     "at": "2026-10-16T09:15:03+00:00",
+     "ok": true,
+     "note": "IMPROVED 8/8 (main ; level 3 trap holds for the reading-order greedy bot only, no 3x3 three-dough tray makes every greedy tie-break miss par at casual 75-95%; bot table re-made with harness since current harness casual is uniform; also"
+    },
+    {
+     "at": "2026-10-15T21:45:50+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/dough-boundary/ (auto, 17:45)"
+    },
+    {
+     "at": "2026-10-15T21:37:33+00:00",
+     "ok": true,
+     "note": "playable gate PASS round 2"
+    },
+    {
+     "at": "2026-10-15T21:19:36+00:00",
+     "ok": true,
+     "note": "playable gate FAIL round 1"
+    },
+    {
+     "at": "2026-10-15T20:54:59+00:00",
+     "ok": true,
+     "note": "build start in"
+    },
+    {
+     "at": "2026-10-15T20:54:25+00:00",
+     "ok": true,
+     "note": "START job V1="
+    }
+   ]
+  },
+  {
+   "id": "drawing-circles",
+   "title": "Drawing Circles",
+   "line": "Stack gears until the puppy's leash goes slack.",
+   "url": "https://chenhsieh.github.io/drawing-circles/",
+   "stage": "live",
+   "who": null,
+   "priority": "P2",
+   "priorityNote": "Guidance added; needs review",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/drawing-circles-1.webp",
+   "lastChange": "2026-10-18T15:40:13+00:00",
+   "cost": {
+    "apiUsd": 12.59,
+    "codexRuns": 2,
+    "claudeRuns": 0
+   },
+   "tasks": [
+    {
+     "title": "drawing circles guide",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-18T15:08:38+00:00",
+     "done": "2026-10-18T15:08:38+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "drawing circles",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T16:37:11+00:00",
+     "done": "2026-10-17T16:37:11+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "1. **What a player sees now:** the dotted shape is the thing to draw. The tip of the spinning circle leaves a line that grows each lap: gold where it keeps up with the puppy, red where it falls behind. The leash bar..."
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-18T15:40:13+00:00",
+     "ok": true,
+     "note": "guide (codex , pushed + merged by orchestrator as ): goal cue, 3rd/4th circle lessons, directional hints, sketchbook, daily shape; NOT Claude-reviewed"
+    },
+    {
+     "at": "2026-10-18T13:11:38+00:00",
+     "ok": true,
+     "note": "First card is goal plus one rule; later circle rules now have New cues, board loops, and paged How to play."
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-17T18:36:52+00:00",
+     "ok": true,
+     "note": "communication revamp LIVE (main ): dotted goal + growing gold/red ink, ruler removed, picture buttons with plain captions, clearer circle buttons (spin arrow, 2x), drawn hand, new level 2 Bean (circle on circle), per-level idea line, ghost of suggested"
+    },
+    {
+     "at": "2026-10-16T08:22:54+00:00",
+     "ok": true,
+     "note": "IMPROVED 8/8"
+    },
+    {
+     "at": "2026-10-15T20:27:40+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/drawing-circles/ (auto, 16:27)"
+    },
+    {
+     "at": "2026-10-15T20:07:45+00:00",
+     "ok": true,
+     "note": "playable gate PASS round 3"
+    },
+    {
+     "at": "2026-10-15T19:45:07+00:00",
+     "ok": true,
+     "note": "playable gate FAIL round 2"
+    },
+    {
+     "at": "2026-10-15T19:35:43+00:00",
+     "ok": true,
+     "note": "playable gate FAIL round 1"
+    },
+    {
+     "at": "2026-10-15T19:00:01+00:00",
+     "ok": true,
+     "note": "build start in"
+    },
+    {
+     "at": "2026-10-15T18:59:22+00:00",
+     "ok": true,
+     "note": "START job V1="
+    }
+   ]
+  },
+  {
+   "id": "dynasty-guess",
+   "title": "Dynasty Guess",
+   "line": "Place a museum object in its period.",
+   "url": "https://chenhsieh.github.io/dynasty-guess/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/dynasty-guess-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "fake-philosopher",
+   "title": "Fake Philosopher",
+   "line": "Build an ornate paragraph while a sceptical reader tries.",
+   "url": "https://chenhsieh.github.io/fake-philosopher/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/fake-philosopher-1.webp",
+   "lastChange": "2026-10-18T14:24:02+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 1,
+    "claudeRuns": 1
+   },
+   "tasks": [
+    {
+     "title": "review_fake philosopher",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-18T08:07:38+00:00",
+     "done": "2026-10-18T08:07:38+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Players can now drag slips onto the page (a real drag was refused live with \"That move is not available\"; only taps worked). Slips that cannot go next are greyed. Each level's new rule is written on the page and loops..."
+    },
+    {
+     "title": "art_fake philosopher",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-18T07:41:46+00:00",
+     "done": "2026-10-18T07:41:46+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Readable rule panels, larger slips, and an expressive raising/lowering sceptic are live; captures are in [art_20261018]("
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-18T14:24:02+00:00",
+     "ok": false,
+     "note": "followup- verified locally; push to configured origin blocked by egress policy."
+    },
+    {
+     "at": "2026-10-18T09:28:19+00:00",
+     "ok": true,
+     "note": "review : real drags work (were refused), dead-end slips greyed, each new rule shown and looped on the page, finger raise-and-lower on a clean end, one tick passes, coach circle on 1-6, meme credited; main live"
+    },
+    {
+     "at": "2026-10-18T08:04:08+00:00",
+     "ok": true,
+     "note": "art- live : readable single-panel How to play pages and larger printed word slips; expressive graphite sceptic raises/lowers a finger with paper-and-pencil feedback sound; checked at 390x844 and 320x568, old save intact"
+    },
+    {
+     "at": "2026-10-18T06:08:48+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/fake-philosopher/ (batch5)"
+    },
+    {
+     "at": "2026-10-17T22:37:21+00:00",
+     "ok": true,
+     "note": "design done in protos-claude/fake-philosopher: BUILD; rules.js + bots (NAIVE/GREEDY/PLANNER) DECISION PASS 4872 rows, daily checkDaily PASS 60 days; STEP0.md + V1.md (taste lenses board-and-craft, toy-and-picture-book, empty bowl; book-tour picture story; half"
+    }
+   ]
+  },
+  {
+   "id": "fifth-identity",
+   "title": "Fifth Identity",
+   "line": "Seed a prompt and grow a shifting mark.",
+   "url": "https://chenhsieh.github.io/fifth-identity/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/fifth-identity-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "floating-city",
+   "title": "Floating City",
+   "line": "A one-minute phone game about carving a concrete city.",
+   "url": "https://chenhsieh.github.io/floating-city/",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "Broken on level 2",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/floating-city-1.webp",
+   "lastChange": "2026-10-17T21:41:35+00:00",
+   "cost": {
+    "apiUsd": 10.87,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [
+    {
+     "title": "floating city fix",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Reproduce and fix the level-2 touch bug, add a test that fails on the old build, and make all 12 levels finishable by touch.",
+     "since": "2026-10-18T17:30:12+00:00",
+     "done": null,
+     "reviewed": false,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T08:07:43+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/floating-city/ (improve round )"
+    },
+    {
+     "at": "2026-10-16T02:11:35+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/floating-city/ (auto, 22:11)"
+    },
+    {
+     "at": "2026-10-15T23:14:47+00:00",
+     "ok": true,
+     "note": "STILL HELD: design, D8 casual cliff L3 80% -> L4 30% plus title screen; see protos-claude/floating-city/FIX.md"
+    },
+    {
+     "at": "2026-10-15T21:05:32+00:00",
+     "ok": true,
+     "note": "STILL HELD after 2 retries: needs a human or Claude look"
+    },
+    {
+     "at": "2026-10-15T19:48:19+00:00",
+     "ok": true,
+     "note": "NOT_PUBLISHED (auto): checks not green, see"
+    },
+    {
+     "at": "2026-10-15T19:30:25+00:00",
+     "ok": true,
+     "note": "playable gate PASS round 1"
+    },
+    {
+     "at": "2026-10-15T19:00:00+00:00",
+     "ok": true,
+     "note": "build start in"
+    },
+    {
+     "at": "2026-10-15T18:59:22+00:00",
+     "ok": true,
+     "note": "START job V1="
+    }
+   ]
+  },
+  {
+   "id": "floor-area",
+   "title": "Floor Area",
+   "line": "Drop floor slabs from a crane onto a city lot so the.",
+   "url": "https://chenhsieh.github.io/floor-area/",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P4",
+   "priorityNote": "",
+   "shelfNote": "not fun enough; credit removed (R06).",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/floor-area-1.webp",
+   "lastChange": "2026-10-17T21:41:35+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [
+    {
+     "title": "floor area credit",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Remove an inspiration credit that no longer fits the game.",
+     "since": "2026-10-18T17:30:12+00:00",
+     "done": null,
+     "reviewed": false,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T08:57:12+00:00",
+     "ok": true,
+     "note": "IMPROVED 8/8"
+    },
+    {
+     "at": "2026-10-16T01:42:37+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/floor-area/ (claude builder, batch3)"
+    }
+   ]
+  },
+  {
+   "id": "fly-song",
+   "title": "Fly Song",
+   "line": "Tap a fly's courtship song.",
+   "url": "https://chenhsieh.github.io/fly-song/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/fly-song-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "fly-swarm",
+   "title": "Fly Swarm",
+   "line": "",
+   "url": "https://chenhsieh.github.io/fly-swarm/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/fly-swarm-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "fold-bot",
+   "title": "Fold Bot",
+   "line": "Fold a small robot kit without trapping a shell under a.",
+   "url": "https://chenhsieh.github.io/fold-bot/",
+   "stage": "shelf",
+   "who": null,
+   "priority": "P4",
+   "priorityNote": "",
+   "shelfNote": "orange lines unexplained.",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/fold-bot-1.webp",
+   "lastChange": "2026-10-18T12:15:00+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-18T12:15:00+00:00",
+     "ok": true,
+     "note": "tap- live: 10 px finger slides stay taps; browser regression passes."
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T08:57:26+00:00",
+     "ok": true,
+     "note": "IMPROVED 8/8"
+    },
+    {
+     "at": "2026-10-15T21:34:14+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/fold-bot/ (auto, 17:34)"
+    },
+    {
+     "at": "2026-10-15T21:23:46+00:00",
+     "ok": true,
+     "note": "playable gate PASS round 1"
+    },
+    {
+     "at": "2026-10-15T21:09:52+00:00",
+     "ok": true,
+     "note": "build start in"
+    },
+    {
+     "at": "2026-10-15T21:09:25+00:00",
+     "ok": true,
+     "note": "START job V1="
+    }
+   ]
+  },
+  {
+   "id": "fold-guess",
+   "title": "Fold Guess",
+   "line": "Date a real protein structure and its method.",
+   "url": "https://chenhsieh.github.io/fold-guess/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/fold-guess-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "gallery-guess",
+   "title": "Gallery Guess",
+   "line": "Place each museum object by country and year.",
+   "url": "https://chenhsieh.github.io/gallery-guess/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/gallery-guess-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "gif-cities",
+   "title": "GIF Cities",
+   "line": "Stack rescued GIFs down a 1999 homepage so every visitor.",
+   "url": "https://chenhsieh.github.io/gif-cities/",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Promising; rules need explaining",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/gif-cities-1.webp",
+   "lastChange": "2026-10-18T09:14:31+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [
+    {
+     "title": "gif cities legible",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Goal line first, every board symbol named in How to play and tappable in game, a coach on the first levels.",
+     "since": "2026-10-18T17:30:12+00:00",
+     "done": null,
+     "reviewed": false,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-18T09:14:31+00:00",
+     "ok": true,
+     "note": "one-rule tutorial merged: first card fits 320x568 with the guestbook goal and one move; later patience rules have New tags, board loops and pages; old save test green"
+    },
+    {
+     "at": "2026-10-18T08:34:11+00:00",
+     "ok": true,
+     "note": "daily-keep- live: review of the Today lock; an old save that already played a daily keeps Today open (was re-locked, even Done today greyed out);"
+    },
+    {
+     "at": "2026-10-18T06:47:50+00:00",
+     "ok": true,
+     "note": "Today locked until levels 1-3 are solved; live"
+    },
+    {
+     "at": "2026-10-17T21:44:03+00:00",
+     "ok": true,
+     "note": "DAILY added: Today tile, a rescue box tray drawn from the date (3 boxes rotate, careful order always beats the tray), 365-day test"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T08:56:54+00:00",
+     "ok": true,
+     "note": "IMPROVED 7/7 (item 6 partial: Share kept on level 1, UI gate U8 requires it)"
+    },
+    {
+     "at": "2026-10-16T02:37:00+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/gif-cities/ (claude builder, batch4; STATE line added by orchestrator, builder ended while waiting on Pages)"
+    }
+   ]
+  },
+  {
+   "id": "glasshouse",
+   "title": "Glasshouse",
+   "line": "Lead a line of students through a greenhouse.",
+   "url": "https://chenhsieh.github.io/glasshouse/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/glasshouse-1.webp",
+   "lastChange": "2026-10-17T23:15:14+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-17T23:15:14+00:00",
+     "ok": true,
+     "note": "CREDIT line under the rules on the How to play card in all 5 shipped languages (Snake); README already says Snake; live"
+    }
+   ]
+  },
+  {
+   "id": "glyph-gates",
+   "title": "Glyph Gates",
+   "line": "Open a path by pairing marks at each gate.",
+   "url": "https://chenhsieh.github.io/glyph-gates/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/glyph-gates-1.webp",
+   "lastChange": "2026-10-17T22:08:17+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-17T22:08:17+00:00",
+     "ok": true,
+     "note": "CREDIT line under the level dots, EN+ZH (Waddington landscape 1957, via Quanta)"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    }
+   ]
+  },
+  {
+   "id": "grass-crossword",
+   "title": "Grass Crossword",
+   "line": "A crossword dug into a garden bed, where every answer is.",
+   "url": "https://chenhsieh.github.io/grass-crossword/",
+   "stage": "planning",
+   "who": "Claude",
+   "priority": "P3",
+   "priorityNote": "Source study first",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/grass-crossword-1.webp",
+   "lastChange": "2026-10-17T21:41:35+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [
+    {
+     "title": "grass source",
+     "state": "planned",
+     "worker": "Claude",
+     "plan": "Read the source piece closely; redesign so across and down matter and the original's idea is kept, or say why not.",
+     "since": "2026-10-18T17:32:39+00:00",
+     "done": null,
+     "reviewed": false,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T09:07:47+00:00",
+     "ok": true,
+     "note": "IMPROVED 8/8 (item 1 done in the page not rules.js; Share kept on level 1 and word breakpoint 385 not 360, both for UI gate U7/U8)"
+    },
+    {
+     "at": "2026-10-16T01:41:42+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/grass-crossword/ (claude builder, batch3)"
+    }
+   ]
+  },
+  {
+   "id": "herbarium-guess",
+   "title": "Herbarium Guess",
+   "line": "Place a pressed plant in place and year.",
+   "url": "https://chenhsieh.github.io/herbarium-guess/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/herbarium-guess-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "jar-stage",
+   "title": "Jar Stage",
+   "line": "Jar Stage is a small phone-first sorting puzzle about.",
+   "url": "https://chenhsieh.github.io/jar-stage/",
+   "stage": "shelf",
+   "who": null,
+   "priority": "P4",
+   "priorityNote": "",
+   "shelfNote": "crude visual, no animation, logic puzzle not fun.",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/jar-stage-1.webp",
+   "lastChange": "2026-10-18T13:48:12+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-18T13:48:12+00:00",
+     "ok": true,
+     "note": "tapslide- live : a tap that slides up to 12 px still picks up/drops a treasure (slid taps did nothing); test/tap_slide.mjs; playable_gate fails identically before/after (cannot play tap-then-tap), GATE_ISSUES.md"
+    },
+    {
+     "at": "2026-10-18T12:15:00+00:00",
+     "ok": true,
+     "note": "tap- live: hint lookup no longer makes the How to play card click-through or grants a free move."
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T09:09:58+00:00",
+     "ok": true,
+     "note": "IMPROVED 8/8"
+    },
+    {
+     "at": "2026-10-15T23:14:40+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/jar-stage/ (by hand after Claude rescue, 19:14; codex pre-publish pass skipped: codex usage limit until Oct 22)"
+    },
+    {
+     "at": "2026-10-15T22:04:35+00:00",
+     "ok": true,
+     "note": "NOT_PUBLISHED (auto): checks not green, see"
+    },
+    {
+     "at": "2026-10-15T21:50:59+00:00",
+     "ok": true,
+     "note": "playable gate PASS round 1"
+    },
+    {
+     "at": "2026-10-15T21:34:55+00:00",
+     "ok": true,
+     "note": "build start in"
+    },
+    {
+     "at": "2026-10-15T21:34:25+00:00",
+     "ok": true,
+     "note": "START job V1="
+    }
+   ]
+  },
+  {
+   "id": "just-in-case",
+   "title": "Just in Case",
+   "line": "Read a small piece of computational poetry.",
+   "url": "https://chenhsieh.github.io/just-in-case/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/just-in-case-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "keep-both",
+   "title": "Keep Both",
+   "line": "Copy a gene, then break it so both copies are kept.",
+   "url": "https://chenhsieh.github.io/keep-both/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/keep-both-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "latent-space-explorer",
+   "title": "Latent Space Explorer",
+   "line": "Move through a three-dimensional feature space.",
+   "url": "https://chenhsieh.github.io/latent-space-explorer/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/latent-space-explorer-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "lens-screen",
+   "title": "Lens Screen",
+   "line": "Drag a screen over the cup.",
+   "url": "https://chenhsieh.github.io/lens-screen/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/lens-screen-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "life-statistics",
+   "title": "Life from Statistics",
+   "line": "One person's life lies face down as five picture tiles.",
+   "url": "https://chenhsieh.github.io/life-statistics/",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "Hard to follow",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/life-statistics-1.webp",
+   "lastChange": "2026-10-17T23:15:14+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [
+    {
+     "title": "life statistics guide",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Rewrite the goal and How to play around one core idea, one page per rule.",
+     "since": "2026-10-18T17:30:12+00:00",
+     "done": null,
+     "reviewed": false,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-17T23:15:14+00:00",
+     "ok": false,
+     "note": "credit line skipped: marked DOUBT in CREDITS_TABLE.tsv (website maker unnamed, URL never opened)"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T09:24:40+00:00",
+     "ok": true,
+     "note": "IMPROVED 8/8"
+    },
+    {
+     "at": "2026-10-16T00:21:07+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/life-statistics/ (claude builder)"
+    },
+    {
+     "at": "2026-10-15T21:49:40+00:00",
+     "ok": true,
+     "note": "build start in"
+    },
+    {
+     "at": "2026-10-15T21:49:26+00:00",
+     "ok": true,
+     "note": "START job V1="
+    }
+   ]
+  },
+  {
+   "id": "lindy-shelf",
+   "title": "Lindy Shelf",
+   "line": "Stock a small shop's shelf for one week by dragging each.",
+   "url": "https://chenhsieh.github.io/lindy-shelf/",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "Rules unclear",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/lindy-shelf-1.webp",
+   "lastChange": "2026-10-18T09:14:31+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [
+    {
+     "title": "lindy rules",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Every refused placement explains itself; check the shelf rule follows the Lindy effect.",
+     "since": "2026-10-18T17:30:12+00:00",
+     "done": null,
+     "reviewed": false,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-18T09:14:31+00:00",
+     "ok": true,
+     "note": "one-rule tutorial merged: first card fits 320x568 with shelf goal and one move; double shelves, truck days and age dots teach on their levels; old save test green"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T09:25:28+00:00",
+     "ok": true,
+     "note": "IMPROVED 8/8"
+    },
+    {
+     "at": "2026-10-16T01:50:25+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/lindy-shelf/ (claude builder, batch4)"
+    }
+   ]
+  },
+  {
+   "id": "llm-game-of-life",
+   "title": "LLM Game of Life",
+   "line": "Watch a language model tend a living grid.",
+   "url": "https://chenhsieh.github.io/llm-game-of-life/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/llm-game-of-life-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "local-hero",
+   "title": "Local Hero",
+   "line": "Find the stretch two DNA strings share, then bank it.",
+   "url": "https://chenhsieh.github.io/local-hero/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/local-hero-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "machine-rhythm",
+   "title": "Machine Rhythm",
+   "line": "A toy line runs on its own beat and every machine stamps.",
+   "url": "https://chenhsieh.github.io/machine-rhythm/",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "No guidance yet",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/machine-rhythm-1.webp",
+   "lastChange": "2026-10-17T21:41:35+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [
+    {
+     "title": "machine rhythm guide",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Goal line, a step-through sequencer, cleaner grid labels, a first-level coach.",
+     "since": "2026-10-18T17:30:12+00:00",
+     "done": null,
+     "reviewed": false,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T09:31:54+00:00",
+     "ok": true,
+     "note": "IMPROVED 8/8"
+    },
+    {
+     "at": "2026-10-16T02:20:06+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/machine-rhythm/ (claude builder, batch4)"
+    }
+   ]
+  },
+  {
+   "id": "makeshift-chair",
+   "title": "Makeshift Chair",
+   "line": "",
+   "url": "https://chenhsieh.github.io/makeshift-chair/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 11.15,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "marble-machine",
+   "title": "Marble Machine",
+   "line": "Tilt pads so the ball plays the tune.",
+   "url": "https://chenhsieh.github.io/marble-machine/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/marble-machine-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "matchmaker-chat",
+   "title": "Matchmaker Chat",
+   "line": "Auntie sends a photo of a boy, then picture clues one.",
+   "url": "https://chenhsieh.github.io/matchmaker-chat/",
+   "stage": "planning",
+   "who": "Claude",
+   "priority": "P3",
+   "priorityNote": "Rethink as rival wingmen",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/matchmaker-chat-1.webp",
+   "lastChange": "2026-10-17T21:41:35+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [
+    {
+     "title": "matchmaker strategist",
+     "state": "planned",
+     "worker": "Claude",
+     "plan": "Redesign as rival wingmen coaching each side of a chat: bluff and counter-bluff, jokes, a messenger look.",
+     "since": "2026-10-18T17:32:39+00:00",
+     "done": null,
+     "reviewed": false,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T09:31:52+00:00",
+     "ok": true,
+     "note": "IMPROVED 8/8 (item 6 Share kept on level 1: UI gate U8; item 5 lock opens after bubble 2 on levels 2-3, not 1, so the harness casual bot reaches 80% on level 3; item 4 breakpoint changed here only, not in the shared kit upstream)"
+    },
+    {
+     "at": "2026-10-16T00:15:25+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/matchmaker-chat/ (claude builder)"
+    },
+    {
+     "at": "2026-10-15T21:39:59+00:00",
+     "ok": true,
+     "note": "build start in"
+    },
+    {
+     "at": "2026-10-15T21:39:26+00:00",
+     "ok": true,
+     "note": "START job V1="
+    }
+   ]
+  },
+  {
+   "id": "material-boards",
+   "title": "Material Boards",
+   "line": "Drop mirror, glass and wood tiles on a pinned sample.",
+   "url": "https://chenhsieh.github.io/material-boards/",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "Visual pass",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/material-boards-1.webp",
+   "lastChange": "2026-10-17T21:41:35+00:00",
+   "cost": {
+    "apiUsd": 14.39,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [
+    {
+     "title": "material cute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Visual pass toward a cuter, cleaner style; rules unchanged.",
+     "since": "2026-10-18T17:30:12+00:00",
+     "done": null,
+     "reviewed": false,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T00:23:21+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/material-boards/ (claude builder)"
+    },
+    {
+     "at": "2026-10-15T21:49:40+00:00",
+     "ok": true,
+     "note": "build start in"
+    },
+    {
+     "at": "2026-10-15T21:49:26+00:00",
+     "ok": true,
+     "note": "START job V1="
+    }
+   ]
+  },
+  {
+   "id": "metagenome-profilers",
+   "title": "Metagenome Profilers",
+   "line": "Compare MetaPhlAn and Kraken through six games.",
+   "url": "https://chenhsieh.github.io/metagenome-profilers/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/metagenome-profilers-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "mirror-hold",
+   "title": "Mirror Hold",
+   "line": "Wax a hairstyle, then test it against three pulls.",
+   "url": "https://chenhsieh.github.io/mirror-hold/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/mirror-hold-1.webp",
+   "lastChange": "2026-10-17T22:08:17+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-17T22:08:17+00:00",
+     "ok": true,
+     "note": "CREDIT line under the mirror map, EN+ZH (Itagaki, Baki; no art used)"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    }
+   ]
+  },
+  {
+   "id": "missing-field",
+   "title": "Missing Field",
+   "line": "A traveller walks a short road where people say facts out.",
+   "url": "https://chenhsieh.github.io/missing-field/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/missing-field-1.webp",
+   "lastChange": "2026-10-18T07:47:55+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-18T07:47:55+00:00",
+     "ok": true,
+     "note": "one-rule card live : first card = goal (stamp every dark sign: was 6 lines, 57, ran past 320x568), fits; level 2 keep/hold line + looping preview rings (was a one-shot), level 5 sec"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T09:29:44+00:00",
+     "ok": true,
+     "note": "IMPROVED 7/7 (item 4 levels.json first_mark kept at 1: gate D6/D8 refuses 2; item 6 Share kept on level 1: UI gate U8)"
+    },
+    {
+     "at": "2026-10-16T00:13:59+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/missing-field/ (claude builder)"
+    },
+    {
+     "at": "2026-10-15T22:09:55+00:00",
+     "ok": true,
+     "note": "build start in"
+    },
+    {
+     "at": "2026-10-15T22:09:26+00:00",
+     "ok": true,
+     "note": "START job V1="
+    }
+   ]
+  },
+  {
+   "id": "motif-hero",
+   "title": "Motif Hero",
+   "line": "Set the bar to how common each column's top letter is.",
+   "url": "https://chenhsieh.github.io/motif-hero/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/motif-hero-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "mushroom-gaps",
+   "title": "Mushroom at the End",
+   "line": "Grow mycelium threads across an old factory floor and cut.",
+   "url": "https://chenhsieh.github.io/mushroom-gaps/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/mushroom-gaps-1.webp",
+   "lastChange": "2026-10-17T21:41:35+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T07:38:05+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/mushroom-gaps/ (improve round )"
+    },
+    {
+     "at": "2026-10-16T00:09:55+00:00",
+     "ok": true,
+     "note": "NOT_PUBLISHED decision gate fails under harness-owned casual (D6 L2 9%, L3 16%; D8 1->2; D9 L7,L9); rules unchanged per brief; see protos-claude/mushroom-gaps/FIX.md"
+    }
+   ]
+  },
+  {
+   "id": "orbit-rings",
+   "title": "Orbit Rings",
+   "line": "Rings of coloured balls cross each other, and a ball.",
+   "url": "https://chenhsieh.github.io/orbit-rings/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/orbit-rings-1.webp",
+   "lastChange": "2026-10-18T08:34:11+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 1
+   },
+   "tasks": [
+    {
+     "title": "orbit rings",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-17T16:38:08+00:00",
+     "done": "2026-10-17T16:38:08+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "orbit-rings improve-: LIVE at https://chenhsieh.github.io/orbit-rings/ (main -> , tag pre-improve-; served bytes match, 390 and 320 screenshots checked, 0 console errors)."
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-18T08:34:11+00:00",
+     "ok": true,
+     "note": "also fixed test/r1016 daily check, which had been failing on main since the lock shipped"
+    },
+    {
+     "at": "2026-10-18T08:34:11+00:00",
+     "ok": true,
+     "note": "daily-keep- live: review of the Today lock; an old save that already played a daily keeps Today open (was re-locked, even Done today greyed out);"
+    },
+    {
+     "at": "2026-10-18T06:47:50+00:00",
+     "ok": true,
+     "note": "Today locked until levels 1-3 are solved; live"
+    },
+    {
+     "at": "2026-10-18T00:35:39+00:00",
+     "ok": true,
+     "note": "live : arrow press previews its ring, no false \"Drag further\", win holds 600 ms then card scrolls in, card counts turns as balls (no par on L1), How to play word from 360 px, first card = goal + one rule (crossing rule on L2, undo on L3), fonts 692->35"
+    },
+    {
+     "at": "2026-10-17T22:43:45+00:00",
+     "ok": true,
+     "note": "CREDIT line on the How to play card under the rules, EN+ZH (Hungarian Rings by Endre Pap, math.visualizations post); README already credited; live"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-17T07:36:36+00:00",
+     "ok": true,
+     "note": "DAILY added"
+    },
+    {
+     "at": "2026-10-16T01:37:01+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/orbit-rings/ (claude builder, batch3)"
+    }
+   ]
+  },
+  {
+   "id": "peony-dream",
+   "title": "Peony Dream",
+   "line": "Paint half a face on a sheet of silk, close the silk on.",
+   "url": "https://chenhsieh.github.io/peony-dream/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/peony-dream-1.webp",
+   "lastChange": "2026-10-18T06:15:29+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-18T06:15:29+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/peony-dream/ (batch5)"
+    },
+    {
+     "at": "2026-10-18T01:51:43+00:00",
+     "ok": true,
+     "note": "design done (no repo): mirror-print core (paint, fold prints wet ink, wake dries), DECISION PASS 4707 rows at , STEP0+V1 in protos-claude/peony-dream, look silk-and-bronze reserved; Lee 1993 unverified, not credited"
+    }
+   ]
+  },
+  {
+   "id": "play-lab",
+   "title": "Play Lab",
+   "line": "",
+   "url": "https://chenhsieh.github.io/play-lab/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 5.27,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "felt-years",
+   "title": "Play Lab game",
+   "line": "Felt Years is a quiet solo puzzle about a goat whose life.",
+   "url": "https://chenhsieh.github.io/felt-years/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/felt-years-1.webp",
+   "lastChange": "2026-10-18T14:24:02+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 2,
+    "claudeRuns": 1
+   },
+   "tasks": [
+    {
+     "title": "felt years forward",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-18T08:47:14+00:00",
+     "done": "2026-10-18T08:47:14+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Changed: level-2 forward-rule loop, save migration, Chinese labels, compact controls, clean preview."
+    },
+    {
+     "title": "review_felt years",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-18T08:07:38+00:00",
+     "done": "2026-10-18T08:07:38+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "For a player: the paragraphs about Janet, ln 20 and James under the board are gone. That fix came from the codex art pass, which was never pushed; it is now live. The board now shows how many firsts are left. A line..."
+    },
+    {
+     "title": "art_felt years",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-18T07:41:46+00:00",
+     "done": "2026-10-18T07:41:46+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Players now get a legible engraved album board, illustrated goat, leaf-and-wood feedback, and no on-screen history explainer."
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-18T14:24:02+00:00",
+     "ok": false,
+     "note": "followup- verified locally; push to configured origin blocked by egress policy."
+    },
+    {
+     "at": "2026-10-18T13:48:12+00:00",
+     "ok": true,
+     "note": "result- live : confirmed live; the result card now scrolls into view after the win (was below the fold at 320 and 390); touch test + live save fixture"
+    },
+    {
+     "at": "2026-10-18T09:05:11+00:00",
+     "ok": true,
+     "note": "forward- merged (): level 2 now teaches life running forward with a real-board fade loop; level 1 cannot trigger it; Chinese album, levels and results localized; 320x568 controls and hold preview fixed; old v1 save migrated intact"
+    },
+    {
+     "at": "2026-10-18T08:46:31+00:00",
+     "ok": true,
+     "note": "review- live: art pass (was unpushed) now live, so the Janet/ln 20/James paragraphs are gone; board shows firsts left; dead-end and behind-the-goat lines; album shows the real print and own marks; plural/title fixes; old save checked intact"
+    },
+    {
+     "at": "2026-10-18T08:16:53+00:00",
+     "ok": false,
+     "note": "art- committed : legible engraved album board, illustrated goat and birthday print, leaf-and-wood motion/sound, and play-screen history removed; smoke, playable/UI gates and fresh-clone checks pass; publication blocked because remote push requir"
+    },
+    {
+     "at": "2026-10-18T06:19:51+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/felt-years/ (batch5)"
+    },
+    {
+     "at": "2026-10-17T23:11:23+00:00",
+     "ok": true,
+     "note": "NEW design: rules model + harness gates DECISION PASS (4707 rows, planner-greedy 39.7 vs random sd 23.3), STEP0.md + V1.md in protos-claude/felt-years, look reserved (slide rule over pasture album); no repo yet"
+    }
+   ]
+  },
+  {
+   "id": "primer",
+   "title": "Primer",
+   "line": "Read a small piece of computational poetry.",
+   "url": "https://chenhsieh.github.io/primer/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/primer-1.webp",
+   "lastChange": "2026-10-17T21:41:35+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    }
+   ]
+  },
+  {
+   "id": "protos-claude",
+   "title": "Protos Claude",
+   "line": "",
+   "url": "https://chenhsieh.github.io/protos-claude/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "lastChange": "2026-10-18T01:19:11+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 5,
+    "claudeRuns": 1
+   },
+   "tasks": [
+    {
+     "title": "peony dream_design",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-18T01:19:11+00:00",
+     "done": "2026-10-18T01:19:11+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "VERDICT: BUILD. Peony Dream design written to (STEP0.md, V1.md, docs/rules.js, docs/levels.json, docs/bots.js, docs/pools.json, test/, measure/). No repo, nothing published."
+    },
+    {
+     "title": "clean features_design",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T18:38:25+00:00",
+     "done": "2026-10-17T18:38:25+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "**Verdict: build it.** The game is called \"What the Dish Sees\" for now (the seed name is clean-features). A tiny network grows in a petri dish as colonies, and each colony responds to exactly one shape (ring, point,..."
+    },
+    {
+     "title": "fake philosopher_design",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T18:38:25+00:00",
+     "done": "2026-10-17T18:38:25+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "**Verdict: build it.** The design is in ` `STEP0.md`, `V1.md`, a working rules model with bots (`docs/rules.js`, `docs/levels.json`, `docs/bots.js`) and the test scripts. There is no page yet and no GitHub repo."
+    },
+    {
+     "title": "felt years_design",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T18:38:25+00:00",
+     "done": "2026-10-17T18:38:25+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "**The verdict is build.** Felt Years is a solo puzzle. A goat's life from age 4 to 80 is drawn as a ruler where each year is as wide as it feels, so the middle of the ruler falls just before 18."
+    },
+    {
+     "title": "four thirty three_design",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T18:38:25+00:00",
+     "done": "2026-10-17T18:38:25+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Verdict: BUILD. Package: [STEP0.md]( and [V1.md]( no repo created or published."
+    },
+    {
+     "title": "trick box_design",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T18:38:25+00:00",
+     "done": "2026-10-17T18:38:25+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Verdict: BUILD — [STEP0](< and [V1](< define a visible press-route puzzle; grin moment: the last block tips the toothpick upright."
+    }
+   ],
+   "history": []
+  },
+  {
+   "id": "provenance-reply",
+   "title": "Provenance Reply",
+   "line": "Tap faces to compose a reply.",
+   "url": "https://chenhsieh.github.io/provenance-reply/",
+   "stage": "shelf",
+   "who": null,
+   "priority": "P4",
+   "priorityNote": "",
+   "shelfNote": "is the computer's reading exploitable; should look like a messenger chat. ask before acting.)",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/provenance-reply-1.webp",
+   "lastChange": "2026-10-16T07:38:11+00:00",
+   "cost": {
+    "apiUsd": 6.24,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-16T07:38:11+00:00",
+     "ok": true,
+     "note": "IMPROVED 6/6 (live ; playable_gate n/a: game is on the UI kit, not the shared shell)"
+    }
+   ]
+  },
+  {
+   "id": "rain-signal",
+   "title": "Rain Signal",
+   "line": "Drag the ring onto the light.",
+   "url": "https://chenhsieh.github.io/rain-signal/",
+   "stage": "shelf",
+   "who": null,
+   "priority": "P4",
+   "priorityNote": "",
+   "shelfNote": "unclear why things match, why care about rain and green lights; the car looks like it hits the man.",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/rain-signal-1.webp",
+   "lastChange": "2026-10-18T09:31:43+00:00",
+   "cost": {
+    "apiUsd": 4.35,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-18T09:31:43+00:00",
+     "ok": true,
+     "note": "fix- live: first card is goal plus drag rule and includes the shared demo selector adapter; full browser suite, UI gate, and 390x844/320 visual checks pass. playable_gate cannot represent a real drag or the deliberate result animation; documented in GA"
+    },
+    {
+     "at": "2026-10-18T08:45:19+00:00",
+     "ok": false,
+     "note": "fix- reduces the first card to a goal plus one drag rule, passes UI gate, and fits 320x568; its standalone game lacks playable_gate's required __demo.levels() adapter."
+    },
+    {
+     "at": "2026-10-17T22:08:17+00:00",
+     "ok": true,
+     "note": "CREDIT line on the How to play card under the rules, EN+ZH (saved photo, photographer unknown)"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T07:33:03+00:00",
+     "ok": true,
+     "note": "IMPROVED 7/7"
+    }
+   ]
+  },
+  {
+   "id": "rasp",
+   "title": "Rasp",
+   "line": "Cut the teeth of a steel rasp one hammer strike at a.",
+   "url": "https://chenhsieh.github.io/rasp/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/rasp-1.webp",
+   "lastChange": "2026-10-18T08:34:11+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 1
+   },
+   "tasks": [
+    {
+     "title": "rasp",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-17T16:38:08+00:00",
+     "done": "2026-10-17T16:38:08+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "For a player: the score now reads out of the real maximum (3 marks a tooth, \"19 / 27 marks\"). Par is a stamp (\"It shaves\" / \"Not yet even\") and level 1 is never graded. The result card waits until the shave curl..."
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-18T08:34:11+00:00",
+     "ok": true,
+     "note": "daily-keep- live: review of the Today lock; an old save that already played a daily keeps Today open (was re-locked, even Done today greyed out);"
+    },
+    {
+     "at": "2026-10-18T06:47:50+00:00",
+     "ok": true,
+     "note": "Today locked until levels 1-3 are solved; live"
+    },
+    {
+     "at": "2026-10-18T00:19:42+00:00",
+     "ok": true,
+     "note": "round R package: score out of max (3/tooth) with par as a stamp; result card waits for the shave curl; slip line fixed + level 4 lights the moved gap; How to play one rule a page (goal first) + new-rule line per level; thumb strike pad; top bar usable over the"
+    },
+    {
+     "at": "2026-10-17T22:43:45+00:00",
+     "ok": true,
+     "note": "CREDIT line on the How to play card under the rules, EN+ZH (YouTube Short by @TTM-III); README already credited; live"
+    },
+    {
+     "at": "2026-10-17T21:44:03+00:00",
+     "ok": true,
+     "note": "DAILY added: Today tile, short rasp with a crooked pre-cut first row from the date + seeded slip;"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T00:22:41+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/rasp/ (claude builder)"
+    }
+   ]
+  },
+  {
+   "id": "redline-river",
+   "title": "Redline River",
+   "line": "Cross a river by reading its red lines.",
+   "url": "https://chenhsieh.github.io/redline-river/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/redline-river-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "refusal-detour",
+   "title": "Refusal Detour",
+   "line": "",
+   "url": "https://chenhsieh.github.io/refusal-detour/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/refusal-detour-1.webp",
+   "lastChange": "2026-10-17T22:08:17+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-17T22:08:17+00:00",
+     "ok": true,
+     "note": "CREDIT line under the coach line, EN+ZH (chat-assistant refusal screenshot); word-budget test excludes .credit"
+    }
+   ]
+  },
+  {
+   "id": "remember-228",
+   "title": "Remember 228",
+   "line": "Read one day at a time from 1947.",
+   "url": "https://chenhsieh.github.io/remember-228/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/remember-228-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "remote-viewer",
+   "title": "Remote Viewer",
+   "line": "Uncover a CIA file and name its assignment.",
+   "url": "https://chenhsieh.github.io/remote-viewer/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/remote-viewer-1.webp",
+   "lastChange": "2026-10-18T00:05:43+00:00",
+   "cost": {
+    "apiUsd": 9.24,
+    "codexRuns": 0,
+    "claudeRuns": 1
+   },
+   "tasks": [
+    {
+     "title": "remote viewer",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-17T16:38:08+00:00",
+     "done": "2026-10-17T16:38:08+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Changed for a player: a Hint now adds 1 to the file's score and a hinted file shows ◩; giving up scores the file as a full marker (+ink cap minus fewest, shown in the confirm line) instead of vanishing from +N; the..."
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-18T00:05:43+00:00",
+     "ok": true,
+     "note": "hint costs 1 (new mark ◩), giving up scores a full marker, older quiz deals rounds independently; exploit replay: hint spam +0->+10, give-up-all +78 vs honest +5, elimination 22% vs random 23%; live ; ink-stays rule NOT shipped (needs playtest)"
+    },
+    {
+     "at": "2026-10-17T23:15:14+00:00",
+     "ok": true,
+     "note": "CREDIT line under the About fold, EN+ZH (Redactle by John Turner; CIA STAR GATE files); no How to play card exists; README already credited; live"
+    }
+   ]
+  },
+  {
+   "id": "repos",
+   "title": "Repos",
+   "line": "",
+   "url": "https://chenhsieh.github.io/repos/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "lastChange": "2026-10-18T14:12:42+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 15,
+    "claudeRuns": 6
+   },
+   "tasks": [
+    {
+     "title": "zoomout tap pycache",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-18T14:12:42+00:00",
+     "done": "2026-10-18T14:12:42+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "z9_zoomout-tap-pycache (2026-10-18)"
+    },
+    {
+     "title": "small followups",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-18T13:48:46+00:00",
+     "done": "2026-10-18T13:48:46+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "- Updated local commits: Felt Years ``, Fake Philosopher ``, Copy Paste ``."
+    },
+    {
+     "title": "onerule sweep 4",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-18T12:52:06+00:00",
+     "done": "2026-10-18T12:52:06+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Drawing Circles now teaches one rule at a time, with a small-phone first card and level-specific New loops."
+    },
+    {
+     "title": "codex review",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-18T12:52:05+00:00",
+     "done": "2026-10-18T12:52:05+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Players now get: clean-features picture slides with shape hints only on levels 1-4 (live ); in felt-years () and zoom-out () the result card scrolls into view after a win, where before Next level sat below the screen on..."
+    },
+    {
+     "title": "tap forgiveness",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-18T12:01:36+00:00",
+     "done": "2026-10-18T12:01:36+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "10 px finger slides now count as taps in all five games; Walls and Jar no longer grant gate-only moves."
+    },
+    {
+     "title": "drag sweep",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-18T10:26:53+00:00",
+     "done": "2026-10-18T10:26:53+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "z6 drag-sweep result (2026-10-18)"
+    },
+    {
+     "title": "onerule sweep 3",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-18T09:02:00+00:00",
+     "done": "2026-10-18T09:02:00+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Published GIF Cities, Lindy Shelf, and Tractatus Tree with compact goal-plus-one-rule cards, level-specific New loops, paged help, and old-save checks."
+    },
+    {
+     "title": "small fixes publish",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-18T09:02:00+00:00",
+     "done": "2026-10-18T09:02:00+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Anechoic Fugue, Tomorrow Bag, and Rain Signal are live; adapters, edge fix, and short first card are published."
+    }
+   ],
+   "history": []
+  },
+  {
+   "id": "ribosome-2048",
+   "title": "Ribosome 2048",
+   "line": "Slip reading frames to build a protein.",
+   "url": "https://chenhsieh.github.io/ribosome-2048/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/ribosome-2048-1.webp",
+   "lastChange": "2026-10-17T23:15:14+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-17T23:15:14+00:00",
+     "ok": true,
+     "note": "CREDIT line under the rules on the main page, and in the Swipe lab (2048, Cirulli) and Drop (Tetris, Pajitnov) help panels; English only game; README already credited; live"
+    }
+   ]
+  },
+  {
+   "id": "rna-hero",
+   "title": "RNA Hero",
+   "line": "Zip an RNA strand into its best fold.",
+   "url": "https://chenhsieh.github.io/rna-hero/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/rna-hero-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "four-thirty-three",
+   "title": "Room Tone",
+   "line": "A small solo puzzle.",
+   "url": "https://chenhsieh.github.io/four-thirty-three/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/four-thirty-three-1.webp",
+   "lastChange": "2026-10-18T10:26:23+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 1,
+    "claudeRuns": 1
+   },
+   "tasks": [
+    {
+     "title": "review_four thirty three",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-18T08:07:38+00:00",
+     "done": "2026-10-18T08:07:38+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "For a player: Room Tone now responds to real finger drags (before, no drag ever registered on a phone). Every room is now its own puzzle: send each sound through a door, curtain or arch to its bar. Shorter lines score..."
+    },
+    {
+     "title": "art_four thirty three",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-18T07:41:46+00:00",
+     "done": "2026-10-18T07:41:46+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Room Tone now plays in a warm illustrated stage room, with readable kettle, clock, window, ripples, and a quiet scored-light/sound solve cue."
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-18T10:26:23+00:00",
+     "ok": true,
+     "note": "review: fixed finger drags (shell boardPoint mixed screen/board pixels; also in harness template), rebuilt puzzle as wall-openings assignment (door 1, curtain muffles, arch 2 or kettle), searched layouts so greedy misses par on rooms 2-12, removed answer anima"
+    },
+    {
+     "at": "2026-10-18T08:15:04+00:00",
+     "ok": true,
+     "note": "art- live : warm illustrated stage room with kettle, clock and rain-window sound sources, visible ripples and a lime score-bar solve cue with room-derived sound; shared playable/UI gates and fresh-clone tests pass; checked live at 390x844 and 32"
+    },
+    {
+     "at": "2026-10-18T06:20:45+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/four-thirty-three/ (batch5)"
+    }
+   ]
+  },
+  {
+   "id": "scooter-alley",
+   "title": "Scooter Alley",
+   "line": "Ride a delivery scooter up a Taipei back lane after rain.",
+   "url": "https://chenhsieh.github.io/scooter-alley/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/scooter-alley-1.webp",
+   "lastChange": "2026-10-18T06:47:32+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-18T06:47:32+00:00",
+     "ok": true,
+     "note": "one-rule card live : first card = goal + ride rule (2 lines, 27 words), fits 320x568 (was scrolled past its heading); order/wait/red light/cart join on levels 2/4/6/7 with a New tag + loop on the real board; How to play = rules met so far, one per page;"
+    },
+    {
+     "at": "2026-10-17T22:43:45+00:00",
+     "ok": true,
+     "note": "CREDIT line on the How to play card under the rules, EN+ZH (Taipei Rush by aicodewithme, Frogger, Crossy Road); README already credited; live"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T02:28:52+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/scooter-alley/ (claude builder, batch4)"
+    }
+   ]
+  },
+  {
+   "id": "seal-carver",
+   "title": "Seal Carver",
+   "line": "Carve a short phrase into a square seal stone, one box.",
+   "url": "https://chenhsieh.github.io/seal-carver/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/seal-carver-1.webp",
+   "lastChange": "2026-10-17T22:43:45+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-17T22:43:45+00:00",
+     "ok": true,
+     "note": "CREDIT line on the How to play card under the rules, EN+ZH (ii_v_i_addict seal-editor video, Nikoli's Shikaku); README already credited; live"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T01:43:20+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/seal-carver/ (claude builder, batch3)"
+    }
+   ]
+  },
+  {
+   "id": "seed-spiral",
+   "title": "Seed Spiral",
+   "line": "Grow a sunflower and count its spirals.",
+   "url": "https://chenhsieh.github.io/seed-spiral/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/seed-spiral-1.webp",
+   "lastChange": "2026-10-17T21:41:35+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    }
+   ]
+  },
+  {
+   "id": "server-stress",
+   "title": "Server Stress",
+   "line": "Night shift in a server room: every rack warms a light.",
+   "url": "https://chenhsieh.github.io/server-stress/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/server-stress-1.webp",
+   "lastChange": "2026-10-18T08:29:18+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-18T08:29:18+00:00",
+     "ok": true,
+     "note": "one-rule card live : goal plus first cooling rule fits 320x568; heat-spill and crash-cascade rules arrive on rooms 10 and 11 with New tags and a board loop; How to play follows unlocked rules; old save test passes"
+    },
+    {
+     "at": "2026-10-17T22:43:45+00:00",
+     "ok": true,
+     "note": "CREDIT line on the How to play card under the rules, EN+ZH (Monserrate's The Cloud Is Material, film Non-Player World); README already credited; live"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T02:05:08+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/server-stress/ (claude builder, batch3)"
+    }
+   ]
+  },
+  {
+   "id": "service-lane",
+   "title": "Service Lane",
+   "line": "Choose parts to power a path to its target.",
+   "url": "https://chenhsieh.github.io/service-lane/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/service-lane-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "seventeen-spellings",
+   "title": "Seventeen Spellings",
+   "line": "Read a computational poem in seventeen forms.",
+   "url": "https://chenhsieh.github.io/seventeen-spellings/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/seventeen-spellings-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "shared-phase",
+   "title": "Shared Phase",
+   "line": "A row of cartoon metronomes stands on a music staff, and.",
+   "url": "https://chenhsieh.github.io/shared-phase/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/shared-phase-1.webp",
+   "lastChange": "2026-10-18T06:52:49+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-18T06:52:49+00:00",
+     "ok": true,
+     "note": "one-rule card live : first card = goal + tap rule (2 lines, 20 words), fits 320x568 (opened scrolled past its heading); clip/hollow notes/round window join on levels 2/3/5 with a New tag + pulse on the real board; How to play = rules met so far; old sav"
+    },
+    {
+     "at": "2026-10-17T22:43:45+00:00",
+     "ok": true,
+     "note": "CREDIT line on the How to play card under the rules, EN+ZH (original idea, Lights Out chase move); README already credited; live"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T00:23:19+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/shared-phase/ (claude builder)"
+    }
+   ]
+  },
+  {
+   "id": "side-link-roller",
+   "title": "Side-Link Roller",
+   "line": "Tap lit pages to roll a ball between links.",
+   "url": "https://chenhsieh.github.io/side-link-roller/",
+   "stage": "shelf",
+   "who": null,
+   "priority": "P4",
+   "priorityNote": "",
+   "shelfNote": "retro hyperlink theme disappointing; consider dropping the theme; puzzle may survive. First in line when this shelf reopens.",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/side-link-roller-1.webp",
+   "lastChange": "2026-10-16T07:37:00+00:00",
+   "cost": {
+    "apiUsd": 4.33,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-16T07:37:00+00:00",
+     "ok": true,
+     "note": "IMPROVED 8/8"
+    }
+   ]
+  },
+  {
+   "id": "sigil-wheel",
+   "title": "Sigil Wheel",
+   "line": "Arrange letters on a shape and trace a word.",
+   "url": "https://chenhsieh.github.io/sigil-wheel/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/sigil-wheel-1.webp",
+   "lastChange": "2026-10-17T22:08:17+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-17T22:08:17+00:00",
+     "ok": true,
+     "note": "CREDIT line under the intro: Golden Dawn Rose Cross sigil wheel + Su Hui 璇璣圖 (English only; page ships English only)"
+    }
+   ]
+  },
+  {
+   "id": "sigils",
+   "title": "Sigils",
+   "line": "Seed a prompt and grow a personal mark.",
+   "url": "https://chenhsieh.github.io/sigils/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/sigils-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "directory-handrail",
+   "title": "Signposts",
+   "line": "Signposts is a short phone puzzle about hanging route.",
+   "url": "https://chenhsieh.github.io/directory-handrail/",
+   "stage": "planning",
+   "who": "Claude",
+   "priority": "P2",
+   "priorityNote": "Closest to finished; fun pass",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/directory-handrail-1.webp",
+   "lastChange": "2026-10-17T19:12:02+00:00",
+   "cost": {
+    "apiUsd": 7.97,
+    "codexRuns": 1,
+    "claudeRuns": 0
+   },
+   "tasks": [
+    {
+     "title": "signposts fun",
+     "state": "planned",
+     "worker": "Claude",
+     "plan": "Study bus-boarding and sorting hits, add new mechanisms one per level, smoother drag, cuter characters, more levels.",
+     "since": "2026-10-18T17:32:39+00:00",
+     "done": null,
+     "reviewed": false,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "directory handrail",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T16:37:47+00:00",
+     "done": "2026-10-17T16:37:47+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Signposts is now a cute isometric street: the crowd comes in at the near end and walks up past each door to the first sign that fits. Levels 1 to 5 each bring in one rule"
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-17T19:12:02+00:00",
+     "ok": true,
+     "note": "LIVE : isometric toy street (crowd walks door by door), real drag with snap + tap-tap, one rule per level 1-5 with ghost demos, three streets unlock in turn + Harbour Row, shared daily.js daily; credit narrowed to the few-entrances idea; PRIORART_202610"
+    },
+    {
+     "at": "2026-10-17T04:13:11+00:00",
+     "ok": true,
+     "note": "IMPROVED levels 2-5 re-made (L2 one two-wish sign, L3 two-wish sign steals a crowd, L4 Everything goes last, L5 smaller crowds); scoring unchanged; casual first-mark 100/83/68/50/32 (was 100/25/28/18/20); DECISION PASS + UI GATE PASS + playable 12/12"
+    },
+    {
+     "at": "2026-10-16T08:54:34+00:00",
+     "ok": true,
+     "note": "NOT_IMPROVED harness decision gate FAIL D6:2 D6:3 D8:1->2 on V1 rules (item 1 pins rules.js; current harness casual = any non-lowering move, 22%/28% on L2/L3; V1 PASS used a game-owned casual the harness now refuses). All 8 items built, repo tests + fresh clon"
+    },
+    {
+     "at": "2026-10-15T23:14:40+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/directory-handrail/ (by hand after Claude rescue, 19:14; codex pre-publish pass skipped: codex usage limit until Oct 22)"
+    },
+    {
+     "at": "2026-10-15T21:48:30+00:00",
+     "ok": true,
+     "note": "NOT_PUBLISHED playable gate failed after 3 rounds"
+    },
+    {
+     "at": "2026-10-15T21:48:29+00:00",
+     "ok": true,
+     "note": "playable gate FAIL round 3"
+    },
+    {
+     "at": "2026-10-15T21:20:17+00:00",
+     "ok": true,
+     "note": "playable gate FAIL round 2"
+    },
+    {
+     "at": "2026-10-15T21:04:02+00:00",
+     "ok": true,
+     "note": "playable gate FAIL round 1"
+    },
+    {
+     "at": "2026-10-15T20:39:55+00:00",
+     "ok": true,
+     "note": "build start in"
+    },
+    {
+     "at": "2026-10-15T20:39:24+00:00",
+     "ok": true,
+     "note": "START job V1="
+    }
+   ]
+  },
+  {
+   "id": "silva-to-maaslin2",
+   "title": "SILVA to MaAsLin2",
+   "line": "Follow 16S reads through six small games.",
+   "url": "https://chenhsieh.github.io/silva-to-maaslin2/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/silva-to-maaslin2-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "slice-and-bake",
+   "title": "Slice and Bake",
+   "line": "Move dough before each cut to match the next slice.",
+   "url": "https://chenhsieh.github.io/slice-and-bake/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/slice-and-bake-1.webp",
+   "lastChange": "2026-10-17T23:15:14+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-17T23:15:14+00:00",
+     "ok": true,
+     "note": "CREDIT line on the baked-tray card and the level map, EN+ZH (saved cookie photos, baker unknown); no How to play card exists; README already credited; live"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    }
+   ]
+  },
+  {
+   "id": "moire-overlay",
+   "title": "Slide the Glass",
+   "line": "A striped glass lies over a scrambled print, and.",
+   "url": "https://chenhsieh.github.io/moire-overlay/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/moire-overlay-1.webp",
+   "lastChange": "2026-10-17T21:41:35+00:00",
+   "cost": {
+    "apiUsd": 9.89,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T00:14:24+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/moire-overlay/ (claude builder)"
+    }
+   ]
+  },
+  {
+   "id": "slug",
+   "title": "Slug",
+   "line": "",
+   "url": "https://chenhsieh.github.io/slug/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "lastChange": "time",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "time",
+     "ok": true,
+     "note": "detail"
+    }
+   ]
+  },
+  {
+   "id": "sockglass",
+   "title": "Sockglass",
+   "line": "Drag tissue-paper socks onto a dark bedroom window; where.",
+   "url": "https://chenhsieh.github.io/sockglass/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/sockglass-1.webp",
+   "lastChange": "2026-10-17T22:28:38+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-17T22:28:38+00:00",
+     "ok": true,
+     "note": "CREDIT line on the How to play card under the rules, EN+ZH (Flow Free, Chromatron); live"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T00:35:59+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/sockglass/ (claude builder)"
+    }
+   ]
+  },
+  {
+   "id": "soft-bag",
+   "title": "Soft Bag",
+   "line": "",
+   "url": "https://chenhsieh.github.io/soft-bag/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/soft-bag-1.webp",
+   "lastChange": "2026-10-18T07:07:44+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-18T07:07:44+00:00",
+     "ok": true,
+     "note": "one-rule card live : first card = goal + pull rule (2 lines, 26 words; was 6 lines, 73), fits 320x568; matching rule joins on level 2 (end toy + lumps of its colour pulse), squeeze on level 3 (hand + filling ring loop), New tag; How to play = rules met"
+    },
+    {
+     "at": "2026-10-17T22:28:38+00:00",
+     "ok": true,
+     "note": "CREDIT line on the How to play card under the rules, EN+ZH (Domino/Uno, Kim's game); live"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T00:35:39+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/soft-bag/ (claude builder)"
+    }
+   ]
+  },
+  {
+   "id": "spirit-billboard",
+   "title": "Spirit Billboard",
+   "line": "Paste pictures on a roadside billboard and watch the.",
+   "url": "https://chenhsieh.github.io/spirit-billboard/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/spirit-billboard-1.webp",
+   "lastChange": "2026-10-18T07:24:33+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-18T07:24:33+00:00",
+     "ok": true,
+     "note": "one-rule card live : first card = goal + tap/post (2 lines, 20 words; was 6 lines, 66, opened scrolled), fits 320x568; reading the crowd/posters run out/no dotted line join on levels 2/3/4 with New tag + pulse on the real board; How to play = rules met"
+    },
+    {
+     "at": "2026-10-17T22:28:38+00:00",
+     "ok": true,
+     "note": "CREDIT line on the How to play card under the rules, EN+ZH (saved billboard photo, Mastermind); live"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T00:38:11+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/spirit-billboard/ (claude builder)"
+    }
+   ]
+  },
+  {
+   "id": "squat-tempo",
+   "title": "Squat Tempo",
+   "line": "Two frogs hold a squat-off to a whistle, and the crowd.",
+   "url": "https://chenhsieh.github.io/squat-tempo/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/squat-tempo-1.webp",
+   "lastChange": "2026-10-18T08:34:11+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-18T08:34:11+00:00",
+     "ok": true,
+     "note": "daily-keep- live: review of the Today lock; an old save that already played a daily keeps Today open (was re-locked, even Done today greyed out);"
+    },
+    {
+     "at": "2026-10-18T06:47:50+00:00",
+     "ok": true,
+     "note": "Today locked until levels 1-3 are solved; live"
+    },
+    {
+     "at": "2026-10-17T22:28:38+00:00",
+     "ok": true,
+     "note": "CREDIT line on the How to play card under the rules, EN+ZH (silver_wolf_lv999_1 Threads post, Meta AI reply); live"
+    },
+    {
+     "at": "2026-10-17T21:44:03+00:00",
+     "ok": true,
+     "note": "DAILY added: Today tile, a fresh strip per day under the pool rule (trap + par band), 364/365 distinct strips"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T02:01:36+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/squat-tempo/ (claude builder, batch4)"
+    }
+   ]
+  },
+  {
+   "id": "stroke-tops",
+   "title": "Stroke Tops",
+   "line": "A dish of wooden spinning tops, each carrying a Chinese.",
+   "url": "https://chenhsieh.github.io/stroke-tops/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/stroke-tops-1.webp",
+   "lastChange": "2026-10-18T07:49:24+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-18T07:49:24+00:00",
+     "ok": true,
+     "note": "one-rule card live : first card = goal + tap/knock rule (2 lines, 24 words, one picture; was 5 lines, 57), fits 320x568; rim/flat base/dots/spare knocks join on levels 2/3/4/5 with New tag + pulse on the board (dots rule was never stated before); How to"
+    },
+    {
+     "at": "2026-10-17T22:28:38+00:00",
+     "ok": true,
+     "note": "CREDIT line on the How to play card under the rules, EN+ZH (Moji Blade by ru, Make Me a Hanzi); live"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T02:03:38+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/stroke-tops/ (claude builder, batch3)"
+    }
+   ]
+  },
+  {
+   "id": "taste",
+   "title": "Taste",
+   "line": "",
+   "url": "https://chenhsieh.github.io/taste/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "lastChange": "2026-10-17T23:16:11+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 2,
+    "claudeRuns": 0
+   },
+   "tasks": [
+    {
+     "title": "taste mkdir finish",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T23:16:11+00:00",
+     "done": "2026-10-17T23:16:11+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Added [web_inspo.md]( with 20 sourced site records, 10 reusable patterns, and revisit instructions; linked it in TASTE and the registry."
+    },
+    {
+     "title": "taste mkdir",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T16:37:47+00:00",
+     "done": "2026-10-17T16:37:47+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Quiet/minimal lane is done (12 sites). Two lanes still browsing."
+    }
+   ],
+   "history": []
+  },
+  {
+   "id": "telephone-of-babel",
+   "title": "Telephone of Babel",
+   "line": "",
+   "url": "https://chenhsieh.github.io/telephone-of-babel/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/telephone-of-babel-1.webp",
+   "lastChange": "2026-10-18T08:36:00+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-18T08:34:11+00:00",
+     "ok": true,
+     "note": "daily-keep- live: review of the Today lock; an old save that already played a daily keeps Today open (was re-locked, even Done today greyed out);"
+    },
+    {
+     "at": "2026-10-18T08:36:00+00:00",
+     "ok": true,
+     "note": "one-rule card live : goal plus family-pick rule fits 320x568; bubble transformations level 2 and heart arrows level 6 arrive with New tags; How to play follows unlocked rules; old save test passes"
+    },
+    {
+     "at": "2026-10-18T06:47:50+00:00",
+     "ok": true,
+     "note": "Today locked until levels 1-3 are solved; live"
+    },
+    {
+     "at": "2026-10-17T22:28:38+00:00",
+     "ok": true,
+     "note": "NOT_DONE credit line: DOUBT in CREDITS_TABLE.tsv (personal screenshots vs saved post);"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-17T07:36:36+00:00",
+     "ok": true,
+     "note": "DAILY added"
+    },
+    {
+     "at": "2026-10-16T00:30:37+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/telephone-of-babel/ (claude builder)"
+    }
+   ]
+  },
+  {
+   "id": "tell",
+   "title": "TELL",
+   "line": "Rub marks off a creature until the least ink is left that.",
+   "url": "https://chenhsieh.github.io/tell/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/tell-1.webp",
+   "lastChange": "2026-10-17T21:41:35+00:00",
+   "cost": {
+    "apiUsd": 6.63,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-16T08:16:14+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/tell/ (improve round )"
+    },
+    {
+     "at": "2026-10-15T23:59:38+00:00",
+     "ok": true,
+     "note": "playable gate FAIL after UI1"
+    },
+    {
+     "at": "2026-10-15T23:14:47+00:00",
+     "ok": true,
+     "note": "STILL HELD: blocked only by new playable-gate no-title rule, needs UI retrofit; see pipeline/GATE_ISSUES.md"
+    },
+    {
+     "at": "2026-10-15T21:05:55+00:00",
+     "ok": true,
+     "note": "STILL HELD after 2 retries: needs a human or Claude look"
+    },
+    {
+     "at": "2026-10-15T20:38:00+00:00",
+     "ok": true,
+     "note": "retry 1 playable FAIL"
+    },
+    {
+     "at": "2026-10-15T19:38:59+00:00",
+     "ok": true,
+     "note": "NOT_PUBLISHED (auto): checks not green, see"
+    },
+    {
+     "at": "2026-10-15T19:27:08+00:00",
+     "ok": true,
+     "note": "playable gate PASS round 1"
+    },
+    {
+     "at": "2026-10-15T18:59:52+00:00",
+     "ok": true,
+     "note": "build start in"
+    },
+    {
+     "at": "2026-10-15T18:59:21+00:00",
+     "ok": true,
+     "note": "START job V1="
+    }
+   ]
+  },
+  {
+   "id": "the-folder",
+   "title": "The Folder",
+   "line": "Change a bead to make the first pair block the rest.",
+   "url": "https://chenhsieh.github.io/the-folder/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/the-folder-1.webp",
+   "lastChange": "2026-10-17T21:41:35+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    }
+   ]
+  },
+  {
+   "id": "fool-the-algorithm",
+   "title": "The Forager",
+   "line": "Change letters to widen the greedy gap.",
+   "url": "https://chenhsieh.github.io/fool-the-algorithm/",
+   "stage": "review",
+   "who": "Claude",
+   "priority": "P2",
+   "priorityNote": "Improving; pacing and theme",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/fool-the-algorithm-1.webp",
+   "lastChange": "2026-10-18T17:55:51+00:00",
+   "cost": {
+    "apiUsd": 10.18,
+    "codexRuns": 2,
+    "claudeRuns": 0
+   },
+   "tasks": [
+    {
+     "title": "forager step",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "Step-through play (Next / Play / tap a forager), a reason shown for each hop, a score bar that ends at the true best score, a \"see the best\" view after gold, and a cuter theme picker.",
+     "since": "2026-10-18T17:30:12+00:00",
+     "done": "2026-10-18T17:30:12+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Players can step, play, pause, or tap a forager; each hop explains “nearest” or “short way,” with cute bird, duckling, and squirrel themes."
+    },
+    {
+     "title": "forager",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T16:37:47+00:00",
+     "done": "2026-10-17T16:37:47+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "1. On boards 1 to 3 an arrow also points toward the nearest better spot. The pie by the nest is now bigger and fills smoothly instead of jumping. It keeps a"
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-18T17:55:51+00:00",
+     "ok": true,
+     "note": "forager-step- live : touch drag then Next step, Play, Pause, or tap a forager; each hop shows Grey nearest / Orange short way; independently checked reachable ceiling with See the best; Birds, Ducklings, and Squirrels themes; existing v2 saves p"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-17T20:42:08+00:00",
+     "ok": true,
+     "note": "Forager guardrails live (): warm/cool glow on held berry, arrow to a warmer spot on boards 1-3, smooth forecast pie with pickup mark and better/worse, last-result mark + better/worse under bar, one coach line per board 1-3 that fades after first bronze"
+    },
+    {
+     "at": "2026-10-16T07:50:19+00:00",
+     "ok": true,
+     "note": "IMPROVED 8/8 (main ;"
+    }
+   ]
+  },
+  {
+   "id": "the-zipper",
+   "title": "The Zipper",
+   "line": "Change bright teeth to make the brass route miss matches.",
+   "url": "https://chenhsieh.github.io/the-zipper/",
+   "stage": "building",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "Too fast; needs teaching",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/the-zipper-1.webp",
+   "lastChange": "2026-10-17T21:41:35+00:00",
+   "cost": {
+    "apiUsd": 5.57,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [
+    {
+     "title": "zipper guide",
+     "state": "running",
+     "worker": "Codex",
+     "plan": "One rule per level with a looping demo, slower linking you can step through, and a coach for the first good move.",
+     "since": "2026-10-18T17:56:09+00:00",
+     "done": null,
+     "reviewed": false,
+     "commit": {
+      "at": "2026-10-18T17:56:56+00:00",
+      "subject": "start: zipper guide"
+     },
+     "result": ""
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T07:44:05+00:00",
+     "ok": true,
+     "note": "IMPROVED 8/8"
+    }
+   ]
+  },
+  {
+   "id": "thumb-stand",
+   "title": "Thumb Stand",
+   "line": "",
+   "url": "https://chenhsieh.github.io/thumb-stand/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/thumb-stand-1.webp",
+   "lastChange": "2026-10-18T08:34:11+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-18T08:34:11+00:00",
+     "ok": true,
+     "note": "daily-keep- live: review of the Today lock; an old save that already played a daily keeps Today open (was re-locked, even Done today greyed out);"
+    },
+    {
+     "at": "2026-10-18T07:12:29+00:00",
+     "ok": true,
+     "note": "one-rule card live : first card = goal + lean/lift/balance (2 lines, 29 words; was 6 lines, 73), fits 320x568; curl joins room 2 (glove taps the hand, curled grip as ghost, looping), falls+tip room 3, legs room 4 (glove drags a foot), New tag (cream on"
+    },
+    {
+     "at": "2026-10-18T06:47:50+00:00",
+     "ok": true,
+     "note": "Today locked until levels 1-3 are solved; Mystery card tile fits at 320 px; live"
+    },
+    {
+     "at": "2026-10-17T22:28:38+00:00",
+     "ok": true,
+     "note": "CREDIT line on the How to play card under the rules, EN+ZH (Itagaki, Baki; no art used); live"
+    },
+    {
+     "at": "2026-10-17T21:44:03+00:00",
+     "ok": true,
+     "note": "DAILY added: Today tile, pool card + seeded starting stance, exact par 4-6 drags; main commit message mislabelled (msgs file overwritten by the no-select run)"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T00:44:20+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/thumb-stand/ (claude builder)"
+    }
+   ]
+  },
+  {
+   "id": "time-material",
+   "title": "Time Material",
+   "line": "Scrub through a frame history and draw with time.",
+   "url": "https://chenhsieh.github.io/time-material/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/time-material-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "tomorrow-bag",
+   "title": "Tomorrow Bag",
+   "line": "Pack tonight's leftovers into lunch bags so that, when.",
+   "url": "https://chenhsieh.github.io/tomorrow-bag/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/tomorrow-bag-1.webp",
+   "lastChange": "2026-10-18T09:31:43+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-18T09:31:43+00:00",
+     "ok": true,
+     "note": "fix- live: removed the right-edge strip; repo tests, playable/UI gates, and 390x844/320 visual checks pass."
+    },
+    {
+     "at": "2026-10-18T08:45:19+00:00",
+     "ok": false,
+     "note": "fix- removes the 8 px fixed right-edge chrome strip; UI gate and local tests pass, but playable_gate times out setting level 12 after two runs."
+    },
+    {
+     "at": "2026-10-18T08:34:11+00:00",
+     "ok": true,
+     "note": "daily-keep- live: review of the Today lock; an old save that already played a daily keeps Today open (was re-locked, even Done today greyed out);"
+    },
+    {
+     "at": "2026-10-18T07:33:26+00:00",
+     "ok": true,
+     "note": "one-rule card live : first card = goal + drop rule (2 lines, 22 words; was 6 lines, 60), fits 320x568; wake order/hold-to-preview/hearts+crosses join on levels 2/3/4 with New tag + loop on the board (clocks ring in turn; hand hovers each bag with dashed"
+    },
+    {
+     "at": "2026-10-18T06:47:50+00:00",
+     "ok": true,
+     "note": "Today locked until levels 1-3 are solved; live"
+    },
+    {
+     "at": "2026-10-17T22:28:38+00:00",
+     "ok": true,
+     "note": "NOT_DONE credit line: DOUBT in CREDITS_TABLE.tsv (first idea source not recorded);"
+    },
+    {
+     "at": "2026-10-17T21:44:03+00:00",
+     "ok": true,
+     "note": "DAILY added: Today tile, generated household (3 sizes rotate), par everyone happy, 365/365 distinct"
+    },
+    {
+     "at": "2026-10-16T00:48:43+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/tomorrow-bag/ (claude builder)"
+    }
+   ]
+  },
+  {
+   "id": "tractatus-tree",
+   "title": "Tractatus Tree",
+   "line": "The numbered pages of a 1921 book are shuffled into a few.",
+   "url": "https://chenhsieh.github.io/tractatus-tree/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/tractatus-tree-1.webp",
+   "lastChange": "2026-10-18T09:14:31+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-18T09:14:31+00:00",
+     "ok": true,
+     "note": "one-rule tutorial merged: first card fits 320x568 with tree goal and one move; waiting pages and silence teach on their levels; old save test green"
+    },
+    {
+     "at": "2026-10-17T23:15:14+00:00",
+     "ok": true,
+     "note": "CREDIT line on the How to play card under the rules, EN+ZH (Tractatus numbering, FreeCell, TriPeaks, tsaidondon1128); kit gains credit option; README already credited; live"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T02:14:42+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/tractatus-tree/ (claude builder, batch4)"
+    }
+   ]
+  },
+  {
+   "id": "tree-hero",
+   "title": "Tree Hero",
+   "line": "Swap branches until the family tree needs the fewest changes.",
+   "url": "https://chenhsieh.github.io/tree-hero/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/tree-hero-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "triangle-lexicon",
+   "title": "Triangle Lexicon",
+   "line": "Follow a small language through a triangle.",
+   "url": "https://chenhsieh.github.io/triangle-lexicon/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/triangle-lexicon-1.webp",
+   "lastChange": "2026-10-17T22:08:17+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-17T22:08:17+00:00",
+     "ok": true,
+     "note": "CREDIT line under the level grid, EN+ZH (pipe-puzzle turn rule); new short README with the same line"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    }
+   ]
+  },
+  {
+   "id": "trick-box",
+   "title": "Trick Box",
+   "line": "Trick Box is a solo cabinetmaker's puzzle about routing a.",
+   "url": "https://chenhsieh.github.io/trick-box/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/trick-box-1.webp",
+   "lastChange": "2026-10-18T12:51:24+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 1,
+    "claudeRuns": 2
+   },
+   "tasks": [
+    {
+     "title": "trick box decision",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-18T09:42:26+00:00",
+     "done": "2026-10-18T09:42:26+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "For a player: from box 3 nothing is lit any more. Holes, dead-end stops and the bright groove sit closer to the block than the real way, so \"roll towards the"
+    },
+    {
+     "title": "review_trick box",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-18T08:07:38+00:00",
+     "done": "2026-10-18T08:07:38+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Trick Box: messages are readable now, boxes 2, 3 and 6 each introduce their new rule (box 6 loops the bright key's ghost into its dead pocket), a jam says so and offers Try again, used channels no longer look like the..."
+    },
+    {
+     "title": "art_trick box",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-18T07:41:46+00:00",
+     "done": "2026-10-18T07:41:46+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Crafted walnut tray, engraved maple keys, and a roll-tip-stand toothpick release with custom wood/birch sound."
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-18T12:51:24+00:00",
+     "ok": true,
+     "note": "boxes are traced, not read off a lit key: grooves carry key marks + arrows, light only on boxes 1-2, Hint on request from box 3, none in daily; same key orders so old saves replay; rules v2; decision gate PASS (planner wins all, greedy loses from box 3); live"
+    },
+    {
+     "at": "2026-10-18T09:42:04+00:00",
+     "ok": true,
+     "note": "review- LIVE : readable messages, New lines on boxes 2/3/6 + bait ghost loop, jam says so with Try again, dark used channels, result in view at 320, self-contained tests incl. live-save fixture; open: no real decision (next key always lit)"
+    },
+    {
+     "at": "2026-10-18T08:29:41+00:00",
+     "ok": true,
+     "note": "art- live : crafted cabinetmaker tray with legible maple keys and routed channels; toothpick rolls, tips upright and lands with a wood-and-birch release sound before the result; all gates pass, checked live at 390x844 and 320x568"
+    },
+    {
+     "at": "2026-10-18T06:29:16+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/trick-box/ (batch5)"
+    }
+   ]
+  },
+  {
+   "id": "triop-game",
+   "title": "Triop",
+   "line": "Build a number set that reaches the target.",
+   "url": "https://chenhsieh.github.io/triop-game/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/triop-game-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "uga-grad-survivor",
+   "title": "UGA Grad Survivor",
+   "line": "Swipe through a PhD.",
+   "url": "https://chenhsieh.github.io/UGA-grad-survivor/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/uga-grad-survivor-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "UGA-grad-survivor",
+   "title": "Uga Grad Survivor",
+   "line": "",
+   "url": "https://chenhsieh.github.io/UGA-grad-survivor/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "lastChange": "2026-10-17T23:15:14+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-17T23:15:14+00:00",
+     "ok": true,
+     "note": "CREDIT line under the rules on the How to play card (Reigns by Nerial 2016; fiction, not an official UGA product); README gains year and disclaimer; asset versions bumped; live"
+    }
+   ]
+  },
+  {
+   "id": "uneven-loop",
+   "title": "Uneven Loop",
+   "line": "Step through frames and return to the start.",
+   "url": "https://chenhsieh.github.io/uneven-loop/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/uneven-loop-1.webp",
+   "lastChange": "2026-10-17T22:08:17+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-17T22:08:17+00:00",
+     "ok": true,
+     "note": "CREDIT line under the tile strip, EN+ZH (artanyatang Lisbon tile poster)"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    }
+   ]
+  },
+  {
+   "id": "walls-have-ears",
+   "title": "Walls Have Ears",
+   "line": "Wish for tea and find which piece is listening.",
+   "url": "https://chenhsieh.github.io/walls-have-ears/",
+   "stage": "live",
+   "who": null,
+   "priority": "P2",
+   "priorityNote": "Works; new bug kinds idea",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/walls-have-ears-1.webp",
+   "lastChange": "2026-10-18T15:20:00+00:00",
+   "cost": {
+    "apiUsd": 17.73,
+    "codexRuns": 2,
+    "claudeRuns": 0
+   },
+   "tasks": [
+    {
+     "title": "walls bug kinds",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-18T15:08:38+00:00",
+     "done": "2026-10-18T15:08:38+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Added [BUGKINDS_20261018.md]( three bug/probe types, rooms 17–25, and a verified eight-layout bot model."
+    },
+    {
+     "title": "walls have ears",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T16:37:11+00:00",
+     "done": "2026-10-17T16:37:11+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "1. **What changed for a player:** You're now a guest in a motel room at night, checking it for hidden microphones before a deal. If nobody"
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-18T15:20:00+00:00",
+     "ok": true,
+     "note": "Design-only BUGKINDS note: ears, eyes and phone taps; rooms 17-25 ladder and eight-layout probe-allocation model verified. No game-repo changes."
+    },
+    {
+     "at": "2026-10-18T12:15:00+00:00",
+     "ok": true,
+     "note": "tap- live: 10 px finger slides stay taps; hint lookup no longer arms a free move."
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-17T21:25:34+00:00",
+     "ok": true,
+     "note": "first card: goal + ask (2 lines, 20 words); rooms 2-5 each add one rule with a New line and a loop on the real room (silence/ticks, earshot, found bug, misses); How to play pages rules learned (LIVE )"
+    },
+    {
+     "at": "2026-10-17T18:24:17+00:00",
+     "ok": true,
+     "note": "re-themed as a motel bug sweep (room service knocks once per bug in earshot), new clean motel art with microphone bugs, one coach rule per room incl. why room 4 shows a bug, Minesweeper/Black Box credit; live"
+    },
+    {
+     "at": "2026-10-16T08:24:28+00:00",
+     "ok": true,
+     "note": "IMPROVED 8/8"
+    },
+    {
+     "at": "2026-10-15T21:06:29+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/walls-have-ears/ (auto, 17:06)"
+    },
+    {
+     "at": "2026-10-15T20:51:31+00:00",
+     "ok": true,
+     "note": "playable gate PASS round 2"
+    },
+    {
+     "at": "2026-10-15T20:28:03+00:00",
+     "ok": true,
+     "note": "playable gate FAIL round 1"
+    },
+    {
+     "at": "2026-10-15T19:49:43+00:00",
+     "ok": true,
+     "note": "build start in"
+    },
+    {
+     "at": "2026-10-15T19:49:23+00:00",
+     "ok": true,
+     "note": "START job V1="
+    }
+   ]
+  },
+  {
+   "id": "web-inspiration",
+   "title": "Web Inspiration",
+   "line": "",
+   "url": "https://chenhsieh.github.io/web-inspiration/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "lastChange": "2026-10-18T05:43:37+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-18T05:43:37+00:00",
+     "ok": true,
+     "note": "taste library: documented 20 mkdir.directory-traced site captures with source URLs, styles, game interaction ideas, Play Lab fits, reusable patterns, revisit procedure; linked from TASTE.md and low-ai-feel registry"
+    }
+   ]
+  },
+  {
+   "id": "clean-features",
+   "title": "What the Dish Sees",
+   "line": "Label each colony with the one shape it sees by placing.",
+   "url": "https://chenhsieh.github.io/clean-features/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/clean-features-1.webp",
+   "lastChange": "2026-10-18T13:48:12+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 2,
+    "claudeRuns": 1
+   },
+   "tasks": [
+    {
+     "title": "clean features followup",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-18T10:02:43+00:00",
+     "done": "2026-10-18T10:02:43+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Players get readable picture slides and candidate lists only on levels 1–4."
+    },
+    {
+     "title": "review_clean features",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-18T08:07:38+00:00",
+     "done": "2026-10-18T08:07:38+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "What the Dish Sees had no real decision on the page: holding a slide or sticker over its target previewed the hidden answer (glow or smudge) for free, and Undo refunded slides and smudges. Both are fixed (a drag now..."
+    },
+    {
+     "title": "art_clean features",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-18T07:41:46+00:00",
+     "done": "2026-10-18T07:41:46+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Petri dish now has glass depth, agar texture, readable organic colonies, response bloom motion, and lab-like sound."
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-18T13:48:12+00:00",
+     "ok": true,
+     "note": "dish- reviewed and live : slides are little pictures; candidate shapes only on levels 1-4; touch play 1/2/5/6 at 390 and 320; live save test green"
+    },
+    {
+     "at": "2026-10-18T10:14:51+00:00",
+     "ok": false,
+     "note": "dish- committed : candidates only on levels 1-4 and readable feature-built slide pictures; tests and visual checks green, but origin push is blocked awaiting explicit approval for external export."
+    },
+    {
+     "at": "2026-10-18T10:02:12+00:00",
+     "ok": true,
+     "note": "review: drag no longer previews the hidden answer, Undo removed (both made slides free); slide counter/result in slides vs best possible; named slides + cat/car reveal; atlas shapes; stripes glyph; live , tests green"
+    },
+    {
+     "at": "2026-10-18T08:05:56+00:00",
+     "ok": true,
+     "note": "art- live : glass-and-celadon dish with real agar depth, textured readable colonies and filled signal marks; slide response blooms with an amber ring and lab-like sound; playable/UI gates and fresh-clone tests pass; checked live at 390x844 and 3"
+    },
+    {
+     "at": "2026-10-18T06:07:34+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/clean-features/ (batch5)"
+    },
+    {
+     "at": "2026-10-17T22:13:13+00:00",
+     "ok": true,
+     "note": "design stage: STEP0.md + V1.md in protos-claude/clean-features; rules model + bots, harness gates PASS (4707 rows); look reservation PENDING (registry.md write refused, line in measure/registry_line.txt)"
+    }
+   ]
+  },
+  {
+   "id": "where-and-when",
+   "title": "Where & When",
+   "line": "Place and date a plant specimen.",
+   "url": "https://chenhsieh.github.io/where-and-when/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/where-and-when-1.webp",
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": []
+  },
+  {
+   "id": "zoom-out",
+   "title": "Zoom Out",
+   "line": "",
+   "url": "https://chenhsieh.github.io/zoom-out/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "lastChange": "2026-10-18T14:30:08+00:00",
+   "cost": {
+    "apiUsd": 7.14,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-18T14:30:08+00:00",
+     "ok": true,
+     "note": "slid tap fix for real: a press is a look only after 500 ms (was 350), so the gate 10 px slide tap zooms on all 12 levels; playable gate 0 warnings; live verified (main )"
+    },
+    {
+     "at": "2026-10-18T13:48:12+00:00",
+     "ok": true,
+     "note": "result- live : result card scrolls into view at 320x568 (Next level was off screen); playable_gate win-beat timeout pre-existing, GATE_ISSUES.md"
+    },
+    {
+     "at": "2026-10-18T12:15:00+00:00",
+     "ok": true,
+     "note": "tap- live: 10 px finger slides resolve at the pressed hole; browser regression passes."
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T00:50:51+00:00",
+     "ok": true,
+     "note": "NOT_PUBLISHED decision gate fails under current harness (D8 1->2 casual drop 33%, harness casual taps black holes since a fall scores 0 like the start; D9 L3,L4 at seed 0); rules unchanged per brief; see"
+    }
+   ]
+  },
+  {
+   "id": "readable-nonsense",
+   "title": "阿嬤讀得出來",
+   "line": "A famous Tang poem line is printed as fake glyphs with.",
+   "url": "https://chenhsieh.github.io/readable-nonsense/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/readable-nonsense-1.webp",
+   "lastChange": "2026-10-18T11:36:29+00:00",
+   "cost": {
+    "apiUsd": 2.95,
+    "codexRuns": 0,
+    "claudeRuns": 0
+   },
+   "tasks": [],
+   "history": [
+    {
+     "at": "2026-10-18T11:36:29+00:00",
+     "ok": true,
+     "note": "fix: a finger drag carries the key it started on (shell boardPoint start now in board px); real-touch test levels 1-6; live"
+    },
+    {
+     "at": "2026-10-18T08:35:00+00:00",
+     "ok": true,
+     "note": "one-rule card live : goal plus key-placement rule fits 320x568; listening rule joins on level 2 with New tag; How to play follows unlocked rules; old save test passes"
+    },
+    {
+     "at": "2026-10-17T22:43:45+00:00",
+     "ok": true,
+     "note": "CREDIT line on the How to play card under the rules, EN+ZH (saved post of invented phonetic characters, poster unknown); README already credited; live"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-16T00:29:52+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/readable-nonsense/ (claude builder)"
+    }
+   ]
+  }
+ ]
+}
