@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T19:52:42+00:00",
+ "generated": "2026-10-18T19:54:44+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,21 +10,18 @@
  "lanes": [
   {
    "worker": "Codex",
-   "game": "lindy-shelf",
-   "task": "lindy rules",
-   "since": "2026-10-18T19:41:12+00:00",
-   "activity": "2026-10-18T19:52:42+00:00",
-   "commit": {
-    "at": "2026-10-18T19:51:43+00:00",
-    "subject": "fix: name why a stocking day is refused"
-   }
+   "game": "machine-rhythm",
+   "task": "machine rhythm guide",
+   "since": "2026-10-18T19:54:32+00:00",
+   "activity": "2026-10-18T19:54:42+00:00",
+   "commit": null
   },
   {
    "worker": "Claude",
    "game": "directory-handrail",
    "task": "signposts fun",
    "since": "2026-10-18T19:41:46+00:00",
-   "activity": "2026-10-18T19:52:26+00:00",
+   "activity": "2026-10-18T19:53:47+00:00",
    "commit": {
     "at": "2026-10-18T19:42:01+00:00",
     "subject": "start: make Signposts more fun to play"
@@ -2125,35 +2122,37 @@
    "title": "Lindy Shelf",
    "line": "Stock a small shop's shelf for one week by dragging each.",
    "url": "https://chenhsieh.github.io/lindy-shelf/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "review",
+   "who": "Claude",
    "priority": "P3",
    "priorityNote": "Rules unclear",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/lindy-shelf-1.webp",
-   "lastChange": "2026-10-18T09:14:31+00:00",
+   "lastChange": "2026-10-18T19:54:03+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 0
    },
    "tasks": [
     {
      "title": "lindy rules",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Every refused placement explains itself; check the shelf rule follows the Lindy effect.",
-     "since": "2026-10-18T19:41:12+00:00",
-     "done": null,
+     "since": "2026-10-18T17:30:12+00:00",
+     "done": "2026-10-18T17:30:12+00:00",
      "reviewed": false,
-     "commit": {
-      "at": "2026-10-18T19:51:43+00:00",
-      "subject": "fix: name why a stocking day is refused"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Players now get on-board reasons for expiry, overlap, and truck refusals, including milk’s use-by day."
     }
    ],
    "history": [
+    {
+     "at": "2026-10-18T19:54:03+00:00",
+     "ok": true,
+     "note": "rules- live : stocking-calendar labels, on-board use-by/overlap/truck reasons, rules v2; old v1 save with unlocks/settings/current move survives; live real-touch screenshots reviewed at 390x844 and 320x568"
+    },
     {
      "at": "2026-10-18T09:14:31+00:00",
      "ok": true,
@@ -2221,7 +2220,7 @@
    "title": "Machine Rhythm",
    "line": "A toy line runs on its own beat and every machine stamps.",
    "url": "https://chenhsieh.github.io/machine-rhythm/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P3",
    "priorityNote": "No guidance yet",
@@ -2236,10 +2235,10 @@
    "tasks": [
     {
      "title": "machine rhythm guide",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Goal line, a step-through sequencer, cleaner grid labels, a first-level coach.",
-     "since": "2026-10-18T17:30:12+00:00",
+     "since": "2026-10-18T19:54:32+00:00",
      "done": null,
      "reviewed": false,
      "commit": null,
