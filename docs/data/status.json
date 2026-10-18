@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T19:40:30+00:00",
+ "generated": "2026-10-18T19:42:32+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,22 +10,25 @@
  "lanes": [
   {
    "worker": "Codex",
-   "game": "life-statistics",
-   "task": "life statistics guide",
-   "since": "2026-10-18T19:24:46+00:00",
-   "activity": "2026-10-18T19:40:13+00:00",
+   "game": "lindy-shelf",
+   "task": "lindy rules",
+   "since": "2026-10-18T19:41:12+00:00",
+   "activity": "2026-10-18T19:42:21+00:00",
    "commit": {
-    "at": "2026-10-18T19:34:24+00:00",
-    "subject": "fix: label guide page controls"
+    "at": "2026-10-18T19:41:55+00:00",
+    "subject": "start: lindy shelf rules"
    }
   },
   {
    "worker": "Claude",
-   "game": "floor-area",
-   "task": "review of floor area credit",
-   "since": "2026-10-18T19:40:23+00:00",
-   "activity": "2026-10-18T19:40:23+00:00",
-   "commit": null
+   "game": "directory-handrail",
+   "task": "signposts fun",
+   "since": "2026-10-18T19:41:46+00:00",
+   "activity": "2026-10-18T19:42:01+00:00",
+   "commit": {
+    "at": "2026-10-18T19:42:01+00:00",
+    "subject": "start: make Signposts more fun to play"
+   }
   }
  ],
  "codexLanes": 1,
@@ -1384,26 +1387,26 @@
    "title": "Floor Area",
    "line": "Drop floor slabs from a crane onto a city lot so the.",
    "url": "https://chenhsieh.github.io/floor-area/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "shelf",
+   "who": null,
    "priority": "P4",
    "priorityNote": "",
    "shelfNote": "not fun enough; credit removed (R06).",
    "image": "https://chenhsieh.github.io/play-lab/images/games/floor-area-1.webp",
-   "lastChange": "2026-10-18T19:11:16+00:00",
+   "lastChange": "2026-10-18T19:40:23+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 0
+    "claudeRuns": 1
    },
    "tasks": [
     {
      "title": "review of floor area credit",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "",
      "since": "2026-10-18T19:40:23+00:00",
-     "done": null,
+     "done": "2026-10-18T19:40:23+00:00",
      "reviewed": false,
      "commit": null,
      "result": ""
@@ -1415,7 +1418,7 @@
      "plan": "Remove an inspiration credit that no longer fits the game.",
      "since": "2026-10-18T17:30:12+00:00",
      "done": "2026-10-18T17:30:12+00:00",
-     "reviewed": false,
+     "reviewed": true,
      "commit": null,
      "result": "Removed Floor Area’s inspiration credit from the footer, README, and source notes; added prior-save regression coverage."
     }
@@ -2054,35 +2057,37 @@
    "title": "Life from Statistics",
    "line": "One person's life lies face down as five picture tiles.",
    "url": "https://chenhsieh.github.io/life-statistics/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "review",
+   "who": "Claude",
    "priority": "P3",
    "priorityNote": "Hard to follow",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/life-statistics-1.webp",
-   "lastChange": "2026-10-17T23:15:14+00:00",
+   "lastChange": "2026-10-18T19:40:45+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 0
    },
    "tasks": [
     {
      "title": "life statistics guide",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Rewrite the goal and How to play around one core idea, one page per rule.",
-     "since": "2026-10-18T19:24:46+00:00",
-     "done": null,
+     "since": "2026-10-18T17:30:12+00:00",
+     "done": "2026-10-18T17:30:12+00:00",
      "reviewed": false,
-     "commit": {
-      "at": "2026-10-18T19:34:24+00:00",
-      "subject": "fix: label guide page controls"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Core: “Flip a life clue, then choose the place it fits.” Six one-rule demo pages now lead into level 1’s hand coach."
     }
    ],
    "history": [
+    {
+     "at": "2026-10-18T19:40:45+00:00",
+     "ok": true,
+     "note": "guide- live : first screen leads with a one-line goal; six one-rule pages use looping real-board demos; level 1 keeps its first-clue hand coach; v2 saves preserve settings, unlocks, solved coins, and current level under guide v3; live real-touch"
+    },
     {
      "at": "2026-10-17T23:15:14+00:00",
      "ok": false,
@@ -2120,7 +2125,7 @@
    "title": "Lindy Shelf",
    "line": "Stock a small shop's shelf for one week by dragging each.",
    "url": "https://chenhsieh.github.io/lindy-shelf/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P3",
    "priorityNote": "Rules unclear",
@@ -2135,13 +2140,16 @@
    "tasks": [
     {
      "title": "lindy rules",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Every refused placement explains itself; check the shelf rule follows the Lindy effect.",
-     "since": "2026-10-18T17:30:12+00:00",
+     "since": "2026-10-18T19:41:12+00:00",
      "done": null,
      "reviewed": false,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-18T19:41:55+00:00",
+      "subject": "start: lindy shelf rules"
+     },
      "result": ""
     }
    ],
@@ -3657,7 +3665,7 @@
    "title": "Signposts",
    "line": "Signposts is a short phone puzzle about hanging route.",
    "url": "https://chenhsieh.github.io/directory-handrail/",
-   "stage": "planning",
+   "stage": "building",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Closest to finished; fun pass",
@@ -3672,13 +3680,16 @@
    "tasks": [
     {
      "title": "signposts fun",
-     "state": "planned",
+     "state": "running",
      "worker": "Claude",
      "plan": "Study bus-boarding and sorting hits, add new mechanisms one per level, smoother drag, cuter characters, more levels.",
-     "since": "2026-10-18T17:32:39+00:00",
+     "since": "2026-10-18T19:41:46+00:00",
      "done": null,
      "reviewed": false,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-18T19:42:01+00:00",
+      "subject": "start: make Signposts more fun to play"
+     },
      "result": ""
     },
     {
