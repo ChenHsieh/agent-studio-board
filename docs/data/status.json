@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T18:02:06+00:00",
+ "generated": "2026-10-18T19:13:57+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,13 +10,13 @@
  "lanes": [
   {
    "worker": "Codex",
-   "game": "the-zipper",
-   "task": "zipper guide",
-   "since": "2026-10-18T17:56:09+00:00",
-   "activity": "2026-10-18T18:02:04+00:00",
+   "game": "gif-cities",
+   "task": "gif cities legible",
+   "since": "2026-10-18T19:12:00+00:00",
+   "activity": "2026-10-18T19:13:41+00:00",
    "commit": {
-    "at": "2026-10-18T17:56:56+00:00",
-    "subject": "start: zipper guide"
+    "at": "2026-10-18T19:12:56+00:00",
+    "subject": "start: gif-cities legibility"
    }
   }
  ],
@@ -756,132 +756,6 @@
    ]
   },
   {
-   "id": "copy-paste",
-   "title": "Copy Paste",
-   "line": "Find the original card among the copies.",
-   "url": "https://chenhsieh.github.io/copy-paste/",
-   "stage": "live",
-   "who": null,
-   "priority": "P2",
-   "priorityNote": "Close; story and name",
-   "shelfNote": "",
-   "image": "https://chenhsieh.github.io/play-lab/images/games/copy-paste-1.webp",
-   "lastChange": "2026-10-18T17:59:10+00:00",
-   "cost": {
-    "apiUsd": 16.91,
-    "codexRuns": 2,
-    "claudeRuns": 2
-   },
-   "tasks": [
-    {
-     "title": "copy paste story",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Check the connection-line logic, add a story told across the levels, and pick a name that comes from it.",
-     "since": "2026-10-18T15:08:38+00:00",
-     "done": "2026-10-18T15:08:38+00:00",
-     "reviewed": false,
-     "commit": null,
-     "result": "S3 Copy Paste: logic check, story, name. LIVE https://chenhsieh.github.io/copy-paste/ (main , rollback tag pre-story-); hub card renamed (play-lab main , deployed)."
-    },
-    {
-     "title": "cp scribes publish",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-18T07:41:46+00:00",
-     "done": "2026-10-18T07:41:46+00:00",
-     "reviewed": false,
-     "commit": null,
-     "result": "Players get fairer levels 10 and 11 (the original is always the one card with the most one-picture neighbours) and a new Scribes row after level 6: six puzzles where red old letters (þe, ƿet, niȝt) disappear when a line..."
-    },
-    {
-     "title": "copy paste scribes",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "",
-     "since": "2026-10-17T19:45:17+00:00",
-     "done": "2026-10-17T19:45:17+00:00",
-     "reviewed": false,
-     "commit": null,
-     "result": "Levels 10–11 now guarantee unique neighbour-count originals; Scribes adds six one-way old-letter puzzles with a looping S1 demo."
-    },
-    {
-     "title": "copy paste",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "",
-     "since": "2026-10-17T16:37:11+00:00",
-     "done": "2026-10-17T16:37:11+00:00",
-     "reviewed": false,
-     "commit": null,
-     "result": "What a player notices: the pictures are redrawn and sharp on a phone, and they still read at 320 px wide with 30 cards on screen. A first tap only chooses a card (it lifts and gets a ring); a second tap or \"Pick this..."
-    }
-   ],
-   "history": [
-    {
-     "at": "2026-10-18T17:59:10+00:00",
-     "ok": true,
-     "note": "Hello Princess rename, story page with captioned strips, family regroup after the find, rule card says any earlier card; logic verified (0 bad lines)"
-    },
-    {
-     "at": "2026-10-18T14:24:02+00:00",
-     "ok": false,
-     "note": "followup- verified locally; push to configured origin blocked by egress policy."
-    },
-    {
-     "at": "2026-10-18T12:15:00+00:00",
-     "ok": true,
-     "note": "tap- live: 10 px finger slides stay taps; browser regression passes."
-    },
-    {
-     "at": "2026-10-18T08:07:09+00:00",
-     "ok": true,
-     "note": "levels 10-11 redealt fair; Scribes row (6 old-letter puzzles after level 6) live, S1 teaches the rule with an on-board þe->the loop; old saves kept (level 10/11 in-progress restarts), test added"
-    },
-    {
-     "at": "2026-10-18T06:47:24+00:00",
-     "ok": false,
-     "note": "push to origin blocked pending user source-egress approval."
-    },
-    {
-     "at": "2026-10-17T21:41:35+00:00",
-     "ok": true,
-     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
-    },
-    {
-     "at": "2026-10-17T18:02:24+00:00",
-     "ok": true,
-     "note": "LIVE : sharp redrawn pictures (where/who/what/mood) at device pixel ratio; tap chooses, second tap or Pick commits; Why fold replaced by one-line credit; each level original is a panel of 3 four-panel strips; strategy measured (STRATEGY_20261017.md: str"
-    },
-    {
-     "at": "2026-10-16T08:22:57+00:00",
-     "ok": true,
-     "note": "IMPROVED 8/8"
-    },
-    {
-     "at": "2026-10-15T19:43:56+00:00",
-     "ok": true,
-     "note": "LIVE https://chenhsieh.github.io/copy-paste/ (auto, 15:43)"
-    },
-    {
-     "at": "2026-10-15T19:15:25+00:00",
-     "ok": true,
-     "note": "playable gate PASS round 1"
-    },
-    {
-     "at": "2026-10-15T19:00:01+00:00",
-     "ok": true,
-     "note": "build start in"
-    },
-    {
-     "at": "2026-10-15T18:59:22+00:00",
-     "ok": true,
-     "note": "START job V1="
-    }
-   ]
-  },
-  {
    "id": "curve-shot",
    "title": "Curve Shot",
    "line": "A one-thumb crazy golf toy: drag back from the ball.",
@@ -934,29 +808,29 @@
    "title": "Cymatic Plate",
    "line": "Ring notes on a brass plate covered in sand and watch the.",
    "url": "https://chenhsieh.github.io/cymatic-plate/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "review",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/cymatic-plate-1.webp",
-   "lastChange": "2026-10-18T15:06:30+00:00",
+   "lastChange": "2026-10-18T18:42:00+00:00",
    "cost": {
     "apiUsd": 3.26,
-    "codexRuns": 1,
+    "codexRuns": 2,
     "claudeRuns": 1
    },
    "tasks": [
     {
      "title": "cymatic sound",
-     "state": "queued",
+     "state": "done",
      "worker": "Codex",
      "plan": "A soft tone on each tap, matched to the note, with a remembered mute switch.",
      "since": "2026-10-18T17:30:12+00:00",
-     "done": null,
+     "done": "2026-10-18T17:30:12+00:00",
      "reviewed": false,
      "commit": null,
-     "result": ""
+     "result": "Soft, note-matched tap tones are live; direct plate pokes get a quieter echo, and Sound remains saved and optional."
     },
     {
      "title": "cymatic depth",
@@ -982,6 +856,11 @@
     }
    ],
    "history": [
+    {
+     "at": "2026-10-18T18:42:00+00:00",
+     "ok": true,
+     "note": "tap-sound- live : after the first user gesture, note squares make short soft tones tuned to their figures; a direct plate poke gives a quieter echo; the saved Sound toggle remains optional and old live saves keep progress, settings, and current"
+    },
     {
      "at": "2026-10-18T15:06:30+00:00",
      "ok": true,
@@ -1064,29 +943,29 @@
    "title": "Dough Boundary",
    "line": "Press one dough patch into a touching dough patch.",
    "url": "https://chenhsieh.github.io/dough-boundary/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "review",
+   "who": "Claude",
    "priority": "P3",
    "priorityNote": "Goal and colour chart",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/dough-boundary-1.webp",
-   "lastChange": "2026-10-17T21:41:35+00:00",
+   "lastChange": "2026-10-18T18:34:48+00:00",
    "cost": {
     "apiUsd": 6.45,
-    "codexRuns": 1,
+    "codexRuns": 2,
     "claudeRuns": 0
    },
    "tasks": [
     {
      "title": "dough legend",
-     "state": "queued",
+     "state": "done",
      "worker": "Codex",
      "plan": "A readable goal, a clearer win face, a softer palette, and a colour-mixing chart in How to play.",
      "since": "2026-10-18T17:30:12+00:00",
-     "done": null,
+     "done": "2026-10-18T17:30:12+00:00",
      "reviewed": false,
      "commit": null,
-     "result": ""
+     "result": "Labelled targets, softer dough, clear win stamp, and mixing charts are in."
     },
     {
      "title": "dough boundary",
@@ -1101,6 +980,11 @@
     }
    ],
    "history": [
+    {
+     "at": "2026-10-18T18:34:48+00:00",
+     "ok": true,
+     "note": "dough-legend- live : labelled target swatch, softer dough palette, clear foreground win face, tap-open mixing chart and How to play chart; prior v1 saves keep settings, unlocks, solved marks, and current tray; live real-touch screenshots reviewe"
+    },
     {
      "at": "2026-10-17T21:41:35+00:00",
      "ok": true,
@@ -1361,32 +1245,37 @@
    "title": "Floating City",
    "line": "A one-minute phone game about carving a concrete city.",
    "url": "https://chenhsieh.github.io/floating-city/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "review",
+   "who": "Claude",
    "priority": "P3",
    "priorityNote": "Broken on level 2",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/floating-city-1.webp",
-   "lastChange": "2026-10-17T21:41:35+00:00",
+   "lastChange": "2026-10-18T18:59:31+00:00",
    "cost": {
     "apiUsd": 10.87,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 0
    },
    "tasks": [
     {
      "title": "floating city fix",
-     "state": "queued",
+     "state": "done",
      "worker": "Codex",
      "plan": "Reproduce and fix the level-2 touch bug, add a test that fails on the old build, and make all 12 levels finishable by touch.",
      "since": "2026-10-18T17:30:12+00:00",
-     "done": null,
+     "done": "2026-10-18T17:30:12+00:00",
      "reviewed": false,
      "commit": null,
-     "result": ""
+     "result": "Fixed: floating rooms now keep touch targets after lift-off; level 2 shows glowing rooms, and old saves are preserved."
     }
    ],
    "history": [
+    {
+     "at": "2026-10-18T18:59:31+00:00",
+     "ok": true,
+     "note": "fix-l2- live : room touch targets now move and tilt with the visible hull after lift-off; level 2 names the two glowing rooms; native-touch gate completes levels 1-12 and a prior-live save retains settings, unlocks, solved ticks, stars, and curr"
+    },
     {
      "at": "2026-10-17T21:41:35+00:00",
      "ok": true,
@@ -1439,32 +1328,37 @@
    "title": "Floor Area",
    "line": "Drop floor slabs from a crane onto a city lot so the.",
    "url": "https://chenhsieh.github.io/floor-area/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "review",
+   "who": "Claude",
    "priority": "P4",
    "priorityNote": "",
    "shelfNote": "not fun enough; credit removed (R06).",
    "image": "https://chenhsieh.github.io/play-lab/images/games/floor-area-1.webp",
-   "lastChange": "2026-10-17T21:41:35+00:00",
+   "lastChange": "2026-10-18T19:11:16+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 0
    },
    "tasks": [
     {
      "title": "floor area credit",
-     "state": "queued",
+     "state": "done",
      "worker": "Codex",
      "plan": "Remove an inspiration credit that no longer fits the game.",
      "since": "2026-10-18T17:30:12+00:00",
-     "done": null,
+     "done": "2026-10-18T17:30:12+00:00",
      "reviewed": false,
      "commit": null,
-     "result": ""
+     "result": "Removed Floor Area’s inspiration credit from the footer, README, and source notes; added prior-save regression coverage."
     }
    ],
    "history": [
+    {
+     "at": "2026-10-18T19:11:16+00:00",
+     "ok": true,
+     "note": "nocredit- live : removed the inspiration credit from the level-list footer, README, and source notes; a captured prior-live save keeps settings, level-4 completion, move history, and its result; live real-touch screenshots reviewed at 390x844 an"
+    },
     {
      "at": "2026-10-17T21:41:35+00:00",
      "ok": true,
@@ -1623,7 +1517,7 @@
    "title": "GIF Cities",
    "line": "Stack rescued GIFs down a 1999 homepage so every visitor.",
    "url": "https://chenhsieh.github.io/gif-cities/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Promising; rules need explaining",
@@ -1638,13 +1532,16 @@
    "tasks": [
     {
      "title": "gif cities legible",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Goal line first, every board symbol named in How to play and tappable in game, a coach on the first levels.",
-     "since": "2026-10-18T17:30:12+00:00",
+     "since": "2026-10-18T19:12:00+00:00",
      "done": null,
      "reviewed": false,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-18T19:12:56+00:00",
+      "subject": "start: gif-cities legibility"
+     },
      "result": ""
     }
    ],
@@ -1788,6 +1685,132 @@
      "at": "2026-10-16T01:41:42+00:00",
      "ok": true,
      "note": "LIVE https://chenhsieh.github.io/grass-crossword/ (claude builder, batch3)"
+    }
+   ]
+  },
+  {
+   "id": "copy-paste",
+   "title": "Hello Princess",
+   "line": "Find the princess's first invitation among the copies.",
+   "url": "https://chenhsieh.github.io/copy-paste/",
+   "stage": "live",
+   "who": null,
+   "priority": "P2",
+   "priorityNote": "Close; story and name",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/copy-paste-1.webp",
+   "lastChange": "2026-10-18T17:59:10+00:00",
+   "cost": {
+    "apiUsd": 16.91,
+    "codexRuns": 2,
+    "claudeRuns": 2
+   },
+   "tasks": [
+    {
+     "title": "copy paste story",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Check the connection-line logic, add a story told across the levels, and pick a name that comes from it.",
+     "since": "2026-10-18T15:08:38+00:00",
+     "done": "2026-10-18T15:08:38+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "S3 Copy Paste: logic check, story, name. LIVE https://chenhsieh.github.io/copy-paste/ (main , rollback tag pre-story-); hub card renamed (play-lab main , deployed)."
+    },
+    {
+     "title": "cp scribes publish",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-18T07:41:46+00:00",
+     "done": "2026-10-18T07:41:46+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Players get fairer levels 10 and 11 (the original is always the one card with the most one-picture neighbours) and a new Scribes row after level 6: six puzzles where red old letters (þe, ƿet, niȝt) disappear when a line..."
+    },
+    {
+     "title": "copy paste scribes",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T19:45:17+00:00",
+     "done": "2026-10-17T19:45:17+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "Levels 10–11 now guarantee unique neighbour-count originals; Scribes adds six one-way old-letter puzzles with a looping S1 demo."
+    },
+    {
+     "title": "copy paste",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-17T16:37:11+00:00",
+     "done": "2026-10-17T16:37:11+00:00",
+     "reviewed": false,
+     "commit": null,
+     "result": "What a player notices: the pictures are redrawn and sharp on a phone, and they still read at 320 px wide with 30 cards on screen. A first tap only chooses a card (it lifts and gets a ring); a second tap or \"Pick this..."
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-18T17:59:10+00:00",
+     "ok": true,
+     "note": "Hello Princess rename, story page with captioned strips, family regroup after the find, rule card says any earlier card; logic verified (0 bad lines)"
+    },
+    {
+     "at": "2026-10-18T14:24:02+00:00",
+     "ok": false,
+     "note": "followup- verified locally; push to configured origin blocked by egress policy."
+    },
+    {
+     "at": "2026-10-18T12:15:00+00:00",
+     "ok": true,
+     "note": "tap- live: 10 px finger slides stay taps; browser regression passes."
+    },
+    {
+     "at": "2026-10-18T08:07:09+00:00",
+     "ok": true,
+     "note": "levels 10-11 redealt fair; Scribes row (6 old-letter puzzles after level 6) live, S1 teaches the rule with an on-board þe->the loop; old saves kept (level 10/11 in-progress restarts), test added"
+    },
+    {
+     "at": "2026-10-18T06:47:24+00:00",
+     "ok": false,
+     "note": "push to origin blocked pending user source-egress approval."
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
+    },
+    {
+     "at": "2026-10-17T18:02:24+00:00",
+     "ok": true,
+     "note": "LIVE : sharp redrawn pictures (where/who/what/mood) at device pixel ratio; tap chooses, second tap or Pick commits; Why fold replaced by one-line credit; each level original is a panel of 3 four-panel strips; strategy measured (STRATEGY_20261017.md: str"
+    },
+    {
+     "at": "2026-10-16T08:22:57+00:00",
+     "ok": true,
+     "note": "IMPROVED 8/8"
+    },
+    {
+     "at": "2026-10-15T19:43:56+00:00",
+     "ok": true,
+     "note": "LIVE https://chenhsieh.github.io/copy-paste/ (auto, 15:43)"
+    },
+    {
+     "at": "2026-10-15T19:15:25+00:00",
+     "ok": true,
+     "note": "playable gate PASS round 1"
+    },
+    {
+     "at": "2026-10-15T19:00:01+00:00",
+     "ok": true,
+     "note": "build start in"
+    },
+    {
+     "at": "2026-10-15T18:59:22+00:00",
+     "ok": true,
+     "note": "START job V1="
     }
    ]
   },
@@ -4229,35 +4252,37 @@
    "title": "The Zipper",
    "line": "Change bright teeth to make the brass route miss matches.",
    "url": "https://chenhsieh.github.io/the-zipper/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "review",
+   "who": "Claude",
    "priority": "P3",
    "priorityNote": "Too fast; needs teaching",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/the-zipper-1.webp",
-   "lastChange": "2026-10-17T21:41:35+00:00",
+   "lastChange": "2026-10-18T18:15:09+00:00",
    "cost": {
     "apiUsd": 5.57,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 0
    },
    "tasks": [
     {
      "title": "zipper guide",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "One rule per level with a looping demo, slower linking you can step through, and a coach for the first good move.",
-     "since": "2026-10-18T17:56:09+00:00",
-     "done": null,
+     "since": "2026-10-18T17:30:12+00:00",
+     "done": "2026-10-18T17:30:12+00:00",
      "reviewed": false,
-     "commit": {
-      "at": "2026-10-18T17:56:56+00:00",
-      "subject": "start: zipper guide"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Each pattern now teaches one idea with a real-board loop, coach, stepped links, and requested hints."
     }
    ],
    "history": [
+    {
+     "at": "2026-10-18T18:15:09+00:00",
+     "ok": true,
+     "note": "zipper-guide- live : one idea per pattern with a real-board loop; first-three coach names a good move and why; link run waits for Next, Play, or a tap on the pull; later Hint is requested; v1 saves, ids, medals, settings, and current boards pres"
+    },
     {
      "at": "2026-10-17T21:41:35+00:00",
      "ok": true,
