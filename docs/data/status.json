@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T19:32:48+00:00",
+ "generated": "2026-10-19T19:34:51+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 75,
+    "queued": 74,
     "running": 2,
-    "doneToday": 24,
-    "minutes": 2990,
-    "estimateMinutes": 1495
+    "doneToday": 25,
+    "minutes": 2950,
+    "estimateMinutes": 1475
    },
    "Claude": {
     "queued": 0,
@@ -24,38 +24,38 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 75,
+  "queued": 74,
   "running": 3,
-  "doneToday": 42,
+  "doneToday": 43,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 3050,
-  "estimatedFinish": "2026-10-20T20:27:48+00:00",
-  "estimateMinutes": 1495
+  "minutesRemaining": 3010,
+  "estimatedFinish": "2026-10-20T20:09:51+00:00",
+  "estimateMinutes": 1475
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "drawing-circles",
-   "task": "drawing circles flagship round",
-   "since": "2026-10-19T19:11:32+00:00",
-   "activity": "2026-10-19T19:32:47+00:00",
-   "commit": {
-    "at": "2026-10-19T19:26:14+00:00",
-    "subject": "fix: teach the star turn and collect sketches"
-   }
-  },
   {
    "worker": "Codex",
    "game": "directory-handrail",
    "task": "directory handrail flagship round",
    "since": "2026-10-19T19:23:42+00:00",
-   "activity": "2026-10-19T19:32:47+00:00",
+   "activity": "2026-10-19T19:34:51+00:00",
    "commit": {
     "at": "2026-10-19T19:24:18+00:00",
     "subject": "start: P1c06_directory-handrail-flagship-round"
+   }
+  },
+  {
+   "worker": "Codex",
+   "game": "clean-features",
+   "task": "clean features build",
+   "since": "2026-10-19T19:33:16+00:00",
+   "activity": "2026-10-19T19:34:49+00:00",
+   "commit": {
+    "at": "2026-10-19T19:34:01+00:00",
+    "subject": "start: P1c07_clean-features-build"
    }
   },
   {
@@ -97,7 +97,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 32
+   "changes": 33
   }
  ],
  "houseRules": 21,
@@ -1830,43 +1830,40 @@
    "title": "Drawing Circles",
    "line": "Stack gears until the puppy's leash goes slack.",
    "url": "https://chenhsieh.github.io/drawing-circles/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "review",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Flagship polish round: level 9 difficulty, How to play",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/drawing-circles-1.webp",
    "firstSeen": "2026-10-15T18:59:22+00:00",
-   "lastChange": "2026-10-19T19:32:47+00:00",
+   "lastChange": "2026-10-19T19:33:02+00:00",
    "cost": {
     "apiUsd": 12.59,
-    "codexRuns": 3,
+    "codexRuns": 4,
     "claudeRuns": 1,
     "apiRuns": 1,
-    "codexTokens": 1094956,
-    "codexUsdEst": 1.31,
+    "codexTokens": 1359845,
+    "codexUsdEst": 1.63,
     "claudeUsdEst": 3.6,
     "earlierRounds": 10,
     "earlierUsdEst": 36.0,
-    "totalUsdEst": 53.5
+    "totalUsdEst": 53.82
    },
    "tasks": [
     {
      "title": "drawing circles flagship round",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Flagship polish round: level 9 difficulty, How to play pages that each say something new, collectible sketchbook cards.",
-     "since": "2026-10-19T19:11:32+00:00",
-     "done": null,
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 22,
+     "tokens": 264889,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-19T19:26:14+00:00",
-      "subject": "fix: teach the star turn and collect sketches"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Refined level 9 coaching, strategy Help pages, and shared tilt-and-shine sketch cards; clean-clone tests and gates passed."
     },
     {
      "title": "drawing collectible",
@@ -1947,6 +1944,11 @@
    "needsYou": null,
    "history": [
     {
+     "at": "2026-10-19T19:33:02+00:00",
+     "ok": false,
+     "note": "flagship-round- locally verified: late turn decision, non-repeating strategy help, and shared collectible card refined; clean-clone and shared gates passed; publish blocked because origin push needs explicit approval"
+    },
+    {
      "at": "2026-10-19T16:09:25+00:00",
      "ok": true,
      "note": "Merged : Little Star teaching step, all-open map, save-safe foil sketchbook cards; Pages still serves rules version 4 after 390/320 touch checks."
@@ -2000,11 +2002,6 @@
      "at": "2026-10-15T20:07:45+00:00",
      "ok": true,
      "note": "playable gate PASS round 3"
-    },
-    {
-     "at": "2026-10-15T19:45:07+00:00",
-     "ok": true,
-     "note": "playable gate FAIL round 2"
     }
    ]
   },
@@ -6021,7 +6018,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/directory-handrail-1.webp",
    "firstSeen": "2026-10-15T20:39:24+00:00",
-   "lastChange": "2026-10-19T19:32:47+00:00",
+   "lastChange": "2026-10-19T19:34:51+00:00",
    "cost": {
     "apiUsd": 7.97,
     "codexRuns": 2,
@@ -7997,14 +7994,14 @@
    "title": "What the Dish Sees",
    "line": "Label each colony with the one shape it sees by placing.",
    "url": "https://chenhsieh.github.io/clean-features/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Find the playable frame for the latent-space game: a clear",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/clean-features-1.webp",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-19T18:02:05+00:00",
+   "lastChange": "2026-10-19T19:34:49+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -8020,16 +8017,19 @@
    "tasks": [
     {
      "title": "clean features build",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "First-screen goal and progress, looping demos for the first two rules, visible deductions, a chapter grid with the map chapter previewed.",
-     "since": "2026-10-19T18:02:05+00:00",
+     "since": "2026-10-19T19:33:16+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-19T19:34:01+00:00",
+      "subject": "start: P1c07_clean-features-build"
+     },
      "result": ""
     },
     {
