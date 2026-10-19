@@ -11,18 +11,12 @@
 <body>
 <header class="top">
   <h1>Studio board <span id="project">loading</span></h1>
-  <p class="fresh"><span id="fresh">Loading the board…</span> · <a href="stats.html">Stats</a></p>
+  <p class="fresh"><span id="fresh">Loading the board…</span> · <a href="stats.html">Stats</a> · <a href="about.html">How the pipeline works</a></p>
 </header>
-<p class="blurb" id="blurb"></p>
 
-<section class="flow" aria-label="How work moves">
-  <ol>
-    <li><b>Plan</b> feedback becomes a written task</li>
-    <li><b>Queue</b> tasks wait for a builder</li>
-    <li><b>Build</b> an agent works on a branch and commits</li>
-    <li><b>Review</b> a second agent plays it and fixes slips</li>
-    <li><b>Live</b> published, nothing in flight</li>
-  </ol>
+<section class="queue-panel" aria-labelledby="queue-h">
+  <div class="queue-head"><h2 id="queue-h">Queue</h2><p id="queue-eta" class="queue-eta"></p></div>
+  <div id="queue" class="queue-bars" aria-live="polite"></div>
 </section>
 
 <section class="now" aria-labelledby="now-h">
@@ -33,23 +27,24 @@
 <section class="tally" id="tally" aria-label="Totals"></section>
 
 <nav class="controls" aria-label="Filter">
-  <div class="seg" role="group" aria-label="Show">
-    <button data-view="needs" aria-pressed="true">Needs you</button>
-    <button data-view="active" aria-pressed="false">Working</button>
-    <button data-view="priority" aria-pressed="false">Priority</button>
-    <button data-view="all" aria-pressed="false">All</button>
-    <button data-view="shelf" aria-pressed="false">Shelf</button>
+  <div class="expand" role="group" aria-label="Details">
+    <button data-expand="all">Expand all</button><button data-expand="none">Collapse all</button>
   </div>
+  <details class="filter-menu">
+    <summary>Filter <span id="filter-count"></span></summary>
+    <div class="filter-grid">
+      <fieldset><legend>Stage</legend><div data-chips="stage"></div></fieldset>
+      <fieldset><legend>Priority</legend><div data-chips="priority"></div></fieldset>
+      <fieldset><legend>Verdict</legend><div data-chips="verdict"></div></fieldset>
+      <fieldset><legend>Worker</legend><div data-chips="worker"></div></fieldset>
+      <fieldset><legend>Recent</legend><div data-chips="recent"></div></fieldset>
+    </div>
+  </details>
+  <label class="sort">Sort <select id="sort"><option value="change">Last change</option><option value="priority">Priority</option><option value="cost">Cost</option></select></label>
   <input id="q" type="search" placeholder="Find" autocomplete="off">
 </nav>
 
 <ol id="games" class="games"></ol>
-
-<footer class="foot">
-  <p>Stages: <b class="st building">building</b> an agent is on it · <b class="st review">review</b> built, waiting for a second look · <b class="st queued">queued</b> waiting for a builder · <b class="st planning">planning</b> waiting for a design pass · <b class="st live">live</b> nothing in flight · <b class="st shelf">shelf</b> parked.</p>
-  <p>Verdicts: <b class="vd ship">ship</b> ready to show people · <b class="vd revise">revise</b> worth more work · <b class="vd shelf">shelf</b> parked. "Needs you" lists what waits on a human: a new version to play, or a question.</p>
-  <p>Cost: API dollars are metered. Codex and in-session Claude runs are on flat plans, so they are shown as what they would have cost metered: Codex at its list token price, Claude at the average cost of a comparable metered run; rounds before the task queue existed are counted the same way. Details on the <a href="stats.html">stats page</a>. The page reads <a href="data/status.json">data/status.json</a>, which a script rewrites whenever a task moves or an agent commits, and checks again every 90 seconds.</p>
-</footer>
 <script src="board.js"></script>
 </body>
 </html>

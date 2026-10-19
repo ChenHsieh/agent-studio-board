@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>How the pipeline works</title>
+<link rel="stylesheet" href="board.css">
+</head>
+<body>
+<header class="top"><h1>How the pipeline works</h1><p class="fresh"><a href="./">← Studio board</a></p></header>
+<main class="about">
+  <section><h2>Stages</h2><p><b class="st building">building</b> an agent is on it · <b class="st review">review</b> built, waiting for a second look · <b class="st queued">queued</b> waiting for a builder · <b class="st planning">planning</b> waiting for a design pass · <b class="st live">live</b> nothing in flight · <b class="st shelf">shelf</b> parked.</p></section>
+  <section><h2>Verdicts</h2><p><b class="vd ship">ship</b> ready to show people · <b class="vd revise">revise</b> worth more work · <b class="vd shelf">shelf</b> parked. “Needs you” marks a new version to play or a question that needs a human answer.</p></section>
+  <section><h2>Queue estimate</h2><p>Each unfinished task uses its planned minutes from the intake. Work is divided across the active Codex job lanes and the Claude worker; the later worker finish is the queue finish estimate.</p></section>
+  <section><h2>Cost</h2><p>API dollars are metered. Codex and in-session Claude runs are on flat plans, so their totals are estimated from list token price or comparable metered runs. Earlier rounds are estimated the same way. Details are on <a href="stats.html">Stats</a>.</p></section>
+  <section><h2>Data</h2><p>The board reads <a href="data/status.json">data/status.json</a>, rebuilt when a task moves or an agent commits and checked again every 90 seconds.</p></section>
+</main>
+</body>
+</html>
