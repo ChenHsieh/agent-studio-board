@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T17:23:56+00:00",
+ "generated": "2026-10-19T17:25:59+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -15,29 +15,10 @@
    "since": null,
    "activity": null,
    "commit": null
-  },
-  {
-   "worker": "Codex",
-   "game": null,
-   "task": "rd1 lane gates",
-   "since": null,
-   "activity": null,
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "walls-have-ears",
-   "task": "walls thin walls",
-   "since": "2026-10-19T16:58:15+00:00",
-   "activity": "2026-10-19T17:22:54+00:00",
-   "commit": {
-    "at": "2026-10-19T17:22:15+00:00",
-    "subject": "feat: Thin Walls, rooms 9 to 16: a hotel floor at night where tea through the walls tells you who may joke"
-   }
   }
  ],
  "codexLanes": 2,
- "claudeWorkers": 1,
+ "claudeWorkers": 0,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -66,7 +47,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 21
+   "changes": 22
   }
  ],
  "houseRules": 16,
@@ -6426,42 +6407,39 @@
    "title": "Walls Have Ears",
    "line": "Wish for tea and find which piece is listening.",
    "url": "https://chenhsieh.github.io/walls-have-ears/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Works; new bug kinds idea",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/walls-have-ears-1.webp",
-   "lastChange": "2026-10-19T16:20:04+00:00",
+   "lastChange": "2026-10-19T17:24:06+00:00",
    "cost": {
     "apiUsd": 17.73,
     "codexRuns": 2,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 1,
     "codexTokens": 317507,
     "codexUsdEst": 0.38,
-    "claudeUsdEst": 7.2,
+    "claudeUsdEst": 10.8,
     "earlierRounds": 11,
     "earlierUsdEst": 39.6,
-    "totalUsdEst": 64.91
+    "totalUsdEst": 68.51
    },
    "tasks": [
     {
      "title": "walls thin walls",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Build the Thin Walls chapter properly: introduced step by step, every room a new decision.",
-     "since": "2026-10-19T16:58:15+00:00",
-     "done": null,
+     "since": "2026-10-19T16:58:04+00:00",
+     "done": "2026-10-19T16:58:04+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-19T17:22:15+00:00",
-      "subject": "feat: Thin Walls, rooms 9 to 16: a hotel floor at night where tea through the walls tells you who may joke"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Thin Walls is live as rooms 9-16 of Walls Have Ears: a hotel floor at night. You pour tea through the walls to find which ones listen, then choose who may tell a joke before morning."
     },
     {
      "title": "walls rebuild",
@@ -6539,8 +6517,13 @@
     "verdict": "revise",
     "note": "Fun but simple; joke must land"
    },
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-19T17:24:06+00:00",
+     "ok": true,
+     "note": "Thin Walls rooms 9-16 built for real (thin.js, night floor, room 9 teaching loop); live"
+    },
     {
      "at": "2026-10-19T16:20:04+00:00",
      "ok": true,
@@ -6595,11 +6578,6 @@
      "at": "2026-10-16T08:24:28+00:00",
      "ok": true,
      "note": "IMPROVED 8/8"
-    },
-    {
-     "at": "2026-10-15T21:06:29+00:00",
-     "ok": true,
-     "note": "LIVE https://chenhsieh.github.io/walls-have-ears/ (auto, 17:06)"
     }
    ]
   },
