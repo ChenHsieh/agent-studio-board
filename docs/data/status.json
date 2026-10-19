@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T19:45:07+00:00",
+ "generated": "2026-10-19T19:47:10+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 73,
+    "queued": 72,
     "running": 2,
-    "doneToday": 26,
-    "minutes": 2910,
-    "estimateMinutes": 1455
+    "doneToday": 27,
+    "minutes": 2870,
+    "estimateMinutes": 1435
    },
    "Claude": {
     "queued": 0,
@@ -24,38 +24,38 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 73,
+  "queued": 72,
   "running": 3,
-  "doneToday": 45,
+  "doneToday": 46,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2970,
-  "estimatedFinish": "2026-10-20T20:00:07+00:00",
-  "estimateMinutes": 1455
+  "minutesRemaining": 2930,
+  "estimatedFinish": "2026-10-20T19:42:10+00:00",
+  "estimateMinutes": 1435
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "clean-features",
-   "task": "clean features build",
-   "since": "2026-10-19T19:33:16+00:00",
-   "activity": "2026-10-19T19:45:05+00:00",
-   "commit": {
-    "at": "2026-10-19T19:40:52+00:00",
-    "subject": "feat: show paid dish evidence"
-   }
-  },
   {
    "worker": "Codex",
    "game": "peony-dream",
    "task": "peony dream ink visual",
    "since": "2026-10-19T19:40:10+00:00",
-   "activity": "2026-10-19T19:44:57+00:00",
+   "activity": "2026-10-19T19:46:39+00:00",
    "commit": {
-    "at": "2026-10-19T19:41:06+00:00",
-    "subject": "start: P1c08_peony-dream-ink-visual"
+    "at": "2026-10-19T19:46:32+00:00",
+    "subject": "feat: show the portrait target before touch"
+   }
+  },
+  {
+   "worker": "Codex",
+   "game": "remote-viewer",
+   "task": "remote viewer design pass",
+   "since": "2026-10-19T19:46:21+00:00",
+   "activity": "2026-10-19T19:47:08+00:00",
+   "commit": {
+    "at": "2026-10-19T19:47:02+00:00",
+    "subject": "start: P1c09_remote-viewer-design-pass"
    }
   },
   {
@@ -63,7 +63,7 @@
    "game": "drawing-circles",
    "task": "review of drawing circles flagship round",
    "since": "2026-10-19T19:38:46+00:00",
-   "activity": "2026-10-19T19:44:03+00:00",
+   "activity": "2026-10-19T19:46:23+00:00",
    "commit": null
   }
  ],
@@ -97,7 +97,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 34
+   "changes": 35
   }
  ],
  "houseRules": 21,
@@ -1837,7 +1837,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/drawing-circles-1.webp",
    "firstSeen": "2026-10-15T18:59:22+00:00",
-   "lastChange": "2026-10-19T19:44:03+00:00",
+   "lastChange": "2026-10-19T19:46:23+00:00",
    "cost": {
     "apiUsd": 12.59,
     "codexRuns": 4,
@@ -4849,7 +4849,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/peony-dream-1.webp",
    "firstSeen": "2026-10-18T01:51:43+00:00",
-   "lastChange": "2026-10-19T19:44:57+00:00",
+   "lastChange": "2026-10-19T19:46:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -4875,8 +4875,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-19T19:41:06+00:00",
-      "subject": "start: P1c08_peony-dream-ink-visual"
+      "at": "2026-10-19T19:46:32+00:00",
+      "subject": "feat: show the portrait target before touch"
      },
      "result": ""
     }
@@ -5254,14 +5254,14 @@
    "title": "Remote Viewer",
    "line": "Uncover a CIA file and name its assignment.",
    "url": "https://chenhsieh.github.io/remote-viewer/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Game-design pass to find where the fun is and build it",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/remote-viewer-1.webp",
    "firstSeen": "2026-10-17T16:38:08+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-19T19:47:08+00:00",
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 0,
@@ -5277,16 +5277,19 @@
    "tasks": [
     {
      "title": "remote viewer design pass",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Game-design pass to find where the fun is and build it.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "since": "2026-10-19T19:46:21+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-19T19:47:02+00:00",
+      "subject": "start: P1c09_remote-viewer-design-pass"
+     },
      "result": ""
     },
     {
@@ -8008,43 +8011,40 @@
    "title": "What the Dish Sees",
    "line": "Label each colony with the one shape it sees by placing.",
    "url": "https://chenhsieh.github.io/clean-features/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Find the playable frame for the latent-space game: a clear",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/clean-features-1.webp",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-19T19:45:05+00:00",
+   "lastChange": "2026-10-19T19:45:52+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 2,
+    "codexRuns": 3,
     "claudeRuns": 2,
     "apiRuns": 0,
-    "codexTokens": 340683,
-    "codexUsdEst": 0.41,
+    "codexTokens": 545866,
+    "codexUsdEst": 0.66,
     "claudeUsdEst": 7.2,
     "earlierRounds": 3,
     "earlierUsdEst": 10.8,
-    "totalUsdEst": 18.41
+    "totalUsdEst": 18.66
    },
    "tasks": [
     {
      "title": "clean features build",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "First-screen goal and progress, looping demos for the first two rules, visible deductions, a chapter grid with the map chapter previewed.",
-     "since": "2026-10-19T19:33:16+00:00",
-     "done": null,
+     "since": "2026-10-19T18:02:05+00:00",
+     "done": "2026-10-19T18:02:05+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 13,
+     "tokens": 205183,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-19T19:40:52+00:00",
-      "subject": "feat: show paid dish evidence"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Players now get biological-dish framing, paid glow evidence, notes, progress, and lesson loops."
     },
     {
      "title": "clean features frame",
@@ -8104,8 +8104,13 @@
     }
    ],
    "verdict": null,
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-19T19:45:52+00:00",
+     "ok": false,
+     "note": "frame- published once; live 390x844 and 320x568 touch checks pass for paid evidence and progress, but the chapter cabinet is constrained by the inherited three-column map grid and needs a permitted follow-up publish"
+    },
     {
      "at": "2026-10-19T18:02:05+00:00",
      "ok": true,
