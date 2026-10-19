@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T18:00:38+00:00",
+ "generated": "2026-10-19T18:02:41+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -13,7 +13,7 @@
    "game": "floor-area",
    "task": "bake credit gpt 5",
    "since": "2026-10-19T17:54:07+00:00",
-   "activity": "2026-10-19T17:56:18+00:00",
+   "activity": "2026-10-19T18:02:35+00:00",
    "commit": null
   },
   {
@@ -21,15 +21,15 @@
    "game": "floor-area",
    "task": "bake credit gpt 5",
    "since": "2026-10-19T17:54:11+00:00",
-   "activity": "2026-10-19T17:56:18+00:00",
+   "activity": "2026-10-19T18:02:35+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
-   "game": null,
-   "task": "studio manager verdicts",
-   "since": null,
-   "activity": null,
+   "game": "anechoic-fugue",
+   "task": "anechoic fugue model",
+   "since": "2026-10-19T18:02:05+00:00",
+   "activity": "2026-10-19T18:02:05+00:00",
    "commit": null
   }
  ],
@@ -63,7 +63,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 24
+   "changes": 25
   }
  ],
  "houseRules": 21,
@@ -215,7 +215,7 @@
    "title": "Anechoic Fugue",
    "line": "Place speakers so the sleeper's chair goes quiet.",
    "url": "https://chenhsieh.github.io/anechoic-fugue/",
-   "stage": "planning",
+   "stage": "building",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Decide the physical model and its on-screen readout, choose",
@@ -237,10 +237,10 @@
    "tasks": [
     {
      "title": "anechoic fugue model",
-     "state": "planned",
+     "state": "running",
      "worker": "Claude",
      "plan": "Decide the physical model and its on-screen readout, choose the actors, plan bigger ponds and new disturbances.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "since": "2026-10-19T18:02:05+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -7713,18 +7713,18 @@
    "title": "What the Dish Sees",
    "line": "Label each colony with the one shape it sees by placing.",
    "url": "https://chenhsieh.github.io/clean-features/",
-   "stage": "planning",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Find the playable frame for the latent-space game: a clear",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/clean-features-1.webp",
-   "lastChange": "2026-10-18T13:48:12+00:00",
+   "lastChange": "2026-10-19T18:02:05+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
     "claudeRuns": 1,
-    "apiRuns": 0,
+    "apiRuns": 1,
     "codexTokens": 340683,
     "codexUsdEst": 0.41,
     "claudeUsdEst": 3.6,
@@ -7734,11 +7734,11 @@
    },
    "tasks": [
     {
-     "title": "clean features frame",
-     "state": "planned",
-     "worker": "Claude",
-     "plan": "Find the playable frame for the latent-space game: a clear goal, a reason each click matters, dimension navigation with transitions.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "title": "clean features build",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "First-screen goal and progress, looping demos for the first two rules, visible deductions, a chapter grid with the map chapter previewed.",
+     "since": "2026-10-19T18:02:05+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -7746,6 +7746,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "clean features frame",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Find the playable frame for the latent-space game: a clear goal, a reason each click matters, dimension navigation with transitions.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Frame decided for What the Dish Sees and written to intake_20261019/BRIEF_clean-features.md; the Codex build task P1c07_clean-features-build is in queue/todo with its plan line."
     },
     {
      "title": "clean features followup",
@@ -7793,6 +7807,11 @@
    "verdict": null,
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-19T18:02:05+00:00",
+     "ok": true,
+     "note": "frame brief written; Codex build task P1c07 queued"
+    },
     {
      "at": "2026-10-18T13:48:12+00:00",
      "ok": true,
