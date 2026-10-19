@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T23:04:30+00:00",
+ "generated": "2026-10-19T23:06:33+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 53,
+    "queued": 52,
     "running": 2,
-    "doneToday": 48,
-    "minutes": 2130,
-    "estimateMinutes": 1065
+    "doneToday": 49,
+    "minutes": 2090,
+    "estimateMinutes": 1045
    },
    "Claude": {
     "queued": 0,
@@ -24,16 +24,16 @@
     "estimateMinutes": 0
    }
   },
-  "queued": 53,
+  "queued": 52,
   "running": 2,
-  "doneToday": 76,
+  "doneToday": 77,
   "lanes": {
    "Codex": 2,
    "Claude": 0
   },
-  "minutesRemaining": 2130,
-  "estimatedFinish": "2026-10-20T16:49:30+00:00",
-  "estimateMinutes": 1065
+  "minutesRemaining": 2090,
+  "estimatedFinish": "2026-10-20T16:31:33+00:00",
+  "estimateMinutes": 1045
  },
  "lanes": [
   {
@@ -46,14 +46,11 @@
   },
   {
    "worker": "Codex",
-   "game": "zoom-out",
-   "task": "zoom out butterfly",
-   "since": "2026-10-19T22:45:31+00:00",
-   "activity": "2026-10-19T23:04:11+00:00",
-   "commit": {
-    "at": "2026-10-19T23:03:11+00:00",
-    "subject": "fix: keep first lesson to two lines"
-   }
+   "game": "felt-years",
+   "task": "felt years story",
+   "since": "2026-10-19T23:06:09+00:00",
+   "activity": "2026-10-19T23:06:33+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 2,
@@ -86,7 +83,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 60
+   "changes": 61
   }
  ],
  "houseRules": 21,
@@ -2218,14 +2215,14 @@
    "title": "Felt Years",
    "line": "Felt Years is a quiet solo puzzle about a goat whose life.",
    "url": "https://chenhsieh.github.io/felt-years/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "A story for the proportional-time idea, a stated goal",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/felt-years-1.webp",
    "firstSeen": "2026-10-17T23:11:23+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-19T23:06:33+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -2241,10 +2238,10 @@
    "tasks": [
     {
      "title": "felt years story",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "A story for the proportional-time idea, a stated goal, gradual levels, maybe real events on the scale.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "since": "2026-10-19T23:06:09+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -8301,48 +8298,50 @@
    "title": "Zoom Out",
    "line": "",
    "url": "https://chenhsieh.github.io/zoom-out/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Circular scale story (molecule to universe, butterfly",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-16T00:50:51+00:00",
-   "lastChange": "2026-10-19T23:04:11+00:00",
+   "lastChange": "2026-10-19T23:05:58+00:00",
    "cost": {
     "apiUsd": 7.14,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 0,
     "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 282800,
+    "codexUsdEst": 0.34,
     "claudeUsdEst": 0.0,
     "earlierRounds": 5,
     "earlierUsdEst": 18.0,
-    "totalUsdEst": 25.14
+    "totalUsdEst": 25.48
    },
    "tasks": [
     {
      "title": "zoom out butterfly",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Circular scale story (molecule to universe, butterfly dream), remove obviously wrong choices, mind-bending visuals, new preview.",
-     "since": "2026-10-19T22:45:31+00:00",
-     "done": null,
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 21,
+     "tokens": 282800,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-19T23:03:11+00:00",
-      "subject": "fix: keep first lesson to two lines"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Butterfly-scale board, visible path target, previewable cul-de-sacs, and refreshed preview asset added."
     }
    ],
    "verdict": null,
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-19T23:05:58+00:00",
+     "ok": true,
+     "note": "Butterfly scale board, visible path target, previewable cul-de-sacs, and refreshed hub image published."
+    },
     {
      "at": "2026-10-18T14:30:08+00:00",
      "ok": true,
