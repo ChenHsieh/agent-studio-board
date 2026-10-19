@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T20:15:55+00:00",
+ "generated": "2026-10-19T20:17:58+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 70,
+    "queued": 69,
     "running": 2,
-    "doneToday": 30,
-    "minutes": 2790,
-    "estimateMinutes": 1395
+    "doneToday": 31,
+    "minutes": 2750,
+    "estimateMinutes": 1375
    },
    "Claude": {
     "queued": 0,
@@ -24,16 +24,16 @@
     "estimateMinutes": 0
    }
   },
-  "queued": 70,
+  "queued": 69,
   "running": 2,
-  "doneToday": 54,
+  "doneToday": 55,
   "lanes": {
    "Codex": 2,
    "Claude": 0
   },
-  "minutesRemaining": 2790,
-  "estimatedFinish": "2026-10-20T19:30:55+00:00",
-  "estimateMinutes": 1395
+  "minutesRemaining": 2750,
+  "estimatedFinish": "2026-10-20T19:12:58+00:00",
+  "estimateMinutes": 1375
  },
  "lanes": [
   {
@@ -46,13 +46,13 @@
   },
   {
    "worker": "Codex",
-   "game": "BioRedactle-nextjs",
-   "task": "BioRedactle nextjs ui pass",
-   "since": "2026-10-19T19:57:09+00:00",
-   "activity": "2026-10-19T20:15:49+00:00",
+   "game": "align-hero",
+   "task": "align hero bio round",
+   "since": "2026-10-19T20:16:44+00:00",
+   "activity": "2026-10-19T20:17:57+00:00",
    "commit": {
-    "at": "2026-10-19T20:12:22+00:00",
-    "subject": "Add generated puzzles [skip ci]"
+    "at": "2026-10-19T20:17:35+00:00",
+    "subject": "start: P1c12_align-hero-bio-round"
    }
   }
  ],
@@ -86,7 +86,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 38
+   "changes": 39
   }
  ],
  "houseRules": 21,
@@ -228,14 +228,14 @@
    "title": "Align Hero",
    "line": "Two lines of letters, one slipped. Find where it slipped.",
    "url": "https://chenhsieh.github.io/align-hero/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/align-hero-1.webp",
-   "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "firstSeen": "2026-10-19T20:16:44+00:00",
+   "lastChange": "2026-10-19T20:17:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -251,16 +251,19 @@
    "tasks": [
     {
      "title": "align hero bio round",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Bioinformatics round: make the idea legible in the first minute, add a light story, refine the interface.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "since": "2026-10-19T20:16:44+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-19T20:17:35+00:00",
+      "subject": "start: P1c12_align-hero-bio-round"
+     },
      "result": ""
     }
    ],
@@ -651,48 +654,50 @@
    "title": "BioRedactle",
    "line": "Reveal a paper's title with word tiles.",
    "url": "https://chenhsieh.github.io/BioRedactle-nextjs/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/bioredactle-1.webp",
    "firstSeen": "2026-10-17T23:15:14+00:00",
-   "lastChange": "2026-10-19T20:15:49+00:00",
+   "lastChange": "2026-10-19T20:15:59+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 0,
     "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 202365,
+    "codexUsdEst": 0.24,
     "claudeUsdEst": 0.0,
     "earlierRounds": 1,
     "earlierUsdEst": 3.6,
-    "totalUsdEst": 3.6
+    "totalUsdEst": 3.84
    },
    "tasks": [
     {
      "title": "BioRedactle nextjs ui pass",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Interface and visual pass; make the first game winnable for a non-academic.",
-     "since": "2026-10-19T19:57:09+00:00",
-     "done": null,
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 20,
+     "tokens": 202365,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-19T20:12:22+00:00",
-      "subject": "Add generated puzzles [skip ci]"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Players now see the goal, field, progress, miss budget, and a reachable word choice on small phones."
     }
    ],
    "verdict": null,
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-19T20:15:59+00:00",
+     "ok": true,
+     "note": "headline target, research-field context, and narrow-phone word tray live; 390x844 and 320x568 real-touch checks reviewed"
+    },
     {
      "at": "2026-10-17T23:15:14+00:00",
      "ok": true,
