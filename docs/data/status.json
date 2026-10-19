@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T08:08:34+00:00",
+ "generated": "2026-10-19T08:10:36+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,14 +10,11 @@
  "lanes": [
   {
    "worker": "Claude",
-   "game": "gif-cities",
-   "task": "gif cities growth",
-   "since": "2026-10-19T07:59:00+00:00",
-   "activity": "2026-10-19T08:07:27+00:00",
-   "commit": {
-    "at": "2026-10-19T08:07:23+00:00",
-    "subject": "feat: a key that names every symbol, a shelf of rescued GIFs, and an honest hit counter"
-   }
+   "game": "matchmaker-chat",
+   "task": "matchmaker strategist",
+   "since": "2026-10-19T08:09:00+00:00",
+   "activity": "2026-10-19T08:09:27+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 1,
@@ -50,7 +47,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 1
+   "changes": 2
   }
  ],
  "houseRules": 15,
@@ -2164,18 +2161,18 @@
    "title": "GIF Cities",
    "line": "Stack rescued GIFs down a 1999 homepage so every visitor.",
    "url": "https://chenhsieh.github.io/gif-cities/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Promising; rules need explaining",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/gif-cities-1.webp",
-   "lastChange": "2026-10-18T20:22:50+00:00",
+   "lastChange": "2026-10-19T08:08:59+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
     "claudeRuns": 1,
-    "apiRuns": 0,
+    "apiRuns": 1,
     "codexTokens": 142641,
     "codexUsdEst": 0.17,
     "claudeUsdEst": 3.6,
@@ -2184,23 +2181,6 @@
     "totalUsdEst": 28.97
    },
    "tasks": [
-    {
-     "title": "gif cities growth",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Explain hearts and great placements, add a collection, rethink the guest-book framing for young players, check whether live Giphy results are allowed.",
-     "since": "2026-10-19T07:59:00+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-19T08:07:23+00:00",
-      "subject": "feat: a key that names every symbol, a shelf of rescued GIFs, and an honest hit counter"
-     },
-     "result": ""
-    },
     {
      "title": "review of gif cities legible",
      "state": "done",
@@ -2214,6 +2194,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "gif cities growth",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Explain hearts and great placements, add a collection, rethink the guest-book framing for young players, check whether live Giphy results are allowed.",
+     "since": "2026-10-18T20:13:59+00:00",
+     "done": "2026-10-18T20:13:59+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "GIF Cities now names every symbol in a key under the board, has a Rescued GIFs shelf with a signer total, and its hit counter says what it really counts."
     },
     {
      "title": "gif cities legible",
@@ -2237,6 +2231,11 @@
    },
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-19T08:08:59+00:00",
+     "ok": true,
+     "note": "S9: symbol key, rescued GIF shelf, honest hit counter wording ()"
+    },
     {
      "at": "2026-10-18T20:22:50+00:00",
      "ok": true,
@@ -3264,7 +3263,7 @@
    "title": "Matchmaker Chat",
    "line": "Auntie sends a photo of a boy, then picture clues one.",
    "url": "https://chenhsieh.github.io/matchmaker-chat/",
-   "stage": "planning",
+   "stage": "building",
    "who": "Claude",
    "priority": "P3",
    "priorityNote": "Rethink as rival wingmen",
@@ -3286,10 +3285,10 @@
    "tasks": [
     {
      "title": "matchmaker strategist",
-     "state": "planned",
+     "state": "running",
      "worker": "Claude",
      "plan": "Redesign as rival wingmen coaching each side of a chat: bluff and counter-bluff, jokes, a messenger look.",
-     "since": "2026-10-18T17:32:39+00:00",
+     "since": "2026-10-19T08:09:00+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
