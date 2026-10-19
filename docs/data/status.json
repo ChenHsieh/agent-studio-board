@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T20:59:01+00:00",
+ "generated": "2026-10-19T21:01:04+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 65,
+    "queued": 64,
     "running": 2,
-    "doneToday": 35,
-    "minutes": 2590,
-    "estimateMinutes": 1295
+    "doneToday": 36,
+    "minutes": 2550,
+    "estimateMinutes": 1275
    },
    "Claude": {
     "queued": 0,
@@ -24,38 +24,38 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 65,
+  "queued": 64,
   "running": 3,
-  "doneToday": 62,
+  "doneToday": 63,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2650,
-  "estimatedFinish": "2026-10-20T18:34:01+00:00",
-  "estimateMinutes": 1295
+  "minutesRemaining": 2610,
+  "estimatedFinish": "2026-10-20T18:16:04+00:00",
+  "estimateMinutes": 1275
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "local-hero",
-   "task": "local hero bio round",
-   "since": "2026-10-19T20:46:57+00:00",
-   "activity": "2026-10-19T20:58:59+00:00",
-   "commit": {
-    "at": "2026-10-19T20:56:46+00:00",
-    "subject": "feat: show the shared island target"
-   }
-  },
   {
    "worker": "Codex",
    "game": "motif-hero",
    "task": "motif hero bio round",
    "since": "2026-10-19T20:58:22+00:00",
-   "activity": "2026-10-19T20:59:00+00:00",
+   "activity": "2026-10-19T21:00:54+00:00",
    "commit": {
     "at": "2026-10-19T20:58:52+00:00",
     "subject": "start: P1c16_motif-hero-bio-round"
+   }
+  },
+  {
+   "worker": "Codex",
+   "game": "rna-hero",
+   "task": "rna hero bio round",
+   "since": "2026-10-19T20:59:35+00:00",
+   "activity": "2026-10-19T21:01:00+00:00",
+   "commit": {
+    "at": "2026-10-19T21:00:43+00:00",
+    "subject": "start: P1c17_rna-hero-bio-round"
    }
   },
   {
@@ -97,7 +97,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 48
+   "changes": 49
   }
  ],
  "houseRules": 21,
@@ -4015,43 +4015,40 @@
    "title": "Local Hero",
    "line": "Find the stretch two DNA strings share, then bank it.",
    "url": "https://chenhsieh.github.io/local-hero/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/local-hero-1.webp",
-   "firstSeen": "2026-10-19T20:46:57+00:00",
-   "lastChange": "2026-10-19T20:58:59+00:00",
+   "firstSeen": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-19T20:59:20+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 0,
     "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 180479,
+    "codexUsdEst": 0.22,
     "claudeUsdEst": 0.0,
     "earlierRounds": 0,
     "earlierUsdEst": 0.0,
-    "totalUsdEst": 0.0
+    "totalUsdEst": 0.22
    },
    "tasks": [
     {
      "title": "local hero bio round",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Bioinformatics round: make the idea legible in the first minute, add a light story, refine the interface.",
-     "since": "2026-10-19T20:46:57+00:00",
-     "done": null,
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 13,
+     "tokens": 180479,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-19T20:56:46+00:00",
-      "subject": "feat: show the shared island target"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Local Hero now states the DNA-island goal, shows lesson and score targets, and uses shared target/hint components."
     }
    ],
    "verdict": {
@@ -4060,7 +4057,13 @@
     "note": "Bioinformatics round: make the idea legible in the first"
    },
    "needsYou": null,
-   "history": []
+   "history": [
+    {
+     "at": "2026-10-19T20:59:20+00:00",
+     "ok": true,
+     "note": "shared target and first-move hint make local alignment legible; live 390x844 and 320x568 touch checks passed"
+    }
+   ]
   },
   {
    "id": "machine-rhythm",
@@ -4662,7 +4665,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/motif-hero-1.webp",
    "firstSeen": "2026-10-19T20:58:22+00:00",
-   "lastChange": "2026-10-19T20:59:00+00:00",
+   "lastChange": "2026-10-19T21:00:54+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -5510,14 +5513,14 @@
    "title": "RNA Hero",
    "line": "Zip an RNA strand into its best fold.",
    "url": "https://chenhsieh.github.io/rna-hero/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/rna-hero-1.webp",
-   "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "firstSeen": "2026-10-19T20:59:35+00:00",
+   "lastChange": "2026-10-19T21:01:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -5533,16 +5536,19 @@
    "tasks": [
     {
      "title": "rna hero bio round",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Bioinformatics round: make the idea legible in the first minute, add a light story, refine the interface.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "since": "2026-10-19T20:59:35+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-19T21:00:43+00:00",
+      "subject": "start: P1c17_rna-hero-bio-round"
+     },
      "result": ""
     }
    ],
