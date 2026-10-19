@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T19:55:25+00:00",
+ "generated": "2026-10-19T19:57:28+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 72,
+    "queued": 71,
     "running": 2,
-    "doneToday": 27,
-    "minutes": 2870,
-    "estimateMinutes": 1435
+    "doneToday": 28,
+    "minutes": 2830,
+    "estimateMinutes": 1415
    },
    "Claude": {
     "queued": 0,
@@ -24,39 +24,36 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 72,
+  "queued": 71,
   "running": 3,
-  "doneToday": 47,
+  "doneToday": 48,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2930,
-  "estimatedFinish": "2026-10-20T19:50:25+00:00",
-  "estimateMinutes": 1435
+  "minutesRemaining": 2890,
+  "estimatedFinish": "2026-10-20T19:32:28+00:00",
+  "estimateMinutes": 1415
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "peony-dream",
-   "task": "peony dream ink visual",
-   "since": "2026-10-19T19:40:10+00:00",
-   "activity": "2026-10-19T19:55:08+00:00",
-   "commit": {
-    "at": "2026-10-19T19:52:13+00:00",
-    "subject": "feat: deepen the wet ink and silk material"
-   }
-  },
   {
    "worker": "Codex",
    "game": "remote-viewer",
    "task": "remote viewer design pass",
    "since": "2026-10-19T19:46:21+00:00",
-   "activity": "2026-10-19T19:55:23+00:00",
+   "activity": "2026-10-19T19:57:28+00:00",
    "commit": {
-    "at": "2026-10-19T19:47:02+00:00",
-    "subject": "start: P1c09_remote-viewer-design-pass"
+    "at": "2026-10-19T19:55:26+00:00",
+    "subject": "feat: make each file a distinct investigation"
    }
+  },
+  {
+   "worker": "Codex",
+   "game": "BioRedactle-nextjs",
+   "task": "BioRedactle nextjs ui pass",
+   "since": "2026-10-19T19:57:09+00:00",
+   "activity": "2026-10-19T19:57:24+00:00",
+   "commit": null
   },
   {
    "worker": "Claude",
@@ -97,7 +94,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 35
+   "changes": 36
   }
  ],
  "houseRules": 21,
@@ -662,14 +659,14 @@
    "title": "BioRedactle",
    "line": "Reveal a paper's title with word tiles.",
    "url": "https://chenhsieh.github.io/BioRedactle-nextjs/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/bioredactle-1.webp",
    "firstSeen": "2026-10-17T23:15:14+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-19T19:57:24+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -685,10 +682,10 @@
    "tasks": [
     {
      "title": "BioRedactle nextjs ui pass",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Interface and visual pass; make the first game winnable for a non-academic.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "since": "2026-10-19T19:57:09+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -4842,43 +4839,40 @@
    "title": "Peony Dream",
    "line": "Paint half a face on a sheet of silk, close the silk on.",
    "url": "https://chenhsieh.github.io/peony-dream/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Eastern ink visual direction instead of raster",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/peony-dream-1.webp",
    "firstSeen": "2026-10-18T01:51:43+00:00",
-   "lastChange": "2026-10-19T19:55:08+00:00",
+   "lastChange": "2026-10-19T19:56:53+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 0,
     "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 196334,
+    "codexUsdEst": 0.24,
     "claudeUsdEst": 0.0,
     "earlierRounds": 2,
     "earlierUsdEst": 7.2,
-    "totalUsdEst": 7.2
+    "totalUsdEst": 7.44
    },
    "tasks": [
     {
      "title": "peony dream ink visual",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Eastern ink visual direction instead of raster placeholders; smoother fold-and-print play.",
-     "since": "2026-10-19T19:40:10+00:00",
-     "done": null,
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 17,
+     "tokens": 196334,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-19T19:52:13+00:00",
-      "subject": "feat: deepen the wet ink and silk material"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Peony Dream now shows portrait progress, teaches its first ink-and-hinge move, and has richer wet-ink material."
     }
    ],
    "verdict": {
@@ -4888,6 +4882,11 @@
    },
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-19T19:56:53+00:00",
+     "ok": true,
+     "note": "wet-ink portrait target, shared first-move cue, and refined silk and ink stone live; 390x844 and 320x568 real-touch checks reviewed"
+    },
     {
      "at": "2026-10-18T06:15:29+00:00",
      "ok": true,
@@ -5261,7 +5260,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/remote-viewer-1.webp",
    "firstSeen": "2026-10-17T16:38:08+00:00",
-   "lastChange": "2026-10-19T19:55:23+00:00",
+   "lastChange": "2026-10-19T19:57:28+00:00",
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 0,
@@ -5287,8 +5286,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-19T19:47:02+00:00",
-      "subject": "start: P1c09_remote-viewer-design-pass"
+      "at": "2026-10-19T19:55:26+00:00",
+      "subject": "feat: make each file a distinct investigation"
      },
      "result": ""
     },
