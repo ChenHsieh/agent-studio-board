@@ -26,6 +26,33 @@ async function load() {
     return `<div><h3>${title} · ${list.length}</h3><ol>${list.map((g) => `<li><a href="${esc(g.url)}">${esc(g.title)}</a><span>${esc(g.priority || '')} · ${usd(g.cost.totalUsdEst)}</span></li>`).join('')}</ol></div>`;
   }).join('');
 
+  const done = games.flatMap((g) => (g.tasks || []).filter((t) => t.state === 'done').map((t) => ({ ...t, game: g.title })));
+  const fine = done.filter((t) => t.reviewOutcome === 'fine');
+  const fixed = done.filter((t) => t.reviewOutcome === 'fixed');
+  $('#reviews-note').textContent = `${fine.length} fine · ${fixed.length} fixed`;
+  $('#reviews').innerHTML = fixed.length
+    ? `<p class="review-count"><b>${fixed.length} fixed</b> · ${fine.length} fine</p><ul class="fixed-list">${fixed.map((t) => `<li>${esc(t.title)} · ${esc(t.game)}</li>`).join('')}</ul>`
+    : `<p class="review-count">${fine.length} fine · no fixes recorded.</p>`;
+
+  const rates = d.rates || {};
+  const workers = new Map();
+  for (const t of done) {
+    const row = workers.get(t.worker) || { worker: t.worker, done: 0, estimated: 0, total: 0 };
+    row.done += 1;
+    let estimate = null;
+    if (t.worker === 'Codex' && Number.isFinite(t.tokens)) estimate = t.tokens / 1e6 * (rates.codexUsdPerMTok || 0);
+    if (t.worker === 'Claude') estimate = rates.claudeUsdPerRun;
+    if (Number.isFinite(estimate)) { row.estimated += 1; row.total += estimate; }
+    workers.set(t.worker, row);
+  }
+  const workerRows = [...workers.values()].sort((a, b) => a.worker.localeCompare(b.worker));
+  $('#change-cost-note').textContent = 'Estimated dollars per done task, grouped by worker. A dash means the records do not support a task-level estimate.';
+  $('#change-cost').innerHTML = workerRows.length ? `<div class="change-cost">${workerRows.map((r) => {
+    const each = r.estimated ? usd(r.total / r.estimated) : '—';
+    const detail = r.estimated === r.done ? `${r.done} done` : `${r.done} done · ${r.estimated} estimated`;
+    return `<div><b>${esc(r.worker)}</b><span>${each} / done task</span><small>${esc(detail)} · ${r.estimated ? usd(r.total) + ' total' : 'no task-level rate'}</small></div>`;
+  }).join('')}</div>` : '<p class="review-count">No completed tasks yet.</p>';
+
   const total = games.reduce((a, g) => a + g.cost.totalUsdEst, 0);
   const top = games.filter((g) => g.cost.totalUsdEst > 0).sort((a, b) => b.cost.totalUsdEst - a.cost.totalUsdEst).slice(0, 25);
   const max = top.length ? top[0].cost.totalUsdEst : 1;
@@ -37,7 +64,7 @@ async function load() {
   const dmax = Math.max(1, ...days.map((x) => x.changes));
   $('#days').innerHTML = `<div class="days">${days.map((x) => `<div style="height:${(x.changes / dmax) * 100}%"><b>${x.changes}</b></div>`).join('')}</div><div class="daylbl">${days.map((x) => `<span>${x.day.slice(5)}</span>`).join('')}</div>`;
 
-  const rt = d.rates || {};
+  const rt = rates;
   $('#rates').innerHTML = [
     `Metered API: the actual bill, ${usd(d.apiSpentUsd)} so far.`,
     `Codex: about ${usd(rt.codexUsdPerMTok)} per million tokens. ${esc(rt.codexNote || '')}`,
