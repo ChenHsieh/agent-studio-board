@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T20:13:52+00:00",
+ "generated": "2026-10-19T20:15:55+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 71,
+    "queued": 70,
     "running": 2,
-    "doneToday": 29,
-    "minutes": 2830,
-    "estimateMinutes": 1415
+    "doneToday": 30,
+    "minutes": 2790,
+    "estimateMinutes": 1395
    },
    "Claude": {
     "queued": 0,
@@ -24,38 +24,35 @@
     "estimateMinutes": 0
    }
   },
-  "queued": 71,
+  "queued": 70,
   "running": 2,
-  "doneToday": 53,
+  "doneToday": 54,
   "lanes": {
    "Codex": 2,
    "Claude": 0
   },
-  "minutesRemaining": 2830,
-  "estimatedFinish": "2026-10-20T19:48:52+00:00",
-  "estimateMinutes": 1415
+  "minutesRemaining": 2790,
+  "estimatedFinish": "2026-10-20T19:30:55+00:00",
+  "estimateMinutes": 1395
  },
  "lanes": [
+  {
+   "worker": "Codex",
+   "game": null,
+   "task": "review followups",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
   {
    "worker": "Codex",
    "game": "BioRedactle-nextjs",
    "task": "BioRedactle nextjs ui pass",
    "since": "2026-10-19T19:57:09+00:00",
-   "activity": "2026-10-19T20:13:51+00:00",
+   "activity": "2026-10-19T20:15:49+00:00",
    "commit": {
     "at": "2026-10-19T20:12:22+00:00",
     "subject": "Add generated puzzles [skip ci]"
-   }
-  },
-  {
-   "worker": "Codex",
-   "game": "sockglass",
-   "task": "sockglass clarity",
-   "since": "2026-10-19T19:58:36+00:00",
-   "activity": "2026-10-19T20:13:48+00:00",
-   "commit": {
-    "at": "2026-10-19T20:09:47+00:00",
-    "subject": "feat: clarify socks and window goal"
    }
   }
  ],
@@ -661,7 +658,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/bioredactle-1.webp",
    "firstSeen": "2026-10-17T23:15:14+00:00",
-   "lastChange": "2026-10-19T20:13:51+00:00",
+   "lastChange": "2026-10-19T20:15:49+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -6445,43 +6442,40 @@
    "title": "Sockglass",
    "line": "Drag tissue-paper socks onto a dark bedroom window; where.",
    "url": "https://chenhsieh.github.io/sockglass/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Make sock sizes and counts readable and let the theme",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/sockglass-1.webp",
    "firstSeen": "2026-10-16T00:35:59+00:00",
-   "lastChange": "2026-10-19T20:13:48+00:00",
+   "lastChange": "2026-10-19T20:13:31+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 0,
     "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 170850,
+    "codexUsdEst": 0.21,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
-    "totalUsdEst": 14.4
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
+    "totalUsdEst": 11.01
    },
    "tasks": [
     {
      "title": "sockglass clarity",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Make sock sizes and counts readable and let the theme explain why socks go on the window.",
-     "since": "2026-10-19T19:58:36+00:00",
-     "done": null,
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 15,
+     "tokens": 170850,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-19T20:09:47+00:00",
-      "subject": "feat: clarify socks and window goal"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Warm-window story, clear sock pane counts, and live picture progress added."
     }
    ],
    "verdict": {
