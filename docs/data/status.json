@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T20:38:30+00:00",
+ "generated": "2026-10-19T20:40:33+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 68,
+    "queued": 67,
     "running": 2,
-    "doneToday": 32,
-    "minutes": 2710,
-    "estimateMinutes": 1355
+    "doneToday": 33,
+    "minutes": 2670,
+    "estimateMinutes": 1335
    },
    "Claude": {
     "queued": 0,
@@ -24,35 +24,38 @@
     "estimateMinutes": 0
    }
   },
-  "queued": 68,
+  "queued": 67,
   "running": 2,
-  "doneToday": 56,
+  "doneToday": 57,
   "lanes": {
    "Codex": 2,
    "Claude": 0
   },
-  "minutesRemaining": 2710,
-  "estimatedFinish": "2026-10-20T19:13:30+00:00",
-  "estimateMinutes": 1355
+  "minutesRemaining": 2670,
+  "estimatedFinish": "2026-10-20T18:55:33+00:00",
+  "estimateMinutes": 1335
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "Multiple games",
-   "task": "review followups",
-   "since": null,
-   "activity": null,
-   "commit": null
-  },
   {
    "worker": "Codex",
    "game": "biosteganography",
    "task": "biosteganography bio round",
    "since": "2026-10-19T20:33:34+00:00",
-   "activity": "2026-10-19T20:38:06+00:00",
+   "activity": "2026-10-19T20:40:31+00:00",
    "commit": {
     "at": "2026-10-19T20:34:33+00:00",
     "subject": "start: P1c13_biosteganography-bio-round"
+   }
+  },
+  {
+   "worker": "Codex",
+   "game": "fold-guess",
+   "task": "fold guess bio round",
+   "since": "2026-10-19T20:38:40+00:00",
+   "activity": "2026-10-19T20:40:30+00:00",
+   "commit": {
+    "at": "2026-10-19T20:39:31+00:00",
+    "subject": "start: P1c14_fold-guess-bio-round"
    }
   }
  ],
@@ -725,7 +728,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/biosteganography-1.webp",
    "firstSeen": "2026-10-19T20:33:34+00:00",
-   "lastChange": "2026-10-19T20:38:06+00:00",
+   "lastChange": "2026-10-19T20:40:31+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -2747,14 +2750,14 @@
    "title": "Fold Guess",
    "line": "Date a real protein structure and its method.",
    "url": "https://chenhsieh.github.io/fold-guess/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/fold-guess-1.webp",
-   "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "firstSeen": "2026-10-19T20:38:40+00:00",
+   "lastChange": "2026-10-19T20:40:30+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -2770,16 +2773,19 @@
    "tasks": [
     {
      "title": "fold guess bio round",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Bioinformatics round: make the idea legible in the first minute, add a light story, refine the interface.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "since": "2026-10-19T20:38:40+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-19T20:39:31+00:00",
+      "subject": "start: P1c14_fold-guess-bio-round"
+     },
      "result": ""
     }
    ],
