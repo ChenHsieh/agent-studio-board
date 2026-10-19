@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T01:27:38+00:00",
+ "generated": "2026-10-19T01:29:40+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,10 +10,10 @@
  "lanes": [
   {
    "worker": "Claude",
-   "game": "fool-the-algorithm",
-   "task": "review of forager feel",
-   "since": "2026-10-18T23:22:10+00:00",
-   "activity": "2026-10-19T01:26:34+00:00",
+   "game": "drawing-circles",
+   "task": "review of drawing cards",
+   "since": "2026-10-19T01:28:13+00:00",
+   "activity": "2026-10-19T01:28:13+00:00",
    "commit": null
   }
  ],
@@ -43,7 +43,7 @@
   },
   {
    "day": "2026-10-18",
-   "changes": 123
+   "changes": 124
   }
  ],
  "houseRules": 15,
@@ -1354,7 +1354,7 @@
    "title": "Drawing Circles",
    "line": "Stack gears until the puppy's leash goes slack.",
    "url": "https://chenhsieh.github.io/drawing-circles/",
-   "stage": "review",
+   "stage": "building",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Guidance added; needs review",
@@ -1374,6 +1374,17 @@
     "totalUsdEst": 45.75
    },
    "tasks": [
+    {
+     "title": "review of drawing cards",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-19T01:28:13+00:00",
+     "done": null,
+     "reviewed": false,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "drawing cards",
      "state": "done",
@@ -5181,33 +5192,33 @@
    "title": "The Forager",
    "line": "Change letters to widen the greedy gap.",
    "url": "https://chenhsieh.github.io/fool-the-algorithm/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Improving; pacing and theme",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/fool-the-algorithm-1.webp",
-   "lastChange": "2026-10-18T20:57:53+00:00",
+   "lastChange": "2026-10-19T01:28:08+00:00",
    "cost": {
     "apiUsd": 10.18,
     "codexRuns": 2,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 1,
     "codexTokens": 629115,
     "codexUsdEst": 0.75,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 2,
     "earlierUsdEst": 7.2,
-    "totalUsdEst": 21.73
+    "totalUsdEst": 25.33
    },
    "tasks": [
     {
      "title": "review of forager feel",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "",
      "since": "2026-10-18T23:22:10+00:00",
-     "done": null,
+     "done": "2026-10-18T23:22:10+00:00",
      "reviewed": false,
      "commit": null,
      "result": ""
@@ -5219,7 +5230,7 @@
      "plan": "Berries always draggable (any move resets the run), smooth eased flight with one play/pause toggle, and a cleaner cute redraw.",
      "since": "2026-10-18T20:13:39+00:00",
      "done": "2026-10-18T20:13:39+00:00",
-     "reviewed": false,
+     "reviewed": true,
      "commit": null,
      "result": "Forager now has touch-priority berries, smooth Play/Pause flight, 1×/2× speed, and cleaner illustrated themes."
     },
@@ -5264,6 +5275,11 @@
    },
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-19T01:28:08+00:00",
+     "ok": true,
+     "note": "R13 review: Grey visibly lands after Orange, run controls under the board, browser suite green ()"
+    },
     {
      "at": "2026-10-18T20:57:53+00:00",
      "ok": true,
