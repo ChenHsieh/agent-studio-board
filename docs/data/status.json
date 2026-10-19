@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T16:08:44+00:00",
+ "generated": "2026-10-19T16:10:47+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -8,17 +8,6 @@
   "blurb": "A small studio of browser games, built by a queue of coding agents and reviewed by another."
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "drawing-circles",
-   "task": "drawing collectible",
-   "since": "2026-10-19T15:41:19+00:00",
-   "activity": "2026-10-19T16:08:41+00:00",
-   "commit": {
-    "at": "2026-10-19T16:06:00+00:00",
-    "subject": "test: record the final Little Star curve"
-   }
-  },
   {
    "worker": "Claude",
    "game": "walls-have-ears",
@@ -43,12 +32,20 @@
    "game": "ribosome-2048",
    "task": "review of ribosome core",
    "since": "2026-10-19T16:06:52+00:00",
-   "activity": "2026-10-19T16:06:52+00:00",
+   "activity": "2026-10-19T16:09:37+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "gif-cities",
+   "task": "review of gif speed",
+   "since": "2026-10-19T16:09:49+00:00",
+   "activity": "2026-10-19T16:09:49+00:00",
    "commit": null
   }
  ],
  "codexLanes": 2,
- "claudeWorkers": 3,
+ "claudeWorkers": 4,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -77,7 +74,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 12
+   "changes": 13
   }
  ],
  "houseRules": 16,
@@ -1535,42 +1532,39 @@
    "title": "Drawing Circles",
    "line": "Stack gears until the puppy's leash goes slack.",
    "url": "https://chenhsieh.github.io/drawing-circles/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "review",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Guidance added; needs review",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/drawing-circles-1.webp",
-   "lastChange": "2026-10-19T03:30:04+00:00",
+   "lastChange": "2026-10-19T16:09:25+00:00",
    "cost": {
     "apiUsd": 12.59,
-    "codexRuns": 2,
+    "codexRuns": 3,
     "claudeRuns": 1,
     "apiRuns": 1,
-    "codexTokens": 629564,
-    "codexUsdEst": 0.76,
+    "codexTokens": 1094956,
+    "codexUsdEst": 1.31,
     "claudeUsdEst": 3.6,
     "earlierRounds": 10,
     "earlierUsdEst": 36.0,
-    "totalUsdEst": 52.95
+    "totalUsdEst": 53.5
    },
    "tasks": [
     {
      "title": "drawing collectible",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Ease level 9, How to play pages that each teach something new, sketchbook cards that tilt, shine and flip like real collectible cards.",
-     "since": "2026-10-19T15:41:19+00:00",
-     "done": null,
+     "since": "2026-10-19T15:32:03+00:00",
+     "done": "2026-10-19T15:32:03+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 28,
+     "tokens": 465392,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-19T16:06:00+00:00",
-      "subject": "test: record the final Little Star curve"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Little Star now follows a pinned turn lesson; all levels are open; sketchbook traces tilt, shine, and flip as collectible cards."
     },
     {
      "title": "review of drawing cards",
@@ -1637,6 +1631,11 @@
    "needsYou": null,
    "history": [
     {
+     "at": "2026-10-19T16:09:25+00:00",
+     "ok": true,
+     "note": "Merged : Little Star teaching step, all-open map, save-safe foil sketchbook cards; Pages still serves rules version 4 after 390/320 touch checks."
+    },
+    {
      "at": "2026-10-19T03:30:04+00:00",
      "ok": true,
      "note": "urgent how-to crop: pictures drawn on a private board and scaled to fit ()"
@@ -1690,11 +1689,6 @@
      "at": "2026-10-15T19:45:07+00:00",
      "ok": true,
      "note": "playable gate FAIL round 2"
-    },
-    {
-     "at": "2026-10-15T19:35:43+00:00",
-     "ok": true,
-     "note": "playable gate FAIL round 1"
     }
    ]
   },
@@ -2256,7 +2250,7 @@
    "title": "GIF Cities",
    "line": "Stack rescued GIFs down a 1999 homepage so every visitor.",
    "url": "https://chenhsieh.github.io/gif-cities/",
-   "stage": "review",
+   "stage": "building",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Promising; rules need explaining",
@@ -2276,6 +2270,20 @@
     "totalUsdEst": 29.22
    },
    "tasks": [
+    {
+     "title": "review of gif speed",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-19T16:09:49+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "gif speed",
      "state": "done",
