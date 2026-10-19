@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T15:19:42+00:00",
+ "generated": "2026-10-19T15:21:45+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,21 +10,13 @@
  "lanes": [
   {
    "worker": "Codex",
-   "game": null,
-   "task": "unlock all",
-   "since": null,
-   "activity": null,
-   "commit": null
-  },
-  {
-   "worker": "Codex",
-   "game": "ribosome-2048",
-   "task": "ribosome core",
-   "since": "2026-10-19T15:12:30+00:00",
-   "activity": "2026-10-19T15:19:41+00:00",
+   "game": "gif-cities",
+   "task": "gif speed",
+   "since": "2026-10-19T15:19:53+00:00",
+   "activity": "2026-10-19T15:21:38+00:00",
    "commit": {
-    "at": "2026-10-19T15:18:52+00:00",
-    "subject": "feat: bring 2048 protein merges back"
+    "at": "2026-10-19T15:21:02+00:00",
+    "subject": "start: gif-cities speed and depth"
    }
   },
   {
@@ -32,7 +24,7 @@
    "game": "cymatic-plate",
    "task": "review of cymatic assist",
    "since": "2026-10-19T15:12:38+00:00",
-   "activity": "2026-10-19T15:18:21+00:00",
+   "activity": "2026-10-19T15:20:06+00:00",
    "commit": null
   }
  ],
@@ -66,7 +58,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 9
+   "changes": 10
   }
  ],
  "houseRules": 16,
@@ -2228,7 +2220,7 @@
    "title": "GIF Cities",
    "line": "Stack rescued GIFs down a 1999 homepage so every visitor.",
    "url": "https://chenhsieh.github.io/gif-cities/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Promising; rules need explaining",
@@ -2250,16 +2242,19 @@
    "tasks": [
     {
      "title": "gif speed",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Slow default speed with a toggle, a clear progress area, meme homages from different eras, one deeper mechanism.",
-     "since": "2026-10-19T14:51:11+00:00",
+     "since": "2026-10-19T15:19:53+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-19T15:21:02+00:00",
+      "subject": "start: gif-cities speed and depth"
+     },
      "result": ""
     },
     {
@@ -4345,47 +4340,49 @@
    "title": "Ribosome 2048",
    "line": "Slip reading frames to build a protein.",
    "url": "https://chenhsieh.github.io/ribosome-2048/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "review",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/ribosome-2048-1.webp",
-   "lastChange": "2026-10-17T23:15:14+00:00",
+   "lastChange": "2026-10-19T15:21:10+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 0,
     "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 199643,
+    "codexUsdEst": 0.24,
     "claudeUsdEst": 0.0,
     "earlierRounds": 1,
     "earlierUsdEst": 3.6,
-    "totalUsdEst": 3.6
+    "totalUsdEst": 3.84
    },
    "tasks": [
     {
      "title": "ribosome core",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Bring back a real merge-tile core so the name fits, or rename it.",
-     "since": "2026-10-19T15:12:30+00:00",
-     "done": null,
+     "since": "2026-10-19T14:51:11+00:00",
+     "done": "2026-10-19T14:51:11+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 9,
+     "tokens": 199643,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-19T15:18:52+00:00",
-      "subject": "feat: bring 2048 protein merges back"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Restored real swipe-and-merge Ribosome 2048: translate codons, ligate chains, bank proteins; three levels are open and old saves remain readable."
     }
    ],
    "verdict": null,
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-19T15:21:10+00:00",
+     "ok": true,
+     "note": "Restored the 2048 merge-tile core, all three levels open, old saves retained, and live 390/320 real-touch checks passed."
+    },
     {
      "at": "2026-10-17T23:15:14+00:00",
      "ok": true,
