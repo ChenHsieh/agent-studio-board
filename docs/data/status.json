@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T03:51:25+00:00",
+ "generated": "2026-10-19T03:55:29+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,14 @@
  "lanes": [
   {
    "worker": "Claude",
-   "game": "grass-crossword",
-   "task": "review of grass source",
-   "since": "2026-10-19T03:50:13+00:00",
-   "activity": "2026-10-19T03:50:13+00:00",
-   "commit": null
+   "game": "colony-count",
+   "task": "colony hints hard",
+   "since": "2026-10-19T03:53:51+00:00",
+   "activity": "2026-10-19T03:54:04+00:00",
+   "commit": {
+    "at": "2026-10-19T03:54:04+00:00",
+    "subject": "start: Colony Count hints that teach and harder tiers"
+   }
   }
  ],
  "codexLanes": 1,
@@ -650,7 +653,7 @@
    "title": "Colony Count",
    "line": "Solve three daily levels, then freeze finished plates.",
    "url": "https://chenhsieh.github.io/colony-count/",
-   "stage": "planning",
+   "stage": "building",
    "who": "Claude",
    "priority": "P1",
    "priorityNote": "Flagship; has its own owner",
@@ -672,16 +675,19 @@
    "tasks": [
     {
      "title": "colony hints hard",
-     "state": "planned",
+     "state": "running",
      "worker": "Claude",
      "plan": "Hints that show the logical step on the board, plus harder tiers with more and hidden colours, each proven to have one answer.",
-     "since": "2026-10-18T20:13:59+00:00",
+     "since": "2026-10-19T03:53:51+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-19T03:54:04+00:00",
+      "subject": "start: Colony Count hints that teach and harder tiers"
+     },
      "result": ""
     },
     {
@@ -2354,33 +2360,33 @@
    "title": "Grass Crossword",
    "line": "A crossword dug into a garden bed, where every answer is.",
    "url": "https://chenhsieh.github.io/grass-crossword/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Source study first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/grass-crossword-1.webp",
-   "lastChange": "2026-10-19T00:28:06+00:00",
+   "lastChange": "2026-10-19T03:50:13+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 266643,
     "codexUsdEst": 0.32,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 2,
+    "earlierUsdEst": 7.2,
     "totalUsdEst": 11.12
    },
    "tasks": [
     {
      "title": "review of grass source",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "",
      "since": "2026-10-19T03:50:13+00:00",
-     "done": null,
+     "done": "2026-10-19T03:50:13+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -2395,7 +2401,7 @@
      "plan": "Read the source piece closely; redesign so across and down matter and the original's idea is kept, or say why not.",
      "since": "2026-10-18T17:32:39+00:00",
      "done": "2026-10-18T17:32:39+00:00",
-     "reviewed": false,
+     "reviewed": true,
      "minutes": 20,
      "tokens": 266643,
      "reviewOutcome": null,
@@ -2404,7 +2410,7 @@
     }
    ],
    "verdict": null,
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
     {
      "at": "2026-10-19T00:28:06+00:00",
