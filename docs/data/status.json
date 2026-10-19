@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T20:46:42+00:00",
+ "generated": "2026-10-19T20:48:45+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 67,
+    "queued": 66,
     "running": 2,
-    "doneToday": 33,
-    "minutes": 2670,
-    "estimateMinutes": 1335
+    "doneToday": 34,
+    "minutes": 2630,
+    "estimateMinutes": 1315
    },
    "Claude": {
     "queued": 0,
@@ -24,38 +24,38 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 67,
+  "queued": 66,
   "running": 3,
-  "doneToday": 57,
+  "doneToday": 58,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2730,
-  "estimatedFinish": "2026-10-20T19:01:42+00:00",
-  "estimateMinutes": 1335
+  "minutesRemaining": 2690,
+  "estimatedFinish": "2026-10-20T18:43:45+00:00",
+  "estimateMinutes": 1315
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "biosteganography",
-   "task": "biosteganography bio round",
-   "since": "2026-10-19T20:33:34+00:00",
-   "activity": "2026-10-19T20:46:40+00:00",
-   "commit": {
-    "at": "2026-10-19T20:44:45+00:00",
-    "subject": "feat: show why a DNA row is the repeat"
-   }
-  },
   {
    "worker": "Codex",
    "game": "fold-guess",
    "task": "fold guess bio round",
    "since": "2026-10-19T20:38:40+00:00",
-   "activity": "2026-10-19T20:46:32+00:00",
+   "activity": "2026-10-19T20:48:42+00:00",
    "commit": {
     "at": "2026-10-19T20:39:31+00:00",
     "subject": "start: P1c14_fold-guess-bio-round"
+   }
+  },
+  {
+   "worker": "Codex",
+   "game": "local-hero",
+   "task": "local hero bio round",
+   "since": "2026-10-19T20:46:57+00:00",
+   "activity": "2026-10-19T20:48:37+00:00",
+   "commit": {
+    "at": "2026-10-19T20:47:49+00:00",
+    "subject": "start: P1c15_local-hero-bio-round"
    }
   },
   {
@@ -97,7 +97,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 46
+   "changes": 47
   }
  ],
  "houseRules": 21,
@@ -729,43 +729,40 @@
    "title": "Biosteganography",
    "line": "Straighten the stripes to find a hidden repeat.",
    "url": "https://chenhsieh.github.io/biosteganography/demo/snap.html",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/biosteganography-1.webp",
-   "firstSeen": "2026-10-19T20:33:34+00:00",
-   "lastChange": "2026-10-19T20:46:40+00:00",
+   "firstSeen": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-19T20:46:32+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 0,
     "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 155094,
+    "codexUsdEst": 0.19,
     "claudeUsdEst": 0.0,
     "earlierRounds": 0,
     "earlierUsdEst": 0.0,
-    "totalUsdEst": 0.0
+    "totalUsdEst": 0.19
    },
    "tasks": [
     {
      "title": "biosteganography bio round",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Bioinformatics round: make the idea legible in the first minute, add a light story, refine the interface.",
-     "since": "2026-10-19T20:33:34+00:00",
-     "done": null,
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 13,
+     "tokens": 155094,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-19T20:44:45+00:00",
-      "subject": "feat: show why a DNA row is the repeat"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Players now get a DNA-repeat mission, 0/9 case progress, and clear evidence for why an alignment is or isn’t the answer."
     }
    ],
    "verdict": {
@@ -774,7 +771,13 @@
     "note": "Bioinformatics round: make the idea legible in the first"
    },
    "needsYou": null,
-   "history": []
+   "history": [
+    {
+     "at": "2026-10-19T20:46:32+00:00",
+     "ok": true,
+     "note": "first-visit repeat mission, case progress, and live alignment evidence are published; 390x844 and 320x568 real-touch checks passed"
+    }
+   ]
   },
   {
    "id": "bluebook-guess",
@@ -2765,7 +2768,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/fold-guess-1.webp",
    "firstSeen": "2026-10-19T20:38:40+00:00",
-   "lastChange": "2026-10-19T20:46:32+00:00",
+   "lastChange": "2026-10-19T20:48:42+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -3981,14 +3984,14 @@
    "title": "Local Hero",
    "line": "Find the stretch two DNA strings share, then bank it.",
    "url": "https://chenhsieh.github.io/local-hero/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/local-hero-1.webp",
-   "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "firstSeen": "2026-10-19T20:46:57+00:00",
+   "lastChange": "2026-10-19T20:48:37+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -4004,16 +4007,19 @@
    "tasks": [
     {
      "title": "local hero bio round",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Bioinformatics round: make the idea legible in the first minute, add a light story, refine the interface.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "since": "2026-10-19T20:46:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-19T20:47:49+00:00",
+      "subject": "start: P1c15_local-hero-bio-round"
+     },
      "result": ""
     }
    ],
