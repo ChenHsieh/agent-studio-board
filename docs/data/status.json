@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T08:24:51+00:00",
+ "generated": "2026-10-19T08:26:54+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,14 @@
  "lanes": [
   {
    "worker": "Claude",
-   "game": "matchmaker-chat",
-   "task": "matchmaker strategist",
-   "since": "2026-10-19T08:09:00+00:00",
-   "activity": "2026-10-19T08:24:31+00:00",
-   "commit": null
+   "game": "anechoic-fugue",
+   "task": "anechoic rethink",
+   "since": "2026-10-19T08:25:50+00:00",
+   "activity": "2026-10-19T08:26:09+00:00",
+   "commit": {
+    "at": "2026-10-19T08:26:09+00:00",
+    "subject": "wip: pond rethink from the paused run (frog, duckling, float), not yet checked"
+   }
   }
  ],
  "codexLanes": 1,
@@ -47,7 +50,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 2
+   "changes": 3
   }
  ],
  "houseRules": 15,
@@ -150,7 +153,7 @@
    "title": "Anechoic Fugue",
    "line": "Place speakers so the sleeper's chair goes quiet.",
    "url": "https://chenhsieh.github.io/anechoic-fugue/",
-   "stage": "planning",
+   "stage": "building",
    "who": "Claude",
    "priority": "P3",
    "priorityNote": "Core mechanism unclear",
@@ -172,16 +175,19 @@
    "tasks": [
     {
      "title": "anechoic rethink",
-     "state": "planned",
+     "state": "running",
      "worker": "Claude",
      "plan": "Rethink the core: find an object whose way of cancelling noise reads at a glance, then rebuild the hard levels around it.",
-     "since": "2026-10-18T15:39:00+00:00",
+     "since": "2026-10-19T08:25:50+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-19T08:26:09+00:00",
+      "subject": "wip: pond rethink from the paused run (frog, duckling, float), not yet checked"
+     },
      "result": ""
     },
     {
@@ -3263,18 +3269,18 @@
    "title": "Matchmaker Chat",
    "line": "Auntie sends a photo of a boy, then picture clues one.",
    "url": "https://chenhsieh.github.io/matchmaker-chat/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Rethink as rival wingmen",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/matchmaker-chat-1.webp",
-   "lastChange": "2026-10-17T21:41:35+00:00",
+   "lastChange": "2026-10-19T08:25:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
     "claudeRuns": 0,
-    "apiRuns": 0,
+    "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
@@ -3285,22 +3291,27 @@
    "tasks": [
     {
      "title": "matchmaker strategist",
-     "state": "running",
-     "worker": "Claude",
+     "state": "done",
+     "worker": "Claude API",
      "plan": "Redesign as rival wingmen coaching each side of a chat: bluff and counter-bluff, jokes, a messenger look.",
-     "since": "2026-10-19T08:09:00+00:00",
-     "done": null,
+     "since": "2026-10-18T17:32:39+00:00",
+     "done": "2026-10-18T17:32:39+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "Matchmaker Chat is now Wingmen:"
     }
    ],
    "verdict": null,
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-19T08:25:50+00:00",
+     "ok": true,
+     "note": "S7: rebuilt as Wingmen, a texting duel against a rival wingman ()"
+    },
     {
      "at": "2026-10-17T21:41:35+00:00",
      "ok": true,
