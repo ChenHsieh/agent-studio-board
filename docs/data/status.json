@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T02:08:06+00:00",
+ "generated": "2026-10-19T02:12:10+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -18,10 +18,10 @@
   },
   {
    "worker": "Claude",
-   "game": "walls-have-ears",
-   "task": "review of walls bugkinds",
-   "since": "2026-10-19T01:56:12+00:00",
-   "activity": "2026-10-19T02:02:30+00:00",
+   "game": "floating-city",
+   "task": "review of floating rule",
+   "since": "2026-10-19T02:11:56+00:00",
+   "activity": "2026-10-19T02:11:56+00:00",
    "commit": null
   }
  ],
@@ -51,7 +51,7 @@
   },
   {
    "day": "2026-10-18",
-   "changes": 125
+   "changes": 126
   }
  ],
  "houseRules": 15,
@@ -1721,7 +1721,7 @@
    "title": "Floating City",
    "line": "A one-minute phone game about carving a concrete city.",
    "url": "https://chenhsieh.github.io/floating-city/",
-   "stage": "review",
+   "stage": "building",
    "who": "Claude",
    "priority": "P3",
    "priorityNote": "Broken on level 2",
@@ -1741,6 +1741,20 @@
     "totalUsdEst": 47.31
    },
    "tasks": [
+    {
+     "title": "review of floating rule",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-19T02:11:56+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "floating rule",
      "state": "done",
@@ -6085,33 +6099,33 @@
    "title": "Walls Have Ears",
    "line": "Wish for tea and find which piece is listening.",
    "url": "https://chenhsieh.github.io/walls-have-ears/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Works; new bug kinds idea",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/walls-have-ears-1.webp",
-   "lastChange": "2026-10-19T00:39:44+00:00",
+   "lastChange": "2026-10-19T02:11:51+00:00",
    "cost": {
     "apiUsd": 17.73,
     "codexRuns": 2,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 1,
     "codexTokens": 317507,
     "codexUsdEst": 0.38,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 9,
     "earlierUsdEst": 32.4,
-    "totalUsdEst": 50.51
+    "totalUsdEst": 54.11
    },
    "tasks": [
     {
      "title": "review of walls bugkinds",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "",
      "since": "2026-10-19T01:56:12+00:00",
-     "done": null,
+     "done": "2026-10-19T01:56:12+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -6126,10 +6140,10 @@
      "plan": "A first scene that makes the joke land, different bug kinds with their own rules, 24+ levels, endless and daily with difficulty.",
      "since": "2026-10-18T20:13:59+00:00",
      "done": "2026-10-18T20:13:59+00:00",
-     "reviewed": false,
+     "reviewed": true,
      "minutes": 12,
      "tokens": 206559,
-     "reviewOutcome": null,
+     "reviewOutcome": "fixed",
      "commit": null,
      "result": "Added the drawn overheard-tea setup, 25 rooms, three probe kinds, and verified Daily/Endless difficulties."
     },
@@ -6167,8 +6181,13 @@
     "verdict": "revise",
     "note": "Fun but simple; joke must land"
    },
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-19T02:11:51+00:00",
+     "ok": true,
+     "note": "S8 review: Chinese names for rooms 9-25, readable Endless tiles, localized counters ()"
+    },
     {
      "at": "2026-10-19T00:39:44+00:00",
      "ok": true,
@@ -6223,11 +6242,6 @@
      "at": "2026-10-15T19:49:43+00:00",
      "ok": true,
      "note": "build start in"
-    },
-    {
-     "at": "2026-10-15T19:49:23+00:00",
-     "ok": true,
-     "note": "START job V1="
     }
    ]
   },
