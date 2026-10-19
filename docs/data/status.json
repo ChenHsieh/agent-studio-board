@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T22:21:14+00:00",
+ "generated": "2026-10-19T22:23:18+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 56,
+    "queued": 55,
     "running": 2,
-    "doneToday": 45,
-    "minutes": 2250,
-    "estimateMinutes": 1125
+    "doneToday": 46,
+    "minutes": 2210,
+    "estimateMinutes": 1105
    },
    "Claude": {
     "queued": 0,
@@ -24,16 +24,16 @@
     "estimateMinutes": 0
    }
   },
-  "queued": 56,
+  "queued": 55,
   "running": 2,
-  "doneToday": 73,
+  "doneToday": 74,
   "lanes": {
    "Codex": 2,
    "Claude": 0
   },
-  "minutesRemaining": 2250,
-  "estimatedFinish": "2026-10-20T17:06:14+00:00",
-  "estimateMinutes": 1125
+  "minutesRemaining": 2210,
+  "estimatedFinish": "2026-10-20T16:48:18+00:00",
+  "estimateMinutes": 1105
  },
  "lanes": [
   {
@@ -47,13 +47,10 @@
   {
    "worker": "Codex",
    "game": "anechoic-fugue",
-   "task": "anechoic fugue build",
-   "since": "2026-10-19T22:06:57+00:00",
-   "activity": "2026-10-19T22:20:58+00:00",
-   "commit": {
-    "at": "2026-10-19T22:20:42+00:00",
-    "subject": "feat: show koi timing on the pond"
-   }
+   "task": "anechoic fugue water",
+   "since": "2026-10-19T22:22:18+00:00",
+   "activity": "2026-10-19T22:23:18+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 2,
@@ -86,7 +83,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 58
+   "changes": 59
   }
  ],
  "houseRules": 21,
@@ -309,43 +306,26 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/anechoic-fugue-1.webp",
    "firstSeen": "2026-10-15T19:39:22+00:00",
-   "lastChange": "2026-10-19T22:20:58+00:00",
+   "lastChange": "2026-10-19T22:31:00+00:00",
    "cost": {
     "apiUsd": 17.97,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 1,
     "apiRuns": 2,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 186369,
+    "codexUsdEst": 0.22,
     "claudeUsdEst": 3.6,
     "earlierRounds": 9,
     "earlierUsdEst": 32.4,
-    "totalUsdEst": 53.97
+    "totalUsdEst": 54.19
    },
    "tasks": [
     {
-     "title": "anechoic fugue build",
+     "title": "anechoic fugue water",
      "state": "running",
      "worker": "Codex",
-     "plan": "Slow the water, show each duckling's rocking and the still seam, koi replace the floats, soft water sound, every level a new decision.",
-     "since": "2026-10-19T22:06:57+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-19T22:20:42+00:00",
-      "subject": "feat: show koi timing on the pond"
-     },
-     "result": ""
-    },
-    {
-     "title": "anechoic fugue water",
-     "state": "queued",
-     "worker": "Codex",
      "plan": "WebGL water, big two-frog ponds, rain levels with lily pads, a daily pond.",
-     "since": "2026-10-19T18:03:20+00:00",
+     "since": "2026-10-19T22:22:18+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -353,6 +333,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "anechoic fugue build",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "Slow the water, show each duckling's rocking and the still seam, koi replace the floats, soft water sound, every level a new decision.",
+     "since": "2026-10-19T18:03:20+00:00",
+     "done": "2026-10-19T18:03:20+00:00",
+     "reviewed": false,
+     "minutes": 15,
+     "tokens": 186369,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Built and committed the koi pond readout, timing controls, seams, save migration, shared components, and tests."
     },
     {
      "title": "anechoic fugue model",
@@ -400,6 +394,11 @@
    "verdict": null,
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-19T22:31:00+00:00",
+     "ok": false,
+     "note": "koi pond readout, timing controls, old-save migration, shared component checks, and local phone verification complete; publish blocked pending explicit origin approval"
+    },
     {
      "at": "2026-10-19T18:03:20+00:00",
      "ok": true,
@@ -449,11 +448,6 @@
      "at": "2026-10-15T19:39:34+00:00",
      "ok": true,
      "note": "build start in"
-    },
-    {
-     "at": "2026-10-15T19:39:22+00:00",
-     "ok": true,
-     "note": "START job V1="
     }
    ]
   },
