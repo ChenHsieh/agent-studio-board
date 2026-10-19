@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T14:51:04+00:00",
+ "generated": "2026-10-19T14:53:08+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -7,9 +7,40 @@
   "url": "https://chenhsieh.github.io/play-lab/",
   "blurb": "A small studio of browser games, built by a queue of coding agents and reviewed by another."
  },
- "lanes": [],
- "codexLanes": 1,
- "claudeWorkers": 0,
+ "lanes": [
+  {
+   "worker": "Codex",
+   "game": "cymatic-plate",
+   "task": "cymatic assist",
+   "since": "2026-10-19T14:51:26+00:00",
+   "activity": "2026-10-19T14:53:07+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Codex",
+   "game": "directory-handrail",
+   "task": "signposts manager",
+   "since": "2026-10-19T14:52:01+00:00",
+   "activity": "2026-10-19T14:53:05+00:00",
+   "commit": {
+    "at": "2026-10-19T14:52:29+00:00",
+    "subject": "start: manager-20261019"
+   }
+  },
+  {
+   "worker": "Claude",
+   "game": "grass-crossword",
+   "task": "grass prvacki",
+   "since": "2026-10-19T14:51:29+00:00",
+   "activity": "2026-10-19T14:51:46+00:00",
+   "commit": {
+    "at": "2026-10-19T14:51:49+00:00",
+    "subject": "start: S11 grass hand-drawn and credit"
+   }
+  }
+ ],
+ "codexLanes": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -1037,8 +1068,8 @@
    "title": "Cymatic Plate",
    "line": "Ring notes on a brass plate covered in sand and watch the.",
    "url": "https://chenhsieh.github.io/cymatic-plate/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
@@ -1057,6 +1088,20 @@
     "totalUsdEst": 32.48
    },
    "tasks": [
+    {
+     "title": "cymatic assist",
+     "state": "running",
+     "worker": "Codex",
+     "plan": "Remove the assist ring unless its effect is visible; keep Listen; open all levels.",
+     "since": "2026-10-19T14:51:26+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "review of cymatic ease",
      "state": "done",
@@ -1147,7 +1192,7 @@
     "verdict": "ship",
     "note": "Ready; ease the hardest steps"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-19T03:46:05+00:00",
@@ -2167,8 +2212,8 @@
    "title": "GIF Cities",
    "line": "Stack rescued GIFs down a 1999 homepage so every visitor.",
    "url": "https://chenhsieh.github.io/gif-cities/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Promising; rules need explaining",
    "shelfNote": "",
@@ -2187,6 +2232,20 @@
     "totalUsdEst": 28.97
    },
    "tasks": [
+    {
+     "title": "gif speed",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Slow default speed with a toggle, a clear progress area, meme homages from different eras, one deeper mechanism.",
+     "since": "2026-10-19T14:51:11+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "review of gif cities legible",
      "state": "done",
@@ -2369,8 +2428,8 @@
    "title": "Grass Crossword",
    "line": "A crossword dug into a garden bed, where every answer is.",
    "url": "https://chenhsieh.github.io/grass-crossword/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Claude",
    "priority": "P3",
    "priorityNote": "Source study first",
    "shelfNote": "",
@@ -2389,6 +2448,23 @@
     "totalUsdEst": 11.12
    },
    "tasks": [
+    {
+     "title": "grass prvacki",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Study the artist's practice, redraw in a hand-drawn style, keep her idea in the rules.",
+     "since": "2026-10-19T14:51:29+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": {
+      "at": "2026-10-19T14:51:49+00:00",
+      "subject": "start: S11 grass hand-drawn and credit"
+     },
+     "result": ""
+    },
     {
      "title": "review of grass source",
      "state": "done",
@@ -2419,7 +2495,7 @@
     }
    ],
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-19T00:28:06+00:00",
@@ -4251,8 +4327,8 @@
    "title": "Ribosome 2048",
    "line": "Slip reading frames to build a protein.",
    "url": "https://chenhsieh.github.io/ribosome-2048/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -4270,7 +4346,22 @@
     "earlierUsdEst": 3.6,
     "totalUsdEst": 3.6
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "ribosome core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Bring back a real merge-tile core so the name fits, or rename it.",
+     "since": "2026-10-19T14:51:11+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -4776,8 +4867,8 @@
    "title": "Signposts",
    "line": "Signposts is a short phone puzzle about hanging route.",
    "url": "https://chenhsieh.github.io/directory-handrail/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Closest to finished; fun pass",
    "shelfNote": "",
@@ -4796,6 +4887,23 @@
     "totalUsdEst": 40.74
    },
    "tasks": [
+    {
+     "title": "signposts manager",
+     "state": "running",
+     "worker": "Codex",
+     "plan": "A visible score target and takings bar, clearer happy/OK faces, real choices on every level, district previews, open levels, optional lo-fi music.",
+     "since": "2026-10-19T14:52:01+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": {
+      "at": "2026-10-19T14:52:29+00:00",
+      "subject": "start: manager-20261019"
+     },
+     "result": ""
+    },
     {
      "title": "review of signposts fun",
      "state": "done",
@@ -4840,7 +4948,7 @@
     }
    ],
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-19T00:07:51+00:00",
