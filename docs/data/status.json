@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T16:57:29+00:00",
+ "generated": "2026-10-19T16:59:31+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -7,9 +7,21 @@
   "url": "https://chenhsieh.github.io/play-lab/",
   "blurb": "A small studio of browser games, built by a queue of coding agents and reviewed by another."
  },
- "lanes": [],
+ "lanes": [
+  {
+   "worker": "Claude",
+   "game": "walls-have-ears",
+   "task": "walls thin walls",
+   "since": "2026-10-19T16:58:15+00:00",
+   "activity": "2026-10-19T16:58:41+00:00",
+   "commit": {
+    "at": "2026-10-19T16:58:43+00:00",
+    "subject": "start: S13 walls thin walls"
+   }
+  }
+ ],
  "codexLanes": 2,
- "claudeWorkers": 0,
+ "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -6388,8 +6400,8 @@
    "title": "Walls Have Ears",
    "line": "Wish for tea and find which piece is listening.",
    "url": "https://chenhsieh.github.io/walls-have-ears/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Works; new bug kinds idea",
    "shelfNote": "",
@@ -6408,6 +6420,23 @@
     "totalUsdEst": 64.91
    },
    "tasks": [
+    {
+     "title": "walls thin walls",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Build the Thin Walls chapter properly: introduced step by step, every room a new decision.",
+     "since": "2026-10-19T16:58:15+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": {
+      "at": "2026-10-19T16:58:43+00:00",
+      "subject": "start: S13 walls thin walls"
+     },
+     "result": ""
+    },
     {
      "title": "walls rebuild",
      "state": "done",
@@ -6484,7 +6513,7 @@
     "verdict": "revise",
     "note": "Fun but simple; joke must land"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-19T16:20:04+00:00",
