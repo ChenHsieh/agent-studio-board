@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T16:18:55+00:00",
+ "generated": "2026-10-19T16:20:58+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -8,17 +8,6 @@
   "blurb": "A small studio of browser games, built by a queue of coding agents and reviewed by another."
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "walls-have-ears",
-   "task": "walls rebuild",
-   "since": "2026-10-19T15:40:19+00:00",
-   "activity": "2026-10-19T15:52:16+00:00",
-   "commit": {
-    "at": "2026-10-19T15:52:09+00:00",
-    "subject": "fix: the level list keeps only the eight real rooms; the next chapters show as previews"
-   }
-  },
   {
    "worker": "Claude",
    "game": "directory-handrail",
@@ -40,12 +29,12 @@
    "game": "gif-cities",
    "task": "review of gif speed",
    "since": "2026-10-19T16:09:49+00:00",
-   "activity": "2026-10-19T16:18:54+00:00",
+   "activity": "2026-10-19T16:19:25+00:00",
    "commit": null
   }
  ],
  "codexLanes": 2,
- "claudeWorkers": 4,
+ "claudeWorkers": 3,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -74,7 +63,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 13
+   "changes": 14
   }
  ],
  "houseRules": 16,
@@ -6379,42 +6368,39 @@
    "title": "Walls Have Ears",
    "line": "Wish for tea and find which piece is listening.",
    "url": "https://chenhsieh.github.io/walls-have-ears/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Works; new bug kinds idea",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/walls-have-ears-1.webp",
-   "lastChange": "2026-10-19T03:30:04+00:00",
+   "lastChange": "2026-10-19T16:20:04+00:00",
    "cost": {
     "apiUsd": 17.73,
     "codexRuns": 2,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 1,
     "codexTokens": 317507,
     "codexUsdEst": 0.38,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 11,
     "earlierUsdEst": 39.6,
-    "totalUsdEst": 61.31
+    "totalUsdEst": 64.91
    },
    "tasks": [
     {
      "title": "walls rebuild",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Rebuild the second chapter: each new bug kind introduced one at a time, rooms that differ, every level a new decision.",
-     "since": "2026-10-19T15:40:19+00:00",
-     "done": null,
+     "since": "2026-10-19T15:38:56+00:00",
+     "done": "2026-10-19T15:38:56+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-19T15:52:09+00:00",
-      "subject": "fix: the level list keeps only the eight real rooms; the next chapters show as previews"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Walls Have Ears now lists only the eight real rooms plus today's room, all open; rooms 9-25 and the phone-made Daily/Endless are off the list, and two drawn previews (Thin Walls, Eyes and phones) say \"coming soon\"."
     },
     {
      "title": "review of walls bugkinds",
@@ -6478,8 +6464,13 @@
     "verdict": "revise",
     "note": "Fun but simple; joke must land"
    },
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-19T16:20:04+00:00",
+     "ok": true,
+     "note": "rooms 9-25 and phone-made modes hidden (no decision), chapter previews, all rooms open"
+    },
     {
      "at": "2026-10-19T03:30:04+00:00",
      "ok": true,
@@ -6534,11 +6525,6 @@
      "at": "2026-10-15T21:06:29+00:00",
      "ok": true,
      "note": "LIVE https://chenhsieh.github.io/walls-have-ears/ (auto, 17:06)"
-    },
-    {
-     "at": "2026-10-15T20:51:31+00:00",
-     "ok": true,
-     "note": "playable gate PASS round 2"
     }
    ]
   },
