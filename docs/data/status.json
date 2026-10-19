@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T08:59:21+00:00",
+ "generated": "2026-10-19T09:01:24+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -7,21 +7,9 @@
   "url": "https://chenhsieh.github.io/play-lab/",
   "blurb": "A small studio of browser games, built by a queue of coding agents and reviewed by another."
  },
- "lanes": [
-  {
-   "worker": "Claude",
-   "game": "chai-boil",
-   "task": "chai potion",
-   "since": "2026-10-19T08:50:40+00:00",
-   "activity": "2026-10-19T08:59:17+00:00",
-   "commit": {
-    "at": "2026-10-19T08:59:13+00:00",
-    "subject": "feat: customers order ginger, milk or sugar, and each changes how the chai foams"
-   }
-  }
- ],
+ "lanes": [],
  "codexLanes": 1,
- "claudeWorkers": 1,
+ "claudeWorkers": 0,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -50,7 +38,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 5
+   "changes": 6
   }
  ],
  "houseRules": 15,
@@ -554,18 +542,18 @@
    "title": "Chai Boil",
    "line": "One pot, one dial: let the chai rise to the rim, not over it.",
    "url": "https://chenhsieh.github.io/chai-boil/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Potion-making direction",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/chai-boil-1.webp",
-   "lastChange": "2026-10-17T21:41:35+00:00",
+   "lastChange": "2026-10-19T09:00:44+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 0,
     "claudeRuns": 0,
-    "apiRuns": 1,
+    "apiRuns": 2,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
@@ -576,20 +564,17 @@
    "tasks": [
     {
      "title": "chai potion",
-     "state": "running",
-     "worker": "Claude",
+     "state": "done",
+     "worker": "Claude API",
      "plan": "Turn the balance toy into potion making: ingredients, a small story, the same tactile pour.",
-     "since": "2026-10-19T08:50:40+00:00",
-     "done": null,
+     "since": "2026-10-18T15:08:38+00:00",
+     "done": "2026-10-18T15:08:38+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-19T08:59:13+00:00",
-      "subject": "feat: customers order ginger, milk or sugar, and each changes how the chai foams"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Chai Boil now has customers who order ginger, milk or sugar with a picture, ingredients that change how the foam behaves, tips, and a recipe book."
     },
     {
      "title": "chai boil",
@@ -607,8 +592,13 @@
     }
    ],
    "verdict": null,
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-19T09:00:44+00:00",
+     "ok": true,
+     "note": "S4: picture orders, ginger/milk/sugar change the foam, tips, recipe book ()"
+    },
     {
      "at": "2026-10-17T21:41:35+00:00",
      "ok": true,
