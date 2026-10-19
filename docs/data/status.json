@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T02:14:13+00:00",
+ "generated": "2026-10-19T02:16:15+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,10 +10,10 @@
  "lanes": [
   {
    "worker": "Claude",
-   "game": "floating-city",
-   "task": "review of floating rule",
-   "since": "2026-10-19T02:11:56+00:00",
-   "activity": "2026-10-19T02:13:23+00:00",
+   "game": "dough-boundary",
+   "task": "review of dough twist",
+   "since": "2026-10-19T02:15:49+00:00",
+   "activity": "2026-10-19T02:15:49+00:00",
    "commit": null
   }
  ],
@@ -43,7 +43,7 @@
   },
   {
    "day": "2026-10-18",
-   "changes": 126
+   "changes": 127
   }
  ],
  "houseRules": 15,
@@ -1269,7 +1269,7 @@
    "title": "Dough Boundary",
    "line": "Press one dough patch into a touching dough patch.",
    "url": "https://chenhsieh.github.io/dough-boundary/",
-   "stage": "review",
+   "stage": "building",
    "who": "Claude",
    "priority": "P3",
    "priorityNote": "Goal and colour chart",
@@ -1289,6 +1289,20 @@
     "totalUsdEst": 39.46
    },
    "tasks": [
+    {
+     "title": "review of dough twist",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-19T02:15:49+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "dough twist",
      "state": "done",
@@ -1713,33 +1727,33 @@
    "title": "Floating City",
    "line": "A one-minute phone game about carving a concrete city.",
    "url": "https://chenhsieh.github.io/floating-city/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Broken on level 2",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/floating-city-1.webp",
-   "lastChange": "2026-10-18T21:52:36+00:00",
+   "lastChange": "2026-10-19T02:14:50+00:00",
    "cost": {
     "apiUsd": 10.87,
     "codexRuns": 2,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 364640,
     "codexUsdEst": 0.44,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 9,
     "earlierUsdEst": 32.4,
-    "totalUsdEst": 47.31
+    "totalUsdEst": 50.91
    },
    "tasks": [
     {
      "title": "review of floating rule",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "",
      "since": "2026-10-19T02:11:56+00:00",
-     "done": null,
+     "done": "2026-10-19T02:11:56+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -1754,7 +1768,7 @@
      "plan": "Show which boxes can float before the tap, teach it with a looping demo, and explain wrong taps.",
      "since": "2026-10-18T20:13:39+00:00",
      "done": "2026-10-18T20:13:39+00:00",
-     "reviewed": false,
+     "reviewed": true,
      "minutes": 12,
      "tokens": 164821,
      "reviewOutcome": null,
@@ -1795,8 +1809,13 @@
     "verdict": "revise",
     "note": "Works; floating rule unclear"
    },
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-19T02:14:50+00:00",
+     "ok": true,
+     "note": "R15 review: published the unpushed Codex branch, teal floatable cue live ()"
+    },
     {
      "at": "2026-10-18T21:52:36+00:00",
      "ok": false,
@@ -1851,11 +1870,6 @@
      "at": "2026-10-15T19:00:00+00:00",
      "ok": true,
      "note": "build start in"
-    },
-    {
-     "at": "2026-10-15T18:59:22+00:00",
-     "ok": true,
-     "note": "START job V1="
     }
    ]
   },
