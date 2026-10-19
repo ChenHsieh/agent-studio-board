@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T23:31:11+00:00",
+ "generated": "2026-10-19T23:33:14+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 51,
+    "queued": 50,
     "running": 2,
-    "doneToday": 50,
-    "minutes": 2050,
-    "estimateMinutes": 1025
+    "doneToday": 51,
+    "minutes": 2010,
+    "estimateMinutes": 1005
    },
    "Claude": {
     "queued": 0,
@@ -24,36 +24,36 @@
     "estimateMinutes": 0
    }
   },
-  "queued": 51,
+  "queued": 50,
   "running": 2,
-  "doneToday": 78,
+  "doneToday": 79,
   "lanes": {
    "Codex": 2,
    "Claude": 0
   },
-  "minutesRemaining": 2050,
-  "estimatedFinish": "2026-10-20T16:36:11+00:00",
-  "estimateMinutes": 1025
+  "minutesRemaining": 2010,
+  "estimatedFinish": "2026-10-20T16:18:14+00:00",
+  "estimateMinutes": 1005
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "Multiple games",
-   "task": "review followups 2",
-   "since": null,
-   "activity": null,
-   "commit": null
-  },
   {
    "worker": "Codex",
    "game": "readable-nonsense",
    "task": "readable nonsense shrink",
    "since": "2026-10-19T23:21:25+00:00",
-   "activity": "2026-10-19T23:30:25+00:00",
+   "activity": "2026-10-19T23:32:58+00:00",
    "commit": {
     "at": "2026-10-19T23:22:19+00:00",
     "subject": "start: P2c09_readable-nonsense-shrink"
    }
+  },
+  {
+   "worker": "Codex",
+   "game": "tractatus-tree",
+   "task": "tractatus tree wittgenstein",
+   "since": "2026-10-19T23:32:37+00:00",
+   "activity": "2026-10-19T23:33:14+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 2,
@@ -86,7 +86,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 62
+   "changes": 64
   }
  ],
  "houseRules": 21,
@@ -1881,7 +1881,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/drawing-circles-1.webp",
    "firstSeen": "2026-10-15T18:59:22+00:00",
-   "lastChange": "2026-10-19T20:36:45+00:00",
+   "lastChange": "2026-10-19T23:31:14+00:00",
    "cost": {
     "apiUsd": 12.59,
     "codexRuns": 4,
@@ -1890,9 +1890,9 @@
     "codexTokens": 1359845,
     "codexUsdEst": 1.63,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
-    "totalUsdEst": 57.42
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
+    "totalUsdEst": 61.02
    },
    "tasks": [
     {
@@ -2002,6 +2002,11 @@
    "needsYou": null,
    "history": [
     {
+     "at": "2026-10-19T23:31:14+00:00",
+     "ok": true,
+     "note": "Motion off freezes the chain, daily progress survives reload, restored regressions pass, and the live Pages build is clear at 390x844 and 320x844"
+    },
+    {
      "at": "2026-10-19T20:36:45+00:00",
      "ok": true,
      "note": "superseded browser checks retired from the runner and the maintained suite is live; 390x844 and 320x568 checks passed"
@@ -2055,11 +2060,6 @@
      "at": "2026-10-16T08:22:54+00:00",
      "ok": true,
      "note": "IMPROVED 8/8"
-    },
-    {
-     "at": "2026-10-15T20:27:40+00:00",
-     "ok": true,
-     "note": "LIVE https://chenhsieh.github.io/drawing-circles/ (auto, 16:27)"
     }
    ]
   },
@@ -5365,7 +5365,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/remote-viewer-1.webp",
    "firstSeen": "2026-10-17T16:38:08+00:00",
-   "lastChange": "2026-10-19T20:36:45+00:00",
+   "lastChange": "2026-10-19T23:31:14+00:00",
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 1,
@@ -5374,9 +5374,9 @@
     "codexTokens": 245568,
     "codexUsdEst": 0.29,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 1,
-    "earlierUsdEst": 3.6,
-    "totalUsdEst": 20.33
+    "earlierRounds": 2,
+    "earlierUsdEst": 7.2,
+    "totalUsdEst": 23.93
    },
    "tasks": [
     {
@@ -5429,6 +5429,11 @@
    },
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-19T23:31:14+00:00",
+     "ok": true,
+     "note": "daily files now require two clue words, compact reading space is clear at 390x844 and 320x844, and the live Pages build is published"
+    },
     {
      "at": "2026-10-19T20:36:45+00:00",
      "ok": false,
@@ -7559,14 +7564,14 @@
    "title": "Tractatus Tree",
    "line": "The numbered pages of a 1921 book are shuffled into a few.",
    "url": "https://chenhsieh.github.io/tractatus-tree/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Teach the philosophy gradually through play, not as homework",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/tractatus-tree-1.webp",
    "firstSeen": "2026-10-16T02:14:42+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-19T23:33:14+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -7582,10 +7587,10 @@
    "tasks": [
     {
      "title": "tractatus tree wittgenstein",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Teach the philosophy gradually through play, not as homework.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "since": "2026-10-19T23:32:37+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -8389,7 +8394,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/readable-nonsense-1.webp",
    "firstSeen": "2026-10-16T00:29:52+00:00",
-   "lastChange": "2026-10-19T23:30:25+00:00",
+   "lastChange": "2026-10-19T23:32:58+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 0,
