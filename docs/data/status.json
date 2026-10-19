@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T23:39:24+00:00",
+ "generated": "2026-10-19T23:41:27+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 50,
+    "queued": 49,
     "running": 2,
-    "doneToday": 51,
-    "minutes": 2010,
-    "estimateMinutes": 1005
+    "doneToday": 52,
+    "minutes": 1970,
+    "estimateMinutes": 985
    },
    "Claude": {
     "queued": 0,
@@ -24,39 +24,36 @@
     "estimateMinutes": 0
    }
   },
-  "queued": 50,
+  "queued": 49,
   "running": 2,
-  "doneToday": 79,
+  "doneToday": 80,
   "lanes": {
    "Codex": 2,
    "Claude": 0
   },
-  "minutesRemaining": 2010,
-  "estimatedFinish": "2026-10-20T16:24:24+00:00",
-  "estimateMinutes": 1005
+  "minutesRemaining": 1970,
+  "estimatedFinish": "2026-10-20T16:06:27+00:00",
+  "estimateMinutes": 985
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "readable-nonsense",
-   "task": "readable nonsense shrink",
-   "since": "2026-10-19T23:21:25+00:00",
-   "activity": "2026-10-19T23:39:16+00:00",
-   "commit": {
-    "at": "2026-10-19T23:35:25+00:00",
-    "subject": "feat: make every stamp cut A-ma's shelf"
-   }
-  },
   {
    "worker": "Codex",
    "game": "tractatus-tree",
    "task": "tractatus tree wittgenstein",
    "since": "2026-10-19T23:32:37+00:00",
-   "activity": "2026-10-19T23:39:23+00:00",
+   "activity": "2026-10-19T23:40:36+00:00",
    "commit": {
     "at": "2026-10-19T23:33:31+00:00",
     "subject": "start: P2c10_tractatus-tree-wittgenstein"
    }
+  },
+  {
+   "worker": "Codex",
+   "game": "telephone-of-babel",
+   "task": "telephone of babel balance",
+   "since": "2026-10-19T23:41:10+00:00",
+   "activity": "2026-10-19T23:41:22+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 2,
@@ -89,7 +86,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 64
+   "changes": 65
   }
  ],
  "houseRules": 21,
@@ -6864,14 +6861,14 @@
    "title": "Telephone of Babel",
    "line": "",
    "url": "https://chenhsieh.github.io/telephone-of-babel/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Remix around languages meeting and the balance that keeps",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/telephone-of-babel-1.webp",
    "firstSeen": "2026-10-16T00:30:37+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-19T23:41:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -6887,10 +6884,10 @@
    "tasks": [
     {
      "title": "telephone of babel balance",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Remix around languages meeting and the balance that keeps the tower standing.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "since": "2026-10-19T23:41:10+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -7574,7 +7571,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/tractatus-tree-1.webp",
    "firstSeen": "2026-10-16T02:14:42+00:00",
-   "lastChange": "2026-10-19T23:39:23+00:00",
+   "lastChange": "2026-10-19T23:40:36+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -8393,48 +8390,50 @@
    "title": "阿嬤讀得出來",
    "line": "A famous Tang poem line is printed as fake glyphs with.",
    "url": "https://chenhsieh.github.io/readable-nonsense/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Show the candidate set shrinking, use best not par, make",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/readable-nonsense-1.webp",
    "firstSeen": "2026-10-16T00:29:52+00:00",
-   "lastChange": "2026-10-19T23:39:16+00:00",
+   "lastChange": "2026-10-19T23:40:01+00:00",
    "cost": {
     "apiUsd": 2.95,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 0,
     "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 209548,
+    "codexUsdEst": 0.25,
     "claudeUsdEst": 0.0,
     "earlierRounds": 5,
     "earlierUsdEst": 18.0,
-    "totalUsdEst": 20.95
+    "totalUsdEst": 21.2
    },
    "tasks": [
     {
      "title": "readable nonsense shrink",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Show the candidate set shrinking, use best not par, make narrowing a strategy, name Zhuyin properly.",
-     "since": "2026-10-19T23:21:25+00:00",
-     "done": null,
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 20,
+     "tokens": 209548,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-19T23:35:25+00:00",
-      "subject": "feat: make every stamp cut A-ma's shelf"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Each stamp now visibly cuts A-ma’s candidate shelf; best routes, Zhuyin context, and distinct level decisions are clear."
     }
    ],
    "verdict": null,
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-19T23:40:01+00:00",
+     "ok": true,
+     "note": "candidate-cut strategy, proportional shelf progress, Taiwan Zhuyin context, old-save coverage, and live 390x844 plus 320x568 touch checks published"
+    },
     {
      "at": "2026-10-18T11:36:29+00:00",
      "ok": true,
