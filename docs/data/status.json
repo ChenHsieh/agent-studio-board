@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T19:10:14+00:00",
+ "generated": "2026-10-19T19:12:17+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 77,
+    "queued": 76,
     "running": 2,
-    "doneToday": 22,
-    "minutes": 3070,
-    "estimateMinutes": 1535
+    "doneToday": 23,
+    "minutes": 3030,
+    "estimateMinutes": 1515
    },
    "Claude": {
     "queued": 0,
@@ -24,39 +24,36 @@
     "estimateMinutes": 0
    }
   },
-  "queued": 77,
+  "queued": 76,
   "running": 2,
-  "doneToday": 39,
+  "doneToday": 40,
   "lanes": {
    "Codex": 2,
    "Claude": 0
   },
-  "minutesRemaining": 3070,
-  "estimatedFinish": "2026-10-20T20:45:14+00:00",
-  "estimateMinutes": 1535
+  "minutesRemaining": 3030,
+  "estimatedFinish": "2026-10-20T20:27:17+00:00",
+  "estimateMinutes": 1515
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "fool-the-algorithm",
-   "task": "fool the algorithm distance bars",
-   "since": "2026-10-19T18:48:56+00:00",
-   "activity": "2026-10-19T19:10:13+00:00",
-   "commit": {
-    "at": "2026-10-19T19:08:03+00:00",
-    "subject": "feat: show route choices at a glance"
-   }
-  },
   {
    "worker": "Codex",
    "game": "gif-cities",
    "task": "gif cities flagship round",
    "since": "2026-10-19T18:59:13+00:00",
-   "activity": "2026-10-19T19:10:12+00:00",
+   "activity": "2026-10-19T19:12:16+00:00",
    "commit": {
     "at": "2026-10-19T19:09:10+00:00",
     "subject": "feat: make visitor runs touchable"
    }
+  },
+  {
+   "worker": "Codex",
+   "game": "drawing-circles",
+   "task": "drawing circles flagship round",
+   "since": "2026-10-19T19:11:32+00:00",
+   "activity": "2026-10-19T19:12:09+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 2,
@@ -89,7 +86,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 30
+   "changes": 31
   }
  ],
  "houseRules": 21,
@@ -1822,14 +1819,14 @@
    "title": "Drawing Circles",
    "line": "Stack gears until the puppy's leash goes slack.",
    "url": "https://chenhsieh.github.io/drawing-circles/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Flagship polish round: level 9 difficulty, How to play",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/drawing-circles-1.webp",
    "firstSeen": "2026-10-15T18:59:22+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-19T19:12:09+00:00",
    "cost": {
     "apiUsd": 12.59,
     "codexRuns": 3,
@@ -1845,10 +1842,10 @@
    "tasks": [
     {
      "title": "drawing circles flagship round",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Flagship polish round: level 9 difficulty, How to play pages that each say something new, collectible sketchbook cards.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "since": "2026-10-19T19:11:32+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2818,7 +2815,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/gif-cities-1.webp",
    "firstSeen": "2026-10-16T02:37:00+00:00",
-   "lastChange": "2026-10-19T19:10:12+00:00",
+   "lastChange": "2026-10-19T19:12:16+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -6912,43 +6909,40 @@
    "title": "The Forager",
    "line": "Change letters to widen the greedy gap.",
    "url": "https://chenhsieh.github.io/fool-the-algorithm/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Show per-path distance bars and named berries, lay the two",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/fool-the-algorithm-1.webp",
    "firstSeen": "2026-10-16T07:50:19+00:00",
-   "lastChange": "2026-10-19T19:10:13+00:00",
+   "lastChange": "2026-10-19T19:11:11+00:00",
    "cost": {
     "apiUsd": 10.18,
-    "codexRuns": 2,
+    "codexRuns": 3,
     "claudeRuns": 2,
     "apiRuns": 1,
-    "codexTokens": 629115,
-    "codexUsdEst": 0.75,
+    "codexTokens": 874871,
+    "codexUsdEst": 1.05,
     "claudeUsdEst": 7.2,
     "earlierRounds": 3,
     "earlierUsdEst": 10.8,
-    "totalUsdEst": 28.93
+    "totalUsdEst": 29.23
    },
    "tasks": [
     {
      "title": "fool the algorithm distance bars",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Show per-path distance bars and named berries, lay the two routes out as lines under the board, add more simple rival strategies.",
-     "since": "2026-10-19T18:48:56+00:00",
-     "done": null,
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 23,
+     "tokens": 245756,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-19T19:08:03+00:00",
-      "subject": "feat: show route choices at a glance"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Named berries, next-flight distance bars, route ledgers, arrival-based Next steps, and optional random-walk Moss are live."
     },
     {
      "title": "review of forager feel",
@@ -7028,6 +7022,11 @@
    },
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-19T19:11:11+00:00",
+     "ok": true,
+     "note": "named berry routes, next-flight distance bars, and arrival steps live"
+    },
     {
      "at": "2026-10-19T17:22:41+00:00",
      "ok": true,
