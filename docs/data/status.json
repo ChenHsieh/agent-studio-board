@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T22:33:34+00:00",
+ "generated": "2026-10-19T22:35:46+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 55,
+    "queued": 54,
     "running": 2,
-    "doneToday": 46,
-    "minutes": 2210,
-    "estimateMinutes": 1105
+    "doneToday": 47,
+    "minutes": 2170,
+    "estimateMinutes": 1085
    },
    "Claude": {
     "queued": 0,
@@ -24,16 +24,16 @@
     "estimateMinutes": 0
    }
   },
-  "queued": 55,
+  "queued": 54,
   "running": 2,
-  "doneToday": 74,
+  "doneToday": 75,
   "lanes": {
    "Codex": 2,
    "Claude": 0
   },
-  "minutesRemaining": 2210,
-  "estimatedFinish": "2026-10-20T16:58:34+00:00",
-  "estimateMinutes": 1105
+  "minutesRemaining": 2170,
+  "estimatedFinish": "2026-10-20T16:40:46+00:00",
+  "estimateMinutes": 1085
  },
  "lanes": [
   {
@@ -46,11 +46,14 @@
   },
   {
    "worker": "Codex",
-   "game": "anechoic-fugue",
-   "task": "anechoic fugue water",
-   "since": "2026-10-19T22:22:18+00:00",
-   "activity": "2026-10-19T22:33:28+00:00",
-   "commit": null
+   "game": "matchmaker-chat",
+   "task": "matchmaker chat arms race",
+   "since": "2026-10-19T22:34:48+00:00",
+   "activity": "2026-10-19T22:35:46+00:00",
+   "commit": {
+    "at": "2026-10-19T22:35:31+00:00",
+    "subject": "start: P2c06_matchmaker-chat-arms-race"
+   }
   }
  ],
  "codexLanes": 2,
@@ -299,41 +302,27 @@
    "title": "Anechoic Fugue",
    "line": "Place speakers so the sleeper's chair goes quiet.",
    "url": "https://chenhsieh.github.io/anechoic-fugue/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Decide the physical model and its on-screen readout, choose",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/anechoic-fugue-1.webp",
    "firstSeen": "2026-10-15T19:39:22+00:00",
-   "lastChange": "2026-10-19T22:33:28+00:00",
+   "lastChange": "2026-10-19T22:31:00+00:00",
    "cost": {
     "apiUsd": 17.97,
-    "codexRuns": 1,
+    "codexRuns": 2,
     "claudeRuns": 1,
     "apiRuns": 2,
-    "codexTokens": 186369,
-    "codexUsdEst": 0.22,
+    "codexTokens": 373040,
+    "codexUsdEst": 0.45,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 9,
-    "earlierUsdEst": 32.4,
-    "totalUsdEst": 54.19
+    "earlierRounds": 8,
+    "earlierUsdEst": 28.8,
+    "totalUsdEst": 50.82
    },
    "tasks": [
-    {
-     "title": "anechoic fugue water",
-     "state": "running",
-     "worker": "Codex",
-     "plan": "WebGL water, big two-frog ponds, rain levels with lily pads, a daily pond.",
-     "since": "2026-10-19T22:22:18+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "anechoic fugue build",
      "state": "done",
@@ -347,6 +336,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Built and committed the koi pond readout, timing controls, seams, save migration, shared components, and tests."
+    },
+    {
+     "title": "anechoic fugue water",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "WebGL water, big two-frog ponds, rain levels with lily pads, a daily pond.",
+     "since": "2026-10-19T18:03:20+00:00",
+     "done": "2026-10-19T18:03:20+00:00",
+     "reviewed": false,
+     "minutes": 12,
+     "tokens": 186671,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Implemented and committed on `codex-water-`."
     },
     {
      "title": "anechoic fugue model",
@@ -392,7 +395,7 @@
     }
    ],
    "verdict": null,
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
     {
      "at": "2026-10-19T22:31:00+00:00",
@@ -4247,14 +4250,14 @@
    "title": "Matchmaker Chat",
    "line": "Auntie sends a photo of a boy, then picture clues one.",
    "url": "https://chenhsieh.github.io/matchmaker-chat/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Turn the rival-wingmen idea into a visual arms-race puzzle",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/matchmaker-chat-1.webp",
    "firstSeen": "2026-10-15T21:39:26+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-19T22:35:46+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -4270,16 +4273,19 @@
    "tasks": [
     {
      "title": "matchmaker chat arms race",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Turn the rival-wingmen idea into a visual arms-race puzzle instead of a text chat.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "since": "2026-10-19T22:34:48+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-19T22:35:31+00:00",
+      "subject": "start: P2c06_matchmaker-chat-arms-race"
+     },
      "result": ""
     },
     {
