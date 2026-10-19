@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T20:54:54+00:00",
+ "generated": "2026-10-19T20:56:57+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -19,20 +19,20 @@
    "Claude": {
     "queued": 0,
     "running": 1,
-    "doneToday": 26,
+    "doneToday": 27,
     "minutes": 60,
     "estimateMinutes": 60
    }
   },
   "queued": 66,
   "running": 3,
-  "doneToday": 60,
+  "doneToday": 61,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
   "minutesRemaining": 2690,
-  "estimatedFinish": "2026-10-20T18:49:54+00:00",
+  "estimatedFinish": "2026-10-20T18:51:57+00:00",
   "estimateMinutes": 1315
  },
  "lanes": [
@@ -41,10 +41,10 @@
    "game": "fold-guess",
    "task": "fold guess bio round",
    "since": "2026-10-19T20:38:40+00:00",
-   "activity": "2026-10-19T20:54:52+00:00",
+   "activity": "2026-10-19T20:56:52+00:00",
    "commit": {
-    "at": "2026-10-19T20:39:31+00:00",
-    "subject": "start: P1c14_fold-guess-bio-round"
+    "at": "2026-10-19T20:55:59+00:00",
+    "subject": "feat: read protein traces case by case"
    }
   },
   {
@@ -52,18 +52,18 @@
    "game": "local-hero",
    "task": "local hero bio round",
    "since": "2026-10-19T20:46:57+00:00",
-   "activity": "2026-10-19T20:54:51+00:00",
+   "activity": "2026-10-19T20:56:55+00:00",
    "commit": {
-    "at": "2026-10-19T20:47:49+00:00",
-    "subject": "start: P1c15_local-hero-bio-round"
+    "at": "2026-10-19T20:56:46+00:00",
+    "subject": "feat: show the shared island target"
    }
   },
   {
    "worker": "Claude",
-   "game": "sockglass",
-   "task": "review of sockglass clarity",
-   "since": "2026-10-19T20:54:31+00:00",
-   "activity": "2026-10-19T20:54:31+00:00",
+   "game": "align-hero",
+   "task": "review of align hero bio round",
+   "since": "2026-10-19T20:56:29+00:00",
+   "activity": "2026-10-19T20:56:29+00:00",
    "commit": null
   }
  ],
@@ -244,14 +244,14 @@
    "title": "Align Hero",
    "line": "Two lines of letters, one slipped. Find where it slipped.",
    "url": "https://chenhsieh.github.io/align-hero/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/align-hero-1.webp",
    "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-19T20:32:55+00:00",
+   "lastChange": "2026-10-19T20:56:29+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -265,6 +265,20 @@
     "totalUsdEst": 0.26
    },
    "tasks": [
+    {
+     "title": "review of align hero bio round",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-19T20:56:29+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "align hero bio round",
      "state": "done",
@@ -2782,7 +2796,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/fold-guess-1.webp",
    "firstSeen": "2026-10-19T20:38:40+00:00",
-   "lastChange": "2026-10-19T20:54:52+00:00",
+   "lastChange": "2026-10-19T20:56:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -2808,8 +2822,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-19T20:39:31+00:00",
-      "subject": "start: P1c14_fold-guess-bio-round"
+      "at": "2026-10-19T20:55:59+00:00",
+      "subject": "feat: read protein traces case by case"
      },
      "result": ""
     }
@@ -4005,7 +4019,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/local-hero-1.webp",
    "firstSeen": "2026-10-19T20:46:57+00:00",
-   "lastChange": "2026-10-19T20:54:51+00:00",
+   "lastChange": "2026-10-19T20:56:55+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -4031,8 +4045,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-19T20:47:49+00:00",
-      "subject": "start: P1c15_local-hero-bio-round"
+      "at": "2026-10-19T20:56:46+00:00",
+      "subject": "feat: show the shared island target"
      },
      "result": ""
     }
@@ -6466,8 +6480,8 @@
    "title": "Sockglass",
    "line": "Drag tissue-paper socks onto a dark bedroom window; where.",
    "url": "https://chenhsieh.github.io/sockglass/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Make sock sizes and counts readable and let the theme",
    "shelfNote": "",
@@ -6477,23 +6491,23 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 170850,
     "codexUsdEst": 0.21,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 2,
+    "earlierUsdEst": 7.2,
     "totalUsdEst": 11.01
    },
    "tasks": [
     {
      "title": "review of sockglass clarity",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "",
      "since": "2026-10-19T20:54:31+00:00",
-     "done": null,
+     "done": "2026-10-19T20:54:31+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -6508,7 +6522,7 @@
      "plan": "Make sock sizes and counts readable and let the theme explain why socks go on the window.",
      "since": "2026-10-19T17:54:51+00:00",
      "done": "2026-10-19T17:54:51+00:00",
-     "reviewed": false,
+     "reviewed": true,
      "minutes": 15,
      "tokens": 170850,
      "reviewOutcome": null,
