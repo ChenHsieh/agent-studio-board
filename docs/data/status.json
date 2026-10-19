@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T08:41:05+00:00",
+ "generated": "2026-10-19T08:43:08+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,13 +10,13 @@
  "lanes": [
   {
    "worker": "Claude",
-   "game": "anechoic-fugue",
-   "task": "anechoic rethink",
-   "since": "2026-10-19T08:25:50+00:00",
-   "activity": "2026-10-19T08:39:49+00:00",
+   "game": "beetle-in-a-box",
+   "task": "beetle bouba",
+   "since": "2026-10-19T08:41:23+00:00",
+   "activity": "2026-10-19T08:42:27+00:00",
    "commit": {
-    "at": "2026-10-19T08:39:45+00:00",
-    "subject": "test: the held-float check reads the live pond preview"
+    "at": "2026-10-19T08:42:27+00:00",
+    "subject": "start: Beetle in a Box with sound symbolism"
    }
   }
  ],
@@ -50,7 +50,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 3
+   "changes": 4
   }
  ],
  "houseRules": 15,
@@ -153,18 +153,18 @@
    "title": "Anechoic Fugue",
    "line": "Place speakers so the sleeper's chair goes quiet.",
    "url": "https://chenhsieh.github.io/anechoic-fugue/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Core mechanism unclear",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/anechoic-fugue-1.webp",
-   "lastChange": "2026-10-18T09:31:43+00:00",
+   "lastChange": "2026-10-19T08:41:22+00:00",
    "cost": {
     "apiUsd": 17.97,
     "codexRuns": 0,
     "claudeRuns": 0,
-    "apiRuns": 1,
+    "apiRuns": 2,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
@@ -175,20 +175,17 @@
    "tasks": [
     {
      "title": "anechoic rethink",
-     "state": "running",
-     "worker": "Claude",
+     "state": "done",
+     "worker": "Claude API",
      "plan": "Rethink the core: find an object whose way of cancelling noise reads at a glance, then rebuild the hard levels around it.",
-     "since": "2026-10-19T08:25:50+00:00",
-     "done": null,
+     "since": "2026-10-18T15:39:00+00:00",
+     "done": "2026-10-18T15:39:00+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-19T08:39:45+00:00",
-      "subject": "test: the held-float check reads the live pond preview"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Anechoic Fugue is now a pond:"
     },
     {
      "title": "anechoic fugue",
@@ -206,8 +203,13 @@
     }
    ],
    "verdict": null,
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-19T08:41:22+00:00",
+     "ok": true,
+     "note": "S1: pond rethink published (frog, ducklings, float that flips; live preview) ()"
+    },
     {
      "at": "2026-10-18T09:31:43+00:00",
      "ok": true,
@@ -295,7 +297,7 @@
    "title": "Beetle in a Box",
    "line": "",
    "url": "https://chenhsieh.github.io/beetle-in-a-box/",
-   "stage": "planning",
+   "stage": "building",
    "who": "Claude",
    "priority": "P3",
    "priorityNote": "Sound-symbolism direction",
@@ -317,16 +319,19 @@
    "tasks": [
     {
      "title": "beetle bouba",
-     "state": "planned",
+     "state": "running",
      "worker": "Claude",
      "plan": "Research sound symbolism (bouba/kiki) and test a version where well-chosen made-up words are understood and random ones are not.",
-     "since": "2026-10-18T15:08:38+00:00",
+     "since": "2026-10-19T08:41:23+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-19T08:42:27+00:00",
+      "subject": "start: Beetle in a Box with sound symbolism"
+     },
      "result": ""
     },
     {
