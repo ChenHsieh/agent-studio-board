@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T17:54:30+00:00",
+ "generated": "2026-10-19T17:56:32+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -13,7 +13,7 @@
    "game": "floor-area",
    "task": "bake credit gpt 5",
    "since": "2026-10-19T17:54:07+00:00",
-   "activity": "2026-10-19T17:54:07+00:00",
+   "activity": "2026-10-19T17:56:18+00:00",
    "commit": null
   },
   {
@@ -21,12 +21,20 @@
    "game": "floor-area",
    "task": "bake credit gpt 5",
    "since": "2026-10-19T17:54:11+00:00",
-   "activity": "2026-10-19T17:54:11+00:00",
+   "activity": "2026-10-19T17:56:18+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": null,
+   "task": "legal notes",
+   "since": null,
+   "activity": null,
    "commit": null
   }
  ],
  "codexLanes": 2,
- "claudeWorkers": 0,
+ "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -58,17 +66,17 @@
    "changes": 22
   }
  ],
- "houseRules": 16,
+ "houseRules": 21,
  "games": [
   {
    "id": "acrylic-beacon",
    "title": "Acrylic Beacon",
    "line": "Turn a lamp to guide a boat to shore.",
    "url": "https://chenhsieh.github.io/acrylic-beacon/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Strong sea-and-map visual direction: old hand-drawn chart",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/acrylic-beacon-1.webp",
    "lastChange": "2026-10-17T22:08:17+00:00",
@@ -84,7 +92,22 @@
     "earlierUsdEst": 3.6,
     "totalUsdEst": 3.6
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "acrylic beacon chart visual",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Strong sea-and-map visual direction: old hand-drawn chart, gritty, stamped.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -100,10 +123,10 @@
    "title": "Alias Loaf",
    "line": "Set the cutter to catch one seed family.",
    "url": "https://chenhsieh.github.io/alias-loaf/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Introduce the mechanics one at a time and give the player a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/alias-loaf-1.webp",
    "lastChange": null,
@@ -119,7 +142,22 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "alias loaf gradual",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Introduce the mechanics one at a time and give the player a reason to play.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": []
@@ -129,10 +167,10 @@
    "title": "Align Hero",
    "line": "Two lines of letters, one slipped. Find where it slipped.",
    "url": "https://chenhsieh.github.io/align-hero/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P1",
+   "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/align-hero-1.webp",
    "lastChange": null,
@@ -148,8 +186,27 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
-   "verdict": null,
+   "tasks": [
+    {
+     "title": "align hero bio round",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Bioinformatics round: make the idea legible in the first minute, add a light story, refine the interface.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "verdict": {
+    "date": "2026-10-19",
+    "verdict": "revise",
+    "note": "Bioinformatics round: make the idea legible in the first"
+   },
    "needsYou": null,
    "history": []
   },
@@ -158,10 +215,10 @@
    "title": "Anechoic Fugue",
    "line": "Place speakers so the sleeper's chair goes quiet.",
    "url": "https://chenhsieh.github.io/anechoic-fugue/",
-   "stage": "live",
-   "who": null,
-   "priority": "P3",
-   "priorityNote": "Core mechanism unclear",
+   "stage": "planning",
+   "who": "Claude",
+   "priority": "P2",
+   "priorityNote": "Decide the physical model and its on-screen readout, choose",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/anechoic-fugue-1.webp",
    "lastChange": "2026-10-19T08:41:22+00:00",
@@ -178,6 +235,20 @@
     "totalUsdEst": 50.37
    },
    "tasks": [
+    {
+     "title": "anechoic fugue model",
+     "state": "planned",
+     "worker": "Claude",
+     "plan": "Decide the physical model and its on-screen readout, choose the actors, plan bigger ponds and new disturbances.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "anechoic rethink",
      "state": "done",
@@ -208,7 +279,7 @@
     }
    ],
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-19T08:41:22+00:00",
@@ -305,7 +376,7 @@
    "stage": "live",
    "who": null,
    "priority": "P3",
-   "priorityNote": "Sound-symbolism direction",
+   "priorityNote": "",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/beetle-in-a-box-1.webp",
    "lastChange": "2026-10-19T08:50:40+00:00",
@@ -396,10 +467,10 @@
    "title": "Billboard Wars",
    "line": "Hang a bigger sign beside a smaller one and claim the.",
    "url": "https://chenhsieh.github.io/billboard-wars/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "Find the core, then the story",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/billboard-wars-1.webp",
    "lastChange": "2026-10-17T21:41:35+00:00",
@@ -415,7 +486,22 @@
     "earlierUsdEst": 28.8,
     "totalUsdEst": 36.55
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "billboard wars core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Find the core, then the story.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -466,8 +552,8 @@
    "title": "BioRedactle",
    "line": "Reveal a paper's title with word tiles.",
    "url": "https://chenhsieh.github.io/BioRedactle-nextjs/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -485,7 +571,22 @@
     "earlierUsdEst": 3.6,
     "totalUsdEst": 3.6
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "BioRedactle nextjs ui pass",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Interface and visual pass; make the first game winnable for a non-academic.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -501,10 +602,10 @@
    "title": "Biosteganography",
    "line": "Straighten the stripes to find a hidden repeat.",
    "url": "https://chenhsieh.github.io/biosteganography/demo/snap.html",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P1",
+   "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/biosteganography-1.webp",
    "lastChange": null,
@@ -520,8 +621,27 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
-   "verdict": null,
+   "tasks": [
+    {
+     "title": "biosteganography bio round",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Bioinformatics round: make the idea legible in the first minute, add a light story, refine the interface.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "verdict": {
+    "date": "2026-10-19",
+    "verdict": "revise",
+    "note": "Bioinformatics round: make the idea legible in the first"
+   },
    "needsYou": null,
    "history": []
   },
@@ -532,8 +652,8 @@
    "url": "https://chenhsieh.github.io/bluebook-guess/",
    "stage": "live",
    "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "priority": "P4",
+   "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/bluebook-guess-1.webp",
    "lastChange": null,
@@ -559,10 +679,10 @@
    "title": "Chai Boil",
    "line": "One pot, one dial: let the chai rise to the rim, not over it.",
    "url": "https://chenhsieh.github.io/chai-boil/",
-   "stage": "live",
-   "who": null,
-   "priority": "P3",
-   "priorityNote": "Potion-making direction",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Steadier dial (keys on desktop), a forgiving golden zone, a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/chai-boil-1.webp",
    "lastChange": "2026-10-19T09:00:44+00:00",
@@ -579,6 +699,20 @@
     "totalUsdEst": 21.13
    },
    "tasks": [
+    {
+     "title": "chai boil forgiving dial",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Steadier dial (keys on desktop), a forgiving golden zone, a visible recipe book, clearer customers, unlockable dishes.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "chai potion",
      "state": "done",
@@ -609,7 +743,7 @@
     }
    ],
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-19T09:00:44+00:00",
@@ -648,10 +782,10 @@
    "title": "Clay Clock",
    "line": "Press clay jars in the right order.",
    "url": "https://chenhsieh.github.io/clay-clock/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "A goal and a story, and a better drawn figure under the clay",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/clay-clock-1.webp",
    "lastChange": null,
@@ -667,7 +801,22 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "clay clock goal",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "A goal and a story, and a better drawn figure under the clay.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": []
@@ -842,10 +991,10 @@
    "title": "Combining Games",
    "line": "Read about who gets to judge a game.",
    "url": "https://chenhsieh.github.io/combining-games/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "Check whether the rule-combination essay can become a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/combining-games-1.webp",
    "lastChange": null,
@@ -861,7 +1010,22 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "combining games core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Check whether the rule-combination essay can become a navigator game.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": []
@@ -900,10 +1064,10 @@
    "title": "Connectle",
    "line": "Hop through fly neurons to reach a body part.",
    "url": "https://chenhsieh.github.io/connectle/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "Story and design pass; shelve if it still does not work",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/connectle-1.webp",
    "lastChange": null,
@@ -919,7 +1083,22 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "connectle core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Story and design pass; shelve if it still does not work.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": []
@@ -929,10 +1108,10 @@
    "title": "Cookie Cutter",
    "line": "Cut cookies from a sheet of dough and leave as little.",
    "url": "https://chenhsieh.github.io/nesting-scrap/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
-   "priorityNote": "Wanted; first playtest pending",
+   "priorityNote": "Give the nesting puzzle a specific taste and twist",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/nesting-scrap-1.webp",
    "lastChange": "2026-10-18T01:08:17+00:00",
@@ -949,6 +1128,20 @@
     "totalUsdEst": 14.4
    },
    "tasks": [
+    {
+     "title": "nesting scrap taste",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Give the nesting puzzle a specific taste and twist.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "nesting scrap",
      "state": "done",
@@ -996,8 +1189,8 @@
    "url": "https://chenhsieh.github.io/curve-shot/",
    "stage": "live",
    "who": null,
-   "priority": "P2",
-   "priorityNote": "Remade; phone test",
+   "priority": "P4",
+   "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/curve-shot-1.webp",
    "lastChange": "2026-10-17T19:58:19+00:00",
@@ -1292,8 +1485,8 @@
    "url": "https://chenhsieh.github.io/defense-bingo/",
    "stage": "live",
    "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "priority": "P1",
+   "priorityNote": "Visual inspection and small verified improvements before",
    "shelfNote": "",
    "image": null,
    "lastChange": null,
@@ -1310,7 +1503,11 @@
     "totalUsdEst": 0.0
    },
    "tasks": [],
-   "verdict": null,
+   "verdict": {
+    "date": "2026-10-19",
+    "verdict": "ship",
+    "note": "Visual inspection and small verified improvements before"
+   },
    "needsYou": null,
    "history": []
   },
@@ -1321,8 +1518,8 @@
    "url": "https://chenhsieh.github.io/do-what-you-think/",
    "stage": "live",
    "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "priority": "P4",
+   "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/do-what-you-think-1.webp",
    "lastChange": null,
@@ -1348,10 +1545,10 @@
    "title": "Dough Boundary",
    "line": "Press one dough patch into a touching dough patch.",
    "url": "https://chenhsieh.github.io/dough-boundary/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P3",
-   "priorityNote": "Goal and colour chart",
+   "priorityNote": "Add the cross-section cutting twist so it stops being a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/dough-boundary-1.webp",
    "lastChange": "2026-10-19T17:38:31+00:00",
@@ -1368,6 +1565,20 @@
     "totalUsdEst": 32.26
    },
    "tasks": [
+    {
+     "title": "dough boundary core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Add the cross-section cutting twist so it stops being a Kami copy.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "bake 320 layout gpt 5",
      "state": "done",
@@ -1465,20 +1676,6 @@
      "reviewOutcome": "fixed",
      "commit": null,
      "result": "Labelled targets, softer dough, clear win stamp, and mixing charts are in."
-    },
-    {
-     "title": "dough boundary",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "",
-     "since": "2026-10-17T16:37:11+00:00",
-     "done": "2026-10-17T16:37:11+00:00",
-     "reviewed": false,
-     "minutes": 0,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "The goal line comes first (\"Make every dough a colour on the recipe card. Fewer presses is better\"), and the recipe card on the tray shows the one to three"
     }
    ],
    "verdict": {
@@ -1486,7 +1683,7 @@
     "verdict": "revise",
     "note": "Playable; fun and look unclear"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-19T02:25:00+00:00",
@@ -1555,10 +1752,10 @@
    "title": "Drawing Circles",
    "line": "Stack gears until the puppy's leash goes slack.",
    "url": "https://chenhsieh.github.io/drawing-circles/",
-   "stage": "review",
-   "who": "Claude",
-   "priority": "P2",
-   "priorityNote": "Guidance added; needs review",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P1",
+   "priorityNote": "Flagship polish round: level 9 difficulty, How to play",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/drawing-circles-1.webp",
    "lastChange": "2026-10-19T16:09:25+00:00",
@@ -1575,6 +1772,20 @@
     "totalUsdEst": 53.5
    },
    "tasks": [
+    {
+     "title": "drawing circles flagship round",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Flagship polish round: level 9 difficulty, How to play pages that each say something new, collectible sketchbook cards.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "drawing collectible",
      "state": "done",
@@ -1647,9 +1858,9 @@
     }
    ],
    "verdict": {
-    "date": "2026-10-18",
+    "date": "2026-10-19",
     "verdict": "revise",
-    "note": "Guide good; star level too hard"
+    "note": "Flagship polish round: level 9 difficulty, How to play"
    },
    "needsYou": null,
    "history": [
@@ -1720,10 +1931,10 @@
    "title": "Dynasty Guess",
    "line": "Place a museum object in its period.",
    "url": "https://chenhsieh.github.io/dynasty-guess/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Fix the missing object, then refine mechanism, story and",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/dynasty-guess-1.webp",
    "lastChange": null,
@@ -1739,7 +1950,22 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "dynasty guess fix object",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Fix the missing object, then refine mechanism, story and interface.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": []
@@ -1749,10 +1975,10 @@
    "title": "Fake Philosopher",
    "line": "Build an ornate paragraph while a sceptical reader tries.",
    "url": "https://chenhsieh.github.io/fake-philosopher/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "A story, slower flashing, clear whether it is logic or",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/fake-philosopher-1.webp",
    "lastChange": "2026-10-18T14:24:02+00:00",
@@ -1769,6 +1995,20 @@
     "totalUsdEst": 14.62
    },
    "tasks": [
+    {
+     "title": "fake philosopher core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "A story, slower flashing, clear whether it is logic or wordplay, Eastern philosophers too.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "review_fake philosopher",
      "state": "done",
@@ -1799,7 +2039,7 @@
     }
    ],
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-18T14:24:02+00:00",
@@ -1827,35 +2067,6 @@
      "note": "design done in protos-claude/fake-philosopher: BUILD; rules.js + bots (NAIVE/GREEDY/PLANNER) DECISION PASS 4872 rows, daily checkDaily PASS 60 days; STEP0.md + V1.md (taste lenses board-and-craft, toy-and-picture-book, empty bowl; book-tour picture story; half"
     }
    ]
-  },
-  {
-   "id": "fifth-identity",
-   "title": "Fifth Identity",
-   "line": "Seed a prompt and grow a shifting mark.",
-   "url": "https://chenhsieh.github.io/fifth-identity/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
-   "shelfNote": "",
-   "image": "https://chenhsieh.github.io/play-lab/images/games/fifth-identity-1.webp",
-   "lastChange": null,
-   "cost": {
-    "apiUsd": 0.0,
-    "codexRuns": 0,
-    "claudeRuns": 0,
-    "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 0,
-    "earlierUsdEst": 0.0,
-    "totalUsdEst": 0.0
-   },
-   "tasks": [],
-   "verdict": null,
-   "needsYou": null,
-   "history": []
   },
   {
    "id": "floating-city",
@@ -2015,8 +2226,8 @@
    "url": "https://chenhsieh.github.io/floor-area/",
    "stage": "building",
    "who": "Codex",
-   "priority": "P4",
-   "priorityNote": "",
+   "priority": "P3",
+   "priorityNote": "Find a creative twist",
    "shelfNote": "not fun enough; credit removed (R06).",
    "image": "https://chenhsieh.github.io/play-lab/images/games/floor-area-1.webp",
    "lastChange": "2026-10-18T19:40:23+00:00",
@@ -2053,6 +2264,20 @@
      "worker": "Codex",
      "plan": "",
      "since": "2026-10-19T17:54:07+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "floor area core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Find a creative twist.",
+     "since": "2026-10-19T17:54:51+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2134,10 +2359,10 @@
    "title": "Fly Song",
    "line": "Tap a fly's courtship song.",
    "url": "https://chenhsieh.github.io/fly-song/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Decide how the fly rhythm game differs from the other",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/fly-song-1.webp",
    "lastChange": null,
@@ -2153,7 +2378,22 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "fly song distinct",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Decide how the fly rhythm game differs from the other rhythm game, then make it so.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": []
@@ -2163,10 +2403,10 @@
    "title": "Fly Swarm",
    "line": "",
    "url": "https://chenhsieh.github.io/fly-swarm/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Game-design pass: a goal and a decision per round",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/fly-swarm-1.webp",
    "lastChange": null,
@@ -2182,7 +2422,22 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "fly swarm design pass",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Game-design pass: a goal and a decision per round.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": []
@@ -2257,10 +2512,10 @@
    "title": "Fold Guess",
    "line": "Date a real protein structure and its method.",
    "url": "https://chenhsieh.github.io/fold-guess/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P1",
+   "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/fold-guess-1.webp",
    "lastChange": null,
@@ -2276,8 +2531,27 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
-   "verdict": null,
+   "tasks": [
+    {
+     "title": "fold guess bio round",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Bioinformatics round: make the idea legible in the first minute, add a light story, refine the interface.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "verdict": {
+    "date": "2026-10-19",
+    "verdict": "revise",
+    "note": "Bioinformatics round: make the idea legible in the first"
+   },
    "needsYou": null,
    "history": []
   },
@@ -2286,10 +2560,10 @@
    "title": "Gallery Guess",
    "line": "Place each museum object by country and year.",
    "url": "https://chenhsieh.github.io/gallery-guess/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "Story and mechanism pass; pending a merge decision",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/gallery-guess-1.webp",
    "lastChange": null,
@@ -2305,7 +2579,22 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "gallery guess core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Story and mechanism pass; pending a merge decision.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": []
@@ -2315,10 +2604,10 @@
    "title": "GIF Cities",
    "line": "Stack rescued GIFs down a 1999 homepage so every visitor.",
    "url": "https://chenhsieh.github.io/gif-cities/",
-   "stage": "live",
-   "who": null,
-   "priority": "P2",
-   "priorityNote": "Promising; rules need explaining",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P1",
+   "priorityNote": "Flagship polish round: slower default pace with a speed",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/gif-cities-1.webp",
    "lastChange": "2026-10-19T16:54:06+00:00",
@@ -2335,6 +2624,20 @@
     "totalUsdEst": 32.82
    },
    "tasks": [
+    {
+     "title": "gif cities flagship round",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Flagship polish round: slower default pace with a speed toggle, deeper visitor mechanism, clearer page bottom.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "review of gif speed",
      "state": "done",
@@ -2407,11 +2710,11 @@
     }
    ],
    "verdict": {
-    "date": "2026-10-18",
+    "date": "2026-10-19",
     "verdict": "revise",
-    "note": "Good; mechanisms and growth unclear"
+    "note": "Flagship polish round: slower default pace with a speed"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-19T16:54:06+00:00",
@@ -2482,8 +2785,8 @@
    "url": "https://chenhsieh.github.io/glasshouse/",
    "stage": "live",
    "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "priority": "P1",
+   "priorityNote": "Decide the best public role for a finished personal game",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/glasshouse-1.webp",
    "lastChange": "2026-10-17T23:15:14+00:00",
@@ -2500,7 +2803,11 @@
     "totalUsdEst": 3.6
    },
    "tasks": [],
-   "verdict": null,
+   "verdict": {
+    "date": "2026-10-19",
+    "verdict": "ship",
+    "note": "Decide the best public role for a finished personal game"
+   },
    "needsYou": null,
    "history": [
     {
@@ -2515,10 +2822,10 @@
    "title": "Glyph Gates",
    "line": "Open a path by pairing marks at each gate.",
    "url": "https://chenhsieh.github.io/glyph-gates/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Find the game core and story before any visual work",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/glyph-gates-1.webp",
    "lastChange": "2026-10-17T22:08:17+00:00",
@@ -2534,7 +2841,22 @@
     "earlierUsdEst": 7.2,
     "totalUsdEst": 7.2
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "glyph gates core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Find the game core and story before any visual work.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -2555,10 +2877,10 @@
    "title": "Grass Crossword",
    "line": "A crossword dug into a garden bed, where every answer is.",
    "url": "https://chenhsieh.github.io/grass-crossword/",
-   "stage": "live",
-   "who": null,
-   "priority": "P3",
-   "priorityNote": "Source study first",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Varied handwriting, more levels, a daily, and a harder late",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/grass-crossword-1.webp",
    "lastChange": "2026-10-19T15:10:21+00:00",
@@ -2575,6 +2897,20 @@
     "totalUsdEst": 14.72
    },
    "tasks": [
+    {
+     "title": "grass crossword depth",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Varied handwriting, more levels, a daily, and a harder late game.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "grass prvacki",
      "state": "done",
@@ -2618,8 +2954,12 @@
      "result": "Redesigned it as a directional newspaper crossword; source study: [SOURCE_20261018.md]("
     }
    ],
-   "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "verdict": {
+    "date": "2026-10-19",
+    "verdict": "revise",
+    "note": "Varied handwriting, more levels, a daily, and a harder late"
+   },
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-19T15:10:21+00:00",
@@ -2653,10 +2993,10 @@
    "title": "Hello Princess",
    "line": "Find the princess's first invitation among the copies.",
    "url": "https://chenhsieh.github.io/copy-paste/",
-   "stage": "live",
-   "who": null,
+   "stage": "planning",
+   "who": "Claude",
    "priority": "P2",
-   "priorityNote": "Close; story and name",
+   "priorityNote": "Settle the card-link logic, stop story art leaking answers",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/copy-paste-1.webp",
    "lastChange": "2026-10-18T23:22:05+00:00",
@@ -2673,6 +3013,20 @@
     "totalUsdEst": 57.06
    },
    "tasks": [
+    {
+     "title": "copy paste journey",
+     "state": "planned",
+     "worker": "Claude",
+     "plan": "Settle the card-link logic, stop story art leaking answers, add shuffle, plan the journey-to-the-castle story.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "review of princess story",
      "state": "done",
@@ -2832,10 +3186,10 @@
    "title": "Herbarium Guess",
    "line": "Place a pressed plant in place and year.",
    "url": "https://chenhsieh.github.io/herbarium-guess/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "Story and mechanism pass; pending a merge decision",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/herbarium-guess-1.webp",
    "lastChange": null,
@@ -2851,7 +3205,22 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "herbarium guess core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Story and mechanism pass; pending a merge decision.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": []
@@ -2938,8 +3307,8 @@
    "url": "https://chenhsieh.github.io/just-in-case/",
    "stage": "live",
    "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "priority": "P4",
+   "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/just-in-case-1.webp",
    "lastChange": null,
@@ -2965,10 +3334,10 @@
    "title": "Keep Both",
    "line": "Copy a gene, then break it so both copies are kept.",
    "url": "https://chenhsieh.github.io/keep-both/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Bioinformatics round: story and mechanism for the",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/keep-both-1.webp",
    "lastChange": null,
@@ -2984,7 +3353,22 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "keep both bio round",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Bioinformatics round: story and mechanism for the gene-duplication game.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": []
@@ -2996,8 +3380,8 @@
    "url": "https://chenhsieh.github.io/kitty-portal-sparkle-click/",
    "stage": "live",
    "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "priority": "P4",
+   "priorityNote": "Serve it as a static page and note whether a game is in it",
    "shelfNote": "",
    "image": null,
    "lastChange": null,
@@ -3025,8 +3409,8 @@
    "url": "https://chenhsieh.github.io/latent-space-explorer/",
    "stage": "live",
    "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "priority": "P4",
+   "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/latent-space-explorer-1.webp",
    "lastChange": null,
@@ -3052,10 +3436,10 @@
    "title": "Lens Screen",
    "line": "Drag a screen over the cup.",
    "url": "https://chenhsieh.github.io/lens-screen/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "Storyteller pass on why it is fun",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/lens-screen-1.webp",
    "lastChange": null,
@@ -3071,7 +3455,22 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "lens screen core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Storyteller pass on why it is fun.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": []
@@ -3084,7 +3483,7 @@
    "stage": "live",
    "who": null,
    "priority": "P3",
-   "priorityNote": "Hard to follow",
+   "priorityNote": "",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/life-statistics-1.webp",
    "lastChange": "2026-10-19T03:30:04+00:00",
@@ -3274,10 +3673,10 @@
    "title": "LLM Game of Life",
    "line": "Watch a language model tend a living grid.",
    "url": "https://chenhsieh.github.io/llm-game-of-life/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "Check for a game core",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/llm-game-of-life-1.webp",
    "lastChange": null,
@@ -3293,7 +3692,22 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "llm game of life core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Check for a game core.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": []
@@ -3303,10 +3717,10 @@
    "title": "Local Hero",
    "line": "Find the stretch two DNA strings share, then bank it.",
    "url": "https://chenhsieh.github.io/local-hero/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P1",
+   "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/local-hero-1.webp",
    "lastChange": null,
@@ -3322,8 +3736,27 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
-   "verdict": null,
+   "tasks": [
+    {
+     "title": "local hero bio round",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Bioinformatics round: make the idea legible in the first minute, add a light story, refine the interface.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "verdict": {
+    "date": "2026-10-19",
+    "verdict": "revise",
+    "note": "Bioinformatics round: make the idea legible in the first"
+   },
    "needsYou": null,
    "history": []
   },
@@ -3416,10 +3849,10 @@
    "title": "Makeshift Chair",
    "line": "",
    "url": "https://chenhsieh.github.io/makeshift-chair/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Grassroots 3D look, correct source link, mechanism pass",
    "shelfNote": "",
    "image": null,
    "lastChange": null,
@@ -3435,7 +3868,22 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 11.15
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "makeshift chair bastard chairs",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Grassroots 3D look, correct source link, mechanism pass.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": []
@@ -3445,10 +3893,10 @@
    "title": "Marble Machine",
    "line": "Tilt pads so the ball plays the tune.",
    "url": "https://chenhsieh.github.io/marble-machine/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "Check for a game core",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/marble-machine-1.webp",
    "lastChange": null,
@@ -3464,7 +3912,22 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "marble machine core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Check for a game core.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": []
@@ -3474,10 +3937,10 @@
    "title": "Matchmaker Chat",
    "line": "Auntie sends a photo of a boy, then picture clues one.",
    "url": "https://chenhsieh.github.io/matchmaker-chat/",
-   "stage": "live",
-   "who": null,
-   "priority": "P3",
-   "priorityNote": "Rethink as rival wingmen",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Turn the rival-wingmen idea into a visual arms-race puzzle",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/matchmaker-chat-1.webp",
    "lastChange": "2026-10-19T08:25:50+00:00",
@@ -3495,6 +3958,20 @@
    },
    "tasks": [
     {
+     "title": "matchmaker chat arms race",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Turn the rival-wingmen idea into a visual arms-race puzzle instead of a text chat.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
      "title": "matchmaker strategist",
      "state": "done",
      "worker": "Claude API",
@@ -3510,7 +3987,7 @@
     }
    ],
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-19T08:25:50+00:00",
@@ -3552,7 +4029,7 @@
    "stage": "queued",
    "who": "Codex",
    "priority": "P3",
-   "priorityNote": "Visual pass",
+   "priorityNote": "Find a creative twist for the classic puzzle",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/material-boards-1.webp",
    "lastChange": "2026-10-18T21:01:10+00:00",
@@ -3569,6 +4046,20 @@
     "totalUsdEst": 32.59
    },
    "tasks": [
+    {
+     "title": "material boards core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Find a creative twist for the classic puzzle.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "bake howto gpt 5",
      "state": "queued",
@@ -3680,10 +4171,10 @@
    "title": "Metagenome Profilers",
    "line": "Compare MetaPhlAn and Kraken through six games.",
    "url": "https://chenhsieh.github.io/metagenome-profilers/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Game-design pass on the profiler comparison",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/metagenome-profilers-1.webp",
    "lastChange": null,
@@ -3699,7 +4190,22 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "metagenome profilers design pass",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Game-design pass on the profiler comparison.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": []
@@ -3709,10 +4215,10 @@
    "title": "Mirror Hold",
    "line": "Wax a hairstyle, then test it against three pulls.",
    "url": "https://chenhsieh.github.io/mirror-hold/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Make the build-and-test loop readable; try the",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/mirror-hold-1.webp",
    "lastChange": "2026-10-17T22:08:17+00:00",
@@ -3728,7 +4234,22 @@
     "earlierUsdEst": 7.2,
     "totalUsdEst": 7.2
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "mirror hold heads",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Make the build-and-test loop readable; try the collectible-hairstyles frame.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -3749,10 +4270,10 @@
    "title": "Missing Field",
    "line": "A traveller walks a short road where people say facts out.",
    "url": "https://chenhsieh.github.io/missing-field/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "A story and a clear expectation; a different visual language",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/missing-field-1.webp",
    "lastChange": "2026-10-18T07:47:55+00:00",
@@ -3768,7 +4289,22 @@
     "earlierUsdEst": 21.6,
     "totalUsdEst": 21.6
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "missing field core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "A story and a clear expectation; a different visual language.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -3809,10 +4345,10 @@
    "title": "Motif Hero",
    "line": "Set the bar to how common each column's top letter is.",
    "url": "https://chenhsieh.github.io/motif-hero/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P1",
+   "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/motif-hero-1.webp",
    "lastChange": null,
@@ -3828,8 +4364,27 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
-   "verdict": null,
+   "tasks": [
+    {
+     "title": "motif hero bio round",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Bioinformatics round: make the idea legible in the first minute, add a light story, refine the interface.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "verdict": {
+    "date": "2026-10-19",
+    "verdict": "revise",
+    "note": "Bioinformatics round: make the idea legible in the first"
+   },
    "needsYou": null,
    "history": []
   },
@@ -3873,10 +4428,10 @@
    "title": "Mushroom at the End",
    "line": "Grow mycelium threads across an old factory floor and cut.",
    "url": "https://chenhsieh.github.io/mushroom-gaps/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Clear cause and effect for each tap, a story for the cave",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/mushroom-gaps-1.webp",
    "lastChange": "2026-10-17T21:41:35+00:00",
@@ -3892,7 +4447,22 @@
     "earlierUsdEst": 10.8,
     "totalUsdEst": 10.8
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "mushroom gaps cause effect",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Clear cause and effect for each tap, a story for the cave, keep the brick faces.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -3918,10 +4488,10 @@
    "title": "Orbit Rings",
    "line": "Rings of coloured balls cross each other, and a ball.",
    "url": "https://chenhsieh.github.io/orbit-rings/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "An eccentric twist from the inspiration collection and a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/orbit-rings-1.webp",
    "lastChange": "2026-10-18T08:34:11+00:00",
@@ -3939,6 +4509,20 @@
    },
    "tasks": [
     {
+     "title": "orbit rings core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "An eccentric twist from the inspiration collection and a philosophy angle.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
      "title": "orbit rings",
      "state": "done",
      "worker": "Claude",
@@ -3954,7 +4538,7 @@
     }
    ],
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-18T08:34:11+00:00",
@@ -4003,10 +4587,10 @@
    "title": "Peony Dream",
    "line": "Paint half a face on a sheet of silk, close the silk on.",
    "url": "https://chenhsieh.github.io/peony-dream/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P1",
+   "priorityNote": "Eastern ink visual direction instead of raster",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/peony-dream-1.webp",
    "lastChange": "2026-10-18T06:15:29+00:00",
@@ -4022,8 +4606,27 @@
     "earlierUsdEst": 7.2,
     "totalUsdEst": 7.2
    },
-   "tasks": [],
-   "verdict": null,
+   "tasks": [
+    {
+     "title": "peony dream ink visual",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Eastern ink visual direction instead of raster placeholders; smoother fold-and-print play.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "verdict": {
+    "date": "2026-10-19",
+    "verdict": "revise",
+    "note": "Eastern ink visual direction instead of raster"
+   },
    "needsYou": null,
    "history": [
     {
@@ -4039,43 +4642,14 @@
    ]
   },
   {
-   "id": "play-lab",
-   "title": "Play Lab",
-   "line": "",
-   "url": "https://chenhsieh.github.io/play-lab/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
-   "shelfNote": "",
-   "image": null,
-   "lastChange": null,
-   "cost": {
-    "apiUsd": 5.27,
-    "codexRuns": 0,
-    "claudeRuns": 0,
-    "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 0,
-    "earlierUsdEst": 0.0,
-    "totalUsdEst": 5.27
-   },
-   "tasks": [],
-   "verdict": null,
-   "needsYou": null,
-   "history": []
-  },
-  {
    "id": "felt-years",
    "title": "Play Lab game",
    "line": "Felt Years is a quiet solo puzzle about a goat whose life.",
    "url": "https://chenhsieh.github.io/felt-years/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "A story for the proportional-time idea, a stated goal",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/felt-years-1.webp",
    "lastChange": "2026-10-18T14:24:02+00:00",
@@ -4092,6 +4666,20 @@
     "totalUsdEst": 18.41
    },
    "tasks": [
+    {
+     "title": "felt years story",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "A story for the proportional-time idea, a stated goal, gradual levels, maybe real events on the scale.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "felt years forward",
      "state": "done",
@@ -4136,7 +4724,7 @@
     }
    ],
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-18T14:24:02+00:00",
@@ -4172,41 +4760,6 @@
      "at": "2026-10-17T23:11:23+00:00",
      "ok": true,
      "note": "NEW design: rules model + harness gates DECISION PASS (4707 rows, planner-greedy 39.7 vs random sd 23.3), STEP0.md + V1.md in protos-claude/felt-years, look reserved (slide rule over pasture album); no repo yet"
-    }
-   ]
-  },
-  {
-   "id": "primer",
-   "title": "Primer",
-   "line": "Read a small piece of computational poetry.",
-   "url": "https://chenhsieh.github.io/primer/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
-   "shelfNote": "",
-   "image": "https://chenhsieh.github.io/play-lab/images/games/primer-1.webp",
-   "lastChange": "2026-10-17T21:41:35+00:00",
-   "cost": {
-    "apiUsd": 0.0,
-    "codexRuns": 0,
-    "claudeRuns": 0,
-    "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 1,
-    "earlierUsdEst": 3.6,
-    "totalUsdEst": 3.6
-   },
-   "tasks": [],
-   "verdict": null,
-   "needsYou": null,
-   "history": [
-    {
-     "at": "2026-10-17T21:41:35+00:00",
-     "ok": true,
-     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added"
     }
    ]
   },
@@ -4305,10 +4858,10 @@
    "title": "Rasp",
    "line": "Cut the teeth of a steel rasp one hammer strike at a.",
    "url": "https://chenhsieh.github.io/rasp/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "Find a reason to carve",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/rasp-1.webp",
    "lastChange": "2026-10-18T08:34:11+00:00",
@@ -4326,6 +4879,20 @@
    },
    "tasks": [
     {
+     "title": "rasp core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Find a reason to carve.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
      "title": "rasp",
      "state": "done",
      "worker": "Claude",
@@ -4341,7 +4908,7 @@
     }
    ],
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-18T08:34:11+00:00",
@@ -4385,10 +4952,10 @@
    "title": "Redline River",
    "line": "Cross a river by reading its red lines.",
    "url": "https://chenhsieh.github.io/redline-river/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "A reason to cross, real words from open data, a cuter topic",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/redline-river-1.webp",
    "lastChange": null,
@@ -4404,7 +4971,22 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "redline river core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "A reason to cross, real words from open data, a cuter topic.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": []
@@ -4414,10 +4996,10 @@
    "title": "Refusal Detour",
    "line": "",
    "url": "https://chenhsieh.github.io/refusal-detour/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Keep the message about choice and refusal; make the action",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/refusal-detour-1.webp",
    "lastChange": "2026-10-17T22:08:17+00:00",
@@ -4433,7 +5015,22 @@
     "earlierUsdEst": 3.6,
     "totalUsdEst": 3.6
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "refusal detour clarity",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Keep the message about choice and refusal; make the action and its outcome clearer.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -4451,8 +5048,8 @@
    "url": "https://chenhsieh.github.io/remember-228/",
    "stage": "live",
    "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "priority": "P4",
+   "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/remember-228-1.webp",
    "lastChange": null,
@@ -4478,10 +5075,10 @@
    "title": "Remote Viewer",
    "line": "Uncover a CIA file and name its assignment.",
    "url": "https://chenhsieh.github.io/remote-viewer/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P1",
+   "priorityNote": "Game-design pass to find where the fun is and build it",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/remote-viewer-1.webp",
    "lastChange": "2026-10-18T00:05:43+00:00",
@@ -4499,6 +5096,20 @@
    },
    "tasks": [
     {
+     "title": "remote viewer design pass",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Game-design pass to find where the fun is and build it.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
      "title": "remote viewer",
      "state": "done",
      "worker": "Claude",
@@ -4513,8 +5124,12 @@
      "result": "Changed for a player: a Hint now adds 1 to the file's score and a hinted file shows ◩; giving up scores the file as a full marker (+ink cap minus fewest, shown in the confirm line) instead of vanishing from +N; the..."
     }
    ],
-   "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "verdict": {
+    "date": "2026-10-19",
+    "verdict": "revise",
+    "note": "Game-design pass to find where the fun is and build it"
+   },
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-18T00:05:43+00:00",
@@ -4607,10 +5222,10 @@
    "title": "RNA Hero",
    "line": "Zip an RNA strand into its best fold.",
    "url": "https://chenhsieh.github.io/rna-hero/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P1",
+   "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/rna-hero-1.webp",
    "lastChange": null,
@@ -4626,8 +5241,27 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
-   "verdict": null,
+   "tasks": [
+    {
+     "title": "rna hero bio round",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Bioinformatics round: make the idea legible in the first minute, add a light story, refine the interface.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "verdict": {
+    "date": "2026-10-19",
+    "verdict": "revise",
+    "note": "Bioinformatics round: make the idea legible in the first"
+   },
    "needsYou": null,
    "history": []
   },
@@ -4636,10 +5270,10 @@
    "title": "Room Tone",
    "line": "A small solo puzzle.",
    "url": "https://chenhsieh.github.io/four-thirty-three/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "Return to the idea that every ambient sound counts; find",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/four-thirty-three-1.webp",
    "lastChange": "2026-10-18T10:26:23+00:00",
@@ -4656,6 +5290,20 @@
     "totalUsdEst": 7.42
    },
    "tasks": [
+    {
+     "title": "four thirty three core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Return to the idea that every ambient sound counts; find the game core.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "review_four thirty three",
      "state": "done",
@@ -4686,7 +5334,7 @@
     }
    ],
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-18T10:26:23+00:00",
@@ -4710,10 +5358,10 @@
    "title": "Scooter Alley",
    "line": "Ride a delivery scooter up a Taipei back lane after rain.",
    "url": "https://chenhsieh.github.io/scooter-alley/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "A mechanism twist with the studio's taste",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/scooter-alley-1.webp",
    "lastChange": "2026-10-18T06:47:32+00:00",
@@ -4729,7 +5377,22 @@
     "earlierUsdEst": 14.4,
     "totalUsdEst": 14.4
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "scooter alley core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "A mechanism twist with the studio's taste.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -4760,10 +5423,10 @@
    "title": "Seal Carver",
    "line": "Carve a short phrase into a square seal stone, one box.",
    "url": "https://chenhsieh.github.io/seal-carver/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Teach placement so it is reasoning, not trial and error",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/seal-carver-1.webp",
    "lastChange": "2026-10-17T22:43:45+00:00",
@@ -4779,7 +5442,22 @@
     "earlierUsdEst": 10.8,
     "totalUsdEst": 10.8
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "seal carver placement",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Teach placement so it is reasoning, not trial and error; add depth.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -4807,8 +5485,8 @@
    "url": "https://chenhsieh.github.io/seed-spiral/",
    "stage": "live",
    "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "priority": "P4",
+   "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/seed-spiral-1.webp",
    "lastChange": "2026-10-17T21:41:35+00:00",
@@ -4840,10 +5518,10 @@
    "title": "Server Stress",
    "line": "Night shift in a server room: every rack warms a light.",
    "url": "https://chenhsieh.github.io/server-stress/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Data-centre story with a human side, real tradeoffs instead",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/server-stress-1.webp",
    "lastChange": "2026-10-18T08:29:18+00:00",
@@ -4859,7 +5537,22 @@
     "earlierUsdEst": 14.4,
     "totalUsdEst": 14.4
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "server stress datacenter",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Data-centre story with a human side, real tradeoffs instead of an obvious best choice, saboteurs as the counter-force.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -4890,10 +5583,10 @@
    "title": "Service Lane",
    "line": "Choose parts to power a path to its target.",
    "url": "https://chenhsieh.github.io/service-lane/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "Introduce the rules in order; a story for the lane",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/service-lane-1.webp",
    "lastChange": null,
@@ -4909,7 +5602,22 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "service lane core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Introduce the rules in order; a story for the lane.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": []
@@ -4921,8 +5629,8 @@
    "url": "https://chenhsieh.github.io/seventeen-spellings/",
    "stage": "live",
    "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "priority": "P4",
+   "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/seventeen-spellings-1.webp",
    "lastChange": null,
@@ -4948,10 +5656,10 @@
    "title": "Shared Phase",
    "line": "A row of cartoon metronomes stands on a music staff, and.",
    "url": "https://chenhsieh.github.io/shared-phase/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "A premise where the metronomes make sense; clearer",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/shared-phase-1.webp",
    "lastChange": "2026-10-18T06:52:49+00:00",
@@ -4967,7 +5675,22 @@
     "earlierUsdEst": 14.4,
     "totalUsdEst": 14.4
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "shared phase core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "A premise where the metronomes make sense; clearer multi-change rule.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -5033,10 +5756,10 @@
    "title": "Sigil Wheel",
    "line": "Arrange letters on a shape and trace a word.",
    "url": "https://chenhsieh.github.io/sigil-wheel/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "Combine three random ideas into a game core",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/sigil-wheel-1.webp",
    "lastChange": "2026-10-17T22:08:17+00:00",
@@ -5052,7 +5775,22 @@
     "earlierUsdEst": 3.6,
     "totalUsdEst": 3.6
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "sigil wheel core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Combine three random ideas into a game core.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -5070,8 +5808,8 @@
    "url": "https://chenhsieh.github.io/sigils/",
    "stage": "live",
    "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "priority": "P4",
+   "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/sigils-1.webp",
    "lastChange": null,
@@ -5097,10 +5835,10 @@
    "title": "Signposts",
    "line": "Signposts is a short phone puzzle about hanging route.",
    "url": "https://chenhsieh.github.io/directory-handrail/",
-   "stage": "live",
-   "who": null,
-   "priority": "P2",
-   "priorityNote": "Closest to finished; fun pass",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P1",
+   "priorityNote": "Flagship polish round: finish the market-manager framing",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/directory-handrail-1.webp",
    "lastChange": "2026-10-19T16:32:29+00:00",
@@ -5117,6 +5855,20 @@
     "totalUsdEst": 44.63
    },
    "tasks": [
+    {
+     "title": "directory handrail flagship round",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Flagship polish round: finish the market-manager framing and make every level a different decision.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "review of signposts manager",
      "state": "done",
@@ -5188,8 +5940,12 @@
      "result": "Signposts is now a cute isometric street: the crowd comes in at the near end and walks up past each door to the first sign that fits. Levels 1 to 5 each bring in one rule"
     }
    ],
-   "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "verdict": {
+    "date": "2026-10-19",
+    "verdict": "revise",
+    "note": "Flagship polish round: finish the market-manager framing"
+   },
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-19T16:32:29+00:00",
@@ -5258,10 +6014,10 @@
    "title": "SILVA to MaAsLin2",
    "line": "Follow 16S reads through six small games.",
    "url": "https://chenhsieh.github.io/silva-to-maaslin2/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "Check for a game core",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/silva-to-maaslin2-1.webp",
    "lastChange": null,
@@ -5277,7 +6033,22 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "silva to maaslin2 core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Check for a game core.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": []
@@ -5287,10 +6058,10 @@
    "title": "Slice and Bake",
    "line": "Move dough before each cut to match the next slice.",
    "url": "https://chenhsieh.github.io/slice-and-bake/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Make cutting and adjusting legible; refresh the visual",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/slice-and-bake-1.webp",
    "lastChange": "2026-10-17T23:15:14+00:00",
@@ -5306,7 +6077,22 @@
     "earlierUsdEst": 7.2,
     "totalUsdEst": 7.2
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "slice and bake legible cut",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Make cutting and adjusting legible; refresh the visual; prepare a link with the dough game.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -5327,10 +6113,10 @@
    "title": "Slide the Glass",
    "line": "A striped glass lies over a scrambled print, and.",
    "url": "https://chenhsieh.github.io/moire-overlay/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "Taste and mechanism pass; reveal and collect real paintings",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/moire-overlay-1.webp",
    "lastChange": "2026-10-17T21:41:35+00:00",
@@ -5346,7 +6132,22 @@
     "earlierUsdEst": 7.2,
     "totalUsdEst": 17.09
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "moire overlay core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Taste and mechanism pass; reveal and collect real paintings from an open art API.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -5402,10 +6203,10 @@
    "title": "Sockglass",
    "line": "Drag tissue-paper socks onto a dark bedroom window; where.",
    "url": "https://chenhsieh.github.io/sockglass/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P1",
+   "priorityNote": "Make sock sizes and counts readable and let the theme",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/sockglass-1.webp",
    "lastChange": "2026-10-17T22:28:38+00:00",
@@ -5421,8 +6222,27 @@
     "earlierUsdEst": 10.8,
     "totalUsdEst": 10.8
    },
-   "tasks": [],
-   "verdict": null,
+   "tasks": [
+    {
+     "title": "sockglass clarity",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Make sock sizes and counts readable and let the theme explain why socks go on the window.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "verdict": {
+    "date": "2026-10-19",
+    "verdict": "revise",
+    "note": "Make sock sizes and counts readable and let the theme"
+   },
    "needsYou": null,
    "history": [
     {
@@ -5449,8 +6269,8 @@
    "url": "https://chenhsieh.github.io/soft-bag/",
    "stage": "live",
    "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "priority": "P4",
+   "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/soft-bag-1.webp",
    "lastChange": "2026-10-18T07:07:44+00:00",
@@ -5497,10 +6317,10 @@
    "title": "Spirit Billboard",
    "line": "Paste pictures on a roadside billboard and watch the.",
    "url": "https://chenhsieh.github.io/spirit-billboard/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "Make the premise digestible with a new spin",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/spirit-billboard-1.webp",
    "lastChange": "2026-10-18T07:24:33+00:00",
@@ -5516,7 +6336,22 @@
     "earlierUsdEst": 14.4,
     "totalUsdEst": 14.4
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "spirit billboard core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Make the premise digestible with a new spin.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -5547,10 +6382,10 @@
    "title": "Squat Tempo",
    "line": "Two frogs hold a squat-off to a whistle, and the crowd.",
    "url": "https://chenhsieh.github.io/squat-tempo/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "Make the rule understandable",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/squat-tempo-1.webp",
    "lastChange": "2026-10-18T08:34:11+00:00",
@@ -5566,7 +6401,22 @@
     "earlierUsdEst": 21.6,
     "totalUsdEst": 21.6
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "squat tempo core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Make the rule understandable.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -5607,10 +6457,10 @@
    "title": "Stroke Tops",
    "line": "A dish of wooden spinning tops, each carrying a Chinese.",
    "url": "https://chenhsieh.github.io/stroke-tops/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Make the top read as a top, soften level 3, add a daily",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/stroke-tops-1.webp",
    "lastChange": "2026-10-18T07:49:24+00:00",
@@ -5626,7 +6476,22 @@
     "earlierUsdEst": 14.4,
     "totalUsdEst": 14.4
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "stroke tops arena",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Make the top read as a top, soften level 3, add a daily, explore the exploding-homework arena.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -5657,10 +6522,10 @@
    "title": "Telephone of Babel",
    "line": "",
    "url": "https://chenhsieh.github.io/telephone-of-babel/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Remix around languages meeting and the balance that keeps",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/telephone-of-babel-1.webp",
    "lastChange": "2026-10-18T08:36:00+00:00",
@@ -5676,7 +6541,22 @@
     "earlierUsdEst": 25.2,
     "totalUsdEst": 25.2
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "telephone of babel balance",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Remix around languages meeting and the balance that keeps the tower standing.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -5722,10 +6602,10 @@
    "title": "TELL",
    "line": "Rub marks off a creature until the least ink is left that.",
    "url": "https://chenhsieh.github.io/tell/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P3",
+   "priorityNote": "A reason to rub marks off; then taste and visual",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/tell-1.webp",
    "lastChange": "2026-10-17T21:41:35+00:00",
@@ -5741,7 +6621,22 @@
     "earlierUsdEst": 36.0,
     "totalUsdEst": 42.63
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "tell core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "A reason to rub marks off; then taste and visual.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -5797,10 +6692,10 @@
    "title": "The Folder",
    "line": "Change a bead to make the first pair block the rest.",
    "url": "https://chenhsieh.github.io/the-folder/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Simplify the first minute, show the outcome of each choice",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/the-folder-1.webp",
    "lastChange": "2026-10-17T21:41:35+00:00",
@@ -5816,7 +6711,22 @@
     "earlierUsdEst": 3.6,
     "totalUsdEst": 3.6
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "the folder first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Simplify the first minute, show the outcome of each choice, explain the circle.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -5832,10 +6742,10 @@
    "title": "The Forager",
    "line": "Change letters to widen the greedy gap.",
    "url": "https://chenhsieh.github.io/fool-the-algorithm/",
-   "stage": "live",
-   "who": null,
-   "priority": "P2",
-   "priorityNote": "Improving; pacing and theme",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P1",
+   "priorityNote": "Show per-path distance bars and named berries, lay the two",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/fool-the-algorithm-1.webp",
    "lastChange": "2026-10-19T17:22:41+00:00",
@@ -5852,6 +6762,20 @@
     "totalUsdEst": 28.93
    },
    "tasks": [
+    {
+     "title": "fool the algorithm distance bars",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Show per-path distance bars and named berries, lay the two routes out as lines under the board, add more simple rival strategies.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "review of forager feel",
      "state": "done",
@@ -5924,9 +6848,9 @@
     }
    ],
    "verdict": {
-    "date": "2026-10-18",
+    "date": "2026-10-19",
     "verdict": "revise",
-    "note": "Themes good; motion and drag feel need work"
+    "note": "Show per-path distance bars and named berries, lay the two"
    },
    "needsYou": null,
    "history": [
@@ -5977,10 +6901,10 @@
    "title": "The Zipper",
    "line": "Change bright teeth to make the brass route miss matches.",
    "url": "https://chenhsieh.github.io/the-zipper/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P3",
-   "priorityNote": "Too fast; needs teaching",
+   "priorityNote": "Make the goal and the meaning of dash and link clear",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/the-zipper-1.webp",
    "lastChange": "2026-10-19T17:22:41+00:00",
@@ -5997,6 +6921,20 @@
     "totalUsdEst": 20.26
    },
    "tasks": [
+    {
+     "title": "the zipper core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Make the goal and the meaning of dash and link clear; interaction that explains itself.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "review of zipper guide",
      "state": "done",
@@ -6027,7 +6965,7 @@
     }
    ],
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-19T17:22:41+00:00",
@@ -6061,10 +6999,10 @@
    "title": "Thumb Stand",
    "line": "",
    "url": "https://chenhsieh.github.io/thumb-stand/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Fix the level 3 block, then push the visual toward the",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/thumb-stand-1.webp",
    "lastChange": "2026-10-18T08:34:11+00:00",
@@ -6080,7 +7018,22 @@
     "earlierUsdEst": 25.2,
     "totalUsdEst": 25.2
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "thumb stand level3",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Fix the level 3 block, then push the visual toward the original eccentric source.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -6126,10 +7079,10 @@
    "title": "Time Material",
    "line": "Scrub through a frame history and draw with time.",
    "url": "https://chenhsieh.github.io/time-material/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Find the core and make the time-and-material rules",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/time-material-1.webp",
    "lastChange": null,
@@ -6145,7 +7098,22 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "time material core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Find the core and make the time-and-material rules understandable.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": []
@@ -6157,8 +7125,8 @@
    "url": "https://chenhsieh.github.io/tomorrow-bag/",
    "stage": "live",
    "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "priority": "P4",
+   "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/tomorrow-bag-1.webp",
    "lastChange": "2026-10-18T09:31:43+00:00",
@@ -6225,10 +7193,10 @@
    "title": "Tractatus Tree",
    "line": "The numbered pages of a 1921 book are shuffled into a few.",
    "url": "https://chenhsieh.github.io/tractatus-tree/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Teach the philosophy gradually through play, not as homework",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/tractatus-tree-1.webp",
    "lastChange": "2026-10-18T09:14:31+00:00",
@@ -6244,7 +7212,22 @@
     "earlierUsdEst": 14.4,
     "totalUsdEst": 14.4
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "tractatus tree wittgenstein",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Teach the philosophy gradually through play, not as homework.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -6275,10 +7258,10 @@
    "title": "Tree Hero",
    "line": "Swap branches until the family tree needs the fewest changes.",
    "url": "https://chenhsieh.github.io/tree-hero/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P1",
+   "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/tree-hero-1.webp",
    "lastChange": null,
@@ -6294,8 +7277,27 @@
     "earlierUsdEst": 0.0,
     "totalUsdEst": 0.0
    },
-   "tasks": [],
-   "verdict": null,
+   "tasks": [
+    {
+     "title": "tree hero bio round",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Bioinformatics round: make the idea legible in the first minute, add a light story, refine the interface.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "verdict": {
+    "date": "2026-10-19",
+    "verdict": "revise",
+    "note": "Bioinformatics round: make the idea legible in the first"
+   },
    "needsYou": null,
    "history": []
   },
@@ -6304,10 +7306,10 @@
    "title": "Triangle Lexicon",
    "line": "Follow a small language through a triangle.",
    "url": "https://chenhsieh.github.io/triangle-lexicon/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Snappier interaction and a distinctive taste for the",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/triangle-lexicon-1.webp",
    "lastChange": "2026-10-17T22:08:17+00:00",
@@ -6323,7 +7325,22 @@
     "earlierUsdEst": 7.2,
     "totalUsdEst": 7.2
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "triangle lexicon snappier",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Snappier interaction and a distinctive taste for the triangle word puzzle.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -6346,8 +7363,8 @@
    "url": "https://chenhsieh.github.io/trick-box/",
    "stage": "live",
    "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "priority": "P4",
+   "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/trick-box-1.webp",
    "lastChange": "2026-10-18T12:51:24+00:00",
@@ -6501,10 +7518,10 @@
    "title": "Uneven Loop",
    "line": "Step through frames and return to the start.",
    "url": "https://chenhsieh.github.io/uneven-loop/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Clarify the loop mechanism and let the sequencer make music",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/uneven-loop-1.webp",
    "lastChange": "2026-10-17T22:08:17+00:00",
@@ -6520,7 +7537,22 @@
     "earlierUsdEst": 7.2,
     "totalUsdEst": 7.2
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "uneven loop sequencer",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Clarify the loop mechanism and let the sequencer make music.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -6541,10 +7573,10 @@
    "title": "Walls Have Ears",
    "line": "Wish for tea and find which piece is listening.",
    "url": "https://chenhsieh.github.io/walls-have-ears/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
-   "priorityNote": "Works; new bug kinds idea",
+   "priorityNote": "Hotel key-cabinet level grid grouped by mechanism, and a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/walls-have-ears-1.webp",
    "lastChange": "2026-10-19T17:24:06+00:00",
@@ -6561,6 +7593,20 @@
     "totalUsdEst": 68.51
    },
    "tasks": [
+    {
+     "title": "walls have ears key cabinet",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Hotel key-cabinet level grid grouped by mechanism, and a clearer opening.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "walls thin walls",
      "state": "done",
@@ -6651,7 +7697,7 @@
     "verdict": "revise",
     "note": "Fun but simple; joke must land"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-19T17:24:06+00:00",
@@ -6716,49 +7762,14 @@
    ]
   },
   {
-   "id": "web-inspiration",
-   "title": "Web Inspiration",
-   "line": "",
-   "url": "https://chenhsieh.github.io/web-inspiration/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
-   "shelfNote": "",
-   "image": null,
-   "lastChange": "2026-10-18T05:43:37+00:00",
-   "cost": {
-    "apiUsd": 0.0,
-    "codexRuns": 0,
-    "claudeRuns": 0,
-    "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 1,
-    "earlierUsdEst": 3.6,
-    "totalUsdEst": 3.6
-   },
-   "tasks": [],
-   "verdict": null,
-   "needsYou": null,
-   "history": [
-    {
-     "at": "2026-10-18T05:43:37+00:00",
-     "ok": true,
-     "note": "taste library: documented 20 mkdir.directory-traced site captures with source URLs, styles, game interaction ideas, Play Lab fits, reusable patterns, revisit procedure; linked from TASTE.md and low-ai-feel registry"
-    }
-   ]
-  },
-  {
    "id": "clean-features",
    "title": "What the Dish Sees",
    "line": "Label each colony with the one shape it sees by placing.",
    "url": "https://chenhsieh.github.io/clean-features/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "planning",
+   "who": "Claude",
+   "priority": "P1",
+   "priorityNote": "Find the playable frame for the latent-space game: a clear",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/clean-features-1.webp",
    "lastChange": "2026-10-18T13:48:12+00:00",
@@ -6775,6 +7786,20 @@
     "totalUsdEst": 14.81
    },
    "tasks": [
+    {
+     "title": "clean features frame",
+     "state": "planned",
+     "worker": "Claude",
+     "plan": "Find the playable frame for the latent-space game: a clear goal, a reason each click matters, dimension navigation with transitions.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "clean features followup",
      "state": "done",
@@ -6819,7 +7844,7 @@
     }
    ],
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-18T13:48:12+00:00",
@@ -6887,10 +7912,10 @@
    "title": "Zoom Out",
    "line": "",
    "url": "https://chenhsieh.github.io/zoom-out/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Circular scale story (molecule to universe, butterfly",
    "shelfNote": "",
    "image": null,
    "lastChange": "2026-10-18T14:30:08+00:00",
@@ -6906,7 +7931,22 @@
     "earlierUsdEst": 18.0,
     "totalUsdEst": 25.14
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "zoom out butterfly",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Circular scale story (molecule to universe, butterfly dream), remove obviously wrong choices, mind-bending visuals, new preview.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
@@ -6942,10 +7982,10 @@
    "title": "阿嬤讀得出來",
    "line": "A famous Tang poem line is printed as fake glyphs with.",
    "url": "https://chenhsieh.github.io/readable-nonsense/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Show the candidate set shrinking, use best not par, make",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/readable-nonsense-1.webp",
    "lastChange": "2026-10-18T11:36:29+00:00",
@@ -6961,7 +8001,22 @@
     "earlierUsdEst": 18.0,
     "totalUsdEst": 20.95
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "readable nonsense shrink",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Show the candidate set shrinking, use best not par, make narrowing a strategy, name Zhuyin properly.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "verdict": null,
    "needsYou": null,
    "history": [
