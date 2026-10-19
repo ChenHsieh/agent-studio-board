@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T17:52:27+00:00",
+ "generated": "2026-10-19T17:54:30+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,18 +10,18 @@
  "lanes": [
   {
    "worker": "Codex",
-   "game": "dough-boundary",
-   "task": "bake 320 layout gpt 5",
-   "since": "2026-10-19T17:45:33+00:00",
-   "activity": "2026-10-19T17:51:36+00:00",
+   "game": "floor-area",
+   "task": "bake credit gpt 5",
+   "since": "2026-10-19T17:54:07+00:00",
+   "activity": "2026-10-19T17:54:07+00:00",
    "commit": null
   },
   {
    "worker": "Codex",
-   "game": "dough-boundary",
-   "task": "bake 320 layout gpt 5",
-   "since": "2026-10-19T17:50:03+00:00",
-   "activity": "2026-10-19T17:51:36+00:00",
+   "game": "floor-area",
+   "task": "bake credit gpt 5",
+   "since": "2026-10-19T17:54:11+00:00",
+   "activity": "2026-10-19T17:54:11+00:00",
    "commit": null
   }
  ],
@@ -1348,8 +1348,8 @@
    "title": "Dough Boundary",
    "line": "Press one dough patch into a touching dough patch.",
    "url": "https://chenhsieh.github.io/dough-boundary/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Goal and colour chart",
    "shelfNote": "",
@@ -1359,22 +1359,22 @@
     "apiUsd": 6.45,
     "codexRuns": 2,
     "claudeRuns": 2,
-    "apiRuns": 2,
+    "apiRuns": 4,
     "codexTokens": 509240,
     "codexUsdEst": 0.61,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 7,
-    "earlierUsdEst": 25.2,
-    "totalUsdEst": 39.46
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
+    "totalUsdEst": 32.26
    },
    "tasks": [
     {
      "title": "bake 320 layout gpt 5",
-     "state": "running",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude API",
      "plan": "",
-     "since": "2026-10-19T17:50:03+00:00",
-     "done": null,
+     "since": "2026-10-19T17:38:31+00:00",
+     "done": "2026-10-19T17:38:31+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -1384,11 +1384,11 @@
     },
     {
      "title": "bake 320 layout gpt 5",
-     "state": "running",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude API",
      "plan": "",
-     "since": "2026-10-19T17:45:33+00:00",
-     "done": null,
+     "since": "2026-10-19T17:38:31+00:00",
+     "done": "2026-10-19T17:38:31+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -1486,7 +1486,7 @@
     "verdict": "revise",
     "note": "Playable; fun and look unclear"
    },
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
     {
      "at": "2026-10-19T02:25:00+00:00",
@@ -2013,7 +2013,7 @@
    "title": "Floor Area",
    "line": "Drop floor slabs from a crane to fill a stepped skyline with no gaps.",
    "url": "https://chenhsieh.github.io/floor-area/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P4",
    "priorityNote": "",
@@ -2035,10 +2035,10 @@
    "tasks": [
     {
      "title": "bake credit gpt 5",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "",
-     "since": "2026-10-19T17:38:31+00:00",
+     "since": "2026-10-19T17:54:11+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2049,10 +2049,10 @@
     },
     {
      "title": "bake credit gpt 5",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "",
-     "since": "2026-10-19T17:38:31+00:00",
+     "since": "2026-10-19T17:54:07+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
