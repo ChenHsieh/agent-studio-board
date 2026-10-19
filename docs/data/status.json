@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T19:57:28+00:00",
+ "generated": "2026-10-19T19:59:31+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 71,
+    "queued": 70,
     "running": 2,
-    "doneToday": 28,
-    "minutes": 2830,
-    "estimateMinutes": 1415
+    "doneToday": 29,
+    "minutes": 2790,
+    "estimateMinutes": 1395
    },
    "Claude": {
     "queued": 0,
@@ -24,35 +24,35 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 71,
+  "queued": 70,
   "running": 3,
-  "doneToday": 48,
+  "doneToday": 49,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2890,
-  "estimatedFinish": "2026-10-20T19:32:28+00:00",
-  "estimateMinutes": 1415
+  "minutesRemaining": 2850,
+  "estimatedFinish": "2026-10-20T19:14:31+00:00",
+  "estimateMinutes": 1395
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "remote-viewer",
-   "task": "remote viewer design pass",
-   "since": "2026-10-19T19:46:21+00:00",
-   "activity": "2026-10-19T19:57:28+00:00",
-   "commit": {
-    "at": "2026-10-19T19:55:26+00:00",
-    "subject": "feat: make each file a distinct investigation"
-   }
-  },
   {
    "worker": "Codex",
    "game": "BioRedactle-nextjs",
    "task": "BioRedactle nextjs ui pass",
    "since": "2026-10-19T19:57:09+00:00",
-   "activity": "2026-10-19T19:57:24+00:00",
+   "activity": "2026-10-19T19:59:21+00:00",
+   "commit": {
+    "at": "2026-10-19T19:57:57+00:00",
+    "subject": "start: P1c10_BioRedactle-nextjs-ui-pass"
+   }
+  },
+  {
+   "worker": "Codex",
+   "game": "sockglass",
+   "task": "sockglass clarity",
+   "since": "2026-10-19T19:58:36+00:00",
+   "activity": "2026-10-19T19:59:30+00:00",
    "commit": null
   },
   {
@@ -60,7 +60,7 @@
    "game": "directory-handrail",
    "task": "review of directory handrail flagship round",
    "since": "2026-10-19T19:48:23+00:00",
-   "activity": "2026-10-19T19:52:20+00:00",
+   "activity": "2026-10-19T19:59:14+00:00",
    "commit": null
   }
  ],
@@ -94,7 +94,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 36
+   "changes": 37
   }
  ],
  "houseRules": 21,
@@ -666,7 +666,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/bioredactle-1.webp",
    "firstSeen": "2026-10-17T23:15:14+00:00",
-   "lastChange": "2026-10-19T19:57:24+00:00",
+   "lastChange": "2026-10-19T19:59:21+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -691,7 +691,10 @@
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-19T19:57:57+00:00",
+      "subject": "start: P1c10_BioRedactle-nextjs-ui-pass"
+     },
      "result": ""
     }
    ],
@@ -5253,43 +5256,40 @@
    "title": "Remote Viewer",
    "line": "Uncover a CIA file and name its assignment.",
    "url": "https://chenhsieh.github.io/remote-viewer/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Game-design pass to find where the fun is and build it",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/remote-viewer-1.webp",
    "firstSeen": "2026-10-17T16:38:08+00:00",
-   "lastChange": "2026-10-19T19:57:28+00:00",
+   "lastChange": "2026-10-19T19:57:53+00:00",
    "cost": {
     "apiUsd": 9.24,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 1,
     "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 245568,
+    "codexUsdEst": 0.29,
     "claudeUsdEst": 3.6,
     "earlierRounds": 1,
     "earlierUsdEst": 3.6,
-    "totalUsdEst": 16.44
+    "totalUsdEst": 16.73
    },
    "tasks": [
     {
      "title": "remote viewer design pass",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Game-design pass to find where the fun is and build it.",
-     "since": "2026-10-19T19:46:21+00:00",
-     "done": null,
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 12,
+     "tokens": 245568,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-19T19:55:26+00:00",
-      "subject": "feat: make each file a distinct investigation"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Changed: five files now present distinct investigations, clear 0/5 progress, and a transcript-first board with the source scan as evidence."
     },
     {
      "title": "remote viewer",
@@ -5313,6 +5313,11 @@
    },
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-19T19:57:53+00:00",
+     "ok": true,
+     "note": "distinct five-file investigation briefs, shared daily progress, and transcript-first evidence view live; 390x844 and 320x568 real-touch checks reviewed"
+    },
     {
      "at": "2026-10-18T00:05:43+00:00",
      "ok": true,
@@ -6037,7 +6042,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/directory-handrail-1.webp",
    "firstSeen": "2026-10-15T20:39:24+00:00",
-   "lastChange": "2026-10-19T19:52:20+00:00",
+   "lastChange": "2026-10-19T19:59:14+00:00",
    "cost": {
     "apiUsd": 7.97,
     "codexRuns": 3,
@@ -6417,14 +6422,14 @@
    "title": "Sockglass",
    "line": "Drag tissue-paper socks onto a dark bedroom window; where.",
    "url": "https://chenhsieh.github.io/sockglass/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Make sock sizes and counts readable and let the theme",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/sockglass-1.webp",
    "firstSeen": "2026-10-16T00:35:59+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-19T19:59:30+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -6440,10 +6445,10 @@
    "tasks": [
     {
      "title": "sockglass clarity",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Make sock sizes and counts readable and let the theme explain why socks go on the window.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "since": "2026-10-19T19:58:36+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
