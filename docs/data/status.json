@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T15:21:45+00:00",
+ "generated": "2026-10-19T15:23:47+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -13,7 +13,7 @@
    "game": "gif-cities",
    "task": "gif speed",
    "since": "2026-10-19T15:19:53+00:00",
-   "activity": "2026-10-19T15:21:38+00:00",
+   "activity": "2026-10-19T15:23:47+00:00",
    "commit": {
     "at": "2026-10-19T15:21:02+00:00",
     "subject": "start: gif-cities speed and depth"
@@ -21,10 +21,10 @@
   },
   {
    "worker": "Claude",
-   "game": "cymatic-plate",
-   "task": "review of cymatic assist",
-   "since": "2026-10-19T15:12:38+00:00",
-   "activity": "2026-10-19T15:20:06+00:00",
+   "game": "directory-handrail",
+   "task": "review of signposts manager",
+   "since": "2026-10-19T15:22:00+00:00",
+   "activity": "2026-10-19T15:22:00+00:00",
    "commit": null
   }
  ],
@@ -58,7 +58,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 10
+   "changes": 11
   }
  ],
  "houseRules": 16,
@@ -1057,33 +1057,33 @@
    "title": "Cymatic Plate",
    "line": "Ring notes on a brass plate covered in sand and watch the.",
    "url": "https://chenhsieh.github.io/cymatic-plate/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/cymatic-plate-1.webp",
-   "lastChange": "2026-10-19T15:05:57+00:00",
+   "lastChange": "2026-10-19T15:21:52+00:00",
    "cost": {
     "apiUsd": 3.26,
     "codexRuns": 3,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 1,
     "codexTokens": 500161,
     "codexUsdEst": 0.6,
-    "claudeUsdEst": 10.8,
+    "claudeUsdEst": 14.4,
     "earlierRounds": 5,
     "earlierUsdEst": 18.0,
-    "totalUsdEst": 32.66
+    "totalUsdEst": 36.26
    },
    "tasks": [
     {
      "title": "review of cymatic assist",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "",
      "since": "2026-10-19T15:12:38+00:00",
-     "done": null,
+     "done": "2026-10-19T15:12:38+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -1098,7 +1098,7 @@
      "plan": "Remove the assist ring unless its effect is visible; keep Listen; open all levels.",
      "since": "2026-10-19T14:51:10+00:00",
      "done": "2026-10-19T14:51:10+00:00",
-     "reviewed": false,
+     "reviewed": true,
      "minutes": 15,
      "tokens": 151820,
      "reviewOutcome": null,
@@ -1195,8 +1195,13 @@
     "verdict": "ship",
     "note": "Ready; ease the hardest steps"
    },
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-19T15:21:52+00:00",
+     "ok": true,
+     "note": "review R19: published Codex branch (assist ring removed, all levels open)"
+    },
     {
      "at": "2026-10-19T15:05:57+00:00",
      "ok": true,
@@ -1251,11 +1256,6 @@
      "at": "2026-10-16T08:36:17+00:00",
      "ok": true,
      "note": "IMPROVED 8/8"
-    },
-    {
-     "at": "2026-10-16T01:40:04+00:00",
-     "ok": true,
-     "note": "LIVE https://chenhsieh.github.io/cymatic-plate/ (claude builder, batch3)"
     }
    ]
   },
@@ -4885,7 +4885,7 @@
    "title": "Signposts",
    "line": "Signposts is a short phone puzzle about hanging route.",
    "url": "https://chenhsieh.github.io/directory-handrail/",
-   "stage": "review",
+   "stage": "building",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Closest to finished; fun pass",
@@ -4905,6 +4905,20 @@
     "totalUsdEst": 41.03
    },
    "tasks": [
+    {
+     "title": "review of signposts manager",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-19T15:22:00+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "signposts manager",
      "state": "done",
