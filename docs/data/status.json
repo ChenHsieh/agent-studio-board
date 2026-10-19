@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T02:24:23+00:00",
+ "generated": "2026-10-19T02:26:25+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -7,18 +7,9 @@
   "url": "https://chenhsieh.github.io/play-lab/",
   "blurb": "A small studio of browser games, built by a queue of coding agents and reviewed by another."
  },
- "lanes": [
-  {
-   "worker": "Claude",
-   "game": "dough-boundary",
-   "task": "review of dough twist",
-   "since": "2026-10-19T02:15:49+00:00",
-   "activity": "2026-10-19T02:23:41+00:00",
-   "commit": null
-  }
- ],
+ "lanes": [],
  "codexLanes": 1,
- "claudeWorkers": 1,
+ "claudeWorkers": 0,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -43,7 +34,7 @@
   },
   {
    "day": "2026-10-18",
-   "changes": 127
+   "changes": 128
   }
  ],
  "houseRules": 15,
@@ -1269,33 +1260,33 @@
    "title": "Dough Boundary",
    "line": "Press one dough patch into a touching dough patch.",
    "url": "https://chenhsieh.github.io/dough-boundary/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Goal and colour chart",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/dough-boundary-1.webp",
-   "lastChange": "2026-10-18T22:07:36+00:00",
+   "lastChange": "2026-10-19T02:25:00+00:00",
    "cost": {
     "apiUsd": 6.45,
     "codexRuns": 2,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 1,
     "codexTokens": 509240,
     "codexUsdEst": 0.61,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 8,
     "earlierUsdEst": 28.8,
-    "totalUsdEst": 39.46
+    "totalUsdEst": 43.06
    },
    "tasks": [
     {
      "title": "review of dough twist",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "",
      "since": "2026-10-19T02:15:49+00:00",
-     "done": null,
+     "done": "2026-10-19T02:15:49+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -1310,10 +1301,10 @@
      "plan": "A cleaner dough look and a dough-specific twist that sets it apart from Kami 2.",
      "since": "2026-10-18T20:13:39+00:00",
      "done": "2026-10-18T20:13:39+00:00",
-     "reviewed": false,
+     "reviewed": true,
      "minutes": 15,
      "tokens": 274167,
-     "reviewOutcome": null,
+     "reviewOutcome": "fixed",
      "commit": null,
      "result": "Players can proof dough into warm pockets; texture is now kneaded grooves, folds, and dimples."
     },
@@ -1365,8 +1356,13 @@
     "verdict": "revise",
     "note": "Playable; fun and look unclear"
    },
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-19T02:25:00+00:00",
+     "ok": true,
+     "note": "R16 review: dough stays on screen at 320x568 with a rule card; stale tests fixed ()"
+    },
     {
      "at": "2026-10-18T22:07:36+00:00",
      "ok": true,
@@ -1421,11 +1417,6 @@
      "at": "2026-10-15T20:54:59+00:00",
      "ok": true,
      "note": "build start in"
-    },
-    {
-     "at": "2026-10-15T20:54:25+00:00",
-     "ok": true,
-     "note": "START job V1="
     }
    ]
   },
