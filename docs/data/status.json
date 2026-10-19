@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T20:32:20+00:00",
+ "generated": "2026-10-19T20:34:23+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 69,
+    "queued": 68,
     "running": 2,
-    "doneToday": 31,
-    "minutes": 2750,
-    "estimateMinutes": 1375
+    "doneToday": 32,
+    "minutes": 2710,
+    "estimateMinutes": 1355
    },
    "Claude": {
     "queued": 0,
@@ -24,16 +24,16 @@
     "estimateMinutes": 0
    }
   },
-  "queued": 69,
+  "queued": 68,
   "running": 2,
-  "doneToday": 55,
+  "doneToday": 56,
   "lanes": {
    "Codex": 2,
    "Claude": 0
   },
-  "minutesRemaining": 2750,
-  "estimatedFinish": "2026-10-20T19:27:20+00:00",
-  "estimateMinutes": 1375
+  "minutesRemaining": 2710,
+  "estimatedFinish": "2026-10-20T19:09:23+00:00",
+  "estimateMinutes": 1355
  },
  "lanes": [
   {
@@ -46,14 +46,11 @@
   },
   {
    "worker": "Codex",
-   "game": "align-hero",
-   "task": "align hero bio round",
-   "since": "2026-10-19T20:16:44+00:00",
-   "activity": "2026-10-19T20:31:47+00:00",
-   "commit": {
-    "at": "2026-10-19T20:28:27+00:00",
-    "subject": "feat: make the alignment mission visible"
-   }
+   "game": "biosteganography",
+   "task": "biosteganography bio round",
+   "since": "2026-10-19T20:33:34+00:00",
+   "activity": "2026-10-19T20:34:22+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 2,
@@ -86,7 +83,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 39
+   "changes": 40
   }
  ],
  "houseRules": 21,
@@ -228,43 +225,40 @@
    "title": "Align Hero",
    "line": "Two lines of letters, one slipped. Find where it slipped.",
    "url": "https://chenhsieh.github.io/align-hero/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/align-hero-1.webp",
-   "firstSeen": "2026-10-19T20:16:44+00:00",
-   "lastChange": "2026-10-19T20:31:47+00:00",
+   "firstSeen": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-19T20:32:55+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 0,
     "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 212697,
+    "codexUsdEst": 0.26,
     "claudeUsdEst": 0.0,
     "earlierRounds": 0,
     "earlierUsdEst": 0.0,
-    "totalUsdEst": 0.0
+    "totalUsdEst": 0.26
    },
    "tasks": [
     {
      "title": "align hero bio round",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Bioinformatics round: make the idea legible in the first minute, add a light story, refine the interface.",
-     "since": "2026-10-19T20:16:44+00:00",
-     "done": null,
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 17,
+     "tokens": 212697,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-19T20:28:27+00:00",
-      "subject": "feat: make the alignment mission visible"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Players now see the DNA-alignment mission and meaningful lesson/base progress from the first screen."
     }
    ],
    "verdict": {
@@ -273,7 +267,13 @@
     "note": "Bioinformatics round: make the idea legible in the first"
    },
    "needsYou": null,
-   "history": []
+   "history": [
+    {
+     "at": "2026-10-19T20:32:55+00:00",
+     "ok": false,
+     "note": "bio-round- merged and locally verified: biological mission plus shared target progress are clear at 390x844 and 320x568; the single Pages publish still serves the prior artifact"
+    }
+   ]
   },
   {
    "id": "anechoic-fugue",
@@ -710,14 +710,14 @@
    "title": "Biosteganography",
    "line": "Straighten the stripes to find a hidden repeat.",
    "url": "https://chenhsieh.github.io/biosteganography/demo/snap.html",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/biosteganography-1.webp",
-   "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "firstSeen": "2026-10-19T20:33:34+00:00",
+   "lastChange": "2026-10-19T20:34:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -733,10 +733,10 @@
    "tasks": [
     {
      "title": "biosteganography bio round",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Bioinformatics round: make the idea legible in the first minute, add a light story, refine the interface.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "since": "2026-10-19T20:33:34+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
