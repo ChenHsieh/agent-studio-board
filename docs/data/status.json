@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T22:06:48+00:00",
+ "generated": "2026-10-19T22:08:52+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 57,
+    "queued": 56,
     "running": 2,
-    "doneToday": 44,
-    "minutes": 2290,
-    "estimateMinutes": 1145
+    "doneToday": 45,
+    "minutes": 2250,
+    "estimateMinutes": 1125
    },
    "Claude": {
     "queued": 0,
@@ -24,16 +24,16 @@
     "estimateMinutes": 0
    }
   },
-  "queued": 57,
+  "queued": 56,
   "running": 2,
-  "doneToday": 72,
+  "doneToday": 73,
   "lanes": {
    "Codex": 2,
    "Claude": 0
   },
-  "minutesRemaining": 2290,
-  "estimatedFinish": "2026-10-20T17:11:48+00:00",
-  "estimateMinutes": 1145
+  "minutesRemaining": 2250,
+  "estimatedFinish": "2026-10-20T16:53:52+00:00",
+  "estimateMinutes": 1125
  },
  "lanes": [
   {
@@ -46,13 +46,13 @@
   },
   {
    "worker": "Codex",
-   "game": "chai-boil",
-   "task": "chai boil forgiving dial",
-   "since": "2026-10-19T21:47:11+00:00",
-   "activity": "2026-10-19T22:06:46+00:00",
+   "game": "anechoic-fugue",
+   "task": "anechoic fugue build",
+   "since": "2026-10-19T22:06:57+00:00",
+   "activity": "2026-10-19T22:08:52+00:00",
    "commit": {
-    "at": "2026-10-19T22:02:15+00:00",
-    "subject": "feat: clarify orders and kitchen progress"
+    "at": "2026-10-19T22:08:03+00:00",
+    "subject": "start: P2c05_anechoic-fugue-build"
    }
   }
  ],
@@ -302,14 +302,14 @@
    "title": "Anechoic Fugue",
    "line": "Place speakers so the sleeper's chair goes quiet.",
    "url": "https://chenhsieh.github.io/anechoic-fugue/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Decide the physical model and its on-screen readout, choose",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/anechoic-fugue-1.webp",
    "firstSeen": "2026-10-15T19:39:22+00:00",
-   "lastChange": "2026-10-19T18:03:20+00:00",
+   "lastChange": "2026-10-19T22:08:52+00:00",
    "cost": {
     "apiUsd": 17.97,
     "codexRuns": 0,
@@ -325,16 +325,19 @@
    "tasks": [
     {
      "title": "anechoic fugue build",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Slow the water, show each duckling's rocking and the still seam, koi replace the floats, soft water sound, every level a new decision.",
-     "since": "2026-10-19T18:03:20+00:00",
+     "since": "2026-10-19T22:06:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-19T22:08:03+00:00",
+      "subject": "start: P2c05_anechoic-fugue-build"
+     },
      "result": ""
     },
     {
@@ -867,43 +870,40 @@
    "title": "Chai Boil",
    "line": "One pot, one dial: let the chai rise to the rim, not over it.",
    "url": "https://chenhsieh.github.io/chai-boil/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Steadier dial (keys on desktop), a forgiving golden zone, a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/chai-boil-1.webp",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-19T22:06:46+00:00",
+   "lastChange": "2026-10-19T22:05:51+00:00",
    "cost": {
     "apiUsd": 6.73,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 0,
     "apiRuns": 2,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 221812,
+    "codexUsdEst": 0.27,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
-    "totalUsdEst": 24.73
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
+    "totalUsdEst": 21.4
    },
    "tasks": [
     {
      "title": "chai boil forgiving dial",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Steadier dial (keys on desktop), a forgiving golden zone, a visible recipe book, clearer customers, unlockable dishes.",
-     "since": "2026-10-19T21:47:11+00:00",
-     "done": null,
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 20,
+     "tokens": 221812,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-19T22:02:15+00:00",
-      "subject": "feat: clarify orders and kitchen progress"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Golden-band control is gentler, with visible route progress, orders, recipe book, ingredient effect marks, arrow-key and step dial controls, and kitchen unlock previews."
     },
     {
      "title": "chai potion",
@@ -935,7 +935,7 @@
     }
    ],
    "verdict": null,
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
     {
      "at": "2026-10-19T22:05:51+00:00",
