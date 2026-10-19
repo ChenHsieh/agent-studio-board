@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T07:58:22+00:00",
+ "generated": "2026-10-19T08:00:24+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,13 +10,13 @@
  "lanes": [
   {
    "worker": "Claude",
-   "game": "colony-count",
-   "task": "colony hints hard",
-   "since": "2026-10-19T03:53:51+00:00",
-   "activity": "2026-10-19T07:56:56+00:00",
+   "game": "gif-cities",
+   "task": "gif cities growth",
+   "since": "2026-10-19T07:59:00+00:00",
+   "activity": "2026-10-19T07:59:08+00:00",
    "commit": {
-    "at": "2026-10-19T07:56:51+00:00",
-    "subject": "feat: hints that make you think, a Hidden colours tier, and an Endless difficulty"
+    "at": "2026-10-19T07:59:08+00:00",
+    "subject": "start: GIF Cities growth and clear symbols"
    }
   }
  ],
@@ -47,6 +47,10 @@
   {
    "day": "2026-10-18",
    "changes": 134
+  },
+  {
+   "day": "2026-10-19",
+   "changes": 1
   }
  ],
  "houseRules": 15,
@@ -653,18 +657,18 @@
    "title": "Colony Count",
    "line": "Solve three daily levels, then freeze finished plates.",
    "url": "https://chenhsieh.github.io/colony-count/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Flagship; has its own owner",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
-   "lastChange": "2026-10-18T15:31:08+00:00",
+   "lastChange": "2026-10-19T07:58:59+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
     "claudeRuns": 1,
-    "apiRuns": 3,
+    "apiRuns": 4,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
@@ -675,20 +679,17 @@
    "tasks": [
     {
      "title": "colony hints hard",
-     "state": "running",
-     "worker": "Claude",
+     "state": "done",
+     "worker": "Claude API",
      "plan": "Hints that show the logical step on the board, plus harder tiers with more and hidden colours, each proven to have one answer.",
-     "since": "2026-10-19T03:53:51+00:00",
-     "done": null,
+     "since": "2026-10-18T20:13:59+00:00",
+     "done": "2026-10-18T20:13:59+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-19T07:56:51+00:00",
-      "subject": "feat: hints that make you think, a Hidden colours tier, and an Endless difficulty"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Hints now take two taps: the first shows the clue and the squares it counts, the second gives the answer; a new Hidden colours tier and an Endless difficulty picker are live."
     },
     {
      "title": "colony count more finish",
@@ -755,6 +756,11 @@
    "needsYou": null,
    "history": [
     {
+     "at": "2026-10-19T07:58:59+00:00",
+     "ok": true,
+     "note": "S10: two-tap reasoning hints, Hidden colours tier (60/60 unique), Endless picker ()"
+    },
+    {
      "at": "2026-10-18T15:31:08+00:00",
      "ok": true,
      "note": "cc-quiet- live : quiet board in all animal themes: open squares plain soft tiles (texture only on the rim), marked-empty a step darker with the empty sign; squares under 36 px get eyes-only pieces and a numbered one carries its number on a clean"
@@ -808,11 +814,6 @@
      "at": "2026-10-17T21:50:51+00:00",
      "ok": true,
      "note": "theme+business study (design only): THEME_BIZ_20261017.md + 4 mocks in theme_20261017/; recommends kittens-in-sunbeam theme, LINE stickers as business case; repo untouched"
-    },
-    {
-     "at": "2026-10-17T21:25:34+00:00",
-     "ok": true,
-     "note": "How to play card 130 words -> one page per rule met (page 1 goal + counts); lessons 2-3 New tag + hand on the plate; hearts taught on Starter 1 (LIVE )"
     }
    ]
   },
@@ -2163,7 +2164,7 @@
    "title": "GIF Cities",
    "line": "Stack rescued GIFs down a 1999 homepage so every visitor.",
    "url": "https://chenhsieh.github.io/gif-cities/",
-   "stage": "planning",
+   "stage": "building",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Promising; rules need explaining",
@@ -2185,16 +2186,19 @@
    "tasks": [
     {
      "title": "gif cities growth",
-     "state": "planned",
+     "state": "running",
      "worker": "Claude",
      "plan": "Explain hearts and great placements, add a collection, rethink the guest-book framing for young players, check whether live Giphy results are allowed.",
-     "since": "2026-10-18T20:13:59+00:00",
+     "since": "2026-10-19T07:59:00+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-19T07:59:08+00:00",
+      "subject": "start: GIF Cities growth and clear symbols"
+     },
      "result": ""
     },
     {
