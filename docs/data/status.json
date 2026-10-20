@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T20:17:39+00:00",
+ "generated": "2026-10-20T20:19:53+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -17,23 +17,23 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 97,
-    "running": 2,
-    "doneToday": 15,
-    "minutes": 1332,
-    "estimateMinutes": 1332
+    "queued": 96,
+    "running": 1,
+    "doneToday": 16,
+    "minutes": 1260,
+    "estimateMinutes": 1260
    }
   },
-  "queued": 97,
-  "running": 2,
-  "doneToday": 21,
+  "queued": 96,
+  "running": 1,
+  "doneToday": 22,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 1332,
-  "estimatedFinish": "2026-10-21T18:29:39+00:00",
-  "estimateMinutes": 1332
+  "minutesRemaining": 1260,
+  "estimatedFinish": "2026-10-21T17:19:53+00:00",
+  "estimateMinutes": 1260
  },
  "lanes": [
   {
@@ -41,20 +41,12 @@
    "game": "UGA-grad-survivor",
    "task": "uga survivor fresh eyes review",
    "since": "2026-10-20T20:11:05+00:00",
-   "activity": "2026-10-20T20:11:21+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "colony-count",
-   "task": "colony tiling study",
-   "since": "2026-10-20T20:14:25+00:00",
-   "activity": "2026-10-20T20:16:29+00:00",
+   "activity": "2026-10-20T20:19:27+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -87,7 +79,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 38
+   "changes": 40
   }
  ],
  "houseRules": 23,
@@ -1837,41 +1829,27 @@
    "title": "Colony Count",
    "line": "Solve three daily levels, then freeze finished plates.",
    "url": "https://chenhsieh.github.io/colony-count/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Flagship; has its own owner",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-20T20:16:29+00:00",
+   "lastChange": "2026-10-20T20:18:02+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 6,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 14.4,
+    "claudeUsdEst": 18.0,
     "earlierRounds": 23,
     "earlierUsdEst": 82.8,
-    "totalUsdEst": 120.08
+    "totalUsdEst": 123.68
    },
    "tasks": [
-    {
-     "title": "colony tiling study",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Colony Count study 3: tilings.",
-     "since": "2026-10-20T20:14:25+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "colony incubator study",
      "state": "done",
@@ -1899,6 +1877,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "LIVE https://chenhsieh.github.io/colony-count/shapes.html?set=round (main , rollback tag pre-round-dish; new Round dish button on the home screen). Live bytes match; all 8 dishes solved by real touch on the live page at..."
+    },
+    {
+     "title": "colony tiling study",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Colony Count study 3: tilings.",
+     "since": "2026-10-20T19:00:06+00:00",
+     "done": "2026-10-20T19:00:06+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "LIVE https://chenhsieh.github.io/colony-count/shapes.html?set=tiling (main , rollback tag pre-tiling; new Octagon tiling button on the home screen). Live bytes match; all 8 dishes solved by real touch on the live page..."
     },
     {
      "title": "colony unlock themes",
@@ -1973,17 +1965,23 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 10
+    "done": 11
    },
    "verdict": {
     "date": "2026-10-18",
     "verdict": "ship",
     "note": "Ready; harder tiers and clearer hints next"
    },
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-20T20:18:02+00:00",
+     "ok": true,
+     "note": "Octagon tiling page (4.8.8, 8 dishes, bigger small squares); main https://chenhsieh.github.io/colony-count/shapes.html?set=tiling",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T20:14:02+00:00",
      "ok": true,
@@ -2049,12 +2047,6 @@
      "ok": true,
      "note": "feat: antibiotic discs that count empty squares, 12 x 12 Giant plates, drag to rule out",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-19T07:58:59+00:00",
-     "ok": true,
-     "note": "S10: two-tap reasoning hints, Hidden colours tier (60/60 unique), Endless picker ()",
-     "source": "board note"
     }
    ]
   },
@@ -14699,7 +14691,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/uga-grad-survivor-1.webp",
    "firstSeen": "2026-03-20T21:21:51+00:00",
-   "lastChange": "2026-10-20T20:11:21+00:00",
+   "lastChange": "2026-10-20T20:19:27+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
