@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T04:23:14+00:00",
+ "generated": "2026-10-20T04:25:18+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 65,
+    "queued": 64,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2600,
-    "estimateMinutes": 2600
+    "minutes": 2560,
+    "estimateMinutes": 2560
    },
    "Claude": {
     "queued": 2,
@@ -24,16 +24,16 @@
     "estimateMinutes": 240
    }
   },
-  "queued": 67,
+  "queued": 66,
   "running": 2,
   "doneToday": 0,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 2840,
-  "estimatedFinish": "2026-10-21T23:43:14+00:00",
-  "estimateMinutes": 2600
+  "minutesRemaining": 2800,
+  "estimatedFinish": "2026-10-21T23:05:18+00:00",
+  "estimateMinutes": 2560
  },
  "lanes": [
   {
@@ -46,10 +46,10 @@
   },
   {
    "worker": "Claude",
-   "game": "herbarium-guess",
-   "task": "herbarium guess ship standard",
-   "since": "2026-10-20T04:16:14+00:00",
-   "activity": "2026-10-20T04:21:07+00:00",
+   "game": "bluebook-guess",
+   "task": "bluebook guess ship standard",
+   "since": "2026-10-20T04:23:59+00:00",
+   "activity": "2026-10-20T04:24:29+00:00",
    "commit": null
   }
  ],
@@ -87,7 +87,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 3
+   "changes": 4
   }
  ],
  "houseRules": 23,
@@ -1394,14 +1394,14 @@
    "title": "Bluebook Guess",
    "line": "Place a US Air Force case file in time and place.",
    "url": "https://chenhsieh.github.io/bluebook-guess/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P4",
    "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/bluebook-guess-1.webp",
    "firstSeen": "2026-09-20T20:57:49+00:00",
-   "lastChange": "2026-10-20T00:32:22+00:00",
+   "lastChange": "2026-10-20T04:24:29+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -1417,10 +1417,10 @@
    "tasks": [
     {
      "title": "bluebook guess ship standard",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Bring it to the guessing-game ship standard: archive, practice with difficulty, stats and collection, cleanup, credits.",
-     "since": "2026-10-20T00:32:22+00:00",
+     "since": "2026-10-20T04:23:59+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1431,8 +1431,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
@@ -5840,19 +5840,19 @@
    "title": "Herbarium Guess",
    "line": "Place a pressed plant in place and year.",
    "url": "https://chenhsieh.github.io/herbarium-guess/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P3",
    "priorityNote": "Story and mechanism pass; pending a merge decision",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/herbarium-guess-1.webp",
    "firstSeen": "2026-09-20T05:10:20+00:00",
-   "lastChange": "2026-10-20T04:21:07+00:00",
+   "lastChange": "2026-10-20T04:23:55+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
     "claudeRuns": 0,
-    "apiRuns": 1,
+    "apiRuns": 2,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
@@ -5861,20 +5861,6 @@
     "totalUsdEst": 21.6
    },
    "tasks": [
-    {
-     "title": "herbarium guess ship standard",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Bring it to the guessing-game ship standard: archive, practice with difficulty, stats and collection, cleanup, credits.",
-     "since": "2026-10-20T04:16:14+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "herbarium guess trunk line",
      "state": "queued",
@@ -5888,6 +5874,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "herbarium guess ship standard",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Bring it to the guessing-game ship standard: archive, practice with difficulty, stats and collection, cleanup, credits.",
+     "since": "2026-10-20T00:32:22+00:00",
+     "done": "2026-10-20T00:32:22+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Player sees: a menu with Daily (3 sheets, turns over at local midnight), Archive of missed days, Practice (Easy shows the label, Medium crops it, Hard a narrow top band; 5 themed sets), Stats (medians and distance..."
     },
     {
      "title": "herbarium guess core",
@@ -5906,13 +5906,19 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": null,
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T04:23:55+00:00",
+     "ok": true,
+     "note": "ship standard: daily 3/day, archive, practice E/M/H + 5 sets, stats, collection; live",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T02:41:21+00:00",
      "ok": true,
