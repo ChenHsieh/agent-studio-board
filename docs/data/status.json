@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T01:37:17+00:00",
+ "generated": "2026-10-20T01:39:28+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -12,36 +12,44 @@
    "Codex": {
     "queued": 55,
     "running": 2,
-    "doneToday": 65,
+    "doneToday": 67,
     "minutes": 2210,
     "estimateMinutes": 1105
    },
    "Claude": {
-    "queued": 8,
+    "queued": 7,
     "running": 2,
     "doneToday": 34,
-    "minutes": 600,
-    "estimateMinutes": 600
+    "minutes": 540,
+    "estimateMinutes": 540
    }
   },
-  "queued": 63,
+  "queued": 62,
   "running": 4,
-  "doneToday": 99,
+  "doneToday": 101,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2810,
-  "estimatedFinish": "2026-10-20T20:02:17+00:00",
+  "minutesRemaining": 2750,
+  "estimatedFinish": "2026-10-20T20:04:28+00:00",
   "estimateMinutes": 1105
  },
  "lanes": [
   {
    "worker": "Codex",
+   "game": "BioRedactle-nextjs",
+   "task": "bioredactle ship",
+   "since": "2026-10-20T01:38:49+00:00",
+   "activity": "2026-10-20T01:39:27+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Codex",
    "game": "felt-years",
    "task": "felt years build",
    "since": "2026-10-20T01:16:56+00:00",
-   "activity": "2026-10-20T01:36:22+00:00",
+   "activity": "2026-10-20T01:37:41+00:00",
    "commit": {
     "at": "2026-10-20T01:17:51+00:00",
     "subject": "start: B2f_felt-years-build"
@@ -57,22 +65,11 @@
   },
   {
    "worker": "Claude",
-   "game": "BioRedactle-nextjs",
-   "task": "bioredactle ship",
-   "since": "2026-10-20T01:36:03+00:00",
-   "activity": "2026-10-20T01:36:05+00:00",
+   "game": "clean-features",
+   "task": "dish sees story",
+   "since": "2026-10-20T01:38:00+00:00",
+   "activity": "2026-10-20T01:39:22+00:00",
    "commit": null
-  },
-  {
-   "worker": "Codex",
-   "game": "chai-boil",
-   "task": "chai fine steps",
-   "since": "2026-10-20T01:24:05+00:00",
-   "activity": "2026-10-20T01:37:15+00:00",
-   "commit": {
-    "at": "2026-10-20T01:32:40+00:00",
-    "subject": "fix: keep the poured glass in view on narrow phones"
-   }
   }
  ],
  "codexLanes": 2,
@@ -105,7 +102,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 79
+   "changes": 81
   }
  ],
  "houseRules": 21,
@@ -1038,18 +1035,18 @@
    "line": "Reveal a paper's title with word tiles.",
    "url": "https://chenhsieh.github.io/BioRedactle-nextjs/",
    "stage": "building",
-   "who": "Claude",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/bioredactle-1.webp",
    "firstSeen": "2026-10-02T09:35:25+00:00",
-   "lastChange": "2026-10-20T01:36:05+00:00",
+   "lastChange": "2026-10-20T01:39:27+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
     "claudeRuns": 1,
-    "apiRuns": 0,
+    "apiRuns": 1,
     "codexTokens": 202365,
     "codexUsdEst": 0.24,
     "claudeUsdEst": 3.6,
@@ -1061,9 +1058,9 @@
     {
      "title": "bioredactle ship",
      "state": "running",
-     "worker": "Claude",
-     "plan": "Ship it: tile mode first, difficulty check, name and legal review, a plan to expand beyond biology.",
-     "since": "2026-10-20T01:36:03+00:00",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-20T01:38:49+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1071,6 +1068,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "bioredactle ship",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Ship it: tile mode first, difficulty check, name and legal review, a plan to expand beyond biology.",
+     "since": "2026-10-20T00:51:41+00:00",
+     "done": "2026-10-20T00:51:41+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Live unchanged (tiles already the default). Plan written: expert/BioRedactle-nextjs/packages/SHIP_20261019.md (difficulty model: random tapper wins 0.6-1.7%, keep the tile choice; name: keep BioRedactle, Redacxiv if it..."
     },
     {
      "title": "review of BioRedactle nextjs ui pass",
@@ -1105,11 +1116,17 @@
     "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": null,
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T01:37:56+00:00",
+     "ok": true,
+     "note": "ship plan + build task B1a",
+     "source": "board note"
+    },
     {
      "at": "2026-10-19T20:15:59+00:00",
      "ok": true,
@@ -1172,12 +1189,6 @@
     },
     {
      "at": "2026-10-05T10:15:34+00:00",
-     "ok": true,
-     "note": "Add generated puzzles [skip ci]",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-04T09:34:01+00:00",
      "ok": true,
      "note": "Add generated puzzles [skip ci]",
      "source": "main commit"
@@ -1363,43 +1374,40 @@
    "title": "Chai Boil",
    "line": "One pot, one dial: let the chai rise to the rim, not over it.",
    "url": "https://chenhsieh.github.io/chai-boil/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Steadier dial (keys on desktop), a forgiving golden zone, a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/chai-boil-1.webp",
    "firstSeen": "2026-10-16T01:49:44+00:00",
-   "lastChange": "2026-10-20T01:37:15+00:00",
+   "lastChange": "2026-10-20T01:38:22+00:00",
    "cost": {
     "apiUsd": 6.73,
-    "codexRuns": 1,
+    "codexRuns": 2,
     "claudeRuns": 0,
     "apiRuns": 2,
-    "codexTokens": 221812,
-    "codexUsdEst": 0.27,
+    "codexTokens": 384539,
+    "codexUsdEst": 0.46,
     "claudeUsdEst": 0.0,
     "earlierRounds": 12,
     "earlierUsdEst": 43.2,
-    "totalUsdEst": 50.2
+    "totalUsdEst": 50.39
    },
    "tasks": [
     {
      "title": "chai fine steps",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Much finer heat steps on the dial, keys and buttons.",
-     "since": "2026-10-20T01:24:05+00:00",
-     "done": null,
+     "since": "2026-10-20T00:51:41+00:00",
+     "done": "2026-10-20T00:51:41+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 15,
+     "tokens": 162727,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-20T01:32:40+00:00",
-      "subject": "fix: keep the poured glass in view on narrow phones"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Flame controls now use 32 fine steps; held buttons repeat smoothly and the dial still drags continuously."
     },
     {
      "title": "chai boil forgiving dial",
@@ -1446,13 +1454,19 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": null,
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-20T01:38:22+00:00",
+     "ok": true,
+     "note": "published 32 fine flame steps, touch-hold repeat, and continuous dial drag; live touch checked at 390 and 320",
+     "source": "board note"
+    },
     {
      "at": "2026-10-19T22:05:51+00:00",
      "ok": true,
@@ -1518,12 +1532,6 @@
      "ok": true,
      "note": "IMPROVED 8/8 (main ; level 2 also start foam 3 for D8; shared-kit How to play fix not sent)",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-16T09:09:02+00:00",
-     "ok": true,
-     "note": "fix: true glass hint, losses no longer unlock, a stop mark near the rim on levels 1-3",
-     "source": "main commit"
     }
    ]
   },
@@ -3282,7 +3290,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/felt-years-1.webp",
    "firstSeen": "2026-10-17T23:11:23+00:00",
-   "lastChange": "2026-10-20T01:36:22+00:00",
+   "lastChange": "2026-10-20T01:37:41+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -12969,14 +12977,14 @@
    "title": "What the Dish Sees",
    "line": "Label each colony with the one shape it sees by placing.",
    "url": "https://chenhsieh.github.io/clean-features/",
-   "stage": "planning",
+   "stage": "building",
    "who": "Claude",
    "priority": "P1",
    "priorityNote": "Find the playable frame for the latent-space game: a clear",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/clean-features-1.webp",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-20T00:51:41+00:00",
+   "lastChange": "2026-10-20T01:39:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -12992,10 +13000,10 @@
    "tasks": [
     {
      "title": "dish sees story",
-     "state": "planned",
+     "state": "running",
      "worker": "Claude",
      "plan": "A first minute that explains who you are and what the dish does; a clearer decision per level.",
-     "since": "2026-10-20T00:51:41+00:00",
+     "since": "2026-10-20T01:38:00+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -13091,8 +13099,8 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 0,
-    "waitingDesign": 1,
+    "running": 1,
+    "waitingDesign": 0,
     "done": 6
    },
    "verdict": null,
