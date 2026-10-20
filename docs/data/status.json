@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T05:18:33+00:00",
+ "generated": "2026-10-20T05:20:41+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 59,
+    "queued": 63,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2360,
-    "estimateMinutes": 2360
+    "minutes": 2520,
+    "estimateMinutes": 2520
    },
    "Claude": {
     "queued": 2,
@@ -24,16 +24,16 @@
     "estimateMinutes": 180
    }
   },
-  "queued": 61,
+  "queued": 65,
   "running": 1,
   "doneToday": 0,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 2540,
-  "estimatedFinish": "2026-10-21T20:38:33+00:00",
-  "estimateMinutes": 2360
+  "minutesRemaining": 2700,
+  "estimatedFinish": "2026-10-21T23:20:41+00:00",
+  "estimateMinutes": 2520
  },
  "lanes": [
   {
@@ -14142,14 +14142,14 @@
    "title": "Walls Have Ears",
    "line": "Wish for tea and find which piece is listening.",
    "url": "https://chenhsieh.github.io/walls-have-ears/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Hotel key-cabinet level grid grouped by mechanism, and a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/walls-have-ears-1.webp",
    "firstSeen": "2026-10-15T19:49:23+00:00",
-   "lastChange": "2026-10-20T05:13:02+00:00",
+   "lastChange": "2026-10-20T05:19:12+00:00",
    "cost": {
     "apiUsd": 17.73,
     "codexRuns": 3,
@@ -14163,6 +14163,62 @@
     "totalUsdEst": 122.76
    },
    "tasks": [
+    {
+     "title": "walls cell size",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Walls Have Ears: on short phones the board fills the width so every cell is at least 40 px; a test checks every room at 320 and 390.",
+     "since": "2026-10-20T05:19:12+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "walls remix rooms",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Walls Have Ears: six new rooms that mix the hallway and the windows, each a new decision (shout from the light, one window over two rooms, light through a connecting door, low slanted sun, housekeeping's footprints, a finale).",
+     "since": "2026-10-20T05:19:12+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "walls longstay rules",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Walls Have Ears: rules and measured rooms for an endless long stay where housekeeping can only plant bugs along the way she walks.",
+     "since": "2026-10-20T05:19:12+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "walls longstay play",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Walls Have Ears: long stay screens, a scripted first stay that teaches it night by night, a result card and a share line, daily and endless.",
+     "since": "2026-10-20T05:19:12+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "walls next spin",
      "state": "done",
@@ -14218,66 +14274,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Walls Have Ears now lists only the eight real rooms plus today's room, all open; rooms 9-25 and the phone-made Daily/Endless are off the list, and two drawn previews (Thin Walls, Eyes and phones) say \"coming soon\"."
-    },
-    {
-     "title": "review of walls bugkinds",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-19T01:56:12+00:00",
-     "done": "2026-10-19T01:56:12+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "walls bugkinds",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "A first scene that makes the joke land, different bug kinds with their own rules, 24+ levels, endless and daily with difficulty.",
-     "since": "2026-10-18T20:13:59+00:00",
-     "done": "2026-10-18T20:13:59+00:00",
-     "reviewed": true,
-     "minutes": 12,
-     "tokens": 206559,
-     "reviewOutcome": "fixed",
-     "commit": null,
-     "result": "Added the drawn overheard-tea setup, 25 rooms, three probe kinds, and verified Daily/Endless difficulties."
-    },
-    {
-     "title": "walls bug kinds",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "",
-     "since": "2026-10-18T15:08:38+00:00",
-     "done": "2026-10-18T15:08:38+00:00",
-     "reviewed": false,
-     "minutes": 9,
-     "tokens": 110948,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Added [BUGKINDS_20261018.md]( three bug/probe types, rooms 17–25, and a verified eight-layout bot model."
-    },
-    {
-     "title": "walls have ears",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "",
-     "since": "2026-10-17T16:37:11+00:00",
-     "done": "2026-10-17T16:37:11+00:00",
-     "reviewed": false,
-     "minutes": 0,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "1. **What changed for a player:** You're now a guest in a motel room at night, checking it for hidden microphones before a deal. If nobody"
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 4,
     "running": 0,
     "waitingDesign": 0,
     "done": 8
@@ -14287,7 +14287,7 @@
     "verdict": "ship",
     "note": "Chapter 2 rebuilt; ready to ship"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-20T05:13:02+00:00",
