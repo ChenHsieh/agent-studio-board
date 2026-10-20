@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T03:13:09+00:00",
+ "generated": "2026-10-20T03:15:16+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -18,21 +18,21 @@
    },
    "Claude": {
     "queued": 0,
-    "running": 0,
+    "running": 1,
     "doneToday": 38,
-    "minutes": 0,
-    "estimateMinutes": 0
+    "minutes": 60,
+    "estimateMinutes": 60
    }
   },
   "queued": 67,
-  "running": 3,
+  "running": 4,
   "doneToday": 169,
   "lanes": {
    "Codex": 2,
-   "Claude": 0
+   "Claude": 1
   },
-  "minutesRemaining": 2800,
-  "estimatedFinish": "2026-10-21T02:33:09+00:00",
+  "minutesRemaining": 2860,
+  "estimatedFinish": "2026-10-21T02:35:16+00:00",
   "estimateMinutes": 1400
  },
  "lanes": [
@@ -59,10 +59,18 @@
    "since": null,
    "activity": null,
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "dynasty-guess",
+   "task": "dynasty game feel",
+   "since": "2026-10-20T03:13:24+00:00",
+   "activity": "2026-10-20T03:14:46+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 2,
- "claudeWorkers": 0,
+ "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -1887,6 +1895,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-20T03:03:25+00:00",
+     "ok": true,
+     "note": "feat: dumplings, cakes, boba, Halloween and Christmas sets to unlock, hats for the animals, a colourful share card",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-20T02:17:05+00:00",
      "ok": true,
      "note": "Antibiotic discs tier (disc number counts empty squares) + Giant 12x12 tier + drag to rule out + clearer Hidden colours card; main , live checked 390/320",
@@ -1945,12 +1959,6 @@
      "ok": true,
      "note": "feat: Bare spots, a new tier where empty squares count the colonies touching them",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-18T06:17:27+00:00",
-     "ok": true,
-     "note": "cc-r2- live : solved moment per theme (mushroom glowing threads, one per touching same-kind pair so each number = its threads, checked in test; kitten sunbeam slide; duckling ripples; penguin snow), one quiet sound each, silent with Sound off, s",
-     "source": "board note"
     }
    ]
   },
@@ -3201,14 +3209,14 @@
    "title": "Dynasty Guess",
    "line": "Place a museum object in its period.",
    "url": "https://chenhsieh.github.io/dynasty-guess/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Fix the missing object, then refine mechanism, story and",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/dynasty-guess-1.webp",
    "firstSeen": "2026-09-20T06:03:01+00:00",
-   "lastChange": "2026-10-20T03:06:00+00:00",
+   "lastChange": "2026-10-20T03:14:46+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -3223,11 +3231,11 @@
    },
    "tasks": [
     {
-     "title": "dynasty share tiers",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "A capped share message and time-traveller ranks and badges for Dynasty Guess.",
-     "since": "2026-10-20T03:06:00+00:00",
+     "title": "dynasty game feel",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Make Dynasty Guess feel like a game: fix the workroom button, explain every label, a story, clearer era labels, English and Chinese.",
+     "since": "2026-10-20T03:13:24+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -3308,8 +3316,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 4
    },
@@ -4758,7 +4766,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/gallery-guess-1.webp",
    "firstSeen": "2026-09-20T13:46:25+00:00",
-   "lastChange": "2026-10-20T02:45:26+00:00",
+   "lastChange": "2026-10-20T03:13:11+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -4772,6 +4780,20 @@
     "totalUsdEst": 21.6
    },
    "tasks": [
+    {
+     "title": "gallery share tiers",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-20T03:13:11+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "gallery guess docent line",
      "state": "queued",
@@ -4816,7 +4838,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 3,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
