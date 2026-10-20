@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T21:46:25+00:00",
+ "generated": "2026-10-20T21:48:38+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -12,28 +12,28 @@
    "Codex": {
     "queued": 0,
     "running": 0,
-    "doneToday": 10,
+    "doneToday": 11,
     "minutes": 0,
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 98,
-    "running": 1,
+    "queued": 101,
+    "running": 0,
     "doneToday": 21,
-    "minutes": 1284,
-    "estimateMinutes": 1284
+    "minutes": 1260,
+    "estimateMinutes": 1260
    }
   },
-  "queued": 98,
-  "running": 1,
-  "doneToday": 31,
+  "queued": 101,
+  "running": 0,
+  "doneToday": 32,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 1284,
-  "estimatedFinish": "2026-10-21T19:10:25+00:00",
-  "estimateMinutes": 1284
+  "minutesRemaining": 1260,
+  "estimatedFinish": "2026-10-21T18:48:38+00:00",
+  "estimateMinutes": 1260
  },
  "lanes": [
   {
@@ -41,7 +41,7 @@
    "game": "UGA-grad-survivor",
    "task": "uga survivor leftovers",
    "since": "2026-10-20T21:43:53+00:00",
-   "activity": "2026-10-20T21:44:01+00:00",
+   "activity": "2026-10-20T21:47:47+00:00",
    "commit": null
   }
  ],
@@ -79,7 +79,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 49
+   "changes": 50
   }
  ],
  "houseRules": 23,
@@ -5782,14 +5782,14 @@
    "title": "Hallway Posters",
    "line": "",
    "url": "https://chenhsieh.github.io/hallway-posters/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:58:56+00:00",
-   "lastChange": "2026-10-20T21:09:52+00:00",
+   "lastChange": "2026-10-20T21:46:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -5802,9 +5802,24 @@
     "earlierUsdEst": 10.8,
     "totalUsdEst": 10.8
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "hallway posters clear core",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Hallway Posters with one clear job: hang the name tags back on a class poster, tap a craft piece to see where it turns up, and a wrong tag points at the piece that disproves it.",
+     "since": "2026-10-20T21:46:39+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 0
@@ -5842,14 +5857,14 @@
    "title": "Hello Princess",
    "line": "Find the princess's first invitation among the copies.",
    "url": "https://chenhsieh.github.io/copy-paste/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Settle the card-link logic, stop story art leaking answers",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/copy-paste-1.webp",
    "firstSeen": "2026-10-15T18:59:22+00:00",
-   "lastChange": "2026-10-20T19:47:33+00:00",
+   "lastChange": "2026-10-20T21:46:39+00:00",
    "cost": {
     "apiUsd": 16.91,
     "codexRuns": 3,
@@ -5863,6 +5878,20 @@
     "totalUsdEst": 107.78
    },
    "tasks": [
+    {
+     "title": "hello princess stepwise links",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Hello Princess, step by step: walk your card back to the princess one proven link at a time; a wrong link says which picture was the problem and why.",
+     "since": "2026-10-20T21:46:39+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "hello princess level story",
      "state": "done",
@@ -5960,24 +5989,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Players get fairer levels 10 and 11 (the original is always the one card with the most one-picture neighbours) and a new Scribes row after level 6: six puzzles where red old letters (þe, ƿet, niȝt) disappear when a line..."
-    },
-    {
-     "title": "copy paste scribes",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "",
-     "since": "2026-10-17T19:45:17+00:00",
-     "done": "2026-10-17T19:45:17+00:00",
-     "reviewed": false,
-     "minutes": 26,
-     "tokens": 231485,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Levels 10–11 now guarantee unique neighbour-count originals; Scribes adds six one-way old-letter puzzles with a looping S1 demo."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 9
@@ -6677,14 +6692,14 @@
    "title": "Lantern Meeting",
    "line": "",
    "url": "https://chenhsieh.github.io/lantern-meeting/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:45:20+00:00",
-   "lastChange": "2026-10-20T20:56:30+00:00",
+   "lastChange": "2026-10-20T21:46:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -6697,9 +6712,24 @@
     "earlierUsdEst": 10.8,
     "totalUsdEst": 10.8
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "lantern meeting strategy core",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Lantern Meeting as a court: three stances that beat each other in a circle, rivals with readable habits and bluffs, grudges and debts between desks, and the lantern as the only source of new results.",
+     "since": "2026-10-20T21:46:39+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 0
@@ -14896,7 +14926,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/uga-grad-survivor-1.webp",
    "firstSeen": "2026-03-20T22:12:13+00:00",
-   "lastChange": "2026-10-20T21:44:01+00:00",
+   "lastChange": "2026-10-20T21:48:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -14905,9 +14935,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 14.4,
-    "earlierRounds": 13,
-    "earlierUsdEst": 46.8,
-    "totalUsdEst": 61.2
+    "earlierRounds": 14,
+    "earlierUsdEst": 50.4,
+    "totalUsdEst": 64.8
    },
    "tasks": [
     {
@@ -15005,6 +15035,12 @@
    "needsYou": null,
    "history": [
     {
+     "at": "2026-10-20T21:48:39+00:00",
+     "ok": true,
+     "note": "leftovers: perks widened, 320px fixes, floats; live",
+     "source": "board note"
+    },
+    {
      "at": "2026-10-20T20:22:31+00:00",
      "ok": true,
      "note": "P1a62 fresh-eyes review: answers fit at 320x568, Chinese-mode note, narrator and cluster-perk labels; main live",
@@ -15069,12 +15105,6 @@
      "ok": true,
      "note": "feat: Share button on the ending card, visit counter hook",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-17T23:15:14+00:00",
-     "ok": true,
-     "note": "CREDIT line under the rules on the How to play card (Reigns by Nerial 2016; fiction, not an official UGA product); README gains year and disclaimer; asset versions bumped; live",
-     "source": "board note"
     }
    ]
   },
