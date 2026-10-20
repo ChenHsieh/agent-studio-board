@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T01:15:48+00:00",
+ "generated": "2026-10-20T01:18:00+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 57,
+    "queued": 56,
     "running": 2,
-    "doneToday": 61,
-    "minutes": 2290,
-    "estimateMinutes": 1145
+    "doneToday": 62,
+    "minutes": 2250,
+    "estimateMinutes": 1125
    },
    "Claude": {
     "queued": 8,
@@ -24,36 +24,36 @@
     "estimateMinutes": 600
    }
   },
-  "queued": 65,
+  "queued": 64,
   "running": 4,
-  "doneToday": 95,
+  "doneToday": 96,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2890,
-  "estimatedFinish": "2026-10-20T20:20:48+00:00",
-  "estimateMinutes": 1145
+  "minutesRemaining": 2850,
+  "estimatedFinish": "2026-10-20T20:03:00+00:00",
+  "estimateMinutes": 1125
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "grass-crossword",
-   "task": "grass crossword fix",
-   "since": "2026-10-20T00:51:07+00:00",
-   "activity": "2026-10-20T01:15:47+00:00",
-   "commit": {
-    "at": "2026-10-20T01:15:39+00:00",
-    "subject": "fix: finish grass family beds"
-   }
-  },
   {
    "worker": "Codex",
    "game": "matchmaker-chat",
    "task": "matchmaker chat fix",
    "since": "2026-10-20T00:51:43+00:00",
-   "activity": "2026-10-20T01:15:45+00:00",
+   "activity": "2026-10-20T01:17:57+00:00",
    "commit": null
+  },
+  {
+   "worker": "Codex",
+   "game": "felt-years",
+   "task": "felt years build",
+   "since": "2026-10-20T01:16:56+00:00",
+   "activity": "2026-10-20T01:18:00+00:00",
+   "commit": {
+    "at": "2026-10-20T01:17:51+00:00",
+    "subject": "start: B2f_felt-years-build"
+   }
   },
   {
    "worker": "Claude",
@@ -68,7 +68,7 @@
    "game": "anechoic-fugue",
    "task": "anechoic publish review",
    "since": "2026-10-20T00:48:20+00:00",
-   "activity": "2026-10-20T01:13:17+00:00",
+   "activity": "2026-10-20T01:17:02+00:00",
    "commit": null
   }
  ],
@@ -510,7 +510,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/anechoic-fugue-1.webp",
    "firstSeen": "2026-10-15T18:08:35+00:00",
-   "lastChange": "2026-10-20T01:13:17+00:00",
+   "lastChange": "2026-10-20T01:17:02+00:00",
    "cost": {
     "apiUsd": 17.97,
     "codexRuns": 2,
@@ -3255,14 +3255,14 @@
    "title": "Felt Years",
    "line": "Felt Years is a quiet solo puzzle about a goat whose life.",
    "url": "https://chenhsieh.github.io/felt-years/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "A story for the proportional-time idea, a stated goal",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/felt-years-1.webp",
    "firstSeen": "2026-10-17T23:11:23+00:00",
-   "lastChange": "2026-10-20T00:32:42+00:00",
+   "lastChange": "2026-10-20T01:18:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -3278,16 +3278,19 @@
    "tasks": [
     {
      "title": "felt years build",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "",
-     "since": "2026-10-20T00:32:42+00:00",
+     "since": "2026-10-20T01:16:56+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-20T01:17:51+00:00",
+      "subject": "start: B2f_felt-years-build"
+     },
      "result": ""
     },
     {
@@ -3362,8 +3365,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 5
    },
@@ -4813,43 +4816,40 @@
    "title": "Grass Crossword",
    "line": "A crossword dug into a garden bed, where every answer is.",
    "url": "https://chenhsieh.github.io/grass-crossword/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Varied handwriting, more levels, a daily, and a harder late",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/grass-crossword-1.webp",
    "firstSeen": "2026-10-16T01:23:04+00:00",
-   "lastChange": "2026-10-20T01:15:47+00:00",
+   "lastChange": "2026-10-20T01:16:29+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 3,
+    "codexRuns": 4,
     "claudeRuns": 3,
     "apiRuns": 0,
-    "codexTokens": 675499,
-    "codexUsdEst": 0.81,
+    "codexTokens": 929362,
+    "codexUsdEst": 1.12,
     "claudeUsdEst": 10.8,
     "earlierRounds": 9,
     "earlierUsdEst": 32.4,
-    "totalUsdEst": 44.01
+    "totalUsdEst": 44.32
    },
    "tasks": [
     {
      "title": "grass crossword fix",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "",
-     "since": "2026-10-20T00:51:07+00:00",
-     "done": null,
+     "since": "2026-10-20T00:35:05+00:00",
+     "done": "2026-10-20T00:35:05+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 26,
+     "tokens": 253863,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-20T01:15:39+00:00",
-      "subject": "fix: finish grass family beds"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Published once: `origin/main` → `` (`feat: finish the grass family beds`). Rollback tag: `pre-family-fix-` at ``."
     },
     {
      "title": "grass crossword build",
@@ -4938,17 +4938,23 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": {
     "date": "2026-10-19",
     "verdict": "revise",
     "note": "Varied handwriting, more levels, a daily, and a harder late"
    },
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-20T01:16:29+00:00",
+     "ok": true,
+     "note": "feat: finish the grass family beds",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-20T00:26:44+00:00",
      "ok": true,
@@ -5014,12 +5020,6 @@
      "ok": true,
      "note": "IMPROVED 8/8 (item 1 done in the page not rules.js; Share kept on level 1 and word breakpoint 385 not 360, both for UI gate U7/U8)",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-16T09:06:32+00:00",
-     "ok": true,
-     "note": "fix:",
-     "source": "main commit"
     }
    ]
   },
@@ -6527,7 +6527,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/matchmaker-chat-1.webp",
    "firstSeen": "2026-10-15T21:39:26+00:00",
-   "lastChange": "2026-10-20T01:15:45+00:00",
+   "lastChange": "2026-10-20T01:17:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
