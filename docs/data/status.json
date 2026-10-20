@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T04:48:45+00:00",
+ "generated": "2026-10-20T04:50:58+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -18,32 +18,24 @@
    },
    "Claude": {
     "queued": 2,
-    "running": 2,
+    "running": 1,
     "doneToday": 0,
-    "minutes": 240,
-    "estimateMinutes": 240
+    "minutes": 180,
+    "estimateMinutes": 180
    }
   },
   "queued": 63,
-  "running": 2,
+  "running": 1,
   "doneToday": 0,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 2680,
-  "estimatedFinish": "2026-10-21T21:28:45+00:00",
+  "minutesRemaining": 2620,
+  "estimatedFinish": "2026-10-21T21:30:58+00:00",
   "estimateMinutes": 2440
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "walls-have-ears",
-   "task": "walls next spin",
-   "since": "2026-10-20T03:26:42+00:00",
-   "activity": "2026-10-20T04:47:32+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "Multiple games",
@@ -54,7 +46,7 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -87,7 +79,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 7
+   "changes": 8
   }
  ],
  "houseRules": 23,
@@ -14050,40 +14042,40 @@
    "title": "Walls Have Ears",
    "line": "Wish for tea and find which piece is listening.",
    "url": "https://chenhsieh.github.io/walls-have-ears/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Hotel key-cabinet level grid grouped by mechanism, and a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/walls-have-ears-1.webp",
    "firstSeen": "2026-10-15T19:49:23+00:00",
-   "lastChange": "2026-10-20T04:47:32+00:00",
+   "lastChange": "2026-10-20T04:49:48+00:00",
    "cost": {
     "apiUsd": 17.73,
     "codexRuns": 3,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 1,
     "codexTokens": 528897,
     "codexUsdEst": 0.63,
-    "claudeUsdEst": 10.8,
+    "claudeUsdEst": 14.4,
     "earlierRounds": 25,
     "earlierUsdEst": 90.0,
-    "totalUsdEst": 119.16
+    "totalUsdEst": 122.76
    },
    "tasks": [
     {
      "title": "walls next spin",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Walls Have Ears: daily fix, living hotel props, a hallway layout, and a deeper next chapter with windows and different hotels.",
-     "since": "2026-10-20T03:26:42+00:00",
-     "done": null,
+     "since": "2026-10-20T03:26:38+00:00",
+     "done": "2026-10-20T03:26:38+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1a25 walls-next-spin: DONE (2026-10-20)"
     },
     {
      "title": "walls have ears key cabinet",
@@ -14186,17 +14178,23 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 7
+    "done": 8
    },
    "verdict": {
     "date": "2026-10-19",
     "verdict": "ship",
     "note": "Chapter 2 rebuilt; ready to ship"
    },
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-20T04:49:48+00:00",
+     "ok": true,
+     "note": "chapter 2 redrawn as rooms along a hallway (own doors, trolley down the hall) + spin built: window dailies from 21 Oct; SPIN_20261019.md",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T04:13:00+00:00",
      "ok": true,
@@ -14262,12 +14260,6 @@
      "ok": true,
      "note": "urgent how-to crop: pictures show the whole room ()",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-19T03:17:59+00:00",
-     "ok": true,
-     "note": "fix: How to play pictures show the whole room",
-     "source": "main commit"
     }
    ]
   },
