@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T03:04:44+00:00",
+ "generated": "2026-10-20T03:06:48+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 61,
-    "running": 4,
-    "doneToday": 129,
-    "minutes": 2600,
-    "estimateMinutes": 1300
+    "queued": 67,
+    "running": 3,
+    "doneToday": 130,
+    "minutes": 2800,
+    "estimateMinutes": 1400
    },
    "Claude": {
     "queued": 1,
@@ -24,16 +24,16 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 62,
-  "running": 4,
-  "doneToday": 166,
+  "queued": 68,
+  "running": 3,
+  "doneToday": 167,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2660,
-  "estimatedFinish": "2026-10-21T00:44:44+00:00",
-  "estimateMinutes": 1300
+  "minutesRemaining": 2860,
+  "estimatedFinish": "2026-10-21T02:26:48+00:00",
+  "estimateMinutes": 1400
  },
  "lanes": [
   {
@@ -41,7 +41,7 @@
    "game": "thumb-stand",
    "task": "thumb stand polish",
    "since": "2026-10-20T02:42:00+00:00",
-   "activity": "2026-10-20T03:04:37+00:00",
+   "activity": "2026-10-20T03:06:44+00:00",
    "commit": {
     "at": "2026-10-20T02:43:00+00:00",
     "subject": "start: B2a3_thumb-stand-polish"
@@ -60,14 +60,6 @@
    "game": "colony-count",
    "task": "colony shapes regions study",
    "since": "2026-10-20T02:17:29+00:00",
-   "activity": "2026-10-20T03:03:25+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Codex",
-   "game": "colony-count",
-   "task": "colony unlock themes",
-   "since": "2026-10-20T02:31:43+00:00",
    "activity": "2026-10-20T03:03:25+00:00",
    "commit": null
   }
@@ -102,7 +94,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 143
+   "changes": 144
   }
  ],
  "houseRules": 23,
@@ -1751,12 +1743,12 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-20T03:03:25+00:00",
+   "lastChange": "2026-10-20T03:06:30+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
     "claudeRuns": 2,
-    "apiRuns": 4,
+    "apiRuns": 5,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 7.2,
@@ -1765,20 +1757,6 @@
     "totalUsdEst": 109.28
    },
    "tasks": [
-    {
-     "title": "colony unlock themes",
-     "state": "running",
-     "worker": "Codex",
-     "plan": "Unlockable Colony Count themes: dumplings, cakes, boba tea, hats for the animals, Halloween and Christmas.",
-     "since": "2026-10-20T02:31:43+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "colony shapes regions study",
      "state": "running",
@@ -1792,6 +1770,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "colony unlock themes",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Unlockable Colony Count themes: dumplings, cakes, boba tea, hats for the animals, Halloween and Christmas.",
+     "since": "2026-10-20T02:26:37+00:00",
+     "done": "2026-10-20T02:26:37+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Colony Count: five sets to unlock, hats for the animals, seasonal offers, and a colourful share text. Live on main (https://chenhsieh.github.io/colony-count/). The served app.js, faces.js and style.css match the built..."
     },
     {
      "title": "colony count new mechanism",
@@ -1880,9 +1872,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 2,
+    "running": 1,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": {
     "date": "2026-10-18",
@@ -1891,6 +1883,12 @@
    },
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T03:06:30+00:00",
+     "ok": true,
+     "note": "Unlockable sets (dumplings, cakes, boba, Halloween, Christmas) + hats add-on + seasonal offer + emoji share card; main , live checked 390/320; previews play-lab",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T02:17:05+00:00",
      "ok": true,
@@ -1956,12 +1954,6 @@
      "ok": true,
      "note": "cc-r2- live : solved moment per theme (mushroom glowing threads, one per touching same-kind pair so each number = its threads, checked in test; kitten sunbeam slide; duckling ripples; penguin snow), one quiet sound each, silent with Sound off, s",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-18T06:16:11+00:00",
-     "ok": true,
-     "note": "feat: each theme ends its own way: mushroom threads that show the rule, a kitten sunbeam, ripples and snow",
-     "source": "main commit"
     }
    ]
   },
@@ -2593,7 +2585,7 @@
    "url": "https://chenhsieh.github.io/defense-bingo/",
    "stage": "live",
    "who": null,
-   "priority": "P1",
+   "priority": "P3",
    "priorityNote": "Visual inspection and small verified improvements before",
    "shelfNote": "",
    "image": null,
@@ -2636,7 +2628,7 @@
    "verdict": {
     "date": "2026-10-19",
     "verdict": "ship",
-    "note": "Visual inspection and small verified improvements before"
+    "note": "One-time use for the defense; no further work"
    },
    "needsYou": null,
    "history": [
@@ -3219,7 +3211,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/dynasty-guess-1.webp",
    "firstSeen": "2026-09-20T06:03:01+00:00",
-   "lastChange": "2026-10-20T01:48:05+00:00",
+   "lastChange": "2026-10-20T03:06:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -3233,6 +3225,20 @@
     "totalUsdEst": 40.13
    },
    "tasks": [
+    {
+     "title": "dynasty share tiers",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "A capped share message and time-traveller ranks and badges for Dynasty Guess.",
+     "since": "2026-10-20T03:06:00+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "dynasty guess ship standard",
      "state": "queued",
@@ -3305,12 +3311,16 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-10-19",
+    "verdict": "ship",
+    "note": "Ship after share cap and ranks"
+   },
    "needsYou": null,
    "history": [
     {
@@ -12679,7 +12689,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/thumb-stand-1.webp",
    "firstSeen": "2026-10-15T23:29:31+00:00",
-   "lastChange": "2026-10-20T03:04:37+00:00",
+   "lastChange": "2026-10-20T03:06:44+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -14357,7 +14367,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-16T00:32:50+00:00",
-   "lastChange": "2026-10-20T01:48:28+00:00",
+   "lastChange": "2026-10-20T02:51:42+00:00",
    "cost": {
     "apiUsd": 7.14,
     "codexRuns": 3,
@@ -14366,9 +14376,9 @@
     "codexTokens": 686725,
     "codexUsdEst": 0.82,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 11,
-    "earlierUsdEst": 39.6,
-    "totalUsdEst": 51.16
+    "earlierRounds": 12,
+    "earlierUsdEst": 43.2,
+    "totalUsdEst": 54.76
    },
    "tasks": [
     {
@@ -14438,6 +14448,12 @@
    "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
     {
+     "at": "2026-10-20T02:51:42+00:00",
+     "ok": true,
+     "note": "feat: dream through a butterfly-scale picture graph",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-19T23:05:58+00:00",
      "ok": true,
      "note": "Butterfly scale board, visible path target, previewable cul-de-sacs, and refreshed hub image published.",
@@ -14495,12 +14511,6 @@
      "at": "2026-10-17T21:32:21+00:00",
      "ok": true,
      "note": "fix: holding a button or the board no longer selects text on iPhone",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-17T04:17:07+00:00",
-     "ok": true,
-     "note": "feat: see at a glance whether sound and animation are on",
      "source": "main commit"
     }
    ]
