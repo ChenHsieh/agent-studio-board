@@ -107,7 +107,7 @@ function costLine(c) {
 
 function taskCounts(g) {
   const n = g.taskCounts || {};
-  return `<span class="task-counts" aria-label="Task status: ${n.queued || 0} queued, ${n.running || 0} running, ${n.waitingDesign || 0} waiting for design, ${n.done || 0} done">Q ${n.queued || 0} · R ${n.running || 0} · Dsgn ${n.waitingDesign || 0} · Done ${n.done || 0}</span>`;
+  return `<span class="task-counts" aria-label="Task status: ${n.queued || 0} queued, ${n.running || 0} running, ${n.waitingDesign || 0} waiting for design, ${n.done || 0} done">Queued ${n.queued || 0} · Running ${n.running || 0} · Waiting design ${n.waitingDesign || 0} · Done ${n.done || 0}</span>`;
 }
 
 function gameHtml(g) {
