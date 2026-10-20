@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T05:33:23+00:00",
+ "generated": "2026-10-20T05:35:30+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 62,
+    "queued": 61,
     "running": 0,
-    "doneToday": 0,
-    "minutes": 2480,
-    "estimateMinutes": 2480
+    "doneToday": 1,
+    "minutes": 2440,
+    "estimateMinutes": 2440
    },
    "Claude": {
     "queued": 2,
@@ -24,24 +24,24 @@
     "estimateMinutes": 180
    }
   },
-  "queued": 64,
+  "queued": 63,
   "running": 1,
-  "doneToday": 0,
+  "doneToday": 1,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 2660,
-  "estimatedFinish": "2026-10-21T22:53:23+00:00",
-  "estimateMinutes": 2480
+  "minutesRemaining": 2620,
+  "estimatedFinish": "2026-10-21T22:15:30+00:00",
+  "estimateMinutes": 2440
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "walls-have-ears",
-   "task": "walls cell size",
-   "since": "2026-10-20T05:24:42+00:00",
-   "activity": "2026-10-20T05:33:12+00:00",
+   "game": "gallery-guess",
+   "task": "gallery guess ship standard",
+   "since": "2026-10-20T05:35:04+00:00",
+   "activity": "2026-10-20T05:35:04+00:00",
    "commit": null
   }
  ],
@@ -79,7 +79,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 15
+   "changes": 16
   }
  ],
  "houseRules": 23,
@@ -4851,14 +4851,14 @@
    "title": "Gallery Guess",
    "line": "Place each museum object by country and year.",
    "url": "https://chenhsieh.github.io/gallery-guess/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P3",
    "priorityNote": "Story and mechanism pass; pending a merge decision",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/gallery-guess-1.webp",
    "firstSeen": "2026-09-20T13:46:25+00:00",
-   "lastChange": "2026-10-20T04:03:08+00:00",
+   "lastChange": "2026-10-20T05:35:04+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -4874,10 +4874,10 @@
    "tasks": [
     {
      "title": "gallery guess ship standard",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Bring it to the guessing-game ship standard: archive, practice with difficulty, stats and collection, cleanup, credits.",
-     "since": "2026-10-20T03:21:59+00:00",
+     "since": "2026-10-20T05:35:04+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -4930,8 +4930,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
@@ -14318,19 +14318,19 @@
    "title": "Walls Have Ears",
    "line": "Wish for tea and find which piece is listening.",
    "url": "https://chenhsieh.github.io/walls-have-ears/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Hotel key-cabinet level grid grouped by mechanism, and a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/walls-have-ears-1.webp",
    "firstSeen": "2026-10-15T19:49:23+00:00",
-   "lastChange": "2026-10-20T05:33:12+00:00",
+   "lastChange": "2026-10-20T05:34:50+00:00",
    "cost": {
     "apiUsd": 17.73,
     "codexRuns": 3,
     "claudeRuns": 4,
-    "apiRuns": 1,
+    "apiRuns": 2,
     "codexTokens": 528897,
     "codexUsdEst": 0.63,
     "claudeUsdEst": 14.4,
@@ -14339,20 +14339,6 @@
     "totalUsdEst": 122.76
    },
    "tasks": [
-    {
-     "title": "walls cell size",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Walls Have Ears: on short phones the board fills the width so every cell is at least 40 px; a test checks every room at 320 and 390.",
-     "since": "2026-10-20T05:24:42+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "walls remix rooms",
      "state": "queued",
@@ -14394,6 +14380,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "walls cell size",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Walls Have Ears: on short phones the board fills the width so every cell is at least 40 px; a test checks every room at 320 and 390.",
+     "since": "2026-10-20T05:19:12+00:00",
+     "done": "2026-10-20T05:19:12+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "A player on a 320 x 568 phone now sees the room board at full width: the smallest cell on any of 46 boards (rooms, dailies, hallway rooms) is 41.9 css px (was 27 to 37); at 390 x 844 nothing shrinks, the board is a..."
     },
     {
      "title": "walls next spin",
@@ -14454,9 +14454,9 @@
    ],
    "taskCounts": {
     "queued": 3,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 8
+    "done": 9
    },
    "verdict": {
     "date": "2026-10-19",
@@ -14465,6 +14465,12 @@
    },
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T05:34:50+00:00",
+     "ok": true,
+     "note": "bigger cells on short phones (full width board, margins 12, cells >=41.9 css px at 320x568 on all 46 boards); live",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T05:13:02+00:00",
      "ok": true,
@@ -14530,12 +14536,6 @@
      "ok": true,
      "note": "feat: Thin Walls, rooms 9 to 16:",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-19T16:20:04+00:00",
-     "ok": true,
-     "note": "rooms 9-25 and phone-made modes hidden (no decision), chapter previews, all rooms open",
-     "source": "board note"
     }
    ]
   },
