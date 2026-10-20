@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T13:33:31+00:00",
+ "generated": "2026-10-20T13:35:43+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,34 +10,43 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 62,
+    "queued": 61,
     "running": 0,
     "doneToday": 1,
-    "minutes": 2480,
-    "estimateMinutes": 2480
+    "minutes": 2440,
+    "estimateMinutes": 2440
    },
    "Claude": {
     "queued": 2,
-    "running": 0,
+    "running": 1,
     "doneToday": 0,
-    "minutes": 120,
-    "estimateMinutes": 120
+    "minutes": 180,
+    "estimateMinutes": 180
    }
   },
-  "queued": 64,
-  "running": 0,
+  "queued": 63,
+  "running": 1,
   "doneToday": 1,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 2600,
-  "estimatedFinish": "2026-10-22T06:53:31+00:00",
-  "estimateMinutes": 2480
+  "minutesRemaining": 2620,
+  "estimatedFinish": "2026-10-22T06:15:43+00:00",
+  "estimateMinutes": 2440
  },
- "lanes": [],
+ "lanes": [
+  {
+   "worker": "Claude",
+   "game": "walls-have-ears",
+   "task": "walls remix rooms",
+   "since": "2026-10-20T13:35:20+00:00",
+   "activity": "2026-10-20T13:35:23+00:00",
+   "commit": null
+  }
+ ],
  "codexLanes": 0,
- "claudeWorkers": 0,
+ "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -14321,14 +14330,14 @@
    "title": "Walls Have Ears",
    "line": "Wish for tea and find which piece is listening.",
    "url": "https://chenhsieh.github.io/walls-have-ears/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Hotel key-cabinet level grid grouped by mechanism, and a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/walls-have-ears-1.webp",
    "firstSeen": "2026-10-15T19:49:23+00:00",
-   "lastChange": "2026-10-20T05:34:50+00:00",
+   "lastChange": "2026-10-20T13:35:23+00:00",
    "cost": {
     "apiUsd": 17.73,
     "codexRuns": 3,
@@ -14344,10 +14353,10 @@
    "tasks": [
     {
      "title": "walls remix rooms",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Walls Have Ears: six new rooms that mix the hallway and the windows, each a new decision (shout from the light, one window over two rooms, light through a connecting door, low slanted sun, housekeeping's footprints, a finale).",
-     "since": "2026-10-20T05:19:12+00:00",
+     "since": "2026-10-20T13:35:20+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -14456,8 +14465,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 9
    },
