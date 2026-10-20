@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T23:11:06+00:00",
+ "generated": "2026-10-20T23:13:17+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -12,36 +12,36 @@
    "Codex": {
     "queued": 0,
     "running": 0,
-    "doneToday": 13,
+    "doneToday": 14,
     "minutes": 0,
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 100,
+    "queued": 99,
     "running": 1,
     "doneToday": 21,
-    "minutes": 1308,
-    "estimateMinutes": 1308
+    "minutes": 1296,
+    "estimateMinutes": 1296
    }
   },
-  "queued": 100,
+  "queued": 99,
   "running": 1,
-  "doneToday": 34,
+  "doneToday": 35,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 1308,
-  "estimatedFinish": "2026-10-21T20:59:06+00:00",
-  "estimateMinutes": 1308
+  "minutesRemaining": 1296,
+  "estimatedFinish": "2026-10-21T20:49:17+00:00",
+  "estimateMinutes": 1296
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "grass-crossword",
-   "task": "grass crossword piece legend teaching",
-   "since": "2026-10-20T22:56:23+00:00",
-   "activity": "2026-10-20T23:10:41+00:00",
+   "game": "dynasty-guess",
+   "task": "dynasty views harvest",
+   "since": "2026-10-20T23:12:12+00:00",
+   "activity": "2026-10-20T23:12:17+00:00",
    "commit": null
   }
  ],
@@ -79,7 +79,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 52
+   "changes": 53
   }
  ],
  "houseRules": 23,
@@ -3301,14 +3301,14 @@
    "title": "Dynasty Guess",
    "line": "Place a museum object in its period.",
    "url": "https://chenhsieh.github.io/dynasty-guess/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Fix the missing object, then refine mechanism, story and",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/dynasty-guess-1.webp",
    "firstSeen": "2026-09-20T06:03:01+00:00",
-   "lastChange": "2026-10-20T19:12:56+00:00",
+   "lastChange": "2026-10-20T23:12:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -3324,10 +3324,10 @@
    "tasks": [
     {
      "title": "dynasty views harvest",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Dynasty Guess: keep every museum photo of each object (side, inside, base) and its Chinese title, sorted by what each photo shows.",
-     "since": "2026-10-20T19:12:56+00:00",
+     "since": "2026-10-20T23:12:12+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -3436,8 +3436,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 4,
-    "running": 0,
+    "queued": 3,
+    "running": 1,
     "waitingDesign": 0,
     "done": 5
    },
@@ -5609,19 +5609,19 @@
    "title": "Grass Crossword",
    "line": "A crossword dug into a garden bed, where every answer is.",
    "url": "https://chenhsieh.github.io/grass-crossword/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Varied handwriting, more levels, a daily, and a harder late",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/grass-crossword-1.webp",
    "firstSeen": "2026-10-16T01:23:04+00:00",
-   "lastChange": "2026-10-20T23:10:41+00:00",
+   "lastChange": "2026-10-20T23:11:59+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 5,
     "claudeRuns": 3,
-    "apiRuns": 1,
+    "apiRuns": 2,
     "codexTokens": 1103279,
     "codexUsdEst": 1.32,
     "claudeUsdEst": 10.8,
@@ -5630,20 +5630,6 @@
     "totalUsdEst": 48.12
    },
    "tasks": [
-    {
-     "title": "grass crossword piece legend teaching",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Grass Crossword: a drawn mark and length boxes for every grass packet, a first-use example, and a field guide to the grass family.",
-     "since": "2026-10-20T22:56:23+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "grass crossword drag preview logic",
      "state": "done",
@@ -5657,6 +5643,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Grass Crossword: live https://chenhsieh.github.io/grass-crossword/ (main , rollback tag pre-drag-logic-; live bytes of shell/rules/draw/css/html match; live level 17 loads with 5 answers, no console errors, own logo..."
+    },
+    {
+     "title": "grass crossword piece legend teaching",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Grass Crossword: a drawn mark and length boxes for every grass packet, a first-use example, and a field guide to the grass family.",
+     "since": "2026-10-20T20:06:42+00:00",
+     "done": "2026-10-20T20:06:42+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Grass Crossword legend: live https://chenhsieh.github.io/grass-crossword/ (main , tag pre-legend-; live bytes match; live level 14 shows the SOD packet with its mark, no console errors)."
     },
     {
      "title": "grass crossword beds",
@@ -5745,9 +5745,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 9
+    "done": 10
    },
    "verdict": {
     "date": "2026-10-20",
@@ -5755,8 +5755,14 @@
     "note": "Harder levels not intuitive; drag preview inconsistent"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-20T23:11:59+00:00",
+     "ok": true,
+     "note": "legend: 12 marks, field guide, level 14 example; live",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T22:56:19+00:00",
      "ok": true,
@@ -5822,12 +5828,6 @@
      "ok": true,
      "note": "published source-: source-faithful newspaper crossword with visible Across/Down entries, preserved saves, and a live 390x844 phone check",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-19T00:26:50+00:00",
-     "ok": true,
-     "note": "feat: write GRASS across and down on the page",
-     "source": "main commit"
     }
    ]
   },
