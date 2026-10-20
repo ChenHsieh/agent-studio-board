@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T02:20:10+00:00",
+ "generated": "2026-10-20T02:22:18+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,9 +10,9 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 61,
-    "running": 3,
-    "doneToday": 84,
+    "queued": 60,
+    "running": 4,
+    "doneToday": 86,
     "minutes": 2490,
     "estimateMinutes": 1245
    },
@@ -24,15 +24,15 @@
     "estimateMinutes": 120
    }
   },
-  "queued": 63,
-  "running": 3,
-  "doneToday": 121,
+  "queued": 62,
+  "running": 4,
+  "doneToday": 123,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
   "minutesRemaining": 2610,
-  "estimatedFinish": "2026-10-20T23:05:10+00:00",
+  "estimatedFinish": "2026-10-20T23:07:18+00:00",
   "estimateMinutes": 1245
  },
  "lanes": [
@@ -41,7 +41,7 @@
    "game": "rna-hero",
    "task": "rna hero knots",
    "since": "2026-10-20T02:09:15+00:00",
-   "activity": "2026-10-20T02:20:04+00:00",
+   "activity": "2026-10-20T02:21:37+00:00",
    "commit": {
     "at": "2026-10-20T02:11:19+00:00",
     "subject": "start: B1b_rna-hero-knots"
@@ -52,7 +52,7 @@
    "game": "thumb-stand",
    "task": "thumb stand finish",
    "since": "2026-10-20T01:51:49+00:00",
-   "activity": "2026-10-20T02:20:01+00:00",
+   "activity": "2026-10-20T02:22:01+00:00",
    "commit": null
   },
   {
@@ -62,6 +62,17 @@
    "since": "2026-10-20T02:17:29+00:00",
    "activity": "2026-10-20T02:17:57+00:00",
    "commit": null
+  },
+  {
+   "worker": "Codex",
+   "game": "alias-loaf",
+   "task": "alias loaf gradual",
+   "since": "2026-10-20T02:22:12+00:00",
+   "activity": "2026-10-20T02:22:13+00:00",
+   "commit": {
+    "at": "2026-10-20T02:22:13+00:00",
+    "subject": "start: P2c26_alias-loaf-gradual"
+   }
   }
  ],
  "codexLanes": 2,
@@ -94,7 +105,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 101
+   "changes": 104
   }
  ],
  "houseRules": 23,
@@ -253,14 +264,14 @@
    "title": "Alias Loaf",
    "line": "Set the cutter to catch one seed family.",
    "url": "https://chenhsieh.github.io/alias-loaf/",
-   "stage": "planning",
-   "who": "Claude",
+   "stage": "building",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Introduce the mechanics one at a time and give the player a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/alias-loaf-1.webp",
    "firstSeen": "2026-10-14T23:09:53+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-20T02:22:13+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -276,23 +287,26 @@
    "tasks": [
     {
      "title": "alias loaf gradual",
-     "state": "planned",
+     "state": "running",
      "worker": "Codex",
      "plan": "Introduce the mechanics one at a time and give the player a reason to play.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "since": "2026-10-20T02:22:12+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-20T02:22:13+00:00",
+      "subject": "start: P2c26_alias-loaf-gradual"
+     },
      "result": ""
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 0,
-    "waitingDesign": 1,
+    "running": 1,
+    "waitingDesign": 0,
     "done": 0
    },
    "verdict": null,
@@ -7479,19 +7493,19 @@
    "title": "Mushroom at the End",
    "line": "Grow mycelium threads across an old factory floor and cut.",
    "url": "https://chenhsieh.github.io/mushroom-gaps/",
-   "stage": "planning",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Clear cause and effect for each tap, a story for the cave",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/mushroom-gaps-1.webp",
    "firstSeen": "2026-10-15T23:26:23+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-20T02:20:55+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
     "claudeRuns": 0,
-    "apiRuns": 0,
+    "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
@@ -7501,11 +7515,11 @@
    },
    "tasks": [
     {
-     "title": "mushroom gaps cause effect",
-     "state": "planned",
+     "title": "mushroom gaps wind",
+     "state": "queued",
      "worker": "Codex",
-     "plan": "Clear cause and effect for each tap, a story for the cave, keep the brick faces.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "plan": "",
+     "since": "2026-10-20T02:20:55+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -7513,17 +7527,37 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "mushroom gaps cause effect",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Clear cause and effect for each tap, a story for the cave, keep the brick faces.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Brief: expert/mushroom-gaps/packages/BRIEF_20261019.md: draw the wind (animated streamlines over reachable floor), hold-preview shows tiles going still and +N, sealing stops the wind before mushrooms pop; labelled..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
-    "waitingDesign": 1,
-    "done": 0
+    "waitingDesign": 0,
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T02:20:55+00:00",
+     "ok": true,
+     "note": "wind brief + build B2s",
+     "source": "board note"
+    },
     {
      "at": "2026-10-17T21:41:35+00:00",
      "ok": true,
@@ -8749,7 +8783,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/rna-hero-1.webp",
    "firstSeen": "2026-08-20T15:44:40+00:00",
-   "lastChange": "2026-10-20T02:20:04+00:00",
+   "lastChange": "2026-10-20T02:21:37+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -11368,19 +11402,19 @@
    "title": "The Folder",
    "line": "Change a bead to make the first pair block the rest.",
    "url": "https://chenhsieh.github.io/the-folder/",
-   "stage": "planning",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Simplify the first minute, show the outcome of each choice",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/the-folder-1.webp",
    "firstSeen": "2026-10-15T04:47:38+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-20T02:22:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
     "claudeRuns": 0,
-    "apiRuns": 0,
+    "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
@@ -11391,10 +11425,10 @@
    "tasks": [
     {
      "title": "the folder first minute",
-     "state": "planned",
+     "state": "queued",
      "worker": "Codex",
-     "plan": "Simplify the first minute, show the outcome of each choice, explain the circle.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "plan": "",
+     "since": "2026-10-20T02:22:07+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -11402,17 +11436,37 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "the folder first minute",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Simplify the first minute, show the outcome of each choice, explain the circle.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Brief: expert/the-folder/packages/BRIEF_20261019.md: the spider is a careless (greedy) RNA folding program on a circle plot; letters A U G C, both folds always drawn, labelled spider/best counts, hold-preview of each..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
-    "waitingDesign": 1,
-    "done": 0
+    "waitingDesign": 0,
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T02:22:07+00:00",
+     "ok": true,
+     "note": "first-minute brief + build B2t",
+     "source": "board note"
+    },
     {
      "at": "2026-10-17T21:41:35+00:00",
      "ok": true,
@@ -11827,7 +11881,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/thumb-stand-1.webp",
    "firstSeen": "2026-10-15T23:29:31+00:00",
-   "lastChange": "2026-10-20T02:20:01+00:00",
+   "lastChange": "2026-10-20T02:22:01+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -11836,9 +11890,9 @@
     "codexTokens": 392831,
     "codexUsdEst": 0.47,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 16,
-    "earlierUsdEst": 57.6,
-    "totalUsdEst": 61.67
+    "earlierRounds": 17,
+    "earlierUsdEst": 61.2,
+    "totalUsdEst": 65.27
    },
    "tasks": [
     {
@@ -11908,6 +11962,12 @@
    "needsYou": null,
    "history": [
     {
+     "at": "2026-10-20T02:21:51+00:00",
+     "ok": true,
+     "note": "live save migration and compact-phone checks; published , live level 10 mantis confirmed",
+     "source": "board note"
+    },
+    {
      "at": "2026-10-20T00:45:00+00:00",
      "ok": true,
      "note": "NOT_DONE: implementation committed; required bot/browser gates and migration fixture remain incomplete",
@@ -11972,12 +12032,6 @@
      "ok": true,
      "note": "CREDIT line on the How to play card under the rules, EN+ZH (Itagaki, Baki; no art used); live",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-17T22:26:31+00:00",
-     "ok": true,
-     "note": "feat: How to play card names where the game comes from",
-     "source": "main commit"
     }
    ]
   },
