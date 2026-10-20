@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T00:06:05+00:00",
+ "generated": "2026-10-20T00:08:09+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,41 +10,41 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 49,
+    "queued": 50,
     "running": 0,
     "doneToday": 54,
-    "minutes": 1890,
-    "estimateMinutes": 945
+    "minutes": 1930,
+    "estimateMinutes": 965
    },
    "Claude": {
-    "queued": 6,
+    "queued": 5,
     "running": 1,
-    "doneToday": 28,
-    "minutes": 420,
-    "estimateMinutes": 420
+    "doneToday": 29,
+    "minutes": 360,
+    "estimateMinutes": 360
    }
   },
   "queued": 55,
   "running": 1,
-  "doneToday": 82,
+  "doneToday": 83,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2310,
-  "estimatedFinish": "2026-10-20T15:51:05+00:00",
-  "estimateMinutes": 945
+  "minutesRemaining": 2290,
+  "estimatedFinish": "2026-10-20T16:13:09+00:00",
+  "estimateMinutes": 965
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "thumb-stand",
-   "task": "thumb stand baki",
-   "since": "2026-10-20T00:02:00+00:00",
-   "activity": "2026-10-20T00:02:01+00:00",
+   "game": "dynasty-guess",
+   "task": "dynasty guess objects",
+   "since": "2026-10-20T00:06:40+00:00",
+   "activity": "2026-10-20T00:06:41+00:00",
    "commit": {
-    "at": "2026-10-20T00:02:05+00:00",
-    "subject": "start: P2c00a_thumb-stand-baki"
+    "at": "2026-10-20T00:06:45+00:00",
+    "subject": "start: P2c00b_dynasty-guess-objects"
    }
   }
  ],
@@ -78,7 +78,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 67
+   "changes": 68
   }
  ],
  "houseRules": 21,
@@ -2060,14 +2060,14 @@
    "title": "Dynasty Guess",
    "line": "Place a museum object in its period.",
    "url": "https://chenhsieh.github.io/dynasty-guess/",
-   "stage": "planning",
+   "stage": "building",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Fix the missing object, then refine mechanism, story and",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/dynasty-guess-1.webp",
    "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-19T23:59:29+00:00",
+   "lastChange": "2026-10-20T00:06:41+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -2083,16 +2083,19 @@
    "tasks": [
     {
      "title": "dynasty guess objects",
-     "state": "planned",
+     "state": "running",
      "worker": "Claude",
      "plan": "",
-     "since": "2026-10-19T23:59:29+00:00",
+     "since": "2026-10-20T00:06:40+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-20T00:06:45+00:00",
+      "subject": "start: P2c00b_dynasty-guess-objects"
+     },
      "result": ""
     },
     {
@@ -7415,43 +7418,54 @@
    "title": "Thumb Stand",
    "line": "",
    "url": "https://chenhsieh.github.io/thumb-stand/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Fix the level 3 block, then push the visual toward the",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/thumb-stand-1.webp",
    "firstSeen": "2026-10-16T00:44:20+00:00",
-   "lastChange": "2026-10-20T00:02:01+00:00",
+   "lastChange": "2026-10-20T00:06:35+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 199326,
     "codexUsdEst": 0.24,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 7,
     "earlierUsdEst": 25.2,
-    "totalUsdEst": 25.44
+    "totalUsdEst": 29.04
    },
    "tasks": [
     {
-     "title": "thumb stand baki",
-     "state": "running",
-     "worker": "Claude",
+     "title": "thumb stand build",
+     "state": "queued",
+     "worker": "Codex",
      "plan": "",
-     "since": "2026-10-20T00:02:00+00:00",
+     "since": "2026-10-20T00:06:28+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-20T00:02:05+00:00",
-      "subject": "start: P2c00a_thumb-stand-baki"
-     },
+     "commit": null,
      "result": ""
+    },
+    {
+     "title": "thumb stand baki",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-19T23:59:29+00:00",
+     "done": "2026-10-19T23:59:29+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Brief: expert/thumb-stand/packages/BRIEF_20261019.md (Baki-style ringside gallery, imaginary mantis weight, the bet; old Mystery cards move to Today)."
     },
     {
      "title": "thumb stand level3",
@@ -7471,6 +7485,11 @@
    "verdict": null,
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T00:06:35+00:00",
+     "ok": true,
+     "note": "design brief (Baki gallery, mantis, bet) + build task B2a"
+    },
     {
      "at": "2026-10-19T21:30:34+00:00",
      "ok": true,
