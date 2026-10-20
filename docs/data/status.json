@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T19:10:16+00:00",
+ "generated": "2026-10-20T19:12:33+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -17,23 +17,23 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 67,
+    "queued": 70,
     "running": 1,
     "doneToday": 7,
-    "minutes": 912,
-    "estimateMinutes": 912
+    "minutes": 948,
+    "estimateMinutes": 948
    }
   },
-  "queued": 67,
+  "queued": 70,
   "running": 1,
   "doneToday": 13,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 912,
-  "estimatedFinish": "2026-10-21T10:22:16+00:00",
-  "estimateMinutes": 912
+  "minutesRemaining": 948,
+  "estimatedFinish": "2026-10-21T11:00:33+00:00",
+  "estimateMinutes": 948
  },
  "lanes": [
   {
@@ -41,7 +41,7 @@
    "game": "UGA-grad-survivor",
    "task": "uga badges plain and visual",
    "since": "2026-10-20T19:01:10+00:00",
-   "activity": "2026-10-20T19:06:47+00:00",
+   "activity": "2026-10-20T19:12:24+00:00",
    "commit": null
   }
  ],
@@ -14395,7 +14395,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/uga-grad-survivor-1.webp",
    "firstSeen": "2026-03-20T21:08:56+00:00",
-   "lastChange": "2026-10-20T19:06:47+00:00",
+   "lastChange": "2026-10-20T19:12:24+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -14692,14 +14692,14 @@
    "title": "Walls Have Ears",
    "line": "Wish for tea and find which piece is listening.",
    "url": "https://chenhsieh.github.io/walls-have-ears/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Hotel key-cabinet level grid grouped by mechanism, and a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/walls-have-ears-1.webp",
    "firstSeen": "2026-10-15T19:49:23+00:00",
-   "lastChange": "2026-10-20T15:53:01+00:00",
+   "lastChange": "2026-10-20T19:10:30+00:00",
    "cost": {
     "apiUsd": 17.73,
     "codexRuns": 3,
@@ -14713,6 +14713,48 @@
     "totalUsdEst": 122.76
    },
    "tasks": [
+    {
+     "title": "walls clarity fix",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Walls Have Ears: make the long stay readable: draw the maid and her footprints, mark what she can reach, and show the phone cord and who could hear a call.",
+     "since": "2026-10-20T19:10:30+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "walls cameras core",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Walls Have Ears: a camera chapter of six rooms where an unseen watcher points every camera one way and turns them each time room service knocks.",
+     "since": "2026-10-20T19:10:30+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "walls hotel looks",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Walls Have Ears: give each chapter its own hotel look, from a small guesthouse to a motel row, a city hotel, a grand hotel and an embassy.",
+     "since": "2026-10-20T19:10:30+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "walls cell size",
      "state": "done",
@@ -14782,52 +14824,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1a25 walls-next-spin: DONE (2026-10-20)"
-    },
-    {
-     "title": "walls have ears key cabinet",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Hotel key-cabinet level grid grouped by mechanism, and a clearer opening.",
-     "since": "2026-10-19T17:54:51+00:00",
-     "done": "2026-10-19T17:54:51+00:00",
-     "reviewed": false,
-     "minutes": 15,
-     "tokens": 211390,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Players now choose through separate Room Service and Thin Walls key cabinets; the opening clearly states the goal and first action."
-    },
-    {
-     "title": "walls thin walls",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Build the Thin Walls chapter properly: introduced step by step, every room a new decision.",
-     "since": "2026-10-19T16:58:04+00:00",
-     "done": "2026-10-19T16:58:04+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Thin Walls is live as rooms 9-16 of Walls Have Ears: a hotel floor at night. You pour tea through the walls to find which ones listen, then choose who may tell a joke before morning."
-    },
-    {
-     "title": "walls rebuild",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Rebuild the second chapter: each new bug kind introduced one at a time, rooms that differ, every level a new decision.",
-     "since": "2026-10-19T15:38:56+00:00",
-     "done": "2026-10-19T15:38:56+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Walls Have Ears now lists only the eight real rooms plus today's room, all open; rooms 9-25 and the phone-made Daily/Endless are off the list, and two drawn previews (Thin Walls, Eyes and phones) say \"coming soon\"."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 3,
     "running": 0,
     "waitingDesign": 0,
     "done": 12
@@ -14837,7 +14837,7 @@
     "verdict": "ship",
     "note": "Chapter 2 rebuilt; ready to ship"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-20T15:53:01+00:00",
