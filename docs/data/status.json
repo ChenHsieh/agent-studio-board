@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T00:26:38+00:00",
+ "generated": "2026-10-20T00:28:41+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,53 +10,50 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 51,
+    "queued": 50,
     "running": 2,
-    "doneToday": 55,
-    "minutes": 2050,
-    "estimateMinutes": 1025
+    "doneToday": 56,
+    "minutes": 2010,
+    "estimateMinutes": 1005
    },
    "Claude": {
-    "queued": 4,
+    "queued": 6,
     "running": 1,
     "doneToday": 33,
-    "minutes": 300,
-    "estimateMinutes": 300
+    "minutes": 420,
+    "estimateMinutes": 420
    }
   },
-  "queued": 55,
+  "queued": 56,
   "running": 3,
-  "doneToday": 88,
+  "doneToday": 89,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2350,
-  "estimatedFinish": "2026-10-20T17:31:38+00:00",
-  "estimateMinutes": 1025
+  "minutesRemaining": 2430,
+  "estimatedFinish": "2026-10-20T17:13:41+00:00",
+  "estimateMinutes": 1005
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "grass-crossword",
-   "task": "grass crossword build",
-   "since": "2026-10-20T00:11:56+00:00",
-   "activity": "2026-10-20T00:26:37+00:00",
-   "commit": {
-    "at": "2026-10-20T00:25:45+00:00",
-    "subject": "feat: plant the grass family crossword beds"
-   }
-  },
   {
    "worker": "Codex",
    "game": "matchmaker-chat",
    "task": "matchmaker chat build",
    "since": "2026-10-20T00:13:37+00:00",
-   "activity": "2026-10-20T00:26:36+00:00",
+   "activity": "2026-10-20T00:28:41+00:00",
    "commit": {
     "at": "2026-10-20T00:14:28+00:00",
     "subject": "start: B2d_matchmaker-chat-build"
    }
+  },
+  {
+   "worker": "Codex",
+   "game": "zoom-out",
+   "task": "zoom out build",
+   "since": "2026-10-20T00:26:57+00:00",
+   "activity": "2026-10-20T00:28:40+00:00",
+   "commit": null
   },
   {
    "worker": "Claude",
@@ -100,7 +97,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 73
+   "changes": 74
   }
  ],
  "houseRules": 21,
@@ -3231,43 +3228,40 @@
    "title": "Grass Crossword",
    "line": "A crossword dug into a garden bed, where every answer is.",
    "url": "https://chenhsieh.github.io/grass-crossword/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Varied handwriting, more levels, a daily, and a harder late",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/grass-crossword-1.webp",
    "firstSeen": "2026-10-16T01:41:42+00:00",
-   "lastChange": "2026-10-20T00:26:37+00:00",
+   "lastChange": "2026-10-20T00:26:44+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 2,
+    "codexRuns": 3,
     "claudeRuns": 3,
     "apiRuns": 0,
-    "codexTokens": 510167,
-    "codexUsdEst": 0.61,
+    "codexTokens": 675499,
+    "codexUsdEst": 0.81,
     "claudeUsdEst": 10.8,
     "earlierRounds": 2,
     "earlierUsdEst": 7.2,
-    "totalUsdEst": 18.61
+    "totalUsdEst": 18.81
    },
    "tasks": [
     {
      "title": "grass crossword build",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "",
-     "since": "2026-10-20T00:11:56+00:00",
-     "done": null,
+     "since": "2026-10-20T00:10:58+00:00",
+     "done": "2026-10-20T00:10:58+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 15,
+     "tokens": 165332,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-20T00:25:45+00:00",
-      "subject": "feat: plant the grass family crossword beds"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Grass-family packet crossword, album, and notebook added; levels 1–13 remain preserved."
     },
     {
      "title": "grass crossword garden",
@@ -3345,8 +3339,13 @@
     "verdict": "revise",
     "note": "Varied handwriting, more levels, a daily, and a harder late"
    },
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-20T00:26:44+00:00",
+     "ok": true,
+     "note": "grass family packet beds, album and notebook published"
+    },
     {
      "at": "2026-10-20T00:10:58+00:00",
      "ok": true,
@@ -4345,7 +4344,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/matchmaker-chat-1.webp",
    "firstSeen": "2026-10-15T21:39:26+00:00",
-   "lastChange": "2026-10-20T00:26:36+00:00",
+   "lastChange": "2026-10-20T00:28:41+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -4792,14 +4791,14 @@
    "title": "Motif Hero",
    "line": "Set the bar to how common each column's top letter is.",
    "url": "https://chenhsieh.github.io/motif-hero/",
-   "stage": "live",
-   "who": null,
+   "stage": "planning",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/motif-hero-1.webp",
    "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-19T21:08:25+00:00",
+   "lastChange": "2026-10-20T00:27:42+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -4813,6 +4812,20 @@
     "totalUsdEst": 0.25
    },
    "tasks": [
+    {
+     "title": "motif hero drag lock",
+     "state": "planned",
+     "worker": "Claude",
+     "plan": "Releasing the drag locks the estimate, no extra button, a redesigned slider.",
+     "since": "2026-10-20T00:27:42+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "motif hero bio round",
      "state": "done",
@@ -5583,14 +5596,14 @@
    "title": "RNA Hero",
    "line": "Zip an RNA strand into its best fold.",
    "url": "https://chenhsieh.github.io/rna-hero/",
-   "stage": "live",
-   "who": null,
+   "stage": "planning",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/rna-hero-1.webp",
    "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-19T21:17:38+00:00",
+   "lastChange": "2026-10-20T00:27:42+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -5604,6 +5617,20 @@
     "totalUsdEst": 0.28
    },
    "tasks": [
+    {
+     "title": "rna hero pseudoknots",
+     "state": "planned",
+     "worker": "Claude",
+     "plan": "A later chapter where crossing pairs (pseudoknots) can be correct, taught with a picture on the board.",
+     "since": "2026-10-20T00:27:42+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "rna hero bio round",
      "state": "done",
@@ -8415,14 +8442,14 @@
    "title": "Zoom Out",
    "line": "",
    "url": "https://chenhsieh.github.io/zoom-out/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Circular scale story (molecule to universe, butterfly",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-16T00:50:51+00:00",
-   "lastChange": "2026-10-20T00:18:04+00:00",
+   "lastChange": "2026-10-20T00:28:40+00:00",
    "cost": {
     "apiUsd": 7.14,
     "codexRuns": 1,
@@ -8438,10 +8465,10 @@
    "tasks": [
     {
      "title": "zoom out build",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "",
-     "since": "2026-10-20T00:18:04+00:00",
+     "since": "2026-10-20T00:26:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
