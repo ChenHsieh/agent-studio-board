@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T00:41:40+00:00",
+ "generated": "2026-10-20T00:42:15+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 59,
+    "queued": 58,
     "running": 2,
-    "doneToday": 57,
-    "minutes": 2370,
-    "estimateMinutes": 1185
+    "doneToday": 58,
+    "minutes": 2330,
+    "estimateMinutes": 1165
    },
    "Claude": {
     "queued": 5,
@@ -24,18 +24,26 @@
     "estimateMinutes": 360
    }
   },
-  "queued": 64,
+  "queued": 63,
   "running": 3,
-  "doneToday": 91,
+  "doneToday": 92,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2730,
-  "estimatedFinish": "2026-10-20T20:26:40+00:00",
-  "estimateMinutes": 1185
+  "minutesRemaining": 2690,
+  "estimatedFinish": "2026-10-20T20:07:15+00:00",
+  "estimateMinutes": 1165
  },
  "lanes": [
+  {
+   "worker": "Codex",
+   "game": "thumb-stand",
+   "task": "thumb stand build",
+   "since": "2026-10-20T00:41:58+00:00",
+   "activity": "2026-10-20T00:42:12+00:00",
+   "commit": null
+  },
   {
    "worker": "Codex",
    "game": "zoom-out",
@@ -53,14 +61,6 @@
    "task": "colony count new mechanism",
    "since": "2026-10-20T00:35:41+00:00",
    "activity": "2026-10-20T00:38:58+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Codex",
-   "game": "Multiple games",
-   "task": "board live and registry",
-   "since": null,
-   "activity": null,
    "commit": null
   }
  ],
@@ -11557,14 +11557,14 @@
    "title": "Thumb Stand",
    "line": "",
    "url": "https://chenhsieh.github.io/thumb-stand/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Fix the level 3 block, then push the visual toward the",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/thumb-stand-1.webp",
    "firstSeen": "2026-10-15T23:29:31+00:00",
-   "lastChange": "2026-10-20T00:33:07+00:00",
+   "lastChange": "2026-10-20T00:42:12+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -11580,10 +11580,10 @@
    "tasks": [
     {
      "title": "thumb stand build",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "",
-     "since": "2026-10-20T00:33:07+00:00",
+     "since": "2026-10-20T00:41:58+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -11622,8 +11622,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
