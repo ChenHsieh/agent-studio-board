@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T00:42:15+00:00",
+ "generated": "2026-10-20T00:44:19+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 58,
+    "queued": 57,
     "running": 2,
-    "doneToday": 58,
-    "minutes": 2330,
-    "estimateMinutes": 1165
+    "doneToday": 59,
+    "minutes": 2290,
+    "estimateMinutes": 1145
    },
    "Claude": {
     "queued": 5,
@@ -24,16 +24,16 @@
     "estimateMinutes": 360
    }
   },
-  "queued": 63,
+  "queued": 62,
   "running": 3,
-  "doneToday": 92,
+  "doneToday": 93,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2690,
-  "estimatedFinish": "2026-10-20T20:07:15+00:00",
-  "estimateMinutes": 1165
+  "minutesRemaining": 2650,
+  "estimatedFinish": "2026-10-20T19:49:19+00:00",
+  "estimateMinutes": 1145
  },
  "lanes": [
   {
@@ -41,19 +41,19 @@
    "game": "thumb-stand",
    "task": "thumb stand build",
    "since": "2026-10-20T00:41:58+00:00",
-   "activity": "2026-10-20T00:42:12+00:00",
-   "commit": null
+   "activity": "2026-10-20T00:44:18+00:00",
+   "commit": {
+    "at": "2026-10-20T00:42:51+00:00",
+    "subject": "docs: add fixed thumb stand brief"
+   }
   },
   {
    "worker": "Codex",
-   "game": "zoom-out",
-   "task": "zoom out build",
-   "since": "2026-10-20T00:26:57+00:00",
-   "activity": "2026-10-20T00:41:37+00:00",
-   "commit": {
-    "at": "2026-10-20T00:28:44+00:00",
-    "subject": "start: B2e_zoom-out-build"
-   }
+   "game": "dynasty-guess",
+   "task": "dynasty guess build finish",
+   "since": "2026-10-20T00:43:25+00:00",
+   "activity": "2026-10-20T00:44:18+00:00",
+   "commit": null
   },
   {
    "worker": "Claude",
@@ -2905,14 +2905,14 @@
    "title": "Dynasty Guess",
    "line": "Place a museum object in its period.",
    "url": "https://chenhsieh.github.io/dynasty-guess/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Fix the missing object, then refine mechanism, story and",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/dynasty-guess-1.webp",
    "firstSeen": "2026-09-20T06:03:01+00:00",
-   "lastChange": "2026-10-20T00:34:33+00:00",
+   "lastChange": "2026-10-20T00:44:18+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -2928,10 +2928,10 @@
    "tasks": [
     {
      "title": "dynasty guess build finish",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "",
-     "since": "2026-10-20T00:34:33+00:00",
+     "since": "2026-10-20T00:43:25+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2998,8 +2998,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
@@ -11564,7 +11564,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/thumb-stand-1.webp",
    "firstSeen": "2026-10-15T23:29:31+00:00",
-   "lastChange": "2026-10-20T00:42:12+00:00",
+   "lastChange": "2026-10-20T00:44:18+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -11589,7 +11589,10 @@
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-20T00:42:51+00:00",
+      "subject": "docs: add fixed thumb stand brief"
+     },
      "result": ""
     },
     {
@@ -13090,43 +13093,40 @@
    "title": "Zoom Out",
    "line": "",
    "url": "https://chenhsieh.github.io/zoom-out/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Circular scale story (molecule to universe, butterfly",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-16T00:32:50+00:00",
-   "lastChange": "2026-10-20T00:41:37+00:00",
+   "lastChange": "2026-10-20T00:18:04+00:00",
    "cost": {
     "apiUsd": 7.14,
-    "codexRuns": 1,
+    "codexRuns": 2,
     "claudeRuns": 1,
     "apiRuns": 0,
-    "codexTokens": 282800,
-    "codexUsdEst": 0.34,
+    "codexTokens": 443116,
+    "codexUsdEst": 0.53,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 13,
-    "earlierUsdEst": 46.8,
-    "totalUsdEst": 57.88
+    "earlierRounds": 12,
+    "earlierUsdEst": 43.2,
+    "totalUsdEst": 54.47
    },
    "tasks": [
     {
      "title": "zoom out build",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "",
-     "since": "2026-10-20T00:26:57+00:00",
-     "done": null,
+     "since": "2026-10-20T00:18:04+00:00",
+     "done": "2026-10-20T00:18:04+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 16,
+     "tokens": 160316,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-20T00:28:44+00:00",
-      "subject": "start: B2e_zoom-out-build"
-     },
-     "result": ""
+     "commit": null,
+     "result": "`` baseline and `` butterfly-dream board."
     },
     {
      "title": "zoom out beauty",
@@ -13159,12 +13159,12 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": null,
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
     {
      "at": "2026-10-19T23:05:58+00:00",
