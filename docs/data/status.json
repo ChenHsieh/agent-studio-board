@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T03:49:18+00:00",
+ "generated": "2026-10-20T03:51:26+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -17,22 +17,22 @@
     "estimateMinutes": 1400
    },
    "Claude": {
-    "queued": 1,
+    "queued": 2,
     "running": 1,
     "doneToday": 39,
-    "minutes": 120,
-    "estimateMinutes": 120
+    "minutes": 180,
+    "estimateMinutes": 180
    }
   },
-  "queued": 69,
+  "queued": 70,
   "running": 3,
   "doneToday": 174,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2920,
-  "estimatedFinish": "2026-10-21T03:09:18+00:00",
+  "minutesRemaining": 2980,
+  "estimatedFinish": "2026-10-21T03:11:26+00:00",
   "estimateMinutes": 1400
  },
  "lanes": [
@@ -41,7 +41,7 @@
    "game": "BioRedactle-nextjs",
    "task": "redacxiv rename",
    "since": "2026-10-20T03:26:04+00:00",
-   "activity": "2026-10-20T03:49:13+00:00",
+   "activity": "2026-10-20T03:51:26+00:00",
    "commit": null
   },
   {
@@ -49,7 +49,7 @@
    "game": "cymatic-plate",
    "task": "cymatic endless build",
    "since": "2026-10-20T03:43:30+00:00",
-   "activity": "2026-10-20T03:49:12+00:00",
+   "activity": "2026-10-20T03:51:00+00:00",
    "commit": {
     "at": "2026-10-20T03:44:30+00:00",
     "subject": "start: P1a22b_cymatic-endless-build"
@@ -60,7 +60,7 @@
    "game": "walls-have-ears",
    "task": "walls next spin",
    "since": "2026-10-20T03:26:42+00:00",
-   "activity": "2026-10-20T03:30:06+00:00",
+   "activity": "2026-10-20T03:51:25+00:00",
    "commit": null
   }
  ],
@@ -1096,12 +1096,11 @@
    ]
   },
   {
-   "id": "redacxiv",
-   "repo": "redacxiv",
-   "title": "Redacxiv",
-   "line": "Reveal a paper's title with word tiles. Formerly BioRedactle; its old Pages address redirects here.",
-   "url": "https://chenhsieh.github.io/redacxiv/",
-   "redirectFrom": "https://chenhsieh.github.io/BioRedactle-nextjs/",
+   "id": "bioredactle",
+   "repo": "BioRedactle-nextjs",
+   "title": "BioRedactle",
+   "line": "Reveal a paper's title with word tiles.",
+   "url": "https://chenhsieh.github.io/BioRedactle-nextjs/",
    "stage": "building",
    "who": "Codex",
    "priority": null,
@@ -1109,7 +1108,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/bioredactle-1.webp",
    "firstSeen": "2026-10-05T10:15:34+00:00",
-   "lastChange": "2026-10-20T03:49:13+00:00",
+   "lastChange": "2026-10-20T03:51:26+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -2364,7 +2363,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/cymatic-plate-1.webp",
    "firstSeen": "2026-10-16T01:38:21+00:00",
-   "lastChange": "2026-10-20T03:49:12+00:00",
+   "lastChange": "2026-10-20T03:51:00+00:00",
    "cost": {
     "apiUsd": 3.26,
     "codexRuns": 3,
@@ -13740,14 +13739,14 @@
    "title": "UGA Grad Survivor",
    "line": "Swipe through a PhD.",
    "url": "https://chenhsieh.github.io/UGA-grad-survivor/",
-   "stage": "live",
-   "who": null,
+   "stage": "planning",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/uga-grad-survivor-1.webp",
    "firstSeen": "2026-03-20T20:46:30+00:00",
-   "lastChange": "2026-10-17T23:15:14+00:00",
+   "lastChange": "2026-10-20T03:51:02+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -13760,11 +13759,26 @@
     "earlierUsdEst": 46.8,
     "totalUsdEst": 46.8
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "grad survivor 1in8b",
+     "state": "planned",
+     "worker": "Claude",
+     "plan": "Grad Survivor: a one-tap random start, short runs, and a shareable ending card, open to any grad student.",
+     "since": "2026-10-20T03:51:02+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "taskCounts": {
     "queued": 0,
     "running": 0,
-    "waitingDesign": 0,
+    "waitingDesign": 1,
     "done": 0
    },
    "verdict": null,
@@ -13978,7 +13992,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/walls-have-ears-1.webp",
    "firstSeen": "2026-10-15T19:49:23+00:00",
-   "lastChange": "2026-10-20T03:30:06+00:00",
+   "lastChange": "2026-10-20T03:51:25+00:00",
    "cost": {
     "apiUsd": 17.73,
     "codexRuns": 3,
