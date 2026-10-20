@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T19:53:12+00:00",
+ "generated": "2026-10-20T19:55:22+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -17,31 +17,31 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 85,
-    "running": 3,
-    "doneToday": 9,
-    "minutes": 1248,
-    "estimateMinutes": 1248
+    "queued": 84,
+    "running": 2,
+    "doneToday": 11,
+    "minutes": 1176,
+    "estimateMinutes": 1176
    }
   },
-  "queued": 85,
-  "running": 3,
-  "doneToday": 15,
+  "queued": 84,
+  "running": 2,
+  "doneToday": 17,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 1248,
-  "estimatedFinish": "2026-10-21T16:41:12+00:00",
-  "estimateMinutes": 1248
+  "minutesRemaining": 1176,
+  "estimatedFinish": "2026-10-21T15:31:22+00:00",
+  "estimateMinutes": 1176
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "UGA-grad-survivor",
-   "task": "uga survivor flow logic fix",
-   "since": "2026-10-20T19:25:48+00:00",
-   "activity": "2026-10-20T19:51:55+00:00",
+   "task": "uga survivor copy edit",
+   "since": "2026-10-20T19:54:03+00:00",
+   "activity": "2026-10-20T19:54:18+00:00",
    "commit": null
   },
   {
@@ -51,18 +51,10 @@
    "since": "2026-10-20T19:13:49+00:00",
    "activity": "2026-10-20T19:50:36+00:00",
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "repos bloat audit and fresh anechoic",
-   "since": null,
-   "activity": null,
-   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 3,
+ "claudeWorkers": 2,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -95,7 +87,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 32
+   "changes": 34
   }
  ],
  "houseRules": 23,
@@ -14495,40 +14487,26 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/uga-grad-survivor-1.webp",
    "firstSeen": "2026-03-20T21:18:06+00:00",
-   "lastChange": "2026-10-20T19:51:55+00:00",
+   "lastChange": "2026-10-20T19:54:18+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 13,
     "earlierUsdEst": 46.8,
-    "totalUsdEst": 50.4
+    "totalUsdEst": 54.0
    },
    "tasks": [
     {
-     "title": "uga survivor flow logic fix",
+     "title": "uga survivor copy edit",
      "state": "running",
      "worker": "Claude",
-     "plan": "Fix UGA Grad Survivor flow and logic: readable start screen, consistent timeline words, clear advisor choice, full workflow review.",
-     "since": "2026-10-20T19:25:48+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "uga survivor copy edit",
-     "state": "queued",
-     "worker": "Claude",
      "plan": "Copywriter pass on all UGA Grad Survivor text to remove AI feel and cringe, in English and Traditional Chinese.",
-     "since": "2026-10-20T19:25:48+00:00",
+     "since": "2026-10-20T19:54:03+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -14550,6 +14528,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "uga survivor flow logic fix",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Fix UGA Grad Survivor flow and logic: readable start screen, consistent timeline words, clear advisor choice, full workflow review.",
+     "since": "2026-10-20T19:25:48+00:00",
+     "done": "2026-10-20T19:25:48+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1a60 UGA Grad Survivor flow and logic fix: LIVE (main , rollback tag pre-p1a60-flow-fix). Live bytes match the branch."
     },
     {
      "title": "uga badges plain and visual",
@@ -14581,14 +14573,20 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 1,
     "running": 1,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": null,
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T19:53:42+00:00",
+     "ok": true,
+     "note": "start screen waits for player, advisor picked not dealt, timeline facts fixed in cards, callbacks gated, timeline test; live",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T19:13:43+00:00",
      "ok": true,
@@ -14653,12 +14651,6 @@
      "at": "2026-03-20T22:14:59+00:00",
      "ok": true,
      "note": "feat: add unlock hints for locked archetypes and update Crimson theme description",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-03-20T22:12:13+00:00",
-     "ok": true,
-     "note": "feat: add Crimson theme and OG image redesign",
      "source": "main commit"
     }
    ]
