@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T20:06:28+00:00",
+ "generated": "2026-10-20T20:08:39+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -17,23 +17,23 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 88,
-    "running": 1,
+    "queued": 96,
+    "running": 2,
     "doneToday": 13,
-    "minutes": 1164,
-    "estimateMinutes": 1164
+    "minutes": 1320,
+    "estimateMinutes": 1320
    }
   },
-  "queued": 88,
-  "running": 1,
+  "queued": 96,
+  "running": 2,
   "doneToday": 19,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 1164,
-  "estimatedFinish": "2026-10-21T15:30:28+00:00",
-  "estimateMinutes": 1164
+  "minutesRemaining": 1320,
+  "estimatedFinish": "2026-10-21T18:08:39+00:00",
+  "estimateMinutes": 1320
  },
  "lanes": [
   {
@@ -41,12 +41,20 @@
    "game": "UGA-grad-survivor",
    "task": "uga survivor copy edit",
    "since": "2026-10-20T19:54:03+00:00",
-   "activity": "2026-10-20T20:05:14+00:00",
+   "activity": "2026-10-20T20:07:08+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "colony-count",
+   "task": "colony round dish study",
+   "since": "2026-10-20T20:06:33+00:00",
+   "activity": "2026-10-20T20:07:47+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 2,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -417,7 +425,7 @@
      "title": "hero suite reskin",
      "state": "queued",
      "worker": "Claude",
-     "plan": "",
+     "plan": "Align, Local and Tree Hero put on the old-computer look (punch card, DOS, X11) with their own logos; same puzzles and saves.",
      "since": "2026-10-20T20:06:01+00:00",
      "done": null,
      "reviewed": false,
@@ -1787,14 +1795,14 @@
    "title": "Colony Count",
    "line": "Solve three daily levels, then freeze finished plates.",
    "url": "https://chenhsieh.github.io/colony-count/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P1",
    "priorityNote": "Flagship; has its own owner",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-20T19:57:26+00:00",
+   "lastChange": "2026-10-20T20:07:47+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
@@ -1810,10 +1818,10 @@
    "tasks": [
     {
      "title": "colony round dish study",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Colony Count study 2: round dish.",
-     "since": "2026-10-20T19:00:06+00:00",
+     "since": "2026-10-20T20:06:33+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1922,8 +1930,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 9
    },
@@ -2204,7 +2212,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/nesting-scrap-1.webp",
    "firstSeen": "2026-10-15T23:26:00+00:00",
-   "lastChange": "2026-10-20T18:59:29+00:00",
+   "lastChange": "2026-10-20T20:07:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -2218,6 +2226,20 @@
     "totalUsdEst": 36.0
    },
    "tasks": [
+    {
+     "title": "nesting scrap taste",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Cookie Cutter gets a home: a blue cookie tin instead of gingham, hand-bent tin cutters, and a new last-sheet rule where the final scrap, kept in one piece, becomes the baker's own cookie.",
+     "since": "2026-10-20T20:07:50+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "nesting scrap orders",
      "state": "queued",
@@ -2262,7 +2284,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 2
@@ -5706,14 +5728,14 @@
    "title": "Grass Crossword",
    "line": "A crossword dug into a garden bed, where every answer is.",
    "url": "https://chenhsieh.github.io/grass-crossword/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Varied handwriting, more levels, a daily, and a harder late",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/grass-crossword-1.webp",
    "firstSeen": "2026-10-16T01:23:04+00:00",
-   "lastChange": "2026-10-20T02:08:27+00:00",
+   "lastChange": "2026-10-20T20:06:59+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 5,
@@ -5727,6 +5749,34 @@
     "totalUsdEst": 44.52
    },
    "tasks": [
+    {
+     "title": "grass crossword drag preview logic",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Grass Crossword: make the drag preview plant exactly what it shows, rebuild the grass family levels as real crosswords, thumb-sized answers.",
+     "since": "2026-10-20T20:06:59+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "grass crossword piece legend teaching",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Grass Crossword: a drawn mark and length boxes for every grass packet, a first-use example, and a field guide to the grass family.",
+     "since": "2026-10-20T20:06:42+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "grass crossword beds",
      "state": "done",
@@ -5810,38 +5860,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Grass Crossword is now drawn by hand: wobbly ink grid, pen-inked black squares, GRASS over a green watercolour wash, hand font for headings; every level open."
-    },
-    {
-     "title": "review of grass source",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-19T03:50:13+00:00",
-     "done": "2026-10-19T03:50:13+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "grass source",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Read the source piece closely; redesign so across and down matter and the original's idea is kept, or say why not.",
-     "since": "2026-10-18T17:32:39+00:00",
-     "done": "2026-10-18T17:32:39+00:00",
-     "reviewed": true,
-     "minutes": 20,
-     "tokens": 266643,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Redesigned it as a directional newspaper crossword; source study: [SOURCE_20261018.md]("
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 8
@@ -7143,14 +7165,14 @@
    "title": "LLM Game of Life",
    "line": "Watch a language model tend a living grid.",
    "url": "https://chenhsieh.github.io/llm-game-of-life/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Claude",
    "priority": "P3",
    "priorityNote": "Check for a game core",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/llm-game-of-life-1.webp",
    "firstSeen": "2026-08-16T14:13:21+00:00",
-   "lastChange": "2026-10-20T02:39:09+00:00",
+   "lastChange": "2026-10-20T20:06:42+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -7164,6 +7186,20 @@
     "totalUsdEst": 43.2
    },
    "tasks": [
+    {
+     "title": "llm life obvious game",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Turn the language-model Game of Life page into a game on its first screen: pin the words the machine will leave alone, watch its real rewrite, essay behind a Why button.",
+     "since": "2026-10-20T20:06:42+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "llm game of life core",
      "state": "done",
@@ -7180,7 +7216,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
@@ -8612,7 +8648,7 @@
      "title": "hero theme kit",
      "state": "queued",
      "worker": "Claude",
-     "plan": "",
+     "plan": "One old-computer look for the five bioinformatics games (green terminal, black-and-white Mac, punch card, DOS, X11) as a shared kit; Motif Hero gets the green terminal and its own logo first.",
      "since": "2026-10-20T20:06:01+00:00",
      "done": null,
      "reviewed": false,
@@ -8626,7 +8662,7 @@
      "title": "motif hero arcade",
      "state": "queued",
      "worker": "Claude",
-     "plan": "",
+     "plan": "Motif Hero arcade mode: a line swings up and down the column like a pendulum and you strike when it meets the share; four speeds, grades and combos, no countdown.",
      "since": "2026-10-20T20:06:01+00:00",
      "done": null,
      "reviewed": false,
@@ -8640,7 +8676,7 @@
      "title": "motif hero daily endless collection",
      "state": "queued",
      "worker": "Claude",
-     "plan": "",
+     "plan": "Motif Hero daily in three difficulties, endless mode, archive and stats, and a collection of 12 real published DNA motifs with their papers and real logos.",
      "since": "2026-10-20T20:06:01+00:00",
      "done": null,
      "reviewed": false,
@@ -10156,7 +10192,7 @@
      "title": "rna hero bridge game",
      "state": "queued",
      "worker": "Claude",
-     "plan": "",
+     "plan": "RNA Hero becomes a real bridge: pull arches between letters over a river, stack them into strong spans, then drive the truck across; one line of text on screen.",
      "since": "2026-10-20T20:06:01+00:00",
      "done": null,
      "reviewed": false,
@@ -13556,14 +13592,14 @@
    "title": "Thumb Stand",
    "line": "",
    "url": "https://chenhsieh.github.io/thumb-stand/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Fix the level 3 block, then push the visual toward the",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/thumb-stand-1.webp",
    "firstSeen": "2026-10-15T23:29:31+00:00",
-   "lastChange": "2026-10-20T03:07:40+00:00",
+   "lastChange": "2026-10-20T20:07:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -13577,6 +13613,20 @@
     "totalUsdEst": 65.82
    },
    "tasks": [
+    {
+     "title": "thumb stand core and look",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Thumb Stand: order his moves, then hold him up on your own thumb; a black-and-white manga look replaces the circus strongman; the stray scroll and gallery line go.",
+     "since": "2026-10-20T20:07:50+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "thumb stand polish",
      "state": "done",
@@ -13649,7 +13699,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 5
@@ -13930,14 +13980,14 @@
    "title": "Tractatus Tree",
    "line": "The numbered pages of a 1921 book are shuffled into a few.",
    "url": "https://chenhsieh.github.io/tractatus-tree/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Teach the philosophy gradually through play, not as homework",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/tractatus-tree-1.webp",
    "firstSeen": "2026-10-16T01:51:20+00:00",
-   "lastChange": "2026-10-20T05:54:28+00:00",
+   "lastChange": "2026-10-20T20:07:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -13951,6 +14001,20 @@
     "totalUsdEst": 39.88
    },
    "tasks": [
+    {
+     "title": "tractatus meaning and fun",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Tractatus Tree shows the real sentences on every page, a chain of pages lights up line by line, chapters follow the book's seven trunks, and the last level is won by keeping still.",
+     "since": "2026-10-20T20:07:50+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "tractatus tree visible",
      "state": "done",
@@ -13995,7 +14059,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
@@ -14593,7 +14657,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/uga-grad-survivor-1.webp",
    "firstSeen": "2026-03-20T21:21:51+00:00",
-   "lastChange": "2026-10-20T20:05:14+00:00",
+   "lastChange": "2026-10-20T20:07:08+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -15412,14 +15476,14 @@
    "title": "Zoom Out",
    "line": "",
    "url": "https://chenhsieh.github.io/zoom-out/",
-   "stage": "live",
-   "who": null,
-   "priority": "P3",
-   "priorityNote": "Circular scale story (molecule to universe, butterfly",
+   "stage": "queued",
+   "who": "Claude",
+   "priority": "P2",
+   "priorityNote": "Getting somewhere:",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-16T00:32:50+00:00",
-   "lastChange": "2026-10-20T02:51:42+00:00",
+   "lastChange": "2026-10-20T20:07:45+00:00",
    "cost": {
     "apiUsd": 7.14,
     "codexRuns": 3,
@@ -15433,6 +15497,48 @@
     "totalUsdEst": 54.76
    },
    "tasks": [
+    {
+     "title": "zoomout webgl core",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Zoom Out: a live fractal fills the top half and dials below (zoom, turn, time, look in, spokes) tune it to match the card; first three levels.",
+     "since": "2026-10-20T20:07:45+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "zoomout levels parables",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Zoom Out: eight levels where a Zhuangzi, Laozi or Sunzi parable is the thing you find in the fractal, plus a daily and an endless mode.",
+     "since": "2026-10-20T20:07:45+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "zoomout interface polish",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Zoom Out: one-dial-per-page how to play, sound, share card and preview image, smoother dials on small phones.",
+     "since": "2026-10-20T20:07:45+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "zoom out finish",
      "state": "done",
@@ -15491,7 +15597,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 3,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
