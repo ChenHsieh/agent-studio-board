@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T14:52:37+00:00",
+ "generated": "2026-10-20T14:54:52+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -12,36 +12,36 @@
    "Codex": {
     "queued": 0,
     "running": 0,
-    "doneToday": 2,
+    "doneToday": 3,
     "minutes": 0,
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 63,
+    "queued": 62,
     "running": 1,
     "doneToday": 0,
-    "minutes": 912,
-    "estimateMinutes": 912
+    "minutes": 900,
+    "estimateMinutes": 900
    }
   },
-  "queued": 63,
+  "queued": 62,
   "running": 1,
-  "doneToday": 2,
+  "doneToday": 3,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 912,
-  "estimatedFinish": "2026-10-21T06:04:37+00:00",
-  "estimateMinutes": 912
+  "minutesRemaining": 900,
+  "estimatedFinish": "2026-10-21T05:54:52+00:00",
+  "estimateMinutes": 900
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "walls-have-ears",
-   "task": "walls remix rooms",
-   "since": "2026-10-20T13:35:20+00:00",
-   "activity": "2026-10-20T14:50:08+00:00",
+   "task": "walls longstay rules",
+   "since": "2026-10-20T14:54:16+00:00",
+   "activity": "2026-10-20T14:54:16+00:00",
    "commit": null
   }
  ],
@@ -79,7 +79,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 19
+   "changes": 20
   }
  ],
  "houseRules": 23,
@@ -14363,12 +14363,12 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/walls-have-ears-1.webp",
    "firstSeen": "2026-10-15T19:49:23+00:00",
-   "lastChange": "2026-10-20T14:50:08+00:00",
+   "lastChange": "2026-10-20T14:54:16+00:00",
    "cost": {
     "apiUsd": 17.73,
     "codexRuns": 3,
     "claudeRuns": 4,
-    "apiRuns": 2,
+    "apiRuns": 3,
     "codexTokens": 528897,
     "codexUsdEst": 0.63,
     "claudeUsdEst": 14.4,
@@ -14378,25 +14378,11 @@
    },
    "tasks": [
     {
-     "title": "walls remix rooms",
+     "title": "walls longstay rules",
      "state": "running",
      "worker": "Claude",
-     "plan": "Walls Have Ears: six new rooms that mix the hallway and the windows, each a new decision (shout from the light, one window over two rooms, light through a connecting door, low slanted sun, housekeeping's footprints, a finale).",
-     "since": "2026-10-20T13:35:20+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "walls longstay rules",
-     "state": "queued",
-     "worker": "Claude",
      "plan": "Walls Have Ears: rules and measured rooms for an endless long stay where housekeeping can only plant bugs along the way she walks.",
-     "since": "2026-10-20T05:19:12+00:00",
+     "since": "2026-10-20T14:54:16+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -14432,6 +14418,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "A player on a 320 x 568 phone now sees the room board at full width: the smallest cell on any of 46 boards (rooms, dailies, hallway rooms) is 41.9 css px (was 27 to 37); at 390 x 844 nothing shrinks, the board is a..."
+    },
+    {
+     "title": "walls remix rooms",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Walls Have Ears: six new rooms that mix the hallway and the windows, each a new decision (shout from the light, one window over two rooms, light through a connecting door, low slanted sun, housekeeping's footprints, a finale).",
+     "since": "2026-10-20T05:19:12+00:00",
+     "done": "2026-10-20T05:19:12+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Walls Have Ears now has a fourth key-cabinet chapter, \"The whole floor at night\", rooms 23-28 (live https://chenhsieh.github.io/walls-have-ears/ commit )."
     },
     {
      "title": "walls next spin",
@@ -14491,10 +14491,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 1,
     "running": 1,
     "waitingDesign": 0,
-    "done": 9
+    "done": 10
    },
    "verdict": {
     "date": "2026-10-19",
@@ -14503,6 +14503,12 @@
    },
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T14:54:15+00:00",
+     "ok": true,
+     "note": "rooms 23-28 (chapter 4: whole floor at night: shout from light, wide window, door light, low sun, housekeeping route, last night); live",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T05:34:50+00:00",
      "ok": true,
@@ -14568,12 +14574,6 @@
      "ok": true,
      "note": "feat: choose rooms from a key cabinet",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-19T17:24:06+00:00",
-     "ok": true,
-     "note": "Thin Walls rooms 9-16 built for real (thin.js, night floor, room 9 teaching loop); live",
-     "source": "board note"
     }
    ]
   },
