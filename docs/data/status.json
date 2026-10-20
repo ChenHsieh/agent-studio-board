@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T01:20:11+00:00",
+ "generated": "2026-10-20T01:22:21+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -12,7 +12,7 @@
    "Codex": {
     "queued": 56,
     "running": 2,
-    "doneToday": 62,
+    "doneToday": 63,
     "minutes": 2250,
     "estimateMinutes": 1125
    },
@@ -26,13 +26,13 @@
   },
   "queued": 64,
   "running": 4,
-  "doneToday": 96,
+  "doneToday": 97,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
   "minutesRemaining": 2850,
-  "estimatedFinish": "2026-10-20T20:05:11+00:00",
+  "estimatedFinish": "2026-10-20T20:07:21+00:00",
   "estimateMinutes": 1125
  },
  "lanes": [
@@ -41,7 +41,7 @@
    "game": "matchmaker-chat",
    "task": "matchmaker chat fix",
    "since": "2026-10-20T00:51:43+00:00",
-   "activity": "2026-10-20T01:20:10+00:00",
+   "activity": "2026-10-20T01:22:05+00:00",
    "commit": null
   },
   {
@@ -49,7 +49,7 @@
    "game": "felt-years",
    "task": "felt years build",
    "since": "2026-10-20T01:16:56+00:00",
-   "activity": "2026-10-20T01:19:59+00:00",
+   "activity": "2026-10-20T01:21:38+00:00",
    "commit": {
     "at": "2026-10-20T01:17:51+00:00",
     "subject": "start: B2f_felt-years-build"
@@ -65,10 +65,10 @@
   },
   {
    "worker": "Claude",
-   "game": "anechoic-fugue",
-   "task": "anechoic publish review",
-   "since": "2026-10-20T00:48:20+00:00",
-   "activity": "2026-10-20T01:17:02+00:00",
+   "game": "copy-paste",
+   "task": "hello princess level story",
+   "since": "2026-10-20T01:21:54+00:00",
+   "activity": "2026-10-20T01:21:59+00:00",
    "commit": null
   }
  ],
@@ -102,7 +102,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 77
+   "changes": 78
   }
  ],
  "houseRules": 21,
@@ -503,19 +503,19 @@
    "title": "Anechoic Fugue",
    "line": "Place speakers so the sleeper's chair goes quiet.",
    "url": "https://chenhsieh.github.io/anechoic-fugue/",
-   "stage": "building",
+   "stage": "planning",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Decide the physical model and its on-screen readout, choose",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/anechoic-fugue-1.webp",
    "firstSeen": "2026-10-15T18:08:35+00:00",
-   "lastChange": "2026-10-20T01:17:02+00:00",
+   "lastChange": "2026-10-20T01:21:50+00:00",
    "cost": {
     "apiUsd": 17.97,
     "codexRuns": 2,
     "claudeRuns": 1,
-    "apiRuns": 2,
+    "apiRuns": 3,
     "codexTokens": 373040,
     "codexUsdEst": 0.45,
     "claudeUsdEst": 3.6,
@@ -525,11 +525,11 @@
    },
    "tasks": [
     {
-     "title": "anechoic publish review",
-     "state": "running",
+     "title": "anechoic depth",
+     "state": "planned",
      "worker": "Claude",
-     "plan": "Review every level of the new koi and slow-water version, fix what fails, and publish it.",
-     "since": "2026-10-20T00:48:20+00:00",
+     "plan": "",
+     "since": "2026-10-20T01:21:50+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -539,13 +539,27 @@
      "result": ""
     },
     {
+     "title": "anechoic publish review",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Review every level of the new koi and slow-water version, fix what fails, and publish it.",
+     "since": "2026-10-20T00:36:57+00:00",
+     "done": "2026-10-20T00:36:57+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Live now: the koi pond (slow ripples with Step/Pause, rocking bar per duckling, n of m asleep, WebGL water, two-frog and rain chapters) at https://chenhsieh.github.io/anechoic-fugue/, checked live at 390 (level 1 solved..."
+    },
+    {
      "title": "anechoic fugue build",
      "state": "done",
      "worker": "Codex",
      "plan": "Slow the water, show each duckling's rocking and the still seam, koi replace the floats, soft water sound, every level a new decision.",
      "since": "2026-10-19T18:03:20+00:00",
      "done": "2026-10-19T18:03:20+00:00",
-     "reviewed": false,
+     "reviewed": true,
      "minutes": 15,
      "tokens": 186369,
      "reviewOutcome": null,
@@ -559,7 +573,7 @@
      "plan": "WebGL water, big two-frog ponds, rain levels with lily pads, a daily pond.",
      "since": "2026-10-19T18:03:20+00:00",
      "done": "2026-10-19T18:03:20+00:00",
-     "reviewed": false,
+     "reviewed": true,
      "minutes": 12,
      "tokens": 186671,
      "reviewOutcome": null,
@@ -611,13 +625,19 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
-    "waitingDesign": 0,
-    "done": 5
+    "running": 0,
+    "waitingDesign": 1,
+    "done": 6
    },
    "verdict": null,
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T01:21:50+00:00",
+     "ok": true,
+     "note": "published koi pond (P2c05+P2c05b) with sound/zh/target fixes; depth redesign queued",
+     "source": "board note"
+    },
     {
      "at": "2026-10-19T22:31:00+00:00",
      "ok": false,
@@ -683,12 +703,6 @@
      "ok": true,
      "note": "feel+art pass live (main ): drag lifts and follows the finger with ease and snap, settles/returns animated; press 7-16 ms, move p95 31 ms, release 22-29 ms (test/feel/drag.mjs); designed sound (breathing 98 Hz snore glides to exact silence, enveloped to",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-17T20:12:55+00:00",
-     "ok": true,
-     "note": "feat:",
-     "source": "main commit"
     }
    ]
   },
@@ -3262,7 +3276,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/felt-years-1.webp",
    "firstSeen": "2026-10-17T23:11:23+00:00",
-   "lastChange": "2026-10-20T01:19:59+00:00",
+   "lastChange": "2026-10-20T01:21:38+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -5028,14 +5042,14 @@
    "title": "Hello Princess",
    "line": "Find the princess's first invitation among the copies.",
    "url": "https://chenhsieh.github.io/copy-paste/",
-   "stage": "planning",
+   "stage": "building",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Settle the card-link logic, stop story art leaking answers",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/copy-paste-1.webp",
    "firstSeen": "2026-10-15T18:59:22+00:00",
-   "lastChange": "2026-10-20T00:51:41+00:00",
+   "lastChange": "2026-10-20T01:21:59+00:00",
    "cost": {
     "apiUsd": 16.91,
     "codexRuns": 3,
@@ -5051,10 +5065,10 @@
    "tasks": [
     {
      "title": "hello princess level story",
-     "state": "planned",
+     "state": "running",
      "worker": "Claude",
      "plan": "Story on every level, double-tap to pick, cards that stay still while you think.",
-     "since": "2026-10-20T00:51:41+00:00",
+     "since": "2026-10-20T01:21:54+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -5164,8 +5178,8 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 0,
-    "waitingDesign": 1,
+    "running": 1,
+    "waitingDesign": 0,
     "done": 8
    },
    "verdict": {
@@ -6527,7 +6541,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/matchmaker-chat-1.webp",
    "firstSeen": "2026-10-15T21:39:26+00:00",
-   "lastChange": "2026-10-20T01:20:10+00:00",
+   "lastChange": "2026-10-20T01:22:05+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
