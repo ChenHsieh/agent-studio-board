@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T15:12:12+00:00",
+ "generated": "2026-10-20T15:14:28+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -12,36 +12,36 @@
    "Codex": {
     "queued": 0,
     "running": 0,
-    "doneToday": 3,
+    "doneToday": 4,
     "minutes": 0,
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 62,
+    "queued": 61,
     "running": 1,
     "doneToday": 0,
-    "minutes": 900,
-    "estimateMinutes": 900
+    "minutes": 888,
+    "estimateMinutes": 888
    }
   },
-  "queued": 62,
+  "queued": 61,
   "running": 1,
-  "doneToday": 3,
+  "doneToday": 4,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 900,
-  "estimatedFinish": "2026-10-21T06:12:12+00:00",
-  "estimateMinutes": 900
+  "minutesRemaining": 888,
+  "estimatedFinish": "2026-10-21T06:02:28+00:00",
+  "estimateMinutes": 888
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "walls-have-ears",
-   "task": "walls longstay rules",
-   "since": "2026-10-20T14:54:16+00:00",
-   "activity": "2026-10-20T15:09:31+00:00",
+   "task": "walls longstay play",
+   "since": "2026-10-20T15:13:12+00:00",
+   "activity": "2026-10-20T15:13:18+00:00",
    "commit": null
   }
  ],
@@ -79,7 +79,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 20
+   "changes": 21
   }
  ],
  "houseRules": 23,
@@ -14369,12 +14369,12 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/walls-have-ears-1.webp",
    "firstSeen": "2026-10-15T19:49:23+00:00",
-   "lastChange": "2026-10-20T15:09:31+00:00",
+   "lastChange": "2026-10-20T15:13:18+00:00",
    "cost": {
     "apiUsd": 17.73,
     "codexRuns": 3,
     "claudeRuns": 4,
-    "apiRuns": 3,
+    "apiRuns": 4,
     "codexTokens": 528897,
     "codexUsdEst": 0.63,
     "claudeUsdEst": 14.4,
@@ -14384,25 +14384,11 @@
    },
    "tasks": [
     {
-     "title": "walls longstay rules",
+     "title": "walls longstay play",
      "state": "running",
      "worker": "Claude",
-     "plan": "Walls Have Ears: rules and measured rooms for an endless long stay where housekeeping can only plant bugs along the way she walks.",
-     "since": "2026-10-20T14:54:16+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "walls longstay play",
-     "state": "queued",
-     "worker": "Claude",
      "plan": "Walls Have Ears: long stay screens, a scripted first stay that teaches it night by night, a result card and a share line, daily and endless.",
-     "since": "2026-10-20T05:19:12+00:00",
+     "since": "2026-10-20T15:13:12+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -14438,6 +14424,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Walls Have Ears now has a fourth key-cabinet chapter, \"The whole floor at night\", rooms 23-28 (live https://chenhsieh.github.io/walls-have-ears/ commit )."
+    },
+    {
+     "title": "walls longstay rules",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Walls Have Ears: rules and measured rooms for an endless long stay where housekeeping can only plant bugs along the way she walks.",
+     "since": "2026-10-20T05:19:12+00:00",
+     "done": "2026-10-20T05:19:12+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Long stay rules are built and measured, not in the UI and not published. main is untouched."
     },
     {
      "title": "walls next spin",
@@ -14497,10 +14497,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 10
+    "done": 11
    },
    "verdict": {
     "date": "2026-10-19",
@@ -14510,10 +14510,22 @@
    "needsYou": null,
    "history": [
     {
+     "at": "2026-10-20T15:13:11+00:00",
+     "ok": true,
+     "note": "NOT_DONE (by design, no UI yet): not published",
+     "source": "board note"
+    },
+    {
      "at": "2026-10-20T14:54:15+00:00",
      "ok": true,
      "note": "rooms 23-28 (chapter 4: whole floor at night: shout from light, wide window, door light, low sun, housekeeping route, last night); live",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-20T14:50:08+00:00",
+     "ok": true,
+     "note": "feat: six new rooms, the whole floor at night (rooms 23-28)",
+     "source": "main commit"
     },
     {
      "at": "2026-10-20T05:34:50+00:00",
@@ -14567,18 +14579,6 @@
      "at": "2026-10-20T01:39:42+00:00",
      "ok": true,
      "note": "feat:",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-19T21:47:02+00:00",
-     "ok": true,
-     "note": "clearer listening-hotel intro and shared key cabinet for room-service and Thin Walls decisions published; live 390x844 and 320x568 touch checks passed",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-19T21:45:20+00:00",
-     "ok": true,
-     "note": "feat: choose rooms from a key cabinet",
      "source": "main commit"
     }
    ]
