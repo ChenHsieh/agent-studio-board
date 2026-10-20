@@ -112,6 +112,7 @@ function taskCounts(g) {
 
 function gameHtml(g) {
   const img = g.image ? `<img class="thumb" src="${esc(g.image)}" alt="" loading="lazy">` : `<span class="thumb blank" aria-hidden="true">${esc(g.title[0])}</span>`;
+  const repoUrl = `https://github.com/ChenHsieh/${encodeURIComponent(g.repo || g.id)}`;
   const plans = (g.tasks || []).filter((t) => t.state !== 'done' && t.plan);
   const said = plans.map((t) => `<p class="said">${esc(t.plan)}<small>${esc(t.worker)} · ${esc(t.state === 'running' ? 'building now' : t.state)}</small></p>`).join('');
   const tasks = (g.tasks || []).map((t) => {
@@ -126,7 +127,7 @@ function gameHtml(g) {
     <span class="meta"><span class="st ${esc(g.stage)}">${esc(g.stage)}</span>${g.verdict ? `<span class="vd ${esc(g.verdict.verdict)}">${esc(g.verdict.verdict)}</span>` : ''}<span class="p">${esc(g.priority || '')}${g.lastChange ? ' · ' + ago(g.lastChange) : ''}</span></span>
     <span class="line">${g.needsYou ? '<b class="ask">Needs you:</b> ' + esc(g.needsYou) : esc(g.priorityNote || g.line || '')}<br>${taskCounts(g)}</span></button>
   <div class="detail">
-    <p><a class="play" href="${esc(g.url)}" target="_blank" rel="noopener">Open ${esc(g.title)} ↗</a></p>
+    <p class="detail-links"><a href="${esc(g.url)}" target="_blank" rel="noopener">Play</a><a href="${esc(repoUrl)}" target="_blank" rel="noopener">Repo</a></p>
     ${g.line ? `<p>${esc(g.line)}</p>` : ''}
     <p class="cost">${costLine(g.cost)}</p>
     ${g.needsYou ? `<p class="said">${esc(g.needsYou)}<small>Waiting for a human</small></p>` : ''}

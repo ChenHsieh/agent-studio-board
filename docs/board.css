@@ -92,7 +92,9 @@ h2 { font: 600 12px var(--mono); text-transform: uppercase; letter-spacing: 0.08
 .detail { display: none; padding: 0 0 16px 68px; font-size: 15px; }
 .game.open .detail { display: block; }
 .detail h3 { font: 600 11.5px var(--mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 14px 0 6px; }
-.detail .play { font: 600 14px var(--mono); }
+.detail-links { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 12px; }
+.detail-links a { font: 600 14px var(--mono); padding: 5px 8px; border: 1px solid var(--ink); text-decoration: none; }
+.detail-links a:hover, .detail-links a:focus-visible { color: var(--paper); background: var(--ink); }
 .said { margin: 0 0 8px; padding-left: 10px; border-left: 3px solid var(--accent); }
 .said small { display: block; font: 11.5px var(--mono); color: var(--muted); }
 .tasks, .hist { list-style: none; margin: 0; padding: 0; }
