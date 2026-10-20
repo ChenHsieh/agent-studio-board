@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T02:13:52+00:00",
+ "generated": "2026-10-20T02:15:59+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 60,
+    "queued": 59,
     "running": 3,
-    "doneToday": 79,
-    "minutes": 2450,
-    "estimateMinutes": 1225
+    "doneToday": 80,
+    "minutes": 2410,
+    "estimateMinutes": 1205
    },
    "Claude": {
     "queued": 3,
@@ -24,16 +24,16 @@
     "estimateMinutes": 240
    }
   },
-  "queued": 63,
+  "queued": 62,
   "running": 4,
-  "doneToday": 115,
+  "doneToday": 116,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2690,
-  "estimatedFinish": "2026-10-20T22:38:52+00:00",
-  "estimateMinutes": 1225
+  "minutesRemaining": 2650,
+  "estimatedFinish": "2026-10-20T22:20:59+00:00",
+  "estimateMinutes": 1205
  },
  "lanes": [
   {
@@ -41,7 +41,7 @@
    "game": "rna-hero",
    "task": "rna hero knots",
    "since": "2026-10-20T02:09:15+00:00",
-   "activity": "2026-10-20T02:13:51+00:00",
+   "activity": "2026-10-20T02:15:14+00:00",
    "commit": {
     "at": "2026-10-20T02:11:19+00:00",
     "subject": "start: B1b_rna-hero-knots"
@@ -52,7 +52,7 @@
    "game": "thumb-stand",
    "task": "thumb stand finish",
    "since": "2026-10-20T01:51:49+00:00",
-   "activity": "2026-10-20T02:13:49+00:00",
+   "activity": "2026-10-20T02:15:59+00:00",
    "commit": null
   },
   {
@@ -60,16 +60,19 @@
    "game": "colony-count",
    "task": "colony count new mechanism",
    "since": "2026-10-20T00:48:13+00:00",
-   "activity": "2026-10-20T02:02:09+00:00",
+   "activity": "2026-10-20T02:15:08+00:00",
    "commit": null
   },
   {
    "worker": "Codex",
-   "game": "acrylic-beacon",
-   "task": "acrylic beacon chart visual",
-   "since": "2026-10-20T02:10:15+00:00",
-   "activity": "2026-10-20T02:13:21+00:00",
-   "commit": null
+   "game": "mirror-hold",
+   "task": "mirror hold heads",
+   "since": "2026-10-20T02:15:46+00:00",
+   "activity": "2026-10-20T02:15:47+00:00",
+   "commit": {
+    "at": "2026-10-20T02:15:47+00:00",
+    "subject": "start: P2c20_mirror-hold-heads"
+   }
   }
  ],
  "codexLanes": 2,
@@ -102,7 +105,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 95
+   "changes": 96
   }
  ],
  "houseRules": 23,
@@ -112,19 +115,19 @@
    "title": "Acrylic Beacon",
    "line": "Turn a lamp to guide a boat to shore.",
    "url": "https://chenhsieh.github.io/acrylic-beacon/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Strong sea-and-map visual direction: old hand-drawn chart",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/acrylic-beacon-1.webp",
    "firstSeen": "2026-10-15T04:39:21+00:00",
-   "lastChange": "2026-10-20T02:13:21+00:00",
+   "lastChange": "2026-10-20T02:15:41+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
     "claudeRuns": 0,
-    "apiRuns": 0,
+    "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
@@ -135,28 +138,34 @@
    "tasks": [
     {
      "title": "acrylic beacon chart visual",
-     "state": "running",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude API",
      "plan": "Strong sea-and-map visual direction: old hand-drawn chart, gritty, stamped.",
-     "since": "2026-10-20T02:10:15+00:00",
-     "done": null,
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "Live: the cove is now an old hand-drawn sea chart: grained parchment, engraved wave strokes seeded per cove, rough-inked shore, compass rose with rhumb lines, a red harbour seal (No. n) on every cove, lamp light as a..."
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-20T02:15:41+00:00",
+     "ok": true,
+     "note": "sea-chart visual (Claude built)",
+     "source": "board note"
+    },
     {
      "at": "2026-10-17T22:08:17+00:00",
      "ok": true,
@@ -1637,7 +1646,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-20T02:09:23+00:00",
+   "lastChange": "2026-10-20T02:15:08+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
@@ -7083,14 +7092,14 @@
    "title": "Mirror Hold",
    "line": "Wax a hairstyle, then test it against three pulls.",
    "url": "https://chenhsieh.github.io/mirror-hold/",
-   "stage": "planning",
-   "who": "Claude",
+   "stage": "building",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Make the build-and-test loop readable; try the",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/mirror-hold-1.webp",
    "firstSeen": "2026-10-14T23:09:04+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-20T02:15:47+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -7106,23 +7115,26 @@
    "tasks": [
     {
      "title": "mirror hold heads",
-     "state": "planned",
+     "state": "running",
      "worker": "Codex",
      "plan": "Make the build-and-test loop readable; try the collectible-hairstyles frame.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "since": "2026-10-20T02:15:46+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-20T02:15:47+00:00",
+      "subject": "start: P2c20_mirror-hold-heads"
+     },
      "result": ""
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 0,
-    "waitingDesign": 1,
+    "running": 1,
+    "waitingDesign": 0,
     "done": 0
    },
    "verdict": null,
@@ -8723,7 +8735,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/rna-hero-1.webp",
    "firstSeen": "2026-08-20T15:44:40+00:00",
-   "lastChange": "2026-10-20T02:13:51+00:00",
+   "lastChange": "2026-10-20T02:15:14+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -11801,7 +11813,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/thumb-stand-1.webp",
    "firstSeen": "2026-10-15T23:29:31+00:00",
-   "lastChange": "2026-10-20T02:13:49+00:00",
+   "lastChange": "2026-10-20T02:15:59+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
