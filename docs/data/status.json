@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T00:16:22+00:00",
+ "generated": "2026-10-20T00:18:25+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,30 +10,30 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 50,
+    "queued": 51,
     "running": 2,
     "doneToday": 55,
-    "minutes": 2010,
-    "estimateMinutes": 1005
+    "minutes": 2050,
+    "estimateMinutes": 1025
    },
    "Claude": {
     "queued": 5,
-    "running": 1,
-    "doneToday": 32,
-    "minutes": 360,
-    "estimateMinutes": 360
+    "running": 0,
+    "doneToday": 33,
+    "minutes": 300,
+    "estimateMinutes": 300
    }
   },
-  "queued": 55,
-  "running": 3,
-  "doneToday": 87,
+  "queued": 56,
+  "running": 2,
+  "doneToday": 88,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2370,
-  "estimatedFinish": "2026-10-20T17:01:22+00:00",
-  "estimateMinutes": 1005
+  "minutesRemaining": 2350,
+  "estimatedFinish": "2026-10-20T17:23:25+00:00",
+  "estimateMinutes": 1025
  },
  "lanes": [
   {
@@ -41,7 +41,7 @@
    "game": "grass-crossword",
    "task": "grass crossword build",
    "since": "2026-10-20T00:11:56+00:00",
-   "activity": "2026-10-20T00:14:54+00:00",
+   "activity": "2026-10-20T00:18:10+00:00",
    "commit": {
     "at": "2026-10-20T00:12:50+00:00",
     "subject": "start: B2c_grass-crossword-build"
@@ -52,26 +52,15 @@
    "game": "matchmaker-chat",
    "task": "matchmaker chat build",
    "since": "2026-10-20T00:13:37+00:00",
-   "activity": "2026-10-20T00:16:16+00:00",
+   "activity": "2026-10-20T00:18:23+00:00",
    "commit": {
     "at": "2026-10-20T00:14:28+00:00",
     "subject": "start: B2d_matchmaker-chat-build"
    }
-  },
-  {
-   "worker": "Claude",
-   "game": "zoom-out",
-   "task": "zoom out beauty",
-   "since": "2026-10-20T00:12:45+00:00",
-   "activity": "2026-10-20T00:16:08+00:00",
-   "commit": {
-    "at": "2026-10-20T00:12:46+00:00",
-    "subject": "start: P2c00e_zoom-out-beauty"
-   }
   }
  ],
  "codexLanes": 2,
- "claudeWorkers": 1,
+ "claudeWorkers": 0,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -100,7 +89,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 72
+   "changes": 73
   }
  ],
  "houseRules": 21,
@@ -3271,7 +3260,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/grass-crossword-1.webp",
    "firstSeen": "2026-10-16T01:41:42+00:00",
-   "lastChange": "2026-10-20T00:14:54+00:00",
+   "lastChange": "2026-10-20T00:18:10+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -4378,7 +4367,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/matchmaker-chat-1.webp",
    "firstSeen": "2026-10-15T21:39:26+00:00",
-   "lastChange": "2026-10-20T00:16:16+00:00",
+   "lastChange": "2026-10-20T00:18:23+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -8520,43 +8509,54 @@
    "title": "Zoom Out",
    "line": "",
    "url": "https://chenhsieh.github.io/zoom-out/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Circular scale story (molecule to universe, butterfly",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-16T00:50:51+00:00",
-   "lastChange": "2026-10-20T00:16:08+00:00",
+   "lastChange": "2026-10-20T00:18:04+00:00",
    "cost": {
     "apiUsd": 7.14,
     "codexRuns": 1,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 282800,
     "codexUsdEst": 0.34,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 5,
     "earlierUsdEst": 18.0,
-    "totalUsdEst": 25.48
+    "totalUsdEst": 29.08
    },
    "tasks": [
     {
-     "title": "zoom out beauty",
-     "state": "running",
-     "worker": "Claude",
+     "title": "zoom out build",
+     "state": "queued",
+     "worker": "Codex",
      "plan": "",
-     "since": "2026-10-20T00:12:45+00:00",
+     "since": "2026-10-20T00:18:04+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-20T00:12:46+00:00",
-      "subject": "start: P2c00e_zoom-out-beauty"
-     },
+     "commit": null,
      "result": ""
+    },
+    {
+     "title": "zoom out beauty",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-19T23:59:29+00:00",
+     "done": "2026-10-19T23:59:29+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Brief: expert/zoom-out/packages/BRIEF_20261019.md (butterfly dream: pass through shared shapes; spiral/ring/branch/hex families are real; the smallest ring opens onto the largest)."
     },
     {
      "title": "zoom out butterfly",
