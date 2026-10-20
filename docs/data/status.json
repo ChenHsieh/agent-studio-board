@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T03:42:54+00:00",
+ "generated": "2026-10-20T03:45:02+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,30 +10,30 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 69,
+    "queued": 68,
     "running": 3,
-    "doneToday": 133,
-    "minutes": 2880,
-    "estimateMinutes": 1440
+    "doneToday": 134,
+    "minutes": 2840,
+    "estimateMinutes": 1420
    },
    "Claude": {
-    "queued": 0,
+    "queued": 1,
     "running": 1,
     "doneToday": 39,
-    "minutes": 60,
-    "estimateMinutes": 60
+    "minutes": 120,
+    "estimateMinutes": 120
    }
   },
   "queued": 69,
   "running": 4,
-  "doneToday": 172,
+  "doneToday": 173,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2940,
-  "estimatedFinish": "2026-10-21T03:42:54+00:00",
-  "estimateMinutes": 1440
+  "minutesRemaining": 2960,
+  "estimatedFinish": "2026-10-21T03:25:02+00:00",
+  "estimateMinutes": 1420
  },
  "lanes": [
   {
@@ -47,21 +47,21 @@
   {
    "worker": "Codex",
    "game": "BioRedactle-nextjs",
-   "task": "bioredactle caps leak",
-   "since": "2026-10-20T03:16:41+00:00",
-   "activity": "2026-10-20T03:42:51+00:00",
-   "commit": {
-    "at": "2026-10-20T03:30:55+00:00",
-    "subject": "fix: tile labels no longer reveal headline words"
-   }
+   "task": "redacxiv rename",
+   "since": "2026-10-20T03:26:04+00:00",
+   "activity": "2026-10-20T03:44:55+00:00",
+   "commit": null
   },
   {
    "worker": "Codex",
-   "game": "BioRedactle-nextjs",
-   "task": "redacxiv rename",
-   "since": "2026-10-20T03:26:04+00:00",
-   "activity": "2026-10-20T03:42:46+00:00",
-   "commit": null
+   "game": "cymatic-plate",
+   "task": "cymatic endless build",
+   "since": "2026-10-20T03:43:30+00:00",
+   "activity": "2026-10-20T03:45:02+00:00",
+   "commit": {
+    "at": "2026-10-20T03:44:30+00:00",
+    "subject": "start: P1a22b_cymatic-endless-build"
+   }
   },
   {
    "worker": "Claude",
@@ -102,7 +102,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 146
+   "changes": 148
   }
  ],
  "houseRules": 23,
@@ -1116,18 +1116,18 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/bioredactle-1.webp",
    "firstSeen": "2026-10-05T10:15:34+00:00",
-   "lastChange": "2026-10-20T03:42:51+00:00",
+   "lastChange": "2026-10-20T03:44:55+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 2,
+    "codexRuns": 3,
     "claudeRuns": 1,
     "apiRuns": 1,
-    "codexTokens": 473790,
-    "codexUsdEst": 0.57,
+    "codexTokens": 683393,
+    "codexUsdEst": 0.82,
     "claudeUsdEst": 3.6,
     "earlierRounds": 12,
     "earlierUsdEst": 43.2,
-    "totalUsdEst": 47.37
+    "totalUsdEst": 47.62
    },
    "tasks": [
     {
@@ -1146,20 +1146,17 @@
     },
     {
      "title": "bioredactle caps leak",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Stop tile capitalisation from giving away the answer.",
-     "since": "2026-10-20T03:16:41+00:00",
-     "done": null,
+     "since": "2026-10-20T02:48:43+00:00",
+     "done": "2026-10-20T02:48:43+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 27,
+     "tokens": 209603,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-20T03:30:55+00:00",
-      "subject": "fix: tile labels no longer reveal headline words"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Tile candidates now use one lowercase style; 30-day fairness coverage checks case, length, order, and styling."
     },
     {
      "title": "bioredactle ship",
@@ -1220,13 +1217,19 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 2,
+    "running": 1,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": null,
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T03:43:11+00:00",
+     "ok": false,
+     "note": "Tile answer-cue fix merged and static Pages branch deployed; public URL remains GitHub Pages 404 after propagation checks.",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T03:31:56+00:00",
      "ok": true,
@@ -1291,12 +1294,6 @@
      "at": "2026-10-15T20:34:57+00:00",
      "ok": true,
      "note": "feat: credit Redactle by John Turner",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-14T20:39:05+00:00",
-     "ok": true,
-     "note": "Add a one-command Pages deploy that does not need Actions",
      "source": "main commit"
     }
    ]
@@ -1754,7 +1751,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-20T03:41:43+00:00",
+   "lastChange": "2026-10-20T03:44:03+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
@@ -1763,9 +1760,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 22,
-    "earlierUsdEst": 79.2,
-    "totalUsdEst": 109.28
+    "earlierRounds": 23,
+    "earlierUsdEst": 82.8,
+    "totalUsdEst": 112.88
    },
    "tasks": [
     {
@@ -1895,6 +1892,12 @@
    "needsYou": null,
    "history": [
     {
+     "at": "2026-10-20T03:44:03+00:00",
+     "ok": true,
+     "note": "Sets round 2 after review: natural shapes, real-food colours, colour-blind marks (Shapes setting), 14 hats per colour incl. seasonal costumes, glances; main , live checked; previews play-lab",
+     "source": "board note"
+    },
+    {
      "at": "2026-10-20T03:06:30+00:00",
      "ok": true,
      "note": "Unlockable sets (dumplings, cakes, boba, Halloween, Christmas) + hats add-on + seasonal offer + emoji share card; main , live checked 390/320; previews play-lab",
@@ -1959,12 +1962,6 @@
      "ok": true,
      "note": "cc-r3- live : new Bare spots tier after Expert (8x8, 24 plates; a number on an empty square counts colonies of any colour touching it), one-rule card + How to play page + tap/hint text; independent counter",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-18T07:18:14+00:00",
-     "ok": true,
-     "note": "feat: Bare spots, a new tier where empty squares count the colonies touching them",
-     "source": "main commit"
     }
    ]
   },
@@ -2367,14 +2364,14 @@
    "title": "Cymatic Plate",
    "line": "Ring notes on a brass plate covered in sand and watch the.",
    "url": "https://chenhsieh.github.io/cymatic-plate/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/cymatic-plate-1.webp",
    "firstSeen": "2026-10-16T01:38:21+00:00",
-   "lastChange": "2026-10-20T03:12:37+00:00",
+   "lastChange": "2026-10-20T03:45:02+00:00",
    "cost": {
     "apiUsd": 3.26,
     "codexRuns": 3,
@@ -2390,16 +2387,19 @@
    "tasks": [
     {
      "title": "cymatic endless build",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "A real endless run for Cymatic Plate: the ring moves, new drops fall, too much dye makes the plate go quiet; best score and a share line.",
-     "since": "2026-10-20T03:12:37+00:00",
+     "since": "2026-10-20T03:43:30+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-20T03:44:30+00:00",
+      "subject": "start: P1a22b_cymatic-endless-build"
+     },
      "result": ""
     },
     {
@@ -2502,8 +2502,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 9
    },
