@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T20:13:09+00:00",
+ "generated": "2026-10-20T20:15:24+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -17,23 +17,23 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 98,
+    "queued": 97,
     "running": 2,
-    "doneToday": 14,
-    "minutes": 1344,
-    "estimateMinutes": 1344
+    "doneToday": 15,
+    "minutes": 1332,
+    "estimateMinutes": 1332
    }
   },
-  "queued": 98,
+  "queued": 97,
   "running": 2,
-  "doneToday": 20,
+  "doneToday": 21,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 1344,
-  "estimatedFinish": "2026-10-21T18:37:09+00:00",
-  "estimateMinutes": 1344
+  "minutesRemaining": 1332,
+  "estimatedFinish": "2026-10-21T18:27:24+00:00",
+  "estimateMinutes": 1332
  },
  "lanes": [
   {
@@ -47,9 +47,9 @@
   {
    "worker": "Claude",
    "game": "colony-count",
-   "task": "colony round dish study",
-   "since": "2026-10-20T20:06:33+00:00",
-   "activity": "2026-10-20T20:11:58+00:00",
+   "task": "colony tiling study",
+   "since": "2026-10-20T20:14:25+00:00",
+   "activity": "2026-10-20T20:14:27+00:00",
    "commit": null
   }
  ],
@@ -87,7 +87,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 37
+   "changes": 38
   }
  ],
  "houseRules": 23,
@@ -1844,40 +1844,26 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-20T20:11:58+00:00",
+   "lastChange": "2026-10-20T20:14:27+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 6,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 10.8,
+    "claudeUsdEst": 14.4,
     "earlierRounds": 23,
     "earlierUsdEst": 82.8,
-    "totalUsdEst": 116.48
+    "totalUsdEst": 120.08
    },
    "tasks": [
     {
-     "title": "colony round dish study",
+     "title": "colony tiling study",
      "state": "running",
      "worker": "Claude",
-     "plan": "Colony Count study 2: round dish.",
-     "since": "2026-10-20T20:06:33+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "colony tiling study",
-     "state": "queued",
-     "worker": "Claude",
      "plan": "Colony Count study 3: tilings.",
-     "since": "2026-10-20T19:00:06+00:00",
+     "since": "2026-10-20T20:14:25+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1899,6 +1885,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "LIVE https://chenhsieh.github.io/colony-count/incubator.html (main , rollback tag pre-incubator; reached from a new Incubator button on the home screen). Live bytes match; all 6 dishes solved by real touch on the live..."
+    },
+    {
+     "title": "colony round dish study",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Colony Count study 2: round dish.",
+     "since": "2026-10-20T19:00:06+00:00",
+     "done": "2026-10-20T19:00:06+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "LIVE https://chenhsieh.github.io/colony-count/shapes.html?set=round (main , rollback tag pre-round-dish; new Round dish button on the home screen). Live bytes match; all 8 dishes solved by real touch on the live page at..."
     },
     {
      "title": "colony unlock themes",
@@ -1972,10 +1972,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 9
+    "done": 10
    },
    "verdict": {
     "date": "2026-10-18",
@@ -1984,6 +1984,12 @@
    },
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T20:14:02+00:00",
+     "ok": true,
+     "note": "Round dish page (8 dishes, one-clue solvable, one answer by independent counter); main https://chenhsieh.github.io/colony-count/shapes.html?set=round",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T19:57:26+00:00",
      "ok": true,
@@ -2049,12 +2055,6 @@
      "ok": true,
      "note": "S10: two-tap reasoning hints, Hidden colours tier (60/60 unique), Endless picker ()",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-19T07:56:56+00:00",
-     "ok": true,
-     "note": "feat:",
-     "source": "main commit"
     }
    ]
   },
@@ -6151,6 +6151,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-20T19:45:53+00:00",
+     "ok": true,
+     "note": "feat:",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-20T01:35:58+00:00",
      "ok": true,
      "note": "stable cards, double-tap pick, per-level story lines (P1a11)",
@@ -6209,12 +6215,6 @@
      "ok": true,
      "note": "feat: show each princess chapter as it opens",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-18T17:59:10+00:00",
-     "ok": true,
-     "note": "Hello Princess rename, story page with captioned strips, family regroup after the find, rule card says any earlier card; logic verified (0 bad lines)",
-     "source": "board note"
     }
    ]
   },
