@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T04:35:57+00:00",
+ "generated": "2026-10-20T04:38:04+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 63,
+    "queued": 61,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2520,
-    "estimateMinutes": 2520
+    "minutes": 2440,
+    "estimateMinutes": 2440
    },
    "Claude": {
     "queued": 2,
@@ -24,16 +24,16 @@
     "estimateMinutes": 240
    }
   },
-  "queued": 65,
+  "queued": 63,
   "running": 2,
   "doneToday": 0,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 2760,
-  "estimatedFinish": "2026-10-21T22:35:57+00:00",
-  "estimateMinutes": 2520
+  "minutesRemaining": 2680,
+  "estimatedFinish": "2026-10-21T21:18:04+00:00",
+  "estimateMinutes": 2440
  },
  "lanes": [
   {
@@ -46,10 +46,10 @@
   },
   {
    "worker": "Claude",
-   "game": "rna-hero",
-   "task": "rna hero knots port",
-   "since": "2026-10-20T04:29:02+00:00",
-   "activity": "2026-10-20T04:35:07+00:00",
+   "game": "Multiple games",
+   "task": "knockout plate proto",
+   "since": null,
+   "activity": null,
    "commit": null
   }
  ],
@@ -87,7 +87,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 5
+   "changes": 7
   }
  ],
  "houseRules": 23,
@@ -3210,7 +3210,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/dynasty-guess-1.webp",
    "firstSeen": "2026-09-20T06:03:01+00:00",
-   "lastChange": "2026-10-20T03:17:05+00:00",
+   "lastChange": "2026-10-20T04:37:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -3219,25 +3219,11 @@
     "codexTokens": 445311,
     "codexUsdEst": 0.53,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 11,
-    "earlierUsdEst": 39.6,
-    "totalUsdEst": 47.33
+    "earlierRounds": 12,
+    "earlierUsdEst": 43.2,
+    "totalUsdEst": 50.93
    },
    "tasks": [
-    {
-     "title": "dynasty gamefeel build",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Dynasty Guess as a night-shift game: a tour route of lit cases, limited gloves for looking at bases, an upright cabinet readable on phones, and English or Chinese.",
-     "since": "2026-10-20T03:17:05+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "dynasty guess ship standard",
      "state": "queued",
@@ -3324,7 +3310,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 5
@@ -3336,6 +3322,12 @@
    },
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T04:37:50+00:00",
+     "ok": true,
+     "note": "NOT_DONE P2a24b: only 2 of 42 objects have a base photo, gloves rule has zero bot margin; see queue/done result",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T03:16:48+00:00",
      "ok": true,
@@ -3400,12 +3392,6 @@
      "at": "2026-09-20T14:31:25+00:00",
      "ok": true,
      "note": "Settings menu, mechanism diagram, and the shared kit",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-20T13:43:36+00:00",
-     "ok": true,
-     "note": "Zoom the object, and a Chinese interface with Chinese period names",
      "source": "main commit"
     }
    ]
@@ -9559,19 +9545,19 @@
    "title": "RNA Hero",
    "line": "Zip an RNA strand into its best fold.",
    "url": "https://chenhsieh.github.io/rna-hero/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/rna-hero-1.webp",
    "firstSeen": "2026-08-20T15:44:40+00:00",
-   "lastChange": "2026-10-20T04:35:07+00:00",
+   "lastChange": "2026-10-20T04:36:33+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
     "claudeRuns": 0,
-    "apiRuns": 1,
+    "apiRuns": 2,
     "codexTokens": 466551,
     "codexUsdEst": 0.56,
     "claudeUsdEst": 0.0,
@@ -9582,17 +9568,17 @@
    "tasks": [
     {
      "title": "rna hero knots port",
-     "state": "running",
-     "worker": "Claude",
+     "state": "done",
+     "worker": "Claude API",
      "plan": "",
-     "since": "2026-10-20T04:29:02+00:00",
-     "done": null,
+     "since": "2026-10-20T02:47:15+00:00",
+     "done": "2026-10-20T02:47:15+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "Player sees: a Knots group (K1-K5, all open) in the Fold lab menu; on the circle board lines may cross, crossing stems draw in red (#c0392b) with a \"-4\" badge, the bond bar shows the knot cost as a red hatched notch..."
     },
     {
      "title": "rna hero knots",
@@ -9639,17 +9625,23 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": {
     "date": "2026-10-19",
     "verdict": "revise",
     "note": "Bioinformatics round: make the idea legible in the first"
    },
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-20T04:36:33+00:00",
+     "ok": true,
+     "note": "knots chapter K1-K5 ported onto circle game; live",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T01:52:19+00:00",
      "ok": true,
