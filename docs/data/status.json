@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T15:51:47+00:00",
+ "generated": "2026-10-20T15:53:57+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -12,36 +12,36 @@
    "Codex": {
     "queued": 0,
     "running": 0,
-    "doneToday": 4,
+    "doneToday": 5,
     "minutes": 0,
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 64,
+    "queued": 63,
     "running": 1,
     "doneToday": 0,
-    "minutes": 924,
-    "estimateMinutes": 924
+    "minutes": 912,
+    "estimateMinutes": 912
    }
   },
-  "queued": 64,
+  "queued": 63,
   "running": 1,
-  "doneToday": 4,
+  "doneToday": 5,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 924,
-  "estimatedFinish": "2026-10-21T07:15:47+00:00",
-  "estimateMinutes": 924
+  "minutesRemaining": 912,
+  "estimatedFinish": "2026-10-21T07:05:57+00:00",
+  "estimateMinutes": 912
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "walls-have-ears",
-   "task": "walls longstay play",
-   "since": "2026-10-20T15:13:12+00:00",
-   "activity": "2026-10-20T15:48:08+00:00",
+   "game": "Multiple games",
+   "task": "knockout plate proto",
+   "since": null,
+   "activity": null,
    "commit": null
   }
  ],
@@ -79,7 +79,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 21
+   "changes": 22
   }
  ],
  "houseRules": 23,
@@ -14362,19 +14362,19 @@
    "title": "Walls Have Ears",
    "line": "Wish for tea and find which piece is listening.",
    "url": "https://chenhsieh.github.io/walls-have-ears/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Hotel key-cabinet level grid grouped by mechanism, and a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/walls-have-ears-1.webp",
    "firstSeen": "2026-10-15T19:49:23+00:00",
-   "lastChange": "2026-10-20T15:48:08+00:00",
+   "lastChange": "2026-10-20T15:53:01+00:00",
    "cost": {
     "apiUsd": 17.73,
     "codexRuns": 3,
     "claudeRuns": 4,
-    "apiRuns": 4,
+    "apiRuns": 5,
     "codexTokens": 528897,
     "codexUsdEst": 0.63,
     "claudeUsdEst": 14.4,
@@ -14383,20 +14383,6 @@
     "totalUsdEst": 122.76
    },
    "tasks": [
-    {
-     "title": "walls longstay play",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Walls Have Ears: long stay screens, a scripted first stay that teaches it night by night, a result card and a share line, daily and endless.",
-     "since": "2026-10-20T15:13:12+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "walls cell size",
      "state": "done",
@@ -14438,6 +14424,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Long stay rules are built and measured, not in the UI and not published. main is untouched."
+    },
+    {
+     "title": "walls longstay play",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Walls Have Ears: long stay screens, a scripted first stay that teaches it night by night, a result card and a share line, daily and endless.",
+     "since": "2026-10-20T05:19:12+00:00",
+     "done": "2026-10-20T05:19:12+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Long stay is live in Walls Have Ears: https://chenhsieh.github.io/walls-have-ears/ commit (also carries P1a32's rules and rooms). Menu entry sits after the street chapter with a picture of a crowded room."
     },
     {
      "title": "walls next spin",
@@ -14498,17 +14498,23 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 11
+    "done": 12
    },
    "verdict": {
     "date": "2026-10-19",
     "verdict": "ship",
     "note": "Chapter 2 rebuilt; ready to ship"
    },
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-20T15:53:01+00:00",
+     "ok": true,
+     "note": "Long stay (endless mode): rules, 8 rooms, screens, scripted first stay, rule cards, result card; live",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T15:13:11+00:00",
      "ok": true,
@@ -14574,12 +14580,6 @@
      "ok": true,
      "note": "chapter 2 rebuilt as the upgrade: Thin Walls and eyes/phones removed; bots prove each room (chapter_audit); live , tag pre-ch2story-",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-20T01:39:42+00:00",
-     "ok": true,
-     "note": "feat:",
-     "source": "main commit"
     }
    ]
   },
