@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T00:32:46+00:00",
+ "generated": "2026-10-20T00:36:05+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,30 +10,30 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 55,
+    "queued": 59,
     "running": 2,
     "doneToday": 57,
-    "minutes": 2210,
-    "estimateMinutes": 1105
+    "minutes": 2370,
+    "estimateMinutes": 1185
    },
    "Claude": {
-    "queued": 6,
-    "running": 0,
+    "queued": 4,
+    "running": 1,
     "doneToday": 34,
-    "minutes": 360,
-    "estimateMinutes": 360
+    "minutes": 300,
+    "estimateMinutes": 300
    }
   },
-  "queued": 61,
-  "running": 2,
+  "queued": 63,
+  "running": 3,
   "doneToday": 91,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2570,
-  "estimatedFinish": "2026-10-20T18:57:46+00:00",
-  "estimateMinutes": 1105
+  "minutesRemaining": 2670,
+  "estimatedFinish": "2026-10-20T20:21:05+00:00",
+  "estimateMinutes": 1185
  },
  "lanes": [
   {
@@ -41,11 +41,19 @@
    "game": "zoom-out",
    "task": "zoom out build",
    "since": "2026-10-20T00:26:57+00:00",
-   "activity": "2026-10-20T00:31:39+00:00",
+   "activity": "2026-10-20T00:35:37+00:00",
    "commit": {
     "at": "2026-10-20T00:28:44+00:00",
     "subject": "start: B2e_zoom-out-build"
    }
+  },
+  {
+   "worker": "Claude",
+   "game": "colony-count",
+   "task": "colony count new mechanism",
+   "since": "2026-10-20T00:35:41+00:00",
+   "activity": "2026-10-20T00:35:42+00:00",
+   "commit": null
   },
   {
    "worker": "Codex",
@@ -57,7 +65,7 @@
   }
  ],
  "codexLanes": 2,
- "claudeWorkers": 0,
+ "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -1343,14 +1351,14 @@
    "title": "Colony Count",
    "line": "Solve three daily levels, then freeze finished plates.",
    "url": "https://chenhsieh.github.io/colony-count/",
-   "stage": "planning",
+   "stage": "building",
    "who": "Claude",
    "priority": "P1",
    "priorityNote": "Flagship; has its own owner",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-20T00:22:42+00:00",
+   "lastChange": "2026-10-20T00:35:42+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
@@ -1366,10 +1374,10 @@
    "tasks": [
     {
      "title": "colony count new mechanism",
-     "state": "planned",
+     "state": "running",
      "worker": "Claude",
      "plan": "A new kind of deduction for Colony Count, taught on its own plate in a new tier, with every plate proven to have one answer.",
-     "since": "2026-10-20T00:22:42+00:00",
+     "since": "2026-10-20T00:35:41+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2563,7 +2571,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/dynasty-guess-1.webp",
    "firstSeen": "2026-09-20T06:03:01+00:00",
-   "lastChange": "2026-10-20T00:32:22+00:00",
+   "lastChange": "2026-10-20T00:34:33+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -2578,11 +2586,25 @@
    },
    "tasks": [
     {
+     "title": "dynasty guess build finish",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-20T00:34:33+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
      "title": "dynasty guess ship standard",
      "state": "queued",
      "worker": "Codex",
      "plan": "Bring it to the guessing-game ship standard: archive, practice with difficulty, stats and collection, cleanup, credits.",
-     "since": "2026-10-20T00:32:22+00:00",
+     "since": "2026-10-20T00:34:33+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -3621,7 +3643,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/fold-guess-1.webp",
    "firstSeen": "2026-09-20T05:15:49+00:00",
-   "lastChange": "2026-10-20T00:32:22+00:00",
+   "lastChange": "2026-10-20T00:36:03+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -3640,7 +3662,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Bring it to the guessing-game ship standard: archive, practice with difficulty, stats and collection, cleanup, credits.",
-     "since": "2026-10-20T00:32:22+00:00",
+     "since": "2026-10-20T00:36:03+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -4198,14 +4220,14 @@
    "title": "Grass Crossword",
    "line": "A crossword dug into a garden bed, where every answer is.",
    "url": "https://chenhsieh.github.io/grass-crossword/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Varied handwriting, more levels, a daily, and a harder late",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/grass-crossword-1.webp",
    "firstSeen": "2026-10-16T01:23:04+00:00",
-   "lastChange": "2026-10-20T00:26:44+00:00",
+   "lastChange": "2026-10-20T00:35:05+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -4220,13 +4242,27 @@
    },
    "tasks": [
     {
+     "title": "grass crossword fix",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-20T00:35:05+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
      "title": "grass crossword build",
      "state": "done",
      "worker": "Codex",
      "plan": "",
      "since": "2026-10-20T00:10:58+00:00",
      "done": "2026-10-20T00:10:58+00:00",
-     "reviewed": false,
+     "reviewed": true,
      "minutes": 15,
      "tokens": 165332,
      "reviewOutcome": null,
@@ -4309,7 +4345,7 @@
     "verdict": "revise",
     "note": "Varied handwriting, more levels, a daily, and a harder late"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-20T00:26:44+00:00",
@@ -5678,14 +5714,14 @@
    "title": "Matchmaker Chat",
    "line": "Auntie sends a photo of a boy, then picture clues one.",
    "url": "https://chenhsieh.github.io/matchmaker-chat/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Turn the rival-wingmen idea into a visual arms-race puzzle",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/matchmaker-chat-1.webp",
    "firstSeen": "2026-10-15T21:39:26+00:00",
-   "lastChange": "2026-10-20T00:28:59+00:00",
+   "lastChange": "2026-10-20T00:35:33+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -5700,13 +5736,27 @@
    },
    "tasks": [
     {
+     "title": "matchmaker chat fix",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-20T00:35:33+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
      "title": "matchmaker chat build",
      "state": "done",
      "worker": "Codex",
      "plan": "",
      "since": "2026-10-20T00:12:40+00:00",
      "done": "2026-10-20T00:12:40+00:00",
-     "reviewed": false,
+     "reviewed": true,
      "minutes": 16,
      "tokens": 172390,
      "reviewOutcome": null,
@@ -5757,7 +5807,7 @@
     }
    ],
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-20T00:28:59+00:00",
@@ -10075,14 +10125,14 @@
    "title": "Thumb Stand",
    "line": "",
    "url": "https://chenhsieh.github.io/thumb-stand/",
-   "stage": "planning",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Fix the level 3 block, then push the visual toward the",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/thumb-stand-1.webp",
    "firstSeen": "2026-10-15T23:29:31+00:00",
-   "lastChange": "2026-10-20T00:09:16+00:00",
+   "lastChange": "2026-10-20T00:33:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -10098,10 +10148,10 @@
    "tasks": [
     {
      "title": "thumb stand build",
-     "state": "planned",
-     "worker": "Claude",
+     "state": "queued",
+     "worker": "Codex",
      "plan": "",
-     "since": "2026-10-20T00:09:16+00:00",
+     "since": "2026-10-20T00:33:07+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -11421,7 +11471,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-16T00:32:50+00:00",
-   "lastChange": "2026-10-20T00:31:39+00:00",
+   "lastChange": "2026-10-20T00:35:37+00:00",
    "cost": {
     "apiUsd": 7.14,
     "codexRuns": 1,
