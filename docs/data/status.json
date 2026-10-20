@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T20:10:56+00:00",
+ "generated": "2026-10-20T20:13:09+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -17,36 +17,44 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 96,
-    "running": 1,
+    "queued": 98,
+    "running": 2,
     "doneToday": 14,
-    "minutes": 1260,
-    "estimateMinutes": 1260
+    "minutes": 1344,
+    "estimateMinutes": 1344
    }
   },
-  "queued": 96,
-  "running": 1,
+  "queued": 98,
+  "running": 2,
   "doneToday": 20,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 1260,
-  "estimatedFinish": "2026-10-21T17:10:56+00:00",
-  "estimateMinutes": 1260
+  "minutesRemaining": 1344,
+  "estimatedFinish": "2026-10-21T18:37:09+00:00",
+  "estimateMinutes": 1344
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "UGA-grad-survivor",
+   "task": "uga survivor fresh eyes review",
+   "since": "2026-10-20T20:11:05+00:00",
+   "activity": "2026-10-20T20:11:21+00:00",
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "colony-count",
    "task": "colony round dish study",
    "since": "2026-10-20T20:06:33+00:00",
-   "activity": "2026-10-20T20:08:53+00:00",
+   "activity": "2026-10-20T20:11:58+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 2,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -1436,14 +1444,14 @@
    "title": "Bluebook Guess",
    "line": "Place a US Air Force case file in time and place.",
    "url": "https://chenhsieh.github.io/bluebook-guess/",
-   "stage": "live",
-   "who": null,
-   "priority": "P4",
-   "priorityNote": "Shelf check: is there a game core worth a round?",
+   "stage": "queued",
+   "who": "Claude",
+   "priority": "P1",
+   "priorityNote": "Rolled back to design: case folders of real exhibits, stamp what the Air Force...",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/bluebook-guess-1.webp",
    "firstSeen": "2026-09-20T20:57:49+00:00",
-   "lastChange": "2026-10-20T04:28:56+00:00",
+   "lastChange": "2026-10-20T20:13:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -1457,6 +1465,48 @@
     "totalUsdEst": 14.4
    },
    "tasks": [
+    {
+     "title": "bluebook source harvest",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Blue Book: collect real clue exhibits from the Air Force case files (drawings, sky forms, star maps, clippings, record cards) with the Air Force verdict and a credit and licence for each.",
+     "since": "2026-10-20T20:13:07+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "bluebook core build",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Blue Book new core: open a case folder, peel two of the taped exhibits, stamp what the Air Force decided it was, then see their record card; daily at local midnight, archive, practice, a filing-cabinet collection.",
+     "since": "2026-10-20T20:12:38+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "bluebook dossier look",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Blue Book look pass: manila folder, violet tape and rubber stamps, pencil notes, halftone clippings, a stamped share card and Chinese labels.",
+     "since": "2026-10-20T20:12:38+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "bluebook guess ship standard",
      "state": "done",
@@ -1473,7 +1523,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 3,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
@@ -1794,7 +1844,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-20T20:08:53+00:00",
+   "lastChange": "2026-10-20T20:11:58+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
@@ -14642,14 +14692,14 @@
    "title": "UGA Grad Survivor",
    "line": "Swipe through a PhD.",
    "url": "https://chenhsieh.github.io/UGA-grad-survivor/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/uga-grad-survivor-1.webp",
    "firstSeen": "2026-03-20T21:21:51+00:00",
-   "lastChange": "2026-10-20T20:10:44+00:00",
+   "lastChange": "2026-10-20T20:11:21+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -14665,10 +14715,10 @@
    "tasks": [
     {
      "title": "uga survivor fresh eyes review",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Fresh-eyes ship review of UGA Grad Survivor after the logic and copy fixes.",
-     "since": "2026-10-20T19:25:48+00:00",
+     "since": "2026-10-20T20:11:05+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -14735,8 +14785,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 4
    },
