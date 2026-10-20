@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T19:55:22+00:00",
+ "generated": "2026-10-20T19:57:32+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -17,23 +17,23 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 84,
+    "queued": 83,
     "running": 2,
-    "doneToday": 11,
-    "minutes": 1176,
-    "estimateMinutes": 1176
+    "doneToday": 12,
+    "minutes": 1164,
+    "estimateMinutes": 1164
    }
   },
-  "queued": 84,
+  "queued": 83,
   "running": 2,
-  "doneToday": 17,
+  "doneToday": 18,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 1176,
-  "estimatedFinish": "2026-10-21T15:31:22+00:00",
-  "estimateMinutes": 1176
+  "minutesRemaining": 1164,
+  "estimatedFinish": "2026-10-21T15:21:32+00:00",
+  "estimateMinutes": 1164
  },
  "lanes": [
   {
@@ -41,15 +41,15 @@
    "game": "UGA-grad-survivor",
    "task": "uga survivor copy edit",
    "since": "2026-10-20T19:54:03+00:00",
-   "activity": "2026-10-20T19:54:18+00:00",
+   "activity": "2026-10-20T19:57:19+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
-   "game": "colony-count",
-   "task": "colony incubator study",
-   "since": "2026-10-20T19:13:49+00:00",
-   "activity": "2026-10-20T19:50:36+00:00",
+   "game": "Multiple games",
+   "task": "itch zips refresh",
+   "since": null,
+   "activity": null,
    "commit": null
   }
  ],
@@ -87,7 +87,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 34
+   "changes": 35
   }
  ],
  "houseRules": 23,
@@ -1781,41 +1781,27 @@
    "title": "Colony Count",
    "line": "Solve three daily levels, then freeze finished plates.",
    "url": "https://chenhsieh.github.io/colony-count/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Claude",
    "priority": "P1",
    "priorityNote": "Flagship; has its own owner",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-20T19:50:36+00:00",
+   "lastChange": "2026-10-20T19:57:26+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 6,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 7.2,
+    "claudeUsdEst": 10.8,
     "earlierRounds": 23,
     "earlierUsdEst": 82.8,
-    "totalUsdEst": 112.88
+    "totalUsdEst": 116.48
    },
    "tasks": [
-    {
-     "title": "colony incubator study",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Colony Count study 1: Incubator living-plate mode.",
-     "since": "2026-10-20T19:13:49+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "colony round dish study",
      "state": "queued",
@@ -1843,6 +1829,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "colony incubator study",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Colony Count study 1: Incubator living-plate mode.",
+     "since": "2026-10-20T19:00:06+00:00",
+     "done": "2026-10-20T19:00:06+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "LIVE https://chenhsieh.github.io/colony-count/incubator.html (main , rollback tag pre-incubator; reached from a new Incubator button on the home screen). Live bytes match; all 6 dishes solved by real touch on the live..."
     },
     {
      "title": "colony unlock themes",
@@ -1917,9 +1917,9 @@
    ],
    "taskCounts": {
     "queued": 2,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 8
+    "done": 9
    },
    "verdict": {
     "date": "2026-10-18",
@@ -1928,6 +1928,12 @@
    },
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T19:57:26+00:00",
+     "ok": true,
+     "note": "Incubator mode (6 dishes, two-counter uniqueness, night preview); main https://chenhsieh.github.io/colony-count/incubator.html",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T05:12:59+00:00",
      "ok": true,
@@ -1993,12 +1999,6 @@
      "ok": true,
      "note": "cc-quiet- live : quiet board in all animal themes: open squares plain soft tiles (texture only on the rim), marked-empty a step darker with the empty sign; squares under 36 px get eyes-only pieces and a numbered one carries its number on a clean",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-18T15:28:38+00:00",
-     "ok": true,
-     "note": "feat: a quieter board: plain squares, small pieces that keep the number clear, Zoom out of the clues",
-     "source": "main commit"
     }
    ]
   },
@@ -14487,7 +14487,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/uga-grad-survivor-1.webp",
    "firstSeen": "2026-03-20T21:18:06+00:00",
-   "lastChange": "2026-10-20T19:54:18+00:00",
+   "lastChange": "2026-10-20T19:57:19+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
