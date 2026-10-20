@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T23:59:55+00:00",
+ "generated": "2026-10-20T00:01:59+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -11,43 +11,31 @@
   "workers": {
    "Codex": {
     "queued": 49,
-    "running": 1,
-    "doneToday": 53,
-    "minutes": 1930,
-    "estimateMinutes": 965
+    "running": 0,
+    "doneToday": 54,
+    "minutes": 1890,
+    "estimateMinutes": 945
    },
    "Claude": {
-    "queued": 7,
-    "running": 0,
+    "queued": 6,
+    "running": 1,
     "doneToday": 28,
     "minutes": 420,
     "estimateMinutes": 420
    }
   },
-  "queued": 56,
+  "queued": 55,
   "running": 1,
-  "doneToday": 81,
+  "doneToday": 82,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2350,
-  "estimatedFinish": "2026-10-20T16:04:55+00:00",
-  "estimateMinutes": 965
+  "minutesRemaining": 2310,
+  "estimatedFinish": "2026-10-20T15:46:59+00:00",
+  "estimateMinutes": 945
  },
- "lanes": [
-  {
-   "worker": "Codex",
-   "game": "telephone-of-babel",
-   "task": "telephone of babel balance",
-   "since": "2026-10-19T23:41:10+00:00",
-   "activity": "2026-10-19T23:59:48+00:00",
-   "commit": {
-    "at": "2026-10-19T23:54:37+00:00",
-    "subject": "feat: make Babel a balance puzzle"
-   }
-  }
- ],
+ "lanes": [],
  "codexLanes": 2,
  "claudeWorkers": 0,
  "apiSpentUsd": 304.56,
@@ -78,7 +66,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 66
+   "changes": 67
   }
  ],
  "houseRules": 21,
@@ -6909,48 +6897,50 @@
    "title": "Telephone of Babel",
    "line": "",
    "url": "https://chenhsieh.github.io/telephone-of-babel/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Remix around languages meeting and the balance that keeps",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/telephone-of-babel-1.webp",
    "firstSeen": "2026-10-16T00:30:37+00:00",
-   "lastChange": "2026-10-19T23:59:48+00:00",
+   "lastChange": "2026-10-20T00:01:37+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 0,
     "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 226238,
+    "codexUsdEst": 0.27,
     "claudeUsdEst": 0.0,
     "earlierRounds": 7,
     "earlierUsdEst": 25.2,
-    "totalUsdEst": 25.2
+    "totalUsdEst": 25.47
    },
    "tasks": [
     {
      "title": "telephone of babel balance",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Remix around languages meeting and the balance that keeps the tower standing.",
-     "since": "2026-10-19T23:41:10+00:00",
-     "done": null,
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 21,
+     "tokens": 226238,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-19T23:54:37+00:00",
-      "subject": "feat: make Babel a balance puzzle"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Players now balance a shared picture against a visible cloud line across abstract language houses."
     }
    ],
    "verdict": null,
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-20T00:01:37+00:00",
+     "ok": true,
+     "note": "picture routes now balance shared meaning with a visible cloud line, old saves survive, and live 390x844 plus 320x568 touch checks passed"
+    },
     {
      "at": "2026-10-18T08:34:11+00:00",
      "ok": true,
