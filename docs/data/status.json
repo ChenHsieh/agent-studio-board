@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T02:28:39+00:00",
+ "generated": "2026-10-20T02:30:47+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,15 +10,15 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 60,
-    "running": 4,
-    "doneToday": 94,
-    "minutes": 2495,
-    "estimateMinutes": 1248
+    "queued": 61,
+    "running": 3,
+    "doneToday": 96,
+    "minutes": 2500,
+    "estimateMinutes": 1250
    },
    "Claude": {
-    "queued": 3,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "doneToday": 37,
     "minutes": 180,
     "estimateMinutes": 180
@@ -26,14 +26,14 @@
   },
   "queued": 63,
   "running": 4,
-  "doneToday": 131,
+  "doneToday": 133,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2675,
-  "estimatedFinish": "2026-10-20T23:16:39+00:00",
-  "estimateMinutes": 1248
+  "minutesRemaining": 2680,
+  "estimatedFinish": "2026-10-20T23:20:47+00:00",
+  "estimateMinutes": 1250
  },
  "lanes": [
   {
@@ -41,7 +41,7 @@
    "game": "rna-hero",
    "task": "rna hero knots",
    "since": "2026-10-20T02:09:15+00:00",
-   "activity": "2026-10-20T02:28:38+00:00",
+   "activity": "2026-10-20T02:30:43+00:00",
    "commit": {
     "at": "2026-10-20T02:11:19+00:00",
     "subject": "start: B1b_rna-hero-knots"
@@ -52,7 +52,7 @@
    "game": "zoom-out",
    "task": "zoom out finish",
    "since": "2026-10-20T02:24:09+00:00",
-   "activity": "2026-10-20T02:28:34+00:00",
+   "activity": "2026-10-20T02:30:27+00:00",
    "commit": null
   },
   {
@@ -64,19 +64,16 @@
    "commit": null
   },
   {
-   "worker": "Codex",
-   "game": "glyph-gates",
-   "task": "glyph gates core",
-   "since": "2026-10-20T02:28:12+00:00",
-   "activity": "2026-10-20T02:28:13+00:00",
-   "commit": {
-    "at": "2026-10-20T02:28:13+00:00",
-    "subject": "start: P2d19_glyph-gates-core"
-   }
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "inspo batch1",
+   "since": null,
+   "activity": null,
+   "commit": null
   }
  ],
  "codexLanes": 2,
- "claudeWorkers": 0,
+ "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -105,7 +102,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 111
+   "changes": 113
   }
  ],
  "houseRules": 23,
@@ -4870,19 +4867,19 @@
    "title": "Glyph Gates",
    "line": "Open a path by pairing marks at each gate.",
    "url": "https://chenhsieh.github.io/glyph-gates/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Find the game core and story before any visual work",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/glyph-gates-1.webp",
    "firstSeen": "2026-10-13T08:48:46+00:00",
-   "lastChange": "2026-10-20T02:28:13+00:00",
+   "lastChange": "2026-10-20T02:29:24+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
     "claudeRuns": 0,
-    "apiRuns": 0,
+    "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
@@ -4892,32 +4889,49 @@
    },
    "tasks": [
     {
-     "title": "glyph gates core",
-     "state": "running",
+     "title": "glyph gates build",
+     "state": "queued",
      "worker": "Codex",
-     "plan": "Find the game core and story before any visual work.",
-     "since": "2026-10-20T02:28:12+00:00",
+     "plan": "",
+     "since": "2026-10-20T02:29:24+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-20T02:28:13+00:00",
-      "subject": "start: P2d19_glyph-gates-core"
-     },
+     "commit": null,
      "result": ""
+    },
+    {
+     "title": "glyph gates core",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Find the game core and story before any visual work.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Verdict: continue. Brief: expert/glyph-gates/packages/BRIEF_20261019.md: prior art Turing Tumble; cells rolling down Waddington's landscape into fates; FIXED = steady signal, FLIP = lateral inhibition (Notch-Delta,..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T02:29:24+00:00",
+     "ok": true,
+     "note": "cell-fates brief + build P2x",
+     "source": "board note"
+    },
     {
      "at": "2026-10-17T22:08:17+00:00",
      "ok": true,
@@ -4982,12 +4996,6 @@
      "at": "2026-10-13T10:11:31+00:00",
      "ok": true,
      "note": "step 10: Step 10: promote flipflop to the main game, cut ropes [page: index.html]",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-13T09:15:39+00:00",
-     "ok": true,
-     "note": "step 9: Step 9: ropes readability [page: lab/ropes/index.html]",
      "source": "main commit"
     }
    ]
@@ -8925,7 +8933,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/rna-hero-1.webp",
    "firstSeen": "2026-08-20T15:44:40+00:00",
-   "lastChange": "2026-10-20T02:28:38+00:00",
+   "lastChange": "2026-10-20T02:30:43+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -12196,19 +12204,19 @@
    "title": "Time Material",
    "line": "Scrub through a frame history and draw with time.",
    "url": "https://chenhsieh.github.io/time-material/",
-   "stage": "planning",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Find the core and make the time-and-material rules",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/time-material-1.webp",
    "firstSeen": "2026-09-20T20:53:51+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-20T02:30:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
     "claudeRuns": 0,
-    "apiRuns": 0,
+    "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
@@ -12218,11 +12226,11 @@
    },
    "tasks": [
     {
-     "title": "time material core",
-     "state": "planned",
+     "title": "time material build",
+     "state": "queued",
      "worker": "Codex",
-     "plan": "Find the core and make the time-and-material rules understandable.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "plan": "",
+     "since": "2026-10-20T02:30:39+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -12230,17 +12238,37 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "time material core",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Find the core and make the time-and-material rules understandable.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Verdict: continue. Brief: expert/time-material/packages/BRIEF_20261019.md: the rolling-shutter photographer (phones read rows at different moments, so propellers bend); set direction, speed and start to make the photo..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
-    "waitingDesign": 1,
-    "done": 0
+    "waitingDesign": 0,
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T02:30:39+00:00",
+     "ok": true,
+     "note": "rolling-shutter brief + build P2x",
+     "source": "board note"
+    },
     {
      "at": "2026-10-15T14:34:22+00:00",
      "ok": true,
@@ -13666,7 +13694,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-16T00:32:50+00:00",
-   "lastChange": "2026-10-20T02:28:34+00:00",
+   "lastChange": "2026-10-20T02:30:27+00:00",
    "cost": {
     "apiUsd": 7.14,
     "codexRuns": 2,
