@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T19:23:45+00:00",
+ "generated": "2026-10-20T19:26:00+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -17,36 +17,44 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 76,
-    "running": 1,
+    "queued": 81,
+    "running": 2,
     "doneToday": 8,
-    "minutes": 1020,
-    "estimateMinutes": 1020
+    "minutes": 1140,
+    "estimateMinutes": 1140
    }
   },
-  "queued": 76,
-  "running": 1,
+  "queued": 81,
+  "running": 2,
   "doneToday": 14,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 1020,
-  "estimatedFinish": "2026-10-21T12:23:45+00:00",
-  "estimateMinutes": 1020
+  "minutesRemaining": 1140,
+  "estimatedFinish": "2026-10-21T14:26:00+00:00",
+  "estimateMinutes": 1140
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "UGA-grad-survivor",
+   "task": "uga survivor flow logic fix",
+   "since": "2026-10-20T19:25:48+00:00",
+   "activity": "2026-10-20T19:25:48+00:00",
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "colony-count",
    "task": "colony incubator study",
    "since": "2026-10-20T19:13:49+00:00",
-   "activity": "2026-10-20T19:20:11+00:00",
+   "activity": "2026-10-20T19:24:46+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 2,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -1740,7 +1748,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-20T19:20:11+00:00",
+   "lastChange": "2026-10-20T19:24:46+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
@@ -14416,14 +14424,14 @@
    "title": "UGA Grad Survivor",
    "line": "Swipe through a PhD.",
    "url": "https://chenhsieh.github.io/UGA-grad-survivor/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/uga-grad-survivor-1.webp",
    "firstSeen": "2026-03-20T21:08:56+00:00",
-   "lastChange": "2026-10-20T19:13:43+00:00",
+   "lastChange": "2026-10-20T19:25:48+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -14437,6 +14445,48 @@
     "totalUsdEst": 50.4
    },
    "tasks": [
+    {
+     "title": "uga survivor flow logic fix",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Fix UGA Grad Survivor flow and logic: readable start screen, consistent timeline words, clear advisor choice, full workflow review.",
+     "since": "2026-10-20T19:25:48+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "uga survivor copy edit",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Copywriter pass on all UGA Grad Survivor text to remove AI feel and cringe, in English and Traditional Chinese.",
+     "since": "2026-10-20T19:25:48+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "uga survivor fresh eyes review",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Fresh-eyes ship review of UGA Grad Survivor after the logic and copy fixes.",
+     "since": "2026-10-20T19:25:48+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "uga badges plain and visual",
      "state": "done",
@@ -14467,13 +14517,13 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "history": [
     {
      "at": "2026-10-20T19:13:43+00:00",
