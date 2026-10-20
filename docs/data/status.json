@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T02:34:59+00:00",
+ "generated": "2026-10-20T02:37:07+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 67,
+    "queued": 66,
     "running": 4,
-    "doneToday": 97,
-    "minutes": 2780,
-    "estimateMinutes": 1390
+    "doneToday": 103,
+    "minutes": 2770,
+    "estimateMinutes": 1385
    },
    "Claude": {
     "queued": 1,
@@ -24,16 +24,16 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 68,
+  "queued": 67,
   "running": 4,
-  "doneToday": 134,
+  "doneToday": 140,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2840,
-  "estimatedFinish": "2026-10-21T01:44:59+00:00",
-  "estimateMinutes": 1390
+  "minutesRemaining": 2830,
+  "estimatedFinish": "2026-10-21T01:42:07+00:00",
+  "estimateMinutes": 1385
  },
  "lanes": [
   {
@@ -41,7 +41,7 @@
    "game": "rna-hero",
    "task": "rna hero knots",
    "since": "2026-10-20T02:09:15+00:00",
-   "activity": "2026-10-20T02:34:40+00:00",
+   "activity": "2026-10-20T02:37:06+00:00",
    "commit": {
     "at": "2026-10-20T02:11:19+00:00",
     "subject": "start: B1b_rna-hero-knots"
@@ -52,7 +52,7 @@
    "game": "zoom-out",
    "task": "zoom out finish",
    "since": "2026-10-20T02:24:09+00:00",
-   "activity": "2026-10-20T02:34:55+00:00",
+   "activity": "2026-10-20T02:37:04+00:00",
    "commit": null
   },
   {
@@ -102,7 +102,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 114
+   "changes": 120
   }
  ],
  "houseRules": 23,
@@ -2639,8 +2639,8 @@
    "title": "Dough Boundary",
    "line": "Press one dough patch into a touching dough patch.",
    "url": "https://chenhsieh.github.io/dough-boundary/",
-   "stage": "planning",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Add the cross-section cutting twist so it stops being a",
    "shelfNote": "",
@@ -2651,28 +2651,28 @@
     "apiUsd": 6.45,
     "codexRuns": 2,
     "claudeRuns": 2,
-    "apiRuns": 4,
+    "apiRuns": 5,
     "codexTokens": 509240,
     "codexUsdEst": 0.61,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 16,
-    "earlierUsdEst": 57.6,
-    "totalUsdEst": 71.86
+    "earlierRounds": 15,
+    "earlierUsdEst": 54.0,
+    "totalUsdEst": 68.26
    },
    "tasks": [
     {
      "title": "dough boundary core",
-     "state": "planned",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude API",
      "plan": "Add the cross-section cutting twist so it stops being a Kami copy.",
      "since": "2026-10-19T17:54:51+00:00",
-     "done": null,
+     "done": "2026-10-19T17:54:51+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "Verdict: standalone page unchanged. Brief: expert/dough-boundary/packages/BRIEF_20261019.md."
     },
     {
      "title": "bake 320 layout gpt 5",
@@ -2776,15 +2776,15 @@
    "taskCounts": {
     "queued": 0,
     "running": 0,
-    "waitingDesign": 1,
-    "done": 8
+    "waitingDesign": 0,
+    "done": 9
    },
    "verdict": {
     "date": "2026-10-18",
     "verdict": "revise",
     "note": "Playable; fun and look unclear"
    },
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
     {
      "at": "2026-10-19T16:53:17+00:00",
@@ -2857,6 +2857,49 @@
      "ok": true,
      "note": "fix: holding a button or the board no longer selects text on iPhone",
      "source": "main commit"
+    }
+   ]
+  },
+  {
+   "id": "dough-boundary-core",
+   "title": "Dough Boundary Core",
+   "line": "",
+   "url": "https://chenhsieh.github.io/dough-boundary-core/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "firstSeen": "2026-10-20T02:35:01+00:00",
+   "lastChange": "2026-10-20T02:35:01+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 0.0,
+    "earlierRounds": 1,
+    "earlierUsdEst": 3.6,
+    "totalUsdEst": 3.6
+   },
+   "tasks": [],
+   "taskCounts": {
+    "queued": 0,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 0
+   },
+   "verdict": null,
+   "needsYou": null,
+   "history": [
+    {
+     "at": "2026-10-20T02:35:01+00:00",
+     "ok": true,
+     "note": "P3 core verdict + brief",
+     "source": "board note"
     }
    ]
   },
@@ -3257,33 +3300,33 @@
    "title": "Fake Philosopher",
    "line": "Build an ornate paragraph while a sceptical reader tries.",
    "url": "https://chenhsieh.github.io/fake-philosopher/",
-   "stage": "planning",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P3",
    "priorityNote": "A story, slower flashing, clear whether it is logic or",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/fake-philosopher-1.webp",
    "firstSeen": "2026-10-17T22:37:21+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-20T02:35:01+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
     "claudeRuns": 1,
-    "apiRuns": 0,
+    "apiRuns": 1,
     "codexTokens": 187351,
     "codexUsdEst": 0.22,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 7,
-    "earlierUsdEst": 25.2,
-    "totalUsdEst": 29.02
+    "earlierRounds": 6,
+    "earlierUsdEst": 21.6,
+    "totalUsdEst": 25.42
    },
    "tasks": [
     {
-     "title": "fake philosopher core",
-     "state": "planned",
+     "title": "fake philosopher names",
+     "state": "queued",
      "worker": "Codex",
-     "plan": "A story, slower flashing, clear whether it is logic or wordplay, Eastern philosophers too.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "plan": "",
+     "since": "2026-10-20T02:35:01+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -3291,6 +3334,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "fake philosopher core",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "A story, slower flashing, clear whether it is logic or wordplay, Eastern philosophers too.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Verdict: continue. Story: a School of Names sophist vs a Mohist logician (least-read Eastern philosophy), claims as shapes, moves cover shapes, slow raised finger; café chapter keeps the original. Brief:..."
     },
     {
      "title": "review_fake philosopher",
@@ -3322,10 +3379,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
-    "waitingDesign": 1,
-    "done": 2
+    "waitingDesign": 0,
+    "done": 3
    },
    "verdict": null,
    "needsYou": null,
@@ -3382,6 +3439,49 @@
      "at": "2026-10-17T22:37:21+00:00",
      "ok": true,
      "note": "design done in protos-claude/fake-philosopher: BUILD; rules.js + bots (NAIVE/GREEDY/PLANNER) DECISION PASS 4872 rows, daily checkDaily PASS 60 days; STEP0.md + V1.md (taste lenses board-and-craft, toy-and-picture-book, empty bowl; book-tour picture story; half",
+     "source": "board note"
+    }
+   ]
+  },
+  {
+   "id": "fake-philosopher-core",
+   "title": "Fake Philosopher Core",
+   "line": "",
+   "url": "https://chenhsieh.github.io/fake-philosopher-core/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "firstSeen": "2026-10-20T02:35:01+00:00",
+   "lastChange": "2026-10-20T02:35:01+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 0.0,
+    "earlierRounds": 1,
+    "earlierUsdEst": 3.6,
+    "totalUsdEst": 3.6
+   },
+   "tasks": [],
+   "taskCounts": {
+    "queued": 0,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 0
+   },
+   "verdict": null,
+   "needsYou": null,
+   "history": [
+    {
+     "at": "2026-10-20T02:35:01+00:00",
+     "ok": true,
+     "note": "P3 core verdict + brief",
      "source": "board note"
     }
    ]
@@ -3781,13 +3881,13 @@
     "apiUsd": 0.0,
     "codexRuns": 1,
     "claudeRuns": 1,
-    "apiRuns": 3,
+    "apiRuns": 4,
     "codexTokens": 137610,
     "codexUsdEst": 0.17,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
-    "totalUsdEst": 18.17
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
+    "totalUsdEst": 14.57
    },
    "tasks": [
     {
@@ -3806,17 +3906,17 @@
     },
     {
      "title": "floor area core",
-     "state": "planned",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude API",
      "plan": "Find a creative twist.",
      "since": "2026-10-19T17:54:51+00:00",
-     "done": null,
+     "done": "2026-10-19T17:54:51+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "Verdict: continue. Spin: Taipei rooftop additions with an inspector who walks by on a schedule; props hide what pokes above the street line. Brief: expert/floor-area/packages/BRIEF_20261019.md; build todo/B3g."
     },
     {
      "title": "bake credit gpt 5",
@@ -3892,8 +3992,8 @@
    "taskCounts": {
     "queued": 1,
     "running": 0,
-    "waitingDesign": 1,
-    "done": 5
+    "waitingDesign": 0,
+    "done": 6
    },
    "verdict": null,
    "needsYou": null,
@@ -3951,6 +4051,49 @@
      "ok": true,
      "note": "Initial commit",
      "source": "main commit"
+    }
+   ]
+  },
+  {
+   "id": "floor-area-core",
+   "title": "Floor Area Core",
+   "line": "",
+   "url": "https://chenhsieh.github.io/floor-area-core/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "firstSeen": "2026-10-20T02:35:01+00:00",
+   "lastChange": "2026-10-20T02:35:01+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 0.0,
+    "earlierRounds": 1,
+    "earlierUsdEst": 3.6,
+    "totalUsdEst": 3.6
+   },
+   "tasks": [],
+   "taskCounts": {
+    "queued": 0,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 0
+   },
+   "verdict": null,
+   "needsYou": null,
+   "history": [
+    {
+     "at": "2026-10-20T02:35:01+00:00",
+     "ok": true,
+     "note": "P3 core verdict + brief",
+     "source": "board note"
     }
    ]
   },
@@ -4446,6 +4589,49 @@
      "ok": true,
      "note": "Fold: read a protein structure for its method and its decade",
      "source": "main commit"
+    }
+   ]
+  },
+  {
+   "id": "four-thirty-three-core",
+   "title": "Four Thirty Three Core",
+   "line": "",
+   "url": "https://chenhsieh.github.io/four-thirty-three-core/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "firstSeen": "2026-10-20T02:35:01+00:00",
+   "lastChange": "2026-10-20T02:35:01+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 0.0,
+    "earlierRounds": 1,
+    "earlierUsdEst": 3.6,
+    "totalUsdEst": 3.6
+   },
+   "tasks": [],
+   "taskCounts": {
+    "queued": 0,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 0
+   },
+   "verdict": null,
+   "needsYou": null,
+   "history": [
+    {
+     "at": "2026-10-20T02:35:01+00:00",
+     "ok": true,
+     "note": "P3 core verdict + brief",
+     "source": "board note"
     }
    ]
   },
@@ -7012,13 +7198,13 @@
     "apiUsd": 14.39,
     "codexRuns": 1,
     "claudeRuns": 1,
-    "apiRuns": 3,
+    "apiRuns": 4,
     "codexTokens": 165051,
     "codexUsdEst": 0.2,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 6,
-    "earlierUsdEst": 21.6,
-    "totalUsdEst": 39.79
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
+    "totalUsdEst": 36.19
    },
    "tasks": [
     {
@@ -7037,17 +7223,17 @@
     },
     {
      "title": "material boards core",
-     "state": "planned",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude API",
      "plan": "Find a creative twist for the classic puzzle.",
      "since": "2026-10-19T17:54:51+00:00",
-     "done": null,
+     "done": "2026-10-19T17:54:51+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "Verdict: continue. Spin: light has a budget (splits halve, frosted scatters, fibre carries, felt halves; crystals need 1/2/4). Brief: expert/material-boards/packages/BRIEF_20261019.md; build todo/B3f."
     },
     {
      "title": "bake howto gpt 5",
@@ -7123,8 +7309,8 @@
    "taskCounts": {
     "queued": 1,
     "running": 0,
-    "waitingDesign": 1,
-    "done": 5
+    "waitingDesign": 0,
+    "done": 6
    },
    "verdict": null,
    "needsYou": null,
@@ -7193,6 +7379,49 @@
      "at": "2026-10-15T21:49:26+00:00",
      "ok": true,
      "note": "START job V1=",
+     "source": "board note"
+    }
+   ]
+  },
+  {
+   "id": "material-boards-core",
+   "title": "Material Boards Core",
+   "line": "",
+   "url": "https://chenhsieh.github.io/material-boards-core/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "firstSeen": "2026-10-20T02:35:01+00:00",
+   "lastChange": "2026-10-20T02:35:01+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 0.0,
+    "earlierRounds": 1,
+    "earlierUsdEst": 3.6,
+    "totalUsdEst": 3.6
+   },
+   "tasks": [],
+   "taskCounts": {
+    "queued": 0,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 0
+   },
+   "verdict": null,
+   "needsYou": null,
+   "history": [
+    {
+     "at": "2026-10-20T02:35:01+00:00",
+     "ok": true,
+     "note": "P3 core verdict + brief",
      "source": "board note"
     }
    ]
@@ -7822,14 +8051,14 @@
    "title": "Orbit Rings",
    "line": "Rings of coloured balls cross each other, and a ball.",
    "url": "https://chenhsieh.github.io/orbit-rings/",
-   "stage": "planning",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P3",
    "priorityNote": "An eccentric twist from the inspiration collection and a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/orbit-rings-1.webp",
    "firstSeen": "2026-10-16T01:21:24+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-20T02:36:23+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -7843,6 +8072,20 @@
     "totalUsdEst": 57.6
    },
    "tasks": [
+    {
+     "title": "orbit rings llull",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-20T02:36:23+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "orbit rings core",
      "state": "planned",
@@ -7873,7 +8116,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 1,
     "done": 1
@@ -8254,14 +8497,14 @@
    "title": "Rasp",
    "line": "Cut the teeth of a steel rasp one hammer strike at a.",
    "url": "https://chenhsieh.github.io/rasp/",
-   "stage": "planning",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P3",
    "priorityNote": "Find a reason to carve",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/rasp-1.webp",
    "firstSeen": "2026-10-15T23:26:16+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-20T02:36:23+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -8275,6 +8518,20 @@
     "totalUsdEst": 54.0
    },
    "tasks": [
+    {
+     "title": "rasp stitch",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-20T02:36:23+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "rasp core",
      "state": "planned",
@@ -8305,7 +8562,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 1,
     "done": 1
@@ -9004,7 +9261,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/rna-hero-1.webp",
    "firstSeen": "2026-08-20T15:44:40+00:00",
-   "lastChange": "2026-10-20T02:34:40+00:00",
+   "lastChange": "2026-10-20T02:37:06+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -9150,33 +9407,33 @@
    "title": "Room Tone",
    "line": "A small solo puzzle.",
    "url": "https://chenhsieh.github.io/four-thirty-three/",
-   "stage": "planning",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P3",
    "priorityNote": "Return to the idea that every ambient sound counts; find",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/four-thirty-three-1.webp",
    "firstSeen": "2026-10-18T06:11:10+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-20T02:35:01+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
     "claudeRuns": 1,
-    "apiRuns": 0,
+    "apiRuns": 1,
     "codexTokens": 184881,
     "codexUsdEst": 0.22,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
-    "totalUsdEst": 21.82
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
+    "totalUsdEst": 18.22
    },
    "tasks": [
     {
-     "title": "four thirty three core",
-     "state": "planned",
+     "title": "four thirty three listen",
+     "state": "queued",
      "worker": "Codex",
-     "plan": "Return to the idea that every ambient sound counts; find the game core.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "plan": "",
+     "since": "2026-10-20T02:35:01+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -9184,6 +9441,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "four thirty three core",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Return to the idea that every ambient sound counts; find the game core.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Verdict: continue. Back to Cage: listen and score the room's sounds with limited attention; quiet sounds worth more; last room the anechoic chamber. Brief: expert/four-thirty-three/packages/BRIEF_20261019.md; build..."
     },
     {
      "title": "review_four thirty three",
@@ -9215,10 +9486,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
-    "waitingDesign": 1,
-    "done": 2
+    "waitingDesign": 0,
+    "done": 3
    },
    "verdict": null,
    "needsYou": null,
@@ -11131,14 +11402,14 @@
    "title": "Squat Tempo",
    "line": "Two frogs hold a squat-off to a whistle, and the crowd.",
    "url": "https://chenhsieh.github.io/squat-tempo/",
-   "stage": "planning",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P3",
    "priorityNote": "Make the rule understandable",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/squat-tempo-1.webp",
    "firstSeen": "2026-10-16T01:42:46+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-20T02:36:23+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -11152,6 +11423,20 @@
     "totalUsdEst": 46.8
    },
    "tasks": [
+    {
+     "title": "squat tempo plan",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-20T02:36:23+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "squat tempo core",
      "state": "planned",
@@ -11168,7 +11453,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 1,
     "done": 0
@@ -11969,13 +12254,13 @@
     "apiUsd": 5.57,
     "codexRuns": 1,
     "claudeRuns": 1,
-    "apiRuns": 0,
+    "apiRuns": 1,
     "codexTokens": 241446,
     "codexUsdEst": 0.29,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 13,
-    "earlierUsdEst": 46.8,
-    "totalUsdEst": 56.26
+    "earlierRounds": 12,
+    "earlierUsdEst": 43.2,
+    "totalUsdEst": 52.66
    },
    "tasks": [
     {
@@ -11994,17 +12279,17 @@
     },
     {
      "title": "the zipper core",
-     "state": "planned",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude API",
      "plan": "Make the goal and the meaning of dash and link clear; interaction that explains itself.",
      "since": "2026-10-19T17:54:51+00:00",
-     "done": null,
+     "done": "2026-10-19T17:54:51+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "Brief: two lines, labelled zipper/best counts, both zips drawn, preview, ramp boards). Build: todo/B3d_the-zipper-clarity.txt."
     },
     {
      "title": "review of zipper guide",
@@ -12038,8 +12323,8 @@
    "taskCounts": {
     "queued": 1,
     "running": 0,
-    "waitingDesign": 1,
-    "done": 2
+    "waitingDesign": 0,
+    "done": 3
    },
    "verdict": null,
    "needsYou": null,
@@ -12119,6 +12404,49 @@
    ]
   },
   {
+   "id": "the-zipper-core",
+   "title": "The Zipper Core",
+   "line": "",
+   "url": "https://chenhsieh.github.io/the-zipper-core/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "firstSeen": "2026-10-20T02:35:01+00:00",
+   "lastChange": "2026-10-20T02:35:01+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 0.0,
+    "earlierRounds": 1,
+    "earlierUsdEst": 3.6,
+    "totalUsdEst": 3.6
+   },
+   "tasks": [],
+   "taskCounts": {
+    "queued": 0,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 0
+   },
+   "verdict": null,
+   "needsYou": null,
+   "history": [
+    {
+     "at": "2026-10-20T02:35:01+00:00",
+     "ok": true,
+     "note": "P3 core verdict + brief",
+     "source": "board note"
+    }
+   ]
+  },
+  {
    "id": "thumb-stand",
    "title": "Thumb Stand",
    "line": "",
@@ -12139,9 +12467,9 @@
     "codexTokens": 612765,
     "codexUsdEst": 0.74,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 16,
-    "earlierUsdEst": 57.6,
-    "totalUsdEst": 61.94
+    "earlierRounds": 17,
+    "earlierUsdEst": 61.2,
+    "totalUsdEst": 65.54
    },
    "tasks": [
     {
@@ -12231,6 +12559,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-20T02:19:30+00:00",
+     "ok": true,
+     "note": "fix: preserve live progress and refine the first lesson",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-20T00:45:00+00:00",
      "ok": true,
      "note": "NOT_DONE: implementation committed; required bot/browser gates and migration fixture remain incomplete",
@@ -12289,12 +12623,6 @@
      "ok": true,
      "note": "fix: unlock Today after the opening lessons and fit the mystery card",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-17T22:28:38+00:00",
-     "ok": true,
-     "note": "CREDIT line on the How to play card under the rules, EN+ZH (Itagaki, Baki; no art used); live",
-     "source": "board note"
     }
    ]
   },
@@ -13793,7 +14121,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-16T00:32:50+00:00",
-   "lastChange": "2026-10-20T02:34:55+00:00",
+   "lastChange": "2026-10-20T02:37:04+00:00",
    "cost": {
     "apiUsd": 7.14,
     "codexRuns": 2,
