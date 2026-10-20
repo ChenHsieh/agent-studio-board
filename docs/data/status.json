@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T18:24:54+00:00",
+ "generated": "2026-10-20T18:27:10+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -12,41 +12,32 @@
    "Codex": {
     "queued": 0,
     "running": 0,
-    "doneToday": 5,
+    "doneToday": 6,
     "minutes": 0,
     "estimateMinutes": 0
    },
    "Claude": {
     "queued": 59,
-    "running": 1,
+    "running": 0,
     "doneToday": 7,
-    "minutes": 816,
-    "estimateMinutes": 816
+    "minutes": 756,
+    "estimateMinutes": 756
    }
   },
   "queued": 59,
-  "running": 1,
-  "doneToday": 12,
+  "running": 0,
+  "doneToday": 13,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 816,
-  "estimatedFinish": "2026-10-21T08:00:54+00:00",
-  "estimateMinutes": 816
+  "minutesRemaining": 756,
+  "estimatedFinish": "2026-10-21T07:03:10+00:00",
+  "estimateMinutes": 756
  },
- "lanes": [
-  {
-   "worker": "Claude",
-   "game": "UGA-grad-survivor",
-   "task": "uga survivor refine",
-   "since": "2026-10-20T17:57:52+00:00",
-   "activity": "2026-10-20T18:13:56+00:00",
-   "commit": null
-  }
- ],
+ "lanes": [],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 0,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -79,7 +70,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 29
+   "changes": 30
   }
  ],
  "houseRules": 23,
@@ -14388,14 +14379,14 @@
    "title": "UGA Grad Survivor",
    "line": "Swipe through a PhD.",
    "url": "https://chenhsieh.github.io/UGA-grad-survivor/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/uga-grad-survivor-1.webp",
    "firstSeen": "2026-03-20T20:49:58+00:00",
-   "lastChange": "2026-10-20T18:13:56+00:00",
+   "lastChange": "2026-10-20T18:27:09+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -14404,25 +14395,11 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 12,
-    "earlierUsdEst": 43.2,
-    "totalUsdEst": 43.2
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
+    "totalUsdEst": 46.8
    },
    "tasks": [
-    {
-     "title": "uga survivor refine",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Grad Survivor: every run ends with a \"what kind of grad student you are\" badge you can save as an image and share, a one-tap dealt start, shorter cards, a narrator, a badge collection, and the game's own title top left.",
-     "since": "2026-10-20T17:57:52+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "grad survivor 1in8b",
      "state": "done",
@@ -14440,13 +14417,19 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-20T18:27:09+00:00",
+     "ok": true,
+     "note": "badges, narrator, dealt start, strip, brand, transcript, 25-word cards; main https://chenhsieh.github.io/UGA-grad-survivor/",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T05:13:11+00:00",
      "ok": true,
@@ -14511,12 +14494,6 @@
      "at": "2026-03-20T21:18:06+00:00",
      "ok": true,
      "note": "fix: correct stale archetype descriptions for fun_haver and gym_bro",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-03-20T21:08:56+00:00",
-     "ok": true,
-     "note": "fix: v0.8 archetype starting stat adjustments",
      "source": "main commit"
     }
    ]
