@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T23:20:21+00:00",
+ "generated": "2026-10-20T23:22:33+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -12,36 +12,36 @@
    "Codex": {
     "queued": 0,
     "running": 0,
-    "doneToday": 15,
+    "doneToday": 16,
     "minutes": 0,
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 98,
+    "queued": 101,
     "running": 1,
     "doneToday": 21,
-    "minutes": 1284,
-    "estimateMinutes": 1284
+    "minutes": 1320,
+    "estimateMinutes": 1320
    }
   },
-  "queued": 98,
+  "queued": 101,
   "running": 1,
-  "doneToday": 36,
+  "doneToday": 37,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 1284,
-  "estimatedFinish": "2026-10-21T20:44:21+00:00",
-  "estimateMinutes": 1284
+  "minutesRemaining": 1320,
+  "estimatedFinish": "2026-10-21T21:22:33+00:00",
+  "estimateMinutes": 1320
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "dynasty-guess",
-   "task": "dynasty gloves bot",
-   "since": "2026-10-20T23:16:37+00:00",
-   "activity": "2026-10-20T23:16:38+00:00",
+   "game": "Multiple games",
+   "task": "gates follow rule 22",
+   "since": null,
+   "activity": null,
    "commit": null
   }
  ],
@@ -79,7 +79,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 54
+   "changes": 55
   }
  ],
  "houseRules": 23,
@@ -3301,19 +3301,19 @@
    "title": "Dynasty Guess",
    "line": "Place a museum object in its period.",
    "url": "https://chenhsieh.github.io/dynasty-guess/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Fix the missing object, then refine mechanism, story and",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/dynasty-guess-1.webp",
    "firstSeen": "2026-09-20T06:03:01+00:00",
-   "lastChange": "2026-10-20T23:16:38+00:00",
+   "lastChange": "2026-10-20T23:20:58+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
     "claudeRuns": 2,
-    "apiRuns": 1,
+    "apiRuns": 2,
     "codexTokens": 445311,
     "codexUsdEst": 0.53,
     "claudeUsdEst": 7.2,
@@ -3322,20 +3322,6 @@
     "totalUsdEst": 50.93
    },
    "tasks": [
-    {
-     "title": "dynasty gloves bot",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Dynasty Guess: check with bots that spending gloves carefully beats spending them freely, and re-pick the objects for the glove cases.",
-     "since": "2026-10-20T23:16:37+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "dynasty cabinet build",
      "state": "queued",
@@ -3377,6 +3363,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Dynasty Guess views (data only, NOT merged, NOT published):"
+    },
+    {
+     "title": "dynasty gloves bot",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Dynasty Guess: check with bots that spending gloves carefully beats spending them freely, and re-pick the objects for the glove cases.",
+     "since": "2026-10-20T19:12:56+00:00",
+     "done": "2026-10-20T19:12:56+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Dynasty Guess gloves bot (data and test only, NOT published): GLOVES: YES."
     },
     {
      "title": "dynasty game feel",
@@ -3437,9 +3437,9 @@
    ],
    "taskCounts": {
     "queued": 2,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": {
     "date": "2026-10-19",
@@ -3449,6 +3449,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-20T23:20:58+00:00",
+     "ok": true,
+     "note": "gloves bot: GLOVES YES, margins 1.19-2.41;",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T23:15:24+00:00",
      "ok": true,
@@ -3513,12 +3519,6 @@
      "at": "2026-09-21T02:50:39+00:00",
      "ok": true,
      "note": "Open in the language the content is in",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-20T15:44:58+00:00",
-     "ok": true,
-     "note": "Keep the menu button off the header",
      "source": "main commit"
     }
    ]
@@ -14419,14 +14419,14 @@
    "title": "Tractatus Tree",
    "line": "The numbered pages of a 1921 book are shuffled into a few.",
    "url": "https://chenhsieh.github.io/tractatus-tree/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Teach the philosophy gradually through play, not as homework",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/tractatus-tree-1.webp",
    "firstSeen": "2026-10-16T01:51:20+00:00",
-   "lastChange": "2026-10-20T05:54:28+00:00",
+   "lastChange": "2026-10-20T23:21:35+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -14440,6 +14440,34 @@
     "totalUsdEst": 39.88
    },
    "tasks": [
+    {
+     "title": "tractatus real sentences and pages",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Tractatus: put the real 1922 sentences on the pages (part 1 of the split).",
+     "since": "2026-10-20T23:21:35+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "tractatus finale and meaning",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Tractatus: seven-proposition tree, the silent final level and the meaning beat (part 2).",
+     "since": "2026-10-20T23:21:35+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "tractatus tree visible",
      "state": "done",
@@ -14484,7 +14512,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
@@ -14495,7 +14523,7 @@
     "note": "Better play, has taste; needs a clearer idea and more fun"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-20T05:54:28+00:00",
