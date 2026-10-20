@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T16:42:16+00:00",
+ "generated": "2026-10-20T16:44:29+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -19,27 +19,27 @@
    "Claude": {
     "queued": 64,
     "running": 1,
-    "doneToday": 2,
+    "doneToday": 3,
     "minutes": 924,
     "estimateMinutes": 924
    }
   },
   "queued": 64,
   "running": 1,
-  "doneToday": 7,
+  "doneToday": 8,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
   "minutesRemaining": 924,
-  "estimatedFinish": "2026-10-21T08:06:16+00:00",
+  "estimatedFinish": "2026-10-21T08:08:29+00:00",
   "estimateMinutes": 924
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "Multiple games",
-   "task": "silent disco proto",
+   "task": "lamp spiral proto",
    "since": null,
    "activity": null,
    "commit": null
@@ -79,7 +79,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 24
+   "changes": 25
   }
  ],
  "houseRules": 23,
@@ -11245,6 +11245,62 @@
    ]
   },
   {
+   "id": "silent-disco",
+   "repo": "silent-disco",
+   "title": "Silent Disco",
+   "line": "",
+   "url": "https://chenhsieh.github.io/silent-disco/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "firstSeen": "2026-10-20T16:29:01+00:00",
+   "lastChange": "2026-10-20T16:43:00+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 0.0,
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
+    "totalUsdEst": 10.8
+   },
+   "tasks": [],
+   "taskCounts": {
+    "queued": 0,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 0
+   },
+   "verdict": null,
+   "needsYou": null,
+   "history": [
+    {
+     "at": "2026-10-20T16:43:00+00:00",
+     "ok": true,
+     "note": "prototype live (6 levels, compare/borrow/doors, ghost counts, channel loops, daily, bots table); main https://chenhsieh.github.io/silent-disco/",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-20T16:40:50+00:00",
+     "ok": true,
+     "note": "feat: Silent Disco, a solo grouping puzzle with six levels",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-20T16:29:01+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
+    }
+   ]
+  },
+  {
    "id": "silva-to-maaslin2",
    "repo": "silva-to-maaslin2",
    "title": "SILVA to MaAsLin2",
@@ -14096,14 +14152,14 @@
    "title": "UGA Grad Survivor",
    "line": "Swipe through a PhD.",
    "url": "https://chenhsieh.github.io/UGA-grad-survivor/",
-   "stage": "planning",
+   "stage": "queued",
    "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/uga-grad-survivor-1.webp",
    "firstSeen": "2026-03-20T20:49:58+00:00",
-   "lastChange": "2026-10-20T05:13:11+00:00",
+   "lastChange": "2026-10-20T16:43:36+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -14117,6 +14173,20 @@
     "totalUsdEst": 46.8
    },
    "tasks": [
+    {
+     "title": "uga survivor refine",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Grad Survivor: every run ends with a \"what kind of grad student you are\" badge you can save as an image and share, a one-tap dealt start, shorter cards, a narrator, a badge collection, and the game's own title top left.",
+     "since": "2026-10-20T16:43:36+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "grad survivor 1in8b",
      "state": "planned",
@@ -14133,7 +14203,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 1,
     "done": 0
