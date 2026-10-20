@@ -7,6 +7,7 @@ const SOURCES = [
 const REFRESH_MS = 90_000;
 const STAGE_ORDER = { building: 0, review: 1, queued: 2, planning: 3, live: 4, shelf: 5 };
 const FILTERS = {
+  needs: [['yes', 'Needs you']],
   stage: [['building', 'Building'], ['review', 'Review'], ['queued', 'Queued'], ['planning', 'Planning'], ['live', 'Live'], ['shelf', 'Shelf']],
   priority: [['P1', 'P1'], ['P2', 'P2'], ['P3', 'P3'], ['P4', 'P4']],
   verdict: [['ship', 'Ship'], ['revise', 'Revise'], ['shelf', 'Shelf'], ['none', 'None']],
@@ -17,7 +18,9 @@ const usd = (n) => `$${(n || 0).toFixed(n >= 100 ? 0 : 2)}`;
 
 let data = null;
 const open = new Set(JSON.parse(localStorage.getItem('board.open') || '[]'));
-let filters = { stage: [], priority: [], verdict: [], worker: [], recent: [], ...JSON.parse(localStorage.getItem('board.filters') || '{}') };
+const savedFilters = JSON.parse(localStorage.getItem('board.filters') || '{}');
+let filters = { needs: [], stage: [], priority: [], verdict: [], worker: [], recent: [], ...savedFilters };
+let choseInitialView = Object.prototype.hasOwnProperty.call(savedFilters, 'needs');
 let sort = localStorage.getItem('board.sort') || 'change';
 
 const $ = (s) => document.querySelector(s);
@@ -48,6 +51,13 @@ async function load() {
       if (!r.ok) continue;
       const next = await r.json();
       if (!data || next.generated >= data.generated) data = next;
+      // On a first visit, put a question for Chen ahead of the backlog. Once a
+      // visitor changes the chip, keep that choice through refreshes.
+      if (!choseInitialView && data.games.some((g) => g.needsYou)) {
+        filters.needs = ['yes'];
+        choseInitialView = true;
+        saveChoices();
+      }
       render();
       if (url === SOURCES[0]) return;
     } catch { /* try the next source */ }
@@ -95,6 +105,11 @@ function costLine(c) {
   return `<b>≈ ${usd(c.totalUsdEst)} invested</b><br>${bits.join('<br>')}`;
 }
 
+function taskCounts(g) {
+  const n = g.taskCounts || {};
+  return `<span class="task-counts" aria-label="Task status: ${n.queued || 0} queued, ${n.running || 0} running, ${n.waitingDesign || 0} waiting for design, ${n.done || 0} done">Q ${n.queued || 0} · R ${n.running || 0} · Dsgn ${n.waitingDesign || 0} · Done ${n.done || 0}</span>`;
+}
+
 function gameHtml(g) {
   const img = g.image ? `<img class="thumb" src="${esc(g.image)}" alt="" loading="lazy">` : `<span class="thumb blank" aria-hidden="true">${esc(g.title[0])}</span>`;
   const plans = (g.tasks || []).filter((t) => t.state !== 'done' && t.plan);
@@ -105,11 +120,11 @@ function gameHtml(g) {
     const extra = t.state === 'done' && t.result ? `<span class="tag">${esc(t.result)}</span>` : commit;
     return `<li><span class="tag">${esc(t.worker)} · ${esc(when)}</span><br>${esc(t.title)}${extra ? '<br>' + extra : ''}</li>`;
   }).join('');
-  const hist = (g.history || []).map((h) => `<li><time>${esc(day(h.at))}</time>${h.ok ? '' : '<span class="no">not done: </span>'}${esc(h.note)}</li>`).join('');
+  const hist = (g.history || []).map((h) => `<li><time>${esc(day(h.at))}</time>${h.ok ? '' : '<span class="no">not done: </span>'}${esc(h.note)}${h.source ? `<small class="history-source">${esc(h.source)}</small>` : ''}</li>`).join('');
   return `<li class="game${open.has(g.id) ? ' open' : ''}" data-id="${esc(g.id)}">
   <button class="row" aria-expanded="${open.has(g.id)}">${img}<span class="name">${esc(g.title)}</span>
     <span class="meta"><span class="st ${esc(g.stage)}">${esc(g.stage)}</span>${g.verdict ? `<span class="vd ${esc(g.verdict.verdict)}">${esc(g.verdict.verdict)}</span>` : ''}<span class="p">${esc(g.priority || '')}${g.lastChange ? ' · ' + ago(g.lastChange) : ''}</span></span>
-    <span class="line">${g.needsYou ? '<b class="ask">Needs you:</b> ' + esc(g.needsYou) : esc(g.priorityNote || g.line || '')}</span></button>
+    <span class="line">${g.needsYou ? '<b class="ask">Needs you:</b> ' + esc(g.needsYou) : esc(g.priorityNote || g.line || '')}<br>${taskCounts(g)}</span></button>
   <div class="detail">
     <p><a class="play" href="${esc(g.url)}" target="_blank" rel="noopener">Open ${esc(g.title)} ↗</a></p>
     ${g.line ? `<p>${esc(g.line)}</p>` : ''}
@@ -118,8 +133,9 @@ function gameHtml(g) {
     ${g.verdict ? `<p class="said">${esc(g.verdict.verdict)}: ${esc(g.verdict.note)}<small>Verdict, ${esc(g.verdict.date)}</small></p>` : ''}
     ${g.shelfNote ? `<p class="said">${esc(g.shelfNote)}<small>Why it is on the shelf</small></p>` : ''}
     ${said ? '<h3>Plan</h3>' + said : ''}
+    <h3>Task status</h3><p class="task-summary">${taskCounts(g)}</p>
     ${tasks ? '<h3>Tasks</h3><ul class="tasks">' + tasks + '</ul>' : ''}
-    ${hist ? '<h3>Changes</h3><ul class="hist">' + hist + '</ul>' : ''}
+    ${hist ? '<h3>Changelog</h3><ul class="hist">' + hist + '</ul>' : ''}
   </div></li>`;
 }
 
@@ -133,6 +149,7 @@ function renderChips() {
 
 function matches(g) {
   const any = (value, values) => !values.length || values.includes(value);
+  if (filters.needs.includes('yes') && !g.needsYou) return false;
   if (!any(g.stage, filters.stage) || !any(g.priority || 'none', filters.priority) || !any(g.verdict ? g.verdict.verdict : 'none', filters.verdict)) return false;
   if (filters.worker.length && !filters.worker.some((worker) => (g.tasks || []).some((t) => t.worker === worker))) return false;
   if (filters.recent.length && !filters.recent.some((value) => (value === 'arrived' && within(g.firstSeen, 24 * 7)) || (value === 'updated-24' && within(g.lastChange, 24)) || (value === 'updated-7' && within(g.lastChange, 24 * 7)))) return false;

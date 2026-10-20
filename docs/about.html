@@ -14,6 +14,7 @@
   <section><h2>Verdicts</h2><p><b class="vd ship">ship</b> ready to show people · <b class="vd revise">revise</b> worth more work · <b class="vd shelf">shelf</b> parked. “Needs you” marks a new version to play or a question that needs a human answer.</p></section>
   <section><h2>Queue estimate</h2><p>Each unfinished task uses its planned minutes from the intake. Work is divided across the active Codex job lanes and the Claude worker; the later worker finish is the queue finish estimate.</p></section>
   <section><h2>Cost</h2><p>API dollars are metered. Codex and in-session Claude runs are on flat plans, so their totals are estimated from list token price or comparable metered runs. Earlier rounds are estimated the same way. Details are on <a href="stats.html">Stats</a>.</p></section>
+  <section><h2>How updates reach this board</h2><p>An agent claims a task by moving its file into a queue folder and committing to that task’s branch: first <code>start: …</code>, then work-in-progress commits. Every two minutes, a script reads the queue folders, branch commits, the change log, and the cost ledger. It writes the board data and pushes it only when something changed. GitHub Pages usually serves that update within about a minute, and this page checks again every 90 seconds.</p></section>
   <section><h2>Data</h2><p>The board reads <a href="data/status.json">data/status.json</a>, rebuilt when a task moves or an agent commits and checked again every 90 seconds.</p></section>
 </main>
 </body>
