@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T04:02:04+00:00",
+ "generated": "2026-10-20T04:04:12+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,54 +10,32 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 67,
-    "running": 2,
+    "queued": 66,
+    "running": 0,
     "doneToday": 0,
-    "minutes": 2760,
-    "estimateMinutes": 1380
+    "minutes": 2640,
+    "estimateMinutes": 2640
    },
    "Claude": {
     "queued": 2,
-    "running": 1,
+    "running": 2,
     "doneToday": 0,
-    "minutes": 180,
-    "estimateMinutes": 180
+    "minutes": 240,
+    "estimateMinutes": 240
    }
   },
-  "queued": 69,
-  "running": 3,
+  "queued": 68,
+  "running": 2,
   "doneToday": 0,
   "lanes": {
-   "Codex": 2,
+   "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 2940,
-  "estimatedFinish": "2026-10-21T03:02:04+00:00",
-  "estimateMinutes": 1380
+  "minutesRemaining": 2880,
+  "estimatedFinish": "2026-10-22T00:04:12+00:00",
+  "estimateMinutes": 2640
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "cymatic-plate",
-   "task": "cymatic endless build",
-   "since": "2026-10-20T03:43:30+00:00",
-   "activity": "2026-10-20T04:01:58+00:00",
-   "commit": {
-    "at": "2026-10-20T03:59:03+00:00",
-    "subject": "build: make endless a rising pressure run"
-   }
-  },
-  {
-   "worker": "Codex",
-   "game": "gallery-guess",
-   "task": "gallery share tiers",
-   "since": "2026-10-20T03:51:46+00:00",
-   "activity": "2026-10-20T04:01:57+00:00",
-   "commit": {
-    "at": "2026-10-20T03:58:58+00:00",
-    "subject": "feat: keep museum finds across runs"
-   }
-  },
   {
    "worker": "Claude",
    "game": "walls-have-ears",
@@ -65,10 +43,18 @@
    "since": "2026-10-20T03:26:42+00:00",
    "activity": "2026-10-20T03:51:36+00:00",
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "fold-guess",
+   "task": "fold guess ship standard",
+   "since": "2026-10-20T04:02:39+00:00",
+   "activity": "2026-10-20T04:04:09+00:00",
+   "commit": null
   }
  ],
- "codexLanes": 2,
- "claudeWorkers": 1,
+ "codexLanes": 0,
+ "claudeWorkers": 2,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -98,6 +84,10 @@
   {
    "day": "2026-10-19",
    "changes": 149
+  },
+  {
+   "day": "2026-10-20",
+   "changes": 1
   }
  ],
  "houseRules": 23,
@@ -1099,17 +1089,17 @@
    ]
   },
   {
-   "id": "bioredactle",
+   "id": "BioRedactle-nextjs",
    "repo": "BioRedactle-nextjs",
-   "title": "BioRedactle",
-   "line": "Reveal a paper's title with word tiles.",
+   "title": "Bioredactle Nextjs",
+   "line": "",
    "url": "https://chenhsieh.github.io/BioRedactle-nextjs/",
    "stage": "live",
    "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
-   "image": "https://chenhsieh.github.io/play-lab/images/games/bioredactle-1.webp",
+   "image": null,
    "firstSeen": "2026-10-05T10:15:34+00:00",
    "lastChange": "2026-10-20T03:43:11+00:00",
    "cost": {
@@ -2359,43 +2349,40 @@
    "title": "Cymatic Plate",
    "line": "Ring notes on a brass plate covered in sand and watch the.",
    "url": "https://chenhsieh.github.io/cymatic-plate/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/cymatic-plate-1.webp",
    "firstSeen": "2026-10-16T01:38:21+00:00",
-   "lastChange": "2026-10-20T04:01:58+00:00",
+   "lastChange": "2026-10-20T03:12:37+00:00",
    "cost": {
     "apiUsd": 3.26,
-    "codexRuns": 3,
+    "codexRuns": 4,
     "claudeRuns": 5,
     "apiRuns": 1,
-    "codexTokens": 500161,
-    "codexUsdEst": 0.6,
+    "codexTokens": 696553,
+    "codexUsdEst": 0.84,
     "claudeUsdEst": 18.0,
-    "earlierRounds": 16,
-    "earlierUsdEst": 57.6,
-    "totalUsdEst": 79.46
+    "earlierRounds": 15,
+    "earlierUsdEst": 54.0,
+    "totalUsdEst": 76.1
    },
    "tasks": [
     {
      "title": "cymatic endless build",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "A real endless run for Cymatic Plate: the ring moves, new drops fall, too much dye makes the plate go quiet; best score and a share line.",
-     "since": "2026-10-20T03:43:30+00:00",
-     "done": null,
+     "since": "2026-10-20T03:12:37+00:00",
+     "done": "2026-10-20T03:12:37+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 19,
+     "tokens": 196392,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-20T03:59:03+00:00",
-      "subject": "build: make endless a rising pressure run"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Published Endless to `main` (``); live `rules.js` SHA matches branch: `…`."
     },
     {
      "title": "cymatic true endless",
@@ -2498,16 +2485,16 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 9
+    "done": 10
    },
    "verdict": {
     "date": "2026-10-18",
     "verdict": "ship",
     "note": "Ready; ease the hardest steps"
    },
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
     {
      "at": "2026-10-19T15:21:52+00:00",
@@ -4617,14 +4604,14 @@
    "title": "Fold Guess",
    "line": "Date a real protein structure and its method.",
    "url": "https://chenhsieh.github.io/fold-guess/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/fold-guess-1.webp",
    "firstSeen": "2026-09-20T05:15:49+00:00",
-   "lastChange": "2026-10-20T00:36:03+00:00",
+   "lastChange": "2026-10-20T04:04:09+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -4640,10 +4627,10 @@
    "tasks": [
     {
      "title": "fold guess ship standard",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Bring it to the guessing-game ship standard: archive, practice with difficulty, stats and collection, cleanup, credits.",
-     "since": "2026-10-20T00:36:03+00:00",
+     "since": "2026-10-20T04:02:39+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -4668,8 +4655,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -4774,44 +4761,27 @@
    "title": "Gallery Guess",
    "line": "Place each museum object by country and year.",
    "url": "https://chenhsieh.github.io/gallery-guess/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Codex",
    "priority": "P3",
    "priorityNote": "Story and mechanism pass; pending a merge decision",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/gallery-guess-1.webp",
    "firstSeen": "2026-09-20T13:46:25+00:00",
-   "lastChange": "2026-10-20T04:01:57+00:00",
+   "lastChange": "2026-10-20T04:03:08+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 0,
     "apiRuns": 1,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 177723,
+    "codexUsdEst": 0.21,
     "claudeUsdEst": 0.0,
     "earlierRounds": 6,
     "earlierUsdEst": 21.6,
-    "totalUsdEst": 21.6
+    "totalUsdEst": 21.81
    },
    "tasks": [
-    {
-     "title": "gallery share tiers",
-     "state": "running",
-     "worker": "Codex",
-     "plan": "",
-     "since": "2026-10-20T03:51:46+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-20T03:58:58+00:00",
-      "subject": "feat: keep museum finds across runs"
-     },
-     "result": ""
-    },
     {
      "title": "gallery guess ship standard",
      "state": "queued",
@@ -4841,6 +4811,20 @@
      "result": ""
     },
     {
+     "title": "gallery share tiers",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-20T03:13:11+00:00",
+     "done": "2026-10-20T03:13:11+00:00",
+     "reviewed": false,
+     "minutes": 12,
+     "tokens": 177723,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "- Live: [Gallery Guess](https://chenhsieh.github.io/gallery-guess/) is published; touch-tested at 390 and 320 with no overflow."
+    },
+    {
      "title": "gallery guess core",
      "state": "done",
      "worker": "Claude API",
@@ -4857,9 +4841,9 @@
    ],
    "taskCounts": {
     "queued": 2,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": {
     "date": "2026-10-19",
@@ -4868,6 +4852,12 @@
    },
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T04:03:08+00:00",
+     "ok": true,
+     "note": "Capped share text, permanent time-and-dig ranks and finds; live checked with touch at 390 and 320.",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T02:41:20+00:00",
      "ok": true,
@@ -8935,6 +8925,47 @@
      "source": "board note"
     }
    ]
+  },
+  {
+   "id": "redacxiv",
+   "repo": "redacxiv",
+   "title": "Redacxiv",
+   "line": "Reveal a paper's title with word tiles.",
+   "url": "https://chenhsieh.github.io/redacxiv/",
+   "stage": "live",
+   "who": null,
+   "priority": "P1",
+   "priorityNote": "Interface and visual pass; make the first game winnable for",
+   "shelfNote": "",
+   "image": null,
+   "firstSeen": null,
+   "lastChange": null,
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 0.0,
+    "earlierRounds": 0,
+    "earlierUsdEst": 0.0,
+    "totalUsdEst": 0.0
+   },
+   "tasks": [],
+   "taskCounts": {
+    "queued": 0,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 0
+   },
+   "verdict": {
+    "date": "2026-10-19",
+    "verdict": "ship",
+    "note": "Shippable; final polish and naming"
+   },
+   "needsYou": null,
+   "history": []
   },
   {
    "id": "redline-river",
