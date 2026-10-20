@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T22:55:21+00:00",
+ "generated": "2026-10-20T22:57:34+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -12,36 +12,36 @@
    "Codex": {
     "queued": 0,
     "running": 0,
-    "doneToday": 12,
+    "doneToday": 13,
     "minutes": 0,
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 101,
+    "queued": 100,
     "running": 1,
     "doneToday": 21,
-    "minutes": 1320,
-    "estimateMinutes": 1320
+    "minutes": 1308,
+    "estimateMinutes": 1308
    }
   },
-  "queued": 101,
+  "queued": 100,
   "running": 1,
-  "doneToday": 33,
+  "doneToday": 34,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 1320,
-  "estimatedFinish": "2026-10-21T20:55:21+00:00",
-  "estimateMinutes": 1320
+  "minutesRemaining": 1308,
+  "estimatedFinish": "2026-10-21T20:45:34+00:00",
+  "estimateMinutes": 1308
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "grass-crossword",
-   "task": "grass crossword drag preview logic",
-   "since": "2026-10-20T21:54:26+00:00",
-   "activity": "2026-10-20T22:55:21+00:00",
+   "task": "grass crossword piece legend teaching",
+   "since": "2026-10-20T22:56:23+00:00",
+   "activity": "2026-10-20T22:57:29+00:00",
    "commit": null
   }
  ],
@@ -79,7 +79,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 51
+   "changes": 52
   }
  ],
  "houseRules": 23,
@@ -5616,26 +5616,26 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/grass-crossword-1.webp",
    "firstSeen": "2026-10-16T01:23:04+00:00",
-   "lastChange": "2026-10-20T22:55:21+00:00",
+   "lastChange": "2026-10-20T22:57:29+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 5,
     "claudeRuns": 3,
-    "apiRuns": 0,
+    "apiRuns": 1,
     "codexTokens": 1103279,
     "codexUsdEst": 1.32,
     "claudeUsdEst": 10.8,
-    "earlierRounds": 9,
-    "earlierUsdEst": 32.4,
-    "totalUsdEst": 44.52
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
+    "totalUsdEst": 48.12
    },
    "tasks": [
     {
-     "title": "grass crossword drag preview logic",
+     "title": "grass crossword piece legend teaching",
      "state": "running",
      "worker": "Claude",
-     "plan": "Grass Crossword: make the drag preview plant exactly what it shows, rebuild the grass family levels as real crosswords, thumb-sized answers.",
-     "since": "2026-10-20T21:54:26+00:00",
+     "plan": "Grass Crossword: a drawn mark and length boxes for every grass packet, a first-use example, and a field guide to the grass family.",
+     "since": "2026-10-20T22:56:23+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -5645,18 +5645,18 @@
      "result": ""
     },
     {
-     "title": "grass crossword piece legend teaching",
-     "state": "queued",
-     "worker": "Claude",
-     "plan": "Grass Crossword: a drawn mark and length boxes for every grass packet, a first-use example, and a field guide to the grass family.",
-     "since": "2026-10-20T20:06:42+00:00",
-     "done": null,
+     "title": "grass crossword drag preview logic",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Grass Crossword: make the drag preview plant exactly what it shows, rebuild the grass family levels as real crosswords, thumb-sized answers.",
+     "since": "2026-10-20T20:06:59+00:00",
+     "done": "2026-10-20T20:06:59+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "Grass Crossword: live https://chenhsieh.github.io/grass-crossword/ (main , rollback tag pre-drag-logic-; live bytes of shell/rules/draw/css/html match; live level 17 loads with 5 answers, no console errors, own logo..."
     },
     {
      "title": "grass crossword beds",
@@ -5744,10 +5744,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 8
+    "done": 9
    },
    "verdict": {
     "date": "2026-10-20",
@@ -5757,6 +5757,18 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-20T22:56:19+00:00",
+     "ok": true,
+     "note": "drag preview = drop, beds 14-25 real crosswords, local daily, own logo; live; harness greedy gate advisory",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-20T22:55:24+00:00",
+     "ok": true,
+     "note": "feat: grass family beds are real crosswords and a drag plants what it previews",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-20T02:08:27+00:00",
      "ok": true,
@@ -5815,18 +5827,6 @@
      "at": "2026-10-19T00:26:50+00:00",
      "ok": true,
      "note": "feat: write GRASS across and down on the page",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-17T21:41:35+00:00",
-     "ok": true,
-     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-17T21:23:40+00:00",
-     "ok": true,
-     "note": "fix: holding a button or the board no longer selects text on iPhone",
      "source": "main commit"
     }
    ]
