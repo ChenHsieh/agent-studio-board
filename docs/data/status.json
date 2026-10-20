@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T17:55:53+00:00",
+ "generated": "2026-10-20T17:58:08+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -17,31 +17,31 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 61,
+    "queued": 59,
     "running": 1,
-    "doneToday": 6,
-    "minutes": 888,
-    "estimateMinutes": 888
+    "doneToday": 7,
+    "minutes": 816,
+    "estimateMinutes": 816
    }
   },
-  "queued": 61,
+  "queued": 59,
   "running": 1,
-  "doneToday": 11,
+  "doneToday": 12,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 888,
-  "estimatedFinish": "2026-10-21T08:43:53+00:00",
-  "estimateMinutes": 888
+  "minutesRemaining": 816,
+  "estimatedFinish": "2026-10-21T07:34:08+00:00",
+  "estimateMinutes": 816
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "Multiple games",
-   "task": "dancers not mad proto",
-   "since": null,
-   "activity": null,
+   "game": "UGA-grad-survivor",
+   "task": "uga survivor refine",
+   "since": "2026-10-20T17:57:52+00:00",
+   "activity": "2026-10-20T17:57:52+00:00",
    "commit": null
   }
  ],
@@ -79,7 +79,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 28
+   "changes": 29
   }
  ],
  "houseRules": 23,
@@ -2659,6 +2659,68 @@
      "ok": true,
      "note": "prepost fixes: ; live",
      "source": "board note"
+    }
+   ]
+  },
+  {
+   "id": "dancers-not-mad",
+   "repo": "dancers-not-mad",
+   "title": "Dancers Not Mad",
+   "line": "",
+   "url": "https://chenhsieh.github.io/dancers-not-mad/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "firstSeen": "2026-10-20T17:37:54+00:00",
+   "lastChange": "2026-10-20T17:56:26+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 0.0,
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
+    "totalUsdEst": 14.4
+   },
+   "tasks": [],
+   "taskCounts": {
+    "queued": 0,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 0
+   },
+   "verdict": null,
+   "needsYou": null,
+   "history": [
+    {
+     "at": "2026-10-20T17:56:26+00:00",
+     "ok": true,
+     "note": "prototype live (6 levels, step rings, drum pads with stomp/clap, groove rule, exact best, ghost, daily, bots table); main https://chenhsieh.github.io/dancers-not-mad/",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-20T17:54:52+00:00",
+     "ok": true,
+     "note": "fix: board stays calm until the first hit, counter clear of the rings",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-20T17:49:23+00:00",
+     "ok": true,
+     "note": "feat: Dancers, Not Mad, a solo drum puzzle with six levels",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-20T17:37:54+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
     }
    ]
   },
@@ -14326,33 +14388,33 @@
    "title": "UGA Grad Survivor",
    "line": "Swipe through a PhD.",
    "url": "https://chenhsieh.github.io/UGA-grad-survivor/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/uga-grad-survivor-1.webp",
    "firstSeen": "2026-03-20T20:49:58+00:00",
-   "lastChange": "2026-10-20T16:43:36+00:00",
+   "lastChange": "2026-10-20T17:57:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
     "claudeRuns": 0,
-    "apiRuns": 0,
+    "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 13,
-    "earlierUsdEst": 46.8,
-    "totalUsdEst": 46.8
+    "earlierRounds": 12,
+    "earlierUsdEst": 43.2,
+    "totalUsdEst": 43.2
    },
    "tasks": [
     {
      "title": "uga survivor refine",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Grad Survivor: every run ends with a \"what kind of grad student you are\" badge you can save as an image and share, a one-tap dealt start, shorter cards, a narrator, a badge collection, and the game's own title top left.",
-     "since": "2026-10-20T16:43:36+00:00",
+     "since": "2026-10-20T17:57:52+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -14363,24 +14425,24 @@
     },
     {
      "title": "grad survivor 1in8b",
-     "state": "planned",
-     "worker": "Claude",
+     "state": "done",
+     "worker": "Claude API",
      "plan": "Grad Survivor: a one-tap random start, short runs, and a shareable ending card, open to any grad student.",
      "since": "2026-10-20T03:51:02+00:00",
-     "done": null,
+     "done": "2026-10-20T03:51:02+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "covered by P1a40"
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
-    "waitingDesign": 1,
-    "done": 0
+    "queued": 0,
+    "running": 1,
+    "waitingDesign": 0,
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
