@@ -133,3 +133,28 @@ h2 { font: 600 12px var(--mono); text-transform: uppercase; letter-spacing: 0.08
 .vd.shelf, .vd.try { border: 1px dashed var(--muted); color: var(--muted); }
 .ask { color: var(--accent); font-weight: 600; }
 .fresh a { color: var(--ink); }
+
+/* view switch, priority chips and play links (the controls bar is sticky, so these stay visible on a phone) */
+.views { display: flex; gap: 4px; width: 100%; overflow-x: auto; scrollbar-width: none; }
+.views::-webkit-scrollbar { display: none; }
+.view { flex: 0 0 auto; min-height: 40px; padding: 6px 10px; border: 1px solid var(--ink); background: var(--paper); color: var(--ink); font: 13px var(--mono); white-space: nowrap; }
+.view b { margin-left: 4px; }
+.view[aria-selected="true"] { background: var(--ink); color: var(--paper); }
+.prio-row { display: flex; align-items: center; }
+.prio-row .chip { margin: 0 4px 0 0; min-height: 36px; min-width: 40px; font-size: 12px; }
+.game { position: relative; }
+.game > button.row { padding-right: 64px; }
+.game > button.row .meta { grid-column: 3; }
+.play-link { position: absolute; right: 0; top: 12px; min-width: 52px; min-height: 36px; display: grid; place-items: center; font: 600 13px var(--mono); border: 1px solid var(--ink); background: var(--paper); color: var(--ink); text-decoration: none; }
+.game > button.row .meta { position: absolute; right: 64px; top: 16px; }
+.empty { padding: 24px 0; color: var(--muted); }
+
+.controls { gap: 6px; padding: 6px 0; }
+.controls #q { flex: 1 1 120px; min-width: 0; }
+.tools { display: flex; flex-wrap: wrap; gap: 8px; padding: 8px 0; border-bottom: 1px solid var(--rule); }
+.game > button.row { grid-template-columns: 56px 1fr; padding-right: 0; }
+.game > button.row .name { padding-right: 64px; }
+.game > button.row .meta { position: static; grid-column: 2; text-align: left; display: flex; gap: 6px; align-items: center; }
+.game > button.row .meta .p { display: inline; margin: 0; }
+.game > button.row .line { grid-column: 2; }
+.thumb { grid-row: span 3; }

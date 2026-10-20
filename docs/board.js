@@ -7,7 +7,6 @@ const SOURCES = [
 const REFRESH_MS = 90_000;
 const STAGE_ORDER = { building: 0, review: 1, queued: 2, planning: 3, live: 4, shelf: 5 };
 const FILTERS = {
-  needs: [['yes', 'Needs you']],
   stage: [['building', 'Building'], ['review', 'Review'], ['queued', 'Queued'], ['planning', 'Planning'], ['live', 'Live'], ['shelf', 'Shelf']],
   priority: [['P1', 'P1'], ['P2', 'P2'], ['P3', 'P3'], ['P4', 'P4']],
   verdict: [['ship', 'Ship'], ['revise', 'Revise'], ['shelf', 'Shelf'], ['none', 'None']],
@@ -19,8 +18,34 @@ const usd = (n) => `$${(n || 0).toFixed(n >= 100 ? 0 : 2)}`;
 let data = null;
 const open = new Set(JSON.parse(localStorage.getItem('board.open') || '[]'));
 const savedFilters = JSON.parse(localStorage.getItem('board.filters') || '{}');
-let filters = { needs: [], stage: [], priority: [], verdict: [], worker: [], recent: [], ...savedFilters };
-let choseInitialView = Object.prototype.hasOwnProperty.call(savedFilters, 'needs');
+let filters = { stage: [], priority: [], verdict: [], worker: [], recent: [], ...savedFilters };
+delete filters.needs;
+// The first-row view switch. Needs you is the default; the last choice is remembered.
+const VIEWS = [['needs', 'Needs you'], ['ready', 'Ready to try'], ['progress', 'In progress'], ['shelf', 'Shelf'], ['all', 'All']];
+let view = localStorage.getItem('board.view');
+if (!VIEWS.some(([v]) => v === view)) view = 'needs';
+// Needs you means: a human is the only thing the game is waiting for (the server sets needsYou only when no work is queued).
+const isReady = (g) => g.stage === 'live' && !g.inProgress && (!g.verdict || (g.lastChange && g.verdict.date && g.lastChange.slice(0, 10) > g.verdict.date));
+const IN_VIEW = {
+  needs: (g) => !!g.needsYou,
+  ready: isReady,
+  progress: (g) => !!g.inProgress,
+  shelf: (g) => g.stage === 'shelf',
+  all: () => true,
+};
+// Why a game needs Chen: a new version to play, an open question, or a decision.
+function whyKind(g) {
+  const t = g.needsYou || '';
+  if (/^new version/i.test(t)) return ['version', 'A new version to try'];
+  if (t.includes('?')) return ['question', 'Has an open question'];
+  return ['decision', 'A decision is waiting'];
+}
+const WHY_ORDER = { decision: 0, version: 1, question: 2 };
+function whatToDo(g) {
+  if (g.needsYou) return g.needsYou;
+  if (view === 'ready' && isReady(g)) return 'Play it, then give a verdict: ship, revise or shelf.';
+  return g.priorityNote || g.line || '';
+}
 let sort = localStorage.getItem('board.sort') || 'change';
 
 const $ = (s) => document.querySelector(s);
@@ -42,7 +67,7 @@ function day(iso) {
   return Number.isNaN(t) ? String(iso).slice(0, 10) : new Date(t).toLocaleString([], { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
 }
 function within(iso, hours) { const t = Date.parse(iso || ''); return !Number.isNaN(t) && Date.now() - t <= hours * 3_600_000; }
-function saveChoices() { localStorage.setItem('board.filters', JSON.stringify(filters)); localStorage.setItem('board.sort', sort); }
+function saveChoices() { localStorage.setItem('board.view', view); localStorage.setItem('board.filters', JSON.stringify(filters)); localStorage.setItem('board.sort', sort); }
 
 async function load() {
   for (const url of SOURCES) {
@@ -51,13 +76,6 @@ async function load() {
       if (!r.ok) continue;
       const next = await r.json();
       if (!data || next.generated >= data.generated) data = next;
-      // On a first visit, put a question for Chen ahead of the backlog. Once a
-      // visitor changes the chip, keep that choice through refreshes.
-      if (!choseInitialView && data.games.some((g) => g.needsYou)) {
-        filters.needs = ['yes'];
-        choseInitialView = true;
-        saveChoices();
-      }
       render();
       if (url === SOURCES[0]) return;
     } catch { /* try the next source */ }
@@ -124,8 +142,9 @@ function gameHtml(g) {
   const hist = (g.history || []).map((h) => `<li><time>${esc(day(h.at))}</time>${h.ok ? '' : '<span class="no">not done: </span>'}${esc(h.note)}${h.source ? `<small class="history-source">${esc(h.source)}</small>` : ''}</li>`).join('');
   return `<li class="game${open.has(g.id) ? ' open' : ''}" data-id="${esc(g.id)}">
   <button class="row" aria-expanded="${open.has(g.id)}">${img}<span class="name">${esc(g.title)}</span>
-    <span class="meta"><span class="st ${esc(g.stage)}">${esc(g.stage)}</span>${g.verdict ? `<span class="vd ${esc(g.verdict.verdict)}">${esc(g.verdict.verdict)}</span>` : ''}<span class="p">${esc(g.priority || '')}${g.lastChange ? ' · ' + ago(g.lastChange) : ''}</span></span>
-    <span class="line">${g.needsYou ? '<b class="ask">Needs you:</b> ' + esc(g.needsYou) : esc(g.priorityNote || g.line || '')}<br>${taskCounts(g)}</span></button>
+    <span class="meta"><span class="st ${esc(g.stage)}">${esc(g.stage)}</span>${g.verdict ? `<span class="vd ${esc(g.verdict.verdict)}">${esc(g.verdict.verdict)}</span>` : ''}<span class="p">${esc(g.priority || '')}</span></span>
+    <span class="line">${g.needsYou ? '<b class="ask">To do:</b> ' : ''}${esc(whatToDo(g))}</span></button>
+  <a class="play-link" href="${esc(g.url)}" target="_blank" rel="noopener" aria-label="Play ${esc(g.title)}">Play</a>
   <div class="detail">
     <p class="detail-links"><a href="${esc(g.url)}" target="_blank" rel="noopener">Play</a><a href="${esc(repoUrl)}" target="_blank" rel="noopener">Repo</a></p>
     ${g.line ? `<p>${esc(g.line)}</p>` : ''}
@@ -140,6 +159,10 @@ function gameHtml(g) {
   </div></li>`;
 }
 
+function renderViews() {
+  $('#views').innerHTML = VIEWS.map(([v, label]) => `<button class="view" role="tab" data-view="${v}" aria-selected="${v === view}">${label} <b>${data.games.filter(IN_VIEW[v]).length}</b></button>`).join('');
+}
+
 function renderChips() {
   for (const [group, choices] of Object.entries(FILTERS)) {
     document.querySelector(`[data-chips="${group}"]`).innerHTML = choices.map(([value, label]) => `<button class="chip" data-filter="${group}" data-value="${value}" aria-pressed="${filters[group].includes(value)}">${label}</button>`).join('');
@@ -150,7 +173,6 @@ function renderChips() {
 
 function matches(g) {
   const any = (value, values) => !values.length || values.includes(value);
-  if (filters.needs.includes('yes') && !g.needsYou) return false;
   if (!any(g.stage, filters.stage) || !any(g.priority || 'none', filters.priority) || !any(g.verdict ? g.verdict.verdict : 'none', filters.verdict)) return false;
   if (filters.worker.length && !filters.worker.some((worker) => (g.tasks || []).some((t) => t.worker === worker))) return false;
   if (filters.recent.length && !filters.recent.some((value) => (value === 'arrived' && within(g.firstSeen, 24 * 7)) || (value === 'updated-24' && within(g.lastChange, 24)) || (value === 'updated-7' && within(g.lastChange, 24 * 7)))) return false;
@@ -158,6 +180,7 @@ function matches(g) {
 }
 
 function compare(a, b) {
+  if (view === 'needs') return WHY_ORDER[whyKind(a)[0]] - WHY_ORDER[whyKind(b)[0]] || (a.priority || 'P9').localeCompare(b.priority || 'P9') || (b.lastChange || '').localeCompare(a.lastChange || '');
   if (sort === 'priority') return (a.priority || 'P9').localeCompare(b.priority || 'P9') || (b.lastChange || '').localeCompare(a.lastChange || '');
   if (sort === 'cost') return (b.cost.totalUsdEst || 0) - (a.cost.totalUsdEst || 0) || (b.lastChange || '').localeCompare(a.lastChange || '');
   return (b.lastChange || '').localeCompare(a.lastChange || '') || STAGE_ORDER[a.stage] - STAGE_ORDER[b.stage];
@@ -178,11 +201,20 @@ function render() {
   $('#sort').value = sort;
   renderChips();
   const q = $('#q').value.trim().toLowerCase();
-  const list = data.games.filter((g) => (!q || (g.title + ' ' + g.id + ' ' + (g.line || '')).toLowerCase().includes(q)) && matches(g)).sort(compare);
-  $('#games').innerHTML = list.map(gameHtml).join('') || '<li class="empty">Nothing here right now.</li>';
+  renderViews();
+  const list = data.games.filter((g) => (!q || (g.title + ' ' + g.id + ' ' + (g.line || '')).toLowerCase().includes(q)) && IN_VIEW[view](g) && matches(g)).sort(compare);
+  let html = '', lastGroup = '';
+  for (const g of list) {
+    if (view === 'needs') { const [key, label] = whyKind(g); if (key !== lastGroup) { html += `<li class="prio-h" role="presentation">${label}</li>`; lastGroup = key; } }
+    html += gameHtml(g);
+  }
+  const emptyText = { needs: 'Nothing is waiting for you. Try “Ready to try”.', ready: 'No new version is waiting to be tried.', progress: 'Nothing is queued or running.', shelf: 'The shelf is empty.', all: '' }[view];
+  $('#games').innerHTML = html || `<li class="empty">${emptyText || 'Nothing matches.'}</li>`;
 }
 
 document.addEventListener('click', (e) => {
+  const tab = e.target.closest('[data-view]');
+  if (tab && data) { view = tab.dataset.view; saveChoices(); render(); return; }
   const chip = e.target.closest('.chip');
   if (chip) {
     const { filter, value } = chip.dataset;

@@ -27,7 +27,11 @@
 <section class="tally" id="tally" aria-label="Totals"></section>
 
 <nav class="controls" aria-label="Filter">
-  <div class="quick-filter" data-chips="needs" aria-label="Quick filter"></div>
+  <div class="views" id="views" role="tablist" aria-label="What to show"></div>
+  <input id="q" type="search" placeholder="Find" autocomplete="off" aria-label="Find a game">
+  <div class="prio-row" data-chips="priority" aria-label="Priority"></div>
+</nav>
+<div class="tools">
   <div class="expand" role="group" aria-label="Details">
     <button data-expand="all">Expand all</button><button data-expand="none">Collapse all</button>
   </div>
@@ -35,15 +39,13 @@
     <summary>Filter <span id="filter-count"></span></summary>
     <div class="filter-grid">
       <fieldset><legend>Stage</legend><div data-chips="stage"></div></fieldset>
-      <fieldset><legend>Priority</legend><div data-chips="priority"></div></fieldset>
       <fieldset><legend>Verdict</legend><div data-chips="verdict"></div></fieldset>
       <fieldset><legend>Worker</legend><div data-chips="worker"></div></fieldset>
       <fieldset><legend>Recent</legend><div data-chips="recent"></div></fieldset>
     </div>
   </details>
   <label class="sort">Sort <select id="sort"><option value="change">Last change</option><option value="priority">Priority</option><option value="cost">Cost</option></select></label>
-  <input id="q" type="search" placeholder="Find" autocomplete="off">
-</nav>
+</div>
 
 <ol id="games" class="games"></ol>
 <script src="board.js"></script>
