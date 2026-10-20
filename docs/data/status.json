@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T05:44:00+00:00",
+ "generated": "2026-10-20T05:46:05+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 61,
+    "queued": 60,
     "running": 0,
     "doneToday": 1,
-    "minutes": 2440,
-    "estimateMinutes": 2440
+    "minutes": 2400,
+    "estimateMinutes": 2400
    },
    "Claude": {
     "queued": 2,
@@ -24,25 +24,28 @@
     "estimateMinutes": 180
    }
   },
-  "queued": 63,
+  "queued": 62,
   "running": 1,
   "doneToday": 1,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 2620,
-  "estimatedFinish": "2026-10-21T22:24:00+00:00",
-  "estimateMinutes": 2440
+  "minutesRemaining": 2580,
+  "estimatedFinish": "2026-10-21T21:46:05+00:00",
+  "estimateMinutes": 2400
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "gallery-guess",
-   "task": "gallery guess ship standard",
-   "since": "2026-10-20T05:35:04+00:00",
-   "activity": "2026-10-20T05:43:06+00:00",
-   "commit": null
+   "game": "tractatus-tree",
+   "task": "tractatus tree visible",
+   "since": "2026-10-20T05:45:41+00:00",
+   "activity": "2026-10-20T05:45:46+00:00",
+   "commit": {
+    "at": "2026-10-20T05:45:46+00:00",
+    "subject": "start: Q2g_tractatus-tree-visible"
+   }
   }
  ],
  "codexLanes": 0,
@@ -79,7 +82,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 16
+   "changes": 17
   }
  ],
  "houseRules": 23,
@@ -4851,19 +4854,19 @@
    "title": "Gallery Guess",
    "line": "Place each museum object by country and year.",
    "url": "https://chenhsieh.github.io/gallery-guess/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P3",
    "priorityNote": "Story and mechanism pass; pending a merge decision",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/gallery-guess-1.webp",
    "firstSeen": "2026-09-20T13:46:25+00:00",
-   "lastChange": "2026-10-20T05:43:06+00:00",
+   "lastChange": "2026-10-20T05:45:30+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
     "claudeRuns": 0,
-    "apiRuns": 1,
+    "apiRuns": 2,
     "codexTokens": 177723,
     "codexUsdEst": 0.21,
     "claudeUsdEst": 0.0,
@@ -4872,20 +4875,6 @@
     "totalUsdEst": 25.41
    },
    "tasks": [
-    {
-     "title": "gallery guess ship standard",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Bring it to the guessing-game ship standard: archive, practice with difficulty, stats and collection, cleanup, credits.",
-     "since": "2026-10-20T05:35:04+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "gallery guess docent line",
      "state": "queued",
@@ -4899,6 +4888,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "gallery guess ship standard",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Bring it to the guessing-game ship standard: archive, practice with difficulty, stats and collection, cleanup, credits.",
+     "since": "2026-10-20T03:21:59+00:00",
+     "done": "2026-10-20T03:21:59+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Player sees: a main menu (Today's run, Archive, Practice, Stats, Collection, How to play, small Play Lab link), the brand logo and title top left returning to the menu, one-rule How to play pages (shown on first visit),..."
     },
     {
      "title": "gallery share tiers",
@@ -4931,9 +4934,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": {
     "date": "2026-10-19",
@@ -4942,6 +4945,12 @@
    },
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T05:45:30+00:00",
+     "ok": true,
+     "note": "ship standard: home, archive, practice by department E/M/H, stats, collection, one-rule how-to; cross-links removed; live",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T04:03:08+00:00",
      "ok": true,
@@ -13376,14 +13385,14 @@
    "title": "Tractatus Tree",
    "line": "The numbered pages of a 1921 book are shuffled into a few.",
    "url": "https://chenhsieh.github.io/tractatus-tree/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Teach the philosophy gradually through play, not as homework",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/tractatus-tree-1.webp",
    "firstSeen": "2026-10-16T01:51:20+00:00",
-   "lastChange": "2026-10-20T02:45:26+00:00",
+   "lastChange": "2026-10-20T05:45:46+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -13399,16 +13408,19 @@
    "tasks": [
     {
      "title": "tractatus tree visible",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "",
-     "since": "2026-10-20T02:45:26+00:00",
+     "since": "2026-10-20T05:45:41+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-20T05:45:46+00:00",
+      "subject": "start: Q2g_tractatus-tree-visible"
+     },
      "result": ""
     },
     {
@@ -13441,8 +13453,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
