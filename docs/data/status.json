@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T03:11:02+00:00",
+ "generated": "2026-10-20T03:13:09+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,30 +10,30 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 66,
+    "queued": 67,
     "running": 3,
     "doneToday": 131,
-    "minutes": 2760,
-    "estimateMinutes": 1380
+    "minutes": 2800,
+    "estimateMinutes": 1400
    },
    "Claude": {
     "queued": 0,
-    "running": 1,
-    "doneToday": 37,
-    "minutes": 60,
-    "estimateMinutes": 60
+    "running": 0,
+    "doneToday": 38,
+    "minutes": 0,
+    "estimateMinutes": 0
    }
   },
-  "queued": 66,
-  "running": 4,
-  "doneToday": 168,
+  "queued": 67,
+  "running": 3,
+  "doneToday": 169,
   "lanes": {
    "Codex": 2,
-   "Claude": 1
+   "Claude": 0
   },
-  "minutesRemaining": 2820,
-  "estimatedFinish": "2026-10-21T02:11:02+00:00",
-  "estimateMinutes": 1380
+  "minutesRemaining": 2800,
+  "estimatedFinish": "2026-10-21T02:33:09+00:00",
+  "estimateMinutes": 1400
  },
  "lanes": [
   {
@@ -59,18 +59,10 @@
    "since": null,
    "activity": null,
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "cymatic-plate",
-   "task": "cymatic true endless",
-   "since": "2026-10-20T03:09:25+00:00",
-   "activity": "2026-10-20T03:09:25+00:00",
-   "commit": null
   }
  ],
  "codexLanes": 2,
- "claudeWorkers": 1,
+ "claudeWorkers": 0,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -2361,33 +2353,33 @@
    "title": "Cymatic Plate",
    "line": "Ring notes on a brass plate covered in sand and watch the.",
    "url": "https://chenhsieh.github.io/cymatic-plate/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/cymatic-plate-1.webp",
    "firstSeen": "2026-10-16T01:38:21+00:00",
-   "lastChange": "2026-10-20T03:09:25+00:00",
+   "lastChange": "2026-10-20T03:12:37+00:00",
    "cost": {
     "apiUsd": 3.26,
     "codexRuns": 3,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 1,
     "codexTokens": 500161,
     "codexUsdEst": 0.6,
-    "claudeUsdEst": 14.4,
-    "earlierRounds": 17,
-    "earlierUsdEst": 61.2,
+    "claudeUsdEst": 18.0,
+    "earlierRounds": 16,
+    "earlierUsdEst": 57.6,
     "totalUsdEst": 79.46
    },
    "tasks": [
     {
-     "title": "cymatic true endless",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "A true endless mode for Cymatic Plate: moving targets, new grains dropping in, and a run that ends when the plate overflows.",
-     "since": "2026-10-20T03:09:25+00:00",
+     "title": "cymatic endless build",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "A real endless run for Cymatic Plate: the ring moves, new drops fall, too much dye makes the plate go quiet; best score and a share line.",
+     "since": "2026-10-20T03:12:37+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2395,6 +2387,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "cymatic true endless",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "A true endless mode for Cymatic Plate: moving targets, new grains dropping in, and a run that ends when the plate overflows.",
+     "since": "2026-10-20T03:03:46+00:00",
+     "done": "2026-10-20T03:03:46+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Overflow is \"the plate goes quiet\": dye adds weight, each drop audibly dulls the tone, and at weight 8 the bow draws and nothing sounds. New drops fall every 4/3/2 notes (no clock), drops landing on one cell pool, and..."
     },
     {
      "title": "review of cymatic assist",
@@ -2479,27 +2485,13 @@
      "reviewOutcome": "fixed",
      "commit": null,
      "result": "Soft, note-matched tap tones are live; direct plate pokes get a quieter echo, and Sound remains saved and optional."
-    },
-    {
-     "title": "cymatic depth",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-18T14:44:21+00:00",
-     "done": "2026-10-18T14:44:21+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "What a player sees now: the brass plate has a thick rim lit from the upper left and casts a soft shadow. Each grain of sand casts a tiny shadow, some grains glint, and the shadow slips off while a grain jumps. Play..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 8
+    "done": 9
    },
    "verdict": {
     "date": "2026-10-18",
@@ -3323,8 +3315,8 @@
    },
    "verdict": {
     "date": "2026-10-19",
-    "verdict": "ship",
-    "note": "Ship after share cap and ranks"
+    "verdict": "revise",
+    "note": "Good idea; needs game feel, UI, story, bilingual"
    },
    "needsYou": null,
    "history": [
@@ -4829,7 +4821,11 @@
     "waitingDesign": 0,
     "done": 1
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-10-19",
+    "verdict": "ship",
+    "note": "Ship after ship standard, share cap and ranks"
+   },
    "needsYou": null,
    "history": [
     {
