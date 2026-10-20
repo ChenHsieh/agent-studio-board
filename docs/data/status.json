@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T21:35:09+00:00",
+ "generated": "2026-10-20T21:37:29+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -12,36 +12,36 @@
    "Codex": {
     "queued": 0,
     "running": 0,
-    "doneToday": 8,
+    "doneToday": 9,
     "minutes": 0,
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 91,
+    "queued": 90,
     "running": 1,
     "doneToday": 21,
-    "minutes": 1200,
-    "estimateMinutes": 1200
+    "minutes": 1188,
+    "estimateMinutes": 1188
    }
   },
-  "queued": 91,
+  "queued": 90,
   "running": 1,
-  "doneToday": 29,
+  "doneToday": 30,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 1200,
-  "estimatedFinish": "2026-10-21T17:35:09+00:00",
-  "estimateMinutes": 1200
+  "minutesRemaining": 1188,
+  "estimatedFinish": "2026-10-21T17:25:29+00:00",
+  "estimateMinutes": 1188
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "BioRedactle-nextjs",
-   "task": "redacxiv rename cleanup",
-   "since": "2026-10-20T21:34:03+00:00",
-   "activity": "2026-10-20T21:35:00+00:00",
+   "game": "acrylic-beacon",
+   "task": "acrylic beacon touch smooth",
+   "since": "2026-10-20T21:35:48+00:00",
+   "activity": "2026-10-20T21:37:28+00:00",
    "commit": null
   }
  ],
@@ -79,7 +79,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 47
+   "changes": 48
   }
  ],
  "houseRules": 23,
@@ -90,14 +90,14 @@
    "title": "Acrylic Beacon",
    "line": "Turn a lamp to guide a boat to shore.",
    "url": "https://chenhsieh.github.io/acrylic-beacon/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Strong sea-and-map visual direction: old hand-drawn chart",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/acrylic-beacon-1.webp",
    "firstSeen": "2026-10-15T04:39:21+00:00",
-   "lastChange": "2026-10-20T19:47:26+00:00",
+   "lastChange": "2026-10-20T21:37:28+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -113,10 +113,10 @@
    "tasks": [
     {
      "title": "acrylic beacon touch smooth",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Make Acrylic Beacon touch interaction smooth on phones.",
-     "since": "2026-10-20T19:47:26+00:00",
+     "since": "2026-10-20T21:35:48+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -141,8 +141,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -1109,219 +1109,6 @@
      "ok": true,
      "note": "START job V1=",
      "source": "board note"
-    }
-   ]
-  },
-  {
-   "id": "BioRedactle-nextjs",
-   "repo": "BioRedactle-nextjs",
-   "title": "Bioredactle Nextjs",
-   "line": "",
-   "url": "https://chenhsieh.github.io/BioRedactle-nextjs/",
-   "stage": "building",
-   "who": "Claude",
-   "priority": null,
-   "priorityNote": "",
-   "shelfNote": "",
-   "image": null,
-   "firstSeen": "2026-10-14T20:04:12+00:00",
-   "lastChange": "2026-10-20T21:35:00+00:00",
-   "cost": {
-    "apiUsd": 0.0,
-    "codexRuns": 4,
-    "claudeRuns": 1,
-    "apiRuns": 1,
-    "codexTokens": 1140773,
-    "codexUsdEst": 1.37,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 11,
-    "earlierUsdEst": 39.6,
-    "totalUsdEst": 44.57
-   },
-   "tasks": [
-    {
-     "title": "redacxiv rename cleanup",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Finish the Redacxiv rename: preview image and tags, registry name, links and old-address redirect.",
-     "since": "2026-10-20T21:34:03+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "redacxiv rename",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Rename BioRedactle to Redacxiv and keep old links working.",
-     "since": "2026-10-20T03:00:11+00:00",
-     "done": "2026-10-20T03:00:11+00:00",
-     "reviewed": false,
-     "minutes": 26,
-     "tokens": 457380,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Renamed and published as Redacxiv."
-    },
-    {
-     "title": "bioredactle caps leak",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Stop tile capitalisation from giving away the answer.",
-     "since": "2026-10-20T02:48:43+00:00",
-     "done": "2026-10-20T02:48:43+00:00",
-     "reviewed": false,
-     "minutes": 27,
-     "tokens": 209603,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Tile candidates now use one lowercase style; 30-day fairness coverage checks case, length, order, and styling."
-    },
-    {
-     "title": "bioredactle ship",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "",
-     "since": "2026-10-20T01:37:56+00:00",
-     "done": "2026-10-20T01:37:56+00:00",
-     "reviewed": true,
-     "minutes": 13,
-     "tokens": 271425,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Stats, solved-paper collection, and difficulty practice are live; removed no unreachable legacy panels."
-    },
-    {
-     "title": "bioredactle ship",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "Ship it: tile mode first, difficulty check, name and legal review, a plan to expand beyond biology.",
-     "since": "2026-10-20T00:51:41+00:00",
-     "done": "2026-10-20T00:51:41+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Live unchanged (tiles already the default). Plan written: expert/BioRedactle-nextjs/packages/SHIP_20261019.md (difficulty model: random tapper wins 0.6-1.7%, keep the tile choice; name: keep BioRedactle, Redacxiv if it..."
-    },
-    {
-     "title": "review of BioRedactle nextjs ui pass",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-19T20:53:35+00:00",
-     "done": "2026-10-19T20:53:35+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "BioRedactle nextjs ui pass",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Interface and visual pass; make the first game winnable for a non-academic.",
-     "since": "2026-10-19T17:54:51+00:00",
-     "done": "2026-10-19T17:54:51+00:00",
-     "reviewed": true,
-     "minutes": 20,
-     "tokens": 202365,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Players now see the goal, field, progress, miss budget, and a reachable word choice on small phones."
-    }
-   ],
-   "taskCounts": {
-    "queued": 0,
-    "running": 1,
-    "waitingDesign": 0,
-    "done": 6
-   },
-   "verdict": {
-    "date": "2026-10-20",
-    "verdict": "ship",
-    "note": "Ready; fix preview, name and registry after rename"
-   },
-   "needsYou": null,
-   "history": [
-    {
-     "at": "2026-10-20T03:49:36+00:00",
-     "ok": true,
-     "note": "Document former Pages URL behavior",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T03:43:11+00:00",
-     "ok": false,
-     "note": "Tile answer-cue fix merged and static Pages branch deployed; public URL remains GitHub Pages 404 after propagation checks.",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-20T03:40:00+00:00",
-     "ok": true,
-     "note": "Rename BioRedactle to Redacxiv",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T03:31:56+00:00",
-     "ok": true,
-     "note": "fix: tile labels no longer reveal headline words",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T01:52:00+00:00",
-     "ok": true,
-     "note": "stats, solved-paper collection and archive practice published; real-touch checked at 390 and 320",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-20T01:49:49+00:00",
-     "ok": true,
-     "note": "Add generated puzzles [skip ci]",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T01:49:03+00:00",
-     "ok": true,
-     "note": "feat: add stats, collection and practice",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T01:37:56+00:00",
-     "ok": true,
-     "note": "ship plan + build task B1a",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-19T20:15:59+00:00",
-     "ok": true,
-     "note": "headline target, research-field context, and narrow-phone word tray live; 390x844 and 320x568 real-touch checks reviewed",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-19T20:11:45+00:00",
-     "ok": true,
-     "note": "feat: clarify the headline decision",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-17T23:15:14+00:00",
-     "ok": true,
-     "note": "CREDIT line in both How to play dialogs (Redactle by John Turner, 2022); README already credited; published with scripts/deploy-pages.sh because the Actions run never gets a runner (it also committed generated puzzles ); live gh-pages",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-17T23:13:07+00:00",
-     "ok": true,
-     "note": "Add generated puzzles [skip ci]",
-     "source": "main commit"
     }
    ]
   },
@@ -9846,7 +9633,7 @@
   },
   {
    "id": "redacxiv",
-   "repo": "redacxiv",
+   "repo": "BioRedactle-nextjs",
    "title": "Redacxiv",
    "line": "Reveal a paper's title with word tiles.",
    "url": "https://chenhsieh.github.io/redacxiv/",
@@ -9856,34 +9643,206 @@
    "priorityNote": "Interface and visual pass; make the first game winnable for",
    "shelfNote": "",
    "image": null,
-   "firstSeen": null,
-   "lastChange": null,
+   "firstSeen": "2026-10-14T20:04:12+00:00",
+   "lastChange": "2026-10-20T21:35:48+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
-    "claudeRuns": 0,
-    "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 0,
-    "earlierUsdEst": 0.0,
-    "totalUsdEst": 0.0
+    "codexRuns": 4,
+    "claudeRuns": 1,
+    "apiRuns": 2,
+    "codexTokens": 1140773,
+    "codexUsdEst": 1.37,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
+    "totalUsdEst": 44.57
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "redacxiv rename cleanup",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Finish the Redacxiv rename: preview image and tags, registry name, links and old-address redirect.",
+     "since": "2026-10-20T19:47:26+00:00",
+     "done": "2026-10-20T19:47:26+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Redacxiv: live https://chenhsieh.github.io/redacxiv/ . Most of the rename was already in the code (title, og, twitter, site name, saves migrated, logo+title top-left with no hub link). Changed: link preview image is now..."
+    },
+    {
+     "title": "redacxiv rename",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "Rename BioRedactle to Redacxiv and keep old links working.",
+     "since": "2026-10-20T03:00:11+00:00",
+     "done": "2026-10-20T03:00:11+00:00",
+     "reviewed": false,
+     "minutes": 26,
+     "tokens": 457380,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Renamed and published as Redacxiv."
+    },
+    {
+     "title": "bioredactle caps leak",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "Stop tile capitalisation from giving away the answer.",
+     "since": "2026-10-20T02:48:43+00:00",
+     "done": "2026-10-20T02:48:43+00:00",
+     "reviewed": false,
+     "minutes": 27,
+     "tokens": 209603,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Tile candidates now use one lowercase style; 30-day fairness coverage checks case, length, order, and styling."
+    },
+    {
+     "title": "bioredactle ship",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-20T01:37:56+00:00",
+     "done": "2026-10-20T01:37:56+00:00",
+     "reviewed": true,
+     "minutes": 13,
+     "tokens": 271425,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Stats, solved-paper collection, and difficulty practice are live; removed no unreachable legacy panels."
+    },
+    {
+     "title": "bioredactle ship",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Ship it: tile mode first, difficulty check, name and legal review, a plan to expand beyond biology.",
+     "since": "2026-10-20T00:51:41+00:00",
+     "done": "2026-10-20T00:51:41+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Live unchanged (tiles already the default). Plan written: expert/BioRedactle-nextjs/packages/SHIP_20261019.md (difficulty model: random tapper wins 0.6-1.7%, keep the tile choice; name: keep BioRedactle, Redacxiv if it..."
+    },
+    {
+     "title": "review of BioRedactle nextjs ui pass",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-19T20:53:35+00:00",
+     "done": "2026-10-19T20:53:35+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "BioRedactle nextjs ui pass",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "Interface and visual pass; make the first game winnable for a non-academic.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
+     "reviewed": true,
+     "minutes": 20,
+     "tokens": 202365,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Players now see the goal, field, progress, miss budget, and a reachable word choice on small phones."
+    }
+   ],
    "taskCounts": {
     "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 7
    },
    "verdict": {
     "date": "2026-10-19",
     "verdict": "ship",
     "note": "Shippable; final polish and naming"
    },
-   "needsYou": null,
-   "history": []
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "history": [
+    {
+     "at": "2026-10-20T21:35:48+00:00",
+     "ok": true,
+     "note": "og image 1200x630 fresh, registry name; old-URL redirect not done (needs new repo)",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-20T03:49:36+00:00",
+     "ok": true,
+     "note": "Document former Pages URL behavior",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-20T03:43:11+00:00",
+     "ok": false,
+     "note": "Tile answer-cue fix merged and static Pages branch deployed; public URL remains GitHub Pages 404 after propagation checks.",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-20T03:40:00+00:00",
+     "ok": true,
+     "note": "Rename BioRedactle to Redacxiv",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-20T03:31:56+00:00",
+     "ok": true,
+     "note": "fix: tile labels no longer reveal headline words",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-20T01:52:00+00:00",
+     "ok": true,
+     "note": "stats, solved-paper collection and archive practice published; real-touch checked at 390 and 320",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-20T01:49:49+00:00",
+     "ok": true,
+     "note": "Add generated puzzles [skip ci]",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-20T01:49:03+00:00",
+     "ok": true,
+     "note": "feat: add stats, collection and practice",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-20T01:37:56+00:00",
+     "ok": true,
+     "note": "ship plan + build task B1a",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-19T20:15:59+00:00",
+     "ok": true,
+     "note": "headline target, research-field context, and narrow-phone word tray live; 390x844 and 320x568 real-touch checks reviewed",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-19T20:11:45+00:00",
+     "ok": true,
+     "note": "feat: clarify the headline decision",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-17T23:15:14+00:00",
+     "ok": true,
+     "note": "CREDIT line in both How to play dialogs (Redactle by John Turner, 2022); README already credited; published with scripts/deploy-pages.sh because the Actions run never gets a runner (it also committed generated puzzles ); live gh-pages",
+     "source": "board note"
+    }
+   ]
   },
   {
    "id": "redline-river",
