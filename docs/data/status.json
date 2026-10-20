@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T03:06:48+00:00",
+ "generated": "2026-10-20T03:08:55+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 67,
+    "queued": 66,
     "running": 3,
-    "doneToday": 130,
-    "minutes": 2800,
-    "estimateMinutes": 1400
+    "doneToday": 131,
+    "minutes": 2760,
+    "estimateMinutes": 1380
    },
    "Claude": {
     "queued": 1,
@@ -24,29 +24,18 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 68,
+  "queued": 67,
   "running": 3,
-  "doneToday": 167,
+  "doneToday": 168,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2860,
-  "estimatedFinish": "2026-10-21T02:26:48+00:00",
-  "estimateMinutes": 1400
+  "minutesRemaining": 2820,
+  "estimatedFinish": "2026-10-21T02:08:55+00:00",
+  "estimateMinutes": 1380
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "thumb-stand",
-   "task": "thumb stand polish",
-   "since": "2026-10-20T02:42:00+00:00",
-   "activity": "2026-10-20T03:06:44+00:00",
-   "commit": {
-    "at": "2026-10-20T02:43:00+00:00",
-    "subject": "start: B2a3_thumb-stand-polish"
-   }
-  },
   {
    "worker": "Codex",
    "game": "Multiple games",
@@ -60,7 +49,15 @@
    "game": "colony-count",
    "task": "colony shapes regions study",
    "since": "2026-10-20T02:17:29+00:00",
-   "activity": "2026-10-20T03:03:25+00:00",
+   "activity": "2026-10-20T03:08:02+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Codex",
+   "game": "play-lab",
+   "task": "playlab front redesign",
+   "since": null,
+   "activity": null,
    "commit": null
   }
  ],
@@ -1743,7 +1740,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-20T03:06:30+00:00",
+   "lastChange": "2026-10-20T03:08:02+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
@@ -12682,43 +12679,40 @@
    "title": "Thumb Stand",
    "line": "",
    "url": "https://chenhsieh.github.io/thumb-stand/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Fix the level 3 block, then push the visual toward the",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/thumb-stand-1.webp",
    "firstSeen": "2026-10-15T23:29:31+00:00",
-   "lastChange": "2026-10-20T03:06:44+00:00",
+   "lastChange": "2026-10-20T03:07:40+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 3,
+    "codexRuns": 4,
     "claudeRuns": 1,
     "apiRuns": 0,
-    "codexTokens": 612765,
-    "codexUsdEst": 0.74,
+    "codexTokens": 846882,
+    "codexUsdEst": 1.02,
     "claudeUsdEst": 3.6,
     "earlierRounds": 17,
     "earlierUsdEst": 61.2,
-    "totalUsdEst": 65.54
+    "totalUsdEst": 65.82
    },
    "tasks": [
     {
      "title": "thumb stand polish",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "",
-     "since": "2026-10-20T02:42:00+00:00",
-     "done": null,
+     "since": "2026-10-20T02:24:55+00:00",
+     "done": "2026-10-20T02:24:55+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 27,
+     "tokens": 234117,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-20T02:43:00+00:00",
-      "subject": "start: B2a3_thumb-stand-polish"
-     },
-     "result": ""
+     "commit": null,
+     "result": "Published successfully."
     },
     {
      "title": "thumb stand finish",
@@ -12779,13 +12773,19 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": null,
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-20T03:07:40+00:00",
+     "ok": true,
+     "note": "feat: make the mantis room readable and touchable",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-20T02:21:51+00:00",
      "ok": true,
@@ -12851,12 +12851,6 @@
      "ok": true,
      "note": "Today locked until levels 1-3 are solved; Mystery card tile fits at 320 px; live",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-18T06:47:29+00:00",
-     "ok": true,
-     "note": "fix: unlock Today after the opening lessons and fit the mystery card",
-     "source": "main commit"
     }
    ]
   },
