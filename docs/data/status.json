@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T00:12:15+00:00",
+ "generated": "2026-10-20T00:14:19+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -12,58 +12,58 @@
    "Codex": {
     "queued": 50,
     "running": 2,
-    "doneToday": 54,
+    "doneToday": 55,
     "minutes": 2010,
     "estimateMinutes": 1005
    },
    "Claude": {
-    "queued": 5,
+    "queued": 4,
     "running": 1,
-    "doneToday": 31,
-    "minutes": 360,
-    "estimateMinutes": 360
+    "doneToday": 32,
+    "minutes": 300,
+    "estimateMinutes": 300
    }
   },
-  "queued": 55,
+  "queued": 54,
   "running": 3,
-  "doneToday": 85,
+  "doneToday": 87,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2370,
-  "estimatedFinish": "2026-10-20T16:57:15+00:00",
+  "minutesRemaining": 2310,
+  "estimatedFinish": "2026-10-20T16:59:19+00:00",
   "estimateMinutes": 1005
  },
  "lanes": [
   {
    "worker": "Codex",
-   "game": "dynasty-guess",
-   "task": "dynasty guess build",
-   "since": "2026-10-20T00:09:42+00:00",
-   "activity": "2026-10-20T00:11:57+00:00",
+   "game": "grass-crossword",
+   "task": "grass crossword build",
+   "since": "2026-10-20T00:11:56+00:00",
+   "activity": "2026-10-20T00:14:10+00:00",
    "commit": {
-    "at": "2026-10-20T00:10:24+00:00",
-    "subject": "start: B2b_dynasty-guess-build"
+    "at": "2026-10-20T00:12:50+00:00",
+    "subject": "start: B2c_grass-crossword-build"
    }
   },
   {
    "worker": "Codex",
-   "game": "grass-crossword",
-   "task": "grass crossword build",
-   "since": "2026-10-20T00:11:56+00:00",
-   "activity": "2026-10-20T00:12:15+00:00",
+   "game": "matchmaker-chat",
+   "task": "matchmaker chat build",
+   "since": "2026-10-20T00:13:37+00:00",
+   "activity": "2026-10-20T00:14:19+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
-   "game": "matchmaker-chat",
-   "task": "matchmaker chat wingmen",
-   "since": "2026-10-20T00:11:03+00:00",
-   "activity": "2026-10-20T00:11:05+00:00",
+   "game": "zoom-out",
+   "task": "zoom out beauty",
+   "since": "2026-10-20T00:12:45+00:00",
+   "activity": "2026-10-20T00:12:46+00:00",
    "commit": {
-    "at": "2026-10-20T00:11:05+00:00",
-    "subject": "start: P2c00d_matchmaker-chat-wingmen"
+    "at": "2026-10-20T00:12:46+00:00",
+    "subject": "start: P2c00e_zoom-out-beauty"
    }
   }
  ],
@@ -97,7 +97,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 70
+   "changes": 72
   }
  ],
  "houseRules": 21,
@@ -2079,42 +2079,39 @@
    "title": "Dynasty Guess",
    "line": "Place a museum object in its period.",
    "url": "https://chenhsieh.github.io/dynasty-guess/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Fix the missing object, then refine mechanism, story and",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/dynasty-guess-1.webp",
    "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-20T00:11:57+00:00",
+   "lastChange": "2026-10-20T00:20:00+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 1,
+    "codexRuns": 2,
     "claudeRuns": 1,
     "apiRuns": 0,
-    "codexTokens": 187968,
-    "codexUsdEst": 0.23,
+    "codexTokens": 305015,
+    "codexUsdEst": 0.37,
     "claudeUsdEst": 3.6,
     "earlierRounds": 0,
     "earlierUsdEst": 0.0,
-    "totalUsdEst": 3.83
+    "totalUsdEst": 3.97
    },
    "tasks": [
     {
      "title": "dynasty guess build",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "",
-     "since": "2026-10-20T00:09:42+00:00",
-     "done": null,
+     "since": "2026-10-20T00:08:44+00:00",
+     "done": "2026-10-20T00:08:44+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 4,
+     "tokens": 117047,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-20T00:10:24+00:00",
-      "subject": "start: B2b_dynasty-guess-build"
-     },
+     "commit": null,
      "result": ""
     },
     {
@@ -2147,8 +2144,13 @@
     }
    ],
    "verdict": null,
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-20T00:20:00+00:00",
+     "ok": false,
+     "note": "Met Collection API and object pages block this runtime (403/429), including mandatory Met 48841 and 42091; no substitute deck was used"
+    },
     {
      "at": "2026-10-20T00:08:51+00:00",
      "ok": true,
@@ -3252,7 +3254,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/grass-crossword-1.webp",
    "firstSeen": "2026-10-16T01:41:42+00:00",
-   "lastChange": "2026-10-20T00:12:15+00:00",
+   "lastChange": "2026-10-20T00:14:10+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -3277,7 +3279,10 @@
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-20T00:12:50+00:00",
+      "subject": "start: B2c_grass-crossword-build"
+     },
      "result": ""
     },
     {
@@ -4350,42 +4355,53 @@
    "line": "Auntie sends a photo of a boy, then picture clues one.",
    "url": "https://chenhsieh.github.io/matchmaker-chat/",
    "stage": "building",
-   "who": "Claude",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Turn the rival-wingmen idea into a visual arms-race puzzle",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/matchmaker-chat-1.webp",
    "firstSeen": "2026-10-15T21:39:26+00:00",
-   "lastChange": "2026-10-20T00:11:05+00:00",
+   "lastChange": "2026-10-20T00:14:19+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 1,
     "codexTokens": 200226,
     "codexUsdEst": 0.24,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 5,
     "earlierUsdEst": 18.0,
-    "totalUsdEst": 18.24
+    "totalUsdEst": 21.84
    },
    "tasks": [
     {
-     "title": "matchmaker chat wingmen",
+     "title": "matchmaker chat build",
      "state": "running",
-     "worker": "Claude",
+     "worker": "Codex",
      "plan": "",
-     "since": "2026-10-20T00:11:03+00:00",
+     "since": "2026-10-20T00:13:37+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-20T00:11:05+00:00",
-      "subject": "start: P2c00d_matchmaker-chat-wingmen"
-     },
+     "commit": null,
      "result": ""
+    },
+    {
+     "title": "matchmaker chat wingmen",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-19T23:59:29+00:00",
+     "done": "2026-10-19T23:59:29+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Brief: expert/matchmaker-chat/packages/BRIEF_20261019.md (party floor; Jo's habit card evolves level by level; routes kept as dance charts)."
     },
     {
      "title": "matchmaker chat arms race",
@@ -4419,6 +4435,11 @@
    "verdict": null,
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T00:12:40+00:00",
+     "ok": true,
+     "note": "design brief (wingmen dance floor) + build task B2d"
+    },
     {
      "at": "2026-10-19T22:45:21+00:00",
      "ok": true,
@@ -8479,14 +8500,14 @@
    "title": "Zoom Out",
    "line": "",
    "url": "https://chenhsieh.github.io/zoom-out/",
-   "stage": "planning",
+   "stage": "building",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Circular scale story (molecule to universe, butterfly",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-16T00:50:51+00:00",
-   "lastChange": "2026-10-19T23:59:29+00:00",
+   "lastChange": "2026-10-20T00:12:46+00:00",
    "cost": {
     "apiUsd": 7.14,
     "codexRuns": 1,
@@ -8502,16 +8523,19 @@
    "tasks": [
     {
      "title": "zoom out beauty",
-     "state": "planned",
+     "state": "running",
      "worker": "Claude",
      "plan": "",
-     "since": "2026-10-19T23:59:29+00:00",
+     "since": "2026-10-20T00:12:45+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-20T00:12:46+00:00",
+      "subject": "start: P2c00e_zoom-out-beauty"
+     },
      "result": ""
     },
     {
