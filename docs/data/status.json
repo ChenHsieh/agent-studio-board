@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T04:27:26+00:00",
+ "generated": "2026-10-20T04:29:34+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,11 +10,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 64,
+    "queued": 63,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2560,
-    "estimateMinutes": 2560
+    "minutes": 2520,
+    "estimateMinutes": 2520
    },
    "Claude": {
     "queued": 2,
@@ -24,16 +24,16 @@
     "estimateMinutes": 240
    }
   },
-  "queued": 66,
+  "queued": 65,
   "running": 2,
   "doneToday": 0,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 2800,
-  "estimatedFinish": "2026-10-21T23:07:26+00:00",
-  "estimateMinutes": 2560
+  "minutesRemaining": 2760,
+  "estimatedFinish": "2026-10-21T22:29:34+00:00",
+  "estimateMinutes": 2520
  },
  "lanes": [
   {
@@ -46,10 +46,10 @@
   },
   {
    "worker": "Claude",
-   "game": "bluebook-guess",
-   "task": "bluebook guess ship standard",
-   "since": "2026-10-20T04:23:59+00:00",
-   "activity": "2026-10-20T04:24:29+00:00",
+   "game": "rna-hero",
+   "task": "rna hero knots port",
+   "since": "2026-10-20T04:29:02+00:00",
+   "activity": "2026-10-20T04:29:09+00:00",
    "commit": null
   }
  ],
@@ -87,7 +87,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 4
+   "changes": 5
   }
  ],
  "houseRules": 23,
@@ -1394,19 +1394,19 @@
    "title": "Bluebook Guess",
    "line": "Place a US Air Force case file in time and place.",
    "url": "https://chenhsieh.github.io/bluebook-guess/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P4",
    "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/bluebook-guess-1.webp",
    "firstSeen": "2026-09-20T20:57:49+00:00",
-   "lastChange": "2026-10-20T04:24:29+00:00",
+   "lastChange": "2026-10-20T04:28:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
     "claudeRuns": 0,
-    "apiRuns": 0,
+    "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
@@ -1417,28 +1417,34 @@
    "tasks": [
     {
      "title": "bluebook guess ship standard",
-     "state": "running",
-     "worker": "Claude",
+     "state": "done",
+     "worker": "Claude API",
      "plan": "Bring it to the guessing-game ship standard: archive, practice with difficulty, stats and collection, cleanup, credits.",
-     "since": "2026-10-20T04:23:59+00:00",
-     "done": null,
+     "since": "2026-10-20T00:32:22+00:00",
+     "done": "2026-10-20T00:32:22+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "Player sees: menu with Daily (3 case files, local midnight), Archive, Practice (Easy prints state abbreviations and three periods; Medium plain map; Hard country outline only; 5 themed sets), Stats and a case drawer..."
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-20T04:28:56+00:00",
+     "ok": true,
+     "note": "ship standard: daily 3/day, archive, practice E/M/H + 5 sets, stats, case drawer; neutral ids; 5 bad cases dropped; live",
+     "source": "board note"
+    },
     {
      "at": "2026-10-15T14:25:42+00:00",
      "ok": true,
@@ -2355,8 +2361,8 @@
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/cymatic-plate-1.webp",
-   "firstSeen": "2026-10-16T01:38:21+00:00",
-   "lastChange": "2026-10-20T03:12:37+00:00",
+   "firstSeen": "2026-10-16T01:40:04+00:00",
+   "lastChange": "2026-10-20T04:00:45+00:00",
    "cost": {
     "apiUsd": 3.26,
     "codexRuns": 4,
@@ -2497,6 +2503,12 @@
    "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
     {
+     "at": "2026-10-20T04:00:45+00:00",
+     "ok": true,
+     "note": "feat: make Endless a moving pressure run",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-19T15:21:52+00:00",
      "ok": true,
      "note": "review R19: published Codex branch (assist ring removed, all levels open)",
@@ -2561,12 +2573,6 @@
      "ok": true,
      "note": "feat: notes answer with a soft tap tone",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-18T15:06:30+00:00",
-     "ok": true,
-     "note": "depth pass live (main ): thick lit brass rim + plate shadow, sand grains cast shadows/glints, solve tips plate up to a 3/4 view on its stand with the bow before the card (reduced motion cuts), solved sound = the bowed last note, Levels is a shelf of 3/4",
-     "source": "board note"
     }
    ]
   },
@@ -9547,14 +9553,14 @@
    "title": "RNA Hero",
    "line": "Zip an RNA strand into its best fold.",
    "url": "https://chenhsieh.github.io/rna-hero/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/rna-hero-1.webp",
    "firstSeen": "2026-08-20T15:44:40+00:00",
-   "lastChange": "2026-10-20T02:47:15+00:00",
+   "lastChange": "2026-10-20T04:29:09+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -9570,10 +9576,10 @@
    "tasks": [
     {
      "title": "rna hero knots port",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "",
-     "since": "2026-10-20T02:47:15+00:00",
+     "since": "2026-10-20T04:29:02+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -9626,8 +9632,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
