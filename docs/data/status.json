@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T03:15:16+00:00",
+ "generated": "2026-10-20T03:17:24+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -12,38 +12,30 @@
    "Codex": {
     "queued": 67,
     "running": 3,
-    "doneToday": 131,
+    "doneToday": 132,
     "minutes": 2800,
     "estimateMinutes": 1400
    },
    "Claude": {
     "queued": 0,
-    "running": 1,
-    "doneToday": 38,
-    "minutes": 60,
-    "estimateMinutes": 60
+    "running": 0,
+    "doneToday": 39,
+    "minutes": 0,
+    "estimateMinutes": 0
    }
   },
   "queued": 67,
-  "running": 4,
-  "doneToday": 169,
+  "running": 3,
+  "doneToday": 171,
   "lanes": {
    "Codex": 2,
-   "Claude": 1
+   "Claude": 0
   },
-  "minutesRemaining": 2860,
-  "estimatedFinish": "2026-10-21T02:35:16+00:00",
+  "minutesRemaining": 2800,
+  "estimatedFinish": "2026-10-21T02:37:24+00:00",
   "estimateMinutes": 1400
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "Multiple games",
-   "task": "brand and local daily",
-   "since": null,
-   "activity": null,
-   "commit": null
-  },
   {
    "worker": "Codex",
    "game": "colony-count",
@@ -61,16 +53,16 @@
    "commit": null
   },
   {
-   "worker": "Claude",
-   "game": "dynasty-guess",
-   "task": "dynasty game feel",
-   "since": "2026-10-20T03:13:24+00:00",
-   "activity": "2026-10-20T03:14:46+00:00",
+   "worker": "Codex",
+   "game": "BioRedactle-nextjs",
+   "task": "bioredactle caps leak",
+   "since": "2026-10-20T03:16:41+00:00",
+   "activity": "2026-10-20T03:17:24+00:00",
    "commit": null
   }
  ],
  "codexLanes": 2,
- "claudeWorkers": 1,
+ "claudeWorkers": 0,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -99,7 +91,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 144
+   "changes": 145
   }
  ],
  "houseRules": 23,
@@ -1106,14 +1098,14 @@
    "title": "BioRedactle",
    "line": "Reveal a paper's title with word tiles.",
    "url": "https://chenhsieh.github.io/BioRedactle-nextjs/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/bioredactle-1.webp",
    "firstSeen": "2026-10-04T09:34:01+00:00",
-   "lastChange": "2026-10-20T03:00:11+00:00",
+   "lastChange": "2026-10-20T03:17:24+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -1128,11 +1120,11 @@
    },
    "tasks": [
     {
-     "title": "redacxiv rename",
-     "state": "queued",
+     "title": "bioredactle caps leak",
+     "state": "running",
      "worker": "Codex",
-     "plan": "Rename BioRedactle to Redacxiv and keep old links working.",
-     "since": "2026-10-20T03:00:11+00:00",
+     "plan": "Stop tile capitalisation from giving away the answer.",
+     "since": "2026-10-20T03:16:41+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1142,11 +1134,11 @@
      "result": ""
     },
     {
-     "title": "bioredactle caps leak",
+     "title": "redacxiv rename",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Stop tile capitalisation from giving away the answer.",
-     "since": "2026-10-20T02:48:43+00:00",
+     "plan": "Rename BioRedactle to Redacxiv and keep old links working.",
+     "since": "2026-10-20T03:00:11+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1213,8 +1205,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 4
    },
@@ -3209,33 +3201,33 @@
    "title": "Dynasty Guess",
    "line": "Place a museum object in its period.",
    "url": "https://chenhsieh.github.io/dynasty-guess/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Fix the missing object, then refine mechanism, story and",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/dynasty-guess-1.webp",
    "firstSeen": "2026-09-20T06:03:01+00:00",
-   "lastChange": "2026-10-20T03:14:46+00:00",
+   "lastChange": "2026-10-20T03:17:05+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 445311,
     "codexUsdEst": 0.53,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 10,
     "earlierUsdEst": 36.0,
-    "totalUsdEst": 40.13
+    "totalUsdEst": 43.73
    },
    "tasks": [
     {
-     "title": "dynasty game feel",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Make Dynasty Guess feel like a game: fix the workroom button, explain every label, a story, clearer era labels, English and Chinese.",
-     "since": "2026-10-20T03:13:24+00:00",
+     "title": "dynasty gamefeel build",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Dynasty Guess as a night-shift game: a tour route of lit cases, limited gloves for looking at bases, an upright cabinet readable on phones, and English or Chinese.",
+     "since": "2026-10-20T03:17:05+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -3249,7 +3241,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Bring it to the guessing-game ship standard: archive, practice with difficulty, stats and collection, cleanup, credits.",
-     "since": "2026-10-20T01:48:05+00:00",
+     "since": "2026-10-20T03:16:48+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -3257,6 +3249,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "dynasty game feel",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Make Dynasty Guess feel like a game: fix the workroom button, explain every label, a story, clearer era labels, English and Chinese.",
+     "since": "2026-10-20T03:13:21+00:00",
+     "done": "2026-10-20T03:13:21+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Live now (, touch-tested on the live page at 390 and 320): the Workroom button returns to the opening screen, and the Dynasty mark and title at top left replace the Play Lab link."
     },
     {
      "title": "dynasty guess build finish",
@@ -3316,10 +3322,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 1,
+    "queued": 2,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": {
     "date": "2026-10-19",
@@ -3328,6 +3334,12 @@
    },
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T03:16:48+00:00",
+     "ok": true,
+     "note": "Workroom button fixed, brand top-left replaces the Play Lab link (live ); game-feel build queued as P2a24b",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T00:49:56+00:00",
      "ok": true,
@@ -3392,12 +3404,6 @@
      "at": "2026-09-20T06:47:45+00:00",
      "ok": true,
      "note": "Record the harvest race, and correct the previous commit message",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-20T06:46:37+00:00",
-     "ok": true,
-     "note": "Deck to 110 objects, all ten periods represented",
      "source": "main commit"
     }
    ]
