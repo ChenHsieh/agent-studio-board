@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T03:25:50+00:00",
+ "generated": "2026-10-20T03:27:57+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,30 +10,30 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 67,
+    "queued": 66,
     "running": 3,
-    "doneToday": 132,
-    "minutes": 2800,
-    "estimateMinutes": 1400
+    "doneToday": 133,
+    "minutes": 2760,
+    "estimateMinutes": 1380
    },
    "Claude": {
     "queued": 0,
-    "running": 0,
+    "running": 1,
     "doneToday": 39,
-    "minutes": 0,
-    "estimateMinutes": 0
+    "minutes": 60,
+    "estimateMinutes": 60
    }
   },
-  "queued": 67,
-  "running": 3,
-  "doneToday": 171,
+  "queued": 66,
+  "running": 4,
+  "doneToday": 172,
   "lanes": {
    "Codex": 2,
-   "Claude": 0
+   "Claude": 1
   },
-  "minutesRemaining": 2800,
-  "estimatedFinish": "2026-10-21T02:45:50+00:00",
-  "estimateMinutes": 1400
+  "minutesRemaining": 2820,
+  "estimatedFinish": "2026-10-21T02:27:57+00:00",
+  "estimateMinutes": 1380
  },
  "lanes": [
   {
@@ -41,15 +41,7 @@
    "game": "colony-count",
    "task": "colony shapes regions study",
    "since": "2026-10-20T02:17:29+00:00",
-   "activity": "2026-10-20T03:22:24+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Codex",
-   "game": "play-lab",
-   "task": "playlab front redesign",
-   "since": null,
-   "activity": null,
+   "activity": "2026-10-20T03:26:44+00:00",
    "commit": null
   },
   {
@@ -57,15 +49,31 @@
    "game": "BioRedactle-nextjs",
    "task": "bioredactle caps leak",
    "since": "2026-10-20T03:16:41+00:00",
-   "activity": "2026-10-20T03:25:41+00:00",
+   "activity": "2026-10-20T03:27:54+00:00",
    "commit": {
-    "at": "2026-10-20T03:17:54+00:00",
-    "subject": "start: caps leak"
+    "at": "2026-10-20T03:27:21+00:00",
+    "subject": "wip: protect tile clues"
    }
+  },
+  {
+   "worker": "Codex",
+   "game": "BioRedactle-nextjs",
+   "task": "redacxiv rename",
+   "since": "2026-10-20T03:26:04+00:00",
+   "activity": "2026-10-20T03:27:45+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "walls-have-ears",
+   "task": "walls next spin",
+   "since": "2026-10-20T03:26:42+00:00",
+   "activity": "2026-10-20T03:27:03+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 2,
- "claudeWorkers": 0,
+ "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -1108,7 +1116,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/bioredactle-1.webp",
    "firstSeen": "2026-10-04T09:34:01+00:00",
-   "lastChange": "2026-10-20T03:25:41+00:00",
+   "lastChange": "2026-10-20T03:27:54+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -1123,6 +1131,20 @@
    },
    "tasks": [
     {
+     "title": "redacxiv rename",
+     "state": "running",
+     "worker": "Codex",
+     "plan": "Rename BioRedactle to Redacxiv and keep old links working.",
+     "since": "2026-10-20T03:26:04+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
      "title": "bioredactle caps leak",
      "state": "running",
      "worker": "Codex",
@@ -1134,23 +1156,9 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-20T03:17:54+00:00",
-      "subject": "start: caps leak"
+      "at": "2026-10-20T03:27:21+00:00",
+      "subject": "wip: protect tile clues"
      },
-     "result": ""
-    },
-    {
-     "title": "redacxiv rename",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Rename BioRedactle to Redacxiv and keep old links working.",
-     "since": "2026-10-20T03:00:11+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
      "result": ""
     },
     {
@@ -1211,8 +1219,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 1,
+    "queued": 0,
+    "running": 2,
     "waitingDesign": 0,
     "done": 4
    },
@@ -1746,7 +1754,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-20T03:22:24+00:00",
+   "lastChange": "2026-10-20T03:26:44+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
@@ -13970,14 +13978,14 @@
    "title": "Walls Have Ears",
    "line": "Wish for tea and find which piece is listening.",
    "url": "https://chenhsieh.github.io/walls-have-ears/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Hotel key-cabinet level grid grouped by mechanism, and a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/walls-have-ears-1.webp",
    "firstSeen": "2026-10-15T19:49:23+00:00",
-   "lastChange": "2026-10-20T01:45:20+00:00",
+   "lastChange": "2026-10-20T03:27:03+00:00",
    "cost": {
     "apiUsd": 17.73,
     "codexRuns": 3,
@@ -13991,6 +13999,20 @@
     "totalUsdEst": 115.56
    },
    "tasks": [
+    {
+     "title": "walls next spin",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Walls Have Ears: daily fix, living hotel props, a hallway layout, and a deeper next chapter with windows and different hotels.",
+     "since": "2026-10-20T03:26:42+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "walls have ears key cabinet",
      "state": "done",
@@ -14092,7 +14114,7 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 7
    },
