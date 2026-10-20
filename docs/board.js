@@ -25,11 +25,13 @@ const VIEWS = [['needs', 'Needs you'], ['ready', 'Ready to try'], ['progress', '
 let view = localStorage.getItem('board.view');
 if (!VIEWS.some(([v]) => v === view)) view = 'needs';
 // Needs you means: a human is the only thing the game is waiting for (the server sets needsYou only when no work is queued).
-const isReady = (g) => g.stage === 'live' && !g.inProgress && (!g.verdict || (g.lastChange && g.verdict.date && g.lastChange.slice(0, 10) > g.verdict.date));
+// inProgress comes from the server; older data files derive it from the task counts.
+const inProg = (g) => g.inProgress ?? (((g.taskCounts || {}).queued || 0) + ((g.taskCounts || {}).running || 0) > 0);
+const isReady = (g) => g.stage === 'live' && !inProg(g) && (!g.verdict || (g.lastChange && g.verdict.date && g.lastChange.slice(0, 10) > g.verdict.date));
 const IN_VIEW = {
   needs: (g) => !!g.needsYou,
   ready: isReady,
-  progress: (g) => !!g.inProgress,
+  progress: (g) => !!inProg(g),
   shelf: (g) => g.stage === 'shelf',
   all: () => true,
 };
