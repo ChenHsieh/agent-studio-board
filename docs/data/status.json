@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T00:14:19+00:00",
+ "generated": "2026-10-20T00:16:22+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -17,22 +17,22 @@
     "estimateMinutes": 1005
    },
    "Claude": {
-    "queued": 4,
+    "queued": 5,
     "running": 1,
     "doneToday": 32,
-    "minutes": 300,
-    "estimateMinutes": 300
+    "minutes": 360,
+    "estimateMinutes": 360
    }
   },
-  "queued": 54,
+  "queued": 55,
   "running": 3,
   "doneToday": 87,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2310,
-  "estimatedFinish": "2026-10-20T16:59:19+00:00",
+  "minutesRemaining": 2370,
+  "estimatedFinish": "2026-10-20T17:01:22+00:00",
   "estimateMinutes": 1005
  },
  "lanes": [
@@ -41,7 +41,7 @@
    "game": "grass-crossword",
    "task": "grass crossword build",
    "since": "2026-10-20T00:11:56+00:00",
-   "activity": "2026-10-20T00:14:10+00:00",
+   "activity": "2026-10-20T00:14:54+00:00",
    "commit": {
     "at": "2026-10-20T00:12:50+00:00",
     "subject": "start: B2c_grass-crossword-build"
@@ -52,15 +52,18 @@
    "game": "matchmaker-chat",
    "task": "matchmaker chat build",
    "since": "2026-10-20T00:13:37+00:00",
-   "activity": "2026-10-20T00:14:19+00:00",
-   "commit": null
+   "activity": "2026-10-20T00:16:16+00:00",
+   "commit": {
+    "at": "2026-10-20T00:14:28+00:00",
+    "subject": "start: B2d_matchmaker-chat-build"
+   }
   },
   {
    "worker": "Claude",
    "game": "zoom-out",
    "task": "zoom out beauty",
    "since": "2026-10-20T00:12:45+00:00",
-   "activity": "2026-10-20T00:12:46+00:00",
+   "activity": "2026-10-20T00:16:08+00:00",
    "commit": {
     "at": "2026-10-20T00:12:46+00:00",
     "subject": "start: P2c00e_zoom-out-beauty"
@@ -1032,14 +1035,14 @@
    "title": "Colony Count",
    "line": "Solve three daily levels, then freeze finished plates.",
    "url": "https://chenhsieh.github.io/colony-count/",
-   "stage": "live",
-   "who": null,
+   "stage": "planning",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Flagship; has its own owner",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-19T07:58:59+00:00",
+   "lastChange": "2026-10-20T00:15:08+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
@@ -1053,6 +1056,20 @@
     "totalUsdEst": 62.48
    },
    "tasks": [
+    {
+     "title": "colony count new mechanism",
+     "state": "planned",
+     "worker": "Claude",
+     "plan": "A new kind of deduction for Colony Count, taught on its own plate in a new tier, with every plate proven to have one answer.",
+     "since": "2026-10-20T00:15:08+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "colony hints hard",
      "state": "done",
@@ -3254,7 +3271,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/grass-crossword-1.webp",
    "firstSeen": "2026-10-16T01:41:42+00:00",
-   "lastChange": "2026-10-20T00:14:10+00:00",
+   "lastChange": "2026-10-20T00:14:54+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -4361,7 +4378,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/matchmaker-chat-1.webp",
    "firstSeen": "2026-10-15T21:39:26+00:00",
-   "lastChange": "2026-10-20T00:14:19+00:00",
+   "lastChange": "2026-10-20T00:16:16+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -4386,7 +4403,10 @@
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-20T00:14:28+00:00",
+      "subject": "start: B2d_matchmaker-chat-build"
+     },
      "result": ""
     },
     {
@@ -8507,7 +8527,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-16T00:50:51+00:00",
-   "lastChange": "2026-10-20T00:12:46+00:00",
+   "lastChange": "2026-10-20T00:16:08+00:00",
    "cost": {
     "apiUsd": 7.14,
     "codexRuns": 1,
