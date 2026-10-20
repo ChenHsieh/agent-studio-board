@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T00:10:12+00:00",
+ "generated": "2026-10-20T00:12:15+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -11,29 +11,29 @@
   "workers": {
    "Codex": {
     "queued": 50,
-    "running": 1,
+    "running": 2,
     "doneToday": 54,
-    "minutes": 1970,
-    "estimateMinutes": 985
+    "minutes": 2010,
+    "estimateMinutes": 1005
    },
    "Claude": {
-    "queued": 6,
+    "queued": 5,
     "running": 1,
-    "doneToday": 30,
-    "minutes": 420,
-    "estimateMinutes": 420
+    "doneToday": 31,
+    "minutes": 360,
+    "estimateMinutes": 360
    }
   },
-  "queued": 56,
-  "running": 2,
-  "doneToday": 84,
+  "queued": 55,
+  "running": 3,
+  "doneToday": 85,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2390,
-  "estimatedFinish": "2026-10-20T16:35:12+00:00",
-  "estimateMinutes": 985
+  "minutesRemaining": 2370,
+  "estimatedFinish": "2026-10-20T16:57:15+00:00",
+  "estimateMinutes": 1005
  },
  "lanes": [
   {
@@ -41,18 +41,29 @@
    "game": "dynasty-guess",
    "task": "dynasty guess build",
    "since": "2026-10-20T00:09:42+00:00",
-   "activity": "2026-10-20T00:10:12+00:00",
+   "activity": "2026-10-20T00:11:57+00:00",
+   "commit": {
+    "at": "2026-10-20T00:10:24+00:00",
+    "subject": "start: B2b_dynasty-guess-build"
+   }
+  },
+  {
+   "worker": "Codex",
+   "game": "grass-crossword",
+   "task": "grass crossword build",
+   "since": "2026-10-20T00:11:56+00:00",
+   "activity": "2026-10-20T00:12:15+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
-   "game": "grass-crossword",
-   "task": "grass crossword garden",
-   "since": "2026-10-20T00:08:51+00:00",
-   "activity": "2026-10-20T00:08:52+00:00",
+   "game": "matchmaker-chat",
+   "task": "matchmaker chat wingmen",
+   "since": "2026-10-20T00:11:03+00:00",
+   "activity": "2026-10-20T00:11:05+00:00",
    "commit": {
-    "at": "2026-10-20T00:08:56+00:00",
-    "subject": "start: P2c00c_grass-crossword-garden"
+    "at": "2026-10-20T00:11:05+00:00",
+    "subject": "start: P2c00d_matchmaker-chat-wingmen"
    }
   }
  ],
@@ -86,7 +97,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 69
+   "changes": 70
   }
  ],
  "houseRules": 21,
@@ -2075,7 +2086,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/dynasty-guess-1.webp",
    "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-20T00:10:12+00:00",
+   "lastChange": "2026-10-20T00:11:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -2100,7 +2111,10 @@
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-20T00:10:24+00:00",
+      "subject": "start: B2b_dynasty-guess-build"
+     },
      "result": ""
     },
     {
@@ -3232,42 +3246,53 @@
    "line": "A crossword dug into a garden bed, where every answer is.",
    "url": "https://chenhsieh.github.io/grass-crossword/",
    "stage": "building",
-   "who": "Claude",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Varied handwriting, more levels, a daily, and a harder late",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/grass-crossword-1.webp",
    "firstSeen": "2026-10-16T01:41:42+00:00",
-   "lastChange": "2026-10-20T00:08:52+00:00",
+   "lastChange": "2026-10-20T00:12:15+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 0,
     "codexTokens": 510167,
     "codexUsdEst": 0.61,
-    "claudeUsdEst": 7.2,
+    "claudeUsdEst": 10.8,
     "earlierRounds": 2,
     "earlierUsdEst": 7.2,
-    "totalUsdEst": 15.01
+    "totalUsdEst": 18.61
    },
    "tasks": [
     {
-     "title": "grass crossword garden",
+     "title": "grass crossword build",
      "state": "running",
-     "worker": "Claude",
+     "worker": "Codex",
      "plan": "",
-     "since": "2026-10-20T00:08:51+00:00",
+     "since": "2026-10-20T00:11:56+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-20T00:08:56+00:00",
-      "subject": "start: P2c00c_grass-crossword-garden"
-     },
+     "commit": null,
      "result": ""
+    },
+    {
+     "title": "grass crossword garden",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-19T23:59:29+00:00",
+     "done": "2026-10-19T23:59:29+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Brief: expert/grass-crossword/packages/BRIEF_20261019.md (the grass family: SOD, TURF, MEADOW, BAMBOO... with seed packets; beds 1-13 unchanged)."
     },
     {
      "title": "grass crossword depth",
@@ -3333,6 +3358,11 @@
    },
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T00:10:58+00:00",
+     "ok": true,
+     "note": "design brief (grass family lexicon) + build task B2c"
+    },
     {
      "at": "2026-10-19T22:01:54+00:00",
      "ok": false,
@@ -4319,14 +4349,14 @@
    "title": "Matchmaker Chat",
    "line": "Auntie sends a photo of a boy, then picture clues one.",
    "url": "https://chenhsieh.github.io/matchmaker-chat/",
-   "stage": "planning",
+   "stage": "building",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Turn the rival-wingmen idea into a visual arms-race puzzle",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/matchmaker-chat-1.webp",
    "firstSeen": "2026-10-15T21:39:26+00:00",
-   "lastChange": "2026-10-19T23:59:29+00:00",
+   "lastChange": "2026-10-20T00:11:05+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -4342,16 +4372,19 @@
    "tasks": [
     {
      "title": "matchmaker chat wingmen",
-     "state": "planned",
+     "state": "running",
      "worker": "Claude",
      "plan": "",
-     "since": "2026-10-19T23:59:29+00:00",
+     "since": "2026-10-20T00:11:03+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-20T00:11:05+00:00",
+      "subject": "start: P2c00d_matchmaker-chat-wingmen"
+     },
      "result": ""
     },
     {
