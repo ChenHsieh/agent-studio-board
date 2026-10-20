@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T03:45:02+00:00",
+ "generated": "2026-10-20T03:49:18+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -11,10 +11,10 @@
   "workers": {
    "Codex": {
     "queued": 68,
-    "running": 3,
-    "doneToday": 134,
-    "minutes": 2840,
-    "estimateMinutes": 1420
+    "running": 2,
+    "doneToday": 135,
+    "minutes": 2800,
+    "estimateMinutes": 1400
    },
    "Claude": {
     "queued": 1,
@@ -25,31 +25,23 @@
    }
   },
   "queued": 69,
-  "running": 4,
-  "doneToday": 173,
+  "running": 3,
+  "doneToday": 174,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2960,
-  "estimatedFinish": "2026-10-21T03:25:02+00:00",
-  "estimateMinutes": 1420
+  "minutesRemaining": 2920,
+  "estimatedFinish": "2026-10-21T03:09:18+00:00",
+  "estimateMinutes": 1400
  },
  "lanes": [
   {
    "worker": "Codex",
-   "game": "colony-count",
-   "task": "colony shapes regions study",
-   "since": "2026-10-20T02:17:29+00:00",
-   "activity": "2026-10-20T03:41:43+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Codex",
-   "game": "redacxiv",
+   "game": "BioRedactle-nextjs",
    "task": "redacxiv rename",
    "since": "2026-10-20T03:26:04+00:00",
-   "activity": "2026-10-20T03:44:55+00:00",
+   "activity": "2026-10-20T03:49:13+00:00",
    "commit": null
   },
   {
@@ -57,7 +49,7 @@
    "game": "cymatic-plate",
    "task": "cymatic endless build",
    "since": "2026-10-20T03:43:30+00:00",
-   "activity": "2026-10-20T03:45:02+00:00",
+   "activity": "2026-10-20T03:49:12+00:00",
    "commit": {
     "at": "2026-10-20T03:44:30+00:00",
     "subject": "start: P1a22b_cymatic-endless-build"
@@ -102,7 +94,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 148
+   "changes": 149
   }
  ],
  "houseRules": 23,
@@ -1104,12 +1096,11 @@
    ]
   },
   {
-   "id": "redacxiv",
-   "repo": "redacxiv",
-   "title": "Redacxiv",
-   "line": "Reveal a paper's title with word tiles. Formerly BioRedactle; its old Pages address redirects here.",
-   "url": "https://chenhsieh.github.io/redacxiv/",
-   "redirectFrom": "https://chenhsieh.github.io/BioRedactle-nextjs/",
+   "id": "bioredactle",
+   "repo": "BioRedactle-nextjs",
+   "title": "BioRedactle",
+   "line": "Reveal a paper's title with word tiles.",
+   "url": "https://chenhsieh.github.io/BioRedactle-nextjs/",
    "stage": "building",
    "who": "Codex",
    "priority": null,
@@ -1117,7 +1108,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/bioredactle-1.webp",
    "firstSeen": "2026-10-05T10:15:34+00:00",
-   "lastChange": "2026-10-20T03:44:55+00:00",
+   "lastChange": "2026-10-20T03:49:13+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -1135,7 +1126,7 @@
      "title": "redacxiv rename",
      "state": "running",
      "worker": "Codex",
-     "plan": "Rename Redacxiv and keep the former links working.",
+     "plan": "Rename BioRedactle to Redacxiv and keep old links working.",
      "since": "2026-10-20T03:26:04+00:00",
      "done": null,
      "reviewed": false,
@@ -1146,7 +1137,7 @@
      "result": ""
     },
     {
-     "title": "redacxiv caps leak",
+     "title": "bioredactle caps leak",
      "state": "done",
      "worker": "Codex",
      "plan": "Stop tile capitalisation from giving away the answer.",
@@ -1160,7 +1151,7 @@
      "result": "Tile candidates now use one lowercase style; 30-day fairness coverage checks case, length, order, and styling."
     },
     {
-     "title": "redacxiv ship",
+     "title": "bioredactle ship",
      "state": "done",
      "worker": "Codex",
      "plan": "",
@@ -1745,19 +1736,19 @@
    "title": "Colony Count",
    "line": "Solve three daily levels, then freeze finished plates.",
    "url": "https://chenhsieh.github.io/colony-count/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Flagship; has its own owner",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-20T03:44:03+00:00",
+   "lastChange": "2026-10-20T03:47:13+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
     "claudeRuns": 2,
-    "apiRuns": 5,
+    "apiRuns": 6,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 7.2,
@@ -1766,20 +1757,6 @@
     "totalUsdEst": 112.88
    },
    "tasks": [
-    {
-     "title": "colony shapes regions study",
-     "state": "running",
-     "worker": "Codex",
-     "plan": "Prototype divided-dish regions, a round dish and a hexagon grid for Colony Count; measure which add real new thinking.",
-     "since": "2026-10-20T02:17:29+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "colony unlock themes",
      "state": "done",
@@ -1793,6 +1770,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Colony Count: five sets to unlock, hats for the animals, seasonal offers, and a colourful share text. Live on main (https://chenhsieh.github.io/colony-count/). The served app.js, faces.js and style.css match the built..."
+    },
+    {
+     "title": "colony shapes regions study",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Prototype divided-dish regions, a round dish and a hexagon grid for Colony Count; measure which add real new thinking.",
+     "since": "2026-10-20T02:09:23+00:00",
+     "done": "2026-10-20T02:09:23+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Design study, prototype only, not published. Write-up with screenshots: pipeline/expert/colony-count/packages/SHAPES_REGIONS_20261019.md, pictures in packages/shapes_20261019/. The shipped engine, frozen plates and..."
     },
     {
      "title": "colony count new mechanism",
@@ -1881,22 +1872,34 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 7
+    "done": 8
    },
    "verdict": {
     "date": "2026-10-18",
     "verdict": "ship",
     "note": "Ready; harder tiers and clearer hints next"
    },
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-20T03:47:13+00:00",
+     "ok": true,
+     "note": "write-up expert/colony-count/packages/SHAPES_REGIONS_20261019.md",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T03:44:03+00:00",
      "ok": true,
      "note": "Sets round 2 after review: natural shapes, real-food colours, colour-blind marks (Shapes setting), 14 hats per colour incl. seasonal costumes, glances; main , live checked; previews play-lab",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-20T03:41:43+00:00",
+     "ok": true,
+     "note": "feat: sets redrawn with their own shapes and colours, colour-blind marks, 14 hats picked per colour, glances",
+     "source": "main commit"
     },
     {
      "at": "2026-10-20T03:06:30+00:00",
@@ -1950,18 +1953,6 @@
      "at": "2026-10-18T07:40:26+00:00",
      "ok": true,
      "note": "cc-r4- live : Zoom button in the plate corner when squares are under 34 px (320x568 10x10 Hard daily 24->44 px, plate scrolls in its frame, clues pinned, tap places one colony, drag only scrolls, Fit returns); kitten solve now a clearly visible",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-18T07:38:45+00:00",
-     "ok": true,
-     "note": "feat:",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-18T07:19:47+00:00",
-     "ok": true,
-     "note": "cc-r3- live : new Bare spots tier after Expert (8x8, 24 plates; a number on an empty square counts colonies of any colour touching it), one-rule card + How to play page + tap/hint text; independent counter",
      "source": "board note"
     }
    ]
@@ -2372,7 +2363,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/cymatic-plate-1.webp",
    "firstSeen": "2026-10-16T01:38:21+00:00",
-   "lastChange": "2026-10-20T03:45:02+00:00",
+   "lastChange": "2026-10-20T03:49:12+00:00",
    "cost": {
     "apiUsd": 3.26,
     "codexRuns": 3,
