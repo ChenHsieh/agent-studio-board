@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T19:12:33+00:00",
+ "generated": "2026-10-20T19:14:50+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -17,31 +17,31 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 70,
+    "queued": 72,
     "running": 1,
-    "doneToday": 7,
-    "minutes": 948,
-    "estimateMinutes": 948
+    "doneToday": 8,
+    "minutes": 972,
+    "estimateMinutes": 972
    }
   },
-  "queued": 70,
+  "queued": 72,
   "running": 1,
-  "doneToday": 13,
+  "doneToday": 14,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 948,
-  "estimatedFinish": "2026-10-21T11:00:33+00:00",
-  "estimateMinutes": 948
+  "minutesRemaining": 972,
+  "estimatedFinish": "2026-10-21T11:26:50+00:00",
+  "estimateMinutes": 972
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "UGA-grad-survivor",
-   "task": "uga badges plain and visual",
-   "since": "2026-10-20T19:01:10+00:00",
-   "activity": "2026-10-20T19:12:24+00:00",
+   "game": "colony-count",
+   "task": "colony incubator study",
+   "since": "2026-10-20T19:13:49+00:00",
+   "activity": "2026-10-20T19:13:55+00:00",
    "commit": null
   }
  ],
@@ -79,7 +79,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 30
+   "changes": 31
   }
  ],
  "houseRules": 23,
@@ -1733,14 +1733,14 @@
    "title": "Colony Count",
    "line": "Solve three daily levels, then freeze finished plates.",
    "url": "https://chenhsieh.github.io/colony-count/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P1",
    "priorityNote": "Flagship; has its own owner",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-20T19:00:06+00:00",
+   "lastChange": "2026-10-20T19:13:55+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
@@ -1756,10 +1756,10 @@
    "tasks": [
     {
      "title": "colony incubator study",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Colony Count study 1: Incubator living-plate mode.",
-     "since": "2026-10-20T19:00:06+00:00",
+     "since": "2026-10-20T19:13:49+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1868,8 +1868,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 8
    },
@@ -3364,7 +3364,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/dynasty-guess-1.webp",
    "firstSeen": "2026-09-20T06:03:01+00:00",
-   "lastChange": "2026-10-20T18:59:29+00:00",
+   "lastChange": "2026-10-20T19:12:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -3379,11 +3379,53 @@
    },
    "tasks": [
     {
+     "title": "dynasty views harvest",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Dynasty Guess: keep every museum photo of each object (side, inside, base) and its Chinese title, sorted by what each photo shows.",
+     "since": "2026-10-20T19:12:56+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "dynasty gloves bot",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Dynasty Guess: check with bots that spending gloves carefully beats spending them freely, and re-pick the objects for the glove cases.",
+     "since": "2026-10-20T19:12:56+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "dynasty cabinet build",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Dynasty Guess: a cabinet of drawers with the oldest era at the bottom, the object held large in your hands, a reveal that shows what turning it told you, and a share card.",
+     "since": "2026-10-20T19:12:56+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
      "title": "dynasty guess ship standard",
      "state": "queued",
      "worker": "Claude",
      "plan": "Bring it to the guessing-game ship standard: archive, practice with difficulty, stats and collection, cleanup, credits.",
-     "since": "2026-10-20T18:59:29+00:00",
+     "since": "2026-10-20T19:12:56+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -3447,24 +3489,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Brief: expert/dynasty-guess/packages/BRIEF_20261019.md (storeroom shelf, nine era slots, one tell per level, copies that lie; deck switched to CC0 Cleveland + Met images vendored)."
-    },
-    {
-     "title": "dynasty guess fix object",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Fix the missing object, then refine mechanism, story and interface.",
-     "since": "2026-10-19T17:54:51+00:00",
-     "done": "2026-10-19T17:54:51+00:00",
-     "reviewed": false,
-     "minutes": 13,
-     "tokens": 187968,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Museum objects now remain visible when the archive blocks images, with a 0/4 target shown first."
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 4,
     "running": 0,
     "waitingDesign": 0,
     "done": 5
@@ -14388,40 +14416,40 @@
    "title": "UGA Grad Survivor",
    "line": "Swipe through a PhD.",
    "url": "https://chenhsieh.github.io/UGA-grad-survivor/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/uga-grad-survivor-1.webp",
    "firstSeen": "2026-03-20T21:08:56+00:00",
-   "lastChange": "2026-10-20T19:12:24+00:00",
+   "lastChange": "2026-10-20T19:13:43+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 13,
     "earlierUsdEst": 46.8,
-    "totalUsdEst": 46.8
+    "totalUsdEst": 50.4
    },
    "tasks": [
     {
      "title": "uga badges plain and visual",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Make badge names plain English plus Traditional Chinese and give each badge its own drawn visual.",
-     "since": "2026-10-20T19:01:10+00:00",
-     "done": null,
+     "since": "2026-10-20T19:00:06+00:00",
+     "done": "2026-10-20T19:00:06+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "LIVE https://chenhsieh.github.io/UGA-grad-survivor/ (main ; rollback tag pre-badges-plain). Live bytes match for i18n.js, badge-art.js, r/mind-body/card.png."
     },
     {
      "title": "grad survivor 1in8b",
@@ -14440,13 +14468,19 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": null,
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-20T19:13:43+00:00",
+     "ok": true,
+     "note": "plain badge names, Traditional Chinese switch, 20 drawn badge scenes; main https://chenhsieh.github.io/UGA-grad-survivor/",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T18:27:09+00:00",
      "ok": true,
@@ -14511,12 +14545,6 @@
      "at": "2026-03-20T22:09:22+00:00",
      "ok": true,
      "note": "feat: add simulation-v2.ipynb with v0.8 mechanics",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-03-20T21:21:51+00:00",
-     "ok": true,
-     "note": "docs: add v0.8 changelog entry",
      "source": "main commit"
     }
    ]
