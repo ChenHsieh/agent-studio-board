@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T05:52:29+00:00",
+ "generated": "2026-10-20T05:54:38+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -18,38 +18,26 @@
    },
    "Claude": {
     "queued": 2,
-    "running": 1,
+    "running": 0,
     "doneToday": 0,
-    "minutes": 180,
-    "estimateMinutes": 180
+    "minutes": 120,
+    "estimateMinutes": 120
    }
   },
   "queued": 62,
-  "running": 1,
+  "running": 0,
   "doneToday": 1,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 2580,
-  "estimatedFinish": "2026-10-21T21:52:29+00:00",
+  "minutesRemaining": 2520,
+  "estimatedFinish": "2026-10-21T21:54:38+00:00",
   "estimateMinutes": 2400
  },
- "lanes": [
-  {
-   "worker": "Claude",
-   "game": "tractatus-tree",
-   "task": "tractatus tree visible",
-   "since": "2026-10-20T05:45:41+00:00",
-   "activity": "2026-10-20T05:45:46+00:00",
-   "commit": {
-    "at": "2026-10-20T05:45:46+00:00",
-    "subject": "start: Q2g_tractatus-tree-visible"
-   }
-  }
- ],
+ "lanes": [],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 0,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -82,7 +70,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 17
+   "changes": 18
   }
  ],
  "houseRules": 23,
@@ -13385,19 +13373,19 @@
    "title": "Tractatus Tree",
    "line": "The numbered pages of a 1921 book are shuffled into a few.",
    "url": "https://chenhsieh.github.io/tractatus-tree/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Teach the philosophy gradually through play, not as homework",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/tractatus-tree-1.webp",
    "firstSeen": "2026-10-16T01:51:20+00:00",
-   "lastChange": "2026-10-20T05:45:46+00:00",
+   "lastChange": "2026-10-20T05:54:28+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
     "claudeRuns": 0,
-    "apiRuns": 1,
+    "apiRuns": 2,
     "codexTokens": 230129,
     "codexUsdEst": 0.28,
     "claudeUsdEst": 0.0,
@@ -13408,20 +13396,17 @@
    "tasks": [
     {
      "title": "tractatus tree visible",
-     "state": "running",
-     "worker": "Claude",
+     "state": "done",
+     "worker": "Claude API",
      "plan": "",
-     "since": "2026-10-20T05:45:41+00:00",
-     "done": null,
+     "since": "2026-10-20T02:45:26+00:00",
+     "done": "2026-10-20T02:45:26+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-20T05:45:46+00:00",
-      "subject": "start: Q2g_tractatus-tree-visible"
-     },
-     "result": ""
+     "commit": null,
+     "result": "A player sees every page of every stack: the top page full size and each page under it as a 20 px strip above it with its number in the book face (a 4-page stack fits the board, no inner scroll needed on any of the 15..."
     },
     {
      "title": "tractatus mechanism",
@@ -13454,13 +13439,19 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": null,
-   "needsYou": null,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
    "history": [
+    {
+     "at": "2026-10-20T05:54:28+00:00",
+     "ok": true,
+     "note": "every pile page visible (fan strips), waits-for arrow, best not par, footnote; live",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T01:51:28+00:00",
      "ok": true,
@@ -13525,12 +13516,6 @@
      "at": "2026-10-16T02:13:20+00:00",
      "ok": true,
      "note": "feat: grow a shuffled book's numbered pages back onto its tree",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-16T01:51:20+00:00",
-     "ok": true,
-     "note": "Initial commit",
      "source": "main commit"
     }
    ]
