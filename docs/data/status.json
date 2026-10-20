@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T02:03:12+00:00",
+ "generated": "2026-10-20T02:05:20+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,30 +10,30 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 60,
-    "running": 2,
+    "queued": 61,
+    "running": 3,
     "doneToday": 73,
-    "minutes": 2410,
-    "estimateMinutes": 1205
+    "minutes": 2490,
+    "estimateMinutes": 1245
    },
    "Claude": {
-    "queued": 3,
-    "running": 2,
-    "doneToday": 34,
-    "minutes": 300,
-    "estimateMinutes": 300
+    "queued": 2,
+    "running": 1,
+    "doneToday": 36,
+    "minutes": 180,
+    "estimateMinutes": 180
    }
   },
   "queued": 63,
   "running": 4,
-  "doneToday": 107,
+  "doneToday": 109,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2710,
-  "estimatedFinish": "2026-10-20T22:08:12+00:00",
-  "estimateMinutes": 1205
+  "minutesRemaining": 2670,
+  "estimatedFinish": "2026-10-20T22:50:20+00:00",
+  "estimateMinutes": 1245
  },
  "lanes": [
   {
@@ -41,7 +41,7 @@
    "game": "thumb-stand",
    "task": "thumb stand finish",
    "since": "2026-10-20T01:51:49+00:00",
-   "activity": "2026-10-20T02:03:08+00:00",
+   "activity": "2026-10-20T02:04:54+00:00",
    "commit": null
   },
   {
@@ -49,7 +49,7 @@
    "game": "grass-crossword",
    "task": "grass crossword beds",
    "since": "2026-10-20T01:52:07+00:00",
-   "activity": "2026-10-20T02:03:01+00:00",
+   "activity": "2026-10-20T02:05:03+00:00",
    "commit": {
     "at": "2026-10-20T01:52:51+00:00",
     "subject": "start: B2c3_grass-crossword-beds"
@@ -64,19 +64,19 @@
    "commit": null
   },
   {
-   "worker": "Claude",
-   "game": "readable-nonsense",
-   "task": "readable nonsense ama",
-   "since": "2026-10-20T02:02:28+00:00",
-   "activity": "2026-10-20T02:02:30+00:00",
+   "worker": "Codex",
+   "game": "server-stress",
+   "task": "server stress datacenter",
+   "since": "2026-10-20T02:04:40+00:00",
+   "activity": "2026-10-20T02:04:41+00:00",
    "commit": {
-    "at": "2026-10-20T02:02:30+00:00",
-    "subject": "start: P2c00g_readable-nonsense-ama"
+    "at": "2026-10-20T02:04:41+00:00",
+    "subject": "start: P2c13_server-stress-datacenter"
    }
   }
  ],
  "codexLanes": 2,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -105,7 +105,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 88
+   "changes": 90
   }
  ],
  "houseRules": 23,
@@ -506,33 +506,33 @@
    "title": "Anechoic Fugue",
    "line": "Place speakers so the sleeper's chair goes quiet.",
    "url": "https://chenhsieh.github.io/anechoic-fugue/",
-   "stage": "planning",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Decide the physical model and its on-screen readout, choose",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/anechoic-fugue-1.webp",
    "firstSeen": "2026-10-15T18:08:35+00:00",
-   "lastChange": "2026-10-20T01:21:50+00:00",
+   "lastChange": "2026-10-20T02:04:32+00:00",
    "cost": {
     "apiUsd": 17.97,
     "codexRuns": 2,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 3,
     "codexTokens": 373040,
     "codexUsdEst": 0.45,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 19,
     "earlierUsdEst": 68.4,
-    "totalUsdEst": 90.42
+    "totalUsdEst": 94.02
    },
    "tasks": [
     {
      "title": "anechoic depth",
-     "state": "planned",
-     "worker": "Claude",
+     "state": "queued",
+     "worker": "Codex",
      "plan": "",
-     "since": "2026-10-20T01:21:50+00:00",
+     "since": "2026-10-20T02:04:32+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -540,6 +540,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "anechoic depth",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-20T01:21:50+00:00",
+     "done": "2026-10-20T01:21:50+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Brief: expert/anechoic-fugue/packages/DEPTH_20261019.md: koi only on lily rings (parity becomes a property of the ring, not a free choice), 12-level ladder of distinct decisions."
     },
     {
      "title": "anechoic publish review",
@@ -627,14 +641,20 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
-    "waitingDesign": 1,
-    "done": 6
+    "waitingDesign": 0,
+    "done": 7
    },
    "verdict": null,
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T02:04:32+00:00",
+     "ok": true,
+     "note": "depth brief + build B2i",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T01:21:50+00:00",
      "ok": true,
@@ -700,12 +720,6 @@
      "ok": true,
      "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-17T21:32:32+00:00",
-     "ok": true,
-     "note": "fix: holding a button or the board no longer selects text on iPhone",
-     "source": "main commit"
     }
    ]
   },
@@ -1043,7 +1057,7 @@
    "priorityNote": "",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/bioredactle-1.webp",
-   "firstSeen": "2026-10-02T09:35:25+00:00",
+   "firstSeen": "2026-10-04T09:34:01+00:00",
    "lastChange": "2026-10-20T01:52:00+00:00",
    "cost": {
     "apiUsd": 0.0,
@@ -1131,6 +1145,18 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-20T01:49:49+00:00",
+     "ok": true,
+     "note": "Add generated puzzles [skip ci]",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-20T01:49:03+00:00",
+     "ok": true,
+     "note": "feat: add stats, collection and practice",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-20T01:37:56+00:00",
      "ok": true,
      "note": "ship plan + build task B1a",
@@ -1182,18 +1208,6 @@
      "at": "2026-10-14T20:25:51+00:00",
      "ok": true,
      "note": "Add generated puzzles through 2026-11-08 [skip ci]",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-14T20:04:12+00:00",
-     "ok": true,
-     "note": "feat: Headline mode, reveal the paper's title with word tiles",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-06T10:01:13+00:00",
-     "ok": true,
-     "note": "Add generated puzzles [skip ci]",
      "source": "main commit"
     }
    ]
@@ -4865,7 +4879,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/grass-crossword-1.webp",
    "firstSeen": "2026-10-16T01:23:04+00:00",
-   "lastChange": "2026-10-20T02:03:01+00:00",
+   "lastChange": "2026-10-20T02:05:03+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -9213,14 +9227,14 @@
    "title": "Server Stress",
    "line": "Night shift in a server room: every rack warms a light.",
    "url": "https://chenhsieh.github.io/server-stress/",
-   "stage": "planning",
-   "who": "Claude",
+   "stage": "building",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Data-centre story with a human side, real tradeoffs instead",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/server-stress-1.webp",
    "firstSeen": "2026-10-16T01:44:50+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-20T02:04:41+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -9236,23 +9250,26 @@
    "tasks": [
     {
      "title": "server stress datacenter",
-     "state": "planned",
+     "state": "running",
      "worker": "Codex",
      "plan": "Data-centre story with a human side, real tradeoffs instead of an obvious best choice, saboteurs as the counter-force.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "since": "2026-10-20T02:04:40+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-20T02:04:41+00:00",
+      "subject": "start: P2c13_server-stress-datacenter"
+     },
      "result": ""
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 0,
-    "waitingDesign": 1,
+    "running": 1,
+    "waitingDesign": 0,
     "done": 0
    },
    "verdict": null,
@@ -11682,7 +11699,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/thumb-stand-1.webp",
    "firstSeen": "2026-10-15T23:29:31+00:00",
-   "lastChange": "2026-10-20T02:03:08+00:00",
+   "lastChange": "2026-10-20T02:04:54+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -12990,6 +13007,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-20T01:39:42+00:00",
+     "ok": true,
+     "note": "feat:",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-19T21:47:02+00:00",
      "ok": true,
      "note": "clearer listening-hotel intro and shared key cabinet for room-service and Thin Walls decisions published; live 390x844 and 320x568 touch checks passed",
@@ -13048,12 +13071,6 @@
      "ok": true,
      "note": "fix:",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-19T02:11:51+00:00",
-     "ok": true,
-     "note": "S8 review: Chinese names for rooms 9-25, readable Endless tiles, localized counters ()",
-     "source": "board note"
     }
    ]
   },
@@ -13430,43 +13447,54 @@
    "title": "阿嬤讀得出來",
    "line": "A famous Tang poem line is printed as fake glyphs with.",
    "url": "https://chenhsieh.github.io/readable-nonsense/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Show the candidate set shrinking, use best not par, make",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/readable-nonsense-1.webp",
    "firstSeen": "2026-10-15T23:26:29+00:00",
-   "lastChange": "2026-10-20T02:02:30+00:00",
+   "lastChange": "2026-10-20T02:03:21+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 1,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 209548,
     "codexUsdEst": 0.25,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 12,
     "earlierUsdEst": 43.2,
-    "totalUsdEst": 46.4
+    "totalUsdEst": 50.0
    },
    "tasks": [
     {
-     "title": "readable nonsense ama",
-     "state": "running",
-     "worker": "Claude",
+     "title": "readable nonsense ink",
+     "state": "queued",
+     "worker": "Codex",
      "plan": "",
-     "since": "2026-10-20T02:02:28+00:00",
+     "since": "2026-10-20T02:03:21+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-20T02:02:30+00:00",
-      "subject": "start: P2c00g_readable-nonsense-ama"
-     },
+     "commit": null,
      "result": ""
+    },
+    {
+     "title": "readable nonsense ama",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-19T23:59:30+00:00",
+     "done": "2026-10-19T23:59:30+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Brief: expert/readable-nonsense/packages/BRIEF_20261019.md: A-ma's misread shown in a speech bubble with an English gloss (how she judges, visible), limited ink so placing everything fails, 3-stamp routes on 5-9, shelf..."
     },
     {
      "title": "readable nonsense shrink",
@@ -13484,14 +13512,20 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": null,
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T02:03:21+00:00",
+     "ok": true,
+     "note": "design brief (A-ma bubble, ink, spines, Zhuyin cards) + build B2h",
+     "source": "board note"
+    },
     {
      "at": "2026-10-19T23:40:01+00:00",
      "ok": true,
@@ -13557,12 +13591,6 @@
      "ok": true,
      "note": "LIVE https://chenhsieh.github.io/readable-nonsense/ (claude builder)",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-16T00:28:34+00:00",
-     "ok": true,
-     "note": "feat: stamp Bopomofo keys until A-ma reads the poem line on the page",
-     "source": "main commit"
     }
    ]
   }
