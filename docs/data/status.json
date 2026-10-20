@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T02:26:32+00:00",
+ "generated": "2026-10-20T02:28:39+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -10,30 +10,30 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 61,
-    "running": 3,
-    "doneToday": 92,
-    "minutes": 2490,
-    "estimateMinutes": 1245
+    "queued": 60,
+    "running": 4,
+    "doneToday": 94,
+    "minutes": 2495,
+    "estimateMinutes": 1248
    },
    "Claude": {
-    "queued": 2,
+    "queued": 3,
     "running": 0,
     "doneToday": 37,
-    "minutes": 120,
-    "estimateMinutes": 120
+    "minutes": 180,
+    "estimateMinutes": 180
    }
   },
   "queued": 63,
-  "running": 3,
-  "doneToday": 129,
+  "running": 4,
+  "doneToday": 131,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2610,
-  "estimatedFinish": "2026-10-20T23:11:32+00:00",
-  "estimateMinutes": 1245
+  "minutesRemaining": 2675,
+  "estimatedFinish": "2026-10-20T23:16:39+00:00",
+  "estimateMinutes": 1248
  },
  "lanes": [
   {
@@ -41,7 +41,7 @@
    "game": "rna-hero",
    "task": "rna hero knots",
    "since": "2026-10-20T02:09:15+00:00",
-   "activity": "2026-10-20T02:25:57+00:00",
+   "activity": "2026-10-20T02:28:38+00:00",
    "commit": {
     "at": "2026-10-20T02:11:19+00:00",
     "subject": "start: B1b_rna-hero-knots"
@@ -52,7 +52,7 @@
    "game": "zoom-out",
    "task": "zoom out finish",
    "since": "2026-10-20T02:24:09+00:00",
-   "activity": "2026-10-20T02:26:32+00:00",
+   "activity": "2026-10-20T02:28:34+00:00",
    "commit": null
   },
   {
@@ -65,11 +65,14 @@
   },
   {
    "worker": "Codex",
-   "game": "keep-both",
-   "task": "keep both bio round",
-   "since": "2026-10-20T02:26:01+00:00",
-   "activity": "2026-10-20T02:26:02+00:00",
-   "commit": null
+   "game": "glyph-gates",
+   "task": "glyph gates core",
+   "since": "2026-10-20T02:28:12+00:00",
+   "activity": "2026-10-20T02:28:13+00:00",
+   "commit": {
+    "at": "2026-10-20T02:28:13+00:00",
+    "subject": "start: P2d19_glyph-gates-core"
+   }
   }
  ],
  "codexLanes": 2,
@@ -102,7 +105,7 @@
   },
   {
    "day": "2026-10-19",
-   "changes": 109
+   "changes": 111
   }
  ],
  "houseRules": 23,
@@ -1683,7 +1686,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-20T02:17:57+00:00",
+   "lastChange": "2026-10-20T02:26:37+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
@@ -1703,6 +1706,20 @@
      "worker": "Codex",
      "plan": "Prototype divided-dish regions, a round dish and a hexagon grid for Colony Count; measure which add real new thinking.",
      "since": "2026-10-20T02:17:29+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "colony unlock themes",
+     "state": "planned",
+     "worker": "Claude",
+     "plan": "Unlockable Colony Count themes: dumplings, cakes, boba tea, hats for the animals, Halloween and Christmas.",
+     "since": "2026-10-20T02:26:37+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1799,7 +1816,7 @@
    "taskCounts": {
     "queued": 0,
     "running": 1,
-    "waitingDesign": 0,
+    "waitingDesign": 1,
     "done": 6
    },
    "verdict": {
@@ -4853,14 +4870,14 @@
    "title": "Glyph Gates",
    "line": "Open a path by pairing marks at each gate.",
    "url": "https://chenhsieh.github.io/glyph-gates/",
-   "stage": "planning",
-   "who": "Claude",
+   "stage": "building",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Find the game core and story before any visual work",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/glyph-gates-1.webp",
    "firstSeen": "2026-10-13T08:48:46+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-20T02:28:13+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -4876,23 +4893,26 @@
    "tasks": [
     {
      "title": "glyph gates core",
-     "state": "planned",
+     "state": "running",
      "worker": "Codex",
      "plan": "Find the game core and story before any visual work.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "since": "2026-10-20T02:28:12+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-20T02:28:13+00:00",
+      "subject": "start: P2d19_glyph-gates-core"
+     },
      "result": ""
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 0,
-    "waitingDesign": 1,
+    "running": 1,
+    "waitingDesign": 0,
     "done": 0
    },
    "verdict": null,
@@ -5640,7 +5660,7 @@
    "title": "Keep Both",
    "line": "Copy a gene, then break it so both copies are kept.",
    "url": "https://chenhsieh.github.io/keep-both/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Bioinformatics round: story and mechanism for the",
@@ -5652,21 +5672,21 @@
     "apiUsd": 0.0,
     "codexRuns": 0,
     "claudeRuns": 0,
-    "apiRuns": 0,
+    "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
-    "totalUsdEst": 14.4
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
+    "totalUsdEst": 10.8
    },
    "tasks": [
     {
-     "title": "keep both bio round",
-     "state": "running",
+     "title": "keep both queue",
+     "state": "queued",
      "worker": "Codex",
-     "plan": "Bioinformatics round: story and mechanism for the gene-duplication game.",
-     "since": "2026-10-20T02:26:01+00:00",
+     "plan": "",
+     "since": "2026-10-20T02:26:34+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -5674,13 +5694,27 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "keep both bio round",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Bioinformatics round: story and mechanism for the gene-duplication game.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Brief: expert/keep-both/packages/BRIEF_20261019.md: from a reflex spark to a planning puzzle: a visible queue of mutation cards placed on copy a or b; jobs lost, spare copies decay, both kept only when the jobs split..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
@@ -6543,19 +6577,19 @@
    "title": "Makeshift Chair",
    "line": "",
    "url": "https://chenhsieh.github.io/makeshift-chair/",
-   "stage": "planning",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Grassroots 3D look, correct source link, mechanism pass",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-15T02:32:35+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-20T02:27:25+00:00",
    "cost": {
     "apiUsd": 11.15,
     "codexRuns": 0,
     "claudeRuns": 0,
-    "apiRuns": 0,
+    "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
@@ -6565,11 +6599,11 @@
    },
    "tasks": [
     {
-     "title": "makeshift chair bastard chairs",
-     "state": "planned",
+     "title": "makeshift chair stacks",
+     "state": "queued",
      "worker": "Codex",
-     "plan": "Grassroots 3D look, correct source link, mechanism pass.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "plan": "",
+     "since": "2026-10-20T02:27:25+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -6577,17 +6611,37 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "makeshift chair bastard chairs",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Grassroots 3D look, correct source link, mechanism pass.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Brief: expert/makeshift-chair/packages/BRIEF_20261019.md: legs are stacks of junk that must reach the gap's exact height, the weakest piece tested by the day's heaviest sitter; grassroots paper-collage look; credit..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
-    "waitingDesign": 1,
-    "done": 0
+    "waitingDesign": 0,
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T02:27:25+00:00",
+     "ok": true,
+     "note": "stacks brief + build B2z",
+     "source": "board note"
+    },
     {
      "at": "2026-10-16T01:59:04+00:00",
      "ok": true,
@@ -7069,19 +7123,19 @@
    "title": "Metagenome Profilers",
    "line": "Compare MetaPhlAn and Kraken through six games.",
    "url": "https://chenhsieh.github.io/metagenome-profilers/",
-   "stage": "planning",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Game-design pass on the profiler comparison",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/metagenome-profilers-1.webp",
    "firstSeen": "2026-08-20T15:58:01+00:00",
-   "lastChange": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-20T02:28:06+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
     "claudeRuns": 0,
-    "apiRuns": 0,
+    "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
@@ -7091,11 +7145,11 @@
    },
    "tasks": [
     {
-     "title": "metagenome profilers design pass",
-     "state": "planned",
+     "title": "metagenome profilers front",
+     "state": "queued",
      "worker": "Codex",
-     "plan": "Game-design pass on the profiler comparison.",
-     "since": "2026-10-19T17:54:51+00:00",
+     "plan": "",
+     "since": "2026-10-20T02:28:06+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -7103,17 +7157,37 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "metagenome profilers design pass",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Game-design pass on the profiler comparison.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Brief: expert/metagenome-profilers/packages/BRIEF_20261019.md: a 60-second front-door game 'One sample, two answers' (sort reads by LCA like Kraken, by marker like MetaPhlAn, then guess both tables: the big genome wins..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
-    "waitingDesign": 1,
-    "done": 0
+    "waitingDesign": 0,
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
    "history": [
+    {
+     "at": "2026-10-20T02:28:06+00:00",
+     "ok": true,
+     "note": "front-door brief + build B3a",
+     "source": "board note"
+    },
     {
      "at": "2026-10-15T14:42:57+00:00",
      "ok": true,
@@ -8851,7 +8925,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/rna-hero-1.webp",
    "firstSeen": "2026-08-20T15:44:40+00:00",
-   "lastChange": "2026-10-20T02:25:57+00:00",
+   "lastChange": "2026-10-20T02:28:38+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -13592,7 +13666,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-16T00:32:50+00:00",
-   "lastChange": "2026-10-20T02:26:32+00:00",
+   "lastChange": "2026-10-20T02:28:34+00:00",
    "cost": {
     "apiUsd": 7.14,
     "codexRuns": 2,
