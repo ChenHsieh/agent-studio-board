@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T19:49:37+00:00",
+ "generated": "2026-10-21T19:51:50+00:00",
  "ops": {
-  "count": 28,
+  "count": 27,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A running task has shown no progress for over 3 hours.",
@@ -25,11 +25,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 40,
+    "queued": 41,
     "running": 3,
     "doneToday": 93,
-    "minutes": 1720,
-    "estimateMinutes": 430
+    "minutes": 1760,
+    "estimateMinutes": 587
    },
    "Claude": {
     "queued": 1,
@@ -39,16 +39,16 @@
     "estimateMinutes": 120
    }
   },
-  "queued": 41,
+  "queued": 42,
   "running": 4,
   "doneToday": 117,
   "lanes": {
-   "Codex": 4,
+   "Codex": 3,
    "Claude": 1
   },
-  "minutesRemaining": 1840,
-  "estimatedFinish": "2026-10-22T02:59:37+00:00",
-  "estimateMinutes": 430
+  "minutesRemaining": 1880,
+  "estimatedFinish": "2026-10-22T05:38:50+00:00",
+  "estimateMinutes": 587
  },
  "lanes": [
   {
@@ -56,10 +56,10 @@
    "game": "remote-viewer",
    "task": "P1SD34_studio standard remote viewer",
    "since": "2026-10-21T19:27:37+00:00",
-   "activity": "2026-10-21T19:49:11+00:00",
+   "activity": "2026-10-21T19:51:45+00:00",
    "commit": {
-    "at": "2026-10-21T19:43:43+00:00",
-    "subject": "wip: P1SD34_studio-standard-remote-viewer (Codex lane autosave 15:43)"
+    "at": "2026-10-21T19:50:59+00:00",
+    "subject": "fix: keep Remote Viewer header accessible"
    }
   },
   {
@@ -67,7 +67,7 @@
    "game": "seal-carver",
    "task": "P1SD35_studio standard seal carver",
    "since": "2026-10-21T19:47:27+00:00",
-   "activity": "2026-10-21T19:49:32+00:00",
+   "activity": "2026-10-21T19:51:22+00:00",
    "commit": null
   },
   {
@@ -75,7 +75,7 @@
    "game": "server-stress",
    "task": "P1SD36_studio standard server stress",
    "since": "2026-10-21T19:47:59+00:00",
-   "activity": "2026-10-21T19:49:31+00:00",
+   "activity": "2026-10-21T19:51:48+00:00",
    "commit": {
     "at": "2026-10-21T19:48:01+00:00",
     "subject": "start: P1SD36_studio-standard-server-stress"
@@ -90,12 +90,12 @@
    "commit": null
   }
  ],
- "codexLanes": 4,
+ "codexLanes": 3,
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 19,
-  "usdEst": 68.4,
+  "runs": 20,
+  "usdEst": 72.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -133,7 +133,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 350
+   "changes": 351
   }
  ],
  "houseRules": 23,
@@ -12388,7 +12388,7 @@
    "shelfNote": "",
    "image": "promo/remote-viewer/first.jpg",
    "firstSeen": "2026-09-20T16:48:48+00:00",
-   "lastChange": "2026-10-21T19:49:11+00:00",
+   "lastChange": "2026-10-21T19:51:45+00:00",
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 1,
@@ -12414,8 +12414,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-21T19:43:43+00:00",
-      "subject": "wip: P1SD34_studio-standard-remote-viewer (Codex lane autosave 15:43)"
+      "at": "2026-10-21T19:50:59+00:00",
+      "subject": "fix: keep Remote Viewer header accessible"
      },
      "result": ""
     },
@@ -13208,10 +13208,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 32.56,
+   "costTotalUsd": 36.16,
    "latestChange": {
-    "text": "fix: keep every seal layout solvable",
-    "at": "2026-10-21T05:09:06+00:00"
+    "text": "see",
+    "at": "2026-10-21T19:51:22+00:00"
    },
    "promo": {
     "files": {
@@ -13233,7 +13233,7 @@
    "shelfNote": "",
    "image": "promo/seal-carver/first.jpg",
    "firstSeen": "2026-10-16T01:20:34+00:00",
-   "lastChange": "2026-10-21T19:49:32+00:00",
+   "lastChange": "2026-10-21T19:51:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -13242,9 +13242,9 @@
     "codexTokens": 129278,
     "codexUsdEst": 0.16,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 9,
-    "earlierUsdEst": 32.4,
-    "totalUsdEst": 32.56
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
+    "totalUsdEst": 36.16
    },
    "tasks": [
     {
@@ -13300,6 +13300,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T19:51:22+00:00",
+     "ok": false,
+     "note": "see",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T05:09:06+00:00",
      "ok": true,
@@ -13515,7 +13521,7 @@
    "shelfNote": "",
    "image": "promo/server-stress/first.jpg",
    "firstSeen": "2026-10-16T01:44:50+00:00",
-   "lastChange": "2026-10-21T19:49:31+00:00",
+   "lastChange": "2026-10-21T19:51:48+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
