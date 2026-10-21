@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T19:31:58+00:00",
+ "generated": "2026-10-21T19:34:11+00:00",
  "ops": {
-  "count": 27,
+  "count": 28,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -23,11 +23,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 44,
-    "running": 3,
-    "doneToday": 92,
-    "minutes": 1880,
-    "estimateMinutes": 627
+    "queued": 43,
+    "running": 2,
+    "doneToday": 93,
+    "minutes": 1800,
+    "estimateMinutes": 900
    },
    "Claude": {
     "queued": 1,
@@ -37,46 +37,38 @@
     "estimateMinutes": 120
    }
   },
-  "queued": 45,
-  "running": 4,
-  "doneToday": 116,
+  "queued": 44,
+  "running": 3,
+  "doneToday": 117,
   "lanes": {
-   "Codex": 3,
+   "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2000,
-  "estimatedFinish": "2026-10-22T05:58:58+00:00",
-  "estimateMinutes": 627
+  "minutesRemaining": 1920,
+  "estimatedFinish": "2026-10-22T10:34:11+00:00",
+  "estimateMinutes": 900
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "peony-dream",
-   "task": "P1SD31_studio standard peony dream",
-   "since": "2026-10-21T19:29:53+00:00",
-   "activity": "2026-10-21T19:29:36+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Codex",
-   "game": "BioRedactle-nextjs",
-   "task": "P1SD32_studio standard redacxiv",
-   "since": "2026-10-21T19:25:22+00:00",
-   "activity": "2026-10-21T19:31:53+00:00",
-   "commit": {
-    "at": "2026-10-21T19:29:29+00:00",
-    "subject": "fix: include current preview assets in static export"
-   }
-  },
   {
    "worker": "Codex",
    "game": "remote-viewer",
    "task": "P1SD34_studio standard remote viewer",
    "since": "2026-10-21T19:27:37+00:00",
-   "activity": "2026-10-21T19:31:47+00:00",
+   "activity": "2026-10-21T19:34:08+00:00",
    "commit": {
     "at": "2026-10-21T19:27:40+00:00",
     "subject": "start: P1SD34_studio-standard-remote-viewer"
+   }
+  },
+  {
+   "worker": "Codex",
+   "game": "seal-carver",
+   "task": "P1SD35_studio standard seal carver",
+   "since": "2026-10-21T19:34:09+00:00",
+   "activity": "2026-10-21T19:34:10+00:00",
+   "commit": {
+    "at": "2026-10-21T19:34:10+00:00",
+    "subject": "start: P1SD35_studio-standard-seal-carver"
    }
   },
   {
@@ -88,7 +80,7 @@
    "commit": null
   }
  ],
- "codexLanes": 3,
+ "codexLanes": 2,
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
@@ -131,7 +123,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 344
+   "changes": 347
   }
  ],
  "houseRules": 23,
@@ -11136,10 +11128,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 25.44,
+   "costTotalUsd": 25.65,
    "latestChange": {
-    "text": "short-phone recovery controls stay visible and the finished scroll is designed; live...",
-    "at": "2026-10-19T20:36:45+00:00"
+    "text": "feat: give Peony Dream its own logo and link preview",
+    "at": "2026-10-21T19:34:08+00:00"
    },
    "promo": {
     "files": {
@@ -11153,40 +11145,40 @@
    "title": "Peony Dream",
    "line": "Paint half a face on a sheet of silk, close the silk on.",
    "url": "https://chenhsieh.github.io/peony-dream/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Eastern ink visual direction instead of raster",
    "shelfNote": "",
    "image": "promo/peony-dream/first.jpg",
    "firstSeen": "2026-10-18T01:51:43+00:00",
-   "lastChange": "2026-10-21T19:29:36+00:00",
+   "lastChange": "2026-10-21T19:34:08+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 1,
+    "codexRuns": 2,
     "claudeRuns": 1,
     "apiRuns": 0,
-    "codexTokens": 196334,
-    "codexUsdEst": 0.24,
+    "codexTokens": 377751,
+    "codexUsdEst": 0.45,
     "claudeUsdEst": 3.6,
     "earlierRounds": 6,
     "earlierUsdEst": 21.6,
-    "totalUsdEst": 25.44
+    "totalUsdEst": 25.65
    },
    "tasks": [
     {
      "title": "P1SD31_studio standard peony dream",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T19:29:53+00:00",
-     "done": null,
+     "since": "2026-10-21T19:03:24+00:00",
+     "done": "2026-10-21T19:03:24+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 26,
+     "tokens": 181417,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: give Peony Dream its own logo and link preview"
     },
     {
      "title": "review of peony dream ink visual",
@@ -11219,18 +11211,24 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": {
     "date": "2026-10-19",
     "verdict": "revise",
     "note": "Eastern ink visual direction instead of raster"
    },
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T19:34:08+00:00",
+     "ok": true,
+     "note": "feat: give Peony Dream its own logo and link preview",
+     "source": "board note"
+    },
     {
      "at": "2026-10-19T20:36:45+00:00",
      "ok": true,
@@ -11799,10 +11797,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 55.37,
+   "costTotalUsd": 58.97,
    "latestChange": {
     "text": "see",
-    "at": "2026-10-21T19:25:22+00:00"
+    "at": "2026-10-21T19:32:52+00:00"
    },
    "promo": {
     "files": {
@@ -11817,14 +11815,14 @@
    "title": "Redacxiv",
    "line": "Reveal a paper's title with word tiles.",
    "url": "https://chenhsieh.github.io/redacxiv/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Interface and visual pass; make the first game winnable for",
    "shelfNote": "",
    "image": "promo/redacxiv/first.jpg",
    "firstSeen": "2026-10-14T20:25:51+00:00",
-   "lastChange": "2026-10-21T19:31:53+00:00",
+   "lastChange": "2026-10-21T19:32:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -11833,28 +11831,11 @@
     "codexTokens": 1140773,
     "codexUsdEst": 1.37,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
-    "totalUsdEst": 55.37
+    "earlierRounds": 15,
+    "earlierUsdEst": 54.0,
+    "totalUsdEst": 58.97
    },
    "tasks": [
-    {
-     "title": "P1SD32_studio standard redacxiv",
-     "state": "running",
-     "worker": "Codex",
-     "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T19:25:22+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-21T19:29:29+00:00",
-      "subject": "fix: include current preview assets in static export"
-     },
-     "result": ""
-    },
     {
      "title": "redacxiv rename cleanup",
      "state": "done",
@@ -11956,7 +11937,7 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
     "done": 7
    },
@@ -11966,8 +11947,14 @@
     "note": "Shippable; final polish and naming"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T19:32:52+00:00",
+     "ok": false,
+     "note": "see",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T19:25:22+00:00",
      "ok": false,
@@ -12032,12 +12019,6 @@
      "at": "2026-10-20T01:49:49+00:00",
      "ok": true,
      "note": "Add generated puzzles [skip ci]",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T01:49:03+00:00",
-     "ok": true,
-     "note": "feat: add stats, collection and practice",
      "source": "main commit"
     }
    ]
@@ -12391,7 +12372,7 @@
    "shelfNote": "",
    "image": "promo/remote-viewer/first.jpg",
    "firstSeen": "2026-09-20T16:48:48+00:00",
-   "lastChange": "2026-10-21T19:31:47+00:00",
+   "lastChange": "2026-10-21T19:34:08+00:00",
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 1,
@@ -13210,7 +13191,7 @@
    ]
   },
   {
-   "nextTask": "Fix share preview, logo and share text",
+   "nextTask": null,
    "costTotalUsd": 32.56,
    "latestChange": {
     "text": "fix: keep every seal layout solvable",
@@ -13229,14 +13210,14 @@
    "title": "Seal Carver",
    "line": "Carve a short phrase into a square seal stone, one box.",
    "url": "https://chenhsieh.github.io/seal-carver/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Teach placement so it is reasoning, not trial and error",
    "shelfNote": "",
    "image": "promo/seal-carver/first.jpg",
    "firstSeen": "2026-10-16T01:20:34+00:00",
-   "lastChange": "2026-10-21T14:56:15+00:00",
+   "lastChange": "2026-10-21T19:34:10+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -13252,16 +13233,19 @@
    "tasks": [
     {
      "title": "P1SD35_studio standard seal carver",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T14:56:15+00:00",
+     "since": "2026-10-21T19:34:09+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T19:34:10+00:00",
+      "subject": "start: P1SD35_studio-standard-seal-carver"
+     },
      "result": ""
     },
     {
@@ -13294,8 +13278,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
