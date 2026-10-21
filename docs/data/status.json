@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T19:16:26+00:00",
+ "generated": "2026-10-21T19:18:39+00:00",
  "ops": {
   "count": 26,
   "notes": [
@@ -23,11 +23,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 46,
+    "queued": 45,
     "running": 3,
-    "doneToday": 90,
-    "minutes": 1960,
-    "estimateMinutes": 654
+    "doneToday": 91,
+    "minutes": 1920,
+    "estimateMinutes": 640
    },
    "Claude": {
     "queued": 1,
@@ -37,32 +37,24 @@
     "estimateMinutes": 120
    }
   },
-  "queued": 47,
+  "queued": 46,
   "running": 4,
-  "doneToday": 114,
+  "doneToday": 115,
   "lanes": {
    "Codex": 3,
    "Claude": 1
   },
-  "minutesRemaining": 2080,
-  "estimatedFinish": "2026-10-22T06:10:26+00:00",
-  "estimateMinutes": 654
+  "minutesRemaining": 2040,
+  "estimatedFinish": "2026-10-22T05:58:39+00:00",
+  "estimateMinutes": 640
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "mushroom-gaps",
-   "task": "P1SD30_studio standard mushroom gaps",
-   "since": "2026-10-21T19:09:20+00:00",
-   "activity": "2026-10-21T19:15:36+00:00",
-   "commit": null
-  },
   {
    "worker": "Codex",
    "game": "peony-dream",
    "task": "P1SD31_studio standard peony dream",
    "since": "2026-10-21T19:03:24+00:00",
-   "activity": "2026-10-21T19:16:05+00:00",
+   "activity": "2026-10-21T19:18:01+00:00",
    "commit": {
     "at": "2026-10-21T19:11:26+00:00",
     "subject": "wip: P1SD31_studio-standard-peony-dream (Codex lane autosave 15:11)"
@@ -73,15 +65,26 @@
    "game": "BioRedactle-nextjs",
    "task": "P1SD32_studio standard redacxiv",
    "since": "2026-10-21T19:15:53+00:00",
-   "activity": "2026-10-21T19:16:26+00:00",
+   "activity": "2026-10-21T19:18:26+00:00",
    "commit": null
+  },
+  {
+   "worker": "Codex",
+   "game": "refusal-detour",
+   "task": "P1SD33_studio standard refusal detour",
+   "since": "2026-10-21T19:16:39+00:00",
+   "activity": "2026-10-21T19:18:39+00:00",
+   "commit": {
+    "at": "2026-10-21T19:16:40+00:00",
+    "subject": "start: P1SD33_studio-standard-refusal-detour"
+   }
   },
   {
    "worker": "Claude",
    "game": "notched-boat",
    "task": "P2BT02_notched boat levels",
    "since": "2026-10-21T18:53:27+00:00",
-   "activity": "2026-10-21T19:15:28+00:00",
+   "activity": "2026-10-21T19:17:37+00:00",
    "commit": null
   }
  ],
@@ -128,7 +131,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 338
+   "changes": 339
   }
  ],
  "houseRules": 23,
@@ -10559,10 +10562,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 25.45,
+   "costTotalUsd": 25.59,
    "latestChange": {
-    "text": "feat: see the wind stop before mushrooms grow",
-    "at": "2026-10-21T05:01:05+00:00"
+    "text": "feat: show the first mushroom floor in link previews",
+    "at": "2026-10-21T19:16:38+00:00"
    },
    "promo": {
     "files": {
@@ -10576,40 +10579,40 @@
    "title": "Mushroom at the End",
    "line": "Grow mycelium threads across an old factory floor and cut.",
    "url": "https://chenhsieh.github.io/mushroom-gaps/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Clear cause and effect for each tap, a story for the cave",
    "shelfNote": "",
    "image": "promo/mushroom-gaps/first.jpg",
    "firstSeen": "2026-10-15T23:26:23+00:00",
-   "lastChange": "2026-10-21T19:15:36+00:00",
+   "lastChange": "2026-10-21T19:16:38+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 1,
+    "codexRuns": 2,
     "claudeRuns": 0,
     "apiRuns": 1,
-    "codexTokens": 210164,
-    "codexUsdEst": 0.25,
+    "codexTokens": 322256,
+    "codexUsdEst": 0.39,
     "claudeUsdEst": 0.0,
     "earlierRounds": 7,
     "earlierUsdEst": 25.2,
-    "totalUsdEst": 25.45
+    "totalUsdEst": 25.59
    },
    "tasks": [
     {
      "title": "P1SD30_studio standard mushroom gaps",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T19:09:20+00:00",
-     "done": null,
+     "since": "2026-10-21T18:54:13+00:00",
+     "done": "2026-10-21T18:54:13+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 15,
+     "tokens": 112092,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: show the first mushroom floor in link previews"
     },
     {
      "title": "mushroom gaps wind",
@@ -10642,14 +10645,20 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": null,
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T19:16:38+00:00",
+     "ok": true,
+     "note": "feat: show the first mushroom floor in link previews",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T05:01:05+00:00",
      "ok": true,
@@ -10899,7 +10908,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T04:21:44+00:00",
-   "lastChange": "2026-10-21T19:15:28+00:00",
+   "lastChange": "2026-10-21T19:17:37+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -11145,7 +11154,7 @@
    "shelfNote": "",
    "image": "promo/peony-dream/first.jpg",
    "firstSeen": "2026-10-18T01:51:43+00:00",
-   "lastChange": "2026-10-21T19:16:05+00:00",
+   "lastChange": "2026-10-21T19:18:01+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -11812,7 +11821,7 @@
    "shelfNote": "",
    "image": "promo/redacxiv/first.jpg",
    "firstSeen": "2026-10-14T20:25:51+00:00",
-   "lastChange": "2026-10-21T19:16:26+00:00",
+   "lastChange": "2026-10-21T19:18:26+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -12175,7 +12184,7 @@
    ]
   },
   {
-   "nextTask": "Fix share preview, logo and share text",
+   "nextTask": null,
    "costTotalUsd": 36.45,
    "latestChange": {
     "text": "feat: choices answer touch with sound and motion",
@@ -12193,14 +12202,14 @@
    "title": "Refusal Detour",
    "line": "",
    "url": "https://chenhsieh.github.io/refusal-detour/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Keep the message about choice and refusal; make the action",
    "shelfNote": "",
    "image": "promo/refusal-detour/first.jpg",
    "firstSeen": "2026-10-15T04:01:25+00:00",
-   "lastChange": "2026-10-21T14:56:11+00:00",
+   "lastChange": "2026-10-21T19:18:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -12216,16 +12225,19 @@
    "tasks": [
     {
      "title": "P1SD33_studio standard refusal detour",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T14:56:11+00:00",
+     "since": "2026-10-21T19:16:39+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T19:16:40+00:00",
+      "subject": "start: P1SD33_studio-standard-refusal-detour"
+     },
      "result": ""
     },
     {
@@ -12272,8 +12284,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
