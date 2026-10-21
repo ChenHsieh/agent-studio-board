@@ -1,9 +1,10 @@
 {
- "generated": "2026-10-21T08:20:52+00:00",
+ "generated": "2026-10-21T08:23:03+00:00",
  "ops": {
-  "count": 26,
+  "count": 25,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
+   "A running task has shown no progress for over 3 hours.",
    "A status note names something that is not a game.",
    "A task waits for a task that does not exist.",
    "Two tasks share the number P1c09."
@@ -11,6 +12,7 @@
  },
  "about": [
   "A game changed in the last hour with no claimed task on it.",
+  "A running task has shown no progress for over 3 hours.",
   "A status note names something that is not a game.",
   "A task waits for a task that does not exist.",
   "Two tasks share the number P1c09."
@@ -25,34 +27,67 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 49,
-    "running": 0,
+    "queued": 45,
+    "running": 2,
     "doneToday": 56,
-    "minutes": 1960,
-    "estimateMinutes": 1960
+    "minutes": 1880,
+    "estimateMinutes": 940
    },
    "Claude": {
     "queued": 1,
-    "running": 0,
+    "running": 2,
     "doneToday": 2,
-    "minutes": 60,
-    "estimateMinutes": 60
+    "minutes": 180,
+    "estimateMinutes": 180
    }
   },
-  "queued": 50,
-  "running": 0,
+  "queued": 46,
+  "running": 4,
   "doneToday": 58,
   "lanes": {
-   "Codex": 1,
+   "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2020,
-  "estimatedFinish": "2026-10-22T17:00:52+00:00",
-  "estimateMinutes": 1960
+  "minutesRemaining": 2060,
+  "estimatedFinish": "2026-10-22T00:03:03+00:00",
+  "estimateMinutes": 940
  },
- "lanes": [],
- "codexLanes": 0,
- "claudeWorkers": 0,
+ "lanes": [
+  {
+   "worker": "Claude",
+   "game": "felt-years",
+   "task": "P1FY50_felt years understandable",
+   "since": "2026-10-21T08:22:49+00:00",
+   "activity": "2026-10-21T08:22:49+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "silent-disco",
+   "task": "P2PT04_silent disco drag",
+   "since": "2026-10-21T08:22:55+00:00",
+   "activity": "2026-10-21T08:22:55+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Codex",
+   "game": "Multiple games",
+   "task": "sweep score design",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
+  {
+   "worker": "Codex",
+   "game": "Multiple games",
+   "task": "stone album design",
+   "since": null,
+   "activity": null,
+   "commit": null
+  }
+ ],
+ "codexLanes": 2,
+ "claudeWorkers": 2,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -3735,14 +3770,14 @@
    "title": "Felt Years",
    "line": "Felt Years is a quiet solo puzzle about a goat whose life.",
    "url": "https://chenhsieh.github.io/felt-years/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "A story for the proportional-time idea, a stated goal",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/felt-years-1.webp",
    "firstSeen": "2026-10-17T23:11:23+00:00",
-   "lastChange": "2026-10-21T06:19:03+00:00",
+   "lastChange": "2026-10-21T08:22:49+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 5,
@@ -3758,10 +3793,10 @@
    "tasks": [
     {
      "title": "P1FY50_felt years understandable",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Make Felt Years understandable in the first minute: felt-time ribbons, one idea per screen, plain words.",
-     "since": "2026-10-21T06:19:03+00:00",
+     "since": "2026-10-21T08:22:49+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -3870,8 +3905,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 7
    },
@@ -12707,14 +12742,14 @@
    "title": "Silent Disco",
    "line": "",
    "url": "https://chenhsieh.github.io/silent-disco/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T16:29:01+00:00",
-   "lastChange": "2026-10-21T06:47:14+00:00",
+   "lastChange": "2026-10-21T08:22:55+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12728,6 +12763,20 @@
     "totalUsdEst": 10.8
    },
    "tasks": [
+    {
+     "title": "P2PT04_silent disco drag",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Silent Disco: dancers lift and follow the finger, matching doors light up, and a dropped dancer settles with a small sound. Branch only, Chen approves before publishing.",
+     "since": "2026-10-21T08:22:55+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2GF10_silent disco feel pass",
      "state": "queued",
@@ -12755,25 +12804,11 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "P2PT04_silent disco drag",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Silent Disco: dancers lift and follow the finger, matching doors light up, and a dropped dancer settles with a small sound. Branch only, Chen approves before publishing.",
-     "since": "2026-10-21T03:46:28+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 3,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
