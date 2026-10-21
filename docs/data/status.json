@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T13:35:46+00:00",
+ "generated": "2026-10-21T13:37:59+00:00",
  "ops": {
   "count": 22,
   "notes": [
@@ -26,10 +26,10 @@
   "workers": {
    "Codex": {
     "queued": 24,
-    "running": 2,
-    "doneToday": 64,
-    "minutes": 1040,
-    "estimateMinutes": 520
+    "running": 1,
+    "doneToday": 65,
+    "minutes": 1000,
+    "estimateMinutes": 1000
    },
    "Claude": {
     "queued": 1,
@@ -40,15 +40,15 @@
    }
   },
   "queued": 25,
-  "running": 4,
-  "doneToday": 72,
+  "running": 3,
+  "doneToday": 73,
   "lanes": {
-   "Codex": 2,
+   "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 1220,
-  "estimatedFinish": "2026-10-21T22:15:46+00:00",
-  "estimateMinutes": 520
+  "minutesRemaining": 1180,
+  "estimatedFinish": "2026-10-22T06:17:59+00:00",
+  "estimateMinutes": 1000
  },
  "lanes": [
   {
@@ -56,7 +56,7 @@
    "game": "colony-count",
    "task": "P1CC31_colony book sync leaf hat gaze",
    "since": "2026-10-21T13:25:36+00:00",
-   "activity": "2026-10-21T13:35:42+00:00",
+   "activity": "2026-10-21T13:37:57+00:00",
    "commit": {
     "at": "2026-10-21T13:33:52+00:00",
     "subject": "wip: P1CC31_colony-book-sync-leaf-hat-gaze (Codex lane autosave 09:33)"
@@ -77,17 +77,9 @@
    "since": "2026-10-21T12:44:58+00:00",
    "activity": "2026-10-21T12:47:29+00:00",
    "commit": null
-  },
-  {
-   "worker": "Codex",
-   "game": "silent-disco",
-   "task": "P2PT09_silent disco window art",
-   "since": "2026-10-21T13:32:24+00:00",
-   "activity": "2026-10-21T13:31:43+00:00",
-   "commit": null
   }
  ],
- "codexLanes": 2,
+ "codexLanes": 1,
  "claudeWorkers": 2,
  "apiSpentUsd": 304.56,
  "rates": {
@@ -125,7 +117,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 229
+   "changes": 230
   }
  ],
  "houseRules": 23,
@@ -1752,7 +1744,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-21T13:35:42+00:00",
+   "lastChange": "2026-10-21T13:37:57+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
@@ -12842,40 +12834,40 @@
    "title": "Silent Disco",
    "line": "",
    "url": "https://chenhsieh.github.io/silent-disco/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T16:29:01+00:00",
-   "lastChange": "2026-10-21T13:31:43+00:00",
+   "lastChange": "2026-10-21T13:37:42+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 1,
+    "codexRuns": 2,
     "claudeRuns": 1,
     "apiRuns": 0,
-    "codexTokens": 142684,
-    "codexUsdEst": 0.17,
+    "codexTokens": 419729,
+    "codexUsdEst": 0.5,
     "claudeUsdEst": 3.6,
     "earlierRounds": 5,
     "earlierUsdEst": 18.0,
-    "totalUsdEst": 21.77
+    "totalUsdEst": 22.1
    },
    "tasks": [
     {
      "title": "P2PT09_silent disco window art",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "The silent disco becomes a quiet street view where lifted dancers and matching soundproof rooms read at a glance.",
-     "since": "2026-10-21T13:32:24+00:00",
-     "done": null,
+     "since": "2026-10-21T12:26:36+00:00",
+     "done": "2026-10-21T12:26:36+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 46,
+     "tokens": 277045,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: dancers move through quiet venue windows"
     },
     {
      "title": "P2GF10_silent disco feel pass",
@@ -12908,14 +12900,20 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T13:37:42+00:00",
+     "ok": true,
+     "note": "feat: dancers move through quiet venue windows",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T12:46:11+00:00",
      "ok": true,
