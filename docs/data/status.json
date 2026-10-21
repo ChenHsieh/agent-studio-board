@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T14:02:36+00:00",
+ "generated": "2026-10-21T14:04:50+00:00",
  "ops": {
   "count": 21,
   "notes": [
@@ -25,11 +25,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 45,
+    "queued": 49,
     "running": 1,
     "doneToday": 65,
-    "minutes": 1840,
-    "estimateMinutes": 1840
+    "minutes": 2000,
+    "estimateMinutes": 2000
    },
    "Claude": {
     "queued": 1,
@@ -39,16 +39,16 @@
     "estimateMinutes": 120
    }
   },
-  "queued": 46,
+  "queued": 50,
   "running": 2,
   "doneToday": 73,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 1960,
-  "estimatedFinish": "2026-10-22T20:42:36+00:00",
-  "estimateMinutes": 1840
+  "minutesRemaining": 2120,
+  "estimatedFinish": "2026-10-22T23:24:50+00:00",
+  "estimateMinutes": 2000
  },
  "lanes": [
   {
@@ -1232,14 +1232,14 @@
    "title": "Bluebook Guess",
    "line": "Place a US Air Force case file in time and place.",
    "url": "https://chenhsieh.github.io/bluebook-guess/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
-   "priorityNote": "Rolled back to design: case folders of real exhibits, stamp what the Air Force...",
+   "priorityNote": "Very close to shipping; the formula for the other games",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/bluebook-guess-1.webp",
    "firstSeen": "2026-09-20T20:57:49+00:00",
-   "lastChange": "2026-10-21T04:20:11+00:00",
+   "lastChange": "2026-10-21T14:04:46+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -1253,6 +1253,20 @@
     "totalUsdEst": 32.4
    },
    "tasks": [
+    {
+     "title": "P1BB60_bluebook polish share provenance ship",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Blue Book Guess: fix the peel and layout, better share text, direct source links, ship at P1.",
+     "since": "2026-10-21T14:04:46+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "bluebook source harvest",
      "state": "done",
@@ -1311,18 +1325,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
    },
    "verdict": {
-    "date": "2026-10-20",
-    "verdict": "revise",
-    "note": "Roll back to design: conspiracy feel, real archive clues"
+    "date": "2026-10-21",
+    "verdict": "ship",
+    "note": "Really good; polish peel and share, show sources, ship at P1"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T04:20:11+00:00",
@@ -4670,12 +4684,12 @@
    "url": "https://chenhsieh.github.io/flying-white/",
    "stage": "queued",
    "who": "Codex",
-   "priority": null,
-   "priorityNote": "",
+   "priority": "P1",
+   "priorityNote": "Higher priority: real rubbing sources, hilarious teacher, growth, free writing",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T05:18:25+00:00",
-   "lastChange": "2026-10-21T13:57:17+00:00",
+   "lastChange": "2026-10-21T14:03:26+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -4694,7 +4708,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Flying White step 1: a calligraphy expert's deep research on writing one word many ways and its martial-art idea, featuring seal script.",
-     "since": "2026-10-21T13:57:17+00:00",
+     "since": "2026-10-21T14:03:26+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -4708,7 +4722,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Flying White step 2: refine the game core with seal script, a hilarious teacher, an out-of-the-loop growth layer and a gentle correction model.",
-     "since": "2026-10-21T13:57:17+00:00",
+     "since": "2026-10-21T14:03:26+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -4722,7 +4736,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Flying White step 3: refine the pen feel and visuals, add the writing-everywhere teacher gag and build the new core.",
-     "since": "2026-10-21T13:57:17+00:00",
+     "since": "2026-10-21T14:03:26+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -8977,14 +8991,14 @@
    "title": "Mirror Hold",
    "line": "Wax a hairstyle, then test it against three pulls.",
    "url": "https://chenhsieh.github.io/mirror-hold/",
-   "stage": "live",
-   "who": null,
-   "priority": "P2",
-   "priorityNote": "Make the build-and-test loop readable; try the",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P1",
+   "priorityNote": "Huge revamp planned by a cross-functional lead",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/mirror-hold-1.webp",
    "firstSeen": "2026-10-14T23:09:04+00:00",
-   "lastChange": "2026-10-21T05:23:11+00:00",
+   "lastChange": "2026-10-21T14:04:38+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -8998,6 +9012,20 @@
     "totalUsdEst": 50.74
    },
    "tasks": [
+    {
+     "title": "P1MH50_mirror hold cross functional rework",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Mirror Hold: a cross-functional lead plans a full revamp, then Codex executes.",
+     "since": "2026-10-21T14:04:38+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "mirror hold tokoyama",
      "state": "done",
@@ -9028,14 +9056,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 2
    },
-   "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
-   "inProgress": false,
+   "verdict": {
+    "date": "2026-10-21",
+    "verdict": "revise",
+    "note": "Huge revamp: confusing and crude"
+   },
+   "needsYou": null,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T05:23:11+00:00",
@@ -13195,14 +13227,14 @@
    "title": "SILVA to MaAsLin2",
    "line": "Follow 16S reads through six small games.",
    "url": "https://chenhsieh.github.io/silva-to-maaslin2/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P3",
    "priorityNote": "Check for a game core",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/silva-to-maaslin2-1.webp",
    "firstSeen": "2026-08-20T05:55:59+00:00",
-   "lastChange": "2026-10-20T02:41:19+00:00",
+   "lastChange": "2026-10-21T14:04:38+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -13216,6 +13248,20 @@
     "totalUsdEst": 36.0
    },
    "tasks": [
+    {
+     "title": "P2SV50_silva to maaslin game core study",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Silva to MaAsLin2: find a real game core.",
+     "since": "2026-10-21T14:04:38+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "silva to maaslin2 core",
      "state": "done",
@@ -13232,14 +13278,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-10-21",
+    "verdict": "revise",
+    "note": "No game core"
+   },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-20T02:41:19+00:00",
@@ -15195,14 +15245,14 @@
    "title": "Thumb Stand",
    "line": "",
    "url": "https://chenhsieh.github.io/thumb-stand/",
-   "stage": "live",
-   "who": null,
-   "priority": "P2",
-   "priorityNote": "Fix the level 3 block, then push the visual toward the",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P1",
+   "priorityNote": "Total rework planned by a cross-functional lead",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/thumb-stand-1.webp",
    "firstSeen": "2026-10-15T23:29:31+00:00",
-   "lastChange": "2026-10-21T05:26:17+00:00",
+   "lastChange": "2026-10-21T14:04:38+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 5,
@@ -15216,6 +15266,20 @@
     "totalUsdEst": 70.05
    },
    "tasks": [
+    {
+     "title": "P1TS50_thumb stand cross functional rework",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Thumb Stand: a cross-functional lead diagnoses and plans a total rework, then Codex executes.",
+     "since": "2026-10-21T14:04:38+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "thumb stand core and look",
      "state": "done",
@@ -15302,18 +15366,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 6
    },
    "verdict": {
-    "date": "2026-10-20",
+    "date": "2026-10-21",
     "verdict": "revise",
-    "note": "Visual direction wrong; game core revision"
+    "note": "Total rework"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
-   "inProgress": false,
+   "needsYou": null,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T05:26:17+00:00",
