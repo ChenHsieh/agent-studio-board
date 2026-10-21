@@ -1,15 +1,17 @@
 {
- "generated": "2026-10-21T19:42:58+00:00",
+ "generated": "2026-10-21T19:45:10+00:00",
  "ops": {
-  "count": 26,
+  "count": 29,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
+   "A running task has shown no progress for over 3 hours.",
    "A status note names something that is not a game.",
    "Two tasks share the number P1c09."
   ]
  },
  "about": [
   "A game changed in the last hour with no claimed task on it.",
+  "A running task has shown no progress for over 3 hours.",
   "A status note names something that is not a game.",
   "Two tasks share the number P1c09."
  ],
@@ -23,11 +25,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 43,
+    "queued": 42,
     "running": 2,
     "doneToday": 93,
-    "minutes": 1800,
-    "estimateMinutes": 900
+    "minutes": 1760,
+    "estimateMinutes": 880
    },
    "Claude": {
     "queued": 1,
@@ -37,16 +39,16 @@
     "estimateMinutes": 120
    }
   },
-  "queued": 44,
+  "queued": 43,
   "running": 3,
   "doneToday": 117,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 1920,
-  "estimatedFinish": "2026-10-22T10:42:58+00:00",
-  "estimateMinutes": 900
+  "minutesRemaining": 1880,
+  "estimatedFinish": "2026-10-22T10:25:10+00:00",
+  "estimateMinutes": 880
  },
  "lanes": [
   {
@@ -54,29 +56,26 @@
    "game": "remote-viewer",
    "task": "P1SD34_studio standard remote viewer",
    "since": "2026-10-21T19:27:37+00:00",
-   "activity": "2026-10-21T19:42:37+00:00",
+   "activity": "2026-10-21T19:44:58+00:00",
    "commit": {
-    "at": "2026-10-21T19:34:28+00:00",
-    "subject": "feat: add Remote Viewer logo and concise sharing"
+    "at": "2026-10-21T19:43:43+00:00",
+    "subject": "wip: P1SD34_studio-standard-remote-viewer (Codex lane autosave 15:43)"
    }
   },
   {
    "worker": "Codex",
    "game": "seal-carver",
    "task": "P1SD35_studio standard seal carver",
-   "since": "2026-10-21T19:34:09+00:00",
-   "activity": "2026-10-21T19:41:59+00:00",
-   "commit": {
-    "at": "2026-10-21T19:41:59+00:00",
-    "subject": "feat: give Seal Carver its own link preview"
-   }
+   "since": "2026-10-21T19:44:14+00:00",
+   "activity": "2026-10-21T19:43:58+00:00",
+   "commit": null
   },
   {
    "worker": "Claude",
-   "game": "notched-boat",
-   "task": "P2BT02_notched boat levels",
-   "since": "2026-10-21T18:53:27+00:00",
-   "activity": "2026-10-21T19:41:40+00:00",
+   "game": "Multiple games",
+   "task": "P2PT07_shortest law 3d doc",
+   "since": null,
+   "activity": null,
    "commit": null
   }
  ],
@@ -84,8 +83,8 @@
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 16,
-  "usdEst": 57.6,
+  "runs": 18,
+  "usdEst": 64.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -123,7 +122,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 347
+   "changes": 349
   }
  ],
  "houseRules": 23,
@@ -10888,10 +10887,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 10.8,
+   "costTotalUsd": 14.4,
    "latestChange": {
-    "text": "P2BT01 live prototype: 6 stretches + daily, exact par, Noto Serif TC subset;...",
-    "at": "2026-10-21T04:38:16+00:00"
+    "text": "P2BT02 stretches 7-12 live : seating, rising river, flood, cargo, crossing lines,...",
+    "at": "2026-10-21T19:44:34+00:00"
    },
    "promo": null,
    "id": "notched-boat",
@@ -10899,34 +10898,34 @@
    "title": "Notched Boat",
    "line": "",
    "url": "https://chenhsieh.github.io/notched-boat/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
-   "firstSeen": "2026-10-21T04:21:44+00:00",
-   "lastChange": "2026-10-21T19:41:40+00:00",
+   "firstSeen": "2026-10-21T01:39:00+00:00",
+   "lastChange": "2026-10-21T19:44:34+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 3,
     "earlierUsdEst": 10.8,
-    "totalUsdEst": 10.8
+    "totalUsdEst": 14.4
    },
    "tasks": [
     {
      "title": "P2BT02_notched boat levels",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "刻舟記 levels 7-12: rival passengers, a rising flood, a riverbed that moves, a gorge run, two crossing bank lines.",
-     "since": "2026-10-21T18:53:27+00:00",
-     "done": null,
+     "since": "2026-10-21T01:39:00+00:00",
+     "done": "2026-10-21T01:39:00+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -10937,14 +10936,20 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T19:44:34+00:00",
+     "ok": true,
+     "note": "P2BT02 stretches 7-12 live : seating, rising river, flood, cargo, crossing lines, all-in-one; exact par, how-to pages, live save loads",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T04:38:16+00:00",
      "ok": true,
@@ -12372,7 +12377,7 @@
    "shelfNote": "",
    "image": "promo/remote-viewer/first.jpg",
    "firstSeen": "2026-09-20T16:48:48+00:00",
-   "lastChange": "2026-10-21T19:42:37+00:00",
+   "lastChange": "2026-10-21T19:44:58+00:00",
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 1,
@@ -12398,8 +12403,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-21T19:34:28+00:00",
-      "subject": "feat: add Remote Viewer logo and concise sharing"
+      "at": "2026-10-21T19:43:43+00:00",
+      "subject": "wip: P1SD34_studio-standard-remote-viewer (Codex lane autosave 15:43)"
      },
      "result": ""
     },
@@ -13217,7 +13222,7 @@
    "shelfNote": "",
    "image": "promo/seal-carver/first.jpg",
    "firstSeen": "2026-10-16T01:20:34+00:00",
-   "lastChange": "2026-10-21T19:41:59+00:00",
+   "lastChange": "2026-10-21T19:43:58+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -13236,16 +13241,13 @@
      "state": "running",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T19:34:09+00:00",
+     "since": "2026-10-21T19:44:14+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-21T19:41:59+00:00",
-      "subject": "feat: give Seal Carver its own link preview"
-     },
+     "commit": null,
      "result": ""
     },
     {
