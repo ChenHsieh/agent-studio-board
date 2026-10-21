@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T20:03:11+00:00",
+ "generated": "2026-10-21T20:05:25+00:00",
  "ops": {
   "count": 27,
   "notes": [
@@ -25,11 +25,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 41,
+    "queued": 40,
     "running": 3,
-    "doneToday": 93,
-    "minutes": 1760,
-    "estimateMinutes": 587
+    "doneToday": 94,
+    "minutes": 1720,
+    "estimateMinutes": 574
    },
    "Claude": {
     "queued": 1,
@@ -39,16 +39,16 @@
     "estimateMinutes": 120
    }
   },
-  "queued": 42,
+  "queued": 41,
   "running": 4,
-  "doneToday": 117,
+  "doneToday": 118,
   "lanes": {
    "Codex": 3,
    "Claude": 1
   },
-  "minutesRemaining": 1880,
-  "estimatedFinish": "2026-10-22T05:50:11+00:00",
-  "estimateMinutes": 587
+  "minutesRemaining": 1840,
+  "estimatedFinish": "2026-10-22T05:39:25+00:00",
+  "estimateMinutes": 574
  },
  "lanes": [
   {
@@ -56,15 +56,7 @@
    "game": "remote-viewer",
    "task": "P1SD34_studio standard remote viewer",
    "since": "2026-10-21T19:53:01+00:00",
-   "activity": "2026-10-21T20:03:10+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Codex",
-   "game": "seal-carver",
-   "task": "P1SD35_studio standard seal carver",
-   "since": "2026-10-21T19:56:10+00:00",
-   "activity": "2026-10-21T19:56:10+00:00",
+   "activity": "2026-10-21T20:05:24+00:00",
    "commit": null
   },
   {
@@ -74,6 +66,17 @@
    "since": "2026-10-21T20:00:46+00:00",
    "activity": "2026-10-21T20:00:28+00:00",
    "commit": null
+  },
+  {
+   "worker": "Codex",
+   "game": "directory-handrail",
+   "task": "P1SD37_studio standard directory handrail",
+   "since": "2026-10-21T20:04:28+00:00",
+   "activity": "2026-10-21T20:05:23+00:00",
+   "commit": {
+    "at": "2026-10-21T20:04:29+00:00",
+    "subject": "start: P1SD37_studio-standard-directory-handrail"
+   }
   },
   {
    "worker": "Claude",
@@ -127,7 +130,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 355
+   "changes": 356
   }
  ],
  "houseRules": 23,
@@ -12394,7 +12397,7 @@
    "shelfNote": "",
    "image": "promo/remote-viewer/first.jpg",
    "firstSeen": "2026-09-20T16:48:48+00:00",
-   "lastChange": "2026-10-21T20:03:10+00:00",
+   "lastChange": "2026-10-21T20:05:24+00:00",
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 1,
@@ -13213,8 +13216,8 @@
    "nextTask": null,
    "costTotalUsd": 36.16,
    "latestChange": {
-    "text": "see",
-    "at": "2026-10-21T19:51:22+00:00"
+    "text": "feat: give Seal Carver its own link preview",
+    "at": "2026-10-21T20:04:25+00:00"
    },
    "promo": {
     "files": {
@@ -13229,19 +13232,19 @@
    "title": "Seal Carver",
    "line": "Carve a short phrase into a square seal stone, one box.",
    "url": "https://chenhsieh.github.io/seal-carver/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Teach placement so it is reasoning, not trial and error",
    "shelfNote": "",
    "image": "promo/seal-carver/first.jpg",
    "firstSeen": "2026-10-16T01:20:34+00:00",
-   "lastChange": "2026-10-21T19:56:10+00:00",
+   "lastChange": "2026-10-21T20:04:25+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
     "claudeRuns": 0,
-    "apiRuns": 1,
+    "apiRuns": 2,
     "codexTokens": 129278,
     "codexUsdEst": 0.16,
     "claudeUsdEst": 0.0,
@@ -13252,17 +13255,17 @@
    "tasks": [
     {
      "title": "P1SD35_studio standard seal carver",
-     "state": "running",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude API",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T19:56:10+00:00",
-     "done": null,
+     "since": "2026-10-21T19:34:09+00:00",
+     "done": "2026-10-21T19:34:09+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: give Seal Carver its own link preview"
     },
     {
      "title": "seal carver shares",
@@ -13295,14 +13298,20 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": null,
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T20:04:25+00:00",
+     "ok": true,
+     "note": "feat: give Seal Carver its own link preview",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T19:51:22+00:00",
      "ok": false,
@@ -13367,12 +13376,6 @@
      "at": "2026-10-16T01:41:33+00:00",
      "ok": true,
      "note": "feat: carve a phrase into a seal stone, one box per character, and stamp it",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-16T01:20:34+00:00",
-     "ok": true,
-     "note": "Initial commit",
      "source": "main commit"
     }
    ]
@@ -14334,7 +14337,7 @@
    ]
   },
   {
-   "nextTask": "Fix share preview, logo and share text",
+   "nextTask": null,
    "costTotalUsd": 77.34,
    "latestChange": {
     "text": "level 14 demo hook uses real signs and shared cabinet daily tag is merged; 390x844 and...",
@@ -14352,14 +14355,14 @@
    "title": "Signposts",
    "line": "Signposts is a short phone puzzle about hanging route.",
    "url": "https://chenhsieh.github.io/directory-handrail/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Flagship polish round: finish the market-manager framing",
    "shelfNote": "",
    "image": "promo/directory-handrail/first.jpg",
    "firstSeen": "2026-10-15T03:41:15+00:00",
-   "lastChange": "2026-10-21T14:56:19+00:00",
+   "lastChange": "2026-10-21T20:05:23+00:00",
    "cost": {
     "apiUsd": 7.97,
     "codexRuns": 3,
@@ -14375,16 +14378,19 @@
    "tasks": [
     {
      "title": "P1SD37_studio standard directory handrail",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T14:56:19+00:00",
+     "since": "2026-10-21T20:04:28+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T20:04:29+00:00",
+      "subject": "start: P1SD37_studio-standard-directory-handrail"
+     },
      "result": ""
     },
     {
@@ -14487,8 +14493,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 7
    },
