@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T02:59:15+00:00",
+ "generated": "2026-10-21T03:01:27+00:00",
  "ops": {
-  "count": 22,
+  "count": 21,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -32,23 +32,23 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 120,
+    "queued": 121,
     "running": 4,
     "doneToday": 26,
-    "minutes": 1728,
-    "estimateMinutes": 1728
+    "minutes": 1740,
+    "estimateMinutes": 1740
    }
   },
-  "queued": 120,
+  "queued": 121,
   "running": 4,
   "doneToday": 47,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 1728,
-  "estimatedFinish": "2026-10-22T07:47:15+00:00",
-  "estimateMinutes": 1728
+  "minutesRemaining": 1740,
+  "estimatedFinish": "2026-10-22T08:01:27+00:00",
+  "estimateMinutes": 1740
  },
  "lanes": [
   {
@@ -80,7 +80,7 @@
    "game": "hallway-posters",
    "task": "hallway posters clear core",
    "since": "2026-10-21T02:39:38+00:00",
-   "activity": "2026-10-21T02:52:06+00:00",
+   "activity": "2026-10-21T02:59:48+00:00",
    "commit": null
   }
  ],
@@ -5721,7 +5721,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:58:56+00:00",
-   "lastChange": "2026-10-21T02:52:06+00:00",
+   "lastChange": "2026-10-21T02:59:48+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -5790,14 +5790,14 @@
    "title": "Hello Princess",
    "line": "Find the princess's first invitation among the copies.",
    "url": "https://chenhsieh.github.io/copy-paste/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Settle the card-link logic, stop story art leaking answers",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/copy-paste-1.webp",
    "firstSeen": "2026-10-15T18:59:22+00:00",
-   "lastChange": "2026-10-21T02:02:24+00:00",
+   "lastChange": "2026-10-21T02:59:24+00:00",
    "cost": {
     "apiUsd": 16.91,
     "codexRuns": 3,
@@ -5811,6 +5811,20 @@
     "totalUsdEst": 107.78
    },
    "tasks": [
+    {
+     "title": "P1HP02_hello princess plain words and guidance",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Rewrite Hello Princess in plain words and add first-level guidance, hints and clearer error messages.",
+     "since": "2026-10-21T02:59:24+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "hello princess stepwise links",
      "state": "done",
@@ -5908,24 +5922,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "S3 Copy Paste: logic check, story, name. LIVE https://chenhsieh.github.io/copy-paste/ (main , rollback tag pre-story-); hub card renamed (play-lab main , deployed)."
-    },
-    {
-     "title": "cp scribes publish",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-18T07:41:46+00:00",
-     "done": "2026-10-18T07:41:46+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Players get fairer levels 10 and 11 (the original is always the one card with the most one-picture neighbours) and a new Scribes row after level 6: six puzzles where red old letters (þe, ƿet, niȝt) disappear when a line..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 10
@@ -5936,7 +5936,7 @@
     "note": "Step-by-step linking and inferable feedback"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T02:02:24+00:00",
