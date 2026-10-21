@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T12:02:50+00:00",
+ "generated": "2026-10-21T12:05:03+00:00",
  "ops": {
-  "count": 19,
+  "count": 20,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -25,11 +25,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 32,
+    "queued": 31,
     "running": 0,
     "doneToday": 60,
-    "minutes": 1280,
-    "estimateMinutes": 1280
+    "minutes": 1240,
+    "estimateMinutes": 1240
    },
    "Claude": {
     "queued": 1,
@@ -39,16 +39,16 @@
     "estimateMinutes": 180
    }
   },
-  "queued": 33,
+  "queued": 32,
   "running": 2,
   "doneToday": 66,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 1460,
-  "estimatedFinish": "2026-10-22T09:22:50+00:00",
-  "estimateMinutes": 1280
+  "minutesRemaining": 1420,
+  "estimatedFinish": "2026-10-22T08:45:03+00:00",
+  "estimateMinutes": 1240
  },
  "lanes": [
   {
@@ -61,10 +61,10 @@
   },
   {
    "worker": "Claude",
-   "game": "llm-game-of-life",
-   "task": "llm life obvious game",
-   "since": "2026-10-21T11:49:52+00:00",
-   "activity": "2026-10-21T12:00:38+00:00",
+   "game": "tractatus-tree",
+   "task": "tractatus real sentences and pages",
+   "since": "2026-10-21T12:03:26+00:00",
+   "activity": "2026-10-21T12:03:34+00:00",
    "commit": null
   }
  ],
@@ -106,7 +106,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 215
+   "changes": 216
   }
  ],
  "houseRules": 23,
@@ -7712,40 +7712,40 @@
    "title": "LLM Game of Life",
    "line": "Watch a language model tend a living grid.",
    "url": "https://chenhsieh.github.io/llm-game-of-life/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Check for a game core",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/llm-game-of-life-1.webp",
    "firstSeen": "2026-08-16T14:19:00+00:00",
-   "lastChange": "2026-10-21T12:00:38+00:00",
+   "lastChange": "2026-10-21T12:03:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 12,
     "earlierUsdEst": 43.2,
-    "totalUsdEst": 43.2
+    "totalUsdEst": 46.8
    },
    "tasks": [
     {
      "title": "llm life obvious game",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Turn the language-model Game of Life page into a game on its first screen: pin the words the machine will leave alone, watch its real rewrite, essay behind a Why button.",
-     "since": "2026-10-21T11:49:52+00:00",
-     "done": null,
+     "since": "2026-10-20T20:06:42+00:00",
+     "done": "2026-10-20T20:06:42+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1l10 DONE, live: https://chenhsieh.github.io/llm-game-of-life/ (main , gh-pages ; live bytes match for index/game/levels/css/why/redirect/data)."
     },
     {
      "title": "llm game of life core",
@@ -7764,9 +7764,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": {
     "date": "2026-10-20",
@@ -7774,8 +7774,14 @@
     "note": "Still reads as an essay; make the game obvious"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T12:03:22+00:00",
+     "ok": true,
+     "note": "841 Nots game first screen live, essay behind Why, main",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T12:00:22+00:00",
      "ok": true,
@@ -7840,12 +7846,6 @@
      "at": "2026-08-16T14:25:28+00:00",
      "ok": true,
      "note": "README: note live Pages URL and its public-visibility caveat",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-08-16T14:19:29+00:00",
-     "ok": true,
-     "note": "Sync make_artifact.py/export_site_data.py fixes (cp -i alias silently skipped the previous copy)",
      "source": "main commit"
     }
    ]
@@ -15287,14 +15287,14 @@
    "title": "Tractatus Tree",
    "line": "The numbered pages of a 1921 book are shuffled into a few.",
    "url": "https://chenhsieh.github.io/tractatus-tree/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Teach the philosophy gradually through play, not as homework",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/tractatus-tree-1.webp",
    "firstSeen": "2026-10-16T01:51:20+00:00",
-   "lastChange": "2026-10-20T23:21:35+00:00",
+   "lastChange": "2026-10-21T12:03:34+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -15310,10 +15310,10 @@
    "tasks": [
     {
      "title": "tractatus real sentences and pages",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Tractatus: put the real 1922 sentences on the pages (part 1 of the split).",
-     "since": "2026-10-20T23:21:35+00:00",
+     "since": "2026-10-21T12:03:26+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -15380,8 +15380,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
