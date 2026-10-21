@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T11:29:42+00:00",
+ "generated": "2026-10-21T11:31:54+00:00",
  "ops": {
   "count": 18,
   "notes": [
@@ -23,38 +23,38 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 35,
+    "queued": 34,
     "running": 0,
     "doneToday": 60,
-    "minutes": 1400,
-    "estimateMinutes": 1400
+    "minutes": 1360,
+    "estimateMinutes": 1360
    },
    "Claude": {
     "queued": 1,
-    "running": 0,
+    "running": 1,
     "doneToday": 6,
-    "minutes": 60,
-    "estimateMinutes": 60
+    "minutes": 120,
+    "estimateMinutes": 120
    }
   },
-  "queued": 36,
-  "running": 0,
+  "queued": 35,
+  "running": 1,
   "doneToday": 66,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 1460,
-  "estimatedFinish": "2026-10-22T10:49:42+00:00",
-  "estimateMinutes": 1400
+  "minutesRemaining": 1480,
+  "estimatedFinish": "2026-10-22T10:11:54+00:00",
+  "estimateMinutes": 1360
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "chai-boil",
-   "task": "P1CB05_chai kitchens framework",
-   "since": "2026-10-21T10:52:26+00:00",
-   "activity": "2026-10-21T11:21:24+00:00",
+   "task": "P1CB06_chai kitchen unlocks content",
+   "since": "2026-10-21T11:29:47+00:00",
+   "activity": "2026-10-21T11:29:48+00:00",
    "commit": null
   }
  ],
@@ -1389,26 +1389,26 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/chai-boil-1.webp",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-21T11:29:42+00:00",
+   "lastChange": "2026-10-21T11:29:48+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 5,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 3,
     "codexTokens": 1071928,
     "codexUsdEst": 1.29,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 18,
-    "earlierUsdEst": 64.8,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 17,
+    "earlierUsdEst": 61.2,
     "totalUsdEst": 72.82
    },
    "tasks": [
     {
-     "title": "P1CB05_chai kitchens framework",
+     "title": "P1CB06_chai kitchen unlocks content",
      "state": "running",
      "worker": "Claude",
-     "plan": "Chai Boil: kitchens that each answer the flame differently, with a kitchen select screen; gas ring and street stall first.",
-     "since": "2026-10-21T10:52:26+00:00",
+     "plan": "Chai Boil: clay stove, copper pot on charcoal, induction hob and a night platform, each unlocked by brewing milestones.",
+     "since": "2026-10-21T11:29:47+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1418,18 +1418,18 @@
      "result": ""
     },
     {
-     "title": "P1CB06_chai kitchen unlocks content",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Chai Boil: clay stove, copper pot on charcoal, induction hob and a night platform, each unlocked by brewing milestones.",
-     "since": "2026-10-21T03:09:54+00:00",
-     "done": null,
+     "title": "P1CB05_chai kitchens framework",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Chai Boil: kitchens that each answer the flame differently, with a kitchen select screen; gas ring and street stall first.",
+     "since": "2026-10-21T10:52:26+00:00",
+     "done": "2026-10-21T10:52:26+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: kitchens: a Kitchens screen, a home gas ring and a street stall kettle (main -> , rollback tag pre-kitchens-cb05)"
     },
     {
      "title": "P1CB03_chai reward juice",
@@ -1517,10 +1517,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 8
+    "done": 9
    },
    "verdict": null,
    "needsYou": null,
