@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T16:02:38+00:00",
+ "generated": "2026-10-21T16:04:51+00:00",
  "ops": {
   "count": 24,
   "notes": [
@@ -28,10 +28,10 @@
   "workers": {
    "Codex": {
     "queued": 80,
-    "running": 4,
+    "running": 3,
     "doneToday": 74,
-    "minutes": 3360,
-    "estimateMinutes": 840
+    "minutes": 3320,
+    "estimateMinutes": 1107
    },
    "Claude": {
     "queued": 1,
@@ -42,15 +42,15 @@
    }
   },
   "queued": 81,
-  "running": 5,
+  "running": 4,
   "doneToday": 90,
   "lanes": {
-   "Codex": 4,
+   "Codex": 3,
    "Claude": 1
   },
-  "minutesRemaining": 3480,
-  "estimatedFinish": "2026-10-22T06:02:38+00:00",
-  "estimateMinutes": 840
+  "minutesRemaining": 3440,
+  "estimatedFinish": "2026-10-22T10:31:51+00:00",
+  "estimateMinutes": 1107
  },
  "lanes": [
   {
@@ -66,7 +66,7 @@
    "game": "flying-white",
    "task": "P1FW43_flying white real models and masks",
    "since": "2026-10-21T15:58:17+00:00",
-   "activity": "2026-10-21T16:02:38+00:00",
+   "activity": "2026-10-21T16:04:34+00:00",
    "commit": null
   },
   {
@@ -74,7 +74,7 @@
    "game": "mirror-hold",
    "task": "P1MH52_mirror hold woodblock look prints",
    "since": "2026-10-21T15:50:54+00:00",
-   "activity": "2026-10-21T16:02:26+00:00",
+   "activity": "2026-10-21T16:04:45+00:00",
    "commit": {
     "at": "2026-10-21T15:58:56+00:00",
     "subject": "wip: P1MH52_mirror-hold-woodblock-look-prints (Codex lane autosave 11:58)"
@@ -82,25 +82,17 @@
   },
   {
    "worker": "Codex",
-   "game": "align-hero",
-   "task": "P1SD12_studio standard align hero",
-   "since": "2026-10-21T15:53:34+00:00",
-   "activity": "2026-10-21T15:54:08+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Codex",
    "game": "biosteganography",
    "task": "P1SD13_studio standard biosteganography",
    "since": "2026-10-21T15:51:12+00:00",
-   "activity": "2026-10-21T16:02:33+00:00",
+   "activity": "2026-10-21T16:04:51+00:00",
    "commit": {
     "at": "2026-10-21T15:59:16+00:00",
     "subject": "wip: P1SD13_studio-standard-biosteganography (Codex lane autosave 11:59)"
    }
   }
  ],
- "codexLanes": 4,
+ "codexLanes": 3,
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "rates": {
@@ -138,7 +130,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 266
+   "changes": 267
   }
  ],
  "houseRules": 23,
@@ -444,10 +436,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 54.26,
+   "costTotalUsd": 57.86,
    "latestChange": {
     "text": "see",
-    "at": "2026-10-21T15:38:08+00:00"
+    "at": "2026-10-21T16:04:14+00:00"
    },
    "promo": {
     "files": {
@@ -461,14 +453,14 @@
    "title": "Align Hero",
    "line": "Two lines of letters, one slipped. Find where it slipped.",
    "url": "https://chenhsieh.github.io/align-hero/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "promo/align-hero/first.jpg",
    "firstSeen": "2026-08-23T15:04:13+00:00",
-   "lastChange": "2026-10-21T15:54:08+00:00",
+   "lastChange": "2026-10-21T16:04:14+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -477,25 +469,11 @@
     "codexTokens": 212697,
     "codexUsdEst": 0.26,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 13,
-    "earlierUsdEst": 46.8,
-    "totalUsdEst": 54.26
+    "earlierRounds": 14,
+    "earlierUsdEst": 50.4,
+    "totalUsdEst": 57.86
    },
    "tasks": [
-    {
-     "title": "P1SD12_studio standard align hero",
-     "state": "running",
-     "worker": "Codex",
-     "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T15:53:34+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "hero suite reskin",
      "state": "done",
@@ -541,7 +519,7 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
     "done": 3
    },
@@ -550,9 +528,15 @@
     "verdict": "revise",
     "note": "Bioinformatics round: make the idea legible in the first"
    },
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T16:04:14+00:00",
+     "ok": false,
+     "note": "see",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T15:38:08+00:00",
      "ok": false,
@@ -617,12 +601,6 @@
      "at": "2026-10-15T00:28:40+00:00",
      "ok": true,
      "note": "feat: truthful move feedback, calmer first minute, demo hook",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-05T03:01:58+00:00",
-     "ok": true,
-     "note": "Add a favicon (data-URI SVG, letter badge on the game's own palette)",
      "source": "main commit"
     }
    ]
@@ -1255,7 +1233,7 @@
    "shelfNote": "",
    "image": "promo/biosteganography/first.jpg",
    "firstSeen": "2026-08-20T03:51:36+00:00",
-   "lastChange": "2026-10-21T16:02:33+00:00",
+   "lastChange": "2026-10-21T16:04:51+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -5090,7 +5068,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T05:18:25+00:00",
-   "lastChange": "2026-10-21T16:02:38+00:00",
+   "lastChange": "2026-10-21T16:04:34+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -9920,7 +9898,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/mirror-hold-1.webp",
    "firstSeen": "2026-10-14T23:09:04+00:00",
-   "lastChange": "2026-10-21T16:02:26+00:00",
+   "lastChange": "2026-10-21T16:04:45+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
