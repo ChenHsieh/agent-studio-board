@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T06:30:10+00:00",
+ "generated": "2026-10-21T06:32:22+00:00",
  "ops": {
-  "count": 47,
+  "count": 48,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -26,29 +26,29 @@
   "workers": {
    "Codex": {
     "queued": 13,
-    "running": 3,
-    "doneToday": 47,
-    "minutes": 640,
-    "estimateMinutes": 320
+    "running": 1,
+    "doneToday": 48,
+    "minutes": 560,
+    "estimateMinutes": 560
    },
    "Claude": {
-    "queued": 35,
+    "queued": 36,
     "running": 1,
     "doneToday": 1,
-    "minutes": 528,
-    "estimateMinutes": 528
+    "minutes": 540,
+    "estimateMinutes": 540
    }
   },
-  "queued": 48,
-  "running": 4,
-  "doneToday": 48,
+  "queued": 49,
+  "running": 2,
+  "doneToday": 49,
   "lanes": {
-   "Codex": 2,
+   "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 1168,
-  "estimatedFinish": "2026-10-21T15:18:10+00:00",
-  "estimateMinutes": 528
+  "minutesRemaining": 1100,
+  "estimatedFinish": "2026-10-21T15:52:22+00:00",
+  "estimateMinutes": 560
  },
  "lanes": [
   {
@@ -61,25 +61,6 @@
   },
   {
    "worker": "Codex",
-   "game": "material-boards",
-   "task": "material boards light budget",
-   "since": "2026-10-21T06:25:05+00:00",
-   "activity": "2026-10-21T06:29:15+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Codex",
-   "game": "floor-area",
-   "task": "floor area rooftop",
-   "since": "2026-10-21T05:01:08+00:00",
-   "activity": "2026-10-21T06:29:30+00:00",
-   "commit": {
-    "at": "2026-10-21T06:29:30+00:00",
-    "subject": "wip: Q3g_floor-area-rooftop (Codex lane autosave 02:29)"
-   }
-  },
-  {
-   "worker": "Codex",
    "game": "lens-screen",
    "task": "lens screen studio",
    "since": "2026-10-21T06:24:15+00:00",
@@ -87,7 +68,7 @@
    "commit": null
   }
  ],
- "codexLanes": 2,
+ "codexLanes": 1,
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "rates": {
@@ -125,7 +106,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 169
+   "changes": 172
   }
  ],
  "houseRules": 23,
@@ -4157,14 +4138,14 @@
    "title": "Floor Area",
    "line": "Drop floor slabs from a crane to fill a stepped skyline with no gaps.",
    "url": "https://chenhsieh.github.io/floor-area/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "queued",
+   "who": "Claude",
    "priority": "P3",
    "priorityNote": "Find a creative twist",
    "shelfNote": "not fun enough; credit removed (R06).",
    "image": "https://chenhsieh.github.io/play-lab/images/games/floor-area-1.webp",
    "firstSeen": "2026-10-16T01:23:59+00:00",
-   "lastChange": "2026-10-21T06:29:30+00:00",
+   "lastChange": "2026-10-21T06:31:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -4173,26 +4154,23 @@
     "codexTokens": 137610,
     "codexUsdEst": 0.17,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
-    "totalUsdEst": 18.17
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
+    "totalUsdEst": 21.77
    },
    "tasks": [
     {
      "title": "floor area rooftop",
-     "state": "running",
-     "worker": "Codex",
+     "state": "queued",
+     "worker": "Claude",
      "plan": "",
-     "since": "2026-10-21T05:01:08+00:00",
+     "since": "2026-10-21T06:31:22+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-21T06:29:30+00:00",
-      "subject": "wip: Q3g_floor-area-rooftop (Codex lane autosave 02:29)"
-     },
+     "commit": null,
      "result": ""
     },
     {
@@ -4281,8 +4259,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
     "done": 6
    },
@@ -4290,6 +4268,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T06:31:22+00:00",
+     "ok": false,
+     "note": "Q3g_floor-area-rooftop handed to Claude: Codex hit the 90 min cap;",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T02:35:01+00:00",
      "ok": true,
@@ -8374,40 +8358,40 @@
    "title": "Material Boards",
    "line": "Drop mirror, glass and wood tiles on a pinned sample.",
    "url": "https://chenhsieh.github.io/material-boards/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Find a creative twist for the classic puzzle",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/material-boards-1.webp",
    "firstSeen": "2026-10-15T21:49:26+00:00",
-   "lastChange": "2026-10-21T06:29:15+00:00",
+   "lastChange": "2026-10-21T06:30:17+00:00",
    "cost": {
     "apiUsd": 14.39,
-    "codexRuns": 1,
+    "codexRuns": 2,
     "claudeRuns": 1,
     "apiRuns": 4,
-    "codexTokens": 165051,
-    "codexUsdEst": 0.2,
+    "codexTokens": 662317,
+    "codexUsdEst": 0.79,
     "claudeUsdEst": 3.6,
     "earlierRounds": 6,
     "earlierUsdEst": 21.6,
-    "totalUsdEst": 39.79
+    "totalUsdEst": 40.38
    },
    "tasks": [
     {
      "title": "material boards light budget",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "",
-     "since": "2026-10-21T06:25:05+00:00",
-     "done": null,
+     "since": "2026-10-21T04:13:00+00:00",
+     "done": "2026-10-21T04:13:00+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 84,
+     "tokens": 497266,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: let players spend the lamp's light"
     },
     {
      "title": "material boards core",
@@ -8496,14 +8480,20 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T06:30:17+00:00",
+     "ok": true,
+     "note": "feat: let players spend the lamp's light",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T02:35:01+00:00",
      "ok": true,
@@ -8569,12 +8559,6 @@
      "ok": true,
      "note": "Initial commit",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-15T21:49:26+00:00",
-     "ok": true,
-     "note": "START job V1=",
-     "source": "board note"
     }
    ]
   },
