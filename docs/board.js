@@ -130,6 +130,24 @@ function taskCounts(g) {
   return `<span class="task-counts" aria-label="Task status: ${n.queued || 0} queued, ${n.running || 0} running, ${n.waitingDesign || 0} waiting for design, ${n.done || 0} done">Queued ${n.queued || 0} · Running ${n.running || 0} · Waiting design ${n.waitingDesign || 0} · Done ${n.done || 0}</span>`;
 }
 
+const COST_TIP = 'Estimate, not a bill. Codex runs are tokens at the board rate, Claude runs are estimated per run, and earlier rounds are estimated per round.';
+function glanceHtml(g) {
+  const next = g.nextTask ? `Next: ${esc(g.nextTask)}` : 'Nothing queued';
+  const cost = g.costTotalUsd != null ? g.costTotalUsd : (g.cost && g.cost.totalUsdEst) || 0;
+  const lc = g.latestChange;
+  const upd = lc && lc.text ? `Updated ${esc(ago(lc.at))}: ${esc(lc.text)}` : (g.lastChange ? `Updated ${esc(ago(g.lastChange))}` : '');
+  return `<span class="glance"><span class="g-next">${next}</span><span class="g-cost" title="${esc(COST_TIP)}" aria-label="est. $${Math.round(cost)}. ${esc(COST_TIP)}">est. $${Math.round(cost)} <i aria-hidden="true">i</i></span>${upd ? `<span class="g-upd">${upd}</span>` : ''}</span>`;
+}
+
+function promoHtml(g) {
+  const f = g.promo && g.promo.files;
+  if (!f || !Object.keys(f).length) return '';
+  const items = [['first', 'First screen', 'first'], ['play', 'In play', 'play'], ['card', 'Share card', 'card']].filter(([k]) => f[k]);
+  return `<h3>Promo images</h3><div class="promo" role="list">${items.map(([k, label, cls]) => `<figure class="pi ${cls}" role="listitem">
+    <img src="${esc(f[k])}" alt="${esc(g.title)}: ${esc(label.toLowerCase())}${g.promo.caption && k === 'card' ? ', ' + esc(g.promo.caption) : ''}" loading="lazy" decoding="async">
+    <figcaption><button type="button" class="pbtn" data-share="${esc(f[k])}" data-title="${esc(g.title)}" data-url="${esc(g.url)}" data-name="${esc(g.id)}-${k}.jpg">Share</button><span class="plabel">${esc(label)}</span></figcaption></figure>`).join('')}</div>`;
+}
+
 function gameHtml(g) {
   const img = g.image ? `<img class="thumb" src="${esc(g.image)}" alt="" loading="lazy">` : `<span class="thumb blank" aria-hidden="true">${esc(g.title[0])}</span>`;
   const repoUrl = `https://github.com/ChenHsieh/${encodeURIComponent(g.repo || g.id)}`;
@@ -145,12 +163,13 @@ function gameHtml(g) {
   return `<li class="game${open.has(g.id) ? ' open' : ''}" data-id="${esc(g.id)}">
   <button class="row" aria-expanded="${open.has(g.id)}">${img}<span class="name">${esc(g.title)}</span>
     <span class="meta"><span class="st ${esc(g.stage)}">${esc(g.stage)}</span>${g.verdict ? `<span class="vd ${esc(g.verdict.verdict)}">${esc(g.verdict.verdict)}</span>` : ''}<span class="p">${esc(g.priority || '')}</span></span>
-    <span class="line">${g.needsYou ? '<b class="ask">To do:</b> ' : ''}${esc(whatToDo(g))}</span></button>
+    <span class="line">${g.needsYou ? '<b class="ask">To do:</b> ' : ''}${esc(whatToDo(g))}</span>${glanceHtml(g)}</button>
   <a class="play-link" href="${esc(g.url)}" target="_blank" rel="noopener" aria-label="Play ${esc(g.title)}">Play</a>
   <div class="detail">
-    <p class="detail-links"><a href="${esc(g.url)}" target="_blank" rel="noopener">Play</a><a href="${esc(repoUrl)}" target="_blank" rel="noopener">Repo</a></p>
+    <p class="detail-links"><a href="${esc(g.url)}" target="_blank" rel="noopener">Play</a><a href="${esc(repoUrl)}" target="_blank" rel="noopener">Repo</a><button type="button" class="pbtn" data-copy="${esc(g.url)}">Copy link</button></p>
+    ${promoHtml(g)}
     ${g.line ? `<p>${esc(g.line)}</p>` : ''}
-    <p class="cost">${costLine(g.cost)}</p>
+    <p class="cost">${costLine(g.cost)}<br><small class="muted">${esc(COST_TIP)}</small></p>
     ${g.needsYou ? `<p class="said">${esc(g.needsYou)}<small>Waiting for a human</small></p>` : ''}
     ${g.verdict ? `<p class="said">${esc(g.verdict.verdict)}: ${esc(g.verdict.note)}<small>Verdict, ${esc(g.verdict.date)}</small></p>` : ''}
     ${g.shelfNote ? `<p class="said">${esc(g.shelfNote)}<small>Why it is on the shelf</small></p>` : ''}
@@ -214,7 +233,25 @@ function render() {
   $('#games').innerHTML = html || `<li class="empty">${emptyText || 'Nothing matches.'}</li>`;
 }
 
+async function sharePromo(btn) {
+  const { share, title, url, name } = btn.dataset; const label = btn.textContent;
+  const download = (blob) => { const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name; document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 4000); };
+  try {
+    const blob = await (await fetch(share)).blob();
+    const file = new File([blob], name, { type: blob.type || 'image/jpeg' });
+    if (navigator.canShare && navigator.canShare({ files: [file] })) { await navigator.share({ files: [file], title, url }); }
+    else { download(blob); btn.textContent = 'Saved'; setTimeout(() => (btn.textContent = label), 1500); }
+  } catch (err) { if (err && err.name !== 'AbortError') { btn.textContent = 'Could not share'; setTimeout(() => (btn.textContent = label), 1500); } }
+}
 document.addEventListener('click', (e) => {
+  const sh = e.target.closest('[data-share]');
+  if (sh) { sharePromo(sh); return; }
+  const cp = e.target.closest('[data-copy]');
+  if (cp) {
+    const label = cp.textContent; const done = () => { cp.textContent = 'Copied'; setTimeout(() => (cp.textContent = label), 1500); };
+    (navigator.clipboard ? navigator.clipboard.writeText(cp.dataset.copy) : Promise.reject()).then(done, () => { const t = document.createElement('textarea'); t.value = cp.dataset.copy; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); done(); } catch {} t.remove(); });
+    return;
+  }
   const tab = e.target.closest('[data-view]');
   if (tab && data) { view = tab.dataset.view; saveChoices(); render(); return; }
   const chip = e.target.closest('.chip');
