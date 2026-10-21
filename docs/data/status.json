@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T17:14:37+00:00",
+ "generated": "2026-10-21T17:16:49+00:00",
  "ops": {
-  "count": 28,
+  "count": 29,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -23,30 +23,30 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 67,
+    "queued": 66,
     "running": 3,
     "doneToday": 80,
-    "minutes": 2800,
-    "estimateMinutes": 934
+    "minutes": 2760,
+    "estimateMinutes": 920
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 18,
+    "doneToday": 19,
     "minutes": 180,
     "estimateMinutes": 180
    }
   },
-  "queued": 68,
+  "queued": 67,
   "running": 5,
-  "doneToday": 98,
+  "doneToday": 99,
   "lanes": {
    "Codex": 3,
    "Claude": 1
   },
-  "minutesRemaining": 2980,
-  "estimatedFinish": "2026-10-22T08:48:37+00:00",
-  "estimateMinutes": 934
+  "minutesRemaining": 2940,
+  "estimatedFinish": "2026-10-22T08:36:49+00:00",
+  "estimateMinutes": 920
  },
  "lanes": [
   {
@@ -58,6 +58,14 @@
    "commit": null
   },
   {
+   "worker": "Claude",
+   "game": "llm-game-of-life",
+   "task": "P1LG40_llm life traditional chinese and why",
+   "since": "2026-10-21T17:14:59+00:00",
+   "activity": "2026-10-21T17:15:04+00:00",
+   "commit": null
+  },
+  {
    "worker": "Codex",
    "game": "mirror-hold",
    "task": "P1MH53_mirror hold ladder ranks 1953",
@@ -66,19 +74,11 @@
    "commit": null
   },
   {
-   "worker": "Claude",
-   "game": "readable-nonsense",
-   "task": "P1RN40_readable nonsense start error",
-   "since": "2026-10-21T17:03:31+00:00",
-   "activity": "2026-10-21T17:13:07+00:00",
-   "commit": null
-  },
-  {
    "worker": "Codex",
    "game": "gif-cities",
    "task": "P1SD19_studio standard gif cities",
    "since": "2026-10-21T17:09:14+00:00",
-   "activity": "2026-10-21T17:14:22+00:00",
+   "activity": "2026-10-21T17:16:49+00:00",
    "commit": {
     "at": "2026-10-21T17:09:15+00:00",
     "subject": "start: P1SD19_studio-standard-gif-cities"
@@ -89,7 +89,7 @@
    "game": "glyph-gates",
    "task": "P1SD20_studio standard glyph gates",
    "since": "2026-10-21T17:13:32+00:00",
-   "activity": "2026-10-21T17:14:34+00:00",
+   "activity": "2026-10-21T17:16:49+00:00",
    "commit": {
     "at": "2026-10-21T17:13:33+00:00",
     "subject": "start: P1SD20_studio-standard-glyph-gates"
@@ -134,7 +134,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 294
+   "changes": 295
   }
  ],
  "houseRules": 23,
@@ -5774,7 +5774,7 @@
    "shelfNote": "",
    "image": "promo/gif-cities/first.jpg",
    "firstSeen": "2026-10-16T01:59:00+00:00",
-   "lastChange": "2026-10-21T17:14:22+00:00",
+   "lastChange": "2026-10-21T17:16:49+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -6170,7 +6170,7 @@
    "shelfNote": "",
    "image": "promo/glyph-gates/first.jpg",
    "firstSeen": "2026-10-13T09:04:24+00:00",
-   "lastChange": "2026-10-21T17:14:34+00:00",
+   "lastChange": "2026-10-21T17:16:49+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -8652,7 +8652,7 @@
    ]
   },
   {
-   "nextTask": "LLM Game of Life: Traditional Chinese by default...",
+   "nextTask": null,
    "costTotalUsd": 46.8,
    "latestChange": {
     "text": "841 Nots game first screen live, essay behind Why, main",
@@ -8664,14 +8664,14 @@
    "title": "LLM Game of Life",
    "line": "Watch a language model tend a living grid.",
    "url": "https://chenhsieh.github.io/llm-game-of-life/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P3",
    "priorityNote": "Check for a game core",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/llm-game-of-life-1.webp",
    "firstSeen": "2026-08-16T14:19:00+00:00",
-   "lastChange": "2026-10-21T13:57:17+00:00",
+   "lastChange": "2026-10-21T17:15:04+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -8687,10 +8687,10 @@
    "tasks": [
     {
      "title": "P1LG40_llm life traditional chinese and why",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "LLM Game of Life: Traditional Chinese by default with no simplified text, and a clear why, goal and strategy in the first minute.",
-     "since": "2026-10-21T13:57:17+00:00",
+     "since": "2026-10-21T17:14:59+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -8729,8 +8729,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
@@ -19187,10 +19187,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 57.79,
+   "costTotalUsd": 61.39,
    "latestChange": {
-    "text": "fix: render Zhuyin and poem text reliably on phones",
-    "at": "2026-10-21T07:04:00+00:00"
+    "text": "P1RN40 start error fixed, live (merge ): old saves dropped not fatal; cause was stale...",
+    "at": "2026-10-21T17:14:58+00:00"
    },
    "promo": null,
    "id": "readable-nonsense",
@@ -19198,34 +19198,34 @@
    "title": "阿嬤讀得出來",
    "line": "A famous Tang poem line is printed as fake glyphs with.",
    "url": "https://chenhsieh.github.io/readable-nonsense/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Start error blocks play",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/readable-nonsense-1.webp",
    "firstSeen": "2026-10-15T23:26:29+00:00",
-   "lastChange": "2026-10-21T17:13:07+00:00",
+   "lastChange": "2026-10-21T17:14:58+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 3,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 697578,
     "codexUsdEst": 0.84,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 14,
     "earlierUsdEst": 50.4,
-    "totalUsdEst": 57.79
+    "totalUsdEst": 61.39
    },
    "tasks": [
     {
      "title": "P1RN40_readable nonsense start error",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Fix the Readable Nonsense start error: validate and migrate old saves so the game always starts.",
-     "since": "2026-10-21T17:03:31+00:00",
-     "done": null,
+     "since": "2026-10-21T13:57:16+00:00",
+     "done": "2026-10-21T13:57:16+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -19292,9 +19292,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": {
     "date": "2026-10-21",
@@ -19302,8 +19302,14 @@
     "note": "Start error"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T17:14:58+00:00",
+     "ok": true,
+     "note": "P1RN40 start error fixed, live (merge ): old saves dropped not fatal; cause was stale saved board replayed against new rules; test/saves.mjs 30 cases. Pre-existing: test/gates.sh DECISION FAIL (rules untouched)",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T07:04:00+00:00",
      "ok": true,
@@ -19369,12 +19375,6 @@
      "ok": true,
      "note": "fix: reveal reading rules as they arrive",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-17T22:43:45+00:00",
-     "ok": true,
-     "note": "CREDIT line on the How to play card under the rules, EN+ZH (saved post of invented phonetic characters, poster unknown); README already credited; live",
-     "source": "board note"
     }
    ]
   }
