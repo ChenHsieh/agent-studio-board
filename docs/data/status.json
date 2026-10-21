@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T23:08:37+00:00",
+ "generated": "2026-10-21T23:10:49+00:00",
  "ops": {
-  "count": 27,
+  "count": 28,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -30,43 +30,40 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 27,
+    "queued": 26,
     "running": 1,
-    "doneToday": 40,
-    "minutes": 432,
-    "estimateMinutes": 432
+    "doneToday": 41,
+    "minutes": 420,
+    "estimateMinutes": 420
    }
   },
-  "queued": 27,
+  "queued": 26,
   "running": 1,
-  "doneToday": 135,
+  "doneToday": 136,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 432,
-  "estimatedFinish": "2026-10-22T06:20:37+00:00",
-  "estimateMinutes": 432
+  "minutesRemaining": 420,
+  "estimatedFinish": "2026-10-22T06:10:49+00:00",
+  "estimateMinutes": 420
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "thumb-stand",
-   "task": "P1TS51_thumb stand panel page core",
-   "since": "2026-10-21T22:43:59+00:00",
-   "activity": "2026-10-21T23:08:36+00:00",
-   "commit": {
-    "at": "2026-10-21T23:08:30+00:00",
-    "subject": "test: daily keep test reads English copy explicitly (Traditional Chinese is the default now)"
-   }
+   "game": "tractatus-tree",
+   "task": "P1TT40_tractatus reveal text and reader",
+   "since": "2026-10-21T23:09:39+00:00",
+   "activity": "2026-10-21T23:09:43+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 0,
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 31,
-  "usdEst": 111.6,
+  "runs": 32,
+  "usdEst": 115.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -104,7 +101,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 381
+   "changes": 382
   }
  ],
  "houseRules": 23,
@@ -17282,10 +17279,10 @@
   },
   {
    "nextTask": "Thumb Stand: the strongman drawn in every panel...",
-   "costTotalUsd": 73.65,
+   "costTotalUsd": 77.25,
    "latestChange": {
-    "text": "cross-functional rework design: manga panel page, one-thumb swap, plumb lines; reflex...",
-    "at": "2026-10-21T14:41:05+00:00"
+    "text": "P1TS51 panel page core live: reflex deleted, one-thumb swap, hold-to-play; tests+gates...",
+    "at": "2026-10-21T23:09:39+00:00"
    },
    "promo": null,
    "id": "thumb-stand",
@@ -17293,44 +17290,27 @@
    "title": "Thumb Stand",
    "line": "",
    "url": "https://chenhsieh.github.io/thumb-stand/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Claude",
    "priority": "P1",
    "priorityNote": "Total rework planned by a cross-functional lead",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/thumb-stand-1.webp",
    "firstSeen": "2026-10-15T23:29:31+00:00",
-   "lastChange": "2026-10-21T23:08:36+00:00",
+   "lastChange": "2026-10-21T23:09:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 5,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 0,
     "codexTokens": 1373372,
     "codexUsdEst": 1.65,
-    "claudeUsdEst": 7.2,
+    "claudeUsdEst": 10.8,
     "earlierRounds": 18,
     "earlierUsdEst": 64.8,
-    "totalUsdEst": 73.65
+    "totalUsdEst": 77.25
    },
    "tasks": [
-    {
-     "title": "P1TS51_thumb stand panel page core",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Thumb Stand: reorder manga panels with one thumb, every panel shows his plumb line; the catch reflex goes",
-     "since": "2026-10-21T22:43:59+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-21T23:08:30+00:00",
-      "subject": "test: daily keep test reads English copy explicitly (Traditional Chinese is the default now)"
-     },
-     "result": ""
-    },
     {
      "title": "P1TS52_thumb stand panel look and bench",
      "state": "queued",
@@ -17372,6 +17352,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1TS51_thumb stand panel page core",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Thumb Stand: reorder manga panels with one thumb, every panel shows his plumb line; the catch reflex goes",
+     "since": "2026-10-21T21:08:26+00:00",
+     "done": "2026-10-21T21:08:26+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Panel page core live (main ). Reflex deleted; one-finger drag/tap swap; hold-to-play in bottom third; tip animation on a 會倒 panel. Tests: panels.test (42), panels_touch real CDP touch 390+320 (48), browser_test 54,..."
     },
     {
      "title": "P1TS50_thumb stand cross functional rework",
@@ -17432,9 +17426,9 @@
    ],
    "taskCounts": {
     "queued": 3,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 7
+    "done": 8
    },
    "verdict": {
     "date": "2026-10-21",
@@ -17444,6 +17438,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T23:09:39+00:00",
+     "ok": true,
+     "note": "P1TS51 panel page core live: reflex deleted, one-thumb swap, hold-to-play; tests+gates green",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T14:41:05+00:00",
      "ok": true,
@@ -17509,12 +17509,6 @@
      "ok": true,
      "note": "daily-keep- live: review of the Today lock; an old save that already played a daily keeps Today open (was re-locked, even Done today greyed out);",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-18T08:30:29+00:00",
-     "ok": true,
-     "note": "fix: Today stays open for old saves;",
-     "source": "main commit"
     }
    ]
   },
@@ -17775,7 +17769,7 @@
    ]
   },
   {
-   "nextTask": "Tractatus Tree: tap an assembled page to read...",
+   "nextTask": "Tractatus Tree: a humorous or dark spin, a...",
    "costTotalUsd": 54.28,
    "latestChange": {
     "text": "round 16 The book: 7 won by silence, trunk squares, discovery beats, main",
@@ -17787,14 +17781,14 @@
    "title": "Tractatus Tree",
    "line": "The numbered pages of a 1921 book are shuffled into a few.",
    "url": "https://chenhsieh.github.io/tractatus-tree/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Teach the philosophy gradually through play, not as homework",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/tractatus-tree-1.webp",
    "firstSeen": "2026-10-16T01:51:20+00:00",
-   "lastChange": "2026-10-21T21:08:25+00:00",
+   "lastChange": "2026-10-21T23:09:43+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -17810,10 +17804,10 @@
    "tasks": [
     {
      "title": "P1TT40_tractatus reveal text and reader",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Tractatus Tree: tap an assembled page to read its text, and a reader for the collection.",
-     "since": "2026-10-21T21:08:25+00:00",
+     "since": "2026-10-21T23:09:39+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -17908,8 +17902,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 5
    },
