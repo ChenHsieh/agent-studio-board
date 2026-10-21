@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T03:03:39+00:00",
+ "generated": "2026-10-21T03:05:51+00:00",
  "ops": {
   "count": 21,
   "notes": [
@@ -32,23 +32,23 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 121,
+    "queued": 120,
     "running": 4,
-    "doneToday": 26,
-    "minutes": 1740,
-    "estimateMinutes": 1740
+    "doneToday": 27,
+    "minutes": 1728,
+    "estimateMinutes": 1728
    }
   },
-  "queued": 121,
+  "queued": 120,
   "running": 4,
-  "doneToday": 47,
+  "doneToday": 48,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 1740,
-  "estimatedFinish": "2026-10-22T08:03:39+00:00",
-  "estimateMinutes": 1740
+  "minutesRemaining": 1728,
+  "estimatedFinish": "2026-10-22T07:53:51+00:00",
+  "estimateMinutes": 1728
  },
  "lanes": [
   {
@@ -70,9 +70,9 @@
   {
    "worker": "Claude",
    "game": "colony-count",
-   "task": "colony themes screen",
-   "since": "2026-10-21T02:44:23+00:00",
-   "activity": "2026-10-21T03:02:34+00:00",
+   "task": "colony tiling visuals",
+   "since": "2026-10-21T03:04:10+00:00",
+   "activity": "2026-10-21T03:04:30+00:00",
    "commit": null
   },
   {
@@ -80,7 +80,7 @@
    "game": "hallway-posters",
    "task": "hallway posters clear core",
    "since": "2026-10-21T02:39:38+00:00",
-   "activity": "2026-10-21T03:02:45+00:00",
+   "activity": "2026-10-21T03:04:32+00:00",
    "commit": null
   }
  ],
@@ -118,7 +118,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 66
+   "changes": 67
   }
  ],
  "houseRules": 23,
@@ -1635,26 +1635,26 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-21T03:02:34+00:00",
+   "lastChange": "2026-10-21T03:04:30+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
-    "claudeRuns": 8,
+    "claudeRuns": 9,
     "apiRuns": 8,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 28.8,
+    "claudeUsdEst": 32.4,
     "earlierRounds": 24,
     "earlierUsdEst": 86.4,
-    "totalUsdEst": 138.08
+    "totalUsdEst": 141.68
    },
    "tasks": [
     {
-     "title": "colony themes screen",
+     "title": "colony tiling visuals",
      "state": "running",
      "worker": "Claude",
-     "plan": "A sets screen where any set can be tried on a small plate, locked sets show their progress and the next plate to play, and the food sets get natural shapes and colours.",
-     "since": "2026-10-21T02:44:23+00:00",
+     "plan": "Redraw the octagon tiling so octagons and small squares look different, neighbours light up on touch, and counts never cover a tile.",
+     "since": "2026-10-21T03:04:10+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1706,20 +1706,6 @@
      "result": ""
     },
     {
-     "title": "colony tiling visuals",
-     "state": "queued",
-     "worker": "Claude",
-     "plan": "Redraw the octagon tiling so octagons and small squares look different, neighbours light up on touch, and counts never cover a tile.",
-     "since": "2026-10-20T21:39:05+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
      "title": "colony incubator round visuals",
      "state": "queued",
      "worker": "Claude",
@@ -1760,13 +1746,27 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1c16 colony drag-to-place: LIVE https://chenhsieh.github.io/colony-count/ (main , rollback tag pre-drag-place). Live app.js/style.css byte-identical to branch."
+    },
+    {
+     "title": "colony theme neutral labels",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Remove colour words from Colony Count so themed pieces label themselves.",
+     "since": "2026-10-21T01:20:58+00:00",
+     "done": "2026-10-21T01:20:58+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1c17 colony-theme-neutral-labels: LIVE (main , https://chenhsieh.github.io/colony-count/, live bytes of app.js, style.css, lessons.js match the build)."
     }
    ],
    "taskCounts": {
-    "queued": 6,
+    "queued": 5,
     "running": 1,
     "waitingDesign": 0,
-    "done": 16
+    "done": 17
    },
    "verdict": {
     "date": "2026-10-20",
@@ -1776,6 +1776,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T03:04:10+00:00",
+     "ok": true,
+     "note": "Sets screen: try-on plate, progress and next-plate button, Wear it on unlock (live )",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T02:44:23+00:00",
      "ok": true,
@@ -1841,12 +1847,6 @@
      "ok": true,
      "note": "studies hidden from menu, own logo top-left; live",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-20T21:32:10+00:00",
-     "ok": true,
-     "note": "fix: the unfinished studies leave the menu and the game wears its own logo",
-     "source": "main commit"
     }
    ]
   },
@@ -5721,7 +5721,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:58:56+00:00",
-   "lastChange": "2026-10-21T03:02:45+00:00",
+   "lastChange": "2026-10-21T03:04:32+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
