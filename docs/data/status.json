@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T12:40:19+00:00",
+ "generated": "2026-10-21T12:42:30+00:00",
  "ops": {
-  "count": 23,
+  "count": 24,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -25,11 +25,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 25,
+    "queued": 24,
     "running": 3,
-    "doneToday": 60,
-    "minutes": 1120,
-    "estimateMinutes": 374
+    "doneToday": 61,
+    "minutes": 1080,
+    "estimateMinutes": 360
    },
    "Claude": {
     "queued": 1,
@@ -39,16 +39,16 @@
     "estimateMinutes": 180
    }
   },
-  "queued": 26,
+  "queued": 25,
   "running": 5,
-  "doneToday": 68,
+  "doneToday": 69,
   "lanes": {
    "Codex": 3,
    "Claude": 1
   },
-  "minutesRemaining": 1300,
-  "estimatedFinish": "2026-10-21T18:54:19+00:00",
-  "estimateMinutes": 374
+  "minutesRemaining": 1260,
+  "estimatedFinish": "2026-10-21T18:42:30+00:00",
+  "estimateMinutes": 360
  },
  "lanes": [
   {
@@ -71,19 +71,8 @@
    "worker": "Codex",
    "game": "silent-disco",
    "task": "P2GF10_silent disco feel pass",
-   "since": "2026-10-21T12:25:05+00:00",
-   "activity": "2026-10-21T12:40:19+00:00",
-   "commit": {
-    "at": "2026-10-21T12:38:20+00:00",
-    "subject": "fix: keep result visible and look pops in frame"
-   }
-  },
-  {
-   "worker": "Codex",
-   "game": "shortest-law",
-   "task": "P2GF12_shortest law feel pass",
-   "since": "2026-10-21T12:37:43+00:00",
-   "activity": "2026-10-21T12:37:25+00:00",
+   "since": "2026-10-21T12:40:53+00:00",
+   "activity": "2026-10-21T12:40:37+00:00",
    "commit": null
   },
   {
@@ -133,7 +122,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 221
+   "changes": 223
   }
  ],
  "houseRules": 23,
@@ -12266,41 +12255,27 @@
    "title": "Shortest Law",
    "line": "",
    "url": "https://chenhsieh.github.io/shortest-law/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T05:07:40+00:00",
-   "lastChange": "2026-10-21T12:37:25+00:00",
+   "lastChange": "2026-10-21T12:42:30+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 1,
     "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 147151,
+    "codexUsdEst": 0.18,
     "claudeUsdEst": 3.6,
     "earlierRounds": 5,
     "earlierUsdEst": 18.0,
-    "totalUsdEst": 21.6
+    "totalUsdEst": 21.78
    },
    "tasks": [
-    {
-     "title": "P2GF12_shortest law feel pass",
-     "state": "running",
-     "worker": "Codex",
-     "plan": "Game-feel pass for shortest-law using the shared juice module and the audit.",
-     "since": "2026-10-21T12:37:43+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2PT10_shortest law calibration art",
      "state": "queued",
@@ -12314,6 +12289,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2GF12_shortest law feel pass",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "Game-feel pass for shortest-law using the shared juice module and the audit.",
+     "since": "2026-10-21T12:25:17+00:00",
+     "done": "2026-10-21T12:25:17+00:00",
+     "reviewed": false,
+     "minutes": 12,
+     "tokens": 147151,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "feat: make every touch answer with a click"
     },
     {
      "title": "P2PT05_shortest law feel",
@@ -12332,14 +12321,20 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": null,
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T12:42:30+00:00",
+     "ok": true,
+     "note": "feat: make every touch answer with a click",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T08:47:45+00:00",
      "ok": true,
@@ -12818,7 +12813,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T16:29:01+00:00",
-   "lastChange": "2026-10-21T12:40:19+00:00",
+   "lastChange": "2026-10-21T12:40:37+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12837,16 +12832,13 @@
      "state": "running",
      "worker": "Codex",
      "plan": "Game-feel pass for silent-disco using the shared juice module and the audit.",
-     "since": "2026-10-21T12:25:05+00:00",
+     "since": "2026-10-21T12:40:53+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-21T12:38:20+00:00",
-      "subject": "fix: keep result visible and look pops in frame"
-     },
+     "commit": null,
      "result": ""
     },
     {
