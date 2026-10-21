@@ -1,15 +1,17 @@
 {
- "generated": "2026-10-21T20:20:50+00:00",
+ "generated": "2026-10-21T20:23:03+00:00",
  "ops": {
-  "count": 25,
+  "count": 27,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
+   "A running task has shown no progress for over 3 hours.",
    "A status note names something that is not a game.",
    "Two tasks share the number P1c09."
   ]
  },
  "about": [
   "A game changed in the last hour with no claimed task on it.",
+  "A running task has shown no progress for over 3 hours.",
   "A status note names something that is not a game.",
   "Two tasks share the number P1c09."
  ],
@@ -23,30 +25,30 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 39,
-    "running": 3,
+    "queued": 37,
+    "running": 4,
     "doneToday": 95,
-    "minutes": 1680,
-    "estimateMinutes": 560
+    "minutes": 1640,
+    "estimateMinutes": 410
    },
    "Claude": {
     "queued": 1,
-    "running": 0,
+    "running": 1,
     "doneToday": 25,
-    "minutes": 60,
-    "estimateMinutes": 60
+    "minutes": 120,
+    "estimateMinutes": 120
    }
   },
-  "queued": 40,
-  "running": 3,
+  "queued": 38,
+  "running": 5,
   "doneToday": 120,
   "lanes": {
-   "Codex": 3,
+   "Codex": 4,
    "Claude": 1
   },
-  "minutesRemaining": 1740,
-  "estimatedFinish": "2026-10-22T05:40:50+00:00",
-  "estimateMinutes": 560
+  "minutesRemaining": 1760,
+  "estimatedFinish": "2026-10-22T03:13:03+00:00",
+  "estimateMinutes": 410
  },
  "lanes": [
   {
@@ -54,7 +56,7 @@
    "game": "remote-viewer",
    "task": "P1SD34_studio standard remote viewer",
    "since": "2026-10-21T19:53:01+00:00",
-   "activity": "2026-10-21T20:20:35+00:00",
+   "activity": "2026-10-21T20:22:57+00:00",
    "commit": {
     "at": "2026-10-21T20:19:49+00:00",
     "subject": "test: follow the Remote Viewer first visit"
@@ -65,7 +67,7 @@
    "game": "directory-handrail",
    "task": "P1SD37_studio standard directory handrail",
    "since": "2026-10-21T20:04:28+00:00",
-   "activity": "2026-10-21T20:20:49+00:00",
+   "activity": "2026-10-21T20:23:03+00:00",
    "commit": {
     "at": "2026-10-21T20:20:22+00:00",
     "subject": "test: check own brand and local midnight"
@@ -76,15 +78,34 @@
    "game": "sockglass",
    "task": "P1SD38_studio standard sockglass",
    "since": "2026-10-21T20:16:02+00:00",
-   "activity": "2026-10-21T20:20:17+00:00",
+   "activity": "2026-10-21T20:22:34+00:00",
    "commit": {
     "at": "2026-10-21T20:16:04+00:00",
     "subject": "start: P1SD38_studio-standard-sockglass"
    }
+  },
+  {
+   "worker": "Codex",
+   "game": "stroke-tops",
+   "task": "P1SD39_studio standard stroke tops",
+   "since": "2026-10-21T20:21:47+00:00",
+   "activity": "2026-10-21T20:23:00+00:00",
+   "commit": {
+    "at": "2026-10-21T20:21:48+00:00",
+    "subject": "start: P1SD39_studio-standard-stroke-tops"
+   }
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "pinch points proto",
+   "since": null,
+   "activity": null,
+   "commit": null
   }
  ],
- "codexLanes": 3,
- "claudeWorkers": 0,
+ "codexLanes": 4,
+ "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
   "runs": 22,
@@ -12463,7 +12484,7 @@
    "shelfNote": "",
    "image": "promo/remote-viewer/first.jpg",
    "firstSeen": "2026-09-20T16:48:48+00:00",
-   "lastChange": "2026-10-21T20:20:35+00:00",
+   "lastChange": "2026-10-21T20:22:57+00:00",
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 1,
@@ -14431,7 +14452,7 @@
    "shelfNote": "",
    "image": "promo/directory-handrail/first.jpg",
    "firstSeen": "2026-10-15T03:41:15+00:00",
-   "lastChange": "2026-10-21T20:20:49+00:00",
+   "lastChange": "2026-10-21T20:23:03+00:00",
    "cost": {
     "apiUsd": 7.97,
     "codexRuns": 3,
@@ -15272,7 +15293,7 @@
    "shelfNote": "",
    "image": "promo/sockglass/first.jpg",
    "firstSeen": "2026-10-15T23:27:18+00:00",
-   "lastChange": "2026-10-21T20:20:17+00:00",
+   "lastChange": "2026-10-21T20:22:34+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -15783,7 +15804,7 @@
    ]
   },
   {
-   "nextTask": "Fix share preview, logo and share text",
+   "nextTask": null,
    "costTotalUsd": 36.29,
    "latestChange": {
     "text": "feat: characters sail across homework sheets",
@@ -15801,14 +15822,14 @@
    "title": "Stroke Tops",
    "line": "A dish of wooden spinning tops, each carrying a Chinese.",
    "url": "https://chenhsieh.github.io/stroke-tops/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Make the top read as a top, soften level 3, add a daily",
    "shelfNote": "",
    "image": "promo/stroke-tops/first.jpg",
    "firstSeen": "2026-10-16T01:39:08+00:00",
-   "lastChange": "2026-10-21T14:56:23+00:00",
+   "lastChange": "2026-10-21T20:23:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -15824,16 +15845,19 @@
    "tasks": [
     {
      "title": "P1SD39_studio standard stroke tops",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T14:56:23+00:00",
+     "since": "2026-10-21T20:21:47+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T20:21:48+00:00",
+      "subject": "start: P1SD39_studio-standard-stroke-tops"
+     },
      "result": ""
     },
     {
@@ -15866,8 +15890,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
