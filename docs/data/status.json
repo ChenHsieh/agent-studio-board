@@ -1,9 +1,10 @@
 {
- "generated": "2026-10-21T03:32:20+00:00",
+ "generated": "2026-10-21T03:34:49+00:00",
  "ops": {
-  "count": 24,
+  "count": 25,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
+   "A running task has shown no progress for over 3 hours.",
    "A status note names something that is not a game.",
    "A task waits for a task that does not exist.",
    "Two tasks share the number P1c09."
@@ -11,6 +12,7 @@
  },
  "about": [
   "A game changed in the last hour with no claimed task on it.",
+  "A running task has shown no progress for over 3 hours.",
   "A status note names something that is not a game.",
   "A task waits for a task that does not exist.",
   "Two tasks share the number P1c09."
@@ -32,23 +34,23 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 126,
-    "running": 3,
+    "queued": 125,
+    "running": 4,
     "doneToday": 30,
-    "minutes": 1740,
-    "estimateMinutes": 1740
+    "minutes": 1788,
+    "estimateMinutes": 1788
    }
   },
-  "queued": 126,
-  "running": 3,
+  "queued": 125,
+  "running": 4,
   "doneToday": 52,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 1740,
-  "estimatedFinish": "2026-10-22T08:32:20+00:00",
-  "estimateMinutes": 1740
+  "minutesRemaining": 1788,
+  "estimatedFinish": "2026-10-22T09:22:49+00:00",
+  "estimateMinutes": 1788
  },
  "lanes": [
   {
@@ -74,10 +76,18 @@
    "since": "2026-10-21T03:20:39+00:00",
    "activity": "2026-10-21T03:30:40+00:00",
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "motif-hero",
+   "task": "hero theme kit",
+   "since": "2026-10-21T03:32:44+00:00",
+   "activity": "2026-10-21T03:32:45+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 3,
+ "claudeWorkers": 4,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -8856,14 +8866,14 @@
    "title": "Motif Hero",
    "line": "Set the bar to how common each column's top letter is.",
    "url": "https://chenhsieh.github.io/motif-hero/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/motif-hero-1.webp",
    "firstSeen": "2026-08-29T04:04:10+00:00",
-   "lastChange": "2026-10-20T20:06:01+00:00",
+   "lastChange": "2026-10-21T03:32:45+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -8879,10 +8889,10 @@
    "tasks": [
     {
      "title": "hero theme kit",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "One old-computer look for the five bioinformatics games (green terminal, black-and-white Mac, punch card, DOS, X11) as a shared kit; Motif Hero gets the green terminal and its own logo first.",
-     "since": "2026-10-20T20:06:01+00:00",
+     "since": "2026-10-21T03:32:44+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -8949,8 +8959,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
