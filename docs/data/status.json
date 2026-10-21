@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T09:06:42+00:00",
+ "generated": "2026-10-21T09:08:53+00:00",
  "ops": {
   "count": 24,
   "notes": [
@@ -25,11 +25,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 40,
+    "queued": 39,
     "running": 0,
     "doneToday": 60,
-    "minutes": 1600,
-    "estimateMinutes": 1600
+    "minutes": 1560,
+    "estimateMinutes": 1560
    },
    "Claude": {
     "queued": 1,
@@ -39,16 +39,16 @@
     "estimateMinutes": 180
    }
   },
-  "queued": 41,
+  "queued": 40,
   "running": 2,
   "doneToday": 63,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 1780,
-  "estimatedFinish": "2026-10-22T11:46:42+00:00",
-  "estimateMinutes": 1600
+  "minutesRemaining": 1740,
+  "estimatedFinish": "2026-10-22T11:08:53+00:00",
+  "estimateMinutes": 1560
  },
  "lanes": [
   {
@@ -61,10 +61,10 @@
   },
   {
    "worker": "Claude",
-   "game": "kitty-portal-sparkle-click",
-   "task": "P2PT01_kitty bottle core",
-   "since": "2026-10-21T08:57:34+00:00",
-   "activity": "2026-10-21T09:04:55+00:00",
+   "game": "seed-spiral",
+   "task": "P2PT02_seed spiral goal",
+   "since": "2026-10-21T09:06:50+00:00",
+   "activity": "2026-10-21T09:06:58+00:00",
    "commit": null
   }
  ],
@@ -106,7 +106,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 207
+   "changes": 208
   }
  ],
  "houseRules": 23,
@@ -6572,52 +6572,58 @@
    "title": "Kitty Portal",
    "line": "Tap the portal, collect sparkles.",
    "url": "https://chenhsieh.github.io/kitty-portal-sparkle-click/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P4",
    "priorityNote": "Serve it as a static page and note whether a game is in it",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2025-07-11T03:14:30+00:00",
-   "lastChange": "2026-10-21T09:04:55+00:00",
+   "lastChange": "2026-10-21T09:06:49+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 13,
     "earlierUsdEst": 46.8,
-    "totalUsdEst": 46.8
+    "totalUsdEst": 50.4
    },
    "tasks": [
     {
      "title": "P2PT01_kitty bottle core",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Turn Kitty Portal into a game: pour random cats into bottles to fill each to the line without spilling; five bottles a round with a shelf of results. Branch only, Chen approves before publishing.",
-     "since": "2026-10-21T08:57:34+00:00",
-     "done": null,
+     "since": "2026-10-21T03:46:28+00:00",
+     "done": "2026-10-21T03:46:28+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "RESULT P2PT01 kitty-bottle-core: Live game.js bytes match; test/play.mjs passes on the live URL at 390x844 and 320x568."
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T09:06:49+00:00",
+     "ok": true,
+     "note": "P2PT01 Kitty Bottle live: rebuilt as plain HTML game, cats are liquid (main );",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T02:44:18+00:00",
      "ok": true,
@@ -6682,12 +6688,6 @@
      "at": "2025-07-11T03:36:50+00:00",
      "ok": true,
      "note": "readme and footer",
-     "source": "main commit"
-    },
-    {
-     "at": "2025-07-11T03:24:45+00:00",
-     "ok": true,
-     "note": "Implement color and emoji changes",
      "source": "main commit"
     }
    ]
@@ -11719,14 +11719,14 @@
    "title": "Seed Spiral",
    "line": "Grow a sunflower and count its spirals.",
    "url": "https://chenhsieh.github.io/seed-spiral/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P4",
    "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/seed-spiral-1.webp",
    "firstSeen": "2026-10-14T16:39:45+00:00",
-   "lastChange": "2026-10-21T03:46:28+00:00",
+   "lastChange": "2026-10-21T09:06:58+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -11742,10 +11742,10 @@
    "tasks": [
     {
      "title": "P2PT02_seed spiral goal",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Give Seed Spiral a goal: grow an exact spiral pair before the frost, with a pace ring that warns before the rim tangles; twelve flowers. Branch only, Chen approves before publishing.",
-     "since": "2026-10-21T03:46:28+00:00",
+     "since": "2026-10-21T09:06:50+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -11756,8 +11756,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
