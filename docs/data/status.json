@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T14:53:31+00:00",
+ "generated": "2026-10-21T14:55:42+00:00",
  "ops": {
-  "count": 21,
+  "count": 22,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -25,11 +25,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 52,
+    "queued": 61,
     "running": 4,
     "doneToday": 69,
-    "minutes": 2240,
-    "estimateMinutes": 560
+    "minutes": 2600,
+    "estimateMinutes": 650
    },
    "Claude": {
     "queued": 1,
@@ -39,16 +39,16 @@
     "estimateMinutes": 180
    }
   },
-  "queued": 53,
+  "queued": 62,
   "running": 6,
   "doneToday": 82,
   "lanes": {
    "Codex": 4,
    "Claude": 1
   },
-  "minutesRemaining": 2420,
-  "estimatedFinish": "2026-10-22T00:13:31+00:00",
-  "estimateMinutes": 560
+  "minutesRemaining": 2780,
+  "estimatedFinish": "2026-10-22T01:45:42+00:00",
+  "estimateMinutes": 650
  },
  "lanes": [
   {
@@ -64,7 +64,7 @@
    "game": "flying-white",
    "task": "P1FW43_flying white real models and masks",
    "since": "2026-10-21T14:33:36+00:00",
-   "activity": "2026-10-21T14:52:26+00:00",
+   "activity": "2026-10-21T14:55:10+00:00",
    "commit": {
     "at": "2026-10-21T14:49:59+00:00",
     "subject": "wip: P1FW43_flying-white-real-models-and-masks (Codex lane autosave 10:49)"
@@ -74,22 +74,19 @@
    "worker": "Codex",
    "game": "kitty-portal-sparkle-click",
    "task": "P1KP40_kitty portal framework",
-   "since": "2026-10-21T14:22:46+00:00",
-   "activity": "2026-10-21T14:53:30+00:00",
-   "commit": {
-    "at": "2026-10-21T14:47:03+00:00",
-    "subject": "wip: P1KP40_kitty-portal-framework (Codex lane autosave 10:47)"
-   }
+   "since": "2026-10-21T14:54:46+00:00",
+   "activity": "2026-10-21T14:54:14+00:00",
+   "commit": null
   },
   {
    "worker": "Codex",
    "game": "lie-flat",
    "task": "P1LF40_lie flat instructions and softer paper",
    "since": "2026-10-21T14:43:50+00:00",
-   "activity": "2026-10-21T14:53:27+00:00",
+   "activity": "2026-10-21T14:55:30+00:00",
    "commit": {
-    "at": "2026-10-21T14:49:18+00:00",
-    "subject": "feat: make folds softer and turning stable"
+    "at": "2026-10-21T14:54:47+00:00",
+    "subject": "fix: keep help clear of crease taps"
    }
   },
   {
@@ -97,7 +94,7 @@
    "game": "letter-lines",
    "task": "P1LL40_letter lines hints drag select logo",
    "since": "2026-10-21T14:48:31+00:00",
-   "activity": "2026-10-21T14:53:30+00:00",
+   "activity": "2026-10-21T14:55:42+00:00",
    "commit": {
     "at": "2026-10-21T14:48:32+00:00",
     "subject": "start: P1LL40_letter-lines-hints-drag-select-logo"
@@ -150,7 +147,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 247
+   "changes": 248
   }
  ],
  "houseRules": 23,
@@ -439,14 +436,14 @@
    "title": "Align Hero",
    "line": "Two lines of letters, one slipped. Find where it slipped.",
    "url": "https://chenhsieh.github.io/align-hero/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/align-hero-1.webp",
    "firstSeen": "2026-08-23T15:04:13+00:00",
-   "lastChange": "2026-10-21T05:36:09+00:00",
+   "lastChange": "2026-10-21T14:55:27+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -460,6 +457,20 @@
     "totalUsdEst": 47.06
    },
    "tasks": [
+    {
+     "title": "P1SD12_studio standard align hero",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Bring Align Hero to the studio standard (share preview, logo, share text)",
+     "since": "2026-10-21T14:55:27+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "hero suite reskin",
      "state": "done",
@@ -504,7 +515,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
@@ -514,8 +525,8 @@
     "verdict": "revise",
     "note": "Bioinformatics round: make the idea legible in the first"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
-   "inProgress": false,
+   "needsYou": null,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T05:36:09+00:00",
@@ -1170,14 +1181,14 @@
    "title": "Biosteganography",
    "line": "Straighten the stripes to find a hidden repeat.",
    "url": "https://chenhsieh.github.io/biosteganography/demo/snap.html",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/biosteganography-1.webp",
    "firstSeen": "2026-08-20T03:51:36+00:00",
-   "lastChange": "2026-10-19T20:46:32+00:00",
+   "lastChange": "2026-10-21T14:55:29+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -1191,6 +1202,20 @@
     "totalUsdEst": 25.39
    },
    "tasks": [
+    {
+     "title": "P1SD13_studio standard biosteganography",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Bring Biosteganography to the studio standard (share preview, logo, share text)",
+     "since": "2026-10-21T14:55:29+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "biosteganography bio round",
      "state": "done",
@@ -1207,7 +1232,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
@@ -1218,7 +1243,7 @@
     "note": "Bioinformatics round: make the idea legible in the first"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-19T20:46:32+00:00",
@@ -1690,14 +1715,14 @@
    "title": "Clay Clock",
    "line": "Press clay jars in the right order.",
    "url": "https://chenhsieh.github.io/clay-clock/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "A goal and a story, and a better drawn figure under the clay",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/clay-clock-1.webp",
    "firstSeen": "2026-10-15T04:15:52+00:00",
-   "lastChange": "2026-10-21T05:08:43+00:00",
+   "lastChange": "2026-10-21T14:55:31+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -1711,6 +1736,20 @@
     "totalUsdEst": 18.23
    },
    "tasks": [
+    {
+     "title": "P1SD14_studio standard clay clock",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Bring Clay Clock to the studio standard (share preview, logo, share text)",
+     "since": "2026-10-21T14:55:31+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "clay clock scribe",
      "state": "done",
@@ -1741,14 +1780,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 2
    },
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
-   "inProgress": false,
+   "needsYou": null,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T05:08:43+00:00",
@@ -2168,14 +2207,14 @@
    "title": "Cookie Cutter",
    "line": "Cut cookies from a sheet of dough and leave as little.",
    "url": "https://chenhsieh.github.io/nesting-scrap/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Give the nesting puzzle a specific taste and twist",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/nesting-scrap-1.webp",
    "firstSeen": "2026-10-15T23:26:00+00:00",
-   "lastChange": "2026-10-21T07:30:47+00:00",
+   "lastChange": "2026-10-21T14:55:33+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -2189,6 +2228,20 @@
     "totalUsdEst": 51.03
    },
    "tasks": [
+    {
+     "title": "P1SD15_studio standard nesting scrap",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Bring Cookie Cutter to the studio standard (share preview, logo, share text)",
+     "since": "2026-10-21T14:55:33+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "nesting scrap taste",
      "state": "done",
@@ -2247,7 +2300,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
@@ -2257,8 +2310,8 @@
     "verdict": "revise",
     "note": "Smooth but no taste yet"
    },
-   "needsYou": "Not played yet: try it and say what to change.",
-   "inProgress": false,
+   "needsYou": null,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T07:30:47+00:00",
@@ -2448,14 +2501,14 @@
    "title": "Cymatic Plate",
    "line": "Ring notes on a brass plate covered in sand and watch the.",
    "url": "https://chenhsieh.github.io/cymatic-plate/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/cymatic-plate-1.webp",
    "firstSeen": "2026-10-16T01:40:04+00:00",
-   "lastChange": "2026-10-20T21:33:23+00:00",
+   "lastChange": "2026-10-21T14:55:35+00:00",
    "cost": {
     "apiUsd": 3.26,
     "codexRuns": 4,
@@ -2469,6 +2522,20 @@
     "totalUsdEst": 76.1
    },
    "tasks": [
+    {
+     "title": "P1SD16_studio standard cymatic plate",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Bring Cymatic Plate to the studio standard (share preview, logo, share text)",
+     "since": "2026-10-21T14:55:35+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "cymatic endless fix",
      "state": "done",
@@ -2566,24 +2633,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Changed: Listen preview, assist rings, difficulty-based Daily/Endless, solvability checks, save migration tests, and [ease findings]("
-    },
-    {
-     "title": "review of cymatic sound",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-18T19:36:42+00:00",
-     "done": "2026-10-18T19:36:42+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 11
@@ -2594,7 +2647,7 @@
     "note": "Ship after endless mode gets sound, haptics and the logo"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-20T21:33:23+00:00",
@@ -3870,14 +3923,14 @@
    "title": "Felt Years",
    "line": "Felt Years is a quiet solo puzzle about a goat whose life.",
    "url": "https://chenhsieh.github.io/felt-years/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "A story for the proportional-time idea, a stated goal",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/felt-years-1.webp",
    "firstSeen": "2026-10-17T23:11:23+00:00",
-   "lastChange": "2026-10-21T08:51:18+00:00",
+   "lastChange": "2026-10-21T14:55:38+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 5,
@@ -3891,6 +3944,20 @@
     "totalUsdEst": 58.72
    },
    "tasks": [
+    {
+     "title": "P1SD17_studio standard felt years",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Bring Felt Years to the studio standard (share preview, logo, share text)",
+     "since": "2026-10-21T14:55:38+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1FY50_felt years understandable",
      "state": "done",
@@ -3988,24 +4055,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "For a player: the paragraphs about Janet, ln 20 and James under the board are gone. That fix came from the codex art pass, which was never pushed; it is now live. The board now shows how many firsts are left. A line..."
-    },
-    {
-     "title": "art_felt years",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "",
-     "since": "2026-10-18T07:41:46+00:00",
-     "done": "2026-10-18T07:41:46+00:00",
-     "reviewed": false,
-     "minutes": 12,
-     "tokens": 156450,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Players now get a legible engraved album board, illustrated goat, leaf-and-wood feedback, and no on-screen history explainer."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 8
@@ -4016,7 +4069,7 @@
     "note": "Cannot understand it: needs a plain first minute"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T08:51:18+00:00",
@@ -4618,14 +4671,14 @@
    "title": "Fly Swarm",
    "line": "",
    "url": "https://chenhsieh.github.io/fly-swarm/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Game-design pass: a goal and a decision per round",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/fly-swarm-1.webp",
    "firstSeen": "2026-09-11T14:19:38+00:00",
-   "lastChange": "2026-10-21T05:23:02+00:00",
+   "lastChange": "2026-10-21T14:55:40+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -4639,6 +4692,20 @@
     "totalUsdEst": 43.6
    },
    "tasks": [
+    {
+     "title": "P1SD18_studio standard fly swarm",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Bring Fly Swarm to the studio standard (share preview, logo, share text)",
+     "since": "2026-10-21T14:55:40+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "fly swarm cones",
      "state": "done",
@@ -4669,14 +4736,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 2
    },
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
-   "inProgress": false,
+   "needsYou": null,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T05:23:02+00:00",
@@ -4759,7 +4826,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T05:18:25+00:00",
-   "lastChange": "2026-10-21T14:52:26+00:00",
+   "lastChange": "2026-10-21T14:55:10+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -5362,14 +5429,14 @@
    "title": "GIF Cities",
    "line": "Stack rescued GIFs down a 1999 homepage so every visitor.",
    "url": "https://chenhsieh.github.io/gif-cities/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Flagship polish round: slower default pace with a speed",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/gif-cities-1.webp",
    "firstSeen": "2026-10-16T01:59:00+00:00",
-   "lastChange": "2026-10-19T20:36:45+00:00",
+   "lastChange": "2026-10-21T14:55:42+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -5383,6 +5450,20 @@
     "totalUsdEst": 79.89
    },
    "tasks": [
+    {
+     "title": "P1SD19_studio standard gif cities",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Bring GIF Cities to the studio standard (share preview, logo, share text)",
+     "since": "2026-10-21T14:55:42+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "review of gif cities flagship round",
      "state": "done",
@@ -5483,7 +5564,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 7
@@ -5494,7 +5575,7 @@
     "note": "Flagship polish round: slower default pace with a speed"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-19T20:36:45+00:00",
@@ -6843,7 +6924,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2025-07-11T03:24:45+00:00",
-   "lastChange": "2026-10-21T14:53:30+00:00",
+   "lastChange": "2026-10-21T14:54:14+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -6862,16 +6943,13 @@
      "state": "running",
      "worker": "Codex",
      "plan": "Kitty Portal to P1: add the game framework (logo, how to play, languages, About crediting the Cat API), uniform pictures and a guided first round.",
-     "since": "2026-10-21T14:22:46+00:00",
+     "since": "2026-10-21T14:54:46+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-21T14:47:03+00:00",
-      "subject": "wip: P1KP40_kitty-portal-framework (Codex lane autosave 10:47)"
-     },
+     "commit": null,
      "result": ""
     },
     {
@@ -7468,7 +7546,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:19:59+00:00",
-   "lastChange": "2026-10-21T14:53:30+00:00",
+   "lastChange": "2026-10-21T14:55:42+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -7625,7 +7703,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:36:20+00:00",
-   "lastChange": "2026-10-21T14:53:27+00:00",
+   "lastChange": "2026-10-21T14:55:30+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -7651,8 +7729,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-21T14:49:18+00:00",
-      "subject": "feat: make folds softer and turning stable"
+      "at": "2026-10-21T14:54:47+00:00",
+      "subject": "fix: keep help clear of crease taps"
      },
      "result": ""
     },
