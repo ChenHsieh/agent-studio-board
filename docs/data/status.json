@@ -1,18 +1,16 @@
 {
- "generated": "2026-10-21T17:03:28+00:00",
+ "generated": "2026-10-21T17:05:43+00:00",
  "ops": {
   "count": 25,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
-   "A task waits for a task that does not exist.",
    "Two tasks share the number P1c09."
   ]
  },
  "about": [
   "A game changed in the last hour with no claimed task on it.",
   "A status note names something that is not a game.",
-  "A task waits for a task that does not exist.",
   "Two tasks share the number P1c09."
  ],
  "project": {
@@ -25,11 +23,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 71,
+    "queued": 70,
     "running": 3,
     "doneToday": 78,
-    "minutes": 2960,
-    "estimateMinutes": 987
+    "minutes": 2920,
+    "estimateMinutes": 974
    },
    "Claude": {
     "queued": 1,
@@ -39,16 +37,16 @@
     "estimateMinutes": 180
    }
   },
-  "queued": 72,
+  "queued": 71,
   "running": 5,
   "doneToday": 95,
   "lanes": {
    "Codex": 3,
    "Claude": 1
   },
-  "minutesRemaining": 3140,
-  "estimatedFinish": "2026-10-22T09:30:28+00:00",
-  "estimateMinutes": 987
+  "minutesRemaining": 3100,
+  "estimatedFinish": "2026-10-22T09:19:43+00:00",
+  "estimateMinutes": 974
  },
  "lanes": [
   {
@@ -64,21 +62,29 @@
    "game": "mirror-hold",
    "task": "P1MH53_mirror hold ladder ranks 1953",
    "since": "2026-10-21T16:34:56+00:00",
-   "activity": "2026-10-21T17:03:28+00:00",
+   "activity": "2026-10-21T17:05:42+00:00",
    "commit": {
     "at": "2026-10-21T16:57:20+00:00",
     "subject": "fix: show each bout and save the daily archive"
    }
   },
   {
+   "worker": "Claude",
+   "game": "readable-nonsense",
+   "task": "P1RN40_readable nonsense start error",
+   "since": "2026-10-21T17:03:31+00:00",
+   "activity": "2026-10-21T17:04:31+00:00",
+   "commit": null
+  },
+  {
    "worker": "Codex",
    "game": "cymatic-plate",
    "task": "P1SD16_studio standard cymatic plate",
    "since": "2026-10-21T16:45:03+00:00",
-   "activity": "2026-10-21T17:02:31+00:00",
+   "activity": "2026-10-21T17:05:41+00:00",
    "commit": {
-    "at": "2026-10-21T16:55:05+00:00",
-    "subject": "test: match current Endless control"
+    "at": "2026-10-21T17:05:13+00:00",
+    "subject": "fix: refresh saved daily at local midnight"
    }
   },
   {
@@ -86,19 +92,11 @@
    "game": "fly-swarm",
    "task": "P1SD18_studio standard fly swarm",
    "since": "2026-10-21T17:00:22+00:00",
-   "activity": "2026-10-21T17:03:27+00:00",
+   "activity": "2026-10-21T17:05:42+00:00",
    "commit": {
     "at": "2026-10-21T17:00:25+00:00",
     "subject": "start: P1SD18_studio-standard-fly-swarm"
    }
-  },
-  {
-   "worker": "Claude",
-   "game": "anechoic-fugue",
-   "task": "still water rename visuals",
-   "since": "2026-10-21T16:48:48+00:00",
-   "activity": "2026-10-21T16:58:37+00:00",
-   "commit": null
   }
  ],
  "codexLanes": 3,
@@ -139,7 +137,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 287
+   "changes": 288
   }
  ],
  "houseRules": 23,
@@ -616,10 +614,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 97.87,
+   "costTotalUsd": 101.47,
    "latestChange": {
-    "text": "feat: Anechoic Fugue is now Still Water, with a calmer pond and a finished menu",
-    "at": "2026-10-21T16:58:37+00:00"
+    "text": "P1s01 renamed Still Water, live (merge ); menu, topbar, water contrast, lily rings; hub...",
+    "at": "2026-10-21T17:03:31+00:00"
    },
    "promo": null,
    "id": "anechoic-fugue",
@@ -627,41 +625,27 @@
    "title": "Anechoic Fugue",
    "line": "Place speakers so the sleeper's chair goes quiet.",
    "url": "https://chenhsieh.github.io/anechoic-fugue/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Decide the physical model and its on-screen readout, choose",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/anechoic-fugue-1.webp",
    "firstSeen": "2026-10-15T19:39:22+00:00",
-   "lastChange": "2026-10-21T16:58:37+00:00",
+   "lastChange": "2026-10-21T17:03:31+00:00",
    "cost": {
     "apiUsd": 17.97,
     "codexRuns": 3,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 3,
     "codexTokens": 585052,
     "codexUsdEst": 0.7,
-    "claudeUsdEst": 7.2,
+    "claudeUsdEst": 10.8,
     "earlierRounds": 20,
     "earlierUsdEst": 72.0,
-    "totalUsdEst": 97.87
+    "totalUsdEst": 101.47
    },
    "tasks": [
-    {
-     "title": "still water rename visuals",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Rename Anechoic Fugue to Still Water and refine the visuals.",
-     "since": "2026-10-21T16:48:48+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "anechoic depth",
      "state": "done",
@@ -675,6 +659,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "feat: lily rings make every pond a choice"
+    },
+    {
+     "title": "still water rename visuals",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Rename Anechoic Fugue to Still Water and refine the visuals.",
+     "since": "2026-10-20T19:00:06+00:00",
+     "done": "2026-10-20T19:00:06+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
     },
     {
      "title": "anechoic depth",
@@ -763,14 +761,20 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 8
+    "done": 9
    },
    "verdict": null,
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T17:03:31+00:00",
+     "ok": true,
+     "note": "P1s01 renamed Still Water, live (merge ); menu, topbar, water contrast, lily rings; hub list in play-lab ; before/after in results_shots/P1s01. Pre-existing fails: r1016/card, r1016/quiet",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T16:58:37+00:00",
      "ok": true,
@@ -836,12 +840,6 @@
      "ok": true,
      "note": "feat: a pond where ripples cancel:",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-18T09:31:43+00:00",
-     "ok": true,
-     "note": "fix- live: restored the shared UI selector and input-ready demo hook; repo tests, UI gate, and 390x844/320 visual checks pass. playable_gate remains incompatible with the intentional 600 ms uncovered win beat; documented in GATE_ISSUES.md.",
-     "source": "board note"
     }
    ]
   },
@@ -2661,7 +2659,7 @@
    "shelfNote": "",
    "image": "promo/cymatic-plate/first.jpg",
    "firstSeen": "2026-10-16T01:40:04+00:00",
-   "lastChange": "2026-10-21T17:02:31+00:00",
+   "lastChange": "2026-10-21T17:05:41+00:00",
    "cost": {
     "apiUsd": 3.26,
     "codexRuns": 4,
@@ -2687,8 +2685,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-21T16:55:05+00:00",
-      "subject": "test: match current Endless control"
+      "at": "2026-10-21T17:05:13+00:00",
+      "subject": "fix: refresh saved daily at local midnight"
      },
      "result": ""
     },
@@ -4956,7 +4954,7 @@
    "shelfNote": "",
    "image": "promo/fly-swarm/first.jpg",
    "firstSeen": "2026-09-11T14:19:38+00:00",
-   "lastChange": "2026-10-21T17:03:27+00:00",
+   "lastChange": "2026-10-21T17:05:42+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -9936,7 +9934,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/mirror-hold-1.webp",
    "firstSeen": "2026-10-14T23:19:29+00:00",
-   "lastChange": "2026-10-21T17:03:28+00:00",
+   "lastChange": "2026-10-21T17:05:42+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -19176,7 +19174,7 @@
    ]
   },
   {
-   "nextTask": "Fix the Readable Nonsense start error: validate and...",
+   "nextTask": null,
    "costTotalUsd": 57.79,
    "latestChange": {
     "text": "fix: render Zhuyin and poem text reliably on phones",
@@ -19188,14 +19186,14 @@
    "title": "阿嬤讀得出來",
    "line": "A famous Tang poem line is printed as fake glyphs with.",
    "url": "https://chenhsieh.github.io/readable-nonsense/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Start error blocks play",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/readable-nonsense-1.webp",
    "firstSeen": "2026-10-15T23:26:29+00:00",
-   "lastChange": "2026-10-21T13:57:16+00:00",
+   "lastChange": "2026-10-21T17:04:31+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 3,
@@ -19211,10 +19209,10 @@
    "tasks": [
     {
      "title": "P1RN40_readable nonsense start error",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Fix the Readable Nonsense start error: validate and migrate old saves so the game always starts.",
-     "since": "2026-10-21T13:57:16+00:00",
+     "since": "2026-10-21T17:03:31+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -19281,8 +19279,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 4
    },
