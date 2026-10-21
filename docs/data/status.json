@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T17:49:52+00:00",
+ "generated": "2026-10-21T17:52:06+00:00",
  "ops": {
   "count": 32,
   "notes": [
@@ -23,11 +23,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 59,
+    "queued": 58,
     "running": 2,
-    "doneToday": 85,
-    "minutes": 2440,
-    "estimateMinutes": 1220
+    "doneToday": 86,
+    "minutes": 2400,
+    "estimateMinutes": 1200
    },
    "Claude": {
     "queued": 1,
@@ -37,16 +37,16 @@
     "estimateMinutes": 120
    }
   },
-  "queued": 60,
+  "queued": 59,
   "running": 3,
-  "doneToday": 105,
+  "doneToday": 106,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2560,
-  "estimatedFinish": "2026-10-22T14:09:52+00:00",
-  "estimateMinutes": 1220
+  "minutesRemaining": 2520,
+  "estimatedFinish": "2026-10-22T13:52:06+00:00",
+  "estimateMinutes": 1200
  },
  "lanes": [
   {
@@ -67,11 +67,14 @@
   },
   {
    "worker": "Codex",
-   "game": "copy-paste",
-   "task": "P1SD22_studio standard copy paste",
-   "since": "2026-10-21T17:40:54+00:00",
-   "activity": "2026-10-21T17:49:34+00:00",
-   "commit": null
+   "game": "local-hero",
+   "task": "P1SD25_studio standard local hero",
+   "since": "2026-10-21T17:51:08+00:00",
+   "activity": "2026-10-21T17:52:04+00:00",
+   "commit": {
+    "at": "2026-10-21T17:51:09+00:00",
+    "subject": "start: P1SD25_studio-standard-local-hero"
+   }
   }
  ],
  "codexLanes": 2,
@@ -117,7 +120,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 308
+   "changes": 309
   }
  ],
  "houseRules": 23,
@@ -6674,10 +6677,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 111.38,
+   "costTotalUsd": 111.54,
    "latestChange": {
     "text": "feat: share Hello Princess with its own preview and source note",
-    "at": "2026-10-21T17:49:34+00:00"
+    "at": "2026-10-21T17:51:07+00:00"
    },
    "promo": {
     "files": {
@@ -6692,40 +6695,40 @@
    "title": "Hello Princess",
    "line": "Find the princess's first invitation among the copies.",
    "url": "https://chenhsieh.github.io/copy-paste/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Settle the card-link logic, stop story art leaking answers",
    "shelfNote": "",
    "image": "promo/copy-paste/first.jpg",
    "firstSeen": "2026-10-15T18:59:22+00:00",
-   "lastChange": "2026-10-21T17:49:34+00:00",
+   "lastChange": "2026-10-21T17:51:07+00:00",
    "cost": {
     "apiUsd": 16.91,
-    "codexRuns": 3,
+    "codexRuns": 4,
     "claudeRuns": 5,
     "apiRuns": 3,
-    "codexTokens": 727891,
-    "codexUsdEst": 0.87,
+    "codexTokens": 861849,
+    "codexUsdEst": 1.03,
     "claudeUsdEst": 18.0,
     "earlierRounds": 21,
     "earlierUsdEst": 75.6,
-    "totalUsdEst": 111.38
+    "totalUsdEst": 111.54
    },
    "tasks": [
     {
      "title": "P1SD22_studio standard copy paste",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T17:40:54+00:00",
-     "done": null,
+     "since": "2026-10-21T17:25:26+00:00",
+     "done": "2026-10-21T17:25:26+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 15,
+     "tokens": 133958,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: share Hello Princess with its own preview and source note"
     },
     {
      "title": "P1HP02_hello princess plain words and guidance",
@@ -6828,18 +6831,24 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 11
+    "done": 12
    },
    "verdict": {
     "date": "2026-10-20",
     "verdict": "revise",
     "note": "Step-by-step linking and inferable feedback"
    },
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T17:51:07+00:00",
+     "ok": true,
+     "note": "feat: share Hello Princess with its own preview and source note",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T17:49:34+00:00",
      "ok": true,
@@ -6905,12 +6914,6 @@
      "ok": true,
      "note": "feat: gather relatives and hide story answers",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-19T18:04:16+00:00",
-     "ok": true,
-     "note": "design brief written; Codex build P2c02 queued",
-     "source": "board note"
     }
    ]
   },
@@ -7759,7 +7762,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 29.07,
+   "costTotalUsd": 32.67,
    "latestChange": {
     "text": "feat: preview Lantern Meeting in shared links",
     "at": "2026-10-21T17:48:29+00:00"
@@ -7793,9 +7796,9 @@
     "codexTokens": 222529,
     "codexUsdEst": 0.27,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 7,
-    "earlierUsdEst": 25.2,
-    "totalUsdEst": 29.07
+    "earlierRounds": 8,
+    "earlierUsdEst": 28.8,
+    "totalUsdEst": 32.67
    },
    "tasks": [
     {
@@ -7874,6 +7877,12 @@
      "ok": true,
      "note": "feat: preview Lantern Meeting in shared links",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-21T17:47:27+00:00",
+     "ok": true,
+     "note": "feat: preview Lantern Meeting in shared links",
+     "source": "main commit"
     },
     {
      "at": "2026-10-21T07:48:31+00:00",
@@ -8812,7 +8821,7 @@
    ]
   },
   {
-   "nextTask": "Fix share preview, logo and share text",
+   "nextTask": null,
    "costTotalUsd": 39.82,
    "latestChange": {
     "text": "P1h14 reskin live (main ): retro machine skin, brand top-left, no Play Lab header link;...",
@@ -8831,14 +8840,14 @@
    "title": "Local Hero",
    "line": "Find the stretch two DNA strings share, then bank it.",
    "url": "https://chenhsieh.github.io/local-hero/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "promo/local-hero/first.jpg",
    "firstSeen": "2026-08-20T15:58:51+00:00",
-   "lastChange": "2026-10-21T14:55:54+00:00",
+   "lastChange": "2026-10-21T17:52:04+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -8854,16 +8863,19 @@
    "tasks": [
     {
      "title": "P1SD25_studio standard local hero",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T14:55:54+00:00",
+     "since": "2026-10-21T17:51:08+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T17:51:09+00:00",
+      "subject": "start: P1SD25_studio-standard-local-hero"
+     },
      "result": ""
     },
     {
@@ -8882,8 +8894,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
