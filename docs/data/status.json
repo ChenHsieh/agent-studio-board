@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T18:16:30+00:00",
+ "generated": "2026-10-21T18:18:45+00:00",
  "ops": {
-  "count": 28,
+  "count": 29,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -23,30 +23,30 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 56,
+    "queued": 55,
     "running": 1,
     "doneToday": 86,
-    "minutes": 2280,
-    "estimateMinutes": 2280
+    "minutes": 2240,
+    "estimateMinutes": 2240
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 21,
+    "doneToday": 22,
     "minutes": 180,
     "estimateMinutes": 180
    }
   },
-  "queued": 57,
+  "queued": 56,
   "running": 3,
-  "doneToday": 107,
+  "doneToday": 108,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 2460,
-  "estimatedFinish": "2026-10-23T08:16:30+00:00",
-  "estimateMinutes": 2280
+  "minutesRemaining": 2420,
+  "estimatedFinish": "2026-10-23T07:38:45+00:00",
+  "estimateMinutes": 2240
  },
  "lanes": [
   {
@@ -54,19 +54,11 @@
    "game": "dancers-not-mad",
    "task": "P1DM03_dancers automaton art",
    "since": "2026-10-21T17:55:58+00:00",
-   "activity": "2026-10-21T18:12:16+00:00",
+   "activity": "2026-10-21T18:17:56+00:00",
    "commit": {
     "at": "2026-10-21T18:12:16+00:00",
     "subject": "start: P1DM03 dancers-automaton-art"
    }
-  },
-  {
-   "worker": "Claude",
-   "game": "mirror-hold",
-   "task": "P1MH54_mirror hold ship review",
-   "since": "2026-10-21T17:56:11+00:00",
-   "activity": "2026-10-21T18:14:57+00:00",
-   "commit": null
   },
   {
    "worker": "Codex",
@@ -75,14 +67,22 @@
    "since": "2026-10-21T18:16:08+00:00",
    "activity": "2026-10-21T18:16:02+00:00",
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "no-unison",
+   "task": "P2NU41_no unison music game core",
+   "since": "2026-10-21T18:16:38+00:00",
+   "activity": "2026-10-21T18:16:38+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 1,
  "claudeWorkers": 2,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 7,
-  "usdEst": 25.2,
+  "runs": 8,
+  "usdEst": 28.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -120,7 +120,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 315
+   "changes": 316
   }
  ],
  "houseRules": 23,
@@ -2883,7 +2883,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:37:54+00:00",
-   "lastChange": "2026-10-21T18:12:16+00:00",
+   "lastChange": "2026-10-21T18:17:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -9944,10 +9944,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 58.75,
+   "costTotalUsd": 62.35,
    "latestChange": {
-    "text": "feat: rise through tokoyama ranks and face the 1953 bout",
-    "at": "2026-10-21T17:22:09+00:00"
+    "text": "P1MH54 ship review: SHIP; fixed client 11 name (阿武松 not 濱ノ戸), result buttons visible at...",
+    "at": "2026-10-21T18:16:33+00:00"
    },
    "promo": null,
    "id": "mirror-hold",
@@ -9955,41 +9955,27 @@
    "title": "Mirror Hold",
    "line": "Wax a hairstyle, then test it against three pulls.",
    "url": "https://chenhsieh.github.io/mirror-hold/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Huge revamp planned by a cross-functional lead",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/mirror-hold-1.webp",
    "firstSeen": "2026-10-14T23:26:30+00:00",
-   "lastChange": "2026-10-21T18:14:57+00:00",
+   "lastChange": "2026-10-21T18:16:33+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 1,
     "codexTokens": 959889,
     "codexUsdEst": 1.15,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 15,
     "earlierUsdEst": 54.0,
-    "totalUsdEst": 58.75
+    "totalUsdEst": 62.35
    },
    "tasks": [
-    {
-     "title": "P1MH54_mirror hold ship review",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Mirror Hold: Opus cold-play ship review of the rework",
-     "since": "2026-10-21T17:56:11+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1MH53_mirror hold ladder ranks 1953",
      "state": "done",
@@ -10003,6 +9989,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "feat: rise through tokoyama ranks and face the 1953 bout"
+    },
+    {
+     "title": "P1MH54_mirror hold ship review",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Mirror Hold: Opus cold-play ship review of the rework",
+     "since": "2026-10-21T14:48:36+00:00",
+     "done": "2026-10-21T14:48:36+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Verdict: SHIP. Cold play of the live game at 390x844 and 320x568 with one finger (real touch): level 1 is clear in under 20 seconds (goal line, one move chip, the pull drawn on the hair, one drag, tie, nod), all 12..."
     },
     {
      "title": "P1MH51_mirror hold comb stroke core",
@@ -10077,9 +10077,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": {
     "date": "2026-10-21",
@@ -10087,8 +10087,14 @@
     "note": "Huge revamp: confusing and crude"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T18:16:33+00:00",
+     "ok": true,
+     "note": "P1MH54 ship review: SHIP; fixed client 11 name (阿武松 not 濱ノ戸), result buttons visible at 320, how-to line; next: L4 lesson broken (touch beats par)",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T17:22:09+00:00",
      "ok": true,
@@ -10153,12 +10159,6 @@
      "at": "2026-10-20T02:16:29+00:00",
      "ok": true,
      "note": "tokoyama brief + build B2o",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-17T22:08:17+00:00",
-     "ok": true,
-     "note": "CREDIT line under the mirror map, EN+ZH (Itagaki, Baki; no art used)",
      "source": "board note"
     }
    ]
@@ -10688,7 +10688,7 @@
    ]
   },
   {
-   "nextTask": "No Unison as a music sequencing game: cute...",
+   "nextTask": null,
    "costTotalUsd": 25.57,
    "latestChange": {
     "text": "feat: see crisp bars advance through eight new levels",
@@ -10700,14 +10700,14 @@
    "title": "No Unison",
    "line": "",
    "url": "https://chenhsieh.github.io/no-unison/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:28:17+00:00",
-   "lastChange": "2026-10-21T15:51:11+00:00",
+   "lastChange": "2026-10-21T18:16:38+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -10723,10 +10723,10 @@
    "tasks": [
     {
      "title": "P2NU41_no unison music game core",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "No Unison as a music sequencing game: cute voices, reverb and echo knobs, levels that teach, and a shareable loop.",
-     "since": "2026-10-21T13:57:17+00:00",
+     "since": "2026-10-21T18:16:38+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -10779,8 +10779,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
