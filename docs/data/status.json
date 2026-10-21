@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T12:05:03+00:00",
+ "generated": "2026-10-21T12:07:15+00:00",
  "ops": {
-  "count": 20,
+  "count": 21,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -33,32 +33,24 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
-    "doneToday": 6,
-    "minutes": 180,
-    "estimateMinutes": 180
+    "running": 1,
+    "doneToday": 7,
+    "minutes": 120,
+    "estimateMinutes": 120
    }
   },
   "queued": 32,
-  "running": 2,
-  "doneToday": 66,
+  "running": 1,
+  "doneToday": 67,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 1420,
-  "estimatedFinish": "2026-10-22T08:45:03+00:00",
+  "minutesRemaining": 1360,
+  "estimatedFinish": "2026-10-22T08:47:15+00:00",
   "estimateMinutes": 1240
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "chai-boil",
-   "task": "P1CB06_chai kitchen unlocks content",
-   "since": "2026-10-21T11:29:47+00:00",
-   "activity": "2026-10-21T12:02:26+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "tractatus-tree",
@@ -69,7 +61,7 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -106,7 +98,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 216
+   "changes": 217
   }
  ],
  "houseRules": 23,
@@ -1392,40 +1384,40 @@
    "title": "Chai Boil",
    "line": "One pot, one dial: let the chai rise to the rim, not over it.",
    "url": "https://chenhsieh.github.io/chai-boil/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Steadier dial (keys on desktop), a forgiving golden zone, a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/chai-boil-1.webp",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-21T12:02:26+00:00",
+   "lastChange": "2026-10-21T12:05:52+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 5,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 3,
     "codexTokens": 1071928,
     "codexUsdEst": 1.29,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 17,
     "earlierUsdEst": 61.2,
-    "totalUsdEst": 72.82
+    "totalUsdEst": 76.42
    },
    "tasks": [
     {
      "title": "P1CB06_chai kitchen unlocks content",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Chai Boil: clay stove, copper pot on charcoal, induction hob and a night platform, each unlocked by brewing milestones.",
      "since": "2026-10-21T11:29:47+00:00",
-     "done": null,
+     "done": "2026-10-21T11:29:47+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: four more kitchens: clay stove, copper pot on charcoal, induction hob, night platform (main -> , rollback tag pre-kitchens-cb06)"
     },
     {
      "title": "P1CB05_chai kitchens framework",
@@ -1528,14 +1520,20 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 9
+    "done": 10
    },
    "verdict": null,
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T12:05:52+00:00",
+     "ok": true,
+     "note": "P1CB06 four kitchens live (): clay stove, copper on charcoal (lever = pot height), induction (9 clicks), night platform (kulhads; 45 s whistle kept as optional hard mode, off by default)",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T12:02:26+00:00",
      "ok": true,
@@ -1601,12 +1599,6 @@
      "ok": true,
      "note": "feat: make chai flame control direct and readable",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-21T04:42:38+00:00",
-     "ok": true,
-     "note": "feat: make chai flame control direct and readable",
-     "source": "main commit"
     }
    ]
   },
