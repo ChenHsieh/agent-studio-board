@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T22:11:22+00:00",
+ "generated": "2026-10-21T22:13:35+00:00",
  "ops": {
-  "count": 20,
+  "count": 19,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -31,63 +31,30 @@
    },
    "Claude": {
     "queued": 35,
-    "running": 4,
-    "doneToday": 29,
-    "minutes": 708,
-    "estimateMinutes": 708
+    "running": 0,
+    "doneToday": 33,
+    "minutes": 468,
+    "estimateMinutes": 468
    }
   },
   "queued": 35,
-  "running": 4,
-  "doneToday": 124,
+  "running": 0,
+  "doneToday": 128,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 708,
-  "estimatedFinish": "2026-10-22T09:59:22+00:00",
-  "estimateMinutes": 708
+  "minutesRemaining": 468,
+  "estimatedFinish": "2026-10-22T06:01:35+00:00",
+  "estimateMinutes": 468
  },
- "lanes": [
-  {
-   "worker": "Claude",
-   "game": "remote-viewer",
-   "task": "P1SD34_studio standard remote viewer",
-   "since": "2026-10-21T22:02:56+00:00",
-   "activity": "2026-10-21T22:04:36+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "directory-handrail",
-   "task": "P1SD37_studio standard directory handrail",
-   "since": "2026-10-21T22:02:56+00:00",
-   "activity": "2026-10-21T22:04:48+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "sockglass",
-   "task": "P1SD38_studio standard sockglass",
-   "since": "2026-10-21T22:02:56+00:00",
-   "activity": "2026-10-21T22:06:50+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "stroke-tops",
-   "task": "P1SD39_studio standard stroke tops",
-   "since": "2026-10-21T22:02:56+00:00",
-   "activity": "2026-10-21T22:06:50+00:00",
-   "commit": null
-  }
- ],
+ "lanes": [],
  "codexLanes": 0,
- "claudeWorkers": 4,
+ "claudeWorkers": 0,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 26,
-  "usdEst": 93.6,
+  "runs": 30,
+  "usdEst": 108.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -125,7 +92,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 370
+   "changes": 374
   }
  ],
  "houseRules": 23,
@@ -12717,10 +12684,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 74.33,
+   "costTotalUsd": 77.93,
    "latestChange": {
-    "text": "P1SD34_studio-standard-remote-viewer handed to Claude: Codex quota ran out;",
-    "at": "2026-10-21T20:26:48+00:00"
+    "text": "studio standard done: own logo, og tags, share text; audit all ok",
+    "at": "2026-10-21T22:13:33+00:00"
    },
    "promo": {
     "files": {
@@ -12735,34 +12702,34 @@
    "title": "Remote Viewer",
    "line": "Uncover a CIA file and name its assignment.",
    "url": "https://chenhsieh.github.io/remote-viewer/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Game-design pass to find where the fun is and build it",
    "shelfNote": "",
    "image": "promo/remote-viewer/first.jpg",
    "firstSeen": "2026-09-20T16:48:48+00:00",
-   "lastChange": "2026-10-21T22:04:36+00:00",
+   "lastChange": "2026-10-21T22:13:33+00:00",
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 1,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 0,
     "codexTokens": 245568,
     "codexUsdEst": 0.29,
-    "claudeUsdEst": 7.2,
+    "claudeUsdEst": 10.8,
     "earlierRounds": 16,
     "earlierUsdEst": 57.6,
-    "totalUsdEst": 74.33
+    "totalUsdEst": 77.93
    },
    "tasks": [
     {
      "title": "P1SD34_studio standard remote viewer",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T22:02:56+00:00",
-     "done": null,
+     "since": "2026-10-21T22:13:33+00:00",
+     "done": "2026-10-21T22:13:33+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -12815,18 +12782,24 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": {
     "date": "2026-10-19",
     "verdict": "revise",
     "note": "Game-design pass to find where the fun is and build it"
    },
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T22:13:33+00:00",
+     "ok": true,
+     "note": "studio standard done: own logo, og tags, share text; audit all ok",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T20:26:48+00:00",
      "ok": false,
@@ -12892,12 +12865,6 @@
      "ok": true,
      "note": "fix: hints and giving up now cost, and the older quiz cannot be won by elimination",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-17T23:15:14+00:00",
-     "ok": true,
-     "note": "CREDIT line under the About fold, EN+ZH (Redactle by John Turner; CIA STAR GATE files); no How to play card exists; README already credited; live",
-     "source": "board note"
     }
    ]
   },
@@ -14683,10 +14650,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 80.94,
+   "costTotalUsd": 84.54,
    "latestChange": {
-    "text": "P1SD37_studio-standard-directory-handrail handed to Claude: Codex quota ran out;",
-    "at": "2026-10-21T20:26:57+00:00"
+    "text": "studio standard done: own logo, og tags, share text; audit all ok",
+    "at": "2026-10-21T22:13:33+00:00"
    },
    "promo": {
     "files": {
@@ -14700,34 +14667,34 @@
    "title": "Signposts",
    "line": "Signposts is a short phone puzzle about hanging route.",
    "url": "https://chenhsieh.github.io/directory-handrail/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Flagship polish round: finish the market-manager framing",
    "shelfNote": "",
    "image": "promo/directory-handrail/first.jpg",
    "firstSeen": "2026-10-15T03:41:15+00:00",
-   "lastChange": "2026-10-21T22:04:48+00:00",
+   "lastChange": "2026-10-21T22:13:33+00:00",
    "cost": {
     "apiUsd": 7.97,
     "codexRuns": 3,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 1,
     "codexTokens": 806850,
     "codexUsdEst": 0.97,
-    "claudeUsdEst": 10.8,
+    "claudeUsdEst": 14.4,
     "earlierRounds": 17,
     "earlierUsdEst": 61.2,
-    "totalUsdEst": 80.94
+    "totalUsdEst": 84.54
    },
    "tasks": [
     {
      "title": "P1SD37_studio standard directory handrail",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T22:02:56+00:00",
-     "done": null,
+     "since": "2026-10-21T22:13:33+00:00",
+     "done": "2026-10-21T22:13:33+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -14836,18 +14803,24 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 7
+    "done": 8
    },
    "verdict": {
     "date": "2026-10-19",
     "verdict": "revise",
     "note": "Flagship polish round: finish the market-manager framing"
    },
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T22:13:33+00:00",
+     "ok": true,
+     "note": "studio standard done: own logo, og tags, share text; audit all ok",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T20:26:57+00:00",
      "ok": false,
@@ -14913,12 +14886,6 @@
      "ok": true,
      "note": "LIVE : isometric toy street (crowd walks door by door), real drag with snap + tap-tap, one rule per level 1-5 with ghost demos, three streets unlock in turn + Harbour Row, shared daily.js daily; credit narrowed to the few-entrances idea; PRIORART_202610",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-17T19:10:36+00:00",
-     "ok": true,
-     "note": "feat: a toy street where the crowd walks door by door, real drag, one rule per level, streets to unlock and a daily",
-     "source": "main commit"
     }
    ]
   },
@@ -15520,10 +15487,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 32.61,
+   "costTotalUsd": 39.81,
    "latestChange": {
-    "text": "P1SD38_studio-standard-sockglass handed to Claude: Codex quota ran out;",
-    "at": "2026-10-21T20:26:48+00:00"
+    "text": "studio standard done: own logo, og tags, share text; audit all ok",
+    "at": "2026-10-21T22:13:33+00:00"
    },
    "promo": {
     "files": {
@@ -15538,34 +15505,34 @@
    "title": "Sockglass",
    "line": "Drag tissue-paper socks onto a dark bedroom window; where.",
    "url": "https://chenhsieh.github.io/sockglass/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Make sock sizes and counts readable and let the theme",
    "shelfNote": "",
    "image": "promo/sockglass/first.jpg",
    "firstSeen": "2026-10-15T23:27:18+00:00",
-   "lastChange": "2026-10-21T22:06:50+00:00",
+   "lastChange": "2026-10-21T22:13:33+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 170850,
     "codexUsdEst": 0.21,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 8,
-    "earlierUsdEst": 28.8,
-    "totalUsdEst": 32.61
+    "claudeUsdEst": 7.2,
+    "earlierRounds": 9,
+    "earlierUsdEst": 32.4,
+    "totalUsdEst": 39.81
    },
    "tasks": [
     {
      "title": "P1SD38_studio standard sockglass",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T22:02:56+00:00",
-     "done": null,
+     "since": "2026-10-21T22:13:33+00:00",
+     "done": "2026-10-21T22:13:33+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -15604,18 +15571,30 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": {
     "date": "2026-10-19",
     "verdict": "revise",
     "note": "Make sock sizes and counts readable and let the theme"
    },
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T22:13:33+00:00",
+     "ok": true,
+     "note": "studio standard done: own logo, og tags, share text; audit all ok",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-21T22:12:02+00:00",
+     "ok": true,
+     "note": "feat: Sockglass own logo, link preview and share text",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-21T20:26:48+00:00",
      "ok": false,
@@ -16060,10 +16039,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 39.89,
+   "costTotalUsd": 43.49,
    "latestChange": {
-    "text": "P1SD39_studio-standard-stroke-tops handed to Claude: Codex quota ran out;",
-    "at": "2026-10-21T20:26:52+00:00"
+    "text": "studio standard done: own logo, og tags, share text; audit all ok",
+    "at": "2026-10-21T22:13:33+00:00"
    },
    "promo": {
     "files": {
@@ -16077,34 +16056,34 @@
    "title": "Stroke Tops",
    "line": "A dish of wooden spinning tops, each carrying a Chinese.",
    "url": "https://chenhsieh.github.io/stroke-tops/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Make the top read as a top, soften level 3, add a daily",
    "shelfNote": "",
    "image": "promo/stroke-tops/first.jpg",
    "firstSeen": "2026-10-16T01:39:08+00:00",
-   "lastChange": "2026-10-21T22:06:50+00:00",
+   "lastChange": "2026-10-21T22:13:33+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 1,
     "codexTokens": 238662,
     "codexUsdEst": 0.29,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 11,
     "earlierUsdEst": 39.6,
-    "totalUsdEst": 39.89
+    "totalUsdEst": 43.49
    },
    "tasks": [
     {
      "title": "P1SD39_studio standard stroke tops",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T22:02:56+00:00",
-     "done": null,
+     "since": "2026-10-21T22:13:33+00:00",
+     "done": "2026-10-21T22:13:33+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -16143,14 +16122,20 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": null,
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T22:13:33+00:00",
+     "ok": true,
+     "note": "studio standard done: own logo, og tags, share text; audit all ok",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T20:26:52+00:00",
      "ok": false,
@@ -16216,12 +16201,6 @@
      "ok": true,
      "note": "LIVE https://chenhsieh.github.io/stroke-tops/ (claude builder, batch3)",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-16T02:01:51+00:00",
-     "ok": true,
-     "note": "feat: knock a character top and send its strokes flying into the others",
-     "source": "main commit"
     }
    ]
   },
