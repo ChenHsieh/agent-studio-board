@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T19:27:31+00:00",
+ "generated": "2026-10-21T19:29:45+00:00",
  "ops": {
   "count": 26,
   "notes": [
@@ -23,11 +23,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 45,
+    "queued": 44,
     "running": 3,
-    "doneToday": 91,
-    "minutes": 1920,
-    "estimateMinutes": 640
+    "doneToday": 92,
+    "minutes": 1880,
+    "estimateMinutes": 627
    },
    "Claude": {
     "queued": 1,
@@ -37,16 +37,16 @@
     "estimateMinutes": 120
    }
   },
-  "queued": 46,
+  "queued": 45,
   "running": 4,
-  "doneToday": 115,
+  "doneToday": 116,
   "lanes": {
    "Codex": 3,
    "Claude": 1
   },
-  "minutesRemaining": 2040,
-  "estimatedFinish": "2026-10-22T06:07:31+00:00",
-  "estimateMinutes": 640
+  "minutesRemaining": 2000,
+  "estimatedFinish": "2026-10-22T05:56:45+00:00",
+  "estimateMinutes": 627
  },
  "lanes": [
   {
@@ -54,7 +54,7 @@
    "game": "peony-dream",
    "task": "P1SD31_studio standard peony dream",
    "since": "2026-10-21T19:03:24+00:00",
-   "activity": "2026-10-21T19:27:21+00:00",
+   "activity": "2026-10-21T19:29:36+00:00",
    "commit": {
     "at": "2026-10-21T19:24:02+00:00",
     "subject": "fix: expose local daily key to studio audit"
@@ -65,16 +65,22 @@
    "game": "BioRedactle-nextjs",
    "task": "P1SD32_studio standard redacxiv",
    "since": "2026-10-21T19:25:22+00:00",
-   "activity": "2026-10-21T19:27:30+00:00",
-   "commit": null
+   "activity": "2026-10-21T19:29:39+00:00",
+   "commit": {
+    "at": "2026-10-21T19:29:29+00:00",
+    "subject": "fix: include current preview assets in static export"
+   }
   },
   {
    "worker": "Codex",
-   "game": "refusal-detour",
-   "task": "P1SD33_studio standard refusal detour",
-   "since": "2026-10-21T19:23:44+00:00",
-   "activity": "2026-10-21T19:26:03+00:00",
-   "commit": null
+   "game": "remote-viewer",
+   "task": "P1SD34_studio standard remote viewer",
+   "since": "2026-10-21T19:27:37+00:00",
+   "activity": "2026-10-21T19:29:37+00:00",
+   "commit": {
+    "at": "2026-10-21T19:27:40+00:00",
+    "subject": "start: P1SD34_studio-standard-remote-viewer"
+   }
   },
   {
    "worker": "Claude",
@@ -89,8 +95,8 @@
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 15,
-  "usdEst": 54.0,
+  "runs": 16,
+  "usdEst": 57.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -128,7 +134,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 342
+   "changes": 343
   }
  ],
  "houseRules": 23,
@@ -11157,7 +11163,7 @@
    "shelfNote": "",
    "image": "promo/peony-dream/first.jpg",
    "firstSeen": "2026-10-18T01:51:43+00:00",
-   "lastChange": "2026-10-21T19:27:21+00:00",
+   "lastChange": "2026-10-21T19:29:36+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -11824,7 +11830,7 @@
    "shelfNote": "",
    "image": "promo/redacxiv/first.jpg",
    "firstSeen": "2026-10-14T20:25:51+00:00",
-   "lastChange": "2026-10-21T19:27:30+00:00",
+   "lastChange": "2026-10-21T19:29:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -11849,7 +11855,10 @@
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T19:29:29+00:00",
+      "subject": "fix: include current preview assets in static export"
+     },
      "result": ""
     },
     {
@@ -12188,10 +12197,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 36.45,
+   "costTotalUsd": 36.57,
    "latestChange": {
-    "text": "feat: choices answer touch with sound and motion",
-    "at": "2026-10-21T07:22:52+00:00"
+    "text": "feat: give Refusal Detour its own link preview",
+    "at": "2026-10-21T19:27:36+00:00"
    },
    "promo": {
     "files": {
@@ -12205,40 +12214,40 @@
    "title": "Refusal Detour",
    "line": "",
    "url": "https://chenhsieh.github.io/refusal-detour/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Keep the message about choice and refusal; make the action",
    "shelfNote": "",
    "image": "promo/refusal-detour/first.jpg",
    "firstSeen": "2026-10-15T04:01:25+00:00",
-   "lastChange": "2026-10-21T19:26:03+00:00",
+   "lastChange": "2026-10-21T19:27:36+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 2,
+    "codexRuns": 3,
     "claudeRuns": 0,
     "apiRuns": 1,
-    "codexTokens": 372623,
-    "codexUsdEst": 0.45,
+    "codexTokens": 478200,
+    "codexUsdEst": 0.57,
     "claudeUsdEst": 0.0,
     "earlierRounds": 10,
     "earlierUsdEst": 36.0,
-    "totalUsdEst": 36.45
+    "totalUsdEst": 36.57
    },
    "tasks": [
     {
      "title": "P1SD33_studio standard refusal detour",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T19:23:44+00:00",
-     "done": null,
+     "since": "2026-10-21T19:16:39+00:00",
+     "done": "2026-10-21T19:16:39+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 7,
+     "tokens": 105577,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: give Refusal Detour its own link preview"
     },
     {
      "title": "P1GF02_refusal detour clicky feel",
@@ -12285,14 +12294,20 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": null,
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T19:27:36+00:00",
+     "ok": true,
+     "note": "feat: give Refusal Detour its own link preview",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T07:22:52+00:00",
      "ok": true,
@@ -12352,17 +12367,11 @@
      "ok": true,
      "note": "revert: take Refusal Detour offline until its levels hold up when bots see only the screen",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-15T04:40:54+00:00",
-     "ok": true,
-     "note": "feat: route everyday questions around a closed assistant line",
-     "source": "main commit"
     }
    ]
   },
   {
-   "nextTask": "Fix share preview, logo and share text",
+   "nextTask": null,
    "costTotalUsd": 67.13,
    "latestChange": {
     "text": "daily files now require two clue words, compact reading space is clear at 390x844 and...",
@@ -12381,14 +12390,14 @@
    "title": "Remote Viewer",
    "line": "Uncover a CIA file and name its assignment.",
    "url": "https://chenhsieh.github.io/remote-viewer/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Game-design pass to find where the fun is and build it",
    "shelfNote": "",
    "image": "promo/remote-viewer/first.jpg",
    "firstSeen": "2026-09-20T16:48:48+00:00",
-   "lastChange": "2026-10-21T14:56:13+00:00",
+   "lastChange": "2026-10-21T19:29:37+00:00",
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 1,
@@ -12404,16 +12413,19 @@
    "tasks": [
     {
      "title": "P1SD34_studio standard remote viewer",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T14:56:13+00:00",
+     "since": "2026-10-21T19:27:37+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T19:27:40+00:00",
+      "subject": "start: P1SD34_studio-standard-remote-viewer"
+     },
      "result": ""
     },
     {
@@ -12460,8 +12472,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
