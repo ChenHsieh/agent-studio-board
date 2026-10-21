@@ -217,6 +217,13 @@ function render() {
   $('#queue').innerHTML = queueHtml();
   const queue = data.queue || {};
   $('#queue-eta').textContent = queue.estimateMinutes ? `Est. finish ${day(queue.estimatedFinish)}` : 'Queue clear';
+  const ops = data.ops || {}, notes = (ops.notes || []).filter((x) => typeof x === 'string');
+  const n = ops.count || notes.length;
+  $('#ops').hidden = !n;
+  if (n) {
+    $('#ops-sum').textContent = `Ops: ${n} ${n === 1 ? 'warning' : 'warnings'}`;
+    $('#ops-list').innerHTML = notes.map((x) => `<li>${esc(x)}</li>`).join('') + (n > notes.length ? `<li>and ${n - notes.length} more</li>` : '');
+  }
   $('#lanes').innerHTML = lanesHtml();
   $('#tally').innerHTML = tallyHtml();
   $('#sort').value = sort;
