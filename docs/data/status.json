@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T08:33:58+00:00",
+ "generated": "2026-10-21T08:36:09+00:00",
  "ops": {
-  "count": 22,
+  "count": 23,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -25,11 +25,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 44,
+    "queued": 42,
     "running": 2,
-    "doneToday": 57,
-    "minutes": 1840,
-    "estimateMinutes": 920
+    "doneToday": 58,
+    "minutes": 1760,
+    "estimateMinutes": 880
    },
    "Claude": {
     "queued": 1,
@@ -39,16 +39,16 @@
     "estimateMinutes": 180
    }
   },
-  "queued": 45,
+  "queued": 43,
   "running": 4,
-  "doneToday": 59,
+  "doneToday": 60,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2020,
-  "estimatedFinish": "2026-10-21T23:53:58+00:00",
-  "estimateMinutes": 920
+  "minutesRemaining": 1940,
+  "estimatedFinish": "2026-10-21T23:16:09+00:00",
+  "estimateMinutes": 880
  },
  "lanes": [
   {
@@ -61,16 +61,16 @@
   },
   {
    "worker": "Claude",
-   "game": "silent-disco",
-   "task": "P2PT04_silent disco drag",
-   "since": "2026-10-21T08:22:55+00:00",
-   "activity": "2026-10-21T08:33:34+00:00",
+   "game": "shortest-law",
+   "task": "P2PT05_shortest law feel",
+   "since": "2026-10-21T08:35:21+00:00",
+   "activity": "2026-10-21T08:35:22+00:00",
    "commit": null
   },
   {
    "worker": "Codex",
    "game": "Multiple games",
-   "task": "sweep score design",
+   "task": "coat corridor design",
    "since": null,
    "activity": null,
    "commit": null
@@ -78,7 +78,7 @@
   {
    "worker": "Codex",
    "game": "Multiple games",
-   "task": "coat corridor design",
+   "task": "slow pact design",
    "since": null,
    "activity": null,
    "commit": null
@@ -122,7 +122,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 200
+   "changes": 202
   }
  ],
  "houseRules": 23,
@@ -12207,14 +12207,14 @@
    "title": "Shortest Law",
    "line": "",
    "url": "https://chenhsieh.github.io/shortest-law/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T05:07:40+00:00",
-   "lastChange": "2026-10-21T06:47:14+00:00",
+   "lastChange": "2026-10-21T08:35:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12228,6 +12228,20 @@
     "totalUsdEst": 14.4
    },
    "tasks": [
+    {
+     "title": "P2PT05_shortest law feel",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Shortest Law: the curve slides to each new fit, a fit meter and sounds answer every term. Branch only, Chen approves before publishing.",
+     "since": "2026-10-21T08:35:21+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2GF12_shortest law feel pass",
      "state": "queued",
@@ -12255,25 +12269,11 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "P2PT05_shortest law feel",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Shortest Law: the curve slides to each new fit, a fit meter and sounds answer every term. Branch only, Chen approves before publishing.",
-     "since": "2026-10-21T03:46:28+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 3,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
@@ -12740,41 +12740,27 @@
    "title": "Silent Disco",
    "line": "",
    "url": "https://chenhsieh.github.io/silent-disco/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T16:29:01+00:00",
-   "lastChange": "2026-10-21T08:33:34+00:00",
+   "lastChange": "2026-10-21T08:35:12+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 4,
     "earlierUsdEst": 14.4,
-    "totalUsdEst": 14.4
+    "totalUsdEst": 18.0
    },
    "tasks": [
-    {
-     "title": "P2PT04_silent disco drag",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Silent Disco: dancers lift and follow the finger, matching doors light up, and a dropped dancer settles with a small sound. Branch only, Chen approves before publishing.",
-     "since": "2026-10-21T08:22:55+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2GF10_silent disco feel pass",
      "state": "queued",
@@ -12802,18 +12788,38 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2PT04_silent disco drag",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Silent Disco: dancers lift and follow the finger, matching doors light up, and a dropped dancer settles with a small sound. Branch only, Chen approves before publishing.",
+     "since": "2026-10-21T03:46:28+00:00",
+     "done": "2026-10-21T03:46:28+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "RESULT P2PT04 silent-disco-drag: Live draw.js bytes match; drag_play passes on the live URL at 390x844 and 320x568."
     }
    ],
    "taskCounts": {
     "queued": 2,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T08:35:12+00:00",
+     "ok": true,
+     "note": "P2PT04 drag feel live: lift, lit doors, fly-in, spring back (main )",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T08:33:34+00:00",
      "ok": true,
