@@ -1,11 +1,12 @@
 {
- "generated": "2026-10-21T14:49:05+00:00",
+ "generated": "2026-10-21T14:51:18+00:00",
  "ops": {
-  "count": 21,
+  "count": 22,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
    "A task waits for a task that does not exist.",
+   "Two tasks share the number P1DB07.",
    "Two tasks share the number P1c09."
   ]
  },
@@ -13,6 +14,7 @@
   "A game changed in the last hour with no claimed task on it.",
   "A status note names something that is not a game.",
   "A task waits for a task that does not exist.",
+  "Two tasks share the number P1DB07.",
   "Two tasks share the number P1c09."
  ],
  "project": {
@@ -25,30 +27,30 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 52,
+    "queued": 53,
     "running": 4,
     "doneToday": 69,
-    "minutes": 2240,
-    "estimateMinutes": 560
+    "minutes": 2280,
+    "estimateMinutes": 570
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 2,
     "doneToday": 13,
-    "minutes": 120,
-    "estimateMinutes": 120
+    "minutes": 180,
+    "estimateMinutes": 180
    }
   },
-  "queued": 53,
-  "running": 5,
+  "queued": 54,
+  "running": 6,
   "doneToday": 82,
   "lanes": {
    "Codex": 4,
    "Claude": 1
   },
-  "minutesRemaining": 2360,
-  "estimatedFinish": "2026-10-22T00:09:05+00:00",
-  "estimateMinutes": 560
+  "minutesRemaining": 2460,
+  "estimatedFinish": "2026-10-22T00:21:18+00:00",
+  "estimateMinutes": 570
  },
  "lanes": [
   {
@@ -64,10 +66,10 @@
    "game": "flying-white",
    "task": "P1FW43_flying white real models and masks",
    "since": "2026-10-21T14:33:36+00:00",
-   "activity": "2026-10-21T14:48:26+00:00",
+   "activity": "2026-10-21T14:51:02+00:00",
    "commit": {
-    "at": "2026-10-21T14:41:48+00:00",
-    "subject": "wip: P1FW43_flying-white-real-models-and-masks (Codex lane autosave 10:41)"
+    "at": "2026-10-21T14:49:59+00:00",
+    "subject": "wip: P1FW43_flying-white-real-models-and-masks (Codex lane autosave 10:49)"
    }
   },
   {
@@ -75,7 +77,7 @@
    "game": "kitty-portal-sparkle-click",
    "task": "P1KP40_kitty portal framework",
    "since": "2026-10-21T14:22:46+00:00",
-   "activity": "2026-10-21T14:48:58+00:00",
+   "activity": "2026-10-21T14:50:11+00:00",
    "commit": {
     "at": "2026-10-21T14:47:03+00:00",
     "subject": "wip: P1KP40_kitty-portal-framework (Codex lane autosave 10:47)"
@@ -86,10 +88,10 @@
    "game": "lie-flat",
    "task": "P1LF40_lie flat instructions and softer paper",
    "since": "2026-10-21T14:43:50+00:00",
-   "activity": "2026-10-21T14:49:04+00:00",
+   "activity": "2026-10-21T14:51:08+00:00",
    "commit": {
-    "at": "2026-10-21T14:46:51+00:00",
-    "subject": "feat: explain point badges on each sheet"
+    "at": "2026-10-21T14:49:18+00:00",
+    "subject": "feat: make folds softer and turning stable"
    }
   },
   {
@@ -97,15 +99,23 @@
    "game": "letter-lines",
    "task": "P1LL40_letter lines hints drag select logo",
    "since": "2026-10-21T14:48:31+00:00",
-   "activity": "2026-10-21T14:49:05+00:00",
+   "activity": "2026-10-21T14:51:13+00:00",
    "commit": {
     "at": "2026-10-21T14:48:32+00:00",
     "subject": "start: P1LL40_letter-lines-hints-drag-select-logo"
    }
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P1SD10_studio standard audit and promo shots",
+   "since": null,
+   "activity": null,
+   "commit": null
   }
  ],
  "codexLanes": 4,
- "claudeWorkers": 1,
+ "claudeWorkers": 2,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -1284,9 +1294,9 @@
     "codexTokens": 131726,
     "codexUsdEst": 0.16,
     "claudeUsdEst": 10.8,
-    "earlierRounds": 7,
-    "earlierUsdEst": 25.2,
-    "totalUsdEst": 36.16
+    "earlierRounds": 8,
+    "earlierUsdEst": 28.8,
+    "totalUsdEst": 39.76
    },
    "tasks": [
     {
@@ -1381,6 +1391,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-21T14:47:28+00:00",
+     "ok": true,
+     "note": "fix: make Blue Book peels readable and source scans easy to inspect",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-21T14:33:51+00:00",
      "ok": false,
      "note": "see",
@@ -1438,12 +1454,6 @@
      "at": "2026-09-21T02:50:38+00:00",
      "ok": true,
      "note": "Open in the language the content is in",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-20T20:57:49+00:00",
-     "ok": true,
-     "note": "Blue Book: where was it seen, and when",
      "source": "main commit"
     }
    ]
@@ -2778,14 +2788,14 @@
    "title": "Defense Bingo",
    "line": "A bingo card for a thesis defense.",
    "url": "https://chenhsieh.github.io/defense-bingo/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Express lane: the defense is 2026-10-22",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-15T21:10:45+00:00",
-   "lastChange": "2026-10-21T05:23:38+00:00",
+   "lastChange": "2026-10-21T14:51:05+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -2799,6 +2809,20 @@
     "totalUsdEst": 50.4
    },
    "tasks": [
+    {
+     "title": "P1DB07_defense bingo two tap confirm",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Defense Bingo: first tap shows what the square means, second tap marks it",
+     "since": "2026-10-21T14:51:05+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "review of defense bingo inspection",
      "state": "done",
@@ -2815,7 +2839,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
@@ -2826,7 +2850,7 @@
     "note": "One-time use for the defense; no further work"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T05:23:38+00:00",
@@ -4737,7 +4761,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T05:18:25+00:00",
-   "lastChange": "2026-10-21T14:48:26+00:00",
+   "lastChange": "2026-10-21T14:51:02+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -4763,8 +4787,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-21T14:41:48+00:00",
-      "subject": "wip: P1FW43_flying-white-real-models-and-masks (Codex lane autosave 10:41)"
+      "at": "2026-10-21T14:49:59+00:00",
+      "subject": "wip: P1FW43_flying-white-real-models-and-masks (Codex lane autosave 10:49)"
      },
      "result": ""
     },
@@ -6821,7 +6845,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2025-07-11T03:24:45+00:00",
-   "lastChange": "2026-10-21T14:48:58+00:00",
+   "lastChange": "2026-10-21T14:50:11+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -7446,7 +7470,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:19:59+00:00",
-   "lastChange": "2026-10-21T14:49:05+00:00",
+   "lastChange": "2026-10-21T14:51:13+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -7603,7 +7627,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:36:20+00:00",
-   "lastChange": "2026-10-21T14:49:04+00:00",
+   "lastChange": "2026-10-21T14:51:08+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -7629,8 +7653,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-21T14:46:51+00:00",
-      "subject": "feat: explain point badges on each sheet"
+      "at": "2026-10-21T14:49:18+00:00",
+      "subject": "feat: make folds softer and turning stable"
      },
      "result": ""
     },
