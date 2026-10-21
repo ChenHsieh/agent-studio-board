@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T07:03:35+00:00",
+ "generated": "2026-10-21T07:05:47+00:00",
  "ops": {
-  "count": 34,
+  "count": 33,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -25,11 +25,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 54,
+    "queued": 52,
     "running": 4,
-    "doneToday": 48,
-    "minutes": 2320,
-    "estimateMinutes": 580
+    "doneToday": 50,
+    "minutes": 2240,
+    "estimateMinutes": 560
    },
    "Claude": {
     "queued": 1,
@@ -39,44 +39,50 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 55,
+  "queued": 53,
   "running": 4,
-  "doneToday": 50,
+  "doneToday": 52,
   "lanes": {
    "Codex": 4,
    "Claude": 1
   },
-  "minutesRemaining": 2380,
-  "estimatedFinish": "2026-10-21T16:43:35+00:00",
-  "estimateMinutes": 580
+  "minutesRemaining": 2300,
+  "estimatedFinish": "2026-10-21T16:25:47+00:00",
+  "estimateMinutes": 560
  },
  "lanes": [
   {
    "worker": "Codex",
-   "game": "readable-nonsense",
-   "task": "P1RN30_readable nonsense render fix",
-   "since": "2026-10-21T07:00:15+00:00",
-   "activity": "2026-10-21T07:02:27+00:00",
-   "commit": null
+   "game": "refusal-detour",
+   "task": "P1GF02_refusal detour clicky feel",
+   "since": "2026-10-21T07:04:00+00:00",
+   "activity": "2026-10-21T07:05:46+00:00",
+   "commit": {
+    "at": "2026-10-21T07:04:10+00:00",
+    "subject": "start: P1GF02_refusal-detour-clicky-feel"
+   }
+  },
+  {
+   "worker": "Codex",
+   "game": "telephone-of-babel",
+   "task": "P1TB20_babel own logo and local daily",
+   "since": "2026-10-21T07:05:32+00:00",
+   "activity": "2026-10-21T07:05:47+00:00",
+   "commit": {
+    "at": "2026-10-21T07:05:33+00:00",
+    "subject": "start: P1TB20_babel-own-logo-and-local-daily"
+   }
   },
   {
    "worker": "Codex",
    "game": "nesting-scrap",
    "task": "nesting scrap taste",
    "since": "2026-10-21T06:39:06+00:00",
-   "activity": "2026-10-21T07:03:29+00:00",
+   "activity": "2026-10-21T07:05:33+00:00",
    "commit": {
     "at": "2026-10-21T07:03:10+00:00",
     "subject": "wip: P1t10_nesting-scrap-taste (Codex lane autosave 03:03)"
    }
-  },
-  {
-   "worker": "Codex",
-   "game": "connectle",
-   "task": "connectle signal",
-   "since": "2026-10-21T07:00:17+00:00",
-   "activity": "2026-10-21T07:00:14+00:00",
-   "commit": null
   },
   {
    "worker": "Codex",
@@ -125,7 +131,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 178
+   "changes": 180
   }
  ],
  "houseRules": 23,
@@ -1973,40 +1979,40 @@
    "title": "Connectle",
    "line": "Hop through fly neurons to reach a body part.",
    "url": "https://chenhsieh.github.io/connectle/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Story and design pass; shelve if it still does not work",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/connectle-1.webp",
    "firstSeen": "2026-09-11T02:38:12+00:00",
-   "lastChange": "2026-10-21T07:00:14+00:00",
+   "lastChange": "2026-10-21T07:05:32+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 0,
     "apiRuns": 1,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 185725,
+    "codexUsdEst": 0.22,
     "claudeUsdEst": 0.0,
     "earlierRounds": 13,
     "earlierUsdEst": 46.8,
-    "totalUsdEst": 46.8
+    "totalUsdEst": 47.02
    },
    "tasks": [
     {
      "title": "connectle signal",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "",
-     "since": "2026-10-21T07:00:17+00:00",
-     "done": null,
+     "since": "2026-10-21T06:26:41+00:00",
+     "done": "2026-10-21T06:26:41+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 21,
+     "tokens": 185725,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: show where each signal link leads"
     },
     {
      "title": "connectle core",
@@ -2025,14 +2031,20 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T07:05:32+00:00",
+     "ok": true,
+     "note": "feat: show where each signal link leads",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T06:24:45+00:00",
      "ok": false,
@@ -2098,12 +2110,6 @@
      "ok": true,
      "note": "PLAN: correct the wing-skew claim (it came from an alphabetical subsample)",
      "source": "main commit"
-    },
-    {
-     "at": "2026-09-11T02:43:59+00:00",
-     "ok": true,
-     "note": "Route hint names what the last neuron moves",
-     "source": "main commit"
     }
    ]
   },
@@ -2120,7 +2126,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/nesting-scrap-1.webp",
    "firstSeen": "2026-10-15T23:26:00+00:00",
-   "lastChange": "2026-10-21T07:03:29+00:00",
+   "lastChange": "2026-10-21T07:05:33+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -10621,14 +10627,14 @@
    "title": "Refusal Detour",
    "line": "",
    "url": "https://chenhsieh.github.io/refusal-detour/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Keep the message about choice and refusal; make the action",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/refusal-detour-1.webp",
    "firstSeen": "2026-10-15T04:01:25+00:00",
-   "lastChange": "2026-10-21T06:26:40+00:00",
+   "lastChange": "2026-10-21T07:05:46+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -10644,16 +10650,19 @@
    "tasks": [
     {
      "title": "P1GF02_refusal detour clicky feel",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Apply a clicky game-feel pass to Refusal Detour.",
-     "since": "2026-10-21T06:26:40+00:00",
+     "since": "2026-10-21T07:04:00+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T07:04:10+00:00",
+      "subject": "start: P1GF02_refusal-detour-clicky-feel"
+     },
      "result": ""
     },
     {
@@ -10686,8 +10695,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
@@ -13809,14 +13818,14 @@
    "title": "Telephone of Babel",
    "line": "",
    "url": "https://chenhsieh.github.io/telephone-of-babel/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Remix around languages meeting and the balance that keeps",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/telephone-of-babel-1.webp",
    "firstSeen": "2026-10-15T23:26:31+00:00",
-   "lastChange": "2026-10-21T06:43:34+00:00",
+   "lastChange": "2026-10-21T07:05:47+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -13832,16 +13841,19 @@
    "tasks": [
     {
      "title": "P1TB20_babel own logo and local daily",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Telephone of Babel: own logo instead of the hub link and a local-midnight daily on the restored version.",
-     "since": "2026-10-21T06:43:34+00:00",
+     "since": "2026-10-21T07:05:32+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T07:05:33+00:00",
+      "subject": "start: P1TB20_babel-own-logo-and-local-daily"
+     },
      "result": ""
     },
     {
@@ -13888,8 +13900,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
@@ -16852,40 +16864,40 @@
    "title": "阿嬤讀得出來",
    "line": "A famous Tang poem line is printed as fake glyphs with.",
    "url": "https://chenhsieh.github.io/readable-nonsense/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Show the candidate set shrinking, use best not par, make",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/readable-nonsense-1.webp",
    "firstSeen": "2026-10-15T23:26:29+00:00",
-   "lastChange": "2026-10-21T07:02:27+00:00",
+   "lastChange": "2026-10-21T07:04:00+00:00",
    "cost": {
     "apiUsd": 2.95,
-    "codexRuns": 2,
+    "codexRuns": 3,
     "claudeRuns": 1,
     "apiRuns": 0,
-    "codexTokens": 514717,
-    "codexUsdEst": 0.62,
+    "codexTokens": 697578,
+    "codexUsdEst": 0.84,
     "claudeUsdEst": 3.6,
     "earlierRounds": 13,
     "earlierUsdEst": 46.8,
-    "totalUsdEst": 53.97
+    "totalUsdEst": 54.19
    },
    "tasks": [
     {
      "title": "P1RN30_readable nonsense render fix",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Fix Readable Nonsense rendering of Zhuyin glyphs and the how-to page on iPhone and in-app browsers.",
-     "since": "2026-10-21T07:00:15+00:00",
-     "done": null,
+     "since": "2026-10-21T06:39:05+00:00",
+     "done": "2026-10-21T06:39:05+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 21,
+     "tokens": 182861,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "fix: render Zhuyin and poem text reliably on phones"
     },
     {
      "title": "readable nonsense ink",
@@ -16932,14 +16944,20 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": null,
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T07:04:00+00:00",
+     "ok": true,
+     "note": "fix: render Zhuyin and poem text reliably on phones",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T04:56:40+00:00",
      "ok": true,
@@ -17005,12 +17023,6 @@
      "ok": true,
      "note": "feat: How to play card names where the game comes from",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-17T21:41:35+00:00",
-     "ok": true,
-     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added",
-     "source": "board note"
     }
    ]
   }
