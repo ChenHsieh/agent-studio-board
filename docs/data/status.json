@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T17:54:19+00:00",
+ "generated": "2026-10-21T17:56:31+00:00",
  "ops": {
   "count": 31,
   "notes": [
@@ -23,38 +23,46 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 58,
+    "queued": 55,
     "running": 2,
     "doneToday": 86,
-    "minutes": 2400,
-    "estimateMinutes": 1200
+    "minutes": 2280,
+    "estimateMinutes": 1140
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
-    "doneToday": 20,
-    "minutes": 120,
-    "estimateMinutes": 120
+    "running": 3,
+    "doneToday": 21,
+    "minutes": 240,
+    "estimateMinutes": 240
    }
   },
-  "queued": 59,
-  "running": 3,
-  "doneToday": 106,
+  "queued": 56,
+  "running": 5,
+  "doneToday": 107,
   "lanes": {
    "Codex": 2,
    "Claude": 1
   },
   "minutesRemaining": 2520,
-  "estimatedFinish": "2026-10-22T13:54:19+00:00",
-  "estimateMinutes": 1200
+  "estimatedFinish": "2026-10-22T12:56:31+00:00",
+  "estimateMinutes": 1140
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "colony-count",
-   "task": "P1CC32_colony achievements and book cuteness",
-   "since": "2026-10-21T17:13:10+00:00",
-   "activity": "2026-10-21T17:53:20+00:00",
+   "game": "dancers-not-mad",
+   "task": "P1DM03_dancers automaton art",
+   "since": "2026-10-21T17:55:58+00:00",
+   "activity": "2026-10-21T17:55:58+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "mirror-hold",
+   "task": "P1MH54_mirror hold ship review",
+   "since": "2026-10-21T17:56:11+00:00",
+   "activity": "2026-10-21T17:56:28+00:00",
    "commit": null
   },
   {
@@ -62,7 +70,7 @@
    "game": "grass-crossword",
    "task": "P1SD21_studio standard grass crossword",
    "since": "2026-10-21T17:52:41+00:00",
-   "activity": "2026-10-21T17:54:17+00:00",
+   "activity": "2026-10-21T17:56:29+00:00",
    "commit": null
   },
   {
@@ -70,15 +78,23 @@
    "game": "local-hero",
    "task": "P1SD25_studio standard local hero",
    "since": "2026-10-21T17:51:08+00:00",
-   "activity": "2026-10-21T17:54:07+00:00",
+   "activity": "2026-10-21T17:56:09+00:00",
    "commit": {
     "at": "2026-10-21T17:51:09+00:00",
     "subject": "start: P1SD25_studio-standard-local-hero"
    }
+  },
+  {
+   "worker": "Claude",
+   "game": "thirsty-clicks",
+   "task": "thirsty clicks smooth",
+   "since": "2026-10-21T17:55:58+00:00",
+   "activity": "2026-10-21T17:56:16+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 2,
- "claudeWorkers": 1,
+ "claudeWorkers": 3,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
   "runs": 4,
@@ -120,7 +136,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 310
+   "changes": 311
   }
  ],
  "houseRules": 23,
@@ -1926,10 +1942,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 167.25,
+   "costTotalUsd": 170.85,
    "latestChange": {
-    "text": "feat: tap the home plate to play today's dish",
-    "at": "2026-10-21T14:33:36+00:00"
+    "text": "P1CC32 live: 51 achievements with stickers, calm toast queue, Stickers tab with...",
+    "at": "2026-10-21T17:55:24+00:00"
    },
    "promo": null,
    "id": "colony-count",
@@ -1937,41 +1953,27 @@
    "title": "Colony Count",
    "line": "Solve three daily levels, then freeze finished plates.",
    "url": "https://chenhsieh.github.io/colony-count/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Flagship; has its own owner",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-21T17:53:20+00:00",
+   "lastChange": "2026-10-21T17:55:24+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 2,
-    "claudeRuns": 15,
+    "claudeRuns": 16,
     "apiRuns": 8,
     "codexTokens": 304598,
     "codexUsdEst": 0.37,
-    "claudeUsdEst": 54.0,
+    "claudeUsdEst": 57.6,
     "earlierRounds": 25,
     "earlierUsdEst": 90.0,
-    "totalUsdEst": 167.25
+    "totalUsdEst": 170.85
    },
    "tasks": [
-    {
-     "title": "P1CC32_colony achievements and book cuteness",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Colony Count: achievement toasts, 40+ conditional achievements and cute Book additions.",
-     "since": "2026-10-21T17:13:10+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1CC33_colony home plate tap to play",
      "state": "done",
@@ -1999,6 +2001,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "feat: keep earned characters in sync and add a leaf hat with responsive eyes"
+    },
+    {
+     "title": "P1CC32_colony achievements and book cuteness",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Colony Count: achievement toasts, 40+ conditional achievements and cute Book additions.",
+     "since": "2026-10-21T13:25:32+00:00",
+     "done": "2026-10-21T13:25:32+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1CC32 DONE, live at https://chenhsieh.github.io/colony-count/ (main -> , rollback tag pre-cc-achievements)."
     },
     {
      "title": "colony character maker",
@@ -2073,18 +2089,24 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 25
+    "done": 26
    },
    "verdict": {
     "date": "2026-10-20",
     "verdict": "revise",
     "note": "New studies need UI pass; hide until then"
    },
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T17:55:24+00:00",
+     "ok": true,
+     "note": "P1CC32 live: 51 achievements with stickers, calm toast queue, Stickers tab with arrangeable page, shelf props, daily resident visit (main )",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T14:33:36+00:00",
      "ok": true,
@@ -2150,12 +2172,6 @@
      "ok": true,
      "note": "Book screen live ():",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-21T04:11:03+00:00",
-     "ok": true,
-     "note": "feat:",
-     "source": "main commit"
     }
    ]
   },
@@ -2864,7 +2880,7 @@
    ]
   },
   {
-   "nextTask": "The dancers become articulated automata whose pinned loop...",
+   "nextTask": "Game-feel pass for dancers-not-mad using the shared juice...",
    "costTotalUsd": 25.2,
    "latestChange": {
     "text": "P1DM01 smooth animation live (merge ); strips in results_shots/P1DM01;...",
@@ -2876,14 +2892,14 @@
    "title": "Dancers Not Mad",
    "line": "",
    "url": "https://chenhsieh.github.io/dancers-not-mad/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:37:54+00:00",
-   "lastChange": "2026-10-21T16:48:43+00:00",
+   "lastChange": "2026-10-21T17:55:58+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -2899,10 +2915,10 @@
    "tasks": [
     {
      "title": "P1DM03_dancers automaton art",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "The dancers become articulated automata whose pinned loop visibly drives every step.",
-     "since": "2026-10-21T16:23:52+00:00",
+     "since": "2026-10-21T17:55:58+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2941,8 +2957,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -6327,7 +6343,7 @@
    "shelfNote": "",
    "image": "promo/grass-crossword/first.jpg",
    "firstSeen": "2026-10-16T01:23:04+00:00",
-   "lastChange": "2026-10-21T17:54:17+00:00",
+   "lastChange": "2026-10-21T17:56:29+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 5,
@@ -8853,7 +8869,7 @@
    "shelfNote": "",
    "image": "promo/local-hero/first.jpg",
    "firstSeen": "2026-08-20T15:58:51+00:00",
-   "lastChange": "2026-10-21T17:54:07+00:00",
+   "lastChange": "2026-10-21T17:56:09+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -9943,7 +9959,7 @@
    ]
   },
   {
-   "nextTask": "Mirror Hold: Opus cold-play ship review of the...",
+   "nextTask": null,
    "costTotalUsd": 58.75,
    "latestChange": {
     "text": "feat: rise through tokoyama ranks and face the 1953 bout",
@@ -9955,14 +9971,14 @@
    "title": "Mirror Hold",
    "line": "Wax a hairstyle, then test it against three pulls.",
    "url": "https://chenhsieh.github.io/mirror-hold/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Huge revamp planned by a cross-functional lead",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/mirror-hold-1.webp",
    "firstSeen": "2026-10-14T23:26:30+00:00",
-   "lastChange": "2026-10-21T17:22:09+00:00",
+   "lastChange": "2026-10-21T17:56:28+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -9978,10 +9994,10 @@
    "tasks": [
     {
      "title": "P1MH54_mirror hold ship review",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Mirror Hold: Opus cold-play ship review of the rework",
-     "since": "2026-10-21T14:48:36+00:00",
+     "since": "2026-10-21T17:56:11+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -10076,8 +10092,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 6
    },
@@ -16761,14 +16777,14 @@
    "title": "Thirsty Clicks",
    "line": "",
    "url": "https://chenhsieh.github.io/thirsty-clicks/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:19:46+00:00",
-   "lastChange": "2026-10-21T12:26:36+00:00",
+   "lastChange": "2026-10-21T17:56:16+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -16782,6 +16798,20 @@
     "totalUsdEst": 10.8
    },
    "tasks": [
+    {
+     "title": "thirsty clicks smooth",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Smooth the Thirsty Clicks touch experience, feedback and pacing.",
+     "since": "2026-10-21T17:55:58+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "thirsty clicks propagation art",
      "state": "queued",
@@ -16809,25 +16839,11 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "thirsty clicks smooth",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Smooth the Thirsty Clicks touch experience, feedback and pacing.",
-     "since": "2026-10-21T01:01:56+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 3,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
