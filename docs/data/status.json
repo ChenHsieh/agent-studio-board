@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T18:12:00+00:00",
+ "generated": "2026-10-21T18:14:14+00:00",
  "ops": {
-  "count": 28,
+  "count": 27,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -45,7 +45,7 @@
    "Claude": 1
   },
   "minutesRemaining": 2460,
-  "estimatedFinish": "2026-10-23T08:12:00+00:00",
+  "estimatedFinish": "2026-10-23T08:14:14+00:00",
   "estimateMinutes": 2280
  },
  "lanes": [
@@ -54,8 +54,11 @@
    "game": "dancers-not-mad",
    "task": "P1DM03_dancers automaton art",
    "since": "2026-10-21T17:55:58+00:00",
-   "activity": "2026-10-21T17:55:58+00:00",
-   "commit": null
+   "activity": "2026-10-21T18:12:16+00:00",
+   "commit": {
+    "at": "2026-10-21T18:12:16+00:00",
+    "subject": "start: P1DM03 dancers-automaton-art"
+   }
   },
   {
    "worker": "Claude",
@@ -70,27 +73,19 @@
    "game": "grass-crossword",
    "task": "P1SD21_studio standard grass crossword",
    "since": "2026-10-21T17:52:41+00:00",
-   "activity": "2026-10-21T18:11:09+00:00",
+   "activity": "2026-10-21T18:13:47+00:00",
    "commit": {
     "at": "2026-10-21T18:02:49+00:00",
     "subject": "chore: keep bot decision baseline"
    }
-  },
-  {
-   "worker": "Claude",
-   "game": "thirsty-clicks",
-   "task": "thirsty clicks smooth",
-   "since": "2026-10-21T17:55:58+00:00",
-   "activity": "2026-10-21T18:10:23+00:00",
-   "commit": null
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 3,
+ "claudeWorkers": 2,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 5,
-  "usdEst": 18.0,
+  "runs": 6,
+  "usdEst": 21.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -2891,7 +2886,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:37:54+00:00",
-   "lastChange": "2026-10-21T17:55:58+00:00",
+   "lastChange": "2026-10-21T18:12:16+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -2916,7 +2911,10 @@
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T18:12:16+00:00",
+      "subject": "start: P1DM03 dancers-automaton-art"
+     },
      "result": ""
     },
     {
@@ -6335,7 +6333,7 @@
    "shelfNote": "",
    "image": "promo/grass-crossword/first.jpg",
    "firstSeen": "2026-10-16T01:23:04+00:00",
-   "lastChange": "2026-10-21T18:11:09+00:00",
+   "lastChange": "2026-10-21T18:13:47+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 5,
@@ -16769,8 +16767,8 @@
    "title": "Thirsty Clicks",
    "line": "",
    "url": "https://chenhsieh.github.io/thirsty-clicks/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -16780,30 +16778,16 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
     "totalUsdEst": 14.4
    },
    "tasks": [
-    {
-     "title": "thirsty clicks smooth",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Smooth the Thirsty Clicks touch experience, feedback and pacing.",
-     "since": "2026-10-21T17:55:58+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "thirsty clicks propagation art",
      "state": "queued",
@@ -16831,13 +16815,27 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "thirsty clicks smooth",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Smooth the Thirsty Clicks touch experience, feedback and pacing.",
+     "since": "2026-10-21T01:01:56+00:00",
+     "done": "2026-10-21T01:01:56+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
     }
    ],
    "taskCounts": {
     "queued": 2,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": {
     "date": "2026-10-20",
