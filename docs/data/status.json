@@ -1,9 +1,10 @@
 {
- "generated": "2026-10-21T04:13:12+00:00",
+ "generated": "2026-10-21T04:15:26+00:00",
  "ops": {
-  "count": 23,
+  "count": 25,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
+   "A running task has shown no progress for over 3 hours.",
    "A status note names something that is not a game.",
    "A task waits for a task that does not exist.",
    "Two tasks share the number P1c09."
@@ -11,6 +12,7 @@
  },
  "about": [
   "A game changed in the last hour with no claimed task on it.",
+  "A running task has shown no progress for over 3 hours.",
   "A status note names something that is not a game.",
   "A task waits for a task that does not exist.",
   "Two tasks share the number P1c09."
@@ -32,23 +34,23 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 119,
+    "queued": 117,
     "running": 4,
     "doneToday": 0,
-    "minutes": 1716,
-    "estimateMinutes": 1716
+    "minutes": 1692,
+    "estimateMinutes": 1692
    }
   },
-  "queued": 119,
+  "queued": 117,
   "running": 4,
   "doneToday": 0,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 1716,
-  "estimatedFinish": "2026-10-22T08:49:12+00:00",
-  "estimateMinutes": 1716
+  "minutesRemaining": 1692,
+  "estimatedFinish": "2026-10-22T08:27:26+00:00",
+  "estimateMinutes": 1692
  },
  "lanes": [
   {
@@ -62,9 +64,9 @@
   {
    "worker": "Claude",
    "game": "bluebook-guess",
-   "task": "bluebook core build",
-   "since": "2026-10-21T03:42:08+00:00",
-   "activity": "2026-10-21T04:13:07+00:00",
+   "task": "bluebook dossier look",
+   "since": "2026-10-21T04:14:51+00:00",
+   "activity": "2026-10-21T04:15:18+00:00",
    "commit": null
   },
   {
@@ -77,10 +79,10 @@
   },
   {
    "worker": "Claude",
-   "game": "motif-hero",
-   "task": "motif hero arcade",
-   "since": "2026-10-21T04:02:48+00:00",
-   "activity": "2026-10-21T04:11:53+00:00",
+   "game": "rna-hero",
+   "task": "rna hero bridge game",
+   "since": "2026-10-21T04:14:09+00:00",
+   "activity": "2026-10-21T04:14:13+00:00",
    "commit": null
   }
  ],
@@ -122,7 +124,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 3
+   "changes": 6
   }
  ],
  "houseRules": 23,
@@ -1243,40 +1245,26 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/bluebook-guess-1.webp",
    "firstSeen": "2026-09-20T20:57:49+00:00",
-   "lastChange": "2026-10-21T04:13:07+00:00",
+   "lastChange": "2026-10-21T04:15:18+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 4,
     "earlierUsdEst": 14.4,
-    "totalUsdEst": 18.0
+    "totalUsdEst": 21.6
    },
    "tasks": [
     {
-     "title": "bluebook core build",
+     "title": "bluebook dossier look",
      "state": "running",
      "worker": "Claude",
-     "plan": "Blue Book new core: open a case folder, peel two of the taped exhibits, stamp what the Air Force decided it was, then see their record card; daily at local midnight, archive, practice, a filing-cabinet collection.",
-     "since": "2026-10-21T03:42:08+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "bluebook dossier look",
-     "state": "queued",
-     "worker": "Claude",
      "plan": "Blue Book look pass: manila folder, violet tape and rubber stamps, pencil notes, halftone clippings, a stamped share card and Chinese labels.",
-     "since": "2026-10-20T20:12:38+00:00",
+     "since": "2026-10-21T04:14:51+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1300,6 +1288,20 @@
      "result": ""
     },
     {
+     "title": "bluebook core build",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Blue Book new core: open a case folder, peel two of the taped exhibits, stamp what the Air Force decided it was, then see their record card; daily at local midnight, archive, practice, a filing-cabinet collection.",
+     "since": "2026-10-20T20:12:38+00:00",
+     "done": "2026-10-20T20:12:38+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1b11 done and LIVE (main , rollback tag pre-dossier-core): https://chenhsieh.github.io/bluebook-guess/ ; live bytes match for app.js, index, css, sky.js, clue/daily/ans/card/exhibit samples, astronomy, fonts. Looked at..."
+    },
+    {
      "title": "bluebook guess ship standard",
      "state": "done",
      "worker": "Claude API",
@@ -1315,10 +1317,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": {
     "date": "2026-10-20",
@@ -1328,6 +1330,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T04:14:51+00:00",
+     "ok": true,
+     "note": "P1b11 core live: case folder, tape lifts, stamps, real card with box circled, computed sky, daily/archive/practice/cabinet/stats; Opus ship review next",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T03:42:08+00:00",
      "ok": true,
@@ -8916,41 +8924,27 @@
    "title": "Motif Hero",
    "line": "Set the bar to how common each column's top letter is.",
    "url": "https://chenhsieh.github.io/motif-hero/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Claude",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/motif-hero-1.webp",
    "firstSeen": "2026-08-29T04:07:57+00:00",
-   "lastChange": "2026-10-21T04:11:53+00:00",
+   "lastChange": "2026-10-21T04:14:04+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 1,
     "codexTokens": 212361,
     "codexUsdEst": 0.25,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 12,
     "earlierUsdEst": 43.2,
-    "totalUsdEst": 47.05
+    "totalUsdEst": 50.65
    },
    "tasks": [
-    {
-     "title": "motif hero arcade",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Motif Hero arcade mode: a line swings up and down the column like a pendulum and you strike when it meets the share; four speeds, grades and combos, no countdown.",
-     "since": "2026-10-21T04:02:48+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "motif hero daily endless collection",
      "state": "queued",
@@ -8978,6 +8972,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1h10 hero theme kit + Motif Hero phosphor reskin:"
+    },
+    {
+     "title": "motif hero arcade",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Motif Hero arcade mode: a line swings up and down the column like a pendulum and you strike when it meets the share; four speeds, grades and combos, no countdown.",
+     "since": "2026-10-20T20:06:01+00:00",
+     "done": "2026-10-20T20:06:01+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1h11 Motif Hero arcade:"
     },
     {
      "title": "motif hero drag lock",
@@ -9010,9 +9018,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": {
     "date": "2026-10-20",
@@ -9022,6 +9030,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T04:14:04+00:00",
+     "ok": true,
+     "note": "P1h11 arcade live (main ): pendulum scan line, 4 speeds, grades+combo, calibration; Opus ship review owed",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T04:02:45+00:00",
      "ok": true,
@@ -9086,12 +9100,6 @@
      "at": "2026-08-29T04:16:29+00:00",
      "ok": true,
      "note": "Document streak/best as a client-side honor system, not a leaderboard",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-08-29T04:14:46+00:00",
-     "ok": true,
-     "note": "Add lock-tick and reveal-chime audio, with a persistent mute toggle",
      "source": "main commit"
     }
    ]
@@ -10660,14 +10668,14 @@
    "title": "RNA Hero",
    "line": "Zip an RNA strand into its best fold.",
    "url": "https://chenhsieh.github.io/rna-hero/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/rna-hero-1.webp",
    "firstSeen": "2026-08-20T15:44:40+00:00",
-   "lastChange": "2026-10-20T20:06:01+00:00",
+   "lastChange": "2026-10-21T04:14:13+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -10683,10 +10691,10 @@
    "tasks": [
     {
      "title": "rna hero bridge game",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "RNA Hero becomes a real bridge: pull arches between letters over a river, stack them into strong spans, then drive the truck across; one line of text on screen.",
-     "since": "2026-10-20T20:06:01+00:00",
+     "since": "2026-10-21T04:14:09+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -10753,8 +10761,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 4
    },
