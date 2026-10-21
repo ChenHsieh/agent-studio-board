@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T20:14:13+00:00",
+ "generated": "2026-10-21T20:16:25+00:00",
  "ops": {
-  "count": 27,
+  "count": 26,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A running task has shown no progress for over 3 hours.",
@@ -25,11 +25,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 40,
+    "queued": 39,
     "running": 3,
-    "doneToday": 94,
-    "minutes": 1720,
-    "estimateMinutes": 574
+    "doneToday": 95,
+    "minutes": 1680,
+    "estimateMinutes": 560
    },
    "Claude": {
     "queued": 1,
@@ -39,16 +39,16 @@
     "estimateMinutes": 120
    }
   },
-  "queued": 41,
+  "queued": 40,
   "running": 4,
-  "doneToday": 118,
+  "doneToday": 119,
   "lanes": {
    "Codex": 3,
    "Claude": 1
   },
-  "minutesRemaining": 1840,
-  "estimatedFinish": "2026-10-22T05:48:13+00:00",
-  "estimateMinutes": 574
+  "minutesRemaining": 1800,
+  "estimatedFinish": "2026-10-22T05:36:25+00:00",
+  "estimateMinutes": 560
  },
  "lanes": [
   {
@@ -56,7 +56,7 @@
    "game": "remote-viewer",
    "task": "P1SD34_studio standard remote viewer",
    "since": "2026-10-21T19:53:01+00:00",
-   "activity": "2026-10-21T20:14:00+00:00",
+   "activity": "2026-10-21T20:15:39+00:00",
    "commit": {
     "at": "2026-10-21T20:09:02+00:00",
     "subject": "wip: P1SD34_studio-standard-remote-viewer (Codex lane autosave 16:09)"
@@ -64,21 +64,24 @@
   },
   {
    "worker": "Codex",
-   "game": "server-stress",
-   "task": "P1SD36_studio standard server stress",
-   "since": "2026-10-21T20:00:46+00:00",
-   "activity": "2026-10-21T20:00:28+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Codex",
    "game": "directory-handrail",
    "task": "P1SD37_studio standard directory handrail",
    "since": "2026-10-21T20:04:28+00:00",
-   "activity": "2026-10-21T20:14:00+00:00",
+   "activity": "2026-10-21T20:15:51+00:00",
    "commit": {
     "at": "2026-10-21T20:10:53+00:00",
     "subject": "wip: add Signposts identity and local daily"
+   }
+  },
+  {
+   "worker": "Codex",
+   "game": "sockglass",
+   "task": "P1SD38_studio standard sockglass",
+   "since": "2026-10-21T20:16:02+00:00",
+   "activity": "2026-10-21T20:16:25+00:00",
+   "commit": {
+    "at": "2026-10-21T20:16:04+00:00",
+    "subject": "start: P1SD38_studio-standard-sockglass"
    }
   },
   {
@@ -133,7 +136,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 356
+   "changes": 357
   }
  ],
  "houseRules": 23,
@@ -12400,7 +12403,7 @@
    "shelfNote": "",
    "image": "promo/remote-viewer/first.jpg",
    "firstSeen": "2026-09-20T16:48:48+00:00",
-   "lastChange": "2026-10-21T20:14:00+00:00",
+   "lastChange": "2026-10-21T20:15:39+00:00",
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 1,
@@ -13220,7 +13223,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 36.16,
+   "costTotalUsd": 39.76,
    "latestChange": {
     "text": "feat: give Seal Carver its own link preview",
     "at": "2026-10-21T20:04:25+00:00"
@@ -13254,9 +13257,9 @@
     "codexTokens": 129278,
     "codexUsdEst": 0.16,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
-    "totalUsdEst": 36.16
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
+    "totalUsdEst": 39.76
    },
    "tasks": [
     {
@@ -13319,6 +13322,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-21T20:03:22+00:00",
+     "ok": true,
+     "note": "feat: give Seal Carver its own link preview",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-21T19:51:22+00:00",
      "ok": false,
      "note": "see",
@@ -13377,12 +13386,6 @@
      "ok": true,
      "note": "LIVE https://chenhsieh.github.io/seal-carver/ (claude builder, batch3)",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-16T01:41:33+00:00",
-     "ok": true,
-     "note": "feat: carve a phrase into a seal stone, one box per character, and stamp it",
-     "source": "main commit"
     }
    ]
   },
@@ -13509,10 +13512,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 47.0,
+   "costTotalUsd": 47.2,
    "latestChange": {
-    "text": "P1SS40 live : analog wall clock with shift arc + mini clock, on-call ticket board with 27...",
-    "at": "2026-10-21T09:14:26+00:00"
+    "text": "feat: give Night Shift a link preview and shorter share line",
+    "at": "2026-10-21T20:16:02+00:00"
    },
    "promo": {
     "files": {
@@ -13526,40 +13529,40 @@
    "title": "Server Stress",
    "line": "Night shift in a server room: every rack warms a light.",
    "url": "https://chenhsieh.github.io/server-stress/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Data-centre story with a human side, real tradeoffs instead",
    "shelfNote": "",
    "image": "promo/server-stress/first.jpg",
    "firstSeen": "2026-10-16T01:44:50+00:00",
-   "lastChange": "2026-10-21T20:00:28+00:00",
+   "lastChange": "2026-10-21T20:16:02+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 1,
+    "codexRuns": 2,
     "claudeRuns": 1,
     "apiRuns": 1,
-    "codexTokens": 166099,
-    "codexUsdEst": 0.2,
+    "codexTokens": 331833,
+    "codexUsdEst": 0.4,
     "claudeUsdEst": 3.6,
     "earlierRounds": 12,
     "earlierUsdEst": 43.2,
-    "totalUsdEst": 47.0
+    "totalUsdEst": 47.2
    },
    "tasks": [
     {
      "title": "P1SD36_studio standard server stress",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T20:00:46+00:00",
-     "done": null,
+     "since": "2026-10-21T19:47:59+00:00",
+     "done": "2026-10-21T19:47:59+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 12,
+     "tokens": 165734,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: give Night Shift a link preview and shorter share line"
     },
     {
      "title": "P1SS40_server stress ui clock and funny tasks",
@@ -13606,9 +13609,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": {
     "date": "2026-10-21",
@@ -13616,8 +13619,14 @@
     "note": "UI polish, analog clock, geeky/Jira feel, funny tasks"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T20:16:02+00:00",
+     "ok": true,
+     "note": "feat: give Night Shift a link preview and shorter share line",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T09:14:26+00:00",
      "ok": true,
@@ -13683,12 +13692,6 @@
      "ok": true,
      "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-17T21:23:19+00:00",
-     "ok": true,
-     "note": "fix: holding a button or the board no longer selects text on iPhone",
-     "source": "main commit"
     }
    ]
   },
@@ -14368,7 +14371,7 @@
    "shelfNote": "",
    "image": "promo/directory-handrail/first.jpg",
    "firstSeen": "2026-10-15T03:41:15+00:00",
-   "lastChange": "2026-10-21T20:14:00+00:00",
+   "lastChange": "2026-10-21T20:15:51+00:00",
    "cost": {
     "apiUsd": 7.97,
     "codexRuns": 3,
@@ -15183,7 +15186,7 @@
    ]
   },
   {
-   "nextTask": "Fix share preview, logo and share text",
+   "nextTask": null,
    "costTotalUsd": 29.01,
    "latestChange": {
     "text": "warm-window story, shared picture target, and readable sock pane counts live; 390x844 and...",
@@ -15202,14 +15205,14 @@
    "title": "Sockglass",
    "line": "Drag tissue-paper socks onto a dark bedroom window; where.",
    "url": "https://chenhsieh.github.io/sockglass/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Make sock sizes and counts readable and let the theme",
    "shelfNote": "",
    "image": "promo/sockglass/first.jpg",
    "firstSeen": "2026-10-15T23:27:18+00:00",
-   "lastChange": "2026-10-21T14:56:21+00:00",
+   "lastChange": "2026-10-21T20:16:25+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -15225,16 +15228,19 @@
    "tasks": [
     {
      "title": "P1SD38_studio standard sockglass",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T14:56:21+00:00",
+     "since": "2026-10-21T20:16:02+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T20:16:04+00:00",
+      "subject": "start: P1SD38_studio-standard-sockglass"
+     },
      "result": ""
     },
     {
@@ -15267,8 +15273,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
