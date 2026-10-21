@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T08:55:47+00:00",
+ "generated": "2026-10-21T08:57:58+00:00",
  "ops": {
-  "count": 23,
+  "count": 24,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -25,11 +25,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 41,
-    "running": 1,
-    "doneToday": 59,
-    "minutes": 1680,
-    "estimateMinutes": 1680
+    "queued": 40,
+    "running": 0,
+    "doneToday": 60,
+    "minutes": 1600,
+    "estimateMinutes": 1600
    },
    "Claude": {
     "queued": 1,
@@ -39,16 +39,16 @@
     "estimateMinutes": 180
    }
   },
-  "queued": 42,
-  "running": 3,
-  "doneToday": 62,
+  "queued": 41,
+  "running": 2,
+  "doneToday": 63,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 1860,
-  "estimatedFinish": "2026-10-22T12:55:47+00:00",
-  "estimateMinutes": 1680
+  "minutesRemaining": 1780,
+  "estimatedFinish": "2026-10-22T11:37:58+00:00",
+  "estimateMinutes": 1600
  },
  "lanes": [
   {
@@ -56,27 +56,19 @@
    "game": "server-stress",
    "task": "P1SS40_server stress ui clock and funny tasks",
    "since": "2026-10-21T08:51:22+00:00",
-   "activity": "2026-10-21T08:55:46+00:00",
+   "activity": "2026-10-21T08:57:20+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
-   "game": "no-unison",
-   "task": "P2PT06_no unison budget",
-   "since": "2026-10-21T08:47:45+00:00",
-   "activity": "2026-10-21T08:53:11+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Codex",
-   "game": "Multiple games",
-   "task": "coat corridor design",
-   "since": null,
-   "activity": null,
+   "game": "kitty-portal-sparkle-click",
+   "task": "P2PT01_kitty bottle core",
+   "since": "2026-10-21T08:57:34+00:00",
+   "activity": "2026-10-21T08:57:35+00:00",
    "commit": null
   }
  ],
- "codexLanes": 1,
+ "codexLanes": 0,
  "claudeWorkers": 2,
  "apiSpentUsd": 304.56,
  "rates": {
@@ -114,7 +106,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 205
+   "changes": 207
   }
  ],
  "houseRules": 23,
@@ -6580,14 +6572,14 @@
    "title": "Kitty Portal",
    "line": "Tap the portal, collect sparkles.",
    "url": "https://chenhsieh.github.io/kitty-portal-sparkle-click/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P4",
    "priorityNote": "Serve it as a static page and note whether a game is in it",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2025-07-11T03:14:30+00:00",
-   "lastChange": "2026-10-21T03:46:28+00:00",
+   "lastChange": "2026-10-21T08:57:35+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -6603,10 +6595,10 @@
    "tasks": [
     {
      "title": "P2PT01_kitty bottle core",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Turn Kitty Portal into a game: pour random cats into bottles to fill each to the line without spilling; five bottles a round with a shelf of results. Branch only, Chen approves before publishing.",
-     "since": "2026-10-21T03:46:28+00:00",
+     "since": "2026-10-21T08:57:34+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -6617,8 +6609,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
@@ -9392,41 +9384,27 @@
    "title": "No Unison",
    "line": "",
    "url": "https://chenhsieh.github.io/no-unison/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:28:17+00:00",
-   "lastChange": "2026-10-21T08:53:11+00:00",
+   "lastChange": "2026-10-21T08:57:02+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 3,
     "earlierUsdEst": 10.8,
-    "totalUsdEst": 10.8
+    "totalUsdEst": 14.4
    },
    "tasks": [
-    {
-     "title": "P2PT06_no unison budget",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "No Unison: show each player's air and each bar's seats so every voice is a trade-off, not a tap on everything. Branch only, Chen approves before publishing.",
-     "since": "2026-10-21T08:47:45+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2GF13_no unison feel pass",
      "state": "queued",
@@ -9440,18 +9418,38 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2PT06_no unison budget",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "No Unison: show each player's air and each bar's seats so every voice is a trade-off, not a tap on everything. Branch only, Chen approves before publishing.",
+     "since": "2026-10-21T03:46:28+00:00",
+     "done": "2026-10-21T03:46:28+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "RESULT P2PT06 no-unison-budget: Live draw.js bytes match; budget_play passes on the live URL at 390x844 and 320x568."
     }
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T08:57:02+00:00",
+     "ok": true,
+     "note": "P2PT06 budget live: air, seats, voices that count, hold callout, Breath level 1 (main )",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T17:35:37+00:00",
      "ok": true,
@@ -11812,7 +11810,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/server-stress-1.webp",
    "firstSeen": "2026-10-16T01:44:50+00:00",
-   "lastChange": "2026-10-21T08:55:46+00:00",
+   "lastChange": "2026-10-21T08:57:20+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
