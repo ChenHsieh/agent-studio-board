@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T01:27:15+00:00",
+ "generated": "2026-10-21T01:29:21+00:00",
  "ops": {
   "count": 19,
   "notes": [
@@ -28,23 +28,23 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 110,
-    "running": 4,
-    "doneToday": 21,
-    "minutes": 1608,
-    "estimateMinutes": 1608
+    "queued": 114,
+    "running": 3,
+    "doneToday": 22,
+    "minutes": 1596,
+    "estimateMinutes": 1596
    }
   },
-  "queued": 110,
-  "running": 4,
-  "doneToday": 40,
+  "queued": 114,
+  "running": 3,
+  "doneToday": 41,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 1608,
-  "estimatedFinish": "2026-10-22T04:15:15+00:00",
-  "estimateMinutes": 1608
+  "minutesRemaining": 1596,
+  "estimatedFinish": "2026-10-22T04:05:21+00:00",
+  "estimateMinutes": 1596
  },
  "lanes": [
   {
@@ -70,18 +70,10 @@
    "since": "2026-10-21T00:44:33+00:00",
    "activity": "2026-10-21T01:17:28+00:00",
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "ops hardening ids claims locks",
-   "since": null,
-   "activity": null,
-   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 4,
+ "claudeWorkers": 3,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -114,7 +106,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 58
+   "changes": 59
   }
  ],
  "houseRules": 23,
@@ -1631,7 +1623,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-21T01:25:53+00:00",
+   "lastChange": "2026-10-21T01:28:51+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
@@ -1665,6 +1657,48 @@
      "worker": "Claude",
      "plan": "Remove colour words from Colony Count so themed pieces label themselves.",
      "since": "2026-10-21T01:20:58+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "colony character maker",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "A character maker for Colony Count: pick a resident you have met, its face, a hat, something for its neck and a backdrop, keep up to 12 on a shelf, and hats that fit every set and stay inside their tile.",
+     "since": "2026-10-21T01:28:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "colony collection book",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "A collection book for Colony Count: every resident, hat and backdrop as a picture or a silhouette with the exact rule to earn it and a button for the next plate that counts.",
+     "since": "2026-10-21T01:28:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "colony export profile picture",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Turn a Colony Count character into a 1024 px picture for a profile, with circle previews, share or save, and a short link that rebuilds the same character.",
+     "since": "2026-10-21T01:28:51+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1714,52 +1748,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "colony incubator round visuals",
-     "state": "queued",
-     "worker": "Claude",
-     "plan": "Redraw the incubator with today and tomorrow counts on opposite edges and a step-through night, and the round dish with clear counts and a visible rim rule.",
-     "since": "2026-10-20T21:39:05+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "colony unhide studies",
-     "state": "queued",
-     "worker": "Claude",
-     "plan": "Open a lab section on the home screen for the redrawn studies that pass review.",
-     "since": "2026-10-20T21:39:05+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "colony home menu settings journey",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "A home screen led by today's dish with one main button, a plainer plate list and Endless screen, and a full settings page with a colour-blind safe palette.",
-     "since": "2026-10-20T21:39:05+00:00",
-     "done": "2026-10-20T21:39:05+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Colony Count: live https://chenhsieh.github.io/colony-count/ (main , rollback tag pre-home-menu-settings; live app.js, style.css, index.html bytes match; live home at 390 and 320 looked at, zero console errors)."
     }
    ],
    "taskCounts": {
-    "queued": 5,
+    "queued": 8,
     "running": 2,
     "waitingDesign": 0,
     "done": 13
