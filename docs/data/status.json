@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T09:35:13+00:00",
+ "generated": "2026-10-21T09:37:25+00:00",
  "ops": {
-  "count": 23,
+  "count": 24,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -33,32 +33,24 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
-    "doneToday": 4,
-    "minutes": 180,
-    "estimateMinutes": 180
+    "running": 1,
+    "doneToday": 5,
+    "minutes": 120,
+    "estimateMinutes": 120
    }
   },
   "queued": 39,
-  "running": 2,
-  "doneToday": 64,
+  "running": 1,
+  "doneToday": 65,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 1700,
-  "estimatedFinish": "2026-10-22T10:55:13+00:00",
+  "minutesRemaining": 1640,
+  "estimatedFinish": "2026-10-22T10:57:25+00:00",
   "estimateMinutes": 1520
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "letter-lines",
-   "task": "P2LL30_letter lines crossing stage",
-   "since": "2026-10-21T09:14:30+00:00",
-   "activity": "2026-10-21T09:34:10+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "seed-spiral",
@@ -69,7 +61,7 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -106,7 +98,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 209
+   "changes": 210
   }
  ],
  "houseRules": 23,
@@ -7180,40 +7172,40 @@
    "title": "Letter Lines",
    "line": "",
    "url": "https://chenhsieh.github.io/letter-lines/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:19:59+00:00",
-   "lastChange": "2026-10-21T09:34:10+00:00",
+   "lastChange": "2026-10-21T09:35:44+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 302106,
     "codexUsdEst": 0.36,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 5,
     "earlierUsdEst": 18.0,
-    "totalUsdEst": 21.96
+    "totalUsdEst": 25.56
    },
    "tasks": [
     {
      "title": "P2LL30_letter lines crossing stage",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "A crossings stage for Letter Lines, remixed from the forager algorithm game.",
-     "since": "2026-10-21T09:14:30+00:00",
-     "done": null,
+     "since": "2026-10-21T06:14:30+00:00",
+     "done": "2026-10-21T06:14:30+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P2LL30 Letter Lines: Crossings stage. LIVE https://chenhsieh.github.io/letter-lines/ (main -> , rollback tag pre-ll30-crossings; live rules.js and tangles.js match the branch; played live at 390x844 and 320x568, zero..."
     },
     {
      "title": "letter lines mandarin",
@@ -7246,9 +7238,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": {
     "date": "2026-10-20",
@@ -7256,8 +7248,14 @@
     "note": "Fun; needs a storyteller and Mandarin corpus"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T09:35:44+00:00",
+     "ok": true,
+     "note": "P2LL30 live : Tangled pages, six untangle pages (tap a crossing = 2-opt swap, ink drops), exact-search checked, traps on 4-6",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T04:59:28+00:00",
      "ok": true,
