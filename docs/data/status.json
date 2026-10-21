@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T08:47:04+00:00",
+ "generated": "2026-10-21T08:49:14+00:00",
  "ops": {
   "count": 23,
   "notes": [
@@ -25,11 +25,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 42,
+    "queued": 41,
     "running": 1,
     "doneToday": 59,
-    "minutes": 1720,
-    "estimateMinutes": 1720
+    "minutes": 1680,
+    "estimateMinutes": 1680
    },
    "Claude": {
     "queued": 1,
@@ -39,16 +39,16 @@
     "estimateMinutes": 180
    }
   },
-  "queued": 43,
+  "queued": 42,
   "running": 3,
   "doneToday": 61,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 1900,
-  "estimatedFinish": "2026-10-22T13:27:04+00:00",
-  "estimateMinutes": 1720
+  "minutesRemaining": 1860,
+  "estimatedFinish": "2026-10-22T12:49:14+00:00",
+  "estimateMinutes": 1680
  },
  "lanes": [
   {
@@ -56,15 +56,15 @@
    "game": "felt-years",
    "task": "P1FY50_felt years understandable",
    "since": "2026-10-21T08:22:49+00:00",
-   "activity": "2026-10-21T08:45:15+00:00",
+   "activity": "2026-10-21T08:47:55+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
-   "game": "shortest-law",
-   "task": "P2PT05_shortest law feel",
-   "since": "2026-10-21T08:35:21+00:00",
-   "activity": "2026-10-21T08:46:03+00:00",
+   "game": "no-unison",
+   "task": "P2PT06_no unison budget",
+   "since": "2026-10-21T08:47:45+00:00",
+   "activity": "2026-10-21T08:47:50+00:00",
    "commit": null
   },
   {
@@ -114,7 +114,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 203
+   "changes": 204
   }
  ],
  "houseRules": 23,
@@ -3767,7 +3767,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/felt-years-1.webp",
    "firstSeen": "2026-10-17T23:11:23+00:00",
-   "lastChange": "2026-10-21T08:45:15+00:00",
+   "lastChange": "2026-10-21T08:47:55+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 5,
@@ -9392,14 +9392,14 @@
    "title": "No Unison",
    "line": "",
    "url": "https://chenhsieh.github.io/no-unison/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:28:17+00:00",
-   "lastChange": "2026-10-21T06:47:14+00:00",
+   "lastChange": "2026-10-21T08:47:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -9414,6 +9414,20 @@
    },
    "tasks": [
     {
+     "title": "P2PT06_no unison budget",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "No Unison: show each player's air and each bar's seats so every voice is a trade-off, not a tap on everything. Branch only, Chen approves before publishing.",
+     "since": "2026-10-21T08:47:45+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
      "title": "P2GF13_no unison feel pass",
      "state": "queued",
      "worker": "Codex",
@@ -9426,25 +9440,11 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "P2PT06_no unison budget",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "No Unison: show each player's air and each bar's seats so every voice is a trade-off, not a tap on everything. Branch only, Chen approves before publishing.",
-     "since": "2026-10-21T03:46:28+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
@@ -12199,41 +12199,27 @@
    "title": "Shortest Law",
    "line": "",
    "url": "https://chenhsieh.github.io/shortest-law/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T05:07:40+00:00",
-   "lastChange": "2026-10-21T08:46:03+00:00",
+   "lastChange": "2026-10-21T08:47:45+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 4,
     "earlierUsdEst": 14.4,
-    "totalUsdEst": 14.4
+    "totalUsdEst": 18.0
    },
    "tasks": [
-    {
-     "title": "P2PT05_shortest law feel",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Shortest Law: the curve slides to each new fit, a fit meter and sounds answer every term. Branch only, Chen approves before publishing.",
-     "since": "2026-10-21T08:35:21+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2GF12_shortest law feel pass",
      "state": "queued",
@@ -12261,18 +12247,38 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2PT05_shortest law feel",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Shortest Law: the curve slides to each new fit, a fit meter and sounds answer every term. Branch only, Chen approves before publishing.",
+     "since": "2026-10-21T03:46:28+00:00",
+     "done": "2026-10-21T03:46:28+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "RESULT P2PT05 shortest-law-feel: Live draw.js and sound.js bytes match; feel_play passes on the live URL at 390x844 and 320x568."
     }
    ],
    "taskCounts": {
     "queued": 2,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T08:47:45+00:00",
+     "ok": true,
+     "note": "P2PT05 feel live:",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T16:26:42+00:00",
      "ok": true,
