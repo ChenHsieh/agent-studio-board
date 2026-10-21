@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T08:49:14+00:00",
+ "generated": "2026-10-21T08:51:25+00:00",
  "ops": {
   "count": 23,
   "notes": [
@@ -34,29 +34,29 @@
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 2,
+    "doneToday": 3,
     "minutes": 180,
     "estimateMinutes": 180
    }
   },
   "queued": 42,
   "running": 3,
-  "doneToday": 61,
+  "doneToday": 62,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
   "minutesRemaining": 1860,
-  "estimatedFinish": "2026-10-22T12:49:14+00:00",
+  "estimatedFinish": "2026-10-22T12:51:25+00:00",
   "estimateMinutes": 1680
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "felt-years",
-   "task": "P1FY50_felt years understandable",
-   "since": "2026-10-21T08:22:49+00:00",
-   "activity": "2026-10-21T08:47:55+00:00",
+   "game": "server-stress",
+   "task": "P1SS40_server stress ui clock and funny tasks",
+   "since": "2026-10-21T08:51:22+00:00",
+   "activity": "2026-10-21T08:51:22+00:00",
    "commit": null
   },
   {
@@ -114,7 +114,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 204
+   "changes": 205
   }
  ],
  "houseRules": 23,
@@ -3760,40 +3760,40 @@
    "title": "Felt Years",
    "line": "Felt Years is a quiet solo puzzle about a goat whose life.",
    "url": "https://chenhsieh.github.io/felt-years/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "A story for the proportional-time idea, a stated goal",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/felt-years-1.webp",
    "firstSeen": "2026-10-17T23:11:23+00:00",
-   "lastChange": "2026-10-21T08:47:55+00:00",
+   "lastChange": "2026-10-21T08:51:18+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 5,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 0,
     "codexTokens": 934973,
     "codexUsdEst": 1.12,
-    "claudeUsdEst": 7.2,
+    "claudeUsdEst": 10.8,
     "earlierRounds": 12,
     "earlierUsdEst": 43.2,
-    "totalUsdEst": 51.52
+    "totalUsdEst": 55.12
    },
    "tasks": [
     {
      "title": "P1FY50_felt years understandable",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Make Felt Years understandable in the first minute: felt-time ribbons, one idea per screen, plain words.",
-     "since": "2026-10-21T08:22:49+00:00",
-     "done": null,
+     "since": "2026-10-21T06:19:03+00:00",
+     "done": "2026-10-21T06:19:03+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1FY50 Felt Years: understandable. LIVE https://chenhsieh.github.io/felt-years/ (main -> , rollback tag pre-fy50-understandable; live bytes of calendar.js and felt-art.js match the branch)."
     },
     {
      "title": "felt years fix",
@@ -3896,9 +3896,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 7
+    "done": 8
    },
    "verdict": {
     "date": "2026-10-21",
@@ -3906,8 +3906,14 @@
     "note": "Cannot understand it: needs a plain first minute"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T08:51:18+00:00",
+     "ok": true,
+     "note": "P1FY50 live : felt-year ribbons on the first card, waiting ribbons per person instead of jars, 3 first-step lessons, results say who waited how long, full zh parity, real title/share, local-midnight daily",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T04:39:41+00:00",
      "ok": true,
@@ -3973,12 +3979,6 @@
      "ok": true,
      "note": "forward- merged (): level 2 now teaches life running forward with a real-board fade loop; level 1 cannot trigger it; Chinese album, levels and results localized; 320x568 controls and hold preview fixed; old v1 save migrated intact",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-18T09:03:04+00:00",
-     "ok": true,
-     "note": "fix: teach the forward-life rule when it first matters",
-     "source": "main commit"
     }
    ]
   },
@@ -11805,14 +11805,14 @@
    "title": "Server Stress",
    "line": "Night shift in a server room: every rack warms a light.",
    "url": "https://chenhsieh.github.io/server-stress/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Data-centre story with a human side, real tradeoffs instead",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/server-stress-1.webp",
    "firstSeen": "2026-10-16T01:44:50+00:00",
-   "lastChange": "2026-10-21T06:15:40+00:00",
+   "lastChange": "2026-10-21T08:51:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -11828,10 +11828,10 @@
    "tasks": [
     {
      "title": "P1SS40_server stress ui clock and funny tasks",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Server Stress: ticket-board UI, an analog wall clock, a restrained geek look and funny incidents.",
-     "since": "2026-10-21T06:15:40+00:00",
+     "since": "2026-10-21T08:51:22+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -11870,8 +11870,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
