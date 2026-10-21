@@ -1,10 +1,9 @@
 {
- "generated": "2026-10-21T16:20:32+00:00",
+ "generated": "2026-10-21T16:22:46+00:00",
  "ops": {
-  "count": 23,
+  "count": 22,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
-   "A running task has shown no progress for over 3 hours.",
    "A status note names something that is not a game.",
    "A task waits for a task that does not exist.",
    "Two tasks share the number P1c09."
@@ -12,7 +11,6 @@
  },
  "about": [
   "A game changed in the last hour with no claimed task on it.",
-  "A running task has shown no progress for over 3 hours.",
   "A status note names something that is not a game.",
   "A task waits for a task that does not exist.",
   "Two tasks share the number P1c09."
@@ -27,38 +25,57 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 80,
-    "running": 2,
+    "queued": 77,
+    "running": 4,
     "doneToday": 74,
-    "minutes": 3280,
-    "estimateMinutes": 1640
+    "minutes": 3240,
+    "estimateMinutes": 810
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 2,
     "doneToday": 16,
-    "minutes": 120,
-    "estimateMinutes": 120
+    "minutes": 180,
+    "estimateMinutes": 180
    }
   },
-  "queued": 81,
-  "running": 3,
+  "queued": 78,
+  "running": 6,
   "doneToday": 90,
   "lanes": {
-   "Codex": 2,
+   "Codex": 4,
    "Claude": 1
   },
-  "minutesRemaining": 3400,
-  "estimatedFinish": "2026-10-22T19:40:32+00:00",
-  "estimateMinutes": 1640
+  "minutesRemaining": 3420,
+  "estimatedFinish": "2026-10-22T05:52:46+00:00",
+  "estimateMinutes": 810
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "dancers-not-mad",
    "task": "P1DM01_dancers not mad smooth animation",
-   "since": "2026-10-21T12:26:50+00:00",
-   "activity": "2026-10-21T12:50:20+00:00",
+   "since": "2026-10-21T16:22:08+00:00",
+   "activity": "2026-10-21T16:22:22+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Codex",
+   "game": "dancers-not-mad",
+   "task": "P1DM03_dancers automaton art",
+   "since": "2026-10-21T16:22:08+00:00",
+   "activity": "2026-10-21T16:22:44+00:00",
+   "commit": {
+    "at": "2026-10-21T16:22:09+00:00",
+    "subject": "start: P1DM03_dancers-automaton-art"
+   }
+  },
+  {
+   "worker": "Claude",
+   "game": "glasshouse",
+   "task": "P1GH40_glasshouse visual revamp",
+   "since": "2026-10-21T16:22:21+00:00",
+   "activity": "2026-10-21T16:22:36+00:00",
    "commit": null
   },
   {
@@ -74,12 +91,23 @@
    "game": "biosteganography",
    "task": "P1SD13_studio standard biosteganography",
    "since": "2026-10-21T16:18:35+00:00",
-   "activity": "2026-10-21T16:20:13+00:00",
+   "activity": "2026-10-21T16:22:21+00:00",
    "commit": null
+  },
+  {
+   "worker": "Codex",
+   "game": "clay-clock",
+   "task": "P1SD14_studio standard clay clock",
+   "since": "2026-10-21T16:22:39+00:00",
+   "activity": "2026-10-21T16:22:44+00:00",
+   "commit": {
+    "at": "2026-10-21T16:22:41+00:00",
+    "subject": "start: P1SD14_studio-standard-clay-clock"
+   }
   }
  ],
- "codexLanes": 2,
- "claudeWorkers": 1,
+ "codexLanes": 4,
+ "claudeWorkers": 2,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -1219,7 +1247,7 @@
    "shelfNote": "",
    "image": "promo/biosteganography/first.jpg",
    "firstSeen": "2026-08-20T03:51:36+00:00",
-   "lastChange": "2026-10-21T16:20:13+00:00",
+   "lastChange": "2026-10-21T16:22:21+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -1773,7 +1801,7 @@
    ]
   },
   {
-   "nextTask": "Fix share preview, logo and share text",
+   "nextTask": null,
    "costTotalUsd": 18.23,
    "latestChange": {
     "text": "feat: write harbour orders before the clay sets",
@@ -1792,14 +1820,14 @@
    "title": "Clay Clock",
    "line": "Press clay jars in the right order.",
    "url": "https://chenhsieh.github.io/clay-clock/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "A goal and a story, and a better drawn figure under the clay",
    "shelfNote": "",
    "image": "promo/clay-clock/first.jpg",
    "firstSeen": "2026-10-15T04:15:52+00:00",
-   "lastChange": "2026-10-21T14:55:31+00:00",
+   "lastChange": "2026-10-21T16:22:44+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -1815,16 +1843,19 @@
    "tasks": [
     {
      "title": "P1SD14_studio standard clay clock",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T14:55:31+00:00",
+     "since": "2026-10-21T16:22:39+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T16:22:41+00:00",
+      "subject": "start: P1SD14_studio-standard-clay-clock"
+     },
      "result": ""
     },
     {
@@ -1857,8 +1888,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
@@ -2850,7 +2881,7 @@
    ]
   },
   {
-   "nextTask": "The dancers become articulated automata whose pinned loop...",
+   "nextTask": "Game-feel pass for dancers-not-mad using the shared juice...",
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "prototype live (6 levels, step rings, drum pads with stomp/clap, groove rule, exact best,...",
@@ -2869,7 +2900,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:37:54+00:00",
-   "lastChange": "2026-10-21T12:50:20+00:00",
+   "lastChange": "2026-10-21T16:22:44+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -2888,7 +2919,7 @@
      "state": "running",
      "worker": "Claude",
      "plan": "Add smooth cause-and-effect animation to Dancers, Not Mad.",
-     "since": "2026-10-21T12:26:50+00:00",
+     "since": "2026-10-21T16:22:08+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2899,16 +2930,19 @@
     },
     {
      "title": "P1DM03_dancers automaton art",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "The dancers become articulated automata whose pinned loop visibly drives every step.",
-     "since": "2026-10-21T12:26:36+00:00",
+     "since": "2026-10-21T16:22:08+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T16:22:09+00:00",
+      "subject": "start: P1DM03_dancers-automaton-art"
+     },
      "result": ""
     },
     {
@@ -2927,8 +2961,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 1,
+    "queued": 1,
+    "running": 2,
     "waitingDesign": 0,
     "done": 0
    },
@@ -5932,7 +5966,7 @@
    ]
   },
   {
-   "nextTask": "Glasshouse: a dedicated visual round with a graphic...",
+   "nextTask": null,
    "costTotalUsd": 50.4,
    "latestChange": {
     "text": "first-run onboarding menu, own logo top-left, live main",
@@ -5944,14 +5978,14 @@
    "title": "Glasshouse",
    "line": "Lead a line of students through a greenhouse.",
    "url": "https://chenhsieh.github.io/glasshouse/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Decide the best public role for a finished personal game",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/glasshouse-1.webp",
    "firstSeen": "2026-08-09T03:49:08+00:00",
-   "lastChange": "2026-10-21T13:57:17+00:00",
+   "lastChange": "2026-10-21T16:22:36+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -5967,10 +6001,10 @@
    "tasks": [
     {
      "title": "P1GH40_glasshouse visual revamp",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Glasshouse: a dedicated visual round with a graphic design researcher and a full art revamp of the render layer.",
-     "since": "2026-10-21T13:57:17+00:00",
+     "since": "2026-10-21T16:22:21+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -5995,8 +6029,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
