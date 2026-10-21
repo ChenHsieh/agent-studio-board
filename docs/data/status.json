@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T09:13:16+00:00",
+ "generated": "2026-10-21T09:15:27+00:00",
  "ops": {
   "count": 24,
   "notes": [
@@ -25,38 +25,38 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 39,
+    "queued": 38,
     "running": 0,
     "doneToday": 60,
-    "minutes": 1560,
-    "estimateMinutes": 1560
+    "minutes": 1520,
+    "estimateMinutes": 1520
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 3,
+    "doneToday": 4,
     "minutes": 180,
     "estimateMinutes": 180
    }
   },
-  "queued": 40,
+  "queued": 39,
   "running": 2,
-  "doneToday": 63,
+  "doneToday": 64,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 1740,
-  "estimatedFinish": "2026-10-22T11:13:16+00:00",
-  "estimateMinutes": 1560
+  "minutesRemaining": 1700,
+  "estimatedFinish": "2026-10-22T10:35:27+00:00",
+  "estimateMinutes": 1520
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "server-stress",
-   "task": "P1SS40_server stress ui clock and funny tasks",
-   "since": "2026-10-21T08:51:22+00:00",
-   "activity": "2026-10-21T09:12:35+00:00",
+   "game": "letter-lines",
+   "task": "P2LL30_letter lines crossing stage",
+   "since": "2026-10-21T09:14:30+00:00",
+   "activity": "2026-10-21T09:15:07+00:00",
    "commit": null
   },
   {
@@ -106,7 +106,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 208
+   "changes": 209
   }
  ],
  "houseRules": 23,
@@ -7180,14 +7180,14 @@
    "title": "Letter Lines",
    "line": "",
    "url": "https://chenhsieh.github.io/letter-lines/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:19:59+00:00",
-   "lastChange": "2026-10-21T06:14:30+00:00",
+   "lastChange": "2026-10-21T09:15:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -7203,10 +7203,10 @@
    "tasks": [
     {
      "title": "P2LL30_letter lines crossing stage",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "A crossings stage for Letter Lines, remixed from the forager algorithm game.",
-     "since": "2026-10-21T06:14:30+00:00",
+     "since": "2026-10-21T09:14:30+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -7245,8 +7245,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
@@ -11803,40 +11803,40 @@
    "title": "Server Stress",
    "line": "Night shift in a server room: every rack warms a light.",
    "url": "https://chenhsieh.github.io/server-stress/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Data-centre story with a human side, real tradeoffs instead",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/server-stress-1.webp",
    "firstSeen": "2026-10-16T01:44:50+00:00",
-   "lastChange": "2026-10-21T09:12:35+00:00",
+   "lastChange": "2026-10-21T09:14:26+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 1,
     "codexTokens": 166099,
     "codexUsdEst": 0.2,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 12,
     "earlierUsdEst": 43.2,
-    "totalUsdEst": 43.4
+    "totalUsdEst": 47.0
    },
    "tasks": [
     {
      "title": "P1SS40_server stress ui clock and funny tasks",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Server Stress: ticket-board UI, an analog wall clock, a restrained geek look and funny incidents.",
-     "since": "2026-10-21T08:51:22+00:00",
-     "done": null,
+     "since": "2026-10-21T06:15:40+00:00",
+     "done": "2026-10-21T06:15:40+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1SS40 Server Stress (Night Shift): ticket board, wall clock, funny incidents. LIVE https://chenhsieh.github.io/server-stress/ (main -> , rollback tag pre-ss40-clock-tickets; live game.js and incidents.js match the..."
     },
     {
      "title": "server stress nightshift",
@@ -11869,9 +11869,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": {
     "date": "2026-10-21",
@@ -11879,8 +11879,14 @@
     "note": "UI polish, analog clock, geeky/Jira feel, funny tasks"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T09:14:26+00:00",
+     "ok": true,
+     "note": "P1SS40 live : analog wall clock with shift arc + mini clock, on-call ticket board with 27 deadpan incidents (en+zh), ticket pane, shift log with closing comments, end-of-shift report and share",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T09:12:35+00:00",
      "ok": true,
@@ -11946,12 +11952,6 @@
      "ok": true,
      "note": "fix: holding a button or the board no longer selects text on iPhone",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-16T02:05:08+00:00",
-     "ok": true,
-     "note": "LIVE https://chenhsieh.github.io/server-stress/ (claude builder, batch3)",
-     "source": "board note"
     }
    ]
   },
