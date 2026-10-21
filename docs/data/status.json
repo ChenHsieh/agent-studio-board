@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T12:24:55+00:00",
+ "generated": "2026-10-21T12:27:07+00:00",
  "ops": {
   "count": 21,
   "notes": [
@@ -25,43 +25,84 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 30,
-    "running": 0,
+    "queued": 25,
+    "running": 3,
     "doneToday": 60,
-    "minutes": 1200,
-    "estimateMinutes": 1200
+    "minutes": 1120,
+    "estimateMinutes": 374
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
-    "doneToday": 7,
-    "minutes": 120,
-    "estimateMinutes": 120
+    "running": 2,
+    "doneToday": 8,
+    "minutes": 180,
+    "estimateMinutes": 180
    }
   },
-  "queued": 31,
-  "running": 1,
-  "doneToday": 67,
+  "queued": 26,
+  "running": 5,
+  "doneToday": 68,
   "lanes": {
-   "Codex": 1,
+   "Codex": 3,
    "Claude": 1
   },
-  "minutesRemaining": 1320,
-  "estimatedFinish": "2026-10-22T08:24:55+00:00",
-  "estimateMinutes": 1200
+  "minutesRemaining": 1300,
+  "estimatedFinish": "2026-10-21T18:41:07+00:00",
+  "estimateMinutes": 374
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "dancers-not-mad",
+   "task": "P1DM01_dancers not mad smooth animation",
+   "since": "2026-10-21T12:26:50+00:00",
+   "activity": "2026-10-21T12:27:01+00:00",
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "tractatus-tree",
    "task": "tractatus finale and meaning",
    "since": "2026-10-21T12:16:54+00:00",
-   "activity": "2026-10-21T12:19:37+00:00",
+   "activity": "2026-10-21T12:26:01+00:00",
    "commit": null
+  },
+  {
+   "worker": "Codex",
+   "game": "silent-disco",
+   "task": "P2GF10_silent disco feel pass",
+   "since": "2026-10-21T12:25:05+00:00",
+   "activity": "2026-10-21T12:27:07+00:00",
+   "commit": {
+    "at": "2026-10-21T12:25:08+00:00",
+    "subject": "start: P2GF10_silent-disco-feel-pass"
+   }
+  },
+  {
+   "worker": "Codex",
+   "game": "shortest-law",
+   "task": "P2GF12_shortest law feel pass",
+   "since": "2026-10-21T12:25:17+00:00",
+   "activity": "2026-10-21T12:27:00+00:00",
+   "commit": {
+    "at": "2026-10-21T12:25:18+00:00",
+    "subject": "start: P2GF12_shortest-law-feel-pass"
+   }
+  },
+  {
+   "worker": "Codex",
+   "game": "no-unison",
+   "task": "P2GF13_no unison feel pass",
+   "since": "2026-10-21T12:25:32+00:00",
+   "activity": "2026-10-21T12:27:07+00:00",
+   "commit": {
+    "at": "2026-10-21T12:25:34+00:00",
+    "subject": "start: P2GF13_no-unison-feel-pass"
+   }
   }
  ],
- "codexLanes": 1,
- "claudeWorkers": 1,
+ "codexLanes": 3,
+ "claudeWorkers": 2,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -98,7 +139,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 218
+   "changes": 219
   }
  ],
  "houseRules": 23,
@@ -2594,14 +2635,14 @@
    "title": "Dancers Not Mad",
    "line": "",
    "url": "https://chenhsieh.github.io/dancers-not-mad/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:37:54+00:00",
-   "lastChange": "2026-10-21T06:47:14+00:00",
+   "lastChange": "2026-10-21T12:27:01+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -2616,11 +2657,11 @@
    },
    "tasks": [
     {
-     "title": "P2GF14_dancers not mad feel pass",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Game-feel pass for dancers-not-mad using the shared juice module and the audit.",
-     "since": "2026-10-21T06:47:14+00:00",
+     "title": "P1DM01_dancers not mad smooth animation",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Add smooth cause-and-effect animation to Dancers, Not Mad.",
+     "since": "2026-10-21T12:26:50+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2634,7 +2675,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "The dancers become articulated automata whose pinned loop visibly drives every step.",
-     "since": "2026-10-21T06:26:40+00:00",
+     "since": "2026-10-21T12:26:36+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2644,11 +2685,11 @@
      "result": ""
     },
     {
-     "title": "P1DM01_dancers not mad smooth animation",
+     "title": "P2GF14_dancers not mad feel pass",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Add smooth cause-and-effect animation to Dancers, Not Mad.",
-     "since": "2026-10-21T03:22:13+00:00",
+     "plan": "Game-feel pass for dancers-not-mad using the shared juice module and the audit.",
+     "since": "2026-10-21T06:47:14+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2659,8 +2700,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
@@ -9400,14 +9441,14 @@
    "title": "No Unison",
    "line": "",
    "url": "https://chenhsieh.github.io/no-unison/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:28:17+00:00",
-   "lastChange": "2026-10-21T08:57:02+00:00",
+   "lastChange": "2026-10-21T12:27:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -9423,16 +9464,19 @@
    "tasks": [
     {
      "title": "P2GF13_no unison feel pass",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Game-feel pass for no-unison using the shared juice module and the audit.",
-     "since": "2026-10-21T06:47:14+00:00",
+     "since": "2026-10-21T12:25:32+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T12:25:34+00:00",
+      "subject": "start: P2GF13_no-unison-feel-pass"
+     },
      "result": ""
     },
     {
@@ -9451,8 +9495,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -12231,14 +12275,14 @@
    "title": "Shortest Law",
    "line": "",
    "url": "https://chenhsieh.github.io/shortest-law/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T05:07:40+00:00",
-   "lastChange": "2026-10-21T08:47:45+00:00",
+   "lastChange": "2026-10-21T12:27:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12254,16 +12298,19 @@
    "tasks": [
     {
      "title": "P2GF12_shortest law feel pass",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Game-feel pass for shortest-law using the shared juice module and the audit.",
-     "since": "2026-10-21T06:47:14+00:00",
+     "since": "2026-10-21T12:25:17+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T12:25:18+00:00",
+      "subject": "start: P2GF12_shortest-law-feel-pass"
+     },
      "result": ""
     },
     {
@@ -12271,7 +12318,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "The graph becomes a calibration bench whose shutter reveals three hidden reviewer dots.",
-     "since": "2026-10-21T06:26:40+00:00",
+     "since": "2026-10-21T12:26:36+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -12296,8 +12343,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -12776,14 +12823,14 @@
    "title": "Silent Disco",
    "line": "",
    "url": "https://chenhsieh.github.io/silent-disco/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T16:29:01+00:00",
-   "lastChange": "2026-10-21T08:35:12+00:00",
+   "lastChange": "2026-10-21T12:27:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12799,16 +12846,19 @@
    "tasks": [
     {
      "title": "P2GF10_silent disco feel pass",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Game-feel pass for silent-disco using the shared juice module and the audit.",
-     "since": "2026-10-21T06:47:14+00:00",
+     "since": "2026-10-21T12:25:05+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T12:25:08+00:00",
+      "subject": "start: P2GF10_silent-disco-feel-pass"
+     },
      "result": ""
     },
     {
@@ -12816,7 +12866,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "The silent disco becomes a quiet street view where lifted dancers and matching soundproof rooms read at a glance.",
-     "since": "2026-10-21T06:26:40+00:00",
+     "since": "2026-10-21T12:26:36+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -12841,8 +12891,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -14773,7 +14823,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:19:46+00:00",
-   "lastChange": "2026-10-21T06:47:14+00:00",
+   "lastChange": "2026-10-21T12:26:36+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -14788,11 +14838,11 @@
    },
    "tasks": [
     {
-     "title": "P2GF11_thirsty clicks feel pass",
+     "title": "thirsty clicks propagation art",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Game-feel pass for thirsty-clicks using the shared juice module and the audit.",
-     "since": "2026-10-21T06:47:14+00:00",
+     "plan": "The greenhouse becomes a propagation tray where each microphone punches its click count onto a nursery tag.",
+     "since": "2026-10-21T12:26:36+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -14802,11 +14852,11 @@
      "result": ""
     },
     {
-     "title": "thirsty clicks propagation art",
+     "title": "P2GF11_thirsty clicks feel pass",
      "state": "queued",
      "worker": "Codex",
-     "plan": "The greenhouse becomes a propagation tray where each microphone punches its click count onto a nursery tag.",
-     "since": "2026-10-21T06:26:40+00:00",
+     "plan": "Game-feel pass for thirsty-clicks using the shared juice module and the audit.",
+     "since": "2026-10-21T06:47:14+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -15286,7 +15336,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/tractatus-tree-1.webp",
    "firstSeen": "2026-10-16T01:51:20+00:00",
-   "lastChange": "2026-10-21T12:19:37+00:00",
+   "lastChange": "2026-10-21T12:26:01+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
