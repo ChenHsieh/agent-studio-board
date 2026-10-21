@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T00:44:15+00:00",
+ "generated": "2026-10-21T00:46:53+00:00",
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -12,36 +12,36 @@
    "Codex": {
     "queued": 0,
     "running": 0,
-    "doneToday": 18,
+    "doneToday": 19,
     "minutes": 0,
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 106,
+    "queued": 105,
     "running": 1,
     "doneToday": 21,
-    "minutes": 1380,
-    "estimateMinutes": 1380
+    "minutes": 1368,
+    "estimateMinutes": 1368
    }
   },
-  "queued": 106,
+  "queued": 105,
   "running": 1,
-  "doneToday": 39,
+  "doneToday": 40,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 1380,
-  "estimatedFinish": "2026-10-21T23:44:15+00:00",
-  "estimateMinutes": 1380
+  "minutesRemaining": 1368,
+  "estimatedFinish": "2026-10-21T23:34:53+00:00",
+  "estimateMinutes": 1368
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "colony-count",
-   "task": "colony home menu settings journey",
-   "since": "2026-10-20T23:38:53+00:00",
-   "activity": "2026-10-21T00:43:09+00:00",
+   "game": "copy-paste",
+   "task": "hello princess stepwise links",
+   "since": "2026-10-21T00:44:33+00:00",
+   "activity": "2026-10-21T00:44:38+00:00",
    "commit": null
   }
  ],
@@ -79,7 +79,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 57
+   "changes": 58
   }
  ],
  "houseRules": 23,
@@ -1646,19 +1646,19 @@
    "title": "Colony Count",
    "line": "Solve three daily levels, then freeze finished plates.",
    "url": "https://chenhsieh.github.io/colony-count/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Claude",
    "priority": "P1",
    "priorityNote": "Flagship; has its own owner",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-21T00:43:09+00:00",
+   "lastChange": "2026-10-21T00:44:30+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
     "claudeRuns": 5,
-    "apiRuns": 7,
+    "apiRuns": 8,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 18.0,
@@ -1667,20 +1667,6 @@
     "totalUsdEst": 123.68
    },
    "tasks": [
-    {
-     "title": "colony home menu settings journey",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "A home screen led by today's dish with one main button, a plainer plate list and Endless screen, and a full settings page with a colour-blind safe palette.",
-     "since": "2026-10-20T23:38:53+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "colony themes screen",
      "state": "queued",
@@ -1738,6 +1724,20 @@
      "result": ""
     },
     {
+     "title": "colony home menu settings journey",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "A home screen led by today's dish with one main button, a plainer plate list and Endless screen, and a full settings page with a colour-blind safe palette.",
+     "since": "2026-10-20T21:39:05+00:00",
+     "done": "2026-10-20T21:39:05+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Colony Count: live https://chenhsieh.github.io/colony-count/ (main , rollback tag pre-home-menu-settings; live app.js, style.css, index.html bytes match; live home at 390 and 320 looked at, zero console errors)."
+    },
+    {
      "title": "colony hide studies and logo",
      "state": "done",
      "worker": "Claude API",
@@ -1782,9 +1782,9 @@
    ],
    "taskCounts": {
     "queued": 4,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 12
+    "done": 13
    },
    "verdict": {
     "date": "2026-10-20",
@@ -1794,6 +1794,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T00:44:30+00:00",
+     "ok": true,
+     "note": "home, plates, endless, settings screens, colour-blind palette, local-date daily; live",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T21:33:23+00:00",
      "ok": true,
@@ -1859,12 +1865,6 @@
      "ok": true,
      "note": "Sets round 2 after review: natural shapes, real-food colours, colour-blind marks (Shapes setting), 14 hats per colour incl. seasonal costumes, glances; main , live checked; previews play-lab",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-20T03:41:43+00:00",
-     "ok": true,
-     "note": "feat: sets redrawn with their own shapes and colours, colour-blind marks, 14 hats picked per colour, glances",
-     "source": "main commit"
     }
    ]
   },
@@ -5913,14 +5913,14 @@
    "title": "Hello Princess",
    "line": "Find the princess's first invitation among the copies.",
    "url": "https://chenhsieh.github.io/copy-paste/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Settle the card-link logic, stop story art leaking answers",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/copy-paste-1.webp",
    "firstSeen": "2026-10-15T18:59:22+00:00",
-   "lastChange": "2026-10-20T21:46:39+00:00",
+   "lastChange": "2026-10-21T00:44:38+00:00",
    "cost": {
     "apiUsd": 16.91,
     "codexRuns": 3,
@@ -5936,10 +5936,10 @@
    "tasks": [
     {
      "title": "hello princess stepwise links",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Hello Princess, step by step: walk your card back to the princess one proven link at a time; a wrong link says which picture was the problem and why.",
-     "since": "2026-10-20T21:46:39+00:00",
+     "since": "2026-10-21T00:44:33+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -6048,8 +6048,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 9
    },
