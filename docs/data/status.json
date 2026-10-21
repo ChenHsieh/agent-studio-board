@@ -1,9 +1,10 @@
 {
- "generated": "2026-10-21T02:08:07+00:00",
+ "generated": "2026-10-21T02:10:23+00:00",
  "ops": {
-  "count": 21,
+  "count": 23,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
+   "A running task has shown no progress for over 3 hours.",
    "A status note names something that is not a game.",
    "A task waits for a task that does not exist.",
    "Two tasks share the number P1c09."
@@ -11,6 +12,7 @@
  },
  "about": [
   "A game changed in the last hour with no claimed task on it.",
+  "A running task has shown no progress for over 3 hours.",
   "A status note names something that is not a game.",
   "A task waits for a task that does not exist.",
   "Two tasks share the number P1c09."
@@ -32,31 +34,47 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 119,
-    "running": 2,
-    "doneToday": 23,
-    "minutes": 1596,
-    "estimateMinutes": 1596
+    "queued": 116,
+    "running": 4,
+    "doneToday": 24,
+    "minutes": 1680,
+    "estimateMinutes": 1680
    }
   },
-  "queued": 119,
-  "running": 2,
-  "doneToday": 43,
+  "queued": 116,
+  "running": 4,
+  "doneToday": 44,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 1596,
-  "estimatedFinish": "2026-10-22T04:44:07+00:00",
-  "estimateMinutes": 1596
+  "minutesRemaining": 1680,
+  "estimatedFinish": "2026-10-22T06:10:23+00:00",
+  "estimateMinutes": 1680
  },
  "lanes": [
   {
    "worker": "Claude",
+   "game": "walls-have-ears",
+   "task": "walls clarity fix",
+   "since": "2026-10-21T02:09:01+00:00",
+   "activity": "2026-10-21T02:09:15+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "bluebook-guess",
+   "task": "bluebook source harvest",
+   "since": "2026-10-21T02:08:58+00:00",
+   "activity": "2026-10-21T02:09:40+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
    "game": "colony-count",
-   "task": "colony theme neutral labels",
-   "since": "2026-10-21T01:20:58+00:00",
-   "activity": "2026-10-21T02:07:30+00:00",
+   "task": "colony endless explained",
+   "since": "2026-10-21T02:09:10+00:00",
+   "activity": "2026-10-21T02:09:11+00:00",
    "commit": null
   },
   {
@@ -64,12 +82,12 @@
    "game": "lantern-meeting",
    "task": "lantern meeting strategy core",
    "since": "2026-10-21T02:02:28+00:00",
-   "activity": "2026-10-21T02:05:31+00:00",
+   "activity": "2026-10-21T02:09:06+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 4,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -102,7 +120,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 62
+   "changes": 63
   }
  ],
  "houseRules": 23,
@@ -1216,14 +1234,14 @@
    "title": "Bluebook Guess",
    "line": "Place a US Air Force case file in time and place.",
    "url": "https://chenhsieh.github.io/bluebook-guess/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P1",
    "priorityNote": "Rolled back to design: case folders of real exhibits, stamp what the Air Force...",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/bluebook-guess-1.webp",
    "firstSeen": "2026-09-20T20:57:49+00:00",
-   "lastChange": "2026-10-20T20:13:07+00:00",
+   "lastChange": "2026-10-21T02:09:40+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -1239,10 +1257,10 @@
    "tasks": [
     {
      "title": "bluebook source harvest",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Blue Book: collect real clue exhibits from the Air Force case files (drawings, sky forms, star maps, clippings, record cards) with the Air Force verdict and a credit and licence for each.",
-     "since": "2026-10-20T20:13:07+00:00",
+     "since": "2026-10-21T02:08:58+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1295,8 +1313,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -1619,26 +1637,26 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-21T02:07:30+00:00",
+   "lastChange": "2026-10-21T02:09:11+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
-    "claudeRuns": 6,
+    "claudeRuns": 7,
     "apiRuns": 8,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 21.6,
+    "claudeUsdEst": 25.2,
     "earlierRounds": 24,
     "earlierUsdEst": 86.4,
-    "totalUsdEst": 130.88
+    "totalUsdEst": 134.48
    },
    "tasks": [
     {
-     "title": "colony theme neutral labels",
+     "title": "colony endless explained",
      "state": "running",
      "worker": "Claude",
-     "plan": "Remove colour words from Colony Count so themed pieces label themselves.",
-     "since": "2026-10-21T01:20:58+00:00",
+     "plan": "Make Colony Count Endless understandable: pace cards with mini previews and plain names.",
+     "since": "2026-10-21T02:09:10+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1690,20 +1708,6 @@
      "result": ""
     },
     {
-     "title": "colony endless explained",
-     "state": "queued",
-     "worker": "Claude",
-     "plan": "Make Colony Count Endless understandable: pace cards with mini previews and plain names.",
-     "since": "2026-10-21T01:19:31+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
      "title": "colony themes screen",
      "state": "queued",
      "worker": "Claude",
@@ -1744,13 +1748,27 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "colony unhide studies",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Open a lab section on the home screen for the redrawn studies that pass review.",
+     "since": "2026-10-20T21:39:05+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 8,
+    "queued": 7,
     "running": 1,
     "waitingDesign": 0,
-    "done": 14
+    "done": 15
    },
    "verdict": {
     "date": "2026-10-20",
@@ -1760,6 +1778,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T02:08:38+00:00",
+     "ok": true,
+     "note": "P1c17: pieces not colour names label buttons, hints, lessons in every set; test scans all sets (main )",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T01:58:54+00:00",
      "ok": true,
@@ -1825,12 +1849,6 @@
      "ok": true,
      "note": "feat: Round dish, the same plates on a circular dish",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T19:57:26+00:00",
-     "ok": true,
-     "note": "Incubator mode (6 dishes, two-counter uniqueness, night preview); main https://chenhsieh.github.io/colony-count/incubator.html",
-     "source": "board note"
     }
    ]
   },
@@ -6642,7 +6660,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:45:20+00:00",
-   "lastChange": "2026-10-21T02:05:31+00:00",
+   "lastChange": "2026-10-21T02:09:06+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -15283,14 +15301,14 @@
    "title": "Walls Have Ears",
    "line": "Wish for tea and find which piece is listening.",
    "url": "https://chenhsieh.github.io/walls-have-ears/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P1",
    "priorityNote": "Hotel key-cabinet level grid grouped by mechanism, and a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/walls-have-ears-1.webp",
    "firstSeen": "2026-10-15T19:49:23+00:00",
-   "lastChange": "2026-10-20T19:10:30+00:00",
+   "lastChange": "2026-10-21T02:09:15+00:00",
    "cost": {
     "apiUsd": 17.73,
     "codexRuns": 3,
@@ -15306,10 +15324,10 @@
    "tasks": [
     {
      "title": "walls clarity fix",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Walls Have Ears: make the long stay readable: draw the maid and her footprints, mark what she can reach, and show the phone cord and who could hear a call.",
-     "since": "2026-10-20T19:10:30+00:00",
+     "since": "2026-10-21T02:09:01+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -15418,8 +15436,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 12
    },
