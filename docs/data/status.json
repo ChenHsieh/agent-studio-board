@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T06:38:57+00:00",
+ "generated": "2026-10-21T06:41:17+00:00",
  "ops": {
-  "count": 45,
+  "count": 39,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -25,11 +25,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 49,
-    "running": 0,
+    "queued": 45,
+    "running": 4,
     "doneToday": 48,
     "minutes": 1960,
-    "estimateMinutes": 980
+    "estimateMinutes": 490
    },
    "Claude": {
     "queued": 1,
@@ -39,16 +39,16 @@
     "estimateMinutes": 120
    }
   },
-  "queued": 50,
-  "running": 1,
+  "queued": 46,
+  "running": 5,
   "doneToday": 49,
   "lanes": {
-   "Codex": 2,
+   "Codex": 4,
    "Claude": 1
   },
   "minutesRemaining": 2080,
-  "estimatedFinish": "2026-10-21T22:58:57+00:00",
-  "estimateMinutes": 980
+  "estimatedFinish": "2026-10-21T14:51:17+00:00",
+  "estimateMinutes": 490
  },
  "lanes": [
   {
@@ -56,11 +56,46 @@
    "game": "play-template",
    "task": "P1GF01_game feel playbook module and agent",
    "since": "2026-10-21T06:22:52+00:00",
-   "activity": "2026-10-21T06:32:54+00:00",
+   "activity": "2026-10-21T06:40:43+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Codex",
+   "game": "readable-nonsense",
+   "task": "P1RN30_readable nonsense render fix",
+   "since": "2026-10-21T06:39:05+00:00",
+   "activity": "2026-10-21T06:41:17+00:00",
+   "commit": {
+    "at": "2026-10-21T06:39:07+00:00",
+    "subject": "start: P1RN30_readable-nonsense-render-fix"
+   }
+  },
+  {
+   "worker": "Codex",
+   "game": "nesting-scrap",
+   "task": "nesting scrap taste",
+   "since": "2026-10-21T06:39:06+00:00",
+   "activity": "2026-10-21T06:41:00+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Codex",
+   "game": "connectle",
+   "task": "connectle signal",
+   "since": "2026-10-21T06:39:30+00:00",
+   "activity": "2026-10-21T06:41:07+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Codex",
+   "game": "lens-screen",
+   "task": "lens screen studio",
+   "since": "2026-10-21T06:39:36+00:00",
+   "activity": "2026-10-21T06:41:17+00:00",
    "commit": null
   }
  ],
- "codexLanes": 2,
+ "codexLanes": 4,
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "rates": {
@@ -1946,14 +1981,14 @@
    "title": "Connectle",
    "line": "Hop through fly neurons to reach a body part.",
    "url": "https://chenhsieh.github.io/connectle/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P3",
    "priorityNote": "Story and design pass; shelve if it still does not work",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/connectle-1.webp",
    "firstSeen": "2026-09-11T02:38:12+00:00",
-   "lastChange": "2026-10-21T06:26:41+00:00",
+   "lastChange": "2026-10-21T06:41:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -1969,10 +2004,10 @@
    "tasks": [
     {
      "title": "connectle signal",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "",
-     "since": "2026-10-21T06:26:41+00:00",
+     "since": "2026-10-21T06:39:30+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1997,8 +2032,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -2086,14 +2121,14 @@
    "title": "Cookie Cutter",
    "line": "Cut cookies from a sheet of dough and leave as little.",
    "url": "https://chenhsieh.github.io/nesting-scrap/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Give the nesting puzzle a specific taste and twist",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/nesting-scrap-1.webp",
    "firstSeen": "2026-10-15T23:26:00+00:00",
-   "lastChange": "2026-10-21T06:26:40+00:00",
+   "lastChange": "2026-10-21T06:41:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -2109,10 +2144,10 @@
    "tasks": [
     {
      "title": "nesting scrap taste",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Cookie Cutter gets a home: a blue cookie tin instead of gingham, hand-bent tin cutters, and a new last-sheet rule where the final scrap, kept in one piece, becomes the baker's own cookie.",
-     "since": "2026-10-21T06:26:40+00:00",
+     "since": "2026-10-21T06:39:06+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2165,8 +2200,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
@@ -6960,14 +6995,14 @@
    "title": "Lens Screen",
    "line": "Drag a screen over the cup.",
    "url": "https://chenhsieh.github.io/lens-screen/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P3",
    "priorityNote": "Storyteller pass on why it is fun",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/lens-screen-1.webp",
    "firstSeen": "2026-10-15T04:07:44+00:00",
-   "lastChange": "2026-10-21T06:37:56+00:00",
+   "lastChange": "2026-10-21T06:41:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -6983,10 +7018,10 @@
    "tasks": [
     {
      "title": "lens screen studio",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "",
-     "since": "2026-10-21T06:37:56+00:00",
+     "since": "2026-10-21T06:39:36+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -7011,8 +7046,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -9744,7 +9779,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T04:23:39+00:00",
-   "lastChange": "2026-10-21T06:32:54+00:00",
+   "lastChange": "2026-10-21T06:40:43+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -16672,14 +16707,14 @@
    "title": "阿嬤讀得出來",
    "line": "A famous Tang poem line is printed as fake glyphs with.",
    "url": "https://chenhsieh.github.io/readable-nonsense/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Show the candidate set shrinking, use best not par, make",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/readable-nonsense-1.webp",
    "firstSeen": "2026-10-15T23:26:29+00:00",
-   "lastChange": "2026-10-21T06:26:40+00:00",
+   "lastChange": "2026-10-21T06:41:17+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 2,
@@ -16695,16 +16730,19 @@
    "tasks": [
     {
      "title": "P1RN30_readable nonsense render fix",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Fix Readable Nonsense rendering of Zhuyin glyphs and the how-to page on iPhone and in-app browsers.",
-     "since": "2026-10-21T06:26:40+00:00",
+     "since": "2026-10-21T06:39:05+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T06:39:07+00:00",
+      "subject": "start: P1RN30_readable-nonsense-render-fix"
+     },
      "result": ""
     },
     {
@@ -16751,8 +16789,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
