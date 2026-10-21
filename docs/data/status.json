@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T14:46:52+00:00",
+ "generated": "2026-10-21T14:49:05+00:00",
  "ops": {
-  "count": 20,
+  "count": 21,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -25,43 +25,32 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 49,
+    "queued": 52,
     "running": 4,
-    "doneToday": 68,
-    "minutes": 2120,
-    "estimateMinutes": 530
+    "doneToday": 69,
+    "minutes": 2240,
+    "estimateMinutes": 560
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
-    "doneToday": 12,
-    "minutes": 180,
-    "estimateMinutes": 180
+    "running": 1,
+    "doneToday": 13,
+    "minutes": 120,
+    "estimateMinutes": 120
    }
   },
-  "queued": 50,
-  "running": 6,
-  "doneToday": 80,
+  "queued": 53,
+  "running": 5,
+  "doneToday": 82,
   "lanes": {
    "Codex": 4,
    "Claude": 1
   },
-  "minutesRemaining": 2300,
-  "estimatedFinish": "2026-10-21T23:36:52+00:00",
-  "estimateMinutes": 530
+  "minutesRemaining": 2360,
+  "estimatedFinish": "2026-10-22T00:09:05+00:00",
+  "estimateMinutes": 560
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "bluebook-guess",
-   "task": "P1BB60_bluebook polish share provenance ship",
-   "since": "2026-10-21T14:33:51+00:00",
-   "activity": "2026-10-21T14:46:45+00:00",
-   "commit": {
-    "at": "2026-10-21T14:46:26+00:00",
-    "subject": "fix: make scan clues readable on phones"
-   }
-  },
   {
    "worker": "Claude",
    "game": "dancers-not-mad",
@@ -75,7 +64,7 @@
    "game": "flying-white",
    "task": "P1FW43_flying white real models and masks",
    "since": "2026-10-21T14:33:36+00:00",
-   "activity": "2026-10-21T14:46:17+00:00",
+   "activity": "2026-10-21T14:48:26+00:00",
    "commit": {
     "at": "2026-10-21T14:41:48+00:00",
     "subject": "wip: P1FW43_flying-white-real-models-and-masks (Codex lane autosave 10:41)"
@@ -86,10 +75,10 @@
    "game": "kitty-portal-sparkle-click",
    "task": "P1KP40_kitty portal framework",
    "since": "2026-10-21T14:22:46+00:00",
-   "activity": "2026-10-21T14:46:47+00:00",
+   "activity": "2026-10-21T14:48:58+00:00",
    "commit": {
-    "at": "2026-10-21T14:45:03+00:00",
-    "subject": "feat: guide each bottle and daily shift"
+    "at": "2026-10-21T14:47:03+00:00",
+    "subject": "wip: P1KP40_kitty-portal-framework (Codex lane autosave 10:47)"
    }
   },
   {
@@ -97,23 +86,26 @@
    "game": "lie-flat",
    "task": "P1LF40_lie flat instructions and softer paper",
    "since": "2026-10-21T14:43:50+00:00",
-   "activity": "2026-10-21T14:46:51+00:00",
+   "activity": "2026-10-21T14:49:04+00:00",
    "commit": {
     "at": "2026-10-21T14:46:51+00:00",
     "subject": "feat: explain point badges on each sheet"
    }
   },
   {
-   "worker": "Claude",
-   "game": "mirror-hold",
-   "task": "P1MH50_mirror hold cross functional rework",
-   "since": "2026-10-21T14:41:05+00:00",
-   "activity": "2026-10-21T14:41:05+00:00",
-   "commit": null
+   "worker": "Codex",
+   "game": "letter-lines",
+   "task": "P1LL40_letter lines hints drag select logo",
+   "since": "2026-10-21T14:48:31+00:00",
+   "activity": "2026-10-21T14:49:05+00:00",
+   "commit": {
+    "at": "2026-10-21T14:48:32+00:00",
+    "subject": "start: P1LL40_letter-lines-hints-drag-select-logo"
+   }
   }
  ],
  "codexLanes": 4,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -150,7 +142,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 244
+   "changes": 247
   }
  ],
  "houseRules": 23,
@@ -1276,43 +1268,40 @@
    "title": "Bluebook Guess",
    "line": "Place a US Air Force case file in time and place.",
    "url": "https://chenhsieh.github.io/bluebook-guess/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Very close to shipping; the formula for the other games",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/bluebook-guess-1.webp",
    "firstSeen": "2026-09-20T20:57:49+00:00",
-   "lastChange": "2026-10-21T14:46:45+00:00",
+   "lastChange": "2026-10-21T14:48:31+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 3,
     "apiRuns": 1,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 131726,
+    "codexUsdEst": 0.16,
     "claudeUsdEst": 10.8,
     "earlierRounds": 7,
     "earlierUsdEst": 25.2,
-    "totalUsdEst": 36.0
+    "totalUsdEst": 36.16
    },
    "tasks": [
     {
      "title": "P1BB60_bluebook polish share provenance ship",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Blue Book Guess: fix the peel and layout, better share text, direct source links, ship at P1.",
      "since": "2026-10-21T14:33:51+00:00",
-     "done": null,
+     "done": "2026-10-21T14:33:51+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 13,
+     "tokens": 131726,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-21T14:46:26+00:00",
-      "subject": "fix: make scan clues readable on phones"
-     },
-     "result": ""
+     "commit": null,
+     "result": "fix: make Blue Book peels readable and source scans easy to inspect"
     },
     {
      "title": "bluebook source harvest",
@@ -1373,9 +1362,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": {
     "date": "2026-10-21",
@@ -1383,8 +1372,14 @@
     "note": "Really good; polish peel and share, show sources, ship at P1"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T14:48:31+00:00",
+     "ok": true,
+     "note": "fix: make Blue Book peels readable and source scans easy to inspect",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T14:33:51+00:00",
      "ok": false,
@@ -4742,7 +4737,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T05:18:25+00:00",
-   "lastChange": "2026-10-21T14:46:17+00:00",
+   "lastChange": "2026-10-21T14:48:26+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -6826,7 +6821,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2025-07-11T03:24:45+00:00",
-   "lastChange": "2026-10-21T14:46:47+00:00",
+   "lastChange": "2026-10-21T14:48:58+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -6852,8 +6847,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-21T14:45:03+00:00",
-      "subject": "feat: guide each bottle and daily shift"
+      "at": "2026-10-21T14:47:03+00:00",
+      "subject": "wip: P1KP40_kitty-portal-framework (Codex lane autosave 10:47)"
      },
      "result": ""
     },
@@ -7444,14 +7439,14 @@
    "title": "Letter Lines",
    "line": "",
    "url": "https://chenhsieh.github.io/letter-lines/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:19:59+00:00",
-   "lastChange": "2026-10-21T13:57:17+00:00",
+   "lastChange": "2026-10-21T14:49:05+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -7467,16 +7462,19 @@
    "tasks": [
     {
      "title": "P1LL40_letter lines hints drag select logo",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Letter Lines: add hints, drag-to-select, clearer navigation, a logo and a link preview.",
-     "since": "2026-10-21T13:57:17+00:00",
+     "since": "2026-10-21T14:48:31+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T14:48:32+00:00",
+      "subject": "start: P1LL40_letter-lines-hints-drag-select-logo"
+     },
      "result": ""
     },
     {
@@ -7523,8 +7521,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
@@ -7605,7 +7603,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:36:20+00:00",
-   "lastChange": "2026-10-21T14:46:51+00:00",
+   "lastChange": "2026-10-21T14:49:04+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -9135,33 +9133,33 @@
    "title": "Mirror Hold",
    "line": "Wax a hairstyle, then test it against three pulls.",
    "url": "https://chenhsieh.github.io/mirror-hold/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Huge revamp planned by a cross-functional lead",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/mirror-hold-1.webp",
    "firstSeen": "2026-10-14T23:09:04+00:00",
-   "lastChange": "2026-10-21T14:41:05+00:00",
+   "lastChange": "2026-10-21T14:48:47+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 1,
     "codexTokens": 287088,
     "codexUsdEst": 0.34,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 14,
     "earlierUsdEst": 50.4,
-    "totalUsdEst": 50.74
+    "totalUsdEst": 54.34
    },
    "tasks": [
     {
-     "title": "P1MH50_mirror hold cross functional rework",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Mirror Hold: a cross-functional lead plans a full revamp, then Codex executes.",
-     "since": "2026-10-21T14:41:05+00:00",
+     "title": "P1MH53_mirror hold ladder ranks 1953",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Mirror Hold: 12 clients, the real tokoyama ranks as progression, the 1953 bout where the cord snapped",
+     "since": "2026-10-21T14:48:36+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -9169,6 +9167,62 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1MH54_mirror hold ship review",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Mirror Hold: Opus cold-play ship review of the rework",
+     "since": "2026-10-21T14:48:36+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1MH51_mirror hold comb stroke core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Mirror Hold: one verb: comb oil through the hair with your finger; the bout shows which hair springs loose",
+     "since": "2026-10-21T14:48:35+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1MH52_mirror hold woodblock look prints",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Mirror Hold: sumo woodblock look with kewari hair lines; each client is a real wrestler from a Met CC0 print",
+     "since": "2026-10-21T14:48:35+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1MH50_mirror hold cross functional rework",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Mirror Hold: a cross-functional lead plans a full revamp, then Codex executes.",
+     "since": "2026-10-21T14:04:38+00:00",
+     "done": "2026-10-21T14:04:38+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1MH50 done (Opus cross-functional lead, 2026-10-21)."
     },
     {
      "title": "mirror hold tokoyama",
@@ -9200,10 +9254,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 4,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": {
     "date": "2026-10-21",
@@ -9213,6 +9267,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T14:48:47+00:00",
+     "ok": true,
+     "note": "cross-functional rework design: one comb verb, forecast on the strands, woodblock look, real Met prints as clients, tokoyama ranks; build queued P1MH51-53 (Codex), review P1MH54",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T05:23:11+00:00",
      "ok": true,
@@ -9277,12 +9337,6 @@
      "at": "2026-10-15T05:37:55+00:00",
      "ok": true,
      "note": "feat: learn Mirror Hold one idea per mirror, from one red ring to the whole head",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-14T23:53:16+00:00",
-     "ok": true,
-     "note": "Add a favicon (live page logged a 404)",
      "source": "main commit"
     }
    ]
