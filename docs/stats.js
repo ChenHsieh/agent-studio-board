@@ -67,9 +67,10 @@ async function load() {
   const rt = rates;
   $('#rates').innerHTML = [
     `Metered API: the actual bill, ${usd(d.apiSpentUsd)} so far.`,
+    d.claudeInSession && d.claudeInSession.runs ? `Claude in-session, estimated from the ledger: ${d.claudeInSession.runs} logged ${d.claudeInSession.runs === 1 ? 'run' : 'runs'}, about ${usd(d.claudeInSession.usdEst)}. Kept apart from the metered bill.` : null,
     `Codex: about ${usd(rt.codexUsdPerMTok)} per million tokens. ${esc(rt.codexNote || '')}`,
     `Claude in-session runs: ${usd(rt.claudeUsdPerRun)} each. ${esc(rt.claudeNote || '')}`,
     `Earlier rounds: ${usd(rt.earlierUsdPerRound)} each. ${esc(rt.earlierNote || '')}`,
-  ].map((x) => `<li>${x}</li>`).join('');
+  ].filter(Boolean).map((x) => `<li>${x}</li>`).join('');
 }
 load();
