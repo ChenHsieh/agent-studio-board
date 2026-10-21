@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T13:55:46+00:00",
+ "generated": "2026-10-21T13:58:03+00:00",
  "ops": {
   "count": 20,
   "notes": [
@@ -25,30 +25,30 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 24,
+    "queued": 45,
     "running": 1,
     "doneToday": 65,
-    "minutes": 1000,
-    "estimateMinutes": 1000
+    "minutes": 1840,
+    "estimateMinutes": 1840
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
+    "running": 1,
     "doneToday": 8,
-    "minutes": 180,
-    "estimateMinutes": 180
+    "minutes": 120,
+    "estimateMinutes": 120
    }
   },
-  "queued": 25,
-  "running": 3,
+  "queued": 46,
+  "running": 2,
   "doneToday": 73,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 1180,
-  "estimatedFinish": "2026-10-22T06:35:46+00:00",
-  "estimateMinutes": 1000
+  "minutesRemaining": 1960,
+  "estimatedFinish": "2026-10-22T20:38:03+00:00",
+  "estimateMinutes": 1840
  },
  "lanes": [
   {
@@ -56,8 +56,11 @@
    "game": "colony-count",
    "task": "P1CC31_colony book sync leaf hat gaze",
    "since": "2026-10-21T13:50:51+00:00",
-   "activity": "2026-10-21T13:55:40+00:00",
-   "commit": null
+   "activity": "2026-10-21T13:58:03+00:00",
+   "commit": {
+    "at": "2026-10-21T13:56:52+00:00",
+    "subject": "fix: resume plates and open the game guide"
+   }
   },
   {
    "worker": "Claude",
@@ -66,18 +69,10 @@
    "since": "2026-10-21T12:26:50+00:00",
    "activity": "2026-10-21T12:50:20+00:00",
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "anechoic-fugue",
-   "task": "still water rename visuals",
-   "since": "2026-10-21T12:44:58+00:00",
-   "activity": "2026-10-21T12:47:29+00:00",
-   "commit": null
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -561,14 +556,14 @@
    "title": "Anechoic Fugue",
    "line": "Place speakers so the sleeper's chair goes quiet.",
    "url": "https://chenhsieh.github.io/anechoic-fugue/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Decide the physical model and its on-screen readout, choose",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/anechoic-fugue-1.webp",
    "firstSeen": "2026-10-15T18:08:35+00:00",
-   "lastChange": "2026-10-21T12:47:29+00:00",
+   "lastChange": "2026-10-21T04:45:06+00:00",
    "cost": {
     "apiUsd": 17.97,
     "codexRuns": 3,
@@ -584,10 +579,10 @@
    "tasks": [
     {
      "title": "still water rename visuals",
-     "state": "running",
-     "worker": "Claude",
+     "state": "queued",
+     "worker": "Codex",
      "plan": "Rename Anechoic Fugue to Still Water and refine the visuals.",
-     "since": "2026-10-21T12:44:58+00:00",
+     "since": "2026-10-20T19:00:06+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -696,8 +691,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
     "done": 8
    },
@@ -1400,14 +1395,14 @@
    "title": "Chai Boil",
    "line": "One pot, one dial: let the chai rise to the rim, not over it.",
    "url": "https://chenhsieh.github.io/chai-boil/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Steadier dial (keys on desktop), a forgiving golden zone, a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/chai-boil-1.webp",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-21T12:05:52+00:00",
+   "lastChange": "2026-10-21T13:57:17+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 5,
@@ -1421,6 +1416,20 @@
     "totalUsdEst": 76.42
    },
    "tasks": [
+    {
+     "title": "P1CB07_chai boil visual spin",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Chai Boil: a visual revamp with new kitchen backdrops and cuter drawing, learning from Colony Count.",
+     "since": "2026-10-21T13:57:17+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1CB06_chai kitchen unlocks content",
      "state": "done",
@@ -1518,31 +1527,21 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Flame controls now use 32 fine steps; held buttons repeat smoothly and the dial still drags continuously."
-    },
-    {
-     "title": "chai boil forgiving dial",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Steadier dial (keys on desktop), a forgiving golden zone, a visible recipe book, clearer customers, unlockable dishes.",
-     "since": "2026-10-19T17:54:51+00:00",
-     "done": "2026-10-19T17:54:51+00:00",
-     "reviewed": false,
-     "minutes": 20,
-     "tokens": 221812,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Golden-band control is gentler, with visible route progress, orders, recipe book, ingredient effect marks, arrow-key and step dial controls, and kitchen unlock previews."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 10
    },
-   "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
-   "inProgress": false,
+   "verdict": {
+    "date": "2026-10-21",
+    "verdict": "revise",
+    "note": "Visual revamp, different kitchen"
+   },
+   "needsYou": null,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T12:05:52+00:00",
@@ -1741,7 +1740,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-21T13:55:40+00:00",
+   "lastChange": "2026-10-21T13:58:03+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
@@ -1766,7 +1765,10 @@
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T13:56:52+00:00",
+      "subject": "fix: resume plates and open the game guide"
+     },
      "result": ""
     },
     {
@@ -2850,14 +2852,14 @@
    "title": "Do What You Think",
    "line": "Guide AI agents through one night on call.",
    "url": "https://chenhsieh.github.io/do-what-you-think/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P4",
    "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/do-what-you-think-1.webp",
    "firstSeen": "2026-10-09T22:28:22+00:00",
-   "lastChange": "2026-10-21T10:12:24+00:00",
+   "lastChange": "2026-10-21T13:57:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -2871,6 +2873,20 @@
     "totalUsdEst": 18.0
    },
    "tasks": [
+    {
+     "title": "P1DW40_do what you think less text walking calls",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Do What You Think: cut the text density and make calls non-blocking bars while the walking continues.",
+     "since": "2026-10-21T13:57:17+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2PT03_do what you think legible",
      "state": "done",
@@ -2887,14 +2903,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-10-21",
+    "verdict": "revise",
+    "note": "Too dense; non-blocking calls"
+   },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T10:12:24+00:00",
@@ -4654,14 +4674,14 @@
    "title": "Flying White",
    "line": "",
    "url": "https://chenhsieh.github.io/flying-white/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T05:18:25+00:00",
-   "lastChange": "2026-10-21T05:31:34+00:00",
+   "lastChange": "2026-10-21T13:57:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -4674,16 +4694,63 @@
     "earlierUsdEst": 14.4,
     "totalUsdEst": 14.4
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "P1FW40_flying white calligraphy expert research",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Flying White step 1: a calligraphy expert's deep research on writing one word many ways and its martial-art idea, featuring seal script.",
+     "since": "2026-10-21T13:57:17+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1FW41_flying white game core refine",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Flying White step 2: refine the game core with seal script, a hilarious teacher, an out-of-the-loop growth layer and a gentle correction model.",
+     "since": "2026-10-21T13:57:17+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1FW42_flying white interactive visual and build",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Flying White step 3: refine the pen feel and visuals, add the writing-everywhere teacher gag and build the new core.",
+     "since": "2026-10-21T13:57:17+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 3,
     "running": 0,
     "waitingDesign": 0,
     "done": 0
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-10-21",
+    "verdict": "revise",
+    "note": "Homework-like; seal script; hilarious teacher; growth"
+   },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T05:31:34+00:00",
@@ -5346,14 +5413,14 @@
    "title": "Glasshouse",
    "line": "Lead a line of students through a greenhouse.",
    "url": "https://chenhsieh.github.io/glasshouse/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Decide the best public role for a finished personal game",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/glasshouse-1.webp",
    "firstSeen": "2026-08-09T03:49:08+00:00",
-   "lastChange": "2026-10-21T11:49:37+00:00",
+   "lastChange": "2026-10-21T13:57:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -5367,6 +5434,20 @@
     "totalUsdEst": 50.4
    },
    "tasks": [
+    {
+     "title": "P1GH40_glasshouse visual revamp",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Glasshouse: a dedicated visual round with a graphic design researcher and a full art revamp of the render layer.",
+     "since": "2026-10-21T13:57:17+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "glasshouse onboarding menu",
      "state": "done",
@@ -5383,7 +5464,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
@@ -5393,8 +5474,8 @@
     "verdict": "revise",
     "note": "Fine; default menu page is gone: needs an onboarding page"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
-   "inProgress": false,
+   "needsYou": null,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T11:49:37+00:00",
@@ -6592,14 +6673,14 @@
    "title": "Kitty Portal",
    "line": "Tap the portal, collect sparkles.",
    "url": "https://chenhsieh.github.io/kitty-portal-sparkle-click/",
-   "stage": "live",
-   "who": null,
-   "priority": "P4",
-   "priorityNote": "Serve it as a static page and note whether a game is in it",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P1",
+   "priorityNote": "Close to done; framework and guide next",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2025-07-11T03:24:45+00:00",
-   "lastChange": "2026-10-21T09:06:49+00:00",
+   "lastChange": "2026-10-21T13:57:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -6613,6 +6694,20 @@
     "totalUsdEst": 50.4
    },
    "tasks": [
+    {
+     "title": "P1KP40_kitty portal framework",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Kitty Portal to P1: add the game framework (logo, how to play, languages, About crediting the Cat API), uniform pictures and a guided first round.",
+     "since": "2026-10-21T13:57:17+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2PT01_kitty bottle core",
      "state": "done",
@@ -6629,14 +6724,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T09:06:49+00:00",
@@ -7200,14 +7295,14 @@
    "title": "Letter Lines",
    "line": "",
    "url": "https://chenhsieh.github.io/letter-lines/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:19:59+00:00",
-   "lastChange": "2026-10-21T09:35:44+00:00",
+   "lastChange": "2026-10-21T13:57:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -7221,6 +7316,20 @@
     "totalUsdEst": 29.16
    },
    "tasks": [
+    {
+     "title": "P1LL40_letter lines hints drag select logo",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Letter Lines: add hints, drag-to-select, clearer navigation, a logo and a link preview.",
+     "since": "2026-10-21T13:57:17+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2LL30_letter lines crossing stage",
      "state": "done",
@@ -7265,18 +7374,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
    },
    "verdict": {
-    "date": "2026-10-20",
+    "date": "2026-10-21",
     "verdict": "revise",
-    "note": "Fun; needs a storyteller and Mandarin corpus"
+    "note": "Hints, drag select"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T09:35:44+00:00",
@@ -7340,14 +7449,14 @@
    "title": "Lie Flat",
    "line": "",
    "url": "https://chenhsieh.github.io/lie-flat/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:36:20+00:00",
-   "lastChange": "2026-10-21T07:00:37+00:00",
+   "lastChange": "2026-10-21T13:57:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -7361,6 +7470,20 @@
     "totalUsdEst": 21.95
    },
    "tasks": [
+    {
+     "title": "P1LF40_lie flat instructions and softer paper",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Lie Flat: explain the 3·1 numbers and make the 3D paper softer and smoother.",
+     "since": "2026-10-21T13:57:17+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "lie flat 3d folding",
      "state": "done",
@@ -7377,18 +7500,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": {
-    "date": "2026-10-20",
+    "date": "2026-10-21",
     "verdict": "revise",
-    "note": "Show the folding in 3D for non-origami players"
+    "note": "Explain numbers; softer paper"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T07:00:37+00:00",
@@ -7720,14 +7843,14 @@
    "title": "LLM Game of Life",
    "line": "Watch a language model tend a living grid.",
    "url": "https://chenhsieh.github.io/llm-game-of-life/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P3",
    "priorityNote": "Check for a game core",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/llm-game-of-life-1.webp",
    "firstSeen": "2026-08-16T14:19:00+00:00",
-   "lastChange": "2026-10-21T12:03:22+00:00",
+   "lastChange": "2026-10-21T13:57:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -7741,6 +7864,20 @@
     "totalUsdEst": 46.8
    },
    "tasks": [
+    {
+     "title": "P1LG40_llm life traditional chinese and why",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "LLM Game of Life: Traditional Chinese by default with no simplified text, and a clear why, goal and strategy in the first minute.",
+     "since": "2026-10-21T13:57:17+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "llm life obvious game",
      "state": "done",
@@ -7771,18 +7908,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 2
    },
    "verdict": {
-    "date": "2026-10-20",
+    "date": "2026-10-21",
     "verdict": "revise",
-    "note": "Still reads as an essay; make the game obvious"
+    "note": "Traditional Chinese only; explain why"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T12:03:22+00:00",
@@ -8516,14 +8653,14 @@
    "title": "Material Boards",
    "line": "Drop mirror, glass and wood tiles on a pinned sample.",
    "url": "https://chenhsieh.github.io/material-boards/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P3",
    "priorityNote": "Find a creative twist for the classic puzzle",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/material-boards-1.webp",
    "firstSeen": "2026-10-15T21:49:26+00:00",
-   "lastChange": "2026-10-21T06:30:17+00:00",
+   "lastChange": "2026-10-21T13:57:17+00:00",
    "cost": {
     "apiUsd": 14.39,
     "codexRuns": 2,
@@ -8537,6 +8674,20 @@
     "totalUsdEst": 43.98
    },
    "tasks": [
+    {
+     "title": "P1MB40_material boards visual spin",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Material Boards: fix the odd face and give it a distinctive visual direction.",
+     "since": "2026-10-21T13:57:17+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "material boards light budget",
      "state": "done",
@@ -8637,14 +8788,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 7
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-10-21",
+    "verdict": "revise",
+    "note": "Odd face; no taste yet"
+   },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T06:30:17+00:00",
@@ -9108,14 +9263,14 @@
    "title": "Motif Hero",
    "line": "Set the bar to how common each column's top letter is.",
    "url": "https://chenhsieh.github.io/motif-hero/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/motif-hero-1.webp",
    "firstSeen": "2026-08-29T04:14:46+00:00",
-   "lastChange": "2026-10-21T06:22:34+00:00",
+   "lastChange": "2026-10-21T13:57:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -9129,6 +9284,20 @@
     "totalUsdEst": 57.85
    },
    "tasks": [
+    {
+     "title": "P1HS40_hero suite matrix font howto",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Hero games: a light matrix background, a more legible body font, lower density and how-to first.",
+     "since": "2026-10-21T13:57:17+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "hero theme kit",
      "state": "done",
@@ -9201,7 +9370,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 5
@@ -9212,7 +9381,7 @@
     "note": "Arcade timing mode, early-computer theme, themes to collect"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T06:22:34+00:00",
@@ -9416,14 +9585,14 @@
    "title": "No Unison",
    "line": "",
    "url": "https://chenhsieh.github.io/no-unison/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:28:17+00:00",
-   "lastChange": "2026-10-21T12:45:19+00:00",
+   "lastChange": "2026-10-21T13:57:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -9437,6 +9606,34 @@
     "totalUsdEst": 21.77
    },
    "tasks": [
+    {
+     "title": "P1NU40_no unison bars and resolution",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "No Unison: crisp resolution, visible bar progress during play and more levels.",
+     "since": "2026-10-21T13:57:17+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P2NU41_no unison music game core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "No Unison as a music sequencing game: cute voices, reverb and echo knobs, levels that teach, and a shareable loop.",
+     "since": "2026-10-21T13:57:17+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2GF13_no unison feel pass",
      "state": "done",
@@ -9467,14 +9664,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 2
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-10-21",
+    "verdict": "revise",
+    "note": "Needs hi-res, bar progress, more levels, music-game redesign"
+   },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T12:45:19+00:00",
@@ -11769,14 +11970,14 @@
    "title": "Seed Spiral",
    "line": "Grow a sunflower and count its spirals.",
    "url": "https://chenhsieh.github.io/seed-spiral/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P4",
    "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/seed-spiral-1.webp",
    "firstSeen": "2026-10-14T16:39:45+00:00",
-   "lastChange": "2026-10-21T09:46:19+00:00",
+   "lastChange": "2026-10-21T13:57:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -11790,6 +11991,20 @@
     "totalUsdEst": 25.2
    },
    "tasks": [
+    {
+     "title": "P2SS50_seed spiral game core study",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Seed Spiral: a game core study so the point of the game is clear.",
+     "since": "2026-10-21T13:57:17+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2PT02_seed spiral goal",
      "state": "done",
@@ -11806,14 +12021,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-10-21",
+    "verdict": "revise",
+    "note": "Game core unclear"
+   },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T09:46:19+00:00",
@@ -12259,14 +12478,14 @@
    "title": "Shortest Law",
    "line": "",
    "url": "https://chenhsieh.github.io/shortest-law/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T05:07:40+00:00",
-   "lastChange": "2026-10-21T13:13:20+00:00",
+   "lastChange": "2026-10-21T13:57:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -12280,6 +12499,20 @@
     "totalUsdEst": 29.22
    },
    "tasks": [
+    {
+     "title": "P1SL40_shortest law hires and real data",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Shortest Law: high-resolution canvas and 8 harder levels in 4 themes from real-world data.",
+     "since": "2026-10-21T13:57:17+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2PT10_shortest law calibration art",
      "state": "done",
@@ -12324,14 +12557,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-10-21",
+    "verdict": "revise",
+    "note": "Fun; hi-res and deeper real-data levels"
+   },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T13:13:20+00:00",
@@ -12844,9 +13081,9 @@
     "codexTokens": 419729,
     "codexUsdEst": 0.5,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
-    "totalUsdEst": 22.1
+    "earlierRounds": 6,
+    "earlierUsdEst": 21.6,
+    "totalUsdEst": 25.7
    },
    "tasks": [
     {
@@ -12907,6 +13144,12 @@
      "ok": true,
      "note": "feat: dancers move through quiet venue windows",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-21T13:36:40+00:00",
+     "ok": true,
+     "note": "feat: dancers move through quiet venue windows",
+     "source": "main commit"
     },
     {
      "at": "2026-10-21T12:46:11+00:00",
@@ -13078,14 +13321,14 @@
    "title": "Slice and Bake",
    "line": "Move dough before each cut to match the next slice.",
    "url": "https://chenhsieh.github.io/slice-and-bake/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Make cutting and adjusting legible; refresh the visual",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/slice-and-bake-1.webp",
    "firstSeen": "2026-10-14T23:17:56+00:00",
-   "lastChange": "2026-10-21T06:20:17+00:00",
+   "lastChange": "2026-10-21T13:57:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -13099,6 +13342,20 @@
     "totalUsdEst": 61.69
    },
    "tasks": [
+    {
+     "title": "P2SB50_slice and bake core study",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Slice and Bake: a game core study with a clear puzzle, a story and a lighter interface.",
+     "since": "2026-10-21T13:57:17+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "slice and bake mix chapter",
      "state": "done",
@@ -13143,14 +13400,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
    },
-   "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
-   "inProgress": false,
+   "verdict": {
+    "date": "2026-10-21",
+    "verdict": "revise",
+    "note": "Too many operations; core unclear"
+   },
+   "needsYou": null,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T06:20:17+00:00",
@@ -15349,14 +15610,14 @@
    "title": "Tractatus Tree",
    "line": "The numbered pages of a 1921 book are shuffled into a few.",
    "url": "https://chenhsieh.github.io/tractatus-tree/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Teach the philosophy gradually through play, not as homework",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/tractatus-tree-1.webp",
    "firstSeen": "2026-10-16T01:51:20+00:00",
-   "lastChange": "2026-10-21T12:44:48+00:00",
+   "lastChange": "2026-10-21T13:57:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -15370,6 +15631,34 @@
     "totalUsdEst": 54.28
    },
    "tasks": [
+    {
+     "title": "P1TT40_tractatus reveal text and reader",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Tractatus Tree: tap an assembled page to read its text, and a reader for the collection.",
+     "since": "2026-10-21T13:57:17+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P2TT41_tractatus humour and growth design",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Tractatus Tree: a humorous or dark spin, a second axis and out-of-loop growth, so it is a game and not homework.",
+     "since": "2026-10-21T13:57:17+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "tractatus real sentences and pages",
      "state": "done",
@@ -15442,18 +15731,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 5
    },
    "verdict": {
-    "date": "2026-10-20",
+    "date": "2026-10-21",
     "verdict": "revise",
-    "note": "Better play, has taste; needs a clearer idea and more fun"
+    "note": "Reveal text; humour or dark spin; growth"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T12:44:48+00:00",
@@ -17022,14 +17311,14 @@
    "title": "阿嬤讀得出來",
    "line": "A famous Tang poem line is printed as fake glyphs with.",
    "url": "https://chenhsieh.github.io/readable-nonsense/",
-   "stage": "live",
-   "who": null,
-   "priority": "P2",
-   "priorityNote": "Show the candidate set shrinking, use best not par, make",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P1",
+   "priorityNote": "Start error blocks play",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/readable-nonsense-1.webp",
    "firstSeen": "2026-10-15T23:26:29+00:00",
-   "lastChange": "2026-10-21T07:04:00+00:00",
+   "lastChange": "2026-10-21T13:57:16+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 3,
@@ -17043,6 +17332,20 @@
     "totalUsdEst": 57.79
    },
    "tasks": [
+    {
+     "title": "P1RN40_readable nonsense start error",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Fix the Readable Nonsense start error: validate and migrate old saves so the game always starts.",
+     "since": "2026-10-21T13:57:16+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1RN30_readable nonsense render fix",
      "state": "done",
@@ -17101,14 +17404,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
    },
-   "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
-   "inProgress": false,
+   "verdict": {
+    "date": "2026-10-21",
+    "verdict": "revise",
+    "note": "Start error"
+   },
+   "needsYou": null,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T07:04:00+00:00",
