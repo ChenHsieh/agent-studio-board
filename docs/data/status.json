@@ -1,9 +1,10 @@
 {
- "generated": "2026-10-21T11:49:34+00:00",
+ "generated": "2026-10-21T11:51:47+00:00",
  "ops": {
-  "count": 19,
+  "count": 20,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
+   "A running task has shown no progress for over 3 hours.",
    "A status note names something that is not a game.",
    "A task waits for a task that does not exist.",
    "Two tasks share the number P1c09."
@@ -11,6 +12,7 @@
  },
  "about": [
   "A game changed in the last hour with no claimed task on it.",
+  "A running task has shown no progress for over 3 hours.",
   "A status note names something that is not a game.",
   "A task waits for a task that does not exist.",
   "Two tasks share the number P1c09."
@@ -25,30 +27,30 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 34,
+    "queued": 32,
     "running": 0,
     "doneToday": 60,
-    "minutes": 1360,
-    "estimateMinutes": 1360
+    "minutes": 1280,
+    "estimateMinutes": 1280
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 2,
     "doneToday": 6,
-    "minutes": 120,
-    "estimateMinutes": 120
+    "minutes": 180,
+    "estimateMinutes": 180
    }
   },
-  "queued": 35,
-  "running": 1,
+  "queued": 33,
+  "running": 2,
   "doneToday": 66,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 1480,
-  "estimatedFinish": "2026-10-22T10:29:34+00:00",
-  "estimateMinutes": 1360
+  "minutesRemaining": 1460,
+  "estimatedFinish": "2026-10-22T09:11:47+00:00",
+  "estimateMinutes": 1280
  },
  "lanes": [
   {
@@ -58,10 +60,18 @@
    "since": "2026-10-21T11:29:47+00:00",
    "activity": "2026-10-21T11:36:25+00:00",
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "llm-game-of-life",
+   "task": "llm life obvious game",
+   "since": "2026-10-21T11:49:52+00:00",
+   "activity": "2026-10-21T11:49:52+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 2,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -98,7 +108,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 214
+   "changes": 215
   }
  ],
  "houseRules": 23,
@@ -5330,56 +5340,62 @@
    "title": "Glasshouse",
    "line": "Lead a line of students through a greenhouse.",
    "url": "https://chenhsieh.github.io/glasshouse/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Decide the best public role for a finished personal game",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/glasshouse-1.webp",
    "firstSeen": "2026-08-09T03:37:06+00:00",
-   "lastChange": "2026-10-21T01:01:56+00:00",
+   "lastChange": "2026-10-21T11:49:37+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 13,
     "earlierUsdEst": 46.8,
-    "totalUsdEst": 46.8
+    "totalUsdEst": 50.4
    },
    "tasks": [
     {
      "title": "glasshouse onboarding menu",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "Give Glasshouse a proper start screen and first-run onboarding.",
      "since": "2026-10-21T01:01:56+00:00",
-     "done": null,
+     "done": "2026-10-21T01:01:56+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1g10 DONE, live at https://chenhsieh.github.io/glasshouse/ (main , repo still private)."
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": {
     "date": "2026-10-20",
     "verdict": "revise",
     "note": "Fine; default menu page is gone: needs an onboarding page"
    },
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T11:49:37+00:00",
+     "ok": true,
+     "note": "first-run onboarding menu, own logo top-left, live main",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T19:05:23+00:00",
      "ok": true,
@@ -5444,12 +5460,6 @@
      "at": "2026-08-09T15:51:15+00:00",
      "ok": true,
      "note": "fix: the phone stops fighting the player, and the ending says which one it was",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-08-09T03:49:08+00:00",
-     "ok": true,
-     "note": "docs: handoff catches up with the session",
      "source": "main commit"
     }
    ]
@@ -7704,14 +7714,14 @@
    "title": "LLM Game of Life",
    "line": "Watch a language model tend a living grid.",
    "url": "https://chenhsieh.github.io/llm-game-of-life/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P3",
    "priorityNote": "Check for a game core",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/llm-game-of-life-1.webp",
    "firstSeen": "2026-08-16T14:13:21+00:00",
-   "lastChange": "2026-10-20T20:06:42+00:00",
+   "lastChange": "2026-10-21T11:49:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -7727,10 +7737,10 @@
    "tasks": [
     {
      "title": "llm life obvious game",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Turn the language-model Game of Life page into a game on its first screen: pin the words the machine will leave alone, watch its real rewrite, essay behind a Why button.",
-     "since": "2026-10-20T20:06:42+00:00",
+     "since": "2026-10-21T11:49:52+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -7755,8 +7765,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
