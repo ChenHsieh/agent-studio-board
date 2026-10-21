@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T16:22:46+00:00",
+ "generated": "2026-10-21T16:24:59+00:00",
  "ops": {
   "count": 22,
   "notes": [
@@ -47,7 +47,7 @@
    "Claude": 1
   },
   "minutesRemaining": 3420,
-  "estimatedFinish": "2026-10-22T05:52:46+00:00",
+  "estimatedFinish": "2026-10-22T05:54:59+00:00",
   "estimateMinutes": 810
  },
  "lanes": [
@@ -56,26 +56,15 @@
    "game": "dancers-not-mad",
    "task": "P1DM01_dancers not mad smooth animation",
    "since": "2026-10-21T16:22:08+00:00",
-   "activity": "2026-10-21T16:22:22+00:00",
+   "activity": "2026-10-21T16:24:26+00:00",
    "commit": null
-  },
-  {
-   "worker": "Codex",
-   "game": "dancers-not-mad",
-   "task": "P1DM03_dancers automaton art",
-   "since": "2026-10-21T16:22:08+00:00",
-   "activity": "2026-10-21T16:22:44+00:00",
-   "commit": {
-    "at": "2026-10-21T16:22:09+00:00",
-    "subject": "start: P1DM03_dancers-automaton-art"
-   }
   },
   {
    "worker": "Claude",
    "game": "glasshouse",
    "task": "P1GH40_glasshouse visual revamp",
    "since": "2026-10-21T16:22:21+00:00",
-   "activity": "2026-10-21T16:22:36+00:00",
+   "activity": "2026-10-21T16:22:59+00:00",
    "commit": null
   },
   {
@@ -91,7 +80,7 @@
    "game": "biosteganography",
    "task": "P1SD13_studio standard biosteganography",
    "since": "2026-10-21T16:18:35+00:00",
-   "activity": "2026-10-21T16:22:21+00:00",
+   "activity": "2026-10-21T16:24:58+00:00",
    "commit": null
   },
   {
@@ -99,10 +88,21 @@
    "game": "clay-clock",
    "task": "P1SD14_studio standard clay clock",
    "since": "2026-10-21T16:22:39+00:00",
-   "activity": "2026-10-21T16:22:44+00:00",
+   "activity": "2026-10-21T16:24:50+00:00",
    "commit": {
     "at": "2026-10-21T16:22:41+00:00",
     "subject": "start: P1SD14_studio-standard-clay-clock"
+   }
+  },
+  {
+   "worker": "Codex",
+   "game": "nesting-scrap",
+   "task": "P1SD15_studio standard nesting scrap",
+   "since": "2026-10-21T16:23:53+00:00",
+   "activity": "2026-10-21T16:24:56+00:00",
+   "commit": {
+    "at": "2026-10-21T16:23:54+00:00",
+    "subject": "start: P1SD15_studio-standard-nesting-scrap"
    }
   }
  ],
@@ -144,7 +144,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 274
+   "changes": 276
   }
  ],
  "houseRules": 23,
@@ -1247,7 +1247,7 @@
    "shelfNote": "",
    "image": "promo/biosteganography/first.jpg",
    "firstSeen": "2026-08-20T03:51:36+00:00",
-   "lastChange": "2026-10-21T16:22:21+00:00",
+   "lastChange": "2026-10-21T16:24:58+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -1827,7 +1827,7 @@
    "shelfNote": "",
    "image": "promo/clay-clock/first.jpg",
    "firstSeen": "2026-10-15T04:15:52+00:00",
-   "lastChange": "2026-10-21T16:22:44+00:00",
+   "lastChange": "2026-10-21T16:24:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -2324,7 +2324,7 @@
    ]
   },
   {
-   "nextTask": "Fix share preview, logo and share text",
+   "nextTask": null,
    "costTotalUsd": 51.03,
    "latestChange": {
     "text": "feat: keep an odd cookie in the blue tin",
@@ -2343,14 +2343,14 @@
    "title": "Cookie Cutter",
    "line": "Cut cookies from a sheet of dough and leave as little.",
    "url": "https://chenhsieh.github.io/nesting-scrap/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Give the nesting puzzle a specific taste and twist",
    "shelfNote": "",
    "image": "promo/nesting-scrap/first.jpg",
    "firstSeen": "2026-10-15T23:26:00+00:00",
-   "lastChange": "2026-10-21T14:55:33+00:00",
+   "lastChange": "2026-10-21T16:24:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -2366,16 +2366,19 @@
    "tasks": [
     {
      "title": "P1SD15_studio standard nesting scrap",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T14:55:33+00:00",
+     "since": "2026-10-21T16:23:53+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T16:23:54+00:00",
+      "subject": "start: P1SD15_studio-standard-nesting-scrap"
+     },
      "result": ""
     },
     {
@@ -2436,8 +2439,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 4
    },
@@ -2881,11 +2884,11 @@
    ]
   },
   {
-   "nextTask": "Game-feel pass for dancers-not-mad using the shared juice...",
-   "costTotalUsd": 14.4,
+   "nextTask": "The dancers become articulated automata whose pinned loop...",
+   "costTotalUsd": 18.0,
    "latestChange": {
-    "text": "prototype live (6 levels, step rings, drum pads with stomp/clap, groove rule, exact best,...",
-    "at": "2026-10-20T17:56:26+00:00"
+    "text": "P1DM03_dancers-automaton-art handed to Claude: NOT READY: P1DM01 is still running, and...",
+    "at": "2026-10-21T16:23:52+00:00"
    },
    "promo": null,
    "id": "dancers-not-mad",
@@ -2900,7 +2903,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:37:54+00:00",
-   "lastChange": "2026-10-21T16:22:44+00:00",
+   "lastChange": "2026-10-21T16:24:26+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -2909,9 +2912,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
-    "totalUsdEst": 14.4
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
+    "totalUsdEst": 18.0
    },
    "tasks": [
     {
@@ -2930,19 +2933,16 @@
     },
     {
      "title": "P1DM03_dancers automaton art",
-     "state": "running",
+     "state": "queued",
      "worker": "Codex",
      "plan": "The dancers become articulated automata whose pinned loop visibly drives every step.",
-     "since": "2026-10-21T16:22:08+00:00",
+     "since": "2026-10-21T16:23:52+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-21T16:22:09+00:00",
-      "subject": "start: P1DM03_dancers-automaton-art"
-     },
+     "commit": null,
      "result": ""
     },
     {
@@ -2961,8 +2961,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 2,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
@@ -2974,6 +2974,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T16:23:52+00:00",
+     "ok": false,
+     "note": "P1DM03_dancers-automaton-art handed to Claude: NOT READY: P1DM01 is still running, and its animation commit and timing evidence are absent from `origin/main`.;",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T17:56:26+00:00",
      "ok": true,
@@ -5985,7 +5991,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/glasshouse-1.webp",
    "firstSeen": "2026-08-09T03:49:08+00:00",
-   "lastChange": "2026-10-21T16:22:36+00:00",
+   "lastChange": "2026-10-21T16:22:59+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
