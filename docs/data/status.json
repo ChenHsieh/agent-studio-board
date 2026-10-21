@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T09:46:16+00:00",
+ "generated": "2026-10-21T09:48:42+00:00",
  "ops": {
   "count": 23,
   "notes": [
@@ -25,11 +25,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 38,
+    "queued": 37,
     "running": 0,
     "doneToday": 60,
-    "minutes": 1520,
-    "estimateMinutes": 1520
+    "minutes": 1480,
+    "estimateMinutes": 1480
    },
    "Claude": {
     "queued": 1,
@@ -39,24 +39,24 @@
     "estimateMinutes": 120
    }
   },
-  "queued": 39,
+  "queued": 38,
   "running": 1,
   "doneToday": 65,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 1640,
-  "estimatedFinish": "2026-10-22T11:06:16+00:00",
-  "estimateMinutes": 1520
+  "minutesRemaining": 1600,
+  "estimatedFinish": "2026-10-22T10:28:42+00:00",
+  "estimateMinutes": 1480
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "seed-spiral",
-   "task": "P2PT02_seed spiral goal",
-   "since": "2026-10-21T09:06:50+00:00",
-   "activity": "2026-10-21T09:43:09+00:00",
+   "game": "do-what-you-think",
+   "task": "P2PT03_do what you think legible",
+   "since": "2026-10-21T09:46:19+00:00",
+   "activity": "2026-10-21T09:46:29+00:00",
    "commit": null
   }
  ],
@@ -98,7 +98,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 210
+   "changes": 211
   }
  ],
  "houseRules": 23,
@@ -2834,14 +2834,14 @@
    "title": "Do What You Think",
    "line": "Guide AI agents through one night on call.",
    "url": "https://chenhsieh.github.io/do-what-you-think/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P4",
    "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/do-what-you-think-1.webp",
    "firstSeen": "2026-10-09T22:28:22+00:00",
-   "lastChange": "2026-10-21T03:46:28+00:00",
+   "lastChange": "2026-10-21T09:46:29+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -2857,10 +2857,10 @@
    "tasks": [
     {
      "title": "P2PT03_do what you think legible",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Do What You Think: every puzzle states its goal, key and best possible with a hint button; one clock; one lab-bench-at-night look. Branch only, Chen approves before publishing.",
-     "since": "2026-10-21T03:46:28+00:00",
+     "since": "2026-10-21T09:46:19+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2871,8 +2871,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
@@ -11723,52 +11723,58 @@
    "title": "Seed Spiral",
    "line": "Grow a sunflower and count its spirals.",
    "url": "https://chenhsieh.github.io/seed-spiral/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P4",
    "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/seed-spiral-1.webp",
    "firstSeen": "2026-10-14T16:39:45+00:00",
-   "lastChange": "2026-10-21T09:43:09+00:00",
+   "lastChange": "2026-10-21T09:46:19+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 5,
     "earlierUsdEst": 18.0,
-    "totalUsdEst": 18.0
+    "totalUsdEst": 21.6
    },
    "tasks": [
     {
      "title": "P2PT02_seed spiral goal",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Give Seed Spiral a goal: grow an exact spiral pair before the frost, with a pace ring that warns before the rim tangles; twelve flowers. Branch only, Chen approves before publishing.",
-     "since": "2026-10-21T09:06:50+00:00",
-     "done": null,
+     "since": "2026-10-21T03:46:28+00:00",
+     "done": "2026-10-21T03:46:28+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "RESULT P2PT02 seed-spiral-goal: Live page serves the new build; test/flowers_play.mjs passes on the live URL at 390x844 and 320x568."
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T09:46:19+00:00",
+     "ok": true,
+     "note": "P2PT02 flowers live: 12 flowers, frost, pace ring, win/loss cards, menu, daily (main )",
+     "source": "board note"
+    },
     {
      "at": "2026-10-17T21:41:35+00:00",
      "ok": true,
