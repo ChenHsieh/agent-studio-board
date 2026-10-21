@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T12:16:05+00:00",
+ "generated": "2026-10-21T12:18:17+00:00",
  "ops": {
   "count": 21,
   "notes": [
@@ -25,11 +25,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 31,
+    "queued": 30,
     "running": 0,
     "doneToday": 60,
-    "minutes": 1240,
-    "estimateMinutes": 1240
+    "minutes": 1200,
+    "estimateMinutes": 1200
    },
    "Claude": {
     "queued": 1,
@@ -39,24 +39,24 @@
     "estimateMinutes": 120
    }
   },
-  "queued": 32,
+  "queued": 31,
   "running": 1,
   "doneToday": 67,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 1360,
-  "estimatedFinish": "2026-10-22T08:56:05+00:00",
-  "estimateMinutes": 1240
+  "minutesRemaining": 1320,
+  "estimatedFinish": "2026-10-22T08:18:17+00:00",
+  "estimateMinutes": 1200
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "tractatus-tree",
-   "task": "tractatus real sentences and pages",
-   "since": "2026-10-21T12:03:26+00:00",
-   "activity": "2026-10-21T12:15:44+00:00",
+   "task": "tractatus finale and meaning",
+   "since": "2026-10-21T12:16:54+00:00",
+   "activity": "2026-10-21T12:16:55+00:00",
    "commit": null
   }
  ],
@@ -98,7 +98,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 217
+   "changes": 218
   }
  ],
  "houseRules": 23,
@@ -15286,26 +15286,26 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/tractatus-tree-1.webp",
    "firstSeen": "2026-10-16T01:51:20+00:00",
-   "lastChange": "2026-10-21T12:15:44+00:00",
+   "lastChange": "2026-10-21T12:16:55+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 2,
     "codexTokens": 230129,
     "codexUsdEst": 0.28,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 11,
     "earlierUsdEst": 39.6,
-    "totalUsdEst": 39.88
+    "totalUsdEst": 43.48
    },
    "tasks": [
     {
-     "title": "tractatus real sentences and pages",
+     "title": "tractatus finale and meaning",
      "state": "running",
      "worker": "Claude",
-     "plan": "Tractatus: put the real 1922 sentences on the pages (part 1 of the split).",
-     "since": "2026-10-21T12:03:26+00:00",
+     "plan": "Tractatus: seven-proposition tree, the silent final level and the meaning beat (part 2).",
+     "since": "2026-10-21T12:16:54+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -15315,18 +15315,18 @@
      "result": ""
     },
     {
-     "title": "tractatus finale and meaning",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Tractatus: seven-proposition tree, the silent final level and the meaning beat (part 2).",
+     "title": "tractatus real sentences and pages",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Tractatus: put the real 1922 sentences on the pages (part 1 of the split).",
      "since": "2026-10-20T23:21:35+00:00",
-     "done": null,
+     "done": "2026-10-20T23:21:35+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1t11a DONE, live https://chenhsieh.github.io/tractatus-tree/ (main ; live bytes match for index, shell, draw, props, look, ui kit, strings)."
     },
     {
      "title": "tractatus tree visible",
@@ -15372,10 +15372,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": {
     "date": "2026-10-20",
@@ -15385,6 +15385,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T12:16:48+00:00",
+     "ok": true,
+     "note": "real Ogden sentences on slips + reading line + own logo, main",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T05:54:28+00:00",
      "ok": true,
@@ -15450,12 +15456,6 @@
      "ok": true,
      "note": "fix: holding a button or the board no longer selects text on iPhone",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-16T02:14:42+00:00",
-     "ok": true,
-     "note": "LIVE https://chenhsieh.github.io/tractatus-tree/ (claude builder, batch4)",
-     "source": "board note"
     }
    ]
   },
