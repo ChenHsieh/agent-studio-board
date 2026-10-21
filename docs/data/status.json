@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T06:23:35+00:00",
+ "generated": "2026-10-21T06:25:46+00:00",
  "ops": {
-  "count": 52,
+  "count": 53,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -25,30 +25,30 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 12,
-    "running": 4,
+    "queued": 13,
+    "running": 3,
     "doneToday": 47,
     "minutes": 640,
-    "estimateMinutes": 160
+    "estimateMinutes": 214
    },
    "Claude": {
-    "queued": 60,
+    "queued": 35,
     "running": 1,
     "doneToday": 1,
-    "minutes": 828,
-    "estimateMinutes": 828
+    "minutes": 528,
+    "estimateMinutes": 528
    }
   },
-  "queued": 72,
-  "running": 5,
+  "queued": 48,
+  "running": 4,
   "doneToday": 48,
   "lanes": {
-   "Codex": 4,
+   "Codex": 3,
    "Claude": 1
   },
-  "minutesRemaining": 1468,
-  "estimatedFinish": "2026-10-21T20:11:35+00:00",
-  "estimateMinutes": 828
+  "minutesRemaining": 1168,
+  "estimatedFinish": "2026-10-21T15:13:46+00:00",
+  "estimateMinutes": 528
  },
  "lanes": [
   {
@@ -63,19 +63,16 @@
    "worker": "Codex",
    "game": "material-boards",
    "task": "material boards light budget",
-   "since": "2026-10-21T05:01:05+00:00",
-   "activity": "2026-10-21T06:21:23+00:00",
-   "commit": {
-    "at": "2026-10-21T06:21:23+00:00",
-    "subject": "wip: Q3f_material-boards-light-budget (Codex lane autosave 02:21)"
-   }
+   "since": "2026-10-21T06:25:05+00:00",
+   "activity": "2026-10-21T06:24:55+00:00",
+   "commit": null
   },
   {
    "worker": "Codex",
    "game": "floor-area",
    "task": "floor area rooftop",
    "since": "2026-10-21T05:01:08+00:00",
-   "activity": "2026-10-21T06:23:16+00:00",
+   "activity": "2026-10-21T06:25:08+00:00",
    "commit": {
     "at": "2026-10-21T06:21:28+00:00",
     "subject": "wip: Q3g_floor-area-rooftop (Codex lane autosave 02:21)"
@@ -83,25 +80,14 @@
   },
   {
    "worker": "Codex",
-   "game": "connectle",
-   "task": "connectle signal",
-   "since": "2026-10-21T06:23:29+00:00",
-   "activity": "2026-10-21T06:23:08+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Codex",
    "game": "lens-screen",
    "task": "lens screen studio",
-   "since": "2026-10-21T05:59:49+00:00",
-   "activity": "2026-10-21T06:22:02+00:00",
-   "commit": {
-    "at": "2026-10-21T06:15:52+00:00",
-    "subject": "wip: Q3v_lens-screen-studio (Codex lane autosave 02:15)"
-   }
+   "since": "2026-10-21T06:24:15+00:00",
+   "activity": "2026-10-21T06:24:12+00:00",
+   "commit": null
   }
  ],
- "codexLanes": 4,
+ "codexLanes": 3,
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "rates": {
@@ -139,7 +125,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 166
+   "changes": 169
   }
  ],
  "houseRules": 23,
@@ -1987,14 +1973,14 @@
    "title": "Connectle",
    "line": "Hop through fly neurons to reach a body part.",
    "url": "https://chenhsieh.github.io/connectle/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Codex",
    "priority": "P3",
    "priorityNote": "Story and design pass; shelve if it still does not work",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/connectle-1.webp",
    "firstSeen": "2026-09-11T02:38:12+00:00",
-   "lastChange": "2026-10-21T06:23:08+00:00",
+   "lastChange": "2026-10-21T06:24:45+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -2003,17 +1989,17 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 12,
-    "earlierUsdEst": 43.2,
-    "totalUsdEst": 43.2
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
+    "totalUsdEst": 46.8
    },
    "tasks": [
     {
      "title": "connectle signal",
-     "state": "running",
+     "state": "queued",
      "worker": "Codex",
      "plan": "",
-     "since": "2026-10-21T06:23:29+00:00",
+     "since": "2026-10-21T06:24:45+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2038,8 +2024,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
@@ -2047,6 +2033,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T06:24:45+00:00",
+     "ok": false,
+     "note": "see",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T02:39:06+00:00",
      "ok": true,
@@ -2111,12 +2103,6 @@
      "at": "2026-09-11T02:43:59+00:00",
      "ok": true,
      "note": "Route hint names what the last neuron moves",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-11T02:42:49+00:00",
-     "ok": true,
-     "note": "Cap each body part at a third of days; state the wing skew on the page",
      "source": "main commit"
     }
    ]
@@ -4178,7 +4164,7 @@
    "shelfNote": "not fun enough; credit removed (R06).",
    "image": "https://chenhsieh.github.io/play-lab/images/games/floor-area-1.webp",
    "firstSeen": "2026-10-16T01:23:59+00:00",
-   "lastChange": "2026-10-21T06:23:16+00:00",
+   "lastChange": "2026-10-21T06:25:08+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -4976,14 +4962,14 @@
    "title": "Gallery Guess",
    "line": "Place each museum object by country and year.",
    "url": "https://chenhsieh.github.io/gallery-guess/",
-   "stage": "queued",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Story and mechanism pass; pending a merge decision",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/gallery-guess-1.webp",
    "firstSeen": "2026-09-20T13:46:25+00:00",
-   "lastChange": "2026-10-21T06:20:20+00:00",
+   "lastChange": "2026-10-20T05:45:30+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -4997,20 +4983,6 @@
     "totalUsdEst": 29.01
    },
    "tasks": [
-    {
-     "title": "gallery guess docent line",
-     "state": "queued",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-21T06:20:20+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "gallery guess ship standard",
      "state": "done",
@@ -5055,7 +5027,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
@@ -5066,7 +5038,7 @@
     "note": "Ship after ship standard, share cap and ranks"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-20T05:45:30+00:00",
@@ -6170,14 +6142,14 @@
    "title": "Herbarium Guess",
    "line": "Place a pressed plant in place and year.",
    "url": "https://chenhsieh.github.io/herbarium-guess/",
-   "stage": "queued",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Story and mechanism pass; pending a merge decision",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/herbarium-guess-1.webp",
    "firstSeen": "2026-09-20T05:10:20+00:00",
-   "lastChange": "2026-10-21T06:20:21+00:00",
+   "lastChange": "2026-10-20T04:23:55+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -6191,20 +6163,6 @@
     "totalUsdEst": 25.2
    },
    "tasks": [
-    {
-     "title": "herbarium guess trunk line",
-     "state": "queued",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-21T06:20:21+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "herbarium guess ship standard",
      "state": "done",
@@ -6235,14 +6193,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
     "done": 2
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-20T04:23:55+00:00",
@@ -7033,7 +6991,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/lens-screen-1.webp",
    "firstSeen": "2026-10-15T04:07:44+00:00",
-   "lastChange": "2026-10-21T06:22:02+00:00",
+   "lastChange": "2026-10-21T06:24:12+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -7052,16 +7010,13 @@
      "state": "running",
      "worker": "Codex",
      "plan": "",
-     "since": "2026-10-21T05:59:49+00:00",
+     "since": "2026-10-21T06:24:15+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-21T06:15:52+00:00",
-      "subject": "wip: Q3v_lens-screen-studio (Codex lane autosave 02:15)"
-     },
+     "commit": null,
      "result": ""
     },
     {
@@ -8135,14 +8090,14 @@
    "title": "Marble Machine",
    "line": "Tilt pads so the ball plays the tune.",
    "url": "https://chenhsieh.github.io/marble-machine/",
-   "stage": "queued",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Check for a game core",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/marble-machine-1.webp",
    "firstSeen": "2026-09-11T21:03:55+00:00",
-   "lastChange": "2026-10-20T18:59:29+00:00",
+   "lastChange": "2026-10-20T02:41:15+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -8156,20 +8111,6 @@
     "totalUsdEst": 25.2
    },
    "tasks": [
-    {
-     "title": "marble machine bells",
-     "state": "queued",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-20T18:59:29+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "marble machine core",
      "state": "done",
@@ -8186,14 +8127,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-20T02:41:15+00:00",
@@ -8440,7 +8381,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/material-boards-1.webp",
    "firstSeen": "2026-10-15T21:49:26+00:00",
-   "lastChange": "2026-10-21T06:21:23+00:00",
+   "lastChange": "2026-10-21T06:24:55+00:00",
    "cost": {
     "apiUsd": 14.39,
     "codexRuns": 1,
@@ -8459,16 +8400,13 @@
      "state": "running",
      "worker": "Codex",
      "plan": "",
-     "since": "2026-10-21T05:01:05+00:00",
+     "since": "2026-10-21T06:25:05+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-21T06:21:23+00:00",
-      "subject": "wip: Q3f_material-boards-light-budget (Codex lane autosave 02:21)"
-     },
+     "commit": null,
      "result": ""
     },
     {
@@ -8646,14 +8584,14 @@
    "title": "Metagenome Profilers",
    "line": "Compare MetaPhlAn and Kraken through six games.",
    "url": "https://chenhsieh.github.io/metagenome-profilers/",
-   "stage": "queued",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Game-design pass on the profiler comparison",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/metagenome-profilers-1.webp",
    "firstSeen": "2026-08-20T15:58:01+00:00",
-   "lastChange": "2026-10-20T18:59:29+00:00",
+   "lastChange": "2026-10-20T02:28:06+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -8667,20 +8605,6 @@
     "totalUsdEst": 25.2
    },
    "tasks": [
-    {
-     "title": "metagenome profilers front",
-     "state": "queued",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-20T18:59:29+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "metagenome profilers design pass",
      "state": "done",
@@ -8697,14 +8621,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-20T02:28:06+00:00",
@@ -11889,14 +11813,14 @@
    "title": "Service Lane",
    "line": "Choose parts to power a path to its target.",
    "url": "https://chenhsieh.github.io/service-lane/",
-   "stage": "queued",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Introduce the rules in order; a story for the lane",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/service-lane-1.webp",
    "firstSeen": "2026-10-15T03:35:51+00:00",
-   "lastChange": "2026-10-21T06:20:20+00:00",
+   "lastChange": "2026-10-21T06:18:18+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -11910,20 +11834,6 @@
     "totalUsdEst": 21.6
    },
    "tasks": [
-    {
-     "title": "service lane repair",
-     "state": "queued",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-21T06:20:20+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "service lane core",
      "state": "done",
@@ -11940,14 +11850,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-21T06:18:18+00:00",
@@ -12318,14 +12228,14 @@
    "title": "Sigil Wheel",
    "line": "Arrange letters on a shape and trace a word.",
    "url": "https://chenhsieh.github.io/sigil-wheel/",
-   "stage": "queued",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Combine three random ideas into a game core",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/sigil-wheel-1.webp",
    "firstSeen": "2026-08-22T23:14:58+00:00",
-   "lastChange": "2026-10-20T18:59:29+00:00",
+   "lastChange": "2026-10-20T02:38:55+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12339,20 +12249,6 @@
     "totalUsdEst": 46.8
    },
    "tasks": [
-    {
-     "title": "sigil wheel guess",
-     "state": "queued",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-20T18:59:29+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "sigil wheel core",
      "state": "done",
@@ -12369,14 +12265,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-20T02:38:55+00:00",
@@ -12758,14 +12654,14 @@
    "title": "SILVA to MaAsLin2",
    "line": "Follow 16S reads through six small games.",
    "url": "https://chenhsieh.github.io/silva-to-maaslin2/",
-   "stage": "queued",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Check for a game core",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/silva-to-maaslin2-1.webp",
    "firstSeen": "2026-08-20T05:55:59+00:00",
-   "lastChange": "2026-10-20T18:59:29+00:00",
+   "lastChange": "2026-10-20T02:41:19+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12779,20 +12675,6 @@
     "totalUsdEst": 36.0
    },
    "tasks": [
-    {
-     "title": "silva forking front",
-     "state": "queued",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-20T18:59:29+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "silva to maaslin2 core",
      "state": "done",
@@ -12809,14 +12691,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-20T02:41:19+00:00",
@@ -13527,14 +13409,14 @@
    "title": "Squat Tempo",
    "line": "Two frogs hold a squat-off to a whistle, and the crowd.",
    "url": "https://chenhsieh.github.io/squat-tempo/",
-   "stage": "queued",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Make the rule understandable",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/squat-tempo-1.webp",
    "firstSeen": "2026-10-16T01:42:46+00:00",
-   "lastChange": "2026-10-20T18:59:29+00:00",
+   "lastChange": "2026-10-20T02:37:15+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -13548,20 +13430,6 @@
     "totalUsdEst": 46.8
    },
    "tasks": [
-    {
-     "title": "squat tempo plan",
-     "state": "queued",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-20T18:59:29+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "squat tempo core",
      "state": "done",
@@ -13578,14 +13446,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-20T02:37:15+00:00",
