@@ -1,17 +1,15 @@
 {
- "generated": "2026-10-21T19:45:10+00:00",
+ "generated": "2026-10-21T19:47:25+00:00",
  "ops": {
-  "count": 29,
+  "count": 27,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
-   "A running task has shown no progress for over 3 hours.",
    "A status note names something that is not a game.",
    "Two tasks share the number P1c09."
   ]
  },
  "about": [
   "A game changed in the last hour with no claimed task on it.",
-  "A running task has shown no progress for over 3 hours.",
   "A status note names something that is not a game.",
   "Two tasks share the number P1c09."
  ],
@@ -29,26 +27,26 @@
     "running": 2,
     "doneToday": 93,
     "minutes": 1760,
-    "estimateMinutes": 880
+    "estimateMinutes": 587
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "doneToday": 24,
-    "minutes": 120,
-    "estimateMinutes": 120
+    "minutes": 60,
+    "estimateMinutes": 60
    }
   },
   "queued": 43,
-  "running": 3,
+  "running": 2,
   "doneToday": 117,
   "lanes": {
-   "Codex": 2,
+   "Codex": 3,
    "Claude": 1
   },
-  "minutesRemaining": 1880,
-  "estimatedFinish": "2026-10-22T10:25:10+00:00",
-  "estimateMinutes": 880
+  "minutesRemaining": 1820,
+  "estimatedFinish": "2026-10-22T05:34:25+00:00",
+  "estimateMinutes": 587
  },
  "lanes": [
   {
@@ -56,35 +54,19 @@
    "game": "remote-viewer",
    "task": "P1SD34_studio standard remote viewer",
    "since": "2026-10-21T19:27:37+00:00",
-   "activity": "2026-10-21T19:44:58+00:00",
+   "activity": "2026-10-21T19:46:55+00:00",
    "commit": {
     "at": "2026-10-21T19:43:43+00:00",
     "subject": "wip: P1SD34_studio-standard-remote-viewer (Codex lane autosave 15:43)"
    }
-  },
-  {
-   "worker": "Codex",
-   "game": "seal-carver",
-   "task": "P1SD35_studio standard seal carver",
-   "since": "2026-10-21T19:44:14+00:00",
-   "activity": "2026-10-21T19:43:58+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P2PT07_shortest law 3d doc",
-   "since": null,
-   "activity": null,
-   "commit": null
   }
  ],
- "codexLanes": 2,
- "claudeWorkers": 1,
+ "codexLanes": 3,
+ "claudeWorkers": 0,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 18,
-  "usdEst": 64.8,
+  "runs": 19,
+  "usdEst": 68.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -122,7 +104,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 349
+   "changes": 350
   }
  ],
  "houseRules": 23,
@@ -12377,7 +12359,7 @@
    "shelfNote": "",
    "image": "promo/remote-viewer/first.jpg",
    "firstSeen": "2026-09-20T16:48:48+00:00",
-   "lastChange": "2026-10-21T19:44:58+00:00",
+   "lastChange": "2026-10-21T19:46:55+00:00",
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 1,
@@ -13196,7 +13178,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Fix share preview, logo and share text",
    "costTotalUsd": 32.56,
    "latestChange": {
     "text": "fix: keep every seal layout solvable",
@@ -13215,14 +13197,14 @@
    "title": "Seal Carver",
    "line": "Carve a short phrase into a square seal stone, one box.",
    "url": "https://chenhsieh.github.io/seal-carver/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Teach placement so it is reasoning, not trial and error",
    "shelfNote": "",
    "image": "promo/seal-carver/first.jpg",
    "firstSeen": "2026-10-16T01:20:34+00:00",
-   "lastChange": "2026-10-21T19:43:58+00:00",
+   "lastChange": "2026-10-21T19:34:09+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -13238,10 +13220,10 @@
    "tasks": [
     {
      "title": "P1SD35_studio standard seal carver",
-     "state": "running",
+     "state": "queued",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T19:44:14+00:00",
+     "since": "2026-10-21T19:34:09+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -13280,8 +13262,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
     "done": 2
    },
@@ -13915,10 +13897,10 @@
   },
   {
    "nextTask": "Shortest Law: high-resolution canvas and 8 harder levels...",
-   "costTotalUsd": 29.22,
+   "costTotalUsd": 32.82,
    "latestChange": {
-    "text": "feat: reveal reviewer dots on a calibration bench",
-    "at": "2026-10-21T13:13:20+00:00"
+    "text": "P2PT07 3D proposal checked and revised (doc only): fitter dimension-free, 4095-subset...",
+    "at": "2026-10-21T19:46:52+00:00"
    },
    "promo": null,
    "id": "shortest-law",
@@ -13933,7 +13915,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T05:07:40+00:00",
-   "lastChange": "2026-10-21T13:57:17+00:00",
+   "lastChange": "2026-10-21T19:46:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -13942,9 +13924,9 @@
     "codexTokens": 347445,
     "codexUsdEst": 0.42,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 7,
-    "earlierUsdEst": 25.2,
-    "totalUsdEst": 29.22
+    "earlierRounds": 8,
+    "earlierUsdEst": 28.8,
+    "totalUsdEst": 32.82
    },
    "tasks": [
     {
@@ -14018,6 +14000,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T19:46:52+00:00",
+     "ok": true,
+     "note": "P2PT07 3D proposal checked and revised (doc only): fitter dimension-free, 4095-subset search 48 ms node, levels retuned so greedy fails on 4 of 5",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T13:13:20+00:00",
      "ok": true,
