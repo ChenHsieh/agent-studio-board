@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T18:21:00+00:00",
+ "generated": "2026-10-21T18:23:13+00:00",
  "ops": {
   "count": 29,
   "notes": [
@@ -23,43 +23,32 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 55,
-    "running": 1,
+    "queued": 53,
+    "running": 4,
     "doneToday": 86,
-    "minutes": 2240,
-    "estimateMinutes": 2240
+    "minutes": 2280,
+    "estimateMinutes": 570
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
+    "running": 1,
     "doneToday": 22,
-    "minutes": 180,
-    "estimateMinutes": 180
+    "minutes": 120,
+    "estimateMinutes": 120
    }
   },
-  "queued": 56,
-  "running": 3,
+  "queued": 54,
+  "running": 5,
   "doneToday": 108,
   "lanes": {
-   "Codex": 1,
+   "Codex": 4,
    "Claude": 1
   },
-  "minutesRemaining": 2420,
-  "estimatedFinish": "2026-10-23T07:41:00+00:00",
-  "estimateMinutes": 2240
+  "minutesRemaining": 2400,
+  "estimatedFinish": "2026-10-22T03:53:13+00:00",
+  "estimateMinutes": 570
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "dancers-not-mad",
-   "task": "P1DM03_dancers automaton art",
-   "since": "2026-10-21T17:55:58+00:00",
-   "activity": "2026-10-21T18:17:56+00:00",
-   "commit": {
-    "at": "2026-10-21T18:12:16+00:00",
-    "subject": "start: P1DM03 dancers-automaton-art"
-   }
-  },
   {
    "worker": "Codex",
    "game": "grass-crossword",
@@ -69,16 +58,46 @@
    "commit": null
   },
   {
+   "worker": "Codex",
+   "game": "local-hero",
+   "task": "P1SD25_studio standard local hero",
+   "since": "2026-10-21T18:22:37+00:00",
+   "activity": "2026-10-21T18:23:10+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Codex",
+   "game": "makeshift-chair",
+   "task": "P1SD26_studio standard makeshift chair",
+   "since": "2026-10-21T18:22:38+00:00",
+   "activity": "2026-10-21T18:23:12+00:00",
+   "commit": {
+    "at": "2026-10-21T18:22:40+00:00",
+    "subject": "start: P1SD26_studio-standard-makeshift-chair"
+   }
+  },
+  {
+   "worker": "Codex",
+   "game": "matchmaker-chat",
+   "task": "P1SD27_studio standard matchmaker chat",
+   "since": "2026-10-21T18:23:09+00:00",
+   "activity": "2026-10-21T18:23:13+00:00",
+   "commit": {
+    "at": "2026-10-21T18:23:10+00:00",
+    "subject": "start: P1SD27_studio-standard-matchmaker-chat"
+   }
+  },
+  {
    "worker": "Claude",
    "game": "no-unison",
    "task": "P2NU41_no unison music game core",
    "since": "2026-10-21T18:16:38+00:00",
-   "activity": "2026-10-21T18:16:38+00:00",
+   "activity": "2026-10-21T18:22:23+00:00",
    "commit": null
   }
  ],
- "codexLanes": 1,
- "claudeWorkers": 2,
+ "codexLanes": 4,
+ "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
   "runs": 8,
@@ -2864,7 +2883,7 @@
    ]
   },
   {
-   "nextTask": "Game-feel pass for dancers-not-mad using the shared juice...",
+   "nextTask": "The dancers become articulated automata whose pinned loop...",
    "costTotalUsd": 25.2,
    "latestChange": {
     "text": "P1DM01 smooth animation live (merge ); strips in results_shots/P1DM01;...",
@@ -2876,14 +2895,14 @@
    "title": "Dancers Not Mad",
    "line": "",
    "url": "https://chenhsieh.github.io/dancers-not-mad/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:37:54+00:00",
-   "lastChange": "2026-10-21T18:17:56+00:00",
+   "lastChange": "2026-10-21T16:48:43+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -2899,19 +2918,16 @@
    "tasks": [
     {
      "title": "P1DM03_dancers automaton art",
-     "state": "running",
-     "worker": "Claude",
+     "state": "queued",
+     "worker": "Codex",
      "plan": "The dancers become articulated automata whose pinned loop visibly drives every step.",
-     "since": "2026-10-21T17:55:58+00:00",
+     "since": "2026-10-21T16:23:52+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-21T18:12:16+00:00",
-      "subject": "start: P1DM03 dancers-automaton-art"
-     },
+     "commit": null,
      "result": ""
     },
     {
@@ -2944,8 +2960,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 1,
+    "queued": 2,
+    "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
@@ -8830,7 +8846,7 @@
    ]
   },
   {
-   "nextTask": "Fix share preview, logo and share text",
+   "nextTask": null,
    "costTotalUsd": 43.42,
    "latestChange": {
     "text": "see",
@@ -8849,14 +8865,14 @@
    "title": "Local Hero",
    "line": "Find the stretch two DNA strings share, then bank it.",
    "url": "https://chenhsieh.github.io/local-hero/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "promo/local-hero/first.jpg",
    "firstSeen": "2026-08-20T15:58:51+00:00",
-   "lastChange": "2026-10-21T17:59:32+00:00",
+   "lastChange": "2026-10-21T18:23:10+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -8872,10 +8888,10 @@
    "tasks": [
     {
      "title": "P1SD25_studio standard local hero",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T17:59:32+00:00",
+     "since": "2026-10-21T18:22:37+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -8900,8 +8916,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -9129,7 +9145,7 @@
    ]
   },
   {
-   "nextTask": "Fix share preview, logo and share text",
+   "nextTask": null,
    "costTotalUsd": 25.79,
    "latestChange": {
     "text": "fix: chair taps place repairs",
@@ -9148,14 +9164,14 @@
    "title": "Makeshift Chair",
    "line": "",
    "url": "https://chenhsieh.github.io/makeshift-chair/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Grassroots 3D look, correct source link, mechanism pass",
    "shelfNote": "",
    "image": "promo/makeshift-chair/first.jpg",
    "firstSeen": "2026-10-15T02:32:35+00:00",
-   "lastChange": "2026-10-21T14:55:56+00:00",
+   "lastChange": "2026-10-21T18:23:12+00:00",
    "cost": {
     "apiUsd": 11.15,
     "codexRuns": 1,
@@ -9171,16 +9187,19 @@
    "tasks": [
     {
      "title": "P1SD26_studio standard makeshift chair",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T14:55:56+00:00",
+     "since": "2026-10-21T18:22:38+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T18:22:40+00:00",
+      "subject": "start: P1SD26_studio-standard-makeshift-chair"
+     },
      "result": ""
     },
     {
@@ -9213,8 +9232,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
@@ -9370,7 +9389,7 @@
    ]
   },
   {
-   "nextTask": "Fix share preview, logo and share text",
+   "nextTask": null,
    "costTotalUsd": 51.15,
    "latestChange": {
     "text": "Publish Pocket Wingmen: a visual wingman-versus-wingman party-floor puzzle with saved...",
@@ -9388,14 +9407,14 @@
    "title": "Matchmaker Chat",
    "line": "Auntie sends a photo of a boy, then picture clues one.",
    "url": "https://chenhsieh.github.io/matchmaker-chat/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Turn the rival-wingmen idea into a visual arms-race puzzle",
    "shelfNote": "",
    "image": "promo/matchmaker-chat/first.jpg",
    "firstSeen": "2026-10-15T21:39:26+00:00",
-   "lastChange": "2026-10-21T14:55:58+00:00",
+   "lastChange": "2026-10-21T18:23:13+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -9411,16 +9430,19 @@
    "tasks": [
     {
      "title": "P1SD27_studio standard matchmaker chat",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T14:55:58+00:00",
+     "since": "2026-10-21T18:23:09+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T18:23:10+00:00",
+      "subject": "start: P1SD27_studio-standard-matchmaker-chat"
+     },
      "result": ""
     },
     {
@@ -9495,8 +9517,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 5
    },
@@ -10707,7 +10729,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:28:17+00:00",
-   "lastChange": "2026-10-21T18:16:38+00:00",
+   "lastChange": "2026-10-21T18:22:23+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
