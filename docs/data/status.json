@@ -1,9 +1,10 @@
 {
- "generated": "2026-10-21T15:49:13+00:00",
+ "generated": "2026-10-21T15:51:29+00:00",
  "ops": {
   "count": 24,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
+   "A running task has shown no progress for over 3 hours.",
    "A status note names something that is not a game.",
    "A task waits for a task that does not exist.",
    "Two tasks share the number P1c09."
@@ -11,6 +12,7 @@
  },
  "about": [
   "A game changed in the last hour with no claimed task on it.",
+  "A running task has shown no progress for over 3 hours.",
   "A status note names something that is not a game.",
   "A task waits for a task that does not exist.",
   "Two tasks share the number P1c09."
@@ -25,11 +27,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 82,
+    "queued": 80,
     "running": 4,
-    "doneToday": 72,
-    "minutes": 3440,
-    "estimateMinutes": 860
+    "doneToday": 74,
+    "minutes": 3360,
+    "estimateMinutes": 840
    },
    "Claude": {
     "queued": 1,
@@ -39,16 +41,16 @@
     "estimateMinutes": 120
    }
   },
-  "queued": 83,
+  "queued": 81,
   "running": 5,
-  "doneToday": 88,
+  "doneToday": 90,
   "lanes": {
    "Codex": 4,
    "Claude": 1
   },
-  "minutesRemaining": 3560,
-  "estimatedFinish": "2026-10-22T06:09:13+00:00",
-  "estimateMinutes": 860
+  "minutesRemaining": 3480,
+  "estimatedFinish": "2026-10-22T05:51:29+00:00",
+  "estimateMinutes": 840
  },
  "lanes": [
   {
@@ -64,7 +66,7 @@
    "game": "flying-white",
    "task": "P1FW43_flying white real models and masks",
    "since": "2026-10-21T15:38:53+00:00",
-   "activity": "2026-10-21T15:49:06+00:00",
+   "activity": "2026-10-21T15:51:24+00:00",
    "commit": {
     "at": "2026-10-21T15:46:27+00:00",
     "subject": "Refine manuscript crops and mask margins"
@@ -73,28 +75,34 @@
   {
    "worker": "Codex",
    "game": "mirror-hold",
-   "task": "P1MH51_mirror hold comb stroke core",
-   "since": "2026-10-21T15:35:15+00:00",
-   "activity": "2026-10-21T15:35:06+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Codex",
-   "game": "no-unison",
-   "task": "P1NU40_no unison bars and resolution",
-   "since": "2026-10-21T15:41:13+00:00",
-   "activity": "2026-10-21T15:41:04+00:00",
-   "commit": null
+   "task": "P1MH52_mirror hold woodblock look prints",
+   "since": "2026-10-21T15:50:54+00:00",
+   "activity": "2026-10-21T15:51:28+00:00",
+   "commit": {
+    "at": "2026-10-21T15:50:55+00:00",
+    "subject": "start: P1MH52_mirror-hold-woodblock-look-prints"
+   }
   },
   {
    "worker": "Codex",
    "game": "align-hero",
    "task": "P1SD12_studio standard align hero",
    "since": "2026-10-21T15:38:09+00:00",
-   "activity": "2026-10-21T15:49:12+00:00",
+   "activity": "2026-10-21T15:51:19+00:00",
    "commit": {
     "at": "2026-10-21T15:46:36+00:00",
     "subject": "fix: show the first screen in link previews"
+   }
+  },
+  {
+   "worker": "Codex",
+   "game": "biosteganography",
+   "task": "P1SD13_studio standard biosteganography",
+   "since": "2026-10-21T15:51:12+00:00",
+   "activity": "2026-10-21T15:51:28+00:00",
+   "commit": {
+    "at": "2026-10-21T15:51:14+00:00",
+    "subject": "start: P1SD13_studio-standard-biosteganography"
    }
   }
  ],
@@ -136,7 +144,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 261
+   "changes": 263
   }
  ],
  "houseRules": 23,
@@ -466,7 +474,7 @@
    "shelfNote": "",
    "image": "promo/align-hero/first.jpg",
    "firstSeen": "2026-08-23T15:04:13+00:00",
-   "lastChange": "2026-10-21T15:49:12+00:00",
+   "lastChange": "2026-10-21T15:51:19+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -1230,7 +1238,7 @@
    ]
   },
   {
-   "nextTask": "Fix share preview, logo and share text",
+   "nextTask": null,
    "costTotalUsd": 25.39,
    "latestChange": {
     "text": "first-visit repeat mission, case progress, and live alignment evidence are published;...",
@@ -1249,14 +1257,14 @@
    "title": "Biosteganography",
    "line": "Straighten the stripes to find a hidden repeat.",
    "url": "https://chenhsieh.github.io/biosteganography/demo/snap.html",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "promo/biosteganography/first.jpg",
    "firstSeen": "2026-08-20T03:51:36+00:00",
-   "lastChange": "2026-10-21T14:55:29+00:00",
+   "lastChange": "2026-10-21T15:51:28+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -1272,16 +1280,19 @@
    "tasks": [
     {
      "title": "P1SD13_studio standard biosteganography",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T14:55:29+00:00",
+     "since": "2026-10-21T15:51:12+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T15:51:14+00:00",
+      "subject": "start: P1SD13_studio-standard-biosteganography"
+     },
      "result": ""
     },
     {
@@ -1300,8 +1311,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -5088,7 +5099,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T05:18:25+00:00",
-   "lastChange": "2026-10-21T15:49:06+00:00",
+   "lastChange": "2026-10-21T15:51:24+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -9897,10 +9908,10 @@
   },
   {
    "nextTask": "Mirror Hold: 12 clients, the real tokoyama ranks...",
-   "costTotalUsd": 54.34,
+   "costTotalUsd": 54.61,
    "latestChange": {
-    "text": "cross-functional rework design: one comb verb, forecast on the strands, woodblock look,...",
-    "at": "2026-10-21T14:48:47+00:00"
+    "text": "feat: comb oil into hair and watch each bout pull",
+    "at": "2026-10-21T15:50:53+00:00"
    },
    "promo": null,
    "id": "mirror-hold",
@@ -9915,32 +9926,35 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/mirror-hold-1.webp",
    "firstSeen": "2026-10-14T23:09:04+00:00",
-   "lastChange": "2026-10-21T15:35:06+00:00",
+   "lastChange": "2026-10-21T15:51:28+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 1,
+    "codexRuns": 2,
     "claudeRuns": 1,
     "apiRuns": 1,
-    "codexTokens": 287088,
-    "codexUsdEst": 0.34,
+    "codexTokens": 505734,
+    "codexUsdEst": 0.61,
     "claudeUsdEst": 3.6,
     "earlierRounds": 14,
     "earlierUsdEst": 50.4,
-    "totalUsdEst": 54.34
+    "totalUsdEst": 54.61
    },
    "tasks": [
     {
-     "title": "P1MH51_mirror hold comb stroke core",
+     "title": "P1MH52_mirror hold woodblock look prints",
      "state": "running",
      "worker": "Codex",
-     "plan": "Mirror Hold: one verb: comb oil through the hair with your finger; the bout shows which hair springs loose",
-     "since": "2026-10-21T15:35:15+00:00",
+     "plan": "Mirror Hold: sumo woodblock look with kewari hair lines; each client is a real wrestler from a Met CC0 print",
+     "since": "2026-10-21T15:50:54+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T15:50:55+00:00",
+      "subject": "start: P1MH52_mirror-hold-woodblock-look-prints"
+     },
      "result": ""
     },
     {
@@ -9972,18 +9986,18 @@
      "result": ""
     },
     {
-     "title": "P1MH52_mirror hold woodblock look prints",
-     "state": "queued",
+     "title": "P1MH51_mirror hold comb stroke core",
+     "state": "done",
      "worker": "Codex",
-     "plan": "Mirror Hold: sumo woodblock look with kewari hair lines; each client is a real wrestler from a Met CC0 print",
+     "plan": "Mirror Hold: one verb: comb oil through the hair with your finger; the bout shows which hair springs loose",
      "since": "2026-10-21T14:48:35+00:00",
-     "done": null,
+     "done": "2026-10-21T14:48:35+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 36,
+     "tokens": 218646,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: comb oil into hair and watch each bout pull"
     },
     {
      "title": "P1MH50_mirror hold cross functional rework",
@@ -10029,10 +10043,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
+    "queued": 2,
     "running": 1,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": {
     "date": "2026-10-21",
@@ -10042,6 +10056,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T15:50:53+00:00",
+     "ok": true,
+     "note": "feat: comb oil into hair and watch each bout pull",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T14:48:47+00:00",
      "ok": true,
@@ -10106,12 +10126,6 @@
      "at": "2026-10-15T11:43:46+00:00",
      "ok": true,
      "note": "feat: make mirror targets easier to use",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-15T05:37:55+00:00",
-     "ok": true,
-     "note": "feat: learn Mirror Hold one idea per mirror, from one red ring to the whole head",
      "source": "main commit"
     }
    ]
@@ -10642,10 +10656,10 @@
   },
   {
    "nextTask": "No Unison as a music sequencing game: cute...",
-   "costTotalUsd": 21.77,
+   "costTotalUsd": 21.97,
    "latestChange": {
-    "text": "feat: make the band answer each tap",
-    "at": "2026-10-21T12:45:19+00:00"
+    "text": "feat: see crisp bars advance through eight new levels",
+    "at": "2026-10-21T15:51:11+00:00"
    },
    "promo": null,
    "id": "no-unison",
@@ -10653,41 +10667,27 @@
    "title": "No Unison",
    "line": "",
    "url": "https://chenhsieh.github.io/no-unison/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:28:17+00:00",
-   "lastChange": "2026-10-21T15:41:04+00:00",
+   "lastChange": "2026-10-21T15:51:11+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 1,
+    "codexRuns": 2,
     "claudeRuns": 1,
     "apiRuns": 0,
-    "codexTokens": 138575,
-    "codexUsdEst": 0.17,
+    "codexTokens": 305275,
+    "codexUsdEst": 0.37,
     "claudeUsdEst": 3.6,
     "earlierRounds": 5,
     "earlierUsdEst": 18.0,
-    "totalUsdEst": 21.77
+    "totalUsdEst": 21.97
    },
    "tasks": [
-    {
-     "title": "P1NU40_no unison bars and resolution",
-     "state": "running",
-     "worker": "Codex",
-     "plan": "No Unison: crisp resolution, visible bar progress during play and more levels.",
-     "since": "2026-10-21T15:41:13+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2NU41_no unison music game core",
      "state": "queued",
@@ -10701,6 +10701,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1NU40_no unison bars and resolution",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "No Unison: crisp resolution, visible bar progress during play and more levels.",
+     "since": "2026-10-21T15:19:04+00:00",
+     "done": "2026-10-21T15:19:04+00:00",
+     "reviewed": false,
+     "minutes": 22,
+     "tokens": 166700,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "feat: see crisp bars advance through eight new levels"
     },
     {
      "title": "P2GF13_no unison feel pass",
@@ -10733,9 +10747,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": {
     "date": "2026-10-21",
@@ -10745,6 +10759,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T15:51:11+00:00",
+     "ok": true,
+     "note": "feat: see crisp bars advance through eight new levels",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T12:45:19+00:00",
      "ok": true,
