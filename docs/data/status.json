@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T06:45:40+00:00",
+ "generated": "2026-10-21T06:47:52+00:00",
  "ops": {
-  "count": 39,
+  "count": 38,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -25,46 +25,38 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 46,
+    "queued": 54,
     "running": 4,
     "doneToday": 48,
-    "minutes": 2000,
-    "estimateMinutes": 500
+    "minutes": 2320,
+    "estimateMinutes": 580
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
-    "doneToday": 1,
-    "minutes": 120,
-    "estimateMinutes": 120
+    "running": 0,
+    "doneToday": 2,
+    "minutes": 60,
+    "estimateMinutes": 60
    }
   },
-  "queued": 47,
-  "running": 5,
-  "doneToday": 49,
+  "queued": 55,
+  "running": 4,
+  "doneToday": 50,
   "lanes": {
    "Codex": 4,
    "Claude": 1
   },
-  "minutesRemaining": 2120,
-  "estimatedFinish": "2026-10-21T15:05:40+00:00",
-  "estimateMinutes": 500
+  "minutesRemaining": 2380,
+  "estimatedFinish": "2026-10-21T16:27:52+00:00",
+  "estimateMinutes": 580
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "play-template",
-   "task": "P1GF01_game feel playbook module and agent",
-   "since": "2026-10-21T06:22:52+00:00",
-   "activity": "2026-10-21T06:41:46+00:00",
-   "commit": null
-  },
   {
    "worker": "Codex",
    "game": "readable-nonsense",
    "task": "P1RN30_readable nonsense render fix",
    "since": "2026-10-21T06:39:05+00:00",
-   "activity": "2026-10-21T06:45:37+00:00",
+   "activity": "2026-10-21T06:47:41+00:00",
    "commit": {
     "at": "2026-10-21T06:45:37+00:00",
     "subject": "fix: load local Zhuyin font"
@@ -75,28 +67,37 @@
    "game": "nesting-scrap",
    "task": "nesting scrap taste",
    "since": "2026-10-21T06:39:06+00:00",
-   "activity": "2026-10-21T06:45:40+00:00",
-   "commit": null
+   "activity": "2026-10-21T06:47:26+00:00",
+   "commit": {
+    "at": "2026-10-21T06:47:07+00:00",
+    "subject": "wip: P1t10_nesting-scrap-taste (Codex lane autosave 02:47)"
+   }
   },
   {
    "worker": "Codex",
    "game": "connectle",
    "task": "connectle signal",
    "since": "2026-10-21T06:39:30+00:00",
-   "activity": "2026-10-21T06:45:36+00:00",
-   "commit": null
+   "activity": "2026-10-21T06:47:50+00:00",
+   "commit": {
+    "at": "2026-10-21T06:46:50+00:00",
+    "subject": "fix: fit the signal game on small screens"
+   }
   },
   {
    "worker": "Codex",
    "game": "lens-screen",
    "task": "lens screen studio",
    "since": "2026-10-21T06:39:36+00:00",
-   "activity": "2026-10-21T06:45:36+00:00",
-   "commit": null
+   "activity": "2026-10-21T06:47:22+00:00",
+   "commit": {
+    "at": "2026-10-21T06:47:13+00:00",
+    "subject": "fix: keep the studio wall true to each print"
+   }
   }
  ],
  "codexLanes": 4,
- "claudeWorkers": 1,
+ "claudeWorkers": 0,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -133,7 +134,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 173
+   "changes": 174
   }
  ],
  "houseRules": 23,
@@ -1988,7 +1989,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/connectle-1.webp",
    "firstSeen": "2026-09-11T02:38:12+00:00",
-   "lastChange": "2026-10-21T06:45:36+00:00",
+   "lastChange": "2026-10-21T06:47:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -2013,7 +2014,10 @@
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T06:46:50+00:00",
+      "subject": "fix: fit the signal game on small screens"
+     },
      "result": ""
     },
     {
@@ -2128,7 +2132,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/nesting-scrap-1.webp",
    "firstSeen": "2026-10-15T23:26:00+00:00",
-   "lastChange": "2026-10-21T06:45:40+00:00",
+   "lastChange": "2026-10-21T06:47:26+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -2153,7 +2157,10 @@
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T06:47:07+00:00",
+      "subject": "wip: P1t10_nesting-scrap-taste (Codex lane autosave 02:47)"
+     },
      "result": ""
     },
     {
@@ -2636,7 +2643,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:37:54+00:00",
-   "lastChange": "2026-10-21T06:26:40+00:00",
+   "lastChange": "2026-10-21T06:47:14+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -2650,6 +2657,20 @@
     "totalUsdEst": 14.4
    },
    "tasks": [
+    {
+     "title": "P2GF14_dancers not mad feel pass",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Game-feel pass for dancers-not-mad using the shared juice module and the audit.",
+     "since": "2026-10-21T06:47:14+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1DM03_dancers automaton art",
      "state": "queued",
@@ -2680,7 +2701,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 3,
     "running": 0,
     "waitingDesign": 0,
     "done": 0
@@ -5837,14 +5858,14 @@
    "title": "Hallway Posters",
    "line": "",
    "url": "https://chenhsieh.github.io/hallway-posters/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:58:56+00:00",
-   "lastChange": "2026-10-21T03:06:02+00:00",
+   "lastChange": "2026-10-21T06:47:14+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -5858,6 +5879,20 @@
     "totalUsdEst": 14.4
    },
    "tasks": [
+    {
+     "title": "P2GF16_hallway posters feel pass",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Game-feel pass for hallway-posters using the shared juice module and the audit.",
+     "since": "2026-10-21T06:47:14+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "hallway posters clear core",
      "state": "done",
@@ -5874,7 +5909,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
@@ -5885,7 +5920,7 @@
     "note": "Unclear what to look at or do"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T03:06:02+00:00",
@@ -6673,14 +6708,14 @@
    "title": "Knockout Plate",
    "line": "",
    "url": "https://chenhsieh.github.io/knockout-plate/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T04:39:50+00:00",
-   "lastChange": "2026-10-21T05:19:46+00:00",
+   "lastChange": "2026-10-21T06:47:14+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -6694,6 +6729,20 @@
     "totalUsdEst": 21.6
    },
    "tasks": [
+    {
+     "title": "P2GF15_knockout plate feel pass",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Game-feel pass for knockout-plate using the shared juice module and the audit.",
+     "since": "2026-10-21T06:47:14+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1KP01_knockout plate understandable",
      "state": "done",
@@ -6710,7 +6759,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
@@ -6721,7 +6770,7 @@
     "note": "Mechanism not understood: make it easier"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T05:19:46+00:00",
@@ -6881,14 +6930,14 @@
    "title": "Lantern Meeting",
    "line": "",
    "url": "https://chenhsieh.github.io/lantern-meeting/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Politics of lab and corporate competition; rock-paper-scissors core; clearer...",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:45:20+00:00",
-   "lastChange": "2026-10-21T05:42:22+00:00",
+   "lastChange": "2026-10-21T06:47:14+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -6902,6 +6951,20 @@
     "totalUsdEst": 21.6
    },
    "tasks": [
+    {
+     "title": "P2GF17_lantern meeting feel pass",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Game-feel pass for lantern-meeting using the shared juice module and the audit.",
+     "since": "2026-10-21T06:47:14+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2LM02_lantern meeting politics and first minute",
      "state": "done",
@@ -6932,7 +6995,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 2
@@ -6943,7 +7006,7 @@
     "note": "Good board game feel; clarify what is shown; political/parish-style refinement; less text"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T05:42:22+00:00",
@@ -7002,7 +7065,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/lens-screen-1.webp",
    "firstSeen": "2026-10-15T04:07:44+00:00",
-   "lastChange": "2026-10-21T06:45:36+00:00",
+   "lastChange": "2026-10-21T06:47:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -7027,7 +7090,10 @@
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T06:47:13+00:00",
+      "subject": "fix: keep the studio wall true to each print"
+     },
      "result": ""
     },
     {
@@ -8025,9 +8091,9 @@
     "codexTokens": 203857,
     "codexUsdEst": 0.24,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
-    "totalUsdEst": 22.19
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
+    "totalUsdEst": 25.79
    },
    "tasks": [
     {
@@ -8074,6 +8140,12 @@
      "ok": true,
      "note": "fix: chair taps place repairs",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-21T06:23:31+00:00",
+     "ok": true,
+     "note": "fix: chair taps place repairs",
+     "source": "main commit"
     },
     {
      "at": "2026-10-21T05:41:09+00:00",
@@ -9298,7 +9370,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:28:17+00:00",
-   "lastChange": "2026-10-21T03:46:28+00:00",
+   "lastChange": "2026-10-21T06:47:14+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -9312,6 +9384,20 @@
     "totalUsdEst": 10.8
    },
    "tasks": [
+    {
+     "title": "P2GF13_no unison feel pass",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Game-feel pass for no-unison using the shared juice module and the audit.",
+     "since": "2026-10-21T06:47:14+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2PT06_no unison budget",
      "state": "queued",
@@ -9328,7 +9414,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 0
@@ -9772,52 +9858,58 @@
    "title": "Play Template",
    "line": "",
    "url": "https://chenhsieh.github.io/play-template/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T04:23:39+00:00",
-   "lastChange": "2026-10-21T06:41:46+00:00",
+   "lastChange": "2026-10-21T06:46:58+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 3,
     "earlierUsdEst": 10.8,
-    "totalUsdEst": 10.8
+    "totalUsdEst": 14.4
    },
    "tasks": [
     {
      "title": "P1GF01_game feel playbook module and agent",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Research game feel for small web games, build a juice module in the template and a game-feel specialist agent.",
-     "since": "2026-10-21T06:22:52+00:00",
-     "done": null,
+     "since": "2026-10-21T06:18:11+00:00",
+     "done": "2026-10-21T06:18:11+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1GF01 game-feel: playbook + juice module (kit 2) + feel audit + game-feel skill; template and pilot live."
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T06:46:58+00:00",
+     "ok": true,
+     "note": "P1GF01:juice-kit-2-live;feel_audit+game-feel-skill;pilot-play-template-demo-audit-50-to-100",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T04:58:09+00:00",
      "ok": true,
@@ -12073,7 +12165,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T05:07:40+00:00",
-   "lastChange": "2026-10-21T06:26:40+00:00",
+   "lastChange": "2026-10-21T06:47:14+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12087,6 +12179,20 @@
     "totalUsdEst": 14.4
    },
    "tasks": [
+    {
+     "title": "P2GF12_shortest law feel pass",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Game-feel pass for shortest-law using the shared juice module and the audit.",
+     "since": "2026-10-21T06:47:14+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2PT10_shortest law calibration art",
      "state": "queued",
@@ -12117,7 +12223,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 3,
     "running": 0,
     "waitingDesign": 0,
     "done": 0
@@ -12592,7 +12698,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T16:29:01+00:00",
-   "lastChange": "2026-10-21T06:26:40+00:00",
+   "lastChange": "2026-10-21T06:47:14+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12606,6 +12712,20 @@
     "totalUsdEst": 10.8
    },
    "tasks": [
+    {
+     "title": "P2GF10_silent disco feel pass",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Game-feel pass for silent-disco using the shared juice module and the audit.",
+     "since": "2026-10-21T06:47:14+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2PT09_silent disco window art",
      "state": "queued",
@@ -12636,7 +12756,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 3,
     "running": 0,
     "waitingDesign": 0,
     "done": 0
@@ -14556,7 +14676,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:19:46+00:00",
-   "lastChange": "2026-10-21T06:26:40+00:00",
+   "lastChange": "2026-10-21T06:47:14+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -14570,6 +14690,20 @@
     "totalUsdEst": 10.8
    },
    "tasks": [
+    {
+     "title": "P2GF11_thirsty clicks feel pass",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Game-feel pass for thirsty-clicks using the shared juice module and the audit.",
+     "since": "2026-10-21T06:47:14+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "thirsty clicks propagation art",
      "state": "queued",
@@ -14600,7 +14734,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 3,
     "running": 0,
     "waitingDesign": 0,
     "done": 0
@@ -16728,7 +16862,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/readable-nonsense-1.webp",
    "firstSeen": "2026-10-15T23:26:29+00:00",
-   "lastChange": "2026-10-21T06:45:37+00:00",
+   "lastChange": "2026-10-21T06:47:41+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 2,
