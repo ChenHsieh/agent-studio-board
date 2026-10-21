@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T18:49:51+00:00",
+ "generated": "2026-10-21T18:52:03+00:00",
  "ops": {
   "count": 26,
   "notes": [
@@ -23,11 +23,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 52,
+    "queued": 51,
     "running": 3,
     "doneToday": 88,
-    "minutes": 2200,
-    "estimateMinutes": 734
+    "minutes": 2160,
+    "estimateMinutes": 720
    },
    "Claude": {
     "queued": 1,
@@ -37,26 +37,18 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 53,
+  "queued": 52,
   "running": 3,
   "doneToday": 111,
   "lanes": {
    "Codex": 3,
    "Claude": 1
   },
-  "minutesRemaining": 2260,
-  "estimatedFinish": "2026-10-22T07:03:51+00:00",
-  "estimateMinutes": 734
+  "minutesRemaining": 2220,
+  "estimatedFinish": "2026-10-22T06:52:03+00:00",
+  "estimateMinutes": 720
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "local-hero",
-   "task": "P1SD25_studio standard local hero",
-   "since": "2026-10-21T18:41:06+00:00",
-   "activity": "2026-10-21T18:41:38+00:00",
-   "commit": null
-  },
   {
    "worker": "Codex",
    "game": "makeshift-chair",
@@ -70,8 +62,19 @@
    "game": "metagenome-profilers",
    "task": "P1SD28_studio standard metagenome profilers",
    "since": "2026-10-21T18:48:43+00:00",
-   "activity": "2026-10-21T18:49:50+00:00",
+   "activity": "2026-10-21T18:51:57+00:00",
    "commit": null
+  },
+  {
+   "worker": "Codex",
+   "game": "motif-hero",
+   "task": "P1SD29_studio standard motif hero",
+   "since": "2026-10-21T18:51:45+00:00",
+   "activity": "2026-10-21T18:52:03+00:00",
+   "commit": {
+    "at": "2026-10-21T18:51:46+00:00",
+    "subject": "start: P1SD29_studio-standard-motif-hero"
+   }
   }
  ],
  "codexLanes": 3,
@@ -117,7 +120,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 326
+   "changes": 327
   }
  ],
  "houseRules": 23,
@@ -8825,10 +8828,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 50.62,
+   "costTotalUsd": 54.22,
    "latestChange": {
-    "text": "fix: show a concise Local Hero link preview",
-    "at": "2026-10-21T18:41:38+00:00"
+    "text": "see",
+    "at": "2026-10-21T18:51:44+00:00"
    },
    "promo": {
     "files": {
@@ -8843,14 +8846,14 @@
    "title": "Local Hero",
    "line": "Find the stretch two DNA strings share, then bank it.",
    "url": "https://chenhsieh.github.io/local-hero/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "promo/local-hero/first.jpg",
    "firstSeen": "2026-08-20T15:58:51+00:00",
-   "lastChange": "2026-10-21T18:41:38+00:00",
+   "lastChange": "2026-10-21T18:51:44+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -8859,25 +8862,11 @@
     "codexTokens": 180479,
     "codexUsdEst": 0.22,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
-    "totalUsdEst": 50.62
+    "earlierRounds": 15,
+    "earlierUsdEst": 54.0,
+    "totalUsdEst": 54.22
    },
    "tasks": [
-    {
-     "title": "P1SD25_studio standard local hero",
-     "state": "running",
-     "worker": "Codex",
-     "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T18:41:06+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "local hero bio round",
      "state": "done",
@@ -8895,7 +8884,7 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
@@ -8905,8 +8894,14 @@
     "note": "Bioinformatics round: make the idea legible in the first"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T18:51:44+00:00",
+     "ok": false,
+     "note": "see",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T18:41:38+00:00",
      "ok": true,
@@ -8971,12 +8966,6 @@
      "at": "2026-09-05T02:54:37+00:00",
      "ok": true,
      "note": "Add description, og:*, and twitter:* meta tags, and a generated docs/og.png",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-05T02:10:32+00:00",
-     "ok": true,
-     "note": "Fix board sizing: scale cell to strand length, not a fixed row count",
      "source": "main commit"
     }
    ]
@@ -9833,7 +9822,7 @@
    "shelfNote": "",
    "image": "promo/metagenome-profilers/first.jpg",
    "firstSeen": "2026-08-20T15:58:01+00:00",
-   "lastChange": "2026-10-21T18:49:50+00:00",
+   "lastChange": "2026-10-21T18:51:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -10311,7 +10300,7 @@
    ]
   },
   {
-   "nextTask": "Fix share preview, logo and share text",
+   "nextTask": null,
    "costTotalUsd": 58.13,
    "latestChange": {
     "text": "feat: make Motif Hero easier to read and learn",
@@ -10330,14 +10319,14 @@
    "title": "Motif Hero",
    "line": "Set the bar to how common each column's top letter is.",
    "url": "https://chenhsieh.github.io/motif-hero/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "promo/motif-hero/first.jpg",
    "firstSeen": "2026-08-29T04:16:29+00:00",
-   "lastChange": "2026-10-21T14:56:03+00:00",
+   "lastChange": "2026-10-21T18:52:03+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -10353,16 +10342,19 @@
    "tasks": [
     {
      "title": "P1SD29_studio standard motif hero",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T14:56:03+00:00",
+     "since": "2026-10-21T18:51:45+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T18:51:46+00:00",
+      "subject": "start: P1SD29_studio-standard-motif-hero"
+     },
      "result": ""
     },
     {
@@ -10451,8 +10443,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 6
    },
