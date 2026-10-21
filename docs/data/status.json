@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T17:47:40+00:00",
+ "generated": "2026-10-21T17:49:52+00:00",
  "ops": {
   "count": 32,
   "notes": [
@@ -24,10 +24,10 @@
   "workers": {
    "Codex": {
     "queued": 59,
-    "running": 3,
-    "doneToday": 84,
-    "minutes": 2480,
-    "estimateMinutes": 827
+    "running": 2,
+    "doneToday": 85,
+    "minutes": 2440,
+    "estimateMinutes": 1220
    },
    "Claude": {
     "queued": 1,
@@ -38,15 +38,15 @@
    }
   },
   "queued": 60,
-  "running": 4,
-  "doneToday": 104,
+  "running": 3,
+  "doneToday": 105,
   "lanes": {
-   "Codex": 3,
+   "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 2600,
-  "estimatedFinish": "2026-10-22T07:34:40+00:00",
-  "estimateMinutes": 827
+  "minutesRemaining": 2560,
+  "estimatedFinish": "2026-10-22T14:09:52+00:00",
+  "estimateMinutes": 1220
  },
  "lanes": [
   {
@@ -70,19 +70,11 @@
    "game": "copy-paste",
    "task": "P1SD22_studio standard copy paste",
    "since": "2026-10-21T17:40:54+00:00",
-   "activity": "2026-10-21T17:40:41+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Codex",
-   "game": "lantern-meeting",
-   "task": "P1SD24_studio standard lantern meeting",
-   "since": "2026-10-21T17:45:25+00:00",
-   "activity": "2026-10-21T17:47:27+00:00",
+   "activity": "2026-10-21T17:49:34+00:00",
    "commit": null
   }
  ],
- "codexLanes": 3,
+ "codexLanes": 2,
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
@@ -125,7 +117,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 307
+   "changes": 308
   }
  ],
  "houseRules": 23,
@@ -6684,8 +6676,8 @@
    "nextTask": null,
    "costTotalUsd": 111.38,
    "latestChange": {
-    "text": "live main",
-    "at": "2026-10-21T04:55:57+00:00"
+    "text": "feat: share Hello Princess with its own preview and source note",
+    "at": "2026-10-21T17:49:34+00:00"
    },
    "promo": {
     "files": {
@@ -6707,7 +6699,7 @@
    "shelfNote": "",
    "image": "promo/copy-paste/first.jpg",
    "firstSeen": "2026-10-15T18:59:22+00:00",
-   "lastChange": "2026-10-21T17:40:41+00:00",
+   "lastChange": "2026-10-21T17:49:34+00:00",
    "cost": {
     "apiUsd": 16.91,
     "codexRuns": 3,
@@ -6849,6 +6841,12 @@
    "inProgress": true,
    "history": [
     {
+     "at": "2026-10-21T17:49:34+00:00",
+     "ok": true,
+     "note": "feat: share Hello Princess with its own preview and source note",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-21T04:55:57+00:00",
      "ok": true,
      "note": "live main",
@@ -6913,12 +6911,6 @@
      "ok": true,
      "note": "design brief written; Codex build P2c02 queued",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-19T16:52:55+00:00",
-     "ok": true,
-     "note": "fix: every level is open while we test",
-     "source": "main commit"
     }
    ]
   },
@@ -7767,10 +7759,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 28.95,
+   "costTotalUsd": 29.07,
    "latestChange": {
-    "text": "feat: make meeting choices feel clicky",
-    "at": "2026-10-21T07:48:31+00:00"
+    "text": "feat: preview Lantern Meeting in shared links",
+    "at": "2026-10-21T17:48:29+00:00"
    },
    "promo": {
     "files": {
@@ -7785,40 +7777,40 @@
    "title": "Lantern Meeting",
    "line": "",
    "url": "https://chenhsieh.github.io/lantern-meeting/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Politics of lab and corporate competition; rock-paper-scissors core; clearer...",
    "shelfNote": "",
    "image": "promo/lantern-meeting/first.jpg",
    "firstSeen": "2026-10-20T20:45:20+00:00",
-   "lastChange": "2026-10-21T17:47:27+00:00",
+   "lastChange": "2026-10-21T17:48:29+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 1,
+    "codexRuns": 2,
     "claudeRuns": 1,
     "apiRuns": 1,
-    "codexTokens": 127086,
-    "codexUsdEst": 0.15,
+    "codexTokens": 222529,
+    "codexUsdEst": 0.27,
     "claudeUsdEst": 3.6,
     "earlierRounds": 7,
     "earlierUsdEst": 25.2,
-    "totalUsdEst": 28.95
+    "totalUsdEst": 29.07
    },
    "tasks": [
     {
      "title": "P1SD24_studio standard lantern meeting",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T17:45:25+00:00",
-     "done": null,
+     "since": "2026-10-21T17:39:41+00:00",
+     "done": "2026-10-21T17:39:41+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 6,
+     "tokens": 95443,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: preview Lantern Meeting in shared links"
     },
     {
      "title": "P2GF17_lantern meeting feel pass",
@@ -7865,9 +7857,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": {
     "date": "2026-10-21",
@@ -7875,8 +7867,14 @@
     "note": "Good board game feel; clarify what is shown; political/parish-style refinement; less text"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T17:48:29+00:00",
+     "ok": true,
+     "note": "feat: preview Lantern Meeting in shared links",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T07:48:31+00:00",
      "ok": true,
