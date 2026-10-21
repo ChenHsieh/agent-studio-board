@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T13:24:41+00:00",
+ "generated": "2026-10-21T13:26:53+00:00",
  "ops": {
   "count": 21,
   "notes": [
@@ -25,11 +25,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 22,
-    "running": 1,
+    "queued": 23,
+    "running": 2,
     "doneToday": 64,
-    "minutes": 920,
-    "estimateMinutes": 920
+    "minutes": 1000,
+    "estimateMinutes": 500
    },
    "Claude": {
     "queued": 1,
@@ -39,18 +39,29 @@
     "estimateMinutes": 180
    }
   },
-  "queued": 23,
-  "running": 3,
+  "queued": 24,
+  "running": 4,
   "doneToday": 72,
   "lanes": {
-   "Codex": 1,
+   "Codex": 2,
    "Claude": 1
   },
-  "minutesRemaining": 1100,
-  "estimatedFinish": "2026-10-22T04:44:41+00:00",
-  "estimateMinutes": 920
+  "minutesRemaining": 1180,
+  "estimatedFinish": "2026-10-21T21:46:53+00:00",
+  "estimateMinutes": 500
  },
  "lanes": [
+  {
+   "worker": "Codex",
+   "game": "colony-count",
+   "task": "P1CC31_colony book sync leaf hat gaze",
+   "since": "2026-10-21T13:25:36+00:00",
+   "activity": "2026-10-21T13:26:53+00:00",
+   "commit": {
+    "at": "2026-10-21T13:25:39+00:00",
+    "subject": "start: P1CC31_colony-book-sync-leaf-hat-gaze"
+   }
+  },
   {
    "worker": "Claude",
    "game": "dancers-not-mad",
@@ -72,14 +83,14 @@
    "game": "silent-disco",
    "task": "P2PT09_silent disco window art",
    "since": "2026-10-21T12:46:11+00:00",
-   "activity": "2026-10-21T13:24:04+00:00",
+   "activity": "2026-10-21T13:26:47+00:00",
    "commit": {
     "at": "2026-10-21T13:23:52+00:00",
     "subject": "feat: carried dancers clear the venue sign"
    }
   }
  ],
- "codexLanes": 1,
+ "codexLanes": 2,
  "claudeWorkers": 2,
  "apiSpentUsd": 304.56,
  "rates": {
@@ -1737,14 +1748,14 @@
    "title": "Colony Count",
    "line": "Solve three daily levels, then freeze finished plates.",
    "url": "https://chenhsieh.github.io/colony-count/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Flagship; has its own owner",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-21T04:46:09+00:00",
+   "lastChange": "2026-10-21T13:26:53+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
@@ -1758,6 +1769,37 @@
     "totalUsdEst": 163.28
    },
    "tasks": [
+    {
+     "title": "P1CC31_colony book sync leaf hat gaze",
+     "state": "running",
+     "worker": "Codex",
+     "plan": "Colony Count: sync the Book with game unlocks, add a round leaf hat, smooth gaze and pointer-responsive colonies.",
+     "since": "2026-10-21T13:25:36+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": {
+      "at": "2026-10-21T13:25:39+00:00",
+      "subject": "start: P1CC31_colony-book-sync-leaf-hat-gaze"
+     },
+     "result": ""
+    },
+    {
+     "title": "P1CC32_colony achievements and book cuteness",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Colony Count: achievement toasts, 40+ conditional achievements and cute Book additions.",
+     "since": "2026-10-21T13:25:32+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "colony character maker",
      "state": "done",
@@ -1841,39 +1883,11 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "colony home menu settings journey",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "A home screen led by today's dish with one main button, a plainer plate list and Endless screen, and a full settings page with a colour-blind safe palette.",
-     "since": "2026-10-20T21:39:05+00:00",
-     "done": "2026-10-20T21:39:05+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Colony Count: live https://chenhsieh.github.io/colony-count/ (main , rollback tag pre-home-menu-settings; live app.js, style.css, index.html bytes match; live home at 390 and 320 looked at, zero console errors)."
-    },
-    {
-     "title": "colony themes screen",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "A sets screen where any set can be tried on a small plate, locked sets show their progress and the next plate to play, and the food sets get natural shapes and colours.",
-     "since": "2026-10-20T21:39:05+00:00",
-     "done": "2026-10-20T21:39:05+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 23
    },
@@ -1882,8 +1896,8 @@
     "verdict": "revise",
     "note": "New studies need UI pass; hide until then"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
-   "inProgress": false,
+   "needsYou": null,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T04:46:09+00:00",
@@ -12832,7 +12846,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T16:29:01+00:00",
-   "lastChange": "2026-10-21T13:24:04+00:00",
+   "lastChange": "2026-10-21T13:26:47+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
