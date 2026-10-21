@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T20:25:16+00:00",
+ "generated": "2026-10-21T20:27:30+00:00",
  "ops": {
-  "count": 27,
+  "count": 30,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A running task has shown no progress for over 3 hours.",
@@ -25,11 +25,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 37,
-    "running": 4,
+    "queued": 41,
+    "running": 0,
     "doneToday": 95,
     "minutes": 1640,
-    "estimateMinutes": 410
+    "estimateMinutes": 1640
    },
    "Claude": {
     "queued": 1,
@@ -39,62 +39,18 @@
     "estimateMinutes": 120
    }
   },
-  "queued": 38,
-  "running": 5,
+  "queued": 42,
+  "running": 1,
   "doneToday": 120,
   "lanes": {
-   "Codex": 4,
+   "Codex": 1,
    "Claude": 1
   },
   "minutesRemaining": 1760,
-  "estimatedFinish": "2026-10-22T03:15:16+00:00",
-  "estimateMinutes": 410
+  "estimatedFinish": "2026-10-22T23:47:30+00:00",
+  "estimateMinutes": 1640
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "remote-viewer",
-   "task": "P1SD34_studio standard remote viewer",
-   "since": "2026-10-21T19:53:01+00:00",
-   "activity": "2026-10-21T20:24:42+00:00",
-   "commit": {
-    "at": "2026-10-21T20:19:49+00:00",
-    "subject": "test: follow the Remote Viewer first visit"
-   }
-  },
-  {
-   "worker": "Codex",
-   "game": "directory-handrail",
-   "task": "P1SD37_studio standard directory handrail",
-   "since": "2026-10-21T20:04:28+00:00",
-   "activity": "2026-10-21T20:25:15+00:00",
-   "commit": {
-    "at": "2026-10-21T20:20:22+00:00",
-    "subject": "test: check own brand and local midnight"
-   }
-  },
-  {
-   "worker": "Codex",
-   "game": "sockglass",
-   "task": "P1SD38_studio standard sockglass",
-   "since": "2026-10-21T20:16:02+00:00",
-   "activity": "2026-10-21T20:24:53+00:00",
-   "commit": {
-    "at": "2026-10-21T20:24:05+00:00",
-    "subject": "wip: P1SD38_studio-standard-sockglass (Codex lane autosave 16:24)"
-   }
-  },
-  {
-   "worker": "Codex",
-   "game": "stroke-tops",
-   "task": "P1SD39_studio standard stroke tops",
-   "since": "2026-10-21T20:21:47+00:00",
-   "activity": "2026-10-21T20:25:04+00:00",
-   "commit": {
-    "at": "2026-10-21T20:21:48+00:00",
-    "subject": "start: P1SD39_studio-standard-stroke-tops"
-   }
-  },
   {
    "worker": "Claude",
    "game": "Multiple games",
@@ -104,7 +60,7 @@
    "commit": null
   }
  ],
- "codexLanes": 4,
+ "codexLanes": 0,
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
@@ -147,7 +103,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 358
+   "changes": 366
   }
  ],
  "houseRules": 23,
@@ -12458,11 +12414,11 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 70.73,
+   "nextTask": "Fix share preview, logo and share text",
+   "costTotalUsd": 74.33,
    "latestChange": {
-    "text": "see",
-    "at": "2026-10-21T19:53:00+00:00"
+    "text": "P1SD34_studio-standard-remote-viewer handed to Claude: Codex quota ran out;",
+    "at": "2026-10-21T20:26:48+00:00"
    },
    "promo": {
     "files": {
@@ -12477,14 +12433,14 @@
    "title": "Remote Viewer",
    "line": "Uncover a CIA file and name its assignment.",
    "url": "https://chenhsieh.github.io/remote-viewer/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Game-design pass to find where the fun is and build it",
    "shelfNote": "",
    "image": "promo/remote-viewer/first.jpg",
    "firstSeen": "2026-09-20T16:48:48+00:00",
-   "lastChange": "2026-10-21T20:24:42+00:00",
+   "lastChange": "2026-10-21T20:26:48+00:00",
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 1,
@@ -12493,26 +12449,23 @@
     "codexTokens": 245568,
     "codexUsdEst": 0.29,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 15,
-    "earlierUsdEst": 54.0,
-    "totalUsdEst": 70.73
+    "earlierRounds": 16,
+    "earlierUsdEst": 57.6,
+    "totalUsdEst": 74.33
    },
    "tasks": [
     {
      "title": "P1SD34_studio standard remote viewer",
-     "state": "running",
+     "state": "queued",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T19:53:01+00:00",
+     "since": "2026-10-21T20:26:48+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-21T20:19:49+00:00",
-      "subject": "test: follow the Remote Viewer first visit"
-     },
+     "commit": null,
      "result": ""
     },
     {
@@ -12559,8 +12512,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
     "done": 3
    },
@@ -12572,6 +12525,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T20:26:48+00:00",
+     "ok": false,
+     "note": "P1SD34_studio-standard-remote-viewer handed to Claude: Codex quota ran out;",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T19:53:00+00:00",
      "ok": false,
@@ -12637,12 +12596,6 @@
      "ok": true,
      "note": "CREDIT line under the About fold, EN+ZH (Redactle by John Turner; CIA STAR GATE files); no How to play card exists; README already credited; live",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-17T22:49:25+00:00",
-     "ok": true,
-     "note": "feat: the page names Redactle and the STAR GATE files",
-     "source": "main commit"
     }
    ]
   },
@@ -14427,11 +14380,11 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 77.34,
+   "nextTask": "Fix share preview, logo and share text",
+   "costTotalUsd": 80.94,
    "latestChange": {
-    "text": "level 14 demo hook uses real signs and shared cabinet daily tag is merged; 390x844 and...",
-    "at": "2026-10-19T20:36:45+00:00"
+    "text": "P1SD37_studio-standard-directory-handrail handed to Claude: Codex quota ran out;",
+    "at": "2026-10-21T20:26:57+00:00"
    },
    "promo": {
     "files": {
@@ -14445,14 +14398,14 @@
    "title": "Signposts",
    "line": "Signposts is a short phone puzzle about hanging route.",
    "url": "https://chenhsieh.github.io/directory-handrail/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Flagship polish round: finish the market-manager framing",
    "shelfNote": "",
    "image": "promo/directory-handrail/first.jpg",
    "firstSeen": "2026-10-15T03:41:15+00:00",
-   "lastChange": "2026-10-21T20:25:15+00:00",
+   "lastChange": "2026-10-21T20:26:57+00:00",
    "cost": {
     "apiUsd": 7.97,
     "codexRuns": 3,
@@ -14461,26 +14414,23 @@
     "codexTokens": 806850,
     "codexUsdEst": 0.97,
     "claudeUsdEst": 10.8,
-    "earlierRounds": 16,
-    "earlierUsdEst": 57.6,
-    "totalUsdEst": 77.34
+    "earlierRounds": 17,
+    "earlierUsdEst": 61.2,
+    "totalUsdEst": 80.94
    },
    "tasks": [
     {
      "title": "P1SD37_studio standard directory handrail",
-     "state": "running",
+     "state": "queued",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T20:04:28+00:00",
+     "since": "2026-10-21T20:26:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-21T20:20:22+00:00",
-      "subject": "test: check own brand and local midnight"
-     },
+     "commit": null,
      "result": ""
     },
     {
@@ -14583,8 +14533,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
     "done": 7
    },
@@ -14596,6 +14546,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T20:26:57+00:00",
+     "ok": false,
+     "note": "P1SD37_studio-standard-directory-handrail handed to Claude: Codex quota ran out;",
+     "source": "board note"
+    },
     {
      "at": "2026-10-19T20:36:45+00:00",
      "ok": true,
@@ -14661,12 +14617,6 @@
      "ok": true,
      "note": "feat: a toy street where the crowd walks door by door, real drag, one rule per level, streets to unlock and a daily",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-17T04:13:11+00:00",
-     "ok": true,
-     "note": "IMPROVED levels 2-5 re-made (L2 one two-wish sign, L3 two-wish sign steals a crowd, L4 Everything goes last, L5 smaller crowds); scoring unchanged; casual first-mark 100/83/68/50/32 (was 100/25/28/18/20); DECISION PASS + UI GATE PASS + playable 12/12",
-     "source": "board note"
     }
    ]
   },
@@ -15267,11 +15217,11 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 29.01,
+   "nextTask": "Fix share preview, logo and share text",
+   "costTotalUsd": 32.61,
    "latestChange": {
-    "text": "warm-window story, shared picture target, and readable sock pane counts live; 390x844 and...",
-    "at": "2026-10-19T20:13:31+00:00"
+    "text": "P1SD38_studio-standard-sockglass handed to Claude: Codex quota ran out;",
+    "at": "2026-10-21T20:26:48+00:00"
    },
    "promo": {
     "files": {
@@ -15286,14 +15236,14 @@
    "title": "Sockglass",
    "line": "Drag tissue-paper socks onto a dark bedroom window; where.",
    "url": "https://chenhsieh.github.io/sockglass/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Make sock sizes and counts readable and let the theme",
    "shelfNote": "",
    "image": "promo/sockglass/first.jpg",
    "firstSeen": "2026-10-15T23:27:18+00:00",
-   "lastChange": "2026-10-21T20:24:53+00:00",
+   "lastChange": "2026-10-21T20:26:48+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -15302,26 +15252,23 @@
     "codexTokens": 170850,
     "codexUsdEst": 0.21,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 7,
-    "earlierUsdEst": 25.2,
-    "totalUsdEst": 29.01
+    "earlierRounds": 8,
+    "earlierUsdEst": 28.8,
+    "totalUsdEst": 32.61
    },
    "tasks": [
     {
      "title": "P1SD38_studio standard sockglass",
-     "state": "running",
+     "state": "queued",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T20:16:02+00:00",
+     "since": "2026-10-21T20:26:48+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-21T20:24:05+00:00",
-      "subject": "wip: P1SD38_studio-standard-sockglass (Codex lane autosave 16:24)"
-     },
+     "commit": null,
      "result": ""
     },
     {
@@ -15354,8 +15301,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
     "done": 2
    },
@@ -15367,6 +15314,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T20:26:48+00:00",
+     "ok": false,
+     "note": "P1SD38_studio-standard-sockglass handed to Claude: Codex quota ran out;",
+     "source": "board note"
+    },
     {
      "at": "2026-10-19T20:13:31+00:00",
      "ok": true,
@@ -15804,11 +15757,11 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 36.29,
+   "nextTask": "Fix share preview, logo and share text",
+   "costTotalUsd": 39.89,
    "latestChange": {
-    "text": "feat: characters sail across homework sheets",
-    "at": "2026-10-21T04:53:35+00:00"
+    "text": "P1SD39_studio-standard-stroke-tops handed to Claude: Codex quota ran out;",
+    "at": "2026-10-21T20:26:52+00:00"
    },
    "promo": {
     "files": {
@@ -15822,14 +15775,14 @@
    "title": "Stroke Tops",
    "line": "A dish of wooden spinning tops, each carrying a Chinese.",
    "url": "https://chenhsieh.github.io/stroke-tops/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Make the top read as a top, soften level 3, add a daily",
    "shelfNote": "",
    "image": "promo/stroke-tops/first.jpg",
    "firstSeen": "2026-10-16T01:39:08+00:00",
-   "lastChange": "2026-10-21T20:25:04+00:00",
+   "lastChange": "2026-10-21T20:26:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -15838,26 +15791,23 @@
     "codexTokens": 238662,
     "codexUsdEst": 0.29,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
-    "totalUsdEst": 36.29
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
+    "totalUsdEst": 39.89
    },
    "tasks": [
     {
      "title": "P1SD39_studio standard stroke tops",
-     "state": "running",
+     "state": "queued",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T20:21:47+00:00",
+     "since": "2026-10-21T20:26:52+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-21T20:21:48+00:00",
-      "subject": "start: P1SD39_studio-standard-stroke-tops"
-     },
+     "commit": null,
      "result": ""
     },
     {
@@ -15890,8 +15840,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
     "done": 2
    },
@@ -15899,6 +15849,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T20:26:52+00:00",
+     "ok": false,
+     "note": "P1SD39_studio-standard-stroke-tops handed to Claude: Codex quota ran out;",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T04:53:35+00:00",
      "ok": true,
@@ -15963,12 +15919,6 @@
      "at": "2026-10-16T02:01:51+00:00",
      "ok": true,
      "note": "feat: knock a character top and send its strokes flying into the others",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-16T01:39:08+00:00",
-     "ok": true,
-     "note": "Initial commit",
      "source": "main commit"
     }
    ]
