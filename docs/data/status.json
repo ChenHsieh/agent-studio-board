@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T18:25:26+00:00",
+ "generated": "2026-10-21T18:27:38+00:00",
  "ops": {
-  "count": 27,
+  "count": 26,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -24,10 +24,10 @@
   "workers": {
    "Codex": {
     "queued": 53,
-    "running": 4,
-    "doneToday": 86,
-    "minutes": 2280,
-    "estimateMinutes": 570
+    "running": 3,
+    "doneToday": 87,
+    "minutes": 2240,
+    "estimateMinutes": 747
    },
    "Claude": {
     "queued": 1,
@@ -38,31 +38,23 @@
    }
   },
   "queued": 54,
-  "running": 5,
-  "doneToday": 108,
+  "running": 4,
+  "doneToday": 109,
   "lanes": {
-   "Codex": 4,
+   "Codex": 3,
    "Claude": 1
   },
-  "minutesRemaining": 2400,
-  "estimatedFinish": "2026-10-22T03:55:26+00:00",
-  "estimateMinutes": 570
+  "minutesRemaining": 2360,
+  "estimatedFinish": "2026-10-22T06:54:38+00:00",
+  "estimateMinutes": 747
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "grass-crossword",
-   "task": "P1SD21_studio standard grass crossword",
-   "since": "2026-10-21T18:16:08+00:00",
-   "activity": "2026-10-21T18:24:55+00:00",
-   "commit": null
-  },
   {
    "worker": "Codex",
    "game": "local-hero",
    "task": "P1SD25_studio standard local hero",
    "since": "2026-10-21T18:22:37+00:00",
-   "activity": "2026-10-21T18:25:20+00:00",
+   "activity": "2026-10-21T18:27:16+00:00",
    "commit": null
   },
   {
@@ -70,10 +62,10 @@
    "game": "makeshift-chair",
    "task": "P1SD26_studio standard makeshift chair",
    "since": "2026-10-21T18:22:38+00:00",
-   "activity": "2026-10-21T18:25:26+00:00",
+   "activity": "2026-10-21T18:27:34+00:00",
    "commit": {
-    "at": "2026-10-21T18:22:40+00:00",
-    "subject": "start: P1SD26_studio-standard-makeshift-chair"
+    "at": "2026-10-21T18:27:30+00:00",
+    "subject": "feat: show the chair in shared links"
    }
   },
   {
@@ -81,7 +73,7 @@
    "game": "matchmaker-chat",
    "task": "P1SD27_studio standard matchmaker chat",
    "since": "2026-10-21T18:23:09+00:00",
-   "activity": "2026-10-21T18:25:26+00:00",
+   "activity": "2026-10-21T18:27:37+00:00",
    "commit": {
     "at": "2026-10-21T18:23:10+00:00",
     "subject": "start: P1SD27_studio-standard-matchmaker-chat"
@@ -92,11 +84,11 @@
    "game": "no-unison",
    "task": "P2NU41_no unison music game core",
    "since": "2026-10-21T18:16:38+00:00",
-   "activity": "2026-10-21T18:23:49+00:00",
+   "activity": "2026-10-21T18:27:16+00:00",
    "commit": null
   }
  ],
- "codexLanes": 4,
+ "codexLanes": 3,
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
@@ -139,7 +131,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 316
+   "changes": 317
   }
  ],
  "houseRules": 23,
@@ -6321,10 +6313,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 55.32,
+   "costTotalUsd": 55.52,
    "latestChange": {
-    "text": "see",
-    "at": "2026-10-21T17:52:41+00:00"
+    "text": "feat: Grass Crossword shares its own preview and plants by two taps",
+    "at": "2026-10-21T18:25:58+00:00"
    },
    "promo": {
     "files": {
@@ -6339,40 +6331,40 @@
    "title": "Grass Crossword",
    "line": "A crossword dug into a garden bed, where every answer is.",
    "url": "https://chenhsieh.github.io/grass-crossword/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Varied handwriting, more levels, a daily, and a harder late",
    "shelfNote": "",
    "image": "promo/grass-crossword/first.jpg",
    "firstSeen": "2026-10-16T01:23:04+00:00",
-   "lastChange": "2026-10-21T18:24:55+00:00",
+   "lastChange": "2026-10-21T18:25:58+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 5,
+    "codexRuns": 6,
     "claudeRuns": 3,
     "apiRuns": 2,
-    "codexTokens": 1103279,
-    "codexUsdEst": 1.32,
+    "codexTokens": 1267904,
+    "codexUsdEst": 1.52,
     "claudeUsdEst": 10.8,
     "earlierRounds": 12,
     "earlierUsdEst": 43.2,
-    "totalUsdEst": 55.32
+    "totalUsdEst": 55.52
    },
    "tasks": [
     {
      "title": "P1SD21_studio standard grass crossword",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T18:16:08+00:00",
-     "done": null,
+     "since": "2026-10-21T17:52:41+00:00",
+     "done": "2026-10-21T17:52:41+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 23,
+     "tokens": 164625,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: Grass Crossword shares its own preview and plants by two taps"
     },
     {
      "title": "grass crossword drag preview logic",
@@ -6475,18 +6467,24 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 10
+    "done": 11
    },
    "verdict": {
     "date": "2026-10-20",
     "verdict": "revise",
     "note": "Harder levels not intuitive; drag preview inconsistent"
    },
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T18:25:58+00:00",
+     "ok": true,
+     "note": "feat: Grass Crossword shares its own preview and plants by two taps",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T17:52:41+00:00",
      "ok": false,
@@ -6551,12 +6549,6 @@
      "at": "2026-10-19T22:01:54+00:00",
      "ok": false,
      "note": "twenty beds, daily mode, visible soil target, varied hand letters, old-save coverage, fresh checks, and 390x844 plus 320x568 touch checks are complete; publish blocked pending explicit origin approval",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-19T15:10:21+00:00",
-     "ok": true,
-     "note": "hand-drawn ink and watercolour look, all levels open, credit links Instagram; PRVACKI_20261019.md",
      "source": "board note"
     }
    ]
@@ -8872,7 +8864,7 @@
    "shelfNote": "",
    "image": "promo/local-hero/first.jpg",
    "firstSeen": "2026-08-20T15:58:51+00:00",
-   "lastChange": "2026-10-21T18:25:20+00:00",
+   "lastChange": "2026-10-21T18:27:16+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -9171,7 +9163,7 @@
    "shelfNote": "",
    "image": "promo/makeshift-chair/first.jpg",
    "firstSeen": "2026-10-15T02:32:35+00:00",
-   "lastChange": "2026-10-21T18:25:26+00:00",
+   "lastChange": "2026-10-21T18:27:34+00:00",
    "cost": {
     "apiUsd": 11.15,
     "codexRuns": 1,
@@ -9197,8 +9189,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-21T18:22:40+00:00",
-      "subject": "start: P1SD26_studio-standard-makeshift-chair"
+      "at": "2026-10-21T18:27:30+00:00",
+      "subject": "feat: show the chair in shared links"
      },
      "result": ""
     },
@@ -9414,7 +9406,7 @@
    "shelfNote": "",
    "image": "promo/matchmaker-chat/first.jpg",
    "firstSeen": "2026-10-15T21:39:26+00:00",
-   "lastChange": "2026-10-21T18:25:26+00:00",
+   "lastChange": "2026-10-21T18:27:37+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -10729,7 +10721,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:28:17+00:00",
-   "lastChange": "2026-10-21T18:23:49+00:00",
+   "lastChange": "2026-10-21T18:27:16+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
