@@ -1,14 +1,16 @@
 {
- "generated": "2026-10-21T02:01:25+00:00",
+ "generated": "2026-10-21T02:03:40+00:00",
  "ops": {
-  "count": 20,
+  "count": 21,
   "notes": [
+   "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
    "A task waits for a task that does not exist.",
    "Two tasks share the number P1c09."
   ]
  },
  "about": [
+  "A game changed in the last hour with no claimed task on it.",
   "A status note names something that is not a game.",
   "A task waits for a task that does not exist.",
   "Two tasks share the number P1c09."
@@ -25,28 +27,28 @@
    "Codex": {
     "queued": 0,
     "running": 0,
-    "doneToday": 19,
+    "doneToday": 20,
     "minutes": 0,
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 120,
+    "queued": 119,
     "running": 2,
     "doneToday": 23,
-    "minutes": 1608,
-    "estimateMinutes": 1608
+    "minutes": 1596,
+    "estimateMinutes": 1596
    }
   },
-  "queued": 120,
+  "queued": 119,
   "running": 2,
-  "doneToday": 42,
+  "doneToday": 43,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 1608,
-  "estimatedFinish": "2026-10-22T04:49:25+00:00",
-  "estimateMinutes": 1608
+  "minutesRemaining": 1596,
+  "estimatedFinish": "2026-10-22T04:39:40+00:00",
+  "estimateMinutes": 1596
  },
  "lanes": [
   {
@@ -54,15 +56,15 @@
    "game": "colony-count",
    "task": "colony theme neutral labels",
    "since": "2026-10-21T01:20:58+00:00",
-   "activity": "2026-10-21T01:57:56+00:00",
+   "activity": "2026-10-21T02:02:49+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
-   "game": "copy-paste",
-   "task": "hello princess stepwise links",
-   "since": "2026-10-21T00:44:33+00:00",
-   "activity": "2026-10-21T02:00:37+00:00",
+   "game": "lantern-meeting",
+   "task": "lantern meeting strategy core",
+   "since": "2026-10-21T02:02:28+00:00",
+   "activity": "2026-10-21T02:02:36+00:00",
    "commit": null
   }
  ],
@@ -100,7 +102,7 @@
   },
   {
    "day": "2026-10-20",
-   "changes": 61
+   "changes": 62
   }
  ],
  "houseRules": 23,
@@ -1617,7 +1619,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-21T01:58:54+00:00",
+   "lastChange": "2026-10-21T02:02:49+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 0,
@@ -5757,19 +5759,19 @@
    "title": "Hello Princess",
    "line": "Find the princess's first invitation among the copies.",
    "url": "https://chenhsieh.github.io/copy-paste/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Settle the card-link logic, stop story art leaking answers",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/copy-paste-1.webp",
    "firstSeen": "2026-10-15T18:59:22+00:00",
-   "lastChange": "2026-10-21T02:00:37+00:00",
+   "lastChange": "2026-10-21T02:02:24+00:00",
    "cost": {
     "apiUsd": 16.91,
     "codexRuns": 3,
     "claudeRuns": 4,
-    "apiRuns": 2,
+    "apiRuns": 3,
     "codexTokens": 727891,
     "codexUsdEst": 0.87,
     "claudeUsdEst": 14.4,
@@ -5780,17 +5782,17 @@
    "tasks": [
     {
      "title": "hello princess stepwise links",
-     "state": "running",
-     "worker": "Claude",
+     "state": "done",
+     "worker": "Claude API",
      "plan": "Hello Princess, step by step: walk your card back to the princess one proven link at a time; a wrong link says which picture was the problem and why.",
-     "since": "2026-10-21T00:44:33+00:00",
-     "done": null,
+     "since": "2026-10-20T21:46:39+00:00",
+     "done": "2026-10-20T21:46:39+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "Hello Princess: live https://chenhsieh.github.io/copy-paste/ (main , rollback tag pre-stepwise-; live shell/rules/draw/checker/style/index/strings bytes match docs/; played the live page by touch, zero console errors)."
     },
     {
      "title": "hello princess level story",
@@ -5893,9 +5895,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 9
+    "done": 10
    },
    "verdict": {
     "date": "2026-10-20",
@@ -5903,8 +5905,14 @@
     "note": "Step-by-step linking and inferable feedback"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T02:02:24+00:00",
+     "ok": true,
+     "note": "step loop: follow the copies back one proven link at a time, Gather levels, reasons for wrong links; live",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T19:47:33+00:00",
      "ok": true,
@@ -5970,12 +5978,6 @@
      "ok": true,
      "note": "princess-story- live : per-level story scenes, gentler first six lessons, parent-to-changed-part arrows, and independently checked daily/endless letters with saved difficulty; old saves retain ticks and settings; live real-touch screenshots revi",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-18T20:35:34+00:00",
-     "ok": true,
-     "note": "feat: show each princess chapter as it opens",
-     "source": "main commit"
     }
    ]
   },
@@ -6633,14 +6635,14 @@
    "title": "Lantern Meeting",
    "line": "",
    "url": "https://chenhsieh.github.io/lantern-meeting/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:45:20+00:00",
-   "lastChange": "2026-10-20T21:46:39+00:00",
+   "lastChange": "2026-10-21T02:02:36+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -6656,10 +6658,10 @@
    "tasks": [
     {
      "title": "lantern meeting strategy core",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Lantern Meeting as a court: three stances that beat each other in a circle, rivals with readable habits and bluffs, grudges and debts between desks, and the lantern as the only source of new results.",
-     "since": "2026-10-20T21:46:39+00:00",
+     "since": "2026-10-21T02:02:28+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -6670,8 +6672,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
