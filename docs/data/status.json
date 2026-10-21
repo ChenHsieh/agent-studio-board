@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T08:07:44+00:00",
+ "generated": "2026-10-21T08:09:55+00:00",
  "ops": {
   "count": 26,
   "notes": [
@@ -26,10 +26,10 @@
   "workers": {
    "Codex": {
     "queued": 49,
-    "running": 1,
-    "doneToday": 55,
-    "minutes": 2000,
-    "estimateMinutes": 2000
+    "running": 0,
+    "doneToday": 56,
+    "minutes": 1960,
+    "estimateMinutes": 1960
    },
    "Claude": {
     "queued": 1,
@@ -40,27 +40,18 @@
    }
   },
   "queued": 50,
-  "running": 1,
-  "doneToday": 57,
+  "running": 0,
+  "doneToday": 58,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 2060,
-  "estimatedFinish": "2026-10-22T17:27:44+00:00",
-  "estimateMinutes": 2000
+  "minutesRemaining": 2020,
+  "estimatedFinish": "2026-10-22T16:49:55+00:00",
+  "estimateMinutes": 1960
  },
- "lanes": [
-  {
-   "worker": "Codex",
-   "game": "hallway-posters",
-   "task": "P2GF16_hallway posters feel pass",
-   "since": "2026-10-21T08:05:04+00:00",
-   "activity": "2026-10-21T08:06:47+00:00",
-   "commit": null
-  }
- ],
- "codexLanes": 1,
+ "lanes": [],
+ "codexLanes": 0,
  "claudeWorkers": 0,
  "apiSpentUsd": 304.56,
  "rates": {
@@ -98,7 +89,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 198
+   "changes": 199
   }
  ],
  "houseRules": 23,
@@ -5816,40 +5807,40 @@
    "title": "Hallway Posters",
    "line": "",
    "url": "https://chenhsieh.github.io/hallway-posters/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:58:56+00:00",
-   "lastChange": "2026-10-21T08:06:47+00:00",
+   "lastChange": "2026-10-21T08:07:52+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 0,
     "apiRuns": 1,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 116644,
+    "codexUsdEst": 0.14,
     "claudeUsdEst": 0.0,
     "earlierRounds": 6,
     "earlierUsdEst": 21.6,
-    "totalUsdEst": 21.6
+    "totalUsdEst": 21.74
    },
    "tasks": [
     {
      "title": "P2GF16_hallway posters feel pass",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Game-feel pass for hallway-posters using the shared juice module and the audit.",
-     "since": "2026-10-21T08:05:04+00:00",
-     "done": null,
+     "since": "2026-10-21T07:55:40+00:00",
+     "done": "2026-10-21T07:55:40+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 9,
+     "tokens": 116644,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: make poster tags feel clicky on phones"
     },
     {
      "title": "hallway posters clear core",
@@ -5868,9 +5859,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": {
     "date": "2026-10-20",
@@ -5878,8 +5869,14 @@
     "note": "Unclear what to look at or do"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T08:07:52+00:00",
+     "ok": true,
+     "note": "feat: make poster tags feel clicky on phones",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T07:55:40+00:00",
      "ok": false,
