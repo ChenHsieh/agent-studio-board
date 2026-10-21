@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T23:32:44+00:00",
+ "generated": "2026-10-21T23:34:55+00:00",
  "ops": {
-  "count": 22,
+  "count": 21,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -30,27 +30,44 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 26,
-    "running": 0,
+    "queued": 24,
+    "running": 2,
     "doneToday": 43,
-    "minutes": 360,
-    "estimateMinutes": 360
+    "minutes": 456,
+    "estimateMinutes": 456
    }
   },
-  "queued": 26,
-  "running": 0,
+  "queued": 24,
+  "running": 2,
   "doneToday": 138,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 360,
-  "estimatedFinish": "2026-10-22T05:32:44+00:00",
-  "estimateMinutes": 360
+  "minutesRemaining": 456,
+  "estimatedFinish": "2026-10-22T07:10:55+00:00",
+  "estimateMinutes": 456
  },
- "lanes": [],
+ "lanes": [
+  {
+   "worker": "Claude",
+   "game": "shortest-law",
+   "task": "P1SL41_shortest law",
+   "since": "2026-10-21T23:32:51+00:00",
+   "activity": "2026-10-21T23:32:56+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "thirsty-clicks",
+   "task": "thirsty clicks propagation art",
+   "since": "2026-10-21T23:32:51+00:00",
+   "activity": "2026-10-21T23:32:51+00:00",
+   "commit": null
+  }
+ ],
  "codexLanes": 0,
- "claudeWorkers": 0,
+ "claudeWorkers": 2,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
   "runs": 34,
@@ -14249,7 +14266,7 @@
    ]
   },
   {
-   "nextTask": "Real-data pack: 8 levels in 4 themes (see...",
+   "nextTask": null,
    "costTotalUsd": 36.42,
    "latestChange": {
     "text": "P1SL40 part 1 live: HiDPI canvas (dpr cap 3, resize/rotate redraw, crisp hairlines). Data...",
@@ -14261,14 +14278,14 @@
    "title": "Shortest Law",
    "line": "",
    "url": "https://chenhsieh.github.io/shortest-law/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T05:07:40+00:00",
-   "lastChange": "2026-10-21T23:32:17+00:00",
+   "lastChange": "2026-10-21T23:32:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -14284,10 +14301,10 @@
    "tasks": [
     {
      "title": "P1SL41_shortest law",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Real-data pack: 8 levels in 4 themes (see done/P1SL40 result and the original P1SL40 text part 2)",
-     "since": "2026-10-21T23:32:17+00:00",
+     "since": "2026-10-21T23:32:51+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -14354,8 +14371,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 4
    },
@@ -17166,7 +17183,7 @@
    ]
   },
   {
-   "nextTask": "The greenhouse becomes a propagation tray where each...",
+   "nextTask": "Game-feel pass for thirsty-clicks using the shared juice...",
    "costTotalUsd": 18.0,
    "latestChange": {
     "text": "P1t20 smooth: result in view, sharp canvas, press feedback, counted clicks, hints; live",
@@ -17178,14 +17195,14 @@
    "title": "Thirsty Clicks",
    "line": "",
    "url": "https://chenhsieh.github.io/thirsty-clicks/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:19:46+00:00",
-   "lastChange": "2026-10-21T21:08:25+00:00",
+   "lastChange": "2026-10-21T23:32:51+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -17201,10 +17218,10 @@
    "tasks": [
     {
      "title": "thirsty clicks propagation art",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "The greenhouse becomes a propagation tray where each microphone punches its click count onto a nursery tag.",
-     "since": "2026-10-21T21:08:25+00:00",
+     "since": "2026-10-21T23:32:51+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -17243,8 +17260,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
