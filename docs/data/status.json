@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T23:43:39+00:00",
+ "generated": "2026-10-21T23:45:52+00:00",
  "ops": {
-  "count": 19,
+  "count": 20,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -31,47 +31,42 @@
    },
    "Claude": {
     "queued": 24,
-    "running": 2,
-    "doneToday": 43,
-    "minutes": 456,
-    "estimateMinutes": 456
+    "running": 1,
+    "doneToday": 44,
+    "minutes": 396,
+    "estimateMinutes": 396
    }
   },
   "queued": 24,
-  "running": 2,
-  "doneToday": 138,
+  "running": 1,
+  "doneToday": 139,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 456,
-  "estimatedFinish": "2026-10-22T07:19:39+00:00",
-  "estimateMinutes": 456
+  "minutesRemaining": 396,
+  "estimatedFinish": "2026-10-22T06:21:52+00:00",
+  "estimateMinutes": 396
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "shortest-law",
-   "task": "P1SL41_shortest law",
-   "since": "2026-10-21T23:32:51+00:00",
-   "activity": "2026-10-21T23:42:04+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "thirsty-clicks",
    "task": "thirsty clicks propagation art",
    "since": "2026-10-21T23:32:51+00:00",
-   "activity": "2026-10-21T23:32:51+00:00",
-   "commit": null
+   "activity": "2026-10-21T23:45:32+00:00",
+   "commit": {
+    "at": "2026-10-21T23:45:35+00:00",
+    "subject": "start: P1t21 propagation tray art"
+   }
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 34,
-  "usdEst": 122.4,
+  "runs": 35,
+  "usdEst": 126.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -109,7 +104,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 384
+   "changes": 385
   }
  ],
  "houseRules": 23,
@@ -14267,10 +14262,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 36.42,
+   "costTotalUsd": 40.02,
    "latestChange": {
-    "text": "P1SL40 part 1 live: HiDPI canvas (dpr cap 3, resize/rotate redraw, crisp hairlines). Data...",
-    "at": "2026-10-21T23:32:11+00:00"
+    "text": "P1SL41 live (main ): 8 real-data levels 7-14 (USGS quakes, NOAA tides, SWPC sunspots,...",
+    "at": "2026-10-21T23:45:26+00:00"
    },
    "promo": null,
    "id": "shortest-law",
@@ -14278,40 +14273,40 @@
    "title": "Shortest Law",
    "line": "",
    "url": "https://chenhsieh.github.io/shortest-law/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T05:07:40+00:00",
-   "lastChange": "2026-10-21T23:42:04+00:00",
+   "lastChange": "2026-10-21T23:45:26+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 0,
     "codexTokens": 347445,
     "codexUsdEst": 0.42,
-    "claudeUsdEst": 7.2,
+    "claudeUsdEst": 10.8,
     "earlierRounds": 8,
     "earlierUsdEst": 28.8,
-    "totalUsdEst": 36.42
+    "totalUsdEst": 40.02
    },
    "tasks": [
     {
      "title": "P1SL41_shortest law",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Real-data pack: 8 levels in 4 themes (see done/P1SL40 result and the original P1SL40 text part 2)",
-     "since": "2026-10-21T23:32:51+00:00",
-     "done": null,
+     "since": "2026-10-21T23:32:17+00:00",
+     "done": "2026-10-21T23:32:17+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "Live main : levels 7-14 real data in 5 themes (aftershocks, Pensacola tide, sunspot cycle 20, quake sizes, flood pulse, word counts, SF tide, sunspot cycle 21), easy to hard; sources+licences in docs/datapack.json,..."
     },
     {
      "title": "P1SL40_shortest law hires and real data",
@@ -14372,9 +14367,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": {
     "date": "2026-10-21",
@@ -14382,8 +14377,14 @@
     "note": "Fun; hi-res and deeper real-data levels"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-21T23:45:26+00:00",
+     "ok": true,
+     "note": "P1SL41 live (main ): 8 real-data levels 7-14 (USGS quakes, NOAA tides, SWPC sunspots, Gutenberg words, USGS river) with sources, licences, zh captions, solver table; greedy fails on 2, held-out trap on 2",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T23:32:11+00:00",
      "ok": true,
@@ -14449,12 +14450,6 @@
      "ok": true,
      "note": "Initial commit",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T05:07:40+00:00",
-     "ok": true,
-     "note": "NOT_DONE P2n02: acceptance unreachable on single-term levels 2-4 (greedy always finds the true term); see queue/done result",
-     "source": "board note"
     }
    ]
   },
@@ -17202,7 +17197,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:19:46+00:00",
-   "lastChange": "2026-10-21T23:32:51+00:00",
+   "lastChange": "2026-10-21T23:45:32+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -17227,7 +17222,10 @@
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T23:45:35+00:00",
+      "subject": "start: P1t21 propagation tray art"
+     },
      "result": ""
     },
     {
