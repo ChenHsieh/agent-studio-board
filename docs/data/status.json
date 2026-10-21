@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T23:30:33+00:00",
+ "generated": "2026-10-21T23:32:44+00:00",
  "ops": {
-  "count": 21,
+  "count": 22,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -30,40 +30,31 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 25,
-    "running": 1,
-    "doneToday": 42,
-    "minutes": 408,
-    "estimateMinutes": 408
+    "queued": 26,
+    "running": 0,
+    "doneToday": 43,
+    "minutes": 360,
+    "estimateMinutes": 360
    }
   },
-  "queued": 25,
-  "running": 1,
-  "doneToday": 137,
+  "queued": 26,
+  "running": 0,
+  "doneToday": 138,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 408,
-  "estimatedFinish": "2026-10-22T06:18:33+00:00",
-  "estimateMinutes": 408
+  "minutesRemaining": 360,
+  "estimatedFinish": "2026-10-22T05:32:44+00:00",
+  "estimateMinutes": 360
  },
- "lanes": [
-  {
-   "worker": "Claude",
-   "game": "shortest-law",
-   "task": "P1SL40_shortest law hires and real data",
-   "since": "2026-10-21T23:24:35+00:00",
-   "activity": "2026-10-21T23:30:33+00:00",
-   "commit": null
-  }
- ],
+ "lanes": [],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 0,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 33,
-  "usdEst": 118.8,
+  "runs": 34,
+  "usdEst": 122.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -101,7 +92,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 383
+   "changes": 384
   }
  ],
  "houseRules": 23,
@@ -14258,11 +14249,11 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 32.82,
+   "nextTask": "Real-data pack: 8 levels in 4 themes (see...",
+   "costTotalUsd": 36.42,
    "latestChange": {
-    "text": "P2PT07 3D proposal checked and revised (doc only): fitter dimension-free, 4095-subset...",
-    "at": "2026-10-21T19:46:52+00:00"
+    "text": "P1SL40 part 1 live: HiDPI canvas (dpr cap 3, resize/rotate redraw, crisp hairlines). Data...",
+    "at": "2026-10-21T23:32:11+00:00"
    },
    "promo": null,
    "id": "shortest-law",
@@ -14270,33 +14261,33 @@
    "title": "Shortest Law",
    "line": "",
    "url": "https://chenhsieh.github.io/shortest-law/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T05:07:40+00:00",
-   "lastChange": "2026-10-21T23:30:33+00:00",
+   "lastChange": "2026-10-21T23:32:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 347445,
     "codexUsdEst": 0.42,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 8,
     "earlierUsdEst": 28.8,
-    "totalUsdEst": 32.82
+    "totalUsdEst": 36.42
    },
    "tasks": [
     {
-     "title": "P1SL40_shortest law hires and real data",
-     "state": "running",
+     "title": "P1SL41_shortest law",
+     "state": "queued",
      "worker": "Claude",
-     "plan": "Shortest Law: high-resolution canvas and 8 harder levels in 4 themes from real-world data.",
-     "since": "2026-10-21T23:24:35+00:00",
+     "plan": "Real-data pack: 8 levels in 4 themes (see done/P1SL40 result and the original P1SL40 text part 2)",
+     "since": "2026-10-21T23:32:17+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -14304,6 +14295,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1SL40_shortest law hires and real data",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Shortest Law: high-resolution canvas and 8 harder levels in 4 themes from real-world data.",
+     "since": "2026-10-21T21:08:25+00:00",
+     "done": "2026-10-21T21:08:25+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Part 1 live (main ): crisp canvas at DPR 1/2/3, test/dpr.mjs. Part 2 (real-data pack, 8 levels, 4 themes) not started beyond a source check: USGS quakes, NOAA tides, NOAA SWPC sunspots, USGS NWIS rivers and Gutenberg..."
     },
     {
      "title": "P2PT10_shortest law calibration art",
@@ -14349,10 +14354,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": {
     "date": "2026-10-21",
@@ -14362,6 +14367,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T23:32:11+00:00",
+     "ok": true,
+     "note": "P1SL40 part 1 live: HiDPI canvas (dpr cap 3, resize/rotate redraw, crisp hairlines). Data pack (8 real-data levels) NOT done, re-queued",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T19:46:52+00:00",
      "ok": true,
