@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-21T14:04:50+00:00",
+ "generated": "2026-10-21T14:07:08+00:00",
  "ops": {
-  "count": 21,
+  "count": 20,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -25,39 +25,53 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 49,
-    "running": 1,
-    "doneToday": 65,
-    "minutes": 2000,
-    "estimateMinutes": 2000
+    "queued": 45,
+    "running": 3,
+    "doneToday": 66,
+    "minutes": 1920,
+    "estimateMinutes": 640
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 2,
     "doneToday": 8,
-    "minutes": 120,
-    "estimateMinutes": 120
+    "minutes": 180,
+    "estimateMinutes": 180
    }
   },
-  "queued": 50,
-  "running": 2,
-  "doneToday": 73,
+  "queued": 46,
+  "running": 5,
+  "doneToday": 74,
   "lanes": {
-   "Codex": 1,
+   "Codex": 3,
    "Claude": 1
   },
-  "minutesRemaining": 2120,
-  "estimatedFinish": "2026-10-22T23:24:50+00:00",
-  "estimateMinutes": 2000
+  "minutesRemaining": 2100,
+  "estimatedFinish": "2026-10-22T00:47:08+00:00",
+  "estimateMinutes": 640
  },
  "lanes": [
   {
    "worker": "Codex",
+   "game": "bluebook-guess",
+   "task": "P1BB60_bluebook polish share provenance ship",
+   "since": "2026-10-21T14:05:20+00:00",
+   "activity": "2026-10-21T14:07:03+00:00",
+   "commit": {
+    "at": "2026-10-21T14:05:23+00:00",
+    "subject": "start: P1BB60_bluebook-polish-share-provenance-ship"
+   }
+  },
+  {
+   "worker": "Codex",
    "game": "colony-count",
-   "task": "P1CC31_colony book sync leaf hat gaze",
-   "since": "2026-10-21T14:00:15+00:00",
-   "activity": "2026-10-21T14:02:16+00:00",
-   "commit": null
+   "task": "P1CC33_colony home plate tap to play",
+   "since": "2026-10-21T14:05:35+00:00",
+   "activity": "2026-10-21T14:07:05+00:00",
+   "commit": {
+    "at": "2026-10-21T14:05:37+00:00",
+    "subject": "start: P1CC33_colony-home-plate-tap-to-play"
+   }
   },
   {
    "worker": "Claude",
@@ -66,10 +80,29 @@
    "since": "2026-10-21T12:26:50+00:00",
    "activity": "2026-10-21T12:50:20+00:00",
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "flying-white",
+   "task": "P1FW40_flying white calligraphy expert research",
+   "since": "2026-10-21T14:05:38+00:00",
+   "activity": "2026-10-21T14:05:43+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Codex",
+   "game": "motif-hero",
+   "task": "P1HS40_hero suite matrix font howto",
+   "since": "2026-10-21T14:05:20+00:00",
+   "activity": "2026-10-21T14:07:07+00:00",
+   "commit": {
+    "at": "2026-10-21T14:05:22+00:00",
+    "subject": "start: P1HS40_hero-suite-matrix-font-howto"
+   }
   }
  ],
- "codexLanes": 1,
- "claudeWorkers": 1,
+ "codexLanes": 3,
+ "claudeWorkers": 2,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -106,7 +139,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 233
+   "changes": 234
   }
  ],
  "houseRules": 23,
@@ -1232,14 +1265,14 @@
    "title": "Bluebook Guess",
    "line": "Place a US Air Force case file in time and place.",
    "url": "https://chenhsieh.github.io/bluebook-guess/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Very close to shipping; the formula for the other games",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/bluebook-guess-1.webp",
    "firstSeen": "2026-09-20T20:57:49+00:00",
-   "lastChange": "2026-10-21T14:04:46+00:00",
+   "lastChange": "2026-10-21T14:07:03+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -1255,16 +1288,19 @@
    "tasks": [
     {
      "title": "P1BB60_bluebook polish share provenance ship",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Blue Book Guess: fix the peel and layout, better share text, direct source links, ship at P1.",
-     "since": "2026-10-21T14:04:46+00:00",
+     "since": "2026-10-21T14:05:20+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T14:05:23+00:00",
+      "subject": "start: P1BB60_bluebook-polish-share-provenance-ship"
+     },
      "result": ""
     },
     {
@@ -1325,8 +1361,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 4
    },
@@ -1751,46 +1787,35 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-21T14:02:16+00:00",
+   "lastChange": "2026-10-21T14:07:05+00:00",
    "cost": {
     "apiUsd": 22.88,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 15,
     "apiRuns": 8,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 150492,
+    "codexUsdEst": 0.18,
     "claudeUsdEst": 54.0,
     "earlierRounds": 25,
     "earlierUsdEst": 90.0,
-    "totalUsdEst": 166.88
+    "totalUsdEst": 167.06
    },
    "tasks": [
     {
-     "title": "P1CC31_colony book sync leaf hat gaze",
+     "title": "P1CC33_colony home plate tap to play",
      "state": "running",
      "worker": "Codex",
-     "plan": "Colony Count: sync the Book with game unlocks, add a round leaf hat, smooth gaze and pointer-responsive colonies.",
-     "since": "2026-10-21T14:00:15+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P1CC33_colony home plate tap to play",
-     "state": "queued",
-     "worker": "Codex",
      "plan": "Colony Count: tapping the home plate or its date tag starts today at the default difficulty.",
-     "since": "2026-10-21T13:27:18+00:00",
+     "since": "2026-10-21T14:05:35+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T14:05:37+00:00",
+      "subject": "start: P1CC33_colony-home-plate-tap-to-play"
+     },
      "result": ""
     },
     {
@@ -1806,6 +1831,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1CC31_colony book sync leaf hat gaze",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "Colony Count: sync the Book with game unlocks, add a round leaf hat, smooth gaze and pointer-responsive colonies.",
+     "since": "2026-10-21T13:50:51+00:00",
+     "done": "2026-10-21T13:50:51+00:00",
+     "reviewed": false,
+     "minutes": 9,
+     "tokens": 150492,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "feat: keep earned characters in sync and add a leaf hat with responsive eyes"
     },
     {
      "title": "colony character maker",
@@ -1879,10 +1918,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 1,
     "running": 1,
     "waitingDesign": 0,
-    "done": 23
+    "done": 24
    },
    "verdict": {
     "date": "2026-10-20",
@@ -1892,6 +1931,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-21T14:05:35+00:00",
+     "ok": true,
+     "note": "feat: keep earned characters in sync and add a leaf hat with responsive eyes",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T14:02:16+00:00",
      "ok": true,
@@ -1957,12 +2002,6 @@
      "ok": true,
      "note": "feat: a character maker, and hats that fit every resident",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T03:20:39+00:00",
-     "ok": true,
-     "note": "Incubator and Round dish redrawn: night band, stepwise night on the same plate, true rim, missing neighbours drawn (live , studies still hidden)",
-     "source": "board note"
     }
    ]
   },
@@ -4682,14 +4721,14 @@
    "title": "Flying White",
    "line": "",
    "url": "https://chenhsieh.github.io/flying-white/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Higher priority: real rubbing sources, hilarious teacher, growth, free writing",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T05:18:25+00:00",
-   "lastChange": "2026-10-21T14:03:26+00:00",
+   "lastChange": "2026-10-21T14:05:43+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -4705,10 +4744,10 @@
    "tasks": [
     {
      "title": "P1FW40_flying white calligraphy expert research",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Flying White step 1: a calligraphy expert's deep research on writing one word many ways and its martial-art idea, featuring seal script.",
-     "since": "2026-10-21T14:03:26+00:00",
+     "since": "2026-10-21T14:05:38+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -4747,8 +4786,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
@@ -9289,14 +9328,14 @@
    "title": "Motif Hero",
    "line": "Set the bar to how common each column's top letter is.",
    "url": "https://chenhsieh.github.io/motif-hero/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/motif-hero-1.webp",
    "firstSeen": "2026-08-29T04:14:46+00:00",
-   "lastChange": "2026-10-21T13:57:17+00:00",
+   "lastChange": "2026-10-21T14:07:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -9312,16 +9351,19 @@
    "tasks": [
     {
      "title": "P1HS40_hero suite matrix font howto",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Hero games: a light matrix background, a more legible body font, lower density and how-to first.",
-     "since": "2026-10-21T13:57:17+00:00",
+     "since": "2026-10-21T14:05:20+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-21T14:05:22+00:00",
+      "subject": "start: P1HS40_hero-suite-matrix-font-howto"
+     },
      "result": ""
     },
     {
@@ -9396,8 +9438,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 5
    },
