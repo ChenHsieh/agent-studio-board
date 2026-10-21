@@ -1,10 +1,9 @@
 {
- "generated": "2026-10-21T10:21:40+00:00",
+ "generated": "2026-10-21T10:23:52+00:00",
  "ops": {
   "count": 22,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
-   "A running task has shown no progress for over 3 hours.",
    "A status note names something that is not a game.",
    "A task waits for a task that does not exist.",
    "Two tasks share the number P1c09."
@@ -12,7 +11,6 @@
  },
  "about": [
   "A game changed in the last hour with no claimed task on it.",
-  "A running task has shown no progress for over 3 hours.",
   "A status note names something that is not a game.",
   "A task waits for a task that does not exist.",
   "Two tasks share the number P1c09."
@@ -27,51 +25,34 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 35,
+    "queued": 37,
     "running": 0,
     "doneToday": 60,
-    "minutes": 1400,
-    "estimateMinutes": 1400
+    "minutes": 1480,
+    "estimateMinutes": 1480
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
+    "running": 0,
     "doneToday": 5,
-    "minutes": 180,
-    "estimateMinutes": 180
+    "minutes": 60,
+    "estimateMinutes": 60
    }
   },
-  "queued": 36,
-  "running": 2,
+  "queued": 38,
+  "running": 0,
   "doneToday": 65,
   "lanes": {
    "Codex": 1,
    "Claude": 1
   },
-  "minutesRemaining": 1580,
-  "estimatedFinish": "2026-10-22T09:41:40+00:00",
-  "estimateMinutes": 1400
+  "minutesRemaining": 1540,
+  "estimatedFinish": "2026-10-22T11:03:52+00:00",
+  "estimateMinutes": 1480
  },
- "lanes": [
-  {
-   "worker": "Claude",
-   "game": "chai-boil",
-   "task": "P1CB04_chai cute style pass",
-   "since": "2026-10-21T10:13:33+00:00",
-   "activity": "2026-10-21T10:21:25+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "glasshouse",
-   "task": "glasshouse onboarding menu",
-   "since": "2026-10-21T10:13:42+00:00",
-   "activity": "2026-10-21T10:13:47+00:00",
-   "commit": null
-  }
- ],
+ "lanes": [],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 0,
  "apiSpentUsd": 304.56,
  "rates": {
   "codexUsdPerMTok": 1.2,
@@ -1394,14 +1375,14 @@
    "title": "Chai Boil",
    "line": "One pot, one dial: let the chai rise to the rim, not over it.",
    "url": "https://chenhsieh.github.io/chai-boil/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Steadier dial (keys on desktop), a forgiving golden zone, a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/chai-boil-1.webp",
    "firstSeen": "2026-10-16T01:49:44+00:00",
-   "lastChange": "2026-10-21T10:21:25+00:00",
+   "lastChange": "2026-10-21T05:46:58+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 5,
@@ -1417,10 +1398,10 @@
    "tasks": [
     {
      "title": "P1CB04_chai cute style pass",
-     "state": "running",
-     "worker": "Claude",
+     "state": "queued",
+     "worker": "Codex",
      "plan": "Chai Boil: a pot with a face that reacts to the foam, paper-cut steam and regulars, and Traditional Chinese text.",
-     "since": "2026-10-21T10:13:33+00:00",
+     "since": "2026-10-21T03:09:54+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1529,8 +1510,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 1,
+    "queued": 3,
+    "running": 0,
     "waitingDesign": 0,
     "done": 7
    },
@@ -5340,14 +5321,14 @@
    "title": "Glasshouse",
    "line": "Lead a line of students through a greenhouse.",
    "url": "https://chenhsieh.github.io/glasshouse/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Decide the best public role for a finished personal game",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/glasshouse-1.webp",
    "firstSeen": "2026-08-09T03:37:06+00:00",
-   "lastChange": "2026-10-21T10:13:47+00:00",
+   "lastChange": "2026-10-21T01:01:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -5363,10 +5344,10 @@
    "tasks": [
     {
      "title": "glasshouse onboarding menu",
-     "state": "running",
-     "worker": "Claude",
+     "state": "queued",
+     "worker": "Codex",
      "plan": "Give Glasshouse a proper start screen and first-run onboarding.",
-     "since": "2026-10-21T10:13:42+00:00",
+     "since": "2026-10-21T01:01:56+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -5377,8 +5358,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
     "done": 0
    },
