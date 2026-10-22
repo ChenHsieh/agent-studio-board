@@ -1,5 +1,5 @@
 {
- "generated": 1792704142,
+ "generated": 1792704303,
  "defaultPercentPerCodexTask": 0.25,
  "tasks": [
   {
@@ -87,6 +87,23 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P2FM21_hit-or-kit-first-minute",
+   "request": "Hit or Kit: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+   "game": "Hit or Kit",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "first-minute",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "running",
+   "at": 1792704203,
+   "created": 1792704203,
+   "estPercentOfWeek": 0.25
+  },
+  {
    "id": "P2FM26_tractatus-tree-first-minute",
    "request": "Tractatus Tree: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
    "game": "Tractatus Tree",
@@ -138,22 +155,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P3OR14_one-script-engine-test",
-   "request": "One Script: add a test for the generator, moves and solver replay (OpenRouter lane)",
-   "game": "One Script",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "running",
-   "at": 1792703790,
-   "created": 1792703790
-  },
-  {
    "id": "P3OR15_nobody-looking-engine-test",
    "request": "Nobody Looking: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
    "game": "Nobody Looking",
@@ -189,6 +190,22 @@
    "id": "P3OR19_radish-omelette-engine-test",
    "request": "Radish Omelette: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
    "game": "Radish Omelette",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "running",
+   "at": 1792703790,
+   "created": 1792703790
+  },
+  {
+   "id": "P3OR20_morning-three-engine-test",
+   "request": "Morning Three: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
+   "game": "Morning Three",
    "route": "OpenRouter",
    "model": "deepseek-v4-flash",
    "effort": "default",
@@ -251,6 +268,25 @@
    "state": "running",
    "at": 1792703593,
    "created": 1792703593,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P1PQ00_play-these-today-page",
+   "request": "A Play these today page on the studio board: up to three games, what to try in each, and one-tap ship, revise or shelf",
+   "game": "Studio",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1BD01_board-queue-requests-and-codex-quota-eta"
+   ],
+   "priority": null,
+   "state": "running",
+   "at": 1792704158,
+   "created": 1792704158,
    "estPercentOfWeek": 0.25
   },
   {
@@ -371,22 +407,6 @@
    "waitingOn": [],
    "created": 1792700851,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P3OR20_morning-three-engine-test",
-   "request": "Morning Three: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
-   "game": "Morning Three",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792703790
   },
   {
    "id": "P3OR21_copy-drift-engine-test",
@@ -1948,6 +1968,22 @@
    "id": "P3OR13_blackout-notice-engine-test",
    "request": "Blackout Notice: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
    "game": "Blackout Notice",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "done",
+   "at": 1792703790,
+   "created": 1792703790
+  },
+  {
+   "id": "P3OR14_one-script-engine-test",
+   "request": "One Script: add a test for the generator, moves and solver replay (OpenRouter lane)",
+   "game": "One Script",
    "route": "OpenRouter",
    "model": "deepseek-v4-flash",
    "effort": "default",
