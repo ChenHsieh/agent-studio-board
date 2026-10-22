@@ -1,5 +1,5 @@
 {
- "generated": 1792711596,
+ "generated": 1792711974,
  "defaultPercentPerCodexTask": 0.25,
  "tasks": [
   {
@@ -19,23 +19,6 @@
    "state": "running",
    "at": 1792709803,
    "created": 1792709803
-  },
-  {
-   "id": "P1MH56_print-hero-and-card-sizes",
-   "request": "Mirror Hold: show the client's print as a wide sharp strip with a readable card below, and the whole print on tap",
-   "game": "Mirror Hold",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "state": "running",
-   "at": 1792710002,
-   "created": 1792710002,
-   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2FM37_peony-dream-first-minute",
@@ -174,12 +157,50 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P2n65_review-one-thread-and-pigeon-salon",
+   "request": "Stranger play-through and ship-or-revise call for two new games",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2n57_one-thread",
+    "P2n58_pigeon-salon"
+   ],
+   "priority": null,
+   "state": "running",
+   "at": 1792691826,
+   "created": 1792691826
+  },
+  {
+   "id": "P2n66_review-herbal-of-nowhere-and-blackout-notice",
+   "request": "Stranger play-through and ship-or-revise call for two new games",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2n59_herbal-of-nowhere",
+    "P2n60_blackout-notice"
+   ],
+   "priority": null,
+   "state": "running",
+   "at": 1792691830,
+   "created": 1792691830
+  },
+  {
    "id": "P3OR11_fold-guess-test-retry",
    "request": "Fold Guess: add the helper test again (first try wrote an empty file)",
    "game": "Fold Guess",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
+   "route": "OpenRouter",
+   "model": "openrouter/openai/gpt-4.1",
+   "effort": "default",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
@@ -187,8 +208,7 @@
    "priority": "P1",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792704353,
-   "estPercentOfWeek": 0.25
+   "created": 1792711669
   },
   {
    "id": "P2FM51_one-thread-first-minute-fix",
@@ -313,9 +333,9 @@
    "id": "P3OR18_restored-engine-test",
    "request": "Restored: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
    "game": "Restored",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
+   "route": "OpenRouter",
+   "model": "openrouter/openai/gpt-4.1",
+   "effort": "default",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
@@ -323,16 +343,15 @@
    "priority": "P2",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792704818,
-   "estPercentOfWeek": 0.25
+   "created": 1792711669
   },
   {
    "id": "P3OR21_copy-drift-engine-test",
    "request": "Copy Drift: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
    "game": "Copy Drift",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
+   "route": "OpenRouter",
+   "model": "openrouter/openai/gpt-4.1",
+   "effort": "default",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
@@ -340,33 +359,15 @@
    "priority": "P2",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792704982,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2n37_thin-walls-proto",
-   "request": "Thin Walls (薄牆): build the core (Codex)",
-   "game": "Thin Walls",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P3",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792700999,
-   "estPercentOfWeek": 0.25
+   "created": 1792711669
   },
   {
    "id": "P3OR12_herbarium-guess-test-retry",
    "request": "Herbarium Guess: add the helper test again (first try wrote an empty file)",
    "game": "Herbarium Guess",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
+   "route": "OpenRouter",
+   "model": "openrouter/openai/gpt-4.1",
+   "effort": "default",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
@@ -374,8 +375,7 @@
    "priority": "P3",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792704408,
-   "estPercentOfWeek": 0.25
+   "created": 1792711669
   },
   {
    "id": "P3d35_lens-screen-studio-320-fix",
@@ -480,197 +480,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P2n102_three-shadows",
-   "request": "Three Shadows (三影): new game",
-   "game": "Three Shadows",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792700999,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2n103_literal-spirit",
-   "request": "Literal Spirit (一板一眼): new game; write the cheapest paper charm so a literal-minded spirit fetches the peach without breaking anything.",
-   "game": "Literal Spirit",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792700999,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2n109_one-more-chair",
-   "request": "New game 多一張椅子 One More Chair: regulars walk the same loops round a waiting room; place one chair so nobody bumps all day. Core with placeholder shapes and its first-minute round, solver par, phone tests, publish",
-   "game": "One More Chair",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792705126,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2n27_guide-lines-proto",
-   "request": "Guide Lines (輔助線): build the core (Codex) from the finished brief; draw the fewest red guide lines so every stroke of a machine drawing starts and ends where two guides cross.",
-   "game": "Guide Lines",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792700979,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2n28_crushed-can-proto",
-   "request": "Can Lantern (罐子燈): build the core (Codex)",
-   "game": "Crushed Can",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792701648,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2n33_no-favorites-proto",
-   "request": "No Favorites (不偏心): build the core (Codex); pull silkworms out of a tangle one free end at a time so every nest ends with the same number.",
-   "game": "No Favorites",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792700979,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2n35_drum-rule-proto",
-   "request": "Drum Rule (禁鼓令): build the core (Codex); pick a few place-words for the no-drums rule so every reader gets quiet and the drum troupe keeps its spots.",
-   "game": "Drum Rule",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792700979,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2n39_gift-tins-proto",
-   "request": "Gift Tins (回禮): build the core (Codex); on New Year's Eve leave each relative a tin worth what they gave last year, never their own, home by six.",
-   "game": "Gift Tins",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792701000,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2n40_whiteboard-song-proto",
-   "request": "Whiteboard Song (白板點播): build the core (Codex); copy a tune by ear or pass the board on.",
-   "game": "Whiteboard Song",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792701000,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2n65_review-one-thread-and-pigeon-salon",
-   "request": "Stranger play-through and ship-or-revise call for two new games",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2n57_one-thread",
-    "P2n58_pigeon-salon"
-   ],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792691826
-  },
-  {
-   "id": "P2n66_review-herbal-of-nowhere-and-blackout-notice",
-   "request": "Stranger play-through and ship-or-revise call for two new games",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2n59_herbal-of-nowhere",
-    "P2n60_blackout-notice"
-   ],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792691830
-  },
-  {
    "id": "P2n67_review-radish-omelette-and-not-yet",
    "request": "Stranger play-through and ship-or-revise call for two new games",
    "game": "Studio",
@@ -688,23 +497,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792691834
-  },
-  {
-   "id": "P2n69_sounds-like",
-   "request": "Sounds Like (諧音梯): build the core (Codex); turn one word into another by swapping one character at a time for one that sounds the same.",
-   "game": "Sounds Like",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792701000,
-   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2n77_review-own-ground-restored-and-same-badge",
@@ -848,116 +640,6 @@
     "P2n96_ac-remote"
    ],
    "created": 1792700701
-  },
-  {
-   "id": "P2n104_review-thin-walls-and-gift-tins",
-   "request": "Review two new games cold, Thin Walls and Gift Tins: play them as a stranger and decide ship, revise or shelf.",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2n37_thin-walls-proto",
-    "P2n39_gift-tins-proto"
-   ],
-   "priority": null,
-   "state": "waiting",
-   "waitingOn": [
-    "P2n37_thin-walls-proto",
-    "P2n39_gift-tins-proto"
-   ],
-   "created": 1792700888
-  },
-  {
-   "id": "P2n105_review-whiteboard-song-and-crushed-can",
-   "request": "Review two new games cold, Whiteboard Song and Can Lantern: play them as a stranger and decide ship, revise or shelf.",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2n40_whiteboard-song-proto",
-    "P2n28_crushed-can-proto"
-   ],
-   "priority": null,
-   "state": "waiting",
-   "waitingOn": [
-    "P2n40_whiteboard-song-proto",
-    "P2n28_crushed-can-proto"
-   ],
-   "created": 1792701648
-  },
-  {
-   "id": "P2n106_review-literal-spirit-and-sounds-like",
-   "request": "Review two new games cold, Literal Spirit and Sounds Like: play them as a stranger and decide ship, revise or shelf.",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2n103_literal-spirit",
-    "P2n69_sounds-like"
-   ],
-   "priority": null,
-   "state": "waiting",
-   "waitingOn": [
-    "P2n103_literal-spirit",
-    "P2n69_sounds-like"
-   ],
-   "created": 1792700893
-  },
-  {
-   "id": "P2n107_review-guide-lines-and-no-favorites",
-   "request": "Review two new games cold, Guide Lines and No Favorites: play them as a stranger and decide ship, revise or shelf.",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2n27_guide-lines-proto",
-    "P2n33_no-favorites-proto"
-   ],
-   "priority": null,
-   "state": "waiting",
-   "waitingOn": [
-    "P2n27_guide-lines-proto",
-    "P2n33_no-favorites-proto"
-   ],
-   "created": 1792700883
-  },
-  {
-   "id": "P2n108_review-drum-rule-and-three-shadows",
-   "request": "Review two new games cold, Drum Rule and Three Shadows: play them as a stranger and decide ship, revise or shelf.",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2n35_drum-rule-proto",
-    "P2n102_three-shadows"
-   ],
-   "priority": null,
-   "state": "waiting",
-   "waitingOn": [
-    "P2n35_drum-rule-proto",
-    "P2n102_three-shadows"
-   ],
-   "created": 1792700886
   },
   {
    "id": "P2n87_coin-dumplings",
