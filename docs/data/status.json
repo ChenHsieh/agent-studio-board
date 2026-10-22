@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T18:48:54+00:00",
+ "generated": "2026-10-22T18:51:27+00:00",
  "ops": {
   "count": 23,
   "notes": [
@@ -30,23 +30,23 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 13,
-    "running": 4,
+    "queued": 12,
+    "running": 5,
     "doneToday": 28,
-    "minutes": 444,
-    "estimateMinutes": 444
+    "minutes": 492,
+    "estimateMinutes": 492
    }
   },
-  "queued": 13,
-  "running": 4,
+  "queued": 12,
+  "running": 5,
   "doneToday": 29,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 444,
-  "estimatedFinish": "2026-10-23T02:12:54+00:00",
-  "estimateMinutes": 444
+  "minutesRemaining": 492,
+  "estimatedFinish": "2026-10-23T03:03:27+00:00",
+  "estimateMinutes": 492
  },
  "lanes": [
   {
@@ -67,15 +67,31 @@
   },
   {
    "worker": "Claude",
+   "game": "one-thread",
+   "task": "one thread",
+   "since": "2026-10-22T18:48:55+00:00",
+   "activity": "2026-10-22T18:50:37+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
    "game": "Multiple games",
    "task": "review copy drift and even water",
    "since": null,
    "activity": null,
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "restored",
+   "task": "restored",
+   "since": "2026-10-22T18:49:39+00:00",
+   "activity": "2026-10-22T18:51:14+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 3,
+ "claudeWorkers": 5,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
   "runs": 89,
@@ -12045,6 +12061,79 @@
   },
   {
    "nextTask": null,
+   "costTotalUsd": 7.2,
+   "latestChange": {
+    "text": "feat: One Thread starts from the Play Lab game template",
+    "at": "2026-10-22T18:50:37+00:00"
+   },
+   "promo": null,
+   "id": "one-thread",
+   "repo": "one-thread",
+   "title": "One Thread",
+   "line": "",
+   "url": "https://chenhsieh.github.io/one-thread/",
+   "stage": "building",
+   "who": "Claude",
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "firstSeen": "2026-10-22T18:48:55+00:00",
+   "lastChange": "2026-10-22T18:50:37+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 0.0,
+    "earlierRounds": 2,
+    "earlierUsdEst": 7.2,
+    "totalUsdEst": 7.2
+   },
+   "tasks": [
+    {
+     "title": "one thread",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "New game: sew a book's binding pattern in one continuous thread",
+     "since": "2026-10-22T18:48:55+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "taskCounts": {
+    "queued": 0,
+    "running": 1,
+    "waitingDesign": 0,
+    "done": 0
+   },
+   "verdict": null,
+   "needsYou": null,
+   "inProgress": true,
+   "history": [
+    {
+     "at": "2026-10-22T18:50:37+00:00",
+     "ok": true,
+     "note": "feat: One Thread starts from the Play Lab game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T18:49:12+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
+    }
+   ]
+  },
+  {
+   "nextTask": null,
    "costTotalUsd": 61.49,
    "latestChange": {
     "text": "feat: turn Orbit Rings into Llull wheels",
@@ -13708,6 +13797,79 @@
      "ok": true,
      "note": "hint costs 1 (new mark ◩), giving up scores a full marker, older quiz deals rounds independently; exploit replay: hint spam +0->+10, give-up-all +78 vs honest +5, elimination 22% vs random 23%; live ; ink-stays rule NOT shipped (needs playtest)",
      "source": "board note"
+    }
+   ]
+  },
+  {
+   "nextTask": null,
+   "costTotalUsd": 7.2,
+   "latestChange": {
+    "text": "feat: Restored starts from the Play Lab game template",
+    "at": "2026-10-22T18:51:14+00:00"
+   },
+   "promo": null,
+   "id": "restored",
+   "repo": "restored",
+   "title": "Restored",
+   "line": "",
+   "url": "https://chenhsieh.github.io/restored/",
+   "stage": "building",
+   "who": "Claude",
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "firstSeen": "2026-10-22T18:49:39+00:00",
+   "lastChange": "2026-10-22T18:51:14+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 0.0,
+    "earlierRounds": 2,
+    "earlierUsdEst": 7.2,
+    "totalUsdEst": 7.2
+   },
+   "tasks": [
+    {
+     "title": "restored",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "New game: restore a blurry photo five taps at a time; each patch becomes what its neighbours became",
+     "since": "2026-10-22T18:49:39+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "taskCounts": {
+    "queued": 0,
+    "running": 1,
+    "waitingDesign": 0,
+    "done": 0
+   },
+   "verdict": null,
+   "needsYou": null,
+   "inProgress": true,
+   "history": [
+    {
+     "at": "2026-10-22T18:51:14+00:00",
+     "ok": true,
+     "note": "feat: Restored starts from the Play Lab game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T18:49:51+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
     }
    ]
   },
