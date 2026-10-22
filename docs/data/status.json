@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-22T04:09:21+00:00",
+ "generated": "2026-10-22T04:11:33+00:00",
  "ops": {
-  "count": 21,
+  "count": 20,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A running task has shown no progress for over 3 hours.",
@@ -32,31 +32,31 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 15,
+    "queued": 16,
     "running": 1,
     "doneToday": 0,
-    "minutes": 288,
-    "estimateMinutes": 288
+    "minutes": 300,
+    "estimateMinutes": 300
    }
   },
-  "queued": 15,
+  "queued": 16,
   "running": 1,
   "doneToday": 0,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 288,
-  "estimatedFinish": "2026-10-22T08:57:21+00:00",
-  "estimateMinutes": 288
+  "minutesRemaining": 300,
+  "estimatedFinish": "2026-10-22T09:11:33+00:00",
+  "estimateMinutes": 300
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "seed-spiral",
-   "task": "P2SS50_seed spiral game core study",
-   "since": "2026-10-22T04:02:45+00:00",
-   "activity": "2026-10-22T04:02:45+00:00",
+   "game": "slice-and-bake",
+   "task": "P2SB50_slice and bake core study",
+   "since": "2026-10-22T04:10:40+00:00",
+   "activity": "2026-10-22T04:10:40+00:00",
    "commit": null
   }
  ],
@@ -64,8 +64,8 @@
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 50,
-  "usdEst": 180.0,
+  "runs": 51,
+  "usdEst": 183.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -107,7 +107,7 @@
   },
   {
    "day": "2026-10-22",
-   "changes": 1
+   "changes": 2
   }
  ],
  "houseRules": 23,
@@ -13884,11 +13884,11 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 25.2,
+   "nextTask": "Write a short growth recipe, press Grow, and...",
+   "costTotalUsd": 28.8,
    "latestChange": {
-    "text": "P2PT02 flowers live: 12 flowers, frost, pace ring, win/loss cards, menu, daily (main )",
-    "at": "2026-10-21T09:46:19+00:00"
+    "text": "P2SS50 core study: recipe-then-grow core with orders from the real sunflower count;...",
+    "at": "2026-10-22T04:10:40+00:00"
    },
    "promo": null,
    "id": "seed-spiral",
@@ -13896,33 +13896,33 @@
    "title": "Seed Spiral",
    "line": "Grow a sunflower and count its spirals.",
    "url": "https://chenhsieh.github.io/seed-spiral/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Claude",
    "priority": "P4",
    "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/seed-spiral-1.webp",
    "firstSeen": "2026-10-14T16:39:45+00:00",
-   "lastChange": "2026-10-22T04:02:45+00:00",
+   "lastChange": "2026-10-22T04:10:40+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 6,
     "earlierUsdEst": 21.6,
-    "totalUsdEst": 25.2
+    "totalUsdEst": 28.8
    },
    "tasks": [
     {
-     "title": "P2SS50_seed spiral game core study",
-     "state": "running",
+     "title": "P2SS51_seed spiral recipe core",
+     "state": "queued",
      "worker": "Claude",
-     "plan": "Seed Spiral: a game core study so the point of the game is clear.",
-     "since": "2026-10-22T04:02:45+00:00",
+     "plan": "Write a short growth recipe, press Grow, and get the head the order asks for",
+     "since": "2026-10-22T04:10:40+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -13930,6 +13930,34 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2SS52_seed spiral orders count sheet",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "Twelve orders, a daily order and a count sheet that sits next to the real sunflower count",
+     "since": "2026-10-22T04:10:40+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P2SS50_seed spiral game core study",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Seed Spiral: a game core study so the point of the game is clear.",
+     "since": "2026-10-21T21:08:25+00:00",
+     "done": "2026-10-21T21:08:25+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "design: seed-spiral core study: BUILD write a growth recipe, then watch the plant answer; orders from a real sunflower count replace the \"slide to a number\" goal"
     },
     {
      "title": "P2PT02_seed spiral goal",
@@ -13947,10 +13975,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 2,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": {
     "date": "2026-10-21",
@@ -13960,6 +13988,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-22T04:10:40+00:00",
+     "ok": true,
+     "note": "P2SS50 core study: recipe-then-grow core with orders from the real sunflower count; builds P2SS51_seed-spiral-recipe-core, P2SS52_seed-spiral-orders-count-sheet queued",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T09:46:19+00:00",
      "ok": true,
@@ -15389,7 +15423,7 @@
    ]
   },
   {
-   "nextTask": "Slice and Bake: a game core study with...",
+   "nextTask": null,
    "costTotalUsd": 61.69,
    "latestChange": {
     "text": "feat:",
@@ -15401,14 +15435,14 @@
    "title": "Slice and Bake",
    "line": "Move dough before each cut to match the next slice.",
    "url": "https://chenhsieh.github.io/slice-and-bake/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Make cutting and adjusting legible; refresh the visual",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/slice-and-bake-1.webp",
    "firstSeen": "2026-10-14T23:17:56+00:00",
-   "lastChange": "2026-10-21T21:08:25+00:00",
+   "lastChange": "2026-10-22T04:10:40+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -15424,10 +15458,10 @@
    "tasks": [
     {
      "title": "P2SB50_slice and bake core study",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Slice and Bake: a game core study with a clear puzzle, a story and a lighter interface.",
-     "since": "2026-10-21T21:08:25+00:00",
+     "since": "2026-10-22T04:10:40+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -15480,8 +15514,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
