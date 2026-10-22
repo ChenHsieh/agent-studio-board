@@ -1,15 +1,17 @@
 {
- "generated": "2026-10-22T02:21:42+00:00",
+ "generated": "2026-10-22T02:23:53+00:00",
  "ops": {
-  "count": 20,
+  "count": 23,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
+   "A running task has shown no progress for over 3 hours.",
    "A status note names something that is not a game.",
    "Two tasks share the number P1c09."
   ]
  },
  "about": [
   "A game changed in the last hour with no claimed task on it.",
+  "A running task has shown no progress for over 3 hours.",
   "A status note names something that is not a game.",
   "Two tasks share the number P1c09."
  ],
@@ -30,31 +32,48 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 19,
-    "running": 0,
-    "doneToday": 51,
-    "minutes": 276,
-    "estimateMinutes": 276
+    "queued": 16,
+    "running": 2,
+    "doneToday": 52,
+    "minutes": 360,
+    "estimateMinutes": 360
    }
   },
-  "queued": 19,
-  "running": 0,
-  "doneToday": 146,
+  "queued": 16,
+  "running": 2,
+  "doneToday": 147,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 276,
-  "estimatedFinish": "2026-10-22T06:57:42+00:00",
-  "estimateMinutes": 276
+  "minutesRemaining": 360,
+  "estimatedFinish": "2026-10-22T08:23:53+00:00",
+  "estimateMinutes": 360
  },
- "lanes": [],
+ "lanes": [
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "checking desk proto",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "name to carry proto",
+   "since": null,
+   "activity": null,
+   "commit": null
+  }
+ ],
  "codexLanes": 0,
- "claudeWorkers": 0,
+ "claudeWorkers": 2,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 42,
-  "usdEst": 151.2,
+  "runs": 43,
+  "usdEst": 154.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -92,7 +111,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 392
+   "changes": 393
   }
  ],
  "houseRules": 23,
@@ -250,11 +269,11 @@
    ]
   },
   {
-   "nextTask": "alias loaf gradual",
-   "costTotalUsd": 39.6,
+   "nextTask": null,
+   "costTotalUsd": 43.2,
    "latestChange": {
-    "text": "see",
-    "at": "2026-10-21T06:01:21+00:00"
+    "text": "Q2u gradual ladder live: 1-goal first screen, auto-test sieve; stale browser tests...",
+    "at": "2026-10-22T02:22:36+00:00"
    },
    "promo": null,
    "id": "alias-loaf",
@@ -262,34 +281,34 @@
    "title": "Alias Loaf",
    "line": "Set the cutter to catch one seed family.",
    "url": "https://chenhsieh.github.io/alias-loaf/",
-   "stage": "queued",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Introduce the mechanics one at a time and give the player a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/alias-loaf-1.webp",
    "firstSeen": "2026-10-14T23:09:53+00:00",
-   "lastChange": "2026-10-21T06:20:20+00:00",
+   "lastChange": "2026-10-22T02:22:44+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 11,
     "earlierUsdEst": 39.6,
-    "totalUsdEst": 39.6
+    "totalUsdEst": 43.2
    },
    "tasks": [
     {
      "title": "alias loaf gradual",
-     "state": "queued",
+     "state": "done",
      "worker": "Claude",
      "plan": "",
-     "since": "2026-10-21T06:20:20+00:00",
-     "done": null,
+     "since": "2026-10-22T02:22:44+00:00",
+     "done": "2026-10-22T02:22:44+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -313,15 +332,21 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": null,
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-22T02:22:36+00:00",
+     "ok": true,
+     "note": "Q2u gradual ladder live: 1-goal first screen, auto-test sieve; stale browser tests replaced",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T06:01:21+00:00",
      "ok": false,
@@ -386,12 +411,6 @@
      "at": "2026-10-14T23:19:56+00:00",
      "ok": true,
      "note": "step 2: Step 2: twelve levels, hints, map [page: index.html]",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-14T23:09:53+00:00",
-     "ok": true,
-     "note": "step 1: Step 1: the first playable [page: index.html]",
      "source": "main commit"
     }
    ]
@@ -16669,7 +16688,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/the-folder-1.webp",
    "firstSeen": "2026-10-15T04:47:38+00:00",
-   "lastChange": "2026-10-21T21:08:25+00:00",
+   "lastChange": "2026-10-22T02:23:10+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -16688,7 +16707,7 @@
      "state": "queued",
      "worker": "Claude",
      "plan": "",
-     "since": "2026-10-21T21:08:25+00:00",
+     "since": "2026-10-22T02:23:10+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
