@@ -1,5 +1,5 @@
 {
- "generated": 1792704620,
+ "generated": 1792704803,
  "defaultPercentPerCodexTask": 0.25,
  "tasks": [
   {
@@ -37,9 +37,9 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P2FM17_lot-waits-first-minute",
-   "request": "The Lot Waits: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-   "game": "The Lot Waits",
+   "id": "P2FM14_speaking-stone-first-minute",
+   "request": "Speaking Stone: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+   "game": "Speaking Stone",
    "route": "Codex",
    "model": "gpt-6-sol",
    "effort": "xhigh",
@@ -49,8 +49,8 @@
    "after": [],
    "priority": "P2",
    "state": "running",
-   "at": 1792703928,
-   "created": 1792703928,
+   "at": 1792704707,
+   "created": 1792704707,
    "estPercentOfWeek": 0.25
   },
   {
@@ -105,23 +105,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P2FM28_dynasty-guess-first-minute",
-   "request": "Dynasty: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-   "game": "Dynasty Guess",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "running",
-   "at": 1792703629,
-   "created": 1792703629,
-   "estPercentOfWeek": 0.25
-  },
-  {
    "id": "P3OR18_restored-engine-test",
    "request": "Restored: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
    "game": "Restored",
@@ -138,41 +121,9 @@
    "created": 1792703790
   },
   {
-   "id": "P3OR19_radish-omelette-engine-test",
-   "request": "Radish Omelette: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
-   "game": "Radish Omelette",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "running",
-   "at": 1792703790,
-   "created": 1792703790
-  },
-  {
    "id": "P3OR21_copy-drift-engine-test",
    "request": "Copy Drift: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
    "game": "Copy Drift",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "running",
-   "at": 1792703790,
-   "created": 1792703790
-  },
-  {
-   "id": "P3OR22_coat-corridor-engine-test",
-   "request": "Coat Corridor: add a test for the generator, moves and solver replay (OpenRouter lane)",
-   "game": "Coat Corridor",
    "route": "OpenRouter",
    "model": "deepseek-v4-flash",
    "effort": "default",
@@ -254,6 +205,22 @@
    "at": 1792704356,
    "created": 1792704356,
    "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2IN07_institution-npc-game-three-core-briefs",
+   "request": "Draft three core briefs for a game about institutions where everyone, staff included, runs scripts like NPCs",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "idea",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "state": "running",
+   "at": 1792703559,
+   "created": 1792703559
   },
   {
    "id": "P2FM37_peony-dream-first-minute",
@@ -764,22 +731,6 @@
    "waitingOn": [],
    "created": 1792704554,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2IN07_institution-npc-game-three-core-briefs",
-   "request": "Draft three core briefs for a game about institutions where everyone, staff included, runs scripts like NPCs",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "idea",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792703559
   },
   {
    "id": "P2n102_three-shadows",
@@ -2064,9 +2015,41 @@
    "created": 1792703790
   },
   {
+   "id": "P3OR19_radish-omelette-engine-test",
+   "request": "Radish Omelette: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
+   "game": "Radish Omelette",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "done",
+   "at": 1792703790,
+   "created": 1792703790
+  },
+  {
    "id": "P3OR20_morning-three-engine-test",
    "request": "Morning Three: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
    "game": "Morning Three",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "done",
+   "at": 1792703790,
+   "created": 1792703790
+  },
+  {
+   "id": "P3OR22_coat-corridor-engine-test",
+   "request": "Coat Corridor: add a test for the generator, moves and solver replay (OpenRouter lane)",
+   "game": "Coat Corridor",
    "route": "OpenRouter",
    "model": "deepseek-v4-flash",
    "effort": "default",
