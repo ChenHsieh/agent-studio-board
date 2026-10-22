@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-22T19:11:56+00:00",
+ "generated": "2026-10-22T19:14:16+00:00",
  "ops": {
-  "count": 21,
+  "count": 22,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -30,23 +30,23 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 14,
-    "running": 5,
-    "doneToday": 30,
-    "minutes": 516,
-    "estimateMinutes": 516
+    "queued": 17,
+    "running": 4,
+    "doneToday": 32,
+    "minutes": 492,
+    "estimateMinutes": 492
    }
   },
-  "queued": 14,
-  "running": 5,
-  "doneToday": 32,
+  "queued": 17,
+  "running": 4,
+  "doneToday": 34,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 516,
-  "estimatedFinish": "2026-10-23T03:47:56+00:00",
-  "estimateMinutes": 516
+  "minutesRemaining": 492,
+  "estimatedFinish": "2026-10-23T03:26:16+00:00",
+  "estimateMinutes": 492
  },
  "lanes": [
   {
@@ -59,10 +59,10 @@
   },
   {
    "worker": "Claude",
-   "game": "one-thread",
-   "task": "one thread",
-   "since": "2026-10-22T18:48:55+00:00",
-   "activity": "2026-10-22T19:09:26+00:00",
+   "game": "pigeon-salon",
+   "task": "pigeon salon",
+   "since": "2026-10-22T19:12:51+00:00",
+   "activity": "2026-10-22T19:12:58+00:00",
    "commit": null
   },
   {
@@ -75,14 +75,6 @@
   },
   {
    "worker": "Claude",
-   "game": "Multiple games",
-   "task": "review nobody looking and morning three",
-   "since": null,
-   "activity": null,
-   "commit": null
-  },
-  {
-   "worker": "Claude",
    "game": "restored",
    "task": "restored",
    "since": "2026-10-22T18:49:39+00:00",
@@ -91,11 +83,11 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 5,
+ "claudeWorkers": 4,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 91,
-  "usdEst": 327.6,
+  "runs": 93,
+  "usdEst": 334.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -137,7 +129,7 @@
   },
   {
    "day": "2026-10-22",
-   "changes": 35
+   "changes": 38
   }
  ],
  "houseRules": 23,
@@ -11270,11 +11262,11 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 10.8,
+   "nextTask": "morning-three: visual round design (look and feel after...",
+   "costTotalUsd": 14.4,
    "latestChange": {
-    "text": "Monkeys bounce until their picture is satisfied; tap a bowl to move a chestnut; trays...",
-    "at": "2026-10-22T19:02:52+00:00"
+    "text": "P2n63 review: ship; left and yesterday pictures fixed to read ≤ (were reversed); live",
+    "at": "2026-10-22T19:14:05+00:00"
    },
    "promo": null,
    "id": "morning-three",
@@ -11282,14 +11274,14 @@
    "title": "Morning Three",
    "line": "",
    "url": "https://chenhsieh.github.io/morning-three/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Split each monkey chestnuts between morning and evening; placeholder shapes, 12...",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T17:56:09+00:00",
-   "lastChange": "2026-10-22T19:02:52+00:00",
+   "lastChange": "2026-10-22T19:14:05+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -11298,11 +11290,39 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 2,
-    "earlierUsdEst": 7.2,
-    "totalUsdEst": 10.8
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
+    "totalUsdEst": 14.4
    },
    "tasks": [
+    {
+     "title": "morning three visual design",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "morning-three: visual round design (look and feel after the core passed review)",
+     "since": "2026-10-22T19:13:54+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "morning three visual build",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "morning-three: build the visual round from the design",
+     "since": "2026-10-22T19:13:54+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "morning three",
      "state": "done",
@@ -11319,15 +11339,25 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
-   "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
-   "inProgress": false,
+   "verdict": {
+    "date": "2026-10-22",
+    "verdict": "ship",
+    "note": "Same chestnuts, different bowls; the rule pictures now read the right way and the two-day levels beat the obvious split"
+   },
+   "needsYou": null,
+   "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-22T19:14:05+00:00",
+     "ok": true,
+     "note": "P2n63 review: ship; left and yesterday pictures fixed to read ≤ (were reversed); live",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T19:02:52+00:00",
      "ok": true,
@@ -11987,11 +12017,11 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 14.4,
+   "nextTask": "nobody-looking: visual round design (look and feel after...",
+   "costTotalUsd": 18.0,
    "latestChange": {
-    "text": "Twelve shelves of eyes and mouths; slide pieces until no face is left, pins from shelf 4,...",
-    "at": "2026-10-22T18:48:08+00:00"
+    "text": "P2n63 review: ship, no change; visual round queued",
+    "at": "2026-10-22T19:14:05+00:00"
    },
    "promo": null,
    "id": "nobody-looking",
@@ -11999,14 +12029,14 @@
    "title": "Nobody Looking",
    "line": "",
    "url": "https://chenhsieh.github.io/nobody-looking/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Slide eyes and mouths until no face is left; placeholder shapes, 12 shelves",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T17:56:06+00:00",
-   "lastChange": "2026-10-22T18:48:08+00:00",
+   "lastChange": "2026-10-22T19:14:05+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12015,11 +12045,39 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
-    "totalUsdEst": 14.4
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
+    "totalUsdEst": 18.0
    },
    "tasks": [
+    {
+     "title": "nobody looking visual design",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "nobody-looking: visual round design (look and feel after the core passed review)",
+     "since": "2026-10-22T19:13:54+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "nobody looking visual build",
+     "state": "queued",
+     "worker": "Claude",
+     "plan": "nobody-looking: build the visual round from the design",
+     "since": "2026-10-22T19:13:54+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "nobody looking",
      "state": "done",
@@ -12036,15 +12094,25 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
-   "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
-   "inProgress": false,
+   "verdict": {
+    "date": "2026-10-22",
+    "verdict": "ship",
+    "note": "Slide pieces until nothing on the shelf looks back; breaking one face makes another, and every face is drawn"
+   },
+   "needsYou": null,
+   "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-22T19:14:05+00:00",
+     "ok": true,
+     "note": "P2n63 review: ship, no change; visual round queued",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T18:48:08+00:00",
      "ok": true,
@@ -12234,10 +12302,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 7.2,
+   "costTotalUsd": 10.8,
    "latestChange": {
-    "text": "feat: One Thread starts from the Play Lab game template",
-    "at": "2026-10-22T18:50:37+00:00"
+    "text": "Sew a pattern in one thread through a two-sided book: 13 books, then daily and endless;...",
+    "at": "2026-10-22T19:12:00+00:00"
    },
    "promo": null,
    "id": "one-thread",
@@ -12245,52 +12313,58 @@
    "title": "One Thread",
    "line": "",
    "url": "https://chenhsieh.github.io/one-thread/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
-   "firstSeen": "2026-10-22T18:48:55+00:00",
-   "lastChange": "2026-10-22T19:09:26+00:00",
+   "firstSeen": "2026-10-22T18:07:55+00:00",
+   "lastChange": "2026-10-22T19:12:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 2,
     "earlierUsdEst": 7.2,
-    "totalUsdEst": 7.2
+    "totalUsdEst": 10.8
    },
    "tasks": [
     {
      "title": "one thread",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "New game: sew a book's binding pattern in one continuous thread",
-     "since": "2026-10-22T18:48:55+00:00",
-     "done": null,
+     "since": "2026-10-22T18:07:55+00:00",
+     "done": "2026-10-22T18:07:55+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P2n57_one-thread RESULT (Sonnet/high). LIVE https://chenhsieh.github.io/one-thread/ main"
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-22T19:12:00+00:00",
+     "ok": true,
+     "note": "Sew a pattern in one thread through a two-sided book: 13 books, then daily and endless; tap the glowing line, count the pass dots",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T18:50:37+00:00",
      "ok": true,
@@ -12622,6 +12696,79 @@
      "ok": true,
      "note": "design done (no repo): mirror-print core (paint, fold prints wet ink, wake dries), DECISION PASS 4707 rows at , STEP0+V1 in protos-claude/peony-dream, look silk-and-bronze reserved; Lee 1993 unverified, not credited",
      "source": "board note"
+    }
+   ]
+  },
+  {
+   "nextTask": null,
+   "costTotalUsd": 7.2,
+   "latestChange": {
+    "text": "feat: Pigeon Salon starts from the Play Lab game template",
+    "at": "2026-10-22T19:14:17+00:00"
+   },
+   "promo": null,
+   "id": "pigeon-salon",
+   "repo": "pigeon-salon",
+   "title": "Pigeon Salon",
+   "line": "",
+   "url": "https://chenhsieh.github.io/pigeon-salon/",
+   "stage": "building",
+   "who": "Claude",
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "firstSeen": "2026-10-22T19:12:51+00:00",
+   "lastChange": "2026-10-22T19:14:17+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 0.0,
+    "earlierRounds": 2,
+    "earlierUsdEst": 7.2,
+    "totalUsdEst": 7.2
+   },
+   "tasks": [
+    {
+     "title": "pigeon salon",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "New game: teach a pigeon to rank paintings the way a patron wants",
+     "since": "2026-10-22T19:12:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "taskCounts": {
+    "queued": 0,
+    "running": 1,
+    "waitingDesign": 0,
+    "done": 0
+   },
+   "verdict": null,
+   "needsYou": null,
+   "inProgress": true,
+   "history": [
+    {
+     "at": "2026-10-22T19:14:17+00:00",
+     "ok": true,
+     "note": "feat: Pigeon Salon starts from the Play Lab game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T19:12:54+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
     }
    ]
   },
