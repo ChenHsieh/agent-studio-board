@@ -1,15 +1,17 @@
 {
- "generated": "2026-10-22T01:44:24+00:00",
+ "generated": "2026-10-22T01:46:35+00:00",
  "ops": {
-  "count": 19,
+  "count": 21,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
+   "A running task has shown no progress for over 3 hours.",
    "A status note names something that is not a game.",
    "Two tasks share the number P1c09."
   ]
  },
  "about": [
   "A game changed in the last hour with no claimed task on it.",
+  "A running task has shown no progress for over 3 hours.",
   "A status note names something that is not a game.",
   "Two tasks share the number P1c09."
  ],
@@ -30,31 +32,31 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 20,
+    "queued": 19,
     "running": 1,
-    "doneToday": 49,
-    "minutes": 348,
-    "estimateMinutes": 348
+    "doneToday": 50,
+    "minutes": 336,
+    "estimateMinutes": 336
    }
   },
-  "queued": 20,
+  "queued": 19,
   "running": 1,
-  "doneToday": 144,
+  "doneToday": 145,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 348,
-  "estimatedFinish": "2026-10-22T07:32:24+00:00",
-  "estimateMinutes": 348
+  "minutesRemaining": 336,
+  "estimatedFinish": "2026-10-22T07:22:35+00:00",
+  "estimateMinutes": 336
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "uneven-loop",
-   "task": "P1UL00_uneven loop explain loop and ping",
-   "since": "2026-10-22T01:12:42+00:00",
-   "activity": "2026-10-22T01:43:50+00:00",
+   "game": "floor-area",
+   "task": "floor area rooftop",
+   "since": "2026-10-22T01:45:10+00:00",
+   "activity": "2026-10-22T01:45:10+00:00",
    "commit": null
   }
  ],
@@ -62,8 +64,8 @@
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 40,
-  "usdEst": 144.0,
+  "runs": 41,
+  "usdEst": 147.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -101,7 +103,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 390
+   "changes": 391
   }
  ],
  "houseRules": 23,
@@ -4632,7 +4634,7 @@
    ]
   },
   {
-   "nextTask": "floor area rooftop",
+   "nextTask": null,
    "costTotalUsd": 21.77,
    "latestChange": {
     "text": "Q3g_floor-area-rooftop handed to Claude: Codex hit the 90 min cap;",
@@ -4644,14 +4646,14 @@
    "title": "Floor Area",
    "line": "Drop floor slabs from a crane to fill a stepped skyline with no gaps.",
    "url": "https://chenhsieh.github.io/floor-area/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P3",
    "priorityNote": "Find a creative twist",
    "shelfNote": "not fun enough; credit removed (R06).",
    "image": "https://chenhsieh.github.io/play-lab/images/games/floor-area-1.webp",
    "firstSeen": "2026-10-16T01:23:59+00:00",
-   "lastChange": "2026-10-21T21:08:25+00:00",
+   "lastChange": "2026-10-22T01:45:10+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -4667,10 +4669,10 @@
    "tasks": [
     {
      "title": "floor area rooftop",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "",
-     "since": "2026-10-21T21:08:25+00:00",
+     "since": "2026-10-22T01:45:10+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -4765,8 +4767,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 6
    },
@@ -18914,10 +18916,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 43.42,
+   "costTotalUsd": 47.02,
    "latestChange": {
-    "text": "P1SD45 studio standard: og image + share text live, audit a-f ok",
-    "at": "2026-10-21T22:43:55+00:00"
+    "text": "P1UL00 How to play: 2 pages explain the loop and the pin, zh too, live",
+    "at": "2026-10-22T01:45:02+00:00"
    },
    "promo": {
     "files": {
@@ -18932,34 +18934,34 @@
    "title": "Uneven Loop",
    "line": "Step through frames and return to the start.",
    "url": "https://chenhsieh.github.io/uneven-loop/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Clarify the loop mechanism and let the sequencer make music",
    "shelfNote": "",
    "image": "promo/uneven-loop/first.jpg",
    "firstSeen": "2026-10-15T03:56:45+00:00",
-   "lastChange": "2026-10-22T01:43:50+00:00",
+   "lastChange": "2026-10-22T01:45:02+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 1,
     "codexTokens": 185728,
     "codexUsdEst": 0.22,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 11,
     "earlierUsdEst": 39.6,
-    "totalUsdEst": 43.42
+    "totalUsdEst": 47.02
    },
    "tasks": [
     {
      "title": "P1UL00_uneven loop explain loop and ping",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Uneven Loop: say what making a loop means and what the ping is for",
-     "since": "2026-10-22T01:12:42+00:00",
-     "done": null,
+     "since": "2026-10-22T00:41:09+00:00",
+     "done": "2026-10-22T00:41:09+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -19012,14 +19014,20 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": null,
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-22T01:45:02+00:00",
+     "ok": true,
+     "note": "P1UL00 How to play: 2 pages explain the loop and the pin, zh too, live",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T22:43:55+00:00",
      "ok": true,
@@ -19084,12 +19092,6 @@
      "at": "2026-10-15T20:44:08+00:00",
      "ok": true,
      "note": "feat: credit artanyatang's tile poster",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-15T17:17:28+00:00",
-     "ok": true,
-     "note": "feat: guide the first loop with a clear drag path",
      "source": "main commit"
     }
    ]
