@@ -1,15 +1,15 @@
 {
- "generated": "2026-10-22T14:25:38+00:00",
+ "generated": "2026-10-22T14:27:50+00:00",
  "ops": {
   "count": 18,
   "notes": [
-   "A running task has shown no progress for over 3 hours.",
+   "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
    "Two tasks share the number P1c09."
   ]
  },
  "about": [
-  "A running task has shown no progress for over 3 hours.",
+  "A game changed in the last hour with no claimed task on it.",
   "A status note names something that is not a game.",
   "Two tasks share the number P1c09."
  ],
@@ -31,47 +31,39 @@
    },
    "Claude": {
     "queued": 8,
-    "running": 2,
+    "running": 1,
     "doneToday": 11,
-    "minutes": 264,
-    "estimateMinutes": 264
+    "minutes": 204,
+    "estimateMinutes": 204
    }
   },
   "queued": 8,
-  "running": 2,
+  "running": 1,
   "doneToday": 11,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 264,
-  "estimatedFinish": "2026-10-22T18:49:38+00:00",
-  "estimateMinutes": 264
+  "minutesRemaining": 204,
+  "estimatedFinish": "2026-10-22T17:51:50+00:00",
+  "estimateMinutes": 204
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "flying-white",
-   "task": "P1FW47_flying white ship review",
-   "since": "2026-10-22T13:49:59+00:00",
-   "activity": "2026-10-22T14:14:39+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "thumb-stand",
    "task": "P1TS54_thumb stand ship review",
    "since": "2026-10-22T14:25:02+00:00",
-   "activity": "2026-10-22T14:25:02+00:00",
+   "activity": "2026-10-22T14:26:09+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 71,
-  "usdEst": 255.6,
+  "runs": 72,
+  "usdEst": 259.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -113,7 +105,7 @@
   },
   {
    "day": "2026-10-22",
-   "changes": 20
+   "changes": 21
   }
  ],
  "houseRules": 23,
@@ -5298,10 +5290,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 61.2,
+   "costTotalUsd": 68.4,
    "latestChange": {
-    "text": "P1FW46 look pass live: paper fills screen, red seal, face ink, brush sound,...",
-    "at": "2026-10-22T13:49:29+00:00"
+    "text": "P1FW47 ship review: live ; Shanghai Museum credit fixed, level 6 wrong form, stroke-order...",
+    "at": "2026-10-22T14:25:56+00:00"
    },
    "promo": null,
    "id": "flying-white",
@@ -5309,41 +5301,27 @@
    "title": "Flying White",
    "line": "",
    "url": "https://chenhsieh.github.io/flying-white/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Higher priority: real rubbing sources, hilarious teacher, growth, free writing",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T05:18:25+00:00",
-   "lastChange": "2026-10-22T14:14:39+00:00",
+   "lastChange": "2026-10-22T14:25:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 7,
+    "claudeRuns": 8,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 25.2,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
-    "totalUsdEst": 61.2
+    "claudeUsdEst": 28.8,
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
+    "totalUsdEst": 68.4
    },
    "tasks": [
-    {
-     "title": "P1FW47_flying white ship review",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Flying White: Opus ship review, cold play against the design",
-     "since": "2026-10-22T13:49:59+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1FW43_flying white real models and masks",
      "state": "done",
@@ -5401,6 +5379,20 @@
      "result": "P1FW46 done and LIVE:"
     },
     {
+     "title": "P1FW47_flying white ship review",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Flying White: Opus ship review, cold play against the design",
+     "since": "2026-10-21T14:33:07+00:00",
+     "done": "2026-10-21T14:33:07+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Verdict: SHIP (live main , live bytes match, looked at 390x844 and 320x568). First screen = real 蘭亭 永 + blank paper + teacher, no meter; ink stays exactly where the finger went; ink on the top bar draws the teacher's..."
+    },
+    {
      "title": "P1FW40_flying white calligraphy expert research",
      "state": "done",
      "worker": "Claude",
@@ -5445,18 +5437,30 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 7
+    "done": 8
    },
    "verdict": {
     "date": "2026-10-21",
     "verdict": "revise",
     "note": "Homework-like; seal script; hilarious teacher; growth"
    },
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-22T14:25:56+00:00",
+     "ok": true,
+     "note": "P1FW47 ship review: live ; Shanghai Museum credit fixed, level 6 wrong form, stroke-order line, levels 10 and 12 new decisions, how-to dedup",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-22T14:14:39+00:00",
+     "ok": true,
+     "note": "fix: levels 6 and 10-12 each ask a new decision, correct museum credits, a stroke-order line",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-22T13:49:29+00:00",
      "ok": true,
@@ -5515,18 +5519,6 @@
      "at": "2026-10-21T15:38:51+00:00",
      "ok": false,
      "note": "see",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T14:33:32+00:00",
-     "ok": true,
-     "note": "pen prototype (docs/pen.js on branch) + 390/320 mocks; build queued to Codex as P1FW43-46, Opus ship review P1FW47",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T14:23:47+00:00",
-     "ok": true,
-     "note": "core refined: commissions + real specimens + deadpan teacher + write-anywhere + studio growth (design doc)",
      "source": "board note"
     }
    ]
@@ -17914,7 +17906,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/thumb-stand-1.webp",
    "firstSeen": "2026-10-16T00:44:20+00:00",
-   "lastChange": "2026-10-22T14:25:02+00:00",
+   "lastChange": "2026-10-22T14:26:09+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 5,
