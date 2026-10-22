@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Play these today</title>
+<link rel="stylesheet" href="board.css">
+<link rel="stylesheet" href="play.css">
+</head>
+<body class="play-page">
+<main>
+  <header class="play-head">
+    <h1>Play these today</h1>
+    <p id="play-fresh" class="fresh" aria-live="polite">Loading the play queue</p>
+    <a class="back-link" href="index.html">Back to the board</a>
+  </header>
+  <div id="play-cards" class="play-cards"></div>
+  <section id="play-footer" class="play-footer" hidden>
+    <button id="copy-all" type="button">Copy all</button>
+    <p id="all-status" class="copy-status" role="status" aria-live="polite"></p>
+    <p class="play-help">Paste the copied lines into the chat. The agent records them as verdicts; the game then leaves this page.</p>
+  </section>
+</main>
+<script src="play.js"></script>
+</body>
+</html>

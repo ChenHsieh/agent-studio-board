@@ -269,6 +269,10 @@ function render() {
   const p = data.project || {};
   $('#project').textContent = p.name || '';
   document.title = `Studio board · ${p.name || ''}`;
+  const playCount = (data.playQueue || []).length;
+  $('#play-queue-count').textContent = playCount;
+  $('#play-queue-link').hidden = !playCount;
+  $('#play-queue-separator').hidden = !playCount;
   const fresh = $('#fresh');
   fresh.textContent = `Last change ${ago(data.generated)} · ${data.games.length} ${(data.project && data.project.nounPlural) || 'items'}`;
   fresh.classList.remove('stale');
