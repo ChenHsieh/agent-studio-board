@@ -1,15 +1,17 @@
 {
- "generated": "2026-10-22T07:26:27+00:00",
+ "generated": "2026-10-22T07:28:39+00:00",
  "ops": {
-  "count": 18,
+  "count": 20,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
+   "A running task has shown no progress for over 3 hours.",
    "A status note names something that is not a game.",
    "Two tasks share the number P1c09."
   ]
  },
  "about": [
   "A game changed in the last hour with no claimed task on it.",
+  "A running task has shown no progress for over 3 hours.",
   "A status note names something that is not a game.",
   "Two tasks share the number P1c09."
  ],
@@ -30,31 +32,31 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 10,
+    "queued": 9,
     "running": 1,
-    "doneToday": 6,
-    "minutes": 228,
-    "estimateMinutes": 228
+    "doneToday": 7,
+    "minutes": 216,
+    "estimateMinutes": 216
    }
   },
-  "queued": 10,
+  "queued": 9,
   "running": 1,
-  "doneToday": 6,
+  "doneToday": 7,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 228,
-  "estimatedFinish": "2026-10-22T11:14:27+00:00",
-  "estimateMinutes": 228
+  "minutesRemaining": 216,
+  "estimatedFinish": "2026-10-22T11:04:39+00:00",
+  "estimateMinutes": 216
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "slice-and-bake",
-   "task": "P2SB52_slice and bake orders daily",
-   "since": "2026-10-22T07:17:28+00:00",
-   "activity": "2026-10-22T07:25:35+00:00",
+   "game": "Multiple games",
+   "task": "P2SV51_hit or kit harvest",
+   "since": null,
+   "activity": null,
    "commit": null
   }
  ],
@@ -62,8 +64,8 @@
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 63,
-  "usdEst": 226.8,
+  "runs": 64,
+  "usdEst": 230.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -105,7 +107,7 @@
   },
   {
    "day": "2026-10-22",
-   "changes": 14
+   "changes": 15
   }
  ],
  "houseRules": 23,
@@ -15452,10 +15454,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 68.89,
+   "costTotalUsd": 72.49,
    "latestChange": {
-    "text": "P2SB51 cane core live: 6 orders, solver par, one-tap moves, Baker Vos en+zh-TW, flipbook...",
-    "at": "2026-10-22T06:59:46+00:00"
+    "text": "P2SB52 live: tickets 7-14, chapter 2 (log cut in two), daily ticket, shop is open, share...",
+    "at": "2026-10-22T07:27:17+00:00"
    },
    "promo": null,
    "id": "slice-and-bake",
@@ -15463,34 +15465,34 @@
    "title": "Slice and Bake",
    "line": "Move dough before each cut to match the next slice.",
    "url": "https://chenhsieh.github.io/slice-and-bake/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Make cutting and adjusting legible; refresh the visual",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/slice-and-bake-1.webp",
    "firstSeen": "2026-10-14T23:23:18+00:00",
-   "lastChange": "2026-10-22T07:25:35+00:00",
+   "lastChange": "2026-10-22T07:27:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 1,
     "codexTokens": 407560,
     "codexUsdEst": 0.49,
-    "claudeUsdEst": 7.2,
+    "claudeUsdEst": 10.8,
     "earlierRounds": 17,
     "earlierUsdEst": 61.2,
-    "totalUsdEst": 68.89
+    "totalUsdEst": 72.49
    },
    "tasks": [
     {
-     "title": "P2SB52_slice and bake orders daily",
-     "state": "running",
+     "title": "P2SB51_slice and bake cane core",
+     "state": "done",
      "worker": "Claude",
-     "plan": "Twelve tickets from Baker Vos's regulars, a daily ticket, and the flipbook as chapter 2",
-     "since": "2026-10-22T07:17:28+00:00",
-     "done": null,
+     "plan": "One tap per move: wrap, stack, flip; build the cookie log the order ticket asks for in par moves",
+     "since": "2026-10-22T04:14:47+00:00",
+     "done": "2026-10-22T04:14:47+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -15499,10 +15501,10 @@
      "result": ""
     },
     {
-     "title": "P2SB51_slice and bake cane core",
+     "title": "P2SB52_slice and bake orders daily",
      "state": "done",
      "worker": "Claude",
-     "plan": "One tap per move: wrap, stack, flip; build the cookie log the order ticket asks for in par moves",
+     "plan": "Twelve tickets from Baker Vos's regulars, a daily ticket, and the flipbook as chapter 2",
      "since": "2026-10-22T04:14:47+00:00",
      "done": "2026-10-22T04:14:47+00:00",
      "reviewed": false,
@@ -15571,18 +15573,24 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": {
     "date": "2026-10-21",
     "verdict": "revise",
     "note": "Too many operations; core unclear"
    },
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-22T07:27:17+00:00",
+     "ok": true,
+     "note": "P2SB52 live: tickets 7-14, chapter 2 (log cut in two), daily ticket, shop is open, share text, main",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T06:59:46+00:00",
      "ok": true,
@@ -15647,12 +15655,6 @@
      "at": "2026-10-20T02:08:59+00:00",
      "ok": true,
      "note": "flipbook brief + build B2m",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-17T23:15:14+00:00",
-     "ok": true,
-     "note": "CREDIT line on the baked-tray card and the level map, EN+ZH (saved cookie photos, baker unknown); no How to play card exists; README already credited; live",
      "source": "board note"
     }
    ]
