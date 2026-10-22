@@ -1,23 +1,7 @@
 {
- "generated": 1792704303,
+ "generated": 1792704474,
  "defaultPercentPerCodexTask": 0.25,
  "tasks": [
-  {
-   "id": "P3OR11_fold-guess-test-retry",
-   "request": "Fold Guess: add the helper test again (first try wrote an empty file)",
-   "game": "Fold Guess",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "state": "running",
-   "at": 1792703715,
-   "created": 1792703715
-  },
   {
    "id": "P2FM04_even-water-first-minute",
    "request": "Even Water: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
@@ -155,22 +139,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P3OR15_nobody-looking-engine-test",
-   "request": "Nobody Looking: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
-   "game": "Nobody Looking",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "running",
-   "at": 1792703790,
-   "created": 1792703790
-  },
-  {
    "id": "P3OR18_restored-engine-test",
    "request": "Restored: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
    "game": "Restored",
@@ -203,9 +171,9 @@
    "created": 1792703790
   },
   {
-   "id": "P3OR20_morning-three-engine-test",
-   "request": "Morning Three: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
-   "game": "Morning Three",
+   "id": "P3OR21_copy-drift-engine-test",
+   "request": "Copy Drift: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
+   "game": "Copy Drift",
    "route": "OpenRouter",
    "model": "deepseek-v4-flash",
    "effort": "default",
@@ -219,9 +187,9 @@
    "created": 1792703790
   },
   {
-   "id": "P3OR12_herbarium-guess-test-retry",
-   "request": "Herbarium Guess: add the helper test again (first try wrote an empty file)",
-   "game": "Herbarium Guess",
+   "id": "P3OR22_coat-corridor-engine-test",
+   "request": "Coat Corridor: add a test for the generator, moves and solver replay (OpenRouter lane)",
+   "game": "Coat Corridor",
    "route": "OpenRouter",
    "model": "deepseek-v4-flash",
    "effort": "default",
@@ -229,10 +197,10 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [],
-   "priority": "P3",
+   "priority": "P2",
    "state": "running",
-   "at": 1792703718,
-   "created": 1792703718
+   "at": 1792703790,
+   "created": 1792703790
   },
   {
    "id": "P2FM25_seed-spiral-first-minute",
@@ -271,25 +239,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P1PQ00_play-these-today-page",
-   "request": "A Play these today page on the studio board: up to three games, what to try in each, and one-tap ship, revise or shelf",
-   "game": "Studio",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1BD01_board-queue-requests-and-codex-quota-eta"
-   ],
-   "priority": null,
-   "state": "running",
-   "at": 1792704158,
-   "created": 1792704158,
-   "estPercentOfWeek": 0.25
-  },
-  {
    "id": "P2FM24_think-elephant-first-minute",
    "request": "Think an Elephant: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
    "game": "Think Elephant",
@@ -304,6 +253,23 @@
    "state": "running",
    "at": 1792702813,
    "created": 1792702813,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2FM29_thirsty-clicks-first-minute",
+   "request": "Thirsty Clicks: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+   "game": "Thirsty Clicks",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "first-minute",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "state": "running",
+   "at": 1792704356,
+   "created": 1792704356,
    "estPercentOfWeek": 0.25
   },
   {
@@ -338,6 +304,23 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792700851,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P3OR11_fold-guess-test-retry",
+   "request": "Fold Guess: add the helper test again (first try wrote an empty file)",
+   "game": "Fold Guess",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792704353,
    "estPercentOfWeek": 0.25
   },
   {
@@ -407,38 +390,6 @@
    "waitingOn": [],
    "created": 1792700851,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P3OR21_copy-drift-engine-test",
-   "request": "Copy Drift: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
-   "game": "Copy Drift",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792703790
-  },
-  {
-   "id": "P3OR22_coat-corridor-engine-test",
-   "request": "Coat Corridor: add a test for the generator, moves and solver replay (OpenRouter lane)",
-   "game": "Coat Corridor",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792703790
   },
   {
    "id": "P2FM32_material-boards-first-minute",
@@ -526,6 +477,23 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P3OR12_herbarium-guess-test-retry",
+   "request": "Herbarium Guess: add the helper test again (first try wrote an empty file)",
+   "game": "Herbarium Guess",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P3",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792704408,
+   "estPercentOfWeek": 0.25
+  },
+  {
    "id": "P3d35_lens-screen-studio-320-fix",
    "request": "Lens Screen: finish the client-studio round (one element spills off the left edge on the last level at 320 wide), then publish",
    "game": "Lens Screen",
@@ -557,23 +525,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792700851,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2FM29_thirsty-clicks-first-minute",
-   "request": "Thirsty Clicks: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-   "game": "Thirsty Clicks",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792700850,
    "estPercentOfWeek": 0.25
   },
   {
@@ -1997,6 +1948,22 @@
    "created": 1792703790
   },
   {
+   "id": "P3OR15_nobody-looking-engine-test",
+   "request": "Nobody Looking: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
+   "game": "Nobody Looking",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "done",
+   "at": 1792703790,
+   "created": 1792703790
+  },
+  {
    "id": "P3OR16_not-yet-engine-test",
    "request": "Not Yet: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
    "game": "Not Yet",
@@ -2016,6 +1983,22 @@
    "id": "P3OR17_own-ground-engine-test",
    "request": "Own Ground: add a test for the generator, moves and solver replay (OpenRouter lane)",
    "game": "Own Ground",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "done",
+   "at": 1792703790,
+   "created": 1792703790
+  },
+  {
+   "id": "P3OR20_morning-three-engine-test",
+   "request": "Morning Three: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
+   "game": "Morning Three",
    "route": "OpenRouter",
    "model": "deepseek-v4-flash",
    "effort": "default",
