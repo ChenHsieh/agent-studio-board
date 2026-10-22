@@ -1,15 +1,17 @@
 {
- "generated": "2026-10-22T15:34:32+00:00",
+ "generated": "2026-10-22T15:36:46+00:00",
  "ops": {
-  "count": 19,
+  "count": 24,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
+   "A running task has shown no progress for over 3 hours.",
    "A status note names something that is not a game.",
    "Two tasks share the number P1c09."
   ]
  },
  "about": [
   "A game changed in the last hour with no claimed task on it.",
+  "A running task has shown no progress for over 3 hours.",
   "A status note names something that is not a game.",
   "Two tasks share the number P1c09."
  ],
@@ -30,27 +32,68 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 6,
-    "running": 0,
+    "queued": 1,
+    "running": 5,
     "doneToday": 12,
-    "minutes": 120,
-    "estimateMinutes": 120
+    "minutes": 360,
+    "estimateMinutes": 360
    }
   },
-  "queued": 6,
-  "running": 0,
+  "queued": 1,
+  "running": 5,
   "doneToday": 12,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 120,
-  "estimatedFinish": "2026-10-22T17:34:32+00:00",
-  "estimateMinutes": 120
+  "minutesRemaining": 360,
+  "estimatedFinish": "2026-10-22T21:36:46+00:00",
+  "estimateMinutes": 360
  },
- "lanes": [],
+ "lanes": [
+  {
+   "worker": "Claude",
+   "game": "align-hero",
+   "task": "P1SD12_studio standard align hero",
+   "since": "2026-10-22T15:35:09+00:00",
+   "activity": "2026-10-22T15:35:40+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "biosteganography",
+   "task": "P1SD13_studio standard biosteganography",
+   "since": "2026-10-22T15:35:09+00:00",
+   "activity": "2026-10-22T15:35:09+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "local-hero",
+   "task": "P1SD25_studio standard local hero",
+   "since": "2026-10-22T15:35:09+00:00",
+   "activity": "2026-10-22T15:35:09+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "metagenome-profilers",
+   "task": "P1SD28_studio standard metagenome profilers",
+   "since": "2026-10-22T15:35:09+00:00",
+   "activity": "2026-10-22T15:35:09+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "BioRedactle-nextjs",
+   "task": "P1SD32_studio standard redacxiv",
+   "since": "2026-10-22T15:35:09+00:00",
+   "activity": "2026-10-22T15:35:09+00:00",
+   "commit": null
+  }
+ ],
  "codexLanes": 0,
- "claudeWorkers": 0,
+ "claudeWorkers": 5,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
   "runs": 75,
@@ -401,7 +444,7 @@
    ]
   },
   {
-   "nextTask": "Fix share preview, logo and share text",
+   "nextTask": null,
    "costTotalUsd": 57.86,
    "latestChange": {
     "text": "see",
@@ -419,14 +462,14 @@
    "title": "Align Hero",
    "line": "Two lines of letters, one slipped. Find where it slipped.",
    "url": "https://chenhsieh.github.io/align-hero/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "promo/align-hero/first.jpg",
    "firstSeen": "2026-08-23T15:31:58+00:00",
-   "lastChange": "2026-10-22T07:57:39+00:00",
+   "lastChange": "2026-10-22T15:35:40+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -442,10 +485,10 @@
    "tasks": [
     {
      "title": "P1SD12_studio standard align hero",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-22T07:57:39+00:00",
+     "since": "2026-10-22T15:35:09+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -498,8 +541,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
@@ -1187,7 +1230,7 @@
    ]
   },
   {
-   "nextTask": "Fix share preview, logo and share text",
+   "nextTask": null,
    "costTotalUsd": 39.79,
    "latestChange": {
     "text": "see",
@@ -1206,14 +1249,14 @@
    "title": "Biosteganography",
    "line": "Straighten the stripes to find a hidden repeat.",
    "url": "https://chenhsieh.github.io/biosteganography/demo/snap.html",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "promo/biosteganography/first.jpg",
    "firstSeen": "2026-08-20T03:51:36+00:00",
-   "lastChange": "2026-10-22T07:57:39+00:00",
+   "lastChange": "2026-10-22T15:35:09+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -1229,10 +1272,10 @@
    "tasks": [
     {
      "title": "P1SD13_studio standard biosteganography",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-22T07:57:39+00:00",
+     "since": "2026-10-22T15:35:09+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1257,8 +1300,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -9212,7 +9255,7 @@
    ]
   },
   {
-   "nextTask": "Fix share preview, logo and share text",
+   "nextTask": null,
    "costTotalUsd": 54.22,
    "latestChange": {
     "text": "see",
@@ -9231,14 +9274,14 @@
    "title": "Local Hero",
    "line": "Find the stretch two DNA strings share, then bank it.",
    "url": "https://chenhsieh.github.io/local-hero/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "promo/local-hero/first.jpg",
    "firstSeen": "2026-08-20T15:58:51+00:00",
-   "lastChange": "2026-10-22T07:57:39+00:00",
+   "lastChange": "2026-10-22T15:35:09+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -9254,10 +9297,10 @@
    "tasks": [
     {
      "title": "P1SD25_studio standard local hero",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-22T07:57:39+00:00",
+     "since": "2026-10-22T15:35:09+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -9282,8 +9325,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -10278,7 +10321,7 @@
    ]
   },
   {
-   "nextTask": "Fix share preview, logo and share text",
+   "nextTask": null,
    "costTotalUsd": 36.0,
    "latestChange": {
     "text": "see",
@@ -10296,14 +10339,14 @@
    "title": "Metagenome Profilers",
    "line": "Compare MetaPhlAn and Kraken through six games.",
    "url": "https://chenhsieh.github.io/metagenome-profilers/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Game-design pass on the profiler comparison",
    "shelfNote": "",
    "image": "promo/metagenome-profilers/first.jpg",
    "firstSeen": "2026-08-20T15:58:01+00:00",
-   "lastChange": "2026-10-22T07:57:39+00:00",
+   "lastChange": "2026-10-22T15:35:09+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -10319,10 +10362,10 @@
    "tasks": [
     {
      "title": "P1SD28_studio standard metagenome profilers",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-22T07:57:39+00:00",
+     "since": "2026-10-22T15:35:09+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -10347,8 +10390,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -12510,7 +12553,7 @@
    ]
   },
   {
-   "nextTask": "Fix share preview, logo and share text",
+   "nextTask": null,
    "costTotalUsd": 58.97,
    "latestChange": {
     "text": "see",
@@ -12529,14 +12572,14 @@
    "title": "Redacxiv",
    "line": "Reveal a paper's title with word tiles.",
    "url": "https://chenhsieh.github.io/redacxiv/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P1",
    "priorityNote": "Interface and visual pass; make the first game winnable for",
    "shelfNote": "",
    "image": "promo/redacxiv/first.jpg",
    "firstSeen": "2026-10-14T20:25:51+00:00",
-   "lastChange": "2026-10-22T07:57:39+00:00",
+   "lastChange": "2026-10-22T15:35:09+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -12552,10 +12595,10 @@
    "tasks": [
     {
      "title": "P1SD32_studio standard redacxiv",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-22T07:57:39+00:00",
+     "since": "2026-10-22T15:35:09+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -12664,8 +12707,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 7
    },
