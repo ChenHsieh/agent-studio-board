@@ -1,4 +1,4 @@
-.play-page { max-width: 560px; }
+.play-page { max-width: 560px; -webkit-tap-highlight-color: transparent; }
 .play-head { border-bottom: 2px solid var(--ink); padding-bottom: 16px; }
 .play-head .fresh { margin: 6px 0 0; }
 .back-link { display: inline-flex; align-items: center; min-height: 44px; margin-top: 8px; font: 13px var(--mono); }
@@ -6,9 +6,9 @@
 .play-title-row { display: flex; align-items: flex-start; gap: 12px; min-width: 0; }
 .play-thumb { width: 72px; height: 72px; flex: 0 0 72px; object-fit: cover; background: var(--tone); }
 .play-thumb.blank { display: grid; place-items: center; font: 600 24px var(--serif); color: var(--muted); }
-.play-title-text { min-width: 0; }
+.play-title-text { display: flex; flex-wrap: wrap; align-items: baseline; gap: 3px 8px; min-width: 0; }
 .play-title-text h2 { margin: 0; font: 600 22px/1.2 var(--serif); letter-spacing: -0.01em; text-transform: none; color: var(--ink); overflow-wrap: anywhere; }
-.busy-tag { display: inline-block; margin-top: 6px; font: 11px/1.3 var(--mono); color: var(--muted); border: 1px solid var(--rule); padding: 3px 6px; }
+.busy-tag { display: inline-block; font: 11px/1.3 var(--mono); color: var(--muted); border: 1px solid var(--rule); padding: 3px 6px; }
 .play-card h3 { margin: 18px 0 4px; font: 600 11px var(--mono); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
 .try-line { margin: 0; font-size: 16px; overflow-wrap: anywhere; }
 .waiting { margin: 10px 0 16px; color: var(--muted); font: 12px var(--mono); }
