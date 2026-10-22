@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T04:51:14+00:00",
+ "generated": "2026-10-22T04:53:25+00:00",
  "ops": {
   "count": 18,
   "notes": [
@@ -30,31 +30,31 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 19,
+    "queued": 18,
     "running": 1,
     "doneToday": 0,
-    "minutes": 336,
-    "estimateMinutes": 336
+    "minutes": 324,
+    "estimateMinutes": 324
    }
   },
-  "queued": 19,
+  "queued": 18,
   "running": 1,
   "doneToday": 0,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 336,
-  "estimatedFinish": "2026-10-22T10:27:14+00:00",
-  "estimateMinutes": 336
+  "minutesRemaining": 324,
+  "estimatedFinish": "2026-10-22T10:17:25+00:00",
+  "estimateMinutes": 324
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "chai-boil",
-   "task": "P1CB08_chai draw helper pot",
-   "since": "2026-10-22T04:37:06+00:00",
-   "activity": "2026-10-22T04:50:54+00:00",
+   "task": "P1CB09_chai lever and burners",
+   "since": "2026-10-22T04:52:15+00:00",
+   "activity": "2026-10-22T04:52:19+00:00",
    "commit": null
   }
  ],
@@ -62,8 +62,8 @@
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 54,
-  "usdEst": 194.4,
+  "runs": 55,
+  "usdEst": 198.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -105,7 +105,7 @@
   },
   {
    "day": "2026-10-22",
-   "changes": 5
+   "changes": 6
   }
  ],
  "houseRules": 23,
@@ -1525,11 +1525,11 @@
    ]
   },
   {
-   "nextTask": "The flame lever becomes a brass slider on...",
-   "costTotalUsd": 80.02,
+   "nextTask": "New kitchens: a rooftop stall at dusk, a...",
+   "costTotalUsd": 83.62,
    "latestChange": {
-    "text": "P1CB07 visual spin design: lit cut-paper kitchens, 3 new sets + platform redraw; builds...",
-    "at": "2026-10-22T03:58:37+00:00"
+    "text": "P1CB08 draw helper + pot, face, foam, steam, glass live ()",
+    "at": "2026-10-22T04:52:13+00:00"
    },
    "promo": null,
    "id": "chai-boil",
@@ -1544,40 +1544,26 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/chai-boil-1.webp",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-22T04:50:54+00:00",
+   "lastChange": "2026-10-22T04:52:19+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 5,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 3,
     "codexTokens": 1071928,
     "codexUsdEst": 1.29,
-    "claudeUsdEst": 10.8,
+    "claudeUsdEst": 14.4,
     "earlierRounds": 17,
     "earlierUsdEst": 61.2,
-    "totalUsdEst": 80.02
+    "totalUsdEst": 83.62
    },
    "tasks": [
     {
-     "title": "P1CB08_chai draw helper pot",
+     "title": "P1CB09_chai lever and burners",
      "state": "running",
      "worker": "Claude",
-     "plan": "The pot, face, foam, steam and glass are redrawn as lit cut paper with one light side",
-     "since": "2026-10-22T04:37:06+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P1CB09_chai lever and burners",
-     "state": "queued",
-     "worker": "Claude",
      "plan": "The flame lever becomes a brass slider on a wooden plaque; every stove's flames are drawn as paper",
-     "since": "2026-10-22T03:58:31+00:00",
+     "since": "2026-10-22T04:52:15+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1599,6 +1585,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1CB08_chai draw helper pot",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "The pot, face, foam, steam and glass are redrawn as lit cut paper with one light side",
+     "since": "2026-10-22T03:58:31+00:00",
+     "done": "2026-10-22T03:58:31+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1CB08 chai-draw-helper-pot: DONE, live (main , https://chenhsieh.github.io/chai-boil/, live bytes match, zero console errors)."
     },
     {
      "title": "P1CB07_chai boil visual spin",
@@ -1672,10 +1672,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 1,
     "running": 1,
     "waitingDesign": 0,
-    "done": 11
+    "done": 12
    },
    "verdict": {
     "date": "2026-10-21",
@@ -1685,6 +1685,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-22T04:52:13+00:00",
+     "ok": true,
+     "note": "P1CB08 draw helper + pot, face, foam, steam, glass live ()",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T03:58:37+00:00",
      "ok": true,
@@ -1750,12 +1756,6 @@
      "ok": true,
      "note": "feat: build chai in an ingredient tray",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-21T05:07:36+00:00",
-     "ok": true,
-     "note": "feat: build chai in an ingredient tray",
-     "source": "main commit"
     }
    ]
   },
