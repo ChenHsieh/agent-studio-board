@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-22T19:34:29+00:00",
+ "generated": "2026-10-22T19:36:42+00:00",
  "ops": {
-  "count": 24,
+  "count": 25,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -30,23 +30,23 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 13,
+    "queued": 11,
     "running": 4,
-    "doneToday": 36,
-    "minutes": 444,
-    "estimateMinutes": 444
+    "doneToday": 38,
+    "minutes": 420,
+    "estimateMinutes": 420
    }
   },
-  "queued": 13,
+  "queued": 11,
   "running": 4,
-  "doneToday": 39,
+  "doneToday": 41,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 444,
-  "estimatedFinish": "2026-10-23T02:58:29+00:00",
-  "estimateMinutes": 444
+  "minutesRemaining": 420,
+  "estimatedFinish": "2026-10-23T02:36:42+00:00",
+  "estimateMinutes": 420
  },
  "lanes": [
   {
@@ -59,14 +59,6 @@
   },
   {
    "worker": "Claude",
-   "game": "pigeon-salon",
-   "task": "pigeon salon",
-   "since": "2026-10-22T19:12:51+00:00",
-   "activity": "2026-10-22T19:19:35+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
    "game": "radish-omelette",
    "task": "radish omelette",
    "since": "2026-10-22T19:32:05+00:00",
@@ -75,10 +67,18 @@
   },
   {
    "worker": "Claude",
-   "game": "even-water",
-   "task": "even water visual design",
-   "since": "2026-10-22T19:26:06+00:00",
-   "activity": "2026-10-22T19:26:07+00:00",
+   "game": "own-ground",
+   "task": "own ground",
+   "since": "2026-10-22T19:36:03+00:00",
+   "activity": "2026-10-22T19:36:12+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "nobody-looking",
+   "task": "nobody looking visual design",
+   "since": "2026-10-22T19:35:27+00:00",
+   "activity": "2026-10-22T19:35:27+00:00",
    "commit": null
   }
  ],
@@ -86,8 +86,8 @@
  "claudeWorkers": 4,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 97,
-  "usdEst": 349.2,
+  "runs": 99,
+  "usdEst": 356.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -129,7 +129,7 @@
   },
   {
    "day": "2026-10-22",
-   "changes": 42
+   "changes": 44
   }
  ],
  "houseRules": 23,
@@ -4402,10 +4402,10 @@
   },
   {
    "nextTask": "even-water: build the visual round from the design",
-   "costTotalUsd": 18.0,
+   "costTotalUsd": 21.6,
    "latestChange": {
-    "text": "P2n64 review: ship, no change; visual round queued (water pillars, taps vs stones)",
-    "at": "2026-10-22T19:04:22+00:00"
+    "text": "P2n79 visual design:",
+    "at": "2026-10-22T19:35:23+00:00"
    },
    "promo": null,
    "id": "even-water",
@@ -4413,33 +4413,33 @@
    "title": "Even Water",
    "line": "",
    "url": "https://chenhsieh.github.io/even-water/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-22T19:26:07+00:00",
+   "lastChange": "2026-10-22T19:35:23+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 4,
     "earlierUsdEst": 14.4,
-    "totalUsdEst": 18.0
+    "totalUsdEst": 21.6
    },
    "tasks": [
     {
-     "title": "even water visual design",
-     "state": "running",
+     "title": "even water visual build",
+     "state": "queued",
      "worker": "Claude",
-     "plan": "even-water: visual round design (look and feel after the core passed review)",
-     "since": "2026-10-22T19:26:06+00:00",
+     "plan": "even-water: build the visual round from the design",
+     "since": "2026-10-22T19:35:23+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -4449,18 +4449,18 @@
      "result": ""
     },
     {
-     "title": "even water visual build",
-     "state": "queued",
+     "title": "even water visual design",
+     "state": "done",
      "worker": "Claude",
-     "plan": "even-water: build the visual round from the design",
+     "plan": "even-water: visual round design (look and feel after the core passed review)",
      "since": "2026-10-22T19:04:06+00:00",
-     "done": null,
+     "done": "2026-10-22T19:04:06+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "- Decision: Even Water becomes rice terraces in section: one stepped earth profile, water in paddies held by earth bunds (so the \"water pillar\" now reads as a paddy held above its neighbour), river stones set into the..."
     },
     {
      "title": "even water",
@@ -4479,9 +4479,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": {
     "date": "2026-10-22",
@@ -4491,6 +4491,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-22T19:35:23+00:00",
+     "ok": true,
+     "note": "P2n79 visual design:",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T19:04:22+00:00",
      "ok": true,
@@ -7589,7 +7595,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 10.8,
+   "costTotalUsd": 14.4,
    "latestChange": {
     "text": "Open pages to read their glyph names, compare, then name the last plant; wrong names cost...",
     "at": "2026-10-22T19:27:40+00:00"
@@ -7616,9 +7622,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 2,
-    "earlierUsdEst": 7.2,
-    "totalUsdEst": 10.8
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
+    "totalUsdEst": 14.4
    },
    "tasks": [
     {
@@ -7651,6 +7657,12 @@
      "ok": true,
      "note": "Open pages to read their glyph names, compare, then name the last plant; wrong names cost hearts; marked glyphs and name-only pages later. Placeholder shapes, live.",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-22T19:25:34+00:00",
+     "ok": true,
+     "note": "Herbal of Nowhere:",
+     "source": "main commit"
     },
     {
      "at": "2026-10-22T19:04:21+00:00",
@@ -12041,7 +12053,7 @@
    ]
   },
   {
-   "nextTask": "nobody-looking: visual round design (look and feel after...",
+   "nextTask": "nobody-looking: build the visual round from the design",
    "costTotalUsd": 18.0,
    "latestChange": {
     "text": "P2n63 review: ship, no change; visual round queued",
@@ -12053,14 +12065,14 @@
    "title": "Nobody Looking",
    "line": "",
    "url": "https://chenhsieh.github.io/nobody-looking/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Slide eyes and mouths until no face is left; placeholder shapes, 12 shelves",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T17:56:06+00:00",
-   "lastChange": "2026-10-22T19:14:05+00:00",
+   "lastChange": "2026-10-22T19:35:27+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12076,10 +12088,10 @@
    "tasks": [
     {
      "title": "nobody looking visual design",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "nobody-looking: visual round design (look and feel after the core passed review)",
-     "since": "2026-10-22T19:13:54+00:00",
+     "since": "2026-10-22T19:35:27+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -12118,8 +12130,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -12572,6 +12584,73 @@
   },
   {
    "nextTask": null,
+   "costTotalUsd": 3.6,
+   "latestChange": {
+    "text": "Initial commit",
+    "at": "2026-10-22T19:36:08+00:00"
+   },
+   "promo": null,
+   "id": "own-ground",
+   "repo": "own-ground",
+   "title": "Own Ground",
+   "line": "",
+   "url": "https://chenhsieh.github.io/own-ground/",
+   "stage": "building",
+   "who": "Claude",
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "firstSeen": "2026-10-22T19:36:03+00:00",
+   "lastChange": "2026-10-22T19:36:12+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 0.0,
+    "earlierRounds": 1,
+    "earlierUsdEst": 3.6,
+    "totalUsdEst": 3.6
+   },
+   "tasks": [
+    {
+     "title": "own ground",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "New game: a little builder that can only stand on what it has built; get the shape up and walk out",
+     "since": "2026-10-22T19:36:03+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "taskCounts": {
+    "queued": 0,
+    "running": 1,
+    "waitingDesign": 0,
+    "done": 0
+   },
+   "verdict": null,
+   "needsYou": null,
+   "inProgress": true,
+   "history": [
+    {
+     "at": "2026-10-22T19:36:08+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
+    }
+   ]
+  },
+  {
+   "nextTask": null,
    "costTotalUsd": 29.25,
    "latestChange": {
     "text": "feat: give Peony Dream its own logo and link preview",
@@ -12731,10 +12810,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 7.2,
+   "costTotalUsd": 10.8,
    "latestChange": {
-    "text": "feat: Pigeon Salon starts from the Play Lab game template",
-    "at": "2026-10-22T19:14:17+00:00"
+    "text": "twelve levels: tap a painting the patron likes, then one they like less; the pigeon...",
+    "at": "2026-10-22T19:36:00+00:00"
    },
    "promo": null,
    "id": "pigeon-salon",
@@ -12742,34 +12821,34 @@
    "title": "Pigeon Salon",
    "line": "",
    "url": "https://chenhsieh.github.io/pigeon-salon/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
-   "firstSeen": "2026-10-22T19:12:51+00:00",
-   "lastChange": "2026-10-22T19:19:35+00:00",
+   "firstSeen": "2026-10-22T18:48:50+00:00",
+   "lastChange": "2026-10-22T19:36:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 2,
     "earlierUsdEst": 7.2,
-    "totalUsdEst": 7.2
+    "totalUsdEst": 10.8
    },
    "tasks": [
     {
      "title": "pigeon salon",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "New game: teach a pigeon to rank paintings the way a patron wants",
-     "since": "2026-10-22T19:12:51+00:00",
-     "done": null,
+     "since": "2026-10-22T18:48:50+00:00",
+     "done": "2026-10-22T18:48:50+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -12780,14 +12859,20 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-22T19:36:00+00:00",
+     "ok": true,
+     "note": "twelve levels: tap a painting the patron likes, then one they like less; the pigeon re-hangs the gallery by what it learned. Greedy bot misses par on 9 of 9 graded levels, random under 5%.",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T19:14:17+00:00",
      "ok": true,
