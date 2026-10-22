@@ -1,15 +1,17 @@
 {
- "generated": "2026-10-22T02:06:20+00:00",
+ "generated": "2026-10-22T02:08:32+00:00",
  "ops": {
-  "count": 19,
+  "count": 21,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
+   "A running task has shown no progress for over 3 hours.",
    "A status note names something that is not a game.",
    "Two tasks share the number P1c09."
   ]
  },
  "about": [
   "A game changed in the last hour with no claimed task on it.",
+  "A running task has shown no progress for over 3 hours.",
   "A status note names something that is not a game.",
   "Two tasks share the number P1c09."
  ],
@@ -30,43 +32,40 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 19,
+    "queued": 18,
     "running": 1,
-    "doneToday": 50,
-    "minutes": 336,
-    "estimateMinutes": 336
+    "doneToday": 51,
+    "minutes": 324,
+    "estimateMinutes": 324
    }
   },
-  "queued": 19,
+  "queued": 18,
   "running": 1,
-  "doneToday": 145,
+  "doneToday": 146,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 336,
-  "estimatedFinish": "2026-10-22T07:42:20+00:00",
-  "estimateMinutes": 336
+  "minutesRemaining": 324,
+  "estimatedFinish": "2026-10-22T07:32:32+00:00",
+  "estimateMinutes": 324
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "floor-area",
-   "task": "floor area rooftop",
-   "since": "2026-10-22T01:45:10+00:00",
-   "activity": "2026-10-22T02:05:41+00:00",
-   "commit": {
-    "at": "2026-10-22T02:05:35+00:00",
-    "subject": "feat: rooftop inspector, props and water tank above the street line"
-   }
+   "game": "alias-loaf",
+   "task": "alias loaf gradual",
+   "since": "2026-10-22T02:06:29+00:00",
+   "activity": "2026-10-22T02:08:03+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 0,
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 41,
-  "usdEst": 147.6,
+  "runs": 42,
+  "usdEst": 151.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -104,7 +103,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 391
+   "changes": 392
   }
  ],
  "houseRules": 23,
@@ -262,7 +261,7 @@
    ]
   },
   {
-   "nextTask": "alias loaf gradual",
+   "nextTask": null,
    "costTotalUsd": 39.6,
    "latestChange": {
     "text": "see",
@@ -274,14 +273,14 @@
    "title": "Alias Loaf",
    "line": "Set the cutter to catch one seed family.",
    "url": "https://chenhsieh.github.io/alias-loaf/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Introduce the mechanics one at a time and give the player a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/alias-loaf-1.webp",
    "firstSeen": "2026-10-14T23:09:53+00:00",
-   "lastChange": "2026-10-21T06:20:20+00:00",
+   "lastChange": "2026-10-22T02:08:03+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -297,10 +296,10 @@
    "tasks": [
     {
      "title": "alias loaf gradual",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "",
-     "since": "2026-10-21T06:20:20+00:00",
+     "since": "2026-10-22T02:06:29+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -325,8 +324,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -4636,10 +4635,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 21.77,
+   "costTotalUsd": 28.97,
    "latestChange": {
-    "text": "Q3g_floor-area-rooftop handed to Claude: Codex hit the 90 min cap;",
-    "at": "2026-10-21T06:31:22+00:00"
+    "text": "Q3g rooftop inspector + props + water tank live; short-phone title overlap fixed",
+    "at": "2026-10-22T02:06:26+00:00"
    },
    "promo": null,
    "id": "floor-area",
@@ -4647,42 +4646,39 @@
    "title": "Floor Area",
    "line": "Drop floor slabs from a crane to fill a stepped skyline with no gaps.",
    "url": "https://chenhsieh.github.io/floor-area/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "shelf",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Find a creative twist",
    "shelfNote": "not fun enough; credit removed (R06).",
    "image": "https://chenhsieh.github.io/play-lab/images/games/floor-area-1.webp",
    "firstSeen": "2026-10-16T01:23:59+00:00",
-   "lastChange": "2026-10-22T02:05:41+00:00",
+   "lastChange": "2026-10-22T02:06:26+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 4,
     "codexTokens": 137610,
     "codexUsdEst": 0.17,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
-    "totalUsdEst": 21.77
+    "claudeUsdEst": 7.2,
+    "earlierRounds": 6,
+    "earlierUsdEst": 21.6,
+    "totalUsdEst": 28.97
    },
    "tasks": [
     {
      "title": "floor area rooftop",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "",
-     "since": "2026-10-22T01:45:10+00:00",
-     "done": null,
+     "since": "2026-10-21T21:08:25+00:00",
+     "done": "2026-10-21T21:08:25+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-22T02:05:35+00:00",
-      "subject": "feat: rooftop inspector, props and water tank above the street line"
-     },
+     "commit": null,
      "result": ""
     },
     {
@@ -4772,14 +4768,26 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-22T02:06:26+00:00",
+     "ok": true,
+     "note": "Q3g rooftop inspector + props + water tank live; short-phone title overlap fixed",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-22T02:05:41+00:00",
+     "ok": true,
+     "note": "feat: rooftop inspector, props and a water tank",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-21T06:31:22+00:00",
      "ok": false,
@@ -4838,12 +4846,6 @@
      "at": "2026-10-16T01:41:09+00:00",
      "ok": true,
      "note": "feat: drop floor slabs under a stepped sky line and use every one",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-16T01:23:59+00:00",
-     "ok": true,
-     "note": "Initial commit",
      "source": "main commit"
     }
    ]
