@@ -1,5 +1,5 @@
 {
- "generated": 1792712240,
+ "generated": 1792712443,
  "defaultPercentPerCodexTask": 0.25,
  "tasks": [
   {
@@ -90,22 +90,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P3OR18_restored-engine-test",
-   "request": "Restored: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
-   "game": "Restored",
-   "route": "OpenRouter",
-   "model": "openrouter/openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "running",
-   "at": 1792711669,
-   "created": 1792711669
-  },
-  {
    "id": "P2FM36_shortest-law-first-minute",
    "request": "Shortest Law: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
    "game": "Shortest Law",
@@ -174,7 +158,7 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P2n66_review-herbal-of-nowhere-and-blackout-notice",
+   "id": "P2n67_review-radish-omelette-and-not-yet",
    "request": "Stranger play-through and ship-or-revise call for two new games",
    "game": "Studio",
    "route": "Claude",
@@ -184,13 +168,33 @@
    "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2n59_herbal-of-nowhere",
-    "P2n60_blackout-notice"
+    "P2n61_radish-omelette",
+    "P2n62_not-yet"
    ],
    "priority": null,
    "state": "running",
-   "at": 1792691830,
-   "created": 1792691830
+   "at": 1792691834,
+   "created": 1792691834
+  },
+  {
+   "id": "P2n77_review-own-ground-restored-and-same-badge",
+   "request": "Stranger play-through and ship-or-revise call for three new games",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2n74_own-ground",
+    "P2n75_restored",
+    "P2n76_same-badge"
+   ],
+   "priority": null,
+   "state": "running",
+   "at": 1792692389,
+   "created": 1792692389
   },
   {
    "id": "P1MH56_print-hero-and-card-sizes",
@@ -329,22 +333,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P3OR21_copy-drift-engine-test",
-   "request": "Copy Drift: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
-   "game": "Copy Drift",
-   "route": "OpenRouter",
-   "model": "openrouter/openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792711669
-  },
-  {
    "id": "P3d35_lens-screen-studio-320-fix",
    "request": "Lens Screen: finish the client-studio round (one element spills off the left edge on the last level at 320 wide), then publish",
    "game": "Lens Screen",
@@ -445,45 +433,6 @@
    "waitingOn": [],
    "created": 1792704554,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2n67_review-radish-omelette-and-not-yet",
-   "request": "Stranger play-through and ship-or-revise call for two new games",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2n61_radish-omelette",
-    "P2n62_not-yet"
-   ],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792691834
-  },
-  {
-   "id": "P2n77_review-own-ground-restored-and-same-badge",
-   "request": "Stranger play-through and ship-or-revise call for three new games",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2n74_own-ground",
-    "P2n75_restored",
-    "P2n76_same-badge"
-   ],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792692389
   },
   {
    "id": "P2n86_round4-template-repos",
@@ -1507,6 +1456,22 @@
    "created": 1792703790
   },
   {
+   "id": "P3OR18_restored-engine-test",
+   "request": "Restored: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
+   "game": "Restored",
+   "route": "OpenRouter",
+   "model": "openrouter/openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "done",
+   "at": 1792711669,
+   "created": 1792711669
+  },
+  {
    "id": "P3OR19_radish-omelette-engine-test",
    "request": "Radish Omelette: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
    "game": "Radish Omelette",
@@ -1537,6 +1502,22 @@
    "state": "done",
    "at": 1792703790,
    "created": 1792703790
+  },
+  {
+   "id": "P3OR21_copy-drift-engine-test",
+   "request": "Copy Drift: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
+   "game": "Copy Drift",
+   "route": "OpenRouter",
+   "model": "openrouter/openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "done",
+   "at": 1792711669,
+   "created": 1792711669
   },
   {
    "id": "P3OR22_coat-corridor-engine-test",
@@ -1886,6 +1867,25 @@
    "state": "done",
    "at": 1792691826,
    "created": 1792691826
+  },
+  {
+   "id": "P2n66_review-herbal-of-nowhere-and-blackout-notice",
+   "request": "Stranger play-through and ship-or-revise call for two new games",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2n59_herbal-of-nowhere",
+    "P2n60_blackout-notice"
+   ],
+   "priority": null,
+   "state": "done",
+   "at": 1792691830,
+   "created": 1792691830
   },
   {
    "id": "P3OR07_where-and-when-scoring-test",
