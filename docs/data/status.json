@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-22T19:25:32+00:00",
+ "generated": "2026-10-22T19:27:44+00:00",
  "ops": {
-  "count": 22,
+  "count": 23,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -25,28 +25,28 @@
    "Codex": {
     "queued": 0,
     "running": 0,
-    "doneToday": 2,
+    "doneToday": 3,
     "minutes": 0,
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 15,
-    "running": 5,
-    "doneToday": 33,
-    "minutes": 528,
-    "estimateMinutes": 528
+    "queued": 14,
+    "running": 4,
+    "doneToday": 35,
+    "minutes": 456,
+    "estimateMinutes": 456
    }
   },
-  "queued": 15,
-  "running": 5,
-  "doneToday": 35,
+  "queued": 14,
+  "running": 4,
+  "doneToday": 38,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 528,
-  "estimatedFinish": "2026-10-23T04:13:32+00:00",
-  "estimateMinutes": 528
+  "minutesRemaining": 456,
+  "estimatedFinish": "2026-10-23T03:03:44+00:00",
+  "estimateMinutes": 456
  },
  "lanes": [
   {
@@ -67,14 +67,6 @@
   },
   {
    "worker": "Claude",
-   "game": "herbal-of-nowhere",
-   "task": "herbal of nowhere",
-   "since": "2026-10-22T19:02:55+00:00",
-   "activity": "2026-10-22T19:04:21+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
    "game": "same-badge",
    "task": "same badge",
    "since": "2026-10-22T19:15:59+00:00",
@@ -83,19 +75,19 @@
   },
   {
    "worker": "Claude",
-   "game": "copy-drift",
-   "task": "copy drift visual design",
-   "since": "2026-10-22T19:14:31+00:00",
-   "activity": "2026-10-22T19:15:01+00:00",
+   "game": "even-water",
+   "task": "even water visual design",
+   "since": "2026-10-22T19:26:06+00:00",
+   "activity": "2026-10-22T19:26:07+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 5,
+ "claudeWorkers": 4,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 94,
-  "usdEst": 338.4,
+  "runs": 96,
+  "usdEst": 345.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -137,7 +129,7 @@
   },
   {
    "day": "2026-10-22",
-   "changes": 39
+   "changes": 41
   }
  ],
  "houseRules": 23,
@@ -2790,10 +2782,10 @@
   },
   {
    "nextTask": "copy-drift: build the visual round from the design",
-   "costTotalUsd": 25.2,
+   "costTotalUsd": 28.8,
    "latestChange": {
-    "text": "P2n64 review: ship; each copyist card previews its result; level 8 is now AX>47>人工>AI...",
-    "at": "2026-10-22T19:04:22+00:00"
+    "text": "P2n78 visual design:",
+    "at": "2026-10-22T19:26:02+00:00"
    },
    "promo": null,
    "id": "copy-drift",
@@ -2801,33 +2793,33 @@
    "title": "Copy Drift",
    "line": "",
    "url": "https://chenhsieh.github.io/copy-drift/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T17:56:12+00:00",
-   "lastChange": "2026-10-22T19:15:01+00:00",
+   "lastChange": "2026-10-22T19:26:02+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 6,
     "earlierUsdEst": 21.6,
-    "totalUsdEst": 25.2
+    "totalUsdEst": 28.8
    },
    "tasks": [
     {
-     "title": "copy drift visual design",
-     "state": "running",
+     "title": "copy drift visual build",
+     "state": "queued",
      "worker": "Claude",
-     "plan": "copy-drift: visual round design (look and feel after the core passed review)",
-     "since": "2026-10-22T19:14:31+00:00",
+     "plan": "copy-drift: build the visual round from the design",
+     "since": "2026-10-22T19:25:53+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2837,18 +2829,18 @@
      "result": ""
     },
     {
-     "title": "copy drift visual build",
-     "state": "queued",
+     "title": "copy drift visual design",
+     "state": "done",
      "worker": "Claude",
-     "plan": "copy-drift: build the visual round from the design",
+     "plan": "copy-drift: visual round design (look and feel after the core passed review)",
      "since": "2026-10-22T19:04:06+00:00",
-     "done": null,
+     "done": "2026-10-22T19:04:06+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "- Decision: Copy Drift becomes a carbon duplicate book (複寫簿): each copy tears off the top ply and shows the next one (white, canary, pink) in carbon blue; red only underlines a mark that matches the target (it used to..."
     },
     {
      "title": "copy drift",
@@ -2867,9 +2859,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": {
     "date": "2026-10-22",
@@ -2879,6 +2871,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-22T19:26:02+00:00",
+     "ok": true,
+     "note": "P2n78 visual design:",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T19:04:22+00:00",
      "ok": true,
@@ -4403,7 +4401,7 @@
    ]
   },
   {
-   "nextTask": "even-water: visual round design (look and feel after...",
+   "nextTask": "even-water: build the visual round from the design",
    "costTotalUsd": 18.0,
    "latestChange": {
     "text": "P2n64 review: ship, no change; visual round queued (water pillars, taps vs stones)",
@@ -4415,14 +4413,14 @@
    "title": "Even Water",
    "line": "",
    "url": "https://chenhsieh.github.io/even-water/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-22T19:04:22+00:00",
+   "lastChange": "2026-10-22T19:26:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -4438,10 +4436,10 @@
    "tasks": [
     {
      "title": "even water visual design",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "even-water: visual round design (look and feel after the core passed review)",
-     "since": "2026-10-22T19:04:06+00:00",
+     "since": "2026-10-22T19:26:06+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -4480,8 +4478,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -7591,10 +7589,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 7.2,
+   "costTotalUsd": 10.8,
    "latestChange": {
-    "text": "feat: Herbal of Nowhere starts from the Play Lab game template",
-    "at": "2026-10-22T19:04:21+00:00"
+    "text": "Open pages to read their glyph names, compare, then name the last plant; wrong names cost...",
+    "at": "2026-10-22T19:27:40+00:00"
    },
    "promo": null,
    "id": "herbal-of-nowhere",
@@ -7602,34 +7600,34 @@
    "title": "Herbal Of Nowhere",
    "line": "",
    "url": "https://chenhsieh.github.io/herbal-of-nowhere/",
-   "stage": "building",
-   "who": "Claude",
-   "priority": null,
-   "priorityNote": "",
+   "stage": "live",
+   "who": null,
+   "priority": "P2",
+   "priorityNote": "placeholder shapes, 12 folios",
    "shelfNote": "",
    "image": null,
-   "firstSeen": "2026-10-22T19:02:55+00:00",
-   "lastChange": "2026-10-22T19:04:21+00:00",
+   "firstSeen": "2026-10-22T18:07:55+00:00",
+   "lastChange": "2026-10-22T19:27:40+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 2,
     "earlierUsdEst": 7.2,
-    "totalUsdEst": 7.2
+    "totalUsdEst": 10.8
    },
    "tasks": [
     {
      "title": "herbal of nowhere",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "New game: learn an unknown herbal's words from its pictures",
-     "since": "2026-10-22T19:02:55+00:00",
-     "done": null,
+     "since": "2026-10-22T18:07:55+00:00",
+     "done": "2026-10-22T18:07:55+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -7640,14 +7638,20 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-22T19:27:40+00:00",
+     "ok": true,
+     "note": "Open pages to read their glyph names, compare, then name the last plant; wrong names cost hearts; marked glyphs and name-only pages later. Placeholder shapes, live.",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T19:04:21+00:00",
      "ok": true,
