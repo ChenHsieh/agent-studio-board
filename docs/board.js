@@ -238,7 +238,7 @@ function gameHtml(g) {
 }
 
 function renderViews() {
-  const count = (v) => v === 'queue' ? ((requests && requests.tasks) || []).filter((t) => t.state !== 'done').length : data.games.filter(IN_VIEW[v]).length;
+  const count = (v) => v === 'queue' ? ((requests && requests.tasks) || []).filter((t) => t.state !== 'done').length : data.games.filter(IN_VIEW[v]).length + (v === 'needs' ? (data.systemNeeds || []).length : 0);
   $('#views').innerHTML = VIEWS.map(([v, label]) => `<button class="view" role="tab" data-view="${v}" aria-selected="${v === view}">${label} <b>${count(v)}</b></button>`).join('');
 }
 
@@ -296,6 +296,10 @@ function render() {
   paintGauge();
   const list = data.games.filter((g) => (!q || (g.title + ' ' + g.id + ' ' + (g.line || '')).toLowerCase().includes(q)) && IN_VIEW[view](g) && matches(g)).sort(compare);
   let html = '', lastGroup = '';
+  // System needs: what the pipeline itself is waiting on from a human (quota, a login, a stuck build), one line each.
+  if (view === 'needs' && (data.systemNeeds || []).length) {
+    html += '<li class="prio-h" role="presentation">The studio needs</li>' + data.systemNeeds.map((t) => `<li class="sys-need"><b class="ask">System needs:</b> ${esc(String(t).replace(/^System needs:\s*/, ''))}</li>`).join('');
+  }
   for (const g of list) {
     if (view === 'needs') { const [key, label] = whyKind(g); if (key !== lastGroup) { html += `<li class="prio-h" role="presentation">${label}</li>`; lastGroup = key; } }
     html += gameHtml(g);
