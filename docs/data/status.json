@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-22T18:46:18+00:00",
+ "generated": "2026-10-22T18:48:54+00:00",
  "ops": {
-  "count": 22,
+  "count": 23,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -25,28 +25,28 @@
    "Codex": {
     "queued": 0,
     "running": 0,
-    "doneToday": 0,
+    "doneToday": 1,
     "minutes": 0,
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 15,
+    "queued": 13,
     "running": 4,
-    "doneToday": 26,
-    "minutes": 468,
-    "estimateMinutes": 468
+    "doneToday": 28,
+    "minutes": 444,
+    "estimateMinutes": 444
    }
   },
-  "queued": 15,
+  "queued": 13,
   "running": 4,
-  "doneToday": 26,
+  "doneToday": 29,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 468,
-  "estimatedFinish": "2026-10-23T02:34:18+00:00",
-  "estimateMinutes": 468
+  "minutesRemaining": 444,
+  "estimatedFinish": "2026-10-23T02:12:54+00:00",
+  "estimateMinutes": 444
  },
  "lanes": [
   {
@@ -59,14 +59,6 @@
   },
   {
    "worker": "Claude",
-   "game": "nobody-looking",
-   "task": "nobody looking",
-   "since": "2026-10-22T17:58:59+00:00",
-   "activity": "2026-10-22T18:45:32+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
    "game": "morning-three",
    "task": "morning three",
    "since": "2026-10-22T17:59:00+00:00",
@@ -75,19 +67,19 @@
   },
   {
    "worker": "Claude",
-   "game": "blackout-notice",
-   "task": "blackout notice",
-   "since": "2026-10-22T18:35:17+00:00",
-   "activity": "2026-10-22T18:46:08+00:00",
+   "game": "Multiple games",
+   "task": "review copy drift and even water",
+   "since": null,
+   "activity": null,
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 4,
+ "claudeWorkers": 3,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 87,
-  "usdEst": 313.2,
+  "runs": 89,
+  "usdEst": 320.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -129,7 +121,7 @@
   },
   {
    "day": "2026-10-22",
-   "changes": 30
+   "changes": 32
   }
  ],
  "houseRules": 23,
@@ -1379,10 +1371,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 7.2,
+   "costTotalUsd": 10.8,
    "latestChange": {
-    "text": "feat: Blackout Notice starts from the Play Lab game template",
-    "at": "2026-10-22T18:36:45+00:00"
+    "text": "Black out words on a stairwell notice until it says something kinder; small picture...",
+    "at": "2026-10-22T18:48:06+00:00"
    },
    "promo": null,
    "id": "blackout-notice",
@@ -1390,52 +1382,58 @@
    "title": "Blackout Notice",
    "line": "",
    "url": "https://chenhsieh.github.io/blackout-notice/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
-   "firstSeen": "2026-10-22T18:35:17+00:00",
-   "lastChange": "2026-10-22T18:46:08+00:00",
+   "firstSeen": "2026-10-22T18:07:55+00:00",
+   "lastChange": "2026-10-22T18:48:06+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 2,
     "earlierUsdEst": 7.2,
-    "totalUsdEst": 7.2
+    "totalUsdEst": 10.8
    },
    "tasks": [
     {
      "title": "blackout notice",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "New game: black out a stiff notice until it says something true",
-     "since": "2026-10-22T18:35:17+00:00",
-     "done": null,
+     "since": "2026-10-22T18:07:55+00:00",
+     "done": "2026-10-22T18:07:55+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P2n60_blackout-notice RESULT (Sonnet/high). LIVE https://chenhsieh.github.io/blackout-notice/ commit on main"
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-22T18:48:06+00:00",
+     "ok": true,
+     "note": "Black out words on a stairwell notice until it says something kinder; small picture conditions say what must stay",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T18:36:45+00:00",
      "ok": true,
@@ -4340,7 +4338,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 7.2,
+   "costTotalUsd": 14.4,
    "latestChange": {
     "text": "Place a few stones so the water finds every cup before the deep pit drinks it; 12...",
     "at": "2026-10-22T18:35:17+00:00"
@@ -4367,9 +4365,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 1,
-    "earlierUsdEst": 3.6,
-    "totalUsdEst": 7.2
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
+    "totalUsdEst": 14.4
    },
    "tasks": [
     {
@@ -4402,6 +4400,18 @@
      "ok": true,
      "note": "Place a few stones so the water finds every cup before the deep pit drinks it; 12 villages with splitters and a drifting spout",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-22T18:34:18+00:00",
+     "ok": true,
+     "note": "Even Water: stones steer water so every cup is fed (12 villages, solver measured)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T18:16:44+00:00",
+     "ok": true,
+     "note": "feat: Even Water starts from the Play Lab game template",
+     "source": "main commit"
     },
     {
      "at": "2026-10-22T18:15:18+00:00",
@@ -11795,10 +11805,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 7.2,
+   "costTotalUsd": 10.8,
    "latestChange": {
-    "text": "feat: Nobody Looking starts from the Play Lab game template",
-    "at": "2026-10-22T18:00:33+00:00"
+    "text": "Twelve shelves of eyes and mouths; slide pieces until no face is left, pins from shelf 4,...",
+    "at": "2026-10-22T18:48:08+00:00"
    },
    "promo": null,
    "id": "nobody-looking",
@@ -11806,34 +11816,34 @@
    "title": "Nobody Looking",
    "line": "",
    "url": "https://chenhsieh.github.io/nobody-looking/",
-   "stage": "building",
-   "who": "Claude",
-   "priority": null,
-   "priorityNote": "",
+   "stage": "live",
+   "who": null,
+   "priority": "P2",
+   "priorityNote": "Slide eyes and mouths until no face is left; placeholder shapes, 12 shelves",
    "shelfNote": "",
    "image": null,
-   "firstSeen": "2026-10-22T17:58:59+00:00",
-   "lastChange": "2026-10-22T18:45:32+00:00",
+   "firstSeen": "2026-10-22T17:56:06+00:00",
+   "lastChange": "2026-10-22T18:48:08+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 2,
     "earlierUsdEst": 7.2,
-    "totalUsdEst": 7.2
+    "totalUsdEst": 10.8
    },
    "tasks": [
     {
      "title": "nobody looking",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "New game: tidy a shelf so nothing on it looks like a face",
-     "since": "2026-10-22T17:58:59+00:00",
-     "done": null,
+     "since": "2026-10-22T17:56:06+00:00",
+     "done": "2026-10-22T17:56:06+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -11844,14 +11854,20 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-22T18:48:08+00:00",
+     "ok": true,
+     "note": "Twelve shelves of eyes and mouths; slide pieces until no face is left, pins from shelf 4, upside-down faces from 7. Placeholder shapes, live.",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T18:00:33+00:00",
      "ok": true,
