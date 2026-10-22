@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-22T18:34:39+00:00",
+ "generated": "2026-10-22T18:36:53+00:00",
  "ops": {
-  "count": 21,
+  "count": 22,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -30,23 +30,23 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 16,
+    "queued": 15,
     "running": 4,
-    "doneToday": 25,
-    "minutes": 480,
-    "estimateMinutes": 480
+    "doneToday": 26,
+    "minutes": 468,
+    "estimateMinutes": 468
    }
   },
-  "queued": 16,
+  "queued": 15,
   "running": 4,
-  "doneToday": 25,
+  "doneToday": 26,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 480,
-  "estimatedFinish": "2026-10-23T02:34:39+00:00",
-  "estimateMinutes": 480
+  "minutesRemaining": 468,
+  "estimatedFinish": "2026-10-23T02:24:53+00:00",
+  "estimateMinutes": 468
  },
  "lanes": [
   {
@@ -75,10 +75,10 @@
   },
   {
    "worker": "Claude",
-   "game": "even-water",
-   "task": "even water",
-   "since": "2026-10-22T18:15:15+00:00",
-   "activity": "2026-10-22T18:34:18+00:00",
+   "game": "blackout-notice",
+   "task": "blackout notice",
+   "since": "2026-10-22T18:35:17+00:00",
+   "activity": "2026-10-22T18:36:45+00:00",
    "commit": null
   }
  ],
@@ -86,8 +86,8 @@
  "claudeWorkers": 4,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 86,
-  "usdEst": 309.6,
+  "runs": 87,
+  "usdEst": 313.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -129,7 +129,7 @@
   },
   {
    "day": "2026-10-22",
-   "changes": 29
+   "changes": 30
   }
  ],
  "houseRules": 23,
@@ -1373,6 +1373,79 @@
      "at": "2026-08-20T03:51:36+00:00",
      "ok": true,
      "note": "Package biosteganography for archival",
+     "source": "main commit"
+    }
+   ]
+  },
+  {
+   "nextTask": null,
+   "costTotalUsd": 7.2,
+   "latestChange": {
+    "text": "feat: Blackout Notice starts from the Play Lab game template",
+    "at": "2026-10-22T18:36:45+00:00"
+   },
+   "promo": null,
+   "id": "blackout-notice",
+   "repo": "blackout-notice",
+   "title": "Blackout Notice",
+   "line": "",
+   "url": "https://chenhsieh.github.io/blackout-notice/",
+   "stage": "building",
+   "who": "Claude",
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "firstSeen": "2026-10-22T18:35:17+00:00",
+   "lastChange": "2026-10-22T18:36:45+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 0.0,
+    "earlierRounds": 2,
+    "earlierUsdEst": 7.2,
+    "totalUsdEst": 7.2
+   },
+   "tasks": [
+    {
+     "title": "blackout notice",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "New game: black out a stiff notice until it says something true",
+     "since": "2026-10-22T18:35:17+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "taskCounts": {
+    "queued": 0,
+    "running": 1,
+    "waitingDesign": 0,
+    "done": 0
+   },
+   "verdict": null,
+   "needsYou": null,
+   "inProgress": true,
+   "history": [
+    {
+     "at": "2026-10-22T18:36:45+00:00",
+     "ok": true,
+     "note": "feat: Blackout Notice starts from the Play Lab game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T18:35:19+00:00",
+     "ok": true,
+     "note": "Initial commit",
      "source": "main commit"
     }
    ]
@@ -4267,10 +4340,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 3.6,
+   "costTotalUsd": 7.2,
    "latestChange": {
-    "text": "Initial commit",
-    "at": "2026-10-22T18:15:18+00:00"
+    "text": "Place a few stones so the water finds every cup before the deep pit drinks it; 12...",
+    "at": "2026-10-22T18:35:17+00:00"
    },
    "promo": null,
    "id": "even-water",
@@ -4278,52 +4351,58 @@
    "title": "Even Water",
    "line": "",
    "url": "https://chenhsieh.github.io/even-water/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
-   "firstSeen": "2026-10-22T18:15:15+00:00",
-   "lastChange": "2026-10-22T18:34:18+00:00",
+   "firstSeen": "2026-10-22T18:07:55+00:00",
+   "lastChange": "2026-10-22T18:35:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 1,
     "earlierUsdEst": 3.6,
-    "totalUsdEst": 3.6
+    "totalUsdEst": 7.2
    },
    "tasks": [
     {
      "title": "even water",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "New game: one pour of water, set stones so every cup gets some",
-     "since": "2026-10-22T18:15:15+00:00",
-     "done": null,
+     "since": "2026-10-22T18:07:55+00:00",
+     "done": "2026-10-22T18:07:55+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P2n56_even-water RESULT (Sonnet/high). LIVE https://chenhsieh.github.io/even-water/ commit on main"
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-22T18:35:17+00:00",
+     "ok": true,
+     "note": "Place a few stones so the water finds every cup before the deep pit drinks it; 12 villages with splitters and a drifting spout",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T18:15:18+00:00",
      "ok": true,
@@ -5472,7 +5551,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 75.6,
+   "costTotalUsd": 79.2,
    "latestChange": {
     "text": "long strokes keep a faint trace to the end",
     "at": "2026-10-22T18:10:35+00:00"
@@ -5499,9 +5578,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 32.4,
-    "earlierRounds": 12,
-    "earlierUsdEst": 43.2,
-    "totalUsdEst": 75.6
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
+    "totalUsdEst": 79.2
    },
    "tasks": [
     {
@@ -5638,6 +5717,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-22T18:09:41+00:00",
+     "ok": true,
+     "note": "fix: a long stroke keeps a faint trace to its end",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-22T17:36:54+00:00",
      "ok": true,
      "note": "not merged or published: both are excluded from the live game's pool (game_src.js line 460); bank/gates green; before/after pipeline/results/P1FW48_lanting_before_after.png",
@@ -5696,12 +5781,6 @@
      "ok": true,
      "note": "feat: the teacher circles what is good",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T16:13:41+00:00",
-     "ok": false,
-     "note": "see",
-     "source": "board note"
     }
    ]
   },
