@@ -1,7 +1,39 @@
 {
- "generated": 1792702672,
+ "generated": 1792702999,
  "defaultPercentPerCodexTask": 0.25,
  "tasks": [
+  {
+   "id": "P3OR01_bluebook-guess-sky-test",
+   "request": "Blue Book: add a test for sky position and nearest-star helpers (OpenRouter lane)",
+   "game": "Bluebook Guess",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "state": "running",
+   "at": 1792702545,
+   "created": 1792702545
+  },
+  {
+   "id": "P3OR02_remote-viewer-judge-helpers-test",
+   "request": "Remote Viewer: add a test for text cleanup, word stems and the seeded daily pick (OpenRouter lane)",
+   "game": "Remote Viewer",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "state": "running",
+   "at": 1792702548,
+   "created": 1792702548
+  },
   {
    "id": "P2FM02_copy-drift-first-minute",
    "request": "Copy Drift: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
@@ -71,6 +103,40 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P2FM13_same-badge-first-minute",
+   "request": "Same Badge: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+   "game": "Same Badge",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "first-minute",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "running",
+   "at": 1792702923,
+   "created": 1792702923,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2FM14_speaking-stone-first-minute",
+   "request": "Speaking Stone: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+   "game": "Speaking Stone",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "first-minute",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "running",
+   "at": 1792702820,
+   "created": 1792702820,
+   "estPercentOfWeek": 0.25
+  },
+  {
    "id": "P2FM16_grub-band-first-minute",
    "request": "Grub Band: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
    "game": "Grub Band",
@@ -122,6 +188,22 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P3OR03_time-material-rng-test",
+   "request": "Time Material: add a test for the seeded random generator (OpenRouter lane)",
+   "game": "Time Material",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "running",
+   "at": 1792702551,
+   "created": 1792702551
+  },
+  {
    "id": "P1LK00_starter-looks-design-six",
    "request": "Design six starter looks for new games so a game starts with a real look instead of plain shapes",
    "game": "Studio",
@@ -152,8 +234,8 @@
    ],
    "priority": null,
    "state": "running",
-   "at": 1792702388,
-   "created": 1792702388,
+   "at": 1792702852,
+   "created": 1792702852,
    "estPercentOfWeek": 0.25
   },
   {
@@ -171,6 +253,23 @@
    "state": "running",
    "at": 1792702214,
    "created": 1792702214,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2FM24_think-elephant-first-minute",
+   "request": "Think an Elephant: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+   "game": "Think Elephant",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "first-minute",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "state": "running",
+   "at": 1792702813,
+   "created": 1792702813,
    "estPercentOfWeek": 0.25
   },
   {
@@ -206,38 +305,6 @@
    "waitingOn": [],
    "created": 1792700851,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P3OR01_bluebook-guess-sky-test",
-   "request": "Blue Book: add a test for sky position and nearest-star helpers (OpenRouter lane)",
-   "game": "Bluebook Guess",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792702545
-  },
-  {
-   "id": "P3OR02_remote-viewer-judge-helpers-test",
-   "request": "Remote Viewer: add a test for text cleanup, word stems and the seeded daily pick (OpenRouter lane)",
-   "game": "Remote Viewer",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792702548
   },
   {
    "id": "P3OR04_defense-bingo-logic-test",
@@ -407,22 +474,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P3OR03_time-material-rng-test",
-   "request": "Time Material: add a test for the seeded random generator (OpenRouter lane)",
-   "game": "Time Material",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792702551
-  },
-  {
    "id": "P3OR05_slice-and-bake-mix-units-test",
    "request": "Slice and Bake: add a test for the dough kneading rules (OpenRouter lane)",
    "game": "Slice and Bake",
@@ -524,22 +575,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P3OR00_gallery-guess-words-test",
-   "request": "Gallery Guess: add a test for year labels, range overlap and midpoint order (OpenRouter lane)",
-   "game": "Gallery Guess",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P3",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792702543
-  },
-  {
    "id": "P3OR09_herbarium-guess-geometry-test",
    "request": "Herbarium Guess: add a test for map projection and distance (OpenRouter lane)",
    "game": "Herbarium Guess",
@@ -604,23 +639,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792700851,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2FM24_think-elephant-first-minute",
-   "request": "Think an Elephant: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-   "game": "Think Elephant",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792700850,
    "estPercentOfWeek": 0.25
   },
   {
@@ -1920,6 +1938,22 @@
    "state": "done",
    "at": 1792698616,
    "created": 1792698616
+  },
+  {
+   "id": "P3OR00_gallery-guess-words-test",
+   "request": "Gallery Guess: add a test for year labels, range overlap and midpoint order (OpenRouter lane)",
+   "game": "Gallery Guess",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P3",
+   "state": "done",
+   "at": 1792702543,
+   "created": 1792702543
   },
   {
    "id": "P1BD00_board-register-new-games-and-cleanup",
