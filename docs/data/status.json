@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T22:04:17+00:00",
+ "generated": "2026-10-22T22:06:56+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 68,
+    "queued": 67,
     "running": 8,
-    "doneToday": 26,
-    "minutes": 3040,
-    "estimateMinutes": 380
+    "doneToday": 27,
+    "minutes": 3000,
+    "estimateMinutes": 375
    },
    "Claude": {
     "queued": 1,
@@ -30,9 +30,9 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 69,
+  "queued": 68,
   "running": 8,
-  "doneToday": 101,
+  "doneToday": 102,
   "lanes": {
    "Codex": 8,
    "Claude": 1
@@ -42,25 +42,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3100,
-  "estimatedFinish": "2026-10-23T04:24:17+00:00",
-  "estimateMinutes": 380
+  "minutesRemaining": 3060,
+  "estimatedFinish": "2026-10-23T04:21:56+00:00",
+  "estimateMinutes": 375
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "blackout-notice",
-   "task": "P2BN00_blackout notice share zh",
-   "since": "2026-10-22T21:53:58+00:00",
-   "activity": "2026-10-22T21:53:45+00:00",
-   "commit": null
-  },
   {
    "worker": "Codex",
    "game": "even-water",
    "task": "P2FM04_even water first minute",
    "since": "2026-10-22T21:39:07+00:00",
-   "activity": "2026-10-22T22:04:14+00:00",
+   "activity": "2026-10-22T22:06:51+00:00",
    "commit": {
     "at": "2026-10-22T22:03:33+00:00",
     "subject": "wip: P2FM04_even-water-first-minute (Codex lane autosave 18:03)"
@@ -71,7 +63,7 @@
    "game": "lot-waits",
    "task": "P2FM17_lot waits first minute",
    "since": "2026-10-22T22:02:45+00:00",
-   "activity": "2026-10-22T22:04:01+00:00",
+   "activity": "2026-10-22T22:06:08+00:00",
    "commit": null
   },
   {
@@ -95,18 +87,26 @@
    "game": "seed-spiral",
    "task": "P2FM25_seed spiral first minute",
    "since": "2026-10-22T21:38:58+00:00",
-   "activity": "2026-10-22T22:04:12+00:00",
+   "activity": "2026-10-22T22:06:10+00:00",
    "commit": {
-    "at": "2026-10-22T22:01:26+00:00",
-    "subject": "fix: let one Grow tap start the first minute"
+    "at": "2026-10-22T22:05:50+00:00",
+    "subject": "test: use the first-visit Skip control"
    }
+  },
+  {
+   "worker": "Codex",
+   "game": "tractatus-tree",
+   "task": "P2FM26_tractatus tree first minute",
+   "since": "2026-10-22T22:05:24+00:00",
+   "activity": "2026-10-22T22:06:56+00:00",
+   "commit": null
   },
   {
    "worker": "Codex",
    "game": "dancers-not-mad",
    "task": "P2FM30_dancers not mad first minute",
    "since": "2026-10-22T21:35:00+00:00",
-   "activity": "2026-10-22T22:03:36+00:00",
+   "activity": "2026-10-22T22:06:53+00:00",
    "commit": {
     "at": "2026-10-22T21:59:07+00:00",
     "subject": "wip: P2FM30_dancers-not-mad-first-minute (Codex lane autosave 17:59)"
@@ -117,7 +117,7 @@
    "game": "chai-boil",
    "task": "P2FM31_chai boil first minute",
    "since": "2026-10-22T21:47:48+00:00",
-   "activity": "2026-10-22T22:04:08+00:00",
+   "activity": "2026-10-22T22:06:18+00:00",
    "commit": {
     "at": "2026-10-22T22:04:00+00:00",
     "subject": "wip: P2FM31_chai-boil-first-minute (Codex lane autosave 18:04)"
@@ -171,7 +171,7 @@
   },
   {
    "day": "2026-10-22",
-   "changes": 180
+   "changes": 181
   }
  ],
  "houseRules": 23,
@@ -1327,10 +1327,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 18.43,
+   "costTotalUsd": 22.15,
    "latestChange": {
-    "text": "feat: teach the stairwell notice in four playable steps",
-    "at": "2026-10-22T20:50:13+00:00"
+    "text": "fix: share lines follow the reader's language",
+    "at": "2026-10-22T22:05:23+00:00"
    },
    "promo": {
     "files": {
@@ -1344,40 +1344,40 @@
    "title": "Blackout Notice",
    "line": "Black out words on a stairwell notice until it says something kinder; 20 notices and a daily.",
    "url": "https://chenhsieh.github.io/blackout-notice/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Black out words on a stairwell notice until it says something kinder; 20",
    "shelfNote": "",
    "image": "promo/blackout-notice/first.jpg",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-22T21:53:45+00:00",
+   "lastChange": "2026-10-22T22:05:23+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 1,
+    "codexRuns": 2,
     "claudeRuns": 2,
     "apiRuns": 0,
-    "codexTokens": 360885,
-    "codexUsdEst": 0.43,
+    "codexTokens": 459631,
+    "codexUsdEst": 0.55,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
-    "totalUsdEst": 18.43
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
+    "totalUsdEst": 22.15
    },
    "tasks": [
     {
      "title": "P2BN00_blackout notice share zh",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Blackout Notice: the share line follows the reader's language (it stayed English in Traditional Chinese)",
-     "since": "2026-10-22T21:53:58+00:00",
-     "done": null,
+     "since": "2026-10-22T21:40:19+00:00",
+     "done": "2026-10-22T21:40:19+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 13,
+     "tokens": 98746,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "fix: share lines follow the reader's language"
     },
     {
      "title": "P3OR13_blackout notice engine test",
@@ -1424,14 +1424,26 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": null,
    "needsYou": "Read the 20 notices before it is promoted: the wording was written by the agent and no person has read it. Suggest: read levels 1 to 20 once, fix tone, then promote.",
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-22T22:05:23+00:00",
+     "ok": true,
+     "note": "fix: share lines follow the reader's language",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-22T22:04:30+00:00",
+     "ok": true,
+     "note": "fix: share lines follow the reader's language",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-22T20:50:13+00:00",
      "ok": true,
@@ -1703,7 +1715,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/chai-boil-1.webp",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-22T22:04:08+00:00",
+   "lastChange": "2026-10-22T22:06:18+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 5,
@@ -3533,7 +3545,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:37:54+00:00",
-   "lastChange": "2026-10-22T22:03:36+00:00",
+   "lastChange": "2026-10-22T22:06:53+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -4779,7 +4791,7 @@
    "shelfNote": "",
    "image": "promo/even-water/first.jpg",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-22T22:04:14+00:00",
+   "lastChange": "2026-10-22T22:06:51+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -16883,7 +16895,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/seed-spiral-1.webp",
    "firstSeen": "2026-10-14T16:39:45+00:00",
-   "lastChange": "2026-10-22T22:04:12+00:00",
+   "lastChange": "2026-10-22T22:06:10+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -16909,8 +16921,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-22T22:01:26+00:00",
-      "subject": "fix: let one Grow tap start the first minute"
+      "at": "2026-10-22T22:05:50+00:00",
+      "subject": "test: use the first-visit Skip control"
      },
      "result": ""
     },
@@ -20730,7 +20742,7 @@
    "shelfNote": "",
    "image": "promo/lot-waits/first.jpg",
    "firstSeen": "2026-10-21T21:13:02+00:00",
-   "lastChange": "2026-10-22T22:04:01+00:00",
+   "lastChange": "2026-10-22T22:06:08+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -21924,7 +21936,7 @@
    ]
   },
   {
-   "nextTask": "Tractatus Tree: add a short first-minute round so...",
+   "nextTask": null,
    "costTotalUsd": 79.48,
    "latestChange": {
     "text": "see",
@@ -21936,14 +21948,14 @@
    "title": "Tractatus Tree",
    "line": "The numbered pages of a 1921 book are shuffled into a few.",
    "url": "https://chenhsieh.github.io/tractatus-tree/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Teach the philosophy gradually through play, not as homework",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/tractatus-tree-1.webp",
    "firstSeen": "2026-10-16T01:51:20+00:00",
-   "lastChange": "2026-10-22T22:02:44+00:00",
+   "lastChange": "2026-10-22T22:06:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -21959,10 +21971,10 @@
    "tasks": [
     {
      "title": "P2FM26_tractatus tree first minute",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Tractatus Tree: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T22:02:44+00:00",
+     "since": "2026-10-22T22:05:24+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -22071,8 +22083,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 8
    },
