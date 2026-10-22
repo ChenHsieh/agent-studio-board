@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T05:04:27+00:00",
+ "generated": "2026-10-22T05:06:39+00:00",
  "ops": {
   "count": 18,
   "notes": [
@@ -30,31 +30,31 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 18,
+    "queued": 17,
     "running": 1,
     "doneToday": 0,
-    "minutes": 324,
-    "estimateMinutes": 324
+    "minutes": 312,
+    "estimateMinutes": 312
    }
   },
-  "queued": 18,
+  "queued": 17,
   "running": 1,
   "doneToday": 0,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 324,
-  "estimatedFinish": "2026-10-22T10:28:27+00:00",
-  "estimateMinutes": 324
+  "minutesRemaining": 312,
+  "estimatedFinish": "2026-10-22T10:18:39+00:00",
+  "estimateMinutes": 312
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "chai-boil",
-   "task": "P1CB09_chai lever and burners",
-   "since": "2026-10-22T04:52:15+00:00",
-   "activity": "2026-10-22T05:03:58+00:00",
+   "task": "P1CB10_chai kitchen sets",
+   "since": "2026-10-22T05:05:14+00:00",
+   "activity": "2026-10-22T05:05:18+00:00",
    "commit": null
   }
  ],
@@ -62,8 +62,8 @@
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 55,
-  "usdEst": 198.0,
+  "runs": 56,
+  "usdEst": 201.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -105,7 +105,7 @@
   },
   {
    "day": "2026-10-22",
-   "changes": 6
+   "changes": 7
   }
  ],
  "houseRules": 23,
@@ -1525,11 +1525,11 @@
    ]
   },
   {
-   "nextTask": "New kitchens: a rooftop stall at dusk, a...",
-   "costTotalUsd": 83.62,
+   "nextTask": null,
+   "costTotalUsd": 87.22,
    "latestChange": {
-    "text": "P1CB08 draw helper + pot, face, foam, steam, glass live ()",
-    "at": "2026-10-22T04:52:13+00:00"
+    "text": "P1CB09 lever plaque + brass handle + paper flames and six stoves live ()",
+    "at": "2026-10-22T05:05:14+00:00"
    },
    "promo": null,
    "id": "chai-boil",
@@ -1544,40 +1544,26 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/chai-boil-1.webp",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-22T05:03:58+00:00",
+   "lastChange": "2026-10-22T05:05:18+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 5,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 3,
     "codexTokens": 1071928,
     "codexUsdEst": 1.29,
-    "claudeUsdEst": 14.4,
+    "claudeUsdEst": 18.0,
     "earlierRounds": 17,
     "earlierUsdEst": 61.2,
-    "totalUsdEst": 83.62
+    "totalUsdEst": 87.22
    },
    "tasks": [
     {
-     "title": "P1CB09_chai lever and burners",
+     "title": "P1CB10_chai kitchen sets",
      "state": "running",
      "worker": "Claude",
-     "plan": "The flame lever becomes a brass slider on a wooden plaque; every stove's flames are drawn as paper",
-     "since": "2026-10-22T04:52:15+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P1CB10_chai kitchen sets",
-     "state": "queued",
-     "worker": "Claude",
      "plan": "New kitchens: a rooftop stall at dusk, a rainy window kitchen, a mountain hut, and a redrawn night platform",
-     "since": "2026-10-22T03:58:31+00:00",
+     "since": "2026-10-22T05:05:14+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1599,6 +1585,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1CB08 chai-draw-helper-pot: DONE, live (main , https://chenhsieh.github.io/chai-boil/, live bytes match, zero console errors)."
+    },
+    {
+     "title": "P1CB09_chai lever and burners",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "The flame lever becomes a brass slider on a wooden plaque; every stove's flames are drawn as paper",
+     "since": "2026-10-22T03:58:31+00:00",
+     "done": "2026-10-22T03:58:31+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1CB09 chai-lever-and-burners: DONE, live (main , https://chenhsieh.github.io/chai-boil/, live bytes match, zero console errors)."
     },
     {
      "title": "P1CB07_chai boil visual spin",
@@ -1672,10 +1672,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 12
+    "done": 13
    },
    "verdict": {
     "date": "2026-10-21",
@@ -1685,6 +1685,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-22T05:05:14+00:00",
+     "ok": true,
+     "note": "P1CB09 lever plaque + brass handle + paper flames and six stoves live ()",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T04:52:13+00:00",
      "ok": true,
@@ -1749,12 +1755,6 @@
      "at": "2026-10-21T05:33:24+00:00",
      "ok": false,
      "note": "see",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T05:08:38+00:00",
-     "ok": true,
-     "note": "feat: build chai in an ingredient tray",
      "source": "board note"
     }
    ]
