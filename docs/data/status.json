@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-22T06:46:35+00:00",
+ "generated": "2026-10-22T06:48:47+00:00",
  "ops": {
-  "count": 19,
+  "count": 20,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -30,31 +30,31 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 13,
+    "queued": 12,
     "running": 1,
-    "doneToday": 3,
-    "minutes": 264,
-    "estimateMinutes": 264
+    "doneToday": 4,
+    "minutes": 252,
+    "estimateMinutes": 252
    }
   },
-  "queued": 13,
+  "queued": 12,
   "running": 1,
-  "doneToday": 3,
+  "doneToday": 4,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 264,
-  "estimatedFinish": "2026-10-22T11:10:35+00:00",
-  "estimateMinutes": 264
+  "minutesRemaining": 252,
+  "estimatedFinish": "2026-10-22T11:00:47+00:00",
+  "estimateMinutes": 252
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "seed-spiral",
-   "task": "P2SS51_seed spiral recipe core",
-   "since": "2026-10-22T06:24:59+00:00",
-   "activity": "2026-10-22T06:45:12+00:00",
+   "game": "slice-and-bake",
+   "task": "P2SB51_slice and bake cane core",
+   "since": "2026-10-22T06:47:04+00:00",
+   "activity": "2026-10-22T06:48:30+00:00",
    "commit": null
   }
  ],
@@ -62,8 +62,8 @@
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 60,
-  "usdEst": 216.0,
+  "runs": 61,
+  "usdEst": 219.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -105,7 +105,7 @@
   },
   {
    "day": "2026-10-22",
-   "changes": 11
+   "changes": 12
   }
  ],
  "houseRules": 23,
@@ -13883,10 +13883,10 @@
   },
   {
    "nextTask": "Twelve orders, a daily order and a count...",
-   "costTotalUsd": 32.4,
+   "costTotalUsd": 36.0,
    "latestChange": {
-    "text": "feat:",
-    "at": "2026-10-22T06:45:12+00:00"
+    "text": "P2SS51 recipe core live: 6 orders, recipe card, Grow/Pause/Step/Bloom, main ; Garden + 12...",
+    "at": "2026-10-22T06:47:04+00:00"
    },
    "promo": null,
    "id": "seed-spiral",
@@ -13894,33 +13894,33 @@
    "title": "Seed Spiral",
    "line": "Grow a sunflower and count its spirals.",
    "url": "https://chenhsieh.github.io/seed-spiral/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Claude",
    "priority": "P4",
    "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/seed-spiral-1.webp",
    "firstSeen": "2026-10-14T16:39:45+00:00",
-   "lastChange": "2026-10-22T06:45:12+00:00",
+   "lastChange": "2026-10-22T06:47:04+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 7.2,
+    "claudeUsdEst": 10.8,
     "earlierRounds": 7,
     "earlierUsdEst": 25.2,
-    "totalUsdEst": 32.4
+    "totalUsdEst": 36.0
    },
    "tasks": [
     {
-     "title": "P2SS51_seed spiral recipe core",
-     "state": "running",
+     "title": "P2SS52_seed spiral orders count sheet",
+     "state": "queued",
      "worker": "Claude",
-     "plan": "Write a short growth recipe, press Grow, and get the head the order asks for",
-     "since": "2026-10-22T06:24:59+00:00",
+     "plan": "Twelve orders, a daily order and a count sheet that sits next to the real sunflower count",
+     "since": "2026-10-22T04:10:40+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -13930,12 +13930,12 @@
      "result": ""
     },
     {
-     "title": "P2SS52_seed spiral orders count sheet",
-     "state": "queued",
+     "title": "P2SS51_seed spiral recipe core",
+     "state": "done",
      "worker": "Claude",
-     "plan": "Twelve orders, a daily order and a count sheet that sits next to the real sunflower count",
+     "plan": "Write a short growth recipe, press Grow, and get the head the order asks for",
      "since": "2026-10-22T04:10:40+00:00",
-     "done": null,
+     "done": "2026-10-22T04:10:40+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -13974,9 +13974,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": {
     "date": "2026-10-21",
@@ -13986,6 +13986,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-22T06:47:04+00:00",
+     "ok": true,
+     "note": "P2SS51 recipe core live: 6 orders, recipe card, Grow/Pause/Step/Bloom, main ; Garden + 12 slider flowers kept in menu",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T06:45:12+00:00",
      "ok": true,
@@ -15433,7 +15439,7 @@
    ]
   },
   {
-   "nextTask": "One tap per move: wrap, stack, flip; build...",
+   "nextTask": "Twelve tickets from Baker Vos's regulars, a daily...",
    "costTotalUsd": 65.29,
    "latestChange": {
     "text": "P2SB50 core study: one-tap cane moves to fill Baker Vos's tickets; builds...",
@@ -15445,14 +15451,14 @@
    "title": "Slice and Bake",
    "line": "Move dough before each cut to match the next slice.",
    "url": "https://chenhsieh.github.io/slice-and-bake/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Make cutting and adjusting legible; refresh the visual",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/slice-and-bake-1.webp",
    "firstSeen": "2026-10-14T23:17:56+00:00",
-   "lastChange": "2026-10-22T04:14:47+00:00",
+   "lastChange": "2026-10-22T06:48:30+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -15468,10 +15474,10 @@
    "tasks": [
     {
      "title": "P2SB51_slice and bake cane core",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "One tap per move: wrap, stack, flip; build the cookie log the order ticket asks for in par moves",
-     "since": "2026-10-22T04:14:47+00:00",
+     "since": "2026-10-22T06:47:04+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -15552,8 +15558,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 4
    },
