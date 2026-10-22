@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-22T20:05:33+00:00",
+ "generated": "2026-10-22T20:07:46+00:00",
  "ops": {
-  "count": 27,
+  "count": 28,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -45,7 +45,7 @@
    "Claude": 1
   },
   "minutesRemaining": 288,
-  "estimatedFinish": "2026-10-23T00:53:33+00:00",
+  "estimatedFinish": "2026-10-23T00:55:46+00:00",
   "estimateMinutes": 288
  },
  "lanes": [
@@ -72,22 +72,14 @@
    "since": null,
    "activity": null,
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "even-water",
-   "task": "even water visual build",
-   "since": "2026-10-22T20:00:19+00:00",
-   "activity": "2026-10-22T20:04:25+00:00",
-   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 4,
+ "claudeWorkers": 3,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 107,
-  "usdEst": 385.2,
+  "runs": 108,
+  "usdEst": 388.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -4419,8 +4411,8 @@
    "title": "Even Water",
    "line": "",
    "url": "https://chenhsieh.github.io/even-water/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -4430,23 +4422,23 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 7.2,
-    "earlierRounds": 6,
-    "earlierUsdEst": 21.6,
+    "claudeUsdEst": 10.8,
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
     "totalUsdEst": 28.8
    },
    "tasks": [
     {
      "title": "even water visual build",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "even-water: build the visual round from the design",
-     "since": "2026-10-22T20:00:19+00:00",
-     "done": null,
+     "since": "2026-10-22T19:35:23+00:00",
+     "done": "2026-10-22T19:35:23+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -4485,9 +4477,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": {
     "date": "2026-10-22",
@@ -4495,7 +4487,7 @@
     "note": "Stones steer one pour so every cup gets some; the first-drop line is enough to reason and still leaves a puzzle"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-22T20:05:33+00:00",
@@ -12717,7 +12709,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 7.2,
+   "costTotalUsd": 14.4,
    "latestChange": {
     "text": "twelve levels: place and take blocks to fill a dashed outline, then walk out the door;...",
     "at": "2026-10-22T19:57:00+00:00"
@@ -12744,9 +12736,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 1,
-    "earlierUsdEst": 3.6,
-    "totalUsdEst": 7.2
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
+    "totalUsdEst": 14.4
    },
    "tasks": [
     {
@@ -12779,6 +12771,18 @@
      "ok": true,
      "note": "twelve levels: place and take blocks to fill a dashed outline, then walk out the door; scaffolding must go. Greedy bot fails 9 of 9 graded levels, random under 4%.",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-22T19:55:33+00:00",
+     "ok": true,
+     "note": "feat: Own Ground, build the outline, take the scaffolding away, walk out",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T19:37:30+00:00",
+     "ok": true,
+     "note": "feat: Own Ground starts from the Play Lab game template",
+     "source": "main commit"
     },
     {
      "at": "2026-10-22T19:36:08+00:00",
