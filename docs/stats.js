@@ -64,6 +64,8 @@ async function load() {
   const dmax = Math.max(1, ...days.map((x) => x.changes));
   $('#days').innerHTML = `<div class="days">${days.map((x) => `<div style="height:${(x.changes / dmax) * 100}%"><b>${x.changes}</b></div>`).join('')}</div><div class="daylbl">${days.map((x) => `<span>${x.day.slice(5)}</span>`).join('')}</div>`;
 
+  const q = d.queue || {}, cap = (q.laneCap && q.laneCap.Claude) || 4;
+  $('#lanes-note').textContent = `Claude runs up to ${cap} lanes at once (${(q.workers && q.workers.Claude && q.workers.Claude.running) || 0} running now). ${q.codexPaused ? 'Codex is paused (quota), so its lanes are not counted.' : ''}`;
   const rt = rates;
   $('#rates').innerHTML = [
     `Metered API: the actual bill, ${usd(d.apiSpentUsd)} so far.`,

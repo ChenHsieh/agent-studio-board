@@ -181,3 +181,12 @@ h2 { font: 600 12px var(--mono); text-transform: uppercase; letter-spacing: 0.08
 .ops summary { cursor: pointer; display: inline-block; padding: 4px 10px; min-height: 24px; border: 1px solid var(--accent); border-radius: 999px; color: var(--accent); }
 .ops ul { margin: 8px 0 0; padding-left: 18px; color: var(--ink); }
 .ops[hidden] { display: none; }
+
+/* ops chip is calm when there is nothing wrong; lane bar shows Claude's four lanes */
+.ops.quiet summary { border-color: var(--rule); color: var(--muted); }
+.ops li.info { list-style: none; margin-left: -18px; color: var(--muted); }
+.lane-bar { display: flex; align-items: center; gap: 10px; padding: 4px 0 10px; font: 12.5px var(--mono); color: var(--muted); }
+.lane-bar .pips { display: inline-flex; gap: 4px; }
+.lane-bar .pips i { width: 22px; height: 8px; border-radius: 2px; background: var(--rule); }
+.lane-bar .pips i.on { background: var(--accent); }
+.queue-row.paused { opacity: .6; }

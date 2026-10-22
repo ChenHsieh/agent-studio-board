@@ -93,19 +93,28 @@ function lanesHtml() {
     const beat = l.commit ? `last commit ${ago(l.commit.at)}: “${esc(l.commit.subject)}”` : `no commit yet; log active ${ago(l.activity)}`;
     return `<li class="lane"><span class="who">${esc(l.worker)}</span><span class="what"><b>${esc(g ? g.title : l.game)}</b> · ${esc(l.task)}</span><span class="beat">started ${ago(l.since)} · ${beat}</span></li>`;
   });
-  const codexIdle = (data.codexLanes || 0) - lanes.filter((l) => l.worker === 'Codex').length;
+  const q = data.queue || {};
+  const paused = !!q.codexPaused;
+  const codexIdle = paused ? 0 : (data.codexLanes || 0) - lanes.filter((l) => l.worker === 'Codex').length;
   for (let i = 0; i < codexIdle; i++) rows.push('<li class="lane idle"><span class="who">Codex</span><span class="what">Idle, waiting for a task</span></li>');
-  return rows.join('') || '<li class="lane idle"><span class="who">—</span><span class="what">No agent is working right now.</span></li>';
+  // The lane bar: one pip per Claude lane (cap from the data), filled while a Claude agent works. Codex is not drawn while paused.
+  const cap = (q.laneCap && q.laneCap.Claude) || 4;
+  const busy = lanes.filter((l) => l.worker === 'Claude').length;
+  const pips = Array.from({ length: cap }, (_, i) => `<i class="${i < busy ? 'on' : ''}"></i>`).join('');
+  const bar = `<li class="lane-bar" aria-label="Claude lanes: ${busy} of ${cap} working${paused ? '. Codex paused (quota)' : ''}"><span class="pips" aria-hidden="true">${pips}</span><span>Claude ${busy} of ${cap} lanes · ${paused ? 'Codex paused (quota)' : `Codex ${data.codexLanes || 0} ${data.codexLanes === 1 ? 'lane' : 'lanes'}`}</span></li>`;
+  return bar + (rows.join('') || '<li class="lane idle"><span class="who">—</span><span class="what">No agent is working right now.</span></li>');
 }
 
 function queueHtml() {
   const rows = (data.queue && data.queue.workers) || {};
-  return ['Codex', 'Claude'].map((worker) => {
+  const paused = !!(data.queue && data.queue.codexPaused);
+  return ['Claude', 'Codex'].map((worker) => {
     const n = rows[worker] || {};
     const total = (n.queued || 0) + (n.running || 0) + (n.doneToday || 0);
     const width = (part) => total ? `${(part || 0) / total * 100}%` : '0%';
-    const label = `${worker}: ${n.queued || 0} queued, ${n.running || 0} running, ${n.doneToday || 0} done today`;
-    return `<div class="queue-row"><span class="queue-worker">${worker}</span><div class="queue-track" role="img" aria-label="${esc(label)}"><i class="q-queued" style="width:${width(n.queued)}"></i><i class="q-running" style="width:${width(n.running)}"></i><i class="q-done" style="width:${width(n.doneToday)}"></i></div><span class="queue-count">Q ${n.queued || 0} · R ${n.running || 0} · D ${n.doneToday || 0}</span></div>`;
+    const off = worker === 'Codex' && paused;
+    const label = `${worker}${off ? ' (paused, quota)' : ''}: ${n.queued || 0} queued, ${n.running || 0} running, ${n.doneToday || 0} done today`;
+    return `<div class="queue-row${off ? ' paused' : ''}"><span class="queue-worker">${worker}</span><div class="queue-track" role="img" aria-label="${esc(label)}"><i class="q-queued" style="width:${width(n.queued)}"></i><i class="q-running" style="width:${width(n.running)}"></i><i class="q-done" style="width:${width(n.doneToday)}"></i></div><span class="queue-count">${off ? 'Paused (quota) · ' : ''}Q ${n.queued || 0} · R ${n.running || 0} · D ${n.doneToday || 0}</span></div>`;
   }).join('');
 }
 
@@ -218,11 +227,13 @@ function render() {
   const queue = data.queue || {};
   $('#queue-eta').textContent = queue.estimateMinutes ? `Est. finish ${day(queue.estimatedFinish)}` : 'Queue clear';
   const ops = data.ops || {}, notes = (ops.notes || []).filter((x) => typeof x === 'string');
-  const n = ops.count || notes.length;
-  $('#ops').hidden = !n;
-  if (n) {
-    $('#ops-sum').textContent = `Ops: ${n} ${n === 1 ? 'warning' : 'warnings'}`;
-    $('#ops-list').innerHTML = notes.map((x) => `<li>${esc(x)}</li>`).join('') + (n > notes.length ? `<li>and ${n - notes.length} more</li>` : '');
+  const info = (ops.info || []).filter((x) => typeof x === 'string');
+  const n = ops.count || 0;
+  $('#ops').hidden = !(n || info.length);
+  $('#ops').classList.toggle('quiet', !n);
+  if (n || info.length) {
+    $('#ops-sum').textContent = (n ? `Ops: ${n} ${n === 1 ? 'warning' : 'warnings'}` : 'Ops: all clear') + info.map((x) => ` · ${x}`).join('');
+    $('#ops-list').innerHTML = info.map((x) => `<li class="info">${esc(x)}</li>`).join('') + notes.map((x) => `<li>${esc(x)}</li>`).join('') + (n > notes.length ? `<li>and ${n - notes.length} more</li>` : '');
   }
   $('#lanes').innerHTML = lanesHtml();
   $('#tally').innerHTML = tallyHtml();
