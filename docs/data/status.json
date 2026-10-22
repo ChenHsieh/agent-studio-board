@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T07:15:23+00:00",
+ "generated": "2026-10-22T07:17:36+00:00",
  "ops": {
   "count": 19,
   "notes": [
@@ -30,31 +30,31 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 11,
+    "queued": 10,
     "running": 1,
-    "doneToday": 5,
-    "minutes": 240,
-    "estimateMinutes": 240
+    "doneToday": 6,
+    "minutes": 228,
+    "estimateMinutes": 228
    }
   },
-  "queued": 11,
+  "queued": 10,
   "running": 1,
-  "doneToday": 5,
+  "doneToday": 6,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 240,
-  "estimatedFinish": "2026-10-22T11:15:23+00:00",
-  "estimateMinutes": 240
+  "minutesRemaining": 228,
+  "estimatedFinish": "2026-10-22T11:05:36+00:00",
+  "estimateMinutes": 228
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "seed-spiral",
-   "task": "P2SS52_seed spiral orders count sheet",
-   "since": "2026-10-22T06:59:46+00:00",
-   "activity": "2026-10-22T07:15:15+00:00",
+   "game": "slice-and-bake",
+   "task": "P2SB52_slice and bake orders daily",
+   "since": "2026-10-22T07:17:28+00:00",
+   "activity": "2026-10-22T07:17:28+00:00",
    "commit": null
   }
  ],
@@ -62,8 +62,8 @@
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 62,
-  "usdEst": 223.2,
+  "runs": 63,
+  "usdEst": 226.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -105,7 +105,7 @@
   },
   {
    "day": "2026-10-22",
-   "changes": 13
+   "changes": 14
   }
  ],
  "houseRules": 23,
@@ -13883,10 +13883,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 36.0,
+   "costTotalUsd": 43.2,
    "latestChange": {
-    "text": "P2SS51 recipe core live: 6 orders, recipe card, Grow/Pause/Step/Bloom, main ; Garden + 12...",
-    "at": "2026-10-22T06:47:04+00:00"
+    "text": "P2SS52 live: orders 7-12, daily order, count sheet, ghost heads, share slip, main",
+    "at": "2026-10-22T07:17:28+00:00"
    },
    "promo": null,
    "id": "seed-spiral",
@@ -13894,34 +13894,34 @@
    "title": "Seed Spiral",
    "line": "Grow a sunflower and count its spirals.",
    "url": "https://chenhsieh.github.io/seed-spiral/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P4",
    "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/seed-spiral-1.webp",
    "firstSeen": "2026-10-14T16:39:45+00:00",
-   "lastChange": "2026-10-22T07:15:15+00:00",
+   "lastChange": "2026-10-22T07:17:28+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 10.8,
-    "earlierRounds": 7,
-    "earlierUsdEst": 25.2,
-    "totalUsdEst": 36.0
+    "claudeUsdEst": 14.4,
+    "earlierRounds": 8,
+    "earlierUsdEst": 28.8,
+    "totalUsdEst": 43.2
    },
    "tasks": [
     {
-     "title": "P2SS52_seed spiral orders count sheet",
-     "state": "running",
+     "title": "P2SS51_seed spiral recipe core",
+     "state": "done",
      "worker": "Claude",
-     "plan": "Twelve orders, a daily order and a count sheet that sits next to the real sunflower count",
-     "since": "2026-10-22T06:59:46+00:00",
-     "done": null,
+     "plan": "Write a short growth recipe, press Grow, and get the head the order asks for",
+     "since": "2026-10-22T04:10:40+00:00",
+     "done": "2026-10-22T04:10:40+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -13930,10 +13930,10 @@
      "result": ""
     },
     {
-     "title": "P2SS51_seed spiral recipe core",
+     "title": "P2SS52_seed spiral orders count sheet",
      "state": "done",
      "worker": "Claude",
-     "plan": "Write a short growth recipe, press Grow, and get the head the order asks for",
+     "plan": "Twelve orders, a daily order and a count sheet that sits next to the real sunflower count",
      "since": "2026-10-22T04:10:40+00:00",
      "done": "2026-10-22T04:10:40+00:00",
      "reviewed": false,
@@ -13974,9 +13974,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": {
     "date": "2026-10-21",
@@ -13984,8 +13984,20 @@
     "note": "Game core unclear"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-22T07:17:28+00:00",
+     "ok": true,
+     "note": "P2SS52 live: orders 7-12, daily order, count sheet, ghost heads, share slip, main",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-22T07:15:15+00:00",
+     "ok": true,
+     "note": "feat: Seed Spiral gets orders 7 to 12, a daily order, a count sheet and ghost heads",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-22T06:47:04+00:00",
      "ok": true,
@@ -15439,7 +15451,7 @@
    ]
   },
   {
-   "nextTask": "Twelve tickets from Baker Vos's regulars, a daily...",
+   "nextTask": null,
    "costTotalUsd": 68.89,
    "latestChange": {
     "text": "P2SB51 cane core live: 6 orders, solver par, one-tap moves, Baker Vos en+zh-TW, flipbook...",
@@ -15451,14 +15463,14 @@
    "title": "Slice and Bake",
    "line": "Move dough before each cut to match the next slice.",
    "url": "https://chenhsieh.github.io/slice-and-bake/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Make cutting and adjusting legible; refresh the visual",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/slice-and-bake-1.webp",
    "firstSeen": "2026-10-14T23:23:18+00:00",
-   "lastChange": "2026-10-22T06:59:46+00:00",
+   "lastChange": "2026-10-22T07:17:28+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -15474,10 +15486,10 @@
    "tasks": [
     {
      "title": "P2SB52_slice and bake orders daily",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Twelve tickets from Baker Vos's regulars, a daily ticket, and the flipbook as chapter 2",
-     "since": "2026-10-22T04:14:47+00:00",
+     "since": "2026-10-22T07:17:28+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -15558,8 +15570,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 5
    },
