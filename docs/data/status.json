@@ -1,15 +1,17 @@
 {
- "generated": "2026-10-22T14:49:56+00:00",
+ "generated": "2026-10-22T14:52:10+00:00",
  "ops": {
-  "count": 18,
+  "count": 20,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
+   "A running task has shown no progress for over 3 hours.",
    "A status note names something that is not a game.",
    "Two tasks share the number P1c09."
   ]
  },
  "about": [
   "A game changed in the last hour with no claimed task on it.",
+  "A running task has shown no progress for over 3 hours.",
   "A status note names something that is not a game.",
   "Two tasks share the number P1c09."
  ],
@@ -30,31 +32,31 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 8,
-    "running": 0,
+    "queued": 7,
+    "running": 1,
     "doneToday": 11,
-    "minutes": 144,
-    "estimateMinutes": 144
+    "minutes": 192,
+    "estimateMinutes": 192
    }
   },
-  "queued": 8,
-  "running": 0,
+  "queued": 7,
+  "running": 1,
   "doneToday": 11,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 144,
-  "estimatedFinish": "2026-10-22T17:13:56+00:00",
-  "estimateMinutes": 144
+  "minutesRemaining": 192,
+  "estimatedFinish": "2026-10-22T18:04:10+00:00",
+  "estimateMinutes": 192
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "thumb-stand",
-   "task": "P1TS54_thumb stand ship review",
-   "since": "2026-10-22T14:25:02+00:00",
-   "activity": "2026-10-22T14:45:10+00:00",
+   "game": "zoom-out",
+   "task": "zoomout levels parables",
+   "since": "2026-10-22T14:50:48+00:00",
+   "activity": "2026-10-22T14:50:48+00:00",
    "commit": null
   }
  ],
@@ -62,8 +64,8 @@
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 72,
-  "usdEst": 259.2,
+  "runs": 73,
+  "usdEst": 262.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -17899,8 +17901,8 @@
    "title": "Thumb Stand",
    "line": "",
    "url": "https://chenhsieh.github.io/thumb-stand/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Total rework planned by a cross-functional lead",
    "shelfNote": "",
@@ -17910,30 +17912,16 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 5,
-    "claudeRuns": 5,
+    "claudeRuns": 6,
     "apiRuns": 0,
     "codexTokens": 1373372,
     "codexUsdEst": 1.65,
-    "claudeUsdEst": 18.0,
-    "earlierRounds": 19,
-    "earlierUsdEst": 68.4,
+    "claudeUsdEst": 21.6,
+    "earlierRounds": 18,
+    "earlierUsdEst": 64.8,
     "totalUsdEst": 88.05
    },
    "tasks": [
-    {
-     "title": "P1TS54_thumb stand ship review",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Thumb Stand: Opus cold-play ship review of the rework",
-     "since": "2026-10-22T14:25:02+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1TS52_thumb stand panel look and bench",
      "state": "done",
@@ -17975,6 +17963,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1TS54_thumb stand ship review",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Thumb Stand: Opus cold-play ship review of the rework",
+     "since": "2026-10-21T14:40:53+00:00",
+     "done": "2026-10-21T14:40:53+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Verdict: SHIP (live main , live bytes match, looked at 390x844 and 320x568). All 12 feats played to a win with ONE finger by real CDP touch at both sizes, zero console errors; plumb line, red tick and hand close-up..."
     },
     {
      "title": "P1TS50_thumb stand cross functional rework",
@@ -18035,17 +18037,17 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 10
+    "done": 11
    },
    "verdict": {
     "date": "2026-10-21",
     "verdict": "revise",
     "note": "Total rework"
    },
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-22T14:49:57+00:00",
@@ -20071,7 +20073,7 @@
    ]
   },
   {
-   "nextTask": "Zoom Out: eight levels where a Zhuangzi, Laozi...",
+   "nextTask": "Zoom Out: one-dial-per-page how to play, sound, share...",
    "costTotalUsd": 69.52,
    "latestChange": {
     "text": "see",
@@ -20083,14 +20085,14 @@
    "title": "Zoom Out",
    "line": "",
    "url": "https://chenhsieh.github.io/zoom-out/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Getting somewhere:",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-16T00:32:50+00:00",
-   "lastChange": "2026-10-22T07:57:35+00:00",
+   "lastChange": "2026-10-22T14:50:48+00:00",
    "cost": {
     "apiUsd": 7.14,
     "codexRuns": 4,
@@ -20106,10 +20108,10 @@
    "tasks": [
     {
      "title": "zoomout levels parables",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Zoom Out: eight levels where a Zhuangzi, Laozi or Sunzi parable is the thing you find in the fractal, plus a daily and an endless mode.",
-     "since": "2026-10-22T07:57:35+00:00",
+     "since": "2026-10-22T14:50:48+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -20204,8 +20206,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 5
    },
