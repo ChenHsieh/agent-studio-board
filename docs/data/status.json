@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T04:02:44+00:00",
+ "generated": "2026-10-22T04:04:57+00:00",
  "ops": {
   "count": 21,
   "notes": [
@@ -47,16 +47,16 @@
    "Claude": 1
   },
   "minutesRemaining": 288,
-  "estimatedFinish": "2026-10-22T08:50:44+00:00",
+  "estimatedFinish": "2026-10-22T08:52:57+00:00",
   "estimateMinutes": 288
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "material-boards",
-   "task": "P1MB40_material boards visual spin",
-   "since": "2026-10-22T03:58:37+00:00",
-   "activity": "2026-10-22T03:58:37+00:00",
+   "game": "seed-spiral",
+   "task": "P2SS50_seed spiral game core study",
+   "since": "2026-10-22T04:02:45+00:00",
+   "activity": "2026-10-22T04:02:45+00:00",
    "commit": null
   }
  ],
@@ -64,8 +64,8 @@
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 49,
-  "usdEst": 176.4,
+  "runs": 50,
+  "usdEst": 180.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -9895,7 +9895,7 @@
    "title": "Material Boards",
    "line": "Drop mirror, glass and wood tiles on a pinned sample.",
    "url": "https://chenhsieh.github.io/material-boards/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Claude",
    "priority": "P3",
    "priorityNote": "Find a creative twist for the classic puzzle",
@@ -9906,30 +9906,16 @@
    "cost": {
     "apiUsd": 14.39,
     "codexRuns": 2,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 4,
     "codexTokens": 662317,
     "codexUsdEst": 0.79,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 8,
-    "earlierUsdEst": 28.8,
+    "claudeUsdEst": 7.2,
+    "earlierRounds": 7,
+    "earlierUsdEst": 25.2,
     "totalUsdEst": 47.58
    },
    "tasks": [
-    {
-     "title": "P1MB40_material boards visual spin",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Material Boards: fix the odd face and give it a distinctive visual direction.",
-     "since": "2026-10-22T03:58:37+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1MB41_material boards sample drawer",
      "state": "queued",
@@ -9957,6 +9943,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1MB40_material boards visual spin",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Material Boards: fix the odd face and give it a distinctive visual direction.",
+     "since": "2026-10-21T21:08:25+00:00",
+     "done": "2026-10-21T21:08:25+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "design: material-boards visual spin: BUILD sample drawer on black foam-core, real-looking material swatches with spec tags, a plain desk lamp (the weird face was the lamp; removed), targets become sun prints"
     },
     {
      "title": "material boards light budget",
@@ -10031,9 +10031,9 @@
    ],
    "taskCounts": {
     "queued": 2,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 7
+    "done": 8
    },
    "verdict": {
     "date": "2026-10-21",
@@ -13884,7 +13884,7 @@
    ]
   },
   {
-   "nextTask": "Seed Spiral: a game core study so the...",
+   "nextTask": null,
    "costTotalUsd": 25.2,
    "latestChange": {
     "text": "P2PT02 flowers live: 12 flowers, frost, pace ring, win/loss cards, menu, daily (main )",
@@ -13896,14 +13896,14 @@
    "title": "Seed Spiral",
    "line": "Grow a sunflower and count its spirals.",
    "url": "https://chenhsieh.github.io/seed-spiral/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P4",
    "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/seed-spiral-1.webp",
    "firstSeen": "2026-10-14T16:39:45+00:00",
-   "lastChange": "2026-10-21T21:08:25+00:00",
+   "lastChange": "2026-10-22T04:02:45+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -13919,10 +13919,10 @@
    "tasks": [
     {
      "title": "P2SS50_seed spiral game core study",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Seed Spiral: a game core study so the point of the game is clear.",
-     "since": "2026-10-21T21:08:25+00:00",
+     "since": "2026-10-22T04:02:45+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -13947,8 +13947,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
