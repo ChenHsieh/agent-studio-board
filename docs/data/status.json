@@ -1,15 +1,17 @@
 {
- "generated": "2026-10-22T03:51:41+00:00",
+ "generated": "2026-10-22T03:53:56+00:00",
  "ops": {
-  "count": 20,
+  "count": 22,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
+   "A running task has shown no progress for over 3 hours.",
    "A status note names something that is not a game.",
    "Two tasks share the number P1c09."
   ]
  },
  "about": [
   "A game changed in the last hour with no claimed task on it.",
+  "A running task has shown no progress for over 3 hours.",
   "A status note names something that is not a game.",
   "Two tasks share the number P1c09."
  ],
@@ -30,43 +32,40 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 13,
+    "queued": 12,
     "running": 1,
-    "doneToday": 56,
-    "minutes": 264,
-    "estimateMinutes": 264
+    "doneToday": 57,
+    "minutes": 252,
+    "estimateMinutes": 252
    }
   },
-  "queued": 13,
+  "queued": 12,
   "running": 1,
-  "doneToday": 151,
+  "doneToday": 152,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 264,
-  "estimatedFinish": "2026-10-22T08:15:41+00:00",
-  "estimateMinutes": 264
+  "minutesRemaining": 252,
+  "estimatedFinish": "2026-10-22T08:05:56+00:00",
+  "estimateMinutes": 252
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "thumb-stand",
-   "task": "P1TS53_thumb stand levels bet mantis daily",
-   "since": "2026-10-22T03:28:37+00:00",
-   "activity": "2026-10-22T03:50:07+00:00",
-   "commit": {
-    "at": "2026-10-22T03:49:56+00:00",
-    "subject": "feat: the bet has a tray of six panels and the mantis shows which foot holds it"
-   }
+   "game": "chai-boil",
+   "task": "P1CB07_chai boil visual spin",
+   "since": "2026-10-22T03:52:13+00:00",
+   "activity": "2026-10-22T03:52:13+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 0,
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 47,
-  "usdEst": 169.2,
+  "runs": 48,
+  "usdEst": 172.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -104,7 +103,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 396
+   "changes": 397
   }
  ],
  "houseRules": 23,
@@ -1524,7 +1523,7 @@
    ]
   },
   {
-   "nextTask": "Chai Boil: a visual revamp with new kitchen...",
+   "nextTask": null,
    "costTotalUsd": 76.42,
    "latestChange": {
     "text": "P1CB06 four kitchens live (): clay stove, copper on charcoal (lever = pot height),...",
@@ -1536,14 +1535,14 @@
    "title": "Chai Boil",
    "line": "One pot, one dial: let the chai rise to the rim, not over it.",
    "url": "https://chenhsieh.github.io/chai-boil/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P2",
    "priorityNote": "Steadier dial (keys on desktop), a forgiving golden zone, a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/chai-boil-1.webp",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-21T21:08:25+00:00",
+   "lastChange": "2026-10-22T03:52:13+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 5,
@@ -1559,10 +1558,10 @@
    "tasks": [
     {
      "title": "P1CB07_chai boil visual spin",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Chai Boil: a visual revamp with new kitchen backdrops and cuter drawing, learning from Colony Count.",
-     "since": "2026-10-21T21:08:25+00:00",
+     "since": "2026-10-22T03:52:13+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1671,8 +1670,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 10
    },
@@ -17584,10 +17583,10 @@
   },
   {
    "nextTask": "Thumb Stand: Opus cold-play ship review of the...",
-   "costTotalUsd": 80.85,
+   "costTotalUsd": 84.45,
    "latestChange": {
-    "text": "P1TS52 live (main ): drawn strongman in panels, hand close-up, bench of regulars, gym...",
-    "at": "2026-10-22T00:31:21+00:00"
+    "text": "P1TS53 levels: bet tray, mantis foot callout, start pages always fall, daily...",
+    "at": "2026-10-22T03:51:47+00:00"
    },
    "promo": null,
    "id": "thumb-stand",
@@ -17595,44 +17594,27 @@
    "title": "Thumb Stand",
    "line": "",
    "url": "https://chenhsieh.github.io/thumb-stand/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Claude",
    "priority": "P1",
    "priorityNote": "Total rework planned by a cross-functional lead",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/thumb-stand-1.webp",
    "firstSeen": "2026-10-16T00:44:20+00:00",
-   "lastChange": "2026-10-22T03:50:07+00:00",
+   "lastChange": "2026-10-22T03:51:47+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 5,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 0,
     "codexTokens": 1373372,
     "codexUsdEst": 1.65,
-    "claudeUsdEst": 14.4,
+    "claudeUsdEst": 18.0,
     "earlierRounds": 18,
     "earlierUsdEst": 64.8,
-    "totalUsdEst": 80.85
+    "totalUsdEst": 84.45
    },
    "tasks": [
-    {
-     "title": "P1TS53_thumb stand levels bet mantis daily",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Thumb Stand: the 12 feats as panel pages, the bet (4 of 6 panels), the mantis, the daily",
-     "since": "2026-10-22T03:28:37+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-22T03:49:56+00:00",
-      "subject": "feat: the bet has a tray of six panels and the mantis shows which foot holds it"
-     },
-     "result": ""
-    },
     {
      "title": "P1TS54_thumb stand ship review",
      "state": "queued",
@@ -17674,6 +17656,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Panel page core live (main ). Reflex deleted; one-finger drag/tap swap; hold-to-play in bottom third; tip animation on a 會倒 panel. Tests: panels.test (42), panels_touch real CDP touch 390+320 (48), browser_test 54,..."
+    },
+    {
+     "title": "P1TS53_thumb stand levels bet mantis daily",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Thumb Stand: the 12 feats as panel pages, the bet (4 of 6 panels), the mantis, the daily",
+     "since": "2026-10-21T21:08:25+00:00",
+     "done": "2026-10-21T21:08:25+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
     },
     {
      "title": "P1TS50_thumb stand cross functional rework",
@@ -17734,9 +17730,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 9
+    "done": 10
    },
    "verdict": {
     "date": "2026-10-21",
@@ -17746,6 +17742,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-22T03:51:47+00:00",
+     "ok": true,
+     "note": "P1TS53 levels: bet tray, mantis foot callout, start pages always fall, daily order-matters check; live",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T00:31:21+00:00",
      "ok": true,
@@ -17810,12 +17812,6 @@
      "at": "2026-10-20T00:45:00+00:00",
      "ok": true,
      "note": "NOT_DONE: implementation committed; required bot/browser gates and migration fixture remain incomplete",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-20T00:06:35+00:00",
-     "ok": true,
-     "note": "design brief (Baki gallery, mantis, bet) + build task B2a",
      "source": "board note"
     }
    ]
