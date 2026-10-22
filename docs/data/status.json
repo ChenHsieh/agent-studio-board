@@ -1,15 +1,17 @@
 {
- "generated": "2026-10-22T00:03:25+00:00",
+ "generated": "2026-10-22T00:05:36+00:00",
  "ops": {
   "count": 20,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
+   "A running task has shown no progress for over 3 hours.",
    "A status note names something that is not a game.",
    "Two tasks share the number P1c09."
   ]
  },
  "about": [
   "A game changed in the last hour with no claimed task on it.",
+  "A running task has shown no progress for over 3 hours.",
   "A status note names something that is not a game.",
   "Two tasks share the number P1c09."
  ],
@@ -30,43 +32,64 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 24,
-    "running": 1,
-    "doneToday": 44,
-    "minutes": 396,
-    "estimateMinutes": 396
+    "queued": 20,
+    "running": 4,
+    "doneToday": 45,
+    "minutes": 528,
+    "estimateMinutes": 528
    }
   },
-  "queued": 24,
-  "running": 1,
-  "doneToday": 139,
+  "queued": 20,
+  "running": 4,
+  "doneToday": 140,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 396,
-  "estimatedFinish": "2026-10-22T06:39:25+00:00",
-  "estimateMinutes": 396
+  "minutesRemaining": 528,
+  "estimatedFinish": "2026-10-22T08:53:36+00:00",
+  "estimateMinutes": 528
  },
  "lanes": [
   {
    "worker": "Claude",
+   "game": "thumb-stand",
+   "task": "P1TS52_thumb stand panel look and bench",
+   "since": "2026-10-22T00:04:13+00:00",
+   "activity": "2026-10-22T00:04:21+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
    "game": "thirsty-clicks",
-   "task": "thirsty clicks propagation art",
-   "since": "2026-10-21T23:32:51+00:00",
-   "activity": "2026-10-22T00:02:25+00:00",
-   "commit": {
-    "at": "2026-10-22T00:02:22+00:00",
-    "subject": "feat: Thirsty Clicks looks like a propagation-house listening survey"
-   }
+   "task": "P2GF11_thirsty clicks feel pass",
+   "since": "2026-10-22T00:04:13+00:00",
+   "activity": "2026-10-22T00:04:13+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "dancers-not-mad",
+   "task": "P2GF14_dancers not mad feel pass",
+   "since": "2026-10-22T00:04:13+00:00",
+   "activity": "2026-10-22T00:04:13+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "speaking stone proto",
+   "since": null,
+   "activity": null,
+   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 4,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 35,
-  "usdEst": 126.0,
+  "runs": 36,
+  "usdEst": 129.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -104,7 +127,7 @@
   },
   {
    "day": "2026-10-21",
-   "changes": 385
+   "changes": 386
   }
  ],
  "houseRules": 23,
@@ -2918,7 +2941,7 @@
    ]
   },
   {
-   "nextTask": "Game-feel pass for dancers-not-mad using the shared juice...",
+   "nextTask": null,
    "costTotalUsd": 32.4,
    "latestChange": {
     "text": "P1DM03 automaton art live : pins->pulse->cam stops->lifted dancers, crank logo, ticket on...",
@@ -2930,14 +2953,14 @@
    "title": "Dancers Not Mad",
    "line": "",
    "url": "https://chenhsieh.github.io/dancers-not-mad/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:37:54+00:00",
-   "lastChange": "2026-10-21T21:08:25+00:00",
+   "lastChange": "2026-10-22T00:04:13+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -2953,10 +2976,10 @@
    "tasks": [
     {
      "title": "P2GF14_dancers not mad feel pass",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Game-feel pass for dancers-not-mad using the shared juice module and the audit.",
-     "since": "2026-10-21T21:08:25+00:00",
+     "since": "2026-10-22T00:04:13+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2995,8 +3018,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
@@ -17178,11 +17201,11 @@
    ]
   },
   {
-   "nextTask": "Game-feel pass for thirsty-clicks using the shared juice...",
-   "costTotalUsd": 18.0,
+   "nextTask": null,
+   "costTotalUsd": 21.6,
    "latestChange": {
-    "text": "P1t20 smooth: result in view, sharp canvas, press feedback, counted clicks, hints; live",
-    "at": "2026-10-21T18:12:01+00:00"
+    "text": "P1t21 live (main ): propagation-house look (tray, stamped plants, blue punched reading...",
+    "at": "2026-10-22T00:03:38+00:00"
    },
    "promo": null,
    "id": "thirsty-clicks",
@@ -17197,43 +17220,26 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:19:46+00:00",
-   "lastChange": "2026-10-22T00:02:25+00:00",
+   "lastChange": "2026-10-22T00:04:13+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 4,
     "earlierUsdEst": 14.4,
-    "totalUsdEst": 18.0
+    "totalUsdEst": 21.6
    },
    "tasks": [
     {
-     "title": "thirsty clicks propagation art",
+     "title": "P2GF11_thirsty clicks feel pass",
      "state": "running",
      "worker": "Claude",
-     "plan": "The greenhouse becomes a propagation tray where each microphone punches its click count onto a nursery tag.",
-     "since": "2026-10-21T23:32:51+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-22T00:02:22+00:00",
-      "subject": "feat: Thirsty Clicks looks like a propagation-house listening survey"
-     },
-     "result": ""
-    },
-    {
-     "title": "P2GF11_thirsty clicks feel pass",
-     "state": "queued",
-     "worker": "Claude",
      "plan": "Game-feel pass for thirsty-clicks using the shared juice module and the audit.",
-     "since": "2026-10-21T21:08:25+00:00",
+     "since": "2026-10-22T00:04:13+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -17241,6 +17247,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "thirsty clicks propagation art",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "The greenhouse becomes a propagation tray where each microphone punches its click count onto a nursery tag.",
+     "since": "2026-10-21T21:08:25+00:00",
+     "done": "2026-10-21T21:08:25+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Live main : Thirsty Clicks restyled as a propagation tray; touch 390/320 (levels 1,3,6), save fixture, replay, frame budget, playable+UI gates green. Weakest: the 320 board has 6 units of tray shadow below the fold;..."
     },
     {
      "title": "thirsty clicks smooth",
@@ -17258,10 +17278,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": {
     "date": "2026-10-20",
@@ -17271,6 +17291,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-22T00:03:38+00:00",
+     "ok": true,
+     "note": "P1t21 live (main ): propagation-house look (tray, stamped plants, blue punched reading tags, TC label, Petrona/Plex self-hosted); 5x5 fits 320 wide; rules/levels/saves/feel untouched; new level now scrolls to top",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T18:12:01+00:00",
      "ok": true,
@@ -17304,7 +17330,7 @@
    ]
   },
   {
-   "nextTask": "Thumb Stand: the strongman drawn in every panel...",
+   "nextTask": "Thumb Stand: the 12 feats as panel pages...",
    "costTotalUsd": 77.25,
    "latestChange": {
     "text": "P1TS51 panel page core live: reflex deleted, one-thumb swap, hold-to-play; tests+gates...",
@@ -17316,14 +17342,14 @@
    "title": "Thumb Stand",
    "line": "",
    "url": "https://chenhsieh.github.io/thumb-stand/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P1",
    "priorityNote": "Total rework planned by a cross-functional lead",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/thumb-stand-1.webp",
    "firstSeen": "2026-10-16T00:43:09+00:00",
-   "lastChange": "2026-10-21T23:09:39+00:00",
+   "lastChange": "2026-10-22T00:04:21+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 5,
@@ -17339,10 +17365,10 @@
    "tasks": [
     {
      "title": "P1TS52_thumb stand panel look and bench",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Thumb Stand: the strongman drawn in every panel, hand close-ups, the regulars on the bench, the gym wall",
-     "since": "2026-10-21T21:08:25+00:00",
+     "since": "2026-10-22T00:04:13+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -17451,8 +17477,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 8
    },
