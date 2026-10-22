@@ -1,11 +1,11 @@
 {
- "generated": 1792703203,
+ "generated": 1792703363,
  "defaultPercentPerCodexTask": 0.25,
  "tasks": [
   {
-   "id": "P3OR04_defense-bingo-logic-test",
-   "request": "Defense Bingo: add a test for card shuffles, bingo lines and card codes (OpenRouter lane)",
-   "game": "Defense Bingo",
+   "id": "P3OR08_fold-guess-helpers-test",
+   "request": "Fold Guess: add a test for date, era and score helpers (OpenRouter lane)",
+   "game": "Fold Guess",
    "route": "OpenRouter",
    "model": "deepseek-v4-flash",
    "effort": "default",
@@ -15,24 +15,8 @@
    "after": [],
    "priority": "P1",
    "state": "running",
-   "at": 1792702553,
-   "created": 1792702553
-  },
-  {
-   "id": "P3OR06_mirror-hold-levels-units-test",
-   "request": "Mirror Hold: add a test for the daily client, level layout and share line (OpenRouter lane)",
-   "game": "Mirror Hold",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "state": "running",
-   "at": 1792702559,
-   "created": 1792702559
+   "at": 1792702564,
+   "created": 1792702564
   },
   {
    "id": "P2FM04_even-water-first-minute",
@@ -49,23 +33,6 @@
    "state": "running",
    "at": 1792699887,
    "created": 1792699887,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2FM05_one-thread-first-minute",
-   "request": "One Thread: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-   "game": "One Thread",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "running",
-   "at": 1792702019,
-   "created": 1792702019,
    "estPercentOfWeek": 0.25
   },
   {
@@ -120,40 +87,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P2FM16_grub-band-first-minute",
-   "request": "Grub Band: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-   "game": "Grub Band",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "running",
-   "at": 1792702224,
-   "created": 1792702224,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2FM17_lot-waits-first-minute",
-   "request": "The Lot Waits: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-   "game": "The Lot Waits",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "running",
-   "at": 1792702428,
-   "created": 1792702428,
-   "estPercentOfWeek": 0.25
-  },
-  {
    "id": "P2FM21_hit-or-kit-first-minute",
    "request": "Hit or Kit: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
    "game": "Hit or Kit",
@@ -187,6 +120,39 @@
    "created": 1792702551
   },
   {
+   "id": "P3OR09_herbarium-guess-geometry-test",
+   "request": "Herbarium Guess: add a test for map projection and distance (OpenRouter lane)",
+   "game": "Herbarium Guess",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P3",
+   "state": "running",
+   "at": 1792702567,
+   "created": 1792702567
+  },
+  {
+   "id": "P2FM25_seed-spiral-first-minute",
+   "request": "Seed Spiral: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+   "game": "Seed Spiral",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "first-minute",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P4",
+   "state": "running",
+   "at": 1792703328,
+   "created": 1792703328,
+   "estPercentOfWeek": 0.25
+  },
+  {
    "id": "P1LK00_starter-looks-design-six",
    "request": "Design six starter looks for new games so a game starts with a real look instead of plain shapes",
    "game": "Studio",
@@ -201,25 +167,6 @@
    "state": "running",
    "at": 1792701705,
    "created": 1792701705
-  },
-  {
-   "id": "P1PQ00_play-these-today-page",
-   "request": "A Play these today page on the studio board: up to three games, what to try in each, and one-tap ship, revise or shelf",
-   "game": "Studio",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1BD01_board-queue-requests-and-codex-quota-eta"
-   ],
-   "priority": null,
-   "state": "running",
-   "at": 1792702852,
-   "created": 1792702852,
-   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2FM23_plain-telling-first-minute",
@@ -288,22 +235,6 @@
    "waitingOn": [],
    "created": 1792700851,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P3OR08_fold-guess-helpers-test",
-   "request": "Fold Guess: add a test for date, era and score helpers (OpenRouter lane)",
-   "game": "Fold Guess",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792702564
   },
   {
    "id": "P2FM26_tractatus-tree-first-minute",
@@ -510,22 +441,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P3OR09_herbarium-guess-geometry-test",
-   "request": "Herbarium Guess: add a test for map projection and distance (OpenRouter lane)",
-   "game": "Herbarium Guess",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P3",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792702567
-  },
-  {
    "id": "P3d35_lens-screen-studio-320-fix",
    "request": "Lens Screen: finish the client-studio round (one element spills off the left edge on the last level at 320 wide), then publish",
    "game": "Lens Screen",
@@ -540,23 +455,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792701959,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2FM25_seed-spiral-first-minute",
-   "request": "Seed Spiral: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-   "game": "Seed Spiral",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P4",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792700850,
    "estPercentOfWeek": 0.25
   },
   {
@@ -1008,22 +906,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792700662
-  },
-  {
-   "id": "P3OR07_where-and-when-scoring-test",
-   "request": "Where and When: add a test for place and year scoring (OpenRouter lane)",
-   "game": "Studio",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792702561
   },
   {
    "id": "P1NG00_newgame-from-brief-solver-spike-kit-hooks",
@@ -1555,6 +1437,38 @@
    "state": "done",
    "at": 1792702548,
    "created": 1792702548
+  },
+  {
+   "id": "P3OR04_defense-bingo-logic-test",
+   "request": "Defense Bingo: add a test for card shuffles, bingo lines and card codes (OpenRouter lane)",
+   "game": "Defense Bingo",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "state": "done",
+   "at": 1792702553,
+   "created": 1792702553
+  },
+  {
+   "id": "P3OR06_mirror-hold-levels-units-test",
+   "request": "Mirror Hold: add a test for the daily client, level layout and share line (OpenRouter lane)",
+   "game": "Mirror Hold",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "state": "done",
+   "at": 1792702559,
+   "created": 1792702559
   },
   {
    "id": "P2n53_nobody-looking",
@@ -2155,6 +2069,22 @@
    "state": "done",
    "at": 1792691823,
    "created": 1792691823
+  },
+  {
+   "id": "P3OR07_where-and-when-scoring-test",
+   "request": "Where and When: add a test for place and year scoring (OpenRouter lane)",
+   "game": "Studio",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "state": "done",
+   "at": 1792702561,
+   "created": 1792702561
   }
  ]
 }
