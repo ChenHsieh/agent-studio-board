@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T20:09:59+00:00",
+ "generated": "2026-10-22T20:12:12+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,25 +16,25 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 54,
-    "running": 0,
+    "queued": 45,
+    "running": 9,
     "doneToday": 3,
     "minutes": 2160,
-    "estimateMinutes": 2160
+    "estimateMinutes": 216
    },
    "Claude": {
     "queued": 1,
     "running": 4,
-    "doneToday": 48,
+    "doneToday": 49,
     "minutes": 300,
     "estimateMinutes": 75
    }
   },
-  "queued": 55,
-  "running": 4,
-  "doneToday": 51,
+  "queued": 46,
+  "running": 13,
+  "doneToday": 52,
   "lanes": {
-   "Codex": 1,
+   "Codex": 10,
    "Claude": 4
   },
   "laneCap": {
@@ -43,8 +43,8 @@
   },
   "codexPaused": false,
   "minutesRemaining": 2460,
-  "estimatedFinish": "2026-10-24T08:09:59+00:00",
-  "estimateMinutes": 2160
+  "estimatedFinish": "2026-10-22T23:48:12+00:00",
+  "estimateMinutes": 216
  },
  "lanes": [
   {
@@ -56,12 +56,81 @@
    "commit": null
   },
   {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P1FM00_first minute standard and per game tasks",
-   "since": null,
-   "activity": null,
-   "commit": null
+   "worker": "Codex",
+   "game": "nobody-looking",
+   "task": "P2FM01_nobody looking first minute",
+   "since": "2026-10-22T20:10:42+00:00",
+   "activity": "2026-10-22T20:11:58+00:00",
+   "commit": {
+    "at": "2026-10-22T20:10:43+00:00",
+    "subject": "start: P2FM01_nobody-looking-first-minute"
+   }
+  },
+  {
+   "worker": "Codex",
+   "game": "copy-drift",
+   "task": "P2FM02_copy drift first minute",
+   "since": "2026-10-22T20:11:11+00:00",
+   "activity": "2026-10-22T20:12:08+00:00",
+   "commit": {
+    "at": "2026-10-22T20:11:12+00:00",
+    "subject": "start: P2FM02_copy-drift-first-minute"
+   }
+  },
+  {
+   "worker": "Codex",
+   "game": "morning-three",
+   "task": "P2FM03_morning three first minute",
+   "since": "2026-10-22T20:11:11+00:00",
+   "activity": "2026-10-22T20:12:12+00:00",
+   "commit": {
+    "at": "2026-10-22T20:11:12+00:00",
+    "subject": "start: P2FM03_morning-three-first-minute"
+   }
+  },
+  {
+   "worker": "Codex",
+   "game": "even-water",
+   "task": "P2FM04_even water first minute",
+   "since": "2026-10-22T20:11:27+00:00",
+   "activity": "2026-10-22T20:11:34+00:00",
+   "commit": {
+    "at": "2026-10-22T20:11:32+00:00",
+    "subject": "start: P2FM04_even-water-first-minute"
+   }
+  },
+  {
+   "worker": "Codex",
+   "game": "one-thread",
+   "task": "P2FM05_one thread first minute",
+   "since": "2026-10-22T20:11:42+00:00",
+   "activity": "2026-10-22T20:12:10+00:00",
+   "commit": {
+    "at": "2026-10-22T20:11:43+00:00",
+    "subject": "start: P2FM05_one-thread-first-minute"
+   }
+  },
+  {
+   "worker": "Codex",
+   "game": "pigeon-salon",
+   "task": "P2FM06_pigeon salon first minute",
+   "since": "2026-10-22T20:11:43+00:00",
+   "activity": "2026-10-22T20:12:12+00:00",
+   "commit": {
+    "at": "2026-10-22T20:11:43+00:00",
+    "subject": "start: P2FM06_pigeon-salon-first-minute"
+   }
+  },
+  {
+   "worker": "Codex",
+   "game": "herbal-of-nowhere",
+   "task": "P2FM07_herbal of nowhere first minute",
+   "since": "2026-10-22T20:11:43+00:00",
+   "activity": "2026-10-22T20:12:07+00:00",
+   "commit": {
+    "at": "2026-10-22T20:11:44+00:00",
+    "subject": "start: P2FM07_herbal-of-nowhere-first-minute"
+   }
   },
   {
    "worker": "Claude",
@@ -78,14 +147,22 @@
    "since": null,
    "activity": null,
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "play-template",
+   "task": "P9OR00_or lane selftest",
+   "since": null,
+   "activity": null,
+   "commit": null
   }
  ],
- "codexLanes": 0,
+ "codexLanes": 10,
  "claudeWorkers": 4,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 108,
-  "usdEst": 388.8,
+  "runs": 109,
+  "usdEst": 392.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -127,7 +204,7 @@
   },
   {
    "day": "2026-10-22",
-   "changes": 53
+   "changes": 54
   }
  ],
  "houseRules": 23,
@@ -152,7 +229,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T02:25:43+00:00",
-   "lastChange": "2026-10-22T20:08:36+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -171,7 +248,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "A Name to Carry: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:36+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -395,7 +472,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/alias-loaf-1.webp",
    "firstSeen": "2026-10-14T23:09:53+00:00",
-   "lastChange": "2026-10-22T20:09:12+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -414,7 +491,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Alias Loaf: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:09:12+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1269,7 +1346,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-22T20:08:07+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -1288,7 +1365,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Blackout Notice: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:07+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1567,7 +1644,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/chai-boil-1.webp",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-22T20:09:03+00:00",
+   "lastChange": "2026-10-22T20:10:56+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 5,
@@ -1586,7 +1663,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Chai Boil: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:09:03+00:00",
+     "since": "2026-10-22T20:10:56+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1802,7 +1879,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T02:23:43+00:00",
-   "lastChange": "2026-10-22T20:08:33+00:00",
+   "lastChange": "2026-10-22T20:10:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -1821,7 +1898,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Checking Desk: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:33+00:00",
+     "since": "2026-10-22T20:10:56+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2049,7 +2126,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T21:52:34+00:00",
-   "lastChange": "2026-10-22T20:08:31+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -2068,7 +2145,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Coat Corridor: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:31+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2697,7 +2774,7 @@
    ]
   },
   {
-   "nextTask": "Copy Drift: add a short first-minute round so...",
+   "nextTask": null,
    "costTotalUsd": 32.4,
    "latestChange": {
     "text": "visual build: carbon duplicate book look live",
@@ -2709,14 +2786,14 @@
    "title": "Copy Drift",
    "line": "Hand a page to a copyist that rewrites each mark as the closest one it knows; 12 pages.",
    "url": "https://chenhsieh.github.io/copy-drift/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Hand a page to a copyist that rewrites each mark as the closest one it knows;",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T17:56:12+00:00",
-   "lastChange": "2026-10-22T20:07:52+00:00",
+   "lastChange": "2026-10-22T20:12:08+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -2732,16 +2809,19 @@
    "tasks": [
     {
      "title": "P2FM02_copy drift first minute",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Copy Drift: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:07:52+00:00",
+     "since": "2026-10-22T20:11:11+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-22T20:11:12+00:00",
+      "subject": "start: P2FM02_copy-drift-first-minute"
+     },
      "result": ""
     },
     {
@@ -2788,8 +2868,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
@@ -3234,7 +3314,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:37:54+00:00",
-   "lastChange": "2026-10-22T20:09:00+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -3253,7 +3333,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Dancers, Not Mad: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:09:00+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -4135,7 +4215,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/dynasty-guess-1.webp",
    "firstSeen": "2026-09-20T06:46:37+00:00",
-   "lastChange": "2026-10-22T20:08:55+00:00",
+   "lastChange": "2026-10-22T20:10:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -4154,7 +4234,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Dynasty: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:55+00:00",
+     "since": "2026-10-22T20:10:56+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -4351,7 +4431,7 @@
    ]
   },
   {
-   "nextTask": "Even Water: add a short first-minute round so...",
+   "nextTask": null,
    "costTotalUsd": 28.8,
    "latestChange": {
     "text": "visual build: rice terraces look live",
@@ -4363,14 +4443,14 @@
    "title": "Even Water",
    "line": "Place a few stones so the water finds every cup before the deep pit drinks it; 12 villages.",
    "url": "https://chenhsieh.github.io/even-water/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Place a few stones so the water finds every cup before the deep pit drinks it;",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-22T20:07:57+00:00",
+   "lastChange": "2026-10-22T20:11:34+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -4386,16 +4466,19 @@
    "tasks": [
     {
      "title": "P2FM04_even water first minute",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Even Water: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:07:57+00:00",
+     "since": "2026-10-22T20:11:27+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-22T20:11:32+00:00",
+      "subject": "start: P2FM04_even-water-first-minute"
+     },
      "result": ""
     },
     {
@@ -4442,8 +4525,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
@@ -4525,7 +4608,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/fake-philosopher-1.webp",
    "firstSeen": "2026-10-17T22:37:21+00:00",
-   "lastChange": "2026-10-22T20:09:27+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -4544,7 +4627,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Fake Philosopher: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:09:27+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -5134,7 +5217,7 @@
    "shelfNote": "not fun enough; credit removed (R06).",
    "image": "https://chenhsieh.github.io/play-lab/images/games/floor-area-1.webp",
    "firstSeen": "2026-10-16T01:23:59+00:00",
-   "lastChange": "2026-10-22T20:09:08+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -5153,7 +5236,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Floor Area: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:09:08+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -7172,7 +7255,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T20:47:27+00:00",
-   "lastChange": "2026-10-22T20:08:26+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -7191,7 +7274,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Grub Band: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:26+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -7257,7 +7340,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:58:56+00:00",
-   "lastChange": "2026-10-22T20:09:32+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -7276,7 +7359,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Hallway Posters: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:09:32+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -7627,7 +7710,7 @@
    ]
   },
   {
-   "nextTask": "Herbal of Nowhere: add a short first-minute round...",
+   "nextTask": null,
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "Open pages to read their glyph names, compare, then name the last plant; wrong names cost...",
@@ -7639,14 +7722,14 @@
    "title": "Herbal of Nowhere",
    "line": "Open pages to read their glyph names, compare, then name the last plant; wrong names cost hearts.",
    "url": "https://chenhsieh.github.io/herbal-of-nowhere/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "placeholder shapes, 12 folios",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-22T20:08:04+00:00",
+   "lastChange": "2026-10-22T20:12:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -7662,16 +7745,19 @@
    "tasks": [
     {
      "title": "P2FM07_herbal of nowhere first minute",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Herbal of Nowhere: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:04+00:00",
+     "since": "2026-10-22T20:11:43+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-22T20:11:44+00:00",
+      "subject": "start: P2FM07_herbal-of-nowhere-first-minute"
+     },
      "result": ""
     },
     {
@@ -7690,8 +7776,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -7874,7 +7960,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T04:19:06+00:00",
-   "lastChange": "2026-10-22T20:08:38+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -7893,7 +7979,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Hit or Kit: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:38+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -8405,7 +8491,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T04:39:50+00:00",
-   "lastChange": "2026-10-22T20:09:35+00:00",
+   "lastChange": "2026-10-22T20:10:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -8424,7 +8510,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Knockout Plate: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:09:35+00:00",
+     "since": "2026-10-22T20:10:56+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -8546,7 +8632,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T16:44:25+00:00",
-   "lastChange": "2026-10-22T20:09:37+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -8565,7 +8651,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Which Way Is Up: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:09:37+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -8688,7 +8774,7 @@
    "shelfNote": "",
    "image": "promo/lantern-meeting/first.jpg",
    "firstSeen": "2026-10-20T20:45:20+00:00",
-   "lastChange": "2026-10-22T20:09:39+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -8707,7 +8793,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Lantern Meeting: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:09:39+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -8990,7 +9076,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:19:59+00:00",
-   "lastChange": "2026-10-22T20:09:42+00:00",
+   "lastChange": "2026-10-22T20:10:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -9009,7 +9095,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Letter Lines: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:09:42+00:00",
+     "since": "2026-10-22T20:10:56+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -9177,7 +9263,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:36:20+00:00",
-   "lastChange": "2026-10-22T20:09:44+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -9196,7 +9282,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Lie Flat: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:09:44+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -10544,7 +10630,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/material-boards-1.webp",
    "firstSeen": "2026-10-15T21:49:26+00:00",
-   "lastChange": "2026-10-22T20:09:05+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 14.39,
     "codexRuns": 2,
@@ -10563,7 +10649,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Material Boards: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:09:05+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -11295,7 +11381,7 @@
    ]
   },
   {
-   "nextTask": "Morning Three: add a short first-minute round so...",
+   "nextTask": null,
    "costTotalUsd": 32.4,
    "latestChange": {
     "text": "visual build live: shadow-puppet stage (P2n85)",
@@ -11307,14 +11393,14 @@
    "title": "Morning Three",
    "line": "Monkeys bounce until their picture is satisfied; move chestnuts between bowls, day 2 inherits day 1.",
    "url": "https://chenhsieh.github.io/morning-three/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Split each monkey chestnuts between morning and evening; placeholder shapes, 12...",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T17:56:09+00:00",
-   "lastChange": "2026-10-22T20:07:55+00:00",
+   "lastChange": "2026-10-22T20:12:12+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -11330,16 +11416,19 @@
    "tasks": [
     {
      "title": "P2FM03_morning three first minute",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Morning Three: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:07:55+00:00",
+     "since": "2026-10-22T20:11:11+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-22T20:11:12+00:00",
+      "subject": "start: P2FM03_morning-three-first-minute"
+     },
      "result": ""
     },
     {
@@ -11386,8 +11475,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
@@ -11864,7 +11953,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:28:17+00:00",
-   "lastChange": "2026-10-22T20:09:47+00:00",
+   "lastChange": "2026-10-22T20:10:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -11883,7 +11972,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "No Unison: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:09:47+00:00",
+     "since": "2026-10-22T20:10:56+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -12032,7 +12121,7 @@
    ]
   },
   {
-   "nextTask": "Nobody Looking: add a short first-minute round so...",
+   "nextTask": null,
    "costTotalUsd": 28.8,
    "latestChange": {
     "text": "visual build live: screened dish cabinet (P2n84)",
@@ -12044,14 +12133,14 @@
    "title": "Nobody Looking",
    "line": "Twelve shelves of eyes and mouths: slide pieces until no face is left.",
    "url": "https://chenhsieh.github.io/nobody-looking/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Slide eyes and mouths until no face is left; placeholder shapes, 12 shelves",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T17:56:06+00:00",
-   "lastChange": "2026-10-22T20:07:50+00:00",
+   "lastChange": "2026-10-22T20:11:58+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12067,16 +12156,19 @@
    "tasks": [
     {
      "title": "P2FM01_nobody looking first minute",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Nobody Looking: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:07:50+00:00",
+     "since": "2026-10-22T20:10:42+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-22T20:10:43+00:00",
+      "subject": "start: P2FM01_nobody-looking-first-minute"
+     },
      "result": ""
     },
     {
@@ -12123,8 +12215,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
@@ -12205,8 +12297,8 @@
    "priorityNote": "Dodge the customer's reaching hand, then give the cone once past the gold line;",
    "shelfNote": "",
    "image": null,
-   "firstSeen": "2026-10-22T18:48:50+00:00",
-   "lastChange": "2026-10-22T20:08:12+00:00",
+   "firstSeen": "2026-10-22T19:52:47+00:00",
+   "lastChange": "2026-10-22T20:10:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12225,7 +12317,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Not Yet: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:12+00:00",
+     "since": "2026-10-22T20:10:56+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -12239,8 +12331,8 @@
      "state": "done",
      "worker": "Claude",
      "plan": "New game: tease with an ice-cream cone, then give it at the best moment",
-     "since": "2026-10-22T18:48:50+00:00",
-     "done": "2026-10-22T18:48:50+00:00",
+     "since": "2026-10-22T20:10:17+00:00",
+     "done": "2026-10-22T20:10:17+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -12299,7 +12391,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T01:39:00+00:00",
-   "lastChange": "2026-10-22T20:09:52+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12318,7 +12410,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "The Notched Boat: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:09:52+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -12404,7 +12496,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T19:48:04+00:00",
-   "lastChange": "2026-10-22T20:08:41+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12423,7 +12515,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "One Script: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:41+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -12470,7 +12562,7 @@
    ]
   },
   {
-   "nextTask": "One Thread: add a short first-minute round so...",
+   "nextTask": null,
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "Sew a pattern in one thread through a two-sided book: 13 books, then daily and endless;...",
@@ -12482,14 +12574,14 @@
    "title": "One Thread",
    "line": "Sew a pattern in one thread through a two-sided book: 13 books, then a daily and endless.",
    "url": "https://chenhsieh.github.io/one-thread/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Sew a pattern in one thread through a two-sided book: 13 books, then a daily",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-22T20:08:00+00:00",
+   "lastChange": "2026-10-22T20:12:10+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12505,16 +12597,19 @@
    "tasks": [
     {
      "title": "P2FM05_one thread first minute",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "One Thread: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:00+00:00",
+     "since": "2026-10-22T20:11:42+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-22T20:11:43+00:00",
+      "subject": "start: P2FM05_one-thread-first-minute"
+     },
      "result": ""
     },
     {
@@ -12533,8 +12628,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -12748,8 +12843,8 @@
    "priorityNote": "Twelve levels: place and take blocks to fill a dashed outline, then walk out",
    "shelfNote": "",
    "image": null,
-   "firstSeen": "2026-10-22T19:12:19+00:00",
-   "lastChange": "2026-10-22T20:08:14+00:00",
+   "firstSeen": "2026-10-22T19:36:08+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12768,7 +12863,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Own Ground: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:14+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -12782,8 +12877,8 @@
      "state": "done",
      "worker": "Claude",
      "plan": "New game: a little builder that can only stand on what it has built; get the shape up and walk out",
-     "since": "2026-10-22T19:12:19+00:00",
-     "done": "2026-10-22T19:12:19+00:00",
+     "since": "2026-10-22T20:10:17+00:00",
+     "done": "2026-10-22T20:10:17+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -12854,7 +12949,7 @@
    "shelfNote": "",
    "image": "promo/peony-dream/first.jpg",
    "firstSeen": "2026-10-18T01:51:43+00:00",
-   "lastChange": "2026-10-22T20:09:20+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -12873,7 +12968,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Peony Dream: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:09:20+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -13002,7 +13097,7 @@
    ]
   },
   {
-   "nextTask": "Pigeon Salon: add a short first-minute round so...",
+   "nextTask": null,
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "twelve levels: tap a painting the patron likes, then one they like less; the pigeon...",
@@ -13015,13 +13110,13 @@
    "line": "Twelve levels: tap a painting the patron likes, then one they like less; a pigeon re-hangs the gallery.",
    "url": "https://chenhsieh.github.io/pigeon-salon/",
    "stage": "building",
-   "who": "Claude",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Twelve levels: tap a painting the patron likes, then one they like less; a",
    "shelfNote": "",
    "image": null,
-   "firstSeen": "2026-10-22T18:48:50+00:00",
-   "lastChange": "2026-10-22T20:08:02+00:00",
+   "firstSeen": "2026-10-22T19:12:54+00:00",
+   "lastChange": "2026-10-22T20:12:12+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -13037,16 +13132,19 @@
    "tasks": [
     {
      "title": "P2FM06_pigeon salon first minute",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Pigeon Salon: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:02+00:00",
+     "since": "2026-10-22T20:11:43+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-22T20:11:43+00:00",
+      "subject": "start: P2FM06_pigeon-salon-first-minute"
+     },
      "result": ""
     },
     {
@@ -13054,8 +13152,8 @@
      "state": "done",
      "worker": "Claude",
      "plan": "New game: teach a pigeon to rank paintings the way a patron wants",
-     "since": "2026-10-22T18:48:50+00:00",
-     "done": "2026-10-22T18:48:50+00:00",
+     "since": "2026-10-22T20:10:17+00:00",
+     "done": "2026-10-22T20:10:17+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -13065,8 +13163,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -13120,7 +13218,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T20:22:39+00:00",
-   "lastChange": "2026-10-22T20:08:24+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -13139,7 +13237,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Pinch Points: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:24+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -13205,7 +13303,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T05:04:55+00:00",
-   "lastChange": "2026-10-22T20:08:43+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -13224,7 +13322,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Plain Telling: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:43+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -13365,8 +13463,8 @@
    "priorityNote": "Cook the egg to an order card one beat at a time; 16 dishes, 12 orders, a daily.",
    "shelfNote": "",
    "image": null,
-   "firstSeen": "2026-10-22T18:48:50+00:00",
-   "lastChange": "2026-10-22T20:08:09+00:00",
+   "firstSeen": "2026-10-22T19:32:07+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -13385,7 +13483,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Radish Omelette: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:09+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -13399,8 +13497,8 @@
      "state": "done",
      "worker": "Claude",
      "plan": "New game: one pan, and the card names the dish you actually made",
-     "since": "2026-10-22T18:48:50+00:00",
-     "done": "2026-10-22T18:48:50+00:00",
+     "since": "2026-10-22T20:10:17+00:00",
+     "done": "2026-10-22T20:10:17+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -14493,8 +14591,8 @@
    "priorityNote": "Blurry photo: tap smudges to sharpen them, each copies its sharp neighbours;",
    "shelfNote": "",
    "image": null,
-   "firstSeen": "2026-10-22T18:48:50+00:00",
-   "lastChange": "2026-10-22T20:08:17+00:00",
+   "firstSeen": "2026-10-22T18:49:51+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -14513,7 +14611,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Restored: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:17+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -14527,8 +14625,8 @@
      "state": "done",
      "worker": "Claude",
      "plan": "New game: restore a blurry photo five taps at a time; each patch becomes what its neighbours became",
-     "since": "2026-10-22T18:48:50+00:00",
-     "done": "2026-10-22T18:48:50+00:00",
+     "since": "2026-10-22T20:10:17+00:00",
+     "done": "2026-10-22T20:10:17+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -14939,7 +15037,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/four-thirty-three-1.webp",
    "firstSeen": "2026-10-18T06:11:10+00:00",
-   "lastChange": "2026-10-22T20:09:30+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -14958,7 +15056,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Room Tone: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:09:30+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -15115,8 +15213,8 @@
    "priorityNote": "A town of dots copies the best-regarded neighbour; wear a rare badge and drop",
    "shelfNote": "",
    "image": null,
-   "firstSeen": "2026-10-22T18:48:50+00:00",
-   "lastChange": "2026-10-22T20:08:19+00:00",
+   "firstSeen": "2026-10-22T19:16:05+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -15135,7 +15233,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Same Badge: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:19+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -15149,8 +15247,8 @@
      "state": "done",
      "worker": "Claude",
      "plan": "New game: a town of badge wearers; wear what gets noticed and take it off before everyone copies you",
-     "since": "2026-10-22T18:48:50+00:00",
-     "done": "2026-10-22T18:48:50+00:00",
+     "since": "2026-10-22T20:10:17+00:00",
+     "done": "2026-10-22T20:10:17+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -15530,7 +15628,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/seed-spiral-1.webp",
    "firstSeen": "2026-10-14T16:39:45+00:00",
-   "lastChange": "2026-10-22T20:08:48+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -15549,7 +15647,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Seed Spiral: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:48+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -16158,7 +16256,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T05:07:40+00:00",
-   "lastChange": "2026-10-22T20:09:15+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -16177,7 +16275,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Shortest Law: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:09:15+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -16833,7 +16931,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T16:29:01+00:00",
-   "lastChange": "2026-10-22T20:09:49+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -16852,7 +16950,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Silent Disco: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:09:49+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -17749,7 +17847,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T00:56:56+00:00",
-   "lastChange": "2026-10-22T20:08:21+00:00",
+   "lastChange": "2026-10-22T20:10:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -17768,7 +17866,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Speaking Stone: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:21+00:00",
+     "since": "2026-10-22T20:10:56+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -18849,7 +18947,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/the-folder-1.webp",
    "firstSeen": "2026-10-15T04:47:38+00:00",
-   "lastChange": "2026-10-22T20:09:10+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -18868,7 +18966,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "The Folder: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:09:10+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -19240,7 +19338,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T21:13:02+00:00",
-   "lastChange": "2026-10-22T20:08:29+00:00",
+   "lastChange": "2026-10-22T20:10:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -19259,7 +19357,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "The Lot Waits: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:29+00:00",
+     "since": "2026-10-22T20:10:56+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -19500,7 +19598,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T04:40:58+00:00",
-   "lastChange": "2026-10-22T20:08:46+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -19519,7 +19617,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Think an Elephant: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:46+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -19579,7 +19677,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:19:46+00:00",
-   "lastChange": "2026-10-22T20:08:58+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -19598,7 +19696,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Thirsty Clicks: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:58+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -20231,7 +20329,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/tractatus-tree-1.webp",
    "firstSeen": "2026-10-16T01:51:20+00:00",
-   "lastChange": "2026-10-22T20:08:50+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -20250,7 +20348,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Tractatus Tree: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:50+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -20791,7 +20889,7 @@
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/trick-box-1.webp",
    "firstSeen": "2026-10-18T06:20:59+00:00",
-   "lastChange": "2026-10-22T20:09:22+00:00",
+   "lastChange": "2026-10-22T20:10:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -20810,7 +20908,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Trick Box: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:09:22+00:00",
+     "since": "2026-10-22T20:10:56+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -21707,7 +21805,7 @@
    "shelfNote": "",
    "image": "promo/clean-features/first.jpg",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-22T20:09:25+00:00",
+   "lastChange": "2026-10-22T20:10:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -21726,7 +21824,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "What the Dish Sees: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:09:25+00:00",
+     "since": "2026-10-22T20:10:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -21938,7 +22036,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-16T00:32:50+00:00",
-   "lastChange": "2026-10-22T20:08:53+00:00",
+   "lastChange": "2026-10-22T20:10:56+00:00",
    "cost": {
     "apiUsd": 7.14,
     "codexRuns": 4,
@@ -21957,7 +22055,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Zoom Out: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:08:53+00:00",
+     "since": "2026-10-22T20:10:56+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
