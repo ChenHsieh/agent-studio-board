@@ -1,18 +1,11 @@
 {
- "generated": "2026-10-22T20:07:46+00:00",
+ "generated": "2026-10-22T20:09:59+00:00",
  "ops": {
-  "count": 28,
-  "notes": [
-   "A game changed in the last hour with no claimed task on it.",
-   "A status note names something that is not a game.",
-   "Two tasks share the number P1c09."
-  ]
+  "count": 0,
+  "notes": [],
+  "info": []
  },
- "about": [
-  "A game changed in the last hour with no claimed task on it.",
-  "A status note names something that is not a game.",
-  "Two tasks share the number P1c09."
- ],
+ "about": [],
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -23,30 +16,35 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 0,
+    "queued": 54,
     "running": 0,
     "doneToday": 3,
-    "minutes": 0,
-    "estimateMinutes": 0
+    "minutes": 2160,
+    "estimateMinutes": 2160
    },
    "Claude": {
-    "queued": 5,
-    "running": 3,
+    "queued": 1,
+    "running": 4,
     "doneToday": 48,
-    "minutes": 288,
-    "estimateMinutes": 288
+    "minutes": 300,
+    "estimateMinutes": 75
    }
   },
-  "queued": 5,
-  "running": 3,
+  "queued": 55,
+  "running": 4,
   "doneToday": 51,
   "lanes": {
-   "Codex": 0,
-   "Claude": 1
+   "Codex": 1,
+   "Claude": 4
   },
-  "minutesRemaining": 288,
-  "estimatedFinish": "2026-10-23T00:55:46+00:00",
-  "estimateMinutes": 288
+  "laneCap": {
+   "Claude": 4,
+   "Codex": null
+  },
+  "codexPaused": false,
+  "minutesRemaining": 2460,
+  "estimatedFinish": "2026-10-24T08:09:59+00:00",
+  "estimateMinutes": 2160
  },
  "lanes": [
   {
@@ -72,10 +70,18 @@
    "since": null,
    "activity": null,
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P2IN06_old designed ideas gate and route to codex",
+   "since": null,
+   "activity": null,
+   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 3,
+ "claudeWorkers": 4,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
   "runs": 108,
@@ -126,6 +132,97 @@
  ],
  "houseRules": 23,
  "games": [
+  {
+   "nextTask": "A Name to Carry: add a short first-minute...",
+   "costTotalUsd": 18.0,
+   "latestChange": {
+    "text": "P2n42 prototype live: 8 scenes, ministry tiers, share card, Mandarin first; gates pass;...",
+    "at": "2026-10-22T03:12:26+00:00"
+   },
+   "promo": null,
+   "id": "name-to-carry",
+   "repo": "name-to-carry",
+   "title": "A Name to Carry",
+   "line": "Eight scenes, ministry tiers and a share card: carry a name through the forms, Mandarin first.",
+   "url": "https://chenhsieh.github.io/name-to-carry/",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Eight scenes, ministry tiers and a share card: carry a name through the forms,",
+   "shelfNote": "",
+   "image": null,
+   "firstSeen": "2026-10-22T02:25:43+00:00",
+   "lastChange": "2026-10-22T20:08:36+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 0.0,
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
+    "totalUsdEst": 18.0
+   },
+   "tasks": [
+    {
+     "title": "P2FM20_name to carry first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "A Name to Carry: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:36+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "taskCounts": {
+    "queued": 1,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 0
+   },
+   "verdict": null,
+   "needsYou": "Native read of the Mandarin phrases across the 8 scenes is still owed before sharing. Suggest: have a native reader check them first, Mandarin leads the game.",
+   "inProgress": true,
+   "history": [
+    {
+     "at": "2026-10-22T03:12:26+00:00",
+     "ok": true,
+     "note": "P2n42 prototype live: 8 scenes, ministry tiers, share card, Mandarin first; gates pass; native-reader check still owed",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-22T03:11:11+00:00",
+     "ok": true,
+     "note": "feat: A Name to Carry prototype, eight scenes, ministry character tiers, shareable card",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T03:03:25+00:00",
+     "ok": true,
+     "note": "start: P2n42_name-to-carry-proto",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T02:27:05+00:00",
+     "ok": true,
+     "note": "feat: A Name to Carry starts from the Play Lab game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T02:25:43+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
+    }
+   ]
+  },
   {
    "nextTask": null,
    "costTotalUsd": 32.4,
@@ -279,7 +376,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Alias Loaf: add a short first-minute round so...",
    "costTotalUsd": 46.8,
    "latestChange": {
     "text": "Q2u gradual ladder live: 1-goal first screen, auto-test sieve; stale browser tests...",
@@ -291,14 +388,14 @@
    "title": "Alias Loaf",
    "line": "Set the cutter to catch one seed family.",
    "url": "https://chenhsieh.github.io/alias-loaf/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Introduce the mechanics one at a time and give the player a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/alias-loaf-1.webp",
    "firstSeen": "2026-10-14T23:09:53+00:00",
-   "lastChange": "2026-10-22T02:22:44+00:00",
+   "lastChange": "2026-10-22T20:09:12+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -312,6 +409,20 @@
     "totalUsdEst": 46.8
    },
    "tasks": [
+    {
+     "title": "P2FM35_alias loaf first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Alias Loaf: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:09:12+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "alias loaf gradual",
      "state": "done",
@@ -342,14 +453,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 2
    },
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
-   "inProgress": false,
+   "needsYou": null,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T02:22:36+00:00",
@@ -533,7 +644,7 @@
     "verdict": "revise",
     "note": "Bioinformatics round: make the idea legible in the first"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -569,7 +680,7 @@
     {
      "at": "2026-10-21T05:36:09+00:00",
      "ok": true,
-     "note": "P1h14 reskin live (main ): retro machine skin, brand top-left, no Play Lab header link; Opus ship review owed",
+     "note": "P1h14 reskin live: retro machine skin, brand top-left, no Play Lab header link; Opus ship review owed",
      "source": "board note"
     },
     {
@@ -606,237 +717,6 @@
      "at": "2026-10-15T21:29:32+00:00",
      "ok": true,
      "note": "feat: match letters and see which word a gap holds",
-     "source": "main commit"
-    }
-   ]
-  },
-  {
-   "nextTask": null,
-   "costTotalUsd": 101.47,
-   "latestChange": {
-    "text": "P1s01 renamed Still Water, live (merge ); menu, topbar, water contrast, lily rings; hub...",
-    "at": "2026-10-21T17:03:31+00:00"
-   },
-   "promo": null,
-   "id": "anechoic-fugue",
-   "repo": "anechoic-fugue",
-   "title": "Anechoic Fugue",
-   "line": "Place speakers so the sleeper's chair goes quiet.",
-   "url": "https://chenhsieh.github.io/anechoic-fugue/",
-   "stage": "live",
-   "who": null,
-   "priority": "P2",
-   "priorityNote": "Decide the physical model and its on-screen readout, choose",
-   "shelfNote": "",
-   "image": "https://chenhsieh.github.io/play-lab/images/games/anechoic-fugue-1.webp",
-   "firstSeen": "2026-10-15T19:39:22+00:00",
-   "lastChange": "2026-10-21T17:03:31+00:00",
-   "cost": {
-    "apiUsd": 17.97,
-    "codexRuns": 3,
-    "claudeRuns": 3,
-    "apiRuns": 3,
-    "codexTokens": 585052,
-    "codexUsdEst": 0.7,
-    "claudeUsdEst": 10.8,
-    "earlierRounds": 20,
-    "earlierUsdEst": 72.0,
-    "totalUsdEst": 101.47
-   },
-   "tasks": [
-    {
-     "title": "anechoic depth",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "",
-     "since": "2026-10-21T04:13:00+00:00",
-     "done": "2026-10-21T04:13:00+00:00",
-     "reviewed": false,
-     "minutes": 18,
-     "tokens": 212012,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "feat: lily rings make every pond a choice"
-    },
-    {
-     "title": "still water rename visuals",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Rename Anechoic Fugue to Still Water and refine the visuals.",
-     "since": "2026-10-20T19:00:06+00:00",
-     "done": "2026-10-20T19:00:06+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "anechoic depth",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-20T01:21:50+00:00",
-     "done": "2026-10-20T01:21:50+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Brief: expert/anechoic-fugue/packages/DEPTH_20261019.md: koi only on lily rings (parity becomes a property of the ring, not a free choice), 12-level ladder of distinct decisions."
-    },
-    {
-     "title": "anechoic publish review",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "Review every level of the new koi and slow-water version, fix what fails, and publish it.",
-     "since": "2026-10-20T00:36:57+00:00",
-     "done": "2026-10-20T00:36:57+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Live now: the koi pond (slow ripples with Step/Pause, rocking bar per duckling, n of m asleep, WebGL water, two-frog and rain chapters) at https://chenhsieh.github.io/anechoic-fugue/, checked live at 390 (level 1 solved..."
-    },
-    {
-     "title": "anechoic fugue build",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Slow the water, show each duckling's rocking and the still seam, koi replace the floats, soft water sound, every level a new decision.",
-     "since": "2026-10-19T18:03:20+00:00",
-     "done": "2026-10-19T18:03:20+00:00",
-     "reviewed": true,
-     "minutes": 15,
-     "tokens": 186369,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Built and committed the koi pond readout, timing controls, seams, save migration, shared components, and tests."
-    },
-    {
-     "title": "anechoic fugue water",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "WebGL water, big two-frog ponds, rain levels with lily pads, a daily pond.",
-     "since": "2026-10-19T18:03:20+00:00",
-     "done": "2026-10-19T18:03:20+00:00",
-     "reviewed": true,
-     "minutes": 12,
-     "tokens": 186671,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Implemented and committed on `codex-water-`."
-    },
-    {
-     "title": "anechoic fugue model",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Decide the physical model and its on-screen readout, choose the actors, plan bigger ponds and new disturbances.",
-     "since": "2026-10-19T17:54:51+00:00",
-     "done": "2026-10-19T17:54:51+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "The physical model and its readout are decided and written to intake_20261019/BRIEF_anechoic-fugue.md; two Codex build tasks queued (P2c05 round 1: readout, koi, sound, levels; P2c05b round 2: WebGL water, big ponds,..."
-    },
-    {
-     "title": "anechoic rethink",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "Rethink the core: find an object whose way of cancelling noise reads at a glance, then rebuild the hard levels around it.",
-     "since": "2026-10-18T15:39:00+00:00",
-     "done": "2026-10-18T15:39:00+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Anechoic Fugue is now a pond:"
-    }
-   ],
-   "taskCounts": {
-    "queued": 0,
-    "running": 0,
-    "waitingDesign": 0,
-    "done": 9
-   },
-   "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
-   "inProgress": false,
-   "history": [
-    {
-     "at": "2026-10-21T17:03:31+00:00",
-     "ok": true,
-     "note": "P1s01 renamed Still Water, live (merge ); menu, topbar, water contrast, lily rings; hub list in play-lab ; before/after in results_shots/P1s01. Pre-existing fails: r1016/card, r1016/quiet",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T16:58:37+00:00",
-     "ok": true,
-     "note": "feat: Anechoic Fugue is now Still Water, with a calmer pond and a finished menu",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T04:45:06+00:00",
-     "ok": true,
-     "note": "feat: lily rings make every pond a choice",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T04:44:04+00:00",
-     "ok": true,
-     "note": "feat: lily rings make every pond a choice",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T02:04:32+00:00",
-     "ok": true,
-     "note": "depth brief + build B2i",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-20T01:21:50+00:00",
-     "ok": true,
-     "note": "published koi pond (P2c05+P2c05b) with sound/zh/target fixes; depth redesign queued",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-20T01:20:34+00:00",
-     "ok": true,
-     "note": "feat: a slow koi pond:",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-19T22:31:00+00:00",
-     "ok": false,
-     "note": "koi pond readout, timing controls, old-save migration, shared component checks, and local phone verification complete; publish blocked pending explicit origin approval",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-19T18:03:20+00:00",
-     "ok": true,
-     "note": "model brief written; Codex rounds P2c05 and P2c05b queued",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-19T16:53:37+00:00",
-     "ok": true,
-     "note": "fix: every level is open while we test",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-19T08:41:22+00:00",
-     "ok": true,
-     "note": "S1: pond rethink published (frog, ducklings, float that flips; live preview) ()",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-19T08:39:49+00:00",
-     "ok": true,
-     "note": "feat: a pond where ripples cancel:",
      "source": "main commit"
     }
    ]
@@ -1292,7 +1172,7 @@
     "verdict": "revise",
     "note": "Bioinformatics round: make the idea legible in the first"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -1370,7 +1250,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Blackout Notice: add a short first-minute round so...",
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "Black out words on a stairwell notice until it says something kinder; small picture...",
@@ -1380,16 +1260,16 @@
    "id": "blackout-notice",
    "repo": "blackout-notice",
    "title": "Blackout Notice",
-   "line": "",
+   "line": "Black out words on a stairwell notice until it says something kinder; 20 notices and a daily.",
    "url": "https://chenhsieh.github.io/blackout-notice/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Black out words on a stairwell notice until it says something kinder; 20",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-22T18:48:06+00:00",
+   "lastChange": "2026-10-22T20:08:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -1403,6 +1283,20 @@
     "totalUsdEst": 14.4
    },
    "tasks": [
+    {
+     "title": "P2FM08_blackout notice first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Blackout Notice: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:07+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "blackout notice",
      "state": "done",
@@ -1419,14 +1313,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
-   "needsYou": null,
-   "inProgress": false,
+   "needsYou": "Read the 20 notices before it is promoted: the wording was written by the agent and no person has read it. Suggest: read levels 1 to 20 once, fix tone, then promote.",
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T18:48:06+00:00",
@@ -1654,7 +1548,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Chai Boil: add a short first-minute round so...",
    "costTotalUsd": 90.82,
    "latestChange": {
     "text": "P1CB10 four kitchen sets (rooftop, rainy window, mountain hut, platform), vignettes +...",
@@ -1666,14 +1560,14 @@
    "title": "Chai Boil",
    "line": "One pot, one dial: let the chai rise to the rim, not over it.",
    "url": "https://chenhsieh.github.io/chai-boil/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Steadier dial (keys on desktop), a forgiving golden zone, a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/chai-boil-1.webp",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-22T05:39:37+00:00",
+   "lastChange": "2026-10-22T20:09:03+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 5,
@@ -1687,6 +1581,20 @@
     "totalUsdEst": 90.82
    },
    "tasks": [
+    {
+     "title": "P2FM31_chai boil first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Chai Boil: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:09:03+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1CB08_chai draw helper pot",
      "state": "done",
@@ -1784,24 +1692,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "fix: keep chai touch controls ready"
-    },
-    {
-     "title": "P1CB02_chai add ingredient ui",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Chai Boil: build each brew from a tray in order, see what each ingredient does before adding it, and undo.",
-     "since": "2026-10-21T04:43:41+00:00",
-     "done": "2026-10-21T04:43:41+00:00",
-     "reviewed": false,
-     "minutes": 23,
-     "tokens": 267548,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "feat: build chai in an ingredient tray"
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 14
@@ -1811,13 +1705,13 @@
     "verdict": "revise",
     "note": "Visual revamp, different kitchen"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
-   "inProgress": false,
+   "needsYou": "Prayer-flag strip in the mountain hut set: five extra colours on one strip, all six kitchens still pass the contrast check. Suggest: keep it; it costs little and no kitchen failed the contrast check.",
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T05:39:37+00:00",
      "ok": true,
-     "note": "P1CB10 four kitchen sets (rooftop, rainy window, mountain hut, platform), vignettes + share header live ()",
+     "note": "P1CB10 four kitchen sets (rooftop, rainy window, mountain hut, platform), vignettes + share header live",
      "source": "board note"
     },
     {
@@ -1829,7 +1723,7 @@
     {
      "at": "2026-10-22T05:05:14+00:00",
      "ok": true,
-     "note": "P1CB09 lever plaque + brass handle + paper flames and six stoves live ()",
+     "note": "P1CB09 lever plaque + brass handle + paper flames and six stoves live",
      "source": "board note"
     },
     {
@@ -1841,7 +1735,7 @@
     {
      "at": "2026-10-22T04:52:13+00:00",
      "ok": true,
-     "note": "P1CB08 draw helper + pot, face, foam, steam, glass live ()",
+     "note": "P1CB08 draw helper + pot, face, foam, steam, glass live",
      "source": "board note"
     },
     {
@@ -1859,7 +1753,7 @@
     {
      "at": "2026-10-21T12:05:52+00:00",
      "ok": true,
-     "note": "P1CB06 four kitchens live (): clay stove, copper on charcoal (lever = pot height), induction (9 clicks), night platform (kulhads; 45 s whistle kept as optional hard mode, off by default)",
+     "note": "P1CB06 four kitchens live: clay stove, copper on charcoal (lever = pot height), induction (9 clicks), night platform (kulhads; 45 s whistle kept as optional hard mode, off by default)",
      "source": "board note"
     },
     {
@@ -1871,7 +1765,7 @@
     {
      "at": "2026-10-21T11:29:42+00:00",
      "ok": true,
-     "note": "P1CB05 kitchens live (): Kitchens screen, home gas ring on tiles, street stall kettle (hot kettle, rounds of 3), per-kitchen reaction budget",
+     "note": "P1CB05 kitchens live: Kitchens screen, home gas ring on tiles, street stall kettle (hot kettle, rounds of 3), per-kitchen reaction budget",
      "source": "board note"
     },
     {
@@ -1883,13 +1777,13 @@
     {
      "at": "2026-10-21T10:52:05+00:00",
      "ok": true,
-     "note": "P1CB04 cute pass live (): pot face with sim moods, paper steam sprites on the shelf, paper-cut regulars, zh-TW 火候; save test from live added",
+     "note": "P1CB04 cute pass live: pot face with sim moods, paper steam sprites on the shelf, paper-cut regulars, zh-TW 火候; save test from live added",
      "source": "board note"
     }
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Checking Desk: add a short first-minute round so...",
    "costTotalUsd": 21.6,
    "latestChange": {
     "text": "P2n41 prototype live: six solver-proved nights + daily, night desk look, zh; template...",
@@ -1899,16 +1793,16 @@
    "id": "checking-desk",
    "repo": "checking-desk",
    "title": "Checking Desk",
-   "line": "",
+   "line": "Six night shifts at a checking desk, each proved by a solver, plus a daily; Chinese and English.",
    "url": "https://chenhsieh.github.io/checking-desk/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Six night shifts at a checking desk, each proved by a solver, plus a daily;",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T02:23:43+00:00",
-   "lastChange": "2026-10-22T02:56:23+00:00",
+   "lastChange": "2026-10-22T20:08:33+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -1921,16 +1815,31 @@
     "earlierUsdEst": 21.6,
     "totalUsdEst": 21.6
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "P2FM19_checking desk first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Checking Desk: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:33+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 0
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T02:56:23+00:00",
@@ -2061,7 +1970,7 @@
     "done": 3
    },
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -2121,7 +2030,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Coat Corridor: add a short first-minute round so...",
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "prototype live: 6 floors + clip + double stitch + certified daily; weakest: cloth motion...",
@@ -2131,16 +2040,16 @@
    "id": "coat-corridor",
    "repo": "coat-corridor",
    "title": "Coat Corridor",
-   "line": "",
+   "line": "Six floors of coats and cloth: clip, double stitch, and a certified daily.",
    "url": "https://chenhsieh.github.io/coat-corridor/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Six floors of coats and cloth: clip, double stitch, and a certified daily.",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T21:52:34+00:00",
-   "lastChange": "2026-10-21T22:02:18+00:00",
+   "lastChange": "2026-10-22T20:08:31+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -2153,16 +2062,31 @@
     "earlierUsdEst": 14.4,
     "totalUsdEst": 14.4
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "P2FM18_coat corridor first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Coat Corridor: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:31+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 0
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T22:02:18+00:00",
@@ -2348,13 +2272,13 @@
     "verdict": "revise",
     "note": "New studies need UI pass; hide until then"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": "GoatCounter visit counter is wired but off in five games (this one, Walls Have Ears, Cymatic Plate, Glasshouse, UGA Grad Survivor) until a site code is chosen. Suggest: sign up with one shared code and switch all five on.",
    "inProgress": false,
    "history": [
     {
      "at": "2026-10-21T17:55:24+00:00",
      "ok": true,
-     "note": "P1CC32 live: 51 achievements with stickers, calm toast queue, Stickers tab with arrangeable page, shelf props, daily resident visit (main )",
+     "note": "P1CC32 live: 51 achievements with stickers, calm toast queue, Stickers tab with arrangeable page, shelf props, daily resident visit",
      "source": "board note"
     },
     {
@@ -2396,7 +2320,7 @@
     {
      "at": "2026-10-21T04:46:09+00:00",
      "ok": true,
-     "note": "The lab is open (): round dish, octagon tiling and incubator ship; hexagon stays hidden; incubator says N left and has bigger squares; tiling words-on-screen check passed, needs a real stranger",
+     "note": "The lab is open: round dish, octagon tiling and incubator ship; hexagon stays hidden; incubator says N left and has bigger squares; tiling words-on-screen check passed, needs a real stranger",
      "source": "board note"
     },
     {
@@ -2414,7 +2338,7 @@
     {
      "at": "2026-10-21T04:22:56+00:00",
      "ok": true,
-     "note": "Make a picture live (): 1024 PNG, 64/32 px circle previews, share or download, #c= link + viewer, rim for dark-on-dark; circle and 3:1 gates measured",
+     "note": "Make a picture live: 1024 PNG, 64/32 px circle previews, share or download, #c= link + viewer, rim for dark-on-dark; circle and 3:1 gates measured",
      "source": "board note"
     },
     {
@@ -2695,7 +2619,7 @@
     "verdict": "revise",
     "note": "Smooth but no taste yet"
    },
-   "needsYou": "Not played yet: try it and say what to change.",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -2773,7 +2697,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Copy Drift: add a short first-minute round so...",
    "costTotalUsd": 32.4,
    "latestChange": {
     "text": "visual build: carbon duplicate book look live",
@@ -2783,16 +2707,16 @@
    "id": "copy-drift",
    "repo": "copy-drift",
    "title": "Copy Drift",
-   "line": "",
+   "line": "Hand a page to a copyist that rewrites each mark as the closest one it knows; 12 pages.",
    "url": "https://chenhsieh.github.io/copy-drift/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Hand a page to a copyist that rewrites each mark as the closest one it knows;",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T17:56:12+00:00",
-   "lastChange": "2026-10-22T20:00:16+00:00",
+   "lastChange": "2026-10-22T20:07:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -2806,6 +2730,20 @@
     "totalUsdEst": 32.4
    },
    "tasks": [
+    {
+     "title": "P2FM02_copy drift first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Copy Drift: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:07:52+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "copy drift visual build",
      "state": "done",
@@ -2850,7 +2788,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
@@ -2861,7 +2799,7 @@
     "note": "A letter drifts through copyists into a joke; each card now shows what it will write, so the chain is planned, not guessed"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T20:00:16+00:00",
@@ -3253,13 +3191,13 @@
     {
      "at": "2026-10-19T15:05:57+00:00",
      "ok": true,
-     "note": "NOT_DONE: assist ring removed, Listen retained, all levels opened, and save migration tested; publish blocked pending explicit approval to push to github.com/ChenHsieh/cymatic-plate.git ()",
+     "note": "NOT_DONE: assist ring removed, Listen retained, all levels opened, and save migration tested; publish blocked pending explicit approval to push to github.com/ChenHsieh/cymatic-plate.git",
      "source": "board note"
     },
     {
      "at": "2026-10-19T03:46:05+00:00",
      "ok": true,
-     "note": "R18 review: stale opening test fixed (); level 6 cliff still open",
+     "note": "R18 review: stale opening test fixed; level 6 cliff still open",
      "source": "board note"
     },
     {
@@ -3277,10 +3215,10 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Dancers, Not Mad: add a short first-minute round...",
    "costTotalUsd": 39.6,
    "latestChange": {
-    "text": "P2GF14 live (main ): feel audit 50 -> 100; pressed buttons, ring under the finger,...",
+    "text": "P2GF14 live: feel audit 50 -> 100; pressed buttons, ring under the finger, tick/+1 per...",
     "at": "2026-10-22T00:53:24+00:00"
    },
    "promo": null,
@@ -3289,14 +3227,14 @@
    "title": "Dancers Not Mad",
    "line": "",
    "url": "https://chenhsieh.github.io/dancers-not-mad/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:37:54+00:00",
-   "lastChange": "2026-10-22T00:53:25+00:00",
+   "lastChange": "2026-10-22T20:09:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -3310,6 +3248,20 @@
     "totalUsdEst": 39.6
    },
    "tasks": [
+    {
+     "title": "P2FM30_dancers not mad first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Dancers, Not Mad: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:09:00+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2GF14_dancers not mad feel pass",
      "state": "done",
@@ -3354,7 +3306,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
@@ -3365,12 +3317,12 @@
     "note": "Mechanism visible; animation missing; visuals crude: smooth animations first"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T00:53:24+00:00",
      "ok": true,
-     "note": "P2GF14 live (main ): feel audit 50 -> 100; pressed buttons, ring under the finger, tick/+1 per pin, shake on spent budget, hit-stop + confetti on solve, Settings row under own key. Weakest: headless only, not felt on a phone",
+     "note": "P2GF14 live: feel audit 50 -> 100; pressed buttons, ring under the finger, tick/+1 per pin, shake on spent budget, hit-stop + confetti on solve, Settings row under own key. Weakest: headless only, not felt on a phone",
      "source": "board note"
     },
     {
@@ -3678,7 +3630,7 @@
     {
      "at": "2026-10-21T10:12:24+00:00",
      "ok": true,
-     "note": "P2PT03 legible live: goal+key+best+Hint on every puzzle, one 09:00-17:00 clock, bench-at-night look (main )",
+     "note": "P2PT03 legible live: goal+key+best+Hint on every puzzle, one 09:00-17:00 clock, bench-at-night look",
      "source": "board note"
     },
     {
@@ -3883,7 +3835,7 @@
     {
      "at": "2026-10-19T02:25:00+00:00",
      "ok": true,
-     "note": "R16 review: dough stays on screen at 320x568 with a rule card; stale tests fixed ()",
+     "note": "R16 review: dough stays on screen at 320x568 with a rule card; stale tests fixed",
      "source": "board note"
     },
     {
@@ -4146,7 +4098,7 @@
     {
      "at": "2026-10-19T03:30:04+00:00",
      "ok": true,
-     "note": "urgent how-to crop: pictures drawn on a private board and scaled to fit ()",
+     "note": "urgent how-to crop: pictures drawn on a private board and scaled to fit",
      "source": "board note"
     },
     {
@@ -4158,13 +4110,13 @@
     {
      "at": "2026-10-19T01:56:05+00:00",
      "ok": true,
-     "note": "R14 review: sketch cards show only the drawing and turn on their axis; undo brings the hand back ()",
+     "note": "R14 review: sketch cards show only the drawing and turn on their axis; undo brings the hand back",
      "source": "board note"
     }
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Dynasty: add a short first-minute round so a...",
    "costTotalUsd": 54.82,
    "latestChange": {
     "text": "ship standard: daily by local date, archive, practice easy/medium/hard, collection with...",
@@ -4176,14 +4128,14 @@
    "title": "Dynasty Guess",
    "line": "Place a museum object in its period.",
    "url": "https://chenhsieh.github.io/dynasty-guess/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Fix the missing object, then refine mechanism, story and",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/dynasty-guess-1.webp",
    "firstSeen": "2026-09-20T06:46:37+00:00",
-   "lastChange": "2026-10-21T17:39:40+00:00",
+   "lastChange": "2026-10-22T20:08:55+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -4197,6 +4149,20 @@
     "totalUsdEst": 54.82
    },
    "tasks": [
+    {
+     "title": "P2FM28_dynasty guess first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Dynasty: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:55+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "dynasty cabinet build",
      "state": "done",
@@ -4294,24 +4260,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "dynasty guess objects",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-19T23:59:29+00:00",
-     "done": "2026-10-19T23:59:29+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Brief: expert/dynasty-guess/packages/BRIEF_20261019.md (storeroom shelf, nine era slots, one tell per level, copies that lie; deck switched to CC0 Cleveland + Met images vendored)."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 9
@@ -4321,8 +4273,8 @@
     "verdict": "revise",
     "note": "Good idea; needs game feel, UI, story, bilingual"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
-   "inProgress": false,
+   "needsYou": null,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T17:39:40+00:00",
@@ -4369,7 +4321,7 @@
     {
      "at": "2026-10-20T03:16:48+00:00",
      "ok": true,
-     "note": "Workroom button fixed, brand top-left replaces the Play Lab link (live ); game-feel build queued as P2a24b",
+     "note": "Workroom button fixed, brand top-left replaces the Play Lab link; game-feel build queued as P2a24b",
      "source": "board note"
     },
     {
@@ -4399,7 +4351,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Even Water: add a short first-minute round so...",
    "costTotalUsd": 28.8,
    "latestChange": {
     "text": "visual build: rice terraces look live",
@@ -4409,16 +4361,16 @@
    "id": "even-water",
    "repo": "even-water",
    "title": "Even Water",
-   "line": "",
+   "line": "Place a few stones so the water finds every cup before the deep pit drinks it; 12 villages.",
    "url": "https://chenhsieh.github.io/even-water/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Place a few stones so the water finds every cup before the deep pit drinks it;",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-22T20:05:33+00:00",
+   "lastChange": "2026-10-22T20:07:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -4432,6 +4384,20 @@
     "totalUsdEst": 28.8
    },
    "tasks": [
+    {
+     "title": "P2FM04_even water first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Even Water: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:07:57+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "even water visual build",
      "state": "done",
@@ -4476,7 +4442,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
@@ -4487,7 +4453,7 @@
     "note": "Stones steer one pour so every cup gets some; the first-drop line is enough to reason and still leaves a puzzle"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T20:05:33+00:00",
@@ -4540,7 +4506,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Fake Philosopher: add a short first-minute round so...",
    "costTotalUsd": 32.96,
    "latestChange": {
     "text": "feat: match court claims by shape",
@@ -4552,14 +4518,14 @@
    "title": "Fake Philosopher",
    "line": "Build an ornate paragraph while a sceptical reader tries.",
    "url": "https://chenhsieh.github.io/fake-philosopher/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P3",
    "priorityNote": "A story, slower flashing, clear whether it is logic or",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/fake-philosopher-1.webp",
    "firstSeen": "2026-10-17T22:37:21+00:00",
-   "lastChange": "2026-10-21T05:40:00+00:00",
+   "lastChange": "2026-10-22T20:09:27+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -4573,6 +4539,20 @@
     "totalUsdEst": 32.96
    },
    "tasks": [
+    {
+     "title": "P2FM40_fake philosopher first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Fake Philosopher: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:09:27+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "fake philosopher names",
      "state": "done",
@@ -4631,14 +4611,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T05:40:00+00:00",
@@ -5081,7 +5061,7 @@
     {
      "at": "2026-10-19T02:14:50+00:00",
      "ok": true,
-     "note": "R15 review: published the unpushed Codex branch, teal floatable cue live ()",
+     "note": "R15 review: published the unpushed Codex branch, teal floatable cue live",
      "source": "board note"
     },
     {
@@ -5135,7 +5115,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Floor Area: add a short first-minute round so...",
    "costTotalUsd": 28.97,
    "latestChange": {
     "text": "Q3g rooftop inspector + props + water tank live; short-phone title overlap fixed",
@@ -5147,14 +5127,14 @@
    "title": "Floor Area",
    "line": "Drop floor slabs from a crane to fill a stepped skyline with no gaps.",
    "url": "https://chenhsieh.github.io/floor-area/",
-   "stage": "shelf",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P3",
    "priorityNote": "Find a creative twist",
    "shelfNote": "not fun enough; credit removed (R06).",
    "image": "https://chenhsieh.github.io/play-lab/images/games/floor-area-1.webp",
    "firstSeen": "2026-10-16T01:23:59+00:00",
-   "lastChange": "2026-10-22T02:06:26+00:00",
+   "lastChange": "2026-10-22T20:09:08+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -5168,6 +5148,20 @@
     "totalUsdEst": 28.97
    },
    "tasks": [
+    {
+     "title": "P2FM33_floor area first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Floor Area: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:09:08+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "floor area rooftop",
      "state": "done",
@@ -5268,14 +5262,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 7
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T02:06:26+00:00",
@@ -5432,7 +5426,7 @@
     "verdict": "revise",
     "note": "Distinct from the carving game: real song from a simulated brain; lead with hearing it"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -5600,7 +5594,7 @@
     "done": 3
    },
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -5835,7 +5829,7 @@
     "verdict": "revise",
     "note": "Homework-like; seal script; hilarious teacher; growth"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -6137,7 +6131,7 @@
     {
      "at": "2026-10-20T14:23:46+00:00",
      "ok": true,
-     "note": "link preview + simpler share + hub link removed (main )",
+     "note": "link preview + simpler share + hub link removed",
      "source": "board note"
     },
     {
@@ -6520,7 +6514,7 @@
     "verdict": "revise",
     "note": "Flagship polish round: slower default pace with a speed"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -6580,7 +6574,7 @@
     {
      "at": "2026-10-19T08:08:59+00:00",
      "ok": true,
-     "note": "S9: symbol key, rescued GIF shelf, honest hit counter wording ()",
+     "note": "S9: symbol key, rescued GIF shelf, honest hit counter wording",
      "source": "board note"
     },
     {
@@ -6671,13 +6665,13 @@
     "verdict": "revise",
     "note": "Fine; default menu page is gone: needs an onboarding page"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": "Decide whether to go public: the last deploy run failed at the artifact upload, so the live page still has a relative preview image. Suggest: re-run the Deploy workflow, then go public once the preview image loads.",
    "inProgress": false,
    "history": [
     {
      "at": "2026-10-21T16:47:24+00:00",
      "ok": true,
-     "note": "P1GH40 visual revamp live: hand-tinted cyanotype board, growing plants, paper figures, title plate, OFL fonts (main )",
+     "note": "P1GH40 visual revamp live: hand-tinted cyanotype board, growing plants, paper figures, title plate, OFL fonts",
      "source": "board note"
     },
     {
@@ -6839,7 +6833,7 @@
     "done": 3
    },
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -7081,7 +7075,7 @@
     "verdict": "revise",
     "note": "Harder levels not intuitive; drag preview inconsistent"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": "The credit links the artist's Instagram profile because the exact post address is unknown. Suggest: keep the profile link until the post is found.",
    "inProgress": false,
    "history": [
     {
@@ -7159,7 +7153,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Grub Band: add a short first-minute round so...",
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "prototype live: foam box, 4 levels + daily tune, REC dial with share link; weakest: only...",
@@ -7169,16 +7163,16 @@
    "id": "grub-band",
    "repo": "grub-band",
    "title": "Grub Band",
-   "line": "",
+   "line": "Fill a foam box with grubs to build a tune; four levels, a daily tune and a shareable recording.",
    "url": "https://chenhsieh.github.io/grub-band/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Fill a foam box with grubs to build a tune; four levels, a daily tune and a",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T20:47:27+00:00",
-   "lastChange": "2026-10-21T21:12:59+00:00",
+   "lastChange": "2026-10-22T20:08:26+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -7191,16 +7185,31 @@
     "earlierUsdEst": 14.4,
     "totalUsdEst": 14.4
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "P2FM16_grub band first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Grub Band: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:26+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 0
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T21:12:59+00:00",
@@ -7229,7 +7238,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Hallway Posters: add a short first-minute round so...",
    "costTotalUsd": 25.34,
    "latestChange": {
     "text": "feat: make poster tags feel clicky on phones",
@@ -7241,14 +7250,14 @@
    "title": "Hallway Posters",
    "line": "",
    "url": "https://chenhsieh.github.io/hallway-posters/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:58:56+00:00",
-   "lastChange": "2026-10-21T08:07:52+00:00",
+   "lastChange": "2026-10-22T20:09:32+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -7262,6 +7271,20 @@
     "totalUsdEst": 25.34
    },
    "tasks": [
+    {
+     "title": "P2FM42_hallway posters first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Hallway Posters: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:09:32+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2GF16_hallway posters feel pass",
      "state": "done",
@@ -7292,7 +7315,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 2
@@ -7303,7 +7326,7 @@
     "note": "Unclear what to look at or do"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T08:07:52+00:00",
@@ -7332,7 +7355,7 @@
     {
      "at": "2026-10-21T03:06:02+00:00",
      "ok": true,
-     "note": "Name tags: hang tags on cells, lens, per-tag feedback, six-poster ladder (live )",
+     "note": "Name tags: hang tags on cells, lens, per-tag feedback, six-poster ladder",
      "source": "board note"
     },
     {
@@ -7526,7 +7549,7 @@
     "verdict": "revise",
     "note": "Step-by-step linking and inferable feedback"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -7604,7 +7627,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Herbal of Nowhere: add a short first-minute round...",
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "Open pages to read their glyph names, compare, then name the last plant; wrong names cost...",
@@ -7613,17 +7636,17 @@
    "promo": null,
    "id": "herbal-of-nowhere",
    "repo": "herbal-of-nowhere",
-   "title": "Herbal Of Nowhere",
-   "line": "",
+   "title": "Herbal of Nowhere",
+   "line": "Open pages to read their glyph names, compare, then name the last plant; wrong names cost hearts.",
    "url": "https://chenhsieh.github.io/herbal-of-nowhere/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "placeholder shapes, 12 folios",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-22T19:27:40+00:00",
+   "lastChange": "2026-10-22T20:08:04+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -7637,6 +7660,20 @@
     "totalUsdEst": 14.4
    },
    "tasks": [
+    {
+     "title": "P2FM07_herbal of nowhere first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Herbal of Nowhere: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:04+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "herbal of nowhere",
      "state": "done",
@@ -7653,14 +7690,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
-   "inProgress": false,
+   "needsYou": null,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T19:27:40+00:00",
@@ -7818,7 +7855,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Hit or Kit: add a short first-minute round...",
    "costTotalUsd": 21.6,
    "latestChange": {
     "text": "P2SV53 live: weeks 3-5 (25 cases), casebook + lab rules, daily from all weeks, zh-Hant,...",
@@ -7827,17 +7864,17 @@
    "promo": null,
    "id": "hit-or-kit",
    "repo": "hit-or-kit",
-   "title": "Hit Or Kit",
-   "line": "",
+   "title": "Hit or Kit",
+   "line": "Open sample tubes in a freezer box and publish or drop a microbiome finding; 25 cases and a daily.",
    "url": "https://chenhsieh.github.io/hit-or-kit/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Open sample tubes in a freezer box and publish or drop a microbiome finding; 25",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T04:19:06+00:00",
-   "lastChange": "2026-10-22T07:57:09+00:00",
+   "lastChange": "2026-10-22T20:08:38+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -7851,6 +7888,20 @@
     "totalUsdEst": 21.6
    },
    "tasks": [
+    {
+     "title": "P2FM21_hit or kit first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Hit or Kit: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:38+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2SV53_hit or kit weeks daily",
      "state": "done",
@@ -7867,14 +7918,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T07:57:09+00:00",
@@ -7911,58 +7962,6 @@
      "ok": true,
      "note": "Initial commit",
      "source": "main commit"
-    }
-   ]
-  },
-  {
-   "nextTask": null,
-   "costTotalUsd": 3.6,
-   "latestChange": {
-    "text": "round batches 1-6 + two build tasks",
-    "at": "2026-10-20T02:32:56+00:00"
-   },
-   "promo": null,
-   "id": "inspo-to-prototype",
-   "repo": "inspo-to-prototype",
-   "title": "Inspo To Prototype",
-   "line": "",
-   "url": "https://chenhsieh.github.io/inspo-to-prototype/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
-   "shelfNote": "",
-   "image": null,
-   "firstSeen": "2026-10-20T02:32:56+00:00",
-   "lastChange": "2026-10-20T02:32:56+00:00",
-   "cost": {
-    "apiUsd": 0.0,
-    "codexRuns": 0,
-    "claudeRuns": 0,
-    "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 1,
-    "earlierUsdEst": 3.6,
-    "totalUsdEst": 3.6
-   },
-   "tasks": [],
-   "taskCounts": {
-    "queued": 0,
-    "running": 0,
-    "waitingDesign": 0,
-    "done": 0
-   },
-   "verdict": null,
-   "needsYou": null,
-   "inProgress": false,
-   "history": [
-    {
-     "at": "2026-10-20T02:32:56+00:00",
-     "ok": true,
-     "note": "round batches 1-6 + two build tasks",
-     "source": "board note"
     }
    ]
   },
@@ -8174,7 +8173,7 @@
     "done": 3
    },
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -8309,7 +8308,7 @@
     "done": 2
    },
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -8327,7 +8326,7 @@
     {
      "at": "2026-10-21T09:06:49+00:00",
      "ok": true,
-     "note": "P2PT01 Kitty Bottle live: rebuilt as plain HTML game, cats are liquid (main );",
+     "note": "P2PT01 Kitty Bottle live: rebuilt as plain HTML game, cats are liquid;",
      "source": "board note"
     },
     {
@@ -8387,7 +8386,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Knockout Plate: add a short first-minute round so...",
    "costTotalUsd": 25.37,
    "latestChange": {
     "text": "feat: make Knockout Plate respond to every touch",
@@ -8399,14 +8398,14 @@
    "title": "Knockout Plate",
    "line": "",
    "url": "https://chenhsieh.github.io/knockout-plate/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T04:39:50+00:00",
-   "lastChange": "2026-10-21T07:28:28+00:00",
+   "lastChange": "2026-10-22T20:09:35+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -8420,6 +8419,20 @@
     "totalUsdEst": 25.37
    },
    "tasks": [
+    {
+     "title": "P2FM43_knockout plate first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Knockout Plate: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:09:35+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2GF15_knockout plate feel pass",
      "state": "done",
@@ -8450,7 +8463,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 2
@@ -8461,7 +8474,7 @@
     "note": "Mechanism not understood: make it easier"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T07:28:28+00:00",
@@ -8514,7 +8527,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Which Way Is Up: add a short first-minute...",
    "costTotalUsd": 18.52,
    "latestChange": {
     "text": "feat: reveal what really happens after each street",
@@ -8526,14 +8539,14 @@
    "title": "Lamp Spiral",
    "line": "",
    "url": "https://chenhsieh.github.io/lamp-spiral/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T16:44:25+00:00",
-   "lastChange": "2026-10-21T05:01:07+00:00",
+   "lastChange": "2026-10-22T20:09:37+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -8547,6 +8560,20 @@
     "totalUsdEst": 18.52
    },
    "tasks": [
+    {
+     "title": "P2FM44_lamp spiral first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Which Way Is Up: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:09:37+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "lamp spiral learn cards",
      "state": "done",
@@ -8577,7 +8604,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 2
@@ -8588,7 +8615,7 @@
     "note": "Good game; the bug theme is unappealing: cute or educational theme, study round"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T05:01:07+00:00",
@@ -8635,7 +8662,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Lantern Meeting: add a short first-minute round so...",
    "costTotalUsd": 32.67,
    "latestChange": {
     "text": "feat: preview Lantern Meeting in shared links",
@@ -8654,14 +8681,14 @@
    "title": "Lantern Meeting",
    "line": "",
    "url": "https://chenhsieh.github.io/lantern-meeting/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Politics of lab and corporate competition; rock-paper-scissors core; clearer...",
    "shelfNote": "",
    "image": "promo/lantern-meeting/first.jpg",
    "firstSeen": "2026-10-20T20:45:20+00:00",
-   "lastChange": "2026-10-21T17:48:29+00:00",
+   "lastChange": "2026-10-22T20:09:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -8675,6 +8702,20 @@
     "totalUsdEst": 32.67
    },
    "tasks": [
+    {
+     "title": "P2FM45_lantern meeting first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Lantern Meeting: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:09:39+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SD24_studio standard lantern meeting",
      "state": "done",
@@ -8733,7 +8774,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
@@ -8744,7 +8785,7 @@
     "note": "Good board game feel; clarify what is shown; political/parish-style refinement; less text"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T17:48:29+00:00",
@@ -8930,7 +8971,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Letter Lines: add a short first-minute round so...",
    "costTotalUsd": 32.93,
    "latestChange": {
     "text": "feat: drag letter strokes with three-tier hints and page navigation",
@@ -8942,14 +8983,14 @@
    "title": "Letter Lines",
    "line": "",
    "url": "https://chenhsieh.github.io/letter-lines/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:19:59+00:00",
-   "lastChange": "2026-10-21T15:19:37+00:00",
+   "lastChange": "2026-10-22T20:09:42+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -8963,6 +9004,20 @@
     "totalUsdEst": 32.93
    },
    "tasks": [
+    {
+     "title": "P2FM46_letter lines first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Letter Lines: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:09:42+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1LL40_letter lines hints drag select logo",
      "state": "done",
@@ -9021,7 +9076,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
@@ -9032,7 +9087,7 @@
     "note": "Hints, drag select"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T15:19:37+00:00",
@@ -9073,7 +9128,7 @@
     {
      "at": "2026-10-21T03:32:12+00:00",
      "ok": true,
-     "note": "The Marked Copy: 5 chapters x 3 pages, hidden finds, slip, Your page (live )",
+     "note": "The Marked Copy: 5 chapters x 3 pages, hidden finds, slip, Your page",
      "source": "board note"
     },
     {
@@ -9103,7 +9158,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Lie Flat: add a short first-minute round so...",
    "costTotalUsd": 25.82,
    "latestChange": {
     "text": "feat: explain point badges and soften folding paper",
@@ -9115,14 +9170,14 @@
    "title": "Lie Flat",
    "line": "",
    "url": "https://chenhsieh.github.io/lie-flat/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:36:20+00:00",
-   "lastChange": "2026-10-21T15:19:03+00:00",
+   "lastChange": "2026-10-22T20:09:44+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -9136,6 +9191,20 @@
     "totalUsdEst": 25.82
    },
    "tasks": [
+    {
+     "title": "P2FM47_lie flat first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Lie Flat: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:09:44+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1LF40_lie flat instructions and softer paper",
      "state": "done",
@@ -9166,7 +9235,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 2
@@ -9177,7 +9246,7 @@
     "note": "Explain numbers; softer paper"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T15:19:03+00:00",
@@ -9239,7 +9308,7 @@
    "nextTask": null,
    "costTotalUsd": 57.83,
    "latestChange": {
-    "text": "urgent how-to crop: looping picture shows every row ()",
+    "text": "urgent how-to crop: looping picture shows every row",
     "at": "2026-10-19T03:30:04+00:00"
    },
    "promo": null,
@@ -9311,7 +9380,7 @@
     {
      "at": "2026-10-19T03:30:04+00:00",
      "ok": true,
-     "note": "urgent how-to crop: looping picture shows every row ()",
+     "note": "urgent how-to crop: looping picture shows every row",
      "source": "board note"
     },
     {
@@ -9775,7 +9844,7 @@
     "verdict": "revise",
     "note": "Bioinformatics round: make the idea legible in the first"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -9805,7 +9874,7 @@
     {
      "at": "2026-10-21T05:36:09+00:00",
      "ok": true,
-     "note": "P1h14 reskin live (main ): retro machine skin, brand top-left, no Play Lab header link; Opus ship review owed",
+     "note": "P1h14 reskin live: retro machine skin, brand top-left, no Play Lab header link; Opus ship review owed",
      "source": "board note"
     },
     {
@@ -9848,76 +9917,6 @@
      "at": "2026-09-05T02:54:37+00:00",
      "ok": true,
      "note": "Add description, og:*, and twitter:* meta tags, and a generated docs/og.png",
-     "source": "main commit"
-    }
-   ]
-  },
-  {
-   "nextTask": null,
-   "costTotalUsd": 14.4,
-   "latestChange": {
-    "text": "prototype live: 14 composed lots (need native read), 6 weeks + daily, exact best plan;...",
-    "at": "2026-10-21T21:50:16+00:00"
-   },
-   "promo": null,
-   "id": "lot-waits",
-   "repo": "lot-waits",
-   "title": "Lot Waits",
-   "line": "",
-   "url": "https://chenhsieh.github.io/lot-waits/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
-   "shelfNote": "",
-   "image": null,
-   "firstSeen": "2026-10-21T21:13:02+00:00",
-   "lastChange": "2026-10-21T21:50:16+00:00",
-   "cost": {
-    "apiUsd": 0.0,
-    "codexRuns": 0,
-    "claudeRuns": 0,
-    "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
-    "totalUsdEst": 14.4
-   },
-   "tasks": [],
-   "taskCounts": {
-    "queued": 0,
-    "running": 0,
-    "waitingDesign": 0,
-    "done": 0
-   },
-   "verdict": null,
-   "needsYou": null,
-   "inProgress": false,
-   "history": [
-    {
-     "at": "2026-10-21T21:50:16+00:00",
-     "ok": true,
-     "note": "prototype live: 14 composed lots (need native read), 6 weeks + daily, exact best plan; weakest: 解 line 12 px at 320, week 1 has no real decision",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T21:49:19+00:00",
-     "ok": true,
-     "note": "feat: The Lot Waits, a week of timing at a shrine side table",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T21:14:25+00:00",
-     "ok": true,
-     "note": "feat: The Lot Waits starts from the Play Lab game template",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T21:13:02+00:00",
-     "ok": true,
-     "note": "Initial commit",
      "source": "main commit"
     }
    ]
@@ -10154,7 +10153,7 @@
     "done": 3
    },
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -10448,7 +10447,7 @@
     "done": 6
    },
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -10502,7 +10501,7 @@
     {
      "at": "2026-10-19T08:25:50+00:00",
      "ok": true,
-     "note": "S7: rebuilt as Wingmen, a texting duel against a rival wingman ()",
+     "note": "S7: rebuilt as Wingmen, a texting duel against a rival wingman",
      "source": "board note"
     },
     {
@@ -10526,7 +10525,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Material Boards: add a short first-minute round so...",
    "costTotalUsd": 61.98,
    "latestChange": {
     "text": "P1MB42 targets are sun prints (blue + leaf), words print not crystal, contact strips,...",
@@ -10538,14 +10537,14 @@
    "title": "Material Boards",
    "line": "Drop mirror, glass and wood tiles on a pinned sample.",
    "url": "https://chenhsieh.github.io/material-boards/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P3",
    "priorityNote": "Find a creative twist for the classic puzzle",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/material-boards-1.webp",
    "firstSeen": "2026-10-15T21:49:26+00:00",
-   "lastChange": "2026-10-22T06:06:19+00:00",
+   "lastChange": "2026-10-22T20:09:05+00:00",
    "cost": {
     "apiUsd": 14.39,
     "codexRuns": 2,
@@ -10559,6 +10558,20 @@
     "totalUsdEst": 61.98
    },
    "tasks": [
+    {
+     "title": "P2FM32_material boards first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Material Boards: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:09:05+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1MB41_material boards sample drawer",
      "state": "done",
@@ -10656,24 +10669,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "bake howto gpt 5",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "",
-     "since": "2026-10-19T17:38:31+00:00",
-     "done": "2026-10-19T17:38:31+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 10
@@ -10684,12 +10683,12 @@
     "note": "Odd face; no taste yet"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T06:06:19+00:00",
      "ok": true,
-     "note": "P1MB42 targets are sun prints (blue + leaf), words print not crystal, contact strips, cyanotype line live ()",
+     "note": "P1MB42 targets are sun prints (blue + leaf), words print not crystal, contact strips, cyanotype line live",
      "source": "board note"
     },
     {
@@ -10701,7 +10700,7 @@
     {
      "at": "2026-10-22T05:55:51+00:00",
      "ok": true,
-     "note": "P1MB41 sample drawer on black foam-core: materials, lamp without face, tags, self-hosted fonts live ()",
+     "note": "P1MB41 sample drawer on black foam-core: materials, lamp without face, tags, self-hosted fonts live",
      "source": "board note"
     },
     {
@@ -10836,7 +10835,7 @@
     "done": 2
    },
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -11071,7 +11070,7 @@
     "verdict": "revise",
     "note": "Huge revamp: confusing and crude"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -11296,7 +11295,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Morning Three: add a short first-minute round so...",
    "costTotalUsd": 32.4,
    "latestChange": {
     "text": "visual build live: shadow-puppet stage (P2n85)",
@@ -11306,16 +11305,16 @@
    "id": "morning-three",
    "repo": "morning-three",
    "title": "Morning Three",
-   "line": "",
+   "line": "Monkeys bounce until their picture is satisfied; move chestnuts between bowls, day 2 inherits day 1.",
    "url": "https://chenhsieh.github.io/morning-three/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Split each monkey chestnuts between morning and evening; placeholder shapes, 12...",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T17:56:09+00:00",
-   "lastChange": "2026-10-22T20:02:56+00:00",
+   "lastChange": "2026-10-22T20:07:55+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -11329,6 +11328,20 @@
     "totalUsdEst": 32.4
    },
    "tasks": [
+    {
+     "title": "P2FM03_morning three first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Morning Three: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:07:55+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "morning three visual build",
      "state": "done",
@@ -11373,7 +11386,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
@@ -11384,7 +11397,7 @@
     "note": "Same chestnuts, different bowls; the rule pictures now read the right way and the two-day levels beat the obvious split"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T20:02:56+00:00",
@@ -11593,7 +11606,7 @@
     "verdict": "revise",
     "note": "Arcade timing mode, early-computer theme, themes to collect"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -11635,7 +11648,7 @@
     {
      "at": "2026-10-21T04:59:00+00:00",
      "ok": true,
-     "note": "P1h12 menu + 3 dailies + endless + archive + stats + 12 verified published motifs live (main ); Opus ship review owed",
+     "note": "P1h12 menu + 3 dailies + endless + archive + stats + 12 verified published motifs live; Opus ship review owed",
      "source": "board note"
     },
     {
@@ -11647,7 +11660,7 @@
     {
      "at": "2026-10-21T04:14:04+00:00",
      "ok": true,
-     "note": "P1h11 arcade live (main ): pendulum scan line, 4 speeds, grades+combo, calibration; Opus ship review owed",
+     "note": "P1h11 arcade live: pendulum scan line, 4 speeds, grades+combo, calibration; Opus ship review owed",
      "source": "board note"
     },
     {
@@ -11659,7 +11672,7 @@
     {
      "at": "2026-10-21T04:02:45+00:00",
      "ok": true,
-     "note": "P1h10 retro kit 1.0.0 + phosphor reskin live (main ); Pages source switched to /docs; Opus ship review owed",
+     "note": "P1h10 retro kit 1.0.0 + phosphor reskin live; Pages source switched to /docs; Opus ship review owed",
      "source": "board note"
     },
     {
@@ -11760,7 +11773,7 @@
     "done": 3
    },
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -11832,83 +11845,7 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 18.0,
-   "latestChange": {
-    "text": "P2n42 prototype live: 8 scenes, ministry tiers, share card, Mandarin first; gates pass;...",
-    "at": "2026-10-22T03:12:26+00:00"
-   },
-   "promo": null,
-   "id": "name-to-carry",
-   "repo": "name-to-carry",
-   "title": "Name To Carry",
-   "line": "",
-   "url": "https://chenhsieh.github.io/name-to-carry/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
-   "shelfNote": "",
-   "image": null,
-   "firstSeen": "2026-10-22T02:25:43+00:00",
-   "lastChange": "2026-10-22T03:12:26+00:00",
-   "cost": {
-    "apiUsd": 0.0,
-    "codexRuns": 0,
-    "claudeRuns": 0,
-    "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
-    "totalUsdEst": 18.0
-   },
-   "tasks": [],
-   "taskCounts": {
-    "queued": 0,
-    "running": 0,
-    "waitingDesign": 0,
-    "done": 0
-   },
-   "verdict": null,
-   "needsYou": null,
-   "inProgress": false,
-   "history": [
-    {
-     "at": "2026-10-22T03:12:26+00:00",
-     "ok": true,
-     "note": "P2n42 prototype live: 8 scenes, ministry tiers, share card, Mandarin first; gates pass; native-reader check still owed",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-22T03:11:11+00:00",
-     "ok": true,
-     "note": "feat: A Name to Carry prototype, eight scenes, ministry character tiers, shareable card",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T03:03:25+00:00",
-     "ok": true,
-     "note": "start: P2n42_name-to-carry-proto",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T02:27:05+00:00",
-     "ok": true,
-     "note": "feat: A Name to Carry starts from the Play Lab game template",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T02:25:43+00:00",
-     "ok": true,
-     "note": "Initial commit",
-     "source": "main commit"
-    }
-   ]
-  },
-  {
-   "nextTask": null,
+   "nextTask": "No Unison: add a short first-minute round so...",
    "costTotalUsd": 32.77,
    "latestChange": {
     "text": "P2NU41: rebuilt as a music puzzle (critter band, echo/reverb/pitch knobs, no-unison clash...",
@@ -11920,14 +11857,14 @@
    "title": "No Unison",
    "line": "",
    "url": "https://chenhsieh.github.io/no-unison/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:28:17+00:00",
-   "lastChange": "2026-10-21T18:47:37+00:00",
+   "lastChange": "2026-10-22T20:09:47+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -11941,6 +11878,20 @@
     "totalUsdEst": 32.77
    },
    "tasks": [
+    {
+     "title": "P2FM48_no unison first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "No Unison: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:09:47+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1NU40_no unison bars and resolution",
      "state": "done",
@@ -11999,7 +11950,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
@@ -12010,7 +11961,7 @@
     "note": "Needs hi-res, bar progress, more levels, music-game redesign"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T18:47:37+00:00",
@@ -12051,7 +12002,7 @@
     {
      "at": "2026-10-21T08:57:02+00:00",
      "ok": true,
-     "note": "P2PT06 budget live: air, seats, voices that count, hold callout, Breath level 1 (main )",
+     "note": "P2PT06 budget live: air, seats, voices that count, hold callout, Breath level 1",
      "source": "board note"
     },
     {
@@ -12081,7 +12032,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Nobody Looking: add a short first-minute round so...",
    "costTotalUsd": 28.8,
    "latestChange": {
     "text": "visual build live: screened dish cabinet (P2n84)",
@@ -12091,16 +12042,16 @@
    "id": "nobody-looking",
    "repo": "nobody-looking",
    "title": "Nobody Looking",
-   "line": "",
+   "line": "Twelve shelves of eyes and mouths: slide pieces until no face is left.",
    "url": "https://chenhsieh.github.io/nobody-looking/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Slide eyes and mouths until no face is left; placeholder shapes, 12 shelves",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T17:56:06+00:00",
-   "lastChange": "2026-10-22T19:57:32+00:00",
+   "lastChange": "2026-10-22T20:07:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12114,6 +12065,20 @@
     "totalUsdEst": 28.8
    },
    "tasks": [
+    {
+     "title": "P2FM01_nobody looking first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Nobody Looking: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:07:50+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "nobody looking visual build",
      "state": "done",
@@ -12158,7 +12123,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
@@ -12169,7 +12134,7 @@
     "note": "Slide pieces until nothing on the shelf looks back; breaking one face makes another, and every face is drawn"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T19:57:32+00:00",
@@ -12222,7 +12187,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Not Yet: add a short first-minute round so...",
    "costTotalUsd": 10.8,
    "latestChange": {
     "text": "Dodge the customer's reaching hand for delight, give the cone once past the gold line...",
@@ -12232,16 +12197,16 @@
    "id": "not-yet",
    "repo": "not-yet",
    "title": "Not Yet",
-   "line": "",
+   "line": "Dodge the customer's reaching hand, then give the cone once past the gold line; 10 customers, daily, endless.",
    "url": "https://chenhsieh.github.io/not-yet/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "building",
+   "who": "Claude",
+   "priority": "P2",
+   "priorityNote": "Dodge the customer's reaching hand, then give the cone once past the gold line;",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T18:48:50+00:00",
-   "lastChange": "2026-10-22T20:02:00+00:00",
+   "lastChange": "2026-10-22T20:08:12+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12255,6 +12220,20 @@
     "totalUsdEst": 10.8
    },
    "tasks": [
+    {
+     "title": "P2FM10_not yet first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Not Yet: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:12+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "not yet",
      "state": "done",
@@ -12271,14 +12250,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T20:02:00+00:00",
@@ -12301,7 +12280,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "The Notched Boat: add a short first-minute round...",
    "costTotalUsd": 18.0,
    "latestChange": {
     "text": "P2BT02 stretches 7-12 live : seating, rising river, flood, cargo, crossing lines,...",
@@ -12313,14 +12292,14 @@
    "title": "Notched Boat",
    "line": "",
    "url": "https://chenhsieh.github.io/notched-boat/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T01:39:00+00:00",
-   "lastChange": "2026-10-21T19:44:34+00:00",
+   "lastChange": "2026-10-22T20:09:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12334,6 +12313,20 @@
     "totalUsdEst": 18.0
    },
    "tasks": [
+    {
+     "title": "P2FM50_notched boat first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "The Notched Boat: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:09:52+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2BT02_notched boat levels",
      "state": "done",
@@ -12350,14 +12343,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T19:44:34+00:00",
@@ -12392,7 +12385,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "One Script: add a short first-minute round so...",
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "P2HR03 prototype live; 8 maps, par by exact solver; greedy force bot loses 2+ shelves on...",
@@ -12402,16 +12395,16 @@
    "id": "one-script",
    "repo": "one-script",
    "title": "One Script",
-   "line": "",
+   "line": "Eight maps with par from an exact solver; a greedy bot loses two or more shelves on six of them.",
    "url": "https://chenhsieh.github.io/one-script/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Eight maps with par from an exact solver; a greedy bot loses two or more",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T19:48:04+00:00",
-   "lastChange": "2026-10-21T20:20:07+00:00",
+   "lastChange": "2026-10-22T20:08:41+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12424,16 +12417,31 @@
     "earlierUsdEst": 14.4,
     "totalUsdEst": 14.4
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "P2FM22_one script first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "One Script: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:41+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 0
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T20:20:07+00:00",
@@ -12462,7 +12470,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "One Thread: add a short first-minute round so...",
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "Sew a pattern in one thread through a two-sided book: 13 books, then daily and endless;...",
@@ -12472,16 +12480,16 @@
    "id": "one-thread",
    "repo": "one-thread",
    "title": "One Thread",
-   "line": "",
+   "line": "Sew a pattern in one thread through a two-sided book: 13 books, then a daily and endless.",
    "url": "https://chenhsieh.github.io/one-thread/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Sew a pattern in one thread through a two-sided book: 13 books, then a daily",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-22T19:12:00+00:00",
+   "lastChange": "2026-10-22T20:08:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12495,6 +12503,20 @@
     "totalUsdEst": 14.4
    },
    "tasks": [
+    {
+     "title": "P2FM05_one thread first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "One Thread: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:00+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "one thread",
      "state": "done",
@@ -12511,14 +12533,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T19:12:00+00:00",
@@ -12708,7 +12730,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Own Ground: add a short first-minute round so...",
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "twelve levels: place and take blocks to fill a dashed outline, then walk out the door;...",
@@ -12718,16 +12740,16 @@
    "id": "own-ground",
    "repo": "own-ground",
    "title": "Own Ground",
-   "line": "",
+   "line": "Twelve levels: place and take blocks to fill a dashed outline, then walk out the door; scaffolding must go.",
    "url": "https://chenhsieh.github.io/own-ground/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "building",
+   "who": "Claude",
+   "priority": "P2",
+   "priorityNote": "Twelve levels: place and take blocks to fill a dashed outline, then walk out",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T19:12:19+00:00",
-   "lastChange": "2026-10-22T19:57:00+00:00",
+   "lastChange": "2026-10-22T20:08:14+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12741,6 +12763,20 @@
     "totalUsdEst": 14.4
    },
    "tasks": [
+    {
+     "title": "P2FM11_own ground first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Own Ground: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:14+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "own ground",
      "state": "done",
@@ -12757,14 +12793,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T19:57:00+00:00",
@@ -12793,7 +12829,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Peony Dream: add a short first-minute round so...",
    "costTotalUsd": 29.25,
    "latestChange": {
     "text": "feat: give Peony Dream its own logo and link preview",
@@ -12811,14 +12847,14 @@
    "title": "Peony Dream",
    "line": "Paint half a face on a sheet of silk, close the silk on.",
    "url": "https://chenhsieh.github.io/peony-dream/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Eastern ink visual direction instead of raster",
    "shelfNote": "",
    "image": "promo/peony-dream/first.jpg",
    "firstSeen": "2026-10-18T01:51:43+00:00",
-   "lastChange": "2026-10-21T19:34:08+00:00",
+   "lastChange": "2026-10-22T20:09:20+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -12832,6 +12868,20 @@
     "totalUsdEst": 29.25
    },
    "tasks": [
+    {
+     "title": "P2FM37_peony dream first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Peony Dream: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:09:20+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SD31_studio standard peony dream",
      "state": "done",
@@ -12876,7 +12926,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
@@ -12886,8 +12936,8 @@
     "verdict": "revise",
     "note": "Eastern ink visual direction instead of raster"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
-   "inProgress": false,
+   "needsYou": null,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T19:34:08+00:00",
@@ -12952,7 +13002,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Pigeon Salon: add a short first-minute round so...",
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "twelve levels: tap a painting the patron likes, then one they like less; the pigeon...",
@@ -12962,16 +13012,16 @@
    "id": "pigeon-salon",
    "repo": "pigeon-salon",
    "title": "Pigeon Salon",
-   "line": "",
+   "line": "Twelve levels: tap a painting the patron likes, then one they like less; a pigeon re-hangs the gallery.",
    "url": "https://chenhsieh.github.io/pigeon-salon/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "building",
+   "who": "Claude",
+   "priority": "P2",
+   "priorityNote": "Twelve levels: tap a painting the patron likes, then one they like less; a",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T18:48:50+00:00",
-   "lastChange": "2026-10-22T19:36:00+00:00",
+   "lastChange": "2026-10-22T20:08:02+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12985,6 +13035,20 @@
     "totalUsdEst": 14.4
    },
    "tasks": [
+    {
+     "title": "P2FM06_pigeon salon first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Pigeon Salon: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:02+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "pigeon salon",
      "state": "done",
@@ -13001,14 +13065,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T19:36:00+00:00",
@@ -13037,7 +13101,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Pinch Points: add a short first-minute round so...",
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "prototype live: 6 stones + daily, live conformal flattening, par by search; weakest:...",
@@ -13047,16 +13111,16 @@
    "id": "pinch-points",
    "repo": "pinch-points",
    "title": "Pinch Points",
-   "line": "",
+   "line": "Pinch six stones flat as the surface flattens live; par set by search, plus a daily.",
    "url": "https://chenhsieh.github.io/pinch-points/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Pinch six stones flat as the surface flattens live; par set by search, plus a",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T20:22:39+00:00",
-   "lastChange": "2026-10-21T20:47:18+00:00",
+   "lastChange": "2026-10-22T20:08:24+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -13069,16 +13133,31 @@
     "earlierUsdEst": 14.4,
     "totalUsdEst": 14.4
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "P2FM15_pinch points first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Pinch Points: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:24+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 0
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T20:47:18+00:00",
@@ -13107,7 +13186,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Plain Telling: add a short first-minute round so...",
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "P2HR01 live prototype on the template: 6 nights + daily + endless, template check 12/12;...",
@@ -13119,14 +13198,14 @@
    "title": "Plain Telling",
    "line": "",
    "url": "https://chenhsieh.github.io/plain-telling/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T05:04:55+00:00",
-   "lastChange": "2026-10-21T05:19:32+00:00",
+   "lastChange": "2026-10-22T20:08:43+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -13139,16 +13218,31 @@
     "earlierUsdEst": 14.4,
     "totalUsdEst": 14.4
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "P2FM23_plain telling first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Plain Telling: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:43+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 0
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T05:19:32+00:00",
@@ -13170,109 +13264,6 @@
     },
     {
      "at": "2026-10-21T05:04:55+00:00",
-     "ok": true,
-     "note": "Initial commit",
-     "source": "main commit"
-    }
-   ]
-  },
-  {
-   "nextTask": null,
-   "costTotalUsd": 25.2,
-   "latestChange": {
-    "text": "feat: kit 4, a game can add Home rows and result buttons and write its own share line",
-    "at": "2026-10-22T13:06:33+00:00"
-   },
-   "promo": null,
-   "id": "play-template",
-   "repo": "play-template",
-   "title": "Play Template",
-   "line": "",
-   "url": "https://chenhsieh.github.io/play-template/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
-   "shelfNote": "",
-   "image": null,
-   "firstSeen": "2026-10-21T04:23:39+00:00",
-   "lastChange": "2026-10-22T13:06:33+00:00",
-   "cost": {
-    "apiUsd": 0.0,
-    "codexRuns": 0,
-    "claudeRuns": 1,
-    "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 6,
-    "earlierUsdEst": 21.6,
-    "totalUsdEst": 25.2
-   },
-   "tasks": [
-    {
-     "title": "P1GF01_game feel playbook module and agent",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Research game feel for small web games, build a juice module in the template and a game-feel specialist agent.",
-     "since": "2026-10-21T06:18:11+00:00",
-     "done": "2026-10-21T06:18:11+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "P1GF01 game-feel: playbook + juice module (kit 2) + feel audit + game-feel skill; template and pilot live."
-    }
-   ],
-   "taskCounts": {
-    "queued": 0,
-    "running": 0,
-    "waitingDesign": 0,
-    "done": 1
-   },
-   "verdict": null,
-   "needsYou": null,
-   "inProgress": false,
-   "history": [
-    {
-     "at": "2026-10-22T13:06:33+00:00",
-     "ok": true,
-     "note": "feat: kit 4, a game can add Home rows and result buttons and write its own share line",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T12:26:41+00:00",
-     "ok": true,
-     "note": "feat: kit 3, a game can declare free drawing and answer legal() itself; optional no touch ring",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T06:46:58+00:00",
-     "ok": true,
-     "note": "P1GF01:juice-kit-2-live;feel_audit+game-feel-skill;pilot-play-template-demo-audit-50-to-100",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T06:41:46+00:00",
-     "ok": true,
-     "note": "feat: buttons press the moment a finger lands, a ring under the finger on the board, a small shake on a refused move (kit 2)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T04:58:09+00:00",
-     "ok": true,
-     "note": "fix: the result card waits for the chain animation; Save picture label shows",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T04:44:25+00:00",
-     "ok": true,
-     "note": "feat: Play Lab game template, kit 1",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T04:23:39+00:00",
      "ok": true,
      "note": "Initial commit",
      "source": "main commit"
@@ -13356,7 +13347,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Radish Omelette: add a short first-minute round so...",
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "Cook the egg to an order card, one beat at a time: centre, rim, flip, serve; 16 dishes,...",
@@ -13366,16 +13357,16 @@
    "id": "radish-omelette",
    "repo": "radish-omelette",
    "title": "Radish Omelette",
-   "line": "",
+   "line": "Cook the egg to an order card one beat at a time; 16 dishes, 12 orders, a daily.",
    "url": "https://chenhsieh.github.io/radish-omelette/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "building",
+   "who": "Claude",
+   "priority": "P2",
+   "priorityNote": "Cook the egg to an order card one beat at a time; 16 dishes, 12 orders, a daily.",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T18:48:50+00:00",
-   "lastChange": "2026-10-22T19:52:45+00:00",
+   "lastChange": "2026-10-22T20:08:09+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -13389,6 +13380,20 @@
     "totalUsdEst": 14.4
    },
    "tasks": [
+    {
+     "title": "P2FM09_radish omelette first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Radish Omelette: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:09+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "radish omelette",
      "state": "done",
@@ -13405,14 +13410,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T19:52:45+00:00",
@@ -13499,7 +13504,7 @@
     {
      "at": "2026-10-18T08:45:19+00:00",
      "ok": false,
-     "note": "fix- reduces the first card to a goal plus one drag rule, passes UI gate, and fits 320x568; its standalone game lacks playable_gate's required __demo.levels() adapter.",
+     "note": "fix- reduces the first card to a goal plus one drag rule, passes UI gate, and fits 320x568; its standalone game lacks playable_gate's required __demo.levels adapter.",
      "source": "board note"
     },
     {
@@ -13884,7 +13889,7 @@
     "verdict": "ship",
     "note": "Shippable; final polish and naming"
    },
-   "needsYou": null,
+   "needsYou": "The Pages build is stuck: the live page was patched by hand because a full rebuild needs npm, and the old BioRedactle address still returns 404. Suggest: fix the build so the patch is not the only copy; leave the old address.",
    "inProgress": false,
    "history": [
     {
@@ -14212,7 +14217,7 @@
     "done": 4
    },
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -14392,7 +14397,7 @@
     "verdict": "revise",
     "note": "Game-design pass to find where the fun is and build it"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -14470,7 +14475,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Restored: add a short first-minute round so a...",
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "Blurry photo, tap smudges to sharpen them; each copies its sharp neighbours; make the...",
@@ -14480,16 +14485,16 @@
    "id": "restored",
    "repo": "restored",
    "title": "Restored",
-   "line": "",
+   "line": "Blurry photo: tap smudges to sharpen them, each copies its sharp neighbours; make the headline on the card.",
    "url": "https://chenhsieh.github.io/restored/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "building",
+   "who": "Claude",
+   "priority": "P2",
+   "priorityNote": "Blurry photo: tap smudges to sharpen them, each copies its sharp neighbours;",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T18:48:50+00:00",
-   "lastChange": "2026-10-22T19:15:57+00:00",
+   "lastChange": "2026-10-22T20:08:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -14503,6 +14508,20 @@
     "totalUsdEst": 14.4
    },
    "tasks": [
+    {
+     "title": "P2FM12_restored first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Restored: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:17+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "restored",
      "state": "done",
@@ -14519,14 +14538,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T19:15:57+00:00",
@@ -14705,7 +14724,7 @@
    "nextTask": null,
    "costTotalUsd": 40.16,
    "latestChange": {
-    "text": "P1h13 bridge live (main ): arches, truck, sag from own fold, Mac skin; Opus ship review...",
+    "text": "P1h13 bridge live: arches, truck, sag from own fold, Mac skin; Opus ship review owed",
     "at": "2026-10-21T04:31:58+00:00"
    },
    "promo": {
@@ -14829,7 +14848,7 @@
     {
      "at": "2026-10-21T04:31:58+00:00",
      "ok": true,
-     "note": "P1h13 bridge live (main ): arches, truck, sag from own fold, Mac skin; Opus ship review owed",
+     "note": "P1h13 bridge live: arches, truck, sag from own fold, Mac skin; Opus ship review owed",
      "source": "board note"
     },
     {
@@ -14901,7 +14920,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Room Tone: add a short first-minute round so...",
    "costTotalUsd": 25.65,
    "latestChange": {
     "text": "feat: listen to the room and write its score",
@@ -14913,14 +14932,14 @@
    "title": "Room Tone",
    "line": "A small solo puzzle.",
    "url": "https://chenhsieh.github.io/four-thirty-three/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P3",
    "priorityNote": "Return to the idea that every ambient sound counts; find",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/four-thirty-three-1.webp",
    "firstSeen": "2026-10-18T06:11:10+00:00",
-   "lastChange": "2026-10-21T05:35:30+00:00",
+   "lastChange": "2026-10-22T20:09:30+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -14934,6 +14953,20 @@
     "totalUsdEst": 25.65
    },
    "tasks": [
+    {
+     "title": "P2FM41_four thirty three first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Room Tone: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:09:30+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "four thirty three listen",
      "state": "done",
@@ -14992,14 +15025,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T05:35:30+00:00",
@@ -15064,7 +15097,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Same Badge: add a short first-minute round so...",
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "Town of dots copies the best-regarded neighbour; wear a rare badge, drop it before the...",
@@ -15074,16 +15107,16 @@
    "id": "same-badge",
    "repo": "same-badge",
    "title": "Same Badge",
-   "line": "",
+   "line": "A town of dots copies the best-regarded neighbour; wear a rare badge and drop it before the notice names it.",
    "url": "https://chenhsieh.github.io/same-badge/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "building",
+   "who": "Claude",
+   "priority": "P2",
+   "priorityNote": "A town of dots copies the best-regarded neighbour; wear a rare badge and drop",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T18:48:50+00:00",
-   "lastChange": "2026-10-22T19:32:04+00:00",
+   "lastChange": "2026-10-22T20:08:19+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -15097,6 +15130,20 @@
     "totalUsdEst": 14.4
    },
    "tasks": [
+    {
+     "title": "P2FM13_same badge first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Same Badge: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:19+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "same badge",
      "state": "done",
@@ -15113,14 +15160,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T19:32:04+00:00",
@@ -15386,7 +15433,7 @@
     "done": 3
    },
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -15464,7 +15511,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Seed Spiral: add a short first-minute round so...",
    "costTotalUsd": 43.2,
    "latestChange": {
     "text": "P2SS52 live: orders 7-12, daily order, count sheet, ghost heads, share slip, main",
@@ -15476,14 +15523,14 @@
    "title": "Seed Spiral",
    "line": "Grow a sunflower and count its spirals.",
    "url": "https://chenhsieh.github.io/seed-spiral/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P4",
    "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/seed-spiral-1.webp",
    "firstSeen": "2026-10-14T16:39:45+00:00",
-   "lastChange": "2026-10-22T07:17:28+00:00",
+   "lastChange": "2026-10-22T20:08:48+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -15497,6 +15544,20 @@
     "totalUsdEst": 43.2
    },
    "tasks": [
+    {
+     "title": "P2FM25_seed spiral first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Seed Spiral: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:48+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2SS51_seed spiral recipe core",
      "state": "done",
@@ -15555,7 +15616,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
@@ -15566,7 +15627,7 @@
     "note": "Game core unclear"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T07:17:28+00:00",
@@ -15601,7 +15662,7 @@
     {
      "at": "2026-10-21T09:46:19+00:00",
      "ok": true,
-     "note": "P2PT02 flowers live: 12 flowers, frost, pace ring, win/loss cards, menu, daily (main )",
+     "note": "P2PT02 flowers live: 12 flowers, frost, pace ring, win/loss cards, menu, daily",
      "source": "board note"
     },
     {
@@ -16078,10 +16139,10 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Shortest Law: add a short first-minute round so...",
    "costTotalUsd": 47.22,
    "latestChange": {
-    "text": "P1SL41 live (main ): 8 real-data levels 7-14 (USGS quakes, NOAA tides, SWPC sunspots,...",
+    "text": "P1SL41 live: 8 real-data levels 7-14 (USGS quakes, NOAA tides, SWPC sunspots, Gutenberg...",
     "at": "2026-10-21T23:45:26+00:00"
    },
    "promo": null,
@@ -16090,14 +16151,14 @@
    "title": "Shortest Law",
    "line": "",
    "url": "https://chenhsieh.github.io/shortest-law/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T05:07:40+00:00",
-   "lastChange": "2026-10-21T23:45:26+00:00",
+   "lastChange": "2026-10-22T20:09:15+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -16111,6 +16172,20 @@
     "totalUsdEst": 47.22
    },
    "tasks": [
+    {
+     "title": "P2FM36_shortest law first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Shortest Law: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:09:15+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SL41_shortest law",
      "state": "done",
@@ -16137,7 +16212,7 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": "Part 1 live (main ): crisp canvas at DPR 1/2/3, test/dpr.mjs. Part 2 (real-data pack, 8 levels, 4 themes) not started beyond a source check: USGS quakes, NOAA tides, NOAA SWPC sunspots, USGS NWIS rivers and Gutenberg..."
+     "result": "Part 1 live: crisp canvas at DPR 1/2/3, test/dpr.mjs. Part 2 (real-data pack, 8 levels, 4 themes) not started beyond a source check: USGS quakes, NOAA tides, NOAA SWPC sunspots, USGS NWIS rivers and Gutenberg text all..."
     },
     {
      "title": "P2PT10_shortest law calibration art",
@@ -16183,7 +16258,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 5
@@ -16194,12 +16269,12 @@
     "note": "Fun; hi-res and deeper real-data levels"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T23:45:26+00:00",
      "ok": true,
-     "note": "P1SL41 live (main ): 8 real-data levels 7-14 (USGS quakes, NOAA tides, SWPC sunspots, Gutenberg words, USGS river) with sources, licences, zh captions, solver table; greedy fails on 2, held-out trap on 2",
+     "note": "P1SL41 live: 8 real-data levels 7-14 (USGS quakes, NOAA tides, SWPC sunspots, Gutenberg words, USGS river) with sources, licences, zh captions, solver table; greedy fails on 2, held-out trap on 2",
      "source": "board note"
     },
     {
@@ -16661,7 +16736,7 @@
     "verdict": "revise",
     "note": "Flagship polish round: finish the market-manager framing"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -16721,7 +16796,7 @@
     {
      "at": "2026-10-19T15:12:21+00:00",
      "ok": true,
-     "note": "NOT_DONE: takings meter, all-open districts, real-choice bots, save migration and 390/320 touch screenshots complete; publish blocked pending explicit approval to push to github.com/ChenHsieh/directory-handrail.git ()",
+     "note": "NOT_DONE: takings meter, all-open districts, real-choice bots, save migration and 390/320 touch screenshots complete; publish blocked pending explicit approval to push to github.com/ChenHsieh/directory-handrail.git",
      "source": "board note"
     },
     {
@@ -16739,7 +16814,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Silent Disco: add a short first-minute round so...",
    "costTotalUsd": 25.7,
    "latestChange": {
     "text": "feat: dancers move through quiet venue windows",
@@ -16751,14 +16826,14 @@
    "title": "Silent Disco",
    "line": "",
    "url": "https://chenhsieh.github.io/silent-disco/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T16:29:01+00:00",
-   "lastChange": "2026-10-21T13:37:42+00:00",
+   "lastChange": "2026-10-22T20:09:49+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -16772,6 +16847,20 @@
     "totalUsdEst": 25.7
    },
    "tasks": [
+    {
+     "title": "P2FM49_silent disco first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Silent Disco: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:09:49+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2PT09_silent disco window art",
      "state": "done",
@@ -16816,14 +16905,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T13:37:42+00:00",
@@ -16852,7 +16941,7 @@
     {
      "at": "2026-10-21T08:35:12+00:00",
      "ok": true,
-     "note": "P2PT04 drag feel live: lift, lit doors, fly-in, spring back (main )",
+     "note": "P2PT04 drag feel live: lift, lit doors, fly-in, spring back",
      "source": "board note"
     },
     {
@@ -16955,7 +17044,7 @@
     "verdict": "revise",
     "note": "No game core"
    },
-   "needsYou": null,
+   "needsYou": "Retire the six old mini-games now that Hit or Kit covers the same lessons as one game: they are quizzes the rule is told then recalled. Suggest: retire all six, keep the hub link to Hit or Kit.",
    "inProgress": false,
    "history": [
     {
@@ -17162,7 +17251,7 @@
     "verdict": "revise",
     "note": "Too many operations; core unclear"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -17463,7 +17552,7 @@
     "verdict": "revise",
     "note": "Make sock sizes and counts readable and let the theme"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -17641,26 +17730,26 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Speaking Stone: add a short first-minute round so...",
    "costTotalUsd": 14.4,
    "latestChange": {
-    "text": "P2n36 live (main ): 6 seasons + daily, rope drag + test chips, exact best vs brute force...",
+    "text": "P2n36 live: 6 seasons + daily, rope drag + test chips, exact best vs brute force (2,400...",
     "at": "2026-10-22T01:12:21+00:00"
    },
    "promo": null,
    "id": "speaking-stone",
    "repo": "speaking-stone",
    "title": "Speaking Stone",
-   "line": "",
+   "line": "Six seasons and a daily: drag the rope, test with chips, aim for the best fill.",
    "url": "https://chenhsieh.github.io/speaking-stone/",
-   "stage": "live",
-   "who": null,
-   "priority": null,
-   "priorityNote": "",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "Six seasons and a daily: drag the rope, test with chips, aim for the best fill.",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T00:56:56+00:00",
-   "lastChange": "2026-10-22T01:12:21+00:00",
+   "lastChange": "2026-10-22T20:08:21+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -17673,21 +17762,36 @@
     "earlierUsdEst": 14.4,
     "totalUsdEst": 14.4
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "P2FM14_speaking stone first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Speaking Stone: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:21+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 0
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T01:12:21+00:00",
      "ok": true,
-     "note": "P2n36 live (main ): 6 seasons + daily, rope drag + test chips, exact best vs brute force (2,400 boards), real touch 390/320, template check 12/12; bots: always-open 1/6, highest-rope-that-fills 4/6, careful 6/6. Weakest: How to play shows 2 pictures not",
+     "note": "P2n36 live: 6 seasons + daily, rope drag + test chips, exact best vs brute force (2,400 boards), real touch 390/320, template check 12/12; bots: always-open 1/6, highest-rope-that-fills 4/6, careful 6/6. Weakest: How to play shows 2 pictures not",
      "source": "board note"
     },
     {
@@ -17992,6 +18096,237 @@
   },
   {
    "nextTask": null,
+   "costTotalUsd": 101.47,
+   "latestChange": {
+    "text": "P1s01 renamed Still Water, live (merge ); menu, topbar, water contrast, lily rings; hub...",
+    "at": "2026-10-21T17:03:31+00:00"
+   },
+   "promo": null,
+   "id": "anechoic-fugue",
+   "repo": "anechoic-fugue",
+   "title": "Still Water",
+   "line": "A slow koi pond: ripples to follow, ducklings that fall asleep, lily rings that make every pond a choice.",
+   "url": "https://chenhsieh.github.io/anechoic-fugue/",
+   "stage": "live",
+   "who": null,
+   "priority": "P2",
+   "priorityNote": "Decide the physical model and its on-screen readout, choose",
+   "shelfNote": "",
+   "image": "https://chenhsieh.github.io/play-lab/images/games/anechoic-fugue-1.webp",
+   "firstSeen": "2026-10-15T19:39:22+00:00",
+   "lastChange": "2026-10-21T17:03:31+00:00",
+   "cost": {
+    "apiUsd": 17.97,
+    "codexRuns": 3,
+    "claudeRuns": 3,
+    "apiRuns": 3,
+    "codexTokens": 585052,
+    "codexUsdEst": 0.7,
+    "claudeUsdEst": 10.8,
+    "earlierRounds": 20,
+    "earlierUsdEst": 72.0,
+    "totalUsdEst": 101.47
+   },
+   "tasks": [
+    {
+     "title": "anechoic depth",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-21T04:13:00+00:00",
+     "done": "2026-10-21T04:13:00+00:00",
+     "reviewed": false,
+     "minutes": 18,
+     "tokens": 212012,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "feat: lily rings make every pond a choice"
+    },
+    {
+     "title": "still water rename visuals",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Rename Anechoic Fugue to Still Water and refine the visuals.",
+     "since": "2026-10-20T19:00:06+00:00",
+     "done": "2026-10-20T19:00:06+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "anechoic depth",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-20T01:21:50+00:00",
+     "done": "2026-10-20T01:21:50+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Brief: expert/anechoic-fugue/packages/DEPTH_20261019.md: koi only on lily rings (parity becomes a property of the ring, not a free choice), 12-level ladder of distinct decisions."
+    },
+    {
+     "title": "anechoic publish review",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Review every level of the new koi and slow-water version, fix what fails, and publish it.",
+     "since": "2026-10-20T00:36:57+00:00",
+     "done": "2026-10-20T00:36:57+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Live now: the koi pond (slow ripples with Step/Pause, rocking bar per duckling, n of m asleep, WebGL water, two-frog and rain chapters) at https://chenhsieh.github.io/anechoic-fugue/, checked live at 390 (level 1 solved..."
+    },
+    {
+     "title": "anechoic fugue build",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "Slow the water, show each duckling's rocking and the still seam, koi replace the floats, soft water sound, every level a new decision.",
+     "since": "2026-10-19T18:03:20+00:00",
+     "done": "2026-10-19T18:03:20+00:00",
+     "reviewed": true,
+     "minutes": 15,
+     "tokens": 186369,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Built and committed the koi pond readout, timing controls, seams, save migration, shared components, and tests."
+    },
+    {
+     "title": "anechoic fugue water",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "WebGL water, big two-frog ponds, rain levels with lily pads, a daily pond.",
+     "since": "2026-10-19T18:03:20+00:00",
+     "done": "2026-10-19T18:03:20+00:00",
+     "reviewed": true,
+     "minutes": 12,
+     "tokens": 186671,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Implemented and committed on `codex-water-`."
+    },
+    {
+     "title": "anechoic fugue model",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Decide the physical model and its on-screen readout, choose the actors, plan bigger ponds and new disturbances.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "The physical model and its readout are decided and written to intake_20261019/BRIEF_anechoic-fugue.md; two Codex build tasks queued (P2c05 round 1: readout, koi, sound, levels; P2c05b round 2: WebGL water, big ponds,..."
+    },
+    {
+     "title": "anechoic rethink",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "Rethink the core: find an object whose way of cancelling noise reads at a glance, then rebuild the hard levels around it.",
+     "since": "2026-10-18T15:39:00+00:00",
+     "done": "2026-10-18T15:39:00+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Anechoic Fugue is now a pond:"
+    }
+   ],
+   "taskCounts": {
+    "queued": 0,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 9
+   },
+   "verdict": null,
+   "needsYou": null,
+   "inProgress": false,
+   "history": [
+    {
+     "at": "2026-10-21T17:03:31+00:00",
+     "ok": true,
+     "note": "P1s01 renamed Still Water, live (merge ); menu, topbar, water contrast, lily rings; hub list in play-lab ; before/after in results_shots/P1s01. Pre-existing fails: r1016/card, r1016/quiet",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-21T16:58:37+00:00",
+     "ok": true,
+     "note": "feat: Anechoic Fugue is now Still Water, with a calmer pond and a finished menu",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-21T04:45:06+00:00",
+     "ok": true,
+     "note": "feat: lily rings make every pond a choice",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-21T04:44:04+00:00",
+     "ok": true,
+     "note": "feat: lily rings make every pond a choice",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-20T02:04:32+00:00",
+     "ok": true,
+     "note": "depth brief + build B2i",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-20T01:21:50+00:00",
+     "ok": true,
+     "note": "published koi pond (P2c05+P2c05b) with sound/zh/target fixes; depth redesign queued",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-20T01:20:34+00:00",
+     "ok": true,
+     "note": "feat: a slow koi pond:",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-19T22:31:00+00:00",
+     "ok": false,
+     "note": "koi pond readout, timing controls, old-save migration, shared component checks, and local phone verification complete; publish blocked pending explicit origin approval",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-19T18:03:20+00:00",
+     "ok": true,
+     "note": "model brief written; Codex rounds P2c05 and P2c05b queued",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-19T16:53:37+00:00",
+     "ok": true,
+     "note": "fix: every level is open while we test",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-19T08:41:22+00:00",
+     "ok": true,
+     "note": "S1: pond rethink published (frog, ducklings, float that flips; live preview)",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-19T08:39:49+00:00",
+     "ok": true,
+     "note": "feat: a pond where ripples cancel:",
+     "source": "main commit"
+    }
+   ]
+  },
+  {
+   "nextTask": null,
    "costTotalUsd": 47.09,
    "latestChange": {
     "text": "studio standard done: own logo, og tags, share text; audit all ok",
@@ -18080,7 +18415,7 @@
     "done": 3
    },
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -18276,7 +18611,7 @@
     "done": 5
    },
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -18495,7 +18830,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "The Folder: add a short first-minute round so...",
    "costTotalUsd": 32.4,
    "latestChange": {
     "text": "Q2t first minute live: letters, both folds, hold preview, slow spider walk; boards 1-3...",
@@ -18507,14 +18842,14 @@
    "title": "The Folder",
    "line": "Change a bead to make the first pair block the rest.",
    "url": "https://chenhsieh.github.io/the-folder/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Simplify the first minute, show the outcome of each choice",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/the-folder-1.webp",
    "firstSeen": "2026-10-15T04:47:38+00:00",
-   "lastChange": "2026-10-22T03:28:05+00:00",
+   "lastChange": "2026-10-22T20:09:10+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -18528,6 +18863,20 @@
     "totalUsdEst": 32.4
    },
    "tasks": [
+    {
+     "title": "P2FM34_the folder first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "The Folder: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:09:10+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "the folder first minute",
      "state": "done",
@@ -18558,14 +18907,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 2
    },
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
-   "inProgress": false,
+   "needsYou": null,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T03:28:05+00:00",
@@ -18794,7 +19143,7 @@
     "verdict": "revise",
     "note": "Show per-path distance bars and named berries, lay the two"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -18848,7 +19197,7 @@
     {
      "at": "2026-10-19T01:28:08+00:00",
      "ok": true,
-     "note": "R13 review: Grey visibly lands after Orange, run controls under the board, browser suite green ()",
+     "note": "R13 review: Grey visibly lands after Orange, run controls under the board, browser suite green",
      "source": "board note"
     },
     {
@@ -18867,6 +19216,91 @@
      "at": "2026-10-18T20:55:29+00:00",
      "ok": true,
      "note": "feat: make Forager flights smooth and playable",
+     "source": "main commit"
+    }
+   ]
+  },
+  {
+   "nextTask": "The Lot Waits: add a short first-minute round...",
+   "costTotalUsd": 14.4,
+   "latestChange": {
+    "text": "prototype live: 14 composed lots (need native read), 6 weeks + daily, exact best plan;...",
+    "at": "2026-10-21T21:50:16+00:00"
+   },
+   "promo": null,
+   "id": "lot-waits",
+   "repo": "lot-waits",
+   "title": "The Lot Waits",
+   "line": "A week at a shrine side table: give each lot to its visitor on the right day or keep it in a two-slot drawer.",
+   "url": "https://chenhsieh.github.io/lot-waits/",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P2",
+   "priorityNote": "A week at a shrine side table: give each lot to its visitor on the right day or",
+   "shelfNote": "",
+   "image": null,
+   "firstSeen": "2026-10-21T21:13:02+00:00",
+   "lastChange": "2026-10-22T20:08:29+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 0.0,
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
+    "totalUsdEst": 14.4
+   },
+   "tasks": [
+    {
+     "title": "P2FM17_lot waits first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "The Lot Waits: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:29+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "taskCounts": {
+    "queued": 1,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 0
+   },
+   "verdict": null,
+   "needsYou": "Native read of the 14 composed poems and their plain-language lines is owed. Suggest: one native read of all fourteen before the share card goes out.",
+   "inProgress": true,
+   "history": [
+    {
+     "at": "2026-10-21T21:50:16+00:00",
+     "ok": true,
+     "note": "prototype live: 14 composed lots (need native read), 6 weeks + daily, exact best plan; weakest: 解 line 12 px at 320, week 1 has no real decision",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-21T21:49:19+00:00",
+     "ok": true,
+     "note": "feat: The Lot Waits, a week of timing at a shrine side table",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-21T21:14:25+00:00",
+     "ok": true,
+     "note": "feat: The Lot Waits starts from the Play Lab game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-21T21:13:02+00:00",
+     "ok": true,
+     "note": "Initial commit",
      "source": "main commit"
     }
    ]
@@ -19047,7 +19481,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Think an Elephant: add a short first-minute round...",
    "costTotalUsd": 10.8,
    "latestChange": {
     "text": "P2HR04 live prototype: 13 levels + daily, exact par, LXGW subset;...",
@@ -19059,14 +19493,14 @@
    "title": "Think Elephant",
    "line": "",
    "url": "https://chenhsieh.github.io/think-elephant/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T04:40:58+00:00",
-   "lastChange": "2026-10-21T05:05:24+00:00",
+   "lastChange": "2026-10-22T20:08:46+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -19079,16 +19513,31 @@
     "earlierUsdEst": 10.8,
     "totalUsdEst": 10.8
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "P2FM24_think elephant first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Think an Elephant: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:46+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 0
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T05:05:24+00:00",
@@ -19111,10 +19560,10 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Thirsty Clicks: add a short first-minute round so...",
    "costTotalUsd": 32.4,
    "latestChange": {
-    "text": "P2GF11 live (main ): feel audit 60 -> 100; pressed buttons, tick/buzz/shake/confetti...",
+    "text": "P2GF11 live: feel audit 60 -> 100; pressed buttons, tick/buzz/shake/confetti answers,...",
     "at": "2026-10-22T00:41:39+00:00"
    },
    "promo": null,
@@ -19123,14 +19572,14 @@
    "title": "Thirsty Clicks",
    "line": "",
    "url": "https://chenhsieh.github.io/thirsty-clicks/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T17:19:46+00:00",
-   "lastChange": "2026-10-22T00:41:39+00:00",
+   "lastChange": "2026-10-22T20:08:58+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -19144,6 +19593,20 @@
     "totalUsdEst": 32.4
    },
    "tasks": [
+    {
+     "title": "P2FM29_thirsty clicks first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Thirsty Clicks: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:58+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2GF11_thirsty clicks feel pass",
      "state": "done",
@@ -19188,7 +19651,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
@@ -19199,12 +19662,12 @@
     "note": "Potential; smooth the experience"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T00:41:39+00:00",
      "ok": true,
-     "note": "P2GF11 live (main ): feel audit 60 -> 100; pressed buttons, tick/buzz/shake/confetti answers, Settings row (Sound, Vibration, Screen shake, Motion) under own key. Weakest: not felt on a real phone (headless only)",
+     "note": "P2GF11 live: feel audit 60 -> 100; pressed buttons, tick/buzz/shake/confetti answers, Settings row (Sound, Vibration, Screen shake, Motion) under own key. Weakest: not felt on a real phone (headless only)",
      "source": "board note"
     },
     {
@@ -19216,7 +19679,7 @@
     {
      "at": "2026-10-22T00:03:38+00:00",
      "ok": true,
-     "note": "P1t21 live (main ): propagation-house look (tray, stamped plants, blue punched reading tags, TC label, Petrona/Plex self-hosted); 5x5 fits 320 wide; rules/levels/saves/feel untouched; new level now scrolls to top",
+     "note": "P1t21 live: propagation-house look (tray, stamped plants, blue punched reading tags, TC label, Petrona/Plex self-hosted); 5x5 fits 320 wide; rules/levels/saves/feel untouched; new level now scrolls to top",
      "source": "board note"
     },
     {
@@ -19331,7 +19794,7 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": "Panel page core live (main ). Reflex deleted; one-finger drag/tap swap; hold-to-play in bottom third; tip animation on a 會倒 panel. Tests: panels.test (42), panels_touch real CDP touch 390+320 (48), browser_test 54,..."
+     "result": "Panel page core live. Reflex deleted; one-finger drag/tap swap; hold-to-play in bottom third; tip animation on a 會倒 panel. Tests: panels.test (42), panels_touch real CDP touch 390+320 (48), browser_test 54, onerule 39,..."
     },
     {
      "title": "P1TS53_thumb stand levels bet mantis daily",
@@ -19415,7 +19878,7 @@
     "verdict": "revise",
     "note": "Total rework"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -19457,7 +19920,7 @@
     {
      "at": "2026-10-22T00:31:21+00:00",
      "ok": true,
-     "note": "P1TS52 live (main ): drawn strongman in panels, hand close-up, bench of regulars, gym wall, share page; tests look_panels 47, panels_touch 48, gates PASS. Weakest: figures small at 320 with 4 panels; wall replay plays the page, not a scored run",
+     "note": "P1TS52 live: drawn strongman in panels, hand close-up, bench of regulars, gym wall, share page; tests look_panels 47, panels_touch 48, gates PASS. Weakest: figures small at 320 with 4 panels; wall replay plays the page, not a scored run",
      "source": "board note"
     },
     {
@@ -19583,7 +20046,7 @@
     "done": 3
    },
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -19749,7 +20212,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Tractatus Tree: add a short first-minute round so...",
    "costTotalUsd": 75.88,
    "latestChange": {
     "text": "P2TT42 note takes a margin slot (rules.js state.note, judge move), bots pass, live main",
@@ -19761,14 +20224,14 @@
    "title": "Tractatus Tree",
    "line": "The numbered pages of a 1921 book are shuffled into a few.",
    "url": "https://chenhsieh.github.io/tractatus-tree/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Teach the philosophy gradually through play, not as homework",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/tractatus-tree-1.webp",
    "firstSeen": "2026-10-16T01:51:20+00:00",
-   "lastChange": "2026-10-22T06:24:57+00:00",
+   "lastChange": "2026-10-22T20:08:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -19782,6 +20245,20 @@
     "totalUsdEst": 75.88
    },
    "tasks": [
+    {
+     "title": "P2FM26_tractatus tree first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Tractatus Tree: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:50+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2TT42_tractatus note takes a slot",
      "state": "done",
@@ -19808,7 +20285,7 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": "Live (main ). Tap a grown page: reader card (full Ogden text, Prev/Next along the tree, Esc/Close). Collection screen: every grown page in book order, N of 526, search by number, same reader. Old saves load; new..."
+     "result": "Live. Tap a grown page: reader card (full Ogden text, Prev/Next along the tree, Esc/Close). Collection screen: every grown page in book order, N of 526, search by number, same reader. Old saves load; new collection key;..."
     },
     {
      "title": "P2TT41_tractatus humour and growth design",
@@ -19879,24 +20356,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Verdict: a real core made luck-heavy by hidden pile order. Par uses the full pile order but the screen shows only tops; a careful top-only player beats random on 13 of 15 levels but loses on level 3 (90 vs 137) and..."
-    },
-    {
-     "title": "tractatus tree wittgenstein",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Teach the philosophy gradually through play, not as homework.",
-     "since": "2026-10-19T17:54:51+00:00",
-     "done": "2026-10-19T17:54:51+00:00",
-     "reviewed": false,
-     "minutes": 27,
-     "tokens": 230129,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Tractatus Tree now shows its target, progress, distinct round decisions, and a shared book cabinet."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 8
@@ -19906,8 +20369,8 @@
     "verdict": "revise",
     "note": "Reveal text; humour or dark spin; growth"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
-   "inProgress": false,
+   "needsYou": null,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T06:24:57+00:00",
@@ -20064,7 +20527,7 @@
     "verdict": "revise",
     "note": "Bioinformatics round: make the idea legible in the first"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -20088,7 +20551,7 @@
     {
      "at": "2026-10-21T05:36:09+00:00",
      "ok": true,
-     "note": "P1h14 reskin live (main ): retro machine skin, brand top-left, no Play Lab header link; Opus ship review owed",
+     "note": "P1h14 reskin live: retro machine skin, brand top-left, no Play Lab header link; Opus ship review owed",
      "source": "board note"
     },
     {
@@ -20231,7 +20694,7 @@
     "done": 3
    },
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -20309,7 +20772,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Trick Box: add a short first-minute round so...",
    "costTotalUsd": 29.05,
    "latestChange": {
     "text": "boxes are traced, not read off a lit key: grooves carry key marks + arrows, light only on...",
@@ -20321,14 +20784,14 @@
    "title": "Trick Box",
    "line": "Trick Box is a solo cabinetmaker's puzzle about routing a.",
    "url": "https://chenhsieh.github.io/trick-box/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P4",
    "priorityNote": "Shelf check: is there a game core worth a round?",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/trick-box-1.webp",
    "firstSeen": "2026-10-18T06:20:59+00:00",
-   "lastChange": "2026-10-18T12:51:24+00:00",
+   "lastChange": "2026-10-22T20:09:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -20342,6 +20805,20 @@
     "totalUsdEst": 29.05
    },
    "tasks": [
+    {
+     "title": "P2FM38_trick box first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Trick Box: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:09:22+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "trick box decision",
      "state": "done",
@@ -20386,14 +20863,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-18T12:51:24+00:00",
@@ -20703,7 +21180,7 @@
     "verdict": "ship",
     "note": "Looks good; Chen to test later"
    },
-   "needsYou": null,
+   "needsYou": "Review the 20 ending badge names (for example The Lab Hermit, The Ramen Scholar). Suggest: keep the set; all 20 are reachable and each line is short.",
    "inProgress": false,
    "history": [
     {
@@ -20885,7 +21362,7 @@
     "done": 4
    },
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "needsYou": null,
    "inProgress": false,
    "history": [
     {
@@ -21204,7 +21681,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "What the Dish Sees: add a short first-minute...",
    "costTotalUsd": 54.66,
    "latestChange": {
     "text": "P1SD46 studio standard: own brand button, og, local-midnight daily live, audit a-f ok",
@@ -21223,14 +21700,14 @@
    "title": "What the Dish Sees",
    "line": "Label each colony with the one shape it sees by placing.",
    "url": "https://chenhsieh.github.io/clean-features/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Find the playable frame for the latent-space game: a clear",
    "shelfNote": "",
    "image": "promo/clean-features/first.jpg",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-21T22:43:55+00:00",
+   "lastChange": "2026-10-22T20:09:25+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -21245,6 +21722,20 @@
    },
    "tasks": [
     {
+     "title": "P2FM39_clean features first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "What the Dish Sees: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:09:25+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
      "title": "P1SD46_studio standard clean features",
      "state": "done",
      "worker": "Claude",
@@ -21256,7 +21747,7 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all ok. Brand button opens level menu, og + favicon, daily on local date; page_check PASS; main ."
+     "result": "Before: b_logo, c_meta, d_share, e_daily FAIL. After: a-f all ok. Brand button opens level menu, og + favicon, daily on local date; page_check PASS; main ."
     },
     {
      "title": "dish sees story",
@@ -21341,31 +21832,17 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "What the Dish Sees had no real decision on the page: holding a slide or sticker over its target previewed the hidden answer (glow or smudge) for free, and Undo refunded slides and smudges. Both are fixed (a drag now..."
-    },
-    {
-     "title": "art_clean features",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "",
-     "since": "2026-10-18T07:41:46+00:00",
-     "done": "2026-10-18T07:41:46+00:00",
-     "reviewed": false,
-     "minutes": 20,
-     "tokens": 210285,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Petri dish now has glass depth, agar texture, readable organic colonies, response bloom motion, and lab-like sound."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 8
    },
    "verdict": null,
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
-   "inProgress": false,
+   "needsYou": null,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T22:43:55+00:00",
@@ -21442,7 +21919,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Zoom Out: add a short first-minute round so...",
    "costTotalUsd": 83.92,
    "latestChange": {
     "text": "P1z12 interface polish, share card, sounds live",
@@ -21454,14 +21931,14 @@
    "title": "Zoom Out",
    "line": "",
    "url": "https://chenhsieh.github.io/zoom-out/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Getting somewhere:",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-16T00:32:50+00:00",
-   "lastChange": "2026-10-22T15:34:26+00:00",
+   "lastChange": "2026-10-22T20:08:53+00:00",
    "cost": {
     "apiUsd": 7.14,
     "codexRuns": 4,
@@ -21475,6 +21952,20 @@
     "totalUsdEst": 83.92
    },
    "tasks": [
+    {
+     "title": "P2FM27_zoom out first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Zoom Out: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-22T20:08:53+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "zoomout levels parables",
      "state": "done",
@@ -21575,7 +22066,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 7
@@ -21585,8 +22076,8 @@
     "verdict": "revise",
     "note": "Right direction; real-time fractal, Eastern parables, cleaner controls"
    },
-   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
-   "inProgress": false,
+   "needsYou": null,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T15:34:26+00:00",
