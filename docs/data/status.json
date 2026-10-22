@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-22T17:53:45+00:00",
+ "generated": "2026-10-22T17:55:59+00:00",
  "ops": {
-  "count": 20,
+  "count": 21,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -30,39 +30,39 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 2,
+    "queued": 1,
     "running": 3,
-    "doneToday": 19,
-    "minutes": 252,
-    "estimateMinutes": 252
+    "doneToday": 20,
+    "minutes": 240,
+    "estimateMinutes": 240
    }
   },
-  "queued": 2,
+  "queued": 1,
   "running": 3,
-  "doneToday": 19,
+  "doneToday": 20,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 252,
-  "estimatedFinish": "2026-10-22T22:05:45+00:00",
-  "estimateMinutes": 252
+  "minutesRemaining": 240,
+  "estimatedFinish": "2026-10-22T21:55:59+00:00",
+  "estimateMinutes": 240
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "mirror-hold",
-   "task": "P1MH55_mirror hold level4 par over finger strokes",
-   "since": "2026-10-22T17:27:58+00:00",
-   "activity": "2026-10-22T17:53:40+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "BioRedactle-nextjs",
    "task": "P1SD32_studio standard redacxiv",
    "since": "2026-10-22T15:35:09+00:00",
    "activity": "2026-10-22T17:05:04+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "thumb-stand",
+   "task": "P1TS55_thumb stand 320 panel size and flying white dry stroke",
+   "since": "2026-10-22T17:55:37+00:00",
+   "activity": "2026-10-22T17:55:45+00:00",
    "commit": null
   },
   {
@@ -78,8 +78,8 @@
  "claudeWorkers": 3,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 82,
-  "usdEst": 295.2,
+  "runs": 83,
+  "usdEst": 298.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -121,7 +121,7 @@
   },
   {
    "day": "2026-10-22",
-   "changes": 25
+   "changes": 26
   }
  ],
  "houseRules": 23,
@@ -10457,10 +10457,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 62.35,
+   "costTotalUsd": 65.95,
    "latestChange": {
-    "text": "P1MH54 ship review: SHIP; fixed client 11 name (阿武松 not 濱ノ戸), result buttons visible at...",
-    "at": "2026-10-21T18:16:33+00:00"
+    "text": "L4 retuned so one pull is given up; par counts finger strokes (L11 138)",
+    "at": "2026-10-22T17:55:37+00:00"
    },
    "promo": null,
    "id": "mirror-hold",
@@ -10468,40 +10468,40 @@
    "title": "Mirror Hold",
    "line": "Wax a hairstyle, then test it against three pulls.",
    "url": "https://chenhsieh.github.io/mirror-hold/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Huge revamp planned by a cross-functional lead",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/mirror-hold-1.webp",
    "firstSeen": "2026-10-14T23:47:44+00:00",
-   "lastChange": "2026-10-22T17:53:40+00:00",
+   "lastChange": "2026-10-22T17:55:37+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 1,
     "codexTokens": 959889,
     "codexUsdEst": 1.15,
-    "claudeUsdEst": 7.2,
+    "claudeUsdEst": 10.8,
     "earlierRounds": 15,
     "earlierUsdEst": 54.0,
-    "totalUsdEst": 62.35
+    "totalUsdEst": 65.95
    },
    "tasks": [
     {
      "title": "P1MH55_mirror hold level4 par over finger strokes",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Mirror Hold: level 4 par counts only strokes a finger can make",
-     "since": "2026-10-22T17:27:58+00:00",
-     "done": null,
+     "since": "2026-10-22T17:27:45+00:00",
+     "done": "2026-10-22T17:27:45+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "Par before/after (finger-reachable best vs computer par): L1-3,5-10,12 unchanged at 144. L4: before par 142, finger 144 (lesson broken); after par 142, finger 142 (up pull now strength 2, so one pull must be given up)...."
     },
     {
      "title": "P1MH53_mirror hold ladder ranks 1953",
@@ -10604,18 +10604,24 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 7
+    "done": 8
    },
    "verdict": {
     "date": "2026-10-21",
     "verdict": "revise",
     "note": "Huge revamp: confusing and crude"
    },
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-22T17:55:37+00:00",
+     "ok": true,
+     "note": "L4 retuned so one pull is given up; par counts finger strokes (L11 138)",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T18:16:33+00:00",
      "ok": true,
@@ -10681,12 +10687,6 @@
      "ok": true,
      "note": "fix: hair strands take every real touch",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T04:52:19+00:00",
-     "ok": false,
-     "note": "see",
-     "source": "board note"
     }
    ]
   },
@@ -17923,7 +17923,7 @@
    ]
   },
   {
-   "nextTask": "Thumb Stand four-panel pages bigger on small phones...",
+   "nextTask": null,
    "costTotalUsd": 88.05,
    "latestChange": {
     "text": "P1TS54 ship review: live ; 上場 first-tap swallow after a fast drag fixed, thumb win line...",
@@ -17935,14 +17935,14 @@
    "title": "Thumb Stand",
    "line": "",
    "url": "https://chenhsieh.github.io/thumb-stand/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P1",
    "priorityNote": "Total rework planned by a cross-functional lead",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/thumb-stand-1.webp",
    "firstSeen": "2026-10-16T00:44:20+00:00",
-   "lastChange": "2026-10-22T17:27:45+00:00",
+   "lastChange": "2026-10-22T17:55:45+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 5,
@@ -17958,10 +17958,10 @@
    "tasks": [
     {
      "title": "P1TS55_thumb stand 320 panel size and flying white dry stroke",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "Thumb Stand four-panel pages bigger on small phones; Flying White long strokes keep their ink",
-     "since": "2026-10-22T17:27:45+00:00",
+     "since": "2026-10-22T17:55:37+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -18070,8 +18070,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 11
    },
