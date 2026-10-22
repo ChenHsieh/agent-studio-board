@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-22T06:04:30+00:00",
+ "generated": "2026-10-22T06:06:44+00:00",
  "ops": {
-  "count": 18,
+  "count": 19,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -31,39 +31,30 @@
    },
    "Claude": {
     "queued": 15,
-    "running": 1,
-    "doneToday": 1,
-    "minutes": 288,
-    "estimateMinutes": 288
+    "running": 0,
+    "doneToday": 2,
+    "minutes": 228,
+    "estimateMinutes": 228
    }
   },
   "queued": 15,
-  "running": 1,
-  "doneToday": 1,
+  "running": 0,
+  "doneToday": 2,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 288,
-  "estimatedFinish": "2026-10-22T10:52:30+00:00",
-  "estimateMinutes": 288
+  "minutesRemaining": 228,
+  "estimatedFinish": "2026-10-22T09:54:44+00:00",
+  "estimateMinutes": 228
  },
- "lanes": [
-  {
-   "worker": "Claude",
-   "game": "material-boards",
-   "task": "P1MB42_material boards sun prints",
-   "since": "2026-10-22T05:55:51+00:00",
-   "activity": "2026-10-22T05:58:06+00:00",
-   "commit": null
-  }
- ],
+ "lanes": [],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 0,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 58,
-  "usdEst": 208.8,
+  "runs": 59,
+  "usdEst": 212.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -105,7 +96,7 @@
   },
   {
    "day": "2026-10-22",
-   "changes": 9
+   "changes": 10
   }
  ],
  "houseRules": 23,
@@ -9882,10 +9873,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 51.18,
+   "costTotalUsd": 54.78,
    "latestChange": {
-    "text": "P1MB41 sample drawer on black foam-core: materials, lamp without face, tags, self-hosted...",
-    "at": "2026-10-22T05:55:51+00:00"
+    "text": "P1MB42 targets are sun prints (blue + leaf), words print not crystal, contact strips,...",
+    "at": "2026-10-22T06:06:19+00:00"
    },
    "promo": null,
    "id": "material-boards",
@@ -9893,41 +9884,27 @@
    "title": "Material Boards",
    "line": "Drop mirror, glass and wood tiles on a pinned sample.",
    "url": "https://chenhsieh.github.io/material-boards/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Find a creative twist for the classic puzzle",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/material-boards-1.webp",
    "firstSeen": "2026-10-15T21:49:26+00:00",
-   "lastChange": "2026-10-22T05:58:06+00:00",
+   "lastChange": "2026-10-22T06:06:19+00:00",
    "cost": {
     "apiUsd": 14.39,
     "codexRuns": 2,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 4,
     "codexTokens": 662317,
     "codexUsdEst": 0.79,
-    "claudeUsdEst": 10.8,
+    "claudeUsdEst": 14.4,
     "earlierRounds": 7,
     "earlierUsdEst": 25.2,
-    "totalUsdEst": 51.18
+    "totalUsdEst": 54.78
    },
    "tasks": [
-    {
-     "title": "P1MB42_material boards sun prints",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Targets become sun-print papers that turn blue and show a white leaf when they get enough light",
-     "since": "2026-10-22T05:55:51+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1MB41_material boards sample drawer",
      "state": "done",
@@ -9941,6 +9918,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1MB41 material-boards-sample-drawer: DONE, live (main , https://chenhsieh.github.io/material-boards/, live bytes match, zero console errors)."
+    },
+    {
+     "title": "P1MB42_material boards sun prints",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Targets become sun-print papers that turn blue and show a white leaf when they get enough light",
+     "since": "2026-10-22T04:02:41+00:00",
+     "done": "2026-10-22T04:02:41+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1MB42 material-boards-sun-prints: DONE, live (main , https://chenhsieh.github.io/material-boards/, live bytes match, zero console errors)."
     },
     {
      "title": "P1MB40_material boards visual spin",
@@ -10029,9 +10020,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 9
+    "done": 10
    },
    "verdict": {
     "date": "2026-10-21",
@@ -10039,8 +10030,14 @@
     "note": "Odd face; no taste yet"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-22T06:06:19+00:00",
+     "ok": true,
+     "note": "P1MB42 targets are sun prints (blue + leaf), words print not crystal, contact strips, cyanotype line live ()",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T05:55:51+00:00",
      "ok": true,
@@ -10106,12 +10103,6 @@
      "ok": true,
      "note": "feat: see which way the beam travels and tell walls, wood and fixed tiles apart",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-16T00:23:21+00:00",
-     "ok": true,
-     "note": "LIVE https://chenhsieh.github.io/material-boards/ (claude builder)",
-     "source": "board note"
     }
    ]
   },
