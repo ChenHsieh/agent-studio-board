@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-22T20:01:06+00:00",
+ "generated": "2026-10-22T20:03:18+00:00",
  "ops": {
-  "count": 25,
+  "count": 27,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
@@ -30,25 +30,33 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 7,
+    "queued": 5,
     "running": 4,
-    "doneToday": 45,
-    "minutes": 372,
-    "estimateMinutes": 372
+    "doneToday": 47,
+    "minutes": 348,
+    "estimateMinutes": 348
    }
   },
-  "queued": 7,
+  "queued": 5,
   "running": 4,
-  "doneToday": 48,
+  "doneToday": 50,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 372,
-  "estimatedFinish": "2026-10-23T02:13:06+00:00",
-  "estimateMinutes": 372
+  "minutesRemaining": 348,
+  "estimatedFinish": "2026-10-23T01:51:18+00:00",
+  "estimateMinutes": 348
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P1BD00_board register new games and cleanup",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "Multiple games",
@@ -59,10 +67,10 @@
   },
   {
    "worker": "Claude",
-   "game": "not-yet",
-   "task": "not yet",
-   "since": "2026-10-22T19:52:45+00:00",
-   "activity": "2026-10-22T20:00:12+00:00",
+   "game": "Multiple games",
+   "task": "P2IN05_remix all ideas new lenses ten to pipeline",
+   "since": null,
+   "activity": null,
    "commit": null
   },
   {
@@ -72,22 +80,14 @@
    "since": "2026-10-22T20:00:19+00:00",
    "activity": "2026-10-22T20:00:24+00:00",
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "morning-three",
-   "task": "morning three visual build",
-   "since": "2026-10-22T19:51:14+00:00",
-   "activity": "2026-10-22T20:00:56+00:00",
-   "commit": null
   }
  ],
  "codexLanes": 0,
  "claudeWorkers": 4,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 105,
-  "usdEst": 378.0,
+  "runs": 107,
+  "usdEst": 385.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -129,7 +129,7 @@
   },
   {
    "day": "2026-10-22",
-   "changes": 50
+   "changes": 52
   }
  ],
  "houseRules": 23,
@@ -11293,10 +11293,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 28.8,
+   "costTotalUsd": 32.4,
    "latestChange": {
-    "text": "feat: Morning Three becomes a shadow-puppet stage",
-    "at": "2026-10-22T20:00:56+00:00"
+    "text": "visual build live: shadow-puppet stage (P2n85)",
+    "at": "2026-10-22T20:02:56+00:00"
    },
    "promo": null,
    "id": "morning-three",
@@ -11304,40 +11304,40 @@
    "title": "Morning Three",
    "line": "",
    "url": "https://chenhsieh.github.io/morning-three/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Split each monkey chestnuts between morning and evening; placeholder shapes, 12...",
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-22T17:56:09+00:00",
-   "lastChange": "2026-10-22T20:00:56+00:00",
+   "lastChange": "2026-10-22T20:02:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 7.2,
+    "claudeUsdEst": 10.8,
     "earlierRounds": 6,
     "earlierUsdEst": 21.6,
-    "totalUsdEst": 28.8
+    "totalUsdEst": 32.4
    },
    "tasks": [
     {
      "title": "morning three visual build",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "morning-three: build the visual round from the design",
-     "since": "2026-10-22T19:51:14+00:00",
-     "done": null,
+     "since": "2026-10-22T19:50:16+00:00",
+     "done": "2026-10-22T19:50:16+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "Morning Three now a shadow-puppet stage: monkeys sit or reach by mood, tray tags on each tray, yesterday as faint outlines. Live, bytes match, all gates pass (12/12, playable 0 FAIL, UI, feel, touch 390/320, no console..."
     },
     {
      "title": "morning three visual design",
@@ -11370,9 +11370,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": {
     "date": "2026-10-22",
@@ -11380,8 +11380,14 @@
     "note": "Same chestnuts, different bowls; the rule pictures now read the right way and the two-day levels beat the obvious split"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-22T20:02:56+00:00",
+     "ok": true,
+     "note": "visual build live: shadow-puppet stage (P2n85)",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T20:00:56+00:00",
      "ok": true,
@@ -12213,10 +12219,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 7.2,
+   "costTotalUsd": 10.8,
    "latestChange": {
-    "text": "feat: Not Yet starts from the Play Lab game template",
-    "at": "2026-10-22T19:54:12+00:00"
+    "text": "Dodge the customer's reaching hand for delight, give the cone once past the gold line...",
+    "at": "2026-10-22T20:02:00+00:00"
    },
    "promo": null,
    "id": "not-yet",
@@ -12224,34 +12230,34 @@
    "title": "Not Yet",
    "line": "",
    "url": "https://chenhsieh.github.io/not-yet/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
    "image": null,
-   "firstSeen": "2026-10-22T19:52:45+00:00",
-   "lastChange": "2026-10-22T20:00:12+00:00",
+   "firstSeen": "2026-10-22T18:48:50+00:00",
+   "lastChange": "2026-10-22T20:02:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 2,
     "earlierUsdEst": 7.2,
-    "totalUsdEst": 7.2
+    "totalUsdEst": 10.8
    },
    "tasks": [
     {
      "title": "not yet",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "New game: tease with an ice-cream cone, then give it at the best moment",
-     "since": "2026-10-22T19:52:45+00:00",
-     "done": null,
+     "since": "2026-10-22T18:48:50+00:00",
+     "done": "2026-10-22T18:48:50+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -12262,14 +12268,20 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-22T20:02:00+00:00",
+     "ok": true,
+     "note": "Dodge the customer's reaching hand for delight, give the cone once past the gold line before patience runs out; 10 customers, daily, endless",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T19:54:12+00:00",
      "ok": true,
@@ -13329,7 +13341,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 7.2,
+   "costTotalUsd": 14.4,
    "latestChange": {
     "text": "Cook the egg to an order card, one beat at a time: centre, rim, flip, serve; 16 dishes,...",
     "at": "2026-10-22T19:52:45+00:00"
@@ -13356,9 +13368,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 1,
-    "earlierUsdEst": 3.6,
-    "totalUsdEst": 7.2
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
+    "totalUsdEst": 14.4
    },
    "tasks": [
     {
@@ -13391,6 +13403,18 @@
      "ok": true,
      "note": "Cook the egg to an order card, one beat at a time: centre, rim, flip, serve; 16 dishes, 12 orders, daily, collection",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-22T19:51:34+00:00",
+     "ok": true,
+     "note": "feat: Radish Omelette, cook the dish on the card one beat at a time",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T19:33:35+00:00",
+     "ok": true,
+     "note": "feat: Radish Omelette starts from the Play Lab game template",
+     "source": "main commit"
     },
     {
      "at": "2026-10-22T19:32:07+00:00",
