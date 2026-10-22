@@ -1,13 +1,15 @@
 {
- "generated": "2026-10-22T05:37:47+00:00",
+ "generated": "2026-10-22T05:40:00+00:00",
  "ops": {
-  "count": 17,
+  "count": 18,
   "notes": [
+   "A game changed in the last hour with no claimed task on it.",
    "A status note names something that is not a game.",
    "Two tasks share the number P1c09."
   ]
  },
  "about": [
+  "A game changed in the last hour with no claimed task on it.",
   "A status note names something that is not a game.",
   "Two tasks share the number P1c09."
  ],
@@ -28,31 +30,31 @@
     "estimateMinutes": 0
    },
    "Claude": {
-    "queued": 17,
+    "queued": 16,
     "running": 1,
     "doneToday": 0,
-    "minutes": 312,
-    "estimateMinutes": 312
+    "minutes": 300,
+    "estimateMinutes": 300
    }
   },
-  "queued": 17,
+  "queued": 16,
   "running": 1,
   "doneToday": 0,
   "lanes": {
    "Codex": 0,
    "Claude": 1
   },
-  "minutesRemaining": 312,
-  "estimatedFinish": "2026-10-22T10:49:47+00:00",
-  "estimateMinutes": 312
+  "minutesRemaining": 300,
+  "estimatedFinish": "2026-10-22T10:40:00+00:00",
+  "estimateMinutes": 300
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "chai-boil",
-   "task": "P1CB10_chai kitchen sets",
-   "since": "2026-10-22T05:05:14+00:00",
-   "activity": "2026-10-22T05:08:43+00:00",
+   "game": "material-boards",
+   "task": "P1MB41_material boards sample drawer",
+   "since": "2026-10-22T05:39:38+00:00",
+   "activity": "2026-10-22T05:39:42+00:00",
    "commit": null
   }
  ],
@@ -60,8 +62,8 @@
  "claudeWorkers": 1,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 56,
-  "usdEst": 201.6,
+  "runs": 57,
+  "usdEst": 205.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -103,7 +105,7 @@
   },
   {
    "day": "2026-10-22",
-   "changes": 7
+   "changes": 8
   }
  ],
  "houseRules": 23,
@@ -1524,10 +1526,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 87.22,
+   "costTotalUsd": 90.82,
    "latestChange": {
-    "text": "P1CB09 lever plaque + brass handle + paper flames and six stoves live ()",
-    "at": "2026-10-22T05:05:14+00:00"
+    "text": "P1CB10 four kitchen sets (rooftop, rainy window, mountain hut, platform), vignettes +...",
+    "at": "2026-10-22T05:39:37+00:00"
    },
    "promo": null,
    "id": "chai-boil",
@@ -1535,41 +1537,27 @@
    "title": "Chai Boil",
    "line": "One pot, one dial: let the chai rise to the rim, not over it.",
    "url": "https://chenhsieh.github.io/chai-boil/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Steadier dial (keys on desktop), a forgiving golden zone, a",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/chai-boil-1.webp",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-22T05:08:43+00:00",
+   "lastChange": "2026-10-22T05:39:37+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 5,
-    "claudeRuns": 5,
+    "claudeRuns": 6,
     "apiRuns": 3,
     "codexTokens": 1071928,
     "codexUsdEst": 1.29,
-    "claudeUsdEst": 18.0,
+    "claudeUsdEst": 21.6,
     "earlierRounds": 17,
     "earlierUsdEst": 61.2,
-    "totalUsdEst": 87.22
+    "totalUsdEst": 90.82
    },
    "tasks": [
-    {
-     "title": "P1CB10_chai kitchen sets",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "New kitchens: a rooftop stall at dusk, a rainy window kitchen, a mountain hut, and a redrawn night platform",
-     "since": "2026-10-22T05:05:14+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1CB08_chai draw helper pot",
      "state": "done",
@@ -1597,6 +1585,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1CB09 chai-lever-and-burners: DONE, live (main , https://chenhsieh.github.io/chai-boil/, live bytes match, zero console errors)."
+    },
+    {
+     "title": "P1CB10_chai kitchen sets",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "New kitchens: a rooftop stall at dusk, a rainy window kitchen, a mountain hut, and a redrawn night platform",
+     "since": "2026-10-22T03:58:31+00:00",
+     "done": "2026-10-22T03:58:31+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1CB10 chai-kitchen-sets: DONE, live (main , https://chenhsieh.github.io/chai-boil/, live bytes match, zero console errors)."
     },
     {
      "title": "P1CB07_chai boil visual spin",
@@ -1671,18 +1673,24 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 13
+    "done": 14
    },
    "verdict": {
     "date": "2026-10-21",
     "verdict": "revise",
     "note": "Visual revamp, different kitchen"
    },
-   "needsYou": null,
-   "inProgress": true,
+   "needsYou": "New version live: play it and give a verdict (ship, revise or shelf).",
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-22T05:39:37+00:00",
+     "ok": true,
+     "note": "P1CB10 four kitchen sets (rooftop, rainy window, mountain hut, platform), vignettes + share header live ()",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T05:05:14+00:00",
      "ok": true,
@@ -1748,12 +1756,6 @@
      "ok": true,
      "note": "feat: the pot has a face, steam sprites fill the shelf, and the regulars are cut paper",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T05:46:58+00:00",
-     "ok": true,
-     "note": "fix: keep chai touch controls ready",
-     "source": "board note"
     }
    ]
   },
@@ -9879,7 +9881,7 @@
    ]
   },
   {
-   "nextTask": "The board becomes black foam-core with real-looking material...",
+   "nextTask": "Targets become sun-print papers that turn blue and...",
    "costTotalUsd": 47.58,
    "latestChange": {
     "text": "P1MB40 visual spin design: black foam-core sample drawer, no faces, sun-print targets;...",
@@ -9891,14 +9893,14 @@
    "title": "Material Boards",
    "line": "Drop mirror, glass and wood tiles on a pinned sample.",
    "url": "https://chenhsieh.github.io/material-boards/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Claude",
    "priority": "P3",
    "priorityNote": "Find a creative twist for the classic puzzle",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/material-boards-1.webp",
    "firstSeen": "2026-10-15T21:49:26+00:00",
-   "lastChange": "2026-10-22T04:02:45+00:00",
+   "lastChange": "2026-10-22T05:39:42+00:00",
    "cost": {
     "apiUsd": 14.39,
     "codexRuns": 2,
@@ -9914,10 +9916,10 @@
    "tasks": [
     {
      "title": "P1MB41_material boards sample drawer",
-     "state": "queued",
+     "state": "running",
      "worker": "Claude",
      "plan": "The board becomes black foam-core with real-looking material swatches and a plain desk lamp, no faces",
-     "since": "2026-10-22T04:02:41+00:00",
+     "since": "2026-10-22T05:39:38+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -10026,8 +10028,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 8
    },
