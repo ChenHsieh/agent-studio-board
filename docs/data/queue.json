@@ -1,14 +1,14 @@
 {
- "generated": 1792711974,
+ "generated": 1792712240,
  "defaultPercentPerCodexTask": 0.25,
  "tasks": [
   {
    "id": "P1FW50_sword-masks",
    "request": "Flying White: make the scoring masks for the new 劍 forms",
    "game": "Flying White",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
@@ -17,8 +17,9 @@
    ],
    "priority": "P1",
    "state": "running",
-   "at": 1792709803,
-   "created": 1792709803
+   "at": 1792712219,
+   "created": 1792712219,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2FM37_peony-dream-first-minute",
@@ -89,6 +90,22 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P3OR18_restored-engine-test",
+   "request": "Restored: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
+   "game": "Restored",
+   "route": "OpenRouter",
+   "model": "openrouter/openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "running",
+   "at": 1792711669,
+   "created": 1792711669
+  },
+  {
    "id": "P2FM36_shortest-law-first-minute",
    "request": "Shortest Law: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
    "game": "Shortest Law",
@@ -157,25 +174,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P2n65_review-one-thread-and-pigeon-salon",
-   "request": "Stranger play-through and ship-or-revise call for two new games",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2n57_one-thread",
-    "P2n58_pigeon-salon"
-   ],
-   "priority": null,
-   "state": "running",
-   "at": 1792691826,
-   "created": 1792691826
-  },
-  {
    "id": "P2n66_review-herbal-of-nowhere-and-blackout-notice",
    "request": "Stranger play-through and ship-or-revise call for two new games",
    "game": "Studio",
@@ -195,12 +193,12 @@
    "created": 1792691830
   },
   {
-   "id": "P3OR11_fold-guess-test-retry",
-   "request": "Fold Guess: add the helper test again (first try wrote an empty file)",
-   "game": "Fold Guess",
-   "route": "OpenRouter",
-   "model": "openrouter/openai/gpt-4.1",
-   "effort": "default",
+   "id": "P1MH56_print-hero-and-card-sizes",
+   "request": "Mirror Hold: show the client's print as a wide sharp strip with a readable card below, and the whole print on tap",
+   "game": "Mirror Hold",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
@@ -208,7 +206,8 @@
    "priority": "P1",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792711669
+   "created": 1792712217,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2FM51_one-thread-first-minute-fix",
@@ -330,22 +329,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P3OR18_restored-engine-test",
-   "request": "Restored: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
-   "game": "Restored",
-   "route": "OpenRouter",
-   "model": "openrouter/openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792711669
-  },
-  {
    "id": "P3OR21_copy-drift-engine-test",
    "request": "Copy Drift: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
    "game": "Copy Drift",
@@ -357,22 +340,6 @@
    "estMinutes": null,
    "after": [],
    "priority": "P2",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792711669
-  },
-  {
-   "id": "P3OR12_herbarium-guess-test-retry",
-   "request": "Herbarium Guess: add the helper test again (first try wrote an empty file)",
-   "game": "Herbarium Guess",
-   "route": "OpenRouter",
-   "model": "openrouter/openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P3",
    "state": "ready",
    "waitingOn": [],
    "created": 1792711669
@@ -1062,6 +1029,22 @@
    "created": 1792703516
   },
   {
+   "id": "P3OR11_fold-guess-test-retry",
+   "request": "Fold Guess: add the helper test again (first try wrote an empty file)",
+   "game": "Fold Guess",
+   "route": "OpenRouter",
+   "model": "openrouter/openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "state": "done",
+   "at": 1792711669,
+   "created": 1792711669
+  },
+  {
    "id": "P2n53_nobody-looking",
    "request": "New game: tidy a shelf so nothing on it looks like a face",
    "game": "Nobody Looking",
@@ -1604,6 +1587,22 @@
    "created": 1792703718
   },
   {
+   "id": "P3OR12_herbarium-guess-test-retry",
+   "request": "Herbarium Guess: add the helper test again (first try wrote an empty file)",
+   "game": "Herbarium Guess",
+   "route": "OpenRouter",
+   "model": "openrouter/openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P3",
+   "state": "done",
+   "at": 1792711669,
+   "created": 1792711669
+  },
+  {
    "id": "P1BD00_board-register-new-games-and-cleanup",
    "request": "Register the new games on the studio board and clean it up",
    "game": "Studio",
@@ -1868,6 +1867,25 @@
    "state": "done",
    "at": 1792691823,
    "created": 1792691823
+  },
+  {
+   "id": "P2n65_review-one-thread-and-pigeon-salon",
+   "request": "Stranger play-through and ship-or-revise call for two new games",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2n57_one-thread",
+    "P2n58_pigeon-salon"
+   ],
+   "priority": null,
+   "state": "done",
+   "at": 1792691826,
+   "created": 1792691826
   },
   {
    "id": "P3OR07_where-and-when-scoring-test",
