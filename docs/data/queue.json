@@ -1,11 +1,11 @@
 {
- "generated": 1792702999,
+ "generated": 1792703203,
  "defaultPercentPerCodexTask": 0.25,
  "tasks": [
   {
-   "id": "P3OR01_bluebook-guess-sky-test",
-   "request": "Blue Book: add a test for sky position and nearest-star helpers (OpenRouter lane)",
-   "game": "Bluebook Guess",
+   "id": "P3OR04_defense-bingo-logic-test",
+   "request": "Defense Bingo: add a test for card shuffles, bingo lines and card codes (OpenRouter lane)",
+   "game": "Defense Bingo",
    "route": "OpenRouter",
    "model": "deepseek-v4-flash",
    "effort": "default",
@@ -15,13 +15,13 @@
    "after": [],
    "priority": "P1",
    "state": "running",
-   "at": 1792702545,
-   "created": 1792702545
+   "at": 1792702553,
+   "created": 1792702553
   },
   {
-   "id": "P3OR02_remote-viewer-judge-helpers-test",
-   "request": "Remote Viewer: add a test for text cleanup, word stems and the seeded daily pick (OpenRouter lane)",
-   "game": "Remote Viewer",
+   "id": "P3OR06_mirror-hold-levels-units-test",
+   "request": "Mirror Hold: add a test for the daily client, level layout and share line (OpenRouter lane)",
+   "game": "Mirror Hold",
    "route": "OpenRouter",
    "model": "deepseek-v4-flash",
    "effort": "default",
@@ -31,25 +31,8 @@
    "after": [],
    "priority": "P1",
    "state": "running",
-   "at": 1792702548,
-   "created": 1792702548
-  },
-  {
-   "id": "P2FM02_copy-drift-first-minute",
-   "request": "Copy Drift: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-   "game": "Copy Drift",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "running",
-   "at": 1792702331,
-   "created": 1792702331,
-   "estPercentOfWeek": 0.25
+   "at": 1792702559,
+   "created": 1792702559
   },
   {
    "id": "P2FM04_even-water-first-minute",
@@ -307,38 +290,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P3OR04_defense-bingo-logic-test",
-   "request": "Defense Bingo: add a test for card shuffles, bingo lines and card codes (OpenRouter lane)",
-   "game": "Defense Bingo",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792702553
-  },
-  {
-   "id": "P3OR06_mirror-hold-levels-units-test",
-   "request": "Mirror Hold: add a test for the daily client, level layout and share line (OpenRouter lane)",
-   "game": "Mirror Hold",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792702559
-  },
-  {
    "id": "P3OR08_fold-guess-helpers-test",
    "request": "Fold Guess: add a test for date, era and score helpers (OpenRouter lane)",
    "game": "Fold Guess",
@@ -472,22 +423,6 @@
    "waitingOn": [],
    "created": 1792700851,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P3OR05_slice-and-bake-mix-units-test",
-   "request": "Slice and Bake: add a test for the dough kneading rules (OpenRouter lane)",
-   "game": "Slice and Bake",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792702556
   },
   {
    "id": "P2FM32_material-boards-first-minute",
@@ -1590,6 +1525,38 @@
    "created": 1792690065
   },
   {
+   "id": "P3OR01_bluebook-guess-sky-test",
+   "request": "Blue Book: add a test for sky position and nearest-star helpers (OpenRouter lane)",
+   "game": "Bluebook Guess",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "state": "done",
+   "at": 1792702545,
+   "created": 1792702545
+  },
+  {
+   "id": "P3OR02_remote-viewer-judge-helpers-test",
+   "request": "Remote Viewer: add a test for text cleanup, word stems and the seeded daily pick (OpenRouter lane)",
+   "game": "Remote Viewer",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "state": "done",
+   "at": 1792702548,
+   "created": 1792702548
+  },
+  {
    "id": "P2n53_nobody-looking",
    "request": "New game: tidy a shelf so nothing on it looks like a face",
    "game": "Nobody Looking",
@@ -1938,6 +1905,22 @@
    "state": "done",
    "at": 1792698616,
    "created": 1792698616
+  },
+  {
+   "id": "P3OR05_slice-and-bake-mix-units-test",
+   "request": "Slice and Bake: add a test for the dough kneading rules (OpenRouter lane)",
+   "game": "Slice and Bake",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "done",
+   "at": 1792702556,
+   "created": 1792702556
   },
   {
    "id": "P3OR00_gallery-guess-words-test",
