@@ -1,5 +1,5 @@
 {
- "generated": 1792701625,
+ "generated": 1792701792,
  "defaultPercentPerCodexTask": 0.25,
  "tasks": [
   {
@@ -54,23 +54,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P2FM12_restored-first-minute",
-   "request": "Restored: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-   "game": "Restored",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "running",
-   "at": 1792701344,
-   "created": 1792701344,
-   "estPercentOfWeek": 0.25
-  },
-  {
    "id": "P2FM13_same-badge-first-minute",
    "request": "Same Badge: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
    "game": "Same Badge",
@@ -105,23 +88,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P2FM15_pinch-points-first-minute",
-   "request": "Pinch Points: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-   "game": "Pinch Points",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "running",
-   "at": 1792699994,
-   "created": 1792699994,
-   "estPercentOfWeek": 0.25
-  },
-  {
    "id": "P2FM16_grub-band-first-minute",
    "request": "Grub Band: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
    "game": "Grub Band",
@@ -136,6 +102,23 @@
    "state": "running",
    "at": 1792700024,
    "created": 1792700024,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2FM17_lot-waits-first-minute",
+   "request": "The Lot Waits: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+   "game": "The Lot Waits",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "first-minute",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "running",
+   "at": 1792701326,
+   "created": 1792701326,
    "estPercentOfWeek": 0.25
   },
   {
@@ -173,20 +156,23 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P1HX00_harness-architect-idea-to-prototype-pipeline-and-intake",
-   "request": "A harness architect agent streamlines the idea-to-prototype pipeline and the intake check",
+   "id": "P1PQ00_play-these-today-page",
+   "request": "A Play these today page on the studio board: up to three games, what to try in each, and one-tap ship, revise or shelf",
    "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "idea",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
    "size": "studio",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P1BD01_board-queue-requests-and-codex-quota-eta"
+   ],
    "priority": null,
    "state": "running",
-   "at": 1792700479,
-   "created": 1792700479
+   "at": 1792701628,
+   "created": 1792701628,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2IN06_old-designed-ideas-gate-and-route-to-codex",
@@ -236,23 +222,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792700851,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2FM17_lot-waits-first-minute",
-   "request": "The Lot Waits: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-   "game": "The Lot Waits",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792701326,
    "estPercentOfWeek": 0.25
   },
   {
@@ -507,26 +476,7 @@
    "priority": null,
    "state": "ready",
    "waitingOn": [],
-   "created": 1792700318
-  },
-  {
-   "id": "P1PQ00_play-these-today-page",
-   "request": "A Play these today page on the studio board: up to three games, what to try in each, and one-tap ship, revise or shelf",
-   "game": "Studio",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1BD01_board-queue-requests-and-codex-quota-eta"
-   ],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792701618,
-   "estPercentOfWeek": 0.25
+   "created": 1792701705
   },
   {
    "id": "P2FM23_plain-telling-first-minute",
@@ -767,6 +717,23 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P2n103_literal-spirit",
+   "request": "Literal Spirit (一板一眼): new game; write the cheapest paper charm so a literal-minded spirit fetches the peach without breaking anything.",
+   "game": "Literal Spirit",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792700999,
+   "estPercentOfWeek": 0.25
+  },
+  {
    "id": "P2n27_guide-lines-proto",
    "request": "Guide Lines (輔助線): build the core (Codex) from the finished brief; draw the fewest red guide lines so every stroke of a machine drawing starts and ends where two guides cross.",
    "game": "Guide Lines",
@@ -962,7 +929,7 @@
    "waitingOn": [
     "P1LK00_starter-looks-design-six"
    ],
-   "created": 1792700318,
+   "created": 1792701705,
    "estPercentOfWeek": 0.25
   },
   {
@@ -1033,7 +1000,7 @@
   },
   {
    "id": "P2n105_review-whiteboard-song-and-crushed-can",
-   "request": "Review two new games cold, Whiteboard Song and Crushed Can: play them as a stranger and decide ship, revise or shelf.",
+   "request": "Review two new games cold, Whiteboard Song and Can Lantern: play them as a stranger and decide ship, revise or shelf.",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
@@ -1051,7 +1018,7 @@
     "P2n40_whiteboard-song-proto",
     "P2n28_crushed-can-proto"
    ],
-   "created": 1792700891
+   "created": 1792701648
   },
   {
    "id": "P2n106_review-literal-spirit-and-sounds-like",
@@ -1840,6 +1807,22 @@
    "state": "done",
    "at": 1792698721,
    "created": 1792698721
+  },
+  {
+   "id": "P1HX00_harness-architect-idea-to-prototype-pipeline-and-intake",
+   "request": "A harness architect agent streamlines the idea-to-prototype pipeline and the intake check",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "idea",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "state": "done",
+   "at": 1792700479,
+   "created": 1792700479
   },
   {
    "id": "P1IN04_idea-engine-standard-process-and-taste-gate",

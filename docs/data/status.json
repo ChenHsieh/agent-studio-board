@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-22T20:40:15+00:00",
+ "generated": "2026-10-22T20:42:40+00:00",
  "ops": {
-  "count": 6,
+  "count": 5,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "A task waits for a task that does not exist."
@@ -22,11 +22,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 64,
+    "queued": 63,
     "running": 14,
-    "doneToday": 10,
-    "minutes": 3120,
-    "estimateMinutes": 223
+    "doneToday": 12,
+    "minutes": 3080,
+    "estimateMinutes": 220
    },
    "Claude": {
     "queued": 1,
@@ -36,9 +36,9 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 65,
+  "queued": 64,
   "running": 16,
-  "doneToday": 62,
+  "doneToday": 64,
   "lanes": {
    "Codex": 14,
    "Claude": 3
@@ -48,9 +48,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3300,
-  "estimatedFinish": "2026-10-23T00:23:15+00:00",
-  "estimateMinutes": 223
+  "minutesRemaining": 3260,
+  "estimatedFinish": "2026-10-23T00:22:40+00:00",
+  "estimateMinutes": 220
  },
  "lanes": [
   {
@@ -63,18 +63,29 @@
   },
   {
    "worker": "Codex",
+   "game": "Multiple games",
+   "task": "P1PQ00_play these today page",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
+  {
+   "worker": "Codex",
    "game": "copy-drift",
    "task": "P2FM02_copy drift first minute",
    "since": "2026-10-22T20:33:24+00:00",
-   "activity": "2026-10-22T20:40:08+00:00",
-   "commit": null
+   "activity": "2026-10-22T20:42:40+00:00",
+   "commit": {
+    "at": "2026-10-22T20:41:01+00:00",
+    "subject": "fix: keep copyist marks clear in the first minute"
+   }
   },
   {
    "worker": "Codex",
    "game": "even-water",
    "task": "P2FM04_even water first minute",
    "since": "2026-10-22T20:11:27+00:00",
-   "activity": "2026-10-22T20:39:40+00:00",
+   "activity": "2026-10-22T20:41:44+00:00",
    "commit": {
     "at": "2026-10-22T20:39:31+00:00",
     "subject": "wip: add first minute lesson"
@@ -93,19 +104,11 @@
    "game": "pigeon-salon",
    "task": "P2FM06_pigeon salon first minute",
    "since": "2026-10-22T20:31:32+00:00",
-   "activity": "2026-10-22T20:39:53+00:00",
+   "activity": "2026-10-22T20:42:05+00:00",
    "commit": {
     "at": "2026-10-22T20:39:33+00:00",
     "subject": "wip: P2FM06_pigeon-salon-first-minute (Codex lane autosave 16:39)"
    }
-  },
-  {
-   "worker": "Codex",
-   "game": "herbal-of-nowhere",
-   "task": "P2FM07_herbal of nowhere first minute",
-   "since": "2026-10-22T20:35:52+00:00",
-   "activity": "2026-10-22T20:35:50+00:00",
-   "commit": null
   },
   {
    "worker": "Codex",
@@ -117,29 +120,18 @@
   },
   {
    "worker": "Codex",
-   "game": "radish-omelette",
-   "task": "P2FM09_radish omelette first minute",
-   "since": "2026-10-22T20:35:21+00:00",
-   "activity": "2026-10-22T20:35:18+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Codex",
    "game": "restored",
    "task": "P2FM12_restored first minute",
-   "since": "2026-10-22T20:35:45+00:00",
+   "since": "2026-10-22T20:40:27+00:00",
    "activity": "2026-10-22T20:40:06+00:00",
-   "commit": {
-    "at": "2026-10-22T20:39:05+00:00",
-    "subject": "fix: keep the first-minute card remembered"
-   }
+   "commit": null
   },
   {
    "worker": "Codex",
    "game": "same-badge",
    "task": "P2FM13_same badge first minute",
    "since": "2026-10-22T20:38:22+00:00",
-   "activity": "2026-10-22T20:40:15+00:00",
+   "activity": "2026-10-22T20:42:38+00:00",
    "commit": null
   },
   {
@@ -147,7 +139,7 @@
    "game": "speaking-stone",
    "task": "P2FM14_speaking stone first minute",
    "since": "2026-10-22T20:13:14+00:00",
-   "activity": "2026-10-22T20:40:15+00:00",
+   "activity": "2026-10-22T20:42:35+00:00",
    "commit": {
     "at": "2026-10-22T20:37:19+00:00",
     "subject": "wip: P2FM14_speaking-stone-first-minute (Codex lane autosave 16:37)"
@@ -157,33 +149,38 @@
    "worker": "Codex",
    "game": "pinch-points",
    "task": "P2FM15_pinch points first minute",
-   "since": "2026-10-22T20:13:14+00:00",
-   "activity": "2026-10-22T20:39:41+00:00",
-   "commit": {
-    "at": "2026-10-22T20:37:22+00:00",
-    "subject": "wip: P2FM15_pinch-points-first-minute (Codex lane autosave 16:37)"
-   }
+   "since": "2026-10-22T20:41:46+00:00",
+   "activity": "2026-10-22T20:41:43+00:00",
+   "commit": null
   },
   {
    "worker": "Codex",
    "game": "grub-band",
    "task": "P2FM16_grub band first minute",
    "since": "2026-10-22T20:13:44+00:00",
-   "activity": "2026-10-22T20:40:12+00:00",
+   "activity": "2026-10-22T20:42:39+00:00",
    "commit": {
-    "at": "2026-10-22T20:36:11+00:00",
-    "subject": "wip: polish first-minute touch flow"
+    "at": "2026-10-22T20:42:11+00:00",
+    "subject": "feat: teach the grub tune before level one"
    }
+  },
+  {
+   "worker": "Codex",
+   "game": "lot-waits",
+   "task": "P2FM17_lot waits first minute",
+   "since": "2026-10-22T20:41:47+00:00",
+   "activity": "2026-10-22T20:42:39+00:00",
+   "commit": null
   },
   {
    "worker": "Codex",
    "game": "hit-or-kit",
    "task": "P2FM21_hit or kit first minute",
    "since": "2026-10-22T20:33:26+00:00",
-   "activity": "2026-10-22T20:39:39+00:00",
+   "activity": "2026-10-22T20:42:39+00:00",
    "commit": {
-    "at": "2026-10-22T20:33:27+00:00",
-    "subject": "start: P2FM21_hit-or-kit-first-minute"
+    "at": "2026-10-22T20:41:41+00:00",
+    "subject": "wip: P2FM21_hit-or-kit-first-minute (Codex lane autosave 16:41)"
    }
   },
   {
@@ -191,10 +188,10 @@
    "game": "one-script",
    "task": "P2FM22_one script first minute",
    "since": "2026-10-22T20:33:29+00:00",
-   "activity": "2026-10-22T20:39:59+00:00",
+   "activity": "2026-10-22T20:42:12+00:00",
    "commit": {
-    "at": "2026-10-22T20:33:30+00:00",
-    "subject": "start: P2FM22_one-script-first-minute"
+    "at": "2026-10-22T20:41:19+00:00",
+    "subject": "feat: teach the valleys in the first minute"
    }
   },
   {
@@ -210,8 +207,8 @@
  "claudeWorkers": 2,
  "apiSpentUsd": 304.56,
  "claudeInSession": {
-  "runs": 124,
-  "usdEst": 446.4,
+  "runs": 125,
+  "usdEst": 450.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -253,7 +250,7 @@
   },
   {
    "day": "2026-10-22",
-   "changes": 83
+   "changes": 87
   }
  ],
  "houseRules": 23,
@@ -2895,7 +2892,7 @@
    "shelfNote": "",
    "image": "promo/copy-drift/first.jpg",
    "firstSeen": "2026-10-22T17:56:12+00:00",
-   "lastChange": "2026-10-22T20:40:08+00:00",
+   "lastChange": "2026-10-22T20:42:40+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -2920,7 +2917,10 @@
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-22T20:41:01+00:00",
+      "subject": "fix: keep copyist marks clear in the first minute"
+     },
      "result": ""
     },
     {
@@ -4640,7 +4640,7 @@
    "shelfNote": "",
    "image": "promo/even-water/first.jpg",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-22T20:39:40+00:00",
+   "lastChange": "2026-10-22T20:41:44+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -7524,7 +7524,7 @@
    "shelfNote": "",
    "image": "promo/grub-band/first.jpg",
    "firstSeen": "2026-10-21T20:47:27+00:00",
-   "lastChange": "2026-10-22T20:40:12+00:00",
+   "lastChange": "2026-10-22T20:42:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -7550,8 +7550,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-22T20:36:11+00:00",
-      "subject": "wip: polish first-minute touch flow"
+      "at": "2026-10-22T20:42:11+00:00",
+      "subject": "feat: teach the grub tune before level one"
      },
      "result": ""
     }
@@ -8056,10 +8056,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 14.4,
+   "costTotalUsd": 14.65,
    "latestChange": {
-    "text": "Open pages to read their glyph names, compare, then name the last plant; wrong names cost...",
-    "at": "2026-10-22T19:27:40+00:00"
+    "text": "feat: teach the herbal through a four-step first-minute round",
+    "at": "2026-10-22T20:41:46+00:00"
    },
    "promo": {
     "files": {
@@ -8073,40 +8073,40 @@
    "title": "Herbal of Nowhere",
    "line": "Open pages to read their glyph names, compare, then name the last plant; wrong names cost hearts.",
    "url": "https://chenhsieh.github.io/herbal-of-nowhere/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "placeholder shapes, 12 folios",
    "shelfNote": "",
    "image": "promo/herbal-of-nowhere/first.jpg",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-22T20:35:50+00:00",
+   "lastChange": "2026-10-22T20:41:46+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 1,
     "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 209511,
+    "codexUsdEst": 0.25,
     "claudeUsdEst": 3.6,
     "earlierRounds": 3,
     "earlierUsdEst": 10.8,
-    "totalUsdEst": 14.4
+    "totalUsdEst": 14.65
    },
    "tasks": [
     {
      "title": "P2FM07_herbal of nowhere first minute",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Herbal of Nowhere: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:35:52+00:00",
-     "done": null,
+     "since": "2026-10-22T20:11:43+00:00",
+     "done": "2026-10-22T20:11:43+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 24,
+     "tokens": 209511,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: teach the herbal through a four-step first-minute round"
     },
     {
      "title": "herbal of nowhere",
@@ -8125,14 +8125,20 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-22T20:41:46+00:00",
+     "ok": true,
+     "note": "feat: teach the herbal through a four-step first-minute round",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T19:27:40+00:00",
      "ok": true,
@@ -8314,7 +8320,7 @@
    "shelfNote": "",
    "image": "promo/hit-or-kit/first.jpg",
    "firstSeen": "2026-10-22T04:19:06+00:00",
-   "lastChange": "2026-10-22T20:39:39+00:00",
+   "lastChange": "2026-10-22T20:42:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -8340,8 +8346,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-22T20:33:27+00:00",
-      "subject": "start: P2FM21_hit-or-kit-first-minute"
+      "at": "2026-10-22T20:41:41+00:00",
+      "subject": "wip: P2FM21_hit-or-kit-first-minute (Codex lane autosave 16:41)"
      },
      "result": ""
     },
@@ -10035,6 +10041,79 @@
     },
     {
      "at": "2026-10-16T01:30:42+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
+    }
+   ]
+  },
+  {
+   "nextTask": "Literal Spirit (一板一眼): new game; write the cheapest...",
+   "costTotalUsd": 7.2,
+   "latestChange": {
+    "text": "feat: Literal Spirit starts from the Play Lab game template",
+    "at": "2026-10-22T20:40:38+00:00"
+   },
+   "promo": null,
+   "id": "literal-spirit",
+   "repo": "literal-spirit",
+   "title": "Literal Spirit",
+   "line": "",
+   "url": "https://chenhsieh.github.io/literal-spirit/",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "firstSeen": "2026-10-22T20:29:59+00:00",
+   "lastChange": "2026-10-22T20:40:38+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 0.0,
+    "earlierRounds": 2,
+    "earlierUsdEst": 7.2,
+    "totalUsdEst": 7.2
+   },
+   "tasks": [
+    {
+     "title": "literal spirit",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Literal Spirit (一板一眼): new game; write the cheapest paper charm so a literal-minded spirit fetches the peach without breaking anything.",
+     "since": "2026-10-22T20:29:59+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "taskCounts": {
+    "queued": 1,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 0
+   },
+   "verdict": null,
+   "needsYou": null,
+   "inProgress": true,
+   "history": [
+    {
+     "at": "2026-10-22T20:40:38+00:00",
+     "ok": true,
+     "note": "feat: Literal Spirit starts from the Play Lab game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T20:39:12+00:00",
      "ok": true,
      "note": "Initial commit",
      "source": "main commit"
@@ -12980,7 +13059,7 @@
    "shelfNote": "",
    "image": "promo/one-script/first.jpg",
    "firstSeen": "2026-10-21T19:48:04+00:00",
-   "lastChange": "2026-10-22T20:39:59+00:00",
+   "lastChange": "2026-10-22T20:42:12+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -13006,8 +13085,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-22T20:33:30+00:00",
-      "subject": "start: P2FM22_one-script-first-minute"
+      "at": "2026-10-22T20:41:19+00:00",
+      "subject": "feat: teach the valleys in the first minute"
      },
      "result": ""
     }
@@ -13316,7 +13395,7 @@
   },
   {
    "nextTask": "Review of the first build (queued)",
-   "costTotalUsd": 14.61,
+   "costTotalUsd": 18.21,
    "latestChange": {
     "text": "feat: teach building and support through a playable first minute",
     "at": "2026-10-22T20:34:36+00:00"
@@ -13349,9 +13428,9 @@
     "codexTokens": 176445,
     "codexUsdEst": 0.21,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
-    "totalUsdEst": 14.61
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
+    "totalUsdEst": 18.21
    },
    "tasks": [
     {
@@ -13398,6 +13477,12 @@
      "ok": true,
      "note": "feat: teach building and support through a playable first minute",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-22T20:34:33+00:00",
+     "ok": true,
+     "note": "feat: teach building and support through a playable first minute",
+     "source": "main commit"
     },
     {
      "at": "2026-10-22T19:57:00+00:00",
@@ -13624,7 +13709,7 @@
    "shelfNote": "",
    "image": "promo/pigeon-salon/first.jpg",
    "firstSeen": "2026-10-22T19:12:54+00:00",
-   "lastChange": "2026-10-22T20:39:53+00:00",
+   "lastChange": "2026-10-22T20:42:05+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -13738,7 +13823,7 @@
    "shelfNote": "",
    "image": "promo/pinch-points/first.jpg",
    "firstSeen": "2026-10-21T20:22:39+00:00",
-   "lastChange": "2026-10-22T20:39:41+00:00",
+   "lastChange": "2026-10-22T20:41:43+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -13757,16 +13842,13 @@
      "state": "running",
      "worker": "Codex",
      "plan": "Pinch Points: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:13:14+00:00",
+     "since": "2026-10-22T20:41:46+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-22T20:37:22+00:00",
-      "subject": "wip: P2FM15_pinch-points-first-minute (Codex lane autosave 16:37)"
-     },
+     "commit": null,
      "result": ""
     }
    ],
@@ -13968,11 +14050,11 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 14.4,
+   "nextTask": "Review of the first build (queued)",
+   "costTotalUsd": 18.24,
    "latestChange": {
-    "text": "Cook the egg to an order card, one beat at a time: centre, rim, flip, serve; 16 dishes,...",
-    "at": "2026-10-22T19:52:45+00:00"
+    "text": "feat: teach the pan before the first order",
+    "at": "2026-10-22T20:40:27+00:00"
    },
    "promo": {
     "files": {
@@ -13987,39 +14069,39 @@
    "line": "Cook the egg to an order card one beat at a time; 16 dishes, 12 orders, a daily.",
    "url": "https://chenhsieh.github.io/radish-omelette/",
    "stage": "building",
-   "who": "Codex",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Cook the egg to an order card one beat at a time; 16 dishes, 12 orders, a daily.",
    "shelfNote": "",
    "image": "promo/radish-omelette/first.jpg",
    "firstSeen": "2026-10-22T19:32:07+00:00",
-   "lastChange": "2026-10-22T20:35:18+00:00",
+   "lastChange": "2026-10-22T20:40:27+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 1,
     "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 201591,
+    "codexUsdEst": 0.24,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
-    "totalUsdEst": 14.4
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
+    "totalUsdEst": 18.24
    },
    "tasks": [
     {
      "title": "P2FM09_radish omelette first minute",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Radish Omelette: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:35:21+00:00",
-     "done": null,
+     "since": "2026-10-22T20:12:13+00:00",
+     "done": "2026-10-22T20:12:13+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 23,
+     "tokens": 201591,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: teach the pan before the first order"
     },
     {
      "title": "radish omelette",
@@ -14038,14 +14120,26 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": null,
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-22T20:40:27+00:00",
+     "ok": true,
+     "note": "feat: teach the pan before the first order",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-22T20:40:25+00:00",
+     "ok": true,
+     "note": "feat: teach the pan before the first order",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-22T19:52:45+00:00",
      "ok": true,
@@ -15146,16 +15240,13 @@
      "state": "running",
      "worker": "Codex",
      "plan": "Restored: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:35:45+00:00",
+     "since": "2026-10-22T20:40:27+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-22T20:39:05+00:00",
-      "subject": "fix: keep the first-minute card remembered"
-     },
+     "commit": null,
      "result": ""
     },
     {
@@ -15764,7 +15855,7 @@
    "shelfNote": "",
    "image": "promo/same-badge/first.jpg",
    "firstSeen": "2026-10-22T19:16:05+00:00",
-   "lastChange": "2026-10-22T20:40:15+00:00",
+   "lastChange": "2026-10-22T20:42:38+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -18409,7 +18500,7 @@
    "shelfNote": "",
    "image": "promo/speaking-stone/first.jpg",
    "firstSeen": "2026-10-22T00:56:56+00:00",
-   "lastChange": "2026-10-22T20:40:15+00:00",
+   "lastChange": "2026-10-22T20:42:35+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -19883,7 +19974,7 @@
    ]
   },
   {
-   "nextTask": "The Lot Waits: add a short first-minute round...",
+   "nextTask": null,
    "costTotalUsd": 18.0,
    "latestChange": {
     "text": "see",
@@ -19901,14 +19992,14 @@
    "title": "The Lot Waits",
    "line": "A week at a shrine side table: give each lot to its visitor on the right day or keep it in a two-slot drawer.",
    "url": "https://chenhsieh.github.io/lot-waits/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "A week at a shrine side table: give each lot to its visitor on the right day or",
    "shelfNote": "",
    "image": "promo/lot-waits/first.jpg",
    "firstSeen": "2026-10-21T21:13:02+00:00",
-   "lastChange": "2026-10-22T20:35:26+00:00",
+   "lastChange": "2026-10-22T20:42:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -19924,10 +20015,10 @@
    "tasks": [
     {
      "title": "P2FM17_lot waits first minute",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "The Lot Waits: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:35:26+00:00",
+     "since": "2026-10-22T20:41:47+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -19938,8 +20029,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
