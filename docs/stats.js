@@ -11,6 +11,7 @@ const PARTS = [
 const COLUMNS = [['ship', 'Ship'], ['revise', 'Revise'], ['shelf', 'Shelf'], ['', 'No verdict yet, with a priority']];
 
 async function load() {
+  Gauge.load().then((q) => { $('#gauge-stats').innerHTML = Gauge.compactHtml(q); });
   const r = await fetch(`data/status.json?t=${Date.now()}`, { cache: 'no-store' });
   const d = await r.json();
   const p = d.project || {};

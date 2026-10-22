@@ -190,3 +190,54 @@ h2 { font: 600 12px var(--mono); text-transform: uppercase; letter-spacing: 0.08
 .lane-bar .pips i { width: 22px; height: 8px; border-radius: 2px; background: var(--rule); }
 .lane-bar .pips i.on { background: var(--accent); }
 .queue-row.paused { opacity: .6; }
+
+/* plan gauge (header, stats page) and the Queue view */
+[hidden] { display: none !important; }
+.gauge-head { margin: 10px 0 0; padding: 8px 10px; background: var(--tone); border-left: 3px solid var(--accent); font: 12px/1.45 var(--mono); }
+.gline { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 4px 10px; margin: 0; }
+.gline + .gline { margin-top: 4px; }
+.gother { color: var(--muted); font-size: 11.5px; gap: 2px 14px; }
+.gother span { min-width: 0; overflow-wrap: anywhere; }
+.gtext { flex: 1 1 220px; min-width: 0; overflow-wrap: anywhere; }
+.gbar { display: block; flex: 0 0 90px; height: 10px; margin-top: 4px; background: #e6dfd3; }
+.gbar i { display: block; height: 100%; background: var(--accent); }
+.gbig { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 6px 0 8px; }
+.gbig .gbar { flex: 1 1 140px; height: 16px; }
+.gnum { font: 15px var(--mono); }
+.gpanel { padding: 10px 12px; margin: 0 0 10px; background: var(--tone); border-top: 2px solid var(--ink); min-width: 0; }
+.gpanel h3 { margin: 0; font: 600 12px var(--mono); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.gdl { margin: 0 0 6px; display: grid; gap: 4px; }
+.gdl div { display: grid; grid-template-columns: 64px 1fr; gap: 8px; font-size: 14.5px; }
+.gdl dt { font: 12px var(--mono); color: var(--muted); padding-top: 2px; }
+.gdl dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+.gtag { font: 600 11px var(--mono); padding: 1px 6px; border: 1px solid var(--accent); color: var(--accent); }
+.gpace { margin: 4px 0; font-weight: 600; }
+.gq { margin: 4px 0; font-size: 14.5px; overflow-wrap: anywhere; }
+.gspark { display: block; width: 100%; max-width: 360px; height: 28px; color: var(--accent); margin-top: 6px; }
+.qview { padding-top: 10px; }
+.qfilters { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 12px 0 4px; }
+.qfg { display: flex; flex-wrap: wrap; gap: 6px; }
+.qchip { margin: 0; min-height: 40px; min-width: 44px; padding: 6px 12px; font-size: 13px; }
+.qcount { margin: 6px 0; font: 12px var(--mono); color: var(--muted); }
+.rgroup { font: 600 13px var(--mono); text-transform: uppercase; letter-spacing: .08em; margin: 18px 0 4px; padding-top: 6px; border-top: 2px solid var(--ink); }
+.rgroup small { color: var(--muted); font-weight: 400; }
+.reqs { list-style: none; margin: 0; padding: 0; }
+.req { border-bottom: 1px solid var(--rule); }
+.rrow { all: unset; box-sizing: border-box; display: block; width: 100%; min-height: 44px; padding: 10px 0; cursor: pointer; }
+.rrow:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.rtext { display: block; font-size: 16px; line-height: 1.35; overflow-wrap: anywhere; }
+.rline { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; margin-top: 5px; font: 11.5px var(--mono); color: var(--muted); }
+.rgame { color: var(--ink); font-weight: 600; margin-right: 4px; }
+.chip2 { padding: 1px 7px; border: 1px solid var(--rule); border-radius: 999px; background: #fff; color: var(--ink); }
+.rst { padding: 1px 6px; border: 1px solid currentColor; }
+.rst.running { background: var(--accent); border-color: var(--accent); color: #fff; }
+.rst.ready { color: #2f6b4f; }
+.rst.waiting { color: #6a4f86; }
+.rst.done { color: var(--muted); border-style: dashed; }
+.share { margin-left: auto; }
+.rmeta { display: none; margin: 0 0 12px; padding: 8px 10px; background: var(--tone); gap: 3px; font-size: 13.5px; }
+.req.open .rmeta { display: grid; }
+.rmeta div { display: grid; grid-template-columns: 62px 1fr; gap: 8px; }
+.rmeta dt { font: 12px var(--mono); color: var(--muted); }
+.rmeta dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+body.qmode .now, body.qmode .tally, body.qmode .tools, body.qmode #games, body.qmode #q, body.qmode .prio-row { display: none; }

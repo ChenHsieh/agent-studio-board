@@ -13,6 +13,7 @@
   <h1>Studio board <span id="project">loading</span></h1>
   <p class="fresh"><span id="fresh">Loading the board…</span> · <a href="stats.html">Stats</a> · <a href="about.html">How the pipeline works</a></p>
 </header>
+<section class="gauge-head" id="gauge-head" aria-label="Plan usage"></section>
 
 <section class="queue-panel" aria-labelledby="queue-h">
   <div class="queue-head"><h2 id="queue-h">Queue</h2><p id="queue-eta" class="queue-eta"></p></div>
@@ -48,7 +49,10 @@
   <label class="sort">Sort <select id="sort"><option value="change">Latest change</option><option value="priority">Priority</option><option value="cost">Most invested</option></select></label>
 </div>
 
+<section id="queue-view" class="qview" hidden aria-label="Queue of requests"></section>
+
 <ol id="games" class="games"></ol>
+<script src="gauge.js"></script>
 <script src="board.js"></script>
 </body>
 </html>

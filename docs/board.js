@@ -21,7 +21,7 @@ const savedFilters = JSON.parse(localStorage.getItem('board.filters') || '{}');
 let filters = { stage: [], priority: [], verdict: [], worker: [], recent: [], ...savedFilters };
 delete filters.needs;
 // The first-row view switch. Needs you is the default; the last choice is remembered.
-const VIEWS = [['needs', 'Needs you'], ['ready', 'Ready to try'], ['progress', 'In progress'], ['shelf', 'Shelf'], ['all', 'All']];
+const VIEWS = [['needs', 'Needs you'], ['ready', 'Ready to try'], ['progress', 'In progress'], ['shelf', 'Shelf'], ['all', 'All'], ['queue', 'Queue']];
 let view = localStorage.getItem('board.view');
 if (!VIEWS.some(([v]) => v === view)) view = 'needs';
 // Needs you means: a human is the only thing the game is waiting for (the server sets needsYou only when no work is queued).
@@ -34,7 +34,12 @@ const IN_VIEW = {
   progress: (g) => !!inProg(g),
   shelf: (g) => g.stage === 'shelf',
   all: () => true,
+  queue: () => false,
 };
+let quota = null, requests = null;
+const qFilter = JSON.parse(localStorage.getItem('board.qfilter') || '{}');
+const qf = { route: qFilter.route || [], state: qFilter.state || [] };
+const qOpen = new Set();
 // Why a game needs Chen: a new version to play, an open question, or a decision.
 function whyKind(g) {
   const t = g.needsYou || '';
@@ -71,7 +76,50 @@ function day(iso) {
 function within(iso, hours) { const t = Date.parse(iso || ''); return !Number.isNaN(t) && Date.now() - t <= hours * 3_600_000; }
 function saveChoices() { localStorage.setItem('board.view', view); localStorage.setItem('board.filters', JSON.stringify(filters)); localStorage.setItem('board.sort', sort); }
 
+async function loadExtra() {
+  Gauge.load().then((q) => { if (q) { quota = q; paintGauge(); if (view === 'queue') renderQueueView(); } });
+  for (const url of ['data/queue.json', 'https://raw.githubusercontent.com/ChenHsieh/agent-studio-board/main/docs/data/queue.json']) {
+    try { const r = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' }); if (r.ok) { requests = await r.json(); if (view === 'queue') renderQueueView(); renderViews(); return; } } catch { /* next */ }
+  }
+}
+function paintGauge() { $('#gauge-head').innerHTML = Gauge.compactHtml(quota); }
+
+const ROUTES = ['Codex', 'Claude', 'OpenRouter'];
+const QSTATES = [['running', 'Running'], ['ready', 'Ready'], ['waiting', 'Waiting'], ['done', 'Done']];
+function stateText(t) {
+  if (t.state === 'running') return `running since ${ago(new Date(t.at * 1000).toISOString())}`;
+  if (t.state === 'done') return `done ${ago(new Date(t.at * 1000).toISOString())}`;
+  if (t.state === 'waiting') { const w = t.waitingOn || []; return `waiting on ${w[0] ? w[0].replace(/^[A-Za-z]*\d+[a-z0-9]*_/, '') : 'an earlier task'}${w.length > 1 ? ` +${w.length - 1}` : ''}`; }
+  return 'ready';
+}
+function requestHtml(t) {
+  const isOpen = qOpen.has(t.id);
+  const share = t.route === 'Codex' && t.state !== 'done' ? `<span class="share">~${t.estPercentOfWeek}% of week</span>` : '';
+  const meta = [['Task', t.id], ['Kind', t.kind], ['Size', t.size + (t.estMinutes ? `, about ${t.estMinutes} min` : '')], ['Priority', t.priority || 'none'],
+    ['Age', `queued ${ago(new Date(t.created * 1000).toISOString())}`], ['After', (t.after || []).length ? t.after.join(', ') : 'nothing']];
+  return `<li class="req${isOpen ? ' open' : ''}" data-rid="${esc(t.id)}"><button class="rrow" aria-expanded="${isOpen}">
+    <span class="rtext">${esc(t.request)}</span>
+    <span class="rline"><span class="rgame">${esc(t.game)}</span><span class="chip2">${esc(t.model)}</span><span class="chip2">${esc(t.effort)}</span><span class="rst ${esc(t.state)}">${esc(stateText(t))}</span>${share}</span></button>
+    <dl class="rmeta">${meta.map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl></li>`;
+}
+function renderQueueView() {
+  const el = $('#queue-view');
+  const all = (requests && requests.tasks) || [];
+  const shown = all.filter((t) => (!qf.route.length || qf.route.includes(t.route)) && (!qf.state.length || qf.state.includes(t.state)));
+  const chips = (group, list) => list.map(([v, l]) => `<button class="chip qchip" data-qf="${group}" data-value="${v}" aria-pressed="${qf[group].includes(v)}">${l}</button>`).join('');
+  const groups = ROUTES.map((r) => {
+    const rows = shown.filter((t) => t.route === r);
+    if (!rows.length) return '';
+    return `<h3 class="rgroup">${r} <small>${rows.length}</small></h3><ul class="reqs">${rows.map(requestHtml).join('')}</ul>`;
+  }).join('');
+  el.innerHTML = `<div class="gfull">${Gauge.fullHtml(quota)}</div>
+    <div class="qfilters"><div class="qfg" aria-label="Route">${chips('route', ROUTES.map((r) => [r, r]))}</div><div class="qfg" aria-label="State">${chips('state', QSTATES)}</div></div>
+    <p class="qcount">${shown.length} of ${all.length} requests${requests ? ` · updated ${ago(new Date(requests.generated * 1000).toISOString())}` : ''}</p>
+    ${requests ? (groups || '<p class="empty">Nothing matches.</p>') : '<p class="empty">Loading the queue…</p>'}`;
+}
+
 async function load() {
+  loadExtra();
   for (const url of SOURCES) {
     try {
       const r = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' });
@@ -190,7 +238,8 @@ function gameHtml(g) {
 }
 
 function renderViews() {
-  $('#views').innerHTML = VIEWS.map(([v, label]) => `<button class="view" role="tab" data-view="${v}" aria-selected="${v === view}">${label} <b>${data.games.filter(IN_VIEW[v]).length}</b></button>`).join('');
+  const count = (v) => v === 'queue' ? ((requests && requests.tasks) || []).filter((t) => t.state !== 'done').length : data.games.filter(IN_VIEW[v]).length;
+  $('#views').innerHTML = VIEWS.map(([v, label]) => `<button class="view" role="tab" data-view="${v}" aria-selected="${v === view}">${label} <b>${count(v)}</b></button>`).join('');
 }
 
 function renderChips() {
@@ -241,6 +290,10 @@ function render() {
   renderChips();
   const q = $('#q').value.trim().toLowerCase();
   renderViews();
+  document.body.classList.toggle('qmode', view === 'queue');
+  $('#queue-view').hidden = view !== 'queue';
+  if (view === 'queue') renderQueueView();
+  paintGauge();
   const list = data.games.filter((g) => (!q || (g.title + ' ' + g.id + ' ' + (g.line || '')).toLowerCase().includes(q)) && IN_VIEW[view](g) && matches(g)).sort(compare);
   let html = '', lastGroup = '';
   for (const g of list) {
@@ -270,6 +323,10 @@ document.addEventListener('click', (e) => {
     (navigator.clipboard ? navigator.clipboard.writeText(cp.dataset.copy) : Promise.reject()).then(done, () => { const t = document.createElement('textarea'); t.value = cp.dataset.copy; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); done(); } catch {} t.remove(); });
     return;
   }
+  const qc = e.target.closest('[data-qf]');
+  if (qc) { const { qf: g, value } = qc.dataset; qf[g] = qf[g].includes(value) ? qf[g].filter((v) => v !== value) : [...qf[g], value]; localStorage.setItem('board.qfilter', JSON.stringify(qf)); renderQueueView(); return; }
+  const rr = e.target.closest('.rrow');
+  if (rr) { const id = rr.parentElement.dataset.rid; qOpen.has(id) ? qOpen.delete(id) : qOpen.add(id); rr.parentElement.classList.toggle('open'); rr.setAttribute('aria-expanded', String(qOpen.has(id))); return; }
   const tab = e.target.closest('[data-view]');
   if (tab && data) { view = tab.dataset.view; saveChoices(); render(); return; }
   const chip = e.target.closest('.chip');
