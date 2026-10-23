@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T03:14:04+00:00",
+ "generated": "2026-10-23T03:17:37+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -18,23 +18,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 44,
+    "queued": 43,
     "running": 0,
     "doneToday": 57,
-    "minutes": 1760,
+    "minutes": 1720,
     "estimateMinutes": 0
    },
    "Claude": {
     "queued": 1,
-    "running": 4,
-    "doneToday": 135,
-    "minutes": 300,
-    "estimateMinutes": 75
+    "running": 3,
+    "doneToday": 137,
+    "minutes": 240,
+    "estimateMinutes": 60
    }
   },
-  "queued": 45,
-  "running": 4,
-  "doneToday": 192,
+  "queued": 44,
+  "running": 3,
+  "doneToday": 194,
   "lanes": {
    "Codex": 0,
    "Claude": 4
@@ -44,9 +44,9 @@
    "Codex": 0
   },
   "codexPaused": true,
-  "minutesRemaining": 2060,
-  "estimatedFinish": "2026-10-23T04:29:04+00:00",
-  "estimateMinutes": 75
+  "minutesRemaining": 1960,
+  "estimatedFinish": "2026-10-23T04:17:37+00:00",
+  "estimateMinutes": 60
  },
  "lanes": [
   {
@@ -59,14 +59,6 @@
   },
   {
    "worker": "Claude",
-   "game": "pigeon-salon",
-   "task": "P3OR36_pigeon salon rule words",
-   "since": "2026-10-23T01:32:35+00:00",
-   "activity": "2026-10-23T03:12:20+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
    "game": "dynasty-guess",
    "task": "P3OR48_dynasty no answer outline",
    "since": "2026-10-23T01:43:47+00:00",
@@ -75,15 +67,15 @@
   },
   {
    "worker": "Claude",
-   "game": "gift-tins",
-   "task": "P3RL21_credits licences gift tins",
-   "since": "2026-10-23T03:05:55+00:00",
-   "activity": "2026-10-23T03:14:03+00:00",
+   "game": "pigeon-salon",
+   "task": "P3RL29_credits licences pigeon salon",
+   "since": "2026-10-23T03:15:02+00:00",
+   "activity": "2026-10-23T03:15:22+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 4,
+ "claudeWorkers": 3,
  "apiSpentUsd": 310.9,
  "claudeInSession": {
   "runs": 168,
@@ -7362,8 +7354,8 @@
    "title": "Gift Tins",
    "line": "",
    "url": "https://chenhsieh.github.io/gift-tins/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -7372,44 +7364,44 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T20:31:20+00:00",
-   "lastChange": "2026-10-23T03:14:03+00:00",
+   "lastChange": "2026-10-23T03:04:59+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 2,
-    "earlierUsdEst": 7.2,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 1,
+    "earlierUsdEst": 3.6,
     "totalUsdEst": 7.2
    },
    "tasks": [
     {
      "title": "P3RL21_credits licences gift tins",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Gift Tins: credits name every source and its licence",
-     "since": "2026-10-23T03:05:55+00:00",
-     "done": null,
+     "since": "2026-10-23T03:04:59+00:00",
+     "done": "2026-10-23T03:04:59+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 10,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;process.exit(k"
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-22T20:32:54+00:00",
@@ -14966,7 +14958,7 @@
    ]
   },
   {
-   "nextTask": "Pigeon Salon: credits name every source and its...",
+   "nextTask": "Pigeon Salon: label the wall row, readable seed...",
    "costTotalUsd": 25.36,
    "latestChange": {
     "text": "feat: teach the pigeon before level one",
@@ -14995,40 +14987,26 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T19:12:54+00:00",
-   "lastChange": "2026-10-23T03:12:20+00:00",
+   "lastChange": "2026-10-23T03:15:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 0,
     "codexTokens": 136565,
     "codexUsdEst": 0.16,
-    "claudeUsdEst": 7.2,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
+    "claudeUsdEst": 10.8,
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
     "totalUsdEst": 25.36
    },
    "tasks": [
     {
-     "title": "P3OR36_pigeon salon rule words",
+     "title": "P3RL29_credits licences pigeon salon",
      "state": "running",
      "worker": "Claude",
-     "plan": "Pigeon Salon: rule lines that name the move",
-     "since": "2026-10-23T01:32:35+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P3RL29_credits licences pigeon salon",
-     "state": "queued",
-     "worker": "Codex",
      "plan": "Pigeon Salon: credits name every source and its licence",
-     "since": "2026-10-23T03:05:26+00:00",
+     "since": "2026-10-23T03:15:02+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -15050,6 +15028,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P3OR36_pigeon salon rule words",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Pigeon Salon: rule lines that name the move",
+     "since": "2026-10-22T23:44:51+00:00",
+     "done": "2026-10-22T23:44:51+00:00",
+     "reviewed": false,
+     "minutes": 102,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: grep -qF \"Tap a painting, then a worse one: the pigeon learns the difference.\" docs/game.js && grep -qF \"Make the wall match the patron's card.\" docs/game.js && [ $(grep -cF 'A pair that differs in two..."
     },
     {
      "title": "P3OR26_pigeon salon engine test",
@@ -15095,10 +15087,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 1,
     "running": 1,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": {
     "date": "2026-10-22",
@@ -22848,10 +22840,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 21.84,
+   "costTotalUsd": 25.44,
    "latestChange": {
-    "text": "feat: see the photo form as the camera scans",
-    "at": "2026-10-22T23:29:07+00:00"
+    "text": "Time ruler readable on small phones: bigger numbers, every second tick labelled",
+    "at": "2026-10-23T02:48:13+00:00"
    },
    "promo": {
     "files": {
@@ -22877,7 +22869,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-09-20T20:53:51+00:00",
-   "lastChange": "2026-10-23T01:30:33+00:00",
+   "lastChange": "2026-10-23T02:48:13+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -22886,9 +22878,9 @@
     "codexTokens": 196600,
     "codexUsdEst": 0.24,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
-    "totalUsdEst": 21.84
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
+    "totalUsdEst": 25.44
    },
    "tasks": [
     {
@@ -22990,6 +22982,12 @@
    "needsYou": null,
    "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-23T02:48:13+00:00",
+     "ok": true,
+     "note": "Time ruler readable on small phones: bigger numbers, every second tick labelled",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-22T23:29:07+00:00",
      "ok": true,
