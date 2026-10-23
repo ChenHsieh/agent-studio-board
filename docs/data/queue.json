@@ -1,5 +1,5 @@
 {
- "generated": 1792715960,
+ "generated": 1792716318,
  "defaultPercentPerCodexTask": 0.25,
  "tasks": [
   {
@@ -121,6 +121,54 @@
    "created": 1792712578
   },
   {
+   "id": "P3OR35_the-folder-link-preview",
+   "request": "The Folder: a proper link preview (picture and one-line description) when the game is shared",
+   "game": "The Folder",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "running",
+   "at": 1792712593,
+   "created": 1792712593
+  },
+  {
+   "id": "P3OR43_time-material-ruler-legible",
+   "request": "Time Material: the time ruler numbers readable on small phones (OpenRouter lane)",
+   "game": "Time Material",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "running",
+   "at": 1792715879,
+   "created": 1792715879
+  },
+  {
+   "id": "P3OR46_restored-neighbour-rule-and-words",
+   "request": "Restored: blurry neighbours count by their shape, with the new rule words (OpenRouter lane)",
+   "game": "Restored",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "running",
+   "at": 1792715879,
+   "created": 1792715879
+  },
+  {
    "id": "P2FM36_shortest-law-first-minute",
    "request": "Shortest Law: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
    "game": "Shortest Law",
@@ -135,23 +183,6 @@
    "state": "running",
    "at": 1792712992,
    "created": 1792712992,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2FM44_lamp-spiral-first-minute",
-   "request": "Which Way Is Up: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-   "game": "Lamp Spiral",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "state": "running",
-   "at": 1792715399,
-   "created": 1792715399,
    "estPercentOfWeek": 0.25
   },
   {
@@ -223,6 +254,39 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P2FM50_notched-boat-first-minute",
+   "request": "The Notched Boat: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+   "game": "Notched Boat",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "first-minute",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "state": "running",
+   "at": 1792715969,
+   "created": 1792715969,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P3OR44_kit-win-hold-and-higher-is-better",
+   "request": "Game kit: hold the finished board in view before the result card, and say 'best possible' for higher-is-better games (OpenRouter lane, Codex then gates and ships)",
+   "game": "Studio",
+   "route": "OpenRouter",
+   "model": "openrouter/openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "state": "running",
+   "at": 1792715908,
+   "created": 1792715908
+  },
+  {
    "id": "P1MH56_print-hero-and-card-sizes",
    "request": "Mirror Hold: show the client's print as a wide sharp strip with a readable card below, and the whole print on tap",
    "game": "Mirror Hold",
@@ -238,22 +302,6 @@
    "waitingOn": [],
    "created": 1792713002,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P3OR39_glasshouse-short-share-line",
-   "request": "Glasshouse: a share line short enough for every preview (120 characters or fewer)",
-   "game": "Glasshouse",
-   "route": "OpenRouter",
-   "model": "openrouter/openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792715828
   },
   {
    "id": "P2FM35_alias-loaf-first-minute",
@@ -444,20 +492,23 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P3OR35_the-folder-link-preview",
-   "request": "The Folder: a proper link preview (picture and one-line description) when the game is shared",
-   "game": "The Folder",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "review",
+   "id": "P3NY00_not-yet-a-real-choice",
+   "request": "Not Yet: give the player a real choice (the cone moves one lane a beat, the next three grabs are shown), or shelve it",
+   "game": "Not Yet",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
    "size": "one repo",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P3OR42_not-yet-level-three-card"
+   ],
    "priority": "P2",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792712593
+   "created": 1792713432,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3OR36_pigeon-salon-rule-words",
@@ -476,44 +527,12 @@
    "created": 1792712691
   },
   {
-   "id": "P3OR42_not-yet-level-three-card",
-   "request": "Not Yet: a level 3 rule card that says to look ahead",
-   "game": "Not Yet",
-   "route": "OpenRouter",
-   "model": "openrouter/openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792715828
-  },
-  {
-   "id": "P3OR43_time-material-ruler-legible",
-   "request": "Time Material: the time ruler numbers readable on small phones (OpenRouter lane)",
-   "game": "Time Material",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792715879
-  },
-  {
    "id": "P3OR45_herbal-pages-stay-open-logic",
    "request": "Herbal of Nowhere: opened pages stay open after Undo, the page counter counts pages, cleaner level 1 result (OpenRouter lane)",
    "game": "Herbal of Nowhere",
-   "route": "OpenRouter",
-   "model": "openrouter/openai/gpt-4.1",
-   "effort": "default",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
@@ -521,23 +540,8 @@
    "priority": "P2",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792715908
-  },
-  {
-   "id": "P3OR46_restored-neighbour-rule-and-words",
-   "request": "Restored: blurry neighbours count by their shape, with the new rule words (OpenRouter lane)",
-   "game": "Restored",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792715879
+   "created": 1792716192,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3d35_lens-screen-studio-320-fix",
@@ -557,21 +561,20 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P2FM50_notched-boat-first-minute",
-   "request": "The Notched Boat: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-   "game": "Notched Boat",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "first-minute",
-   "size": "one repo",
+   "id": "P2n113_review-dynasty-and-time-material-after-feedback",
+   "request": "the photo-forming scan line)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
    "estMinutes": null,
    "after": [],
    "priority": null,
    "state": "ready",
    "waitingOn": [],
-   "created": 1792704554,
-   "estPercentOfWeek": 0.25
+   "created": 1792716169
   },
   {
    "id": "P2n86_round4-template-repos",
@@ -588,22 +591,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792700662
-  },
-  {
-   "id": "P3OR44_kit-win-hold-and-higher-is-better",
-   "request": "Game kit: hold the finished board in view before the result card, and say 'best possible' for higher-is-better games (OpenRouter lane, Codex then gates and ships)",
-   "game": "Studio",
-   "route": "OpenRouter",
-   "model": "openrouter/openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792715908
   },
   {
    "id": "P1FW52_ancient-surface",
@@ -708,27 +695,6 @@
     "P3OR46_restored-neighbour-rule-and-words"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P3NY00_not-yet-a-real-choice",
-   "request": "Not Yet: give the player a real choice (the cone moves one lane a beat, the next three grabs are shown), or shelve it",
-   "game": "Not Yet",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P3OR42_not-yet-level-three-card"
-   ],
-   "priority": "P2",
-   "state": "waiting",
-   "waitingOn": [
-    "P3OR42_not-yet-level-three-card"
-   ],
-   "created": 1792713432,
    "estPercentOfWeek": 0.25
   },
   {
@@ -1263,6 +1229,22 @@
    "state": "done",
    "at": 1792712590,
    "created": 1792712590
+  },
+  {
+   "id": "P3OR39_glasshouse-short-share-line",
+   "request": "Glasshouse: a share line short enough for every preview (120 characters or fewer)",
+   "game": "Glasshouse",
+   "route": "OpenRouter",
+   "model": "openrouter/openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "state": "done",
+   "at": 1792715828,
+   "created": 1792715828
   },
   {
    "id": "P3OR40_dynasty-guess-link-preview",
@@ -1949,6 +1931,22 @@
    "state": "done",
    "at": 1792713413,
    "created": 1792713413
+  },
+  {
+   "id": "P3OR42_not-yet-level-three-card",
+   "request": "Not Yet: a level 3 rule card that says to look ahead",
+   "game": "Not Yet",
+   "route": "OpenRouter",
+   "model": "openrouter/openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "done",
+   "at": 1792715828,
+   "created": 1792715828
   },
   {
    "id": "P3OR00_gallery-guess-words-test",
