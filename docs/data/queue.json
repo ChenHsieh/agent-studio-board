@@ -1,5 +1,5 @@
 {
- "generated": 1792713666,
+ "generated": 1792714304,
  "defaultPercentPerCodexTask": 0.25,
  "tasks": [
   {
@@ -152,38 +152,6 @@
    "created": 1792712696
   },
   {
-   "id": "P3OR41_radish-omelette-honest-lines",
-   "request": "Radish Omelette: rule lines that match what the pan really does",
-   "game": "Radish Omelette",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "running",
-   "at": 1792713413,
-   "created": 1792713413
-  },
-  {
-   "id": "P3OR42_not-yet-level-three-card",
-   "request": "Not Yet: a level 3 rule card that says to look ahead",
-   "game": "Not Yet",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "running",
-   "at": 1792713420,
-   "created": 1792713420
-  },
-  {
    "id": "P2FM36_shortest-law-first-minute",
    "request": "Shortest Law: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
    "game": "Shortest Law",
@@ -198,23 +166,6 @@
    "state": "running",
    "at": 1792712992,
    "created": 1792712992,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2FM42_hallway-posters-first-minute",
-   "request": "Hallway Posters: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-   "game": "Hallway Posters",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "state": "running",
-   "at": 1792711274,
-   "created": 1792711274,
    "estPercentOfWeek": 0.25
   },
   {
@@ -525,6 +476,25 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P2RO00_radish-omelette-colours-and-beats",
+   "request": "Radish Omelette: egg colours that match the order cards, a beat count that agrees, readable labels at 320",
+   "game": "Radish Omelette",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR41_radish-omelette-honest-lines"
+   ],
+   "priority": "P2",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792713431,
+   "estPercentOfWeek": 0.25
+  },
+  {
    "id": "P2RS00_restored-blurry-neighbours-count",
    "request": "Restored: blurry neighbours count by their shape, so the obvious order stops always winning",
    "game": "Restored",
@@ -572,6 +542,23 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792712691
+  },
+  {
+   "id": "P3OR42_not-yet-level-three-card",
+   "request": "Not Yet: a level 3 rule card that says to look ahead",
+   "game": "Not Yet",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792713975,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3d35_lens-screen-studio-320-fix",
@@ -739,27 +726,6 @@
     "P3OR36_pigeon-salon-rule-words"
    ],
    "created": 1792713005,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2RO00_radish-omelette-colours-and-beats",
-   "request": "Radish Omelette: egg colours that match the order cards, a beat count that agrees, readable labels at 320",
-   "game": "Radish Omelette",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P3OR41_radish-omelette-honest-lines"
-   ],
-   "priority": "P2",
-   "state": "waiting",
-   "waitingOn": [
-    "P3OR41_radish-omelette-honest-lines"
-   ],
-   "created": 1792713431,
    "estPercentOfWeek": 0.25
   },
   {
@@ -1948,6 +1914,22 @@
    "state": "done",
    "at": 1792712699,
    "created": 1792712699
+  },
+  {
+   "id": "P3OR41_radish-omelette-honest-lines",
+   "request": "Radish Omelette: rule lines that match what the pan really does",
+   "game": "Radish Omelette",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "done",
+   "at": 1792713413,
+   "created": 1792713413
   },
   {
    "id": "P3OR00_gallery-guess-words-test",
