@@ -1,5 +1,5 @@
 {
- "generated": 1792760574,
+ "generated": 1792760843,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -79,7 +79,7 @@
  },
  "overflow": {
   "codexOut": true,
-  "converted": 6,
+  "converted": 4,
   "convertedRunning": 2,
   "claudeWorkers": 2,
   "claudeWorkerCap": 3,
@@ -88,44 +88,6 @@
   "lastHandBackN": null
  },
  "tasks": [
-  {
-   "id": "P2CC34_lab-edge-counts-keep-their-shape",
-   "request": "Colony Count: in the round dish and octagon lab, edge counts show the colony's shape as well as its colour",
-   "game": "Colony Count",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P3OR50_colony-lab-rule-card-short-steps"
-   ],
-   "priority": "P1",
-   "why": "An ad for a three-colour sweeper puzzle (ColorSweeper).",
-   "state": "running",
-   "at": 1792758654,
-   "created": 1792758654,
-   "wasCodex": true
-  },
-  {
-   "id": "P3OR49_a11y-audit-no-crash-on-other-games",
-   "request": "Play template: the accessibility check runs on games that are not built on the template instead of stopping",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792758654,
-   "created": 1792758654,
-   "wasCodex": true
-  },
   {
    "id": "P2RL11_credits-panel-colony-count",
    "request": "Colony Count: a Credits panel naming every source and licence (release checklist)",
@@ -139,9 +101,29 @@
    "after": [],
    "priority": "P1",
    "why": "An ad for a three-colour sweeper puzzle (ColorSweeper).",
-   "state": "ready",
-   "waitingOn": [],
+   "state": "running",
+   "at": 1792749174,
    "created": 1792749174,
+   "wasCodex": true
+  },
+  {
+   "id": "P1AX05_demo-play-fits-one-screen",
+   "request": "Play template: the sample game's board, row and Undo fit one phone screen at both text sizes; drawn labels stay readable",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1AX04_kit-howto-card-clear-of-top-bar"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1792758654,
+   "created": 1792758654,
    "wasCodex": true
   },
   {
@@ -387,26 +369,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P1AX05_demo-play-fits-one-screen",
-   "request": "Play template: the sample game's board, row and Undo fit one phone screen at both text sizes; drawn labels stay readable",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1AX04_kit-howto-card-clear-of-top-bar"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792758654,
-   "wasCodex": true
-  },
-  {
    "id": "P2n86_round4-template-repos",
    "request": "Create the ten new game repositories from the game template so their builds can start",
    "game": "Studio",
@@ -481,8 +443,7 @@
    "why": "",
    "state": "waiting",
    "waitingOn": [
-    "P1AX05_demo-play-fits-one-screen",
-    "P3OR49_a11y-audit-no-crash-on-other-games"
+    "P1AX05_demo-play-fits-one-screen"
    ],
    "created": 1792758654,
    "wasCodex": true
@@ -957,6 +918,26 @@
    "state": "done",
    "at": 1792743970,
    "created": 1792743970,
+   "wasCodex": true
+  },
+  {
+   "id": "P2CC34_lab-edge-counts-keep-their-shape",
+   "request": "Colony Count: in the round dish and octagon lab, edge counts show the colony's shape as well as its colour",
+   "game": "Colony Count",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR50_colony-lab-rule-card-short-steps"
+   ],
+   "priority": "P1",
+   "why": "An ad for a three-colour sweeper puzzle (ColorSweeper).",
+   "state": "done",
+   "at": 1792758654,
+   "created": 1792758654,
    "wasCodex": true
   },
   {
@@ -1690,6 +1671,24 @@
    "state": "done",
    "at": 1792758464,
    "created": 1792758464,
+   "wasCodex": true
+  },
+  {
+   "id": "P3OR49_a11y-audit-no-crash-on-other-games",
+   "request": "Play template: the accessibility check runs on games that are not built on the template instead of stopping",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792758654,
+   "created": 1792758654,
    "wasCodex": true
   },
   {
