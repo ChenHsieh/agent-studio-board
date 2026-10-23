@@ -1,19 +1,19 @@
 {
- "generated": 1792797807,
+ "generated": 1792797971,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
-  "lanesBusy": 4,
+  "lanesBusy": 1,
   "ready": 1,
   "waiting": 2,
   "queued": 3,
-  "running": 4,
-  "done24h": 64,
+  "running": 1,
+  "done24h": 67,
   "modelsQueued": {
-   "deepseek-v4-flash": 7
+   "deepseek-v4-flash": 4
   },
   "spendTodayUsd": 0.02,
-  "runsToday": 15,
-  "runsTodayUnpriced": 13,
+  "runsToday": 18,
+  "runsTodayUnpriced": 16,
   "spendTotalUsd": 6.36,
   "recent": [
    {
@@ -23,10 +23,28 @@
     "at": 1792795393
    },
    {
+    "id": "P3OR64_name-fly-swarm-title",
+    "request": "Name audit: show one name for fly-swarm everywhere",
+    "model": "deepseek-v4-flash",
+    "at": 1792795389
+   },
+   {
     "id": "P3OR63_name-fly-song-share",
     "request": "Name audit: show one name for fly-song everywhere",
     "model": "deepseek-v4-flash",
     "at": 1792795385
+   },
+   {
+    "id": "P3OR61_name-server-stress",
+    "request": "Name audit: show one name for server-stress everywhere",
+    "model": "deepseek-v4-flash",
+    "at": 1792795378
+   },
+   {
+    "id": "P3OR60_name-hello-princess-readme",
+    "request": "Name audit: show one name for copy-paste everywhere",
+    "model": "deepseek-v4-flash",
+    "at": 1792795374
    },
    {
     "id": "P3OR53_name-to-carry-data-inside-game",
@@ -57,24 +75,6 @@
     "request": "thumb-stand: a credits file that names every font, data source and code licence (cheap lane)",
     "model": "deepseek-v4-flash",
     "at": 1792791214
-   },
-   {
-    "id": "P3OR56_gallery-guess-credits-page",
-    "request": "gallery-guess: a credits file that names every font, data source and code licence (cheap lane)",
-    "model": "deepseek-v4-flash",
-    "at": 1792791214
-   },
-   {
-    "id": "P3OR54_cymatic-plate-credits-page",
-    "request": "cymatic-plate: a credits file that names every font, data source and code licence (cheap lane)",
-    "model": "deepseek-v4-flash",
-    "at": 1792791214
-   },
-   {
-    "id": "P3OR51_template-card-label-20px",
-    "request": "Template demo: the CARD label on the board gets slightly bigger so the template passes its own text-size check",
-    "model": "deepseek-v4-flash",
-    "at": 1792790094
    }
   ],
   "label": "estimate"
@@ -110,55 +110,40 @@
    "created": 1792791245
   },
   {
-   "id": "P3OR60_name-hello-princess-readme",
-   "request": "Name audit: show one name for copy-paste everywhere",
-   "game": "Hello Princess",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
+   "id": "P1IG01_idea-graph-board-page",
+   "request": "A separate Idea graph page on the studio board: see the graph, tap a node, and make new random walks to brainstorm from.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "idea",
+   "size": "studio",
    "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "Copy-paste greeting replies with place, name and age swapped each time, plus a stack of identical installer dialogs.",
+   "after": [
+    "P1IG00_idea-graph-data-r5"
+   ],
+   "priority": null,
+   "why": "",
    "state": "running",
-   "at": 1792795374,
-   "created": 1792795374
+   "at": 1792795729,
+   "created": 1792795729
   },
   {
-   "id": "P3OR61_name-server-stress",
-   "request": "Name audit: show one name for server-stress everywhere",
-   "game": "Server Stress",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
+   "id": "P1KT02_expanded-placeholder-set",
+   "request": "Template: an expanded placeholder set (24 silhouettes, 12 symbols, 6 fill patterns, a colour-blind-safe palette) so a core can be judged without circles and triangles.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
    "after": [],
-   "priority": "P2",
-   "why": "An anthropology study of data centres describing staff fear of server downtime, and a short art film about game background workers.",
+   "priority": null,
+   "why": "",
    "state": "running",
-   "at": 1792795378,
-   "created": 1792795378
-  },
-  {
-   "id": "P3OR64_name-fly-swarm-title",
-   "request": "Name audit: show one name for fly-swarm everywhere",
-   "game": "Fly Swarm",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "Steering responses measured from the MaleCNS v1.0 fly connectome's visual-to-descending neuron wiring.",
-   "state": "running",
-   "at": 1792795389,
-   "created": 1792795389
+   "at": 1792795314,
+   "created": 1792795314
   },
   {
    "id": "P3OR66_name-hub-titles",
@@ -421,7 +406,7 @@
    "request": "Template: the Undo, Start over and Hint row stays in the same place after a tap, on small phones and with huge text",
    "game": "Studio",
    "route": "Claude",
-   "model": "gpt-6-sol",
+   "model": "sonnet",
    "effort": "high",
    "kind": "build",
    "size": "one repo",
@@ -433,41 +418,7 @@
    "why": "",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792791549
-  },
-  {
-   "id": "P1IG00_idea-graph-data-r5",
-   "request": "Build one combined idea graph from every round (nodes, lenses, edges, walks) in a public-safe form for the board.",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "idea",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792795729
-  },
-  {
-   "id": "P1KT02_expanded-placeholder-set",
-   "request": "Template: an expanded placeholder set (24 silhouettes, 12 symbols, 6 fill patterns, a colour-blind-safe palette) so a core can be judged without circles and triangles.",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792795314
+   "created": 1792797844
   },
   {
    "id": "P1LS00_gates-run-local-and-retry-timeouts",
@@ -612,27 +563,6 @@
    ],
    "created": 1792715918,
    "estPercentOfWeek": 72.3
-  },
-  {
-   "id": "P1IG01_idea-graph-board-page",
-   "request": "A separate Idea graph page on the studio board: see the graph, tap a node, and make new random walks to brainstorm from.",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "idea",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1IG00_idea-graph-data-r5"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P1IG00_idea-graph-data-r5"
-   ],
-   "created": 1792795729
   },
   {
    "id": "P1TE03_room-strings",
@@ -1489,6 +1419,40 @@
    "created": 1792791256
   },
   {
+   "id": "P3OR60_name-hello-princess-readme",
+   "request": "Name audit: show one name for copy-paste everywhere",
+   "game": "Hello Princess",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "Copy-paste greeting replies with place, name and age swapped each time, plus a stack of identical installer dialogs.",
+   "state": "done",
+   "at": 1792795374,
+   "created": 1792795374
+  },
+  {
+   "id": "P3OR61_name-server-stress",
+   "request": "Name audit: show one name for server-stress everywhere",
+   "game": "Server Stress",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "An anthropology study of data centres describing staff fear of server downtime, and a short art film about game background workers.",
+   "state": "done",
+   "at": 1792795378,
+   "created": 1792795378
+  },
+  {
    "id": "P3OR63_name-fly-song-share",
    "request": "Name audit: show one name for fly-song everywhere",
    "game": "Fly Song",
@@ -1504,6 +1468,23 @@
    "state": "done",
    "at": 1792795385,
    "created": 1792795385
+  },
+  {
+   "id": "P3OR64_name-fly-swarm-title",
+   "request": "Name audit: show one name for fly-swarm everywhere",
+   "game": "Fly Swarm",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "Steering responses measured from the MaleCNS v1.0 fly connectome's visual-to-descending neuron wiring.",
+   "state": "done",
+   "at": 1792795389,
+   "created": 1792795389
   },
   {
    "id": "P3OR56_gallery-guess-credits-page",
@@ -1614,6 +1595,23 @@
    "state": "done",
    "at": 1792787087,
    "created": 1792787087
+  },
+  {
+   "id": "P1IG00_idea-graph-data-r5",
+   "request": "Build one combined idea graph from every round (nodes, lenses, edges, walks) in a public-safe form for the board.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "idea",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792795729,
+   "created": 1792795729
   },
   {
    "id": "P1NM00_game-name-audit",

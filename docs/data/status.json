@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T23:23:12+00:00",
+ "generated": "2026-10-23T23:25:38+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 47,
+    "queued": 45,
     "running": 0,
     "doneToday": 4,
-    "minutes": 1880,
-    "estimateMinutes": 1880
+    "minutes": 1800,
+    "estimateMinutes": 1800
    },
    "Claude": {
     "queued": 1,
     "running": 5,
-    "doneToday": 52,
+    "doneToday": 54,
     "minutes": 360,
     "estimateMinutes": 90
    }
   },
-  "queued": 48,
+  "queued": 46,
   "running": 5,
-  "doneToday": 56,
+  "doneToday": 58,
   "lanes": {
    "Codex": 1,
    "Claude": 4
@@ -46,11 +46,27 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2240,
-  "estimatedFinish": "2026-10-25T06:43:12+00:00",
-  "estimateMinutes": 1880
+  "minutesRemaining": 2160,
+  "estimatedFinish": "2026-10-25T05:25:38+00:00",
+  "estimateMinutes": 1800
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P1IG00_idea graph data r5",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "play-template",
+   "task": "P1KT02_expanded placeholder set",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "time-material",
@@ -61,26 +77,10 @@
   },
   {
    "worker": "Claude",
-   "game": "copy-paste",
-   "task": "P3OR60_name hello princess readme",
-   "since": "2026-10-23T23:22:40+00:00",
-   "activity": "2026-10-23T23:23:07+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
    "game": "server-stress",
    "task": "P3OR61_name server stress",
    "since": "2026-10-23T23:22:40+00:00",
-   "activity": "2026-10-23T23:22:46+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "fly-swarm",
-   "task": "P3OR64_name fly swarm title",
-   "since": "2026-10-23T23:22:40+00:00",
-   "activity": "2026-10-23T23:23:08+00:00",
+   "activity": "2026-10-23T23:25:32+00:00",
    "commit": null
   },
   {
@@ -6246,8 +6246,8 @@
    "title": "Fly Swarm",
    "line": "",
    "url": "https://chenhsieh.github.io/fly-swarm/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Game-design pass: a goal and a decision per round",
    "shelfNote": "",
@@ -6256,33 +6256,33 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-09-11T20:43:24+00:00",
-   "lastChange": "2026-10-23T23:23:08+00:00",
+   "lastChange": "2026-10-23T22:43:09+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 1,
     "codexTokens": 430683,
     "codexUsdEst": 0.52,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 12,
-    "earlierUsdEst": 43.2,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
     "totalUsdEst": 43.72
    },
    "tasks": [
     {
      "title": "P3OR64_name fly swarm title",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Name audit: show one name for fly-swarm everywhere",
-     "since": "2026-10-23T23:22:40+00:00",
-     "done": null,
+     "since": "2026-10-23T22:43:09+00:00",
+     "done": "2026-10-23T22:43:09+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 1,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: grep -q '<title>Fly Swarm: lead the flies</title>' docs/index.html && grep -q 'og:title\" content=\"Fly Swarm: lead the flies\"' docs/index.html"
     },
     {
      "title": "P1SD18_studio standard fly swarm",
@@ -6329,13 +6329,13 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-21T17:09:13+00:00",
@@ -8539,8 +8539,8 @@
    "title": "Hello Princess",
    "line": "Find the princess's first invitation among the copies.",
    "url": "https://chenhsieh.github.io/copy-paste/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Settle the card-link logic, stop story art leaking answers",
    "shelfNote": "",
@@ -8549,33 +8549,33 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-15T18:59:22+00:00",
-   "lastChange": "2026-10-23T23:23:07+00:00",
+   "lastChange": "2026-10-23T22:42:54+00:00",
    "cost": {
     "apiUsd": 16.91,
     "codexRuns": 4,
-    "claudeRuns": 5,
+    "claudeRuns": 6,
     "apiRuns": 3,
     "codexTokens": 861849,
     "codexUsdEst": 1.03,
-    "claudeUsdEst": 18.0,
-    "earlierRounds": 21,
-    "earlierUsdEst": 75.6,
+    "claudeUsdEst": 21.6,
+    "earlierRounds": 20,
+    "earlierUsdEst": 72.0,
     "totalUsdEst": 111.54
    },
    "tasks": [
     {
      "title": "P3OR60_name hello princess readme",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Name audit: show one name for copy-paste everywhere",
-     "since": "2026-10-23T23:22:40+00:00",
-     "done": null,
+     "since": "2026-10-23T22:42:54+00:00",
+     "done": "2026-10-23T22:42:54+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 2,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: grep -q '^# Hello Princess' README.md && ! grep -q '^# Copy Paste' README.md"
     },
     {
      "title": "P1SD22_studio standard copy paste",
@@ -8678,9 +8678,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 12
+    "done": 13
    },
    "verdict": {
     "date": "2026-10-20",
@@ -8688,7 +8688,7 @@
     "note": "Step-by-step linking and inferable feedback"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-21T17:51:07+00:00",
@@ -18418,7 +18418,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-16T01:44:50+00:00",
-   "lastChange": "2026-10-23T23:22:46+00:00",
+   "lastChange": "2026-10-23T23:25:32+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
