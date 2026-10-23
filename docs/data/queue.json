@@ -1,5 +1,5 @@
 {
- "generated": 1792760843,
+ "generated": 1792761580,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -79,9 +79,9 @@
  },
  "overflow": {
   "codexOut": true,
-  "converted": 4,
-  "convertedRunning": 2,
-  "claudeWorkers": 2,
+  "converted": 2,
+  "convertedRunning": 1,
+  "claudeWorkers": 1,
   "claudeWorkerCap": 3,
   "handedBack": 0,
   "lastHandBack": null,
@@ -89,26 +89,8 @@
  },
  "tasks": [
   {
-   "id": "P2RL11_credits-panel-colony-count",
-   "request": "Colony Count: a Credits panel naming every source and licence (release checklist)",
-   "game": "Colony Count",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "An ad for a three-colour sweeper puzzle (ColorSweeper).",
-   "state": "running",
-   "at": 1792749174,
-   "created": 1792749174,
-   "wasCodex": true
-  },
-  {
-   "id": "P1AX05_demo-play-fits-one-screen",
-   "request": "Play template: the sample game's board, row and Undo fit one phone screen at both text sizes; drawn labels stay readable",
+   "id": "P1AX06_a11y-audit-fit-cover-canvas-checks",
+   "request": "Play template: the accessibility check also catches a board below the fold, a card hidden under the top bar, and tiny drawn labels",
    "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
@@ -117,7 +99,8 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P1AX04_kit-howto-card-clear-of-top-bar"
+    "P1AX05_demo-play-fits-one-screen",
+    "P3OR49_a11y-audit-no-crash-on-other-games"
    ],
    "priority": null,
    "why": "",
@@ -424,29 +407,6 @@
    ],
    "created": 1792715918,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P1AX06_a11y-audit-fit-cover-canvas-checks",
-   "request": "Play template: the accessibility check also catches a board below the fold, a card hidden under the top bar, and tiny drawn labels",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1AX05_demo-play-fits-one-screen",
-    "P3OR49_a11y-audit-no-crash-on-other-games"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P1AX05_demo-play-fits-one-screen"
-   ],
-   "created": 1792758654,
-   "wasCodex": true
   },
   {
    "id": "P1AX07_play-template-stranger-rereview",
@@ -995,6 +955,24 @@
    "created": 1792723511
   },
   {
+   "id": "P2RL11_credits-panel-colony-count",
+   "request": "Colony Count: a Credits panel naming every source and licence (release checklist)",
+   "game": "Colony Count",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "An ad for a three-colour sweeper puzzle (ColorSweeper).",
+   "state": "done",
+   "at": 1792749174,
+   "created": 1792749174,
+   "wasCodex": true
+  },
+  {
    "id": "P3OR48_dynasty-no-answer-outline",
    "request": "Dynasty: stop the cabinet from outlining the right era for the picked object",
    "game": "Dynasty Guess",
@@ -1455,6 +1433,26 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792758654,
+   "created": 1792758654,
+   "wasCodex": true
+  },
+  {
+   "id": "P1AX05_demo-play-fits-one-screen",
+   "request": "Play template: the sample game's board, row and Undo fit one phone screen at both text sizes; drawn labels stay readable",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1AX04_kit-howto-card-clear-of-top-bar"
+   ],
    "priority": null,
    "why": "",
    "state": "done",

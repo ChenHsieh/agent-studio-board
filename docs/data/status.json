@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T13:13:42+00:00",
+ "generated": "2026-10-23T13:18:47+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -18,60 +18,52 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 34,
+    "queued": 33,
     "running": 0,
     "doneToday": 0,
-    "minutes": 1360,
+    "minutes": 1320,
     "estimateMinutes": 0
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
-    "doneToday": 18,
-    "minutes": 180,
+    "running": 1,
+    "doneToday": 20,
+    "minutes": 120,
     "estimateMinutes": 60
    }
   },
-  "queued": 35,
-  "running": 2,
-  "doneToday": 18,
+  "queued": 34,
+  "running": 1,
+  "doneToday": 20,
   "lanes": {
    "Codex": 0,
-   "Claude": 3
+   "Claude": 2
   },
   "laneCap": {
    "Claude": 4,
    "Codex": 0
   },
   "codexPaused": true,
-  "minutesRemaining": 1540,
-  "estimatedFinish": "2026-10-23T14:13:42+00:00",
+  "minutesRemaining": 1440,
+  "estimatedFinish": "2026-10-23T14:18:47+00:00",
   "estimateMinutes": 60
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "play-template",
-   "task": "P1AX05_demo play fits one screen",
+   "task": "P1AX06_a11y audit fit cover canvas checks",
    "since": null,
    "activity": null,
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "colony-count",
-   "task": "P2RL11_credits panel colony count",
-   "since": "2026-10-23T13:06:37+00:00",
-   "activity": "2026-10-23T13:12:42+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 188,
-  "usdEst": 676.8,
+  "runs": 190,
+  "usdEst": 684.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -117,7 +109,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 15
+   "changes": 17
   }
  ],
  "houseRules": 25,
@@ -2400,10 +2392,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 174.45,
+   "costTotalUsd": 178.05,
    "latestChange": {
-    "text": "lab edge counts keep colony shapes (circle/square/diamond), 18 px digits on round dish,...",
-    "at": "2026-10-23T13:06:33+00:00"
+    "text": "credits panel in How to play (EN + zh-Hant): studio original, system fonts, Web Audio",
+    "at": "2026-10-23T13:16:36+00:00"
    },
    "promo": null,
    "why": "An ad for a three-colour sweeper puzzle (ColorSweeper).",
@@ -2412,8 +2404,8 @@
    "title": "Colony Count",
    "line": "Solve three daily levels, then freeze finished plates.",
    "url": "https://chenhsieh.github.io/colony-count/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Flagship; has its own owner",
    "shelfNote": "",
@@ -2422,34 +2414,20 @@
    "releasedOn": "2026-10-23",
    "releasedNote": "public-ready, still being refined",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-23T13:12:42+00:00",
+   "lastChange": "2026-10-23T13:16:36+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 2,
-    "claudeRuns": 20,
+    "claudeRuns": 21,
     "apiRuns": 8,
     "codexTokens": 304598,
     "codexUsdEst": 0.37,
-    "claudeUsdEst": 72.0,
+    "claudeUsdEst": 75.6,
     "earlierRounds": 22,
     "earlierUsdEst": 79.2,
-    "totalUsdEst": 174.45
+    "totalUsdEst": 178.05
    },
    "tasks": [
-    {
-     "title": "P2RL11_credits panel colony count",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Colony Count: a Credits panel naming every source and licence (release checklist)",
-     "since": "2026-10-23T13:06:37+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2CC34_lab edge counts keep their shape",
      "state": "done",
@@ -2463,6 +2441,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "DONE P2CC34 colony-count lab edge counts. Main commit (pushed, read back). Live shapes.js and shapes.css match main."
+    },
+    {
+     "title": "P2RL11_credits panel colony count",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Colony Count: a Credits panel naming every source and licence (release checklist)",
+     "since": "2026-10-23T09:52:54+00:00",
+     "done": "2026-10-23T09:52:54+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "DONE P2RL11 colony-count credits panel. Main commit (pushed, read back). Live credits.js, app.js, index.html, style.css sha256 all match main."
     },
     {
      "title": "P3OR50_colony lab rule card short steps",
@@ -2551,9 +2543,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 30
+    "done": 31
    },
    "verdict": {
     "date": "2026-10-23",
@@ -2561,8 +2553,20 @@
     "note": "The lessons teach the rules in a minute and the lab dishes now play cleanly; most words are still too small and the round dish edge counts tell kinds apart by colour alone"
    },
    "needsYou": "GoatCounter visit counter is wired but off in five games (this one, Walls Have Ears, Cymatic Plate, Glasshouse, UGA Grad Survivor) until a site code is chosen. Suggest: sign up with one shared code and switch all five on.",
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-23T13:16:36+00:00",
+     "ok": true,
+     "note": "credits panel in How to play (EN + zh-Hant): studio original, system fonts, Web Audio",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-23T13:15:25+00:00",
+     "ok": true,
+     "note": "feat: Colony Count has a Credits panel in How to play",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-23T13:06:33+00:00",
      "ok": true,
@@ -2622,18 +2626,6 @@
      "ok": false,
      "note": "see",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-21T04:46:09+00:00",
-     "ok": true,
-     "note": "The lab is open: round dish, octagon tiling and incubator ship; hexagon stays hidden; incubator says N left and has bigger squares; tiling words-on-screen check passed, needs a real stranger",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T04:43:57+00:00",
-     "ok": true,
-     "note": "fix: the incubator's coach line is never cut off on a 320 px phone",
-     "source": "main commit"
     }
    ]
   },
@@ -20335,8 +20327,11 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 3.6,
-   "latestChange": null,
+   "costTotalUsd": 7.2,
+   "latestChange": {
+    "text": "feat: Sounds Like starts from the Play Lab game template",
+    "at": "2026-10-22T20:43:52+00:00"
+   },
    "promo": null,
    "why": "A post of egg dishes whose names sound like weapons, a Chinese pun habit; climb from one word to another by swapping one character at a time for a sound-alike.",
    "id": "sounds-like",
@@ -20353,7 +20348,7 @@
    "released": false,
    "releasedOn": null,
    "releasedNote": "",
-   "firstSeen": "2026-10-23T03:05:37+00:00",
+   "firstSeen": "2026-10-22T20:42:14+00:00",
    "lastChange": "2026-10-23T03:05:37+00:00",
    "cost": {
     "apiUsd": 0.0,
@@ -20363,9 +20358,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 0,
-    "earlierUsdEst": 0.0,
-    "totalUsdEst": 3.6
+    "earlierRounds": 1,
+    "earlierUsdEst": 3.6,
+    "totalUsdEst": 7.2
    },
    "tasks": [
     {
@@ -20392,7 +20387,20 @@
    "verdict": null,
    "needsYou": null,
    "inProgress": false,
-   "history": []
+   "history": [
+    {
+     "at": "2026-10-22T20:43:52+00:00",
+     "ok": true,
+     "note": "feat: Sounds Like starts from the Play Lab game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T20:42:14+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
+    }
+   ]
   },
   {
    "nextTask": null,
