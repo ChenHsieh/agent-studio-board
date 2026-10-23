@@ -1,5 +1,5 @@
 {
- "generated": 1792724263,
+ "generated": 1792724519,
  "defaultPercentPerCodexTask": 0.25,
  "tasks": [
   {
@@ -51,32 +51,18 @@
    "created": 1792712691
   },
   {
-   "id": "P3OR45_herbal-pages-stay-open-logic",
-   "request": "Herbal of Nowhere: opened pages stay open after Undo, the page counter counts pages, cleaner level 1 result (OpenRouter lane)",
-   "game": "Herbal of Nowhere",
-   "route": "OpenRouter",
-   "model": "openrouter/deepseek/deepseek-v4-pro-0813",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "running",
-   "at": 1792723738,
-   "created": 1792723738
-  },
-  {
-   "id": "P1IN08_inspiration-trace-backfill-and-standard",
-   "request": "Leave a short note of what inspired each idea, for every game and idea so far and for all new ones",
+   "id": "P1BD02_board-why-this-exists-line",
+   "request": "Show a short 'why this exists' note on each game card",
    "game": "Studio",
    "route": "Claude",
-   "model": "opus",
+   "model": "sonnet",
    "effort": "high",
    "kind": "build",
    "size": "studio",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P1IN08_inspiration-trace-backfill-and-standard"
+   ],
    "priority": null,
    "state": "running",
    "at": 1792720705,
@@ -97,7 +83,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713002,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2FM35_alias-loaf-first-minute",
@@ -130,7 +116,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713004,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2FM54_grub-band-first-minute-fix",
@@ -147,7 +133,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792704508,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2FM55_lot-waits-first-minute-fix",
@@ -164,7 +150,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792704548,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2FM56_even-water-first-minute-fix",
@@ -181,7 +167,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713004,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2FM57_hit-or-kit-first-minute-fix",
@@ -198,7 +184,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792712741,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2FM58_tractatus-tree-first-minute-fix",
@@ -215,7 +201,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713005,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2NC00_name-to-carry-data-inline",
@@ -232,7 +218,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792705163,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2RO00_radish-omelette-colours-and-beats",
@@ -251,7 +237,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713431,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2RS00_restored-blurry-neighbours-count",
@@ -270,7 +256,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792715918,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P3NY00_not-yet-a-real-choice",
@@ -289,7 +275,24 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713432,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
+  },
+  {
+   "id": "P3OR45_herbal-pages-stay-open-logic",
+   "request": "Herbal of Nowhere: opened pages stay open after Undo, the page counter counts pages, cleaner level 1 result (OpenRouter lane)",
+   "game": "Herbal of Nowhere",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792724295,
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P3d35_lens-screen-studio-320-fix",
@@ -306,7 +309,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792701959,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P1AX01_kit-large-text-colour-safe-and-audit-tool",
@@ -324,23 +327,7 @@
    "priority": null,
    "state": "ready",
    "waitingOn": [],
-   "created": 1792723924
-  },
-  {
-   "id": "P1AX03_cvd-palette-module",
-   "request": "Studio kit: colour-blind check module (accessible play)",
-   "game": "Studio",
-   "route": "OpenRouter",
-   "model": "openrouter/openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792723759
+   "created": 1792724425
   },
   {
    "id": "P1RL17_colony-count-stranger-rereview",
@@ -405,7 +392,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792718838,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2n86_round4-template-repos",
@@ -427,9 +414,9 @@
    "id": "P3OR44_kit-win-hold-and-higher-is-better",
    "request": "Game kit: hold the finished board in view before the result card, and say 'best possible' for higher-is-better games (OpenRouter lane, Codex then gates and ships)",
    "game": "Studio",
-   "route": "OpenRouter",
-   "model": "openrouter/openai/gpt-5.6-luna-pro",
-   "effort": "default",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
@@ -437,7 +424,8 @@
    "priority": null,
    "state": "ready",
    "waitingOn": [],
-   "created": 1792723738
+   "created": 1792724493,
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P1FW52_ancient-surface",
@@ -458,7 +446,7 @@
     "P1FW51_sword-album-and-reveal"
    ],
    "created": 1792721398,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P1FW53_teacher-seal",
@@ -479,7 +467,7 @@
     "P1FW52_ancient-surface"
    ],
    "created": 1792709803,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2DG01_dynasty-no-answer-outline-ship",
@@ -500,7 +488,7 @@
     "P3OR48_dynasty-no-answer-outline"
    ],
    "created": 1792719806,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2HN00_herbal-pages-stay-open",
@@ -521,7 +509,7 @@
     "P3OR45_herbal-pages-stay-open-logic"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2PS00_pigeon-salon-readable-board",
@@ -542,7 +530,7 @@
     "P3OR36_pigeon-salon-rule-words"
    ],
    "created": 1792713005,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P1AX02_audit-all-games-and-queue-fixes",
@@ -565,26 +553,6 @@
    "created": 1792721363
   },
   {
-   "id": "P1BD02_board-why-this-exists-line",
-   "request": "Show a short 'why this exists' note on each game card",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1IN08_inspiration-trace-backfill-and-standard"
-   ],
-   "priority": null,
-   "state": "waiting",
-   "waitingOn": [
-    "P1IN08_inspiration-trace-backfill-and-standard"
-   ],
-   "created": 1792720705
-  },
-  {
    "id": "P2KT01_kit-win-hold-and-higher-is-better",
    "request": "Game kit: the solved board stays in view for a moment before the result card, and games where more is better do not say 'fewest possible'",
    "game": "Studio",
@@ -603,7 +571,7 @@
     "P3OR44_kit-win-hold-and-higher-is-better"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2n100_review-one-umbrella-and-rolling-back",
@@ -668,7 +636,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2n88_watched-pot",
@@ -689,7 +657,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2n89_round-table",
@@ -710,7 +678,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2n90_iron-window-garden",
@@ -731,7 +699,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2n91_still-a-heap",
@@ -752,7 +720,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2n92_out-of-the-corner",
@@ -773,7 +741,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2n93_one-umbrella",
@@ -794,7 +762,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2n94_rolling-back",
@@ -815,7 +783,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2n95_gold-star",
@@ -836,7 +804,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2n96_ac-remote",
@@ -857,7 +825,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2n97_review-coin-dumplings-and-watched-pot",
@@ -2090,7 +2058,7 @@
    "state": "done",
    "at": 1792719033,
    "created": 1792719033,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P3OR46_restored-neighbour-rule-and-words",
@@ -2171,6 +2139,22 @@
    "state": "done",
    "at": 1792721362,
    "created": 1792721362
+  },
+  {
+   "id": "P1AX03_cvd-palette-module",
+   "request": "Studio kit: colour-blind check module (accessible play)",
+   "game": "Studio",
+   "route": "OpenRouter",
+   "model": "openrouter/openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "state": "done",
+   "at": 1792723759,
+   "created": 1792723759
   },
   {
    "id": "P1BD00_board-register-new-games-and-cleanup",
@@ -2269,6 +2253,22 @@
    "created": 1792692056
   },
   {
+   "id": "P1IN08_inspiration-trace-backfill-and-standard",
+   "request": "Leave a short note of what inspired each idea, for every game and idea so far and for all new ones",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "state": "done",
+   "at": 1792720705,
+   "created": 1792720705
+  },
+  {
    "id": "P1LK00_starter-looks-design-six",
    "request": "Design six starter looks for new games so a game starts with a real look instead of plain shapes",
    "game": "Studio",
@@ -2331,7 +2331,7 @@
    "state": "done",
    "at": 1792718505,
    "created": 1792718505,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2FM46_letter-lines-first-minute",
@@ -2348,7 +2348,7 @@
    "state": "done",
    "at": 1792722633,
    "created": 1792722633,
-   "estPercentOfWeek": 9.98
+   "estPercentOfWeek": 9.88
   },
   {
    "id": "P2IN00_inspiration-nodes-deep-read",
