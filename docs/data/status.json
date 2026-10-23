@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T21:27:25+00:00",
+ "generated": "2026-10-23T21:32:55+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,35 +20,35 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 41,
+    "queued": 42,
     "running": 2,
     "doneToday": 3,
-    "minutes": 1720,
-    "estimateMinutes": 860
+    "minutes": 1760,
+    "estimateMinutes": 880
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
-    "doneToday": 34,
-    "minutes": 180,
+    "running": 1,
+    "doneToday": 35,
+    "minutes": 120,
     "estimateMinutes": 60
    }
   },
-  "queued": 42,
-  "running": 4,
-  "doneToday": 37,
+  "queued": 43,
+  "running": 3,
+  "doneToday": 38,
   "lanes": {
    "Codex": 2,
-   "Claude": 3
+   "Claude": 2
   },
   "laneCap": {
    "Claude": 4,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1900,
-  "estimatedFinish": "2026-10-24T11:47:25+00:00",
-  "estimateMinutes": 860
+  "minutesRemaining": 1880,
+  "estimatedFinish": "2026-10-24T12:12:55+00:00",
+  "estimateMinutes": 880
  },
  "lanes": [
   {
@@ -61,18 +61,10 @@
   },
   {
    "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P1CS00_cost per shipped change report",
-   "since": null,
-   "activity": null,
-   "commit": null
-  },
-  {
-   "worker": "Claude",
    "game": "dynasty-guess",
    "task": "P1DG03_dynasty guess forgiving gloves and all views",
    "since": "2026-10-23T21:16:57+00:00",
-   "activity": "2026-10-23T21:19:48+00:00",
+   "activity": "2026-10-23T21:32:30+00:00",
    "commit": null
   },
   {
@@ -80,7 +72,7 @@
    "game": "even-water",
    "task": "P2FM56_even water first minute fix",
    "since": "2026-10-23T21:00:48+00:00",
-   "activity": "2026-10-23T21:26:35+00:00",
+   "activity": "2026-10-23T21:32:52+00:00",
    "commit": {
     "at": "2026-10-23T21:23:43+00:00",
     "subject": "fix: keep the board in place after the lesson"
@@ -88,11 +80,11 @@
   }
  ],
  "codexLanes": 2,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 201,
-  "usdEst": 723.6,
+  "runs": 202,
+  "usdEst": 727.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -138,7 +130,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 27
+   "changes": 30
   }
  ],
  "houseRules": 25,
@@ -173,7 +165,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T02:25:43+00:00",
-   "lastChange": "2026-10-22T21:39:23+00:00",
+   "lastChange": "2026-10-23T21:32:38+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -192,7 +184,21 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Name to Carry: the game file no longer crashes when loaded on its own (the name data moves into it)",
-     "since": "2026-10-22T21:39:23+00:00",
+     "since": "2026-10-23T21:32:38+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P3OR53_name to carry data inside game",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Name to Carry: move the name list into the game file so tools can load it alone (cheap lane)",
+     "since": "2026-10-23T21:32:37+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -217,7 +223,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
@@ -4727,7 +4733,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-09-20T15:44:58+00:00",
-   "lastChange": "2026-10-23T21:19:48+00:00",
+   "lastChange": "2026-10-23T21:32:30+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
@@ -4972,7 +4978,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-23T21:26:35+00:00",
+   "lastChange": "2026-10-23T21:32:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -20928,7 +20934,7 @@
    ]
   },
   {
-   "nextTask": "Still Water: put the How to play instructions...",
+   "nextTask": "Still Water: fix level 7 (the pet sits...",
    "costTotalUsd": 105.07,
    "latestChange": {
     "text": "zh-Hant level hints for all 12 levels; main",
@@ -20951,7 +20957,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-15T19:39:22+00:00",
-   "lastChange": "2026-10-23T21:25:51+00:00",
+   "lastChange": "2026-10-23T21:28:29+00:00",
    "cost": {
     "apiUsd": 17.97,
     "codexRuns": 3,
@@ -20966,11 +20972,11 @@
    },
    "tasks": [
     {
-     "title": "P1SW03_how to play matches template",
+     "title": "P1SW02_level7 coin and pet outside canvas",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Still Water: put the How to play instructions in the right place and match the play template.",
-     "since": "2026-10-23T21:25:51+00:00",
+     "plan": "Still Water: fix level 7 (the pet sits outside the canvas, placing a coin does nothing) and the How to play page layout.",
+     "since": "2026-10-23T21:28:29+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -20980,11 +20986,11 @@
      "result": ""
     },
     {
-     "title": "P1SW02_level7 coin and pet outside canvas",
+     "title": "P1SW03_how to play matches template",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Still Water: fix level 7 (the pet sits outside the canvas, placing a coin does nothing) and the How to play page layout.",
-     "since": "2026-10-23T21:25:47+00:00",
+     "plan": "Still Water: put the How to play instructions in the right place and match the play template.",
+     "since": "2026-10-23T21:28:29+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -22425,7 +22431,7 @@
    ]
   },
   {
-   "nextTask": "Think an Elephant: a game designer decides how...",
+   "nextTask": "Think an Elephant: make the hint slower to...",
    "costTotalUsd": 18.11,
    "latestChange": {
     "text": "feat: teach elephant deduction in a playable first minute",
@@ -22448,7 +22454,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-21T04:40:58+00:00",
-   "lastChange": "2026-10-23T21:25:59+00:00",
+   "lastChange": "2026-10-23T21:28:29+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -22463,11 +22469,11 @@
    },
    "tasks": [
     {
-     "title": "P1TE01_designer pass mechanics",
+     "title": "P1TE00_harder hints and varied results",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Think an Elephant: a game designer decides how the forest and room chapters really change the mechanic and difficulty, then refines the look.",
-     "since": "2026-10-23T21:25:59+00:00",
+     "plan": "Think an Elephant: make the hint slower to give the answer, and give each level its own result quote.",
+     "since": "2026-10-23T21:28:29+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -22477,11 +22483,11 @@
      "result": ""
     },
     {
-     "title": "P1TE00_harder hints and varied results",
+     "title": "P1TE01_designer pass mechanics",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Think an Elephant: make the hint slower to give the answer, and give each level its own result quote.",
-     "since": "2026-10-23T21:25:55+00:00",
+     "plan": "Think an Elephant: a game designer decides how the forest and room chapters really change the mechanic and difficulty, then refines the look.",
+     "since": "2026-10-23T21:28:29+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -23047,7 +23053,7 @@
    ]
   },
   {
-   "nextTask": "Time as Material: a short story that says...",
+   "nextTask": "Time as Material: stop the result giving the...",
    "costTotalUsd": 32.64,
    "latestChange": {
     "text": "credits panel with licences in How to play, live",
@@ -23077,7 +23083,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-09-20T20:53:51+00:00",
-   "lastChange": "2026-10-23T21:26:10+00:00",
+   "lastChange": "2026-10-23T21:28:29+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -23092,11 +23098,11 @@
    },
    "tasks": [
     {
-     "title": "P1TM03_story why it matters",
+     "title": "P1TM01_answer not given away",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Time as Material: a short story that says why decoding time is worth doing.",
-     "since": "2026-10-23T21:26:10+00:00",
+     "plan": "Time as Material: stop the result giving the answer so fast; hold longer, less direct feedback.",
+     "since": "2026-10-23T21:28:29+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -23110,7 +23116,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Time as Material: make the animation from the live subject to the photo show the real transformation, not the same crop.",
-     "since": "2026-10-23T21:26:06+00:00",
+     "since": "2026-10-23T21:28:29+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -23120,11 +23126,11 @@
      "result": ""
     },
     {
-     "title": "P1TM01_answer not given away",
+     "title": "P1TM03_story why it matters",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Time as Material: stop the result giving the answer so fast; hold longer, less direct feedback.",
-     "since": "2026-10-23T21:26:02+00:00",
+     "plan": "Time as Material: a short story that says why decoding time is worth doing.",
+     "since": "2026-10-23T21:28:29+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -25721,7 +25727,8 @@
   }
  ],
  "systemNeeds": [
-  "System needs: 10 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)"
+  "System needs: 10 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)",
+  "System needs: Pages build stuck or failed for 1 game(s): dynasty-guess (fix: re-run the Pages build in those repos (Settings, Pages) if an agent cannot)"
  ],
  "releaseReady": [],
  "releaseRegressed": []
