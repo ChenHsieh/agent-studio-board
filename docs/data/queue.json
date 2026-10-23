@@ -1,5 +1,5 @@
 {
- "generated": 1792741702,
+ "generated": 1792742028,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -79,7 +79,7 @@
  },
  "overflow": {
   "codexOut": true,
-  "converted": 3,
+  "converted": 2,
   "convertedRunning": 1,
   "claudeWorkers": 1,
   "claudeWorkerCap": 3,
@@ -89,8 +89,8 @@
  },
  "tasks": [
   {
-   "id": "P3OR48_dynasty-no-answer-outline",
-   "request": "Dynasty: stop the cabinet from outlining the right era for the picked object",
+   "id": "P2DG01_dynasty-no-answer-outline-ship",
+   "request": "Dynasty: ship the no-answer-outline fix after a real-touch check",
    "game": "Dynasty Guess",
    "route": "Claude",
    "model": "sonnet",
@@ -98,7 +98,9 @@
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P3OR48_dynasty-no-answer-outline"
+   ],
    "priority": "P1",
    "why": "Open collection records of National Palace Museum objects; read material, form, glaze and wear on one real object and guess its period.",
    "state": "running",
@@ -452,28 +454,6 @@
    "waitingOn": [],
    "created": 1792724493,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2DG01_dynasty-no-answer-outline-ship",
-   "request": "Dynasty: ship the no-answer-outline fix after a real-touch check",
-   "game": "Dynasty Guess",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P3OR48_dynasty-no-answer-outline"
-   ],
-   "priority": "P1",
-   "why": "Open collection records of National Palace Museum objects; read material, form, glaze and wear on one real object and guess its period.",
-   "state": "waiting",
-   "waitingOn": [
-    "P3OR48_dynasty-no-answer-outline"
-   ],
-   "created": 1792736900,
-   "wasCodex": true
   },
   {
    "id": "P2HN00_herbal-pages-stay-open",
@@ -1185,6 +1165,24 @@
    "created": 1792716650
   },
   {
+   "id": "P3OR48_dynasty-no-answer-outline",
+   "request": "Dynasty: stop the cabinet from outlining the right era for the picked object",
+   "game": "Dynasty Guess",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "Open collection records of National Palace Museum objects; read material, form, glaze and wear on one real object and guess its period.",
+   "state": "done",
+   "at": 1792736900,
+   "created": 1792736900,
+   "wasCodex": true
+  },
+  {
    "id": "P1GC00_grass-crossword-share-text-sound-more-puzzles",
    "request": "Grass Crossword: better share text, sound, and more puzzles",
    "game": "Grass Crossword",
@@ -1439,25 +1437,6 @@
    "state": "done",
    "at": 1792699817,
    "created": 1792699817
-  },
-  {
-   "id": "P2n85_morning-three-visual-build",
-   "request": "morning-three: build the visual round from the design",
-   "game": "Morning Three",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "medium",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2n83_morning-three-visual-design"
-   ],
-   "priority": "P2",
-   "why": "A shared neighbourhood table, a bill left by the last diners, and the old fable of the monkeys given three chestnuts in the morning.",
-   "state": "done",
-   "at": 1792698616,
-   "created": 1792698616
   },
   {
    "id": "P3OR03_time-material-rng-test",
@@ -2161,23 +2140,6 @@
    "created": 1792723759
   },
   {
-   "id": "P1BD00_board-register-new-games-and-cleanup",
-   "request": "Register the new games on the studio board and clean it up",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792698721,
-   "created": 1792698721
-  },
-  {
    "id": "P1BD01_board-queue-requests-and-codex-quota-eta",
    "request": "Board: show the queue of requests with model, effort and details, and an estimate of when the Codex plan runs out",
    "game": "Studio",
@@ -2246,23 +2208,6 @@
    "state": "done",
    "at": 1792707301,
    "created": 1792707301
-  },
-  {
-   "id": "P1FM00_first-minute-standard-and-per-game-tasks",
-   "request": "Write the first-minute standard and queue a first-minute round for every new game",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "first-minute",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792698721,
-   "created": 1792698721
   },
   {
    "id": "P1HX00_harness-architect-idea-to-prototype-pipeline-and-intake",
@@ -2420,23 +2365,6 @@
    "at": 1792729514,
    "created": 1792729514,
    "wasCodex": true
-  },
-  {
-   "id": "P2IN05_remix-all-ideas-new-lenses-ten-to-pipeline",
-   "request": "Remix all earlier ideas with more philosophy lenses and push ten ideas to prototype and first-minute rounds",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "idea",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792698721,
-   "created": 1792698721
   },
   {
    "id": "P2IN06_old-designed-ideas-gate-and-route-to-codex",
