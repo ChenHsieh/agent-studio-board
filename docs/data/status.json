@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T23:28:25+00:00",
+ "generated": "2026-10-23T23:30:50+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,37 +20,45 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 44,
+    "queued": 43,
     "running": 0,
     "doneToday": 4,
-    "minutes": 1760,
-    "estimateMinutes": 1760
+    "minutes": 1720,
+    "estimateMinutes": 1720
    },
    "Claude": {
     "queued": 1,
-    "running": 3,
-    "doneToday": 57,
-    "minutes": 240,
+    "running": 2,
+    "doneToday": 59,
+    "minutes": 180,
     "estimateMinutes": 60
    }
   },
-  "queued": 45,
-  "running": 3,
-  "doneToday": 61,
+  "queued": 44,
+  "running": 2,
+  "doneToday": 63,
   "lanes": {
    "Codex": 1,
-   "Claude": 4
+   "Claude": 3
   },
   "laneCap": {
    "Claude": 4,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2000,
-  "estimatedFinish": "2026-10-25T04:48:25+00:00",
-  "estimateMinutes": 1760
+  "minutesRemaining": 1900,
+  "estimatedFinish": "2026-10-25T04:10:50+00:00",
+  "estimateMinutes": 1720
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "play-template",
+   "task": "P1AX09_controls stay put after a tap",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "Multiple games",
@@ -58,26 +66,10 @@
    "since": null,
    "activity": null,
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "play-template",
-   "task": "P1KT02_expanded placeholder set",
-   "since": null,
-   "activity": null,
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "play-lab",
-   "task": "P3OR66_name hub titles",
-   "since": null,
-   "activity": null,
-   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 3,
+ "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
   "runs": 212,
@@ -23240,7 +23232,7 @@
    ]
   },
   {
-   "nextTask": "Name audit: show one name for time-material everywhere",
+   "nextTask": null,
    "costTotalUsd": 36.24,
    "latestChange": {
     "text": "answer not given away (band + held Check) and scan-to-photo transform",
@@ -23260,8 +23252,8 @@
    "title": "Time Material",
    "line": "Scrub through a frame history and draw with time.",
    "url": "https://chenhsieh.github.io/time-material/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Find the core and make the time-and-material rules",
    "shelfNote": "",
@@ -23274,29 +23266,29 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 7,
+    "claudeRuns": 8,
     "apiRuns": 2,
     "codexTokens": 196600,
     "codexUsdEst": 0.24,
-    "claudeUsdEst": 25.2,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
+    "claudeUsdEst": 28.8,
+    "earlierRounds": 2,
+    "earlierUsdEst": 7.2,
     "totalUsdEst": 36.24
    },
    "tasks": [
     {
      "title": "P3OR62_name time as material",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "Name audit: show one name for time-material everywhere",
      "since": "2026-10-23T22:43:02+00:00",
-     "done": null,
+     "done": "2026-10-23T22:43:02+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 2,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: grep -q 'Time as Material' docs/index.html && grep -q 'Time as Material' docs/app.js && ! grep -q 'Time Material' docs/index.html docs/app.js && --check docs/app.js"
     },
     {
      "title": "P1TM01_answer not given away",
@@ -23398,10 +23390,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 11
+    "done": 12
    },
    "verdict": {
     "date": "2026-10-22",
@@ -23409,7 +23401,7 @@
     "note": "A scan line now sweeps the live scene and your photo together, so you can watch the bar bend row by row; the match meter starts at 95 percent, so the first move feels small"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-23T23:27:40+00:00",
