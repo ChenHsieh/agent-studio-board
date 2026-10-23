@@ -1,15 +1,11 @@
 {
- "generated": "2026-10-23T21:32:55+00:00",
+ "generated": "2026-10-23T21:35:31+00:00",
  "ops": {
-  "count": 1,
-  "notes": [
-   "Two tasks share the number P1DG03."
-  ],
+  "count": 0,
+  "notes": [],
   "info": []
  },
- "about": [
-  "Two tasks share the number P1DG03."
- ],
+ "about": [],
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -28,26 +24,26 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
-    "doneToday": 35,
-    "minutes": 120,
-    "estimateMinutes": 60
+    "running": 6,
+    "doneToday": 36,
+    "minutes": 420,
+    "estimateMinutes": 105
    }
   },
   "queued": 43,
-  "running": 3,
-  "doneToday": 38,
+  "running": 8,
+  "doneToday": 39,
   "lanes": {
    "Codex": 2,
-   "Claude": 2
+   "Claude": 4
   },
   "laneCap": {
    "Claude": 4,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1880,
-  "estimatedFinish": "2026-10-24T12:12:55+00:00",
+  "minutesRemaining": 2180,
+  "estimatedFinish": "2026-10-24T12:15:31+00:00",
   "estimateMinutes": 880
  },
  "lanes": [
@@ -60,31 +56,71 @@
    "commit": null
   },
   {
-   "worker": "Claude",
-   "game": "dynasty-guess",
-   "task": "P1DG03_dynasty guess forgiving gloves and all views",
-   "since": "2026-10-23T21:16:57+00:00",
-   "activity": "2026-10-23T21:32:30+00:00",
-   "commit": null
-  },
-  {
    "worker": "Codex",
    "game": "even-water",
    "task": "P2FM56_even water first minute fix",
    "since": "2026-10-23T21:00:48+00:00",
-   "activity": "2026-10-23T21:32:52+00:00",
+   "activity": "2026-10-23T21:35:22+00:00",
    "commit": {
     "at": "2026-10-23T21:23:43+00:00",
     "subject": "fix: keep the board in place after the lesson"
    }
+  },
+  {
+   "worker": "Claude",
+   "game": "name-to-carry",
+   "task": "P3OR53_name to carry data inside game",
+   "since": "2026-10-23T21:35:24+00:00",
+   "activity": "2026-10-23T21:35:30+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "cymatic-plate",
+   "task": "P3OR54_cymatic plate credits page",
+   "since": "2026-10-23T21:35:24+00:00",
+   "activity": "2026-10-23T21:35:30+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "fold-guess",
+   "task": "P3OR55_fold guess credits page",
+   "since": "2026-10-23T21:35:24+00:00",
+   "activity": "2026-10-23T21:35:31+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "gallery-guess",
+   "task": "P3OR56_gallery guess credits page",
+   "since": "2026-10-23T21:35:24+00:00",
+   "activity": "2026-10-23T21:35:30+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "mirror-hold",
+   "task": "P3OR57_mirror hold credits page",
+   "since": "2026-10-23T21:35:24+00:00",
+   "activity": "2026-10-23T21:35:32+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "thumb-stand",
+   "task": "P3OR58_thumb stand credits page",
+   "since": "2026-10-23T21:35:24+00:00",
+   "activity": "2026-10-23T21:35:32+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 2,
- "claudeWorkers": 1,
+ "claudeWorkers": 6,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 202,
-  "usdEst": 727.2,
+  "runs": 203,
+  "usdEst": 730.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -130,7 +166,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 30
+   "changes": 31
   }
  ],
  "houseRules": 25,
@@ -155,8 +191,8 @@
    "title": "A Name to Carry",
    "line": "Eight scenes, ministry tiers and a share card: carry a name through the forms, Mandarin first.",
    "url": "https://chenhsieh.github.io/name-to-carry/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Eight scenes, ministry tiers and a share card: carry a name through the forms,",
    "shelfNote": "",
@@ -165,7 +201,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T02:25:43+00:00",
-   "lastChange": "2026-10-23T21:32:38+00:00",
+   "lastChange": "2026-10-23T21:35:30+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -180,11 +216,11 @@
    },
    "tasks": [
     {
-     "title": "P2NC00_name to carry data inline",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Name to Carry: the game file no longer crashes when loaded on its own (the name data moves into it)",
-     "since": "2026-10-23T21:32:38+00:00",
+     "title": "P3OR53_name to carry data inside game",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Name to Carry: move the name list into the game file so tools can load it alone (cheap lane)",
+     "since": "2026-10-23T21:35:24+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -194,11 +230,11 @@
      "result": ""
     },
     {
-     "title": "P3OR53_name to carry data inside game",
+     "title": "P2NC00_name to carry data inline",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Name to Carry: move the name list into the game file so tools can load it alone (cheap lane)",
-     "since": "2026-10-23T21:32:37+00:00",
+     "plan": "Name to Carry: the game file no longer crashes when loaded on its own (the name data moves into it)",
+     "since": "2026-10-23T21:35:17+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -223,8 +259,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -3452,8 +3488,8 @@
    "title": "Cymatic Plate",
    "line": "Ring notes on a brass plate covered in sand and watch the.",
    "url": "https://chenhsieh.github.io/cymatic-plate/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
@@ -3462,7 +3498,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-16T01:40:04+00:00",
-   "lastChange": "2026-10-21T17:13:31+00:00",
+   "lastChange": "2026-10-23T21:35:30+00:00",
    "cost": {
     "apiUsd": 3.26,
     "codexRuns": 5,
@@ -3476,6 +3512,20 @@
     "totalUsdEst": 76.24
    },
    "tasks": [
+    {
+     "title": "P3OR54_cymatic plate credits page",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "cymatic-plate: a credits file that names every font, data source and code licence (cheap lane)",
+     "since": "2026-10-23T21:35:24+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SD16_studio standard cymatic plate",
      "state": "done",
@@ -3573,25 +3623,11 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "cymatic ease",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Find where players stall, ease those steps without losing the sand figures, add endless and daily with difficulty.",
-     "since": "2026-10-18T20:13:39+00:00",
-     "done": "2026-10-18T20:13:39+00:00",
-     "reviewed": true,
-     "minutes": 19,
-     "tokens": 197819,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Changed: Listen preview, assist rings, difficulty-based Daily/Endless, solvability checks, save migration tests, and [ease findings]("
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 12
    },
@@ -3601,7 +3637,7 @@
     "note": "Ship after endless mode gets sound, haptics and the logo"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T17:13:31+00:00",
@@ -4711,10 +4747,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 62.5,
+   "costTotalUsd": 66.1,
    "latestChange": {
-    "text": "Collection shelf on Home, Chinese beside English, drawers sized to labels",
-    "at": "2026-10-23T21:16:56+00:00"
+    "text": "Gloves explained and earnable, view strip for every object, free retry",
+    "at": "2026-10-23T21:34:18+00:00"
    },
    "promo": null,
    "why": "Open collection records of National Palace Museum objects; read material, form, glaze and wear on one real object and guess its period.",
@@ -4723,8 +4759,8 @@
    "title": "Dynasty Guess",
    "line": "Place a museum object in its period.",
    "url": "https://chenhsieh.github.io/dynasty-guess/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Fix the missing object, then refine mechanism, story and",
    "shelfNote": "",
@@ -4733,34 +4769,20 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-09-20T15:44:58+00:00",
-   "lastChange": "2026-10-23T21:32:30+00:00",
+   "lastChange": "2026-10-23T21:34:18+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
-    "claudeRuns": 7,
+    "claudeRuns": 8,
     "apiRuns": 2,
     "codexTokens": 1083502,
     "codexUsdEst": 1.3,
-    "claudeUsdEst": 25.2,
+    "claudeUsdEst": 28.8,
     "earlierRounds": 10,
     "earlierUsdEst": 36.0,
-    "totalUsdEst": 62.5
+    "totalUsdEst": 66.1
    },
    "tasks": [
-    {
-     "title": "P1DG03_dynasty guess forgiving gloves and all views",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Dynasty Guess: clear glove rules with warnings, a more forgiving game, and every available view unlocked",
-     "since": "2026-10-23T21:16:57+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1DG02_dynasty guess collection shelf bilingual labels",
      "state": "done",
@@ -4774,6 +4796,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1DG02 DONE, live at https://chenhsieh.github.io/dynasty-guess/ (main , live bytes md5 match for cabinet.js, shelf.js, shelf.css, names.js; collection test passes against the live URL at 390 and 320)."
+    },
+    {
+     "title": "P1DG03_dynasty guess forgiving gloves and all views",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Dynasty Guess: clear glove rules with warnings, a more forgiving game, and every available view unlocked",
+     "since": "2026-10-23T20:26:54+00:00",
+     "done": "2026-10-23T20:26:54+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1DG03 DONE, live at https://chenhsieh.github.io/dynasty-guess/ (main ; live bytes md5 match for gloves.js, cabinet.js, hero-viewer.js, shelf.css; the full gloves UI test passes against the live URL at 390 and 320)."
     },
     {
      "title": "P2DG01_dynasty no answer outline ship",
@@ -4862,9 +4898,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 15
+    "done": 16
    },
    "verdict": {
     "date": "2026-10-22",
@@ -4872,8 +4908,14 @@
     "note": "Big museum pictures, a full-screen viewer and instant flips make the objects a pleasure to look at, but the cabinet outlines the right era for whichever object you pick, so placing is not yet a judgment"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-23T21:34:18+00:00",
+     "ok": true,
+     "note": "Gloves explained and earnable, view strip for every object, free retry",
+     "source": "board note"
+    },
     {
      "at": "2026-10-23T21:16:56+00:00",
      "ok": true,
@@ -4939,12 +4981,6 @@
      "ok": true,
      "note": "feat: restore each night in a museum cabinet",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-21T04:29:05+00:00",
-     "ok": true,
-     "note": "feat: restore each night in a museum cabinet",
-     "source": "main commit"
     }
    ]
   },
@@ -4978,7 +5014,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-23T21:32:52+00:00",
+   "lastChange": "2026-10-23T21:35:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -6530,6 +6566,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-23T21:26:38+00:00",
+     "ok": true,
+     "note": "fix: fit finished scrolls on phones",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-23T09:12:33+00:00",
      "ok": true,
      "note": "one control row (Hint on board), seal ink as dry streaks, English words wrap whole; main",
@@ -6588,12 +6630,6 @@
      "ok": true,
      "note": "feat: give every sword form an ink mask",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-23T00:26:46+00:00",
-     "ok": true,
-     "note": "feat: give every sword form an ink mask",
-     "source": "main commit"
     }
    ]
   },
@@ -6740,8 +6776,8 @@
    "title": "Fold Guess",
    "line": "Date a real protein structure and its method.",
    "url": "https://chenhsieh.github.io/fold-guess/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Ship: link preview, English default, own logo, no hub link",
    "shelfNote": "",
@@ -6750,7 +6786,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-09-20T05:15:49+00:00",
-   "lastChange": "2026-10-23T02:47:24+00:00",
+   "lastChange": "2026-10-23T21:35:31+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -6764,6 +6800,20 @@
     "totalUsdEst": 43.43
    },
    "tasks": [
+    {
+     "title": "P3OR55_fold guess credits page",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "fold-guess: a credits file that names every font, data source and code licence (cheap lane)",
+     "since": "2026-10-23T21:35:24+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2RL10_save test fold guess",
      "state": "done",
@@ -6851,7 +6901,7 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 6
    },
@@ -6861,7 +6911,7 @@
     "note": "Ship: Win98 look approved; add link preview, remove hub link"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-23T02:47:24+00:00",
@@ -6951,8 +7001,8 @@
    "title": "Gallery Guess",
    "line": "Place each museum object by country and year.",
    "url": "https://chenhsieh.github.io/gallery-guess/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Claude",
    "priority": "P3",
    "priorityNote": "Story and mechanism pass; pending a merge decision",
    "shelfNote": "",
@@ -6961,7 +7011,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-09-20T13:46:25+00:00",
-   "lastChange": "2026-10-22T21:03:17+00:00",
+   "lastChange": "2026-10-23T21:35:30+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -6975,6 +7025,20 @@
     "totalUsdEst": 32.61
    },
    "tasks": [
+    {
+     "title": "P3OR56_gallery guess credits page",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "gallery-guess: a credits file that names every font, data source and code licence (cheap lane)",
+     "since": "2026-10-23T21:35:24+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3OR00_gallery guess words test",
      "state": "done",
@@ -7034,7 +7098,7 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 4
    },
@@ -7044,7 +7108,7 @@
     "note": "Ship after ship standard, share cap and ranks"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T21:03:17+00:00",
@@ -12378,8 +12442,8 @@
    "title": "Mirror Hold",
    "line": "Wax a hairstyle, then test it against three pulls.",
    "url": "https://chenhsieh.github.io/mirror-hold/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Huge revamp planned by a cross-functional lead",
    "shelfNote": "",
@@ -12388,7 +12452,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-15T11:43:46+00:00",
-   "lastChange": "2026-10-23T13:49:49+00:00",
+   "lastChange": "2026-10-23T21:35:32+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -12402,6 +12466,20 @@
     "totalUsdEst": 76.75
    },
    "tasks": [
+    {
+     "title": "P3OR57_mirror hold credits page",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "mirror-hold: a credits file that names every font, data source and code licence (cheap lane)",
+     "since": "2026-10-23T21:35:24+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1MH58_mirror hold stranger rereview",
      "state": "done",
@@ -12499,25 +12577,11 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "feat: rise through tokoyama ranks and face the 1953 bout"
-    },
-    {
-     "title": "P1MH54_mirror hold ship review",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Mirror Hold: Opus cold-play ship review of the rework",
-     "since": "2026-10-21T14:48:36+00:00",
-     "done": "2026-10-21T14:48:36+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Verdict: SHIP. Cold play of the live game at 390x844 and 320x568 with one finger (real touch): level 1 is clear in under 20 seconds (goal line, one move chip, the pull drawn on the hair, one drag, tie, nod), all 12..."
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 13
    },
@@ -12527,7 +12591,7 @@
     "note": "Comb each pull the right way before the bout and the hair holds; a wrong stroke springs loose strands you can see, and the real prints make every client a person"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-23T08:44:48+00:00",
@@ -20957,7 +21021,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-15T19:39:22+00:00",
-   "lastChange": "2026-10-23T21:28:29+00:00",
+   "lastChange": "2026-10-23T21:34:42+00:00",
    "cost": {
     "apiUsd": 17.97,
     "codexRuns": 3,
@@ -20976,7 +21040,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Still Water: fix level 7 (the pet sits outside the canvas, placing a coin does nothing) and the How to play page layout.",
-     "since": "2026-10-23T21:28:29+00:00",
+     "since": "2026-10-23T21:34:42+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -20990,7 +21054,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Still Water: put the How to play instructions in the right place and match the play template.",
-     "since": "2026-10-23T21:28:29+00:00",
+     "since": "2026-10-23T21:34:42+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -22454,7 +22518,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-21T04:40:58+00:00",
-   "lastChange": "2026-10-23T21:28:29+00:00",
+   "lastChange": "2026-10-23T21:34:45+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -22473,7 +22537,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Think an Elephant: make the hint slower to give the answer, and give each level its own result quote.",
-     "since": "2026-10-23T21:28:29+00:00",
+     "since": "2026-10-23T21:34:45+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -22487,7 +22551,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Think an Elephant: a game designer decides how the forest and room chapters really change the mechanic and difficulty, then refines the look.",
-     "since": "2026-10-23T21:28:29+00:00",
+     "since": "2026-10-23T21:34:45+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -22827,8 +22891,8 @@
    "title": "Thumb Stand",
    "line": "",
    "url": "https://chenhsieh.github.io/thumb-stand/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Total rework planned by a cross-functional lead",
    "shelfNote": "",
@@ -22837,7 +22901,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-16T00:44:20+00:00",
-   "lastChange": "2026-10-23T21:21:24+00:00",
+   "lastChange": "2026-10-23T21:35:32+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
@@ -22851,6 +22915,20 @@
     "totalUsdEst": 91.82
    },
    "tasks": [
+    {
+     "title": "P3OR58_thumb stand credits page",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "thumb-stand: a credits file that names every font, data source and code licence (cheap lane)",
+     "since": "2026-10-23T21:35:24+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1TS57_result card on small phone",
      "state": "done",
@@ -22948,25 +23026,11 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "P1TS54_thumb stand ship review",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Thumb Stand: Opus cold-play ship review of the rework",
-     "since": "2026-10-21T14:40:53+00:00",
-     "done": "2026-10-21T14:40:53+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Verdict: SHIP (live main , live bytes match, looked at 390x844 and 320x568). All 12 feats played to a win with ONE finger by real CDP touch at both sizes, zero console errors; plumb line, red tick and hand close-up..."
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 15
    },
@@ -22976,7 +23040,7 @@
     "note": "Put his comic panels in an order where every red line lands on his hand, then hold your thumb under him; a fall is a loud joke and a win is earned"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-23T21:21:24+00:00",
@@ -23083,7 +23147,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-09-20T20:53:51+00:00",
-   "lastChange": "2026-10-23T21:28:29+00:00",
+   "lastChange": "2026-10-23T21:34:44+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -23102,7 +23166,21 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Time as Material: stop the result giving the answer so fast; hold longer, less direct feedback.",
-     "since": "2026-10-23T21:28:29+00:00",
+     "since": "2026-10-23T21:34:44+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P3OR59_time material story and scan words",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Time as Material: put the chosen story line and the three scan-stage captions into the game's word table (cheap lane)",
+     "since": "2026-10-23T21:34:16+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -23116,7 +23194,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Time as Material: make the animation from the live subject to the photo show the real transformation, not the same crop.",
-     "since": "2026-10-23T21:28:29+00:00",
+     "since": "2026-10-23T21:34:05+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -23130,7 +23208,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Time as Material: a short story that says why decoding time is worth doing.",
-     "since": "2026-10-23T21:28:29+00:00",
+     "since": "2026-10-23T21:34:05+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -23194,24 +23272,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "P1SD42_studio standard time material",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T21:08:25+00:00",
-     "done": "2026-10-21T21:08:25+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 3,
+    "queued": 4,
     "running": 0,
     "waitingDesign": 0,
     "done": 7
