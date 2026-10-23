@@ -1,14 +1,16 @@
 {
- "generated": 1792790026,
+ "generated": 1792790165,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
-  "lanesBusy": 0,
+  "lanesBusy": 1,
   "ready": 0,
   "waiting": 0,
   "queued": 0,
-  "running": 0,
-  "done24h": 64,
-  "modelsQueued": {},
+  "running": 1,
+  "done24h": 62,
+  "modelsQueued": {
+   "deepseek-v4-flash": 1
+  },
   "spendTodayUsd": 0.02,
   "runsToday": 5,
   "runsTodayUnpriced": 3,
@@ -160,25 +162,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P1AX07_play-template-stranger-rereview",
-   "request": "Play template: fresh stranger review after the fixes",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1AX06_a11y-audit-fit-cover-canvas-checks"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792748770,
-   "created": 1792748770
-  },
-  {
    "id": "P1CX00_codex-on-openrouter-one-lane-test",
    "request": "Test the Codex tool running on an OpenRouter model for one lane and compare cost and quality",
    "game": "Studio",
@@ -196,21 +179,38 @@
    "created": 1792787087
   },
   {
-   "id": "P1QW00_quota-two-windows-and-plan-aware-pacing",
-   "request": "Read both Codex limits (5-hour and weekly) and pace lanes to the plan",
+   "id": "P1PF00_portfolio-system-and-weekly-lessons",
+   "request": "A portfolio system so new ideas keep landing while the top games ship, and weekly lessons that refine the pipeline",
    "game": "Studio",
    "route": "Claude",
-   "model": "sonnet",
+   "model": "opus",
    "effort": "high",
-   "kind": "design",
+   "kind": "build",
    "size": "studio",
    "estMinutes": null,
    "after": [],
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1792789275,
-   "created": 1792789275
+   "at": 1792787089,
+   "created": 1792787089
+  },
+  {
+   "id": "P3OR51_template-card-label-20px",
+   "request": "Template demo: the CARD label on the board gets slightly bigger so the template passes its own text-size check",
+   "game": "Studio",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1792790094,
+   "created": 1792790094
   },
   {
    "id": "P2FM58_tractatus-tree-first-minute-fix",
@@ -399,23 +399,6 @@
    "created": 1792787088
   },
   {
-   "id": "P1PF00_portfolio-system-and-weekly-lessons",
-   "request": "A portfolio system so new ideas keep landing while the top games ship, and weekly lessons that refine the pipeline",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792787089
-  },
-  {
    "id": "P2n86_round4-template-repos",
    "request": "Create the ten new game repositories from the game template so their builds can start",
    "game": "Studio",
@@ -491,6 +474,50 @@
     "P3OR45_herbal-pages-stay-open-logic"
    ],
    "created": 1792715918,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P1AX09_controls-stay-put-after-a-tap",
+   "request": "Template: the Undo, Start over and Hint row stays in the same place after a tap, on small phones and with huge text",
+   "game": "Studio",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR51_template-card-label-20px"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P3OR51_template-card-label-20px"
+   ],
+   "created": 1792790098,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2AX10_audit-report-one-line-per-problem",
+   "request": "Accessibility check: one line per problem across screens, worst first, so a builder sees what to fix",
+   "game": "Studio",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1AX09_controls-stay-put-after-a-tap"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P1AX09_controls-stay-put-after-a-tap"
+   ],
+   "created": 1792790094,
    "estPercentOfWeek": 0.25
   },
   {
@@ -1088,6 +1115,25 @@
    "wasCodex": true
   },
   {
+   "id": "P1AX07_play-template-stranger-rereview",
+   "request": "Play template: fresh stranger review after the fixes",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1AX06_a11y-audit-fit-cover-canvas-checks"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792748770,
+   "created": 1792748770
+  },
+  {
    "id": "P1AX08_play-template-stranger-review",
    "request": "Play template: stranger review of the big-text, colour-safe kit and its accessibility check",
    "game": "Studio",
@@ -1103,6 +1149,23 @@
    "state": "done",
    "at": 1792748780,
    "created": 1792748780
+  },
+  {
+   "id": "P1QW00_quota-two-windows-and-plan-aware-pacing",
+   "request": "Read both Codex limits (5-hour and weekly) and pace lanes to the plan",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "design",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792789275,
+   "created": 1792789275
   },
   {
    "id": "P2FM59_shortest-law-first-minute-ship",
