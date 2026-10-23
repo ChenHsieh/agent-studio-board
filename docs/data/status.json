@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T03:04:35+00:00",
+ "generated": "2026-10-23T03:09:00+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -18,23 +18,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 43,
+    "queued": 44,
     "running": 0,
     "doneToday": 57,
-    "minutes": 1720,
+    "minutes": 1760,
     "estimateMinutes": 0
    },
    "Claude": {
     "queued": 1,
-    "running": 4,
-    "doneToday": 119,
-    "minutes": 300,
-    "estimateMinutes": 75
+    "running": 5,
+    "doneToday": 134,
+    "minutes": 360,
+    "estimateMinutes": 90
    }
   },
-  "queued": 44,
-  "running": 4,
-  "doneToday": 176,
+  "queued": 45,
+  "running": 5,
+  "doneToday": 191,
   "lanes": {
    "Codex": 0,
    "Claude": 4
@@ -44,9 +44,9 @@
    "Codex": 0
   },
   "codexPaused": true,
-  "minutesRemaining": 2020,
-  "estimatedFinish": "2026-10-23T04:19:35+00:00",
-  "estimateMinutes": 75
+  "minutesRemaining": 2120,
+  "estimatedFinish": "2026-10-23T04:39:00+00:00",
+  "estimateMinutes": 90
  },
  "lanes": [
   {
@@ -80,10 +80,26 @@
    "since": "2026-10-23T01:43:47+00:00",
    "activity": "2026-10-23T02:58:59+00:00",
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "gift-tins",
+   "task": "P3RL21_credits licences gift tins",
+   "since": "2026-10-23T03:05:55+00:00",
+   "activity": "2026-10-23T03:09:47+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P3RL25_credits licences literal spirit",
+   "since": null,
+   "activity": null,
+   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 4,
+ "claudeWorkers": 6,
  "apiSpentUsd": 310.9,
  "claudeInSession": {
   "runs": 168,
@@ -1345,20 +1361,34 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-23T01:47:08+00:00",
+   "lastChange": "2026-10-23T03:04:49+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 0,
     "codexTokens": 601307,
     "codexUsdEst": 0.72,
-    "claudeUsdEst": 10.8,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
+    "claudeUsdEst": 14.4,
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
     "totalUsdEst": 29.52
    },
    "tasks": [
+    {
+     "title": "P3RL18_credits licences blackout notice",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Blackout Notice: credits name every source and its licence",
+     "since": "2026-10-23T03:04:49+00:00",
+     "done": "2026-10-23T03:04:49+00:00",
+     "reviewed": false,
+     "minutes": 1,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;pr"
+    },
     {
      "title": "P2BN01_blackout notice read it back",
      "state": "done",
@@ -1448,7 +1478,7 @@
     "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": {
     "date": "2026-10-22",
@@ -1528,10 +1558,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 43.36,
+   "costTotalUsd": 46.96,
    "latestChange": {
-    "text": "P3OR01_bluebook-guess-sky-test: WORKDIR",
-    "at": "2026-10-22T21:03:25+00:00"
+    "text": "P2RL09_save-test-bluebook-guess: WORKDIR",
+    "at": "2026-10-23T02:47:28+00:00"
    },
    "promo": {
     "files": {
@@ -1556,7 +1586,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-09-20T20:57:49+00:00",
-   "lastChange": "2026-10-23T02:45:08+00:00",
+   "lastChange": "2026-10-23T02:47:28+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -1565,9 +1595,9 @@
     "codexTokens": 131726,
     "codexUsdEst": 0.16,
     "claudeUsdEst": 18.0,
-    "earlierRounds": 7,
-    "earlierUsdEst": 25.2,
-    "totalUsdEst": 43.36
+    "earlierRounds": 8,
+    "earlierUsdEst": 28.8,
+    "totalUsdEst": 46.96
    },
    "tasks": [
     {
@@ -1684,6 +1714,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-23T02:47:28+00:00",
+     "ok": true,
+     "note": "P2RL09_save-test-bluebook-guess: WORKDIR",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-22T21:03:25+00:00",
      "ok": true,
      "note": "P3OR01_bluebook-guess-sky-test: WORKDIR",
@@ -1747,12 +1783,6 @@
      "at": "2026-10-20T04:27:31+00:00",
      "ok": true,
      "note": "feat: daily, archive, practice, stats and a case drawer",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-15T14:25:42+00:00",
-     "ok": true,
-     "note": "feat: a link back to Play Lab",
      "source": "main commit"
     }
    ]
@@ -3208,6 +3238,83 @@
   },
   {
    "nextTask": null,
+   "costTotalUsd": 7.2,
+   "latestChange": {
+    "text": "feat: Can Lantern starts from the Play Lab game template",
+    "at": "2026-10-22T20:47:53+00:00"
+   },
+   "promo": null,
+   "why": "A hobby post of an energy-drink can pressed into rings of diamond facets.",
+   "id": "crushed-can",
+   "repo": "crushed-can",
+   "title": "Crushed Can",
+   "line": "",
+   "url": "https://chenhsieh.github.io/crushed-can/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "released": false,
+   "releasedOn": null,
+   "releasedNote": "",
+   "firstSeen": "2026-10-22T20:36:12+00:00",
+   "lastChange": "2026-10-23T03:04:53+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 1,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 1,
+    "earlierUsdEst": 3.6,
+    "totalUsdEst": 7.2
+   },
+   "tasks": [
+    {
+     "title": "P3RL19_credits licences crushed can",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Crushed Can: credits name every source and its licence",
+     "since": "2026-10-23T03:04:53+00:00",
+     "done": "2026-10-23T03:04:53+00:00",
+     "reviewed": false,
+     "minutes": 1,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;process.ex"
+    }
+   ],
+   "taskCounts": {
+    "queued": 0,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 1
+   },
+   "verdict": null,
+   "needsYou": null,
+   "inProgress": false,
+   "history": [
+    {
+     "at": "2026-10-22T20:47:53+00:00",
+     "ok": true,
+     "note": "feat: Can Lantern starts from the Play Lab game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T20:36:12+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
+    }
+   ]
+  },
+  {
+   "nextTask": null,
    "costTotalUsd": 41.14,
    "latestChange": {
     "text": "fix: every level is open while we test",
@@ -4523,6 +4630,83 @@
      "ok": true,
      "note": "R14 review: sketch cards show only the drawing and turn on their axis; undo brings the hand back",
      "source": "board note"
+    }
+   ]
+  },
+  {
+   "nextTask": null,
+   "costTotalUsd": 7.2,
+   "latestChange": {
+    "text": "feat: Drum Rule starts from the Play Lab game template",
+    "at": "2026-10-22T20:27:44+00:00"
+   },
+   "promo": null,
+   "why": "Screenshots about rules drawn around places instead of their purpose.",
+   "id": "drum-rule",
+   "repo": "drum-rule",
+   "title": "Drum Rule",
+   "line": "",
+   "url": "https://chenhsieh.github.io/drum-rule/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "released": false,
+   "releasedOn": null,
+   "releasedNote": "",
+   "firstSeen": "2026-10-22T20:26:22+00:00",
+   "lastChange": "2026-10-23T03:04:56+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 1,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 1,
+    "earlierUsdEst": 3.6,
+    "totalUsdEst": 7.2
+   },
+   "tasks": [
+    {
+     "title": "P3RL20_credits licences drum rule",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Drum Rule: credits name every source and its licence",
+     "since": "2026-10-23T03:04:56+00:00",
+     "done": "2026-10-23T03:04:56+00:00",
+     "reviewed": false,
+     "minutes": 1,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;process.exit(k"
+    }
+   ],
+   "taskCounts": {
+    "queued": 0,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 1
+   },
+   "verdict": null,
+   "needsYou": null,
+   "inProgress": false,
+   "history": [
+    {
+     "at": "2026-10-22T20:27:44+00:00",
+     "ok": true,
+     "note": "feat: Drum Rule starts from the Play Lab game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T20:26:22+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
     }
    ]
   },
@@ -6535,10 +6719,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 39.83,
+   "costTotalUsd": 43.43,
    "latestChange": {
-    "text": "P3OR11_fold-guess-test-retry: WORKDIR",
-    "at": "2026-10-22T23:33:41+00:00"
+    "text": "P2RL10_save-test-fold-guess: WORKDIR",
+    "at": "2026-10-23T02:47:24+00:00"
    },
    "promo": {
     "files": {
@@ -6564,7 +6748,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-09-20T05:15:49+00:00",
-   "lastChange": "2026-10-23T02:45:11+00:00",
+   "lastChange": "2026-10-23T02:47:24+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -6573,9 +6757,9 @@
     "codexTokens": 190591,
     "codexUsdEst": 0.23,
     "claudeUsdEst": 10.8,
-    "earlierRounds": 8,
-    "earlierUsdEst": 28.8,
-    "totalUsdEst": 39.83
+    "earlierRounds": 9,
+    "earlierUsdEst": 32.4,
+    "totalUsdEst": 43.43
    },
    "tasks": [
     {
@@ -6678,6 +6862,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-23T02:47:24+00:00",
+     "ok": true,
+     "note": "P2RL10_save-test-fold-guess: WORKDIR",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-22T23:33:41+00:00",
      "ok": true,
      "note": "P3OR11_fold-guess-test-retry: WORKDIR",
@@ -6741,12 +6931,6 @@
      "at": "2026-09-20T15:44:56+00:00",
      "ok": true,
      "note": "Keep the menu button off the header",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-20T14:31:23+00:00",
-     "ok": true,
-     "note": "Settings menu, mechanism diagram, and the shared kit",
      "source": "main commit"
     }
    ]
@@ -7177,6 +7361,83 @@
      "ok": true,
      "note": "review R07: published Codex symbol-name round (was unpushed), level 1 coach names stripes, zh test fixed",
      "source": "board note"
+    }
+   ]
+  },
+  {
+   "nextTask": null,
+   "costTotalUsd": 7.2,
+   "latestChange": {
+    "text": "feat: Gift Tins starts from the Play Lab game template",
+    "at": "2026-10-22T20:32:54+00:00"
+   },
+   "promo": null,
+   "why": "Screenshots whose warm counterweight was a box of gifts, read as New Year gift exchange within a family.",
+   "id": "gift-tins",
+   "repo": "gift-tins",
+   "title": "Gift Tins",
+   "line": "",
+   "url": "https://chenhsieh.github.io/gift-tins/",
+   "stage": "building",
+   "who": "Claude",
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "released": false,
+   "releasedOn": null,
+   "releasedNote": "",
+   "firstSeen": "2026-10-22T20:31:20+00:00",
+   "lastChange": "2026-10-23T03:09:47+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 0.0,
+    "earlierRounds": 2,
+    "earlierUsdEst": 7.2,
+    "totalUsdEst": 7.2
+   },
+   "tasks": [
+    {
+     "title": "P3RL21_credits licences gift tins",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Gift Tins: credits name every source and its licence",
+     "since": "2026-10-23T03:05:55+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "taskCounts": {
+    "queued": 0,
+    "running": 1,
+    "waitingDesign": 0,
+    "done": 0
+   },
+   "verdict": null,
+   "needsYou": null,
+   "inProgress": true,
+   "history": [
+    {
+     "at": "2026-10-22T20:32:54+00:00",
+     "ok": true,
+     "note": "feat: Gift Tins starts from the Play Lab game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T20:31:20+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
     }
    ]
   },
@@ -7896,6 +8157,83 @@
   },
   {
    "nextTask": null,
+   "costTotalUsd": 7.2,
+   "latestChange": {
+    "text": "feat: Guide Lines starts from the Play Lab game template",
+    "at": "2026-10-22T20:22:18+00:00"
+   },
+   "promo": null,
+   "why": "A sketchbook video of machines drawn in black pen over red dashed construction lines that stay on the page.",
+   "id": "guide-lines",
+   "repo": "guide-lines",
+   "title": "Guide Lines",
+   "line": "",
+   "url": "https://chenhsieh.github.io/guide-lines/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "released": false,
+   "releasedOn": null,
+   "releasedNote": "",
+   "firstSeen": "2026-10-22T20:20:01+00:00",
+   "lastChange": "2026-10-23T03:05:03+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 1,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 1,
+    "earlierUsdEst": 3.6,
+    "totalUsdEst": 7.2
+   },
+   "tasks": [
+    {
+     "title": "P3RL22_credits licences guide lines",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Guide Lines: credits name every source and its licence",
+     "since": "2026-10-23T03:05:03+00:00",
+     "done": "2026-10-23T03:05:03+00:00",
+     "reviewed": false,
+     "minutes": 0,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;process.ex"
+    }
+   ],
+   "taskCounts": {
+    "queued": 0,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 1
+   },
+   "verdict": null,
+   "needsYou": null,
+   "inProgress": false,
+   "history": [
+    {
+     "at": "2026-10-22T20:22:18+00:00",
+     "ok": true,
+     "note": "feat: Guide Lines starts from the Play Lab game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T20:20:01+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
+    }
+   ]
+  },
+  {
+   "nextTask": null,
    "costTotalUsd": 29.24,
    "latestChange": {
     "text": "feat: teach poster tags in a three-step first minute",
@@ -8333,17 +8671,17 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-23T02:58:15+00:00",
+   "lastChange": "2026-10-23T03:05:06+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 0,
     "codexTokens": 209511,
     "codexUsdEst": 0.25,
-    "claudeUsdEst": 7.2,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
+    "claudeUsdEst": 10.8,
+    "earlierRounds": 2,
+    "earlierUsdEst": 7.2,
     "totalUsdEst": 18.25
    },
    "tasks": [
@@ -8374,6 +8712,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P3RL23_credits licences herbal of nowhere",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Herbal of Nowhere: credits name every source and its licence",
+     "since": "2026-10-23T03:05:06+00:00",
+     "done": "2026-10-23T03:05:06+00:00",
+     "reviewed": false,
+     "minutes": 0,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credit"
     },
     {
      "title": "P3OR24_herbal of nowhere engine test",
@@ -8422,7 +8774,7 @@
     "queued": 2,
     "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": {
     "date": "2026-10-22",
@@ -8667,17 +9019,17 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T04:19:06+00:00",
-   "lastChange": "2026-10-22T23:45:41+00:00",
+   "lastChange": "2026-10-23T03:05:10+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 8,
-    "earlierUsdEst": 28.8,
+    "claudeUsdEst": 7.2,
+    "earlierRounds": 7,
+    "earlierUsdEst": 25.2,
     "totalUsdEst": 32.4
    },
    "tasks": [
@@ -8694,6 +9046,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P3RL24_credits licences hit or kit",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Hit or Kit: credits name every source and its licence",
+     "since": "2026-10-23T03:05:10+00:00",
+     "done": "2026-10-23T03:05:10+00:00",
+     "reviewed": false,
+     "minutes": 2,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;process.exit"
     },
     {
      "title": "P2SV53_hit or kit weeks daily",
@@ -8714,7 +9080,7 @@
     "queued": 1,
     "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": null,
    "needsYou": null,
@@ -10517,6 +10883,83 @@
     },
     {
      "at": "2026-10-16T01:30:42+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
+    }
+   ]
+  },
+  {
+   "nextTask": null,
+   "costTotalUsd": 7.2,
+   "latestChange": {
+    "text": "feat: Literal Spirit starts from the Play Lab game template",
+    "at": "2026-10-22T20:40:38+00:00"
+   },
+   "promo": null,
+   "why": "A pool of folk talisman charts read as instructions to a literal-minded agent.",
+   "id": "literal-spirit",
+   "repo": "literal-spirit",
+   "title": "Literal Spirit",
+   "line": "",
+   "url": "https://chenhsieh.github.io/literal-spirit/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "released": false,
+   "releasedOn": null,
+   "releasedNote": "",
+   "firstSeen": "2026-10-22T20:39:12+00:00",
+   "lastChange": "2026-10-23T03:05:13+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 1,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 1,
+    "earlierUsdEst": 3.6,
+    "totalUsdEst": 7.2
+   },
+   "tasks": [
+    {
+     "title": "P3RL25_credits licences literal spirit",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Literal Spirit: credits name every source and its licence",
+     "since": "2026-10-23T03:05:13+00:00",
+     "done": "2026-10-23T03:05:13+00:00",
+     "reviewed": false,
+     "minutes": 3,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;proc"
+    }
+   ],
+   "taskCounts": {
+    "queued": 0,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 1
+   },
+   "verdict": null,
+   "needsYou": null,
+   "inProgress": false,
+   "history": [
+    {
+     "at": "2026-10-22T20:40:38+00:00",
+     "ok": true,
+     "note": "feat: Literal Spirit starts from the Play Lab game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T20:39:12+00:00",
      "ok": true,
      "note": "Initial commit",
      "source": "main commit"
@@ -12875,6 +13318,83 @@
   },
   {
    "nextTask": null,
+   "costTotalUsd": 7.2,
+   "latestChange": {
+    "text": "feat: No Favorites starts from the Play Lab game template",
+    "at": "2026-10-22T20:25:06+00:00"
+   },
+   "promo": null,
+   "why": "An engraved card of seven spiral worm rosettes knotted together in the centre.",
+   "id": "no-favorites",
+   "repo": "no-favorites",
+   "title": "No Favorites",
+   "line": "",
+   "url": "https://chenhsieh.github.io/no-favorites/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "released": false,
+   "releasedOn": null,
+   "releasedNote": "",
+   "firstSeen": "2026-10-22T20:23:14+00:00",
+   "lastChange": "2026-10-23T03:05:16+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 1,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 1,
+    "earlierUsdEst": 3.6,
+    "totalUsdEst": 7.2
+   },
+   "tasks": [
+    {
+     "title": "P3RL26_credits licences no favorites",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "No Favorites: credits name every source and its licence",
+     "since": "2026-10-23T03:05:16+00:00",
+     "done": "2026-10-23T03:05:16+00:00",
+     "reviewed": false,
+     "minutes": 0,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;process."
+    }
+   ],
+   "taskCounts": {
+    "queued": 0,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 1
+   },
+   "verdict": null,
+   "needsYou": null,
+   "inProgress": false,
+   "history": [
+    {
+     "at": "2026-10-22T20:25:06+00:00",
+     "ok": true,
+     "note": "feat: No Favorites starts from the Play Lab game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T20:23:14+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
+    }
+   ]
+  },
+  {
+   "nextTask": null,
    "costTotalUsd": 36.66,
    "latestChange": {
     "text": "feat: guide the choir through its first minute",
@@ -13317,17 +13837,17 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T19:52:47+00:00",
-   "lastChange": "2026-10-23T00:37:08+00:00",
+   "lastChange": "2026-10-23T03:05:20+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 0,
     "codexTokens": 197900,
     "codexUsdEst": 0.24,
-    "claudeUsdEst": 10.8,
-    "earlierRounds": 2,
-    "earlierUsdEst": 7.2,
+    "claudeUsdEst": 14.4,
+    "earlierRounds": 1,
+    "earlierUsdEst": 3.6,
     "totalUsdEst": 18.24
    },
    "tasks": [
@@ -13344,6 +13864,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P3RL27_credits licences not yet",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Not Yet: credits name every source and its licence",
+     "since": "2026-10-23T03:05:20+00:00",
+     "done": "2026-10-23T03:05:20+00:00",
+     "reviewed": false,
+     "minutes": 1,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;process.exit(k.len"
     },
     {
      "title": "P3OR42_not yet level three card",
@@ -13406,7 +13940,7 @@
     "queued": 1,
     "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": {
     "date": "2026-10-22",
@@ -13599,25 +14133,40 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T21:34:40+00:00",
-   "lastChange": "2026-10-22T21:38:57+00:00",
+   "lastChange": "2026-10-23T03:05:23+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 2,
+    "earlierUsdEst": 7.2,
     "totalUsdEst": 10.8
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "P3RL28_credits licences one more chair",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "One More Chair: credits name every source and its licence",
+     "since": "2026-10-23T03:05:23+00:00",
+     "done": "2026-10-23T03:05:23+00:00",
+     "reviewed": false,
+     "minutes": 1,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;proc"
+    }
+   ],
    "taskCounts": {
     "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
@@ -14475,7 +15024,7 @@
    ]
   },
   {
-   "nextTask": "Pigeon Salon: label the wall row, readable seed...",
+   "nextTask": "Pigeon Salon: credits name every source and its...",
    "costTotalUsd": 25.36,
    "latestChange": {
     "text": "feat: teach the pigeon before level one",
@@ -14504,7 +15053,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T19:12:54+00:00",
-   "lastChange": "2026-10-23T02:46:39+00:00",
+   "lastChange": "2026-10-23T03:05:26+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -14524,6 +15073,20 @@
      "worker": "Claude",
      "plan": "Pigeon Salon: rule lines that name the move",
      "since": "2026-10-23T01:32:35+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P3RL29_credits licences pigeon salon",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Pigeon Salon: credits name every source and its licence",
+     "since": "2026-10-23T03:05:26+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -14590,7 +15153,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 2,
     "running": 1,
     "waitingDesign": 0,
     "done": 3
@@ -14971,17 +15534,17 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T19:32:07+00:00",
-   "lastChange": "2026-10-22T23:57:11+00:00",
+   "lastChange": "2026-10-23T03:05:30+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 0,
     "codexTokens": 201591,
     "codexUsdEst": 0.24,
-    "claudeUsdEst": 10.8,
-    "earlierRounds": 2,
-    "earlierUsdEst": 7.2,
+    "claudeUsdEst": 14.4,
+    "earlierRounds": 1,
+    "earlierUsdEst": 3.6,
     "totalUsdEst": 18.24
    },
    "tasks": [
@@ -14998,6 +15561,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P3RL30_credits licences radish omelette",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Radish Omelette: credits name every source and its licence",
+     "since": "2026-10-23T03:05:30+00:00",
+     "done": "2026-10-23T03:05:30+00:00",
+     "reviewed": false,
+     "minutes": 0,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;pr"
     },
     {
      "title": "P3OR41_radish omelette honest lines",
@@ -15060,7 +15637,7 @@
     "queued": 1,
     "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": {
     "date": "2026-10-22",
@@ -16205,17 +16782,17 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T18:49:51+00:00",
-   "lastChange": "2026-10-23T00:38:38+00:00",
+   "lastChange": "2026-10-23T03:05:33+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 0,
     "codexTokens": 86565,
     "codexUsdEst": 0.1,
-    "claudeUsdEst": 10.8,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
+    "claudeUsdEst": 14.4,
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
     "totalUsdEst": 25.3
    },
    "tasks": [
@@ -16232,6 +16809,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P3RL31_credits licences restored",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Restored: credits name every source and its licence",
+     "since": "2026-10-23T03:05:33+00:00",
+     "done": "2026-10-23T03:05:33+00:00",
+     "reviewed": false,
+     "minutes": 1,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;process.exit(k.l"
     },
     {
      "title": "P3OR46_restored neighbour rule and words",
@@ -16294,7 +16885,7 @@
     "queued": 1,
     "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": {
     "date": "2026-10-22",
@@ -19728,6 +20319,83 @@
   },
   {
    "nextTask": null,
+   "costTotalUsd": 7.2,
+   "latestChange": {
+    "text": "feat: Sounds Like starts from the Play Lab game template",
+    "at": "2026-10-22T20:43:52+00:00"
+   },
+   "promo": null,
+   "why": "A post of egg dishes whose names sound like weapons, a Chinese pun habit; climb from one word to another by swapping one character at a time for a sound-alike.",
+   "id": "sounds-like",
+   "repo": "sounds-like",
+   "title": "Sounds Like",
+   "line": "",
+   "url": "https://chenhsieh.github.io/sounds-like/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "released": false,
+   "releasedOn": null,
+   "releasedNote": "",
+   "firstSeen": "2026-10-22T20:42:14+00:00",
+   "lastChange": "2026-10-23T03:05:37+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 1,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 1,
+    "earlierUsdEst": 3.6,
+    "totalUsdEst": 7.2
+   },
+   "tasks": [
+    {
+     "title": "P3RL32_credits licences sounds like",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Sounds Like: credits name every source and its licence",
+     "since": "2026-10-23T03:05:37+00:00",
+     "done": "2026-10-23T03:05:37+00:00",
+     "reviewed": false,
+     "minutes": 1,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;process.ex"
+    }
+   ],
+   "taskCounts": {
+    "queued": 0,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 1
+   },
+   "verdict": null,
+   "needsYou": null,
+   "inProgress": false,
+   "history": [
+    {
+     "at": "2026-10-22T20:43:52+00:00",
+     "ok": true,
+     "note": "feat: Sounds Like starts from the Play Lab game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T20:42:14+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
+    }
+   ]
+  },
+  {
+   "nextTask": null,
    "costTotalUsd": 39.8,
    "latestChange": {
     "text": "fix: Play opens the rope lesson without blocking real levels",
@@ -20764,7 +21432,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 57.28,
+   "costTotalUsd": 42.88,
    "latestChange": {
     "text": "feat: curator identifies each field sketch and files it in the notebook",
     "at": "2026-10-21T05:56:46+00:00"
@@ -20785,7 +21453,7 @@
    "released": false,
    "releasedOn": null,
    "releasedNote": "",
-   "firstSeen": "2026-10-15T18:08:35+00:00",
+   "firstSeen": "2026-10-15T18:59:21+00:00",
    "lastChange": "2026-10-21T05:56:46+00:00",
    "cost": {
     "apiUsd": 6.63,
@@ -20795,9 +21463,9 @@
     "codexTokens": 209205,
     "codexUsdEst": 0.25,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
-    "totalUsdEst": 57.28
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
+    "totalUsdEst": 42.88
    },
    "tasks": [
     {
@@ -20846,12 +21514,6 @@
      "source": "board note"
     },
     {
-     "at": "2026-10-21T05:55:44+00:00",
-     "ok": true,
-     "note": "feat: curator identifies each field sketch and files it in the notebook",
-     "source": "main commit"
-    },
-    {
      "at": "2026-10-20T02:38:58+00:00",
      "ok": true,
      "note": "P3 core verdict + brief",
@@ -20862,18 +21524,6 @@
      "ok": true,
      "note": "LIVE https://chenhsieh.github.io/tell/ (improve round )",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-16T08:14:46+00:00",
-     "ok": true,
-     "note": "fix: no focus ring left on the board or How to play after the first-visit card",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-16T08:07:07+00:00",
-     "ok": true,
-     "note": "fix: Tell goes live;",
-     "source": "main commit"
     },
     {
      "at": "2026-10-15T23:59:38+00:00",
@@ -20903,6 +21553,24 @@
      "at": "2026-10-15T19:38:59+00:00",
      "ok": true,
      "note": "NOT_PUBLISHED (auto): checks not green, see",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-15T19:27:08+00:00",
+     "ok": true,
+     "note": "playable gate PASS round 1",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-15T18:59:52+00:00",
+     "ok": true,
+     "note": "build start in",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-15T18:59:21+00:00",
+     "ok": true,
+     "note": "START job V1=",
      "source": "board note"
     }
    ]
@@ -21914,6 +22582,83 @@
     },
     {
      "at": "2026-10-20T17:19:46+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
+    }
+   ]
+  },
+  {
+   "nextTask": null,
+   "costTotalUsd": 7.2,
+   "latestChange": {
+    "text": "feat: Three Shadows starts from the Play Lab game template",
+    "at": "2026-10-22T20:38:17+00:00"
+   },
+   "promo": null,
+   "why": "A pool of shadow-sculpture posts where one object casts different shapes from different sides, and glyph art.",
+   "id": "three-shadows",
+   "repo": "three-shadows",
+   "title": "Three Shadows",
+   "line": "",
+   "url": "https://chenhsieh.github.io/three-shadows/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "released": false,
+   "releasedOn": null,
+   "releasedNote": "",
+   "firstSeen": "2026-10-22T20:36:26+00:00",
+   "lastChange": "2026-10-23T03:05:40+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 1,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 1,
+    "earlierUsdEst": 3.6,
+    "totalUsdEst": 7.2
+   },
+   "tasks": [
+    {
+     "title": "P3RL33_credits licences three shadows",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Three Shadows: credits name every source and its licence",
+     "since": "2026-10-23T03:05:40+00:00",
+     "done": "2026-10-23T03:05:40+00:00",
+     "reviewed": false,
+     "minutes": 1,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;proces"
+    }
+   ],
+   "taskCounts": {
+    "queued": 0,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 1
+   },
+   "verdict": null,
+   "needsYou": null,
+   "inProgress": false,
+   "history": [
+    {
+     "at": "2026-10-22T20:38:17+00:00",
+     "ok": true,
+     "note": "feat: Three Shadows starts from the Play Lab game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T20:36:26+00:00",
      "ok": true,
      "note": "Initial commit",
      "source": "main commit"
@@ -24232,6 +24977,83 @@
      "at": "2026-10-18T12:57:30+00:00",
      "ok": true,
      "note": "feat: slides are little pictures; shape hints only on levels 1-4",
+     "source": "main commit"
+    }
+   ]
+  },
+  {
+   "nextTask": null,
+   "costTotalUsd": 7.2,
+   "latestChange": {
+    "text": "feat: Whiteboard Song starts from the Play Lab game template",
+    "at": "2026-10-22T20:35:11+00:00"
+   },
+   "promo": null,
+   "why": "A classroom whiteboard drawn as a music player, with many hands adding songs.",
+   "id": "whiteboard-song",
+   "repo": "whiteboard-song",
+   "title": "Whiteboard Song",
+   "line": "",
+   "url": "https://chenhsieh.github.io/whiteboard-song/",
+   "stage": "live",
+   "who": null,
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "released": false,
+   "releasedOn": null,
+   "releasedNote": "",
+   "firstSeen": "2026-10-22T20:33:50+00:00",
+   "lastChange": "2026-10-23T03:05:43+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 1,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 1,
+    "earlierUsdEst": 3.6,
+    "totalUsdEst": 7.2
+   },
+   "tasks": [
+    {
+     "title": "P3RL34_credits licences whiteboard song",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Whiteboard Song: credits name every source and its licence",
+     "since": "2026-10-23T03:05:43+00:00",
+     "done": "2026-10-23T03:05:43+00:00",
+     "reviewed": false,
+     "minutes": 0,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;pr"
+    }
+   ],
+   "taskCounts": {
+    "queued": 0,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 1
+   },
+   "verdict": null,
+   "needsYou": null,
+   "inProgress": false,
+   "history": [
+    {
+     "at": "2026-10-22T20:35:11+00:00",
+     "ok": true,
+     "note": "feat: Whiteboard Song starts from the Play Lab game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T20:33:50+00:00",
+     "ok": true,
+     "note": "Initial commit",
      "source": "main commit"
     }
    ]
