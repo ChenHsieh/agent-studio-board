@@ -1,14 +1,16 @@
 {
- "generated": 1792794818,
+ "generated": 1792794964,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
   "ready": 0,
-  "waiting": 0,
-  "queued": 0,
+  "waiting": 2,
+  "queued": 2,
   "running": 0,
   "done24h": 62,
-  "modelsQueued": {},
+  "modelsQueued": {
+   "deepseek-v4-flash": 2
+  },
   "spendTodayUsd": 0.02,
   "runsToday": 13,
   "runsTodayUnpriced": 11,
@@ -451,6 +453,23 @@
    "created": 1792791285
   },
   {
+   "id": "P1TE02_room-warm-cold-rule",
+   "request": "Think an Elephant: the room chapter gets its own rule, warm or cold instead of words",
+   "game": "Think Elephant",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792794950
+  },
+  {
    "id": "P2PF01_board-portfolio-view",
    "request": "A Portfolio view on the studio board: how many ideas and games sit in each lane against its cap, and what gets built next",
    "game": "Studio",
@@ -525,6 +544,48 @@
    ],
    "created": 1792715918,
    "estPercentOfWeek": 451.92
+  },
+  {
+   "id": "P1TE03_room-strings",
+   "request": "Think an Elephant: words for the warm/cold room in both languages",
+   "game": "Think Elephant",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1TE02_room-warm-cold-rule"
+   ],
+   "priority": null,
+   "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1TE02_room-warm-cold-rule"
+   ],
+   "created": 1792794954
+  },
+  {
+   "id": "P1TE04_room-tests",
+   "request": "Think an Elephant: tests for the warm/cold clue and room pars",
+   "game": "Think Elephant",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1TE02_room-warm-cold-rule"
+   ],
+   "priority": null,
+   "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1TE02_room-warm-cold-rule"
+   ],
+   "created": 1792794958
   },
   {
    "id": "P2AX10_audit-report-one-line-per-problem",
