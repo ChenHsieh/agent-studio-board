@@ -1,5 +1,5 @@
 {
- "generated": 1792716318,
+ "generated": 1792716574,
  "defaultPercentPerCodexTask": 0.25,
  "tasks": [
   {
@@ -73,6 +73,23 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P2FM51_one-thread-first-minute-fix",
+   "request": "Finish the first-minute round for one-thread: the lesson starts only from the Play button, so jumping to a level never lands under it",
+   "game": "One Thread",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "first-minute",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "running",
+   "at": 1792716546,
+   "created": 1792716546,
+   "estPercentOfWeek": 0.25
+  },
+  {
    "id": "P3OR26_pigeon-salon-engine-test",
    "request": "Pigeon Salon: a unit test for the game rules (levels, moves, solver, daily generator) so later changes cannot break them quietly",
    "game": "Pigeon Salon",
@@ -121,41 +138,9 @@
    "created": 1792712578
   },
   {
-   "id": "P3OR35_the-folder-link-preview",
-   "request": "The Folder: a proper link preview (picture and one-line description) when the game is shared",
-   "game": "The Folder",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "running",
-   "at": 1792712593,
-   "created": 1792712593
-  },
-  {
    "id": "P3OR43_time-material-ruler-legible",
    "request": "Time Material: the time ruler numbers readable on small phones (OpenRouter lane)",
    "game": "Time Material",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "running",
-   "at": 1792715879,
-   "created": 1792715879
-  },
-  {
-   "id": "P3OR46_restored-neighbour-rule-and-words",
-   "request": "Restored: blurry neighbours count by their shape, with the new rule words (OpenRouter lane)",
-   "game": "Restored",
    "route": "OpenRouter",
    "model": "deepseek-v4-flash",
    "effort": "default",
@@ -220,23 +205,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P2FM48_no-unison-first-minute",
-   "request": "No Unison: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-   "game": "No Unison",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "state": "running",
-   "at": 1792713465,
-   "created": 1792713465,
-   "estPercentOfWeek": 0.25
-  },
-  {
    "id": "P2FM49_silent-disco-first-minute",
    "request": "Silent Disco: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
    "game": "Silent Disco",
@@ -271,22 +239,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P3OR44_kit-win-hold-and-higher-is-better",
-   "request": "Game kit: hold the finished board in view before the result card, and say 'best possible' for higher-is-better games (OpenRouter lane, Codex then gates and ships)",
-   "game": "Studio",
-   "route": "OpenRouter",
-   "model": "openrouter/openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "state": "running",
-   "at": 1792715908,
-   "created": 1792715908
-  },
-  {
    "id": "P1MH56_print-hero-and-card-sizes",
    "request": "Mirror Hold: show the client's print as a wide sharp strip with a readable card below, and the whole print on tap",
    "game": "Mirror Hold",
@@ -318,23 +270,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713372
-  },
-  {
-   "id": "P2FM51_one-thread-first-minute-fix",
-   "request": "Finish the first-minute round for one-thread: the lesson starts only from the Play button, so jumping to a level never lands under it",
-   "game": "One Thread",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792713003,
-   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2FM52_same-badge-first-minute-fix",
@@ -492,6 +427,25 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P2RS00_restored-blurry-neighbours-count",
+   "request": "Restored: blurry neighbours count by their shape, so the obvious order stops always winning",
+   "game": "Restored",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR46_restored-neighbour-rule-and-words"
+   ],
+   "priority": "P2",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792715918,
+   "estPercentOfWeek": 0.25
+  },
+  {
    "id": "P3NY00_not-yet-a-real-choice",
    "request": "Not Yet: give the player a real choice (the cone moves one lane a beat, the next three grabs are shown), or shelve it",
    "game": "Not Yet",
@@ -593,6 +547,23 @@
    "created": 1792700662
   },
   {
+   "id": "P3OR44_kit-win-hold-and-higher-is-better",
+   "request": "Game kit: hold the finished board in view before the result card, and say 'best possible' for higher-is-better games (OpenRouter lane, Codex then gates and ships)",
+   "game": "Studio",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792716325,
+   "estPercentOfWeek": 0.25
+  },
+  {
    "id": "P1FW52_ancient-surface",
    "request": "Flying White: an ancient look: aged paper, mounted album leaves and stone rubbings, a vertical title slip, a brush-script heading face",
    "game": "Flying White",
@@ -674,27 +645,6 @@
     "P3OR36_pigeon-salon-rule-words"
    ],
    "created": 1792713005,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2RS00_restored-blurry-neighbours-count",
-   "request": "Restored: blurry neighbours count by their shape, so the obvious order stops always winning",
-   "game": "Restored",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P3OR46_restored-neighbour-rule-and-words"
-   ],
-   "priority": "P2",
-   "state": "waiting",
-   "waitingOn": [
-    "P3OR46_restored-neighbour-rule-and-words"
-   ],
-   "created": 1792715918,
    "estPercentOfWeek": 0.25
   },
   {
@@ -1885,6 +1835,22 @@
    "created": 1792712584
   },
   {
+   "id": "P3OR35_the-folder-link-preview",
+   "request": "The Folder: a proper link preview (picture and one-line description) when the game is shared",
+   "game": "The Folder",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "done",
+   "at": 1792712593,
+   "created": 1792712593
+  },
+  {
    "id": "P3OR37_one-thread-share-and-cover",
    "request": "One Thread: share line says 1 stitch, the inactive cover is clearly dimmed",
    "game": "One Thread",
@@ -1947,6 +1913,22 @@
    "state": "done",
    "at": 1792715828,
    "created": 1792715828
+  },
+  {
+   "id": "P3OR46_restored-neighbour-rule-and-words",
+   "request": "Restored: blurry neighbours count by their shape, with the new rule words (OpenRouter lane)",
+   "game": "Restored",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "done",
+   "at": 1792715879,
+   "created": 1792715879
   },
   {
    "id": "P3OR00_gallery-guess-words-test",
