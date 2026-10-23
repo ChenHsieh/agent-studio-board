@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T12:49:48+00:00",
+ "generated": "2026-10-23T12:55:01+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -18,23 +18,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 38,
+    "queued": 37,
     "running": 0,
     "doneToday": 0,
-    "minutes": 1520,
+    "minutes": 1480,
     "estimateMinutes": 0
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 14,
+    "doneToday": 15,
     "minutes": 180,
     "estimateMinutes": 60
    }
   },
-  "queued": 39,
+  "queued": 38,
   "running": 2,
-  "doneToday": 14,
+  "doneToday": 15,
   "lanes": {
    "Codex": 0,
    "Claude": 3
@@ -44,11 +44,19 @@
    "Codex": 0
   },
   "codexPaused": true,
-  "minutesRemaining": 1700,
-  "estimatedFinish": "2026-10-23T13:49:48+00:00",
+  "minutesRemaining": 1660,
+  "estimatedFinish": "2026-10-23T13:55:01+00:00",
   "estimateMinutes": 60
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "play-template",
+   "task": "P1AX04_kit howto card clear of top bar",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "colony-count",
@@ -56,22 +64,14 @@
    "since": "2026-10-23T12:43:33+00:00",
    "activity": "2026-10-23T12:45:15+00:00",
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "anechoic-fugue",
-   "task": "P2SW01_still water zh hant level hints",
-   "since": "2026-10-23T12:31:54+00:00",
-   "activity": "2026-10-23T12:42:34+00:00",
-   "commit": null
   }
  ],
  "codexLanes": 0,
  "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 184,
-  "usdEst": 662.4,
+  "runs": 185,
+  "usdEst": 666.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -117,7 +117,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 11
+   "changes": 12
   }
  ],
  "houseRules": 25,
@@ -14049,7 +14049,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 10.8,
+   "costTotalUsd": 3.6,
    "latestChange": {
     "text": "P2IN07 institution round: 3 core briefs (designs/institution_npc), One More Chair PASS...",
     "at": "2026-10-22T21:38:57+00:00"
@@ -14070,7 +14070,7 @@
    "released": false,
    "releasedOn": null,
    "releasedNote": "",
-   "firstSeen": "2026-10-22T21:34:40+00:00",
+   "firstSeen": "2026-10-22T21:38:57+00:00",
    "lastChange": "2026-10-23T03:05:23+00:00",
    "cost": {
     "apiUsd": 0.0,
@@ -14080,9 +14080,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 2,
-    "earlierUsdEst": 7.2,
-    "totalUsdEst": 10.8
+    "earlierRounds": 0,
+    "earlierUsdEst": 0.0,
+    "totalUsdEst": 3.6
    },
    "tasks": [
     {
@@ -14115,18 +14115,6 @@
      "ok": true,
      "note": "P2IN07 institution round: 3 core briefs (designs/institution_npc), One More Chair PASS and picked, repo made, build P2n109 queued on Codex",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-22T21:36:55+00:00",
-     "ok": true,
-     "note": "feat: One More Chair starts from the Play Lab game template",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T21:34:40+00:00",
-     "ok": true,
-     "note": "Initial commit",
-     "source": "main commit"
     }
    ]
   },
@@ -20781,10 +20769,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 101.47,
+   "costTotalUsd": 105.07,
    "latestChange": {
-    "text": "feat: Still Water's page reads in one row and the link preview is the ink-wash pond",
-    "at": "2026-10-23T08:53:15+00:00"
+    "text": "zh-Hant level hints for all 12 levels; main",
+    "at": "2026-10-23T12:54:57+00:00"
    },
    "promo": null,
    "why": "A photo of an anechoic chamber and a Fourier-epicycle drawing, later joined by a picture of quasicrystal surface waves.",
@@ -20793,8 +20781,8 @@
    "title": "Still Water",
    "line": "A slow koi pond: ripples to follow, ducklings that fall asleep, lily rings that make every pond a choice.",
    "url": "https://chenhsieh.github.io/anechoic-fugue/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Decide the physical model and its on-screen readout, choose",
    "shelfNote": "",
@@ -20803,33 +20791,33 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-15T19:39:22+00:00",
-   "lastChange": "2026-10-23T12:42:34+00:00",
+   "lastChange": "2026-10-23T12:54:57+00:00",
    "cost": {
     "apiUsd": 17.97,
     "codexRuns": 3,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 3,
     "codexTokens": 585052,
     "codexUsdEst": 0.7,
-    "claudeUsdEst": 14.4,
+    "claudeUsdEst": 18.0,
     "earlierRounds": 19,
     "earlierUsdEst": 68.4,
-    "totalUsdEst": 101.47
+    "totalUsdEst": 105.07
    },
    "tasks": [
     {
      "title": "P2SW01_still water zh hant level hints",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Still Water: put the level hints in Traditional Chinese",
-     "since": "2026-10-23T12:31:54+00:00",
-     "done": null,
+     "since": "2026-10-23T08:56:05+00:00",
+     "done": "2026-10-23T08:56:05+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE P2SW01 Still Water: Traditional Chinese level hints. Main (was ; tag pre-zh-hant-hints undoes it). Live bytes match (shell.js, rules.js, strings.json, index.html) at https://chenhsieh.github.io/anechoic-fugue/ ."
     },
     {
      "title": "P1SW00_still water overall visual refine",
@@ -20932,14 +20920,26 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 10
+    "done": 11
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-23T12:54:57+00:00",
+     "ok": true,
+     "note": "zh-Hant level hints for all 12 levels; main",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-23T12:54:02+00:00",
+     "ok": true,
+     "note": "fix: Traditional Chinese level hints for all 12 levels",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-23T08:53:15+00:00",
      "ok": true,
@@ -20999,18 +20999,6 @@
      "ok": false,
      "note": "koi pond readout, timing controls, old-save migration, shared component checks, and local phone verification complete; publish blocked pending explicit origin approval",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-19T18:03:20+00:00",
-     "ok": true,
-     "note": "model brief written; Codex rounds P2c05 and P2c05b queued",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-19T16:53:37+00:00",
-     "ok": true,
-     "note": "fix: every level is open while we test",
-     "source": "main commit"
     }
    ]
   },
