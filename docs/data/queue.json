@@ -1,5 +1,5 @@
 {
- "generated": 1792798559,
+ "generated": 1792798735,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -91,23 +91,21 @@
  },
  "tasks": [
   {
-   "id": "P1AX09_controls-stay-put-after-a-tap",
-   "request": "Template: the Undo, Start over and Hint row stays in the same place after a tap, on small phones and with huge text",
-   "game": "Studio",
+   "id": "P2GB00_grub-band-daily-box-generates-slowly",
+   "request": "Grub Band: make the daily puzzle build fast enough for the playable gate",
+   "game": "Grub Band",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
-   "after": [
-    "P3OR51_template-card-label-20px"
-   ],
-   "priority": null,
-   "why": "",
+   "after": [],
+   "priority": "P2",
+   "why": "A bio-art piece of mealworms on foam with contact microphones played through a controller, plus a radial audio visualiser.",
    "state": "running",
-   "at": 1792797844,
-   "created": 1792797844
+   "at": 1792765088,
+   "created": 1792765088
   },
   {
    "id": "P1LS00_gates-run-local-and-retry-timeouts",
@@ -177,23 +175,6 @@
    "waitingOn": [],
    "created": 1792713005,
    "estPercentOfWeek": 72.3
-  },
-  {
-   "id": "P2GB00_grub-band-daily-box-generates-slowly",
-   "request": "Grub Band: make the daily puzzle build fast enough for the playable gate",
-   "game": "Grub Band",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "A bio-art piece of mealworms on foam with contact microphones played through a controller, plus a radial audio visualiser.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792765088
   },
   {
    "id": "P2NC00_name-to-carry-data-inline",
@@ -400,6 +381,26 @@
    "created": 1792794950
   },
   {
+   "id": "P2AX10_audit-report-one-line-per-problem",
+   "request": "Accessibility check: one line per problem across screens, worst first, so a builder sees what to fix",
+   "game": "Studio",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1AX09_controls-stay-put-after-a-tap"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792790094,
+   "estPercentOfWeek": 72.3
+  },
+  {
    "id": "P2PF01_board-portfolio-view",
    "request": "A Portfolio view on the studio board: how many ideas and games sit in each lane against its cap, and what gets built next",
    "game": "Studio",
@@ -555,28 +556,6 @@
     "P1TE04_room-tests"
    ],
    "created": 1792795012
-  },
-  {
-   "id": "P2AX10_audit-report-one-line-per-problem",
-   "request": "Accessibility check: one line per problem across screens, worst first, so a builder sees what to fix",
-   "game": "Studio",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1AX09_controls-stay-put-after-a-tap"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P1AX09_controls-stay-put-after-a-tap"
-   ],
-   "created": 1792790094,
-   "estPercentOfWeek": 72.3
   },
   {
    "id": "P2KT01_kit-win-hold-and-higher-is-better",
@@ -1526,6 +1505,25 @@
    "at": 1792758654,
    "created": 1792758654,
    "wasCodex": true
+  },
+  {
+   "id": "P1AX09_controls-stay-put-after-a-tap",
+   "request": "Template: the Undo, Start over and Hint row stays in the same place after a tap, on small phones and with huge text",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR51_template-card-label-20px"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792797844,
+   "created": 1792797844
   },
   {
    "id": "P1CS00_cost-per-shipped-change-report",

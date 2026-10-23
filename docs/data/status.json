@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T23:35:43+00:00",
+ "generated": "2026-10-23T23:38:22+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 42,
+    "queued": 41,
     "running": 0,
     "doneToday": 4,
-    "minutes": 1680,
-    "estimateMinutes": 1680
+    "minutes": 1640,
+    "estimateMinutes": 1640
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 60,
+    "doneToday": 61,
     "minutes": 180,
     "estimateMinutes": 60
    }
   },
-  "queued": 43,
+  "queued": 42,
   "running": 2,
-  "doneToday": 64,
+  "doneToday": 65,
   "lanes": {
    "Codex": 1,
    "Claude": 3
@@ -46,25 +46,25 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1860,
-  "estimatedFinish": "2026-10-25T03:35:43+00:00",
-  "estimateMinutes": 1680
+  "minutesRemaining": 1820,
+  "estimatedFinish": "2026-10-25T02:58:22+00:00",
+  "estimateMinutes": 1640
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "play-template",
-   "task": "P1AX09_controls stay put after a tap",
-   "since": null,
-   "activity": null,
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "Multiple games",
    "task": "P1LS00_gates run local and retry timeouts",
    "since": null,
    "activity": null,
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "grub-band",
+   "task": "P2GB00_grub band daily box generates slowly",
+   "since": "2026-10-23T23:36:47+00:00",
+   "activity": "2026-10-23T23:37:04+00:00",
    "commit": null
   }
  ],
@@ -8102,7 +8102,7 @@
    ]
   },
   {
-   "nextTask": "Grub Band: make the daily puzzle build fast...",
+   "nextTask": null,
    "costTotalUsd": 28.8,
    "latestChange": {
     "text": "first minute lesson starts only from the Play button (fix of P2FM16), main ; playable...",
@@ -8121,8 +8121,8 @@
    "title": "Grub Band",
    "line": "Fill a foam box with grubs to build a tune; four levels, a daily tune and a shareable recording.",
    "url": "https://chenhsieh.github.io/grub-band/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Fill a foam box with grubs to build a tune; four levels, a daily tune and a",
    "shelfNote": "",
@@ -8131,7 +8131,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-21T20:47:27+00:00",
-   "lastChange": "2026-10-23T14:18:08+00:00",
+   "lastChange": "2026-10-23T23:37:04+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -8147,10 +8147,10 @@
    "tasks": [
     {
      "title": "P2GB00_grub band daily box generates slowly",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Grub Band: make the daily puzzle build fast enough for the playable gate",
-     "since": "2026-10-23T14:18:08+00:00",
+     "since": "2026-10-23T23:36:47+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -8189,8 +8189,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
