@@ -1,5 +1,5 @@
 {
- "generated": 1792799656,
+ "generated": 1792799798,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -106,6 +106,24 @@
    "state": "running",
    "at": 1792765088,
    "created": 1792765088
+  },
+  {
+   "id": "P3OR66_name-hub-titles",
+   "request": "Name audit: show one name for play-lab everywhere",
+   "game": "Studio",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1792798110,
+   "created": 1792798110,
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P2CC35_colony-count-save-migration-test",
@@ -422,7 +440,7 @@
   {
    "id": "P2RV05_honest-sign",
    "request": "Build round 5 idea 1, Honest Sign (數自己的招牌), from its finished core brief (verdict GO), placeholder shapes, first-minute lesson included",
-   "game": "Studio",
+   "game": "Honest Sign",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
@@ -439,7 +457,7 @@
   {
    "id": "P2RV06_the-draw",
    "request": "Build round 5 idea 5, The Draw (抽籤的手), from its finished core brief (verdict GO), placeholder shapes, first-minute lesson included",
-   "game": "Studio",
+   "game": "The Draw",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
@@ -456,7 +474,7 @@
   {
    "id": "P2RV07_rumour-on-the-jetty",
    "request": "Build round 5 idea 7, Rumour on the Jetty (燈會的謠言), from its finished core brief (verdict GO), placeholder shapes, first-minute lesson included",
-   "game": "Studio",
+   "game": "Rumour On The Jetty",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
@@ -469,6 +487,57 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792799653
+  },
+  {
+   "id": "P2RV08_scribes-blotter",
+   "request": "Build round 5 idea 9, The Scribe's Blotter (代書的吸墨紙), from its finished core brief (verdict GO), placeholder shapes, first-minute lesson included",
+   "game": "Scribes Blotter",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792799657
+  },
+  {
+   "id": "P2RV09_the-apprentice",
+   "request": "Build round 5 idea 2, The Apprentice (教會徒弟), from its finished core brief (verdict FIX), placeholder shapes, first-minute lesson included",
+   "game": "The Apprentice",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792799660
+  },
+  {
+   "id": "P2RV10_mint",
+   "request": "Build round 5 idea 3, Mint (薄荷), from its finished core brief (verdict FIX), placeholder shapes, first-minute lesson included",
+   "game": "Mint",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792799664
   },
   {
    "id": "P2n86_round4-template-repos",
@@ -503,24 +572,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792724493,
-   "estPercentOfWeek": 72.3
-  },
-  {
-   "id": "P3OR66_name-hub-titles",
-   "request": "Name audit: show one name for play-lab everywhere",
-   "game": "Studio",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792798110,
    "estPercentOfWeek": 72.3
   },
   {
@@ -650,6 +701,69 @@
     "P3OR66_name-hub-titles"
    ],
    "created": 1792795442
+  },
+  {
+   "id": "P2RV11_review-honest-sign-the-draw",
+   "request": "Opus stranger review of round 5 builds honest-sign and the-draw",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2RV05_honest-sign"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2RV05_honest-sign"
+   ],
+   "created": 1792799686
+  },
+  {
+   "id": "P2RV12_review-rumour-on-the-jetty-scribes-blotter",
+   "request": "Opus stranger review of round 5 builds rumour-on-the-jetty and scribes-blotter",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2RV07_rumour-on-the-jetty"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2RV07_rumour-on-the-jetty"
+   ],
+   "created": 1792799690
+  },
+  {
+   "id": "P2RV13_review-the-apprentice-mint",
+   "request": "Opus stranger review of round 5 builds the-apprentice and mint",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2RV09_the-apprentice"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2RV09_the-apprentice"
+   ],
+   "created": 1792799693
   },
   {
    "id": "P2TE06_look-refine",
