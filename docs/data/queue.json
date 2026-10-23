@@ -1,15 +1,15 @@
 {
- "generated": 1792795141,
+ "generated": 1792795505,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
-  "ready": 0,
+  "ready": 7,
   "waiting": 2,
-  "queued": 2,
+  "queued": 9,
   "running": 0,
   "done24h": 62,
   "modelsQueued": {
-   "deepseek-v4-flash": 2
+   "deepseek-v4-flash": 9
   },
   "spendTodayUsd": 0.02,
   "runsToday": 13,
@@ -108,23 +108,6 @@
    "created": 1792791284
   },
   {
-   "id": "P1NM00_game-name-audit",
-   "request": "List every game whose shown name differs from its repo name and settle one name for each.",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792791285,
-   "created": 1792791285
-  },
-  {
    "id": "P2CC35_colony-count-save-migration-test",
    "request": "Colony Count: a test proves an old save still loads after an update (release checklist item 7)",
    "game": "Colony Count",
@@ -157,6 +140,23 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792793416
+  },
+  {
+   "id": "P3OR65_name-biosteganography-title",
+   "request": "Name audit: show one name for biosteganography everywhere",
+   "game": "Biosteganography",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792795393
   },
   {
    "id": "P1TM02_scan-to-photo-transform",
@@ -331,6 +331,91 @@
    "estPercentOfWeek": 451.92
   },
   {
+   "id": "P3OR60_name-hello-princess-readme",
+   "request": "Name audit: show one name for copy-paste everywhere",
+   "game": "Hello Princess",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "Copy-paste greeting replies with place, name and age swapped each time, plus a stack of identical installer dialogs.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792795374
+  },
+  {
+   "id": "P3OR61_name-server-stress",
+   "request": "Name audit: show one name for server-stress everywhere",
+   "game": "Server Stress",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "An anthropology study of data centres describing staff fear of server downtime, and a short art film about game background workers.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792795378
+  },
+  {
+   "id": "P3OR62_name-time-as-material",
+   "request": "Name audit: show one name for time-material everywhere",
+   "game": "Time Material",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792795382
+  },
+  {
+   "id": "P3OR63_name-fly-song-share",
+   "request": "Name audit: show one name for fly-song everywhere",
+   "game": "Fly Song",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "The MaleCNS v1.0 fly connectome and real recorded fruit-fly courtship song driven by its song neuron.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792795385
+  },
+  {
+   "id": "P3OR64_name-fly-swarm-title",
+   "request": "Name audit: show one name for fly-swarm everywhere",
+   "game": "Fly Swarm",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "Steering responses measured from the MaleCNS v1.0 fly connectome's visual-to-descending neuron wiring.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792795389
+  },
+  {
    "id": "P2GG00_gallery-guess-save-migration-test",
    "request": "Gallery Guess: a test proves an old save still loads after an update (release checklist item 7)",
    "game": "Gallery Guess",
@@ -383,6 +468,23 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792791549
+  },
+  {
+   "id": "P1KT02_expanded-placeholder-set",
+   "request": "Template: an expanded placeholder set (24 silhouettes, 12 symbols, 6 fill patterns, a colour-blind-safe palette) so a core can be judged without circles and triangles.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792795314
   },
   {
    "id": "P1LS00_gates-run-local-and-retry-timeouts",
@@ -505,6 +607,23 @@
    "waitingOn": [],
    "created": 1792724493,
    "estPercentOfWeek": 451.92
+  },
+  {
+   "id": "P3OR66_name-hub-titles",
+   "request": "Name audit: show one name for play-lab everywhere",
+   "game": "Studio",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792795396
   },
   {
    "id": "P2HN00_herbal-pages-stay-open",
@@ -634,6 +753,27 @@
    ],
    "created": 1792715918,
    "estPercentOfWeek": 451.92
+  },
+  {
+   "id": "P2NM01_ship-name-fixes",
+   "request": "Name audit: merge and publish the display-name fixes",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "fix",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P3OR66_name-hub-titles"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P3OR66_name-hub-titles"
+   ],
+   "created": 1792795442
   },
   {
    "id": "P2TE06_look-refine",
@@ -1436,6 +1576,23 @@
    "state": "done",
    "at": 1792787087,
    "created": 1792787087
+  },
+  {
+   "id": "P1NM00_game-name-audit",
+   "request": "List every game whose shown name differs from its repo name and settle one name for each.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792791285,
+   "created": 1792791285
   },
   {
    "id": "P1PF00_portfolio-system-and-weekly-lessons",

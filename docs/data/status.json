@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T22:41:27+00:00",
+ "generated": "2026-10-23T22:44:35+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,45 +20,37 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 43,
+    "queued": 52,
     "running": 0,
     "doneToday": 4,
-    "minutes": 1720,
-    "estimateMinutes": 1720
+    "minutes": 2080,
+    "estimateMinutes": 2080
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
-    "doneToday": 48,
-    "minutes": 180,
+    "running": 1,
+    "doneToday": 49,
+    "minutes": 120,
     "estimateMinutes": 60
    }
   },
-  "queued": 44,
-  "running": 2,
-  "doneToday": 52,
+  "queued": 53,
+  "running": 1,
+  "doneToday": 53,
   "lanes": {
    "Codex": 1,
-   "Claude": 3
+   "Claude": 2
   },
   "laneCap": {
    "Claude": 4,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1900,
-  "estimatedFinish": "2026-10-25T03:21:27+00:00",
-  "estimateMinutes": 1720
+  "minutesRemaining": 2200,
+  "estimatedFinish": "2026-10-25T09:24:35+00:00",
+  "estimateMinutes": 2080
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P1NM00_game name audit",
-   "since": null,
-   "activity": null,
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "time-material",
@@ -69,11 +61,11 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 209,
-  "usdEst": 752.4,
+  "runs": 210,
+  "usdEst": 756.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -119,7 +111,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 40
+   "changes": 41
   }
  ],
  "houseRules": 25,
@@ -1158,7 +1150,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Name audit: show one name for biosteganography everywhere",
    "costTotalUsd": 39.79,
    "latestChange": {
     "text": "see",
@@ -1178,8 +1170,8 @@
    "title": "Biosteganography",
    "line": "Straighten the stripes to find a hidden repeat.",
    "url": "https://chenhsieh.github.io/biosteganography/demo/snap.html",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
@@ -1188,7 +1180,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-08-20T03:51:36+00:00",
-   "lastChange": "2026-10-22T07:57:39+00:00",
+   "lastChange": "2026-10-23T22:43:13+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -1202,6 +1194,20 @@
     "totalUsdEst": 39.79
    },
    "tasks": [
+    {
+     "title": "P3OR65_name biosteganography title",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Name audit: show one name for biosteganography everywhere",
+     "since": "2026-10-23T22:43:13+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SD13_studio standard biosteganography",
      "state": "done",
@@ -1232,7 +1238,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 2
@@ -1243,7 +1249,7 @@
     "note": "Bioinformatics round: make the idea legible in the first"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T16:47:27+00:00",
@@ -6012,7 +6018,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Name audit: show one name for fly-song everywhere",
    "costTotalUsd": 43.47,
    "latestChange": {
     "text": "feat: Court flies by switching song at the right distance",
@@ -6032,8 +6038,8 @@
    "title": "Fly Song",
    "line": "Tap a fly's courtship song.",
    "url": "https://chenhsieh.github.io/fly-song/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Decide how the fly rhythm game differs from the other",
    "shelfNote": "",
@@ -6042,7 +6048,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-09-11T03:22:33+00:00",
-   "lastChange": "2026-10-21T05:18:33+00:00",
+   "lastChange": "2026-10-23T22:43:05+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -6056,6 +6062,20 @@
     "totalUsdEst": 43.47
    },
    "tasks": [
+    {
+     "title": "P3OR63_name fly song share",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Name audit: show one name for fly-song everywhere",
+     "since": "2026-10-23T22:43:05+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "fly song choice",
      "state": "done",
@@ -6086,7 +6106,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 2
@@ -6097,7 +6117,7 @@
     "note": "Distinct from the carving game: real song from a simulated brain; lead with hearing it"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T05:18:33+00:00",
@@ -6174,7 +6194,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Name audit: show one name for fly-swarm everywhere",
    "costTotalUsd": 43.72,
    "latestChange": {
     "text": "feat: show Fly Swarm opening board in link previews",
@@ -6194,8 +6214,8 @@
    "title": "Fly Swarm",
    "line": "",
    "url": "https://chenhsieh.github.io/fly-swarm/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Game-design pass: a goal and a decision per round",
    "shelfNote": "",
@@ -6204,7 +6224,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-09-11T20:43:24+00:00",
-   "lastChange": "2026-10-21T17:09:13+00:00",
+   "lastChange": "2026-10-23T22:43:09+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -6218,6 +6238,20 @@
     "totalUsdEst": 43.72
    },
    "tasks": [
+    {
+     "title": "P3OR64_name fly swarm title",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Name audit: show one name for fly-swarm everywhere",
+     "since": "2026-10-23T22:43:09+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SD18_studio standard fly swarm",
      "state": "done",
@@ -6262,14 +6296,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T17:09:13+00:00",
@@ -8453,7 +8487,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Name audit: show one name for copy-paste everywhere",
    "costTotalUsd": 111.54,
    "latestChange": {
     "text": "feat: share Hello Princess with its own preview and source note",
@@ -8473,8 +8507,8 @@
    "title": "Hello Princess",
    "line": "Find the princess's first invitation among the copies.",
    "url": "https://chenhsieh.github.io/copy-paste/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Settle the card-link logic, stop story art leaking answers",
    "shelfNote": "",
@@ -8483,7 +8517,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-15T18:59:22+00:00",
-   "lastChange": "2026-10-21T17:51:07+00:00",
+   "lastChange": "2026-10-23T22:42:54+00:00",
    "cost": {
     "apiUsd": 16.91,
     "codexRuns": 4,
@@ -8497,6 +8531,20 @@
     "totalUsdEst": 111.54
    },
    "tasks": [
+    {
+     "title": "P3OR60_name hello princess readme",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Name audit: show one name for copy-paste everywhere",
+     "since": "2026-10-23T22:42:54+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SD22_studio standard copy paste",
      "state": "done",
@@ -8594,24 +8642,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "princess story",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "A story line and picture in every level, a gentler difficulty curve, the changed part marked on each copy, and generated endless levels with Easy / Medium / Hard.",
-     "since": "2026-10-18T20:13:39+00:00",
-     "done": "2026-10-18T20:13:39+00:00",
-     "reviewed": true,
-     "minutes": 11,
-     "tokens": 228468,
-     "reviewOutcome": "fixed",
-     "commit": null,
-     "result": "Story scenes, gentler first six levels, precise change arrows, and checked daily/endless letters are live."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 12
@@ -8622,7 +8656,7 @@
     "note": "Step-by-step linking and inferable feedback"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T17:51:07+00:00",
@@ -18323,7 +18357,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Name audit: show one name for server-stress everywhere",
    "costTotalUsd": 50.8,
    "latestChange": {
     "text": "feat: give Night Shift a link preview and shorter share line",
@@ -18342,8 +18376,8 @@
    "title": "Server Stress",
    "line": "Night shift in a server room: every rack warms a light.",
    "url": "https://chenhsieh.github.io/server-stress/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Data-centre story with a human side, real tradeoffs instead",
    "shelfNote": "",
@@ -18352,7 +18386,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-16T01:44:50+00:00",
-   "lastChange": "2026-10-21T20:16:02+00:00",
+   "lastChange": "2026-10-23T22:42:58+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -18366,6 +18400,20 @@
     "totalUsdEst": 50.8
    },
    "tasks": [
+    {
+     "title": "P3OR61_name server stress",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Name audit: show one name for server-stress everywhere",
+     "since": "2026-10-23T22:42:58+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SD36_studio standard server stress",
      "state": "done",
@@ -18424,7 +18472,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
@@ -18435,7 +18483,7 @@
     "note": "UI polish, analog clock, geeky/Jira feel, funny tasks"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T20:16:02+00:00",
@@ -23164,7 +23212,7 @@
    ]
   },
   {
-   "nextTask": "Time as Material: make the animation from the...",
+   "nextTask": "Name audit: show one name for time-material everywhere",
    "costTotalUsd": 32.64,
    "latestChange": {
     "text": "credits panel with licences in How to play, live",
@@ -23194,7 +23242,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-09-20T20:53:51+00:00",
-   "lastChange": "2026-10-23T22:34:02+00:00",
+   "lastChange": "2026-10-23T22:43:02+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -23214,6 +23262,20 @@
      "worker": "Claude",
      "plan": "Time as Material: stop the result giving the answer so fast; hold longer, less direct feedback.",
      "since": "2026-10-23T22:33:13+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P3OR62_name time as material",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Name audit: show one name for time-material everywhere",
+     "since": "2026-10-23T22:43:02+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -23305,24 +23367,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "feat: see the photo form as the camera scans"
-    },
-    {
-     "title": "P3OR03_time material rng test",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Time Material: add a test for the seeded random generator (OpenRouter lane)",
-     "since": "2026-10-22T20:55:51+00:00",
-     "done": "2026-10-22T20:55:51+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 2,
     "running": 1,
     "waitingDesign": 0,
     "done": 9
