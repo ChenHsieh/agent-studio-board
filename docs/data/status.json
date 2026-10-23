@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T07:10:44+00:00",
+ "generated": "2026-10-23T07:16:09+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -18,23 +18,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 40,
+    "queued": 39,
     "running": 0,
     "doneToday": 0,
-    "minutes": 1600,
+    "minutes": 1560,
     "estimateMinutes": 0
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 2,
+    "doneToday": 3,
     "minutes": 180,
     "estimateMinutes": 60
    }
   },
-  "queued": 41,
+  "queued": 40,
   "running": 2,
-  "doneToday": 2,
+  "doneToday": 3,
   "lanes": {
    "Codex": 0,
    "Claude": 3
@@ -44,8 +44,8 @@
    "Codex": 0
   },
   "codexPaused": true,
-  "minutesRemaining": 1780,
-  "estimatedFinish": "2026-10-23T08:10:44+00:00",
+  "minutesRemaining": 1740,
+  "estimatedFinish": "2026-10-23T08:16:09+00:00",
   "estimateMinutes": 60
  },
  "lanes": [
@@ -62,7 +62,7 @@
    "game": "alias-loaf",
    "task": "P2FM35_alias loaf first minute",
    "since": "2026-10-23T06:29:47+00:00",
-   "activity": "2026-10-23T06:35:53+00:00",
+   "activity": "2026-10-23T07:12:30+00:00",
    "commit": null
   }
  ],
@@ -117,7 +117,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 2
+   "changes": 3
   }
  ],
  "houseRules": 25,
@@ -407,10 +407,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 50.4,
+   "costTotalUsd": 57.6,
    "latestChange": {
-    "text": "P2FM35_alias-loaf-first-minute handed to Claude: Codex hit the 90 min cap;",
-    "at": "2026-10-22T23:56:12+00:00"
+    "text": "first-minute round live: premise + 3 boards, skip/replay, gates green",
+    "at": "2026-10-23T07:16:11+00:00"
    },
    "promo": null,
    "why": "A screenshot of a long keyword-filter spreadsheet plus photos of a tray of slice-and-bake cookies with swirled patterns.",
@@ -429,18 +429,18 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-14T23:09:53+00:00",
-   "lastChange": "2026-10-23T06:35:53+00:00",
+   "lastChange": "2026-10-23T07:16:11+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 13,
-    "earlierUsdEst": 46.8,
-    "totalUsdEst": 50.4
+    "claudeUsdEst": 7.2,
+    "earlierRounds": 14,
+    "earlierUsdEst": 50.4,
+    "totalUsdEst": 57.6
    },
    "tasks": [
     {
@@ -450,6 +450,20 @@
      "plan": "Alias Loaf: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
      "since": "2026-10-23T06:29:47+00:00",
      "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P2FM35_alias loaf first minute",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Alias Loaf: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+     "since": "2026-10-23T04:25:14+00:00",
+     "done": "2026-10-23T04:25:14+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -490,12 +504,24 @@
     "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": null,
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-23T07:16:11+00:00",
+     "ok": true,
+     "note": "first-minute round live: premise + 3 boards, skip/replay, gates green",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-23T07:12:30+00:00",
+     "ok": true,
+     "note": "feat: a new player starts with one tap and learns one rule at a time",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-22T23:56:12+00:00",
      "ok": false,
@@ -554,18 +580,6 @@
      "at": "2026-10-15T05:48:17+00:00",
      "ok": true,
      "note": "feat: learn Alias Loaf from one tap: catch Morrow, leave the rest",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-14T23:53:15+00:00",
-     "ok": true,
-     "note": "Add a favicon (live page logged a 404)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-14T23:42:27+00:00",
-     "ok": true,
-     "note": "step 4: Step 4: fixes from the first look [page: index.html]",
      "source": "main commit"
     }
    ]
@@ -10367,7 +10381,7 @@
    ]
   },
   {
-   "nextTask": "Lie Flat: add a short first-minute round so...",
+   "nextTask": null,
    "costTotalUsd": 29.42,
    "latestChange": {
     "text": "P2FM47_lie-flat-first-minute handed to Claude: Codex hit the 90 min cap;",
@@ -10380,8 +10394,8 @@
    "title": "Lie Flat",
    "line": "",
    "url": "https://chenhsieh.github.io/lie-flat/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -10390,7 +10404,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-20T20:36:20+00:00",
-   "lastChange": "2026-10-23T04:25:14+00:00",
+   "lastChange": "2026-10-23T01:27:24+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -10404,20 +10418,6 @@
     "totalUsdEst": 29.42
    },
    "tasks": [
-    {
-     "title": "P2FM47_lie flat first minute",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Lie Flat: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-23T04:25:14+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1LF40_lie flat instructions and softer paper",
      "state": "done",
@@ -10448,7 +10448,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
     "done": 2
@@ -10459,7 +10459,7 @@
     "note": "Explain numbers; softer paper"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-23T01:27:24+00:00",
