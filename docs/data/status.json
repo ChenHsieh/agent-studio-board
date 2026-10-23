@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T04:47:11+00:00",
+ "generated": "2026-10-23T04:51:28+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -18,23 +18,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 40,
+    "queued": 39,
     "running": 0,
     "doneToday": 0,
-    "minutes": 1600,
+    "minutes": 1560,
     "estimateMinutes": 0
    },
    "Claude": {
     "queued": 1,
     "running": 3,
-    "doneToday": 0,
+    "doneToday": 1,
     "minutes": 240,
     "estimateMinutes": 60
    }
   },
-  "queued": 41,
+  "queued": 40,
   "running": 3,
-  "doneToday": 0,
+  "doneToday": 1,
   "lanes": {
    "Codex": 0,
    "Claude": 4
@@ -44,25 +44,25 @@
    "Codex": 0
   },
   "codexPaused": true,
-  "minutesRemaining": 1840,
-  "estimatedFinish": "2026-10-23T05:47:11+00:00",
+  "minutesRemaining": 1800,
+  "estimatedFinish": "2026-10-23T05:51:28+00:00",
   "estimateMinutes": 60
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "flying-white",
-   "task": "P1FW53_teacher seal",
-   "since": "2026-10-23T04:30:55+00:00",
-   "activity": "2026-10-23T04:47:08+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "grass-crossword",
    "task": "P1GC00_grass crossword share text sound more puzzles",
    "since": "2026-10-23T04:30:54+00:00",
    "activity": "2026-10-23T04:31:22+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "mirror-hold",
+   "task": "P1MH56_print hero and card sizes",
+   "since": "2026-10-23T04:49:22+00:00",
+   "activity": "2026-10-23T04:50:21+00:00",
    "commit": null
   },
   {
@@ -78,8 +78,8 @@
  "claudeWorkers": 3,
  "apiSpentUsd": 310.9,
  "claudeInSession": {
-  "runs": 170,
-  "usdEst": 612.0,
+  "runs": 171,
+  "usdEst": 615.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -122,6 +122,10 @@
   {
    "day": "2026-10-22",
    "changes": 279
+  },
+  {
+   "day": "2026-10-23",
+   "changes": 1
   }
  ],
  "houseRules": 25,
@@ -1309,7 +1313,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 15.12,
+   "costTotalUsd": 29.52,
    "latestChange": {
     "text": "feat: Read back the posted notice",
     "at": "2026-10-23T01:47:08+00:00"
@@ -1346,9 +1350,9 @@
     "codexTokens": 601307,
     "codexUsdEst": 0.72,
     "claudeUsdEst": 14.4,
-    "earlierRounds": 0,
-    "earlierUsdEst": 0.0,
-    "totalUsdEst": 15.12
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
+    "totalUsdEst": 29.52
    },
    "tasks": [
     {
@@ -1471,6 +1475,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-23T01:46:23+00:00",
+     "ok": true,
+     "note": "feat: Read back the posted notice",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-23T01:19:42+00:00",
      "ok": false,
      "note": "see",
@@ -1483,16 +1493,46 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-22T22:04:30+00:00",
+     "ok": true,
+     "note": "fix: share lines follow the reader's language",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-22T20:50:13+00:00",
      "ok": true,
      "note": "feat: teach the stairwell notice in four playable steps",
      "source": "board note"
     },
     {
+     "at": "2026-10-22T20:49:21+00:00",
+     "ok": true,
+     "note": "feat: teach the stairwell notice in four playable steps",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-22T18:48:06+00:00",
      "ok": true,
      "note": "Black out words on a stairwell notice until it says something kinder; small picture conditions say what must stay",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-22T18:46:06+00:00",
+     "ok": true,
+     "note": "Blackout Notice: black out a stairwell notice until it is kinder (20 notices, 9 kinds of condition)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T18:36:45+00:00",
+     "ok": true,
+     "note": "feat: Blackout Notice starts from the Play Lab game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T18:35:19+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
     }
    ]
   },
@@ -6298,10 +6338,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 101.46,
+   "costTotalUsd": 105.06,
    "latestChange": {
-    "text": "feat: the teacher is his red seal and his red notes, not a drawn face",
-    "at": "2026-10-23T04:47:15+00:00"
+    "text": "teacher is his seal and red notes (P1FW53), main",
+    "at": "2026-10-23T04:49:17+00:00"
    },
    "promo": null,
    "why": "A commentary on a 2002 martial-arts film that tells one story three ways, where the character for sword is written 19 ways.",
@@ -6310,8 +6350,8 @@
    "title": "Flying White",
    "line": "",
    "url": "https://chenhsieh.github.io/flying-white/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Higher priority: real rubbing sources, hilarious teacher, growth, free writing",
    "shelfNote": "",
@@ -6320,27 +6360,27 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-21T05:30:04+00:00",
-   "lastChange": "2026-10-23T04:47:15+00:00",
+   "lastChange": "2026-10-23T04:49:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
-    "claudeRuns": 10,
+    "claudeRuns": 11,
     "apiRuns": 0,
     "codexTokens": 553577,
     "codexUsdEst": 0.66,
-    "claudeUsdEst": 36.0,
+    "claudeUsdEst": 39.6,
     "earlierRounds": 18,
     "earlierUsdEst": 64.8,
-    "totalUsdEst": 101.46
+    "totalUsdEst": 105.06
    },
    "tasks": [
     {
      "title": "P1FW53_teacher seal",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Flying White: the teacher becomes his red seal and his red brush notes, stamping crooked when annoyed",
-     "since": "2026-10-23T04:30:55+00:00",
-     "done": null,
+     "since": "2026-10-23T04:25:14+00:00",
+     "done": "2026-10-23T04:25:14+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -6449,9 +6489,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 13
+    "done": 14
    },
    "verdict": {
     "date": "2026-10-21",
@@ -6459,8 +6499,14 @@
     "note": "Homework-like; seal script; hilarious teacher; growth"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-23T04:49:17+00:00",
+     "ok": true,
+     "note": "teacher is his seal and red notes (P1FW53), main",
+     "source": "board note"
+    },
     {
      "at": "2026-10-23T04:47:15+00:00",
      "ok": true,
@@ -6526,12 +6572,6 @@
      "ok": true,
      "note": "feat: Explore 38 historical forms of 劍",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T18:10:35+00:00",
-     "ok": true,
-     "note": "long strokes keep a faint trace to the end",
-     "source": "board note"
     }
    ]
   },
@@ -11077,7 +11117,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 14.62,
+   "costTotalUsd": 54.22,
    "latestChange": {
     "text": "see",
     "at": "2026-10-21T18:51:44+00:00"
@@ -11105,7 +11145,7 @@
    "released": false,
    "releasedOn": null,
    "releasedNote": "",
-   "firstSeen": "2026-10-19T17:54:51+00:00",
+   "firstSeen": "2026-08-20T15:58:51+00:00",
    "lastChange": "2026-10-22T07:57:39+00:00",
    "cost": {
     "apiUsd": 0.0,
@@ -11115,9 +11155,9 @@
     "codexTokens": 180479,
     "codexUsdEst": 0.22,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
-    "totalUsdEst": 14.62
+    "earlierRounds": 14,
+    "earlierUsdEst": 50.4,
+    "totalUsdEst": 54.22
    },
    "tasks": [
     {
@@ -11170,6 +11210,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-21T18:41:38+00:00",
+     "ok": true,
+     "note": "fix: show a concise Local Hero link preview",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-21T18:36:02+00:00",
      "ok": false,
      "note": "see",
@@ -11188,10 +11234,46 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-21T05:28:23+00:00",
+     "ok": true,
+     "note": "feat: Local Hero becomes a DOS text-mode screen",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-19T20:59:20+00:00",
      "ok": true,
      "note": "shared target and first-move hint make local alignment legible; live 390x844 and 320x568 touch checks passed",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-19T20:57:19+00:00",
+     "ok": true,
+     "note": "feat: show the shared island target",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-15T14:23:08+00:00",
+     "ok": true,
+     "note": "feat: a link back to Play Lab",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-15T00:28:44+00:00",
+     "ok": true,
+     "note": "feat: a findable shared stretch, a lesson that needs BANK, demo hook",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-09-05T03:02:01+00:00",
+     "ok": true,
+     "note": "Add a favicon (data-URI SVG, letter badge on the game's own palette)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-09-05T02:54:37+00:00",
+     "ok": true,
+     "note": "Add description, og:*, and twitter:* meta tags, and a generated docs/og.png",
+     "source": "main commit"
     }
    ]
   },
@@ -12211,7 +12293,7 @@
    ]
   },
   {
-   "nextTask": "Mirror Hold: show the client's print as a...",
+   "nextTask": null,
    "costTotalUsd": 69.55,
    "latestChange": {
     "text": "see",
@@ -12224,8 +12306,8 @@
    "title": "Mirror Hold",
    "line": "Wax a hairstyle, then test it against three pulls.",
    "url": "https://chenhsieh.github.io/mirror-hold/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Huge revamp planned by a cross-functional lead",
    "shelfNote": "",
@@ -12234,7 +12316,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-14T23:53:16+00:00",
-   "lastChange": "2026-10-23T04:25:15+00:00",
+   "lastChange": "2026-10-23T04:50:21+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -12250,10 +12332,10 @@
    "tasks": [
     {
      "title": "P1MH56_print hero and card sizes",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Mirror Hold: show the client's print as a wide sharp strip with a readable card below, and the whole print on tap",
-     "since": "2026-10-23T04:25:15+00:00",
+     "since": "2026-10-23T04:49:22+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -12362,8 +12444,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 10
    },
@@ -21336,7 +21418,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 57.28,
+   "costTotalUsd": 42.88,
    "latestChange": {
     "text": "feat: curator identifies each field sketch and files it in the notebook",
     "at": "2026-10-21T05:56:46+00:00"
@@ -21357,7 +21439,7 @@
    "released": false,
    "releasedOn": null,
    "releasedNote": "",
-   "firstSeen": "2026-10-15T18:08:35+00:00",
+   "firstSeen": "2026-10-15T18:59:21+00:00",
    "lastChange": "2026-10-21T05:56:46+00:00",
    "cost": {
     "apiUsd": 6.63,
@@ -21367,9 +21449,9 @@
     "codexTokens": 209205,
     "codexUsdEst": 0.25,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
-    "totalUsdEst": 57.28
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
+    "totalUsdEst": 42.88
    },
    "tasks": [
     {
@@ -21418,12 +21500,6 @@
      "source": "board note"
     },
     {
-     "at": "2026-10-21T05:55:44+00:00",
-     "ok": true,
-     "note": "feat: curator identifies each field sketch and files it in the notebook",
-     "source": "main commit"
-    },
-    {
      "at": "2026-10-20T02:38:58+00:00",
      "ok": true,
      "note": "P3 core verdict + brief",
@@ -21434,18 +21510,6 @@
      "ok": true,
      "note": "LIVE https://chenhsieh.github.io/tell/ (improve round )",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-16T08:14:46+00:00",
-     "ok": true,
-     "note": "fix: no focus ring left on the board or How to play after the first-visit card",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-16T08:07:07+00:00",
-     "ok": true,
-     "note": "fix: Tell goes live;",
-     "source": "main commit"
     },
     {
      "at": "2026-10-15T23:59:38+00:00",
@@ -21475,6 +21539,24 @@
      "at": "2026-10-15T19:38:59+00:00",
      "ok": true,
      "note": "NOT_PUBLISHED (auto): checks not green, see",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-15T19:27:08+00:00",
+     "ok": true,
+     "note": "playable gate PASS round 1",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-15T18:59:52+00:00",
+     "ok": true,
+     "note": "build start in",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-15T18:59:21+00:00",
+     "ok": true,
+     "note": "START job V1=",
      "source": "board note"
     }
    ]
