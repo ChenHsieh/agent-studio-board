@@ -1,5 +1,5 @@
 {
- "generated": 1792761580,
+ "generated": 1792761833,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -79,36 +79,15 @@
  },
  "overflow": {
   "codexOut": true,
-  "converted": 2,
-  "convertedRunning": 1,
-  "claudeWorkers": 1,
+  "converted": 1,
+  "convertedRunning": 0,
+  "claudeWorkers": 0,
   "claudeWorkerCap": 3,
   "handedBack": 0,
   "lastHandBack": null,
   "lastHandBackN": null
  },
  "tasks": [
-  {
-   "id": "P1AX06_a11y-audit-fit-cover-canvas-checks",
-   "request": "Play template: the accessibility check also catches a board below the fold, a card hidden under the top bar, and tiny drawn labels",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1AX05_demo-play-fits-one-screen",
-    "P3OR49_a11y-audit-no-crash-on-other-games"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792758654,
-   "created": 1792758654,
-   "wasCodex": true
-  },
   {
    "id": "P2FM52_same-badge-first-minute-fix",
    "request": "Finish the first-minute round for same-badge: the lesson starts only from the Play button, so jumping to a level never lands under it",
@@ -352,6 +331,25 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P1AX07_play-template-stranger-rereview",
+   "request": "Play template: fresh stranger review after the fixes",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1AX06_a11y-audit-fit-cover-canvas-checks"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792748770
+  },
+  {
    "id": "P2n86_round4-template-repos",
    "request": "Create the ten new game repositories from the game template so their builds can start",
    "game": "Studio",
@@ -407,27 +405,6 @@
    ],
    "created": 1792715918,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P1AX07_play-template-stranger-rereview",
-   "request": "Play template: fresh stranger review after the fixes",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1AX06_a11y-audit-fit-cover-canvas-checks"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P1AX06_a11y-audit-fit-cover-canvas-checks"
-   ],
-   "created": 1792748770
   },
   {
    "id": "P2KT01_kit-win-hold-and-higher-is-better",
@@ -1461,6 +1438,27 @@
    "wasCodex": true
   },
   {
+   "id": "P1AX06_a11y-audit-fit-cover-canvas-checks",
+   "request": "Play template: the accessibility check also catches a board below the fold, a card hidden under the top bar, and tiny drawn labels",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1AX05_demo-play-fits-one-screen",
+    "P3OR49_a11y-audit-no-crash-on-other-games"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792758654,
+   "created": 1792758654,
+   "wasCodex": true
+  },
+  {
    "id": "P1AX08_play-template-stranger-review",
    "request": "Play template: stranger review of the big-text, colour-safe kit and its accessibility check",
    "game": "Studio",
@@ -1580,24 +1578,6 @@
    "state": "done",
    "at": 1792723535,
    "created": 1792723535
-  },
-  {
-   "id": "P2FM36_shortest-law-first-minute",
-   "request": "Shortest Law: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-   "game": "Shortest Law",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "A joke page of physics equations whose conclusion is only that things fall, plus symbolic-regression software.",
-   "state": "done",
-   "at": 1792718505,
-   "created": 1792718505,
-   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2FM46_letter-lines-first-minute",
