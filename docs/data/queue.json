@@ -1,22 +1,27 @@
 {
- "generated": 1792791349,
+ "generated": 1792791492,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
-  "lanesBusy": 2,
+  "lanesBusy": 0,
   "ready": 0,
   "waiting": 1,
   "queued": 1,
-  "running": 2,
-  "done24h": 59,
+  "running": 0,
+  "done24h": 61,
   "modelsQueued": {
-   "openai/gpt-4.1": 1,
-   "deepseek-v4-flash": 2
+   "deepseek-v4-flash": 1
   },
   "spendTodayUsd": 0.02,
-  "runsToday": 10,
-  "runsTodayUnpriced": 8,
+  "runsToday": 12,
+  "runsTodayUnpriced": 10,
   "spendTotalUsd": 6.36,
   "recent": [
+   {
+    "id": "P3OR53_name-to-carry-data-inside-game",
+    "request": "Name to Carry: move the name list into the game file so tools can load it alone (cheap lane)",
+    "model": "openai/gpt-4.1",
+    "at": 1792791317
+   },
    {
     "id": "P3OR57_mirror-hold-credits-page",
     "request": "mirror-hold: a credits file that names every font, data source and code licence (cheap lane)",
@@ -32,6 +37,12 @@
    {
     "id": "P3OR58_thumb-stand-credits-page",
     "request": "thumb-stand: a credits file that names every font, data source and code licence (cheap lane)",
+    "model": "deepseek-v4-flash",
+    "at": 1792791214
+   },
+   {
+    "id": "P3OR56_gallery-guess-credits-page",
+    "request": "gallery-guess: a credits file that names every font, data source and code licence (cheap lane)",
     "model": "deepseek-v4-flash",
     "at": 1792791214
    },
@@ -64,24 +75,12 @@
     "request": "P3RL33_credits licences three shadows",
     "model": "openai/gpt-4.1",
     "at": 1792724740
-   },
-   {
-    "id": "P3RL32_credits-licences-sounds-like",
-    "request": "P3RL32_credits licences sounds like",
-    "model": "openai/gpt-4.1",
-    "at": 1792724737
-   },
-   {
-    "id": "P3RL31_credits-licences-restored",
-    "request": "P3RL31_credits licences restored",
-    "model": "openai/gpt-4.1",
-    "at": 1792724733
    }
   ],
   "label": "estimate"
  },
  "overflow": {
-  "codexOut": false,
+  "codexOut": true,
   "converted": 0,
   "convertedRunning": 0,
   "claudeWorkers": 1,
@@ -107,41 +106,7 @@
    "state": "running",
    "at": 1792789248,
    "created": 1792789248,
-   "estPercentOfWeek": 427.26
-  },
-  {
-   "id": "P3OR53_name-to-carry-data-inside-game",
-   "request": "Name to Carry: move the name list into the game file so tools can load it alone (cheap lane)",
-   "game": "A Name to Carry",
-   "route": "OpenRouter",
-   "model": "openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "A paper abstract linking rare characters in given names to wellbeing, read with how Mandarin speakers spell out a name aloud.",
-   "state": "running",
-   "at": 1792791317,
-   "created": 1792791317
-  },
-  {
-   "id": "P3OR56_gallery-guess-credits-page",
-   "request": "gallery-guess: a credits file that names every font, data source and code licence (cheap lane)",
-   "game": "Gallery Guess",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P3",
-   "why": "Public-domain objects from The Metropolitan Museum of Art's open collection API.",
-   "state": "running",
-   "at": 1792791214,
-   "created": 1792791214
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P1AX09_controls-stay-put-after-a-tap",
@@ -161,7 +126,7 @@
    "state": "running",
    "at": 1792790803,
    "created": 1792790803,
-   "estPercentOfWeek": 427.26
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P1SW02_level7-coin-and-pet-outside-canvas",
@@ -230,7 +195,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713005,
-   "estPercentOfWeek": 427.26
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P2GB00_grub-band-daily-box-generates-slowly",
@@ -250,6 +215,26 @@
    "created": 1792765088
   },
   {
+   "id": "P2NC00_name-to-carry-data-inline",
+   "request": "Name to Carry: the game file no longer crashes when loaded on its own (the name data moves into it)",
+   "game": "A Name to Carry",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR53_name-to-carry-data-inside-game"
+   ],
+   "priority": "P2",
+   "why": "A paper abstract linking rare characters in given names to wellbeing, read with how Mandarin speakers spell out a name aloud.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792791317,
+   "estPercentOfWeek": 452.19
+  },
+  {
    "id": "P2PS00_pigeon-salon-readable-board",
    "request": "Pigeon Salon: label the wall row, readable seed piles, a loss note that does not cover the cause, and a win that stays in view",
    "game": "Pigeon Salon",
@@ -267,7 +252,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713005,
-   "estPercentOfWeek": 427.26
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P2RO00_radish-omelette-colours-and-beats",
@@ -287,7 +272,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713431,
-   "estPercentOfWeek": 427.26
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P2RS00_restored-blurry-neighbours-count",
@@ -307,7 +292,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792715918,
-   "estPercentOfWeek": 427.26
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P3NY00_not-yet-a-real-choice",
@@ -327,7 +312,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713432,
-   "estPercentOfWeek": 427.26
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P3OR45_herbal-pages-stay-open-logic",
@@ -345,7 +330,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792724295,
-   "estPercentOfWeek": 427.26
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P3d35_lens-screen-studio-320-fix",
@@ -363,7 +348,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792701959,
-   "estPercentOfWeek": 427.26
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P1LS00_gates-run-local-and-retry-timeouts",
@@ -519,7 +504,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792724493,
-   "estPercentOfWeek": 427.26
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P1SW03_how-to-play-matches-template",
@@ -583,29 +568,7 @@
     "P3OR45_herbal-pages-stay-open-logic"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 427.26
-  },
-  {
-   "id": "P2NC00_name-to-carry-data-inline",
-   "request": "Name to Carry: the game file no longer crashes when loaded on its own (the name data moves into it)",
-   "game": "A Name to Carry",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P3OR53_name-to-carry-data-inside-game"
-   ],
-   "priority": "P2",
-   "why": "A paper abstract linking rare characters in given names to wellbeing, read with how Mandarin speakers spell out a name aloud.",
-   "state": "waiting",
-   "waitingOn": [
-    "P3OR53_name-to-carry-data-inside-game"
-   ],
-   "created": 1792791317,
-   "estPercentOfWeek": 427.26
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P3OR59_time-material-story-and-scan-words",
@@ -648,7 +611,7 @@
     "P1AX09_controls-stay-put-after-a-tap"
    ],
    "created": 1792790094,
-   "estPercentOfWeek": 427.26
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P2KT01_kit-win-hold-and-higher-is-better",
@@ -670,7 +633,7 @@
     "P3OR44_kit-win-hold-and-higher-is-better"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 427.26
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P2n100_review-one-umbrella-and-rolling-back",
@@ -738,7 +701,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 427.26
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P2n88_watched-pot",
@@ -760,7 +723,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 427.26
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P2n89_round-table",
@@ -782,7 +745,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 427.26
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P2n90_iron-window-garden",
@@ -804,7 +767,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 427.26
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P2n91_still-a-heap",
@@ -826,7 +789,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 427.26
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P2n92_out-of-the-corner",
@@ -848,7 +811,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 427.26
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P2n93_one-umbrella",
@@ -870,7 +833,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 427.26
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P2n94_rolling-back",
@@ -892,7 +855,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 427.26
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P2n95_gold-star",
@@ -914,7 +877,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 427.26
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P2n96_ac-remote",
@@ -936,7 +899,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 427.26
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P2n97_review-coin-dumplings-and-watched-pot",
@@ -1290,6 +1253,40 @@
    "wasCodex": true
   },
   {
+   "id": "P3OR53_name-to-carry-data-inside-game",
+   "request": "Name to Carry: move the name list into the game file so tools can load it alone (cheap lane)",
+   "game": "A Name to Carry",
+   "route": "OpenRouter",
+   "model": "openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "A paper abstract linking rare characters in given names to wellbeing, read with how Mandarin speakers spell out a name aloud.",
+   "state": "done",
+   "at": 1792791317,
+   "created": 1792791317
+  },
+  {
+   "id": "P3OR56_gallery-guess-credits-page",
+   "request": "gallery-guess: a credits file that names every font, data source and code licence (cheap lane)",
+   "game": "Gallery Guess",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P3",
+   "why": "Public-domain objects from The Metropolitan Museum of Art's open collection API.",
+   "state": "done",
+   "at": 1792791214,
+   "created": 1792791214
+  },
+  {
    "id": "P1AX04_kit-howto-card-clear-of-top-bar",
    "request": "Play template: the How to play card opens fully below the top bar and starts at its first line",
    "game": "Studio",
@@ -1486,7 +1483,7 @@
    "state": "done",
    "at": 1792790510,
    "created": 1792790510,
-   "estPercentOfWeek": 427.26
+   "estPercentOfWeek": 452.19
   },
   {
    "id": "P3OR49_a11y-audit-no-crash-on-other-games",

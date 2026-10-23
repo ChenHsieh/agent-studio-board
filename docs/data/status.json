@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T21:35:31+00:00",
+ "generated": "2026-10-23T21:37:55+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -24,26 +24,26 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 6,
-    "doneToday": 36,
-    "minutes": 420,
-    "estimateMinutes": 105
+    "running": 0,
+    "doneToday": 42,
+    "minutes": 60,
+    "estimateMinutes": 60
    }
   },
   "queued": 43,
-  "running": 8,
-  "doneToday": 39,
+  "running": 2,
+  "doneToday": 45,
   "lanes": {
    "Codex": 2,
-   "Claude": 4
+   "Claude": 1
   },
   "laneCap": {
    "Claude": 4,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2180,
-  "estimatedFinish": "2026-10-24T12:15:31+00:00",
+  "minutesRemaining": 1820,
+  "estimatedFinish": "2026-10-24T12:17:55+00:00",
   "estimateMinutes": 880
  },
  "lanes": [
@@ -60,67 +60,19 @@
    "game": "even-water",
    "task": "P2FM56_even water first minute fix",
    "since": "2026-10-23T21:00:48+00:00",
-   "activity": "2026-10-23T21:35:22+00:00",
+   "activity": "2026-10-23T21:37:49+00:00",
    "commit": {
-    "at": "2026-10-23T21:23:43+00:00",
-    "subject": "fix: keep the board in place after the lesson"
+    "at": "2026-10-23T21:37:15+00:00",
+    "subject": "docs: record clean first minute gates"
    }
-  },
-  {
-   "worker": "Claude",
-   "game": "name-to-carry",
-   "task": "P3OR53_name to carry data inside game",
-   "since": "2026-10-23T21:35:24+00:00",
-   "activity": "2026-10-23T21:35:30+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "cymatic-plate",
-   "task": "P3OR54_cymatic plate credits page",
-   "since": "2026-10-23T21:35:24+00:00",
-   "activity": "2026-10-23T21:35:30+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "fold-guess",
-   "task": "P3OR55_fold guess credits page",
-   "since": "2026-10-23T21:35:24+00:00",
-   "activity": "2026-10-23T21:35:31+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "gallery-guess",
-   "task": "P3OR56_gallery guess credits page",
-   "since": "2026-10-23T21:35:24+00:00",
-   "activity": "2026-10-23T21:35:30+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "mirror-hold",
-   "task": "P3OR57_mirror hold credits page",
-   "since": "2026-10-23T21:35:24+00:00",
-   "activity": "2026-10-23T21:35:32+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "thumb-stand",
-   "task": "P3OR58_thumb stand credits page",
-   "since": "2026-10-23T21:35:24+00:00",
-   "activity": "2026-10-23T21:35:32+00:00",
-   "commit": null
   }
  ],
  "codexLanes": 2,
- "claudeWorkers": 6,
+ "claudeWorkers": 0,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 203,
-  "usdEst": 730.8,
+  "runs": 204,
+  "usdEst": 734.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -191,8 +143,8 @@
    "title": "A Name to Carry",
    "line": "Eight scenes, ministry tiers and a share card: carry a name through the forms, Mandarin first.",
    "url": "https://chenhsieh.github.io/name-to-carry/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Eight scenes, ministry tiers and a share card: carry a name through the forms,",
    "shelfNote": "",
@@ -201,34 +153,20 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T02:25:43+00:00",
-   "lastChange": "2026-10-23T21:35:30+00:00",
+   "lastChange": "2026-10-23T21:35:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 160880,
     "codexUsdEst": 0.19,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 6,
-    "earlierUsdEst": 21.6,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
     "totalUsdEst": 21.79
    },
    "tasks": [
-    {
-     "title": "P3OR53_name to carry data inside game",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Name to Carry: move the name list into the game file so tools can load it alone (cheap lane)",
-     "since": "2026-10-23T21:35:24+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2NC00_name to carry data inline",
      "state": "queued",
@@ -242,6 +180,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P3OR53_name to carry data inside game",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Name to Carry: move the name list into the game file so tools can load it alone (cheap lane)",
+     "since": "2026-10-23T21:35:17+00:00",
+     "done": "2026-10-23T21:35:17+00:00",
+     "reviewed": false,
+     "minutes": 0,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: python3 tools/build_data.py >/dev/null && grep -qF '/* NAME_DATA:BEGIN' docs/game.js && grep -qF '/* NAME_DATA:END */' docs/game.js && python3 -c \"import json;g=open('docs/game.js',encoding='utf-8')"
     },
     {
      "title": "P2FM20_name to carry first minute",
@@ -260,9 +212,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": null,
    "needsYou": "Native read of the Mandarin phrases across the 8 scenes is still owed before sharing. Suggest: have a native reader check them first, Mandarin leads the game.",
@@ -3471,8 +3423,8 @@
    "nextTask": null,
    "costTotalUsd": 76.24,
    "latestChange": {
-    "text": "fix: change daily at local midnight",
-    "at": "2026-10-21T17:13:31+00:00"
+    "text": "P3OR54_cymatic-plate-credits-page: WORKDIR",
+    "at": "2026-10-23T21:35:40+00:00"
    },
    "promo": {
     "files": {
@@ -3488,8 +3440,8 @@
    "title": "Cymatic Plate",
    "line": "Ring notes on a brass plate covered in sand and watch the.",
    "url": "https://chenhsieh.github.io/cymatic-plate/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
@@ -3498,33 +3450,33 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-16T01:40:04+00:00",
-   "lastChange": "2026-10-23T21:35:30+00:00",
+   "lastChange": "2026-10-23T21:35:40+00:00",
    "cost": {
     "apiUsd": 3.26,
     "codexRuns": 5,
-    "claudeRuns": 5,
+    "claudeRuns": 6,
     "apiRuns": 2,
     "codexTokens": 816933,
     "codexUsdEst": 0.98,
-    "claudeUsdEst": 18.0,
-    "earlierRounds": 15,
-    "earlierUsdEst": 54.0,
+    "claudeUsdEst": 21.6,
+    "earlierRounds": 14,
+    "earlierUsdEst": 50.4,
     "totalUsdEst": 76.24
    },
    "tasks": [
     {
      "title": "P3OR54_cymatic plate credits page",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "cymatic-plate: a credits file that names every font, data source and code licence (cheap lane)",
-     "since": "2026-10-23T21:35:24+00:00",
-     "done": null,
+     "since": "2026-10-23T21:33:34+00:00",
+     "done": "2026-10-23T21:33:34+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 0,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: grep -qF 'IM Fell English' docs/CREDITS.md && grep -qF 'Atkinson Hyperlegible' docs/CREDITS.md && grep -qF 'SIL Open Font License' docs/CREDITS.md && grep -qF 'Web Audio' docs/CREDITS.md && ! grep -q '—"
     },
     {
      "title": "P1SD16_studio standard cymatic plate",
@@ -3627,9 +3579,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 12
+    "done": 13
    },
    "verdict": {
     "date": "2026-10-20",
@@ -3637,8 +3589,14 @@
     "note": "Ship after endless mode gets sound, haptics and the logo"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-23T21:35:40+00:00",
+     "ok": true,
+     "note": "P3OR54_cymatic-plate-credits-page: WORKDIR",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-21T17:13:31+00:00",
      "ok": true,
@@ -3704,12 +3662,6 @@
      "ok": true,
      "note": "test: the opening test follows the new level 1 and 3 lines",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-18T22:38:14+00:00",
-     "ok": true,
-     "note": "published Listen preview and optional assist rings; checked Easy/Medium/Hard Daily and Endless plates; prior-live save survives; live touch screenshots reviewed at 390x844 and 320x568",
-     "source": "board note"
     }
    ]
   },
@@ -4768,7 +4720,7 @@
    "released": false,
    "releasedOn": null,
    "releasedNote": "",
-   "firstSeen": "2026-09-20T15:44:58+00:00",
+   "firstSeen": "2026-10-15T14:24:46+00:00",
    "lastChange": "2026-10-23T21:34:18+00:00",
    "cost": {
     "apiUsd": 0.0,
@@ -4917,10 +4869,22 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-23T21:32:30+00:00",
+     "ok": true,
+     "note": "feat: gloves explained and earnable, a view strip for every object, one free retry",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-23T21:16:56+00:00",
      "ok": true,
      "note": "Collection shelf on Home, Chinese beside English, drawers sized to labels",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-23T21:15:28+00:00",
+     "ok": true,
+     "note": "feat: Collection shelf on Home, Chinese beside English, drawers sized to their labels",
+     "source": "main commit"
     },
     {
      "at": "2026-10-23T07:54:46+00:00",
@@ -4969,18 +4933,6 @@
      "ok": true,
      "note": "ship standard: daily by local date, archive, practice easy/medium/hard, collection with credits, stats; live",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-21T17:38:29+00:00",
-     "ok": true,
-     "note": "feat:",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T04:30:08+00:00",
-     "ok": true,
-     "note": "feat: restore each night in a museum cabinet",
-     "source": "board note"
     }
    ]
   },
@@ -5014,7 +4966,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-23T21:35:22+00:00",
+   "lastChange": "2026-10-23T21:37:49+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -5040,8 +4992,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-23T21:23:43+00:00",
-      "subject": "fix: keep the board in place after the lesson"
+      "at": "2026-10-23T21:37:15+00:00",
+      "subject": "docs: record clean first minute gates"
      },
      "result": ""
     },
@@ -6776,8 +6728,8 @@
    "title": "Fold Guess",
    "line": "Date a real protein structure and its method.",
    "url": "https://chenhsieh.github.io/fold-guess/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Ship: link preview, English default, own logo, no hub link",
    "shelfNote": "",
@@ -6786,33 +6738,33 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-09-20T05:15:49+00:00",
-   "lastChange": "2026-10-23T21:35:31+00:00",
+   "lastChange": "2026-10-23T21:33:34+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 2,
     "codexTokens": 190591,
     "codexUsdEst": 0.23,
-    "claudeUsdEst": 10.8,
-    "earlierRounds": 9,
-    "earlierUsdEst": 32.4,
+    "claudeUsdEst": 14.4,
+    "earlierRounds": 8,
+    "earlierUsdEst": 28.8,
     "totalUsdEst": 43.43
    },
    "tasks": [
     {
      "title": "P3OR55_fold guess credits page",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "fold-guess: a credits file that names every font, data source and code licence (cheap lane)",
-     "since": "2026-10-23T21:35:24+00:00",
-     "done": null,
+     "since": "2026-10-23T21:33:34+00:00",
+     "done": "2026-10-23T21:33:34+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 0,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: grep -qF 'Protein Data Bank' docs/CREDITS.md && grep -qF 'CC0' docs/CREDITS.md && grep -qF '3Dmol.js' docs/CREDITS.md && grep -qF 'BSD' docs/CREDITS.md && ! grep -q '—' docs/CREDITS.md"
     },
     {
      "title": "P2RL10_save test fold guess",
@@ -6901,9 +6853,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": {
     "date": "2026-10-20",
@@ -6911,7 +6863,7 @@
     "note": "Ship: Win98 look approved; add link preview, remove hub link"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-23T02:47:24+00:00",
@@ -6989,10 +6941,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 32.61,
+   "costTotalUsd": 36.21,
    "latestChange": {
-    "text": "P3OR00_gallery-guess-words-test: WORKDIR",
-    "at": "2026-10-22T21:03:17+00:00"
+    "text": "P3OR56_gallery-guess-credits-page: WORKDIR",
+    "at": "2026-10-23T21:36:27+00:00"
    },
    "promo": null,
    "why": "Public-domain objects from The Metropolitan Museum of Art's open collection API.",
@@ -7001,8 +6953,8 @@
    "title": "Gallery Guess",
    "line": "Place each museum object by country and year.",
    "url": "https://chenhsieh.github.io/gallery-guess/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Story and mechanism pass; pending a merge decision",
    "shelfNote": "",
@@ -7011,33 +6963,33 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-09-20T13:46:25+00:00",
-   "lastChange": "2026-10-23T21:35:30+00:00",
+   "lastChange": "2026-10-23T21:36:27+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 2,
     "codexTokens": 177723,
     "codexUsdEst": 0.21,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 8,
     "earlierUsdEst": 28.8,
-    "totalUsdEst": 32.61
+    "totalUsdEst": 36.21
    },
    "tasks": [
     {
      "title": "P3OR56_gallery guess credits page",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "gallery-guess: a credits file that names every font, data source and code licence (cheap lane)",
-     "since": "2026-10-23T21:35:24+00:00",
-     "done": null,
+     "since": "2026-10-23T21:33:34+00:00",
+     "done": "2026-10-23T21:33:34+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 1,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: grep -qF 'Metropolitan Museum of Art' docs/CREDITS.md && grep -qF 'CC0' docs/CREDITS.md && grep -qF 'studio original' docs/CREDITS.md && ! grep -q '—' docs/CREDITS.md"
     },
     {
      "title": "P3OR00_gallery guess words test",
@@ -7098,9 +7050,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": {
     "date": "2026-10-19",
@@ -7108,8 +7060,14 @@
     "note": "Ship after ship standard, share cap and ranks"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-23T21:36:27+00:00",
+     "ok": true,
+     "note": "P3OR56_gallery-guess-credits-page: WORKDIR",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-22T21:03:17+00:00",
      "ok": true,
@@ -7174,12 +7132,6 @@
      "at": "2026-09-20T14:31:26+00:00",
      "ok": true,
      "note": "Settings menu, mechanism diagram, and the shared kit",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-20T13:46:25+00:00",
-     "ok": true,
-     "note": "Gallery: where and when was this museum object made",
      "source": "main commit"
     }
    ]
@@ -12442,8 +12394,8 @@
    "title": "Mirror Hold",
    "line": "Wax a hairstyle, then test it against three pulls.",
    "url": "https://chenhsieh.github.io/mirror-hold/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Huge revamp planned by a cross-functional lead",
    "shelfNote": "",
@@ -12452,33 +12404,33 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-15T11:43:46+00:00",
-   "lastChange": "2026-10-23T21:35:32+00:00",
+   "lastChange": "2026-10-23T21:33:34+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
-    "claudeRuns": 8,
+    "claudeRuns": 9,
     "apiRuns": 1,
     "codexTokens": 959889,
     "codexUsdEst": 1.15,
-    "claudeUsdEst": 28.8,
-    "earlierRounds": 13,
-    "earlierUsdEst": 46.8,
+    "claudeUsdEst": 32.4,
+    "earlierRounds": 12,
+    "earlierUsdEst": 43.2,
     "totalUsdEst": 76.75
    },
    "tasks": [
     {
      "title": "P3OR57_mirror hold credits page",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "mirror-hold: a credits file that names every font, data source and code licence (cheap lane)",
-     "since": "2026-10-23T21:35:24+00:00",
-     "done": null,
+     "since": "2026-10-23T21:33:34+00:00",
+     "done": "2026-10-23T21:33:34+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 0,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: grep -qF 'Noto Serif TC' docs/CREDITS.md && grep -qF 'SIL Open Font License' docs/CREDITS.md && grep -qF 'CC0' docs/CREDITS.md && grep -qF 'SOURCES.md' docs/CREDITS.md && ! grep -q '—' docs/CREDITS.md"
     },
     {
      "title": "P1MH58_mirror hold stranger rereview",
@@ -12581,9 +12533,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 13
+    "done": 14
    },
    "verdict": {
     "date": "2026-10-23",
@@ -12591,7 +12543,7 @@
     "note": "Comb each pull the right way before the bout and the hair holds; a wrong stroke springs loose strands you can see, and the real prints make every client a person"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-23T08:44:48+00:00",
@@ -22891,8 +22843,8 @@
    "title": "Thumb Stand",
    "line": "",
    "url": "https://chenhsieh.github.io/thumb-stand/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Total rework planned by a cross-functional lead",
    "shelfNote": "",
@@ -22901,33 +22853,33 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-16T00:44:20+00:00",
-   "lastChange": "2026-10-23T21:35:32+00:00",
+   "lastChange": "2026-10-23T21:33:34+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
-    "claudeRuns": 9,
+    "claudeRuns": 10,
     "apiRuns": 0,
     "codexTokens": 1518989,
     "codexUsdEst": 1.82,
-    "claudeUsdEst": 32.4,
-    "earlierRounds": 16,
-    "earlierUsdEst": 57.6,
+    "claudeUsdEst": 36.0,
+    "earlierRounds": 15,
+    "earlierUsdEst": 54.0,
     "totalUsdEst": 91.82
    },
    "tasks": [
     {
      "title": "P3OR58_thumb stand credits page",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "thumb-stand: a credits file that names every font, data source and code licence (cheap lane)",
-     "since": "2026-10-23T21:35:24+00:00",
-     "done": null,
+     "since": "2026-10-23T21:33:34+00:00",
+     "done": "2026-10-23T21:33:34+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 0,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: grep -qF 'Atkinson Hyperlegible' docs/CREDITS.md && grep -qF 'Dela Gothic One' docs/CREDITS.md && grep -qF 'Bowlby One SC' docs/CREDITS.md && grep -qF 'SIL Open Font License' docs/CREDITS.md && ! grep..."
     },
     {
      "title": "P1TS57_result card on small phone",
@@ -23030,9 +22982,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 15
+    "done": 16
    },
    "verdict": {
     "date": "2026-10-23",
@@ -23040,7 +22992,7 @@
     "note": "Put his comic panels in an order where every red line lands on his hand, then hold your thumb under him; a fall is a loud joke and a win is earned"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-23T21:21:24+00:00",
