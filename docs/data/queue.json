@@ -1,12 +1,12 @@
 {
- "generated": 1792792733,
+ "generated": 1792793321,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
-  "lanesBusy": 0,
+  "lanesBusy": 1,
   "ready": 0,
-  "waiting": 1,
-  "queued": 1,
-  "running": 0,
+  "waiting": 0,
+  "queued": 0,
+  "running": 1,
   "done24h": 61,
   "modelsQueued": {
    "deepseek-v4-flash": 1
@@ -83,7 +83,7 @@
   "codexOut": true,
   "converted": 0,
   "convertedRunning": 0,
-  "claudeWorkers": 0,
+  "claudeWorkers": 1,
   "claudeWorkerCap": 3,
   "handedBack": 0,
   "lastHandBack": null,
@@ -103,9 +103,45 @@
    "after": [],
    "priority": "P2",
    "why": "A photo of an anechoic chamber and a Fourier-epicycle drawing, later joined by a picture of quasicrystal surface waves.",
-   "state": "ready",
-   "waitingOn": [],
+   "state": "running",
+   "at": 1792791282,
    "created": 1792791282
+  },
+  {
+   "id": "P3OR59_time-material-story-and-scan-words",
+   "request": "Time as Material: put the chosen story line and the three scan-stage captions into the game's word table (cheap lane)",
+   "game": "Time Material",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1TM03_story-why-it-matters"
+   ],
+   "priority": "P2",
+   "why": "",
+   "state": "running",
+   "at": 1792791256,
+   "created": 1792791256
+  },
+  {
+   "id": "P1TE00_harder-hints-and-varied-results",
+   "request": "Think an Elephant: make the hint slower to give the answer, and give each level its own result quote.",
+   "game": "Think Elephant",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
+   "state": "running",
+   "at": 1792791285,
+   "created": 1792791285
   },
   {
    "id": "P1TM01_answer-not-given-away",
@@ -123,23 +159,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792791284
-  },
-  {
-   "id": "P1TM03_story-why-it-matters",
-   "request": "Time as Material: a short story that says why decoding time is worth doing.",
-   "game": "Time Material",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792791245
   },
   {
    "id": "P2FM58_tractatus-tree-first-minute-fix",
@@ -400,23 +419,6 @@
    "created": 1792791285
   },
   {
-   "id": "P1TE00_harder-hints-and-varied-results",
-   "request": "Think an Elephant: make the hint slower to give the answer, and give each level its own result quote.",
-   "game": "Think Elephant",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792791285
-  },
-  {
    "id": "P1TE01_designer-pass-mechanics",
    "request": "Think an Elephant: a game designer decides how the forest and room chapters really change the mechanic and difficulty, then refines the look.",
    "game": "Think Elephant",
@@ -550,27 +552,6 @@
    ],
    "created": 1792715918,
    "estPercentOfWeek": 451.92
-  },
-  {
-   "id": "P3OR59_time-material-story-and-scan-words",
-   "request": "Time as Material: put the chosen story line and the three scan-stage captions into the game's word table (cheap lane)",
-   "game": "Time Material",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1TM03_story-why-it-matters"
-   ],
-   "priority": "P2",
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P1TM03_story-why-it-matters"
-   ],
-   "created": 1792791256
   },
   {
    "id": "P2AX10_audit-report-one-line-per-problem",
@@ -1125,6 +1106,23 @@
    "state": "done",
    "at": 1792791214,
    "created": 1792791214
+  },
+  {
+   "id": "P1TM03_story-why-it-matters",
+   "request": "Time as Material: a short story that says why decoding time is worth doing.",
+   "game": "Time Material",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "",
+   "state": "done",
+   "at": 1792791245,
+   "created": 1792791245
   },
   {
    "id": "P2FM54_grub-band-first-minute-fix",
