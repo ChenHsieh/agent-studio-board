@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T07:24:27+00:00",
+ "generated": "2026-10-23T07:29:50+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -18,23 +18,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 39,
+    "queued": 38,
     "running": 0,
     "doneToday": 0,
-    "minutes": 1560,
+    "minutes": 1520,
     "estimateMinutes": 0
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 3,
+    "doneToday": 4,
     "minutes": 180,
     "estimateMinutes": 60
    }
   },
-  "queued": 40,
+  "queued": 39,
   "running": 2,
-  "doneToday": 3,
+  "doneToday": 4,
   "lanes": {
    "Codex": 0,
    "Claude": 3
@@ -44,8 +44,8 @@
    "Codex": 0
   },
   "codexPaused": true,
-  "minutesRemaining": 1740,
-  "estimatedFinish": "2026-10-23T08:24:27+00:00",
+  "minutesRemaining": 1700,
+  "estimatedFinish": "2026-10-23T08:29:50+00:00",
   "estimateMinutes": 60
  },
  "lanes": [
@@ -59,10 +59,10 @@
   },
   {
    "worker": "Claude",
-   "game": "lie-flat",
-   "task": "P2FM47_lie flat first minute",
-   "since": "2026-10-23T07:16:17+00:00",
-   "activity": "2026-10-23T07:23:21+00:00",
+   "game": "notched-boat",
+   "task": "P2FM50_notched boat first minute",
+   "since": "2026-10-23T07:29:22+00:00",
+   "activity": "2026-10-23T07:29:22+00:00",
    "commit": null
   }
  ],
@@ -70,8 +70,8 @@
  "claudeWorkers": 2,
  "apiSpentUsd": 310.91,
  "claudeInSession": {
-  "runs": 173,
-  "usdEst": 622.8,
+  "runs": 174,
+  "usdEst": 626.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -117,7 +117,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 3
+   "changes": 4
   }
  ],
  "houseRules": 25,
@@ -10368,10 +10368,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 29.42,
+   "costTotalUsd": 33.02,
    "latestChange": {
-    "text": "P2FM47_lie-flat-first-minute handed to Claude: Codex hit the 90 min cap;",
-    "at": "2026-10-23T01:27:24+00:00"
+    "text": "first-minute round live: premise + 3 boards, skip/replay, gates green",
+    "at": "2026-10-23T07:29:18+00:00"
    },
    "promo": null,
    "why": "A hexagonal origami twist-tessellation crease pattern; mark each fold of a crease pattern mountain or valley so the paper can lie flat.",
@@ -10380,8 +10380,8 @@
    "title": "Lie Flat",
    "line": "",
    "url": "https://chenhsieh.github.io/lie-flat/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -10390,27 +10390,27 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-20T20:36:20+00:00",
-   "lastChange": "2026-10-23T07:23:21+00:00",
+   "lastChange": "2026-10-23T07:29:18+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 520760,
     "codexUsdEst": 0.62,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 8,
     "earlierUsdEst": 28.8,
-    "totalUsdEst": 29.42
+    "totalUsdEst": 33.02
    },
    "tasks": [
     {
      "title": "P2FM47_lie flat first minute",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Lie Flat: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-23T07:16:17+00:00",
-     "done": null,
+     "since": "2026-10-23T04:25:14+00:00",
+     "done": "2026-10-23T04:25:14+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -10449,9 +10449,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": {
     "date": "2026-10-21",
@@ -10459,8 +10459,14 @@
     "note": "Explain numbers; softer paper"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-23T07:29:18+00:00",
+     "ok": true,
+     "note": "first-minute round live: premise + 3 boards, skip/replay, gates green",
+     "source": "board note"
+    },
     {
      "at": "2026-10-23T01:27:24+00:00",
      "ok": false,
@@ -13703,7 +13709,7 @@
   },
   {
    "nextTask": "Not Yet: give the player a real choice...",
-   "costTotalUsd": 14.64,
+   "costTotalUsd": 18.24,
    "latestChange": {
     "text": "feat: Play the cone's first minute",
     "at": "2026-10-22T20:38:21+00:00"
@@ -13730,7 +13736,7 @@
    "released": false,
    "releasedOn": null,
    "releasedNote": "",
-   "firstSeen": "2026-10-22T20:02:00+00:00",
+   "firstSeen": "2026-10-22T19:52:47+00:00",
    "lastChange": "2026-10-23T03:05:20+00:00",
    "cost": {
     "apiUsd": 0.0,
@@ -13740,9 +13746,9 @@
     "codexTokens": 197900,
     "codexUsdEst": 0.24,
     "claudeUsdEst": 14.4,
-    "earlierRounds": 0,
-    "earlierUsdEst": 0.0,
-    "totalUsdEst": 14.64
+    "earlierRounds": 1,
+    "earlierUsdEst": 3.6,
+    "totalUsdEst": 18.24
    },
    "tasks": [
     {
@@ -13851,15 +13857,39 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-22T20:38:18+00:00",
+     "ok": true,
+     "note": "feat: Play the cone's first minute",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-22T20:02:00+00:00",
      "ok": true,
      "note": "Dodge the customer's reaching hand for delight, give the cone once past the gold line before patience runs out; 10 customers, daily, endless",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-22T20:00:12+00:00",
+     "ok": true,
+     "note": "feat: Not Yet, tease the customer's hand and give the cone at the right moment",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T19:54:12+00:00",
+     "ok": true,
+     "note": "feat: Not Yet starts from the Play Lab game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T19:52:47+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
     }
    ]
   },
   {
-   "nextTask": "The Notched Boat: add a short first-minute round...",
+   "nextTask": null,
    "costTotalUsd": 25.2,
    "latestChange": {
     "text": "P2FM50_notched-boat-first-minute handed to Claude: Codex quota ran out;",
@@ -13872,8 +13902,8 @@
    "title": "Notched Boat",
    "line": "",
    "url": "https://chenhsieh.github.io/notched-boat/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -13882,7 +13912,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-21T01:39:00+00:00",
-   "lastChange": "2026-10-23T04:25:14+00:00",
+   "lastChange": "2026-10-23T07:29:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -13898,10 +13928,10 @@
    "tasks": [
     {
      "title": "P2FM50_notched boat first minute",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "The Notched Boat: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-23T04:25:14+00:00",
+     "since": "2026-10-23T07:29:22+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -13926,8 +13956,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
