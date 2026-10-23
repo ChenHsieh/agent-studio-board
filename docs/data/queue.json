@@ -1,5 +1,5 @@
 {
- "generated": 1792758557,
+ "generated": 1792758805,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -79,9 +79,9 @@
  },
  "overflow": {
   "codexOut": true,
-  "converted": 4,
-  "convertedRunning": 0,
-  "claudeWorkers": 1,
+  "converted": 9,
+  "convertedRunning": 1,
+  "claudeWorkers": 2,
   "claudeWorkerCap": 3,
   "handedBack": 0,
   "lastHandBack": null,
@@ -89,11 +89,46 @@
  },
  "tasks": [
   {
+   "id": "P2SW01_still-water-zh-hant-level-hints",
+   "request": "Still Water: put the level hints in Traditional Chinese",
+   "game": "Still Water",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "A photo of an anechoic chamber and a Fourier-epicycle drawing, later joined by a picture of quasicrystal surface waves.",
+   "state": "running",
+   "at": 1792745765,
+   "created": 1792745765
+  },
+  {
+   "id": "P2FM59_shortest-law-first-minute-ship",
+   "request": "Shortest Law: ship the finished first-minute lesson (rerun the checks that timed out, then publish)",
+   "game": "Shortest Law",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "first-minute",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "A joke page of physics equations whose conclusion is only that things fall, plus symbolic-regression software.",
+   "state": "running",
+   "at": 1792758464,
+   "created": 1792758464,
+   "wasCodex": true
+  },
+  {
    "id": "P2CC34_lab-edge-counts-keep-their-shape",
    "request": "Colony Count: in the round dish and octagon lab, edge counts show the colony's shape as well as its colour",
    "game": "Colony Count",
-   "route": "Codex",
-   "model": "gpt-6-sol",
+   "route": "Claude",
+   "model": "sonnet",
    "effort": "high",
    "kind": "build",
    "size": "one repo",
@@ -105,8 +140,8 @@
    "why": "An ad for a three-colour sweeper puzzle (ColorSweeper).",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792749141,
-   "estPercentOfWeek": 0.25
+   "created": 1792758654,
+   "wasCodex": true
   },
   {
    "id": "P2RL11_credits-panel-colony-count",
@@ -331,23 +366,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P2SW01_still-water-zh-hant-level-hints",
-   "request": "Still Water: put the level hints in Traditional Chinese",
-   "game": "Still Water",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "A photo of an anechoic chamber and a Fourier-epicycle drawing, later joined by a picture of quasicrystal surface waves.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792745765
-  },
-  {
    "id": "P3NY00_not-yet-a-real-choice",
    "request": "Not Yet: give the player a real choice (the cone moves one lane a beat, the next three grabs are shown), or shelve it",
    "game": "Not Yet",
@@ -407,8 +425,8 @@
    "id": "P1AX04_kit-howto-card-clear-of-top-bar",
    "request": "Play template: the How to play card opens fully below the top bar and starts at its first line",
    "game": "Studio",
-   "route": "Codex",
-   "model": "gpt-6-sol",
+   "route": "Claude",
+   "model": "sonnet",
    "effort": "high",
    "kind": "build",
    "size": "one repo",
@@ -418,25 +436,7 @@
    "why": "",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792748683,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2FM59_shortest-law-first-minute-ship",
-   "request": "Shortest Law: ship the finished first-minute lesson (rerun the checks that timed out, then publish)",
-   "game": "Shortest Law",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "A joke page of physics equations whose conclusion is only that things fall, plus symbolic-regression software.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792758464,
+   "created": 1792758654,
    "wasCodex": true
   },
   {
@@ -478,8 +478,8 @@
    "id": "P3OR49_a11y-audit-no-crash-on-other-games",
    "request": "Play template: the accessibility check runs on games that are not built on the template instead of stopping",
    "game": "Studio",
-   "route": "Codex",
-   "model": "gpt-6-sol",
+   "route": "Claude",
+   "model": "sonnet",
    "effort": "high",
    "kind": "build",
    "size": "one repo",
@@ -489,8 +489,8 @@
    "why": "",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792750611,
-   "estPercentOfWeek": 0.25
+   "created": 1792758654,
+   "wasCodex": true
   },
   {
    "id": "P2HN00_herbal-pages-stay-open",
@@ -518,8 +518,8 @@
    "id": "P1AX05_demo-play-fits-one-screen",
    "request": "Play template: the sample game's board, row and Undo fit one phone screen at both text sizes; drawn labels stay readable",
    "game": "Studio",
-   "route": "Codex",
-   "model": "gpt-6-sol",
+   "route": "Claude",
+   "model": "sonnet",
    "effort": "high",
    "kind": "build",
    "size": "one repo",
@@ -533,15 +533,15 @@
    "waitingOn": [
     "P1AX04_kit-howto-card-clear-of-top-bar"
    ],
-   "created": 1792748743,
-   "estPercentOfWeek": 0.25
+   "created": 1792758654,
+   "wasCodex": true
   },
   {
    "id": "P1AX06_a11y-audit-fit-cover-canvas-checks",
    "request": "Play template: the accessibility check also catches a board below the fold, a card hidden under the top bar, and tiny drawn labels",
    "game": "Studio",
-   "route": "Codex",
-   "model": "gpt-6-sol",
+   "route": "Claude",
+   "model": "sonnet",
    "effort": "high",
    "kind": "build",
    "size": "one repo",
@@ -557,8 +557,8 @@
     "P1AX05_demo-play-fits-one-screen",
     "P3OR49_a11y-audit-no-crash-on-other-games"
    ],
-   "created": 1792748770,
-   "estPercentOfWeek": 0.25
+   "created": 1792758654,
+   "wasCodex": true
   },
   {
    "id": "P1AX07_play-template-stranger-rereview",
