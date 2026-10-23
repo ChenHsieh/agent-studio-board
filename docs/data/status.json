@@ -1,9 +1,11 @@
 {
- "generated": "2026-10-23T02:49:00+00:00",
+ "generated": "2026-10-23T02:53:23+00:00",
  "ops": {
   "count": 0,
   "notes": [],
-  "info": []
+  "info": [
+   "Codex paused (quota)"
+  ]
  },
  "about": [],
  "project": {
@@ -16,11 +18,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 42,
-    "running": 2,
+    "queued": 45,
+    "running": 0,
     "doneToday": 56,
-    "minutes": 1760,
-    "estimateMinutes": 880
+    "minutes": 1800,
+    "estimateMinutes": 0
    },
    "Claude": {
     "queued": 1,
@@ -30,31 +32,23 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 43,
-  "running": 7,
+  "queued": 46,
+  "running": 5,
   "doneToday": 173,
   "lanes": {
-   "Codex": 2,
+   "Codex": 0,
    "Claude": 4
   },
   "laneCap": {
    "Claude": 4,
-   "Codex": null
+   "Codex": 0
   },
-  "codexPaused": false,
-  "minutesRemaining": 2120,
-  "estimatedFinish": "2026-10-23T17:29:00+00:00",
-  "estimateMinutes": 880
+  "codexPaused": true,
+  "minutesRemaining": 2160,
+  "estimatedFinish": "2026-10-23T04:23:23+00:00",
+  "estimateMinutes": 90
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "play-template",
-   "task": "P1AX01_kit large text colour safe and audit tool",
-   "since": null,
-   "activity": null,
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "Multiple games",
@@ -62,17 +56,6 @@
    "since": null,
    "activity": null,
    "commit": null
-  },
-  {
-   "worker": "Codex",
-   "game": "notched-boat",
-   "task": "P2FM50_notched boat first minute",
-   "since": "2026-10-23T01:27:25+00:00",
-   "activity": "2026-10-23T02:48:58+00:00",
-   "commit": {
-    "at": "2026-10-23T02:48:58+00:00",
-    "subject": "wip: P2FM50_notched-boat-first-minute (Codex lane autosave 22:48)"
-   }
   },
   {
    "worker": "Claude",
@@ -95,7 +78,7 @@
    "game": "herbal-of-nowhere",
    "task": "P3OR45_herbal pages stay open logic",
    "since": "2026-10-23T02:48:58+00:00",
-   "activity": "2026-10-23T02:48:59+00:00",
+   "activity": "2026-10-23T02:53:07+00:00",
    "commit": null
   },
   {
@@ -107,7 +90,7 @@
    "commit": null
   }
  ],
- "codexLanes": 2,
+ "codexLanes": 0,
  "claudeWorkers": 5,
  "apiSpentUsd": 308.37,
  "claudeInSession": {
@@ -154,7 +137,7 @@
   },
   {
    "day": "2026-10-22",
-   "changes": 273
+   "changes": 277
   }
  ],
  "houseRules": 25,
@@ -8313,7 +8296,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-23T02:48:59+00:00",
+   "lastChange": "2026-10-23T02:53:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -13358,11 +13341,11 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 21.6,
+   "nextTask": "The Notched Boat: add a short first-minute round...",
+   "costTotalUsd": 25.2,
    "latestChange": {
-    "text": "see",
-    "at": "2026-10-23T01:23:12+00:00"
+    "text": "P2FM50_notched-boat-first-minute handed to Claude: Codex quota ran out;",
+    "at": "2026-10-23T02:53:00+00:00"
    },
    "promo": null,
    "id": "notched-boat",
@@ -13370,7 +13353,7 @@
    "title": "Notched Boat",
    "line": "",
    "url": "https://chenhsieh.github.io/notched-boat/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
@@ -13380,7 +13363,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-21T01:39:00+00:00",
-   "lastChange": "2026-10-23T02:48:58+00:00",
+   "lastChange": "2026-10-23T02:53:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -13389,26 +13372,23 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
-    "totalUsdEst": 21.6
+    "earlierRounds": 6,
+    "earlierUsdEst": 21.6,
+    "totalUsdEst": 25.2
    },
    "tasks": [
     {
      "title": "P2FM50_notched boat first minute",
-     "state": "running",
+     "state": "queued",
      "worker": "Codex",
      "plan": "The Notched Boat: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-23T01:27:25+00:00",
+     "since": "2026-10-23T02:53:00+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-23T02:48:58+00:00",
-      "subject": "wip: P2FM50_notched-boat-first-minute (Codex lane autosave 22:48)"
-     },
+     "commit": null,
      "result": ""
     },
     {
@@ -13427,8 +13407,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
@@ -13436,6 +13416,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-23T02:53:00+00:00",
+     "ok": false,
+     "note": "P2FM50_notched-boat-first-minute handed to Claude: Codex quota ran out;",
+     "source": "board note"
+    },
     {
      "at": "2026-10-23T01:23:12+00:00",
      "ok": false,
@@ -13476,7 +13462,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 3.6,
+   "costTotalUsd": 10.8,
    "latestChange": {
     "text": "P2IN07 institution round: 3 core briefs (designs/institution_npc), One More Chair PASS...",
     "at": "2026-10-22T21:38:57+00:00"
@@ -13496,7 +13482,7 @@
    "released": false,
    "releasedOn": null,
    "releasedNote": "",
-   "firstSeen": "2026-10-22T21:38:57+00:00",
+   "firstSeen": "2026-10-22T21:34:40+00:00",
    "lastChange": "2026-10-22T21:38:57+00:00",
    "cost": {
     "apiUsd": 0.0,
@@ -13506,9 +13492,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 1,
-    "earlierUsdEst": 3.6,
-    "totalUsdEst": 3.6
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
+    "totalUsdEst": 10.8
    },
    "tasks": [],
    "taskCounts": {
@@ -13526,6 +13512,18 @@
      "ok": true,
      "note": "P2IN07 institution round: 3 core briefs (designs/institution_npc), One More Chair PASS and picked, repo made, build P2n109 queued on Codex",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-22T21:36:55+00:00",
+     "ok": true,
+     "note": "feat: One More Chair starts from the Play Lab game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T21:34:40+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
     }
    ]
   },
