@@ -1,11 +1,15 @@
 {
- "generated": "2026-10-23T22:35:44+00:00",
+ "generated": "2026-10-23T22:38:50+00:00",
  "ops": {
-  "count": 0,
-  "notes": [],
+  "count": 1,
+  "notes": [
+   "A game changed in the last hour with no claimed task on it."
+  ],
   "info": []
  },
- "about": [],
+ "about": [
+  "A game changed in the last hour with no claimed task on it."
+ ],
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -16,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 40,
+    "queued": 43,
     "running": 0,
     "doneToday": 4,
-    "minutes": 1600,
-    "estimateMinutes": 1600
+    "minutes": 1720,
+    "estimateMinutes": 1720
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 47,
+    "doneToday": 48,
     "minutes": 180,
     "estimateMinutes": 60
    }
   },
-  "queued": 41,
+  "queued": 44,
   "running": 2,
-  "doneToday": 51,
+  "doneToday": 52,
   "lanes": {
    "Codex": 1,
    "Claude": 3
@@ -42,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1780,
-  "estimatedFinish": "2026-10-25T01:15:44+00:00",
-  "estimateMinutes": 1600
+  "minutesRemaining": 1900,
+  "estimatedFinish": "2026-10-25T03:18:50+00:00",
+  "estimateMinutes": 1720
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "think-elephant",
-   "task": "P1TE01_designer pass mechanics",
-   "since": "2026-10-23T22:27:33+00:00",
-   "activity": "2026-10-23T22:35:16+00:00",
+   "game": "Multiple games",
+   "task": "P1NM00_game name audit",
+   "since": null,
+   "activity": null,
    "commit": null
   },
   {
@@ -68,8 +72,8 @@
  "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 208,
-  "usdEst": 748.8,
+  "runs": 209,
+  "usdEst": 752.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -115,7 +119,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 39
+   "changes": 40
   }
  ],
  "houseRules": 25,
@@ -22456,11 +22460,11 @@
    ]
   },
   {
-   "nextTask": "Think an Elephant: the room chapter gets its...",
-   "costTotalUsd": 21.71,
+   "nextTask": "Think an Elephant: a short first-minute lesson for...",
+   "costTotalUsd": 25.31,
    "latestChange": {
-    "text": "harder: hints narrow by kind, entry door, pars up to 5, one sourced line per level",
-    "at": "2026-10-23T22:27:26+00:00"
+    "text": "design pass: one rule per chapter (room = warm/cold), 5 build tasks queued",
+    "at": "2026-10-23T22:37:17+00:00"
    },
    "promo": null,
    "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
@@ -22469,8 +22473,8 @@
    "title": "Think Elephant",
    "line": "",
    "url": "https://chenhsieh.github.io/think-elephant/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -22479,26 +22483,68 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-21T04:40:58+00:00",
-   "lastChange": "2026-10-23T22:35:29+00:00",
+   "lastChange": "2026-10-23T22:37:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 91844,
     "codexUsdEst": 0.11,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 5,
     "earlierUsdEst": 18.0,
-    "totalUsdEst": 21.71
+    "totalUsdEst": 25.31
    },
    "tasks": [
     {
-     "title": "P1TE01_designer pass mechanics",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Think an Elephant: a game designer decides how the forest and room chapters really change the mechanic and difficulty, then refines the look.",
-     "since": "2026-10-23T22:27:33+00:00",
+     "title": "P1TE05_chapter lessons",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Think an Elephant: a short first-minute lesson for the forest and the room",
+     "since": "2026-10-23T22:36:52+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P2TE06_look refine",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Think an Elephant: refine the chalk look, bigger text, visible forest path",
+     "since": "2026-10-23T22:36:31+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1TE03_room strings",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Think an Elephant: words for the warm/cold room in both languages",
+     "since": "2026-10-23T22:36:12+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1TE04_room tests",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Think an Elephant: tests for the warm/cold clue and room pars",
+     "since": "2026-10-23T22:36:12+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -22512,7 +22558,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Think an Elephant: the room chapter gets its own rule, warm or cold instead of words",
-     "since": "2026-10-23T22:35:29+00:00",
+     "since": "2026-10-23T22:35:50+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -22536,6 +22582,20 @@
      "result": "For a player: from level 2 on the board no longer outlines the elephants that still fit and the strip no longer crosses them out; the note under the board only says what is settled (facing, height, across) and what is..."
     },
     {
+     "title": "P1TE01_designer pass mechanics",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Think an Elephant: a game designer decides how the forest and room chapters really change the mechanic and difficulty, then refines the look.",
+     "since": "2026-10-23T21:34:45+00:00",
+     "done": "2026-10-23T21:34:45+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "For a player: nothing yet on screen (design pass); designs/THINK_ELEPHANT_DESIGN.md now decides one rule per chapter, measured with the exact solver (tools/design_probe.js): chapter 1 words (par 2-3), chapter 2 walk in..."
+    },
+    {
      "title": "P2FM24_think elephant first minute",
      "state": "done",
      "worker": "Codex",
@@ -22551,15 +22611,21 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 1,
+    "queued": 5,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": null,
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-23T22:37:17+00:00",
+     "ok": true,
+     "note": "design pass: one rule per chapter (room = warm/cold), 5 build tasks queued",
+     "source": "board note"
+    },
     {
      "at": "2026-10-23T22:27:26+00:00",
      "ok": true,

@@ -1,5 +1,5 @@
 {
- "generated": 1792794964,
+ "generated": 1792795141,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -83,7 +83,7 @@
   "codexOut": true,
   "converted": 0,
   "convertedRunning": 0,
-  "claudeWorkers": 1,
+  "claudeWorkers": 0,
   "claudeWorkerCap": 3,
   "handedBack": 0,
   "lastHandBack": null,
@@ -108,18 +108,18 @@
    "created": 1792791284
   },
   {
-   "id": "P1TE01_designer-pass-mechanics",
-   "request": "Think an Elephant: a game designer decides how the forest and room chapters really change the mechanic and difficulty, then refines the look.",
-   "game": "Think Elephant",
+   "id": "P1NM00_game-name-audit",
+   "request": "List every game whose shown name differs from its repo name and settle one name for each.",
+   "game": "Studio",
    "route": "Claude",
-   "model": "opus",
+   "model": "sonnet",
    "effort": "high",
-   "kind": "design",
-   "size": "one repo",
+   "kind": "build",
+   "size": "studio",
    "estMinutes": null,
    "after": [],
    "priority": null,
-   "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
+   "why": "",
    "state": "running",
    "at": 1792791285,
    "created": 1792791285
@@ -436,23 +436,6 @@
    "created": 1792790568
   },
   {
-   "id": "P1NM00_game-name-audit",
-   "request": "List every game whose shown name differs from its repo name and settle one name for each.",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792791285
-  },
-  {
    "id": "P1TE02_room-warm-cold-rule",
    "request": "Think an Elephant: the room chapter gets its own rule, warm or cold instead of words",
    "game": "Think Elephant",
@@ -564,7 +547,7 @@
    "waitingOn": [
     "P1TE02_room-warm-cold-rule"
    ],
-   "created": 1792794954
+   "created": 1792794972
   },
   {
    "id": "P1TE04_room-tests",
@@ -577,15 +560,36 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P1TE02_room-warm-cold-rule"
+    "P1TE03_room-strings"
    ],
    "priority": null,
    "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
    "state": "waiting",
    "waitingOn": [
-    "P1TE02_room-warm-cold-rule"
+    "P1TE03_room-strings"
    ],
-   "created": 1792794958
+   "created": 1792794972
+  },
+  {
+   "id": "P1TE05_chapter-lessons",
+   "request": "Think an Elephant: a short first-minute lesson for the forest and the room",
+   "game": "Think Elephant",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1TE04_room-tests"
+   ],
+   "priority": null,
+   "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1TE04_room-tests"
+   ],
+   "created": 1792795012
   },
   {
    "id": "P2AX10_audit-report-one-line-per-problem",
@@ -630,6 +634,27 @@
    ],
    "created": 1792715918,
    "estPercentOfWeek": 451.92
+  },
+  {
+   "id": "P2TE06_look-refine",
+   "request": "Think an Elephant: refine the chalk look, bigger text, visible forest path",
+   "game": "Think Elephant",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1TE05_chapter-lessons"
+   ],
+   "priority": null,
+   "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1TE05_chapter-lessons"
+   ],
+   "created": 1792794991
   },
   {
    "id": "P2n100_review-one-umbrella-and-rolling-back",
@@ -1454,6 +1479,23 @@
    "model": "sonnet",
    "effort": "high",
    "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
+   "state": "done",
+   "at": 1792791285,
+   "created": 1792791285
+  },
+  {
+   "id": "P1TE01_designer-pass-mechanics",
+   "request": "Think an Elephant: a game designer decides how the forest and room chapters really change the mechanic and difficulty, then refines the look.",
+   "game": "Think Elephant",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "design",
    "size": "one repo",
    "estMinutes": null,
    "after": [],
