@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T21:00:38+00:00",
+ "generated": "2026-10-23T21:02:59+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,62 +16,97 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 36,
-    "running": 2,
+    "queued": 32,
+    "running": 3,
     "doneToday": 0,
-    "minutes": 1520,
-    "estimateMinutes": 507
+    "minutes": 1400,
+    "estimateMinutes": 467
    },
    "Claude": {
     "queued": 1,
-    "running": 0,
+    "running": 3,
     "doneToday": 28,
-    "minutes": 60,
+    "minutes": 240,
     "estimateMinutes": 60
    }
   },
-  "queued": 37,
-  "running": 2,
+  "queued": 33,
+  "running": 6,
   "doneToday": 28,
   "lanes": {
    "Codex": 3,
-   "Claude": 1
+   "Claude": 4
   },
   "laneCap": {
    "Claude": 4,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1580,
-  "estimatedFinish": "2026-10-24T05:27:38+00:00",
-  "estimateMinutes": 507
+  "minutesRemaining": 1640,
+  "estimatedFinish": "2026-10-24T04:49:59+00:00",
+  "estimateMinutes": 467
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P1CX00_codex on openrouter one lane test",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "dynasty-guess",
+   "task": "P1DG02_dynasty guess collection shelf bilingual labels",
+   "since": "2026-10-23T21:01:45+00:00",
+   "activity": "2026-10-23T21:02:41+00:00",
+   "commit": null
+  },
   {
    "worker": "Codex",
    "game": "flying-white",
    "task": "P1FW56_result screen fits small phone",
    "since": "2026-10-23T20:59:47+00:00",
-   "activity": "2026-10-23T21:00:35+00:00",
+   "activity": "2026-10-23T21:02:47+00:00",
    "commit": {
     "at": "2026-10-23T20:59:51+00:00",
     "subject": "start: P1FW56_result-screen-fits-small-phone"
    }
   },
   {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P1QW00_quota two windows and plan aware pacing",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
+  {
    "worker": "Codex",
    "game": "thumb-stand",
    "task": "P1TS57_result card on small phone",
    "since": "2026-10-23T21:00:18+00:00",
-   "activity": "2026-10-23T21:00:37+00:00",
+   "activity": "2026-10-23T21:02:45+00:00",
    "commit": {
     "at": "2026-10-23T21:00:19+00:00",
     "subject": "start: P1TS57_result-card-on-small-phone"
    }
+  },
+  {
+   "worker": "Codex",
+   "game": "even-water",
+   "task": "P2FM56_even water first minute fix",
+   "since": "2026-10-23T21:00:48+00:00",
+   "activity": "2026-10-23T21:02:57+00:00",
+   "commit": {
+    "at": "2026-10-23T21:00:48+00:00",
+    "subject": "start: P2FM56_even-water-first-minute-fix"
+   }
   }
  ],
  "codexLanes": 3,
- "claudeWorkers": 0,
+ "claudeWorkers": 3,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
   "runs": 195,
@@ -4687,7 +4722,7 @@
    ]
   },
   {
-   "nextTask": "Dynasty Guess: a clear collection shelf, Chinese beside...",
+   "nextTask": "Dynasty Guess: clear glove rules with warnings, a...",
    "costTotalUsd": 58.9,
    "latestChange": {
     "text": "cabinet no longer outlines the right era",
@@ -4700,8 +4735,8 @@
    "title": "Dynasty Guess",
    "line": "Place a museum object in its period.",
    "url": "https://chenhsieh.github.io/dynasty-guess/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Fix the missing object, then refine mechanism, story and",
    "shelfNote": "",
@@ -4710,7 +4745,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-09-20T15:44:58+00:00",
-   "lastChange": "2026-10-23T20:26:54+00:00",
+   "lastChange": "2026-10-23T21:02:41+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
@@ -4726,10 +4761,10 @@
    "tasks": [
     {
      "title": "P1DG02_dynasty guess collection shelf bilingual labels",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Dynasty Guess: a clear collection shelf, Chinese beside every English label, and era labels that fit their drawers",
-     "since": "2026-10-23T20:26:54+00:00",
+     "since": "2026-10-23T21:01:45+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -4838,8 +4873,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 14
    },
@@ -4926,7 +4961,7 @@
    ]
   },
   {
-   "nextTask": "Finish the first-minute round for even-water: the lesson...",
+   "nextTask": null,
    "costTotalUsd": 46.8,
    "latestChange": {
     "text": "P2RL03_credits-licences-even-water: WORKDIR",
@@ -4945,7 +4980,7 @@
    "title": "Even Water",
    "line": "Place a few stones so the water finds every cup before the deep pit drinks it; 12 villages.",
    "url": "https://chenhsieh.github.io/even-water/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Place a few stones so the water finds every cup before the deep pit drinks it;",
@@ -4955,7 +4990,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-23T02:47:07+00:00",
+   "lastChange": "2026-10-23T21:02:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -4971,16 +5006,19 @@
    "tasks": [
     {
      "title": "P2FM56_even water first minute fix",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Finish the first-minute round for even-water: the lesson starts only from the Play button, so jumping to a level never lands under it",
-     "since": "2026-10-22T23:50:04+00:00",
+     "since": "2026-10-23T21:00:48+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-23T21:00:48+00:00",
+      "subject": "start: P2FM56_even-water-first-minute-fix"
+     },
      "result": ""
     },
     {
@@ -5055,8 +5093,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 5
    },
@@ -6356,7 +6394,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-21T05:31:34+00:00",
-   "lastChange": "2026-10-23T21:00:35+00:00",
+   "lastChange": "2026-10-23T21:02:47+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -22780,7 +22818,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-16T00:44:20+00:00",
-   "lastChange": "2026-10-23T21:00:37+00:00",
+   "lastChange": "2026-10-23T21:02:45+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 5,
@@ -25591,7 +25629,7 @@
    "url": "https://chenhsieh.github.io/even-water/",
    "added": "2026-10-22",
    "try": "Place stones so one pour reaches every cup before the pit drinks it",
-   "busy": false,
+   "busy": true,
    "image": "promo/even-water/first.jpg"
   },
   {
