@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T08:26:38+00:00",
+ "generated": "2026-10-23T08:30:49+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -18,37 +18,48 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 36,
+    "queued": 35,
     "running": 0,
     "doneToday": 0,
-    "minutes": 1440,
+    "minutes": 1400,
     "estimateMinutes": 0
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 3,
     "doneToday": 8,
-    "minutes": 120,
+    "minutes": 240,
     "estimateMinutes": 60
    }
   },
-  "queued": 37,
-  "running": 1,
+  "queued": 36,
+  "running": 3,
   "doneToday": 8,
   "lanes": {
    "Codex": 0,
-   "Claude": 2
+   "Claude": 4
   },
   "laneCap": {
    "Claude": 4,
    "Codex": 0
   },
   "codexPaused": true,
-  "minutesRemaining": 1560,
-  "estimatedFinish": "2026-10-23T09:26:38+00:00",
+  "minutesRemaining": 1640,
+  "estimatedFinish": "2026-10-23T09:30:49+00:00",
   "estimateMinutes": 60
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "mirror-hold",
+   "task": "P1MH57_sheet fits and face in strip",
+   "since": "2026-10-23T08:28:40+00:00",
+   "activity": "2026-10-23T08:30:31+00:00",
+   "commit": {
+    "at": "2026-10-23T08:28:45+00:00",
+    "subject": "start: P1MH57_sheet-fits-and-face-in-strip"
+   }
+  },
   {
    "worker": "Claude",
    "game": "anechoic-fugue",
@@ -56,10 +67,18 @@
    "since": "2026-10-23T07:44:17+00:00",
    "activity": "2026-10-23T08:05:54+00:00",
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "shortest-law",
+   "task": "P2FM59_shortest law first minute ship",
+   "since": "2026-10-23T08:28:53+00:00",
+   "activity": "2026-10-23T08:29:09+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 3,
  "apiSpentUsd": 310.91,
  "claudeInSession": {
   "runs": 179,
@@ -12247,7 +12266,7 @@
    ]
   },
   {
-   "nextTask": "Mirror Hold: the whole-print sheet fits one screen...",
+   "nextTask": null,
    "costTotalUsd": 73.15,
    "latestChange": {
     "text": "client print strip + card + whole-print sheet (P1MH56), main",
@@ -12260,8 +12279,8 @@
    "title": "Mirror Hold",
    "line": "Wax a hairstyle, then test it against three pulls.",
    "url": "https://chenhsieh.github.io/mirror-hold/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Huge revamp planned by a cross-functional lead",
    "shelfNote": "",
@@ -12270,7 +12289,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-15T05:37:55+00:00",
-   "lastChange": "2026-10-23T08:26:10+00:00",
+   "lastChange": "2026-10-23T08:30:31+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -12286,16 +12305,19 @@
    "tasks": [
     {
      "title": "P1MH57_sheet fits and face in strip",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Mirror Hold: the whole-print sheet fits one screen with its title, and the small-phone strip shows the wrestler's face, not just hair",
-     "since": "2026-10-23T08:26:10+00:00",
+     "since": "2026-10-23T08:28:40+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-23T08:28:45+00:00",
+      "subject": "start: P1MH57_sheet-fits-and-face-in-strip"
+     },
      "result": ""
     },
     {
@@ -12398,8 +12420,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 11
    },
@@ -14033,7 +14055,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 10.8,
+   "costTotalUsd": 3.6,
    "latestChange": {
     "text": "P2IN07 institution round: 3 core briefs (designs/institution_npc), One More Chair PASS...",
     "at": "2026-10-22T21:38:57+00:00"
@@ -14054,7 +14076,7 @@
    "released": false,
    "releasedOn": null,
    "releasedNote": "",
-   "firstSeen": "2026-10-22T21:34:40+00:00",
+   "firstSeen": "2026-10-22T21:38:57+00:00",
    "lastChange": "2026-10-23T03:05:23+00:00",
    "cost": {
     "apiUsd": 0.0,
@@ -14064,9 +14086,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 2,
-    "earlierUsdEst": 7.2,
-    "totalUsdEst": 10.8
+    "earlierRounds": 0,
+    "earlierUsdEst": 0.0,
+    "totalUsdEst": 3.6
    },
    "tasks": [
     {
@@ -14099,18 +14121,6 @@
      "ok": true,
      "note": "P2IN07 institution round: 3 core briefs (designs/institution_npc), One More Chair PASS and picked, repo made, build P2n109 queued on Codex",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-22T21:36:55+00:00",
-     "ok": true,
-     "note": "feat: One More Chair starts from the Play Lab game template",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T21:34:40+00:00",
-     "ok": true,
-     "note": "Initial commit",
-     "source": "main commit"
     }
    ]
   },
@@ -14598,7 +14608,7 @@
    ]
   },
   {
-   "nextTask": "Review of the first build (queued)",
+   "nextTask": "Own Ground: publish its credits panel with licences...",
    "costTotalUsd": 21.81,
    "latestChange": {
     "text": "P3OR17_own-ground-engine-test: WORKDIR",
@@ -14627,7 +14637,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T19:36:08+00:00",
-   "lastChange": "2026-10-23T02:39:30+00:00",
+   "lastChange": "2026-10-23T08:29:35+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -14641,6 +14651,20 @@
     "totalUsdEst": 21.81
    },
    "tasks": [
+    {
+     "title": "P2RL35_merge credits own ground",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Own Ground: publish its credits panel with licences (already written and tested on a side branch)",
+     "since": "2026-10-23T08:29:35+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2RL07_credits licences own ground",
      "state": "done",
@@ -14699,7 +14723,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
@@ -18561,7 +18585,7 @@
    ]
   },
   {
-   "nextTask": "Shortest Law: ship the finished first-minute lesson (rerun...",
+   "nextTask": null,
    "costTotalUsd": 54.59,
    "latestChange": {
     "text": "feat: learn the shortest law before level one",
@@ -18574,8 +18598,8 @@
    "title": "Shortest Law",
    "line": "",
    "url": "https://chenhsieh.github.io/shortest-law/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -18584,7 +18608,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-20T05:07:40+00:00",
-   "lastChange": "2026-10-23T08:26:16+00:00",
+   "lastChange": "2026-10-23T08:29:09+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -18600,10 +18624,10 @@
    "tasks": [
     {
      "title": "P2FM59_shortest law first minute ship",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Shortest Law: ship the finished first-minute lesson (rerun the checks that timed out, then publish)",
-     "since": "2026-10-23T08:26:16+00:00",
+     "since": "2026-10-23T08:28:53+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -18698,8 +18722,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 6
    },
