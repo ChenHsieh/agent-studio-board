@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T09:49:26+00:00",
+ "generated": "2026-10-23T09:53:45+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -18,22 +18,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 38,
+    "queued": 39,
     "running": 0,
     "doneToday": 0,
-    "minutes": 1520,
+    "minutes": 1560,
     "estimateMinutes": 0
    },
    "Claude": {
     "queued": 1,
-    "running": 3,
+    "running": 4,
     "doneToday": 11,
-    "minutes": 240,
-    "estimateMinutes": 60
+    "minutes": 300,
+    "estimateMinutes": 75
    }
   },
-  "queued": 39,
-  "running": 3,
+  "queued": 40,
+  "running": 4,
   "doneToday": 11,
   "lanes": {
    "Codex": 0,
@@ -44,19 +44,11 @@
    "Codex": 0
   },
   "codexPaused": true,
-  "minutesRemaining": 1760,
-  "estimatedFinish": "2026-10-23T10:49:26+00:00",
-  "estimateMinutes": 60
+  "minutesRemaining": 1860,
+  "estimatedFinish": "2026-10-23T11:08:45+00:00",
+  "estimateMinutes": 75
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P1RL17_colony count stranger rereview",
-   "since": null,
-   "activity": null,
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "shortest-law",
@@ -72,10 +64,26 @@
    "since": "2026-10-23T09:25:35+00:00",
    "activity": "2026-10-23T09:25:39+00:00",
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "play-template",
+   "task": "P3OR49_a11y audit no crash on other games",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "colony-count",
+   "task": "P3OR50_colony lab rule card short steps",
+   "since": "2026-10-23T09:53:05+00:00",
+   "activity": "2026-10-23T09:53:44+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 3,
+ "claudeWorkers": 4,
  "apiSpentUsd": 310.91,
  "claudeInSession": {
   "runs": 182,
@@ -2407,7 +2415,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Colony Count: a Credits panel naming every source...",
    "costTotalUsd": 170.85,
    "latestChange": {
     "text": "P3OR47_colony-count-short-share-line: WORKDIR",
@@ -2420,17 +2428,17 @@
    "title": "Colony Count",
    "line": "Solve three daily levels, then freeze finished plates.",
    "url": "https://chenhsieh.github.io/colony-count/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Flagship; has its own owner",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
-   "released": true,
+   "released": false,
    "releasedOn": "2026-10-23",
    "releasedNote": "public-ready, still being refined",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-23T00:53:01+00:00",
+   "lastChange": "2026-10-23T09:53:44+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 2,
@@ -2444,6 +2452,48 @@
     "totalUsdEst": 170.85
    },
    "tasks": [
+    {
+     "title": "P3OR50_colony lab rule card short steps",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Colony Count: the lab's rule card in short steps a new player can read at a glance",
+     "since": "2026-10-23T09:53:05+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P2RL11_credits panel colony count",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Colony Count: a Credits panel naming every source and licence (release checklist)",
+     "since": "2026-10-23T09:52:54+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P2CC34_lab edge counts keep their shape",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Colony Count: in the round dish and octagon lab, edge counts show the colony's shape as well as its colour",
+     "since": "2026-10-23T09:52:21+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3OR47_colony count short share line",
      "state": "done",
@@ -2513,63 +2563,21 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1CC32 DONE, live at https://chenhsieh.github.io/colony-count/ (main -> , rollback tag pre-cc-achievements)."
-    },
-    {
-     "title": "colony character maker",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "A character maker for Colony Count: pick a resident you have met, its face, a hat, something for its neck and a backdrop, keep up to 12 on a shelf, and hats that fit every set and stay inside their tile.",
-     "since": "2026-10-21T01:28:51+00:00",
-     "done": "2026-10-21T01:28:51+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "colony collection book",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "A collection book for Colony Count: every resident, hat and backdrop as a picture or a silhouette with the exact rule to earn it and a button for the next plate that counts.",
-     "since": "2026-10-21T01:28:51+00:00",
-     "done": "2026-10-21T01:28:51+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "P1c21 collection book: LIVE at https://chenhsieh.github.io/colony-count/ (main , live app.js/index.html/style.css md5 match the branch; rollback tag pre-collection-book)."
-    },
-    {
-     "title": "colony export profile picture",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Turn a Colony Count character into a 1024 px picture for a profile, with circle previews, share or save, and a short link that rebuilds the same character.",
-     "since": "2026-10-21T01:28:51+00:00",
-     "done": "2026-10-21T01:28:51+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "P1c22 export and profile picture: LIVE at https://chenhsieh.github.io/colony-count/ (main , live app.js, index.html and style.css md5 match the branch; rollback tag pre-export-picture)."
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 28
    },
    "verdict": {
-    "date": "2026-10-20",
-    "verdict": "revise",
-    "note": "New studies need UI pass; hide until then"
+    "date": "2026-10-23",
+    "verdict": "ship",
+    "note": "The lessons teach the rules in a minute and the lab dishes now play cleanly; most words are still too small and the round dish edge counts tell kinds apart by colour alone"
    },
    "needsYou": "GoatCounter visit counter is wired but off in five games (this one, Walls Have Ears, Cymatic Plate, Glasshouse, UGA Grad Survivor) until a site code is chosen. Suggest: sign up with one shared code and switch all five on.",
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-23T00:53:01+00:00",
@@ -2643,7 +2651,8 @@
      "note": "Make a picture live: 1024 PNG, 64/32 px circle previews, share or download, #c= link + viewer, rim for dark-on-dark; circle and 3:1 gates measured",
      "source": "board note"
     }
-   ]
+   ],
+   "releaseHeld": true
   },
   {
    "nextTask": null,
@@ -25550,5 +25559,7 @@
   "System needs: Codex quota is used up; Codex builds wait (fix: say when the quota resets, or say \"move builds to Claude\")"
  ],
  "releaseReady": [],
- "releaseRegressed": []
+ "releaseRegressed": [
+  "colony-count"
+ ]
 }

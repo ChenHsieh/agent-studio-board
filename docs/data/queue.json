@@ -1,15 +1,15 @@
 {
- "generated": 1792749063,
+ "generated": 1792749329,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
-  "lanesBusy": 0,
-  "ready": 1,
+  "lanesBusy": 2,
+  "ready": 0,
   "waiting": 0,
-  "queued": 1,
-  "running": 0,
+  "queued": 0,
+  "running": 2,
   "done24h": 72,
   "modelsQueued": {
-   "deepseek-v4-flash": 1
+   "deepseek-v4-flash": 2
   },
   "spendTodayUsd": 0.0,
   "runsToday": 3,
@@ -81,7 +81,7 @@
  },
  "overflow": {
   "codexOut": true,
-  "converted": 3,
+  "converted": 4,
   "convertedRunning": 2,
   "claudeWorkers": 3,
   "claudeWorkerCap": 3,
@@ -90,6 +90,23 @@
   "lastHandBackN": null
  },
  "tasks": [
+  {
+   "id": "P3OR50_colony-lab-rule-card-short-steps",
+   "request": "Colony Count: the lab's rule card in short steps a new player can read at a glance",
+   "game": "Colony Count",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "An ad for a three-colour sweeper puzzle (ColorSweeper).",
+   "state": "running",
+   "at": 1792749141,
+   "created": 1792749141
+  },
   {
    "id": "P2RL35_merge-credits-own-ground",
    "request": "Own Ground: publish its credits panel with licences (already written and tested on a side branch)",
@@ -109,23 +126,6 @@
    "wasCodex": true
   },
   {
-   "id": "P1RL17_colony-count-stranger-rereview",
-   "request": "Colony Count: a fresh stranger review now that it is released",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792723535,
-   "created": 1792723535
-  },
-  {
    "id": "P2FM59_shortest-law-first-minute-ship",
    "request": "Shortest Law: ship the finished first-minute lesson (rerun the checks that timed out, then publish)",
    "game": "Shortest Law",
@@ -141,6 +141,41 @@
    "state": "running",
    "at": 1792743976,
    "created": 1792743976,
+   "wasCodex": true
+  },
+  {
+   "id": "P3OR49_a11y-audit-no-crash-on-other-games",
+   "request": "Play template: the accessibility check runs on games that are not built on the template instead of stopping",
+   "game": "Studio",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1792748743,
+   "created": 1792748743
+  },
+  {
+   "id": "P2RL11_credits-panel-colony-count",
+   "request": "Colony Count: a Credits panel naming every source and licence (release checklist)",
+   "game": "Colony Count",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "An ad for a three-colour sweeper puzzle (ColorSweeper).",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792749174,
    "wasCodex": true
   },
   {
@@ -456,21 +491,26 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P3OR49_a11y-audit-no-crash-on-other-games",
-   "request": "Play template: the accessibility check runs on games that are not built on the template instead of stopping",
-   "game": "Studio",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
+   "id": "P2CC34_lab-edge-counts-keep-their-shape",
+   "request": "Colony Count: in the round dish and octagon lab, edge counts show the colony's shape as well as its colour",
+   "game": "Colony Count",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792748743
+   "after": [
+    "P3OR50_colony-lab-rule-card-short-steps"
+   ],
+   "priority": "P1",
+   "why": "An ad for a three-colour sweeper puzzle (ColorSweeper).",
+   "state": "waiting",
+   "waitingOn": [
+    "P3OR50_colony-lab-rule-card-short-steps"
+   ],
+   "created": 1792749141,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2HN00_herbal-pages-stay-open",
@@ -2026,6 +2066,23 @@
    "state": "done",
    "at": 1792721441,
    "created": 1792721441
+  },
+  {
+   "id": "P1RL17_colony-count-stranger-rereview",
+   "request": "Colony Count: a fresh stranger review now that it is released",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792723535,
+   "created": 1792723535
   },
   {
    "id": "P2FM36_shortest-law-first-minute",
