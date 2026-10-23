@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T01:45:37+00:00",
+ "generated": "2026-10-23T01:49:51+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -17,10 +17,10 @@
   "workers": {
    "Codex": {
     "queued": 39,
-    "running": 4,
-    "doneToday": 54,
-    "minutes": 1720,
-    "estimateMinutes": 344
+    "running": 3,
+    "doneToday": 55,
+    "minutes": 1680,
+    "estimateMinutes": 560
    },
    "Claude": {
     "queued": 1,
@@ -31,10 +31,10 @@
    }
   },
   "queued": 40,
-  "running": 7,
-  "doneToday": 159,
+  "running": 6,
+  "doneToday": 160,
   "lanes": {
-   "Codex": 5,
+   "Codex": 3,
    "Claude": 4
   },
   "laneCap": {
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1960,
-  "estimatedFinish": "2026-10-23T07:29:37+00:00",
-  "estimateMinutes": 344
+  "minutesRemaining": 1920,
+  "estimatedFinish": "2026-10-23T11:09:51+00:00",
+  "estimateMinutes": 560
  },
  "lanes": [
   {
@@ -52,7 +52,7 @@
    "game": "flying-white",
    "task": "P1FW52_ancient surface",
    "since": "2026-10-23T01:19:02+00:00",
-   "activity": "2026-10-23T01:45:03+00:00",
+   "activity": "2026-10-23T01:49:51+00:00",
    "commit": {
     "at": "2026-10-23T01:42:38+00:00",
     "subject": "fix: keep the paper shell responsive"
@@ -60,18 +60,10 @@
   },
   {
    "worker": "Codex",
-   "game": "blackout-notice",
-   "task": "P2BN01_blackout notice read it back",
-   "since": "2026-10-23T01:36:20+00:00",
-   "activity": "2026-10-23T01:35:44+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Codex",
    "game": "letter-lines",
    "task": "P2FM46_letter lines first minute",
    "since": "2026-10-23T01:38:33+00:00",
-   "activity": "2026-10-23T01:45:36+00:00",
+   "activity": "2026-10-23T01:49:50+00:00",
    "commit": null
   },
   {
@@ -79,7 +71,7 @@
    "game": "notched-boat",
    "task": "P2FM50_notched boat first minute",
    "since": "2026-10-23T01:27:25+00:00",
-   "activity": "2026-10-23T01:45:22+00:00",
+   "activity": "2026-10-23T01:49:39+00:00",
    "commit": {
     "at": "2026-10-23T01:44:10+00:00",
     "subject": "wip: P2FM50_notched-boat-first-minute (Codex lane autosave 21:44)"
@@ -110,12 +102,12 @@
    "commit": null
   }
  ],
- "codexLanes": 5,
+ "codexLanes": 3,
  "claudeWorkers": 3,
  "apiSpentUsd": 308.37,
  "claudeInSession": {
-  "runs": 166,
-  "usdEst": 597.6,
+  "runs": 167,
+  "usdEst": 601.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -157,7 +149,7 @@
   },
   {
    "day": "2026-10-22",
-   "changes": 266
+   "changes": 269
   }
  ],
  "houseRules": 23,
@@ -1313,10 +1305,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 11.35,
+   "costTotalUsd": 11.52,
    "latestChange": {
-    "text": "see",
-    "at": "2026-10-23T01:19:42+00:00"
+    "text": "feat: Read back the posted notice",
+    "at": "2026-10-23T01:47:08+00:00"
    },
    "promo": {
     "files": {
@@ -1330,40 +1322,40 @@
    "title": "Blackout Notice",
    "line": "Black out words on a stairwell notice until it says something kinder; 20 notices and a daily.",
    "url": "https://chenhsieh.github.io/blackout-notice/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Black out words on a stairwell notice until it says something kinder; 20",
    "shelfNote": "",
    "image": "promo/blackout-notice/first.jpg",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-23T01:35:44+00:00",
+   "lastChange": "2026-10-23T01:47:08+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 2,
+    "codexRuns": 3,
     "claudeRuns": 3,
     "apiRuns": 0,
-    "codexTokens": 459631,
-    "codexUsdEst": 0.55,
+    "codexTokens": 601307,
+    "codexUsdEst": 0.72,
     "claudeUsdEst": 10.8,
     "earlierRounds": 0,
     "earlierUsdEst": 0.0,
-    "totalUsdEst": 11.35
+    "totalUsdEst": 11.52
    },
    "tasks": [
     {
      "title": "P2BN01_blackout notice read it back",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Blackout Notice: the result reads your new notice back, Post fits at 320, rule cards come before the first stroke",
-     "since": "2026-10-23T01:36:20+00:00",
-     "done": null,
+     "since": "2026-10-23T01:19:42+00:00",
+     "done": "2026-10-23T01:19:42+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 14,
+     "tokens": 141676,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: Read back the posted notice"
     },
     {
      "title": "P3OR38_blackout notice one goal",
@@ -1438,9 +1430,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": {
     "date": "2026-10-22",
@@ -1448,8 +1440,14 @@
     "note": "Black out words on a stairwell notice until it says what you mean; the first edit lands, but the result never reads your new notice back"
    },
    "needsYou": "Read the 20 notices before it is promoted: the wording was written by the agent and no person has read it. Suggest: read levels 1 to 20 once, fix tone, then promote.",
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-23T01:47:08+00:00",
+     "ok": true,
+     "note": "feat: Read back the posted notice",
+     "source": "board note"
+    },
     {
      "at": "2026-10-23T01:19:42+00:00",
      "ok": false,
@@ -6004,7 +6002,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T05:18:25+00:00",
-   "lastChange": "2026-10-23T01:45:03+00:00",
+   "lastChange": "2026-10-23T01:49:51+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -9604,7 +9602,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:19:59+00:00",
-   "lastChange": "2026-10-23T01:45:36+00:00",
+   "lastChange": "2026-10-23T01:49:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -13035,7 +13033,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T01:39:00+00:00",
-   "lastChange": "2026-10-23T01:45:22+00:00",
+   "lastChange": "2026-10-23T01:49:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -17437,10 +17435,10 @@
   },
   {
    "nextTask": "Shortest Law: ship the finished first-minute lesson (rerun...",
-   "costTotalUsd": 50.82,
+   "costTotalUsd": 54.59,
    "latestChange": {
-    "text": "see",
-    "at": "2026-10-23T01:21:45+00:00"
+    "text": "feat: learn the shortest law before level one",
+    "at": "2026-10-23T01:49:00+00:00"
    },
    "promo": null,
    "id": "shortest-law",
@@ -17455,18 +17453,18 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T05:07:40+00:00",
-   "lastChange": "2026-10-23T01:27:18+00:00",
+   "lastChange": "2026-10-23T01:49:00+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 2,
+    "codexRuns": 3,
     "claudeRuns": 3,
-    "apiRuns": 1,
-    "codexTokens": 347445,
-    "codexUsdEst": 0.42,
+    "apiRuns": 0,
+    "codexTokens": 493545,
+    "codexUsdEst": 0.59,
     "claudeUsdEst": 10.8,
-    "earlierRounds": 11,
-    "earlierUsdEst": 39.6,
-    "totalUsdEst": 50.82
+    "earlierRounds": 12,
+    "earlierUsdEst": 43.2,
+    "totalUsdEst": 54.59
    },
    "tasks": [
     {
@@ -17486,16 +17484,16 @@
     {
      "title": "P2FM36_shortest law first minute",
      "state": "done",
-     "worker": "Claude API",
+     "worker": "Codex",
      "plan": "Shortest Law: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
      "since": "2026-10-23T01:21:45+00:00",
      "done": "2026-10-23T01:21:45+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 26,
+     "tokens": 146100,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: learn the shortest law before level one"
     },
     {
      "title": "P1SL41_shortest law",
@@ -17583,6 +17581,12 @@
    "inProgress": true,
    "history": [
     {
+     "at": "2026-10-23T01:49:00+00:00",
+     "ok": true,
+     "note": "feat: learn the shortest law before level one",
+     "source": "board note"
+    },
+    {
      "at": "2026-10-23T01:21:45+00:00",
      "ok": false,
      "note": "see",
@@ -17647,12 +17651,6 @@
      "ok": true,
      "note": "feat: make every touch answer with a click",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T08:47:45+00:00",
-     "ok": true,
-     "note": "P2PT05 feel live:",
-     "source": "board note"
     }
    ]
   },
@@ -22008,7 +22006,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 7.39,
+   "costTotalUsd": 46.99,
    "latestChange": {
     "text": "daily keyed on local date not UTC (studio standard)",
     "at": "2026-10-21T22:27:17+00:00"
@@ -22032,7 +22030,7 @@
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
    "image": "promo/tree-hero/first.jpg",
-   "firstSeen": "2026-10-19T17:54:51+00:00",
+   "firstSeen": "2026-08-20T16:18:05+00:00",
    "lastChange": "2026-10-21T22:27:17+00:00",
    "cost": {
     "apiUsd": 0.0,
@@ -22042,9 +22040,9 @@
     "codexTokens": 155848,
     "codexUsdEst": 0.19,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 1,
-    "earlierUsdEst": 3.6,
-    "totalUsdEst": 7.39
+    "earlierRounds": 12,
+    "earlierUsdEst": 43.2,
+    "totalUsdEst": 46.99
    },
    "tasks": [
     {
@@ -22097,16 +22095,70 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-21T22:25:53+00:00",
+     "ok": true,
+     "note": "chore: restore the review screenshots a test run overwrote",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-21T22:25:32+00:00",
+     "ok": true,
+     "note": "fix: Tree Hero daily changes at the player's local midnight",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-21T05:36:09+00:00",
      "ok": true,
      "note": "P1h14 reskin live: retro machine skin, brand top-left, no Play Lab header link; Opus ship review owed",
      "source": "board note"
     },
     {
+     "at": "2026-10-21T05:34:13+00:00",
+     "ok": true,
+     "note": "feat: Tree Hero becomes an X11 window",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-19T21:38:33+00:00",
+     "ok": true,
+     "note": "feat: Tree Hero explains the DNA tree choice before the first swap",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-19T21:15:22+00:00",
      "ok": false,
      "note": "first-minute DNA framing, distinct lesson decisions, shared hint and progress UI, fresh-clone checks, and 390x844 plus 320x568 touch checks are complete; publish blocked pending authorization to push origin",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-15T14:25:17+00:00",
+     "ok": true,
+     "note": "feat: a link back to Play Lab",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-15T00:28:48+00:00",
+     "ok": true,
+     "note": "feat: a working first move and a true lesson, demo hook",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-09-05T03:02:02+00:00",
+     "ok": true,
+     "note": "Add a favicon (data-URI SVG, letter badge on the game's own palette)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-09-05T02:54:53+00:00",
+     "ok": true,
+     "note": "Add description, og:*, and twitter:* meta tags, and a generated docs/og.png",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-09-04T18:10:07+00:00",
+     "ok": true,
+     "note": "Add MIT LICENSE",
+     "source": "main commit"
     }
    ]
   },
