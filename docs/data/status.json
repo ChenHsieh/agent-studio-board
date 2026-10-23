@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T20:25:50+00:00",
+ "generated": "2026-10-23T20:28:39+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -18,10 +18,10 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 36,
+    "queued": 38,
     "running": 0,
     "doneToday": 0,
-    "minutes": 1440,
+    "minutes": 1520,
     "estimateMinutes": 0
    },
    "Claude": {
@@ -32,7 +32,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 37,
+  "queued": 39,
   "running": 0,
   "doneToday": 28,
   "lanes": {
@@ -44,8 +44,8 @@
    "Codex": 0
   },
   "codexPaused": true,
-  "minutesRemaining": 1500,
-  "estimatedFinish": "2026-10-23T21:25:50+00:00",
+  "minutesRemaining": 1580,
+  "estimatedFinish": "2026-10-23T21:28:39+00:00",
   "estimateMinutes": 60
  },
  "lanes": [],
@@ -4666,7 +4666,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Dynasty Guess: a clear collection shelf, Chinese beside...",
    "costTotalUsd": 58.9,
    "latestChange": {
     "text": "cabinet no longer outlines the right era",
@@ -4679,8 +4679,8 @@
    "title": "Dynasty Guess",
    "line": "Place a museum object in its period.",
    "url": "https://chenhsieh.github.io/dynasty-guess/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Fix the missing object, then refine mechanism, story and",
    "shelfNote": "",
@@ -4689,7 +4689,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-09-20T15:44:58+00:00",
-   "lastChange": "2026-10-23T07:54:46+00:00",
+   "lastChange": "2026-10-23T20:26:54+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
@@ -4703,6 +4703,34 @@
     "totalUsdEst": 58.9
    },
    "tasks": [
+    {
+     "title": "P1DG02_dynasty guess collection shelf bilingual labels",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Dynasty Guess: a clear collection shelf, Chinese beside every English label, and era labels that fit their drawers",
+     "since": "2026-10-23T20:26:54+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1DG03_dynasty guess forgiving gloves and all views",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Dynasty Guess: clear glove rules with warnings, a more forgiving game, and every available view unlocked",
+     "since": "2026-10-23T20:26:54+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2DG01_dynasty no answer outline ship",
      "state": "done",
@@ -4786,38 +4814,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "feat: restore each night in a museum cabinet"
-    },
-    {
-     "title": "dynasty views harvest",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "Dynasty Guess: keep every museum photo of each object (side, inside, base) and its Chinese title, sorted by what each photo shows.",
-     "since": "2026-10-20T19:12:56+00:00",
-     "done": "2026-10-20T19:12:56+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Dynasty Guess views (data only, NOT merged, NOT published):"
-    },
-    {
-     "title": "dynasty gloves bot",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "Dynasty Guess: check with bots that spending gloves carefully beats spending them freely, and re-pick the objects for the glove cases.",
-     "since": "2026-10-20T19:12:56+00:00",
-     "done": "2026-10-20T19:12:56+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Dynasty Guess gloves bot (data and test only, NOT published): GLOVES: YES."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 14
@@ -4828,7 +4828,7 @@
     "note": "Big museum pictures, a full-screen viewer and instant flips make the objects a pleasure to look at, but the cabinet outlines the right era for whichever object you pick, so placing is not yet a judgment"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-23T07:54:46+00:00",

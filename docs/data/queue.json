@@ -1,5 +1,5 @@
 {
- "generated": 1792787165,
+ "generated": 1792787355,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -88,6 +88,23 @@
   "lastHandBackN": null
  },
  "tasks": [
+  {
+   "id": "P1DG02_dynasty-guess-collection-shelf-bilingual-labels",
+   "request": "Dynasty Guess: a clear collection shelf, Chinese beside every English label, and era labels that fit their drawers",
+   "game": "Dynasty Guess",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "Open collection records of National Palace Museum objects; read material, form, glaze and wear on one real object and guess its period.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792787214
+  },
   {
    "id": "P1FW56_result-screen-fits-small-phone",
    "request": "Flying White",
@@ -432,6 +449,27 @@
    "waitingOn": [],
    "created": 1792724493,
    "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P1DG03_dynasty-guess-forgiving-gloves-and-all-views",
+   "request": "Dynasty Guess: clear glove rules with warnings, a more forgiving game, and every available view unlocked",
+   "game": "Dynasty Guess",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1DG02_dynasty-guess-collection-shelf-bilingual-labels"
+   ],
+   "priority": "P1",
+   "why": "Open collection records of National Palace Museum objects; read material, form, glaze and wear on one real object and guess its period.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1DG02_dynasty-guess-collection-shelf-bilingual-labels"
+   ],
+   "created": 1792787214
   },
   {
    "id": "P2HN00_herbal-pages-stay-open",
@@ -813,24 +851,6 @@
    "created": 1792700696
   },
   {
-   "id": "P1FW54_one-control-row-seal-smear-word-wrap",
-   "request": "Flying White: one row of buttons under the paper, the ink on the teacher's seal reads as a smudge, English words never split in half",
-   "game": "Flying White",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A commentary on a 2002 martial-arts film that tells one story three ways, where the character for sword is written 19 ways.",
-   "state": "done",
-   "at": 1792743970,
-   "created": 1792743970,
-   "wasCodex": true
-  },
-  {
    "id": "P1FW55_flying-white-stranger-rereview",
    "request": "Flying White: a fresh stranger play of the live game after the one-row controls and seal rework",
    "game": "Flying White",
@@ -846,24 +866,6 @@
    "state": "done",
    "at": 1792763393,
    "created": 1792763393
-  },
-  {
-   "id": "P1MH57_sheet-fits-and-face-in-strip",
-   "request": "Mirror Hold: the whole-print sheet fits one screen with its title, and the small-phone strip shows the wrestler's face, not just hair",
-   "game": "Mirror Hold",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "Manga panels of a sumo wrestler before a mirror and a hand scooping Edo-period hair wax from a red tin.",
-   "state": "done",
-   "at": 1792743970,
-   "created": 1792743970,
-   "wasCodex": true
   },
   {
    "id": "P1MH58_mirror-hold-stranger-rereview",
@@ -953,24 +955,6 @@
    "state": "done",
    "at": 1792749141,
    "created": 1792749141
-  },
-  {
-   "id": "P2FM52_same-badge-first-minute-fix",
-   "request": "Finish the first-minute round for same-badge: the lesson starts only from the Play button, so jumping to a level never lands under it",
-   "game": "Same Badge",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "A list post mocking ten show-off habits online, set beside the honest hand-lettered hiring poster.",
-   "state": "done",
-   "at": 1792743976,
-   "created": 1792743976,
-   "wasCodex": true
   },
   {
    "id": "P2FM54_grub-band-first-minute-fix",
