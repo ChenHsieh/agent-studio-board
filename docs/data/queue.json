@@ -1,19 +1,19 @@
 {
- "generated": 1792797971,
+ "generated": 1792798118,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 1,
-  "ready": 1,
+  "ready": 0,
   "waiting": 2,
-  "queued": 3,
+  "queued": 2,
   "running": 1,
-  "done24h": 67,
+  "done24h": 63,
   "modelsQueued": {
-   "deepseek-v4-flash": 4
+   "deepseek-v4-flash": 3
   },
   "spendTodayUsd": 0.02,
-  "runsToday": 18,
-  "runsTodayUnpriced": 16,
+  "runsToday": 19,
+  "runsTodayUnpriced": 17,
   "spendTotalUsd": 6.36,
   "recent": [
    {
@@ -91,23 +91,21 @@
  },
  "tasks": [
   {
-   "id": "P1TM02_scan-to-photo-transform",
-   "request": "Time as Material: make the animation from the live subject to the photo show the real transformation, not the same crop.",
+   "id": "P3OR62_name-time-as-material",
+   "request": "Name audit: show one name for time-material everywhere",
    "game": "Time Material",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
-   "after": [
-    "P3OR59_time-material-story-and-scan-words"
-   ],
+   "after": [],
    "priority": "P2",
    "why": "",
    "state": "running",
-   "at": 1792791245,
-   "created": 1792791245
+   "at": 1792795382,
+   "created": 1792795382
   },
   {
    "id": "P1IG01_idea-graph-board-page",
@@ -144,23 +142,6 @@
    "state": "running",
    "at": 1792795314,
    "created": 1792795314
-  },
-  {
-   "id": "P3OR66_name-hub-titles",
-   "request": "Name audit: show one name for play-lab everywhere",
-   "game": "Studio",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792795396,
-   "created": 1792795396
   },
   {
    "id": "P2CC35_colony-count-save-migration-test",
@@ -350,23 +331,6 @@
    "estPercentOfWeek": 72.3
   },
   {
-   "id": "P3OR62_name-time-as-material",
-   "request": "Name audit: show one name for time-material everywhere",
-   "game": "Time Material",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792795382
-  },
-  {
    "id": "P2GG00_gallery-guess-save-migration-test",
    "request": "Gallery Guess: a test proves an old save still loads after an update (release checklist item 7)",
    "game": "Gallery Guess",
@@ -540,6 +504,24 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792724493,
+   "estPercentOfWeek": 72.3
+  },
+  {
+   "id": "P3OR66_name-hub-titles",
+   "request": "Name audit: show one name for play-lab everywhere",
+   "game": "Studio",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792798110,
    "estPercentOfWeek": 72.3
   },
   {
@@ -1292,6 +1274,25 @@
    "state": "done",
    "at": 1792791284,
    "created": 1792791284
+  },
+  {
+   "id": "P1TM02_scan-to-photo-transform",
+   "request": "Time as Material: make the animation from the live subject to the photo show the real transformation, not the same crop.",
+   "game": "Time Material",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR59_time-material-story-and-scan-words"
+   ],
+   "priority": "P2",
+   "why": "",
+   "state": "done",
+   "at": 1792791245,
+   "created": 1792791245
   },
   {
    "id": "P1TM03_story-why-it-matters",

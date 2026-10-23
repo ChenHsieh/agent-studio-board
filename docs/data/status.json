@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T23:25:38+00:00",
+ "generated": "2026-10-23T23:28:25+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 45,
+    "queued": 44,
     "running": 0,
     "doneToday": 4,
-    "minutes": 1800,
-    "estimateMinutes": 1800
+    "minutes": 1760,
+    "estimateMinutes": 1760
    },
    "Claude": {
     "queued": 1,
-    "running": 5,
-    "doneToday": 54,
-    "minutes": 360,
-    "estimateMinutes": 90
+    "running": 3,
+    "doneToday": 57,
+    "minutes": 240,
+    "estimateMinutes": 60
    }
   },
-  "queued": 46,
-  "running": 5,
-  "doneToday": 58,
+  "queued": 45,
+  "running": 3,
+  "doneToday": 61,
   "lanes": {
    "Codex": 1,
    "Claude": 4
@@ -46,15 +46,15 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2160,
-  "estimatedFinish": "2026-10-25T05:25:38+00:00",
-  "estimateMinutes": 1800
+  "minutesRemaining": 2000,
+  "estimatedFinish": "2026-10-25T04:48:25+00:00",
+  "estimateMinutes": 1760
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "Multiple games",
-   "task": "P1IG00_idea graph data r5",
+   "task": "P1IG01_idea graph board page",
    "since": null,
    "activity": null,
    "commit": null
@@ -69,22 +69,6 @@
   },
   {
    "worker": "Claude",
-   "game": "time-material",
-   "task": "P1TM02_scan to photo transform",
-   "since": "2026-10-23T23:22:03+00:00",
-   "activity": "2026-10-23T23:22:03+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "server-stress",
-   "task": "P3OR61_name server stress",
-   "since": "2026-10-23T23:22:40+00:00",
-   "activity": "2026-10-23T23:25:32+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
    "game": "play-lab",
    "task": "P3OR66_name hub titles",
    "since": null,
@@ -93,11 +77,11 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 5,
+ "claudeWorkers": 3,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 211,
-  "usdEst": 759.6,
+  "runs": 212,
+  "usdEst": 763.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -143,7 +127,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 41
+   "changes": 42
   }
  ],
  "houseRules": 25,
@@ -18408,8 +18392,8 @@
    "title": "Server Stress",
    "line": "Night shift in a server room: every rack warms a light.",
    "url": "https://chenhsieh.github.io/server-stress/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Data-centre story with a human side, real tradeoffs instead",
    "shelfNote": "",
@@ -18418,33 +18402,33 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-16T01:44:50+00:00",
-   "lastChange": "2026-10-23T23:25:32+00:00",
+   "lastChange": "2026-10-23T22:42:58+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 1,
     "codexTokens": 331833,
     "codexUsdEst": 0.4,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 13,
-    "earlierUsdEst": 46.8,
+    "claudeUsdEst": 7.2,
+    "earlierRounds": 12,
+    "earlierUsdEst": 43.2,
     "totalUsdEst": 50.8
    },
    "tasks": [
     {
      "title": "P3OR61_name server stress",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Name audit: show one name for server-stress everywhere",
-     "since": "2026-10-23T23:22:40+00:00",
-     "done": null,
+     "since": "2026-10-23T22:42:58+00:00",
+     "done": "2026-10-23T22:42:58+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 3,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: grep -q '<title>Server Stress: Night Shift</title>' docs/index.html && grep -q 'og:title\" content=\"Server Stress: Night Shift\"' docs/index.html && grep -q 'aria-label=\"Server Stress main menu\"'..."
     },
     {
      "title": "P1SD36_studio standard server stress",
@@ -18505,9 +18489,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": {
     "date": "2026-10-21",
@@ -18515,7 +18499,7 @@
     "note": "UI polish, analog clock, geeky/Jira feel, funny tasks"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-21T20:16:02+00:00",
@@ -23257,10 +23241,10 @@
   },
   {
    "nextTask": "Name audit: show one name for time-material everywhere",
-   "costTotalUsd": 32.64,
+   "costTotalUsd": 36.24,
    "latestChange": {
-    "text": "credits panel with licences in How to play, live",
-    "at": "2026-10-23T07:59:51+00:00"
+    "text": "answer not given away (band + held Check) and scan-to-photo transform",
+    "at": "2026-10-23T23:27:40+00:00"
    },
    "promo": {
     "files": {
@@ -23276,8 +23260,8 @@
    "title": "Time Material",
    "line": "Scrub through a frame history and draw with time.",
    "url": "https://chenhsieh.github.io/time-material/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Find the core and make the time-and-material rules",
    "shelfNote": "",
@@ -23286,34 +23270,20 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-09-20T20:53:51+00:00",
-   "lastChange": "2026-10-23T23:22:03+00:00",
+   "lastChange": "2026-10-23T23:27:40+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 6,
+    "claudeRuns": 7,
     "apiRuns": 2,
     "codexTokens": 196600,
     "codexUsdEst": 0.24,
-    "claudeUsdEst": 21.6,
+    "claudeUsdEst": 25.2,
     "earlierRounds": 3,
     "earlierUsdEst": 10.8,
-    "totalUsdEst": 32.64
+    "totalUsdEst": 36.24
    },
    "tasks": [
-    {
-     "title": "P1TM02_scan to photo transform",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Time as Material: make the animation from the live subject to the photo show the real transformation, not the same crop.",
-     "since": "2026-10-23T23:22:03+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P3OR62_name time as material",
      "state": "queued",
@@ -23355,6 +23325,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "OR LANE OK: Test: --check docs/app.js && python3 -c \"import csv;a=open('docs/app.js',encoding='utf-8').read;rows=list(csv.DictReader(open('"
+    },
+    {
+     "title": "P1TM02_scan to photo transform",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Time as Material: make the animation from the live subject to the photo show the real transformation, not the same crop.",
+     "since": "2026-10-23T21:34:05+00:00",
+     "done": "2026-10-23T21:34:05+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Tapping or holding the live view or photo plays the scan turning into the photo: live frames stack into 8 time slices, the strip slides into the photo frame, the slices blend into the photo, with the written caption for..."
     },
     {
      "title": "P1TM03_story why it matters",
@@ -23415,9 +23399,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 10
+    "done": 11
    },
    "verdict": {
     "date": "2026-10-22",
@@ -23427,6 +23411,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-23T23:27:40+00:00",
+     "ok": true,
+     "note": "answer not given away (band + held Check) and scan-to-photo transform",
+     "source": "board note"
+    },
     {
      "at": "2026-10-23T07:59:51+00:00",
      "ok": true,
@@ -23492,12 +23482,6 @@
      "ok": true,
      "note": "rolling-shutter brief + build P2x",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-15T14:34:22+00:00",
-     "ok": true,
-     "note": "feat: a link back to Play Lab",
-     "source": "main commit"
     }
    ]
   },
