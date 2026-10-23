@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Studio board · idea graph</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='4' cy='4' r='2' fill='%231d1b17'/%3E%3Ccircle cx='12' cy='5' r='2' fill='%23b5562d'/%3E%3Ccircle cx='8' cy='12' r='2' fill='%231d1b17'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="board.css">
+<link rel="stylesheet" href="graph.css">
+</head>
+<body class="ig">
+<header class="top">
+  <h1>Idea graph</h1>
+  <p class="fresh"><a href="./">Board</a> · <a href="stats.html">Stats</a> · <a href="about.html">How it works</a></p>
+</header>
+<p class="lead" id="lead">Loading the graph.</p>
+
+<main class="ig-main">
+  <section class="ig-stage" aria-label="The graph">
+    <div class="ig-wrap" id="wrap">
+      <svg id="svg" role="img" aria-label="Idea graph. Use the card and walk lists below to read it in words." tabindex="0"></svg>
+    </div>
+    <div class="ig-zoom" role="group" aria-label="View">
+      <button type="button" id="zin">Zoom in</button><button type="button" id="zout">Zoom out</button><button type="button" id="zfit">Fit all</button>
+    </div>
+    <p class="hint">Drag to move, pinch or scroll to zoom, tap a dot to read it.</p>
+    <div class="legend" id="legend"></div>
+  </section>
+
+  <div class="ig-side">
+    <section class="panel" id="find-panel" aria-labelledby="find-h">
+      <h2 id="find-h">Find and filter</h2>
+      <label class="fld">Find a node <input id="q" type="search" autocomplete="off" placeholder="a word from its name"></label>
+      <ul class="results" id="results"></ul>
+      <details class="filters">
+        <summary>Filters <span id="fcount"></span></summary>
+        <fieldset><legend>Kind</legend><div class="chips" data-f="kind"></div></fieldset>
+        <fieldset><legend>Stage</legend><div class="chips" data-f="stage"></div></fieldset>
+        <fieldset><legend>Round</legend><div class="chips" data-f="round"></div></fieldset>
+        <label class="fld">Lens <select id="lensf"><option value="">Any lens</option></select></label>
+        <button type="button" id="fclear">Clear filters</button>
+      </details>
+    </section>
+
+    <section class="panel" id="card" aria-labelledby="card-h" aria-live="polite">
+      <h2 id="card-h">Node</h2>
+      <div id="cardbody"><p class="muted">Tap a dot to open its card.</p></div>
+    </section>
+
+    <section class="panel" id="walkpanel" aria-labelledby="walk-h">
+      <h2 id="walk-h">Walk</h2>
+      <p class="muted">A walk hops from idea to idea along the links, 4 to 7 steps, jumping back to the start now and then (chance 0.12). The seed makes it repeatable.</p>
+      <p id="startline" class="startline">Start: a random node</p>
+      <div class="btnrow">
+        <button type="button" id="bnew" class="primary">New walk</button>
+        <button type="button" id="breroll">Reroll</button>
+        <button type="button" id="bstep">Step again from here</button>
+        <button type="button" id="bsaved">Saved walks</button>
+        <button type="button" id="brevive">Revive shelf</button>
+      </div>
+      <p id="seedline" class="seedline"></p>
+      <ol id="steps" class="steps"></ol>
+      <h3 id="candh" hidden>Other walks from the same start</h3>
+      <ul id="cands" class="cands"></ul>
+    </section>
+
+    <section class="panel" id="remixpanel" aria-labelledby="remix-h">
+      <h2 id="remix-h">Remix</h2>
+      <p class="muted">Pick two nodes from the walk, then a move.</p>
+      <div class="pair">
+        <label class="fld">Node A <select id="selA"></select></label>
+        <label class="fld">Node B <select id="selB"></select></label>
+      </div>
+      <div class="chips" id="moves" role="group" aria-label="Remix moves"></div>
+      <label class="fld">Prompt <textarea id="prompt" rows="4" readonly></textarea></label>
+      <div class="btnrow"><button type="button" id="bcopy" class="primary">Copy</button><span id="copied" class="muted" role="status"></span></div>
+      <label class="fld">My note (kept in this browser) <textarea id="note" rows="4" placeholder="Write the one decision here"></textarea></label>
+    </section>
+  </div>
+</main>
+<script src="graph.js"></script>
+</body>
+</html>
