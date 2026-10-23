@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T09:24:53+00:00",
+ "generated": "2026-10-23T09:29:16+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -18,34 +18,34 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 35,
+    "queued": 34,
     "running": 0,
     "doneToday": 0,
-    "minutes": 1400,
+    "minutes": 1360,
     "estimateMinutes": 0
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 2,
     "doneToday": 10,
-    "minutes": 120,
+    "minutes": 180,
     "estimateMinutes": 60
    }
   },
-  "queued": 36,
-  "running": 1,
+  "queued": 35,
+  "running": 2,
   "doneToday": 10,
   "lanes": {
    "Codex": 0,
-   "Claude": 2
+   "Claude": 3
   },
   "laneCap": {
    "Claude": 4,
    "Codex": 0
   },
   "codexPaused": true,
-  "minutesRemaining": 1520,
-  "estimatedFinish": "2026-10-23T10:24:53+00:00",
+  "minutesRemaining": 1540,
+  "estimatedFinish": "2026-10-23T10:29:16+00:00",
   "estimateMinutes": 60
  },
  "lanes": [
@@ -56,10 +56,18 @@
    "since": "2026-10-23T08:28:53+00:00",
    "activity": "2026-10-23T08:29:09+00:00",
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "own-ground",
+   "task": "P2RL35_merge credits own ground",
+   "since": "2026-10-23T09:25:35+00:00",
+   "activity": "2026-10-23T09:25:39+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 2,
  "apiSpentUsd": 310.91,
  "claudeInSession": {
   "runs": 182,
@@ -14622,7 +14630,7 @@
    ]
   },
   {
-   "nextTask": "Own Ground: publish its credits panel with licences...",
+   "nextTask": null,
    "costTotalUsd": 21.81,
    "latestChange": {
     "text": "P3OR17_own-ground-engine-test: WORKDIR",
@@ -14651,7 +14659,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T19:36:08+00:00",
-   "lastChange": "2026-10-23T08:29:35+00:00",
+   "lastChange": "2026-10-23T09:25:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -14667,10 +14675,10 @@
    "tasks": [
     {
      "title": "P2RL35_merge credits own ground",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Own Ground: publish its credits panel with licences (already written and tested on a side branch)",
-     "since": "2026-10-23T08:29:35+00:00",
+     "since": "2026-10-23T09:25:35+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -14737,8 +14745,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 4
    },
