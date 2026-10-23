@@ -1,5 +1,5 @@
 {
- "generated": 1792719480,
+ "generated": 1792719731,
  "defaultPercentPerCodexTask": 0.25,
  "tasks": [
   {
@@ -54,22 +54,6 @@
    "created": 1792712581
   },
   {
-   "id": "P3OR27_same-badge-engine-test",
-   "request": "Same Badge: a unit test for the game rules (levels, moves, solver, daily generator) so later changes cannot break them quietly",
-   "game": "Same Badge",
-   "route": "OpenRouter",
-   "model": "openrouter/openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "running",
-   "at": 1792712495,
-   "created": 1792712495
-  },
-  {
    "id": "P3OR30_slice-and-bake-link-preview",
    "request": "Slice and Bake: a proper link preview (picture and one-line description) when the game is shared",
    "game": "Slice and Bake",
@@ -100,6 +84,23 @@
    "state": "running",
    "at": 1792712691,
    "created": 1792712691
+  },
+  {
+   "id": "P2FM46_letter-lines-first-minute",
+   "request": "Letter Lines: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+   "game": "Letter Lines",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "first-minute",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "state": "running",
+   "at": 1792718910,
+   "created": 1792718910,
+   "estPercentOfWeek": 44.01
   },
   {
    "id": "P2FM50_notched-boat-first-minute",
@@ -392,23 +393,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792701959,
-   "estPercentOfWeek": 44.01
-  },
-  {
-   "id": "P2FM46_letter-lines-first-minute",
-   "request": "Letter Lines: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-   "game": "Letter Lines",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792718910,
    "estPercentOfWeek": 44.01
   },
   {
@@ -1726,6 +1710,22 @@
    "state": "done",
    "at": 1792712492,
    "created": 1792712492
+  },
+  {
+   "id": "P3OR27_same-badge-engine-test",
+   "request": "Same Badge: a unit test for the game rules (levels, moves, solver, daily generator) so later changes cannot break them quietly",
+   "game": "Same Badge",
+   "route": "OpenRouter",
+   "model": "openrouter/openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "done",
+   "at": 1792712495,
+   "created": 1792712495
   },
   {
    "id": "P3OR28_chai-boil-link-preview",
