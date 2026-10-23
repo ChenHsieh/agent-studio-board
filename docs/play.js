@@ -4,7 +4,8 @@ const SOURCES = [
   'https://raw.githubusercontent.com/ChenHsieh/agent-studio-board/main/docs/data/status.json',
 ];
 const CHOICES_KEY = 'play.choices';
-const VERDICTS = ['ship', 'revise', 'shelf'];
+const VERDICTS = ['ship', 'release', 'revise', 'shelf'];
+let releaseReady = [];
 const cards = document.getElementById('play-cards');
 const fresh = document.getElementById('play-fresh');
 const footer = document.getElementById('play-footer');
@@ -116,6 +117,12 @@ function makeCard(row) {
     busy.textContent = 'being changed now';
     titleText.appendChild(busy);
   }
+  if (releaseReady.includes(row.id)) {
+    const rr = document.createElement('span');
+    rr.className = 'busy-tag ready-tag';
+    rr.textContent = 'ready to release';
+    titleText.appendChild(rr);
+  }
   titleRow.append(thumb, titleText);
 
   const tryHeading = document.createElement('h3');
@@ -197,6 +204,7 @@ function makeCard(row) {
 
 function render(data) {
   rows = Array.isArray(data.playQueue) ? data.playQueue.slice(0, 3) : [];
+  releaseReady = Array.isArray(data.releaseReady) ? data.releaseReady : [];
   pruneChoices();
   fresh.textContent = `${rows.length} games · updated ${ago(data.generated)}`;
   cards.replaceChildren();
