@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T02:44:43+00:00",
+ "generated": "2026-10-23T02:49:00+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 51,
+    "queued": 42,
     "running": 2,
-    "doneToday": 55,
-    "minutes": 2120,
-    "estimateMinutes": 1060
+    "doneToday": 56,
+    "minutes": 1760,
+    "estimateMinutes": 880
    },
    "Claude": {
     "queued": 1,
-    "running": 3,
-    "doneToday": 108,
-    "minutes": 240,
-    "estimateMinutes": 60
+    "running": 5,
+    "doneToday": 117,
+    "minutes": 360,
+    "estimateMinutes": 90
    }
   },
-  "queued": 52,
-  "running": 5,
-  "doneToday": 163,
+  "queued": 43,
+  "running": 7,
+  "doneToday": 173,
   "lanes": {
    "Codex": 2,
    "Claude": 4
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2360,
-  "estimatedFinish": "2026-10-23T20:24:43+00:00",
-  "estimateMinutes": 1060
+  "minutesRemaining": 2120,
+  "estimatedFinish": "2026-10-23T17:29:00+00:00",
+  "estimateMinutes": 880
  },
  "lanes": [
   {
@@ -58,7 +58,7 @@
   {
    "worker": "Claude",
    "game": "Multiple games",
-   "task": "P1RL01_release checklist and candidates",
+   "task": "P1IN08_inspiration trace backfill and standard",
    "since": null,
    "activity": null,
    "commit": null
@@ -68,18 +68,34 @@
    "game": "notched-boat",
    "task": "P2FM50_notched boat first minute",
    "since": "2026-10-23T01:27:25+00:00",
-   "activity": "2026-10-23T02:43:18+00:00",
+   "activity": "2026-10-23T02:48:58+00:00",
    "commit": {
-    "at": "2026-10-23T02:32:50+00:00",
-    "subject": "wip: P2FM50_notched-boat-first-minute (Codex lane autosave 22:32)"
+    "at": "2026-10-23T02:48:58+00:00",
+    "subject": "wip: P2FM50_notched-boat-first-minute (Codex lane autosave 22:48)"
    }
+  },
+  {
+   "worker": "Claude",
+   "game": "own-ground",
+   "task": "P2RL07_credits licences own ground",
+   "since": "2026-10-23T02:46:56+00:00",
+   "activity": "2026-10-23T02:47:24+00:00",
+   "commit": null
   },
   {
    "worker": "Claude",
    "game": "pigeon-salon",
    "task": "P3OR36_pigeon salon rule words",
    "since": "2026-10-23T01:32:35+00:00",
-   "activity": "2026-10-23T02:03:26+00:00",
+   "activity": "2026-10-23T02:46:39+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "herbal-of-nowhere",
+   "task": "P3OR45_herbal pages stay open logic",
+   "since": "2026-10-23T02:48:58+00:00",
+   "activity": "2026-10-23T02:48:59+00:00",
    "commit": null
   },
   {
@@ -92,7 +108,7 @@
   }
  ],
  "codexLanes": 2,
- "claudeWorkers": 3,
+ "claudeWorkers": 5,
  "apiSpentUsd": 308.37,
  "claudeInSession": {
   "runs": 168,
@@ -1555,20 +1571,34 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-09-20T20:57:49+00:00",
-   "lastChange": "2026-10-22T21:03:25+00:00",
+   "lastChange": "2026-10-23T02:45:08+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 1,
     "codexTokens": 131726,
     "codexUsdEst": 0.16,
-    "claudeUsdEst": 14.4,
-    "earlierRounds": 8,
-    "earlierUsdEst": 28.8,
+    "claudeUsdEst": 18.0,
+    "earlierRounds": 7,
+    "earlierUsdEst": 25.2,
     "totalUsdEst": 43.36
    },
    "tasks": [
+    {
+     "title": "P2RL09_save test bluebook guess",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Bluebook Guess: a test proves old saves still load (release checklist)",
+     "since": "2026-10-23T02:45:08+00:00",
+     "done": "2026-10-23T02:45:08+00:00",
+     "reviewed": false,
+     "minutes": 1,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: test/save_migration.test.mjs"
+    },
     {
      "title": "P3OR01_bluebook guess sky test",
      "state": "done",
@@ -1658,7 +1688,7 @@
     "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": {
     "date": "2026-10-21",
@@ -2968,7 +2998,7 @@
    ]
   },
   {
-   "nextTask": "Copy Drift: credits name every source and its...",
+   "nextTask": null,
    "costTotalUsd": 50.59,
    "latestChange": {
     "text": "P3OR21_copy-drift-engine-test: WORKDIR",
@@ -2986,8 +3016,8 @@
    "title": "Copy Drift",
    "line": "Hand a page to a copyist that rewrites each mark as the closest one it knows; 12 pages.",
    "url": "https://chenhsieh.github.io/copy-drift/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Hand a page to a copyist that rewrites each mark as the closest one it knows;",
    "shelfNote": "",
@@ -3000,29 +3030,29 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 0,
     "codexTokens": 156979,
     "codexUsdEst": 0.19,
-    "claudeUsdEst": 14.4,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
+    "claudeUsdEst": 18.0,
+    "earlierRounds": 9,
+    "earlierUsdEst": 32.4,
     "totalUsdEst": 50.59
    },
    "tasks": [
     {
      "title": "P2RL02_credits licences copy drift",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "Copy Drift: credits name every source and its licence (release checklist)",
      "since": "2026-10-23T02:39:30+00:00",
-     "done": null,
+     "done": "2026-10-23T02:39:30+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 0,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;process.exit"
     },
     {
      "title": "P3OR21_copy drift engine test",
@@ -3096,10 +3126,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": {
     "date": "2026-10-22",
@@ -3107,7 +3137,7 @@
     "note": "A letter drifts through copyists into a joke; each card now shows what it will write, so the chain is planned, not guessed"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-22T23:37:38+00:00",
@@ -4735,7 +4765,7 @@
    ]
   },
   {
-   "nextTask": "Even Water: credits name every source and its...",
+   "nextTask": "Finish the first-minute round for even-water: the lesson...",
    "costTotalUsd": 43.2,
    "latestChange": {
     "text": "P3OR23_even-water-engine-test: WORKDIR",
@@ -4767,30 +4797,16 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 14.4,
-    "earlierRounds": 8,
-    "earlierUsdEst": 28.8,
+    "claudeUsdEst": 18.0,
+    "earlierRounds": 7,
+    "earlierUsdEst": 25.2,
     "totalUsdEst": 43.2
    },
    "tasks": [
-    {
-     "title": "P2RL03_credits licences even water",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Even Water: credits name every source and its licence (release checklist)",
-     "since": "2026-10-23T02:39:30+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2FM56_even water first minute fix",
      "state": "queued",
@@ -4804,6 +4820,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2RL03_credits licences even water",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Even Water: credits name every source and its licence (release checklist)",
+     "since": "2026-10-23T02:39:30+00:00",
+     "done": "2026-10-23T02:39:30+00:00",
+     "reviewed": false,
+     "minutes": 0,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;process.exit"
     },
     {
      "title": "P3OR23_even water engine test",
@@ -4863,10 +4893,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": {
     "date": "2026-10-22",
@@ -6523,20 +6553,34 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-09-20T05:15:49+00:00",
-   "lastChange": "2026-10-22T23:33:41+00:00",
+   "lastChange": "2026-10-23T02:45:11+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 2,
     "codexTokens": 190591,
     "codexUsdEst": 0.23,
-    "claudeUsdEst": 7.2,
-    "earlierRounds": 9,
-    "earlierUsdEst": 32.4,
+    "claudeUsdEst": 10.8,
+    "earlierRounds": 8,
+    "earlierUsdEst": 28.8,
     "totalUsdEst": 39.83
    },
    "tasks": [
+    {
+     "title": "P2RL10_save test fold guess",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Fold Guess: a test proves old saves still load (release checklist)",
+     "since": "2026-10-23T02:45:11+00:00",
+     "done": "2026-10-23T02:45:11+00:00",
+     "reviewed": false,
+     "minutes": 0,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: test/save_migration.test.mjs"
+    },
     {
      "title": "P3OR11_fold guess test retry",
      "state": "done",
@@ -6612,7 +6656,7 @@
     "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": {
     "date": "2026-10-20",
@@ -8241,7 +8285,7 @@
    ]
   },
   {
-   "nextTask": "Herbal of Nowhere: opened pages stay open after...",
+   "nextTask": "Herbal of Nowhere: opened pages stay open (Undo...",
    "costTotalUsd": 18.25,
    "latestChange": {
     "text": "feat: teach the herbal through a four-step first-minute round",
@@ -8259,8 +8303,8 @@
    "title": "Herbal of Nowhere",
    "line": "Open pages to read their glyph names, compare, then name the last plant; wrong names cost hearts.",
    "url": "https://chenhsieh.github.io/herbal-of-nowhere/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "placeholder shapes, 12 folios",
    "shelfNote": "",
@@ -8269,7 +8313,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-23T01:30:53+00:00",
+   "lastChange": "2026-10-23T02:48:59+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -8285,10 +8329,10 @@
    "tasks": [
     {
      "title": "P3OR45_herbal pages stay open logic",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Herbal of Nowhere: opened pages stay open after Undo, the page counter counts pages, cleaner level 1 result (OpenRouter lane)",
-     "since": "2026-10-23T01:30:53+00:00",
+     "since": "2026-10-23T02:48:58+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -8355,8 +8399,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
@@ -12131,7 +12175,7 @@
    ]
   },
   {
-   "nextTask": "Morning Three: credits name every source and its...",
+   "nextTask": null,
    "costTotalUsd": 39.85,
    "latestChange": {
     "text": "P3OR20_morning-three-engine-test: WORKDIR",
@@ -12149,8 +12193,8 @@
    "title": "Morning Three",
    "line": "Monkeys bounce until their picture is satisfied; move chestnuts between bowls, day 2 inherits day 1.",
    "url": "https://chenhsieh.github.io/morning-three/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Split each monkey chestnuts between morning and evening; placeholder shapes, 12...",
    "shelfNote": "",
@@ -12163,29 +12207,29 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 0,
     "codexTokens": 206780,
     "codexUsdEst": 0.25,
-    "claudeUsdEst": 14.4,
-    "earlierRounds": 7,
-    "earlierUsdEst": 25.2,
+    "claudeUsdEst": 18.0,
+    "earlierRounds": 6,
+    "earlierUsdEst": 21.6,
     "totalUsdEst": 39.85
    },
    "tasks": [
     {
      "title": "P2RL04_credits licences morning three",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "Morning Three: credits name every source and its licence (release checklist)",
      "since": "2026-10-23T02:39:30+00:00",
-     "done": null,
+     "done": "2026-10-23T02:39:30+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 0,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;proces"
     },
     {
      "title": "P3OR20_morning three engine test",
@@ -12259,10 +12303,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": {
     "date": "2026-10-22",
@@ -12270,7 +12314,7 @@
     "note": "Same chestnuts, different bowls; the rule pictures now read the right way and the two-day levels beat the obvious split"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-22T21:27:17+00:00",
@@ -12938,7 +12982,7 @@
    ]
   },
   {
-   "nextTask": "Nobody Looking: credits name every source and its...",
+   "nextTask": null,
    "costTotalUsd": 36.26,
    "latestChange": {
     "text": "P3OR15_nobody-looking-engine-test: WORKDIR",
@@ -12956,8 +13000,8 @@
    "title": "Nobody Looking",
    "line": "Twelve shelves of eyes and mouths: slide pieces until no face is left.",
    "url": "https://chenhsieh.github.io/nobody-looking/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Slide eyes and mouths until no face is left; placeholder shapes, 12 shelves",
    "shelfNote": "",
@@ -12970,29 +13014,29 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 0,
     "codexTokens": 215851,
     "codexUsdEst": 0.26,
-    "claudeUsdEst": 14.4,
-    "earlierRounds": 6,
-    "earlierUsdEst": 21.6,
+    "claudeUsdEst": 18.0,
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
     "totalUsdEst": 36.26
    },
    "tasks": [
     {
      "title": "P2RL05_credits licences nobody looking",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "Nobody Looking: credits name every source and its licence (release checklist)",
      "since": "2026-10-23T02:39:30+00:00",
-     "done": null,
+     "done": "2026-10-23T02:39:30+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 1,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;proc"
     },
     {
      "title": "P3OR15_nobody looking engine test",
@@ -13066,10 +13110,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": {
     "date": "2026-10-22",
@@ -13077,7 +13121,7 @@
     "note": "Slide pieces until nothing on the shelf looks back; breaking one face makes another, and every face is drawn"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-22T21:26:43+00:00",
@@ -13336,7 +13380,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-21T01:39:00+00:00",
-   "lastChange": "2026-10-23T02:43:18+00:00",
+   "lastChange": "2026-10-23T02:48:58+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -13362,8 +13406,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-23T02:32:50+00:00",
-      "subject": "wip: P2FM50_notched-boat-first-minute (Codex lane autosave 22:32)"
+      "at": "2026-10-23T02:48:58+00:00",
+      "subject": "wip: P2FM50_notched-boat-first-minute (Codex lane autosave 22:48)"
      },
      "result": ""
     },
@@ -13612,7 +13656,7 @@
    ]
   },
   {
-   "nextTask": "One Thread: credits name every source and its...",
+   "nextTask": null,
    "costTotalUsd": 29.02,
    "latestChange": {
     "text": "fix: start One Thread’s first-minute lesson only when Play is tapped",
@@ -13630,8 +13674,8 @@
    "title": "One Thread",
    "line": "Sew a pattern in one thread through a two-sided book: 13 books, then a daily and endless.",
    "url": "https://chenhsieh.github.io/one-thread/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Sew a pattern in one thread through a two-sided book: 13 books, then a daily",
    "shelfNote": "",
@@ -13644,29 +13688,29 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 0,
     "codexTokens": 184373,
     "codexUsdEst": 0.22,
-    "claudeUsdEst": 10.8,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
+    "claudeUsdEst": 14.4,
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
     "totalUsdEst": 29.02
    },
    "tasks": [
     {
      "title": "P2RL06_credits licences one thread",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "One Thread: credits name every source and its licence (release checklist)",
      "since": "2026-10-23T02:39:30+00:00",
-     "done": null,
+     "done": "2026-10-23T02:39:30+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 0,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;process.exit"
     },
     {
      "title": "P2FM51_one thread first minute fix",
@@ -13726,10 +13770,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": {
     "date": "2026-10-22",
@@ -13737,7 +13781,7 @@
     "note": "Sew a book shut in one thread; the two-pass limit is drawn under every hole, so a dead end shows you exactly which hole ran dry"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-23T01:38:33+00:00",
@@ -13960,7 +14004,7 @@
    ]
   },
   {
-   "nextTask": "Own Ground: credits name every source and its...",
+   "nextTask": null,
    "costTotalUsd": 21.81,
    "latestChange": {
     "text": "P3OR17_own-ground-engine-test: WORKDIR",
@@ -13988,7 +14032,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T19:36:08+00:00",
-   "lastChange": "2026-10-23T02:39:30+00:00",
+   "lastChange": "2026-10-23T02:47:24+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -14004,10 +14048,10 @@
    "tasks": [
     {
      "title": "P2RL07_credits licences own ground",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Own Ground: credits name every source and its licence (release checklist)",
-     "since": "2026-10-23T02:39:30+00:00",
+     "since": "2026-10-23T02:46:56+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -14060,8 +14104,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
@@ -14334,7 +14378,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T19:12:54+00:00",
-   "lastChange": "2026-10-23T02:03:26+00:00",
+   "lastChange": "2026-10-23T02:46:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -16718,7 +16762,7 @@
    ]
   },
   {
-   "nextTask": "Same Badge: credits name every source and its...",
+   "nextTask": "Finish the first-minute round for same-badge: the lesson...",
    "costTotalUsd": 21.6,
    "latestChange": {
     "text": "see",
@@ -16750,30 +16794,16 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 7.2,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
+    "claudeUsdEst": 10.8,
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
     "totalUsdEst": 21.6
    },
    "tasks": [
-    {
-     "title": "P2RL08_credits licences same badge",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Same Badge: credits name every source and its licence (release checklist)",
-     "since": "2026-10-23T02:39:30+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2FM52_same badge first minute fix",
      "state": "queued",
@@ -16787,6 +16817,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2RL08_credits licences same badge",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Same Badge: credits name every source and its licence (release checklist)",
+     "since": "2026-10-23T02:39:30+00:00",
+     "done": "2026-10-23T02:39:30+00:00",
+     "reviewed": false,
+     "minutes": 1,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;process.exit"
     },
     {
      "title": "P3OR27_same badge engine test",
@@ -16832,10 +16876,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": {
     "date": "2026-10-22",
@@ -18879,7 +18923,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 72.49,
+   "costTotalUsd": 29.29,
    "latestChange": {
     "text": "P2SB52 live: tickets 7-14, chapter 2 (log cut in two), daily ticket, shop is open, share...",
     "at": "2026-10-22T07:27:17+00:00"
@@ -18899,7 +18943,7 @@
    "released": false,
    "releasedOn": null,
    "releasedNote": "",
-   "firstSeen": "2026-10-14T23:31:15+00:00",
+   "firstSeen": "2026-10-17T21:41:35+00:00",
    "lastChange": "2026-10-22T23:42:58+00:00",
    "cost": {
     "apiUsd": 0.0,
@@ -18909,9 +18953,9 @@
     "codexTokens": 407560,
     "codexUsdEst": 0.49,
     "claudeUsdEst": 18.0,
-    "earlierRounds": 15,
-    "earlierUsdEst": 54.0,
-    "totalUsdEst": 72.49
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
+    "totalUsdEst": 29.29
    },
    "tasks": [
     {
@@ -19048,22 +19092,10 @@
      "source": "board note"
     },
     {
-     "at": "2026-10-22T07:25:35+00:00",
-     "ok": true,
-     "note": "feat: Slice and Bake gets tickets 7 to 14, a daily ticket, an open shop and a log cut in two",
-     "source": "main commit"
-    },
-    {
      "at": "2026-10-22T06:59:46+00:00",
      "ok": true,
      "note": "P2SB51 cane core live: 6 orders, solver par, one-tap moves, Baker Vos en+zh-TW, flipbook kept at old.html, main",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-22T06:58:36+00:00",
-     "ok": true,
-     "note": "feat:",
-     "source": "main commit"
     },
     {
      "at": "2026-10-22T04:14:47+00:00",
@@ -19078,12 +19110,6 @@
      "source": "board note"
     },
     {
-     "at": "2026-10-21T06:19:15+00:00",
-     "ok": true,
-     "note": "feat:",
-     "source": "main commit"
-    },
-    {
      "at": "2026-10-21T05:57:13+00:00",
      "ok": false,
      "note": "see",
@@ -19096,12 +19122,6 @@
      "source": "board note"
     },
     {
-     "at": "2026-10-21T05:38:42+00:00",
-     "ok": true,
-     "note": "feat: bake a cookie flipbook",
-     "source": "main commit"
-    },
-    {
      "at": "2026-10-21T05:11:19+00:00",
      "ok": false,
      "note": "see",
@@ -19111,6 +19131,24 @@
      "at": "2026-10-21T04:49:25+00:00",
      "ok": false,
      "note": "see",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-20T02:08:59+00:00",
+     "ok": true,
+     "note": "flipbook brief + build B2m",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-17T23:15:14+00:00",
+     "ok": true,
+     "note": "CREDIT line on the baked-tray card and the level map, EN+ZH (saved cookie photos, baker unknown); no How to play card exists; README already credited; live",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added",
      "source": "board note"
     }
    ]
@@ -21945,8 +21983,8 @@
    ]
   },
   {
-   "nextTask": "Time Material: the time ruler numbers readable on...",
-   "costTotalUsd": 25.44,
+   "nextTask": null,
+   "costTotalUsd": 21.84,
    "latestChange": {
     "text": "feat: see the photo form as the camera scans",
     "at": "2026-10-22T23:29:07+00:00"
@@ -21964,8 +22002,8 @@
    "title": "Time Material",
    "line": "Scrub through a frame history and draw with time.",
    "url": "https://chenhsieh.github.io/time-material/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Find the core and make the time-and-material rules",
    "shelfNote": "",
@@ -21979,28 +22017,28 @@
     "apiUsd": 0.0,
     "codexRuns": 2,
     "claudeRuns": 2,
-    "apiRuns": 1,
+    "apiRuns": 2,
     "codexTokens": 196600,
     "codexUsdEst": 0.24,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
-    "totalUsdEst": 25.44
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
+    "totalUsdEst": 21.84
    },
    "tasks": [
     {
      "title": "P3OR43_time material ruler legible",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude API",
      "plan": "Time Material: the time ruler numbers readable on small phones (OpenRouter lane)",
      "since": "2026-10-23T01:30:33+00:00",
-     "done": null,
+     "done": "2026-10-23T01:30:33+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE by the planner by hand (2026-10-23) after 3 aider failures: the TEST line itself was broken (bash expands ${SPEEDS[s.speed]} inside double quotes, so it could never pass). Edits exactly as specified; greps verified..."
     },
     {
      "title": "P1TM00_transformation scan line",
@@ -22074,10 +22112,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": {
     "date": "2026-10-22",
@@ -22085,7 +22123,7 @@
     "note": "A scan line now sweeps the live scene and your photo together, so you can watch the bar bend row by row; the match meter starts at 95 percent, so the first move feels small"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-22T23:29:07+00:00",
