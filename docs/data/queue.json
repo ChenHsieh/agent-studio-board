@@ -1,21 +1,25 @@
 {
- "generated": 1792790165,
+ "generated": 1792790335,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
-  "lanesBusy": 1,
+  "lanesBusy": 0,
   "ready": 0,
   "waiting": 0,
   "queued": 0,
-  "running": 1,
-  "done24h": 62,
-  "modelsQueued": {
-   "deepseek-v4-flash": 1
-  },
+  "running": 0,
+  "done24h": 55,
+  "modelsQueued": {},
   "spendTodayUsd": 0.02,
-  "runsToday": 5,
-  "runsTodayUnpriced": 3,
+  "runsToday": 6,
+  "runsTodayUnpriced": 4,
   "spendTotalUsd": 6.36,
   "recent": [
+   {
+    "id": "P3OR51_template-card-label-20px",
+    "request": "Template demo: the CARD label on the board gets slightly bigger so the template passes its own text-size check",
+    "model": "deepseek-v4-flash",
+    "at": 1792790094
+   },
    {
     "id": "P3OR50_colony-lab-rule-card-short-steps",
     "request": "Colony Count: the lab's rule card in short steps a new player can read at a glance",
@@ -69,12 +73,6 @@
     "request": "P3RL27_credits licences not yet",
     "model": "openai/gpt-4.1",
     "at": 1792724720
-   },
-   {
-    "id": "P3RL26_credits-licences-no-favorites",
-    "request": "P3RL26_credits licences no favorites",
-    "model": "openai/gpt-4.1",
-    "at": 1792724716
    }
   ],
   "label": "estimate"
@@ -91,8 +89,8 @@
  },
  "tasks": [
   {
-   "id": "P1DG02_dynasty-guess-collection-shelf-bilingual-labels",
-   "request": "Dynasty Guess: a clear collection shelf, Chinese beside every English label, and era labels that fit their drawers",
+   "id": "P1DG03_dynasty-guess-forgiving-gloves-and-all-views",
+   "request": "Dynasty Guess: clear glove rules with warnings, a more forgiving game, and every available view unlocked",
    "game": "Dynasty Guess",
    "route": "Claude",
    "model": "sonnet",
@@ -100,7 +98,9 @@
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P1DG02_dynasty-guess-collection-shelf-bilingual-labels"
+   ],
    "priority": "P1",
    "why": "Open collection records of National Palace Museum objects; read material, form, glaze and wear on one real object and guess its period.",
    "state": "running",
@@ -123,24 +123,6 @@
    "state": "running",
    "at": 1792789187,
    "created": 1792789187,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P1TS57_result-card-on-small-phone",
-   "request": "Thumb Stand: after a win on a small phone, Next and Share are on screen without scrolling",
-   "game": "Thumb Stand",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "Martial-arts manga panels of impossible one-thumb handstands and poses.",
-   "state": "running",
-   "at": 1792789218,
-   "created": 1792789218,
    "estPercentOfWeek": 0.25
   },
   {
@@ -194,23 +176,6 @@
    "state": "running",
    "at": 1792787089,
    "created": 1792787089
-  },
-  {
-   "id": "P3OR51_template-card-label-20px",
-   "request": "Template demo: the CARD label on the board gets slightly bigger so the template passes its own text-size check",
-   "game": "Studio",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792790094,
-   "created": 1792790094
   },
   {
    "id": "P2FM58_tractatus-tree-first-minute-fix",
@@ -382,6 +347,26 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P1AX09_controls-stay-put-after-a-tap",
+   "request": "Template: the Undo, Start over and Hint row stays in the same place after a tap, on small phones and with huge text",
+   "game": "Studio",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR51_template-card-label-20px"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792790098,
+   "estPercentOfWeek": 0.25
+  },
+  {
    "id": "P1CS00_cost-per-shipped-change-report",
    "request": "Report what each shipped change cost across Claude, Codex and OpenRouter",
    "game": "Studio",
@@ -397,6 +382,24 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792787088
+  },
+  {
+   "id": "P2OR52_a11y-sweep-writes-release-results",
+   "request": "Release check: run the accessibility check on every live game and record pass or fail, so the release list stops saying not run",
+   "game": "Studio",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792790201,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2n86_round4-template-repos",
@@ -434,27 +437,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P1DG03_dynasty-guess-forgiving-gloves-and-all-views",
-   "request": "Dynasty Guess: clear glove rules with warnings, a more forgiving game, and every available view unlocked",
-   "game": "Dynasty Guess",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1DG02_dynasty-guess-collection-shelf-bilingual-labels"
-   ],
-   "priority": "P1",
-   "why": "Open collection records of National Palace Museum objects; read material, form, glaze and wear on one real object and guess its period.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1DG02_dynasty-guess-collection-shelf-bilingual-labels"
-   ],
-   "created": 1792787214
-  },
-  {
    "id": "P2HN00_herbal-pages-stay-open",
    "request": "Herbal of Nowhere: opened pages stay open (Undo no longer refunds ink), glyphs no longer sit under the parts, counters agree",
    "game": "Herbal of Nowhere",
@@ -474,28 +456,6 @@
     "P3OR45_herbal-pages-stay-open-logic"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P1AX09_controls-stay-put-after-a-tap",
-   "request": "Template: the Undo, Start over and Hint row stays in the same place after a tap, on small phones and with huge text",
-   "game": "Studio",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P3OR51_template-card-label-20px"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P3OR51_template-card-label-20px"
-   ],
-   "created": 1792790098,
    "estPercentOfWeek": 0.25
   },
   {
@@ -878,6 +838,23 @@
    "created": 1792700696
   },
   {
+   "id": "P1DG02_dynasty-guess-collection-shelf-bilingual-labels",
+   "request": "Dynasty Guess: a clear collection shelf, Chinese beside every English label, and era labels that fit their drawers",
+   "game": "Dynasty Guess",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "Open collection records of National Palace Museum objects; read material, form, glaze and wear on one real object and guess its period.",
+   "state": "done",
+   "at": 1792787214,
+   "created": 1792787214
+  },
+  {
    "id": "P1FW55_flying-white-stranger-rereview",
    "request": "Flying White: a fresh stranger play of the live game after the one-row controls and seal rework",
    "game": "Flying White",
@@ -1202,6 +1179,23 @@
    "at": 1792758654,
    "created": 1792758654,
    "wasCodex": true
+  },
+  {
+   "id": "P3OR51_template-card-label-20px",
+   "request": "Template demo: the CARD label on the board gets slightly bigger so the template passes its own text-size check",
+   "game": "Studio",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792790094,
+   "created": 1792790094
   }
  ]
 }
