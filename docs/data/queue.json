@@ -1,7 +1,26 @@
 {
- "generated": 1792713410,
+ "generated": 1792713666,
  "defaultPercentPerCodexTask": 0.25,
  "tasks": [
+  {
+   "id": "P1FW50_sword-masks",
+   "request": "Flying White: make the scoring masks for the new 劍 forms",
+   "game": "Flying White",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1FW49_sword-collection-bank-data"
+   ],
+   "priority": "P1",
+   "state": "running",
+   "at": 1792713630,
+   "created": 1792713630,
+   "estPercentOfWeek": 0.25
+  },
   {
    "id": "P2FM37_peony-dream-first-minute",
    "request": "Peony Dream: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
@@ -50,22 +69,6 @@
    "state": "running",
    "at": 1792712581,
    "created": 1792712581
-  },
-  {
-   "id": "P3OR39_glasshouse-short-share-line",
-   "request": "Glasshouse: a share line short enough for every preview (120 characters or fewer)",
-   "game": "Glasshouse",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "state": "running",
-   "at": 1792712966,
-   "created": 1792712966
   },
   {
    "id": "P2FM34_the-folder-first-minute",
@@ -149,9 +152,9 @@
    "created": 1792712696
   },
   {
-   "id": "P3OR38_blackout-notice-one-goal",
-   "request": "Blackout Notice: one goal line (true, not kinder)",
-   "game": "Blackout Notice",
+   "id": "P3OR41_radish-omelette-honest-lines",
+   "request": "Radish Omelette: rule lines that match what the pan really does",
+   "game": "Radish Omelette",
    "route": "OpenRouter",
    "model": "deepseek-v4-flash",
    "effort": "default",
@@ -161,8 +164,24 @@
    "after": [],
    "priority": "P2",
    "state": "running",
-   "at": 1792712699,
-   "created": 1792712699
+   "at": 1792713413,
+   "created": 1792713413
+  },
+  {
+   "id": "P3OR42_not-yet-level-three-card",
+   "request": "Not Yet: a level 3 rule card that says to look ahead",
+   "game": "Not Yet",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "running",
+   "at": 1792713420,
+   "created": 1792713420
   },
   {
    "id": "P2FM36_shortest-law-first-minute",
@@ -250,24 +269,21 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P2n77_review-own-ground-restored-and-same-badge",
-   "request": "Stranger play-through and ship-or-revise call for three new games",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
+   "id": "P2FM48_no-unison-first-minute",
+   "request": "No Unison: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
+   "game": "No Unison",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "first-minute",
+   "size": "one repo",
    "estMinutes": null,
-   "after": [
-    "P2n74_own-ground",
-    "P2n75_restored",
-    "P2n76_same-badge"
-   ],
+   "after": [],
    "priority": null,
    "state": "running",
-   "at": 1792692389,
-   "created": 1792692389
+   "at": 1792713465,
+   "created": 1792713465,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P1MH56_print-hero-and-card-sizes",
@@ -287,20 +303,40 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P3OR40_dynasty-guess-link-preview",
-   "request": "Dynasty: a proper link preview (picture and one-line description) when the game is shared",
-   "game": "Dynasty Guess",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "review",
+   "id": "P3OR39_glasshouse-short-share-line",
+   "request": "Glasshouse: a share line short enough for every preview (120 characters or fewer)",
+   "game": "Glasshouse",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
    "size": "one repo",
    "estMinutes": null,
    "after": [],
    "priority": "P1",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792712969
+   "created": 1792713603,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2BN01_blackout-notice-read-it-back",
+   "request": "Blackout Notice",
+   "game": "Blackout Notice",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR38_blackout-notice-one-goal"
+   ],
+   "priority": "P2",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792713003,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2FM35_alias-loaf-first-minute",
@@ -489,6 +525,23 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P2RS00_restored-blurry-neighbours-count",
+   "request": "Restored: blurry neighbours count by their shape, so the obvious order stops always winning",
+   "game": "Restored",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792713511,
+   "estPercentOfWeek": 0.25
+  },
+  {
    "id": "P3OR35_the-folder-link-preview",
    "request": "The Folder: a proper link preview (picture and one-line description) when the game is shared",
    "game": "The Folder",
@@ -538,23 +591,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P2FM48_no-unison-first-minute",
-   "request": "No Unison: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-   "game": "No Unison",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792704554,
-   "estPercentOfWeek": 0.25
-  },
-  {
    "id": "P2FM49_silent-disco-first-minute",
    "request": "Silent Disco: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
    "game": "Silent Disco",
@@ -586,6 +622,23 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792704554,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2KT01_kit-win-hold-and-higher-is-better",
+   "request": "Game kit: the solved board stays in view for a moment before the result card, and games where more is better do not say 'fewest possible'",
+   "game": "Studio",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792713426,
    "estPercentOfWeek": 0.25
   },
   {
@@ -668,27 +721,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P2BN01_blackout-notice-read-it-back",
-   "request": "Blackout Notice",
-   "game": "Blackout Notice",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P3OR38_blackout-notice-one-goal"
-   ],
-   "priority": "P2",
-   "state": "waiting",
-   "waitingOn": [
-    "P3OR38_blackout-notice-one-goal"
-   ],
-   "created": 1792713003,
-   "estPercentOfWeek": 0.25
-  },
-  {
    "id": "P2PS00_pigeon-salon-readable-board",
    "request": "Pigeon Salon: label the wall row, readable seed piles, a loss note that does not cover the cause, and a win that stays in view",
    "game": "Pigeon Salon",
@@ -707,6 +739,48 @@
     "P3OR36_pigeon-salon-rule-words"
    ],
    "created": 1792713005,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2RO00_radish-omelette-colours-and-beats",
+   "request": "Radish Omelette: egg colours that match the order cards, a beat count that agrees, readable labels at 320",
+   "game": "Radish Omelette",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR41_radish-omelette-honest-lines"
+   ],
+   "priority": "P2",
+   "state": "waiting",
+   "waitingOn": [
+    "P3OR41_radish-omelette-honest-lines"
+   ],
+   "created": 1792713431,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P3NY00_not-yet-a-real-choice",
+   "request": "Not Yet: give the player a real choice (the cone moves one lane a beat, the next three grabs are shown), or shelve it",
+   "game": "Not Yet",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR42_not-yet-level-three-card"
+   ],
+   "priority": "P2",
+   "state": "waiting",
+   "waitingOn": [
+    "P3OR42_not-yet-level-three-card"
+   ],
+   "created": 1792713432,
    "estPercentOfWeek": 0.25
   },
   {
@@ -1220,6 +1294,22 @@
    "state": "done",
    "at": 1792712590,
    "created": 1792712590
+  },
+  {
+   "id": "P3OR40_dynasty-guess-link-preview",
+   "request": "Dynasty: a proper link preview (picture and one-line description) when the game is shared",
+   "game": "Dynasty Guess",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "state": "done",
+   "at": 1792712969,
+   "created": 1792712969
   },
   {
    "id": "P2n53_nobody-looking",
@@ -1844,6 +1934,22 @@
    "created": 1792712584
   },
   {
+   "id": "P3OR38_blackout-notice-one-goal",
+   "request": "Blackout Notice: one goal line (true, not kinder)",
+   "game": "Blackout Notice",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "done",
+   "at": 1792712699,
+   "created": 1792712699
+  },
+  {
    "id": "P3OR00_gallery-guess-words-test",
    "request": "Gallery Guess: add a test for year labels, range overlap and midpoint order (OpenRouter lane)",
    "game": "Gallery Guess",
@@ -2213,6 +2319,26 @@
    "state": "done",
    "at": 1792691834,
    "created": 1792691834
+  },
+  {
+   "id": "P2n77_review-own-ground-restored-and-same-badge",
+   "request": "Stranger play-through and ship-or-revise call for three new games",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2n74_own-ground",
+    "P2n75_restored",
+    "P2n76_same-badge"
+   ],
+   "priority": null,
+   "state": "done",
+   "at": 1792692389,
+   "created": 1792692389
   },
   {
    "id": "P3OR07_where-and-when-scoring-test",
