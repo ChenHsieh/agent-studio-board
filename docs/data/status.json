@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T13:47:48+00:00",
+ "generated": "2026-10-23T13:51:54+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -18,23 +18,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 30,
+    "queued": 32,
     "running": 0,
     "doneToday": 0,
-    "minutes": 1200,
+    "minutes": 1280,
     "estimateMinutes": 0
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 22,
+    "doneToday": 25,
     "minutes": 180,
     "estimateMinutes": 60
    }
   },
-  "queued": 31,
+  "queued": 33,
   "running": 2,
-  "doneToday": 22,
+  "doneToday": 25,
   "lanes": {
    "Codex": 0,
    "Claude": 3
@@ -44,8 +44,8 @@
    "Codex": 0
   },
   "codexPaused": true,
-  "minutesRemaining": 1380,
-  "estimatedFinish": "2026-10-23T14:47:48+00:00",
+  "minutesRemaining": 1460,
+  "estimatedFinish": "2026-10-23T14:51:54+00:00",
   "estimateMinutes": 60
  },
  "lanes": [
@@ -6329,7 +6329,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Flying White: after you hand in, the result...",
    "costTotalUsd": 108.66,
    "latestChange": {
     "text": "one control row (Hint on board), seal ink as dry streaks, English words wrap whole; main",
@@ -6342,8 +6342,8 @@
    "title": "Flying White",
    "line": "",
    "url": "https://chenhsieh.github.io/flying-white/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Higher priority: real rubbing sources, hilarious teacher, growth, free writing",
    "shelfNote": "",
@@ -6352,20 +6352,48 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-21T05:31:34+00:00",
-   "lastChange": "2026-10-23T09:12:33+00:00",
+   "lastChange": "2026-10-23T13:50:28+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
-    "claudeRuns": 12,
+    "claudeRuns": 13,
     "apiRuns": 0,
     "codexTokens": 553577,
     "codexUsdEst": 0.66,
-    "claudeUsdEst": 43.2,
-    "earlierRounds": 18,
-    "earlierUsdEst": 64.8,
+    "claudeUsdEst": 46.8,
+    "earlierRounds": 17,
+    "earlierUsdEst": 61.2,
     "totalUsdEst": 108.66
    },
    "tasks": [
+    {
+     "title": "P1FW56_result screen fits small phone",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Flying White: after you hand in, the result and Next fit a small phone, nothing draws over the top bar, and the master's name is in Chinese",
+     "since": "2026-10-23T13:50:28+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1FW55_flying white stranger rereview",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Flying White: a fresh stranger play of the live game after the one-row controls and seal rework",
+     "since": "2026-10-23T13:49:53+00:00",
+     "done": "2026-10-23T13:49:53+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1FW55_flying-white-stranger-rereview RESULT (planner, Opus, 2026-10-23)"
+    },
     {
      "title": "P1FW54_one control row seal smear word wrap",
      "state": "done",
@@ -6449,49 +6477,21 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "feat: Explore 38 historical forms of 劍"
-    },
-    {
-     "title": "P1FW48_lanting crops and dry stroke follow up",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Flying White: fix two Lanting crops and the dry end of long strokes",
-     "since": "2026-10-22T17:27:45+00:00",
-     "done": "2026-10-22T17:27:45+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P1FW43_flying white real models and masks",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Flying White: crop more real models (之 from 蘭亭, 仁義道德 from two 千字文 albums) and make ink masks for scoring",
-     "since": "2026-10-22T07:57:35+00:00",
-     "done": "2026-10-22T07:57:35+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "P1FW43 done. after reviewing contact.png and masks.png."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
-    "done": 15
+    "done": 16
    },
    "verdict": {
-    "date": "2026-10-21",
+    "date": "2026-10-23",
     "verdict": "revise",
-    "note": "Homework-like; seal script; hilarious teacher; growth"
+    "note": "The deadpan red-seal teacher is the best thing here; after you hand in on a small phone the result draws over the top bar and Next sits below the screen"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-23T09:12:33+00:00",
@@ -11121,7 +11121,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 54.22,
+   "costTotalUsd": 14.62,
    "latestChange": {
     "text": "see",
     "at": "2026-10-21T18:51:44+00:00"
@@ -11149,7 +11149,7 @@
    "released": false,
    "releasedOn": null,
    "releasedNote": "",
-   "firstSeen": "2026-08-20T15:58:51+00:00",
+   "firstSeen": "2026-10-19T17:54:51+00:00",
    "lastChange": "2026-10-22T07:57:39+00:00",
    "cost": {
     "apiUsd": 0.0,
@@ -11159,9 +11159,9 @@
     "codexTokens": 180479,
     "codexUsdEst": 0.22,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
-    "totalUsdEst": 54.22
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
+    "totalUsdEst": 14.62
    },
    "tasks": [
     {
@@ -11214,12 +11214,6 @@
      "source": "board note"
     },
     {
-     "at": "2026-10-21T18:41:38+00:00",
-     "ok": true,
-     "note": "fix: show a concise Local Hero link preview",
-     "source": "main commit"
-    },
-    {
      "at": "2026-10-21T18:36:02+00:00",
      "ok": false,
      "note": "see",
@@ -11238,46 +11232,10 @@
      "source": "board note"
     },
     {
-     "at": "2026-10-21T05:28:23+00:00",
-     "ok": true,
-     "note": "feat: Local Hero becomes a DOS text-mode screen",
-     "source": "main commit"
-    },
-    {
      "at": "2026-10-19T20:59:20+00:00",
      "ok": true,
      "note": "shared target and first-move hint make local alignment legible; live 390x844 and 320x568 touch checks passed",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-19T20:57:19+00:00",
-     "ok": true,
-     "note": "feat: show the shared island target",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-15T14:23:08+00:00",
-     "ok": true,
-     "note": "feat: a link back to Play Lab",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-15T00:28:44+00:00",
-     "ok": true,
-     "note": "feat: a findable shared stretch, a lesson that needs BANK, demo hook",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-05T03:02:01+00:00",
-     "ok": true,
-     "note": "Add a favicon (data-URI SVG, letter badge on the game's own palette)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-05T02:54:37+00:00",
-     "ok": true,
-     "note": "Add description, og:*, and twitter:* meta tags, and a generated docs/og.png",
-     "source": "main commit"
     }
    ]
   },
@@ -12320,20 +12278,34 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-15T11:43:46+00:00",
-   "lastChange": "2026-10-23T08:44:48+00:00",
+   "lastChange": "2026-10-23T13:49:49+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
-    "claudeRuns": 7,
+    "claudeRuns": 8,
     "apiRuns": 1,
     "codexTokens": 959889,
     "codexUsdEst": 1.15,
-    "claudeUsdEst": 25.2,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
+    "claudeUsdEst": 28.8,
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
     "totalUsdEst": 76.75
    },
    "tasks": [
+    {
+     "title": "P1MH58_mirror hold stranger rereview",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Mirror Hold: a fresh stranger play of the live game after the print and fit rework",
+     "since": "2026-10-23T13:49:49+00:00",
+     "done": "2026-10-23T13:49:49+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1MH58_mirror-hold-stranger-rereview RESULT (planner, Opus, 2026-10-23)"
+    },
     {
      "title": "P1MH57_sheet fits and face in strip",
      "state": "done",
@@ -12431,32 +12403,18 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Verdict: SHIP. Cold play of the live game at 390x844 and 320x568 with one finger (real touch): level 1 is clear in under 20 seconds (goal line, one move chip, the pull drawn on the hair, one drag, tie, nod), all 12..."
-    },
-    {
-     "title": "P1MH51_mirror hold comb stroke core",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Mirror Hold: one verb: comb oil through the hair with your finger; the bout shows which hair springs loose",
-     "since": "2026-10-21T14:48:35+00:00",
-     "done": "2026-10-21T14:48:35+00:00",
-     "reviewed": false,
-     "minutes": 36,
-     "tokens": 218646,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "feat: comb oil into hair and watch each bout pull"
     }
    ],
    "taskCounts": {
     "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 12
+    "done": 13
    },
    "verdict": {
-    "date": "2026-10-21",
-    "verdict": "revise",
-    "note": "Huge revamp: confusing and crude"
+    "date": "2026-10-23",
+    "verdict": "ship",
+    "note": "Comb each pull the right way before the bout and the hair holds; a wrong stroke springs loose strands you can see, and the real prints make every client a person"
    },
    "needsYou": null,
    "inProgress": false,
@@ -22700,7 +22658,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Thumb Stand: after a win on a small...",
    "costTotalUsd": 91.65,
    "latestChange": {
     "text": "320 four-panel pages bigger, smaller hand close-up",
@@ -22713,8 +22671,8 @@
    "title": "Thumb Stand",
    "line": "",
    "url": "https://chenhsieh.github.io/thumb-stand/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Total rework planned by a cross-functional lead",
    "shelfNote": "",
@@ -22723,20 +22681,48 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-16T00:44:20+00:00",
-   "lastChange": "2026-10-22T23:43:01+00:00",
+   "lastChange": "2026-10-23T13:51:27+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 5,
-    "claudeRuns": 8,
+    "claudeRuns": 9,
     "apiRuns": 0,
     "codexTokens": 1373372,
     "codexUsdEst": 1.65,
-    "claudeUsdEst": 28.8,
-    "earlierRounds": 17,
-    "earlierUsdEst": 61.2,
+    "claudeUsdEst": 32.4,
+    "earlierRounds": 16,
+    "earlierUsdEst": 57.6,
     "totalUsdEst": 91.65
    },
    "tasks": [
+    {
+     "title": "P1TS57_result card on small phone",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Thumb Stand: after a win on a small phone, Next and Share are on screen without scrolling",
+     "since": "2026-10-23T13:51:27+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1TS56_thumb stand stranger rereview",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Thumb Stand: a fresh stranger play of the live game after the small-phone panel fix",
+     "since": "2026-10-23T13:49:57+00:00",
+     "done": "2026-10-23T13:49:57+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1TS56_thumb-stand-stranger-rereview RESULT (planner, Opus, 2026-10-23)"
+    },
     {
      "title": "P3OR31_thumb stand link preview",
      "state": "done",
@@ -22820,49 +22806,21 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Verdict: SHIP (live main , live bytes match, looked at 390x844 and 320x568). All 12 feats played to a win with ONE finger by real CDP touch at both sizes, zero console errors; plumb line, red tick and hand close-up..."
-    },
-    {
-     "title": "P1TS50_thumb stand cross functional rework",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Thumb Stand: a cross-functional lead diagnoses and plans a total rework, then Codex executes.",
-     "since": "2026-10-21T14:04:38+00:00",
-     "done": "2026-10-21T14:04:38+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "P1TS50 done (Opus cross-functional lead, 2026-10-21)."
-    },
-    {
-     "title": "thumb stand core and look",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Thumb Stand: order his moves, then hold him up on your own thumb; a black-and-white manga look replaces the circus strongman; the stray scroll and gallery line go.",
-     "since": "2026-10-21T04:17:55+00:00",
-     "done": "2026-10-21T04:17:55+00:00",
-     "reviewed": false,
-     "minutes": 61,
-     "tokens": 526490,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "feat:"
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
-    "done": 13
+    "done": 14
    },
    "verdict": {
-    "date": "2026-10-21",
-    "verdict": "revise",
-    "note": "Total rework"
+    "date": "2026-10-23",
+    "verdict": "ship",
+    "note": "Put his comic panels in an order where every red line lands on his hand, then hold your thumb under him; a fall is a loud joke and a win is earned"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T18:10:35+00:00",
