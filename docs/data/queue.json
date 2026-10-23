@@ -1,5 +1,5 @@
 {
- "generated": 1792715707,
+ "generated": 1792715960,
  "defaultPercentPerCodexTask": 0.25,
  "tasks": [
   {
@@ -70,23 +70,6 @@
    "state": "running",
    "at": 1792714502,
    "created": 1792714502,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2FM34_the-folder-first-minute",
-   "request": "The Folder: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-   "game": "The Folder",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "running",
-   "at": 1792710000,
-   "created": 1792710000,
    "estPercentOfWeek": 0.25
   },
   {
@@ -260,9 +243,9 @@
    "id": "P3OR39_glasshouse-short-share-line",
    "request": "Glasshouse: a share line short enough for every preview (120 characters or fewer)",
    "game": "Glasshouse",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
+   "route": "OpenRouter",
+   "model": "openrouter/openai/gpt-4.1",
+   "effort": "default",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
@@ -270,8 +253,7 @@
    "priority": "P1",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792715055,
-   "estPercentOfWeek": 0.25
+   "created": 1792715828
   },
   {
    "id": "P2FM35_alias-loaf-first-minute",
@@ -426,23 +408,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P2HN00_herbal-pages-stay-open",
-   "request": "Herbal of Nowhere: opened pages stay open (Undo no longer refunds ink), glyphs no longer sit under the parts, counters agree",
-   "game": "Herbal of Nowhere",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792713005,
-   "estPercentOfWeek": 0.25
-  },
-  {
    "id": "P2NC00_name-to-carry-data-inline",
    "request": "Name to Carry: the game file no longer crashes when loaded on its own (the name data moves into it)",
    "game": "A Name to Carry",
@@ -476,23 +441,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713431,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2RS00_restored-blurry-neighbours-count",
-   "request": "Restored: blurry neighbours count by their shape, so the obvious order stops always winning",
-   "game": "Restored",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792713511,
    "estPercentOfWeek": 0.25
   },
   {
@@ -531,9 +479,9 @@
    "id": "P3OR42_not-yet-level-three-card",
    "request": "Not Yet: a level 3 rule card that says to look ahead",
    "game": "Not Yet",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
+   "route": "OpenRouter",
+   "model": "openrouter/openai/gpt-4.1",
+   "effort": "default",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
@@ -541,8 +489,55 @@
    "priority": "P2",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792715055,
-   "estPercentOfWeek": 0.25
+   "created": 1792715828
+  },
+  {
+   "id": "P3OR43_time-material-ruler-legible",
+   "request": "Time Material: the time ruler numbers readable on small phones (OpenRouter lane)",
+   "game": "Time Material",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792715879
+  },
+  {
+   "id": "P3OR45_herbal-pages-stay-open-logic",
+   "request": "Herbal of Nowhere: opened pages stay open after Undo, the page counter counts pages, cleaner level 1 result (OpenRouter lane)",
+   "game": "Herbal of Nowhere",
+   "route": "OpenRouter",
+   "model": "openrouter/openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792715908
+  },
+  {
+   "id": "P3OR46_restored-neighbour-rule-and-words",
+   "request": "Restored: blurry neighbours count by their shape, with the new rule words (OpenRouter lane)",
+   "game": "Restored",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792715879
   },
   {
    "id": "P3d35_lens-screen-studio-320-fix",
@@ -579,23 +574,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P2KT01_kit-win-hold-and-higher-is-better",
-   "request": "Game kit: the solved board stays in view for a moment before the result card, and games where more is better do not say 'fewest possible'",
-   "game": "Studio",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792713426,
-   "estPercentOfWeek": 0.25
-  },
-  {
    "id": "P2n86_round4-template-repos",
    "request": "Create the ten new game repositories from the game template so their builds can start",
    "game": "Studio",
@@ -610,6 +588,22 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792700662
+  },
+  {
+   "id": "P3OR44_kit-win-hold-and-higher-is-better",
+   "request": "Game kit: hold the finished board in view before the result card, and say 'best possible' for higher-is-better games (OpenRouter lane, Codex then gates and ships)",
+   "game": "Studio",
+   "route": "OpenRouter",
+   "model": "openrouter/openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792715908
   },
   {
    "id": "P1FW52_ancient-surface",
@@ -654,6 +648,27 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P2HN00_herbal-pages-stay-open",
+   "request": "Herbal of Nowhere: opened pages stay open (Undo no longer refunds ink), glyphs no longer sit under the parts, counters agree",
+   "game": "Herbal of Nowhere",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR45_herbal-pages-stay-open-logic"
+   ],
+   "priority": "P2",
+   "state": "waiting",
+   "waitingOn": [
+    "P3OR45_herbal-pages-stay-open-logic"
+   ],
+   "created": 1792715918,
+   "estPercentOfWeek": 0.25
+  },
+  {
    "id": "P2PS00_pigeon-salon-readable-board",
    "request": "Pigeon Salon: label the wall row, readable seed piles, a loss note that does not cover the cause, and a win that stays in view",
    "game": "Pigeon Salon",
@@ -675,6 +690,27 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P2RS00_restored-blurry-neighbours-count",
+   "request": "Restored: blurry neighbours count by their shape, so the obvious order stops always winning",
+   "game": "Restored",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR46_restored-neighbour-rule-and-words"
+   ],
+   "priority": "P2",
+   "state": "waiting",
+   "waitingOn": [
+    "P3OR46_restored-neighbour-rule-and-words"
+   ],
+   "created": 1792715918,
+   "estPercentOfWeek": 0.25
+  },
+  {
    "id": "P3NY00_not-yet-a-real-choice",
    "request": "Not Yet: give the player a real choice (the cone moves one lane a beat, the next three grabs are shown), or shelve it",
    "game": "Not Yet",
@@ -693,6 +729,27 @@
     "P3OR42_not-yet-level-three-card"
    ],
    "created": 1792713432,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2KT01_kit-win-hold-and-higher-is-better",
+   "request": "Game kit: the solved board stays in view for a moment before the result card, and games where more is better do not say 'fewest possible'",
+   "game": "Studio",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR44_kit-win-hold-and-higher-is-better"
+   ],
+   "priority": null,
+   "state": "waiting",
+   "waitingOn": [
+    "P3OR44_kit-win-hold-and-higher-is-better"
+   ],
+   "created": 1792715918,
    "estPercentOfWeek": 0.25
   },
   {
