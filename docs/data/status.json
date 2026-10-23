@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T01:40:25+00:00",
+ "generated": "2026-10-23T01:45:37+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 38,
+    "queued": 39,
     "running": 4,
     "doneToday": 54,
-    "minutes": 1680,
-    "estimateMinutes": 336
+    "minutes": 1720,
+    "estimateMinutes": 344
    },
    "Claude": {
     "queued": 1,
-    "running": 5,
-    "doneToday": 102,
-    "minutes": 360,
-    "estimateMinutes": 90
+    "running": 3,
+    "doneToday": 105,
+    "minutes": 240,
+    "estimateMinutes": 60
    }
   },
-  "queued": 39,
-  "running": 9,
-  "doneToday": 156,
+  "queued": 40,
+  "running": 7,
+  "doneToday": 159,
   "lanes": {
    "Codex": 5,
    "Claude": 4
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2040,
-  "estimatedFinish": "2026-10-23T07:16:25+00:00",
-  "estimateMinutes": 336
+  "minutesRemaining": 1960,
+  "estimatedFinish": "2026-10-23T07:29:37+00:00",
+  "estimateMinutes": 344
  },
  "lanes": [
   {
@@ -52,10 +52,10 @@
    "game": "flying-white",
    "task": "P1FW52_ancient surface",
    "since": "2026-10-23T01:19:02+00:00",
-   "activity": "2026-10-23T01:40:05+00:00",
+   "activity": "2026-10-23T01:45:03+00:00",
    "commit": {
-    "at": "2026-10-23T01:35:09+00:00",
-    "subject": "wip: P1FW52_ancient-surface (Codex lane autosave 21:35)"
+    "at": "2026-10-23T01:42:38+00:00",
+    "subject": "fix: keep the paper shell responsive"
    }
   },
   {
@@ -71,7 +71,7 @@
    "game": "letter-lines",
    "task": "P2FM46_letter lines first minute",
    "since": "2026-10-23T01:38:33+00:00",
-   "activity": "2026-10-23T01:40:25+00:00",
+   "activity": "2026-10-23T01:45:36+00:00",
    "commit": null
   },
   {
@@ -79,24 +79,11 @@
    "game": "notched-boat",
    "task": "P2FM50_notched boat first minute",
    "since": "2026-10-23T01:27:25+00:00",
-   "activity": "2026-10-23T01:40:25+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "review dynasty and time material after feedback",
-   "since": null,
-   "activity": null,
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "mirror-hold",
-   "task": "P3OR29_mirror hold link preview",
-   "since": "2026-10-22T23:49:36+00:00",
-   "activity": "2026-10-23T01:39:09+00:00",
-   "commit": null
+   "activity": "2026-10-23T01:45:22+00:00",
+   "commit": {
+    "at": "2026-10-23T01:44:10+00:00",
+    "subject": "wip: P2FM50_notched-boat-first-minute (Codex lane autosave 21:44)"
+   }
   },
   {
    "worker": "Claude",
@@ -108,23 +95,23 @@
   },
   {
    "worker": "Claude",
-   "game": "thumb-stand",
-   "task": "P3OR31_thumb stand link preview",
-   "since": "2026-10-22T23:49:36+00:00",
-   "activity": "2026-10-23T01:39:06+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
    "game": "pigeon-salon",
    "task": "P3OR36_pigeon salon rule words",
    "since": "2026-10-23T01:32:35+00:00",
    "activity": "2026-10-23T01:32:58+00:00",
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "dynasty-guess",
+   "task": "P3OR48_dynasty no answer outline",
+   "since": "2026-10-23T01:43:47+00:00",
+   "activity": "2026-10-23T01:45:38+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 5,
- "claudeWorkers": 5,
+ "claudeWorkers": 3,
  "apiSpentUsd": 308.37,
  "claudeInSession": {
   "runs": 166,
@@ -4398,7 +4385,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Dynasty: ship the no-answer-outline fix after a real-touch...",
    "costTotalUsd": 55.3,
    "latestChange": {
     "text": "P3OR40_dynasty-guess-link-preview: WORKDIR",
@@ -4410,14 +4397,14 @@
    "title": "Dynasty Guess",
    "line": "Place a museum object in its period.",
    "url": "https://chenhsieh.github.io/dynasty-guess/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Fix the missing object, then refine mechanism, story and",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/dynasty-guess-1.webp",
    "firstSeen": "2026-09-20T14:31:25+00:00",
-   "lastChange": "2026-10-22T23:59:18+00:00",
+   "lastChange": "2026-10-23T01:45:38+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
@@ -4431,6 +4418,34 @@
     "totalUsdEst": 55.3
    },
    "tasks": [
+    {
+     "title": "P3OR48_dynasty no answer outline",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Dynasty: stop the cabinet from outlining the right era for the picked object",
+     "since": "2026-10-23T01:43:47+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P2DG01_dynasty no answer outline ship",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Dynasty: ship the no-answer-outline fix after a real-touch check",
+     "since": "2026-10-23T01:43:26+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3OR40_dynasty guess link preview",
      "state": "done",
@@ -4514,49 +4529,21 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Dynasty Guess gloves bot (data and test only, NOT published): GLOVES: YES."
-    },
-    {
-     "title": "dynasty guess ship standard",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Bring it to the guessing-game ship standard: archive, practice with difficulty, stats and collection, cleanup, credits.",
-     "since": "2026-10-20T19:12:56+00:00",
-     "done": "2026-10-20T19:12:56+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "dynasty game feel",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Make Dynasty Guess feel like a game: fix the workroom button, explain every label, a story, clearer era labels, English and Chinese.",
-     "since": "2026-10-20T03:13:21+00:00",
-     "done": "2026-10-20T03:13:21+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Live now (, touch-tested on the live page at 390 and 320): the Workroom button returns to the opening screen, and the Dynasty mark and title at top left replace the Play Lab link."
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 12
    },
    "verdict": {
-    "date": "2026-10-19",
+    "date": "2026-10-22",
     "verdict": "revise",
-    "note": "Good idea; needs game feel, UI, story, bilingual"
+    "note": "Big museum pictures, a full-screen viewer and instant flips make the objects a pleasure to look at, but the cabinet outlines the right era for whichever object you pick, so placing is not yet a judgment"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T23:59:18+00:00",
@@ -6017,7 +6004,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T05:18:25+00:00",
-   "lastChange": "2026-10-23T01:40:05+00:00",
+   "lastChange": "2026-10-23T01:45:03+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -6043,8 +6030,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-23T01:35:09+00:00",
-      "subject": "wip: P1FW52_ancient-surface (Codex lane autosave 21:35)"
+      "at": "2026-10-23T01:42:38+00:00",
+      "subject": "fix: keep the paper shell responsive"
      },
      "result": ""
     },
@@ -9617,7 +9604,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-20T20:19:59+00:00",
-   "lastChange": "2026-10-23T01:40:25+00:00",
+   "lastChange": "2026-10-23T01:45:36+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -11522,41 +11509,27 @@
    "title": "Mirror Hold",
    "line": "Wax a hairstyle, then test it against three pulls.",
    "url": "https://chenhsieh.github.io/mirror-hold/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Huge revamp planned by a cross-functional lead",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/mirror-hold-1.webp",
    "firstSeen": "2026-10-14T23:53:16+00:00",
-   "lastChange": "2026-10-23T01:39:09+00:00",
+   "lastChange": "2026-10-22T23:50:02+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 1,
     "codexTokens": 959889,
     "codexUsdEst": 1.15,
-    "claudeUsdEst": 14.4,
-    "earlierRounds": 15,
-    "earlierUsdEst": 54.0,
+    "claudeUsdEst": 18.0,
+    "earlierRounds": 14,
+    "earlierUsdEst": 50.4,
     "totalUsdEst": 69.55
    },
    "tasks": [
-    {
-     "title": "P3OR29_mirror hold link preview",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Mirror Hold: a proper link preview (picture and one-line description) when the game is shared",
-     "since": "2026-10-22T23:49:36+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1MH56_print hero and card sizes",
      "state": "queued",
@@ -11570,6 +11543,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P3OR29_mirror hold link preview",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Mirror Hold: a proper link preview (picture and one-line description) when the game is shared",
+     "since": "2026-10-22T23:42:55+00:00",
+     "done": "2026-10-22T23:42:55+00:00",
+     "reviewed": false,
+     "minutes": 114,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: docs \"Mirror Hold\" \"Comb a sumo topknot in one oiled stroke so every strand points where the bout will pull.\" https://chenhsieh.g"
     },
     {
      "title": "P3OR06_mirror hold levels units test",
@@ -11658,9 +11645,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 9
+    "done": 10
    },
    "verdict": {
     "date": "2026-10-21",
@@ -13048,7 +13035,7 @@
    "shelfNote": "",
    "image": null,
    "firstSeen": "2026-10-21T01:39:00+00:00",
-   "lastChange": "2026-10-23T01:40:25+00:00",
+   "lastChange": "2026-10-23T01:45:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -13073,7 +13060,10 @@
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-23T01:44:10+00:00",
+      "subject": "wip: P2FM50_notched-boat-first-minute (Codex lane autosave 21:44)"
+     },
      "result": ""
     },
     {
@@ -21245,40 +21235,40 @@
    "title": "Thumb Stand",
    "line": "",
    "url": "https://chenhsieh.github.io/thumb-stand/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Total rework planned by a cross-functional lead",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/thumb-stand-1.webp",
    "firstSeen": "2026-10-16T00:44:20+00:00",
-   "lastChange": "2026-10-23T01:39:06+00:00",
+   "lastChange": "2026-10-22T23:43:01+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 5,
-    "claudeRuns": 7,
+    "claudeRuns": 8,
     "apiRuns": 0,
     "codexTokens": 1373372,
     "codexUsdEst": 1.65,
-    "claudeUsdEst": 25.2,
-    "earlierRounds": 18,
-    "earlierUsdEst": 64.8,
+    "claudeUsdEst": 28.8,
+    "earlierRounds": 17,
+    "earlierUsdEst": 61.2,
     "totalUsdEst": 91.65
    },
    "tasks": [
     {
      "title": "P3OR31_thumb stand link preview",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Thumb Stand: a proper link preview (picture and one-line description) when the game is shared",
-     "since": "2026-10-22T23:49:36+00:00",
-     "done": null,
+     "since": "2026-10-22T23:43:01+00:00",
+     "done": "2026-10-22T23:43:01+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 113,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test:"
     },
     {
      "title": "P1TS55_thumb stand 320 panel size and flying white dry stroke",
@@ -21381,9 +21371,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 12
+    "done": 13
    },
    "verdict": {
     "date": "2026-10-21",
@@ -21391,7 +21381,7 @@
     "note": "Total rework"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-22T18:10:35+00:00",
@@ -21599,7 +21589,11 @@
     "waitingDesign": 0,
     "done": 5
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-10-22",
+    "verdict": "ship",
+    "note": "A scan line now sweeps the live scene and your photo together, so you can watch the bar bend row by row; the match meter starts at 95 percent, so the first move feels small"
+   },
    "needsYou": null,
    "inProgress": true,
    "history": [
