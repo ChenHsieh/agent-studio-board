@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T23:51:10+00:00",
+ "generated": "2026-10-23T23:53:32+00:00",
  "ops": {
   "count": 6,
   "notes": [
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 40,
+    "queued": 42,
     "running": 0,
     "doneToday": 4,
-    "minutes": 1600,
-    "estimateMinutes": 1600
+    "minutes": 1680,
+    "estimateMinutes": 1680
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 41,
+  "queued": 43,
   "running": 1,
   "doneToday": 67,
   "lanes": {
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1720,
-  "estimatedFinish": "2026-10-25T02:31:10+00:00",
-  "estimateMinutes": 1600
+  "minutesRemaining": 1800,
+  "estimatedFinish": "2026-10-25T03:53:32+00:00",
+  "estimateMinutes": 1680
  },
  "lanes": [
   {
@@ -2140,7 +2140,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Clay Clock: the daily order is a new...",
    "costTotalUsd": 22.02,
    "latestChange": {
     "text": "feat: show Clay Clock’s first tablet in link previews",
@@ -2160,8 +2160,8 @@
    "title": "Clay Clock",
    "line": "Press clay jars in the right order.",
    "url": "https://chenhsieh.github.io/clay-clock/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "A goal and a story, and a better drawn figure under the clay",
    "shelfNote": "",
@@ -2170,7 +2170,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-15T04:15:52+00:00",
-   "lastChange": "2026-10-21T16:47:49+00:00",
+   "lastChange": "2026-10-23T23:51:59+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -2184,6 +2184,34 @@
     "totalUsdEst": 22.02
    },
    "tasks": [
+    {
+     "title": "P1CK00_daily order is a new tablet each day",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Clay Clock: the daily order is a new tablet each day, not the same first tablet.",
+     "since": "2026-10-23T23:51:59+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1CK01_core design pass depth",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Clay Clock: a game-design pass to find the real decision, measured before any build, because tapping the soonest-drying slot is not a game.",
+     "since": "2026-10-23T23:51:59+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SD14_studio standard clay clock",
      "state": "done",
@@ -2228,14 +2256,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T16:47:49+00:00",
