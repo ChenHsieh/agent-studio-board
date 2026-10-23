@@ -1,5 +1,5 @@
 {
- "generated": 1792795505,
+ "generated": 1792795844,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -470,6 +470,23 @@
    "created": 1792791549
   },
   {
+   "id": "P1IG00_idea-graph-data-r5",
+   "request": "Build one combined idea graph from every round (nodes, lenses, edges, walks) in a public-safe form for the board.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "idea",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792795729
+  },
+  {
    "id": "P1KT02_expanded-placeholder-set",
    "request": "Template: an expanded placeholder set (24 silhouettes, 12 symbols, 6 fill patterns, a colour-blind-safe palette) so a core can be judged without circles and triangles.",
    "game": "Studio",
@@ -646,6 +663,27 @@
    ],
    "created": 1792715918,
    "estPercentOfWeek": 451.92
+  },
+  {
+   "id": "P1IG01_idea-graph-board-page",
+   "request": "A separate Idea graph page on the studio board: see the graph, tap a node, and make new random walks to brainstorm from.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "idea",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1IG00_idea-graph-data-r5"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P1IG00_idea-graph-data-r5"
+   ],
+   "created": 1792795729
   },
   {
    "id": "P1TE03_room-strings",
