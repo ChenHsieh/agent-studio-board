@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T22:26:36+00:00",
+ "generated": "2026-10-23T22:30:32+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 41,
+    "queued": 40,
     "running": 0,
     "doneToday": 4,
-    "minutes": 1640,
-    "estimateMinutes": 1640
+    "minutes": 1600,
+    "estimateMinutes": 1600
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 45,
+    "doneToday": 46,
     "minutes": 180,
     "estimateMinutes": 60
    }
   },
-  "queued": 42,
+  "queued": 41,
   "running": 2,
-  "doneToday": 49,
+  "doneToday": 50,
   "lanes": {
    "Codex": 1,
    "Claude": 3
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1820,
-  "estimatedFinish": "2026-10-25T01:46:36+00:00",
-  "estimateMinutes": 1640
+  "minutesRemaining": 1780,
+  "estimatedFinish": "2026-10-25T01:10:32+00:00",
+  "estimateMinutes": 1600
  },
  "lanes": [
   {
@@ -58,9 +58,9 @@
   {
    "worker": "Claude",
    "game": "think-elephant",
-   "task": "P1TE00_harder hints and varied results",
-   "since": "2026-10-23T22:08:31+00:00",
-   "activity": "2026-10-23T22:25:58+00:00",
+   "task": "P1TE01_designer pass mechanics",
+   "since": "2026-10-23T22:27:33+00:00",
+   "activity": "2026-10-23T22:27:33+00:00",
    "commit": null
   }
  ],
@@ -68,8 +68,8 @@
  "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 206,
-  "usdEst": 741.6,
+  "runs": 207,
+  "usdEst": 745.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -115,7 +115,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 37
+   "changes": 38
   }
  ],
  "houseRules": 25,
@@ -2582,6 +2582,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-23T21:59:29+00:00",
+     "ok": true,
+     "note": "Remove on-screen credits; How to play opens once on first visit (seenHowTo1) on game, incubator and shapes",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-23T13:16:36+00:00",
      "ok": true,
      "note": "credits panel in How to play (EN + zh-Hant): studio original, system fonts, Web Audio",
@@ -2640,12 +2646,6 @@
      "ok": true,
      "note": "feat: keep earned characters in sync and add a leaf hat with responsive eyes",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-21T14:02:16+00:00",
-     "ok": true,
-     "note": "feat: keep earned characters in sync and add a leaf hat with responsive eyes",
-     "source": "main commit"
     }
    ],
    "releaseHeld": true
@@ -22456,11 +22456,11 @@
    ]
   },
   {
-   "nextTask": "Think an Elephant: a game designer decides how...",
-   "costTotalUsd": 18.11,
+   "nextTask": null,
+   "costTotalUsd": 21.71,
    "latestChange": {
-    "text": "feat: teach elephant deduction in a playable first minute",
-    "at": "2026-10-22T22:10:04+00:00"
+    "text": "harder: hints narrow by kind, entry door, pars up to 5, one sourced line per level",
+    "at": "2026-10-23T22:27:26+00:00"
    },
    "promo": null,
    "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
@@ -22479,26 +22479,26 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-21T04:40:58+00:00",
-   "lastChange": "2026-10-23T22:25:58+00:00",
+   "lastChange": "2026-10-23T22:27:33+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 91844,
     "codexUsdEst": 0.11,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 5,
     "earlierUsdEst": 18.0,
-    "totalUsdEst": 18.11
+    "totalUsdEst": 21.71
    },
    "tasks": [
     {
-     "title": "P1TE00_harder hints and varied results",
+     "title": "P1TE01_designer pass mechanics",
      "state": "running",
      "worker": "Claude",
-     "plan": "Think an Elephant: make the hint slower to give the answer, and give each level its own result quote.",
-     "since": "2026-10-23T22:08:31+00:00",
+     "plan": "Think an Elephant: a game designer decides how the forest and room chapters really change the mechanic and difficulty, then refines the look.",
+     "since": "2026-10-23T22:27:33+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -22508,18 +22508,18 @@
      "result": ""
     },
     {
-     "title": "P1TE01_designer pass mechanics",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Think an Elephant: a game designer decides how the forest and room chapters really change the mechanic and difficulty, then refines the look.",
+     "title": "P1TE00_harder hints and varied results",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Think an Elephant: make the hint slower to give the answer, and give each level its own result quote.",
      "since": "2026-10-23T21:34:45+00:00",
-     "done": null,
+     "done": "2026-10-23T21:34:45+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "For a player: from level 2 on the board no longer outlines the elephants that still fit and the strip no longer crosses them out; the note under the board only says what is settled (facing, height, across) and what is..."
     },
     {
      "title": "P2FM24_think elephant first minute",
@@ -22537,15 +22537,21 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": null,
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-23T22:27:26+00:00",
+     "ok": true,
+     "note": "harder: hints narrow by kind, entry door, pars up to 5, one sourced line per level",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T22:10:04+00:00",
      "ok": true,
