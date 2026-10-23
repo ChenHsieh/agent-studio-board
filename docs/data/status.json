@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T13:39:15+00:00",
+ "generated": "2026-10-23T13:43:31+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -18,23 +18,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 31,
+    "queued": 30,
     "running": 0,
     "doneToday": 0,
-    "minutes": 1240,
+    "minutes": 1200,
     "estimateMinutes": 0
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 21,
+    "doneToday": 22,
     "minutes": 180,
     "estimateMinutes": 60
    }
   },
-  "queued": 32,
+  "queued": 31,
   "running": 2,
-  "doneToday": 21,
+  "doneToday": 22,
   "lanes": {
    "Codex": 0,
    "Claude": 3
@@ -44,8 +44,8 @@
    "Codex": 0
   },
   "codexPaused": true,
-  "minutesRemaining": 1420,
-  "estimatedFinish": "2026-10-23T14:39:15+00:00",
+  "minutesRemaining": 1380,
+  "estimatedFinish": "2026-10-23T14:43:31+00:00",
   "estimateMinutes": 60
  },
  "lanes": [
@@ -59,10 +59,10 @@
   },
   {
    "worker": "Claude",
-   "game": "lot-waits",
-   "task": "P2FM55_lot waits first minute fix",
-   "since": "2026-10-23T13:27:52+00:00",
-   "activity": "2026-10-23T13:28:01+00:00",
+   "game": "hit-or-kit",
+   "task": "P2FM57_hit or kit first minute fix",
+   "since": "2026-10-23T13:43:10+00:00",
+   "activity": "2026-10-23T13:43:30+00:00",
    "commit": null
   }
  ],
@@ -117,7 +117,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 18
+   "changes": 19
   }
  ],
  "houseRules": 25,
@@ -8962,7 +8962,7 @@
    ]
   },
   {
-   "nextTask": "Hit or Kit: a three-step practice round before...",
+   "nextTask": null,
    "costTotalUsd": 32.4,
    "latestChange": {
     "text": "see",
@@ -8981,8 +8981,8 @@
    "title": "Hit or Kit",
    "line": "Open sample tubes in a freezer box and publish or drop a microbiome finding; 25 cases and a daily.",
    "url": "https://chenhsieh.github.io/hit-or-kit/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Open sample tubes in a freezer box and publish or drop a microbiome finding; 25",
    "shelfNote": "",
@@ -8991,7 +8991,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T04:19:06+00:00",
-   "lastChange": "2026-10-23T13:27:09+00:00",
+   "lastChange": "2026-10-23T13:43:30+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -9007,10 +9007,10 @@
    "tasks": [
     {
      "title": "P2FM57_hit or kit first minute fix",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Hit or Kit: a three-step practice round before the first case (fix so it never covers a level the game loads directly)",
-     "since": "2026-10-23T13:27:09+00:00",
+     "since": "2026-10-23T13:43:10+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -9049,8 +9049,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
@@ -11121,7 +11121,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 54.22,
+   "costTotalUsd": 14.62,
    "latestChange": {
     "text": "see",
     "at": "2026-10-21T18:51:44+00:00"
@@ -11149,7 +11149,7 @@
    "released": false,
    "releasedOn": null,
    "releasedNote": "",
-   "firstSeen": "2026-08-20T15:58:51+00:00",
+   "firstSeen": "2026-10-19T17:54:51+00:00",
    "lastChange": "2026-10-22T07:57:39+00:00",
    "cost": {
     "apiUsd": 0.0,
@@ -11159,9 +11159,9 @@
     "codexTokens": 180479,
     "codexUsdEst": 0.22,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
-    "totalUsdEst": 54.22
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
+    "totalUsdEst": 14.62
    },
    "tasks": [
     {
@@ -11214,12 +11214,6 @@
      "source": "board note"
     },
     {
-     "at": "2026-10-21T18:41:38+00:00",
-     "ok": true,
-     "note": "fix: show a concise Local Hero link preview",
-     "source": "main commit"
-    },
-    {
      "at": "2026-10-21T18:36:02+00:00",
      "ok": false,
      "note": "see",
@@ -11238,46 +11232,10 @@
      "source": "board note"
     },
     {
-     "at": "2026-10-21T05:28:23+00:00",
-     "ok": true,
-     "note": "feat: Local Hero becomes a DOS text-mode screen",
-     "source": "main commit"
-    },
-    {
      "at": "2026-10-19T20:59:20+00:00",
      "ok": true,
      "note": "shared target and first-move hint make local alignment legible; live 390x844 and 320x568 touch checks passed",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-19T20:57:19+00:00",
-     "ok": true,
-     "note": "feat: show the shared island target",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-15T14:23:08+00:00",
-     "ok": true,
-     "note": "feat: a link back to Play Lab",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-15T00:28:44+00:00",
-     "ok": true,
-     "note": "feat: a findable shared stretch, a lesson that needs BANK, demo hook",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-05T03:02:01+00:00",
-     "ok": true,
-     "note": "Add a favicon (data-URI SVG, letter badge on the game's own palette)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-05T02:54:37+00:00",
-     "ok": true,
-     "note": "Add description, og:*, and twitter:* meta tags, and a generated docs/og.png",
-     "source": "main commit"
     }
    ]
   },
@@ -19695,7 +19653,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 29.29,
+   "costTotalUsd": 72.49,
    "latestChange": {
     "text": "P2SB52 live: tickets 7-14, chapter 2 (log cut in two), daily ticket, shop is open, share...",
     "at": "2026-10-22T07:27:17+00:00"
@@ -19716,7 +19674,7 @@
    "released": false,
    "releasedOn": null,
    "releasedNote": "",
-   "firstSeen": "2026-10-17T21:41:35+00:00",
+   "firstSeen": "2026-10-14T23:31:15+00:00",
    "lastChange": "2026-10-22T23:42:58+00:00",
    "cost": {
     "apiUsd": 0.0,
@@ -19726,9 +19684,9 @@
     "codexTokens": 407560,
     "codexUsdEst": 0.49,
     "claudeUsdEst": 18.0,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
-    "totalUsdEst": 29.29
+    "earlierRounds": 15,
+    "earlierUsdEst": 54.0,
+    "totalUsdEst": 72.49
    },
    "tasks": [
     {
@@ -19865,10 +19823,22 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-22T07:25:35+00:00",
+     "ok": true,
+     "note": "feat: Slice and Bake gets tickets 7 to 14, a daily ticket, an open shop and a log cut in two",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-22T06:59:46+00:00",
      "ok": true,
      "note": "P2SB51 cane core live: 6 orders, solver par, one-tap moves, Baker Vos en+zh-TW, flipbook kept at old.html, main",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-22T06:58:36+00:00",
+     "ok": true,
+     "note": "feat:",
+     "source": "main commit"
     },
     {
      "at": "2026-10-22T04:14:47+00:00",
@@ -19883,6 +19853,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-21T06:19:15+00:00",
+     "ok": true,
+     "note": "feat:",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-21T05:57:13+00:00",
      "ok": false,
      "note": "see",
@@ -19895,6 +19871,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-21T05:38:42+00:00",
+     "ok": true,
+     "note": "feat: bake a cookie flipbook",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-21T05:11:19+00:00",
      "ok": false,
      "note": "see",
@@ -19904,24 +19886,6 @@
      "at": "2026-10-21T04:49:25+00:00",
      "ok": false,
      "note": "see",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-20T02:08:59+00:00",
-     "ok": true,
-     "note": "flipbook brief + build B2m",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-17T23:15:14+00:00",
-     "ok": true,
-     "note": "CREDIT line on the baked-tray card and the level map, EN+ZH (saved cookie photos, baker unknown); no How to play card exists; README already credited; live",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-17T21:41:35+00:00",
-     "ok": true,
-     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added",
      "source": "board note"
     }
    ]
@@ -22024,10 +21988,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 36.0,
+   "costTotalUsd": 39.6,
    "latestChange": {
-    "text": "see",
-    "at": "2026-10-22T22:20:26+00:00"
+    "text": "first-minute start/stop fix: lesson starts only from Play click; test added; gates...",
+    "at": "2026-10-23T13:43:09+00:00"
    },
    "promo": {
     "files": {
@@ -22042,8 +22006,8 @@
    "title": "The Lot Waits",
    "line": "A week at a shrine side table: give each lot to its visitor on the right day or keep it in a two-slot drawer.",
    "url": "https://chenhsieh.github.io/lot-waits/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "A week at a shrine side table: give each lot to its visitor on the right day or",
    "shelfNote": "",
@@ -22052,45 +22016,51 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-21T21:13:02+00:00",
-   "lastChange": "2026-10-23T13:28:01+00:00",
+   "lastChange": "2026-10-23T13:43:09+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 10,
     "earlierUsdEst": 36.0,
-    "totalUsdEst": 36.0
+    "totalUsdEst": 39.6
    },
    "tasks": [
     {
      "title": "P2FM55_lot waits first minute fix",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Finish the first-minute round for lot-waits: the lesson starts only from the Play button, so jumping to a level never lands under it",
-     "since": "2026-10-23T13:27:52+00:00",
-     "done": null,
+     "since": "2026-10-23T13:27:09+00:00",
+     "done": "2026-10-23T13:27:09+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "live game.js matches)."
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": "Native read of the 14 composed poems and their plain-language lines is owed. Suggest: one native read of all fourteen before the share card goes out.",
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-23T13:43:09+00:00",
+     "ok": true,
+     "note": "first-minute start/stop fix: lesson starts only from Play click; test added; gates 3x390+1x320 green",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T22:20:26+00:00",
      "ok": false,
