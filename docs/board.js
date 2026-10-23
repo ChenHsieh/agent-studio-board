@@ -101,6 +101,7 @@ function requestHtml(t) {
   return `<li class="req${isOpen ? ' open' : ''}" data-rid="${esc(t.id)}"><button class="rrow" aria-expanded="${isOpen}">
     <span class="rtext">${esc(t.request)}</span>
     <span class="rline"><span class="rgame">${esc(t.game)}</span><span class="chip2">${esc(t.model)}</span><span class="chip2">${esc(t.effort)}</span><span class="rst ${esc(t.state)}">${esc(stateText(t))}</span>${share}</span></button>
+    ${t.why ? `<p class="why rwhy"><b>Why this exists:</b> ${esc(t.why)}</p>` : ''}
     <dl class="rmeta">${meta.map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl></li>`;
 }
 function renderQueueView() {
@@ -230,6 +231,7 @@ function gameHtml(g) {
     <span class="line">${g.needsYou ? '<b class="ask">To do:</b> ' : ''}${esc(whatToDo(g))}</span>${glanceHtml(g)}</button>
   <a class="play-link" href="${esc(g.url)}" target="_blank" rel="noopener" aria-label="Play ${esc(g.title)}">Play</a>
   <div class="detail">
+    ${g.why ? `<p class="why"><b>Why this exists:</b> ${esc(g.why)}</p>` : ''}
     <p class="detail-links"><a href="${esc(g.url)}" target="_blank" rel="noopener">Play</a><a href="${esc(repoUrl)}" target="_blank" rel="noopener">Repo</a><button type="button" class="pbtn" data-copy="${esc(g.url)}">Copy link</button></p>
     ${promoHtml(g)}
     ${g.line ? `<p>${esc(g.line)}</p>` : ''}
