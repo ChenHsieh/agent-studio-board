@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T13:05:36+00:00",
+ "generated": "2026-10-23T13:10:03+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -18,23 +18,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 35,
+    "queued": 34,
     "running": 0,
     "doneToday": 0,
-    "minutes": 1400,
+    "minutes": 1360,
     "estimateMinutes": 0
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 17,
+    "doneToday": 18,
     "minutes": 180,
     "estimateMinutes": 60
    }
   },
-  "queued": 36,
+  "queued": 35,
   "running": 2,
-  "doneToday": 17,
+  "doneToday": 18,
   "lanes": {
    "Codex": 0,
    "Claude": 3
@@ -44,8 +44,8 @@
    "Codex": 0
   },
   "codexPaused": true,
-  "minutesRemaining": 1580,
-  "estimatedFinish": "2026-10-23T14:05:36+00:00",
+  "minutesRemaining": 1540,
+  "estimatedFinish": "2026-10-23T14:10:03+00:00",
   "estimateMinutes": 60
  },
  "lanes": [
@@ -60,9 +60,9 @@
   {
    "worker": "Claude",
    "game": "colony-count",
-   "task": "P2CC34_lab edge counts keep their shape",
-   "since": "2026-10-23T12:43:33+00:00",
-   "activity": "2026-10-23T13:05:34+00:00",
+   "task": "P2RL11_credits panel colony count",
+   "since": "2026-10-23T13:06:37+00:00",
+   "activity": "2026-10-23T13:07:24+00:00",
    "commit": null
   }
  ],
@@ -70,8 +70,8 @@
  "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 187,
-  "usdEst": 673.2,
+  "runs": 188,
+  "usdEst": 676.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -117,7 +117,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 14
+   "changes": 15
   }
  ],
  "houseRules": 25,
@@ -2399,11 +2399,11 @@
    ]
   },
   {
-   "nextTask": "Colony Count: a Credits panel naming every source...",
-   "costTotalUsd": 170.85,
+   "nextTask": null,
+   "costTotalUsd": 174.45,
    "latestChange": {
-    "text": "fix: lab edge counts keep their colony's shape and a readable number",
-    "at": "2026-10-23T13:05:34+00:00"
+    "text": "lab edge counts keep colony shapes (circle/square/diamond), 18 px digits on round dish,...",
+    "at": "2026-10-23T13:06:33+00:00"
    },
    "promo": null,
    "why": "An ad for a three-colour sweeper puzzle (ColorSweeper).",
@@ -2418,30 +2418,30 @@
    "priorityNote": "Flagship; has its own owner",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
-   "released": false,
+   "released": true,
    "releasedOn": "2026-10-23",
    "releasedNote": "public-ready, still being refined",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-23T13:05:34+00:00",
+   "lastChange": "2026-10-23T13:07:24+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 2,
-    "claudeRuns": 19,
+    "claudeRuns": 20,
     "apiRuns": 8,
     "codexTokens": 304598,
     "codexUsdEst": 0.37,
-    "claudeUsdEst": 68.4,
+    "claudeUsdEst": 72.0,
     "earlierRounds": 22,
     "earlierUsdEst": 79.2,
-    "totalUsdEst": 170.85
+    "totalUsdEst": 174.45
    },
    "tasks": [
     {
-     "title": "P2CC34_lab edge counts keep their shape",
+     "title": "P2RL11_credits panel colony count",
      "state": "running",
      "worker": "Claude",
-     "plan": "Colony Count: in the round dish and octagon lab, edge counts show the colony's shape as well as its colour",
-     "since": "2026-10-23T12:43:33+00:00",
+     "plan": "Colony Count: a Credits panel naming every source and licence (release checklist)",
+     "since": "2026-10-23T13:06:37+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2451,18 +2451,18 @@
      "result": ""
     },
     {
-     "title": "P2RL11_credits panel colony count",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Colony Count: a Credits panel naming every source and licence (release checklist)",
-     "since": "2026-10-23T09:52:54+00:00",
-     "done": null,
+     "title": "P2CC34_lab edge counts keep their shape",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Colony Count: in the round dish and octagon lab, edge counts show the colony's shape as well as its colour",
+     "since": "2026-10-23T12:30:54+00:00",
+     "done": "2026-10-23T12:30:54+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE P2CC34 colony-count lab edge counts. Main commit (pushed, read back). Live shapes.js and shapes.css match main."
     },
     {
      "title": "P3OR50_colony lab rule card short steps",
@@ -2550,10 +2550,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 29
+    "done": 30
    },
    "verdict": {
     "date": "2026-10-23",
@@ -2563,6 +2563,12 @@
    "needsYou": "GoatCounter visit counter is wired but off in five games (this one, Walls Have Ears, Cymatic Plate, Glasshouse, UGA Grad Survivor) until a site code is chosen. Suggest: sign up with one shared code and switch all five on.",
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-23T13:06:33+00:00",
+     "ok": true,
+     "note": "lab edge counts keep colony shapes (circle/square/diamond), 18 px digits on round dish, met counts readable",
+     "source": "board note"
+    },
     {
      "at": "2026-10-23T13:05:34+00:00",
      "ok": true,
@@ -2628,15 +2634,8 @@
      "ok": true,
      "note": "fix: the incubator's coach line is never cut off on a 320 px phone",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T04:37:10+00:00",
-     "ok": true,
-     "note": "feat: The lab is open, with the round dish, the octagon tiling and the incubator",
-     "source": "main commit"
     }
-   ],
-   "releaseHeld": true
+   ]
   },
   {
    "nextTask": null,
@@ -10876,8 +10875,11 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 3.6,
-   "latestChange": null,
+   "costTotalUsd": 7.2,
+   "latestChange": {
+    "text": "feat: Literal Spirit starts from the Play Lab game template",
+    "at": "2026-10-22T20:40:38+00:00"
+   },
    "promo": null,
    "why": "A pool of folk talisman charts read as instructions to a literal-minded agent.",
    "id": "literal-spirit",
@@ -10894,7 +10896,7 @@
    "released": false,
    "releasedOn": null,
    "releasedNote": "",
-   "firstSeen": "2026-10-23T03:05:13+00:00",
+   "firstSeen": "2026-10-22T20:39:12+00:00",
    "lastChange": "2026-10-23T03:05:13+00:00",
    "cost": {
     "apiUsd": 0.0,
@@ -10904,9 +10906,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 0,
-    "earlierUsdEst": 0.0,
-    "totalUsdEst": 3.6
+    "earlierRounds": 1,
+    "earlierUsdEst": 3.6,
+    "totalUsdEst": 7.2
    },
    "tasks": [
     {
@@ -10933,7 +10935,20 @@
    "verdict": null,
    "needsYou": null,
    "inProgress": false,
-   "history": []
+   "history": [
+    {
+     "at": "2026-10-22T20:40:38+00:00",
+     "ok": true,
+     "note": "feat: Literal Spirit starts from the Play Lab game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T20:39:12+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
+    }
+   ]
   },
   {
    "nextTask": null,
@@ -11106,7 +11121,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 14.62,
+   "costTotalUsd": 54.22,
    "latestChange": {
     "text": "see",
     "at": "2026-10-21T18:51:44+00:00"
@@ -11134,7 +11149,7 @@
    "released": false,
    "releasedOn": null,
    "releasedNote": "",
-   "firstSeen": "2026-10-19T17:54:51+00:00",
+   "firstSeen": "2026-08-20T15:58:51+00:00",
    "lastChange": "2026-10-22T07:57:39+00:00",
    "cost": {
     "apiUsd": 0.0,
@@ -11144,9 +11159,9 @@
     "codexTokens": 180479,
     "codexUsdEst": 0.22,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
-    "totalUsdEst": 14.62
+    "earlierRounds": 14,
+    "earlierUsdEst": 50.4,
+    "totalUsdEst": 54.22
    },
    "tasks": [
     {
@@ -11199,6 +11214,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-21T18:41:38+00:00",
+     "ok": true,
+     "note": "fix: show a concise Local Hero link preview",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-21T18:36:02+00:00",
      "ok": false,
      "note": "see",
@@ -11217,10 +11238,46 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-21T05:28:23+00:00",
+     "ok": true,
+     "note": "feat: Local Hero becomes a DOS text-mode screen",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-19T20:59:20+00:00",
      "ok": true,
      "note": "shared target and first-move hint make local alignment legible; live 390x844 and 320x568 touch checks passed",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-19T20:57:19+00:00",
+     "ok": true,
+     "note": "feat: show the shared island target",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-15T14:23:08+00:00",
+     "ok": true,
+     "note": "feat: a link back to Play Lab",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-15T00:28:44+00:00",
+     "ok": true,
+     "note": "feat: a findable shared stretch, a lesson that needs BANK, demo hook",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-09-05T03:02:01+00:00",
+     "ok": true,
+     "note": "Add a favicon (data-URI SVG, letter badge on the game's own palette)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-09-05T02:54:37+00:00",
+     "ok": true,
+     "note": "Add description, og:*, and twitter:* meta tags, and a generated docs/og.png",
+     "source": "main commit"
     }
    ]
   },
@@ -25511,7 +25568,5 @@
   "System needs: Codex quota is used up; Codex builds wait (fix: say when the quota resets, or say \"move builds to Claude\")"
  ],
  "releaseReady": [],
- "releaseRegressed": [
-  "colony-count"
- ]
+ "releaseRegressed": []
 }
