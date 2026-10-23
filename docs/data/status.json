@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T23:56:27+00:00",
+ "generated": "2026-10-23T23:58:44+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,35 +16,35 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 51,
+    "queued": 49,
     "running": 0,
-    "doneToday": 4,
-    "minutes": 2040,
-    "estimateMinutes": 2040
+    "doneToday": 5,
+    "minutes": 1960,
+    "estimateMinutes": 1960
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 5,
     "doneToday": 63,
-    "minutes": 120,
-    "estimateMinutes": 60
+    "minutes": 360,
+    "estimateMinutes": 90
    }
   },
-  "queued": 52,
-  "running": 1,
-  "doneToday": 67,
+  "queued": 50,
+  "running": 5,
+  "doneToday": 68,
   "lanes": {
    "Codex": 1,
-   "Claude": 2
+   "Claude": 4
   },
   "laneCap": {
    "Claude": 4,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2160,
-  "estimatedFinish": "2026-10-25T09:56:27+00:00",
-  "estimateMinutes": 2040
+  "minutesRemaining": 2320,
+  "estimatedFinish": "2026-10-25T08:38:44+00:00",
+  "estimateMinutes": 1960
  },
  "lanes": [
   {
@@ -54,10 +54,42 @@
    "since": "2026-10-23T23:36:47+00:00",
    "activity": "2026-10-23T23:42:28+00:00",
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "honest-sign",
+   "task": "P2RV05_honest sign",
+   "since": "2026-10-23T23:57:56+00:00",
+   "activity": "2026-10-23T23:58:04+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "the-draw",
+   "task": "P2RV06_the draw",
+   "since": "2026-10-23T23:57:57+00:00",
+   "activity": "2026-10-23T23:58:37+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "rumour-on-the-jetty",
+   "task": "P2RV07_rumour on the jetty",
+   "since": "2026-10-23T23:57:56+00:00",
+   "activity": "2026-10-23T23:58:02+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "scribes-blotter",
+   "task": "P2RV08_scribes blotter",
+   "since": "2026-10-23T23:57:55+00:00",
+   "activity": "2026-10-23T23:58:37+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 5,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
   "runs": 212,
@@ -3452,7 +3484,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Cymatic Plate: endless mode always has a way...",
    "costTotalUsd": 76.24,
    "latestChange": {
     "text": "P3OR54_cymatic-plate-credits-page: WORKDIR",
@@ -3472,17 +3504,17 @@
    "title": "Cymatic Plate",
    "line": "Ring notes on a brass plate covered in sand and watch the.",
    "url": "https://chenhsieh.github.io/cymatic-plate/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
    "image": "promo/cymatic-plate/first.jpg",
-   "released": false,
-   "releasedOn": null,
-   "releasedNote": "",
+   "released": true,
+   "releasedOn": "2026-10-23",
+   "releasedNote": "public-ready, still being refined",
    "firstSeen": "2026-10-16T01:40:04+00:00",
-   "lastChange": "2026-10-23T21:35:40+00:00",
+   "lastChange": "2026-10-23T23:57:06+00:00",
    "cost": {
     "apiUsd": 3.26,
     "codexRuns": 5,
@@ -3496,6 +3528,34 @@
     "totalUsdEst": 76.24
    },
    "tasks": [
+    {
+     "title": "P1CY00_endless always solvable and overload bar",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Cymatic Plate: endless mode always has a way out, and a bar shows when too many drops hinder the vibration.",
+     "since": "2026-10-23T23:57:06+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1CY01_smooth moves and ui",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Cymatic Plate: drops glide from A to B instead of vanishing and reappearing; the next options respond quickly; UI polish.",
+     "since": "2026-10-23T23:57:06+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3OR54_cymatic plate credits page",
      "state": "done",
@@ -3579,38 +3639,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "cymatic assist",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Remove the assist ring unless its effect is visible; keep Listen; open all levels.",
-     "since": "2026-10-19T14:51:10+00:00",
-     "done": "2026-10-19T14:51:10+00:00",
-     "reviewed": true,
-     "minutes": 15,
-     "tokens": 151820,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "review of cymatic ease",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-19T03:31:04+00:00",
-     "done": "2026-10-19T03:31:04+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 13
@@ -3621,7 +3653,7 @@
     "note": "Ship after endless mode gets sound, haptics and the logo"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-23T21:35:40+00:00",
@@ -9270,7 +9302,7 @@
    ]
   },
   {
-   "nextTask": "Build round 5 idea 1, Honest Sign (數自己的招牌)...",
+   "nextTask": null,
    "costTotalUsd": 7.2,
    "latestChange": {
     "text": "feat: Honest Sign starts from the Play Lab game template",
@@ -9283,8 +9315,8 @@
    "title": "Honest Sign",
    "line": "",
    "url": "https://chenhsieh.github.io/honest-sign/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -9293,7 +9325,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-23T23:32:13+00:00",
-   "lastChange": "2026-10-23T23:54:06+00:00",
+   "lastChange": "2026-10-23T23:58:04+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -9309,10 +9341,10 @@
    "tasks": [
     {
      "title": "P2RV05_honest sign",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Build round 5 idea 1, Honest Sign (數自己的招牌), from its finished core brief (verdict GO), placeholder shapes, first-minute lesson included",
-     "since": "2026-10-23T23:54:06+00:00",
+     "since": "2026-10-23T23:57:56+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -9323,8 +9355,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
@@ -17824,7 +17856,7 @@
    ]
   },
   {
-   "nextTask": "Build round 5 idea 7, Rumour on the...",
+   "nextTask": null,
    "costTotalUsd": 7.2,
    "latestChange": {
     "text": "feat: Rumour on the Jetty starts from the Play Lab game template",
@@ -17837,8 +17869,8 @@
    "title": "Rumour On The Jetty",
    "line": "",
    "url": "https://chenhsieh.github.io/rumour-on-the-jetty/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -17847,7 +17879,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-23T23:54:13+00:00",
+   "lastChange": "2026-10-23T23:58:02+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -17863,10 +17895,10 @@
    "tasks": [
     {
      "title": "P2RV07_rumour on the jetty",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Build round 5 idea 7, Rumour on the Jetty (燈會的謠言), from its finished core brief (verdict GO), placeholder shapes, first-minute lesson included",
-     "since": "2026-10-23T23:54:13+00:00",
+     "since": "2026-10-23T23:57:56+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -17877,8 +17909,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
@@ -18243,7 +18275,7 @@
    ]
   },
   {
-   "nextTask": "Build round 5 idea 9, The Scribe's Blotter...",
+   "nextTask": null,
    "costTotalUsd": 7.2,
    "latestChange": {
     "text": "feat: The Scribe's Blotter starts from the Play Lab game template",
@@ -18256,8 +18288,8 @@
    "title": "Scribes Blotter",
    "line": "",
    "url": "https://chenhsieh.github.io/scribes-blotter/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -18266,7 +18298,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-23T23:50:02+00:00",
-   "lastChange": "2026-10-23T23:54:17+00:00",
+   "lastChange": "2026-10-23T23:58:37+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -18282,10 +18314,10 @@
    "tasks": [
     {
      "title": "P2RV08_scribes blotter",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Build round 5 idea 9, The Scribe's Blotter (代書的吸墨紙), from its finished core brief (verdict GO), placeholder shapes, first-minute lesson included",
-     "since": "2026-10-23T23:54:17+00:00",
+     "since": "2026-10-23T23:57:55+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -18296,8 +18328,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
@@ -22170,7 +22202,7 @@
    ]
   },
   {
-   "nextTask": "Build round 5 idea 5, The Draw (抽籤的手)...",
+   "nextTask": null,
    "costTotalUsd": 7.2,
    "latestChange": {
     "text": "feat: The Draw starts from the Play Lab game template",
@@ -22183,8 +22215,8 @@
    "title": "The Draw",
    "line": "",
    "url": "https://chenhsieh.github.io/the-draw/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -22193,7 +22225,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-23T23:54:09+00:00",
+   "lastChange": "2026-10-23T23:58:37+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -22209,10 +22241,10 @@
    "tasks": [
     {
      "title": "P2RV06_the draw",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Build round 5 idea 5, The Draw (抽籤的手), from its finished core brief (verdict GO), placeholder shapes, first-minute lesson included",
-     "since": "2026-10-23T23:54:09+00:00",
+     "since": "2026-10-23T23:57:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -22223,8 +22255,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
