@@ -1,5 +1,5 @@
 {
- "generated": 1792759354,
+ "generated": 1792759617,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -79,7 +79,7 @@
  },
  "overflow": {
   "codexOut": true,
-  "converted": 8,
+  "converted": 7,
   "convertedRunning": 1,
   "claudeWorkers": 2,
   "claudeWorkerCap": 3,
@@ -89,21 +89,23 @@
  },
  "tasks": [
   {
-   "id": "P2RL35_merge-credits-own-ground",
-   "request": "Own Ground: publish its credits panel with licences (already written and tested on a side branch)",
-   "game": "Own Ground",
+   "id": "P2CC34_lab-edge-counts-keep-their-shape",
+   "request": "Colony Count: in the round dish and octagon lab, edge counts show the colony's shape as well as its colour",
+   "game": "Colony Count",
    "route": "Claude",
    "model": "sonnet",
-   "effort": "medium",
+   "effort": "high",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "A tensegrity frame held up only by cables, and a research slide of robots that build a lattice by walking on the blocks they place.",
+   "after": [
+    "P3OR50_colony-lab-rule-card-short-steps"
+   ],
+   "priority": "P1",
+   "why": "An ad for a three-colour sweeper puzzle (ColorSweeper).",
    "state": "running",
-   "at": 1792758464,
-   "created": 1792758464,
+   "at": 1792758654,
+   "created": 1792758654,
    "wasCodex": true
   },
   {
@@ -122,26 +124,6 @@
    "state": "running",
    "at": 1792745765,
    "created": 1792745765
-  },
-  {
-   "id": "P2CC34_lab-edge-counts-keep-their-shape",
-   "request": "Colony Count: in the round dish and octagon lab, edge counts show the colony's shape as well as its colour",
-   "game": "Colony Count",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P3OR50_colony-lab-rule-card-short-steps"
-   ],
-   "priority": "P1",
-   "why": "An ad for a three-colour sweeper puzzle (ColorSweeper).",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792758654,
-   "wasCodex": true
   },
   {
    "id": "P2RL11_credits-panel-colony-count",
@@ -1310,6 +1292,24 @@
    "wasCodex": true
   },
   {
+   "id": "P2RL35_merge-credits-own-ground",
+   "request": "Own Ground: publish its credits panel with licences (already written and tested on a side branch)",
+   "game": "Own Ground",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "A tensegrity frame held up only by cables, and a research slide of robots that build a lattice by walking on the blocks they place.",
+   "state": "done",
+   "at": 1792758464,
+   "created": 1792758464,
+   "wasCodex": true
+  },
+  {
    "id": "P3OR43_time-material-ruler-legible",
    "request": "Time Material: the time ruler numbers readable on small phones (OpenRouter lane)",
    "game": "Time Material",
@@ -1710,23 +1710,6 @@
    "at": 1792758464,
    "created": 1792758464,
    "wasCodex": true
-  },
-  {
-   "id": "P2n113_review-dynasty-and-time-material-after-feedback",
-   "request": "the photo-forming scan line)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792716169,
-   "created": 1792716169
   },
   {
    "id": "P3RL19_credits-licences-crushed-can",
