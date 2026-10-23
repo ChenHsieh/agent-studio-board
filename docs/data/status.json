@@ -1,11 +1,9 @@
 {
- "generated": "2026-10-23T20:58:15+00:00",
+ "generated": "2026-10-23T21:00:38+00:00",
  "ops": {
   "count": 0,
   "notes": [],
-  "info": [
-   "Codex paused (quota)"
-  ]
+  "info": []
  },
  "about": [],
  "project": {
@@ -18,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 38,
-    "running": 0,
+    "queued": 36,
+    "running": 2,
     "doneToday": 0,
     "minutes": 1520,
-    "estimateMinutes": 0
+    "estimateMinutes": 507
    },
    "Claude": {
     "queued": 1,
@@ -32,24 +30,47 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 39,
-  "running": 0,
+  "queued": 37,
+  "running": 2,
   "doneToday": 28,
   "lanes": {
-   "Codex": 0,
+   "Codex": 3,
    "Claude": 1
   },
   "laneCap": {
    "Claude": 4,
-   "Codex": 0
+   "Codex": null
   },
-  "codexPaused": true,
+  "codexPaused": false,
   "minutesRemaining": 1580,
-  "estimatedFinish": "2026-10-23T21:58:15+00:00",
-  "estimateMinutes": 60
+  "estimatedFinish": "2026-10-24T05:27:38+00:00",
+  "estimateMinutes": 507
  },
- "lanes": [],
- "codexLanes": 0,
+ "lanes": [
+  {
+   "worker": "Codex",
+   "game": "flying-white",
+   "task": "P1FW56_result screen fits small phone",
+   "since": "2026-10-23T20:59:47+00:00",
+   "activity": "2026-10-23T21:00:35+00:00",
+   "commit": {
+    "at": "2026-10-23T20:59:51+00:00",
+    "subject": "start: P1FW56_result-screen-fits-small-phone"
+   }
+  },
+  {
+   "worker": "Codex",
+   "game": "thumb-stand",
+   "task": "P1TS57_result card on small phone",
+   "since": "2026-10-23T21:00:18+00:00",
+   "activity": "2026-10-23T21:00:37+00:00",
+   "commit": {
+    "at": "2026-10-23T21:00:19+00:00",
+    "subject": "start: P1TS57_result-card-on-small-phone"
+   }
+  }
+ ],
+ "codexLanes": 3,
  "claudeWorkers": 0,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
@@ -6312,7 +6333,7 @@
    ]
   },
   {
-   "nextTask": "Flying White: after you hand in, the result...",
+   "nextTask": null,
    "costTotalUsd": 108.66,
    "latestChange": {
     "text": "one control row (Hint on board), seal ink as dry streaks, English words wrap whole; main",
@@ -6325,7 +6346,7 @@
    "title": "Flying White",
    "line": "",
    "url": "https://chenhsieh.github.io/flying-white/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Higher priority: real rubbing sources, hilarious teacher, growth, free writing",
@@ -6335,7 +6356,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-21T05:31:34+00:00",
-   "lastChange": "2026-10-23T13:50:28+00:00",
+   "lastChange": "2026-10-23T21:00:35+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -6351,16 +6372,19 @@
    "tasks": [
     {
      "title": "P1FW56_result screen fits small phone",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Flying White: after you hand in, the result and Next fit a small phone, nothing draws over the top bar, and the master's name is in Chinese",
-     "since": "2026-10-23T13:50:28+00:00",
+     "since": "2026-10-23T20:59:47+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-23T20:59:51+00:00",
+      "subject": "start: P1FW56_result-screen-fits-small-phone"
+     },
      "result": ""
     },
     {
@@ -6463,8 +6487,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 16
    },
@@ -22733,7 +22757,7 @@
    ]
   },
   {
-   "nextTask": "Thumb Stand: after a win on a small...",
+   "nextTask": null,
    "costTotalUsd": 91.65,
    "latestChange": {
     "text": "320 four-panel pages bigger, smaller hand close-up",
@@ -22746,7 +22770,7 @@
    "title": "Thumb Stand",
    "line": "",
    "url": "https://chenhsieh.github.io/thumb-stand/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Total rework planned by a cross-functional lead",
@@ -22756,7 +22780,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-16T00:44:20+00:00",
-   "lastChange": "2026-10-23T13:51:27+00:00",
+   "lastChange": "2026-10-23T21:00:37+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 5,
@@ -22772,16 +22796,19 @@
    "tasks": [
     {
      "title": "P1TS57_result card on small phone",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Thumb Stand: after a win on a small phone, Next and Share are on screen without scrolling",
-     "since": "2026-10-23T13:51:27+00:00",
+     "since": "2026-10-23T21:00:18+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-23T21:00:19+00:00",
+      "subject": "start: P1TS57_result-card-on-small-phone"
+     },
      "result": ""
     },
     {
@@ -22884,8 +22911,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 14
    },
