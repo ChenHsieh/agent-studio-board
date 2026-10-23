@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T22:08:24+00:00",
+ "generated": "2026-10-23T22:10:51+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -28,31 +28,48 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 0,
-    "doneToday": 43,
-    "minutes": 60,
+    "running": 2,
+    "doneToday": 44,
+    "minutes": 180,
     "estimateMinutes": 60
    }
   },
   "queued": 43,
-  "running": 0,
-  "doneToday": 47,
+  "running": 2,
+  "doneToday": 48,
   "lanes": {
    "Codex": 1,
-   "Claude": 1
+   "Claude": 3
   },
   "laneCap": {
    "Claude": 4,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1740,
-  "estimatedFinish": "2026-10-25T02:08:24+00:00",
+  "minutesRemaining": 1860,
+  "estimatedFinish": "2026-10-25T02:10:51+00:00",
   "estimateMinutes": 1680
  },
- "lanes": [],
+ "lanes": [
+  {
+   "worker": "Claude",
+   "game": "anechoic-fugue",
+   "task": "P1SW02_level7 coin and pet outside canvas",
+   "since": "2026-10-23T22:08:32+00:00",
+   "activity": "2026-10-23T22:09:25+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "think-elephant",
+   "task": "P1TE00_harder hints and varied results",
+   "since": "2026-10-23T22:08:31+00:00",
+   "activity": "2026-10-23T22:08:36+00:00",
+   "commit": null
+  }
+ ],
  "codexLanes": 0,
- "claudeWorkers": 0,
+ "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
   "runs": 205,
@@ -2398,7 +2415,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Colony Count: a test proves an old save...",
    "costTotalUsd": 181.65,
    "latestChange": {
     "text": "express: credits and 致谢 removed from every page; How to play opens once on first visit...",
@@ -2411,17 +2428,17 @@
    "title": "Colony Count",
    "line": "Solve three daily levels, then freeze finished plates.",
    "url": "https://chenhsieh.github.io/colony-count/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Flagship; has its own owner",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
-   "released": true,
+   "released": false,
    "releasedOn": "2026-10-23",
    "releasedNote": "public-ready, still being refined",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-23T22:01:00+00:00",
+   "lastChange": "2026-10-23T22:10:48+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 2,
@@ -2435,6 +2452,20 @@
     "totalUsdEst": 181.65
    },
    "tasks": [
+    {
+     "title": "P2CC35_colony count save migration test",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Colony Count: a test proves an old save still loads after an update (release checklist item 7)",
+     "since": "2026-10-23T22:10:48+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2CC34_lab edge counts keep their shape",
      "state": "done",
@@ -2532,24 +2563,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "feat: keep earned characters in sync and add a leaf hat with responsive eyes"
-    },
-    {
-     "title": "P1CC32_colony achievements and book cuteness",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Colony Count: achievement toasts, 40+ conditional achievements and cute Book additions.",
-     "since": "2026-10-21T13:25:32+00:00",
-     "done": "2026-10-21T13:25:32+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "P1CC32 DONE, live at https://chenhsieh.github.io/colony-count/ (main -> , rollback tag pre-cc-achievements)."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 31
@@ -2560,7 +2577,7 @@
     "note": "The lessons teach the rules in a minute and the lab dishes now play cleanly; most words are still too small and the round dish edge counts tell kinds apart by colour alone"
    },
    "needsYou": "GoatCounter visit counter is wired but off in five games (this one, Walls Have Ears, Cymatic Plate, Glasshouse, UGA Grad Survivor) until a site code is chosen. Suggest: sign up with one shared code and switch all five on.",
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-23T22:01:00+00:00",
@@ -2634,7 +2651,8 @@
      "note": "feat: keep earned characters in sync and add a leaf hat with responsive eyes",
      "source": "main commit"
     }
-   ]
+   ],
+   "releaseHeld": true
   },
   {
    "nextTask": null,
@@ -20931,7 +20949,7 @@
    ]
   },
   {
-   "nextTask": "Still Water: fix level 7 (the pet sits...",
+   "nextTask": "Still Water: put the How to play instructions...",
    "costTotalUsd": 105.07,
    "latestChange": {
     "text": "zh-Hant level hints for all 12 levels; main",
@@ -20944,8 +20962,8 @@
    "title": "Still Water",
    "line": "A slow koi pond: ripples to follow, ducklings that fall asleep, lily rings that make every pond a choice.",
    "url": "https://chenhsieh.github.io/anechoic-fugue/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Decide the physical model and its on-screen readout, choose",
    "shelfNote": "",
@@ -20954,7 +20972,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-15T19:39:22+00:00",
-   "lastChange": "2026-10-23T21:34:42+00:00",
+   "lastChange": "2026-10-23T22:09:25+00:00",
    "cost": {
     "apiUsd": 17.97,
     "codexRuns": 3,
@@ -20970,10 +20988,10 @@
    "tasks": [
     {
      "title": "P1SW02_level7 coin and pet outside canvas",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Still Water: fix level 7 (the pet sits outside the canvas, placing a coin does nothing) and the How to play page layout.",
-     "since": "2026-10-23T21:34:42+00:00",
+     "since": "2026-10-23T22:08:32+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -21082,8 +21100,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 11
    },
@@ -22428,7 +22446,7 @@
    ]
   },
   {
-   "nextTask": "Think an Elephant: make the hint slower to...",
+   "nextTask": "Think an Elephant: a game designer decides how...",
    "costTotalUsd": 18.11,
    "latestChange": {
     "text": "feat: teach elephant deduction in a playable first minute",
@@ -22441,8 +22459,8 @@
    "title": "Think Elephant",
    "line": "",
    "url": "https://chenhsieh.github.io/think-elephant/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -22451,7 +22469,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-21T04:40:58+00:00",
-   "lastChange": "2026-10-23T21:34:45+00:00",
+   "lastChange": "2026-10-23T22:08:36+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -22467,10 +22485,10 @@
    "tasks": [
     {
      "title": "P1TE00_harder hints and varied results",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Think an Elephant: make the hint slower to give the answer, and give each level its own result quote.",
-     "since": "2026-10-23T21:34:45+00:00",
+     "since": "2026-10-23T22:08:31+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -22509,8 +22527,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -22811,7 +22829,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Thumb Stand: its own link preview picture and...",
    "costTotalUsd": 91.82,
    "latestChange": {
     "text": "P3OR58_thumb-stand-credits-page: WORKDIR",
@@ -22824,8 +22842,8 @@
    "title": "Thumb Stand",
    "line": "",
    "url": "https://chenhsieh.github.io/thumb-stand/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Total rework planned by a cross-functional lead",
    "shelfNote": "",
@@ -22834,7 +22852,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-16T00:44:20+00:00",
-   "lastChange": "2026-10-23T21:35:41+00:00",
+   "lastChange": "2026-10-23T22:10:16+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
@@ -22848,6 +22866,20 @@
     "totalUsdEst": 91.82
    },
    "tasks": [
+    {
+     "title": "P2TS58_thumb stand link preview",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Thumb Stand: its own link preview picture and share line, so a shared link shows the game",
+     "since": "2026-10-23T22:10:16+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3OR58_thumb stand credits page",
      "state": "done",
@@ -22945,24 +22977,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Panel page core live. Reflex deleted; one-finger drag/tap swap; hold-to-play in bottom third; tip animation on a 會倒 panel. Tests: panels.test (42), panels_touch real CDP touch 390+320 (48), browser_test 54, onerule 39,..."
-    },
-    {
-     "title": "P1TS53_thumb stand levels bet mantis daily",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Thumb Stand: the 12 feats as panel pages, the bet (4 of 6 panels), the mantis, the daily",
-     "since": "2026-10-21T21:08:25+00:00",
-     "done": "2026-10-21T21:08:25+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 16
@@ -22973,7 +22991,7 @@
     "note": "Put his comic panels in an order where every red line lands on his hand, then hold your thumb under him; a fall is a loud joke and a win is earned"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-23T21:35:41+00:00",
@@ -23084,13 +23102,13 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 2,
     "codexTokens": 196600,
     "codexUsdEst": 0.24,
-    "claudeUsdEst": 14.4,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
+    "claudeUsdEst": 18.0,
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
     "totalUsdEst": 32.64
    },
    "tasks": [
@@ -23100,20 +23118,6 @@
      "worker": "Codex",
      "plan": "Time as Material: stop the result giving the answer so fast; hold longer, less direct feedback.",
      "since": "2026-10-23T21:34:44+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P3OR59_time material story and scan words",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Time as Material: put the chosen story line and the three scan-stage captions into the game's word table (cheap lane)",
-     "since": "2026-10-23T21:34:16+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -23135,6 +23139,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P3OR59_time material story and scan words",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Time as Material: put the chosen story line and the three scan-stage captions into the game's word table (cheap lane)",
+     "since": "2026-10-23T21:34:16+00:00",
+     "done": "2026-10-23T21:34:16+00:00",
+     "reviewed": false,
+     "minutes": 2,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: --check docs/app.js && python3 -c \"import csv;a=open('docs/app.js',encoding='utf-8').read;rows=list(csv.DictReader(open('"
     },
     {
      "title": "P1TM03_story why it matters",
@@ -23208,10 +23226,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
-    "done": 8
+    "done": 9
    },
    "verdict": {
     "date": "2026-10-22",
@@ -25727,5 +25745,7 @@
   "System needs: 10 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)"
  ],
  "releaseReady": [],
- "releaseRegressed": []
+ "releaseRegressed": [
+  "colony-count"
+ ]
 }

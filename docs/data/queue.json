@@ -1,19 +1,17 @@
 {
- "generated": 1792793321,
+ "generated": 1792793469,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
-  "lanesBusy": 1,
+  "lanesBusy": 0,
   "ready": 0,
   "waiting": 0,
   "queued": 0,
-  "running": 1,
-  "done24h": 61,
-  "modelsQueued": {
-   "deepseek-v4-flash": 1
-  },
+  "running": 0,
+  "done24h": 62,
+  "modelsQueued": {},
   "spendTodayUsd": 0.02,
-  "runsToday": 12,
-  "runsTodayUnpriced": 10,
+  "runsToday": 13,
+  "runsTodayUnpriced": 11,
   "spendTotalUsd": 6.36,
   "recent": [
    {
@@ -21,6 +19,12 @@
     "request": "Name to Carry: move the name list into the game file so tools can load it alone (cheap lane)",
     "model": "openai/gpt-4.1",
     "at": 1792791317
+   },
+   {
+    "id": "P3OR59_time-material-story-and-scan-words",
+    "request": "Time as Material: put the chosen story line and the three scan-stage captions into the game's word table (cheap lane)",
+    "model": "deepseek-v4-flash",
+    "at": 1792791256
    },
    {
     "id": "P3OR57_mirror-hold-credits-page",
@@ -69,12 +73,6 @@
     "request": "P3RL34_credits licences whiteboard song",
     "model": "openai/gpt-4.1",
     "at": 1792724743
-   },
-   {
-    "id": "P3RL33_credits-licences-three-shadows",
-    "request": "P3RL33_credits licences three shadows",
-    "model": "openai/gpt-4.1",
-    "at": 1792724740
    }
   ],
   "label": "estimate"
@@ -108,25 +106,6 @@
    "created": 1792791282
   },
   {
-   "id": "P3OR59_time-material-story-and-scan-words",
-   "request": "Time as Material: put the chosen story line and the three scan-stage captions into the game's word table (cheap lane)",
-   "game": "Time Material",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1TM03_story-why-it-matters"
-   ],
-   "priority": "P2",
-   "why": "",
-   "state": "running",
-   "at": 1792791256,
-   "created": 1792791256
-  },
-  {
    "id": "P1TE00_harder-hints-and-varied-results",
    "request": "Think an Elephant: make the hint slower to give the answer, and give each level its own result quote.",
    "game": "Think Elephant",
@@ -144,6 +123,40 @@
    "created": 1792791285
   },
   {
+   "id": "P2CC35_colony-count-save-migration-test",
+   "request": "Colony Count: a test proves an old save still loads after an update (release checklist item 7)",
+   "game": "Colony Count",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "An ad for a three-colour sweeper puzzle (ColorSweeper).",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792793463
+  },
+  {
+   "id": "P2TS58_thumb-stand-link-preview",
+   "request": "Thumb Stand: its own link preview picture and share line, so a shared link shows the game",
+   "game": "Thumb Stand",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "Martial-arts manga panels of impossible one-thumb handstands and poses.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792793416
+  },
+  {
    "id": "P1TM01_answer-not-given-away",
    "request": "Time as Material: stop the result giving the answer so fast; hold longer, less direct feedback.",
    "game": "Time Material",
@@ -159,6 +172,25 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792791284
+  },
+  {
+   "id": "P1TM02_scan-to-photo-transform",
+   "request": "Time as Material: make the animation from the live subject to the photo show the real transformation, not the same crop.",
+   "game": "Time Material",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR59_time-material-story-and-scan-words"
+   ],
+   "priority": "P2",
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792791245
   },
   {
    "id": "P2FM58_tractatus-tree-first-minute-fix",
@@ -312,6 +344,23 @@
    "waitingOn": [],
    "created": 1792724295,
    "estPercentOfWeek": 451.92
+  },
+  {
+   "id": "P2GG00_gallery-guess-save-migration-test",
+   "request": "Gallery Guess: a test proves an old save still loads after an update (release checklist item 7)",
+   "game": "Gallery Guess",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P3",
+   "why": "Public-domain objects from The Metropolitan Museum of Art's open collection API.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792793463
   },
   {
    "id": "P3d35_lens-screen-studio-320-fix",
@@ -509,27 +558,6 @@
     "P1SW02_level7-coin-and-pet-outside-canvas"
    ],
    "created": 1792791282
-  },
-  {
-   "id": "P1TM02_scan-to-photo-transform",
-   "request": "Time as Material: make the animation from the live subject to the photo show the real transformation, not the same crop.",
-   "game": "Time Material",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P3OR59_time-material-story-and-scan-words"
-   ],
-   "priority": "P2",
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P3OR59_time-material-story-and-scan-words"
-   ],
-   "created": 1792791245
   },
   {
    "id": "P2HN00_herbal-pages-stay-open",
@@ -1212,6 +1240,25 @@
    "state": "done",
    "at": 1792791317,
    "created": 1792791317
+  },
+  {
+   "id": "P3OR59_time-material-story-and-scan-words",
+   "request": "Time as Material: put the chosen story line and the three scan-stage captions into the game's word table (cheap lane)",
+   "game": "Time Material",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1TM03_story-why-it-matters"
+   ],
+   "priority": "P2",
+   "why": "",
+   "state": "done",
+   "at": 1792791256,
+   "created": 1792791256
   },
   {
    "id": "P3OR56_gallery-guess-credits-page",
