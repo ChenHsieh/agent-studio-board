@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T14:19:55+00:00",
+ "generated": "2026-10-23T14:25:02+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -26,44 +26,35 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
-    "doneToday": 27,
-    "minutes": 120,
+    "running": 0,
+    "doneToday": 28,
+    "minutes": 60,
     "estimateMinutes": 60
    }
   },
   "queued": 33,
-  "running": 1,
-  "doneToday": 27,
+  "running": 0,
+  "doneToday": 28,
   "lanes": {
    "Codex": 0,
-   "Claude": 2
+   "Claude": 1
   },
   "laneCap": {
    "Claude": 4,
    "Codex": 0
   },
   "codexPaused": true,
-  "minutesRemaining": 1400,
-  "estimatedFinish": "2026-10-23T15:19:55+00:00",
+  "minutesRemaining": 1340,
+  "estimatedFinish": "2026-10-23T15:25:02+00:00",
   "estimateMinutes": 60
  },
- "lanes": [
-  {
-   "worker": "Claude",
-   "game": "hit-or-kit",
-   "task": "P2FM57_hit or kit first minute fix",
-   "since": "2026-10-23T13:43:10+00:00",
-   "activity": "2026-10-23T14:08:54+00:00",
-   "commit": null
-  }
- ],
+ "lanes": [],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 0,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 193,
-  "usdEst": 694.8,
+  "runs": 195,
+  "usdEst": 702.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -109,7 +100,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 21
+   "changes": 22
   }
  ],
  "houseRules": 25,
@@ -7958,7 +7949,7 @@
   },
   {
    "nextTask": "Grub Band: make the daily puzzle build fast...",
-   "costTotalUsd": 25.2,
+   "costTotalUsd": 28.8,
    "latestChange": {
     "text": "first minute lesson starts only from the Play button (fix of P2FM16), main ; playable...",
     "at": "2026-10-23T14:17:28+00:00"
@@ -7995,9 +7986,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 6,
-    "earlierUsdEst": 21.6,
-    "totalUsdEst": 25.2
+    "earlierRounds": 7,
+    "earlierUsdEst": 25.2,
+    "totalUsdEst": 28.8
    },
    "tasks": [
     {
@@ -8058,6 +8049,12 @@
      "ok": true,
      "note": "first minute lesson starts only from the Play button (fix of P2FM16), main ; playable gate 'today' still fails on main too",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-23T14:16:12+00:00",
+     "ok": true,
+     "note": "feat: Grub Band opens with a short first minute",
+     "source": "main commit"
     },
     {
      "at": "2026-10-22T21:21:49+00:00",
@@ -8939,10 +8936,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 32.4,
+   "costTotalUsd": 39.6,
    "latestChange": {
-    "text": "see",
-    "at": "2026-10-22T22:39:48+00:00"
+    "text": "first-minute start/stop fix; replay works from Home; gates 3x390+1x320 green",
+    "at": "2026-10-23T14:24:57+00:00"
    },
    "promo": {
     "files": {
@@ -8957,8 +8954,8 @@
    "title": "Hit or Kit",
    "line": "Open sample tubes in a freezer box and publish or drop a microbiome finding; 25 cases and a daily.",
    "url": "https://chenhsieh.github.io/hit-or-kit/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Open sample tubes in a freezer box and publish or drop a microbiome finding; 25",
    "shelfNote": "",
@@ -8967,33 +8964,33 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T04:19:06+00:00",
-   "lastChange": "2026-10-23T14:08:54+00:00",
+   "lastChange": "2026-10-23T14:24:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 7.2,
-    "earlierRounds": 7,
-    "earlierUsdEst": 25.2,
-    "totalUsdEst": 32.4
+    "claudeUsdEst": 10.8,
+    "earlierRounds": 8,
+    "earlierUsdEst": 28.8,
+    "totalUsdEst": 39.6
    },
    "tasks": [
     {
      "title": "P2FM57_hit or kit first minute fix",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Hit or Kit: a three-step practice round before the first case (fix so it never covers a level the game loads directly)",
-     "since": "2026-10-23T13:43:10+00:00",
-     "done": null,
+     "since": "2026-10-23T13:27:09+00:00",
+     "done": "2026-10-23T13:27:09+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "live game.js matches)."
     },
     {
      "title": "P3RL24_credits licences hit or kit",
@@ -9026,14 +9023,26 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-23T14:24:57+00:00",
+     "ok": true,
+     "note": "first-minute start/stop fix; replay works from Home; gates 3x390+1x320 green",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-23T14:24:10+00:00",
+     "ok": true,
+     "note": "feat: Hit or Kit opens with a three-step practice case",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-22T22:39:48+00:00",
      "ok": false,
@@ -11097,7 +11106,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 14.62,
+   "costTotalUsd": 54.22,
    "latestChange": {
     "text": "see",
     "at": "2026-10-21T18:51:44+00:00"
@@ -11125,7 +11134,7 @@
    "released": false,
    "releasedOn": null,
    "releasedNote": "",
-   "firstSeen": "2026-10-19T17:54:51+00:00",
+   "firstSeen": "2026-08-20T15:58:51+00:00",
    "lastChange": "2026-10-22T07:57:39+00:00",
    "cost": {
     "apiUsd": 0.0,
@@ -11135,9 +11144,9 @@
     "codexTokens": 180479,
     "codexUsdEst": 0.22,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
-    "totalUsdEst": 14.62
+    "earlierRounds": 14,
+    "earlierUsdEst": 50.4,
+    "totalUsdEst": 54.22
    },
    "tasks": [
     {
@@ -11190,6 +11199,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-21T18:41:38+00:00",
+     "ok": true,
+     "note": "fix: show a concise Local Hero link preview",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-21T18:36:02+00:00",
      "ok": false,
      "note": "see",
@@ -11208,10 +11223,46 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-21T05:28:23+00:00",
+     "ok": true,
+     "note": "feat: Local Hero becomes a DOS text-mode screen",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-19T20:59:20+00:00",
      "ok": true,
      "note": "shared target and first-move hint make local alignment legible; live 390x844 and 320x568 touch checks passed",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-19T20:57:19+00:00",
+     "ok": true,
+     "note": "feat: show the shared island target",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-15T14:23:08+00:00",
+     "ok": true,
+     "note": "feat: a link back to Play Lab",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-15T00:28:44+00:00",
+     "ok": true,
+     "note": "feat: a findable shared stretch, a lesson that needs BANK, demo hook",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-09-05T03:02:01+00:00",
+     "ok": true,
+     "note": "Add a favicon (data-URI SVG, letter badge on the game's own palette)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-09-05T02:54:37+00:00",
+     "ok": true,
+     "note": "Add description, og:*, and twitter:* meta tags, and a generated docs/og.png",
+     "source": "main commit"
     }
    ]
   },
@@ -14649,7 +14700,7 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": "DONE P2RL35 own-ground credits merged and published. Main commit (pushed, read back). Live docs/game.config.js sha256 matches main."
+     "result": "DONE: no merge needed. Main commit (\"feat: Own Ground credits say what is original and what is not loaded\", 2026-10-23 08:42, already on origin/main) already contains the P2RL07 credits branch (git merge says \"Already..."
     },
     {
      "title": "P2RL07_credits licences own ground",
