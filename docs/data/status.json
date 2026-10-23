@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T14:06:10+00:00",
+ "generated": "2026-10-23T14:11:11+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -18,43 +18,43 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 32,
+    "queued": 31,
     "running": 0,
     "doneToday": 0,
-    "minutes": 1280,
+    "minutes": 1240,
     "estimateMinutes": 0
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 2,
     "doneToday": 26,
-    "minutes": 120,
+    "minutes": 180,
     "estimateMinutes": 60
    }
   },
-  "queued": 33,
-  "running": 1,
+  "queued": 32,
+  "running": 2,
   "doneToday": 26,
   "lanes": {
    "Codex": 0,
-   "Claude": 2
+   "Claude": 3
   },
   "laneCap": {
    "Claude": 4,
    "Codex": 0
   },
   "codexPaused": true,
-  "minutesRemaining": 1400,
-  "estimatedFinish": "2026-10-23T15:06:10+00:00",
+  "minutesRemaining": 1420,
+  "estimatedFinish": "2026-10-23T15:11:11+00:00",
   "estimateMinutes": 60
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "same-badge",
-   "task": "P2FM52_same badge first minute fix",
-   "since": "2026-10-23T13:28:00+00:00",
-   "activity": "2026-10-23T14:05:07+00:00",
+   "game": "grub-band",
+   "task": "P2FM54_grub band first minute fix",
+   "since": "2026-10-23T14:06:57+00:00",
+   "activity": "2026-10-23T14:09:02+00:00",
    "commit": null
   },
   {
@@ -62,7 +62,7 @@
    "game": "hit-or-kit",
    "task": "P2FM57_hit or kit first minute fix",
    "since": "2026-10-23T13:43:10+00:00",
-   "activity": "2026-10-23T13:43:30+00:00",
+   "activity": "2026-10-23T14:08:54+00:00",
    "commit": null
   }
  ],
@@ -70,8 +70,8 @@
  "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 191,
-  "usdEst": 687.6,
+  "runs": 192,
+  "usdEst": 691.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -7965,7 +7965,7 @@
    ]
   },
   {
-   "nextTask": "Finish the first-minute round for grub-band: the lesson...",
+   "nextTask": null,
    "costTotalUsd": 21.6,
    "latestChange": {
     "text": "see",
@@ -7984,8 +7984,8 @@
    "title": "Grub Band",
    "line": "Fill a foam box with grubs to build a tune; four levels, a daily tune and a shareable recording.",
    "url": "https://chenhsieh.github.io/grub-band/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Fill a foam box with grubs to build a tune; four levels, a daily tune and a",
    "shelfNote": "",
@@ -7994,7 +7994,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-21T20:47:27+00:00",
-   "lastChange": "2026-10-23T13:27:09+00:00",
+   "lastChange": "2026-10-23T14:09:02+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -8010,10 +8010,10 @@
    "tasks": [
     {
      "title": "P2FM54_grub band first minute fix",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Finish the first-minute round for grub-band: the lesson starts only from the Play button, so jumping to a level never lands under it",
-     "since": "2026-10-23T13:27:09+00:00",
+     "since": "2026-10-23T14:06:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -8038,8 +8038,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -8955,7 +8955,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T04:19:06+00:00",
-   "lastChange": "2026-10-23T13:43:30+00:00",
+   "lastChange": "2026-10-23T14:08:54+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -17437,7 +17437,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Review of the first build (queued)",
    "costTotalUsd": 28.8,
    "latestChange": {
     "text": "first minute lesson now starts only from the Play button (fix of P2FM13), main",
@@ -17470,29 +17470,29 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 10.8,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
+    "claudeUsdEst": 14.4,
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
     "totalUsdEst": 28.8
    },
    "tasks": [
     {
      "title": "P2FM52_same badge first minute fix",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Finish the first-minute round for same-badge: the lesson starts only from the Play button, so jumping to a level never lands under it",
-     "since": "2026-10-23T13:28:00+00:00",
-     "done": null,
+     "since": "2026-10-23T08:26:16+00:00",
+     "done": "2026-10-23T08:26:16+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE P2FM52_same-badge-first-minute-fix: live game.js md5 matches the commit)."
     },
     {
      "title": "P2RL08_credits licences same badge",
@@ -17553,9 +17553,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": {
     "date": "2026-10-22",
