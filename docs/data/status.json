@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T21:23:51+00:00",
+ "generated": "2026-10-23T21:27:25+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 34,
+    "queued": 41,
     "running": 2,
-    "doneToday": 2,
-    "minutes": 1440,
-    "estimateMinutes": 720
+    "doneToday": 3,
+    "minutes": 1720,
+    "estimateMinutes": 860
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 33,
+    "doneToday": 34,
     "minutes": 180,
     "estimateMinutes": 60
    }
   },
-  "queued": 35,
+  "queued": 42,
   "running": 4,
-  "doneToday": 35,
+  "doneToday": 37,
   "lanes": {
    "Codex": 2,
    "Claude": 3
@@ -46,11 +46,27 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1620,
-  "estimatedFinish": "2026-10-24T09:23:51+00:00",
-  "estimateMinutes": 720
+  "minutesRemaining": 1900,
+  "estimatedFinish": "2026-10-24T11:47:25+00:00",
+  "estimateMinutes": 860
  },
  "lanes": [
+  {
+   "worker": "Codex",
+   "game": "play-template",
+   "task": "P1AX09_controls stay put after a tap",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P1CS00_cost per shipped change report",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "dynasty-guess",
@@ -61,26 +77,10 @@
   },
   {
    "worker": "Codex",
-   "game": "flying-white",
-   "task": "P1FW56_result screen fits small phone",
-   "since": "2026-10-23T21:20:17+00:00",
-   "activity": "2026-10-23T21:20:07+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P1PF00_portfolio system and weekly lessons",
-   "since": null,
-   "activity": null,
-   "commit": null
-  },
-  {
-   "worker": "Codex",
    "game": "even-water",
    "task": "P2FM56_even water first minute fix",
    "since": "2026-10-23T21:00:48+00:00",
-   "activity": "2026-10-23T21:23:48+00:00",
+   "activity": "2026-10-23T21:26:35+00:00",
    "commit": {
     "at": "2026-10-23T21:23:43+00:00",
     "subject": "fix: keep the board in place after the lesson"
@@ -91,8 +91,8 @@
  "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 200,
-  "usdEst": 720.0,
+  "runs": 201,
+  "usdEst": 723.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -138,7 +138,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 26
+   "changes": 27
   }
  ],
  "houseRules": 25,
@@ -4972,7 +4972,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-23T21:23:48+00:00",
+   "lastChange": "2026-10-23T21:26:35+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -6354,10 +6354,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 108.66,
+   "costTotalUsd": 108.91,
    "latestChange": {
-    "text": "one control row (Hint on board), seal ink as dry streaks, English words wrap whole; main",
-    "at": "2026-10-23T09:12:33+00:00"
+    "text": "fix: fit finished scrolls on phones",
+    "at": "2026-10-23T21:26:41+00:00"
    },
    "promo": null,
    "why": "A commentary on a 2002 martial-arts film that tells one story three ways, where the character for sword is written 19 ways.",
@@ -6366,8 +6366,8 @@
    "title": "Flying White",
    "line": "",
    "url": "https://chenhsieh.github.io/flying-white/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Higher priority: real rubbing sources, hilarious teacher, growth, free writing",
    "shelfNote": "",
@@ -6376,33 +6376,33 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-21T05:31:34+00:00",
-   "lastChange": "2026-10-23T21:20:07+00:00",
+   "lastChange": "2026-10-23T21:26:41+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 3,
+    "codexRuns": 4,
     "claudeRuns": 13,
     "apiRuns": 0,
-    "codexTokens": 553577,
-    "codexUsdEst": 0.66,
+    "codexTokens": 754828,
+    "codexUsdEst": 0.91,
     "claudeUsdEst": 46.8,
     "earlierRounds": 17,
     "earlierUsdEst": 61.2,
-    "totalUsdEst": 108.66
+    "totalUsdEst": 108.91
    },
    "tasks": [
     {
      "title": "P1FW56_result screen fits small phone",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Flying White: after you hand in, the result and Next fit a small phone, nothing draws over the top bar, and the master's name is in Chinese",
-     "since": "2026-10-23T21:20:17+00:00",
-     "done": null,
+     "since": "2026-10-23T20:59:47+00:00",
+     "done": "2026-10-23T20:59:47+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 20,
+     "tokens": 201251,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "fix: fit finished scrolls on phones"
     },
     {
      "title": "P1FW55_flying white stranger rereview",
@@ -6505,9 +6505,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 16
+    "done": 17
    },
    "verdict": {
     "date": "2026-10-23",
@@ -6515,8 +6515,14 @@
     "note": "The deadpan red-seal teacher is the best thing here; after you hand in on a small phone the result draws over the top bar and Next sits below the screen"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-23T21:26:41+00:00",
+     "ok": true,
+     "note": "fix: fit finished scrolls on phones",
+     "source": "board note"
+    },
     {
      "at": "2026-10-23T09:12:33+00:00",
      "ok": true,
@@ -6582,12 +6588,6 @@
      "ok": true,
      "note": "feat: give every sword form an ink mask",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-23T00:00:30+00:00",
-     "ok": false,
-     "note": "see",
-     "source": "board note"
     }
    ]
   },
@@ -20928,7 +20928,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Still Water: put the How to play instructions...",
    "costTotalUsd": 105.07,
    "latestChange": {
     "text": "zh-Hant level hints for all 12 levels; main",
@@ -20941,8 +20941,8 @@
    "title": "Still Water",
    "line": "A slow koi pond: ripples to follow, ducklings that fall asleep, lily rings that make every pond a choice.",
    "url": "https://chenhsieh.github.io/anechoic-fugue/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Decide the physical model and its on-screen readout, choose",
    "shelfNote": "",
@@ -20951,7 +20951,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-15T19:39:22+00:00",
-   "lastChange": "2026-10-23T12:54:57+00:00",
+   "lastChange": "2026-10-23T21:25:51+00:00",
    "cost": {
     "apiUsd": 17.97,
     "codexRuns": 3,
@@ -20965,6 +20965,34 @@
     "totalUsdEst": 105.07
    },
    "tasks": [
+    {
+     "title": "P1SW03_how to play matches template",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Still Water: put the How to play instructions in the right place and match the play template.",
+     "since": "2026-10-23T21:25:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1SW02_level7 coin and pet outside canvas",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Still Water: fix level 7 (the pet sits outside the canvas, placing a coin does nothing) and the How to play page layout.",
+     "since": "2026-10-23T21:25:47+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2SW01_still water zh hant level hints",
      "state": "done",
@@ -21048,45 +21076,17 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Live now: the koi pond (slow ripples with Step/Pause, rocking bar per duckling, n of m asleep, WebGL water, two-frog and rain chapters) at https://chenhsieh.github.io/anechoic-fugue/, checked live at 390 (level 1 solved..."
-    },
-    {
-     "title": "anechoic fugue build",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Slow the water, show each duckling's rocking and the still seam, koi replace the floats, soft water sound, every level a new decision.",
-     "since": "2026-10-19T18:03:20+00:00",
-     "done": "2026-10-19T18:03:20+00:00",
-     "reviewed": true,
-     "minutes": 15,
-     "tokens": 186369,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Built and committed the koi pond readout, timing controls, seams, save migration, shared components, and tests."
-    },
-    {
-     "title": "anechoic fugue water",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "WebGL water, big two-frog ponds, rain levels with lily pads, a daily pond.",
-     "since": "2026-10-19T18:03:20+00:00",
-     "done": "2026-10-19T18:03:20+00:00",
-     "reviewed": true,
-     "minutes": 12,
-     "tokens": 186671,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Implemented and committed on `codex-water-`."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 11
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-23T12:54:57+00:00",
@@ -22425,7 +22425,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Think an Elephant: a game designer decides how...",
    "costTotalUsd": 18.11,
    "latestChange": {
     "text": "feat: teach elephant deduction in a playable first minute",
@@ -22438,8 +22438,8 @@
    "title": "Think Elephant",
    "line": "",
    "url": "https://chenhsieh.github.io/think-elephant/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -22448,7 +22448,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-21T04:40:58+00:00",
-   "lastChange": "2026-10-22T22:10:04+00:00",
+   "lastChange": "2026-10-23T21:25:59+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -22462,6 +22462,34 @@
     "totalUsdEst": 18.11
    },
    "tasks": [
+    {
+     "title": "P1TE01_designer pass mechanics",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Think an Elephant: a game designer decides how the forest and room chapters really change the mechanic and difficulty, then refines the look.",
+     "since": "2026-10-23T21:25:59+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1TE00_harder hints and varied results",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Think an Elephant: make the hint slower to give the answer, and give each level its own result quote.",
+     "since": "2026-10-23T21:25:55+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2FM24_think elephant first minute",
      "state": "done",
@@ -22478,14 +22506,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T22:10:04+00:00",
@@ -23019,7 +23047,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Time as Material: a short story that says...",
    "costTotalUsd": 32.64,
    "latestChange": {
     "text": "credits panel with licences in How to play, live",
@@ -23039,8 +23067,8 @@
    "title": "Time Material",
    "line": "Scrub through a frame history and draw with time.",
    "url": "https://chenhsieh.github.io/time-material/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Find the core and make the time-and-material rules",
    "shelfNote": "",
@@ -23049,7 +23077,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-09-20T20:53:51+00:00",
-   "lastChange": "2026-10-23T07:59:51+00:00",
+   "lastChange": "2026-10-23T21:26:10+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -23063,6 +23091,48 @@
     "totalUsdEst": 32.64
    },
    "tasks": [
+    {
+     "title": "P1TM03_story why it matters",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Time as Material: a short story that says why decoding time is worth doing.",
+     "since": "2026-10-23T21:26:10+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1TM02_scan to photo transform",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Time as Material: make the animation from the live subject to the photo show the real transformation, not the same crop.",
+     "since": "2026-10-23T21:26:06+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1TM01_answer not given away",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Time as Material: stop the result giving the answer so fast; hold longer, less direct feedback.",
+     "since": "2026-10-23T21:26:02+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2RL15_credits panel time material",
      "state": "done",
@@ -23132,38 +23202,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "time material build",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "",
-     "since": "2026-10-21T05:09:26+00:00",
-     "done": "2026-10-21T05:09:26+00:00",
-     "reviewed": false,
-     "minutes": 5,
-     "tokens": 98222,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "fix: playable game boots for every client card"
-    },
-    {
-     "title": "time material core",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "Find the core and make the time-and-material rules understandable.",
-     "since": "2026-10-19T17:54:51+00:00",
-     "done": "2026-10-19T17:54:51+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Verdict: continue. Brief: expert/time-material/packages/BRIEF_20261019.md: the rolling-shutter photographer (phones read rows at different moments, so propellers bend); set direction, speed and start to make the photo..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 3,
     "running": 0,
     "waitingDesign": 0,
     "done": 7
@@ -23174,7 +23216,7 @@
     "note": "A scan line now sweeps the live scene and your photo together, so you can watch the bar bend row by row; the match meter starts at 95 percent, so the first move feels small"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-23T07:59:51+00:00",
@@ -23607,7 +23649,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 7.39,
+   "costTotalUsd": 46.99,
    "latestChange": {
     "text": "daily keyed on local date not UTC (studio standard)",
     "at": "2026-10-21T22:27:17+00:00"
@@ -23635,7 +23677,7 @@
    "released": false,
    "releasedOn": null,
    "releasedNote": "",
-   "firstSeen": "2026-10-19T17:54:51+00:00",
+   "firstSeen": "2026-08-20T16:18:05+00:00",
    "lastChange": "2026-10-21T22:27:17+00:00",
    "cost": {
     "apiUsd": 0.0,
@@ -23645,9 +23687,9 @@
     "codexTokens": 155848,
     "codexUsdEst": 0.19,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 1,
-    "earlierUsdEst": 3.6,
-    "totalUsdEst": 7.39
+    "earlierRounds": 12,
+    "earlierUsdEst": 43.2,
+    "totalUsdEst": 46.99
    },
    "tasks": [
     {
@@ -23700,16 +23742,70 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-21T22:25:53+00:00",
+     "ok": true,
+     "note": "chore: restore the review screenshots a test run overwrote",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-21T22:25:32+00:00",
+     "ok": true,
+     "note": "fix: Tree Hero daily changes at the player's local midnight",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-21T05:36:09+00:00",
      "ok": true,
      "note": "P1h14 reskin live: retro machine skin, brand top-left, no Play Lab header link; Opus ship review owed",
      "source": "board note"
     },
     {
+     "at": "2026-10-21T05:34:13+00:00",
+     "ok": true,
+     "note": "feat: Tree Hero becomes an X11 window",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-19T21:38:33+00:00",
+     "ok": true,
+     "note": "feat: Tree Hero explains the DNA tree choice before the first swap",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-19T21:15:22+00:00",
      "ok": false,
      "note": "first-minute DNA framing, distinct lesson decisions, shared hint and progress UI, fresh-clone checks, and 390x844 plus 320x568 touch checks are complete; publish blocked pending authorization to push origin",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-15T14:25:17+00:00",
+     "ok": true,
+     "note": "feat: a link back to Play Lab",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-15T00:28:48+00:00",
+     "ok": true,
+     "note": "feat: a working first move and a true lesson, demo hook",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-09-05T03:02:02+00:00",
+     "ok": true,
+     "note": "Add a favicon (data-URI SVG, letter badge on the game's own palette)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-09-05T02:54:53+00:00",
+     "ok": true,
+     "note": "Add description, og:*, and twitter:* meta tags, and a generated docs/og.png",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-09-04T18:10:07+00:00",
+     "ok": true,
+     "note": "Add MIT LICENSE",
+     "source": "main commit"
     }
    ]
   },
