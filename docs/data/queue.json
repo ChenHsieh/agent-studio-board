@@ -1,21 +1,33 @@
 {
- "generated": 1792795844,
+ "generated": 1792797807,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
-  "lanesBusy": 0,
-  "ready": 7,
+  "lanesBusy": 4,
+  "ready": 1,
   "waiting": 2,
-  "queued": 9,
-  "running": 0,
-  "done24h": 62,
+  "queued": 3,
+  "running": 4,
+  "done24h": 64,
   "modelsQueued": {
-   "deepseek-v4-flash": 9
+   "deepseek-v4-flash": 7
   },
   "spendTodayUsd": 0.02,
-  "runsToday": 13,
-  "runsTodayUnpriced": 11,
+  "runsToday": 15,
+  "runsTodayUnpriced": 13,
   "spendTotalUsd": 6.36,
   "recent": [
+   {
+    "id": "P3OR65_name-biosteganography-title",
+    "request": "Name audit: show one name for biosteganography everywhere",
+    "model": "deepseek-v4-flash",
+    "at": 1792795393
+   },
+   {
+    "id": "P3OR63_name-fly-song-share",
+    "request": "Name audit: show one name for fly-song everywhere",
+    "model": "deepseek-v4-flash",
+    "at": 1792795385
+   },
    {
     "id": "P3OR53_name-to-carry-data-inside-game",
     "request": "Name to Carry: move the name list into the game file so tools can load it alone (cheap lane)",
@@ -63,27 +75,15 @@
     "request": "Template demo: the CARD label on the board gets slightly bigger so the template passes its own text-size check",
     "model": "deepseek-v4-flash",
     "at": 1792790094
-   },
-   {
-    "id": "P3OR50_colony-lab-rule-card-short-steps",
-    "request": "P3OR50_colony lab rule card short steps",
-    "model": "deepseek-v4-flash",
-    "at": 1792749141
-   },
-   {
-    "id": "P3RL34_credits-licences-whiteboard-song",
-    "request": "P3RL34_credits licences whiteboard song",
-    "model": "openai/gpt-4.1",
-    "at": 1792724743
    }
   ],
   "label": "estimate"
  },
  "overflow": {
-  "codexOut": true,
+  "codexOut": false,
   "converted": 0,
   "convertedRunning": 0,
-  "claudeWorkers": 0,
+  "claudeWorkers": 1,
   "claudeWorkerCap": 3,
   "handedBack": 0,
   "lastHandBack": null,
@@ -91,8 +91,8 @@
  },
  "tasks": [
   {
-   "id": "P1TM01_answer-not-given-away",
-   "request": "Time as Material: stop the result giving the answer so fast; hold longer, less direct feedback.",
+   "id": "P1TM02_scan-to-photo-transform",
+   "request": "Time as Material: make the animation from the live subject to the photo show the real transformation, not the same crop.",
    "game": "Time Material",
    "route": "Claude",
    "model": "sonnet",
@@ -100,12 +100,82 @@
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P3OR59_time-material-story-and-scan-words"
+   ],
    "priority": "P2",
    "why": "",
    "state": "running",
-   "at": 1792791284,
-   "created": 1792791284
+   "at": 1792791245,
+   "created": 1792791245
+  },
+  {
+   "id": "P3OR60_name-hello-princess-readme",
+   "request": "Name audit: show one name for copy-paste everywhere",
+   "game": "Hello Princess",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "Copy-paste greeting replies with place, name and age swapped each time, plus a stack of identical installer dialogs.",
+   "state": "running",
+   "at": 1792795374,
+   "created": 1792795374
+  },
+  {
+   "id": "P3OR61_name-server-stress",
+   "request": "Name audit: show one name for server-stress everywhere",
+   "game": "Server Stress",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "An anthropology study of data centres describing staff fear of server downtime, and a short art film about game background workers.",
+   "state": "running",
+   "at": 1792795378,
+   "created": 1792795378
+  },
+  {
+   "id": "P3OR64_name-fly-swarm-title",
+   "request": "Name audit: show one name for fly-swarm everywhere",
+   "game": "Fly Swarm",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "Steering responses measured from the MaleCNS v1.0 fly connectome's visual-to-descending neuron wiring.",
+   "state": "running",
+   "at": 1792795389,
+   "created": 1792795389
+  },
+  {
+   "id": "P3OR66_name-hub-titles",
+   "request": "Name audit: show one name for play-lab everywhere",
+   "game": "Studio",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1792795396,
+   "created": 1792795396
   },
   {
    "id": "P2CC35_colony-count-save-migration-test",
@@ -142,42 +212,6 @@
    "created": 1792793416
   },
   {
-   "id": "P3OR65_name-biosteganography-title",
-   "request": "Name audit: show one name for biosteganography everywhere",
-   "game": "Biosteganography",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792795393
-  },
-  {
-   "id": "P1TM02_scan-to-photo-transform",
-   "request": "Time as Material: make the animation from the live subject to the photo show the real transformation, not the same crop.",
-   "game": "Time Material",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P3OR59_time-material-story-and-scan-words"
-   ],
-   "priority": "P2",
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792791245
-  },
-  {
    "id": "P2FM58_tractatus-tree-first-minute-fix",
    "request": "Tractatus Tree: three practice pages before level 1 (fix the later levels the lesson branch broke)",
    "game": "Tractatus Tree",
@@ -193,7 +227,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713005,
-   "estPercentOfWeek": 451.92
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P2GB00_grub-band-daily-box-generates-slowly",
@@ -230,7 +264,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792791317,
-   "estPercentOfWeek": 451.92
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P2PS00_pigeon-salon-readable-board",
@@ -250,7 +284,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713005,
-   "estPercentOfWeek": 451.92
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P2RO00_radish-omelette-colours-and-beats",
@@ -270,7 +304,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713431,
-   "estPercentOfWeek": 451.92
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P2RS00_restored-blurry-neighbours-count",
@@ -290,7 +324,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792715918,
-   "estPercentOfWeek": 451.92
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P3NY00_not-yet-a-real-choice",
@@ -310,7 +344,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713432,
-   "estPercentOfWeek": 451.92
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P3OR45_herbal-pages-stay-open-logic",
@@ -328,41 +362,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792724295,
-   "estPercentOfWeek": 451.92
-  },
-  {
-   "id": "P3OR60_name-hello-princess-readme",
-   "request": "Name audit: show one name for copy-paste everywhere",
-   "game": "Hello Princess",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "Copy-paste greeting replies with place, name and age swapped each time, plus a stack of identical installer dialogs.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792795374
-  },
-  {
-   "id": "P3OR61_name-server-stress",
-   "request": "Name audit: show one name for server-stress everywhere",
-   "game": "Server Stress",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "An anthropology study of data centres describing staff fear of server downtime, and a short art film about game background workers.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792795378
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P3OR62_name-time-as-material",
@@ -380,40 +380,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792795382
-  },
-  {
-   "id": "P3OR63_name-fly-song-share",
-   "request": "Name audit: show one name for fly-song everywhere",
-   "game": "Fly Song",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "The MaleCNS v1.0 fly connectome and real recorded fruit-fly courtship song driven by its song neuron.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792795385
-  },
-  {
-   "id": "P3OR64_name-fly-swarm-title",
-   "request": "Name audit: show one name for fly-swarm everywhere",
-   "game": "Fly Swarm",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "Steering responses measured from the MaleCNS v1.0 fly connectome's visual-to-descending neuron wiring.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792795389
   },
   {
    "id": "P2GG00_gallery-guess-save-migration-test",
@@ -448,7 +414,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792701959,
-   "estPercentOfWeek": 451.92
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P1AX09_controls-stay-put-after-a-tap",
@@ -623,24 +589,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792724493,
-   "estPercentOfWeek": 451.92
-  },
-  {
-   "id": "P3OR66_name-hub-titles",
-   "request": "Name audit: show one name for play-lab everywhere",
-   "game": "Studio",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792795396
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P2HN00_herbal-pages-stay-open",
@@ -662,7 +611,7 @@
     "P3OR45_herbal-pages-stay-open-logic"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 451.92
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P1IG01_idea-graph-board-page",
@@ -768,7 +717,7 @@
     "P1AX09_controls-stay-put-after-a-tap"
    ],
    "created": 1792790094,
-   "estPercentOfWeek": 451.92
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P2KT01_kit-win-hold-and-higher-is-better",
@@ -790,7 +739,7 @@
     "P3OR44_kit-win-hold-and-higher-is-better"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 451.92
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P2NM01_ship-name-fixes",
@@ -900,7 +849,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 451.92
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P2n88_watched-pot",
@@ -922,7 +871,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 451.92
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P2n89_round-table",
@@ -944,7 +893,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 451.92
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P2n90_iron-window-garden",
@@ -966,7 +915,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 451.92
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P2n91_still-a-heap",
@@ -988,7 +937,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 451.92
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P2n92_out-of-the-corner",
@@ -1010,7 +959,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 451.92
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P2n93_one-umbrella",
@@ -1032,7 +981,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 451.92
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P2n94_rolling-back",
@@ -1054,7 +1003,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 451.92
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P2n95_gold-star",
@@ -1076,7 +1025,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 451.92
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P2n96_ac-remote",
@@ -1098,7 +1047,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 451.92
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P2n97_review-coin-dumplings-and-watched-pot",
@@ -1345,6 +1294,23 @@
    "created": 1792791214
   },
   {
+   "id": "P3OR65_name-biosteganography-title",
+   "request": "Name audit: show one name for biosteganography everywhere",
+   "game": "Biosteganography",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
+   "state": "done",
+   "at": 1792795393,
+   "created": 1792795393
+  },
+  {
    "id": "P1SW02_level7-coin-and-pet-outside-canvas",
    "request": "Still Water: fix level 7 (the pet sits outside the canvas, placing a coin does nothing) and the How to play page layout.",
    "game": "Still Water",
@@ -1379,6 +1345,23 @@
    "state": "done",
    "at": 1792791282,
    "created": 1792791282
+  },
+  {
+   "id": "P1TM01_answer-not-given-away",
+   "request": "Time as Material: stop the result giving the answer so fast; hold longer, less direct feedback.",
+   "game": "Time Material",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "",
+   "state": "done",
+   "at": 1792791284,
+   "created": 1792791284
   },
   {
    "id": "P1TM03_story-why-it-matters",
@@ -1504,6 +1487,23 @@
    "state": "done",
    "at": 1792791256,
    "created": 1792791256
+  },
+  {
+   "id": "P3OR63_name-fly-song-share",
+   "request": "Name audit: show one name for fly-song everywhere",
+   "game": "Fly Song",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "The MaleCNS v1.0 fly connectome and real recorded fruit-fly courtship song driven by its song neuron.",
+   "state": "done",
+   "at": 1792795385,
+   "created": 1792795385
   },
   {
    "id": "P3OR56_gallery-guess-credits-page",
@@ -1734,7 +1734,7 @@
    "state": "done",
    "at": 1792790510,
    "created": 1792790510,
-   "estPercentOfWeek": 451.92
+   "estPercentOfWeek": 72.3
   },
   {
    "id": "P3OR49_a11y-audit-no-crash-on-other-games",
