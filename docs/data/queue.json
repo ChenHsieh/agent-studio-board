@@ -1,5 +1,5 @@
 {
- "generated": 1792793469,
+ "generated": 1792794112,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -89,8 +89,8 @@
  },
  "tasks": [
   {
-   "id": "P1SW02_level7-coin-and-pet-outside-canvas",
-   "request": "Still Water: fix level 7 (the pet sits outside the canvas, placing a coin does nothing) and the How to play page layout.",
+   "id": "P1SW03_how-to-play-matches-template",
+   "request": "Still Water: put the How to play instructions in the right place and match the play template.",
    "game": "Still Water",
    "route": "Claude",
    "model": "sonnet",
@@ -98,7 +98,9 @@
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P1SW02_level7-coin-and-pet-outside-canvas"
+   ],
    "priority": "P2",
    "why": "A photo of an anechoic chamber and a Fourier-epicycle drawing, later joined by a picture of quasicrystal surface waves.",
    "state": "running",
@@ -537,27 +539,6 @@
    "waitingOn": [],
    "created": 1792724493,
    "estPercentOfWeek": 451.92
-  },
-  {
-   "id": "P1SW03_how-to-play-matches-template",
-   "request": "Still Water: put the How to play instructions in the right place and match the play template.",
-   "game": "Still Water",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1SW02_level7-coin-and-pet-outside-canvas"
-   ],
-   "priority": "P2",
-   "why": "A photo of an anechoic chamber and a Fourier-epicycle drawing, later joined by a picture of quasicrystal surface waves.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1SW02_level7-coin-and-pet-outside-canvas"
-   ],
-   "created": 1792791282
   },
   {
    "id": "P2HN00_herbal-pages-stay-open",
@@ -1134,6 +1115,23 @@
    "state": "done",
    "at": 1792791214,
    "created": 1792791214
+  },
+  {
+   "id": "P1SW02_level7-coin-and-pet-outside-canvas",
+   "request": "Still Water: fix level 7 (the pet sits outside the canvas, placing a coin does nothing) and the How to play page layout.",
+   "game": "Still Water",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "A photo of an anechoic chamber and a Fourier-epicycle drawing, later joined by a picture of quasicrystal surface waves.",
+   "state": "done",
+   "at": 1792791282,
+   "created": 1792791282
   },
   {
    "id": "P1TM03_story-why-it-matters",

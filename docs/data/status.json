@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T22:19:04+00:00",
+ "generated": "2026-10-23T22:21:42+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 42,
+    "queued": 41,
     "running": 0,
     "doneToday": 4,
-    "minutes": 1680,
-    "estimateMinutes": 1680
+    "minutes": 1640,
+    "estimateMinutes": 1640
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 44,
+    "doneToday": 45,
     "minutes": 180,
     "estimateMinutes": 60
    }
   },
-  "queued": 43,
+  "queued": 42,
   "running": 2,
-  "doneToday": 48,
+  "doneToday": 49,
   "lanes": {
    "Codex": 1,
    "Claude": 3
@@ -42,17 +42,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1860,
-  "estimatedFinish": "2026-10-25T02:19:04+00:00",
-  "estimateMinutes": 1680
+  "minutesRemaining": 1820,
+  "estimatedFinish": "2026-10-25T01:41:42+00:00",
+  "estimateMinutes": 1640
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "anechoic-fugue",
-   "task": "P1SW02_level7 coin and pet outside canvas",
-   "since": "2026-10-23T22:08:32+00:00",
-   "activity": "2026-10-23T22:14:37+00:00",
+   "task": "P1SW03_how to play matches template",
+   "since": "2026-10-23T22:21:40+00:00",
+   "activity": "2026-10-23T22:21:40+00:00",
    "commit": null
   },
   {
@@ -60,7 +60,7 @@
    "game": "think-elephant",
    "task": "P1TE00_harder hints and varied results",
    "since": "2026-10-23T22:08:31+00:00",
-   "activity": "2026-10-23T22:17:09+00:00",
+   "activity": "2026-10-23T22:19:15+00:00",
    "commit": null
   }
  ],
@@ -68,8 +68,8 @@
  "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 205,
-  "usdEst": 738.0,
+  "runs": 206,
+  "usdEst": 741.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -115,7 +115,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 36
+   "changes": 37
   }
  ],
  "houseRules": 25,
@@ -20959,11 +20959,11 @@
    ]
   },
   {
-   "nextTask": "Still Water: put the How to play instructions...",
-   "costTotalUsd": 105.07,
+   "nextTask": null,
+   "costTotalUsd": 108.67,
    "latestChange": {
-    "text": "zh-Hant level hints for all 12 levels; main",
-    "at": "2026-10-23T12:54:57+00:00"
+    "text": "levels 7-9 fit on the pond; every ring takes a coin",
+    "at": "2026-10-23T22:21:38+00:00"
    },
    "promo": null,
    "why": "A photo of an anechoic chamber and a Fourier-epicycle drawing, later joined by a picture of quasicrystal surface waves.",
@@ -20982,26 +20982,26 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-15T19:39:22+00:00",
-   "lastChange": "2026-10-23T22:14:37+00:00",
+   "lastChange": "2026-10-23T22:21:40+00:00",
    "cost": {
     "apiUsd": 17.97,
     "codexRuns": 3,
-    "claudeRuns": 5,
+    "claudeRuns": 6,
     "apiRuns": 3,
     "codexTokens": 585052,
     "codexUsdEst": 0.7,
-    "claudeUsdEst": 18.0,
+    "claudeUsdEst": 21.6,
     "earlierRounds": 19,
     "earlierUsdEst": 68.4,
-    "totalUsdEst": 105.07
+    "totalUsdEst": 108.67
    },
    "tasks": [
     {
-     "title": "P1SW02_level7 coin and pet outside canvas",
+     "title": "P1SW03_how to play matches template",
      "state": "running",
      "worker": "Claude",
-     "plan": "Still Water: fix level 7 (the pet sits outside the canvas, placing a coin does nothing) and the How to play page layout.",
-     "since": "2026-10-23T22:08:32+00:00",
+     "plan": "Still Water: put the How to play instructions in the right place and match the play template.",
+     "since": "2026-10-23T22:21:40+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -21011,18 +21011,18 @@
      "result": ""
     },
     {
-     "title": "P1SW03_how to play matches template",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Still Water: put the How to play instructions in the right place and match the play template.",
+     "title": "P1SW02_level7 coin and pet outside canvas",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Still Water: fix level 7 (the pet sits outside the canvas, placing a coin does nothing) and the How to play page layout.",
      "since": "2026-10-23T21:34:42+00:00",
-     "done": null,
+     "done": "2026-10-23T21:34:42+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "Levels 7 to 9 now fit the whole pond on screen: the first ring no longer slides off the canvas, and every ring on all 12 levels takes a coin (new test at 390x844 and 320x568)."
     },
     {
      "title": "P2SW01_still water zh hant level hints",
@@ -21110,15 +21110,21 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 11
+    "done": 12
    },
    "verdict": null,
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-23T22:21:38+00:00",
+     "ok": true,
+     "note": "levels 7-9 fit on the pond; every ring takes a coin",
+     "source": "board note"
+    },
     {
      "at": "2026-10-23T12:54:57+00:00",
      "ok": true,
@@ -21184,12 +21190,6 @@
      "ok": true,
      "note": "feat: a slow koi pond:",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-19T22:31:00+00:00",
-     "ok": false,
-     "note": "koi pond readout, timing controls, old-save migration, shared component checks, and local phone verification complete; publish blocked pending explicit origin approval",
-     "source": "board note"
     }
    ]
   },
@@ -22479,7 +22479,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-21T04:40:58+00:00",
-   "lastChange": "2026-10-23T22:17:09+00:00",
+   "lastChange": "2026-10-23T22:19:15+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
