@@ -80,8 +80,10 @@ function saveChoices() { localStorage.setItem('board.view', view); localStorage.
 async function loadExtra() {
   Gauge.load().then((q) => { if (q) { quota = q; paintGauge(); if (view === 'queue') renderQueueView(); } });
   for (const url of ['data/queue.json', 'https://raw.githubusercontent.com/ChenHsieh/agent-studio-board/main/docs/data/queue.json']) {
-    try { const r = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' }); if (r.ok) { requests = await r.json(); if (view === 'queue') renderQueueView(); renderViews(); return; } } catch { /* next */ }
+    try { const r = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' }); if (r.ok) { requests = await r.json(); break; } } catch { /* next */ }
   }
+  // render outside the fetch loop: a render error (board data not loaded yet) must not fall through to the older remote copy
+  if (requests) { if (view === 'queue') renderQueueView(); if (data) renderViews(); }
 }
 function paintGauge() { $('#gauge-head').innerHTML = Gauge.compactHtml(quota); }
 
@@ -100,9 +102,35 @@ function requestHtml(t) {
     ['Age', `queued ${ago(new Date(t.created * 1000).toISOString())}`], ['After', (t.after || []).length ? t.after.join(', ') : 'nothing']];
   return `<li class="req${isOpen ? ' open' : ''}" data-rid="${esc(t.id)}"><button class="rrow" aria-expanded="${isOpen}">
     <span class="rtext">${esc(t.request)}</span>
-    <span class="rline"><span class="rgame">${esc(t.game)}</span><span class="chip2">${esc(t.model)}</span><span class="chip2">${esc(t.effort)}</span><span class="rst ${esc(t.state)}">${esc(stateText(t))}</span>${share}</span></button>
+    <span class="rline"><span class="rgame">${esc(t.game)}</span>${t.wasCodex ? '<span class="chip2 wascx">was Codex</span>' : ''}<span class="chip2">${esc(t.model)}</span><span class="chip2">${esc(t.effort)}</span><span class="rst ${esc(t.state)}">${esc(stateText(t))}</span>${share}</span></button>
     ${t.why ? `<p class="why rwhy"><b>Why this exists:</b> ${esc(t.why)}</p>` : ''}
     <dl class="rmeta">${meta.map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl></li>`;
+}
+// Codex out: Claude covers the highest-priority Codex tasks (planner plus overflow workers, max 3); Codex back: tasks handed back.
+function overflowHtml(o) {
+  if (!o) return '';
+  if (o.codexOut) return `<div class="ovf" role="status"><b>Codex plan used up: Claude is covering the highest-priority tasks</b><span>${o.converted} ${o.converted === 1 ? 'task' : 'tasks'} moved to Claude · Claude workers ${o.claudeWorkers} of ${o.claudeWorkerCap} (the planner plus overflow workers)</span></div>`;
+  if (o.handedBack && o.lastHandBack && Date.now() / 1000 - o.lastHandBack < 48 * 3600) return `<div class="ovf back" role="status"><b>Codex is back: ${o.lastHandBackN || o.handedBack} ${(o.lastHandBackN || o.handedBack) === 1 ? 'task' : 'tasks'} handed back</b></div>`;
+  return '';
+}
+// OpenRouter lane, always shown (even when empty).
+function orHtml(o) {
+  if (!o) return '';
+  const models = Object.entries(o.modelsQueued || {}).map(([m, n]) => `<span class="chip2">${esc(m)} × ${n}</span>`).join('');
+  const spend = `about $${(o.spendTodayUsd || 0).toFixed(2)} today${o.runsTodayUnpriced ? ` (${o.runsTodayUnpriced} of ${o.runsToday} runs had no price recorded)` : ''}, estimate`;
+  const empty = !o.queued && !o.running;
+  const recent = (o.recent || []).map((t) => `<li><span class="ortext">${esc(t.request)}</span><span class="orline"><span class="chip2">${esc(t.model)}</span><span>done ${esc(ago(new Date(t.at * 1000).toISOString()))}</span></span></li>`).join('');
+  return `<div class="gpanel orpanel"><h3>OpenRouter lane</h3>
+    ${empty ? '<p class="gpace">Nothing queued: the lane is waiting for the planner</p>' : ''}
+    <dl class="gdl ordl">
+      <div><dt>Lanes</dt><dd>${o.lanesBusy} working</dd></div>
+      <div><dt>Queued</dt><dd>${o.queued} (${o.ready} ready, ${o.waiting} waiting)</dd></div>
+      <div><dt>Running</dt><dd>${o.running}</dd></div>
+      <div><dt>Done</dt><dd>${o.done24h} in the last 24 h</dd></div>
+      <div><dt>Models</dt><dd>${models || 'none queued'}</dd></div>
+      <div><dt>Spend</dt><dd>${esc(spend)}</dd></div>
+    </dl>
+    ${recent ? `<h4 class="orh">Last ${(o.recent || []).length} finished</h4><ul class="orrecent">${recent}</ul>` : ''}</div>`;
 }
 function renderQueueView() {
   const el = $('#queue-view');
@@ -111,10 +139,11 @@ function renderQueueView() {
   const chips = (group, list) => list.map(([v, l]) => `<button class="chip qchip" data-qf="${group}" data-value="${v}" aria-pressed="${qf[group].includes(v)}">${l}</button>`).join('');
   const groups = ROUTES.map((r) => {
     const rows = shown.filter((t) => t.route === r);
+    if (r === 'Claude') rows.sort((a, b) => (b.wasCodex ? 1 : 0) - (a.wasCodex ? 1 : 0));
     if (!rows.length) return '';
     return `<h3 class="rgroup">${r} <small>${rows.length}</small></h3><ul class="reqs">${rows.map(requestHtml).join('')}</ul>`;
   }).join('');
-  el.innerHTML = `<div class="gfull">${Gauge.fullHtml(quota)}</div>
+  el.innerHTML = `${overflowHtml(requests && requests.overflow)}<div class="gfull">${Gauge.fullHtml(quota)}</div>${orHtml(requests && requests.openrouter)}
     <div class="qfilters"><div class="qfg" aria-label="Route">${chips('route', ROUTES.map((r) => [r, r]))}</div><div class="qfg" aria-label="State">${chips('state', QSTATES)}</div></div>
     <p class="qcount">${shown.length} of ${all.length} requests${requests ? ` · updated ${ago(new Date(requests.generated * 1000).toISOString())}` : ''}</p>
     ${requests ? (groups || '<p class="empty">Nothing matches.</p>') : '<p class="empty">Loading the queue…</p>'}`;

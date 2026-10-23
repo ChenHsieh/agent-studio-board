@@ -6,6 +6,7 @@ const Gauge = (() => {
   const money = (n) => `$${(n || 0).toFixed(n >= 100 ? 0 : 2)}`;
   const when = (sec) => new Date(sec * 1000).toLocaleString([], { weekday: 'short', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
   const clock = (sec) => new Date(sec * 1000).toLocaleString([], { weekday: 'short', hour: '2-digit', minute: '2-digit' });
+  const clockHM = (sec) => new Date(sec * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false });
   function left(sec) {
     const m = Math.max(0, Math.round((sec * 1000 - Date.now()) / 60000));
     const d = Math.floor(m / 1440), h = Math.floor((m % 1440) / 60);
@@ -65,7 +66,9 @@ const Gauge = (() => {
       <p class="gpace">${esc(pace(q).replace(' (early estimate)', ''))}</p>
       <p class="gq">Queue of ${q.codex_tasks_ready} ready Codex tasks is about ${q.est_percent_for_ready_queue}% of the week.</p>
       ${spark(q)}` : `<p class="gpace">${esc(pace(q))}</p>`;
-    return `<div class="gpanel"><h3>Codex plan (ChatGPT)</h3>${codex}</div>
+    const w = q.watch || {};
+    const watch = `<p class="gwatch">${w.lastCheck ? `Last check ${clockHM(w.lastCheck)} · ` : ''}Early reset watch: every ${w.everyMin || 10} min${w.resetEvent ? `<br><b>Early reset detected at ${when(w.resetEvent)}</b>` : ''}</p>`;
+    return `<div class="gpanel"><h3>Codex plan (ChatGPT)</h3>${codex}${watch}</div>
       <div class="gpanel"><h3>Claude and OpenRouter</h3><p class="gq">${esc(claude)}</p><p class="gq">${esc(or)}</p></div>`;
   }
   return { load, compactHtml, fullHtml, esc, when, left };
