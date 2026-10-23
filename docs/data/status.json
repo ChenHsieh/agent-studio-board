@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T08:55:04+00:00",
+ "generated": "2026-10-23T09:00:27+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -18,34 +18,34 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 34,
+    "queued": 35,
     "running": 0,
     "doneToday": 0,
-    "minutes": 1360,
+    "minutes": 1400,
     "estimateMinutes": 0
    },
    "Claude": {
     "queued": 1,
-    "running": 3,
+    "running": 2,
     "doneToday": 9,
-    "minutes": 240,
+    "minutes": 180,
     "estimateMinutes": 60
    }
   },
-  "queued": 35,
-  "running": 3,
+  "queued": 36,
+  "running": 2,
   "doneToday": 9,
   "lanes": {
    "Codex": 0,
-   "Claude": 4
+   "Claude": 3
   },
   "laneCap": {
    "Claude": 4,
    "Codex": 0
   },
   "codexPaused": true,
-  "minutesRemaining": 1600,
-  "estimatedFinish": "2026-10-23T09:55:04+00:00",
+  "minutesRemaining": 1580,
+  "estimatedFinish": "2026-10-23T10:00:27+00:00",
   "estimateMinutes": 60
  },
  "lanes": [
@@ -62,14 +62,6 @@
   },
   {
    "worker": "Claude",
-   "game": "anechoic-fugue",
-   "task": "P1SW00_still water overall visual refine",
-   "since": "2026-10-23T07:44:17+00:00",
-   "activity": "2026-10-23T08:53:15+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
    "game": "shortest-law",
    "task": "P2FM59_shortest law first minute ship",
    "since": "2026-10-23T08:28:53+00:00",
@@ -78,11 +70,11 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 3,
+ "claudeWorkers": 2,
  "apiSpentUsd": 310.91,
  "claudeInSession": {
-  "runs": 180,
-  "usdEst": 648.0,
+  "runs": 181,
+  "usdEst": 651.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -1316,7 +1308,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 29.52,
+   "costTotalUsd": 15.12,
    "latestChange": {
     "text": "feat: Read back the posted notice",
     "at": "2026-10-23T01:47:08+00:00"
@@ -1353,9 +1345,9 @@
     "codexTokens": 601307,
     "codexUsdEst": 0.72,
     "claudeUsdEst": 14.4,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
-    "totalUsdEst": 29.52
+    "earlierRounds": 0,
+    "earlierUsdEst": 0.0,
+    "totalUsdEst": 15.12
    },
    "tasks": [
     {
@@ -1478,12 +1470,6 @@
      "source": "board note"
     },
     {
-     "at": "2026-10-23T01:46:23+00:00",
-     "ok": true,
-     "note": "feat: Read back the posted notice",
-     "source": "main commit"
-    },
-    {
      "at": "2026-10-23T01:19:42+00:00",
      "ok": false,
      "note": "see",
@@ -1496,46 +1482,16 @@
      "source": "board note"
     },
     {
-     "at": "2026-10-22T22:04:30+00:00",
-     "ok": true,
-     "note": "fix: share lines follow the reader's language",
-     "source": "main commit"
-    },
-    {
      "at": "2026-10-22T20:50:13+00:00",
      "ok": true,
      "note": "feat: teach the stairwell notice in four playable steps",
      "source": "board note"
     },
     {
-     "at": "2026-10-22T20:49:21+00:00",
-     "ok": true,
-     "note": "feat: teach the stairwell notice in four playable steps",
-     "source": "main commit"
-    },
-    {
      "at": "2026-10-22T18:48:06+00:00",
      "ok": true,
      "note": "Black out words on a stairwell notice until it says something kinder; small picture conditions say what must stay",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-22T18:46:06+00:00",
-     "ok": true,
-     "note": "Blackout Notice: black out a stairwell notice until it is kinder (20 notices, 9 kinds of condition)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T18:36:45+00:00",
-     "ok": true,
-     "note": "feat: Blackout Notice starts from the Play Lab game template",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T18:35:19+00:00",
-     "ok": true,
-     "note": "Initial commit",
-     "source": "main commit"
     }
    ]
   },
@@ -20814,7 +20770,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Still Water: put the level hints in Traditional...",
    "costTotalUsd": 101.47,
    "latestChange": {
     "text": "feat: Still Water's page reads in one row and the link preview is the ink-wash pond",
@@ -20827,8 +20783,8 @@
    "title": "Still Water",
    "line": "A slow koi pond: ripples to follow, ducklings that fall asleep, lily rings that make every pond a choice.",
    "url": "https://chenhsieh.github.io/anechoic-fugue/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Decide the physical model and its on-screen readout, choose",
    "shelfNote": "",
@@ -20837,26 +20793,26 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-15T19:39:22+00:00",
-   "lastChange": "2026-10-23T08:53:15+00:00",
+   "lastChange": "2026-10-23T08:56:05+00:00",
    "cost": {
     "apiUsd": 17.97,
     "codexRuns": 3,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 3,
     "codexTokens": 585052,
     "codexUsdEst": 0.7,
-    "claudeUsdEst": 10.8,
-    "earlierRounds": 20,
-    "earlierUsdEst": 72.0,
+    "claudeUsdEst": 14.4,
+    "earlierRounds": 19,
+    "earlierUsdEst": 68.4,
     "totalUsdEst": 101.47
    },
    "tasks": [
     {
-     "title": "P1SW00_still water overall visual refine",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Still Water: refine the whole look: water, lilies, menu, result card",
-     "since": "2026-10-23T07:44:17+00:00",
+     "title": "P2SW01_still water zh hant level hints",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Still Water: put the level hints in Traditional Chinese",
+     "since": "2026-10-23T08:56:05+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -20864,6 +20820,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1SW00_still water overall visual refine",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Still Water: refine the whole look: water, lilies, menu, result card",
+     "since": "2026-10-23T03:45:04+00:00",
+     "done": "2026-10-23T03:45:04+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1SW00 Still Water: overall visual refine (Opus designer-builder, 2026-10-23)"
     },
     {
      "title": "anechoic depth",
@@ -20948,27 +20918,13 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Implemented and committed on `codex-water-`."
-    },
-    {
-     "title": "anechoic fugue model",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Decide the physical model and its on-screen readout, choose the actors, plan bigger ponds and new disturbances.",
-     "since": "2026-10-19T17:54:51+00:00",
-     "done": "2026-10-19T17:54:51+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "The physical model and its readout are decided and written to intake_20261019/BRIEF_anechoic-fugue.md; two Codex build tasks queued (P2c05 round 1: readout, koi, sound, levels; P2c05b round 2: WebGL water, big ponds,..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 9
+    "done": 10
    },
    "verdict": null,
    "needsYou": null,
