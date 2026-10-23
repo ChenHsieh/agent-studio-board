@@ -12,6 +12,7 @@ const COLUMNS = [['ship', 'Ship'], ['revise', 'Revise'], ['shelf', 'Shelf'], [''
 
 async function load() {
   Gauge.load().then((q) => { $('#gauge-stats').innerHTML = Gauge.compactHtml(q); });
+  loadCostReport();
   const r = await fetch(`data/status.json?t=${Date.now()}`, { cache: 'no-store' });
   const d = await r.json();
   const p = d.project || {};
@@ -77,3 +78,25 @@ async function load() {
   ].filter(Boolean).map((x) => `<li>${x}</li>`).join('');
 }
 load();
+
+// Cost per shipped change (data/cost.json from the pipeline's cost report; estimates). Missing file: a plain note.
+async function loadCostReport() {
+  let c = null;
+  try { const r = await fetch(`data/cost.json?t=${Date.now()}`, { cache: 'no-store' }); if (r.ok) c = await r.json(); } catch { /* none */ }
+  if (!c) { $('#cost-report-note').textContent = 'The cost report is not available yet.'; return; }
+  const pct = (x) => `${Math.round((x || 0) * 100)}%`;
+  const k = c.kinds || {}, fm = k['first-minute'] || {}, r = c.routes || {};
+  const cx = r.Codex || {}, cl = r.Claude || {}, orr = r.OpenRouter || {};
+  const tiles = [
+    ['Per shipped game', usd(c.usdPerShippedGame), `${c.gamesShipped} shipped of ${c.gamesWithWork} with work`],
+    ['Per live change', usd(c.usdPerLiveChange), `${c.liveChanges} changes on main`],
+    ['Total so far', usd(c.usdTotal), `${c.tasksDone} finished tasks`],
+    ['Waste', pct(c.wasteShare), `${c.tasksFailedOrBounced} tasks failed or handed over; ${c.bounceEvents} gate bounces`],
+    ['First-minute rounds', `${pct(fm.failShare)} fail`, `${fm.tasks || 0} rounds`],
+    ['Claude', `${usd(cl.usdPerGoodTask)} per good task`, `${pct(cl.failShare)} fail`],
+    ['Codex', `${usd(cx.usdPerGoodTask)} per good task`, `${pct(cx.failShare)} fail` + (c.codexWeekPctPerTask != null ? `; about ${c.codexWeekPctPerTask}% of a weekly window per task` : '')],
+    ['OpenRouter', `${usd(orr.usdPerGoodTask)} per good task`, 'small exact tasks; most runs not priced'],
+  ];
+  $('#cost-report').innerHTML = tiles.map(([t, v, d]) => `<div><b>${esc(t)}</b><span>${esc(v)}</span><small>${esc(d)}</small></div>`).join('');
+  $('#cost-report-note').textContent = `All estimates, from ${new Date(c.generated * 1000).toLocaleString()}. Per shipped game divides all game spend by the games with a ship verdict or a release.`;
+}
