@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T14:15:29+00:00",
+ "generated": "2026-10-23T14:19:55+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -18,45 +18,37 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 31,
+    "queued": 32,
     "running": 0,
     "doneToday": 0,
-    "minutes": 1240,
+    "minutes": 1280,
     "estimateMinutes": 0
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
-    "doneToday": 26,
-    "minutes": 180,
+    "running": 1,
+    "doneToday": 27,
+    "minutes": 120,
     "estimateMinutes": 60
    }
   },
-  "queued": 32,
-  "running": 2,
-  "doneToday": 26,
+  "queued": 33,
+  "running": 1,
+  "doneToday": 27,
   "lanes": {
    "Codex": 0,
-   "Claude": 3
+   "Claude": 2
   },
   "laneCap": {
    "Claude": 4,
    "Codex": 0
   },
   "codexPaused": true,
-  "minutesRemaining": 1420,
-  "estimatedFinish": "2026-10-23T15:15:29+00:00",
+  "minutesRemaining": 1400,
+  "estimatedFinish": "2026-10-23T15:19:55+00:00",
   "estimateMinutes": 60
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "grub-band",
-   "task": "P2FM54_grub band first minute fix",
-   "since": "2026-10-23T14:06:57+00:00",
-   "activity": "2026-10-23T14:09:02+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "hit-or-kit",
@@ -67,11 +59,11 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 192,
-  "usdEst": 691.2,
+  "runs": 193,
+  "usdEst": 694.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -117,7 +109,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 20
+   "changes": 21
   }
  ],
  "houseRules": 25,
@@ -7965,11 +7957,11 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 21.6,
+   "nextTask": "Grub Band: make the daily puzzle build fast...",
+   "costTotalUsd": 25.2,
    "latestChange": {
-    "text": "see",
-    "at": "2026-10-22T21:21:49+00:00"
+    "text": "first minute lesson starts only from the Play button (fix of P2FM16), main ; playable...",
+    "at": "2026-10-23T14:17:28+00:00"
    },
    "promo": {
     "files": {
@@ -7984,8 +7976,8 @@
    "title": "Grub Band",
    "line": "Fill a foam box with grubs to build a tune; four levels, a daily tune and a shareable recording.",
    "url": "https://chenhsieh.github.io/grub-band/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Fill a foam box with grubs to build a tune; four levels, a daily tune and a",
    "shelfNote": "",
@@ -7994,26 +7986,26 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-21T20:47:27+00:00",
-   "lastChange": "2026-10-23T14:09:02+00:00",
+   "lastChange": "2026-10-23T14:18:08+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 6,
     "earlierUsdEst": 21.6,
-    "totalUsdEst": 21.6
+    "totalUsdEst": 25.2
    },
    "tasks": [
     {
-     "title": "P2FM54_grub band first minute fix",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Finish the first-minute round for grub-band: the lesson starts only from the Play button, so jumping to a level never lands under it",
-     "since": "2026-10-23T14:06:57+00:00",
+     "title": "P2GB00_grub band daily box generates slowly",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Grub Band: make the daily puzzle build fast enough for the playable gate",
+     "since": "2026-10-23T14:18:08+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -8021,6 +8013,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2FM54_grub band first minute fix",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Finish the first-minute round for grub-band: the lesson starts only from the Play button, so jumping to a level never lands under it",
+     "since": "2026-10-23T13:27:09+00:00",
+     "done": "2026-10-23T13:27:09+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "DONE P2FM54_grub-band-first-minute-fix: live game.js md5 matches the commit; live fresh page + Play shows step 1, 0 console errors)."
     },
     {
      "title": "P2FM16_grub band first minute",
@@ -8038,15 +8044,21 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": null,
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-23T14:17:28+00:00",
+     "ok": true,
+     "note": "first minute lesson starts only from the Play button (fix of P2FM16), main ; playable gate 'today' still fails on main too",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T21:21:49+00:00",
      "ok": false,
@@ -14029,7 +14041,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 10.8,
+   "costTotalUsd": 3.6,
    "latestChange": {
     "text": "P2IN07 institution round: 3 core briefs (designs/institution_npc), One More Chair PASS...",
     "at": "2026-10-22T21:38:57+00:00"
@@ -14050,7 +14062,7 @@
    "released": false,
    "releasedOn": null,
    "releasedNote": "",
-   "firstSeen": "2026-10-22T21:34:40+00:00",
+   "firstSeen": "2026-10-22T21:38:57+00:00",
    "lastChange": "2026-10-23T03:05:23+00:00",
    "cost": {
     "apiUsd": 0.0,
@@ -14060,9 +14072,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 2,
-    "earlierUsdEst": 7.2,
-    "totalUsdEst": 10.8
+    "earlierRounds": 0,
+    "earlierUsdEst": 0.0,
+    "totalUsdEst": 3.6
    },
    "tasks": [
     {
@@ -14095,18 +14107,6 @@
      "ok": true,
      "note": "P2IN07 institution round: 3 core briefs (designs/institution_npc), One More Chair PASS and picked, repo made, build P2n109 queued on Codex",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-22T21:36:55+00:00",
-     "ok": true,
-     "note": "feat: One More Chair starts from the Play Lab game template",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T21:34:40+00:00",
-     "ok": true,
-     "note": "Initial commit",
-     "source": "main commit"
     }
    ]
   },
@@ -17438,7 +17438,7 @@
   },
   {
    "nextTask": "Review of the first build (queued)",
-   "costTotalUsd": 28.8,
+   "costTotalUsd": 32.4,
    "latestChange": {
     "text": "first minute lesson now starts only from the Play button (fix of P2FM13), main",
     "at": "2026-10-23T14:06:53+00:00"
@@ -17475,9 +17475,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 14.4,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
-    "totalUsdEst": 28.8
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
+    "totalUsdEst": 32.4
    },
    "tasks": [
     {
@@ -17570,6 +17570,12 @@
      "ok": true,
      "note": "first minute lesson now starts only from the Play button (fix of P2FM13), main",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-23T14:05:07+00:00",
+     "ok": true,
+     "note": "feat: Same Badge opens with a short first minute",
+     "source": "main commit"
     },
     {
      "at": "2026-10-23T02:48:13+00:00",
