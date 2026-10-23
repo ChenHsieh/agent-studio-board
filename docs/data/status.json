@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T21:42:37+00:00",
+ "generated": "2026-10-23T21:45:05+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -17,10 +17,10 @@
   "workers": {
    "Codex": {
     "queued": 43,
-    "running": 1,
-    "doneToday": 3,
-    "minutes": 1760,
-    "estimateMinutes": 1760
+    "running": 0,
+    "doneToday": 4,
+    "minutes": 1720,
+    "estimateMinutes": 1720
    },
    "Claude": {
     "queued": 1,
@@ -31,8 +31,8 @@
    }
   },
   "queued": 44,
-  "running": 1,
-  "doneToday": 45,
+  "running": 0,
+  "doneToday": 46,
   "lanes": {
    "Codex": 1,
    "Claude": 1
@@ -42,21 +42,12 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1820,
-  "estimatedFinish": "2026-10-25T03:02:37+00:00",
-  "estimateMinutes": 1760
+  "minutesRemaining": 1780,
+  "estimatedFinish": "2026-10-25T02:25:05+00:00",
+  "estimateMinutes": 1720
  },
- "lanes": [
-  {
-   "worker": "Codex",
-   "game": "even-water",
-   "task": "P2FM56_even water first minute fix",
-   "since": "2026-10-23T21:38:17+00:00",
-   "activity": "2026-10-23T21:38:00+00:00",
-   "commit": null
-  }
- ],
- "codexLanes": 1,
+ "lanes": [],
+ "codexLanes": 0,
  "claudeWorkers": 0,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
@@ -107,7 +98,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 34
+   "changes": 35
   }
  ],
  "houseRules": 25,
@@ -4927,10 +4918,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 46.8,
+   "costTotalUsd": 47.03,
    "latestChange": {
-    "text": "P2RL03_credits-licences-even-water: WORKDIR",
-    "at": "2026-10-23T02:47:07+00:00"
+    "text": "fix: start the first minute only when Play is tapped",
+    "at": "2026-10-23T21:43:31+00:00"
    },
    "promo": {
     "files": {
@@ -4945,8 +4936,8 @@
    "title": "Even Water",
    "line": "Place a few stones so the water finds every cup before the deep pit drinks it; 12 villages.",
    "url": "https://chenhsieh.github.io/even-water/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Place a few stones so the water finds every cup before the deep pit drinks it;",
    "shelfNote": "",
@@ -4955,33 +4946,33 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-23T21:38:00+00:00",
+   "lastChange": "2026-10-23T21:43:31+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 5,
     "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 194790,
+    "codexUsdEst": 0.23,
     "claudeUsdEst": 18.0,
     "earlierRounds": 8,
     "earlierUsdEst": 28.8,
-    "totalUsdEst": 46.8
+    "totalUsdEst": 47.03
    },
    "tasks": [
     {
      "title": "P2FM56_even water first minute fix",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Finish the first-minute round for even-water: the lesson starts only from the Play button, so jumping to a level never lands under it",
-     "since": "2026-10-23T21:38:17+00:00",
-     "done": null,
+     "since": "2026-10-23T21:00:48+00:00",
+     "done": "2026-10-23T21:00:48+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 37,
+     "tokens": 194790,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "fix: start the first minute only when Play is tapped"
     },
     {
      "title": "P2RL03_credits licences even water",
@@ -5056,9 +5047,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": {
     "date": "2026-10-22",
@@ -5066,8 +5057,14 @@
     "note": "Stones steer one pour so every cup gets some; the first-drop line is enough to reason and still leaves a puzzle"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-23T21:43:31+00:00",
+     "ok": true,
+     "note": "fix: start the first minute only when Play is tapped",
+     "source": "board note"
+    },
     {
      "at": "2026-10-23T02:47:07+00:00",
      "ok": true,
@@ -5132,12 +5129,6 @@
      "at": "2026-10-22T18:34:18+00:00",
      "ok": true,
      "note": "Even Water: stones steer water so every cup is fed (12 villages, solver measured)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T18:16:44+00:00",
-     "ok": true,
-     "note": "feat: Even Water starts from the Play Lab game template",
      "source": "main commit"
     }
    ]
@@ -25715,7 +25706,7 @@
    "url": "https://chenhsieh.github.io/even-water/",
    "added": "2026-10-22",
    "try": "Place stones so one pour reaches every cup before the pit drinks it",
-   "busy": true,
+   "busy": false,
    "image": "promo/even-water/first.jpg"
   },
   {
@@ -25729,8 +25720,7 @@
   }
  ],
  "systemNeeds": [
-  "System needs: 10 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)",
-  "System needs: Pages build stuck or failed for 1 game(s): dynasty-guess (fix: re-run the Pages build in those repos (Settings, Pages) if an agent cannot)"
+  "System needs: 10 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)"
  ],
  "releaseReady": [],
  "releaseRegressed": []
