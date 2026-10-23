@@ -1,21 +1,27 @@
 {
- "generated": 1792749329,
+ "generated": 1792750217,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
-  "lanesBusy": 2,
+  "lanesBusy": 1,
   "ready": 0,
   "waiting": 0,
   "queued": 0,
-  "running": 2,
-  "done24h": 72,
+  "running": 1,
+  "done24h": 73,
   "modelsQueued": {
-   "deepseek-v4-flash": 2
+   "deepseek-v4-flash": 1
   },
   "spendTodayUsd": 0.0,
-  "runsToday": 3,
-  "runsTodayUnpriced": 2,
+  "runsToday": 4,
+  "runsTodayUnpriced": 3,
   "spendTotalUsd": 6.35,
   "recent": [
+   {
+    "id": "P3OR50_colony-lab-rule-card-short-steps",
+    "request": "Colony Count: the lab's rule card in short steps a new player can read at a glance",
+    "model": "deepseek-v4-flash",
+    "at": 1792749141
+   },
    {
     "id": "P3RL34_credits-licences-whiteboard-song",
     "request": "Whiteboard Song: credits name every source and its licence",
@@ -69,12 +75,6 @@
     "request": "No Favorites: credits name every source and its licence",
     "model": "openai/gpt-4.1",
     "at": 1792724716
-   },
-   {
-    "id": "P3RL25_credits-licences-literal-spirit",
-    "request": "Literal Spirit: credits name every source and its licence",
-    "model": "openai/gpt-4.1",
-    "at": 1792724713
    }
   ],
   "label": "estimate"
@@ -90,23 +90,6 @@
   "lastHandBackN": null
  },
  "tasks": [
-  {
-   "id": "P3OR50_colony-lab-rule-card-short-steps",
-   "request": "Colony Count: the lab's rule card in short steps a new player can read at a glance",
-   "game": "Colony Count",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "An ad for a three-colour sweeper puzzle (ColorSweeper).",
-   "state": "running",
-   "at": 1792749141,
-   "created": 1792749141
-  },
   {
    "id": "P2RL35_merge-credits-own-ground",
    "request": "Own Ground: publish its credits panel with licences (already written and tested on a side branch)",
@@ -159,6 +142,26 @@
    "state": "running",
    "at": 1792748743,
    "created": 1792748743
+  },
+  {
+   "id": "P2CC34_lab-edge-counts-keep-their-shape",
+   "request": "Colony Count: in the round dish and octagon lab, edge counts show the colony's shape as well as its colour",
+   "game": "Colony Count",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR50_colony-lab-rule-card-short-steps"
+   ],
+   "priority": "P1",
+   "why": "An ad for a three-colour sweeper puzzle (ColorSweeper).",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792749141,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2RL11_credits-panel-colony-count",
@@ -488,28 +491,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792724493,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2CC34_lab-edge-counts-keep-their-shape",
-   "request": "Colony Count: in the round dish and octagon lab, edge counts show the colony's shape as well as its colour",
-   "game": "Colony Count",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P3OR50_colony-lab-rule-card-short-steps"
-   ],
-   "priority": "P1",
-   "why": "An ad for a three-colour sweeper puzzle (ColorSweeper).",
-   "state": "waiting",
-   "waitingOn": [
-    "P3OR50_colony-lab-rule-card-short-steps"
-   ],
-   "created": 1792749141,
    "estPercentOfWeek": 0.25
   },
   {
@@ -1259,6 +1240,23 @@
    "at": 1792736900,
    "created": 1792736900,
    "wasCodex": true
+  },
+  {
+   "id": "P3OR50_colony-lab-rule-card-short-steps",
+   "request": "Colony Count: the lab's rule card in short steps a new player can read at a glance",
+   "game": "Colony Count",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "An ad for a three-colour sweeper puzzle (ColorSweeper).",
+   "state": "done",
+   "at": 1792749141,
+   "created": 1792749141
   },
   {
    "id": "P1GC00_grass-crossword-share-text-sound-more-puzzles",
