@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T04:34:53+00:00",
+ "generated": "2026-10-23T04:39:19+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -26,14 +26,14 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 4,
+    "running": 3,
     "doneToday": 0,
-    "minutes": 300,
-    "estimateMinutes": 75
+    "minutes": 240,
+    "estimateMinutes": 60
    }
   },
   "queued": 41,
-  "running": 4,
+  "running": 3,
   "doneToday": 0,
   "lanes": {
    "Codex": 0,
@@ -44,9 +44,9 @@
    "Codex": 0
   },
   "codexPaused": true,
-  "minutesRemaining": 1900,
-  "estimatedFinish": "2026-10-23T05:49:53+00:00",
-  "estimateMinutes": 75
+  "minutesRemaining": 1840,
+  "estimatedFinish": "2026-10-23T05:39:19+00:00",
+  "estimateMinutes": 60
  },
  "lanes": [
   {
@@ -72,18 +72,10 @@
    "since": "2026-10-23T01:43:47+00:00",
    "activity": "2026-10-23T04:29:58+00:00",
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "pigeon-salon",
-   "task": "P3RL29_credits licences pigeon salon",
-   "since": "2026-10-23T03:15:02+00:00",
-   "activity": "2026-10-23T04:20:51+00:00",
-   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 4,
+ "claudeWorkers": 3,
  "apiSpentUsd": 310.9,
  "claudeInSession": {
   "runs": 170,
@@ -14959,34 +14951,20 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T19:12:54+00:00",
-   "lastChange": "2026-10-23T04:20:51+00:00",
+   "lastChange": "2026-10-23T03:05:26+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 0,
     "codexTokens": 136565,
     "codexUsdEst": 0.16,
-    "claudeUsdEst": 10.8,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
+    "claudeUsdEst": 14.4,
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
     "totalUsdEst": 25.36
    },
    "tasks": [
-    {
-     "title": "P3RL29_credits licences pigeon salon",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Pigeon Salon: credits name every source and its licence",
-     "since": "2026-10-23T03:15:02+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2PS00_pigeon salon readable board",
      "state": "queued",
@@ -15000,6 +14978,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P3RL29_credits licences pigeon salon",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Pigeon Salon: credits name every source and its licence",
+     "since": "2026-10-23T03:05:26+00:00",
+     "done": "2026-10-23T03:05:26+00:00",
+     "reviewed": false,
+     "minutes": 84,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;process."
     },
     {
      "title": "P3OR36_pigeon salon rule words",
@@ -15060,9 +15052,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": {
     "date": "2026-10-22",
