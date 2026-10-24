@@ -1,5 +1,5 @@
 {
- "generated": 1792803979,
+ "generated": 1792804487,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -108,16 +108,18 @@
    "created": 1792801260
   },
   {
-   "id": "P1RN42_copy-and-zhuyin",
-   "request": "Readable Nonsense: fix the clumsy wording and spell the sounds the Taiwanese way (Zhuyin).",
+   "id": "P1RN44_visual-round-build",
+   "request": "Readable Nonsense: build the chosen look, the books stack included.",
    "game": "阿嬤讀得出來",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
-   "kind": "build",
+   "kind": "visual",
    "size": "one repo",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P1RN41_visual-round-design"
+   ],
    "priority": "P1",
    "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
    "state": "running",
@@ -227,17 +229,17 @@
    "created": 1792802208
   },
   {
-   "id": "P1RN44_visual-round-build",
-   "request": "Readable Nonsense: build the chosen look, the books stack included.",
+   "id": "P1RN43_daily-and-collection",
+   "request": "Readable Nonsense: a daily to revisit, a collection, and a How to play page that is refined.",
    "game": "阿嬤讀得出來",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
-   "kind": "visual",
+   "kind": "build",
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P1RN41_visual-round-design"
+    "P1RN42_copy-and-zhuyin"
    ],
    "priority": "P1",
    "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
@@ -739,27 +741,6 @@
     "P1FG00_forager-birds-and-play-pause"
    ],
    "created": 1792802208
-  },
-  {
-   "id": "P1RN43_daily-and-collection",
-   "request": "Readable Nonsense: a daily to revisit, a collection, and a How to play page that is refined.",
-   "game": "阿嬤讀得出來",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1RN42_copy-and-zhuyin"
-   ],
-   "priority": "P1",
-   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1RN42_copy-and-zhuyin"
-   ],
-   "created": 1792801302
   },
   {
    "id": "P2HN00_herbal-pages-stay-open",
@@ -1338,6 +1319,23 @@
    "model": "opus",
    "effort": "high",
    "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
+   "state": "done",
+   "at": 1792801302,
+   "created": 1792801302
+  },
+  {
+   "id": "P1RN42_copy-and-zhuyin",
+   "request": "Readable Nonsense: fix the clumsy wording and spell the sounds the Taiwanese way (Zhuyin).",
+   "game": "阿嬤讀得出來",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
    "size": "one repo",
    "estMinutes": null,
    "after": [],
