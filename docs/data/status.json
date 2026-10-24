@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T21:41:59+00:00",
+ "generated": "2026-10-24T21:44:37+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,40 +16,57 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 82,
+    "queued": 80,
     "running": 0,
     "doneToday": 2,
-    "minutes": 3280,
-    "estimateMinutes": 3280
+    "minutes": 3200,
+    "estimateMinutes": 3200
    },
    "Claude": {
     "queued": 1,
-    "running": 0,
+    "running": 2,
     "doneToday": 66,
-    "minutes": 60,
-    "estimateMinutes": 60
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
-  "queued": 83,
-  "running": 0,
+  "queued": 81,
+  "running": 2,
   "doneToday": 68,
   "lanes": {
    "Codex": 1,
-   "Claude": 1
+   "Claude": 2
   },
   "laneCap": {
    "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3340,
-  "estimatedFinish": "2026-10-27T04:21:59+00:00",
-  "estimateMinutes": 3280
+  "minutesRemaining": 3380,
+  "estimatedFinish": "2026-10-27T03:04:37+00:00",
+  "estimateMinutes": 3200
  },
- "lanes": [],
+ "lanes": [
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P1PL05_why and no hub rollout",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "pinch-points",
+   "task": "P1PP02_pinch points show the movement",
+   "since": "2026-10-24T21:42:25+00:00",
+   "activity": "2026-10-24T21:42:39+00:00",
+   "commit": null
+  }
+ ],
  "codexLanes": 0,
- "claudeWorkers": 0,
- "apiSpentUsd": 312.72,
+ "claudeWorkers": 2,
+ "apiSpentUsd": 312.79,
  "claudeInSession": {
   "runs": 286,
   "usdEst": 1029.6,
@@ -285,7 +302,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 3
+    "daysInState": 4
    },
    "waitingOn": "none",
    "id": "acrylic-beacon",
@@ -14216,7 +14233,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-24T11:34:57+00:00",
+   "lastChange": "2026-10-24T21:42:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -14235,7 +14252,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "mint: take the new play kit so the board and Undo fit a small phone",
-     "since": "2026-10-24T11:34:57+00:00",
+     "since": "2026-10-24T21:42:00+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -17685,7 +17702,7 @@
    ]
   },
   {
-   "nextTask": "Pinch Points: see the squares grow and shrink...",
+   "nextTask": "Pinch Points: a rule card before level 1...",
    "costTotalUsd": 21.94,
    "latestChange": {
     "text": "design: Pinch Points explained: what flat means, what a pinch does, the measured...",
@@ -17714,8 +17731,8 @@
    "title": "Pinch Points",
    "line": "Pinch six stones flat as the surface flattens live; par set by search, plus a daily.",
    "url": "https://chenhsieh.github.io/pinch-points/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "turns an esoteric paper into an interactive game; explain the mechanism, show...",
    "shelfNote": "",
@@ -17729,7 +17746,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T20:22:39+00:00",
-   "lastChange": "2026-10-24T06:59:35+00:00",
+   "lastChange": "2026-10-24T21:42:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -17745,10 +17762,10 @@
    "tasks": [
     {
      "title": "P1PP02_pinch points show the movement",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Pinch Points: see the squares grow and shrink after every pinch, and watch the stone open onto the paper",
-     "since": "2026-10-24T06:59:35+00:00",
+     "since": "2026-10-24T21:42:25+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -17843,8 +17860,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 4,
-    "running": 0,
+    "queued": 3,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
@@ -29359,7 +29376,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 1
+    "daysInState": 2
    },
    "waitingOn": "none",
    "id": "zoom-out",
