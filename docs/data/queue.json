@@ -1,5 +1,5 @@
 {
- "generated": 1792839168,
+ "generated": 1792840124,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -91,26 +91,9 @@
  },
  "tasks": [
   {
-   "id": "P1MC01_parts-library-and-snapping",
-   "request": "Makeshift Chair 3D: ten junk parts with one signature behaviour each, a landing ghost, rotate, visible tape",
+   "id": "P1MC02_clients-levels-and-daily",
+   "request": "Makeshift Chair 3D: eight clients with a requirement, and a daily junk pile",
    "game": "Makeshift Chair",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A published photo series of broken street chairs repaired with scraps, rope, bricks and tape.",
-   "state": "running",
-   "at": 1792837372,
-   "created": 1792837372
-  },
-  {
-   "id": "P2BN04_couplet-core-rebuild",
-   "request": "Blackout Notice: rebuild as the couplet game (answer a real Tang first line by blacking out a sheet)",
-   "game": "Blackout Notice",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
@@ -118,13 +101,13 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P3OR77_couplet-data-file"
+    "P1MC01_parts-library-and-snapping"
    ],
-   "priority": "P2",
-   "why": "A scruffy hand-lettered hiring post and a job ad written mostly as a list of what the company is not.",
+   "priority": "P1",
+   "why": "A published photo series of broken street chairs repaired with scraps, rope, bricks and tape.",
    "state": "running",
-   "at": 1792833469,
-   "created": 1792833469
+   "at": 1792834238,
+   "created": 1792834238
   },
   {
    "id": "P1CB12_photo-kitchens-visual-build",
@@ -419,6 +402,25 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792820937
+  },
+  {
+   "id": "P2BN05_couplet-visual-round",
+   "request": "Blackout Notice: the visual round for the couplet game (red couplet paper, ink, an old printed sheet)",
+   "game": "Blackout Notice",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2BN04_couplet-core-rebuild"
+   ],
+   "priority": "P2",
+   "why": "A scruffy hand-lettered hiring post and a job ad written mostly as a list of what the company is not.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792833473
   },
   {
    "id": "P2HK00_which-one-to-drop-clarity",
@@ -918,27 +920,6 @@
    "created": 1792805548
   },
   {
-   "id": "P1MC02_clients-levels-and-daily",
-   "request": "Makeshift Chair 3D: eight clients with a requirement, and a daily junk pile",
-   "game": "Makeshift Chair",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1MC01_parts-library-and-snapping"
-   ],
-   "priority": "P1",
-   "why": "A published photo series of broken street chairs repaired with scraps, rope, bricks and tape.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1MC01_parts-library-and-snapping"
-   ],
-   "created": 1792834238
-  },
-  {
    "id": "P1PP03_pinch-points-strategy-card-and-daily",
    "request": "Pinch Points: a rule card before level 1, a hint per level, the rule on the result card, a better daily and share line",
    "game": "Pinch Points",
@@ -1171,27 +1152,6 @@
    ],
    "created": 1792824849,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2BN05_couplet-visual-round",
-   "request": "Blackout Notice: the visual round for the couplet game (red couplet paper, ink, an old printed sheet)",
-   "game": "Blackout Notice",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2BN04_couplet-core-rebuild"
-   ],
-   "priority": "P2",
-   "why": "A scruffy hand-lettered hiring post and a job ad written mostly as a list of what the company is not.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2BN04_couplet-core-rebuild"
-   ],
-   "created": 1792833473
   },
   {
    "id": "P2HN00_herbal-pages-stay-open",
@@ -2218,6 +2178,23 @@
    "created": 1792833802
   },
   {
+   "id": "P1MC01_parts-library-and-snapping",
+   "request": "Makeshift Chair 3D: ten junk parts with one signature behaviour each, a landing ghost, rotate, visible tape",
+   "game": "Makeshift Chair",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A published photo series of broken street chairs repaired with scraps, rope, bricks and tape.",
+   "state": "done",
+   "at": 1792837372,
+   "created": 1792837372
+  },
+  {
    "id": "P1MG00_preview-before-commit-and-why-it-fails",
    "request": "Mushroom Gaps (#68, P1): show what a move will do before committing, and why it sometimes does not work.",
    "game": "Mushroom at the End",
@@ -2802,6 +2779,25 @@
    "state": "done",
    "at": 1792810461,
    "created": 1792810461
+  },
+  {
+   "id": "P2BN04_couplet-core-rebuild",
+   "request": "Blackout Notice: rebuild as the couplet game (answer a real Tang first line by blacking out a sheet)",
+   "game": "Blackout Notice",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR77_couplet-data-file"
+   ],
+   "priority": "P2",
+   "why": "A scruffy hand-lettered hiring post and a job ad written mostly as a list of what the company is not.",
+   "state": "done",
+   "at": 1792833469,
+   "created": 1792833469
   },
   {
    "id": "P3OR72_lot-waits-words-file",
