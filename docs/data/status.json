@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T14:40:46+00:00",
+ "generated": "2026-10-24T14:43:04+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,39 +16,48 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 113,
+    "queued": 112,
     "running": 0,
     "doneToday": 0,
-    "minutes": 4520,
-    "estimateMinutes": 4520
+    "minutes": 4480,
+    "estimateMinutes": 4480
    },
    "Claude": {
     "queued": 1,
-    "running": 0,
+    "running": 1,
     "doneToday": 36,
-    "minutes": 60,
+    "minutes": 120,
     "estimateMinutes": 60
    }
   },
-  "queued": 114,
-  "running": 0,
+  "queued": 113,
+  "running": 1,
   "doneToday": 36,
   "lanes": {
    "Codex": 1,
-   "Claude": 1
+   "Claude": 2
   },
   "laneCap": {
    "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 4580,
-  "estimatedFinish": "2026-10-27T18:00:46+00:00",
-  "estimateMinutes": 4520
+  "minutesRemaining": 4600,
+  "estimatedFinish": "2026-10-27T17:23:04+00:00",
+  "estimateMinutes": 4480
  },
- "lanes": [],
+ "lanes": [
+  {
+   "worker": "Claude",
+   "game": "think-elephant",
+   "task": "P1TE02_room warm cold rule",
+   "since": "2026-10-24T14:40:53+00:00",
+   "activity": "2026-10-24T14:40:54+00:00",
+   "commit": null
+  }
+ ],
  "codexLanes": 0,
- "claudeWorkers": 0,
+ "claudeWorkers": 1,
  "apiSpentUsd": 311.39,
  "claudeInSession": {
   "runs": 271,
@@ -26075,15 +26084,15 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "chapter lessons",
+   "waitingOn": "room warm cold rule",
    "id": "think-elephant",
    "number": 115,
    "repo": "think-elephant",
    "title": "Think Elephant",
    "line": "",
    "url": "https://chenhsieh.github.io/think-elephant/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -26097,7 +26106,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T04:40:58+00:00",
-   "lastChange": "2026-10-23T22:37:17+00:00",
+   "lastChange": "2026-10-24T14:40:54+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -26111,6 +26120,20 @@
     "totalUsdEst": 32.51
    },
    "tasks": [
+    {
+     "title": "P1TE02_room warm cold rule",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Think an Elephant: the room chapter gets its own rule, warm or cold instead of words",
+     "since": "2026-10-24T14:40:53+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1TE05_chapter lessons",
      "state": "queued",
@@ -26168,20 +26191,6 @@
      "result": ""
     },
     {
-     "title": "P1TE02_room warm cold rule",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Think an Elephant: the room chapter gets its own rule, warm or cold instead of words",
-     "since": "2026-10-23T22:35:50+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
      "title": "P1TE00_harder hints and varied results",
      "state": "done",
      "worker": "Claude",
@@ -26225,8 +26234,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 5,
-    "running": 0,
+    "queued": 4,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
