@@ -188,8 +188,8 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 196,
-   "firstTimePass": 95,
+   "count": 197,
+   "firstTimePass": 94,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
@@ -656,12 +656,12 @@
   },
   {
    "date": "2026-10-24",
-   "task": "couplet visual round",
+   "task": "recheck 3d spike test and 320 overflow",
    "number": "",
-   "executor": "claude-opus",
+   "executor": "claude-sonnet",
    "role": "build",
-   "passed": "yes",
-   "note": "the mock's leaf has a fixed height and does not fit 320x568 with the buttons (spec item 2 sizes it to content; P2BN06 gate checks it); no CJ"
+   "passed": "no",
+   "note": "Clients and 2D game are still plain top-bar controls; the page was looked at as screenshots (menu at 320 live) only."
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
