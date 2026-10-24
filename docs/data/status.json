@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T02:44:57+00:00",
+ "generated": "2026-10-24T02:48:25+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 77,
+    "queued": 76,
     "running": 1,
     "doneToday": 6,
-    "minutes": 3120,
-    "estimateMinutes": 3120
+    "minutes": 3080,
+    "estimateMinutes": 3080
    },
    "Claude": {
     "queued": 1,
     "running": 4,
-    "doneToday": 96,
+    "doneToday": 97,
     "minutes": 300,
     "estimateMinutes": 75
    }
   },
-  "queued": 78,
+  "queued": 77,
   "running": 5,
-  "doneToday": 102,
+  "doneToday": 103,
   "lanes": {
    "Codex": 1,
    "Claude": 4
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3420,
-  "estimatedFinish": "2026-10-26T06:44:57+00:00",
-  "estimateMinutes": 3120
+  "minutesRemaining": 3380,
+  "estimatedFinish": "2026-10-26T06:08:25+00:00",
+  "estimateMinutes": 3080
  },
  "lanes": [
   {
@@ -52,7 +52,7 @@
    "game": "even-water",
    "task": "P1EW00_pace predictability and guide",
    "since": "2026-10-24T02:25:05+00:00",
-   "activity": "2026-10-24T02:41:36+00:00",
+   "activity": "2026-10-24T02:47:54+00:00",
    "commit": null
   },
   {
@@ -72,31 +72,31 @@
    "commit": null
   },
   {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P1UX00_board checklist data",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
+  {
    "worker": "Codex",
    "game": "tractatus-tree",
    "task": "P2FM58_tractatus tree first minute fix",
    "since": "2026-10-24T02:01:37+00:00",
-   "activity": "2026-10-24T02:44:36+00:00",
+   "activity": "2026-10-24T02:48:13+00:00",
    "commit": {
     "at": "2026-10-24T02:33:45+00:00",
     "subject": "wip: P2FM58_tractatus-tree-first-minute-fix (Codex lane autosave 22:33)"
    }
-  },
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P2UX01_range selector parser",
-   "since": null,
-   "activity": null,
-   "commit": null
   }
  ],
  "codexLanes": 1,
  "claudeWorkers": 4,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 244,
-  "usdEst": 878.4,
+  "runs": 245,
+  "usdEst": 882.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -142,7 +142,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 81
+   "changes": 82
   }
  ],
  "houseRules": 25,
@@ -5251,7 +5251,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-24T02:41:36+00:00",
+   "lastChange": "2026-10-24T02:47:54+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -25313,7 +25313,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:13:20+00:00",
-   "lastChange": "2026-10-24T02:44:36+00:00",
+   "lastChange": "2026-10-24T02:48:13+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -27775,5 +27775,73 @@
   "System needs: 10 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)"
  ],
  "releaseReady": [],
- "releaseRegressed": []
+ "releaseRegressed": [],
+ "checksSummary": {
+  "why": {
+   "yes": 145,
+   "no": 10,
+   "unknown": 0,
+   "ran": 0
+  },
+  "expect": {
+   "yes": 6,
+   "no": 149,
+   "unknown": 0,
+   "ran": 0
+  },
+  "story": {
+   "yes": 23,
+   "no": 31,
+   "unknown": 101,
+   "ran": 0
+  },
+  "first_minute": {
+   "yes": 12,
+   "no": 4,
+   "unknown": 101,
+   "ran": 38
+  },
+  "a11y": {
+   "yes": 0,
+   "no": 19,
+   "unknown": 136,
+   "ran": 0
+  },
+  "credits": {
+   "yes": 15,
+   "no": 4,
+   "unknown": 136,
+   "ran": 0
+  },
+  "saves": {
+   "yes": 13,
+   "no": 0,
+   "unknown": 142,
+   "ran": 0
+  },
+  "standard": {
+   "yes": 12,
+   "no": 4,
+   "unknown": 139,
+   "ran": 0
+  },
+  "console": {
+   "yes": 11,
+   "no": 1,
+   "unknown": 143,
+   "ran": 0
+  },
+  "live": {
+   "yes": 10,
+   "no": 0,
+   "unknown": 145,
+   "ran": 0
+  },
+  "name": {
+   "yes": 154,
+   "no": 1,
+   "unknown": 0,
+   "ran": 0
+  }
+ }
 }

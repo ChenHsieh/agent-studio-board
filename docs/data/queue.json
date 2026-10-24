@@ -1,5 +1,5 @@
 {
- "generated": 1792809912,
+ "generated": 1792810110,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -162,12 +162,12 @@
    "created": 1792807735
   },
   {
-   "id": "P2UX01_range-selector-parser",
-   "request": "Board: understand game ranges like 120 to 140 in requests",
+   "id": "P1UX00_board-checklist-data",
+   "request": "Board: a per-game checklist (story, first minute, accessibility, credits, saves, preview) with yes, no or not checked",
    "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
-   "effort": "low",
+   "effort": "medium",
    "kind": "build",
    "size": "studio",
    "estMinutes": null,
@@ -175,8 +175,8 @@
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1792807381,
-   "created": 1792807381
+   "at": 1792807366,
+   "created": 1792807366
   },
   {
    "id": "P1AP01_story-bible-and-endings",
@@ -570,23 +570,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792794950
-  },
-  {
-   "id": "P1UX00_board-checklist-data",
-   "request": "Board: a per-game checklist (story, first minute, accessibility, credits, saves, preview) with yes, no or not checked",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "medium",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792807366
   },
   {
    "id": "P1UX02_one-state-per-game",
@@ -1251,7 +1234,6 @@
    "why": "",
    "state": "waiting",
    "waitingOn": [
-    "P2UX01_range-selector-parser",
     "P1UX02_one-state-per-game",
     "P1UX00_board-checklist-data"
    ],
@@ -2869,6 +2851,23 @@
    "state": "done",
    "at": 1792799693,
    "created": 1792799693
+  },
+  {
+   "id": "P2UX01_range-selector-parser",
+   "request": "Board: understand game ranges like 120 to 140 in requests",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "low",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792807381,
+   "created": 1792807381
   },
   {
    "id": "P3OR51_template-card-label-20px",
