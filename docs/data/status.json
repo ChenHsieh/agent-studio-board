@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T05:48:44+00:00",
+ "generated": "2026-10-24T05:51:38+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -43,7 +43,7 @@
   },
   "codexPaused": false,
   "minutesRemaining": 3360,
-  "estimatedFinish": "2026-10-26T11:48:44+00:00",
+  "estimatedFinish": "2026-10-26T11:51:38+00:00",
   "estimateMinutes": 3240
  },
  "lanes": [
@@ -15446,7 +15446,7 @@
    ]
   },
   {
-   "nextTask": "Nobody Looking: a workable visual round: three mock...",
+   "nextTask": "Nobody Looking daily: draw from the hard bank...",
    "costTotalUsd": 39.86,
    "latestChange": {
     "text": "P2RL05_credits-licences-nobody-looking: WORKDIR",
@@ -15489,7 +15489,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T17:56:06+00:00",
-   "lastChange": "2026-10-24T05:36:31+00:00",
+   "lastChange": "2026-10-24T05:48:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -15509,6 +15509,20 @@
      "worker": "Claude",
      "plan": "Nobody Looking (#127): sliding and swapping works smoothly with a finger, and a check of how deep the game really is.",
      "since": "2026-10-24T05:23:00+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1NL03_daily from the hard bank",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Nobody Looking daily: draw from the hard bank so the obvious play stops getting par",
+     "since": "2026-10-24T05:48:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -15600,24 +15614,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Nobody Looking now looks like a screened dish cabinet: plates and bowls on mint shelves, pinned dishes on a nail, blue dashed face triangle clearest. Live, bytes match, all gates pass (12/12, playable, UI, feel, touch..."
-    },
-    {
-     "title": "nobody looking visual design",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "nobody-looking: visual round design (look and feel after the core passed review)",
-     "since": "2026-10-22T19:13:54+00:00",
-     "done": "2026-10-22T19:13:54+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "- Decision: Nobody Looking becomes Grandma's screened dish cabinet (紗窗碗櫥): plates standing in a rack are the eyes, rice bowls seen from the side are the mouths, pinned dishes hang on a wire from a brass nail (no more..."
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 3,
     "running": 1,
     "waitingDesign": 0,
     "done": 6
@@ -20499,7 +20499,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 43.36,
+   "costTotalUsd": 50.56,
    "latestChange": {
     "text": "fix: game starts again with a save from the older rules (illegal move w2h3); result card...",
     "at": "2026-10-24T05:38:11+00:00"
@@ -20551,9 +20551,9 @@
     "codexTokens": 129278,
     "codexUsdEst": 0.16,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 11,
-    "earlierUsdEst": 39.6,
-    "totalUsdEst": 43.36
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
+    "totalUsdEst": 50.56
    },
    "tasks": [
     {
@@ -20630,6 +20630,18 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-24T05:36:49+00:00",
+     "ok": true,
+     "note": "fix: the finished seal shows its score instead of NaN",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-24T05:31:57+00:00",
+     "ok": true,
+     "note": "fix: the game starts again for players who had a seal in progress",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-21T20:04:25+00:00",
      "ok": true,
      "note": "feat: give Seal Carver its own link preview",
@@ -20681,18 +20693,6 @@
      "at": "2026-10-17T22:41:58+00:00",
      "ok": true,
      "note": "feat: How to play card names where the game comes from",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-17T21:41:35+00:00",
-     "ok": true,
-     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-17T21:23:08+00:00",
-     "ok": true,
-     "note": "fix: holding a button or the board no longer selects text on iPhone",
      "source": "main commit"
     }
    ]
@@ -23344,7 +23344,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 2
+    "daysInState": 3
    },
    "waitingOn": "none",
    "id": "spirit-billboard",
