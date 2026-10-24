@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T06:44:36+00:00",
+ "generated": "2026-10-24T06:47:01+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -43,16 +43,16 @@
   },
   "codexPaused": false,
   "minutesRemaining": 3220,
-  "estimatedFinish": "2026-10-26T09:24:36+00:00",
+  "estimatedFinish": "2026-10-26T09:27:01+00:00",
   "estimateMinutes": 3040
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "grass-crossword",
-   "task": "P1GX01_visual round design",
-   "since": "2026-10-24T06:40:45+00:00",
-   "activity": "2026-10-24T06:40:47+00:00",
+   "game": "lot-waits",
+   "task": "P1LW00_core reset clear penalty and words",
+   "since": "2026-10-24T06:46:53+00:00",
+   "activity": "2026-10-24T06:46:54+00:00",
    "commit": null
   },
   {
@@ -8889,7 +8889,7 @@
    ]
   },
   {
-   "nextTask": "Grass Crossword (#86): easier to place words, one...",
+   "nextTask": "Grass Crossword: build the chosen look",
    "costTotalUsd": 59.12,
    "latestChange": {
     "text": "docs: changelog for the 2026-10-23 round; tests know the twelve new beds and run the...",
@@ -8919,8 +8919,8 @@
    "title": "Grass Crossword",
    "line": "A crossword dug into a garden bed, where every answer is.",
    "url": "https://chenhsieh.github.io/grass-crossword/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "nearly ready; newspaper look, plain Share, a daily that is a new puzzle each...",
    "shelfNote": "",
@@ -8933,26 +8933,40 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:41:42+00:00",
-   "lastChange": "2026-10-24T06:40:47+00:00",
+   "lastChange": "2026-10-24T06:46:35+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 2,
     "codexTokens": 1267904,
     "codexUsdEst": 1.52,
-    "claudeUsdEst": 14.4,
-    "earlierRounds": 12,
-    "earlierUsdEst": 43.2,
+    "claudeUsdEst": 18.0,
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
     "totalUsdEst": 59.12
    },
    "tasks": [
     {
-     "title": "P1GX01_visual round design",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Grass Crossword: a newspaper crossword with grass growing through it: three mock looks with the taste spin.",
-     "since": "2026-10-24T06:40:45+00:00",
+     "title": "P1GX02_visual round build",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Grass Crossword: build the chosen look.",
+     "since": "2026-10-24T06:46:35+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P3OR71_grass crossword clue strings",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Grass Crossword: add the eight clue lines (English and Traditional Chinese) the newspaper look will print",
+     "since": "2026-10-24T06:46:35+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -8976,12 +8990,12 @@
      "result": ""
     },
     {
-     "title": "P1GX02_visual round build",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Grass Crossword: build the chosen look.",
+     "title": "P1GX01_visual round design",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Grass Crossword: a newspaper crossword with grass growing through it: three mock looks with the taste spin.",
      "since": "2026-10-24T02:54:21+00:00",
-     "done": null,
+     "done": "2026-10-24T02:54:21+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -9044,27 +9058,13 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Grass Crossword legend: live https://chenhsieh.github.io/grass-crossword/ (main , tag pre-legend-; live bytes match; live level 14 shows the SOD packet with its mark, no console errors)."
-    },
-    {
-     "title": "grass crossword beds",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "",
-     "since": "2026-10-20T01:48:28+00:00",
-     "done": "2026-10-20T01:48:28+00:00",
-     "reviewed": true,
-     "minutes": 17,
-     "tokens": 173917,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Published successfully."
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 1,
+    "queued": 3,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 12
+    "done": 13
    },
    "verdict": {
     "date": "2026-10-20",
@@ -25019,7 +25019,7 @@
    ]
   },
   {
-   "nextTask": "The Lot Waits (#121): a design reset: a...",
+   "nextTask": null,
    "costTotalUsd": 43.2,
    "latestChange": {
     "text": "first-minute start/stop fix: lesson starts only from Play click; test added; gates...",
@@ -25048,8 +25048,8 @@
    "title": "The Lot Waits",
    "line": "A week at a shrine side table: give each lot to its visitor on the right day or keep it in a two-slot drawer.",
    "url": "https://chenhsieh.github.io/lot-waits/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "A week at a shrine side table: give each lot to its visitor on the right day or",
    "shelfNote": "",
@@ -25062,7 +25062,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:13:02+00:00",
-   "lastChange": "2026-10-24T02:33:25+00:00",
+   "lastChange": "2026-10-24T06:46:54+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -25078,10 +25078,10 @@
    "tasks": [
     {
      "title": "P1LW00_core reset clear penalty and words",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "The Lot Waits (#121): a design reset: a decision you can feel, a visible penalty, fewer words, and keeping a lot must work.",
-     "since": "2026-10-24T02:33:25+00:00",
+     "since": "2026-10-24T06:46:53+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -25106,8 +25106,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },

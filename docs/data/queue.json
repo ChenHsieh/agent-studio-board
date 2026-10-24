@@ -1,15 +1,15 @@
 {
- "generated": 1792824151,
+ "generated": 1792824437,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
-  "ready": 0,
+  "ready": 1,
   "waiting": 2,
-  "queued": 2,
+  "queued": 3,
   "running": 0,
   "done24h": 19,
   "modelsQueued": {
-   "deepseek-v4-flash": 2
+   "deepseek-v4-flash": 3
   },
   "spendTodayUsd": 0.0,
   "runsToday": 4,
@@ -91,21 +91,21 @@
  },
  "tasks": [
   {
-   "id": "P1GX01_visual-round-design",
-   "request": "Grass Crossword: a newspaper crossword with grass growing through it: three mock looks with the taste spin.",
-   "game": "Grass Crossword",
+   "id": "P1LW00_core-reset-clear-penalty-and-words",
+   "request": "The Lot Waits (#121): a design reset",
+   "game": "The Lot Waits",
    "route": "Claude",
    "model": "opus",
    "effort": "high",
-   "kind": "visual",
+   "kind": "build",
    "size": "one repo",
    "estMinutes": null,
    "after": [],
-   "priority": "P1",
-   "why": "A conceptual artwork from 2002: a newspaper crossword with every square green and every answer written as GRASS.",
+   "priority": "P2",
+   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
    "state": "running",
-   "at": 1792810461,
-   "created": 1792810461
+   "at": 1792809205,
+   "created": 1792809205
   },
   {
    "id": "P1MM00_smooth-puzzle-latency",
@@ -195,6 +195,25 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792810461
+  },
+  {
+   "id": "P1GX02_visual-round-build",
+   "request": "Grass Crossword: build the chosen look.",
+   "game": "Grass Crossword",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1GX01_visual-round-design"
+   ],
+   "priority": "P1",
+   "why": "A conceptual artwork from 2002: a newspaper crossword with every square green and every answer written as GRASS.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792824395
   },
   {
    "id": "P1MC00_3d-physics-chair-design-and-spike",
@@ -403,6 +422,23 @@
    "created": 1792810482
   },
   {
+   "id": "P3OR71_grass-crossword-clue-strings",
+   "request": "Grass Crossword: add the eight clue lines (English and Traditional Chinese) the newspaper look will print",
+   "game": "Grass Crossword",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A conceptual artwork from 2002: a newspaper crossword with every square green and every answer written as GRASS.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792824395
+  },
+  {
    "id": "P1CD01_visual-round-hyperreal-or-high-res",
    "request": "Checking Desk (#124): the look is too crude; a hyper-real or high-resolution visual round with the taste spin.",
    "game": "Checking Desk",
@@ -437,23 +473,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792804913
-  },
-  {
-   "id": "P1LW00_core-reset-clear-penalty-and-words",
-   "request": "The Lot Waits (#121): a design reset",
-   "game": "The Lot Waits",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792809205
   },
   {
    "id": "P1NL03_daily-from-the-hard-bank",
@@ -934,27 +953,6 @@
     "P1CF04_marks-and-life-bar-look"
    ],
    "created": 1792805548
-  },
-  {
-   "id": "P1GX02_visual-round-build",
-   "request": "Grass Crossword: build the chosen look.",
-   "game": "Grass Crossword",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1GX01_visual-round-design"
-   ],
-   "priority": "P1",
-   "why": "A conceptual artwork from 2002: a newspaper crossword with every square green and every answer written as GRASS.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1GX01_visual-round-design"
-   ],
-   "created": 1792810461
   },
   {
    "id": "P1TH04_strings-and-tests",
@@ -1896,6 +1894,23 @@
    "state": "done",
    "at": 1792802208,
    "created": 1792802208
+  },
+  {
+   "id": "P1GX01_visual-round-design",
+   "request": "Grass Crossword: a newspaper crossword with grass growing through it: three mock looks with the taste spin.",
+   "game": "Grass Crossword",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A conceptual artwork from 2002: a newspaper crossword with every square green and every answer written as GRASS.",
+   "state": "done",
+   "at": 1792810461,
+   "created": 1792810461
   },
   {
    "id": "P1LH00_function-keys-and-how-to-play",
