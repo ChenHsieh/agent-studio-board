@@ -1,5 +1,5 @@
 {
- "generated": 1792821545,
+ "generated": 1792822361,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -91,21 +91,23 @@
  },
  "tasks": [
   {
-   "id": "P1NL01_visual-round-design",
-   "request": "Nobody Looking: a workable visual round: three mock looks, then a build spec.",
+   "id": "P1NL02_visual-round-build",
+   "request": "Nobody Looking: build the chosen look and the slide animations.",
    "game": "Nobody Looking",
    "route": "Claude",
-   "model": "opus",
+   "model": "sonnet",
    "effort": "high",
    "kind": "visual",
    "size": "one repo",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P1NL01_visual-round-design"
+   ],
    "priority": "P2",
    "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
    "state": "running",
-   "at": 1792808771,
-   "created": 1792808771
+   "at": 1792808745,
+   "created": 1792808745
   },
   {
    "id": "P1AP02_visual-round-design",
@@ -1079,27 +1081,6 @@
     "P1CK05_one-record-strings"
    ],
    "created": 1792804913
-  },
-  {
-   "id": "P1NL02_visual-round-build",
-   "request": "Nobody Looking: build the chosen look and the slide animations.",
-   "game": "Nobody Looking",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1NL01_visual-round-design"
-   ],
-   "priority": "P2",
-   "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1NL01_visual-round-design"
-   ],
-   "created": 1792808745
   },
   {
    "id": "P1NL03_daily-from-the-hard-bank",
@@ -2318,6 +2299,23 @@
    "state": "done",
    "at": 1792808745,
    "created": 1792808745
+  },
+  {
+   "id": "P1NL01_visual-round-design",
+   "request": "Nobody Looking: a workable visual round: three mock looks, then a build spec.",
+   "game": "Nobody Looking",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
+   "state": "done",
+   "at": 1792808771,
+   "created": 1792808771
   },
   {
    "id": "P1SC00_illegal-move-w2h3-cannot-start",
