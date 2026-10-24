@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T02:00:29+00:00",
+ "generated": "2026-10-24T02:02:51+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 66,
+    "queued": 75,
     "running": 1,
     "doneToday": 5,
-    "minutes": 2680,
-    "estimateMinutes": 2680
+    "minutes": 3040,
+    "estimateMinutes": 3040
    },
    "Claude": {
     "queued": 1,
@@ -30,7 +30,7 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 67,
+  "queued": 76,
   "running": 6,
   "doneToday": 89,
   "lanes": {
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3040,
-  "estimatedFinish": "2026-10-25T22:40:29+00:00",
-  "estimateMinutes": 2680
+  "minutesRemaining": 3400,
+  "estimatedFinish": "2026-10-26T04:42:51+00:00",
+  "estimateMinutes": 3040
  },
  "lanes": [
   {
@@ -52,7 +52,7 @@
    "game": "the-apprentice",
    "task": "P1AP00_story and plain names",
    "since": "2026-10-24T01:30:31+00:00",
-   "activity": "2026-10-24T01:53:44+00:00",
+   "activity": "2026-10-24T02:02:10+00:00",
    "commit": null
   },
   {
@@ -89,11 +89,14 @@
   },
   {
    "worker": "Codex",
-   "game": "play-template",
-   "task": "P2AX10_audit report one line per problem",
-   "since": null,
-   "activity": null,
-   "commit": null
+   "game": "tractatus-tree",
+   "task": "P2FM58_tractatus tree first minute fix",
+   "since": "2026-10-24T02:01:37+00:00",
+   "activity": "2026-10-24T02:02:50+00:00",
+   "commit": {
+    "at": "2026-10-24T02:01:38+00:00",
+    "subject": "start: P2FM58_tractatus-tree-first-minute-fix"
+   }
   }
  ],
  "codexLanes": 1,
@@ -147,7 +150,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 68
+   "changes": 69
   }
  ],
  "houseRules": 25,
@@ -3139,7 +3142,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Copy Drift (#129): the third first-minute page gets...",
    "costTotalUsd": 54.19,
    "latestChange": {
     "text": "P2RL02_credits-licences-copy-drift: WORKDIR",
@@ -3158,8 +3161,8 @@
    "title": "Copy Drift",
    "line": "Hand a page to a copyist that rewrites each mark as the closest one it knows; 12 pages.",
    "url": "https://chenhsieh.github.io/copy-drift/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Hand a page to a copyist that rewrites each mark as the closest one it knows;",
    "shelfNote": "",
@@ -3168,7 +3171,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T17:56:12+00:00",
-   "lastChange": "2026-10-23T02:47:07+00:00",
+   "lastChange": "2026-10-24T02:02:19+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -3182,6 +3185,20 @@
     "totalUsdEst": 54.19
    },
    "tasks": [
+    {
+     "title": "P1CD00_first minute step three stuck",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Copy Drift (#129): the third first-minute page gets stuck; find out if it is the story or the rules, and fix it.",
+     "since": "2026-10-24T02:02:19+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2RL02_credits licences copy drift",
      "state": "done",
@@ -3268,7 +3285,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 6
@@ -3279,7 +3296,7 @@
     "note": "not at ship level yet; back to refining"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-23T02:47:07+00:00",
@@ -22416,7 +22433,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-23T23:50:02+00:00",
-   "lastChange": "2026-10-24T01:53:44+00:00",
+   "lastChange": "2026-10-24T02:02:10+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -24438,7 +24455,7 @@
    ]
   },
   {
-   "nextTask": "Tractatus Tree: three practice pages before level 1...",
+   "nextTask": null,
    "costTotalUsd": 86.68,
    "latestChange": {
     "text": "P3OR32_tractatus-tree-link-preview: WORKDIR",
@@ -24451,7 +24468,7 @@
    "title": "Tractatus Tree",
    "line": "The numbered pages of a 1921 book are shuffled into a few.",
    "url": "https://chenhsieh.github.io/tractatus-tree/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Teach the philosophy gradually through play, not as homework",
@@ -24461,7 +24478,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-16T02:13:20+00:00",
-   "lastChange": "2026-10-22T23:51:34+00:00",
+   "lastChange": "2026-10-24T02:02:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -24477,16 +24494,19 @@
    "tasks": [
     {
      "title": "P2FM58_tractatus tree first minute fix",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Tractatus Tree: three practice pages before level 1 (fix the later levels the lesson branch broke)",
-     "since": "2026-10-22T23:50:05+00:00",
+     "since": "2026-10-24T02:01:37+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-24T02:01:38+00:00",
+      "subject": "start: P2FM58_tractatus-tree-first-minute-fix"
+     },
      "result": ""
     },
     {
@@ -24589,8 +24609,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 9
    },
