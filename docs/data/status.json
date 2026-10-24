@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T02:34:07+00:00",
+ "generated": "2026-10-24T02:35:34+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 81,
+    "queued": 80,
     "running": 1,
     "doneToday": 6,
-    "minutes": 3280,
-    "estimateMinutes": 3280
+    "minutes": 3240,
+    "estimateMinutes": 3240
    },
    "Claude": {
     "queued": 1,
-    "running": 5,
-    "doneToday": 91,
-    "minutes": 360,
-    "estimateMinutes": 90
+    "running": 4,
+    "doneToday": 93,
+    "minutes": 300,
+    "estimateMinutes": 75
    }
   },
-  "queued": 82,
-  "running": 6,
-  "doneToday": 97,
+  "queued": 81,
+  "running": 5,
+  "doneToday": 99,
   "lanes": {
    "Codex": 1,
    "Claude": 4
@@ -42,27 +42,11 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3640,
-  "estimatedFinish": "2026-10-26T09:14:07+00:00",
-  "estimateMinutes": 3280
+  "minutesRemaining": 3540,
+  "estimatedFinish": "2026-10-26T08:35:34+00:00",
+  "estimateMinutes": 3240
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P1BD06_what to expect on the board",
-   "since": null,
-   "activity": null,
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "copy-drift",
-   "task": "P1CD00_first minute step three stuck",
-   "since": "2026-10-24T02:25:05+00:00",
-   "activity": "2026-10-24T02:33:03+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "even-water",
@@ -88,11 +72,19 @@
    "commit": null
   },
   {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P1KT05_premise rollout round 5 games",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
+  {
    "worker": "Codex",
    "game": "tractatus-tree",
    "task": "P2FM58_tractatus tree first minute fix",
    "since": "2026-10-24T02:01:37+00:00",
-   "activity": "2026-10-24T02:33:45+00:00",
+   "activity": "2026-10-24T02:35:34+00:00",
    "commit": {
     "at": "2026-10-24T02:33:45+00:00",
     "subject": "wip: P2FM58_tractatus-tree-first-minute-fix (Codex lane autosave 22:33)"
@@ -100,11 +92,11 @@
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 5,
+ "claudeWorkers": 4,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 239,
-  "usdEst": 860.4,
+  "runs": 241,
+  "usdEst": 867.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -150,7 +142,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 76
+   "changes": 78
   }
  ],
  "houseRules": 25,
@@ -3210,10 +3202,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 57.79,
+   "costTotalUsd": 61.39,
    "latestChange": {
-    "text": "fix: first minute step 3 no longer traps the player",
-    "at": "2026-10-24T02:33:03+00:00"
+    "text": "first minute step 3 rebuilt as b to E with no dead-end pages, goal line, page readout,...",
+    "at": "2026-10-24T02:34:25+00:00"
    },
    "promo": {
     "files": {
@@ -3228,8 +3220,8 @@
    "title": "Copy Drift",
    "line": "Hand a page to a copyist that rewrites each mark as the closest one it knows; 12 pages.",
    "url": "https://chenhsieh.github.io/copy-drift/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Hand a page to a copyist that rewrites each mark as the closest one it knows;",
    "shelfNote": "",
@@ -3242,27 +3234,27 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T17:56:12+00:00",
-   "lastChange": "2026-10-24T02:33:03+00:00",
+   "lastChange": "2026-10-24T02:34:25+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 5,
+    "claudeRuns": 6,
     "apiRuns": 0,
     "codexTokens": 156979,
     "codexUsdEst": 0.19,
-    "claudeUsdEst": 18.0,
+    "claudeUsdEst": 21.6,
     "earlierRounds": 11,
     "earlierUsdEst": 39.6,
-    "totalUsdEst": 57.79
+    "totalUsdEst": 61.39
    },
    "tasks": [
     {
      "title": "P1CD00_first minute step three stuck",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Copy Drift (#129): the third first-minute page gets stuck; find out if it is the story or the rules, and fix it.",
-     "since": "2026-10-24T02:25:05+00:00",
-     "done": null,
+     "since": "2026-10-24T02:02:19+00:00",
+     "done": "2026-10-24T02:02:19+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -3357,9 +3349,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": {
     "date": "2026-10-23",
@@ -3367,8 +3359,14 @@
     "note": "not at ship level yet; back to refining"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-24T02:34:25+00:00",
+     "ok": true,
+     "note": "first minute step 3 rebuilt as b to E with no dead-end pages, goal line, page readout, wrong-tap caption; test added",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T02:33:03+00:00",
      "ok": true,
@@ -3434,12 +3432,6 @@
      "ok": true,
      "note": "P2n64 review: ship; each copyist card previews its result; level 8 is now AX>47>人工>AI (par 3); live",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-22T19:01:27+00:00",
-     "ok": true,
-     "note": "feat: each copyist card shows what the page would become",
-     "source": "main commit"
     }
    ]
   },
@@ -25177,7 +25169,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:13:20+00:00",
-   "lastChange": "2026-10-24T02:33:45+00:00",
+   "lastChange": "2026-10-24T02:35:34+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -27602,7 +27594,7 @@
    "url": "https://chenhsieh.github.io/copy-drift/",
    "added": "2026-10-22",
    "try": "Read what each copyist will write, then plan the chain so the letter ends as a joke",
-   "busy": true,
+   "busy": false,
    "image": "promo/copy-drift/first.jpg"
   },
   {
