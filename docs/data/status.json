@@ -1,11 +1,15 @@
 {
- "generated": "2026-10-24T15:18:15+00:00",
+ "generated": "2026-10-24T15:20:33+00:00",
  "ops": {
-  "count": 0,
-  "notes": [],
+  "count": 1,
+  "notes": [
+   "A game changed in the last hour with no claimed task on it."
+  ],
   "info": []
  },
- "about": [],
+ "about": [
+  "A game changed in the last hour with no claimed task on it."
+ ],
  "project": {
   "name": "Game studio",
   "noun": "game",
@@ -16,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 108,
+    "queued": 107,
     "running": 0,
     "doneToday": 0,
-    "minutes": 4320,
-    "estimateMinutes": 4320
+    "minutes": 4280,
+    "estimateMinutes": 4280
    },
    "Claude": {
     "queued": 1,
@@ -30,7 +34,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 109,
+  "queued": 108,
   "running": 1,
   "doneToday": 36,
   "lanes": {
@@ -42,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 4440,
-  "estimatedFinish": "2026-10-27T15:18:15+00:00",
-  "estimateMinutes": 4320
+  "minutesRemaining": 4400,
+  "estimatedFinish": "2026-10-27T14:40:33+00:00",
+  "estimateMinutes": 4280
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "think-elephant",
-   "task": "P2TE06_look refine",
-   "since": "2026-10-24T15:10:27+00:00",
-   "activity": "2026-10-24T15:18:15+00:00",
+   "game": "clay-clock",
+   "task": "P1CK02_one record rules and bots",
+   "since": "2026-10-24T15:19:50+00:00",
+   "activity": "2026-10-24T15:19:51+00:00",
    "commit": null
   }
  ],
@@ -60,8 +64,8 @@
  "claudeWorkers": 1,
  "apiSpentUsd": 311.39,
  "claudeInSession": {
-  "runs": 275,
-  "usdEst": 990.0,
+  "runs": 276,
+  "usdEst": 993.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -111,7 +115,7 @@
   },
   {
    "day": "2026-10-24",
-   "changes": 17
+   "changes": 18
   }
  ],
  "houseRules": 25,
@@ -2413,15 +2417,15 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "one record strings",
+   "waitingOn": "one record rules and bots",
    "id": "clay-clock",
    "number": 42,
    "repo": "clay-clock",
    "title": "Clay Clock",
    "line": "Press clay jars in the right order.",
    "url": "https://chenhsieh.github.io/clay-clock/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "A goal and a story, and a better drawn figure under the clay",
    "shelfNote": "",
@@ -2439,7 +2443,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T04:15:52+00:00",
-   "lastChange": "2026-10-24T01:22:29+00:00",
+   "lastChange": "2026-10-24T15:19:51+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -2454,11 +2458,11 @@
    },
    "tasks": [
     {
-     "title": "P1CK05_one record strings",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Clay Clock: en and zh-Hant lines for one record",
-     "since": "2026-10-24T01:22:16+00:00",
+     "title": "P1CK02_one record rules and bots",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Clay Clock: a record's wedges must touch (rules and bots)",
+     "since": "2026-10-24T15:19:50+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2468,11 +2472,11 @@
      "result": ""
     },
     {
-     "title": "P1CK02_one record rules and bots",
+     "title": "P1CK05_one record strings",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Clay Clock: a record's wedges must touch (rules and bots)",
-     "since": "2026-10-24T01:21:53+00:00",
+     "plan": "Clay Clock: en and zh-Hant lines for one record",
+     "since": "2026-10-24T01:22:16+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2567,8 +2571,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 5,
-    "running": 0,
+    "queued": 4,
+    "running": 1,
     "waitingDesign": 0,
     "done": 5
    },
@@ -26069,30 +26073,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 57.71,
+   "costTotalUsd": 61.31,
    "latestChange": {
-    "text": "feat: bigger readable words, a chalk path and a door arrow in the forest",
-    "at": "2026-10-24T15:18:15+00:00"
+    "text": "P2TE06: hint, rule line and result quote are real 20-26 px text; forest draws the chalk...",
+    "at": "2026-10-24T15:19:42+00:00"
    },
    "promo": null,
    "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "look refine",
+   "waitingOn": "none",
    "id": "think-elephant",
    "number": 115,
    "repo": "think-elephant",
    "title": "Think Elephant",
    "line": "",
    "url": "https://chenhsieh.github.io/think-elephant/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -26106,34 +26110,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T04:40:58+00:00",
-   "lastChange": "2026-10-24T15:18:15+00:00",
+   "lastChange": "2026-10-24T15:19:42+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 6,
+    "claudeRuns": 7,
     "apiRuns": 0,
     "codexTokens": 91844,
     "codexUsdEst": 0.11,
-    "claudeUsdEst": 21.6,
+    "claudeUsdEst": 25.2,
     "earlierRounds": 10,
     "earlierUsdEst": 36.0,
-    "totalUsdEst": 57.71
+    "totalUsdEst": 61.31
    },
    "tasks": [
-    {
-     "title": "P2TE06_look refine",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Think an Elephant: refine the chalk look, bigger text, visible forest path",
-     "since": "2026-10-24T15:10:27+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1TE05_chapter lessons",
      "state": "done",
@@ -26147,6 +26137,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1TE05 Think an Elephant: chapter 2 and 3 lessons. DONE. Live https://chenhsieh.github.io/think-elephant/ (first-minute.js, shell.js, rules.js, game.css md5-match; test/f"
+    },
+    {
+     "title": "P2TE06_look refine",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Think an Elephant: refine the chalk look, bigger text, visible forest path",
+     "since": "2026-10-23T22:36:31+00:00",
+     "done": "2026-10-23T22:36:31+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P2TE06 Think an Elephant: look refinement. DONE. main . Live https://chenhsieh.github.io/think-elephant/ (draw.js, shell.js, index.html, game.css md5-match; live screenshots taken at 390x844 and 320x568)."
     },
     {
      "title": "P1TE03_room strings",
@@ -26235,14 +26239,20 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 7
+    "done": 8
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-24T15:19:42+00:00",
+     "ok": true,
+     "note": "P2TE06: hint, rule line and result quote are real 20-26 px text; forest draws the chalk route and a door arrow; main live",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T15:18:15+00:00",
      "ok": true,
@@ -26308,12 +26318,6 @@
      "ok": true,
      "note": "feat: harder elephants, hints that narrow by kind, a different line on every result",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T22:10:04+00:00",
-     "ok": true,
-     "note": "feat: teach elephant deduction in a playable first minute",
-     "source": "board note"
     }
    ]
   },
