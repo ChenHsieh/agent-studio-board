@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T02:11:33+00:00",
+ "generated": "2026-10-24T02:14:37+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 75,
+    "queued": 77,
     "running": 1,
     "doneToday": 5,
-    "minutes": 3040,
-    "estimateMinutes": 3040
+    "minutes": 3120,
+    "estimateMinutes": 3120
    },
    "Claude": {
     "queued": 1,
     "running": 3,
-    "doneToday": 87,
+    "doneToday": 88,
     "minutes": 240,
     "estimateMinutes": 60
    }
   },
-  "queued": 76,
+  "queued": 78,
   "running": 4,
-  "doneToday": 92,
+  "doneToday": 93,
   "lanes": {
    "Codex": 1,
    "Claude": 4
@@ -42,11 +42,19 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3280,
-  "estimatedFinish": "2026-10-26T04:51:33+00:00",
-  "estimateMinutes": 3040
+  "minutesRemaining": 3360,
+  "estimatedFinish": "2026-10-26T06:14:37+00:00",
+  "estimateMinutes": 3120
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P1BD04_released games leave ready to try",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "fool-the-algorithm",
@@ -57,18 +65,10 @@
   },
   {
    "worker": "Claude",
-   "game": "local-hero",
-   "task": "P1LH00_function keys and how to play",
-   "since": "2026-10-24T01:34:59+00:00",
-   "activity": "2026-10-24T02:10:56+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
    "game": "readable-nonsense",
    "task": "P1RN43_daily and collection",
    "since": "2026-10-24T01:51:54+00:00",
-   "activity": "2026-10-24T02:05:21+00:00",
+   "activity": "2026-10-24T02:13:43+00:00",
    "commit": null
   },
   {
@@ -76,7 +76,7 @@
    "game": "tractatus-tree",
    "task": "P2FM58_tractatus tree first minute fix",
    "since": "2026-10-24T02:01:37+00:00",
-   "activity": "2026-10-24T02:11:26+00:00",
+   "activity": "2026-10-24T02:14:22+00:00",
    "commit": {
     "at": "2026-10-24T02:10:29+00:00",
     "subject": "Merge remote-tracking branch 'origin/main' into chen-cx-p2fm26-tractatus-tree-first-minute"
@@ -87,8 +87,8 @@
  "claudeWorkers": 3,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 235,
-  "usdEst": 846.0,
+  "runs": 236,
+  "usdEst": 849.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -134,7 +134,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 72
+   "changes": 73
   }
  ],
  "houseRules": 25,
@@ -2551,7 +2551,7 @@
    "priorityNote": "Flagship; has its own owner",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/colony-count-1.webp",
-   "released": false,
+   "released": true,
    "releasedOn": "2026-10-23",
    "releasedNote": "public-ready, still being refined",
    "firstSeen": "2026-10-16T07:50:58+00:00",
@@ -2768,8 +2768,7 @@
      "note": "feat: keep earned characters in sync and add a leaf hat with responsive eyes",
      "source": "board note"
     }
-   ],
-   "releaseHeld": true
+   ]
   },
   {
    "nextTask": null,
@@ -5070,7 +5069,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Even Water (#131): the water moves slower and...",
    "costTotalUsd": 50.63,
    "latestChange": {
     "text": "fix: start the first minute only when Play is tapped",
@@ -5089,17 +5088,17 @@
    "title": "Even Water",
    "line": "Place a few stones so the water finds every cup before the deep pit drinks it; 12 villages.",
    "url": "https://chenhsieh.github.io/even-water/",
-   "stage": "live",
-   "who": null,
-   "priority": "P2",
-   "priorityNote": "Place a few stones so the water finds every cup before the deep pit drinks it;",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P1",
+   "priorityNote": "has real potential; refine the feel (slower, predictable, guided) and the look...",
    "shelfNote": "",
    "image": "promo/even-water/first.jpg",
    "released": false,
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-23T21:43:31+00:00",
+   "lastChange": "2026-10-24T02:14:35+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -5113,6 +5112,48 @@
     "totalUsdEst": 50.63
    },
    "tasks": [
+    {
+     "title": "P1EW00_pace predictability and guide",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Even Water (#131): the water moves slower and predictably, with a guide that shows where it will go before you place a stone.",
+     "since": "2026-10-24T02:14:35+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1EW01_visual round design",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Even Water: a workable visual round: three mock looks first, then a precise build spec.",
+     "since": "2026-10-24T02:14:35+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1EW02_visual round build",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Even Water: build the chosen look and the feedback animations.",
+     "since": "2026-10-24T02:14:35+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2FM56_even water first minute fix",
      "state": "done",
@@ -5182,24 +5223,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "- Decision: Even Water becomes rice terraces in section: one stepped earth profile, water in paddies held by earth bunds (so the \"water pillar\" now reads as a paddy held above its neighbour), river stones set into the..."
-    },
-    {
-     "title": "even water",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "New game: one pour of water, set stones so every cup gets some",
-     "since": "2026-10-22T18:07:55+00:00",
-     "done": "2026-10-22T18:07:55+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "P2n56_even-water RESULT (Sonnet/high). LIVE https://chenhsieh.github.io/even-water/ commit on main"
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 3,
     "running": 0,
     "waitingDesign": 0,
     "done": 6
@@ -5210,7 +5237,7 @@
     "note": "Stones steer one pour so every cup gets some; the first-drop line is enough to reason and still leaves a puzzle"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-23T21:43:31+00:00",
@@ -11496,10 +11523,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 61.42,
+   "costTotalUsd": 65.02,
    "latestChange": {
-    "text": "fix: key hints that work, a three-line Why, and How to play as five picture cards",
-    "at": "2026-10-24T02:11:12+00:00"
+    "text": "P1LH00 live : F-key hints removed (keys named only with a keyboard), Why is 3 lines +...",
+    "at": "2026-10-24T02:12:56+00:00"
    },
    "promo": {
     "files": {
@@ -11515,8 +11542,8 @@
    "title": "Local Hero",
    "line": "Find the stretch two DNA strings share, then bank it.",
    "url": "https://chenhsieh.github.io/local-hero/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
@@ -11525,33 +11552,33 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-08-20T15:58:51+00:00",
-   "lastChange": "2026-10-24T02:11:12+00:00",
+   "lastChange": "2026-10-24T02:12:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 0,
     "codexTokens": 180479,
     "codexUsdEst": 0.22,
-    "claudeUsdEst": 7.2,
+    "claudeUsdEst": 10.8,
     "earlierRounds": 15,
     "earlierUsdEst": 54.0,
-    "totalUsdEst": 61.42
+    "totalUsdEst": 65.02
    },
    "tasks": [
     {
      "title": "P1LH00_function keys and how to play",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Local Hero: the F1, F2, F10 labels must work or go; How to play becomes visual; the Why page shrinks.",
-     "since": "2026-10-24T01:34:59+00:00",
-     "done": null,
+     "since": "2026-10-24T00:36:48+00:00",
+     "done": "2026-10-24T00:36:48+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1LH00 function keys and How to play (Local Hero) -- 2026-10-23"
     },
     {
      "title": "P1LH01_merge or separate design",
@@ -11598,9 +11625,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": {
     "date": "2026-10-19",
@@ -11608,8 +11635,14 @@
     "note": "Bioinformatics round: make the idea legible in the first"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-24T02:12:56+00:00",
+     "ok": true,
+     "note": "P1LH00 live : F-key hints removed (keys named only with a keyboard), Why is 3 lines + More, How to play is 5 picture cards with a finger demo",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T02:11:12+00:00",
      "ok": true,
@@ -11674,12 +11707,6 @@
      "at": "2026-10-15T14:23:08+00:00",
      "ok": true,
      "note": "feat: a link back to Play Lab",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-15T00:28:44+00:00",
-     "ok": true,
-     "note": "feat: a findable shared stretch, a lesson that needs BANK, demo hook",
      "source": "main commit"
     }
    ]
@@ -16545,9 +16572,9 @@
    "priorityNote": "Interface and visual pass; make the first game winnable for",
    "shelfNote": "",
    "image": "promo/redacxiv/first.jpg",
-   "released": false,
-   "releasedOn": null,
-   "releasedNote": "",
+   "released": true,
+   "releasedOn": "2026-10-23",
+   "releasedNote": "public-ready, still being refined",
    "firstSeen": "2026-10-14T20:39:05+00:00",
    "lastChange": "2026-10-22T17:05:03+00:00",
    "cost": {
@@ -24474,7 +24501,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-16T02:13:20+00:00",
-   "lastChange": "2026-10-24T02:11:26+00:00",
+   "lastChange": "2026-10-24T02:14:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -26632,7 +26659,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-16T00:29:52+00:00",
-   "lastChange": "2026-10-24T02:05:21+00:00",
+   "lastChange": "2026-10-24T02:13:43+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 3,
@@ -26882,7 +26909,5 @@
   "System needs: Released game Colony Count now fails what it passed at release: fixes (fix: play it; keep it released or remove its row from board/released.tsv)"
  ],
  "releaseReady": [],
- "releaseRegressed": [
-  "colony-count"
- ]
+ "releaseRegressed": []
 }
