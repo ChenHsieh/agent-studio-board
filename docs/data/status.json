@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-24T22:03:49+00:00",
+ "generated": "2026-10-24T22:06:10+00:00",
  "ops": {
-  "count": 31,
+  "count": 33,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 76,
+    "queued": 75,
     "running": 0,
     "doneToday": 2,
-    "minutes": 3040,
-    "estimateMinutes": 3040
+    "minutes": 3000,
+    "estimateMinutes": 3000
    },
    "Claude": {
     "queued": 1,
     "running": 3,
-    "doneToday": 69,
+    "doneToday": 70,
     "minutes": 240,
     "estimateMinutes": 120
    }
   },
-  "queued": 77,
+  "queued": 76,
   "running": 3,
-  "doneToday": 71,
+  "doneToday": 72,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3280,
-  "estimatedFinish": "2026-10-27T00:43:49+00:00",
-  "estimateMinutes": 3040
+  "minutesRemaining": 3240,
+  "estimatedFinish": "2026-10-27T00:06:10+00:00",
+  "estimateMinutes": 3000
  },
  "lanes": [
   {
@@ -61,24 +61,24 @@
   },
   {
    "worker": "Claude",
+   "game": "lot-waits",
+   "task": "P1LW05_fix lit target refused",
+   "since": "2026-10-24T22:05:44+00:00",
+   "activity": "2026-10-24T22:05:57+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
    "game": "Multiple games",
    "task": "P1PL05_why and no hub rollout",
    "since": null,
    "activity": null,
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "mint",
-   "task": "P2AX15_kit fit rollout mint",
-   "since": "2026-10-24T21:57:20+00:00",
-   "activity": "2026-10-24T22:00:32+00:00",
-   "commit": null
   }
  ],
  "codexLanes": 0,
  "claudeWorkers": 3,
- "apiSpentUsd": 313.24,
+ "apiSpentUsd": 313.29,
  "claudeInSession": {
   "runs": 286,
   "usdEst": 1029.6,
@@ -3080,8 +3080,8 @@
    "nextTask": null,
    "costTotalUsd": 47.02,
    "latestChange": {
-    "text": "feat: show where each signal link leads",
-    "at": "2026-10-21T07:05:32+00:00"
+    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+    "at": "2026-10-24T22:05:29+00:00"
    },
    "promo": null,
    "why": "The public MaleCNS v1.0 fruit-fly connectome and the wave of viral demos of a simulated fly brain playing games after its release.",
@@ -3091,7 +3091,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 3
+    "daysInState": 0
    },
    "waitingOn": "none",
    "id": "connectle",
@@ -3114,8 +3114,8 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-09-11T02:42:49+00:00",
-   "lastChange": "2026-10-21T07:05:32+00:00",
+   "firstSeen": "2026-09-11T02:43:59+00:00",
+   "lastChange": "2026-10-24T22:05:29+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -3168,6 +3168,12 @@
    "needsYou": null,
    "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-24T22:05:29+00:00",
+     "ok": true,
+     "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-21T07:05:32+00:00",
      "ok": true,
@@ -3232,12 +3238,6 @@
      "at": "2026-09-11T20:52:07+00:00",
      "ok": true,
      "note": "Live brain, visible moves and a guided first game",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-11T13:56:59+00:00",
-     "ok": true,
-     "note": "connectle v2: route the signal through the real wiring, on a map of the fly",
      "source": "main commit"
     }
    ]
@@ -14229,21 +14229,21 @@
    "why": "",
    "state": "ship",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "kit fit rollout mint",
+   "waitingOn": "owner",
    "id": "mint",
    "number": 153,
    "repo": "mint",
    "title": "Mint",
    "line": "",
    "url": "https://chenhsieh.github.io/mint/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -14257,33 +14257,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-24T22:00:32+00:00",
+   "lastChange": "2026-10-24T21:42:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 7.2,
-    "earlierRounds": 6,
-    "earlierUsdEst": 21.6,
+    "claudeUsdEst": 10.8,
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
     "totalUsdEst": 28.8
    },
    "tasks": [
     {
      "title": "P2AX15_kit fit rollout mint",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "mint: take the new play kit so the board and Undo fit a small phone",
-     "since": "2026-10-24T21:57:20+00:00",
-     "done": null,
+     "since": "2026-10-24T21:42:00+00:00",
+     "done": "2026-10-24T21:42:00+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE (Sonnet worker). Mint now carries kit 17 (was 13): the new-rule note and short-screen fit. Published to main, live bytes match (kit/core.js, kit/kit.css, kit/VERSION, game.js, index.html on..."
     },
     {
      "title": "P2MN00_mint story first minute and night",
@@ -14316,9 +14316,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": {
     "date": "2026-10-24",
@@ -14326,7 +14326,7 @@
     "note": "The garden is named, the first minute teaches the pull, and the night plays as steps; the straight dash still loses on every level after the first"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-24T03:23:38+00:00",
@@ -25509,10 +25509,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 40.18,
+   "costTotalUsd": 43.78,
    "latestChange": {
-    "text": "feat: teach The Folder’s fold through a first-minute round",
-    "at": "2026-10-23T00:39:28+00:00"
+    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+    "at": "2026-10-24T22:04:53+00:00"
    },
    "promo": null,
    "why": "A careless RNA folding program as the opponent, one of three greedy algorithms in the overnight Fool the Algorithm build.",
@@ -25522,7 +25522,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 1
+    "daysInState": 0
    },
    "waitingOn": "none",
    "id": "the-folder",
@@ -25546,7 +25546,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T04:47:38+00:00",
-   "lastChange": "2026-10-23T00:39:28+00:00",
+   "lastChange": "2026-10-24T22:04:53+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -25555,9 +25555,9 @@
     "codexTokens": 487250,
     "codexUsdEst": 0.58,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 9,
-    "earlierUsdEst": 32.4,
-    "totalUsdEst": 40.18
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
+    "totalUsdEst": 43.78
    },
    "tasks": [
     {
@@ -25628,6 +25628,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-24T22:04:53+00:00",
+     "ok": true,
+     "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-23T00:39:28+00:00",
      "ok": true,
      "note": "feat: teach The Folder’s fold through a first-minute round",
@@ -25692,17 +25698,11 @@
      "ok": true,
      "note": "feat:",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-15T08:21:31+00:00",
-     "ok": true,
-     "note": "feat: choose a clearer first pair",
-     "source": "main commit"
     }
    ]
   },
   {
-   "nextTask": "P1LW05_fix lit target refused",
+   "nextTask": "The Lot Waits: a seven-day strip, each lot's...",
    "costTotalUsd": 57.6,
    "latestChange": {
     "text": "see",
@@ -25731,8 +25731,8 @@
    "title": "The Lot Waits",
    "line": "A week at a shrine side table: give each lot to its visitor on the right day or keep it in a two-slot drawer.",
    "url": "https://chenhsieh.github.io/lot-waits/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "A week at a shrine side table: give each lot to its visitor on the right day or",
    "shelfNote": "",
@@ -25746,7 +25746,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:13:02+00:00",
-   "lastChange": "2026-10-24T21:07:25+00:00",
+   "lastChange": "2026-10-24T22:05:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -25762,10 +25762,10 @@
    "tasks": [
     {
      "title": "P1LW05_fix lit target refused",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "",
-     "since": "2026-10-24T21:07:24+00:00",
+     "since": "2026-10-24T22:05:44+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -25860,8 +25860,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 4
    },
@@ -26139,10 +26139,10 @@
   },
   {
    "nextTask": "Think an Elephant: the level row, goal line...",
-   "costTotalUsd": 61.31,
+   "costTotalUsd": 68.51,
    "latestChange": {
-    "text": "P2TE06: hint, rule line and result quote are real 20-26 px text; forest draws the chalk...",
-    "at": "2026-10-24T15:19:42+00:00"
+    "text": "One font for every quote: the game font now holds every character the game shows",
+    "at": "2026-10-24T22:01:15+00:00"
    },
    "promo": null,
    "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
@@ -26176,7 +26176,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T04:40:58+00:00",
-   "lastChange": "2026-10-24T21:11:03+00:00",
+   "lastChange": "2026-10-24T22:01:15+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -26185,9 +26185,9 @@
     "codexTokens": 91844,
     "codexUsdEst": 0.11,
     "claudeUsdEst": 32.4,
-    "earlierRounds": 8,
-    "earlierUsdEst": 28.8,
-    "totalUsdEst": 61.31
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
+    "totalUsdEst": 68.51
    },
    "tasks": [
     {
@@ -26314,6 +26314,18 @@
    "inProgress": true,
    "history": [
     {
+     "at": "2026-10-24T22:01:15+00:00",
+     "ok": true,
+     "note": "One font for every quote: the game font now holds every character the game shows",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-24T21:53:53+00:00",
+     "ok": true,
+     "note": "Touch: a wobbly tap chooses instead of refusing, a tap on another square moves the choice, no accidental zoom",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-24T15:19:42+00:00",
      "ok": true,
      "note": "P2TE06: hint, rule line and result quote are real 20-26 px text; forest draws the chalk route and a door arrow; main live",
@@ -26371,18 +26383,6 @@
      "at": "2026-10-23T22:37:00+00:00",
      "ok": true,
      "note": "docs: design pass for Think an Elephant, one rule per chapter",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-23T22:27:26+00:00",
-     "ok": true,
-     "note": "harder: hints narrow by kind, entry door, pars up to 5, one sourced line per level",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-23T22:25:58+00:00",
-     "ok": true,
-     "note": "feat: harder elephants, hints that narrow by kind, a different line on every result",
      "source": "main commit"
     }
    ]
