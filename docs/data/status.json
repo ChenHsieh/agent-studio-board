@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T09:11:29+00:00",
+ "generated": "2026-10-24T09:14:13+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 78,
+    "queued": 77,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3120,
-    "estimateMinutes": 3120
+    "minutes": 3080,
+    "estimateMinutes": 3080
    },
    "Claude": {
     "queued": 1,
@@ -30,7 +30,7 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 79,
+  "queued": 78,
   "running": 2,
   "doneToday": 10,
   "lanes": {
@@ -42,25 +42,25 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3300,
-  "estimatedFinish": "2026-10-26T13:11:29+00:00",
-  "estimateMinutes": 3120
+  "minutesRemaining": 3260,
+  "estimatedFinish": "2026-10-26T12:34:13+00:00",
+  "estimateMinutes": 3080
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "chai-boil",
-   "task": "P1CB11_hyperreal visual round",
-   "since": "2026-10-24T09:02:23+00:00",
-   "activity": "2026-10-24T09:10:53+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "grass-crossword",
    "task": "P1GX02_visual round build",
    "since": "2026-10-24T09:06:16+00:00",
-   "activity": "2026-10-24T09:06:26+00:00",
+   "activity": "2026-10-24T09:13:21+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "blackout-notice",
+   "task": "P2BN03_poem core research",
+   "since": "2026-10-24T09:11:41+00:00",
+   "activity": "2026-10-24T09:11:54+00:00",
    "commit": null
   }
  ],
@@ -1446,7 +1446,7 @@
    ]
   },
   {
-   "nextTask": "Blackout Notice (#130): a poet and a game...",
+   "nextTask": null,
    "costTotalUsd": 29.52,
    "latestChange": {
     "text": "feat: Read back the posted notice",
@@ -1475,8 +1475,8 @@
    "title": "Blackout Notice",
    "line": "Black out words on a stairwell notice until it says something kinder; 20 notices and a daily.",
    "url": "https://chenhsieh.github.io/blackout-notice/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Black out words on a stairwell notice until it says something kinder; 20",
    "shelfNote": "",
@@ -1489,7 +1489,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-24T02:54:21+00:00",
+   "lastChange": "2026-10-24T09:11:54+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -1505,10 +1505,10 @@
    "tasks": [
     {
      "title": "P2BN03_poem core research",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Blackout Notice (#130): a poet and a game designer find a core where the meaning of the words matters.",
-     "since": "2026-10-24T02:54:21+00:00",
+     "since": "2026-10-24T09:11:41+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1617,8 +1617,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 7
    },
@@ -1967,8 +1967,8 @@
    "title": "Chai Boil",
    "line": "One pot, one dial: let the chai rise to the rim, not over it.",
    "url": "https://chenhsieh.github.io/chai-boil/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "hyper-realistic visuals instead of computer-drawn",
    "shelfNote": "",
@@ -1985,30 +1985,16 @@
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 6,
-    "claudeRuns": 7,
+    "claudeRuns": 8,
     "apiRuns": 3,
     "codexTokens": 1320538,
     "codexUsdEst": 1.58,
-    "claudeUsdEst": 25.2,
-    "earlierRounds": 16,
-    "earlierUsdEst": 57.6,
+    "claudeUsdEst": 28.8,
+    "earlierRounds": 15,
+    "earlierUsdEst": 54.0,
     "totalUsdEst": 91.11
    },
    "tasks": [
-    {
-     "title": "P1CB11_hyperreal visual round",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Chai Boil (#92, P1): a hyper-real look instead of the computer-drawn one, by a taste visual round.",
-     "since": "2026-10-24T09:02:23+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1CB12_photo kitchens visual build",
      "state": "queued",
@@ -2030,6 +2016,20 @@
      "plan": "Chai Boil: the four foam-state words for the new photo look",
      "since": "2026-10-24T09:11:18+00:00",
      "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1CB11_hyperreal visual round",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Chai Boil (#92, P1): a hyper-real look instead of the computer-drawn one, by a taste visual round.",
+     "since": "2026-10-24T03:00:28+00:00",
+     "done": "2026-10-24T03:00:28+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -2110,9 +2110,9 @@
    ],
    "taskCounts": {
     "queued": 2,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 16
+    "done": 17
    },
    "verdict": {
     "date": "2026-10-21",
@@ -8953,7 +8953,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:41:42+00:00",
-   "lastChange": "2026-10-24T09:06:26+00:00",
+   "lastChange": "2026-10-24T09:13:21+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
