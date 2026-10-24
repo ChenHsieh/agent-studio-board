@@ -1,5 +1,5 @@
 {
- "generated": 1792824960,
+ "generated": 1792825105,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -92,6 +92,25 @@
  },
  "tasks": [
   {
+   "id": "P1AP03_visual-round-build",
+   "request": "The Apprentice: build the chosen look, the scenes and the endings.",
+   "game": "The Apprentice",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1AP02_visual-round-design"
+   ],
+   "priority": "P1",
+   "why": "",
+   "state": "running",
+   "at": 1792823937,
+   "created": 1792823937
+  },
+  {
    "id": "P1PP00_explain-the-strategy-and-show-the-movement",
    "request": "Pinch Points (#119, now P1): show how the stones move after a pinch, a clear strategy and a story.",
    "game": "Pinch Points",
@@ -107,42 +126,6 @@
    "state": "running",
    "at": 1792810791,
    "created": 1792810791
-  },
-  {
-   "id": "P1MM00_smooth-puzzle-latency",
-   "request": "Marble Machine (#19): the puzzle part lags; find why and make it smooth.",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792811306,
-   "created": 1792811306
-  },
-  {
-   "id": "P1AP03_visual-round-build",
-   "request": "The Apprentice: build the chosen look, the scenes and the endings.",
-   "game": "The Apprentice",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1AP02_visual-round-design"
-   ],
-   "priority": "P1",
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792823937
   },
   {
    "id": "P1CB11_hyperreal-visual-round",
@@ -699,6 +682,25 @@
    "created": 1792790568
   },
   {
+   "id": "P1MM01_depth-brainstorm-3d-platforms-and-mechanisms",
+   "request": "Marble Machine: a puzzle designer and a game designer brainstorm more depth, gradually introduced mechanisms, and 3D platforms; then a build plan.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1MM00_smooth-puzzle-latency"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792811310
+  },
+  {
    "id": "P1TE02_room-warm-cold-rule",
    "request": "Think an Elephant: the room chapter gets its own rule, warm or cold instead of words",
    "game": "Think Elephant",
@@ -1130,27 +1132,6 @@
    ],
    "created": 1792715918,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P1MM01_depth-brainstorm-3d-platforms-and-mechanisms",
-   "request": "Marble Machine: a puzzle designer and a game designer brainstorm more depth, gradually introduced mechanisms, and 3D platforms; then a build plan.",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1MM00_smooth-puzzle-latency"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P1MM00_smooth-puzzle-latency"
-   ],
-   "created": 1792811310
   },
   {
    "id": "P1TE03_room-strings",
@@ -2969,6 +2950,23 @@
    "state": "done",
    "at": 1792790568,
    "created": 1792790568
+  },
+  {
+   "id": "P1MM00_smooth-puzzle-latency",
+   "request": "Marble Machine (#19): the puzzle part lags; find why and make it smooth.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792811306,
+   "created": 1792811306
   },
   {
    "id": "P1NM00_game-name-audit",

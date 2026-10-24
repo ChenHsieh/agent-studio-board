@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T06:55:04+00:00",
+ "generated": "2026-10-24T06:58:12+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 79,
+    "queued": 78,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3160,
-    "estimateMinutes": 3160
+    "minutes": 3120,
+    "estimateMinutes": 3120
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 80,
+  "queued": 79,
   "running": 2,
   "doneToday": 5,
   "lanes": {
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3340,
-  "estimatedFinish": "2026-10-26T11:35:04+00:00",
-  "estimateMinutes": 3160
+  "minutesRemaining": 3300,
+  "estimatedFinish": "2026-10-26T10:58:12+00:00",
+  "estimateMinutes": 3120
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P1MM00_smooth puzzle latency",
-   "since": null,
-   "activity": null,
+   "game": "the-apprentice",
+   "task": "P1AP03_visual round build",
+   "since": "2026-10-24T06:57:22+00:00",
+   "activity": "2026-10-24T06:58:08+00:00",
    "commit": null
   },
   {
@@ -72,8 +72,8 @@
  "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 266,
-  "usdEst": 957.6,
+  "runs": 267,
+  "usdEst": 961.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -123,7 +123,7 @@
   },
   {
    "day": "2026-10-24",
-   "changes": 8
+   "changes": 9
   }
  ],
  "houseRules": 25,
@@ -13302,10 +13302,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 25.2,
+   "costTotalUsd": 28.8,
    "latestChange": {
-    "text": "P3 core verdict + brief",
-    "at": "2026-10-20T02:41:15+00:00"
+    "text": "P1MM00: puzzle drag latency 247->37 ms, frame p95 117->17 ms at 4x (draw on demand,...",
+    "at": "2026-10-24T06:57:08+00:00"
    },
    "promo": null,
    "why": "A viral short of a marble bouncing off pinned discs, each hit a note.",
@@ -13315,7 +13315,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 4
+    "daysInState": 0
    },
    "waitingOn": "none",
    "id": "marble-machine",
@@ -13338,7 +13338,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-09-11T21:03:55+00:00",
-   "lastChange": "2026-10-20T02:41:15+00:00",
+   "lastChange": "2026-10-24T06:57:08+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -13347,9 +13347,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 7,
-    "earlierUsdEst": 25.2,
-    "totalUsdEst": 25.2
+    "earlierRounds": 8,
+    "earlierUsdEst": 28.8,
+    "totalUsdEst": 28.8
    },
    "tasks": [
     {
@@ -13377,6 +13377,12 @@
    "needsYou": null,
    "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-24T06:57:08+00:00",
+     "ok": true,
+     "note": "P1MM00: puzzle drag latency 247->37 ms, frame p95 117->17 ms at 4x (draw on demand, shadow rebuilt only on movement); test/perf.mjs",
+     "source": "board note"
+    },
     {
      "at": "2026-10-20T02:41:15+00:00",
      "ok": true,
@@ -24458,7 +24464,7 @@
    ]
   },
   {
-   "nextTask": "The Apprentice: build the chosen look, the scenes...",
+   "nextTask": null,
    "costTotalUsd": 36.0,
    "latestChange": {
     "text": "design: The Apprentice visual round: three looks (woodcut almanac, primer plate, shadow...",
@@ -24481,8 +24487,8 @@
    "title": "The Apprentice",
    "line": "",
    "url": "https://chenhsieh.github.io/the-apprentice/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "a teach-then-betrayed story with real potential; frame the story, the...",
    "shelfNote": "",
@@ -24496,7 +24502,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:02+00:00",
-   "lastChange": "2026-10-24T06:38:57+00:00",
+   "lastChange": "2026-10-24T06:58:08+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -24512,10 +24518,10 @@
    "tasks": [
     {
      "title": "P1AP03_visual round build",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "The Apprentice: build the chosen look, the scenes and the endings.",
-     "since": "2026-10-24T06:38:57+00:00",
+     "since": "2026-10-24T06:57:22+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -24596,8 +24602,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 5
    },
