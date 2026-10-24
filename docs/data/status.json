@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T06:27:13+00:00",
+ "generated": "2026-10-24T06:29:33+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 78,
+    "queued": 77,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3120,
-    "estimateMinutes": 3120
+    "minutes": 3080,
+    "estimateMinutes": 3080
    },
    "Claude": {
     "queued": 1,
@@ -30,7 +30,7 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 79,
+  "queued": 78,
   "running": 2,
   "doneToday": 3,
   "lanes": {
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3300,
-  "estimatedFinish": "2026-10-26T10:27:13+00:00",
-  "estimateMinutes": 3120
+  "minutesRemaining": 3260,
+  "estimatedFinish": "2026-10-26T09:49:33+00:00",
+  "estimateMinutes": 3080
  },
  "lanes": [
   {
@@ -57,10 +57,10 @@
   },
   {
    "worker": "Claude",
-   "game": "nobody-looking",
-   "task": "P1NL02_visual round build",
-   "since": "2026-10-24T06:10:35+00:00",
-   "activity": "2026-10-24T06:25:53+00:00",
+   "game": "Multiple games",
+   "task": "P1MM00_smooth puzzle latency",
+   "since": null,
+   "activity": null,
    "commit": null
   }
  ],
@@ -68,8 +68,8 @@
  "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 265,
-  "usdEst": 954.0,
+  "runs": 266,
+  "usdEst": 957.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -119,7 +119,7 @@
   },
   {
    "day": "2026-10-24",
-   "changes": 7
+   "changes": 8
   }
  ],
  "houseRules": 25,
@@ -15455,10 +15455,10 @@
   },
   {
    "nextTask": "Nobody Looking daily: draw from the hard bank...",
-   "costTotalUsd": 57.86,
+   "costTotalUsd": 61.46,
    "latestChange": {
-    "text": "feat: the shelf becomes a museum drawer of jade fragments",
-    "at": "2026-10-24T06:25:53+00:00"
+    "text": "P1NL02: museum drawer look live (jade discs/arcs, face as foam shadow + deep holes +...",
+    "at": "2026-10-24T06:28:13+00:00"
    },
    "promo": {
     "files": {
@@ -15476,15 +15476,15 @@
     "reviseRound": 1,
     "daysInState": 1
    },
-   "waitingOn": "visual round build",
+   "waitingOn": "daily from the hard bank",
    "id": "nobody-looking",
    "number": 127,
    "repo": "nobody-looking",
    "title": "Nobody Looking",
    "line": "Twelve shelves of eyes and mouths: slide pieces until no face is left.",
    "url": "https://chenhsieh.github.io/nobody-looking/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Slide eyes and mouths until no face is left; placeholder shapes, 12 shelves",
    "shelfNote": "",
@@ -15497,34 +15497,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T17:56:06+00:00",
-   "lastChange": "2026-10-24T06:25:53+00:00",
+   "lastChange": "2026-10-24T06:28:13+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 7,
+    "claudeRuns": 8,
     "apiRuns": 0,
     "codexTokens": 215851,
     "codexUsdEst": 0.26,
-    "claudeUsdEst": 25.2,
+    "claudeUsdEst": 28.8,
     "earlierRounds": 9,
     "earlierUsdEst": 32.4,
-    "totalUsdEst": 57.86
+    "totalUsdEst": 61.46
    },
    "tasks": [
-    {
-     "title": "P1NL02_visual round build",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Nobody Looking: build the chosen look and the slide animations.",
-     "since": "2026-10-24T06:10:35+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1NL03_daily from the hard bank",
      "state": "queued",
@@ -15566,6 +15552,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1NL00_slide-and-swap-feel-and-depth: Nobody Looking (#127) slide feel + depth. LIVE on main, live game.js/game.css bytes match the branch."
+    },
+    {
+     "title": "P1NL02_visual round build",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Nobody Looking: build the chosen look and the slide animations.",
+     "since": "2026-10-24T02:25:45+00:00",
+     "done": "2026-10-24T02:25:45+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1NL02_visual-round-build: Nobody Looking now draws the museum storage drawer from design/VISUAL_ROUND.md. LIVE on main; live game.js, game.css, game.config.js bytes match the branch; live page looked at 390x844 and..."
     },
     {
      "title": "P2RL05_credits licences nobody looking",
@@ -15626,9 +15626,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 8
+    "done": 9
    },
    "verdict": {
     "date": "2026-10-23",
@@ -15638,6 +15638,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T06:28:13+00:00",
+     "ok": true,
+     "note": "P1NL02: museum drawer look live (jade discs/arcs, face as foam shadow + deep holes + tick, lid blink), save migrates cabinet players",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T06:25:53+00:00",
      "ok": true,
@@ -15703,12 +15709,6 @@
      "ok": true,
      "note": "feat: Nobody Looking becomes a screened dish cabinet",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T19:40:54+00:00",
-     "ok": true,
-     "note": "P2n82 visual design:",
-     "source": "board note"
     }
    ]
   },

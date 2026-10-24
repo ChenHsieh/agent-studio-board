@@ -1,5 +1,5 @@
 {
- "generated": 1792822962,
+ "generated": 1792823388,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -110,23 +110,21 @@
    "created": 1792808770
   },
   {
-   "id": "P1NL02_visual-round-build",
-   "request": "Nobody Looking: build the chosen look and the slide animations.",
-   "game": "Nobody Looking",
+   "id": "P1MM00_smooth-puzzle-latency",
+   "request": "Marble Machine (#19): the puzzle part lags; find why and make it smooth.",
+   "game": "Studio",
    "route": "Claude",
-   "model": "sonnet",
+   "model": "opus",
    "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
+   "kind": "build",
+   "size": "studio",
    "estMinutes": null,
-   "after": [
-    "P1NL01_visual-round-design"
-   ],
-   "priority": "P2",
-   "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
+   "after": [],
+   "priority": null,
+   "why": "",
    "state": "running",
-   "at": 1792808745,
-   "created": 1792808745
+   "at": 1792811306,
+   "created": 1792811306
   },
   {
    "id": "P1CB11_hyperreal-visual-round",
@@ -458,6 +456,25 @@
    "created": 1792809205
   },
   {
+   "id": "P1NL03_daily-from-the-hard-bank",
+   "request": "Nobody Looking daily: draw from the hard bank so the obvious play stops getting par",
+   "game": "Nobody Looking",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1NL02_visual-round-build"
+   ],
+   "priority": "P2",
+   "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792820937
+  },
+  {
    "id": "P2BN03_poem-core-research",
    "request": "Blackout Notice (#130): a poet and a game designer find a core where the meaning of the words matters.",
    "game": "Blackout Notice",
@@ -677,23 +694,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792790568
-  },
-  {
-   "id": "P1MM00_smooth-puzzle-latency",
-   "request": "Marble Machine (#19): the puzzle part lags; find why and make it smooth.",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792811306
   },
   {
    "id": "P1TE02_room-warm-cold-rule",
@@ -1081,27 +1081,6 @@
     "P1CK05_one-record-strings"
    ],
    "created": 1792804913
-  },
-  {
-   "id": "P1NL03_daily-from-the-hard-bank",
-   "request": "Nobody Looking daily: draw from the hard bank so the obvious play stops getting par",
-   "game": "Nobody Looking",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1NL02_visual-round-build"
-   ],
-   "priority": "P2",
-   "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1NL02_visual-round-build"
-   ],
-   "created": 1792820937
   },
   {
    "id": "P2HN00_herbal-pages-stay-open",
@@ -2316,6 +2295,25 @@
    "state": "done",
    "at": 1792808771,
    "created": 1792808771
+  },
+  {
+   "id": "P1NL02_visual-round-build",
+   "request": "Nobody Looking: build the chosen look and the slide animations.",
+   "game": "Nobody Looking",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1NL01_visual-round-design"
+   ],
+   "priority": "P2",
+   "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
+   "state": "done",
+   "at": 1792808745,
+   "created": 1792808745
   },
   {
    "id": "P1SC00_illegal-move-w2h3-cannot-start",
