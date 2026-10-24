@@ -1,5 +1,5 @@
 {
- "generated": 1792833809,
+ "generated": 1792834293,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -148,13 +148,13 @@
    "created": 1792805548
   },
   {
-   "id": "P1MC00_3d-physics-chair-design-and-spike",
-   "request": "Makeshift Chair (#35, P1): a 3D physics game in the spirit of Human Fall Flat where sitting down goes ridiculously wrong; design and a working spike.",
+   "id": "P1MC01_parts-library-and-snapping",
+   "request": "Makeshift Chair 3D: ten junk parts with one signature behaviour each, a landing ghost, rotate, visible tape",
    "game": "Makeshift Chair",
    "route": "Claude",
    "model": "opus",
    "effort": "high",
-   "kind": "design",
+   "kind": "visual",
    "size": "one repo",
    "estMinutes": null,
    "after": [],
@@ -162,7 +162,7 @@
    "why": "A published photo series of broken street chairs repaired with scraps, rope, bricks and tape.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792833802
+   "created": 1792834234
   },
   {
    "id": "P1MG02_survey-print-visual-build",
@@ -900,6 +900,27 @@
    "created": 1792805548
   },
   {
+   "id": "P1MC02_clients-levels-and-daily",
+   "request": "Makeshift Chair 3D: eight clients with a requirement, and a daily junk pile",
+   "game": "Makeshift Chair",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1MC01_parts-library-and-snapping"
+   ],
+   "priority": "P1",
+   "why": "A published photo series of broken street chairs repaired with scraps, rope, bricks and tape.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1MC01_parts-library-and-snapping"
+   ],
+   "created": 1792834238
+  },
+  {
    "id": "P1PP03_pinch-points-strategy-card-and-daily",
    "request": "Pinch Points: a rule card before level 1, a hint per level, the rule on the result card, a better daily and share line",
    "game": "Pinch Points",
@@ -941,6 +962,48 @@
     "P1TH03_worked-example-journey"
    ],
    "created": 1792808595
+  },
+  {
+   "id": "P2MC03_share-and-sound",
+   "request": "Makeshift Chair 3D: share line and physical sounds",
+   "game": "Makeshift Chair",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1MC02_clients-levels-and-daily"
+   ],
+   "priority": "P1",
+   "why": "A published photo series of broken street chairs repaired with scraps, rope, bricks and tape.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1MC02_clients-levels-and-daily"
+   ],
+   "created": 1792834242
+  },
+  {
+   "id": "P2MC04_visual-round-clay",
+   "request": "Makeshift Chair 3D: the visual round (soft clay toy, faceless sitter)",
+   "game": "Makeshift Chair",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1MC02_clients-levels-and-daily"
+   ],
+   "priority": "P1",
+   "why": "A published photo series of broken street chairs repaired with scraps, rope, bricks and tape.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1MC02_clients-levels-and-daily"
+   ],
+   "created": 1792834247
   },
   {
    "id": "P2PP04_pinch-points-visual-round-design",
@@ -2015,6 +2078,23 @@
    "state": "done",
    "at": 1792802208,
    "created": 1792802208
+  },
+  {
+   "id": "P1MC00_3d-physics-chair-design-and-spike",
+   "request": "Makeshift Chair (#35, P1): a 3D physics game in the spirit of Human Fall Flat where sitting down goes ridiculously wrong; design and a working spike.",
+   "game": "Makeshift Chair",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "design",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A published photo series of broken street chairs repaired with scraps, rope, bricks and tape.",
+   "state": "done",
+   "at": 1792833802,
+   "created": 1792833802
   },
   {
    "id": "P1MG00_preview-before-commit-and-why-it-fails",
