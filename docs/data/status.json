@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T01:28:16+00:00",
+ "generated": "2026-10-24T01:30:54+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -25,14 +25,14 @@
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 77,
+    "doneToday": 78,
     "minutes": 420,
     "estimateMinutes": 105
    }
   },
   "queued": 57,
   "running": 7,
-  "doneToday": 82,
+  "doneToday": 83,
   "lanes": {
    "Codex": 1,
    "Claude": 4
@@ -43,10 +43,18 @@
   },
   "codexPaused": false,
   "minutesRemaining": 2700,
-  "estimatedFinish": "2026-10-25T15:28:16+00:00",
+  "estimatedFinish": "2026-10-25T15:30:54+00:00",
   "estimateMinutes": 2280
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "the-apprentice",
+   "task": "P1AP00_story and plain names",
+   "since": "2026-10-24T01:30:31+00:00",
+   "activity": "2026-10-24T01:30:35+00:00",
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "clean-features",
@@ -68,7 +76,7 @@
    "game": "readable-nonsense",
    "task": "P1RN44_visual round build",
    "since": "2026-10-24T01:12:24+00:00",
-   "activity": "2026-10-24T01:27:44+00:00",
+   "activity": "2026-10-24T01:29:26+00:00",
    "commit": null
   },
   {
@@ -76,7 +84,7 @@
    "game": "uneven-loop",
    "task": "P1UL01_ping clear daily and glitch",
    "since": "2026-10-24T01:23:14+00:00",
-   "activity": "2026-10-24T01:23:29+00:00",
+   "activity": "2026-10-24T01:30:23+00:00",
    "commit": null
   },
   {
@@ -94,22 +102,14 @@
    "since": null,
    "activity": null,
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P2RV13_review the apprentice mint",
-   "since": null,
-   "activity": null,
-   "commit": null
   }
  ],
  "codexLanes": 1,
  "claudeWorkers": 6,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 223,
-  "usdEst": 802.8,
+  "runs": 224,
+  "usdEst": 806.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -2185,7 +2185,7 @@
   },
   {
    "nextTask": "Clay Clock: en and zh-Hant lines for one...",
-   "costTotalUsd": 32.82,
+   "costTotalUsd": 36.42,
    "latestChange": {
     "text": "core depth measured: spreading plan wins 82%; one-record rule recommended (simple rules...",
     "at": "2026-10-24T01:22:29+00:00"
@@ -2223,9 +2223,9 @@
     "codexTokens": 348238,
     "codexUsdEst": 0.42,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 7,
-    "earlierUsdEst": 25.2,
-    "totalUsdEst": 32.82
+    "earlierRounds": 8,
+    "earlierUsdEst": 28.8,
+    "totalUsdEst": 36.42
    },
    "tasks": [
     {
@@ -2358,6 +2358,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-24T01:20:59+00:00",
+     "ok": true,
+     "note": "design: measured why Clay Clock feels shallow, recommend one connected record",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-24T00:39:47+00:00",
      "ok": true,
      "note": "daily order is a new generated bot-proof tablet each date; result card names the date; one send per day",
@@ -2415,12 +2421,6 @@
      "at": "2026-10-15T04:17:00+00:00",
      "ok": true,
      "note": "feat: press wedges into a drying clay tablet to record an order of jars",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-15T04:15:52+00:00",
-     "ok": true,
-     "note": "Initial commit",
      "source": "main commit"
     }
    ]
@@ -12683,7 +12683,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Mint: say what everything on the garden is...",
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "core built: rooting rule, exact par solver, 8 levels, daily/endless, template_check...",
@@ -12696,8 +12696,8 @@
    "title": "Mint",
    "line": "",
    "url": "https://chenhsieh.github.io/mint/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -12706,7 +12706,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-24T01:14:56+00:00",
+   "lastChange": "2026-10-24T01:30:16+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12720,6 +12720,20 @@
     "totalUsdEst": 14.4
    },
    "tasks": [
+    {
+     "title": "P2MN00_mint story first minute and night",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Mint: say what everything on the garden is, teach the gardener's pull in the first minute, show the night",
+     "since": "2026-10-24T01:30:16+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2RV10_mint",
      "state": "done",
@@ -12736,14 +12750,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-10-23",
+    "verdict": "revise",
+    "note": "The gardener game holds (the straight dash always loses) but nothing on the board is named and the night is not shown"
+   },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-24T01:14:56+00:00",
@@ -22311,7 +22329,7 @@
    ]
   },
   {
-   "nextTask": "The Apprentice: tell the story on screen and...",
+   "nextTask": null,
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "playable: ring of 5 then 7 knacks, 9 levels, ghost preview, knife ending; a11y fit lane...",
@@ -22324,8 +22342,8 @@
    "title": "The Apprentice",
    "line": "",
    "url": "https://chenhsieh.github.io/the-apprentice/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -22334,7 +22352,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-23T23:50:02+00:00",
-   "lastChange": "2026-10-24T01:20:27+00:00",
+   "lastChange": "2026-10-24T01:30:35+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -22350,10 +22368,10 @@
    "tasks": [
     {
      "title": "P1AP00_story and plain names",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "The Apprentice: tell the story on screen and give the wheel, the tools and the examiners plain names and pictures.",
-     "since": "2026-10-24T01:20:27+00:00",
+     "since": "2026-10-24T01:30:31+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -22378,12 +22396,16 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-10-23",
+    "verdict": "revise",
+    "note": "The duel holds but the screen tells no story: the tools, ring and judges mean nothing to a stranger yet"
+   },
    "needsYou": null,
    "inProgress": true,
    "history": [
@@ -25454,7 +25476,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-15T03:56:45+00:00",
-   "lastChange": "2026-10-24T01:23:29+00:00",
+   "lastChange": "2026-10-24T01:30:23+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -26450,7 +26472,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-16T00:28:34+00:00",
-   "lastChange": "2026-10-24T01:27:44+00:00",
+   "lastChange": "2026-10-24T01:29:26+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 3,
