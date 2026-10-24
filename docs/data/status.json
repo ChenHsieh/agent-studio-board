@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T08:47:03+00:00",
+ "generated": "2026-10-24T08:49:29+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 77,
+    "queued": 76,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3080,
-    "estimateMinutes": 3080
+    "minutes": 3040,
+    "estimateMinutes": 3040
    },
    "Claude": {
     "queued": 1,
-    "running": 3,
-    "doneToday": 8,
-    "minutes": 240,
-    "estimateMinutes": 120
+    "running": 2,
+    "doneToday": 10,
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
-  "queued": 78,
-  "running": 3,
-  "doneToday": 8,
+  "queued": 77,
+  "running": 2,
+  "doneToday": 10,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3320,
-  "estimatedFinish": "2026-10-26T12:07:03+00:00",
-  "estimateMinutes": 3080
+  "minutesRemaining": 3220,
+  "estimatedFinish": "2026-10-26T11:29:29+00:00",
+  "estimateMinutes": 3040
  },
  "lanes": [
   {
@@ -62,18 +62,10 @@
    "since": "2026-10-24T08:22:29+00:00",
    "activity": "2026-10-24T08:34:45+00:00",
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "sockglass",
-   "task": "P3OR74_sockglass save migration test",
-   "since": "2026-10-24T08:43:37+00:00",
-   "activity": "2026-10-24T08:47:02+00:00",
-   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 3,
+ "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
   "runs": 268,
@@ -14966,10 +14958,10 @@
   },
   {
    "nextTask": "Mushroom at the End: build the closure survey...",
-   "costTotalUsd": 29.19,
+   "costTotalUsd": 36.39,
    "latestChange": {
-    "text": "feat: show the first mushroom floor in link previews",
-    "at": "2026-10-21T19:16:38+00:00"
+    "text": "design: Mushroom at the End visual round, closure survey print picked",
+    "at": "2026-10-24T08:42:44+00:00"
    },
    "promo": {
     "files": {
@@ -15012,14 +15004,14 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 1,
     "codexTokens": 322256,
     "codexUsdEst": 0.39,
-    "claudeUsdEst": 7.2,
-    "earlierRounds": 6,
-    "earlierUsdEst": 21.6,
-    "totalUsdEst": 29.19
+    "claudeUsdEst": 10.8,
+    "earlierRounds": 7,
+    "earlierUsdEst": 25.2,
+    "totalUsdEst": 36.39
    },
    "tasks": [
     {
@@ -15038,17 +15030,17 @@
     },
     {
      "title": "P3OR75_mushroom survey fonts and singular",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "Mushroom at the End: survey-print fonts and the singular mushroom line",
      "since": "2026-10-24T08:43:18+00:00",
-     "done": null,
+     "done": "2026-10-24T08:43:18+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 0,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: python3 -c \"import json;d=json.load(open('docs/strings.json'));e=d['en'];assert e['previewSeal1']=='Seals 1 tile: +1 mushroom.' and e['afterSeal1']=='Sealed 1 tile: +1 mushroom.' and d['zh-Hant'"
     },
     {
      "title": "P1MG01_journalist research and visual round design",
@@ -15122,15 +15114,27 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": null,
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T08:42:44+00:00",
+     "ok": true,
+     "note": "design: Mushroom at the End visual round, closure survey print picked",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-24T08:33:25+00:00",
+     "ok": true,
+     "note": "feat:",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-21T19:16:38+00:00",
      "ok": true,
@@ -15190,12 +15194,6 @@
      "ok": true,
      "note": "NOT_PUBLISHED decision gate fails under harness-owned casual (D6 L2 9%, L3 16%; D8 1->2; D9 L7,L9); rules unchanged per brief; see protos-claude/mushroom-gaps/FIX.md",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-15T23:26:23+00:00",
-     "ok": true,
-     "note": "Initial commit",
-     "source": "main commit"
     }
    ]
   },
@@ -22893,23 +22891,23 @@
     "caption": "Drag tissue-paper socks onto a dark bedroom window; where."
    },
    "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 5
+    "daysInState": 0
    },
-   "waitingOn": "sockglass save migration test",
+   "waitingOn": "none",
    "id": "sockglass",
    "number": 73,
    "repo": "sockglass",
    "title": "Sockglass",
    "line": "Drag tissue-paper socks onto a dark bedroom window; where.",
    "url": "https://chenhsieh.github.io/sockglass/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Make sock sizes and counts readable and let the theme",
    "shelfNote": "",
@@ -22922,33 +22920,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T23:27:18+00:00",
-   "lastChange": "2026-10-24T08:47:02+00:00",
+   "lastChange": "2026-10-24T08:08:42+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 0,
     "codexTokens": 170850,
     "codexUsdEst": 0.21,
-    "claudeUsdEst": 10.8,
-    "earlierRounds": 9,
-    "earlierUsdEst": 32.4,
+    "claudeUsdEst": 14.4,
+    "earlierRounds": 8,
+    "earlierUsdEst": 28.8,
     "totalUsdEst": 43.41
    },
    "tasks": [
     {
      "title": "P3OR74_sockglass save migration test",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Sockglass: a test that an old save survives the new daily build",
-     "since": "2026-10-24T08:43:37+00:00",
-     "done": null,
+     "since": "2026-10-24T08:08:42+00:00",
+     "done": "2026-10-24T08:08:42+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 5,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: test/save_migration.test.mjs"
     },
     {
      "title": "P1SK00_story daily and share",
@@ -23009,9 +23007,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": {
     "date": "2026-10-19",
@@ -23019,7 +23017,7 @@
     "note": "Make sock sizes and counts readable and let the theme"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-24T08:06:22+00:00",
