@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T03:06:44+00:00",
+ "generated": "2026-10-24T03:09:03+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,43 +16,43 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 88,
+    "queued": 89,
     "running": 1,
     "doneToday": 6,
-    "minutes": 3560,
-    "estimateMinutes": 3560
+    "minutes": 3600,
+    "estimateMinutes": 3600
    },
    "Claude": {
     "queued": 1,
     "running": 4,
-    "doneToday": 103,
+    "doneToday": 104,
     "minutes": 300,
-    "estimateMinutes": 60
+    "estimateMinutes": 150
    }
   },
-  "queued": 89,
+  "queued": 90,
   "running": 5,
-  "doneToday": 109,
+  "doneToday": 110,
   "lanes": {
    "Codex": 1,
-   "Claude": 5
+   "Claude": 2
   },
   "laneCap": {
-   "Claude": 6,
+   "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3860,
-  "estimatedFinish": "2026-10-26T14:26:44+00:00",
-  "estimateMinutes": 3560
+  "minutesRemaining": 3900,
+  "estimatedFinish": "2026-10-26T15:09:03+00:00",
+  "estimateMinutes": 3600
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "even-water",
-   "task": "P1EW01_visual round design",
-   "since": "2026-10-24T02:59:46+00:00",
-   "activity": "2026-10-24T03:06:41+00:00",
+   "task": "P1EW02_visual round build",
+   "since": "2026-10-24T03:08:02+00:00",
+   "activity": "2026-10-24T03:08:08+00:00",
    "commit": null
   },
   {
@@ -92,8 +92,8 @@
  "claudeWorkers": 4,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 251,
-  "usdEst": 903.6,
+  "runs": 252,
+  "usdEst": 907.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -139,7 +139,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 94
+   "changes": 95
   }
  ],
  "houseRules": 25,
@@ -5458,11 +5458,11 @@
    ]
   },
   {
-   "nextTask": "Even Water: build the chosen look and the...",
-   "costTotalUsd": 57.83,
+   "nextTask": null,
+   "costTotalUsd": 61.43,
    "latestChange": {
-    "text": "P1EW00 flow at one steady speed (Slow/Normal), every drop previewed (Show flow), arrows...",
-    "at": "2026-10-24T02:59:41+00:00"
+    "text": "P1EW01 visual round designed: 3 mocks, brush map picked, build spec in...",
+    "at": "2026-10-24T03:08:02+00:00"
    },
    "promo": {
     "files": {
@@ -5480,7 +5480,7 @@
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "visual round design",
+   "waitingOn": "visual round build",
    "id": "even-water",
    "number": 131,
    "repo": "even-water",
@@ -5501,26 +5501,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-24T03:06:41+00:00",
+   "lastChange": "2026-10-24T03:08:08+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 6,
+    "claudeRuns": 7,
     "apiRuns": 0,
     "codexTokens": 194790,
     "codexUsdEst": 0.23,
-    "claudeUsdEst": 21.6,
+    "claudeUsdEst": 25.2,
     "earlierRounds": 10,
     "earlierUsdEst": 36.0,
-    "totalUsdEst": 57.83
+    "totalUsdEst": 61.43
    },
    "tasks": [
     {
-     "title": "P1EW01_visual round design",
+     "title": "P1EW02_visual round build",
      "state": "running",
      "worker": "Claude",
-     "plan": "Even Water: a workable visual round: three mock looks first, then a precise build spec.",
-     "since": "2026-10-24T02:59:46+00:00",
+     "plan": "Even Water: build the chosen look and the feedback animations.",
+     "since": "2026-10-24T03:08:02+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -5530,12 +5530,12 @@
      "result": ""
     },
     {
-     "title": "P1EW02_visual round build",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Even Water: build the chosen look and the feedback animations.",
-     "since": "2026-10-24T02:14:35+00:00",
-     "done": null,
+     "title": "P1EW01_visual round design",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Even Water: a workable visual round: three mock looks first, then a precise build spec.",
+     "since": "2026-10-24T02:26:10+00:00",
+     "done": "2026-10-24T02:26:10+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -5629,10 +5629,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 7
+    "done": 8
    },
    "verdict": {
     "date": "2026-10-22",
@@ -5642,6 +5642,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T03:08:02+00:00",
+     "ok": true,
+     "note": "P1EW01 visual round designed: 3 mocks, brush map picked, build spec in design/VISUAL_ROUND.md; game unchanged",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T02:59:41+00:00",
      "ok": true,
@@ -5707,12 +5713,6 @@
      "ok": true,
      "note": "feat: Even Water is now rice terraces in section",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T19:35:23+00:00",
-     "ok": true,
-     "note": "P2n79 visual design:",
-     "source": "board note"
     }
    ]
   },
