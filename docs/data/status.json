@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T01:22:22+00:00",
+ "generated": "2026-10-24T01:25:44+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,43 +16,51 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 60,
+    "queued": 56,
     "running": 1,
     "doneToday": 5,
-    "minutes": 2440,
-    "estimateMinutes": 2440
+    "minutes": 2280,
+    "estimateMinutes": 2280
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 6,
     "doneToday": 77,
-    "minutes": 120,
-    "estimateMinutes": 60
+    "minutes": 420,
+    "estimateMinutes": 105
    }
   },
-  "queued": 61,
-  "running": 2,
+  "queued": 57,
+  "running": 7,
   "doneToday": 82,
   "lanes": {
    "Codex": 1,
-   "Claude": 2
+   "Claude": 4
   },
   "laneCap": {
    "Claude": 4,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2560,
-  "estimatedFinish": "2026-10-25T18:02:22+00:00",
-  "estimateMinutes": 2440
+  "minutesRemaining": 2700,
+  "estimatedFinish": "2026-10-25T15:25:44+00:00",
+  "estimateMinutes": 2280
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "clay-clock",
-   "task": "P1CK01_core design pass depth",
-   "since": "2026-10-24T00:39:49+00:00",
-   "activity": "2026-10-24T01:20:59+00:00",
+   "game": "clean-features",
+   "task": "P1CF00_core and story reset",
+   "since": "2026-10-24T01:23:13+00:00",
+   "activity": "2026-10-24T01:23:23+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "local-hero",
+   "task": "P1LH01_merge or separate design",
+   "since": "2026-10-24T01:24:34+00:00",
+   "activity": "2026-10-24T01:24:34+00:00",
    "commit": null
   },
   {
@@ -60,7 +68,15 @@
    "game": "readable-nonsense",
    "task": "P1RN44_visual round build",
    "since": "2026-10-24T01:12:24+00:00",
-   "activity": "2026-10-24T01:22:19+00:00",
+   "activity": "2026-10-24T01:25:11+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "uneven-loop",
+   "task": "P1UL01_ping clear daily and glitch",
+   "since": "2026-10-24T01:23:14+00:00",
+   "activity": "2026-10-24T01:23:29+00:00",
    "commit": null
   },
   {
@@ -70,14 +86,30 @@
    "since": null,
    "activity": null,
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P2RV11_review honest sign the draw",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P2RV13_review the apprentice mint",
+   "since": null,
+   "activity": null,
+   "commit": null
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 2,
+ "claudeWorkers": 6,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 222,
-  "usdEst": 799.2,
+  "runs": 223,
+  "usdEst": 802.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -2172,8 +2204,8 @@
    "title": "Clay Clock",
    "line": "Press clay jars in the right order.",
    "url": "https://chenhsieh.github.io/clay-clock/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "A goal and a story, and a better drawn figure under the clay",
    "shelfNote": "",
@@ -2196,20 +2228,6 @@
     "totalUsdEst": 32.82
    },
    "tasks": [
-    {
-     "title": "P1CK01_core design pass depth",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Clay Clock: a game-design pass to find the real decision, measured before any build, because tapping the soonest-drying slot is not a game.",
-     "since": "2026-10-24T00:39:49+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1CK05_one record strings",
      "state": "queued",
@@ -2307,11 +2325,25 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Nothing changes on screen yet: measured why Clay Clock feels shallow. A spreading plan (jars on slots that do not touch, each pressed twice, whatever dries first) reaches par on 82% of 200 generated tablets. Of 13 rule..."
+    },
+    {
+     "title": "P1SD14_studio standard clay clock",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "Fix share preview, logo and share text",
+     "since": "2026-10-21T16:22:39+00:00",
+     "done": "2026-10-21T16:22:39+00:00",
+     "reviewed": false,
+     "minutes": 20,
+     "tokens": 154194,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "feat: show Clay Clock’s first tablet in link previews"
     }
    ],
    "taskCounts": {
     "queued": 5,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
     "done": 5
    },
@@ -11466,8 +11498,8 @@
    "title": "Local Hero",
    "line": "Find the stretch two DNA strings share, then bank it.",
    "url": "https://chenhsieh.github.io/local-hero/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
@@ -11476,7 +11508,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-08-20T15:58:51+00:00",
-   "lastChange": "2026-10-24T00:36:48+00:00",
+   "lastChange": "2026-10-24T01:24:34+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -11491,11 +11523,11 @@
    },
    "tasks": [
     {
-     "title": "P1LH00_function keys and how to play",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Local Hero: the F1, F2, F10 labels must work or go; How to play becomes visual; the Why page shrinks.",
-     "since": "2026-10-24T00:36:48+00:00",
+     "title": "P1LH01_merge or separate design",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Align Hero and Local Hero: are they really two games; a measured recommendation to merge or to separate with a collection.",
+     "since": "2026-10-24T01:24:34+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -11505,10 +11537,10 @@
      "result": ""
     },
     {
-     "title": "P1LH01_merge or separate design",
+     "title": "P1LH00_function keys and how to play",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Align Hero and Local Hero: are they really two games; a measured recommendation to merge or to separate with a collection.",
+     "plan": "Local Hero: the F1, F2, F10 labels must work or go; How to play becomes visual; the Why page shrinks.",
      "since": "2026-10-24T00:36:48+00:00",
      "done": null,
      "reviewed": false,
@@ -11548,8 +11580,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
@@ -25392,7 +25424,7 @@
    ]
   },
   {
-   "nextTask": "Uneven Loop: make the ping matter and clear...",
+   "nextTask": null,
    "costTotalUsd": 50.62,
    "latestChange": {
     "text": "P1UL00 How to play: 2 pages explain the loop and the pin, zh too, live",
@@ -25412,8 +25444,8 @@
    "title": "Uneven Loop",
    "line": "Step through frames and return to the start.",
    "url": "https://chenhsieh.github.io/uneven-loop/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Clarify the loop mechanism and let the sequencer make music",
    "shelfNote": "",
@@ -25422,7 +25454,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-15T03:56:45+00:00",
-   "lastChange": "2026-10-24T00:36:48+00:00",
+   "lastChange": "2026-10-24T01:23:29+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -25438,10 +25470,10 @@
    "tasks": [
     {
      "title": "P1UL01_ping clear daily and glitch",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Uneven Loop: make the ping matter and clear, fix the level-6 glitch, and decide on a daily.",
-     "since": "2026-10-24T00:36:48+00:00",
+     "since": "2026-10-24T01:23:14+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -25508,8 +25540,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 4
    },
@@ -25837,7 +25869,7 @@
    ]
   },
   {
-   "nextTask": "Clean Features: back to the core stage: why...",
+   "nextTask": null,
    "costTotalUsd": 58.46,
    "latestChange": {
     "text": "feat: teach the dish through a playable first minute",
@@ -25857,8 +25889,8 @@
    "title": "What the Dish Sees",
    "line": "Label each colony with the one shape it sees by placing.",
    "url": "https://chenhsieh.github.io/clean-features/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Find the playable frame for the latent-space game: a clear",
    "shelfNote": "",
@@ -25867,7 +25899,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-24T00:24:14+00:00",
+   "lastChange": "2026-10-24T01:23:23+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -25883,10 +25915,10 @@
    "tasks": [
     {
      "title": "P1CF00_core and story reset",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Clean Features: back to the core stage: why the player cares, what makes a neuron fire, and rules shown before the first move.",
-     "since": "2026-10-24T00:24:14+00:00",
+     "since": "2026-10-24T01:23:13+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -25995,8 +26027,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 9
    },
@@ -26418,7 +26450,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-16T00:28:34+00:00",
-   "lastChange": "2026-10-24T01:22:19+00:00",
+   "lastChange": "2026-10-24T01:25:11+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 3,
