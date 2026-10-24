@@ -1,12 +1,12 @@
 {
- "generated": 1792852858,
+ "generated": 1792853426,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
-  "lanesBusy": 0,
+  "lanesBusy": 1,
   "ready": 0,
-  "waiting": 2,
-  "queued": 2,
-  "running": 0,
+  "waiting": 1,
+  "queued": 1,
+  "running": 1,
   "done24h": 27,
   "modelsQueued": {
    "deepseek-v4-flash": 2
@@ -91,21 +91,23 @@
  },
  "tasks": [
   {
-   "id": "P1TE02_room-warm-cold-rule",
-   "request": "Think an Elephant: the room chapter gets its own rule, warm or cold instead of words",
+   "id": "P1TE03_room-strings",
+   "request": "Think an Elephant: words for the warm/cold room in both languages",
    "game": "Think Elephant",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P1TE02_room-warm-cold-rule"
+   ],
    "priority": null,
    "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
    "state": "running",
-   "at": 1792794950,
-   "created": 1792794950
+   "at": 1792794972,
+   "created": 1792794972
   },
   {
    "id": "P1CC37_incubator-endless-nights",
@@ -1628,27 +1630,6 @@
     "P1MM05_marble-mechanisms-act-three"
    ],
    "created": 1792838733
-  },
-  {
-   "id": "P1TE03_room-strings",
-   "request": "Think an Elephant: words for the warm/cold room in both languages",
-   "game": "Think Elephant",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1TE02_room-warm-cold-rule"
-   ],
-   "priority": null,
-   "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1TE02_room-warm-cold-rule"
-   ],
-   "created": 1792794972
   },
   {
    "id": "P1TE04_room-tests",
