@@ -1,5 +1,5 @@
 {
- "generated": 1792841774,
+ "generated": 1792841933,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -91,9 +91,9 @@
  },
  "tasks": [
   {
-   "id": "P1MC02_clients-levels-and-daily",
-   "request": "Makeshift Chair 3D: eight clients with a requirement, and a daily junk pile",
-   "game": "Makeshift Chair",
+   "id": "P2SG00_sockglass-levels-need-a-choice",
+   "request": "Sockglass: rework levels where the obvious placement already wins",
+   "game": "Sockglass",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
@@ -101,13 +101,30 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P1MC01_parts-library-and-snapping"
+    "P2RV18_review-sockglass-and-peony-dream"
    ],
    "priority": "P1",
-   "why": "A published photo series of broken street chairs repaired with scraps, rope, bricks and tape.",
+   "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
    "state": "running",
-   "at": 1792834238,
-   "created": 1792834238
+   "at": 1792837763,
+   "created": 1792837763
+  },
+  {
+   "id": "P1CD02_night-desk-visual-build",
+   "request": "Checking Desk: build the night-shift desk look (photo desk, squared-paper proofs, sharp at phone resolution)",
+   "game": "Checking Desk",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "An essay on cheap AI output and a flood of machine-made maths papers that experts must check at their own cost.",
+   "state": "running",
+   "at": 1792832513,
+   "created": 1792832513
   },
   {
    "id": "P1CB12_photo-kitchens-visual-build",
@@ -257,6 +274,44 @@
    "created": 1792793463
   },
   {
+   "id": "P2MC03_share-and-sound",
+   "request": "Makeshift Chair 3D: share line and physical sounds",
+   "game": "Makeshift Chair",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1MC02_clients-levels-and-daily"
+   ],
+   "priority": "P1",
+   "why": "A published photo series of broken street chairs repaired with scraps, rope, bricks and tape.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792834242
+  },
+  {
+   "id": "P2MC04_visual-round-clay",
+   "request": "Makeshift Chair 3D: the visual round (soft clay toy, faceless sitter)",
+   "game": "Makeshift Chair",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1MC02_clients-levels-and-daily"
+   ],
+   "priority": "P1",
+   "why": "A published photo series of broken street chairs repaired with scraps, rope, bricks and tape.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792834247
+  },
+  {
    "id": "P2PD02_peony-dream-small-phone-fit",
    "request": "Peony Dream: fit board, sleeper and ink stone on a small phone; result card text clear",
    "game": "Peony Dream",
@@ -271,25 +326,6 @@
    ],
    "priority": "P1",
    "why": "The classical play The Peony Pavilion (1598) and a saved essay note on love found in a dream.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792837763
-  },
-  {
-   "id": "P2SG00_sockglass-levels-need-a-choice",
-   "request": "Sockglass: rework levels where the obvious placement already wins",
-   "game": "Sockglass",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2RV18_review-sockglass-and-peony-dream"
-   ],
-   "priority": "P1",
-   "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
    "state": "ready",
    "waitingOn": [],
    "created": 1792837763
@@ -327,23 +363,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792810482
-  },
-  {
-   "id": "P1CD02_night-desk-visual-build",
-   "request": "Checking Desk: build the night-shift desk look (photo desk, squared-paper proofs, sharp at phone resolution)",
-   "game": "Checking Desk",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "An essay on cheap AI output and a flood of machine-made maths papers that experts must check at their own cost.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792832513
   },
   {
    "id": "P1CK02_one-record-rules-and-bots",
@@ -593,6 +612,26 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P1AX12_kit-new-rule-and-short-screen-fit",
+   "request": "Play kit: new-rule note and small phones keep the board and Undo on the first screen",
+   "game": "Studio",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2RV19_rereview-honest-sign-the-draw-mint"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792841673,
+   "estPercentOfWeek": 0.25
+  },
+  {
    "id": "P1BD08_needs-you-links-and-archived-card",
    "request": "Board",
    "game": "Studio",
@@ -792,23 +831,6 @@
    "created": 1792805901
   },
   {
-   "id": "P2RV19_rereview-honest-sign-the-draw-mint",
-   "request": "Re-review Honest Sign, The Draw and Mint after their fixes",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792838876
-  },
-  {
    "id": "P2SBL00_scribes-blotter",
    "request": "The Scribe's Blotter visual round",
    "game": "Scribes Blotter",
@@ -985,48 +1007,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P2MC03_share-and-sound",
-   "request": "Makeshift Chair 3D: share line and physical sounds",
-   "game": "Makeshift Chair",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1MC02_clients-levels-and-daily"
-   ],
-   "priority": "P1",
-   "why": "A published photo series of broken street chairs repaired with scraps, rope, bricks and tape.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1MC02_clients-levels-and-daily"
-   ],
-   "created": 1792834242
-  },
-  {
-   "id": "P2MC04_visual-round-clay",
-   "request": "Makeshift Chair 3D: the visual round (soft clay toy, faceless sitter)",
-   "game": "Makeshift Chair",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1MC02_clients-levels-and-daily"
-   ],
-   "priority": "P1",
-   "why": "A published photo series of broken street chairs repaired with scraps, rope, bricks and tape.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1MC02_clients-levels-and-daily"
-   ],
-   "created": 1792834247
-  },
-  {
    "id": "P2PP04_pinch-points-visual-round-design",
    "request": "Pinch Points: visual round with the taste spin, three looks and a pick",
    "game": "Pinch Points",
@@ -1195,28 +1175,6 @@
     "P3OR45_herbal-pages-stay-open-logic"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P1AX12_kit-new-rule-and-short-screen-fit",
-   "request": "Play kit: new-rule note and small phones keep the board and Undo on the first screen",
-   "game": "Studio",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2RV19_rereview-honest-sign-the-draw-mint"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2RV19_rereview-honest-sign-the-draw-mint"
-   ],
-   "created": 1792841673,
    "estPercentOfWeek": 0.25
   },
   {
@@ -2349,6 +2307,25 @@
    "created": 1792837372
   },
   {
+   "id": "P1MC02_clients-levels-and-daily",
+   "request": "Makeshift Chair 3D: eight clients with a requirement, and a daily junk pile",
+   "game": "Makeshift Chair",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1MC01_parts-library-and-snapping"
+   ],
+   "priority": "P1",
+   "why": "A published photo series of broken street chairs repaired with scraps, rope, bricks and tape.",
+   "state": "done",
+   "at": 1792834238,
+   "created": 1792834238
+  },
+  {
    "id": "P1MG00_preview-before-commit-and-why-it-fails",
    "request": "Mushroom Gaps (#68, P1): show what a move will do before committing, and why it sometimes does not work.",
    "game": "Mushroom at the End",
@@ -3414,6 +3391,23 @@
    "state": "done",
    "at": 1792829306,
    "created": 1792829306
+  },
+  {
+   "id": "P2RV19_rereview-honest-sign-the-draw-mint",
+   "request": "Re-review Honest Sign, The Draw and Mint after their fixes",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792838876,
+   "created": 1792838876
   },
   {
    "id": "P2SGN00_honest-sign",

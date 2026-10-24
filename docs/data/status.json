@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T11:36:02+00:00",
+ "generated": "2026-10-24T11:38:20+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 91,
+    "queued": 89,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3640,
-    "estimateMinutes": 3640
+    "minutes": 3560,
+    "estimateMinutes": 3560
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
-    "doneToday": 21,
-    "minutes": 120,
-    "estimateMinutes": 60
+    "running": 2,
+    "doneToday": 22,
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
-  "queued": 92,
-  "running": 1,
-  "doneToday": 21,
+  "queued": 90,
+  "running": 2,
+  "doneToday": 22,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3760,
-  "estimatedFinish": "2026-10-27T00:16:02+00:00",
-  "estimateMinutes": 3640
+  "minutesRemaining": 3740,
+  "estimatedFinish": "2026-10-26T22:58:20+00:00",
+  "estimateMinutes": 3560
  },
  "lanes": [
   {
@@ -58,10 +58,18 @@
    "since": "2026-10-24T11:07:51+00:00",
    "activity": "2026-10-24T11:32:39+00:00",
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "sockglass",
+   "task": "P2SG00_sockglass levels need a choice",
+   "since": "2026-10-24T11:37:16+00:00",
+   "activity": "2026-10-24T11:37:36+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
   "runs": 270,
@@ -23076,7 +23084,7 @@
    ]
   },
   {
-   "nextTask": "Sockglass: rework levels where the obvious placement already...",
+   "nextTask": null,
    "costTotalUsd": 43.41,
    "latestChange": {
     "text": "feat: Sockglass story, tonight's window and its share text",
@@ -23106,8 +23114,8 @@
    "title": "Sockglass",
    "line": "Drag tissue-paper socks onto a dark bedroom window; where.",
    "url": "https://chenhsieh.github.io/sockglass/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Make sock sizes and counts readable and let the theme",
    "shelfNote": "",
@@ -23121,7 +23129,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T23:27:18+00:00",
-   "lastChange": "2026-10-24T10:29:23+00:00",
+   "lastChange": "2026-10-24T11:37:36+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -23137,10 +23145,10 @@
    "tasks": [
     {
      "title": "P2SG00_sockglass levels need a choice",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Sockglass: rework levels where the obvious placement already wins",
-     "since": "2026-10-24T10:29:23+00:00",
+     "since": "2026-10-24T11:37:16+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -23221,8 +23229,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 5
    },
