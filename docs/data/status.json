@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T15:43:56+00:00",
+ "generated": "2026-10-24T15:46:14+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 76,
+    "queued": 75,
     "running": 1,
     "doneToday": 0,
-    "minutes": 3080,
-    "estimateMinutes": 3080
+    "minutes": 3040,
+    "estimateMinutes": 3040
    },
    "Claude": {
     "queued": 1,
@@ -30,7 +30,7 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 77,
+  "queued": 76,
   "running": 3,
   "doneToday": 65,
   "lanes": {
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3260,
-  "estimatedFinish": "2026-10-26T19:03:56+00:00",
-  "estimateMinutes": 3080
+  "minutesRemaining": 3220,
+  "estimatedFinish": "2026-10-26T18:26:14+00:00",
+  "estimateMinutes": 3040
  },
  "lanes": [
   {
@@ -58,9 +58,9 @@
   {
    "worker": "Claude",
    "game": "clay-clock",
-   "task": "P1CK05_one record strings",
-   "since": "2026-10-24T15:39:53+00:00",
-   "activity": "2026-10-24T15:43:55+00:00",
+   "task": "P1CK06_one record tests and publish",
+   "since": "2026-10-24T15:44:03+00:00",
+   "activity": "2026-10-24T15:44:10+00:00",
    "commit": null
   },
   {
@@ -76,8 +76,8 @@
  "claudeWorkers": 2,
  "apiSpentUsd": 311.69,
  "claudeInSession": {
-  "runs": 279,
-  "usdEst": 1004.4,
+  "runs": 280,
+  "usdEst": 1008.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -127,7 +127,7 @@
   },
   {
    "day": "2026-10-24",
-   "changes": 21
+   "changes": 22
   }
  ],
  "houseRules": 25,
@@ -2406,11 +2406,11 @@
    ]
   },
   {
-   "nextTask": "Clay Clock: one-record tests, then the single publish",
-   "costTotalUsd": 47.22,
+   "nextTask": null,
+   "costTotalUsd": 50.82,
    "latestChange": {
-    "text": "P1CK04: clay joins, split outline + reason, marks against par, four-step first minute...",
-    "at": "2026-10-24T15:39:53+00:00"
+    "text": "P1CK05: one-record strings in en and zh, prompts, how-to line, README;",
+    "at": "2026-10-24T15:44:03+00:00"
    },
    "promo": {
     "files": {
@@ -2429,7 +2429,7 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "one record strings",
+   "waitingOn": "one record tests and publish",
    "id": "clay-clock",
    "number": 42,
    "repo": "clay-clock",
@@ -2455,26 +2455,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T04:15:52+00:00",
-   "lastChange": "2026-10-24T15:43:55+00:00",
+   "lastChange": "2026-10-24T15:44:10+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 5,
+    "claudeRuns": 6,
     "apiRuns": 1,
     "codexTokens": 348238,
     "codexUsdEst": 0.42,
-    "claudeUsdEst": 18.0,
+    "claudeUsdEst": 21.6,
     "earlierRounds": 8,
     "earlierUsdEst": 28.8,
-    "totalUsdEst": 47.22
+    "totalUsdEst": 50.82
    },
    "tasks": [
     {
-     "title": "P1CK05_one record strings",
+     "title": "P1CK06_one record tests and publish",
      "state": "running",
      "worker": "Claude",
-     "plan": "Clay Clock: en and zh-Hant lines for one record",
-     "since": "2026-10-24T15:39:53+00:00",
+     "plan": "Clay Clock: one-record tests, then the single publish",
+     "since": "2026-10-24T15:44:03+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2484,18 +2484,18 @@
      "result": ""
     },
     {
-     "title": "P1CK06_one record tests and publish",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Clay Clock: one-record tests, then the single publish",
-     "since": "2026-10-24T01:21:53+00:00",
-     "done": null,
+     "title": "P1CK05_one record strings",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Clay Clock: en and zh-Hant lines for one record",
+     "since": "2026-10-24T01:22:16+00:00",
+     "done": "2026-10-24T01:22:16+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1CK05 Clay Clock: one record, strings."
     },
     {
      "title": "P1CK02_one record rules and bots",
@@ -2583,15 +2583,21 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 8
+    "done": 9
    },
    "verdict": null,
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T15:44:03+00:00",
+     "ok": true,
+     "note": "P1CK05: one-record strings in en and zh, prompts, how-to line, README;",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T15:39:53+00:00",
      "ok": true,
@@ -2657,12 +2663,6 @@
      "ok": true,
      "note": "feat: write harbour orders before the clay sets",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T02:24:29+00:00",
-     "ok": true,
-     "note": "scribe brief + build B2v",
-     "source": "board note"
     }
    ]
   },
