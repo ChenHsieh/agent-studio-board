@@ -1,5 +1,5 @@
 {
- "generated": 1792880289,
+ "generated": 1792880433,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -89,23 +89,6 @@
  },
  "tasks": [
   {
-   "id": "P1LW05_fix-lit-target-refused",
-   "request": "P1LW05_fix lit target refused",
-   "game": "The Lot Waits",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "fix",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
-   "state": "running",
-   "at": 1792876044,
-   "created": 1792876044
-  },
-  {
    "id": "P1FS01_one-screen-kit-layout",
    "request": "P1FS01_one screen kit layout",
    "game": "Studio",
@@ -140,6 +123,25 @@
    "state": "running",
    "at": 1792856248,
    "created": 1792856248
+  },
+  {
+   "id": "P2NM01_ship-name-fixes",
+   "request": "Name audit: merge and publish the display-name fixes",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "fix",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P3OR66_name-hub-titles"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1792795442,
+   "created": 1792795442
   },
   {
    "id": "P1CF04_marks-and-life-bar-look",
@@ -304,6 +306,26 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792810482
+  },
+  {
+   "id": "P1LW02_lot-waits-day-strip-and-trust",
+   "request": "The Lot Waits: a seven-day strip, each lot's good days marked under it, and a trust number that moves",
+   "game": "The Lot Waits",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1LW05_fix-lit-target-refused"
+   ],
+   "priority": "P2",
+   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792862528,
+   "estPercentOfWeek": 28.02
   },
   {
    "id": "P1NL03_daily-from-the-hard-bank",
@@ -675,25 +697,6 @@
    "created": 1792805044
   },
   {
-   "id": "P2NM01_ship-name-fixes",
-   "request": "Name audit: merge and publish the display-name fixes",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "medium",
-   "kind": "fix",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P3OR66_name-hub-titles"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792795442
-  },
-  {
    "id": "P2PF01_board-portfolio-view",
    "request": "A Portfolio view on the studio board: how many ideas and games sit in each lane against its cap, and what gets built next",
    "game": "Studio",
@@ -907,28 +910,6 @@
     "P1PP03_pinch-points-strategy-card-and-daily"
    ],
    "created": 1792825169
-  },
-  {
-   "id": "P1LW02_lot-waits-day-strip-and-trust",
-   "request": "The Lot Waits: a seven-day strip, each lot's good days marked under it, and a trust number that moves",
-   "game": "The Lot Waits",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1LW05_fix-lit-target-refused"
-   ],
-   "priority": "P2",
-   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1LW05_fix-lit-target-refused"
-   ],
-   "created": 1792862528,
-   "estPercentOfWeek": 28.02
   },
   {
    "id": "P1LW03_lot-waits-first-minute-v2",
@@ -1813,6 +1794,23 @@
    "at": 1792876045,
    "created": 1792876045,
    "estPercentOfWeek": 28.02
+  },
+  {
+   "id": "P1LW05_fix-lit-target-refused",
+   "request": "P1LW05_fix lit target refused",
+   "game": "The Lot Waits",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "fix",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
+   "state": "done",
+   "at": 1792876044,
+   "created": 1792876044
   },
   {
    "id": "P1FS00_one-screen-audit",
