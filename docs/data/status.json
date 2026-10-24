@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T16:16:40+00:00",
+ "generated": "2026-10-24T16:19:18+00:00",
  "ops": {
   "count": 7,
   "notes": [
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 77,
+    "queued": 76,
     "running": 1,
-    "doneToday": 0,
-    "minutes": 3120,
-    "estimateMinutes": 3120
+    "doneToday": 1,
+    "minutes": 3080,
+    "estimateMinutes": 3080
    },
    "Claude": {
     "queued": 1,
@@ -34,9 +34,9 @@
     "estimateMinutes": 120
    }
   },
-  "queued": 78,
+  "queued": 77,
   "running": 4,
-  "doneToday": 65,
+  "doneToday": 66,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,19 +46,11 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3360,
-  "estimatedFinish": "2026-10-26T20:16:40+00:00",
-  "estimateMinutes": 3120
+  "minutesRemaining": 3320,
+  "estimatedFinish": "2026-10-26T19:39:18+00:00",
+  "estimateMinutes": 3080
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "play-template",
-   "task": "P1AX12_kit new rule and short screen fit",
-   "since": null,
-   "activity": null,
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "colony-count",
@@ -66,6 +58,17 @@
    "since": "2026-10-24T16:05:46+00:00",
    "activity": "2026-10-24T16:08:28+00:00",
    "commit": null
+  },
+  {
+   "worker": "Codex",
+   "game": "lot-waits",
+   "task": "P1LW01_lot waits rules v2 and levels",
+   "since": "2026-10-24T16:17:34+00:00",
+   "activity": "2026-10-24T16:19:13+00:00",
+   "commit": {
+    "at": "2026-10-24T16:18:21+00:00",
+    "subject": "Merge remote-tracking branch 'origin/chen-or-p3or72-lot-waits-words-file' into chen-cx-p1lw01-lot-waits-rules-v2-and-levels"
+   }
   },
   {
    "worker": "Claude",
@@ -139,7 +142,7 @@
   },
   {
    "day": "2026-10-24",
-   "changes": 27
+   "changes": 28
   }
  ],
  "houseRules": 25,
@@ -2419,7 +2422,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 54.42,
+   "costTotalUsd": 58.02,
    "latestChange": {
     "text": "P1CK06: one record published (split record void, joins, marks of par, re-cut tablets 1-9,...",
     "at": "2026-10-24T15:53:42+00:00"
@@ -2476,9 +2479,9 @@
     "codexTokens": 348238,
     "codexUsdEst": 0.42,
     "claudeUsdEst": 25.2,
-    "earlierRounds": 8,
-    "earlierUsdEst": 28.8,
-    "totalUsdEst": 54.42
+    "earlierRounds": 9,
+    "earlierUsdEst": 32.4,
+    "totalUsdEst": 58.02
    },
    "tasks": [
     {
@@ -2611,6 +2614,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-24T15:51:13+00:00",
+     "ok": true,
+     "note": "feat: one order is one record, so the marks must touch",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-24T15:44:03+00:00",
      "ok": true,
      "note": "P1CK05: one-record strings in en and zh, prompts, how-to line, README;",
@@ -2669,12 +2678,6 @@
      "ok": true,
      "note": "feat: show Clay Clock’s first tablet in link previews",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T05:08:43+00:00",
-     "ok": true,
-     "note": "feat: write harbour orders before the clay sets",
-     "source": "board note"
     }
    ]
   },
@@ -25703,7 +25706,7 @@
    "title": "The Lot Waits",
    "line": "A week at a shrine side table: give each lot to its visitor on the right day or keep it in a two-slot drawer.",
    "url": "https://chenhsieh.github.io/lot-waits/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "A week at a shrine side table: give each lot to its visitor on the right day or",
@@ -25718,7 +25721,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:13:02+00:00",
-   "lastChange": "2026-10-24T06:54:09+00:00",
+   "lastChange": "2026-10-24T16:19:13+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -25733,25 +25736,28 @@
    },
    "tasks": [
     {
-     "title": "P1LW03_lot waits first minute v2",
-     "state": "queued",
+     "title": "P1LW01_lot waits rules v2 and levels",
+     "state": "running",
      "worker": "Codex",
-     "plan": "The Lot Waits: a new first minute that shows both costs in three steps",
-     "since": "2026-10-24T06:54:09+00:00",
+     "plan": "The Lot Waits: new rules (two good days, a cost on both choices) and nine measured levels",
+     "since": "2026-10-24T16:17:34+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-24T16:18:21+00:00",
+      "subject": "Merge remote-tracking branch 'origin/chen-or-p3or72-lot-waits-words-file' into chen-cx-p1lw01-lot-waits-rules-v2-and-levels"
+     },
      "result": ""
     },
     {
-     "title": "P1LW01_lot waits rules v2 and levels",
+     "title": "P1LW03_lot waits first minute v2",
      "state": "queued",
      "worker": "Codex",
-     "plan": "The Lot Waits: new rules (two good days, a cost on both choices) and nine measured levels",
-     "since": "2026-10-24T06:54:04+00:00",
+     "plan": "The Lot Waits: a new first minute that shows both costs in three steps",
+     "since": "2026-10-24T06:54:09+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -25818,8 +25824,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
