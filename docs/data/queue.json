@@ -1,5 +1,5 @@
 {
- "generated": 1792810110,
+ "generated": 1792810462,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -7,7 +7,7 @@
   "waiting": 2,
   "queued": 2,
   "running": 0,
-  "done24h": 33,
+  "done24h": 32,
   "modelsQueued": {
    "deepseek-v4-flash": 2
   },
@@ -83,7 +83,7 @@
   "codexOut": false,
   "converted": 0,
   "convertedRunning": 0,
-  "claudeWorkers": 1,
+  "claudeWorkers": 0,
   "claudeWorkerCap": 3,
   "handedBack": 0,
   "lastHandBack": null,
@@ -162,16 +162,19 @@
    "created": 1792807735
   },
   {
-   "id": "P1UX00_board-checklist-data",
-   "request": "Board: a per-game checklist (story, first minute, accessibility, credits, saves, preview) with yes, no or not checked",
+   "id": "P1UX02_one-state-per-game",
+   "request": "Board: one clear state per game, with how long it has been there",
    "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
-   "effort": "medium",
+   "effort": "high",
    "kind": "build",
    "size": "studio",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P1BD07_game-numbers-on-the-board",
+    "P1BD05_archived-tier-for-time-limited-games"
+   ],
    "priority": null,
    "why": "",
    "state": "running",
@@ -230,6 +233,57 @@
    "created": 1792808770
   },
   {
+   "id": "P1GX00_newspaper-share-daily-and-placing",
+   "request": "Grass Crossword (#86): easier to place words, one Share button, a daily that is a new puzzle each day, and the link preview back.",
+   "game": "Grass Crossword",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A conceptual artwork from 2002: a newspaper crossword with every square green and every answer written as GRASS.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792810461
+  },
+  {
+   "id": "P1GX01_visual-round-design",
+   "request": "Grass Crossword: a newspaper crossword with grass growing through it: three mock looks with the taste spin.",
+   "game": "Grass Crossword",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A conceptual artwork from 2002: a newspaper crossword with every square green and every answer written as GRASS.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792810461
+  },
+  {
+   "id": "P1PD01_lag-stuck-drag-and-dream-link",
+   "request": "Peony Dream (#99): no lag when dragging, no stuck drag when the pointer leaves the canvas, and a clear link between the fold and the dream.",
+   "game": "Peony Dream",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "The classical play The Peony Pavilion (1598) and a saved essay note on love found in a dream.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792810404
+  },
+  {
    "id": "P1RN45_tap-label-beside-picture",
    "request": "move the How to play tap label beside the picture",
    "game": "阿嬤讀得出來",
@@ -262,6 +316,23 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792802208
+  },
+  {
+   "id": "P1SK00_story-daily-and-share",
+   "request": "Sockglass (#73): a story, a daily generated level, and a share line with emoji and a link.",
+   "game": "Sockglass",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792810411
   },
   {
    "id": "P1TH01_swap-budget-real-choice",
@@ -313,6 +384,23 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792793416
+  },
+  {
+   "id": "P3GH41_deploy-preview-fix",
+   "request": "Glasshouse (#3): re-run the failed deploy so the link preview works; nothing else.",
+   "game": "Glasshouse",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "low",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792810400
   },
   {
    "id": "P1CK02_one-record-rules-and-bots",
@@ -383,6 +471,40 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792808771
+  },
+  {
+   "id": "P2BN03_poem-core-research",
+   "request": "Blackout Notice (#130): a poet and a game designer find a core where the meaning of the words matters.",
+   "game": "Blackout Notice",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "A scruffy hand-lettered hiring post and a job ad written mostly as a list of what the company is not.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792810461
+  },
+  {
+   "id": "P2HK00_which-one-to-drop-clarity",
+   "request": "Hit or Kit (#126): make clear how to read the blank and which sample to drop.",
+   "game": "Hit or Kit",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "Open sample tubes and decide whether a microbiome finding is real or a reagent-kit contaminant: publish or drop.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792810408
   },
   {
    "id": "P2NC00_name-to-carry-data-inline",
@@ -538,6 +660,23 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P1BD08_needs-you-links-and-archived-card",
+   "request": "Board",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792810396
+  },
+  {
    "id": "P1LS01_lesson-check-before-gates",
    "request": "Lessons never light a move the game refuses: a quick local check before the gates",
    "game": "Studio",
@@ -572,8 +711,8 @@
    "created": 1792794950
   },
   {
-   "id": "P1UX02_one-state-per-game",
-   "request": "Board: one clear state per game, with how long it has been there",
+   "id": "P1UX03_checklist-view-with-range",
+   "request": "Board: Checklist view, pick a number range and see which games miss what",
    "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
@@ -583,7 +722,7 @@
    "estMinutes": null,
    "after": [
     "P1BD07_game-numbers-on-the-board",
-    "P1BD05_archived-tier-for-time-limited-games"
+    "P1UX00_board-checklist-data"
    ],
    "priority": null,
    "why": "",
@@ -757,6 +896,25 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792805668
+  },
+  {
+   "id": "P2UX04_release-check-sweep-all-games",
+   "request": "Run the release checks on every live game so the checklist has fewer unknowns",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1UX00_board-checklist-data"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792807366
   },
   {
    "id": "P2n86_round4-template-repos",
@@ -939,6 +1097,27 @@
     "P1EW01_visual-round-design"
    ],
    "created": 1792808075
+  },
+  {
+   "id": "P1GX02_visual-round-build",
+   "request": "Grass Crossword: build the chosen look.",
+   "game": "Grass Crossword",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1GX01_visual-round-design"
+   ],
+   "priority": "P1",
+   "why": "A conceptual artwork from 2002: a newspaper crossword with every square green and every answer written as GRASS.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1GX01_visual-round-design"
+   ],
+   "created": 1792810461
   },
   {
    "id": "P1TH02_change-marks-on-branches",
@@ -1194,28 +1373,6 @@
    "created": 1792795012
   },
   {
-   "id": "P1UX03_checklist-view-with-range",
-   "request": "Board: Checklist view, pick a number range and see which games miss what",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1BD07_game-numbers-on-the-board",
-    "P1UX00_board-checklist-data"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P1UX00_board-checklist-data"
-   ],
-   "created": 1792807366
-  },
-  {
    "id": "P1UX05_requests-file-and-planner",
    "request": "Board actions become requests the planner turns into tasks, with a cost check",
    "game": "Studio",
@@ -1234,8 +1391,7 @@
    "why": "",
    "state": "waiting",
    "waitingOn": [
-    "P1UX02_one-state-per-game",
-    "P1UX00_board-checklist-data"
+    "P1UX02_one-state-per-game"
    ],
    "created": 1792807366
   },
@@ -1304,27 +1460,6 @@
     "P1TE05_chapter-lessons"
    ],
    "created": 1792794991
-  },
-  {
-   "id": "P2UX04_release-check-sweep-all-games",
-   "request": "Run the release checks on every live game so the checklist has fewer unknowns",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "medium",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1UX00_board-checklist-data"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P1UX00_board-checklist-data"
-   ],
-   "created": 1792807366
   },
   {
    "id": "P2UX07_daily-brief-data",
@@ -2691,6 +2826,23 @@
    "state": "done",
    "at": 1792791285,
    "created": 1792791285
+  },
+  {
+   "id": "P1UX00_board-checklist-data",
+   "request": "Board: a per-game checklist (story, first minute, accessibility, credits, saves, preview) with yes, no or not checked",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792807366,
+   "created": 1792807366
   },
   {
    "id": "P2OR52_a11y-sweep-writes-release-results",
