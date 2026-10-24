@@ -1,5 +1,5 @@
 {
- "generated": 1792815739,
+ "generated": 1792815898,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -7,15 +7,21 @@
   "waiting": 2,
   "queued": 2,
   "running": 0,
-  "done24h": 15,
+  "done24h": 16,
   "modelsQueued": {
    "deepseek-v4-flash": 2
   },
   "spendTodayUsd": 0.0,
-  "runsToday": 0,
-  "runsTodayUnpriced": 0,
+  "runsToday": 1,
+  "runsTodayUnpriced": 1,
   "spendTotalUsd": 6.36,
   "recent": [
+   {
+    "id": "P3OR67_sync-kit-copies-looks-folder",
+    "request": "Template: tools/sync_kit.sh stops on docs/kit/looks because its cp has no -r.",
+    "model": "openai/gpt-4.1",
+    "at": 1792815750
+   },
    {
     "id": "P3OR65_name-biosteganography-title",
     "request": "Name audit: show one name for biosteganography everywhere",
@@ -69,12 +75,6 @@
     "request": "mirror-hold: a credits file that names every font, data source and code licence (cheap lane)",
     "model": "deepseek-v4-flash",
     "at": 1792791214
-   },
-   {
-    "id": "P3OR55_fold-guess-credits-page",
-    "request": "fold-guess: a credits file that names every font, data source and code licence (cheap lane)",
-    "model": "deepseek-v4-flash",
-    "at": 1792791214
    }
   ],
   "label": "estimate"
@@ -83,32 +83,13 @@
   "codexOut": true,
   "converted": 0,
   "convertedRunning": 0,
-  "claudeWorkers": 0,
+  "claudeWorkers": 1,
   "claudeWorkerCap": 3,
   "handedBack": 0,
   "lastHandBack": null,
   "lastHandBackN": null
  },
  "tasks": [
-  {
-   "id": "P1CF02_story-and-strings",
-   "request": "Clean Features: the seed library night shift story in every line, English and Traditional Chinese",
-   "game": "What the Dish Sees",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "medium",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1CF01_rules-and-levels-drop-cost"
-   ],
-   "priority": "P1",
-   "why": "An essay arguing neural network features are already clean, and a petri-dish video of something first taken for ordinary bacteria.",
-   "state": "running",
-   "at": 1792808595,
-   "created": 1792808595
-  },
   {
    "id": "P1AP01_story-bible-and-endings",
    "request": "The Apprentice (#152)",
@@ -122,9 +103,28 @@
    "after": [],
    "priority": "P1",
    "why": "",
-   "state": "ready",
-   "waitingOn": [],
+   "state": "running",
+   "at": 1792808610,
    "created": 1792808610
+  },
+  {
+   "id": "P1CF03_rule-first-lesson",
+   "request": "Clean Features: watch the rule first, then one guided look, then play",
+   "game": "What the Dish Sees",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1CF02_story-and-strings"
+   ],
+   "priority": "P1",
+   "why": "An essay arguing neural network features are already clean, and a petri-dish video of something first taken for ordinary bacteria.",
+   "state": "running",
+   "at": 1792805548,
+   "created": 1792805548
   },
   {
    "id": "P1CB11_hyperreal-visual-round",
@@ -987,27 +987,6 @@
    "created": 1792808610
   },
   {
-   "id": "P1CF03_rule-first-lesson",
-   "request": "Clean Features: watch the rule first, then one guided look, then play",
-   "game": "What the Dish Sees",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1CF02_story-and-strings"
-   ],
-   "priority": "P1",
-   "why": "An essay arguing neural network features are already clean, and a petri-dish video of something first taken for ordinary bacteria.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1CF02_story-and-strings"
-   ],
-   "created": 1792805548
-  },
-  {
    "id": "P1CF04_marks-and-life-bar-look",
    "request": "Clean Features: each picture shows its marks, the lit mark glows in the dish, a dish life bar",
    "game": "What the Dish Sees",
@@ -1796,6 +1775,25 @@
    "state": "done",
    "at": 1792805548,
    "created": 1792805548
+  },
+  {
+   "id": "P1CF02_story-and-strings",
+   "request": "Clean Features: the seed library night shift story in every line, English and Traditional Chinese",
+   "game": "What the Dish Sees",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1CF01_rules-and-levels-drop-cost"
+   ],
+   "priority": "P1",
+   "why": "An essay arguing neural network features are already clean, and a petri-dish video of something first taken for ordinary bacteria.",
+   "state": "done",
+   "at": 1792808595,
+   "created": 1792808595
   },
   {
    "id": "P1CY00_endless-always-solvable-and-overload-bar",
@@ -3217,6 +3215,23 @@
    "at": 1792798110,
    "created": 1792798110,
    "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P3OR67_sync-kit-copies-looks-folder",
+   "request": "Template: tools/sync_kit.sh stops on docs/kit/looks because its cp has no -r.",
+   "game": "Studio",
+   "route": "OpenRouter",
+   "model": "openai/gpt-4.1",
+   "effort": "default",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792815750,
+   "created": 1792815750
   }
  ]
 }

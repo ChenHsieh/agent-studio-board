@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T04:21:44+00:00",
+ "generated": "2026-10-24T04:24:31+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 84,
+    "queued": 82,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3360,
-    "estimateMinutes": 3360
+    "minutes": 3280,
+    "estimateMinutes": 3280
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
-    "doneToday": 0,
-    "minutes": 120,
-    "estimateMinutes": 60
+    "running": 2,
+    "doneToday": 1,
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
-  "queued": 85,
-  "running": 1,
-  "doneToday": 0,
+  "queued": 83,
+  "running": 2,
+  "doneToday": 1,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,26 +42,34 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3480,
-  "estimatedFinish": "2026-10-26T12:21:44+00:00",
-  "estimateMinutes": 3360
+  "minutesRemaining": 3460,
+  "estimatedFinish": "2026-10-26T11:04:31+00:00",
+  "estimateMinutes": 3280
  },
  "lanes": [
   {
    "worker": "Claude",
+   "game": "the-apprentice",
+   "task": "P1AP01_story bible and endings",
+   "since": "2026-10-24T04:23:22+00:00",
+   "activity": "2026-10-24T04:23:22+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
    "game": "clean-features",
-   "task": "P1CF02_story and strings",
-   "since": "2026-10-24T04:17:41+00:00",
-   "activity": "2026-10-24T04:20:37+00:00",
+   "task": "P1CF03_rule first lesson",
+   "since": "2026-10-24T04:24:07+00:00",
+   "activity": "2026-10-24T04:24:12+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 260,
-  "usdEst": 936.0,
+  "runs": 261,
+  "usdEst": 939.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -111,7 +119,7 @@
   },
   {
    "day": "2026-10-24",
-   "changes": 2
+   "changes": 3
   }
  ],
  "houseRules": 25,
@@ -24440,15 +24448,15 @@
     "reviseRound": 1,
     "daysInState": 1
    },
-   "waitingOn": "visual round design",
+   "waitingOn": "story bible and endings",
    "id": "the-apprentice",
    "number": 152,
    "repo": "the-apprentice",
    "title": "The Apprentice",
    "line": "",
    "url": "https://chenhsieh.github.io/the-apprentice/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "a teach-then-betrayed story with real potential; frame the story, the...",
    "shelfNote": "",
@@ -24462,7 +24470,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:02+00:00",
-   "lastChange": "2026-10-24T03:00:00+00:00",
+   "lastChange": "2026-10-24T04:23:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -24477,11 +24485,11 @@
    },
    "tasks": [
     {
-     "title": "P1AP02_visual round design",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "The Apprentice: three mock looks that carry the story's mood, then a build spec.",
-     "since": "2026-10-24T02:26:10+00:00",
+     "title": "P1AP01_story bible and endings",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "The Apprentice (#152): one clear world and tone, a reason to care about the inspectors, and endings you understand at a glance.",
+     "since": "2026-10-24T04:23:22+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -24491,11 +24499,11 @@
      "result": ""
     },
     {
-     "title": "P1AP01_story bible and endings",
+     "title": "P1AP02_visual round design",
      "state": "queued",
      "worker": "Codex",
-     "plan": "The Apprentice (#152): one clear world and tone, a reason to care about the inspectors, and endings you understand at a glance.",
-     "since": "2026-10-24T02:23:30+00:00",
+     "plan": "The Apprentice: three mock looks that carry the story's mood, then a build spec.",
+     "since": "2026-10-24T02:26:10+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -24548,8 +24556,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
@@ -28192,11 +28200,11 @@
    ]
   },
   {
-   "nextTask": "Clean Features: watch the rule first, then one...",
-   "costTotalUsd": 72.86,
+   "nextTask": "Clean Features: each picture shows its marks, the...",
+   "costTotalUsd": 76.46,
    "latestChange": {
-    "text": "P1CF01 drops: picture costs a drop per mark, score = drops left, new 12-level ladder,...",
-    "at": "2026-10-24T04:17:35+00:00"
+    "text": "P1CF02 seed-sorter story in card, How to play, win card (days), share line restored; live",
+    "at": "2026-10-24T04:24:07+00:00"
    },
    "promo": {
     "files": {
@@ -28215,7 +28223,7 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "story and strings",
+   "waitingOn": "rule first lesson",
    "id": "clean-features",
    "number": 96,
    "repo": "clean-features",
@@ -28236,40 +28244,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-24T04:20:37+00:00",
+   "lastChange": "2026-10-24T04:24:12+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
-    "claudeRuns": 6,
+    "claudeRuns": 7,
     "apiRuns": 1,
     "codexTokens": 719119,
     "codexUsdEst": 0.86,
-    "claudeUsdEst": 21.6,
+    "claudeUsdEst": 25.2,
     "earlierRounds": 14,
     "earlierUsdEst": 50.4,
-    "totalUsdEst": 72.86
+    "totalUsdEst": 76.46
    },
    "tasks": [
     {
-     "title": "P1CF02_story and strings",
+     "title": "P1CF03_rule first lesson",
      "state": "running",
      "worker": "Claude",
-     "plan": "Clean Features: the seed library night shift story in every line, English and Traditional Chinese",
-     "since": "2026-10-24T04:17:41+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P1CF03_rule first lesson",
-     "state": "queued",
-     "worker": "Codex",
      "plan": "Clean Features: watch the rule first, then one guided look, then play",
-     "since": "2026-10-24T01:32:28+00:00",
+     "since": "2026-10-24T04:24:07+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -28299,6 +28293,20 @@
      "plan": "Clean Features: tests for the reset and a stranger review",
      "since": "2026-10-24T01:32:28+00:00",
      "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1CF02_story and strings",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Clean Features: the seed library night shift story in every line, English and Traditional Chinese",
+     "since": "2026-10-24T02:23:15+00:00",
+     "done": "2026-10-24T02:23:15+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -28364,15 +28372,27 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
+    "queued": 2,
     "running": 1,
     "waitingDesign": 0,
-    "done": 11
+    "done": 12
    },
    "verdict": null,
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T04:24:07+00:00",
+     "ok": true,
+     "note": "P1CF02 seed-sorter story in card, How to play, win card (days), share line restored; live",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-24T04:22:30+00:00",
+     "ok": true,
+     "note": "feat: What the Dish Sees tells its story: the sorter starts at dawn and its eye is this dish",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-24T04:17:35+00:00",
      "ok": true,
@@ -28432,18 +28452,6 @@
      "ok": true,
      "note": "feat: the dish holds neurons, and every picture shows what it is made of",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-19T20:04:05+00:00",
-     "ok": true,
-     "note": "fix:",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-19T19:45:52+00:00",
-     "ok": false,
-     "note": "frame- published once; live 390x844 and 320x568 touch checks pass for paid evidence and progress, but the chapter cabinet is constrained by the inherited three-column map grid and needs a permitted follow-up publish",
-     "source": "board note"
     }
    ]
   },
