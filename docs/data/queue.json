@@ -1,5 +1,5 @@
 {
- "generated": 1792883777,
+ "generated": 1792883914,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -106,6 +106,26 @@
    "created": 1792810795
   },
   {
+   "id": "P1LW02_lot-waits-day-strip-and-trust",
+   "request": "The Lot Waits: a seven-day strip, each lot's good days marked under it, and a trust number that moves",
+   "game": "The Lot Waits",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1LW05_fix-lit-target-refused"
+   ],
+   "priority": "P2",
+   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
+   "state": "running",
+   "at": 1792883801,
+   "created": 1792883801,
+   "estPercentOfWeek": 214.68
+  },
+  {
    "id": "P1FS02_forager-one-screen",
    "request": "P1FS02_forager one screen",
    "game": "Studio",
@@ -123,23 +143,6 @@
    "state": "running",
    "at": 1792858516,
    "created": 1792858516
-  },
-  {
-   "id": "P1PL05_why-and-no-hub-rollout",
-   "request": "One scripted rollout puts 'Why this exists' in every game and removes every hub link and mention, repo by repo, checked live",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792856248,
-   "created": 1792856248
   },
   {
    "id": "P1CF05_reset-tests-and-review",
@@ -178,7 +181,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792825175,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P1RN45_tap-label-beside-picture",
@@ -359,7 +362,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792791317,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P2PS00_pigeon-salon-readable-board",
@@ -379,7 +382,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713005,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P2RO00_radish-omelette-colours-and-beats",
@@ -399,7 +402,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713431,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P2RS00_restored-blurry-neighbours-count",
@@ -419,7 +422,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792715918,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P3NY00_not-yet-a-real-choice",
@@ -439,7 +442,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713432,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P3OR45_herbal-pages-stay-open-logic",
@@ -457,7 +460,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792724295,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P2GG00_gallery-guess-save-migration-test",
@@ -492,7 +495,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792701959,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P1BD08_needs-you-links-and-archived-card",
@@ -637,6 +640,44 @@
    "created": 1792790639
   },
   {
+   "id": "P2PL04_no-hub-final-scan",
+   "request": "Final check: no game page names or links the hub.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "low",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1PL05_why-and-no-hub-rollout"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792856253
+  },
+  {
+   "id": "P2PL06_rollout-judgment-rows",
+   "request": "Finish the Why this exists rollout on the games whose own tests or page check stopped it",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1PL05_why-and-no-hub-rollout"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792883805
+  },
+  {
    "id": "P2RJT00_rumour-on-the-jetty",
    "request": "Rumour on the Jetty: the town fits a phone, door dots readable, the boat tap no longer counts as a whisper",
    "game": "Rumour On The Jetty",
@@ -764,7 +805,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792724493,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P1TH04_strings-and-tests",
@@ -807,7 +848,7 @@
     "P1AX12_kit-new-rule-and-short-screen-fit"
    ],
    "created": 1792841709,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P2PP04_pinch-points-visual-round-design",
@@ -850,7 +891,7 @@
     "P1LW02_lot-waits-day-strip-and-trust"
    ],
    "created": 1792862528,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P2HN00_herbal-pages-stay-open",
@@ -872,7 +913,7 @@
     "P3OR45_herbal-pages-stay-open-logic"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P1MM04_marble-act-two-look-and-lessons",
@@ -957,7 +998,7 @@
     "P1AX12_kit-new-rule-and-short-screen-fit"
    ],
    "created": 1792841689,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P2AX14_kit-fit-rollout-the-draw",
@@ -979,7 +1020,7 @@
     "P1AX12_kit-new-rule-and-short-screen-fit"
    ],
    "created": 1792841692,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P2AX16_kit-fit-rollout-rumour-on-the-jetty",
@@ -1001,7 +1042,7 @@
     "P1AX12_kit-new-rule-and-short-screen-fit"
    ],
    "created": 1792841701,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P2AX17_kit-fit-rollout-scribes-blotter",
@@ -1023,7 +1064,7 @@
     "P1AX12_kit-new-rule-and-short-screen-fit"
    ],
    "created": 1792841705,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P2FS04_one-screen-rollout-rest",
@@ -1066,7 +1107,7 @@
     "P3OR44_kit-win-hold-and-higher-is-better"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P2LW04_lot-waits-reset-review",
@@ -1088,27 +1129,6 @@
     "P1LW03_lot-waits-first-minute-v2"
    ],
    "created": 1792824844
-  },
-  {
-   "id": "P2PL04_no-hub-final-scan",
-   "request": "Final check: no game page names or links the hub.",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "low",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1PL05_why-and-no-hub-rollout"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P1PL05_why-and-no-hub-rollout"
-   ],
-   "created": 1792856253
   },
   {
    "id": "P2UX08_daily-brief-first-screen",
@@ -1198,7 +1218,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P2n88_watched-pot",
@@ -1220,7 +1240,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P2n89_round-table",
@@ -1242,7 +1262,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P2n90_iron-window-garden",
@@ -1264,7 +1284,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P2n91_still-a-heap",
@@ -1286,7 +1306,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P2n92_out-of-the-corner",
@@ -1308,7 +1328,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P2n93_one-umbrella",
@@ -1330,7 +1350,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P2n94_rolling-back",
@@ -1352,7 +1372,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P2n95_gold-star",
@@ -1374,7 +1394,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P2n96_ac-remote",
@@ -1396,7 +1416,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P2n97_review-coin-dumplings-and-watched-pot",
@@ -1575,7 +1595,7 @@
    "state": "done",
    "at": 1792876045,
    "created": 1792876045,
-   "estPercentOfWeek": 231.51
+   "estPercentOfWeek": 214.68
   },
   {
    "id": "P1LW05_fix-lit-target-refused",
@@ -1646,6 +1666,23 @@
    "state": "done",
    "at": 1792845775,
    "created": 1792845775
+  },
+  {
+   "id": "P1PL05_why-and-no-hub-rollout",
+   "request": "One scripted rollout puts 'Why this exists' in every game and removes every hub link and mention, repo by repo, checked live",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792856248,
+   "created": 1792856248
   },
   {
    "id": "P1TE07_touch-responsive-no-zoom",

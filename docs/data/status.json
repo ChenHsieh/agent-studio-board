@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-24T23:16:06+00:00",
+ "generated": "2026-10-24T23:18:23+00:00",
  "ops": {
-  "count": 62,
+  "count": 56,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 66,
+    "queued": 67,
     "running": 1,
     "doneToday": 2,
-    "minutes": 2680,
-    "estimateMinutes": 2680
+    "minutes": 2720,
+    "estimateMinutes": 2720
    },
    "Claude": {
     "queued": 1,
-    "running": 3,
-    "doneToday": 74,
-    "minutes": 240,
-    "estimateMinutes": 120
+    "running": 2,
+    "doneToday": 75,
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
-  "queued": 67,
-  "running": 4,
-  "doneToday": 76,
+  "queued": 68,
+  "running": 3,
+  "doneToday": 77,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2920,
-  "estimatedFinish": "2026-10-26T19:56:06+00:00",
-  "estimateMinutes": 2680
+  "minutesRemaining": 2900,
+  "estimatedFinish": "2026-10-26T20:38:23+00:00",
+  "estimateMinutes": 2720
  },
  "lanes": [
   {
@@ -63,16 +63,8 @@
    "worker": "Codex",
    "game": "lot-waits",
    "task": "P1LW02_lot waits day strip and trust",
-   "since": "2026-10-24T23:11:34+00:00",
-   "activity": "2026-10-24T23:11:22+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P1PL05_why and no hub rollout",
-   "since": null,
-   "activity": null,
+   "since": "2026-10-24T23:16:42+00:00",
+   "activity": "2026-10-24T23:17:59+00:00",
    "commit": null
   },
   {
@@ -85,7 +77,7 @@
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 3,
+ "claudeWorkers": 2,
  "apiSpentUsd": 317.01,
  "claudeInSession": {
   "runs": 287,
@@ -139,7 +131,7 @@
   },
   {
    "day": "2026-10-24",
-   "changes": 38
+   "changes": 39
   }
  ],
  "houseRules": 25,
@@ -25939,10 +25931,10 @@
   },
   {
    "nextTask": "The Lot Waits: a new first minute that...",
-   "costTotalUsd": 82.8,
+   "costTotalUsd": 86.4,
    "latestChange": {
     "text": "see",
-    "at": "2026-10-24T22:56:09+00:00"
+    "at": "2026-10-24T23:16:41+00:00"
    },
    "promo": {
     "files": {
@@ -25982,7 +25974,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:14:25+00:00",
-   "lastChange": "2026-10-24T23:11:22+00:00",
+   "lastChange": "2026-10-24T23:17:59+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -25991,9 +25983,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 14.4,
-    "earlierRounds": 19,
-    "earlierUsdEst": 68.4,
-    "totalUsdEst": 82.8
+    "earlierRounds": 20,
+    "earlierUsdEst": 72.0,
+    "totalUsdEst": 86.4
    },
    "tasks": [
     {
@@ -26001,7 +25993,7 @@
      "state": "running",
      "worker": "Codex",
      "plan": "The Lot Waits: a seven-day strip, each lot's good days marked under it, and a trust number that moves",
-     "since": "2026-10-24T23:11:34+00:00",
+     "since": "2026-10-24T23:16:42+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -26106,6 +26098,12 @@
    "inProgress": true,
    "history": [
     {
+     "at": "2026-10-24T23:16:41+00:00",
+     "ok": false,
+     "note": "see",
+     "source": "board note"
+    },
+    {
      "at": "2026-10-24T22:56:09+00:00",
      "ok": false,
      "note": "see",
@@ -26163,12 +26161,6 @@
      "at": "2026-10-24T07:00:12+00:00",
      "ok": true,
      "note": "P3OR72_lot-waits-words-file: WORKDIR",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T06:52:49+00:00",
-     "ok": true,
-     "note": "design: The Lot Waits core reset: two good days per lot, a visible cost on both choices, measured ladder, fewer words",
      "source": "main commit"
     }
    ]
