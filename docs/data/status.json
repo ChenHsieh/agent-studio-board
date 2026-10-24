@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T09:04:18+00:00",
+ "generated": "2026-10-24T09:06:39+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 77,
+    "queued": 76,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3080,
-    "estimateMinutes": 3080
+    "minutes": 3040,
+    "estimateMinutes": 3040
    },
    "Claude": {
     "queued": 1,
@@ -30,7 +30,7 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 78,
+  "queued": 77,
   "running": 2,
   "doneToday": 10,
   "lanes": {
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3260,
-  "estimatedFinish": "2026-10-26T12:24:18+00:00",
-  "estimateMinutes": 3080
+  "minutesRemaining": 3220,
+  "estimatedFinish": "2026-10-26T11:46:39+00:00",
+  "estimateMinutes": 3040
  },
  "lanes": [
   {
@@ -58,9 +58,9 @@
   {
    "worker": "Claude",
    "game": "grass-crossword",
-   "task": "P1GX00_newspaper share daily and placing",
-   "since": "2026-10-24T08:22:29+00:00",
-   "activity": "2026-10-24T09:02:02+00:00",
+   "task": "P1GX02_visual round build",
+   "since": "2026-10-24T09:06:16+00:00",
+   "activity": "2026-10-24T09:06:26+00:00",
    "commit": null
   }
  ],
@@ -68,8 +68,8 @@
  "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 268,
-  "usdEst": 964.8,
+  "runs": 269,
+  "usdEst": 968.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -119,7 +119,7 @@
   },
   {
    "day": "2026-10-24",
-   "changes": 10
+   "changes": 11
   }
  ],
  "houseRules": 25,
@@ -8909,11 +8909,11 @@
    ]
   },
   {
-   "nextTask": "Grass Crossword: build the chosen look",
-   "costTotalUsd": 59.12,
+   "nextTask": null,
+   "costTotalUsd": 62.72,
    "latestChange": {
-    "text": "design: Grass Crossword visual round: grass comes up through the newspaper; three papers,...",
-    "at": "2026-10-24T06:46:13+00:00"
+    "text": "P1GX00: one Share button, daily is a generated bed from a 120-bed pool (never a shipped...",
+    "at": "2026-10-24T09:06:03+00:00"
    },
    "promo": {
     "files": {
@@ -8953,40 +8953,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:41:42+00:00",
-   "lastChange": "2026-10-24T09:02:02+00:00",
+   "lastChange": "2026-10-24T09:06:26+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
-    "claudeRuns": 6,
+    "claudeRuns": 7,
     "apiRuns": 2,
     "codexTokens": 1267904,
     "codexUsdEst": 1.52,
-    "claudeUsdEst": 21.6,
+    "claudeUsdEst": 25.2,
     "earlierRounds": 10,
     "earlierUsdEst": 36.0,
-    "totalUsdEst": 59.12
+    "totalUsdEst": 62.72
    },
    "tasks": [
     {
-     "title": "P1GX00_newspaper share daily and placing",
+     "title": "P1GX02_visual round build",
      "state": "running",
      "worker": "Claude",
-     "plan": "Grass Crossword (#86): easier to place words, one Share button, a daily that is a new puzzle each day, and the link preview back.",
-     "since": "2026-10-24T08:22:29+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P1GX02_visual round build",
-     "state": "queued",
-     "worker": "Codex",
      "plan": "Grass Crossword: build the chosen look.",
-     "since": "2026-10-24T06:46:35+00:00",
+     "since": "2026-10-24T09:06:16+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -9008,6 +8994,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "OR LANE OK: Test: node -e \"const s=require('./docs/strings.json');const en=['A member of Poaceae','What cows eat all day','Mown at the weekend','Bamboo is one','Comes up between paving stones','Covers a football pitc"
+    },
+    {
+     "title": "P1GX00_newspaper share daily and placing",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Grass Crossword (#86): easier to place words, one Share button, a daily that is a new puzzle each day, and the link preview back.",
+     "since": "2026-10-24T02:54:21+00:00",
+     "done": "2026-10-24T02:54:21+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1GX00 Grass Crossword: share, daily, placing, link preview. Pushed to main , live bytes match (shell.js rules.js draw.js index.html daily_pool.js look.css og.png cmp-identical)."
     },
     {
      "title": "P1GX01_visual round design",
@@ -9081,10 +9081,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 14
+    "done": 15
    },
    "verdict": {
     "date": "2026-10-20",
@@ -9094,6 +9094,12 @@
    "needsYou": "The credit links the artist's Instagram profile because the exact post address is unknown. Suggest: keep the profile link until the post is found.",
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T09:06:03+00:00",
+     "ok": true,
+     "note": "P1GX00: one Share button, daily is a generated bed from a 120-bed pool (never a shipped level), tap shows ghost then Plant, Rotate, hint on levels 1-3; live",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T06:46:13+00:00",
      "ok": true,
@@ -9159,12 +9165,6 @@
      "ok": true,
      "note": "drag preview = drop, beds 14-25 real crosswords, local daily, own logo; live; harness greedy gate advisory",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-20T22:55:24+00:00",
-     "ok": true,
-     "note": "feat: grass family beds are real crosswords and a drag plants what it previews",
-     "source": "main commit"
     }
    ]
   },
