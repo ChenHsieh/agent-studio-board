@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T05:20:55+00:00",
+ "generated": "2026-10-24T05:23:16+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,39 +16,56 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 82,
+    "queued": 80,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3280,
-    "estimateMinutes": 3280
+    "minutes": 3200,
+    "estimateMinutes": 3200
    },
    "Claude": {
     "queued": 1,
-    "running": 0,
+    "running": 2,
     "doneToday": 1,
-    "minutes": 60,
-    "estimateMinutes": 60
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
-  "queued": 83,
-  "running": 0,
+  "queued": 81,
+  "running": 2,
   "doneToday": 1,
   "lanes": {
    "Codex": 1,
-   "Claude": 1
+   "Claude": 2
   },
   "laneCap": {
    "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3340,
-  "estimatedFinish": "2026-10-26T12:00:55+00:00",
-  "estimateMinutes": 3280
+  "minutesRemaining": 3380,
+  "estimatedFinish": "2026-10-26T10:43:16+00:00",
+  "estimateMinutes": 3200
  },
- "lanes": [],
+ "lanes": [
+  {
+   "worker": "Claude",
+   "game": "nobody-looking",
+   "task": "P1NL00_slide and swap feel and depth",
+   "since": "2026-10-24T05:23:00+00:00",
+   "activity": "2026-10-24T05:23:14+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "seal-carver",
+   "task": "P1SC00_illegal move w2h3 cannot start",
+   "since": "2026-10-24T05:22:55+00:00",
+   "activity": "2026-10-24T05:23:13+00:00",
+   "commit": null
+  }
+ ],
  "codexLanes": 0,
- "claudeWorkers": 0,
+ "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
   "runs": 262,
@@ -15459,15 +15476,15 @@
     "reviseRound": 1,
     "daysInState": 1
    },
-   "waitingOn": "visual round design",
+   "waitingOn": "slide and swap feel and depth",
    "id": "nobody-looking",
    "number": 127,
    "repo": "nobody-looking",
    "title": "Nobody Looking",
    "line": "Twelve shelves of eyes and mouths: slide pieces until no face is left.",
    "url": "https://chenhsieh.github.io/nobody-looking/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Slide eyes and mouths until no face is left; placeholder shapes, 12 shelves",
    "shelfNote": "",
@@ -15480,7 +15497,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T17:56:06+00:00",
-   "lastChange": "2026-10-24T02:26:11+00:00",
+   "lastChange": "2026-10-24T05:23:14+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -15495,11 +15512,11 @@
    },
    "tasks": [
     {
-     "title": "P1NL01_visual round design",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Nobody Looking: a workable visual round: three mock looks, then a build spec.",
-     "since": "2026-10-24T02:26:11+00:00",
+     "title": "P1NL00_slide and swap feel and depth",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Nobody Looking (#127): sliding and swapping works smoothly with a finger, and a check of how deep the game really is.",
+     "since": "2026-10-24T05:23:00+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -15509,11 +15526,11 @@
      "result": ""
     },
     {
-     "title": "P1NL00_slide and swap feel and depth",
+     "title": "P1NL01_visual round design",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Nobody Looking (#127): sliding and swapping works smoothly with a finger, and a check of how deep the game really is.",
-     "since": "2026-10-24T02:25:45+00:00",
+     "plan": "Nobody Looking: a workable visual round: three mock looks, then a build spec.",
+     "since": "2026-10-24T02:26:11+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -15608,8 +15625,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 6
    },
@@ -20461,7 +20478,7 @@
    ]
   },
   {
-   "nextTask": "Seal Carver (#80): the game says 'cannot start...",
+   "nextTask": null,
    "costTotalUsd": 39.76,
    "latestChange": {
     "text": "feat: give Seal Carver its own link preview",
@@ -20491,8 +20508,8 @@
    "title": "Seal Carver",
    "line": "Carve a short phrase into a square seal stone, one box.",
    "url": "https://chenhsieh.github.io/seal-carver/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Teach placement so it is reasoning, not trial and error",
    "shelfNote": "",
@@ -20505,7 +20522,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:20:34+00:00",
-   "lastChange": "2026-10-24T02:59:43+00:00",
+   "lastChange": "2026-10-24T05:23:13+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -20521,10 +20538,10 @@
    "tasks": [
     {
      "title": "P1SC00_illegal move w2h3 cannot start",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Seal Carver (#80): the game says 'cannot start, illegal move W2H3'; fix it.",
-     "since": "2026-10-24T02:59:43+00:00",
+     "since": "2026-10-24T05:22:55+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -20577,8 +20594,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
