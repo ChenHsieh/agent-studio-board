@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-24T16:04:51+00:00",
+ "generated": "2026-10-24T16:07:07+00:00",
  "ops": {
-  "count": 3,
+  "count": 5,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,22 +20,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 73,
+    "queued": 72,
     "running": 1,
     "doneToday": 0,
-    "minutes": 2960,
-    "estimateMinutes": 2960
+    "minutes": 2920,
+    "estimateMinutes": 2920
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
+    "running": 3,
     "doneToday": 65,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "minutes": 240,
+    "estimateMinutes": 120
    }
   },
-  "queued": 74,
-  "running": 3,
+  "queued": 73,
+  "running": 4,
   "doneToday": 65,
   "lanes": {
    "Codex": 1,
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3140,
-  "estimatedFinish": "2026-10-26T17:24:51+00:00",
-  "estimateMinutes": 2960
+  "minutesRemaining": 3160,
+  "estimatedFinish": "2026-10-26T16:47:07+00:00",
+  "estimateMinutes": 2920
  },
  "lanes": [
   {
@@ -57,6 +57,14 @@
    "task": "P1AX12_kit new rule and short screen fit",
    "since": null,
    "activity": null,
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "colony-count",
+   "task": "P1CC37_incubator endless nights",
+   "since": "2026-10-24T16:05:46+00:00",
+   "activity": "2026-10-24T16:05:47+00:00",
    "commit": null
   },
   {
@@ -77,8 +85,8 @@
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 2,
- "apiSpentUsd": 311.93,
+ "claudeWorkers": 3,
+ "apiSpentUsd": 312.0,
  "claudeInSession": {
   "runs": 283,
   "usdEst": 1018.8,
@@ -2813,7 +2821,7 @@
    ]
   },
   {
-   "nextTask": "Colony Count lab (#95): the incubator becomes an...",
+   "nextTask": "Colony Count: a test proves an old save...",
    "costTotalUsd": 181.65,
    "latestChange": {
     "text": "Rule out in every mode: one shared module for the main plates, round dish, octagon tiling...",
@@ -2836,8 +2844,8 @@
    "title": "Colony Count",
    "line": "Solve three daily levels, then freeze finished plates.",
    "url": "https://chenhsieh.github.io/colony-count/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Flagship; has its own owner",
    "shelfNote": "",
@@ -2855,7 +2863,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-24T14:20:59+00:00",
+   "lastChange": "2026-10-24T16:05:47+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 2,
@@ -2871,10 +2879,10 @@
    "tasks": [
     {
      "title": "P1CC37_incubator endless nights",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Colony Count lab (#95): the incubator becomes an endless run of nights instead of ending after one.",
-     "since": "2026-10-24T12:56:16+00:00",
+     "since": "2026-10-24T16:05:46+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2983,8 +2991,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 32
    },
