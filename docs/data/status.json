@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-24T23:20:42+00:00",
+ "generated": "2026-10-24T23:23:09+00:00",
  "ops": {
-  "count": 54,
+  "count": 51,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,64 +20,48 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 67,
+    "queued": 69,
     "running": 1,
     "doneToday": 2,
-    "minutes": 2720,
-    "estimateMinutes": 2720
+    "minutes": 2800,
+    "estimateMinutes": 2800
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
+    "running": 0,
     "doneToday": 75,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "minutes": 60,
+    "estimateMinutes": 60
    }
   },
-  "queued": 68,
-  "running": 3,
+  "queued": 70,
+  "running": 1,
   "doneToday": 77,
   "lanes": {
    "Codex": 1,
-   "Claude": 2
+   "Claude": 1
   },
   "laneCap": {
    "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2900,
-  "estimatedFinish": "2026-10-26T20:40:42+00:00",
-  "estimateMinutes": 2720
+  "minutesRemaining": 2860,
+  "estimatedFinish": "2026-10-26T22:03:09+00:00",
+  "estimateMinutes": 2800
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P1FS02_forager one screen",
-   "since": null,
-   "activity": null,
-   "commit": null
-  },
   {
    "worker": "Codex",
    "game": "lot-waits",
    "task": "P1LW02_lot waits day strip and trust",
    "since": "2026-10-24T23:16:42+00:00",
-   "activity": "2026-10-24T23:20:36+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "pinch-points",
-   "task": "P1PP01_daily levels and quirky share",
-   "since": "2026-10-24T23:07:25+00:00",
-   "activity": "2026-10-24T23:14:38+00:00",
+   "activity": "2026-10-24T23:23:03+00:00",
    "commit": null
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 2,
+ "claudeWorkers": 0,
  "apiSpentUsd": 317.01,
  "claudeInSession": {
   "runs": 287,
@@ -17910,15 +17894,15 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "daily levels and quirky share",
+   "waitingOn": "pinch points strategy card and daily",
    "id": "pinch-points",
    "number": 119,
    "repo": "pinch-points",
    "title": "Pinch Points",
    "line": "Pinch six stones flat as the surface flattens live; par set by search, plus a daily.",
    "url": "https://chenhsieh.github.io/pinch-points/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "turns an esoteric paper into an interactive game; explain the mechanism, show...",
    "shelfNote": "",
@@ -17932,7 +17916,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T20:22:39+00:00",
-   "lastChange": "2026-10-24T23:14:38+00:00",
+   "lastChange": "2026-10-24T22:40:09+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -17946,20 +17930,6 @@
     "totalUsdEst": 43.54
    },
    "tasks": [
-    {
-     "title": "P1PP01_daily levels and quirky share",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Pinch Points: a generated daily level and a fun, academic, quirky share text.",
-     "since": "2026-10-24T23:07:25+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1PP03_pinch points strategy card and daily",
      "state": "queued",
@@ -17980,6 +17950,20 @@
      "worker": "Codex",
      "plan": "Pinch Points: visual round with the taste spin, three looks and a pick",
      "since": "2026-10-24T06:59:29+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1PP01_daily levels and quirky share",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Pinch Points: a generated daily level and a fun, academic, quirky share text.",
+     "since": "2026-10-24T02:59:55+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -18046,8 +18030,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 1,
+    "queued": 3,
+    "running": 0,
     "waitingDesign": 0,
     "done": 4
    },
@@ -25974,7 +25958,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:14:25+00:00",
-   "lastChange": "2026-10-24T23:20:36+00:00",
+   "lastChange": "2026-10-24T23:23:03+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
