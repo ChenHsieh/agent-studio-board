@@ -1,5 +1,5 @@
 {
- "generated": 1792809771,
+ "generated": 1792809912,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -7,7 +7,7 @@
   "waiting": 2,
   "queued": 2,
   "running": 0,
-  "done24h": 35,
+  "done24h": 33,
   "modelsQueued": {
    "deepseek-v4-flash": 2
   },
@@ -145,23 +145,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P1BD07_game-numbers-on-the-board",
-   "request": "Board: every game has a permanent number shown on its card and list, with a range filter.",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "medium",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792805993,
-   "created": 1792805993
-  },
-  {
    "id": "P1KT05_premise-rollout-round-5-games",
    "request": "Roll the premise card out to the six round-5 games (#150 to #155), with their story blocks.",
    "game": "Studio",
@@ -177,6 +160,23 @@
    "state": "running",
    "at": 1792807735,
    "created": 1792807735
+  },
+  {
+   "id": "P2UX01_range-selector-parser",
+   "request": "Board: understand game ranges like 120 to 140 in requests",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "low",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1792807381,
+   "created": 1792807381
   },
   {
    "id": "P1AP01_story-bible-and-endings",
@@ -589,6 +589,26 @@
    "created": 1792807366
   },
   {
+   "id": "P1UX02_one-state-per-game",
+   "request": "Board: one clear state per game, with how long it has been there",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1BD07_game-numbers-on-the-board",
+    "P1BD05_archived-tier-for-time-limited-games"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792807366
+  },
+  {
    "id": "P2AX11_audit-report-merge-tools-only",
    "request": "Ship the clearer accessibility audit report (one line per problem, worst first) that is already built on a branch",
    "game": "Studio",
@@ -754,23 +774,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792805668
-  },
-  {
-   "id": "P2UX01_range-selector-parser",
-   "request": "Board: understand game ranges like 120 to 140 in requests",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "low",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792807381
   },
   {
    "id": "P2n86_round4-template-repos",
@@ -1208,28 +1211,6 @@
    "created": 1792795012
   },
   {
-   "id": "P1UX02_one-state-per-game",
-   "request": "Board: one clear state per game, with how long it has been there",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1BD07_game-numbers-on-the-board",
-    "P1BD05_archived-tier-for-time-limited-games"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P1BD07_game-numbers-on-the-board"
-   ],
-   "created": 1792807366
-  },
-  {
    "id": "P1UX03_checklist-view-with-range",
    "request": "Board: Checklist view, pick a number range and see which games miss what",
    "game": "Studio",
@@ -1247,7 +1228,6 @@
    "why": "",
    "state": "waiting",
    "waitingOn": [
-    "P1BD07_game-numbers-on-the-board",
     "P1UX00_board-checklist-data"
    ],
    "created": 1792807366
@@ -2472,6 +2452,23 @@
    "state": "done",
    "at": 1792804732,
    "created": 1792804732
+  },
+  {
+   "id": "P1BD07_game-numbers-on-the-board",
+   "request": "Board: every game has a permanent number shown on its card and list, with a range filter.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792805993,
+   "created": 1792805993
   },
   {
    "id": "P1CS00_cost-per-shipped-change-report",
