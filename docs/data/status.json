@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T14:31:14+00:00",
+ "generated": "2026-10-24T14:33:37+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -24,15 +24,15 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
-    "doneToday": 34,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "running": 1,
+    "doneToday": 35,
+    "minutes": 120,
+    "estimateMinutes": 60
    }
   },
   "queued": 114,
-  "running": 2,
-  "doneToday": 34,
+  "running": 1,
+  "doneToday": 35,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,19 +42,11 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 4700,
-  "estimatedFinish": "2026-10-27T17:51:14+00:00",
+  "minutesRemaining": 4640,
+  "estimatedFinish": "2026-10-27T17:53:37+00:00",
   "estimateMinutes": 4520
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "copy-drift",
-   "task": "P1CD03_show the three copyists and the paper rule",
-   "since": "2026-10-24T14:24:12+00:00",
-   "activity": "2026-10-24T14:30:26+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "makeshift-chair",
@@ -65,7 +57,7 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 311.39,
  "claudeInSession": {
   "runs": 270,
@@ -3457,23 +3449,23 @@
     "caption": "Hand a page to a copyist that rewrites each mark as the closest one it knows; 12 pages."
    },
    "why": "Screenshots of copying accidents: copied homework turning an answer into the word for karaoke, and a chain that drifts from 人工 to AI.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 1
+    "daysInState": 0
    },
-   "waitingOn": "show the three copyists and the paper rule",
+   "waitingOn": "none",
    "id": "copy-drift",
    "number": 129,
    "repo": "copy-drift",
    "title": "Copy Drift",
    "line": "Hand a page to a copyist that rewrites each mark as the closest one it knows; 12 pages.",
    "url": "https://chenhsieh.github.io/copy-drift/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Hand a page to a copyist that rewrites each mark as the closest one it knows;",
    "shelfNote": "",
@@ -3487,33 +3479,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T17:56:12+00:00",
-   "lastChange": "2026-10-24T14:30:26+00:00",
+   "lastChange": "2026-10-24T12:46:06+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 6,
+    "claudeRuns": 7,
     "apiRuns": 0,
     "codexTokens": 156979,
     "codexUsdEst": 0.19,
-    "claudeUsdEst": 21.6,
-    "earlierRounds": 11,
-    "earlierUsdEst": 39.6,
+    "claudeUsdEst": 25.2,
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
     "totalUsdEst": 61.39
    },
    "tasks": [
     {
      "title": "P1CD03_show the three copyists and the paper rule",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Copy Drift (#129): show what each of the three copyists knows, why a mark becomes the one it does, and what the paper count is.",
-     "since": "2026-10-24T14:24:12+00:00",
-     "done": null,
+     "since": "2026-10-24T12:46:06+00:00",
+     "done": "2026-10-24T12:46:06+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE P1CD03: Copy Drift (#129) now shows its rule (live, main )."
     },
     {
      "title": "P1CD00_first minute step three stuck",
@@ -3616,9 +3608,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 7
+    "done": 8
    },
    "verdict": {
     "date": "2026-10-23",
@@ -3626,7 +3618,7 @@
     "note": "not at ship level yet; back to refining"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-24T02:34:25+00:00",
