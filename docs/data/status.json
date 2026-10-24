@@ -1,15 +1,11 @@
 {
- "generated": "2026-10-24T01:02:24+00:00",
+ "generated": "2026-10-24T01:05:45+00:00",
  "ops": {
-  "count": 1,
-  "notes": [
-   "A game changed in the last hour with no claimed task on it."
-  ],
+  "count": 0,
+  "notes": [],
   "info": []
  },
- "about": [
-  "A game changed in the last hour with no claimed task on it."
- ],
+ "about": [],
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -20,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 55,
+    "queued": 54,
     "running": 0,
     "doneToday": 5,
-    "minutes": 2200,
-    "estimateMinutes": 2200
+    "minutes": 2160,
+    "estimateMinutes": 2160
    },
    "Claude": {
     "queued": 1,
     "running": 4,
-    "doneToday": 72,
+    "doneToday": 73,
     "minutes": 300,
     "estimateMinutes": 75
    }
   },
-  "queued": 56,
+  "queued": 55,
   "running": 4,
-  "doneToday": 77,
+  "doneToday": 78,
   "lanes": {
    "Codex": 1,
    "Claude": 4
@@ -46,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2500,
-  "estimatedFinish": "2026-10-25T13:42:24+00:00",
-  "estimateMinutes": 2200
+  "minutesRemaining": 2460,
+  "estimatedFinish": "2026-10-25T13:05:45+00:00",
+  "estimateMinutes": 2160
  },
  "lanes": [
   {
@@ -61,10 +57,10 @@
   },
   {
    "worker": "Claude",
-   "game": "cymatic-plate",
-   "task": "P1CY01_smooth moves and ui",
-   "since": "2026-10-24T00:39:40+00:00",
-   "activity": "2026-10-24T01:01:59+00:00",
+   "game": "peony-dream",
+   "task": "P1PD00_unlock credits and control",
+   "since": "2026-10-24T01:03:19+00:00",
+   "activity": "2026-10-24T01:03:23+00:00",
    "commit": null
   },
   {
@@ -80,7 +76,7 @@
    "game": "mint",
    "task": "P2RV10_mint",
    "since": "2026-10-24T00:49:14+00:00",
-   "activity": "2026-10-24T01:00:58+00:00",
+   "activity": "2026-10-24T01:04:32+00:00",
    "commit": null
   }
  ],
@@ -88,8 +84,8 @@
  "claudeWorkers": 4,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 218,
-  "usdEst": 784.8,
+  "runs": 219,
+  "usdEst": 788.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -135,7 +131,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 50
+   "changes": 51
   }
  ],
  "houseRules": 25,
@@ -3493,10 +3489,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 79.84,
+   "costTotalUsd": 83.44,
    "latestChange": {
-    "text": "endless never strands a drop (solver: 80% states had a stuck drop before, 0 after) plus...",
-    "at": "2026-10-24T00:39:35+00:00"
+    "text": "smooth endless glides, press feedback 106->23 ms at 4x CPU, hidden endless row fixed,...",
+    "at": "2026-10-24T01:03:18+00:00"
    },
    "promo": {
     "files": {
@@ -3512,8 +3508,8 @@
    "title": "Cymatic Plate",
    "line": "Ring notes on a brass plate covered in sand and watch the.",
    "url": "https://chenhsieh.github.io/cymatic-plate/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
@@ -3522,34 +3518,20 @@
    "releasedOn": "2026-10-23",
    "releasedNote": "public-ready, still being refined",
    "firstSeen": "2026-10-16T01:40:04+00:00",
-   "lastChange": "2026-10-24T01:01:59+00:00",
+   "lastChange": "2026-10-24T01:03:18+00:00",
    "cost": {
     "apiUsd": 3.26,
     "codexRuns": 5,
-    "claudeRuns": 7,
+    "claudeRuns": 8,
     "apiRuns": 2,
     "codexTokens": 816933,
     "codexUsdEst": 0.98,
-    "claudeUsdEst": 25.2,
+    "claudeUsdEst": 28.8,
     "earlierRounds": 14,
     "earlierUsdEst": 50.4,
-    "totalUsdEst": 79.84
+    "totalUsdEst": 83.44
    },
    "tasks": [
-    {
-     "title": "P1CY01_smooth moves and ui",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Cymatic Plate: drops glide from A to B instead of vanishing and reappearing; the next options respond quickly; UI polish.",
-     "since": "2026-10-24T00:39:40+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1CY00_endless always solvable and overload bar",
      "state": "done",
@@ -3563,6 +3545,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Endless now only offers note sets where every drop can always reach the ring (before: 80% of states in 500 seeded runs had a drop no note could bring home, 67% of opening boards; centre cell frozen for 15 of 18 notes;..."
+    },
+    {
+     "title": "P1CY01_smooth moves and ui",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Cymatic Plate: drops glide from A to B instead of vanishing and reappearing; the next options respond quickly; UI polish.",
+     "since": "2026-10-23T23:57:06+00:00",
+     "done": "2026-10-23T23:57:06+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "Endless drops now glide along the note's path (a quarter second, ease-out), new drops fall in and grow, sunk drops shrink into the ring, the ring and fading figures slide; reduced motion cross-fades; pressing a note..."
     },
     {
      "title": "P3OR54_cymatic plate credits page",
@@ -3651,9 +3647,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 14
+    "done": 15
    },
    "verdict": {
     "date": "2026-10-20",
@@ -3661,8 +3657,14 @@
     "note": "Ship after endless mode gets sound, haptics and the logo"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-24T01:03:18+00:00",
+     "ok": true,
+     "note": "smooth endless glides, press feedback 106->23 ms at 4x CPU, hidden endless row fixed, larger text",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T00:39:35+00:00",
      "ok": true,
@@ -3728,12 +3730,6 @@
      "ok": true,
      "note": "fix: the plate drops the unclear assist ring and every level is open",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-19T15:05:57+00:00",
-     "ok": true,
-     "note": "NOT_DONE: assist ring removed, Listen retained, all levels opened, and save migration tested; publish blocked pending explicit approval to push to github.com/ChenHsieh/cymatic-plate.git",
-     "source": "board note"
     }
    ]
   },
@@ -12638,7 +12634,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-24T01:00:58+00:00",
+   "lastChange": "2026-10-24T01:04:32+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -15252,7 +15248,7 @@
    ]
   },
   {
-   "nextTask": "Peony Dream: everything open to test, a credit...",
+   "nextTask": null,
    "costTotalUsd": 36.59,
    "latestChange": {
     "text": "feat: teach her portrait before level one",
@@ -15271,8 +15267,8 @@
    "title": "Peony Dream",
    "line": "Paint half a face on a sheet of silk, close the silk on.",
    "url": "https://chenhsieh.github.io/peony-dream/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Eastern ink visual direction instead of raster",
    "shelfNote": "",
@@ -15281,7 +15277,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-18T01:51:43+00:00",
-   "lastChange": "2026-10-24T00:21:00+00:00",
+   "lastChange": "2026-10-24T01:03:23+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -15297,10 +15293,10 @@
    "tasks": [
     {
      "title": "P1PD00_unlock credits and control",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Peony Dream: everything open to test, a credit link to the best source, and controls that respond.",
-     "since": "2026-10-24T00:21:00+00:00",
+     "since": "2026-10-24T01:03:19+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -15367,8 +15363,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 4
    },
