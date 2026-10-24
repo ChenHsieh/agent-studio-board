@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T08:42:20+00:00",
+ "generated": "2026-10-24T08:44:44+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -24,14 +24,14 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
+    "running": 3,
     "doneToday": 8,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "minutes": 240,
+    "estimateMinutes": 120
    }
   },
   "queued": 78,
-  "running": 2,
+  "running": 3,
   "doneToday": 8,
   "lanes": {
    "Codex": 1,
@@ -42,11 +42,19 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3260,
-  "estimatedFinish": "2026-10-26T12:02:20+00:00",
+  "minutesRemaining": 3320,
+  "estimatedFinish": "2026-10-26T12:04:44+00:00",
   "estimateMinutes": 3080
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "checking-desk",
+   "task": "P1CD01_visual round hyperreal or high res",
+   "since": "2026-10-24T08:43:44+00:00",
+   "activity": "2026-10-24T08:44:05+00:00",
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "grass-crossword",
@@ -57,15 +65,15 @@
   },
   {
    "worker": "Claude",
-   "game": "mushroom-gaps",
-   "task": "P1MG01_journalist research and visual round design",
-   "since": "2026-10-24T08:35:09+00:00",
-   "activity": "2026-10-24T08:37:04+00:00",
+   "game": "sockglass",
+   "task": "P3OR74_sockglass save migration test",
+   "since": "2026-10-24T08:43:37+00:00",
+   "activity": "2026-10-24T08:44:06+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 3,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
   "runs": 268,
@@ -2197,7 +2205,7 @@
    ]
   },
   {
-   "nextTask": "Checking Desk (#124): the look is too crude...",
+   "nextTask": null,
    "costTotalUsd": 25.4,
    "latestChange": {
     "text": "feat: Learn proof checking before Night 1",
@@ -2226,8 +2234,8 @@
    "title": "Checking Desk",
    "line": "Six night shifts at a checking desk, each proved by a solver, plus a daily; Chinese and English.",
    "url": "https://chenhsieh.github.io/checking-desk/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Six night shifts at a checking desk, each proved by a solver, plus a daily;",
    "shelfNote": "",
@@ -2240,7 +2248,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T02:23:43+00:00",
-   "lastChange": "2026-10-24T02:59:47+00:00",
+   "lastChange": "2026-10-24T08:44:05+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -2256,10 +2264,10 @@
    "tasks": [
     {
      "title": "P1CD01_visual round hyperreal or high res",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Checking Desk (#124): the look is too crude; a hyper-real or high-resolution visual round with the taste spin.",
-     "since": "2026-10-24T02:59:47+00:00",
+     "since": "2026-10-24T08:43:44+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2284,8 +2292,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -14957,7 +14965,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Mushroom at the End: build the closure survey...",
    "costTotalUsd": 29.19,
    "latestChange": {
     "text": "feat: show the first mushroom floor in link previews",
@@ -14979,15 +14987,15 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "journalist research and visual round design",
+   "waitingOn": "survey print visual build",
    "id": "mushroom-gaps",
    "number": 68,
    "repo": "mushroom-gaps",
    "title": "Mushroom at the End",
    "line": "Grow mycelium threads across an old factory floor and cut.",
    "url": "https://chenhsieh.github.io/mushroom-gaps/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "wants this to happen; preview before commit, journalist research, taste visual...",
    "shelfNote": "",
@@ -15000,27 +15008,55 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T23:26:23+00:00",
-   "lastChange": "2026-10-24T08:37:04+00:00",
+   "lastChange": "2026-10-24T08:43:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 1,
     "codexTokens": 322256,
     "codexUsdEst": 0.39,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 7,
-    "earlierUsdEst": 25.2,
+    "claudeUsdEst": 7.2,
+    "earlierRounds": 6,
+    "earlierUsdEst": 21.6,
     "totalUsdEst": 29.19
    },
    "tasks": [
     {
+     "title": "P1MG02_survey print visual build",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Mushroom at the End: build the closure survey print look (cream, diazo blue, red pencil, mushroom stamp) over the new preview",
+     "since": "2026-10-24T08:43:22+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P3OR75_mushroom survey fonts and singular",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Mushroom at the End: survey-print fonts and the singular mushroom line",
+     "since": "2026-10-24T08:43:18+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
      "title": "P1MG01_journalist research and visual round design",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Mushroom Gaps: find the original piece and the right style, then three taste mocks.",
-     "since": "2026-10-24T08:35:09+00:00",
-     "done": null,
+     "since": "2026-10-24T03:00:02+00:00",
+     "done": "2026-10-24T03:00:02+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -15086,10 +15122,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 2,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": null,
    "needsYou": null,
@@ -22842,7 +22878,7 @@
    ]
   },
   {
-   "nextTask": "Sockglass: a test that an old save survives...",
+   "nextTask": null,
    "costTotalUsd": 43.41,
    "latestChange": {
     "text": "feat: Sockglass story, tonight's window and its share text",
@@ -22872,8 +22908,8 @@
    "title": "Sockglass",
    "line": "Drag tissue-paper socks onto a dark bedroom window; where.",
    "url": "https://chenhsieh.github.io/sockglass/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Make sock sizes and counts readable and let the theme",
    "shelfNote": "",
@@ -22886,7 +22922,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T23:27:18+00:00",
-   "lastChange": "2026-10-24T08:08:42+00:00",
+   "lastChange": "2026-10-24T08:44:06+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -22902,10 +22938,10 @@
    "tasks": [
     {
      "title": "P3OR74_sockglass save migration test",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Sockglass: a test that an old save survives the new daily build",
-     "since": "2026-10-24T08:08:42+00:00",
+     "since": "2026-10-24T08:43:37+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -22972,8 +23008,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 4
    },
