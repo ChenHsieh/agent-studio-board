@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T10:28:54+00:00",
+ "generated": "2026-10-24T10:31:59+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 81,
+    "queued": 80,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3240,
-    "estimateMinutes": 3240
+    "minutes": 3200,
+    "estimateMinutes": 3200
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
-    "doneToday": 15,
-    "minutes": 120,
-    "estimateMinutes": 60
+    "running": 2,
+    "doneToday": 17,
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
-  "queued": 82,
-  "running": 1,
-  "doneToday": 15,
+  "queued": 81,
+  "running": 2,
+  "doneToday": 17,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3360,
-  "estimatedFinish": "2026-10-26T16:28:54+00:00",
-  "estimateMinutes": 3240
+  "minutesRemaining": 3380,
+  "estimatedFinish": "2026-10-26T15:51:59+00:00",
+  "estimateMinutes": 3200
  },
  "lanes": [
   {
@@ -54,10 +54,18 @@
    "since": "2026-10-24T10:23:15+00:00",
    "activity": "2026-10-24T10:25:48+00:00",
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P1MM01_depth brainstorm 3d platforms and mechanisms",
+   "since": null,
+   "activity": null,
+   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
   "runs": 270,
@@ -17002,7 +17010,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Peony Dream: fit board, sleeper and ink stone...",
    "costTotalUsd": 47.39,
    "latestChange": {
     "text": "fix: one draw per frame while folding, drag ends on any release, and the mirror story",
@@ -17016,23 +17024,23 @@
     "caption": "Paint half a face on a sheet of silk, close the silk on."
    },
    "why": "The classical play The Peony Pavilion (1598) and a saved essay note on love found in a dream.",
-   "state": "shelved",
+   "state": "ship",
    "stateFlags": {
-    "refining": false,
-    "resting": true,
+    "refining": true,
+    "resting": false,
     "regressed": false,
-    "reviseRound": 1,
+    "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "peony dream small phone fit",
    "id": "peony-dream",
    "number": 99,
    "repo": "peony-dream",
    "title": "Peony Dream",
    "line": "Paint half a face on a sheet of silk, close the silk on.",
    "url": "https://chenhsieh.github.io/peony-dream/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Eastern ink visual direction instead of raster",
    "shelfNote": "",
@@ -17040,12 +17048,13 @@
    "released": false,
    "releasedOn": null,
    "releasedNote": "",
+   "whatToExpect": "You paint half a portrait on silk and fold it onto a mirror, so every wet stroke prints its twin. Choose what to paint before each fold and when to wake the dreamer, and finish the face in as few moves as you can.",
    "archived": false,
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-18T01:51:43+00:00",
-   "lastChange": "2026-10-24T07:49:15+00:00",
+   "lastChange": "2026-10-24T10:29:23+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -17059,6 +17068,20 @@
     "totalUsdEst": 47.39
    },
    "tasks": [
+    {
+     "title": "P2PD02_peony dream small phone fit",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Peony Dream: fit board, sleeper and ink stone on a small phone; result card text clear",
+     "since": "2026-10-24T10:29:23+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1PD01_lag stuck drag and dream link",
      "state": "done",
@@ -17145,18 +17168,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 6
    },
    "verdict": {
-    "date": "2026-10-19",
-    "verdict": "revise",
-    "note": "Eastern ink visual direction instead of raster"
+    "date": "2026-10-24",
+    "verdict": "ship",
+    "note": "Choosing what the mirror may copy is a real decision (the obvious paint-and-fold never reaches par from level 4 on); next is fitting a small phone"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-24T07:49:15+00:00",
@@ -19032,20 +19055,34 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T05:19:35+00:00",
-   "lastChange": "2026-10-24T05:31:32+00:00",
+   "lastChange": "2026-10-24T10:31:06+00:00",
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 1,
-    "claudeRuns": 6,
+    "claudeRuns": 7,
     "apiRuns": 0,
     "codexTokens": 245568,
     "codexUsdEst": 0.29,
-    "claudeUsdEst": 21.6,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
+    "claudeUsdEst": 25.2,
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
     "totalUsdEst": 81.53
    },
    "tasks": [
+    {
+     "title": "P3OR78_remote viewer credits corrected",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Remote Viewer credits page, corrected: font project names and the true scan link",
+     "since": "2026-10-24T10:31:06+00:00",
+     "done": "2026-10-24T10:31:06+00:00",
+     "reviewed": false,
+     "minutes": 0,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: grep -qF 'The Courier Prime Project Authors' docs/CREDITS.md && grep -qF 'The Rokkitt Project Authors' docs/CREDITS.md && grep -qF 'Internet Archive page' docs/CREDITS.md && ! grep -qiE 'Dague|Vern"
+    },
     {
      "title": "P3OR68_remote viewer credits page",
      "state": "done",
@@ -19149,7 +19186,7 @@
     "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 7
+    "done": 8
    },
    "verdict": {
     "date": "2026-10-19",
@@ -22956,7 +22993,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Sockglass: rework levels where the obvious placement already...",
    "costTotalUsd": 43.41,
    "latestChange": {
     "text": "feat: Sockglass story, tonight's window and its share text",
@@ -22971,23 +23008,23 @@
     "caption": "Drag tissue-paper socks onto a dark bedroom window; where."
    },
    "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
-    "reviseRound": 1,
+    "reviseRound": 2,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "sockglass levels need a choice",
    "id": "sockglass",
    "number": 73,
    "repo": "sockglass",
    "title": "Sockglass",
    "line": "Drag tissue-paper socks onto a dark bedroom window; where.",
    "url": "https://chenhsieh.github.io/sockglass/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Make sock sizes and counts readable and let the theme",
    "shelfNote": "",
@@ -22995,12 +23032,13 @@
    "released": false,
    "releasedOn": null,
    "releasedNote": "",
+   "whatToExpect": "You hang coloured tissue socks on a night window; where two cross, their colours mix. Light every picture in its own colour without covering a cat or making mud, using as few drags as you can.",
    "archived": false,
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T23:27:18+00:00",
-   "lastChange": "2026-10-24T08:08:42+00:00",
+   "lastChange": "2026-10-24T10:29:23+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -23014,6 +23052,20 @@
     "totalUsdEst": 43.41
    },
    "tasks": [
+    {
+     "title": "P2SG00_sockglass levels need a choice",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Sockglass: rework levels where the obvious placement already wins",
+     "since": "2026-10-24T10:29:23+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3OR74_sockglass save migration test",
      "state": "done",
@@ -23086,18 +23138,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 5
    },
    "verdict": {
-    "date": "2026-10-19",
+    "date": "2026-10-24",
     "verdict": "revise",
-    "note": "Make sock sizes and counts readable and let the theme"
+    "note": "The window and the colour mixing read well, but hanging each sock over its own picture already wins levels 4 to 6, so those levels need a real choice"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-24T08:06:22+00:00",
@@ -29401,8 +29453,8 @@
    "ran": 0
   },
   "expect": {
-   "yes": 6,
-   "no": 149,
+   "yes": 8,
+   "no": 147,
    "unknown": 0,
    "ran": 0
   },

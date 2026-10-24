@@ -1,5 +1,5 @@
 {
- "generated": 1792837765,
+ "generated": 1792837931,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -7,15 +7,21 @@
   "waiting": 2,
   "queued": 2,
   "running": 0,
-  "done24h": 25,
+  "done24h": 26,
   "modelsQueued": {
    "deepseek-v4-flash": 2
   },
   "spendTodayUsd": 0.0,
-  "runsToday": 11,
-  "runsTodayUnpriced": 11,
+  "runsToday": 12,
+  "runsTodayUnpriced": 12,
   "spendTotalUsd": 6.36,
   "recent": [
+   {
+    "id": "P3OR78_remote-viewer-credits-corrected",
+    "request": "Remote Viewer credits page, corrected: font project names and the true scan link",
+    "model": "openai/gpt-4.1",
+    "at": 1792837866
+   },
    {
     "id": "P3OR77_couplet-data-file",
     "request": "Blackout Notice: the couplet data file (Tang parallel pairs, joins, tones) for the new core",
@@ -69,12 +75,6 @@
     "request": "The Scribe's Blotter: a credits page with licences",
     "model": "deepseek-v4-flash",
     "at": 1792820330
-   },
-   {
-    "id": "P3OR68_remote-viewer-credits-page",
-    "request": "Remote Viewer: a credits page that names its fonts, the declassified pages and their licences",
-    "model": "deepseek-v4-flash",
-    "at": 1792819892
    }
   ],
   "label": "estimate"
@@ -106,6 +106,25 @@
    "state": "running",
    "at": 1792837372,
    "created": 1792837372
+  },
+  {
+   "id": "P1MM01_depth-brainstorm-3d-platforms-and-mechanisms",
+   "request": "Marble Machine: a puzzle designer and a game designer brainstorm more depth, gradually introduced mechanisms, and 3D platforms; then a build plan.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1MM00_smooth-puzzle-latency"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1792811310,
+   "created": 1792811310
   },
   {
    "id": "P1CB12_photo-kitchens-visual-build",
@@ -253,6 +272,44 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792793463
+  },
+  {
+   "id": "P2PD02_peony-dream-small-phone-fit",
+   "request": "Peony Dream: fit board, sleeper and ink stone on a small phone; result card text clear",
+   "game": "Peony Dream",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2RV18_review-sockglass-and-peony-dream"
+   ],
+   "priority": "P1",
+   "why": "The classical play The Peony Pavilion (1598) and a saved essay note on love found in a dream.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792837763
+  },
+  {
+   "id": "P2SG00_sockglass-levels-need-a-choice",
+   "request": "Sockglass: rework levels where the obvious placement already wins",
+   "game": "Sockglass",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2RV18_review-sockglass-and-peony-dream"
+   ],
+   "priority": "P1",
+   "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792837763
   },
   {
    "id": "P2TS58_thumb-stand-link-preview",
@@ -587,25 +644,6 @@
    "created": 1792790568
   },
   {
-   "id": "P1MM01_depth-brainstorm-3d-platforms-and-mechanisms",
-   "request": "Marble Machine: a puzzle designer and a game designer brainstorm more depth, gradually introduced mechanisms, and 3D platforms; then a build plan.",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1MM00_smooth-puzzle-latency"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792811310
-  },
-  {
    "id": "P1TE02_room-warm-cold-rule",
    "request": "Think an Elephant: the room chapter gets its own rule, warm or cold instead of words",
    "game": "Think Elephant",
@@ -750,23 +788,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792805901
-  },
-  {
-   "id": "P2RV18_review-sockglass-and-peony-dream",
-   "request": "Play Sockglass (story, tonight's window, share) and Peony Dream (smoother drag, mirror story) cold and say ship or revise",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792829306
   },
   {
    "id": "P2SBL00_scribes-blotter",
@@ -986,27 +1007,6 @@
    "created": 1792834247
   },
   {
-   "id": "P2PD02_peony-dream-small-phone-fit",
-   "request": "Peony Dream: fit board, sleeper and ink stone on a small phone; result card text clear",
-   "game": "Peony Dream",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "medium",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2RV18_review-sockglass-and-peony-dream"
-   ],
-   "priority": "P1",
-   "why": "The classical play The Peony Pavilion (1598) and a saved essay note on love found in a dream.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2RV18_review-sockglass-and-peony-dream"
-   ],
-   "created": 1792837763
-  },
-  {
    "id": "P2PP04_pinch-points-visual-round-design",
    "request": "Pinch Points: visual round with the taste spin, three looks and a pick",
    "game": "Pinch Points",
@@ -1026,27 +1026,6 @@
     "P1PP03_pinch-points-strategy-card-and-daily"
    ],
    "created": 1792825169
-  },
-  {
-   "id": "P2SG00_sockglass-levels-need-a-choice",
-   "request": "Sockglass: rework levels where the obvious placement already wins",
-   "game": "Sockglass",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2RV18_review-sockglass-and-peony-dream"
-   ],
-   "priority": "P1",
-   "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2RV18_review-sockglass-and-peony-dream"
-   ],
-   "created": 1792837763
   },
   {
    "id": "P1CK03_one-record-levels-and-gate",
@@ -2535,6 +2514,23 @@
    "created": 1792833078
   },
   {
+   "id": "P3OR78_remote-viewer-credits-corrected",
+   "request": "Remote Viewer credits page, corrected: font project names and the true scan link",
+   "game": "Remote Viewer",
+   "route": "OpenRouter",
+   "model": "openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "Declassified CIA Stargate remote-viewing session reports, with a blackout rule after the word game Redactle.",
+   "state": "done",
+   "at": 1792837866,
+   "created": 1792837866
+  },
+  {
    "id": "P1CD00_first-minute-step-three-stuck",
    "request": "Copy Drift (#129): the third first-minute page gets stuck; find out if it is the story or the rules, and fix it.",
    "game": "Copy Drift",
@@ -3286,6 +3282,23 @@
    "state": "done",
    "at": 1792799693,
    "created": 1792799693
+  },
+  {
+   "id": "P2RV18_review-sockglass-and-peony-dream",
+   "request": "Play Sockglass (story, tonight's window, share) and Peony Dream (smoother drag, mirror story) cold and say ship or revise",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792829306,
+   "created": 1792829306
   },
   {
    "id": "P2SGN00_honest-sign",
