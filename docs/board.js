@@ -24,19 +24,9 @@ delete filters.needs;
 const VIEWS = [['needs', 'Needs you'], ['ready', 'Ready to try'], ['released', 'Released'], ['progress', 'In progress'], ['shelf', 'Shelf'], ['all', 'All'], ['queue', 'Queue']];
 let view = localStorage.getItem('board.view');
 if (!VIEWS.some(([v]) => v === view)) view = 'needs';
-// Needs you means: a human is the only thing the game is waiting for (the server sets needsYou only when no work is queued).
-// inProgress comes from the server; older data files derive it from the task counts.
-const inProg = (g) => g.inProgress ?? (((g.taskCounts || {}).queued || 0) + ((g.taskCounts || {}).running || 0) > 0);
-const isReady = (g) => g.stage === 'live' && !inProg(g) && (!g.verdict || (g.lastChange && g.verdict.date && g.lastChange.slice(0, 10) > g.verdict.date));
-const IN_VIEW = {
-  needs: (g) => !!g.needsYou,
-  ready: isReady,
-  released: (g) => !!g.released,
-  progress: (g) => !!inProg(g),
-  shelf: (g) => g.stage === 'shelf',
-  all: () => true,
-  queue: () => false,
-};
+// Needs you means: a human is the only thing the game is waiting for (the server sets needsYou only from board/asks.tsv).
+// The view rules live in views.js (tested in node by test/views.test.js).
+const { inProg, isReady, updatedSinceRelease, changeSummary, IN_VIEW } = window.BoardViews;
 let quota = null, requests = null;
 const qFilter = JSON.parse(localStorage.getItem('board.qfilter') || '{}');
 const qf = { route: qFilter.route || [], state: qFilter.state || [] };
@@ -242,6 +232,15 @@ function stageBadge(g) {
   return `<span class="st released">${inProg(g) ? 'Released, refining' : 'Released'}</span>`;
 }
 
+// Released view: a released game that changed after its release day says so, with the latest change when there is one.
+function sinceReleaseHtml(g) {
+  const d = view === 'released' && updatedSinceRelease(g);
+  if (!d) return '';
+  const lc = changeSummary(g.latestChange && g.latestChange.text);
+  const when = new Date(d + 'T12:00:00').toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+  return `<span class="since-release"><b>Updated since release</b> ${esc(when)}${lc ? ': ' + esc(lc) : ''}</span>`;
+}
+
 function gameHtml(g) {
   const img = g.image ? `<img class="thumb" src="${esc(g.image)}" alt="" loading="lazy">` : `<span class="thumb blank" aria-hidden="true">${esc(g.title[0])}</span>`;
   const repoUrl = `https://github.com/ChenHsieh/${encodeURIComponent(g.repo || g.id)}`;
@@ -257,7 +256,7 @@ function gameHtml(g) {
   return `<li class="game${open.has(g.id) ? ' open' : ''}" data-id="${esc(g.id)}">
   <button class="row" aria-expanded="${open.has(g.id)}">${img}<span class="name">${esc(g.title)}</span>
     <span class="meta">${stageBadge(g)}${g.verdict && !g.released ? `<span class="vd ${esc(g.verdict.verdict)}">${esc(g.verdict.verdict)}</span>` : ''}<span class="p">${esc(g.priority || '')}</span></span>
-    <span class="line">${g.needsYou ? '<b class="ask">To do:</b> ' : ''}${esc(whatToDo(g))}</span>${glanceHtml(g)}</button>
+    <span class="line">${g.needsYou ? '<b class="ask">To do:</b> ' : ''}${esc(whatToDo(g))}</span>${sinceReleaseHtml(g)}${glanceHtml(g)}</button>
   <a class="play-link" href="${esc(g.url)}" target="_blank" rel="noopener" aria-label="Play ${esc(g.title)}">Play</a>
   <div class="detail">
     ${g.why ? `<p class="why"><b>Why this exists:</b> ${esc(g.why)}</p>` : ''}
