@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T13:02:01+00:00",
+ "generated": "2026-10-24T13:04:31+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 90,
+    "queued": 89,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3600,
-    "estimateMinutes": 3600
+    "minutes": 3560,
+    "estimateMinutes": 3560
    },
    "Claude": {
     "queued": 1,
     "running": 4,
-    "doneToday": 25,
+    "doneToday": 26,
     "minutes": 300,
     "estimateMinutes": 150
    }
   },
-  "queued": 91,
+  "queued": 90,
   "running": 4,
-  "doneToday": 25,
+  "doneToday": 26,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,17 +42,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3900,
-  "estimatedFinish": "2026-10-27T01:02:01+00:00",
-  "estimateMinutes": 3600
+  "minutesRemaining": 3860,
+  "estimatedFinish": "2026-10-27T00:24:31+00:00",
+  "estimateMinutes": 3560
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "mushroom-gaps",
-   "task": "P1MG02_survey print visual build",
-   "since": "2026-10-24T12:08:30+00:00",
-   "activity": "2026-10-24T13:01:59+00:00",
+   "game": "chai-boil",
+   "task": "P1CB12_photo kitchens visual build",
+   "since": "2026-10-24T13:04:24+00:00",
+   "activity": "2026-10-24T13:04:31+00:00",
    "commit": null
   },
   {
@@ -1967,7 +1967,7 @@
    ]
   },
   {
-   "nextTask": "Chai Boil: build the photographic kitchens (one real...",
+   "nextTask": null,
    "costTotalUsd": 91.11,
    "latestChange": {
     "text": "design: Chai Boil spec keeps the copper lever labels and names the slip strings",
@@ -1990,8 +1990,8 @@
    "title": "Chai Boil",
    "line": "One pot, one dial: let the chai rise to the rim, not over it.",
    "url": "https://chenhsieh.github.io/chai-boil/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "hyper-realistic visuals instead of computer-drawn",
    "shelfNote": "",
@@ -2004,7 +2004,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-24T09:11:22+00:00",
+   "lastChange": "2026-10-24T13:04:31+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 6,
@@ -2020,10 +2020,10 @@
    "tasks": [
     {
      "title": "P1CB12_photo kitchens visual build",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Chai Boil: build the photographic kitchens (one real photo per kitchen, foam, gold ring and steam drawn on top)",
-     "since": "2026-10-24T09:11:22+00:00",
+     "since": "2026-10-24T13:04:24+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2132,8 +2132,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 18
    },
@@ -15154,23 +15154,23 @@
     "caption": "Grow mycelium threads across an old factory floor and cut."
    },
    "why": "An anthropology trivia post about a book on matsutake mushrooms growing in the ruins of industry.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "survey print visual build",
+   "waitingOn": "none",
    "id": "mushroom-gaps",
    "number": 68,
    "repo": "mushroom-gaps",
    "title": "Mushroom at the End",
    "line": "Grow mycelium threads across an old factory floor and cut.",
    "url": "https://chenhsieh.github.io/mushroom-gaps/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "wants this to happen; preview before commit, journalist research, taste visual...",
    "shelfNote": "",
@@ -15187,29 +15187,29 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 1,
     "codexTokens": 322256,
     "codexUsdEst": 0.39,
-    "claudeUsdEst": 10.8,
-    "earlierRounds": 11,
-    "earlierUsdEst": 39.6,
+    "claudeUsdEst": 14.4,
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
     "totalUsdEst": 50.79
    },
    "tasks": [
     {
      "title": "P1MG02_survey print visual build",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Mushroom at the End: build the closure survey print look (cream, diazo blue, red pencil, mushroom stamp) over the new preview",
-     "since": "2026-10-24T12:08:30+00:00",
-     "done": null,
+     "since": "2026-10-24T08:43:22+00:00",
+     "done": "2026-10-24T08:43:22+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1MG02 Mushroom at the End: closure survey print visual build. DONE. main . Live: https://chenhsieh.github.io/mushroom-gaps/ (live bytes md5-matched for draw.js, shell.js, style.css, index.html, og.png, stencil font;..."
     },
     {
      "title": "P3OR75_mushroom survey fonts and singular",
@@ -15298,13 +15298,13 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-24T13:01:59+00:00",
