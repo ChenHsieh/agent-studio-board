@@ -1,22 +1,27 @@
 {
- "generated": 1792824001,
+ "generated": 1792824151,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
-  "lanesBusy": 1,
+  "lanesBusy": 0,
   "ready": 0,
   "waiting": 2,
   "queued": 2,
-  "running": 1,
-  "done24h": 18,
+  "running": 0,
+  "done24h": 19,
   "modelsQueued": {
-   "openai/gpt-4.1": 1,
    "deepseek-v4-flash": 2
   },
   "spendTodayUsd": 0.0,
-  "runsToday": 3,
-  "runsTodayUnpriced": 3,
+  "runsToday": 4,
+  "runsTodayUnpriced": 4,
   "spendTotalUsd": 6.36,
   "recent": [
+   {
+    "id": "P3OR70_apprentice-art-shapes-module",
+    "request": "The Apprentice: load the new woodcut tool and figure drawings into the game as one data file, with a test",
+    "model": "openai/gpt-4.1",
+    "at": 1792823912
+   },
    {
     "id": "P3OR69_scribes-blotter-credits-page",
     "request": "The Scribe's Blotter: a credits page with licences",
@@ -70,12 +75,6 @@
     "request": "Name audit: show one name for copy-paste everywhere",
     "model": "deepseek-v4-flash",
     "at": 1792795374
-   },
-   {
-    "id": "P3OR53_name-to-carry-data-inside-game",
-    "request": "Name to Carry: move the name list into the game file so tools can load it alone (cheap lane)",
-    "model": "openai/gpt-4.1",
-    "at": 1792791317
    }
   ],
   "label": "estimate"
@@ -92,21 +91,21 @@
  },
  "tasks": [
   {
-   "id": "P3OR70_apprentice-art-shapes-module",
-   "request": "The Apprentice: load the new woodcut tool and figure drawings into the game as one data file, with a test",
-   "game": "The Apprentice",
-   "route": "OpenRouter",
-   "model": "openai/gpt-4.1",
-   "effort": "default",
+   "id": "P1GX01_visual-round-design",
+   "request": "Grass Crossword: a newspaper crossword with grass growing through it: three mock looks with the taste spin.",
+   "game": "Grass Crossword",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
    "kind": "visual",
    "size": "one repo",
    "estMinutes": null,
    "after": [],
    "priority": "P1",
-   "why": "",
+   "why": "A conceptual artwork from 2002: a newspaper crossword with every square green and every answer written as GRASS.",
    "state": "running",
-   "at": 1792823912,
-   "created": 1792823912
+   "at": 1792810461,
+   "created": 1792810461
   },
   {
    "id": "P1MM00_smooth-puzzle-latency",
@@ -188,23 +187,6 @@
    "model": "sonnet",
    "effort": "high",
    "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A conceptual artwork from 2002: a newspaper crossword with every square green and every answer written as GRASS.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792810461
-  },
-  {
-   "id": "P1GX01_visual-round-design",
-   "request": "Grass Crossword: a newspaper crossword with grass growing through it: three mock looks with the taste spin.",
-   "game": "Grass Crossword",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "visual",
    "size": "one repo",
    "estMinutes": null,
    "after": [],
@@ -2226,6 +2208,23 @@
    "state": "done",
    "at": 1792819892,
    "created": 1792819892
+  },
+  {
+   "id": "P3OR70_apprentice-art-shapes-module",
+   "request": "The Apprentice: load the new woodcut tool and figure drawings into the game as one data file, with a test",
+   "game": "The Apprentice",
+   "route": "OpenRouter",
+   "model": "openai/gpt-4.1",
+   "effort": "default",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "",
+   "state": "done",
+   "at": 1792823912,
+   "created": 1792823912
   },
   {
    "id": "P1CD00_first-minute-step-three-stuck",

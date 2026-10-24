@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T06:39:47+00:00",
+ "generated": "2026-10-24T06:42:15+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 78,
+    "queued": 76,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3120,
-    "estimateMinutes": 3120
+    "minutes": 3040,
+    "estimateMinutes": 3040
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
-    "doneToday": 3,
-    "minutes": 120,
-    "estimateMinutes": 60
+    "running": 2,
+    "doneToday": 4,
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
-  "queued": 79,
-  "running": 1,
-  "doneToday": 3,
+  "queued": 77,
+  "running": 2,
+  "doneToday": 4,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,11 +42,19 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3240,
-  "estimatedFinish": "2026-10-26T10:39:47+00:00",
-  "estimateMinutes": 3120
+  "minutesRemaining": 3220,
+  "estimatedFinish": "2026-10-26T09:22:15+00:00",
+  "estimateMinutes": 3040
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "grass-crossword",
+   "task": "P1GX01_visual round design",
+   "since": "2026-10-24T06:40:45+00:00",
+   "activity": "2026-10-24T06:40:47+00:00",
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "Multiple games",
@@ -57,7 +65,7 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
   "runs": 266,
@@ -8911,8 +8919,8 @@
    "title": "Grass Crossword",
    "line": "A crossword dug into a garden bed, where every answer is.",
    "url": "https://chenhsieh.github.io/grass-crossword/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "nearly ready; newspaper look, plain Share, a daily that is a new puzzle each...",
    "shelfNote": "",
@@ -8925,7 +8933,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:41:42+00:00",
-   "lastChange": "2026-10-24T02:54:21+00:00",
+   "lastChange": "2026-10-24T06:40:47+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
@@ -8940,11 +8948,11 @@
    },
    "tasks": [
     {
-     "title": "P1GX00_newspaper share daily and placing",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Grass Crossword (#86): easier to place words, one Share button, a daily that is a new puzzle each day, and the link preview back.",
-     "since": "2026-10-24T02:54:21+00:00",
+     "title": "P1GX01_visual round design",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Grass Crossword: a newspaper crossword with grass growing through it: three mock looks with the taste spin.",
+     "since": "2026-10-24T06:40:45+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -8954,10 +8962,10 @@
      "result": ""
     },
     {
-     "title": "P1GX01_visual round design",
+     "title": "P1GX00_newspaper share daily and placing",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Grass Crossword: a newspaper crossword with grass growing through it: three mock looks with the taste spin.",
+     "plan": "Grass Crossword (#86): easier to place words, one Share button, a daily that is a new puzzle each day, and the link preview back.",
      "since": "2026-10-24T02:54:21+00:00",
      "done": null,
      "reviewed": false,
@@ -9053,8 +9061,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 12
    },
@@ -24494,13 +24502,13 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 14.4,
-    "earlierRounds": 6,
-    "earlierUsdEst": 21.6,
+    "claudeUsdEst": 18.0,
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
     "totalUsdEst": 36.0
    },
    "tasks": [
@@ -24520,17 +24528,17 @@
     },
     {
      "title": "P3OR70_apprentice art shapes module",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "The Apprentice: load the new woodcut tool and figure drawings into the game as one data file, with a test",
      "since": "2026-10-24T06:38:32+00:00",
-     "done": null,
+     "done": "2026-10-24T06:38:32+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 0,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: node tools/make_art_shapes.mjs && node --test test/art_shapes.test.mjs && node -e \"const vm=require('vm'),fs=require('fs');const c={window:{}};vm.runInNewContext(fs.readFileSync('docs/art.shapes.js',"
     },
     {
      "title": "P1AP02_visual round design",
@@ -24590,10 +24598,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": {
     "date": "2026-10-23",
