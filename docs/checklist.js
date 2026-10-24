@@ -3,7 +3,7 @@
 (function (root) {
   const V = root.BoardViews || (typeof require !== 'undefined' ? require('./views.js') : null);
   const COLUMNS = [
-    ['story', 'Story line'], ['first_minute', 'First minute'], ['a11y', 'Big text and colour'], ['expect', 'What to expect'],
+    ['story', 'Story line'], ['first_minute', 'First minute'], ['a11y', 'Big text and colour'], ['expect', 'Why this exists'],
     ['credits', 'Credits'], ['saves', 'Saves carry over'], ['standard', 'Preview and share'], ['live', 'Live page check'],
   ];
   // Every value in words; colour is only a second cue.

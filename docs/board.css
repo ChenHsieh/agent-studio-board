@@ -281,13 +281,15 @@ body.qmode .now, body.qmode .tally, body.qmode .tools, body.qmode #games, body.q
 .archived-note { border-left-color: var(--muted); }
 .view-note { list-style: none; padding: 12px 0; font: 16px/1.45 var(--serif); color: var(--ink); border-bottom: 1px solid var(--rule); }
 
-/* What to expect: under the description, open in Ready to try and Needs you */
+/* Why this exists: under the description, open in Ready to try, Needs you and on an opened card */
 .expect { margin: -4px 0 12px 68px; font: 15px/1.45 var(--serif); color: var(--ink); }
 .expect > summary { cursor: pointer; font: 600 13px/1.6 var(--mono); text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink); min-height: 32px; display: flex; align-items: center; gap: 6px; }
 .expect > summary::marker { content: ""; }
 .expect > summary::before { content: "+"; font-weight: 600; width: 1ch; }
 .expect[open] > summary::before { content: "\2212"; }
 .expect p { margin: 2px 0 0; }
+.why-src { display: inline; font: 14px/1.45 var(--serif); color: var(--muted); }
+.why-src a { color: var(--ink); text-decoration: underline; }
 
 /* Game numbers (P1BD07): a small #37 before the title, a from/to range in Filter, and Copy list. */
 .num { font: 600 13px var(--mono); color: var(--muted); letter-spacing: 0; margin-right: 2px; white-space: nowrap; }

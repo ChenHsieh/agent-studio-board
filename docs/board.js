@@ -296,12 +296,16 @@ function sinceReleaseHtml(g) {
   return `<span class="since-release"><b>Updated since release</b> ${esc(when)}${lc ? ': ' + esc(lc) : ''}</span>`;
 }
 
-// What to expect (board/expect.tsv): the goal and what drives the game, so a first try knows what it is testing.
-// Open by default where Chen is about to play (Ready to try, Needs you); one tap away elsewhere.
-function expectHtml(g) {
-  if (!g.whatToExpect) return '';
-  const open = view === 'ready' || view === 'needs';
-  return `<details class="expect"${open ? ' open' : ''}><summary>What to expect</summary><p>${esc(g.whatToExpect)}</p></details>`;
+// Why this exists (board/why_exists.tsv, Chen 2026-10-24): what sparked the game, what it tries to say, why it is worth
+// playing, with the most creditable source when there is one. Open where Chen is about to play (Ready to try, Needs you)
+// and on an opened card; one tap away elsewhere.
+function whyExistsHtml(g) {
+  if (!g.whyExists) return '';
+  const isOpen = view === 'ready' || view === 'needs' || open.has(g.id);
+  const s = g.whySource || {};
+  const src = s.url ? `<span class="why-src">Source: <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name || s.url)}</a></span>`
+    : s.name ? `<span class="why-src">Source: ${esc(s.name)}</span>` : '';
+  return `<details class="expect why-exists"${isOpen ? ' open' : ''}><summary>Why this exists</summary><p>${esc(g.whyExists)}${src ? ' ' + src : ''}</p></details>`;
 }
 
 function gameHtml(g) {
@@ -320,10 +324,10 @@ function gameHtml(g) {
   <button class="row" aria-expanded="${open.has(g.id)}">${img}<span class="name">${numLabel(g) ? `<span class="num">${esc(numLabel(g))}</span> ` : ''}${esc(g.title)}</span>
     <span class="meta">${stageBadge(g)}${g.verdict && !g.released && !g.archived ? `<span class="vd ${esc(g.verdict.verdict)}">${esc(g.verdict.verdict)}</span>` : ''}<span class="p">${g.archived ? '' : esc(g.priority || '')}</span></span>
     <span class="line">${g.needsYou ? '<b class="ask">To do:</b> ' : ''}${esc(whatToDo(g))}</span>${sinceReleaseHtml(g)}${glanceHtml(g)}</button>
-  ${expectHtml(g)}
+  ${whyExistsHtml(g)}
   <a class="play-link" href="${esc(g.url)}" target="_blank" rel="noopener" aria-label="Play ${esc(g.title)}">Play</a>
   <div class="detail">
-    ${g.why ? `<p class="why"><b>Why this exists:</b> ${esc(g.why)}</p>` : ''}
+    ${g.why ? `<p class="why"><b>In one line:</b> ${esc(g.why)}</p>` : ''}
     <p class="detail-links"><a href="${esc(g.url)}" target="_blank" rel="noopener">Play</a><a href="${esc(repoUrl)}" target="_blank" rel="noopener">Repo</a><button type="button" class="pbtn" data-copy="${esc(g.url)}">Copy link</button></p>
     ${promoHtml(g)}
     ${g.line ? `<p>${esc(g.line)}</p>` : ''}
@@ -485,6 +489,8 @@ document.addEventListener('click', (e) => {
     localStorage.setItem('board.open', JSON.stringify([...open]));
     row.parentElement.classList.toggle('open');
     row.setAttribute('aria-expanded', String(open.has(id)));
+    const wx = row.parentElement.querySelector('details.why-exists');
+    if (wx && open.has(id)) wx.open = true;
   }
 });
 $('#q').addEventListener('input', () => data && render());
