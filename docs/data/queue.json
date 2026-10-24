@@ -1,5 +1,5 @@
 {
- "generated": 1792811049,
+ "generated": 1792811217,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -7,7 +7,7 @@
   "waiting": 2,
   "queued": 2,
   "running": 0,
-  "done24h": 32,
+  "done24h": 15,
   "modelsQueued": {
    "deepseek-v4-flash": 2
   },
@@ -125,24 +125,21 @@
    "created": 1792802208
   },
   {
-   "id": "P1UX03_checklist-view-with-range",
-   "request": "Board: Checklist view, pick a number range and see which games miss what",
-   "game": "Studio",
+   "id": "P1TH01_swap-budget-real-choice",
+   "request": "Tree Hero",
+   "game": "Tree Hero",
    "route": "Claude",
-   "model": "sonnet",
+   "model": "opus",
    "effort": "high",
    "kind": "build",
-   "size": "studio",
+   "size": "one repo",
    "estMinutes": null,
-   "after": [
-    "P1BD07_game-numbers-on-the-board",
-    "P1UX00_board-checklist-data"
-   ],
-   "priority": null,
-   "why": "",
+   "after": [],
+   "priority": "P1",
+   "why": "Fitch maximum-parsimony phylogenetics; swap branches of a seven-species tree until it needs the fewest evolutionary changes; no timeline, undo is free.",
    "state": "running",
-   "at": 1792807366,
-   "created": 1792807366
+   "at": 1792806505,
+   "created": 1792806505
   },
   {
    "id": "P2MN00_mint-story-first-minute-and-night",
@@ -383,23 +380,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792810482
-  },
-  {
-   "id": "P1TH01_swap-budget-real-choice",
-   "request": "Tree Hero",
-   "game": "Tree Hero",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "Fitch maximum-parsimony phylogenetics; swap branches of a seven-species tree until it needs the fewest evolutionary changes; no timeline, undo is free.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792806505
   },
   {
    "id": "P2CC35_colony-count-save-migration-test",
@@ -1473,7 +1453,6 @@
    "why": "",
    "state": "waiting",
    "waitingOn": [
-    "P1UX03_checklist-view-with-range",
     "P1UX05_requests-file-and-planner"
    ],
    "created": 1792807366
@@ -2970,6 +2949,26 @@
    "after": [
     "P1BD07_game-numbers-on-the-board",
     "P1BD05_archived-tier-for-time-limited-games"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792807366,
+   "created": 1792807366
+  },
+  {
+   "id": "P1UX03_checklist-view-with-range",
+   "request": "Board: Checklist view, pick a number range and see which games miss what",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1BD07_game-numbers-on-the-board",
+    "P1UX00_board-checklist-data"
    ],
    "priority": null,
    "why": "",
