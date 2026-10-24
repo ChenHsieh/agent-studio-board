@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T03:34:41+00:00",
+ "generated": "2026-10-24T03:37:09+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 87,
+    "queued": 86,
     "running": 0,
     "doneToday": 7,
-    "minutes": 3480,
-    "estimateMinutes": 3480
+    "minutes": 3440,
+    "estimateMinutes": 3440
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 108,
+    "doneToday": 109,
     "minutes": 180,
     "estimateMinutes": 90
    }
   },
-  "queued": 88,
+  "queued": 87,
   "running": 2,
-  "doneToday": 115,
+  "doneToday": 116,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,17 +42,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3660,
-  "estimatedFinish": "2026-10-26T13:34:41+00:00",
-  "estimateMinutes": 3480
+  "minutesRemaining": 3620,
+  "estimatedFinish": "2026-10-26T12:57:09+00:00",
+  "estimateMinutes": 3440
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "even-water",
-   "task": "P1EW02_visual round build",
-   "since": "2026-10-24T03:08:02+00:00",
-   "activity": "2026-10-24T03:33:13+00:00",
+   "game": "clean-features",
+   "task": "P1CF01_rules and levels drop cost",
+   "since": "2026-10-24T03:34:56+00:00",
+   "activity": "2026-10-24T03:35:04+00:00",
    "commit": null
   },
   {
@@ -68,8 +68,8 @@
  "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 256,
-  "usdEst": 921.6,
+  "runs": 257,
+  "usdEst": 925.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -115,7 +115,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 100
+   "changes": 101
   }
  ],
  "houseRules": 25,
@@ -5471,10 +5471,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 68.63,
+   "costTotalUsd": 72.23,
    "latestChange": {
-    "text": "feat: Even Water is drawn as a brush map of a dry valley",
-    "at": "2026-10-24T03:33:13+00:00"
+    "text": "P1EW02 brush map look live (seals, red rings, ink-well pit, Kai type);",
+    "at": "2026-10-24T03:34:55+00:00"
    },
    "promo": {
     "files": {
@@ -5486,21 +5486,21 @@
    "why": "A water board game flooded in a tank, and a thread worrying that a public study-abroad fund flows to those already ahead.",
    "state": "ship",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "visual round build",
+   "waitingOn": "owner",
    "id": "even-water",
    "number": 131,
    "repo": "even-water",
    "title": "Even Water",
    "line": "Place a few stones so the water finds every cup before the deep pit drinks it; 12 villages.",
    "url": "https://chenhsieh.github.io/even-water/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "has real potential; refine the feel (slower, predictable, guided) and the look...",
    "shelfNote": "",
@@ -5513,34 +5513,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-24T03:33:13+00:00",
+   "lastChange": "2026-10-24T03:34:55+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 7,
+    "claudeRuns": 8,
     "apiRuns": 0,
     "codexTokens": 194790,
     "codexUsdEst": 0.23,
-    "claudeUsdEst": 25.2,
+    "claudeUsdEst": 28.8,
     "earlierRounds": 12,
     "earlierUsdEst": 43.2,
-    "totalUsdEst": 68.63
+    "totalUsdEst": 72.23
    },
    "tasks": [
-    {
-     "title": "P1EW02_visual round build",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Even Water: build the chosen look and the feedback animations.",
-     "since": "2026-10-24T03:08:02+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1EW01_visual round design",
      "state": "done",
@@ -5560,6 +5546,20 @@
      "state": "done",
      "worker": "Claude",
      "plan": "Even Water (#131): the water moves slower and predictably, with a guide that shows where it will go before you place a stone.",
+     "since": "2026-10-24T02:14:35+00:00",
+     "done": "2026-10-24T02:14:35+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1EW02_visual round build",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Even Water: build the chosen look and the feedback animations.",
      "since": "2026-10-24T02:14:35+00:00",
      "done": "2026-10-24T02:14:35+00:00",
      "reviewed": false,
@@ -5642,9 +5642,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 8
+    "done": 9
    },
    "verdict": {
     "date": "2026-10-22",
@@ -5652,8 +5652,14 @@
     "note": "Stones steer one pour so every cup gets some; the first-drop line is enough to reason and still leaves a puzzle"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-24T03:34:55+00:00",
+     "ok": true,
+     "note": "P1EW02 brush map look live (seals, red rings, ink-well pit, Kai type);",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T03:33:13+00:00",
      "ok": true,
@@ -5716,12 +5722,6 @@
     },
     {
      "at": "2026-10-22T21:39:06+00:00",
-     "ok": false,
-     "note": "see",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-22T21:15:30+00:00",
      "ok": false,
      "note": "see",
      "source": "board note"
@@ -18827,7 +18827,7 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-10-14T20:04:00+00:00",
+   "firstSeen": "2026-10-15T05:19:35+00:00",
    "lastChange": "2026-10-24T03:22:27+00:00",
    "cost": {
     "apiUsd": 9.24,
@@ -18948,6 +18948,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-24T03:20:42+00:00",
+     "ok": true,
+     "note": "fix: the original scan shows by default on every new target",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-22T21:03:29+00:00",
      "ok": true,
      "note": "P3OR02_remote-viewer-judge-helpers-test: WORKDIR",
@@ -19006,12 +19012,6 @@
      "ok": true,
      "note": "fix: make every opening file a clue choice",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-19T19:57:53+00:00",
-     "ok": true,
-     "note": "distinct five-file investigation briefs, shared daily progress, and transcript-first evidence view live; 390x844 and 320x568 real-touch checks reviewed",
-     "source": "board note"
     }
    ]
   },
@@ -28195,15 +28195,15 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "story and strings",
+   "waitingOn": "rules and levels drop cost",
    "id": "clean-features",
    "number": 96,
    "repo": "clean-features",
    "title": "What the Dish Sees",
    "line": "Label each colony with the one shape it sees by placing.",
    "url": "https://chenhsieh.github.io/clean-features/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Find the playable frame for the latent-space game: a clear",
    "shelfNote": "",
@@ -28216,7 +28216,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-24T02:23:15+00:00",
+   "lastChange": "2026-10-24T03:35:04+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -28231,11 +28231,11 @@
    },
    "tasks": [
     {
-     "title": "P1CF02_story and strings",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Clean Features: the seed library night shift story in every line, English and Traditional Chinese",
-     "since": "2026-10-24T02:23:15+00:00",
+     "title": "P1CF01_rules and levels drop cost",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Clean Features: pictures cost one drop per mark, score is drops left, levels where no shortcut wins",
+     "since": "2026-10-24T03:34:56+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -28245,11 +28245,11 @@
      "result": ""
     },
     {
-     "title": "P1CF01_rules and levels drop cost",
+     "title": "P1CF02_story and strings",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Clean Features: pictures cost one drop per mark, score is drops left, levels where no shortcut wins",
-     "since": "2026-10-24T01:32:28+00:00",
+     "plan": "Clean Features: the seed library night shift story in every line, English and Traditional Chinese",
+     "since": "2026-10-24T02:23:15+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -28344,8 +28344,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 5,
-    "running": 0,
+    "queued": 4,
+    "running": 1,
     "waitingDesign": 0,
     "done": 10
    },
@@ -29032,7 +29032,7 @@
    "url": "https://chenhsieh.github.io/even-water/",
    "added": "2026-10-22",
    "try": "Place stones so one pour reaches every cup before the pit drinks it",
-   "busy": true,
+   "busy": false,
    "image": "promo/even-water/first.jpg"
   }
  ],
