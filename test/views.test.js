@@ -20,4 +20,6 @@ console.log('ok  "Updated since release" only when the last change is after the 
 assert.deepEqual(inView('needs'), ['releasedAsked']); console.log('ok  a released game is in Needs you only with an asks.tsv row (needsYou)');
 assert.equal(V.changeSummary('P3OR02_remote-viewer-judge-helpers-test: WORKDIR'), ''); assert.equal(V.changeSummary('P1LH00 live : F-key hints gone'), 'P1LH00 live : F-key hints gone');
 assert.equal(V.changeSummary('P2RL15_credits-panel-time-material: credits list every source'), 'credits list every source'); console.log('ok  the change summary drops task codes and empty commit subjects');
+assert.deepEqual(inView('archived'), ['archived']); for (const v of ['needs', 'ready', 'released', 'progress', 'shelf']) assert.ok(!inView(v).includes('archived'), v);
+console.log('ok  an archived game shows only in Archived (and All), even with an old ask');
 module.exports = { games, inView };

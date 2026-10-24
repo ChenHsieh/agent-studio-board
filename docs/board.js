@@ -21,7 +21,7 @@ const savedFilters = JSON.parse(localStorage.getItem('board.filters') || '{}');
 let filters = { stage: [], priority: [], verdict: [], worker: [], recent: [], ...savedFilters };
 delete filters.needs;
 // The first-row view switch. Needs you is the default; the last choice is remembered.
-const VIEWS = [['needs', 'Needs you'], ['ready', 'Ready to try'], ['released', 'Released'], ['progress', 'In progress'], ['shelf', 'Shelf'], ['all', 'All'], ['queue', 'Queue']];
+const VIEWS = [['needs', 'Needs you'], ['ready', 'Ready to try'], ['released', 'Released'], ['progress', 'In progress'], ['shelf', 'Shelf'], ['archived', 'Archived'], ['all', 'All'], ['queue', 'Queue']];
 let view = localStorage.getItem('board.view');
 if (!VIEWS.some(([v]) => v === view)) view = 'needs';
 // Needs you means: a human is the only thing the game is waiting for (the server sets needsYou only from board/asks.tsv).
@@ -40,6 +40,7 @@ function whyKind(g) {
 }
 const WHY_ORDER = { decision: 0, version: 1, question: 2 };
 function whatToDo(g) {
+  if (g.archived) return g.archivedNote || 'Made for one moment. Stays online. No more work.';
   if (g.needsYou) return g.needsYou;
   if (view === 'ready' && isReady(g)) return 'Play it, then give a verdict: ship, revise or shelf.';
   return g.priorityNote || g.line || '';
@@ -189,7 +190,7 @@ function queueHtml() {
 
 function tallyHtml() {
   const n = {};
-  for (const g of data.games) { n[g.stage] = (n[g.stage] || 0) + 1; if (g.released) n.released = (n.released || 0) + 1; }
+  for (const g of data.games) { if (g.archived) { n.archived = (n.archived || 0) + 1; continue; } n[g.stage] = (n[g.stage] || 0) + 1; if (g.released) n.released = (n.released || 0) + 1; }
   const parts = (n.released ? [`<span><b>${n.released}</b> released</span>`] : []).concat(['building', 'review', 'queued', 'planning', 'shelf', 'live'].filter((s) => n[s]).map((s) => `<span><b>${n[s]}</b> ${s}</span>`));
   return parts.join('');
 }
@@ -228,6 +229,7 @@ function promoHtml(g) {
 
 // Released games say so in words: public-ready, still open to refinement. The working stage stays in the data.
 function stageBadge(g) {
+  if (g.archived) return '<span class="st archived">Archived</span>';
   if (!g.released) return `<span class="st ${esc(g.stage)}">${esc(g.stage)}</span>`;
   return `<span class="st released">${inProg(g) ? 'Released, refining' : 'Released'}</span>`;
 }
@@ -255,7 +257,7 @@ function gameHtml(g) {
   const hist = (g.history || []).map((h) => `<li><time>${esc(day(h.at))}</time>${h.ok ? '' : '<span class="no">not done: </span>'}${esc(h.note)}${h.source ? `<small class="history-source">${esc(h.source)}</small>` : ''}</li>`).join('');
   return `<li class="game${open.has(g.id) ? ' open' : ''}" data-id="${esc(g.id)}">
   <button class="row" aria-expanded="${open.has(g.id)}">${img}<span class="name">${esc(g.title)}</span>
-    <span class="meta">${stageBadge(g)}${g.verdict && !g.released ? `<span class="vd ${esc(g.verdict.verdict)}">${esc(g.verdict.verdict)}</span>` : ''}<span class="p">${esc(g.priority || '')}</span></span>
+    <span class="meta">${stageBadge(g)}${g.verdict && !g.released && !g.archived ? `<span class="vd ${esc(g.verdict.verdict)}">${esc(g.verdict.verdict)}</span>` : ''}<span class="p">${g.archived ? '' : esc(g.priority || '')}</span></span>
     <span class="line">${g.needsYou ? '<b class="ask">To do:</b> ' : ''}${esc(whatToDo(g))}</span>${sinceReleaseHtml(g)}${glanceHtml(g)}</button>
   <a class="play-link" href="${esc(g.url)}" target="_blank" rel="noopener" aria-label="Play ${esc(g.title)}">Play</a>
   <div class="detail">
@@ -265,6 +267,7 @@ function gameHtml(g) {
     ${g.line ? `<p>${esc(g.line)}</p>` : ''}
     <p class="cost">${costLine(g.cost)}<br><small class="muted">${esc(COST_TIP)}</small></p>
     ${g.needsYou ? `<p class="said">${esc(g.needsYou)}<small>Waiting for a human</small></p>` : ''}
+    ${g.archived ? `<p class="said archived-note"><b>Archived${g.archivedOn ? ' on ' + esc(g.archivedOn) : ''}.</b> ${esc(g.archivedNote || 'Made for one moment. Stays online. No more work.')}</p>` : ''}
     ${g.released ? `<p class="said released-note"><b>Released${g.releasedOn ? ' on ' + esc(g.releasedOn) : ''}.</b> Ready for the public${inProg(g) ? '; being refined now' : '; can still be refined'}.${g.releasedNote ? ' ' + esc(g.releasedNote) : ''}<small>Stage underneath: ${esc(g.stage)}</small></p>` : ''}
     ${g.verdict ? `<p class="said">${esc(g.verdict.verdict)}: ${esc(g.verdict.note)}<small>Verdict, ${esc(g.verdict.date)}</small></p>` : ''}
     ${g.shelfNote ? `<p class="said">${esc(g.shelfNote)}<small>Why it is on the shelf</small></p>` : ''}
@@ -343,11 +346,12 @@ function render() {
   if (view === 'needs' && (data.systemNeeds || []).length) {
     html += '<li class="prio-h" role="presentation">The studio needs</li>' + data.systemNeeds.map((t) => `<li class="sys-need"><b class="ask">System needs:</b> ${esc(String(t).replace(/^System needs:\s*/, ''))}</li>`).join('');
   }
+  if (view === 'archived') html += '<li class="view-note" role="presentation">Made for one moment. Stays online. No more work.</li>';
   for (const g of list) {
     if (view === 'needs') { const [key, label] = whyKind(g); if (key !== lastGroup) { html += `<li class="prio-h" role="presentation">${label}</li>`; lastGroup = key; } }
     html += gameHtml(g);
   }
-  const emptyText = { needs: 'Nothing is waiting for you. Try “Ready to try”.', ready: 'No new version is waiting to be tried.', progress: 'Nothing is queued or running.', shelf: 'The shelf is empty.', released: 'No game has been released yet.', all: '' }[view];
+  const emptyText = { needs: 'Nothing is waiting for you. Try “Ready to try”.', ready: 'No new version is waiting to be tried.', progress: 'Nothing is queued or running.', shelf: 'The shelf is empty.', archived: 'Nothing is archived.', released: 'No game has been released yet.', all: '' }[view];
   $('#games').innerHTML = html || `<li class="empty">${emptyText || 'Nothing matches.'}</li>`;
 }
 
