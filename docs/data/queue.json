@@ -1,5 +1,5 @@
 {
- "generated": 1792810537,
+ "generated": 1792810675,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -162,8 +162,8 @@
    "created": 1792807735
   },
   {
-   "id": "P1UX02_one-state-per-game",
-   "request": "Board: one clear state per game, with how long it has been there",
+   "id": "P1UX03_checklist-view-with-range",
+   "request": "Board: Checklist view, pick a number range and see which games miss what",
    "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
@@ -173,7 +173,7 @@
    "estMinutes": null,
    "after": [
     "P1BD07_game-numbers-on-the-board",
-    "P1BD05_archived-tier-for-time-limited-games"
+    "P1UX00_board-checklist-data"
    ],
    "priority": null,
    "why": "",
@@ -711,17 +711,18 @@
    "created": 1792794950
   },
   {
-   "id": "P1UX03_checklist-view-with-range",
-   "request": "Board: Checklist view, pick a number range and see which games miss what",
+   "id": "P1UX05_requests-file-and-planner",
+   "request": "Board actions become requests the planner turns into tasks, with a cost check",
    "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
-   "kind": "build",
+   "kind": "design",
    "size": "studio",
    "estMinutes": null,
    "after": [
-    "P1BD07_game-numbers-on-the-board",
+    "P2UX01_range-selector-parser",
+    "P1UX02_one-state-per-game",
     "P1UX00_board-checklist-data"
    ],
    "priority": null,
@@ -1371,29 +1372,6 @@
     "P1TE04_room-tests"
    ],
    "created": 1792795012
-  },
-  {
-   "id": "P1UX05_requests-file-and-planner",
-   "request": "Board actions become requests the planner turns into tasks, with a cost check",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "design",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2UX01_range-selector-parser",
-    "P1UX02_one-state-per-game",
-    "P1UX00_board-checklist-data"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P1UX02_one-state-per-game"
-   ],
-   "created": 1792807366
   },
   {
    "id": "P1UX06_action-sheet-and-request-cards",
@@ -2838,6 +2816,26 @@
    "size": "studio",
    "estMinutes": null,
    "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792807366,
+   "created": 1792807366
+  },
+  {
+   "id": "P1UX02_one-state-per-game",
+   "request": "Board: one clear state per game, with how long it has been there",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1BD07_game-numbers-on-the-board",
+    "P1BD05_archived-tier-for-time-limited-games"
+   ],
    "priority": null,
    "why": "",
    "state": "done",
