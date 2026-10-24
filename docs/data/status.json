@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-24T23:06:51+00:00",
+ "generated": "2026-10-24T23:09:08+00:00",
  "ops": {
-  "count": 75,
+  "count": 72,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,22 +20,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 67,
+    "queued": 66,
     "running": 1,
     "doneToday": 2,
-    "minutes": 2720,
-    "estimateMinutes": 2720
+    "minutes": 2680,
+    "estimateMinutes": 2680
    },
    "Claude": {
     "queued": 1,
-    "running": 3,
+    "running": 4,
     "doneToday": 73,
-    "minutes": 240,
-    "estimateMinutes": 120
+    "minutes": 300,
+    "estimateMinutes": 150
    }
   },
-  "queued": 68,
-  "running": 4,
+  "queued": 67,
+  "running": 5,
   "doneToday": 75,
   "lanes": {
    "Codex": 1,
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2960,
-  "estimatedFinish": "2026-10-26T20:26:51+00:00",
-  "estimateMinutes": 2720
+  "minutesRemaining": 2980,
+  "estimatedFinish": "2026-10-26T19:49:08+00:00",
+  "estimateMinutes": 2680
  },
  "lanes": [
   {
@@ -64,7 +64,7 @@
    "game": "lot-waits",
    "task": "P1LW02_lot waits day strip and trust",
    "since": "2026-10-24T22:56:10+00:00",
-   "activity": "2026-10-24T23:06:51+00:00",
+   "activity": "2026-10-24T23:09:07+00:00",
    "commit": {
     "at": "2026-10-24T23:05:36+00:00",
     "subject": "fix: fit trust and day marks on small phones"
@@ -75,7 +75,7 @@
    "game": "nobody-looking",
    "task": "P1NL03_daily from the hard bank",
    "since": "2026-10-24T23:05:13+00:00",
-   "activity": "2026-10-24T23:05:21+00:00",
+   "activity": "2026-10-24T23:08:27+00:00",
    "commit": null
   },
   {
@@ -85,10 +85,18 @@
    "since": null,
    "activity": null,
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "pinch-points",
+   "task": "P1PP01_daily levels and quirky share",
+   "since": "2026-10-24T23:07:25+00:00",
+   "activity": "2026-10-24T23:07:25+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 3,
+ "claudeWorkers": 4,
  "apiSpentUsd": 317.01,
  "claudeInSession": {
   "runs": 286,
@@ -16009,7 +16017,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T17:56:06+00:00",
-   "lastChange": "2026-10-24T23:05:21+00:00",
+   "lastChange": "2026-10-24T23:08:27+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -17921,15 +17929,15 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "pinch points strategy card and daily",
+   "waitingOn": "daily levels and quirky share",
    "id": "pinch-points",
    "number": 119,
    "repo": "pinch-points",
    "title": "Pinch Points",
    "line": "Pinch six stones flat as the surface flattens live; par set by search, plus a daily.",
    "url": "https://chenhsieh.github.io/pinch-points/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "turns an esoteric paper into an interactive game; explain the mechanism, show...",
    "shelfNote": "",
@@ -17943,7 +17951,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T20:22:39+00:00",
-   "lastChange": "2026-10-24T22:40:09+00:00",
+   "lastChange": "2026-10-24T23:07:25+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -17957,6 +17965,20 @@
     "totalUsdEst": 43.54
    },
    "tasks": [
+    {
+     "title": "P1PP01_daily levels and quirky share",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Pinch Points: a generated daily level and a fun, academic, quirky share text.",
+     "since": "2026-10-24T23:07:25+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1PP03_pinch points strategy card and daily",
      "state": "queued",
@@ -17977,20 +17999,6 @@
      "worker": "Codex",
      "plan": "Pinch Points: visual round with the taste spin, three looks and a pick",
      "since": "2026-10-24T06:59:29+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P1PP01_daily levels and quirky share",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Pinch Points: a generated daily level and a fun, academic, quirky share text.",
-     "since": "2026-10-24T02:59:55+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -18057,8 +18065,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 4
    },
@@ -25985,7 +25993,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:14:25+00:00",
-   "lastChange": "2026-10-24T23:06:51+00:00",
+   "lastChange": "2026-10-24T23:09:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
