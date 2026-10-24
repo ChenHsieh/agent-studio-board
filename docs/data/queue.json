@@ -1,5 +1,5 @@
 {
- "generated": 1792885642,
+ "generated": 1792885781,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -459,42 +459,21 @@
    "created": 1792810482
   },
   {
-   "id": "P1FS02_forager-one-screen",
-   "request": "P1FS02_forager one screen",
+   "id": "P1FS06_one-screen-ux-study",
+   "request": "P1FS06_one screen ux study",
    "game": "Studio",
    "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1FS00_one-screen-audit"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792858516
-  },
-  {
-   "id": "P1FS03_flagships-one-screen",
-   "request": "P1FS03_flagships one screen",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
+   "model": "opus",
    "effort": "high",
    "kind": "build",
    "size": "studio",
    "estMinutes": null,
-   "after": [
-    "P1FS01_one-screen-kit-layout"
-   ],
+   "after": [],
    "priority": null,
    "why": "",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792885638
+   "created": 1792885748
   },
   {
    "id": "P1IN09_idea-round-6-five-ideas",
@@ -856,6 +835,90 @@
    ],
    "created": 1792715918,
    "estPercentOfWeek": 217.23
+  },
+  {
+   "id": "P1FS02_forager-one-screen",
+   "request": "P1FS02_forager one screen",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1FS05_next-prompt-and-canvas-scroll"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P1FS05_next-prompt-and-canvas-scroll"
+   ],
+   "created": 1792885662
+  },
+  {
+   "id": "P1FS03_flagships-one-screen",
+   "request": "P1FS03_flagships one screen",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1FS05_next-prompt-and-canvas-scroll"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P1FS05_next-prompt-and-canvas-scroll"
+   ],
+   "created": 1792885659
+  },
+  {
+   "id": "P1FS05_next-prompt-and-canvas-scroll",
+   "request": "P1FS05_next prompt and canvas scroll",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1FS06_one-screen-ux-study"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P1FS06_one-screen-ux-study"
+   ],
+   "created": 1792885748
+  },
+  {
+   "id": "P1FS07_one-screen-by-construction",
+   "request": "P1FS07_one screen by construction",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1FS06_one-screen-ux-study"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P1FS06_one-screen-ux-study"
+   ],
+   "created": 1792885753
   },
   {
    "id": "P1MM04_marble-act-two-look-and-lessons",
