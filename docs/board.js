@@ -243,6 +243,14 @@ function sinceReleaseHtml(g) {
   return `<span class="since-release"><b>Updated since release</b> ${esc(when)}${lc ? ': ' + esc(lc) : ''}</span>`;
 }
 
+// What to expect (board/expect.tsv): the goal and what drives the game, so a first try knows what it is testing.
+// Open by default where Chen is about to play (Ready to try, Needs you); one tap away elsewhere.
+function expectHtml(g) {
+  if (!g.whatToExpect) return '';
+  const open = view === 'ready' || view === 'needs';
+  return `<details class="expect"${open ? ' open' : ''}><summary>What to expect</summary><p>${esc(g.whatToExpect)}</p></details>`;
+}
+
 function gameHtml(g) {
   const img = g.image ? `<img class="thumb" src="${esc(g.image)}" alt="" loading="lazy">` : `<span class="thumb blank" aria-hidden="true">${esc(g.title[0])}</span>`;
   const repoUrl = `https://github.com/ChenHsieh/${encodeURIComponent(g.repo || g.id)}`;
@@ -259,6 +267,7 @@ function gameHtml(g) {
   <button class="row" aria-expanded="${open.has(g.id)}">${img}<span class="name">${esc(g.title)}</span>
     <span class="meta">${stageBadge(g)}${g.verdict && !g.released && !g.archived ? `<span class="vd ${esc(g.verdict.verdict)}">${esc(g.verdict.verdict)}</span>` : ''}<span class="p">${g.archived ? '' : esc(g.priority || '')}</span></span>
     <span class="line">${g.needsYou ? '<b class="ask">To do:</b> ' : ''}${esc(whatToDo(g))}</span>${sinceReleaseHtml(g)}${glanceHtml(g)}</button>
+  ${expectHtml(g)}
   <a class="play-link" href="${esc(g.url)}" target="_blank" rel="noopener" aria-label="Play ${esc(g.title)}">Play</a>
   <div class="detail">
     ${g.why ? `<p class="why"><b>Why this exists:</b> ${esc(g.why)}</p>` : ''}

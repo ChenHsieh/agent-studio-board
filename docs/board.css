@@ -280,3 +280,11 @@ body.qmode .now, body.qmode .tally, body.qmode .tools, body.qmode #games, body.q
 .st.archived { color: var(--ink); background: transparent; border: 1px dashed var(--ink); }
 .archived-note { border-left-color: var(--muted); }
 .view-note { list-style: none; padding: 12px 0; font: 16px/1.45 var(--serif); color: var(--ink); border-bottom: 1px solid var(--rule); }
+
+/* What to expect: under the description, open in Ready to try and Needs you */
+.expect { margin: -4px 0 12px 68px; font: 15px/1.45 var(--serif); color: var(--ink); }
+.expect > summary { cursor: pointer; font: 600 13px/1.6 var(--mono); text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink); min-height: 32px; display: flex; align-items: center; gap: 6px; }
+.expect > summary::marker { content: ""; }
+.expect > summary::before { content: "+"; font-weight: 600; width: 1ch; }
+.expect[open] > summary::before { content: "\2212"; }
+.expect p { margin: 2px 0 0; }
