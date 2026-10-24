@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T07:20:26+00:00",
+ "generated": "2026-10-24T07:23:21+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,22 +20,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 80,
+    "queued": 79,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3200,
-    "estimateMinutes": 3200
+    "minutes": 3160,
+    "estimateMinutes": 3160
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 2,
     "doneToday": 7,
-    "minutes": 120,
-    "estimateMinutes": 60
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
-  "queued": 81,
-  "running": 1,
+  "queued": 80,
+  "running": 2,
   "doneToday": 7,
   "lanes": {
    "Codex": 1,
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3320,
-  "estimatedFinish": "2026-10-26T12:40:26+00:00",
-  "estimateMinutes": 3200
+  "minutesRemaining": 3340,
+  "estimatedFinish": "2026-10-26T12:03:21+00:00",
+  "estimateMinutes": 3160
  },
  "lanes": [
   {
@@ -58,10 +58,18 @@
    "since": "2026-10-24T06:57:22+00:00",
    "activity": "2026-10-24T07:05:00+00:00",
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "peony-dream",
+   "task": "P1PD01_lag stuck drag and dream link",
+   "since": "2026-10-24T07:22:55+00:00",
+   "activity": "2026-10-24T07:23:01+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
   "runs": 267,
@@ -16884,7 +16892,7 @@
    ]
   },
   {
-   "nextTask": "Peony Dream (#99): no lag when dragging, no...",
+   "nextTask": null,
    "costTotalUsd": 43.79,
    "latestChange": {
     "text": "all levels open, fold edge steers within 5 px of finger (was 19), credits link Wikipedia...",
@@ -16913,8 +16921,8 @@
    "title": "Peony Dream",
    "line": "Paint half a face on a sheet of silk, close the silk on.",
    "url": "https://chenhsieh.github.io/peony-dream/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Eastern ink visual direction instead of raster",
    "shelfNote": "",
@@ -16927,7 +16935,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-18T01:51:43+00:00",
-   "lastChange": "2026-10-24T02:54:42+00:00",
+   "lastChange": "2026-10-24T07:23:01+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -16943,10 +16951,10 @@
    "tasks": [
     {
      "title": "P1PD01_lag stuck drag and dream link",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Peony Dream (#99): no lag when dragging, no stuck drag when the pointer leaves the canvas, and a clear link between the fold and the dream.",
-     "since": "2026-10-24T02:54:42+00:00",
+     "since": "2026-10-24T07:22:55+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -17027,8 +17035,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 5
    },
