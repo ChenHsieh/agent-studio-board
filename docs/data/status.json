@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-24T22:20:17+00:00",
+ "generated": "2026-10-24T22:22:40+00:00",
  "ops": {
-  "count": 56,
+  "count": 59,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 73,
-    "running": 0,
+    "queued": 71,
+    "running": 1,
     "doneToday": 2,
-    "minutes": 2920,
-    "estimateMinutes": 2920
+    "minutes": 2880,
+    "estimateMinutes": 2880
    },
    "Claude": {
     "queued": 1,
-    "running": 3,
-    "doneToday": 72,
-    "minutes": 240,
-    "estimateMinutes": 120
+    "running": 2,
+    "doneToday": 73,
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
-  "queued": 74,
+  "queued": 72,
   "running": 3,
-  "doneToday": 74,
+  "doneToday": 75,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,18 +46,29 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3160,
-  "estimatedFinish": "2026-10-26T23:00:17+00:00",
-  "estimateMinutes": 2920
+  "minutesRemaining": 3060,
+  "estimatedFinish": "2026-10-26T22:22:40+00:00",
+  "estimateMinutes": 2880
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "play-template",
-   "task": "P1FS01_one screen kit layout",
+   "game": "Multiple games",
+   "task": "P1FS02_forager one screen",
    "since": null,
    "activity": null,
    "commit": null
+  },
+  {
+   "worker": "Codex",
+   "game": "lot-waits",
+   "task": "P1LW02_lot waits day strip and trust",
+   "since": "2026-10-24T22:22:10+00:00",
+   "activity": "2026-10-24T22:22:40+00:00",
+   "commit": {
+    "at": "2026-10-24T22:22:11+00:00",
+    "subject": "start: P1LW02_lot-waits-day-strip-and-trust"
+   }
   },
   {
    "worker": "Claude",
@@ -66,18 +77,10 @@
    "since": null,
    "activity": null,
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P2NM01_ship name fixes",
-   "since": null,
-   "activity": null,
-   "commit": null
   }
  ],
- "codexLanes": 0,
- "claudeWorkers": 3,
+ "codexLanes": 1,
+ "claudeWorkers": 2,
  "apiSpentUsd": 314.34,
  "claudeInSession": {
   "runs": 286,
@@ -131,7 +134,7 @@
   },
   {
    "day": "2026-10-24",
-   "changes": 34
+   "changes": 35
   }
  ],
  "houseRules": 25,
@@ -14650,10 +14653,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 43.4,
+   "costTotalUsd": 47.0,
    "latestChange": {
-    "text": "feat: turn the road into a mountain bus line",
-    "at": "2026-10-21T05:30:03+00:00"
+    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+    "at": "2026-10-24T22:10:46+00:00"
    },
    "promo": null,
    "why": "A saved post about a website that simulates a whole life as a record card from real statistics.",
@@ -14663,7 +14666,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 3
+    "daysInState": 0
    },
    "waitingOn": "none",
    "id": "missing-field",
@@ -14687,7 +14690,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T04:36:43+00:00",
-   "lastChange": "2026-10-21T05:30:03+00:00",
+   "lastChange": "2026-10-24T22:10:46+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -14696,9 +14699,9 @@
     "codexTokens": 166775,
     "codexUsdEst": 0.2,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 12,
-    "earlierUsdEst": 43.2,
-    "totalUsdEst": 43.4
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
+    "totalUsdEst": 47.0
    },
    "tasks": [
     {
@@ -14740,6 +14743,12 @@
    "needsYou": null,
    "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-24T22:10:46+00:00",
+     "ok": true,
+     "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-21T05:30:03+00:00",
      "ok": true,
@@ -14805,12 +14814,6 @@
      "ok": true,
      "note": "feat:",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-15T22:09:55+00:00",
-     "ok": true,
-     "note": "build start in",
-     "source": "board note"
     }
    ]
   },
@@ -24561,10 +24564,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 47.09,
+   "costTotalUsd": 50.69,
    "latestChange": {
-    "text": "studio standard done: own logo, og tags, share text; audit all ok",
-    "at": "2026-10-21T22:13:33+00:00"
+    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+    "at": "2026-10-24T22:06:28+00:00"
    },
    "promo": {
     "files": {
@@ -24580,7 +24583,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 3
+    "daysInState": 0
    },
    "waitingOn": "none",
    "id": "stroke-tops",
@@ -24604,7 +24607,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:39:08+00:00",
-   "lastChange": "2026-10-21T22:13:33+00:00",
+   "lastChange": "2026-10-24T22:06:28+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -24613,9 +24616,9 @@
     "codexTokens": 238662,
     "codexUsdEst": 0.29,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 12,
-    "earlierUsdEst": 43.2,
-    "totalUsdEst": 47.09
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
+    "totalUsdEst": 50.69
    },
    "tasks": [
     {
@@ -24671,6 +24674,12 @@
    "needsYou": null,
    "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-24T22:06:28+00:00",
+     "ok": true,
+     "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-21T22:13:33+00:00",
      "ok": true,
@@ -24736,12 +24745,6 @@
      "ok": true,
      "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-17T21:31:41+00:00",
-     "ok": true,
-     "note": "fix: holding a button or the board no longer selects text on iPhone",
-     "source": "main commit"
     }
    ]
   },
@@ -25720,7 +25723,7 @@
    ]
   },
   {
-   "nextTask": "The Lot Waits: a seven-day strip, each lot's...",
+   "nextTask": "The Lot Waits: a new first minute that...",
    "costTotalUsd": 57.6,
    "latestChange": {
     "text": "see",
@@ -25749,7 +25752,7 @@
    "title": "The Lot Waits",
    "line": "A week at a shrine side table: give each lot to its visitor on the right day or keep it in a two-slot drawer.",
    "url": "https://chenhsieh.github.io/lot-waits/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "A week at a shrine side table: give each lot to its visitor on the right day or",
@@ -25764,7 +25767,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:13:02+00:00",
-   "lastChange": "2026-10-24T21:07:25+00:00",
+   "lastChange": "2026-10-24T22:22:40+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -25780,16 +25783,19 @@
    "tasks": [
     {
      "title": "P1LW02_lot waits day strip and trust",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "The Lot Waits: a seven-day strip, each lot's good days marked under it, and a trust number that moves",
-     "since": "2026-10-24T17:22:08+00:00",
+     "since": "2026-10-24T22:22:10+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-24T22:22:11+00:00",
+      "subject": "start: P1LW02_lot-waits-day-strip-and-trust"
+     },
      "result": ""
     },
     {
@@ -25878,8 +25884,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 5
    },
@@ -27601,8 +27607,8 @@
    "nextTask": "Tree Hero: tidy words and tests after the...",
    "costTotalUsd": 61.39,
    "latestChange": {
-    "text": "change ticks on branches with letters, column cue (square/circles), press-to-preview...",
-    "at": "2026-10-24T03:26:15+00:00"
+    "text": "test: skin check follows the no-hub rule (no link to or mention of the hub page)",
+    "at": "2026-10-24T22:08:24+00:00"
    },
    "promo": {
     "files": {
@@ -27642,8 +27648,8 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-09-04T18:10:07+00:00",
-   "lastChange": "2026-10-24T03:26:15+00:00",
+   "firstSeen": "2026-09-05T02:54:53+00:00",
+   "lastChange": "2026-10-24T22:08:24+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -27771,6 +27777,12 @@
    "inProgress": true,
    "history": [
     {
+     "at": "2026-10-24T22:08:24+00:00",
+     "ok": true,
+     "note": "test: skin check follows the no-hub rule (no link to or mention of the hub page)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-24T03:26:15+00:00",
      "ok": true,
      "note": "change ticks on branches with letters, column cue (square/circles), press-to-preview ghosts; 320 boards no longer overlap (P1TH02)",
@@ -27834,12 +27846,6 @@
      "at": "2026-10-21T05:34:13+00:00",
      "ok": true,
      "note": "feat: Tree Hero becomes an X11 window",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-19T21:38:33+00:00",
-     "ok": true,
-     "note": "feat: Tree Hero explains the DNA tree choice before the first swap",
      "source": "main commit"
     }
    ]
