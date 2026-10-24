@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T14:21:52+00:00",
+ "generated": "2026-10-24T14:24:09+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 115,
+    "queued": 113,
     "running": 0,
     "doneToday": 0,
-    "minutes": 4600,
-    "estimateMinutes": 4600
+    "minutes": 4520,
+    "estimateMinutes": 4520
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
-    "doneToday": 33,
-    "minutes": 120,
-    "estimateMinutes": 60
+    "running": 2,
+    "doneToday": 34,
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
-  "queued": 116,
-  "running": 1,
-  "doneToday": 33,
+  "queued": 114,
+  "running": 2,
+  "doneToday": 34,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,17 +42,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 4720,
-  "estimatedFinish": "2026-10-27T19:01:52+00:00",
-  "estimateMinutes": 4600
+  "minutesRemaining": 4700,
+  "estimatedFinish": "2026-10-27T17:44:09+00:00",
+  "estimateMinutes": 4520
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "colony-count",
-   "task": "P1CC36_rule out in every mode",
-   "since": "2026-10-24T13:59:49+00:00",
-   "activity": "2026-10-24T14:20:59+00:00",
+   "game": "makeshift-chair",
+   "task": "P2MC05_recheck 3d spike test and 320 overflow",
+   "since": "2026-10-24T14:22:14+00:00",
+   "activity": "2026-10-24T14:22:27+00:00",
    "commit": null
   }
  ],
@@ -2816,8 +2816,8 @@
    "title": "Colony Count",
    "line": "Solve three daily levels, then freeze finished plates.",
    "url": "https://chenhsieh.github.io/colony-count/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Flagship; has its own owner",
    "shelfNote": "",
@@ -2839,30 +2839,16 @@
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 2,
-    "claudeRuns": 21,
+    "claudeRuns": 22,
     "apiRuns": 8,
     "codexTokens": 304598,
     "codexUsdEst": 0.37,
-    "claudeUsdEst": 75.6,
-    "earlierRounds": 23,
-    "earlierUsdEst": 82.8,
+    "claudeUsdEst": 79.2,
+    "earlierRounds": 22,
+    "earlierUsdEst": 79.2,
     "totalUsdEst": 181.65
    },
    "tasks": [
-    {
-     "title": "P1CC36_rule out in every mode",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Colony Count (#95): the Rule out notes work the same in every mode: main, incubator, shapes, daily and endless.",
-     "since": "2026-10-24T13:59:49+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1CC37_incubator endless nights",
      "state": "queued",
@@ -2890,6 +2876,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1CC36_rule out in every mode",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Colony Count (#95): the Rule out notes work the same in every mode: main, incubator, shapes, daily and endless.",
+     "since": "2026-10-24T12:52:11+00:00",
+     "done": "2026-10-24T12:52:11+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "DONE P1CC36: Rule out works in every Colony Count mode, the lab included (live, main )."
     },
     {
      "title": "P2CC34_lab edge counts keep their shape",
@@ -2964,9 +2964,9 @@
    ],
    "taskCounts": {
     "queued": 2,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 31
+    "done": 32
    },
    "verdict": {
     "date": "2026-10-23",
@@ -13292,7 +13292,7 @@
    ]
   },
   {
-   "nextTask": "Makeshift Chair 3D (#35): recheck the failing spike...",
+   "nextTask": "Makeshift Chair 3D: the visual round (soft clay...",
    "costTotalUsd": 58.35,
    "latestChange": {
     "text": "3d: clients, levels, saved progress and the daily with a bot proof (P1MC02)",
@@ -13322,8 +13322,8 @@
    "title": "Makeshift Chair",
    "line": "",
    "url": "https://chenhsieh.github.io/makeshift-chair/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "make it a 3D physics game where sitting goes ridiculously wrong; daily games",
    "shelfNote": "",
@@ -13341,7 +13341,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-24T13:53:05+00:00",
+   "lastChange": "2026-10-24T14:22:27+00:00",
    "cost": {
     "apiUsd": 11.15,
     "codexRuns": 2,
@@ -13357,10 +13357,10 @@
    "tasks": [
     {
      "title": "P2MC05_recheck 3d spike test and 320 overflow",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Makeshift Chair 3D (#35): recheck the failing spike test and the 320 px link overflow.",
-     "since": "2026-10-24T13:53:05+00:00",
+     "since": "2026-10-24T14:22:14+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -13469,8 +13469,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 6
    },
