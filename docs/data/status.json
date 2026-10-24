@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T06:58:12+00:00",
+ "generated": "2026-10-24T07:00:31+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 78,
+    "queued": 80,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3120,
-    "estimateMinutes": 3120
+    "minutes": 3200,
+    "estimateMinutes": 3200
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 5,
+    "doneToday": 6,
     "minutes": 180,
     "estimateMinutes": 90
    }
   },
-  "queued": 79,
+  "queued": 81,
   "running": 2,
-  "doneToday": 5,
+  "doneToday": 6,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3300,
-  "estimatedFinish": "2026-10-26T10:58:12+00:00",
-  "estimateMinutes": 3120
+  "minutesRemaining": 3380,
+  "estimatedFinish": "2026-10-26T12:20:31+00:00",
+  "estimateMinutes": 3200
  },
  "lanes": [
   {
@@ -62,9 +62,9 @@
   {
    "worker": "Claude",
    "game": "pinch-points",
-   "task": "P1PP00_explain the strategy and show the movement",
-   "since": "2026-10-24T06:54:50+00:00",
-   "activity": "2026-10-24T06:55:04+00:00",
+   "task": "P3OR73_pinch points words file",
+   "since": "2026-10-24T07:00:14+00:00",
+   "activity": "2026-10-24T07:00:19+00:00",
    "commit": null
   }
  ],
@@ -17324,7 +17324,7 @@
    ]
   },
   {
-   "nextTask": "Pinch Points: a generated daily level and a...",
+   "nextTask": "Pinch Points: see the squares grow and shrink...",
    "costTotalUsd": 18.34,
    "latestChange": {
     "text": "feat: teach pinches in a first-minute round",
@@ -17346,7 +17346,7 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "explain the strategy and show the movement",
+   "waitingOn": "pinch points words file",
    "id": "pinch-points",
    "number": 119,
    "repo": "pinch-points",
@@ -17367,26 +17367,68 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T20:22:39+00:00",
-   "lastChange": "2026-10-24T06:55:04+00:00",
+   "lastChange": "2026-10-24T07:00:19+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 280385,
     "codexUsdEst": 0.34,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
     "totalUsdEst": 18.34
    },
    "tasks": [
     {
-     "title": "P1PP00_explain the strategy and show the movement",
+     "title": "P3OR73_pinch points words file",
      "state": "running",
      "worker": "Claude",
-     "plan": "Pinch Points (#119, now P1): show how the stones move after a pinch, a clear strategy and a story.",
-     "since": "2026-10-24T06:54:50+00:00",
+     "plan": "Pinch Points: the strategy card, hints and share line in one words file, English and Traditional Chinese",
+     "since": "2026-10-24T07:00:14+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1PP02_pinch points show the movement",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Pinch Points: see the squares grow and shrink after every pinch, and watch the stone open onto the paper",
+     "since": "2026-10-24T06:59:35+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1PP03_pinch points strategy card and daily",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Pinch Points: a rule card before level 1, a hint per level, the rule on the result card, a better daily and share line",
+     "since": "2026-10-24T06:59:35+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P2PP04_pinch points visual round design",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Pinch Points: visual round with the taste spin, three looks and a pick",
+     "since": "2026-10-24T06:59:29+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -17410,6 +17452,20 @@
      "result": ""
     },
     {
+     "title": "P1PP00_explain the strategy and show the movement",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Pinch Points (#119, now P1): show how the stones move after a pinch, a clear strategy and a story.",
+     "since": "2026-10-24T02:59:51+00:00",
+     "done": "2026-10-24T02:59:51+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
      "title": "P2FM15_pinch points first minute",
      "state": "done",
      "worker": "Codex",
@@ -17425,10 +17481,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 4,
     "running": 1,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": null,
    "needsYou": null,
@@ -25024,10 +25080,10 @@
   },
   {
    "nextTask": "The Lot Waits: a new first minute that...",
-   "costTotalUsd": 43.2,
+   "costTotalUsd": 50.4,
    "latestChange": {
-    "text": "first-minute start/stop fix: lesson starts only from Play click; test added; gates...",
-    "at": "2026-10-23T13:43:09+00:00"
+    "text": "design: The Lot Waits core reset: two good days per lot, a visible cost on both choices,...",
+    "at": "2026-10-24T06:52:49+00:00"
    },
    "promo": {
     "files": {
@@ -25070,14 +25126,14 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 7.2,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
-    "totalUsdEst": 43.2
+    "claudeUsdEst": 10.8,
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
+    "totalUsdEst": 50.4
    },
    "tasks": [
     {
@@ -25124,17 +25180,17 @@
     },
     {
      "title": "P3OR72_lot waits words file",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "The Lot Waits: every word of the new play screen in one short file, English and Traditional Chinese",
      "since": "2026-10-24T06:54:04+00:00",
-     "done": null,
+     "done": "2026-10-24T06:54:04+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 0,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: test/words.test.mjs && -e \"const vm=require('vm'),fs=require('fs');const c={window:{}};vm.runInNewContext(fs.readFileSync('docs/words.js','utf8'),c);const"
     },
     {
      "title": "P1LW00_core reset clear penalty and words",
@@ -25166,15 +25222,27 @@
     }
    ],
    "taskCounts": {
-    "queued": 4,
+    "queued": 3,
     "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": null,
    "needsYou": "Native read of the 14 composed poems and their plain-language lines is owed. Suggest: one native read of all fourteen before the share card goes out.",
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T06:52:49+00:00",
+     "ok": true,
+     "note": "design: The Lot Waits core reset: two good days per lot, a visible cost on both choices, measured ladder, fewer words",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-24T06:49:07+00:00",
+     "ok": true,
+     "note": "fix: keeping a lot puts it away; the page moves to the next lot, and Next day works once today's lots are kept",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-23T13:43:09+00:00",
      "ok": true,
@@ -25233,18 +25301,6 @@
      "at": "2026-10-21T21:49:19+00:00",
      "ok": true,
      "note": "feat: The Lot Waits, a week of timing at a shrine side table",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T21:14:25+00:00",
-     "ok": true,
-     "note": "feat: The Lot Waits starts from the Play Lab game template",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T21:13:02+00:00",
-     "ok": true,
-     "note": "Initial commit",
      "source": "main commit"
     }
    ]

@@ -1,22 +1,28 @@
 {
- "generated": 1792825105,
+ "generated": 1792825275,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
-  "lanesBusy": 0,
-  "ready": 1,
+  "lanesBusy": 1,
+  "ready": 0,
   "waiting": 2,
-  "queued": 3,
-  "running": 0,
-  "done24h": 20,
+  "queued": 2,
+  "running": 1,
+  "done24h": 21,
   "modelsQueued": {
    "openai/gpt-4.1": 1,
    "deepseek-v4-flash": 2
   },
   "spendTodayUsd": 0.0,
-  "runsToday": 5,
-  "runsTodayUnpriced": 5,
+  "runsToday": 6,
+  "runsTodayUnpriced": 6,
   "spendTotalUsd": 6.36,
   "recent": [
+   {
+    "id": "P3OR72_lot-waits-words-file",
+    "request": "The Lot Waits: every word of the new play screen in one short file, English and Traditional Chinese",
+    "model": "openai/gpt-4.1",
+    "at": 1792824844
+   },
    {
     "id": "P3OR71_grass-crossword-clue-strings",
     "request": "Grass Crossword: add the eight clue lines (English and Traditional Chinese) the newspaper look will print",
@@ -70,12 +76,6 @@
     "request": "Name audit: show one name for time-material everywhere",
     "model": "deepseek-v4-flash",
     "at": 1792795382
-   },
-   {
-    "id": "P3OR61_name-server-stress",
-    "request": "Name audit: show one name for server-stress everywhere",
-    "model": "deepseek-v4-flash",
-    "at": 1792795378
    }
   ],
   "label": "estimate"
@@ -111,12 +111,12 @@
    "created": 1792823937
   },
   {
-   "id": "P1PP00_explain-the-strategy-and-show-the-movement",
-   "request": "Pinch Points (#119, now P1): show how the stones move after a pinch, a clear strategy and a story.",
+   "id": "P3OR73_pinch-points-words-file",
+   "request": "Pinch Points: the strategy card, hints and share line in one words file, English and Traditional Chinese",
    "game": "Pinch Points",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
+   "route": "OpenRouter",
+   "model": "openai/gpt-4.1",
+   "effort": "default",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
@@ -124,8 +124,8 @@
    "priority": "P1",
    "why": "A graphics-paper figure of a statue flattened two ways, and an old woodblock page of a perforated scholar's stone.",
    "state": "running",
-   "at": 1792810791,
-   "created": 1792810791
+   "at": 1792825169,
+   "created": 1792825169
   },
   {
    "id": "P1CB11_hyperreal-visual-round",
@@ -425,6 +425,26 @@
    "created": 1792804913
   },
   {
+   "id": "P1LW01_lot-waits-rules-v2-and-levels",
+   "request": "The Lot Waits: new rules (two good days, a cost on both choices) and nine measured levels",
+   "game": "The Lot Waits",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR72_lot-waits-words-file"
+   ],
+   "priority": "P2",
+   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792824844,
+   "estPercentOfWeek": 0.25
+  },
+  {
    "id": "P1NL03_daily-from-the-hard-bank",
    "request": "Nobody Looking daily: draw from the hard bank so the obvious play stops getting par",
    "game": "Nobody Looking",
@@ -594,23 +614,6 @@
    "waitingOn": [],
    "created": 1792724295,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P3OR72_lot-waits-words-file",
-   "request": "The Lot Waits: every word of the new play screen in one short file, English and Traditional Chinese",
-   "game": "The Lot Waits",
-   "route": "OpenRouter",
-   "model": "openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792824844
   },
   {
    "id": "P2GG00_gallery-guess-save-migration-test",
@@ -941,6 +944,50 @@
    "created": 1792805548
   },
   {
+   "id": "P1PP02_pinch-points-show-the-movement",
+   "request": "Pinch Points: see the squares grow and shrink after every pinch, and watch the stone open onto the paper",
+   "game": "Pinch Points",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P3OR73_pinch-points-words-file"
+   ],
+   "priority": "P1",
+   "why": "A graphics-paper figure of a statue flattened two ways, and an old woodblock page of a perforated scholar's stone.",
+   "state": "waiting",
+   "waitingOn": [
+    "P3OR73_pinch-points-words-file"
+   ],
+   "created": 1792825175,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P1PP03_pinch-points-strategy-card-and-daily",
+   "request": "Pinch Points: a rule card before level 1, a hint per level, the rule on the result card, a better daily and share line",
+   "game": "Pinch Points",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P1PP02_pinch-points-show-the-movement"
+   ],
+   "priority": "P1",
+   "why": "A graphics-paper figure of a statue flattened two ways, and an old woodblock page of a perforated scholar's stone.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1PP02_pinch-points-show-the-movement"
+   ],
+   "created": 1792825175,
+   "estPercentOfWeek": 0.25
+  },
+  {
    "id": "P1TH04_strings-and-tests",
    "request": "Tree Hero: tidy words and tests after the journey rebuild",
    "game": "Tree Hero",
@@ -960,6 +1007,27 @@
     "P1TH03_worked-example-journey"
    ],
    "created": 1792808595
+  },
+  {
+   "id": "P2PP04_pinch-points-visual-round-design",
+   "request": "Pinch Points: visual round with the taste spin, three looks and a pick",
+   "game": "Pinch Points",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1PP03_pinch-points-strategy-card-and-daily"
+   ],
+   "priority": "P1",
+   "why": "A graphics-paper figure of a statue flattened two ways, and an old woodblock page of a perforated scholar's stone.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1PP03_pinch-points-strategy-card-and-daily"
+   ],
+   "created": 1792825169
   },
   {
    "id": "P1CK03_one-record-levels-and-gate",
@@ -1044,28 +1112,6 @@
     "P1CK05_one-record-strings"
    ],
    "created": 1792804913
-  },
-  {
-   "id": "P1LW01_lot-waits-rules-v2-and-levels",
-   "request": "The Lot Waits: new rules (two good days, a cost on both choices) and nine measured levels",
-   "game": "The Lot Waits",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P3OR72_lot-waits-words-file"
-   ],
-   "priority": "P2",
-   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
-   "state": "waiting",
-   "waitingOn": [
-    "P3OR72_lot-waits-words-file"
-   ],
-   "created": 1792824844,
-   "estPercentOfWeek": 0.25
   },
   {
    "id": "P1LW02_lot-waits-day-strip-and-trust",
@@ -2016,6 +2062,23 @@
    "created": 1792801260
   },
   {
+   "id": "P1PP00_explain-the-strategy-and-show-the-movement",
+   "request": "Pinch Points (#119, now P1): show how the stones move after a pinch, a clear strategy and a story.",
+   "game": "Pinch Points",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A graphics-paper figure of a statue flattened two ways, and an old woodblock page of a perforated scholar's stone.",
+   "state": "done",
+   "at": 1792810791,
+   "created": 1792810791
+  },
+  {
    "id": "P1RN41_visual-round-design",
    "request": "Readable Nonsense: a workable visual round, designed as three mock pages first, then picked and built.",
    "game": "阿嬤讀得出來",
@@ -2674,6 +2737,23 @@
    "state": "done",
    "at": 1792795389,
    "created": 1792795389
+  },
+  {
+   "id": "P3OR72_lot-waits-words-file",
+   "request": "The Lot Waits: every word of the new play screen in one short file, English and Traditional Chinese",
+   "game": "The Lot Waits",
+   "route": "OpenRouter",
+   "model": "openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
+   "state": "done",
+   "at": 1792824844,
+   "created": 1792824844
   },
   {
    "id": "P3OR56_gallery-guess-credits-page",
