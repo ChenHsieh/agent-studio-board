@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T00:47:09+00:00",
+ "generated": "2026-10-24T00:49:54+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 57,
+    "queued": 55,
     "running": 0,
     "doneToday": 5,
-    "minutes": 2280,
-    "estimateMinutes": 2280
+    "minutes": 2200,
+    "estimateMinutes": 2200
    },
    "Claude": {
     "queued": 1,
     "running": 4,
-    "doneToday": 70,
+    "doneToday": 72,
     "minutes": 300,
     "estimateMinutes": 75
    }
   },
-  "queued": 58,
+  "queued": 56,
   "running": 4,
-  "doneToday": 75,
+  "doneToday": 77,
   "lanes": {
    "Codex": 1,
    "Claude": 4
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2580,
-  "estimatedFinish": "2026-10-25T14:47:09+00:00",
-  "estimateMinutes": 2280
+  "minutesRemaining": 2500,
+  "estimatedFinish": "2026-10-25T13:29:54+00:00",
+  "estimateMinutes": 2200
  },
  "lanes": [
   {
@@ -70,17 +70,17 @@
   {
    "worker": "Claude",
    "game": "readable-nonsense",
-   "task": "P1RN41_visual round design",
-   "since": "2026-10-24T00:23:23+00:00",
-   "activity": "2026-10-24T00:46:37+00:00",
+   "task": "P1RN42_copy and zhuyin",
+   "since": "2026-10-24T00:48:39+00:00",
+   "activity": "2026-10-24T00:49:09+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
-   "game": "the-draw",
-   "task": "P2RV06_the draw",
-   "since": "2026-10-23T23:57:57+00:00",
-   "activity": "2026-10-24T00:29:55+00:00",
+   "game": "mint",
+   "task": "P2RV10_mint",
+   "since": "2026-10-24T00:49:14+00:00",
+   "activity": "2026-10-24T00:49:14+00:00",
    "commit": null
   }
  ],
@@ -88,8 +88,8 @@
  "claudeWorkers": 4,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 216,
-  "usdEst": 777.6,
+  "runs": 218,
+  "usdEst": 784.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -135,7 +135,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 48
+   "changes": 50
   }
  ],
  "houseRules": 25,
@@ -12615,7 +12615,7 @@
    ]
   },
   {
-   "nextTask": "Build round 5 idea 3, Mint (薄荷), from...",
+   "nextTask": null,
    "costTotalUsd": 7.2,
    "latestChange": {
     "text": "feat: Mint starts from the Play Lab game template",
@@ -12628,8 +12628,8 @@
    "title": "Mint",
    "line": "",
    "url": "https://chenhsieh.github.io/mint/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -12638,7 +12638,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-23T23:54:24+00:00",
+   "lastChange": "2026-10-24T00:49:14+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12654,10 +12654,10 @@
    "tasks": [
     {
      "title": "P2RV10_mint",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Build round 5 idea 3, Mint (薄荷), from its finished core brief (verdict FIX), placeholder shapes, first-minute lesson included",
-     "since": "2026-10-23T23:54:24+00:00",
+     "since": "2026-10-24T00:49:14+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -12668,8 +12668,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
@@ -22321,10 +22321,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 10.8,
+   "costTotalUsd": 14.4,
    "latestChange": {
-    "text": "feat: The Draw plays: pick a top, drop it in a bracket slot, make the cracked top win",
-    "at": "2026-10-24T00:47:35+00:00"
+    "text": "core built: pick-then-put taps, 9 levels, daily/endless, template_check 13/13, gates...",
+    "at": "2026-10-24T00:49:11+00:00"
    },
    "promo": null,
    "why": "",
@@ -22333,8 +22333,8 @@
    "title": "The Draw",
    "line": "",
    "url": "https://chenhsieh.github.io/the-draw/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -22343,45 +22343,51 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-24T00:47:35+00:00",
+   "lastChange": "2026-10-24T00:49:11+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 3,
     "earlierUsdEst": 10.8,
-    "totalUsdEst": 10.8
+    "totalUsdEst": 14.4
    },
    "tasks": [
     {
      "title": "P2RV06_the draw",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Build round 5 idea 5, The Draw (抽籤的手), from its finished core brief (verdict GO), placeholder shapes, first-minute lesson included",
-     "since": "2026-10-23T23:57:57+00:00",
-     "done": null,
+     "since": "2026-10-23T23:54:09+00:00",
+     "done": "2026-10-23T23:54:09+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P2RV06_the-draw: DONE"
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-24T00:49:11+00:00",
+     "ok": true,
+     "note": "core built: pick-then-put taps, 9 levels, daily/endless, template_check 13/13, gates green; first-minute lesson set aside (fit conflict)",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T00:47:35+00:00",
      "ok": true,
@@ -26327,11 +26333,11 @@
    ]
   },
   {
-   "nextTask": "Readable Nonsense: fix the clumsy wording and spell...",
-   "costTotalUsd": 68.59,
+   "nextTask": "Readable Nonsense: a daily to revisit, a collection...",
+   "costTotalUsd": 72.19,
    "latestChange": {
-    "text": "P3OR33_readable-nonsense-link-preview: WORKDIR",
-    "at": "2026-10-22T23:54:26+00:00"
+    "text": "visual round: 3 mocks (primer, stamps, calendar), primer picked, build spec in...",
+    "at": "2026-10-24T00:48:35+00:00"
    },
    "promo": null,
    "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
@@ -26350,40 +26356,26 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-15T23:26:29+00:00",
-   "lastChange": "2026-10-24T00:46:37+00:00",
+   "lastChange": "2026-10-24T00:49:09+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 3,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 0,
     "codexTokens": 697578,
     "codexUsdEst": 0.84,
-    "claudeUsdEst": 10.8,
+    "claudeUsdEst": 14.4,
     "earlierRounds": 15,
     "earlierUsdEst": 54.0,
-    "totalUsdEst": 68.59
+    "totalUsdEst": 72.19
    },
    "tasks": [
     {
-     "title": "P1RN41_visual round design",
+     "title": "P1RN42_copy and zhuyin",
      "state": "running",
      "worker": "Claude",
-     "plan": "Readable Nonsense: a workable visual round, designed as three mock pages first, then picked and built.",
-     "since": "2026-10-24T00:23:23+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P1RN42_copy and zhuyin",
-     "state": "queued",
-     "worker": "Codex",
      "plan": "Readable Nonsense: fix the clumsy wording and spell the sounds the Taiwanese way (Zhuyin).",
-     "since": "2026-10-24T00:21:42+00:00",
+     "since": "2026-10-24T00:48:39+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -26419,6 +26411,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1RN41_visual round design",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Readable Nonsense: a workable visual round, designed as three mock pages first, then picked and built.",
+     "since": "2026-10-24T00:21:42+00:00",
+     "done": "2026-10-24T00:21:42+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "For a player: nothing yet; three printed-matter looks (school primer, composition paper with rubber stamps, tear-off calendar) were mocked at 390x844 and 320x568, and the school primer was picked (vertical line, Zhuyin..."
     },
     {
      "title": "P3OR33_readable nonsense link preview",
@@ -26478,10 +26484,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
+    "queued": 2,
     "running": 1,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": {
     "date": "2026-10-21",
@@ -26491,6 +26497,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T00:48:35+00:00",
+     "ok": true,
+     "note": "visual round: 3 mocks (primer, stamps, calendar), primer picked, build spec in design/VISUAL_ROUND.md",
+     "source": "board note"
+    },
     {
      "at": "2026-10-22T23:54:26+00:00",
      "ok": true,
@@ -26556,12 +26568,6 @@
      "ok": true,
      "note": "fix: a finger drag carries the key it started on (shell boardPoint start now in board px); real-touch test levels 1-6; live",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-18T11:35:28+00:00",
-     "ok": true,
-     "note": "fix: dragging a key onto a glyph places that key",
-     "source": "main commit"
     }
    ]
   }

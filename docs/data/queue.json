@@ -1,5 +1,5 @@
 {
- "generated": 1792802391,
+ "generated": 1792803027,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -110,13 +110,13 @@
    "created": 1792799826
   },
   {
-   "id": "P1RN41_visual-round-design",
-   "request": "Readable Nonsense: a workable visual round, designed as three mock pages first, then picked and built.",
+   "id": "P1RN42_copy-and-zhuyin",
+   "request": "Readable Nonsense: fix the clumsy wording and spell the sounds the Taiwanese way (Zhuyin).",
    "game": "阿嬤讀得出來",
    "route": "Claude",
-   "model": "opus",
+   "model": "sonnet",
    "effort": "high",
-   "kind": "visual",
+   "kind": "build",
    "size": "one repo",
    "estMinutes": null,
    "after": [],
@@ -144,9 +144,9 @@
    "created": 1792799519
   },
   {
-   "id": "P2RV06_the-draw",
-   "request": "Build round 5 idea 5, The Draw (抽籤的手), from its finished core brief (verdict GO), placeholder shapes, first-minute lesson included",
-   "game": "The Draw",
+   "id": "P2RV10_mint",
+   "request": "Build round 5 idea 3, Mint (薄荷), from its finished core brief (verdict FIX), placeholder shapes, first-minute lesson included",
+   "game": "Mint",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
@@ -157,8 +157,8 @@
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1792799649,
-   "created": 1792799649
+   "at": 1792799664,
+   "created": 1792799664
   },
   {
    "id": "P1CF00_core-and-story-reset",
@@ -246,16 +246,18 @@
    "created": 1792801260
   },
   {
-   "id": "P1RN42_copy-and-zhuyin",
-   "request": "Readable Nonsense: fix the clumsy wording and spell the sounds the Taiwanese way (Zhuyin).",
+   "id": "P1RN44_visual-round-build",
+   "request": "Readable Nonsense: build the chosen look, the books stack included.",
    "game": "阿嬤讀得出來",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
-   "kind": "build",
+   "kind": "visual",
    "size": "one repo",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P1RN41_visual-round-design"
+   ],
    "priority": "P1",
    "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
    "state": "ready",
@@ -645,23 +647,6 @@
    "created": 1792790639
   },
   {
-   "id": "P2RV10_mint",
-   "request": "Build round 5 idea 3, Mint (薄荷), from its finished core brief (verdict FIX), placeholder shapes, first-minute lesson included",
-   "game": "Mint",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792799664
-  },
-  {
    "id": "P2RV11_review-honest-sign-the-draw",
    "request": "Opus stranger review of round 5 builds honest-sign and the-draw",
    "game": "Studio",
@@ -792,27 +777,6 @@
    "state": "waiting",
    "waitingOn": [
     "P1RN42_copy-and-zhuyin"
-   ],
-   "created": 1792801302
-  },
-  {
-   "id": "P1RN44_visual-round-build",
-   "request": "Readable Nonsense: build the chosen look, the books stack included.",
-   "game": "阿嬤讀得出來",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1RN41_visual-round-design"
-   ],
-   "priority": "P1",
-   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1RN41_visual-round-design"
    ],
    "created": 1792801302
   },
@@ -1365,6 +1329,23 @@
    "state": "done",
    "at": 1792763389,
    "created": 1792763389
+  },
+  {
+   "id": "P1RN41_visual-round-design",
+   "request": "Readable Nonsense: a workable visual round, designed as three mock pages first, then picked and built.",
+   "game": "阿嬤讀得出來",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
+   "state": "done",
+   "at": 1792801302,
+   "created": 1792801302
   },
   {
    "id": "P1TS56_thumb-stand-stranger-rereview",
@@ -2042,6 +2023,23 @@
    "state": "done",
    "at": 1792799646,
    "created": 1792799646
+  },
+  {
+   "id": "P2RV06_the-draw",
+   "request": "Build round 5 idea 5, The Draw (抽籤的手), from its finished core brief (verdict GO), placeholder shapes, first-minute lesson included",
+   "game": "The Draw",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792799649,
+   "created": 1792799649
   },
   {
    "id": "P2RV07_rumour-on-the-jetty",
