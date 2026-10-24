@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T14:54:56+00:00",
+ "generated": "2026-10-24T14:57:14+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 110,
+    "queued": 109,
     "running": 0,
     "doneToday": 0,
-    "minutes": 4400,
-    "estimateMinutes": 4400
+    "minutes": 4360,
+    "estimateMinutes": 4360
    },
    "Claude": {
     "queued": 1,
@@ -30,7 +30,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 111,
+  "queued": 110,
   "running": 1,
   "doneToday": 36,
   "lanes": {
@@ -42,17 +42,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 4520,
-  "estimatedFinish": "2026-10-27T16:14:56+00:00",
-  "estimateMinutes": 4400
+  "minutesRemaining": 4480,
+  "estimatedFinish": "2026-10-27T15:37:14+00:00",
+  "estimateMinutes": 4360
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "think-elephant",
-   "task": "P1TE04_room tests",
-   "since": "2026-10-24T14:54:36+00:00",
-   "activity": "2026-10-24T14:54:45+00:00",
+   "task": "P1TE05_chapter lessons",
+   "since": "2026-10-24T14:55:39+00:00",
+   "activity": "2026-10-24T14:55:43+00:00",
    "commit": null
   }
  ],
@@ -60,8 +60,8 @@
  "claudeWorkers": 1,
  "apiSpentUsd": 311.39,
  "claudeInSession": {
-  "runs": 273,
-  "usdEst": 982.8,
+  "runs": 274,
+  "usdEst": 986.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -111,7 +111,7 @@
   },
   {
    "day": "2026-10-24",
-   "changes": 15
+   "changes": 16
   }
  ],
  "houseRules": 25,
@@ -26068,11 +26068,11 @@
    ]
   },
   {
-   "nextTask": "Think an Elephant: a short first-minute lesson for...",
-   "costTotalUsd": 39.71,
+   "nextTask": "Think an Elephant: refine the chalk look, bigger...",
+   "costTotalUsd": 43.31,
    "latestChange": {
-    "text": "P1TE03:",
-    "at": "2026-10-24T14:54:36+00:00"
+    "text": "P1TE04:",
+    "at": "2026-10-24T14:55:35+00:00"
    },
    "promo": null,
    "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
@@ -26084,7 +26084,7 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "room tests",
+   "waitingOn": "chapter lessons",
    "id": "think-elephant",
    "number": 115,
    "repo": "think-elephant",
@@ -26106,40 +26106,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T04:40:58+00:00",
-   "lastChange": "2026-10-24T14:54:45+00:00",
+   "lastChange": "2026-10-24T14:55:43+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 0,
     "codexTokens": 91844,
     "codexUsdEst": 0.11,
-    "claudeUsdEst": 14.4,
+    "claudeUsdEst": 18.0,
     "earlierRounds": 7,
     "earlierUsdEst": 25.2,
-    "totalUsdEst": 39.71
+    "totalUsdEst": 43.31
    },
    "tasks": [
     {
-     "title": "P1TE04_room tests",
+     "title": "P1TE05_chapter lessons",
      "state": "running",
      "worker": "Claude",
-     "plan": "Think an Elephant: tests for the warm/cold clue and room pars",
-     "since": "2026-10-24T14:54:36+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P1TE05_chapter lessons",
-     "state": "queued",
-     "worker": "Codex",
      "plan": "Think an Elephant: a short first-minute lesson for the forest and the room",
-     "since": "2026-10-23T22:36:52+00:00",
+     "since": "2026-10-24T14:55:39+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -26175,6 +26161,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1TE03 Think an Elephant: room intro strings. not on main on purpose: TE05 merges it and publishes once, as its task text says)."
+    },
+    {
+     "title": "P1TE04_room tests",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Think an Elephant: tests for the warm/cold clue and room pars",
+     "since": "2026-10-23T22:36:12+00:00",
+     "done": "2026-10-23T22:36:12+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1TE04 Think an Elephant: room tests. P1TE05 merges and publishes)."
     },
     {
      "title": "P1TE02_room warm cold rule",
@@ -26234,15 +26234,21 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 1,
     "running": 1,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": null,
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T14:55:35+00:00",
+     "ok": true,
+     "note": "P1TE04:",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T14:54:36+00:00",
      "ok": true,
@@ -26307,12 +26313,6 @@
      "at": "2026-10-21T05:00:44+00:00",
      "ok": true,
      "note": "feat: dark-room elephant deduction, four chapters and a daily",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T04:40:58+00:00",
-     "ok": true,
-     "note": "Initial commit",
      "source": "main commit"
     }
    ]

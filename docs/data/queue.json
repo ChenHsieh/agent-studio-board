@@ -1,16 +1,14 @@
 {
- "generated": 1792853708,
+ "generated": 1792853851,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
-  "lanesBusy": 1,
+  "lanesBusy": 0,
   "ready": 0,
   "waiting": 0,
   "queued": 0,
-  "running": 1,
-  "done24h": 28,
-  "modelsQueued": {
-   "deepseek-v4-flash": 1
-  },
+  "running": 0,
+  "done24h": 29,
+  "modelsQueued": {},
   "spendTodayUsd": 0.47,
   "runsToday": 17,
   "runsTodayUnpriced": 13,
@@ -91,23 +89,23 @@
  },
  "tasks": [
   {
-   "id": "P1TE04_room-tests",
-   "request": "Think an Elephant: tests for the warm/cold clue and room pars",
+   "id": "P1TE05_chapter-lessons",
+   "request": "Think an Elephant: a short first-minute lesson for the forest and the room",
    "game": "Think Elephant",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P1TE03_room-strings"
+    "P1TE04_room-tests"
    ],
    "priority": null,
    "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
    "state": "running",
-   "at": 1792794972,
-   "created": 1792794972
+   "at": 1792795012,
+   "created": 1792795012
   },
   {
    "id": "P1CC37_incubator-endless-nights",
@@ -1630,27 +1628,6 @@
     "P1MM05_marble-mechanisms-act-three"
    ],
    "created": 1792838733
-  },
-  {
-   "id": "P1TE05_chapter-lessons",
-   "request": "Think an Elephant: a short first-minute lesson for the forest and the room",
-   "game": "Think Elephant",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1TE04_room-tests"
-   ],
-   "priority": null,
-   "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1TE04_room-tests"
-   ],
-   "created": 1792795012
   },
   {
    "id": "P1UX06_action-sheet-and-request-cards",
