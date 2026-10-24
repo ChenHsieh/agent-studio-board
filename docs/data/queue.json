@@ -1,5 +1,5 @@
 {
- "generated": 1792802208,
+ "generated": 1792802391,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -7,7 +7,7 @@
   "waiting": 2,
   "queued": 2,
   "running": 0,
-  "done24h": 46,
+  "done24h": 43,
   "modelsQueued": {
    "deepseek-v4-flash": 2
   },
@@ -91,8 +91,8 @@
  },
  "tasks": [
   {
-   "id": "P1CY00_endless-always-solvable-and-overload-bar",
-   "request": "Cymatic Plate: endless mode always has a way out, and a bar shows when too many drops hinder the vibration.",
+   "id": "P1CY01_smooth-moves-and-ui",
+   "request": "Cymatic Plate: drops glide from A to B instead of vanishing and reappearing; the next options respond quickly; UI polish.",
    "game": "Cymatic Plate",
    "route": "Claude",
    "model": "sonnet",
@@ -100,7 +100,9 @@
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P1CY00_endless-always-solvable-and-overload-bar"
+   ],
    "priority": "P1",
    "why": "Chladni figures on a vibrating plate and a post of dye moving on vibrating milk.",
    "state": "running",
@@ -125,13 +127,13 @@
    "created": 1792801302
   },
   {
-   "id": "P1CK00_daily-order-is-a-new-tablet-each-day",
-   "request": "Clay Clock: the daily order is a new tablet each day, not the same first tablet.",
+   "id": "P1CK01_core-design-pass-depth",
+   "request": "Clay Clock: a game-design pass to find the real decision, measured before any build, because tapping the soonest-drying slot is not a game.",
    "game": "Clay Clock",
    "route": "Claude",
-   "model": "sonnet",
+   "model": "opus",
    "effort": "high",
-   "kind": "build",
+   "kind": "design",
    "size": "one repo",
    "estMinutes": null,
    "after": [],
@@ -157,23 +159,6 @@
    "state": "running",
    "at": 1792799649,
    "created": 1792799649
-  },
-  {
-   "id": "P2RV09_the-apprentice",
-   "request": "Build round 5 idea 2, The Apprentice (教會徒弟), from its finished core brief (verdict FIX), placeholder shapes, first-minute lesson included",
-   "game": "The Apprentice",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792799660,
-   "created": 1792799660
   },
   {
    "id": "P1CF00_core-and-story-reset",
@@ -344,23 +329,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792793416
-  },
-  {
-   "id": "P1CK01_core-design-pass-depth",
-   "request": "Clay Clock: a game-design pass to find the real decision, measured before any build, because tapping the soonest-drying slot is not a game.",
-   "game": "Clay Clock",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "design",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "An Instagram reel of someone pressing cuneiform wedges into a small clay tablet.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792799519
   },
   {
    "id": "P1UL01_ping-clear-daily-and-glitch",
@@ -732,6 +700,25 @@
    "created": 1792799690
   },
   {
+   "id": "P2RV13_review-the-apprentice-mint",
+   "request": "Opus stranger review of round 5 builds the-apprentice and mint",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2RV09_the-apprentice"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792799693
+  },
+  {
    "id": "P2n86_round4-template-repos",
    "request": "Create the ten new game repositories from the game template so their builds can start",
    "game": "Studio",
@@ -765,27 +752,6 @@
    "waitingOn": [],
    "created": 1792724493,
    "estPercentOfWeek": 72.3
-  },
-  {
-   "id": "P1CY01_smooth-moves-and-ui",
-   "request": "Cymatic Plate: drops glide from A to B instead of vanishing and reappearing; the next options respond quickly; UI polish.",
-   "game": "Cymatic Plate",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1CY00_endless-always-solvable-and-overload-bar"
-   ],
-   "priority": "P1",
-   "why": "Chladni figures on a vibrating plate and a post of dye moving on vibrating milk.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1CY00_endless-always-solvable-and-overload-bar"
-   ],
-   "created": 1792799826
   },
   {
    "id": "P1FG01_rename-repo-and-game-to-forager",
@@ -956,27 +922,6 @@
    ],
    "created": 1792715918,
    "estPercentOfWeek": 72.3
-  },
-  {
-   "id": "P2RV13_review-the-apprentice-mint",
-   "request": "Opus stranger review of round 5 builds the-apprentice and mint",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2RV09_the-apprentice"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2RV09_the-apprentice"
-   ],
-   "created": 1792799693
   },
   {
    "id": "P2TE06_look-refine",
@@ -1335,6 +1280,23 @@
    "created": 1792700696
   },
   {
+   "id": "P1CY00_endless-always-solvable-and-overload-bar",
+   "request": "Cymatic Plate: endless mode always has a way out, and a bar shows when too many drops hinder the vibration.",
+   "game": "Cymatic Plate",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "Chladni figures on a vibrating plate and a post of dye moving on vibrating milk.",
+   "state": "done",
+   "at": 1792799826,
+   "created": 1792799826
+  },
+  {
    "id": "P1DG02_dynasty-guess-collection-shelf-bilingual-labels",
    "request": "Dynasty Guess: a clear collection shelf, Chinese beside every English label, and era labels that fit their drawers",
    "game": "Dynasty Guess",
@@ -1505,6 +1467,23 @@
    "state": "done",
    "at": 1792795393,
    "created": 1792795393
+  },
+  {
+   "id": "P1CK00_daily-order-is-a-new-tablet-each-day",
+   "request": "Clay Clock: the daily order is a new tablet each day, not the same first tablet.",
+   "game": "Clay Clock",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "An Instagram reel of someone pressing cuneiform wedges into a small clay tablet.",
+   "state": "done",
+   "at": 1792799519,
+   "created": 1792799519
   },
   {
    "id": "P1SW02_level7-coin-and-pet-outside-canvas",
@@ -2097,6 +2076,23 @@
    "state": "done",
    "at": 1792799657,
    "created": 1792799657
+  },
+  {
+   "id": "P2RV09_the-apprentice",
+   "request": "Build round 5 idea 2, The Apprentice (教會徒弟), from its finished core brief (verdict FIX), placeholder shapes, first-minute lesson included",
+   "game": "The Apprentice",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792799660,
+   "created": 1792799660
   },
   {
    "id": "P3OR51_template-card-label-20px",
