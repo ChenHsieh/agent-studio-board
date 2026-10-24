@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T03:11:50+00:00",
+ "generated": "2026-10-24T03:14:09+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -17,10 +17,10 @@
   "workers": {
    "Codex": {
     "queued": 89,
-    "running": 1,
-    "doneToday": 6,
-    "minutes": 3600,
-    "estimateMinutes": 3600
+    "running": 0,
+    "doneToday": 7,
+    "minutes": 3560,
+    "estimateMinutes": 3560
    },
    "Claude": {
     "queued": 1,
@@ -31,8 +31,8 @@
    }
   },
   "queued": 90,
-  "running": 5,
-  "doneToday": 110,
+  "running": 4,
+  "doneToday": 111,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3900,
-  "estimatedFinish": "2026-10-26T15:11:50+00:00",
-  "estimateMinutes": 3600
+  "minutesRemaining": 3860,
+  "estimatedFinish": "2026-10-26T14:34:09+00:00",
+  "estimateMinutes": 3560
  },
  "lanes": [
   {
@@ -52,7 +52,7 @@
    "game": "even-water",
    "task": "P1EW02_visual round build",
    "since": "2026-10-24T03:08:02+00:00",
-   "activity": "2026-10-24T03:11:33+00:00",
+   "activity": "2026-10-24T03:12:12+00:00",
    "commit": null
   },
   {
@@ -68,15 +68,7 @@
    "game": "tree-hero",
    "task": "P1TH01_swap budget real choice",
    "since": "2026-10-24T03:06:16+00:00",
-   "activity": "2026-10-24T03:10:49+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Codex",
-   "game": "tractatus-tree",
-   "task": "P2FM58_tractatus tree first minute fix",
-   "since": "2026-10-24T03:02:52+00:00",
-   "activity": "2026-10-24T03:11:08+00:00",
+   "activity": "2026-10-24T03:13:37+00:00",
    "commit": null
   },
   {
@@ -88,7 +80,7 @@
    "commit": null
   }
  ],
- "codexLanes": 1,
+ "codexLanes": 0,
  "claudeWorkers": 4,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
@@ -139,7 +131,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 95
+   "changes": 96
   }
  ],
  "houseRules": 25,
@@ -5501,7 +5493,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-24T03:11:33+00:00",
+   "lastChange": "2026-10-24T03:12:12+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -26410,30 +26402,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 86.68,
+   "costTotalUsd": 86.95,
    "latestChange": {
-    "text": "P3OR32_tractatus-tree-link-preview: WORKDIR",
-    "at": "2026-10-22T23:51:34+00:00"
+    "text": "fix: keep Tractatus Tree taps reliable on short phones",
+    "at": "2026-10-24T03:12:11+00:00"
    },
    "promo": null,
    "why": "A social post on Wittgenstein's numbered propositions (1, 1.1, 4.001 and so on).",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 2
+    "daysInState": 0
    },
-   "waitingOn": "tractatus tree first minute fix",
+   "waitingOn": "none",
    "id": "tractatus-tree",
    "number": 91,
    "repo": "tractatus-tree",
    "title": "Tractatus Tree",
    "line": "The numbered pages of a 1921 book are shuffled into a few.",
    "url": "https://chenhsieh.github.io/tractatus-tree/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Teach the philosophy gradually through play, not as homework",
    "shelfNote": "",
@@ -26445,34 +26437,34 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-10-16T02:13:20+00:00",
-   "lastChange": "2026-10-24T03:11:08+00:00",
+   "firstSeen": "2026-10-16T02:14:42+00:00",
+   "lastChange": "2026-10-24T03:12:11+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 1,
+    "codexRuns": 2,
     "claudeRuns": 6,
     "apiRuns": 2,
-    "codexTokens": 230129,
-    "codexUsdEst": 0.28,
+    "codexTokens": 461261,
+    "codexUsdEst": 0.55,
     "claudeUsdEst": 21.6,
     "earlierRounds": 18,
     "earlierUsdEst": 64.8,
-    "totalUsdEst": 86.68
+    "totalUsdEst": 86.95
    },
    "tasks": [
     {
      "title": "P2FM58_tractatus tree first minute fix",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Tractatus Tree: three practice pages before level 1 (fix the later levels the lesson branch broke)",
-     "since": "2026-10-24T03:02:52+00:00",
-     "done": null,
+     "since": "2026-10-24T02:01:37+00:00",
+     "done": "2026-10-24T02:01:37+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 61,
+     "tokens": 231132,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "fix: keep Tractatus Tree taps reliable on short phones"
     },
     {
      "title": "P3OR32_tractatus tree link preview",
@@ -26575,9 +26567,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 9
+    "done": 10
    },
    "verdict": {
     "date": "2026-10-21",
@@ -26585,8 +26577,20 @@
     "note": "Reveal text; humour or dark spin; growth"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-24T03:12:11+00:00",
+     "ok": true,
+     "note": "fix: keep Tractatus Tree taps reliable on short phones",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-24T03:11:08+00:00",
+     "ok": true,
+     "note": "fix: keep Tractatus Tree taps reliable on short phones",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-22T23:51:34+00:00",
      "ok": true,
@@ -26646,18 +26650,6 @@
      "ok": true,
      "note": "feat:",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T12:44:48+00:00",
-     "ok": true,
-     "note": "round 16 The book: 7 won by silence, trunk squares, discovery beats, main",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T12:43:22+00:00",
-     "ok": true,
-     "note": "feat: a seven-trunk finale won by silence, and the tree says what it showed",
-     "source": "main commit"
     }
    ]
   },
@@ -26706,7 +26698,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-08-20T16:18:05+00:00",
-   "lastChange": "2026-10-24T03:10:49+00:00",
+   "lastChange": "2026-10-24T03:13:37+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -29008,9 +29000,9 @@
   },
   "first_minute": {
    "yes": 12,
-   "no": 4,
+   "no": 3,
    "unknown": 101,
-   "ran": 38
+   "ran": 39
   },
   "a11y": {
    "yes": 0,
