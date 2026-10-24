@@ -1,5 +1,5 @@
 {
- "generated": 1792858176,
+ "generated": 1792858631,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -106,26 +106,6 @@
    "state": "running",
    "at": 1792846576,
    "created": 1792846576
-  },
-  {
-   "id": "P1AX12_kit-new-rule-and-short-screen-fit",
-   "request": "Play kit: new-rule note and small phones keep the board and Undo on the first screen",
-   "game": "Studio",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2RV19_rereview-honest-sign-the-draw-mint"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792857691,
-   "created": 1792857691,
-   "estPercentOfWeek": 0.25
   },
   {
    "id": "P1PL05_why-and-no-hub-rollout",
@@ -573,6 +553,23 @@
    "created": 1792810482
   },
   {
+   "id": "P1FS00_one-screen-audit",
+   "request": "P1FS00_one screen audit",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792858516
+  },
+  {
    "id": "P1LS01_lesson-check-before-gates",
    "request": "Lessons never light a move the game refuses: a quick local check before the gates",
    "game": "Studio",
@@ -965,6 +962,69 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P1FS01_one-screen-kit-layout",
+   "request": "P1FS01_one screen kit layout",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1FS00_one-screen-audit"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P1FS00_one-screen-audit"
+   ],
+   "created": 1792858516
+  },
+  {
+   "id": "P1FS02_forager-one-screen",
+   "request": "P1FS02_forager one screen",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1FS00_one-screen-audit"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P1FS00_one-screen-audit"
+   ],
+   "created": 1792858516
+  },
+  {
+   "id": "P1FS03_flagships-one-screen",
+   "request": "P1FS03_flagships one screen",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1FS01_one-screen-kit-layout"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P1FS01_one-screen-kit-layout"
+   ],
+   "created": 1792858516
+  },
+  {
    "id": "P1MM04_marble-act-two-look-and-lessons",
    "request": "Marble Machine: the new pieces drawn as solid objects, one short lesson each",
    "game": "Studio",
@@ -1179,6 +1239,27 @@
    ],
    "created": 1792841705,
    "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2FS04_one-screen-rollout-rest",
+   "request": "P2FS04_one screen rollout rest",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1FS03_flagships-one-screen"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P1FS03_flagships-one-screen"
+   ],
+   "created": 1792858516
   },
   {
    "id": "P2KT01_kit-win-hold-and-higher-is-better",
