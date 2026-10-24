@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T07:50:48+00:00",
+ "generated": "2026-10-24T07:53:31+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 79,
+    "queued": 78,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3160,
-    "estimateMinutes": 3160
+    "minutes": 3120,
+    "estimateMinutes": 3120
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 80,
+  "queued": 79,
   "running": 1,
   "doneToday": 8,
   "lanes": {
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3280,
-  "estimatedFinish": "2026-10-26T12:30:48+00:00",
-  "estimateMinutes": 3160
+  "minutesRemaining": 3240,
+  "estimatedFinish": "2026-10-26T11:53:31+00:00",
+  "estimateMinutes": 3120
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "peony-dream",
-   "task": "P1PD01_lag stuck drag and dream link",
-   "since": "2026-10-24T07:22:55+00:00",
-   "activity": "2026-10-24T07:49:15+00:00",
+   "game": "sockglass",
+   "task": "P1SK00_story daily and share",
+   "since": "2026-10-24T07:51:23+00:00",
+   "activity": "2026-10-24T07:51:25+00:00",
    "commit": null
   }
  ],
@@ -16898,23 +16898,23 @@
     "caption": "Paint half a face on a sheet of silk, close the silk on."
    },
    "why": "The classical play The Peony Pavilion (1598) and a saved essay note on love found in a dream.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 5
+    "daysInState": 0
    },
-   "waitingOn": "lag stuck drag and dream link",
+   "waitingOn": "none",
    "id": "peony-dream",
    "number": 99,
    "repo": "peony-dream",
    "title": "Peony Dream",
    "line": "Paint half a face on a sheet of silk, close the silk on.",
    "url": "https://chenhsieh.github.io/peony-dream/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Eastern ink visual direction instead of raster",
    "shelfNote": "",
@@ -16931,23 +16931,23 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 0,
     "codexTokens": 489236,
     "codexUsdEst": 0.59,
-    "claudeUsdEst": 7.2,
-    "earlierRounds": 11,
-    "earlierUsdEst": 39.6,
+    "claudeUsdEst": 10.8,
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
     "totalUsdEst": 47.39
    },
    "tasks": [
     {
      "title": "P1PD01_lag stuck drag and dream link",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Peony Dream (#99): no lag when dragging, no stuck drag when the pointer leaves the canvas, and a clear link between the fold and the dream.",
-     "since": "2026-10-24T07:22:55+00:00",
-     "done": null,
+     "since": "2026-10-24T02:54:42+00:00",
+     "done": "2026-10-24T02:54:42+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -17028,9 +17028,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": {
     "date": "2026-10-19",
@@ -17038,7 +17038,7 @@
     "note": "Eastern ink visual direction instead of raster"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-24T07:49:15+00:00",
@@ -22838,7 +22838,7 @@
    ]
   },
   {
-   "nextTask": "Sockglass (#73): a story, a daily generated level...",
+   "nextTask": null,
    "costTotalUsd": 39.81,
    "latestChange": {
     "text": "studio standard done: own logo, og tags, share text; audit all ok",
@@ -22868,8 +22868,8 @@
    "title": "Sockglass",
    "line": "Drag tissue-paper socks onto a dark bedroom window; where.",
    "url": "https://chenhsieh.github.io/sockglass/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Make sock sizes and counts readable and let the theme",
    "shelfNote": "",
@@ -22882,7 +22882,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T23:27:18+00:00",
-   "lastChange": "2026-10-24T02:54:42+00:00",
+   "lastChange": "2026-10-24T07:51:25+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -22898,10 +22898,10 @@
    "tasks": [
     {
      "title": "P1SK00_story daily and share",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Sockglass (#73): a story, a daily generated level, and a share line with emoji and a link.",
-     "since": "2026-10-24T02:54:42+00:00",
+     "since": "2026-10-24T07:51:23+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -22954,8 +22954,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
