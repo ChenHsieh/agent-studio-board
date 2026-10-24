@@ -1,5 +1,5 @@
 {
- "generated": 1792848817,
+ "generated": 1792848990,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -110,11 +110,11 @@
    "created": 1792833082
   },
   {
-   "id": "P1WX00_what-to-expect-for-every-board-entry",
-   "request": "Every numbered game and board entry gets a 'What to expect' section on the board.",
+   "id": "P1WX01_what-to-expect-inside-every-game",
+   "request": "Every live game opens with a short 'The idea' card",
    "game": "Studio",
    "route": "Claude",
-   "model": "sonnet",
+   "model": "opus",
    "effort": "high",
    "kind": "build",
    "size": "studio",
@@ -732,23 +732,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792810810
-  },
-  {
-   "id": "P1WX01_what-to-expect-inside-every-game",
-   "request": "Every live game opens with a short 'The idea' card",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792845799
   },
   {
    "id": "P2AX11_audit-report-merge-tools-only",
@@ -2848,23 +2831,21 @@
    "created": 1792807366
   },
   {
-   "id": "P2DRW00_the-draw",
-   "request": "The Draw: a real score (fix a crooked draw in fewest slips), a loss that names who knocked the cracked top out",
-   "game": "The Draw",
+   "id": "P1WX00_what-to-expect-for-every-board-entry",
+   "request": "Every numbered game and board entry gets a 'What to expect' section on the board.",
+   "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
    "kind": "build",
-   "size": "one repo",
+   "size": "studio",
    "estMinutes": null,
-   "after": [
-    "P2RV11_review-honest-sign-the-draw"
-   ],
+   "after": [],
    "priority": null,
    "why": "",
    "state": "done",
-   "at": 1792805668,
-   "created": 1792805668
+   "at": 1792845799,
+   "created": 1792845799
   },
   {
    "id": "P2RV18_review-sockglass-and-peony-dream",
@@ -2899,25 +2880,6 @@
    "state": "done",
    "at": 1792838876,
    "created": 1792838876
-  },
-  {
-   "id": "P2SGN00_honest-sign",
-   "request": "Honest Sign: show what the sign says in plain numbers, teach the copying trap, fit 320",
-   "game": "Honest Sign",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2RV11_review-honest-sign-the-draw"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792805668,
-   "created": 1792805668
   },
   {
    "id": "P2TP00_kit-draw-at-device-pixel-ratio",
