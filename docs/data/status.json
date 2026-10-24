@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T09:01:46+00:00",
+ "generated": "2026-10-24T09:04:18+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 76,
+    "queued": 77,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3040,
-    "estimateMinutes": 3040
+    "minutes": 3080,
+    "estimateMinutes": 3080
    },
    "Claude": {
     "queued": 1,
@@ -30,7 +30,7 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 77,
+  "queued": 78,
   "running": 2,
   "doneToday": 10,
   "lanes": {
@@ -42,17 +42,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3220,
-  "estimatedFinish": "2026-10-26T11:41:46+00:00",
-  "estimateMinutes": 3040
+  "minutesRemaining": 3260,
+  "estimatedFinish": "2026-10-26T12:24:18+00:00",
+  "estimateMinutes": 3080
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "checking-desk",
-   "task": "P1CD01_visual round hyperreal or high res",
-   "since": "2026-10-24T08:43:44+00:00",
-   "activity": "2026-10-24T09:00:06+00:00",
+   "game": "chai-boil",
+   "task": "P1CB11_hyperreal visual round",
+   "since": "2026-10-24T09:02:23+00:00",
+   "activity": "2026-10-24T09:02:56+00:00",
    "commit": null
   },
   {
@@ -60,7 +60,7 @@
    "game": "grass-crossword",
    "task": "P1GX00_newspaper share daily and placing",
    "since": "2026-10-24T08:22:29+00:00",
-   "activity": "2026-10-24T08:34:45+00:00",
+   "activity": "2026-10-24T09:02:02+00:00",
    "commit": null
   }
  ],
@@ -1944,7 +1944,7 @@
    ]
   },
   {
-   "nextTask": "Chai Boil (#92, P1): a hyper-real look instead...",
+   "nextTask": null,
    "costTotalUsd": 91.11,
    "latestChange": {
     "text": "P3OR28_chai-boil-link-preview: WORKDIR",
@@ -1967,8 +1967,8 @@
    "title": "Chai Boil",
    "line": "One pot, one dial: let the chai rise to the rim, not over it.",
    "url": "https://chenhsieh.github.io/chai-boil/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "hyper-realistic visuals instead of computer-drawn",
    "shelfNote": "",
@@ -1981,7 +1981,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-24T03:00:28+00:00",
+   "lastChange": "2026-10-24T09:02:56+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 6,
@@ -1997,10 +1997,10 @@
    "tasks": [
     {
      "title": "P1CB11_hyperreal visual round",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Chai Boil (#92, P1): a hyper-real look instead of the computer-drawn one, by a taste visual round.",
-     "since": "2026-10-24T03:00:28+00:00",
+     "since": "2026-10-24T09:02:23+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2109,8 +2109,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 16
    },
@@ -2197,7 +2197,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Checking Desk: build the night-shift desk look (photo...",
    "costTotalUsd": 29.0,
    "latestChange": {
     "text": "design: Checking Desk hyper-real visual round, night-shift desk picked",
@@ -2219,15 +2219,15 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "visual round hyperreal or high res",
+   "waitingOn": "night desk visual build",
    "id": "checking-desk",
    "number": 124,
    "repo": "checking-desk",
    "title": "Checking Desk",
    "line": "Six night shifts at a checking desk, each proved by a solver, plus a daily; Chinese and English.",
    "url": "https://chenhsieh.github.io/checking-desk/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Six night shifts at a checking desk, each proved by a solver, plus a daily;",
    "shelfNote": "",
@@ -2240,27 +2240,41 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T02:23:43+00:00",
-   "lastChange": "2026-10-24T09:00:06+00:00",
+   "lastChange": "2026-10-24T09:01:53+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 165898,
     "codexUsdEst": 0.2,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 8,
-    "earlierUsdEst": 28.8,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 7,
+    "earlierUsdEst": 25.2,
     "totalUsdEst": 29.0
    },
    "tasks": [
     {
+     "title": "P1CD02_night desk visual build",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Checking Desk: build the night-shift desk look (photo desk, squared-paper proofs, sharp at phone resolution)",
+     "since": "2026-10-24T09:01:53+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
      "title": "P1CD01_visual round hyperreal or high res",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Checking Desk (#124): the look is too crude; a hyper-real or high-resolution visual round with the taste spin.",
-     "since": "2026-10-24T08:43:44+00:00",
-     "done": null,
+     "since": "2026-10-24T02:59:47+00:00",
+     "done": "2026-10-24T02:59:47+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -2284,10 +2298,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": null,
    "needsYou": null,
@@ -8939,7 +8953,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:41:42+00:00",
-   "lastChange": "2026-10-24T08:34:45+00:00",
+   "lastChange": "2026-10-24T09:02:02+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
