@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T10:47:04+00:00",
+ "generated": "2026-10-24T10:49:27+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -24,14 +24,14 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 2,
     "doneToday": 18,
-    "minutes": 120,
-    "estimateMinutes": 60
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
   "queued": 86,
-  "running": 1,
+  "running": 2,
   "doneToday": 18,
   "lanes": {
    "Codex": 1,
@@ -42,8 +42,8 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3520,
-  "estimatedFinish": "2026-10-26T19:27:04+00:00",
+  "minutesRemaining": 3580,
+  "estimatedFinish": "2026-10-26T19:29:27+00:00",
   "estimateMinutes": 3400
  },
  "lanes": [
@@ -57,10 +57,10 @@
   },
   {
    "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P1MM01_depth brainstorm 3d platforms and mechanisms",
-   "since": null,
-   "activity": null,
+   "game": "blackout-notice",
+   "task": "P2BN04_couplet core rebuild",
+   "since": "2026-10-24T10:48:28+00:00",
+   "activity": "2026-10-24T10:49:23+00:00",
    "commit": null
   }
  ],
@@ -1475,8 +1475,8 @@
    "title": "Blackout Notice",
    "line": "Black out words on a stairwell notice until it says something kinder; 20 notices and a daily.",
    "url": "https://chenhsieh.github.io/blackout-notice/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Black out words on a stairwell notice until it says something kinder; 20",
    "shelfNote": "",
@@ -1489,7 +1489,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-24T09:17:53+00:00",
+   "lastChange": "2026-10-24T10:49:23+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -1504,11 +1504,11 @@
    },
    "tasks": [
     {
-     "title": "P2BN05_couplet visual round",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Blackout Notice: the visual round for the couplet game (red couplet paper, ink, an old printed sheet)",
-     "since": "2026-10-24T09:17:53+00:00",
+     "title": "P2BN04_couplet core rebuild",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Blackout Notice: rebuild as the couplet game (answer a real Tang first line by blacking out a sheet)",
+     "since": "2026-10-24T10:48:28+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1518,11 +1518,11 @@
      "result": ""
     },
     {
-     "title": "P2BN04_couplet core rebuild",
+     "title": "P2BN05_couplet visual round",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Blackout Notice: rebuild as the couplet game (answer a real Tang first line by blacking out a sheet)",
-     "since": "2026-10-24T09:17:49+00:00",
+     "plan": "Blackout Notice: the visual round for the couplet game (red couplet paper, ink, an old printed sheet)",
+     "since": "2026-10-24T09:17:53+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1617,8 +1617,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 9
    },

@@ -1,5 +1,5 @@
 {
- "generated": 1792838837,
+ "generated": 1792838986,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -106,6 +106,25 @@
    "state": "running",
    "at": 1792837372,
    "created": 1792837372
+  },
+  {
+   "id": "P2BN04_couplet-core-rebuild",
+   "request": "Blackout Notice: rebuild as the couplet game (answer a real Tang first line by blacking out a sheet)",
+   "game": "Blackout Notice",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR77_couplet-data-file"
+   ],
+   "priority": "P2",
+   "why": "A scruffy hand-lettered hiring post and a job ad written mostly as a list of what the company is not.",
+   "state": "running",
+   "at": 1792833469,
+   "created": 1792833469
   },
   {
    "id": "P1CB12_photo-kitchens-visual-build",
@@ -400,25 +419,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792820937
-  },
-  {
-   "id": "P2BN04_couplet-core-rebuild",
-   "request": "Blackout Notice: rebuild as the couplet game (answer a real Tang first line by blacking out a sheet)",
-   "game": "Blackout Notice",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P3OR77_couplet-data-file"
-   ],
-   "priority": "P2",
-   "why": "A scruffy hand-lettered hiring post and a job ad written mostly as a list of what the company is not.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792833469
   },
   {
    "id": "P2HK00_which-one-to-drop-clarity",
@@ -788,6 +788,23 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792805901
+  },
+  {
+   "id": "P2RV19_rereview-honest-sign-the-draw-mint",
+   "request": "Re-review Honest Sign, The Draw and Mint after their fixes",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792838876
   },
   {
    "id": "P2SBL00_scribes-blotter",
@@ -2906,42 +2923,6 @@
    "state": "done",
    "at": 1792805993,
    "created": 1792805993
-  },
-  {
-   "id": "P1IG00_idea-graph-data-r5",
-   "request": "Build one combined idea graph from every round (nodes, lenses, edges, walks) in a public-safe form for the board.",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "idea",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792795729,
-   "created": 1792795729
-  },
-  {
-   "id": "P1IG01_idea-graph-board-page",
-   "request": "A separate Idea graph page on the studio board: see the graph, tap a node, and make new random walks to brainstorm from.",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "idea",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1IG00_idea-graph-data-r5"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792795729,
-   "created": 1792795729
   },
   {
    "id": "P1KT03_premise-card-before-level-one",
