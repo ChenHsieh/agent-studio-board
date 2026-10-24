@@ -33,7 +33,7 @@ const cl = { chips: [], state: '', picked: new Set() };
 let clShown = [], clAll = [];
 // Needs you means: a human is the only thing the game is waiting for (the server sets needsYou only from board/asks.tsv).
 // The view rules live in views.js (tested in node by test/views.test.js).
-const { inProg, isReady, updatedSinceRelease, changeSummary, IN_VIEW, numLabel, findMatch, inRange, rangeFromHash, rangeToHash, copyList, byNumber } = window.BoardViews;
+const { inProg, isReady, updatedSinceRelease, changeSummary, IN_VIEW, numLabel, findMatch, inRange, rangeFromHash, rangeToHash, copyList, byNumber, plain, namedGames } = window.BoardViews;
 // Number range (P1BD07): lives in the URL hash (#range=120-140) so a link carries it.
 let range = rangeFromHash(location.hash);
 let visible = [];
@@ -50,10 +50,10 @@ function whyKind(g) {
 }
 const WHY_ORDER = { decision: 0, version: 1, question: 2 };
 function whatToDo(g) {
-  if (g.archived) return g.archivedNote || 'Made for one moment. Stays online. No more work.';
-  if (g.needsYou) return g.needsYou;
+  if (g.archived) return plain(g.archivedNote) || 'Made for one moment. Stays online. No more work.';
+  if (g.needsYou) return plain(g.needsYou);
   if (view === 'ready' && isReady(g)) return 'Play it, then give a verdict: ship, revise or shelf.';
-  return g.priorityNote || g.line || '';
+  return plain(g.priorityNote || g.line || '');
 }
 let sort = localStorage.getItem('board.sort') || 'change';
 
@@ -295,10 +295,11 @@ function taskCounts(g) {
 
 const COST_TIP = 'Estimate, not a bill. Codex runs are tokens at the board rate, Claude runs are estimated per run, and earlier rounds are estimated per round.';
 function glanceHtml(g) {
-  const next = g.nextTask ? `Next: ${esc(g.nextTask)}` : 'Nothing queued';
+  const next = plain(g.nextTask) ? `Next: ${esc(plain(g.nextTask))}` : 'Nothing queued';
   const cost = g.costTotalUsd != null ? g.costTotalUsd : (g.cost && g.cost.totalUsdEst) || 0;
   const lc = g.latestChange;
-  const upd = lc && lc.text ? `Updated ${esc(ago(lc.at))}: ${esc(lc.text)}` : (g.lastChange ? `Updated ${esc(ago(g.lastChange))}` : '');
+  const said = lc && plain(changeSummary(lc.text)); // a commit subject that is only a task code says nothing: give the time alone
+  const upd = said ? `Updated ${esc(ago(lc.at))}: ${esc(said)}` : (lc && lc.at ? `Updated ${esc(ago(lc.at))}` : (g.lastChange ? `Updated ${esc(ago(g.lastChange))}` : ''));
   return `<span class="glance"><span class="g-next">${next}</span><span class="g-cost" title="${esc(COST_TIP)}" aria-label="est. $${Math.round(cost)}. ${esc(COST_TIP)}">est. $${Math.round(cost)} <i aria-hidden="true">i</i></span>${upd ? `<span class="g-upd">${upd}</span>` : ''}</span>`;
 }
 
@@ -322,7 +323,7 @@ function stageBadge(g) {
 function sinceReleaseHtml(g) {
   const d = view === 'released' && updatedSinceRelease(g);
   if (!d) return '';
-  const lc = changeSummary(g.latestChange && g.latestChange.text);
+  const lc = plain(changeSummary(g.latestChange && g.latestChange.text));
   const when = new Date(d + 'T12:00:00').toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
   return `<span class="since-release"><b>Updated since release</b> ${esc(when)}${lc ? ': ' + esc(lc) : ''}</span>`;
 }
@@ -337,6 +338,13 @@ function whyExistsHtml(g) {
   const src = s.url ? `<span class="why-src">Source: <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name || s.url)}</a></span>`
     : s.name ? `<span class="why-src">Source: ${esc(s.name)}</span>` : '';
   return `<details class="expect why-exists"${isOpen ? ' open' : ''}><summary>Why this exists</summary><p>${esc(g.whyExists)}${src ? ' ' + src : ''}</p></details>`;
+}
+
+// One tap to the live page of the card's game and of every other game its question names (Needs you, Ready to try).
+function openGamesHtml(g) {
+  if (view !== 'needs' && view !== 'ready') return '';
+  const games = namedGames(g, data.games);
+  return `<p class="open-games">${games.map((o) => `<a class="open-game" href="${esc(o.url)}" target="_blank" rel="noopener" aria-label="Open game ${esc(numLabel(o) ? numLabel(o) + ' ' : '')}${esc(o.title)}"><b>Open game</b><span>${esc((numLabel(o) ? numLabel(o) + ' ' : '') + o.title)}</span></a>`).join('')}</p>`;
 }
 
 function gameHtml(g) {
@@ -356,18 +364,19 @@ function gameHtml(g) {
     <span class="meta">${stageBadge(g)}${g.verdict && !g.released && !g.archived ? `<span class="vd ${esc(g.verdict.verdict)}">${esc(g.verdict.verdict)}</span>` : ''}<span class="p">${g.archived ? '' : esc(g.priority || '')}</span></span>
     <span class="line">${g.needsYou ? '<b class="ask">To do:</b> ' : ''}${esc(whatToDo(g))}</span>${sinceReleaseHtml(g)}${glanceHtml(g)}</button>
   ${whyExistsHtml(g)}
+  ${openGamesHtml(g)}
   <a class="play-link" href="${esc(g.url)}" target="_blank" rel="noopener" aria-label="Play ${esc(g.title)}">Play</a>
   <div class="detail">
-    ${g.why ? `<p class="why"><b>In one line:</b> ${esc(g.why)}</p>` : ''}
+    ${g.why ? `<p class="why"><b>In one line:</b> ${esc(plain(g.why))}</p>` : ''}
     <p class="detail-links"><a href="${esc(g.url)}" target="_blank" rel="noopener">Play</a><a href="${esc(repoUrl)}" target="_blank" rel="noopener">Repo</a><button type="button" class="pbtn" data-copy="${esc(g.url)}">Copy link</button></p>
     ${promoHtml(g)}
-    ${g.line ? `<p>${esc(g.line)}</p>` : ''}
+    ${g.line ? `<p>${esc(plain(g.line))}</p>` : ''}
     <p class="cost">${costLine(g.cost)}<br><small class="muted">${esc(COST_TIP)}</small></p>
-    ${g.needsYou ? `<p class="said">${esc(g.needsYou)}<small>Waiting for a human</small></p>` : ''}
-    ${g.archived ? `<p class="said archived-note"><b>Archived${g.archivedOn ? ' on ' + esc(g.archivedOn) : ''}.</b> ${esc(g.archivedNote || 'Made for one moment. Stays online. No more work.')}</p>` : ''}
+    ${g.needsYou ? `<p class="said">${esc(plain(g.needsYou))}<small>Waiting for a human</small></p>` : ''}
+    ${g.archived ? `<p class="said archived-note"><b>Archived${g.archivedOn ? ' on ' + esc(g.archivedOn) : ''}.</b> ${esc(plain(g.archivedNote) || 'Made for one moment. Stays online. No more work.')}</p>` : ''}
     ${g.released ? `<p class="said released-note"><b>Released${g.releasedOn ? ' on ' + esc(g.releasedOn) : ''}.</b> Ready for the public${inProg(g) ? '; being refined now' : '; can still be refined'}.${g.releasedNote ? ' ' + esc(g.releasedNote) : ''}<small>Stage underneath: ${esc(g.stage)}</small></p>` : ''}
     ${g.verdict ? `<p class="said">${esc(g.verdict.verdict)}: ${esc(g.verdict.note)}<small>Verdict, ${esc(g.verdict.date)}</small></p>` : ''}
-    ${g.shelfNote ? `<p class="said">${esc(g.shelfNote)}<small>Why it is on the shelf</small></p>` : ''}
+    ${g.shelfNote ? `<p class="said">${esc(plain(g.shelfNote))}<small>Why it is on the shelf</small></p>` : ''}
     ${said ? '<h3>Plan</h3>' + said : ''}
     <h3>Task status</h3><p class="task-summary">${taskCounts(g)}</p>
     ${tasks ? '<h3>Tasks</h3><ul class="tasks">' + tasks + '</ul>' : ''}

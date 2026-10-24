@@ -21,6 +21,24 @@
     const t = String(text || '').replace(/^[A-Z]\d?[A-Za-z]{1,4}\d+[a-z]?_[\w-]+:?\s*/, '').trim();
     return !t || /^WORKDIR\b/.test(t) ? '' : t;
   };
+  // Task codes (P1BD08, P2n86, P1xx00_some-slug) mean nothing to a reader: drop them from any card line (P1BD08).
+  const TASK_CODE = /\b[PR][1-3][A-Za-z]{1,4}\d{2,3}[a-z]?(?:_[\w-]+)?(?:\s*:\s*|\s+(?=[a-z]))?/g;
+  const plain = (text) => String(text == null ? '' : text).replace(TASK_CODE, '').replace(/^\s*[:\-]\s*/, '').replace(/\s{2,}/g, ' ').trim();
+  // The games a card names so each can be opened in one tap: the card's own game first, then any other game its text
+  // names by title (5+ letters, whole words, capitalised as on the board) or by number (#123).
+  function namedGames(g, all) {
+    const out = [g], seen = new Set([g.id]), text = String(g.needsYou || '');
+    for (const o of all || []) {
+      if (!o || seen.has(o.id) || !o.url || !o.title || o.title.length < 5) continue;
+      const t = o.title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      if (new RegExp('(^|[^A-Za-z0-9])' + t + '($|[^A-Za-z0-9])').test(text)) { out.push(o); seen.add(o.id); }
+    }
+    for (const m of text.matchAll(/#(\d{1,4})\b/g)) {
+      const o = (all || []).find((x) => x.number === Number(m[1]));
+      if (o && o.url && !seen.has(o.id)) { out.push(o); seen.add(o.id); }
+    }
+    return out;
+  }
   const IN_VIEW = {
     needs: (g) => !isArchived(g) && !!g.needsYou,
     ready: isReady,
@@ -70,7 +88,7 @@
   }
   const copyList = (games) => games.map((g) => `${numLabel(g)} ${g.title}`.trim()).join('\n');
   const byNumber = (a, b) => (Number.isInteger(a.number) ? a.number : 1e9) - (Number.isInteger(b.number) ? b.number : 1e9);
-  const api = { inProg, isArchived, isReady, updatedSinceRelease, changeSummary, localDay, IN_VIEW, numLabel, findMatch, normRange, inRange, rangeFromHash, rangeToHash, copyList, byNumber };
+  const api = { inProg, isArchived, isReady, updatedSinceRelease, changeSummary, localDay, IN_VIEW, numLabel, findMatch, normRange, inRange, rangeFromHash, rangeToHash, copyList, byNumber, plain, namedGames };
   root.BoardViews = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
 })(typeof window !== 'undefined' ? window : globalThis);

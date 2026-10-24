@@ -138,7 +138,9 @@ function makeCard(row) {
   play.href = row.url;
   play.target = '_blank';
   play.rel = 'noopener noreferrer';
-  play.textContent = 'Play';
+  const num = numbers.get(row.id);
+  play.textContent = `Open game ${Number.isInteger(num) ? '#' + num + ' ' : ''}${row.title}`;
+  play.setAttribute('aria-label', play.textContent);
 
   const verdicts = document.createElement('div');
   verdicts.className = 'verdicts';
@@ -202,8 +204,10 @@ function makeCard(row) {
   return article;
 }
 
+let numbers = new Map();
 function render(data) {
   rows = Array.isArray(data.playQueue) ? data.playQueue.slice(0, 3) : [];
+  numbers = new Map((data.games || []).map((g) => [g.id, g.number]));
   releaseReady = Array.isArray(data.releaseReady) ? data.releaseReady : [];
   pruneChoices();
   fresh.textContent = `${rows.length} games · updated ${ago(data.generated)}`;

@@ -346,3 +346,11 @@ body.mmode .now, body.mmode .tally, body.mmode .tools, body.mmode #games, body.m
 .mrole { font: 14px var(--mono); color: var(--muted); }
 .mflag { font: 600 13px var(--mono); border: 1px solid var(--ink); padding: 1px 6px; white-space: nowrap; }
 .mnote { font: 16px/1.5 var(--serif); color: var(--ink); border-left: 3px solid var(--ink); padding-left: 10px; }
+
+/* Open game (P1BD08): one tap to the live page of the game a card is about, and of every game its question names. */
+.open-games { display: flex; flex-wrap: wrap; gap: 8px; margin: 2px 0 12px 68px; padding: 0; }
+.open-game { display: inline-flex; align-items: baseline; gap: 8px; min-height: 44px; padding: 0 14px; align-items: center; border: 1px solid var(--ink); background: var(--ink); color: var(--paper); text-decoration: none; font: 600 14px var(--mono); }
+.open-game b { font-weight: 600; }
+.open-game span { font-weight: 400; overflow-wrap: anywhere; }
+.open-game:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+@media (max-width: 560px) { .open-games { margin-left: 0; } .open-game { flex: 1 1 100%; justify-content: space-between; } }

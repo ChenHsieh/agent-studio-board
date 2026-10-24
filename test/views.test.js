@@ -22,6 +22,20 @@ assert.equal(V.changeSummary('P3OR02_remote-viewer-judge-helpers-test: WORKDIR')
 assert.equal(V.changeSummary('P2RL15_credits-panel-time-material: credits list every source'), 'credits list every source'); console.log('ok  the change summary drops task codes and empty commit subjects');
 assert.deepEqual(inView('archived'), ['archived']); for (const v of ['needs', 'ready', 'released', 'progress', 'shelf']) assert.ok(!inView(v).includes('archived'), v);
 console.log('ok  an archived game shows only in Archived (and All), even with an old ask');
+
+// P1BD08: task codes never show on a card line; a card links its own game and every game its question names.
+assert.equal(V.plain('P1BD08_needs-you-links-and-archived-card'), ''); assert.equal(V.plain('P1BD08_needs-you-links: Open game buttons'), 'Open game buttons');
+assert.equal(V.plain('feat: P2n86 coin dumplings share card'), 'feat: coin dumplings share card'); assert.equal(V.plain('H3K27me3 stays; R2D2 too'), 'H3K27me3 stays; R2D2 too');
+assert.equal(V.plain(null), ''); assert.equal(V.plain('Native read owed'), 'Native read owed'); console.log('ok  plain() drops task codes, keeps ordinary words and gene names');
+const all = [
+  { id: 'colony-count', title: 'Colony Count', number: 12, url: 'https://x.test/colony-count/', needsYou: 'GoatCounter is off in five games (this one, Walls Have Ears, Cymatic Plate and #99). Suggest: switch all on.' },
+  { id: 'walls-have-ears', title: 'Walls Have Ears', number: 40, url: 'https://x.test/walls/' },
+  { id: 'cymatic-plate', title: 'Cymatic Plate', number: 41, url: 'https://x.test/cymatic/' },
+  { id: 'fold', title: 'Fold', number: 7, url: 'https://x.test/fold/' },
+  { id: 'nine', title: 'Number Ninety Nine', number: 99, url: 'https://x.test/n99/' },
+];
+assert.deepEqual(V.namedGames(all[0], all).map((g) => g.id), ['colony-count', 'walls-have-ears', 'cymatic-plate', 'nine']); console.log('ok  a decision naming several games links each one (own game first, by title or #number)');
+assert.deepEqual(V.namedGames({ id: 'lone', title: 'Lone Game', url: 'u', needsYou: 'Fold the paper. Suggest: yes.' }, all).map((g) => g.id), ['lone']); console.log('ok  a short title such as Fold is not matched inside ordinary sentences');
 module.exports = { games, inView };
 
 // Game numbers (P1BD07): search by number, from/to range, the URL hash and the copied list.
