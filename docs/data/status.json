@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T06:36:45+00:00",
+ "generated": "2026-10-24T06:39:47+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,22 +16,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 77,
+    "queued": 78,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3080,
-    "estimateMinutes": 3080
+    "minutes": 3120,
+    "estimateMinutes": 3120
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
+    "running": 1,
     "doneToday": 3,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "minutes": 120,
+    "estimateMinutes": 60
    }
   },
-  "queued": 78,
-  "running": 2,
+  "queued": 79,
+  "running": 1,
   "doneToday": 3,
   "lanes": {
    "Codex": 1,
@@ -42,19 +42,11 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3260,
-  "estimatedFinish": "2026-10-26T09:56:45+00:00",
-  "estimateMinutes": 3080
+  "minutesRemaining": 3240,
+  "estimatedFinish": "2026-10-26T10:39:47+00:00",
+  "estimateMinutes": 3120
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "the-apprentice",
-   "task": "P1AP02_visual round design",
-   "since": "2026-10-24T06:22:38+00:00",
-   "activity": "2026-10-24T06:22:42+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "Multiple games",
@@ -65,7 +57,7 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
   "runs": 266,
@@ -24461,10 +24453,10 @@
   },
   {
    "nextTask": "The Apprentice: build the chosen look, the scenes...",
-   "costTotalUsd": 32.4,
+   "costTotalUsd": 36.0,
    "latestChange": {
-    "text": "feat: The Apprentice tells one story:",
-    "at": "2026-10-24T04:36:06+00:00"
+    "text": "design: The Apprentice visual round: three looks (woodcut almanac, primer plate, shadow...",
+    "at": "2026-10-24T06:37:46+00:00"
    },
    "promo": null,
    "why": "",
@@ -24476,15 +24468,15 @@
     "reviseRound": 1,
     "daysInState": 1
    },
-   "waitingOn": "visual round design",
+   "waitingOn": "visual round build",
    "id": "the-apprentice",
    "number": 152,
    "repo": "the-apprentice",
    "title": "The Apprentice",
    "line": "",
    "url": "https://chenhsieh.github.io/the-apprentice/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "a teach-then-betrayed story with real potential; frame the story, the...",
    "shelfNote": "",
@@ -24498,26 +24490,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:02+00:00",
-   "lastChange": "2026-10-24T06:22:42+00:00",
+   "lastChange": "2026-10-24T06:38:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 10.8,
+    "claudeUsdEst": 14.4,
     "earlierRounds": 6,
     "earlierUsdEst": 21.6,
-    "totalUsdEst": 32.4
+    "totalUsdEst": 36.0
    },
    "tasks": [
     {
-     "title": "P1AP02_visual round design",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "The Apprentice: three mock looks that carry the story's mood, then a build spec.",
-     "since": "2026-10-24T06:22:38+00:00",
+     "title": "P1AP03_visual round build",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "The Apprentice: build the chosen look, the scenes and the endings.",
+     "since": "2026-10-24T06:38:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -24527,12 +24519,26 @@
      "result": ""
     },
     {
-     "title": "P1AP03_visual round build",
+     "title": "P3OR70_apprentice art shapes module",
      "state": "queued",
      "worker": "Codex",
-     "plan": "The Apprentice: build the chosen look, the scenes and the endings.",
-     "since": "2026-10-24T02:23:30+00:00",
+     "plan": "The Apprentice: load the new woodcut tool and figure drawings into the game as one data file, with a test",
+     "since": "2026-10-24T06:38:32+00:00",
      "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1AP02_visual round design",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "The Apprentice: three mock looks that carry the story's mood, then a build spec.",
+     "since": "2026-10-24T02:26:10+00:00",
+     "done": "2026-10-24T02:26:10+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -24584,10 +24590,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 1,
+    "queued": 2,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": {
     "date": "2026-10-23",
@@ -24597,6 +24603,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T06:37:46+00:00",
+     "ok": true,
+     "note": "design: The Apprentice visual round: three looks (woodcut almanac, primer plate, shadow show), woodcut picked, build spec",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-24T04:36:06+00:00",
      "ok": true,
