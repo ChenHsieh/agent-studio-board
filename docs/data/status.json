@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T04:38:11+00:00",
+ "generated": "2026-10-24T04:40:57+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -24,44 +24,35 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "doneToday": 1,
-    "minutes": 120,
+    "minutes": 60,
     "estimateMinutes": 60
    }
   },
   "queued": 83,
-  "running": 1,
+  "running": 0,
   "doneToday": 1,
   "lanes": {
    "Codex": 1,
-   "Claude": 2
+   "Claude": 1
   },
   "laneCap": {
    "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3400,
-  "estimatedFinish": "2026-10-26T11:18:11+00:00",
+  "minutesRemaining": 3340,
+  "estimatedFinish": "2026-10-26T11:20:57+00:00",
   "estimateMinutes": 3280
  },
- "lanes": [
-  {
-   "worker": "Claude",
-   "game": "clean-features",
-   "task": "P1CF03_rule first lesson",
-   "since": "2026-10-24T04:24:07+00:00",
-   "activity": "2026-10-24T04:37:22+00:00",
-   "commit": null
-  }
- ],
+ "lanes": [],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 0,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 261,
-  "usdEst": 939.6,
+  "runs": 262,
+  "usdEst": 943.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -111,7 +102,7 @@
   },
   {
    "day": "2026-10-24",
-   "changes": 3
+   "changes": 4
   }
  ],
  "houseRules": 25,
@@ -28193,10 +28184,10 @@
   },
   {
    "nextTask": "Clean Features: each picture shows its marks, the...",
-   "costTotalUsd": 76.46,
+   "costTotalUsd": 80.06,
    "latestChange": {
-    "text": "P1CF02 seed-sorter story in card, How to play, win card (days), share line restored; live",
-    "at": "2026-10-24T04:24:07+00:00"
+    "text": "P1CF03 rule-first lesson: watched example, one guided look, smudge price tagged then...",
+    "at": "2026-10-24T04:38:47+00:00"
    },
    "promo": {
     "files": {
@@ -28215,15 +28206,15 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "rule first lesson",
+   "waitingOn": "marks and life bar look",
    "id": "clean-features",
    "number": 96,
    "repo": "clean-features",
    "title": "What the Dish Sees",
    "line": "Label each colony with the one shape it sees by placing.",
    "url": "https://chenhsieh.github.io/clean-features/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Find the playable frame for the latent-space game: a clear",
    "shelfNote": "",
@@ -28236,34 +28227,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-24T04:37:22+00:00",
+   "lastChange": "2026-10-24T04:38:47+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
-    "claudeRuns": 7,
+    "claudeRuns": 8,
     "apiRuns": 1,
     "codexTokens": 719119,
     "codexUsdEst": 0.86,
-    "claudeUsdEst": 25.2,
+    "claudeUsdEst": 28.8,
     "earlierRounds": 14,
     "earlierUsdEst": 50.4,
-    "totalUsdEst": 76.46
+    "totalUsdEst": 80.06
    },
    "tasks": [
-    {
-     "title": "P1CF03_rule first lesson",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Clean Features: watch the rule first, then one guided look, then play",
-     "since": "2026-10-24T04:24:07+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1CF04_marks and life bar look",
      "state": "queued",
@@ -28321,6 +28298,20 @@
      "result": ""
     },
     {
+     "title": "P1CF03_rule first lesson",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Clean Features: watch the rule first, then one guided look, then play",
+     "since": "2026-10-24T01:32:28+00:00",
+     "done": "2026-10-24T01:32:28+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
      "title": "P1CF00_core and story reset",
      "state": "done",
      "worker": "Claude",
@@ -28365,14 +28356,20 @@
    ],
    "taskCounts": {
     "queued": 2,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 12
+    "done": 13
    },
    "verdict": null,
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T04:38:47+00:00",
+     "ok": true,
+     "note": "P1CF03 rule-first lesson: watched example, one guided look, smudge price tagged then Undo; live",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T04:24:07+00:00",
      "ok": true,
@@ -28438,12 +28435,6 @@
      "ok": true,
      "note": "neurons not colonies, story first card, picture composition shown (P1a12)",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-20T01:45:52+00:00",
-     "ok": true,
-     "note": "feat: the dish holds neurons, and every picture shows what it is made of",
-     "source": "main commit"
     }
    ]
   },
