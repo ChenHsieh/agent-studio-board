@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T11:38:20+00:00",
+ "generated": "2026-10-24T11:40:58+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 89,
+    "queued": 88,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3560,
-    "estimateMinutes": 3560
+    "minutes": 3520,
+    "estimateMinutes": 3520
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 22,
+    "doneToday": 23,
     "minutes": 180,
     "estimateMinutes": 90
    }
   },
-  "queued": 90,
+  "queued": 89,
   "running": 2,
-  "doneToday": 22,
+  "doneToday": 23,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3740,
-  "estimatedFinish": "2026-10-26T22:58:20+00:00",
-  "estimateMinutes": 3560
+  "minutesRemaining": 3700,
+  "estimatedFinish": "2026-10-26T22:20:58+00:00",
+  "estimateMinutes": 3520
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "makeshift-chair",
-   "task": "P1MC02_clients levels and daily",
-   "since": "2026-10-24T11:07:51+00:00",
-   "activity": "2026-10-24T11:32:39+00:00",
+   "game": "checking-desk",
+   "task": "P1CD02_night desk visual build",
+   "since": "2026-10-24T11:38:30+00:00",
+   "activity": "2026-10-24T11:38:55+00:00",
    "commit": null
   },
   {
@@ -2208,7 +2208,7 @@
    ]
   },
   {
-   "nextTask": "Checking Desk: build the night-shift desk look (photo...",
+   "nextTask": null,
    "costTotalUsd": 29.0,
    "latestChange": {
     "text": "design: Checking Desk hyper-real visual round, night-shift desk picked",
@@ -2237,8 +2237,8 @@
    "title": "Checking Desk",
    "line": "Six night shifts at a checking desk, each proved by a solver, plus a daily; Chinese and English.",
    "url": "https://chenhsieh.github.io/checking-desk/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Six night shifts at a checking desk, each proved by a solver, plus a daily;",
    "shelfNote": "",
@@ -2251,7 +2251,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T02:23:43+00:00",
-   "lastChange": "2026-10-24T09:01:53+00:00",
+   "lastChange": "2026-10-24T11:38:55+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -2267,10 +2267,10 @@
    "tasks": [
     {
      "title": "P1CD02_night desk visual build",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Checking Desk: build the night-shift desk look (photo desk, squared-paper proofs, sharp at phone resolution)",
-     "since": "2026-10-24T09:01:53+00:00",
+     "since": "2026-10-24T11:38:30+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2309,8 +2309,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
@@ -13183,15 +13183,15 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "clients levels and daily",
+   "waitingOn": "visual round clay",
    "id": "makeshift-chair",
    "number": 35,
    "repo": "makeshift-chair",
    "title": "Makeshift Chair",
    "line": "",
    "url": "https://chenhsieh.github.io/makeshift-chair/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "make it a 3D physics game where sitting goes ridiculously wrong; daily games",
    "shelfNote": "",
@@ -13204,34 +13204,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T02:32:35+00:00",
-   "lastChange": "2026-10-24T11:32:39+00:00",
+   "lastChange": "2026-10-24T11:03:24+00:00",
    "cost": {
     "apiUsd": 11.15,
     "codexRuns": 2,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 1,
     "codexTokens": 335257,
     "codexUsdEst": 0.4,
-    "claudeUsdEst": 7.2,
-    "earlierRounds": 11,
-    "earlierUsdEst": 39.6,
+    "claudeUsdEst": 10.8,
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
     "totalUsdEst": 58.35
    },
    "tasks": [
-    {
-     "title": "P1MC02_clients levels and daily",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Makeshift Chair 3D: eight clients with a requirement, and a daily junk pile",
-     "since": "2026-10-24T11:07:51+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2MC04_visual round clay",
      "state": "queued",
@@ -13273,6 +13259,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1MC01 Makeshift Chair 3D: parts library and snapping. DONE. main . Live: https://chenhsieh.github.io/makeshift-chair/3d/ (live bytes md5-matched for index.html, spike.js, parts.js, sim.js; live run of test/spike3d.mjs..."
+    },
+    {
+     "title": "P1MC02_clients levels and daily",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Makeshift Chair 3D: eight clients with a requirement, and a daily junk pile",
+     "since": "2026-10-24T09:30:38+00:00",
+     "done": "2026-10-24T09:30:38+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1MC02 Makeshift Chair 3D: clients, levels and the daily. DONE. main . Live: https://chenhsieh.github.io/makeshift-chair/3d/ (live bytes md5-matched for index.html, spike.js, sim.js, parts.js, clients.js,..."
     },
     {
      "title": "P1MC00_3d physics chair design and spike",
@@ -13333,9 +13333,9 @@
    ],
    "taskCounts": {
     "queued": 2,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": null,
    "needsYou": null,
