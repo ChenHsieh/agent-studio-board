@@ -1,11 +1,15 @@
 {
- "generated": "2026-10-24T06:52:07+00:00",
+ "generated": "2026-10-24T06:55:04+00:00",
  "ops": {
-  "count": 0,
-  "notes": [],
+  "count": 1,
+  "notes": [
+   "A game changed in the last hour with no claimed task on it."
+  ],
   "info": []
  },
- "about": [],
+ "about": [
+  "A game changed in the last hour with no claimed task on it."
+ ],
  "project": {
   "name": "Play Lab",
   "noun": "game",
@@ -16,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 76,
+    "queued": 79,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3040,
-    "estimateMinutes": 3040
+    "minutes": 3160,
+    "estimateMinutes": 3160
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 4,
+    "doneToday": 5,
     "minutes": 180,
     "estimateMinutes": 90
    }
   },
-  "queued": 77,
+  "queued": 80,
   "running": 2,
-  "doneToday": 4,
+  "doneToday": 5,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,25 +46,25 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3220,
-  "estimatedFinish": "2026-10-26T09:32:07+00:00",
-  "estimateMinutes": 3040
+  "minutesRemaining": 3340,
+  "estimatedFinish": "2026-10-26T11:35:04+00:00",
+  "estimateMinutes": 3160
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "lot-waits",
-   "task": "P1LW00_core reset clear penalty and words",
-   "since": "2026-10-24T06:46:53+00:00",
-   "activity": "2026-10-24T06:49:07+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "Multiple games",
    "task": "P1MM00_smooth puzzle latency",
    "since": null,
    "activity": null,
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "pinch-points",
+   "task": "P1PP00_explain the strategy and show the movement",
+   "since": "2026-10-24T06:54:50+00:00",
+   "activity": "2026-10-24T06:55:04+00:00",
    "commit": null
   }
  ],
@@ -8937,13 +8941,13 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
-    "claudeRuns": 5,
+    "claudeRuns": 6,
     "apiRuns": 2,
     "codexTokens": 1267904,
     "codexUsdEst": 1.52,
-    "claudeUsdEst": 18.0,
-    "earlierRounds": 11,
-    "earlierUsdEst": 39.6,
+    "claudeUsdEst": 21.6,
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
     "totalUsdEst": 59.12
    },
    "tasks": [
@@ -8952,20 +8956,6 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Grass Crossword: build the chosen look.",
-     "since": "2026-10-24T06:46:35+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P3OR71_grass crossword clue strings",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Grass Crossword: add the eight clue lines (English and Traditional Chinese) the newspaper look will print",
      "since": "2026-10-24T06:46:35+00:00",
      "done": null,
      "reviewed": false,
@@ -8988,6 +8978,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P3OR71_grass crossword clue strings",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Grass Crossword: add the eight clue lines (English and Traditional Chinese) the newspaper look will print",
+     "since": "2026-10-24T06:46:35+00:00",
+     "done": "2026-10-24T06:46:35+00:00",
+     "reviewed": false,
+     "minutes": 0,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: node -e \"const s=require('./docs/strings.json');const en=['A member of Poaceae','What cows eat all day','Mown at the weekend','Bamboo is one','Comes up between paving stones','Covers a football pitc"
     },
     {
      "title": "P1GX01_visual round design",
@@ -9061,10 +9065,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
-    "done": 13
+    "done": 14
    },
    "verdict": {
     "date": "2026-10-20",
@@ -17336,15 +17340,15 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "daily levels and quirky share",
+   "waitingOn": "explain the strategy and show the movement",
    "id": "pinch-points",
    "number": 119,
    "repo": "pinch-points",
    "title": "Pinch Points",
    "line": "Pinch six stones flat as the surface flattens live; par set by search, plus a daily.",
    "url": "https://chenhsieh.github.io/pinch-points/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "turns an esoteric paper into an interactive game; explain the mechanism, show...",
    "shelfNote": "",
@@ -17357,7 +17361,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T20:22:39+00:00",
-   "lastChange": "2026-10-24T02:59:55+00:00",
+   "lastChange": "2026-10-24T06:55:04+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -17372,11 +17376,11 @@
    },
    "tasks": [
     {
-     "title": "P1PP01_daily levels and quirky share",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Pinch Points: a generated daily level and a fun, academic, quirky share text.",
-     "since": "2026-10-24T02:59:55+00:00",
+     "title": "P1PP00_explain the strategy and show the movement",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Pinch Points (#119, now P1): show how the stones move after a pinch, a clear strategy and a story.",
+     "since": "2026-10-24T06:54:50+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -17386,11 +17390,11 @@
      "result": ""
     },
     {
-     "title": "P1PP00_explain the strategy and show the movement",
+     "title": "P1PP01_daily levels and quirky share",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Pinch Points (#119, now P1): show how the stones move after a pinch, a clear strategy and a story.",
-     "since": "2026-10-24T02:59:51+00:00",
+     "plan": "Pinch Points: a generated daily level and a fun, academic, quirky share text.",
+     "since": "2026-10-24T02:59:55+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -17415,8 +17419,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -22369,7 +22373,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 72.49,
+   "costTotalUsd": 29.29,
    "latestChange": {
     "text": "P2SB52 live: tickets 7-14, chapter 2 (log cut in two), daily ticket, shop is open, share...",
     "at": "2026-10-22T07:27:17+00:00"
@@ -22404,7 +22408,7 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-10-14T23:31:15+00:00",
+   "firstSeen": "2026-10-17T21:41:35+00:00",
    "lastChange": "2026-10-22T23:42:58+00:00",
    "cost": {
     "apiUsd": 0.0,
@@ -22414,9 +22418,9 @@
     "codexTokens": 407560,
     "codexUsdEst": 0.49,
     "claudeUsdEst": 18.0,
-    "earlierRounds": 15,
-    "earlierUsdEst": 54.0,
-    "totalUsdEst": 72.49
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
+    "totalUsdEst": 29.29
    },
    "tasks": [
     {
@@ -22553,22 +22557,10 @@
      "source": "board note"
     },
     {
-     "at": "2026-10-22T07:25:35+00:00",
-     "ok": true,
-     "note": "feat: Slice and Bake gets tickets 7 to 14, a daily ticket, an open shop and a log cut in two",
-     "source": "main commit"
-    },
-    {
      "at": "2026-10-22T06:59:46+00:00",
      "ok": true,
      "note": "P2SB51 cane core live: 6 orders, solver par, one-tap moves, Baker Vos en+zh-TW, flipbook kept at old.html, main",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-22T06:58:36+00:00",
-     "ok": true,
-     "note": "feat:",
-     "source": "main commit"
     },
     {
      "at": "2026-10-22T04:14:47+00:00",
@@ -22583,12 +22575,6 @@
      "source": "board note"
     },
     {
-     "at": "2026-10-21T06:19:15+00:00",
-     "ok": true,
-     "note": "feat:",
-     "source": "main commit"
-    },
-    {
      "at": "2026-10-21T05:57:13+00:00",
      "ok": false,
      "note": "see",
@@ -22601,12 +22587,6 @@
      "source": "board note"
     },
     {
-     "at": "2026-10-21T05:38:42+00:00",
-     "ok": true,
-     "note": "feat: bake a cookie flipbook",
-     "source": "main commit"
-    },
-    {
      "at": "2026-10-21T05:11:19+00:00",
      "ok": false,
      "note": "see",
@@ -22616,6 +22596,24 @@
      "at": "2026-10-21T04:49:25+00:00",
      "ok": false,
      "note": "see",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-20T02:08:59+00:00",
+     "ok": true,
+     "note": "flipbook brief + build B2m",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-17T23:15:14+00:00",
+     "ok": true,
+     "note": "CREDIT line on the baked-tray card and the level map, EN+ZH (saved cookie photos, baker unknown); no How to play card exists; README already credited; live",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-17T21:41:35+00:00",
+     "ok": true,
+     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added",
      "source": "board note"
     }
    ]
@@ -25019,7 +25017,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "The Lot Waits: a new first minute that...",
    "costTotalUsd": 43.2,
    "latestChange": {
     "text": "first-minute start/stop fix: lesson starts only from Play click; test added; gates...",
@@ -25048,8 +25046,8 @@
    "title": "The Lot Waits",
    "line": "A week at a shrine side table: give each lot to its visitor on the right day or keep it in a two-slot drawer.",
    "url": "https://chenhsieh.github.io/lot-waits/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "A week at a shrine side table: give each lot to its visitor on the right day or",
    "shelfNote": "",
@@ -25062,27 +25060,83 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:13:02+00:00",
-   "lastChange": "2026-10-24T06:49:07+00:00",
+   "lastChange": "2026-10-24T06:54:09+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 11,
-    "earlierUsdEst": 39.6,
+    "claudeUsdEst": 7.2,
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
     "totalUsdEst": 43.2
    },
    "tasks": [
     {
+     "title": "P1LW03_lot waits first minute v2",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "The Lot Waits: a new first minute that shows both costs in three steps",
+     "since": "2026-10-24T06:54:09+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1LW01_lot waits rules v2 and levels",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "The Lot Waits: new rules (two good days, a cost on both choices) and nine measured levels",
+     "since": "2026-10-24T06:54:04+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1LW02_lot waits day strip and trust",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "The Lot Waits: a seven-day strip, each lot's good days marked under it, and a trust number that moves",
+     "since": "2026-10-24T06:54:04+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P3OR72_lot waits words file",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "The Lot Waits: every word of the new play screen in one short file, English and Traditional Chinese",
+     "since": "2026-10-24T06:54:04+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
      "title": "P1LW00_core reset clear penalty and words",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "The Lot Waits (#121): a design reset: a decision you can feel, a visible penalty, fewer words, and keeping a lot must work.",
-     "since": "2026-10-24T06:46:53+00:00",
-     "done": null,
+     "since": "2026-10-24T02:33:25+00:00",
+     "done": "2026-10-24T02:33:25+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -25106,10 +25160,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 4,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": null,
    "needsYou": "Native read of the 14 composed poems and their plain-language lines is owed. Suggest: one native read of all fourteen before the share card goes out.",

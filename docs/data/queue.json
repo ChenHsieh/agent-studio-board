@@ -1,5 +1,5 @@
 {
- "generated": 1792824760,
+ "generated": 1792824960,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -7,15 +7,22 @@
   "waiting": 2,
   "queued": 3,
   "running": 0,
-  "done24h": 19,
+  "done24h": 20,
   "modelsQueued": {
-   "deepseek-v4-flash": 3
+   "openai/gpt-4.1": 1,
+   "deepseek-v4-flash": 2
   },
   "spendTodayUsd": 0.0,
-  "runsToday": 4,
-  "runsTodayUnpriced": 4,
+  "runsToday": 5,
+  "runsTodayUnpriced": 5,
   "spendTotalUsd": 6.36,
   "recent": [
+   {
+    "id": "P3OR71_grass-crossword-clue-strings",
+    "request": "Grass Crossword: add the eight clue lines (English and Traditional Chinese) the newspaper look will print",
+    "model": "deepseek-v4-flash",
+    "at": 1792824395
+   },
    {
     "id": "P3OR70_apprentice-art-shapes-module",
     "request": "The Apprentice: load the new woodcut tool and figure drawings into the game as one data file, with a test",
@@ -69,12 +76,6 @@
     "request": "Name audit: show one name for server-stress everywhere",
     "model": "deepseek-v4-flash",
     "at": 1792795378
-   },
-   {
-    "id": "P3OR60_name-hello-princess-readme",
-    "request": "Name audit: show one name for copy-paste everywhere",
-    "model": "deepseek-v4-flash",
-    "at": 1792795374
    }
   ],
   "label": "estimate"
@@ -91,9 +92,9 @@
  },
  "tasks": [
   {
-   "id": "P1LW00_core-reset-clear-penalty-and-words",
-   "request": "The Lot Waits (#121): a design reset",
-   "game": "The Lot Waits",
+   "id": "P1PP00_explain-the-strategy-and-show-the-movement",
+   "request": "Pinch Points (#119, now P1): show how the stones move after a pinch, a clear strategy and a story.",
+   "game": "Pinch Points",
    "route": "Claude",
    "model": "opus",
    "effort": "high",
@@ -101,11 +102,11 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [],
-   "priority": "P2",
-   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
+   "priority": "P1",
+   "why": "A graphics-paper figure of a statue flattened two ways, and an old woodblock page of a perforated scholar's stone.",
    "state": "running",
-   "at": 1792809205,
-   "created": 1792809205
+   "at": 1792810791,
+   "created": 1792810791
   },
   {
    "id": "P1MM00_smooth-puzzle-latency",
@@ -284,23 +285,6 @@
    "created": 1792810482
   },
   {
-   "id": "P1PP00_explain-the-strategy-and-show-the-movement",
-   "request": "Pinch Points (#119, now P1): show how the stones move after a pinch, a clear strategy and a story.",
-   "game": "Pinch Points",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A graphics-paper figure of a statue flattened two ways, and an old woodblock page of a perforated scholar's stone.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792810791
-  },
-  {
    "id": "P1PP01_daily-levels-and-quirky-share",
    "request": "Pinch Points: a generated daily level and a fun, academic, quirky share text.",
    "game": "Pinch Points",
@@ -420,23 +404,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792810482
-  },
-  {
-   "id": "P3OR71_grass-crossword-clue-strings",
-   "request": "Grass Crossword: add the eight clue lines (English and Traditional Chinese) the newspaper look will print",
-   "game": "Grass Crossword",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A conceptual artwork from 2002: a newspaper crossword with every square green and every answer written as GRASS.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792824395
   },
   {
    "id": "P1CD01_visual-round-hyperreal-or-high-res",
@@ -644,6 +611,23 @@
    "waitingOn": [],
    "created": 1792724295,
    "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P3OR72_lot-waits-words-file",
+   "request": "The Lot Waits: every word of the new play screen in one short file, English and Traditional Chinese",
+   "game": "The Lot Waits",
+   "route": "OpenRouter",
+   "model": "openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792824844
   },
   {
    "id": "P2GG00_gallery-guess-save-migration-test",
@@ -1060,6 +1044,72 @@
    "created": 1792804913
   },
   {
+   "id": "P1LW01_lot-waits-rules-v2-and-levels",
+   "request": "The Lot Waits: new rules (two good days, a cost on both choices) and nine measured levels",
+   "game": "The Lot Waits",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR72_lot-waits-words-file"
+   ],
+   "priority": "P2",
+   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
+   "state": "waiting",
+   "waitingOn": [
+    "P3OR72_lot-waits-words-file"
+   ],
+   "created": 1792824844,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P1LW02_lot-waits-day-strip-and-trust",
+   "request": "The Lot Waits: a seven-day strip, each lot's good days marked under it, and a trust number that moves",
+   "game": "The Lot Waits",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1LW01_lot-waits-rules-v2-and-levels"
+   ],
+   "priority": "P2",
+   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1LW01_lot-waits-rules-v2-and-levels"
+   ],
+   "created": 1792824844,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P1LW03_lot-waits-first-minute-v2",
+   "request": "The Lot Waits: a new first minute that shows both costs in three steps",
+   "game": "The Lot Waits",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "first-minute",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1LW02_lot-waits-day-strip-and-trust"
+   ],
+   "priority": "P2",
+   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1LW02_lot-waits-day-strip-and-trust"
+   ],
+   "created": 1792824849,
+   "estPercentOfWeek": 0.25
+  },
+  {
    "id": "P2HN00_herbal-pages-stay-open",
    "request": "Herbal of Nowhere: opened pages stay open (Undo no longer refunds ink), glyphs no longer sit under the parts, counters agree",
    "game": "Herbal of Nowhere",
@@ -1208,6 +1258,27 @@
    ],
    "created": 1792715918,
    "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2LW04_lot-waits-reset-review",
+   "request": "The Lot Waits: a stranger plays the reset and says ship, revise or shelf",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1LW03_lot-waits-first-minute-v2"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P1LW03_lot-waits-first-minute-v2"
+   ],
+   "created": 1792824844
   },
   {
    "id": "P2TE06_look-refine",
@@ -2242,6 +2313,23 @@
    "created": 1792823912
   },
   {
+   "id": "P3OR71_grass-crossword-clue-strings",
+   "request": "Grass Crossword: add the eight clue lines (English and Traditional Chinese) the newspaper look will print",
+   "game": "Grass Crossword",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A conceptual artwork from 2002: a newspaper crossword with every square green and every answer written as GRASS.",
+   "state": "done",
+   "at": 1792824395,
+   "created": 1792824395
+  },
+  {
    "id": "P1CD00_first-minute-step-three-stuck",
    "request": "Copy Drift (#129): the third first-minute page gets stuck; find out if it is the story or the rules, and fix it.",
    "game": "Copy Drift",
@@ -2291,6 +2379,23 @@
    "state": "done",
    "at": 1792799519,
    "created": 1792799519
+  },
+  {
+   "id": "P1LW00_core-reset-clear-penalty-and-words",
+   "request": "The Lot Waits (#121): a design reset",
+   "game": "The Lot Waits",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
+   "state": "done",
+   "at": 1792809205,
+   "created": 1792809205
   },
   {
    "id": "P1NL00_slide-and-swap-feel-and-depth",
