@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T04:35:21+00:00",
+ "generated": "2026-10-24T04:38:11+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -24,14 +24,14 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
+    "running": 1,
     "doneToday": 1,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "minutes": 120,
+    "estimateMinutes": 60
    }
   },
   "queued": 83,
-  "running": 2,
+  "running": 1,
   "doneToday": 1,
   "lanes": {
    "Codex": 1,
@@ -42,30 +42,22 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3460,
-  "estimatedFinish": "2026-10-26T11:15:21+00:00",
+  "minutesRemaining": 3400,
+  "estimatedFinish": "2026-10-26T11:18:11+00:00",
   "estimateMinutes": 3280
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "the-apprentice",
-   "task": "P1AP01_story bible and endings",
-   "since": "2026-10-24T04:23:22+00:00",
-   "activity": "2026-10-24T04:28:24+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
    "game": "clean-features",
    "task": "P1CF03_rule first lesson",
    "since": "2026-10-24T04:24:07+00:00",
-   "activity": "2026-10-24T04:30:13+00:00",
+   "activity": "2026-10-24T04:37:22+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
   "runs": 261,
@@ -24448,15 +24440,15 @@
     "reviseRound": 1,
     "daysInState": 1
    },
-   "waitingOn": "story bible and endings",
+   "waitingOn": "visual round design",
    "id": "the-apprentice",
    "number": 152,
    "repo": "the-apprentice",
    "title": "The Apprentice",
    "line": "",
    "url": "https://chenhsieh.github.io/the-apprentice/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "a teach-then-betrayed story with real potential; frame the story, the...",
    "shelfNote": "",
@@ -24470,34 +24462,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:02+00:00",
-   "lastChange": "2026-10-24T04:28:24+00:00",
+   "lastChange": "2026-10-24T03:00:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 7.2,
-    "earlierRounds": 6,
-    "earlierUsdEst": 21.6,
+    "claudeUsdEst": 10.8,
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
     "totalUsdEst": 28.8
    },
    "tasks": [
-    {
-     "title": "P1AP01_story bible and endings",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "The Apprentice (#152): one clear world and tone, a reason to care about the inspectors, and endings you understand at a glance.",
-     "since": "2026-10-24T04:23:22+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1AP02_visual round design",
      "state": "queued",
@@ -24525,6 +24503,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1AP01_story bible and endings",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "The Apprentice (#152): one clear world and tone, a reason to care about the inspectors, and endings you understand at a glance.",
+     "since": "2026-10-24T02:23:30+00:00",
+     "done": "2026-10-24T02:23:30+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1AP01 DONE, live (the-apprentice main , rollback tag pre-ap01-story). The Apprentice (#152) https://chenhsieh.github.io/the-apprentice/"
     },
     {
      "title": "P1AP00_story and plain names",
@@ -24557,9 +24549,9 @@
    ],
    "taskCounts": {
     "queued": 2,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": {
     "date": "2026-10-23",
@@ -28244,7 +28236,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-24T04:30:13+00:00",
+   "lastChange": "2026-10-24T04:37:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,

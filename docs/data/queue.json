@@ -1,5 +1,5 @@
 {
- "generated": 1792815898,
+ "generated": 1792816707,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -91,23 +91,6 @@
  },
  "tasks": [
   {
-   "id": "P1AP01_story-bible-and-endings",
-   "request": "The Apprentice (#152)",
-   "game": "The Apprentice",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "",
-   "state": "running",
-   "at": 1792808610,
-   "created": 1792808610
-  },
-  {
    "id": "P1CF03_rule-first-lesson",
    "request": "Clean Features: watch the rule first, then one guided look, then play",
    "game": "What the Dish Sees",
@@ -125,6 +108,25 @@
    "state": "running",
    "at": 1792805548,
    "created": 1792805548
+  },
+  {
+   "id": "P1AP02_visual-round-design",
+   "request": "The Apprentice: three mock looks that carry the story's mood, then a build spec.",
+   "game": "The Apprentice",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1AP01_story-bible-and-endings"
+   ],
+   "priority": "P1",
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792808770
   },
   {
    "id": "P1CB11_hyperreal-visual-round",
@@ -945,27 +947,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P1AP02_visual-round-design",
-   "request": "The Apprentice: three mock looks that carry the story's mood, then a build spec.",
-   "game": "The Apprentice",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1AP01_story-bible-and-endings"
-   ],
-   "priority": "P1",
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P1AP01_story-bible-and-endings"
-   ],
-   "created": 1792808770
-  },
-  {
    "id": "P1AP03_visual-round-build",
    "request": "The Apprentice: build the chosen look, the scenes and the endings.",
    "game": "The Apprentice",
@@ -1741,6 +1722,23 @@
    "state": "done",
    "at": 1792804827,
    "created": 1792804827
+  },
+  {
+   "id": "P1AP01_story-bible-and-endings",
+   "request": "The Apprentice (#152)",
+   "game": "The Apprentice",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "",
+   "state": "done",
+   "at": 1792808610,
+   "created": 1792808610
   },
   {
    "id": "P1CF00_core-and-story-reset",
