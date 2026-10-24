@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T08:20:45+00:00",
+ "generated": "2026-10-24T08:23:30+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,22 +16,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 79,
+    "queued": 78,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3160,
-    "estimateMinutes": 3160
+    "minutes": 3120,
+    "estimateMinutes": 3120
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 2,
     "doneToday": 8,
-    "minutes": 120,
-    "estimateMinutes": 60
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
-  "queued": 80,
-  "running": 1,
+  "queued": 79,
+  "running": 2,
   "doneToday": 8,
   "lanes": {
    "Codex": 1,
@@ -42,22 +42,30 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3280,
-  "estimatedFinish": "2026-10-26T13:00:45+00:00",
-  "estimateMinutes": 3160
+  "minutesRemaining": 3300,
+  "estimatedFinish": "2026-10-26T12:23:30+00:00",
+  "estimateMinutes": 3120
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "grass-crossword",
+   "task": "P1GX00_newspaper share daily and placing",
+   "since": "2026-10-24T08:22:29+00:00",
+   "activity": "2026-10-24T08:22:42+00:00",
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "mushroom-gaps",
    "task": "P1MG00_preview before commit and why it fails",
    "since": "2026-10-24T08:09:07+00:00",
-   "activity": "2026-10-24T08:13:57+00:00",
+   "activity": "2026-10-24T08:22:07+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
   "runs": 268,
@@ -8911,8 +8919,8 @@
    "title": "Grass Crossword",
    "line": "A crossword dug into a garden bed, where every answer is.",
    "url": "https://chenhsieh.github.io/grass-crossword/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "nearly ready; newspaper look, plain Share, a daily that is a new puzzle each...",
    "shelfNote": "",
@@ -8925,7 +8933,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:41:42+00:00",
-   "lastChange": "2026-10-24T06:46:35+00:00",
+   "lastChange": "2026-10-24T08:22:42+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
@@ -8940,11 +8948,11 @@
    },
    "tasks": [
     {
-     "title": "P1GX02_visual round build",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Grass Crossword: build the chosen look.",
-     "since": "2026-10-24T06:46:35+00:00",
+     "title": "P1GX00_newspaper share daily and placing",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Grass Crossword (#86): easier to place words, one Share button, a daily that is a new puzzle each day, and the link preview back.",
+     "since": "2026-10-24T08:22:29+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -8954,11 +8962,11 @@
      "result": ""
     },
     {
-     "title": "P1GX00_newspaper share daily and placing",
+     "title": "P1GX02_visual round build",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Grass Crossword (#86): easier to place words, one Share button, a daily that is a new puzzle each day, and the link preview back.",
-     "since": "2026-10-24T02:54:21+00:00",
+     "plan": "Grass Crossword: build the chosen look.",
+     "since": "2026-10-24T06:46:35+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -9053,8 +9061,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 14
    },
@@ -14992,7 +15000,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T23:26:23+00:00",
-   "lastChange": "2026-10-24T08:13:57+00:00",
+   "lastChange": "2026-10-24T08:22:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -29291,10 +29299,10 @@
    "ran": 0
   },
   "first_minute": {
-   "yes": 9,
+   "yes": 12,
    "no": 3,
    "unknown": 101,
-   "ran": 42
+   "ran": 39
   },
   "a11y": {
    "yes": 0,
@@ -29303,38 +29311,38 @@
    "ran": 0
   },
   "credits": {
-   "yes": 1,
-   "no": 0,
-   "unknown": 154,
+   "yes": 15,
+   "no": 4,
+   "unknown": 136,
    "ran": 0
   },
   "saves": {
+   "yes": 13,
+   "no": 0,
+   "unknown": 142,
+   "ran": 0
+  },
+  "standard": {
+   "yes": 12,
+   "no": 4,
+   "unknown": 139,
+   "ran": 0
+  },
+  "console": {
    "yes": 0,
    "no": 0,
    "unknown": 155,
    "ran": 0
   },
-  "standard": {
-   "yes": 0,
-   "no": 1,
-   "unknown": 154,
-   "ran": 0
-  },
-  "console": {
-   "yes": 1,
-   "no": 0,
-   "unknown": 154,
-   "ran": 0
-  },
   "live": {
-   "yes": 1,
+   "yes": 0,
    "no": 0,
-   "unknown": 154,
+   "unknown": 155,
    "ran": 0
   },
   "name": {
-   "yes": 153,
-   "no": 0,
+   "yes": 152,
+   "no": 1,
    "unknown": 2,
    "ran": 0
   }
