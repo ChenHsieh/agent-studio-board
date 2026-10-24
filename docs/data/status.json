@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-24T22:01:28+00:00",
+ "generated": "2026-10-24T22:03:49+00:00",
  "ops": {
-  "count": 30,
+  "count": 31,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 77,
+    "queued": 76,
     "running": 0,
     "doneToday": 2,
-    "minutes": 3080,
-    "estimateMinutes": 3080
+    "minutes": 3040,
+    "estimateMinutes": 3040
    },
    "Claude": {
     "queued": 1,
     "running": 3,
-    "doneToday": 68,
+    "doneToday": 69,
     "minutes": 240,
     "estimateMinutes": 120
    }
   },
-  "queued": 78,
+  "queued": 77,
   "running": 3,
-  "doneToday": 70,
+  "doneToday": 71,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,25 +46,25 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3320,
-  "estimatedFinish": "2026-10-27T01:21:28+00:00",
-  "estimateMinutes": 3080
+  "minutesRemaining": 3280,
+  "estimatedFinish": "2026-10-27T00:43:49+00:00",
+  "estimateMinutes": 3040
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "Multiple games",
-   "task": "P1PL05_why and no hub rollout",
+   "task": "P1FS00_one screen audit",
    "since": null,
    "activity": null,
    "commit": null
   },
   {
    "worker": "Claude",
-   "game": "think-elephant",
-   "task": "P1TE08_one font for quotes",
-   "since": "2026-10-24T21:56:32+00:00",
-   "activity": "2026-10-24T22:01:15+00:00",
+   "game": "Multiple games",
+   "task": "P1PL05_why and no hub rollout",
+   "since": null,
+   "activity": null,
    "commit": null
   },
   {
@@ -78,7 +78,7 @@
  ],
  "codexLanes": 0,
  "claudeWorkers": 3,
- "apiSpentUsd": 313.18,
+ "apiSpentUsd": 313.24,
  "claudeInSession": {
   "runs": 286,
   "usdEst": 1029.6,
@@ -8843,8 +8843,8 @@
    "nextTask": null,
    "costTotalUsd": 50.88,
    "latestChange": {
-    "text": "feat: show a Glyph Gates link preview and share text",
-    "at": "2026-10-21T17:25:25+00:00"
+    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+    "at": "2026-10-24T21:52:45+00:00"
    },
    "promo": {
     "files": {
@@ -8861,7 +8861,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 3
+    "daysInState": 0
    },
    "waitingOn": "none",
    "id": "glyph-gates",
@@ -8888,8 +8888,8 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-10-13T09:15:39+00:00",
-   "lastChange": "2026-10-21T17:25:25+00:00",
+   "firstSeen": "2026-10-13T10:11:31+00:00",
+   "lastChange": "2026-10-24T21:52:45+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -8957,6 +8957,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-24T21:52:45+00:00",
+     "ok": true,
+     "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-21T17:25:25+00:00",
      "ok": true,
      "note": "feat: show a Glyph Gates link preview and share text",
@@ -9020,12 +9026,6 @@
      "at": "2026-10-15T14:34:20+00:00",
      "ok": true,
      "note": "feat:",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-14T17:04:06+00:00",
-     "ok": true,
-     "note": "step 14: Step 14: less AI feel, same look [page: index.html]",
      "source": "main commit"
     }
    ]
@@ -26154,15 +26154,15 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "one font for quotes",
+   "waitingOn": "chrome text sizes",
    "id": "think-elephant",
    "number": 115,
    "repo": "think-elephant",
    "title": "Think Elephant",
    "line": "",
    "url": "https://chenhsieh.github.io/think-elephant/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -26176,34 +26176,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T04:40:58+00:00",
-   "lastChange": "2026-10-24T22:01:15+00:00",
+   "lastChange": "2026-10-24T21:11:03+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 8,
+    "claudeRuns": 9,
     "apiRuns": 0,
     "codexTokens": 91844,
     "codexUsdEst": 0.11,
-    "claudeUsdEst": 28.8,
-    "earlierRounds": 9,
-    "earlierUsdEst": 32.4,
+    "claudeUsdEst": 32.4,
+    "earlierRounds": 8,
+    "earlierUsdEst": 28.8,
     "totalUsdEst": 61.31
    },
    "tasks": [
-    {
-     "title": "P1TE08_one font for quotes",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-24T21:56:32+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2TE09_chrome text sizes",
      "state": "queued",
@@ -26217,6 +26203,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1TE08_one font for quotes",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-24T15:42:46+00:00",
+     "done": "2026-10-24T15:42:46+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1TE08 Think Elephant one font: DONE (planner-run, claude-opus), live on main, live font bytes match."
     },
     {
      "title": "P1TE07_touch responsive no zoom",
@@ -26305,9 +26305,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 9
+    "done": 10
    },
    "verdict": null,
    "needsYou": null,
@@ -28569,10 +28569,10 @@
   },
   {
    "nextTask": "P1UL02_tiles look and new mechanic",
-   "costTotalUsd": 57.82,
+   "costTotalUsd": 61.42,
    "latestChange": {
-    "text": "pin is a ringed target with a live line, caught/missed marks; loop 6 corner glitch fixed...",
-    "at": "2026-10-24T02:08:57+00:00"
+    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+    "at": "2026-10-24T21:58:03+00:00"
    },
    "promo": {
     "files": {
@@ -28613,7 +28613,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T03:56:45+00:00",
-   "lastChange": "2026-10-24T16:29:41+00:00",
+   "lastChange": "2026-10-24T21:58:03+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -28622,9 +28622,9 @@
     "codexTokens": 185728,
     "codexUsdEst": 0.22,
     "claudeUsdEst": 10.8,
-    "earlierRounds": 13,
-    "earlierUsdEst": 46.8,
-    "totalUsdEst": 57.82
+    "earlierRounds": 14,
+    "earlierUsdEst": 50.4,
+    "totalUsdEst": 61.42
    },
    "tasks": [
     {
@@ -28723,6 +28723,12 @@
    "inProgress": true,
    "history": [
     {
+     "at": "2026-10-24T21:58:03+00:00",
+     "ok": true,
+     "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-24T02:08:57+00:00",
      "ok": true,
      "note": "pin is a ringed target with a live line, caught/missed marks; loop 6 corner glitch fixed (squash ran on mover transform); daily loop (greedy misses goal on 71.5% of 200 dates); live",
@@ -28787,12 +28793,6 @@
      "ok": true,
      "note": "CREDIT line under the tile strip, EN+ZH (artanyatang Lisbon tile poster)",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-17T22:04:12+00:00",
-     "ok": true,
-     "note": "feat: the play screen credits artanyatang's Lisbon tile poster",
-     "source": "main commit"
     }
    ]
   },

@@ -1,5 +1,5 @@
 {
- "generated": 1792879154,
+ "generated": 1792879442,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -9,10 +9,10 @@
   "running": 0,
   "done24h": 21,
   "modelsQueued": {},
-  "spendTodayUsd": 2.26,
-  "runsToday": 61,
+  "spendTodayUsd": 2.32,
+  "runsToday": 63,
   "runsTodayUnpriced": 13,
-  "spendTotalUsd": 8.62,
+  "spendTotalUsd": 8.68,
   "recent": [
    {
     "id": "P3OR79_marble-mechanism-strings",
@@ -89,6 +89,23 @@
  },
  "tasks": [
   {
+   "id": "P1FS00_one-screen-audit",
+   "request": "P1FS00_one screen audit",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1792858516,
+   "created": 1792858516
+  },
+  {
    "id": "P1PL05_why-and-no-hub-rollout",
    "request": "One scripted rollout puts 'Why this exists' in every game and removes every hub link and mention, repo by repo, checked live",
    "game": "Studio",
@@ -104,25 +121,6 @@
    "state": "running",
    "at": 1792856248,
    "created": 1792856248
-  },
-  {
-   "id": "P1TE08_one-font-for-quotes",
-   "request": "P1TE08_one font for quotes",
-   "game": "Think Elephant",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1TE07_touch-responsive-no-zoom"
-   ],
-   "priority": null,
-   "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
-   "state": "running",
-   "at": 1792856566,
-   "created": 1792856566
   },
   {
    "id": "P2AX15_kit-fit-rollout-mint",
@@ -568,23 +566,6 @@
    "created": 1792810482
   },
   {
-   "id": "P1FS00_one-screen-audit",
-   "request": "P1FS00_one screen audit",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792858516
-  },
-  {
    "id": "P1IN09_idea-round-6-five-ideas",
    "request": "P1IN09_idea round 6 five ideas",
    "game": "Studio",
@@ -767,6 +748,25 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792805901
+  },
+  {
+   "id": "P2TE09_chrome-text-sizes",
+   "request": "Think an Elephant: the level row, goal line, note and Undo/Reset buttons grow to the big-text sizes, still one screen on a small phone",
+   "game": "Think Elephant",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P1TE08_one-font-for-quotes"
+   ],
+   "priority": null,
+   "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792876263
   },
   {
    "id": "P2UX04_release-check-sweep-all-games",
@@ -1293,27 +1293,6 @@
     "P1PL05_why-and-no-hub-rollout"
    ],
    "created": 1792856253
-  },
-  {
-   "id": "P2TE09_chrome-text-sizes",
-   "request": "Think an Elephant: the level row, goal line, note and Undo/Reset buttons grow to the big-text sizes, still one screen on a small phone",
-   "game": "Think Elephant",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P1TE08_one-font-for-quotes"
-   ],
-   "priority": null,
-   "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1TE08_one-font-for-quotes"
-   ],
-   "created": 1792876263
   },
   {
    "id": "P2UX07_daily-brief-data",
@@ -1928,6 +1907,25 @@
    "state": "done",
    "at": 1792856546,
    "created": 1792856546
+  },
+  {
+   "id": "P1TE08_one-font-for-quotes",
+   "request": "P1TE08_one font for quotes",
+   "game": "Think Elephant",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1TE07_touch-responsive-no-zoom"
+   ],
+   "priority": null,
+   "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
+   "state": "done",
+   "at": 1792856566,
+   "created": 1792856566
   },
   {
    "id": "P1WX00_what-to-expect-for-every-board-entry",
