@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T05:39:06+00:00",
+ "generated": "2026-10-24T05:41:29+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 82,
+    "queued": 80,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3280,
-    "estimateMinutes": 3280
+    "minutes": 3200,
+    "estimateMinutes": 3200
    },
    "Claude": {
     "queued": 1,
     "running": 1,
-    "doneToday": 1,
+    "doneToday": 3,
     "minutes": 120,
     "estimateMinutes": 60
    }
   },
-  "queued": 83,
+  "queued": 81,
   "running": 1,
-  "doneToday": 1,
+  "doneToday": 3,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3400,
-  "estimatedFinish": "2026-10-26T12:19:06+00:00",
-  "estimateMinutes": 3280
+  "minutesRemaining": 3320,
+  "estimatedFinish": "2026-10-26T11:01:29+00:00",
+  "estimateMinutes": 3200
  },
  "lanes": [
   {
@@ -18792,7 +18792,7 @@
    ]
   },
   {
-   "nextTask": "Remote Viewer: a credits page that names its...",
+   "nextTask": null,
    "costTotalUsd": 81.53,
    "latestChange": {
     "text": "original scan open by default on first load and every new target; closing lasts one...",
@@ -18809,21 +18809,21 @@
    "why": "Declassified CIA Stargate remote-viewing session reports, with a blackout rule after the word game Redactle.",
    "state": "released",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 1,
     "daysInState": 1
    },
-   "waitingOn": "remote viewer credits page",
+   "waitingOn": "none",
    "id": "remote-viewer",
    "number": 31,
    "repo": "remote-viewer",
    "title": "Remote Viewer",
    "line": "Uncover a CIA file and name its assignment.",
    "url": "https://chenhsieh.github.io/remote-viewer/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Game-design pass to find where the fun is and build it",
    "shelfNote": "",
@@ -18840,29 +18840,29 @@
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 1,
-    "claudeRuns": 5,
+    "claudeRuns": 6,
     "apiRuns": 0,
     "codexTokens": 245568,
     "codexUsdEst": 0.29,
-    "claudeUsdEst": 18.0,
-    "earlierRounds": 15,
-    "earlierUsdEst": 54.0,
+    "claudeUsdEst": 21.6,
+    "earlierRounds": 14,
+    "earlierUsdEst": 50.4,
     "totalUsdEst": 81.53
    },
    "tasks": [
     {
      "title": "P3OR68_remote viewer credits page",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "Remote Viewer: a credits page that names its fonts, the declassified pages and their licences",
      "since": "2026-10-24T05:31:32+00:00",
-     "done": null,
+     "done": "2026-10-24T05:31:32+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 0,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: grep -qF 'Courier Prime' docs/CREDITS.md && grep -qF 'Rokkitt' docs/CREDITS.md && grep -qF 'SIL Open Font License' docs/CREDITS.md && grep -qF 'STAR GATE' docs/CREDITS.md && grep -qF 'public domain' doc"
     },
     {
      "title": "P1RV17_remote viewer original scan by default",
@@ -18950,10 +18950,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": {
     "date": "2026-10-19",
@@ -18961,7 +18961,7 @@
     "note": "Game-design pass to find where the fun is and build it"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-24T03:22:27+00:00",
@@ -20344,7 +20344,7 @@
    ]
   },
   {
-   "nextTask": "The Scribe's Blotter: a credits page with licences",
+   "nextTask": "The Scribe's Blotter visual round: the stall, the...",
    "costTotalUsd": 25.2,
    "latestChange": {
     "text": "premise card (The idea) from the round-5 brief, kit 13",
@@ -20360,7 +20360,7 @@
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "scribes blotter credits page",
+   "waitingOn": "scribes blotter",
    "id": "scribes-blotter",
    "number": 151,
    "repo": "scribes-blotter",
@@ -20386,30 +20386,16 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 6,
-    "earlierUsdEst": 21.6,
+    "claudeUsdEst": 7.2,
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
     "totalUsdEst": 25.2
    },
    "tasks": [
-    {
-     "title": "P3OR69_scribes blotter credits page",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "The Scribe's Blotter: a credits page with licences",
-     "since": "2026-10-24T05:38:50+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2SBL00_scribes blotter",
      "state": "queued",
@@ -20423,6 +20409,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P3OR69_scribes blotter credits page",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "The Scribe's Blotter: a credits page with licences",
+     "since": "2026-10-24T05:38:50+00:00",
+     "done": "2026-10-24T05:38:50+00:00",
+     "reviewed": false,
+     "minutes": 1,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: grep -qF 'system fonts' docs/CREDITS.md && grep -qF 'Web Audio' docs/CREDITS.md && grep -qF 'studio original' docs/CREDITS.md && ! grep -q '—' docs/CREDITS.md"
     },
     {
      "title": "P2RV08_scribes blotter",
@@ -20440,10 +20440,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": {
     "date": "2026-10-23",

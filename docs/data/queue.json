@@ -1,21 +1,33 @@
 {
- "generated": 1792820362,
+ "generated": 1792820507,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
-  "lanesBusy": 2,
+  "lanesBusy": 0,
   "ready": 0,
   "waiting": 2,
   "queued": 2,
-  "running": 2,
-  "done24h": 16,
+  "running": 0,
+  "done24h": 18,
   "modelsQueued": {
-   "deepseek-v4-flash": 4
+   "deepseek-v4-flash": 2
   },
   "spendTodayUsd": 0.0,
-  "runsToday": 1,
-  "runsTodayUnpriced": 1,
+  "runsToday": 3,
+  "runsTodayUnpriced": 3,
   "spendTotalUsd": 6.36,
   "recent": [
+   {
+    "id": "P3OR69_scribes-blotter-credits-page",
+    "request": "The Scribe's Blotter: a credits page with licences",
+    "model": "deepseek-v4-flash",
+    "at": 1792820330
+   },
+   {
+    "id": "P3OR68_remote-viewer-credits-page",
+    "request": "Remote Viewer: a credits page that names its fonts, the declassified pages and their licences",
+    "model": "deepseek-v4-flash",
+    "at": 1792819892
+   },
    {
     "id": "P3OR67_sync-kit-copies-looks-folder",
     "request": "Template: tools/sync_kit.sh stops on docs/kit/looks because its cp has no -r.",
@@ -63,18 +75,6 @@
     "request": "Name to Carry: move the name list into the game file so tools can load it alone (cheap lane)",
     "model": "openai/gpt-4.1",
     "at": 1792791317
-   },
-   {
-    "id": "P3OR59_time-material-story-and-scan-words",
-    "request": "Time as Material: put the chosen story line and the three scan-stage captions into the game's word table (cheap lane)",
-    "model": "deepseek-v4-flash",
-    "at": 1792791256
-   },
-   {
-    "id": "P3OR57_mirror-hold-credits-page",
-    "request": "mirror-hold: a credits file that names every font, data source and code licence (cheap lane)",
-    "model": "deepseek-v4-flash",
-    "at": 1792791214
    }
   ],
   "label": "estimate"
@@ -91,23 +91,6 @@
  },
  "tasks": [
   {
-   "id": "P3OR68_remote-viewer-credits-page",
-   "request": "Remote Viewer: a credits page that names its fonts, the declassified pages and their licences",
-   "game": "Remote Viewer",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "Declassified CIA Stargate remote-viewing session reports, with a blackout rule after the word game Redactle.",
-   "state": "running",
-   "at": 1792819892,
-   "created": 1792819892
-  },
-  {
    "id": "P1NL00_slide-and-swap-feel-and-depth",
    "request": "Nobody Looking (#127): sliding and swapping works smoothly with a finger, and a check of how deep the game really is.",
    "game": "Nobody Looking",
@@ -123,23 +106,6 @@
    "state": "running",
    "at": 1792808745,
    "created": 1792808745
-  },
-  {
-   "id": "P3OR69_scribes-blotter-credits-page",
-   "request": "The Scribe's Blotter: a credits page with licences",
-   "game": "Scribes Blotter",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792820330,
-   "created": 1792820330
   },
   {
    "id": "P1AP02_visual-round-design",
@@ -2265,6 +2231,23 @@
    "created": 1792795393
   },
   {
+   "id": "P3OR68_remote-viewer-credits-page",
+   "request": "Remote Viewer: a credits page that names its fonts, the declassified pages and their licences",
+   "game": "Remote Viewer",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "Declassified CIA Stargate remote-viewing session reports, with a blackout rule after the word game Redactle.",
+   "state": "done",
+   "at": 1792819892,
+   "created": 1792819892
+  },
+  {
    "id": "P1CD00_first-minute-step-three-stuck",
    "request": "Copy Drift (#129): the third first-minute page gets stuck; find out if it is the story or the rules, and fix it.",
    "game": "Copy Drift",
@@ -3262,6 +3245,23 @@
    "state": "done",
    "at": 1792815750,
    "created": 1792815750
+  },
+  {
+   "id": "P3OR69_scribes-blotter-credits-page",
+   "request": "The Scribe's Blotter: a credits page with licences",
+   "game": "Scribes Blotter",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792820330,
+   "created": 1792820330
   }
  ]
 }
