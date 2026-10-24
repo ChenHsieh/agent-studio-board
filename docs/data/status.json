@@ -1,11 +1,15 @@
 {
- "generated": "2026-10-24T21:05:26+00:00",
+ "generated": "2026-10-24T21:07:47+00:00",
  "ops": {
-  "count": 0,
-  "notes": [],
+  "count": 1,
+  "notes": [
+   "A game changed in the last hour with no claimed task on it."
+  ],
   "info": []
  },
- "about": [],
+ "about": [
+  "A game changed in the last hour with no claimed task on it."
+ ],
  "project": {
   "name": "Game studio",
   "noun": "game",
@@ -18,7 +22,7 @@
    "Codex": {
     "queued": 79,
     "running": 0,
-    "doneToday": 1,
+    "doneToday": 2,
     "minutes": 3160,
     "estimateMinutes": 3160
    },
@@ -32,7 +36,7 @@
   },
   "queued": 80,
   "running": 2,
-  "doneToday": 67,
+  "doneToday": 68,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -43,18 +47,10 @@
   },
   "codexPaused": false,
   "minutesRemaining": 3340,
-  "estimatedFinish": "2026-10-27T01:45:26+00:00",
+  "estimatedFinish": "2026-10-27T01:47:47+00:00",
   "estimateMinutes": 3160
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "colony-count",
-   "task": "P1CC37_incubator endless nights",
-   "since": "2026-10-24T20:23:17+00:00",
-   "activity": "2026-10-24T21:03:43+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "Multiple games",
@@ -73,7 +69,7 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 3,
+ "claudeWorkers": 2,
  "apiSpentUsd": 312.72,
  "claudeInSession": {
   "runs": 286,
@@ -2832,8 +2828,8 @@
    "title": "Colony Count",
    "line": "Solve three daily levels, then freeze finished plates.",
    "url": "https://chenhsieh.github.io/colony-count/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Flagship; has its own owner",
    "shelfNote": "",
@@ -2855,30 +2851,16 @@
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 2,
-    "claudeRuns": 22,
+    "claudeRuns": 23,
     "apiRuns": 8,
     "codexTokens": 304598,
     "codexUsdEst": 0.37,
-    "claudeUsdEst": 79.2,
-    "earlierRounds": 22,
-    "earlierUsdEst": 79.2,
+    "claudeUsdEst": 82.8,
+    "earlierRounds": 21,
+    "earlierUsdEst": 75.6,
     "totalUsdEst": 181.65
    },
    "tasks": [
-    {
-     "title": "P1CC37_incubator endless nights",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Colony Count lab (#95): the incubator becomes an endless run of nights instead of ending after one.",
-     "since": "2026-10-24T20:23:17+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2CC35_colony count save migration test",
      "state": "queued",
@@ -2892,6 +2874,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1CC37_incubator endless nights",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Colony Count lab (#95): the incubator becomes an endless run of nights instead of ending after one.",
+     "since": "2026-10-24T12:56:16+00:00",
+     "done": "2026-10-24T12:56:16+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1CC37 endless incubator: DONE. Live https://chenhsieh.github.io/colony-count/incubator.html (main feature, fix; live bytes of incubator.html/.js/.css and incubator-endless.js match)."
     },
     {
      "title": "P1CC36_rule out in every mode",
@@ -2980,9 +2976,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 32
+    "done": 33
    },
    "verdict": {
     "date": "2026-10-23",
@@ -25644,8 +25640,8 @@
    ]
   },
   {
-   "nextTask": "The Lot Waits: a seven-day strip, each lot's...",
-   "costTotalUsd": 61.2,
+   "nextTask": "P1LW05_fix lit target refused",
+   "costTotalUsd": 57.6,
    "latestChange": {
     "text": "see",
     "at": "2026-10-24T17:11:44+00:00"
@@ -25688,20 +25684,34 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:13:02+00:00",
-   "lastChange": "2026-10-24T17:22:08+00:00",
+   "lastChange": "2026-10-24T21:07:25+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
     "claudeRuns": 3,
-    "apiRuns": 0,
+    "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 10.8,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
-    "totalUsdEst": 61.2
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
+    "totalUsdEst": 57.6
    },
    "tasks": [
+    {
+     "title": "P1LW05_fix lit target refused",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-24T21:07:24+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1LW02_lot waits day strip and trust",
      "state": "queued",
@@ -25731,12 +25741,12 @@
      "result": ""
     },
     {
-     "title": "P1LW05_fix lit target refused",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "",
-     "since": "2026-10-24T17:22:08+00:00",
-     "done": null,
+     "title": "P1LW01_lot waits rules v2 and levels",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "The Lot Waits: new rules (two good days, a cost on both choices) and nine measured levels",
+     "since": "2026-10-24T21:07:25+00:00",
+     "done": "2026-10-24T21:07:25+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -25791,7 +25801,7 @@
     "queued": 3,
     "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": null,
    "needsYou": "Native read of the 14 composed poems and their plain-language lines is owed. Suggest: one native read of all fourteen before the share card goes out.",
