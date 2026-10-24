@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T06:22:27+00:00",
+ "generated": "2026-10-24T06:24:54+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,22 +16,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 79,
+    "queued": 78,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3160,
-    "estimateMinutes": 3160
+    "minutes": 3120,
+    "estimateMinutes": 3120
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 2,
     "doneToday": 3,
-    "minutes": 120,
-    "estimateMinutes": 60
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
-  "queued": 80,
-  "running": 1,
+  "queued": 79,
+  "running": 2,
   "doneToday": 3,
   "lanes": {
    "Codex": 1,
@@ -42,22 +42,30 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3280,
-  "estimatedFinish": "2026-10-26T11:02:27+00:00",
-  "estimateMinutes": 3160
+  "minutesRemaining": 3300,
+  "estimatedFinish": "2026-10-26T10:24:54+00:00",
+  "estimateMinutes": 3120
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "the-apprentice",
+   "task": "P1AP02_visual round design",
+   "since": "2026-10-24T06:22:38+00:00",
+   "activity": "2026-10-24T06:22:42+00:00",
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "nobody-looking",
    "task": "P1NL02_visual round build",
    "since": "2026-10-24T06:10:35+00:00",
-   "activity": "2026-10-24T06:22:16+00:00",
+   "activity": "2026-10-24T06:24:41+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
   "runs": 265,
@@ -15489,7 +15497,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T17:56:06+00:00",
-   "lastChange": "2026-10-24T06:22:16+00:00",
+   "lastChange": "2026-10-24T06:24:41+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -24452,7 +24460,7 @@
    ]
   },
   {
-   "nextTask": "The Apprentice: three mock looks that carry the...",
+   "nextTask": "The Apprentice: build the chosen look, the scenes...",
    "costTotalUsd": 32.4,
    "latestChange": {
     "text": "feat: The Apprentice tells one story:",
@@ -24475,8 +24483,8 @@
    "title": "The Apprentice",
    "line": "",
    "url": "https://chenhsieh.github.io/the-apprentice/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "a teach-then-betrayed story with real potential; frame the story, the...",
    "shelfNote": "",
@@ -24490,7 +24498,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:02+00:00",
-   "lastChange": "2026-10-24T04:36:06+00:00",
+   "lastChange": "2026-10-24T06:22:42+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -24506,10 +24514,10 @@
    "tasks": [
     {
      "title": "P1AP02_visual round design",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "The Apprentice: three mock looks that carry the story's mood, then a build spec.",
-     "since": "2026-10-24T02:26:10+00:00",
+     "since": "2026-10-24T06:22:38+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -24576,8 +24584,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
