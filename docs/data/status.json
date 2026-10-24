@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T13:50:57+00:00",
+ "generated": "2026-10-24T13:53:15+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,45 +20,37 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 98,
+    "queued": 117,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3920,
-    "estimateMinutes": 3920
+    "minutes": 4680,
+    "estimateMinutes": 4680
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
-    "doneToday": 31,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "running": 0,
+    "doneToday": 33,
+    "minutes": 60,
+    "estimateMinutes": 60
    }
   },
-  "queued": 99,
-  "running": 2,
-  "doneToday": 31,
+  "queued": 118,
+  "running": 0,
+  "doneToday": 33,
   "lanes": {
    "Codex": 1,
-   "Claude": 2
+   "Claude": 1
   },
   "laneCap": {
    "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 4100,
-  "estimatedFinish": "2026-10-27T07:10:57+00:00",
-  "estimateMinutes": 3920
+  "minutesRemaining": 4740,
+  "estimatedFinish": "2026-10-27T19:53:15+00:00",
+  "estimateMinutes": 4680
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "chai-boil",
-   "task": "P1CB12_photo kitchens visual build",
-   "since": "2026-10-24T13:04:24+00:00",
-   "activity": "2026-10-24T13:50:54+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "Multiple games",
@@ -69,7 +61,7 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 311.39,
  "claudeInSession": {
   "runs": 270,
@@ -1976,13 +1968,13 @@
    },
    "promo": null,
    "why": "An AI-made video post of a pot of milk tea foaming up on a wood fire, plus the Lunar Lander game.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 3
+    "daysInState": 0
    },
    "waitingOn": "owner",
    "id": "chai-boil",
@@ -1991,8 +1983,8 @@
    "title": "Chai Boil",
    "line": "One pot, one dial: let the chai rise to the rim, not over it.",
    "url": "https://chenhsieh.github.io/chai-boil/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "hyper-realistic visuals instead of computer-drawn",
    "shelfNote": "",
@@ -2006,33 +1998,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-24T13:50:54+00:00",
+   "lastChange": "2026-10-24T09:11:22+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 6,
-    "claudeRuns": 9,
+    "claudeRuns": 10,
     "apiRuns": 3,
     "codexTokens": 1320538,
     "codexUsdEst": 1.58,
-    "claudeUsdEst": 32.4,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
+    "claudeUsdEst": 36.0,
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
     "totalUsdEst": 91.11
    },
    "tasks": [
     {
      "title": "P1CB12_photo kitchens visual build",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Chai Boil: build the photographic kitchens (one real photo per kitchen, foam, gold ring and steam drawn on top)",
-     "since": "2026-10-24T13:04:24+00:00",
-     "done": null,
+     "since": "2026-10-24T09:11:22+00:00",
+     "done": "2026-10-24T09:11:22+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1CB12_photo-kitchens-visual-build: DONE"
     },
     {
      "title": "P3OR76_chai foam slip words",
@@ -2135,9 +2127,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 18
+    "done": 19
    },
    "verdict": {
     "date": "2026-10-21",
@@ -2145,7 +2137,7 @@
     "note": "Visual revamp, different kitchen"
    },
    "needsYou": "Prayer-flag strip in the mountain hut set: five extra colours on one strip, all six kitchens still pass the contrast check. Suggest: keep it; it costs little and no kitchen failed the contrast check.",
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-24T09:10:53+00:00",
@@ -13304,7 +13296,7 @@
    ]
   },
   {
-   "nextTask": "Makeshift Chair 3D: the visual round (soft clay...",
+   "nextTask": "Makeshift Chair 3D (#35): recheck the failing spike...",
    "costTotalUsd": 58.35,
    "latestChange": {
     "text": "3d: clients, levels, saved progress and the daily with a bot proof (P1MC02)",
@@ -13327,7 +13319,7 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "visual round clay",
+   "waitingOn": "recheck 3d spike test and 320 overflow",
    "id": "makeshift-chair",
    "number": 35,
    "repo": "makeshift-chair",
@@ -13353,7 +13345,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-24T11:32:39+00:00",
+   "lastChange": "2026-10-24T13:53:05+00:00",
    "cost": {
     "apiUsd": 11.15,
     "codexRuns": 2,
@@ -13367,6 +13359,20 @@
     "totalUsdEst": 58.35
    },
    "tasks": [
+    {
+     "title": "P2MC05_recheck 3d spike test and 320 overflow",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Makeshift Chair 3D (#35): recheck the failing spike test and the 320 px link overflow.",
+     "since": "2026-10-24T13:53:05+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2MC04_visual round clay",
      "state": "queued",
@@ -13464,24 +13470,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "fix: chair taps place repairs"
-    },
-    {
-     "title": "makeshift chair bastard chairs",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "Grassroots 3D look, correct source link, mechanism pass.",
-     "since": "2026-10-19T17:54:51+00:00",
-     "done": "2026-10-19T17:54:51+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Brief: expert/makeshift-chair/packages/BRIEF_20261019.md: legs are stacks of junk that must reach the gap's exact height, the weakest piece tested by the day's heaviest sitter; grassroots paper-collage look; credit..."
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 3,
     "running": 0,
     "waitingDesign": 0,
     "done": 6

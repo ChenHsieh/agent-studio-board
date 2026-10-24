@@ -1,5 +1,5 @@
 {
- "generated": 1792849826,
+ "generated": 1792850006,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -83,7 +83,7 @@
   "codexOut": false,
   "converted": 0,
   "convertedRunning": 0,
-  "claudeWorkers": 1,
+  "claudeWorkers": 0,
   "claudeWorkerCap": 3,
   "handedBack": 0,
   "lastHandBack": null,
@@ -91,40 +91,21 @@
  },
  "tasks": [
   {
-   "id": "P1CB12_photo-kitchens-visual-build",
-   "request": "Chai Boil: build the photographic kitchens (one real photo per kitchen, foam, gold ring and steam drawn on top)",
-   "game": "Chai Boil",
+   "id": "P1WL00_model-log-and-workflow-review",
+   "request": "A model log: which model ran which task, whether it passed first time, and a weekly workflow review.",
+   "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P3OR76_chai-foam-slip-words"
-   ],
-   "priority": "P1",
-   "why": "An AI-made video post of a pot of milk tea foaming up on a wood fire, plus the Lunar Lander game.",
-   "state": "running",
-   "at": 1792833082,
-   "created": 1792833082
-  },
-  {
-   "id": "",
-   "request": "",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
+   "kind": "review",
    "size": "studio",
    "estMinutes": null,
    "after": [],
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1792845775,
-   "created": 1792845775
+   "at": 1792810810,
+   "created": 1792810810
   },
   {
    "id": "P1CC36_rule-out-in-every-mode",
@@ -289,6 +270,23 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792834247
+  },
+  {
+   "id": "P2MC05_recheck-3d-spike-test-and-320-overflow",
+   "request": "Makeshift Chair 3D (#35): recheck the failing spike test and the 320 px link overflow.",
+   "game": "Makeshift Chair",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "idea",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A published photo series of broken street chairs repaired with scraps, rope, bricks and tape.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792849985
   },
   {
    "id": "P2TS58_thumb-stand-link-preview",
@@ -700,23 +698,6 @@
    "created": 1792807366
   },
   {
-   "id": "P1WL00_model-log-and-workflow-review",
-   "request": "A model log: which model ran which task, whether it passed first time, and a weekly workflow review.",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792810810
-  },
-  {
    "id": "P1WX02_why-exists-custom-01",
    "request": "Add the 'Why this exists' section inside 6 games: glasshouse, align-hero, fold-guess, bluebook-guess, remote-viewer, dynasty-guess.",
    "game": "Studio",
@@ -731,7 +712,7 @@
    "why": "",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792849331
+   "created": 1792849919
   },
   {
    "id": "P1WX03_why-exists-custom-02",
@@ -748,7 +729,7 @@
    "why": "",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792849335
+   "created": 1792849919
   },
   {
    "id": "P1WX04_why-exists-custom-03",
@@ -765,7 +746,7 @@
    "why": "",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792849339
+   "created": 1792849919
   },
   {
    "id": "P1WX05_why-exists-custom-04",
@@ -782,7 +763,26 @@
    "why": "",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792849343
+   "created": 1792849919
+  },
+  {
+   "id": "P1WX06_why-exists-custom-05",
+   "request": "Add the 'Why this exists' section inside 6 games: grass-crossword, chai-boil, gif-cities, fool-the-algorithm, clean-features, peony-dream.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1CB12_photo-kitchens-visual-build"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792849919
   },
   {
    "id": "P1WX21_why-exists-template-01",
@@ -799,7 +799,7 @@
    "why": "",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792849412
+   "created": 1792849919
   },
   {
    "id": "P2AX11_audit-report-merge-tools-only",
@@ -874,6 +874,57 @@
    "created": 1792790639
   },
   {
+   "id": "P2PL01_no-hub-batch-1",
+   "request": "Remove the hub page link and name from 6 more pages.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792849936
+  },
+  {
+   "id": "P2PL02_no-hub-batch-2",
+   "request": "Remove the hub page link and name from 6 more pages.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792849940
+  },
+  {
+   "id": "P2PL03_no-hub-batch-3",
+   "request": "Remove the hub page link and name from 6 more pages.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792849944
+  },
+  {
    "id": "P2RJT00_rumour-on-the-jetty",
    "request": "Rumour on the Jetty: the town fits a phone, door dots readable, the boat tap no longer counts as a whisper",
    "game": "Rumour On The Jetty",
@@ -931,6 +982,244 @@
    "created": 1792807366
   },
   {
+   "id": "P2WX07_why-exists-custom-p2-01",
+   "request": "Add the 'Why this exists' section inside 6 games: fly-song, fly-swarm, time-material, glyph-gates, triangle-lexicon, keep-both.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792849919
+  },
+  {
+   "id": "P2WX08_why-exists-custom-p2-02",
+   "request": "Add the 'Why this exists' section inside 6 games: alias-loaf, slice-and-bake, uneven-loop, refusal-detour, clay-clock, acrylic-beacon.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792849919
+  },
+  {
+   "id": "P2WX09_why-exists-custom-p2-03",
+   "request": "Add the 'Why this exists' section inside 6 games: the-folder, copy-paste, anechoic-fugue, matchmaker-chat, nesting-scrap, telephone-of-babel.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792849919
+  },
+  {
+   "id": "P2WX10_why-exists-custom-p2-04",
+   "request": "Add the 'Why this exists' section inside 6 games: zoom-out, seal-carver, stroke-tops, server-stress, tractatus-tree, felt-years.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792849919
+  },
+  {
+   "id": "P2WX11_why-exists-custom-p2-05",
+   "request": "Add the 'Why this exists' section inside 6 games: lantern-meeting, sigil-wheel, connectle, marble-machine, herbarium-guess, gallery-guess.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792849919
+  },
+  {
+   "id": "P2WX12_why-exists-custom-p2-06",
+   "request": "Add the 'Why this exists' section inside 6 games: redline-river, service-lane, lens-screen, missing-field, the-zipper, tell.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792849919
+  },
+  {
+   "id": "P2WX13_why-exists-custom-p2-07",
+   "request": "Add the 'Why this exists' section inside 6 games: beetle-in-a-box, floating-city, billboard-wars, dough-boundary, life-statistics, material-boards.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792849919
+  },
+  {
+   "id": "P2WX14_why-exists-custom-p2-08",
+   "request": "Add the 'Why this exists' section inside 6 games: rasp, shared-phase, spirit-billboard, moire-overlay, orbit-rings, floor-area.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792849919
+  },
+  {
+   "id": "P2WX15_why-exists-custom-p2-09",
+   "request": "Add the 'Why this exists' section inside 6 games: lindy-shelf, squat-tempo, machine-rhythm, scooter-alley, fake-philosopher, four-thirty-three.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792849919
+  },
+  {
+   "id": "P2WX16_why-exists-custom-p2-10",
+   "request": "Add the 'Why this exists' section inside 6 games",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792849919
+  },
+  {
+   "id": "P2WX17_why-exists-custom-p2-11",
+   "request": "Add the 'Why this exists' section inside 6 games: fold-bot, jar-stage, soft-bag, curve-shot, tomorrow-bag, trick-box.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792849919
+  },
+  {
+   "id": "P2WX18_why-exists-custom-p2-12",
+   "request": "Add the 'Why this exists' section inside 6 games: triop-game, silva-to-maaslin2, metagenome-profilers, ribosome-2048, knockout-plate, shortest-law.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792849919
+  },
+  {
+   "id": "P2WX19_why-exists-custom-p2-13",
+   "request": "Add the 'Why this exists' section inside 6 games: silent-disco, lamp-spiral, thirsty-clicks, no-unison, dancers-not-mad, letter-lines.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792849919
+  },
+  {
+   "id": "P2WX20_why-exists-custom-p2-14",
+   "request": "Add the 'Why this exists' section inside 4 games: lie-flat, hallway-posters, notched-boat, think-elephant.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792849919
+  },
+  {
    "id": "P2WX22_why-exists-template-p2-01",
    "request": "Add the 'Why this exists' section inside 6 games: one-script, grub-band, lot-waits, coat-corridor, speaking-stone, checking-desk.",
    "game": "Studio",
@@ -945,7 +1234,7 @@
    "why": "",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792849416
+   "created": 1792849919
   },
   {
    "id": "P2WX24_why-exists-template-p2-03",
@@ -962,7 +1251,7 @@
    "why": "",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792849425
+   "created": 1792849919
   },
   {
    "id": "P2WX25_why-exists-template-p2-04",
@@ -979,7 +1268,7 @@
    "why": "",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792849429
+   "created": 1792849919
   },
   {
    "id": "P2WX26_why-exists-template-p2-05",
@@ -996,7 +1285,7 @@
    "why": "",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792849434
+   "created": 1792849919
   },
   {
    "id": "P2WX27_why-exists-template-p2-06",
@@ -1013,7 +1302,7 @@
    "why": "",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792849438
+   "created": 1792849919
   },
   {
    "id": "P2n86_round4-template-repos",
@@ -1477,27 +1766,6 @@
    "created": 1792807366
   },
   {
-   "id": "P1WX06_why-exists-custom-05",
-   "request": "Add the 'Why this exists' section inside 6 games: grass-crossword, chai-boil, gif-cities, fool-the-algorithm, clean-features, peony-dream.",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1CB12_photo-kitchens-visual-build"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P1CB12_photo-kitchens-visual-build"
-   ],
-   "created": 1792849348
-  },
-  {
    "id": "P2AX13_kit-fit-rollout-honest-sign",
    "request": "honest-sign: take the new play kit so the board and Undo fit a small phone",
    "game": "Honest Sign",
@@ -1651,6 +1919,83 @@
    "created": 1792824844
   },
   {
+   "id": "P2PL04_no-hub-final-scan",
+   "request": "Final check: no game page names or links the hub.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "low",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1WX02_why-exists-custom-01",
+    "P1WX03_why-exists-custom-02",
+    "P1WX04_why-exists-custom-03",
+    "P1WX05_why-exists-custom-04",
+    "P1WX06_why-exists-custom-05",
+    "P1WX21_why-exists-template-01",
+    "P2PL01_no-hub-batch-1",
+    "P2PL02_no-hub-batch-2",
+    "P2PL03_no-hub-batch-3",
+    "P2WX07_why-exists-custom-p2-01",
+    "P2WX08_why-exists-custom-p2-02",
+    "P2WX09_why-exists-custom-p2-03",
+    "P2WX10_why-exists-custom-p2-04",
+    "P2WX11_why-exists-custom-p2-05",
+    "P2WX12_why-exists-custom-p2-06",
+    "P2WX13_why-exists-custom-p2-07",
+    "P2WX14_why-exists-custom-p2-08",
+    "P2WX15_why-exists-custom-p2-09",
+    "P2WX16_why-exists-custom-p2-10",
+    "P2WX17_why-exists-custom-p2-11",
+    "P2WX18_why-exists-custom-p2-12",
+    "P2WX19_why-exists-custom-p2-13",
+    "P2WX20_why-exists-custom-p2-14",
+    "P2WX22_why-exists-template-p2-01",
+    "P2WX23_why-exists-template-p2-02",
+    "P2WX24_why-exists-template-p2-03",
+    "P2WX25_why-exists-template-p2-04",
+    "P2WX26_why-exists-template-p2-05",
+    "P2WX27_why-exists-template-p2-06"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P1WX02_why-exists-custom-01",
+    "P1WX03_why-exists-custom-02",
+    "P1WX04_why-exists-custom-03",
+    "P1WX05_why-exists-custom-04",
+    "P1WX06_why-exists-custom-05",
+    "P1WX21_why-exists-template-01",
+    "P2PL01_no-hub-batch-1",
+    "P2PL02_no-hub-batch-2",
+    "P2PL03_no-hub-batch-3",
+    "P2WX07_why-exists-custom-p2-01",
+    "P2WX08_why-exists-custom-p2-02",
+    "P2WX09_why-exists-custom-p2-03",
+    "P2WX10_why-exists-custom-p2-04",
+    "P2WX11_why-exists-custom-p2-05",
+    "P2WX12_why-exists-custom-p2-06",
+    "P2WX13_why-exists-custom-p2-07",
+    "P2WX14_why-exists-custom-p2-08",
+    "P2WX15_why-exists-custom-p2-09",
+    "P2WX16_why-exists-custom-p2-10",
+    "P2WX17_why-exists-custom-p2-11",
+    "P2WX18_why-exists-custom-p2-12",
+    "P2WX19_why-exists-custom-p2-13",
+    "P2WX20_why-exists-custom-p2-14",
+    "P2WX22_why-exists-template-p2-01",
+    "P2WX23_why-exists-template-p2-02",
+    "P2WX24_why-exists-template-p2-03",
+    "P2WX25_why-exists-template-p2-04",
+    "P2WX26_why-exists-template-p2-05",
+    "P2WX27_why-exists-template-p2-06"
+   ],
+   "created": 1792849965
+  },
+  {
    "id": "P2TE06_look-refine",
    "request": "Think an Elephant: refine the chalk look, bigger text, visible forest path",
    "game": "Think Elephant",
@@ -1734,7 +2079,7 @@
    "waitingOn": [
     "P1CD03_show-the-three-copyists-and-the-paper-rule"
    ],
-   "created": 1792849421
+   "created": 1792849919
   },
   {
    "id": "P2n100_review-one-umbrella-and-rolling-back",
@@ -2142,6 +2487,25 @@
    "state": "done",
    "at": 1792810828,
    "created": 1792810828
+  },
+  {
+   "id": "P1CB12_photo-kitchens-visual-build",
+   "request": "Chai Boil: build the photographic kitchens (one real photo per kitchen, foam, gold ring and steam drawn on top)",
+   "game": "Chai Boil",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR76_chai-foam-slip-words"
+   ],
+   "priority": "P1",
+   "why": "An AI-made video post of a pot of milk tea foaming up on a wood fire, plus the Lunar Lander game.",
+   "state": "done",
+   "at": 1792833082,
+   "created": 1792833082
   },
   {
    "id": "P1CF02_story-and-strings",
@@ -2897,6 +3261,23 @@
    "state": "done",
    "at": 1792838713,
    "created": 1792838713
+  },
+  {
+   "id": "",
+   "request": "",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792845775,
+   "created": 1792845775
   },
   {
    "id": "P1UX00_board-checklist-data",
