@@ -1,15 +1,15 @@
 {
- "generated": 1792820050,
+ "generated": 1792820362,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
-  "lanesBusy": 0,
-  "ready": 1,
+  "lanesBusy": 2,
+  "ready": 0,
   "waiting": 2,
-  "queued": 3,
-  "running": 0,
+  "queued": 2,
+  "running": 2,
   "done24h": 16,
   "modelsQueued": {
-   "deepseek-v4-flash": 3
+   "deepseek-v4-flash": 4
   },
   "spendTodayUsd": 0.0,
   "runsToday": 1,
@@ -91,6 +91,23 @@
  },
  "tasks": [
   {
+   "id": "P3OR68_remote-viewer-credits-page",
+   "request": "Remote Viewer: a credits page that names its fonts, the declassified pages and their licences",
+   "game": "Remote Viewer",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "Declassified CIA Stargate remote-viewing session reports, with a blackout rule after the word game Redactle.",
+   "state": "running",
+   "at": 1792819892,
+   "created": 1792819892
+  },
+  {
    "id": "P1NL00_slide-and-swap-feel-and-depth",
    "request": "Nobody Looking (#127): sliding and swapping works smoothly with a finger, and a check of how deep the game really is.",
    "game": "Nobody Looking",
@@ -108,21 +125,21 @@
    "created": 1792808745
   },
   {
-   "id": "P1SC00_illegal-move-w2h3-cannot-start",
-   "request": "Seal Carver (#80): the game says 'cannot start, illegal move W2H3'; fix it.",
-   "game": "Seal Carver",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
+   "id": "P3OR69_scribes-blotter-credits-page",
+   "request": "The Scribe's Blotter: a credits page with licences",
+   "game": "Scribes Blotter",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
    "size": "one repo",
    "estMinutes": null,
    "after": [],
-   "priority": "P2",
-   "why": "A video of a seal-editor tool for Chinese seal carving.",
+   "priority": null,
+   "why": "",
    "state": "running",
-   "at": 1792810783,
-   "created": 1792810783
+   "at": 1792820330,
+   "created": 1792820330
   },
   {
    "id": "P1AP02_visual-round-design",
@@ -418,23 +435,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792810482
-  },
-  {
-   "id": "P3OR68_remote-viewer-credits-page",
-   "request": "Remote Viewer: a credits page that names its fonts, the declassified pages and their licences",
-   "game": "Remote Viewer",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "Declassified CIA Stargate remote-viewing session reports, with a blackout rule after the word game Redactle.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792819892
   },
   {
    "id": "P1CD01_visual-round-hyperreal-or-high-res",
@@ -2314,6 +2314,23 @@
    "state": "done",
    "at": 1792799519,
    "created": 1792799519
+  },
+  {
+   "id": "P1SC00_illegal-move-w2h3-cannot-start",
+   "request": "Seal Carver (#80): the game says 'cannot start, illegal move W2H3'; fix it.",
+   "game": "Seal Carver",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "A video of a seal-editor tool for Chinese seal carving.",
+   "state": "done",
+   "at": 1792810783,
+   "created": 1792810783
   },
   {
    "id": "P1SW02_level7-coin-and-pet-outside-canvas",

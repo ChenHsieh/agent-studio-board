@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T05:36:36+00:00",
+ "generated": "2026-10-24T05:39:06+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,22 +16,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 81,
+    "queued": 82,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3240,
-    "estimateMinutes": 3240
+    "minutes": 3280,
+    "estimateMinutes": 3280
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
+    "running": 1,
     "doneToday": 1,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "minutes": 120,
+    "estimateMinutes": 60
    }
   },
-  "queued": 82,
-  "running": 2,
+  "queued": 83,
+  "running": 1,
   "doneToday": 1,
   "lanes": {
    "Codex": 1,
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3420,
-  "estimatedFinish": "2026-10-26T11:36:36+00:00",
-  "estimateMinutes": 3240
+  "minutesRemaining": 3400,
+  "estimatedFinish": "2026-10-26T12:19:06+00:00",
+  "estimateMinutes": 3280
  },
  "lanes": [
   {
@@ -54,22 +54,14 @@
    "since": "2026-10-24T05:23:00+00:00",
    "activity": "2026-10-24T05:36:31+00:00",
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "seal-carver",
-   "task": "P1SC00_illegal move w2h3 cannot start",
-   "since": "2026-10-24T05:22:55+00:00",
-   "activity": "2026-10-24T05:35:59+00:00",
-   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 262,
-  "usdEst": 943.2,
+  "runs": 263,
+  "usdEst": 946.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -119,7 +111,7 @@
   },
   {
    "day": "2026-10-24",
-   "changes": 4
+   "changes": 5
   }
  ],
  "houseRules": 25,
@@ -20352,7 +20344,7 @@
    ]
   },
   {
-   "nextTask": "The Scribe's Blotter visual round: the stall, the...",
+   "nextTask": "The Scribe's Blotter: a credits page with licences",
    "costTotalUsd": 25.2,
    "latestChange": {
     "text": "premise card (The idea) from the round-5 brief, kit 13",
@@ -20368,7 +20360,7 @@
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "scribes blotter",
+   "waitingOn": "scribes blotter credits page",
    "id": "scribes-blotter",
    "number": 151,
    "repo": "scribes-blotter",
@@ -20390,7 +20382,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:02+00:00",
-   "lastChange": "2026-10-24T03:00:00+00:00",
+   "lastChange": "2026-10-24T05:38:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -20404,6 +20396,20 @@
     "totalUsdEst": 25.2
    },
    "tasks": [
+    {
+     "title": "P3OR69_scribes blotter credits page",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "The Scribe's Blotter: a credits page with licences",
+     "since": "2026-10-24T05:38:50+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2SBL00_scribes blotter",
      "state": "queued",
@@ -20434,7 +20440,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
@@ -20493,10 +20499,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 39.76,
+   "costTotalUsd": 43.36,
    "latestChange": {
-    "text": "feat: give Seal Carver its own link preview",
-    "at": "2026-10-21T20:04:25+00:00"
+    "text": "fix: game starts again with a save from the older rules (illegal move w2h3); result card...",
+    "at": "2026-10-24T05:38:11+00:00"
    },
    "promo": {
     "files": {
@@ -20507,23 +20513,23 @@
     "caption": "Carve a short phrase into a square seal stone, one box."
    },
    "why": "A video of a seal-editor tool for Chinese seal carving.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "illegal move w2h3 cannot start",
+   "waitingOn": "none",
    "id": "seal-carver",
    "number": 80,
    "repo": "seal-carver",
    "title": "Seal Carver",
    "line": "Carve a short phrase into a square seal stone, one box.",
    "url": "https://chenhsieh.github.io/seal-carver/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Teach placement so it is reasoning, not trial and error",
    "shelfNote": "",
@@ -20536,33 +20542,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:20:34+00:00",
-   "lastChange": "2026-10-24T05:35:59+00:00",
+   "lastChange": "2026-10-24T05:38:11+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 2,
     "codexTokens": 129278,
     "codexUsdEst": 0.16,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 11,
     "earlierUsdEst": 39.6,
-    "totalUsdEst": 39.76
+    "totalUsdEst": 43.36
    },
    "tasks": [
     {
      "title": "P1SC00_illegal move w2h3 cannot start",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Seal Carver (#80): the game says 'cannot start, illegal move W2H3'; fix it.",
-     "since": "2026-10-24T05:22:55+00:00",
-     "done": null,
+     "since": "2026-10-24T02:59:43+00:00",
+     "done": "2026-10-24T02:59:43+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1SC00 Seal Carver (#80): \"game cannot start, illegal move W2H3\" (planner, Claude Opus, 2026-10-24)"
     },
     {
      "title": "P1SD35_studio standard seal carver",
@@ -20609,14 +20615,20 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-24T05:38:11+00:00",
+     "ok": true,
+     "note": "fix: game starts again with a save from the older rules (illegal move w2h3); result card shows its score, not NaN",
+     "source": "board note"
+    },
     {
      "at": "2026-10-21T20:04:25+00:00",
      "ok": true,
@@ -20682,12 +20694,6 @@
      "ok": true,
      "note": "fix: holding a button or the board no longer selects text on iPhone",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-16T01:43:20+00:00",
-     "ok": true,
-     "note": "LIVE https://chenhsieh.github.io/seal-carver/ (claude builder, batch3)",
-     "source": "board note"
     }
    ]
   },
