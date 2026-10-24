@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T02:24:57+00:00",
+ "generated": "2026-10-24T02:25:28+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,35 +16,35 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 81,
+    "queued": 78,
     "running": 1,
     "doneToday": 6,
-    "minutes": 3280,
-    "estimateMinutes": 3280
+    "minutes": 3160,
+    "estimateMinutes": 3160
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
+    "running": 5,
     "doneToday": 90,
-    "minutes": 180,
-    "estimateMinutes": 60
+    "minutes": 360,
+    "estimateMinutes": 90
    }
   },
-  "queued": 82,
-  "running": 3,
+  "queued": 79,
+  "running": 6,
   "doneToday": 96,
   "lanes": {
    "Codex": 1,
-   "Claude": 3
+   "Claude": 4
   },
   "laneCap": {
    "Claude": 4,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3460,
-  "estimatedFinish": "2026-10-26T09:04:57+00:00",
-  "estimateMinutes": 3280
+  "minutesRemaining": 3520,
+  "estimatedFinish": "2026-10-26T07:05:28+00:00",
+  "estimateMinutes": 3160
  },
  "lanes": [
   {
@@ -57,10 +57,34 @@
   },
   {
    "worker": "Claude",
+   "game": "copy-drift",
+   "task": "P1CD00_first minute step three stuck",
+   "since": "2026-10-24T02:25:05+00:00",
+   "activity": "2026-10-24T02:25:17+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "even-water",
+   "task": "P1EW00_pace predictability and guide",
+   "since": "2026-10-24T02:25:05+00:00",
+   "activity": "2026-10-24T02:25:05+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
    "game": "fool-the-algorithm",
    "task": "P1FG00_forager birds and play pause",
    "since": "2026-10-24T02:09:01+00:00",
    "activity": "2026-10-24T02:17:22+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "play-template",
+   "task": "P1KT04_daily card and howto wording",
+   "since": null,
+   "activity": null,
    "commit": null
   },
   {
@@ -76,7 +100,7 @@
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 2,
+ "claudeWorkers": 5,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
   "runs": 238,
@@ -3185,7 +3209,7 @@
    ]
   },
   {
-   "nextTask": "Copy Drift (#129): the third first-minute page gets...",
+   "nextTask": null,
    "costTotalUsd": 54.19,
    "latestChange": {
     "text": "P2RL02_credits-licences-copy-drift: WORKDIR",
@@ -3204,8 +3228,8 @@
    "title": "Copy Drift",
    "line": "Hand a page to a copyist that rewrites each mark as the closest one it knows; 12 pages.",
    "url": "https://chenhsieh.github.io/copy-drift/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Hand a page to a copyist that rewrites each mark as the closest one it knows;",
    "shelfNote": "",
@@ -3218,7 +3242,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T17:56:12+00:00",
-   "lastChange": "2026-10-24T02:02:19+00:00",
+   "lastChange": "2026-10-24T02:25:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -3234,10 +3258,10 @@
    "tasks": [
     {
      "title": "P1CD00_first minute step three stuck",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Copy Drift (#129): the third first-minute page gets stuck; find out if it is the story or the rules, and fix it.",
-     "since": "2026-10-24T02:02:19+00:00",
+     "since": "2026-10-24T02:25:05+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -3332,8 +3356,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 6
    },
@@ -5173,7 +5197,7 @@
    ]
   },
   {
-   "nextTask": "Even Water (#131): the water moves slower and...",
+   "nextTask": "Even Water: a workable visual round: three mock...",
    "costTotalUsd": 50.63,
    "latestChange": {
     "text": "fix: start the first minute only when Play is tapped",
@@ -5192,8 +5216,8 @@
    "title": "Even Water",
    "line": "Place a few stones so the water finds every cup before the deep pit drinks it; 12 villages.",
    "url": "https://chenhsieh.github.io/even-water/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "has real potential; refine the feel (slower, predictable, guided) and the look...",
    "shelfNote": "",
@@ -5206,7 +5230,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-24T02:14:35+00:00",
+   "lastChange": "2026-10-24T02:25:05+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -5222,10 +5246,10 @@
    "tasks": [
     {
      "title": "P1EW00_pace predictability and guide",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Even Water (#131): the water moves slower and predictably, with a guide that shows where it will go before you place a stone.",
-     "since": "2026-10-24T02:14:35+00:00",
+     "since": "2026-10-24T02:25:05+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -5334,8 +5358,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 6
    },
@@ -27530,7 +27554,7 @@
    "url": "https://chenhsieh.github.io/copy-drift/",
    "added": "2026-10-22",
    "try": "Read what each copyist will write, then plan the chain so the letter ends as a joke",
-   "busy": false,
+   "busy": true,
    "image": "promo/copy-drift/first.jpg"
   },
   {
@@ -27539,7 +27563,7 @@
    "url": "https://chenhsieh.github.io/even-water/",
    "added": "2026-10-22",
    "try": "Place stones so one pour reaches every cup before the pit drinks it",
-   "busy": false,
+   "busy": true,
    "image": "promo/even-water/first.jpg"
   },
   {
