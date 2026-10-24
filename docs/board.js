@@ -38,6 +38,9 @@ const { inProg, isReady, updatedSinceRelease, changeSummary, IN_VIEW, numLabel, 
 let range = rangeFromHash(location.hash);
 let visible = [];
 let quota = null, requests = null;
+let acts = null, reqs = null, costData = null;       // data/actions.json, data/requests.json, data/cost.json (P1UX06)
+const sheet = { step: 1, action: null, ok: false };
+const AC = window.BoardActions;
 const qFilter = JSON.parse(localStorage.getItem('board.qfilter') || '{}');
 const qf = { route: qFilter.route || [], state: qFilter.state || [] };
 const qOpen = new Set();
@@ -150,8 +153,21 @@ function setRangeFrom(from, to) {
   if (data) render();
 }
 
+async function loadJson(path) {
+  for (const url of [path, `https://raw.githubusercontent.com/ChenHsieh/agent-studio-board/main/docs/${path}`]) {
+    try { const r = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' }); if (r.ok) return await r.json(); } catch { /* next */ }
+  }
+  return null;
+}
+async function loadActions() {
+  const [a, r, c] = await Promise.all([loadJson('data/actions.json'), loadJson('data/requests.json'), loadJson('data/cost.json')]);
+  acts = a; reqs = r; costData = c;
+  if (view === 'queue') renderQueueView();
+}
+
 async function loadExtra() {
   loadChecks();
+  loadActions();
   loadModels();
   Gauge.load().then((q) => { if (q) { quota = q; paintGauge(); if (view === 'queue') renderQueueView(); } });
   for (const url of ['data/queue.json', 'https://raw.githubusercontent.com/ChenHsieh/agent-studio-board/main/docs/data/queue.json']) {
@@ -179,7 +195,7 @@ function requestHtml(t) {
     <span class="rtext">${esc(t.request)}</span>
     <span class="rline"><span class="rgame">${esc(t.game)}</span>${t.wasCodex ? '<span class="chip2 wascx">was Codex</span>' : ''}<span class="chip2">${esc(t.model)}</span><span class="chip2">${esc(t.effort)}</span><span class="rst ${esc(t.state)}">${esc(stateText(t))}</span>${share}</span></button>
     ${t.why ? `<p class="why rwhy"><b>Why this exists:</b> ${esc(t.why)}</p>` : ''}
-    <dl class="rmeta">${meta.map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl></li>`;
+    <dl class="rqmeta">${meta.map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl></li>`;
 }
 // Codex out: Claude covers the highest-priority Codex tasks (planner plus overflow workers, max 3); Codex back: tasks handed back.
 function overflowHtml(o) {
@@ -207,6 +223,60 @@ function orHtml(o) {
     </dl>
     ${recent ? `<h4 class="orh">Last ${(o.recent || []).length} finished</h4><ul class="orrecent">${recent}</ul>` : ''}</div>`;
 }
+// ---------------------------------------------------------------- Requests and the action sheet (P1UX06)
+function titleOf(slug) { const g = data && data.games.find((x) => x.id === slug); return g ? `#${g.number} ${g.title}` : slug; }
+function requestCardsHtml() {
+  const list = ((reqs && reqs.requests) || []).slice().reverse();
+  const items = list.map((r) => {
+    const t = r.tasks || {}, total = (t.done || 0) + (t.running || 0) + (t.waiting || 0) + (t.stopped || 0);
+    const w = (n) => total ? `${Math.round(100 * (n || 0) / total)}%` : '0%';
+    const state = { new: 'sent, not yet read by the planner', queued: 'queued', 'needs-ok': 'waiting for your spend ok', refused: 'refused (only you can do this)', stopped: 'stopped', recorded: 'recorded', error: 'could not be read' }[r.status] || r.status;
+    const games = (r.gameIds || []).map((g) => `<li>${esc(titleOf(g))}</li>`).join('');
+    const live = ['queued'].includes(r.status) && ((t.waiting || 0) + (t.running || 0)) > 0;
+    return `<li class="rcard" data-req="${esc(r.id)}"><h4>${esc(r.action)} <small>${esc(r.selector)}</small></h4>
+      <p class="rqmeta">${r.games} ${r.games === 1 ? 'game' : 'games'} · ${esc(state)} · sent ${esc(ago(r.sent))}${r.pickedUp ? ` · picked up ${esc(ago(r.pickedUp))}` : ' · not picked up yet'}</p>
+      ${total ? `<div class="rbar" role="img" aria-label="${esc(AC.barWords(t))}"><i class="q-done" style="width:${w(t.done)}"></i><i class="q-running" style="width:${w(t.running)}"></i><i class="q-queued" style="width:${w(t.waiting)}"></i></div><p class="rqmeta">${esc(AC.barWords(t))}</p>` : ''}
+      <p class="rqmeta">Spent about $${(r.spentUsd || 0).toFixed(2)} of $${(r.estUsd || 0).toFixed(2)} estimated</p>
+      <div class="rbtns"><button type="button" data-rtasks="${esc(r.id)}" aria-expanded="false">See the tasks</button>${live ? `<button type="button" data-copy="REQ|stop|${esc(r.id)}">Stop the rest</button>` : ''}</div>
+      <ul class="rgames" hidden>${games || '<li>No games recorded yet.</li>'}</ul></li>`;
+  }).join('');
+  return `<h3 class="rgroup">Your requests <small>${list.length}</small></h3>` + (items ? `<ul class="rcards">${items}</ul>`
+    : '<p class="empty">No requests yet. In the Checklist, tick games, choose an action and copy the line into the chat.</p>');
+}
+const SHEET_TEXT = { story: 'Words and a short row of strings', 'first-minute': 'The first 3 to 5 steps a new player meets', a11y: 'Big text, symbols with words, no colour-only cue',
+  'release-checks': 'One sweep, no edits to any game', review: 'A stranger plays two games and gives ship, revise or shelf', release: 'Marks the game public-ready', archive: 'Stays online, no more work', shelve: 'Tried and not working', question: 'Answered from the files', stop: 'Use a request card instead' };
+function openSheet() { if (!acts || !checks) return; sheet.step = 1; sheet.action = null; sheet.ok = false; renderSheet(); $('#sheet').hidden = false; document.body.classList.add('sheet-open'); const b = $('#sheet button'); if (b) b.focus(); }
+function closeSheet() { $('#sheet').hidden = true; document.body.classList.remove('sheet-open'); const b = $('#cl-act'); if (b) b.focus(); }
+function sheetCtx() {
+  const running = new Set((data.games || []).filter((g) => (g.tasks || []).some((t) => t.state === 'running')).map((g) => g.id));
+  return { running, held: new Set((data.playQueue || []).map((g) => g.id)) };
+}
+function renderSheet() {
+  const el = $('#sheet'), picked = clAll.filter((r) => cl.picked.has(r.slug));
+  const nums = AC.selectorText(picked.map((r) => r.number));
+  const close = '<button type="button" class="sclose" data-sheet="close">Close</button>';
+  if (sheet.step === 1) {
+    const items = acts.actions.filter((a) => a.id !== 'stop').map((a) => `<li><button type="button" class="sact" data-sheet-action="${esc(a.id)}"><b>${esc(a.label)}</b><small>${esc(SHEET_TEXT[a.id] || '')}${a.who === 'chen' ? ' · only you can do this' : ''}</small></button></li>`).join('');
+    el.innerHTML = `<div class="sinner"><div class="shead"><h2 id="sheet-h">Choose an action</h2>${close}</div><p class="smeta">${picked.length} ${picked.length === 1 ? 'game' : 'games'} selected: ${esc(nums)}</p><ul class="sacts">${items}</ul></div>`;
+    return;
+  }
+  const a = acts.actions.find((x) => x.id === sheet.action), groups = AC.split(a, picked, sheetCtx());
+  const est = AC.estimate(a, groups, { spendLineUsd: acts.spendLineUsd, spendLineCodexShare: acts.spendLineCodexShare });
+  const rate = costData && costData.routes && costData.routes.Claude ? `Measured average: $${costData.routes.Claude.usdPerGoodTask.toFixed(2)} per finished Claude task (${esc(costData.label || 'estimate')}).` : '';
+  const chenOnly = a.who === 'chen';
+  const lists = AC.GROUPS.map(([k, label]) => groups[k].length ? `<h3>${label} <small>${groups[k].length}</small></h3><ul class="sgames">${groups[k].map((r) => `<li>#${r.number} ${esc(r.title)}</li>`).join('')}</ul>` : '').join('');
+  const needTick = est.over && !sheet.ok;
+  const line = AC.reqLine(a, picked.map((r) => r.number), est, sheet.ok, '');
+  el.innerHTML = `<div class="sinner"><div class="shead"><h2 id="sheet-h">${esc(a.label)}</h2>${close}</div>
+    <p class="smeta">${picked.length} ${picked.length === 1 ? 'game' : 'games'}: ${esc(nums)}</p>
+    <p class="splan"><b>${est.tasks}</b> ${est.tasks === 1 ? 'task' : 'tasks'} would be queued.${chenOnly ? ' Only you can do this: the planner refuses it from anyone else.' : ''}</p>
+    ${lists}
+    <p class="sest">Estimate: about <b>$${est.usd.toFixed(0)}</b> of Claude${est.codexShare ? ` and ${(est.codexShare * 100).toFixed(0)}% of the Codex week` : ''}. ${esc(rate)}</p>
+    ${est.over ? `<label class="stick"><input type="checkbox" id="sheet-ok"${sheet.ok ? ' checked' : ''}> This is over the spend line ($${acts.spendLineUsd}). I agree to the cost.</label>` : ''}
+    <div class="sbtns"><button type="button" data-sheet="back">Back</button><button type="button" id="sheet-copy" data-sheet="copy" data-line="${esc(line)}"${needTick ? ' disabled' : ''}>Copy as text for the chat</button></div>
+    <p class="smeta">Nothing is sent from this page. Paste the copied line into the chat.</p><pre class="sline">${esc(line)}</pre></div>`;
+}
+
 function renderQueueView() {
   const el = $('#queue-view');
   const all = (requests && requests.tasks) || [];
@@ -218,7 +288,7 @@ function renderQueueView() {
     if (!rows.length) return '';
     return `<h3 class="rgroup">${r} <small>${rows.length}</small></h3><ul class="reqs">${rows.map(requestHtml).join('')}</ul>`;
   }).join('');
-  el.innerHTML = `${overflowHtml(requests && requests.overflow)}<div class="gfull">${Gauge.fullHtml(quota)}</div>${orHtml(requests && requests.openrouter)}
+  el.innerHTML = `${requestCardsHtml()}${overflowHtml(requests && requests.overflow)}<div class="gfull">${Gauge.fullHtml(quota)}</div>${orHtml(requests && requests.openrouter)}
     <div class="qfilters"><div class="qfg" aria-label="Route">${chips('route', ROUTES.map((r) => [r, r]))}</div><div class="qfg" aria-label="State">${chips('state', QSTATES)}</div></div>
     <p class="qcount">${shown.length} of ${all.length} requests${requests ? ` · updated ${ago(new Date(requests.generated * 1000).toISOString())}` : ''}</p>
     ${requests ? (groups || '<p class="empty">Nothing matches.</p>') : '<p class="empty">Loading the queue…</p>'}`;
@@ -495,6 +565,21 @@ document.addEventListener('click', (e) => {
   if (qc) { const { qf: g, value } = qc.dataset; qf[g] = qf[g].includes(value) ? qf[g].filter((v) => v !== value) : [...qf[g], value]; localStorage.setItem('board.qfilter', JSON.stringify(qf)); renderQueueView(); return; }
   const rr = e.target.closest('.rrow');
   if (rr) { const id = rr.parentElement.dataset.rid; qOpen.has(id) ? qOpen.delete(id) : qOpen.add(id); rr.parentElement.classList.toggle('open'); rr.setAttribute('aria-expanded', String(qOpen.has(id))); return; }
+  if (e.target.closest('#cl-act')) { openSheet(); return; }
+  const sh2 = e.target.closest('[data-sheet]');
+  if (sh2) {
+    const k = sh2.dataset.sheet;
+    if (k === 'close') closeSheet(); else if (k === 'back') { sheet.step = 1; renderSheet(); }
+    else if (k === 'copy') {
+      const line = sh2.dataset.line, done = () => { sh2.textContent = 'Copied'; setTimeout(() => (sh2.textContent = 'Copy as text for the chat'), 1500); };
+      (navigator.clipboard ? navigator.clipboard.writeText(line) : Promise.reject()).then(done, () => { const t = document.createElement('textarea'); t.value = line; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); done(); } catch {} t.remove(); });
+    }
+    return;
+  }
+  const sa = e.target.closest('[data-sheet-action]');
+  if (sa) { sheet.action = sa.dataset.sheetAction; sheet.step = 2; sheet.ok = false; renderSheet(); const b = $('#sheet .sclose'); if (b) b.focus(); return; }
+  const rt = e.target.closest('[data-rtasks]');
+  if (rt) { const ul = rt.closest('.rcard').querySelector('.rgames'); ul.hidden = !ul.hidden; rt.setAttribute('aria-expanded', String(!ul.hidden)); return; }
   const tab = e.target.closest('[data-view]');
   if (tab && data) { view = tab.dataset.view; saveChoices(); const h = CL.viewToHash(location.hash, view === 'checklist' ? 'checklist' : null); history.replaceState(null, '', h || location.pathname + location.search); render(); return; }
   const cc = e.target.closest('[data-clchip]');
@@ -536,12 +621,14 @@ document.addEventListener('click', (e) => {
     if (wx && open.has(id)) wx.open = true;
   }
 });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !$('#sheet').hidden) closeSheet(); });
 $('#q').addEventListener('input', () => data && render());
 document.addEventListener('change', (e) => {
   const pick = e.target.closest('[data-pick]');
   if (pick) { pick.checked ? cl.picked.add(pick.dataset.pick) : cl.picked.delete(pick.dataset.pick); renderClBar(); const all = $('#cl-all'); if (all) all.checked = clShown.length > 0 && clShown.every((r) => cl.picked.has(r.slug)); return; }
   if (e.target.id === 'cl-all') { for (const r of clShown) e.target.checked ? cl.picked.add(r.slug) : cl.picked.delete(r.slug); renderChecklist(); return; }
   if (e.target.id === 'cl-state') { cl.state = e.target.value; renderChecklist(); }
+  if (e.target.id === 'sheet-ok') { sheet.ok = e.target.checked; renderSheet(); const b = $('#sheet-ok'); if (b) b.focus(); }
 });
 $('#cl-from').addEventListener('input', () => setRangeFrom($('#cl-from').value, $('#cl-to').value));
 $('#cl-to').addEventListener('input', () => setRangeFrom($('#cl-from').value, $('#cl-to').value));
