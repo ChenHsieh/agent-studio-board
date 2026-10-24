@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-24T23:04:35+00:00",
+ "generated": "2026-10-24T23:06:51+00:00",
  "ops": {
-  "count": 81,
+  "count": 75,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 68,
+    "queued": 67,
     "running": 1,
     "doneToday": 2,
-    "minutes": 2760,
-    "estimateMinutes": 2760
+    "minutes": 2720,
+    "estimateMinutes": 2720
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 120
    }
   },
-  "queued": 69,
+  "queued": 68,
   "running": 4,
   "doneToday": 75,
   "lanes": {
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3000,
-  "estimatedFinish": "2026-10-26T21:04:35+00:00",
-  "estimateMinutes": 2760
+  "minutesRemaining": 2960,
+  "estimatedFinish": "2026-10-26T20:26:51+00:00",
+  "estimateMinutes": 2720
  },
  "lanes": [
   {
@@ -64,24 +64,24 @@
    "game": "lot-waits",
    "task": "P1LW02_lot waits day strip and trust",
    "since": "2026-10-24T22:56:10+00:00",
-   "activity": "2026-10-24T23:04:11+00:00",
+   "activity": "2026-10-24T23:06:51+00:00",
    "commit": {
-    "at": "2026-10-24T23:04:11+00:00",
-    "subject": "wip: P1LW02_lot-waits-day-strip-and-trust (Codex lane autosave 19:04)"
+    "at": "2026-10-24T23:05:36+00:00",
+    "subject": "fix: fit trust and day marks on small phones"
    }
   },
   {
    "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P1PL05_why and no hub rollout",
-   "since": null,
-   "activity": null,
+   "game": "nobody-looking",
+   "task": "P1NL03_daily from the hard bank",
+   "since": "2026-10-24T23:05:13+00:00",
+   "activity": "2026-10-24T23:05:21+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
    "game": "Multiple games",
-   "task": "P1UX06_action sheet and request cards",
+   "task": "P1PL05_why and no hub rollout",
    "since": null,
    "activity": null,
    "commit": null
@@ -15965,7 +15965,7 @@
    ]
   },
   {
-   "nextTask": "Nobody Looking daily: draw from the hard bank...",
+   "nextTask": null,
    "costTotalUsd": 65.06,
    "latestChange": {
     "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
@@ -15994,8 +15994,8 @@
    "title": "Nobody Looking",
    "line": "Twelve shelves of eyes and mouths: slide pieces until no face is left.",
    "url": "https://chenhsieh.github.io/nobody-looking/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Slide eyes and mouths until no face is left; placeholder shapes, 12 shelves",
    "shelfNote": "",
@@ -16009,7 +16009,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T17:56:06+00:00",
-   "lastChange": "2026-10-24T22:44:09+00:00",
+   "lastChange": "2026-10-24T23:05:21+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -16025,10 +16025,10 @@
    "tasks": [
     {
      "title": "P1NL03_daily from the hard bank",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Nobody Looking daily: draw from the hard bank so the obvious play stops getting par",
-     "since": "2026-10-24T05:48:57+00:00",
+     "since": "2026-10-24T23:05:13+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -16137,8 +16137,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 9
    },
@@ -19762,10 +19762,10 @@
   },
   {
    "nextTask": "Restored: blurry neighbours count by their shape, so...",
-   "costTotalUsd": 25.3,
+   "costTotalUsd": 28.9,
    "latestChange": {
-    "text": "feat: play a headline photo round before level 1",
-    "at": "2026-10-22T20:56:35+00:00"
+    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+    "at": "2026-10-24T22:45:20+00:00"
    },
    "promo": {
     "files": {
@@ -19805,7 +19805,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:49:51+00:00",
-   "lastChange": "2026-10-23T03:05:33+00:00",
+   "lastChange": "2026-10-24T22:45:20+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -19814,9 +19814,9 @@
     "codexTokens": 86565,
     "codexUsdEst": 0.1,
     "claudeUsdEst": 14.4,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
-    "totalUsdEst": 25.3
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
+    "totalUsdEst": 28.9
    },
    "tasks": [
     {
@@ -19918,6 +19918,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T22:45:20+00:00",
+     "ok": true,
+     "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-22T20:56:35+00:00",
      "ok": true,
@@ -25979,7 +25985,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:14:25+00:00",
-   "lastChange": "2026-10-24T23:04:11+00:00",
+   "lastChange": "2026-10-24T23:06:51+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -26005,8 +26011,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-24T23:04:11+00:00",
-      "subject": "wip: P1LW02_lot-waits-day-strip-and-trust (Codex lane autosave 19:04)"
+      "at": "2026-10-24T23:05:36+00:00",
+      "subject": "fix: fit trust and day marks on small phones"
      },
      "result": ""
     },
