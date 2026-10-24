@@ -30,7 +30,7 @@
 
 <nav class="controls" aria-label="Filter">
   <div class="views" id="views" role="tablist" aria-label="What to show"></div>
-  <input id="q" type="search" placeholder="Find" autocomplete="off" aria-label="Find a game">
+  <input id="q" type="search" placeholder="Find a name or #number" autocomplete="off" aria-label="Find a game">
   <div class="prio-row" data-chips="priority" aria-label="Priority"></div>
 </nav>
 <div class="tools">
@@ -44,9 +44,11 @@
       <fieldset><legend>Verdict</legend><div data-chips="verdict"></div></fieldset>
       <fieldset><legend>Worker</legend><div data-chips="worker"></div></fieldset>
       <fieldset><legend>Recent</legend><div data-chips="recent"></div></fieldset>
+      <fieldset class="range"><legend>Number</legend><div class="range-row"><label>from <input id="range-from" type="number" inputmode="numeric" min="1" step="1" aria-label="From number"></label><label>to <input id="range-to" type="number" inputmode="numeric" min="1" step="1" aria-label="To number"></label><button type="button" id="range-clear" class="chip">Clear</button></div></fieldset>
     </div>
   </details>
-  <label class="sort">Sort <select id="sort"><option value="change">Latest change</option><option value="priority">Priority</option><option value="released">Released first</option><option value="cost">Most invested</option></select></label>
+  <button type="button" id="copy-list" class="copy-list">Copy list</button>
+  <label class="sort">Sort <select id="sort"><option value="change">Latest change</option><option value="number">Number</option><option value="priority">Priority</option><option value="released">Released first</option><option value="cost">Most invested</option></select></label>
 </div>
 
 <section id="queue-view" class="qview" hidden aria-label="Queue of requests"></section>

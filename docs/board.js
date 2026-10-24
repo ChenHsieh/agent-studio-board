@@ -26,7 +26,10 @@ let view = localStorage.getItem('board.view');
 if (!VIEWS.some(([v]) => v === view)) view = 'needs';
 // Needs you means: a human is the only thing the game is waiting for (the server sets needsYou only from board/asks.tsv).
 // The view rules live in views.js (tested in node by test/views.test.js).
-const { inProg, isReady, updatedSinceRelease, changeSummary, IN_VIEW } = window.BoardViews;
+const { inProg, isReady, updatedSinceRelease, changeSummary, IN_VIEW, numLabel, findMatch, inRange, rangeFromHash, rangeToHash, copyList, byNumber } = window.BoardViews;
+// Number range (P1BD07): lives in the URL hash (#range=120-140) so a link carries it.
+let range = rangeFromHash(location.hash);
+let visible = [];
 let quota = null, requests = null;
 const qFilter = JSON.parse(localStorage.getItem('board.qfilter') || '{}');
 const qf = { route: qFilter.route || [], state: qFilter.state || [] };
@@ -264,7 +267,7 @@ function gameHtml(g) {
   }).join('');
   const hist = (g.history || []).map((h) => `<li><time>${esc(day(h.at))}</time>${h.ok ? '' : '<span class="no">not done: </span>'}${esc(h.note)}${h.source ? `<small class="history-source">${esc(h.source)}</small>` : ''}</li>`).join('');
   return `<li class="game${open.has(g.id) ? ' open' : ''}" data-id="${esc(g.id)}">
-  <button class="row" aria-expanded="${open.has(g.id)}">${img}<span class="name">${esc(g.title)}</span>
+  <button class="row" aria-expanded="${open.has(g.id)}">${img}<span class="name">${numLabel(g) ? `<span class="num">${esc(numLabel(g))}</span> ` : ''}${esc(g.title)}</span>
     <span class="meta">${stageBadge(g)}${g.verdict && !g.released && !g.archived ? `<span class="vd ${esc(g.verdict.verdict)}">${esc(g.verdict.verdict)}</span>` : ''}<span class="p">${g.archived ? '' : esc(g.priority || '')}</span></span>
     <span class="line">${g.needsYou ? '<b class="ask">To do:</b> ' : ''}${esc(whatToDo(g))}</span>${sinceReleaseHtml(g)}${glanceHtml(g)}</button>
   ${expectHtml(g)}
@@ -296,7 +299,9 @@ function renderChips() {
   for (const [group, choices] of Object.entries(FILTERS)) {
     document.querySelector(`[data-chips="${group}"]`).innerHTML = choices.map(([value, label]) => `<button class="chip" data-filter="${group}" data-value="${value}" aria-pressed="${filters[group].includes(value)}">${label}</button>`).join('');
   }
-  const count = Object.values(filters).reduce((n, values) => n + values.length, 0);
+  const count = Object.values(filters).reduce((n, values) => n + values.length, 0) + (range.from != null || range.to != null ? 1 : 0);
+  if (document.activeElement !== $('#range-from')) $('#range-from').value = range.from ?? '';
+  if (document.activeElement !== $('#range-to')) $('#range-to').value = range.to ?? '';
   $('#filter-count').textContent = count ? `(${count})` : '';
 }
 
@@ -310,6 +315,7 @@ function matches(g) {
 
 function compare(a, b) {
   if (view === 'needs') return WHY_ORDER[whyKind(a)[0]] - WHY_ORDER[whyKind(b)[0]] || (a.priority || 'P9').localeCompare(b.priority || 'P9') || (b.lastChange || '').localeCompare(a.lastChange || '');
+  if (sort === 'number') return byNumber(a, b);
   if (sort === 'released') return (b.released ? 1 : 0) - (a.released ? 1 : 0) || (b.releasedOn || '').localeCompare(a.releasedOn || '') || (b.lastChange || '').localeCompare(a.lastChange || '');
   if (sort === 'priority') return (a.priority || 'P9').localeCompare(b.priority || 'P9') || (b.lastChange || '').localeCompare(a.lastChange || '');
   if (sort === 'cost') return (b.cost.totalUsdEst || 0) - (a.cost.totalUsdEst || 0) || (b.lastChange || '').localeCompare(a.lastChange || '');
@@ -349,7 +355,9 @@ function render() {
   $('#queue-view').hidden = view !== 'queue';
   if (view === 'queue') renderQueueView();
   paintGauge();
-  const list = data.games.filter((g) => (!q || (g.title + ' ' + g.id + ' ' + (g.line || '')).toLowerCase().includes(q)) && IN_VIEW[view](g) && matches(g)).sort(compare);
+  const list = data.games.filter((g) => findMatch(g, q) && inRange(g, range) && IN_VIEW[view](g) && matches(g)).sort(compare);
+  visible = list;
+  $('#copy-list').disabled = !list.length;
   let html = '', lastGroup = '';
   // System needs: what the pipeline itself is waiting on from a human (quota, a login, a stuck build), one line each.
   if (view === 'needs' && (data.systemNeeds || []).length) {
@@ -411,6 +419,22 @@ document.addEventListener('click', (e) => {
   }
 });
 $('#q').addEventListener('input', () => data && render());
+function setRange() {
+  range = { from: $('#range-from').value, to: $('#range-to').value };
+  range = window.BoardViews.normRange(range);
+  const h = rangeToHash(location.hash, range);
+  history.replaceState(null, '', h || location.pathname + location.search);
+  if (data) render();
+}
+$('#range-from').addEventListener('input', setRange);
+$('#range-to').addEventListener('input', setRange);
+$('#range-clear').addEventListener('click', () => { $('#range-from').value = ''; $('#range-to').value = ''; setRange(); });
+window.addEventListener('hashchange', () => { range = rangeFromHash(location.hash); if (data) render(); });
+$('#copy-list').addEventListener('click', () => {
+  const b = $('#copy-list'), text = copyList(visible), label = 'Copy list';
+  const done = () => { b.textContent = `Copied ${visible.length}`; setTimeout(() => (b.textContent = label), 1500); };
+  (navigator.clipboard ? navigator.clipboard.writeText(text) : Promise.reject()).then(done, () => { const t = document.createElement('textarea'); t.value = text; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); done(); } catch {} t.remove(); });
+});
 $('#sort').addEventListener('change', (e) => { sort = e.target.value; saveChoices(); render(); });
 load();
 setInterval(load, REFRESH_MS);

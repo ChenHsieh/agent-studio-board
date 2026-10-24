@@ -288,3 +288,12 @@ body.qmode .now, body.qmode .tally, body.qmode .tools, body.qmode #games, body.q
 .expect > summary::before { content: "+"; font-weight: 600; width: 1ch; }
 .expect[open] > summary::before { content: "\2212"; }
 .expect p { margin: 2px 0 0; }
+
+/* Game numbers (P1BD07): a small #37 before the title, a from/to range in Filter, and Copy list. */
+.num { font: 600 13px var(--mono); color: var(--muted); letter-spacing: 0; margin-right: 2px; white-space: nowrap; }
+.range-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.range-row label { display: flex; align-items: center; gap: 4px; font: 12px var(--mono); color: var(--muted); }
+.range-row input { width: 5.5em; min-height: 36px; padding: 4px 6px; border: 1px solid var(--ink); background: #fff; color: var(--ink); font: 14px var(--mono); }
+.range-row .chip { margin: 0; min-height: 36px; padding: 4px 10px; }
+.copy-list { font: 13px var(--mono); padding: 7px 10px; border: 1px solid var(--ink); background: none; color: var(--ink); min-height: 36px; }
+.copy-list:disabled { opacity: .45; }

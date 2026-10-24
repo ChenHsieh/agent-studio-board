@@ -31,7 +31,44 @@
     all: () => true,
     queue: () => false,
   };
-  const api = { inProg, isArchived, isReady, updatedSinceRelease, changeSummary, localDay, IN_VIEW };
+  // Game numbers (board/numbers.tsv, P1BD07). Chen names ranges: "120 to 140" means 120..140 inclusive.
+  const numLabel = (g) => (Number.isInteger(g.number) ? `#${g.number}` : '');
+  // Search: "37" or "#37" matches game #37 exactly; any other text matches title, id and line.
+  function findMatch(g, q) {
+    const t = String(q || '').trim().toLowerCase();
+    if (!t) return true;
+    const m = /^#?\s*(\d+)$/.exec(t);
+    if (m) return g.number === Number(m[1]);
+    return (g.title + ' ' + g.id + ' ' + (g.line || '')).toLowerCase().includes(t);
+  }
+  // A range { from, to } (either may be null). A reversed range is read the right way round.
+  function normRange(r) {
+    const n = (v) => (v === '' || v == null || !Number.isFinite(Number(v)) ? null : Math.round(Number(v)));
+    let from = n(r && r.from), to = n(r && r.to);
+    if (from != null && to != null && from > to) [from, to] = [to, from];
+    return { from, to };
+  }
+  function inRange(g, r) {
+    const { from, to } = normRange(r);
+    if (from == null && to == null) return true;
+    if (!Number.isInteger(g.number)) return false;
+    return (from == null || g.number >= from) && (to == null || g.number <= to);
+  }
+  // URL hash: #range=120-140 (also 120-, -140, or one number). Other hash keys (view=...) are left alone.
+  function rangeFromHash(hash) {
+    const m = /(?:^#?|&)range=(\d*)(-?)(\d*)/.exec(String(hash || ''));
+    if (!m) return { from: null, to: null };
+    return normRange({ from: m[1], to: m[2] ? m[3] : m[1] });
+  }
+  function rangeToHash(hash, r) {
+    const { from, to } = normRange(r);
+    const rest = String(hash || '').replace(/^#/, '').split('&').filter((p) => p && !p.startsWith('range='));
+    if (from != null || to != null) rest.unshift(`range=${from ?? ''}-${to ?? ''}`);
+    return rest.length ? '#' + rest.join('&') : '';
+  }
+  const copyList = (games) => games.map((g) => `${numLabel(g)} ${g.title}`.trim()).join('\n');
+  const byNumber = (a, b) => (Number.isInteger(a.number) ? a.number : 1e9) - (Number.isInteger(b.number) ? b.number : 1e9);
+  const api = { inProg, isArchived, isReady, updatedSinceRelease, changeSummary, localDay, IN_VIEW, numLabel, findMatch, normRange, inRange, rangeFromHash, rangeToHash, copyList, byNumber };
   root.BoardViews = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
 })(typeof window !== 'undefined' ? window : globalThis);
