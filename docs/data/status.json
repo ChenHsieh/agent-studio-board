@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T02:08:28+00:00",
+ "generated": "2026-10-24T02:11:33+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -25,14 +25,14 @@
    "Claude": {
     "queued": 1,
     "running": 3,
-    "doneToday": 86,
+    "doneToday": 87,
     "minutes": 240,
     "estimateMinutes": 60
    }
   },
   "queued": 76,
   "running": 4,
-  "doneToday": 91,
+  "doneToday": 92,
   "lanes": {
    "Codex": 1,
    "Claude": 4
@@ -43,16 +43,24 @@
   },
   "codexPaused": false,
   "minutesRemaining": 3280,
-  "estimatedFinish": "2026-10-26T04:48:28+00:00",
+  "estimatedFinish": "2026-10-26T04:51:33+00:00",
   "estimateMinutes": 3040
  },
  "lanes": [
   {
    "worker": "Claude",
+   "game": "fool-the-algorithm",
+   "task": "P1FG00_forager birds and play pause",
+   "since": "2026-10-24T02:09:01+00:00",
+   "activity": "2026-10-24T02:09:33+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
    "game": "local-hero",
    "task": "P1LH00_function keys and how to play",
    "since": "2026-10-24T01:34:59+00:00",
-   "activity": "2026-10-24T02:08:27+00:00",
+   "activity": "2026-10-24T02:10:56+00:00",
    "commit": null
   },
   {
@@ -64,22 +72,14 @@
    "commit": null
   },
   {
-   "worker": "Claude",
-   "game": "uneven-loop",
-   "task": "P1UL01_ping clear daily and glitch",
-   "since": "2026-10-24T01:23:14+00:00",
-   "activity": "2026-10-24T02:07:34+00:00",
-   "commit": null
-  },
-  {
    "worker": "Codex",
    "game": "tractatus-tree",
    "task": "P2FM58_tractatus tree first minute fix",
    "since": "2026-10-24T02:01:37+00:00",
-   "activity": "2026-10-24T02:08:08+00:00",
+   "activity": "2026-10-24T02:11:26+00:00",
    "commit": {
-    "at": "2026-10-24T02:01:38+00:00",
-    "subject": "start: P2FM58_tractatus-tree-first-minute-fix"
+    "at": "2026-10-24T02:10:29+00:00",
+    "subject": "Merge remote-tracking branch 'origin/main' into chen-cx-p2fm26-tractatus-tree-first-minute"
    }
   }
  ],
@@ -87,8 +87,8 @@
  "claudeWorkers": 3,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 234,
-  "usdEst": 842.4,
+  "runs": 235,
+  "usdEst": 846.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -134,7 +134,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 71
+   "changes": 72
   }
  ],
  "houseRules": 25,
@@ -11496,10 +11496,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 57.82,
+   "costTotalUsd": 61.42,
    "latestChange": {
-    "text": "P1LH01 design note: merge Local Hero into Align Hero as chapter 2 recommended (best Align...",
-    "at": "2026-10-24T01:34:56+00:00"
+    "text": "fix: key hints that work, a three-line Why, and How to play as five picture cards",
+    "at": "2026-10-24T02:11:12+00:00"
    },
    "promo": {
     "files": {
@@ -11525,7 +11525,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-08-20T15:58:51+00:00",
-   "lastChange": "2026-10-24T02:08:27+00:00",
+   "lastChange": "2026-10-24T02:11:12+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -11534,9 +11534,9 @@
     "codexTokens": 180479,
     "codexUsdEst": 0.22,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
-    "totalUsdEst": 57.82
+    "earlierRounds": 15,
+    "earlierUsdEst": 54.0,
+    "totalUsdEst": 61.42
    },
    "tasks": [
     {
@@ -11611,6 +11611,12 @@
    "inProgress": true,
    "history": [
     {
+     "at": "2026-10-24T02:11:12+00:00",
+     "ok": true,
+     "note": "fix: key hints that work, a three-line Why, and How to play as five picture cards",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-24T01:34:56+00:00",
      "ok": true,
      "note": "P1LH01 design note: merge Local Hero into Align Hero as chapter 2 recommended (best Align line + stop hits par on 71% of strands);",
@@ -11674,12 +11680,6 @@
      "at": "2026-10-15T00:28:44+00:00",
      "ok": true,
      "note": "feat: a findable shared stretch, a lesson that needs BANK, demo hook",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-05T03:02:01+00:00",
-     "ok": true,
-     "note": "Add a favicon (data-URI SVG, letter badge on the game's own palette)",
      "source": "main commit"
     }
    ]
@@ -22395,7 +22395,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 18.0,
+   "costTotalUsd": 21.6,
    "latestChange": {
     "text": "Story told: four story panels on the first card, a story beat each day, seven named...",
     "at": "2026-10-24T02:04:30+00:00"
@@ -22426,9 +22426,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
-    "totalUsdEst": 18.0
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
+    "totalUsdEst": 21.6
    },
    "tasks": [
     {
@@ -22479,6 +22479,12 @@
      "ok": true,
      "note": "Story told: four story panels on the first card, a story beat each day, seven named orchard tools, the who-beats-whom circle with its rule and tap-to-see, inspectors and the girl drawn, cards say what she learns, endings in words; rules and levels unchanged; l",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-24T02:02:10+00:00",
+     "ok": true,
+     "note": "feat: The Apprentice tells its story and names every tool",
+     "source": "main commit"
     },
     {
      "at": "2026-10-24T00:37:18+00:00",
@@ -22799,7 +22805,7 @@
    ]
   },
   {
-   "nextTask": "Forager: birds fly their real path, Pause shows...",
+   "nextTask": "Rename the game and its repo to Forager...",
    "costTotalUsd": 76.03,
    "latestChange": {
     "text": "top-left now own logo and title to first screen (studio standard)",
@@ -22819,8 +22825,8 @@
    "title": "The Forager",
    "line": "Change letters to widen the greedy gap.",
    "url": "https://chenhsieh.github.io/fool-the-algorithm/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Show per-path distance bars and named berries, lay the two",
    "shelfNote": "",
@@ -22829,7 +22835,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-16T07:50:19+00:00",
-   "lastChange": "2026-10-24T00:36:48+00:00",
+   "lastChange": "2026-10-24T02:09:33+00:00",
    "cost": {
     "apiUsd": 10.18,
     "codexRuns": 3,
@@ -22845,10 +22851,10 @@
    "tasks": [
     {
      "title": "P1FG00_forager birds and play pause",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Forager: birds fly their real path, Pause shows while playing, and the trip is easy to follow.",
-     "since": "2026-10-24T00:36:48+00:00",
+     "since": "2026-10-24T02:09:01+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -22957,8 +22963,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 8
    },
@@ -24468,7 +24474,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-16T02:13:20+00:00",
-   "lastChange": "2026-10-24T02:08:08+00:00",
+   "lastChange": "2026-10-24T02:11:26+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -24494,8 +24500,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-24T02:01:38+00:00",
-      "subject": "start: P2FM58_tractatus-tree-first-minute-fix"
+      "at": "2026-10-24T02:10:29+00:00",
+      "subject": "Merge remote-tracking branch 'origin/main' into chen-cx-p2fm26-tractatus-tree-first-minute"
      },
      "result": ""
     },
@@ -25601,10 +25607,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 54.22,
+   "costTotalUsd": 57.82,
    "latestChange": {
-    "text": "fix: the pin is a clear target, loop 6 no longer glitches, and there is a daily loop",
-    "at": "2026-10-24T02:07:34+00:00"
+    "text": "pin is a ringed target with a live line, caught/missed marks; loop 6 corner glitch fixed...",
+    "at": "2026-10-24T02:08:57+00:00"
    },
    "promo": {
     "files": {
@@ -25620,8 +25626,8 @@
    "title": "Uneven Loop",
    "line": "Step through frames and return to the start.",
    "url": "https://chenhsieh.github.io/uneven-loop/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Clarify the loop mechanism and let the sequencer make music",
    "shelfNote": "",
@@ -25630,33 +25636,33 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-15T03:56:45+00:00",
-   "lastChange": "2026-10-24T02:07:34+00:00",
+   "lastChange": "2026-10-24T02:08:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 1,
     "codexTokens": 185728,
     "codexUsdEst": 0.22,
-    "claudeUsdEst": 7.2,
+    "claudeUsdEst": 10.8,
     "earlierRounds": 13,
     "earlierUsdEst": 46.8,
-    "totalUsdEst": 54.22
+    "totalUsdEst": 57.82
    },
    "tasks": [
     {
      "title": "P1UL01_ping clear daily and glitch",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Uneven Loop: make the ping matter and clear, fix the level-6 glitch, and decide on a daily.",
-     "since": "2026-10-24T01:23:14+00:00",
-     "done": null,
+     "since": "2026-10-24T00:36:48+00:00",
+     "done": "2026-10-24T00:36:48+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "What a player sees now: the pin is no longer a free-running clock. the pin is 1 square away. Catch it.\", or \"...is 3 squares away\", \"...sits on an old ti"
     },
     {
      "title": "P1UL00_uneven loop explain loop and ping",
@@ -25717,14 +25723,20 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-24T02:08:57+00:00",
+     "ok": true,
+     "note": "pin is a ringed target with a live line, caught/missed marks; loop 6 corner glitch fixed (squash ran on mover transform); daily loop (greedy misses goal on 71.5% of 200 dates); live",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T02:07:34+00:00",
      "ok": true,
@@ -25790,12 +25802,6 @@
      "ok": true,
      "note": "feat: the play screen credits artanyatang's Lisbon tile poster",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-17T21:41:35+00:00",
-     "ok": true,
-     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added",
-     "source": "board note"
     }
    ]
   },
