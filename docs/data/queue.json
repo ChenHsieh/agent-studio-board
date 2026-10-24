@@ -1,5 +1,5 @@
 {
- "generated": 1792801079,
+ "generated": 1792801225,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -123,23 +123,6 @@
    "state": "running",
    "at": 1792799649,
    "created": 1792799649
-  },
-  {
-   "id": "P2RV07_rumour-on-the-jetty",
-   "request": "Build round 5 idea 7, Rumour on the Jetty (燈會的謠言), from its finished core brief (verdict GO), placeholder shapes, first-minute lesson included",
-   "game": "Rumour On The Jetty",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792799653,
-   "created": 1792799653
   },
   {
    "id": "P2RV08_scribes-blotter",
@@ -558,6 +541,25 @@
    "created": 1792799664
   },
   {
+   "id": "P2RV12_review-rumour-on-the-jetty-scribes-blotter",
+   "request": "Opus stranger review of round 5 builds rumour-on-the-jetty and scribes-blotter",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2RV07_rumour-on-the-jetty"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792799690
+  },
+  {
    "id": "P2n86_round4-template-repos",
    "request": "Create the ten new game repositories from the game template so their builds can start",
    "game": "Studio",
@@ -740,27 +742,6 @@
     "P2RV05_honest-sign"
    ],
    "created": 1792799686
-  },
-  {
-   "id": "P2RV12_review-rumour-on-the-jetty-scribes-blotter",
-   "request": "Opus stranger review of round 5 builds rumour-on-the-jetty and scribes-blotter",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2RV07_rumour-on-the-jetty"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2RV07_rumour-on-the-jetty"
-   ],
-   "created": 1792799690
   },
   {
    "id": "P2RV13_review-the-apprentice-mint",
@@ -1966,6 +1947,23 @@
    "at": 1792790510,
    "created": 1792790510,
    "estPercentOfWeek": 36.15
+  },
+  {
+   "id": "P2RV07_rumour-on-the-jetty",
+   "request": "Build round 5 idea 7, Rumour on the Jetty (燈會的謠言), from its finished core brief (verdict GO), placeholder shapes, first-minute lesson included",
+   "game": "Rumour On The Jetty",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792799653,
+   "created": 1792799653
   },
   {
    "id": "P3OR49_a11y-audit-no-crash-on-other-games",
