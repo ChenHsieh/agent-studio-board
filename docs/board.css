@@ -335,3 +335,14 @@ body.cmode .now, body.cmode .tally, body.cmode .tools, body.cmode #games, body.c
 .cbar-btns { display: flex; flex-wrap: wrap; gap: 8px; }
 .cbar button { font: 16px var(--mono); min-height: 44px; padding: 0 12px; border: 1.5px solid var(--paper); background: var(--paper); color: var(--ink); border-radius: 3px; }
 .cbar button:disabled { opacity: .55; }
+
+/* Models view (P1WL00): scorecard and last 20 tasks as lists that read at 320 wide; text 16 px or more. */
+body.mmode .now, body.mmode .tally, body.mmode .tools, body.mmode #games, body.mmode .prio-row { display: none; }
+.mview h3 { font: 600 13px/1.6 var(--mono); text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink); margin: 18px 0 6px; }
+.mlist { list-style: none; margin: 0; padding: 0; }
+.mlist li { padding: 10px 0; border-bottom: 1px solid var(--rule); font: 16px/1.45 var(--serif); color: var(--ink); overflow-wrap: anywhere; }
+.mlist small { display: block; margin-top: 3px; font: 15px/1.4 var(--serif); color: var(--muted); }
+.mlist time { font: 14px var(--mono); color: var(--muted); margin-right: 4px; }
+.mrole { font: 14px var(--mono); color: var(--muted); }
+.mflag { font: 600 13px var(--mono); border: 1px solid var(--ink); padding: 1px 6px; white-space: nowrap; }
+.mnote { font: 16px/1.5 var(--serif); color: var(--ink); border-left: 3px solid var(--ink); padding-left: 10px; }

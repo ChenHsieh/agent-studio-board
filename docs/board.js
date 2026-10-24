@@ -21,7 +21,7 @@ const savedFilters = JSON.parse(localStorage.getItem('board.filters') || '{}');
 let filters = { stage: [], priority: [], verdict: [], worker: [], recent: [], ...savedFilters };
 delete filters.needs;
 // The first-row view switch. Needs you is the default; the last choice is remembered.
-const VIEWS = [['needs', 'Needs you'], ['ready', 'Ready to try'], ['released', 'Released'], ['progress', 'In progress'], ['shelf', 'Shelf'], ['archived', 'Archived'], ['all', 'All'], ['queue', 'Queue'], ['checklist', 'Checklist']];
+const VIEWS = [['needs', 'Needs you'], ['ready', 'Ready to try'], ['released', 'Released'], ['progress', 'In progress'], ['shelf', 'Shelf'], ['archived', 'Archived'], ['all', 'All'], ['queue', 'Queue'], ['checklist', 'Checklist'], ['models', 'Models']];
 let view = localStorage.getItem('board.view');
 if (!VIEWS.some(([v]) => v === view)) view = 'needs';
 // A shared link may name the view: #range=120-140&view=checklist (P1UX03).
@@ -78,6 +78,36 @@ function day(iso) {
 function within(iso, hours) { const t = Date.parse(iso || ''); return !Number.isNaN(t) && Date.now() - t <= hours * 3_600_000; }
 function saveChoices() { localStorage.setItem('board.view', view); localStorage.setItem('board.filters', JSON.stringify(filters)); localStorage.setItem('board.sort', sort); }
 
+// ---------------------------------------------------------------- Models (P1WL00): which model ran what, and how it went
+let models = null;
+async function loadModels() {
+  for (const url of ['data/models.json', 'https://raw.githubusercontent.com/ChenHsieh/agent-studio-board/main/docs/data/models.json']) {
+    try { const r = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' }); if (r.ok) { models = await r.json(); break; } } catch { /* next */ }
+  }
+  if (models && data) { renderViews(); if (view === 'models') renderModels(); }
+}
+const PASSED_WORD = { yes: 'passed', partial: 'partly', no: 'did not pass', '': 'not scored' };
+function renderModels() {
+  const box = $('#models-view');
+  if (!models) { box.innerHTML = '<h2 id="m-h">Models</h2><p class="empty">Loading the model log…</p>'; return; }
+  const rows = (models.scorecard || []).slice().sort((a, b) => b.count - a.count);
+  const card = rows.map((r) => {
+    const bits = [`${r.count} task${r.count === 1 ? '' : 's'}`, r.firstTimePass == null ? 'pass rate not scored' : `${r.firstTimePass}% passed first time`];
+    if (r.retries) bits.push(`${r.retries} retr${r.retries === 1 ? 'y' : 'ies'}`);
+    if (r.medianMinutes != null) bits.push(`median ${r.medianMinutes} min`);
+    if (r.costPerPass != null) bits.push(`$${r.costPerPass.toFixed(2)} per pass`);
+    if (r.guessed) bits.push(`${r.guessed} estimated`);
+    const fails = (r.topFailures || []).length ? `<small>Most common misses: ${(r.topFailures || []).map(esc).join('; ')}</small>` : '';
+    return `<li><b>${esc(r.executor)}</b> <span class="mrole">${esc(r.role)}</span>${r.flag ? ` <span class="mflag">${esc(r.flag)}</span>` : ''}<br>${esc(bits.join(' · '))}${fails}</li>`;
+  }).join('');
+  const last = (models.last || []).map((t) => `<li><time>${esc(t.date)}</time> ${t.number ? `<span class="num">#${esc(t.number)}</span> ` : ''}${esc(t.task)}<br><span class="mrole">${esc(t.executor)} · ${esc(t.role)} · ${esc(PASSED_WORD[t.passed] || t.passed)}</span>${t.note ? `<small>${esc(t.note)}</small>` : ''}</li>`).join('');
+  box.innerHTML = `<h2 id="m-h">Models <small>who ran what, and how it went</small></h2>
+  ${models.workflowNote ? `<p class="mnote"><b>What we changed:</b> ${esc(models.workflowNote)}</p>` : ''}
+  <p class="ckey">'Passed first time' means the task's own checks passed without a retry. Rows marked estimated are read from the task's report, not from a check. Flags: under 60% says route that work elsewhere, over 85% says give it more.</p>
+  <h3>Scorecard</h3><ul class="mlist">${card}</ul>
+  <h3>Last 20 tasks</h3><ul class="mlist">${last}</ul>`;
+}
+
 async function loadChecks() {
   for (const url of ['data/checks.json', 'https://raw.githubusercontent.com/ChenHsieh/agent-studio-board/main/docs/data/checks.json']) {
     try { const r = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' }); if (r.ok) { checks = await r.json(); break; } } catch { /* next */ }
@@ -122,6 +152,7 @@ function setRangeFrom(from, to) {
 
 async function loadExtra() {
   loadChecks();
+  loadModels();
   Gauge.load().then((q) => { if (q) { quota = q; paintGauge(); if (view === 'queue') renderQueueView(); } });
   for (const url of ['data/queue.json', 'https://raw.githubusercontent.com/ChenHsieh/agent-studio-board/main/docs/data/queue.json']) {
     try { const r = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' }); if (r.ok) { requests = await r.json(); break; } } catch { /* next */ }
@@ -345,7 +376,7 @@ function gameHtml(g) {
 }
 
 function renderViews() {
-  const count = (v) => v === 'checklist' ? (checks ? checks.games.length : data.games.length) : v === 'queue' ? ((requests && requests.tasks) || []).filter((t) => t.state !== 'done').length : data.games.filter(IN_VIEW[v]).length + (v === 'needs' ? (data.systemNeeds || []).length : 0);
+  const count = (v) => v === 'models' ? ((models && models.scorecard) || []).length : v === 'checklist' ? (checks ? checks.games.length : data.games.length) : v === 'queue' ? ((requests && requests.tasks) || []).filter((t) => t.state !== 'done').length : data.games.filter(IN_VIEW[v]).length + (v === 'needs' ? (data.systemNeeds || []).length : 0);
   $('#views').innerHTML = VIEWS.map(([v, label]) => `<button class="view" role="tab" data-view="${v}" aria-selected="${v === view}">${label} <b>${count(v)}</b></button>`).join('');
 }
 
@@ -408,6 +439,9 @@ function render() {
   document.body.classList.toggle('qmode', view === 'queue');
   $('#queue-view').hidden = view !== 'queue';
   if (view === 'queue') renderQueueView();
+  document.body.classList.toggle('mmode', view === 'models');
+  $('#models-view').hidden = view !== 'models';
+  if (view === 'models') renderModels();
   document.body.classList.toggle('cmode', view === 'checklist');
   $('#checklist-view').hidden = view !== 'checklist';
   if (view === 'checklist') renderChecklist();
