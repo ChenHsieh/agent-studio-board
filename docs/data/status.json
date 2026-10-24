@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T00:22:56+00:00",
+ "generated": "2026-10-24T00:25:46+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 54,
+    "queued": 51,
     "running": 0,
     "doneToday": 5,
-    "minutes": 2160,
-    "estimateMinutes": 2160
+    "minutes": 2040,
+    "estimateMinutes": 2040
    },
    "Claude": {
     "queued": 1,
-    "running": 3,
-    "doneToday": 65,
-    "minutes": 240,
-    "estimateMinutes": 60
+    "running": 6,
+    "doneToday": 66,
+    "minutes": 420,
+    "estimateMinutes": 105
    }
   },
-  "queued": 55,
-  "running": 3,
-  "doneToday": 70,
+  "queued": 52,
+  "running": 6,
+  "doneToday": 71,
   "lanes": {
    "Codex": 1,
    "Claude": 4
@@ -46,17 +46,33 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2400,
-  "estimatedFinish": "2026-10-25T12:22:56+00:00",
-  "estimateMinutes": 2160
+  "minutesRemaining": 2460,
+  "estimatedFinish": "2026-10-25T10:25:46+00:00",
+  "estimateMinutes": 2040
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "honest-sign",
-   "task": "P2RV05_honest sign",
-   "since": "2026-10-23T23:57:56+00:00",
-   "activity": "2026-10-24T00:14:48+00:00",
+   "game": "clay-clock",
+   "task": "P1CK00_daily order is a new tablet each day",
+   "since": "2026-10-24T00:23:18+00:00",
+   "activity": "2026-10-24T00:23:33+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "cymatic-plate",
+   "task": "P1CY00_endless always solvable and overload bar",
+   "since": "2026-10-24T00:23:16+00:00",
+   "activity": "2026-10-24T00:23:33+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "readable-nonsense",
+   "task": "P1RN41_visual round design",
+   "since": "2026-10-24T00:23:23+00:00",
+   "activity": "2026-10-24T00:23:39+00:00",
    "commit": null
   },
   {
@@ -72,12 +88,20 @@
    "game": "scribes-blotter",
    "task": "P2RV08_scribes blotter",
    "since": "2026-10-23T23:57:55+00:00",
-   "activity": "2026-10-24T00:19:10+00:00",
+   "activity": "2026-10-24T00:24:33+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "the-apprentice",
+   "task": "P2RV09_the apprentice",
+   "since": "2026-10-24T00:25:02+00:00",
+   "activity": "2026-10-24T00:25:02+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 3,
+ "claudeWorkers": 6,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
   "runs": 213,
@@ -127,7 +151,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 43
+   "changes": 44
   }
  ],
  "houseRules": 25,
@@ -2156,7 +2180,7 @@
    ]
   },
   {
-   "nextTask": "Clay Clock: the daily order is a new...",
+   "nextTask": "Clay Clock: a game-design pass to find the...",
    "costTotalUsd": 22.02,
    "latestChange": {
     "text": "feat: show Clay Clock’s first tablet in link previews",
@@ -2176,8 +2200,8 @@
    "title": "Clay Clock",
    "line": "Press clay jars in the right order.",
    "url": "https://chenhsieh.github.io/clay-clock/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "A goal and a story, and a better drawn figure under the clay",
    "shelfNote": "",
@@ -2186,7 +2210,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-15T04:15:52+00:00",
-   "lastChange": "2026-10-23T23:51:59+00:00",
+   "lastChange": "2026-10-24T00:23:33+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -2202,10 +2226,10 @@
    "tasks": [
     {
      "title": "P1CK00_daily order is a new tablet each day",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Clay Clock: the daily order is a new tablet each day, not the same first tablet.",
-     "since": "2026-10-23T23:51:59+00:00",
+     "since": "2026-10-24T00:23:18+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2272,8 +2296,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
@@ -3472,7 +3496,7 @@
    ]
   },
   {
-   "nextTask": "Cymatic Plate: endless mode always has a way...",
+   "nextTask": "Cymatic Plate: drops glide from A to B...",
    "costTotalUsd": 76.24,
    "latestChange": {
     "text": "P3OR54_cymatic-plate-credits-page: WORKDIR",
@@ -3492,8 +3516,8 @@
    "title": "Cymatic Plate",
    "line": "Ring notes on a brass plate covered in sand and watch the.",
    "url": "https://chenhsieh.github.io/cymatic-plate/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
@@ -3502,7 +3526,7 @@
    "releasedOn": "2026-10-23",
    "releasedNote": "public-ready, still being refined",
    "firstSeen": "2026-10-16T01:40:04+00:00",
-   "lastChange": "2026-10-23T23:57:06+00:00",
+   "lastChange": "2026-10-24T00:23:33+00:00",
    "cost": {
     "apiUsd": 3.26,
     "codexRuns": 5,
@@ -3518,10 +3542,10 @@
    "tasks": [
     {
      "title": "P1CY00_endless always solvable and overload bar",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Cymatic Plate: endless mode always has a way out, and a bar shows when too many drops hinder the vibration.",
-     "since": "2026-10-23T23:57:06+00:00",
+     "since": "2026-10-24T00:23:16+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -3630,8 +3654,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 13
    },
@@ -9297,10 +9321,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 7.2,
+   "costTotalUsd": 10.8,
    "latestChange": {
-    "text": "feat: Honest Sign starts from the Play Lab game template",
-    "at": "2026-10-23T23:49:00+00:00"
+    "text": "playable: seven-segment sign, 16 levels, rule module and tests; a11y fit lane FAIL at...",
+    "at": "2026-10-24T00:25:01+00:00"
    },
    "promo": null,
    "why": "",
@@ -9309,8 +9333,8 @@
    "title": "Honest Sign",
    "line": "",
    "url": "https://chenhsieh.github.io/honest-sign/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -9319,45 +9343,51 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-23T23:32:13+00:00",
-   "lastChange": "2026-10-24T00:14:48+00:00",
+   "lastChange": "2026-10-24T00:25:01+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
+    "claudeUsdEst": 3.6,
     "earlierRounds": 2,
     "earlierUsdEst": 7.2,
-    "totalUsdEst": 7.2
+    "totalUsdEst": 10.8
    },
    "tasks": [
     {
      "title": "P2RV05_honest sign",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Build round 5 idea 1, Honest Sign (數自己的招牌), from its finished core brief (verdict GO), placeholder shapes, first-minute lesson included",
-     "since": "2026-10-23T23:57:56+00:00",
-     "done": null,
+     "since": "2026-10-23T23:54:06+00:00",
+     "done": "2026-10-23T23:54:06+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P2RV05_honest-sign: DONE"
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-24T00:25:01+00:00",
+     "ok": true,
+     "note": "playable: seven-segment sign, 16 levels, rule module and tests; a11y fit lane FAIL at 320x568",
+     "source": "board note"
+    },
     {
      "at": "2026-10-23T23:49:00+00:00",
      "ok": true,
@@ -18282,7 +18312,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-23T23:50:02+00:00",
-   "lastChange": "2026-10-24T00:19:10+00:00",
+   "lastChange": "2026-10-24T00:24:33+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -22109,7 +22139,7 @@
    ]
   },
   {
-   "nextTask": "Build round 5 idea 2, The Apprentice (教會徒弟)...",
+   "nextTask": null,
    "costTotalUsd": 7.2,
    "latestChange": {
     "text": "feat: The Apprentice starts from the Play Lab game template",
@@ -22122,8 +22152,8 @@
    "title": "The Apprentice",
    "line": "",
    "url": "https://chenhsieh.github.io/the-apprentice/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -22132,7 +22162,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-23T23:50:02+00:00",
-   "lastChange": "2026-10-23T23:54:20+00:00",
+   "lastChange": "2026-10-24T00:25:02+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -22148,10 +22178,10 @@
    "tasks": [
     {
      "title": "P2RV09_the apprentice",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Build round 5 idea 2, The Apprentice (教會徒弟), from its finished core brief (verdict FIX), placeholder shapes, first-minute lesson included",
-     "since": "2026-10-23T23:54:20+00:00",
+     "since": "2026-10-24T00:25:02+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -22162,8 +22192,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
@@ -25601,7 +25631,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Clean Features: back to the core stage: why...",
    "costTotalUsd": 58.46,
    "latestChange": {
     "text": "feat: teach the dish through a playable first minute",
@@ -25621,8 +25651,8 @@
    "title": "What the Dish Sees",
    "line": "Label each colony with the one shape it sees by placing.",
    "url": "https://chenhsieh.github.io/clean-features/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Find the playable frame for the latent-space game: a clear",
    "shelfNote": "",
@@ -25631,7 +25661,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-22T22:57:26+00:00",
+   "lastChange": "2026-10-24T00:24:14+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -25645,6 +25675,20 @@
     "totalUsdEst": 58.46
    },
    "tasks": [
+    {
+     "title": "P1CF00_core and story reset",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Clean Features: back to the core stage: why the player cares, what makes a neuron fire, and rules shown before the first move.",
+     "since": "2026-10-24T00:24:14+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2FM39_clean features first minute",
      "state": "done",
@@ -25742,31 +25786,17 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Players get readable picture slides and candidate lists only on levels 1–4."
-    },
-    {
-     "title": "review_clean features",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-18T08:07:38+00:00",
-     "done": "2026-10-18T08:07:38+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "What the Dish Sees had no real decision on the page: holding a slide or sticker over its target previewed the hidden answer (glow or smudge) for free, and Undo refunded slides and smudges. Both are fixed (a drag now..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 9
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T22:57:26+00:00",
@@ -26159,7 +26189,7 @@
    ]
   },
   {
-   "nextTask": "Readable Nonsense: a workable visual round, designed as...",
+   "nextTask": "Readable Nonsense: fix the clumsy wording and spell...",
    "costTotalUsd": 68.59,
    "latestChange": {
     "text": "P3OR33_readable-nonsense-link-preview: WORKDIR",
@@ -26172,8 +26202,8 @@
    "title": "阿嬤讀得出來",
    "line": "A famous Tang poem line is printed as fake glyphs with.",
    "url": "https://chenhsieh.github.io/readable-nonsense/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Start error blocks play",
    "shelfNote": "",
@@ -26182,7 +26212,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-15T23:26:29+00:00",
-   "lastChange": "2026-10-24T00:21:42+00:00",
+   "lastChange": "2026-10-24T00:23:39+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 3,
@@ -26198,10 +26228,10 @@
    "tasks": [
     {
      "title": "P1RN41_visual round design",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Readable Nonsense: a workable visual round, designed as three mock pages first, then picked and built.",
-     "since": "2026-10-24T00:21:42+00:00",
+     "since": "2026-10-24T00:23:23+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -26310,8 +26340,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 4,
-    "running": 0,
+    "queued": 3,
+    "running": 1,
     "waitingDesign": 0,
     "done": 6
    },
