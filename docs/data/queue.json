@@ -1,5 +1,5 @@
 {
- "generated": 1792810675,
+ "generated": 1792810852,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -91,21 +91,21 @@
  },
  "tasks": [
   {
-   "id": "P1EW00_pace-predictability-and-guide",
-   "request": "Even Water (#131)",
+   "id": "P1EW01_visual-round-design",
+   "request": "Even Water: a workable visual round: three mock looks first, then a precise build spec.",
    "game": "Even Water",
    "route": "Claude",
    "model": "opus",
    "effort": "high",
-   "kind": "build",
+   "kind": "visual",
    "size": "one repo",
    "estMinutes": null,
    "after": [],
    "priority": "P1",
    "why": "A water board game flooded in a tank, and a thread worrying that a public study-abroad fund flows to those already ahead.",
    "state": "running",
-   "at": 1792808075,
-   "created": 1792808075
+   "at": 1792808770,
+   "created": 1792808770
   },
   {
    "id": "P1FG01_rename-repo-and-game-to-forager",
@@ -145,23 +145,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P1KT05_premise-rollout-round-5-games",
-   "request": "Roll the premise card out to the six round-5 games (#150 to #155), with their story blocks.",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "medium",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792807735,
-   "created": 1792807735
-  },
-  {
    "id": "P1UX03_checklist-view-with-range",
    "request": "Board: Checklist view, pick a number range and see which games miss what",
    "game": "Studio",
@@ -182,6 +165,25 @@
    "created": 1792807366
   },
   {
+   "id": "P2MN00_mint-story-first-minute-and-night",
+   "request": "Mint: say what everything on the garden is, teach the gardener's pull in the first minute, show the night",
+   "game": "Mint",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "first-minute",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2RV13_review-the-apprentice-mint"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1792805416,
+   "created": 1792805416
+  },
+  {
    "id": "P1AP01_story-bible-and-endings",
    "request": "The Apprentice (#152)",
    "game": "The Apprentice",
@@ -199,6 +201,23 @@
    "created": 1792808610
   },
   {
+   "id": "P1CB11_hyperreal-visual-round",
+   "request": "Chai Boil (#92, P1): a hyper-real look instead of the computer-drawn one, by a taste visual round.",
+   "game": "Chai Boil",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "An AI-made video post of a pot of milk tea foaming up on a wood fire, plus the Lunar Lander game.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792810828
+  },
+  {
    "id": "P1CF01_rules-and-levels-drop-cost",
    "request": "Clean Features: pictures cost one drop per mark, score is drops left, levels where no shortcut wins",
    "game": "What the Dish Sees",
@@ -214,23 +233,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792805548
-  },
-  {
-   "id": "P1EW01_visual-round-design",
-   "request": "Even Water: a workable visual round: three mock looks first, then a precise build spec.",
-   "game": "Even Water",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A water board game flooded in a tank, and a thread worrying that a public study-abroad fund flows to those already ahead.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792808770
   },
   {
    "id": "P1GX00_newspaper-share-daily-and-placing",
@@ -267,6 +269,57 @@
    "created": 1792810461
   },
   {
+   "id": "P1MC00_3d-physics-chair-design-and-spike",
+   "request": "Makeshift Chair (#35, P1): a 3D physics game in the spirit of Human Fall Flat where sitting down goes ridiculously wrong; design and a working spike.",
+   "game": "Makeshift Chair",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "design",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A published photo series of broken street chairs repaired with scraps, rope, bricks and tape.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792810806
+  },
+  {
+   "id": "P1MG00_preview-before-commit-and-why-it-fails",
+   "request": "Mushroom Gaps (#68, P1): show what a move will do before committing, and why it sometimes does not work.",
+   "game": "Mushroom at the End",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "An anthropology trivia post about a book on matsutake mushrooms growing in the ruins of industry.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792810798
+  },
+  {
+   "id": "P1MG01_journalist-research-and-visual-round-design",
+   "request": "Mushroom Gaps: find the original piece and the right style, then three taste mocks.",
+   "game": "Mushroom at the End",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "An anthropology trivia post about a book on matsutake mushrooms growing in the ruins of industry.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792810802
+  },
+  {
    "id": "P1PD01_lag-stuck-drag-and-dream-link",
    "request": "Peony Dream (#99): no lag when dragging, no stuck drag when the pointer leaves the canvas, and a clear link between the fold and the dream.",
    "game": "Peony Dream",
@@ -282,6 +335,40 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792810482
+  },
+  {
+   "id": "P1PP00_explain-the-strategy-and-show-the-movement",
+   "request": "Pinch Points (#119, now P1): show how the stones move after a pinch, a clear strategy and a story.",
+   "game": "Pinch Points",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A graphics-paper figure of a statue flattened two ways, and an old woodblock page of a perforated scholar's stone.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792810791
+  },
+  {
+   "id": "P1PP01_daily-levels-and-quirky-share",
+   "request": "Pinch Points: a generated daily level and a fun, academic, quirky share text.",
+   "game": "Pinch Points",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A graphics-paper figure of a statue flattened two ways, and an old woodblock page of a perforated scholar's stone.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792810795
   },
   {
    "id": "P1RN45_tap-label-beside-picture",
@@ -403,6 +490,23 @@
    "created": 1792810482
   },
   {
+   "id": "P1CD01_visual-round-hyperreal-or-high-res",
+   "request": "Checking Desk (#124): the look is too crude; a hyper-real or high-resolution visual round with the taste spin.",
+   "game": "Checking Desk",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "An essay on cheap AI output and a flood of machine-made maths papers that experts must check at their own cost.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792810787
+  },
+  {
    "id": "P1CK02_one-record-rules-and-bots",
    "request": "Clay Clock: a record's wedges must touch (rules and bots)",
    "game": "Clay Clock",
@@ -471,6 +575,23 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792808771
+  },
+  {
+   "id": "P1SC00_illegal-move-w2h3-cannot-start",
+   "request": "Seal Carver (#80): the game says 'cannot start, illegal move W2H3'; fix it.",
+   "game": "Seal Carver",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "A video of a seal-editor tool for Chinese seal carving.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792810783
   },
   {
    "id": "P2BN03_poem-core-research",
@@ -732,6 +853,23 @@
    "created": 1792807366
   },
   {
+   "id": "P1WL00_model-log-and-workflow-review",
+   "request": "A model log: which model ran which task, whether it passed first time, and a weekly workflow review.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792810810
+  },
+  {
    "id": "P2AX11_audit-report-merge-tools-only",
    "request": "Ship the clearer accessibility audit report (one line per problem, worst first) that is already built on a branch",
    "game": "Studio",
@@ -783,25 +921,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792805668
-  },
-  {
-   "id": "P2MN00_mint-story-first-minute-and-night",
-   "request": "Mint: say what everything on the garden is, teach the gardener's pull in the first minute, show the night",
-   "game": "Mint",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2RV13_review-the-apprentice-mint"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792805416
   },
   {
    "id": "P2NM01_ship-name-fixes",
@@ -1925,6 +2044,23 @@
    "created": 1792787214
   },
   {
+   "id": "P1EW00_pace-predictability-and-guide",
+   "request": "Even Water (#131)",
+   "game": "Even Water",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A water board game flooded in a tank, and a thread worrying that a public study-abroad fund flows to those already ahead.",
+   "state": "done",
+   "at": 1792808075,
+   "created": 1792808075
+  },
+  {
    "id": "P1FG00_forager-birds-and-play-pause",
    "request": "Forager: birds fly their real path, Pause shows while playing, and the trip is easy to follow.",
    "game": "The Forager",
@@ -2685,6 +2821,23 @@
    "state": "done",
    "at": 1792805948,
    "created": 1792805948
+  },
+  {
+   "id": "P1KT05_premise-rollout-round-5-games",
+   "request": "Roll the premise card out to the six round-5 games (#150 to #155), with their story blocks.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792807735,
+   "created": 1792807735
   },
   {
    "id": "P1LS00_gates-run-local-and-retry-timeouts",

@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T02:57:41+00:00",
+ "generated": "2026-10-24T03:00:00+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 83,
+    "queued": 87,
     "running": 1,
     "doneToday": 6,
-    "minutes": 3360,
-    "estimateMinutes": 3360
+    "minutes": 3520,
+    "estimateMinutes": 3520
    },
    "Claude": {
     "queued": 1,
     "running": 4,
-    "doneToday": 99,
+    "doneToday": 101,
     "minutes": 300,
     "estimateMinutes": 60
    }
   },
-  "queued": 84,
+  "queued": 88,
   "running": 5,
-  "doneToday": 105,
+  "doneToday": 107,
   "lanes": {
    "Codex": 1,
    "Claude": 5
@@ -42,17 +42,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3660,
-  "estimatedFinish": "2026-10-26T10:57:41+00:00",
-  "estimateMinutes": 3360
+  "minutesRemaining": 3820,
+  "estimatedFinish": "2026-10-26T13:40:00+00:00",
+  "estimateMinutes": 3520
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "even-water",
-   "task": "P1EW00_pace predictability and guide",
-   "since": "2026-10-24T02:25:05+00:00",
-   "activity": "2026-10-24T02:57:40+00:00",
+   "task": "P1EW01_visual round design",
+   "since": "2026-10-24T02:59:46+00:00",
+   "activity": "2026-10-24T02:59:49+00:00",
    "commit": null
   },
   {
@@ -61,14 +61,6 @@
    "task": "P1FG01_rename repo and game to forager",
    "since": "2026-10-24T02:41:24+00:00",
    "activity": "2026-10-24T02:57:18+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P1KT05_premise rollout round 5 games",
-   "since": null,
-   "activity": null,
    "commit": null
   },
   {
@@ -84,7 +76,7 @@
    "game": "tractatus-tree",
    "task": "P2FM58_tractatus tree first minute fix",
    "since": "2026-10-24T02:01:37+00:00",
-   "activity": "2026-10-24T02:57:23+00:00",
+   "activity": "2026-10-24T02:58:39+00:00",
    "commit": {
     "at": "2026-10-24T02:50:44+00:00",
     "subject": "docs: record short-phone touch cause"
@@ -92,11 +84,11 @@
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 4,
+ "claudeWorkers": 3,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 247,
-  "usdEst": 889.2,
+  "runs": 249,
+  "usdEst": 896.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -142,7 +134,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 84
+   "changes": 91
   }
  ],
  "houseRules": 25,
@@ -2220,7 +2212,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Checking Desk (#124): the look is too crude...",
    "costTotalUsd": 3.8,
    "latestChange": {
     "text": "feat: Learn proof checking before Night 1",
@@ -2234,23 +2226,23 @@
     "caption": "Six night shifts at a checking desk, each proved by a solver, plus a daily; Chinese and English."
    },
    "why": "An essay on cheap AI output and a flood of machine-made maths papers that experts must check at their own cost.",
-   "state": "playable",
+   "state": "building",
    "stateFlags": {
     "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 1
+    "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "visual round hyperreal or high res",
    "id": "checking-desk",
    "number": 124,
    "repo": "checking-desk",
    "title": "Checking Desk",
    "line": "Six night shifts at a checking desk, each proved by a solver, plus a daily; Chinese and English.",
    "url": "https://chenhsieh.github.io/checking-desk/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Six night shifts at a checking desk, each proved by a solver, plus a daily;",
    "shelfNote": "",
@@ -2263,7 +2255,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T02:56:23+00:00",
-   "lastChange": "2026-10-22T20:39:19+00:00",
+   "lastChange": "2026-10-24T02:59:47+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -2277,6 +2269,20 @@
     "totalUsdEst": 3.8
    },
    "tasks": [
+    {
+     "title": "P1CD01_visual round hyperreal or high res",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Checking Desk (#124): the look is too crude; a hyper-real or high-resolution visual round with the taste spin.",
+     "since": "2026-10-24T02:59:47+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2FM19_checking desk first minute",
      "state": "done",
@@ -2293,14 +2299,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T20:39:19+00:00",
@@ -5447,11 +5453,11 @@
    ]
   },
   {
-   "nextTask": "Even Water: a workable visual round: three mock...",
-   "costTotalUsd": 54.23,
+   "nextTask": "Even Water: build the chosen look and the...",
+   "costTotalUsd": 57.83,
    "latestChange": {
-    "text": "feat:",
-    "at": "2026-10-24T02:57:40+00:00"
+    "text": "P1EW00 flow at one steady speed (Slow/Normal), every drop previewed (Show flow), arrows...",
+    "at": "2026-10-24T02:59:41+00:00"
    },
    "promo": {
     "files": {
@@ -5469,7 +5475,7 @@
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "pace predictability and guide",
+   "waitingOn": "visual round design",
    "id": "even-water",
    "number": 131,
    "repo": "even-water",
@@ -5490,40 +5496,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-24T02:57:40+00:00",
+   "lastChange": "2026-10-24T02:59:49+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 5,
+    "claudeRuns": 6,
     "apiRuns": 0,
     "codexTokens": 194790,
     "codexUsdEst": 0.23,
-    "claudeUsdEst": 18.0,
+    "claudeUsdEst": 21.6,
     "earlierRounds": 10,
     "earlierUsdEst": 36.0,
-    "totalUsdEst": 54.23
+    "totalUsdEst": 57.83
    },
    "tasks": [
     {
-     "title": "P1EW00_pace predictability and guide",
+     "title": "P1EW01_visual round design",
      "state": "running",
      "worker": "Claude",
-     "plan": "Even Water (#131): the water moves slower and predictably, with a guide that shows where it will go before you place a stone.",
-     "since": "2026-10-24T02:25:05+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P1EW01_visual round design",
-     "state": "queued",
-     "worker": "Codex",
      "plan": "Even Water: a workable visual round: three mock looks first, then a precise build spec.",
-     "since": "2026-10-24T02:26:10+00:00",
+     "since": "2026-10-24T02:59:46+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -5539,6 +5531,20 @@
      "plan": "Even Water: build the chosen look and the feedback animations.",
      "since": "2026-10-24T02:14:35+00:00",
      "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1EW00_pace predictability and guide",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Even Water (#131): the water moves slower and predictably, with a guide that shows where it will go before you place a stone.",
+     "since": "2026-10-24T02:14:35+00:00",
+     "done": "2026-10-24T02:14:35+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -5618,10 +5624,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 1,
     "running": 1,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": {
     "date": "2026-10-22",
@@ -5631,6 +5637,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T02:59:41+00:00",
+     "ok": true,
+     "note": "P1EW00 flow at one steady speed (Slow/Normal), every drop previewed (Show flow), arrows at ties, Replay the flow, ghost hand on L1-2; live",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T02:57:40+00:00",
      "ok": true,
@@ -5695,12 +5707,6 @@
      "at": "2026-10-22T19:35:23+00:00",
      "ok": true,
      "note": "P2n79 visual design:",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-22T19:04:22+00:00",
-     "ok": true,
-     "note": "P2n64 review: ship, no change; visual round queued (water pillars, taps vs stones)",
      "source": "board note"
     }
    ]
@@ -10133,10 +10139,10 @@
   },
   {
    "nextTask": "Honest Sign: show what the sign says in...",
-   "costTotalUsd": 21.6,
+   "costTotalUsd": 25.2,
    "latestChange": {
-    "text": "feat:",
-    "at": "2026-10-24T02:57:07+00:00"
+    "text": "premise card (The idea) from the round-5 brief, kit 13",
+    "at": "2026-10-24T03:00:00+00:00"
    },
    "promo": null,
    "why": "",
@@ -10170,7 +10176,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:32:13+00:00",
-   "lastChange": "2026-10-24T02:57:07+00:00",
+   "lastChange": "2026-10-24T03:00:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -10179,9 +10185,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
-    "totalUsdEst": 21.6
+    "earlierRounds": 6,
+    "earlierUsdEst": 21.6,
+    "totalUsdEst": 25.2
    },
    "tasks": [
     {
@@ -10227,6 +10233,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T03:00:00+00:00",
+     "ok": true,
+     "note": "premise card (The idea) from the round-5 brief, kit 13",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T02:57:07+00:00",
      "ok": true,
@@ -12454,7 +12466,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 65.02,
+   "costTotalUsd": 21.82,
    "latestChange": {
     "text": "P1LH00 live : F-key hints removed (keys named only with a keyboard), Why is 3 lines +...",
     "at": "2026-10-24T02:12:56+00:00"
@@ -12496,7 +12508,7 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-08-20T15:58:51+00:00",
+   "firstSeen": "2026-10-19T17:54:51+00:00",
    "lastChange": "2026-10-24T02:12:56+00:00",
    "cost": {
     "apiUsd": 0.0,
@@ -12506,9 +12518,9 @@
     "codexTokens": 180479,
     "codexUsdEst": 0.22,
     "claudeUsdEst": 10.8,
-    "earlierRounds": 15,
-    "earlierUsdEst": 54.0,
-    "totalUsdEst": 65.02
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
+    "totalUsdEst": 21.82
    },
    "tasks": [
     {
@@ -12589,12 +12601,6 @@
      "source": "board note"
     },
     {
-     "at": "2026-10-24T02:11:12+00:00",
-     "ok": true,
-     "note": "fix: key hints that work, a three-line Why, and How to play as five picture cards",
-     "source": "main commit"
-    },
-    {
      "at": "2026-10-24T01:34:56+00:00",
      "ok": true,
      "note": "P1LH01 design note: merge Local Hero into Align Hero as chapter 2 recommended (best Align line + stop hits par on 71% of strands);",
@@ -12605,12 +12611,6 @@
      "ok": false,
      "note": "see",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-21T18:41:38+00:00",
-     "ok": true,
-     "note": "fix: show a concise Local Hero link preview",
-     "source": "main commit"
     },
     {
      "at": "2026-10-21T18:36:02+00:00",
@@ -12631,28 +12631,10 @@
      "source": "board note"
     },
     {
-     "at": "2026-10-21T05:28:23+00:00",
-     "ok": true,
-     "note": "feat: Local Hero becomes a DOS text-mode screen",
-     "source": "main commit"
-    },
-    {
      "at": "2026-10-19T20:59:20+00:00",
      "ok": true,
      "note": "shared target and first-move hint make local alignment legible; live 390x844 and 320x568 touch checks passed",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-19T20:57:19+00:00",
-     "ok": true,
-     "note": "feat: show the shared island target",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-15T14:23:08+00:00",
-     "ok": true,
-     "note": "feat: a link back to Play Lab",
-     "source": "main commit"
     }
    ]
   },
@@ -13585,182 +13567,11 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 39.6,
-   "latestChange": {
-    "text": "feat: Metagenomic Profilers gets its own logo, link preview and share text",
-    "at": "2026-10-22T17:05:52+00:00"
-   },
-   "promo": {
-    "files": {
-     "first": "promo/metagenome-profilers/first.jpg",
-     "card": "promo/metagenome-profilers/card.jpg"
-    },
-    "caption": "Compare MetaPhlAn and Kraken through six games."
-   },
-   "why": "The two families of metagenome taxonomic profilers, marker genes (MetaPhlAn) versus k-mers (Kraken), and their versions.",
-   "state": "shelved",
-   "stateFlags": {
-    "refining": false,
-    "resting": true,
-    "regressed": false,
-    "reviseRound": 0,
-    "daysInState": 1
-   },
-   "waitingOn": "none",
-   "id": "metagenome-profilers",
-   "number": 9,
-   "repo": "metagenome-profilers",
-   "title": "Metagenome Profilers",
-   "line": "Compare MetaPhlAn and Kraken through six games.",
-   "url": "https://chenhsieh.github.io/metagenome-profilers/",
-   "stage": "live",
-   "who": null,
-   "priority": "P2",
-   "priorityNote": "Game-design pass on the profiler comparison",
-   "shelfNote": "",
-   "image": "promo/metagenome-profilers/first.jpg",
-   "released": false,
-   "releasedOn": null,
-   "releasedNote": "",
-   "archived": false,
-   "archivedOn": null,
-   "archivedKind": "",
-   "archivedNote": "",
-   "firstSeen": "2026-08-20T15:58:01+00:00",
-   "lastChange": "2026-10-22T17:05:52+00:00",
-   "cost": {
-    "apiUsd": 0.0,
-    "codexRuns": 0,
-    "claudeRuns": 1,
-    "apiRuns": 1,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
-    "totalUsdEst": 39.6
-   },
-   "tasks": [
-    {
-     "title": "P1SD28_studio standard metagenome profilers",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-22T07:57:39+00:00",
-     "done": "2026-10-22T07:57:39+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "metagenome profilers design pass",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "Game-design pass on the profiler comparison.",
-     "since": "2026-10-19T17:54:51+00:00",
-     "done": "2026-10-19T17:54:51+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Brief: expert/metagenome-profilers/packages/BRIEF_20261019.md: a 60-second front-door game 'One sample, two answers' (sort reads by LCA like Kraken, by marker like MetaPhlAn, then guess both tables: the big genome wins..."
-    }
-   ],
-   "taskCounts": {
-    "queued": 0,
-    "running": 0,
-    "waitingDesign": 0,
-    "done": 2
-   },
-   "verdict": null,
-   "needsYou": null,
-   "inProgress": false,
-   "history": [
-    {
-     "at": "2026-10-22T17:05:52+00:00",
-     "ok": true,
-     "note": "feat: Metagenomic Profilers gets its own logo, link preview and share text",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T19:03:23+00:00",
-     "ok": false,
-     "note": "see",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T18:56:33+00:00",
-     "ok": false,
-     "note": "see",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T18:48:42+00:00",
-     "ok": false,
-     "note": "see",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-20T02:28:06+00:00",
-     "ok": true,
-     "note": "front-door brief + build B3a",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-15T14:42:57+00:00",
-     "ok": true,
-     "note": "feat: a link back to Play Lab",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-05T03:10:51+00:00",
-     "ok": true,
-     "note": "Fix the theme toggle's tap target: pin its size against flex-shrink",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-05T03:02:23+00:00",
-     "ok": true,
-     "note": "Add a favicon: P on the site's own brand-dot violet",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-05T02:40:39+00:00",
-     "ok": true,
-     "note": "Add theme-color meta tag, matching the page's own background",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-04T18:10:07+00:00",
-     "ok": true,
-     "note": "Add MIT LICENSE",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-08-20T17:04:44+00:00",
-     "ok": true,
-     "note": "Scenes: stop painting summary steps over the labels they replace",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-08-20T15:58:01+00:00",
-     "ok": true,
-     "note": "Metagenomic profilers: MetaPhlAn vs Kraken, version by version, plus six games",
-     "source": "main commit"
-    }
-   ]
-  },
-  {
    "nextTask": "Mint: say what everything on the garden is...",
-   "costTotalUsd": 14.4,
+   "costTotalUsd": 21.6,
    "latestChange": {
-    "text": "core built: rooting rule, exact par solver, 8 levels, daily/endless, template_check...",
-    "at": "2026-10-24T01:14:56+00:00"
+    "text": "premise card (The idea) from the round-5 brief, kit 13",
+    "at": "2026-10-24T03:00:00+00:00"
    },
    "promo": null,
    "why": "",
@@ -13794,7 +13605,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-24T01:30:16+00:00",
+   "lastChange": "2026-10-24T03:00:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -13803,9 +13614,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
-    "totalUsdEst": 14.4
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
+    "totalUsdEst": 21.6
    },
    "tasks": [
     {
@@ -13851,6 +13662,18 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T03:00:00+00:00",
+     "ok": true,
+     "note": "premise card (The idea) from the round-5 brief, kit 13",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-24T02:58:08+00:00",
+     "ok": true,
+     "note": "feat:",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-24T01:14:56+00:00",
      "ok": true,
@@ -14773,7 +14596,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Mushroom Gaps (#68, P1): show what a move...",
    "costTotalUsd": 29.19,
    "latestChange": {
     "text": "feat: show the first mushroom floor in link previews",
@@ -14787,23 +14610,23 @@
     "caption": "Grow mycelium threads across an old factory floor and cut."
    },
    "why": "An anthropology trivia post about a book on matsutake mushrooms growing in the ruins of industry.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 2
+    "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "preview before commit and why it fails",
    "id": "mushroom-gaps",
    "number": 68,
    "repo": "mushroom-gaps",
    "title": "Mushroom at the End",
    "line": "Grow mycelium threads across an old factory floor and cut.",
    "url": "https://chenhsieh.github.io/mushroom-gaps/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Clear cause and effect for each tap, a story for the cave",
    "shelfNote": "",
@@ -14816,7 +14639,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T23:26:23+00:00",
-   "lastChange": "2026-10-21T19:16:38+00:00",
+   "lastChange": "2026-10-24T02:59:58+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -14830,6 +14653,20 @@
     "totalUsdEst": 29.19
    },
    "tasks": [
+    {
+     "title": "P1MG00_preview before commit and why it fails",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Mushroom Gaps (#68, P1): show what a move will do before committing, and why it sometimes does not work.",
+     "since": "2026-10-24T02:59:58+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SD30_studio standard mushroom gaps",
      "state": "done",
@@ -14874,14 +14711,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T19:16:38+00:00",
@@ -17114,7 +16951,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Pinch Points: a generated daily level and a...",
    "costTotalUsd": 18.34,
    "latestChange": {
     "text": "feat: teach pinches in a first-minute round",
@@ -17128,23 +16965,23 @@
     "caption": "Pinch six stones flat as the surface flattens live; par set by search, plus a daily."
    },
    "why": "A graphics-paper figure of a statue flattened two ways, and an old woodblock page of a perforated scholar's stone.",
-   "state": "playable",
+   "state": "building",
    "stateFlags": {
     "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 1
+    "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "daily levels and quirky share",
    "id": "pinch-points",
    "number": 119,
    "repo": "pinch-points",
    "title": "Pinch Points",
    "line": "Pinch six stones flat as the surface flattens live; par set by search, plus a daily.",
    "url": "https://chenhsieh.github.io/pinch-points/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Pinch six stones flat as the surface flattens live; par set by search, plus a",
    "shelfNote": "",
@@ -17157,7 +16994,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T20:22:39+00:00",
-   "lastChange": "2026-10-22T20:46:37+00:00",
+   "lastChange": "2026-10-24T02:59:55+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -17171,6 +17008,34 @@
     "totalUsdEst": 18.34
    },
    "tasks": [
+    {
+     "title": "P1PP01_daily levels and quirky share",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Pinch Points: a generated daily level and a fun, academic, quirky share text.",
+     "since": "2026-10-24T02:59:55+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1PP00_explain the strategy and show the movement",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Pinch Points (#119, now P1): show how the stones move after a pinch, a clear strategy and a story.",
+     "since": "2026-10-24T02:59:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2FM15_pinch points first minute",
      "state": "done",
@@ -17187,14 +17052,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T20:46:37+00:00",
@@ -19601,10 +19466,10 @@
   },
   {
    "nextTask": "Rumour on the Jetty: the town fits a...",
-   "costTotalUsd": 18.0,
+   "costTotalUsd": 25.2,
    "latestChange": {
-    "text": "review P2RV12: revise, fix queued P2RJT00",
-    "at": "2026-10-24T01:38:36+00:00"
+    "text": "premise card (The idea) from the round-5 brief, kit 13",
+    "at": "2026-10-24T03:00:00+00:00"
    },
    "promo": null,
    "why": "",
@@ -19638,7 +19503,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-24T01:38:36+00:00",
+   "lastChange": "2026-10-24T03:00:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -19647,9 +19512,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
-    "totalUsdEst": 18.0
+    "earlierRounds": 6,
+    "earlierUsdEst": 21.6,
+    "totalUsdEst": 25.2
    },
    "tasks": [
     {
@@ -19695,6 +19560,18 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T03:00:00+00:00",
+     "ok": true,
+     "note": "premise card (The idea) from the round-5 brief, kit 13",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-24T02:58:11+00:00",
+     "ok": true,
+     "note": "feat:",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-24T01:38:36+00:00",
      "ok": true,
@@ -20099,10 +19976,10 @@
   },
   {
    "nextTask": "The Scribe's Blotter visual round: the stall, the...",
-   "costTotalUsd": 21.6,
+   "costTotalUsd": 25.2,
    "latestChange": {
-    "text": "feat:",
-    "at": "2026-10-24T02:57:18+00:00"
+    "text": "premise card (The idea) from the round-5 brief, kit 13",
+    "at": "2026-10-24T03:00:00+00:00"
    },
    "promo": null,
    "why": "",
@@ -20136,7 +20013,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:02+00:00",
-   "lastChange": "2026-10-24T02:57:18+00:00",
+   "lastChange": "2026-10-24T03:00:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -20145,9 +20022,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
-    "totalUsdEst": 21.6
+    "earlierRounds": 6,
+    "earlierUsdEst": 21.6,
+    "totalUsdEst": 25.2
    },
    "tasks": [
     {
@@ -20194,6 +20071,12 @@
    "inProgress": true,
    "history": [
     {
+     "at": "2026-10-24T03:00:00+00:00",
+     "ok": true,
+     "note": "premise card (The idea) from the round-5 brief, kit 13",
+     "source": "board note"
+    },
+    {
      "at": "2026-10-24T02:57:18+00:00",
      "ok": true,
      "note": "feat:",
@@ -20232,7 +20115,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Seal Carver (#80): the game says 'cannot start...",
    "costTotalUsd": 39.76,
    "latestChange": {
     "text": "feat: give Seal Carver its own link preview",
@@ -20247,23 +20130,23 @@
     "caption": "Carve a short phrase into a square seal stone, one box."
    },
    "why": "A video of a seal-editor tool for Chinese seal carving.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 2
+    "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "illegal move w2h3 cannot start",
    "id": "seal-carver",
    "number": 80,
    "repo": "seal-carver",
    "title": "Seal Carver",
    "line": "Carve a short phrase into a square seal stone, one box.",
    "url": "https://chenhsieh.github.io/seal-carver/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Teach placement so it is reasoning, not trial and error",
    "shelfNote": "",
@@ -20276,7 +20159,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:20:34+00:00",
-   "lastChange": "2026-10-21T20:04:25+00:00",
+   "lastChange": "2026-10-24T02:59:43+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -20290,6 +20173,20 @@
     "totalUsdEst": 39.76
    },
    "tasks": [
+    {
+     "title": "P1SC00_illegal move w2h3 cannot start",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Seal Carver (#80): the game says 'cannot start, illegal move W2H3'; fix it.",
+     "since": "2026-10-24T02:59:43+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SD35_studio standard seal carver",
      "state": "done",
@@ -20334,14 +20231,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T20:04:25+00:00",
@@ -24173,10 +24070,10 @@
   },
   {
    "nextTask": "The Apprentice: three mock looks that carry the...",
-   "costTotalUsd": 25.2,
+   "costTotalUsd": 28.8,
    "latestChange": {
-    "text": "feat:",
-    "at": "2026-10-24T02:57:21+00:00"
+    "text": "premise card (The idea) from the round-5 brief, kit 13",
+    "at": "2026-10-24T03:00:00+00:00"
    },
    "promo": null,
    "why": "",
@@ -24210,7 +24107,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:02+00:00",
-   "lastChange": "2026-10-24T02:57:21+00:00",
+   "lastChange": "2026-10-24T03:00:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -24219,9 +24116,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
-    "totalUsdEst": 25.2
+    "earlierRounds": 6,
+    "earlierUsdEst": 21.6,
+    "totalUsdEst": 28.8
    },
    "tasks": [
     {
@@ -24310,6 +24207,12 @@
    "inProgress": true,
    "history": [
     {
+     "at": "2026-10-24T03:00:00+00:00",
+     "ok": true,
+     "note": "premise card (The idea) from the round-5 brief, kit 13",
+     "source": "board note"
+    },
+    {
      "at": "2026-10-24T02:57:21+00:00",
      "ok": true,
      "note": "feat:",
@@ -24355,10 +24258,10 @@
   },
   {
    "nextTask": "The Draw: a real score (fix a crooked...",
-   "costTotalUsd": 18.0,
+   "costTotalUsd": 25.2,
    "latestChange": {
-    "text": "review P2RV11: revise, fix queued P2DRW00",
-    "at": "2026-10-24T01:34:45+00:00"
+    "text": "premise card (The idea) from the round-5 brief, kit 13",
+    "at": "2026-10-24T03:00:00+00:00"
    },
    "promo": null,
    "why": "",
@@ -24392,7 +24295,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-24T01:34:45+00:00",
+   "lastChange": "2026-10-24T03:00:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -24401,9 +24304,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
-    "totalUsdEst": 18.0
+    "earlierRounds": 6,
+    "earlierUsdEst": 21.6,
+    "totalUsdEst": 25.2
    },
    "tasks": [
     {
@@ -24449,6 +24352,18 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T03:00:00+00:00",
+     "ok": true,
+     "note": "premise card (The idea) from the round-5 brief, kit 13",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-24T02:58:14+00:00",
+     "ok": true,
+     "note": "feat:",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-24T01:34:45+00:00",
      "ok": true,
@@ -26498,7 +26413,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:13:20+00:00",
-   "lastChange": "2026-10-24T02:57:23+00:00",
+   "lastChange": "2026-10-24T02:58:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -29104,9 +29019,9 @@
    "ran": 0
   },
   "name": {
-   "yes": 153,
+   "yes": 152,
    "no": 1,
-   "unknown": 1,
+   "unknown": 2,
    "ran": 0
   }
  }
