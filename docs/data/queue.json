@@ -1,5 +1,5 @@
 {
- "generated": 1792809612,
+ "generated": 1792809771,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -108,16 +108,18 @@
    "created": 1792808075
   },
   {
-   "id": "P1FG00_forager-birds-and-play-pause",
-   "request": "Forager: birds fly their real path, Pause shows while playing, and the trip is easy to follow.",
+   "id": "P1FG01_rename-repo-and-game-to-forager",
+   "request": "Rename the game and its repo to Forager, with the old address redirecting.",
    "game": "The Forager",
    "route": "Claude",
-   "model": "opus",
+   "model": "sonnet",
    "effort": "high",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P1FG00_forager-birds-and-play-pause"
+   ],
    "priority": "P1",
    "why": "Now The Forager: drag berries so a bird that always flies to the closest berry takes a much longer trip than the shortest round trip.",
    "state": "running",
@@ -951,27 +953,6 @@
     "P1EW01_visual-round-design"
    ],
    "created": 1792808075
-  },
-  {
-   "id": "P1FG01_rename-repo-and-game-to-forager",
-   "request": "Rename the game and its repo to Forager, with the old address redirecting.",
-   "game": "The Forager",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1FG00_forager-birds-and-play-pause"
-   ],
-   "priority": "P1",
-   "why": "Now The Forager: drag berries so a bird that always flies to the closest berry takes a much longer trip than the shortest round trip.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1FG00_forager-birds-and-play-pause"
-   ],
-   "created": 1792802208
   },
   {
    "id": "P1TH02_change-marks-on-branches",
@@ -1867,6 +1848,23 @@
    "state": "done",
    "at": 1792787214,
    "created": 1792787214
+  },
+  {
+   "id": "P1FG00_forager-birds-and-play-pause",
+   "request": "Forager: birds fly their real path, Pause shows while playing, and the trip is easy to follow.",
+   "game": "The Forager",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "Now The Forager: drag berries so a bird that always flies to the closest berry takes a much longer trip than the shortest round trip.",
+   "state": "done",
+   "at": 1792802208,
+   "created": 1792802208
   },
   {
    "id": "P1LH00_function-keys-and-how-to-play",
