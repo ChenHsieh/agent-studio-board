@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T11:56:59+00:00",
+ "generated": "2026-10-24T11:59:18+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 88,
+    "queued": 87,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3520,
-    "estimateMinutes": 3520
+    "minutes": 3480,
+    "estimateMinutes": 3480
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 23,
+    "doneToday": 24,
     "minutes": 180,
     "estimateMinutes": 90
    }
   },
-  "queued": 89,
+  "queued": 88,
   "running": 2,
-  "doneToday": 23,
+  "doneToday": 24,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,25 +42,25 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3700,
-  "estimatedFinish": "2026-10-26T22:36:59+00:00",
-  "estimateMinutes": 3520
+  "minutesRemaining": 3660,
+  "estimatedFinish": "2026-10-26T21:59:18+00:00",
+  "estimateMinutes": 3480
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "checking-desk",
-   "task": "P1CD02_night desk visual build",
-   "since": "2026-10-24T11:38:30+00:00",
-   "activity": "2026-10-24T11:56:36+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "sockglass",
    "task": "P2SG00_sockglass levels need a choice",
    "since": "2026-10-24T11:37:16+00:00",
    "activity": "2026-10-24T11:37:36+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "play-template",
+   "task": "P2TP00_kit draw at device pixel ratio",
+   "since": null,
+   "activity": null,
    "commit": null
   }
  ],
@@ -2218,7 +2218,7 @@
     "caption": "Six night shifts at a checking desk, each proved by a solver, plus a daily; Chinese and English."
    },
    "why": "An essay on cheap AI output and a flood of machine-made maths papers that experts must check at their own cost.",
-   "state": "building",
+   "state": "playable",
    "stateFlags": {
     "refining": false,
     "resting": false,
@@ -2226,15 +2226,15 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "night desk visual build",
+   "waitingOn": "none",
    "id": "checking-desk",
    "number": 124,
    "repo": "checking-desk",
    "title": "Checking Desk",
    "line": "Six night shifts at a checking desk, each proved by a solver, plus a daily; Chinese and English.",
    "url": "https://chenhsieh.github.io/checking-desk/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Six night shifts at a checking desk, each proved by a solver, plus a daily;",
    "shelfNote": "",
@@ -2247,33 +2247,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T02:23:43+00:00",
-   "lastChange": "2026-10-24T11:56:36+00:00",
+   "lastChange": "2026-10-24T09:01:53+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 165898,
     "codexUsdEst": 0.2,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 7,
-    "earlierUsdEst": 25.2,
+    "claudeUsdEst": 7.2,
+    "earlierRounds": 6,
+    "earlierUsdEst": 21.6,
     "totalUsdEst": 29.0
    },
    "tasks": [
     {
      "title": "P1CD02_night desk visual build",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Checking Desk: build the night-shift desk look (photo desk, squared-paper proofs, sharp at phone resolution)",
-     "since": "2026-10-24T11:38:30+00:00",
-     "done": null,
+     "since": "2026-10-24T09:01:53+00:00",
+     "done": "2026-10-24T09:01:53+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1CD02 Checking Desk night-desk visual build. DONE. main . Live: https://chenhsieh.github.io/checking-desk/ (live bytes md5-matched for game.js, game.css, index.html, a_desk.webp, serif font; live page looked at at..."
     },
     {
      "title": "P1CD01_visual round hyperreal or high res",
@@ -2306,13 +2306,13 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-24T09:00:06+00:00",
