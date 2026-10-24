@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T12:45:18+00:00",
+ "generated": "2026-10-24T12:48:03+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -24,14 +24,14 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
+    "running": 3,
     "doneToday": 25,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "minutes": 240,
+    "estimateMinutes": 120
    }
   },
   "queued": 90,
-  "running": 2,
+  "running": 3,
   "doneToday": 25,
   "lanes": {
    "Codex": 1,
@@ -42,8 +42,8 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3740,
-  "estimatedFinish": "2026-10-27T00:05:18+00:00",
+  "minutesRemaining": 3800,
+  "estimatedFinish": "2026-10-27T00:08:03+00:00",
   "estimateMinutes": 3560
  },
  "lanes": [
@@ -57,15 +57,23 @@
   },
   {
    "worker": "Claude",
+   "game": "peony-dream",
+   "task": "P2PD02_peony dream small phone fit",
+   "since": "2026-10-24T12:46:17+00:00",
+   "activity": "2026-10-24T12:46:19+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
    "game": "sockglass",
    "task": "P2SG00_sockglass levels need a choice",
    "since": "2026-10-24T11:37:16+00:00",
-   "activity": "2026-10-24T12:44:54+00:00",
+   "activity": "2026-10-24T12:45:59+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 3,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
   "runs": 270,
@@ -3415,7 +3423,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Copy Drift (#129): show what each of the...",
    "costTotalUsd": 61.39,
    "latestChange": {
     "text": "first minute step 3 rebuilt as b to E with no dead-end pages, goal line, page readout,...",
@@ -3429,23 +3437,23 @@
     "caption": "Hand a page to a copyist that rewrites each mark as the closest one it knows; 12 pages."
    },
    "why": "Screenshots of copying accidents: copied homework turning an answer into the word for karaoke, and a chain that drifts from 人工 to AI.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 0
+    "daysInState": 1
    },
-   "waitingOn": "none",
+   "waitingOn": "show the three copyists and the paper rule",
    "id": "copy-drift",
    "number": 129,
    "repo": "copy-drift",
    "title": "Copy Drift",
    "line": "Hand a page to a copyist that rewrites each mark as the closest one it knows; 12 pages.",
    "url": "https://chenhsieh.github.io/copy-drift/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Hand a page to a copyist that rewrites each mark as the closest one it knows;",
    "shelfNote": "",
@@ -3458,7 +3466,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T17:56:12+00:00",
-   "lastChange": "2026-10-24T02:34:25+00:00",
+   "lastChange": "2026-10-24T12:46:06+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -3472,6 +3480,20 @@
     "totalUsdEst": 61.39
    },
    "tasks": [
+    {
+     "title": "P1CD03_show the three copyists and the paper rule",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Copy Drift (#129): show what each of the three copyists knows, why a mark becomes the one it does, and what the paper count is.",
+     "since": "2026-10-24T12:46:06+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1CD00_first minute step three stuck",
      "state": "done",
@@ -3572,7 +3594,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 7
@@ -3583,7 +3605,7 @@
     "note": "not at ship level yet; back to refining"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-24T02:34:25+00:00",
@@ -17075,7 +17097,7 @@
    ]
   },
   {
-   "nextTask": "Peony Dream: fit board, sleeper and ink stone...",
+   "nextTask": null,
    "costTotalUsd": 47.39,
    "latestChange": {
     "text": "fix: one draw per frame while folding, drag ends on any release, and the mirror story",
@@ -17104,8 +17126,8 @@
    "title": "Peony Dream",
    "line": "Paint half a face on a sheet of silk, close the silk on.",
    "url": "https://chenhsieh.github.io/peony-dream/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Eastern ink visual direction instead of raster",
    "shelfNote": "",
@@ -17119,7 +17141,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-18T01:51:43+00:00",
-   "lastChange": "2026-10-24T10:29:23+00:00",
+   "lastChange": "2026-10-24T12:46:19+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -17135,10 +17157,10 @@
    "tasks": [
     {
      "title": "P2PD02_peony dream small phone fit",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Peony Dream: fit board, sleeper and ink stone on a small phone; result card text clear",
-     "since": "2026-10-24T10:29:23+00:00",
+     "since": "2026-10-24T12:46:17+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -17233,8 +17255,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 6
    },
@@ -23099,10 +23121,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 43.41,
+   "costTotalUsd": 50.61,
    "latestChange": {
-    "text": "feat: Sockglass story, tonight's window and its share text",
-    "at": "2026-10-24T08:06:22+00:00"
+    "text": "Sockglass levels 4-6 and the generated windows now need a real choice; small-phone fit",
+    "at": "2026-10-24T12:45:59+00:00"
    },
    "promo": {
     "files": {
@@ -23143,7 +23165,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T23:27:18+00:00",
-   "lastChange": "2026-10-24T12:44:54+00:00",
+   "lastChange": "2026-10-24T12:45:59+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -23152,9 +23174,9 @@
     "codexTokens": 170850,
     "codexUsdEst": 0.21,
     "claudeUsdEst": 14.4,
-    "earlierRounds": 8,
-    "earlierUsdEst": 28.8,
-    "totalUsdEst": 43.41
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
+    "totalUsdEst": 50.61
    },
    "tasks": [
     {
@@ -23257,6 +23279,18 @@
    "inProgress": true,
    "history": [
     {
+     "at": "2026-10-24T12:45:59+00:00",
+     "ok": true,
+     "note": "Sockglass levels 4-6 and the generated windows now need a real choice; small-phone fit",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-24T11:37:45+00:00",
+     "ok": true,
+     "note": "start: P2SG00_sockglass-levels-need-a-choice",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-24T08:06:22+00:00",
      "ok": true,
      "note": "feat: Sockglass story, tonight's window and its share text",
@@ -23314,18 +23348,6 @@
      "at": "2026-10-17T21:32:16+00:00",
      "ok": true,
      "note": "fix: holding a button or the board no longer selects text on iPhone",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-16T00:35:59+00:00",
-     "ok": true,
-     "note": "LIVE https://chenhsieh.github.io/sockglass/ (claude builder)",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-16T00:34:52+00:00",
-     "ok": true,
-     "note": "feat: drag tissue socks onto a night window and mix their colours to light every picture",
      "source": "main commit"
     }
    ]
