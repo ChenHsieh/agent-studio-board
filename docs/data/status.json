@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T05:56:26+00:00",
+ "generated": "2026-10-24T05:58:49+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 81,
+    "queued": 80,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3240,
-    "estimateMinutes": 3240
+    "minutes": 3200,
+    "estimateMinutes": 3200
    },
    "Claude": {
     "queued": 1,
@@ -30,7 +30,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 82,
+  "queued": 81,
   "running": 1,
   "doneToday": 3,
   "lanes": {
@@ -42,17 +42,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3360,
-  "estimatedFinish": "2026-10-26T11:56:26+00:00",
-  "estimateMinutes": 3240
+  "minutesRemaining": 3320,
+  "estimatedFinish": "2026-10-26T11:18:49+00:00",
+  "estimateMinutes": 3200
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "nobody-looking",
-   "task": "P1NL00_slide and swap feel and depth",
-   "since": "2026-10-24T05:23:00+00:00",
-   "activity": "2026-10-24T05:54:48+00:00",
+   "task": "P1NL01_visual round design",
+   "since": "2026-10-24T05:57:25+00:00",
+   "activity": "2026-10-24T05:58:00+00:00",
    "commit": null
   }
  ],
@@ -60,8 +60,8 @@
  "claudeWorkers": 1,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 263,
-  "usdEst": 946.8,
+  "runs": 264,
+  "usdEst": 950.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -111,7 +111,7 @@
   },
   {
    "day": "2026-10-24",
-   "changes": 5
+   "changes": 6
   }
  ],
  "houseRules": 25,
@@ -15447,10 +15447,10 @@
   },
   {
    "nextTask": "Nobody Looking daily: draw from the hard bank...",
-   "costTotalUsd": 39.86,
+   "costTotalUsd": 43.46,
    "latestChange": {
-    "text": "P2RL05_credits-licences-nobody-looking: WORKDIR",
-    "at": "2026-10-23T02:48:13+00:00"
+    "text": "P1NL00: dish follows the finger, 190 ms snap, spring-back with one word, tap-tap fixed...",
+    "at": "2026-10-24T05:56:45+00:00"
    },
    "promo": {
     "files": {
@@ -15468,7 +15468,7 @@
     "reviseRound": 1,
     "daysInState": 1
    },
-   "waitingOn": "slide and swap feel and depth",
+   "waitingOn": "visual round design",
    "id": "nobody-looking",
    "number": 127,
    "repo": "nobody-looking",
@@ -15489,26 +15489,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T17:56:06+00:00",
-   "lastChange": "2026-10-24T05:54:48+00:00",
+   "lastChange": "2026-10-24T05:58:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 5,
+    "claudeRuns": 6,
     "apiRuns": 0,
     "codexTokens": 215851,
     "codexUsdEst": 0.26,
-    "claudeUsdEst": 18.0,
+    "claudeUsdEst": 21.6,
     "earlierRounds": 6,
     "earlierUsdEst": 21.6,
-    "totalUsdEst": 39.86
+    "totalUsdEst": 43.46
    },
    "tasks": [
     {
-     "title": "P1NL00_slide and swap feel and depth",
+     "title": "P1NL01_visual round design",
      "state": "running",
      "worker": "Claude",
-     "plan": "Nobody Looking (#127): sliding and swapping works smoothly with a finger, and a check of how deep the game really is.",
-     "since": "2026-10-24T05:23:00+00:00",
+     "plan": "Nobody Looking: a workable visual round: three mock looks, then a build spec.",
+     "since": "2026-10-24T05:57:25+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -15532,20 +15532,6 @@
      "result": ""
     },
     {
-     "title": "P1NL01_visual round design",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Nobody Looking: a workable visual round: three mock looks, then a build spec.",
-     "since": "2026-10-24T02:26:11+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
      "title": "P1NL02_visual round build",
      "state": "queued",
      "worker": "Codex",
@@ -15558,6 +15544,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1NL00_slide and swap feel and depth",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Nobody Looking (#127): sliding and swapping works smoothly with a finger, and a check of how deep the game really is.",
+     "since": "2026-10-24T02:25:45+00:00",
+     "done": "2026-10-24T02:25:45+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1NL00_slide-and-swap-feel-and-depth: Nobody Looking (#127) slide feel + depth. LIVE on main, live game.js/game.css bytes match the branch."
     },
     {
      "title": "P2RL05_credits licences nobody looking",
@@ -15617,10 +15617,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
+    "queued": 2,
     "running": 1,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": {
     "date": "2026-10-23",
@@ -15630,6 +15630,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T05:56:45+00:00",
+     "ok": true,
+     "note": "P1NL00: dish follows the finger, 190 ms snap, spring-back with one word, tap-tap fixed (no slide-back), Undo on screen at 320x568; depth bots + DEPTH_20261023.md; daily shallow, queued P1NL03",
+     "source": "board note"
+    },
     {
      "at": "2026-10-23T02:48:13+00:00",
      "ok": true,
@@ -15694,12 +15700,6 @@
      "at": "2026-10-22T18:00:33+00:00",
      "ok": true,
      "note": "feat: Nobody Looking starts from the Play Lab game template",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T17:59:08+00:00",
-     "ok": true,
-     "note": "Initial commit",
      "source": "main commit"
     }
    ]
@@ -24307,7 +24307,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 2
+    "daysInState": 3
    },
    "waitingOn": "none",
    "id": "tell",
