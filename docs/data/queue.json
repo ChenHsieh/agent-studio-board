@@ -1,5 +1,5 @@
 {
- "generated": 1792879866,
+ "generated": 1792880011,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -9,10 +9,10 @@
   "running": 0,
   "done24h": 21,
   "modelsQueued": {},
-  "spendTodayUsd": 2.58,
-  "runsToday": 69,
+  "spendTodayUsd": 3.24,
+  "runsToday": 81,
   "runsTodayUnpriced": 13,
-  "spendTotalUsd": 8.94,
+  "spendTotalUsd": 9.6,
   "recent": [
    {
     "id": "P3OR79_marble-mechanism-strings",
@@ -81,7 +81,7 @@
   "codexOut": false,
   "converted": 0,
   "convertedRunning": 0,
-  "claudeWorkers": 1,
+  "claudeWorkers": 0,
   "claudeWorkerCap": 3,
   "handedBack": 0,
   "lastHandBack": null,
@@ -106,21 +106,23 @@
    "created": 1792876044
   },
   {
-   "id": "P1FS00_one-screen-audit",
-   "request": "P1FS00_one screen audit",
+   "id": "P1FS01_one-screen-kit-layout",
+   "request": "P1FS01_one screen kit layout",
    "game": "Studio",
    "route": "Claude",
-   "model": "sonnet",
+   "model": "opus",
    "effort": "high",
    "kind": "build",
-   "size": "studio",
+   "size": "one repo",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P1FS00_one-screen-audit"
+   ],
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1792858516,
-   "created": 1792858516
+   "at": 1792879967,
+   "created": 1792879967
   },
   {
    "id": "P1PL05_why-and-no-hub-rollout",
@@ -546,6 +548,25 @@
    "created": 1792810482
   },
   {
+   "id": "P1FS02_forager-one-screen",
+   "request": "P1FS02_forager one screen",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1FS00_one-screen-audit"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792858516
+  },
+  {
    "id": "P1IN09_idea-round-6-five-ideas",
    "request": "P1IN09_idea round 6 five ideas",
    "game": "Studio",
@@ -952,48 +973,6 @@
    ],
    "created": 1792715918,
    "estPercentOfWeek": 28.02
-  },
-  {
-   "id": "P1FS01_one-screen-kit-layout",
-   "request": "P1FS01_one screen kit layout",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1FS00_one-screen-audit"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P1FS00_one-screen-audit"
-   ],
-   "created": 1792858516
-  },
-  {
-   "id": "P1FS02_forager-one-screen",
-   "request": "P1FS02_forager one screen",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1FS00_one-screen-audit"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P1FS00_one-screen-audit"
-   ],
-   "created": 1792858516
   },
   {
    "id": "P1FS03_flagships-one-screen",
@@ -1834,6 +1813,23 @@
    "at": 1792876045,
    "created": 1792876045,
    "estPercentOfWeek": 28.02
+  },
+  {
+   "id": "P1FS00_one-screen-audit",
+   "request": "P1FS00_one screen audit",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792858516,
+   "created": 1792858516
   },
   {
    "id": "P1MM02_marble-slab-look",
