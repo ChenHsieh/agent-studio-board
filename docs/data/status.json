@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T04:18:57+00:00",
+ "generated": "2026-10-24T04:21:44+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -24,14 +24,14 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
+    "running": 1,
     "doneToday": 0,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "minutes": 120,
+    "estimateMinutes": 60
    }
   },
   "queued": 85,
-  "running": 2,
+  "running": 1,
   "doneToday": 0,
   "lanes": {
    "Codex": 1,
@@ -42,8 +42,8 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3540,
-  "estimatedFinish": "2026-10-26T12:18:57+00:00",
+  "minutesRemaining": 3480,
+  "estimatedFinish": "2026-10-26T12:21:44+00:00",
   "estimateMinutes": 3360
  },
  "lanes": [
@@ -52,24 +52,16 @@
    "game": "clean-features",
    "task": "P1CF02_story and strings",
    "since": "2026-10-24T04:17:41+00:00",
-   "activity": "2026-10-24T04:17:46+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "the-draw",
-   "task": "P2DRW00_the draw",
-   "since": "2026-10-24T03:40:39+00:00",
-   "activity": "2026-10-24T04:17:28+00:00",
+   "activity": "2026-10-24T04:20:37+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 259,
-  "usdEst": 932.4,
+  "runs": 260,
+  "usdEst": 936.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -119,7 +111,7 @@
   },
   {
    "day": "2026-10-24",
-   "changes": 1
+   "changes": 2
   }
  ],
  "houseRules": 25,
@@ -24621,30 +24613,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 28.8,
+   "costTotalUsd": 32.4,
    "latestChange": {
-    "text": "feat: The Draw starts from the clerk's losing draw so the score means something",
-    "at": "2026-10-24T04:17:28+00:00"
+    "text": "losing-draw start and real score, named loss, cracked top look, daily undos",
+    "at": "2026-10-24T04:21:42+00:00"
    },
    "promo": null,
    "why": "",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 1
+    "daysInState": 0
    },
-   "waitingOn": "the draw",
+   "waitingOn": "none",
    "id": "the-draw",
    "number": 155,
    "repo": "the-draw",
    "title": "The Draw",
    "line": "",
    "url": "https://chenhsieh.github.io/the-draw/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -24658,27 +24650,27 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-24T04:17:28+00:00",
+   "lastChange": "2026-10-24T04:21:42+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 7,
     "earlierUsdEst": 25.2,
-    "totalUsdEst": 28.8
+    "totalUsdEst": 32.4
    },
    "tasks": [
     {
      "title": "P2DRW00_the draw",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "The Draw: a real score (fix a crooked draw in fewest slips), a loss that names who knocked the cracked top out",
-     "since": "2026-10-24T03:40:39+00:00",
-     "done": null,
+     "since": "2026-10-24T01:34:28+00:00",
+     "done": "2026-10-24T01:34:28+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -24703,9 +24695,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": {
     "date": "2026-10-23",
@@ -24713,8 +24705,14 @@
     "note": "Fixing the draw holds (the obvious seating wins under a quarter of tries) but every win scores the same 8 slips and a loss does not say who won"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-24T04:21:42+00:00",
+     "ok": true,
+     "note": "losing-draw start and real score, named loss, cracked top look, daily undos",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T04:17:28+00:00",
      "ok": true,
@@ -28238,7 +28236,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-24T04:17:46+00:00",
+   "lastChange": "2026-10-24T04:20:37+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
