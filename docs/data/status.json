@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T03:39:52+00:00",
+ "generated": "2026-10-24T03:42:12+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 86,
+    "queued": 85,
     "running": 0,
     "doneToday": 7,
-    "minutes": 3440,
-    "estimateMinutes": 3440
+    "minutes": 3400,
+    "estimateMinutes": 3400
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 109,
+    "doneToday": 110,
     "minutes": 180,
     "estimateMinutes": 90
    }
   },
-  "queued": 87,
+  "queued": 86,
   "running": 2,
-  "doneToday": 116,
+  "doneToday": 117,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3620,
-  "estimatedFinish": "2026-10-26T12:59:52+00:00",
-  "estimateMinutes": 3440
+  "minutesRemaining": 3580,
+  "estimatedFinish": "2026-10-26T12:22:12+00:00",
+  "estimateMinutes": 3400
  },
  "lanes": [
   {
@@ -57,10 +57,10 @@
   },
   {
    "worker": "Claude",
-   "game": "honest-sign",
-   "task": "P2SGN00_honest sign",
-   "since": "2026-10-24T03:23:38+00:00",
-   "activity": "2026-10-24T03:37:46+00:00",
+   "game": "the-draw",
+   "task": "P2DRW00_the draw",
+   "since": "2026-10-24T03:40:39+00:00",
+   "activity": "2026-10-24T03:40:47+00:00",
    "commit": null
   }
  ],
@@ -68,8 +68,8 @@
  "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 257,
-  "usdEst": 925.2,
+  "runs": 258,
+  "usdEst": 928.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -115,7 +115,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 101
+   "changes": 102
   }
  ],
  "houseRules": 25,
@@ -10416,30 +10416,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 28.8,
+   "costTotalUsd": 32.4,
    "latestChange": {
-    "text": "feat: Honest Sign says its claim in plain numbers and teaches the copying trap",
-    "at": "2026-10-24T03:37:46+00:00"
+    "text": "plain claim line, copy teaching level, daily share, compact rule card, Play first",
+    "at": "2026-10-24T03:40:39+00:00"
    },
    "promo": null,
    "why": "",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
     "daysInState": 0
    },
-   "waitingOn": "honest sign",
+   "waitingOn": "none",
    "id": "honest-sign",
    "number": 150,
    "repo": "honest-sign",
    "title": "Honest Sign",
    "line": "",
    "url": "https://chenhsieh.github.io/honest-sign/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -10453,27 +10453,27 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:32:13+00:00",
-   "lastChange": "2026-10-24T03:37:46+00:00",
+   "lastChange": "2026-10-24T03:40:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 7,
     "earlierUsdEst": 25.2,
-    "totalUsdEst": 28.8
+    "totalUsdEst": 32.4
    },
    "tasks": [
     {
      "title": "P2SGN00_honest sign",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Honest Sign: show what the sign says in plain numbers, teach the copying trap, fit 320",
-     "since": "2026-10-24T03:23:38+00:00",
-     "done": null,
+     "since": "2026-10-24T01:34:28+00:00",
+     "done": "2026-10-24T01:34:28+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -10498,9 +10498,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": {
     "date": "2026-10-23",
@@ -10508,8 +10508,14 @@
     "note": "The self-counting sign holds (the obvious nudge gets stuck on 14 of 16 levels) but a stranger cannot read what the sign says yet"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-24T03:40:39+00:00",
+     "ok": true,
+     "note": "plain claim line, copy teaching level, daily share, compact rule card, Play first",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T03:37:46+00:00",
      "ok": true,
@@ -24610,7 +24616,7 @@
    ]
   },
   {
-   "nextTask": "The Draw: a real score (fix a crooked...",
+   "nextTask": null,
    "costTotalUsd": 25.2,
    "latestChange": {
     "text": "premise card (The idea) from the round-5 brief, kit 13",
@@ -24633,8 +24639,8 @@
    "title": "The Draw",
    "line": "",
    "url": "https://chenhsieh.github.io/the-draw/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -24648,7 +24654,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-24T03:00:00+00:00",
+   "lastChange": "2026-10-24T03:40:47+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -24664,10 +24670,10 @@
    "tasks": [
     {
      "title": "P2DRW00_the draw",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "The Draw: a real score (fix a crooked draw in fewest slips), a loss that names who knocked the cracked top out",
-     "since": "2026-10-24T01:34:28+00:00",
+     "since": "2026-10-24T03:40:39+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -24692,8 +24698,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
