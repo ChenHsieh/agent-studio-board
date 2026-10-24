@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T01:52:30+00:00",
+ "generated": "2026-10-24T01:55:01+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 67,
+    "queued": 66,
     "running": 1,
     "doneToday": 5,
-    "minutes": 2720,
-    "estimateMinutes": 2720
+    "minutes": 2680,
+    "estimateMinutes": 2680
    },
    "Claude": {
     "queued": 1,
     "running": 5,
-    "doneToday": 83,
+    "doneToday": 84,
     "minutes": 360,
     "estimateMinutes": 90
    }
   },
-  "queued": 68,
+  "queued": 67,
   "running": 6,
-  "doneToday": 88,
+  "doneToday": 89,
   "lanes": {
    "Codex": 1,
    "Claude": 4
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3080,
-  "estimatedFinish": "2026-10-25T23:12:30+00:00",
-  "estimateMinutes": 2720
+  "minutesRemaining": 3040,
+  "estimatedFinish": "2026-10-25T22:35:01+00:00",
+  "estimateMinutes": 2680
  },
  "lanes": [
   {
@@ -52,7 +52,15 @@
    "game": "the-apprentice",
    "task": "P1AP00_story and plain names",
    "since": "2026-10-24T01:30:31+00:00",
-   "activity": "2026-10-24T01:51:32+00:00",
+   "activity": "2026-10-24T01:53:44+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "play-template",
+   "task": "P1KT03_premise card before level one",
+   "since": null,
+   "activity": null,
    "commit": null
   },
   {
@@ -68,15 +76,7 @@
    "game": "readable-nonsense",
    "task": "P1RN43_daily and collection",
    "since": "2026-10-24T01:51:54+00:00",
-   "activity": "2026-10-24T01:51:54+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "tree-hero",
-   "task": "P1TH00_one number and clear journey",
-   "since": "2026-10-24T01:36:04+00:00",
-   "activity": "2026-10-24T01:50:55+00:00",
+   "activity": "2026-10-24T01:52:39+00:00",
    "commit": null
   },
   {
@@ -100,8 +100,8 @@
  "claudeWorkers": 5,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 231,
-  "usdEst": 831.6,
+  "runs": 232,
+  "usdEst": 835.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -147,7 +147,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 66
+   "changes": 67
   }
  ],
  "houseRules": 25,
@@ -22416,7 +22416,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-23T23:50:02+00:00",
-   "lastChange": "2026-10-24T01:51:32+00:00",
+   "lastChange": "2026-10-24T01:53:44+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -24678,10 +24678,10 @@
   },
   {
    "nextTask": "Tree Hero: reach the best tree within a...",
-   "costTotalUsd": 50.59,
+   "costTotalUsd": 54.19,
    "latestChange": {
-    "text": "feat: each swap says what it saves or costs, one score number on screen",
-    "at": "2026-10-24T01:50:55+00:00"
+    "text": "UX audit + bots show the lesson-3 recipe always wins; swap budget measured as the fix; 4...",
+    "at": "2026-10-24T01:52:54+00:00"
    },
    "promo": {
     "files": {
@@ -24697,8 +24697,8 @@
    "title": "Tree Hero",
    "line": "Swap branches until the family tree needs the fewest changes.",
    "url": "https://chenhsieh.github.io/tree-hero/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
@@ -24707,34 +24707,20 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-08-20T16:18:05+00:00",
-   "lastChange": "2026-10-24T01:50:55+00:00",
+   "lastChange": "2026-10-24T01:52:54+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 155848,
     "codexUsdEst": 0.19,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 13,
     "earlierUsdEst": 46.8,
-    "totalUsdEst": 50.59
+    "totalUsdEst": 54.19
    },
    "tasks": [
-    {
-     "title": "P1TH00_one number and clear journey",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Tree Hero: one number to follow, and a clear journey, from a UI expert pass.",
-     "since": "2026-10-24T01:36:04+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1TH01_swap budget real choice",
      "state": "queued",
@@ -24792,6 +24778,20 @@
      "result": ""
     },
     {
+     "title": "P1TH00_one number and clear journey",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Tree Hero: one number to follow, and a clear journey, from a UI expert pass.",
+     "since": "2026-10-24T00:36:48+00:00",
+     "done": "2026-10-24T00:36:48+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1TH00_one-number-and-clear-journey: Tree Hero UX audit, one-number pass, journey spec. DONE."
+    },
+    {
      "title": "P1SD43_studio standard tree hero",
      "state": "done",
      "worker": "Claude",
@@ -24822,9 +24822,9 @@
    ],
    "taskCounts": {
     "queued": 4,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": {
     "date": "2026-10-19",
@@ -24834,6 +24834,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T01:52:54+00:00",
+     "ok": true,
+     "note": "UX audit + bots show the lesson-3 recipe always wins; swap budget measured as the fix; 4 chained tasks",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T01:50:55+00:00",
      "ok": true,
@@ -24898,12 +24904,6 @@
      "at": "2026-09-05T03:02:02+00:00",
      "ok": true,
      "note": "Add a favicon (data-URI SVG, letter badge on the game's own palette)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-05T02:54:53+00:00",
-     "ok": true,
-     "note": "Add description, og:*, and twitter:* meta tags, and a generated docs/og.png",
      "source": "main commit"
     }
    ]
@@ -26616,7 +26616,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-16T00:28:34+00:00",
-   "lastChange": "2026-10-24T01:51:54+00:00",
+   "lastChange": "2026-10-24T01:52:39+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 3,
