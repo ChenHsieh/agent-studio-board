@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T10:20:19+00:00",
+ "generated": "2026-10-24T10:23:46+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,39 +16,56 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 82,
+    "queued": 80,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3280,
-    "estimateMinutes": 3280
+    "minutes": 3200,
+    "estimateMinutes": 3200
    },
    "Claude": {
     "queued": 1,
-    "running": 0,
+    "running": 2,
     "doneToday": 14,
-    "minutes": 60,
-    "estimateMinutes": 60
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
-  "queued": 83,
-  "running": 0,
+  "queued": 81,
+  "running": 2,
   "doneToday": 14,
   "lanes": {
    "Codex": 1,
-   "Claude": 1
+   "Claude": 2
   },
   "laneCap": {
    "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3340,
-  "estimatedFinish": "2026-10-26T17:00:19+00:00",
-  "estimateMinutes": 3280
+  "minutesRemaining": 3380,
+  "estimatedFinish": "2026-10-26T15:43:46+00:00",
+  "estimateMinutes": 3200
  },
- "lanes": [],
+ "lanes": [
+  {
+   "worker": "Claude",
+   "game": "makeshift-chair",
+   "task": "P1MC01_parts library and snapping",
+   "since": "2026-10-24T10:23:15+00:00",
+   "activity": "2026-10-24T10:23:19+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P3LS03_stale check looks at worktree activity",
+   "since": null,
+   "activity": null,
+   "commit": null
+  }
+ ],
  "codexLanes": 0,
- "claudeWorkers": 0,
+ "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
   "runs": 270,
@@ -9090,6 +9107,24 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-24T10:17:31+00:00",
+     "ok": true,
+     "note": "design: side-by-side of the mock and the live build (390, 320, mid-solve)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-24T10:15:53+00:00",
+     "ok": true,
+     "note": "feat: the small-town weekly look: newspaper page, printed grid, grass coming through the paper, clue list; two-tap placing passes the playable gate",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-24T09:06:20+00:00",
+     "ok": true,
+     "note": "start: P1GX02 visual round build",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-24T09:06:03+00:00",
      "ok": true,
      "note": "P1GX00: one Share button, daily is a generated bed from a 120-bed pool (never a shipped level), tap shows ghost then Plant, Rotate, hint on levels 1-3; live",
@@ -9126,33 +9161,9 @@
      "source": "main commit"
     },
     {
-     "at": "2026-10-24T06:46:13+00:00",
+     "at": "2026-10-24T06:54:34+00:00",
      "ok": true,
-     "note": "design: Grass Crossword visual round: grass comes up through the newspaper; three papers, the small-town weekly picked, build spec",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-23T07:41:28+00:00",
-     "ok": true,
-     "note": "docs: changelog for the 2026-10-23 round; tests know the twelve new beds and run the share and sound test",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-23T07:31:21+00:00",
-     "ok": true,
-     "note": "fix: result buttons stay one row at 20 px; beds 29 and 30 swap so the ladder has no flat run",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-23T06:44:12+00:00",
-     "ok": true,
-     "note": "feat: share copies a plain-text result at once, and soft sounds made in the browser",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-23T06:38:35+00:00",
-     "ok": true,
-     "note": "feat: twelve more grass crosswords (beds 26-37) with hay, straw, millet and barley",
+     "note": "P3OR71_grass-crossword-clue-strings: WORKDIR",
      "source": "main commit"
     }
    ]
@@ -13153,15 +13164,15 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "visual round clay",
+   "waitingOn": "parts library and snapping",
    "id": "makeshift-chair",
    "number": 35,
    "repo": "makeshift-chair",
    "title": "Makeshift Chair",
    "line": "",
    "url": "https://chenhsieh.github.io/makeshift-chair/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "make it a 3D physics game where sitting goes ridiculously wrong; daily games",
    "shelfNote": "",
@@ -13174,7 +13185,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T02:32:35+00:00",
-   "lastChange": "2026-10-24T09:30:47+00:00",
+   "lastChange": "2026-10-24T10:23:19+00:00",
    "cost": {
     "apiUsd": 11.15,
     "codexRuns": 2,
@@ -13188,6 +13199,20 @@
     "totalUsdEst": 36.75
    },
    "tasks": [
+    {
+     "title": "P1MC01_parts library and snapping",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Makeshift Chair 3D: ten junk parts with one signature behaviour each, a landing ghost, rotate, visible tape",
+     "since": "2026-10-24T10:23:15+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2MC04_visual round clay",
      "state": "queued",
@@ -13222,20 +13247,6 @@
      "worker": "Codex",
      "plan": "Makeshift Chair 3D: eight clients with a requirement, and a daily junk pile",
      "since": "2026-10-24T09:30:38+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P1MC01_parts library and snapping",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Makeshift Chair 3D: ten junk parts with one signature behaviour each, a landing ghost, rotate, visible tape",
-     "since": "2026-10-24T09:30:34+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -13302,8 +13313,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 4,
-    "running": 0,
+    "queued": 3,
+    "running": 1,
     "waitingDesign": 0,
     "done": 4
    },
