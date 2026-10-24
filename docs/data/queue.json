@@ -1,5 +1,5 @@
 {
- "generated": 1792805915,
+ "generated": 1792806120,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -196,26 +196,7 @@
    "state": "running",
    "at": 1792805782,
    "created": 1792805782,
-   "estPercentOfWeek": 223.5
-  },
-  {
-   "id": "P2RV12_review-rumour-on-the-jetty-scribes-blotter",
-   "request": "Opus stranger review of round 5 builds rumour-on-the-jetty and scribes-blotter",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2RV07_rumour-on-the-jetty"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792799690,
-   "created": 1792799690
+   "estPercentOfWeek": 231.33
   },
   {
    "id": "P1CF01_rules-and-levels-drop-cost",
@@ -356,7 +337,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713005,
-   "estPercentOfWeek": 223.5
+   "estPercentOfWeek": 231.33
   },
   {
    "id": "P2NC00_name-to-carry-data-inline",
@@ -376,7 +357,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792791317,
-   "estPercentOfWeek": 223.5
+   "estPercentOfWeek": 231.33
   },
   {
    "id": "P2PS00_pigeon-salon-readable-board",
@@ -396,7 +377,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713005,
-   "estPercentOfWeek": 223.5
+   "estPercentOfWeek": 231.33
   },
   {
    "id": "P2RO00_radish-omelette-colours-and-beats",
@@ -416,7 +397,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713431,
-   "estPercentOfWeek": 223.5
+   "estPercentOfWeek": 231.33
   },
   {
    "id": "P2RS00_restored-blurry-neighbours-count",
@@ -436,7 +417,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792715918,
-   "estPercentOfWeek": 223.5
+   "estPercentOfWeek": 231.33
   },
   {
    "id": "P3NY00_not-yet-a-real-choice",
@@ -456,7 +437,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713432,
-   "estPercentOfWeek": 223.5
+   "estPercentOfWeek": 231.33
   },
   {
    "id": "P3OR45_herbal-pages-stay-open-logic",
@@ -474,7 +455,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792724295,
-   "estPercentOfWeek": 223.5
+   "estPercentOfWeek": 231.33
   },
   {
    "id": "P2GG00_gallery-guess-save-migration-test",
@@ -509,7 +490,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792701959,
-   "estPercentOfWeek": 223.5
+   "estPercentOfWeek": 231.33
   },
   {
    "id": "P1BD04_released-games-leave-ready-to-try",
@@ -563,6 +544,23 @@
    "created": 1792804732
   },
   {
+   "id": "P1BD07_game-numbers-on-the-board",
+   "request": "Board: every game has a permanent number shown on its card and list, with a range filter.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792805993
+  },
+  {
    "id": "P1KT03_premise-card-before-level-one",
    "request": "Template: a premise card before level one",
    "game": "Studio",
@@ -578,6 +576,23 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792804732
+  },
+  {
+   "id": "P1KT04_daily-card-and-howto-wording",
+   "request": "Template: the daily result card says the date, not 'level 2026-10-23', and How to play stops saying 'Tap where the ring is' for every game.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792805948
   },
   {
    "id": "P1LS01_lesson-check-before-gates",
@@ -707,6 +722,44 @@
    "created": 1792790639
   },
   {
+   "id": "P2RJT00_rumour-on-the-jetty",
+   "request": "Rumour on the Jetty: the town fits a phone, door dots readable, the boat tap no longer counts as a whisper",
+   "game": "Rumour On The Jetty",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2RV12_review-rumour-on-the-jetty-scribes-blotter"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792805901
+  },
+  {
+   "id": "P2SBL00_scribes-blotter",
+   "request": "The Scribe's Blotter visual round",
+   "game": "Scribes Blotter",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2RV12_review-rumour-on-the-jetty-scribes-blotter"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792805901
+  },
+  {
    "id": "P2SGN00_honest-sign",
    "request": "Honest Sign: show what the sign says in plain numbers, teach the copying trap, fit 320",
    "game": "Honest Sign",
@@ -758,7 +811,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792724493,
-   "estPercentOfWeek": 223.5
+   "estPercentOfWeek": 231.33
   },
   {
    "id": "P1CF02_story-and-strings",
@@ -969,7 +1022,7 @@
     "P3OR45_herbal-pages-stay-open-logic"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 223.5
+   "estPercentOfWeek": 231.33
   },
   {
    "id": "P1TE03_room-strings",
@@ -1054,49 +1107,7 @@
     "P3OR44_kit-win-hold-and-higher-is-better"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 223.5
-  },
-  {
-   "id": "P2RJT00_rumour-on-the-jetty",
-   "request": "Rumour on the Jetty: the town fits a phone, door dots readable, the boat tap no longer counts as a whisper",
-   "game": "Rumour On The Jetty",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2RV12_review-rumour-on-the-jetty-scribes-blotter"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2RV12_review-rumour-on-the-jetty-scribes-blotter"
-   ],
-   "created": 1792805901
-  },
-  {
-   "id": "P2SBL00_scribes-blotter",
-   "request": "The Scribe's Blotter visual round",
-   "game": "Scribes Blotter",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2RV12_review-rumour-on-the-jetty-scribes-blotter"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2RV12_review-rumour-on-the-jetty-scribes-blotter"
-   ],
-   "created": 1792805901
+   "estPercentOfWeek": 231.33
   },
   {
    "id": "P2TE06_look-refine",
@@ -1185,7 +1196,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 223.5
+   "estPercentOfWeek": 231.33
   },
   {
    "id": "P2n88_watched-pot",
@@ -1207,7 +1218,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 223.5
+   "estPercentOfWeek": 231.33
   },
   {
    "id": "P2n89_round-table",
@@ -1229,7 +1240,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 223.5
+   "estPercentOfWeek": 231.33
   },
   {
    "id": "P2n90_iron-window-garden",
@@ -1251,7 +1262,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 223.5
+   "estPercentOfWeek": 231.33
   },
   {
    "id": "P2n91_still-a-heap",
@@ -1273,7 +1284,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 223.5
+   "estPercentOfWeek": 231.33
   },
   {
    "id": "P2n92_out-of-the-corner",
@@ -1295,7 +1306,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 223.5
+   "estPercentOfWeek": 231.33
   },
   {
    "id": "P2n93_one-umbrella",
@@ -1317,7 +1328,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 223.5
+   "estPercentOfWeek": 231.33
   },
   {
    "id": "P2n94_rolling-back",
@@ -1339,7 +1350,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 223.5
+   "estPercentOfWeek": 231.33
   },
   {
    "id": "P2n95_gold-star",
@@ -1361,7 +1372,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 223.5
+   "estPercentOfWeek": 231.33
   },
   {
    "id": "P2n96_ac-remote",
@@ -1383,7 +1394,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 223.5
+   "estPercentOfWeek": 231.33
   },
   {
    "id": "P2n97_review-coin-dumplings-and-watched-pot",
@@ -2266,7 +2277,7 @@
    "state": "done",
    "at": 1792790510,
    "created": 1792790510,
-   "estPercentOfWeek": 223.5
+   "estPercentOfWeek": 231.33
   },
   {
    "id": "P2RV05_honest-sign",
@@ -2390,6 +2401,25 @@
    "created": 1792799686
   },
   {
+   "id": "P2RV12_review-rumour-on-the-jetty-scribes-blotter",
+   "request": "Opus stranger review of round 5 builds rumour-on-the-jetty and scribes-blotter",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2RV07_rumour-on-the-jetty"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792799690,
+   "created": 1792799690
+  },
+  {
    "id": "P2RV13_review-the-apprentice-mint",
    "request": "Opus stranger review of round 5 builds the-apprentice and mint",
    "game": "Studio",
@@ -2441,7 +2471,7 @@
    "state": "done",
    "at": 1792798110,
    "created": 1792798110,
-   "estPercentOfWeek": 223.5
+   "estPercentOfWeek": 231.33
   }
  ]
 }
