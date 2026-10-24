@@ -1,5 +1,5 @@
 {
- "generated": 1792856510,
+ "generated": 1792856648,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -89,23 +89,23 @@
  },
  "tasks": [
   {
-   "id": "P1CK05_one-record-strings",
-   "request": "Clay Clock: en and zh-Hant lines for one record",
+   "id": "P1CK06_one-record-tests-and-publish",
+   "request": "Clay Clock: one-record tests, then the single publish",
    "game": "Clay Clock",
    "route": "Claude",
    "model": "sonnet",
-   "effort": "low",
+   "effort": "high",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P1CK04_one-record-ui-first-minute"
+    "P1CK05_one-record-strings"
    ],
    "priority": "P2",
    "why": "An Instagram reel of someone pressing cuneiform wedges into a small clay tablet.",
    "state": "running",
-   "at": 1792804936,
-   "created": 1792804936
+   "at": 1792804913,
+   "created": 1792804913
   },
   {
    "id": "P1AX12_kit-new-rule-and-short-screen-fit",
@@ -626,6 +626,23 @@
    "created": 1792838738
   },
   {
+   "id": "P1TE07_touch-responsive-no-zoom",
+   "request": "P1TE07_touch responsive no zoom",
+   "game": "Think Elephant",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792856546
+  },
+  {
    "id": "P1UX05_requests-file-and-planner",
    "request": "Board actions become requests the planner turns into tasks, with a cost check",
    "game": "Studio",
@@ -918,27 +935,6 @@
    "created": 1792825169
   },
   {
-   "id": "P1CK06_one-record-tests-and-publish",
-   "request": "Clay Clock: one-record tests, then the single publish",
-   "game": "Clay Clock",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1CK05_one-record-strings"
-   ],
-   "priority": "P2",
-   "why": "An Instagram reel of someone pressing cuneiform wedges into a small clay tablet.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1CK05_one-record-strings"
-   ],
-   "created": 1792804913
-  },
-  {
    "id": "P1LW02_lot-waits-day-strip-and-trust",
    "request": "The Lot Waits: a seven-day strip, each lot's good days marked under it, and a trust number that moves",
    "game": "The Lot Waits",
@@ -1066,6 +1062,27 @@
     "P1MM05_marble-mechanisms-act-three"
    ],
    "created": 1792838733
+  },
+  {
+   "id": "P1TE08_one-font-for-quotes",
+   "request": "P1TE08_one font for quotes",
+   "game": "Think Elephant",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1TE07_touch-responsive-no-zoom"
+   ],
+   "priority": null,
+   "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1TE07_touch-responsive-no-zoom"
+   ],
+   "created": 1792856566
   },
   {
    "id": "P1UX06_action-sheet-and-request-cards",
