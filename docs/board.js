@@ -21,9 +21,16 @@ const savedFilters = JSON.parse(localStorage.getItem('board.filters') || '{}');
 let filters = { stage: [], priority: [], verdict: [], worker: [], recent: [], ...savedFilters };
 delete filters.needs;
 // The first-row view switch. Needs you is the default; the last choice is remembered.
-const VIEWS = [['needs', 'Needs you'], ['ready', 'Ready to try'], ['released', 'Released'], ['progress', 'In progress'], ['shelf', 'Shelf'], ['archived', 'Archived'], ['all', 'All'], ['queue', 'Queue']];
+const VIEWS = [['needs', 'Needs you'], ['ready', 'Ready to try'], ['released', 'Released'], ['progress', 'In progress'], ['shelf', 'Shelf'], ['archived', 'Archived'], ['all', 'All'], ['queue', 'Queue'], ['checklist', 'Checklist']];
 let view = localStorage.getItem('board.view');
 if (!VIEWS.some(([v]) => v === view)) view = 'needs';
+// A shared link may name the view: #range=120-140&view=checklist (P1UX03).
+const CL = window.BoardChecklist;
+const hashView = CL.viewFromHash(location.hash);
+if (hashView && VIEWS.some(([v]) => v === hashView)) view = hashView;
+let checks = null;
+const cl = { chips: [], state: '', picked: new Set() };
+let clShown = [], clAll = [];
 // Needs you means: a human is the only thing the game is waiting for (the server sets needsYou only from board/asks.tsv).
 // The view rules live in views.js (tested in node by test/views.test.js).
 const { inProg, isReady, updatedSinceRelease, changeSummary, IN_VIEW, numLabel, findMatch, inRange, rangeFromHash, rangeToHash, copyList, byNumber } = window.BoardViews;
@@ -71,7 +78,50 @@ function day(iso) {
 function within(iso, hours) { const t = Date.parse(iso || ''); return !Number.isNaN(t) && Date.now() - t <= hours * 3_600_000; }
 function saveChoices() { localStorage.setItem('board.view', view); localStorage.setItem('board.filters', JSON.stringify(filters)); localStorage.setItem('board.sort', sort); }
 
+async function loadChecks() {
+  for (const url of ['data/checks.json', 'https://raw.githubusercontent.com/ChenHsieh/agent-studio-board/main/docs/data/checks.json']) {
+    try { const r = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' }); if (r.ok) { checks = await r.json(); break; } } catch { /* next */ }
+  }
+  if (checks && data) { renderViews(); if (view === 'checklist') renderChecklist(); }
+}
+
+// ---------------------------------------------------------------- Checklist by game (P1UX03)
+function renderChecklist() {
+  if (document.activeElement !== $('#cl-from')) $('#cl-from').value = range.from ?? '';
+  if (document.activeElement !== $('#cl-to')) $('#cl-to').value = range.to ?? '';
+  $('#cl-chips').innerHTML = CL.CHIPS.map(([id, label]) => `<button type="button" class="cchip" data-clchip="${id}" aria-pressed="${cl.chips.includes(id)}">${label}</button>`).join('');
+  if (!checks) { $('#cl-table').innerHTML = '<p class="empty">Loading the checklist…</p>'; $('#cl-sub').textContent = ''; return; }
+  clAll = CL.rows(checks, data.games);
+  const order = ['building', 'revise', 'playable', 'in-review', 'ship', 'released', 'shelved', 'archived'];
+  const states = [...new Set(clAll.map((r) => r.state).filter(Boolean))].sort((a, b) => order.indexOf(a) - order.indexOf(b));
+  if (cl.state && !states.includes(cl.state)) cl.state = '';
+  $('#cl-state').innerHTML = '<option value="">Any state</option>' + states.map((st) => `<option value="${esc(st)}"${st === cl.state ? ' selected' : ''}>${esc(CL.stateLabel(st))}</option>`).join('');
+  clShown = CL.filter(clAll, { range, chips: cl.chips, state: cl.state, q: $('#q').value.trim() });
+  const rangeText = range.from != null || range.to != null ? ` · numbers ${range.from ?? 'first'} to ${range.to ?? 'last'}` : '';
+  $('#cl-sub').textContent = `${clShown.length} ${clShown.length === 1 ? 'game' : 'games'}${rangeText}`;
+  const cnt = CL.counts(clShown);
+  const allPicked = clShown.length > 0 && clShown.every((r) => cl.picked.has(r.slug));
+  const head = `<tr><th scope="col" class="cgame"><label><input type="checkbox" id="cl-all" aria-label="Select every game shown"${allPicked ? ' checked' : ''}> Game</label></th>` +
+    CL.COLUMNS.map(([k, label]) => `<th scope="col"><span>${label}</span><small>${cnt[k].no} no · ${cnt[k].notRun} not run</small></th>`).join('') + '</tr>';
+  const body = clShown.map((r) => `<tr><th scope="row" class="cgame"><label><input type="checkbox" data-pick="${esc(r.slug)}"${cl.picked.has(r.slug) ? ' checked' : ''}><span class="n">#${r.number}</span> ${esc(r.title)}</label><small>${esc(CL.stateLabel(r.state))}</small></th>` +
+    CL.COLUMNS.map(([k]) => { const c = r.checks[k]; return `<td class="cv-${esc(c.v)}"><button type="button" data-cell="${esc(r.slug)}|${k}">${CL.word(c.v)}</button></td>`; }).join('') + '</tr>').join('');
+  $('#cl-table').innerHTML = clShown.length ? `<table class="ctable"><thead>${head}</thead><tbody>${body}</tbody></table>` : '<p class="empty">No game matches. Widen the range or turn a filter off.</p>';
+  renderClBar();
+}
+function renderClBar() {
+  const n = cl.picked.size;
+  $('#cl-bar').hidden = !n;
+  $('#cl-count').textContent = `${n} selected`;
+}
+function setRangeFrom(from, to) {
+  range = window.BoardViews.normRange({ from, to });
+  const h = rangeToHash(location.hash, range);
+  history.replaceState(null, '', h || location.pathname + location.search);
+  if (data) render();
+}
+
 async function loadExtra() {
+  loadChecks();
   Gauge.load().then((q) => { if (q) { quota = q; paintGauge(); if (view === 'queue') renderQueueView(); } });
   for (const url of ['data/queue.json', 'https://raw.githubusercontent.com/ChenHsieh/agent-studio-board/main/docs/data/queue.json']) {
     try { const r = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' }); if (r.ok) { requests = await r.json(); break; } } catch { /* next */ }
@@ -291,7 +341,7 @@ function gameHtml(g) {
 }
 
 function renderViews() {
-  const count = (v) => v === 'queue' ? ((requests && requests.tasks) || []).filter((t) => t.state !== 'done').length : data.games.filter(IN_VIEW[v]).length + (v === 'needs' ? (data.systemNeeds || []).length : 0);
+  const count = (v) => v === 'checklist' ? (checks ? checks.games.length : data.games.length) : v === 'queue' ? ((requests && requests.tasks) || []).filter((t) => t.state !== 'done').length : data.games.filter(IN_VIEW[v]).length + (v === 'needs' ? (data.systemNeeds || []).length : 0);
   $('#views').innerHTML = VIEWS.map(([v, label]) => `<button class="view" role="tab" data-view="${v}" aria-selected="${v === view}">${label} <b>${count(v)}</b></button>`).join('');
 }
 
@@ -354,6 +404,9 @@ function render() {
   document.body.classList.toggle('qmode', view === 'queue');
   $('#queue-view').hidden = view !== 'queue';
   if (view === 'queue') renderQueueView();
+  document.body.classList.toggle('cmode', view === 'checklist');
+  $('#checklist-view').hidden = view !== 'checklist';
+  if (view === 'checklist') renderChecklist();
   paintGauge();
   const list = data.games.filter((g) => findMatch(g, q) && inRange(g, range) && IN_VIEW[view](g) && matches(g)).sort(compare);
   visible = list;
@@ -396,7 +449,23 @@ document.addEventListener('click', (e) => {
   const rr = e.target.closest('.rrow');
   if (rr) { const id = rr.parentElement.dataset.rid; qOpen.has(id) ? qOpen.delete(id) : qOpen.add(id); rr.parentElement.classList.toggle('open'); rr.setAttribute('aria-expanded', String(qOpen.has(id))); return; }
   const tab = e.target.closest('[data-view]');
-  if (tab && data) { view = tab.dataset.view; saveChoices(); render(); return; }
+  if (tab && data) { view = tab.dataset.view; saveChoices(); const h = CL.viewToHash(location.hash, view === 'checklist' ? 'checklist' : null); history.replaceState(null, '', h || location.pathname + location.search); render(); return; }
+  const cc = e.target.closest('[data-clchip]');
+  if (cc) { const id = cc.dataset.clchip; cl.chips = cl.chips.includes(id) ? cl.chips.filter((x) => x !== id) : [...cl.chips, id]; renderChecklist(); return; }
+  const cell = e.target.closest('[data-cell]');
+  if (cell) {
+    const [slug, k] = cell.dataset.cell.split('|'); const r = clAll.find((x) => x.slug === slug); if (!r) return;
+    const c = r.checks[k], label = (CL.COLUMNS.find(([key]) => key === k) || [k, k])[1];
+    const note = $('#cl-note'); note.hidden = false;
+    note.textContent = `#${r.number} ${r.title}, ${label}: ${CL.word(c.v)}. ${c.source ? `From ${c.source}${c.at ? `, ${c.at}` : ''}.` : 'Nobody has checked this yet.'}`;
+    return;
+  }
+  if (e.target.closest('#cl-copy')) {
+    const b = $('#cl-copy'), picked = clAll.filter((r) => cl.picked.has(r.slug)), text = CL.copyLines(picked);
+    const done = () => { b.textContent = `Copied ${picked.length}`; setTimeout(() => (b.textContent = 'Copy list'), 1500); };
+    (navigator.clipboard ? navigator.clipboard.writeText(text) : Promise.reject()).then(done, () => { const t = document.createElement('textarea'); t.value = text; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); done(); } catch {} t.remove(); });
+    return;
+  }
   const chip = e.target.closest('.chip');
   if (chip) {
     const { filter, value } = chip.dataset;
@@ -419,6 +488,14 @@ document.addEventListener('click', (e) => {
   }
 });
 $('#q').addEventListener('input', () => data && render());
+document.addEventListener('change', (e) => {
+  const pick = e.target.closest('[data-pick]');
+  if (pick) { pick.checked ? cl.picked.add(pick.dataset.pick) : cl.picked.delete(pick.dataset.pick); renderClBar(); const all = $('#cl-all'); if (all) all.checked = clShown.length > 0 && clShown.every((r) => cl.picked.has(r.slug)); return; }
+  if (e.target.id === 'cl-all') { for (const r of clShown) e.target.checked ? cl.picked.add(r.slug) : cl.picked.delete(r.slug); renderChecklist(); return; }
+  if (e.target.id === 'cl-state') { cl.state = e.target.value; renderChecklist(); }
+});
+$('#cl-from').addEventListener('input', () => setRangeFrom($('#cl-from').value, $('#cl-to').value));
+$('#cl-to').addEventListener('input', () => setRangeFrom($('#cl-from').value, $('#cl-to').value));
 function setRange() {
   range = { from: $('#range-from').value, to: $('#range-to').value };
   range = window.BoardViews.normRange(range);
@@ -429,7 +506,7 @@ function setRange() {
 $('#range-from').addEventListener('input', setRange);
 $('#range-to').addEventListener('input', setRange);
 $('#range-clear').addEventListener('click', () => { $('#range-from').value = ''; $('#range-to').value = ''; setRange(); });
-window.addEventListener('hashchange', () => { range = rangeFromHash(location.hash); if (data) render(); });
+window.addEventListener('hashchange', () => { range = rangeFromHash(location.hash); const hv = CL.viewFromHash(location.hash); if (hv && VIEWS.some(([v]) => v === hv)) view = hv; if (data) render(); });
 $('#copy-list').addEventListener('click', () => {
   const b = $('#copy-list'), text = copyList(visible), label = 'Copy list';
   const done = () => { b.textContent = `Copied ${visible.length}`; setTimeout(() => (b.textContent = label), 1500); };

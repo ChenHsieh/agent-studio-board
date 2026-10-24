@@ -297,3 +297,39 @@ body.qmode .now, body.qmode .tally, body.qmode .tools, body.qmode #games, body.q
 .range-row .chip { margin: 0; min-height: 36px; padding: 4px 10px; }
 .copy-list { font: 13px var(--mono); padding: 7px 10px; border: 1px solid var(--ink); background: none; color: var(--ink); min-height: 36px; }
 .copy-list:disabled { opacity: .45; }
+
+/* Checklist by game (P1UX03): text 16 px or more, targets 44 px or more; the table scrolls sideways inside its box. */
+body.cmode .now, body.cmode .tally, body.cmode .tools, body.cmode #games, body.cmode .prio-row { display: none; }
+.cview { margin-top: 14px; }
+.cview h2 { font: 600 24px/1.2 var(--serif); text-transform: none; letter-spacing: 0; color: var(--ink); margin: 0 0 10px; }
+.cview h2 small { display: block; font: 16px var(--mono); color: var(--muted); margin-top: 4px; }
+.crange { display: flex; flex-wrap: wrap; align-items: end; gap: 10px 14px; margin: 8px 0; }
+.crange label { display: grid; gap: 4px; font: 600 16px var(--mono); color: var(--ink); }
+.crange input, .crange select { font: 600 18px var(--mono); min-height: 48px; padding: 0 10px; border: 2px solid var(--ink); background: #fff; color: var(--ink); border-radius: 3px; }
+.crange input { width: 5.5em; }
+.cchips { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+.cchip { font: 16px var(--mono); min-height: 44px; padding: 0 12px; border: 1.5px solid var(--ink); background: #fff; color: var(--ink); border-radius: 3px; }
+.cchip[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.ckey, .cnote { font: 16px/1.4 var(--mono); color: var(--muted); margin: 8px 0; }
+.cnote { color: var(--ink); background: var(--tone); padding: 8px 10px; }
+.cwrap { position: relative; z-index: 0; overflow-x: auto; max-width: 100%; margin-top: 10px; -webkit-overflow-scrolling: touch; }
+.ctable { border-collapse: collapse; min-width: 980px; font-size: 16px; }
+.ctable thead th { font: 600 16px/1.25 var(--mono); text-align: left; vertical-align: bottom; padding: 8px 6px; border-bottom: 2px solid var(--ink); }
+.ctable thead th small { display: block; font: 16px var(--mono); color: var(--muted); margin-top: 4px; }
+.ctable .cgame { position: sticky; left: 0; z-index: 1; background: var(--paper); text-align: left; min-width: 190px; max-width: 220px; padding: 6px 10px 6px 0; border-bottom: 1px solid var(--rule); font: 600 17px/1.25 var(--serif); }
+.ctable thead .cgame { z-index: 2; font: 600 16px var(--mono); }
+.ctable .cgame label { display: flex; align-items: center; gap: 6px; min-height: 44px; }
+.ctable .cgame input { width: 24px; height: 24px; flex: none; margin: 0 4px 0 0; accent-color: var(--ink); }
+.ctable .cgame .n { font: 600 16px var(--mono); color: var(--muted); }
+.ctable .cgame small { display: block; font: 16px var(--mono); color: var(--muted); padding-left: 34px; font-weight: 400; }
+.ctable td { padding: 0; border-bottom: 1px solid var(--rule); border-left: 3px solid var(--paper); }
+.ctable td button { display: block; width: 100%; min-width: 96px; min-height: 48px; padding: 0 8px; border: 0; background: none; text-align: left; font: 600 16px var(--mono); color: inherit; cursor: pointer; }
+.ctable td.cv-yes { background: #e3efe3; color: #22582a; }
+.ctable td.cv-no { background: var(--accent); color: #fff; }
+.ctable td.cv-unknown, .ctable td.cv-ran { color: var(--muted); outline: 1.5px dashed var(--rule); outline-offset: -5px; }
+.ctable td.cv-unknown button, .ctable td.cv-ran button { font-weight: 400; }
+.cbar { position: sticky; bottom: 0; z-index: 3; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 14px; margin-top: 14px; padding: 12px 14px; background: var(--ink); color: var(--paper); }
+.cbar b { font: 600 20px var(--serif); }
+.cbar-btns { display: flex; flex-wrap: wrap; gap: 8px; }
+.cbar button { font: 16px var(--mono); min-height: 44px; padding: 0 12px; border: 1.5px solid var(--paper); background: var(--paper); color: var(--ink); border-radius: 3px; }
+.cbar button:disabled { opacity: .55; }

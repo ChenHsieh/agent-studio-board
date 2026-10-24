@@ -52,10 +52,24 @@
 </div>
 
 <section id="queue-view" class="qview" hidden aria-label="Queue of requests"></section>
+<section id="checklist-view" class="cview" hidden aria-labelledby="cl-h">
+  <h2 id="cl-h">Checklist by game <small id="cl-sub"></small></h2>
+  <div class="crange">
+    <label>From <input id="cl-from" type="number" inputmode="numeric" min="1" step="1" aria-label="From number"></label>
+    <label>To <input id="cl-to" type="number" inputmode="numeric" min="1" step="1" aria-label="To number"></label>
+    <label>State <select id="cl-state"><option value="">Any state</option></select></label>
+  </div>
+  <div class="cchips" id="cl-chips" aria-label="Show only games"></div>
+  <p class="ckey">Each cell says its value: <b>yes</b>, <b>no</b>, <b>not run</b> (nobody has checked yet) or <b>no score</b> (a check ran but no pass or fail was filed). Tap a cell for where it comes from.</p>
+  <p id="cl-note" class="cnote" aria-live="polite" hidden></p>
+  <div class="cwrap" id="cl-table"></div>
+  <div class="cbar" id="cl-bar" hidden><b id="cl-count">0 selected</b><span class="cbar-btns"><button type="button" id="cl-copy">Copy list</button><button type="button" id="cl-act" disabled title="coming">Choose an action</button></span></div>
+</section>
 
 <ol id="games" class="games"></ol>
 <script src="gauge.js"></script>
 <script src="views.js"></script>
+<script src="checklist.js"></script>
 <script src="board.js"></script>
 </body>
 </html>
