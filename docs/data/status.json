@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T03:24:44+00:00",
+ "generated": "2026-10-24T03:27:05+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -24,15 +24,15 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 3,
-    "doneToday": 107,
-    "minutes": 240,
-    "estimateMinutes": 120
+    "running": 2,
+    "doneToday": 108,
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
   "queued": 88,
-  "running": 3,
-  "doneToday": 114,
+  "running": 2,
+  "doneToday": 115,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,8 +42,8 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3720,
-  "estimatedFinish": "2026-10-26T13:24:44+00:00",
+  "minutesRemaining": 3660,
+  "estimatedFinish": "2026-10-26T13:27:05+00:00",
   "estimateMinutes": 3480
  },
  "lanes": [
@@ -57,14 +57,6 @@
   },
   {
    "worker": "Claude",
-   "game": "tree-hero",
-   "task": "P1TH02_change marks on branches",
-   "since": "2026-10-24T03:15:48+00:00",
-   "activity": "2026-10-24T03:24:06+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
    "game": "honest-sign",
    "task": "P2SGN00_honest sign",
    "since": "2026-10-24T03:23:38+00:00",
@@ -73,11 +65,11 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 3,
+ "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 255,
-  "usdEst": 918.0,
+  "runs": 256,
+  "usdEst": 921.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -123,7 +115,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 99
+   "changes": 100
   }
  ],
  "houseRules": 25,
@@ -26689,10 +26681,10 @@
   },
   {
    "nextTask": "Tree Hero: tidy words and tests after the...",
-   "costTotalUsd": 57.79,
+   "costTotalUsd": 61.39,
    "latestChange": {
-    "text": "swap budget as pips in free play and the daily; recipe misses it on 38/41 charts; result...",
-    "at": "2026-10-24T03:15:44+00:00"
+    "text": "change ticks on branches with letters, column cue (square/circles), press-to-preview...",
+    "at": "2026-10-24T03:26:15+00:00"
    },
    "promo": {
     "files": {
@@ -26711,15 +26703,15 @@
     "reviseRound": 1,
     "daysInState": 4
    },
-   "waitingOn": "change marks on branches",
+   "waitingOn": "strings and tests",
    "id": "tree-hero",
    "number": 11,
    "repo": "tree-hero",
    "title": "Tree Hero",
    "line": "Swap branches until the family tree needs the fewest changes.",
    "url": "https://chenhsieh.github.io/tree-hero/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
@@ -26732,34 +26724,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-08-20T16:18:05+00:00",
-   "lastChange": "2026-10-24T03:24:06+00:00",
+   "lastChange": "2026-10-24T03:26:15+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 0,
     "codexTokens": 155848,
     "codexUsdEst": 0.19,
-    "claudeUsdEst": 10.8,
+    "claudeUsdEst": 14.4,
     "earlierRounds": 13,
     "earlierUsdEst": 46.8,
-    "totalUsdEst": 57.79
+    "totalUsdEst": 61.39
    },
    "tasks": [
-    {
-     "title": "P1TH02_change marks on branches",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Tree Hero: every DNA change drawn on the branch where it happens",
-     "since": "2026-10-24T03:15:48+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1TH04_strings and tests",
      "state": "queued",
@@ -26801,6 +26779,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1TH01_swap-budget-real-choice: Tree Hero (#11). DONE."
+    },
+    {
+     "title": "P1TH02_change marks on branches",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Tree Hero: every DNA change drawn on the branch where it happens",
+     "since": "2026-10-24T01:48:25+00:00",
+     "done": "2026-10-24T01:48:25+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1TH02_change-marks-on-branches: Tree Hero (#11). DONE."
     },
     {
      "title": "P1TH00_one number and clear journey",
@@ -26847,9 +26839,9 @@
    ],
    "taskCounts": {
     "queued": 2,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": {
     "date": "2026-10-19",
@@ -26859,6 +26851,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T03:26:15+00:00",
+     "ok": true,
+     "note": "change ticks on branches with letters, column cue (square/circles), press-to-preview ghosts; 320 boards no longer overlap (P1TH02)",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T03:15:44+00:00",
      "ok": true,
@@ -26923,12 +26921,6 @@
      "at": "2026-10-15T14:25:17+00:00",
      "ok": true,
      "note": "feat: a link back to Play Lab",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-15T00:28:48+00:00",
-     "ok": true,
-     "note": "feat: a working first move and a true lesson, demo hook",
      "source": "main commit"
     }
    ]

@@ -1,5 +1,5 @@
 {
- "generated": 1792812299,
+ "generated": 1792812451,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -108,25 +108,6 @@
    "state": "running",
    "at": 1792808075,
    "created": 1792808075
-  },
-  {
-   "id": "P1TH02_change-marks-on-branches",
-   "request": "Tree Hero: every DNA change drawn on the branch where it happens",
-   "game": "Tree Hero",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1TH01_swap-budget-real-choice"
-   ],
-   "priority": "P1",
-   "why": "Fitch maximum-parsimony phylogenetics; swap branches of a seven-species tree until it needs the fewest evolutionary changes; no timeline, undo is free.",
-   "state": "running",
-   "at": 1792806505,
-   "created": 1792806505
   },
   {
    "id": "P2SGN00_honest-sign",
@@ -367,6 +348,25 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792810482
+  },
+  {
+   "id": "P1TH03_worked-example-journey",
+   "request": "Tree Hero: a one-line premise, a tiny worked example, a guided first swap",
+   "game": "Tree Hero",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1TH02_change-marks-on-branches"
+   ],
+   "priority": "P1",
+   "why": "Fitch maximum-parsimony phylogenetics; swap branches of a seven-species tree until it needs the fewest evolutionary changes; no timeline, undo is free.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792806505
   },
   {
    "id": "P2CC35_colony-count-save-migration-test",
@@ -1145,27 +1145,6 @@
     "P1GX01_visual-round-design"
    ],
    "created": 1792810461
-  },
-  {
-   "id": "P1TH03_worked-example-journey",
-   "request": "Tree Hero: a one-line premise, a tiny worked example, a guided first swap",
-   "game": "Tree Hero",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1TH02_change-marks-on-branches"
-   ],
-   "priority": "P1",
-   "why": "Fitch maximum-parsimony phylogenetics; swap branches of a seven-species tree until it needs the fewest evolutionary changes; no timeline, undo is free.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1TH02_change-marks-on-branches"
-   ],
-   "created": 1792806505
   },
   {
    "id": "P1TH04_strings-and-tests",
@@ -2187,6 +2166,25 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [],
+   "priority": "P1",
+   "why": "Fitch maximum-parsimony phylogenetics; swap branches of a seven-species tree until it needs the fewest evolutionary changes; no timeline, undo is free.",
+   "state": "done",
+   "at": 1792806505,
+   "created": 1792806505
+  },
+  {
+   "id": "P1TH02_change-marks-on-branches",
+   "request": "Tree Hero: every DNA change drawn on the branch where it happens",
+   "game": "Tree Hero",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1TH01_swap-budget-real-choice"
+   ],
    "priority": "P1",
    "why": "Fitch maximum-parsimony phylogenetics; swap branches of a seven-species tree until it needs the fewest evolutionary changes; no timeline, undo is free.",
    "state": "done",
