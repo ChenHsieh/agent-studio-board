@@ -1,14 +1,15 @@
 {
- "generated": 1792832814,
+ "generated": 1792833120,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
-  "ready": 0,
+  "ready": 1,
   "waiting": 2,
-  "queued": 2,
+  "queued": 3,
   "running": 0,
   "done24h": 24,
   "modelsQueued": {
+   "openai/gpt-4.1": 1,
    "deepseek-v4-flash": 2
   },
   "spendTodayUsd": 0.0,
@@ -91,23 +92,6 @@
  },
  "tasks": [
   {
-   "id": "P1CB11_hyperreal-visual-round",
-   "request": "Chai Boil (#92, P1): a hyper-real look instead of the computer-drawn one, by a taste visual round.",
-   "game": "Chai Boil",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "An AI-made video post of a pot of milk tea foaming up on a wood fire, plus the Lunar Lander game.",
-   "state": "running",
-   "at": 1792810828,
-   "created": 1792810828
-  },
-  {
    "id": "P1GX02_visual-round-build",
    "request": "Grass Crossword: build the chosen look.",
    "game": "Grass Crossword",
@@ -125,6 +109,23 @@
    "state": "running",
    "at": 1792824395,
    "created": 1792824395
+  },
+  {
+   "id": "P2BN03_poem-core-research",
+   "request": "Blackout Notice (#130): a poet and a game designer find a core where the meaning of the words matters.",
+   "game": "Blackout Notice",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "A scruffy hand-lettered hiring post and a job ad written mostly as a list of what the company is not.",
+   "state": "running",
+   "at": 1792810461,
+   "created": 1792810461
   },
   {
    "id": "P1CF04_marks-and-life-bar-look",
@@ -306,6 +307,23 @@
    "created": 1792810482
   },
   {
+   "id": "P3OR76_chai-foam-slip-words",
+   "request": "Chai Boil: the four foam-state words for the new photo look",
+   "game": "Chai Boil",
+   "route": "OpenRouter",
+   "model": "openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "An AI-made video post of a pot of milk tea foaming up on a wood fire, plus the Lunar Lander game.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792833078
+  },
+  {
    "id": "P1CD02_night-desk-visual-build",
    "request": "Checking Desk: build the night-shift desk look (photo desk, squared-paper proofs, sharp at phone resolution)",
    "game": "Checking Desk",
@@ -379,23 +397,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792820937
-  },
-  {
-   "id": "P2BN03_poem-core-research",
-   "request": "Blackout Notice (#130): a poet and a game designer find a core where the meaning of the words matters.",
-   "game": "Blackout Notice",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "A scruffy hand-lettered hiring post and a job ad written mostly as a list of what the company is not.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792810461
   },
   {
    "id": "P2HK00_which-one-to-drop-clarity",
@@ -873,6 +874,27 @@
    "waitingOn": [],
    "created": 1792724493,
    "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P1CB12_photo-kitchens-visual-build",
+   "request": "Chai Boil: build the photographic kitchens (one real photo per kitchen, foam, gold ring and steam drawn on top)",
+   "game": "Chai Boil",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR76_chai-foam-slip-words"
+   ],
+   "priority": "P1",
+   "why": "An AI-made video post of a pot of milk tea foaming up on a wood fire, plus the Lunar Lander game.",
+   "state": "waiting",
+   "waitingOn": [
+    "P3OR76_chai-foam-slip-words"
+   ],
+   "created": 1792833082
   },
   {
    "id": "P1CF05_reset-tests-and-review",
@@ -1708,6 +1730,23 @@
    "state": "done",
    "at": 1792823937,
    "created": 1792823937
+  },
+  {
+   "id": "P1CB11_hyperreal-visual-round",
+   "request": "Chai Boil (#92, P1): a hyper-real look instead of the computer-drawn one, by a taste visual round.",
+   "game": "Chai Boil",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "An AI-made video post of a pot of milk tea foaming up on a wood fire, plus the Lunar Lander game.",
+   "state": "done",
+   "at": 1792810828,
+   "created": 1792810828
   },
   {
    "id": "P1CF00_core-and-story-reset",

@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T09:09:04+00:00",
+ "generated": "2026-10-24T09:11:29+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 76,
+    "queued": 78,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3040,
-    "estimateMinutes": 3040
+    "minutes": 3120,
+    "estimateMinutes": 3120
    },
    "Claude": {
     "queued": 1,
@@ -30,7 +30,7 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 77,
+  "queued": 79,
   "running": 2,
   "doneToday": 10,
   "lanes": {
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3220,
-  "estimatedFinish": "2026-10-26T11:49:04+00:00",
-  "estimateMinutes": 3040
+  "minutesRemaining": 3300,
+  "estimatedFinish": "2026-10-26T13:11:29+00:00",
+  "estimateMinutes": 3120
  },
  "lanes": [
   {
@@ -52,7 +52,7 @@
    "game": "chai-boil",
    "task": "P1CB11_hyperreal visual round",
    "since": "2026-10-24T09:02:23+00:00",
-   "activity": "2026-10-24T09:02:56+00:00",
+   "activity": "2026-10-24T09:10:53+00:00",
    "commit": null
   },
   {
@@ -1944,7 +1944,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Chai Boil: build the photographic kitchens (one real...",
    "costTotalUsd": 91.11,
    "latestChange": {
     "text": "P3OR28_chai-boil-link-preview: WORKDIR",
@@ -1981,7 +1981,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-24T09:02:56+00:00",
+   "lastChange": "2026-10-24T09:11:22+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 6,
@@ -2001,6 +2001,34 @@
      "worker": "Claude",
      "plan": "Chai Boil (#92, P1): a hyper-real look instead of the computer-drawn one, by a taste visual round.",
      "since": "2026-10-24T09:02:23+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1CB12_photo kitchens visual build",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Chai Boil: build the photographic kitchens (one real photo per kitchen, foam, gold ring and steam drawn on top)",
+     "since": "2026-10-24T09:11:22+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P3OR76_chai foam slip words",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Chai Boil: the four foam-state words for the new photo look",
+     "since": "2026-10-24T09:11:18+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2078,38 +2106,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1CB10 chai-kitchen-sets: DONE, live (main , https://chenhsieh.github.io/chai-boil/, live bytes match, zero console errors)."
-    },
-    {
-     "title": "P1CB07_chai boil visual spin",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Chai Boil: a visual revamp with new kitchen backdrops and cuter drawing, learning from Colony Count.",
-     "since": "2026-10-21T21:08:25+00:00",
-     "done": "2026-10-21T21:08:25+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "design: chai-boil visual spin: BUILD lit cut-paper diorama look, one light side per kitchen, three new kitchen sets (rooftop at dusk, rainy window, mountain hut) plus a redrawn night platform"
-    },
-    {
-     "title": "P1CB06_chai kitchen unlocks content",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Chai Boil: clay stove, copper pot on charcoal, induction hob and a night platform, each unlocked by brewing milestones.",
-     "since": "2026-10-21T11:29:47+00:00",
-     "done": "2026-10-21T11:29:47+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "feat: four more kitchens: clay stove, copper pot on charcoal, induction hob, night platform (main -> , rollback tag pre-kitchens-cb06)"
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 2,
     "running": 1,
     "waitingDesign": 0,
     "done": 16
