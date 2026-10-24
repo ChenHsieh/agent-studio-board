@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T08:34:30+00:00",
+ "generated": "2026-10-24T08:37:23+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 78,
+    "queued": 77,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3120,
-    "estimateMinutes": 3120
+    "minutes": 3080,
+    "estimateMinutes": 3080
    },
    "Claude": {
     "queued": 1,
@@ -30,7 +30,7 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 79,
+  "queued": 78,
   "running": 2,
   "doneToday": 8,
   "lanes": {
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3300,
-  "estimatedFinish": "2026-10-26T12:34:30+00:00",
-  "estimateMinutes": 3120
+  "minutesRemaining": 3260,
+  "estimatedFinish": "2026-10-26T11:57:23+00:00",
+  "estimateMinutes": 3080
  },
  "lanes": [
   {
@@ -52,15 +52,15 @@
    "game": "grass-crossword",
    "task": "P1GX00_newspaper share daily and placing",
    "since": "2026-10-24T08:22:29+00:00",
-   "activity": "2026-10-24T08:34:08+00:00",
+   "activity": "2026-10-24T08:34:45+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
    "game": "mushroom-gaps",
-   "task": "P1MG00_preview before commit and why it fails",
-   "since": "2026-10-24T08:09:07+00:00",
-   "activity": "2026-10-24T08:33:25+00:00",
+   "task": "P1MG01_journalist research and visual round design",
+   "since": "2026-10-24T08:35:09+00:00",
+   "activity": "2026-10-24T08:37:04+00:00",
    "commit": null
   }
  ],
@@ -8933,7 +8933,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:41:42+00:00",
-   "lastChange": "2026-10-24T08:34:08+00:00",
+   "lastChange": "2026-10-24T08:34:45+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
@@ -14957,7 +14957,7 @@
    ]
   },
   {
-   "nextTask": "Mushroom Gaps: find the original piece and the...",
+   "nextTask": null,
    "costTotalUsd": 29.19,
    "latestChange": {
     "text": "feat: show the first mushroom floor in link previews",
@@ -14979,7 +14979,7 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "preview before commit and why it fails",
+   "waitingOn": "journalist research and visual round design",
    "id": "mushroom-gaps",
    "number": 68,
    "repo": "mushroom-gaps",
@@ -15000,26 +15000,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T23:26:23+00:00",
-   "lastChange": "2026-10-24T08:33:25+00:00",
+   "lastChange": "2026-10-24T08:37:04+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 1,
     "codexTokens": 322256,
     "codexUsdEst": 0.39,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 8,
-    "earlierUsdEst": 28.8,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 7,
+    "earlierUsdEst": 25.2,
     "totalUsdEst": 29.19
    },
    "tasks": [
     {
-     "title": "P1MG00_preview before commit and why it fails",
+     "title": "P1MG01_journalist research and visual round design",
      "state": "running",
      "worker": "Claude",
-     "plan": "Mushroom Gaps (#68, P1): show what a move will do before committing, and why it sometimes does not work.",
-     "since": "2026-10-24T08:09:07+00:00",
+     "plan": "Mushroom Gaps: find the original piece and the right style, then three taste mocks.",
+     "since": "2026-10-24T08:35:09+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -15029,12 +15029,12 @@
      "result": ""
     },
     {
-     "title": "P1MG01_journalist research and visual round design",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Mushroom Gaps: find the original piece and the right style, then three taste mocks.",
-     "since": "2026-10-24T03:00:02+00:00",
-     "done": null,
+     "title": "P1MG00_preview before commit and why it fails",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Mushroom Gaps (#68, P1): show what a move will do before committing, and why it sometimes does not work.",
+     "since": "2026-10-24T02:59:58+00:00",
+     "done": "2026-10-24T02:59:58+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -15086,10 +15086,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": null,
    "needsYou": null,
@@ -22843,10 +22843,10 @@
   },
   {
    "nextTask": "Sockglass: a test that an old save survives...",
-   "costTotalUsd": 39.81,
+   "costTotalUsd": 43.41,
    "latestChange": {
-    "text": "studio standard done: own logo, og tags, share text; audit all ok",
-    "at": "2026-10-21T22:13:33+00:00"
+    "text": "feat: Sockglass story, tonight's window and its share text",
+    "at": "2026-10-24T08:06:22+00:00"
    },
    "promo": {
     "files": {
@@ -22895,9 +22895,9 @@
     "codexTokens": 170850,
     "codexUsdEst": 0.21,
     "claudeUsdEst": 10.8,
-    "earlierRounds": 8,
-    "earlierUsdEst": 28.8,
-    "totalUsdEst": 39.81
+    "earlierRounds": 9,
+    "earlierUsdEst": 32.4,
+    "totalUsdEst": 43.41
    },
    "tasks": [
     {
@@ -22986,6 +22986,12 @@
    "inProgress": true,
    "history": [
     {
+     "at": "2026-10-24T08:06:22+00:00",
+     "ok": true,
+     "note": "feat: Sockglass story, tonight's window and its share text",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-21T22:13:33+00:00",
      "ok": true,
      "note": "studio standard done: own logo, og tags, share text; audit all ok",
@@ -23049,12 +23055,6 @@
      "at": "2026-10-16T00:34:52+00:00",
      "ok": true,
      "note": "feat: drag tissue socks onto a night window and mix their colours to light every picture",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-15T23:27:18+00:00",
-     "ok": true,
-     "note": "Initial commit",
      "source": "main commit"
     }
    ]
