@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T09:31:21+00:00",
+ "generated": "2026-10-24T09:33:39+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 81,
+    "queued": 82,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3240,
-    "estimateMinutes": 3240
+    "minutes": 3280,
+    "estimateMinutes": 3280
    },
    "Claude": {
     "queued": 1,
@@ -30,7 +30,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 82,
+  "queued": 83,
   "running": 1,
   "doneToday": 13,
   "lanes": {
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3360,
-  "estimatedFinish": "2026-10-26T15:31:21+00:00",
-  "estimateMinutes": 3240
+  "minutesRemaining": 3400,
+  "estimatedFinish": "2026-10-26T16:13:39+00:00",
+  "estimateMinutes": 3280
  },
  "lanes": [
   {
@@ -9099,6 +9099,36 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-24T09:04:30+00:00",
+     "ok": true,
+     "note": "feat: tap shows a ghost and waits for Plant, Rotate, hint on levels 1 to 3; twitter tags; README",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-24T08:31:04+00:00",
+     "ok": true,
+     "note": "wip: tap shows the ghost and waits for Plant; Rotate; hint on levels 1 to 3",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-24T08:28:33+00:00",
+     "ok": true,
+     "note": "feat: the daily is a generated bed from a 120-bed pool, not a shipped level",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-24T08:27:05+00:00",
+     "ok": true,
+     "note": "feat: one Share button, 120-bed daily pool generator",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-24T08:22:42+00:00",
+     "ok": true,
+     "note": "start: P1GX00 share, daily, placing",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-24T06:46:13+00:00",
      "ok": true,
      "note": "design: Grass Crossword visual round: grass comes up through the newspaper; three papers, the small-town weekly picked, build spec",
@@ -9132,36 +9162,6 @@
      "at": "2026-10-21T18:25:58+00:00",
      "ok": true,
      "note": "feat: Grass Crossword shares its own preview and plants by two taps",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T18:24:55+00:00",
-     "ok": true,
-     "note": "feat: Grass Crossword shares its own preview and plants by two taps",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T17:52:41+00:00",
-     "ok": false,
-     "note": "see",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-20T23:11:59+00:00",
-     "ok": true,
-     "note": "legend: 12 marks, field guide, level 14 example; live",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-20T23:10:41+00:00",
-     "ok": true,
-     "note": "feat: each grass has its own mark, a field guide and a first-use example",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T22:56:19+00:00",
-     "ok": true,
-     "note": "drag preview = drop, beds 14-25 real crosswords, local daily, own logo; live; harness greedy gate advisory",
      "source": "board note"
     }
    ]
@@ -13187,13 +13187,13 @@
    "cost": {
     "apiUsd": 11.15,
     "codexRuns": 2,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 1,
     "codexTokens": 335257,
     "codexUsdEst": 0.4,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 7,
-    "earlierUsdEst": 25.2,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 6,
+    "earlierUsdEst": 21.6,
     "totalUsdEst": 36.75
    },
    "tasks": [
@@ -13255,11 +13255,11 @@
     },
     {
      "title": "P1MC00_3d physics chair design and spike",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "Makeshift Chair (#35, P1): a 3D physics game in the spirit of Human Fall Flat where sitting down goes ridiculously wrong; design and a working spike.",
      "since": "2026-10-24T09:23:22+00:00",
-     "done": null,
+     "done": "2026-10-24T09:23:22+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -13311,10 +13311,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 5,
+    "queued": 4,
     "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": null,
    "needsYou": null,
@@ -18075,7 +18075,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 5
+    "daysInState": 6
    },
    "waitingOn": "none",
    "id": "rain-signal",
@@ -26705,7 +26705,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 5
+    "daysInState": 6
    },
    "waitingOn": "none",
    "id": "tomorrow-bag",
