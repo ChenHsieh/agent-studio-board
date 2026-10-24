@@ -1,5 +1,5 @@
 {
- "generated": 1792838692,
+ "generated": 1792838837,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -7,15 +7,21 @@
   "waiting": 2,
   "queued": 2,
   "running": 0,
-  "done24h": 26,
+  "done24h": 27,
   "modelsQueued": {
    "deepseek-v4-flash": 2
   },
   "spendTodayUsd": 0.0,
-  "runsToday": 12,
-  "runsTodayUnpriced": 12,
+  "runsToday": 13,
+  "runsTodayUnpriced": 13,
   "spendTotalUsd": 6.36,
   "recent": [
+   {
+    "id": "P3OR79_marble-mechanism-strings",
+    "request": "Marble Machine: rule lines for eleven new pieces, English and Chinese",
+    "model": "openai/gpt-4.1",
+    "at": 1792838717
+   },
    {
     "id": "P3OR78_remote-viewer-credits-corrected",
     "request": "Remote Viewer credits page, corrected: font project names and the true scan link",
@@ -69,12 +75,6 @@
     "request": "The Apprentice: load the new woodcut tool and figure drawings into the game as one data file, with a test",
     "model": "openai/gpt-4.1",
     "at": 1792823912
-   },
-   {
-    "id": "P3OR69_scribes-blotter-credits-page",
-    "request": "The Scribe's Blotter: a credits page with licences",
-    "model": "deepseek-v4-flash",
-    "at": 1792820330
    }
   ],
   "label": "estimate"
@@ -106,25 +106,6 @@
    "state": "running",
    "at": 1792837372,
    "created": 1792837372
-  },
-  {
-   "id": "P1MM01_depth-brainstorm-3d-platforms-and-mechanisms",
-   "request": "Marble Machine: a puzzle designer and a game designer brainstorm more depth, gradually introduced mechanisms, and 3D platforms; then a build plan.",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1MM00_smooth-puzzle-latency"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792811310,
-   "created": 1792811310
   },
   {
    "id": "P1CB12_photo-kitchens-visual-build",
@@ -642,6 +623,25 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792790568
+  },
+  {
+   "id": "P1MM02_marble-slab-look",
+   "request": "Marble Machine: platforms become deep lit slabs under a three-quarter camera",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1MM01_depth-brainstorm-3d-platforms-and-mechanisms"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792838713
   },
   {
    "id": "P1TE02_room-warm-cold-rule",
@@ -1197,6 +1197,90 @@
    ],
    "created": 1792715918,
    "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P1MM03_marble-mechanisms-act-two",
+   "request": "Marble Machine: spring pads, bells, doors and funnels with levels where parts interact",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1MM02_marble-slab-look"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P1MM02_marble-slab-look"
+   ],
+   "created": 1792838738
+  },
+  {
+   "id": "P1MM04_marble-act-two-look-and-lessons",
+   "request": "Marble Machine: the new pieces drawn as solid objects, one short lesson each",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1MM03_marble-mechanisms-act-two"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P1MM03_marble-mechanisms-act-two"
+   ],
+   "created": 1792838725
+  },
+  {
+   "id": "P1MM05_marble-mechanisms-act-three",
+   "request": "Marble Machine: second marble, seesaw, belt, cup, wheel, flap and dominoes",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1MM04_marble-act-two-look-and-lessons"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P1MM04_marble-act-two-look-and-lessons"
+   ],
+   "created": 1792838729
+  },
+  {
+   "id": "P1MM06_marble-act-three-look-daily-share",
+   "request": "Marble Machine: act-three look and lessons, a daily machine and its share line",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1MM05_marble-mechanisms-act-three"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P1MM05_marble-mechanisms-act-three"
+   ],
+   "created": 1792838733
   },
   {
    "id": "P1TE03_room-strings",
@@ -2928,6 +3012,25 @@
    "created": 1792811306
   },
   {
+   "id": "P1MM01_depth-brainstorm-3d-platforms-and-mechanisms",
+   "request": "Marble Machine: a puzzle designer and a game designer brainstorm more depth, gradually introduced mechanisms, and 3D platforms; then a build plan.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1MM00_smooth-puzzle-latency"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792811310,
+   "created": 1792811310
+  },
+  {
    "id": "P1UX00_board-checklist-data",
    "request": "Board: a per-game checklist (story, first minute, accessibility, credits, saves, preview) with yes, no or not checked",
    "game": "Studio",
@@ -3285,6 +3388,23 @@
    "state": "done",
    "at": 1792820330,
    "created": 1792820330
+  },
+  {
+   "id": "P3OR79_marble-mechanism-strings",
+   "request": "Marble Machine: rule lines for eleven new pieces, English and Chinese",
+   "game": "Studio",
+   "route": "OpenRouter",
+   "model": "openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792838717,
+   "created": 1792838717
   }
  ]
 }
