@@ -1,5 +1,5 @@
 {
- "generated": 1792847091,
+ "generated": 1792847229,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -83,7 +83,7 @@
   "codexOut": false,
   "converted": 0,
   "convertedRunning": 0,
-  "claudeWorkers": 0,
+  "claudeWorkers": 1,
   "claudeWorkerCap": 3,
   "handedBack": 0,
   "lastHandBack": null,
@@ -108,63 +108,6 @@
    "state": "running",
    "at": 1792833082,
    "created": 1792833082
-  },
-  {
-   "id": "P2PD02_peony-dream-small-phone-fit",
-   "request": "Peony Dream: fit board, sleeper and ink stone on a small phone; result card text clear",
-   "game": "Peony Dream",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "medium",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2RV18_review-sockglass-and-peony-dream"
-   ],
-   "priority": "P1",
-   "why": "The classical play The Peony Pavilion (1598) and a saved essay note on love found in a dream.",
-   "state": "running",
-   "at": 1792837763,
-   "created": 1792837763
-  },
-  {
-   "id": "P2SG00_sockglass-levels-need-a-choice",
-   "request": "Sockglass: rework levels where the obvious placement already wins",
-   "game": "Sockglass",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2RV18_review-sockglass-and-peony-dream"
-   ],
-   "priority": "P1",
-   "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
-   "state": "running",
-   "at": 1792837763,
-   "created": 1792837763
-  },
-  {
-   "id": "P1MM02_marble-slab-look",
-   "request": "Marble Machine: platforms become deep lit slabs under a three-quarter camera",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1MM01_depth-brainstorm-3d-platforms-and-mechanisms"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792838713,
-   "created": 1792838713
   },
   {
    "id": "P1CC36_rule-out-in-every-mode",
@@ -681,6 +624,25 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792790568
+  },
+  {
+   "id": "P1MM03_marble-mechanisms-act-two",
+   "request": "Marble Machine: spring pads, bells, doors and funnels with levels where parts interact",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1MM02_marble-slab-look"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792838738
   },
   {
    "id": "P1PL00_remove-play-lab-mentions-and-links",
@@ -1229,27 +1191,6 @@
    ],
    "created": 1792715918,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P1MM03_marble-mechanisms-act-two",
-   "request": "Marble Machine: spring pads, bells, doors and funnels with levels where parts interact",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1MM02_marble-slab-look"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P1MM02_marble-slab-look"
-   ],
-   "created": 1792838738
   },
   {
    "id": "P1MM04_marble-act-two-look-and-lessons",
@@ -2396,6 +2337,44 @@
    "created": 1792806505
   },
   {
+   "id": "P2PD02_peony-dream-small-phone-fit",
+   "request": "Peony Dream: fit board, sleeper and ink stone on a small phone; result card text clear",
+   "game": "Peony Dream",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2RV18_review-sockglass-and-peony-dream"
+   ],
+   "priority": "P1",
+   "why": "The classical play The Peony Pavilion (1598) and a saved essay note on love found in a dream.",
+   "state": "done",
+   "at": 1792837763,
+   "created": 1792837763
+  },
+  {
+   "id": "P2SG00_sockglass-levels-need-a-choice",
+   "request": "Sockglass: rework levels where the obvious placement already wins",
+   "game": "Sockglass",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2RV18_review-sockglass-and-peony-dream"
+   ],
+   "priority": "P1",
+   "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
+   "state": "done",
+   "at": 1792837763,
+   "created": 1792837763
+  },
+  {
    "id": "P3OR68_remote-viewer-credits-page",
    "request": "Remote Viewer: a credits page that names its fonts, the declassified pages and their licences",
    "game": "Remote Viewer",
@@ -2878,6 +2857,25 @@
    "state": "done",
    "at": 1792811310,
    "created": 1792811310
+  },
+  {
+   "id": "P1MM02_marble-slab-look",
+   "request": "Marble Machine: platforms become deep lit slabs under a three-quarter camera",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1MM01_depth-brainstorm-3d-platforms-and-mechanisms"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792838713,
+   "created": 1792838713
   },
   {
    "id": "P1UX00_board-checklist-data",

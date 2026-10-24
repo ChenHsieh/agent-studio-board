@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T13:04:31+00:00",
+ "generated": "2026-10-24T13:06:57+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -24,15 +24,15 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 4,
-    "doneToday": 26,
-    "minutes": 300,
-    "estimateMinutes": 150
+    "running": 1,
+    "doneToday": 29,
+    "minutes": 120,
+    "estimateMinutes": 60
    }
   },
   "queued": 90,
-  "running": 4,
-  "doneToday": 26,
+  "running": 1,
+  "doneToday": 29,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,8 +42,8 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3860,
-  "estimatedFinish": "2026-10-27T00:24:31+00:00",
+  "minutesRemaining": 3680,
+  "estimatedFinish": "2026-10-27T00:26:57+00:00",
   "estimateMinutes": 3560
  },
  "lanes": [
@@ -54,34 +54,10 @@
    "since": "2026-10-24T13:04:24+00:00",
    "activity": "2026-10-24T13:04:31+00:00",
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P1MM02_marble slab look",
-   "since": null,
-   "activity": null,
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "peony-dream",
-   "task": "P2PD02_peony dream small phone fit",
-   "since": "2026-10-24T12:46:17+00:00",
-   "activity": "2026-10-24T12:57:09+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "sockglass",
-   "task": "P2SG00_sockglass levels need a choice",
-   "since": "2026-10-24T11:37:16+00:00",
-   "activity": "2026-10-24T12:45:59+00:00",
-   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 4,
+ "claudeWorkers": 1,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
   "runs": 270,
@@ -17115,21 +17091,21 @@
    "why": "The classical play The Peony Pavilion (1598) and a saved essay note on love found in a dream.",
    "state": "ship",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "peony dream small phone fit",
+   "waitingOn": "owner",
    "id": "peony-dream",
    "number": 99,
    "repo": "peony-dream",
    "title": "Peony Dream",
    "line": "Paint half a face on a sheet of silk, close the silk on.",
    "url": "https://chenhsieh.github.io/peony-dream/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Eastern ink visual direction instead of raster",
    "shelfNote": "",
@@ -17147,29 +17123,29 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 0,
     "codexTokens": 489236,
     "codexUsdEst": 0.59,
-    "claudeUsdEst": 10.8,
-    "earlierRounds": 12,
-    "earlierUsdEst": 43.2,
+    "claudeUsdEst": 14.4,
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
     "totalUsdEst": 54.59
    },
    "tasks": [
     {
      "title": "P2PD02_peony dream small phone fit",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Peony Dream: fit board, sleeper and ink stone on a small phone; result card text clear",
-     "since": "2026-10-24T12:46:17+00:00",
-     "done": null,
+     "since": "2026-10-24T10:29:23+00:00",
+     "done": "2026-10-24T10:29:23+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P2PD02 Peony Dream (#99): small-phone fit. DONE (planner, Opus), live main , https://chenhsieh.github.io/peony-dream/ (shell.js, look.css live bytes match)."
     },
     {
      "title": "P1PD01_lag stuck drag and dream link",
@@ -17258,9 +17234,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": {
     "date": "2026-10-24",
@@ -17268,7 +17244,7 @@
     "note": "Choosing what the mirror may copy is a real decision (the obvious paint-and-fold never reaches par from level 4 on); next is fitting a small phone"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-24T12:57:09+00:00",
@@ -23137,23 +23113,23 @@
     "caption": "Drag tissue-paper socks onto a dark bedroom window; where."
    },
    "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 2,
     "daysInState": 0
    },
-   "waitingOn": "sockglass levels need a choice",
+   "waitingOn": "none",
    "id": "sockglass",
    "number": 73,
    "repo": "sockglass",
    "title": "Sockglass",
    "line": "Drag tissue-paper socks onto a dark bedroom window; where.",
    "url": "https://chenhsieh.github.io/sockglass/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Make sock sizes and counts readable and let the theme",
    "shelfNote": "",
@@ -23171,29 +23147,29 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 0,
     "codexTokens": 170850,
     "codexUsdEst": 0.21,
-    "claudeUsdEst": 14.4,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
+    "claudeUsdEst": 18.0,
+    "earlierRounds": 9,
+    "earlierUsdEst": 32.4,
     "totalUsdEst": 50.61
    },
    "tasks": [
     {
      "title": "P2SG00_sockglass levels need a choice",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Sockglass: rework levels where the obvious placement already wins",
-     "since": "2026-10-24T11:37:16+00:00",
-     "done": null,
+     "since": "2026-10-24T10:29:23+00:00",
+     "done": "2026-10-24T10:29:23+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P2SG00 Sockglass (#73): levels 4-6 and the generated windows need a real choice; small-phone fit. DONE (planner, Opus), live main , https://chenhsieh.github.io/sockglass/ (rules.js, style.css, playlab-ui.js live bytes..."
     },
     {
      "title": "P3OR74_sockglass save migration test",
@@ -23268,9 +23244,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": {
     "date": "2026-10-24",
@@ -23278,7 +23254,7 @@
     "note": "The window and the colour mixing read well, but hanging each sock over its own picture already wins levels 4 to 6, so those levels need a real choice"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-24T12:45:59+00:00",
