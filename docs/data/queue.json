@@ -1,5 +1,5 @@
 {
- "generated": 1792804816,
+ "generated": 1792805012,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -83,13 +83,30 @@
   "codexOut": false,
   "converted": 0,
   "convertedRunning": 0,
-  "claudeWorkers": 0,
+  "claudeWorkers": 1,
   "claudeWorkerCap": 3,
   "handedBack": 0,
   "lastHandBack": null,
   "lastHandBackN": null
  },
  "tasks": [
+  {
+   "id": "P1CF00_core-and-story-reset",
+   "request": "Clean Features: back to the core stage: why the player cares, what makes a neuron fire, and rules shown before the first move.",
+   "game": "What the Dish Sees",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "An essay arguing neural network features are already clean, and a petri-dish video of something first taken for ordinary bacteria.",
+   "state": "running",
+   "at": 1792801454,
+   "created": 1792801454
+  },
   {
    "id": "P1RN44_visual-round-build",
    "request": "Readable Nonsense: build the chosen look, the books stack included.",
@@ -110,26 +127,9 @@
    "created": 1792801302
   },
   {
-   "id": "P1CK01_core-design-pass-depth",
-   "request": "Clay Clock: a game-design pass to find the real decision, measured before any build, because tapping the soonest-drying slot is not a game.",
-   "game": "Clay Clock",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "design",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "An Instagram reel of someone pressing cuneiform wedges into a small clay tablet.",
-   "state": "running",
-   "at": 1792799519,
-   "created": 1792799519
-  },
-  {
-   "id": "P1CF00_core-and-story-reset",
-   "request": "Clean Features: back to the core stage: why the player cares, what makes a neuron fire, and rules shown before the first move.",
-   "game": "What the Dish Sees",
+   "id": "P1UL01_ping-clear-daily-and-glitch",
+   "request": "Uneven Loop: make the ping matter and clear, fix the level-6 glitch, and decide on a daily.",
+   "game": "Uneven Loop",
    "route": "Claude",
    "model": "opus",
    "effort": "high",
@@ -137,11 +137,69 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [],
-   "priority": "P1",
-   "why": "An essay arguing neural network features are already clean, and a petri-dish video of something first taken for ordinary bacteria.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792801454
+   "priority": "P2",
+   "why": "A tiled animation built by repeating one small module; offset a repeated tile frame by frame to build a looping animation that catches a moving pin.",
+   "state": "running",
+   "at": 1792802208,
+   "created": 1792802208
+  },
+  {
+   "id": "P2AX10_audit-report-one-line-per-problem",
+   "request": "Accessibility check: one line per problem across screens, worst first, so a builder sees what to fix",
+   "game": "Studio",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1AX09_controls-stay-put-after-a-tap"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1792804929,
+   "created": 1792804929,
+   "estPercentOfWeek": 10.89
+  },
+  {
+   "id": "P2RV11_review-honest-sign-the-draw",
+   "request": "Opus stranger review of round 5 builds honest-sign and the-draw",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2RV05_honest-sign"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1792799686,
+   "created": 1792799686
+  },
+  {
+   "id": "P2RV13_review-the-apprentice-mint",
+   "request": "Opus stranger review of round 5 builds the-apprentice and mint",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2RV09_the-apprentice"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1792799693,
+   "created": 1792799693
   },
   {
    "id": "P1FG00_forager-birds-and-play-pause",
@@ -282,21 +340,23 @@
    "created": 1792793416
   },
   {
-   "id": "P1UL01_ping-clear-daily-and-glitch",
-   "request": "Uneven Loop: make the ping matter and clear, fix the level-6 glitch, and decide on a daily.",
-   "game": "Uneven Loop",
+   "id": "P1CK02_one-record-rules-and-bots",
+   "request": "Clay Clock: a record's wedges must touch (rules and bots)",
+   "game": "Clay Clock",
    "route": "Claude",
-   "model": "opus",
+   "model": "sonnet",
    "effort": "high",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P1CK01_core-design-pass-depth"
+   ],
    "priority": "P2",
-   "why": "A tiled animation built by repeating one small module; offset a repeated tile frame by frame to build a looping animation that catches a moving pin.",
+   "why": "An Instagram reel of someone pressing cuneiform wedges into a small clay tablet.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792802208
+   "created": 1792804913
   },
   {
    "id": "P2FM58_tractatus-tree-first-minute-fix",
@@ -314,7 +374,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713005,
-   "estPercentOfWeek": 72.3
+   "estPercentOfWeek": 10.89
   },
   {
    "id": "P2NC00_name-to-carry-data-inline",
@@ -334,7 +394,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792791317,
-   "estPercentOfWeek": 72.3
+   "estPercentOfWeek": 10.89
   },
   {
    "id": "P2PS00_pigeon-salon-readable-board",
@@ -354,7 +414,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713005,
-   "estPercentOfWeek": 72.3
+   "estPercentOfWeek": 10.89
   },
   {
    "id": "P2RO00_radish-omelette-colours-and-beats",
@@ -374,7 +434,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713431,
-   "estPercentOfWeek": 72.3
+   "estPercentOfWeek": 10.89
   },
   {
    "id": "P2RS00_restored-blurry-neighbours-count",
@@ -394,7 +454,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792715918,
-   "estPercentOfWeek": 72.3
+   "estPercentOfWeek": 10.89
   },
   {
    "id": "P3NY00_not-yet-a-real-choice",
@@ -414,7 +474,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713432,
-   "estPercentOfWeek": 72.3
+   "estPercentOfWeek": 10.89
   },
   {
    "id": "P3OR45_herbal-pages-stay-open-logic",
@@ -432,7 +492,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792724295,
-   "estPercentOfWeek": 72.3
+   "estPercentOfWeek": 10.89
   },
   {
    "id": "P2GG00_gallery-guess-save-migration-test",
@@ -467,7 +527,24 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792701959,
-   "estPercentOfWeek": 72.3
+   "estPercentOfWeek": 10.89
+  },
+  {
+   "id": "P1AP00_story-and-plain-names",
+   "request": "The Apprentice: tell the story on screen and give the wheel, the tools and the examiners plain names and pictures.",
+   "game": "The Apprentice",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792804827
   },
   {
    "id": "P1BD04_released-games-leave-ready-to-try",
@@ -572,26 +649,6 @@
    "created": 1792794950
   },
   {
-   "id": "P2AX10_audit-report-one-line-per-problem",
-   "request": "Accessibility check: one line per problem across screens, worst first, so a builder sees what to fix",
-   "game": "Studio",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1AX09_controls-stay-put-after-a-tap"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792790094,
-   "estPercentOfWeek": 72.3
-  },
-  {
    "id": "P2NM01_ship-name-fixes",
    "request": "Name audit: merge and publish the display-name fixes",
    "game": "Studio",
@@ -630,25 +687,6 @@
    "created": 1792790639
   },
   {
-   "id": "P2RV11_review-honest-sign-the-draw",
-   "request": "Opus stranger review of round 5 builds honest-sign and the-draw",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2RV05_honest-sign"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792799686
-  },
-  {
    "id": "P2RV12_review-rumour-on-the-jetty-scribes-blotter",
    "request": "Opus stranger review of round 5 builds rumour-on-the-jetty and scribes-blotter",
    "game": "Studio",
@@ -666,25 +704,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792799690
-  },
-  {
-   "id": "P2RV13_review-the-apprentice-mint",
-   "request": "Opus stranger review of round 5 builds the-apprentice and mint",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2RV09_the-apprentice"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792799693
   },
   {
    "id": "P2n86_round4-template-repos",
@@ -719,7 +738,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792724493,
-   "estPercentOfWeek": 72.3
+   "estPercentOfWeek": 10.89
   },
   {
    "id": "P1FG01_rename-repo-and-game-to-forager",
@@ -743,6 +762,90 @@
    "created": 1792802208
   },
   {
+   "id": "P1CK03_one-record-levels-and-gate",
+   "request": "Clay Clock: tablets 1-9 re-cut for one record, gate and daily table re-measured",
+   "game": "Clay Clock",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1CK02_one-record-rules-and-bots"
+   ],
+   "priority": "P2",
+   "why": "An Instagram reel of someone pressing cuneiform wedges into a small clay tablet.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1CK02_one-record-rules-and-bots"
+   ],
+   "created": 1792804913
+  },
+  {
+   "id": "P1CK04_one-record-ui-first-minute",
+   "request": "Clay Clock: joins drawn between touching wedges, broken record shown, first minute, marks against par",
+   "game": "Clay Clock",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "first-minute",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1CK03_one-record-levels-and-gate"
+   ],
+   "priority": "P2",
+   "why": "An Instagram reel of someone pressing cuneiform wedges into a small clay tablet.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1CK03_one-record-levels-and-gate"
+   ],
+   "created": 1792804913
+  },
+  {
+   "id": "P1CK05_one-record-strings",
+   "request": "Clay Clock: en and zh-Hant lines for one record",
+   "game": "Clay Clock",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "low",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1CK04_one-record-ui-first-minute"
+   ],
+   "priority": "P2",
+   "why": "An Instagram reel of someone pressing cuneiform wedges into a small clay tablet.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1CK04_one-record-ui-first-minute"
+   ],
+   "created": 1792804936
+  },
+  {
+   "id": "P1CK06_one-record-tests-and-publish",
+   "request": "Clay Clock: one-record tests, then the single publish",
+   "game": "Clay Clock",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1CK05_one-record-strings"
+   ],
+   "priority": "P2",
+   "why": "An Instagram reel of someone pressing cuneiform wedges into a small clay tablet.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1CK05_one-record-strings"
+   ],
+   "created": 1792804913
+  },
+  {
    "id": "P2HN00_herbal-pages-stay-open",
    "request": "Herbal of Nowhere: opened pages stay open (Undo no longer refunds ink), glyphs no longer sit under the parts, counters agree",
    "game": "Herbal of Nowhere",
@@ -762,7 +865,7 @@
     "P3OR45_herbal-pages-stay-open-logic"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 72.3
+   "estPercentOfWeek": 10.89
   },
   {
    "id": "P1TE03_room-strings",
@@ -847,7 +950,7 @@
     "P3OR44_kit-win-hold-and-higher-is-better"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 72.3
+   "estPercentOfWeek": 10.89
   },
   {
    "id": "P2TE06_look-refine",
@@ -936,7 +1039,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 72.3
+   "estPercentOfWeek": 10.89
   },
   {
    "id": "P2n88_watched-pot",
@@ -958,7 +1061,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 72.3
+   "estPercentOfWeek": 10.89
   },
   {
    "id": "P2n89_round-table",
@@ -980,7 +1083,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 72.3
+   "estPercentOfWeek": 10.89
   },
   {
    "id": "P2n90_iron-window-garden",
@@ -1002,7 +1105,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 72.3
+   "estPercentOfWeek": 10.89
   },
   {
    "id": "P2n91_still-a-heap",
@@ -1024,7 +1127,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 72.3
+   "estPercentOfWeek": 10.89
   },
   {
    "id": "P2n92_out-of-the-corner",
@@ -1046,7 +1149,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 72.3
+   "estPercentOfWeek": 10.89
   },
   {
    "id": "P2n93_one-umbrella",
@@ -1068,7 +1171,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 72.3
+   "estPercentOfWeek": 10.89
   },
   {
    "id": "P2n94_rolling-back",
@@ -1090,7 +1193,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 72.3
+   "estPercentOfWeek": 10.89
   },
   {
    "id": "P2n95_gold-star",
@@ -1112,7 +1215,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 72.3
+   "estPercentOfWeek": 10.89
   },
   {
    "id": "P2n96_ac-remote",
@@ -1134,7 +1237,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 72.3
+   "estPercentOfWeek": 10.89
   },
   {
    "id": "P2n97_review-coin-dumplings-and-watched-pot",
@@ -1472,6 +1575,23 @@
    "model": "sonnet",
    "effort": "high",
    "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "An Instagram reel of someone pressing cuneiform wedges into a small clay tablet.",
+   "state": "done",
+   "at": 1792799519,
+   "created": 1792799519
+  },
+  {
+   "id": "P1CK01_core-design-pass-depth",
+   "request": "Clay Clock: a game-design pass to find the real decision, measured before any build, because tapping the soonest-drying slot is not a game.",
+   "game": "Clay Clock",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "design",
    "size": "one repo",
    "estMinutes": null,
    "after": [],
@@ -2020,7 +2140,7 @@
    "state": "done",
    "at": 1792790510,
    "created": 1792790510,
-   "estPercentOfWeek": 72.3
+   "estPercentOfWeek": 10.89
   },
   {
    "id": "P2RV05_honest-sign",
@@ -2157,7 +2277,7 @@
    "state": "done",
    "at": 1792798110,
    "created": 1792798110,
-   "estPercentOfWeek": 72.3
+   "estPercentOfWeek": 10.89
   }
  ]
 }
