@@ -1,5 +1,5 @@
 {
- "generated": 1792822361,
+ "generated": 1792822962,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -80,16 +80,35 @@
   "label": "estimate"
  },
  "overflow": {
-  "codexOut": true,
+  "codexOut": false,
   "converted": 0,
   "convertedRunning": 0,
-  "claudeWorkers": 0,
+  "claudeWorkers": 1,
   "claudeWorkerCap": 3,
   "handedBack": 0,
   "lastHandBack": null,
   "lastHandBackN": null
  },
  "tasks": [
+  {
+   "id": "P1AP02_visual-round-design",
+   "request": "The Apprentice: three mock looks that carry the story's mood, then a build spec.",
+   "game": "The Apprentice",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1AP01_story-bible-and-endings"
+   ],
+   "priority": "P1",
+   "why": "",
+   "state": "running",
+   "at": 1792808770,
+   "created": 1792808770
+  },
   {
    "id": "P1NL02_visual-round-build",
    "request": "Nobody Looking: build the chosen look and the slide animations.",
@@ -108,25 +127,6 @@
    "state": "running",
    "at": 1792808745,
    "created": 1792808745
-  },
-  {
-   "id": "P1AP02_visual-round-design",
-   "request": "The Apprentice: three mock looks that carry the story's mood, then a build spec.",
-   "game": "The Apprentice",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1AP01_story-bible-and-endings"
-   ],
-   "priority": "P1",
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792808770
   },
   {
    "id": "P1CB11_hyperreal-visual-round",
