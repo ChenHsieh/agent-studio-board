@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T00:39:18+00:00",
+ "generated": "2026-10-24T00:41:56+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 59,
+    "queued": 57,
     "running": 0,
     "doneToday": 5,
-    "minutes": 2360,
-    "estimateMinutes": 2360
+    "minutes": 2280,
+    "estimateMinutes": 2280
    },
    "Claude": {
     "queued": 1,
     "running": 4,
-    "doneToday": 68,
+    "doneToday": 70,
     "minutes": 300,
     "estimateMinutes": 75
    }
   },
-  "queued": 60,
+  "queued": 58,
   "running": 4,
-  "doneToday": 73,
+  "doneToday": 75,
   "lanes": {
    "Codex": 1,
    "Claude": 4
@@ -46,25 +46,25 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2660,
-  "estimatedFinish": "2026-10-25T15:59:18+00:00",
-  "estimateMinutes": 2360
+  "minutesRemaining": 2580,
+  "estimatedFinish": "2026-10-25T14:41:56+00:00",
+  "estimateMinutes": 2280
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "clay-clock",
-   "task": "P1CK00_daily order is a new tablet each day",
-   "since": "2026-10-24T00:23:18+00:00",
-   "activity": "2026-10-24T00:38:21+00:00",
+   "task": "P1CK01_core design pass depth",
+   "since": "2026-10-24T00:39:49+00:00",
+   "activity": "2026-10-24T00:39:57+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
    "game": "cymatic-plate",
-   "task": "P1CY00_endless always solvable and overload bar",
-   "since": "2026-10-24T00:23:16+00:00",
-   "activity": "2026-10-24T00:38:21+00:00",
+   "task": "P1CY01_smooth moves and ui",
+   "since": "2026-10-24T00:39:40+00:00",
+   "activity": "2026-10-24T00:39:57+00:00",
    "commit": null
   },
   {
@@ -88,8 +88,8 @@
  "claudeWorkers": 4,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 214,
-  "usdEst": 770.4,
+  "runs": 216,
+  "usdEst": 777.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -135,7 +135,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 46
+   "changes": 48
   }
  ],
  "houseRules": 25,
@@ -2164,11 +2164,11 @@
    ]
   },
   {
-   "nextTask": "Clay Clock: a game-design pass to find the...",
-   "costTotalUsd": 22.02,
+   "nextTask": null,
+   "costTotalUsd": 29.22,
    "latestChange": {
-    "text": "feat: show Clay Clock’s first tablet in link previews",
-    "at": "2026-10-21T16:47:49+00:00"
+    "text": "daily order is a new generated bot-proof tablet each date; result card names the date;...",
+    "at": "2026-10-24T00:39:47+00:00"
    },
    "promo": {
     "files": {
@@ -2194,26 +2194,26 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-15T04:15:52+00:00",
-   "lastChange": "2026-10-24T00:38:21+00:00",
+   "lastChange": "2026-10-24T00:39:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 1,
     "codexTokens": 348238,
     "codexUsdEst": 0.42,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 6,
-    "earlierUsdEst": 21.6,
-    "totalUsdEst": 22.02
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 7,
+    "earlierUsdEst": 25.2,
+    "totalUsdEst": 29.22
    },
    "tasks": [
     {
-     "title": "P1CK00_daily order is a new tablet each day",
+     "title": "P1CK01_core design pass depth",
      "state": "running",
      "worker": "Claude",
-     "plan": "Clay Clock: the daily order is a new tablet each day, not the same first tablet.",
-     "since": "2026-10-24T00:23:18+00:00",
+     "plan": "Clay Clock: a game-design pass to find the real decision, measured before any build, because tapping the soonest-drying slot is not a game.",
+     "since": "2026-10-24T00:39:49+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2223,18 +2223,18 @@
      "result": ""
     },
     {
-     "title": "P1CK01_core design pass depth",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Clay Clock: a game-design pass to find the real decision, measured before any build, because tapping the soonest-drying slot is not a game.",
+     "title": "P1CK00_daily order is a new tablet each day",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Clay Clock: the daily order is a new tablet each day, not the same first tablet.",
      "since": "2026-10-23T23:51:59+00:00",
-     "done": null,
+     "done": "2026-10-23T23:51:59+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "The daily order now opens a new generated two-row tablet for each date (same for everyone, turns over at local midnight; Monday plays like tablet 10, the weekend like 12; kept only when the greedy and two-ahead bots..."
     },
     {
      "title": "P1SD14_studio standard clay clock",
@@ -2280,15 +2280,27 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": null,
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T00:39:47+00:00",
+     "ok": true,
+     "note": "daily order is a new generated bot-proof tablet each date; result card names the date; one send per day",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-24T00:38:21+00:00",
+     "ok": true,
+     "note": "fix: the daily order is a new tablet every day",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-21T16:47:49+00:00",
      "ok": true,
@@ -3480,11 +3492,11 @@
    ]
   },
   {
-   "nextTask": "Cymatic Plate: drops glide from A to B...",
-   "costTotalUsd": 76.24,
+   "nextTask": null,
+   "costTotalUsd": 79.84,
    "latestChange": {
-    "text": "feat: endless never strands a drop, plus a dye bar under the plate",
-    "at": "2026-10-24T00:38:21+00:00"
+    "text": "endless never strands a drop (solver: 80% states had a stuck drop before, 0 after) plus...",
+    "at": "2026-10-24T00:39:35+00:00"
    },
    "promo": {
     "files": {
@@ -3510,26 +3522,26 @@
    "releasedOn": "2026-10-23",
    "releasedNote": "public-ready, still being refined",
    "firstSeen": "2026-10-16T01:40:04+00:00",
-   "lastChange": "2026-10-24T00:38:21+00:00",
+   "lastChange": "2026-10-24T00:39:57+00:00",
    "cost": {
     "apiUsd": 3.26,
     "codexRuns": 5,
-    "claudeRuns": 6,
+    "claudeRuns": 7,
     "apiRuns": 2,
     "codexTokens": 816933,
     "codexUsdEst": 0.98,
-    "claudeUsdEst": 21.6,
+    "claudeUsdEst": 25.2,
     "earlierRounds": 14,
     "earlierUsdEst": 50.4,
-    "totalUsdEst": 76.24
+    "totalUsdEst": 79.84
    },
    "tasks": [
     {
-     "title": "P1CY00_endless always solvable and overload bar",
+     "title": "P1CY01_smooth moves and ui",
      "state": "running",
      "worker": "Claude",
-     "plan": "Cymatic Plate: endless mode always has a way out, and a bar shows when too many drops hinder the vibration.",
-     "since": "2026-10-24T00:23:16+00:00",
+     "plan": "Cymatic Plate: drops glide from A to B instead of vanishing and reappearing; the next options respond quickly; UI polish.",
+     "since": "2026-10-24T00:39:40+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -3539,18 +3551,18 @@
      "result": ""
     },
     {
-     "title": "P1CY01_smooth moves and ui",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Cymatic Plate: drops glide from A to B instead of vanishing and reappearing; the next options respond quickly; UI polish.",
+     "title": "P1CY00_endless always solvable and overload bar",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Cymatic Plate: endless mode always has a way out, and a bar shows when too many drops hinder the vibration.",
      "since": "2026-10-23T23:57:06+00:00",
-     "done": null,
+     "done": "2026-10-23T23:57:06+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "Endless now only offers note sets where every drop can always reach the ring (before: 80% of states in 500 seeded runs had a drop no note could bring home, 67% of opening boards; centre cell frozen for 15 of 18 notes;..."
     },
     {
      "title": "P3OR54_cymatic plate credits page",
@@ -3638,10 +3650,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 13
+    "done": 14
    },
    "verdict": {
     "date": "2026-10-20",
@@ -3651,6 +3663,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T00:39:35+00:00",
+     "ok": true,
+     "note": "endless never strands a drop (solver: 80% states had a stuck drop before, 0 after) plus dye bar",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T00:38:21+00:00",
      "ok": true,
@@ -3715,12 +3733,6 @@
      "at": "2026-10-19T15:05:57+00:00",
      "ok": true,
      "note": "NOT_DONE: assist ring removed, Listen retained, all levels opened, and save migration tested; publish blocked pending explicit approval to push to github.com/ChenHsieh/cymatic-plate.git",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-19T03:46:05+00:00",
-     "ok": true,
-     "note": "R18 review: stale opening test fixed; level 6 cliff still open",
      "source": "board note"
     }
    ]
