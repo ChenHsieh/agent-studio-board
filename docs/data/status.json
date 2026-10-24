@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T11:08:30+00:00",
+ "generated": "2026-10-24T11:11:07+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,22 +16,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 84,
+    "queued": 83,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3360,
-    "estimateMinutes": 3360
+    "minutes": 3320,
+    "estimateMinutes": 3320
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 2,
     "doneToday": 20,
-    "minutes": 120,
-    "estimateMinutes": 60
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
-  "queued": 85,
-  "running": 1,
+  "queued": 84,
+  "running": 2,
   "doneToday": 20,
   "lanes": {
    "Codex": 1,
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3480,
-  "estimatedFinish": "2026-10-26T19:08:30+00:00",
-  "estimateMinutes": 3360
+  "minutesRemaining": 3500,
+  "estimatedFinish": "2026-10-26T18:31:07+00:00",
+  "estimateMinutes": 3320
  },
  "lanes": [
   {
@@ -52,12 +52,20 @@
    "game": "makeshift-chair",
    "task": "P1MC02_clients levels and daily",
    "since": "2026-10-24T11:07:51+00:00",
-   "activity": "2026-10-24T11:07:51+00:00",
+   "activity": "2026-10-24T11:09:08+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "blackout-notice",
+   "task": "P2BN05_couplet visual round",
+   "since": "2026-10-24T11:09:39+00:00",
+   "activity": "2026-10-24T11:09:39+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
   "runs": 270,
@@ -1438,7 +1446,7 @@
    ]
   },
   {
-   "nextTask": "Blackout Notice: the visual round for the couplet...",
+   "nextTask": null,
    "costTotalUsd": 33.12,
    "latestChange": {
     "text": "design: Blackout Notice poem core research, the couplet erased from a sheet",
@@ -1467,8 +1475,8 @@
    "title": "Blackout Notice",
    "line": "Black out words on a stairwell notice until it says something kinder; 20 notices and a daily.",
    "url": "https://chenhsieh.github.io/blackout-notice/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Black out words on a stairwell notice until it says something kinder; 20",
    "shelfNote": "",
@@ -1482,7 +1490,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-24T09:17:53+00:00",
+   "lastChange": "2026-10-24T11:09:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -1498,10 +1506,10 @@
    "tasks": [
     {
      "title": "P2BN05_couplet visual round",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Blackout Notice: the visual round for the couplet game (red couplet paper, ink, an old printed sheet)",
-     "since": "2026-10-24T09:17:53+00:00",
+     "since": "2026-10-24T11:09:39+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1610,8 +1618,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 10
    },
@@ -13178,7 +13186,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T02:32:35+00:00",
-   "lastChange": "2026-10-24T11:07:51+00:00",
+   "lastChange": "2026-10-24T11:09:08+00:00",
    "cost": {
     "apiUsd": 11.15,
     "codexRuns": 2,
