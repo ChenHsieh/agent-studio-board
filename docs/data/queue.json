@@ -1,5 +1,5 @@
 {
- "generated": 1792879004,
+ "generated": 1792879154,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -79,7 +79,7 @@
  },
  "overflow": {
   "codexOut": false,
-  "converted": 2,
+  "converted": 1,
   "convertedRunning": 1,
   "claudeWorkers": 2,
   "claudeWorkerCap": 3,
@@ -88,26 +88,6 @@
   "lastHandBackN": null
  },
  "tasks": [
-  {
-   "id": "P1PP02_pinch-points-show-the-movement",
-   "request": "Pinch Points: see the squares grow and shrink after every pinch, and watch the stone open onto the paper",
-   "game": "Pinch Points",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P3OR73_pinch-points-words-file"
-   ],
-   "priority": "P1",
-   "why": "A graphics-paper figure of a statue flattened two ways, and an old woodblock page of a perforated scholar's stone.",
-   "state": "running",
-   "at": 1792878120,
-   "created": 1792878120,
-   "wasCodex": true
-  },
   {
    "id": "P1PL05_why-and-no-hub-rollout",
    "request": "One scripted rollout puts 'Why this exists' in every game and removes every hub link and mention, repo by repo, checked live",
@@ -145,6 +125,26 @@
    "created": 1792856566
   },
   {
+   "id": "P2AX15_kit-fit-rollout-mint",
+   "request": "mint: take the new play kit so the board and Undo fit a small phone",
+   "game": "Mint",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P1AX12_kit-new-rule-and-short-screen-fit"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1792878120,
+   "created": 1792878120,
+   "wasCodex": true
+  },
+  {
    "id": "P1CF04_marks-and-life-bar-look",
    "request": "Clean Features: each picture shows its marks, the lit mark glows in the dish, a dish life bar",
    "game": "What the Dish Sees",
@@ -179,6 +179,26 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792810795
+  },
+  {
+   "id": "P1PP03_pinch-points-strategy-card-and-daily",
+   "request": "Pinch Points: a rule card before level 1, a hint per level, the rule on the result card, a better daily and share line",
+   "game": "Pinch Points",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P1PP02_pinch-points-show-the-movement"
+   ],
+   "priority": "P1",
+   "why": "A graphics-paper figure of a statue flattened two ways, and an old woodblock page of a perforated scholar's stone.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792825175,
+   "estPercentOfWeek": 28.02
   },
   {
    "id": "P1RN45_tap-label-beside-picture",
@@ -824,28 +844,6 @@
    "created": 1792805548
   },
   {
-   "id": "P1PP03_pinch-points-strategy-card-and-daily",
-   "request": "Pinch Points: a rule card before level 1, a hint per level, the rule on the result card, a better daily and share line",
-   "game": "Pinch Points",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P1PP02_pinch-points-show-the-movement"
-   ],
-   "priority": "P1",
-   "why": "A graphics-paper figure of a statue flattened two ways, and an old woodblock page of a perforated scholar's stone.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1PP02_pinch-points-show-the-movement"
-   ],
-   "created": 1792825175,
-   "estPercentOfWeek": 28.02
-  },
-  {
    "id": "P1TH04_strings-and-tests",
    "request": "Tree Hero: tidy words and tests after the journey rebuild",
    "game": "Tree Hero",
@@ -1166,28 +1164,6 @@
    ],
    "created": 1792841692,
    "estPercentOfWeek": 28.02
-  },
-  {
-   "id": "P2AX15_kit-fit-rollout-mint",
-   "request": "mint: take the new play kit so the board and Undo fit a small phone",
-   "game": "Mint",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P1AX12_kit-new-rule-and-short-screen-fit"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P1AX12_kit-new-rule-and-short-screen-fit"
-   ],
-   "created": 1792878120,
-   "wasCodex": true
   },
   {
    "id": "P2AX16_kit-fit-rollout-rumour-on-the-jetty",
@@ -1770,6 +1746,26 @@
    "state": "done",
    "at": 1792837372,
    "created": 1792837372
+  },
+  {
+   "id": "P1PP02_pinch-points-show-the-movement",
+   "request": "Pinch Points: see the squares grow and shrink after every pinch, and watch the stone open onto the paper",
+   "game": "Pinch Points",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P3OR73_pinch-points-words-file"
+   ],
+   "priority": "P1",
+   "why": "A graphics-paper figure of a statue flattened two ways, and an old woodblock page of a perforated scholar's stone.",
+   "state": "done",
+   "at": 1792878120,
+   "created": 1792878120,
+   "wasCodex": true
   },
   {
    "id": "P2MC05_recheck-3d-spike-test-and-320-overflow",
