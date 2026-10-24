@@ -191,12 +191,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 204,
+   "count": 205,
    "firstTimePass": 94,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 157,
+   "guessed": 158,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -614,6 +614,15 @@
   },
   {
    "date": "2026-10-24",
+   "task": "thumb stand link preview",
+   "number": "78",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "P2TS58 Thumb Stand link preview. DONE. main 8414caa. Live https://chenhsieh.github.io/thumb-stand/ (index.html md5-matches; og.png answers 2"
+  },
+  {
+   "date": "2026-10-24",
    "task": "kit draw at device pixel ratio",
    "number": "",
    "executor": "claude-sonnet",
@@ -656,15 +665,6 @@
    "role": "review",
    "passed": "yes",
    "note": "until level 7 the right move is simply 'cover each picture with its own colour'; nothing asks the player to plan a crossing first. First min"
-  },
-  {
-   "date": "2026-10-24",
-   "task": "peony dream small phone fit",
-   "number": "99",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "at 320 the level name and goal line are scrolled off at level start (a kit-wide short-screen header would fix it: see P1AX12)."
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."

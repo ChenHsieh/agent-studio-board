@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-24T15:57:54+00:00",
+ "generated": "2026-10-24T16:00:11+00:00",
  "ops": {
-  "count": 2,
+  "count": 3,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 74,
+    "queued": 73,
     "running": 1,
     "doneToday": 0,
-    "minutes": 3000,
-    "estimateMinutes": 3000
+    "minutes": 2960,
+    "estimateMinutes": 2960
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 75,
+  "queued": 74,
   "running": 3,
   "doneToday": 65,
   "lanes": {
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3180,
-  "estimatedFinish": "2026-10-26T17:57:54+00:00",
-  "estimateMinutes": 3000
+  "minutesRemaining": 3140,
+  "estimatedFinish": "2026-10-26T17:20:11+00:00",
+  "estimateMinutes": 2960
  },
  "lanes": [
   {
@@ -69,10 +69,10 @@
   },
   {
    "worker": "Claude",
-   "game": "thumb-stand",
-   "task": "P2TS58_thumb stand link preview",
-   "since": "2026-10-24T15:53:51+00:00",
-   "activity": "2026-10-24T15:57:23+00:00",
+   "game": "Multiple games",
+   "task": "P2NM01_ship name fixes",
+   "since": null,
+   "activity": null,
    "commit": null
   }
  ],
@@ -80,8 +80,8 @@
  "claudeWorkers": 2,
  "apiSpentUsd": 311.83,
  "claudeInSession": {
-  "runs": 281,
-  "usdEst": 1011.6,
+  "runs": 283,
+  "usdEst": 1018.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -131,7 +131,7 @@
   },
   {
    "day": "2026-10-24",
-   "changes": 23
+   "changes": 25
   }
  ],
  "houseRules": 25,
@@ -26627,30 +26627,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 91.82,
+   "costTotalUsd": 95.42,
    "latestChange": {
-    "text": "P3OR58_thumb-stand-credits-page: WORKDIR",
-    "at": "2026-10-23T21:35:41+00:00"
+    "text": "P2TS58: link preview tags and og.png live (c_meta, d_share ok); main",
+    "at": "2026-10-24T15:58:34+00:00"
    },
    "promo": null,
    "why": "Martial-arts manga panels of impossible one-thumb handstands and poses.",
    "state": "ship",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "thumb stand link preview",
+   "waitingOn": "owner",
    "id": "thumb-stand",
    "number": 78,
    "repo": "thumb-stand",
    "title": "Thumb Stand",
    "line": "",
    "url": "https://chenhsieh.github.io/thumb-stand/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Total rework planned by a cross-functional lead",
    "shelfNote": "",
@@ -26664,33 +26664,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:44:20+00:00",
-   "lastChange": "2026-10-24T15:57:23+00:00",
+   "lastChange": "2026-10-24T15:58:34+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
-    "claudeRuns": 10,
+    "claudeRuns": 11,
     "apiRuns": 0,
     "codexTokens": 1518989,
     "codexUsdEst": 1.82,
-    "claudeUsdEst": 36.0,
+    "claudeUsdEst": 39.6,
     "earlierRounds": 15,
     "earlierUsdEst": 54.0,
-    "totalUsdEst": 91.82
+    "totalUsdEst": 95.42
    },
    "tasks": [
     {
      "title": "P2TS58_thumb stand link preview",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Thumb Stand: its own link preview picture and share line, so a shared link shows the game",
-     "since": "2026-10-24T15:53:51+00:00",
-     "done": null,
+     "since": "2026-10-23T22:10:16+00:00",
+     "done": "2026-10-23T22:10:16+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P2TS58 Thumb Stand link preview. DONE. main . Live https://chenhsieh.github.io/thumb-stand/ (index.html md5-matches; og.png answers 200)."
     },
     {
      "title": "P3OR58_thumb stand credits page",
@@ -26793,9 +26793,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 16
+    "done": 17
    },
    "verdict": {
     "date": "2026-10-23",
@@ -26803,8 +26803,20 @@
     "note": "Put his comic panels in an order where every red line lands on his hand, then hold your thumb under him; a fall is a loud joke and a win is earned"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-24T15:58:34+00:00",
+     "ok": true,
+     "note": "P2TS58: link preview tags and og.png live (c_meta, d_share ok); main",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-24T15:57:23+00:00",
+     "ok": true,
+     "note": "feat: Thumb Stand shows a proper preview when its link is shared",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-23T21:35:41+00:00",
      "ok": true,
@@ -26863,18 +26875,6 @@
      "at": "2026-10-22T00:31:21+00:00",
      "ok": true,
      "note": "P1TS52 live: drawn strongman in panels, hand close-up, bench of regulars, gym wall, share page; tests look_panels 47, panels_touch 48, gates PASS. Weakest: figures small at 320 with 4 panels; wall replay plays the page, not a scored run",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-22T00:29:55+00:00",
-     "ok": true,
-     "note": "feat:",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T23:09:39+00:00",
-     "ok": true,
-     "note": "P1TS51 panel page core live: reflex deleted, one-thumb swap, hold-to-play; tests+gates green",
      "source": "board note"
     }
    ]
