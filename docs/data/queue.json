@@ -1,14 +1,15 @@
 {
- "generated": 1792805483,
+ "generated": 1792805740,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
   "ready": 0,
-  "waiting": 2,
-  "queued": 2,
+  "waiting": 3,
+  "queued": 3,
   "running": 0,
   "done24h": 42,
   "modelsQueued": {
+   "sonnet": 1,
    "deepseek-v4-flash": 2
   },
   "spendTodayUsd": 0.02,
@@ -108,13 +109,13 @@
    "created": 1792801454
   },
   {
-   "id": "P1LH01_merge-or-separate-design",
-   "request": "Align Hero and Local Hero: are they really two games; a measured recommendation to merge or to separate with a collection.",
+   "id": "P1LH00_function-keys-and-how-to-play",
+   "request": "Local Hero: the F1, F2, F10 labels must work or go; How to play becomes visual; the Why page shrinks.",
    "game": "Local Hero",
    "route": "Claude",
-   "model": "opus",
+   "model": "sonnet",
    "effort": "high",
-   "kind": "design",
+   "kind": "build",
    "size": "one repo",
    "estMinutes": null,
    "after": [],
@@ -178,28 +179,8 @@
    "created": 1792804827
   },
   {
-   "id": "P2AX10_audit-report-one-line-per-problem",
-   "request": "Accessibility check: one line per problem across screens, worst first, so a builder sees what to fix",
-   "game": "Studio",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1AX09_controls-stay-put-after-a-tap"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792804929,
-   "created": 1792804929,
-   "estPercentOfWeek": 267.0
-  },
-  {
-   "id": "P2RV11_review-honest-sign-the-draw",
-   "request": "Opus stranger review of round 5 builds honest-sign and the-draw",
+   "id": "P2RV12_review-rumour-on-the-jetty-scribes-blotter",
+   "request": "Opus stranger review of round 5 builds rumour-on-the-jetty and scribes-blotter",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
@@ -208,13 +189,30 @@
    "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2RV05_honest-sign"
+    "P2RV07_rumour-on-the-jetty"
    ],
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1792799686,
-   "created": 1792799686
+   "at": 1792799690,
+   "created": 1792799690
+  },
+  {
+   "id": "P1CF01_rules-and-levels-drop-cost",
+   "request": "Clean Features: pictures cost one drop per mark, score is drops left, levels where no shortcut wins",
+   "game": "What the Dish Sees",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "An essay arguing neural network features are already clean, and a petri-dish video of something first taken for ordinary bacteria.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792805548
   },
   {
    "id": "P1FG00_forager-birds-and-play-pause",
@@ -229,23 +227,6 @@
    "after": [],
    "priority": "P1",
    "why": "Now The Forager: drag berries so a bird that always flies to the closest berry takes a much longer trip than the shortest round trip.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792802208
-  },
-  {
-   "id": "P1LH00_function-keys-and-how-to-play",
-   "request": "Local Hero: the F1, F2, F10 labels must work or go; How to play becomes visual; the Why page shrinks.",
-   "game": "Local Hero",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "The Smith-Waterman local alignment algorithm.",
    "state": "ready",
    "waitingOn": [],
    "created": 1792802208
@@ -372,7 +353,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713005,
-   "estPercentOfWeek": 267.0
+   "estPercentOfWeek": 264.78
   },
   {
    "id": "P2NC00_name-to-carry-data-inline",
@@ -392,7 +373,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792791317,
-   "estPercentOfWeek": 267.0
+   "estPercentOfWeek": 264.78
   },
   {
    "id": "P2PS00_pigeon-salon-readable-board",
@@ -412,7 +393,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713005,
-   "estPercentOfWeek": 267.0
+   "estPercentOfWeek": 264.78
   },
   {
    "id": "P2RO00_radish-omelette-colours-and-beats",
@@ -432,7 +413,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713431,
-   "estPercentOfWeek": 267.0
+   "estPercentOfWeek": 264.78
   },
   {
    "id": "P2RS00_restored-blurry-neighbours-count",
@@ -452,7 +433,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792715918,
-   "estPercentOfWeek": 267.0
+   "estPercentOfWeek": 264.78
   },
   {
    "id": "P3NY00_not-yet-a-real-choice",
@@ -472,7 +453,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713432,
-   "estPercentOfWeek": 267.0
+   "estPercentOfWeek": 264.78
   },
   {
    "id": "P3OR45_herbal-pages-stay-open-logic",
@@ -490,7 +471,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792724295,
-   "estPercentOfWeek": 267.0
+   "estPercentOfWeek": 264.78
   },
   {
    "id": "P2GG00_gallery-guess-save-migration-test",
@@ -525,7 +506,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792701959,
-   "estPercentOfWeek": 267.0
+   "estPercentOfWeek": 264.78
   },
   {
    "id": "P1BD04_released-games-leave-ready-to-try",
@@ -647,6 +628,25 @@
    "created": 1792805044
   },
   {
+   "id": "P2DRW00_the-draw",
+   "request": "The Draw: a real score (fix a crooked draw in fewest slips), a loss that names who knocked the cracked top out",
+   "game": "The Draw",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2RV11_review-honest-sign-the-draw"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792805668
+  },
+  {
    "id": "P2MN00_mint-story-first-minute-and-night",
    "request": "Mint: say what everything on the garden is, teach the gardener's pull in the first minute, show the night",
    "game": "Mint",
@@ -704,23 +704,23 @@
    "created": 1792790639
   },
   {
-   "id": "P2RV12_review-rumour-on-the-jetty-scribes-blotter",
-   "request": "Opus stranger review of round 5 builds rumour-on-the-jetty and scribes-blotter",
-   "game": "Studio",
+   "id": "P2SGN00_honest-sign",
+   "request": "Honest Sign: show what the sign says in plain numbers, teach the copying trap, fit 320",
+   "game": "Honest Sign",
    "route": "Claude",
-   "model": "opus",
+   "model": "sonnet",
    "effort": "high",
-   "kind": "review",
-   "size": "studio",
+   "kind": "build",
+   "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2RV07_rumour-on-the-jetty"
+    "P2RV11_review-honest-sign-the-draw"
    ],
    "priority": null,
    "why": "",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792799690
+   "created": 1792805668
   },
   {
    "id": "P2n86_round4-template-repos",
@@ -755,7 +755,91 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792724493,
-   "estPercentOfWeek": 267.0
+   "estPercentOfWeek": 264.78
+  },
+  {
+   "id": "P1CF02_story-and-strings",
+   "request": "Clean Features: the seed library night shift story in every line, English and Traditional Chinese",
+   "game": "What the Dish Sees",
+   "route": "OpenRouter",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1CF01_rules-and-levels-drop-cost"
+   ],
+   "priority": "P1",
+   "why": "An essay arguing neural network features are already clean, and a petri-dish video of something first taken for ordinary bacteria.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1CF01_rules-and-levels-drop-cost"
+   ],
+   "created": 1792805548
+  },
+  {
+   "id": "P1CF03_rule-first-lesson",
+   "request": "Clean Features: watch the rule first, then one guided look, then play",
+   "game": "What the Dish Sees",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1CF02_story-and-strings"
+   ],
+   "priority": "P1",
+   "why": "An essay arguing neural network features are already clean, and a petri-dish video of something first taken for ordinary bacteria.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1CF02_story-and-strings"
+   ],
+   "created": 1792805548
+  },
+  {
+   "id": "P1CF04_marks-and-life-bar-look",
+   "request": "Clean Features: each picture shows its marks, the lit mark glows in the dish, a dish life bar",
+   "game": "What the Dish Sees",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1CF03_rule-first-lesson"
+   ],
+   "priority": "P1",
+   "why": "An essay arguing neural network features are already clean, and a petri-dish video of something first taken for ordinary bacteria.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1CF03_rule-first-lesson"
+   ],
+   "created": 1792805548
+  },
+  {
+   "id": "P1CF05_reset-tests-and-review",
+   "request": "Clean Features: tests for the reset and a stranger review",
+   "game": "What the Dish Sees",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1CF04_marks-and-life-bar-look"
+   ],
+   "priority": "P1",
+   "why": "An essay arguing neural network features are already clean, and a petri-dish video of something first taken for ordinary bacteria.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1CF04_marks-and-life-bar-look"
+   ],
+   "created": 1792805548
   },
   {
    "id": "P1FG01_rename-repo-and-game-to-forager",
@@ -882,7 +966,7 @@
     "P3OR45_herbal-pages-stay-open-logic"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 267.0
+   "estPercentOfWeek": 264.78
   },
   {
    "id": "P1TE03_room-strings",
@@ -967,7 +1051,7 @@
     "P3OR44_kit-win-hold-and-higher-is-better"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 267.0
+   "estPercentOfWeek": 264.78
   },
   {
    "id": "P2TE06_look-refine",
@@ -1056,7 +1140,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 267.0
+   "estPercentOfWeek": 264.78
   },
   {
    "id": "P2n88_watched-pot",
@@ -1078,7 +1162,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 267.0
+   "estPercentOfWeek": 264.78
   },
   {
    "id": "P2n89_round-table",
@@ -1100,7 +1184,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 267.0
+   "estPercentOfWeek": 264.78
   },
   {
    "id": "P2n90_iron-window-garden",
@@ -1122,7 +1206,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 267.0
+   "estPercentOfWeek": 264.78
   },
   {
    "id": "P2n91_still-a-heap",
@@ -1144,7 +1228,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 267.0
+   "estPercentOfWeek": 264.78
   },
   {
    "id": "P2n92_out-of-the-corner",
@@ -1166,7 +1250,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 267.0
+   "estPercentOfWeek": 264.78
   },
   {
    "id": "P2n93_one-umbrella",
@@ -1188,7 +1272,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 267.0
+   "estPercentOfWeek": 264.78
   },
   {
    "id": "P2n94_rolling-back",
@@ -1210,7 +1294,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 267.0
+   "estPercentOfWeek": 264.78
   },
   {
    "id": "P2n95_gold-star",
@@ -1232,7 +1316,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 267.0
+   "estPercentOfWeek": 264.78
   },
   {
    "id": "P2n96_ac-remote",
@@ -1254,7 +1338,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 267.0
+   "estPercentOfWeek": 264.78
   },
   {
    "id": "P2n97_review-coin-dumplings-and-watched-pot",
@@ -1413,6 +1497,23 @@
    "state": "done",
    "at": 1792763393,
    "created": 1792763393
+  },
+  {
+   "id": "P1LH01_merge-or-separate-design",
+   "request": "Align Hero and Local Hero: are they really two games; a measured recommendation to merge or to separate with a collection.",
+   "game": "Local Hero",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "design",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "The Smith-Waterman local alignment algorithm.",
+   "state": "done",
+   "at": 1792802208,
+   "created": 1792802208
   },
   {
    "id": "P1MH58_mirror-hold-stranger-rereview",
@@ -2103,7 +2204,7 @@
    "state": "done",
    "at": 1792790510,
    "created": 1792790510,
-   "estPercentOfWeek": 267.0
+   "estPercentOfWeek": 264.78
   },
   {
    "id": "P2RV05_honest-sign",
@@ -2208,6 +2309,25 @@
    "created": 1792799664
   },
   {
+   "id": "P2RV11_review-honest-sign-the-draw",
+   "request": "Opus stranger review of round 5 builds honest-sign and the-draw",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2RV05_honest-sign"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792799686,
+   "created": 1792799686
+  },
+  {
    "id": "P2RV13_review-the-apprentice-mint",
    "request": "Opus stranger review of round 5 builds the-apprentice and mint",
    "game": "Studio",
@@ -2259,7 +2379,7 @@
    "state": "done",
    "at": 1792798110,
    "created": 1792798110,
-   "estPercentOfWeek": 267.0
+   "estPercentOfWeek": 264.78
   }
  ]
 }

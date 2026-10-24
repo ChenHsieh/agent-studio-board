@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T01:30:54+00:00",
+ "generated": "2026-10-24T01:34:50+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 56,
+    "queued": 62,
     "running": 1,
     "doneToday": 5,
-    "minutes": 2280,
-    "estimateMinutes": 2280
+    "minutes": 2520,
+    "estimateMinutes": 2520
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 78,
+    "doneToday": 79,
     "minutes": 420,
     "estimateMinutes": 105
    }
   },
-  "queued": 57,
+  "queued": 63,
   "running": 7,
-  "doneToday": 83,
+  "doneToday": 84,
   "lanes": {
    "Codex": 1,
    "Claude": 4
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2700,
-  "estimatedFinish": "2026-10-25T15:30:54+00:00",
-  "estimateMinutes": 2280
+  "minutesRemaining": 2940,
+  "estimatedFinish": "2026-10-25T19:34:50+00:00",
+  "estimateMinutes": 2520
  },
  "lanes": [
   {
@@ -60,7 +60,7 @@
    "game": "clean-features",
    "task": "P1CF00_core and story reset",
    "since": "2026-10-24T01:23:13+00:00",
-   "activity": "2026-10-24T01:23:23+00:00",
+   "activity": "2026-10-24T01:34:36+00:00",
    "commit": null
   },
   {
@@ -68,7 +68,7 @@
    "game": "local-hero",
    "task": "P1LH01_merge or separate design",
    "since": "2026-10-24T01:24:34+00:00",
-   "activity": "2026-10-24T01:26:02+00:00",
+   "activity": "2026-10-24T01:34:41+00:00",
    "commit": null
   },
   {
@@ -76,7 +76,7 @@
    "game": "readable-nonsense",
    "task": "P1RN44_visual round build",
    "since": "2026-10-24T01:12:24+00:00",
-   "activity": "2026-10-24T01:29:26+00:00",
+   "activity": "2026-10-24T01:33:47+00:00",
    "commit": null
   },
   {
@@ -98,7 +98,7 @@
   {
    "worker": "Claude",
    "game": "Multiple games",
-   "task": "P2RV11_review honest sign the draw",
+   "task": "P2RV12_review rumour on the jetty scribes blotter",
    "since": null,
    "activity": null,
    "commit": null
@@ -108,8 +108,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 224,
-  "usdEst": 806.4,
+  "runs": 226,
+  "usdEst": 813.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -155,7 +155,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 55
+   "changes": 58
   }
  ],
  "houseRules": 25,
@@ -9384,11 +9384,11 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 14.4,
+   "nextTask": "Honest Sign: show what the sign says in...",
+   "costTotalUsd": 18.0,
    "latestChange": {
-    "text": "playable: seven-segment sign, 16 levels, rule module and tests; a11y fit lane FAIL at...",
-    "at": "2026-10-24T00:25:01+00:00"
+    "text": "review P2RV11: revise, fix queued P2SGN00",
+    "at": "2026-10-24T01:34:45+00:00"
    },
    "promo": null,
    "why": "",
@@ -9397,8 +9397,8 @@
    "title": "Honest Sign",
    "line": "",
    "url": "https://chenhsieh.github.io/honest-sign/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -9407,7 +9407,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-23T23:32:13+00:00",
-   "lastChange": "2026-10-24T00:25:01+00:00",
+   "lastChange": "2026-10-24T01:34:45+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -9416,11 +9416,25 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
-    "totalUsdEst": 14.4
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
+    "totalUsdEst": 18.0
    },
    "tasks": [
+    {
+     "title": "P2SGN00_honest sign",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Honest Sign: show what the sign says in plain numbers, teach the copying trap, fit 320",
+     "since": "2026-10-24T01:34:28+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2RV05_honest sign",
      "state": "done",
@@ -9437,15 +9451,25 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-10-23",
+    "verdict": "revise",
+    "note": "The self-counting sign holds (the obvious nudge gets stuck on 14 of 16 levels) but a stranger cannot read what the sign says yet"
+   },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T01:34:45+00:00",
+     "ok": true,
+     "note": "review P2RV11: revise, fix queued P2SGN00",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T00:25:01+00:00",
      "ok": true,
@@ -11508,7 +11532,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-08-20T15:58:51+00:00",
-   "lastChange": "2026-10-24T01:26:02+00:00",
+   "lastChange": "2026-10-24T01:34:41+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -22436,11 +22460,11 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 14.4,
+   "nextTask": "The Draw: a real score (fix a crooked...",
+   "costTotalUsd": 18.0,
    "latestChange": {
-    "text": "core built: pick-then-put taps, 9 levels, daily/endless, template_check 13/13, gates...",
-    "at": "2026-10-24T00:49:11+00:00"
+    "text": "review P2RV11: revise, fix queued P2DRW00",
+    "at": "2026-10-24T01:34:45+00:00"
    },
    "promo": null,
    "why": "",
@@ -22449,8 +22473,8 @@
    "title": "The Draw",
    "line": "",
    "url": "https://chenhsieh.github.io/the-draw/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -22459,7 +22483,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-24T00:49:11+00:00",
+   "lastChange": "2026-10-24T01:34:45+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -22468,11 +22492,25 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
-    "totalUsdEst": 14.4
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
+    "totalUsdEst": 18.0
    },
    "tasks": [
+    {
+     "title": "P2DRW00_the draw",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "The Draw: a real score (fix a crooked draw in fewest slips), a loss that names who knocked the cracked top out",
+     "since": "2026-10-24T01:34:28+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2RV06_the draw",
      "state": "done",
@@ -22489,15 +22527,25 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-10-23",
+    "verdict": "revise",
+    "note": "Fixing the draw holds (the obvious seating wins under a quarter of tries) but every win scores the same 8 slips and a loss does not say who won"
+   },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T01:34:45+00:00",
+     "ok": true,
+     "note": "review P2RV11: revise, fix queued P2DRW00",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T00:49:11+00:00",
      "ok": true,
@@ -25891,11 +25939,11 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 58.46,
+   "nextTask": "Clean Features: pictures cost one drop per mark...",
+   "costTotalUsd": 62.06,
    "latestChange": {
-    "text": "feat: teach the dish through a playable first minute",
-    "at": "2026-10-22T22:57:26+00:00"
+    "text": "fix: dish notes say \"no neuron fired\" when a picture lights nothing",
+    "at": "2026-10-24T01:34:36+00:00"
    },
    "promo": {
     "files": {
@@ -25921,7 +25969,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-24T01:23:23+00:00",
+   "lastChange": "2026-10-24T01:34:36+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -25930,9 +25978,9 @@
     "codexTokens": 719119,
     "codexUsdEst": 0.86,
     "claudeUsdEst": 14.4,
-    "earlierRounds": 12,
-    "earlierUsdEst": 43.2,
-    "totalUsdEst": 58.46
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
+    "totalUsdEst": 62.06
    },
    "tasks": [
     {
@@ -25941,6 +25989,76 @@
      "worker": "Claude",
      "plan": "Clean Features: back to the core stage: why the player cares, what makes a neuron fire, and rules shown before the first move.",
      "since": "2026-10-24T01:23:13+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1CF01_rules and levels drop cost",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Clean Features: pictures cost one drop per mark, score is drops left, levels where no shortcut wins",
+     "since": "2026-10-24T01:32:28+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1CF02_story and strings",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Clean Features: the seed library night shift story in every line, English and Traditional Chinese",
+     "since": "2026-10-24T01:32:28+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1CF03_rule first lesson",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Clean Features: watch the rule first, then one guided look, then play",
+     "since": "2026-10-24T01:32:28+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1CF04_marks and life bar look",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Clean Features: each picture shows its marks, the lit mark glows in the dish, a dish life bar",
+     "since": "2026-10-24T01:32:28+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1CF05_reset tests and review",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Clean Features: tests for the reset and a stranger review",
+     "since": "2026-10-24T01:32:28+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -25976,80 +26094,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Before: b_logo, c_meta, d_share, e_daily FAIL. After: a-f all ok. Brand button opens level menu, og + favicon, daily on local date; page_check PASS; main ."
-    },
-    {
-     "title": "dish sees story",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "A first minute that explains who you are and what the dish does; a clearer decision per level.",
-     "since": "2026-10-20T00:51:41+00:00",
-     "done": "2026-10-20T00:51:41+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Live: colonies are drawn and named as neurons that fire; each picture in the tray shows the shapes it contains, so which picture to show is a readable ch"
-    },
-    {
-     "title": "review of clean features build",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-19T20:00:28+00:00",
-     "done": "2026-10-19T20:00:28+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "clean features build",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "First-screen goal and progress, looping demos for the first two rules, visible deductions, a chapter grid with the map chapter previewed.",
-     "since": "2026-10-19T18:02:05+00:00",
-     "done": "2026-10-19T18:02:05+00:00",
-     "reviewed": true,
-     "minutes": 13,
-     "tokens": 205183,
-     "reviewOutcome": "fixed",
-     "commit": null,
-     "result": "Players now get biological-dish framing, paid glow evidence, notes, progress, and lesson loops."
-    },
-    {
-     "title": "clean features frame",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Find the playable frame for the latent-space game: a clear goal, a reason each click matters, dimension navigation with transitions.",
-     "since": "2026-10-19T17:54:51+00:00",
-     "done": "2026-10-19T17:54:51+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Frame decided for What the Dish Sees and written to intake_20261019/BRIEF_clean-features.md; the Codex build task P1c07_clean-features-build is in queue/todo with its plan line."
-    },
-    {
-     "title": "clean features followup",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "",
-     "since": "2026-10-18T10:02:43+00:00",
-     "done": "2026-10-18T10:02:43+00:00",
-     "reviewed": false,
-     "minutes": 12,
-     "tokens": 130398,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Players get readable picture slides and candidate lists only on levels 1–4."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 5,
     "running": 1,
     "waitingDesign": 0,
     "done": 9
@@ -26058,6 +26106,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T01:34:36+00:00",
+     "ok": true,
+     "note": "fix: dish notes say \"no neuron fired\" when a picture lights nothing",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-22T22:57:26+00:00",
      "ok": true,
@@ -26123,12 +26177,6 @@
      "ok": true,
      "note": "dish- reviewed and live : slides are little pictures; candidate shapes only on levels 1-4; touch play 1/2/5/6 at 390 and 320; live save test green",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-18T12:57:30+00:00",
-     "ok": true,
-     "note": "feat: slides are little pictures; shape hints only on levels 1-4",
-     "source": "main commit"
     }
    ]
   },
@@ -26472,7 +26520,7 @@
    "releasedOn": null,
    "releasedNote": "",
    "firstSeen": "2026-10-16T00:28:34+00:00",
-   "lastChange": "2026-10-24T01:29:26+00:00",
+   "lastChange": "2026-10-24T01:33:47+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 3,
