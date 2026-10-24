@@ -1,5 +1,5 @@
 {
- "generated": 1792885190,
+ "generated": 1792885642,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -89,23 +89,21 @@
  },
  "tasks": [
   {
-   "id": "P1TH03_worked-example-journey",
-   "request": "Tree Hero: a one-line premise, a tiny worked example, a guided first swap",
-   "game": "Tree Hero",
+   "id": "P1RN45_tap-label-beside-picture",
+   "request": "move the How to play tap label beside the picture",
+   "game": "阿嬤讀得出來",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
-   "after": [
-    "P1TH02_change-marks-on-branches"
-   ],
+   "after": [],
    "priority": "P1",
-   "why": "Fitch maximum-parsimony phylogenetics; swap branches of a seven-species tree until it needs the fewest evolutionary changes; no timeline, undo is free.",
+   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
    "state": "running",
-   "at": 1792806505,
-   "created": 1792806505
+   "at": 1792808493,
+   "created": 1792808493
   },
   {
    "id": "P1CF05_reset-tests-and-review",
@@ -147,21 +145,23 @@
    "estPercentOfWeek": 217.23
   },
   {
-   "id": "P1RN45_tap-label-beside-picture",
-   "request": "move the How to play tap label beside the picture",
-   "game": "阿嬤讀得出來",
+   "id": "P1TH04_strings-and-tests",
+   "request": "Tree Hero: tidy words and tests after the journey rebuild",
+   "game": "Tree Hero",
    "route": "Claude",
    "model": "sonnet",
-   "effort": "high",
+   "effort": "medium",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P1TH03_worked-example-journey"
+   ],
    "priority": "P1",
-   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
+   "why": "Fitch maximum-parsimony phylogenetics; swap branches of a seven-species tree until it needs the fewest evolutionary changes; no timeline, undo is free.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792808493
+   "created": 1792808595
   },
   {
    "id": "P2CC35_colony-count-save-migration-test",
@@ -494,7 +494,7 @@
    "why": "",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792880508
+   "created": 1792885638
   },
   {
    "id": "P1IN09_idea-round-6-five-ideas",
@@ -769,27 +769,6 @@
    "waitingOn": [],
    "created": 1792724493,
    "estPercentOfWeek": 217.23
-  },
-  {
-   "id": "P1TH04_strings-and-tests",
-   "request": "Tree Hero: tidy words and tests after the journey rebuild",
-   "game": "Tree Hero",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "medium",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1TH03_worked-example-journey"
-   ],
-   "priority": "P1",
-   "why": "Fitch maximum-parsimony phylogenetics; swap branches of a seven-species tree until it needs the fewest evolutionary changes; no timeline, undo is free.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1TH03_worked-example-journey"
-   ],
-   "created": 1792808595
   },
   {
    "id": "P2AX18_kit-fit-rollout-the-apprentice",
