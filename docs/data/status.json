@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T07:28:17+00:00",
+ "generated": "2026-10-24T07:30:41+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -28,15 +28,15 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
-    "doneToday": 7,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "running": 1,
+    "doneToday": 8,
+    "minutes": 120,
+    "estimateMinutes": 60
    }
   },
   "queued": 80,
-  "running": 2,
-  "doneToday": 7,
+  "running": 1,
+  "doneToday": 8,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,34 +46,26 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3340,
-  "estimatedFinish": "2026-10-26T12:08:17+00:00",
+  "minutesRemaining": 3280,
+  "estimatedFinish": "2026-10-26T12:10:41+00:00",
   "estimateMinutes": 3160
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "the-apprentice",
-   "task": "P1AP03_visual round build",
-   "since": "2026-10-24T06:57:22+00:00",
-   "activity": "2026-10-24T07:27:07+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
    "game": "peony-dream",
    "task": "P1PD01_lag stuck drag and dream link",
    "since": "2026-10-24T07:22:55+00:00",
-   "activity": "2026-10-24T07:28:01+00:00",
+   "activity": "2026-10-24T07:29:53+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 267,
-  "usdEst": 961.2,
+  "runs": 268,
+  "usdEst": 964.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -123,7 +115,7 @@
   },
   {
    "day": "2026-10-24",
-   "changes": 9
+   "changes": 10
   }
  ],
  "houseRules": 25,
@@ -11989,7 +11981,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 0
+    "daysInState": 1
    },
    "waitingOn": "none",
    "id": "lie-flat",
@@ -16935,7 +16927,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-18T01:51:43+00:00",
-   "lastChange": "2026-10-24T07:28:01+00:00",
+   "lastChange": "2026-10-24T07:29:53+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -24539,30 +24531,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 39.6,
+   "costTotalUsd": 43.2,
    "latestChange": {
-    "text": "feat: The Apprentice is printed as a woodcut almanac",
-    "at": "2026-10-24T07:27:07+00:00"
+    "text": "P1AP03: woodcut almanac look live (carved ring, new tools and figures, seals, ending...",
+    "at": "2026-10-24T07:28:41+00:00"
    },
    "promo": null,
    "why": "",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 1
+    "daysInState": 0
    },
-   "waitingOn": "visual round build",
+   "waitingOn": "none",
    "id": "the-apprentice",
    "number": 152,
    "repo": "the-apprentice",
    "title": "The Apprentice",
    "line": "",
    "url": "https://chenhsieh.github.io/the-apprentice/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "a teach-then-betrayed story with real potential; frame the story, the...",
    "shelfNote": "",
@@ -24576,33 +24568,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:02+00:00",
-   "lastChange": "2026-10-24T07:27:07+00:00",
+   "lastChange": "2026-10-24T07:28:41+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 5,
+    "claudeRuns": 6,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 18.0,
+    "claudeUsdEst": 21.6,
     "earlierRounds": 6,
     "earlierUsdEst": 21.6,
-    "totalUsdEst": 39.6
+    "totalUsdEst": 43.2
    },
    "tasks": [
     {
      "title": "P1AP03_visual round build",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "The Apprentice: build the chosen look, the scenes and the endings.",
-     "since": "2026-10-24T06:57:22+00:00",
-     "done": null,
+     "since": "2026-10-24T06:38:57+00:00",
+     "done": "2026-10-24T06:38:57+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1AP03_visual-round-build: The Apprentice (#152) now printed as the woodcut almanac from design/VISUAL_ROUND.md. LIVE on main; live game.js, game.css, game.config.js, art.shapes.js, index.html bytes match the branch;..."
     },
     {
      "title": "P3OR70_apprentice art shapes module",
@@ -24677,9 +24669,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": {
     "date": "2026-10-23",
@@ -24687,8 +24679,14 @@
     "note": "The duel holds but the screen tells no story: the tools, ring and judges mean nothing to a stranger yet"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-24T07:28:41+00:00",
+     "ok": true,
+     "note": "P1AP03: woodcut almanac look live (carved ring, new tools and figures, seals, ending scenes, caption bar), saves migrate",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T07:27:07+00:00",
      "ok": true,
