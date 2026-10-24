@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T03:00:00+00:00",
+ "generated": "2026-10-24T03:03:34+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 87,
+    "queued": 89,
     "running": 1,
     "doneToday": 6,
-    "minutes": 3520,
-    "estimateMinutes": 3520
+    "minutes": 3600,
+    "estimateMinutes": 3600
    },
    "Claude": {
     "queued": 1,
     "running": 4,
-    "doneToday": 101,
+    "doneToday": 102,
     "minutes": 300,
     "estimateMinutes": 60
    }
   },
-  "queued": 88,
+  "queued": 90,
   "running": 5,
-  "doneToday": 107,
+  "doneToday": 108,
   "lanes": {
    "Codex": 1,
    "Claude": 5
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3820,
-  "estimatedFinish": "2026-10-26T13:40:00+00:00",
-  "estimateMinutes": 3520
+  "minutesRemaining": 3900,
+  "estimatedFinish": "2026-10-26T15:03:34+00:00",
+  "estimateMinutes": 3600
  },
  "lanes": [
   {
@@ -57,10 +57,10 @@
   },
   {
    "worker": "Claude",
-   "game": "fool-the-algorithm",
-   "task": "P1FG01_rename repo and game to forager",
-   "since": "2026-10-24T02:41:24+00:00",
-   "activity": "2026-10-24T02:57:18+00:00",
+   "game": "remote-viewer",
+   "task": "P1RV17_remote viewer original scan by default",
+   "since": "2026-10-24T03:03:22+00:00",
+   "activity": "2026-10-24T03:03:26+00:00",
    "commit": null
   },
   {
@@ -75,20 +75,25 @@
    "worker": "Codex",
    "game": "tractatus-tree",
    "task": "P2FM58_tractatus tree first minute fix",
-   "since": "2026-10-24T02:01:37+00:00",
-   "activity": "2026-10-24T02:58:39+00:00",
-   "commit": {
-    "at": "2026-10-24T02:50:44+00:00",
-    "subject": "docs: record short-phone touch cause"
-   }
+   "since": "2026-10-24T03:02:52+00:00",
+   "activity": "2026-10-24T03:02:41+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "mint",
+   "task": "P2MN00_mint story first minute and night",
+   "since": "2026-10-24T03:00:02+00:00",
+   "activity": "2026-10-24T03:00:28+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 3,
+ "claudeWorkers": 4,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 249,
-  "usdEst": 896.4,
+  "runs": 250,
+  "usdEst": 900.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -134,7 +139,7 @@
   },
   {
    "day": "2026-10-23",
-   "changes": 91
+   "changes": 93
   }
  ],
  "houseRules": 25,
@@ -1959,7 +1964,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Chai Boil (#92, P1): a hyper-real look instead...",
    "costTotalUsd": 91.11,
    "latestChange": {
     "text": "P3OR28_chai-boil-link-preview: WORKDIR",
@@ -1967,13 +1972,13 @@
    },
    "promo": null,
    "why": "An AI-made video post of a pot of milk tea foaming up on a wood fire, plus the Lunar Lander game.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 1
+    "daysInState": 2
    },
    "waitingOn": "owner",
    "id": "chai-boil",
@@ -1982,10 +1987,10 @@
    "title": "Chai Boil",
    "line": "One pot, one dial: let the chai rise to the rim, not over it.",
    "url": "https://chenhsieh.github.io/chai-boil/",
-   "stage": "live",
-   "who": null,
-   "priority": "P2",
-   "priorityNote": "Steadier dial (keys on desktop), a forgiving golden zone, a",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P1",
+   "priorityNote": "hyper-realistic visuals instead of computer-drawn",
    "shelfNote": "",
    "image": "https://chenhsieh.github.io/play-lab/images/games/chai-boil-1.webp",
    "released": false,
@@ -1996,7 +2001,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-22T23:55:14+00:00",
+   "lastChange": "2026-10-24T03:00:28+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 6,
@@ -2010,6 +2015,20 @@
     "totalUsdEst": 91.11
    },
    "tasks": [
+    {
+     "title": "P1CB11_hyperreal visual round",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Chai Boil (#92, P1): a hyper-real look instead of the computer-drawn one, by a taste visual round.",
+     "since": "2026-10-24T03:00:28+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3OR28_chai boil link preview",
      "state": "done",
@@ -2107,24 +2126,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "feat: four more kitchens: clay stove, copper pot on charcoal, induction hob, night platform (main -> , rollback tag pre-kitchens-cb06)"
-    },
-    {
-     "title": "P1CB05_chai kitchens framework",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Chai Boil: kitchens that each answer the flame differently, with a kitchen select screen; gas ring and street stall first.",
-     "since": "2026-10-21T10:52:26+00:00",
-     "done": "2026-10-21T10:52:26+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "feat: kitchens: a Kitchens screen, a home gas ring and a street stall kettle (main -> , rollback tag pre-kitchens-cb05)"
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 16
@@ -2135,7 +2140,7 @@
     "note": "Visual revamp, different kitchen"
    },
    "needsYou": "Prayer-flag strip in the mountain hut set: five extra colours on one strip, all six kitchens still pass the contrast check. Suggest: keep it; it costs little and no kitchen failed the contrast check.",
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T23:55:14+00:00",
@@ -7649,6 +7654,266 @@
    ]
   },
   {
+   "nextTask": null,
+   "costTotalUsd": 83.23,
+   "latestChange": {
+    "text": "renamed to Forager: repo ChenHsieh/forager (private), live at /forager/, old address...",
+    "at": "2026-10-24T03:03:14+00:00"
+   },
+   "promo": {
+    "files": {
+     "first": "promo/fool-the-algorithm/first.jpg",
+     "play": "promo/fool-the-algorithm/play.jpg",
+     "card": "promo/fool-the-algorithm/card.jpg"
+    },
+    "caption": "Change letters to widen the greedy gap."
+   },
+   "why": "Forager (renamed from Fool the Algorithm 2026-10-23, now at /forager/): drag berries so a bird that always flies to the closest berry takes a much longer trip...",
+   "state": "shelved",
+   "stateFlags": {
+    "refining": false,
+    "resting": true,
+    "regressed": false,
+    "reviseRound": 2,
+    "daysInState": 0
+   },
+   "waitingOn": "none",
+   "id": "fool-the-algorithm",
+   "number": 94,
+   "repo": "fool-the-algorithm",
+   "title": "Forager",
+   "line": "Drag berries so a nearest-first bird flies the long way.",
+   "url": "https://chenhsieh.github.io/forager/",
+   "stage": "live",
+   "who": null,
+   "priority": "P1",
+   "priorityNote": "Show per-path distance bars and named berries, lay the two",
+   "shelfNote": "",
+   "image": "promo/fool-the-algorithm/first.jpg",
+   "released": false,
+   "releasedOn": null,
+   "releasedNote": "",
+   "archived": false,
+   "archivedOn": null,
+   "archivedKind": "",
+   "archivedNote": "",
+   "firstSeen": "2026-10-16T07:50:19+00:00",
+   "lastChange": "2026-10-24T03:03:14+00:00",
+   "cost": {
+    "apiUsd": 10.18,
+    "codexRuns": 3,
+    "claudeRuns": 6,
+    "apiRuns": 1,
+    "codexTokens": 874871,
+    "codexUsdEst": 1.05,
+    "claudeUsdEst": 21.6,
+    "earlierRounds": 14,
+    "earlierUsdEst": 50.4,
+    "totalUsdEst": 83.23
+   },
+   "tasks": [
+    {
+     "title": "P1FG00_forager birds and play pause",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Forager: birds fly their real path, Pause shows while playing, and the trip is easy to follow.",
+     "since": "2026-10-24T00:36:48+00:00",
+     "done": "2026-10-24T00:36:48+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "What a player sees now: after a drop, both birds really fly. They leave the nest and travel along their own routes at one constant speed, slowing a little into each turn, and Grey's route grows as a dark line behind it...."
+    },
+    {
+     "title": "P1FG01_rename repo and game to forager",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Rename the game and its repo to Forager, with the old address redirecting.",
+     "since": "2026-10-24T00:36:48+00:00",
+     "done": "2026-10-24T00:36:48+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "What a player sees now: the game is called Forager everywhere: the browser tab, the top-left name, the line above the board, the link preview (title, address and a new 1200x630 image rendered from the current game, with..."
+    },
+    {
+     "title": "P1SD41_studio standard fool the algorithm",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Fix share preview, logo and share text",
+     "since": "2026-10-21T21:08:25+00:00",
+     "done": "2026-10-21T21:08:25+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "review of fool the algorithm distance bars",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-19T19:13:01+00:00",
+     "done": "2026-10-19T19:13:01+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "fool the algorithm distance bars",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "Show per-path distance bars and named berries, lay the two routes out as lines under the board, add more simple rival strategies.",
+     "since": "2026-10-19T17:54:51+00:00",
+     "done": "2026-10-19T17:54:51+00:00",
+     "reviewed": true,
+     "minutes": 23,
+     "tokens": 245756,
+     "reviewOutcome": "fixed",
+     "commit": null,
+     "result": "Named berries, next-flight distance bars, route ledgers, arrival-based Next steps, and optional random-walk Moss are live."
+    },
+    {
+     "title": "review of forager feel",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-18T23:22:10+00:00",
+     "done": "2026-10-18T23:22:10+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "forager feel",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "Berries always draggable (any move resets the run), smooth eased flight with one play/pause toggle, and a cleaner cute redraw.",
+     "since": "2026-10-18T20:13:39+00:00",
+     "done": "2026-10-18T20:13:39+00:00",
+     "reviewed": true,
+     "minutes": 21,
+     "tokens": 309977,
+     "reviewOutcome": "fixed",
+     "commit": null,
+     "result": "Forager now has touch-priority berries, smooth Play/Pause flight, 1×/2× speed, and cleaner illustrated themes."
+    },
+    {
+     "title": "review of forager step",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-18T19:15:05+00:00",
+     "done": "2026-10-18T19:15:05+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "taskCounts": {
+    "queued": 0,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 10
+   },
+   "verdict": {
+    "date": "2026-10-19",
+    "verdict": "revise",
+    "note": "Show per-path distance bars and named berries, lay the two"
+   },
+   "needsYou": null,
+   "inProgress": false,
+   "history": [
+    {
+     "at": "2026-10-24T03:03:14+00:00",
+     "ok": true,
+     "note": "renamed to Forager: repo ChenHsieh/forager (private), live at /forager/, old address forwards (redirect repo fool-the-algorithm); title/og/share/README; hub main (front page not redeployed); board name+url via extra.tsv/OWN_URL_OVERRIDES; zh 覓食者 propos",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-24T02:57:18+00:00",
+     "ok": true,
+     "note": "feat: the game is called Forager everywhere, at its new address",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-24T02:41:15+00:00",
+     "ok": true,
+     "note": "birds fly their real routes (CSS hop transform threw them to top-left), Play/Pause/Replay toggle, numbered legs, choice rings, trace line, two trip bars, result says how much longer; live",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-24T02:39:00+00:00",
+     "ok": true,
+     "note": "fix: the birds really fly their routes, Play reads Pause while they fly, and every choice is traceable",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-21T22:27:17+00:00",
+     "ok": true,
+     "note": "top-left now own logo and title to first screen (studio standard)",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-21T22:26:49+00:00",
+     "ok": true,
+     "note": "test: topbar test expects the own-brand link",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-21T22:21:27+00:00",
+     "ok": true,
+     "note": "fix: Fool the Algorithm top-left shows its own logo and title",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-19T19:16:51+00:00",
+     "ok": true,
+     "note": "fix: berry names are readable on the board and the route rows wrap instead of hiding stops",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-19T19:11:11+00:00",
+     "ok": true,
+     "note": "named berry routes, next-flight distance bars, and arrival steps live",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-19T19:08:34+00:00",
+     "ok": true,
+     "note": "Route distance dashboard and named berry paths published.",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-19T17:22:41+00:00",
+     "ok": true,
+     "note": "Test bug: Play/Pause assertion named the intentional Pause action as a failure; it now verifies Play resumes and remains running. Not published.",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-19T16:53:02+00:00",
+     "ok": true,
+     "note": "fix: every level is open while we test",
+     "source": "main commit"
+    }
+   ]
+  },
+  {
    "nextTask": "Gallery Guess: a test proves an old save...",
    "costTotalUsd": 36.21,
    "latestChange": {
@@ -12798,7 +13063,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Makeshift Chair (#35, P1): a 3D physics game...",
    "costTotalUsd": 29.55,
    "latestChange": {
     "text": "feat: show the chair in shared links",
@@ -12813,25 +13078,25 @@
     "caption": ""
    },
    "why": "A published photo series of broken street chairs repaired with scraps, rope, bricks and tape.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 2
+    "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "3d physics chair design and spike",
    "id": "makeshift-chair",
    "number": 35,
    "repo": "makeshift-chair",
    "title": "Makeshift Chair",
    "line": "",
    "url": "https://chenhsieh.github.io/makeshift-chair/",
-   "stage": "live",
-   "who": null,
-   "priority": "P2",
-   "priorityNote": "Grassroots 3D look, correct source link, mechanism pass",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": "P1",
+   "priorityNote": "make it a 3D physics game where sitting goes ridiculously wrong; daily games",
    "shelfNote": "",
    "image": "promo/makeshift-chair/first.jpg",
    "released": false,
@@ -12842,7 +13107,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T02:32:35+00:00",
-   "lastChange": "2026-10-21T18:54:12+00:00",
+   "lastChange": "2026-10-24T03:00:06+00:00",
    "cost": {
     "apiUsd": 11.15,
     "codexRuns": 2,
@@ -12856,6 +13121,20 @@
     "totalUsdEst": 29.55
    },
    "tasks": [
+    {
+     "title": "P1MC00_3d physics chair design and spike",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Makeshift Chair (#35, P1): a 3D physics game in the spirit of Human Fall Flat where sitting down goes ridiculously wrong; design and a working spike.",
+     "since": "2026-10-24T03:00:06+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SD26_studio standard makeshift chair",
      "state": "done",
@@ -12900,14 +13179,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-21T18:54:12+00:00",
@@ -13567,7 +13846,7 @@
    ]
   },
   {
-   "nextTask": "Mint: say what everything on the garden is...",
+   "nextTask": null,
    "costTotalUsd": 21.6,
    "latestChange": {
     "text": "premise card (The idea) from the round-5 brief, kit 13",
@@ -13590,8 +13869,8 @@
    "title": "Mint",
    "line": "",
    "url": "https://chenhsieh.github.io/mint/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -13605,7 +13884,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-24T03:00:00+00:00",
+   "lastChange": "2026-10-24T03:00:28+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -13621,10 +13900,10 @@
    "tasks": [
     {
      "title": "P2MN00_mint story first minute and night",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Mint: say what everything on the garden is, teach the gardener's pull in the first minute, show the night",
-     "since": "2026-10-24T01:30:16+00:00",
+     "since": "2026-10-24T03:00:02+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -13649,8 +13928,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -14596,7 +14875,7 @@
    ]
   },
   {
-   "nextTask": "Mushroom Gaps (#68, P1): show what a move...",
+   "nextTask": "Mushroom Gaps: find the original piece and the...",
    "costTotalUsd": 29.19,
    "latestChange": {
     "text": "feat: show the first mushroom floor in link previews",
@@ -14618,7 +14897,7 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "preview before commit and why it fails",
+   "waitingOn": "journalist research and visual round design",
    "id": "mushroom-gaps",
    "number": 68,
    "repo": "mushroom-gaps",
@@ -14627,8 +14906,8 @@
    "url": "https://chenhsieh.github.io/mushroom-gaps/",
    "stage": "queued",
    "who": "Codex",
-   "priority": "P2",
-   "priorityNote": "Clear cause and effect for each tap, a story for the cave",
+   "priority": "P1",
+   "priorityNote": "wants this to happen; preview before commit, journalist research, taste visual...",
    "shelfNote": "",
    "image": "promo/mushroom-gaps/first.jpg",
    "released": false,
@@ -14639,7 +14918,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T23:26:23+00:00",
-   "lastChange": "2026-10-24T02:59:58+00:00",
+   "lastChange": "2026-10-24T03:00:02+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -14653,6 +14932,20 @@
     "totalUsdEst": 29.19
    },
    "tasks": [
+    {
+     "title": "P1MG01_journalist research and visual round design",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Mushroom Gaps: find the original piece and the right style, then three taste mocks.",
+     "since": "2026-10-24T03:00:02+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1MG00_preview before commit and why it fails",
      "state": "queued",
@@ -14711,7 +15004,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
@@ -16982,8 +17275,8 @@
    "url": "https://chenhsieh.github.io/pinch-points/",
    "stage": "queued",
    "who": "Codex",
-   "priority": "P2",
-   "priorityNote": "Pinch six stones flat as the surface flattens live; par set by search, plus a",
+   "priority": "P1",
+   "priorityNote": "turns an esoteric paper into an interactive game; explain the mechanism, show...",
    "shelfNote": "",
    "image": "promo/pinch-points/first.jpg",
    "released": false,
@@ -18437,7 +18730,7 @@
    ]
   },
   {
-   "nextTask": "Remote Viewer: the original scan shows by default",
+   "nextTask": null,
    "costTotalUsd": 77.93,
    "latestChange": {
     "text": "P3OR02_remote-viewer-judge-helpers-test: WORKDIR",
@@ -18467,8 +18760,8 @@
    "title": "Remote Viewer",
    "line": "Uncover a CIA file and name its assignment.",
    "url": "https://chenhsieh.github.io/remote-viewer/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Game-design pass to find where the fun is and build it",
    "shelfNote": "",
@@ -18481,7 +18774,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-14T20:04:00+00:00",
-   "lastChange": "2026-10-24T00:36:48+00:00",
+   "lastChange": "2026-10-24T03:03:26+00:00",
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 1,
@@ -18497,10 +18790,10 @@
    "tasks": [
     {
      "title": "P1RV17_remote viewer original scan by default",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Remote Viewer: the original scan shows by default.",
-     "since": "2026-10-24T00:36:48+00:00",
+     "since": "2026-10-24T03:03:22+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -18581,8 +18874,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 5
    },
@@ -24590,266 +24883,6 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 79.63,
-   "latestChange": {
-    "text": "birds fly their real routes (CSS hop transform threw them to top-left), Play/Pause/Replay...",
-    "at": "2026-10-24T02:41:15+00:00"
-   },
-   "promo": {
-    "files": {
-     "first": "promo/fool-the-algorithm/first.jpg",
-     "play": "promo/fool-the-algorithm/play.jpg",
-     "card": "promo/fool-the-algorithm/card.jpg"
-    },
-    "caption": "Change letters to widen the greedy gap."
-   },
-   "why": "Now The Forager: drag berries so a bird that always flies to the closest berry takes a much longer trip than the shortest round trip.",
-   "state": "revise",
-   "stateFlags": {
-    "refining": false,
-    "resting": false,
-    "regressed": false,
-    "reviseRound": 2,
-    "daysInState": 4
-   },
-   "waitingOn": "rename repo and game to forager",
-   "id": "fool-the-algorithm",
-   "number": 94,
-   "repo": "fool-the-algorithm",
-   "title": "The Forager",
-   "line": "Change letters to widen the greedy gap.",
-   "url": "https://chenhsieh.github.io/fool-the-algorithm/",
-   "stage": "building",
-   "who": "Claude",
-   "priority": "P1",
-   "priorityNote": "Show per-path distance bars and named berries, lay the two",
-   "shelfNote": "",
-   "image": "promo/fool-the-algorithm/first.jpg",
-   "released": false,
-   "releasedOn": null,
-   "releasedNote": "",
-   "archived": false,
-   "archivedOn": null,
-   "archivedKind": "",
-   "archivedNote": "",
-   "firstSeen": "2026-10-16T07:50:19+00:00",
-   "lastChange": "2026-10-24T02:57:18+00:00",
-   "cost": {
-    "apiUsd": 10.18,
-    "codexRuns": 3,
-    "claudeRuns": 5,
-    "apiRuns": 1,
-    "codexTokens": 874871,
-    "codexUsdEst": 1.05,
-    "claudeUsdEst": 18.0,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
-    "totalUsdEst": 79.63
-   },
-   "tasks": [
-    {
-     "title": "P1FG01_rename repo and game to forager",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Rename the game and its repo to Forager, with the old address redirecting.",
-     "since": "2026-10-24T02:41:24+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P1FG00_forager birds and play pause",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Forager: birds fly their real path, Pause shows while playing, and the trip is easy to follow.",
-     "since": "2026-10-24T00:36:48+00:00",
-     "done": "2026-10-24T00:36:48+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "What a player sees now: after a drop, both birds really fly. They leave the nest and travel along their own routes at one constant speed, slowing a little into each turn, and Grey's route grows as a dark line behind it...."
-    },
-    {
-     "title": "P1SD41_studio standard fool the algorithm",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T21:08:25+00:00",
-     "done": "2026-10-21T21:08:25+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "review of fool the algorithm distance bars",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-19T19:13:01+00:00",
-     "done": "2026-10-19T19:13:01+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "fool the algorithm distance bars",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Show per-path distance bars and named berries, lay the two routes out as lines under the board, add more simple rival strategies.",
-     "since": "2026-10-19T17:54:51+00:00",
-     "done": "2026-10-19T17:54:51+00:00",
-     "reviewed": true,
-     "minutes": 23,
-     "tokens": 245756,
-     "reviewOutcome": "fixed",
-     "commit": null,
-     "result": "Named berries, next-flight distance bars, route ledgers, arrival-based Next steps, and optional random-walk Moss are live."
-    },
-    {
-     "title": "review of forager feel",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-18T23:22:10+00:00",
-     "done": "2026-10-18T23:22:10+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "forager feel",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Berries always draggable (any move resets the run), smooth eased flight with one play/pause toggle, and a cleaner cute redraw.",
-     "since": "2026-10-18T20:13:39+00:00",
-     "done": "2026-10-18T20:13:39+00:00",
-     "reviewed": true,
-     "minutes": 21,
-     "tokens": 309977,
-     "reviewOutcome": "fixed",
-     "commit": null,
-     "result": "Forager now has touch-priority berries, smooth Play/Pause flight, 1×/2× speed, and cleaner illustrated themes."
-    },
-    {
-     "title": "review of forager step",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-18T19:15:05+00:00",
-     "done": "2026-10-18T19:15:05+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    }
-   ],
-   "taskCounts": {
-    "queued": 0,
-    "running": 1,
-    "waitingDesign": 0,
-    "done": 9
-   },
-   "verdict": {
-    "date": "2026-10-19",
-    "verdict": "revise",
-    "note": "Show per-path distance bars and named berries, lay the two"
-   },
-   "needsYou": null,
-   "inProgress": true,
-   "history": [
-    {
-     "at": "2026-10-24T02:41:15+00:00",
-     "ok": true,
-     "note": "birds fly their real routes (CSS hop transform threw them to top-left), Play/Pause/Replay toggle, numbered legs, choice rings, trace line, two trip bars, result says how much longer; live",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T22:27:17+00:00",
-     "ok": true,
-     "note": "top-left now own logo and title to first screen (studio standard)",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T22:26:49+00:00",
-     "ok": true,
-     "note": "test: topbar test expects the own-brand link",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T22:21:27+00:00",
-     "ok": true,
-     "note": "fix: Fool the Algorithm top-left shows its own logo and title",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-19T19:16:51+00:00",
-     "ok": true,
-     "note": "fix: berry names are readable on the board and the route rows wrap instead of hiding stops",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-19T19:11:11+00:00",
-     "ok": true,
-     "note": "named berry routes, next-flight distance bars, and arrival steps live",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-19T19:08:34+00:00",
-     "ok": true,
-     "note": "Route distance dashboard and named berry paths published.",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-19T17:22:41+00:00",
-     "ok": true,
-     "note": "Test bug: Play/Pause assertion named the intentional Pause action as a failure; it now verifies Play resumes and remains running. Not published.",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-19T16:53:02+00:00",
-     "ok": true,
-     "note": "fix: every level is open while we test",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-19T01:28:08+00:00",
-     "ok": true,
-     "note": "R13 review: Grey visibly lands after Orange, run controls under the board, browser suite green",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-19T01:26:34+00:00",
-     "ok": true,
-     "note": "fix: Grey visibly lands after Orange, and Play sits under the board",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-18T20:57:53+00:00",
-     "ok": true,
-     "note": "Forager feel pass live: berries take priority over runs and reset at the nest, eased Play/Pause flight with 1×/2× speed, illustrated themes; prior medals, dailies and theme survive; live real-touch screenshots reviewed at 390x844 and 320x568",
-     "source": "board note"
-    }
-   ]
-  },
-  {
    "nextTask": "The Lot Waits (#121): a design reset: a...",
    "costTotalUsd": 43.2,
    "latestChange": {
@@ -26413,7 +26446,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:13:20+00:00",
-   "lastChange": "2026-10-24T02:58:39+00:00",
+   "lastChange": "2026-10-24T03:02:41+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -26432,16 +26465,13 @@
      "state": "running",
      "worker": "Codex",
      "plan": "Tractatus Tree: three practice pages before level 1 (fix the later levels the lesson branch broke)",
-     "since": "2026-10-24T02:01:37+00:00",
+     "since": "2026-10-24T03:02:52+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-24T02:50:44+00:00",
-      "subject": "docs: record short-phone touch cause"
-     },
+     "commit": null,
      "result": ""
     },
     {

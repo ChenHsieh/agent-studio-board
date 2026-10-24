@@ -1,5 +1,5 @@
 {
- "generated": 1792810852,
+ "generated": 1792811049,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -80,7 +80,7 @@
   "label": "estimate"
  },
  "overflow": {
-  "codexOut": false,
+  "codexOut": true,
   "converted": 0,
   "convertedRunning": 0,
   "claudeWorkers": 0,
@@ -108,41 +108,21 @@
    "created": 1792808770
   },
   {
-   "id": "P1FG01_rename-repo-and-game-to-forager",
-   "request": "Rename the game and its repo to Forager, with the old address redirecting.",
-   "game": "The Forager",
+   "id": "P1RV17_remote-viewer-original-scan-by-default",
+   "request": "Remote Viewer: the original scan shows by default.",
+   "game": "Remote Viewer",
    "route": "Claude",
    "model": "sonnet",
-   "effort": "high",
+   "effort": "medium",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
-   "after": [
-    "P1FG00_forager-birds-and-play-pause"
-   ],
+   "after": [],
    "priority": "P1",
-   "why": "Now The Forager: drag berries so a bird that always flies to the closest berry takes a much longer trip than the shortest round trip.",
+   "why": "Declassified CIA Stargate remote-viewing session reports, with a blackout rule after the word game Redactle.",
    "state": "running",
    "at": 1792802208,
    "created": 1792802208
-  },
-  {
-   "id": "P2FM58_tractatus-tree-first-minute-fix",
-   "request": "Tractatus Tree: three practice pages before level 1 (fix the later levels the lesson branch broke)",
-   "game": "Tractatus Tree",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "A social post on Wittgenstein's numbered propositions (1, 1.1, 4.001 and so on).",
-   "state": "running",
-   "at": 1792807297,
-   "created": 1792807297,
-   "estPercentOfWeek": 0.25
   },
   {
    "id": "P1UX03_checklist-view-with-range",
@@ -386,23 +366,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792808493
-  },
-  {
-   "id": "P1RV17_remote-viewer-original-scan-by-default",
-   "request": "Remote Viewer: the original scan shows by default.",
-   "game": "Remote Viewer",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "medium",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "Declassified CIA Stargate remote-viewing session reports, with a blackout rule after the word game Redactle.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792802208
   },
   {
    "id": "P1SK00_story-daily-and-share",
@@ -2063,7 +2026,7 @@
   {
    "id": "P1FG00_forager-birds-and-play-pause",
    "request": "Forager: birds fly their real path, Pause shows while playing, and the trip is easy to follow.",
-   "game": "The Forager",
+   "game": "Forager",
    "route": "Claude",
    "model": "opus",
    "effort": "high",
@@ -2072,7 +2035,26 @@
    "estMinutes": null,
    "after": [],
    "priority": "P1",
-   "why": "Now The Forager: drag berries so a bird that always flies to the closest berry takes a much longer trip than the shortest round trip.",
+   "why": "Forager (renamed from Fool the Algorithm 2026-10-23, now at /forager/): drag berries so a bird that always flies to the closest berry takes a much longer trip...",
+   "state": "done",
+   "at": 1792802208,
+   "created": 1792802208
+  },
+  {
+   "id": "P1FG01_rename-repo-and-game-to-forager",
+   "request": "Rename the game and its repo to Forager, with the old address redirecting.",
+   "game": "Forager",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1FG00_forager-birds-and-play-pause"
+   ],
+   "priority": "P1",
+   "why": "Forager (renamed from Fool the Algorithm 2026-10-23, now at /forager/): drag berries so a bird that always flies to the closest berry takes a much longer trip...",
    "state": "done",
    "at": 1792802208,
    "created": 1792802208
