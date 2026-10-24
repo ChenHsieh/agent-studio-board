@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T09:17:10+00:00",
+ "generated": "2026-10-24T09:20:25+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -25,14 +25,14 @@
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 10,
+    "doneToday": 12,
     "minutes": 180,
     "estimateMinutes": 90
    }
   },
   "queued": 78,
   "running": 2,
-  "doneToday": 10,
+  "doneToday": 12,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -43,7 +43,7 @@
   },
   "codexPaused": false,
   "minutesRemaining": 3260,
-  "estimatedFinish": "2026-10-26T12:37:10+00:00",
+  "estimatedFinish": "2026-10-26T12:40:25+00:00",
   "estimateMinutes": 3080
  },
  "lanes": [
@@ -57,10 +57,10 @@
   },
   {
    "worker": "Claude",
-   "game": "blackout-notice",
-   "task": "P2BN03_poem core research",
-   "since": "2026-10-24T09:11:41+00:00",
-   "activity": "2026-10-24T09:16:13+00:00",
+   "game": "makeshift-chair",
+   "task": "P1MC00_3d physics chair design and spike",
+   "since": "2026-10-24T09:18:50+00:00",
+   "activity": "2026-10-24T09:20:03+00:00",
    "commit": null
   }
  ],
@@ -1446,7 +1446,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Blackout Notice: the visual round for the couplet...",
    "costTotalUsd": 33.12,
    "latestChange": {
     "text": "design: Blackout Notice poem core research, the couplet erased from a sheet",
@@ -1475,8 +1475,8 @@
    "title": "Blackout Notice",
    "line": "Black out words on a stairwell notice until it says something kinder; 20 notices and a daily.",
    "url": "https://chenhsieh.github.io/blackout-notice/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Black out words on a stairwell notice until it says something kinder; 20",
    "shelfNote": "",
@@ -1489,27 +1489,69 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-24T09:16:13+00:00",
+   "lastChange": "2026-10-24T09:17:53+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
-    "claudeRuns": 4,
+    "claudeRuns": 6,
     "apiRuns": 0,
     "codexTokens": 601307,
     "codexUsdEst": 0.72,
-    "claudeUsdEst": 14.4,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
+    "claudeUsdEst": 21.6,
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
     "totalUsdEst": 33.12
    },
    "tasks": [
     {
+     "title": "P2BN05_couplet visual round",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Blackout Notice: the visual round for the couplet game (red couplet paper, ink, an old printed sheet)",
+     "since": "2026-10-24T09:17:53+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P2BN04_couplet core rebuild",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Blackout Notice: rebuild as the couplet game (answer a real Tang first line by blacking out a sheet)",
+     "since": "2026-10-24T09:17:49+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P3OR77_couplet data file",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Blackout Notice: the couplet data file (Tang parallel pairs, joins, tones) for the new core",
+     "since": "2026-10-24T09:17:45+00:00",
+     "done": "2026-10-24T09:17:45+00:00",
+     "reviewed": false,
+     "minutes": 1,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test:"
+    },
+    {
      "title": "P2BN03_poem core research",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Blackout Notice (#130): a poet and a game designer find a core where the meaning of the words matters.",
-     "since": "2026-10-24T09:11:41+00:00",
-     "done": null,
+     "since": "2026-10-24T02:54:21+00:00",
+     "done": "2026-10-24T02:54:21+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -1572,55 +1614,13 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "fix: share lines follow the reader's language"
-    },
-    {
-     "title": "P3OR13_blackout notice engine test",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Blackout Notice: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
-     "since": "2026-10-22T21:16:30+00:00",
-     "done": "2026-10-22T21:16:30+00:00",
-     "reviewed": false,
-     "minutes": 2,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "OR LANE OK: Test: test/engine.test.mjs | tail -1 | grep -qx 'ok 6 cases'"
-    },
-    {
-     "title": "P2FM08_blackout notice first minute",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Blackout Notice: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:12:13+00:00",
-     "done": "2026-10-22T20:12:13+00:00",
-     "reviewed": false,
-     "minutes": 27,
-     "tokens": 360885,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "feat: teach the stairwell notice in four playable steps"
-    },
-    {
-     "title": "blackout notice",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "New game: black out a stiff notice until it says something true",
-     "since": "2026-10-22T18:07:55+00:00",
-     "done": "2026-10-22T18:07:55+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "P2n60_blackout-notice RESULT (Sonnet/high). LIVE https://chenhsieh.github.io/blackout-notice/ commit on main"
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 2,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 7
+    "done": 9
    },
    "verdict": {
     "date": "2026-10-22",
@@ -1991,13 +1991,13 @@
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 6,
-    "claudeRuns": 8,
+    "claudeRuns": 9,
     "apiRuns": 3,
     "codexTokens": 1320538,
     "codexUsdEst": 1.58,
-    "claudeUsdEst": 28.8,
-    "earlierRounds": 15,
-    "earlierUsdEst": 54.0,
+    "claudeUsdEst": 32.4,
+    "earlierRounds": 14,
+    "earlierUsdEst": 50.4,
     "totalUsdEst": 91.11
    },
    "tasks": [
@@ -2017,17 +2017,17 @@
     },
     {
      "title": "P3OR76_chai foam slip words",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "Chai Boil: the four foam-state words for the new photo look",
      "since": "2026-10-24T09:11:18+00:00",
-     "done": null,
+     "done": "2026-10-24T09:11:18+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 1,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: grep -q \"foamLow: \\['Foam low: turn the dial up', '奶泡還低：把火轉大'\\]\" docs/chai.js && grep -q \"foamRise: \\['Rising', '在爬升'\\]\" docs/chai.js && grep -q \"foamBand: \\['Foam at the gold ring: turn down now',..."
     },
     {
      "title": "P1CB11_hyperreal visual round",
@@ -2115,10 +2115,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
-    "done": 17
+    "done": 18
    },
    "verdict": {
     "date": "2026-10-21",
@@ -13147,7 +13147,7 @@
    ]
   },
   {
-   "nextTask": "Makeshift Chair (#35, P1): a 3D physics game...",
+   "nextTask": null,
    "costTotalUsd": 29.55,
    "latestChange": {
     "text": "feat: show the chair in shared links",
@@ -13177,8 +13177,8 @@
    "title": "Makeshift Chair",
    "line": "",
    "url": "https://chenhsieh.github.io/makeshift-chair/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "make it a 3D physics game where sitting goes ridiculously wrong; daily games",
    "shelfNote": "",
@@ -13191,7 +13191,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T02:32:35+00:00",
-   "lastChange": "2026-10-24T03:00:06+00:00",
+   "lastChange": "2026-10-24T09:20:03+00:00",
    "cost": {
     "apiUsd": 11.15,
     "codexRuns": 2,
@@ -13207,10 +13207,10 @@
    "tasks": [
     {
      "title": "P1MC00_3d physics chair design and spike",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Makeshift Chair (#35, P1): a 3D physics game in the spirit of Human Fall Flat where sitting down goes ridiculously wrong; design and a working spike.",
-     "since": "2026-10-24T03:00:06+00:00",
+     "since": "2026-10-24T09:18:50+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -13263,8 +13263,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },

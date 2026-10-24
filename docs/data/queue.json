@@ -1,22 +1,33 @@
 {
- "generated": 1792833473,
+ "generated": 1792833638,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
-  "ready": 2,
+  "ready": 0,
   "waiting": 2,
-  "queued": 4,
+  "queued": 2,
   "running": 0,
-  "done24h": 24,
+  "done24h": 26,
   "modelsQueued": {
-   "openai/gpt-4.1": 2,
    "deepseek-v4-flash": 2
   },
   "spendTodayUsd": 0.0,
-  "runsToday": 9,
-  "runsTodayUnpriced": 9,
+  "runsToday": 11,
+  "runsTodayUnpriced": 11,
   "spendTotalUsd": 6.36,
   "recent": [
+   {
+    "id": "P3OR77_couplet-data-file",
+    "request": "Blackout Notice: the couplet data file (Tang parallel pairs, joins, tones) for the new core",
+    "model": "openai/gpt-4.1",
+    "at": 1792833465
+   },
+   {
+    "id": "P3OR76_chai-foam-slip-words",
+    "request": "Chai Boil: the four foam-state words for the new photo look",
+    "model": "openai/gpt-4.1",
+    "at": 1792833078
+   },
    {
     "id": "P3OR75_mushroom-survey-fonts-and-singular",
     "request": "Mushroom at the End: survey-print fonts and the singular mushroom line",
@@ -64,18 +75,6 @@
     "request": "Remote Viewer: a credits page that names its fonts, the declassified pages and their licences",
     "model": "deepseek-v4-flash",
     "at": 1792819892
-   },
-   {
-    "id": "P3OR67_sync-kit-copies-looks-folder",
-    "request": "Template: tools/sync_kit.sh stops on docs/kit/looks because its cp has no -r.",
-    "model": "openai/gpt-4.1",
-    "at": 1792815750
-   },
-   {
-    "id": "P3OR65_name-biosteganography-title",
-    "request": "Name audit: show one name for biosteganography everywhere",
-    "model": "deepseek-v4-flash",
-    "at": 1792795393
    }
   ],
   "label": "estimate"
@@ -111,21 +110,40 @@
    "created": 1792824395
   },
   {
-   "id": "P2BN03_poem-core-research",
-   "request": "Blackout Notice (#130): a poet and a game designer find a core where the meaning of the words matters.",
-   "game": "Blackout Notice",
+   "id": "P1MC00_3d-physics-chair-design-and-spike",
+   "request": "Makeshift Chair (#35, P1): a 3D physics game in the spirit of Human Fall Flat where sitting down goes ridiculously wrong; design and a working spike.",
+   "game": "Makeshift Chair",
    "route": "Claude",
    "model": "opus",
    "effort": "high",
-   "kind": "build",
+   "kind": "design",
    "size": "one repo",
    "estMinutes": null,
    "after": [],
-   "priority": "P2",
-   "why": "A scruffy hand-lettered hiring post and a job ad written mostly as a list of what the company is not.",
+   "priority": "P1",
+   "why": "A published photo series of broken street chairs repaired with scraps, rope, bricks and tape.",
    "state": "running",
-   "at": 1792810461,
-   "created": 1792810461
+   "at": 1792810806,
+   "created": 1792810806
+  },
+  {
+   "id": "P1CB12_photo-kitchens-visual-build",
+   "request": "Chai Boil: build the photographic kitchens (one real photo per kitchen, foam, gold ring and steam drawn on top)",
+   "game": "Chai Boil",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR76_chai-foam-slip-words"
+   ],
+   "priority": "P1",
+   "why": "An AI-made video post of a pot of milk tea foaming up on a wood fire, plus the Lunar Lander game.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792833082
   },
   {
    "id": "P1CF04_marks-and-life-bar-look",
@@ -145,23 +163,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792805548
-  },
-  {
-   "id": "P1MC00_3d-physics-chair-design-and-spike",
-   "request": "Makeshift Chair (#35, P1): a 3D physics game in the spirit of Human Fall Flat where sitting down goes ridiculously wrong; design and a working spike.",
-   "game": "Makeshift Chair",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "design",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A published photo series of broken street chairs repaired with scraps, rope, bricks and tape.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792810806
   },
   {
    "id": "P1MG02_survey-print-visual-build",
@@ -307,23 +308,6 @@
    "created": 1792810482
   },
   {
-   "id": "P3OR76_chai-foam-slip-words",
-   "request": "Chai Boil: the four foam-state words for the new photo look",
-   "game": "Chai Boil",
-   "route": "OpenRouter",
-   "model": "openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "An AI-made video post of a pot of milk tea foaming up on a wood fire, plus the Lunar Lander game.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792833078
-  },
-  {
    "id": "P1CD02_night-desk-visual-build",
    "request": "Checking Desk: build the night-shift desk look (photo desk, squared-paper proofs, sharp at phone resolution)",
    "game": "Checking Desk",
@@ -397,6 +381,25 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792820937
+  },
+  {
+   "id": "P2BN04_couplet-core-rebuild",
+   "request": "Blackout Notice: rebuild as the couplet game (answer a real Tang first line by blacking out a sheet)",
+   "game": "Blackout Notice",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR77_couplet-data-file"
+   ],
+   "priority": "P2",
+   "why": "A scruffy hand-lettered hiring post and a job ad written mostly as a list of what the company is not.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792833469
   },
   {
    "id": "P2HK00_which-one-to-drop-clarity",
@@ -532,23 +535,6 @@
    "waitingOn": [],
    "created": 1792724295,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P3OR77_couplet-data-file",
-   "request": "Blackout Notice: the couplet data file (Tang parallel pairs, joins, tones) for the new core",
-   "game": "Blackout Notice",
-   "route": "OpenRouter",
-   "model": "openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "A scruffy hand-lettered hiring post and a job ad written mostly as a list of what the company is not.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792833465
   },
   {
    "id": "P2GG00_gallery-guess-save-migration-test",
@@ -893,27 +879,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P1CB12_photo-kitchens-visual-build",
-   "request": "Chai Boil: build the photographic kitchens (one real photo per kitchen, foam, gold ring and steam drawn on top)",
-   "game": "Chai Boil",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P3OR76_chai-foam-slip-words"
-   ],
-   "priority": "P1",
-   "why": "An AI-made video post of a pot of milk tea foaming up on a wood fire, plus the Lunar Lander game.",
-   "state": "waiting",
-   "waitingOn": [
-    "P3OR76_chai-foam-slip-words"
-   ],
-   "created": 1792833082
-  },
-  {
    "id": "P1CF05_reset-tests-and-review",
    "request": "Clean Features: tests for the reset and a stranger review",
    "game": "What the Dish Sees",
@@ -1127,25 +1092,25 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P2BN04_couplet-core-rebuild",
-   "request": "Blackout Notice: rebuild as the couplet game (answer a real Tang first line by blacking out a sheet)",
+   "id": "P2BN05_couplet-visual-round",
+   "request": "Blackout Notice: the visual round for the couplet game (red couplet paper, ink, an old printed sheet)",
    "game": "Blackout Notice",
    "route": "Claude",
-   "model": "sonnet",
+   "model": "opus",
    "effort": "high",
-   "kind": "build",
+   "kind": "visual",
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P3OR77_couplet-data-file"
+    "P2BN04_couplet-core-rebuild"
    ],
    "priority": "P2",
    "why": "A scruffy hand-lettered hiring post and a job ad written mostly as a list of what the company is not.",
    "state": "waiting",
    "waitingOn": [
-    "P3OR77_couplet-data-file"
+    "P2BN04_couplet-core-rebuild"
    ],
-   "created": 1792833469
+   "created": 1792833473
   },
   {
    "id": "P2HN00_herbal-pages-stay-open",
@@ -2500,6 +2465,23 @@
    "created": 1792831398
   },
   {
+   "id": "P3OR76_chai-foam-slip-words",
+   "request": "Chai Boil: the four foam-state words for the new photo look",
+   "game": "Chai Boil",
+   "route": "OpenRouter",
+   "model": "openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "An AI-made video post of a pot of milk tea foaming up on a wood fire, plus the Lunar Lander game.",
+   "state": "done",
+   "at": 1792833078,
+   "created": 1792833078
+  },
+  {
    "id": "P1CD00_first-minute-step-three-stuck",
    "request": "Copy Drift (#129): the third first-minute page gets stuck; find out if it is the story or the rules, and fix it.",
    "game": "Copy Drift",
@@ -2761,6 +2743,23 @@
    "created": 1792802208
   },
   {
+   "id": "P2BN03_poem-core-research",
+   "request": "Blackout Notice (#130): a poet and a game designer find a core where the meaning of the words matters.",
+   "game": "Blackout Notice",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "A scruffy hand-lettered hiring post and a job ad written mostly as a list of what the company is not.",
+   "state": "done",
+   "at": 1792810461,
+   "created": 1792810461
+  },
+  {
    "id": "P3OR53_name-to-carry-data-inside-game",
    "request": "Name to Carry: move the name list into the game file so tools can load it alone (cheap lane)",
    "game": "A Name to Carry",
@@ -2897,6 +2896,23 @@
    "state": "done",
    "at": 1792824844,
    "created": 1792824844
+  },
+  {
+   "id": "P3OR77_couplet-data-file",
+   "request": "Blackout Notice: the couplet data file (Tang parallel pairs, joins, tones) for the new core",
+   "game": "Blackout Notice",
+   "route": "OpenRouter",
+   "model": "openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "A scruffy hand-lettered hiring post and a job ad written mostly as a list of what the company is not.",
+   "state": "done",
+   "at": 1792833465,
+   "created": 1792833465
   },
   {
    "id": "P3OR56_gallery-guess-credits-page",
