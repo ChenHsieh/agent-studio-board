@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-24T23:30:08+00:00",
+ "generated": "2026-10-24T23:32:30+00:00",
  "ops": {
-  "count": 46,
+  "count": 42,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,35 +20,35 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 69,
+    "queued": 67,
     "running": 1,
     "doneToday": 2,
-    "minutes": 2800,
-    "estimateMinutes": 2800
+    "minutes": 2720,
+    "estimateMinutes": 2720
    },
    "Claude": {
     "queued": 1,
-    "running": 0,
+    "running": 1,
     "doneToday": 75,
-    "minutes": 60,
+    "minutes": 120,
     "estimateMinutes": 60
    }
   },
-  "queued": 70,
-  "running": 1,
+  "queued": 68,
+  "running": 2,
   "doneToday": 77,
   "lanes": {
    "Codex": 1,
-   "Claude": 1
+   "Claude": 2
   },
   "laneCap": {
    "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2860,
-  "estimatedFinish": "2026-10-26T22:10:08+00:00",
-  "estimateMinutes": 2800
+  "minutesRemaining": 2840,
+  "estimatedFinish": "2026-10-26T20:52:30+00:00",
+  "estimateMinutes": 2720
  },
  "lanes": [
   {
@@ -56,15 +56,23 @@
    "game": "lot-waits",
    "task": "P1LW02_lot waits day strip and trust",
    "since": "2026-10-24T23:16:42+00:00",
-   "activity": "2026-10-24T23:30:04+00:00",
+   "activity": "2026-10-24T23:32:27+00:00",
    "commit": {
     "at": "2026-10-24T23:24:43+00:00",
     "subject": "wip: P1LW02_lot-waits-day-strip-and-trust (Codex lane autosave 19:24)"
    }
+  },
+  {
+   "worker": "Claude",
+   "game": "tree-hero",
+   "task": "P1TH03_worked example journey",
+   "since": "2026-10-24T23:30:29+00:00",
+   "activity": "2026-10-24T23:30:51+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 0,
+ "claudeWorkers": 1,
  "apiSpentUsd": 317.01,
  "claudeInSession": {
   "runs": 287,
@@ -17919,17 +17927,17 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T20:46:06+00:00",
-   "lastChange": "2026-10-24T23:28:56+00:00",
+   "lastChange": "2026-10-24T23:30:29+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 0,
     "codexTokens": 280385,
     "codexUsdEst": 0.34,
-    "claudeUsdEst": 10.8,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
+    "claudeUsdEst": 14.4,
+    "earlierRounds": 9,
+    "earlierUsdEst": 32.4,
     "totalUsdEst": 47.14
    },
    "tasks": [
@@ -17938,7 +17946,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Pinch Points: a rule card before level 1, a hint per level, the rule on the result card, a better daily and share line",
-     "since": "2026-10-24T06:59:35+00:00",
+     "since": "2026-10-24T23:30:29+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -17953,20 +17961,6 @@
      "worker": "Codex",
      "plan": "Pinch Points: visual round with the taste spin, three looks and a pick",
      "since": "2026-10-24T06:59:29+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P1PP01_daily levels and quirky share",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Pinch Points: a generated daily level and a fun, academic, quirky share text.",
-     "since": "2026-10-24T02:59:55+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -18004,6 +17998,20 @@
      "result": "OR LANE OK: Test: test/explain_words.test.mjs && -e \"const vm=require('vm'),fs=require('fs');const c={window:{}};vm.runInNewContext(fs.readFileSync('docs/explain.word"
     },
     {
+     "title": "P1PP01_daily levels and quirky share",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Pinch Points: a generated daily level and a fun, academic, quirky share text.",
+     "since": "2026-10-24T02:59:55+00:00",
+     "done": "2026-10-24T02:59:55+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1PP01 DONE (Claude Sonnet)."
+    },
+    {
      "title": "P1PP00_explain the strategy and show the movement",
      "state": "done",
      "worker": "Claude",
@@ -18033,10 +18041,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": null,
    "needsYou": null,
@@ -25961,7 +25969,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:14:25+00:00",
-   "lastChange": "2026-10-24T23:30:04+00:00",
+   "lastChange": "2026-10-24T23:32:27+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -27833,15 +27841,15 @@
     "reviseRound": 1,
     "daysInState": 5
    },
-   "waitingOn": "strings and tests",
+   "waitingOn": "worked example journey",
    "id": "tree-hero",
    "number": 11,
    "repo": "tree-hero",
    "title": "Tree Hero",
    "line": "Swap branches until the family tree needs the fewest changes.",
    "url": "https://chenhsieh.github.io/tree-hero/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
@@ -27855,7 +27863,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-09-05T02:54:53+00:00",
-   "lastChange": "2026-10-24T22:08:24+00:00",
+   "lastChange": "2026-10-24T23:30:51+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -27870,11 +27878,11 @@
    },
    "tasks": [
     {
-     "title": "P1TH04_strings and tests",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Tree Hero: tidy words and tests after the journey rebuild",
-     "since": "2026-10-24T02:23:15+00:00",
+     "title": "P1TH03_worked example journey",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Tree Hero: a one-line premise, a tiny worked example, a guided first swap",
+     "since": "2026-10-24T23:30:29+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -27884,11 +27892,11 @@
      "result": ""
     },
     {
-     "title": "P1TH03_worked example journey",
+     "title": "P1TH04_strings and tests",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Tree Hero: a one-line premise, a tiny worked example, a guided first swap",
-     "since": "2026-10-24T01:48:25+00:00",
+     "plan": "Tree Hero: tidy words and tests after the journey rebuild",
+     "since": "2026-10-24T02:23:15+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -27969,8 +27977,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 5
    },
