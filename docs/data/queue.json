@@ -1,5 +1,5 @@
 {
- "generated": 1792885781,
+ "generated": 1792885922,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -89,9 +89,9 @@
  },
  "tasks": [
   {
-   "id": "P1RN45_tap-label-beside-picture",
-   "request": "move the How to play tap label beside the picture",
-   "game": "阿嬤讀得出來",
+   "id": "P1LS01_lesson-check-before-gates",
+   "request": "Lessons never light a move the game refuses: a quick local check before the gates",
+   "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
@@ -99,11 +99,11 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [],
-   "priority": "P1",
-   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
+   "priority": null,
+   "why": "",
    "state": "running",
-   "at": 1792808493,
-   "created": 1792808493
+   "at": 1792790568,
+   "created": 1792790568
   },
   {
    "id": "P1CF05_reset-tests-and-review",
@@ -493,23 +493,6 @@
    "created": 1792863802
   },
   {
-   "id": "P1LS01_lesson-check-before-gates",
-   "request": "Lessons never light a move the game refuses: a quick local check before the gates",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792790568
-  },
-  {
    "id": "P1MM03_marble-mechanisms-act-two",
    "request": "Marble Machine: spring pads, bells, doors and funnels with levels where parts interact",
    "game": "Studio",
@@ -527,6 +510,25 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792838738
+  },
+  {
+   "id": "P1ZM00_no-accidental-zoom-all-games",
+   "request": "P1ZM00_no accidental zoom all games",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1TE07_touch-responsive-no-zoom"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792885818
   },
   {
    "id": "P2AX11_audit-report-merge-tools-only",
