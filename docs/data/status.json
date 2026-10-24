@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T04:16:15+00:00",
+ "generated": "2026-10-24T04:18:57+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 85,
+    "queued": 84,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3400,
-    "estimateMinutes": 3400
+    "minutes": 3360,
+    "estimateMinutes": 3360
    },
    "Claude": {
     "queued": 1,
@@ -30,7 +30,7 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 86,
+  "queued": 85,
   "running": 2,
   "doneToday": 0,
   "lanes": {
@@ -42,17 +42,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3580,
-  "estimatedFinish": "2026-10-26T12:56:15+00:00",
-  "estimateMinutes": 3400
+  "minutesRemaining": 3540,
+  "estimatedFinish": "2026-10-26T12:18:57+00:00",
+  "estimateMinutes": 3360
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "clean-features",
-   "task": "P1CF01_rules and levels drop cost",
-   "since": "2026-10-24T03:34:56+00:00",
-   "activity": "2026-10-24T04:15:12+00:00",
+   "task": "P1CF02_story and strings",
+   "since": "2026-10-24T04:17:41+00:00",
+   "activity": "2026-10-24T04:17:46+00:00",
    "commit": null
   },
   {
@@ -60,7 +60,7 @@
    "game": "the-draw",
    "task": "P2DRW00_the draw",
    "since": "2026-10-24T03:40:39+00:00",
-   "activity": "2026-10-24T04:09:39+00:00",
+   "activity": "2026-10-24T04:17:28+00:00",
    "commit": null
   }
  ],
@@ -68,8 +68,8 @@
  "claudeWorkers": 2,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 258,
-  "usdEst": 928.8,
+  "runs": 259,
+  "usdEst": 932.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -116,6 +116,10 @@
   {
    "day": "2026-10-23",
    "changes": 102
+  },
+  {
+   "day": "2026-10-24",
+   "changes": 1
   }
  ],
  "houseRules": 25,
@@ -24617,10 +24621,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 25.2,
+   "costTotalUsd": 28.8,
    "latestChange": {
-    "text": "premise card (The idea) from the round-5 brief, kit 13",
-    "at": "2026-10-24T03:00:00+00:00"
+    "text": "feat: The Draw starts from the clerk's losing draw so the score means something",
+    "at": "2026-10-24T04:17:28+00:00"
    },
    "promo": null,
    "why": "",
@@ -24654,7 +24658,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-24T04:09:39+00:00",
+   "lastChange": "2026-10-24T04:17:28+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -24663,9 +24667,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 6,
-    "earlierUsdEst": 21.6,
-    "totalUsdEst": 25.2
+    "earlierRounds": 7,
+    "earlierUsdEst": 25.2,
+    "totalUsdEst": 28.8
    },
    "tasks": [
     {
@@ -24711,6 +24715,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T04:17:28+00:00",
+     "ok": true,
+     "note": "feat: The Draw starts from the clerk's losing draw so the score means something",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-24T03:00:00+00:00",
      "ok": true,
@@ -28184,11 +28194,11 @@
    ]
   },
   {
-   "nextTask": "Clean Features: the seed library night shift story...",
-   "costTotalUsd": 69.26,
+   "nextTask": "Clean Features: watch the rule first, then one...",
+   "costTotalUsd": 72.86,
    "latestChange": {
-    "text": "feat: What the Dish Sees counts drops: a picture costs one drop per mark, the score is...",
-    "at": "2026-10-24T04:15:12+00:00"
+    "text": "P1CF01 drops: picture costs a drop per mark, score = drops left, new 12-level ladder,...",
+    "at": "2026-10-24T04:17:35+00:00"
    },
    "promo": {
     "files": {
@@ -28207,7 +28217,7 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "rules and levels drop cost",
+   "waitingOn": "story and strings",
    "id": "clean-features",
    "number": 96,
    "repo": "clean-features",
@@ -28228,40 +28238,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-24T04:15:12+00:00",
+   "lastChange": "2026-10-24T04:17:46+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
-    "claudeRuns": 5,
+    "claudeRuns": 6,
     "apiRuns": 1,
     "codexTokens": 719119,
     "codexUsdEst": 0.86,
-    "claudeUsdEst": 18.0,
+    "claudeUsdEst": 21.6,
     "earlierRounds": 14,
     "earlierUsdEst": 50.4,
-    "totalUsdEst": 69.26
+    "totalUsdEst": 72.86
    },
    "tasks": [
     {
-     "title": "P1CF01_rules and levels drop cost",
+     "title": "P1CF02_story and strings",
      "state": "running",
      "worker": "Claude",
-     "plan": "Clean Features: pictures cost one drop per mark, score is drops left, levels where no shortcut wins",
-     "since": "2026-10-24T03:34:56+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P1CF02_story and strings",
-     "state": "queued",
-     "worker": "Codex",
      "plan": "Clean Features: the seed library night shift story in every line, English and Traditional Chinese",
-     "since": "2026-10-24T02:23:15+00:00",
+     "since": "2026-10-24T04:17:41+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -28313,6 +28309,20 @@
      "result": ""
     },
     {
+     "title": "P1CF01_rules and levels drop cost",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Clean Features: pictures cost one drop per mark, score is drops left, levels where no shortcut wins",
+     "since": "2026-10-24T01:32:28+00:00",
+     "done": "2026-10-24T01:32:28+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
      "title": "P1CF00_core and story reset",
      "state": "done",
      "worker": "Claude",
@@ -28356,15 +28366,21 @@
     }
    ],
    "taskCounts": {
-    "queued": 4,
+    "queued": 3,
     "running": 1,
     "waitingDesign": 0,
-    "done": 10
+    "done": 11
    },
    "verdict": null,
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-24T04:17:35+00:00",
+     "ok": true,
+     "note": "P1CF01 drops: picture costs a drop per mark, score = drops left, new 12-level ladder, greedy-resistant boxes; live",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T04:15:12+00:00",
      "ok": true,
@@ -28430,12 +28446,6 @@
      "ok": false,
      "note": "frame- published once; live 390x844 and 320x568 touch checks pass for paid evidence and progress, but the chapter cabinet is constrained by the inherited three-column map grid and needs a permitted follow-up publish",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-19T19:43:48+00:00",
-     "ok": true,
-     "note": "feat: make the dish's deductions visible",
-     "source": "main commit"
     }
    ]
   },
@@ -29073,10 +29083,10 @@
    "ran": 0
   },
   "first_minute": {
-   "yes": 9,
+   "yes": 12,
    "no": 3,
    "unknown": 101,
-   "ran": 42
+   "ran": 39
   },
   "a11y": {
    "yes": 0,
@@ -29085,21 +29095,21 @@
    "ran": 0
   },
   "credits": {
-   "yes": 0,
-   "no": 1,
-   "unknown": 154,
+   "yes": 15,
+   "no": 4,
+   "unknown": 136,
    "ran": 0
   },
   "saves": {
-   "yes": 0,
+   "yes": 13,
    "no": 0,
-   "unknown": 155,
+   "unknown": 142,
    "ran": 0
   },
   "standard": {
-   "yes": 1,
-   "no": 0,
-   "unknown": 154,
+   "yes": 12,
+   "no": 4,
+   "unknown": 139,
    "ran": 0
   },
   "console": {
@@ -29115,8 +29125,8 @@
    "ran": 0
   },
   "name": {
-   "yes": 153,
-   "no": 0,
+   "yes": 152,
+   "no": 1,
    "unknown": 2,
    "ran": 0
   }

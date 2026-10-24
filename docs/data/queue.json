@@ -1,5 +1,5 @@
 {
- "generated": 1792814445,
+ "generated": 1792815552,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -91,21 +91,23 @@
  },
  "tasks": [
   {
-   "id": "P1CF01_rules-and-levels-drop-cost",
-   "request": "Clean Features: pictures cost one drop per mark, score is drops left, levels where no shortcut wins",
+   "id": "P1CF02_story-and-strings",
+   "request": "Clean Features: the seed library night shift story in every line, English and Traditional Chinese",
    "game": "What the Dish Sees",
    "route": "Claude",
-   "model": "opus",
-   "effort": "high",
+   "model": "sonnet",
+   "effort": "medium",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P1CF01_rules-and-levels-drop-cost"
+   ],
    "priority": "P1",
    "why": "An essay arguing neural network features are already clean, and a petri-dish video of something first taken for ordinary bacteria.",
    "state": "running",
-   "at": 1792805548,
-   "created": 1792805548
+   "at": 1792808595,
+   "created": 1792808595
   },
   {
    "id": "P2DRW00_the-draw",
@@ -1004,27 +1006,6 @@
    "created": 1792808610
   },
   {
-   "id": "P1CF02_story-and-strings",
-   "request": "Clean Features: the seed library night shift story in every line, English and Traditional Chinese",
-   "game": "What the Dish Sees",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "medium",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1CF01_rules-and-levels-drop-cost"
-   ],
-   "priority": "P1",
-   "why": "An essay arguing neural network features are already clean, and a petri-dish video of something first taken for ordinary bacteria.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1CF01_rules-and-levels-drop-cost"
-   ],
-   "created": 1792808595
-  },
-  {
    "id": "P1CF03_rule-first-lesson",
    "request": "Clean Features: watch the rule first, then one guided look, then play",
    "game": "What the Dish Sees",
@@ -1817,6 +1798,23 @@
    "state": "done",
    "at": 1792801454,
    "created": 1792801454
+  },
+  {
+   "id": "P1CF01_rules-and-levels-drop-cost",
+   "request": "Clean Features: pictures cost one drop per mark, score is drops left, levels where no shortcut wins",
+   "game": "What the Dish Sees",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "An essay arguing neural network features are already clean, and a petri-dish video of something first taken for ordinary bacteria.",
+   "state": "done",
+   "at": 1792805548,
+   "created": 1792805548
   },
   {
    "id": "P1CY00_endless-always-solvable-and-overload-bar",
