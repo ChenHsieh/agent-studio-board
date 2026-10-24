@@ -1,5 +1,5 @@
 {
- "generated": 1792855248,
+ "generated": 1792855386,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -81,7 +81,7 @@
   "codexOut": false,
   "converted": 0,
   "convertedRunning": 0,
-  "claudeWorkers": 0,
+  "claudeWorkers": 1,
   "claudeWorkerCap": 3,
   "handedBack": 0,
   "lastHandBack": null,
@@ -89,8 +89,8 @@
  },
  "tasks": [
   {
-   "id": "P1CK02_one-record-rules-and-bots",
-   "request": "Clay Clock: a record's wedges must touch (rules and bots)",
+   "id": "P1CK03_one-record-levels-and-gate",
+   "request": "Clay Clock: tablets 1-9 re-cut for one record, gate and daily table re-measured",
    "game": "Clay Clock",
    "route": "Claude",
    "model": "sonnet",
@@ -99,7 +99,7 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P1CK01_core-design-pass-depth"
+    "P1CK02_one-record-rules-and-bots"
    ],
    "priority": "P2",
    "why": "An Instagram reel of someone pressing cuneiform wedges into a small clay tablet.",
@@ -1396,27 +1396,6 @@
     "P1PP03_pinch-points-strategy-card-and-daily"
    ],
    "created": 1792825169
-  },
-  {
-   "id": "P1CK03_one-record-levels-and-gate",
-   "request": "Clay Clock: tablets 1-9 re-cut for one record, gate and daily table re-measured",
-   "game": "Clay Clock",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1CK02_one-record-rules-and-bots"
-   ],
-   "priority": "P2",
-   "why": "An Instagram reel of someone pressing cuneiform wedges into a small clay tablet.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1CK02_one-record-rules-and-bots"
-   ],
-   "created": 1792804913
   },
   {
    "id": "P1CK04_one-record-ui-first-minute",
