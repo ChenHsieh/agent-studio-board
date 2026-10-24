@@ -1,5 +1,5 @@
 {
- "generated": 1792808740,
+ "generated": 1792808865,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -157,11 +157,11 @@
    "state": "running",
    "at": 1792807297,
    "created": 1792807297,
-   "estPercentOfWeek": 185.73
+   "estPercentOfWeek": 183.15
   },
   {
-   "id": "P1BD05_archived-tier-for-time-limited-games",
-   "request": "Board: an Archived tier for games made for one moment, apart from Shelf.",
+   "id": "P1BD06_what-to-expect-on-the-board",
+   "request": "Board: each new game card says what to expect: the bigger picture and the goal.",
    "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
@@ -173,8 +173,8 @@
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1792802208,
-   "created": 1792802208
+   "at": 1792804732,
+   "created": 1792804732
   },
   {
    "id": "P1KT04_daily-card-and-howto-wording",
@@ -242,7 +242,7 @@
    "why": "A water board game flooded in a tank, and a thread worrying that a public study-abroad fund flows to those already ahead.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792808075
+   "created": 1792808770
   },
   {
    "id": "P1RN45_tap-label-beside-picture",
@@ -363,7 +363,24 @@
    "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792808737
+   "created": 1792808745
+  },
+  {
+   "id": "P1NL01_visual-round-design",
+   "request": "Nobody Looking: a workable visual round: three mock looks, then a build spec.",
+   "game": "Nobody Looking",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792808771
   },
   {
    "id": "P2NC00_name-to-carry-data-inline",
@@ -383,7 +400,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792791317,
-   "estPercentOfWeek": 185.73
+   "estPercentOfWeek": 183.15
   },
   {
    "id": "P2PS00_pigeon-salon-readable-board",
@@ -403,7 +420,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713005,
-   "estPercentOfWeek": 185.73
+   "estPercentOfWeek": 183.15
   },
   {
    "id": "P2RO00_radish-omelette-colours-and-beats",
@@ -423,7 +440,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713431,
-   "estPercentOfWeek": 185.73
+   "estPercentOfWeek": 183.15
   },
   {
    "id": "P2RS00_restored-blurry-neighbours-count",
@@ -443,7 +460,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792715918,
-   "estPercentOfWeek": 185.73
+   "estPercentOfWeek": 183.15
   },
   {
    "id": "P3NY00_not-yet-a-real-choice",
@@ -463,7 +480,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713432,
-   "estPercentOfWeek": 185.73
+   "estPercentOfWeek": 183.15
   },
   {
    "id": "P3OR45_herbal-pages-stay-open-logic",
@@ -481,7 +498,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792724295,
-   "estPercentOfWeek": 185.73
+   "estPercentOfWeek": 183.15
   },
   {
    "id": "P2GG00_gallery-guess-save-migration-test",
@@ -516,24 +533,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792701959,
-   "estPercentOfWeek": 185.73
-  },
-  {
-   "id": "P1BD06_what-to-expect-on-the-board",
-   "request": "Board: each new game card says what to expect: the bigger picture and the goal.",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "medium",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792804732
+   "estPercentOfWeek": 183.15
   },
   {
    "id": "P1BD07_game-numbers-on-the-board",
@@ -837,7 +837,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792724493,
-   "estPercentOfWeek": 185.73
+   "estPercentOfWeek": 183.15
   },
   {
    "id": "P1AP02_visual-round-design",
@@ -858,7 +858,7 @@
    "waitingOn": [
     "P1AP01_story-bible-and-endings"
    ],
-   "created": 1792808610
+   "created": 1792808770
   },
   {
    "id": "P1AP03_visual-round-build",
@@ -1155,6 +1155,27 @@
    "created": 1792804913
   },
   {
+   "id": "P1NL02_visual-round-build",
+   "request": "Nobody Looking: build the chosen look and the slide animations.",
+   "game": "Nobody Looking",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1NL01_visual-round-design"
+   ],
+   "priority": "P2",
+   "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1NL01_visual-round-design"
+   ],
+   "created": 1792808745
+  },
+  {
    "id": "P2HN00_herbal-pages-stay-open",
    "request": "Herbal of Nowhere: opened pages stay open (Undo no longer refunds ink), glyphs no longer sit under the parts, counters agree",
    "game": "Herbal of Nowhere",
@@ -1174,7 +1195,7 @@
     "P3OR45_herbal-pages-stay-open-logic"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 185.73
+   "estPercentOfWeek": 183.15
   },
   {
    "id": "P1TE03_room-strings",
@@ -1257,8 +1278,7 @@
    "why": "",
    "state": "waiting",
    "waitingOn": [
-    "P1BD07_game-numbers-on-the-board",
-    "P1BD05_archived-tier-for-time-limited-games"
+    "P1BD07_game-numbers-on-the-board"
    ],
    "created": 1792807366
   },
@@ -1353,7 +1373,7 @@
     "P3OR44_kit-win-hold-and-higher-is-better"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 185.73
+   "estPercentOfWeek": 183.15
   },
   {
    "id": "P2TE06_look-refine",
@@ -1507,7 +1527,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 185.73
+   "estPercentOfWeek": 183.15
   },
   {
    "id": "P2n88_watched-pot",
@@ -1529,7 +1549,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 185.73
+   "estPercentOfWeek": 183.15
   },
   {
    "id": "P2n89_round-table",
@@ -1551,7 +1571,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724261,
-   "estPercentOfWeek": 185.73
+   "estPercentOfWeek": 183.15
   },
   {
    "id": "P2n90_iron-window-garden",
@@ -1573,7 +1593,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 185.73
+   "estPercentOfWeek": 183.15
   },
   {
    "id": "P2n91_still-a-heap",
@@ -1595,7 +1615,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 185.73
+   "estPercentOfWeek": 183.15
   },
   {
    "id": "P2n92_out-of-the-corner",
@@ -1617,7 +1637,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 185.73
+   "estPercentOfWeek": 183.15
   },
   {
    "id": "P2n93_one-umbrella",
@@ -1639,7 +1659,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724262,
-   "estPercentOfWeek": 185.73
+   "estPercentOfWeek": 183.15
   },
   {
    "id": "P2n94_rolling-back",
@@ -1661,7 +1681,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 185.73
+   "estPercentOfWeek": 183.15
   },
   {
    "id": "P2n95_gold-star",
@@ -1683,7 +1703,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 185.73
+   "estPercentOfWeek": 183.15
   },
   {
    "id": "P2n96_ac-remote",
@@ -1705,7 +1725,7 @@
     "P2n86_round4-template-repos"
    ],
    "created": 1792724263,
-   "estPercentOfWeek": 185.73
+   "estPercentOfWeek": 183.15
   },
   {
    "id": "P2n97_review-coin-dumplings-and-watched-pot",
@@ -2439,6 +2459,23 @@
    "created": 1792799876
   },
   {
+   "id": "P1BD05_archived-tier-for-time-limited-games",
+   "request": "Board: an Archived tier for games made for one moment, apart from Shelf.",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792802208,
+   "created": 1792802208
+  },
+  {
    "id": "P1CS00_cost-per-shipped-change-report",
    "request": "Report what each shipped change cost across Claude, Codex and OpenRouter",
    "game": "Studio",
@@ -2677,7 +2714,7 @@
    "state": "done",
    "at": 1792790510,
    "created": 1792790510,
-   "estPercentOfWeek": 185.73
+   "estPercentOfWeek": 183.15
   },
   {
    "id": "P2RV05_honest-sign",
@@ -2854,7 +2891,7 @@
    "state": "done",
    "at": 1792798110,
    "created": 1792798110,
-   "estPercentOfWeek": 185.73
+   "estPercentOfWeek": 183.15
   }
  ]
 }
