@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T10:17:11+00:00",
+ "generated": "2026-10-24T10:20:19+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -24,44 +24,35 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
-    "doneToday": 13,
-    "minutes": 120,
+    "running": 0,
+    "doneToday": 14,
+    "minutes": 60,
     "estimateMinutes": 60
    }
   },
   "queued": 83,
-  "running": 1,
-  "doneToday": 13,
+  "running": 0,
+  "doneToday": 14,
   "lanes": {
    "Codex": 1,
-   "Claude": 2
+   "Claude": 1
   },
   "laneCap": {
    "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3400,
-  "estimatedFinish": "2026-10-26T16:57:11+00:00",
+  "minutesRemaining": 3340,
+  "estimatedFinish": "2026-10-26T17:00:19+00:00",
   "estimateMinutes": 3280
  },
- "lanes": [
-  {
-   "worker": "Claude",
-   "game": "grass-crossword",
-   "task": "P1GX02_visual round build",
-   "since": "2026-10-24T09:06:16+00:00",
-   "activity": "2026-10-24T10:15:53+00:00",
-   "commit": null
-  }
- ],
+ "lanes": [],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 0,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
-  "runs": 269,
-  "usdEst": 968.4,
+  "runs": 270,
+  "usdEst": 972.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -111,7 +102,7 @@
   },
   {
    "day": "2026-10-24",
-   "changes": 11
+   "changes": 12
   }
  ],
  "houseRules": 25,
@@ -8908,10 +8899,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 62.72,
+   "costTotalUsd": 66.32,
    "latestChange": {
-    "text": "P1GX00: one Share button, daily is a generated bed from a 120-bed pool (never a shipped...",
-    "at": "2026-10-24T09:06:03+00:00"
+    "text": "P1GX02: small-town weekly look live (masthead, printed grid, grass through the paper,...",
+    "at": "2026-10-24T10:17:33+00:00"
    },
    "promo": {
     "files": {
@@ -8922,13 +8913,13 @@
     "caption": "A crossword dug into a garden bed, where every answer is."
    },
    "why": "A conceptual artwork from 2002: a newspaper crossword with every square green and every answer written as GRASS.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 4
+    "daysInState": 0
    },
    "waitingOn": "owner",
    "id": "grass-crossword",
@@ -8937,8 +8928,8 @@
    "title": "Grass Crossword",
    "line": "A crossword dug into a garden bed, where every answer is.",
    "url": "https://chenhsieh.github.io/grass-crossword/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "nearly ready; newspaper look, plain Share, a daily that is a new puzzle each...",
    "shelfNote": "",
@@ -8951,33 +8942,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:41:42+00:00",
-   "lastChange": "2026-10-24T10:15:53+00:00",
+   "lastChange": "2026-10-24T10:17:33+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
-    "claudeRuns": 7,
+    "claudeRuns": 8,
     "apiRuns": 2,
     "codexTokens": 1267904,
     "codexUsdEst": 1.52,
-    "claudeUsdEst": 25.2,
+    "claudeUsdEst": 28.8,
     "earlierRounds": 10,
     "earlierUsdEst": 36.0,
-    "totalUsdEst": 62.72
+    "totalUsdEst": 66.32
    },
    "tasks": [
     {
      "title": "P1GX02_visual round build",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Grass Crossword: build the chosen look.",
-     "since": "2026-10-24T09:06:16+00:00",
-     "done": null,
+     "since": "2026-10-24T06:46:35+00:00",
+     "done": "2026-10-24T06:46:35+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1GX02 Grass Crossword visual round build: live on main ( build + side-by-side images commit). Live bytes of shell.js draw.js look.css index.html rules.js style.css compare identical; live page at 390x844 and 320x568: 0..."
     },
     {
      "title": "P3OR71_grass crossword clue strings",
@@ -9080,9 +9071,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 15
+    "done": 16
    },
    "verdict": {
     "date": "2026-10-20",
@@ -9090,8 +9081,14 @@
     "note": "Harder levels not intuitive; drag preview inconsistent"
    },
    "needsYou": "The credit links the artist's Instagram profile because the exact post address is unknown. Suggest: keep the profile link until the post is found.",
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-24T10:17:33+00:00",
+     "ok": true,
+     "note": "P1GX02: small-town weekly look live (masthead, printed grid, grass through the paper, clue list, wilt); playable+ui gates pass, a11y audit still fails on kit screens;",
+     "source": "board note"
+    },
     {
      "at": "2026-10-24T09:06:03+00:00",
      "ok": true,
@@ -9157,12 +9154,6 @@
      "ok": true,
      "note": "feat: twelve more grass crosswords (beds 26-37) with hay, straw, millet and barley",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T18:25:58+00:00",
-     "ok": true,
-     "note": "feat: Grass Crossword shares its own preview and plants by two taps",
-     "source": "board note"
     }
    ]
   },
