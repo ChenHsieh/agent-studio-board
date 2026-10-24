@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-24T22:27:25+00:00",
+ "generated": "2026-10-24T22:29:44+00:00",
  "ops": {
-  "count": 62,
+  "count": 64,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,22 +20,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 71,
+    "queued": 70,
     "running": 1,
     "doneToday": 2,
-    "minutes": 2880,
-    "estimateMinutes": 2880
+    "minutes": 2840,
+    "estimateMinutes": 2840
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
+    "running": 3,
     "doneToday": 73,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "minutes": 240,
+    "estimateMinutes": 120
    }
   },
-  "queued": 72,
-  "running": 3,
+  "queued": 71,
+  "running": 4,
   "doneToday": 75,
   "lanes": {
    "Codex": 1,
@@ -46,11 +46,19 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3060,
-  "estimatedFinish": "2026-10-26T22:27:25+00:00",
-  "estimateMinutes": 2880
+  "minutesRemaining": 3080,
+  "estimatedFinish": "2026-10-26T21:49:44+00:00",
+  "estimateMinutes": 2840
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "clean-features",
+   "task": "P1CF04_marks and life bar look",
+   "since": "2026-10-24T22:27:52+00:00",
+   "activity": "2026-10-24T22:28:06+00:00",
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "Multiple games",
@@ -64,10 +72,10 @@
    "game": "lot-waits",
    "task": "P1LW02_lot waits day strip and trust",
    "since": "2026-10-24T22:22:10+00:00",
-   "activity": "2026-10-24T22:27:22+00:00",
+   "activity": "2026-10-24T22:29:33+00:00",
    "commit": {
-    "at": "2026-10-24T22:22:11+00:00",
-    "subject": "start: P1LW02_lot-waits-day-strip-and-trust"
+    "at": "2026-10-24T22:28:36+00:00",
+    "subject": "feat: show trust and good days on the board"
    }
   },
   {
@@ -80,8 +88,8 @@
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 2,
- "apiSpentUsd": 314.56,
+ "claudeWorkers": 3,
+ "apiSpentUsd": 314.6,
  "claudeInSession": {
   "runs": 286,
   "usdEst": 1029.6,
@@ -11582,10 +11590,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 36.49,
+   "costTotalUsd": 40.09,
    "latestChange": {
-    "text": "feat: learn council votes in a first-minute round",
-    "at": "2026-10-22T23:51:15+00:00"
+    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+    "at": "2026-10-24T22:09:09+00:00"
    },
    "promo": {
     "files": {
@@ -11602,7 +11610,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 1
+    "daysInState": 0
    },
    "waitingOn": "none",
    "id": "lantern-meeting",
@@ -11626,7 +11634,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T20:45:20+00:00",
-   "lastChange": "2026-10-22T23:51:15+00:00",
+   "lastChange": "2026-10-24T22:09:09+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -11635,9 +11643,9 @@
     "codexTokens": 406690,
     "codexUsdEst": 0.49,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 9,
-    "earlierUsdEst": 32.4,
-    "totalUsdEst": 36.49
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
+    "totalUsdEst": 40.09
    },
    "tasks": [
     {
@@ -11726,6 +11734,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-24T22:09:09+00:00",
+     "ok": true,
+     "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-22T23:51:15+00:00",
      "ok": true,
      "note": "feat: learn council votes in a first-minute round",
@@ -11790,12 +11804,6 @@
      "ok": true,
      "note": "feat: a court of three:",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T20:56:30+00:00",
-     "ok": true,
-     "note": "prototype live: 6 levels + daily, exact DP, gates green; https://chenhsieh.github.io/lantern-meeting/",
-     "source": "board note"
     }
    ]
   },
@@ -24002,10 +24010,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 36.29,
+   "costTotalUsd": 39.89,
    "latestChange": {
-    "text": "feat: paint the temple-fair sign for a cheering crowd",
-    "at": "2026-10-21T05:49:02+00:00"
+    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+    "at": "2026-10-24T22:17:55+00:00"
    },
    "promo": null,
    "why": "A roadside spirit-guide advertising billboard, plus a joke about a bugged room where the unseen audience reacts.",
@@ -24015,7 +24023,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 3
+    "daysInState": 0
    },
    "waitingOn": "none",
    "id": "spirit-billboard",
@@ -24039,7 +24047,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T23:26:27+00:00",
-   "lastChange": "2026-10-21T05:49:02+00:00",
+   "lastChange": "2026-10-24T22:17:55+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -24048,9 +24056,9 @@
     "codexTokens": 242964,
     "codexUsdEst": 0.29,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
-    "totalUsdEst": 36.29
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
+    "totalUsdEst": 39.89
    },
    "tasks": [
     {
@@ -24092,6 +24100,12 @@
    "needsYou": null,
    "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-24T22:17:55+00:00",
+     "ok": true,
+     "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-21T05:49:02+00:00",
      "ok": true,
@@ -24156,12 +24170,6 @@
      "at": "2026-10-16T00:36:31+00:00",
      "ok": true,
      "note": "feat: post billboards and read a crowd's faces to win them over",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-15T23:26:27+00:00",
-     "ok": true,
-     "note": "Initial commit",
      "source": "main commit"
     }
    ]
@@ -25773,7 +25781,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:14:25+00:00",
-   "lastChange": "2026-10-24T22:27:22+00:00",
+   "lastChange": "2026-10-24T22:29:33+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -25799,8 +25807,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-24T22:22:11+00:00",
-      "subject": "start: P1LW02_lot-waits-day-strip-and-trust"
+      "at": "2026-10-24T22:28:36+00:00",
+      "subject": "feat: show trust and good days on the board"
      },
      "result": ""
     },
@@ -27349,8 +27357,8 @@
    "nextTask": null,
    "costTotalUsd": 86.95,
    "latestChange": {
-    "text": "fix: keep Tractatus Tree taps reliable on short phones",
-    "at": "2026-10-24T03:12:11+00:00"
+    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+    "at": "2026-10-24T22:06:28+00:00"
    },
    "promo": null,
    "why": "A social post on Wittgenstein's numbered propositions (1, 1.1, 4.001 and so on).",
@@ -27388,7 +27396,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:14:42+00:00",
-   "lastChange": "2026-10-24T03:12:11+00:00",
+   "lastChange": "2026-10-24T22:06:28+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -27530,6 +27538,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-24T22:06:28+00:00",
+     "ok": true,
+     "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-24T03:12:11+00:00",
      "ok": true,
      "note": "fix: keep Tractatus Tree taps reliable on short phones",
@@ -27594,12 +27608,6 @@
      "ok": true,
      "note": "P1TT40 reader card + Collection (N of 526, search) live; page faces ~14px at 390; reader/touch tests green",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-21T23:23:27+00:00",
-     "ok": true,
-     "note": "feat:",
-     "source": "main commit"
     }
    ]
   },
@@ -29081,7 +29089,7 @@
    ]
   },
   {
-   "nextTask": "Clean Features: each picture shows its marks, the...",
+   "nextTask": "Clean Features: tests for the reset and a...",
    "costTotalUsd": 80.06,
    "latestChange": {
     "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
@@ -29111,8 +29119,8 @@
    "title": "What the Dish Sees",
    "line": "Label each colony with the one shape it sees by placing.",
    "url": "https://chenhsieh.github.io/clean-features/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Find the playable frame for the latent-space game: a clear",
    "shelfNote": "",
@@ -29130,7 +29138,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-24T16:33:47+00:00",
+   "lastChange": "2026-10-24T22:28:06+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -29146,10 +29154,10 @@
    "tasks": [
     {
      "title": "P1CF04_marks and life bar look",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Clean Features: each picture shows its marks, the lit mark glows in the dish, a dish life bar",
-     "since": "2026-10-24T01:32:28+00:00",
+     "since": "2026-10-24T22:27:52+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -29258,8 +29266,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 13
    },
