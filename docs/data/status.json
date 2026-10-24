@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T09:22:45+00:00",
+ "generated": "2026-10-24T09:25:48+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,22 +16,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 77,
+    "queued": 78,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3080,
-    "estimateMinutes": 3080
+    "minutes": 3120,
+    "estimateMinutes": 3120
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
+    "running": 1,
     "doneToday": 12,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "minutes": 120,
+    "estimateMinutes": 60
    }
   },
-  "queued": 78,
-  "running": 2,
+  "queued": 79,
+  "running": 1,
   "doneToday": 12,
   "lanes": {
    "Codex": 1,
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3260,
-  "estimatedFinish": "2026-10-26T12:42:45+00:00",
-  "estimateMinutes": 3080
+  "minutesRemaining": 3240,
+  "estimatedFinish": "2026-10-26T13:25:48+00:00",
+  "estimateMinutes": 3120
  },
  "lanes": [
   {
@@ -54,18 +54,10 @@
    "since": "2026-10-24T09:06:16+00:00",
    "activity": "2026-10-24T09:22:01+00:00",
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "makeshift-chair",
-   "task": "P1MC00_3d physics chair design and spike",
-   "since": "2026-10-24T09:18:50+00:00",
-   "activity": "2026-10-24T09:20:03+00:00",
-   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
   "runs": 269,
@@ -13147,7 +13139,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Makeshift Chair (#35, P1): a 3D physics game...",
    "costTotalUsd": 29.55,
    "latestChange": {
     "text": "feat: show the chair in shared links",
@@ -13177,8 +13169,8 @@
    "title": "Makeshift Chair",
    "line": "",
    "url": "https://chenhsieh.github.io/makeshift-chair/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "make it a 3D physics game where sitting goes ridiculously wrong; daily games",
    "shelfNote": "",
@@ -13191,7 +13183,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T02:32:35+00:00",
-   "lastChange": "2026-10-24T09:20:03+00:00",
+   "lastChange": "2026-10-24T09:23:22+00:00",
    "cost": {
     "apiUsd": 11.15,
     "codexRuns": 2,
@@ -13207,10 +13199,10 @@
    "tasks": [
     {
      "title": "P1MC00_3d physics chair design and spike",
-     "state": "running",
-     "worker": "Claude",
+     "state": "queued",
+     "worker": "Codex",
      "plan": "Makeshift Chair (#35, P1): a 3D physics game in the spirit of Human Fall Flat where sitting down goes ridiculously wrong; design and a working spike.",
-     "since": "2026-10-24T09:18:50+00:00",
+     "since": "2026-10-24T09:23:22+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -13263,8 +13255,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
     "done": 3
    },
