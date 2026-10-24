@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T07:00:31+00:00",
+ "generated": "2026-10-24T07:03:21+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -28,15 +28,15 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
-    "doneToday": 6,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "running": 1,
+    "doneToday": 7,
+    "minutes": 120,
+    "estimateMinutes": 60
    }
   },
   "queued": 81,
-  "running": 2,
-  "doneToday": 6,
+  "running": 1,
+  "doneToday": 7,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,8 +46,8 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3380,
-  "estimatedFinish": "2026-10-26T12:20:31+00:00",
+  "minutesRemaining": 3320,
+  "estimatedFinish": "2026-10-26T12:23:21+00:00",
   "estimateMinutes": 3200
  },
  "lanes": [
@@ -58,18 +58,10 @@
    "since": "2026-10-24T06:57:22+00:00",
    "activity": "2026-10-24T06:58:08+00:00",
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "pinch-points",
-   "task": "P3OR73_pinch points words file",
-   "since": "2026-10-24T07:00:14+00:00",
-   "activity": "2026-10-24T07:00:19+00:00",
-   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 310.92,
  "claudeInSession": {
   "runs": 267,
@@ -13302,7 +13294,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 28.8,
+   "costTotalUsd": 32.4,
    "latestChange": {
     "text": "P1MM00: puzzle drag latency 247->37 ms, frame p95 117->17 ms at 4x (draw on demand,...",
     "at": "2026-10-24T06:57:08+00:00"
@@ -13347,9 +13339,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 8,
-    "earlierUsdEst": 28.8,
-    "totalUsdEst": 28.8
+    "earlierRounds": 9,
+    "earlierUsdEst": 32.4,
+    "totalUsdEst": 32.4
    },
    "tasks": [
     {
@@ -13382,6 +13374,12 @@
      "ok": true,
      "note": "P1MM00: puzzle drag latency 247->37 ms, frame p95 117->17 ms at 4x (draw on demand, shadow rebuilt only on movement); test/perf.mjs",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-24T06:54:37+00:00",
+     "ok": true,
+     "note": "fix: the puzzle answers a drag in about two frames",
+     "source": "main commit"
     },
     {
      "at": "2026-10-20T02:41:15+00:00",
@@ -17346,15 +17344,15 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "pinch points words file",
+   "waitingOn": "pinch points show the movement",
    "id": "pinch-points",
    "number": 119,
    "repo": "pinch-points",
    "title": "Pinch Points",
    "line": "Pinch six stones flat as the surface flattens live; par set by search, plus a daily.",
    "url": "https://chenhsieh.github.io/pinch-points/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "turns an esoteric paper into an interactive game; explain the mechanism, show...",
    "shelfNote": "",
@@ -17367,34 +17365,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T20:22:39+00:00",
-   "lastChange": "2026-10-24T07:00:19+00:00",
+   "lastChange": "2026-10-24T06:59:35+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 280385,
     "codexUsdEst": 0.34,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
+    "claudeUsdEst": 7.2,
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
     "totalUsdEst": 18.34
    },
    "tasks": [
-    {
-     "title": "P3OR73_pinch points words file",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Pinch Points: the strategy card, hints and share line in one words file, English and Traditional Chinese",
-     "since": "2026-10-24T07:00:14+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1PP02_pinch points show the movement",
      "state": "queued",
@@ -17452,6 +17436,20 @@
      "result": ""
     },
     {
+     "title": "P3OR73_pinch points words file",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Pinch Points: the strategy card, hints and share line in one words file, English and Traditional Chinese",
+     "since": "2026-10-24T06:59:29+00:00",
+     "done": "2026-10-24T06:59:29+00:00",
+     "reviewed": false,
+     "minutes": 2,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: test/explain_words.test.mjs && -e \"const vm=require('vm'),fs=require('fs');const c={window:{}};vm.runInNewContext(fs.readFileSync('docs/explain.word"
+    },
+    {
      "title": "P1PP00_explain the strategy and show the movement",
      "state": "done",
      "worker": "Claude",
@@ -17482,9 +17480,9 @@
    ],
    "taskCounts": {
     "queued": 4,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": null,
    "needsYou": null,
