@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T06:56:20+00:00",
+ "generated": "2026-10-25T06:59:50+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 67,
+    "queued": 66,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2680,
-    "estimateMinutes": 2680
+    "minutes": 2640,
+    "estimateMinutes": 2640
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 17,
+    "doneToday": 18,
     "minutes": 180,
     "estimateMinutes": 90
    }
   },
-  "queued": 68,
+  "queued": 67,
   "running": 2,
-  "doneToday": 17,
+  "doneToday": 18,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2860,
-  "estimatedFinish": "2026-10-27T03:36:20+00:00",
-  "estimateMinutes": 2680
+  "minutesRemaining": 2820,
+  "estimatedFinish": "2026-10-27T02:59:50+00:00",
+  "estimateMinutes": 2640
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "mirror-hold",
-   "task": "P1FS25_mirror hold one screen",
-   "since": "2026-10-25T06:53:06+00:00",
-   "activity": "2026-10-25T06:56:00+00:00",
+   "game": "mushroom-gaps",
+   "task": "P1FS26_mushroom gaps one screen",
+   "since": "2026-10-25T06:57:56+00:00",
+   "activity": "2026-10-25T06:58:48+00:00",
    "commit": null
   },
   {
@@ -15170,28 +15170,28 @@
    "nextTask": null,
    "costTotalUsd": 76.75,
    "latestChange": {
-    "text": "One screen: 360x640 play page fits (print cropped wider, credit one tap away in the full...",
-    "at": "2026-10-25T06:56:25+00:00"
+    "text": "Remove test screenshots that slipped into docs",
+    "at": "2026-10-25T06:57:52+00:00"
    },
    "promo": null,
    "why": "Manga panels of a sumo wrestler before a mirror and a hand scooping Edo-period hair wax from a red tin.",
    "state": "ship",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 2
    },
-   "waitingOn": "mirror hold one screen",
+   "waitingOn": "owner",
    "id": "mirror-hold",
    "number": 60,
    "repo": "mirror-hold",
    "title": "Mirror Hold",
    "line": "Wax a hairstyle, then test it against three pulls.",
    "url": "https://chenhsieh.github.io/mirror-hold/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Huge revamp planned by a cross-functional lead",
    "shelfNote": "",
@@ -15209,33 +15209,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T21:41:35+00:00",
-   "lastChange": "2026-10-25T06:56:25+00:00",
+   "lastChange": "2026-10-25T06:57:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
-    "claudeRuns": 9,
+    "claudeRuns": 10,
     "apiRuns": 1,
     "codexTokens": 959889,
     "codexUsdEst": 1.15,
-    "claudeUsdEst": 32.4,
-    "earlierRounds": 12,
-    "earlierUsdEst": 43.2,
+    "claudeUsdEst": 36.0,
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
     "totalUsdEst": 76.75
    },
    "tasks": [
     {
      "title": "P1FS25_mirror hold one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "mirror-hold: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T06:53:06+00:00",
-     "done": null,
+     "since": "2026-10-25T04:41:52+00:00",
+     "done": "2026-10-25T04:41:52+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1FS25 mirror-hold one screen: DONE (Sonnet overflow worker, 2026-10-25). Commits + cleanup on main; live bytes match (game.css, game.js, index.html); live gate PASS."
     },
     {
      "title": "P3OR57_mirror hold credits page",
@@ -15338,9 +15338,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 14
+    "done": 15
    },
    "verdict": {
     "date": "2026-10-23",
@@ -15348,8 +15348,14 @@
     "note": "Comb each pull the right way before the bout and the hair holds; a wrong stroke springs loose strands you can see, and the real prints make every client a person"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-25T06:57:52+00:00",
+     "ok": true,
+     "note": "Remove test screenshots that slipped into docs",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T06:56:25+00:00",
      "ok": true,
@@ -15414,12 +15420,6 @@
      "at": "2026-10-22T23:36:58+00:00",
      "ok": false,
      "note": "see",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-22T17:55:37+00:00",
-     "ok": true,
-     "note": "L4 retuned so one pull is given up; par counts finger strokes (L11 138)",
      "source": "board note"
     }
    ]
@@ -16074,7 +16074,7 @@
    ]
   },
   {
-   "nextTask": "mushroom-gaps: one phone screen, Next on screen after...",
+   "nextTask": null,
    "costTotalUsd": 54.39,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -16103,8 +16103,8 @@
    "title": "Mushroom at the End",
    "line": "Grow mycelium threads across an old factory floor and cut.",
    "url": "https://chenhsieh.github.io/mushroom-gaps/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "wants this to happen; preview before commit, journalist research, taste visual...",
    "shelfNote": "",
@@ -16122,7 +16122,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:09:55+00:00",
-   "lastChange": "2026-10-25T05:46:50+00:00",
+   "lastChange": "2026-10-25T06:58:48+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -16138,10 +16138,10 @@
    "tasks": [
     {
      "title": "P1FS26_mushroom gaps one screen",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "mushroom-gaps: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T05:46:50+00:00",
+     "since": "2026-10-25T06:57:56+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -16250,8 +16250,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 7
    },
