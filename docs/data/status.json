@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T04:47:23+00:00",
+ "generated": "2026-10-25T04:49:54+00:00",
  "ops": {
   "count": 7,
   "notes": [
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 67,
+    "queued": 66,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2680,
-    "estimateMinutes": 2680
+    "minutes": 2640,
+    "estimateMinutes": 2640
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 68,
+  "queued": 67,
   "running": 2,
   "doneToday": 0,
   "lanes": {
@@ -46,25 +46,25 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2860,
-  "estimatedFinish": "2026-10-27T01:27:23+00:00",
-  "estimateMinutes": 2680
+  "minutesRemaining": 2820,
+  "estimatedFinish": "2026-10-27T00:49:54+00:00",
+  "estimateMinutes": 2640
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "makeshift-chair",
-   "task": "P2MC03_share and sound",
-   "since": "2026-10-25T04:39:15+00:00",
-   "activity": "2026-10-25T04:45:30+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "pinch-points",
    "task": "P2PP04_pinch points visual round design",
    "since": "2026-10-25T04:45:53+00:00",
    "activity": "2026-10-25T04:45:54+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "rumour-on-the-jetty",
+   "task": "P2RJT00_rumour on the jetty",
+   "since": "2026-10-25T04:49:13+00:00",
+   "activity": "2026-10-25T04:49:14+00:00",
    "commit": null
   }
  ],
@@ -13999,15 +13999,15 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "share and sound",
+   "waitingOn": "visual round clay",
    "id": "makeshift-chair",
    "number": 35,
    "repo": "makeshift-chair",
    "title": "Makeshift Chair",
    "line": "",
    "url": "https://chenhsieh.github.io/makeshift-chair/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "make it a 3D physics game where sitting goes ridiculously wrong; daily games",
    "shelfNote": "",
@@ -14029,30 +14029,16 @@
    "cost": {
     "apiUsd": 11.15,
     "codexRuns": 2,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 1,
     "codexTokens": 335257,
     "codexUsdEst": 0.4,
-    "claudeUsdEst": 14.4,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
+    "claudeUsdEst": 18.0,
+    "earlierRounds": 9,
+    "earlierUsdEst": 32.4,
     "totalUsdEst": 61.95
    },
    "tasks": [
-    {
-     "title": "P2MC03_share and sound",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Makeshift Chair 3D: share line and physical sounds",
-     "since": "2026-10-25T04:39:15+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2MC04_visual round clay",
      "state": "queued",
@@ -14094,6 +14080,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1MC01 Makeshift Chair 3D: parts library and snapping. DONE. main . Live: https://chenhsieh.github.io/makeshift-chair/3d/ (live bytes md5-matched for index.html, spike.js, parts.js, sim.js; live run of test/spike3d.mjs..."
+    },
+    {
+     "title": "P2MC03_share and sound",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Makeshift Chair 3D: share line and physical sounds",
+     "since": "2026-10-24T09:30:42+00:00",
+     "done": "2026-10-24T09:30:42+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P2MC03 result (Sonnet). Published to makeshift-chair main ; only docs/3d/ and test/ changed (the 2D game is untouched); live bytes match (spike.js, sim.js, sound.js, index.html); test/spike3d.mjs run against the LIVE..."
     },
     {
      "title": "P1MC02_clients levels and daily",
@@ -14154,9 +14154,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 7
+    "done": 8
    },
    "verdict": null,
    "needsYou": null,
@@ -21652,15 +21652,15 @@
     "reviseRound": 1,
     "daysInState": 2
    },
-   "waitingOn": "kit fit rollout rumour on the jetty",
+   "waitingOn": "rumour on the jetty",
    "id": "rumour-on-the-jetty",
    "number": 154,
    "repo": "rumour-on-the-jetty",
    "title": "Rumour On The Jetty",
    "line": "",
    "url": "https://chenhsieh.github.io/rumour-on-the-jetty/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -21674,7 +21674,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-25T01:49:44+00:00",
+   "lastChange": "2026-10-25T04:49:14+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -21689,11 +21689,11 @@
    },
    "tasks": [
     {
-     "title": "P2AX16_kit fit rollout rumour on the jetty",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "rumour-on-the-jetty: take the new play kit so the board and Undo fit a small phone",
-     "since": "2026-10-24T11:35:01+00:00",
+     "title": "P2RJT00_rumour on the jetty",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Rumour on the Jetty: the town fits a phone, door dots readable, the boat tap no longer counts as a whisper",
+     "since": "2026-10-25T04:49:13+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -21703,11 +21703,11 @@
      "result": ""
     },
     {
-     "title": "P2RJT00_rumour on the jetty",
+     "title": "P2AX16_kit fit rollout rumour on the jetty",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Rumour on the Jetty: the town fits a phone, door dots readable, the boat tap no longer counts as a whisper",
-     "since": "2026-10-24T01:38:21+00:00",
+     "plan": "rumour-on-the-jetty: take the new play kit so the board and Undo fit a small phone",
+     "since": "2026-10-24T11:35:01+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -21732,8 +21732,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
