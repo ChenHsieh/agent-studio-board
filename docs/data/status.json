@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T09:52:46+00:00",
+ "generated": "2026-10-25T09:55:11+00:00",
  "ops": {
-  "count": 40,
+  "count": 34,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 49,
+    "queued": 58,
     "running": 0,
     "doneToday": 7,
-    "minutes": 1960,
-    "estimateMinutes": 1960
+    "minutes": 2320,
+    "estimateMinutes": 2320
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 50,
+  "queued": 59,
   "running": 1,
   "doneToday": 39,
   "lanes": {
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2080,
-  "estimatedFinish": "2026-10-26T18:32:46+00:00",
-  "estimateMinutes": 1960
+  "minutesRemaining": 2440,
+  "estimatedFinish": "2026-10-27T00:35:11+00:00",
+  "estimateMinutes": 2320
  },
  "lanes": [
   {
@@ -5675,7 +5675,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "dynasty-guess: the whole game fits one phone screen...",
    "costTotalUsd": 66.1,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -5685,21 +5685,21 @@
    "why": "Open collection records of National Palace Museum objects; read material, form, glaze and wear on one real object and guess its period.",
    "state": "released",
    "stateFlags": {
-    "refining": false,
+    "refining": true,
     "resting": false,
     "regressed": false,
     "reviseRound": 2,
     "daysInState": 2
    },
-   "waitingOn": "none",
+   "waitingOn": "dynasty guess one screen",
    "id": "dynasty-guess",
    "number": 50,
    "repo": "dynasty-guess",
    "title": "Dynasty Guess",
    "line": "Place a museum object in its period.",
    "url": "https://chenhsieh.github.io/dynasty-guess/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Fix the missing object, then refine mechanism, story and",
    "shelfNote": "",
@@ -5713,7 +5713,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-25T02:23:29+00:00",
+   "lastChange": "2026-10-25T09:54:47+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
@@ -5727,6 +5727,20 @@
     "totalUsdEst": 66.1
    },
    "tasks": [
+    {
+     "title": "P1FS33_dynasty guess one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "dynasty-guess: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:54:47+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1DG02_dynasty guess collection shelf bilingual labels",
      "state": "done",
@@ -5824,24 +5838,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "feat: open Dynasty with a playable registrar shelf"
-    },
-    {
-     "title": "dynasty cabinet build",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Dynasty Guess: a cabinet of drawers with the oldest era at the bottom, the object held large in your hands, a reveal that shows what turning it told you, and a share card.",
-     "since": "2026-10-21T04:17:04+00:00",
-     "done": "2026-10-21T04:17:04+00:00",
-     "reviewed": false,
-     "minutes": 11,
-     "tokens": 239183,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "feat: restore each night in a museum cabinet"
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 16
@@ -5852,7 +5852,7 @@
     "note": "Big museum pictures, a full-screen viewer and instant flips make the objects a pleasure to look at, but the cabinet outlines the right era for whichever object you pick, so placing is not yet a judgment"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T02:23:29+00:00",
@@ -10288,7 +10288,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "copy-paste: the whole game fits one phone screen...",
    "costTotalUsd": 111.54,
    "latestChange": {
     "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
@@ -10303,23 +10303,23 @@
     "caption": "Find the princess's first invitation among the copies."
    },
    "why": "Copy-paste greeting replies with place, name and age swapped each time, plus a stack of identical installer dialogs.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 0
+    "daysInState": 5
    },
-   "waitingOn": "none",
+   "waitingOn": "copy paste one screen",
    "id": "copy-paste",
    "number": 53,
    "repo": "copy-paste",
    "title": "Hello Princess",
    "line": "Find the princess's first invitation among the copies.",
    "url": "https://chenhsieh.github.io/copy-paste/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Settle the card-link logic, stop story art leaking answers",
    "shelfNote": "",
@@ -10333,7 +10333,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T18:59:22+00:00",
-   "lastChange": "2026-10-25T03:24:01+00:00",
+   "lastChange": "2026-10-25T09:55:06+00:00",
    "cost": {
     "apiUsd": 16.91,
     "codexRuns": 4,
@@ -10347,6 +10347,34 @@
     "totalUsdEst": 111.54
    },
    "tasks": [
+    {
+     "title": "P2FS37_copy paste one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "copy-paste: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:55:06+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P2FS36_copy paste win sheet tests",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "copy-paste: put the pinned win sheet in without breaking the game's own tests",
+     "since": "2026-10-25T09:55:01+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3OR60_name hello princess readme",
      "state": "done",
@@ -10430,38 +10458,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Gather, shuffle, blank-until-win story panels, frame vocabulary, and party-road Levels are live."
-    },
-    {
-     "title": "copy paste journey",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Settle the card-link logic, stop story art leaking answers, add shuffle, plan the journey-to-the-castle story.",
-     "since": "2026-10-19T17:54:51+00:00",
-     "done": "2026-10-19T17:54:51+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Hello Princess design settled in intake_20261019/BRIEF_copy-paste.md; Codex build task P2c02_copy-paste-build queued with its plan line; round 2 (the chain and the gate challenges, the gift collection, the speakeasy)..."
-    },
-    {
-     "title": "review of princess story",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-18T21:20:32+00:00",
-     "done": "2026-10-18T21:20:32+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 13
@@ -10472,7 +10472,7 @@
     "note": "Step-by-step linking and inferable feedback"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T03:24:01+00:00",
@@ -11161,7 +11161,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "honest-sign: the whole game fits one phone screen...",
    "costTotalUsd": 50.57,
    "latestChange": {
     "text": "Result sheet says Next level again (kit 20 label fix from play-template )",
@@ -11171,21 +11171,21 @@
    "why": "A seven-segment sign must state how many bars it lights, so every correction changes what it corrects; copying the meter loops on about half the signs.",
    "state": "ship",
    "stateFlags": {
-    "refining": false,
+    "refining": true,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "owner",
+   "waitingOn": "honest sign one screen",
    "id": "honest-sign",
    "number": 150,
    "repo": "honest-sign",
    "title": "Honest Sign",
    "line": "",
    "url": "https://chenhsieh.github.io/honest-sign/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -11199,7 +11199,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:32:13+00:00",
-   "lastChange": "2026-10-25T09:34:52+00:00",
+   "lastChange": "2026-10-25T09:54:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -11213,6 +11213,20 @@
     "totalUsdEst": 50.57
    },
    "tasks": [
+    {
+     "title": "P1FS34_honest sign one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "honest-sign: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:54:52+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2AX13_kit fit rollout honest sign",
      "state": "done",
@@ -11257,7 +11271,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
@@ -11268,7 +11282,7 @@
     "note": "The sign now says its number in plain words and the copy level shows the trap; the obvious nudge still gets stuck on every level from 2 on"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T09:34:52+00:00",
@@ -14992,7 +15006,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "mint: the whole game fits one phone screen...",
    "costTotalUsd": 50.4,
    "latestChange": {
     "text": "Result sheet says Next level again (kit 20 label fix from play-template )",
@@ -15002,21 +15016,21 @@
    "why": "A citizen's toy-block map of unresolved incidents that spread each time officials pushed back, and a deleted statement that survived only as copies.",
    "state": "ship",
    "stateFlags": {
-    "refining": false,
+    "refining": true,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "owner",
+   "waitingOn": "mint one screen",
    "id": "mint",
    "number": 153,
    "repo": "mint",
    "title": "Mint",
    "line": "",
    "url": "https://chenhsieh.github.io/mint/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -15030,7 +15044,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-25T09:34:49+00:00",
+   "lastChange": "2026-10-25T09:54:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -15044,6 +15058,20 @@
     "totalUsdEst": 50.4
    },
    "tasks": [
+    {
+     "title": "P1FS35_mint one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "mint: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:54:56+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2AX15_kit fit rollout mint",
      "state": "done",
@@ -15088,7 +15116,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
@@ -15099,7 +15127,7 @@
     "note": "The garden is named, the first minute teaches the pull, and the night plays as steps; the straight dash still loses on every level after the first"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T09:34:49+00:00",
@@ -29118,7 +29146,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "tractatus-tree: put the pinned win sheet in without...",
    "costTotalUsd": 86.95,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -29126,23 +29154,23 @@
    },
    "promo": null,
    "why": "A social post on Wittgenstein's numbered propositions (1, 1.1, 4.001 and so on).",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 0
+    "daysInState": 4
    },
-   "waitingOn": "none",
+   "waitingOn": "tractatus tree win sheet tests",
    "id": "tractatus-tree",
    "number": 91,
    "repo": "tractatus-tree",
    "title": "Tractatus Tree",
    "line": "The numbered pages of a 1921 book are shuffled into a few.",
    "url": "https://chenhsieh.github.io/tractatus-tree/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Teach the philosophy gradually through play, not as homework",
    "shelfNote": "",
@@ -29160,7 +29188,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:14:42+00:00",
-   "lastChange": "2026-10-25T01:52:50+00:00",
+   "lastChange": "2026-10-25T09:55:10+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -29174,6 +29202,20 @@
     "totalUsdEst": 86.95
    },
    "tasks": [
+    {
+     "title": "P2FS38_tractatus tree win sheet tests",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "tractatus-tree: put the pinned win sheet in without breaking the game's own tests",
+     "since": "2026-10-25T09:55:10+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2FM58_tractatus tree first minute fix",
      "state": "done",
@@ -29271,24 +29313,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1t11b DONE, live https://chenhsieh.github.io/tractatus-tree/ (main ; live bytes match for index, shell, draw, rules, levels, look, strings)."
-    },
-    {
-     "title": "tractatus tree visible",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "",
-     "since": "2026-10-20T02:45:26+00:00",
-     "done": "2026-10-20T02:45:26+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "A player sees every page of every stack: the top page full size and each page under it as a 20 px strip above it with its number in the book face (a 4-page stack fits the board, no inner scroll needed on any of the 15..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 10
@@ -29299,7 +29327,7 @@
     "note": "Reveal text; humour or dark spin; growth"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:52:50+00:00",
@@ -29376,7 +29404,7 @@
    ]
   },
   {
-   "nextTask": "Why this exists: finish the rollout on tree-hero...",
+   "nextTask": "tree-hero: the whole game fits one phone screen...",
    "costTotalUsd": 61.39,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -29399,7 +29427,7 @@
     "reviseRound": 1,
     "daysInState": 6
    },
-   "waitingOn": "tree hero why rollout",
+   "waitingOn": "tree hero one screen",
    "id": "tree-hero",
    "number": 11,
    "repo": "tree-hero",
@@ -29421,7 +29449,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-25T06:12:52+00:00",
+   "lastChange": "2026-10-25T09:54:42+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -29435,6 +29463,20 @@
     "totalUsdEst": 61.39
    },
    "tasks": [
+    {
+     "title": "P1FS32_tree hero one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "tree-hero: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:54:42+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3PL10_tree hero why rollout",
      "state": "queued",
@@ -29532,24 +29574,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "tree hero bio round",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Bioinformatics round: make the idea legible in the first minute, add a light story, refine the interface.",
-     "since": "2026-10-19T17:54:51+00:00",
-     "done": "2026-10-19T17:54:51+00:00",
-     "reviewed": true,
-     "minutes": 7,
-     "tokens": 155848,
-     "reviewOutcome": "fixed",
-     "commit": null,
-     "result": "Changed:"
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 7
