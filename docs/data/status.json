@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T07:43:27+00:00",
+ "generated": "2026-10-25T07:45:45+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 61,
+    "queued": 60,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2440,
-    "estimateMinutes": 2440
+    "minutes": 2400,
+    "estimateMinutes": 2400
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 26,
+    "doneToday": 27,
     "minutes": 180,
     "estimateMinutes": 90
    }
   },
-  "queued": 62,
+  "queued": 61,
   "running": 2,
-  "doneToday": 26,
+  "doneToday": 27,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2620,
-  "estimatedFinish": "2026-10-27T00:23:27+00:00",
-  "estimateMinutes": 2440
+  "minutesRemaining": 2580,
+  "estimatedFinish": "2026-10-26T23:45:45+00:00",
+  "estimateMinutes": 2400
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "directory-handrail",
-   "task": "P1FS15_directory handrail one screen",
-   "since": "2026-10-25T07:35:38+00:00",
-   "activity": "2026-10-25T07:42:45+00:00",
+   "game": "colony-count",
+   "task": "P1FS16_colony count one screen",
+   "since": "2026-10-25T07:44:25+00:00",
+   "activity": "2026-10-25T07:44:27+00:00",
    "commit": null
   },
   {
@@ -3067,7 +3067,7 @@
    ]
   },
   {
-   "nextTask": "colony-count: one phone screen, Next on screen after...",
+   "nextTask": null,
    "costTotalUsd": 181.65,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -3090,8 +3090,8 @@
    "title": "Colony Count",
    "line": "Solve three daily levels, then freeze finished plates.",
    "url": "https://chenhsieh.github.io/colony-count/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Flagship; has its own owner",
    "shelfNote": "",
@@ -3109,7 +3109,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-25T07:03:06+00:00",
+   "lastChange": "2026-10-25T07:44:27+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 2,
@@ -3125,10 +3125,10 @@
    "tasks": [
     {
      "title": "P1FS16_colony count one screen",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "colony-count: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T07:03:06+00:00",
+     "since": "2026-10-25T07:44:25+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -3237,8 +3237,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 34
    },
@@ -23986,23 +23986,23 @@
     "caption": "Signposts is a short phone puzzle about hanging route."
    },
    "why": "A screenshot of a directory that links to other design directories.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 6
+    "daysInState": 0
    },
-   "waitingOn": "directory handrail one screen",
+   "waitingOn": "none",
    "id": "directory-handrail",
    "number": 37,
    "repo": "directory-handrail",
    "title": "Signposts",
    "line": "Signposts is a short phone puzzle about hanging route.",
    "url": "https://chenhsieh.github.io/directory-handrail/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Flagship polish round: finish the market-manager framing",
    "shelfNote": "",
@@ -24024,29 +24024,29 @@
    "cost": {
     "apiUsd": 7.97,
     "codexRuns": 3,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 1,
     "codexTokens": 806850,
     "codexUsdEst": 0.97,
-    "claudeUsdEst": 14.4,
-    "earlierRounds": 21,
-    "earlierUsdEst": 75.6,
+    "claudeUsdEst": 18.0,
+    "earlierRounds": 20,
+    "earlierUsdEst": 72.0,
     "totalUsdEst": 98.94
    },
    "tasks": [
     {
      "title": "P1FS15_directory handrail one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "directory-handrail: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T07:35:38+00:00",
-     "done": null,
+     "since": "2026-10-25T07:03:29+00:00",
+     "done": "2026-10-25T07:03:29+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1FS15 directory-handrail (Signposts) one screen: DONE (Sonnet overflow worker, 2026-10-25). Commit on main; live bytes match (app2.js, draw.js, model.js, signposts.css); live gate PASS."
     },
     {
      "title": "P1SD37_studio standard directory handrail",
@@ -24149,9 +24149,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 8
+    "done": 9
    },
    "verdict": {
     "date": "2026-10-19",
@@ -24159,7 +24159,7 @@
     "note": "Flagship polish round: finish the market-manager framing"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T07:42:45+00:00",
