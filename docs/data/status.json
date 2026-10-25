@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T02:08:07+00:00",
+ "generated": "2026-10-25T02:10:27+00:00",
  "ops": {
-  "count": 144,
+  "count": 138,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 53,
+    "queued": 63,
     "running": 0,
     "doneToday": 3,
-    "minutes": 2120,
-    "estimateMinutes": 2120
+    "minutes": 2520,
+    "estimateMinutes": 2520
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 54,
+  "queued": 64,
   "running": 2,
   "doneToday": 88,
   "lanes": {
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2300,
-  "estimatedFinish": "2026-10-26T13:28:07+00:00",
-  "estimateMinutes": 2120
+  "minutesRemaining": 2700,
+  "estimatedFinish": "2026-10-26T20:10:27+00:00",
+  "estimateMinutes": 2520
  },
  "lanes": [
   {
@@ -3035,7 +3035,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "colony-count: one phone screen, Next on screen after...",
    "costTotalUsd": 181.65,
    "latestChange": {
     "text": "tests: an old save loads (v1 carry-over, v2 normalising, garbage keys); Incubator...",
@@ -3045,7 +3045,7 @@
    "why": "An ad for a three-colour sweeper puzzle (ColorSweeper).",
    "state": "released",
    "stateFlags": {
-    "refining": false,
+    "refining": true,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
@@ -3058,8 +3058,8 @@
    "title": "Colony Count",
    "line": "Solve three daily levels, then freeze finished plates.",
    "url": "https://chenhsieh.github.io/colony-count/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Flagship; has its own owner",
    "shelfNote": "",
@@ -3077,7 +3077,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-25T01:34:09+00:00",
+   "lastChange": "2026-10-25T02:10:20+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 2,
@@ -3091,6 +3091,20 @@
     "totalUsdEst": 181.65
    },
    "tasks": [
+    {
+     "title": "P1FS16_colony count one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "colony-count: one phone screen, Next on screen after a win, swipe on the board scrolls",
+     "since": "2026-10-25T02:10:20+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2CC35_colony count save migration test",
      "state": "done",
@@ -3188,24 +3202,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "OR LANE OK: Test: grep -qF '<meta property=\"og:description\" content=\"A logic puzzle on a petri dish. Row and column clues count the colonies in each line.\">' docs/index.html && ! grep -qF 'Three tiny lessons, then 5 x"
-    },
-    {
-     "title": "P3OR34_colony count link preview",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Colony Count: a proper link preview (picture and one-line description) when the game is shared",
-     "since": "2026-10-22T23:43:10+00:00",
-     "done": "2026-10-22T23:43:10+00:00",
-     "reviewed": false,
-     "minutes": 5,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "OR LANE OK: Test: docs \"Colony Count\" \"A logic puzzle on a petri dish. Work out where three bacteria grew. No guessing needed.\" https://chenhsieh"
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 34
@@ -3216,7 +3216,7 @@
     "note": "The lessons teach the rules in a minute and the lab dishes now play cleanly; most words are still too small and the round dish edge counts tell kinds apart by colour alone"
    },
    "needsYou": "GoatCounter visit counter is wired but off in five games (this one, Walls Have Ears, Cymatic Plate, Glasshouse, UGA Grad Survivor) until a site code is chosen. Suggest: sign up with one shared code and switch all five on.",
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:34:09+00:00",
@@ -4187,7 +4187,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "cymatic-plate: one phone screen, Next on screen after...",
    "costTotalUsd": 83.44,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -4204,21 +4204,21 @@
    "why": "Chladni figures on a vibrating plate and a post of dye moving on vibrating milk.",
    "state": "released",
    "stateFlags": {
-    "refining": false,
+    "refining": true,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "none",
+   "waitingOn": "cymatic plate one screen",
    "id": "cymatic-plate",
    "number": 85,
    "repo": "cymatic-plate",
    "title": "Cymatic Plate",
    "line": "Ring notes on a brass plate covered in sand and watch the.",
    "url": "https://chenhsieh.github.io/cymatic-plate/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
@@ -4232,7 +4232,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:40:04+00:00",
-   "lastChange": "2026-10-25T01:28:34+00:00",
+   "lastChange": "2026-10-25T02:10:11+00:00",
    "cost": {
     "apiUsd": 3.26,
     "codexRuns": 5,
@@ -4246,6 +4246,20 @@
     "totalUsdEst": 83.44
    },
    "tasks": [
+    {
+     "title": "P1FS14_cymatic plate one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "cymatic-plate: one phone screen, Next on screen after a win, swipe on the board scrolls",
+     "since": "2026-10-25T02:10:11+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1CY00_endless always solvable and overload bar",
      "state": "done",
@@ -4343,24 +4357,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Overflow is \"the plate goes quiet\": dye adds weight, each drop audibly dulls the tone, and at weight 8 the bow draws and nothing sounds. New drops fall every 4/3/2 notes (no clock), drops landing on one cell pool, and..."
-    },
-    {
-     "title": "review of cymatic assist",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-19T15:12:38+00:00",
-     "done": "2026-10-19T15:12:38+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 15
@@ -4371,7 +4371,7 @@
     "note": "Ship after endless mode gets sound, haptics and the logo"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:28:34+00:00",
@@ -6319,8 +6319,8 @@
    "nextTask": null,
    "costTotalUsd": 69.62,
    "latestChange": {
-    "text": "No accidental zoom on phones:",
-    "at": "2026-10-25T01:07:59+00:00"
+    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
+    "at": "2026-10-25T01:48:02+00:00"
    },
    "promo": {
     "files": {
@@ -6360,7 +6360,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T23:11:23+00:00",
-   "lastChange": "2026-10-25T01:07:59+00:00",
+   "lastChange": "2026-10-25T01:48:02+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
@@ -6502,6 +6502,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T01:48:02+00:00",
+     "ok": true,
+     "note": "Zoom guard updated: taps are never cancelled (P1ZM00)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T01:07:59+00:00",
      "ok": true,
      "note": "No accidental zoom on phones:",
@@ -6565,12 +6571,6 @@
      "at": "2026-10-20T00:32:42+00:00",
      "ok": true,
      "note": "design brief (family calendar) + build task B2f",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-19T23:21:07+00:00",
-     "ok": true,
-     "note": "goat life-meadow story, distinct level decisions, shared target bar and level cabinet, old-save coverage, and live 390x844 plus 320x568 touch checks published",
      "source": "board note"
     }
    ]
@@ -8058,7 +8058,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "forager: one phone screen, Next on screen after...",
    "costTotalUsd": 83.23,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -8073,23 +8073,23 @@
     "caption": "Change letters to widen the greedy gap."
    },
    "why": "Now The Forager: drag berries so a bird that always flies to the closest berry takes a much longer trip than the shortest round trip.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 0
+    "daysInState": 5
    },
-   "waitingOn": "none",
+   "waitingOn": "forager one screen",
    "id": "fool-the-algorithm",
    "number": 94,
    "repo": "fool-the-algorithm",
    "title": "Forager",
    "line": "Drag berries so a nearest-first bird flies the long way.",
    "url": "https://chenhsieh.github.io/forager/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Show per-path distance bars and named berries, lay the two",
    "shelfNote": "",
@@ -8103,7 +8103,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T07:50:19+00:00",
-   "lastChange": "2026-10-25T01:38:03+00:00",
+   "lastChange": "2026-10-25T02:09:58+00:00",
    "cost": {
     "apiUsd": 10.18,
     "codexRuns": 3,
@@ -8117,6 +8117,20 @@
     "totalUsdEst": 83.23
    },
    "tasks": [
+    {
+     "title": "P1FS11_forager one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "forager: one phone screen, Next on screen after a win, swipe on the board scrolls",
+     "since": "2026-10-25T02:09:58+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1FG00_forager birds and play pause",
      "state": "done",
@@ -8214,24 +8228,10 @@
      "reviewOutcome": "fixed",
      "commit": null,
      "result": "Forager now has touch-priority berries, smooth Play/Pause flight, 1×/2× speed, and cleaner illustrated themes."
-    },
-    {
-     "title": "review of forager step",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-18T19:15:05+00:00",
-     "done": "2026-10-18T19:15:05+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 10
@@ -8242,7 +8242,7 @@
     "note": "Show per-path distance bars and named berries, lay the two"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:38:03+00:00",
@@ -8549,7 +8549,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "gif-cities: one phone screen, Next on screen after...",
    "costTotalUsd": 80.04,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -8564,23 +8564,23 @@
     "caption": "Stack rescued GIFs down a 1999 homepage so every visitor."
    },
    "why": "An Internet Archive reel on GifCities, its search engine of rescued GeoCities GIFs.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 0
+    "daysInState": 5
    },
-   "waitingOn": "none",
+   "waitingOn": "gif cities one screen",
    "id": "gif-cities",
    "number": 93,
    "repo": "gif-cities",
    "title": "GIF Cities",
    "line": "Stack rescued GIFs down a 1999 homepage so every visitor.",
    "url": "https://chenhsieh.github.io/gif-cities/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Flagship polish round: slower default pace with a speed",
    "shelfNote": "",
@@ -8598,7 +8598,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:37:00+00:00",
-   "lastChange": "2026-10-25T01:41:03+00:00",
+   "lastChange": "2026-10-25T02:10:24+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -8612,6 +8612,20 @@
     "totalUsdEst": 80.04
    },
    "tasks": [
+    {
+     "title": "P1FS17_gif cities one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "gif-cities: one phone screen, Next on screen after a win, swipe on the board scrolls",
+     "since": "2026-10-25T02:10:24+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SD19_studio standard gif cities",
      "state": "done",
@@ -8709,24 +8723,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "GIF Cities now names every symbol in a key under the board, has a Rescued GIFs shelf with a signer total, and its hit counter says what it really counts."
-    },
-    {
-     "title": "gif cities legible",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Goal line first, every board symbol named in How to play and tappable in game, a coach on the first levels.",
-     "since": "2026-10-18T17:30:12+00:00",
-     "done": "2026-10-18T17:30:12+00:00",
-     "reviewed": true,
-     "minutes": 13,
-     "tokens": 142641,
-     "reviewOutcome": "fixed",
-     "commit": null,
-     "result": "Added pictured symbol legend, touch labels, early strategy coaching, and legacy-save coverage."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 8
@@ -8737,7 +8737,7 @@
     "note": "Flagship polish round: slower default pace with a speed"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:41:03+00:00",
@@ -9404,7 +9404,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "grass-crossword: one phone screen, Next on screen after...",
    "costTotalUsd": 66.32,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -9419,13 +9419,13 @@
     "caption": "A crossword dug into a garden bed, where every answer is."
    },
    "why": "A conceptual artwork from 2002: a newspaper crossword with every square green and every answer written as GRASS.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 0
+    "daysInState": 4
    },
    "waitingOn": "owner",
    "id": "grass-crossword",
@@ -9434,8 +9434,8 @@
    "title": "Grass Crossword",
    "line": "A crossword dug into a garden bed, where every answer is.",
    "url": "https://chenhsieh.github.io/grass-crossword/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "nearly ready; newspaper look, plain Share, a daily that is a new puzzle each...",
    "shelfNote": "",
@@ -9453,7 +9453,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:41:42+00:00",
-   "lastChange": "2026-10-25T01:44:55+00:00",
+   "lastChange": "2026-10-25T02:09:54+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
@@ -9467,6 +9467,20 @@
     "totalUsdEst": 66.32
    },
    "tasks": [
+    {
+     "title": "P1FS10_grass crossword one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "grass-crossword: one phone screen, Next on screen after a win, swipe on the board scrolls",
+     "since": "2026-10-25T02:09:54+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1GX02_visual round build",
      "state": "done",
@@ -9564,24 +9578,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Grass Crossword: live https://chenhsieh.github.io/grass-crossword/ (main , rollback tag pre-drag-logic-; live bytes of shell/rules/draw/css/html match; live level 17 loads with 5 answers, no console errors, own logo..."
-    },
-    {
-     "title": "grass crossword piece legend teaching",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "Grass Crossword: a drawn mark and length boxes for every grass packet, a first-use example, and a field guide to the grass family.",
-     "since": "2026-10-20T20:06:42+00:00",
-     "done": "2026-10-20T20:06:42+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Grass Crossword legend: live https://chenhsieh.github.io/grass-crossword/ (main , tag pre-legend-; live bytes match; live level 14 shows the SOD packet with its mark, no console errors)."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 16
@@ -9592,7 +9592,7 @@
     "note": "Harder levels not intuitive; drag preview inconsistent"
    },
    "needsYou": "The credit links the artist's Instagram profile because the exact post address is unknown. Suggest: keep the profile link until the post is found.",
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:44:55+00:00",
@@ -10399,10 +10399,10 @@
   },
   {
    "nextTask": "Herbal of Nowhere: opened pages stay open after...",
-   "costTotalUsd": 21.85,
+   "costTotalUsd": 25.45,
    "latestChange": {
-    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
-    "at": "2026-10-24T22:43:51+00:00"
+    "text": "No accidental zoom on phones:",
+    "at": "2026-10-25T01:42:49+00:00"
    },
    "promo": {
     "files": {
@@ -10442,7 +10442,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-24T22:43:51+00:00",
+   "lastChange": "2026-10-25T01:42:49+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -10451,9 +10451,9 @@
     "codexTokens": 209511,
     "codexUsdEst": 0.25,
     "claudeUsdEst": 10.8,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
-    "totalUsdEst": 21.85
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
+    "totalUsdEst": 25.45
    },
    "tasks": [
     {
@@ -10555,6 +10555,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-25T01:42:49+00:00",
+     "ok": true,
+     "note": "No accidental zoom on phones:",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-24T22:43:51+00:00",
      "ok": true,
@@ -13552,8 +13558,8 @@
    "nextTask": null,
    "costTotalUsd": 65.02,
    "latestChange": {
-    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
-    "at": "2026-10-24T22:13:02+00:00"
+    "text": "No accidental zoom on phones:",
+    "at": "2026-10-25T02:09:09+00:00"
    },
    "promo": {
     "files": {
@@ -13593,8 +13599,8 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-09-04T18:10:07+00:00",
-   "lastChange": "2026-10-24T22:13:02+00:00",
+   "firstSeen": "2026-09-05T02:10:32+00:00",
+   "lastChange": "2026-10-25T02:09:09+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -13680,6 +13686,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T02:09:09+00:00",
+     "ok": true,
+     "note": "No accidental zoom on phones:",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-24T22:13:02+00:00",
      "ok": true,
      "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
@@ -13744,12 +13756,6 @@
      "ok": true,
      "note": "feat: Local Hero becomes a DOS text-mode screen",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-19T20:59:20+00:00",
-     "ok": true,
-     "note": "shared target and first-move hint make local alignment legible; live 390x844 and 320x568 touch checks passed",
-     "source": "board note"
     }
    ]
   },
@@ -15252,10 +15258,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 50.6,
+   "costTotalUsd": 54.2,
    "latestChange": {
-    "text": "No accidental zoom on phones:",
-    "at": "2026-10-25T01:15:26+00:00"
+    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
+    "at": "2026-10-25T01:57:29+00:00"
    },
    "promo": null,
    "why": "A saved post about a website that simulates a whole life as a record card from real statistics.",
@@ -15289,7 +15295,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T04:36:43+00:00",
-   "lastChange": "2026-10-25T01:15:26+00:00",
+   "lastChange": "2026-10-25T01:57:29+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -15298,9 +15304,9 @@
     "codexTokens": 166775,
     "codexUsdEst": 0.2,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
-    "totalUsdEst": 50.6
+    "earlierRounds": 15,
+    "earlierUsdEst": 54.0,
+    "totalUsdEst": 54.2
    },
    "tasks": [
     {
@@ -15342,6 +15348,12 @@
    "needsYou": null,
    "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-25T01:57:29+00:00",
+     "ok": true,
+     "note": "Zoom guard updated: taps are never cancelled (P1ZM00)",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T01:15:26+00:00",
      "ok": true,
@@ -15407,12 +15419,6 @@
      "ok": true,
      "note": "feat:",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-16T00:13:59+00:00",
-     "ok": true,
-     "note": "LIVE https://chenhsieh.github.io/missing-field/ (claude builder)",
-     "source": "board note"
     }
    ]
   },
@@ -19618,7 +19624,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "redacxiv: one phone screen, Next on screen after...",
    "costTotalUsd": 58.97,
    "latestChange": {
     "text": "fix: Redacxiv link preview text is under 120 characters",
@@ -19635,7 +19641,7 @@
    "why": "The word game Redactle, with real open-access biology papers; guess words to unblank a hidden paper's title and abstract; decoys come from other papers.",
    "state": "released",
    "stateFlags": {
-    "refining": false,
+    "refining": true,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
@@ -19648,8 +19654,8 @@
    "title": "Redacxiv",
    "line": "Reveal a paper's title with word tiles.",
    "url": "https://chenhsieh.github.io/redacxiv/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Interface and visual pass; make the first game winnable for",
    "shelfNote": "",
@@ -19663,7 +19669,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-14T20:39:05+00:00",
-   "lastChange": "2026-10-22T17:05:03+00:00",
+   "lastChange": "2026-10-25T02:10:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -19677,6 +19683,20 @@
     "totalUsdEst": 58.97
    },
    "tasks": [
+    {
+     "title": "P1FS13_redacxiv one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "redacxiv: one phone screen, Next on screen after a win, swipe on the board scrolls",
+     "since": "2026-10-25T02:10:07+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SD32_studio standard redacxiv",
      "state": "done",
@@ -19774,24 +19794,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "BioRedactle nextjs ui pass",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Interface and visual pass; make the first game winnable for a non-academic.",
-     "since": "2026-10-19T17:54:51+00:00",
-     "done": "2026-10-19T17:54:51+00:00",
-     "reviewed": true,
-     "minutes": 20,
-     "tokens": 202365,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Players now see the goal, field, progress, miss budget, and a reachable word choice on small phones."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 8
@@ -19802,7 +19808,7 @@
     "note": "Redacxiv is ready"
    },
    "needsYou": "The Pages build is stuck: the live page was patched by hand because a full rebuild needs npm, and the old BioRedactle address still returns 404. Suggest: fix the build so the patch is not the only copy; leave the old address.",
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-22T17:05:03+00:00",
@@ -20239,7 +20245,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "remote-viewer: one phone screen, Next on screen after...",
    "costTotalUsd": 81.53,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -20256,21 +20262,21 @@
    "why": "Declassified CIA Stargate remote-viewing session reports, with a blackout rule after the word game Redactle.",
    "state": "released",
    "stateFlags": {
-    "refining": false,
+    "refining": true,
     "resting": false,
     "regressed": false,
     "reviseRound": 1,
     "daysInState": 1
    },
-   "waitingOn": "none",
+   "waitingOn": "remote viewer one screen",
    "id": "remote-viewer",
    "number": 31,
    "repo": "remote-viewer",
    "title": "Remote Viewer",
    "line": "Uncover a CIA file and name its assignment.",
    "url": "https://chenhsieh.github.io/remote-viewer/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Game-design pass to find where the fun is and build it",
    "shelfNote": "",
@@ -20288,7 +20294,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T16:38:08+00:00",
-   "lastChange": "2026-10-25T01:24:47+00:00",
+   "lastChange": "2026-10-25T02:10:02+00:00",
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 1,
@@ -20302,6 +20308,20 @@
     "totalUsdEst": 81.53
    },
    "tasks": [
+    {
+     "title": "P1FS12_remote viewer one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "remote-viewer: one phone screen, Next on screen after a win, swipe on the board scrolls",
+     "since": "2026-10-25T02:10:02+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3OR78_remote viewer credits corrected",
      "state": "done",
@@ -20399,24 +20419,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Changed: five files now present distinct investigations, clear 0/5 progress, and a transcript-first board with the source scan as evidence."
-    },
-    {
-     "title": "remote viewer",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-17T16:38:08+00:00",
-     "done": "2026-10-17T16:38:08+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Changed for a player: a Hint now adds 1 to the file's score and a hinted file shows ◩; giving up scores the file as a full marker (+ink cap minus fewest, shown in the confirm line) instead of vanishing from +N; the..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 8
@@ -20427,7 +20433,7 @@
     "note": "Game-design pass to find where the fun is and build it"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:24:47+00:00",
@@ -20505,10 +20511,10 @@
   },
   {
    "nextTask": "Restored: blurry neighbours count by their shape, so...",
-   "costTotalUsd": 28.9,
+   "costTotalUsd": 32.5,
    "latestChange": {
-    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
-    "at": "2026-10-24T22:45:20+00:00"
+    "text": "No accidental zoom on phones:",
+    "at": "2026-10-25T01:44:22+00:00"
    },
    "promo": {
     "files": {
@@ -20548,7 +20554,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:49:51+00:00",
-   "lastChange": "2026-10-24T22:45:20+00:00",
+   "lastChange": "2026-10-25T01:44:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -20557,9 +20563,9 @@
     "codexTokens": 86565,
     "codexUsdEst": 0.1,
     "claudeUsdEst": 14.4,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
-    "totalUsdEst": 28.9
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
+    "totalUsdEst": 32.5
    },
    "tasks": [
     {
@@ -20661,6 +20667,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-25T01:44:22+00:00",
+     "ok": true,
+     "note": "No accidental zoom on phones:",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-24T22:45:20+00:00",
      "ok": true,
@@ -23706,7 +23718,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "directory-handrail: one phone screen, Next on screen after...",
    "costTotalUsd": 98.94,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -23720,23 +23732,23 @@
     "caption": "Signposts is a short phone puzzle about hanging route."
    },
    "why": "A screenshot of a directory that links to other design directories.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 0
+    "daysInState": 5
    },
-   "waitingOn": "none",
+   "waitingOn": "directory handrail one screen",
    "id": "directory-handrail",
    "number": 37,
    "repo": "directory-handrail",
    "title": "Signposts",
    "line": "Signposts is a short phone puzzle about hanging route.",
    "url": "https://chenhsieh.github.io/directory-handrail/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Flagship polish round: finish the market-manager framing",
    "shelfNote": "",
@@ -23754,7 +23766,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T03:41:15+00:00",
-   "lastChange": "2026-10-25T01:26:50+00:00",
+   "lastChange": "2026-10-25T02:10:15+00:00",
    "cost": {
     "apiUsd": 7.97,
     "codexRuns": 3,
@@ -23768,6 +23780,20 @@
     "totalUsdEst": 98.94
    },
    "tasks": [
+    {
+     "title": "P1FS15_directory handrail one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "directory-handrail: one phone screen, Next on screen after a win, swipe on the board scrolls",
+     "since": "2026-10-25T02:10:15+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SD37_studio standard directory handrail",
      "state": "done",
@@ -23865,24 +23891,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Signposts now has smooth real drag, 24 measured levels, seats, nailed tenants, and hand-holding families; research is in [FUN_20261018.md]("
-    },
-    {
-     "title": "directory handrail",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "",
-     "since": "2026-10-17T16:37:47+00:00",
-     "done": "2026-10-17T16:37:47+00:00",
-     "reviewed": false,
-     "minutes": 0,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Signposts is now a cute isometric street: the crowd comes in at the near end and walks up past each door to the first sign that fits. Levels 1 to 5 each bring in one rule"
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 8
@@ -23893,7 +23905,7 @@
     "note": "Flagship polish round: finish the market-manager framing"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:26:50+00:00",
@@ -25870,10 +25882,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 54.29,
+   "costTotalUsd": 57.89,
    "latestChange": {
-    "text": "No accidental zoom on phones:",
-    "at": "2026-10-25T01:11:24+00:00"
+    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
+    "at": "2026-10-25T01:52:58+00:00"
    },
    "promo": {
     "files": {
@@ -25913,7 +25925,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:39:08+00:00",
-   "lastChange": "2026-10-25T01:11:24+00:00",
+   "lastChange": "2026-10-25T01:52:58+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -25922,9 +25934,9 @@
     "codexTokens": 238662,
     "codexUsdEst": 0.29,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
-    "totalUsdEst": 54.29
+    "earlierRounds": 15,
+    "earlierUsdEst": 54.0,
+    "totalUsdEst": 57.89
    },
    "tasks": [
     {
@@ -25980,6 +25992,12 @@
    "needsYou": null,
    "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-25T01:52:58+00:00",
+     "ok": true,
+     "note": "Zoom guard updated: taps are never cancelled (P1ZM00)",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T01:11:24+00:00",
      "ok": true,
@@ -26045,12 +26063,6 @@
      "ok": true,
      "note": "CREDIT line on the How to play card under the rules, EN+ZH (Moji Blade by ru, Make Me a Hanzi); live",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-17T22:26:28+00:00",
-     "ok": true,
-     "note": "feat: How to play card names where the game comes from",
-     "source": "main commit"
     }
    ]
   },
@@ -30174,7 +30186,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "walls-have-ears: one phone screen, Next on screen after...",
    "costTotalUsd": 133.56,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -30190,21 +30202,21 @@
    "why": "A joke about a bugged hotel room where asking the wall for tea brings tea, plus a photo of an anechoic chamber.",
    "state": "released",
    "stateFlags": {
-    "refining": false,
+    "refining": true,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "none",
+   "waitingOn": "walls have ears one screen",
    "id": "walls-have-ears",
    "number": 57,
    "repo": "walls-have-ears",
    "title": "Walls Have Ears",
    "line": "Wish for tea and find which piece is listening.",
    "url": "https://chenhsieh.github.io/walls-have-ears/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Hotel key-cabinet level grid grouped by mechanism, and a",
    "shelfNote": "",
@@ -30218,7 +30230,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T19:49:23+00:00",
-   "lastChange": "2026-10-25T01:30:08+00:00",
+   "lastChange": "2026-10-25T02:09:49+00:00",
    "cost": {
     "apiUsd": 17.73,
     "codexRuns": 3,
@@ -30232,6 +30244,20 @@
     "totalUsdEst": 133.56
    },
    "tasks": [
+    {
+     "title": "P1FS09_walls have ears one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "walls-have-ears: one phone screen, Next on screen after a win, swipe on the board scrolls",
+     "since": "2026-10-25T02:09:49+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "walls clarity fix",
      "state": "done",
@@ -30329,24 +30355,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Long stay is live in Walls Have Ears: https://chenhsieh.github.io/walls-have-ears/ commit (also carries P1a32's rules and rooms). Menu entry sits after the street chapter with a picture of a crowded room."
-    },
-    {
-     "title": "walls next spin",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Walls Have Ears: daily fix, living hotel props, a hallway layout, and a deeper next chapter with windows and different hotels.",
-     "since": "2026-10-20T03:26:38+00:00",
-     "done": "2026-10-20T03:26:38+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "P1a25 walls-next-spin: DONE (2026-10-20)"
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 15
@@ -30357,7 +30369,7 @@
     "note": "Chapter 2 rebuilt; ready to ship"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:30:08+00:00",
@@ -30534,8 +30546,8 @@
    "nextTask": "Clean Features: tests for the reset and a...",
    "costTotalUsd": 80.06,
    "latestChange": {
-    "text": "No accidental zoom on phones:",
-    "at": "2026-10-25T00:54:38+00:00"
+    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
+    "at": "2026-10-25T02:09:09+00:00"
    },
    "promo": {
     "files": {
@@ -30580,7 +30592,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-25T00:54:38+00:00",
+   "lastChange": "2026-10-25T02:09:09+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -30718,6 +30730,12 @@
    "inProgress": true,
    "history": [
     {
+     "at": "2026-10-25T02:09:09+00:00",
+     "ok": true,
+     "note": "Zoom guard updated: taps are never cancelled (P1ZM00)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T00:54:38+00:00",
      "ok": true,
      "note": "No accidental zoom on phones:",
@@ -30782,12 +30800,6 @@
      "ok": true,
      "note": "design reset: stranger walkthrough, story (seed library night tech), one neuron rule, bots show split-most greedy always reaches par, new core brief + 5 chained rebuild tasks; dish notes no longer say a neuron fired when none did",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-24T01:34:36+00:00",
-     "ok": true,
-     "note": "fix: dish notes say \"no neuron fired\" when a picture lights nothing",
-     "source": "main commit"
     }
    ]
   },
