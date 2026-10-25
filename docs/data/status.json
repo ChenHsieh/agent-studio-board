@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T06:00:39+00:00",
+ "generated": "2026-10-25T06:03:00+00:00",
  "ops": {
   "count": 3,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 59,
+    "queued": 58,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2360,
-    "estimateMinutes": 2360
+    "minutes": 2320,
+    "estimateMinutes": 2320
    },
    "Claude": {
     "queued": 1,
     "running": 1,
-    "doneToday": 4,
+    "doneToday": 5,
     "minutes": 120,
     "estimateMinutes": 60
    }
   },
-  "queued": 60,
+  "queued": 59,
   "running": 1,
-  "doneToday": 4,
+  "doneToday": 5,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2480,
-  "estimatedFinish": "2026-10-26T21:20:39+00:00",
-  "estimateMinutes": 2360
+  "minutesRemaining": 2440,
+  "estimatedFinish": "2026-10-26T20:43:00+00:00",
+  "estimateMinutes": 2320
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "chai-boil",
-   "task": "P1FS19_chai boil one screen",
-   "since": "2026-10-25T05:47:06+00:00",
-   "activity": "2026-10-25T05:58:00+00:00",
+   "game": "clean-features",
+   "task": "P1FS20_clean features one screen",
+   "since": "2026-10-25T06:01:50+00:00",
+   "activity": "2026-10-25T06:01:54+00:00",
    "commit": null
   }
  ],
@@ -2101,13 +2101,13 @@
    },
    "promo": null,
    "why": "An AI-made video post of a pot of milk tea foaming up on a wood fire, plus the Lunar Lander game.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 4
+    "daysInState": 0
    },
    "waitingOn": "owner",
    "id": "chai-boil",
@@ -2116,8 +2116,8 @@
    "title": "Chai Boil",
    "line": "One pot, one dial: let the chai rise to the rim, not over it.",
    "url": "https://chenhsieh.github.io/chai-boil/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "hyper-realistic visuals instead of computer-drawn",
    "shelfNote": "",
@@ -2131,33 +2131,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-25T05:58:00+00:00",
+   "lastChange": "2026-10-25T05:46:50+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 6,
-    "claudeRuns": 10,
+    "claudeRuns": 11,
     "apiRuns": 3,
     "codexTokens": 1320538,
     "codexUsdEst": 1.58,
-    "claudeUsdEst": 36.0,
-    "earlierRounds": 13,
-    "earlierUsdEst": 46.8,
+    "claudeUsdEst": 39.6,
+    "earlierRounds": 12,
+    "earlierUsdEst": 43.2,
     "totalUsdEst": 91.11
    },
    "tasks": [
     {
      "title": "P1FS19_chai boil one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "chai-boil: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T05:47:06+00:00",
-     "done": null,
+     "since": "2026-10-25T05:46:50+00:00",
+     "done": "2026-10-25T05:46:50+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1FS19 chai-boil one screen: DONE (Sonnet overflow worker, 2026-10-25)."
     },
     {
      "title": "P1CB12_photo kitchens visual build",
@@ -2260,9 +2260,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 19
+    "done": 20
    },
    "verdict": {
     "date": "2026-10-21",
@@ -2270,7 +2270,7 @@
     "note": "Visual revamp, different kitchen"
    },
    "needsYou": "Prayer-flag strip in the mountain hut set: five extra colours on one strip, all six kitchens still pass the contrast check. Suggest: keep it; it costs little and no kitchen failed the contrast check.",
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T01:42:32+00:00",
@@ -30724,15 +30724,15 @@
     "reviseRound": 1,
     "daysInState": 0
    },
-   "waitingOn": "flaky 320 today drag",
+   "waitingOn": "clean features one screen",
    "id": "clean-features",
    "number": 96,
    "repo": "clean-features",
    "title": "What the Dish Sees",
    "line": "Label each colony with the one shape it sees by placing.",
    "url": "https://chenhsieh.github.io/clean-features/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Find the playable frame for the latent-space game: a clear",
    "shelfNote": "",
@@ -30750,7 +30750,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-25T05:57:10+00:00",
+   "lastChange": "2026-10-25T06:01:54+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -30765,11 +30765,11 @@
    },
    "tasks": [
     {
-     "title": "P3CF07_flaky 320 today drag",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Make the 320-wide page check stop failing at random on today's dish",
-     "since": "2026-10-25T05:57:10+00:00",
+     "title": "P1FS20_clean features one screen",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "clean-features: one phone screen, Next on screen after a win, swipe on the board scrolls",
+     "since": "2026-10-25T06:01:50+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -30779,11 +30779,11 @@
      "result": ""
     },
     {
-     "title": "P1FS20_clean features one screen",
+     "title": "P3CF07_flaky 320 today drag",
      "state": "queued",
      "worker": "Codex",
-     "plan": "clean-features: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T05:46:50+00:00",
+     "plan": "Make the 320-wide page check stop failing at random on today's dish",
+     "since": "2026-10-25T05:57:10+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -30878,8 +30878,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 16
    },
