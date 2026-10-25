@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T03:09:56+00:00",
+ "generated": "2026-10-25T03:12:15+00:00",
  "ops": {
-  "count": 30,
+  "count": 28,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,22 +20,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 71,
+    "queued": 70,
     "running": 0,
     "doneToday": 3,
-    "minutes": 2840,
-    "estimateMinutes": 2840
+    "minutes": 2800,
+    "estimateMinutes": 2800
    },
    "Claude": {
     "queued": 1,
-    "running": 3,
+    "running": 4,
     "doneToday": 90,
-    "minutes": 240,
-    "estimateMinutes": 120
+    "minutes": 300,
+    "estimateMinutes": 150
    }
   },
-  "queued": 72,
-  "running": 3,
+  "queued": 71,
+  "running": 4,
   "doneToday": 93,
   "lanes": {
    "Codex": 1,
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3080,
-  "estimatedFinish": "2026-10-27T02:29:56+00:00",
-  "estimateMinutes": 2840
+  "minutesRemaining": 3100,
+  "estimatedFinish": "2026-10-27T01:52:15+00:00",
+  "estimateMinutes": 2800
  },
  "lanes": [
   {
@@ -64,7 +64,15 @@
    "game": "fool-the-algorithm",
    "task": "P1FS11_forager one screen",
    "since": "2026-10-25T02:56:05+00:00",
-   "activity": "2026-10-25T02:57:33+00:00",
+   "activity": "2026-10-25T03:11:08+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "blackout-notice",
+   "task": "P2BN07_fix couplet first minute",
+   "since": "2026-10-25T03:10:47+00:00",
+   "activity": "2026-10-25T03:10:53+00:00",
    "commit": null
   },
   {
@@ -77,8 +85,8 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 3,
- "apiSpentUsd": 319.0,
+ "claudeWorkers": 4,
+ "apiSpentUsd": 319.02,
  "claudeInSession": {
   "runs": 288,
   "usdEst": 1036.8,
@@ -1587,7 +1595,7 @@
    ]
   },
   {
-   "nextTask": "Blackout Notice: teach the couplet game in the...",
+   "nextTask": "Blackout Notice: build the woodblock page look picked...",
    "costTotalUsd": 51.12,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -1616,8 +1624,8 @@
    "title": "Blackout Notice",
    "line": "Black out words on a stairwell notice until it says something kinder; 20 notices and a daily.",
    "url": "https://chenhsieh.github.io/blackout-notice/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Black out words on a stairwell notice until it says something kinder; 20",
    "shelfNote": "",
@@ -1635,7 +1643,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-25T01:40:50+00:00",
+   "lastChange": "2026-10-25T03:10:53+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -1651,10 +1659,10 @@
    "tasks": [
     {
      "title": "P2BN07_fix couplet first minute",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Blackout Notice: teach the couplet game in the first minute and explain the reveal",
-     "since": "2026-10-25T01:21:51+00:00",
+     "since": "2026-10-25T03:10:47+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1763,8 +1771,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 11
    },
@@ -8101,8 +8109,8 @@
    "nextTask": null,
    "costTotalUsd": 83.23,
    "latestChange": {
-    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
-    "at": "2026-10-25T01:38:03+00:00"
+    "text": "One screen: Grey is marked at first open, a swipe off the berries scrolls the page...",
+    "at": "2026-10-25T03:11:08+00:00"
    },
    "promo": {
     "files": {
@@ -8143,7 +8151,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T07:50:19+00:00",
-   "lastChange": "2026-10-25T02:57:33+00:00",
+   "lastChange": "2026-10-25T03:11:08+00:00",
    "cost": {
     "apiUsd": 10.18,
     "codexRuns": 3,
@@ -8285,6 +8293,12 @@
    "inProgress": true,
    "history": [
     {
+     "at": "2026-10-25T03:11:08+00:00",
+     "ok": true,
+     "note": "One screen: Grey is marked at first open, a swipe off the berries scrolls the page (P1FS11)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T01:38:03+00:00",
      "ok": true,
      "note": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -8348,12 +8362,6 @@
      "at": "2026-10-21T22:21:27+00:00",
      "ok": true,
      "note": "fix: Fool the Algorithm top-left shows its own logo and title",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-19T19:16:51+00:00",
-     "ok": true,
-     "note": "fix: berry names are readable on the board and the route rows wrap instead of hiding stops",
      "source": "main commit"
     }
    ]
