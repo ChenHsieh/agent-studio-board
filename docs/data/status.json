@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T08:12:22+00:00",
+ "generated": "2026-10-25T08:14:41+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 57,
+    "queued": 56,
     "running": 1,
-    "doneToday": 0,
-    "minutes": 2320,
-    "estimateMinutes": 2320
+    "doneToday": 1,
+    "minutes": 2280,
+    "estimateMinutes": 2280
    },
    "Claude": {
     "queued": 1,
@@ -34,9 +34,9 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 58,
+  "queued": 57,
   "running": 3,
-  "doneToday": 29,
+  "doneToday": 30,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,25 +46,28 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2500,
-  "estimatedFinish": "2026-10-26T22:52:22+00:00",
-  "estimateMinutes": 2320
+  "minutesRemaining": 2460,
+  "estimatedFinish": "2026-10-26T22:14:41+00:00",
+  "estimateMinutes": 2280
  },
  "lanes": [
+  {
+   "worker": "Codex",
+   "game": "remote-viewer",
+   "task": "P1FS12_remote viewer one screen",
+   "since": "2026-10-25T08:13:26+00:00",
+   "activity": "2026-10-25T08:14:35+00:00",
+   "commit": {
+    "at": "2026-10-25T08:13:29+00:00",
+    "subject": "start: P1FS12_remote-viewer-one-screen"
+   }
+  },
   {
    "worker": "Claude",
    "game": "gif-cities",
    "task": "P1FS17_gif cities one screen",
    "since": "2026-10-25T08:05:20+00:00",
-   "activity": "2026-10-25T08:07:39+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Codex",
-   "game": "honest-sign",
-   "task": "P2AX13_kit fit rollout honest sign",
-   "since": "2026-10-25T08:05:22+00:00",
-   "activity": "2026-10-25T08:05:09+00:00",
+   "activity": "2026-10-25T08:13:12+00:00",
    "commit": null
   },
   {
@@ -135,7 +138,7 @@
   },
   {
    "day": "2026-10-25",
-   "changes": 1
+   "changes": 2
   }
  ],
  "houseRules": 25,
@@ -8696,7 +8699,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:37:00+00:00",
-   "lastChange": "2026-10-25T08:07:39+00:00",
+   "lastChange": "2026-10-25T08:13:12+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -11159,30 +11162,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 39.6,
+   "costTotalUsd": 39.77,
    "latestChange": {
-    "text": "No accidental zoom on phones:",
-    "at": "2026-10-25T01:48:59+00:00"
+    "text": "feat: keep new rule from shifting the board on phones",
+    "at": "2026-10-25T08:13:24+00:00"
    },
    "promo": null,
    "why": "A seven-segment sign must state how many bars it lights, so every correction changes what it corrects; copying the meter loops on about half the signs.",
    "state": "ship",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "kit fit rollout honest sign",
+   "waitingOn": "owner",
    "id": "honest-sign",
    "number": 150,
    "repo": "honest-sign",
    "title": "Honest Sign",
    "line": "",
    "url": "https://chenhsieh.github.io/honest-sign/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -11196,33 +11199,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:32:13+00:00",
-   "lastChange": "2026-10-25T08:05:09+00:00",
+   "lastChange": "2026-10-25T08:13:24+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 2,
     "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 139452,
+    "codexUsdEst": 0.17,
     "claudeUsdEst": 7.2,
     "earlierRounds": 9,
     "earlierUsdEst": 32.4,
-    "totalUsdEst": 39.6
+    "totalUsdEst": 39.77
    },
    "tasks": [
     {
      "title": "P2AX13_kit fit rollout honest sign",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "honest-sign: take the new play kit so the board and Undo fit a small phone",
-     "since": "2026-10-25T08:05:22+00:00",
-     "done": null,
+     "since": "2026-10-25T07:51:36+00:00",
+     "done": "2026-10-25T07:51:36+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 14,
+     "tokens": 139452,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: keep new rule from shifting the board on phones"
     },
     {
      "title": "P2SGN00_honest sign",
@@ -11255,9 +11258,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": {
     "date": "2026-10-24",
@@ -11265,8 +11268,14 @@
     "note": "The sign now says its number in plain words and the copy level shows the trap; the obvious nudge still gets stuck on every level from 2 on"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-25T08:13:24+00:00",
+     "ok": true,
+     "note": "feat: keep new rule from shifting the board on phones",
+     "source": "board note"
+    },
     {
      "at": "2026-10-25T01:48:59+00:00",
      "ok": true,
@@ -20487,7 +20496,7 @@
    ]
   },
   {
-   "nextTask": "remote-viewer: one phone screen, Next on screen after...",
+   "nextTask": null,
    "costTotalUsd": 81.53,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -20517,7 +20526,7 @@
    "title": "Remote Viewer",
    "line": "Uncover a CIA file and name its assignment.",
    "url": "https://chenhsieh.github.io/remote-viewer/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Game-design pass to find where the fun is and build it",
@@ -20536,7 +20545,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T16:38:08+00:00",
-   "lastChange": "2026-10-25T07:53:35+00:00",
+   "lastChange": "2026-10-25T08:14:35+00:00",
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 1,
@@ -20552,16 +20561,19 @@
    "tasks": [
     {
      "title": "P1FS12_remote viewer one screen",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "remote-viewer: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T07:53:35+00:00",
+     "since": "2026-10-25T08:13:26+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-25T08:13:29+00:00",
+      "subject": "start: P1FS12_remote-viewer-one-screen"
+     },
      "result": ""
     },
     {
@@ -20664,8 +20676,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 8
    },
@@ -31813,7 +31825,7 @@
    "url": "https://chenhsieh.github.io/honest-sign/",
    "added": "2026-10-25",
    "try": "Nudge the sign until what it says about itself is true; the first easy nudge gets stuck from level 2",
-   "busy": true,
+   "busy": false,
    "image": null
   }
  ],
