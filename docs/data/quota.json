@@ -3,16 +3,17 @@
  "plan_type": "plus",
  "windows": {
   "5h": {
-   "used_percent": 19.0,
+   "used_percent": 21.0,
    "window_minutes": 300,
    "resets_at": 1792932711,
-   "burn_percent_per_hour": 41.91,
-   "burn_basis_min": 27,
+   "burn_percent_per_hour": 42.08,
+   "burn_basis_min": 30,
    "eta_hours_to_empty": 1.9,
-   "eta_empty_epoch": 1792923327,
+   "eta_empty_epoch": 1792923268,
    "runs_out_before_reset": true,
-   "early_estimate": true,
-   "remaining_percent": 81.0,
+   "early_estimate": false,
+   "est_percent_per_task": 126.24,
+   "remaining_percent": 79.0,
    "spark": [
     2.0,
     4.0,
@@ -25,19 +26,21 @@
     12.0,
     15.0,
     17.0,
-    19.0
+    19.0,
+    21.0
    ]
   },
   "weekly": {
    "used_percent": 3.0,
    "window_minutes": 10080,
    "resets_at": 1793519511,
-   "burn_percent_per_hour": 6.62,
-   "burn_basis_min": 27,
-   "eta_hours_to_empty": 14.7,
-   "eta_empty_epoch": 1792969139,
+   "burn_percent_per_hour": 6.01,
+   "burn_basis_min": 30,
+   "eta_hours_to_empty": 16.1,
+   "eta_empty_epoch": 1792974605,
    "runs_out_before_reset": true,
    "early_estimate": true,
+   "est_percent_per_task": 18.03,
    "remaining_percent": 97.0,
    "spark": [
     0.0,
@@ -51,22 +54,25 @@
     2.0,
     2.0,
     3.0,
+    3.0,
     3.0
    ]
   }
  },
  "binding": "5h",
- "used_percent": 19.0,
+ "used_percent": 21.0,
  "window_minutes": 300,
  "resets_at": 1792932711,
- "burn_percent_per_hour": 41.91,
- "burn_basis_min": 27,
+ "burn_percent_per_hour": 42.08,
+ "burn_basis_min": 30,
  "eta_hours_to_empty": 1.9,
- "eta_empty_epoch": 1792923327,
+ "eta_empty_epoch": 1792923268,
  "runs_out_before_reset": true,
- "codex_tasks_ready": 42,
- "codex_tasks_done_3h": 0,
- "early_estimate": true,
+ "codex_tasks_ready": 40,
+ "codex_tasks_done_3h": 1,
+ "est_percent_per_task": 126.24,
+ "est_percent_for_ready_queue": 5049.6,
+ "early_estimate": false,
  "spark": [
   2.0,
   4.0,
@@ -79,13 +85,13 @@
   12.0,
   15.0,
   17.0,
-  19.0
+  19.0,
+  21.0
  ],
- "generated": 1792916369,
- "est_percent_per_task_used": 0.25,
- "est_percent_for_ready_queue": 10.5,
+ "generated": 1792916509,
+ "est_percent_per_task_used": 126.24,
  "lanes_target": 1,
- "remaining_percent": 81.0,
+ "remaining_percent": 79.0,
  "providers": {
   "claude": {
    "meteredUsd": 320.27,
@@ -103,7 +109,7 @@
  },
  "watch": {
   "everyMin": 2,
-  "lastCheck": 1792916358,
+  "lastCheck": 1792916496,
   "resetEvent": 1792914780
  }
 }

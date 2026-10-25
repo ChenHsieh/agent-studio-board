@@ -42,15 +42,13 @@
   {
    "executor": "aider openrouter/openai/gpt-4.1",
    "role": "build",
-   "count": 53,
-   "firstTimePass": 98,
-   "retries": 3,
+   "count": 52,
+   "firstTimePass": 100,
+   "retries": 0,
    "medianMinutes": null,
    "costPerPass": 0.0,
    "guessed": 0,
-   "topFailures": [
-    "handed back after 3 tries"
-   ],
+   "topFailures": [],
    "flag": "give more"
   },
   {
@@ -143,12 +141,12 @@
   {
    "executor": "claude-opus",
    "role": "build",
-   "count": 64,
+   "count": 65,
    "firstTimePass": 95,
    "retries": 0,
    "medianMinutes": null,
-   "costPerPass": 0.0,
-   "guessed": 60,
+   "costPerPass": 0.01,
+   "guessed": 61,
    "topFailures": [
     "rooms 16, 25 and 33 at 360x640 run 9-18 px past the screen after the f",
     "on small beds the canvas keeps its tall paper below the board, so on a",
@@ -197,12 +195,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 242,
+   "count": 243,
    "firstTimePass": 95,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 195,
+   "guessed": 196,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -508,10 +506,10 @@
    "date": "2026-10-25",
    "task": "kit best possible words",
    "number": "",
-   "executor": "aider openrouter/openai/gpt-4.1",
+   "executor": "claude-opus",
    "role": "build",
-   "passed": "no",
-   "note": "handed back after 3 tries"
+   "passed": "yes",
+   "note": "games carry their own kit copy; Lot Waits (kit 2) still says \"fewest possible\" until its kit is synced or the two lines are copied in."
   },
   {
    "date": "2026-10-25",

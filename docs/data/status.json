@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T08:19:18+00:00",
+ "generated": "2026-10-25T08:21:36+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,35 +20,35 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 57,
-    "running": 1,
-    "doneToday": 1,
-    "minutes": 2320,
-    "estimateMinutes": 2320
+    "queued": 55,
+    "running": 2,
+    "doneToday": 2,
+    "minutes": 2280,
+    "estimateMinutes": 2280
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
-    "doneToday": 29,
-    "minutes": 120,
+    "running": 0,
+    "doneToday": 30,
+    "minutes": 60,
     "estimateMinutes": 60
    }
   },
-  "queued": 58,
+  "queued": 56,
   "running": 2,
-  "doneToday": 30,
+  "doneToday": 32,
   "lanes": {
    "Codex": 1,
-   "Claude": 2
+   "Claude": 1
   },
   "laneCap": {
    "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2440,
-  "estimatedFinish": "2026-10-26T22:59:18+00:00",
-  "estimateMinutes": 2320
+  "minutesRemaining": 2340,
+  "estimatedFinish": "2026-10-26T22:21:36+00:00",
+  "estimateMinutes": 2280
  },
  "lanes": [
   {
@@ -56,23 +56,23 @@
    "game": "remote-viewer",
    "task": "P1FS12_remote viewer one screen",
    "since": "2026-10-25T08:13:26+00:00",
-   "activity": "2026-10-25T08:18:32+00:00",
+   "activity": "2026-10-25T08:21:31+00:00",
    "commit": {
-    "at": "2026-10-25T08:13:29+00:00",
-    "subject": "start: P1FS12_remote-viewer-one-screen"
+    "at": "2026-10-25T08:21:31+00:00",
+    "subject": "wip: P1FS12_remote-viewer-one-screen (Codex lane autosave 04:21)"
    }
   },
   {
-   "worker": "Claude",
-   "game": "gif-cities",
-   "task": "P1FS17_gif cities one screen",
-   "since": "2026-10-25T08:05:20+00:00",
-   "activity": "2026-10-25T08:13:12+00:00",
+   "worker": "Codex",
+   "game": "drawing-circles",
+   "task": "P1FS18_drawing circles one screen",
+   "since": "2026-10-25T08:21:07+00:00",
+   "activity": "2026-10-25T08:21:08+00:00",
    "commit": null
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 1,
+ "claudeWorkers": 0,
  "apiSpentUsd": 320.27,
  "claudeInSession": {
   "runs": 288,
@@ -5315,7 +5315,7 @@
    ]
   },
   {
-   "nextTask": "drawing-circles: one phone screen, Next on screen after...",
+   "nextTask": null,
    "costTotalUsd": 104.22,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -5338,7 +5338,7 @@
    "title": "Drawing Circles",
    "line": "Stack gears until the puppy's leash goes slack.",
    "url": "https://chenhsieh.github.io/drawing-circles/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "Flagship polish round: level 9 difficulty, How to play",
@@ -5353,7 +5353,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T18:59:22+00:00",
-   "lastChange": "2026-10-25T07:53:35+00:00",
+   "lastChange": "2026-10-25T08:21:08+00:00",
    "cost": {
     "apiUsd": 12.59,
     "codexRuns": 4,
@@ -5369,10 +5369,10 @@
    "tasks": [
     {
      "title": "P1FS18_drawing circles one screen",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "drawing-circles: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T07:53:35+00:00",
+     "since": "2026-10-25T08:21:07+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -5481,8 +5481,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 7
    },
@@ -8645,8 +8645,8 @@
    "nextTask": null,
    "costTotalUsd": 80.04,
    "latestChange": {
-    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
-    "at": "2026-10-25T03:28:40+00:00"
+    "text": "One screen: a swipe from anywhere but a GIF tile scrolls the page",
+    "at": "2026-10-25T08:19:34+00:00"
    },
    "promo": {
     "files": {
@@ -8657,23 +8657,23 @@
     "caption": "Stack rescued GIFs down a 1999 homepage so every visitor."
    },
    "why": "An Internet Archive reel on GifCities, its search engine of rescued GeoCities GIFs.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 6
+    "daysInState": 0
    },
-   "waitingOn": "gif cities one screen",
+   "waitingOn": "none",
    "id": "gif-cities",
    "number": 93,
    "repo": "gif-cities",
    "title": "GIF Cities",
    "line": "Stack rescued GIFs down a 1999 homepage so every visitor.",
    "url": "https://chenhsieh.github.io/gif-cities/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Flagship polish round: slower default pace with a speed",
    "shelfNote": "",
@@ -8691,33 +8691,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:37:00+00:00",
-   "lastChange": "2026-10-25T08:13:12+00:00",
+   "lastChange": "2026-10-25T08:19:34+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 1,
     "codexTokens": 700030,
     "codexUsdEst": 0.84,
-    "claudeUsdEst": 10.8,
-    "earlierRounds": 19,
-    "earlierUsdEst": 68.4,
+    "claudeUsdEst": 14.4,
+    "earlierRounds": 18,
+    "earlierUsdEst": 64.8,
     "totalUsdEst": 80.04
    },
    "tasks": [
     {
      "title": "P1FS17_gif cities one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "gif-cities: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T08:05:20+00:00",
-     "done": null,
+     "since": "2026-10-25T07:54:33+00:00",
+     "done": "2026-10-25T07:54:33+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1FS17 gif-cities one screen: DONE (Sonnet overflow worker, 2026-10-25). Commit on main; live gate PASS."
     },
     {
      "title": "P1SD19_studio standard gif cities",
@@ -8820,9 +8820,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 8
+    "done": 9
    },
    "verdict": {
     "date": "2026-10-19",
@@ -8830,8 +8830,20 @@
     "note": "Flagship polish round: slower default pace with a speed"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-25T08:19:34+00:00",
+     "ok": true,
+     "note": "One screen: a swipe from anywhere but a GIF tile scrolls the page",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T08:05:21+00:00",
+     "ok": true,
+     "note": "start: P1FS17 gif-cities one screen",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T03:28:40+00:00",
      "ok": true,
@@ -8890,18 +8902,6 @@
      "at": "2026-10-19T16:54:06+00:00",
      "ok": true,
      "note": "review R24: speed row fits 320x568",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-19T16:19:25+00:00",
-     "ok": true,
-     "note": "fix: the speed choice fits a short phone without scrolling",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-19T15:45:19+00:00",
-     "ok": true,
-     "note": "NOT_DONE: merged slow visitor playback, open levels, and collection; Pages still serves its pre-merge asset after live checks",
      "source": "board note"
     }
    ]
@@ -14365,8 +14365,8 @@
    "nextTask": null,
    "costTotalUsd": 46.8,
    "latestChange": {
-    "text": "Help: act-three pieces and today's machine in two short paragraphs (P1MM06)",
-    "at": "2026-10-25T07:36:03+00:00"
+    "text": "P3OR90_marble-daily-pins-test: WORKDIR",
+    "at": "2026-10-25T07:37:50+00:00"
    },
    "promo": null,
    "why": "A viral short of a marble bouncing off pinned discs, each hit a note.",
@@ -14400,7 +14400,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-25T07:36:03+00:00",
+   "lastChange": "2026-10-25T07:37:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -14439,6 +14439,12 @@
    "needsYou": null,
    "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-25T07:37:50+00:00",
+     "ok": true,
+     "note": "P3OR90_marble-daily-pins-test: WORKDIR",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T07:36:03+00:00",
      "ok": true,
@@ -14491,12 +14497,6 @@
      "at": "2026-10-25T06:27:50+00:00",
      "ok": true,
      "note": "Marble Machine act two looks like real pieces, and each new piece gets a short lesson (P1MM04)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-25T06:14:22+00:00",
-     "ok": true,
-     "note": "start: P1MM04 act two look and lessons",
      "source": "main commit"
     }
    ]
@@ -20537,7 +20537,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T16:38:08+00:00",
-   "lastChange": "2026-10-25T08:18:32+00:00",
+   "lastChange": "2026-10-25T08:21:31+00:00",
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 1,
@@ -20563,8 +20563,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-25T08:13:29+00:00",
-      "subject": "start: P1FS12_remote-viewer-one-screen"
+      "at": "2026-10-25T08:21:31+00:00",
+      "subject": "wip: P1FS12_remote-viewer-one-screen (Codex lane autosave 04:21)"
      },
      "result": ""
     },
