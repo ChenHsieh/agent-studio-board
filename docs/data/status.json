@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T03:52:12+00:00",
+ "generated": "2026-10-25T03:54:31+00:00",
  "ops": {
   "count": 23,
   "notes": [
@@ -28,15 +28,15 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
-    "doneToday": 92,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "running": 1,
+    "doneToday": 93,
+    "minutes": 120,
+    "estimateMinutes": 60
    }
   },
   "queued": 71,
-  "running": 2,
-  "doneToday": 95,
+  "running": 1,
+  "doneToday": 96,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,19 +46,11 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2980,
-  "estimatedFinish": "2026-10-27T02:32:12+00:00",
+  "minutesRemaining": 2920,
+  "estimatedFinish": "2026-10-27T02:34:31+00:00",
   "estimateMinutes": 2800
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "grass-crossword",
-   "task": "P1FS10_grass crossword one screen",
-   "since": "2026-10-25T02:56:05+00:00",
-   "activity": "2026-10-25T03:51:59+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "Multiple games",
@@ -69,8 +61,8 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
- "apiSpentUsd": 319.47,
+ "claudeWorkers": 1,
+ "apiSpentUsd": 319.62,
  "claudeInSession": {
   "runs": 288,
   "usdEst": 1036.8,
@@ -1075,10 +1067,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 66.54,
+   "costTotalUsd": 73.74,
    "latestChange": {
-    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
-    "at": "2026-10-25T01:58:36+00:00"
+    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+    "at": "2026-10-25T03:37:33+00:00"
    },
    "promo": null,
    "why": "A thread on Wittgenstein's limits of language, a post of made-up phonetic characters that look readable, and a mixed-language post.",
@@ -1112,7 +1104,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T18:08:36+00:00",
-   "lastChange": "2026-10-25T01:58:36+00:00",
+   "lastChange": "2026-10-25T03:37:33+00:00",
    "cost": {
     "apiUsd": 16.14,
     "codexRuns": 0,
@@ -1121,9 +1113,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
-    "totalUsdEst": 66.54
+    "earlierRounds": 16,
+    "earlierUsdEst": 57.6,
+    "totalUsdEst": 73.74
    },
    "tasks": [
     {
@@ -1165,6 +1157,18 @@
    "needsYou": null,
    "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-25T03:37:33+00:00",
+     "ok": true,
+     "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T03:37:06+00:00",
+     "ok": true,
+     "note": "test: no-theory check allows the Why this exists fold (no-hub rule)",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T01:58:36+00:00",
      "ok": true,
@@ -1218,18 +1222,6 @@
      "ok": true,
      "note": "fix:",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-15T20:39:48+00:00",
-     "ok": true,
-     "note": "feat: show the first stamp and its result",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-15T20:19:25+00:00",
-     "ok": true,
-     "note": "playable gate PASS round 2",
-     "source": "board note"
     }
    ]
   },
@@ -9463,13 +9455,13 @@
     "caption": "A crossword dug into a garden bed, where every answer is."
    },
    "why": "A conceptual artwork from 2002: a newspaper crossword with every square green and every answer written as GRASS.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 4
+    "daysInState": 0
    },
    "waitingOn": "owner",
    "id": "grass-crossword",
@@ -9478,8 +9470,8 @@
    "title": "Grass Crossword",
    "line": "A crossword dug into a garden bed, where every answer is.",
    "url": "https://chenhsieh.github.io/grass-crossword/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "nearly ready; newspaper look, plain Share, a daily that is a new puzzle each...",
    "shelfNote": "",
@@ -9497,33 +9489,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:41:42+00:00",
-   "lastChange": "2026-10-25T03:51:59+00:00",
+   "lastChange": "2026-10-25T02:09:54+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
-    "claudeRuns": 8,
+    "claudeRuns": 9,
     "apiRuns": 2,
     "codexTokens": 1267904,
     "codexUsdEst": 1.52,
-    "claudeUsdEst": 28.8,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
+    "claudeUsdEst": 32.4,
+    "earlierRounds": 9,
+    "earlierUsdEst": 32.4,
     "totalUsdEst": 66.32
    },
    "tasks": [
     {
      "title": "P1FS10_grass crossword one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "grass-crossword: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T02:56:05+00:00",
-     "done": null,
+     "since": "2026-10-25T02:09:54+00:00",
+     "done": "2026-10-25T02:09:54+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1FS10 Grass Crossword one screen:"
     },
     {
      "title": "P1GX02_visual round build",
@@ -9626,9 +9618,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 16
+    "done": 17
    },
    "verdict": {
     "date": "2026-10-20",
@@ -9636,7 +9628,7 @@
     "note": "Harder levels not intuitive; drag preview inconsistent"
    },
    "needsYou": "The credit links the artist's Instagram profile because the exact post address is unknown. Suggest: keep the profile link until the post is found.",
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T01:44:55+00:00",
