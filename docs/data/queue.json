@@ -1,5 +1,5 @@
 {
- "generated": 1792890941,
+ "generated": 1792891079,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -125,40 +125,6 @@
    "state": "running",
    "at": 1792885818,
    "created": 1792885818
-  },
-  {
-   "id": "P2AX11_audit-report-merge-tools-only",
-   "request": "Ship the clearer accessibility audit report (one line per problem, worst first) that is already built on a branch",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "medium",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792808653,
-   "created": 1792808653
-  },
-  {
-   "id": "P2n86_round4-template-repos",
-   "request": "Create the ten new game repositories from the game template so their builds can start",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "medium",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792700662,
-   "created": 1792700662
   },
   {
    "id": "P1CF05_reset-tests-and-review",
@@ -631,6 +597,206 @@
    "created": 1792807366
   },
   {
+   "id": "P2n87_coin-dumplings",
+   "request": "Mark every New Year dumpling as coin, no coin or cannot tell from the numbers on the bitten ones: build the core with placeholder shapes, then its first-minute round",
+   "game": "Coin Dumplings",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2n86_round4-template-repos"
+   ],
+   "priority": null,
+   "why": "A remix of a local-count mine puzzle and a deduction game, set at New Year dumplings with a coin inside a few.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792724261,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2n88_watched-pot",
+   "request": "look in the right places to grow the shape: build the core with placeholder shapes, then its first-minute round",
+   "game": "Watched Pot",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2n86_round4-template-repos"
+   ],
+   "priority": null,
+   "why": "A remix of earlier ideas",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792724261,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2n89_round-table",
+   "request": "Turn a banquet table's centre so every guest gets every dish before one runs out: build the core with placeholder shapes, then its first-minute round",
+   "game": "Round Table",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2n86_round4-template-repos"
+   ],
+   "priority": null,
+   "why": "A remix of equal-shares and gift-route ideas with the shared-table ledger, scaled to a banquet lazy Susan.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792724261,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2n90_iron-window-garden",
+   "request": "Water one pot a morning on a tiered window rack where water drips down the next day: build the core with placeholder shapes, then its first-minute round",
+   "game": "Iron Window Garden",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2n86_round4-template-repos"
+   ],
+   "priority": null,
+   "why": "A remix of the chai boil lag and Even Water, set on the planter racks behind iron window grilles.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792724262,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2n91_still-a-heap",
+   "request": "Take rice grains off a heap one by one and stop while it is still a heap: build the core with placeholder shapes, then its first-minute round",
+   "game": "Still A Heap",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2n86_round4-template-repos"
+   ],
+   "priority": null,
+   "why": "A remix of the can-press toy and the swarm idea through the old paradox of the heap.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792724262,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2n92_out-of-the-corner",
+   "request": "build the core with placeholder shapes, then its first-minute round",
+   "game": "Out Of The Corner",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2n86_round4-template-repos"
+   ],
+   "priority": null,
+   "why": "A remix of Nobody Looking and Walls Have Ears through averted vision, how faint stars vanish when looked at directly.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792724262,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2n93_one-umbrella",
+   "request": "Slide one umbrella between two walkers so both get home dry as the wind turns: build the core with placeholder shapes, then its first-minute round",
+   "game": "One Umbrella",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2n86_round4-template-repos"
+   ],
+   "priority": null,
+   "why": "A remix of Even Water and Thin Walls: one pour shared fairly becomes one umbrella shared by two in the rain.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792724262,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2n94_rolling-back",
+   "request": "Push a stone up a hill note by note; build the core with placeholder shapes, then its first-minute round",
+   "game": "Rolling Back",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2n86_round4-template-repos"
+   ],
+   "priority": null,
+   "why": "A remix of Whiteboard Song and Not Yet through the myth of the stone that always rolls back down.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792724263,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2n95_gold-star",
+   "request": "Choose a gold-star rule each morning so a class really learns while every desk games the stars: build the core with placeholder shapes, then its first-minute round",
+   "game": "Gold Star",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2n86_round4-template-repos"
+   ],
+   "priority": null,
+   "why": "A remix of Pigeon Salon and Morning Three: training a judge by rewards, turned round onto a class of eight.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792724263,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2n96_ac-remote",
+   "request": "Swap office seats each hour so nobody gets up to touch the air-conditioner remote: build the core with placeholder shapes, then its first-minute round",
+   "game": "Ac Remote",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2n86_round4-template-repos"
+   ],
+   "priority": null,
+   "why": "A remix of the chai boil dial and Thin Walls, set in an office with one shared air-conditioner remote.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792724263,
+   "estPercentOfWeek": 0.25
+  },
+  {
    "id": "P3OR44_kit-win-hold-and-higher-is-better",
    "request": "Game kit: hold the finished board in view before the result card, and say 'best possible' for higher-is-better games (OpenRouter lane, Codex then gates and ships)",
    "game": "Studio",
@@ -1038,226 +1204,6 @@
     "P2n96_ac-remote"
    ],
    "created": 1792700701
-  },
-  {
-   "id": "P2n87_coin-dumplings",
-   "request": "Mark every New Year dumpling as coin, no coin or cannot tell from the numbers on the bitten ones: build the core with placeholder shapes, then its first-minute round",
-   "game": "Coin Dumplings",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2n86_round4-template-repos"
-   ],
-   "priority": null,
-   "why": "A remix of a local-count mine puzzle and a deduction game, set at New Year dumplings with a coin inside a few.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2n86_round4-template-repos"
-   ],
-   "created": 1792724261,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2n88_watched-pot",
-   "request": "look in the right places to grow the shape: build the core with placeholder shapes, then its first-minute round",
-   "game": "Watched Pot",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2n86_round4-template-repos"
-   ],
-   "priority": null,
-   "why": "A remix of earlier ideas",
-   "state": "waiting",
-   "waitingOn": [
-    "P2n86_round4-template-repos"
-   ],
-   "created": 1792724261,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2n89_round-table",
-   "request": "Turn a banquet table's centre so every guest gets every dish before one runs out: build the core with placeholder shapes, then its first-minute round",
-   "game": "Round Table",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2n86_round4-template-repos"
-   ],
-   "priority": null,
-   "why": "A remix of equal-shares and gift-route ideas with the shared-table ledger, scaled to a banquet lazy Susan.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2n86_round4-template-repos"
-   ],
-   "created": 1792724261,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2n90_iron-window-garden",
-   "request": "Water one pot a morning on a tiered window rack where water drips down the next day: build the core with placeholder shapes, then its first-minute round",
-   "game": "Iron Window Garden",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2n86_round4-template-repos"
-   ],
-   "priority": null,
-   "why": "A remix of the chai boil lag and Even Water, set on the planter racks behind iron window grilles.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2n86_round4-template-repos"
-   ],
-   "created": 1792724262,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2n91_still-a-heap",
-   "request": "Take rice grains off a heap one by one and stop while it is still a heap: build the core with placeholder shapes, then its first-minute round",
-   "game": "Still A Heap",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2n86_round4-template-repos"
-   ],
-   "priority": null,
-   "why": "A remix of the can-press toy and the swarm idea through the old paradox of the heap.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2n86_round4-template-repos"
-   ],
-   "created": 1792724262,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2n92_out-of-the-corner",
-   "request": "build the core with placeholder shapes, then its first-minute round",
-   "game": "Out Of The Corner",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2n86_round4-template-repos"
-   ],
-   "priority": null,
-   "why": "A remix of Nobody Looking and Walls Have Ears through averted vision, how faint stars vanish when looked at directly.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2n86_round4-template-repos"
-   ],
-   "created": 1792724262,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2n93_one-umbrella",
-   "request": "Slide one umbrella between two walkers so both get home dry as the wind turns: build the core with placeholder shapes, then its first-minute round",
-   "game": "One Umbrella",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2n86_round4-template-repos"
-   ],
-   "priority": null,
-   "why": "A remix of Even Water and Thin Walls: one pour shared fairly becomes one umbrella shared by two in the rain.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2n86_round4-template-repos"
-   ],
-   "created": 1792724262,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2n94_rolling-back",
-   "request": "Push a stone up a hill note by note; build the core with placeholder shapes, then its first-minute round",
-   "game": "Rolling Back",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2n86_round4-template-repos"
-   ],
-   "priority": null,
-   "why": "A remix of Whiteboard Song and Not Yet through the myth of the stone that always rolls back down.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2n86_round4-template-repos"
-   ],
-   "created": 1792724263,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2n95_gold-star",
-   "request": "Choose a gold-star rule each morning so a class really learns while every desk games the stars: build the core with placeholder shapes, then its first-minute round",
-   "game": "Gold Star",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2n86_round4-template-repos"
-   ],
-   "priority": null,
-   "why": "A remix of Pigeon Salon and Morning Three: training a judge by rewards, turned round onto a class of eight.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2n86_round4-template-repos"
-   ],
-   "created": 1792724263,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2n96_ac-remote",
-   "request": "Swap office seats each hour so nobody gets up to touch the air-conditioner remote: build the core with placeholder shapes, then its first-minute round",
-   "game": "Ac Remote",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2n86_round4-template-repos"
-   ],
-   "priority": null,
-   "why": "A remix of the chai boil dial and Thin Walls, set in an office with one shared air-conditioner remote.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2n86_round4-template-repos"
-   ],
-   "created": 1792724263,
-   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2n97_review-coin-dumplings-and-watched-pot",
