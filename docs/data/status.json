@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T00:47:16+00:00",
+ "generated": "2026-10-25T00:49:37+00:00",
  "ops": {
-  "count": 12,
+  "count": 15,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 65,
+    "queued": 64,
     "running": 0,
     "doneToday": 3,
-    "minutes": 2600,
-    "estimateMinutes": 2600
+    "minutes": 2560,
+    "estimateMinutes": 2560
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 77,
+    "doneToday": 78,
     "minutes": 180,
     "estimateMinutes": 90
    }
   },
-  "queued": 66,
+  "queued": 65,
   "running": 2,
-  "doneToday": 80,
+  "doneToday": 81,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,19 +46,11 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2780,
-  "estimatedFinish": "2026-10-26T20:07:16+00:00",
-  "estimateMinutes": 2600
+  "minutesRemaining": 2740,
+  "estimatedFinish": "2026-10-26T19:29:37+00:00",
+  "estimateMinutes": 2560
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "uneven-loop",
-   "task": "P1UL02_tiles look and new mechanic",
-   "since": "2026-10-25T00:43:23+00:00",
-   "activity": "2026-10-25T00:46:28+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "Multiple games",
@@ -69,7 +61,7 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 318.09,
  "claudeInSession": {
   "runs": 287,
@@ -1729,10 +1721,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 46.96,
+   "costTotalUsd": 50.56,
    "latestChange": {
-    "text": "P2RL09_save-test-bluebook-guess: WORKDIR",
-    "at": "2026-10-23T02:47:28+00:00"
+    "text": "No accidental zoom on phones:",
+    "at": "2026-10-25T00:45:45+00:00"
    },
    "promo": {
     "files": {
@@ -1772,7 +1764,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-09-20T20:57:49+00:00",
-   "lastChange": "2026-10-23T02:47:28+00:00",
+   "lastChange": "2026-10-25T00:45:45+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -1781,9 +1773,9 @@
     "codexTokens": 131726,
     "codexUsdEst": 0.16,
     "claudeUsdEst": 18.0,
-    "earlierRounds": 8,
-    "earlierUsdEst": 28.8,
-    "totalUsdEst": 46.96
+    "earlierRounds": 9,
+    "earlierUsdEst": 32.4,
+    "totalUsdEst": 50.56
    },
    "tasks": [
     {
@@ -1900,6 +1892,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T00:45:45+00:00",
+     "ok": true,
+     "note": "No accidental zoom on phones:",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-23T02:47:28+00:00",
      "ok": true,
      "note": "P2RL09_save-test-bluebook-guess: WORKDIR",
@@ -1964,12 +1962,6 @@
      "ok": true,
      "note": "ship standard: daily 3/day, archive, practice E/M/H + 5 sets, stats, case drawer; neutral ids; 5 bad cases dropped; live",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-20T04:27:31+00:00",
-     "ok": true,
-     "note": "feat: daily, archive, practice, stats and a case drawer",
-     "source": "main commit"
     }
    ]
   },
@@ -28835,23 +28827,23 @@
     "caption": "Step through frames and return to the start."
    },
    "why": "A tiled animation built by repeating one small module; offset a repeated tile frame by frame to build a looping animation that catches a moving pin.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "tiles look and new mechanic",
+   "waitingOn": "none",
    "id": "uneven-loop",
    "number": 38,
    "repo": "uneven-loop",
    "title": "Uneven Loop",
    "line": "Step through frames and return to the start.",
    "url": "https://chenhsieh.github.io/uneven-loop/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Clarify the loop mechanism and let the sequencer make music",
    "shelfNote": "",
@@ -28865,33 +28857,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T03:56:45+00:00",
-   "lastChange": "2026-10-25T00:46:28+00:00",
+   "lastChange": "2026-10-24T21:58:03+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 1,
     "codexTokens": 185728,
     "codexUsdEst": 0.22,
-    "claudeUsdEst": 10.8,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
+    "claudeUsdEst": 14.4,
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
     "totalUsdEst": 61.42
    },
    "tasks": [
     {
      "title": "P1UL02_tiles look and new mechanic",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "",
-     "since": "2026-10-25T00:43:23+00:00",
-     "done": null,
+     "since": "2026-10-24T16:29:41+00:00",
+     "done": "2026-10-24T16:29:41+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1UL02 Uneven Loop: DONE (claude-sonnet). Stage A live on main (, live bytes match, page checked at 390x844, no errors); stage B is design only."
     },
     {
      "title": "P1UL01_ping clear daily and glitch",
@@ -28966,13 +28958,13 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-24T21:58:03+00:00",
