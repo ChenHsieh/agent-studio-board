@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T09:15:32+00:00",
+ "generated": "2026-10-25T09:17:51+00:00",
  "ops": {
-  "count": 28,
+  "count": 32,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -21,22 +21,22 @@
   "workers": {
    "Codex": {
     "queued": 48,
-    "running": 1,
+    "running": 2,
     "doneToday": 6,
-    "minutes": 1960,
-    "estimateMinutes": 1960
+    "minutes": 2000,
+    "estimateMinutes": 2000
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
-    "doneToday": 31,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "running": 1,
+    "doneToday": 32,
+    "minutes": 120,
+    "estimateMinutes": 60
    }
   },
   "queued": 49,
   "running": 3,
-  "doneToday": 37,
+  "doneToday": 38,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,28 +46,28 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2140,
-  "estimatedFinish": "2026-10-26T17:55:32+00:00",
-  "estimateMinutes": 1960
+  "minutesRemaining": 2120,
+  "estimatedFinish": "2026-10-26T18:37:51+00:00",
+  "estimateMinutes": 2000
  },
  "lanes": [
   {
-   "worker": "Claude",
-   "game": "flying-white",
-   "task": "P1FS30_flying white one screen",
-   "since": "2026-10-25T09:10:23+00:00",
-   "activity": "2026-10-25T09:13:58+00:00",
+   "worker": "Codex",
+   "game": "lot-waits",
+   "task": "P1LW03_lot waits first minute v2",
+   "since": "2026-10-25T09:17:03+00:00",
+   "activity": "2026-10-25T09:17:07+00:00",
    "commit": null
   },
   {
    "worker": "Codex",
-   "game": "rumour-on-the-jetty",
-   "task": "P2AX16_kit fit rollout rumour on the jetty",
-   "since": "2026-10-25T09:08:12+00:00",
-   "activity": "2026-10-25T09:14:48+00:00",
+   "game": "scribes-blotter",
+   "task": "P2AX17_kit fit rollout scribes blotter",
+   "since": "2026-10-25T09:16:16+00:00",
+   "activity": "2026-10-25T09:17:48+00:00",
    "commit": {
-    "at": "2026-10-25T09:08:13+00:00",
-    "subject": "start: P2AX16_kit-fit-rollout-rumour-on-the-jetty"
+    "at": "2026-10-25T09:16:18+00:00",
+    "subject": "start: P2AX17_kit-fit-rollout-scribes-blotter"
    }
   },
   {
@@ -80,7 +80,7 @@
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 320.27,
  "claudeInSession": {
   "runs": 288,
@@ -138,7 +138,7 @@
   },
   {
    "day": "2026-10-25",
-   "changes": 4
+   "changes": 6
   }
  ],
  "houseRules": 25,
@@ -1623,8 +1623,8 @@
    "nextTask": null,
    "costTotalUsd": 51.12,
    "latestChange": {
-    "text": "Blackout Notice: the woodblock leaf look (P2BN06): printed columns read right to left,...",
-    "at": "2026-10-25T04:22:08+00:00"
+    "text": "One screen on phones: port_onescreen (kit 4) (P2FS04)",
+    "at": "2026-10-25T09:16:57+00:00"
    },
    "promo": {
     "files": {
@@ -1668,7 +1668,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-25T04:22:08+00:00",
+   "lastChange": "2026-10-25T09:16:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -1810,6 +1810,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T09:16:57+00:00",
+     "ok": true,
+     "note": "One screen on phones: port_onescreen (kit 4) (P2FS04)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T04:22:08+00:00",
      "ok": true,
      "note": "Blackout Notice: the woodblock leaf look (P2BN06): printed columns read right to left, reader's vermilion circles, ink-out reveal, new social card",
@@ -1874,12 +1880,6 @@
      "ok": true,
      "note": "design: Blackout Notice poem core research, the couplet erased from a sheet",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-23T01:47:08+00:00",
-     "ok": true,
-     "note": "feat: Read back the posted notice",
-     "source": "board note"
     }
    ]
   },
@@ -7520,15 +7520,15 @@
     "reviseRound": 2,
     "daysInState": 2
    },
-   "waitingOn": "flying white one screen",
+   "waitingOn": "flying white why rollout",
    "id": "flying-white",
    "number": 117,
    "repo": "flying-white",
    "title": "Flying White",
    "line": "",
    "url": "https://chenhsieh.github.io/flying-white/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Higher priority: real rubbing sources, hilarious teacher, growth, free writing",
    "shelfNote": "",
@@ -7542,34 +7542,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T05:31:34+00:00",
-   "lastChange": "2026-10-25T09:13:58+00:00",
+   "lastChange": "2026-10-25T07:54:33+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
-    "claudeRuns": 13,
+    "claudeRuns": 14,
     "apiRuns": 0,
     "codexTokens": 754828,
     "codexUsdEst": 0.91,
-    "claudeUsdEst": 46.8,
-    "earlierRounds": 17,
-    "earlierUsdEst": 61.2,
+    "claudeUsdEst": 50.4,
+    "earlierRounds": 16,
+    "earlierUsdEst": 57.6,
     "totalUsdEst": 108.91
    },
    "tasks": [
-    {
-     "title": "P1FS30_flying white one screen",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "flying-white: one phone screen through the kit, Next on screen after a win",
-     "since": "2026-10-25T09:10:23+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P3PL15_flying white why rollout",
      "state": "queued",
@@ -7583,6 +7569,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1FS30_flying white one screen",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "flying-white: one phone screen through the kit, Next on screen after a win",
+     "since": "2026-10-25T07:54:33+00:00",
+     "done": "2026-10-25T07:54:33+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1FS30 flying-white one screen: DONE (Sonnet overflow worker, 2026-10-25). Commit on main; live bytes match; live gate PASS."
     },
     {
      "title": "P1FW56_result screen fits small phone",
@@ -7671,9 +7671,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 17
+    "done": 18
    },
    "verdict": {
     "date": "2026-10-23",
@@ -15602,10 +15602,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 50.65,
+   "costTotalUsd": 54.25,
    "latestChange": {
-    "text": "No accidental zoom on phones:",
-    "at": "2026-10-25T01:41:49+00:00"
+    "text": "One screen on phones: port_onescreen (kit 4) (P2FS04)",
+    "at": "2026-10-25T09:17:55+00:00"
    },
    "promo": {
     "files": {
@@ -15645,7 +15645,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T17:56:09+00:00",
-   "lastChange": "2026-10-25T01:41:49+00:00",
+   "lastChange": "2026-10-25T09:17:55+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -15654,9 +15654,9 @@
     "codexTokens": 206780,
     "codexUsdEst": 0.25,
     "claudeUsdEst": 18.0,
-    "earlierRounds": 9,
-    "earlierUsdEst": 32.4,
-    "totalUsdEst": 50.65
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
+    "totalUsdEst": 54.25
    },
    "tasks": [
     {
@@ -15759,6 +15759,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T09:17:55+00:00",
+     "ok": true,
+     "note": "One screen on phones: port_onescreen (kit 4) (P2FS04)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T01:41:49+00:00",
      "ok": true,
      "note": "No accidental zoom on phones:",
@@ -15823,12 +15829,6 @@
      "ok": true,
      "note": "fix: the left and yesterday pictures now point the right way",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T19:02:52+00:00",
-     "ok": true,
-     "note": "Monkeys bounce until their picture is satisfied; tap a bowl to move a chestnut; trays fill, arrows look left, day 2 inherits day 1. Placeholder shapes, live.",
-     "source": "board note"
     }
    ]
   },
@@ -17397,10 +17397,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 29.02,
+   "costTotalUsd": 32.62,
    "latestChange": {
-    "text": "No accidental zoom on phones:",
-    "at": "2026-10-25T01:40:54+00:00"
+    "text": "One screen on phones: port_onescreen (kit 2) (P2FS04)",
+    "at": "2026-10-25T09:16:25+00:00"
    },
    "promo": {
     "files": {
@@ -17444,7 +17444,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T19:48:04+00:00",
-   "lastChange": "2026-10-25T01:40:54+00:00",
+   "lastChange": "2026-10-25T09:16:25+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -17453,9 +17453,9 @@
     "codexTokens": 186626,
     "codexUsdEst": 0.22,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 7,
-    "earlierUsdEst": 25.2,
-    "totalUsdEst": 29.02
+    "earlierRounds": 8,
+    "earlierUsdEst": 28.8,
+    "totalUsdEst": 32.62
    },
    "tasks": [
     {
@@ -17497,6 +17497,12 @@
    "needsYou": null,
    "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-25T09:16:25+00:00",
+     "ok": true,
+     "note": "One screen on phones: port_onescreen (kit 2) (P2FS04)",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T01:40:54+00:00",
      "ok": true,
@@ -17809,7 +17815,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:05:09+00:00",
-   "lastChange": "2026-10-25T05:59:25+00:00",
+   "lastChange": "2026-10-25T09:16:37+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -17828,7 +17834,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Slide one umbrella between two walkers so both get home dry as the wind turns: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-10-25T05:59:25+00:00",
+     "since": "2026-10-25T09:16:37+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -18086,7 +18092,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:02:46+00:00",
-   "lastChange": "2026-10-25T05:59:25+00:00",
+   "lastChange": "2026-10-25T09:16:37+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -18105,7 +18111,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Catch faint stars that only show beside your finger, before dawn: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-10-25T05:59:25+00:00",
+     "since": "2026-10-25T09:16:37+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -21409,7 +21415,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:08:19+00:00",
-   "lastChange": "2026-10-25T07:53:35+00:00",
+   "lastChange": "2026-10-25T09:16:37+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -21428,7 +21434,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Push a stone up a hill note by note; it rolls back playing your climb backwards: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-10-25T07:53:35+00:00",
+     "since": "2026-10-25T09:16:37+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -21778,11 +21784,11 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 39.6,
+   "nextTask": "rumour-on-the-jetty: take the new play kit so the...",
+   "costTotalUsd": 43.2,
    "latestChange": {
-    "text": "Rumour on the Jetty:",
-    "at": "2026-10-25T05:32:52+00:00"
+    "text": "P2AX16_kit-fit-rollout-rumour-on-the-jetty handed to Claude: NOT READY: The P1AX12 kit...",
+    "at": "2026-10-25T09:16:15+00:00"
    },
    "promo": null,
    "why": "You are a rumour hopping house to house in a harbour town",
@@ -21801,7 +21807,7 @@
    "title": "Rumour On The Jetty",
    "line": "",
    "url": "https://chenhsieh.github.io/rumour-on-the-jetty/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
@@ -21816,7 +21822,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-25T09:14:48+00:00",
+   "lastChange": "2026-10-25T09:16:15+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -21825,26 +21831,23 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 9,
-    "earlierUsdEst": 32.4,
-    "totalUsdEst": 39.6
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
+    "totalUsdEst": 43.2
    },
    "tasks": [
     {
      "title": "P2AX16_kit fit rollout rumour on the jetty",
-     "state": "running",
+     "state": "queued",
      "worker": "Codex",
      "plan": "rumour-on-the-jetty: take the new play kit so the board and Undo fit a small phone",
-     "since": "2026-10-25T09:08:12+00:00",
+     "since": "2026-10-25T09:16:15+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-25T09:08:13+00:00",
-      "subject": "start: P2AX16_kit-fit-rollout-rumour-on-the-jetty"
-     },
+     "commit": null,
      "result": ""
     },
     {
@@ -21877,8 +21880,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
     "done": 2
    },
@@ -21890,6 +21893,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-25T09:16:15+00:00",
+     "ok": false,
+     "note": "P2AX16_kit-fit-rollout-rumour-on-the-jetty handed to Claude: NOT READY: The P1AX12 kit removes this game’s required per-level `boardFor` hook, so the rollout regresses board sizing.;",
+     "source": "board note"
+    },
     {
      "at": "2026-10-25T05:32:52+00:00",
      "ok": true,
@@ -22343,7 +22352,7 @@
    ]
   },
   {
-   "nextTask": "scribes-blotter: take the new play kit so the...",
+   "nextTask": null,
    "costTotalUsd": 39.6,
    "latestChange": {
     "text": "The Scribe's Blotter: felt blotter look, queue strip shortened, pad cells sized to the...",
@@ -22366,7 +22375,7 @@
    "title": "Scribes Blotter",
    "line": "",
    "url": "https://chenhsieh.github.io/scribes-blotter/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
@@ -22381,7 +22390,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:02+00:00",
-   "lastChange": "2026-10-25T05:44:35+00:00",
+   "lastChange": "2026-10-25T09:17:48+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -22397,16 +22406,19 @@
    "tasks": [
     {
      "title": "P2AX17_kit fit rollout scribes blotter",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "scribes-blotter: take the new play kit so the board and Undo fit a small phone",
-     "since": "2026-10-24T11:35:05+00:00",
+     "since": "2026-10-25T09:16:16+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-25T09:16:18+00:00",
+      "subject": "start: P2AX17_kit-fit-rollout-scribes-blotter"
+     },
      "result": ""
     },
     {
@@ -22453,8 +22465,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
@@ -25902,7 +25914,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:59:53+00:00",
-   "lastChange": "2026-10-25T05:59:25+00:00",
+   "lastChange": "2026-10-25T09:16:37+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -25921,7 +25933,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Take rice grains off a heap one by one and stop while it is still a heap: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-10-25T05:59:25+00:00",
+     "since": "2026-10-25T09:16:37+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -27384,7 +27396,7 @@
    ]
   },
   {
-   "nextTask": "The Lot Waits: a new first minute that...",
+   "nextTask": null,
    "costTotalUsd": 86.4,
    "latestChange": {
     "text": "P3OR91_lot-waits-tap-roundtrip-test: WORKDIR",
@@ -27413,7 +27425,7 @@
    "title": "The Lot Waits",
    "line": "A week at a shrine side table: give each lot to its visitor on the right day or keep it in a two-slot drawer.",
    "url": "https://chenhsieh.github.io/lot-waits/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "A week at a shrine side table: give each lot to its visitor on the right day or",
@@ -27428,7 +27440,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:50:16+00:00",
-   "lastChange": "2026-10-25T08:35:44+00:00",
+   "lastChange": "2026-10-25T09:17:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -27444,10 +27456,10 @@
    "tasks": [
     {
      "title": "P1LW03_lot waits first minute v2",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "The Lot Waits: a new first minute that shows both costs in three steps",
-     "since": "2026-10-25T08:35:44+00:00",
+     "since": "2026-10-25T09:17:03+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -27556,8 +27568,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 8
    },
@@ -29762,10 +29774,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 43.7,
+   "costTotalUsd": 47.3,
    "latestChange": {
-    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
-    "at": "2026-10-25T02:56:37+00:00"
+    "text": "One screen on phones: result sheet (P2FS04)",
+    "at": "2026-10-25T09:02:45+00:00"
    },
    "promo": null,
    "why": "A woodworker's video of a toothpick box with a hidden mechanism that stands the toothpick up, and a petri-dish growth video.",
@@ -29799,7 +29811,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-18T06:20:59+00:00",
-   "lastChange": "2026-10-25T02:56:37+00:00",
+   "lastChange": "2026-10-25T09:02:45+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -29808,9 +29820,9 @@
     "codexTokens": 412578,
     "codexUsdEst": 0.5,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
-    "totalUsdEst": 43.7
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
+    "totalUsdEst": 47.3
    },
    "tasks": [
     {
@@ -29881,6 +29893,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T09:02:45+00:00",
+     "ok": true,
+     "note": "One screen on phones: result sheet (P2FS04)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T02:56:37+00:00",
      "ok": true,
      "note": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -29945,12 +29963,6 @@
      "ok": true,
      "note": "feat: make the toothpick release feel crafted",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-18T06:29:16+00:00",
-     "ok": true,
-     "note": "LIVE https://chenhsieh.github.io/trick-box/ (batch5)",
-     "source": "board note"
     }
    ]
   },
@@ -31829,7 +31841,7 @@
    "url": "https://chenhsieh.github.io/scribes-blotter/",
    "added": "2026-10-25",
    "try": "Pair the secrets on the blotter; the obvious drop dead-ends from level 3, so plan the pairs first",
-   "busy": false,
+   "busy": true,
    "image": null
   },
   {
