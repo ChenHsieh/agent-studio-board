@@ -1,5 +1,5 @@
 {
- "generated": 1792904941,
+ "generated": 1792905081,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -104,23 +104,6 @@
    "state": "running",
    "at": 1792903163,
    "created": 1792903163
-  },
-  {
-   "id": "P2PR00_promptuary-call-scoping",
-   "request": "P2PR00_promptuary call scoping",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "medium",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792902550,
-   "created": 1792902550
   },
   {
    "id": "P2RJT00_rumour-on-the-jetty",
@@ -712,6 +695,25 @@
    "created": 1792790639
   },
   {
+   "id": "P2PR01_colony-count-print-and-play",
+   "request": "P2PR01_colony count print and play",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2PR00_promptuary-call-scoping"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792904966
+  },
+  {
    "id": "P2SBL00_scribes-blotter",
    "request": "The Scribe's Blotter visual round",
    "game": "Scribes Blotter",
@@ -1224,27 +1226,6 @@
     "P1LW03_lot-waits-first-minute-v2"
    ],
    "created": 1792824844
-  },
-  {
-   "id": "P2PR01_colony-count-print-and-play",
-   "request": "P2PR01_colony count print and play",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2PR00_promptuary-call-scoping"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2PR00_promptuary-call-scoping"
-   ],
-   "created": 1792902710
   },
   {
    "id": "P2UX08_daily-brief-first-screen",
@@ -1765,6 +1746,23 @@
    "state": "done",
    "at": 1792883805,
    "created": 1792883805
+  },
+  {
+   "id": "P2PR00_promptuary-call-scoping",
+   "request": "P2PR00_promptuary call scoping",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792902550,
+   "created": 1792902550
   },
   {
    "id": "P2TE09_chrome-text-sizes",
