@@ -195,12 +195,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 243,
+   "count": 244,
    "firstTimePass": 95,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 196,
+   "guessed": 197,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -603,6 +603,15 @@
   },
   {
    "date": "2026-10-25",
+   "task": "release check sweep all games",
+   "number": "",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "accessible play now reads 'no' on 144 games (fast audit: text size, contrast, cues): that is the real state, and the"
+  },
+  {
+   "date": "2026-10-25",
    "task": "scribes blotter",
    "number": "151",
    "executor": "claude-sonnet",
@@ -672,15 +681,6 @@
    "role": "build",
    "passed": "yes",
    "note": "the live tray labels are 10-14 px today (fails ACCESSIBLE_PLAY), handed to the build; felt sheen frame cost on phones not measured; the clay"
-  },
-  {
-   "date": "2026-10-25",
-   "task": "share and sound",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "P2MC03 result (Sonnet). Published to makeshift-chair main cdc6f0a; only docs/3d/ and test/ changed (the 2D game is untouched); live bytes ma"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."

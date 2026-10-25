@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T08:49:35+00:00",
+ "generated": "2026-10-25T08:51:55+00:00",
  "ops": {
   "count": 5,
   "notes": [
@@ -28,14 +28,14 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
+    "running": 1,
     "doneToday": 30,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "minutes": 120,
+    "estimateMinutes": 60
    }
   },
   "queued": 52,
-  "running": 4,
+  "running": 3,
   "doneToday": 34,
   "lanes": {
    "Codex": 1,
@@ -46,8 +46,8 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2300,
-  "estimatedFinish": "2026-10-26T20:09:35+00:00",
+  "minutesRemaining": 2240,
+  "estimatedFinish": "2026-10-26T20:11:55+00:00",
   "estimateMinutes": 2120
  },
  "lanes": [
@@ -56,10 +56,10 @@
    "game": "remote-viewer",
    "task": "P1FS12_remote viewer one screen",
    "since": "2026-10-25T08:13:26+00:00",
-   "activity": "2026-10-25T08:49:24+00:00",
+   "activity": "2026-10-25T08:51:12+00:00",
    "commit": {
-    "at": "2026-10-25T08:48:26+00:00",
-    "subject": "fix: speak the judge status clearly"
+    "at": "2026-10-25T08:50:30+00:00",
+    "subject": "test: follow More in the first minute"
    }
   },
   {
@@ -77,18 +77,10 @@
    "since": null,
    "activity": null,
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P2UX04_release check sweep all games",
-   "since": null,
-   "activity": null,
-   "commit": null
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 320.27,
  "claudeInSession": {
   "runs": 288,
@@ -4263,15 +4255,15 @@
     "caption": "Ring notes on a brass plate covered in sand and watch the."
    },
    "why": "Chladni figures on a vibrating plate and a post of dye moving on vibrating milk.",
-   "state": "released",
+   "state": "ship",
    "stateFlags": {
     "refining": false,
     "resting": false,
-    "regressed": false,
+    "regressed": true,
     "reviseRound": 0,
-    "daysInState": 2
+    "daysInState": 5
    },
-   "waitingOn": "none",
+   "waitingOn": "owner",
    "id": "cymatic-plate",
    "number": 85,
    "repo": "cymatic-plate",
@@ -4284,7 +4276,7 @@
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
    "image": "promo/cymatic-plate/first.jpg",
-   "released": true,
+   "released": false,
    "releasedOn": "2026-10-23",
    "releasedNote": "public-ready, still being refined",
    "whyExists": "Chladni figures and a post of dye on milk inspired this. Each note shapes sand and moves dye drops, so the order you play changes the outcome. Worth playing to see how sound can guide patterns and movement on a plate.",
@@ -4506,7 +4498,8 @@
      "note": "fix: change daily at local midnight",
      "source": "main commit"
     }
-   ]
+   ],
+   "releaseHeld": true
   },
   {
    "nextTask": "Why this exists: finish the rollout on dancers-not-mad...",
@@ -20553,7 +20546,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T16:38:08+00:00",
-   "lastChange": "2026-10-25T08:49:24+00:00",
+   "lastChange": "2026-10-25T08:51:12+00:00",
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 1,
@@ -20579,8 +20572,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-25T08:48:26+00:00",
-      "subject": "fix: speak the judge status clearly"
+      "at": "2026-10-25T08:50:30+00:00",
+      "subject": "test: follow More in the first minute"
      },
      "result": ""
     },
@@ -26208,10 +26201,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 57.89,
+   "costTotalUsd": 61.49,
    "latestChange": {
-    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
-    "at": "2026-10-25T01:52:58+00:00"
+    "text": "One screen on phones: result sheet (P2FS04)",
+    "at": "2026-10-25T08:50:00+00:00"
    },
    "promo": {
     "files": {
@@ -26251,7 +26244,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:39:08+00:00",
-   "lastChange": "2026-10-25T01:52:58+00:00",
+   "lastChange": "2026-10-25T08:50:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -26260,9 +26253,9 @@
     "codexTokens": 238662,
     "codexUsdEst": 0.29,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 15,
-    "earlierUsdEst": 54.0,
-    "totalUsdEst": 57.89
+    "earlierRounds": 16,
+    "earlierUsdEst": 57.6,
+    "totalUsdEst": 61.49
    },
    "tasks": [
     {
@@ -26318,6 +26311,12 @@
    "needsYou": null,
    "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-25T08:50:00+00:00",
+     "ok": true,
+     "note": "One screen on phones: result sheet (P2FS04)",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T01:52:58+00:00",
      "ok": true,
@@ -26383,12 +26382,6 @@
      "ok": true,
      "note": "feat: first card shows the goal and one rule; later rules arrive on their own level",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-17T22:28:38+00:00",
-     "ok": true,
-     "note": "CREDIT line on the How to play card under the rules, EN+ZH (Moji Blade by ru, Make Me a Hanzi); live",
-     "source": "board note"
     }
    ]
   },
@@ -31841,7 +31834,9 @@
   "System needs: 8 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)"
  ],
  "releaseReady": [],
- "releaseRegressed": [],
+ "releaseRegressed": [
+  "cymatic-plate"
+ ],
  "checksSummary": {
   "why": {
    "yes": 161,
@@ -31862,10 +31857,10 @@
    "ran": 0
   },
   "first_minute": {
-   "yes": 13,
+   "yes": 54,
    "no": 0,
    "unknown": 111,
-   "ran": 41
+   "ran": 0
   },
   "a11y": {
    "yes": 17,
@@ -31874,33 +31869,33 @@
    "ran": 0
   },
   "credits": {
-   "yes": 21,
-   "no": 2,
-   "unknown": 142,
+   "yes": 82,
+   "no": 80,
+   "unknown": 3,
    "ran": 0
   },
   "saves": {
-   "yes": 18,
+   "yes": 100,
    "no": 0,
-   "unknown": 147,
+   "unknown": 65,
    "ran": 0
   },
   "standard": {
-   "yes": 14,
-   "no": 3,
-   "unknown": 148,
+   "yes": 66,
+   "no": 96,
+   "unknown": 3,
    "ran": 0
   },
   "console": {
-   "yes": 0,
+   "yes": 162,
    "no": 0,
-   "unknown": 165,
+   "unknown": 3,
    "ran": 0
   },
   "live": {
-   "yes": 0,
-   "no": 0,
-   "unknown": 165,
+   "yes": 156,
+   "no": 4,
+   "unknown": 5,
    "ran": 0
   },
   "name": {
