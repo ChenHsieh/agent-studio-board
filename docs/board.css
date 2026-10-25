@@ -347,6 +347,19 @@ body.mmode .now, body.mmode .tally, body.mmode .tools, body.mmode #games, body.m
 .mflag { font: 600 13px var(--mono); border: 1px solid var(--ink); padding: 1px 6px; white-space: nowrap; }
 .mnote { font: 16px/1.5 var(--serif); color: var(--ink); border-left: 3px solid var(--ink); padding-left: 10px; }
 
+/* Portfolio view (P2PF01): one row per lane; a capped lane says its count in words beside the bar, never by colour alone. */
+body.pmode .now, body.pmode .tally, body.pmode .tools, body.pmode #games, body.pmode .prio-row { display: none; }
+.pflist { list-style: none; margin: 0; padding: 0; }
+.pflist li { padding: 10px 0; border-bottom: 1px solid var(--rule); font: 16px/1.45 var(--serif); color: var(--ink); }
+.pfname { font: 600 17px var(--serif); }
+.pfn { font: 600 17px var(--mono); margin-left: 4px; }
+.pfmean { font: 16px/1.4 var(--serif); color: var(--muted); }
+.pfbar { display: block; height: 10px; margin: 6px 0 2px; border: 1.5px solid var(--ink); max-width: 320px; }
+.pfbar span { display: block; height: 100%; background: var(--ink); }
+.pfbar.over { border-right-width: 6px; }
+.pfcap { display: block; font: 15px var(--mono); color: var(--ink); }
+.pfnext { font: 16px/1.5 var(--serif); color: var(--ink); margin: 4px 0; }
+
 /* Open game (P1BD08): one tap to the live page of the game a card is about, and of every game its question names. */
 .open-games { display: flex; flex-wrap: wrap; gap: 8px; margin: 2px 0 12px 68px; padding: 0; }
 .open-game { display: inline-flex; align-items: baseline; gap: 8px; min-height: 44px; padding: 0 14px; align-items: center; border: 1px solid var(--ink); background: var(--ink); color: var(--paper); text-decoration: none; font: 600 14px var(--mono); }

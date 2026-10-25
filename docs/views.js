@@ -50,6 +50,7 @@
     queue: () => false,
     checklist: () => false,
     models: () => false,
+    portfolio: () => false,
   };
   // Game numbers (board/numbers.tsv, P1BD07). Chen names ranges: "120 to 140" means 120..140 inclusive.
   const numLabel = (g) => (Number.isInteger(g.number) ? `#${g.number}` : '');

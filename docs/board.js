@@ -21,7 +21,7 @@ const savedFilters = JSON.parse(localStorage.getItem('board.filters') || '{}');
 let filters = { stage: [], priority: [], verdict: [], worker: [], recent: [], ...savedFilters };
 delete filters.needs;
 // The first-row view switch. Needs you is the default; the last choice is remembered.
-const VIEWS = [['needs', 'Needs you'], ['ready', 'Ready to try'], ['released', 'Released'], ['progress', 'In progress'], ['shelf', 'Shelf'], ['archived', 'Archived'], ['all', 'All'], ['queue', 'Queue'], ['checklist', 'Checklist'], ['models', 'Models']];
+const VIEWS = [['needs', 'Needs you'], ['ready', 'Ready to try'], ['released', 'Released'], ['progress', 'In progress'], ['shelf', 'Shelf'], ['archived', 'Archived'], ['all', 'All'], ['queue', 'Queue'], ['checklist', 'Checklist'], ['models', 'Models'], ['portfolio', 'Portfolio']];
 let view = localStorage.getItem('board.view');
 if (!VIEWS.some(([v]) => v === view)) view = 'needs';
 // A shared link may name the view: #range=120-140&view=checklist (P1UX03).
@@ -80,6 +80,55 @@ function day(iso) {
 }
 function within(iso, hours) { const t = Date.parse(iso || ''); return !Number.isNaN(t) && Date.now() - t <= hours * 3_600_000; }
 function saveChoices() { localStorage.setItem('board.view', view); localStorage.setItem('board.filters', JSON.stringify(filters)); localStorage.setItem('board.sort', sort); }
+
+// ---------------------------------------------------------------- Portfolio (P2PF01): how many games sit in each lane, and what is built next
+let portfolio = null, portfolioTried = false;
+async function loadPortfolio() {
+  for (const url of ['data/portfolio.json', 'https://raw.githubusercontent.com/ChenHsieh/agent-studio-board/main/docs/data/portfolio.json']) {
+    try { const r = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' }); if (r.ok) { portfolio = await r.json(); break; } } catch { /* next */ }
+  }
+  portfolioTried = true;
+  if (data) { renderViews(); if (view === 'portfolio') renderPortfolio(); }
+}
+// One plain line per lane, in the order an idea moves through them (pipeline PORTFOLIO.md).
+const LANE_WORDS = [
+  ['POOL', 'Ideas', 'ideas written down, not yet checked against the design rules'],
+  ['GATED', 'Ready to build', 'ideas that passed the design check and wait for a build slot'],
+  ['BUILDING', 'Being built', 'a first build or a round of fixes is under way'],
+  ['PLAYABLE', 'Waiting for a tester', 'built, waiting for someone new to play it and say ship, fix or shelve'],
+  ['SHIP', 'Waiting for Chen', 'a tester said ship; Chen plays it next'],
+  ['RELEASED', 'Released', 'out in the world'],
+  ['REFINING', 'Being polished', 'released or shipped, with an improvement under way'],
+  ['SHELVED', 'Shelved or resting', 'dropped, shelved, or resting with no work open'],
+];
+function renderPortfolio() {
+  const box = $('#portfolio-view');
+  if (!portfolio) {
+    box.innerHTML = `<h2 id="pf-h">Portfolio</h2><p class="empty">${portfolioTried ? 'Portfolio not available yet.' : 'Loading the portfolio…'}</p>`;
+    return;
+  }
+  const byLane = new Map((portfolio.lanes || []).map((l) => [l.lane, l]));
+  const rows = LANE_WORDS.map(([id, name, meaning]) => {
+    const l = byLane.get(id) || { count: 0, cap: null };
+    const n = Number(l.count) || 0, cap = Number.isFinite(l.cap) && l.cap > 0 ? l.cap : null;
+    let bar = '';
+    if (cap) {
+      const over = n > cap, pct = Math.min(100, Math.round(100 * n / cap));
+      const said = over ? `${n} of ${cap}, ${n - cap} over the limit` : n === cap ? `${n} of ${cap}, full` : `${n} of ${cap}, room for ${cap - n}`;
+      bar = `<span class="pfbar${over ? ' over' : ''}" role="img" aria-label="${said}"><span style="width:${pct}%"></span></span><span class="pfcap">${said}</span>`;
+    }
+    return `<li><span class="pfname">${esc(name)}</span> <b class="pfn">${n}</b><br><span class="pfmean">${esc(meaning)}</span>${bar}</li>`;
+  }).join('');
+  const names = (list) => (list || []).map((x) => esc(x.title)).filter(Boolean);
+  const built = names(portfolio.nextPromotions), gated = names(portfolio.nextToGate);
+  const room = Number(portfolio.buildRoom) || 0;
+  box.innerHTML = `<h2 id="pf-h">Portfolio <small>where every game and idea is, and what comes next</small></h2>
+  <ol class="pflist">${rows}</ol>
+  <h3>Built next</h3><p class="pfnext">${built.length ? built.join(', ') : 'Nothing is waiting to be built.'}${room ? ` There is room to start ${room} now.` : ' No build starts until a game in progress is finished or shelved.'}</p>
+  <h3>Checked next</h3><p class="pfnext">${gated.length ? gated.join(', ') : 'No ideas are waiting for the design check.'}</p>
+  <p class="pfnext">Ideas not yet built: <b>${Number(portfolio.ideasWaiting) || 0}</b> · Resting games: <b>${Number(portfolio.resting) || 0}</b></p>
+  <p class="ckey">A resting game has no work open. It comes back when a fix or a review is queued for it.</p>`;
+}
 
 // ---------------------------------------------------------------- Models (P1WL00): which model ran what, and how it went
 let models = null;
@@ -169,6 +218,7 @@ async function loadExtra() {
   loadChecks();
   loadActions();
   loadModels();
+  loadPortfolio();
   Gauge.load().then((q) => { if (q) { quota = q; paintGauge(); if (view === 'queue') renderQueueView(); } });
   for (const url of ['data/queue.json', 'https://raw.githubusercontent.com/ChenHsieh/agent-studio-board/main/docs/data/queue.json']) {
     try { const r = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' }); if (r.ok) { requests = await r.json(); break; } } catch { /* next */ }
@@ -455,7 +505,7 @@ function gameHtml(g) {
 }
 
 function renderViews() {
-  const count = (v) => v === 'models' ? ((models && models.scorecard) || []).length : v === 'checklist' ? (checks ? checks.games.length : data.games.length) : v === 'queue' ? ((requests && requests.tasks) || []).filter((t) => t.state !== 'done').length : data.games.filter(IN_VIEW[v]).length + (v === 'needs' ? (data.systemNeeds || []).length : 0);
+  const count = (v) => v === 'portfolio' ? (portfolio ? (portfolio.lanes || []).reduce((n, l) => n + (Number(l.count) || 0), 0) : 0) : v === 'models' ? ((models && models.scorecard) || []).length : v === 'checklist' ? (checks ? checks.games.length : data.games.length) : v === 'queue' ? ((requests && requests.tasks) || []).filter((t) => t.state !== 'done').length : data.games.filter(IN_VIEW[v]).length + (v === 'needs' ? (data.systemNeeds || []).length : 0);
   $('#views').innerHTML = VIEWS.map(([v, label]) => `<button class="view" role="tab" data-view="${v}" aria-selected="${v === view}">${label} <b>${count(v)}</b></button>`).join('');
 }
 
@@ -521,6 +571,9 @@ function render() {
   document.body.classList.toggle('mmode', view === 'models');
   $('#models-view').hidden = view !== 'models';
   if (view === 'models') renderModels();
+  document.body.classList.toggle('pmode', view === 'portfolio');
+  $('#portfolio-view').hidden = view !== 'portfolio';
+  if (view === 'portfolio') renderPortfolio();
   document.body.classList.toggle('cmode', view === 'checklist');
   $('#checklist-view').hidden = view !== 'checklist';
   if (view === 'checklist') renderChecklist();
