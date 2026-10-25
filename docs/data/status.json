@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T05:44:05+00:00",
+ "generated": "2026-10-25T05:46:24+00:00",
  "ops": {
-  "count": 2,
+  "count": 3,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -28,14 +28,14 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
+    "running": 1,
     "doneToday": 3,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "minutes": 120,
+    "estimateMinutes": 60
    }
   },
   "queued": 61,
-  "running": 2,
+  "running": 1,
   "doneToday": 3,
   "lanes": {
    "Codex": 1,
@@ -46,8 +46,8 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2580,
-  "estimatedFinish": "2026-10-26T21:44:05+00:00",
+  "minutesRemaining": 2520,
+  "estimatedFinish": "2026-10-26T21:46:24+00:00",
   "estimateMinutes": 2400
  },
  "lanes": [
@@ -58,18 +58,10 @@
    "since": "2026-10-25T05:30:55+00:00",
    "activity": "2026-10-25T05:43:27+00:00",
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "scribes-blotter",
-   "task": "P2SBL00_scribes blotter",
-   "since": "2026-10-25T05:34:06+00:00",
-   "activity": "2026-10-25T05:42:55+00:00",
-   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 319.92,
  "claudeInSession": {
   "runs": 288,
@@ -22208,15 +22200,15 @@
     "reviseRound": 0,
     "daysInState": 2
    },
-   "waitingOn": "scribes blotter",
+   "waitingOn": "kit fit rollout scribes blotter",
    "id": "scribes-blotter",
    "number": 151,
    "repo": "scribes-blotter",
    "title": "Scribes Blotter",
    "line": "",
    "url": "https://chenhsieh.github.io/scribes-blotter/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -22230,34 +22222,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:02+00:00",
-   "lastChange": "2026-10-25T05:42:55+00:00",
+   "lastChange": "2026-10-25T01:50:36+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 7.2,
-    "earlierRounds": 8,
-    "earlierUsdEst": 28.8,
+    "claudeUsdEst": 10.8,
+    "earlierRounds": 7,
+    "earlierUsdEst": 25.2,
     "totalUsdEst": 36.0
    },
    "tasks": [
-    {
-     "title": "P2SBL00_scribes blotter",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "The Scribe's Blotter visual round: the stall, the felt pad, letters and seal, sounds, and Undo on screen while you play",
-     "since": "2026-10-25T05:34:06+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2AX17_kit fit rollout scribes blotter",
      "state": "queued",
@@ -22287,6 +22265,20 @@
      "result": "OR LANE OK: Test: grep -qF 'system fonts' docs/CREDITS.md && grep -qF 'Web Audio' docs/CREDITS.md && grep -qF 'studio original' docs/CREDITS.md && ! grep -q '—' docs/CREDITS.md"
     },
     {
+     "title": "P2SBL00_scribes blotter",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "The Scribe's Blotter visual round: the stall, the felt pad, letters and seal, sounds, and Undo on screen while you play",
+     "since": "2026-10-24T01:38:21+00:00",
+     "done": "2026-10-24T01:38:21+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P2SBL00 result (Sonnet). Published to scribes-blotter main ; live bytes match (game.js, game.css, game.config.js, index.html); live page opened at 390x844 and 320x568, theme felt, 0 page errors. Rules, levels, level..."
+    },
+    {
      "title": "P2RV08_scribes blotter",
      "state": "done",
      "worker": "Claude",
@@ -22303,9 +22295,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": {
     "date": "2026-10-23",
@@ -31604,7 +31596,7 @@
    "url": "https://chenhsieh.github.io/scribes-blotter/",
    "added": "2026-10-25",
    "try": "Pair the secrets on the blotter; the obvious drop dead-ends from level 3, so plan the pairs first",
-   "busy": true,
+   "busy": false,
    "image": null
   },
   {
