@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T06:22:01+00:00",
+ "generated": "2026-10-25T06:24:28+00:00",
  "ops": {
   "count": 2,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 73,
+    "queued": 71,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2920,
-    "estimateMinutes": 2920
+    "minutes": 2840,
+    "estimateMinutes": 2840
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
-    "doneToday": 11,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "running": 3,
+    "doneToday": 12,
+    "minutes": 240,
+    "estimateMinutes": 120
    }
   },
-  "queued": 74,
-  "running": 2,
-  "doneToday": 11,
+  "queued": 72,
+  "running": 3,
+  "doneToday": 12,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3100,
-  "estimatedFinish": "2026-10-27T07:02:01+00:00",
-  "estimateMinutes": 2920
+  "minutesRemaining": 3080,
+  "estimatedFinish": "2026-10-27T05:44:28+00:00",
+  "estimateMinutes": 2840
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "peony-dream",
-   "task": "P1FS21_peony dream one screen",
-   "since": "2026-10-25T06:07:20+00:00",
-   "activity": "2026-10-25T06:13:56+00:00",
+   "game": "sockglass",
+   "task": "P1FS22_sockglass one screen",
+   "since": "2026-10-25T06:23:45+00:00",
+   "activity": "2026-10-25T06:23:50+00:00",
    "commit": null
   },
   {
@@ -66,10 +66,18 @@
    "since": null,
    "activity": null,
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "glasshouse",
+   "task": "P3OR83_glasshouse save settings test",
+   "since": "2026-10-25T06:24:28+00:00",
+   "activity": "2026-10-25T06:24:28+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 3,
  "apiSpentUsd": 319.92,
  "claudeInSession": {
   "runs": 288,
@@ -9004,7 +9012,7 @@
    ]
   },
   {
-   "nextTask": "Glasshouse: a test that broken or old settings...",
+   "nextTask": "Why this exists: add the section to glasshouse...",
    "costTotalUsd": 54.0,
    "latestChange": {
     "text": "P3OR39_glasshouse-short-share-line: WORKDIR",
@@ -9027,8 +9035,8 @@
    "title": "Glasshouse",
    "line": "Lead a line of students through a greenhouse.",
    "url": "https://chenhsieh.github.io/glasshouse/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Decide the best public role for a finished personal game",
    "shelfNote": "",
@@ -9042,7 +9050,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-08-09T16:24:24+00:00",
-   "lastChange": "2026-10-25T06:19:52+00:00",
+   "lastChange": "2026-10-25T06:24:28+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -9058,10 +9066,10 @@
    "tasks": [
     {
      "title": "P3OR83_glasshouse save settings test",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Glasshouse: a test that broken or old settings saves fall back to defaults (OpenRouter lane)",
-     "since": "2026-10-25T06:19:52+00:00",
+     "since": "2026-10-25T06:24:28+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -9170,8 +9178,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 6
    },
@@ -18364,21 +18372,21 @@
    "why": "The classical play The Peony Pavilion (1598) and a saved essay note on love found in a dream.",
    "state": "ship",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "peony dream one screen",
+   "waitingOn": "owner",
    "id": "peony-dream",
    "number": 99,
    "repo": "peony-dream",
    "title": "Peony Dream",
    "line": "Paint half a face on a sheet of silk, close the silk on.",
    "url": "https://chenhsieh.github.io/peony-dream/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Eastern ink visual direction instead of raster",
    "shelfNote": "",
@@ -18396,33 +18404,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-18T01:51:43+00:00",
-   "lastChange": "2026-10-25T06:13:56+00:00",
+   "lastChange": "2026-10-25T05:46:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 0,
     "codexTokens": 489236,
     "codexUsdEst": 0.59,
-    "claudeUsdEst": 14.4,
-    "earlierRounds": 13,
-    "earlierUsdEst": 46.8,
+    "claudeUsdEst": 18.0,
+    "earlierRounds": 12,
+    "earlierUsdEst": 43.2,
     "totalUsdEst": 61.79
    },
    "tasks": [
     {
      "title": "P1FS21_peony dream one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "peony-dream: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T06:07:20+00:00",
-     "done": null,
+     "since": "2026-10-25T05:46:50+00:00",
+     "done": "2026-10-25T05:46:50+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1FS21 peony-dream one screen: DONE (Sonnet overflow worker, 2026-10-25). Commit on main; live gate PASS."
     },
     {
      "title": "P2PD02_peony dream small phone fit",
@@ -18525,9 +18533,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 7
+    "done": 8
    },
    "verdict": {
     "date": "2026-10-24",
@@ -18535,7 +18543,7 @@
     "note": "Choosing what the mirror may copy is a real decision (the obvious paint-and-fold never reaches par from level 4 on); next is fitting a small phone"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T01:39:57+00:00",
@@ -24862,7 +24870,7 @@
    ]
   },
   {
-   "nextTask": "sockglass: one phone screen, Next on screen after...",
+   "nextTask": null,
    "costTotalUsd": 61.41,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -24892,8 +24900,8 @@
    "title": "Sockglass",
    "line": "Drag tissue-paper socks onto a dark bedroom window; where.",
    "url": "https://chenhsieh.github.io/sockglass/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Make sock sizes and counts readable and let the theme",
    "shelfNote": "",
@@ -24907,7 +24915,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:34:52+00:00",
-   "lastChange": "2026-10-25T05:46:50+00:00",
+   "lastChange": "2026-10-25T06:23:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -24923,10 +24931,10 @@
    "tasks": [
     {
      "title": "P1FS22_sockglass one screen",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "sockglass: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T05:46:50+00:00",
+     "since": "2026-10-25T06:23:45+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -25021,8 +25029,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 6
    },
