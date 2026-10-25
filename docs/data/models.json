@@ -141,12 +141,12 @@
   {
    "executor": "claude-opus",
    "role": "build",
-   "count": 59,
+   "count": 60,
    "firstTimePass": 95,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 55,
+   "guessed": 56,
    "topFailures": [
     "rooms 16, 25 and 33 at 360x640 run 9-18 px past the screen after the f",
     "on small beds the canvas keeps its tall paper below the board, so on a",
@@ -531,6 +531,15 @@
   },
   {
    "date": "2026-10-25",
+   "task": "marble mechanisms act two",
+   "number": "",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "level 10 has it, the funnel combination could not be built with it, so 16 is a calm level where the obvious play wins (design says each act "
+  },
+  {
+   "date": "2026-10-25",
    "task": "reset tests and review",
    "number": "",
    "executor": "claude-opus",
@@ -672,15 +681,6 @@
    "role": "design",
    "passed": "yes",
    "note": "OR LANE OK, branch pushed"
-  },
-  {
-   "date": "2026-10-24",
-   "task": "stale check looks at worktree activity",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "design",
-   "passed": "yes",
-   "note": "lint.py has its own stale rule (session mtime only) that the failing lint fixture touches; left alone (task said change nothing else)."
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
