@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T01:20:06+00:00",
+ "generated": "2026-10-25T01:22:30+00:00",
  "ops": {
-  "count": 79,
+  "count": 82,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,22 +20,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 56,
+    "queued": 57,
     "running": 0,
     "doneToday": 3,
-    "minutes": 2240,
-    "estimateMinutes": 2240
+    "minutes": 2280,
+    "estimateMinutes": 2280
    },
    "Claude": {
     "queued": 1,
-    "running": 3,
+    "running": 2,
     "doneToday": 81,
-    "minutes": 240,
-    "estimateMinutes": 120
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
-  "queued": 57,
-  "running": 3,
+  "queued": 58,
+  "running": 2,
   "doneToday": 84,
   "lanes": {
    "Codex": 1,
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2480,
-  "estimatedFinish": "2026-10-26T14:40:06+00:00",
-  "estimateMinutes": 2240
+  "minutesRemaining": 2460,
+  "estimatedFinish": "2026-10-26T15:22:30+00:00",
+  "estimateMinutes": 2280
  },
  "lanes": [
   {
@@ -66,18 +66,10 @@
    "since": null,
    "activity": null,
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P2BN02_blackout notice rereview",
-   "since": null,
-   "activity": null,
-   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 3,
+ "claudeWorkers": 2,
  "apiSpentUsd": 318.09,
  "claudeInSession": {
   "runs": 288,
@@ -1563,7 +1555,7 @@
    ]
   },
   {
-   "nextTask": "Blackout Notice: build the woodblock page look picked...",
+   "nextTask": "Blackout Notice: teach the couplet game in the...",
    "costTotalUsd": 51.12,
    "latestChange": {
     "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
@@ -1582,8 +1574,8 @@
     "refining": false,
     "resting": false,
     "regressed": false,
-    "reviseRound": 1,
-    "daysInState": 2
+    "reviseRound": 2,
+    "daysInState": 0
    },
    "waitingOn": "owner",
    "id": "blackout-notice",
@@ -1611,7 +1603,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-24T22:41:49+00:00",
+   "lastChange": "2026-10-25T01:21:51+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -1625,6 +1617,20 @@
     "totalUsdEst": 51.12
    },
    "tasks": [
+    {
+     "title": "P2BN07_fix couplet first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Blackout Notice: teach the couplet game in the first minute and explain the reveal",
+     "since": "2026-10-25T01:21:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2BN06_couplet woodblock build",
      "state": "queued",
@@ -1722,32 +1728,18 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "feat: Read back the posted notice"
-    },
-    {
-     "title": "P3OR38_blackout notice one goal",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Blackout Notice: one goal line (true, not kinder)",
-     "since": "2026-10-22T23:44:59+00:00",
-     "done": "2026-10-22T23:44:59+00:00",
-     "reviewed": false,
-     "minutes": 2,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "OR LANE OK: Test: grep -qF 'Black out words until the notice says something true. Post it when every picture is met.' docs/game.config.js && grep -qF '把字塗黑，讓告示說點真心話。每張圖都做到就可以貼出去。' docs/game.config.js && ! grep -q kinder"
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 11
    },
    "verdict": {
-    "date": "2026-10-22",
+    "date": "2026-10-24",
     "verdict": "revise",
-    "note": "Black out words on a stairwell notice until it says what you mean; the first edit lands, but the result never reads your new notice back"
+    "note": "The couplet game is a real choice and the reveal is the payoff, but nothing teaches the first move and the reveal marks are not explained"
    },
    "needsYou": "Read the 20 notices before it is promoted: the wording was written by the agent and no person has read it. Suggest: read levels 1 to 20 once, fix tone, then promote.",
    "inProgress": true,
@@ -8274,10 +8266,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 36.21,
+   "costTotalUsd": 43.41,
    "latestChange": {
-    "text": "P3OR56_gallery-guess-credits-page: WORKDIR",
-    "at": "2026-10-23T21:36:27+00:00"
+    "text": "tests: an old save loads (career, collection and runs rebuilt from older dailies; garbage...",
+    "at": "2026-10-25T01:13:30+00:00"
    },
    "promo": null,
    "why": "Public-domain objects from The Metropolitan Museum of Art's open collection API.",
@@ -8315,7 +8307,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-09-20T13:46:25+00:00",
-   "lastChange": "2026-10-23T22:11:03+00:00",
+   "lastChange": "2026-10-25T01:13:30+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -8324,9 +8316,9 @@
     "codexTokens": 177723,
     "codexUsdEst": 0.21,
     "claudeUsdEst": 10.8,
-    "earlierRounds": 7,
-    "earlierUsdEst": 25.2,
-    "totalUsdEst": 36.21
+    "earlierRounds": 9,
+    "earlierUsdEst": 32.4,
+    "totalUsdEst": 43.41
    },
    "tasks": [
     {
@@ -8429,6 +8421,18 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T01:13:30+00:00",
+     "ok": true,
+     "note": "tests: an old save loads (career, collection and runs rebuilt from older dailies; garbage falls back) (P2GG00)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T01:11:13+00:00",
+     "ok": true,
+     "note": "No accidental zoom on phones:",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-23T21:36:27+00:00",
      "ok": true,
      "note": "P3OR56_gallery-guess-credits-page: WORKDIR",
@@ -8486,18 +8490,6 @@
      "at": "2026-09-21T02:50:33+00:00",
      "ok": true,
      "note": "Open in the language the content is in",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-20T15:44:59+00:00",
-     "ok": true,
-     "note": "Keep the menu button off the header",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-20T14:31:26+00:00",
-     "ok": true,
-     "note": "Settings menu, mechanism diagram, and the shared kit",
      "source": "main commit"
     }
    ]
@@ -15122,10 +15114,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 47.0,
+   "costTotalUsd": 50.6,
    "latestChange": {
-    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
-    "at": "2026-10-24T22:10:46+00:00"
+    "text": "No accidental zoom on phones:",
+    "at": "2026-10-25T01:15:26+00:00"
    },
    "promo": null,
    "why": "A saved post about a website that simulates a whole life as a record card from real statistics.",
@@ -15159,7 +15151,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T04:36:43+00:00",
-   "lastChange": "2026-10-24T22:10:46+00:00",
+   "lastChange": "2026-10-25T01:15:26+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -15168,9 +15160,9 @@
     "codexTokens": 166775,
     "codexUsdEst": 0.2,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 13,
-    "earlierUsdEst": 46.8,
-    "totalUsdEst": 47.0
+    "earlierRounds": 14,
+    "earlierUsdEst": 50.4,
+    "totalUsdEst": 50.6
    },
    "tasks": [
     {
@@ -15212,6 +15204,12 @@
    "needsYou": null,
    "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-25T01:15:26+00:00",
+     "ok": true,
+     "note": "No accidental zoom on phones:",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-24T22:10:46+00:00",
      "ok": true,
@@ -15277,12 +15275,6 @@
      "ok": true,
      "note": "LIVE https://chenhsieh.github.io/missing-field/ (claude builder)",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-16T00:12:43+00:00",
-     "ok": true,
-     "note": "feat:",
-     "source": "main commit"
     }
    ]
   },
@@ -20974,10 +20966,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 33.07,
+   "costTotalUsd": 36.67,
    "latestChange": {
-    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
-    "at": "2026-10-24T22:18:52+00:00"
+    "text": "No accidental zoom on phones:",
+    "at": "2026-10-25T01:20:47+00:00"
    },
    "promo": null,
    "why": "The 1952 silent piece 4′33″ and a contest poster for it.",
@@ -21015,7 +21007,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-18T06:11:10+00:00",
-   "lastChange": "2026-10-24T22:18:52+00:00",
+   "lastChange": "2026-10-25T01:20:47+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -21024,9 +21016,9 @@
     "codexTokens": 559786,
     "codexUsdEst": 0.67,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 8,
-    "earlierUsdEst": 28.8,
-    "totalUsdEst": 33.07
+    "earlierRounds": 9,
+    "earlierUsdEst": 32.4,
+    "totalUsdEst": 36.67
    },
    "tasks": [
     {
@@ -21111,6 +21103,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T01:20:47+00:00",
+     "ok": true,
+     "note": "No accidental zoom on phones:",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-24T22:18:52+00:00",
      "ok": true,
      "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
@@ -21175,12 +21173,6 @@
      "ok": true,
      "note": "LIVE https://chenhsieh.github.io/four-thirty-three/ (batch5)",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-18T06:19:46+00:00",
-     "ok": true,
-     "note": "feat: route room sounds into living score slips",
-     "source": "main commit"
     }
    ]
   },
@@ -24780,7 +24772,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 1
+    "daysInState": 2
    },
    "waitingOn": "none",
    "id": "speaking-stone",
@@ -25578,10 +25570,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 50.69,
+   "costTotalUsd": 54.29,
    "latestChange": {
-    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
-    "at": "2026-10-24T22:06:28+00:00"
+    "text": "No accidental zoom on phones:",
+    "at": "2026-10-25T01:11:24+00:00"
    },
    "promo": {
     "files": {
@@ -25621,7 +25613,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:39:08+00:00",
-   "lastChange": "2026-10-24T22:06:28+00:00",
+   "lastChange": "2026-10-25T01:11:24+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -25630,9 +25622,9 @@
     "codexTokens": 238662,
     "codexUsdEst": 0.29,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 13,
-    "earlierUsdEst": 46.8,
-    "totalUsdEst": 50.69
+    "earlierRounds": 14,
+    "earlierUsdEst": 50.4,
+    "totalUsdEst": 54.29
    },
    "tasks": [
     {
@@ -25688,6 +25680,12 @@
    "needsYou": null,
    "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-25T01:11:24+00:00",
+     "ok": true,
+     "note": "No accidental zoom on phones:",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-24T22:06:28+00:00",
      "ok": true,
@@ -25753,12 +25751,6 @@
      "ok": true,
      "note": "feat: How to play card names where the game comes from",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-17T21:41:35+00:00",
-     "ok": true,
-     "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added",
-     "source": "board note"
     }
    ]
   },
