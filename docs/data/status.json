@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T06:05:21+00:00",
+ "generated": "2026-10-25T06:07:41+00:00",
  "ops": {
   "count": 2,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 58,
+    "queued": 57,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2320,
-    "estimateMinutes": 2320
+    "minutes": 2280,
+    "estimateMinutes": 2280
    },
    "Claude": {
     "queued": 1,
     "running": 1,
-    "doneToday": 5,
+    "doneToday": 6,
     "minutes": 120,
     "estimateMinutes": 60
    }
   },
-  "queued": 59,
+  "queued": 58,
   "running": 1,
-  "doneToday": 5,
+  "doneToday": 6,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2440,
-  "estimatedFinish": "2026-10-26T20:45:21+00:00",
-  "estimateMinutes": 2320
+  "minutesRemaining": 2400,
+  "estimatedFinish": "2026-10-26T20:07:41+00:00",
+  "estimateMinutes": 2280
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "clean-features",
-   "task": "P1FS20_clean features one screen",
-   "since": "2026-10-25T06:01:50+00:00",
-   "activity": "2026-10-25T06:03:22+00:00",
+   "game": "peony-dream",
+   "task": "P1FS21_peony dream one screen",
+   "since": "2026-10-25T06:07:20+00:00",
+   "activity": "2026-10-25T06:07:25+00:00",
    "commit": null
   }
  ],
@@ -18228,7 +18228,7 @@
    ]
   },
   {
-   "nextTask": "peony-dream: one phone screen, Next on screen after...",
+   "nextTask": null,
    "costTotalUsd": 61.79,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -18257,8 +18257,8 @@
    "title": "Peony Dream",
    "line": "Paint half a face on a sheet of silk, close the silk on.",
    "url": "https://chenhsieh.github.io/peony-dream/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Eastern ink visual direction instead of raster",
    "shelfNote": "",
@@ -18276,7 +18276,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-18T01:51:43+00:00",
-   "lastChange": "2026-10-25T05:46:50+00:00",
+   "lastChange": "2026-10-25T06:07:25+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -18292,10 +18292,10 @@
    "tasks": [
     {
      "title": "P1FS21_peony dream one screen",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "peony-dream: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T05:46:50+00:00",
+     "since": "2026-10-25T06:07:20+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -18404,8 +18404,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 7
    },
@@ -30704,8 +30704,8 @@
    "nextTask": "Make the 320-wide page check stop failing at...",
    "costTotalUsd": 80.06,
    "latestChange": {
-    "text": "Dish notes: two columns from level 4, decided per level so the page never jumps; reserve...",
-    "at": "2026-10-25T05:50:22+00:00"
+    "text": "One screen: win card pinned to the bottom with Next level first; a swipe from the board...",
+    "at": "2026-10-25T06:05:52+00:00"
    },
    "promo": {
     "files": {
@@ -30724,15 +30724,15 @@
     "reviseRound": 1,
     "daysInState": 0
    },
-   "waitingOn": "clean features one screen",
+   "waitingOn": "flaky 320 today drag",
    "id": "clean-features",
    "number": 96,
    "repo": "clean-features",
    "title": "What the Dish Sees",
    "line": "Label each colony with the one shape it sees by placing.",
    "url": "https://chenhsieh.github.io/clean-features/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Find the playable frame for the latent-space game: a clear",
    "shelfNote": "",
@@ -30750,34 +30750,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-25T06:03:22+00:00",
+   "lastChange": "2026-10-25T06:05:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
-    "claudeRuns": 11,
+    "claudeRuns": 12,
     "apiRuns": 1,
     "codexTokens": 719119,
     "codexUsdEst": 0.86,
-    "claudeUsdEst": 39.6,
-    "earlierRounds": 11,
-    "earlierUsdEst": 39.6,
+    "claudeUsdEst": 43.2,
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
     "totalUsdEst": 80.06
    },
    "tasks": [
-    {
-     "title": "P1FS20_clean features one screen",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "clean-features: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T06:01:50+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P3CF07_flaky 320 today drag",
      "state": "queued",
@@ -30791,6 +30777,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1FS20_clean features one screen",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "clean-features: one phone screen, Next on screen after a win, swipe on the board scrolls",
+     "since": "2026-10-25T05:46:50+00:00",
+     "done": "2026-10-25T05:46:50+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1FS20 clean-features one screen: DONE (Sonnet overflow worker, 2026-10-25). Commit on main; live bytes match (style.css, shell.js, index.html); live gate PASS."
     },
     {
      "title": "P1CF06_review fixes story and notes",
@@ -30879,9 +30879,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 16
+    "done": 17
    },
    "verdict": {
     "date": "2026-10-25",
@@ -30891,6 +30891,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-25T06:05:52+00:00",
+     "ok": true,
+     "note": "One screen: win card pinned to the bottom with Next level first; a swipe from the board scrolls the page",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T05:50:22+00:00",
      "ok": true,
@@ -30956,12 +30962,6 @@
      "ok": true,
      "note": "P1CF02 seed-sorter story in card, How to play, win card (days), share line restored; live",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-24T04:22:30+00:00",
-     "ok": true,
-     "note": "feat: What the Dish Sees tells its story: the sorter starts at dawn and its eye is this dish",
-     "source": "main commit"
     }
    ]
   },
