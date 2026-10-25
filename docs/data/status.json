@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T05:32:22+00:00",
+ "generated": "2026-10-25T05:34:42+00:00",
  "ops": {
-  "count": 3,
+  "count": 4,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 61,
+    "queued": 60,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2440,
-    "estimateMinutes": 2440
+    "minutes": 2400,
+    "estimateMinutes": 2400
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 62,
+  "queued": 61,
   "running": 2,
   "doneToday": 3,
   "lanes": {
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2620,
-  "estimatedFinish": "2026-10-26T22:12:22+00:00",
-  "estimateMinutes": 2440
+  "minutesRemaining": 2580,
+  "estimatedFinish": "2026-10-26T21:34:42+00:00",
+  "estimateMinutes": 2400
  },
  "lanes": [
   {
@@ -61,10 +61,10 @@
   },
   {
    "worker": "Claude",
-   "game": "rumour-on-the-jetty",
-   "task": "P2RJT00_rumour on the jetty",
-   "since": "2026-10-25T04:49:13+00:00",
-   "activity": "2026-10-25T05:28:46+00:00",
+   "game": "scribes-blotter",
+   "task": "P2SBL00_scribes blotter",
+   "since": "2026-10-25T05:34:06+00:00",
+   "activity": "2026-10-25T05:34:06+00:00",
    "commit": null
   }
  ],
@@ -21652,15 +21652,15 @@
     "reviseRound": 1,
     "daysInState": 2
    },
-   "waitingOn": "rumour on the jetty",
+   "waitingOn": "kit fit rollout rumour on the jetty",
    "id": "rumour-on-the-jetty",
    "number": 154,
    "repo": "rumour-on-the-jetty",
    "title": "Rumour On The Jetty",
    "line": "",
    "url": "https://chenhsieh.github.io/rumour-on-the-jetty/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -21674,34 +21674,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-25T05:28:46+00:00",
+   "lastChange": "2026-10-25T01:49:44+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 9,
-    "earlierUsdEst": 32.4,
+    "claudeUsdEst": 7.2,
+    "earlierRounds": 8,
+    "earlierUsdEst": 28.8,
     "totalUsdEst": 36.0
    },
    "tasks": [
-    {
-     "title": "P2RJT00_rumour on the jetty",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Rumour on the Jetty: the town fits a phone, door dots readable, the boat tap no longer counts as a whisper",
-     "since": "2026-10-25T04:49:13+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2AX16_kit fit rollout rumour on the jetty",
      "state": "queued",
@@ -21715,6 +21701,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2RJT00_rumour on the jetty",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Rumour on the Jetty: the town fits a phone, door dots readable, the boat tap no longer counts as a whisper",
+     "since": "2026-10-24T01:38:21+00:00",
+     "done": "2026-10-24T01:38:21+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P2RJT00 result (Sonnet). Published to rumour-on-the-jetty main ; live bytes match (game.js, game.config.js, kit/core.js, index.html); the checks below ran on the identical local files, not on the live URL. Rules,..."
     },
     {
      "title": "P2RV07_rumour on the jetty",
@@ -21733,9 +21733,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": {
     "date": "2026-10-23",
@@ -22208,15 +22208,15 @@
     "reviseRound": 0,
     "daysInState": 2
    },
-   "waitingOn": "kit fit rollout scribes blotter",
+   "waitingOn": "scribes blotter",
    "id": "scribes-blotter",
    "number": 151,
    "repo": "scribes-blotter",
    "title": "Scribes Blotter",
    "line": "",
    "url": "https://chenhsieh.github.io/scribes-blotter/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -22230,7 +22230,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:02+00:00",
-   "lastChange": "2026-10-25T01:50:36+00:00",
+   "lastChange": "2026-10-25T05:34:06+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -22245,11 +22245,11 @@
    },
    "tasks": [
     {
-     "title": "P2AX17_kit fit rollout scribes blotter",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "scribes-blotter: take the new play kit so the board and Undo fit a small phone",
-     "since": "2026-10-24T11:35:05+00:00",
+     "title": "P2SBL00_scribes blotter",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "The Scribe's Blotter visual round: the stall, the felt pad, letters and seal, sounds, and Undo on screen while you play",
+     "since": "2026-10-25T05:34:06+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -22259,11 +22259,11 @@
      "result": ""
     },
     {
-     "title": "P2SBL00_scribes blotter",
+     "title": "P2AX17_kit fit rollout scribes blotter",
      "state": "queued",
      "worker": "Codex",
-     "plan": "The Scribe's Blotter visual round: the stall, the felt pad, letters and seal, sounds, and Undo on screen while you play",
-     "since": "2026-10-24T01:38:21+00:00",
+     "plan": "scribes-blotter: take the new play kit so the board and Undo fit a small phone",
+     "since": "2026-10-24T11:35:05+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -22302,8 +22302,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
@@ -31604,7 +31604,7 @@
    "url": "https://chenhsieh.github.io/scribes-blotter/",
    "added": "2026-10-25",
    "try": "Pair the secrets on the blotter; the obvious drop dead-ends from level 3, so plan the pairs first",
-   "busy": false,
+   "busy": true,
    "image": null
   },
   {
