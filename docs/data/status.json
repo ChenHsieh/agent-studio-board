@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T04:01:28+00:00",
+ "generated": "2026-10-25T04:03:52+00:00",
  "ops": {
   "count": 15,
   "notes": [
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 69,
+    "queued": 68,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2760,
-    "estimateMinutes": 2760
+    "minutes": 2720,
+    "estimateMinutes": 2720
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 70,
+  "queued": 69,
   "running": 2,
   "doneToday": 0,
   "lanes": {
@@ -46,25 +46,25 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2940,
-  "estimatedFinish": "2026-10-27T02:01:28+00:00",
-  "estimateMinutes": 2760
+  "minutesRemaining": 2900,
+  "estimatedFinish": "2026-10-27T01:23:52+00:00",
+  "estimateMinutes": 2720
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "clean-features",
-   "task": "P1CF05_reset tests and review",
-   "since": "2026-10-25T03:56:16+00:00",
-   "activity": "2026-10-25T03:59:49+00:00",
+   "game": "Multiple games",
+   "task": "P1MM03_marble mechanisms act two",
+   "since": null,
+   "activity": null,
    "commit": null
   },
   {
    "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P2PL06_rollout judgment rows",
-   "since": null,
-   "activity": null,
+   "game": "pinch-points",
+   "task": "P1PP03_pinch points strategy card and daily",
+   "since": "2026-10-25T04:02:10+00:00",
+   "activity": "2026-10-25T04:02:14+00:00",
    "commit": null
   }
  ],
@@ -18720,7 +18720,7 @@
    ]
   },
   {
-   "nextTask": "Pinch Points: a rule card before level 1...",
+   "nextTask": "pinch-points: one phone screen through the kit, Next...",
    "costTotalUsd": 47.14,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -18749,8 +18749,8 @@
    "title": "Pinch Points",
    "line": "Pinch six stones flat as the surface flattens live; par set by search, plus a daily.",
    "url": "https://chenhsieh.github.io/pinch-points/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "turns an esoteric paper into an interactive game; explain the mechanism, show...",
    "shelfNote": "",
@@ -18764,7 +18764,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T20:47:18+00:00",
-   "lastChange": "2026-10-25T02:29:40+00:00",
+   "lastChange": "2026-10-25T04:02:14+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -18780,10 +18780,10 @@
    "tasks": [
     {
      "title": "P1PP03_pinch points strategy card and daily",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Pinch Points: a rule card before level 1, a hint per level, the rule on the result card, a better daily and share line",
-     "since": "2026-10-25T02:29:40+00:00",
+     "since": "2026-10-25T04:02:10+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -18892,8 +18892,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 5
    },
@@ -30699,7 +30699,7 @@
    ]
   },
   {
-   "nextTask": "clean-features: one phone screen, Next on screen after...",
+   "nextTask": "What the Dish Sees: say who you are...",
    "costTotalUsd": 80.06,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -30714,23 +30714,23 @@
     "caption": "Label each colony with the one shape it sees by placing."
    },
    "why": "An essay arguing neural network features are already clean, and a petri-dish video of something first taken for ordinary bacteria.",
-   "state": "building",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
     "resting": false,
     "regressed": false,
-    "reviseRound": 0,
+    "reviseRound": 1,
     "daysInState": 0
    },
-   "waitingOn": "reset tests and review",
+   "waitingOn": "review fixes story and notes",
    "id": "clean-features",
    "number": 96,
    "repo": "clean-features",
    "title": "What the Dish Sees",
    "line": "Label each colony with the one shape it sees by placing.",
    "url": "https://chenhsieh.github.io/clean-features/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Find the playable frame for the latent-space game: a clear",
    "shelfNote": "",
@@ -30748,26 +30748,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-25T03:59:49+00:00",
+   "lastChange": "2026-10-25T04:03:06+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
-    "claudeRuns": 9,
+    "claudeRuns": 10,
     "apiRuns": 1,
     "codexTokens": 719119,
     "codexUsdEst": 0.86,
-    "claudeUsdEst": 32.4,
-    "earlierRounds": 13,
-    "earlierUsdEst": 46.8,
+    "claudeUsdEst": 36.0,
+    "earlierRounds": 12,
+    "earlierUsdEst": 43.2,
     "totalUsdEst": 80.06
    },
    "tasks": [
     {
-     "title": "P1CF05_reset tests and review",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Clean Features: tests for the reset and a stranger review",
-     "since": "2026-10-25T03:56:16+00:00",
+     "title": "P1CF06_review fixes story and notes",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "What the Dish Sees: say who you are, keep every picture in the notes, and say what a wrong sticker costs in the story",
+     "since": "2026-10-25T04:03:06+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -30847,6 +30847,20 @@
      "result": "DONE (Sonnet worker). Published to main of clean-features; live bytes match (draw.js, shell.js, first-minute.js, look.css on chenhsieh.github.io/clean-features); live page loaded at 390x844 and 320x568, 0 console..."
     },
     {
+     "title": "P1CF05_reset tests and review",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Clean Features: tests for the reset and a stranger review",
+     "since": "2026-10-24T01:32:28+00:00",
+     "done": "2026-10-24T01:32:28+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "DONE (planner, Opus). Tests on main of clean-features; stranger review of the live page; verdict revise; fix task P1CF06 queued (Sonnet)."
+    },
+    {
      "title": "P1CF00_core and story reset",
      "state": "done",
      "worker": "Claude",
@@ -30859,29 +30873,19 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1CF00_core-and-story-reset: design reset of Clean Features (What the Dish Sees). DONE."
-    },
-    {
-     "title": "P2FM39_clean features first minute",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "What the Dish Sees: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T22:30:48+00:00",
-     "done": "2026-10-22T22:30:48+00:00",
-     "reviewed": false,
-     "minutes": 23,
-     "tokens": 173253,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "feat: teach the dish through a playable first minute"
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 1,
+    "queued": 2,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 14
+    "done": 15
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-10-25",
+    "verdict": "revise",
+    "note": "Showing every picture first loses on every level after the first, so looking has to be chosen; the screen never says who you are, and the notes forget the oldest pictures, including the ones where nothing lit"
+   },
    "needsYou": null,
    "inProgress": true,
    "history": [
@@ -31584,8 +31588,7 @@
   }
  ],
  "systemNeeds": [
-  "System needs: 8 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)",
-  "System needs: Pages build stuck or failed for 1 game(s): grass-crossword (fix: re-run the Pages build in those repos (Settings, Pages) if an agent cannot)"
+  "System needs: 8 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)"
  ],
  "releaseReady": [],
  "releaseRegressed": [],

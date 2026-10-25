@@ -1,5 +1,5 @@
 {
- "generated": 1792900900,
+ "generated": 1792901045,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -80,8 +80,8 @@
  "overflow": {
   "codexOut": false,
   "converted": 2,
-  "convertedRunning": 0,
-  "claudeWorkers": 1,
+  "convertedRunning": 1,
+  "claudeWorkers": 2,
   "claudeWorkerCap": 3,
   "handedBack": 0,
   "lastHandBack": null,
@@ -89,42 +89,60 @@
  },
  "tasks": [
   {
-   "id": "P1CF05_reset-tests-and-review",
-   "request": "Clean Features: tests for the reset and a stranger review",
-   "game": "What the Dish Sees",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1CF04_marks-and-life-bar-look"
-   ],
-   "priority": "P1",
-   "why": "An essay arguing neural network features are already clean, and a petri-dish video of something first taken for ordinary bacteria.",
-   "state": "running",
-   "at": 1792805548,
-   "created": 1792805548
-  },
-  {
-   "id": "P2PL06_rollout-judgment-rows",
-   "request": "Finish the Why this exists rollout on the games whose own tests or page check stopped it",
-   "game": "Studio",
+   "id": "P1PP03_pinch-points-strategy-card-and-daily",
+   "request": "Pinch Points: a rule card before level 1, a hint per level, the rule on the result card, a better daily and share line",
+   "game": "Pinch Points",
    "route": "Claude",
    "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P1PP02_pinch-points-show-the-movement"
+   ],
+   "priority": "P1",
+   "why": "A graphics-paper figure of a statue flattened two ways, and an old woodblock page of a perforated scholar's stone.",
+   "state": "running",
+   "at": 1792895380,
+   "created": 1792895380,
+   "wasCodex": true
+  },
+  {
+   "id": "P1MM03_marble-mechanisms-act-two",
+   "request": "Marble Machine: spring pads, bells, doors and funnels with levels where parts interact",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
    "effort": "high",
    "kind": "build",
    "size": "studio",
    "estMinutes": null,
    "after": [
-    "P1PL05_why-and-no-hub-rollout"
+    "P1MM02_marble-slab-look"
    ],
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1792883805,
-   "created": 1792883805
+   "at": 1792838738,
+   "created": 1792838738
+  },
+  {
+   "id": "P1CF06_review-fixes-story-and-notes",
+   "request": "What the Dish Sees",
+   "game": "What the Dish Sees",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "An essay arguing neural network features are already clean, and a petri-dish video of something first taken for ordinary bacteria.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792900986
   },
   {
    "id": "P1FS12_remote-viewer-one-screen",
@@ -451,26 +469,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P1PP03_pinch-points-strategy-card-and-daily",
-   "request": "Pinch Points: a rule card before level 1, a hint per level, the rule on the result card, a better daily and share line",
-   "game": "Pinch Points",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P1PP02_pinch-points-show-the-movement"
-   ],
-   "priority": "P1",
-   "why": "A graphics-paper figure of a statue flattened two ways, and an old woodblock page of a perforated scholar's stone.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792895380,
-   "wasCodex": true
-  },
-  {
    "id": "P2MC03_share-and-sound",
    "request": "Makeshift Chair 3D: share line and physical sounds",
    "game": "Makeshift Chair",
@@ -715,25 +713,6 @@
    "waitingOn": [],
    "created": 1792894207,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P1MM03_marble-mechanisms-act-two",
-   "request": "Marble Machine: spring pads, bells, doors and funnels with levels where parts interact",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1MM02_marble-slab-look"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792838738
   },
   {
    "id": "P2FS04_one-screen-rollout-rest",
@@ -1862,6 +1841,25 @@
    "state": "done",
    "at": 1792888763,
    "created": 1792888763
+  },
+  {
+   "id": "P2PL06_rollout-judgment-rows",
+   "request": "Finish the Why this exists rollout on the games whose own tests or page check stopped it",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1PL05_why-and-no-hub-rollout"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792883805,
+   "created": 1792883805
   },
   {
    "id": "P2TE09_chrome-text-sizes",

@@ -183,24 +183,24 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 24,
+   "count": 25,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 24,
+   "guessed": 25,
    "topFailures": [],
    "flag": "give more"
   },
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 222,
+   "count": 223,
    "firstTimePass": 95,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 175,
+   "guessed": 176,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -503,6 +503,24 @@
  ],
  "last": [
   {
+   "date": "2026-10-25",
+   "task": "rollout judgment rows",
+   "number": "",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "P2PL06 result (Sonnet). NEEDS_JUDGMENT went from 30 to 22; 8 more games LIVE with their live bytes checked by rollout.py (bluebook-guess, ki"
+  },
+  {
+   "date": "2026-10-25",
+   "task": "reset tests and review",
+   "number": "",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "zh-Hant pages not looked at by eye in this review (the fix task asks for it); levels 9-12 and the daily not played by a stranger."
+  },
+  {
    "date": "2026-10-24",
    "task": "walls topbar test no hub",
    "number": "",
@@ -663,24 +681,6 @@
    "role": "build",
    "passed": "yes",
    "note": "P2n86 round-4 template repos: DONE (claude-sonnet). Ten private repos created with newgame.sh, template at kit 19, Pages building from docs/"
-  },
-  {
-   "date": "2026-10-24",
-   "task": "thumb stand link preview",
-   "number": "78",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "P2TS58 Thumb Stand link preview. DONE. main 8414caa. Live https://chenhsieh.github.io/thumb-stand/ (index.html md5-matches; og.png answers 2"
-  },
-  {
-   "date": "2026-10-24",
-   "task": "kit draw at device pixel ratio",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "found on origin/main at kit 13: scribes-blotter. At an old kit (2): pinch-points, lot-waits (need the normal kit update first). Not template"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
