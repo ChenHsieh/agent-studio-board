@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T09:36:32+00:00",
+ "generated": "2026-10-25T09:38:50+00:00",
  "ops": {
   "count": 44,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 50,
-    "running": 1,
-    "doneToday": 6,
-    "minutes": 2040,
-    "estimateMinutes": 2040
+    "queued": 49,
+    "running": 0,
+    "doneToday": 7,
+    "minutes": 1960,
+    "estimateMinutes": 1960
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 2,
     "doneToday": 32,
-    "minutes": 120,
-    "estimateMinutes": 60
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
-  "queued": 51,
+  "queued": 50,
   "running": 2,
-  "doneToday": 38,
+  "doneToday": 39,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2160,
-  "estimatedFinish": "2026-10-26T19:36:32+00:00",
-  "estimateMinutes": 2040
+  "minutesRemaining": 2140,
+  "estimatedFinish": "2026-10-26T18:18:50+00:00",
+  "estimateMinutes": 1960
  },
  "lanes": [
   {
-   "worker": "Codex",
-   "game": "lot-waits",
-   "task": "P1LW03_lot waits first minute v2",
-   "since": "2026-10-25T09:17:03+00:00",
-   "activity": "2026-10-25T09:17:07+00:00",
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P1CC38_fix failing browser tests",
+   "since": null,
+   "activity": null,
    "commit": null
   },
   {
@@ -69,7 +69,7 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 2,
  "apiSpentUsd": 320.27,
  "claudeInSession": {
   "runs": 288,
@@ -27443,10 +27443,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 86.4,
+   "costTotalUsd": 82.8,
    "latestChange": {
-    "text": "P3OR91_lot-waits-tap-roundtrip-test: WORKDIR",
-    "at": "2026-10-25T08:02:29+00:00"
+    "text": "feat: Lot Waits first minute plays three real weeks on the new board",
+    "at": "2026-10-25T09:37:04+00:00"
    },
    "promo": {
     "files": {
@@ -27456,10 +27456,10 @@
     "caption": "A week at a shrine side table: give each lot to its visitor on the right day or keep it in a two-slot drawer."
    },
    "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
@@ -27471,8 +27471,8 @@
    "title": "The Lot Waits",
    "line": "A week at a shrine side table: give each lot to its visitor on the right day or keep it in a two-slot drawer.",
    "url": "https://chenhsieh.github.io/lot-waits/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "A week at a shrine side table: give each lot to its visitor on the right day or",
    "shelfNote": "",
@@ -27486,33 +27486,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:50:16+00:00",
-   "lastChange": "2026-10-25T09:17:07+00:00",
+   "lastChange": "2026-10-25T09:37:04+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
     "claudeRuns": 6,
-    "apiRuns": 2,
+    "apiRuns": 3,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 21.6,
-    "earlierRounds": 18,
-    "earlierUsdEst": 64.8,
-    "totalUsdEst": 86.4
+    "earlierRounds": 17,
+    "earlierUsdEst": 61.2,
+    "totalUsdEst": 82.8
    },
    "tasks": [
     {
      "title": "P1LW03_lot waits first minute v2",
-     "state": "running",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude API",
      "plan": "The Lot Waits: a new first minute that shows both costs in three steps",
-     "since": "2026-10-25T09:17:03+00:00",
-     "done": null,
+     "since": "2026-10-25T09:16:37+00:00",
+     "done": "2026-10-25T09:16:37+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1LW03 lot-waits first minute v2: DONE (Sonnet queue worker, 2026-10-25). Commit on main; live bytes of game.js, words.js, game.css match; live page driven with real touches at 390x844 and 320x568."
     },
     {
      "title": "P3OR91_lot waits tap roundtrip test",
@@ -27615,14 +27615,20 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 8
+    "done": 9
    },
    "verdict": null,
    "needsYou": "Native read of the 14 composed poems and their plain-language lines is owed. Suggest: one native read of all fourteen before the share card goes out.",
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-25T09:37:04+00:00",
+     "ok": true,
+     "note": "feat: Lot Waits first minute plays three real weeks on the new board",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T08:02:29+00:00",
      "ok": true,
@@ -27687,12 +27693,6 @@
      "at": "2026-10-25T07:40:46+00:00",
      "ok": true,
      "note": "wip: P1LW02_lot-waits-day-strip-and-trust (Codex lane autosave 18:38)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-25T07:40:46+00:00",
-     "ok": true,
-     "note": "wip: P1LW02_lot-waits-day-strip-and-trust (Codex lane autosave 18:30)",
      "source": "main commit"
     }
    ]
