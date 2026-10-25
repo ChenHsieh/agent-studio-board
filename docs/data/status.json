@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T00:37:42+00:00",
+ "generated": "2026-10-25T00:40:03+00:00",
  "ops": {
   "count": 3,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 64,
+    "queued": 65,
     "running": 0,
     "doneToday": 2,
-    "minutes": 2560,
-    "estimateMinutes": 2560
+    "minutes": 2600,
+    "estimateMinutes": 2600
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
-    "doneToday": 76,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "running": 1,
+    "doneToday": 77,
+    "minutes": 120,
+    "estimateMinutes": 60
    }
   },
-  "queued": 65,
-  "running": 2,
-  "doneToday": 78,
+  "queued": 66,
+  "running": 1,
+  "doneToday": 79,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,19 +46,11 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2740,
-  "estimatedFinish": "2026-10-26T19:17:42+00:00",
-  "estimateMinutes": 2560
+  "minutesRemaining": 2720,
+  "estimatedFinish": "2026-10-26T20:00:03+00:00",
+  "estimateMinutes": 2600
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P1FS06_one screen ux study",
-   "since": null,
-   "activity": null,
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "Multiple games",
@@ -69,7 +61,7 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 318.09,
  "claudeInSession": {
   "runs": 287,
@@ -7825,8 +7817,8 @@
    "nextTask": null,
    "costTotalUsd": 83.23,
    "latestChange": {
-    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
-    "at": "2026-10-24T16:12:41+00:00"
+    "text": "One screen: the play page fits the phone; trip numbers, berry routes and pictures move to...",
+    "at": "2026-10-25T00:20:57+00:00"
    },
    "promo": {
     "files": {
@@ -7867,7 +7859,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T07:50:19+00:00",
-   "lastChange": "2026-10-24T16:12:41+00:00",
+   "lastChange": "2026-10-25T00:20:57+00:00",
    "cost": {
     "apiUsd": 10.18,
     "codexRuns": 3,
@@ -8009,6 +8001,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T00:20:57+00:00",
+     "ok": true,
+     "note": "One screen: the play page fits the phone; trip numbers, berry routes and pictures move to a Details sheet",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-24T16:12:41+00:00",
      "ok": true,
      "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
@@ -8073,12 +8071,6 @@
      "ok": true,
      "note": "Route distance dashboard and named berry paths published.",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-19T17:22:41+00:00",
-     "ok": true,
-     "note": "Test bug: Play/Pause assertion named the intentional Pause action as a failure; it now verifies Play resumes and remains running. Not published.",
-     "source": "board note"
     }
    ]
   },
@@ -27801,8 +27793,8 @@
    "nextTask": null,
    "costTotalUsd": 61.39,
    "latestChange": {
-    "text": "Worked-example intro and a guided first swap (P1TH03)",
-    "at": "2026-10-24T23:45:00+00:00"
+    "text": "One number on every screen: no numbered steps, no distance sentence, at most 6 numerals...",
+    "at": "2026-10-25T00:14:05+00:00"
    },
    "promo": {
     "files": {
@@ -27842,8 +27834,8 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-10-15T00:28:48+00:00",
-   "lastChange": "2026-10-24T23:45:00+00:00",
+   "firstSeen": "2026-10-19T17:54:51+00:00",
+   "lastChange": "2026-10-25T00:14:05+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -27971,6 +27963,18 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T00:14:05+00:00",
+     "ok": true,
+     "note": "One number on every screen: no numbered steps, no distance sentence, at most 6 numerals per move (P1TH04)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T00:09:16+00:00",
+     "ok": true,
+     "note": "start: P1TH04 strings and tests",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-24T23:45:00+00:00",
      "ok": true,
      "note": "Worked-example intro and a guided first swap (P1TH03)",
@@ -28029,18 +28033,6 @@
      "ok": true,
      "note": "daily keyed on local date not UTC (studio standard)",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-21T22:25:53+00:00",
-     "ok": true,
-     "note": "chore: restore the review screenshots a test run overwrote",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T22:25:32+00:00",
-     "ok": true,
-     "note": "fix: Tree Hero daily changes at the player's local midnight",
-     "source": "main commit"
     }
    ]
   },

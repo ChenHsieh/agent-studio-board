@@ -1,5 +1,5 @@
 {
- "generated": 1792888676,
+ "generated": 1792888816,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -88,23 +88,6 @@
   "lastHandBackN": null
  },
  "tasks": [
-  {
-   "id": "P1FS06_one-screen-ux-study",
-   "request": "P1FS06_one screen ux study",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792885748,
-   "created": 1792885748
-  },
   {
    "id": "P1ZM00_no-accidental-zoom-all-games",
    "request": "P1ZM00_no accidental zoom all games",
@@ -442,6 +425,44 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P1FS05_next-prompt-and-canvas-scroll",
+   "request": "P1FS05_next prompt and canvas scroll",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1FS06_one-screen-ux-study"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792888736
+  },
+  {
+   "id": "P1FS07_one-screen-by-construction",
+   "request": "P1FS07_one screen by construction",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1FS06_one-screen-ux-study"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792888748
+  },
+  {
    "id": "P1IN09_idea-round-6-five-ideas",
    "request": "P1IN09_idea round 6 five ideas",
    "game": "Studio",
@@ -510,6 +531,23 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792805044
+  },
+  {
+   "id": "P2FS08_onescreen-mocks-opus-stranger",
+   "request": "A fresh reviewer checks the one-screen mock screens as a stranger",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "medium",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792888763
   },
   {
    "id": "P2PF01_board-portfolio-view",
@@ -804,49 +842,7 @@
    "waitingOn": [
     "P1FS05_next-prompt-and-canvas-scroll"
    ],
-   "created": 1792885659
-  },
-  {
-   "id": "P1FS05_next-prompt-and-canvas-scroll",
-   "request": "P1FS05_next prompt and canvas scroll",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1FS06_one-screen-ux-study"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P1FS06_one-screen-ux-study"
-   ],
-   "created": 1792885748
-  },
-  {
-   "id": "P1FS07_one-screen-by-construction",
-   "request": "P1FS07_one screen by construction",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1FS06_one-screen-ux-study"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P1FS06_one-screen-ux-study"
-   ],
-   "created": 1792885753
+   "created": 1792888748
   },
   {
    "id": "P1MM04_marble-act-two-look-and-lessons",
@@ -1018,7 +1014,7 @@
    "waitingOn": [
     "P1FS03_flagships-one-screen"
    ],
-   "created": 1792858516
+   "created": 1792888747
   },
   {
    "id": "P2KT01_kit-win-hold-and-higher-is-better",
@@ -1601,6 +1597,23 @@
    "state": "done",
    "at": 1792885662,
    "created": 1792885662
+  },
+  {
+   "id": "P1FS06_one-screen-ux-study",
+   "request": "P1FS06_one screen ux study",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792885748,
+   "created": 1792885748
   },
   {
    "id": "",
