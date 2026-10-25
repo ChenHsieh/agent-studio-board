@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T04:37:49+00:00",
+ "generated": "2026-10-25T04:40:10+00:00",
  "ops": {
-  "count": 8,
+  "count": 9,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -47,16 +47,16 @@
   },
   "codexPaused": false,
   "minutesRemaining": 2880,
-  "estimatedFinish": "2026-10-27T02:37:49+00:00",
+  "estimatedFinish": "2026-10-27T02:40:10+00:00",
   "estimateMinutes": 2760
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "hit-or-kit",
-   "task": "P2HK00_which one to drop clarity",
-   "since": "2026-10-25T04:23:46+00:00",
-   "activity": "2026-10-25T04:37:44+00:00",
+   "game": "makeshift-chair",
+   "task": "P2MC03_share and sound",
+   "since": "2026-10-25T04:39:15+00:00",
+   "activity": "2026-10-25T04:39:16+00:00",
    "commit": null
   }
  ],
@@ -10850,23 +10850,23 @@
     "caption": "Open sample tubes in a freezer box and publish or drop a microbiome finding; 25 cases and a daily."
    },
    "why": "Open sample tubes and decide whether a microbiome finding is real or a reagent-kit contaminant: publish or drop.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "which one to drop clarity",
+   "waitingOn": "none",
    "id": "hit-or-kit",
    "number": 126,
    "repo": "hit-or-kit",
    "title": "Hit or Kit",
    "line": "Open sample tubes in a freezer box and publish or drop a microbiome finding; 25 cases and a daily.",
    "url": "https://chenhsieh.github.io/hit-or-kit/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Open sample tubes in a freezer box and publish or drop a microbiome finding; 25",
    "shelfNote": "",
@@ -10884,33 +10884,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T04:19:06+00:00",
-   "lastChange": "2026-10-25T04:37:44+00:00",
+   "lastChange": "2026-10-25T01:41:30+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 10.8,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
+    "claudeUsdEst": 14.4,
+    "earlierRounds": 9,
+    "earlierUsdEst": 32.4,
     "totalUsdEst": 46.8
    },
    "tasks": [
     {
      "title": "P2HK00_which one to drop clarity",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Hit or Kit (#126): make clear how to read the blank and which sample to drop.",
-     "since": "2026-10-25T04:23:46+00:00",
-     "done": null,
+     "since": "2026-10-24T02:54:42+00:00",
+     "done": "2026-10-24T02:54:42+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P2HK00 result (Sonnet). Published to hit-or-kit main ; live bytes match (game.js, game.css, index.html); live page at 390x844 and 320x568 opened, board 488 units, 0 page errors."
     },
     {
      "title": "P2FM57_hit or kit first minute fix",
@@ -10957,13 +10957,13 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T01:41:30+00:00",
@@ -13991,15 +13991,15 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "visual round clay",
+   "waitingOn": "share and sound",
    "id": "makeshift-chair",
    "number": 35,
    "repo": "makeshift-chair",
    "title": "Makeshift Chair",
    "line": "",
    "url": "https://chenhsieh.github.io/makeshift-chair/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "make it a 3D physics game where sitting goes ridiculously wrong; daily games",
    "shelfNote": "",
@@ -14017,7 +14017,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-25T02:55:55+00:00",
+   "lastChange": "2026-10-25T04:39:16+00:00",
    "cost": {
     "apiUsd": 11.15,
     "codexRuns": 2,
@@ -14032,11 +14032,11 @@
    },
    "tasks": [
     {
-     "title": "P2MC04_visual round clay",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Makeshift Chair 3D: the visual round (soft clay toy, faceless sitter)",
-     "since": "2026-10-24T09:30:47+00:00",
+     "title": "P2MC03_share and sound",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Makeshift Chair 3D: share line and physical sounds",
+     "since": "2026-10-25T04:39:15+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -14046,11 +14046,11 @@
      "result": ""
     },
     {
-     "title": "P2MC03_share and sound",
+     "title": "P2MC04_visual round clay",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Makeshift Chair 3D: share line and physical sounds",
-     "since": "2026-10-24T09:30:42+00:00",
+     "plan": "Makeshift Chair 3D: the visual round (soft clay toy, faceless sitter)",
+     "since": "2026-10-24T09:30:47+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -14145,8 +14145,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 7
    },
