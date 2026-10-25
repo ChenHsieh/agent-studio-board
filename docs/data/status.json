@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T08:00:39+00:00",
+ "generated": "2026-10-25T08:02:56+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 59,
+    "queued": 58,
     "running": 1,
     "doneToday": 0,
-    "minutes": 2400,
-    "estimateMinutes": 2400
+    "minutes": 2360,
+    "estimateMinutes": 2360
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 27,
+    "doneToday": 28,
     "minutes": 180,
     "estimateMinutes": 90
    }
   },
-  "queued": 60,
+  "queued": 59,
   "running": 3,
-  "doneToday": 27,
+  "doneToday": 28,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2580,
-  "estimatedFinish": "2026-10-27T00:00:39+00:00",
-  "estimateMinutes": 2400
+  "minutesRemaining": 2540,
+  "estimatedFinish": "2026-10-26T23:22:56+00:00",
+  "estimateMinutes": 2360
  },
  "lanes": [
   {
@@ -60,23 +60,23 @@
    "commit": null
   },
   {
-   "worker": "Claude",
-   "game": "lot-waits",
-   "task": "P1LW02_lot waits day strip and trust",
-   "since": "2026-10-25T07:40:29+00:00",
-   "activity": "2026-10-25T07:55:07+00:00",
-   "commit": null
-  },
-  {
    "worker": "Codex",
    "game": "honest-sign",
    "task": "P2AX13_kit fit rollout honest sign",
    "since": "2026-10-25T07:51:36+00:00",
-   "activity": "2026-10-25T08:00:31+00:00",
+   "activity": "2026-10-25T08:02:43+00:00",
    "commit": {
     "at": "2026-10-25T07:58:12+00:00",
     "subject": "Sync short-screen kit"
    }
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P2PF01_board portfolio view",
+   "since": null,
+   "activity": null,
+   "commit": null
   }
  ],
  "codexLanes": 1,
@@ -4239,8 +4239,8 @@
    "nextTask": null,
    "costTotalUsd": 83.44,
    "latestChange": {
-    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
-    "at": "2026-10-25T02:51:46+00:00"
+    "text": "One screen: one row of controls, Reset and Why behind More, swipe from empty plate scrolls",
+    "at": "2026-10-25T07:33:51+00:00"
    },
    "promo": {
     "files": {
@@ -4281,7 +4281,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:40:04+00:00",
-   "lastChange": "2026-10-25T07:03:29+00:00",
+   "lastChange": "2026-10-25T07:33:51+00:00",
    "cost": {
     "apiUsd": 3.26,
     "codexRuns": 5,
@@ -4423,6 +4423,18 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T07:33:51+00:00",
+     "ok": true,
+     "note": "One screen: one row of controls, Reset and Why behind More, swipe from empty plate scrolls",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T07:14:29+00:00",
+     "ok": true,
+     "note": "start: P1FS14 cymatic-plate one screen",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T02:51:46+00:00",
      "ok": true,
      "note": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -4480,18 +4492,6 @@
      "at": "2026-10-21T17:13:29+00:00",
      "ok": true,
      "note": "fix: change daily at local midnight",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T21:33:23+00:00",
-     "ok": true,
-     "note": "endless glides + haptics + own logo top-left; live; ui_gate U7 conflicts with rule 22",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-20T21:29:29+00:00",
-     "ok": true,
-     "note": "feat: endless glides, buzzes and has its own sounds; the game wears its own logo",
      "source": "main commit"
     }
    ]
@@ -11195,7 +11195,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:32:13+00:00",
-   "lastChange": "2026-10-25T08:00:31+00:00",
+   "lastChange": "2026-10-25T08:02:43+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -27390,8 +27390,8 @@
    "title": "The Lot Waits",
    "line": "A week at a shrine side table: give each lot to its visitor on the right day or keep it in a two-slot drawer.",
    "url": "https://chenhsieh.github.io/lot-waits/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "A week at a shrine side table: give each lot to its visitor on the right day or",
    "shelfNote": "",
@@ -27405,26 +27405,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:50:16+00:00",
-   "lastChange": "2026-10-25T07:55:07+00:00",
+   "lastChange": "2026-10-25T08:01:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 4,
+    "claudeRuns": 6,
     "apiRuns": 2,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 14.4,
-    "earlierRounds": 20,
-    "earlierUsdEst": 72.0,
+    "claudeUsdEst": 21.6,
+    "earlierRounds": 18,
+    "earlierUsdEst": 64.8,
     "totalUsdEst": 86.4
    },
    "tasks": [
     {
-     "title": "P1LW02_lot waits day strip and trust",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "The Lot Waits: a seven-day strip, each lot's good days marked under it, and a trust number that moves",
-     "since": "2026-10-25T07:40:29+00:00",
+     "title": "P1LW03_lot waits first minute v2",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "The Lot Waits: a new first minute that shows both costs in three steps",
+     "since": "2026-10-25T08:01:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -27434,18 +27434,32 @@
      "result": ""
     },
     {
-     "title": "P1LW03_lot waits first minute v2",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "The Lot Waits: a new first minute that shows both costs in three steps",
-     "since": "2026-10-24T17:22:08+00:00",
-     "done": null,
+     "title": "P3OR91_lot waits tap roundtrip test",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Lot Waits: a test that every solver move's tap point lands on the board and maps back to the same move",
+     "since": "2026-10-25T08:01:56+00:00",
+     "done": "2026-10-25T08:01:56+00:00",
+     "reviewed": false,
+     "minutes": 0,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: timeout 600 test/tap.test.mjs"
+    },
+    {
+     "title": "P1LW02_lot waits day strip and trust",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "The Lot Waits: a seven-day strip, each lot's good days marked under it, and a trust number that moves",
+     "since": "2026-10-25T02:29:40+00:00",
+     "done": "2026-10-25T02:29:40+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1LW02 Lot Waits play screen (day strip, trust face, lot card, drawer, visitors): DONE (planner-run, claude-opus), lot-waits main , live bytes match on chenhsieh.github.io/lot-waits (game.js, game.css, index.html,..."
     },
     {
      "title": "P1LW02_lot waits day strip and trust",
@@ -27459,7 +27473,7 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1LW02 Lot Waits play screen (day strip, trust face, lot card, drawer, visitors): DONE (planner-run, claude-opus), lot-waits main , live bytes match on chenhsieh.github.io/lot-waits (game.js, game.css, index.html,..."
     },
     {
      "title": "P1LW01_lot waits rules v2 and levels",
@@ -27516,27 +27530,13 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1LW00 DONE. The Lot Waits (#121)."
-    },
-    {
-     "title": "P2FM55_lot waits first minute fix",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Finish the first-minute round for lot-waits: the lesson starts only from the Play button, so jumping to a level never lands under it",
-     "since": "2026-10-23T13:27:09+00:00",
-     "done": "2026-10-23T13:27:09+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "live game.js matches)."
     }
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 6
+    "done": 8
    },
    "verdict": null,
    "needsYou": "Native read of the 14 composed poems and their plain-language lines is owed. Suggest: one native read of all fourteen before the share card goes out.",

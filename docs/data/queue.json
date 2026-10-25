@@ -1,5 +1,5 @@
 {
- "generated": 1792914967,
+ "generated": 1792915386,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -7,13 +7,19 @@
   "waiting": 0,
   "queued": 0,
   "running": 0,
-  "done24h": 17,
+  "done24h": 18,
   "modelsQueued": {},
   "spendTodayUsd": 0.22,
-  "runsToday": 12,
-  "runsTodayUnpriced": 10,
+  "runsToday": 13,
+  "runsTodayUnpriced": 11,
   "spendTotalUsd": 15.36,
   "recent": [
+   {
+    "id": "P3OR91_lot-waits-tap-roundtrip-test",
+    "request": "Lot Waits: a test that every solver move's tap point lands on the board and maps back to the same move",
+    "model": "deepseek-v4-flash",
+    "at": 1792915316
+   },
    {
     "id": "P3OR90_marble-daily-pins-test",
     "request": "Marble Machine: a test that the stored daily pins rebuild the same machine as the search",
@@ -67,21 +73,15 @@
     "request": "Glasshouse: a test that proves old saves carry over after the rename (OpenRouter lane)",
     "model": "deepseek-v4-flash",
     "at": 1792908619
-   },
-   {
-    "id": "P3OR81_walls-topbar-test-no-hub",
-    "request": "Walls Have Ears: bring the top bar test in line with the no-hub rule",
-    "model": "openai/gpt-4.1",
-    "at": 1792897653
    }
   ],
   "label": "estimate"
  },
  "overflow": {
   "codexOut": false,
-  "converted": 4,
-  "convertedRunning": 2,
-  "claudeWorkers": 3,
+  "converted": 3,
+  "convertedRunning": 1,
+  "claudeWorkers": 2,
   "claudeWorkerCap": 3,
   "handedBack": 8,
   "lastHandBack": 1792914815,
@@ -107,24 +107,6 @@
    "wasCodex": true
   },
   {
-   "id": "P1LW02_lot-waits-day-strip-and-trust",
-   "request": "The Lot Waits: a seven-day strip, each lot's good days marked under it, and a trust number that moves",
-   "game": "The Lot Waits",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
-   "state": "running",
-   "at": 1792895380,
-   "created": 1792895380,
-   "wasCodex": true
-  },
-  {
    "id": "P2AX13_kit-fit-rollout-honest-sign",
    "request": "honest-sign: take the new play kit so the board and Undo fit a small phone",
    "game": "Honest Sign",
@@ -143,6 +125,25 @@
    "at": 1792914696,
    "created": 1792914696,
    "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2PF01_board-portfolio-view",
+   "request": "A Portfolio view on the studio board: how many ideas and games sit in each lane against its cap, and what gets built next",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1PF00_portfolio-system-and-weekly-lessons"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1792790639,
+   "created": 1792790639
   },
   {
    "id": "P1FS12_remote-viewer-one-screen",
@@ -346,6 +347,26 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908660,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P1LW03_lot-waits-first-minute-v2",
+   "request": "The Lot Waits: a new first minute that shows both costs in three steps",
+   "game": "The Lot Waits",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "first-minute",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1LW02_lot-waits-day-strip-and-trust"
+   ],
+   "priority": "P2",
+   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792915317,
    "estPercentOfWeek": 0.25
   },
   {
@@ -646,25 +667,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792894303
-  },
-  {
-   "id": "P2PF01_board-portfolio-view",
-   "request": "A Portfolio view on the studio board: how many ideas and games sit in each lane against its cap, and what gets built next",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1PF00_portfolio-system-and-weekly-lessons"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792790639
   },
   {
    "id": "P2UX04_release-check-sweep-all-games",
@@ -1045,28 +1047,6 @@
     "P3SV54_glasshouse-merge-save-tests"
    ],
    "created": 1792908813,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P1LW03_lot-waits-first-minute-v2",
-   "request": "The Lot Waits: a new first minute that shows both costs in three steps",
-   "game": "The Lot Waits",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1LW02_lot-waits-day-strip-and-trust"
-   ],
-   "priority": "P2",
-   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1LW02_lot-waits-day-strip-and-trust"
-   ],
-   "created": 1792862528,
    "estPercentOfWeek": 0.25
   },
   {
@@ -1709,6 +1689,24 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P1LW02_lot-waits-day-strip-and-trust",
+   "request": "The Lot Waits: a seven-day strip, each lot's good days marked under it, and a trust number that moves",
+   "game": "The Lot Waits",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
+   "state": "done",
+   "at": 1792895380,
+   "created": 1792895380,
+   "wasCodex": true
+  },
+  {
    "id": "P1LW05_fix-lit-target-refused",
    "request": "P1LW05_fix lit target refused",
    "game": "The Lot Waits",
@@ -1741,6 +1739,23 @@
    "state": "done",
    "at": 1792891311,
    "created": 1792891311
+  },
+  {
+   "id": "P3OR91_lot-waits-tap-roundtrip-test",
+   "request": "Lot Waits: a test that every solver move's tap point lands on the board and maps back to the same move",
+   "game": "The Lot Waits",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
+   "state": "done",
+   "at": 1792915316,
+   "created": 1792915316
   },
   {
    "id": "P1DS00_destinations-study",
