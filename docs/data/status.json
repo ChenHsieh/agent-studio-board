@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T03:05:12+00:00",
+ "generated": "2026-10-25T03:07:38+00:00",
  "ops": {
-  "count": 34,
+  "count": 32,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -28,14 +28,14 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
+    "running": 3,
     "doneToday": 89,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "minutes": 240,
+    "estimateMinutes": 120
    }
   },
   "queued": 73,
-  "running": 2,
+  "running": 3,
   "doneToday": 92,
   "lanes": {
    "Codex": 1,
@@ -46,8 +46,8 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3060,
-  "estimatedFinish": "2026-10-27T03:05:12+00:00",
+  "minutesRemaining": 3120,
+  "estimatedFinish": "2026-10-27T03:07:38+00:00",
   "estimateMinutes": 2880
  },
  "lanes": [
@@ -66,11 +66,19 @@
    "since": "2026-10-25T02:56:05+00:00",
    "activity": "2026-10-25T02:57:33+00:00",
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P2PL06_rollout judgment rows",
+   "since": null,
+   "activity": null,
+   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
- "apiSpentUsd": 318.94,
+ "claudeWorkers": 3,
+ "apiSpentUsd": 319.0,
  "claudeInSession": {
   "runs": 288,
   "usdEst": 1036.8,
@@ -30300,7 +30308,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Walls Have Ears: bring the top bar test...",
    "costTotalUsd": 133.56,
    "latestChange": {
     "text": "One screen: room name and counts above the board, a new goal sentence, the result as a...",
@@ -30316,21 +30324,21 @@
    "why": "A joke about a bugged hotel room where asking the wall for tea brings tea, plus a photo of an anechoic chamber.",
    "state": "released",
    "stateFlags": {
-    "refining": false,
+    "refining": true,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "none",
+   "waitingOn": "walls topbar test no hub",
    "id": "walls-have-ears",
    "number": 57,
    "repo": "walls-have-ears",
    "title": "Walls Have Ears",
    "line": "Wish for tea and find which piece is listening.",
    "url": "https://chenhsieh.github.io/walls-have-ears/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Hotel key-cabinet level grid grouped by mechanism, and a",
    "shelfNote": "",
@@ -30344,7 +30352,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T19:49:23+00:00",
-   "lastChange": "2026-10-25T02:53:29+00:00",
+   "lastChange": "2026-10-25T03:07:33+00:00",
    "cost": {
     "apiUsd": 17.73,
     "codexRuns": 3,
@@ -30358,6 +30366,20 @@
     "totalUsdEst": 133.56
    },
    "tasks": [
+    {
+     "title": "P3OR81_walls topbar test no hub",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Walls Have Ears: bring the top bar test in line with the no-hub rule",
+     "since": "2026-10-25T03:07:33+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1FS09_walls have ears one screen",
      "state": "done",
@@ -30455,24 +30477,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Long stay rules are built and measured, not in the UI and not published. main is untouched."
-    },
-    {
-     "title": "walls longstay play",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "Walls Have Ears: long stay screens, a scripted first stay that teaches it night by night, a result card and a share line, daily and endless.",
-     "since": "2026-10-20T05:19:12+00:00",
-     "done": "2026-10-20T05:19:12+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Long stay is live in Walls Have Ears: https://chenhsieh.github.io/walls-have-ears/ commit (also carries P1a32's rules and rooms). Menu entry sits after the street chapter with a picture of a crowded room."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 16
@@ -30483,7 +30491,7 @@
     "note": "Chapter 2 rebuilt; ready to ship"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T02:53:29+00:00",

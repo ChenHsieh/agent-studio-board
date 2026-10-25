@@ -1,18 +1,20 @@
 {
- "generated": 1792897524,
+ "generated": 1792897669,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
-  "ready": 0,
+  "ready": 1,
   "waiting": 0,
-  "queued": 0,
+  "queued": 1,
   "running": 0,
   "done24h": 14,
-  "modelsQueued": {},
-  "spendTodayUsd": 8.02,
-  "runsToday": 172,
+  "modelsQueued": {
+   "openai/gpt-4.1": 1
+  },
+  "spendTodayUsd": 8.08,
+  "runsToday": 173,
   "runsTodayUnpriced": 14,
-  "spendTotalUsd": 14.38,
+  "spendTotalUsd": 14.44,
   "recent": [
    {
     "id": "",
@@ -121,6 +123,25 @@
    "state": "running",
    "at": 1792894198,
    "created": 1792894198
+  },
+  {
+   "id": "P2PL06_rollout-judgment-rows",
+   "request": "Finish the Why this exists rollout on the games whose own tests or page check stopped it",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1PL05_why-and-no-hub-rollout"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1792883805,
+   "created": 1792883805
   },
   {
    "id": "P1CF05_reset-tests-and-review",
@@ -524,6 +545,23 @@
    "created": 1792834247
   },
   {
+   "id": "P3OR81_walls-topbar-test-no-hub",
+   "request": "Walls Have Ears: bring the top bar test in line with the no-hub rule",
+   "game": "Walls Have Ears",
+   "route": "OpenRouter",
+   "model": "openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A joke about a bugged hotel room where asking the wall for tea brings tea, plus a photo of an anechoic chamber.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792897653
+  },
+  {
    "id": "P1LW02_lot-waits-day-strip-and-trust",
    "request": "The Lot Waits: a seven-day strip, each lot's good days marked under it, and a trust number that moves",
    "game": "The Lot Waits",
@@ -804,25 +842,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792790639
-  },
-  {
-   "id": "P2PL06_rollout-judgment-rows",
-   "request": "Finish the Why this exists rollout on the games whose own tests or page check stopped it",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1PL05_why-and-no-hub-rollout"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792883805
   },
   {
    "id": "P2RJT00_rumour-on-the-jetty",
