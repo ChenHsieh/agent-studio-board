@@ -3,8 +3,8 @@
   {
    "executor": "aider openrouter/deepseek/deepseek-v4-flash",
    "role": "build",
-   "count": 57,
-   "firstTimePass": 95,
+   "count": 58,
+   "firstTimePass": 93,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
@@ -504,6 +504,15 @@
  "last": [
   {
    "date": "2026-10-25",
+   "task": "kit best possible words",
+   "number": "",
+   "executor": "aider openrouter/deepseek/deepseek-v4-flash",
+   "role": "build",
+   "passed": "no",
+   "note": ""
+  },
+  {
+   "date": "2026-10-25",
    "task": "lot waits tap roundtrip test",
    "number": "121",
    "executor": "aider openrouter/deepseek/deepseek-v4-flash",
@@ -672,15 +681,6 @@
    "role": "build",
    "passed": "yes",
    "note": "P2MC03 result (Sonnet). Published to makeshift-chair main cdc6f0a; only docs/3d/ and test/ changed (the 2D game is untouched); live bytes ma"
-  },
-  {
-   "date": "2026-10-25",
-   "task": "which one to drop clarity",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "P2HK00 result (Sonnet). Published to hit-or-kit main 6a07eb0; live bytes match (game.js, game.css, index.html); live page at 390x844 and 320"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
