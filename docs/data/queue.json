@@ -1,5 +1,5 @@
 {
- "generated": 1792923668,
+ "generated": 1792959322,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -7,7 +7,7 @@
   "waiting": 0,
   "queued": 0,
   "running": 0,
-  "done24h": 14,
+  "done24h": 12,
   "modelsQueued": {},
   "spendTodayUsd": 0.57,
   "runsToday": 15,
@@ -16,61 +16,61 @@
   "recent": [
    {
     "id": "P3OR91_lot-waits-tap-roundtrip-test",
-    "request": "Lot Waits: a test that every solver move's tap point lands on the board and maps back to the same move",
+    "request": "P3OR91_lot waits tap roundtrip test",
     "model": "deepseek-v4-flash",
     "at": 1792915316
    },
    {
     "id": "P3OR90_marble-daily-pins-test",
-    "request": "Marble Machine: a test that the stored daily pins rebuild the same machine as the search",
+    "request": "P3OR90_marble daily pins test",
     "model": "deepseek-v4-flash",
     "at": 1792913779
    },
    {
     "id": "P3OR89_marble-act-three-lessons",
-    "request": "Marble Machine: one short lesson card per act-three piece (seesaw, belt, cup, wheel, flap, dominoes)",
+    "request": "P3OR89_marble act three lessons",
     "model": "openai/gpt-4.1",
     "at": 1792912996
    },
    {
     "id": "P3OR88_marble-share-text",
-    "request": "Marble Machine: the share line for a finished tune (name, notes on the beat, par, date, link), as a small tested function",
+    "request": "P3OR88_marble share text",
     "model": "openai/gpt-4.1",
     "at": 1792911890
    },
    {
     "id": "P3OR83_glasshouse-save-settings-test",
-    "request": "Glasshouse: a test that broken or old settings saves fall back to defaults (OpenRouter lane)",
+    "request": "P3OR83_glasshouse save settings test",
     "model": "openai/gpt-4.1",
     "at": 1792909447
    },
    {
     "id": "P3OR87_grad-survivor-save-test",
-    "request": "UGA Grad Survivor: a test that the long-term save and the run in progress load safely (OpenRouter lane)",
+    "request": "P3OR87_grad survivor save test",
     "model": "deepseek-v4-flash",
     "at": 1792908650
    },
    {
     "id": "P3OR86_redacxiv-tile-save-test",
-    "request": "Redacxiv: a test that tile-mode saves and the archive list read old saves (OpenRouter lane)",
+    "request": "P3OR86_redacxiv tile save test",
     "model": "deepseek-v4-flash",
     "at": 1792908641
    },
    {
     "id": "P3OR85_redacxiv-save-migration-test",
-    "request": "Redacxiv: a test that old saves (streak, mode, day state) carry over after the rename (OpenRouter lane)",
+    "request": "P3OR85_redacxiv save migration test",
     "model": "deepseek-v4-flash",
     "at": 1792908637
    },
    {
     "id": "P3OR84_glasshouse-crew-save-test",
-    "request": "Glasshouse: a test that the collected crew survives the save format change (OpenRouter lane)",
+    "request": "P3OR84_glasshouse crew save test",
     "model": "deepseek-v4-flash",
     "at": 1792908628
    },
    {
     "id": "P3OR82_glasshouse-save-migration-test",
-    "request": "Glasshouse: a test that proves old saves carry over after the rename (OpenRouter lane)",
+    "request": "P3OR82_glasshouse save migration test",
     "model": "deepseek-v4-flash",
     "at": 1792908619
    }
@@ -78,7 +78,7 @@
   "label": "estimate"
  },
  "overflow": {
-  "codexOut": true,
+  "codexOut": false,
   "converted": 0,
   "convertedRunning": 0,
   "claudeWorkers": 0,
@@ -88,40 +88,6 @@
   "lastHandBackN": 5
  },
  "tasks": [
-  {
-   "id": "P1FS32_tree-hero-one-screen",
-   "request": "tree-hero: the whole game fits one phone screen and Next shows after a win",
-   "game": "Tree Hero",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "Fitch maximum-parsimony phylogenetics; swap branches of a seven-species tree until it needs the fewest evolutionary changes; no timeline, undo is free.",
-   "state": "running",
-   "at": 1792922082,
-   "created": 1792922082
-  },
-  {
-   "id": "P1FS33_dynasty-guess-one-screen",
-   "request": "dynasty-guess: the whole game fits one phone screen and Next shows after a win",
-   "game": "Dynasty Guess",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "Open collection records of National Palace Museum objects; read material, form, glaze and wear on one real object and guess its period.",
-   "state": "running",
-   "at": 1792922087,
-   "created": 1792922087
-  },
   {
    "id": "P1CC38_fix-failing-browser-tests",
    "request": "P1CC38_fix failing browser tests",
@@ -140,6 +106,23 @@
    "created": 1792919801
   },
   {
+   "id": "P1FS34_honest-sign-one-screen",
+   "request": "honest-sign: the whole game fits one phone screen and Next shows after a win",
+   "game": "Honest Sign",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "A seven-segment sign must state how many bars it lights, so every correction changes what it corrects; copying the meter loops on about half the signs.",
+   "state": "running",
+   "at": 1792922092,
+   "created": 1792922092
+  },
+  {
    "id": "P3CF07_flaky-320-today-drag",
    "request": "Make the 320-wide page check stop failing at random on today's dish",
    "game": "What the Dish Sees",
@@ -155,7 +138,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792907830,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL10_tree-hero-why-rollout",
@@ -173,7 +156,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL15_flying-white-why-rollout",
@@ -193,7 +176,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL16_readable-nonsense-why-rollout",
@@ -213,7 +196,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3SV54_glasshouse-merge-save-tests",
@@ -235,7 +218,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908660,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2FS36_copy-paste-win-sheet-tests",
@@ -748,7 +731,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792791317,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2PS00_pigeon-salon-readable-board",
@@ -768,7 +751,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713005,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2RO00_radish-omelette-colours-and-beats",
@@ -788,7 +771,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713431,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2RS00_restored-blurry-neighbours-count",
@@ -808,7 +791,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792715918,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3NY00_not-yet-a-real-choice",
@@ -828,7 +811,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713432,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3OR45_herbal-pages-stay-open-logic",
@@ -846,7 +829,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792724295,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL08_refusal-detour-why-rollout",
@@ -864,7 +847,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL12_name-to-carry-why-rollout",
@@ -882,7 +865,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL14_speaking-stone-why-rollout",
@@ -900,7 +883,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL17_metagenome-profilers-why-build",
@@ -918,7 +901,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908804,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL07_gallery-guess-why-rollout",
@@ -936,7 +919,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL09_the-zipper-why-rollout",
@@ -954,7 +937,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL11_machine-rhythm-why-rollout",
@@ -972,7 +955,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL18_silva-to-maaslin2-why-build",
@@ -990,7 +973,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908809,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3d35_lens-screen-studio-320-fix",
@@ -1008,24 +991,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792701959,
-   "estPercentOfWeek": 35.77
-  },
-  {
-   "id": "P1FS34_honest-sign-one-screen",
-   "request": "honest-sign: the whole game fits one phone screen and Next shows after a win",
-   "game": "Honest Sign",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "A seven-segment sign must state how many bars it lights, so every correction changes what it corrects; copying the meter loops on about half the signs.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792922092
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P1FS35_mint-one-screen",
@@ -1117,7 +1083,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792907965,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2n88_watched-pot",
@@ -1137,7 +1103,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792907965,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2n89_round-table",
@@ -1157,7 +1123,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792907965,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2n90_iron-window-garden",
@@ -1177,7 +1143,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792907965,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2n91_still-a-heap",
@@ -1197,7 +1163,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792919797,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2n92_out-of-the-corner",
@@ -1217,7 +1183,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792919797,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2n93_one-umbrella",
@@ -1237,7 +1203,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792919797,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2n94_rolling-back",
@@ -1257,7 +1223,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792919797,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2n95_gold-star",
@@ -1277,7 +1243,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792907965,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2n96_ac-remote",
@@ -1297,7 +1263,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792907965,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3OR44_kit-win-hold-and-higher-is-better",
@@ -1315,7 +1281,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792724493,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL13_dancers-not-mad-why-rollout",
@@ -1333,7 +1299,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3SV55_redacxiv-merge-save-tests",
@@ -1354,7 +1320,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908660,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3SV56_grad-survivor-merge-save-test",
@@ -1374,7 +1340,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908660,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2AX18_kit-fit-rollout-the-apprentice",
@@ -1396,7 +1362,7 @@
     "P1AX12_kit-new-rule-and-short-screen-fit"
    ],
    "created": 1792841709,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL19_glasshouse-why-build",
@@ -1418,7 +1384,7 @@
     "P3SV54_glasshouse-merge-save-tests"
    ],
    "created": 1792908813,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2FS37_copy-paste-one-screen",
@@ -1524,7 +1490,7 @@
     "P3OR45_herbal-pages-stay-open-logic"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2AX16_kit-fit-rollout-rumour-on-the-jetty",
@@ -1588,7 +1554,7 @@
     "P3OR44_kit-win-hold-and-higher-is-better"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2UX08_daily-brief-first-screen",
@@ -1728,344 +1694,6 @@
    "created": 1792700696
   },
   {
-   "id": "P1CF06_review-fixes-story-and-notes",
-   "request": "What the Dish Sees",
-   "game": "What the Dish Sees",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "An essay arguing neural network features are already clean, and a petri-dish video of something first taken for ordinary bacteria.",
-   "state": "done",
-   "at": 1792900986,
-   "created": 1792900986
-  },
-  {
-   "id": "P1FS09_walls-have-ears-one-screen",
-   "request": "walls-have-ears: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "Walls Have Ears",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A joke about a bugged hotel room where asking the wall for tea brings tea, plus a photo of an anechoic chamber.",
-   "state": "done",
-   "at": 1792894189,
-   "created": 1792894189
-  },
-  {
-   "id": "P1FS10_grass-crossword-one-screen",
-   "request": "grass-crossword: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "Grass Crossword",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A conceptual artwork from 2002: a newspaper crossword with every square green and every answer written as GRASS.",
-   "state": "done",
-   "at": 1792894194,
-   "created": 1792894194
-  },
-  {
-   "id": "P1FS11_forager-one-screen",
-   "request": "forager: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "Forager",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "Now The Forager: drag berries so a bird that always flies to the closest berry takes a much longer trip than the shortest round trip.",
-   "state": "done",
-   "at": 1792894198,
-   "created": 1792894198
-  },
-  {
-   "id": "P1FS14_cymatic-plate-one-screen",
-   "request": "cymatic-plate: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "Cymatic Plate",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "Chladni figures on a vibrating plate and a post of dye moving on vibrating milk.",
-   "state": "done",
-   "at": 1792911809,
-   "created": 1792911809,
-   "wasCodex": true
-  },
-  {
-   "id": "P1FS15_directory-handrail-one-screen",
-   "request": "directory-handrail: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "Signposts",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A screenshot of a directory that links to other design directories.",
-   "state": "done",
-   "at": 1792911809,
-   "created": 1792911809,
-   "wasCodex": true
-  },
-  {
-   "id": "P1FS16_colony-count-one-screen",
-   "request": "colony-count: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "Colony Count",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "An ad for a three-colour sweeper puzzle (ColorSweeper).",
-   "state": "done",
-   "at": 1792911786,
-   "created": 1792911786,
-   "wasCodex": true
-  },
-  {
-   "id": "P1FS17_gif-cities-one-screen",
-   "request": "gif-cities: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "GIF Cities",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "An Internet Archive reel on GifCities, its search engine of rescued GeoCities GIFs.",
-   "state": "done",
-   "at": 1792914873,
-   "created": 1792914873,
-   "wasCodex": true
-  },
-  {
-   "id": "P1FS18_drawing-circles-one-screen",
-   "request": "drawing-circles: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "Drawing Circles",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A post of a pelican on a bike drawn by 73 stacked spinning circles, credited to an AI demo.",
-   "state": "done",
-   "at": 1792914815,
-   "created": 1792914815,
-   "estPercentOfWeek": 35.77
-  },
-  {
-   "id": "P1FS19_chai-boil-one-screen",
-   "request": "chai-boil: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "Chai Boil",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "An AI-made video post of a pot of milk tea foaming up on a wood fire, plus the Lunar Lander game.",
-   "state": "done",
-   "at": 1792907210,
-   "created": 1792907210,
-   "wasCodex": true
-  },
-  {
-   "id": "P1FS20_clean-features-one-screen",
-   "request": "clean-features: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "What the Dish Sees",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "An essay arguing neural network features are already clean, and a petri-dish video of something first taken for ordinary bacteria.",
-   "state": "done",
-   "at": 1792907210,
-   "created": 1792907210,
-   "wasCodex": true
-  },
-  {
-   "id": "P1FS21_peony-dream-one-screen",
-   "request": "peony-dream: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "Peony Dream",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "The classical play The Peony Pavilion (1598) and a saved essay note on love found in a dream.",
-   "state": "done",
-   "at": 1792907210,
-   "created": 1792907210,
-   "wasCodex": true
-  },
-  {
-   "id": "P1FS22_sockglass-one-screen",
-   "request": "sockglass: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "Sockglass",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
-   "state": "done",
-   "at": 1792907210,
-   "created": 1792907210,
-   "wasCodex": true
-  },
-  {
-   "id": "P1FS23_readable-nonsense-one-screen",
-   "request": "readable-nonsense: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "阿嬤讀得出來",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
-   "state": "done",
-   "at": 1792903312,
-   "created": 1792903312,
-   "wasCodex": true
-  },
-  {
-   "id": "P1FS24_thumb-stand-one-screen",
-   "request": "thumb-stand: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "Thumb Stand",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "Martial-arts manga panels of impossible one-thumb handstands and poses.",
-   "state": "done",
-   "at": 1792907210,
-   "created": 1792907210,
-   "wasCodex": true
-  },
-  {
-   "id": "P1FS25_mirror-hold-one-screen",
-   "request": "mirror-hold: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "Mirror Hold",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "Manga panels of a sumo wrestler before a mirror and a hand scooping Edo-period hair wax from a red tin.",
-   "state": "done",
-   "at": 1792903312,
-   "created": 1792903312,
-   "wasCodex": true
-  },
-  {
-   "id": "P1FS26_mushroom-gaps-one-screen",
-   "request": "mushroom-gaps: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "Mushroom at the End",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "An anthropology trivia post about a book on matsutake mushrooms growing in the ruins of industry.",
-   "state": "done",
-   "at": 1792907210,
-   "created": 1792907210,
-   "wasCodex": true
-  },
-  {
-   "id": "P1FS27_the-apprentice-one-screen",
-   "request": "the-apprentice: one phone screen through the kit, Next on screen after a win",
-   "game": "The Apprentice",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A viral second-person court scene where a cherished dancer draws a blade, recast in a reply as the orphan her ruler secretly raised.",
-   "state": "done",
-   "at": 1792914815,
-   "created": 1792914815,
-   "estPercentOfWeek": 35.77
-  },
-  {
-   "id": "P1FS28_even-water-one-screen",
-   "request": "even-water: one phone screen through the kit, Next on screen after a win",
-   "game": "Even Water",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A water board game flooded in a tank, and a thread worrying that a public study-abroad fund flows to those already ahead.",
-   "state": "done",
-   "at": 1792914815,
-   "created": 1792914815,
-   "estPercentOfWeek": 35.77
-  },
-  {
    "id": "P1FS29_pinch-points-one-screen",
    "request": "pinch-points: one phone screen through the kit, Next on screen after a win",
    "game": "Pinch Points",
@@ -2084,9 +1712,9 @@
    "wasCodex": true
   },
   {
-   "id": "P1FS30_flying-white-one-screen",
-   "request": "flying-white: one phone screen through the kit, Next on screen after a win",
-   "game": "Flying White",
+   "id": "P1FS32_tree-hero-one-screen",
+   "request": "tree-hero: the whole game fits one phone screen and Next shows after a win",
+   "game": "Tree Hero",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
@@ -2095,117 +1723,27 @@
    "estMinutes": null,
    "after": [],
    "priority": "P1",
-   "why": "A commentary on a 2002 martial-arts film that tells one story three ways, where the character for sword is written 19 ways.",
+   "why": "Fitch maximum-parsimony phylogenetics; swap branches of a seven-species tree until it needs the fewest evolutionary changes; no timeline, undo is free.",
    "state": "done",
-   "at": 1792914873,
-   "created": 1792914873,
-   "wasCodex": true
+   "at": 1792922082,
+   "created": 1792922082
   },
   {
-   "id": "P1PP03_pinch-points-strategy-card-and-daily",
-   "request": "Pinch Points: a rule card before level 1, a hint per level, the rule on the result card, a better daily and share line",
-   "game": "Pinch Points",
+   "id": "P1FS33_dynasty-guess-one-screen",
+   "request": "dynasty-guess: the whole game fits one phone screen and Next shows after a win",
+   "game": "Dynasty Guess",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
    "kind": "build",
    "size": "several repos",
    "estMinutes": null,
-   "after": [
-    "P1PP02_pinch-points-show-the-movement"
-   ],
-   "priority": "P1",
-   "why": "A graphics-paper figure of a statue flattened two ways, and an old woodblock page of a perforated scholar's stone.",
-   "state": "done",
-   "at": 1792895380,
-   "created": 1792895380,
-   "wasCodex": true
-  },
-  {
-   "id": "P3OR81_walls-topbar-test-no-hub",
-   "request": "Walls Have Ears: bring the top bar test in line with the no-hub rule",
-   "game": "Walls Have Ears",
-   "route": "OpenRouter",
-   "model": "openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
    "after": [],
    "priority": "P1",
-   "why": "A joke about a bugged hotel room where asking the wall for tea brings tea, plus a photo of an anechoic chamber.",
+   "why": "Open collection records of National Palace Museum objects; read material, form, glaze and wear on one real object and guess its period.",
    "state": "done",
-   "at": 1792897653,
-   "created": 1792897653
-  },
-  {
-   "id": "P3OR82_glasshouse-save-migration-test",
-   "request": "Glasshouse: a test that proves old saves carry over after the rename (OpenRouter lane)",
-   "game": "Glasshouse",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
-   "state": "done",
-   "at": 1792908619,
-   "created": 1792908619
-  },
-  {
-   "id": "P3OR83_glasshouse-save-settings-test",
-   "request": "Glasshouse: a test that broken or old settings saves fall back to defaults (OpenRouter lane)",
-   "game": "Glasshouse",
-   "route": "OpenRouter",
-   "model": "openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
-   "state": "done",
-   "at": 1792909447,
-   "created": 1792909447
-  },
-  {
-   "id": "P3OR84_glasshouse-crew-save-test",
-   "request": "Glasshouse: a test that the collected crew survives the save format change (OpenRouter lane)",
-   "game": "Glasshouse",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
-   "state": "done",
-   "at": 1792908628,
-   "created": 1792908628
-  },
-  {
-   "id": "P1LW02_lot-waits-day-strip-and-trust",
-   "request": "The Lot Waits: a seven-day strip, each lot's good days marked under it, and a trust number that moves",
-   "game": "The Lot Waits",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
-   "state": "done",
-   "at": 1792895380,
-   "created": 1792895380,
-   "wasCodex": true
+   "at": 1792922087,
+   "created": 1792922087
   },
   {
    "id": "P1LW03_lot-waits-first-minute-v2",
@@ -2225,169 +1763,7 @@
    "state": "done",
    "at": 1792919797,
    "created": 1792919797,
-   "estPercentOfWeek": 35.77
-  },
-  {
-   "id": "P2BN07_fix-couplet-first-minute",
-   "request": "Blackout Notice: teach the couplet game in the first minute and explain the reveal",
-   "game": "Blackout Notice",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "A scruffy hand-lettered hiring post and a job ad written mostly as a list of what the company is not.",
-   "state": "done",
-   "at": 1792891311,
-   "created": 1792891311
-  },
-  {
-   "id": "P3OR91_lot-waits-tap-roundtrip-test",
-   "request": "Lot Waits: a test that every solver move's tap point lands on the board and maps back to the same move",
-   "game": "The Lot Waits",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
-   "state": "done",
-   "at": 1792915316,
-   "created": 1792915316
-  },
-  {
-   "id": "P1DS00_destinations-study",
-   "request": "P1DS00_destinations study",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792903163,
-   "created": 1792903163
-  },
-  {
-   "id": "P1FS02_forager-one-screen",
-   "request": "P1FS02_forager one screen",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1FS05_next-prompt-and-canvas-scroll"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792885662,
-   "created": 1792885662
-  },
-  {
-   "id": "P1FS03_flagships-one-screen",
-   "request": "P1FS03_flagships one screen",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1FS05_next-prompt-and-canvas-scroll"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792888748,
-   "created": 1792888748
-  },
-  {
-   "id": "P1FS05_next-prompt-and-canvas-scroll",
-   "request": "P1FS05_next prompt and canvas scroll",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1FS06_one-screen-ux-study"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792890142,
-   "created": 1792890142
-  },
-  {
-   "id": "P1FS06_one-screen-ux-study",
-   "request": "P1FS06_one screen ux study",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792885748,
-   "created": 1792885748
-  },
-  {
-   "id": "P1FS07_one-screen-by-construction",
-   "request": "P1FS07_one screen by construction",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1FS06_one-screen-ux-study"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792888748,
-   "created": 1792888748
-  },
-  {
-   "id": "P1FS13_redacxiv-one-screen",
-   "request": "redacxiv: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "Redacxiv",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "The word game Redactle, with real open-access biology papers; guess words to unblank a hidden paper's title and abstract; decoys come from other papers.",
-   "state": "done",
-   "at": 1792911809,
-   "created": 1792911809,
-   "wasCodex": true
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P1FS31_kit21-short-phone-top-bar",
@@ -2407,292 +1783,6 @@
    "created": 1792922291
   },
   {
-   "id": "P1MM04_marble-act-two-look-and-lessons",
-   "request": "Marble Machine: the new pieces drawn as solid objects, one short lesson each",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1MM03_marble-mechanisms-act-two"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792908841,
-   "created": 1792908841
-  },
-  {
-   "id": "P1MM05_marble-mechanisms-act-three",
-   "request": "Marble Machine: second marble, seesaw, belt, cup, wheel, flap and dominoes",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1MM04_marble-act-two-look-and-lessons"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792909763,
-   "created": 1792909763
-  },
-  {
-   "id": "P1MM06_marble-act-three-look-daily-share",
-   "request": "Marble Machine: act-three look and lessons, a daily machine and its share line",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1MM05_marble-mechanisms-act-three"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792912427,
-   "created": 1792912427
-  },
-  {
-   "id": "P1ZM00_no-accidental-zoom-all-games",
-   "request": "P1ZM00_no accidental zoom all games",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1TE07_touch-responsive-no-zoom"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792885818,
-   "created": 1792885818
-  },
-  {
-   "id": "P2FS04_one-screen-rollout-rest",
-   "request": "One screen on phones for every remaining game: a scripted run per game pins the win card to the bottom with Next first and lets a swipe on the board scroll the page; games that need a text or layout cut are listed for a...",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "medium",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1FS03_flagships-one-screen"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792894303,
-   "created": 1792894303
-  },
-  {
-   "id": "P2FS08_onescreen-mocks-opus-stranger",
-   "request": "A fresh reviewer checks the one-screen mock screens as a stranger",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "medium",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792888763,
-   "created": 1792888763
-  },
-  {
-   "id": "P2PL06_rollout-judgment-rows",
-   "request": "Finish the Why this exists rollout on the games whose own tests or page check stopped it",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1PL05_why-and-no-hub-rollout"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792883805,
-   "created": 1792883805
-  },
-  {
-   "id": "P2PR00_promptuary-call-scoping",
-   "request": "P2PR00_promptuary call scoping",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "medium",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792902550,
-   "created": 1792902550
-  },
-  {
-   "id": "P2PR01_colony-count-print-and-play",
-   "request": "P2PR01_colony count print and play",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2PR00_promptuary-call-scoping"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792904966,
-   "created": 1792904966
-  },
-  {
-   "id": "",
-   "request": "play-template: a test proves the board-swipe drop-in scrolls the page",
-   "game": "Studio",
-   "route": "OpenRouter",
-   "model": "openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792894333,
-   "created": 1792894333
-  },
-  {
-   "id": "P3OR85_redacxiv-save-migration-test",
-   "request": "Redacxiv: a test that old saves (streak, mode, day state) carry over after the rename (OpenRouter lane)",
-   "game": "Redacxiv",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "The word game Redactle, with real open-access biology papers; guess words to unblank a hidden paper's title and abstract; decoys come from other papers.",
-   "state": "done",
-   "at": 1792908637,
-   "created": 1792908637
-  },
-  {
-   "id": "P3OR86_redacxiv-tile-save-test",
-   "request": "Redacxiv: a test that tile-mode saves and the archive list read old saves (OpenRouter lane)",
-   "game": "Redacxiv",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "The word game Redactle, with real open-access biology papers; guess words to unblank a hidden paper's title and abstract; decoys come from other papers.",
-   "state": "done",
-   "at": 1792908641,
-   "created": 1792908641
-  },
-  {
-   "id": "P3OR87_grad-survivor-save-test",
-   "request": "UGA Grad Survivor: a test that the long-term save and the run in progress load safely (OpenRouter lane)",
-   "game": "UGA Grad Survivor",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "Life as a bioinformatics PhD student at UGA, told in the swipe-card style of Reigns.",
-   "state": "done",
-   "at": 1792908650,
-   "created": 1792908650
-  },
-  {
-   "id": "P3OR88_marble-share-text",
-   "request": "Marble Machine: the share line for a finished tune (name, notes on the beat, par, date, link), as a small tested function",
-   "game": "Studio",
-   "route": "OpenRouter",
-   "model": "openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792911890,
-   "created": 1792911890
-  },
-  {
-   "id": "P3OR89_marble-act-three-lessons",
-   "request": "Marble Machine: one short lesson card per act-three piece (seesaw, belt, cup, wheel, flap, dominoes)",
-   "game": "Studio",
-   "route": "OpenRouter",
-   "model": "openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792912996,
-   "created": 1792912996
-  },
-  {
-   "id": "P3OR90_marble-daily-pins-test",
-   "request": "Marble Machine: a test that the stored daily pins rebuild the same machine as the search",
-   "game": "Studio",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1792913779,
-   "created": 1792913779
-  },
-  {
    "id": "P3OR92_kit-best-possible-words",
    "request": "Game kit: games where a higher score is better say 'best possible', not 'fewest possible', on the result card",
    "game": "Studio",
@@ -2708,7 +1798,7 @@
    "state": "done",
    "at": 1792916306,
    "created": 1792916306,
-   "estPercentOfWeek": 35.77
+   "estPercentOfWeek": 0.25
   }
  ]
 }

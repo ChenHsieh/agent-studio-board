@@ -1,14 +1,14 @@
 {
- "generated": "2026-10-25T10:25:34+00:00",
+ "generated": "2026-10-25T10:27:53+00:00",
  "ops": {
-  "count": 1,
+  "count": null,
   "notes": [
-   "A game changed in the last hour with no claimed task on it."
+   "Queue check has not run in the last hour."
   ],
   "info": []
  },
  "about": [
-  "A game changed in the last hour with no claimed task on it."
+  "Queue check has not run in the last hour."
  ],
  "project": {
   "name": "Game studio",
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 84,
+    "queued": 83,
     "running": 0,
     "doneToday": 7,
-    "minutes": 3360,
-    "estimateMinutes": 3360
+    "minutes": 3320,
+    "estimateMinutes": 3320
    },
    "Claude": {
     "queued": 1,
-    "running": 3,
-    "doneToday": 33,
-    "minutes": 240,
-    "estimateMinutes": 120
+    "running": 2,
+    "doneToday": 35,
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
-  "queued": 85,
-  "running": 3,
-  "doneToday": 40,
+  "queued": 84,
+  "running": 2,
+  "doneToday": 42,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3600,
-  "estimatedFinish": "2026-10-27T18:25:34+00:00",
-  "estimateMinutes": 3360
+  "minutesRemaining": 3500,
+  "estimatedFinish": "2026-10-27T17:47:53+00:00",
+  "estimateMinutes": 3320
  },
  "lanes": [
   {
@@ -61,23 +61,15 @@
   },
   {
    "worker": "Claude",
-   "game": "tree-hero",
-   "task": "P1FS32_tree hero one screen",
-   "since": "2026-10-25T10:05:17+00:00",
-   "activity": "2026-10-25T10:15:28+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "dynasty-guess",
-   "task": "P1FS33_dynasty guess one screen",
-   "since": "2026-10-25T10:19:28+00:00",
-   "activity": "2026-10-25T10:25:03+00:00",
+   "game": "honest-sign",
+   "task": "P1FS34_honest sign one screen",
+   "since": "2026-10-25T10:26:45+00:00",
+   "activity": "2026-10-25T10:26:46+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 3,
+ "claudeWorkers": 2,
  "apiSpentUsd": 320.27,
  "claudeInSession": {
   "runs": 288,
@@ -5750,28 +5742,28 @@
    "nextTask": null,
    "costTotalUsd": 66.1,
    "latestChange": {
-    "text": "No accidental zoom on phones:",
-    "at": "2026-10-25T02:23:29+00:00"
+    "text": "One screen: first-minute screen leaves room for the page's bottom padding (page was 12 px...",
+    "at": "2026-10-25T10:25:03+00:00"
    },
    "promo": null,
    "why": "Open collection records of National Palace Museum objects; read material, form, glaze and wear on one real object and guess its period.",
    "state": "released",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 2,
     "daysInState": 2
    },
-   "waitingOn": "dynasty guess one screen",
+   "waitingOn": "none",
    "id": "dynasty-guess",
    "number": 50,
    "repo": "dynasty-guess",
    "title": "Dynasty Guess",
    "line": "Place a museum object in its period.",
    "url": "https://chenhsieh.github.io/dynasty-guess/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Fix the missing object, then refine mechanism, story and",
    "shelfNote": "",
@@ -5789,29 +5781,29 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
-    "claudeRuns": 8,
+    "claudeRuns": 9,
     "apiRuns": 2,
     "codexTokens": 1083502,
     "codexUsdEst": 1.3,
-    "claudeUsdEst": 28.8,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
+    "claudeUsdEst": 32.4,
+    "earlierRounds": 9,
+    "earlierUsdEst": 32.4,
     "totalUsdEst": 66.1
    },
    "tasks": [
     {
      "title": "P1FS33_dynasty guess one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "dynasty-guess: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-25T10:19:28+00:00",
-     "done": null,
+     "since": "2026-10-25T09:54:47+00:00",
+     "done": "2026-10-25T09:54:47+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE. Before/after page over screen: 390x844 1.01 (856 px) -> 1.00 (844), 360x640 1.02 (652) -> 1.00 (640). Gate C PASS strict at both sizes on the files and on the live URL; live first-minute.css bytes match."
     },
     {
      "title": "P1DG02_dynasty guess collection shelf bilingual labels",
@@ -5914,9 +5906,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 16
+    "done": 17
    },
    "verdict": {
     "date": "2026-10-22",
@@ -5924,8 +5916,20 @@
     "note": "Big museum pictures, a full-screen viewer and instant flips make the objects a pleasure to look at, but the cabinet outlines the right era for whichever object you pick, so placing is not yet a judgment"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-25T10:25:03+00:00",
+     "ok": true,
+     "note": "One screen: first-minute screen leaves room for the page's bottom padding (page was 12 px over the screen) (P1FS33)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T10:19:31+00:00",
+     "ok": true,
+     "note": "start: P1FS33 dynasty-guess one screen",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T02:23:29+00:00",
      "ok": true,
@@ -5984,18 +5988,6 @@
      "at": "2026-10-22T22:49:40+00:00",
      "ok": true,
      "note": "feat: make dynasty pictures fill the phone",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-22T22:48:36+00:00",
-     "ok": true,
-     "note": "feat: make dynasty pictures fill the phone",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T21:34:59+00:00",
-     "ok": true,
-     "note": "feat: open Dynasty with a playable registrar shelf",
      "source": "board note"
     }
    ]
@@ -11303,7 +11295,7 @@
    ]
   },
   {
-   "nextTask": "honest-sign: the whole game fits one phone screen...",
+   "nextTask": null,
    "costTotalUsd": 50.57,
    "latestChange": {
     "text": "Result sheet says Next level again (kit 20 label fix from play-template )",
@@ -11326,8 +11318,8 @@
    "title": "Honest Sign",
    "line": "",
    "url": "https://chenhsieh.github.io/honest-sign/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -11341,7 +11333,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:32:13+00:00",
-   "lastChange": "2026-10-25T09:54:52+00:00",
+   "lastChange": "2026-10-25T10:26:46+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -11357,10 +11349,10 @@
    "tasks": [
     {
      "title": "P1FS34_honest sign one screen",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "honest-sign: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-25T09:54:52+00:00",
+     "since": "2026-10-25T10:26:45+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -11413,8 +11405,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
@@ -29723,15 +29715,15 @@
     "reviseRound": 1,
     "daysInState": 6
    },
-   "waitingOn": "tree hero one screen",
+   "waitingOn": "tree hero why rollout",
    "id": "tree-hero",
    "number": 11,
    "repo": "tree-hero",
    "title": "Tree Hero",
    "line": "Swap branches until the family tree needs the fewest changes.",
    "url": "https://chenhsieh.github.io/tree-hero/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
@@ -29745,34 +29737,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-25T10:15:28+00:00",
+   "lastChange": "2026-10-25T10:13:59+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 6,
+    "claudeRuns": 7,
     "apiRuns": 0,
     "codexTokens": 155848,
     "codexUsdEst": 0.19,
-    "claudeUsdEst": 21.6,
-    "earlierRounds": 11,
-    "earlierUsdEst": 39.6,
+    "claudeUsdEst": 25.2,
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
     "totalUsdEst": 61.39
    },
    "tasks": [
-    {
-     "title": "P1FS32_tree hero one screen",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "tree-hero: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-25T10:05:17+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P3PL10_tree hero why rollout",
      "state": "queued",
@@ -29786,6 +29764,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1FS32_tree hero one screen",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "tree-hero: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:54:42+00:00",
+     "done": "2026-10-25T09:54:42+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "DONE. Before/after page height over screen height from the gate: 390x844 1.07 -> 1.00 (844/844), 360x640 1.09 -> 1.00 (640/640). Gate C PASS strict at both sizes, on the files and on the live URL; live tree-skin.css..."
     },
     {
      "title": "P1TH04_strings and tests",
@@ -29874,9 +29866,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 7
+    "done": 8
    },
    "verdict": {
     "date": "2026-10-19",
@@ -32238,14 +32230,11 @@
    "url": "https://chenhsieh.github.io/honest-sign/",
    "added": "2026-10-25",
    "try": "Nudge the sign until what it says about itself is true; the first easy nudge gets stuck from level 2",
-   "busy": false,
+   "busy": true,
    "image": null
   }
  ],
- "systemNeeds": [
-  "System needs: 8 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)",
-  "System needs: Released game Cymatic Plate now fails what it passed at release: standard (fix: play it; keep it released or remove its row from board/released.tsv)"
- ],
+ "systemNeeds": [],
  "releaseReady": [],
  "releaseRegressed": [
   "cymatic-plate"
