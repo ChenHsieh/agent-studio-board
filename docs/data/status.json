@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T01:10:53+00:00",
+ "generated": "2026-10-25T01:13:12+00:00",
  "ops": {
-  "count": 52,
+  "count": 59,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 59,
+    "queued": 58,
     "running": 0,
     "doneToday": 3,
-    "minutes": 2360,
-    "estimateMinutes": 2360
+    "minutes": 2320,
+    "estimateMinutes": 2320
    },
    "Claude": {
     "queued": 1,
     "running": 4,
-    "doneToday": 80,
+    "doneToday": 81,
     "minutes": 300,
     "estimateMinutes": 150
    }
   },
-  "queued": 60,
+  "queued": 59,
   "running": 4,
-  "doneToday": 83,
+  "doneToday": 84,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2660,
-  "estimatedFinish": "2026-10-26T16:30:53+00:00",
-  "estimateMinutes": 2360
+  "minutesRemaining": 2620,
+  "estimatedFinish": "2026-10-26T15:53:12+00:00",
+  "estimateMinutes": 2320
  },
  "lanes": [
   {
@@ -69,10 +69,10 @@
   },
   {
    "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P2PL04_no hub final scan",
-   "since": null,
-   "activity": null,
+   "game": "gallery-guess",
+   "task": "P2GG00_gallery guess save migration test",
+   "since": "2026-10-25T01:12:40+00:00",
+   "activity": "2026-10-25T01:12:41+00:00",
    "commit": null
   },
   {
@@ -6898,8 +6898,8 @@
    "nextTask": null,
    "costTotalUsd": 43.47,
    "latestChange": {
-    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
-    "at": "2026-10-24T21:50:20+00:00"
+    "text": "No accidental zoom on phones:",
+    "at": "2026-10-25T00:57:34+00:00"
    },
    "promo": {
     "files": {
@@ -6939,8 +6939,8 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-09-11T20:46:48+00:00",
-   "lastChange": "2026-10-24T21:50:20+00:00",
+   "firstSeen": "2026-09-11T21:08:07+00:00",
+   "lastChange": "2026-10-25T00:57:34+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -7012,6 +7012,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T00:57:34+00:00",
+     "ok": true,
+     "note": "No accidental zoom on phones:",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-24T21:50:20+00:00",
      "ok": true,
      "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
@@ -7075,12 +7081,6 @@
      "at": "2026-09-11T22:05:00+00:00",
      "ok": true,
      "note": "3D brain view and the fly's body on every panel",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-11T21:17:44+00:00",
-     "ok": true,
-     "note": "Fly typewriter: the fly's body types on a phone keypad, T9 turns it into words",
      "source": "main commit"
     }
    ]
@@ -8190,7 +8190,7 @@
    ]
   },
   {
-   "nextTask": "Gallery Guess: a test proves an old save...",
+   "nextTask": null,
    "costTotalUsd": 36.21,
    "latestChange": {
     "text": "P3OR56_gallery-guess-credits-page: WORKDIR",
@@ -8213,8 +8213,8 @@
    "title": "Gallery Guess",
    "line": "Place each museum object by country and year.",
    "url": "https://chenhsieh.github.io/gallery-guess/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P3",
    "priorityNote": "Story and mechanism pass; pending a merge decision",
    "shelfNote": "",
@@ -8232,7 +8232,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-09-20T13:46:25+00:00",
-   "lastChange": "2026-10-23T22:11:03+00:00",
+   "lastChange": "2026-10-25T01:12:41+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -8248,10 +8248,10 @@
    "tasks": [
     {
      "title": "P2GG00_gallery guess save migration test",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Gallery Guess: a test proves an old save still loads after an update (release checklist item 7)",
-     "since": "2026-10-23T22:11:03+00:00",
+     "since": "2026-10-25T01:12:40+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -8332,8 +8332,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 5
    },
@@ -9167,6 +9167,97 @@
      "at": "2026-10-15T22:04:27+00:00",
      "ok": true,
      "note": "feat: credit Waddington's epigenetic landscape",
+     "source": "main commit"
+    }
+   ]
+  },
+  {
+   "nextTask": "Choose a gold-star rule each morning so a...",
+   "costTotalUsd": 7.2,
+   "latestChange": {
+    "text": "feat: Gold Star starts from the game template",
+    "at": "2026-10-25T01:12:28+00:00"
+   },
+   "promo": null,
+   "why": "A remix of Pigeon Salon and Morning Three: training a judge by rewards, turned round onto a class of eight.",
+   "state": "building",
+   "stateFlags": {
+    "refining": false,
+    "resting": false,
+    "regressed": false,
+    "reviseRound": 0,
+    "daysInState": 1
+   },
+   "waitingOn": "gold star",
+   "id": "gold-star",
+   "number": 164,
+   "repo": "gold-star",
+   "title": "Gold Star",
+   "line": "",
+   "url": "https://chenhsieh.github.io/gold-star/",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "released": false,
+   "releasedOn": null,
+   "releasedNote": "",
+   "archived": false,
+   "archivedOn": null,
+   "archivedKind": "",
+   "archivedNote": "",
+   "firstSeen": "2026-10-23T02:57:43+00:00",
+   "lastChange": "2026-10-25T01:12:28+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 0.0,
+    "earlierRounds": 2,
+    "earlierUsdEst": 7.2,
+    "totalUsdEst": 7.2
+   },
+   "tasks": [
+    {
+     "title": "gold star",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Choose a gold-star rule each morning so a class really learns while every desk games the stars: build the core with placeholder shapes, then its first-minute round",
+     "since": "2026-10-23T02:57:43+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "taskCounts": {
+    "queued": 1,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 0
+   },
+   "verdict": null,
+   "needsYou": null,
+   "inProgress": true,
+   "history": [
+    {
+     "at": "2026-10-25T01:12:28+00:00",
+     "ok": true,
+     "note": "feat: Gold Star starts from the game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T01:11:01+00:00",
+     "ok": true,
+     "note": "Initial commit",
      "source": "main commit"
     }
    ]
@@ -25586,8 +25677,8 @@
    "nextTask": null,
    "costTotalUsd": 76.14,
    "latestChange": {
-    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
-    "at": "2026-10-24T22:01:04+00:00"
+    "text": "No accidental zoom on phones:",
+    "at": "2026-10-25T01:07:58+00:00"
    },
    "promo": {
     "files": {
@@ -25627,7 +25718,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:30:37+00:00",
-   "lastChange": "2026-10-24T22:01:04+00:00",
+   "lastChange": "2026-10-25T01:07:58+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -25723,6 +25814,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T01:07:58+00:00",
+     "ok": true,
+     "note": "No accidental zoom on phones:",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-24T22:01:04+00:00",
      "ok": true,
      "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
@@ -25786,12 +25883,6 @@
      "at": "2026-10-20T02:44:54+00:00",
      "ok": true,
      "note": "tower brief + build B2",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-20T00:01:37+00:00",
-     "ok": true,
-     "note": "picture routes now balance shared meaning with a visible cloud line, old saves survive, and live 390x844 plus 320x568 touch checks passed",
      "source": "board note"
     }
    ]
@@ -26370,10 +26461,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 43.78,
+   "costTotalUsd": 47.38,
    "latestChange": {
-    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
-    "at": "2026-10-24T22:04:53+00:00"
+    "text": "No accidental zoom on phones:",
+    "at": "2026-10-25T01:11:53+00:00"
    },
    "promo": null,
    "why": "A careless RNA folding program as the opponent, one of three greedy algorithms in the overnight Fool the Algorithm build.",
@@ -26407,7 +26498,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T04:47:38+00:00",
-   "lastChange": "2026-10-24T22:04:53+00:00",
+   "lastChange": "2026-10-25T01:11:53+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -26416,9 +26507,9 @@
     "codexTokens": 487250,
     "codexUsdEst": 0.58,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
-    "totalUsdEst": 43.78
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
+    "totalUsdEst": 47.38
    },
    "tasks": [
     {
@@ -26489,6 +26580,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T01:11:53+00:00",
+     "ok": true,
+     "note": "No accidental zoom on phones:",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-24T22:04:53+00:00",
      "ok": true,
      "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
@@ -26552,12 +26649,6 @@
      "at": "2026-10-15T18:39:27+00:00",
      "ok": true,
      "note": "feat: make the spider choice easier to read",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-15T14:26:09+00:00",
-     "ok": true,
-     "note": "feat:",
      "source": "main commit"
     }
    ]
@@ -30044,8 +30135,8 @@
    "nextTask": "Clean Features: tests for the reset and a...",
    "costTotalUsd": 80.06,
    "latestChange": {
-    "text": "feat: What the Dish Sees draws its marks as readable chips, shows what a look costs...",
-    "at": "2026-10-24T22:53:45+00:00"
+    "text": "No accidental zoom on phones:",
+    "at": "2026-10-25T00:54:38+00:00"
    },
    "promo": {
     "files": {
@@ -30090,7 +30181,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-24T22:53:45+00:00",
+   "lastChange": "2026-10-25T00:54:38+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -30228,6 +30319,12 @@
    "inProgress": true,
    "history": [
     {
+     "at": "2026-10-25T00:54:38+00:00",
+     "ok": true,
+     "note": "No accidental zoom on phones:",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-24T22:53:45+00:00",
      "ok": true,
      "note": "feat: What the Dish Sees draws its marks as readable chips, shows what a look costs before the tap, and keeps a row of drops for the dish life",
@@ -30292,12 +30389,6 @@
      "ok": true,
      "note": "fix: dish notes say \"no neuron fired\" when a picture lights nothing",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T22:57:26+00:00",
-     "ok": true,
-     "note": "feat: teach the dish through a playable first minute",
-     "source": "board note"
     }
    ]
   },
@@ -30926,68 +31017,68 @@
  "releaseRegressed": [],
  "checksSummary": {
   "why": {
-   "yes": 159,
+   "yes": 160,
    "no": 4,
    "unknown": 0,
    "ran": 0
   },
   "expect": {
    "yes": 155,
-   "no": 8,
+   "no": 9,
    "unknown": 0,
    "ran": 0
   },
   "story": {
    "yes": 23,
    "no": 31,
-   "unknown": 109,
+   "unknown": 110,
    "ran": 0
   },
   "first_minute": {
-   "yes": 13,
+   "yes": 9,
    "no": 0,
-   "unknown": 109,
-   "ran": 41
+   "unknown": 110,
+   "ran": 45
   },
   "a11y": {
    "yes": 0,
    "no": 19,
-   "unknown": 144,
+   "unknown": 145,
    "ran": 0
   },
   "credits": {
-   "yes": 21,
-   "no": 2,
-   "unknown": 140,
+   "yes": 1,
+   "no": 0,
+   "unknown": 163,
    "ran": 0
   },
   "saves": {
-   "yes": 16,
+   "yes": 0,
    "no": 0,
-   "unknown": 147,
+   "unknown": 164,
    "ran": 0
   },
   "standard": {
-   "yes": 14,
-   "no": 3,
-   "unknown": 146,
+   "yes": 0,
+   "no": 0,
+   "unknown": 164,
    "ran": 0
   },
   "console": {
    "yes": 0,
    "no": 0,
-   "unknown": 163,
+   "unknown": 164,
    "ran": 0
   },
   "live": {
    "yes": 0,
    "no": 0,
-   "unknown": 163,
+   "unknown": 164,
    "ran": 0
   },
   "name": {
-   "yes": 160,
-   "no": 1,
+   "yes": 162,
+   "no": 0,
    "unknown": 2,
    "ran": 0
   }
