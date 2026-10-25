@@ -1,19 +1,19 @@
 {
- "generated": 1792908910,
+ "generated": 1792909052,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
-  "lanesBusy": 2,
+  "lanesBusy": 1,
   "ready": 1,
   "waiting": 0,
   "queued": 1,
-  "running": 2,
-  "done24h": 15,
+  "running": 1,
+  "done24h": 16,
   "modelsQueued": {
-   "deepseek-v4-flash": 3
+   "deepseek-v4-flash": 2
   },
   "spendTodayUsd": 0.22,
-  "runsToday": 5,
-  "runsTodayUnpriced": 3,
+  "runsToday": 6,
+  "runsTodayUnpriced": 4,
   "spendTotalUsd": 15.36,
   "recent": [
    {
@@ -21,6 +21,12 @@
     "request": "UGA Grad Survivor: a test that the long-term save and the run in progress load safely (OpenRouter lane)",
     "model": "deepseek-v4-flash",
     "at": 1792908650
+   },
+   {
+    "id": "P3OR86_redacxiv-tile-save-test",
+    "request": "Redacxiv: a test that tile-mode saves and the archive list read old saves (OpenRouter lane)",
+    "model": "deepseek-v4-flash",
+    "at": 1792908641
    },
    {
     "id": "P3OR85_redacxiv-save-migration-test",
@@ -69,12 +75,6 @@
     "request": "P3OR76_chai foam slip words",
     "model": "openai/gpt-4.1",
     "at": 1792833078
-   },
-   {
-    "id": "P3OR75_mushroom-survey-fonts-and-singular",
-    "request": "P3OR75_mushroom survey fonts and singular",
-    "model": "openai/gpt-4.1",
-    "at": 1792831398
    }
   ],
   "label": "estimate"
@@ -143,23 +143,6 @@
    "state": "running",
    "at": 1792908841,
    "created": 1792908841
-  },
-  {
-   "id": "P3OR86_redacxiv-tile-save-test",
-   "request": "Redacxiv: a test that tile-mode saves and the archive list read old saves (OpenRouter lane)",
-   "game": "Redacxiv",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "The word game Redactle, with real open-access biology papers; guess words to unblank a hidden paper's title and abstract; decoys come from other papers.",
-   "state": "running",
-   "at": 1792908641,
-   "created": 1792908641
   },
   {
    "id": "P1FS12_remote-viewer-one-screen",
@@ -1113,6 +1096,27 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P3SV55_redacxiv-merge-save-tests",
+   "request": "Redacxiv: merge the save tests to main",
+   "game": "Redacxiv",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR85_redacxiv-save-migration-test",
+    "P3OR86_redacxiv-tile-save-test"
+   ],
+   "priority": null,
+   "why": "The word game Redactle, with real open-access biology papers; guess words to unblank a hidden paper's title and abstract; decoys come from other papers.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792908660,
+   "estPercentOfWeek": 0.25
+  },
+  {
    "id": "P3SV56_grad-survivor-merge-save-test",
    "request": "UGA Grad Survivor: merge the save test to main",
    "game": "UGA Grad Survivor",
@@ -1576,29 +1580,6 @@
     "P2n92_out-of-the-corner"
    ],
    "created": 1792700696
-  },
-  {
-   "id": "P3SV55_redacxiv-merge-save-tests",
-   "request": "Redacxiv: merge the save tests to main",
-   "game": "Redacxiv",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P3OR85_redacxiv-save-migration-test",
-    "P3OR86_redacxiv-tile-save-test"
-   ],
-   "priority": null,
-   "why": "The word game Redactle, with real open-access biology papers; guess words to unblank a hidden paper's title and abstract; decoys come from other papers.",
-   "state": "waiting",
-   "waitingOn": [
-    "P3OR86_redacxiv-tile-save-test"
-   ],
-   "created": 1792908660,
-   "estPercentOfWeek": 0.25
   },
   {
    "id": "P1CF06_review-fixes-story-and-notes",
@@ -2141,6 +2122,23 @@
    "state": "done",
    "at": 1792908637,
    "created": 1792908637
+  },
+  {
+   "id": "P3OR86_redacxiv-tile-save-test",
+   "request": "Redacxiv: a test that tile-mode saves and the archive list read old saves (OpenRouter lane)",
+   "game": "Redacxiv",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "The word game Redactle, with real open-access biology papers; guess words to unblank a hidden paper's title and abstract; decoys come from other papers.",
+   "state": "done",
+   "at": 1792908641,
+   "created": 1792908641
   },
   {
    "id": "P3OR87_grad-survivor-save-test",

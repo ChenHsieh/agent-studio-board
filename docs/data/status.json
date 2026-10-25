@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T06:14:55+00:00",
+ "generated": "2026-10-25T06:17:18+00:00",
  "ops": {
   "count": 2,
   "notes": [
@@ -28,15 +28,15 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 4,
-    "doneToday": 9,
-    "minutes": 300,
-    "estimateMinutes": 150
+    "running": 3,
+    "doneToday": 10,
+    "minutes": 240,
+    "estimateMinutes": 120
    }
   },
   "queued": 74,
-  "running": 4,
-  "doneToday": 9,
+  "running": 3,
+  "doneToday": 10,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,8 +46,8 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3220,
-  "estimatedFinish": "2026-10-27T06:54:55+00:00",
+  "minutesRemaining": 3160,
+  "estimatedFinish": "2026-10-27T06:57:18+00:00",
   "estimateMinutes": 2920
  },
  "lanes": [
@@ -74,18 +74,10 @@
    "since": "2026-10-25T06:14:35+00:00",
    "activity": "2026-10-25T06:14:41+00:00",
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "BioRedactle-nextjs",
-   "task": "P3OR86_redacxiv tile save test",
-   "since": "2026-10-25T06:14:48+00:00",
-   "activity": "2026-10-25T06:14:55+00:00",
-   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 4,
+ "claudeWorkers": 3,
  "apiSpentUsd": 319.92,
  "claudeInSession": {
   "runs": 288,
@@ -19898,8 +19890,8 @@
    "title": "Redacxiv",
    "line": "Reveal a paper's title with word tiles.",
    "url": "https://chenhsieh.github.io/redacxiv/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Interface and visual pass; make the first game winnable for",
    "shelfNote": "",
@@ -19913,34 +19905,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-14T20:39:05+00:00",
-   "lastChange": "2026-10-25T06:14:55+00:00",
+   "lastChange": "2026-10-25T06:11:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 2,
     "codexTokens": 1140773,
     "codexUsdEst": 1.37,
-    "claudeUsdEst": 10.8,
-    "earlierRounds": 13,
-    "earlierUsdEst": 46.8,
+    "claudeUsdEst": 14.4,
+    "earlierRounds": 12,
+    "earlierUsdEst": 43.2,
     "totalUsdEst": 58.97
    },
    "tasks": [
-    {
-     "title": "P3OR86_redacxiv tile save test",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Redacxiv: a test that tile-mode saves and the archive list read old saves (OpenRouter lane)",
-     "since": "2026-10-25T06:14:48+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P3SV55_redacxiv merge save tests",
      "state": "queued",
@@ -19968,6 +19946,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P3OR86_redacxiv tile save test",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Redacxiv: a test that tile-mode saves and the archive list read old saves (OpenRouter lane)",
+     "since": "2026-10-25T06:10:41+00:00",
+     "done": "2026-10-25T06:10:41+00:00",
+     "reviewed": false,
+     "minutes": 1,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: [ -d node_modules ] || npm ci --silent --no-audit --no-fund >/dev/null 2>&1; npx tsx scripts/test-tile-saves.ts"
     },
     {
      "title": "P3OR85_redacxiv save migration test",
@@ -20042,9 +20034,9 @@
    ],
    "taskCounts": {
     "queued": 2,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 9
+    "done": 10
    },
    "verdict": {
     "date": "2026-10-20",
