@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T21:33:16+00:00",
+ "generated": "2026-10-25T21:35:36+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 82,
+    "queued": 81,
     "running": 1,
-    "doneToday": 7,
-    "minutes": 3320,
-    "estimateMinutes": 3320
+    "doneToday": 8,
+    "minutes": 3280,
+    "estimateMinutes": 3280
    },
    "Claude": {
     "queued": 1,
@@ -30,9 +30,9 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 83,
+  "queued": 82,
   "running": 3,
-  "doneToday": 42,
+  "doneToday": 43,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3500,
-  "estimatedFinish": "2026-10-28T04:53:16+00:00",
-  "estimateMinutes": 3320
+  "minutesRemaining": 3460,
+  "estimatedFinish": "2026-10-28T04:15:36+00:00",
+  "estimateMinutes": 3280
  },
  "lanes": [
   {
@@ -65,11 +65,14 @@
   },
   {
    "worker": "Codex",
-   "game": "the-apprentice",
-   "task": "P2AX18_kit fit rollout the apprentice",
-   "since": "2026-10-25T21:28:18+00:00",
-   "activity": "2026-10-25T21:27:57+00:00",
-   "commit": null
+   "game": "name-to-carry",
+   "task": "P2NC00_name to carry data inline",
+   "since": "2026-10-25T21:34:22+00:00",
+   "activity": "2026-10-25T21:35:33+00:00",
+   "commit": {
+    "at": "2026-10-25T21:35:23+00:00",
+    "subject": "Merge remote-tracking branch 'origin/chen-or-p3or53-name-to-carry-data-inside-game' into chen-cx-p2nc00-name-to-carry-data-inline"
+   }
   }
  ],
  "codexLanes": 1,
@@ -131,7 +134,7 @@
   },
   {
    "day": "2026-10-25",
-   "changes": 13
+   "changes": 14
   }
  ],
  "houseRules": 25,
@@ -157,7 +160,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 1
+    "daysInState": 0
    },
    "waitingOn": "owner",
    "id": "name-to-carry",
@@ -166,7 +169,7 @@
    "title": "A Name to Carry",
    "line": "Eight scenes, ministry tiers and a share card: carry a name through the forms, Mandarin first.",
    "url": "https://chenhsieh.github.io/name-to-carry/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Eight scenes, ministry tiers and a share card: carry a name through the forms,",
@@ -181,7 +184,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T02:25:43+00:00",
-   "lastChange": "2026-10-25T09:18:25+00:00",
+   "lastChange": "2026-10-25T21:35:33+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -196,25 +199,28 @@
    },
    "tasks": [
     {
-     "title": "P3PL12_name to carry why rollout",
-     "state": "queued",
+     "title": "P2NC00_name to carry data inline",
+     "state": "running",
      "worker": "Codex",
-     "plan": "Why this exists: finish the rollout on name-to-carry (new test failure: test/name.test.mjs, zh glyphs 工 室 創 are mi)",
-     "since": "2026-10-25T06:12:52+00:00",
+     "plan": "Name to Carry: the game file no longer crashes when loaded on its own (the name data moves into it)",
+     "since": "2026-10-25T21:34:22+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-25T21:35:23+00:00",
+      "subject": "Merge remote-tracking branch 'origin/chen-or-p3or53-name-to-carry-data-inside-game' into chen-cx-p2nc00-name-to-carry-data-inline"
+     },
      "result": ""
     },
     {
-     "title": "P2NC00_name to carry data inline",
+     "title": "P3PL12_name to carry why rollout",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Name to Carry: the game file no longer crashes when loaded on its own (the name data moves into it)",
-     "since": "2026-10-23T21:35:17+00:00",
+     "plan": "Why this exists: finish the rollout on name-to-carry (new test failure: test/name.test.mjs, zh glyphs 工 室 創 are mi)",
+     "since": "2026-10-25T06:12:52+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -253,8 +259,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
@@ -27135,30 +27141,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 61.2,
+   "costTotalUsd": 61.32,
    "latestChange": {
-    "text": "see",
-    "at": "2026-10-25T21:18:13+00:00"
+    "text": "feat: keep new-rule notes visible on short phones",
+    "at": "2026-10-25T21:34:21+00:00"
    },
    "promo": null,
    "why": "A viral second-person court scene where a cherished dancer draws a blade, recast in a reply as the orphan her ruler secretly raised.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 2
+    "daysInState": 0
    },
-   "waitingOn": "kit fit rollout the apprentice",
+   "waitingOn": "none",
    "id": "the-apprentice",
    "number": 152,
    "repo": "the-apprentice",
    "title": "The Apprentice",
    "line": "",
    "url": "https://chenhsieh.github.io/the-apprentice/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "a teach-then-betrayed story with real potential; frame the story, the...",
    "shelfNote": "",
@@ -27172,33 +27178,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:54:20+00:00",
-   "lastChange": "2026-10-25T21:27:57+00:00",
+   "lastChange": "2026-10-25T21:34:21+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 6,
     "apiRuns": 1,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 99040,
+    "codexUsdEst": 0.12,
     "claudeUsdEst": 21.6,
     "earlierRounds": 11,
     "earlierUsdEst": 39.6,
-    "totalUsdEst": 61.2
+    "totalUsdEst": 61.32
    },
    "tasks": [
     {
      "title": "P2AX18_kit fit rollout the apprentice",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "the-apprentice: take the new play kit so the board and Undo fit a small phone",
-     "since": "2026-10-25T21:28:18+00:00",
-     "done": null,
+     "since": "2026-10-25T21:18:13+00:00",
+     "done": "2026-10-25T21:18:13+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 10,
+     "tokens": 99040,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: keep new-rule notes visible on short phones"
     },
     {
      "title": "P1FS27_the apprentice one screen",
@@ -27301,9 +27307,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 7
+    "done": 8
    },
    "verdict": {
     "date": "2026-10-23",
@@ -27311,8 +27317,20 @@
     "note": "The duel holds but the screen tells no story: the tools, ring and judges mean nothing to a stranger yet"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-25T21:34:21+00:00",
+     "ok": true,
+     "note": "feat: keep new-rule notes visible on short phones",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-25T21:34:19+00:00",
+     "ok": true,
+     "note": "feat: keep new-rule notes visible on short phones",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T21:18:13+00:00",
      "ok": false,
@@ -27371,18 +27389,6 @@
      "at": "2026-10-24T07:27:07+00:00",
      "ok": true,
      "note": "feat: The Apprentice is printed as a woodcut almanac",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T06:37:46+00:00",
-     "ok": true,
-     "note": "design: The Apprentice visual round: three looks (woodcut almanac, primer plate, shadow show), woodcut picked, build spec",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T04:36:06+00:00",
-     "ok": true,
-     "note": "feat: The Apprentice tells one story:",
      "source": "main commit"
     }
    ]
