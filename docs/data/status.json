@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T00:49:37+00:00",
+ "generated": "2026-10-25T00:51:57+00:00",
  "ops": {
-  "count": 15,
+  "count": 18,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,22 +20,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 64,
+    "queued": 63,
     "running": 0,
     "doneToday": 3,
-    "minutes": 2560,
-    "estimateMinutes": 2560
+    "minutes": 2520,
+    "estimateMinutes": 2520
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
+    "running": 3,
     "doneToday": 78,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "minutes": 240,
+    "estimateMinutes": 120
    }
   },
-  "queued": 65,
-  "running": 2,
+  "queued": 64,
+  "running": 3,
   "doneToday": 81,
   "lanes": {
    "Codex": 1,
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2740,
-  "estimatedFinish": "2026-10-26T19:29:37+00:00",
-  "estimateMinutes": 2560
+  "minutesRemaining": 2760,
+  "estimatedFinish": "2026-10-26T18:51:57+00:00",
+  "estimateMinutes": 2520
  },
  "lanes": [
   {
@@ -58,10 +58,26 @@
    "since": null,
    "activity": null,
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "think-elephant",
+   "task": "P2TE09_chrome text sizes",
+   "since": "2026-10-25T00:51:04+00:00",
+   "activity": "2026-10-25T00:51:05+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "round4 template repos",
+   "since": null,
+   "activity": null,
+   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 3,
  "apiSpentUsd": 318.09,
  "claudeInSession": {
   "runs": 287,
@@ -2808,6 +2824,97 @@
     },
     {
      "at": "2026-10-21T21:52:34+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
+    }
+   ]
+  },
+  {
+   "nextTask": "Mark every New Year dumpling as coin, no...",
+   "costTotalUsd": 7.2,
+   "latestChange": {
+    "text": "feat: Coin Dumplings starts from the game template",
+    "at": "2026-10-25T00:51:20+00:00"
+   },
+   "promo": null,
+   "why": "A remix of a local-count mine puzzle and a deduction game, set at New Year dumplings with a coin inside a few.",
+   "state": "building",
+   "stateFlags": {
+    "refining": false,
+    "resting": false,
+    "regressed": false,
+    "reviseRound": 0,
+    "daysInState": 1
+   },
+   "waitingOn": "coin dumplings",
+   "id": "coin-dumplings",
+   "number": 156,
+   "repo": "coin-dumplings",
+   "title": "Coin Dumplings",
+   "line": "",
+   "url": "https://chenhsieh.github.io/coin-dumplings/",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "released": false,
+   "releasedOn": null,
+   "releasedNote": "",
+   "archived": false,
+   "archivedOn": null,
+   "archivedKind": "",
+   "archivedNote": "",
+   "firstSeen": "2026-10-23T02:57:41+00:00",
+   "lastChange": "2026-10-25T00:51:20+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 0.0,
+    "earlierRounds": 2,
+    "earlierUsdEst": 7.2,
+    "totalUsdEst": 7.2
+   },
+   "tasks": [
+    {
+     "title": "coin dumplings",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Mark every New Year dumpling as coin, no coin or cannot tell from the numbers on the bitten ones: build the core with placeholder shapes, then its first-minute round",
+     "since": "2026-10-23T02:57:41+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "taskCounts": {
+    "queued": 1,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 0
+   },
+   "verdict": null,
+   "needsYou": null,
+   "inProgress": true,
+   "history": [
+    {
+     "at": "2026-10-25T00:51:20+00:00",
+     "ok": true,
+     "note": "feat: Coin Dumplings starts from the game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T00:49:53+00:00",
      "ok": true,
      "note": "Initial commit",
      "source": "main commit"
@@ -20117,8 +20224,8 @@
    "nextTask": null,
    "costTotalUsd": 43.76,
    "latestChange": {
-    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
-    "at": "2026-10-24T16:24:31+00:00"
+    "text": "No accidental zoom on phones:",
+    "at": "2026-10-25T00:48:41+00:00"
    },
    "promo": {
     "files": {
@@ -20157,8 +20264,8 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-08-20T15:44:40+00:00",
-   "lastChange": "2026-10-24T16:24:31+00:00",
+   "firstSeen": "2026-08-22T04:43:19+00:00",
+   "lastChange": "2026-10-25T00:48:41+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -20258,6 +20365,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T00:48:41+00:00",
+     "ok": true,
+     "note": "No accidental zoom on phones:",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-24T16:24:31+00:00",
      "ok": true,
      "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
@@ -20321,12 +20434,6 @@
      "at": "2026-09-05T03:01:59+00:00",
      "ok": true,
      "note": "Add a favicon (data-URI SVG, letter badge on the game's own palette)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-05T02:54:22+00:00",
-     "ok": true,
-     "note": "Add description, og:*, and twitter:* meta tags, and a generated docs/og.png",
      "source": "main commit"
     }
    ]
@@ -26358,7 +26465,7 @@
    ]
   },
   {
-   "nextTask": "Think an Elephant: the level row, goal line...",
+   "nextTask": null,
    "costTotalUsd": 72.11,
    "latestChange": {
     "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
@@ -26381,8 +26488,8 @@
    "title": "Think Elephant",
    "line": "",
    "url": "https://chenhsieh.github.io/think-elephant/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -26396,7 +26503,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T04:40:58+00:00",
-   "lastChange": "2026-10-24T22:37:19+00:00",
+   "lastChange": "2026-10-25T00:51:05+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -26412,10 +26519,10 @@
    "tasks": [
     {
      "title": "P2TE09_chrome text sizes",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Think an Elephant: the level row, goal line, note and Undo/Reset buttons grow to the big-text sizes, still one screen on a small phone",
-     "since": "2026-10-24T21:11:03+00:00",
+     "since": "2026-10-25T00:51:04+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -26524,8 +26631,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 10
    },
@@ -30186,67 +30293,67 @@
  "releaseRegressed": [],
  "checksSummary": {
   "why": {
-   "yes": 145,
+   "yes": 146,
    "no": 10,
    "unknown": 0,
    "ran": 0
   },
   "expect": {
    "yes": 155,
-   "no": 0,
+   "no": 1,
    "unknown": 0,
    "ran": 0
   },
   "story": {
    "yes": 23,
    "no": 31,
-   "unknown": 101,
+   "unknown": 102,
    "ran": 0
   },
   "first_minute": {
    "yes": 13,
    "no": 0,
-   "unknown": 101,
+   "unknown": 102,
    "ran": 41
   },
   "a11y": {
    "yes": 0,
    "no": 19,
-   "unknown": 136,
+   "unknown": 137,
    "ran": 0
   },
   "credits": {
    "yes": 21,
    "no": 2,
-   "unknown": 132,
+   "unknown": 133,
    "ran": 0
   },
   "saves": {
    "yes": 16,
    "no": 0,
-   "unknown": 139,
+   "unknown": 140,
    "ran": 0
   },
   "standard": {
    "yes": 14,
    "no": 3,
-   "unknown": 138,
+   "unknown": 139,
    "ran": 0
   },
   "console": {
    "yes": 0,
    "no": 0,
-   "unknown": 155,
+   "unknown": 156,
    "ran": 0
   },
   "live": {
    "yes": 0,
    "no": 0,
-   "unknown": 155,
+   "unknown": 156,
    "ran": 0
   },
   "name": {
-   "yes": 152,
+   "yes": 153,
    "no": 1,
    "unknown": 2,
    "ran": 0
