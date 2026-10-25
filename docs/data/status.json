@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T00:08:39+00:00",
+ "generated": "2026-10-25T00:11:27+00:00",
  "ops": {
-  "count": 3,
+  "count": 2,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,39 +20,48 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 68,
+    "queued": 67,
     "running": 0,
     "doneToday": 2,
-    "minutes": 2720,
-    "estimateMinutes": 2720
+    "minutes": 2680,
+    "estimateMinutes": 2680
    },
    "Claude": {
     "queued": 1,
-    "running": 0,
+    "running": 1,
     "doneToday": 75,
-    "minutes": 60,
+    "minutes": 120,
     "estimateMinutes": 60
    }
   },
-  "queued": 69,
-  "running": 0,
+  "queued": 68,
+  "running": 1,
   "doneToday": 77,
   "lanes": {
    "Codex": 1,
-   "Claude": 1
+   "Claude": 2
   },
   "laneCap": {
    "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2780,
-  "estimatedFinish": "2026-10-26T21:28:39+00:00",
-  "estimateMinutes": 2720
+  "minutesRemaining": 2800,
+  "estimatedFinish": "2026-10-26T20:51:27+00:00",
+  "estimateMinutes": 2680
  },
- "lanes": [],
+ "lanes": [
+  {
+   "worker": "Claude",
+   "game": "tree-hero",
+   "task": "P1TH04_strings and tests",
+   "since": "2026-10-25T00:09:11+00:00",
+   "activity": "2026-10-25T00:09:15+00:00",
+   "commit": null
+  }
+ ],
  "codexLanes": 0,
- "claudeWorkers": 0,
+ "claudeWorkers": 1,
  "apiSpentUsd": 317.01,
  "claudeInSession": {
   "runs": 287,
@@ -27781,7 +27790,7 @@
    ]
   },
   {
-   "nextTask": "Tree Hero: tidy words and tests after the...",
+   "nextTask": null,
    "costTotalUsd": 61.39,
    "latestChange": {
     "text": "Worked-example intro and a guided first swap (P1TH03)",
@@ -27811,8 +27820,8 @@
    "title": "Tree Hero",
    "line": "Swap branches until the family tree needs the fewest changes.",
    "url": "https://chenhsieh.github.io/tree-hero/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
@@ -27826,7 +27835,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T00:28:48+00:00",
-   "lastChange": "2026-10-24T23:45:00+00:00",
+   "lastChange": "2026-10-25T00:09:15+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -27842,10 +27851,10 @@
    "tasks": [
     {
      "title": "P1TH04_strings and tests",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Tree Hero: tidy words and tests after the journey rebuild",
-     "since": "2026-10-24T02:23:15+00:00",
+     "since": "2026-10-25T00:09:11+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -27940,8 +27949,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 6
    },
