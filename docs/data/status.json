@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T07:35:30+00:00",
+ "generated": "2026-10-25T07:37:47+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 63,
+    "queued": 62,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2520,
-    "estimateMinutes": 2520
+    "minutes": 2480,
+    "estimateMinutes": 2480
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 23,
+    "doneToday": 25,
     "minutes": 180,
     "estimateMinutes": 90
    }
   },
-  "queued": 64,
+  "queued": 63,
   "running": 2,
-  "doneToday": 23,
+  "doneToday": 25,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,17 +42,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2700,
-  "estimatedFinish": "2026-10-27T01:35:30+00:00",
-  "estimateMinutes": 2520
+  "minutesRemaining": 2660,
+  "estimatedFinish": "2026-10-27T00:57:47+00:00",
+  "estimateMinutes": 2480
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "cymatic-plate",
-   "task": "P1FS14_cymatic plate one screen",
-   "since": "2026-10-25T07:14:27+00:00",
-   "activity": "2026-10-25T07:33:51+00:00",
+   "game": "directory-handrail",
+   "task": "P1FS15_directory handrail one screen",
+   "since": "2026-10-25T07:35:38+00:00",
+   "activity": "2026-10-25T07:35:39+00:00",
    "commit": null
   },
   {
@@ -62,10 +62,18 @@
    "since": null,
    "activity": null,
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P3OR90_marble daily pins test",
+   "since": null,
+   "activity": null,
+   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 3,
  "apiSpentUsd": 319.92,
  "claudeInSession": {
   "runs": 288,
@@ -4238,21 +4246,21 @@
    "why": "Chladni figures on a vibrating plate and a post of dye moving on vibrating milk.",
    "state": "released",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 2
    },
-   "waitingOn": "cymatic plate one screen",
+   "waitingOn": "none",
    "id": "cymatic-plate",
    "number": 85,
    "repo": "cymatic-plate",
    "title": "Cymatic Plate",
    "line": "Ring notes on a brass plate covered in sand and watch the.",
    "url": "https://chenhsieh.github.io/cymatic-plate/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
@@ -4266,33 +4274,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:40:04+00:00",
-   "lastChange": "2026-10-25T07:33:51+00:00",
+   "lastChange": "2026-10-25T07:03:29+00:00",
    "cost": {
     "apiUsd": 3.26,
     "codexRuns": 5,
-    "claudeRuns": 8,
+    "claudeRuns": 9,
     "apiRuns": 2,
     "codexTokens": 816933,
     "codexUsdEst": 0.98,
-    "claudeUsdEst": 28.8,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
+    "claudeUsdEst": 32.4,
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
     "totalUsdEst": 83.44
    },
    "tasks": [
     {
      "title": "P1FS14_cymatic plate one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "cymatic-plate: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T07:14:27+00:00",
-     "done": null,
+     "since": "2026-10-25T07:03:29+00:00",
+     "done": "2026-10-25T07:03:29+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1FS14 cymatic-plate one screen: DONE (Sonnet overflow worker, 2026-10-25). Commit on main; live gate PASS."
     },
     {
      "title": "P1CY00_endless always solvable and overload bar",
@@ -4395,9 +4403,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 15
+    "done": 16
    },
    "verdict": {
     "date": "2026-10-20",
@@ -4405,7 +4413,7 @@
     "note": "Ship after endless mode gets sound, haptics and the logo"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T02:51:46+00:00",
@@ -14348,8 +14356,8 @@
    "nextTask": null,
    "costTotalUsd": 46.8,
    "latestChange": {
-    "text": "Marble Machine act two looks like real pieces, and each new piece gets a short lesson...",
-    "at": "2026-10-25T06:27:50+00:00"
+    "text": "Help: act-three pieces and today's machine in two short paragraphs (P1MM06)",
+    "at": "2026-10-25T07:36:03+00:00"
    },
    "promo": null,
    "why": "A viral short of a marble bouncing off pinned discs, each hit a note.",
@@ -14383,7 +14391,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-25T06:27:50+00:00",
+   "lastChange": "2026-10-25T07:36:03+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -14423,6 +14431,54 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T07:36:03+00:00",
+     "ok": true,
+     "note": "Help: act-three pieces and today's machine in two short paragraphs (P1MM06)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T07:35:24+00:00",
+     "ok": true,
+     "note": "Marble Machine: a daily machine with a share line, act-three pieces drawn as solid objects with one lesson each, and a tighter puzzle panel on small phones (P1MM06)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T07:24:13+00:00",
+     "ok": true,
+     "note": "P3OR89_marble-act-three-lessons: WORKDIR",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T07:15:14+00:00",
+     "ok": true,
+     "note": "start: P1MM06 act three look, daily, share",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T07:10:12+00:00",
+     "ok": true,
+     "note": "Marble Machine act three on the page: seesaw, belt, counterweight cup, paddle wheel, flap and dominoes drawn plainly, a grey second marble, dials for belt speed, wheel start and domino spacing; levels build when opened (P1MM05)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T07:05:21+00:00",
+     "ok": true,
+     "note": "P3OR88_marble-share-text: WORKDIR",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T06:54:17+00:00",
+     "ok": true,
+     "note": "Act three rules: seesaw, belt, counterweight cup, paddle wheel, flap and domino run as exact pieces, a second marble, levels 17-27 (P1MM05)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T06:32:15+00:00",
+     "ok": true,
+     "note": "start: P1MM05 act three mechanisms",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T06:27:50+00:00",
      "ok": true,
      "note": "Marble Machine act two looks like real pieces, and each new piece gets a short lesson (P1MM04)",
@@ -14432,66 +14488,6 @@
      "at": "2026-10-25T06:14:22+00:00",
      "ok": true,
      "note": "start: P1MM04 act two look and lessons",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-25T04:40:45+00:00",
-     "ok": true,
-     "note": "Marble Machine act two on the page: spring dials, bell swaps, doors and funnels drawn plainly; the rule line stays on screen (P1MM03)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-25T04:40:45+00:00",
-     "ok": true,
-     "note": "Marble Machine act two rules: spring pads, bells, doors and funnels as exact pieces; levels 9-16; par by search; front-to-back bot gate (P1MM03)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-25T04:40:45+00:00",
-     "ok": true,
-     "note": "P3OR79_marble-mechanism-strings: WORKDIR",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-25T04:04:32+00:00",
-     "ok": true,
-     "note": "start: P1MM03 mechanisms 2-5 and act two",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-25T02:00:03+00:00",
-     "ok": true,
-     "note": "Zoom guard updated: taps are never cancelled (P1ZM00)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-25T01:17:32+00:00",
-     "ok": true,
-     "note": "No accidental zoom on phones:",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T13:04:00+00:00",
-     "ok": true,
-     "note": "Marble Machine puzzle: pads are lit slabs with depth under a fixed three-quarter camera",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T12:57:46+00:00",
-     "ok": true,
-     "note": "start: P1MM02_marble-slab-look",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T10:44:32+00:00",
-     "ok": true,
-     "note": "design: depth ladder of 11 mechanisms and 2.5D slab platforms, with two measured spikes",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T10:32:59+00:00",
-     "ok": true,
-     "note": "start: P1MM01_depth-brainstorm-3d-platforms-and-mechanisms",
      "source": "main commit"
     }
    ]
@@ -20532,7 +20528,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T16:38:08+00:00",
-   "lastChange": "2026-10-25T02:49:18+00:00",
+   "lastChange": "2026-10-25T07:35:34+00:00",
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 1,
@@ -20551,7 +20547,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "remote-viewer: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T02:10:02+00:00",
+     "since": "2026-10-25T07:35:34+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -21389,7 +21385,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:08:19+00:00",
-   "lastChange": "2026-10-25T05:59:25+00:00",
+   "lastChange": "2026-10-25T07:35:34+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -21408,7 +21404,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Push a stone up a hill note by note; it rolls back playing your climb backwards: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-10-25T05:59:25+00:00",
+     "since": "2026-10-25T07:35:34+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -23980,7 +23976,7 @@
    ]
   },
   {
-   "nextTask": "directory-handrail: one phone screen, Next on screen after...",
+   "nextTask": null,
    "costTotalUsd": 98.94,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -24009,8 +24005,8 @@
    "title": "Signposts",
    "line": "Signposts is a short phone puzzle about hanging route.",
    "url": "https://chenhsieh.github.io/directory-handrail/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Flagship polish round: finish the market-manager framing",
    "shelfNote": "",
@@ -24028,7 +24024,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T20:39:24+00:00",
-   "lastChange": "2026-10-25T07:03:29+00:00",
+   "lastChange": "2026-10-25T07:35:39+00:00",
    "cost": {
     "apiUsd": 7.97,
     "codexRuns": 3,
@@ -24044,10 +24040,10 @@
    "tasks": [
     {
      "title": "P1FS15_directory handrail one screen",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "directory-handrail: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T07:03:29+00:00",
+     "since": "2026-10-25T07:35:38+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -24156,8 +24152,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 8
    },
