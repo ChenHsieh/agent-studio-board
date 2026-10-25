@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T01:06:06+00:00",
+ "generated": "2026-10-25T01:08:25+00:00",
  "ops": {
-  "count": 42,
+  "count": 48,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 61,
+    "queued": 60,
     "running": 0,
     "doneToday": 3,
-    "minutes": 2440,
-    "estimateMinutes": 2440
+    "minutes": 2400,
+    "estimateMinutes": 2400
    },
    "Claude": {
     "queued": 1,
-    "running": 4,
-    "doneToday": 79,
-    "minutes": 300,
-    "estimateMinutes": 150
+    "running": 3,
+    "doneToday": 80,
+    "minutes": 240,
+    "estimateMinutes": 120
    }
   },
-  "queued": 62,
-  "running": 4,
-  "doneToday": 82,
+  "queued": 61,
+  "running": 3,
+  "doneToday": 83,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2740,
-  "estimatedFinish": "2026-10-26T17:46:06+00:00",
-  "estimateMinutes": 2440
+  "minutesRemaining": 2640,
+  "estimatedFinish": "2026-10-26T17:08:25+00:00",
+  "estimateMinutes": 2400
  },
  "lanes": [
   {
@@ -69,18 +69,18 @@
   },
   {
    "worker": "Claude",
-   "game": "think-elephant",
-   "task": "P2TE09_chrome text sizes",
-   "since": "2026-10-25T00:51:04+00:00",
-   "activity": "2026-10-25T00:59:03+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
    "game": "Multiple games",
    "task": "round4 template repos",
    "since": null,
    "activity": null,
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "glasshouse",
+   "task": "P3GH41_deploy preview fix",
+   "since": "2026-10-25T01:08:16+00:00",
+   "activity": "2026-10-25T01:08:16+00:00",
    "commit": null
   }
  ],
@@ -8783,7 +8783,7 @@
    ]
   },
   {
-   "nextTask": "Glasshouse (#3): re-run the failed deploy so the...",
+   "nextTask": null,
    "costTotalUsd": 54.0,
    "latestChange": {
     "text": "P3OR39_glasshouse-short-share-line: WORKDIR",
@@ -8806,8 +8806,8 @@
    "title": "Glasshouse",
    "line": "Lead a line of students through a greenhouse.",
    "url": "https://chenhsieh.github.io/glasshouse/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Decide the best public role for a finished personal game",
    "shelfNote": "",
@@ -8821,7 +8821,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-08-09T16:24:24+00:00",
-   "lastChange": "2026-10-24T02:54:42+00:00",
+   "lastChange": "2026-10-25T01:08:16+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -8837,10 +8837,10 @@
    "tasks": [
     {
      "title": "P3GH41_deploy preview fix",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Glasshouse (#3): re-run the failed deploy so the link preview works; nothing else.",
-     "since": "2026-10-24T02:54:42+00:00",
+     "since": "2026-10-25T01:08:16+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -8893,8 +8893,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
@@ -20708,6 +20708,91 @@
    ]
   },
   {
+   "nextTask": "Push a stone up a hill note by...",
+   "costTotalUsd": 3.6,
+   "latestChange": {
+    "text": "Initial commit",
+    "at": "2026-10-25T01:08:19+00:00"
+   },
+   "promo": null,
+   "why": "A remix of Whiteboard Song and Not Yet through the myth of the stone that always rolls back down.",
+   "state": "building",
+   "stateFlags": {
+    "refining": false,
+    "resting": false,
+    "regressed": false,
+    "reviseRound": 0,
+    "daysInState": 1
+   },
+   "waitingOn": "rolling back",
+   "id": "rolling-back",
+   "number": 163,
+   "repo": "rolling-back",
+   "title": "Rolling Back",
+   "line": "",
+   "url": "https://chenhsieh.github.io/rolling-back/",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "released": false,
+   "releasedOn": null,
+   "releasedNote": "",
+   "archived": false,
+   "archivedOn": null,
+   "archivedKind": "",
+   "archivedNote": "",
+   "firstSeen": "2026-10-23T02:57:43+00:00",
+   "lastChange": "2026-10-25T01:08:19+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 0.0,
+    "earlierRounds": 1,
+    "earlierUsdEst": 3.6,
+    "totalUsdEst": 3.6
+   },
+   "tasks": [
+    {
+     "title": "rolling back",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Push a stone up a hill note by note; it rolls back playing your climb backwards: build the core with placeholder shapes, then its first-minute round",
+     "since": "2026-10-23T02:57:43+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "taskCounts": {
+    "queued": 1,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 0
+   },
+   "verdict": null,
+   "needsYou": null,
+   "inProgress": true,
+   "history": [
+    {
+     "at": "2026-10-25T01:08:19+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
+    }
+   ]
+  },
+  {
    "nextTask": null,
    "costTotalUsd": 33.07,
    "latestChange": {
@@ -26917,30 +27002,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 72.11,
+   "costTotalUsd": 75.71,
    "latestChange": {
-    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
-    "at": "2026-10-24T22:37:19+00:00"
+    "text": "Chrome text meets the Accessible Play table: level row 20, goal 22/24, note 20/22,...",
+    "at": "2026-10-25T01:06:31+00:00"
    },
    "promo": null,
    "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "chrome text sizes",
+   "waitingOn": "none",
    "id": "think-elephant",
    "number": 115,
    "repo": "think-elephant",
    "title": "Think Elephant",
    "line": "",
    "url": "https://chenhsieh.github.io/think-elephant/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -26954,33 +27039,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T04:40:58+00:00",
-   "lastChange": "2026-10-25T00:59:03+00:00",
+   "lastChange": "2026-10-25T01:06:31+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 9,
+    "claudeRuns": 10,
     "apiRuns": 0,
     "codexTokens": 91844,
     "codexUsdEst": 0.11,
-    "claudeUsdEst": 32.4,
+    "claudeUsdEst": 36.0,
     "earlierRounds": 11,
     "earlierUsdEst": 39.6,
-    "totalUsdEst": 72.11
+    "totalUsdEst": 75.71
    },
    "tasks": [
     {
      "title": "P2TE09_chrome text sizes",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Think an Elephant: the level row, goal line, note and Undo/Reset buttons grow to the big-text sizes, still one screen on a small phone",
-     "since": "2026-10-25T00:51:04+00:00",
-     "done": null,
+     "since": "2026-10-24T21:11:03+00:00",
+     "done": "2026-10-24T21:11:03+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P2TE09 Think an Elephant chrome text sizes: DONE (claude-sonnet). main , live bytes match (game.css, shell.js, index.html), live page passes test/chrome_sizes.mjs at 390x844 and 320x568, en and zh-Hant, levels 1, 5, 9."
     },
     {
      "title": "P1TE08_one font for quotes",
@@ -27083,14 +27168,20 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 10
+    "done": 11
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-25T01:06:31+00:00",
+     "ok": true,
+     "note": "Chrome text meets the Accessible Play table: level row 20, goal 22/24, note 20/22, buttons 20 (P2TE09)",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-24T22:37:19+00:00",
      "ok": true,
@@ -27156,12 +27247,6 @@
      "ok": true,
      "note": "feat: the room (chapter 3) now tells warm or cold instead of part words",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-23T22:37:17+00:00",
-     "ok": true,
-     "note": "design pass: one rule per chapter (room = warm/cold), 5 build tasks queued",
-     "source": "board note"
     }
    ]
   },
@@ -29373,8 +29458,8 @@
    "nextTask": null,
    "costTotalUsd": 65.02,
    "latestChange": {
-    "text": "Printed tiles use the same tile construction as the placed tiles (P1UL02 stage A)",
-    "at": "2026-10-25T00:46:28+00:00"
+    "text": "No accidental zoom on phones:",
+    "at": "2026-10-25T01:06:59+00:00"
    },
    "promo": {
     "files": {
@@ -29414,8 +29499,8 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-10-15T03:56:45+00:00",
-   "lastChange": "2026-10-25T00:46:28+00:00",
+   "firstSeen": "2026-10-15T03:57:48+00:00",
+   "lastChange": "2026-10-25T01:06:59+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -29525,6 +29610,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T01:06:59+00:00",
+     "ok": true,
+     "note": "No accidental zoom on phones:",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T00:46:28+00:00",
      "ok": true,
      "note": "Printed tiles use the same tile construction as the placed tiles (P1UL02 stage A)",
@@ -29588,12 +29679,6 @@
      "at": "2026-10-21T04:50:53+00:00",
      "ok": false,
      "note": "see",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-20T02:20:10+00:00",
-     "ok": true,
-     "note": "sequencer brief + build B2r",
      "source": "board note"
     }
    ]
@@ -30835,67 +30920,67 @@
  "releaseRegressed": [],
  "checksSummary": {
   "why": {
-   "yes": 158,
+   "yes": 159,
    "no": 4,
    "unknown": 0,
    "ran": 0
   },
   "expect": {
    "yes": 155,
-   "no": 7,
+   "no": 8,
    "unknown": 0,
    "ran": 0
   },
   "story": {
    "yes": 23,
    "no": 31,
-   "unknown": 108,
+   "unknown": 109,
    "ran": 0
   },
   "first_minute": {
    "yes": 13,
    "no": 0,
-   "unknown": 108,
+   "unknown": 109,
    "ran": 41
   },
   "a11y": {
    "yes": 0,
    "no": 19,
-   "unknown": 143,
+   "unknown": 144,
    "ran": 0
   },
   "credits": {
    "yes": 21,
    "no": 2,
-   "unknown": 139,
+   "unknown": 140,
    "ran": 0
   },
   "saves": {
    "yes": 16,
    "no": 0,
-   "unknown": 146,
+   "unknown": 147,
    "ran": 0
   },
   "standard": {
    "yes": 14,
    "no": 3,
-   "unknown": 145,
+   "unknown": 146,
    "ran": 0
   },
   "console": {
    "yes": 0,
    "no": 0,
-   "unknown": 162,
+   "unknown": 163,
    "ran": 0
   },
   "live": {
    "yes": 0,
    "no": 0,
-   "unknown": 162,
+   "unknown": 163,
    "ran": 0
   },
   "name": {
-   "yes": 159,
+   "yes": 160,
    "no": 1,
    "unknown": 2,
    "ran": 0
