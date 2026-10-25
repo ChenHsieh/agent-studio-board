@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T08:56:39+00:00",
+ "generated": "2026-10-25T08:58:59+00:00",
  "ops": {
-  "count": 12,
+  "count": 16,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 51,
-    "running": 2,
-    "doneToday": 4,
-    "minutes": 2120,
-    "estimateMinutes": 2120
+    "queued": 50,
+    "running": 1,
+    "doneToday": 5,
+    "minutes": 2040,
+    "estimateMinutes": 2040
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 2,
     "doneToday": 30,
-    "minutes": 120,
-    "estimateMinutes": 60
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
-  "queued": 52,
+  "queued": 51,
   "running": 3,
-  "doneToday": 34,
+  "doneToday": 35,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2240,
-  "estimatedFinish": "2026-10-26T20:16:39+00:00",
-  "estimateMinutes": 2120
+  "minutesRemaining": 2220,
+  "estimatedFinish": "2026-10-26T18:58:59+00:00",
+  "estimateMinutes": 2040
  },
  "lanes": [
   {
@@ -56,18 +56,18 @@
    "game": "remote-viewer",
    "task": "P1FS12_remote viewer one screen",
    "since": "2026-10-25T08:13:26+00:00",
-   "activity": "2026-10-25T08:56:24+00:00",
+   "activity": "2026-10-25T08:58:34+00:00",
    "commit": {
     "at": "2026-10-25T08:53:36+00:00",
     "subject": "wip: P1FS12_remote-viewer-one-screen (Codex lane autosave 04:53)"
    }
   },
   {
-   "worker": "Codex",
-   "game": "even-water",
-   "task": "P1FS28_even water one screen",
-   "since": "2026-10-25T08:42:41+00:00",
-   "activity": "2026-10-25T08:48:25+00:00",
+   "worker": "Claude",
+   "game": "pinch-points",
+   "task": "P1FS29_pinch points one screen",
+   "since": "2026-10-25T08:58:59+00:00",
+   "activity": "2026-10-25T08:58:59+00:00",
    "commit": null
   },
   {
@@ -80,7 +80,7 @@
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 1,
+ "claudeWorkers": 2,
  "apiSpentUsd": 320.27,
  "claudeInSession": {
   "runs": 288,
@@ -5937,7 +5937,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 79.43,
+   "costTotalUsd": 75.83,
    "latestChange": {
     "text": "No accidental zoom on phones:",
     "at": "2026-10-25T01:39:20+00:00"
@@ -5952,21 +5952,21 @@
    "why": "A water board game flooded in a tank, and a thread worrying that a public study-abroad fund flows to those already ahead.",
    "state": "ship",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 3
    },
-   "waitingOn": "even water one screen",
+   "waitingOn": "owner",
    "id": "even-water",
    "number": 131,
    "repo": "even-water",
    "title": "Even Water",
    "line": "Place a few stones so the water finds every cup before the deep pit drinks it; 12 villages.",
    "url": "https://chenhsieh.github.io/even-water/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "has real potential; refine the feel (slower, predictable, guided) and the look...",
    "shelfNote": "",
@@ -5980,33 +5980,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-25T08:48:25+00:00",
+   "lastChange": "2026-10-25T07:53:35+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
     "claudeRuns": 8,
-    "apiRuns": 0,
+    "apiRuns": 1,
     "codexTokens": 194790,
     "codexUsdEst": 0.23,
     "claudeUsdEst": 28.8,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
-    "totalUsdEst": 79.43
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
+    "totalUsdEst": 75.83
    },
    "tasks": [
     {
      "title": "P1FS28_even water one screen",
-     "state": "running",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude API",
      "plan": "even-water: one phone screen through the kit, Next on screen after a win",
-     "since": "2026-10-25T08:42:41+00:00",
-     "done": null,
+     "since": "2026-10-25T07:53:35+00:00",
+     "done": "2026-10-25T07:53:35+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1FS28 even-water one screen: DONE (Sonnet overflow worker, 2026-10-25). Commit on main; live bytes match; live gate PASS."
     },
     {
      "title": "P1EW01_visual round design",
@@ -6109,9 +6109,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 9
+    "done": 10
    },
    "verdict": {
     "date": "2026-10-22",
@@ -6119,7 +6119,7 @@
     "note": "Stones steer one pour so every cup gets some; the first-drop line is enough to reason and still leaves a puzzle"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T01:39:20+00:00",
@@ -6197,10 +6197,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 47.54,
+   "costTotalUsd": 51.14,
    "latestChange": {
-    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
-    "at": "2026-10-25T02:03:08+00:00"
+    "text": "One screen on phones: result sheet (P2FS04)",
+    "at": "2026-10-25T08:56:56+00:00"
    },
    "promo": null,
    "why": "A checklist post on how to pass as a continental philosopher, a prose poem's broken-off word, and a stick-figure meme of a speaker correcting himself.",
@@ -6234,7 +6234,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:37:21+00:00",
-   "lastChange": "2026-10-25T02:03:08+00:00",
+   "lastChange": "2026-10-25T08:56:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -6243,9 +6243,9 @@
     "codexTokens": 620398,
     "codexUsdEst": 0.74,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 12,
-    "earlierUsdEst": 43.2,
-    "totalUsdEst": 47.54
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
+    "totalUsdEst": 51.14
    },
    "tasks": [
     {
@@ -6330,6 +6330,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T08:56:56+00:00",
+     "ok": true,
+     "note": "One screen on phones: result sheet (P2FS04)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T02:03:08+00:00",
      "ok": true,
      "note": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -6394,12 +6400,6 @@
      "ok": true,
      "note": "fix: dragging a slip works, and each level shows its new rule",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-18T08:04:08+00:00",
-     "ok": true,
-     "note": "art- live : readable single-panel How to play pages and larger printed word slips; expressive graphite sceptic raises/lowers a finger with paper-and-pencil feedback sound; checked at 390x844 and 320x568, old save intact",
-     "source": "board note"
     }
    ]
   },
@@ -18842,7 +18842,7 @@
    ]
   },
   {
-   "nextTask": "pinch-points: one phone screen through the kit, Next...",
+   "nextTask": null,
    "costTotalUsd": 47.14,
    "latestChange": {
     "text": "Visual round design: three mocks (stone-rubbing album, paper-model sheet, the paper's...",
@@ -18871,8 +18871,8 @@
    "title": "Pinch Points",
    "line": "Pinch six stones flat as the surface flattens live; par set by search, plus a daily.",
    "url": "https://chenhsieh.github.io/pinch-points/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "turns an esoteric paper into an interactive game; explain the mechanism, show...",
    "shelfNote": "",
@@ -18886,7 +18886,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T20:47:18+00:00",
-   "lastChange": "2026-10-25T08:35:44+00:00",
+   "lastChange": "2026-10-25T08:58:59+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -18902,10 +18902,10 @@
    "tasks": [
     {
      "title": "P1FS29_pinch points one screen",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "pinch-points: one phone screen through the kit, Next on screen after a win",
-     "since": "2026-10-25T08:35:44+00:00",
+     "since": "2026-10-25T08:58:59+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -19014,8 +19014,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 7
    },
@@ -20546,7 +20546,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T16:38:08+00:00",
-   "lastChange": "2026-10-25T08:56:24+00:00",
+   "lastChange": "2026-10-25T08:58:34+00:00",
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 1,
@@ -22172,10 +22172,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 47.17,
+   "costTotalUsd": 50.77,
    "latestChange": {
-    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
-    "at": "2026-10-25T02:05:13+00:00"
+    "text": "One screen on phones: result sheet (P2FS04)",
+    "at": "2026-10-25T08:58:35+00:00"
    },
    "promo": null,
    "why": "A Taipei scooter street-racing web game seen in a post; weave a scooter through narrow Taipei alleys in Frogger-style hops.",
@@ -22209,7 +22209,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:00:20+00:00",
-   "lastChange": "2026-10-25T02:05:13+00:00",
+   "lastChange": "2026-10-25T08:58:35+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -22218,9 +22218,9 @@
     "codexTokens": 307606,
     "codexUsdEst": 0.37,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 13,
-    "earlierUsdEst": 46.8,
-    "totalUsdEst": 47.17
+    "earlierRounds": 14,
+    "earlierUsdEst": 50.4,
+    "totalUsdEst": 50.77
    },
    "tasks": [
     {
@@ -22262,6 +22262,12 @@
    "needsYou": null,
    "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-25T08:58:35+00:00",
+     "ok": true,
+     "note": "One screen on phones: result sheet (P2FS04)",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T02:05:13+00:00",
      "ok": true,
@@ -22327,12 +22333,6 @@
      "ok": true,
      "note": "holding a button or the board no longer selects text or opens the iPhone callout; hold test added",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-17T21:32:42+00:00",
-     "ok": true,
-     "note": "fix: holding a button or the board no longer selects text on iPhone",
-     "source": "main commit"
     }
    ]
   },
@@ -31808,7 +31808,7 @@
    "url": "https://chenhsieh.github.io/even-water/",
    "added": "2026-10-22",
    "try": "Place stones so one pour reaches every cup before the pit drinks it",
-   "busy": true,
+   "busy": false,
    "image": "promo/even-water/first.jpg"
   },
   {
