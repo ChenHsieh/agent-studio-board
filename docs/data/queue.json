@@ -1,5 +1,5 @@
 {
- "generated": 1792901045,
+ "generated": 1792901470,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -79,9 +79,9 @@
  },
  "overflow": {
   "codexOut": false,
-  "converted": 2,
-  "convertedRunning": 1,
-  "claudeWorkers": 2,
+  "converted": 1,
+  "convertedRunning": 0,
+  "claudeWorkers": 1,
   "claudeWorkerCap": 3,
   "handedBack": 0,
   "lastHandBack": null,
@@ -89,24 +89,23 @@
  },
  "tasks": [
   {
-   "id": "P1PP03_pinch-points-strategy-card-and-daily",
-   "request": "Pinch Points: a rule card before level 1, a hint per level, the rule on the result card, a better daily and share line",
-   "game": "Pinch Points",
+   "id": "P2BN06_couplet-woodblock-build",
+   "request": "Blackout Notice: build the woodblock page look picked in the couplet visual round",
+   "game": "Blackout Notice",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
    "kind": "build",
-   "size": "several repos",
+   "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P1PP02_pinch-points-show-the-movement"
+    "P2BN05_couplet-visual-round"
    ],
-   "priority": "P1",
-   "why": "A graphics-paper figure of a statue flattened two ways, and an old woodblock page of a perforated scholar's stone.",
+   "priority": "P2",
+   "why": "A scruffy hand-lettered hiring post and a job ad written mostly as a list of what the company is not.",
    "state": "running",
-   "at": 1792895380,
-   "created": 1792895380,
-   "wasCodex": true
+   "at": 1792840364,
+   "created": 1792840364
   },
   {
    "id": "P1MM03_marble-mechanisms-act-two",
@@ -507,6 +506,25 @@
    "created": 1792834247
   },
   {
+   "id": "P2PP04_pinch-points-visual-round-design",
+   "request": "Pinch Points: visual round with the taste spin, three looks and a pick",
+   "game": "Pinch Points",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1PP03_pinch-points-strategy-card-and-daily"
+   ],
+   "priority": "P1",
+   "why": "A graphics-paper figure of a statue flattened two ways, and an old woodblock page of a perforated scholar's stone.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792825169
+  },
+  {
    "id": "P1LW02_lot-waits-day-strip-and-trust",
    "request": "The Lot Waits: a seven-day strip, each lot's good days marked under it, and a trust number that moves",
    "game": "The Lot Waits",
@@ -523,25 +541,6 @@
    "waitingOn": [],
    "created": 1792895380,
    "wasCodex": true
-  },
-  {
-   "id": "P2BN06_couplet-woodblock-build",
-   "request": "Blackout Notice: build the woodblock page look picked in the couplet visual round",
-   "game": "Blackout Notice",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2BN05_couplet-visual-round"
-   ],
-   "priority": "P2",
-   "why": "A scruffy hand-lettered hiring post and a job ad written mostly as a list of what the company is not.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792840364
   },
   {
    "id": "P2HK00_which-one-to-drop-clarity",
@@ -1069,27 +1068,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P2PP04_pinch-points-visual-round-design",
-   "request": "Pinch Points: visual round with the taste spin, three looks and a pick",
-   "game": "Pinch Points",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1PP03_pinch-points-strategy-card-and-daily"
-   ],
-   "priority": "P1",
-   "why": "A graphics-paper figure of a statue flattened two ways, and an old woodblock page of a perforated scholar's stone.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1PP03_pinch-points-strategy-card-and-daily"
-   ],
-   "created": 1792825169
-  },
-  {
    "id": "P1LW03_lot-waits-first-minute-v2",
    "request": "The Lot Waits: a new first minute that shows both costs in three steps",
    "game": "The Lot Waits",
@@ -1533,6 +1511,26 @@
    "state": "done",
    "at": 1792878120,
    "created": 1792878120,
+   "wasCodex": true
+  },
+  {
+   "id": "P1PP03_pinch-points-strategy-card-and-daily",
+   "request": "Pinch Points: a rule card before level 1, a hint per level, the rule on the result card, a better daily and share line",
+   "game": "Pinch Points",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P1PP02_pinch-points-show-the-movement"
+   ],
+   "priority": "P1",
+   "why": "A graphics-paper figure of a statue flattened two ways, and an old woodblock page of a perforated scholar's stone.",
+   "state": "done",
+   "at": 1792895380,
+   "created": 1792895380,
    "wasCodex": true
   },
   {

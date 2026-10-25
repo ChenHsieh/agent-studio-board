@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T04:08:39+00:00",
+ "generated": "2026-10-25T04:10:58+00:00",
  "ops": {
-  "count": 14,
+  "count": 13,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 68,
+    "queued": 67,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2720,
-    "estimateMinutes": 2720
+    "minutes": 2680,
+    "estimateMinutes": 2680
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 69,
+  "queued": 68,
   "running": 2,
   "doneToday": 0,
   "lanes": {
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2900,
-  "estimatedFinish": "2026-10-27T01:28:39+00:00",
-  "estimateMinutes": 2720
+  "minutesRemaining": 2860,
+  "estimatedFinish": "2026-10-27T00:50:58+00:00",
+  "estimateMinutes": 2680
  },
  "lanes": [
   {
@@ -61,10 +61,10 @@
   },
   {
    "worker": "Claude",
-   "game": "pinch-points",
-   "task": "P1PP03_pinch points strategy card and daily",
-   "since": "2026-10-25T04:02:10+00:00",
-   "activity": "2026-10-25T04:08:21+00:00",
+   "game": "blackout-notice",
+   "task": "P2BN06_couplet woodblock build",
+   "since": "2026-10-25T04:09:59+00:00",
+   "activity": "2026-10-25T04:10:00+00:00",
    "commit": null
   }
  ],
@@ -1591,7 +1591,7 @@
    ]
   },
   {
-   "nextTask": "Blackout Notice: build the woodblock page look picked...",
+   "nextTask": null,
    "costTotalUsd": 51.12,
    "latestChange": {
     "text": "Couplet first minute: three lit taps on level 1, how-is-this-scored notes, line for...",
@@ -1620,8 +1620,8 @@
    "title": "Blackout Notice",
    "line": "Black out words on a stairwell notice until it says something kinder; 20 notices and a daily.",
    "url": "https://chenhsieh.github.io/blackout-notice/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Black out words on a stairwell notice until it says something kinder; 20",
    "shelfNote": "",
@@ -1639,7 +1639,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-25T03:21:21+00:00",
+   "lastChange": "2026-10-25T04:10:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -1655,10 +1655,10 @@
    "tasks": [
     {
      "title": "P2BN06_couplet woodblock build",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Blackout Notice: build the woodblock page look picked in the couplet visual round",
-     "since": "2026-10-24T11:12:44+00:00",
+     "since": "2026-10-25T04:09:59+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1767,8 +1767,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 12
    },
@@ -18742,15 +18742,15 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "pinch points strategy card and daily",
+   "waitingOn": "pinch points one screen",
    "id": "pinch-points",
    "number": 119,
    "repo": "pinch-points",
    "title": "Pinch Points",
    "line": "Pinch six stones flat as the surface flattens live; par set by search, plus a daily.",
    "url": "https://chenhsieh.github.io/pinch-points/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "turns an esoteric paper into an interactive game; explain the mechanism, show...",
    "shelfNote": "",
@@ -18764,34 +18764,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T20:47:18+00:00",
-   "lastChange": "2026-10-25T04:08:21+00:00",
+   "lastChange": "2026-10-25T02:29:40+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 0,
     "codexTokens": 280385,
     "codexUsdEst": 0.34,
-    "claudeUsdEst": 14.4,
-    "earlierRounds": 9,
-    "earlierUsdEst": 32.4,
+    "claudeUsdEst": 18.0,
+    "earlierRounds": 8,
+    "earlierUsdEst": 28.8,
     "totalUsdEst": 47.14
    },
    "tasks": [
-    {
-     "title": "P1PP03_pinch points strategy card and daily",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Pinch Points: a rule card before level 1, a hint per level, the rule on the result card, a better daily and share line",
-     "since": "2026-10-25T04:02:10+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1FS29_pinch points one screen",
      "state": "queued",
@@ -18819,6 +18805,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1PP03_pinch points strategy card and daily",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Pinch Points: a rule card before level 1, a hint per level, the rule on the result card, a better daily and share line",
+     "since": "2026-10-25T02:29:40+00:00",
+     "done": "2026-10-25T02:29:40+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1PP03 result (Sonnet). Published to pinch-points main ; live bytes match (game.js, game.css, index.html, explain.words.js); live page opened at 390x844 and 320x568: card opens after the first minute, 0 page errors;..."
     },
     {
      "title": "P1PP02_pinch points show the movement",
@@ -18893,9 +18893,9 @@
    ],
    "taskCounts": {
     "queued": 2,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": null,
    "needsYou": null,
