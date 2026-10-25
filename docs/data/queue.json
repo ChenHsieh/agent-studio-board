@@ -1,5 +1,5 @@
 {
- "generated": 1792919605,
+ "generated": 1792919743,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -79,33 +79,15 @@
  },
  "overflow": {
   "codexOut": false,
-  "converted": 2,
-  "convertedRunning": 1,
-  "claudeWorkers": 1,
+  "converted": 1,
+  "convertedRunning": 0,
+  "claudeWorkers": 0,
   "claudeWorkerCap": 3,
   "handedBack": 8,
   "lastHandBack": 1792914815,
   "lastHandBackN": 8
  },
  "tasks": [
-  {
-   "id": "P1FS30_flying-white-one-screen",
-   "request": "flying-white: one phone screen through the kit, Next on screen after a win",
-   "game": "Flying White",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A commentary on a 2002 martial-arts film that tells one story three ways, where the character for sword is written 19 ways.",
-   "state": "running",
-   "at": 1792914873,
-   "created": 1792914873,
-   "wasCodex": true
-  },
   {
    "id": "P2AX16_kit-fit-rollout-rumour-on-the-jetty",
    "request": "rumour-on-the-jetty: take the new play kit so the board and Undo fit a small phone",
@@ -124,7 +106,7 @@
    "state": "running",
    "at": 1792919292,
    "created": 1792919292,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P2FS04_one-screen-rollout-rest",
@@ -161,7 +143,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792907830,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P3PL10_tree-hero-why-rollout",
@@ -179,7 +161,27 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
+  },
+  {
+   "id": "P3PL15_flying-white-why-rollout",
+   "request": "Why this exists: finish the rollout on flying-white (new test failure: test/font.test.mjs, zh glyphs 偶制創原啟壓意控注然狀界)",
+   "game": "Flying White",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1FS30_flying-white-one-screen"
+   ],
+   "priority": "P1",
+   "why": "A commentary on a 2002 martial-arts film that tells one story three ways, where the character for sword is written 19 ways.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792908772,
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P3PL16_readable-nonsense-why-rollout",
@@ -199,7 +201,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P3SV54_glasshouse-merge-save-tests",
@@ -221,7 +223,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908660,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P1LW03_lot-waits-first-minute-v2",
@@ -261,7 +263,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792791317,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P2PS00_pigeon-salon-readable-board",
@@ -281,7 +283,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713005,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P2RO00_radish-omelette-colours-and-beats",
@@ -301,7 +303,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713431,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P2RS00_restored-blurry-neighbours-count",
@@ -321,7 +323,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792715918,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P3NY00_not-yet-a-real-choice",
@@ -341,7 +343,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792713432,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P3OR45_herbal-pages-stay-open-logic",
@@ -359,7 +361,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792724295,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P3PL08_refusal-detour-why-rollout",
@@ -377,7 +379,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P3PL12_name-to-carry-why-rollout",
@@ -395,7 +397,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P3PL14_speaking-stone-why-rollout",
@@ -413,7 +415,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P3PL17_metagenome-profilers-why-build",
@@ -431,7 +433,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908804,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P3PL07_gallery-guess-why-rollout",
@@ -449,7 +451,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P3PL09_the-zipper-why-rollout",
@@ -467,7 +469,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P3PL11_machine-rhythm-why-rollout",
@@ -485,7 +487,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P3PL18_silva-to-maaslin2-why-build",
@@ -503,7 +505,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908809,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P3d35_lens-screen-studio-320-fix",
@@ -521,7 +523,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792701959,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P2UX07_daily-brief-data",
@@ -560,7 +562,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792907965,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P2n88_watched-pot",
@@ -580,7 +582,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792907965,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P2n89_round-table",
@@ -600,7 +602,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792907965,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P2n90_iron-window-garden",
@@ -620,7 +622,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792907965,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P2n91_still-a-heap",
@@ -640,7 +642,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792907965,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P2n92_out-of-the-corner",
@@ -660,7 +662,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792907965,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P2n93_one-umbrella",
@@ -680,7 +682,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792907965,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P2n94_rolling-back",
@@ -700,7 +702,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792914815,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P2n95_gold-star",
@@ -720,7 +722,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792907965,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P2n96_ac-remote",
@@ -740,7 +742,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792907965,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P3OR44_kit-win-hold-and-higher-is-better",
@@ -758,7 +760,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792724493,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P3PL13_dancers-not-mad-why-rollout",
@@ -776,7 +778,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P3SV55_redacxiv-merge-save-tests",
@@ -797,7 +799,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908660,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P3SV56_grad-survivor-merge-save-test",
@@ -817,7 +819,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908660,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P2AX18_kit-fit-rollout-the-apprentice",
@@ -839,29 +841,7 @@
     "P1AX12_kit-new-rule-and-short-screen-fit"
    ],
    "created": 1792841709,
-   "estPercentOfWeek": 43.69
-  },
-  {
-   "id": "P3PL15_flying-white-why-rollout",
-   "request": "Why this exists: finish the rollout on flying-white (new test failure: test/font.test.mjs, zh glyphs 偶制創原啟壓意控注然狀界)",
-   "game": "Flying White",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1FS30_flying-white-one-screen"
-   ],
-   "priority": "P1",
-   "why": "A commentary on a 2002 martial-arts film that tells one story three ways, where the character for sword is written 19 ways.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1FS30_flying-white-one-screen"
-   ],
-   "created": 1792908772,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P3PL19_glasshouse-why-build",
@@ -883,7 +863,7 @@
     "P3SV54_glasshouse-merge-save-tests"
    ],
    "created": 1792908813,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P2HN00_herbal-pages-stay-open",
@@ -905,7 +885,7 @@
     "P3OR45_herbal-pages-stay-open-logic"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P2AX17_kit-fit-rollout-scribes-blotter",
@@ -927,7 +907,7 @@
     "P1AX12_kit-new-rule-and-short-screen-fit"
    ],
    "created": 1792841705,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P2KT01_kit-win-hold-and-higher-is-better",
@@ -949,7 +929,7 @@
     "P3OR44_kit-win-hold-and-higher-is-better"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P2LW04_lot-waits-reset-review",
@@ -1265,7 +1245,7 @@
    "state": "done",
    "at": 1792914815,
    "created": 1792914815,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P1FS19_chai-boil-one-screen",
@@ -1427,7 +1407,7 @@
    "state": "done",
    "at": 1792914815,
    "created": 1792914815,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P1FS28_even-water-one-screen",
@@ -1445,7 +1425,7 @@
    "state": "done",
    "at": 1792914815,
    "created": 1792914815,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   },
   {
    "id": "P1FS29_pinch-points-one-screen",
@@ -1463,6 +1443,24 @@
    "state": "done",
    "at": 1792917344,
    "created": 1792917344,
+   "wasCodex": true
+  },
+  {
+   "id": "P1FS30_flying-white-one-screen",
+   "request": "flying-white: one phone screen through the kit, Next on screen after a win",
+   "game": "Flying White",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A commentary on a 2002 martial-arts film that tells one story three ways, where the character for sword is written 19 ways.",
+   "state": "done",
+   "at": 1792914873,
+   "created": 1792914873,
    "wasCodex": true
   },
   {
@@ -2075,7 +2073,7 @@
    "state": "done",
    "at": 1792916306,
    "created": 1792916306,
-   "estPercentOfWeek": 43.69
+   "estPercentOfWeek": 44.0
   }
  ]
 }
