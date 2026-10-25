@@ -3,8 +3,8 @@
   {
    "executor": "aider openrouter/deepseek/deepseek-v4-flash",
    "role": "build",
-   "count": 58,
-   "firstTimePass": 93,
+   "count": 57,
+   "firstTimePass": 95,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
@@ -42,13 +42,15 @@
   {
    "executor": "aider openrouter/openai/gpt-4.1",
    "role": "build",
-   "count": 52,
-   "firstTimePass": 100,
-   "retries": 0,
+   "count": 53,
+   "firstTimePass": 98,
+   "retries": 3,
    "medianMinutes": null,
    "costPerPass": 0.0,
    "guessed": 0,
-   "topFailures": [],
+   "topFailures": [
+    "handed back after 3 tries"
+   ],
    "flag": "give more"
   },
   {
@@ -506,10 +508,10 @@
    "date": "2026-10-25",
    "task": "kit best possible words",
    "number": "",
-   "executor": "aider openrouter/deepseek/deepseek-v4-flash",
+   "executor": "aider openrouter/openai/gpt-4.1",
    "role": "build",
    "passed": "no",
-   "note": ""
+   "note": "handed back after 3 tries"
   },
   {
    "date": "2026-10-25",
