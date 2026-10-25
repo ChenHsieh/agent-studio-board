@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T05:53:33+00:00",
+ "generated": "2026-10-25T05:55:52+00:00",
  "ops": {
   "count": 3,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 59,
+    "queued": 60,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2360,
-    "estimateMinutes": 2360
+    "minutes": 2400,
+    "estimateMinutes": 2400
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
-    "doneToday": 3,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "running": 1,
+    "doneToday": 4,
+    "minutes": 120,
+    "estimateMinutes": 60
    }
   },
-  "queued": 60,
-  "running": 2,
-  "doneToday": 3,
+  "queued": 61,
+  "running": 1,
+  "doneToday": 4,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,19 +46,11 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2540,
-  "estimatedFinish": "2026-10-26T21:13:33+00:00",
-  "estimateMinutes": 2360
+  "minutesRemaining": 2520,
+  "estimatedFinish": "2026-10-26T21:55:52+00:00",
+  "estimateMinutes": 2400
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "clean-features",
-   "task": "P1CF06_review fixes story and notes",
-   "since": "2026-10-25T05:30:55+00:00",
-   "activity": "2026-10-25T05:50:22+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "chai-boil",
@@ -69,7 +61,7 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 319.92,
  "claudeInSession": {
   "runs": 288,
@@ -30711,7 +30703,7 @@
    ]
   },
   {
-   "nextTask": "clean-features: one phone screen, Next on screen after...",
+   "nextTask": "Make the 320-wide page check stop failing at...",
    "costTotalUsd": 80.06,
    "latestChange": {
     "text": "test: unit checks for the reset rules (per-mark cost, drops-left score, par vs...",
@@ -30734,15 +30726,15 @@
     "reviseRound": 1,
     "daysInState": 0
    },
-   "waitingOn": "review fixes story and notes",
+   "waitingOn": "flaky 320 today drag",
    "id": "clean-features",
    "number": 96,
    "repo": "clean-features",
    "title": "What the Dish Sees",
    "line": "Label each colony with the one shape it sees by placing.",
    "url": "https://chenhsieh.github.io/clean-features/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Find the playable frame for the latent-space game: a clear",
    "shelfNote": "",
@@ -30760,26 +30752,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-25T05:50:22+00:00",
+   "lastChange": "2026-10-25T05:54:42+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
-    "claudeRuns": 10,
+    "claudeRuns": 11,
     "apiRuns": 1,
     "codexTokens": 719119,
     "codexUsdEst": 0.86,
-    "claudeUsdEst": 36.0,
-    "earlierRounds": 12,
-    "earlierUsdEst": 43.2,
+    "claudeUsdEst": 39.6,
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
     "totalUsdEst": 80.06
    },
    "tasks": [
     {
-     "title": "P1CF06_review fixes story and notes",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "What the Dish Sees: say who you are, keep every picture in the notes, and say what a wrong sticker costs in the story",
-     "since": "2026-10-25T05:30:55+00:00",
+     "title": "P3CF07_flaky 320 today drag",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Make the 320-wide page check stop failing at random on today's dish",
+     "since": "2026-10-25T05:54:42+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -30801,6 +30793,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1CF06_review fixes story and notes",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "What the Dish Sees: say who you are, keep every picture in the notes, and say what a wrong sticker costs in the story",
+     "since": "2026-10-25T04:03:06+00:00",
+     "done": "2026-10-25T04:03:06+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1CF06 result (planner Opus, 2026-10-25). Live on main (https://chenhsieh.github.io/clean-features/). Live shell.js, strings.json, style.css and look.css match main byte for byte."
     },
     {
      "title": "P1CF02_story and strings",
@@ -30871,27 +30877,13 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "DONE (planner, Opus). Tests on main of clean-features; stranger review of the live page; verdict revise; fix task P1CF06 queued (Sonnet)."
-    },
-    {
-     "title": "P1CF00_core and story reset",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Clean Features: back to the core stage: why the player cares, what makes a neuron fire, and rules shown before the first move.",
-     "since": "2026-10-24T00:24:14+00:00",
-     "done": "2026-10-24T00:24:14+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "P1CF00_core-and-story-reset: design reset of Clean Features (What the Dish Sees). DONE."
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 1,
+    "queued": 2,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 15
+    "done": 16
    },
    "verdict": {
     "date": "2026-10-25",
