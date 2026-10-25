@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T03:12:15+00:00",
+ "generated": "2026-10-25T03:14:33+00:00",
  "ops": {
-  "count": 28,
+  "count": 22,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -28,15 +28,15 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 4,
-    "doneToday": 90,
-    "minutes": 300,
-    "estimateMinutes": 150
+    "running": 3,
+    "doneToday": 91,
+    "minutes": 240,
+    "estimateMinutes": 120
    }
   },
   "queued": 71,
-  "running": 4,
-  "doneToday": 93,
+  "running": 3,
+  "doneToday": 94,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,8 +46,8 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3100,
-  "estimatedFinish": "2026-10-27T01:52:15+00:00",
+  "minutesRemaining": 3040,
+  "estimatedFinish": "2026-10-27T01:54:33+00:00",
   "estimateMinutes": 2800
  },
  "lanes": [
@@ -61,18 +61,10 @@
   },
   {
    "worker": "Claude",
-   "game": "fool-the-algorithm",
-   "task": "P1FS11_forager one screen",
-   "since": "2026-10-25T02:56:05+00:00",
-   "activity": "2026-10-25T03:11:08+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
    "game": "blackout-notice",
    "task": "P2BN07_fix couplet first minute",
    "since": "2026-10-25T03:10:47+00:00",
-   "activity": "2026-10-25T03:10:53+00:00",
+   "activity": "2026-10-25T03:14:19+00:00",
    "commit": null
   },
   {
@@ -85,7 +77,7 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 4,
+ "claudeWorkers": 3,
  "apiSpentUsd": 319.02,
  "claudeInSession": {
   "runs": 288,
@@ -1643,7 +1635,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-25T03:10:53+00:00",
+   "lastChange": "2026-10-25T03:14:19+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -1860,10 +1852,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 54.16,
+   "costTotalUsd": 57.76,
    "latestChange": {
-    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
-    "at": "2026-10-25T01:26:51+00:00"
+    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+    "at": "2026-10-25T03:08:58+00:00"
    },
    "promo": {
     "files": {
@@ -1903,7 +1895,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-09-20T20:57:49+00:00",
-   "lastChange": "2026-10-25T01:26:51+00:00",
+   "lastChange": "2026-10-25T03:08:58+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -1912,9 +1904,9 @@
     "codexTokens": 131726,
     "codexUsdEst": 0.16,
     "claudeUsdEst": 18.0,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
-    "totalUsdEst": 54.16
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
+    "totalUsdEst": 57.76
    },
    "tasks": [
     {
@@ -2031,6 +2023,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T03:08:58+00:00",
+     "ok": true,
+     "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T01:26:51+00:00",
      "ok": true,
      "note": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -2095,12 +2093,6 @@
      "ok": true,
      "note": "feat: a case folder with real exhibits, stamp the Air Force's verdict",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T03:42:08+00:00",
-     "ok": true,
-     "note": "P1b10 clue deck harvested:",
-     "source": "board note"
     }
    ]
   },
@@ -8121,23 +8113,23 @@
     "caption": "Change letters to widen the greedy gap."
    },
    "why": "Now The Forager: drag berries so a bird that always flies to the closest berry takes a much longer trip than the shortest round trip.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 5
+    "daysInState": 0
    },
-   "waitingOn": "forager one screen",
+   "waitingOn": "none",
    "id": "fool-the-algorithm",
    "number": 94,
    "repo": "fool-the-algorithm",
    "title": "Forager",
    "line": "Drag berries so a nearest-first bird flies the long way.",
    "url": "https://chenhsieh.github.io/forager/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Show per-path distance bars and named berries, lay the two",
    "shelfNote": "",
@@ -8155,29 +8147,29 @@
    "cost": {
     "apiUsd": 10.18,
     "codexRuns": 3,
-    "claudeRuns": 6,
+    "claudeRuns": 7,
     "apiRuns": 1,
     "codexTokens": 874871,
     "codexUsdEst": 1.05,
-    "claudeUsdEst": 21.6,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
+    "claudeUsdEst": 25.2,
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
     "totalUsdEst": 83.23
    },
    "tasks": [
     {
      "title": "P1FS11_forager one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "forager: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T02:56:05+00:00",
-     "done": null,
+     "since": "2026-10-25T02:09:58+00:00",
+     "done": "2026-10-25T02:09:58+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1FS11 Forager one screen:"
     },
     {
      "title": "P1FG00_forager birds and play pause",
@@ -8280,9 +8272,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 10
+    "done": 11
    },
    "verdict": {
     "date": "2026-10-19",
@@ -8290,7 +8282,7 @@
     "note": "Show per-path distance bars and named berries, lay the two"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T03:11:08+00:00",
