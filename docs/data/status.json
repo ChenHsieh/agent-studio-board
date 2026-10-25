@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T00:40:03+00:00",
+ "generated": "2026-10-25T00:42:23+00:00",
  "ops": {
   "count": 3,
   "notes": [
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 65,
+    "queued": 66,
     "running": 0,
-    "doneToday": 2,
-    "minutes": 2600,
-    "estimateMinutes": 2600
+    "doneToday": 3,
+    "minutes": 2640,
+    "estimateMinutes": 2640
    },
    "Claude": {
     "queued": 1,
@@ -34,9 +34,9 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 66,
+  "queued": 67,
   "running": 1,
-  "doneToday": 79,
+  "doneToday": 80,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2720,
-  "estimatedFinish": "2026-10-26T20:00:03+00:00",
-  "estimateMinutes": 2600
+  "minutesRemaining": 2760,
+  "estimatedFinish": "2026-10-26T20:42:23+00:00",
+  "estimateMinutes": 2640
  },
  "lanes": [
   {
@@ -25914,8 +25914,8 @@
    ]
   },
   {
-   "nextTask": "The Lot Waits: a new first minute that...",
-   "costTotalUsd": 90.0,
+   "nextTask": "The Lot Waits: a seven-day strip, each lot's...",
+   "costTotalUsd": 86.4,
    "latestChange": {
     "text": "see",
     "at": "2026-10-24T23:43:44+00:00"
@@ -25958,20 +25958,34 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:14:25+00:00",
-   "lastChange": "2026-10-24T23:43:44+00:00",
+   "lastChange": "2026-10-25T00:40:28+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
     "claudeRuns": 4,
-    "apiRuns": 1,
+    "apiRuns": 2,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 14.4,
-    "earlierRounds": 21,
-    "earlierUsdEst": 75.6,
-    "totalUsdEst": 90.0
+    "earlierRounds": 20,
+    "earlierUsdEst": 72.0,
+    "totalUsdEst": 86.4
    },
    "tasks": [
+    {
+     "title": "P1LW02_lot waits day strip and trust",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "The Lot Waits: a seven-day strip, each lot's good days marked under it, and a trust number that moves",
+     "since": "2026-10-25T00:40:28+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1LW03_lot waits first minute v2",
      "state": "queued",
@@ -25979,6 +25993,20 @@
      "plan": "The Lot Waits: a new first minute that shows both costs in three steps",
      "since": "2026-10-24T17:22:08+00:00",
      "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1LW02_lot waits day strip and trust",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "The Lot Waits: a seven-day strip, each lot's good days marked under it, and a trust number that moves",
+     "since": "2026-10-24T23:43:44+00:00",
+     "done": "2026-10-24T23:43:44+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -26058,10 +26086,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": null,
    "needsYou": "Native read of the 14 composed poems and their plain-language lines is owed. Suggest: one native read of all fourteen before the share card goes out.",
