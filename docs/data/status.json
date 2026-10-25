@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T09:55:11+00:00",
+ "generated": "2026-10-25T09:57:35+00:00",
  "ops": {
-  "count": 34,
+  "count": 25,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 58,
+    "queued": 87,
     "running": 0,
     "doneToday": 7,
-    "minutes": 2320,
-    "estimateMinutes": 2320
+    "minutes": 3480,
+    "estimateMinutes": 3480
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 59,
+  "queued": 88,
   "running": 1,
   "doneToday": 39,
   "lanes": {
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2440,
-  "estimatedFinish": "2026-10-27T00:35:11+00:00",
-  "estimateMinutes": 2320
+  "minutesRemaining": 3600,
+  "estimatedFinish": "2026-10-27T19:57:35+00:00",
+  "estimateMinutes": 3480
  },
  "lanes": [
   {
@@ -581,7 +581,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "alias-loaf: the whole game fits one phone screen...",
    "costTotalUsd": 61.2,
    "latestChange": {
     "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
@@ -589,23 +589,23 @@
    },
    "promo": null,
    "why": "A screenshot of a long keyword-filter spreadsheet plus photos of a tray of slice-and-bake cookies with swirled patterns.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "alias loaf one screen",
    "id": "alias-loaf",
    "number": 33,
    "repo": "alias-loaf",
    "title": "Alias Loaf",
    "line": "Set the cutter to catch one seed family.",
    "url": "https://chenhsieh.github.io/alias-loaf/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Introduce the mechanics one at a time and give the player a",
    "shelfNote": "",
@@ -619,7 +619,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-14T23:09:53+00:00",
-   "lastChange": "2026-10-24T21:52:50+00:00",
+   "lastChange": "2026-10-25T09:56:19+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -633,6 +633,20 @@
     "totalUsdEst": 61.2
    },
    "tasks": [
+    {
+     "title": "P2FS53_alias loaf one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "alias-loaf: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:56:19+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2FM35_alias loaf first minute",
      "state": "done",
@@ -677,14 +691,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-24T21:52:50+00:00",
@@ -1607,7 +1621,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "blackout-notice: the whole game fits one phone screen...",
    "costTotalUsd": 51.12,
    "latestChange": {
     "text": "One screen on phones: port_onescreen (kit 4) (P2FS04)",
@@ -1621,13 +1635,13 @@
     "caption": "Black out words on a stairwell notice until it says something kinder; 20 notices and a daily."
    },
    "why": "A scruffy hand-lettered hiring post and a job ad written mostly as a list of what the company is not.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 0
+    "daysInState": 1
    },
    "waitingOn": "owner",
    "id": "blackout-notice",
@@ -1636,8 +1650,8 @@
    "title": "Blackout Notice",
    "line": "Black out words on a stairwell notice until it says something kinder; 20 notices and a daily.",
    "url": "https://chenhsieh.github.io/blackout-notice/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Black out words on a stairwell notice until it says something kinder; 20",
    "shelfNote": "",
@@ -1655,7 +1669,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-25T09:16:57+00:00",
+   "lastChange": "2026-10-25T09:56:05+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -1669,6 +1683,20 @@
     "totalUsdEst": 51.12
    },
    "tasks": [
+    {
+     "title": "P2FS50_blackout notice one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "blackout-notice: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:56:05+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2BN07_fix couplet first minute",
      "state": "done",
@@ -1766,24 +1794,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;pr"
-    },
-    {
-     "title": "P2BN01_blackout notice read it back",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Blackout Notice: the result reads your new notice back, Post fits at 320, rule cards come before the first stroke",
-     "since": "2026-10-23T01:19:42+00:00",
-     "done": "2026-10-23T01:19:42+00:00",
-     "reviewed": false,
-     "minutes": 14,
-     "tokens": 141676,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "feat: Read back the posted notice"
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 13
@@ -1794,7 +1808,7 @@
     "note": "The couplet game is a real choice and the reveal is the payoff, but nothing teaches the first move and the reveal marks are not explained"
    },
    "needsYou": "Read the 20 notices before it is promoted: the wording was written by the agent and no person has read it. Suggest: read levels 1 to 20 once, fix tone, then promote.",
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T09:16:57+00:00",
@@ -2371,7 +2385,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "checking-desk: the whole game fits one phone screen...",
    "costTotalUsd": 47.0,
    "latestChange": {
     "text": "One screen on phones: port_onescreen (kit 2) (P2FS04)",
@@ -2385,23 +2399,23 @@
     "caption": "Six night shifts at a checking desk, each proved by a solver, plus a daily; Chinese and English."
    },
    "why": "An essay on cheap AI output and a flood of machine-made maths papers that experts must check at their own cost.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "checking desk one screen",
    "id": "checking-desk",
    "number": 124,
    "repo": "checking-desk",
    "title": "Checking Desk",
    "line": "Six night shifts at a checking desk, each proved by a solver, plus a daily; Chinese and English.",
    "url": "https://chenhsieh.github.io/checking-desk/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Six night shifts at a checking desk, each proved by a solver, plus a daily;",
    "shelfNote": "",
@@ -2415,7 +2429,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T02:23:43+00:00",
-   "lastChange": "2026-10-25T09:13:34+00:00",
+   "lastChange": "2026-10-25T09:56:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -2429,6 +2443,20 @@
     "totalUsdEst": 47.0
    },
    "tasks": [
+    {
+     "title": "P2FS61_checking desk one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "checking-desk: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:56:57+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1CD02_night desk visual build",
      "state": "done",
@@ -2473,14 +2501,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T09:13:34+00:00",
@@ -2818,7 +2846,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "coat-corridor: the whole game fits one phone screen...",
    "costTotalUsd": 32.63,
    "latestChange": {
     "text": "One screen on phones: port_onescreen (kit 2) (P2FS04)",
@@ -2832,23 +2860,23 @@
     "caption": "Six floors of coats and cloth: clip, double stitch, and a certified daily."
    },
    "why": "A fashion clip of white lab coats worn over loud colours in a tiled hospital corridor.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "coat corridor one screen",
    "id": "coat-corridor",
    "number": 122,
    "repo": "coat-corridor",
    "title": "Coat Corridor",
    "line": "Six floors of coats and cloth: clip, double stitch, and a certified daily.",
    "url": "https://chenhsieh.github.io/coat-corridor/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Six floors of coats and cloth: clip, double stitch, and a certified daily.",
    "shelfNote": "",
@@ -2862,7 +2890,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:52:34+00:00",
-   "lastChange": "2026-10-25T09:12:51+00:00",
+   "lastChange": "2026-10-25T09:57:30+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -2876,6 +2904,20 @@
     "totalUsdEst": 32.63
    },
    "tasks": [
+    {
+     "title": "P2FS68_coat corridor one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "coat-corridor: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:57:30+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3OR22_coat corridor engine test",
      "state": "done",
@@ -2906,14 +2948,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 2
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T09:12:51+00:00",
@@ -3499,7 +3541,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "nesting-scrap: the whole game fits one phone screen...",
    "costTotalUsd": 65.55,
    "latestChange": {
     "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
@@ -3513,23 +3555,23 @@
     "caption": "Cut cookies from a sheet of dough and leave as little."
    },
    "why": "A laser-cutting nesting sheet and a tray of icebox cookies from the feed round.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 0
+    "daysInState": 5
    },
-   "waitingOn": "none",
+   "waitingOn": "nesting scrap one screen",
    "id": "nesting-scrap",
    "number": 66,
    "repo": "nesting-scrap",
    "title": "Cookie Cutter",
    "line": "Cut cookies from a sheet of dough and leave as little.",
    "url": "https://chenhsieh.github.io/nesting-scrap/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Give the nesting puzzle a specific taste and twist",
    "shelfNote": "",
@@ -3543,7 +3585,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:30:32+00:00",
-   "lastChange": "2026-10-25T03:35:47+00:00",
+   "lastChange": "2026-10-25T09:55:29+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -3557,6 +3599,20 @@
     "totalUsdEst": 65.55
    },
    "tasks": [
+    {
+     "title": "P2FS42_nesting scrap one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "nesting-scrap: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:55:29+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SD15_studio standard nesting scrap",
      "state": "done",
@@ -3629,7 +3685,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 5
@@ -3640,7 +3696,7 @@
     "note": "Smooth but no taste yet"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T03:35:47+00:00",
@@ -6397,7 +6453,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "felt-years: the whole game fits one phone screen...",
    "costTotalUsd": 69.62,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -6411,23 +6467,23 @@
     "caption": "Felt Years is a quiet solo puzzle about a goat whose life."
    },
    "why": "A handwritten derivation that life's felt midpoint is about 18 if felt time runs as dx/x, plus a log-time ruler post.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 0
+    "daysInState": 4
    },
-   "waitingOn": "none",
+   "waitingOn": "felt years one screen",
    "id": "felt-years",
    "number": 98,
    "repo": "felt-years",
    "title": "Felt Years",
    "line": "Felt Years is a quiet solo puzzle about a goat whose life.",
    "url": "https://chenhsieh.github.io/felt-years/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "A story for the proportional-time idea, a stated goal",
    "shelfNote": "",
@@ -6441,7 +6497,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T23:11:23+00:00",
-   "lastChange": "2026-10-25T01:48:02+00:00",
+   "lastChange": "2026-10-25T09:56:43+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
@@ -6455,6 +6511,20 @@
     "totalUsdEst": 69.62
    },
    "tasks": [
+    {
+     "title": "P2FS58_felt years one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "felt-years: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:56:43+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SD17_studio standard felt years",
      "state": "done",
@@ -6552,24 +6622,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Changed: level-2 forward-rule loop, save migration, Chinese labels, compact controls, clean preview."
-    },
-    {
-     "title": "review_felt years",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-18T08:07:38+00:00",
-     "done": "2026-10-18T08:07:38+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "For a player: the paragraphs about Janet, ln 20 and James under the board are gone. That fix came from the codex art pass, which was never pushed; it is now live. The board now shows how many firsts are left. A line..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 9
@@ -6580,7 +6636,7 @@
     "note": "Cannot understand it: needs a plain first minute"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:48:02+00:00",
@@ -7105,7 +7161,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "fly-song: the whole game fits one phone screen...",
    "costTotalUsd": 43.47,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -7120,23 +7176,23 @@
     "caption": "Tap a fly's courtship song."
    },
    "why": "The MaleCNS v1.0 fly connectome and real recorded fruit-fly courtship song driven by its song neuron.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 0
+    "daysInState": 6
    },
-   "waitingOn": "none",
+   "waitingOn": "fly song one screen",
    "id": "fly-song",
    "number": 17,
    "repo": "fly-song",
    "title": "Fly Song",
    "line": "Tap a fly's courtship song.",
    "url": "https://chenhsieh.github.io/fly-song/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Decide how the fly rhythm game differs from the other",
    "shelfNote": "",
@@ -7150,7 +7206,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-09-11T21:17:44+00:00",
-   "lastChange": "2026-10-25T01:37:34+00:00",
+   "lastChange": "2026-10-25T09:56:14+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -7164,6 +7220,20 @@
     "totalUsdEst": 43.47
    },
    "tasks": [
+    {
+     "title": "P2FS52_fly song one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "fly-song: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:56:14+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3OR63_name fly song share",
      "state": "done",
@@ -7208,7 +7278,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
@@ -7219,7 +7289,7 @@
     "note": "Distinct from the carving game: real song from a simulated brain; lead with hearing it"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:37:34+00:00",
@@ -7296,7 +7366,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "fly-swarm: the whole game fits one phone screen...",
    "costTotalUsd": 43.72,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -7311,23 +7381,23 @@
     "caption": "Lead a swarm of flies with your finger."
    },
    "why": "Steering responses measured from the MaleCNS v1.0 fly connectome's visual-to-descending neuron wiring.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "fly swarm one screen",
    "id": "fly-swarm",
    "number": 18,
    "repo": "fly-swarm",
    "title": "Fly Swarm",
    "line": "",
    "url": "https://chenhsieh.github.io/fly-swarm/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Game-design pass: a goal and a decision per round",
    "shelfNote": "",
@@ -7341,7 +7411,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-09-12T00:28:41+00:00",
-   "lastChange": "2026-10-25T01:39:30+00:00",
+   "lastChange": "2026-10-25T09:55:24+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -7355,6 +7425,20 @@
     "totalUsdEst": 43.72
    },
    "tasks": [
+    {
+     "title": "P2FS41_fly swarm one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "fly-swarm: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:55:24+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3OR64_name fly swarm title",
      "state": "done",
@@ -7413,14 +7497,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:39:30+00:00",
@@ -9267,7 +9351,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "glyph-gates: the whole game fits one phone screen...",
    "costTotalUsd": 50.88,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -9282,23 +9366,23 @@
     "caption": "Open a path by pairing marks at each gate."
    },
    "why": "A post of runes all built from nine straight lines, plus a magazine post on Waddington's developmental landscape drawings.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "glyph gates one screen",
    "id": "glyph-gates",
    "number": 27,
    "repo": "glyph-gates",
    "title": "Glyph Gates",
    "line": "Open a path by pairing marks at each gate.",
    "url": "https://chenhsieh.github.io/glyph-gates/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Find the game core and story before any visual work",
    "shelfNote": "",
@@ -9316,7 +9400,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-13T11:34:12+00:00",
-   "lastChange": "2026-10-25T01:42:29+00:00",
+   "lastChange": "2026-10-25T09:56:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -9330,6 +9414,20 @@
     "totalUsdEst": 50.88
    },
    "tasks": [
+    {
+     "title": "P2FS49_glyph gates one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "glyph-gates: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:56:00+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SD20_studio standard glyph gates",
      "state": "done",
@@ -9374,14 +9472,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:42:29+00:00",
@@ -9814,7 +9912,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "grub-band: the whole game fits one phone screen...",
    "costTotalUsd": 43.2,
    "latestChange": {
     "text": "One screen on phones: port_onescreen (kit 2) (P2FS04)",
@@ -9828,23 +9926,23 @@
     "caption": "Fill a foam box with grubs to build a tune; four levels, a daily tune and a shareable recording."
    },
    "why": "A bio-art piece of mealworms on foam with contact microphones played through a controller, plus a radial audio visualiser.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "grub band one screen",
    "id": "grub-band",
    "number": 120,
    "repo": "grub-band",
    "title": "Grub Band",
    "line": "Fill a foam box with grubs to build a tune; four levels, a daily tune and a shareable recording.",
    "url": "https://chenhsieh.github.io/grub-band/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Fill a foam box with grubs to build a tune; four levels, a daily tune and a",
    "shelfNote": "",
@@ -9858,7 +9956,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T20:47:27+00:00",
-   "lastChange": "2026-10-25T09:15:11+00:00",
+   "lastChange": "2026-10-25T09:56:47+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -9872,6 +9970,20 @@
     "totalUsdEst": 43.2
    },
    "tasks": [
+    {
+     "title": "P2FS59_grub band one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "grub-band: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:56:47+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2GB00_grub band daily box generates slowly",
      "state": "done",
@@ -9916,14 +10028,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T09:15:11+00:00",
@@ -10957,7 +11069,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "hit-or-kit: the whole game fits one phone screen...",
    "costTotalUsd": 54.0,
    "latestChange": {
     "text": "One screen on phones: port_onescreen (kit 2) (P2FS04)",
@@ -10971,23 +11083,23 @@
     "caption": "Open sample tubes in a freezer box and publish or drop a microbiome finding; 25 cases and a daily."
    },
    "why": "Open sample tubes and decide whether a microbiome finding is real or a reagent-kit contaminant: publish or drop.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "hit or kit one screen",
    "id": "hit-or-kit",
    "number": 126,
    "repo": "hit-or-kit",
    "title": "Hit or Kit",
    "line": "Open sample tubes in a freezer box and publish or drop a microbiome finding; 25 cases and a daily.",
    "url": "https://chenhsieh.github.io/hit-or-kit/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Open sample tubes in a freezer box and publish or drop a microbiome finding; 25",
    "shelfNote": "",
@@ -11005,7 +11117,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T04:19:06+00:00",
-   "lastChange": "2026-10-25T09:17:28+00:00",
+   "lastChange": "2026-10-25T09:57:06+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -11019,6 +11131,20 @@
     "totalUsdEst": 54.0
    },
    "tasks": [
+    {
+     "title": "P2FS63_hit or kit one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "hit-or-kit: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:57:06+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2HK00_which one to drop clarity",
      "state": "done",
@@ -11077,14 +11203,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T09:17:28+00:00",
@@ -14524,7 +14650,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "matchmaker-chat: the whole game fits one phone screen...",
    "costTotalUsd": 62.09,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -14538,23 +14664,23 @@
     "caption": "Auntie sends a photo of a boy, then picture clues one."
    },
    "why": "A viral family chat where a relative asks about a boy and the reply lands before she has finished.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "matchmaker chat one screen",
    "id": "matchmaker-chat",
    "number": 63,
    "repo": "matchmaker-chat",
    "title": "Matchmaker Chat",
    "line": "Auntie sends a photo of a boy, then picture clues one.",
    "url": "https://chenhsieh.github.io/matchmaker-chat/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Turn the rival-wingmen idea into a visual arms-race puzzle",
    "shelfNote": "",
@@ -14568,7 +14694,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T21:39:26+00:00",
-   "lastChange": "2026-10-25T01:45:48+00:00",
+   "lastChange": "2026-10-25T09:55:42+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -14582,6 +14708,20 @@
     "totalUsdEst": 62.09
    },
    "tasks": [
+    {
+     "title": "P2FS45_matchmaker chat one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "matchmaker-chat: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:55:42+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SD27_studio standard matchmaker chat",
      "state": "done",
@@ -14668,14 +14808,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 6
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:45:48+00:00",
@@ -16685,7 +16825,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "nobody-looking: the whole game fits one phone screen...",
    "costTotalUsd": 68.66,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -16699,23 +16839,23 @@
     "caption": "Twelve shelves of eyes and mouths: slide pieces until no face is left."
    },
    "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 0
+    "daysInState": 2
    },
-   "waitingOn": "none",
+   "waitingOn": "nobody looking one screen",
    "id": "nobody-looking",
    "number": 127,
    "repo": "nobody-looking",
    "title": "Nobody Looking",
    "line": "Twelve shelves of eyes and mouths: slide pieces until no face is left.",
    "url": "https://chenhsieh.github.io/nobody-looking/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Slide eyes and mouths until no face is left; placeholder shapes, 12 shelves",
    "shelfNote": "",
@@ -16729,7 +16869,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T17:56:06+00:00",
-   "lastChange": "2026-10-25T01:43:12+00:00",
+   "lastChange": "2026-10-25T09:55:37+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -16743,6 +16883,34 @@
     "totalUsdEst": 68.66
    },
    "tasks": [
+    {
+     "title": "P2FS44_nobody looking one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "nobody-looking: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:55:37+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P2FS43_nobody looking win sheet tests",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "nobody-looking: put the pinned win sheet in without breaking the game's own tests",
+     "since": "2026-10-25T09:55:33+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1NL03_daily from the hard bank",
      "state": "done",
@@ -16826,38 +16994,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "OR LANE OK: Test: test/engine.test.mjs | tail -1 | grep -qx 'ok 6 cases'"
-    },
-    {
-     "title": "P2FM01_nobody looking first minute",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Nobody Looking: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T20:10:42+00:00",
-     "done": "2026-10-22T20:10:42+00:00",
-     "reviewed": false,
-     "minutes": 20,
-     "tokens": 215851,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "feat: teach the first shelf through play"
-    },
-    {
-     "title": "nobody looking visual build",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "nobody-looking: build the visual round from the design",
-     "since": "2026-10-22T19:40:54+00:00",
-     "done": "2026-10-22T19:40:54+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Nobody Looking now looks like a screened dish cabinet: plates and bowls on mint shelves, pinned dishes on a nail, blue dashed face triangle clearest. Live, bytes match, all gates pass (12/12, playable, UI, feel, touch..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 10
@@ -16868,7 +17008,7 @@
     "note": "not at ship level yet; back to refining"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:43:12+00:00",
@@ -17435,7 +17575,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "one-script: the whole game fits one phone screen...",
    "costTotalUsd": 32.62,
    "latestChange": {
     "text": "One screen on phones: port_onescreen (kit 2) (P2FS04)",
@@ -17449,23 +17589,23 @@
     "caption": "Eight maps with par from an exact solver; a greedy bot loses two or more shelves on six of them."
    },
    "why": "A commentary on a 2002 film told three ways, its many ways of writing the character for sword, and the Qin unification of script.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "one script one screen",
    "id": "one-script",
    "number": 118,
    "repo": "one-script",
    "title": "One Script",
    "line": "Eight maps with par from an exact solver; a greedy bot loses two or more shelves on six of them.",
    "url": "https://chenhsieh.github.io/one-script/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Eight maps with par from an exact solver; a greedy bot loses two or more",
    "shelfNote": "",
@@ -17483,7 +17623,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T19:48:04+00:00",
-   "lastChange": "2026-10-25T09:16:25+00:00",
+   "lastChange": "2026-10-25T09:57:02+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -17497,6 +17637,20 @@
     "totalUsdEst": 32.62
    },
    "tasks": [
+    {
+     "title": "P2FS62_one script one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "one-script: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:57:02+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3OR14_one script engine test",
      "state": "done",
@@ -17527,14 +17681,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 2
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T09:16:25+00:00",
@@ -18191,7 +18345,7 @@
    ]
   },
   {
-   "nextTask": "Review of the first build (queued)",
+   "nextTask": "own-ground: the whole game fits one phone screen...",
    "costTotalUsd": 39.81,
    "latestChange": {
     "text": "One screen on phones: port_onescreen (kit 4) (P2FS04)",
@@ -18213,7 +18367,7 @@
     "reviseRound": 0,
     "daysInState": 3
    },
-   "waitingOn": "none",
+   "waitingOn": "own ground one screen",
    "id": "own-ground",
    "number": 138,
    "repo": "own-ground",
@@ -18235,7 +18389,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T19:36:08+00:00",
-   "lastChange": "2026-10-25T09:22:57+00:00",
+   "lastChange": "2026-10-25T09:57:26+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -18249,6 +18403,20 @@
     "totalUsdEst": 39.81
    },
    "tasks": [
+    {
+     "title": "P2FS67_own ground one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "own-ground: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:57:26+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2RL35_merge credits own ground",
      "state": "done",
@@ -18321,7 +18489,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 5
@@ -18673,7 +18841,7 @@
    ]
   },
   {
-   "nextTask": "Pigeon Salon: label the wall row, readable seed...",
+   "nextTask": "pigeon-salon: the whole game fits one phone screen...",
    "costTotalUsd": 36.16,
    "latestChange": {
     "text": "One screen on phones: port_onescreen (kit 4) (P2FS04)",
@@ -18695,7 +18863,7 @@
     "reviseRound": 1,
     "daysInState": 3
    },
-   "waitingOn": "pigeon salon readable board",
+   "waitingOn": "pigeon salon one screen",
    "id": "pigeon-salon",
    "number": 135,
    "repo": "pigeon-salon",
@@ -18717,7 +18885,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T19:12:54+00:00",
-   "lastChange": "2026-10-25T09:21:11+00:00",
+   "lastChange": "2026-10-25T09:57:21+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -18731,6 +18899,20 @@
     "totalUsdEst": 36.16
    },
    "tasks": [
+    {
+     "title": "P2FS66_pigeon salon one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "pigeon-salon: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:57:21+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2PS00_pigeon salon readable board",
      "state": "queued",
@@ -18817,7 +18999,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 5
@@ -20364,7 +20546,7 @@
    ]
   },
   {
-   "nextTask": "Why this exists: finish the rollout on refusal-detour...",
+   "nextTask": "refusal-detour: the whole game fits one phone screen...",
    "costTotalUsd": 43.77,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -20386,7 +20568,7 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "refusal detour why rollout",
+   "waitingOn": "refusal detour one screen",
    "id": "refusal-detour",
    "number": 40,
    "repo": "refusal-detour",
@@ -20408,7 +20590,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T04:01:25+00:00",
-   "lastChange": "2026-10-25T06:12:52+00:00",
+   "lastChange": "2026-10-25T09:56:24+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -20422,6 +20604,20 @@
     "totalUsdEst": 43.77
    },
    "tasks": [
+    {
+     "title": "P2FS54_refusal detour one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "refusal-detour: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:56:24+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3PL08_refusal detour why rollout",
      "state": "queued",
@@ -20494,7 +20690,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
@@ -22619,7 +22815,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "seal-carver: the whole game fits one phone screen...",
    "costTotalUsd": 64.96,
    "latestChange": {
     "text": "One screen on phones: result sheet (P2FS04)",
@@ -22634,23 +22830,23 @@
     "caption": "Carve a short phrase into a square seal stone, one box."
    },
    "why": "A video of a seal-editor tool for Chinese seal carving.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "seal carver one screen",
    "id": "seal-carver",
    "number": 80,
    "repo": "seal-carver",
    "title": "Seal Carver",
    "line": "Carve a short phrase into a square seal stone, one box.",
    "url": "https://chenhsieh.github.io/seal-carver/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Teach placement so it is reasoning, not trial and error",
    "shelfNote": "",
@@ -22668,7 +22864,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:20:34+00:00",
-   "lastChange": "2026-10-25T08:47:22+00:00",
+   "lastChange": "2026-10-25T09:55:46+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -22682,6 +22878,20 @@
     "totalUsdEst": 64.96
    },
    "tasks": [
+    {
+     "title": "P2FS46_seal carver one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "seal-carver: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:55:46+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SC00_illegal move w2h3 cannot start",
      "state": "done",
@@ -22740,14 +22950,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T08:47:22+00:00",
@@ -23036,7 +23246,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "server-stress: the whole game fits one phone screen...",
    "costTotalUsd": 65.2,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -23050,23 +23260,23 @@
     "caption": "Night shift in a server room: every rack warms a light."
    },
    "why": "An anthropology study of data centres describing staff fear of server downtime, and a short art film about game background workers.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 0
+    "daysInState": 4
    },
-   "waitingOn": "none",
+   "waitingOn": "server stress one screen",
    "id": "server-stress",
    "number": 88,
    "repo": "server-stress",
    "title": "Server Stress",
    "line": "Night shift in a server room: every rack warms a light.",
    "url": "https://chenhsieh.github.io/server-stress/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Data-centre story with a human side, real tradeoffs instead",
    "shelfNote": "",
@@ -23084,7 +23294,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:44:50+00:00",
-   "lastChange": "2026-10-25T01:52:23+00:00",
+   "lastChange": "2026-10-25T09:57:16+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -23098,6 +23308,20 @@
     "totalUsdEst": 65.2
    },
    "tasks": [
+    {
+     "title": "P2FS65_server stress one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "server-stress: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:57:16+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3OR61_name server stress",
      "state": "done",
@@ -23170,7 +23394,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 5
@@ -23181,7 +23405,7 @@
     "note": "UI polish, analog clock, geeky/Jira feel, funny tasks"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:52:23+00:00",
@@ -24551,7 +24775,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "slice-and-bake: the whole game fits one phone screen...",
    "costTotalUsd": 72.49,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -24559,23 +24783,23 @@
    },
    "promo": null,
    "why": "Arrange coloured dough ropes in a log so each of five cuts shows the wanted pattern; every change alters this slice and the later ones.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 0
+    "daysInState": 4
    },
-   "waitingOn": "none",
+   "waitingOn": "slice and bake one screen",
    "id": "slice-and-bake",
    "number": 34,
    "repo": "slice-and-bake",
    "title": "Slice and Bake",
    "line": "Move dough before each cut to match the next slice.",
    "url": "https://chenhsieh.github.io/slice-and-bake/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Make cutting and adjusting legible; refresh the visual",
    "shelfNote": "",
@@ -24589,7 +24813,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T09:19:47+00:00",
-   "lastChange": "2026-10-25T01:43:37+00:00",
+   "lastChange": "2026-10-25T09:57:11+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -24603,6 +24827,20 @@
     "totalUsdEst": 72.49
    },
    "tasks": [
+    {
+     "title": "P2FS64_slice and bake one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "slice-and-bake: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:57:11+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3OR30_slice and bake link preview",
      "state": "done",
@@ -24700,24 +24938,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "feat: bake a cookie flipbook"
-    },
-    {
-     "title": "slice and bake legible cut",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "Make cutting and adjusting legible; refresh the visual; prepare a link with the dough game.",
-     "since": "2026-10-19T17:54:51+00:00",
-     "done": "2026-10-19T17:54:51+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Brief: expert/slice-and-bake/packages/BRIEF_20261019.md: build the log end-on from rope pieces of set lengths; short ropes change the picture along the log so the five cookies are a flipbook (cat blinks); decision =..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 8
@@ -24728,7 +24952,7 @@
     "note": "Too many operations; core unclear"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:43:37+00:00",
@@ -25459,7 +25683,7 @@
    ]
   },
   {
-   "nextTask": "Why this exists: finish the rollout on speaking-stone...",
+   "nextTask": "speaking-stone: the whole game fits one phone screen...",
    "costTotalUsd": 47.0,
    "latestChange": {
     "text": "One screen on phones: port_onescreen (kit 2) (P2FS04)",
@@ -25481,7 +25705,7 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "speaking stone why rollout",
+   "waitingOn": "speaking stone one screen",
    "id": "speaking-stone",
    "number": 123,
    "repo": "speaking-stone",
@@ -25503,7 +25727,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T00:56:56+00:00",
-   "lastChange": "2026-10-25T09:18:30+00:00",
+   "lastChange": "2026-10-25T09:56:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -25517,6 +25741,20 @@
     "totalUsdEst": 47.0
    },
    "tasks": [
+    {
+     "title": "P2FS60_speaking stone one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "speaking-stone: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:56:52+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3PL14_speaking stone why rollout",
      "state": "queued",
@@ -25547,7 +25785,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
@@ -26046,7 +26284,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "anechoic-fugue: the whole game fits one phone screen...",
    "costTotalUsd": 112.27,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -26054,23 +26292,23 @@
    },
    "promo": null,
    "why": "A photo of an anechoic chamber and a Fourier-epicycle drawing, later joined by a picture of quasicrystal surface waves.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "anechoic fugue one screen",
    "id": "anechoic-fugue",
    "number": 56,
    "repo": "anechoic-fugue",
    "title": "Still Water",
    "line": "A slow koi pond: ripples to follow, ducklings that fall asleep, lily rings that make every pond a choice.",
    "url": "https://chenhsieh.github.io/anechoic-fugue/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Decide the physical model and its on-screen readout, choose",
    "shelfNote": "",
@@ -26084,7 +26322,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T19:39:22+00:00",
-   "lastChange": "2026-10-25T02:13:29+00:00",
+   "lastChange": "2026-10-25T09:55:19+00:00",
    "cost": {
     "apiUsd": 17.97,
     "codexRuns": 3,
@@ -26098,6 +26336,20 @@
     "totalUsdEst": 112.27
    },
    "tasks": [
+    {
+     "title": "P2FS40_anechoic fugue one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "anechoic-fugue: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:55:19+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SW02_level7 coin and pet outside canvas",
      "state": "done",
@@ -26195,31 +26447,17 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Brief: expert/anechoic-fugue/packages/DEPTH_20261019.md: koi only on lily rings (parity becomes a property of the ring, not a free choice), 12-level ladder of distinct decisions."
-    },
-    {
-     "title": "anechoic publish review",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "Review every level of the new koi and slow-water version, fix what fails, and publish it.",
-     "since": "2026-10-20T00:36:57+00:00",
-     "done": "2026-10-20T00:36:57+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Live now: the koi pond (slow ripples with Step/Pause, rocking bar per duckling, n of m asleep, WebGL water, two-frog and rain chapters) at https://chenhsieh.github.io/anechoic-fugue/, checked live at 390 (level 1 solved..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 13
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T02:13:29+00:00",
@@ -26296,7 +26534,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "stroke-tops: the whole game fits one phone screen...",
    "costTotalUsd": 61.49,
    "latestChange": {
     "text": "One screen on phones: result sheet (P2FS04)",
@@ -26310,23 +26548,23 @@
     "caption": "A dish of wooden spinning tops, each carrying a Chinese."
    },
    "why": "A small Japanese indie game where written characters are spinning tops that scatter into their strokes.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "stroke tops one screen",
    "id": "stroke-tops",
    "number": 84,
    "repo": "stroke-tops",
    "title": "Stroke Tops",
    "line": "A dish of wooden spinning tops, each carrying a Chinese.",
    "url": "https://chenhsieh.github.io/stroke-tops/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Make the top read as a top, soften level 3, add a daily",
    "shelfNote": "",
@@ -26340,7 +26578,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:39:08+00:00",
-   "lastChange": "2026-10-25T08:50:00+00:00",
+   "lastChange": "2026-10-25T09:55:51+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -26354,6 +26592,20 @@
     "totalUsdEst": 61.49
    },
    "tasks": [
+    {
+     "title": "P2FS47_stroke tops one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "stroke-tops: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:55:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SD39_studio standard stroke tops",
      "state": "done",
@@ -26398,14 +26650,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T08:50:00+00:00",
@@ -26482,7 +26734,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "telephone-of-babel: the whole game fits one phone screen...",
    "costTotalUsd": 76.14,
    "latestChange": {
     "text": "One screen on phones: result sheet (P2FS04)",
@@ -26496,23 +26748,23 @@
     "caption": "A picture postcard (cat, cake, heart) has to reach your."
    },
    "why": "A viral family matchmaking chat that backfires over who a message is about, and a keyboard typing three languages at once.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "telephone of babel one screen",
    "id": "telephone-of-babel",
    "number": 76,
    "repo": "telephone-of-babel",
    "title": "Telephone of Babel",
    "line": "",
    "url": "https://chenhsieh.github.io/telephone-of-babel/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Remix around languages meeting and the balance that keeps",
    "shelfNote": "",
@@ -26526,7 +26778,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:30:37+00:00",
-   "lastChange": "2026-10-25T08:47:03+00:00",
+   "lastChange": "2026-10-25T09:56:33+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -26540,6 +26792,20 @@
     "totalUsdEst": 76.14
    },
    "tasks": [
+    {
+     "title": "P2FS56_telephone of babel one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "telephone-of-babel: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:56:33+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SD40_studio standard telephone of babel",
      "state": "done",
@@ -26612,14 +26878,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 5
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T08:47:03+00:00",
@@ -27280,7 +27546,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "the-folder: the whole game fits one phone screen...",
    "costTotalUsd": 50.98,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -27288,23 +27554,23 @@
    },
    "promo": null,
    "why": "A careless RNA folding program as the opponent, one of three greedy algorithms in the overnight Fool the Algorithm build.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "the folder one screen",
    "id": "the-folder",
    "number": 46,
    "repo": "the-folder",
    "title": "The Folder",
    "line": "Change a bead to make the first pair block the rest.",
    "url": "https://chenhsieh.github.io/the-folder/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Simplify the first minute, show the outcome of each choice",
    "shelfNote": "",
@@ -27318,7 +27584,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T04:47:38+00:00",
-   "lastChange": "2026-10-25T01:53:08+00:00",
+   "lastChange": "2026-10-25T09:56:28+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -27332,6 +27598,20 @@
     "totalUsdEst": 50.98
    },
    "tasks": [
+    {
+     "title": "P2FS55_the folder one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "the-folder: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:56:28+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3OR35_the folder link preview",
      "state": "done",
@@ -27390,14 +27670,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:53:08+00:00",
@@ -28748,7 +29028,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "time-material: the whole game fits one phone screen...",
    "costTotalUsd": 50.64,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -28765,21 +29045,21 @@
    "why": "",
    "state": "ship",
    "stateFlags": {
-    "refining": false,
+    "refining": true,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 3
    },
-   "waitingOn": "owner",
+   "waitingOn": "time material one screen",
    "id": "time-material",
    "number": 23,
    "repo": "time-material",
    "title": "Time Material",
    "line": "Scrub through a frame history and draw with time.",
    "url": "https://chenhsieh.github.io/time-material/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Find the core and make the time-and-material rules",
    "shelfNote": "",
@@ -28793,7 +29073,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-09-20T20:53:51+00:00",
-   "lastChange": "2026-10-25T02:13:33+00:00",
+   "lastChange": "2026-10-25T09:55:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -28807,6 +29087,20 @@
     "totalUsdEst": 50.64
    },
    "tasks": [
+    {
+     "title": "P2FS48_time material one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "time-material: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:55:56+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3OR62_name time as material",
      "state": "done",
@@ -28904,24 +29198,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "DONE by the planner by hand (2026-10-23) after 3 aider failures: the TEST line itself was broken (bash expands ${SPEEDS[s.speed]} inside double quotes, so it could never pass). Edits exactly as specified; greps verified..."
-    },
-    {
-     "title": "P1TM00_transformation scan line",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Time Material: show how the top picture becomes the photo (a moving scan line on both, the photo fills its frame, a slow first demo and hold-to-replay)",
-     "since": "2026-10-22T23:13:55+00:00",
-     "done": "2026-10-22T23:13:55+00:00",
-     "reviewed": false,
-     "minutes": 12,
-     "tokens": 98378,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "feat: see the photo form as the camera scans"
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 12
@@ -28932,7 +29212,7 @@
     "note": "A scan line now sweeps the live scene and your photo together, so you can watch the bar bend row by row; the match meter starts at 95 percent, so the first move feels small"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T02:13:33+00:00",
@@ -29146,7 +29426,7 @@
    ]
   },
   {
-   "nextTask": "tractatus-tree: put the pinned win sheet in without...",
+   "nextTask": "tractatus-tree: the whole game fits one phone screen...",
    "costTotalUsd": 86.95,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -29162,7 +29442,7 @@
     "reviseRound": 2,
     "daysInState": 4
    },
-   "waitingOn": "tractatus tree win sheet tests",
+   "waitingOn": "tractatus tree one screen",
    "id": "tractatus-tree",
    "number": 91,
    "repo": "tractatus-tree",
@@ -29188,7 +29468,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:14:42+00:00",
-   "lastChange": "2026-10-25T09:55:10+00:00",
+   "lastChange": "2026-10-25T09:55:15+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -29202,6 +29482,20 @@
     "totalUsdEst": 86.95
    },
    "tasks": [
+    {
+     "title": "P2FS39_tractatus tree one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "tractatus-tree: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:55:15+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2FS38_tractatus tree win sheet tests",
      "state": "queued",
@@ -29299,24 +29593,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1t11a DONE, live https://chenhsieh.github.io/tractatus-tree/ (main ; live bytes match for index, shell, draw, props, look, ui kit, strings)."
-    },
-    {
-     "title": "tractatus finale and meaning",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Tractatus: seven-proposition tree, the silent final level and the meaning beat (part 2).",
-     "since": "2026-10-20T23:21:35+00:00",
-     "done": "2026-10-20T23:21:35+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "P1t11b DONE, live https://chenhsieh.github.io/tractatus-tree/ (main ; live bytes match for index, shell, draw, rules, levels, look, strings)."
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 10
@@ -29665,7 +29945,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "triangle-lexicon: the whole game fits one phone screen...",
    "costTotalUsd": 57.82,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -29679,23 +29959,23 @@
     "caption": "Follow a small language through a triangle."
    },
    "why": "Photos including a coffee package with a green triangle pattern and a nine-line glyph system, mixed with a colour-sweeper puzzle.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "triangle lexicon one screen",
    "id": "triangle-lexicon",
    "number": 28,
    "repo": "triangle-lexicon",
    "title": "Triangle Lexicon",
    "line": "Follow a small language through a triangle.",
    "url": "https://chenhsieh.github.io/triangle-lexicon/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Snappier interaction and a distinctive taste for the",
    "shelfNote": "",
@@ -29709,7 +29989,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-13T11:33:43+00:00",
-   "lastChange": "2026-10-25T01:42:34+00:00",
+   "lastChange": "2026-10-25T09:56:10+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -29723,6 +30003,20 @@
     "totalUsdEst": 57.82
    },
    "tasks": [
+    {
+     "title": "P2FS51_triangle lexicon one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "triangle-lexicon: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:56:10+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SD44_studio standard triangle lexicon",
      "state": "done",
@@ -29767,14 +30061,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:42:34+00:00",
@@ -31395,7 +31689,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "zoom-out: the whole game fits one phone screen...",
    "costTotalUsd": 84.16,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -31403,23 +31697,23 @@
    },
    "promo": null,
    "why": "A panda meme zooming through an OK-sign and an eye out to the galaxy, and a meme shrinking an empire to two square metres.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 0
+    "daysInState": 5
    },
-   "waitingOn": "none",
+   "waitingOn": "zoom out one screen",
    "id": "zoom-out",
    "number": 79,
    "repo": "zoom-out",
    "title": "Zoom Out",
    "line": "",
    "url": "https://chenhsieh.github.io/zoom-out/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Getting somewhere:",
    "shelfNote": "",
@@ -31433,7 +31727,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:50:51+00:00",
-   "lastChange": "2026-10-25T02:13:35+00:00",
+   "lastChange": "2026-10-25T09:56:38+00:00",
    "cost": {
     "apiUsd": 7.14,
     "codexRuns": 5,
@@ -31447,6 +31741,20 @@
     "totalUsdEst": 84.16
    },
    "tasks": [
+    {
+     "title": "P2FS57_zoom out one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "zoom-out: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:56:38+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2FM27_zoom out first minute",
      "state": "done",
@@ -31544,24 +31852,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Brief: expert/zoom-out/packages/BRIEF_20261019.md (butterfly dream: pass through shared shapes; spiral/ring/branch/hex families are real; the smallest ring opens onto the largest)."
-    },
-    {
-     "title": "zoom out butterfly",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Circular scale story (molecule to universe, butterfly dream), remove obviously wrong choices, mind-bending visuals, new preview.",
-     "since": "2026-10-19T17:54:51+00:00",
-     "done": "2026-10-19T17:54:51+00:00",
-     "reviewed": false,
-     "minutes": 21,
-     "tokens": 282800,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Butterfly-scale board, visible path target, previewable cul-de-sacs, and refreshed preview asset added."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 8
@@ -31572,7 +31866,7 @@
     "note": "Right direction; real-time fractal, Eastern parables, cleaner controls"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T02:13:35+00:00",
