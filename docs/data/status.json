@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T08:05:13+00:00",
+ "generated": "2026-10-25T08:07:31+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 58,
+    "queued": 57,
     "running": 1,
     "doneToday": 0,
-    "minutes": 2360,
-    "estimateMinutes": 2360
+    "minutes": 2320,
+    "estimateMinutes": 2320
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 28,
+    "doneToday": 29,
     "minutes": 180,
     "estimateMinutes": 90
    }
   },
-  "queued": 59,
+  "queued": 58,
   "running": 3,
-  "doneToday": 28,
+  "doneToday": 29,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,34 +46,31 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2540,
-  "estimatedFinish": "2026-10-26T23:25:13+00:00",
-  "estimateMinutes": 2360
+  "minutesRemaining": 2500,
+  "estimatedFinish": "2026-10-26T22:47:31+00:00",
+  "estimateMinutes": 2320
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "colony-count",
-   "task": "P1FS16_colony count one screen",
-   "since": "2026-10-25T07:44:25+00:00",
-   "activity": "2026-10-25T08:03:53+00:00",
+   "game": "gif-cities",
+   "task": "P1FS17_gif cities one screen",
+   "since": "2026-10-25T08:05:20+00:00",
+   "activity": "2026-10-25T08:05:21+00:00",
    "commit": null
   },
   {
    "worker": "Codex",
    "game": "honest-sign",
    "task": "P2AX13_kit fit rollout honest sign",
-   "since": "2026-10-25T07:51:36+00:00",
+   "since": "2026-10-25T08:05:22+00:00",
    "activity": "2026-10-25T08:05:09+00:00",
-   "commit": {
-    "at": "2026-10-25T07:58:12+00:00",
-    "subject": "Sync short-screen kit"
-   }
+   "commit": null
   },
   {
    "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P2PF01_board portfolio view",
+   "game": "play-template",
+   "task": "P3OR92_kit best possible words",
    "since": null,
    "activity": null,
    "commit": null
@@ -135,6 +132,10 @@
   {
    "day": "2026-10-24",
    "changes": 41
+  },
+  {
+   "day": "2026-10-25",
+   "changes": 1
   }
  ],
  "houseRules": 25,
@@ -3088,7 +3089,7 @@
    "why": "An ad for a three-colour sweeper puzzle (ColorSweeper).",
    "state": "released",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
@@ -3101,8 +3102,8 @@
    "title": "Colony Count",
    "line": "Solve three daily levels, then freeze finished plates.",
    "url": "https://chenhsieh.github.io/colony-count/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Flagship; has its own owner",
    "shelfNote": "",
@@ -3120,33 +3121,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T07:50:58+00:00",
-   "lastChange": "2026-10-25T08:03:53+00:00",
+   "lastChange": "2026-10-25T07:03:06+00:00",
    "cost": {
     "apiUsd": 22.88,
     "codexRuns": 2,
-    "claudeRuns": 24,
+    "claudeRuns": 25,
     "apiRuns": 8,
     "codexTokens": 304598,
     "codexUsdEst": 0.37,
-    "claudeUsdEst": 86.4,
-    "earlierRounds": 20,
-    "earlierUsdEst": 72.0,
+    "claudeUsdEst": 90.0,
+    "earlierRounds": 19,
+    "earlierUsdEst": 68.4,
     "totalUsdEst": 181.65
    },
    "tasks": [
     {
      "title": "P1FS16_colony count one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "colony-count: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T07:44:25+00:00",
-     "done": null,
+     "since": "2026-10-25T07:03:06+00:00",
+     "done": "2026-10-25T07:03:06+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1FS16 colony-count one screen: DONE (Sonnet overflow worker, 2026-10-25). Commit on main; live bytes match (index.html, style.css, onescreen-fit.js); live gate PASS."
     },
     {
      "title": "P2CC35_colony count save migration test",
@@ -3249,9 +3250,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 34
+    "done": 35
    },
    "verdict": {
     "date": "2026-10-23",
@@ -3259,7 +3260,7 @@
     "note": "The lessons teach the rules in a minute and the lab dishes now play cleanly; most words are still too small and the round dish edge counts tell kinds apart by colour alone"
    },
    "needsYou": "GoatCounter visit counter is wired but off in five games (this one, Walls Have Ears, Cymatic Plate, Glasshouse, UGA Grad Survivor) until a site code is chosen. Suggest: sign up with one shared code and switch all five on.",
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T02:32:03+00:00",
@@ -8646,7 +8647,7 @@
    ]
   },
   {
-   "nextTask": "gif-cities: one phone screen, Next on screen after...",
+   "nextTask": null,
    "costTotalUsd": 80.04,
    "latestChange": {
     "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
@@ -8676,8 +8677,8 @@
    "title": "GIF Cities",
    "line": "Stack rescued GIFs down a 1999 homepage so every visitor.",
    "url": "https://chenhsieh.github.io/gif-cities/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Flagship polish round: slower default pace with a speed",
    "shelfNote": "",
@@ -8695,7 +8696,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:37:00+00:00",
-   "lastChange": "2026-10-25T07:54:33+00:00",
+   "lastChange": "2026-10-25T08:05:21+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -8711,10 +8712,10 @@
    "tasks": [
     {
      "title": "P1FS17_gif cities one screen",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "gif-cities: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T07:54:33+00:00",
+     "since": "2026-10-25T08:05:20+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -8823,8 +8824,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 8
    },
@@ -11214,16 +11215,13 @@
      "state": "running",
      "worker": "Codex",
      "plan": "honest-sign: take the new play kit so the board and Undo fit a small phone",
-     "since": "2026-10-25T07:51:36+00:00",
+     "since": "2026-10-25T08:05:22+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-25T07:58:12+00:00",
-      "subject": "Sync short-screen kit"
-     },
+     "commit": null,
      "result": ""
     },
     {
@@ -27364,8 +27362,8 @@
    "nextTask": "The Lot Waits: a new first minute that...",
    "costTotalUsd": 86.4,
    "latestChange": {
-    "text": "fix: Lot Waits play screen fits 320x568 with a rule note open; one-row-per-day week ledger",
-    "at": "2026-10-25T07:55:07+00:00"
+    "text": "P3OR91_lot-waits-tap-roundtrip-test: WORKDIR",
+    "at": "2026-10-25T08:02:29+00:00"
    },
    "promo": {
     "files": {
@@ -27405,7 +27403,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:50:16+00:00",
-   "lastChange": "2026-10-25T08:01:57+00:00",
+   "lastChange": "2026-10-25T08:06:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -27424,7 +27422,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "The Lot Waits: a new first minute that shows both costs in three steps",
-     "since": "2026-10-25T08:01:57+00:00",
+     "since": "2026-10-25T08:06:00+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -27543,6 +27541,12 @@
    "inProgress": true,
    "history": [
     {
+     "at": "2026-10-25T08:02:29+00:00",
+     "ok": true,
+     "note": "P3OR91_lot-waits-tap-roundtrip-test: WORKDIR",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T07:55:07+00:00",
      "ok": true,
      "note": "fix: Lot Waits play screen fits 320x568 with a rule note open; one-row-per-day week ledger",
@@ -27606,12 +27610,6 @@
      "at": "2026-10-25T07:40:46+00:00",
      "ok": true,
      "note": "wip: P1LW02_lot-waits-day-strip-and-trust (Codex lane autosave 18:30)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-25T07:40:46+00:00",
-     "ok": true,
-     "note": "feat: show trust and good days on the board",
      "source": "main commit"
     }
    ]

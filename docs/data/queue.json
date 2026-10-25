@@ -1,14 +1,16 @@
 {
- "generated": 1792915524,
+ "generated": 1792915662,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
-  "lanesBusy": 0,
+  "lanesBusy": 1,
   "ready": 0,
   "waiting": 0,
   "queued": 0,
-  "running": 0,
+  "running": 1,
   "done24h": 18,
-  "modelsQueued": {},
+  "modelsQueued": {
+   "deepseek-v4-flash": 1
+  },
   "spendTodayUsd": 0.22,
   "runsToday": 13,
   "runsTodayUnpriced": 11,
@@ -107,23 +109,21 @@
    "wasCodex": true
   },
   {
-   "id": "P2PF01_board-portfolio-view",
-   "request": "A Portfolio view on the studio board: how many ideas and games sit in each lane against its cap, and what gets built next",
+   "id": "P3OR92_kit-best-possible-words",
+   "request": "Game kit: games where a higher score is better say 'best possible', not 'fewest possible', on the result card",
    "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
    "kind": "build",
-   "size": "studio",
+   "size": "one repo",
    "estMinutes": null,
-   "after": [
-    "P1PF00_portfolio-system-and-weekly-lessons"
-   ],
+   "after": [],
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1792790639,
-   "created": 1792790639
+   "at": 1792915622,
+   "created": 1792915622
   },
   {
    "id": "P1FS12_remote-viewer-one-screen",
@@ -328,7 +328,7 @@
    "why": "A temple fortune-lot booklet page promising a mid-autumn moon after mid-autumn had passed, and a pocket e-ink oracle drawing one card a day.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792915317,
+   "created": 1792915560,
    "estPercentOfWeek": 0.25
   },
   {
