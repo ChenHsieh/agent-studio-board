@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T09:05:58+00:00",
+ "generated": "2026-10-25T09:08:17+00:00",
  "ops": {
-  "count": 20,
+  "count": 24,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 50,
+    "queued": 49,
     "running": 1,
-    "doneToday": 5,
-    "minutes": 2040,
-    "estimateMinutes": 2040
+    "doneToday": 6,
+    "minutes": 2000,
+    "estimateMinutes": 2000
    },
    "Claude": {
     "queued": 1,
@@ -34,9 +34,9 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 51,
+  "queued": 50,
   "running": 3,
-  "doneToday": 35,
+  "doneToday": 36,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,26 +46,29 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2220,
-  "estimatedFinish": "2026-10-26T19:05:58+00:00",
-  "estimateMinutes": 2040
+  "minutesRemaining": 2180,
+  "estimatedFinish": "2026-10-26T18:28:17+00:00",
+  "estimateMinutes": 2000
  },
  "lanes": [
-  {
-   "worker": "Codex",
-   "game": "remote-viewer",
-   "task": "P1FS12_remote viewer one screen",
-   "since": "2026-10-25T09:04:40+00:00",
-   "activity": "2026-10-25T09:04:26+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "pinch-points",
    "task": "P1FS29_pinch points one screen",
    "since": "2026-10-25T08:58:59+00:00",
-   "activity": "2026-10-25T08:59:00+00:00",
+   "activity": "2026-10-25T09:07:01+00:00",
    "commit": null
+  },
+  {
+   "worker": "Codex",
+   "game": "rumour-on-the-jetty",
+   "task": "P2AX16_kit fit rollout rumour on the jetty",
+   "since": "2026-10-25T09:08:12+00:00",
+   "activity": "2026-10-25T09:08:16+00:00",
+   "commit": {
+    "at": "2026-10-25T09:08:13+00:00",
+    "subject": "start: P2AX16_kit-fit-rollout-rumour-on-the-jetty"
+   }
   },
   {
    "worker": "Claude",
@@ -135,7 +138,7 @@
   },
   {
    "day": "2026-10-25",
-   "changes": 3
+   "changes": 4
   }
  ],
  "houseRules": 25,
@@ -18883,7 +18886,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T20:47:18+00:00",
-   "lastChange": "2026-10-25T08:59:00+00:00",
+   "lastChange": "2026-10-25T09:07:01+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -20495,10 +20498,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 81.53,
+   "costTotalUsd": 81.85,
    "latestChange": {
-    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
-    "at": "2026-10-25T02:49:18+00:00"
+    "text": "feat: show the goal and judge above the typed report",
+    "at": "2026-10-25T09:08:11+00:00"
    },
    "promo": {
     "files": {
@@ -20511,21 +20514,21 @@
    "why": "Declassified CIA Stargate remote-viewing session reports, with a blackout rule after the word game Redactle.",
    "state": "released",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 1,
     "daysInState": 2
    },
-   "waitingOn": "remote viewer one screen",
+   "waitingOn": "none",
    "id": "remote-viewer",
    "number": 31,
    "repo": "remote-viewer",
    "title": "Remote Viewer",
    "line": "Uncover a CIA file and name its assignment.",
    "url": "https://chenhsieh.github.io/remote-viewer/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Game-design pass to find where the fun is and build it",
    "shelfNote": "",
@@ -20543,33 +20546,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T16:38:08+00:00",
-   "lastChange": "2026-10-25T09:04:26+00:00",
+   "lastChange": "2026-10-25T09:08:11+00:00",
    "cost": {
     "apiUsd": 9.24,
-    "codexRuns": 1,
+    "codexRuns": 2,
     "claudeRuns": 7,
     "apiRuns": 0,
-    "codexTokens": 245568,
-    "codexUsdEst": 0.29,
+    "codexTokens": 508263,
+    "codexUsdEst": 0.61,
     "claudeUsdEst": 25.2,
     "earlierRounds": 13,
     "earlierUsdEst": 46.8,
-    "totalUsdEst": 81.53
+    "totalUsdEst": 81.85
    },
    "tasks": [
     {
      "title": "P1FS12_remote viewer one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "remote-viewer: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T09:04:40+00:00",
-     "done": null,
+     "since": "2026-10-25T08:13:26+00:00",
+     "done": "2026-10-25T08:13:26+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 51,
+     "tokens": 262695,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: show the goal and judge above the typed report"
     },
     {
      "title": "P3OR78_remote viewer credits corrected",
@@ -20672,9 +20675,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 8
+    "done": 9
    },
    "verdict": {
     "date": "2026-10-19",
@@ -20682,8 +20685,14 @@
     "note": "Game-design pass to find where the fun is and build it"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-25T09:08:11+00:00",
+     "ok": true,
+     "note": "feat: show the goal and judge above the typed report",
+     "source": "board note"
+    },
     {
      "at": "2026-10-25T02:49:18+00:00",
      "ok": true,
@@ -20748,12 +20757,6 @@
      "at": "2026-10-21T20:26:48+00:00",
      "ok": false,
      "note": "P1SD34_studio-standard-remote-viewer handed to Claude: Codex quota ran out;",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T19:53:00+00:00",
-     "ok": false,
-     "note": "see",
      "source": "board note"
     }
    ]
@@ -21769,7 +21772,7 @@
    ]
   },
   {
-   "nextTask": "rumour-on-the-jetty: take the new play kit so the...",
+   "nextTask": null,
    "costTotalUsd": 39.6,
    "latestChange": {
     "text": "Rumour on the Jetty:",
@@ -21792,7 +21795,7 @@
    "title": "Rumour On The Jetty",
    "line": "",
    "url": "https://chenhsieh.github.io/rumour-on-the-jetty/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
@@ -21807,7 +21810,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-25T05:32:52+00:00",
+   "lastChange": "2026-10-25T09:08:16+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -21823,16 +21826,19 @@
    "tasks": [
     {
      "title": "P2AX16_kit fit rollout rumour on the jetty",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "rumour-on-the-jetty: take the new play kit so the board and Undo fit a small phone",
-     "since": "2026-10-24T11:35:01+00:00",
+     "since": "2026-10-25T09:08:12+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-25T09:08:13+00:00",
+      "subject": "start: P2AX16_kit-fit-rollout-rumour-on-the-jetty"
+     },
      "result": ""
     },
     {
@@ -21865,8 +21871,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
@@ -22524,10 +22530,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 61.36,
+   "costTotalUsd": 64.96,
    "latestChange": {
-    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
-    "at": "2026-10-25T01:50:51+00:00"
+    "text": "One screen on phones: result sheet (P2FS04)",
+    "at": "2026-10-25T08:47:22+00:00"
    },
    "promo": {
     "files": {
@@ -22572,7 +22578,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:20:34+00:00",
-   "lastChange": "2026-10-25T01:50:51+00:00",
+   "lastChange": "2026-10-25T08:47:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -22581,9 +22587,9 @@
     "codexTokens": 129278,
     "codexUsdEst": 0.16,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 16,
-    "earlierUsdEst": 57.6,
-    "totalUsdEst": 61.36
+    "earlierRounds": 17,
+    "earlierUsdEst": 61.2,
+    "totalUsdEst": 64.96
    },
    "tasks": [
     {
@@ -22654,6 +22660,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T08:47:22+00:00",
+     "ok": true,
+     "note": "One screen on phones: result sheet (P2FS04)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T01:50:51+00:00",
      "ok": true,
      "note": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -22718,12 +22730,6 @@
      "ok": true,
      "note": "fix: keep every seal layout solvable",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T04:47:57+00:00",
-     "ok": false,
-     "note": "see",
-     "source": "board note"
     }
    ]
   },
@@ -23469,10 +23475,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 72.59,
+   "costTotalUsd": 76.19,
    "latestChange": {
-    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
-    "at": "2026-10-25T02:59:19+00:00"
+    "text": "One screen on phones: result sheet (P2FS04)",
+    "at": "2026-10-25T09:06:13+00:00"
    },
    "promo": null,
    "why": "A joke page of physics equations whose conclusion is only that things fall, plus symbolic-regression software.",
@@ -23506,7 +23512,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T05:07:40+00:00",
-   "lastChange": "2026-10-25T02:59:19+00:00",
+   "lastChange": "2026-10-25T09:06:13+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -23515,9 +23521,9 @@
     "codexTokens": 493545,
     "codexUsdEst": 0.59,
     "claudeUsdEst": 14.4,
-    "earlierRounds": 16,
-    "earlierUsdEst": 57.6,
-    "totalUsdEst": 72.59
+    "earlierRounds": 17,
+    "earlierUsdEst": 61.2,
+    "totalUsdEst": 76.19
    },
    "tasks": [
     {
@@ -23634,6 +23640,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T09:06:13+00:00",
+     "ok": true,
+     "note": "One screen on phones: result sheet (P2FS04)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T02:59:19+00:00",
      "ok": true,
      "note": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -23698,12 +23710,6 @@
      "ok": true,
      "note": "P1SL40 part 1 live: HiDPI canvas (dpr cap 3, resize/rotate redraw, crisp hairlines). Data pack (8 real-data levels) NOT done, re-queued",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-21T23:30:33+00:00",
-     "ok": true,
-     "note": "fix: the plot is drawn at the screen's real resolution",
-     "source": "main commit"
     }
    ]
   },
