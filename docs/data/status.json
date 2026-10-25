@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T03:07:38+00:00",
+ "generated": "2026-10-25T03:09:56+00:00",
  "ops": {
-  "count": 32,
+  "count": 30,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 72,
+    "queued": 71,
     "running": 0,
     "doneToday": 3,
-    "minutes": 2880,
-    "estimateMinutes": 2880
+    "minutes": 2840,
+    "estimateMinutes": 2840
    },
    "Claude": {
     "queued": 1,
     "running": 3,
-    "doneToday": 89,
+    "doneToday": 90,
     "minutes": 240,
     "estimateMinutes": 120
    }
   },
-  "queued": 73,
+  "queued": 72,
   "running": 3,
-  "doneToday": 92,
+  "doneToday": 93,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3120,
-  "estimatedFinish": "2026-10-27T03:07:38+00:00",
-  "estimateMinutes": 2880
+  "minutesRemaining": 3080,
+  "estimatedFinish": "2026-10-27T02:29:56+00:00",
+  "estimateMinutes": 2840
  },
  "lanes": [
   {
@@ -4210,8 +4210,8 @@
    "nextTask": "cymatic-plate: one phone screen, Next on screen after...",
    "costTotalUsd": 83.44,
    "latestChange": {
-    "text": "No accidental zoom on phones:",
-    "at": "2026-10-25T01:28:34+00:00"
+    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
+    "at": "2026-10-25T02:51:46+00:00"
    },
    "promo": {
     "files": {
@@ -4252,7 +4252,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:40:04+00:00",
-   "lastChange": "2026-10-25T02:10:11+00:00",
+   "lastChange": "2026-10-25T02:51:46+00:00",
    "cost": {
     "apiUsd": 3.26,
     "codexRuns": 5,
@@ -4394,6 +4394,12 @@
    "inProgress": true,
    "history": [
     {
+     "at": "2026-10-25T02:51:46+00:00",
+     "ok": true,
+     "note": "Zoom guard updated: taps are never cancelled (P1ZM00)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T01:28:34+00:00",
      "ok": true,
      "note": "No accidental zoom on phones:",
@@ -4457,12 +4463,6 @@
      "at": "2026-10-20T21:29:29+00:00",
      "ok": true,
      "note": "feat: endless glides, buzzes and has its own sounds; the game wears its own logo",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T05:13:05+00:00",
-     "ok": true,
-     "note": "feat: link preview image and text, visit counter hook",
      "source": "main commit"
     }
    ]
@@ -30308,7 +30308,7 @@
    ]
   },
   {
-   "nextTask": "Walls Have Ears: bring the top bar test...",
+   "nextTask": null,
    "costTotalUsd": 133.56,
    "latestChange": {
     "text": "One screen: room name and counts above the board, a new goal sentence, the result as a...",
@@ -30324,21 +30324,21 @@
    "why": "A joke about a bugged hotel room where asking the wall for tea brings tea, plus a photo of an anechoic chamber.",
    "state": "released",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "walls topbar test no hub",
+   "waitingOn": "none",
    "id": "walls-have-ears",
    "number": 57,
    "repo": "walls-have-ears",
    "title": "Walls Have Ears",
    "line": "Wish for tea and find which piece is listening.",
    "url": "https://chenhsieh.github.io/walls-have-ears/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Hotel key-cabinet level grid grouped by mechanism, and a",
    "shelfNote": "",
@@ -30356,29 +30356,29 @@
    "cost": {
     "apiUsd": 17.73,
     "codexRuns": 3,
-    "claudeRuns": 8,
+    "claudeRuns": 9,
     "apiRuns": 5,
     "codexTokens": 528897,
     "codexUsdEst": 0.63,
-    "claudeUsdEst": 28.8,
-    "earlierRounds": 24,
-    "earlierUsdEst": 86.4,
+    "claudeUsdEst": 32.4,
+    "earlierRounds": 23,
+    "earlierUsdEst": 82.8,
     "totalUsdEst": 133.56
    },
    "tasks": [
     {
      "title": "P3OR81_walls topbar test no hub",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "Walls Have Ears: bring the top bar test in line with the no-hub rule",
      "since": "2026-10-25T03:07:33+00:00",
-     "done": null,
+     "done": "2026-10-25T03:07:33+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 0,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: test/v2_topbar.mjs"
     },
     {
      "title": "P1FS09_walls have ears one screen",
@@ -30480,10 +30480,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 16
+    "done": 17
    },
    "verdict": {
     "date": "2026-10-19",
@@ -30491,7 +30491,7 @@
     "note": "Chapter 2 rebuilt; ready to ship"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T02:53:29+00:00",
