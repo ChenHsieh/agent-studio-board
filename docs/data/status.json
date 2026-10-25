@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T22:10:56+00:00",
+ "generated": "2026-10-25T22:13:17+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 80,
+    "queued": 79,
     "running": 1,
-    "doneToday": 9,
-    "minutes": 3240,
-    "estimateMinutes": 3240
+    "doneToday": 10,
+    "minutes": 3200,
+    "estimateMinutes": 3200
    },
    "Claude": {
     "queued": 1,
@@ -34,9 +34,9 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 81,
+  "queued": 80,
   "running": 3,
-  "doneToday": 44,
+  "doneToday": 45,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3420,
-  "estimatedFinish": "2026-10-28T04:10:56+00:00",
-  "estimateMinutes": 3240
+  "minutesRemaining": 3380,
+  "estimatedFinish": "2026-10-28T03:33:17+00:00",
+  "estimateMinutes": 3200
  },
  "lanes": [
   {
@@ -69,11 +69,14 @@
   },
   {
    "worker": "Codex",
-   "game": "pigeon-salon",
-   "task": "P2PS00_pigeon salon readable board",
-   "since": "2026-10-25T22:05:12+00:00",
-   "activity": "2026-10-25T22:04:59+00:00",
-   "commit": null
+   "game": "radish-omelette",
+   "task": "P2RO00_radish omelette colours and beats",
+   "since": "2026-10-25T22:11:11+00:00",
+   "activity": "2026-10-25T22:13:16+00:00",
+   "commit": {
+    "at": "2026-10-25T22:12:11+00:00",
+    "subject": "Merge remote-tracking branch 'origin/chen-or-p3or19-radish-omelette-engine-test' into chen-cx-p2ro00-radish-omelette-colours-and-beats"
+   }
   }
  ],
  "codexLanes": 1,
@@ -135,7 +138,7 @@
   },
   {
    "day": "2026-10-25",
-   "changes": 17
+   "changes": 18
   }
  ],
  "houseRules": 25,
@@ -18870,10 +18873,10 @@
   },
   {
    "nextTask": "pigeon-salon: the whole game fits one phone screen...",
-   "costTotalUsd": 36.16,
+   "costTotalUsd": 39.97,
    "latestChange": {
-    "text": "One screen on phones: port_onescreen (kit 4) (P2FS04)",
-    "at": "2026-10-25T09:21:11+00:00"
+    "text": "feat: make the gallery board readable",
+    "at": "2026-10-25T22:11:11+00:00"
    },
    "promo": {
     "files": {
@@ -18891,7 +18894,7 @@
     "reviseRound": 1,
     "daysInState": 3
    },
-   "waitingOn": "pigeon salon readable board",
+   "waitingOn": "pigeon salon one screen",
    "id": "pigeon-salon",
    "number": 135,
    "repo": "pigeon-salon",
@@ -18899,7 +18902,7 @@
    "line": "Twelve levels: tap a painting the patron likes, then one they like less; a pigeon re-hangs the gallery.",
    "url": "https://chenhsieh.github.io/pigeon-salon/",
    "stage": "building",
-   "who": "Codex",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Twelve levels: tap a painting the patron likes, then one they like less; a",
    "shelfNote": "",
@@ -18913,34 +18916,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T19:12:54+00:00",
-   "lastChange": "2026-10-25T22:04:59+00:00",
+   "lastChange": "2026-10-25T22:11:11+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 1,
+    "codexRuns": 2,
     "claudeRuns": 4,
     "apiRuns": 0,
-    "codexTokens": 136565,
-    "codexUsdEst": 0.16,
+    "codexTokens": 307309,
+    "codexUsdEst": 0.37,
     "claudeUsdEst": 14.4,
-    "earlierRounds": 6,
-    "earlierUsdEst": 21.6,
-    "totalUsdEst": 36.16
+    "earlierRounds": 7,
+    "earlierUsdEst": 25.2,
+    "totalUsdEst": 39.97
    },
    "tasks": [
-    {
-     "title": "P2PS00_pigeon salon readable board",
-     "state": "running",
-     "worker": "Codex",
-     "plan": "Pigeon Salon: label the wall row, readable seed piles, a loss note that does not cover the cause, and a win that stays in view",
-     "since": "2026-10-25T22:05:12+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2FS66_pigeon salon one screen",
      "state": "queued",
@@ -18954,6 +18943,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2PS00_pigeon salon readable board",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "Pigeon Salon: label the wall row, readable seed piles, a loss note that does not cover the cause, and a win that stays in view",
+     "since": "2026-10-25T21:47:45+00:00",
+     "done": "2026-10-25T21:47:45+00:00",
+     "reviewed": false,
+     "minutes": 17,
+     "tokens": 170744,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "feat: make the gallery board readable"
     },
     {
      "title": "P3RL29_credits licences pigeon salon",
@@ -19028,9 +19031,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": {
     "date": "2026-10-22",
@@ -19040,6 +19043,18 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-25T22:11:11+00:00",
+     "ok": true,
+     "note": "feat: make the gallery board readable",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-25T22:11:08+00:00",
+     "ok": true,
+     "note": "feat: make the gallery board readable",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T09:21:11+00:00",
      "ok": true,
@@ -19098,12 +19113,6 @@
      "at": "2026-10-22T19:14:17+00:00",
      "ok": true,
      "note": "feat: Pigeon Salon starts from the game template",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T19:12:54+00:00",
-     "ok": true,
-     "note": "Initial commit",
      "source": "main commit"
     }
    ]
@@ -19612,7 +19621,7 @@
    ]
   },
   {
-   "nextTask": "Radish Omelette: egg colours that match the order...",
+   "nextTask": null,
    "costTotalUsd": 29.04,
    "latestChange": {
     "text": "One screen on phones: port_onescreen (kit 4) (P2FS04)",
@@ -19642,7 +19651,7 @@
    "line": "Cook the egg to an order card one beat at a time; 16 dishes, 12 orders, a daily.",
    "url": "https://chenhsieh.github.io/radish-omelette/",
    "stage": "building",
-   "who": "Claude",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Cook the egg to an order card one beat at a time; 16 dishes, 12 orders, a daily.",
    "shelfNote": "",
@@ -19656,7 +19665,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T19:32:07+00:00",
-   "lastChange": "2026-10-25T09:21:23+00:00",
+   "lastChange": "2026-10-25T22:13:16+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -19672,16 +19681,19 @@
    "tasks": [
     {
      "title": "P2RO00_radish omelette colours and beats",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Radish Omelette: egg colours that match the order cards, a beat count that agrees, readable labels at 320",
-     "since": "2026-10-22T23:57:11+00:00",
+     "since": "2026-10-25T22:11:11+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-25T22:12:11+00:00",
+      "subject": "Merge remote-tracking branch 'origin/chen-or-p3or19-radish-omelette-engine-test' into chen-cx-p2ro00-radish-omelette-colours-and-beats"
+     },
      "result": ""
     },
     {
@@ -19756,8 +19768,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 5
    },
