@@ -424,11 +424,11 @@ function gameHtml(g) {
   const said = plans.map((t) => `<p class="said">${esc(t.plan)}<small>${esc(t.worker)} · ${esc(t.state === 'running' ? 'building now' : t.state)}</small></p>`).join('');
   const tasks = (g.tasks || []).map((t) => {
     const when = t.state === 'done' ? `done ${ago(t.done)}${t.reviewed ? ', reviewed' : ''}` : t.state === 'running' ? `running since ${ago(t.since)}` : t.state;
-    const commit = t.commit ? `<span class="tag">last commit ${ago(t.commit.at)}: “${esc(t.commit.subject)}”</span>` : '';
-    const extra = t.state === 'done' && t.result ? `<span class="tag">${esc(t.result)}</span>` : commit;
-    return `<li><span class="tag">${esc(t.worker)} · ${esc(when)}</span><br>${esc(t.title)}${extra ? '<br>' + extra : ''}</li>`;
+    const commit = t.commit && plain(t.commit.subject) ? `<span class="tag">last commit ${ago(t.commit.at)}: “${esc(plain(t.commit.subject))}”</span>` : '';
+    const extra = t.state === 'done' && plain(t.result) ? `<span class="tag">${esc(plain(t.result))}</span>` : commit;
+    return `<li><span class="tag">${esc(t.worker)} · ${esc(when)}</span><br>${esc(plain(t.title) || "Task")}${extra ? '<br>' + extra : ''}</li>`;
   }).join('');
-  const hist = (g.history || []).map((h) => `<li><time>${esc(day(h.at))}</time>${h.ok ? '' : '<span class="no">not done: </span>'}${esc(h.note)}${h.source ? `<small class="history-source">${esc(h.source)}</small>` : ''}</li>`).join('');
+  const hist = (g.history || []).map((h) => `<li><time>${esc(day(h.at))}</time>${h.ok ? '' : '<span class="no">not done: </span>'}${esc(plain(h.note))}${h.source ? `<small class="history-source">${esc(h.source)}</small>` : ''}</li>`).join('');
   return `<li class="game${open.has(g.id) ? ' open' : ''}" data-id="${esc(g.id)}">
   <button class="row" aria-expanded="${open.has(g.id)}">${img}<span class="name">${numLabel(g) ? `<span class="num">${esc(numLabel(g))}</span> ` : ''}${esc(g.title)}</span>
     <span class="meta">${stageBadge(g)}${g.verdict && !g.released && !g.archived ? `<span class="vd ${esc(g.verdict.verdict)}">${esc(g.verdict.verdict)}</span>` : ''}<span class="p">${g.archived ? '' : esc(g.priority || '')}</span></span>

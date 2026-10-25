@@ -36,6 +36,10 @@ const all = [
 ];
 assert.deepEqual(V.namedGames(all[0], all).map((g) => g.id), ['colony-count', 'walls-have-ears', 'cymatic-plate', 'nine']); console.log('ok  a decision naming several games links each one (own game first, by title or #number)');
 assert.deepEqual(V.namedGames({ id: 'lone', title: 'Lone Game', url: 'u', needsYou: 'Fold the paper. Suggest: yes.' }, all).map((g) => g.id), ['lone']); console.log('ok  a short title such as Fold is not matched inside ordinary sentences');
+// P1BD08 follow-up: the opened card's task lines and history notes lose their task codes too.
+assert.equal(V.plain('P1TH01_swap-budget-real-choice: Tree Hero (#11). DONE.'), 'Tree Hero (#11). DONE.');
+assert.equal(V.plain('DONE P2FM52_same-badge-first-minute-fix: live game.js md5 matches'), 'DONE live game.js md5 matches');
+assert.equal(V.plain('P2RV06_the-draw: DONE'), 'DONE'); console.log('ok  task result and history lines read as plain sentences');
 module.exports = { games, inView };
 
 // Game numbers (P1BD07): search by number, from/to range, the URL hash and the copied list.
