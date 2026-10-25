@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T08:42:34+00:00",
+ "generated": "2026-10-25T08:44:53+00:00",
  "ops": {
-  "count": 3,
+  "count": 2,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 52,
+    "queued": 51,
     "running": 2,
-    "doneToday": 3,
-    "minutes": 2160,
-    "estimateMinutes": 2160
+    "doneToday": 4,
+    "minutes": 2120,
+    "estimateMinutes": 2120
    },
    "Claude": {
     "queued": 1,
@@ -34,9 +34,9 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 53,
+  "queued": 52,
   "running": 4,
-  "doneToday": 33,
+  "doneToday": 34,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2340,
-  "estimatedFinish": "2026-10-26T20:42:34+00:00",
-  "estimateMinutes": 2160
+  "minutesRemaining": 2300,
+  "estimatedFinish": "2026-10-26T20:04:53+00:00",
+  "estimateMinutes": 2120
  },
  "lanes": [
   {
@@ -56,7 +56,7 @@
    "game": "remote-viewer",
    "task": "P1FS12_remote viewer one screen",
    "since": "2026-10-25T08:13:26+00:00",
-   "activity": "2026-10-25T08:41:06+00:00",
+   "activity": "2026-10-25T08:44:44+00:00",
    "commit": {
     "at": "2026-10-25T08:36:58+00:00",
     "subject": "fix: keep the full report readable on small phones"
@@ -64,10 +64,10 @@
   },
   {
    "worker": "Codex",
-   "game": "the-apprentice",
-   "task": "P1FS27_the apprentice one screen",
-   "since": "2026-10-25T08:28:43+00:00",
-   "activity": "2026-10-25T08:41:01+00:00",
+   "game": "even-water",
+   "task": "P1FS28_even water one screen",
+   "since": "2026-10-25T08:42:41+00:00",
+   "activity": "2026-10-25T08:42:50+00:00",
    "commit": null
   },
   {
@@ -5943,7 +5943,7 @@
    ]
   },
   {
-   "nextTask": "even-water: one phone screen through the kit, Next...",
+   "nextTask": null,
    "costTotalUsd": 79.43,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -5972,7 +5972,7 @@
    "title": "Even Water",
    "line": "Place a few stones so the water finds every cup before the deep pit drinks it; 12 villages.",
    "url": "https://chenhsieh.github.io/even-water/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "has real potential; refine the feel (slower, predictable, guided) and the look...",
@@ -5987,7 +5987,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-25T07:53:35+00:00",
+   "lastChange": "2026-10-25T08:42:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -6003,10 +6003,10 @@
    "tasks": [
     {
      "title": "P1FS28_even water one screen",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "even-water: one phone screen through the kit, Next on screen after a win",
-     "since": "2026-10-25T07:53:35+00:00",
+     "since": "2026-10-25T08:42:41+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -6115,8 +6115,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 9
    },
@@ -20553,7 +20553,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T16:38:08+00:00",
-   "lastChange": "2026-10-25T08:41:06+00:00",
+   "lastChange": "2026-10-25T08:44:44+00:00",
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 1,
@@ -26768,7 +26768,7 @@
   },
   {
    "nextTask": "the-apprentice: take the new play kit so the...",
-   "costTotalUsd": 57.6,
+   "costTotalUsd": 54.0,
    "latestChange": {
     "text": "One screen: Start over and Replay behind More, day bar above the board and dropped on...",
     "at": "2026-10-25T08:41:01+00:00"
@@ -26783,14 +26783,14 @@
     "reviseRound": 1,
     "daysInState": 2
    },
-   "waitingOn": "the apprentice one screen",
+   "waitingOn": "kit fit rollout the apprentice",
    "id": "the-apprentice",
    "number": 152,
    "repo": "the-apprentice",
    "title": "The Apprentice",
    "line": "",
    "url": "https://chenhsieh.github.io/the-apprentice/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Codex",
    "priority": "P1",
    "priorityNote": "a teach-then-betrayed story with real potential; frame the story, the...",
@@ -26810,29 +26810,15 @@
     "apiUsd": 0.0,
     "codexRuns": 0,
     "claudeRuns": 6,
-    "apiRuns": 0,
+    "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 21.6,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
-    "totalUsdEst": 57.6
+    "earlierRounds": 9,
+    "earlierUsdEst": 32.4,
+    "totalUsdEst": 54.0
    },
    "tasks": [
-    {
-     "title": "P1FS27_the apprentice one screen",
-     "state": "running",
-     "worker": "Codex",
-     "plan": "the-apprentice: one phone screen through the kit, Next on screen after a win",
-     "since": "2026-10-25T08:28:43+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2AX18_kit fit rollout the apprentice",
      "state": "queued",
@@ -26846,6 +26832,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1FS27_the apprentice one screen",
+     "state": "done",
+     "worker": "Claude API",
+     "plan": "the-apprentice: one phone screen through the kit, Next on screen after a win",
+     "since": "2026-10-25T07:53:35+00:00",
+     "done": "2026-10-25T07:53:35+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1FS27 the-apprentice one screen: DONE (Sonnet overflow worker, 2026-10-25). Commits (kit sync, then fit) on main, head ; live bytes match (index.html, game.js, game.css, game.config.js, kit css/js); live gate PASS."
     },
     {
      "title": "P1AP03_visual round build",
@@ -26934,9 +26934,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": {
     "date": "2026-10-23",
@@ -31815,7 +31815,7 @@
    "url": "https://chenhsieh.github.io/even-water/",
    "added": "2026-10-22",
    "try": "Place stones so one pour reaches every cup before the pit drinks it",
-   "busy": false,
+   "busy": true,
    "image": "promo/even-water/first.jpg"
   },
   {
@@ -31869,8 +31869,8 @@
   },
   "a11y": {
    "yes": 15,
-   "no": 134,
-   "unknown": 16,
+   "no": 136,
+   "unknown": 14,
    "ran": 0
   },
   "credits": {
