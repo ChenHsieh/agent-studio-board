@@ -157,12 +157,12 @@
   {
    "executor": "claude-opus",
    "role": "design",
-   "count": 42,
+   "count": 43,
    "firstTimePass": 98,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 40,
+   "guessed": 41,
    "topFailures": [
     "levels 1-2 are deliberately easy for the nearest-expiry bot (they teac"
    ],
@@ -195,12 +195,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 233,
+   "count": 234,
    "firstTimePass": 95,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 186,
+   "guessed": 187,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -648,6 +648,15 @@
   },
   {
    "date": "2026-10-25",
+   "task": "marble act two look and lessons",
+   "number": "",
+   "executor": "claude-opus",
+   "role": "design",
+   "passed": "yes",
+   "note": "the dial's rod can sit near the pad's number label on tilted spring pads."
+  },
+  {
+   "date": "2026-10-25",
    "task": "marble mechanisms act two",
    "number": "",
    "executor": "claude-opus",
@@ -657,30 +666,21 @@
   },
   {
    "date": "2026-10-25",
+   "task": "sockglass one screen",
+   "number": "73",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "P1FS22 sockglass one screen: DONE (Sonnet overflow worker, 2026-10-25). Commit b0f1d2c on main; live bytes match; live gate PASS."
+  },
+  {
+   "date": "2026-10-25",
    "task": "peony dream one screen",
    "number": "99",
    "executor": "claude-sonnet",
    "role": "build",
    "passed": "yes",
    "note": "P1FS21 peony-dream one screen: DONE (Sonnet overflow worker, 2026-10-25). Commit 48fc4f6 on main; live bytes match (look.css, game.js, index"
-  },
-  {
-   "date": "2026-10-25",
-   "task": "clean features one screen",
-   "number": "96",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "P1FS20 clean-features one screen: DONE (Sonnet overflow worker, 2026-10-25). Commit 9b095bc on main; live bytes match (style.css, shell.js, "
-  },
-  {
-   "date": "2026-10-25",
-   "task": "chai boil one screen",
-   "number": "92",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "P1FS19 chai-boil one screen: DONE (Sonnet overflow worker, 2026-10-25). Commit fdbb68d on main, live bytes match (chai.js, chai.css, index.h"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."

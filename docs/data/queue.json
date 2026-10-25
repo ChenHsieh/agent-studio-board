@@ -1,5 +1,5 @@
 {
- "generated": 1792909621,
+ "generated": 1792909901,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -79,7 +79,7 @@
  },
  "overflow": {
   "codexOut": false,
-  "converted": 8,
+  "converted": 7,
   "convertedRunning": 1,
   "claudeWorkers": 2,
   "claudeWorkerCap": 3,
@@ -89,9 +89,9 @@
  },
  "tasks": [
   {
-   "id": "P1FS22_sockglass-one-screen",
-   "request": "sockglass: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "Sockglass",
+   "id": "P1FS23_readable-nonsense-one-screen",
+   "request": "readable-nonsense: one phone screen, Next on screen after a win, swipe on the board scrolls",
+   "game": "阿嬤讀得出來",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
@@ -100,30 +100,11 @@
    "estMinutes": null,
    "after": [],
    "priority": "P1",
-   "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
+   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
    "state": "running",
-   "at": 1792907210,
-   "created": 1792907210,
+   "at": 1792903312,
+   "created": 1792903312,
    "wasCodex": true
-  },
-  {
-   "id": "P1MM04_marble-act-two-look-and-lessons",
-   "request": "Marble Machine: the new pieces drawn as solid objects, one short lesson each",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1MM03_marble-mechanisms-act-two"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1792908841,
-   "created": 1792908841
   },
   {
    "id": "P1FS12_remote-viewer-one-screen",
@@ -232,24 +213,6 @@
    "waitingOn": [],
    "created": 1792894228,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P1FS23_readable-nonsense-one-screen",
-   "request": "readable-nonsense: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "阿嬤讀得出來",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792903312,
-   "wasCodex": true
   },
   {
    "id": "P1FS24_thumb-stand-one-screen",
@@ -752,6 +715,25 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P1MM05_marble-mechanisms-act-three",
+   "request": "Marble Machine: second marble, seesaw, belt, cup, wheel, flap and dominoes",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1MM04_marble-act-two-look-and-lessons"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792909763
+  },
+  {
    "id": "P2FS04_one-screen-rollout-rest",
    "request": "P2FS04_one screen rollout rest",
    "game": "Studio",
@@ -1237,27 +1219,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P1MM05_marble-mechanisms-act-three",
-   "request": "Marble Machine: second marble, seesaw, belt, cup, wheel, flap and dominoes",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1MM04_marble-act-two-look-and-lessons"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P1MM04_marble-act-two-look-and-lessons"
-   ],
-   "created": 1792838729
-  },
-  {
    "id": "P1MM06_marble-act-three-look-daily-share",
    "request": "Marble Machine: act-three look and lessons, a daily machine and its share line",
    "game": "Studio",
@@ -1276,7 +1237,7 @@
    "waitingOn": [
     "P1MM05_marble-mechanisms-act-three"
    ],
-   "created": 1792838733
+   "created": 1792909763
   },
   {
    "id": "P2AX13_kit-fit-rollout-honest-sign",
@@ -1647,6 +1608,24 @@
    "wasCodex": true
   },
   {
+   "id": "P1FS22_sockglass-one-screen",
+   "request": "sockglass: one phone screen, Next on screen after a win, swipe on the board scrolls",
+   "game": "Sockglass",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
+   "state": "done",
+   "at": 1792907210,
+   "created": 1792907210,
+   "wasCodex": true
+  },
+  {
    "id": "P1PP02_pinch-points-show-the-movement",
    "request": "Pinch Points: see the squares grow and shrink after every pinch, and watch the stone open onto the paper",
    "game": "Pinch Points",
@@ -1953,6 +1932,25 @@
    "state": "done",
    "at": 1792888748,
    "created": 1792888748
+  },
+  {
+   "id": "P1MM04_marble-act-two-look-and-lessons",
+   "request": "Marble Machine: the new pieces drawn as solid objects, one short lesson each",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1MM03_marble-mechanisms-act-two"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792908841,
+   "created": 1792908841
   },
   {
    "id": "P1ZM00_no-accidental-zoom-all-games",

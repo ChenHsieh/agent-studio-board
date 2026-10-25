@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T06:29:09+00:00",
+ "generated": "2026-10-25T06:31:29+00:00",
  "ops": {
   "count": 2,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 71,
+    "queued": 70,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2840,
-    "estimateMinutes": 2840
+    "minutes": 2800,
+    "estimateMinutes": 2800
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
-    "doneToday": 13,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "running": 1,
+    "doneToday": 15,
+    "minutes": 120,
+    "estimateMinutes": 60
    }
   },
-  "queued": 72,
-  "running": 2,
-  "doneToday": 13,
+  "queued": 71,
+  "running": 1,
+  "doneToday": 15,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,30 +46,22 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3020,
-  "estimatedFinish": "2026-10-27T05:49:09+00:00",
-  "estimateMinutes": 2840
+  "minutesRemaining": 2920,
+  "estimatedFinish": "2026-10-27T05:11:29+00:00",
+  "estimateMinutes": 2800
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "sockglass",
-   "task": "P1FS22_sockglass one screen",
-   "since": "2026-10-25T06:23:45+00:00",
-   "activity": "2026-10-25T06:29:02+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P1MM04_marble act two look and lessons",
-   "since": null,
-   "activity": null,
+   "game": "readable-nonsense",
+   "task": "P1FS23_readable nonsense one screen",
+   "since": "2026-10-25T06:30:40+00:00",
+   "activity": "2026-10-25T06:30:45+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 319.92,
  "claudeInSession": {
   "runs": 288,
@@ -24877,23 +24869,23 @@
     "caption": "Drag tissue-paper socks onto a dark bedroom window; where."
    },
    "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 1
+    "daysInState": 0
    },
-   "waitingOn": "sockglass one screen",
+   "waitingOn": "none",
    "id": "sockglass",
    "number": 73,
    "repo": "sockglass",
    "title": "Sockglass",
    "line": "Drag tissue-paper socks onto a dark bedroom window; where.",
    "url": "https://chenhsieh.github.io/sockglass/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Make sock sizes and counts readable and let the theme",
    "shelfNote": "",
@@ -24911,29 +24903,29 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 5,
+    "claudeRuns": 6,
     "apiRuns": 0,
     "codexTokens": 170850,
     "codexUsdEst": 0.21,
-    "claudeUsdEst": 18.0,
-    "earlierRounds": 12,
-    "earlierUsdEst": 43.2,
+    "claudeUsdEst": 21.6,
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
     "totalUsdEst": 61.41
    },
    "tasks": [
     {
      "title": "P1FS22_sockglass one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "sockglass: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T06:23:45+00:00",
-     "done": null,
+     "since": "2026-10-25T05:46:50+00:00",
+     "done": "2026-10-25T05:46:50+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1FS22 sockglass one screen: DONE (Sonnet overflow worker, 2026-10-25). Commit on main; live bytes match; live gate PASS."
     },
     {
      "title": "P2SG00_sockglass levels need a choice",
@@ -25022,9 +25014,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": {
     "date": "2026-10-24",
@@ -25032,7 +25024,7 @@
     "note": "The window and the colour mixing read well, but hanging each sock over its own picture already wins levels 4 to 6, so those levels need a real choice"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T06:29:02+00:00",
@@ -31544,15 +31536,15 @@
     "reviseRound": 1,
     "daysInState": 4
    },
-   "waitingOn": "readable nonsense why rollout",
+   "waitingOn": "readable nonsense one screen",
    "id": "readable-nonsense",
    "number": 75,
    "repo": "readable-nonsense",
    "title": "阿嬤讀得出來",
    "line": "A famous Tang poem line is printed as fake glyphs with.",
    "url": "https://chenhsieh.github.io/readable-nonsense/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Start error blocks play",
    "shelfNote": "",
@@ -31566,7 +31558,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:29:52+00:00",
-   "lastChange": "2026-10-25T06:12:52+00:00",
+   "lastChange": "2026-10-25T06:30:45+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 3,
@@ -31581,11 +31573,11 @@
    },
    "tasks": [
     {
-     "title": "P3PL16_readable nonsense why rollout",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Why this exists: finish the rollout on readable-nonsense (new test failure: test/onerule.test.mjs, the How to play car)",
-     "since": "2026-10-25T06:12:52+00:00",
+     "title": "P1FS23_readable nonsense one screen",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "readable-nonsense: one phone screen, Next on screen after a win, swipe on the board scrolls",
+     "since": "2026-10-25T06:30:40+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -31595,11 +31587,11 @@
      "result": ""
     },
     {
-     "title": "P1FS23_readable nonsense one screen",
+     "title": "P3PL16_readable nonsense why rollout",
      "state": "queued",
      "worker": "Codex",
-     "plan": "readable-nonsense: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T04:41:52+00:00",
+     "plan": "Why this exists: finish the rollout on readable-nonsense (new test failure: test/onerule.test.mjs, the How to play car)",
+     "since": "2026-10-25T06:12:52+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -31694,8 +31686,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 11
    },
