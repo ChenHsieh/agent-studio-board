@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T02:10:27+00:00",
+ "generated": "2026-10-25T02:12:47+00:00",
  "ops": {
-  "count": 138,
+  "count": 126,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 63,
+    "queued": 75,
     "running": 0,
     "doneToday": 3,
-    "minutes": 2520,
-    "estimateMinutes": 2520
+    "minutes": 3000,
+    "estimateMinutes": 3000
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 85,
+    "doneToday": 86,
     "minutes": 180,
     "estimateMinutes": 90
    }
   },
-  "queued": 64,
+  "queued": 76,
   "running": 2,
-  "doneToday": 88,
+  "doneToday": 89,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,23 +46,23 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2700,
-  "estimatedFinish": "2026-10-26T20:10:27+00:00",
-  "estimateMinutes": 2520
+  "minutesRemaining": 3180,
+  "estimatedFinish": "2026-10-27T04:12:47+00:00",
+  "estimateMinutes": 3000
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "Multiple games",
-   "task": "P1FS03_flagships one screen",
+   "task": "P1ZM00_no accidental zoom all games",
    "since": null,
    "activity": null,
    "commit": null
   },
   {
    "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P1ZM00_no accidental zoom all games",
+   "game": "play-template",
+   "task": "",
    "since": null,
    "activity": null,
    "commit": null
@@ -2083,7 +2083,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "chai-boil: one phone screen, Next on screen after...",
    "costTotalUsd": 91.11,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -2091,13 +2091,13 @@
    },
    "promo": null,
    "why": "An AI-made video post of a pot of milk tea foaming up on a wood fire, plus the Lunar Lander game.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 0
+    "daysInState": 3
    },
    "waitingOn": "owner",
    "id": "chai-boil",
@@ -2106,8 +2106,8 @@
    "title": "Chai Boil",
    "line": "One pot, one dial: let the chai rise to the rim, not over it.",
    "url": "https://chenhsieh.github.io/chai-boil/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "hyper-realistic visuals instead of computer-drawn",
    "shelfNote": "",
@@ -2121,7 +2121,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-25T01:42:32+00:00",
+   "lastChange": "2026-10-25T02:10:33+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 6,
@@ -2135,6 +2135,20 @@
     "totalUsdEst": 91.11
    },
    "tasks": [
+    {
+     "title": "P1FS19_chai boil one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "chai-boil: one phone screen, Next on screen after a win, swipe on the board scrolls",
+     "since": "2026-10-25T02:10:33+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1CB12_photo kitchens visual build",
      "state": "done",
@@ -2232,24 +2246,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1CB09 chai-lever-and-burners: DONE, live (main , https://chenhsieh.github.io/chai-boil/, live bytes match, zero console errors)."
-    },
-    {
-     "title": "P1CB10_chai kitchen sets",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "New kitchens: a rooftop stall at dusk, a rainy window kitchen, a mountain hut, and a redrawn night platform",
-     "since": "2026-10-22T03:58:31+00:00",
-     "done": "2026-10-22T03:58:31+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "P1CB10 chai-kitchen-sets: DONE, live (main , https://chenhsieh.github.io/chai-boil/, live bytes match, zero console errors)."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 19
@@ -2260,7 +2260,7 @@
     "note": "Visual revamp, different kitchen"
    },
    "needsYou": "Prayer-flag strip in the mountain hut set: five extra colours on one strip, all six kitchens still pass the contrast check. Suggest: keep it; it costs little and no kitchen failed the contrast check.",
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:42:32+00:00",
@@ -5250,7 +5250,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "drawing-circles: one phone screen, Next on screen after...",
    "costTotalUsd": 104.22,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -5258,23 +5258,23 @@
    },
    "promo": null,
    "why": "A post of a pelican on a bike drawn by 73 stacked spinning circles, credited to an AI demo.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 0
+    "daysInState": 5
    },
-   "waitingOn": "none",
+   "waitingOn": "drawing circles one screen",
    "id": "drawing-circles",
    "number": 54,
    "repo": "drawing-circles",
    "title": "Drawing Circles",
    "line": "Stack gears until the puppy's leash goes slack.",
    "url": "https://chenhsieh.github.io/drawing-circles/",
-   "stage": "review",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Flagship polish round: level 9 difficulty, How to play",
    "shelfNote": "",
@@ -5288,7 +5288,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T18:59:22+00:00",
-   "lastChange": "2026-10-25T01:31:45+00:00",
+   "lastChange": "2026-10-25T02:10:28+00:00",
    "cost": {
     "apiUsd": 12.59,
     "codexRuns": 4,
@@ -5302,6 +5302,20 @@
     "totalUsdEst": 104.22
    },
    "tasks": [
+    {
+     "title": "P1FS18_drawing circles one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "drawing-circles: one phone screen, Next on screen after a win, swipe on the board scrolls",
+     "since": "2026-10-25T02:10:28+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "review of drawing circles flagship round",
      "state": "done",
@@ -5402,7 +5416,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 7
@@ -5413,7 +5427,7 @@
     "note": "Flagship polish round: level 9 difficulty, How to play"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:31:45+00:00",
@@ -5848,7 +5862,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "even-water: one phone screen through the kit, Next...",
    "costTotalUsd": 79.43,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -5864,21 +5878,21 @@
    "why": "A water board game flooded in a tank, and a thread worrying that a public study-abroad fund flows to those already ahead.",
    "state": "ship",
    "stateFlags": {
-    "refining": false,
+    "refining": true,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 2
    },
-   "waitingOn": "owner",
+   "waitingOn": "even water one screen",
    "id": "even-water",
    "number": 131,
    "repo": "even-water",
    "title": "Even Water",
    "line": "Place a few stones so the water finds every cup before the deep pit drinks it; 12 villages.",
    "url": "https://chenhsieh.github.io/even-water/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "has real potential; refine the feel (slower, predictable, guided) and the look...",
    "shelfNote": "",
@@ -5892,7 +5906,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-25T01:39:20+00:00",
+   "lastChange": "2026-10-25T02:11:12+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -5906,6 +5920,20 @@
     "totalUsdEst": 79.43
    },
    "tasks": [
+    {
+     "title": "P1FS28_even water one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "even-water: one phone screen through the kit, Next on screen after a win",
+     "since": "2026-10-25T02:11:12+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1EW01_visual round design",
      "state": "done",
@@ -6003,24 +6031,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "even water visual design",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "even-water: visual round design (look and feel after the core passed review)",
-     "since": "2026-10-22T19:04:06+00:00",
-     "done": "2026-10-22T19:04:06+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "- Decision: Even Water becomes rice terraces in section: one stepped earth profile, water in paddies held by earth bunds (so the \"water pillar\" now reads as a paddy held above its neighbour), river stones set into the..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 9
@@ -6031,7 +6045,7 @@
     "note": "Stones steer one pour so every cup gets some; the first-drop line is enough to reason and still leaves a puzzle"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:39:20+00:00",
@@ -7416,7 +7430,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "flying-white: one phone screen through the kit, Next...",
    "costTotalUsd": 108.91,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -7424,23 +7438,23 @@
    },
    "promo": null,
    "why": "A commentary on a 2002 martial-arts film that tells one story three ways, where the character for sword is written 19 ways.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 0
+    "daysInState": 1
    },
-   "waitingOn": "none",
+   "waitingOn": "flying white one screen",
    "id": "flying-white",
    "number": 117,
    "repo": "flying-white",
    "title": "Flying White",
    "line": "",
    "url": "https://chenhsieh.github.io/flying-white/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Higher priority: real rubbing sources, hilarious teacher, growth, free writing",
    "shelfNote": "",
@@ -7454,7 +7468,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T05:31:34+00:00",
-   "lastChange": "2026-10-25T01:38:25+00:00",
+   "lastChange": "2026-10-25T02:11:20+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -7468,6 +7482,20 @@
     "totalUsdEst": 108.91
    },
    "tasks": [
+    {
+     "title": "P1FS30_flying white one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "flying-white: one phone screen through the kit, Next on screen after a win",
+     "since": "2026-10-25T02:11:20+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1FW56_result screen fits small phone",
      "state": "done",
@@ -7565,24 +7593,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "feat: give every sword form an ink mask"
-    },
-    {
-     "title": "P1FW49_sword collection bank data",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Flying White: add about 30 real historical forms of 劍 (bronze to Ming) to the character bank, with every source and licence on the credits page",
-     "since": "2026-10-22T22:57:27+00:00",
-     "done": "2026-10-22T22:57:27+00:00",
-     "reviewed": false,
-     "minutes": 13,
-     "tokens": 152314,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "feat: Explore 38 historical forms of 劍"
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 17
@@ -7593,7 +7607,7 @@
     "note": "The deadpan red-seal teacher is the best thing here; after you hand in on a small phone the result draws over the top bar and Next sits below the screen"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:38:25+00:00",
@@ -8322,8 +8336,8 @@
    "nextTask": null,
    "costTotalUsd": 43.41,
    "latestChange": {
-    "text": "tests: an old save loads (career, collection and runs rebuilt from older dailies; garbage...",
-    "at": "2026-10-25T01:13:30+00:00"
+    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
+    "at": "2026-10-25T01:54:45+00:00"
    },
    "promo": null,
    "why": "Public-domain objects from The Metropolitan Museum of Art's open collection API.",
@@ -8360,8 +8374,8 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-09-20T13:46:25+00:00",
-   "lastChange": "2026-10-25T01:13:30+00:00",
+   "firstSeen": "2026-09-20T14:31:26+00:00",
+   "lastChange": "2026-10-25T01:54:45+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -8475,6 +8489,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T01:54:45+00:00",
+     "ok": true,
+     "note": "Zoom guard updated: taps are never cancelled (P1ZM00)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T01:13:30+00:00",
      "ok": true,
      "note": "tests: an old save loads (career, collection and runs rebuilt from older dailies; garbage falls back) (P2GG00)",
@@ -8538,12 +8558,6 @@
      "at": "2026-10-14T20:04:03+00:00",
      "ok": true,
      "note": "feat: Museum timeline, place Met objects in time order",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-21T02:50:33+00:00",
-     "ok": true,
-     "note": "Open in the language the content is in",
      "source": "main commit"
     }
    ]
@@ -14999,7 +15013,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "mirror-hold: one phone screen, Next on screen after...",
    "costTotalUsd": 76.75,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -15009,21 +15023,21 @@
    "why": "Manga panels of a sumo wrestler before a mirror and a hand scooping Edo-period hair wax from a red tin.",
    "state": "ship",
    "stateFlags": {
-    "refining": false,
+    "refining": true,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "owner",
+   "waitingOn": "mirror hold one screen",
    "id": "mirror-hold",
    "number": 60,
    "repo": "mirror-hold",
    "title": "Mirror Hold",
    "line": "Wax a hairstyle, then test it against three pulls.",
    "url": "https://chenhsieh.github.io/mirror-hold/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Huge revamp planned by a cross-functional lead",
    "shelfNote": "",
@@ -15041,7 +15055,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T21:41:35+00:00",
-   "lastChange": "2026-10-25T01:31:23+00:00",
+   "lastChange": "2026-10-25T02:10:59+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -15055,6 +15069,20 @@
     "totalUsdEst": 76.75
    },
    "tasks": [
+    {
+     "title": "P1FS25_mirror hold one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "mirror-hold: one phone screen, Next on screen after a win, swipe on the board scrolls",
+     "since": "2026-10-25T02:10:59+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3OR57_mirror hold credits page",
      "state": "done",
@@ -15152,24 +15180,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Par before/after (finger-reachable best vs computer par): L1-3,5-10,12 unchanged at 144. L4: before par 142, finger 144 (lesson broken); after par 142, finger 142 (up pull now strength 2, so one pull must be given up)...."
-    },
-    {
-     "title": "P1MH53_mirror hold ladder ranks 1953",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Mirror Hold: 12 clients, the real tokoyama ranks as progression, the 1953 bout where the cord snapped",
-     "since": "2026-10-21T14:48:36+00:00",
-     "done": "2026-10-21T14:48:36+00:00",
-     "reviewed": false,
-     "minutes": 31,
-     "tokens": 199082,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "feat: rise through tokoyama ranks and face the 1953 bout"
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 14
@@ -15180,7 +15194,7 @@
     "note": "Comb each pull the right way before the bout and the hair holds; a wrong stroke springs loose strands you can see, and the real prints make every client a person"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:31:23+00:00",
@@ -15906,7 +15920,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "mushroom-gaps: one phone screen, Next on screen after...",
    "costTotalUsd": 54.39,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -15920,23 +15934,23 @@
     "caption": "Grow mycelium threads across an old factory floor and cut."
    },
    "why": "An anthropology trivia post about a book on matsutake mushrooms growing in the ruins of industry.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "mushroom gaps one screen",
    "id": "mushroom-gaps",
    "number": 68,
    "repo": "mushroom-gaps",
    "title": "Mushroom at the End",
    "line": "Grow mycelium threads across an old factory floor and cut.",
    "url": "https://chenhsieh.github.io/mushroom-gaps/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "wants this to happen; preview before commit, journalist research, taste visual...",
    "shelfNote": "",
@@ -15954,7 +15968,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:09:55+00:00",
-   "lastChange": "2026-10-25T01:32:15+00:00",
+   "lastChange": "2026-10-25T02:11:03+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -15968,6 +15982,20 @@
     "totalUsdEst": 54.39
    },
    "tasks": [
+    {
+     "title": "P1FS26_mushroom gaps one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "mushroom-gaps: one phone screen, Next on screen after a win, swipe on the board scrolls",
+     "since": "2026-10-25T02:11:03+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1MG02_survey print visual build",
      "state": "done",
@@ -16068,14 +16096,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 7
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:32:15+00:00",
@@ -18166,7 +18194,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "peony-dream: one phone screen, Next on screen after...",
    "costTotalUsd": 61.79,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -18182,21 +18210,21 @@
    "why": "The classical play The Peony Pavilion (1598) and a saved essay note on love found in a dream.",
    "state": "ship",
    "stateFlags": {
-    "refining": false,
+    "refining": true,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "owner",
+   "waitingOn": "peony dream one screen",
    "id": "peony-dream",
    "number": 99,
    "repo": "peony-dream",
    "title": "Peony Dream",
    "line": "Paint half a face on a sheet of silk, close the silk on.",
    "url": "https://chenhsieh.github.io/peony-dream/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Eastern ink visual direction instead of raster",
    "shelfNote": "",
@@ -18214,7 +18242,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-18T01:51:43+00:00",
-   "lastChange": "2026-10-25T01:39:57+00:00",
+   "lastChange": "2026-10-25T02:10:41+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -18228,6 +18256,20 @@
     "totalUsdEst": 61.79
    },
    "tasks": [
+    {
+     "title": "P1FS21_peony dream one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "peony-dream: one phone screen, Next on screen after a win, swipe on the board scrolls",
+     "since": "2026-10-25T02:10:41+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2PD02_peony dream small phone fit",
      "state": "done",
@@ -18328,7 +18370,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 7
@@ -18339,7 +18381,7 @@
     "note": "Choosing what the mirror may copy is a real decision (the obvious paint-and-fold never reaches par from level 4 on); next is fitting a small phone"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:39:57+00:00",
@@ -18636,7 +18678,7 @@
    ]
   },
   {
-   "nextTask": "Pinch Points: a rule card before level 1...",
+   "nextTask": "pinch-points: one phone screen through the kit, Next...",
    "costTotalUsd": 47.14,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -18658,7 +18700,7 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "pinch points strategy card and daily",
+   "waitingOn": "pinch points one screen",
    "id": "pinch-points",
    "number": 119,
    "repo": "pinch-points",
@@ -18680,7 +18722,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T20:47:18+00:00",
-   "lastChange": "2026-10-25T01:40:46+00:00",
+   "lastChange": "2026-10-25T02:11:16+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -18694,6 +18736,20 @@
     "totalUsdEst": 47.14
    },
    "tasks": [
+    {
+     "title": "P1FS29_pinch points one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "pinch-points: one phone screen through the kit, Next on screen after a win",
+     "since": "2026-10-25T02:11:16+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1PP03_pinch points strategy card and daily",
      "state": "queued",
@@ -18794,7 +18850,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 3,
     "running": 0,
     "waitingDesign": 0,
     "done": 5
@@ -24596,7 +24652,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "sockglass: one phone screen, Next on screen after...",
    "costTotalUsd": 61.41,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -24611,23 +24667,23 @@
     "caption": "Drag tissue-paper socks onto a dark bedroom window; where."
    },
    "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 2,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "sockglass one screen",
    "id": "sockglass",
    "number": 73,
    "repo": "sockglass",
    "title": "Sockglass",
    "line": "Drag tissue-paper socks onto a dark bedroom window; where.",
    "url": "https://chenhsieh.github.io/sockglass/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Make sock sizes and counts readable and let the theme",
    "shelfNote": "",
@@ -24641,7 +24697,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T23:27:18+00:00",
-   "lastChange": "2026-10-25T01:33:27+00:00",
+   "lastChange": "2026-10-25T02:10:46+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -24655,6 +24711,20 @@
     "totalUsdEst": 61.41
    },
    "tasks": [
+    {
+     "title": "P1FS22_sockglass one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "sockglass: one phone screen, Next on screen after a win, swipe on the board scrolls",
+     "since": "2026-10-25T02:10:46+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2SG00_sockglass levels need a choice",
      "state": "done",
@@ -24741,7 +24811,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 6
@@ -24752,7 +24822,7 @@
     "note": "The window and the colour mixing read well, but hanging each sock over its own picture already wins levels 4 to 6, so those levels need a real choice"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:33:27+00:00",
@@ -26441,7 +26511,7 @@
    ]
   },
   {
-   "nextTask": "the-apprentice: take the new play kit so the...",
+   "nextTask": "the-apprentice: one phone screen through the kit, Next...",
    "costTotalUsd": 50.4,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -26457,7 +26527,7 @@
     "reviseRound": 1,
     "daysInState": 1
    },
-   "waitingOn": "kit fit rollout the apprentice",
+   "waitingOn": "the apprentice one screen",
    "id": "the-apprentice",
    "number": 152,
    "repo": "the-apprentice",
@@ -26479,7 +26549,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:02+00:00",
-   "lastChange": "2026-10-25T01:39:41+00:00",
+   "lastChange": "2026-10-25T02:11:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -26493,6 +26563,20 @@
     "totalUsdEst": 50.4
    },
    "tasks": [
+    {
+     "title": "P1FS27_the apprentice one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "the-apprentice: one phone screen through the kit, Next on screen after a win",
+     "since": "2026-10-25T02:11:07+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2AX18_kit fit rollout the apprentice",
      "state": "queued",
@@ -26593,7 +26677,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 6
@@ -28053,7 +28137,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "thumb-stand: one phone screen, Next on screen after...",
    "costTotalUsd": 95.42,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -28063,21 +28147,21 @@
    "why": "Martial-arts manga panels of impossible one-thumb handstands and poses.",
    "state": "ship",
    "stateFlags": {
-    "refining": false,
+    "refining": true,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "owner",
+   "waitingOn": "thumb stand one screen",
    "id": "thumb-stand",
    "number": 78,
    "repo": "thumb-stand",
    "title": "Thumb Stand",
    "line": "",
    "url": "https://chenhsieh.github.io/thumb-stand/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Total rework planned by a cross-functional lead",
    "shelfNote": "",
@@ -28091,7 +28175,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:44:20+00:00",
-   "lastChange": "2026-10-25T01:35:51+00:00",
+   "lastChange": "2026-10-25T02:10:54+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
@@ -28105,6 +28189,20 @@
     "totalUsdEst": 95.42
    },
    "tasks": [
+    {
+     "title": "P1FS24_thumb stand one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "thumb-stand: one phone screen, Next on screen after a win, swipe on the board scrolls",
+     "since": "2026-10-25T02:10:54+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2TS58_thumb stand link preview",
      "state": "done",
@@ -28202,24 +28300,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "P1TS51_thumb stand panel page core",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Thumb Stand: reorder manga panels with one thumb, every panel shows his plumb line; the catch reflex goes",
-     "since": "2026-10-21T21:08:26+00:00",
-     "done": "2026-10-21T21:08:26+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Panel page core live. Reflex deleted; one-finger drag/tap swap; hold-to-play in bottom third; tip animation on a 會倒 panel. Tests: panels.test (42), panels_touch real CDP touch 390+320 (48), browser_test 54, onerule 39,..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 17
@@ -28230,7 +28314,7 @@
     "note": "Put his comic panels in an order where every red line lands on his hand, then hold your thumb under him; a fall is a loud joke and a win is earned"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:35:51+00:00",
@@ -28966,8 +29050,8 @@
    "nextTask": null,
    "costTotalUsd": 61.39,
    "latestChange": {
-    "text": "One number on every screen: no numbered steps, no distance sentence, at most 6 numerals...",
-    "at": "2026-10-25T00:14:05+00:00"
+    "text": "No accidental zoom on phones:",
+    "at": "2026-10-25T02:08:07+00:00"
    },
    "promo": {
     "files": {
@@ -29008,7 +29092,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-25T00:14:05+00:00",
+   "lastChange": "2026-10-25T02:08:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -29136,6 +29220,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T02:08:07+00:00",
+     "ok": true,
+     "note": "No accidental zoom on phones:",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T00:14:05+00:00",
      "ok": true,
      "note": "One number on every screen: no numbered steps, no distance sentence, at most 6 numerals per move (P1TH04)",
@@ -29200,12 +29290,6 @@
      "ok": true,
      "note": "feat: each swap says what it saves or costs, one score number on screen",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T22:27:17+00:00",
-     "ok": true,
-     "note": "daily keyed on local date not UTC (studio standard)",
-     "source": "board note"
     }
    ]
   },
@@ -30543,7 +30627,7 @@
    ]
   },
   {
-   "nextTask": "Clean Features: tests for the reset and a...",
+   "nextTask": "clean-features: one phone screen, Next on screen after...",
    "costTotalUsd": 80.06,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -30566,7 +30650,7 @@
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "reset tests and review",
+   "waitingOn": "clean features one screen",
    "id": "clean-features",
    "number": 96,
    "repo": "clean-features",
@@ -30592,7 +30676,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-25T02:09:09+00:00",
+   "lastChange": "2026-10-25T02:10:37+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -30606,6 +30690,20 @@
     "totalUsdEst": 80.06
    },
    "tasks": [
+    {
+     "title": "P1FS20_clean features one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "clean-features: one phone screen, Next on screen after a win, swipe on the board scrolls",
+     "since": "2026-10-25T02:10:37+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1CF05_reset tests and review",
      "state": "queued",
@@ -30703,24 +30801,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "feat: teach the dish through a playable first minute"
-    },
-    {
-     "title": "P1SD46_studio standard clean features",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T21:08:25+00:00",
-     "done": "2026-10-21T21:08:25+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Before: b_logo, c_meta, d_share, e_daily FAIL. After: a-f all ok. Brand button opens level menu, og + favicon, daily on local date; page_check PASS; main ."
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 14
@@ -31162,7 +31246,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "readable-nonsense: one phone screen, Next on screen after...",
    "costTotalUsd": 86.59,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -31170,23 +31254,23 @@
    },
    "promo": null,
    "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 0
+    "daysInState": 3
    },
-   "waitingOn": "none",
+   "waitingOn": "readable nonsense one screen",
    "id": "readable-nonsense",
    "number": 75,
    "repo": "readable-nonsense",
    "title": "阿嬤讀得出來",
    "line": "A famous Tang poem line is printed as fake glyphs with.",
    "url": "https://chenhsieh.github.io/readable-nonsense/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Start error blocks play",
    "shelfNote": "",
@@ -31200,7 +31284,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:29:52+00:00",
-   "lastChange": "2026-10-25T01:37:58+00:00",
+   "lastChange": "2026-10-25T02:10:50+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 3,
@@ -31214,6 +31298,20 @@
     "totalUsdEst": 86.59
    },
    "tasks": [
+    {
+     "title": "P1FS23_readable nonsense one screen",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "readable-nonsense: one phone screen, Next on screen after a win, swipe on the board scrolls",
+     "since": "2026-10-25T02:10:50+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1RN45_tap label beside picture",
      "state": "done",
@@ -31311,24 +31409,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "P1RN30_readable nonsense render fix",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Fix Readable Nonsense rendering of Zhuyin glyphs and the how-to page on iPhone and in-app browsers.",
-     "since": "2026-10-21T06:39:05+00:00",
-     "done": "2026-10-21T06:39:05+00:00",
-     "reviewed": false,
-     "minutes": 21,
-     "tokens": 182861,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "fix: render Zhuyin and poem text reliably on phones"
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 11
@@ -31339,7 +31423,7 @@
     "note": "Start error"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:37:58+00:00",
