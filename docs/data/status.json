@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T08:35:39+00:00",
+ "generated": "2026-10-25T08:37:57+00:00",
  "ops": {
-  "count": 2,
+  "count": 1,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,22 +20,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 53,
+    "queued": 52,
     "running": 2,
     "doneToday": 3,
-    "minutes": 2200,
-    "estimateMinutes": 2200
+    "minutes": 2160,
+    "estimateMinutes": 2160
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 2,
     "doneToday": 30,
-    "minutes": 120,
-    "estimateMinutes": 60
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
-  "queued": 54,
-  "running": 3,
+  "queued": 53,
+  "running": 4,
   "doneToday": 33,
   "lanes": {
    "Codex": 1,
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2320,
-  "estimatedFinish": "2026-10-26T21:15:39+00:00",
-  "estimateMinutes": 2200
+  "minutesRemaining": 2340,
+  "estimatedFinish": "2026-10-26T20:37:57+00:00",
+  "estimateMinutes": 2160
  },
  "lanes": [
   {
@@ -56,10 +56,10 @@
    "game": "remote-viewer",
    "task": "P1FS12_remote viewer one screen",
    "since": "2026-10-25T08:13:26+00:00",
-   "activity": "2026-10-25T08:35:32+00:00",
+   "activity": "2026-10-25T08:37:02+00:00",
    "commit": {
-    "at": "2026-10-25T08:29:32+00:00",
-    "subject": "wip: P1FS12_remote-viewer-one-screen (Codex lane autosave 04:29)"
+    "at": "2026-10-25T08:36:58+00:00",
+    "subject": "fix: keep the full report readable on small phones"
    }
   },
   {
@@ -77,10 +77,18 @@
    "since": null,
    "activity": null,
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P2UX04_release check sweep all games",
+   "since": null,
+   "activity": null,
+   "commit": null
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 1,
+ "claudeWorkers": 2,
  "apiSpentUsd": 320.27,
  "claudeInSession": {
   "runs": 288,
@@ -18885,7 +18893,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T20:47:18+00:00",
-   "lastChange": "2026-10-25T07:53:35+00:00",
+   "lastChange": "2026-10-25T08:35:44+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -18904,7 +18912,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "pinch-points: one phone screen through the kit, Next on screen after a win",
-     "since": "2026-10-25T07:53:35+00:00",
+     "since": "2026-10-25T08:35:44+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -20545,7 +20553,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T16:38:08+00:00",
-   "lastChange": "2026-10-25T08:35:32+00:00",
+   "lastChange": "2026-10-25T08:37:02+00:00",
    "cost": {
     "apiUsd": 9.24,
     "codexRuns": 1,
@@ -20571,8 +20579,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-25T08:29:32+00:00",
-      "subject": "wip: P1FS12_remote-viewer-one-screen (Codex lane autosave 04:29)"
+      "at": "2026-10-25T08:36:58+00:00",
+      "subject": "fix: keep the full report readable on small phones"
      },
      "result": ""
     },
@@ -27415,7 +27423,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:50:16+00:00",
-   "lastChange": "2026-10-25T08:06:00+00:00",
+   "lastChange": "2026-10-25T08:35:44+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -27434,7 +27442,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "The Lot Waits: a new first minute that shows both costs in three steps",
-     "since": "2026-10-25T08:06:00+00:00",
+     "since": "2026-10-25T08:35:44+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -31860,9 +31868,9 @@
    "ran": 41
   },
   "a11y": {
-   "yes": 0,
-   "no": 19,
-   "unknown": 146,
+   "yes": 5,
+   "no": 63,
+   "unknown": 97,
    "ran": 0
   },
   "credits": {
