@@ -1,21 +1,25 @@
 {
- "generated": 1792909481,
+ "generated": 1792909621,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
-  "lanesBusy": 1,
+  "lanesBusy": 0,
   "ready": 0,
   "waiting": 0,
   "queued": 0,
-  "running": 1,
-  "done24h": 17,
-  "modelsQueued": {
-   "openai/gpt-4.1": 1
-  },
+  "running": 0,
+  "done24h": 18,
+  "modelsQueued": {},
   "spendTodayUsd": 0.22,
-  "runsToday": 8,
-  "runsTodayUnpriced": 6,
+  "runsToday": 9,
+  "runsTodayUnpriced": 7,
   "spendTotalUsd": 15.36,
   "recent": [
+   {
+    "id": "P3OR83_glasshouse-save-settings-test",
+    "request": "Glasshouse: a test that broken or old settings saves fall back to defaults (OpenRouter lane)",
+    "model": "openai/gpt-4.1",
+    "at": 1792909447
+   },
    {
     "id": "P3OR87_grad-survivor-save-test",
     "request": "UGA Grad Survivor: a test that the long-term save and the run in progress load safely (OpenRouter lane)",
@@ -69,12 +73,6 @@
     "request": "P3OR78_remote viewer credits corrected",
     "model": "openai/gpt-4.1",
     "at": 1792837866
-   },
-   {
-    "id": "P3OR77_couplet-data-file",
-    "request": "P3OR77_couplet data file",
-    "model": "openai/gpt-4.1",
-    "at": 1792833465
    }
   ],
   "label": "estimate"
@@ -107,23 +105,6 @@
    "at": 1792907210,
    "created": 1792907210,
    "wasCodex": true
-  },
-  {
-   "id": "P3OR83_glasshouse-save-settings-test",
-   "request": "Glasshouse: a test that broken or old settings saves fall back to defaults (OpenRouter lane)",
-   "game": "Glasshouse",
-   "route": "OpenRouter",
-   "model": "openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
-   "state": "running",
-   "at": 1792909447,
-   "created": 1792909447
   },
   {
    "id": "P1MM04_marble-act-two-look-and-lessons",
@@ -430,6 +411,28 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P3SV54_glasshouse-merge-save-tests",
+   "request": "Glasshouse: merge the save tests to main",
+   "game": "Glasshouse",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR82_glasshouse-save-migration-test",
+    "P3OR83_glasshouse-save-settings-test",
+    "P3OR84_glasshouse-crew-save-test"
+   ],
+   "priority": "P1",
+   "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792908660,
    "estPercentOfWeek": 0.25
   },
   {
@@ -1190,30 +1193,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P3SV54_glasshouse-merge-save-tests",
-   "request": "Glasshouse: merge the save tests to main",
-   "game": "Glasshouse",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P3OR82_glasshouse-save-migration-test",
-    "P3OR83_glasshouse-save-settings-test",
-    "P3OR84_glasshouse-crew-save-test"
-   ],
-   "priority": "P1",
-   "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
-   "state": "waiting",
-   "waitingOn": [
-    "P3OR83_glasshouse-save-settings-test"
-   ],
-   "created": 1792908660,
-   "estPercentOfWeek": 0.25
-  },
-  {
    "id": "P1LW03_lot-waits-first-minute-v2",
    "request": "The Lot Waits: a new first minute that shows both costs in three steps",
    "game": "The Lot Waits",
@@ -1757,6 +1736,23 @@
    "state": "done",
    "at": 1792908619,
    "created": 1792908619
+  },
+  {
+   "id": "P3OR83_glasshouse-save-settings-test",
+   "request": "Glasshouse: a test that broken or old settings saves fall back to defaults (OpenRouter lane)",
+   "game": "Glasshouse",
+   "route": "OpenRouter",
+   "model": "openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
+   "state": "done",
+   "at": 1792909447,
+   "created": 1792909447
   },
   {
    "id": "P3OR84_glasshouse-crew-save-test",

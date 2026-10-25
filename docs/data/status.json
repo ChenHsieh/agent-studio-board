@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T06:24:28+00:00",
+ "generated": "2026-10-25T06:26:48+00:00",
  "ops": {
   "count": 2,
   "notes": [
@@ -28,15 +28,15 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 3,
-    "doneToday": 12,
-    "minutes": 240,
-    "estimateMinutes": 120
+    "running": 2,
+    "doneToday": 13,
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
   "queued": 72,
-  "running": 3,
-  "doneToday": 12,
+  "running": 2,
+  "doneToday": 13,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,8 +46,8 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3080,
-  "estimatedFinish": "2026-10-27T05:44:28+00:00",
+  "minutesRemaining": 3020,
+  "estimatedFinish": "2026-10-27T05:46:48+00:00",
   "estimateMinutes": 2840
  },
  "lanes": [
@@ -56,7 +56,7 @@
    "game": "sockglass",
    "task": "P1FS22_sockglass one screen",
    "since": "2026-10-25T06:23:45+00:00",
-   "activity": "2026-10-25T06:23:50+00:00",
+   "activity": "2026-10-25T06:24:58+00:00",
    "commit": null
   },
   {
@@ -66,18 +66,10 @@
    "since": null,
    "activity": null,
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "glasshouse",
-   "task": "P3OR83_glasshouse save settings test",
-   "since": "2026-10-25T06:24:28+00:00",
-   "activity": "2026-10-25T06:24:28+00:00",
-   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 3,
+ "claudeWorkers": 2,
  "apiSpentUsd": 319.92,
  "claudeInSession": {
   "runs": 288,
@@ -9028,15 +9020,15 @@
     "reviseRound": 1,
     "daysInState": 2
    },
-   "waitingOn": "glasshouse save settings test",
+   "waitingOn": "glasshouse why build",
    "id": "glasshouse",
    "number": 3,
    "repo": "glasshouse",
    "title": "Glasshouse",
    "line": "Lead a line of students through a greenhouse.",
    "url": "https://chenhsieh.github.io/glasshouse/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Decide the best public role for a finished personal game",
    "shelfNote": "",
@@ -9050,34 +9042,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-08-09T16:24:24+00:00",
-   "lastChange": "2026-10-25T06:24:28+00:00",
+   "lastChange": "2026-10-25T06:24:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 6,
+    "claudeRuns": 7,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 21.6,
-    "earlierRounds": 9,
-    "earlierUsdEst": 32.4,
+    "claudeUsdEst": 25.2,
+    "earlierRounds": 8,
+    "earlierUsdEst": 28.8,
     "totalUsdEst": 54.0
    },
    "tasks": [
-    {
-     "title": "P3OR83_glasshouse save settings test",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Glasshouse: a test that broken or old settings saves fall back to defaults (OpenRouter lane)",
-     "since": "2026-10-25T06:24:28+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P3PL19_glasshouse why build",
      "state": "queued",
@@ -9105,6 +9083,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P3OR83_glasshouse save settings test",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Glasshouse: a test that broken or old settings saves fall back to defaults (OpenRouter lane)",
+     "since": "2026-10-25T06:24:07+00:00",
+     "done": "2026-10-25T06:24:07+00:00",
+     "reviewed": false,
+     "minutes": 0,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: [ -d node_modules ] || npm ci --silent --no-audit --no-fund >/dev/null 2>&1; npx vitest run tests/save-settings.test.ts"
     },
     {
      "title": "P3OR84_glasshouse crew save test",
@@ -9179,9 +9171,9 @@
    ],
    "taskCounts": {
     "queued": 2,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": {
     "date": "2026-10-20",
@@ -18359,8 +18351,8 @@
    "nextTask": null,
    "costTotalUsd": 61.79,
    "latestChange": {
-    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
-    "at": "2026-10-25T01:39:57+00:00"
+    "text": "One screen: win scroll pinned to the bottom with Next level first, board takes the room...",
+    "at": "2026-10-25T06:22:05+00:00"
    },
    "promo": {
     "files": {
@@ -18404,7 +18396,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-18T01:51:43+00:00",
-   "lastChange": "2026-10-25T05:46:50+00:00",
+   "lastChange": "2026-10-25T06:22:05+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -18546,6 +18538,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T06:22:05+00:00",
+     "ok": true,
+     "note": "One screen: win scroll pinned to the bottom with Next level first, board takes the room left, swipe from the silk scrolls the page",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T01:39:57+00:00",
      "ok": true,
      "note": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -18609,12 +18607,6 @@
      "at": "2026-10-22T23:53:47+00:00",
      "ok": false,
      "note": "see",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T19:34:08+00:00",
-     "ok": true,
-     "note": "feat: give Peony Dream its own logo and link preview",
      "source": "board note"
     }
    ]
@@ -24915,7 +24907,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:34:52+00:00",
-   "lastChange": "2026-10-25T06:23:50+00:00",
+   "lastChange": "2026-10-25T06:24:58+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
