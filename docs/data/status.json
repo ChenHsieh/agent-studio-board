@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T04:22:40+00:00",
+ "generated": "2026-10-25T04:25:00+00:00",
  "ops": {
-  "count": 13,
+  "count": 12,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,39 +20,48 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 69,
+    "queued": 67,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2760,
-    "estimateMinutes": 2760
+    "minutes": 2680,
+    "estimateMinutes": 2680
    },
    "Claude": {
     "queued": 1,
-    "running": 0,
+    "running": 1,
     "doneToday": 0,
-    "minutes": 60,
+    "minutes": 120,
     "estimateMinutes": 60
    }
   },
-  "queued": 70,
-  "running": 0,
+  "queued": 68,
+  "running": 1,
   "doneToday": 0,
   "lanes": {
    "Codex": 1,
-   "Claude": 1
+   "Claude": 2
   },
   "laneCap": {
    "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2820,
-  "estimatedFinish": "2026-10-27T02:22:40+00:00",
-  "estimateMinutes": 2760
+  "minutesRemaining": 2800,
+  "estimatedFinish": "2026-10-27T01:05:00+00:00",
+  "estimateMinutes": 2680
  },
- "lanes": [],
+ "lanes": [
+  {
+   "worker": "Claude",
+   "game": "hit-or-kit",
+   "task": "P2HK00_which one to drop clarity",
+   "since": "2026-10-25T04:23:46+00:00",
+   "activity": "2026-10-25T04:23:47+00:00",
+   "commit": null
+  }
+ ],
  "codexLanes": 0,
- "claudeWorkers": 0,
+ "claudeWorkers": 1,
  "apiSpentUsd": 319.8,
  "claudeInSession": {
   "runs": 288,
@@ -1574,7 +1583,7 @@
    ]
   },
   {
-   "nextTask": "Blackout Notice: build the woodblock page look picked...",
+   "nextTask": null,
    "costTotalUsd": 51.12,
    "latestChange": {
     "text": "Blackout Notice: the woodblock leaf look (P2BN06): printed columns read right to left,...",
@@ -1588,13 +1597,13 @@
     "caption": "Black out words on a stairwell notice until it says something kinder; 20 notices and a daily."
    },
    "why": "A scruffy hand-lettered hiring post and a job ad written mostly as a list of what the company is not.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 1
+    "daysInState": 0
    },
    "waitingOn": "owner",
    "id": "blackout-notice",
@@ -1603,8 +1612,8 @@
    "title": "Blackout Notice",
    "line": "Black out words on a stairwell notice until it says something kinder; 20 notices and a daily.",
    "url": "https://chenhsieh.github.io/blackout-notice/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Black out words on a stairwell notice until it says something kinder; 20",
    "shelfNote": "",
@@ -1626,30 +1635,16 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
-    "claudeRuns": 9,
+    "claudeRuns": 10,
     "apiRuns": 0,
     "codexTokens": 601307,
     "codexUsdEst": 0.72,
-    "claudeUsdEst": 32.4,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
+    "claudeUsdEst": 36.0,
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
     "totalUsdEst": 51.12
    },
    "tasks": [
-    {
-     "title": "P2BN06_couplet woodblock build",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Blackout Notice: build the woodblock page look picked in the couplet visual round",
-     "since": "2026-10-24T11:12:44+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2BN07_fix couplet first minute",
      "state": "done",
@@ -1663,6 +1658,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P2BN07 result (Sonnet). Published to blackout-notice main ; live bytes match (lesson.js, game.js, game.css, index.html); live page opened at 390x844 and 320x568: lesson starts from the card's Start, no page errors."
+    },
+    {
+     "title": "P2BN06_couplet woodblock build",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Blackout Notice: build the woodblock page look picked in the couplet visual round",
+     "since": "2026-10-24T11:12:44+00:00",
+     "done": "2026-10-24T11:12:44+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P2BN06 result (Sonnet). Published to blackout-notice main ; live bytes match (game.js, game.css, game.config.js, index.html, lesson.js, og.png); live page checked at 390x844 and 320x568 (lesson starts, no page errors)."
     },
     {
      "title": "P2BN05_couplet visual round",
@@ -1750,10 +1759,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 12
+    "done": 13
    },
    "verdict": {
     "date": "2026-10-24",
@@ -1761,7 +1770,7 @@
     "note": "The couplet game is a real choice and the reveal is the payoff, but nothing teaches the first move and the reveal marks are not explained"
    },
    "needsYou": "Read the 20 notices before it is promoted: the wording was written by the agent and no person has read it. Suggest: read levels 1 to 20 once, fix tone, then promote.",
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T04:22:08+00:00",
@@ -10827,7 +10836,7 @@
    ]
   },
   {
-   "nextTask": "Hit or Kit (#126): make clear how to...",
+   "nextTask": null,
    "costTotalUsd": 46.8,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -10847,7 +10856,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 1
+    "daysInState": 0
    },
    "waitingOn": "which one to drop clarity",
    "id": "hit-or-kit",
@@ -10856,8 +10865,8 @@
    "title": "Hit or Kit",
    "line": "Open sample tubes in a freezer box and publish or drop a microbiome finding; 25 cases and a daily.",
    "url": "https://chenhsieh.github.io/hit-or-kit/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Open sample tubes in a freezer box and publish or drop a microbiome finding; 25",
    "shelfNote": "",
@@ -10875,7 +10884,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T04:19:06+00:00",
-   "lastChange": "2026-10-25T01:41:30+00:00",
+   "lastChange": "2026-10-25T04:23:47+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -10891,10 +10900,10 @@
    "tasks": [
     {
      "title": "P2HK00_which one to drop clarity",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Hit or Kit (#126): make clear how to read the blank and which sample to drop.",
-     "since": "2026-10-24T02:54:42+00:00",
+     "since": "2026-10-25T04:23:46+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -10947,8 +10956,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
