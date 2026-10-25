@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T06:10:07+00:00",
+ "generated": "2026-10-25T06:12:34+00:00",
  "ops": {
   "count": 2,
   "notes": [
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 57,
+    "queued": 74,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2280,
-    "estimateMinutes": 2280
+    "minutes": 2960,
+    "estimateMinutes": 2960
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 58,
+  "queued": 75,
   "running": 1,
   "doneToday": 6,
   "lanes": {
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2400,
-  "estimatedFinish": "2026-10-26T20:10:07+00:00",
-  "estimateMinutes": 2280
+  "minutesRemaining": 3080,
+  "estimatedFinish": "2026-10-27T07:32:34+00:00",
+  "estimateMinutes": 2960
  },
  "lanes": [
   {
@@ -121,7 +121,7 @@
  "houseRules": 25,
  "games": [
   {
-   "nextTask": "Name to Carry: the game file no longer...",
+   "nextTask": "Why this exists: finish the rollout on name-to-carry...",
    "costTotalUsd": 25.39,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -165,7 +165,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T02:25:43+00:00",
-   "lastChange": "2026-10-25T01:42:27+00:00",
+   "lastChange": "2026-10-25T06:12:29+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -179,6 +179,20 @@
     "totalUsdEst": 25.39
    },
    "tasks": [
+    {
+     "title": "P3PL12_name to carry why rollout",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Why this exists: finish the rollout on name-to-carry (new test failure: test/name.test.mjs, zh glyphs 工 室 創 are mi)",
+     "since": "2026-10-25T06:12:29+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2NC00_name to carry data inline",
      "state": "queued",
@@ -223,7 +237,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 2
@@ -4464,7 +4478,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Why this exists: finish the rollout on dancers-not-mad...",
    "costTotalUsd": 47.09,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -4472,23 +4486,23 @@
    },
    "promo": null,
    "why": "The saying that those who cannot hear the music think the dancers mad.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 0
+    "daysInState": 4
    },
-   "waitingOn": "none",
+   "waitingOn": "dancers not mad why rollout",
    "id": "dancers-not-mad",
    "number": 109,
    "repo": "dancers-not-mad",
    "title": "Dancers Not Mad",
    "line": "",
    "url": "https://chenhsieh.github.io/dancers-not-mad/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -4502,7 +4516,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T17:37:54+00:00",
-   "lastChange": "2026-10-25T01:35:29+00:00",
+   "lastChange": "2026-10-25T06:12:33+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -4516,6 +4530,20 @@
     "totalUsdEst": 47.09
    },
    "tasks": [
+    {
+     "title": "P3PL13_dancers not mad why rollout",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Why this exists: finish the rollout on dancers-not-mad (new test failure: test/anim_budget.mjs (layout shift))",
+     "since": "2026-10-25T06:12:33+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2FM30_dancers not mad first minute",
      "state": "done",
@@ -4574,7 +4602,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
@@ -4585,7 +4613,7 @@
     "note": "Mechanism visible; animation missing; visuals crude: smooth animations first"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:35:29+00:00",
@@ -8355,7 +8383,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Why this exists: finish the rollout on gallery-guess...",
    "costTotalUsd": 43.41,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -8365,21 +8393,21 @@
    "why": "Public-domain objects from The Metropolitan Museum of Art's open collection API.",
    "state": "ship",
    "stateFlags": {
-    "refining": false,
+    "refining": true,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 6
    },
-   "waitingOn": "owner",
+   "waitingOn": "gallery guess why rollout",
    "id": "gallery-guess",
    "number": 22,
    "repo": "gallery-guess",
    "title": "Gallery Guess",
    "line": "Place each museum object by country and year.",
    "url": "https://chenhsieh.github.io/gallery-guess/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P3",
    "priorityNote": "Story and mechanism pass; pending a merge decision",
    "shelfNote": "",
@@ -8397,7 +8425,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-09-20T14:31:26+00:00",
-   "lastChange": "2026-10-25T01:54:45+00:00",
+   "lastChange": "2026-10-25T06:12:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -8411,6 +8439,20 @@
     "totalUsdEst": 43.41
    },
    "tasks": [
+    {
+     "title": "P3PL07_gallery guess why rollout",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Why this exists: finish the rollout on gallery-guess (320 and 390: button covered or off screen)",
+     "since": "2026-10-25T06:12:07+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2GG00_gallery guess save migration test",
      "state": "done",
@@ -8497,7 +8539,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 6
@@ -8508,7 +8550,7 @@
     "note": "Ship after ship standard, share cap and ranks"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:54:45+00:00",
@@ -8954,7 +8996,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Glasshouse: merge the save tests to main",
    "costTotalUsd": 54.0,
    "latestChange": {
     "text": "P3OR39_glasshouse-short-share-line: WORKDIR",
@@ -8964,21 +9006,21 @@
    "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
    "state": "released",
    "stateFlags": {
-    "refining": false,
+    "refining": true,
     "resting": false,
     "regressed": false,
     "reviseRound": 1,
     "daysInState": 2
    },
-   "waitingOn": "none",
+   "waitingOn": "glasshouse merge save tests",
    "id": "glasshouse",
    "number": 3,
    "repo": "glasshouse",
    "title": "Glasshouse",
    "line": "Lead a line of students through a greenhouse.",
    "url": "https://chenhsieh.github.io/glasshouse/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Decide the best public role for a finished personal game",
    "shelfNote": "",
@@ -8992,7 +9034,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-08-09T16:24:24+00:00",
-   "lastChange": "2026-10-24T02:54:42+00:00",
+   "lastChange": "2026-10-25T06:11:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -9006,6 +9048,62 @@
     "totalUsdEst": 54.0
    },
    "tasks": [
+    {
+     "title": "P3SV54_glasshouse merge save tests",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Glasshouse: merge the save tests to main",
+     "since": "2026-10-25T06:11:00+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P3OR84_glasshouse crew save test",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Glasshouse: a test that the collected crew survives the save format change (OpenRouter lane)",
+     "since": "2026-10-25T06:10:28+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P3OR83_glasshouse save settings test",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Glasshouse: a test that broken or old settings saves fall back to defaults (OpenRouter lane)",
+     "since": "2026-10-25T06:10:23+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P3OR82_glasshouse save migration test",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Glasshouse: a test that proves old saves carry over after the rename (OpenRouter lane)",
+     "since": "2026-10-25T06:10:19+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3GH41_deploy preview fix",
      "state": "done",
@@ -9064,7 +9162,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 4,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
@@ -9075,7 +9173,7 @@
     "note": "Fine; default menu page is gone: needs an onboarding page"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-23T00:42:01+00:00",
@@ -13802,7 +13900,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Why this exists: finish the rollout on machine-rhythm...",
    "costTotalUsd": 39.88,
    "latestChange": {
     "text": "No accidental zoom on phones: viewport meta + a 326-byte inline guard (the page has a 200...",
@@ -13810,23 +13908,23 @@
    },
    "promo": null,
    "why": "A slide from an art film about work being mapped onto the rhythms of machines rather than workers' judgement.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "machine rhythm why rollout",
    "id": "machine-rhythm",
    "number": 89,
    "repo": "machine-rhythm",
    "title": "Machine Rhythm",
    "line": "A toy line runs on its own beat and every machine stamps.",
    "url": "https://chenhsieh.github.io/machine-rhythm/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P3",
    "priorityNote": "No guidance yet",
    "shelfNote": "",
@@ -13840,7 +13938,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:53:04+00:00",
-   "lastChange": "2026-10-25T02:36:04+00:00",
+   "lastChange": "2026-10-25T06:12:24+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -13854,6 +13952,20 @@
     "totalUsdEst": 39.88
    },
    "tasks": [
+    {
+     "title": "P3PL11_machine rhythm why rollout",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Why this exists: finish the rollout on machine-rhythm (new test failures: first_words (36 words > 35) and phone_fir)",
+     "since": "2026-10-25T06:12:24+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "review of machine rhythm guide",
      "state": "done",
@@ -13884,14 +13996,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 2
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T02:36:04+00:00",
@@ -19732,7 +19844,7 @@
    ]
   },
   {
-   "nextTask": "redacxiv: one phone screen, Next on screen after...",
+   "nextTask": "Redacxiv: merge the save tests to main",
    "costTotalUsd": 58.97,
    "latestChange": {
     "text": "fix: Redacxiv link preview text is under 120 characters",
@@ -19777,7 +19889,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-14T20:39:05+00:00",
-   "lastChange": "2026-10-25T02:10:07+00:00",
+   "lastChange": "2026-10-25T06:11:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -19791,6 +19903,48 @@
     "totalUsdEst": 58.97
    },
    "tasks": [
+    {
+     "title": "P3SV55_redacxiv merge save tests",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Redacxiv: merge the save tests to main",
+     "since": "2026-10-25T06:11:00+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P3OR86_redacxiv tile save test",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Redacxiv: a test that tile-mode saves and the archive list read old saves (OpenRouter lane)",
+     "since": "2026-10-25T06:10:41+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P3OR85_redacxiv save migration test",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Redacxiv: a test that old saves (streak, mode, day state) carry over after the rename (OpenRouter lane)",
+     "since": "2026-10-25T06:10:37+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1FS13_redacxiv one screen",
      "state": "queued",
@@ -19860,52 +20014,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Tile candidates now use one lowercase style; 30-day fairness coverage checks case, length, order, and styling."
-    },
-    {
-     "title": "bioredactle ship",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "",
-     "since": "2026-10-20T01:37:56+00:00",
-     "done": "2026-10-20T01:37:56+00:00",
-     "reviewed": true,
-     "minutes": 13,
-     "tokens": 271425,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Stats, solved-paper collection, and difficulty practice are live; removed no unreachable legacy panels."
-    },
-    {
-     "title": "bioredactle ship",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "Ship it: tile mode first, difficulty check, name and legal review, a plan to expand beyond biology.",
-     "since": "2026-10-20T00:51:41+00:00",
-     "done": "2026-10-20T00:51:41+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Live unchanged (tiles already the default). Plan written: expert/BioRedactle-nextjs/packages/SHIP_20261019.md (difficulty model: random tapper wins 0.6-1.7%, keep the tile choice; name: keep BioRedactle, Redacxiv if it..."
-    },
-    {
-     "title": "review of BioRedactle nextjs ui pass",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-19T20:53:35+00:00",
-     "done": "2026-10-19T20:53:35+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 4,
     "running": 0,
     "waitingDesign": 0,
     "done": 8
@@ -20159,7 +20271,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Why this exists: finish the rollout on refusal-detour...",
    "costTotalUsd": 43.77,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -20173,23 +20285,23 @@
     "caption": "Route questions to sources before your limits run out."
    },
    "why": "A screenshot of a chat assistant refusing an ordinary request; route refused everyday questions around a closed line to other sources, each with a visible cost.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "refusal detour why rollout",
    "id": "refusal-detour",
    "number": 40,
    "repo": "refusal-detour",
    "title": "Refusal Detour",
    "line": "",
    "url": "https://chenhsieh.github.io/refusal-detour/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Keep the message about choice and refusal; make the action",
    "shelfNote": "",
@@ -20203,7 +20315,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T04:01:25+00:00",
-   "lastChange": "2026-10-25T02:15:07+00:00",
+   "lastChange": "2026-10-25T06:12:11+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -20217,6 +20329,20 @@
     "totalUsdEst": 43.77
    },
    "tasks": [
+    {
+     "title": "P3PL08_refusal detour why rollout",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Why this exists: finish the rollout on refusal-detour (320 and 390: the why section did not open (tap timed out))",
+     "since": "2026-10-25T06:12:11+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SD33_studio standard refusal detour",
      "state": "done",
@@ -20275,14 +20401,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T02:15:07+00:00",
@@ -27461,7 +27587,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Why this exists: finish the rollout on the-zipper...",
    "costTotalUsd": 63.84,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -27469,23 +27595,23 @@
    },
    "promo": null,
    "why": "A careless sequence aligner as the opponent, one of three greedy algorithms in the overnight Fool the Algorithm build.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "the zipper why rollout",
    "id": "the-zipper",
    "number": 45,
    "repo": "the-zipper",
    "title": "The Zipper",
    "line": "Change bright teeth to make the brass route miss matches.",
    "url": "https://chenhsieh.github.io/the-zipper/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P3",
    "priorityNote": "Make the goal and the meaning of dash and link clear",
    "shelfNote": "",
@@ -27499,7 +27625,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T08:30:02+00:00",
-   "lastChange": "2026-10-25T01:59:03+00:00",
+   "lastChange": "2026-10-25T06:12:15+00:00",
    "cost": {
     "apiUsd": 5.57,
     "codexRuns": 2,
@@ -27513,6 +27639,20 @@
     "totalUsdEst": 63.84
    },
    "tasks": [
+    {
+     "title": "P3PL09_the zipper why rollout",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Why this exists: finish the rollout on the-zipper (320 and 390: the why <details> did not open)",
+     "since": "2026-10-25T06:12:15+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "the zipper clarity",
      "state": "done",
@@ -27571,14 +27711,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:59:03+00:00",
@@ -29121,7 +29261,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Why this exists: finish the rollout on tree-hero...",
    "costTotalUsd": 61.39,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -29136,23 +29276,23 @@
     "caption": "Swap branches until the family tree needs the fewest changes."
    },
    "why": "Fitch maximum-parsimony phylogenetics; swap branches of a seven-species tree until it needs the fewest evolutionary changes; no timeline, undo is free.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 0
+    "daysInState": 6
    },
-   "waitingOn": "none",
+   "waitingOn": "tree hero why rollout",
    "id": "tree-hero",
    "number": 11,
    "repo": "tree-hero",
    "title": "Tree Hero",
    "line": "Swap branches until the family tree needs the fewest changes.",
    "url": "https://chenhsieh.github.io/tree-hero/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
@@ -29166,7 +29306,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-25T02:08:07+00:00",
+   "lastChange": "2026-10-25T06:12:20+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -29180,6 +29320,20 @@
     "totalUsdEst": 61.39
    },
    "tasks": [
+    {
+     "title": "P3PL10_tree hero why rollout",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Why this exists: finish the rollout on tree-hero (320 and 390: the page-end why button did not respond to a ta)",
+     "since": "2026-10-25T06:12:20+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1TH04_strings and tests",
      "state": "done",
@@ -29280,7 +29434,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 7
@@ -29291,7 +29445,7 @@
     "note": "Bioinformatics round: make the idea legible in the first"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T02:08:07+00:00",
@@ -29889,7 +30043,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "UGA Grad Survivor: merge the save test to...",
    "costTotalUsd": 61.2,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -29899,21 +30053,21 @@
    "why": "Life as a bioinformatics PhD student at UGA, told in the swipe-card style of Reigns.",
    "state": "released",
    "stateFlags": {
-    "refining": false,
+    "refining": true,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 2
    },
-   "waitingOn": "none",
+   "waitingOn": "grad survivor merge save test",
    "id": "uga-grad-survivor",
    "number": 2,
    "repo": "UGA-grad-survivor",
    "title": "UGA Grad Survivor",
    "line": "Swipe through a PhD.",
    "url": "https://chenhsieh.github.io/UGA-grad-survivor/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -29927,7 +30081,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:50:42+00:00",
-   "lastChange": "2026-10-25T02:48:58+00:00",
+   "lastChange": "2026-10-25T06:11:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -29941,6 +30095,34 @@
     "totalUsdEst": 61.2
    },
    "tasks": [
+    {
+     "title": "P3SV56_grad survivor merge save test",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "UGA Grad Survivor: merge the save test to main",
+     "since": "2026-10-25T06:11:00+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P3OR87_grad survivor save test",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "UGA Grad Survivor: a test that the long-term save and the run in progress load safely (OpenRouter lane)",
+     "since": "2026-10-25T06:10:50+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "uga survivor leftovers",
      "state": "done",
@@ -30027,7 +30209,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 6
@@ -30038,7 +30220,7 @@
     "note": "Looks good"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T02:48:58+00:00",
@@ -31608,8 +31790,7 @@
   }
  ],
  "systemNeeds": [
-  "System needs: 8 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)",
-  "System needs: Pages build stuck or failed for 1 game(s): chai-boil (fix: re-run the Pages build in those repos (Settings, Pages) if an agent cannot)"
+  "System needs: 8 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)"
  ],
  "releaseReady": [],
  "releaseRegressed": [],
