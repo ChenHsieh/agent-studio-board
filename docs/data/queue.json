@@ -1,5 +1,5 @@
 {
- "generated": 1792905081,
+ "generated": 1792905935,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -9,10 +9,10 @@
   "running": 0,
   "done24h": 14,
   "modelsQueued": {},
-  "spendTodayUsd": 0.1,
-  "runsToday": 1,
+  "spendTodayUsd": 0.22,
+  "runsToday": 2,
   "runsTodayUnpriced": 0,
-  "spendTotalUsd": 15.24,
+  "spendTotalUsd": 15.36,
   "recent": [
    {
     "id": "P3OR81_walls-topbar-test-no-hub",
@@ -89,21 +89,23 @@
  },
  "tasks": [
   {
-   "id": "P1DS00_destinations-study",
-   "request": "P1DS00_destinations study",
+   "id": "P2PR01_colony-count-print-and-play",
+   "request": "P2PR01_colony count print and play",
    "game": "Studio",
    "route": "Claude",
-   "model": "opus",
+   "model": "sonnet",
    "effort": "high",
    "kind": "build",
    "size": "studio",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P2PR00_promptuary-call-scoping"
+   ],
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1792903163,
-   "created": 1792903163
+   "at": 1792904966,
+   "created": 1792904966
   },
   {
    "id": "P2RJT00_rumour-on-the-jetty",
@@ -693,25 +695,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792790639
-  },
-  {
-   "id": "P2PR01_colony-count-print-and-play",
-   "request": "P2PR01_colony count print and play",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2PR00_promptuary-call-scoping"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792904966
   },
   {
    "id": "P2SBL00_scribes-blotter",
@@ -1542,6 +1525,23 @@
    "state": "done",
    "at": 1792891311,
    "created": 1792891311
+  },
+  {
+   "id": "P1DS00_destinations-study",
+   "request": "P1DS00_destinations study",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792903163,
+   "created": 1792903163
   },
   {
    "id": "P1FS01_one-screen-kit-layout",
