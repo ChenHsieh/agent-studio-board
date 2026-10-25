@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T06:12:34+00:00",
+ "generated": "2026-10-25T06:14:55+00:00",
  "ops": {
   "count": 2,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 74,
+    "queued": 73,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2960,
-    "estimateMinutes": 2960
+    "minutes": 2920,
+    "estimateMinutes": 2920
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
-    "doneToday": 6,
-    "minutes": 120,
-    "estimateMinutes": 60
+    "running": 4,
+    "doneToday": 9,
+    "minutes": 300,
+    "estimateMinutes": 150
    }
   },
-  "queued": 75,
-  "running": 1,
-  "doneToday": 6,
+  "queued": 74,
+  "running": 4,
+  "doneToday": 9,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3080,
-  "estimatedFinish": "2026-10-27T07:32:34+00:00",
-  "estimateMinutes": 2960
+  "minutesRemaining": 3220,
+  "estimatedFinish": "2026-10-27T06:54:55+00:00",
+  "estimateMinutes": 2920
  },
  "lanes": [
   {
@@ -56,12 +56,36 @@
    "game": "peony-dream",
    "task": "P1FS21_peony dream one screen",
    "since": "2026-10-25T06:07:20+00:00",
-   "activity": "2026-10-25T06:08:31+00:00",
+   "activity": "2026-10-25T06:13:56+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P1MM04_marble act two look and lessons",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "glasshouse",
+   "task": "P3OR83_glasshouse save settings test",
+   "since": "2026-10-25T06:14:35+00:00",
+   "activity": "2026-10-25T06:14:41+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "BioRedactle-nextjs",
+   "task": "P3OR86_redacxiv tile save test",
+   "since": "2026-10-25T06:14:48+00:00",
+   "activity": "2026-10-25T06:14:55+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 4,
  "apiSpentUsd": 319.92,
  "claudeInSession": {
   "runs": 288,
@@ -165,7 +189,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T02:25:43+00:00",
-   "lastChange": "2026-10-25T06:12:29+00:00",
+   "lastChange": "2026-10-25T06:12:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -184,7 +208,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Why this exists: finish the rollout on name-to-carry (new test failure: test/name.test.mjs, zh glyphs 工 室 創 are mi)",
-     "since": "2026-10-25T06:12:29+00:00",
+     "since": "2026-10-25T06:12:52+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -4516,7 +4540,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T17:37:54+00:00",
-   "lastChange": "2026-10-25T06:12:33+00:00",
+   "lastChange": "2026-10-25T06:12:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -4535,7 +4559,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Why this exists: finish the rollout on dancers-not-mad (new test failure: test/anim_budget.mjs (layout shift))",
-     "since": "2026-10-25T06:12:33+00:00",
+     "since": "2026-10-25T06:12:52+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -7480,7 +7504,7 @@
    ]
   },
   {
-   "nextTask": "flying-white: one phone screen through the kit, Next...",
+   "nextTask": "Why this exists: finish the rollout on flying-white...",
    "costTotalUsd": 108.91,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -7496,7 +7520,7 @@
     "reviseRound": 2,
     "daysInState": 2
    },
-   "waitingOn": "flying white one screen",
+   "waitingOn": "flying white why rollout",
    "id": "flying-white",
    "number": 117,
    "repo": "flying-white",
@@ -7518,7 +7542,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T05:31:34+00:00",
-   "lastChange": "2026-10-25T05:56:09+00:00",
+   "lastChange": "2026-10-25T06:12:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -7532,6 +7556,20 @@
     "totalUsdEst": 108.91
    },
    "tasks": [
+    {
+     "title": "P3PL15_flying white why rollout",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Why this exists: finish the rollout on flying-white (new test failure: test/font.test.mjs, zh glyphs 偶制創原啟壓意控注然狀界)",
+     "since": "2026-10-25T06:12:52+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1FS30_flying white one screen",
      "state": "queued",
@@ -7629,24 +7667,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "feat: reveal a growing sword album"
-    },
-    {
-     "title": "P1FW50_sword masks",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Flying White: make the scoring masks for the new 劍 forms",
-     "since": "2026-10-23T00:00:30+00:00",
-     "done": "2026-10-23T00:00:30+00:00",
-     "reviewed": false,
-     "minutes": 19,
-     "tokens": 117677,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "feat: give every sword form an ink mask"
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 17
@@ -8425,7 +8449,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-09-20T14:31:26+00:00",
-   "lastChange": "2026-10-25T06:12:07+00:00",
+   "lastChange": "2026-10-25T06:12:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -8444,7 +8468,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Why this exists: finish the rollout on gallery-guess (320 and 390: button covered or off screen)",
-     "since": "2026-10-25T06:12:07+00:00",
+     "since": "2026-10-25T06:12:52+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -8996,7 +9020,7 @@
    ]
   },
   {
-   "nextTask": "Glasshouse: merge the save tests to main",
+   "nextTask": "Why this exists: add the section to glasshouse...",
    "costTotalUsd": 54.0,
    "latestChange": {
     "text": "P3OR39_glasshouse-short-share-line: WORKDIR",
@@ -9012,15 +9036,15 @@
     "reviseRound": 1,
     "daysInState": 2
    },
-   "waitingOn": "glasshouse merge save tests",
+   "waitingOn": "glasshouse save settings test",
    "id": "glasshouse",
    "number": 3,
    "repo": "glasshouse",
    "title": "Glasshouse",
    "line": "Lead a line of students through a greenhouse.",
    "url": "https://chenhsieh.github.io/glasshouse/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Decide the best public role for a finished personal game",
    "shelfNote": "",
@@ -9034,20 +9058,48 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-08-09T16:24:24+00:00",
-   "lastChange": "2026-10-25T06:11:00+00:00",
+   "lastChange": "2026-10-25T06:14:41+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 14.4,
-    "earlierRounds": 11,
-    "earlierUsdEst": 39.6,
+    "claudeUsdEst": 18.0,
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
     "totalUsdEst": 54.0
    },
    "tasks": [
+    {
+     "title": "P3OR83_glasshouse save settings test",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Glasshouse: a test that broken or old settings saves fall back to defaults (OpenRouter lane)",
+     "since": "2026-10-25T06:14:35+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P3PL19_glasshouse why build",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Why this exists: add the section to glasshouse through its build step",
+     "since": "2026-10-25T06:13:33+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3SV54_glasshouse merge save tests",
      "state": "queued",
@@ -9077,32 +9129,18 @@
      "result": ""
     },
     {
-     "title": "P3OR83_glasshouse save settings test",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Glasshouse: a test that broken or old settings saves fall back to defaults (OpenRouter lane)",
-     "since": "2026-10-25T06:10:23+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
      "title": "P3OR82_glasshouse save migration test",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "Glasshouse: a test that proves old saves carry over after the rename (OpenRouter lane)",
      "since": "2026-10-25T06:10:19+00:00",
-     "done": null,
+     "done": "2026-10-25T06:10:19+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 1,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: [ -d node_modules ] || npm ci --silent --no-audit --no-fund >/dev/null 2>&1; npx vitest run tests/save-migration.test.ts"
     },
     {
      "title": "P3GH41_deploy preview fix",
@@ -9145,27 +9183,13 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1GH40 DONE, live at https://chenhsieh.github.io/glasshouse/ (main -> , rollback tag pre-gh-visual-revamp; repo still private)."
-    },
-    {
-     "title": "glasshouse onboarding menu",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Give Glasshouse a proper start screen and first-run onboarding.",
-     "since": "2026-10-21T01:01:56+00:00",
-     "done": "2026-10-21T01:01:56+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "P1g10 DONE, live at https://chenhsieh.github.io/glasshouse/ (main , repo still private)."
     }
    ],
    "taskCounts": {
-    "queued": 4,
-    "running": 0,
+    "queued": 3,
+    "running": 1,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": {
     "date": "2026-10-20",
@@ -13938,7 +13962,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:53:04+00:00",
-   "lastChange": "2026-10-25T06:12:24+00:00",
+   "lastChange": "2026-10-25T06:12:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -13957,7 +13981,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Why this exists: finish the rollout on machine-rhythm (new test failures: first_words (36 words > 35) and phone_fir)",
-     "since": "2026-10-25T06:12:24+00:00",
+     "since": "2026-10-25T06:12:52+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -18388,7 +18412,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-18T01:51:43+00:00",
-   "lastChange": "2026-10-25T06:08:31+00:00",
+   "lastChange": "2026-10-25T06:13:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -19874,8 +19898,8 @@
    "title": "Redacxiv",
    "line": "Reveal a paper's title with word tiles.",
    "url": "https://chenhsieh.github.io/redacxiv/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Interface and visual pass; make the first game winnable for",
    "shelfNote": "",
@@ -19889,54 +19913,40 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-14T20:39:05+00:00",
-   "lastChange": "2026-10-25T06:11:00+00:00",
+   "lastChange": "2026-10-25T06:14:55+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 2,
     "codexTokens": 1140773,
     "codexUsdEst": 1.37,
-    "claudeUsdEst": 7.2,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
+    "claudeUsdEst": 10.8,
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
     "totalUsdEst": 58.97
    },
    "tasks": [
+    {
+     "title": "P3OR86_redacxiv tile save test",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Redacxiv: a test that tile-mode saves and the archive list read old saves (OpenRouter lane)",
+     "since": "2026-10-25T06:14:48+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3SV55_redacxiv merge save tests",
      "state": "queued",
      "worker": "Codex",
      "plan": "Redacxiv: merge the save tests to main",
      "since": "2026-10-25T06:11:00+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P3OR86_redacxiv tile save test",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Redacxiv: a test that tile-mode saves and the archive list read old saves (OpenRouter lane)",
-     "since": "2026-10-25T06:10:41+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P3OR85_redacxiv save migration test",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Redacxiv: a test that old saves (streak, mode, day state) carry over after the rename (OpenRouter lane)",
-     "since": "2026-10-25T06:10:37+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -19958,6 +19968,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P3OR85_redacxiv save migration test",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Redacxiv: a test that old saves (streak, mode, day state) carry over after the rename (OpenRouter lane)",
+     "since": "2026-10-25T06:10:37+00:00",
+     "done": "2026-10-25T06:10:37+00:00",
+     "reviewed": false,
+     "minutes": 1,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: [ -d node_modules ] || npm ci --silent --no-audit --no-fund >/dev/null 2>&1; npx tsx scripts/test-save-migration.ts"
     },
     {
      "title": "P1SD32_studio standard redacxiv",
@@ -20017,10 +20041,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 4,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
-    "done": 8
+    "done": 9
    },
    "verdict": {
     "date": "2026-10-20",
@@ -20315,7 +20339,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T04:01:25+00:00",
-   "lastChange": "2026-10-25T06:12:11+00:00",
+   "lastChange": "2026-10-25T06:12:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -20334,7 +20358,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Why this exists: finish the rollout on refusal-detour (320 and 390: the why section did not open (tap timed out))",
-     "since": "2026-10-25T06:12:11+00:00",
+     "since": "2026-10-25T06:12:52+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -25342,7 +25366,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Why this exists: finish the rollout on speaking-stone...",
    "costTotalUsd": 43.4,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -25356,23 +25380,23 @@
     "caption": "Six seasons and a daily: drag the rope, test with chips, aim for the best fill."
    },
    "why": "Screenshots arguing over a proposed test that would measure polish instead of substance.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "speaking stone why rollout",
    "id": "speaking-stone",
    "number": 123,
    "repo": "speaking-stone",
    "title": "Speaking Stone",
    "line": "Six seasons and a daily: drag the rope, test with chips, aim for the best fill.",
    "url": "https://chenhsieh.github.io/speaking-stone/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Six seasons and a daily: drag the rope, test with chips, aim for the best fill.",
    "shelfNote": "",
@@ -25386,7 +25410,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T00:56:56+00:00",
-   "lastChange": "2026-10-25T01:42:20+00:00",
+   "lastChange": "2026-10-25T06:12:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -25400,6 +25424,20 @@
     "totalUsdEst": 43.4
    },
    "tasks": [
+    {
+     "title": "P3PL14_speaking stone why rollout",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Why this exists: finish the rollout on speaking-stone (new test failure: test/first_minute_play.mjs no longer sees )",
+     "since": "2026-10-25T06:12:52+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2FM53_speaking stone first minute fix",
      "state": "done",
@@ -25416,14 +25454,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:42:20+00:00",
@@ -27625,7 +27663,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T08:30:02+00:00",
-   "lastChange": "2026-10-25T06:12:15+00:00",
+   "lastChange": "2026-10-25T06:12:52+00:00",
    "cost": {
     "apiUsd": 5.57,
     "codexRuns": 2,
@@ -27644,7 +27682,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Why this exists: finish the rollout on the-zipper (320 and 390: the why <details> did not open)",
-     "since": "2026-10-25T06:12:15+00:00",
+     "since": "2026-10-25T06:12:52+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -29306,7 +29344,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-25T06:12:20+00:00",
+   "lastChange": "2026-10-25T06:12:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -29325,7 +29363,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Why this exists: finish the rollout on tree-hero (320 and 390: the page-end why button did not respond to a ta)",
-     "since": "2026-10-25T06:12:20+00:00",
+     "since": "2026-10-25T06:12:52+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -30085,13 +30123,13 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 2,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 14.4,
-    "earlierRounds": 13,
-    "earlierUsdEst": 46.8,
+    "claudeUsdEst": 18.0,
+    "earlierRounds": 12,
+    "earlierUsdEst": 43.2,
     "totalUsdEst": 61.2
    },
    "tasks": [
@@ -30111,17 +30149,17 @@
     },
     {
      "title": "P3OR87_grad survivor save test",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "UGA Grad Survivor: a test that the long-term save and the run in progress load safely (OpenRouter lane)",
      "since": "2026-10-25T06:10:50+00:00",
-     "done": null,
+     "done": "2026-10-25T06:10:50+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 1,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: node test/save.test.mjs && node test/timeline.test.mjs"
     },
     {
      "title": "uga survivor leftovers",
@@ -30209,10 +30247,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": {
     "date": "2026-10-20",
@@ -31506,7 +31544,7 @@
    ]
   },
   {
-   "nextTask": "readable-nonsense: one phone screen, Next on screen after...",
+   "nextTask": "Why this exists: finish the rollout on readable-nonsense...",
    "costTotalUsd": 86.59,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -31522,7 +31560,7 @@
     "reviseRound": 1,
     "daysInState": 4
    },
-   "waitingOn": "readable nonsense one screen",
+   "waitingOn": "readable nonsense why rollout",
    "id": "readable-nonsense",
    "number": 75,
    "repo": "readable-nonsense",
@@ -31544,7 +31582,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:29:52+00:00",
-   "lastChange": "2026-10-25T04:41:52+00:00",
+   "lastChange": "2026-10-25T06:12:52+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 3,
@@ -31558,6 +31596,20 @@
     "totalUsdEst": 86.59
    },
    "tasks": [
+    {
+     "title": "P3PL16_readable nonsense why rollout",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Why this exists: finish the rollout on readable-nonsense (new test failure: test/onerule.test.mjs, the How to play car)",
+     "since": "2026-10-25T06:12:52+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1FS23_readable nonsense one screen",
      "state": "queued",
@@ -31655,24 +31707,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "OR LANE OK: Test: docs \"阿嬤讀得出來 Readable Nonsense\" \"Stamp sound clues beside a carved poem line until only one line in Grandma's book st"
-    },
-    {
-     "title": "P1RN40_readable nonsense start error",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Fix the Readable Nonsense start error: validate and migrate old saves so the game always starts.",
-     "since": "2026-10-21T13:57:16+00:00",
-     "done": "2026-10-21T13:57:16+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 11

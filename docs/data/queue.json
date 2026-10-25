@@ -1,21 +1,39 @@
 {
- "generated": 1792908768,
+ "generated": 1792908910,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
-  "lanesBusy": 0,
-  "ready": 6,
+  "lanesBusy": 2,
+  "ready": 1,
   "waiting": 0,
-  "queued": 6,
-  "running": 0,
-  "done24h": 12,
+  "queued": 1,
+  "running": 2,
+  "done24h": 15,
   "modelsQueued": {
-   "deepseek-v4-flash": 6
+   "deepseek-v4-flash": 3
   },
   "spendTodayUsd": 0.22,
-  "runsToday": 2,
-  "runsTodayUnpriced": 0,
+  "runsToday": 5,
+  "runsTodayUnpriced": 3,
   "spendTotalUsd": 15.36,
   "recent": [
+   {
+    "id": "P3OR87_grad-survivor-save-test",
+    "request": "UGA Grad Survivor: a test that the long-term save and the run in progress load safely (OpenRouter lane)",
+    "model": "deepseek-v4-flash",
+    "at": 1792908650
+   },
+   {
+    "id": "P3OR85_redacxiv-save-migration-test",
+    "request": "Redacxiv: a test that old saves (streak, mode, day state) carry over after the rename (OpenRouter lane)",
+    "model": "deepseek-v4-flash",
+    "at": 1792908637
+   },
+   {
+    "id": "P3OR82_glasshouse-save-migration-test",
+    "request": "Glasshouse: a test that proves old saves carry over after the rename (OpenRouter lane)",
+    "model": "deepseek-v4-flash",
+    "at": 1792908619
+   },
    {
     "id": "P3OR81_walls-topbar-test-no-hub",
     "request": "Walls Have Ears: bring the top bar test in line with the no-hub rule",
@@ -57,24 +75,6 @@
     "request": "P3OR75_mushroom survey fonts and singular",
     "model": "openai/gpt-4.1",
     "at": 1792831398
-   },
-   {
-    "id": "P3OR74_sockglass-save-migration-test",
-    "request": "P3OR74_sockglass save migration test",
-    "model": "openai/gpt-4.1",
-    "at": 1792829322
-   },
-   {
-    "id": "P3OR73_pinch-points-words-file",
-    "request": "P3OR73_pinch points words file",
-    "model": "openai/gpt-4.1",
-    "at": 1792825169
-   },
-   {
-    "id": "P3OR72_lot-waits-words-file",
-    "request": "P3OR72_lot waits words file",
-    "model": "openai/gpt-4.1",
-    "at": 1792824844
    }
   ],
   "label": "estimate"
@@ -107,6 +107,59 @@
    "at": 1792907210,
    "created": 1792907210,
    "wasCodex": true
+  },
+  {
+   "id": "P3OR83_glasshouse-save-settings-test",
+   "request": "Glasshouse: a test that broken or old settings saves fall back to defaults (OpenRouter lane)",
+   "game": "Glasshouse",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
+   "state": "running",
+   "at": 1792908623,
+   "created": 1792908623
+  },
+  {
+   "id": "P1MM04_marble-act-two-look-and-lessons",
+   "request": "Marble Machine: the new pieces drawn as solid objects, one short lesson each",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1MM03_marble-mechanisms-act-two"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1792908841,
+   "created": 1792908841
+  },
+  {
+   "id": "P3OR86_redacxiv-tile-save-test",
+   "request": "Redacxiv: a test that tile-mode saves and the archive list read old saves (OpenRouter lane)",
+   "game": "Redacxiv",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "The word game Redactle, with real open-access biology papers; guess words to unblank a hidden paper's title and abstract; decoys come from other papers.",
+   "state": "running",
+   "at": 1792908641,
+   "created": 1792908641
   },
   {
    "id": "P1FS12_remote-viewer-one-screen",
@@ -397,40 +450,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P3OR82_glasshouse-save-migration-test",
-   "request": "Glasshouse: a test that proves old saves carry over after the rename (OpenRouter lane)",
-   "game": "Glasshouse",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792908619
-  },
-  {
-   "id": "P3OR83_glasshouse-save-settings-test",
-   "request": "Glasshouse: a test that broken or old settings saves fall back to defaults (OpenRouter lane)",
-   "game": "Glasshouse",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792908623
-  },
-  {
    "id": "P3OR84_glasshouse-crew-save-test",
    "request": "Glasshouse: a test that the collected crew survives the save format change (OpenRouter lane)",
    "game": "Glasshouse",
@@ -462,7 +481,7 @@
    "why": "Fitch maximum-parsimony phylogenetics; swap branches of a seven-species tree until it needs the fewest evolutionary changes; no timeline, undo is free.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792908740,
+   "created": 1792908772,
    "estPercentOfWeek": 0.25
   },
   {
@@ -616,7 +635,7 @@
    "why": "A screenshot of a chat assistant refusing an ordinary request; route refused everyday questions around a closed line to other sources, each with a visible cost.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792908731,
+   "created": 1792908772,
    "estPercentOfWeek": 0.25
   },
   {
@@ -634,7 +653,7 @@
    "why": "A paper abstract linking rare characters in given names to wellbeing, read with how Mandarin speakers spell out a name aloud.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792908749,
+   "created": 1792908772,
    "estPercentOfWeek": 0.25
   },
   {
@@ -652,7 +671,25 @@
    "why": "Screenshots arguing over a proposed test that would measure polish instead of substance.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792908757,
+   "created": 1792908772,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P3PL17_metagenome-profilers-why-build",
+   "request": "Why this exists: add the section to metagenome-profilers through its build step",
+   "game": "Studio",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792908804,
    "estPercentOfWeek": 0.25
   },
   {
@@ -670,7 +707,7 @@
    "why": "Public-domain objects from The Metropolitan Museum of Art's open collection API.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792908727,
+   "created": 1792908772,
    "estPercentOfWeek": 0.25
   },
   {
@@ -688,7 +725,7 @@
    "why": "A careless sequence aligner as the opponent, one of three greedy algorithms in the overnight Fool the Algorithm build.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792908735,
+   "created": 1792908772,
    "estPercentOfWeek": 0.25
   },
   {
@@ -706,7 +743,25 @@
    "why": "A slide from an art film about work being mapped onto the rhythms of machines rather than workers' judgement.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792908744,
+   "created": 1792908772,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P3PL18_silva-to-maaslin2-why-build",
+   "request": "Why this exists: add the section to silva-to-maaslin2 through its build step",
+   "game": "Studio",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P3",
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792908809,
    "estPercentOfWeek": 0.25
   },
   {
@@ -744,25 +799,6 @@
    "waitingOn": [],
    "created": 1792894207,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P1MM04_marble-act-two-look-and-lessons",
-   "request": "Marble Machine: the new pieces drawn as solid objects, one short lesson each",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1MM03_marble-mechanisms-act-two"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792903278
   },
   {
    "id": "P2FS04_one-screen-rollout-rest",
@@ -1059,57 +1095,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P3OR85_redacxiv-save-migration-test",
-   "request": "Redacxiv: a test that old saves (streak, mode, day state) carry over after the rename (OpenRouter lane)",
-   "game": "Redacxiv",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "The word game Redactle, with real open-access biology papers; guess words to unblank a hidden paper's title and abstract; decoys come from other papers.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792908637
-  },
-  {
-   "id": "P3OR86_redacxiv-tile-save-test",
-   "request": "Redacxiv: a test that tile-mode saves and the archive list read old saves (OpenRouter lane)",
-   "game": "Redacxiv",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "The word game Redactle, with real open-access biology papers; guess words to unblank a hidden paper's title and abstract; decoys come from other papers.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792908641
-  },
-  {
-   "id": "P3OR87_grad-survivor-save-test",
-   "request": "UGA Grad Survivor: a test that the long-term save and the run in progress load safely (OpenRouter lane)",
-   "game": "UGA Grad Survivor",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "Life as a bioinformatics PhD student at UGA, told in the swipe-card style of Reigns.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792908650
-  },
-  {
    "id": "P3PL13_dancers-not-mad-why-rollout",
    "request": "Why this exists: finish the rollout on dancers-not-mad (new test failure: test/anim_budget.mjs (layout shift))",
    "game": "Dancers Not Mad",
@@ -1124,7 +1109,27 @@
    "why": "The saying that those who cannot hear the music think the dancers mad.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792908753,
+   "created": 1792908772,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P3SV56_grad-survivor-merge-save-test",
+   "request": "UGA Grad Survivor: merge the save test to main",
+   "game": "UGA Grad Survivor",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3OR87_grad-survivor-save-test"
+   ],
+   "priority": null,
+   "why": "Life as a bioinformatics PhD student at UGA, told in the swipe-card style of Reigns.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792908660,
    "estPercentOfWeek": 0.25
   },
   {
@@ -1168,7 +1173,7 @@
    "waitingOn": [
     "P1FS30_flying-white-one-screen"
    ],
-   "created": 1792908762,
+   "created": 1792908772,
    "estPercentOfWeek": 0.25
   },
   {
@@ -1190,7 +1195,29 @@
    "waitingOn": [
     "P1FS23_readable-nonsense-one-screen"
    ],
-   "created": 1792908766,
+   "created": 1792908772,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P3PL19_glasshouse-why-build",
+   "request": "Why this exists: add the section to glasshouse through its build step",
+   "game": "Glasshouse",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3SV54_glasshouse-merge-save-tests"
+   ],
+   "priority": "P1",
+   "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
+   "state": "waiting",
+   "waitingOn": [
+    "P3SV54_glasshouse-merge-save-tests"
+   ],
+   "created": 1792908813,
    "estPercentOfWeek": 0.25
   },
   {
@@ -1212,7 +1239,6 @@
    "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
    "state": "waiting",
    "waitingOn": [
-    "P3OR82_glasshouse-save-migration-test",
     "P3OR83_glasshouse-save-settings-test",
     "P3OR84_glasshouse-crew-save-test"
    ],
@@ -1569,30 +1595,7 @@
    "why": "The word game Redactle, with real open-access biology papers; guess words to unblank a hidden paper's title and abstract; decoys come from other papers.",
    "state": "waiting",
    "waitingOn": [
-    "P3OR85_redacxiv-save-migration-test",
     "P3OR86_redacxiv-tile-save-test"
-   ],
-   "created": 1792908660,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P3SV56_grad-survivor-merge-save-test",
-   "request": "UGA Grad Survivor: merge the save test to main",
-   "game": "UGA Grad Survivor",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P3OR87_grad-survivor-save-test"
-   ],
-   "priority": null,
-   "why": "Life as a bioinformatics PhD student at UGA, told in the swipe-card style of Reigns.",
-   "state": "waiting",
-   "waitingOn": [
-    "P3OR87_grad-survivor-save-test"
    ],
    "created": 1792908660,
    "estPercentOfWeek": 0.25
@@ -1774,6 +1777,23 @@
    "state": "done",
    "at": 1792897653,
    "created": 1792897653
+  },
+  {
+   "id": "P3OR82_glasshouse-save-migration-test",
+   "request": "Glasshouse: a test that proves old saves carry over after the rename (OpenRouter lane)",
+   "game": "Glasshouse",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
+   "state": "done",
+   "at": 1792908619,
+   "created": 1792908619
   },
   {
    "id": "P1LW01_lot-waits-rules-v2-and-levels",
@@ -2104,6 +2124,40 @@
    "state": "done",
    "at": 1792894333,
    "created": 1792894333
+  },
+  {
+   "id": "P3OR85_redacxiv-save-migration-test",
+   "request": "Redacxiv: a test that old saves (streak, mode, day state) carry over after the rename (OpenRouter lane)",
+   "game": "Redacxiv",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "The word game Redactle, with real open-access biology papers; guess words to unblank a hidden paper's title and abstract; decoys come from other papers.",
+   "state": "done",
+   "at": 1792908637,
+   "created": 1792908637
+  },
+  {
+   "id": "P3OR87_grad-survivor-save-test",
+   "request": "UGA Grad Survivor: a test that the long-term save and the run in progress load safely (OpenRouter lane)",
+   "game": "UGA Grad Survivor",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "Life as a bioinformatics PhD student at UGA, told in the swipe-card style of Reigns.",
+   "state": "done",
+   "at": 1792908650,
+   "created": 1792908650
   }
  ]
 }
