@@ -195,12 +195,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 237,
+   "count": 238,
    "firstTimePass": 95,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 190,
+   "guessed": 191,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -666,21 +666,21 @@
   },
   {
    "date": "2026-10-25",
+   "task": "mushroom gaps one screen",
+   "number": "68",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "P1FS26 mushroom-gaps one screen: DONE (Sonnet overflow worker, 2026-10-25). Commit 074a1e7 on main; live bytes match; live gate PASS."
+  },
+  {
+   "date": "2026-10-25",
    "task": "mirror hold one screen",
    "number": "60",
    "executor": "claude-sonnet",
    "role": "build",
    "passed": "yes",
    "note": "P1FS25 mirror-hold one screen: DONE (Sonnet overflow worker, 2026-10-25). Commits 2157f7a + cleanup on main; live bytes match (game.css, gam"
-  },
-  {
-   "date": "2026-10-25",
-   "task": "thumb stand one screen",
-   "number": "78",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "P1FS24 thumb-stand one screen: DONE (Sonnet overflow worker, 2026-10-25). Commit 7943e57 on main; live bytes match; live gate PASS."
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
