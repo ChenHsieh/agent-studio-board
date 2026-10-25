@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T09:08:17+00:00",
+ "generated": "2026-10-25T09:10:46+00:00",
  "ops": {
   "count": 24,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 49,
+    "queued": 48,
     "running": 1,
     "doneToday": 6,
-    "minutes": 2000,
-    "estimateMinutes": 2000
+    "minutes": 1960,
+    "estimateMinutes": 1960
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 30,
+    "doneToday": 31,
     "minutes": 180,
     "estimateMinutes": 90
    }
   },
-  "queued": 50,
+  "queued": 49,
   "running": 3,
-  "doneToday": 36,
+  "doneToday": 37,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2180,
-  "estimatedFinish": "2026-10-26T18:28:17+00:00",
-  "estimateMinutes": 2000
+  "minutesRemaining": 2140,
+  "estimatedFinish": "2026-10-26T17:50:46+00:00",
+  "estimateMinutes": 1960
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "pinch-points",
-   "task": "P1FS29_pinch points one screen",
-   "since": "2026-10-25T08:58:59+00:00",
-   "activity": "2026-10-25T09:07:01+00:00",
+   "game": "flying-white",
+   "task": "P1FS30_flying white one screen",
+   "since": "2026-10-25T09:10:23+00:00",
+   "activity": "2026-10-25T09:10:25+00:00",
    "commit": null
   },
   {
@@ -64,7 +64,7 @@
    "game": "rumour-on-the-jetty",
    "task": "P2AX16_kit fit rollout rumour on the jetty",
    "since": "2026-10-25T09:08:12+00:00",
-   "activity": "2026-10-25T09:08:16+00:00",
+   "activity": "2026-10-25T09:10:43+00:00",
    "commit": {
     "at": "2026-10-25T09:08:13+00:00",
     "subject": "start: P2AX16_kit-fit-rollout-rumour-on-the-jetty"
@@ -7504,7 +7504,7 @@
    ]
   },
   {
-   "nextTask": "flying-white: one phone screen through the kit, Next...",
+   "nextTask": "Why this exists: finish the rollout on flying-white...",
    "costTotalUsd": 108.91,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -7527,8 +7527,8 @@
    "title": "Flying White",
    "line": "",
    "url": "https://chenhsieh.github.io/flying-white/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Higher priority: real rubbing sources, hilarious teacher, growth, free writing",
    "shelfNote": "",
@@ -7542,7 +7542,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T05:31:34+00:00",
-   "lastChange": "2026-10-25T07:54:33+00:00",
+   "lastChange": "2026-10-25T09:10:25+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -7558,10 +7558,10 @@
    "tasks": [
     {
      "title": "P1FS30_flying white one screen",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "flying-white: one phone screen through the kit, Next on screen after a win",
-     "since": "2026-10-25T07:54:33+00:00",
+     "since": "2026-10-25T09:10:23+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -7670,8 +7670,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 17
    },
@@ -18845,8 +18845,8 @@
    "nextTask": null,
    "costTotalUsd": 47.14,
    "latestChange": {
-    "text": "Visual round design: three mocks (stone-rubbing album, paper-model sheet, the paper's...",
-    "at": "2026-10-25T04:54:54+00:00"
+    "text": "One screen: port to the one-screen glue, goal in one sentence, vertical swipe from empty...",
+    "at": "2026-10-25T09:08:48+00:00"
    },
    "promo": {
     "files": {
@@ -18856,23 +18856,23 @@
     "caption": "Pinch six stones flat as the surface flattens live; par set by search, plus a daily."
    },
    "why": "A graphics-paper figure of a statue flattened two ways, and an old woodblock page of a perforated scholar's stone.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "pinch points one screen",
+   "waitingOn": "none",
    "id": "pinch-points",
    "number": 119,
    "repo": "pinch-points",
    "title": "Pinch Points",
    "line": "Pinch six stones flat as the surface flattens live; par set by search, plus a daily.",
    "url": "https://chenhsieh.github.io/pinch-points/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "turns an esoteric paper into an interactive game; explain the mechanism, show...",
    "shelfNote": "",
@@ -18886,33 +18886,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T20:47:18+00:00",
-   "lastChange": "2026-10-25T09:07:01+00:00",
+   "lastChange": "2026-10-25T09:08:48+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 6,
+    "claudeRuns": 7,
     "apiRuns": 0,
     "codexTokens": 280385,
     "codexUsdEst": 0.34,
-    "claudeUsdEst": 21.6,
-    "earlierRounds": 7,
-    "earlierUsdEst": 25.2,
+    "claudeUsdEst": 25.2,
+    "earlierRounds": 6,
+    "earlierUsdEst": 21.6,
     "totalUsdEst": 47.14
    },
    "tasks": [
     {
      "title": "P1FS29_pinch points one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "pinch-points: one phone screen through the kit, Next on screen after a win",
-     "since": "2026-10-25T08:58:59+00:00",
-     "done": null,
+     "since": "2026-10-25T08:35:44+00:00",
+     "done": "2026-10-25T08:35:44+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1FS29 pinch-points one screen: DONE (Sonnet overflow worker, 2026-10-25). Commit on main; live bytes match; live gate PASS."
     },
     {
      "title": "P1PP03_pinch points strategy card and daily",
@@ -19015,14 +19015,26 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 7
+    "done": 8
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-25T09:08:48+00:00",
+     "ok": true,
+     "note": "One screen: port to the one-screen glue, goal in one sentence, vertical swipe from empty board scrolls, Replay in the result sheet",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T08:59:00+00:00",
+     "ok": true,
+     "note": "start: P1FS29 pinch-points one screen",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T04:54:54+00:00",
      "ok": true,
@@ -19081,12 +19093,6 @@
      "at": "2026-10-24T21:52:49+00:00",
      "ok": true,
      "note": "feat: Pinch Points shows the movement: squares glide to new sizes, the stone opens onto paper, ring and arrow on the smallest squares",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T21:42:38+00:00",
-     "ok": true,
-     "note": "start: P1PP02 pinch points show the movement",
      "source": "main commit"
     }
    ]
@@ -21810,7 +21816,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-25T09:08:16+00:00",
+   "lastChange": "2026-10-25T09:10:43+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -23715,10 +23721,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 43.93,
+   "costTotalUsd": 47.53,
    "latestChange": {
-    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
-    "at": "2026-10-25T03:52:08+00:00"
+    "text": "One screen on phones: board pan (tap game) (P2FS04)",
+    "at": "2026-10-25T09:02:05+00:00"
    },
    "promo": null,
    "why": "",
@@ -23752,7 +23758,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T05:14:34+00:00",
-   "lastChange": "2026-10-25T03:52:08+00:00",
+   "lastChange": "2026-10-25T09:02:05+00:00",
    "cost": {
     "apiUsd": 4.33,
     "codexRuns": 0,
@@ -23761,9 +23767,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 11,
-    "earlierUsdEst": 39.6,
-    "totalUsdEst": 43.93
+    "earlierRounds": 12,
+    "earlierUsdEst": 43.2,
+    "totalUsdEst": 47.53
    },
    "tasks": [],
    "taskCounts": {
@@ -23776,6 +23782,12 @@
    "needsYou": null,
    "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-25T09:02:05+00:00",
+     "ok": true,
+     "note": "One screen on phones: board pan (tap game) (P2FS04)",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T03:52:08+00:00",
      "ok": true,
@@ -31831,7 +31843,8 @@
   }
  ],
  "systemNeeds": [
-  "System needs: 8 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)"
+  "System needs: 8 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)",
+  "System needs: Released game Cymatic Plate now fails what it passed at release: standard (fix: play it; keep it released or remove its row from board/released.tsv)"
  ],
  "releaseReady": [],
  "releaseRegressed": [
