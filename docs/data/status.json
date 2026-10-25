@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T06:51:40+00:00",
+ "generated": "2026-10-25T06:54:00+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 68,
+    "queued": 67,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2720,
-    "estimateMinutes": 2720
+    "minutes": 2680,
+    "estimateMinutes": 2680
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 16,
+    "doneToday": 17,
     "minutes": 180,
     "estimateMinutes": 90
    }
   },
-  "queued": 69,
+  "queued": 68,
   "running": 2,
-  "doneToday": 16,
+  "doneToday": 17,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2900,
-  "estimatedFinish": "2026-10-27T04:11:40+00:00",
-  "estimateMinutes": 2720
+  "minutesRemaining": 2860,
+  "estimatedFinish": "2026-10-27T03:34:00+00:00",
+  "estimateMinutes": 2680
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "thumb-stand",
-   "task": "P1FS24_thumb stand one screen",
-   "since": "2026-10-25T06:40:50+00:00",
-   "activity": "2026-10-25T06:50:48+00:00",
+   "game": "mirror-hold",
+   "task": "P1FS25_mirror hold one screen",
+   "since": "2026-10-25T06:53:06+00:00",
+   "activity": "2026-10-25T06:53:12+00:00",
    "commit": null
   },
   {
@@ -15167,7 +15167,7 @@
    ]
   },
   {
-   "nextTask": "mirror-hold: one phone screen, Next on screen after...",
+   "nextTask": null,
    "costTotalUsd": 76.75,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -15190,8 +15190,8 @@
    "title": "Mirror Hold",
    "line": "Wax a hairstyle, then test it against three pulls.",
    "url": "https://chenhsieh.github.io/mirror-hold/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Huge revamp planned by a cross-functional lead",
    "shelfNote": "",
@@ -15209,7 +15209,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T21:41:35+00:00",
-   "lastChange": "2026-10-25T04:41:52+00:00",
+   "lastChange": "2026-10-25T06:53:12+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -15225,10 +15225,10 @@
    "tasks": [
     {
      "title": "P1FS25_mirror hold one screen",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "mirror-hold: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T04:41:52+00:00",
+     "since": "2026-10-25T06:53:06+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -15337,8 +15337,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 14
    },
@@ -28383,21 +28383,21 @@
    "why": "Martial-arts manga panels of impossible one-thumb handstands and poses.",
    "state": "ship",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 2
    },
-   "waitingOn": "thumb stand one screen",
+   "waitingOn": "owner",
    "id": "thumb-stand",
    "number": 78,
    "repo": "thumb-stand",
    "title": "Thumb Stand",
    "line": "",
    "url": "https://chenhsieh.github.io/thumb-stand/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Total rework planned by a cross-functional lead",
    "shelfNote": "",
@@ -28411,33 +28411,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:44:20+00:00",
-   "lastChange": "2026-10-25T06:50:48+00:00",
+   "lastChange": "2026-10-25T05:46:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
-    "claudeRuns": 11,
+    "claudeRuns": 12,
     "apiRuns": 0,
     "codexTokens": 1518989,
     "codexUsdEst": 1.82,
-    "claudeUsdEst": 39.6,
-    "earlierRounds": 15,
-    "earlierUsdEst": 54.0,
+    "claudeUsdEst": 43.2,
+    "earlierRounds": 14,
+    "earlierUsdEst": 50.4,
     "totalUsdEst": 95.42
    },
    "tasks": [
     {
      "title": "P1FS24_thumb stand one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "thumb-stand: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T06:40:50+00:00",
-     "done": null,
+     "since": "2026-10-25T05:46:50+00:00",
+     "done": "2026-10-25T05:46:50+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1FS24 thumb-stand one screen: DONE (Sonnet overflow worker, 2026-10-25). Commit on main; live bytes match; live gate PASS."
     },
     {
      "title": "P2TS58_thumb stand link preview",
@@ -28540,9 +28540,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 17
+    "done": 18
    },
    "verdict": {
     "date": "2026-10-23",
@@ -28550,7 +28550,7 @@
     "note": "Put his comic panels in an order where every red line lands on his hand, then hold your thumb under him; a fall is a loud joke and a win is earned"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T01:35:51+00:00",
