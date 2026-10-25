@@ -1,5 +1,5 @@
 {
- "generated": 1792900483,
+ "generated": 1792900623,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -81,13 +81,32 @@
   "codexOut": false,
   "converted": 2,
   "convertedRunning": 0,
-  "claudeWorkers": 0,
+  "claudeWorkers": 1,
   "claudeWorkerCap": 3,
   "handedBack": 0,
   "lastHandBack": null,
   "lastHandBackN": null
  },
  "tasks": [
+  {
+   "id": "P1CF05_reset-tests-and-review",
+   "request": "Clean Features: tests for the reset and a stranger review",
+   "game": "What the Dish Sees",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1CF04_marks-and-life-bar-look"
+   ],
+   "priority": "P1",
+   "why": "An essay arguing neural network features are already clean, and a petri-dish video of something first taken for ordinary bacteria.",
+   "state": "running",
+   "at": 1792805548,
+   "created": 1792805548
+  },
   {
    "id": "P2PL06_rollout-judgment-rows",
    "request": "Finish the Why this exists rollout on the games whose own tests or page check stopped it",
@@ -106,25 +125,6 @@
    "state": "running",
    "at": 1792883805,
    "created": 1792883805
-  },
-  {
-   "id": "P1CF05_reset-tests-and-review",
-   "request": "Clean Features: tests for the reset and a stranger review",
-   "game": "What the Dish Sees",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1CF04_marks-and-life-bar-look"
-   ],
-   "priority": "P1",
-   "why": "An essay arguing neural network features are already clean, and a petri-dish video of something first taken for ordinary bacteria.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792805548
   },
   {
    "id": "P1FS12_remote-viewer-one-screen",
