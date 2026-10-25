@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T21:47:23+00:00",
+ "generated": "2026-10-25T21:49:43+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 81,
+    "queued": 80,
     "running": 1,
-    "doneToday": 8,
-    "minutes": 3280,
-    "estimateMinutes": 3280
+    "doneToday": 9,
+    "minutes": 3240,
+    "estimateMinutes": 3240
    },
    "Claude": {
     "queued": 1,
@@ -30,9 +30,9 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 82,
+  "queued": 81,
   "running": 3,
-  "doneToday": 43,
+  "doneToday": 44,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3460,
-  "estimatedFinish": "2026-10-28T04:27:23+00:00",
-  "estimateMinutes": 3280
+  "minutesRemaining": 3420,
+  "estimatedFinish": "2026-10-28T03:49:43+00:00",
+  "estimateMinutes": 3240
  },
  "lanes": [
   {
@@ -65,11 +65,14 @@
   },
   {
    "worker": "Codex",
-   "game": "name-to-carry",
-   "task": "P2NC00_name to carry data inline",
-   "since": "2026-10-25T21:43:28+00:00",
-   "activity": "2026-10-25T21:46:12+00:00",
-   "commit": null
+   "game": "pigeon-salon",
+   "task": "P2PS00_pigeon salon readable board",
+   "since": "2026-10-25T21:47:45+00:00",
+   "activity": "2026-10-25T21:49:40+00:00",
+   "commit": {
+    "at": "2026-10-25T21:48:19+00:00",
+    "subject": "Merge remote-tracking branch 'origin/chen-or-p3or36-pigeon-salon-rule-words' into chen-cx-p2ps00-pigeon-salon-readable-board"
+   }
   }
  ],
  "codexLanes": 1,
@@ -131,17 +134,17 @@
   },
   {
    "day": "2026-10-25",
-   "changes": 15
+   "changes": 16
   }
  ],
  "houseRules": 25,
  "games": [
   {
    "nextTask": "Why this exists: finish the rollout on name-to-carry...",
-   "costTotalUsd": 32.59,
+   "costTotalUsd": 32.72,
    "latestChange": {
     "text": "feat: load names with the game",
-    "at": "2026-10-25T21:46:12+00:00"
+    "at": "2026-10-25T21:47:44+00:00"
    },
    "promo": {
     "files": {
@@ -166,7 +169,7 @@
    "title": "A Name to Carry",
    "line": "Eight scenes, ministry tiers and a share card: carry a name through the forms, Mandarin first.",
    "url": "https://chenhsieh.github.io/name-to-carry/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "Eight scenes, ministry tiers and a share card: carry a name through the forms,",
@@ -181,34 +184,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T02:25:43+00:00",
-   "lastChange": "2026-10-25T21:46:12+00:00",
+   "lastChange": "2026-10-25T21:47:44+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 1,
+    "codexRuns": 2,
     "claudeRuns": 1,
     "apiRuns": 0,
-    "codexTokens": 160880,
-    "codexUsdEst": 0.19,
+    "codexTokens": 268663,
+    "codexUsdEst": 0.32,
     "claudeUsdEst": 3.6,
     "earlierRounds": 8,
     "earlierUsdEst": 28.8,
-    "totalUsdEst": 32.59
+    "totalUsdEst": 32.72
    },
    "tasks": [
-    {
-     "title": "P2NC00_name to carry data inline",
-     "state": "running",
-     "worker": "Codex",
-     "plan": "Name to Carry: the game file no longer crashes when loaded on its own (the name data moves into it)",
-     "since": "2026-10-25T21:43:28+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P3PL12_name to carry why rollout",
      "state": "queued",
@@ -222,6 +211,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2NC00_name to carry data inline",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "Name to Carry: the game file no longer crashes when loaded on its own (the name data moves into it)",
+     "since": "2026-10-25T21:34:22+00:00",
+     "done": "2026-10-25T21:34:22+00:00",
+     "reviewed": false,
+     "minutes": 9,
+     "tokens": 107783,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "feat: load names with the game"
     },
     {
      "title": "P3OR53_name to carry data inside game",
@@ -254,14 +257,20 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": null,
    "needsYou": "Native read of the Mandarin phrases across the 8 scenes is still owed before sharing. Suggest: have a native reader check them first, Mandarin leads the game.",
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-25T21:47:44+00:00",
+     "ok": true,
+     "note": "feat: load names with the game",
+     "source": "board note"
+    },
     {
      "at": "2026-10-25T21:46:12+00:00",
      "ok": true,
@@ -18881,7 +18890,7 @@
     "reviseRound": 1,
     "daysInState": 3
    },
-   "waitingOn": "pigeon salon one screen",
+   "waitingOn": "pigeon salon readable board",
    "id": "pigeon-salon",
    "number": 135,
    "repo": "pigeon-salon",
@@ -18889,7 +18898,7 @@
    "line": "Twelve levels: tap a painting the patron likes, then one they like less; a pigeon re-hangs the gallery.",
    "url": "https://chenhsieh.github.io/pigeon-salon/",
    "stage": "building",
-   "who": "Claude",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Twelve levels: tap a painting the patron likes, then one they like less; a",
    "shelfNote": "",
@@ -18903,7 +18912,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T19:12:54+00:00",
-   "lastChange": "2026-10-25T09:57:21+00:00",
+   "lastChange": "2026-10-25T21:49:40+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -18918,25 +18927,28 @@
    },
    "tasks": [
     {
-     "title": "P2FS66_pigeon salon one screen",
-     "state": "queued",
+     "title": "P2PS00_pigeon salon readable board",
+     "state": "running",
      "worker": "Codex",
-     "plan": "pigeon-salon: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-25T09:57:21+00:00",
+     "plan": "Pigeon Salon: label the wall row, readable seed piles, a loss note that does not cover the cause, and a win that stays in view",
+     "since": "2026-10-25T21:47:45+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-25T21:48:19+00:00",
+      "subject": "Merge remote-tracking branch 'origin/chen-or-p3or36-pigeon-salon-rule-words' into chen-cx-p2ps00-pigeon-salon-readable-board"
+     },
      "result": ""
     },
     {
-     "title": "P2PS00_pigeon salon readable board",
+     "title": "P2FS66_pigeon salon one screen",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Pigeon Salon: label the wall row, readable seed piles, a loss note that does not cover the cause, and a win that stays in view",
-     "since": "2026-10-22T23:50:05+00:00",
+     "plan": "pigeon-salon: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:57:21+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -19017,8 +19029,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 5
    },
