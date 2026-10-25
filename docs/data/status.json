@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T06:19:40+00:00",
+ "generated": "2026-10-25T06:22:01+00:00",
  "ops": {
   "count": 2,
   "notes": [
@@ -28,15 +28,15 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 3,
-    "doneToday": 10,
-    "minutes": 240,
-    "estimateMinutes": 120
+    "running": 2,
+    "doneToday": 11,
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
   "queued": 74,
-  "running": 3,
-  "doneToday": 10,
+  "running": 2,
+  "doneToday": 11,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,8 +46,8 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3160,
-  "estimatedFinish": "2026-10-27T06:59:40+00:00",
+  "minutesRemaining": 3100,
+  "estimatedFinish": "2026-10-27T07:02:01+00:00",
   "estimateMinutes": 2920
  },
  "lanes": [
@@ -66,18 +66,10 @@
    "since": null,
    "activity": null,
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "glasshouse",
-   "task": "P3OR83_glasshouse save settings test",
-   "since": "2026-10-25T06:14:35+00:00",
-   "activity": "2026-10-25T06:19:31+00:00",
-   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 3,
+ "claudeWorkers": 2,
  "apiSpentUsd": 319.92,
  "claudeInSession": {
   "runs": 288,
@@ -2126,8 +2118,8 @@
    "nextTask": null,
    "costTotalUsd": 91.11,
    "latestChange": {
-    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
-    "at": "2026-10-25T01:42:32+00:00"
+    "text": "One screen: crop the scene to the room under the head, swipe from the scene scrolls the...",
+    "at": "2026-10-25T05:58:00+00:00"
    },
    "promo": null,
    "why": "An AI-made video post of a pot of milk tea foaming up on a wood fire, plus the Lunar Lander game.",
@@ -2161,7 +2153,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-25T05:46:50+00:00",
+   "lastChange": "2026-10-25T05:58:00+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 6,
@@ -2303,6 +2295,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T05:58:00+00:00",
+     "ok": true,
+     "note": "One screen: crop the scene to the room under the head, swipe from the scene scrolls the page, credit moves to the recipe book",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T01:42:32+00:00",
      "ok": true,
      "note": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -2367,12 +2365,6 @@
      "ok": true,
      "note": "P3OR28_chai-boil-link-preview: WORKDIR",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T22:37:38+00:00",
-     "ok": true,
-     "note": "feat: teach the first chai glass with a safe spill and scored pour",
-     "source": "board note"
     }
    ]
   },
@@ -9012,7 +9004,7 @@
    ]
   },
   {
-   "nextTask": "Why this exists: add the section to glasshouse...",
+   "nextTask": "Glasshouse: a test that broken or old settings...",
    "costTotalUsd": 54.0,
    "latestChange": {
     "text": "P3OR39_glasshouse-short-share-line: WORKDIR",
@@ -9035,8 +9027,8 @@
    "title": "Glasshouse",
    "line": "Lead a line of students through a greenhouse.",
    "url": "https://chenhsieh.github.io/glasshouse/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Decide the best public role for a finished personal game",
    "shelfNote": "",
@@ -9050,26 +9042,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-08-09T16:24:24+00:00",
-   "lastChange": "2026-10-25T06:19:31+00:00",
+   "lastChange": "2026-10-25T06:19:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 5,
+    "claudeRuns": 6,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 18.0,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
+    "claudeUsdEst": 21.6,
+    "earlierRounds": 9,
+    "earlierUsdEst": 32.4,
     "totalUsdEst": 54.0
    },
    "tasks": [
     {
      "title": "P3OR83_glasshouse save settings test",
-     "state": "running",
-     "worker": "Claude",
+     "state": "queued",
+     "worker": "Codex",
      "plan": "Glasshouse: a test that broken or old settings saves fall back to defaults (OpenRouter lane)",
-     "since": "2026-10-25T06:14:35+00:00",
+     "since": "2026-10-25T06:19:52+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -9108,17 +9100,17 @@
     },
     {
      "title": "P3OR84_glasshouse crew save test",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "Glasshouse: a test that the collected crew survives the save format change (OpenRouter lane)",
      "since": "2026-10-25T06:10:28+00:00",
-     "done": null,
+     "done": "2026-10-25T06:10:28+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 0,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: [ -d node_modules ] || npm ci --silent --no-audit --no-fund >/dev/null 2>&1; npx vitest run tests/save-crew.test.ts"
     },
     {
      "title": "P3OR82_glasshouse save migration test",
@@ -9179,9 +9171,9 @@
    ],
    "taskCounts": {
     "queued": 3,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": {
     "date": "2026-10-20",

@@ -1,19 +1,17 @@
 {
- "generated": 1792909194,
+ "generated": 1792909335,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
-  "lanesBusy": 1,
+  "lanesBusy": 0,
   "ready": 0,
   "waiting": 0,
   "queued": 0,
-  "running": 1,
-  "done24h": 16,
-  "modelsQueued": {
-   "deepseek-v4-flash": 1
-  },
+  "running": 0,
+  "done24h": 17,
+  "modelsQueued": {},
   "spendTodayUsd": 0.22,
-  "runsToday": 7,
-  "runsTodayUnpriced": 5,
+  "runsToday": 8,
+  "runsTodayUnpriced": 6,
   "spendTotalUsd": 15.36,
   "recent": [
    {
@@ -33,6 +31,12 @@
     "request": "Redacxiv: a test that old saves (streak, mode, day state) carry over after the rename (OpenRouter lane)",
     "model": "deepseek-v4-flash",
     "at": 1792908637
+   },
+   {
+    "id": "P3OR84_glasshouse-crew-save-test",
+    "request": "Glasshouse: a test that the collected crew survives the save format change (OpenRouter lane)",
+    "model": "deepseek-v4-flash",
+    "at": 1792908628
    },
    {
     "id": "P3OR82_glasshouse-save-migration-test",
@@ -69,12 +73,6 @@
     "request": "P3OR77_couplet data file",
     "model": "openai/gpt-4.1",
     "at": 1792833465
-   },
-   {
-    "id": "P3OR76_chai-foam-slip-words",
-    "request": "P3OR76_chai foam slip words",
-    "model": "openai/gpt-4.1",
-    "at": 1792833078
    }
   ],
   "label": "estimate"
@@ -107,23 +105,6 @@
    "at": 1792907210,
    "created": 1792907210,
    "wasCodex": true
-  },
-  {
-   "id": "P3OR84_glasshouse-crew-save-test",
-   "request": "Glasshouse: a test that the collected crew survives the save format change (OpenRouter lane)",
-   "game": "Glasshouse",
-   "route": "OpenRouter",
-   "model": "deepseek-v4-flash",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
-   "state": "running",
-   "at": 1792908628,
-   "created": 1792908628
   },
   {
    "id": "P1MM04_marble-act-two-look-and-lessons",
@@ -1244,8 +1225,7 @@
    "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
    "state": "waiting",
    "waitingOn": [
-    "P3OR83_glasshouse-save-settings-test",
-    "P3OR84_glasshouse-crew-save-test"
+    "P3OR83_glasshouse-save-settings-test"
    ],
    "created": 1792908660,
    "estPercentOfWeek": 0.25
@@ -1776,6 +1756,23 @@
    "state": "done",
    "at": 1792908619,
    "created": 1792908619
+  },
+  {
+   "id": "P3OR84_glasshouse-crew-save-test",
+   "request": "Glasshouse: a test that the collected crew survives the save format change (OpenRouter lane)",
+   "game": "Glasshouse",
+   "route": "OpenRouter",
+   "model": "deepseek-v4-flash",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
+   "state": "done",
+   "at": 1792908628,
+   "created": 1792908628
   },
   {
    "id": "P1LW01_lot-waits-rules-v2-and-levels",
