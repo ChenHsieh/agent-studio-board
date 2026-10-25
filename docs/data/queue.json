@@ -1,5 +1,5 @@
 {
- "generated": 1792910325,
+ "generated": 1792910466,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -79,7 +79,7 @@
  },
  "overflow": {
   "codexOut": false,
-  "converted": 7,
+  "converted": 6,
   "convertedRunning": 1,
   "claudeWorkers": 2,
   "claudeWorkerCap": 3,
@@ -89,9 +89,9 @@
  },
  "tasks": [
   {
-   "id": "P1FS23_readable-nonsense-one-screen",
-   "request": "readable-nonsense: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "阿嬤讀得出來",
+   "id": "P1FS24_thumb-stand-one-screen",
+   "request": "thumb-stand: one phone screen, Next on screen after a win, swipe on the board scrolls",
+   "game": "Thumb Stand",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
@@ -100,10 +100,10 @@
    "estMinutes": null,
    "after": [],
    "priority": "P1",
-   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
+   "why": "Martial-arts manga panels of impossible one-thumb handstands and poses.",
    "state": "running",
-   "at": 1792903312,
-   "created": 1792903312,
+   "at": 1792907210,
+   "created": 1792907210,
    "wasCodex": true
   },
   {
@@ -232,24 +232,6 @@
    "waitingOn": [],
    "created": 1792894228,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P1FS24_thumb-stand-one-screen",
-   "request": "thumb-stand: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "Thumb Stand",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "Martial-arts manga panels of impossible one-thumb handstands and poses.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792907210,
-   "wasCodex": true
   },
   {
    "id": "P1FS25_mirror-hold-one-screen",
@@ -390,6 +372,26 @@
    "after": [],
    "priority": "P1",
    "why": "Fitch maximum-parsimony phylogenetics; swap branches of a seven-species tree until it needs the fewest evolutionary changes; no timeline, undo is free.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792908772,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P3PL16_readable-nonsense-why-rollout",
+   "request": "Why this exists: finish the rollout on readable-nonsense (new test failure: test/onerule.test.mjs, the How to play car)",
+   "game": "阿嬤讀得出來",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1FS23_readable-nonsense-one-screen"
+   ],
+   "priority": "P1",
+   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
@@ -1131,28 +1133,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P3PL16_readable-nonsense-why-rollout",
-   "request": "Why this exists: finish the rollout on readable-nonsense (new test failure: test/onerule.test.mjs, the How to play car)",
-   "game": "阿嬤讀得出來",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1FS23_readable-nonsense-one-screen"
-   ],
-   "priority": "P1",
-   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1FS23_readable-nonsense-one-screen"
-   ],
-   "created": 1792908772,
-   "estPercentOfWeek": 0.25
-  },
-  {
    "id": "P3PL19_glasshouse-why-build",
    "request": "Why this exists: add the section to glasshouse through its build step",
    "game": "Glasshouse",
@@ -1623,6 +1603,24 @@
    "state": "done",
    "at": 1792907210,
    "created": 1792907210,
+   "wasCodex": true
+  },
+  {
+   "id": "P1FS23_readable-nonsense-one-screen",
+   "request": "readable-nonsense: one phone screen, Next on screen after a win, swipe on the board scrolls",
+   "game": "阿嬤讀得出來",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
+   "state": "done",
+   "at": 1792903312,
+   "created": 1792903312,
    "wasCodex": true
   },
   {

@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T06:38:33+00:00",
+ "generated": "2026-10-25T06:40:53+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 69,
+    "queued": 68,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2760,
-    "estimateMinutes": 2760
+    "minutes": 2720,
+    "estimateMinutes": 2720
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 15,
+    "doneToday": 16,
     "minutes": 180,
     "estimateMinutes": 90
    }
   },
-  "queued": 70,
+  "queued": 69,
   "running": 2,
-  "doneToday": 15,
+  "doneToday": 16,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2940,
-  "estimatedFinish": "2026-10-27T04:38:33+00:00",
-  "estimateMinutes": 2760
+  "minutesRemaining": 2900,
+  "estimatedFinish": "2026-10-27T04:00:53+00:00",
+  "estimateMinutes": 2720
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "readable-nonsense",
-   "task": "P1FS23_readable nonsense one screen",
-   "since": "2026-10-25T06:30:40+00:00",
-   "activity": "2026-10-25T06:37:25+00:00",
+   "game": "thumb-stand",
+   "task": "P1FS24_thumb stand one screen",
+   "since": "2026-10-25T06:40:50+00:00",
+   "activity": "2026-10-25T06:40:50+00:00",
    "commit": null
   },
   {
@@ -28373,7 +28373,7 @@
    ]
   },
   {
-   "nextTask": "thumb-stand: one phone screen, Next on screen after...",
+   "nextTask": null,
    "costTotalUsd": 95.42,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -28396,8 +28396,8 @@
    "title": "Thumb Stand",
    "line": "",
    "url": "https://chenhsieh.github.io/thumb-stand/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Total rework planned by a cross-functional lead",
    "shelfNote": "",
@@ -28411,7 +28411,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:44:20+00:00",
-   "lastChange": "2026-10-25T05:46:50+00:00",
+   "lastChange": "2026-10-25T06:40:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
@@ -28427,10 +28427,10 @@
    "tasks": [
     {
      "title": "P1FS24_thumb stand one screen",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "thumb-stand: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T05:46:50+00:00",
+     "since": "2026-10-25T06:40:50+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -28539,8 +28539,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 17
    },
@@ -31544,15 +31544,15 @@
     "reviseRound": 1,
     "daysInState": 4
    },
-   "waitingOn": "readable nonsense one screen",
+   "waitingOn": "readable nonsense why rollout",
    "id": "readable-nonsense",
    "number": 75,
    "repo": "readable-nonsense",
    "title": "阿嬤讀得出來",
    "line": "A famous Tang poem line is printed as fake glyphs with.",
    "url": "https://chenhsieh.github.io/readable-nonsense/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Start error blocks play",
    "shelfNote": "",
@@ -31566,34 +31566,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:29:52+00:00",
-   "lastChange": "2026-10-25T06:37:25+00:00",
+   "lastChange": "2026-10-25T06:12:52+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 3,
-    "claudeRuns": 8,
+    "claudeRuns": 9,
     "apiRuns": 0,
     "codexTokens": 697578,
     "codexUsdEst": 0.84,
-    "claudeUsdEst": 28.8,
-    "earlierRounds": 15,
-    "earlierUsdEst": 54.0,
+    "claudeUsdEst": 32.4,
+    "earlierRounds": 14,
+    "earlierUsdEst": 50.4,
     "totalUsdEst": 86.59
    },
    "tasks": [
-    {
-     "title": "P1FS23_readable nonsense one screen",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "readable-nonsense: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T06:30:40+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P3PL16_readable nonsense why rollout",
      "state": "queued",
@@ -31607,6 +31593,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1FS23_readable nonsense one screen",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "readable-nonsense: one phone screen, Next on screen after a win, swipe on the board scrolls",
+     "since": "2026-10-25T04:41:52+00:00",
+     "done": "2026-10-25T04:41:52+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1FS23 readable-nonsense one screen: DONE (Sonnet overflow worker, 2026-10-25). Commit on main; live bytes match; live gate PASS."
     },
     {
      "title": "P1RN45_tap label beside picture",
@@ -31695,9 +31695,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 11
+    "done": 12
    },
    "verdict": {
     "date": "2026-10-21",
