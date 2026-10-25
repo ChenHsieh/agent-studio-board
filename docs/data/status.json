@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T00:13:49+00:00",
+ "generated": "2026-10-25T00:16:10+00:00",
  "ops": {
-  "count": 1,
+  "count": 2,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -28,40 +28,31 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "doneToday": 75,
-    "minutes": 120,
+    "minutes": 60,
     "estimateMinutes": 60
    }
   },
   "queued": 68,
-  "running": 1,
+  "running": 0,
   "doneToday": 77,
   "lanes": {
    "Codex": 1,
-   "Claude": 2
+   "Claude": 1
   },
   "laneCap": {
    "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2800,
-  "estimatedFinish": "2026-10-26T20:53:49+00:00",
+  "minutesRemaining": 2740,
+  "estimatedFinish": "2026-10-26T20:56:10+00:00",
   "estimateMinutes": 2680
  },
- "lanes": [
-  {
-   "worker": "Claude",
-   "game": "tree-hero",
-   "task": "P1TH04_strings and tests",
-   "since": "2026-10-25T00:09:11+00:00",
-   "activity": "2026-10-25T00:09:15+00:00",
-   "commit": null
-  }
- ],
+ "lanes": [],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 0,
  "apiSpentUsd": 317.01,
  "claudeInSession": {
   "runs": 287,
@@ -27805,23 +27796,23 @@
     "caption": "Swap branches until the family tree needs the fewest changes."
    },
    "why": "Fitch maximum-parsimony phylogenetics; swap branches of a seven-species tree until it needs the fewest evolutionary changes; no timeline, undo is free.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 5
+    "daysInState": 0
    },
-   "waitingOn": "strings and tests",
+   "waitingOn": "none",
    "id": "tree-hero",
    "number": 11,
    "repo": "tree-hero",
    "title": "Tree Hero",
    "line": "Swap branches until the family tree needs the fewest changes.",
    "url": "https://chenhsieh.github.io/tree-hero/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
@@ -27835,33 +27826,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T00:28:48+00:00",
-   "lastChange": "2026-10-25T00:09:15+00:00",
+   "lastChange": "2026-10-24T23:45:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 5,
+    "claudeRuns": 6,
     "apiRuns": 0,
     "codexTokens": 155848,
     "codexUsdEst": 0.19,
-    "claudeUsdEst": 18.0,
-    "earlierRounds": 12,
-    "earlierUsdEst": 43.2,
+    "claudeUsdEst": 21.6,
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
     "totalUsdEst": 61.39
    },
    "tasks": [
     {
      "title": "P1TH04_strings and tests",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Tree Hero: tidy words and tests after the journey rebuild",
-     "since": "2026-10-25T00:09:11+00:00",
-     "done": null,
+     "since": "2026-10-24T02:23:15+00:00",
+     "done": "2026-10-24T02:23:15+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1TH04 DONE (Claude Sonnet, by hand, no aider). Tree Hero (#11). Published to main ."
     },
     {
      "title": "P1TH01_swap budget real choice",
@@ -27950,9 +27941,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": {
     "date": "2026-10-19",
@@ -27960,7 +27951,7 @@
     "note": "Bioinformatics round: make the idea legible in the first"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-24T23:45:00+00:00",
