@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T01:13:12+00:00",
+ "generated": "2026-10-25T01:15:29+00:00",
  "ops": {
-  "count": 59,
+  "count": 68,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 58,
+    "queued": 57,
     "running": 0,
     "doneToday": 3,
-    "minutes": 2320,
-    "estimateMinutes": 2320
+    "minutes": 2280,
+    "estimateMinutes": 2280
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 150
    }
   },
-  "queued": 59,
+  "queued": 58,
   "running": 4,
   "doneToday": 84,
   "lanes": {
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2620,
-  "estimatedFinish": "2026-10-26T15:53:12+00:00",
-  "estimateMinutes": 2320
+  "minutesRemaining": 2580,
+  "estimatedFinish": "2026-10-26T15:15:29+00:00",
+  "estimateMinutes": 2280
  },
  "lanes": [
   {
@@ -69,10 +69,10 @@
   },
   {
    "worker": "Claude",
-   "game": "gallery-guess",
-   "task": "P2GG00_gallery guess save migration test",
-   "since": "2026-10-25T01:12:40+00:00",
-   "activity": "2026-10-25T01:12:41+00:00",
+   "game": "play-template",
+   "task": "P2AX11_audit report merge tools only",
+   "since": null,
+   "activity": null,
    "commit": null
   },
   {
@@ -294,6 +294,97 @@
     },
     {
      "at": "2026-10-22T02:25:43+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
+    }
+   ]
+  },
+  {
+   "nextTask": "Swap office seats each hour so nobody gets...",
+   "costTotalUsd": 7.2,
+   "latestChange": {
+    "text": "feat: The AC Remote starts from the game template",
+    "at": "2026-10-25T01:14:52+00:00"
+   },
+   "promo": null,
+   "why": "A remix of the chai boil dial and Thin Walls, set in an office with one shared air-conditioner remote.",
+   "state": "building",
+   "stateFlags": {
+    "refining": false,
+    "resting": false,
+    "regressed": false,
+    "reviseRound": 0,
+    "daysInState": 1
+   },
+   "waitingOn": "ac remote",
+   "id": "ac-remote",
+   "number": 165,
+   "repo": "ac-remote",
+   "title": "Ac Remote",
+   "line": "",
+   "url": "https://chenhsieh.github.io/ac-remote/",
+   "stage": "queued",
+   "who": "Codex",
+   "priority": null,
+   "priorityNote": "",
+   "shelfNote": "",
+   "image": null,
+   "released": false,
+   "releasedOn": null,
+   "releasedNote": "",
+   "archived": false,
+   "archivedOn": null,
+   "archivedKind": "",
+   "archivedNote": "",
+   "firstSeen": "2026-10-23T02:57:43+00:00",
+   "lastChange": "2026-10-25T01:14:52+00:00",
+   "cost": {
+    "apiUsd": 0.0,
+    "codexRuns": 0,
+    "claudeRuns": 0,
+    "apiRuns": 0,
+    "codexTokens": 0,
+    "codexUsdEst": 0.0,
+    "claudeUsdEst": 0.0,
+    "earlierRounds": 2,
+    "earlierUsdEst": 7.2,
+    "totalUsdEst": 7.2
+   },
+   "tasks": [
+    {
+     "title": "ac remote",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Swap office seats each hour so nobody gets up to touch the air-conditioner remote: build the core with placeholder shapes, then its first-minute round",
+     "since": "2026-10-23T02:57:43+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
+   "taskCounts": {
+    "queued": 1,
+    "running": 0,
+    "waitingDesign": 0,
+    "done": 0
+   },
+   "verdict": null,
+   "needsYou": null,
+   "inProgress": true,
+   "history": [
+    {
+     "at": "2026-10-25T01:14:52+00:00",
+     "ok": true,
+     "note": "feat: The AC Remote starts from the game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T01:13:24+00:00",
      "ok": true,
      "note": "Initial commit",
      "source": "main commit"
@@ -8200,21 +8291,21 @@
    "why": "Public-domain objects from The Metropolitan Museum of Art's open collection API.",
    "state": "ship",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 5
    },
-   "waitingOn": "gallery guess save migration test",
+   "waitingOn": "owner",
    "id": "gallery-guess",
    "number": 22,
    "repo": "gallery-guess",
    "title": "Gallery Guess",
    "line": "Place each museum object by country and year.",
    "url": "https://chenhsieh.github.io/gallery-guess/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Story and mechanism pass; pending a merge decision",
    "shelfNote": "",
@@ -8232,33 +8323,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-09-20T13:46:25+00:00",
-   "lastChange": "2026-10-25T01:12:41+00:00",
+   "lastChange": "2026-10-23T22:11:03+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 2,
     "codexTokens": 177723,
     "codexUsdEst": 0.21,
-    "claudeUsdEst": 7.2,
-    "earlierRounds": 8,
-    "earlierUsdEst": 28.8,
+    "claudeUsdEst": 10.8,
+    "earlierRounds": 7,
+    "earlierUsdEst": 25.2,
     "totalUsdEst": 36.21
    },
    "tasks": [
     {
      "title": "P2GG00_gallery guess save migration test",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Gallery Guess: a test proves an old save still loads after an update (release checklist item 7)",
-     "since": "2026-10-25T01:12:40+00:00",
-     "done": null,
+     "since": "2026-10-23T22:11:03+00:00",
+     "done": "2026-10-23T22:11:03+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P2GG00 Gallery Guess save migration test: DONE (claude-sonnet). Pushed to main (tests only, nothing in docs/ changed, no publish needed). node tests/save_migration.test.mjs exits 0 (13 checks)."
     },
     {
      "title": "P3OR56_gallery guess credits page",
@@ -8333,9 +8424,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": {
     "date": "2026-10-19",
@@ -8343,7 +8434,7 @@
     "note": "Ship after ship standard, share cap and ranks"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-23T21:36:27+00:00",
@@ -15439,8 +15530,8 @@
    "nextTask": null,
    "costTotalUsd": 58.28,
    "latestChange": {
-    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
-    "at": "2026-10-24T16:26:30+00:00"
+    "text": "No accidental zoom on phones:",
+    "at": "2026-10-25T00:52:31+00:00"
    },
    "promo": {
     "files": {
@@ -15484,8 +15575,8 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-09-05T02:37:00+00:00",
-   "lastChange": "2026-10-24T16:26:30+00:00",
+   "firstSeen": "2026-10-15T00:28:51+00:00",
+   "lastChange": "2026-10-25T00:52:31+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -15613,6 +15704,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T00:52:31+00:00",
+     "ok": true,
+     "note": "No accidental zoom on phones:",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-24T16:26:30+00:00",
      "ok": true,
      "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
@@ -15677,12 +15774,6 @@
      "ok": true,
      "note": "feat:",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T04:02:45+00:00",
-     "ok": true,
-     "note": "P1h10 retro kit 1.0.0 + phosphor reskin live; Pages source switched to /docs; Opus ship review owed",
-     "source": "board note"
     }
    ]
   },
@@ -29329,8 +29420,8 @@
    "nextTask": null,
    "costTotalUsd": 61.2,
    "latestChange": {
-    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
-    "at": "2026-10-24T16:07:35+00:00"
+    "text": "No accidental zoom on phones:",
+    "at": "2026-10-25T00:46:36+00:00"
    },
    "promo": null,
    "why": "Life as a bioinformatics PhD student at UGA, told in the swipe-card style of Reigns.",
@@ -29363,8 +29454,8 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-10-03T01:03:38+00:00",
-   "lastChange": "2026-10-24T16:07:35+00:00",
+   "firstSeen": "2026-10-14T20:04:07+00:00",
+   "lastChange": "2026-10-25T00:46:36+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -29478,6 +29569,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T00:46:36+00:00",
+     "ok": true,
+     "note": "No accidental zoom on phones:",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-24T16:07:35+00:00",
      "ok": true,
      "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
@@ -29542,12 +29639,6 @@
      "ok": true,
      "note": "feat: plain-English badges, Traditional Chinese, and a drawn scene for each of the 20",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T18:27:09+00:00",
-     "ok": true,
-     "note": "badges, narrator, dealt start, strip, brand, transcript, 25-word cards; main https://chenhsieh.github.io/UGA-grad-survivor/",
-     "source": "board note"
     }
    ]
   },
@@ -31017,43 +31108,43 @@
  "releaseRegressed": [],
  "checksSummary": {
   "why": {
-   "yes": 160,
+   "yes": 161,
    "no": 4,
    "unknown": 0,
    "ran": 0
   },
   "expect": {
    "yes": 155,
-   "no": 9,
+   "no": 10,
    "unknown": 0,
    "ran": 0
   },
   "story": {
    "yes": 23,
    "no": 31,
-   "unknown": 110,
+   "unknown": 111,
    "ran": 0
   },
   "first_minute": {
    "yes": 9,
    "no": 0,
-   "unknown": 110,
+   "unknown": 111,
    "ran": 45
   },
   "a11y": {
    "yes": 0,
    "no": 19,
-   "unknown": 145,
+   "unknown": 146,
    "ran": 0
   },
   "credits": {
    "yes": 1,
    "no": 0,
-   "unknown": 163,
+   "unknown": 164,
    "ran": 0
   },
   "saves": {
-   "yes": 0,
+   "yes": 1,
    "no": 0,
    "unknown": 164,
    "ran": 0
@@ -31061,23 +31152,23 @@
   "standard": {
    "yes": 0,
    "no": 0,
-   "unknown": 164,
+   "unknown": 165,
    "ran": 0
   },
   "console": {
    "yes": 0,
    "no": 0,
-   "unknown": 164,
+   "unknown": 165,
    "ran": 0
   },
   "live": {
    "yes": 0,
    "no": 0,
-   "unknown": 164,
+   "unknown": 165,
    "ran": 0
   },
   "name": {
-   "yes": 162,
+   "yes": 163,
    "no": 0,
    "unknown": 2,
    "ran": 0

@@ -1,5 +1,5 @@
 {
- "generated": 1792890802,
+ "generated": 1792890941,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -89,23 +89,6 @@
  },
  "tasks": [
   {
-   "id": "P2GG00_gallery-guess-save-migration-test",
-   "request": "Gallery Guess: a test proves an old save still loads after an update (release checklist item 7)",
-   "game": "Gallery Guess",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "medium",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P3",
-   "why": "Public-domain objects from The Metropolitan Museum of Art's open collection API.",
-   "state": "running",
-   "at": 1792793463,
-   "created": 1792793463
-  },
-  {
    "id": "P1FS05_next-prompt-and-canvas-scroll",
    "request": "P1FS05_next prompt and canvas scroll",
    "game": "Studio",
@@ -142,6 +125,23 @@
    "state": "running",
    "at": 1792885818,
    "created": 1792885818
+  },
+  {
+   "id": "P2AX11_audit-report-merge-tools-only",
+   "request": "Ship the clearer accessibility audit report (one line per problem, worst first) that is already built on a branch",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "medium",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1792808653,
+   "created": 1792808653
   },
   {
    "id": "P2n86_round4-template-repos",
@@ -481,23 +481,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792838738
-  },
-  {
-   "id": "P2AX11_audit-report-merge-tools-only",
-   "request": "Ship the clearer accessibility audit report (one line per problem, worst first) that is already built on a branch",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "medium",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792808653
   },
   {
    "id": "P2BN02_blackout-notice-rereview",
@@ -1257,7 +1240,7 @@
   {
    "id": "P2n96_ac-remote",
    "request": "Swap office seats each hour so nobody gets up to touch the air-conditioner remote: build the core with placeholder shapes, then its first-minute round",
-   "game": "Studio",
+   "game": "Ac Remote",
    "route": "Codex",
    "model": "gpt-6-sol",
    "effort": "xhigh",
@@ -1268,7 +1251,7 @@
     "P2n86_round4-template-repos"
    ],
    "priority": null,
-   "why": "",
+   "why": "A remix of the chai boil dial and Thin Walls, set in an office with one shared air-conditioner remote.",
    "state": "waiting",
    "waitingOn": [
     "P2n86_round4-template-repos"
