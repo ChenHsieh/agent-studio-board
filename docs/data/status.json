@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T04:45:02+00:00",
+ "generated": "2026-10-25T04:47:23+00:00",
  "ops": {
   "count": 7,
   "notes": [
@@ -20,22 +20,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 68,
+    "queued": 67,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2720,
-    "estimateMinutes": 2720
+    "minutes": 2680,
+    "estimateMinutes": 2680
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 2,
     "doneToday": 0,
-    "minutes": 120,
-    "estimateMinutes": 60
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
-  "queued": 69,
-  "running": 1,
+  "queued": 68,
+  "running": 2,
   "doneToday": 0,
   "lanes": {
    "Codex": 1,
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2840,
-  "estimatedFinish": "2026-10-27T02:05:02+00:00",
-  "estimateMinutes": 2720
+  "minutesRemaining": 2860,
+  "estimatedFinish": "2026-10-27T01:27:23+00:00",
+  "estimateMinutes": 2680
  },
  "lanes": [
   {
@@ -56,12 +56,20 @@
    "game": "makeshift-chair",
    "task": "P2MC03_share and sound",
    "since": "2026-10-25T04:39:15+00:00",
-   "activity": "2026-10-25T04:39:16+00:00",
+   "activity": "2026-10-25T04:45:30+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "pinch-points",
+   "task": "P2PP04_pinch points visual round design",
+   "since": "2026-10-25T04:45:53+00:00",
+   "activity": "2026-10-25T04:45:54+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 2,
  "apiSpentUsd": 319.8,
  "claudeInSession": {
   "runs": 288,
@@ -13971,8 +13979,8 @@
    "nextTask": "Makeshift Chair 3D: the visual round (soft clay...",
    "costTotalUsd": 61.95,
    "latestChange": {
-    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
-    "at": "2026-10-25T02:55:55+00:00"
+    "text": "3D chair: share button, sounds made in code (knock, boing, squeak, oof), a remembered...",
+    "at": "2026-10-25T04:45:30+00:00"
    },
    "promo": {
     "files": {
@@ -14017,7 +14025,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-25T04:39:16+00:00",
+   "lastChange": "2026-10-25T04:45:30+00:00",
    "cost": {
     "apiUsd": 11.15,
     "codexRuns": 2,
@@ -14155,6 +14163,12 @@
    "inProgress": true,
    "history": [
     {
+     "at": "2026-10-25T04:45:30+00:00",
+     "ok": true,
+     "note": "3D chair: share button, sounds made in code (knock, boing, squeak, oof), a remembered sound switch, shorter replay under reduced motion (P2MC03)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T02:55:55+00:00",
      "ok": true,
      "note": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -14218,12 +14232,6 @@
      "at": "2026-10-24T11:09:08+00:00",
      "ok": true,
      "note": "start: P1MC02_clients-levels-and-daily",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T11:03:24+00:00",
-     "ok": true,
-     "note": "3d: hint lines for sit and outcome, labels fit at 320, launch screenshot in the test",
      "source": "main commit"
     }
    ]
@@ -18734,15 +18742,15 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "pinch points one screen",
+   "waitingOn": "pinch points visual round design",
    "id": "pinch-points",
    "number": 119,
    "repo": "pinch-points",
    "title": "Pinch Points",
    "line": "Pinch six stones flat as the surface flattens live; par set by search, plus a daily.",
    "url": "https://chenhsieh.github.io/pinch-points/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "turns an esoteric paper into an interactive game; explain the mechanism, show...",
    "shelfNote": "",
@@ -18756,7 +18764,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T20:47:18+00:00",
-   "lastChange": "2026-10-25T04:08:21+00:00",
+   "lastChange": "2026-10-25T04:45:54+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -18771,11 +18779,11 @@
    },
    "tasks": [
     {
-     "title": "P1FS29_pinch points one screen",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "pinch-points: one phone screen through the kit, Next on screen after a win",
-     "since": "2026-10-25T02:11:16+00:00",
+     "title": "P2PP04_pinch points visual round design",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Pinch Points: visual round with the taste spin, three looks and a pick",
+     "since": "2026-10-25T04:45:53+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -18785,11 +18793,11 @@
      "result": ""
     },
     {
-     "title": "P2PP04_pinch points visual round design",
+     "title": "P1FS29_pinch points one screen",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Pinch Points: visual round with the taste spin, three looks and a pick",
-     "since": "2026-10-24T06:59:29+00:00",
+     "plan": "pinch-points: one phone screen through the kit, Next on screen after a win",
+     "since": "2026-10-25T02:11:16+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -18884,8 +18892,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 6
    },
