@@ -1,5 +1,5 @@
 {
- "generated": 1792915386,
+ "generated": 1792915524,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -79,7 +79,7 @@
  },
  "overflow": {
   "codexOut": false,
-  "converted": 3,
+  "converted": 2,
   "convertedRunning": 1,
   "claudeWorkers": 2,
   "claudeWorkerCap": 3,
@@ -89,9 +89,9 @@
  },
  "tasks": [
   {
-   "id": "P1FS16_colony-count-one-screen",
-   "request": "colony-count: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "Colony Count",
+   "id": "P1FS17_gif-cities-one-screen",
+   "request": "gif-cities: one phone screen, Next on screen after a win, swipe on the board scrolls",
+   "game": "GIF Cities",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
@@ -100,31 +100,11 @@
    "estMinutes": null,
    "after": [],
    "priority": "P1",
-   "why": "An ad for a three-colour sweeper puzzle (ColorSweeper).",
+   "why": "An Internet Archive reel on GifCities, its search engine of rescued GeoCities GIFs.",
    "state": "running",
-   "at": 1792911786,
-   "created": 1792911786,
+   "at": 1792914873,
+   "created": 1792914873,
    "wasCodex": true
-  },
-  {
-   "id": "P2AX13_kit-fit-rollout-honest-sign",
-   "request": "honest-sign: take the new play kit so the board and Undo fit a small phone",
-   "game": "Honest Sign",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P1AX12_kit-new-rule-and-short-screen-fit"
-   ],
-   "priority": null,
-   "why": "A seven-segment sign must state how many bars it lights, so every correction changes what it corrects; copying the meter loops on about half the signs.",
-   "state": "running",
-   "at": 1792914696,
-   "created": 1792914696,
-   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2PF01_board-portfolio-view",
@@ -162,24 +142,6 @@
    "waitingOn": [],
    "created": 1792914815,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P1FS17_gif-cities-one-screen",
-   "request": "gif-cities: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "GIF Cities",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "An Internet Archive reel on GifCities, its search engine of rescued GeoCities GIFs.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792914873,
-   "wasCodex": true
   },
   {
    "id": "P1FS18_drawing-circles-one-screen",
@@ -1397,6 +1359,24 @@
    "state": "done",
    "at": 1792911809,
    "created": 1792911809,
+   "wasCodex": true
+  },
+  {
+   "id": "P1FS16_colony-count-one-screen",
+   "request": "colony-count: one phone screen, Next on screen after a win, swipe on the board scrolls",
+   "game": "Colony Count",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "An ad for a three-colour sweeper puzzle (ColorSweeper).",
+   "state": "done",
+   "at": 1792911786,
+   "created": 1792911786,
    "wasCodex": true
   },
   {
