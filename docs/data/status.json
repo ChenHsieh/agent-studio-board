@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T04:20:20+00:00",
+ "generated": "2026-10-25T04:22:40+00:00",
  "ops": {
   "count": 13,
   "notes": [
@@ -20,56 +20,39 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 67,
+    "queued": 69,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2680,
-    "estimateMinutes": 2680
+    "minutes": 2760,
+    "estimateMinutes": 2760
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
+    "running": 0,
     "doneToday": 0,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "minutes": 60,
+    "estimateMinutes": 60
    }
   },
-  "queued": 68,
-  "running": 2,
+  "queued": 70,
+  "running": 0,
   "doneToday": 0,
   "lanes": {
    "Codex": 1,
-   "Claude": 2
+   "Claude": 1
   },
   "laneCap": {
    "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2860,
-  "estimatedFinish": "2026-10-27T01:00:20+00:00",
-  "estimateMinutes": 2680
+  "minutesRemaining": 2820,
+  "estimatedFinish": "2026-10-27T02:22:40+00:00",
+  "estimateMinutes": 2760
  },
- "lanes": [
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P1MM03_marble mechanisms act two",
-   "since": null,
-   "activity": null,
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "blackout-notice",
-   "task": "P2BN06_couplet woodblock build",
-   "since": "2026-10-25T04:09:59+00:00",
-   "activity": "2026-10-25T04:16:54+00:00",
-   "commit": null
-  }
- ],
+ "lanes": [],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 0,
  "apiSpentUsd": 319.8,
  "claudeInSession": {
   "runs": 288,
@@ -1591,11 +1574,11 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Blackout Notice: build the woodblock page look picked...",
    "costTotalUsd": 51.12,
    "latestChange": {
-    "text": "Couplet first minute: three lit taps on level 1, how-is-this-scored notes, line for...",
-    "at": "2026-10-25T03:21:21+00:00"
+    "text": "Blackout Notice: the woodblock leaf look (P2BN06): printed columns read right to left,...",
+    "at": "2026-10-25T04:22:08+00:00"
    },
    "promo": {
     "files": {
@@ -1620,8 +1603,8 @@
    "title": "Blackout Notice",
    "line": "Black out words on a stairwell notice until it says something kinder; 20 notices and a daily.",
    "url": "https://chenhsieh.github.io/blackout-notice/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Black out words on a stairwell notice until it says something kinder; 20",
    "shelfNote": "",
@@ -1639,7 +1622,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-25T04:16:54+00:00",
+   "lastChange": "2026-10-25T04:22:08+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -1655,10 +1638,10 @@
    "tasks": [
     {
      "title": "P2BN06_couplet woodblock build",
-     "state": "running",
-     "worker": "Claude",
+     "state": "queued",
+     "worker": "Codex",
      "plan": "Blackout Notice: build the woodblock page look picked in the couplet visual round",
-     "since": "2026-10-25T04:09:59+00:00",
+     "since": "2026-10-24T11:12:44+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -1767,8 +1750,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
     "done": 12
    },
@@ -1780,6 +1763,18 @@
    "needsYou": "Read the 20 notices before it is promoted: the wording was written by the agent and no person has read it. Suggest: read levels 1 to 20 once, fix tone, then promote.",
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-25T04:22:08+00:00",
+     "ok": true,
+     "note": "Blackout Notice: the woodblock leaf look (P2BN06): printed columns read right to left, reader's vermilion circles, ink-out reveal, new social card",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T04:12:21+00:00",
+     "ok": true,
+     "note": "start: P2BN06_couplet-woodblock-build (leaf look WIP)",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T03:21:21+00:00",
      "ok": true,
@@ -1838,18 +1833,6 @@
      "at": "2026-10-23T01:47:08+00:00",
      "ok": true,
      "note": "feat: Read back the posted notice",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-23T01:46:23+00:00",
-     "ok": true,
-     "note": "feat: Read back the posted notice",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-23T01:19:42+00:00",
-     "ok": false,
-     "note": "see",
      "source": "board note"
     }
    ]
