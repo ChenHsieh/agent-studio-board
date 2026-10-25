@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T07:12:42+00:00",
+ "generated": "2026-10-25T07:15:00+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 65,
+    "queued": 63,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2600,
-    "estimateMinutes": 2600
+    "minutes": 2520,
+    "estimateMinutes": 2520
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 20,
+    "doneToday": 22,
     "minutes": 180,
     "estimateMinutes": 90
    }
   },
-  "queued": 66,
+  "queued": 64,
   "running": 2,
-  "doneToday": 20,
+  "doneToday": 22,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,23 +46,23 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2780,
-  "estimatedFinish": "2026-10-27T02:32:42+00:00",
-  "estimateMinutes": 2600
+  "minutesRemaining": 2700,
+  "estimatedFinish": "2026-10-27T01:15:00+00:00",
+  "estimateMinutes": 2520
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "BioRedactle-nextjs",
-   "task": "P1FS13_redacxiv one screen",
-   "since": "2026-10-25T07:03:44+00:00",
-   "activity": "2026-10-25T07:11:17+00:00",
+   "game": "cymatic-plate",
+   "task": "P1FS14_cymatic plate one screen",
+   "since": "2026-10-25T07:14:27+00:00",
+   "activity": "2026-10-25T07:14:28+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
    "game": "Multiple games",
-   "task": "P1MM05_marble mechanisms act three",
+   "task": "P1MM06_marble act three look daily share",
    "since": null,
    "activity": null,
    "commit": null
@@ -4225,7 +4225,7 @@
    ]
   },
   {
-   "nextTask": "cymatic-plate: one phone screen, Next on screen after...",
+   "nextTask": null,
    "costTotalUsd": 83.44,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -4255,8 +4255,8 @@
    "title": "Cymatic Plate",
    "line": "Ring notes on a brass plate covered in sand and watch the.",
    "url": "https://chenhsieh.github.io/cymatic-plate/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
@@ -4270,7 +4270,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:40:04+00:00",
-   "lastChange": "2026-10-25T07:03:29+00:00",
+   "lastChange": "2026-10-25T07:14:28+00:00",
    "cost": {
     "apiUsd": 3.26,
     "codexRuns": 5,
@@ -4286,10 +4286,10 @@
    "tasks": [
     {
      "title": "P1FS14_cymatic plate one screen",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "cymatic-plate: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T07:03:29+00:00",
+     "since": "2026-10-25T07:14:27+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -4398,8 +4398,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 15
    },
@@ -19882,8 +19882,8 @@
    "title": "Redacxiv",
    "line": "Reveal a paper's title with word tiles.",
    "url": "https://chenhsieh.github.io/redacxiv/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Interface and visual pass; make the first game winnable for",
    "shelfNote": "",
@@ -19901,30 +19901,16 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 2,
     "codexTokens": 1140773,
     "codexUsdEst": 1.37,
-    "claudeUsdEst": 14.4,
-    "earlierRounds": 12,
-    "earlierUsdEst": 43.2,
+    "claudeUsdEst": 18.0,
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
     "totalUsdEst": 58.97
    },
    "tasks": [
-    {
-     "title": "P1FS13_redacxiv one screen",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "redacxiv: one phone screen, Next on screen after a win, swipe on the board scrolls",
-     "since": "2026-10-25T07:03:44+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P3SV55_redacxiv merge save tests",
      "state": "queued",
@@ -19938,6 +19924,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1FS13_redacxiv one screen",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "redacxiv: one phone screen, Next on screen after a win, swipe on the board scrolls",
+     "since": "2026-10-25T07:03:29+00:00",
+     "done": "2026-10-25T07:03:29+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1FS13 redacxiv one screen: DONE (Sonnet overflow worker, 2026-10-25). Commit on main; gh-pages rebuilt from it (live chunk index- matches local build and contains the new goal); live gate PASS."
     },
     {
      "title": "P3OR86_redacxiv tile save test",
@@ -20026,9 +20026,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 10
+    "done": 11
    },
    "verdict": {
     "date": "2026-10-20",

@@ -1,5 +1,5 @@
 {
- "generated": 1792912026,
+ "generated": 1792912513,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -79,9 +79,9 @@
  },
  "overflow": {
   "codexOut": false,
-  "converted": 11,
+  "converted": 10,
   "convertedRunning": 1,
-  "claudeWorkers": 1,
+  "claudeWorkers": 2,
   "claudeWorkerCap": 3,
   "handedBack": 0,
   "lastHandBack": null,
@@ -89,9 +89,9 @@
  },
  "tasks": [
   {
-   "id": "P1FS13_redacxiv-one-screen",
-   "request": "redacxiv: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "Redacxiv",
+   "id": "P1FS14_cymatic-plate-one-screen",
+   "request": "cymatic-plate: one phone screen, Next on screen after a win, swipe on the board scrolls",
+   "game": "Cymatic Plate",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
@@ -99,31 +99,31 @@
    "size": "several repos",
    "estMinutes": null,
    "after": [],
-   "priority": null,
-   "why": "The word game Redactle, with real open-access biology papers; guess words to unblank a hidden paper's title and abstract; decoys come from other papers.",
+   "priority": "P1",
+   "why": "Chladni figures on a vibrating plate and a post of dye moving on vibrating milk.",
    "state": "running",
    "at": 1792911809,
    "created": 1792911809,
    "wasCodex": true
   },
   {
-   "id": "P1MM05_marble-mechanisms-act-three",
-   "request": "Marble Machine: second marble, seesaw, belt, cup, wheel, flap and dominoes",
+   "id": "P1MM06_marble-act-three-look-daily-share",
+   "request": "Marble Machine: act-three look and lessons, a daily machine and its share line",
    "game": "Studio",
    "route": "Claude",
-   "model": "opus",
+   "model": "sonnet",
    "effort": "high",
-   "kind": "build",
+   "kind": "visual",
    "size": "studio",
    "estMinutes": null,
    "after": [
-    "P1MM04_marble-act-two-look-and-lessons"
+    "P1MM05_marble-mechanisms-act-three"
    ],
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1792909763,
-   "created": 1792909763
+   "at": 1792912427,
+   "created": 1792912427
   },
   {
    "id": "P1FS12_remote-viewer-one-screen",
@@ -142,24 +142,6 @@
    "waitingOn": [],
    "created": 1792894202,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P1FS14_cymatic-plate-one-screen",
-   "request": "cymatic-plate: one phone screen, Next on screen after a win, swipe on the board scrolls",
-   "game": "Cymatic Plate",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "Chladni figures on a vibrating plate and a post of dye moving on vibrating milk.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792911809,
-   "wasCodex": true
   },
   {
    "id": "P1FS15_directory-handrail-one-screen",
@@ -1145,27 +1127,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P1MM06_marble-act-three-look-daily-share",
-   "request": "Marble Machine: act-three look and lessons, a daily machine and its share line",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1MM05_marble-mechanisms-act-three"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P1MM05_marble-mechanisms-act-three"
-   ],
-   "created": 1792909763
-  },
-  {
    "id": "P2AX13_kit-fit-rollout-honest-sign",
    "request": "honest-sign: take the new play kit so the board and Undo fit a small phone",
    "game": "Honest Sign",
@@ -1932,6 +1893,24 @@
    "created": 1792888748
   },
   {
+   "id": "P1FS13_redacxiv-one-screen",
+   "request": "redacxiv: one phone screen, Next on screen after a win, swipe on the board scrolls",
+   "game": "Redacxiv",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "The word game Redactle, with real open-access biology papers; guess words to unblank a hidden paper's title and abstract; decoys come from other papers.",
+   "state": "done",
+   "at": 1792911809,
+   "created": 1792911809,
+   "wasCodex": true
+  },
+  {
    "id": "P1MM04_marble-act-two-look-and-lessons",
    "request": "Marble Machine: the new pieces drawn as solid objects, one short lesson each",
    "game": "Studio",
@@ -1949,6 +1928,25 @@
    "state": "done",
    "at": 1792908841,
    "created": 1792908841
+  },
+  {
+   "id": "P1MM05_marble-mechanisms-act-three",
+   "request": "Marble Machine: second marble, seesaw, belt, cup, wheel, flap and dominoes",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1MM04_marble-act-two-look-and-lessons"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1792909763,
+   "created": 1792909763
   },
   {
    "id": "P1ZM00_no-accidental-zoom-all-games",
