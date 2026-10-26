@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26T23:29:18+00:00",
+ "generated": "2026-10-26T23:31:43+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 77,
+    "queued": 78,
     "running": 1,
     "doneToday": 2,
-    "minutes": 3120,
-    "estimateMinutes": 3120
+    "minutes": 3160,
+    "estimateMinutes": 3160
    },
    "Claude": {
     "queued": 1,
@@ -30,7 +30,7 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 78,
+  "queued": 79,
   "running": 3,
   "doneToday": 2,
   "lanes": {
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3300,
-  "estimatedFinish": "2026-10-29T03:29:18+00:00",
-  "estimateMinutes": 3120
+  "minutesRemaining": 3340,
+  "estimatedFinish": "2026-10-29T04:11:43+00:00",
+  "estimateMinutes": 3160
  },
  "lanes": [
   {
@@ -68,16 +68,16 @@
    "game": "round-table",
    "task": "round table",
    "since": "2026-10-26T23:22:38+00:00",
-   "activity": "2026-10-26T23:28:55+00:00",
+   "activity": "2026-10-26T23:31:38+00:00",
    "commit": {
-    "at": "2026-10-26T23:28:10+00:00",
-    "subject": "wip: build table rules and level ladder"
+    "at": "2026-10-26T23:30:42+00:00",
+    "subject": "wip: P2n89_round-table (Codex lane autosave 19:30)"
    }
   }
  ],
  "codexLanes": 1,
  "claudeWorkers": 2,
- "apiSpentUsd": 320.27,
+ "apiSpentUsd": 320.37,
  "claudeInSession": {
   "runs": 291,
   "usdEst": 1047.6,
@@ -3051,7 +3051,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Coin Dumplings: make the marks, the board and...",
    "costTotalUsd": 14.96,
    "latestChange": {
     "text": "feat: let players mark coin dumplings as certain or cannot tell",
@@ -3059,23 +3059,23 @@
    },
    "promo": null,
    "why": "A remix of a local-count mine puzzle and a deduction game, set at New Year dumplings with a coin inside a few.",
-   "state": "playable",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
     "resting": false,
     "regressed": false,
-    "reviseRound": 0,
+    "reviseRound": 1,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "coin dumplings review fixes",
    "id": "coin-dumplings",
    "number": 156,
    "repo": "coin-dumplings",
    "title": "Coin Dumplings",
    "line": "",
    "url": "https://chenhsieh.github.io/coin-dumplings/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -3088,7 +3088,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:49:53+00:00",
-   "lastChange": "2026-10-26T05:38:19+00:00",
+   "lastChange": "2026-10-26T23:31:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -3102,6 +3102,20 @@
     "totalUsdEst": 14.96
    },
    "tasks": [
+    {
+     "title": "coin dumplings review fixes",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Coin Dumplings: make the marks, the board and the result readable to a stranger (review fixes)",
+     "since": "2026-10-26T23:31:17+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "coin dumplings",
      "state": "done",
@@ -3118,14 +3132,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-10-26",
+    "verdict": "revise",
+    "note": "Guessing coin or empty loses on every level from 3 on, so the third mark is a real skill; but the board shows C and E where the goal says 錢 and 空, empty squares look like dumplings, and the result hides which marks were wrong"
+   },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-26T05:38:19+00:00",
@@ -22056,7 +22074,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:54:48+00:00",
-   "lastChange": "2026-10-26T23:28:55+00:00",
+   "lastChange": "2026-10-26T23:31:38+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -22082,8 +22100,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-26T23:28:10+00:00",
-      "subject": "wip: build table rules and level ladder"
+      "at": "2026-10-26T23:30:42+00:00",
+      "subject": "wip: P2n89_round-table (Codex lane autosave 19:30)"
      },
      "result": ""
     }
