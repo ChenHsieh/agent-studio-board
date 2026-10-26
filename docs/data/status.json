@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26T04:26:47+00:00",
+ "generated": "2026-10-26T04:29:45+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 78,
+    "queued": 77,
     "running": 1,
-    "doneToday": 0,
-    "minutes": 3160,
-    "estimateMinutes": 3160
+    "doneToday": 1,
+    "minutes": 3120,
+    "estimateMinutes": 3120
    },
    "Claude": {
     "queued": 1,
@@ -30,9 +30,9 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 79,
+  "queued": 78,
   "running": 3,
-  "doneToday": 0,
+  "doneToday": 1,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3340,
-  "estimatedFinish": "2026-10-28T09:06:47+00:00",
-  "estimateMinutes": 3160
+  "minutesRemaining": 3300,
+  "estimatedFinish": "2026-10-28T08:29:45+00:00",
+  "estimateMinutes": 3120
  },
  "lanes": [
   {
@@ -65,11 +65,14 @@
   },
   {
    "worker": "Codex",
-   "game": "restored",
-   "task": "P2RS00_restored blurry neighbours count",
-   "since": "2026-10-26T04:23:13+00:00",
-   "activity": "2026-10-26T04:23:06+00:00",
-   "commit": null
+   "game": "coin-dumplings",
+   "task": "coin dumplings",
+   "since": "2026-10-26T04:28:36+00:00",
+   "activity": "2026-10-26T04:29:45+00:00",
+   "commit": {
+    "at": "2026-10-26T04:28:37+00:00",
+    "subject": "start: P2n87_coin-dumplings"
+   }
   }
  ],
  "codexLanes": 1,
@@ -135,7 +138,7 @@
   },
   {
    "day": "2026-10-26",
-   "changes": 1
+   "changes": 2
   }
  ],
  "houseRules": 25,
@@ -3048,7 +3051,7 @@
    ]
   },
   {
-   "nextTask": "Mark every New Year dumpling as coin, no...",
+   "nextTask": null,
    "costTotalUsd": 10.8,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -3071,7 +3074,7 @@
    "title": "Coin Dumplings",
    "line": "",
    "url": "https://chenhsieh.github.io/coin-dumplings/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
@@ -3085,7 +3088,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:49:53+00:00",
-   "lastChange": "2026-10-25T05:59:25+00:00",
+   "lastChange": "2026-10-26T04:29:45+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -3101,22 +3104,25 @@
    "tasks": [
     {
      "title": "coin dumplings",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Mark every New Year dumpling as coin, no coin or cannot tell from the numbers on the bitten ones: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-10-25T05:59:25+00:00",
+     "since": "2026-10-26T04:28:36+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-26T04:28:37+00:00",
+      "subject": "start: P2n87_coin-dumplings"
+     },
      "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
@@ -21079,11 +21085,11 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 36.1,
+   "nextTask": "Review of the first build (queued)",
+   "costTotalUsd": 39.85,
    "latestChange": {
-    "text": "One screen on phones: port_onescreen (kit 4) (P2FS04)",
-    "at": "2026-10-25T09:21:58+00:00"
+    "text": "feat: make blurry neighbours shape each restore",
+    "at": "2026-10-26T04:28:35+00:00"
    },
    "promo": {
     "files": {
@@ -21101,7 +21107,7 @@
     "reviseRound": 1,
     "daysInState": 4
    },
-   "waitingOn": "restored blurry neighbours count",
+   "waitingOn": "none",
    "id": "restored",
    "number": 134,
    "repo": "restored",
@@ -21109,7 +21115,7 @@
    "line": "Blurry photo: tap smudges to sharpen them, each copies its sharp neighbours; make the headline on the card.",
    "url": "https://chenhsieh.github.io/restored/",
    "stage": "building",
-   "who": "Codex",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Blurry photo: tap smudges to sharpen them, each copies its sharp neighbours;",
    "shelfNote": "",
@@ -21123,33 +21129,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:49:51+00:00",
-   "lastChange": "2026-10-26T04:23:06+00:00",
+   "lastChange": "2026-10-26T04:28:35+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 1,
+    "codexRuns": 2,
     "claudeRuns": 4,
     "apiRuns": 0,
-    "codexTokens": 86565,
-    "codexUsdEst": 0.1,
+    "codexTokens": 209143,
+    "codexUsdEst": 0.25,
     "claudeUsdEst": 14.4,
-    "earlierRounds": 6,
-    "earlierUsdEst": 21.6,
-    "totalUsdEst": 36.1
+    "earlierRounds": 7,
+    "earlierUsdEst": 25.2,
+    "totalUsdEst": 39.85
    },
    "tasks": [
     {
      "title": "P2RS00_restored blurry neighbours count",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Restored: blurry neighbours count by their shape, so the obvious order stops always winning",
-     "since": "2026-10-26T04:23:13+00:00",
-     "done": null,
+     "since": "2026-10-26T04:10:06+00:00",
+     "done": "2026-10-26T04:10:06+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 13,
+     "tokens": 122578,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: make blurry neighbours shape each restore"
     },
     {
      "title": "P3RL31_credits licences restored",
@@ -21224,9 +21230,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": {
     "date": "2026-10-22",
@@ -21236,6 +21242,18 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-26T04:28:35+00:00",
+     "ok": true,
+     "note": "feat: make blurry neighbours shape each restore",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-26T04:28:33+00:00",
+     "ok": true,
+     "note": "feat: make blurry neighbours shape each restore",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T09:21:58+00:00",
      "ok": true,
@@ -21294,12 +21312,6 @@
      "at": "2026-10-22T18:51:14+00:00",
      "ok": true,
      "note": "feat: Restored starts from the game template",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T18:49:51+00:00",
-     "ok": true,
-     "note": "Initial commit",
      "source": "main commit"
     }
    ]
