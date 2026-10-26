@@ -1,5 +1,5 @@
 {
- "generated": 1792988997,
+ "generated": 1793057077,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -7,81 +7,20 @@
   "waiting": 0,
   "queued": 0,
   "running": 0,
-  "done24h": 10,
+  "done24h": 0,
   "modelsQueued": {},
   "spendTodayUsd": 0.0,
   "runsToday": 0,
   "runsTodayUnpriced": 0,
   "spendTotalUsd": 15.71,
-  "recent": [
-   {
-    "id": "P3OR91_lot-waits-tap-roundtrip-test",
-    "request": "P3OR91_lot waits tap roundtrip test",
-    "model": "deepseek-v4-flash",
-    "at": 1792915316
-   },
-   {
-    "id": "P3OR90_marble-daily-pins-test",
-    "request": "P3OR90_marble daily pins test",
-    "model": "deepseek-v4-flash",
-    "at": 1792913779
-   },
-   {
-    "id": "P3OR89_marble-act-three-lessons",
-    "request": "P3OR89_marble act three lessons",
-    "model": "openai/gpt-4.1",
-    "at": 1792912996
-   },
-   {
-    "id": "P3OR88_marble-share-text",
-    "request": "P3OR88_marble share text",
-    "model": "openai/gpt-4.1",
-    "at": 1792911890
-   },
-   {
-    "id": "P3OR83_glasshouse-save-settings-test",
-    "request": "P3OR83_glasshouse save settings test",
-    "model": "openai/gpt-4.1",
-    "at": 1792909447
-   },
-   {
-    "id": "P3OR87_grad-survivor-save-test",
-    "request": "P3OR87_grad survivor save test",
-    "model": "deepseek-v4-flash",
-    "at": 1792908650
-   },
-   {
-    "id": "P3OR86_redacxiv-tile-save-test",
-    "request": "P3OR86_redacxiv tile save test",
-    "model": "deepseek-v4-flash",
-    "at": 1792908641
-   },
-   {
-    "id": "P3OR85_redacxiv-save-migration-test",
-    "request": "P3OR85_redacxiv save migration test",
-    "model": "deepseek-v4-flash",
-    "at": 1792908637
-   },
-   {
-    "id": "P3OR84_glasshouse-crew-save-test",
-    "request": "P3OR84_glasshouse crew save test",
-    "model": "deepseek-v4-flash",
-    "at": 1792908628
-   },
-   {
-    "id": "P3OR82_glasshouse-save-migration-test",
-    "request": "P3OR82_glasshouse save migration test",
-    "model": "deepseek-v4-flash",
-    "at": 1792908619
-   }
-  ],
+  "recent": [],
   "label": "estimate"
  },
  "overflow": {
   "codexOut": false,
   "converted": 0,
   "convertedRunning": 0,
-  "claudeWorkers": 0,
+  "claudeWorkers": 1,
   "claudeWorkerCap": 3,
   "handedBack": 13,
   "lastHandBack": 1792919797,
@@ -106,26 +45,28 @@
    "created": 1792919801
   },
   {
-   "id": "P1FS34_honest-sign-one-screen",
-   "request": "honest-sign: the whole game fits one phone screen and Next shows after a win",
-   "game": "Honest Sign",
+   "id": "P2n114_review-coin-dumplings",
+   "request": "Stranger review of Coin Dumplings (finished build, waited 12 h for its pair)",
+   "game": "Studio",
    "route": "Claude",
-   "model": "sonnet",
+   "model": "opus",
    "effort": "high",
-   "kind": "build",
-   "size": "several repos",
+   "kind": "review",
+   "size": "studio",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P2n87_coin-dumplings"
+   ],
    "priority": null,
-   "why": "A seven-segment sign must state how many bars it lights, so every correction changes what it corrects; copying the meter loops on about half the signs.",
+   "why": "",
    "state": "running",
-   "at": 1792922092,
-   "created": 1792922092
+   "at": 1793057043,
+   "created": 1793057043
   },
   {
-   "id": "P2n87_coin-dumplings",
-   "request": "Mark every New Year dumpling as coin, no coin or cannot tell from the numbers on the bitten ones: build the core with placeholder shapes, then its first-minute round",
-   "game": "Coin Dumplings",
+   "id": "P2n89_round-table",
+   "request": "Turn a banquet table's centre so every guest gets every dish before one runs out: build the core with placeholder shapes, then its first-minute round",
+   "game": "Round Table",
    "route": "Codex",
    "model": "gpt-6-sol",
    "effort": "xhigh",
@@ -136,10 +77,10 @@
     "P2n86_round4-template-repos"
    ],
    "priority": null,
-   "why": "A remix of a local-count mine puzzle and a deduction game, set at New Year dumplings with a coin inside a few.",
+   "why": "A remix of equal-shares and gift-route ideas with the shared-table ledger, scaled to a banquet lazy Susan.",
    "state": "running",
-   "at": 1792988916,
-   "created": 1792988916,
+   "at": 1793056958,
+   "created": 1793056958,
    "estPercentOfWeek": 0.25
   },
   {
@@ -934,6 +875,23 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P1FS34_honest-sign-one-screen",
+   "request": "honest-sign: the whole game fits one phone screen and Next shows after a win",
+   "game": "Honest Sign",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "A seven-segment sign must state how many bars it lights, so every correction changes what it corrects; copying the meter loops on about half the signs.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1792922092
+  },
+  {
    "id": "P1FS35_mint-one-screen",
    "request": "mint: the whole game fits one phone screen and Next shows after a win",
    "game": "Mint",
@@ -1009,7 +967,7 @@
    "id": "P2n88_watched-pot",
    "request": "look in the right places to grow the shape: build the core with placeholder shapes, then its first-minute round",
    "game": "Watched Pot",
-   "route": "Codex",
+   "route": "Claude",
    "model": "gpt-6-sol",
    "effort": "xhigh",
    "kind": "build",
@@ -1022,28 +980,7 @@
    "why": "A remix of earlier ideas",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792907965,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2n89_round-table",
-   "request": "Turn a banquet table's centre so every guest gets every dish before one runs out: build the core with placeholder shapes, then its first-minute round",
-   "game": "Round Table",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2n86_round4-template-repos"
-   ],
-   "priority": null,
-   "why": "A remix of equal-shares and gift-route ideas with the shared-table ledger, scaled to a banquet lazy Susan.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792907965,
-   "estPercentOfWeek": 0.25
+   "created": 1792993143
   },
   {
    "id": "P2n90_iron-window-garden",
@@ -1533,17 +1470,15 @@
    "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2n87_coin-dumplings",
     "P2n88_watched-pot"
    ],
    "priority": null,
    "why": "",
    "state": "waiting",
    "waitingOn": [
-    "P2n87_coin-dumplings",
     "P2n88_watched-pot"
    ],
-   "created": 1792700691
+   "created": 1793057048
   },
   {
    "id": "P2n98_review-round-table-and-iron-window-garden",
