@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-27T01:16:38+00:00",
+ "generated": "2026-10-27T01:18:58+00:00",
  "ops": {
-  "count": 3,
+  "count": 4,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 73,
+    "queued": 72,
     "running": 0,
     "doneToday": 2,
-    "minutes": 2920,
-    "estimateMinutes": 2920
+    "minutes": 2880,
+    "estimateMinutes": 2880
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 74,
+  "queued": 73,
   "running": 1,
   "doneToday": 3,
   "lanes": {
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3040,
-  "estimatedFinish": "2026-10-29T01:56:38+00:00",
-  "estimateMinutes": 2920
+  "minutesRemaining": 3000,
+  "estimatedFinish": "2026-10-29T01:18:58+00:00",
+  "estimateMinutes": 2880
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "tractatus-tree",
-   "task": "P2FS39_tractatus tree one screen",
-   "since": "2026-10-27T01:09:45+00:00",
-   "activity": "2026-10-27T01:16:18+00:00",
+   "game": "anechoic-fugue",
+   "task": "P2FS40_anechoic fugue one screen",
+   "since": "2026-10-27T01:18:23+00:00",
+   "activity": "2026-10-27T01:18:25+00:00",
    "commit": null
   }
  ],
@@ -26361,7 +26361,7 @@
    ]
   },
   {
-   "nextTask": "anechoic-fugue: the whole game fits one phone screen...",
+   "nextTask": null,
    "costTotalUsd": 112.27,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -26375,7 +26375,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 1
+    "daysInState": 0
    },
    "waitingOn": "anechoic fugue one screen",
    "id": "anechoic-fugue",
@@ -26384,8 +26384,8 @@
    "title": "Still Water",
    "line": "A slow koi pond: ripples to follow, ducklings that fall asleep, lily rings that make every pond a choice.",
    "url": "https://chenhsieh.github.io/anechoic-fugue/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Decide the physical model and its on-screen readout, choose",
    "shelfNote": "",
@@ -26399,7 +26399,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T19:39:22+00:00",
-   "lastChange": "2026-10-25T09:55:19+00:00",
+   "lastChange": "2026-10-27T01:18:25+00:00",
    "cost": {
     "apiUsd": 17.97,
     "codexRuns": 3,
@@ -26415,10 +26415,10 @@
    "tasks": [
     {
      "title": "P2FS40_anechoic fugue one screen",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "anechoic-fugue: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-25T09:55:19+00:00",
+     "since": "2026-10-27T01:18:23+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -26527,8 +26527,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 13
    },
@@ -29511,23 +29511,23 @@
    },
    "promo": null,
    "why": "A social post on Wittgenstein's numbered propositions (1, 1.1, 4.001 and so on).",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 5
+    "daysInState": 0
    },
-   "waitingOn": "tractatus tree one screen",
+   "waitingOn": "none",
    "id": "tractatus-tree",
    "number": 91,
    "repo": "tractatus-tree",
    "title": "Tractatus Tree",
    "line": "The numbered pages of a 1921 book are shuffled into a few.",
    "url": "https://chenhsieh.github.io/tractatus-tree/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Teach the philosophy gradually through play, not as homework",
    "shelfNote": "",
@@ -29549,29 +29549,29 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 7,
+    "claudeRuns": 8,
     "apiRuns": 2,
     "codexTokens": 461261,
     "codexUsdEst": 0.55,
-    "claudeUsdEst": 25.2,
-    "earlierRounds": 17,
-    "earlierUsdEst": 61.2,
+    "claudeUsdEst": 28.8,
+    "earlierRounds": 16,
+    "earlierUsdEst": 57.6,
     "totalUsdEst": 86.95
    },
    "tasks": [
     {
      "title": "P2FS39_tractatus tree one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "tractatus-tree: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-27T01:09:45+00:00",
-     "done": null,
+     "since": "2026-10-25T09:55:15+00:00",
+     "done": "2026-10-25T09:55:15+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "NOT YET: check C at 360x640 (page 1.05x, 672/640 on the first-minute card that new players meet first) is not fixed, because the real play page is much taller and a margin trim would only hide that from the gate. Live..."
     },
     {
      "title": "P2FS38_tractatus tree win sheet tests",
@@ -29674,9 +29674,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 11
+    "done": 12
    },
    "verdict": {
     "date": "2026-10-21",
@@ -29684,7 +29684,7 @@
     "note": "Reveal text; humour or dark spin; growth"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-27T01:16:18+00:00",
