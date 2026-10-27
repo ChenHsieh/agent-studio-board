@@ -1,5 +1,5 @@
 {
- "generated": 1793061126,
+ "generated": 1793062120,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -28,8 +28,8 @@
  },
  "tasks": [
   {
-   "id": "P2FS36_copy-paste-win-sheet-tests",
-   "request": "copy-paste: put the pinned win sheet in without breaking the game's own tests",
+   "id": "P2FS37_copy-paste-one-screen",
+   "request": "copy-paste: the whole game fits one phone screen and Next shows after a win",
    "game": "Hello Princess",
    "route": "Claude",
    "model": "sonnet",
@@ -37,12 +37,14 @@
    "kind": "build",
    "size": "several repos",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P2FS36_copy-paste-win-sheet-tests"
+   ],
    "priority": "P2",
    "why": "Copy-paste greeting replies with place, name and age swapped each time, plus a stack of identical installer dialogs.",
    "state": "running",
-   "at": 1792922101,
-   "created": 1792922101
+   "at": 1792922106,
+   "created": 1792922106
   },
   {
    "id": "P3CF07_flaky-320-today-drag",
@@ -1171,27 +1173,6 @@
    ],
    "created": 1792908813,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2FS37_copy-paste-one-screen",
-   "request": "copy-paste: the whole game fits one phone screen and Next shows after a win",
-   "game": "Hello Princess",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P2FS36_copy-paste-win-sheet-tests"
-   ],
-   "priority": "P2",
-   "why": "Copy-paste greeting replies with place, name and age swapped each time, plus a stack of identical installer dialogs.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2FS36_copy-paste-win-sheet-tests"
-   ],
-   "created": 1792922106
   },
   {
    "id": "P2FS39_tractatus-tree-one-screen",

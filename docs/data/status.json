@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-27T00:46:05+00:00",
+ "generated": "2026-10-27T00:48:25+00:00",
  "ops": {
-  "count": 2,
+  "count": 3,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 76,
+    "queued": 75,
     "running": 0,
     "doneToday": 2,
-    "minutes": 3040,
-    "estimateMinutes": 3040
+    "minutes": 3000,
+    "estimateMinutes": 3000
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 77,
+  "queued": 76,
   "running": 1,
   "doneToday": 3,
   "lanes": {
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3160,
-  "estimatedFinish": "2026-10-29T03:26:05+00:00",
-  "estimateMinutes": 3040
+  "minutesRemaining": 3120,
+  "estimatedFinish": "2026-10-29T02:48:25+00:00",
+  "estimateMinutes": 3000
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "copy-paste",
-   "task": "P2FS36_copy paste win sheet tests",
-   "since": "2026-10-27T00:31:56+00:00",
-   "activity": "2026-10-27T00:45:31+00:00",
+   "task": "P2FS37_copy paste one screen",
+   "since": "2026-10-27T00:47:14+00:00",
+   "activity": "2026-10-27T00:47:32+00:00",
    "commit": null
   }
  ],
@@ -10447,7 +10447,7 @@
    ]
   },
   {
-   "nextTask": "copy-paste: the whole game fits one phone screen...",
+   "nextTask": null,
    "costTotalUsd": 111.54,
    "latestChange": {
     "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
@@ -10470,7 +10470,7 @@
     "reviseRound": 2,
     "daysInState": 6
    },
-   "waitingOn": "copy paste win sheet tests",
+   "waitingOn": "copy paste one screen",
    "id": "copy-paste",
    "number": 53,
    "repo": "copy-paste",
@@ -10492,26 +10492,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T18:59:22+00:00",
-   "lastChange": "2026-10-27T00:45:31+00:00",
+   "lastChange": "2026-10-27T00:47:32+00:00",
    "cost": {
     "apiUsd": 16.91,
     "codexRuns": 4,
-    "claudeRuns": 6,
+    "claudeRuns": 7,
     "apiRuns": 3,
     "codexTokens": 861849,
     "codexUsdEst": 1.03,
-    "claudeUsdEst": 21.6,
-    "earlierRounds": 20,
-    "earlierUsdEst": 72.0,
+    "claudeUsdEst": 25.2,
+    "earlierRounds": 19,
+    "earlierUsdEst": 68.4,
     "totalUsdEst": 111.54
    },
    "tasks": [
     {
-     "title": "P2FS36_copy paste win sheet tests",
+     "title": "P2FS37_copy paste one screen",
      "state": "running",
      "worker": "Claude",
-     "plan": "copy-paste: put the pinned win sheet in without breaking the game's own tests",
-     "since": "2026-10-27T00:31:56+00:00",
+     "plan": "copy-paste: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-27T00:47:14+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -10521,18 +10521,18 @@
      "result": ""
     },
     {
-     "title": "P2FS37_copy paste one screen",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "copy-paste: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-25T09:55:06+00:00",
-     "done": null,
+     "title": "P2FS36_copy paste win sheet tests",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "copy-paste: put the pinned win sheet in without breaking the game's own tests",
+     "since": "2026-10-25T09:55:01+00:00",
+     "done": "2026-10-25T09:55:01+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE (main ; live bytes match for onescreen-shell.css/js, style.css, index.html). Check A re-applied (pinned result sheet from the rollout's uncommitted worktree: 2 index.html lines + docs/onescreen-shell.css/js)...."
     },
     {
      "title": "P3OR60_name hello princess readme",
@@ -10620,10 +10620,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 13
+    "done": 14
    },
    "verdict": {
     "date": "2026-10-20",
