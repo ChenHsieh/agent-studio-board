@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-27T01:23:44+00:00",
+ "generated": "2026-10-27T01:26:17+00:00",
  "ops": {
-  "count": 3,
+  "count": 4,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -28,40 +28,31 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "doneToday": 1,
-    "minutes": 120,
+    "minutes": 60,
     "estimateMinutes": 60
    }
   },
   "queued": 73,
-  "running": 1,
+  "running": 0,
   "doneToday": 3,
   "lanes": {
    "Codex": 1,
-   "Claude": 2
+   "Claude": 1
   },
   "laneCap": {
    "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3000,
-  "estimatedFinish": "2026-10-29T01:23:44+00:00",
+  "minutesRemaining": 2940,
+  "estimatedFinish": "2026-10-29T01:26:17+00:00",
   "estimateMinutes": 2880
  },
- "lanes": [
-  {
-   "worker": "Claude",
-   "game": "anechoic-fugue",
-   "task": "P2FS40_anechoic fugue one screen",
-   "since": "2026-10-27T01:18:23+00:00",
-   "activity": "2026-10-27T01:23:27+00:00",
-   "commit": null
-  }
- ],
+ "lanes": [],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 0,
  "apiSpentUsd": 320.37,
  "claudeInSession": {
   "runs": 292,
@@ -26369,23 +26360,23 @@
    },
    "promo": null,
    "why": "A photo of an anechoic chamber and a Fourier-epicycle drawing, later joined by a picture of quasicrystal surface waves.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 0
+    "daysInState": 1
    },
-   "waitingOn": "anechoic fugue one screen",
+   "waitingOn": "none",
    "id": "anechoic-fugue",
    "number": 56,
    "repo": "anechoic-fugue",
    "title": "Still Water",
    "line": "A slow koi pond: ripples to follow, ducklings that fall asleep, lily rings that make every pond a choice.",
    "url": "https://chenhsieh.github.io/anechoic-fugue/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Decide the physical model and its on-screen readout, choose",
    "shelfNote": "",
@@ -26399,33 +26390,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T19:39:22+00:00",
-   "lastChange": "2026-10-27T01:23:27+00:00",
+   "lastChange": "2026-10-25T09:55:19+00:00",
    "cost": {
     "apiUsd": 17.97,
     "codexRuns": 3,
-    "claudeRuns": 7,
+    "claudeRuns": 8,
     "apiRuns": 3,
     "codexTokens": 585052,
     "codexUsdEst": 0.7,
-    "claudeUsdEst": 25.2,
-    "earlierRounds": 19,
-    "earlierUsdEst": 68.4,
+    "claudeUsdEst": 28.8,
+    "earlierRounds": 18,
+    "earlierUsdEst": 64.8,
     "totalUsdEst": 112.27
    },
    "tasks": [
     {
      "title": "P2FS40_anechoic fugue one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "anechoic-fugue: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-27T01:18:23+00:00",
-     "done": null,
+     "since": "2026-10-25T09:55:19+00:00",
+     "done": "2026-10-25T09:55:19+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "NOT YET: check C (page fits) is not fixed; B is. A PASS and B PASS at 390x844 and 360x640; C FAIL 1.21x (1024/844) and 1.49x (955/640), unchanged."
     },
     {
      "title": "P1SW02_level7 coin and pet outside canvas",
@@ -26528,13 +26519,13 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 13
+    "done": 14
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T02:13:29+00:00",
