@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T01:09:38+00:00",
+ "generated": "2026-10-27T01:11:57+00:00",
  "ops": {
   "count": 4,
   "notes": [
@@ -20,43 +20,43 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 74,
+    "queued": 73,
     "running": 0,
     "doneToday": 2,
-    "minutes": 2960,
-    "estimateMinutes": 2960
+    "minutes": 2920,
+    "estimateMinutes": 2920
    },
    "Claude": {
     "queued": 1,
-    "running": 0,
+    "running": 1,
     "doneToday": 1,
-    "minutes": 60,
+    "minutes": 120,
     "estimateMinutes": 60
    }
   },
-  "queued": 75,
-  "running": 0,
+  "queued": 74,
+  "running": 1,
   "doneToday": 3,
   "lanes": {
    "Codex": 1,
-   "Claude": 1
+   "Claude": 2
   },
   "laneCap": {
    "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3020,
-  "estimatedFinish": "2026-10-29T02:29:38+00:00",
-  "estimateMinutes": 2960
+  "minutesRemaining": 3040,
+  "estimatedFinish": "2026-10-29T01:51:57+00:00",
+  "estimateMinutes": 2920
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "tractatus-tree",
-   "task": "P2FS38_tractatus tree win sheet tests",
-   "since": "2026-10-27T00:56:40+00:00",
-   "activity": "2026-10-27T01:07:59+00:00",
+   "task": "P2FS39_tractatus tree one screen",
+   "since": "2026-10-27T01:09:45+00:00",
+   "activity": "2026-10-27T01:10:47+00:00",
    "commit": null
   }
  ],
@@ -29503,7 +29503,7 @@
    ]
   },
   {
-   "nextTask": "tractatus-tree: the whole game fits one phone screen...",
+   "nextTask": null,
    "costTotalUsd": 86.95,
    "latestChange": {
     "text": "One screen, check A: pinned result sheet (Next first); 450 ms touch guard so the winning...",
@@ -29519,7 +29519,7 @@
     "reviseRound": 2,
     "daysInState": 5
    },
-   "waitingOn": "tractatus tree win sheet tests",
+   "waitingOn": "tractatus tree one screen",
    "id": "tractatus-tree",
    "number": 91,
    "repo": "tractatus-tree",
@@ -29545,26 +29545,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:14:42+00:00",
-   "lastChange": "2026-10-27T01:07:59+00:00",
+   "lastChange": "2026-10-27T01:10:47+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 6,
+    "claudeRuns": 7,
     "apiRuns": 2,
     "codexTokens": 461261,
     "codexUsdEst": 0.55,
-    "claudeUsdEst": 21.6,
-    "earlierRounds": 18,
-    "earlierUsdEst": 64.8,
+    "claudeUsdEst": 25.2,
+    "earlierRounds": 17,
+    "earlierUsdEst": 61.2,
     "totalUsdEst": 86.95
    },
    "tasks": [
     {
-     "title": "P2FS38_tractatus tree win sheet tests",
+     "title": "P2FS39_tractatus tree one screen",
      "state": "running",
      "worker": "Claude",
-     "plan": "tractatus-tree: put the pinned win sheet in without breaking the game's own tests",
-     "since": "2026-10-27T00:56:40+00:00",
+     "plan": "tractatus-tree: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-27T01:09:45+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -29574,18 +29574,18 @@
      "result": ""
     },
     {
-     "title": "P2FS39_tractatus tree one screen",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "tractatus-tree: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-25T09:55:15+00:00",
-     "done": null,
+     "title": "P2FS38_tractatus tree win sheet tests",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "tractatus-tree: put the pinned win sheet in without breaking the game's own tests",
+     "since": "2026-10-25T09:55:10+00:00",
+     "done": "2026-10-25T09:55:10+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE (main ; live bytes match for onescreen-shell.css/js and index.html; onescreen_gate on the live URL: A PASS at 390x844 and 360x640; B and C are P2FS39). test/run_all.sh and test/run_browser.sh (browser,..."
     },
     {
      "title": "P2FM58_tractatus tree first minute fix",
@@ -29673,10 +29673,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 10
+    "done": 11
    },
    "verdict": {
     "date": "2026-10-21",
