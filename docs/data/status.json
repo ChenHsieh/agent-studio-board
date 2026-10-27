@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T07:06:09+00:00",
+ "generated": "2026-10-27T07:08:29+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 70,
+    "queued": 69,
     "running": 1,
-    "doneToday": 0,
-    "minutes": 2840,
-    "estimateMinutes": 2840
+    "doneToday": 1,
+    "minutes": 2800,
+    "estimateMinutes": 2800
    },
    "Claude": {
     "queued": 1,
@@ -34,9 +34,9 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 71,
+  "queued": 70,
   "running": 1,
-  "doneToday": 0,
+  "doneToday": 1,
   "lanes": {
    "Codex": 1,
    "Claude": 1
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2900,
-  "estimatedFinish": "2026-10-29T06:26:09+00:00",
-  "estimateMinutes": 2840
+  "minutesRemaining": 2860,
+  "estimatedFinish": "2026-10-29T05:48:29+00:00",
+  "estimateMinutes": 2800
  },
  "lanes": [
   {
    "worker": "Codex",
-   "game": "coin-dumplings",
-   "task": "coin dumplings review fixes",
-   "since": "2026-10-27T07:02:03+00:00",
-   "activity": "2026-10-27T07:01:55+00:00",
+   "game": "watched-pot",
+   "task": "watched pot",
+   "since": "2026-10-27T07:07:49+00:00",
+   "activity": "2026-10-27T07:08:28+00:00",
    "commit": null
   }
  ],
@@ -127,7 +127,7 @@
   },
   {
    "day": "2026-10-27",
-   "changes": 3
+   "changes": 4
   }
  ],
  "houseRules": 25,
@@ -3041,30 +3041,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 14.96,
+   "costTotalUsd": 15.38,
    "latestChange": {
-    "text": "feat: let players mark coin dumplings as certain or cannot tell",
-    "at": "2026-10-26T05:38:19+00:00"
+    "text": "fix: make dumpling marks and wrong answers readable",
+    "at": "2026-10-27T07:07:48+00:00"
    },
    "promo": null,
    "why": "A remix of a local-count mine puzzle and a deduction game, set at New Year dumplings with a coin inside a few.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 1
+    "daysInState": 0
    },
-   "waitingOn": "coin dumplings review fixes",
+   "waitingOn": "none",
    "id": "coin-dumplings",
    "number": 156,
    "repo": "coin-dumplings",
    "title": "Coin Dumplings",
    "line": "",
    "url": "https://chenhsieh.github.io/coin-dumplings/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -3078,33 +3078,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:49:53+00:00",
-   "lastChange": "2026-10-27T07:01:55+00:00",
+   "lastChange": "2026-10-27T07:07:48+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 1,
+    "codexRuns": 2,
     "claudeRuns": 0,
     "apiRuns": 0,
-    "codexTokens": 463742,
-    "codexUsdEst": 0.56,
+    "codexTokens": 814112,
+    "codexUsdEst": 0.98,
     "claudeUsdEst": 0.0,
     "earlierRounds": 4,
     "earlierUsdEst": 14.4,
-    "totalUsdEst": 14.96
+    "totalUsdEst": 15.38
    },
    "tasks": [
     {
      "title": "coin dumplings review fixes",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Coin Dumplings: make the marks, the board and the result readable to a stranger (review fixes)",
-     "since": "2026-10-27T07:02:03+00:00",
-     "done": null,
+     "since": "2026-10-27T06:12:31+00:00",
+     "done": "2026-10-27T06:12:31+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 49,
+     "tokens": 350370,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "fix: make dumpling marks and wrong answers readable"
     },
     {
      "title": "coin dumplings",
@@ -3123,9 +3123,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": {
     "date": "2026-10-26",
@@ -3133,8 +3133,14 @@
     "note": "Guessing coin or empty loses on every level from 3 on, so the third mark is a real skill; but the board shows C and E where the goal says 錢 and 空, empty squares look like dumplings, and the result hides which marks were wrong"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-27T07:07:48+00:00",
+     "ok": true,
+     "note": "fix: make dumpling marks and wrong answers readable",
+     "source": "board note"
+    },
     {
      "at": "2026-10-26T05:38:19+00:00",
      "ok": true,
@@ -31304,7 +31310,7 @@
    ]
   },
   {
-   "nextTask": "Moss that grows everywhere except where you look...",
+   "nextTask": null,
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "P2n88_watched-pot handed to Claude: Codex quota ran out;",
@@ -31327,7 +31333,7 @@
    "title": "Watched Pot",
    "line": "",
    "url": "https://chenhsieh.github.io/watched-pot/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
@@ -31341,7 +31347,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:52:16+00:00",
-   "lastChange": "2026-10-26T23:55:58+00:00",
+   "lastChange": "2026-10-27T07:08:28+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -31357,10 +31363,10 @@
    "tasks": [
     {
      "title": "watched pot",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Moss that grows everywhere except where you look; look in the right places to grow the shape: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-10-26T23:55:58+00:00",
+     "since": "2026-10-27T07:07:49+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -31371,8 +31377,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
