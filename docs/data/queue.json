@@ -1,5 +1,5 @@
 {
- "generated": 1793062686,
+ "generated": 1793063390,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -28,8 +28,8 @@
  },
  "tasks": [
   {
-   "id": "P2FS38_tractatus-tree-win-sheet-tests",
-   "request": "tractatus-tree: put the pinned win sheet in without breaking the game's own tests",
+   "id": "P2FS39_tractatus-tree-one-screen",
+   "request": "tractatus-tree: the whole game fits one phone screen and Next shows after a win",
    "game": "Tractatus Tree",
    "route": "Claude",
    "model": "sonnet",
@@ -37,12 +37,14 @@
    "kind": "build",
    "size": "several repos",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P2FS38_tractatus-tree-win-sheet-tests"
+   ],
    "priority": "P2",
    "why": "A social post on Wittgenstein's numbered propositions (1, 1.1, 4.001 and so on).",
    "state": "running",
-   "at": 1792922110,
-   "created": 1792922110
+   "at": 1792922115,
+   "created": 1792922115
   },
   {
    "id": "P3CF07_flaky-320-today-drag",
@@ -1154,27 +1156,6 @@
    ],
    "created": 1792908813,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2FS39_tractatus-tree-one-screen",
-   "request": "tractatus-tree: the whole game fits one phone screen and Next shows after a win",
-   "game": "Tractatus Tree",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P2FS38_tractatus-tree-win-sheet-tests"
-   ],
-   "priority": "P2",
-   "why": "A social post on Wittgenstein's numbered propositions (1, 1.1, 4.001 and so on).",
-   "state": "waiting",
-   "waitingOn": [
-    "P2FS38_tractatus-tree-win-sheet-tests"
-   ],
-   "created": 1792922115
   },
   {
    "id": "P2FS44_nobody-looking-one-screen",
