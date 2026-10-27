@@ -1,5 +1,5 @@
 {
- "generated": 1793060701,
+ "generated": 1793061126,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -17,7 +17,7 @@
   "label": "estimate"
  },
  "overflow": {
-  "codexOut": false,
+  "codexOut": true,
   "converted": 0,
   "convertedRunning": 0,
   "claudeWorkers": 0,
@@ -28,9 +28,9 @@
  },
  "tasks": [
   {
-   "id": "P1FS35_mint-one-screen",
-   "request": "mint: the whole game fits one phone screen and Next shows after a win",
-   "game": "Mint",
+   "id": "P2FS36_copy-paste-win-sheet-tests",
+   "request": "copy-paste: put the pinned win sheet in without breaking the game's own tests",
+   "game": "Hello Princess",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
@@ -38,31 +38,11 @@
    "size": "several repos",
    "estMinutes": null,
    "after": [],
-   "priority": null,
-   "why": "A citizen's toy-block map of unresolved incidents that spread each time officials pushed back, and a deleted statement that survived only as copies.",
+   "priority": "P2",
+   "why": "Copy-paste greeting replies with place, name and age swapped each time, plus a stack of identical installer dialogs.",
    "state": "running",
-   "at": 1792922096,
-   "created": 1792922096
-  },
-  {
-   "id": "P2AX16_kit-fit-rollout-rumour-on-the-jetty",
-   "request": "rumour-on-the-jetty: take the new play kit so the board and Undo fit a small phone",
-   "game": "Rumour On The Jetty",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P1AX12_kit-new-rule-and-short-screen-fit"
-   ],
-   "priority": null,
-   "why": "You are a rumour hopping house to house in a harbour town",
-   "state": "running",
-   "at": 1793058959,
-   "created": 1793058959,
-   "estPercentOfWeek": 0.25
+   "at": 1792922101,
+   "created": 1792922101
   },
   {
    "id": "P3CF07_flaky-320-today-drag",
@@ -161,23 +141,6 @@
    "waitingOn": [],
    "created": 1792908660,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2FS36_copy-paste-win-sheet-tests",
-   "request": "copy-paste: put the pinned win sheet in without breaking the game's own tests",
-   "game": "Hello Princess",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "Copy-paste greeting replies with place, name and age swapped each time, plus a stack of identical installer dialogs.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792922101
   },
   {
    "id": "P2FS38_tractatus-tree-win-sheet-tests",
@@ -1314,6 +1277,27 @@
    ],
    "created": 1792715918,
    "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2AX16_kit-fit-rollout-rumour-on-the-jetty",
+   "request": "rumour-on-the-jetty: take the new play kit so the board and Undo fit a small phone",
+   "game": "Rumour On The Jetty",
+   "route": "Claude",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P1AX12_kit-new-rule-and-short-screen-fit"
+   ],
+   "priority": null,
+   "why": "You are a rumour hopping house to house in a harbour town",
+   "state": "waiting",
+   "waitingOn": [
+    "P1AX12_kit-new-rule-and-short-screen-fit"
+   ],
+   "created": 1793061125
   },
   {
    "id": "P2AX17_kit-fit-rollout-scribes-blotter",
