@@ -183,12 +183,12 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 25,
+   "count": 26,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 25,
+   "guessed": 26,
    "topFailures": [],
    "flag": "give more"
   },
@@ -223,12 +223,12 @@
   {
    "executor": "claude-sonnet",
    "role": "fix",
-   "count": 11,
-   "firstTimePass": 60,
+   "count": 12,
+   "firstTimePass": 64,
    "retries": 4,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 6,
+   "guessed": 7,
    "topFailures": [
     "the lesson start depends on the kit keeping [data-pl=\"howto-start\"] an",
     "after any go() to another screen the lesson is dropped and remembered",
@@ -503,6 +503,24 @@
  ],
  "last": [
   {
+   "date": "2026-10-26",
+   "task": "review coin dumplings",
+   "number": "156",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "a stranger cannot tell what the marks mean. C/E glyphs look like a key and a keyhole, and after Serve the sheet hides which marks were wrong"
+  },
+  {
+   "date": "2026-10-26",
+   "task": "fix failing browser tests",
+   "number": "",
+   "executor": "claude-sonnet",
+   "role": "fix",
+   "passed": "yes",
+   "note": "DONE (main 62ccff5, live bytes match: app.js 1dfa8980, style.css 087b1168). Full suite now green: npm test, test:endless-ui, and all 21 brow"
+  },
+  {
    "date": "2026-10-25",
    "task": "kit best possible words",
    "number": "",
@@ -663,24 +681,6 @@
    "role": "build",
    "passed": "yes",
    "note": "P2PL06 result (Sonnet). NEEDS_JUDGMENT went from 30 to 22; 8 more games LIVE with their live bytes checked by rollout.py (bluebook-guess, ki"
-  },
-  {
-   "date": "2026-10-25",
-   "task": "board portfolio view",
-   "number": "",
-   "executor": "claude-opus",
-   "role": "build",
-   "passed": "yes",
-   "note": "the lane names on the board are plain words, so they differ from PORTFOLIO.md's lane codes (POOL, GATED...); the mapping is in board.js LANE"
-  },
-  {
-   "date": "2026-10-25",
-   "task": "visual round clay",
-   "number": "",
-   "executor": "claude-opus",
-   "role": "build",
-   "passed": "yes",
-   "note": "the live tray labels are 10-14 px today (fails ACCESSIBLE_PLAY), handed to the build; felt sheen frame cost on phones not measured; the clay"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."

@@ -1,5 +1,5 @@
 {
- "generated": 1793059691,
+ "generated": 1793060260,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -28,21 +28,21 @@
  },
  "tasks": [
   {
-   "id": "P1CC38_fix-failing-browser-tests",
-   "request": "P1CC38_fix failing browser tests",
-   "game": "Studio",
+   "id": "P1FS34_honest-sign-one-screen",
+   "request": "honest-sign: the whole game fits one phone screen and Next shows after a win",
+   "game": "Honest Sign",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
-   "kind": "fix",
-   "size": "studio",
+   "kind": "build",
+   "size": "several repos",
    "estMinutes": null,
    "after": [],
    "priority": null,
-   "why": "",
+   "why": "A seven-segment sign must state how many bars it lights, so every correction changes what it corrects; copying the meter loops on about half the signs.",
    "state": "running",
-   "at": 1792919801,
-   "created": 1792919801
+   "at": 1792922092,
+   "created": 1792922092
   },
   {
    "id": "P2AX16_kit-fit-rollout-rumour-on-the-jetty",
@@ -63,25 +63,6 @@
    "at": 1793058959,
    "created": 1793058959,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2n114_review-coin-dumplings",
-   "request": "Stranger review of Coin Dumplings (finished build, waited 12 h for its pair)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2n87_coin-dumplings"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1793057043,
-   "created": 1793057043
   },
   {
    "id": "P3CF07_flaky-320-today-drag",
@@ -875,23 +856,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P1FS34_honest-sign-one-screen",
-   "request": "honest-sign: the whole game fits one phone screen and Next shows after a win",
-   "game": "Honest Sign",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "A seven-segment sign must state how many bars it lights, so every correction changes what it corrects; copying the meter loops on about half the signs.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792922092
-  },
-  {
    "id": "P1FS35_mint-one-screen",
    "request": "mint: the whole game fits one phone screen and Next shows after a win",
    "game": "Mint",
@@ -962,6 +926,26 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792807366
+  },
+  {
+   "id": "P2n115_coin-dumplings-review-fixes",
+   "request": "Coin Dumplings: make the marks, the board and the result readable to a stranger (review fixes)",
+   "game": "Coin Dumplings",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2n114_review-coin-dumplings"
+   ],
+   "priority": null,
+   "why": "A remix of a local-count mine puzzle and a deduction game, set at New Year dumplings with a coin inside a few.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1793059010,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2n88_watched-pot",
@@ -1461,28 +1445,6 @@
    "created": 1792700701
   },
   {
-   "id": "P2n115_coin-dumplings-review-fixes",
-   "request": "Coin Dumplings: make the marks, the board and the result readable to a stranger (review fixes)",
-   "game": "Coin Dumplings",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2n114_review-coin-dumplings"
-   ],
-   "priority": null,
-   "why": "A remix of a local-count mine puzzle and a deduction game, set at New Year dumplings with a coin inside a few.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2n114_review-coin-dumplings"
-   ],
-   "created": 1793059010,
-   "estPercentOfWeek": 0.25
-  },
-  {
    "id": "P2n97_review-coin-dumplings-and-watched-pot",
    "request": "Play Coin Dumplings and Watched Pot cold as a stranger and decide ship, revise or shelf for each",
    "game": "Studio",
@@ -1548,6 +1510,25 @@
     "P2n92_out-of-the-corner"
    ],
    "created": 1792700696
+  },
+  {
+   "id": "P2n114_review-coin-dumplings",
+   "request": "Stranger review of Coin Dumplings (finished build, waited 12 h for its pair)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2n87_coin-dumplings"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1793057043,
+   "created": 1793057043
   }
  ]
 }

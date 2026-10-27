@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T00:15:06+00:00",
+ "generated": "2026-10-27T00:17:27+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 78,
+    "queued": 77,
     "running": 1,
     "doneToday": 2,
-    "minutes": 3160,
-    "estimateMinutes": 3160
+    "minutes": 3120,
+    "estimateMinutes": 3120
    },
    "Claude": {
     "queued": 1,
@@ -30,7 +30,7 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 79,
+  "queued": 78,
   "running": 3,
   "doneToday": 2,
   "lanes": {
@@ -42,17 +42,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3340,
-  "estimatedFinish": "2026-10-29T04:55:06+00:00",
-  "estimateMinutes": 3160
+  "minutesRemaining": 3300,
+  "estimatedFinish": "2026-10-29T04:17:27+00:00",
+  "estimateMinutes": 3120
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P1CC38_fix failing browser tests",
-   "since": null,
-   "activity": null,
+   "game": "honest-sign",
+   "task": "P1FS34_honest sign one screen",
+   "since": "2026-10-27T00:15:41+00:00",
+   "activity": "2026-10-27T00:15:48+00:00",
    "commit": null
   },
   {
@@ -60,7 +60,7 @@
    "game": "rumour-on-the-jetty",
    "task": "P2AX16_kit fit rollout rumour on the jetty",
    "since": "2026-10-27T00:05:56+00:00",
-   "activity": "2026-10-27T00:14:27+00:00",
+   "activity": "2026-10-27T00:17:26+00:00",
    "commit": {
     "at": "2026-10-27T00:13:58+00:00",
     "subject": "wip: P2AX16_kit-fit-rollout-rumour-on-the-jetty (Codex lane autosave 20:13)"
@@ -11349,7 +11349,7 @@
    ]
   },
   {
-   "nextTask": "honest-sign: the whole game fits one phone screen...",
+   "nextTask": null,
    "costTotalUsd": 50.57,
    "latestChange": {
     "text": "Result sheet says Next level again (kit 20 label fix from play-template )",
@@ -11372,8 +11372,8 @@
    "title": "Honest Sign",
    "line": "",
    "url": "https://chenhsieh.github.io/honest-sign/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -11387,7 +11387,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:32:13+00:00",
-   "lastChange": "2026-10-25T09:54:52+00:00",
+   "lastChange": "2026-10-27T00:15:48+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -11403,10 +11403,10 @@
    "tasks": [
     {
      "title": "P1FS34_honest sign one screen",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "honest-sign: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-25T09:54:52+00:00",
+     "since": "2026-10-27T00:15:41+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -11459,8 +11459,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
@@ -22179,7 +22179,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-27T00:14:27+00:00",
+   "lastChange": "2026-10-27T00:17:26+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -32323,7 +32323,7 @@
    "url": "https://chenhsieh.github.io/honest-sign/",
    "added": "2026-10-25",
    "try": "Nudge the sign until what it says about itself is true; the first easy nudge gets stuck from level 2",
-   "busy": false,
+   "busy": true,
    "image": null
   }
  ],
