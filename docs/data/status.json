@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T06:12:16+00:00",
+ "generated": "2026-10-27T06:14:39+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 71,
+    "queued": 70,
     "running": 1,
     "doneToday": 0,
-    "minutes": 2880,
-    "estimateMinutes": 2880
+    "minutes": 2840,
+    "estimateMinutes": 2840
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 72,
+  "queued": 71,
   "running": 1,
   "doneToday": 0,
   "lanes": {
@@ -46,18 +46,21 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2940,
-  "estimatedFinish": "2026-10-29T06:12:16+00:00",
-  "estimateMinutes": 2880
+  "minutesRemaining": 2900,
+  "estimatedFinish": "2026-10-29T05:34:39+00:00",
+  "estimateMinutes": 2840
  },
  "lanes": [
   {
    "worker": "Codex",
-   "game": "scribes-blotter",
-   "task": "P2AX17_kit fit rollout scribes blotter",
-   "since": "2026-10-27T06:05:11+00:00",
-   "activity": "2026-10-27T06:04:49+00:00",
-   "commit": null
+   "game": "coin-dumplings",
+   "task": "coin dumplings review fixes",
+   "since": "2026-10-27T06:12:31+00:00",
+   "activity": "2026-10-27T06:14:33+00:00",
+   "commit": {
+    "at": "2026-10-27T06:12:32+00:00",
+    "subject": "start: P2n115_coin-dumplings-review-fixes"
+   }
   }
  ],
  "codexLanes": 1,
@@ -127,7 +130,7 @@
   },
   {
    "day": "2026-10-27",
-   "changes": 1
+   "changes": 2
   }
  ],
  "houseRules": 25,
@@ -153,7 +156,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 1
+    "daysInState": 2
    },
    "waitingOn": "owner",
    "id": "name-to-carry",
@@ -3040,7 +3043,7 @@
    ]
   },
   {
-   "nextTask": "Coin Dumplings: make the marks, the board and...",
+   "nextTask": null,
    "costTotalUsd": 14.96,
    "latestChange": {
     "text": "feat: let players mark coin dumplings as certain or cannot tell",
@@ -3063,7 +3066,7 @@
    "title": "Coin Dumplings",
    "line": "",
    "url": "https://chenhsieh.github.io/coin-dumplings/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
@@ -3078,7 +3081,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:49:53+00:00",
-   "lastChange": "2026-10-26T23:56:50+00:00",
+   "lastChange": "2026-10-27T06:14:33+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -3094,16 +3097,19 @@
    "tasks": [
     {
      "title": "coin dumplings review fixes",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Coin Dumplings: make the marks, the board and the result readable to a stranger (review fixes)",
-     "since": "2026-10-26T23:56:50+00:00",
+     "since": "2026-10-27T06:12:31+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-27T06:12:32+00:00",
+      "subject": "start: P2n115_coin-dumplings-review-fixes"
+     },
      "result": ""
     },
     {
@@ -3122,8 +3128,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -14134,7 +14140,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 1
+    "daysInState": 2
    },
    "waitingOn": "machine rhythm why rollout",
    "id": "machine-rhythm",
@@ -20635,7 +20641,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 1
+    "daysInState": 2
    },
    "waitingOn": "refusal detour one screen",
    "id": "refusal-detour",
@@ -22699,30 +22705,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 43.2,
+   "costTotalUsd": 43.36,
    "latestChange": {
-    "text": "P2AX17_kit-fit-rollout-scribes-blotter handed to Claude: Codex quota ran out;",
-    "at": "2026-10-25T09:32:42+00:00"
+    "text": "feat: keep Blotter’s rule note and Undo in view on small phones",
+    "at": "2026-10-27T06:12:30+00:00"
    },
    "promo": null,
    "why": "A street letter-writer blots every client's letter on one shared pad, and a secret is hidden only when another client's secret lands on top of it.",
    "state": "ship",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 4
    },
-   "waitingOn": "kit fit rollout scribes blotter",
+   "waitingOn": "owner",
    "id": "scribes-blotter",
    "number": 151,
    "repo": "scribes-blotter",
    "title": "Scribes Blotter",
    "line": "",
    "url": "https://chenhsieh.github.io/scribes-blotter/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -22736,33 +22742,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:02+00:00",
-   "lastChange": "2026-10-27T06:04:49+00:00",
+   "lastChange": "2026-10-27T06:12:30+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 3,
     "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 130815,
+    "codexUsdEst": 0.16,
     "claudeUsdEst": 10.8,
     "earlierRounds": 9,
     "earlierUsdEst": 32.4,
-    "totalUsdEst": 43.2
+    "totalUsdEst": 43.36
    },
    "tasks": [
     {
      "title": "P2AX17_kit fit rollout scribes blotter",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "scribes-blotter: take the new play kit so the board and Undo fit a small phone",
-     "since": "2026-10-27T06:05:11+00:00",
-     "done": null,
+     "since": "2026-10-26T23:55:59+00:00",
+     "done": "2026-10-26T23:55:59+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 13,
+     "tokens": 130815,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: keep Blotter’s rule note and Undo in view on small phones"
     },
     {
      "title": "P3OR69_scribes blotter credits page",
@@ -22809,9 +22815,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": {
     "date": "2026-10-23",
@@ -22819,8 +22825,14 @@
     "note": "Pairing secrets is a real puzzle (the obvious drop dead-ends on every level from 3); next is the stall, the felt pad and the sounds"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-27T06:12:30+00:00",
+     "ok": true,
+     "note": "feat: keep Blotter’s rule note and Undo in view on small phones",
+     "source": "board note"
+    },
     {
      "at": "2026-10-25T09:32:42+00:00",
      "ok": false,
@@ -22885,12 +22897,6 @@
      "at": "2026-10-23T23:52:09+00:00",
      "ok": true,
      "note": "feat: The Scribe's Blotter starts from the game template",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-23T23:50:02+00:00",
-     "ok": true,
-     "note": "Initial commit",
      "source": "main commit"
     }
    ]
@@ -25784,7 +25790,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 1
+    "daysInState": 2
    },
    "waitingOn": "speaking stone one screen",
    "id": "speaking-stone",
@@ -28105,7 +28111,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 1
+    "daysInState": 2
    },
    "waitingOn": "the zipper why rollout",
    "id": "the-zipper",
@@ -32300,7 +32306,7 @@
    "url": "https://chenhsieh.github.io/scribes-blotter/",
    "added": "2026-10-25",
    "try": "Pair the secrets on the blotter; the obvious drop dead-ends from level 3, so plan the pairs first",
-   "busy": true,
+   "busy": false,
    "image": null
   },
   {
