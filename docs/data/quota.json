@@ -1,8 +1,58 @@
 {
- "generated": 1793218826,
- "ok": false,
- "spark": [],
- "plan_type": null,
+ "ok": true,
+ "plan_type": "plus",
+ "windows": {
+  "5h": {
+   "used_percent": 3.0,
+   "window_minutes": 300,
+   "resets_at": 1793236827,
+   "burn_percent_per_hour": null,
+   "burn_basis_min": null,
+   "eta_hours_to_empty": null,
+   "eta_empty_epoch": null,
+   "runs_out_before_reset": false,
+   "early_estimate": true,
+   "remaining_percent": 97.0,
+   "spark": [
+    3.0
+   ]
+  },
+  "weekly": {
+   "used_percent": 2.0,
+   "window_minutes": 10080,
+   "resets_at": 1793792616,
+   "burn_percent_per_hour": null,
+   "burn_basis_min": null,
+   "eta_hours_to_empty": null,
+   "eta_empty_epoch": null,
+   "runs_out_before_reset": false,
+   "early_estimate": true,
+   "remaining_percent": 98.0,
+   "spark": [
+    2.0
+   ]
+  }
+ },
+ "binding": "5h",
+ "used_percent": 3.0,
+ "window_minutes": 300,
+ "resets_at": 1793236827,
+ "burn_percent_per_hour": null,
+ "burn_basis_min": null,
+ "eta_hours_to_empty": null,
+ "eta_empty_epoch": null,
+ "runs_out_before_reset": false,
+ "codex_tasks_ready": 22,
+ "codex_tasks_done_3h": 0,
+ "early_estimate": true,
+ "spark": [
+  3.0
+ ],
+ "generated": 1793218993,
+ "est_percent_per_task_used": 0.25,
+ "est_percent_for_ready_queue": 5.5,
+ "lanes_target": 1,
+ "remaining_percent": 97.0,
  "providers": {
   "claude": {
    "meteredUsd": 320.37,
@@ -20,7 +70,7 @@
  },
  "watch": {
   "everyMin": 2,
-  "lastCheck": 1793218804,
-  "resetEvent": 1793175660
+  "lastCheck": 1793218954,
+  "resetEvent": 1793218920
  }
 }
