@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T04:23:09+00:00",
+ "generated": "2026-10-28T04:25:30+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 67,
+    "queued": 66,
     "running": 1,
     "doneToday": 0,
-    "minutes": 2720,
-    "estimateMinutes": 2720
+    "minutes": 2680,
+    "estimateMinutes": 2680
    },
    "Claude": {
     "queued": 1,
@@ -30,7 +30,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 68,
+  "queued": 67,
   "running": 1,
   "doneToday": 0,
   "lanes": {
@@ -42,18 +42,21 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2780,
-  "estimatedFinish": "2026-10-30T01:43:09+00:00",
-  "estimateMinutes": 2720
+  "minutesRemaining": 2740,
+  "estimatedFinish": "2026-10-30T01:05:30+00:00",
+  "estimateMinutes": 2680
  },
  "lanes": [
   {
    "worker": "Codex",
-   "game": "out-of-the-corner",
-   "task": "out of the corner",
-   "since": "2026-10-28T04:19:40+00:00",
-   "activity": "2026-10-28T04:19:33+00:00",
-   "commit": null
+   "game": "one-umbrella",
+   "task": "one umbrella",
+   "since": "2026-10-28T04:24:59+00:00",
+   "activity": "2026-10-28T04:25:30+00:00",
+   "commit": {
+    "at": "2026-10-28T04:25:01+00:00",
+    "subject": "start: P2n93_one-umbrella"
+   }
   }
  ],
  "codexLanes": 1,
@@ -127,7 +130,7 @@
   },
   {
    "day": "2026-10-28",
-   "changes": 1
+   "changes": 2
   }
  ],
  "houseRules": 25,
@@ -18040,7 +18043,7 @@
    ]
   },
   {
-   "nextTask": "Slide one umbrella between two walkers so both...",
+   "nextTask": null,
    "costTotalUsd": 10.8,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -18054,7 +18057,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 2
+    "daysInState": 0
    },
    "waitingOn": "one umbrella",
    "id": "one-umbrella",
@@ -18063,7 +18066,7 @@
    "title": "One Umbrella",
    "line": "",
    "url": "https://chenhsieh.github.io/one-umbrella/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
@@ -18077,7 +18080,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:05:09+00:00",
-   "lastChange": "2026-10-25T09:16:37+00:00",
+   "lastChange": "2026-10-28T04:25:30+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -18093,22 +18096,25 @@
    "tasks": [
     {
      "title": "one umbrella",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Slide one umbrella between two walkers so both get home dry as the wind turns: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-10-25T09:16:37+00:00",
+     "since": "2026-10-28T04:24:59+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-28T04:25:01+00:00",
+      "subject": "start: P2n93_one-umbrella"
+     },
      "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
@@ -18318,30 +18324,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 10.8,
+   "costTotalUsd": 15.0,
    "latestChange": {
-    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
-    "at": "2026-10-25T01:35:57+00:00"
+    "text": "feat: Find and join faint stars with a sideways gaze",
+    "at": "2026-10-28T04:24:58+00:00"
    },
    "promo": null,
    "why": "A remix of Nobody Looking and Walls Have Ears through averted vision, how faint stars vanish when looked at directly.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "out of the corner",
+   "waitingOn": "none",
    "id": "out-of-the-corner",
    "number": 161,
    "repo": "out-of-the-corner",
    "title": "Out Of The Corner",
    "line": "",
    "url": "https://chenhsieh.github.io/out-of-the-corner/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -18354,45 +18360,57 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:02:46+00:00",
-   "lastChange": "2026-10-28T04:19:33+00:00",
+   "lastChange": "2026-10-28T04:24:58+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 0,
     "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 503313,
+    "codexUsdEst": 0.6,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
-    "totalUsdEst": 10.8
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
+    "totalUsdEst": 15.0
    },
    "tasks": [
     {
      "title": "out of the corner",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Catch faint stars that only show beside your finger, before dawn: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-10-28T04:19:40+00:00",
-     "done": null,
+     "since": "2026-10-28T03:19:43+00:00",
+     "done": "2026-10-28T03:19:43+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 60,
+     "tokens": 503313,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: Find and join faint stars with a sideways gaze"
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-28T04:24:58+00:00",
+     "ok": true,
+     "note": "feat: Find and join faint stars with a sideways gaze",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-28T04:23:55+00:00",
+     "ok": true,
+     "note": "feat: Find and join faint stars with a sideways gaze",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T01:35:57+00:00",
      "ok": true,
