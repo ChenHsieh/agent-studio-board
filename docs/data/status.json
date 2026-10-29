@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-29T18:54:56+00:00",
+ "generated": "2026-10-29T18:57:20+00:00",
  "ops": {
-  "count": 26,
+  "count": 27,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 59,
+    "queued": 58,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2360,
-    "estimateMinutes": 2360
+    "minutes": 2320,
+    "estimateMinutes": 2320
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 60,
+  "queued": 59,
   "running": 1,
   "doneToday": 1,
   "lanes": {
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2480,
-  "estimatedFinish": "2026-10-31T10:14:56+00:00",
-  "estimateMinutes": 2360
+  "minutesRemaining": 2440,
+  "estimatedFinish": "2026-10-31T09:37:20+00:00",
+  "estimateMinutes": 2320
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "time-material",
-   "task": "P2FS48_time material one screen",
-   "since": "2026-10-29T18:46:39+00:00",
-   "activity": "2026-10-29T18:54:43+00:00",
+   "game": "glyph-gates",
+   "task": "P2FS49_glyph gates one screen",
+   "since": "2026-10-29T18:56:18+00:00",
+   "activity": "2026-10-29T18:56:20+00:00",
    "commit": null
   }
  ],
@@ -9428,7 +9428,7 @@
    ]
   },
   {
-   "nextTask": "glyph-gates: the whole game fits one phone screen...",
+   "nextTask": null,
    "costTotalUsd": 50.88,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -9449,7 +9449,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 4
+    "daysInState": 0
    },
    "waitingOn": "glyph gates one screen",
    "id": "glyph-gates",
@@ -9458,8 +9458,8 @@
    "title": "Glyph Gates",
    "line": "Open a path by pairing marks at each gate.",
    "url": "https://chenhsieh.github.io/glyph-gates/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Find the game core and story before any visual work",
    "shelfNote": "",
@@ -9477,7 +9477,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-13T11:34:12+00:00",
-   "lastChange": "2026-10-25T09:56:00+00:00",
+   "lastChange": "2026-10-29T18:56:20+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -9493,10 +9493,10 @@
    "tasks": [
     {
      "title": "P2FS49_glyph gates one screen",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "glyph-gates: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-25T09:56:00+00:00",
+     "since": "2026-10-29T18:56:18+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -9549,8 +9549,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
@@ -29209,21 +29209,21 @@
    "why": "",
    "state": "ship",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 7
    },
-   "waitingOn": "time material one screen",
+   "waitingOn": "owner",
    "id": "time-material",
    "number": 23,
    "repo": "time-material",
    "title": "Time Material",
    "line": "Scrub through a frame history and draw with time.",
    "url": "https://chenhsieh.github.io/time-material/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Find the core and make the time-and-material rules",
    "shelfNote": "",
@@ -29237,33 +29237,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-09-20T20:53:51+00:00",
-   "lastChange": "2026-10-29T18:54:43+00:00",
+   "lastChange": "2026-10-25T09:55:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 8,
+    "claudeRuns": 9,
     "apiRuns": 2,
     "codexTokens": 196600,
     "codexUsdEst": 0.24,
-    "claudeUsdEst": 28.8,
-    "earlierRounds": 6,
-    "earlierUsdEst": 21.6,
+    "claudeUsdEst": 32.4,
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
     "totalUsdEst": 50.64
    },
    "tasks": [
     {
      "title": "P2FS48_time material one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "time-material: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-29T18:46:39+00:00",
-     "done": null,
+     "since": "2026-10-25T09:55:56+00:00",
+     "done": "2026-10-25T09:55:56+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "NOT YET: 360x640 still 1.34x the screen (was 2.04x); 390x844 now PASS A,B,C (was 1.55x). Level 12 needs speed + direction + two-row start dial (44 px targets) + 20 px caption and note, which total more than 640 px..."
     },
     {
      "title": "P3OR62_name time as material",
@@ -29366,9 +29366,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 12
+    "done": 13
    },
    "verdict": {
     "date": "2026-10-22",
@@ -29376,7 +29376,7 @@
     "note": "A scan line now sweeps the live scene and your photo together, so you can watch the bar bend row by row; the match meter starts at 95 percent, so the first move feels small"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T02:13:33+00:00",
