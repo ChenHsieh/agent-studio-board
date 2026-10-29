@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-29T19:07:09+00:00",
+ "generated": "2026-10-29T19:09:36+00:00",
  "ops": {
-  "count": 8,
+  "count": 9,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 56,
+    "queued": 55,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2240,
-    "estimateMinutes": 2240
+    "minutes": 2200,
+    "estimateMinutes": 2200
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 57,
+  "queued": 56,
   "running": 1,
   "doneToday": 1,
   "lanes": {
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2360,
-  "estimatedFinish": "2026-10-31T08:27:09+00:00",
-  "estimateMinutes": 2240
+  "minutesRemaining": 2320,
+  "estimatedFinish": "2026-10-31T07:49:36+00:00",
+  "estimateMinutes": 2200
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "alias-loaf",
-   "task": "P2FS53_alias loaf one screen",
-   "since": "2026-10-29T19:04:50+00:00",
-   "activity": "2026-10-29T19:06:48+00:00",
+   "game": "coat-corridor",
+   "task": "P2FS68_coat corridor one screen",
+   "since": "2026-10-29T19:08:57+00:00",
+   "activity": "2026-10-29T19:09:01+00:00",
    "commit": null
   }
  ],
@@ -623,23 +623,23 @@
    },
    "promo": null,
    "why": "A screenshot of a long keyword-filter spreadsheet plus photos of a tray of slice-and-bake cookies with swirled patterns.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "alias loaf one screen",
+   "waitingOn": "none",
    "id": "alias-loaf",
    "number": 33,
    "repo": "alias-loaf",
    "title": "Alias Loaf",
    "line": "Set the cutter to catch one seed family.",
    "url": "https://chenhsieh.github.io/alias-loaf/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Introduce the mechanics one at a time and give the player a",
    "shelfNote": "",
@@ -657,29 +657,29 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 7.2,
-    "earlierRounds": 15,
-    "earlierUsdEst": 54.0,
+    "claudeUsdEst": 10.8,
+    "earlierRounds": 14,
+    "earlierUsdEst": 50.4,
     "totalUsdEst": 61.2
    },
    "tasks": [
     {
      "title": "P2FS53_alias loaf one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "alias-loaf: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-29T19:04:50+00:00",
-     "done": null,
+     "since": "2026-10-25T09:56:19+00:00",
+     "done": "2026-10-25T09:56:19+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE: live gate PASS A,C at 390x844 and 360x640 (B unknown: no board). Result card is now a bottom sheet (fixed, max 62dvh, scrolls inside), Next level first and full width, page padding follows the sheet height. Files:..."
     },
     {
      "title": "P2FM35_alias loaf first minute",
@@ -726,13 +726,13 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-29T19:06:48+00:00",
@@ -2880,7 +2880,7 @@
    ]
   },
   {
-   "nextTask": "coat-corridor: the whole game fits one phone screen...",
+   "nextTask": null,
    "costTotalUsd": 32.63,
    "latestChange": {
     "text": "One screen on phones: port_onescreen (kit 2) (P2FS04)",
@@ -2900,7 +2900,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 4
+    "daysInState": 0
    },
    "waitingOn": "coat corridor one screen",
    "id": "coat-corridor",
@@ -2909,8 +2909,8 @@
    "title": "Coat Corridor",
    "line": "Six floors of coats and cloth: clip, double stitch, and a certified daily.",
    "url": "https://chenhsieh.github.io/coat-corridor/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Six floors of coats and cloth: clip, double stitch, and a certified daily.",
    "shelfNote": "",
@@ -2924,7 +2924,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:52:34+00:00",
-   "lastChange": "2026-10-25T09:57:30+00:00",
+   "lastChange": "2026-10-29T19:09:01+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -2940,10 +2940,10 @@
    "tasks": [
     {
      "title": "P2FS68_coat corridor one screen",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "coat-corridor: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-25T09:57:30+00:00",
+     "since": "2026-10-29T19:08:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2982,8 +2982,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
