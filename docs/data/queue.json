@@ -1,5 +1,5 @@
 {
- "generated": 1793311555,
+ "generated": 1793311709,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -28,26 +28,8 @@
  },
  "tasks": [
   {
-   "id": "P3OR45_herbal-pages-stay-open-logic",
-   "request": "Herbal of Nowhere: opened pages stay open after Undo, the page counter counts pages, cleaner level 1 result (OpenRouter lane)",
-   "game": "Herbal of Nowhere",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "Images of an old herbal whose plants never grew, written in a script with language-like statistics and no reader.",
-   "state": "running",
-   "at": 1793311152,
-   "created": 1793311152,
-   "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2n99_review-still-a-heap-and-out-of-the-corner",
-   "request": "Play Still a Heap and Out of the Corner cold as a stranger and decide ship, revise or shelf for each",
+   "id": "P2LW04_lot-waits-reset-review",
+   "request": "The Lot Waits: a stranger plays the reset and says ship, revise or shelf",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
@@ -56,14 +38,13 @@
    "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2n91_still-a-heap",
-    "P2n92_out-of-the-corner"
+    "P1LW03_lot-waits-first-minute-v2"
    ],
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1792700696,
-   "created": 1792700696
+   "at": 1792824844,
+   "created": 1792824844
   },
   {
    "id": "P3PL10_tree-hero-why-rollout",
@@ -444,25 +425,6 @@
    "estPercentOfWeek": 0.25
   },
   {
-   "id": "P2LW04_lot-waits-reset-review",
-   "request": "The Lot Waits: a stranger plays the reset and says ship, revise or shelf",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1LW03_lot-waits-first-minute-v2"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1792824844
-  },
-  {
    "id": "P2UX07_daily-brief-data",
    "request": "Daily brief data",
    "game": "Studio",
@@ -480,6 +442,43 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792807366
+  },
+  {
+   "id": "P2n116_heap-board-fill-and-short-card",
+   "request": "Heap board fill and short card",
+   "game": "Still A Heap",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "A remix of the can-press toy and the swarm idea through the old paradox of the heap.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1793311601,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2n117_corner-visual-round",
+   "request": "Corner visual round",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2n99_review-still-a-heap-and-out-of-the-corner"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1793311601
   },
   {
    "id": "P2n88_watched-pot",
@@ -867,6 +866,26 @@
    "state": "done",
    "at": 1793296264,
    "created": 1793296264
+  },
+  {
+   "id": "P2n99_review-still-a-heap-and-out-of-the-corner",
+   "request": "Play Still a Heap and Out of the Corner cold as a stranger and decide ship, revise or shelf for each",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2n91_still-a-heap",
+    "P2n92_out-of-the-corner"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1793311602,
+   "created": 1793311602
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T22:05:19+00:00",
+ "generated": "2026-10-29T22:08:07+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 40,
+    "queued": 41,
     "running": 1,
     "doneToday": 2,
-    "minutes": 1640,
-    "estimateMinutes": 1640
+    "minutes": 1680,
+    "estimateMinutes": 1680
    },
    "Claude": {
     "queued": 1,
     "running": 1,
-    "doneToday": 2,
+    "doneToday": 3,
     "minutes": 120,
     "estimateMinutes": 60
    }
   },
-  "queued": 41,
+  "queued": 42,
   "running": 2,
-  "doneToday": 4,
+  "doneToday": 5,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,15 +42,15 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1760,
-  "estimatedFinish": "2026-10-31T01:25:19+00:00",
-  "estimateMinutes": 1640
+  "minutesRemaining": 1800,
+  "estimatedFinish": "2026-10-31T02:08:07+00:00",
+  "estimateMinutes": 1680
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "Multiple games",
-   "task": "review still a heap and out of the corner",
+   "task": "P2LW04_lot waits reset review",
    "since": null,
    "activity": null,
    "commit": null
@@ -59,8 +59,8 @@
    "worker": "Codex",
    "game": "herbal-of-nowhere",
    "task": "P3OR45_herbal pages stay open logic",
-   "since": "2026-10-29T21:59:13+00:00",
-   "activity": "2026-10-29T22:04:12+00:00",
+   "since": "2026-10-29T22:07:57+00:00",
+   "activity": "2026-10-29T22:07:51+00:00",
    "commit": null
   }
  ],
@@ -139,7 +139,7 @@
   },
   {
    "day": "2026-10-29",
-   "changes": 20
+   "changes": 21
   }
  ],
  "houseRules": 25,
@@ -10804,7 +10804,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-29T22:04:12+00:00",
+   "lastChange": "2026-10-29T22:07:51+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -10823,7 +10823,7 @@
      "state": "running",
      "worker": "Codex",
      "plan": "Herbal of Nowhere: opened pages stay open after Undo, the page counter counts pages, cleaner level 1 result (OpenRouter lane)",
-     "since": "2026-10-29T21:59:13+00:00",
+     "since": "2026-10-29T22:07:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -18391,15 +18391,15 @@
    },
    "promo": null,
    "why": "A remix of Nobody Looking and Walls Have Ears through averted vision, how faint stars vanish when looked at directly.",
-   "state": "shelved",
+   "state": "ship",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 1
+    "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "owner",
    "id": "out-of-the-corner",
    "number": 161,
    "repo": "out-of-the-corner",
@@ -18455,7 +18455,11 @@
     "waitingDesign": 0,
     "done": 1
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-10-29",
+    "verdict": "ship",
+    "note": "Hold beside the star, not on it: one line of text and the first real decision is immediate; clean at 320 and 390"
+   },
    "needsYou": null,
    "inProgress": false,
    "history": [
@@ -26379,7 +26383,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "heap board fill and short card",
    "costTotalUsd": 14.83,
    "latestChange": {
     "text": "feat: make every grain count on a one-screen heap",
@@ -26387,23 +26391,23 @@
    },
    "promo": null,
    "why": "A remix of the can-press toy and the swarm idea through the old paradox of the heap.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
-    "reviseRound": 0,
-    "daysInState": 1
+    "reviseRound": 1,
+    "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "heap board fill and short card",
    "id": "still-a-heap",
    "number": 160,
    "repo": "still-a-heap",
    "title": "Still A Heap",
    "line": "",
    "url": "https://chenhsieh.github.io/still-a-heap/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -26416,7 +26420,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:59:53+00:00",
-   "lastChange": "2026-10-27T22:14:38+00:00",
+   "lastChange": "2026-10-29T22:06:41+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -26430,6 +26434,20 @@
     "totalUsdEst": 14.83
    },
    "tasks": [
+    {
+     "title": "heap board fill and short card",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-29T22:06:41+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "still a heap",
      "state": "done",
@@ -26446,14 +26464,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-10-29",
+    "verdict": "revise",
+    "note": "The stop-while-it-still-reaches-the-line idea works and bots lose, but at 320 wide the plate is a narrow strip with empty space around it and the opening card is long, so the first grain comes late"
+   },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-27T22:14:38+00:00",
