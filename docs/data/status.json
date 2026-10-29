@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-29T18:40:23+00:00",
+ "generated": "2026-10-29T18:42:46+00:00",
  "ops": {
-  "count": 25,
+  "count": 26,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 61,
+    "queued": 60,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2440,
-    "estimateMinutes": 2440
+    "minutes": 2400,
+    "estimateMinutes": 2400
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 62,
+  "queued": 61,
   "running": 1,
   "doneToday": 1,
   "lanes": {
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2560,
-  "estimatedFinish": "2026-10-31T11:20:23+00:00",
-  "estimateMinutes": 2440
+  "minutesRemaining": 2520,
+  "estimatedFinish": "2026-10-31T10:42:46+00:00",
+  "estimateMinutes": 2400
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "matchmaker-chat",
-   "task": "P2FS45_matchmaker chat one screen",
-   "since": "2026-10-29T18:26:14+00:00",
-   "activity": "2026-10-29T18:32:29+00:00",
+   "game": "Multiple games",
+   "task": "P2CP00_daily local date",
+   "since": null,
+   "activity": null,
    "commit": null
   }
  ],
@@ -14753,23 +14753,23 @@
     "caption": "Auntie sends a photo of a boy, then picture clues one."
    },
    "why": "A viral family chat where a relative asks about a boy and the reply lands before she has finished.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 0
+    "daysInState": 4
    },
-   "waitingOn": "matchmaker chat one screen",
+   "waitingOn": "none",
    "id": "matchmaker-chat",
    "number": 63,
    "repo": "matchmaker-chat",
    "title": "Matchmaker Chat",
    "line": "Auntie sends a photo of a boy, then picture clues one.",
    "url": "https://chenhsieh.github.io/matchmaker-chat/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Turn the rival-wingmen idea into a visual arms-race puzzle",
    "shelfNote": "",
@@ -14783,33 +14783,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T21:39:26+00:00",
-   "lastChange": "2026-10-29T18:32:29+00:00",
+   "lastChange": "2026-10-25T09:55:42+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 1,
     "codexTokens": 739560,
     "codexUsdEst": 0.89,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 16,
-    "earlierUsdEst": 57.6,
+    "claudeUsdEst": 7.2,
+    "earlierRounds": 15,
+    "earlierUsdEst": 54.0,
     "totalUsdEst": 62.09
    },
    "tasks": [
     {
      "title": "P2FS45_matchmaker chat one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "matchmaker-chat: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-29T18:26:14+00:00",
-     "done": null,
+     "since": "2026-10-25T09:55:42+00:00",
+     "done": "2026-10-25T09:55:42+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "NOT YET:"
     },
     {
      "title": "P1SD27_studio standard matchmaker chat",
@@ -14898,13 +14898,13 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T01:45:48+00:00",
