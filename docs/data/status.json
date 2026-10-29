@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-29T20:30:33+00:00",
+ "generated": "2026-10-29T20:33:27+00:00",
  "ops": {
-  "count": 5,
+  "count": 4,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 44,
+    "queued": 43,
     "running": 1,
-    "doneToday": 0,
-    "minutes": 1800,
-    "estimateMinutes": 1800
+    "doneToday": 1,
+    "minutes": 1760,
+    "estimateMinutes": 1760
    },
    "Claude": {
     "queued": 1,
@@ -34,9 +34,9 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 45,
+  "queued": 44,
   "running": 1,
-  "doneToday": 2,
+  "doneToday": 3,
   "lanes": {
    "Codex": 1,
    "Claude": 1
@@ -46,18 +46,21 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1860,
-  "estimatedFinish": "2026-10-31T02:30:33+00:00",
-  "estimateMinutes": 1800
+  "minutesRemaining": 1820,
+  "estimatedFinish": "2026-10-31T01:53:27+00:00",
+  "estimateMinutes": 1760
  },
  "lanes": [
   {
    "worker": "Codex",
-   "game": "clean-features",
-   "task": "P3CF07_flaky 320 today drag",
-   "since": "2026-10-29T20:27:56+00:00",
-   "activity": "2026-10-29T20:27:42+00:00",
-   "commit": null
+   "game": "not-yet",
+   "task": "P3NY00_not yet a real choice",
+   "since": "2026-10-29T20:32:02+00:00",
+   "activity": "2026-10-29T20:33:27+00:00",
+   "commit": {
+    "at": "2026-10-29T20:32:50+00:00",
+    "subject": "Merge remote-tracking branch 'origin/chen-or-p3or42-not-yet-level-three-card' into chen-cx-p3ny00-not-yet-a-real-choice"
+   }
   }
  ],
  "codexLanes": 1,
@@ -135,7 +138,7 @@
   },
   {
    "day": "2026-10-29",
-   "changes": 7
+   "changes": 8
   }
  ],
  "houseRules": 25,
@@ -17186,7 +17189,7 @@
    ]
   },
   {
-   "nextTask": "Not Yet: give the player a real choice...",
+   "nextTask": null,
    "costTotalUsd": 29.04,
    "latestChange": {
     "text": "One screen on phones: port_onescreen (kit 4) (P2FS04)",
@@ -17216,7 +17219,7 @@
    "line": "Dodge the customer's reaching hand, then give the cone once past the gold line; 10 customers, daily, endless.",
    "url": "https://chenhsieh.github.io/not-yet/",
    "stage": "building",
-   "who": "Claude",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Dodge the customer's reaching hand, then give the cone once past the gold line;",
    "shelfNote": "",
@@ -17230,7 +17233,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T19:52:47+00:00",
-   "lastChange": "2026-10-25T09:21:56+00:00",
+   "lastChange": "2026-10-29T20:33:27+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -17246,16 +17249,19 @@
    "tasks": [
     {
      "title": "P3NY00_not yet a real choice",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Not Yet: give the player a real choice (the cone moves one lane a beat, the next three grabs are shown), or shelve it",
-     "since": "2026-10-22T23:57:12+00:00",
+     "since": "2026-10-29T20:32:02+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-29T20:32:50+00:00",
+      "subject": "Merge remote-tracking branch 'origin/chen-or-p3or42-not-yet-level-three-card' into chen-cx-p3ny00-not-yet-a-real-choice"
+     },
      "result": ""
     },
     {
@@ -17330,8 +17336,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 5
    },
@@ -31509,10 +31515,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 80.06,
+   "costTotalUsd": 80.34,
    "latestChange": {
-    "text": "One screen: win card pinned to the bottom with Next level first; a swipe from the board...",
-    "at": "2026-10-25T06:05:52+00:00"
+    "text": "fix: keep small-screen drag checks reliable",
+    "at": "2026-10-29T20:32:00+00:00"
    },
    "promo": {
     "files": {
@@ -31523,23 +31529,23 @@
     "caption": "Label each colony with the one shape it sees by placing."
    },
    "why": "An essay arguing neural network features are already clean, and a petri-dish video of something first taken for ordinary bacteria.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 4
+    "daysInState": 0
    },
-   "waitingOn": "flaky 320 today drag",
+   "waitingOn": "none",
    "id": "clean-features",
    "number": 96,
    "repo": "clean-features",
    "title": "What the Dish Sees",
    "line": "Label each colony with the one shape it sees by placing.",
    "url": "https://chenhsieh.github.io/clean-features/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Find the playable frame for the latent-space game: a clear",
    "shelfNote": "",
@@ -31557,33 +31563,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-29T20:27:42+00:00",
+   "lastChange": "2026-10-29T20:32:00+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 4,
+    "codexRuns": 5,
     "claudeRuns": 12,
     "apiRuns": 1,
-    "codexTokens": 719119,
-    "codexUsdEst": 0.86,
+    "codexTokens": 952111,
+    "codexUsdEst": 1.14,
     "claudeUsdEst": 43.2,
     "earlierRounds": 10,
     "earlierUsdEst": 36.0,
-    "totalUsdEst": 80.06
+    "totalUsdEst": 80.34
    },
    "tasks": [
     {
      "title": "P3CF07_flaky 320 today drag",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Make the 320-wide page check stop failing at random on today's dish",
-     "since": "2026-10-29T20:27:56+00:00",
-     "done": null,
+     "since": "2026-10-29T19:54:21+00:00",
+     "done": "2026-10-29T19:54:21+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 33,
+     "tokens": 232992,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "fix: keep small-screen drag checks reliable"
     },
     {
      "title": "P1FS20_clean features one screen",
@@ -31686,9 +31692,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 17
+    "done": 18
    },
    "verdict": {
     "date": "2026-10-25",
@@ -31696,8 +31702,20 @@
     "note": "Showing every picture first loses on every level after the first, so looking has to be chosen; the screen never says who you are, and the notes forget the oldest pictures, including the ones where nothing lit"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-29T20:32:00+00:00",
+     "ok": true,
+     "note": "fix: keep small-screen drag checks reliable",
+     "source": "board note"
+    },
+    {
+     "at": "2026-10-29T20:31:50+00:00",
+     "ok": true,
+     "note": "fix: keep small-screen drag checks reliable",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T06:05:52+00:00",
      "ok": true,
@@ -31756,18 +31774,6 @@
      "at": "2026-10-24T04:38:47+00:00",
      "ok": true,
      "note": "P1CF03 rule-first lesson: watched example, one guided look, smudge price tagged then Undo; live",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-24T04:37:22+00:00",
-     "ok": true,
-     "note": "feat: What the Dish Sees teaches the rule before it is used: watch, one look, then the price of a wrong name",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T04:24:07+00:00",
-     "ok": true,
-     "note": "P1CF02 seed-sorter story in card, How to play, win card (days), share line restored; live",
      "source": "board note"
     }
    ]
