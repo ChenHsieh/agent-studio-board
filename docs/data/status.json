@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T03:07:37+00:00",
+ "generated": "2026-10-29T03:10:02+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 66,
+    "queued": 67,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2640,
-    "estimateMinutes": 2640
+    "minutes": 2680,
+    "estimateMinutes": 2680
    },
    "Claude": {
     "queued": 1,
@@ -30,7 +30,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 67,
+  "queued": 68,
   "running": 0,
   "doneToday": 0,
   "lanes": {
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2700,
-  "estimatedFinish": "2026-10-30T23:07:37+00:00",
-  "estimateMinutes": 2640
+  "minutesRemaining": 2740,
+  "estimatedFinish": "2026-10-30T23:50:02+00:00",
+  "estimateMinutes": 2680
  },
  "lanes": [],
  "codexLanes": 0,
@@ -2142,7 +2142,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "P2CB13_chai boil black field look",
    "costTotalUsd": 91.11,
    "latestChange": {
     "text": "One screen: crop the scene to the room under the head, swipe from the scene scrolls the...",
@@ -2150,13 +2150,13 @@
    },
    "promo": null,
    "why": "An AI-made video post of a pot of milk tea foaming up on a wood fire, plus the Lunar Lander game.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 3
+    "daysInState": 7
    },
    "waitingOn": "owner",
    "id": "chai-boil",
@@ -2165,8 +2165,8 @@
    "title": "Chai Boil",
    "line": "One pot, one dial: let the chai rise to the rim, not over it.",
    "url": "https://chenhsieh.github.io/chai-boil/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "hyper-realistic visuals instead of computer-drawn",
    "shelfNote": "",
@@ -2180,7 +2180,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-25T05:58:00+00:00",
+   "lastChange": "2026-10-29T03:08:30+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 6,
@@ -2194,6 +2194,20 @@
     "totalUsdEst": 91.11
    },
    "tasks": [
+    {
+     "title": "P2CB13_chai boil black field look",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-29T03:08:30+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1FS19_chai boil one screen",
      "state": "done",
@@ -2291,24 +2305,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1CB08 chai-draw-helper-pot: DONE, live (main , https://chenhsieh.github.io/chai-boil/, live bytes match, zero console errors)."
-    },
-    {
-     "title": "P1CB09_chai lever and burners",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "The flame lever becomes a brass slider on a wooden plaque; every stove's flames are drawn as paper",
-     "since": "2026-10-22T03:58:31+00:00",
-     "done": "2026-10-22T03:58:31+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "P1CB09 chai-lever-and-burners: DONE, live (main , https://chenhsieh.github.io/chai-boil/, live bytes match, zero console errors)."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 20
@@ -2319,7 +2319,7 @@
     "note": "Visual revamp, different kitchen"
    },
    "needsYou": "Prayer-flag strip in the mountain hut set: five extra colours on one strip, all six kitchens still pass the contrast check. Suggest: keep it; it costs little and no kitchen failed the contrast check.",
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T05:58:00+00:00",
