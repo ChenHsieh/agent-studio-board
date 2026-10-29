@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T20:11:42+00:00",
+ "generated": "2026-10-29T20:14:27+00:00",
  "ops": {
   "count": 7,
   "notes": [
@@ -28,43 +28,35 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
-    "doneToday": 1,
-    "minutes": 120,
+    "running": 0,
+    "doneToday": 2,
+    "minutes": 60,
     "estimateMinutes": 60
    }
   },
   "queued": 45,
-  "running": 2,
-  "doneToday": 1,
+  "running": 1,
+  "doneToday": 2,
   "lanes": {
    "Codex": 1,
-   "Claude": 2
+   "Claude": 1
   },
   "laneCap": {
    "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1920,
-  "estimatedFinish": "2026-10-31T02:11:42+00:00",
+  "minutesRemaining": 1860,
+  "estimatedFinish": "2026-10-31T02:14:27+00:00",
   "estimateMinutes": 1800
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "felt-years",
-   "task": "P2FS58_felt years one screen",
-   "since": "2026-10-29T20:04:33+00:00",
-   "activity": "2026-10-29T20:11:40+00:00",
-   "commit": null
-  },
   {
    "worker": "Codex",
    "game": "clean-features",
    "task": "P3CF07_flaky 320 today drag",
    "since": "2026-10-29T19:54:21+00:00",
-   "activity": "2026-10-29T20:10:59+00:00",
+   "activity": "2026-10-29T20:13:50+00:00",
    "commit": {
     "at": "2026-10-29T20:05:42+00:00",
     "subject": "test: settle board before drag"
@@ -72,7 +64,7 @@
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 1,
+ "claudeWorkers": 0,
  "apiSpentUsd": 320.37,
  "claudeInSession": {
   "runs": 295,
@@ -6556,8 +6548,8 @@
    "nextTask": null,
    "costTotalUsd": 69.62,
    "latestChange": {
-    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
-    "at": "2026-10-25T01:48:02+00:00"
+    "text": "One screen: result card is a bottom sheet with Next first (P2FS58)",
+    "at": "2026-10-29T20:09:04+00:00"
    },
    "promo": {
     "files": {
@@ -6567,23 +6559,23 @@
     "caption": "Felt Years is a quiet solo puzzle about a goat whose life."
    },
    "why": "A handwritten derivation that life's felt midpoint is about 18 if felt time runs as dx/x, plus a log-time ruler post.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 8
+    "daysInState": 0
    },
-   "waitingOn": "felt years one screen",
+   "waitingOn": "none",
    "id": "felt-years",
    "number": 98,
    "repo": "felt-years",
    "title": "Felt Years",
    "line": "Felt Years is a quiet solo puzzle about a goat whose life.",
    "url": "https://chenhsieh.github.io/felt-years/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "A story for the proportional-time idea, a stated goal",
    "shelfNote": "",
@@ -6597,27 +6589,27 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T23:11:23+00:00",
-   "lastChange": "2026-10-29T20:11:40+00:00",
+   "lastChange": "2026-10-29T20:14:02+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 0,
     "codexTokens": 1015931,
     "codexUsdEst": 1.22,
-    "claudeUsdEst": 10.8,
-    "earlierRounds": 16,
-    "earlierUsdEst": 57.6,
+    "claudeUsdEst": 14.4,
+    "earlierRounds": 15,
+    "earlierUsdEst": 54.0,
     "totalUsdEst": 69.62
    },
    "tasks": [
     {
      "title": "P2FS58_felt years one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "felt-years: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-29T20:04:33+00:00",
-     "done": null,
+     "since": "2026-10-29T20:14:02+00:00",
+     "done": "2026-10-29T20:14:02+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -6726,9 +6718,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 9
+    "done": 10
    },
    "verdict": {
     "date": "2026-10-21",
@@ -6736,8 +6728,20 @@
     "note": "Cannot understand it: needs a plain first minute"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-29T20:09:04+00:00",
+     "ok": true,
+     "note": "One screen: result card is a bottom sheet with Next first (P2FS58)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-29T20:05:28+00:00",
+     "ok": true,
+     "note": "start: P2FS58 felt-years one screen (result sheet)",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T01:48:02+00:00",
      "ok": true,
@@ -6796,18 +6800,6 @@
      "at": "2026-10-20T02:05:00+00:00",
      "ok": true,
      "note": "published family-calendar rebuild with visit stamps, jars, album, preserved saves, and phone touch checks",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-20T01:50:42+00:00",
-     "ok": true,
-     "note": "feat: plan family visits on a calendar",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T00:32:42+00:00",
-     "ok": true,
-     "note": "design brief (family calendar) + build task B2f",
      "source": "board note"
     }
    ]
@@ -31568,7 +31560,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-29T20:10:59+00:00",
+   "lastChange": "2026-10-29T20:13:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,

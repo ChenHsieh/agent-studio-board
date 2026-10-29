@@ -195,7 +195,7 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 273,
+   "count": 274,
    "firstTimePass": 95,
    "retries": 1,
    "medianMinutes": null,
@@ -585,6 +585,15 @@
   },
   {
    "date": "2026-10-29",
+   "task": "felt years one screen",
+   "number": "98",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-29",
    "task": "the folder one screen",
    "number": "46",
    "executor": "claude-sonnet",
@@ -672,15 +681,6 @@
    "role": "build",
    "passed": "yes",
    "note": "nesting-scrap, nothing changed or published. Gate today: A pass (level, last level) at 390 and 360; B fail; C fail (390: 1.09x, 360: 1.34x t"
-  },
-  {
-   "date": "2026-10-29",
-   "task": "fly swarm one screen",
-   "number": "18",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "fly-swarm needs two design choices that are owner's (nothing changed, nothing published). Gate today: A no hook (no win hook), B fail, C fai"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
