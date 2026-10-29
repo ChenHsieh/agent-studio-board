@@ -195,12 +195,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 269,
+   "count": 270,
    "firstTimePass": 95,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 220,
+   "guessed": 221,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -558,6 +558,15 @@
   },
   {
    "date": "2026-10-29",
+   "task": "one script one screen",
+   "number": "118",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "one-script needs a layout choice. 390x844 passes; 360x640 fails C (page 1.21x). Board is a fixed 360x430 canvas with its text drawn inside."
+  },
+  {
+   "date": "2026-10-29",
    "task": "checking desk one screen",
    "number": "124",
    "executor": "claude-sonnet",
@@ -672,15 +681,6 @@
    "role": "build",
    "passed": "no",
    "note": "check C (page fits) is not fixed; B is. A PASS and B PASS at 390x"
-  },
-  {
-   "date": "2026-10-26",
-   "task": "tractatus tree one screen",
-   "number": "91",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "no",
-   "note": "check C at 360x640 (page 1.05x, 672/640 on the first-minute card that new players meet first) is not fixed, because the real play page is mu"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
