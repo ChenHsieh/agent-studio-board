@@ -195,12 +195,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 266,
+   "count": 268,
    "firstTimePass": 95,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 217,
+   "guessed": 219,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -540,6 +540,24 @@
   },
   {
    "date": "2026-10-29",
+   "task": "slice and bake one screen",
+   "number": "34",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE. slice-and-bake 360x640 C: page 1.08x -> 1.00x (692 -> 640 px); 390x844 1.00x. Cause: the shared \"Why this exists\" foot (44 px button p"
+  },
+  {
+   "date": "2026-10-29",
+   "task": "hit or kit one screen",
+   "number": "126",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "hit-or-kit 360x640 needs a layout choice (page 731 px vs 640 = 1.14x, 83+ px over) and every free-size fix would shrink text. Nothing pushed"
+  },
+  {
+   "date": "2026-10-29",
    "task": "alias loaf one screen",
    "number": "33",
    "executor": "claude-sonnet",
@@ -663,24 +681,6 @@
    "role": "build",
    "passed": "yes",
    "note": "DONE (main ea20ef0; live bytes match for onescreen-shell.css/js and index.html; onescreen_gate on the live URL: A PASS at 390x844 and 360x64"
-  },
-  {
-   "date": "2026-10-26",
-   "task": "copy paste one screen",
-   "number": "53",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "check C (the play page fits the screen) cannot pass without a layout decision. Checks A and B now PASS at 390x844 and 360x640 on the live UR"
-  },
-  {
-   "date": "2026-10-26",
-   "task": "copy paste win sheet tests",
-   "number": "53",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE (main 2de3c2d; live bytes match for onescreen-shell.css/js, style.css, index.html). Check A re-applied (pinned result sheet from the ro"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
