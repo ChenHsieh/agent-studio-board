@@ -195,12 +195,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 260,
+   "count": 261,
    "firstTimePass": 95,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 211,
+   "guessed": 212,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -513,6 +513,15 @@
   },
   {
    "date": "2026-10-29",
+   "task": "glyph gates one screen",
+   "number": "27",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "360x640 still 1.14x the screen (was 1.35x); 390x844 now PASS B,C (was 1.07x; A is \"no hook\", not a fail). Pushed 4571162, live bytes match. "
+  },
+  {
+   "date": "2026-10-29",
    "task": "time material one screen",
    "number": "23",
    "executor": "claude-sonnet",
@@ -668,15 +677,6 @@
    "date": "2026-10-25",
    "task": "lot waits tap roundtrip test",
    "number": "121",
-   "executor": "aider openrouter/deepseek/deepseek-v4-flash",
-   "role": "build",
-   "passed": "yes",
-   "note": "OR LANE OK, branch pushed"
-  },
-  {
-   "date": "2026-10-25",
-   "task": "marble daily pins test",
-   "number": "",
    "executor": "aider openrouter/deepseek/deepseek-v4-flash",
    "role": "build",
    "passed": "yes",
