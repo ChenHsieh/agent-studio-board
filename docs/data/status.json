@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T19:14:26+00:00",
+ "generated": "2026-10-29T19:16:55+00:00",
  "ops": {
   "count": 6,
   "notes": [
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 55,
+    "queued": 54,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2200,
-    "estimateMinutes": 2200
+    "minutes": 2160,
+    "estimateMinutes": 2160
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 56,
+  "queued": 55,
   "running": 1,
   "doneToday": 1,
   "lanes": {
@@ -46,22 +46,13 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2320,
-  "estimatedFinish": "2026-10-31T07:54:26+00:00",
-  "estimateMinutes": 2200
+  "minutesRemaining": 2280,
+  "estimatedFinish": "2026-10-31T07:16:55+00:00",
+  "estimateMinutes": 2160
  },
- "lanes": [
-  {
-   "worker": "Claude",
-   "game": "coat-corridor",
-   "task": "P2FS68_coat corridor one screen",
-   "since": "2026-10-29T19:08:57+00:00",
-   "activity": "2026-10-29T19:09:01+00:00",
-   "commit": null
-  }
- ],
+ "lanes": [],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 0,
  "apiSpentUsd": 320.37,
  "claudeInSession": {
   "runs": 295,
@@ -2881,10 +2872,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 32.63,
+   "costTotalUsd": 39.83,
    "latestChange": {
-    "text": "One screen on phones: port_onescreen (kit 2) (P2FS04)",
-    "at": "2026-10-25T09:12:51+00:00"
+    "text": "One screen at 360x640: board takes the room left, 44 px cell floor (P2FS68)",
+    "at": "2026-10-29T19:15:05+00:00"
    },
    "promo": {
     "files": {
@@ -2894,23 +2885,23 @@
     "caption": "Six floors of coats and cloth: clip, double stitch, and a certified daily."
    },
    "why": "A fashion clip of white lab coats worn over loud colours in a tiled hospital corridor.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "coat corridor one screen",
+   "waitingOn": "none",
    "id": "coat-corridor",
    "number": 122,
    "repo": "coat-corridor",
    "title": "Coat Corridor",
    "line": "Six floors of coats and cloth: clip, double stitch, and a certified daily.",
    "url": "https://chenhsieh.github.io/coat-corridor/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Six floors of coats and cloth: clip, double stitch, and a certified daily.",
    "shelfNote": "",
@@ -2924,33 +2915,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:52:34+00:00",
-   "lastChange": "2026-10-29T19:09:01+00:00",
+   "lastChange": "2026-10-29T19:15:05+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 189074,
     "codexUsdEst": 0.23,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 8,
-    "earlierUsdEst": 28.8,
-    "totalUsdEst": 32.63
+    "claudeUsdEst": 7.2,
+    "earlierRounds": 9,
+    "earlierUsdEst": 32.4,
+    "totalUsdEst": 39.83
    },
    "tasks": [
     {
      "title": "P2FS68_coat corridor one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "coat-corridor: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-29T19:08:57+00:00",
-     "done": null,
+     "since": "2026-10-25T09:57:30+00:00",
+     "done": "2026-10-25T09:57:30+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE. coat-corridor 360x640 C: page 1.03x -> 1.00x (661 -> 640 px); 390x844 stays 1.00x. One CSS line in docs/game.css: .board-shell max-width = min(360, max(308, (100dvh-210px)*360/470)); 7 columns keep a 44 px cell..."
     },
     {
      "title": "P3OR22_coat corridor engine test",
@@ -2983,14 +2974,26 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-29T19:15:05+00:00",
+     "ok": true,
+     "note": "One screen at 360x640: board takes the room left, 44 px cell floor (P2FS68)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-29T19:09:06+00:00",
+     "ok": true,
+     "note": "start: P2FS68",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T09:12:51+00:00",
      "ok": true,
