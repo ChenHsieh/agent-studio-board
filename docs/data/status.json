@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-29T18:12:53+00:00",
+ "generated": "2026-10-29T18:15:28+00:00",
  "ops": {
-  "count": 22,
+  "count": 24,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 65,
+    "queued": 63,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2600,
-    "estimateMinutes": 2600
+    "minutes": 2520,
+    "estimateMinutes": 2520
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 66,
+  "queued": 64,
   "running": 1,
   "doneToday": 1,
   "lanes": {
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2720,
-  "estimatedFinish": "2026-10-31T13:32:53+00:00",
-  "estimateMinutes": 2600
+  "minutesRemaining": 2640,
+  "estimatedFinish": "2026-10-31T12:15:28+00:00",
+  "estimateMinutes": 2520
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "fly-swarm",
-   "task": "P2FS41_fly swarm one screen",
-   "since": "2026-10-29T18:12:02+00:00",
-   "activity": "2026-10-29T18:12:04+00:00",
+   "game": "nobody-looking",
+   "task": "P2FS43_nobody looking win sheet tests",
+   "since": "2026-10-29T18:14:31+00:00",
+   "activity": "2026-10-29T18:14:46+00:00",
    "commit": null
   }
  ],
@@ -3618,7 +3618,7 @@
    ]
   },
   {
-   "nextTask": "nesting-scrap: the whole game fits one phone screen...",
+   "nextTask": null,
    "costTotalUsd": 65.55,
    "latestChange": {
     "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
@@ -3632,23 +3632,23 @@
     "caption": "Cut cookies from a sheet of dough and leave as little."
    },
    "why": "A laser-cutting nesting sheet and a tray of icebox cookies from the feed round.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 9
+    "daysInState": 4
    },
-   "waitingOn": "nesting scrap one screen",
+   "waitingOn": "none",
    "id": "nesting-scrap",
    "number": 66,
    "repo": "nesting-scrap",
    "title": "Cookie Cutter",
    "line": "Cut cookies from a sheet of dough and leave as little.",
    "url": "https://chenhsieh.github.io/nesting-scrap/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Give the nesting puzzle a specific taste and twist",
    "shelfNote": "",
@@ -3666,29 +3666,29 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 1,
     "codexTokens": 621611,
     "codexUsdEst": 0.75,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 17,
-    "earlierUsdEst": 61.2,
+    "claudeUsdEst": 7.2,
+    "earlierRounds": 16,
+    "earlierUsdEst": 57.6,
     "totalUsdEst": 65.55
    },
    "tasks": [
     {
      "title": "P2FS42_nesting scrap one screen",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "nesting-scrap: the whole game fits one phone screen and Next shows after a win",
      "since": "2026-10-25T09:55:29+00:00",
-     "done": null,
+     "done": "2026-10-25T09:55:29+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "NOT YET: nesting-scrap, nothing changed or published. Gate today: A pass (level, last level) at 390 and 360; B fail; C fail (390: 1.09x, 360: 1.34x the screen); D n/a (no goal slot)."
     },
     {
      "title": "P1SD15_studio standard nesting scrap",
@@ -3762,10 +3762,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": {
     "date": "2026-10-20",
@@ -3773,7 +3773,7 @@
     "note": "Smooth but no taste yet"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T03:35:47+00:00",
@@ -7458,23 +7458,23 @@
     "caption": "Lead a swarm of flies with your finger."
    },
    "why": "Steering responses measured from the MaleCNS v1.0 fly connectome's visual-to-descending neuron wiring.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 0
+    "daysInState": 4
    },
-   "waitingOn": "fly swarm one screen",
+   "waitingOn": "none",
    "id": "fly-swarm",
    "number": 18,
    "repo": "fly-swarm",
    "title": "Fly Swarm",
    "line": "",
    "url": "https://chenhsieh.github.io/fly-swarm/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Game-design pass: a goal and a decision per round",
    "shelfNote": "",
@@ -7488,33 +7488,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-09-12T00:28:41+00:00",
-   "lastChange": "2026-10-29T18:12:04+00:00",
+   "lastChange": "2026-10-25T09:55:24+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 1,
     "codexTokens": 430683,
     "codexUsdEst": 0.52,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 11,
-    "earlierUsdEst": 39.6,
+    "claudeUsdEst": 7.2,
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
     "totalUsdEst": 43.72
    },
    "tasks": [
     {
      "title": "P2FS41_fly swarm one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "fly-swarm: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-29T18:12:02+00:00",
-     "done": null,
+     "since": "2026-10-25T09:55:24+00:00",
+     "done": "2026-10-25T09:55:24+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "NOT YET: Gate today: A no hook (no win hook), B fail, C fail (390: 1.12x, 360: 1.43x the screen)."
     },
     {
      "title": "P3OR64_name fly swarm title",
@@ -7575,13 +7575,13 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T01:39:30+00:00",
@@ -16936,15 +16936,15 @@
     "reviseRound": 1,
     "daysInState": 6
    },
-   "waitingOn": "nobody looking one screen",
+   "waitingOn": "nobody looking win sheet tests",
    "id": "nobody-looking",
    "number": 127,
    "repo": "nobody-looking",
    "title": "Nobody Looking",
    "line": "Twelve shelves of eyes and mouths: slide pieces until no face is left.",
    "url": "https://chenhsieh.github.io/nobody-looking/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Slide eyes and mouths until no face is left; placeholder shapes, 12 shelves",
    "shelfNote": "",
@@ -16958,7 +16958,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T17:56:06+00:00",
-   "lastChange": "2026-10-25T09:55:37+00:00",
+   "lastChange": "2026-10-29T18:14:46+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -16973,11 +16973,11 @@
    },
    "tasks": [
     {
-     "title": "P2FS44_nobody looking one screen",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "nobody-looking: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-25T09:55:37+00:00",
+     "title": "P2FS43_nobody looking win sheet tests",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "nobody-looking: put the pinned win sheet in without breaking the game's own tests",
+     "since": "2026-10-29T18:14:31+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -16987,11 +16987,11 @@
      "result": ""
     },
     {
-     "title": "P2FS43_nobody looking win sheet tests",
+     "title": "P2FS44_nobody looking one screen",
      "state": "queued",
      "worker": "Codex",
-     "plan": "nobody-looking: put the pinned win sheet in without breaking the game's own tests",
-     "since": "2026-10-25T09:55:33+00:00",
+     "plan": "nobody-looking: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:55:37+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -17086,8 +17086,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 10
    },
