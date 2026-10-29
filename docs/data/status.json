@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-29T19:39:15+00:00",
+ "generated": "2026-10-29T19:41:45+00:00",
  "ops": {
-  "count": 9,
+  "count": 10,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,43 +20,43 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 51,
+    "queued": 49,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2040,
-    "estimateMinutes": 2040
+    "minutes": 1960,
+    "estimateMinutes": 1960
    },
    "Claude": {
     "queued": 1,
-    "running": 0,
+    "running": 1,
     "doneToday": 1,
-    "minutes": 60,
+    "minutes": 120,
     "estimateMinutes": 60
    }
   },
-  "queued": 52,
-  "running": 0,
+  "queued": 50,
+  "running": 1,
   "doneToday": 1,
   "lanes": {
    "Codex": 1,
-   "Claude": 1
+   "Claude": 2
   },
   "laneCap": {
    "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2100,
-  "estimatedFinish": "2026-10-31T05:39:15+00:00",
-  "estimateMinutes": 2040
+  "minutesRemaining": 2080,
+  "estimatedFinish": "2026-10-31T04:21:45+00:00",
+  "estimateMinutes": 1960
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "hit-or-kit",
-   "task": "P2FS63_hit or kit one screen",
-   "since": "2026-10-29T19:38:25+00:00",
-   "activity": "2026-10-29T19:38:28+00:00",
+   "game": "one-script",
+   "task": "P2FS62_one script one screen",
+   "since": "2026-10-29T19:41:03+00:00",
+   "activity": "2026-10-29T19:41:04+00:00",
    "commit": null
   }
  ],
@@ -2419,7 +2419,7 @@
    ]
   },
   {
-   "nextTask": "checking-desk: the whole game fits one phone screen...",
+   "nextTask": null,
    "costTotalUsd": 47.0,
    "latestChange": {
     "text": "One screen on phones: port_onescreen (kit 2) (P2FS04)",
@@ -2433,23 +2433,23 @@
     "caption": "Six night shifts at a checking desk, each proved by a solver, plus a daily; Chinese and English."
    },
    "why": "An essay on cheap AI output and a flood of machine-made maths papers that experts must check at their own cost.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 4
    },
-   "waitingOn": "checking desk one screen",
+   "waitingOn": "none",
    "id": "checking-desk",
    "number": 124,
    "repo": "checking-desk",
    "title": "Checking Desk",
    "line": "Six night shifts at a checking desk, each proved by a solver, plus a daily; Chinese and English.",
    "url": "https://chenhsieh.github.io/checking-desk/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Six night shifts at a checking desk, each proved by a solver, plus a daily;",
    "shelfNote": "",
@@ -2467,29 +2467,29 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 0,
     "codexTokens": 165898,
     "codexUsdEst": 0.2,
-    "claudeUsdEst": 7.2,
-    "earlierRounds": 11,
-    "earlierUsdEst": 39.6,
+    "claudeUsdEst": 10.8,
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
     "totalUsdEst": 47.0
    },
    "tasks": [
     {
      "title": "P2FS61_checking desk one screen",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "checking-desk: the whole game fits one phone screen and Next shows after a win",
      "since": "2026-10-25T09:56:57+00:00",
-     "done": null,
+     "done": "2026-10-25T09:56:57+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "NOT YET: checking-desk needs a layout choice. 390x844 passes; 360x640 fails C (page 1.27x). The board is a fixed 360x570 canvas with text drawn inside it (hours, \"0 h to dawn\"), so at 360 wide it is ~540 px tall and the..."
     },
     {
      "title": "P1CD02_night desk visual build",
@@ -2535,14 +2535,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T09:13:34+00:00",
@@ -11178,23 +11178,23 @@
     "caption": "Open sample tubes in a freezer box and publish or drop a microbiome finding; 25 cases and a daily."
    },
    "why": "Open sample tubes and decide whether a microbiome finding is real or a reagent-kit contaminant: publish or drop.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 0
+    "daysInState": 4
    },
-   "waitingOn": "hit or kit one screen",
+   "waitingOn": "none",
    "id": "hit-or-kit",
    "number": 126,
    "repo": "hit-or-kit",
    "title": "Hit or Kit",
    "line": "Open sample tubes in a freezer box and publish or drop a microbiome finding; 25 cases and a daily.",
    "url": "https://chenhsieh.github.io/hit-or-kit/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Open sample tubes in a freezer box and publish or drop a microbiome finding; 25",
    "shelfNote": "",
@@ -11212,33 +11212,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T04:19:06+00:00",
-   "lastChange": "2026-10-29T19:38:28+00:00",
+   "lastChange": "2026-10-25T09:57:06+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 14.4,
-    "earlierRounds": 11,
-    "earlierUsdEst": 39.6,
+    "claudeUsdEst": 18.0,
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
     "totalUsdEst": 54.0
    },
    "tasks": [
     {
      "title": "P2FS63_hit or kit one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "hit-or-kit: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-29T19:38:25+00:00",
-     "done": null,
+     "since": "2026-10-25T09:57:06+00:00",
+     "done": "2026-10-25T09:57:06+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "NOT YET: hit-or-kit 360x640 needs a layout choice (page 731 px vs 640 = 1.14x, 83+ px over) and every free-size fix would shrink text. Nothing pushed."
     },
     {
      "title": "P2HK00_which one to drop clarity",
@@ -11299,13 +11299,13 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T09:17:28+00:00",
@@ -17676,7 +17676,7 @@
    ]
   },
   {
-   "nextTask": "one-script: the whole game fits one phone screen...",
+   "nextTask": null,
    "costTotalUsd": 32.62,
    "latestChange": {
     "text": "One screen on phones: port_onescreen (kit 2) (P2FS04)",
@@ -17696,7 +17696,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 4
+    "daysInState": 0
    },
    "waitingOn": "one script one screen",
    "id": "one-script",
@@ -17705,8 +17705,8 @@
    "title": "One Script",
    "line": "Eight maps with par from an exact solver; a greedy bot loses two or more shelves on six of them.",
    "url": "https://chenhsieh.github.io/one-script/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Eight maps with par from an exact solver; a greedy bot loses two or more",
    "shelfNote": "",
@@ -17724,7 +17724,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T19:48:04+00:00",
-   "lastChange": "2026-10-25T09:57:02+00:00",
+   "lastChange": "2026-10-29T19:41:04+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -17740,10 +17740,10 @@
    "tasks": [
     {
      "title": "P2FS62_one script one screen",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "one-script: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-25T09:57:02+00:00",
+     "since": "2026-10-29T19:41:03+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -17782,8 +17782,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
