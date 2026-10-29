@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T04:30:12+00:00",
+ "generated": "2026-10-29T04:32:32+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 66,
+    "queued": 65,
     "running": 1,
     "doneToday": 0,
-    "minutes": 2680,
-    "estimateMinutes": 2680
+    "minutes": 2640,
+    "estimateMinutes": 2640
    },
    "Claude": {
     "queued": 1,
@@ -30,7 +30,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 67,
+  "queued": 66,
   "running": 1,
   "doneToday": 0,
   "lanes": {
@@ -42,18 +42,21 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2740,
-  "estimatedFinish": "2026-10-31T01:10:12+00:00",
-  "estimateMinutes": 2680
+  "minutesRemaining": 2700,
+  "estimatedFinish": "2026-10-31T00:32:32+00:00",
+  "estimateMinutes": 2640
  },
  "lanes": [
   {
    "worker": "Codex",
-   "game": "chai-boil",
-   "task": "P2CB13_chai boil black field look",
-   "since": "2026-10-29T04:29:13+00:00",
-   "activity": "2026-10-29T04:29:07+00:00",
-   "commit": null
+   "game": "gold-star",
+   "task": "gold star",
+   "since": "2026-10-29T04:31:47+00:00",
+   "activity": "2026-10-29T04:32:27+00:00",
+   "commit": {
+    "at": "2026-10-29T04:31:48+00:00",
+    "subject": "start: P2n95_gold-star"
+   }
   }
  ],
  "codexLanes": 1,
@@ -131,7 +134,7 @@
   },
   {
    "day": "2026-10-29",
-   "changes": 1
+   "changes": 2
   }
  ],
  "houseRules": 25,
@@ -2156,20 +2159,20 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 91.11,
+   "costTotalUsd": 91.56,
    "latestChange": {
-    "text": "One screen: crop the scene to the room under the head, swipe from the scene scrolls the...",
-    "at": "2026-10-25T05:58:00+00:00"
+    "text": "feat: show chai as a moving line drawing",
+    "at": "2026-10-29T04:31:46+00:00"
    },
    "promo": null,
    "why": "An AI-made video post of a pot of milk tea foaming up on a wood fire, plus the Lunar Lander game.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 8
+    "daysInState": 0
    },
    "waitingOn": "owner",
    "id": "chai-boil",
@@ -2178,8 +2181,8 @@
    "title": "Chai Boil",
    "line": "One pot, one dial: let the chai rise to the rim, not over it.",
    "url": "https://chenhsieh.github.io/chai-boil/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "hyper-realistic visuals instead of computer-drawn",
    "shelfNote": "",
@@ -2193,33 +2196,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-29T04:29:07+00:00",
+   "lastChange": "2026-10-29T04:31:46+00:00",
    "cost": {
     "apiUsd": 6.73,
-    "codexRuns": 6,
+    "codexRuns": 7,
     "claudeRuns": 11,
     "apiRuns": 3,
-    "codexTokens": 1320538,
-    "codexUsdEst": 1.58,
+    "codexTokens": 1694365,
+    "codexUsdEst": 2.03,
     "claudeUsdEst": 39.6,
     "earlierRounds": 12,
     "earlierUsdEst": 43.2,
-    "totalUsdEst": 91.11
+    "totalUsdEst": 91.56
    },
    "tasks": [
     {
      "title": "P2CB13_chai boil black field look",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "",
-     "since": "2026-10-29T04:29:13+00:00",
-     "done": null,
+     "since": "2026-10-29T03:43:37+00:00",
+     "done": "2026-10-29T03:43:37+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 45,
+     "tokens": 373827,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "feat: show chai as a moving line drawing"
     },
     {
      "title": "P1FS19_chai boil one screen",
@@ -2322,9 +2325,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 20
+    "done": 21
    },
    "verdict": {
     "date": "2026-10-21",
@@ -2332,8 +2335,14 @@
     "note": "Visual revamp, different kitchen"
    },
    "needsYou": "Prayer-flag strip in the mountain hut set: five extra colours on one strip, all six kitchens still pass the contrast check. Suggest: keep it; it costs little and no kitchen failed the contrast check.",
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-29T04:31:46+00:00",
+     "ok": true,
+     "note": "feat: show chai as a moving line drawing",
+     "source": "board note"
+    },
     {
      "at": "2026-10-25T05:58:00+00:00",
      "ok": true,
@@ -2398,12 +2407,6 @@
      "at": "2026-10-24T09:10:16+00:00",
      "ok": true,
      "note": "design: Chai Boil photographic visual round, street stall at night picked",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T23:55:14+00:00",
-     "ok": true,
-     "note": "P3OR28_chai-boil-link-preview: WORKDIR",
      "source": "main commit"
     }
    ]
@@ -9623,7 +9626,7 @@
    ]
   },
   {
-   "nextTask": "Choose a gold-star rule each morning so a...",
+   "nextTask": null,
    "costTotalUsd": 10.8,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -9637,7 +9640,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 3
+    "daysInState": 0
    },
    "waitingOn": "gold star",
    "id": "gold-star",
@@ -9646,7 +9649,7 @@
    "title": "Gold Star",
    "line": "",
    "url": "https://chenhsieh.github.io/gold-star/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
@@ -9660,7 +9663,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:11:01+00:00",
-   "lastChange": "2026-10-25T05:59:25+00:00",
+   "lastChange": "2026-10-29T04:32:27+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -9676,22 +9679,25 @@
    "tasks": [
     {
      "title": "gold star",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Choose a gold-star rule each morning so a class really learns while every desk games the stars: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-10-25T05:59:25+00:00",
+     "since": "2026-10-29T04:31:47+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-29T04:31:48+00:00",
+      "subject": "start: P2n95_gold-star"
+     },
      "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
