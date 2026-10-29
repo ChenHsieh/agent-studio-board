@@ -195,12 +195,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 255,
+   "count": 256,
    "firstTimePass": 95,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 206,
+   "guessed": 207,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -223,12 +223,12 @@
   {
    "executor": "claude-sonnet",
    "role": "fix",
-   "count": 12,
-   "firstTimePass": 64,
+   "count": 13,
+   "firstTimePass": 67,
    "retries": 4,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 7,
+   "guessed": 8,
    "topFailures": [
     "the lesson start depends on the kit keeping [data-pl=\"howto-start\"] an",
     "after any go() to another screen the lesson is dropped and remembered",
@@ -503,6 +503,24 @@
  ],
  "last": [
   {
+   "date": "2026-10-29",
+   "task": "sync onescreen shell fix",
+   "number": "",
+   "executor": "claude-sonnet",
+   "role": "fix",
+   "passed": "yes",
+   "note": "DONE. Copied the fixed docs/onescreen-shell.js/css (P2FS38) into the 22 shipped games that carried the old copies (tractatus-tree was alread"
+  },
+  {
+   "date": "2026-10-29",
+   "task": "fly swarm one screen",
+   "number": "18",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "fly-swarm needs two design choices that are owner's (nothing changed, nothing published). Gate today: A no hook (no win hook), B fail, C fai"
+  },
+  {
    "date": "2026-10-26",
    "task": "review coin dumplings",
    "number": "156",
@@ -658,24 +676,6 @@
   {
    "date": "2026-10-25",
    "task": "glasshouse crew save test",
-   "number": "3",
-   "executor": "aider openrouter/deepseek/deepseek-v4-flash",
-   "role": "build",
-   "passed": "yes",
-   "note": "OR LANE OK, branch pushed"
-  },
-  {
-   "date": "2026-10-25",
-   "task": "glasshouse save settings test",
-   "number": "3",
-   "executor": "aider openrouter/openai/gpt-4.1",
-   "role": "build",
-   "passed": "yes",
-   "note": "OR LANE OK, branch pushed"
-  },
-  {
-   "date": "2026-10-25",
-   "task": "glasshouse save migration test",
    "number": "3",
    "executor": "aider openrouter/deepseek/deepseek-v4-flash",
    "role": "build",

@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T18:10:24+00:00",
+ "generated": "2026-10-29T18:12:53+00:00",
  "ops": {
   "count": 22,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 66,
+    "queued": 65,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2640,
-    "estimateMinutes": 2640
+    "minutes": 2600,
+    "estimateMinutes": 2600
    },
    "Claude": {
     "queued": 1,
     "running": 1,
-    "doneToday": 0,
+    "doneToday": 1,
     "minutes": 120,
     "estimateMinutes": 60
    }
   },
-  "queued": 67,
+  "queued": 66,
   "running": 1,
-  "doneToday": 0,
+  "doneToday": 1,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2760,
-  "estimatedFinish": "2026-10-31T14:10:24+00:00",
-  "estimateMinutes": 2640
+  "minutesRemaining": 2720,
+  "estimatedFinish": "2026-10-31T13:32:53+00:00",
+  "estimateMinutes": 2600
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P2FS69_sync onescreen shell fix",
-   "since": null,
-   "activity": null,
+   "game": "fly-swarm",
+   "task": "P2FS41_fly swarm one screen",
+   "since": "2026-10-29T18:12:02+00:00",
+   "activity": "2026-10-29T18:12:04+00:00",
    "commit": null
   }
  ],
@@ -6793,8 +6793,8 @@
    "nextTask": null,
    "costTotalUsd": 97.71,
    "latestChange": {
-    "text": "One screen on phones: result sheet (P2FS04)",
-    "at": "2026-10-25T08:54:20+00:00"
+    "text": "Sync fixed onescreen-shell (P2FS38 fixes: ghost click guard, bottom room)",
+    "at": "2026-10-29T18:00:25+00:00"
    },
    "promo": null,
    "why": "Images of a concrete tunnel element towed by tugs that floats like a ship, and its section with hollow chambers.",
@@ -6804,7 +6804,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 4
+    "daysInState": 0
    },
    "waitingOn": "none",
    "id": "floating-city",
@@ -6828,7 +6828,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T18:59:22+00:00",
-   "lastChange": "2026-10-25T08:54:20+00:00",
+   "lastChange": "2026-10-29T18:00:25+00:00",
    "cost": {
     "apiUsd": 10.87,
     "codexRuns": 2,
@@ -6914,6 +6914,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-29T18:00:25+00:00",
+     "ok": true,
+     "note": "Sync fixed onescreen-shell (P2FS38 fixes: ghost click guard, bottom room)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T08:54:20+00:00",
      "ok": true,
      "note": "One screen on phones: result sheet (P2FS04)",
@@ -6977,12 +6983,6 @@
      "at": "2026-10-18T19:40:23+00:00",
      "ok": true,
      "note": "review R05: level 2 room taps work by touch at both sizes; no change needed",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-18T18:59:31+00:00",
-     "ok": true,
-     "note": "fix-l2- live : room touch targets now move and tilt with the visible hull after lift-off; level 2 names the two glowing rooms; native-touch gate completes levels 1-12 and a prior-live save retains settings, unlocks, solved ticks, stars, and curr",
      "source": "board note"
     }
    ]
@@ -7443,7 +7443,7 @@
    ]
   },
   {
-   "nextTask": "fly-swarm: the whole game fits one phone screen...",
+   "nextTask": null,
    "costTotalUsd": 43.72,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -7464,7 +7464,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 4
+    "daysInState": 0
    },
    "waitingOn": "fly swarm one screen",
    "id": "fly-swarm",
@@ -7473,8 +7473,8 @@
    "title": "Fly Swarm",
    "line": "",
    "url": "https://chenhsieh.github.io/fly-swarm/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Game-design pass: a goal and a decision per round",
    "shelfNote": "",
@@ -7488,7 +7488,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-09-12T00:28:41+00:00",
-   "lastChange": "2026-10-25T09:55:24+00:00",
+   "lastChange": "2026-10-29T18:12:04+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -7504,10 +7504,10 @@
    "tasks": [
     {
      "title": "P2FS41_fly swarm one screen",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "fly-swarm: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-25T09:55:24+00:00",
+     "since": "2026-10-29T18:12:02+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -7574,8 +7574,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 4
    },
