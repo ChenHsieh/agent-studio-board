@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T22:14:34+00:00",
+ "generated": "2026-10-29T22:17:55+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 41,
+    "queued": 40,
     "running": 1,
     "doneToday": 2,
-    "minutes": 1680,
-    "estimateMinutes": 1680
+    "minutes": 1640,
+    "estimateMinutes": 1640
    },
    "Claude": {
     "queued": 1,
@@ -30,7 +30,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 42,
+  "queued": 41,
   "running": 1,
   "doneToday": 6,
   "lanes": {
@@ -42,18 +42,21 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1740,
-  "estimatedFinish": "2026-10-31T02:14:34+00:00",
-  "estimateMinutes": 1680
+  "minutesRemaining": 1700,
+  "estimatedFinish": "2026-10-31T01:37:55+00:00",
+  "estimateMinutes": 1640
  },
  "lanes": [
   {
    "worker": "Codex",
-   "game": "herbal-of-nowhere",
-   "task": "P3OR45_herbal pages stay open logic",
-   "since": "2026-10-29T22:07:57+00:00",
-   "activity": "2026-10-29T22:07:51+00:00",
-   "commit": null
+   "game": "still-a-heap",
+   "task": "heap board fill and short card",
+   "since": "2026-10-29T22:15:19+00:00",
+   "activity": "2026-10-29T22:17:38+00:00",
+   "commit": {
+    "at": "2026-10-29T22:15:22+00:00",
+    "subject": "start: P2n116_heap-board-fill-and-short-card"
+   }
   }
  ],
  "codexLanes": 1,
@@ -131,7 +134,7 @@
   },
   {
    "day": "2026-10-29",
-   "changes": 21
+   "changes": 22
   }
  ],
  "houseRules": 25,
@@ -10753,10 +10756,10 @@
   },
   {
    "nextTask": "Herbal of Nowhere: opened pages stay open (Undo...",
-   "costTotalUsd": 36.25,
+   "costTotalUsd": 39.85,
    "latestChange": {
     "text": "see",
-    "at": "2026-10-29T21:59:12+00:00"
+    "at": "2026-10-29T22:15:12+00:00"
    },
    "promo": {
     "files": {
@@ -10774,14 +10777,14 @@
     "reviseRound": 1,
     "daysInState": 7
    },
-   "waitingOn": "herbal pages stay open logic",
+   "waitingOn": "herbal pages stay open",
    "id": "herbal-of-nowhere",
    "number": 132,
    "repo": "herbal-of-nowhere",
    "title": "Herbal of Nowhere",
    "line": "Open pages to read their glyph names, compare, then name the last plant; wrong names cost hearts.",
    "url": "https://chenhsieh.github.io/herbal-of-nowhere/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Codex",
    "priority": "P2",
    "priorityNote": "placeholder shapes, 12 folios",
@@ -10796,7 +10799,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-10-29T22:07:51+00:00",
+   "lastChange": "2026-10-29T22:15:12+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -10805,25 +10808,11 @@
     "codexTokens": 209511,
     "codexUsdEst": 0.25,
     "claudeUsdEst": 10.8,
-    "earlierRounds": 7,
-    "earlierUsdEst": 25.2,
-    "totalUsdEst": 36.25
+    "earlierRounds": 8,
+    "earlierUsdEst": 28.8,
+    "totalUsdEst": 39.85
    },
    "tasks": [
-    {
-     "title": "P3OR45_herbal pages stay open logic",
-     "state": "running",
-     "worker": "Codex",
-     "plan": "Herbal of Nowhere: opened pages stay open after Undo, the page counter counts pages, cleaner level 1 result (OpenRouter lane)",
-     "since": "2026-10-29T22:07:57+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2HN00_herbal pages stay open",
      "state": "queued",
@@ -10897,7 +10886,7 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
     "done": 4
    },
@@ -10909,6 +10898,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-29T22:15:12+00:00",
+     "ok": false,
+     "note": "see",
+     "source": "board note"
+    },
     {
      "at": "2026-10-29T21:59:12+00:00",
      "ok": false,
@@ -26375,7 +26370,7 @@
    ]
   },
   {
-   "nextTask": "heap board fill and short card",
+   "nextTask": null,
    "costTotalUsd": 14.83,
    "latestChange": {
     "text": "feat: make every grain count on a one-screen heap",
@@ -26398,7 +26393,7 @@
    "title": "Still A Heap",
    "line": "",
    "url": "https://chenhsieh.github.io/still-a-heap/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
@@ -26412,7 +26407,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:59:53+00:00",
-   "lastChange": "2026-10-29T22:06:41+00:00",
+   "lastChange": "2026-10-29T22:17:38+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -26428,16 +26423,19 @@
    "tasks": [
     {
      "title": "heap board fill and short card",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "",
-     "since": "2026-10-29T22:06:41+00:00",
+     "since": "2026-10-29T22:15:19+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-29T22:15:22+00:00",
+      "subject": "start: P2n116_heap-board-fill-and-short-card"
+     },
      "result": ""
     },
     {
@@ -26456,8 +26454,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
