@@ -195,12 +195,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 258,
+   "count": 259,
    "firstTimePass": 95,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 209,
+   "guessed": 210,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -557,6 +557,15 @@
    "note": "fly-swarm needs two design choices that are owner's (nothing changed, nothing published). Gate today: A no hook (no win hook), B fail, C fai"
   },
   {
+   "date": "2026-10-29",
+   "task": "daily local date",
+   "number": "",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "P2CP00 done: shell already used local date (4b45572); remaining UTC fallbacks in docs/rules.js (toISOString) replaced by localDayKey, test/l"
+  },
+  {
    "date": "2026-10-26",
    "task": "review coin dumplings",
    "number": "156",
@@ -667,15 +676,6 @@
   {
    "date": "2026-10-25",
    "task": "marble act three lessons",
-   "number": "",
-   "executor": "aider openrouter/openai/gpt-4.1",
-   "role": "build",
-   "passed": "yes",
-   "note": "OR LANE OK, branch pushed"
-  },
-  {
-   "date": "2026-10-25",
-   "task": "marble share text",
    "number": "",
    "executor": "aider openrouter/openai/gpt-4.1",
    "role": "build",
