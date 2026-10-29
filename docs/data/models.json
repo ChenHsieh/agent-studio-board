@@ -195,12 +195,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 264,
+   "count": 265,
    "firstTimePass": 95,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 215,
+   "guessed": 216,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -522,6 +522,15 @@
   },
   {
    "date": "2026-10-29",
+   "task": "own ground one screen",
+   "number": "138",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE. own-ground 360x640 C: page 1.04x -> 1.00x (665 -> 640 px); 390x844 1.00x. game.css: .board-shell max-width = min(360, max(308, (100dvh"
+  },
+  {
+   "date": "2026-10-29",
    "task": "alias loaf one screen",
    "number": "33",
    "executor": "claude-sonnet",
@@ -672,15 +681,6 @@
    "role": "build",
    "passed": "yes",
    "note": "the Chinese play page is about 659 px, 11 px over the +8 allowance (zh line heights are taller; the gate measures English only). Option for "
-  },
-  {
-   "date": "2026-10-26",
-   "task": "honest sign one screen",
-   "number": "150",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "the Chinese play page is still about 671 px (1.05x taller than the screen, about 23 px over the +8 allowance), because zh line heights make "
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."

@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-29T19:21:47+00:00",
+ "generated": "2026-10-29T19:24:12+00:00",
  "ops": {
-  "count": 7,
+  "count": 8,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -28,40 +28,31 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "doneToday": 1,
-    "minutes": 120,
+    "minutes": 60,
     "estimateMinutes": 60
    }
   },
   "queued": 55,
-  "running": 1,
+  "running": 0,
   "doneToday": 1,
   "lanes": {
    "Codex": 1,
-   "Claude": 2
+   "Claude": 1
   },
   "laneCap": {
    "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2280,
-  "estimatedFinish": "2026-10-31T07:21:47+00:00",
+  "minutesRemaining": 2220,
+  "estimatedFinish": "2026-10-31T07:24:12+00:00",
   "estimateMinutes": 2160
  },
- "lanes": [
-  {
-   "worker": "Claude",
-   "game": "own-ground",
-   "task": "P2FS67_own ground one screen",
-   "since": "2026-10-29T19:17:00+00:00",
-   "activity": "2026-10-29T19:20:48+00:00",
-   "commit": null
-  }
- ],
+ "lanes": [],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 0,
  "apiSpentUsd": 320.37,
  "claudeInSession": {
   "runs": 295,
@@ -18464,11 +18455,11 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 39.81,
+   "nextTask": "Review of the first build (queued)",
+   "costTotalUsd": 47.01,
    "latestChange": {
-    "text": "One screen on phones: port_onescreen (kit 4) (P2FS04)",
-    "at": "2026-10-25T09:22:57+00:00"
+    "text": "One screen at 360x640: board takes the room left (44 px cell floor), swipe on the board...",
+    "at": "2026-10-29T19:22:31+00:00"
    },
    "promo": {
     "files": {
@@ -18486,7 +18477,7 @@
     "reviseRound": 0,
     "daysInState": 7
    },
-   "waitingOn": "own ground one screen",
+   "waitingOn": "none",
    "id": "own-ground",
    "number": 138,
    "repo": "own-ground",
@@ -18508,33 +18499,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T19:36:08+00:00",
-   "lastChange": "2026-10-29T19:20:48+00:00",
+   "lastChange": "2026-10-29T19:22:31+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 0,
     "codexTokens": 176445,
     "codexUsdEst": 0.21,
-    "claudeUsdEst": 14.4,
-    "earlierRounds": 7,
-    "earlierUsdEst": 25.2,
-    "totalUsdEst": 39.81
+    "claudeUsdEst": 18.0,
+    "earlierRounds": 8,
+    "earlierUsdEst": 28.8,
+    "totalUsdEst": 47.01
    },
    "tasks": [
     {
      "title": "P2FS67_own ground one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "own-ground: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-29T19:17:00+00:00",
-     "done": null,
+     "since": "2026-10-25T09:57:26+00:00",
+     "done": "2026-10-25T09:57:26+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE. own-ground 360x640 C: page 1.04x -> 1.00x (665 -> 640 px); 390x844 1.00x. game.css: .board-shell max-width = min(360, max(308, (100dvh-272px)*360/430)), 44 px cell floor (7 columns). B: the board trapped swipes at..."
     },
     {
      "title": "P2RL35_merge credits own ground",
@@ -18609,9 +18600,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": {
     "date": "2026-10-22",
@@ -18621,6 +18612,18 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-29T19:22:31+00:00",
+     "ok": true,
+     "note": "One screen at 360x640: board takes the room left (44 px cell floor), swipe on the board pans the page (P2FS67)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-29T19:17:02+00:00",
+     "ok": true,
+     "note": "start: P2FS67",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T09:22:57+00:00",
      "ok": true,
@@ -18679,18 +18682,6 @@
      "at": "2026-10-22T19:55:33+00:00",
      "ok": true,
      "note": "feat: Own Ground, build the outline, take the scaffolding away, walk out",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T19:37:30+00:00",
-     "ok": true,
-     "note": "feat: Own Ground starts from the game template",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T19:36:08+00:00",
-     "ok": true,
-     "note": "Initial commit",
      "source": "main commit"
     }
    ]
