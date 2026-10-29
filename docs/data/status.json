@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T11:44:40+00:00",
+ "generated": "2026-10-29T11:47:00+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,8 +16,8 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 66,
-    "running": 0,
+    "queued": 65,
+    "running": 1,
     "doneToday": 0,
     "minutes": 2640,
     "estimateMinutes": 2640
@@ -30,8 +30,8 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 67,
-  "running": 0,
+  "queued": 66,
+  "running": 1,
   "doneToday": 0,
   "lanes": {
    "Codex": 1,
@@ -43,11 +43,23 @@
   },
   "codexPaused": false,
   "minutesRemaining": 2700,
-  "estimatedFinish": "2026-10-31T07:44:40+00:00",
+  "estimatedFinish": "2026-10-31T07:47:00+00:00",
   "estimateMinutes": 2640
  },
- "lanes": [],
- "codexLanes": 0,
+ "lanes": [
+  {
+   "worker": "Codex",
+   "game": "ac-remote",
+   "task": "ac remote",
+   "since": "2026-10-29T11:44:59+00:00",
+   "activity": "2026-10-29T11:46:46+00:00",
+   "commit": {
+    "at": "2026-10-29T11:45:00+00:00",
+    "subject": "start: P2n96_ac-remote"
+   }
+  }
+ ],
+ "codexLanes": 1,
  "claudeWorkers": 0,
  "apiSpentUsd": 320.37,
  "claudeInSession": {
@@ -322,7 +334,7 @@
    ]
   },
   {
-   "nextTask": "Swap office seats each hour so nobody gets...",
+   "nextTask": null,
    "costTotalUsd": 10.8,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -336,7 +348,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 4
+    "daysInState": 0
    },
    "waitingOn": "ac remote",
    "id": "ac-remote",
@@ -345,7 +357,7 @@
    "title": "Ac Remote",
    "line": "",
    "url": "https://chenhsieh.github.io/ac-remote/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
@@ -359,7 +371,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:13:24+00:00",
-   "lastChange": "2026-10-25T05:59:25+00:00",
+   "lastChange": "2026-10-29T11:46:46+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -375,22 +387,25 @@
    "tasks": [
     {
      "title": "ac remote",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Swap office seats each hour so nobody gets up to touch the air-conditioner remote: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-10-25T05:59:25+00:00",
+     "since": "2026-10-29T11:44:59+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-29T11:45:00+00:00",
+      "subject": "start: P2n96_ac-remote"
+     },
      "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
