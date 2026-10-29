@@ -195,12 +195,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 270,
+   "count": 271,
    "firstTimePass": 95,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 221,
+   "guessed": 222,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -531,6 +531,15 @@
   },
   {
    "date": "2026-10-29",
+   "task": "pigeon salon one screen",
+   "number": "135",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE: pigeon-salon one screen. 360x640 page 1.04x -> fits (gate PASS strict, local and live); 390x844 already passed. Change: docs/game.css "
+  },
+  {
+   "date": "2026-10-29",
    "task": "server stress one screen",
    "number": "88",
    "executor": "claude-sonnet",
@@ -672,15 +681,6 @@
    "role": "review",
    "passed": "yes",
    "note": "a stranger cannot tell what the marks mean. C/E glyphs look like a key and a keyhole, and after Serve the sheet hides which marks were wrong"
-  },
-  {
-   "date": "2026-10-26",
-   "task": "anechoic fugue one screen",
-   "number": "56",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "no",
-   "note": "check C (page fits) is not fixed; B is. A PASS and B PASS at 390x"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
