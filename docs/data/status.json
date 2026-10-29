@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T18:20:24+00:00",
+ "generated": "2026-10-29T18:22:47+00:00",
  "ops": {
   "count": 24,
   "notes": [
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 63,
+    "queued": 62,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2520,
-    "estimateMinutes": 2520
+    "minutes": 2480,
+    "estimateMinutes": 2480
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 64,
+  "queued": 63,
   "running": 1,
   "doneToday": 1,
   "lanes": {
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2640,
-  "estimatedFinish": "2026-10-31T12:20:24+00:00",
-  "estimateMinutes": 2520
+  "minutesRemaining": 2600,
+  "estimatedFinish": "2026-10-31T11:42:47+00:00",
+  "estimateMinutes": 2480
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "nobody-looking",
-   "task": "P2FS43_nobody looking win sheet tests",
-   "since": "2026-10-29T18:14:31+00:00",
-   "activity": "2026-10-29T18:19:31+00:00",
+   "task": "P2FS44_nobody looking one screen",
+   "since": "2026-10-29T18:21:29+00:00",
+   "activity": "2026-10-29T18:21:41+00:00",
    "commit": null
   }
  ],
@@ -16914,7 +16914,7 @@
    ]
   },
   {
-   "nextTask": "nobody-looking: the whole game fits one phone screen...",
+   "nextTask": null,
    "costTotalUsd": 68.66,
    "latestChange": {
     "text": "One screen (A): pinned result sheet via port_onescreen; meta.draggable keeps dish drags...",
@@ -16936,7 +16936,7 @@
     "reviseRound": 1,
     "daysInState": 6
    },
-   "waitingOn": "nobody looking win sheet tests",
+   "waitingOn": "nobody looking one screen",
    "id": "nobody-looking",
    "number": 127,
    "repo": "nobody-looking",
@@ -16958,26 +16958,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T17:56:06+00:00",
-   "lastChange": "2026-10-29T18:19:31+00:00",
+   "lastChange": "2026-10-29T18:21:41+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 9,
+    "claudeRuns": 10,
     "apiRuns": 0,
     "codexTokens": 215851,
     "codexUsdEst": 0.26,
-    "claudeUsdEst": 32.4,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
+    "claudeUsdEst": 36.0,
+    "earlierRounds": 9,
+    "earlierUsdEst": 32.4,
     "totalUsdEst": 68.66
    },
    "tasks": [
     {
-     "title": "P2FS43_nobody looking win sheet tests",
+     "title": "P2FS44_nobody looking one screen",
      "state": "running",
      "worker": "Claude",
-     "plan": "nobody-looking: put the pinned win sheet in without breaking the game's own tests",
-     "since": "2026-10-29T18:14:31+00:00",
+     "plan": "nobody-looking: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-29T18:21:29+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -16987,18 +16987,18 @@
      "result": ""
     },
     {
-     "title": "P2FS44_nobody looking one screen",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "nobody-looking: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-25T09:55:37+00:00",
-     "done": null,
+     "title": "P2FS43_nobody looking win sheet tests",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "nobody-looking: put the pinned win sheet in without breaking the game's own tests",
+     "since": "2026-10-25T09:55:33+00:00",
+     "done": "2026-10-25T09:55:33+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE (A and C; B left for P2FS44). Published to main, live bytes match (index.html, game.js, kit/input.js, kit/onescreen.js/css). Live gate: A pass at 390x844 and 360x640 (level, last level); C pass; B fail (board..."
     },
     {
      "title": "P1NL03_daily from the hard bank",
@@ -17086,10 +17086,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 10
+    "done": 11
    },
    "verdict": {
     "date": "2026-10-23",

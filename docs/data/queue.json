@@ -1,5 +1,5 @@
 {
- "generated": 1793297745,
+ "generated": 1793298185,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -28,8 +28,8 @@
  },
  "tasks": [
   {
-   "id": "P2FS43_nobody-looking-win-sheet-tests",
-   "request": "nobody-looking: put the pinned win sheet in without breaking the game's own tests",
+   "id": "P2FS44_nobody-looking-one-screen",
+   "request": "nobody-looking: the whole game fits one phone screen and Next shows after a win",
    "game": "Nobody Looking",
    "route": "Claude",
    "model": "sonnet",
@@ -37,12 +37,14 @@
    "kind": "visual",
    "size": "several repos",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P2FS43_nobody-looking-win-sheet-tests"
+   ],
    "priority": "P2",
    "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
    "state": "running",
-   "at": 1792922133,
-   "created": 1792922133
+   "at": 1792922137,
+   "created": 1792922137
   },
   {
    "id": "P3CF07_flaky-320-today-drag",
@@ -981,27 +983,6 @@
    ],
    "created": 1792908813,
    "estPercentOfWeek": 0.25
-  },
-  {
-   "id": "P2FS44_nobody-looking-one-screen",
-   "request": "nobody-looking: the whole game fits one phone screen and Next shows after a win",
-   "game": "Nobody Looking",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P2FS43_nobody-looking-win-sheet-tests"
-   ],
-   "priority": "P2",
-   "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2FS43_nobody-looking-win-sheet-tests"
-   ],
-   "created": 1792922137
   },
   {
    "id": "P2FS66_pigeon-salon-one-screen",
