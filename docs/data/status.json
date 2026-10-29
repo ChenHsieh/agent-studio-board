@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T20:01:30+00:00",
+ "generated": "2026-10-29T20:04:05+00:00",
  "ops": {
   "count": 8,
   "notes": [
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 46,
+    "queued": 44,
     "running": 1,
     "doneToday": 0,
-    "minutes": 1880,
-    "estimateMinutes": 1880
+    "minutes": 1800,
+    "estimateMinutes": 1800
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 47,
+  "queued": 45,
   "running": 2,
   "doneToday": 1,
   "lanes": {
@@ -46,33 +46,25 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2000,
-  "estimatedFinish": "2026-10-31T03:21:30+00:00",
-  "estimateMinutes": 1880
+  "minutesRemaining": 1920,
+  "estimatedFinish": "2026-10-31T02:04:05+00:00",
+  "estimateMinutes": 1800
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "the-folder",
-   "task": "P2FS55_the folder one screen",
-   "since": "2026-10-29T19:54:23+00:00",
-   "activity": "2026-10-29T20:00:32+00:00",
-   "commit": null
-  },
   {
    "worker": "Codex",
    "game": "clean-features",
    "task": "P3CF07_flaky 320 today drag",
    "since": "2026-10-29T19:54:21+00:00",
-   "activity": "2026-10-29T20:01:25+00:00",
+   "activity": "2026-10-29T20:04:02+00:00",
    "commit": {
-    "at": "2026-10-29T19:54:22+00:00",
-    "subject": "start: P3CF07_flaky-320-today-drag"
+    "at": "2026-10-29T20:02:25+00:00",
+    "subject": "wip: P3CF07_flaky-320-today-drag (Codex lane autosave 16:02)"
    }
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 1,
+ "claudeWorkers": 0,
  "apiSpentUsd": 320.37,
  "claudeInSession": {
   "runs": 295,
@@ -20694,7 +20686,7 @@
    ]
   },
   {
-   "nextTask": "refusal-detour: the whole game fits one phone screen...",
+   "nextTask": "Why this exists: finish the rollout on refusal-detour...",
    "costTotalUsd": 43.77,
    "latestChange": {
     "text": "No accidental zoom on phones:",
@@ -20716,7 +20708,7 @@
     "reviseRound": 0,
     "daysInState": 4
    },
-   "waitingOn": "refusal detour one screen",
+   "waitingOn": "refusal detour why rollout",
    "id": "refusal-detour",
    "number": 40,
    "repo": "refusal-detour",
@@ -20742,30 +20734,16 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 1,
     "codexTokens": 478200,
     "codexUsdEst": 0.57,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 12,
-    "earlierUsdEst": 43.2,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
     "totalUsdEst": 43.77
    },
    "tasks": [
-    {
-     "title": "P2FS54_refusal detour one screen",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "refusal-detour: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-25T09:56:24+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P3PL08_refusal detour why rollout",
      "state": "queued",
@@ -20779,6 +20757,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2FS54_refusal detour one screen",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "refusal-detour: the whole game fits one phone screen and Next shows after a win",
+     "since": "2026-10-25T09:56:24+00:00",
+     "done": "2026-10-25T09:56:24+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "NOT YET: refusal-detour, no change made. The gate cannot reach a win: it finds no Next button at 390x844 or 360x640 (\"no next button\" at board, top and bottom). The result screen does have #next/#again (app.js..."
     },
     {
      "title": "P1SD33_studio standard refusal detour",
@@ -20838,10 +20830,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": null,
    "needsYou": null,
@@ -27741,23 +27733,23 @@
    },
    "promo": null,
    "why": "A careless RNA folding program as the opponent, one of three greedy algorithms in the overnight Fool the Algorithm build.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "the folder one screen",
+   "waitingOn": "none",
    "id": "the-folder",
    "number": 46,
    "repo": "the-folder",
    "title": "The Folder",
    "line": "Change a bead to make the first pair block the rest.",
    "url": "https://chenhsieh.github.io/the-folder/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Simplify the first minute, show the outcome of each choice",
    "shelfNote": "",
@@ -27775,29 +27767,29 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 1,
     "codexTokens": 487250,
     "codexUsdEst": 0.58,
-    "claudeUsdEst": 7.2,
-    "earlierRounds": 13,
-    "earlierUsdEst": 46.8,
+    "claudeUsdEst": 10.8,
+    "earlierRounds": 12,
+    "earlierUsdEst": 43.2,
     "totalUsdEst": 54.58
    },
    "tasks": [
     {
      "title": "P2FS55_the folder one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "the-folder: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-29T19:54:23+00:00",
-     "done": null,
+     "since": "2026-10-25T09:56:28+00:00",
+     "done": "2026-10-25T09:56:28+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE: the-folder one screen. Win result plus Again/Next now a bottom sheet (Next first, full width) at 390x844 and 360x640; gate PASS strict, local and live (live index.html/style.css/v1.js bytes match main )."
     },
     {
      "title": "P3OR35_the folder link preview",
@@ -27858,13 +27850,13 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-29T20:00:32+00:00",
@@ -31568,7 +31560,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:13:13+00:00",
-   "lastChange": "2026-10-29T20:01:25+00:00",
+   "lastChange": "2026-10-29T20:04:02+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -31594,8 +31586,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-10-29T19:54:22+00:00",
-      "subject": "start: P3CF07_flaky-320-today-drag"
+      "at": "2026-10-29T20:02:25+00:00",
+      "subject": "wip: P3CF07_flaky-320-today-drag (Codex lane autosave 16:02)"
      },
      "result": ""
     },

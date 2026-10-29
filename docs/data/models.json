@@ -195,12 +195,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 271,
+   "count": 273,
    "firstTimePass": 95,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 222,
+   "guessed": 224,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -585,6 +585,24 @@
   },
   {
    "date": "2026-10-29",
+   "task": "the folder one screen",
+   "number": "46",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE: the-folder one screen. Win result plus Again/Next now a bottom sheet (Next first, full width) at 390x844 and 360x640; gate PASS strict"
+  },
+  {
+   "date": "2026-10-29",
+   "task": "refusal detour one screen",
+   "number": "40",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "refusal-detour, no change made. The gate cannot reach a win: it finds no Next button at 390x844 or 360x640 (\"no next button\" at board, top a"
+  },
+  {
+   "date": "2026-10-29",
    "task": "alias loaf one screen",
    "number": "33",
    "executor": "claude-sonnet",
@@ -663,24 +681,6 @@
    "role": "build",
    "passed": "yes",
    "note": "fly-swarm needs two design choices that are owner's (nothing changed, nothing published). Gate today: A no hook (no win hook), B fail, C fai"
-  },
-  {
-   "date": "2026-10-29",
-   "task": "daily local date",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "P2CP00 done: shell already used local date (4b45572); remaining UTC fallbacks in docs/rules.js (toISOString) replaced by localDayKey, test/l"
-  },
-  {
-   "date": "2026-10-26",
-   "task": "review coin dumplings",
-   "number": "156",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "a stranger cannot tell what the marks mean. C/E glyphs look like a key and a keyhole, and after Serve the sheet hides which marks were wrong"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
