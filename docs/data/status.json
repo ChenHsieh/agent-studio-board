@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-29T19:24:12+00:00",
+ "generated": "2026-10-29T19:26:54+00:00",
  "ops": {
-  "count": 8,
+  "count": 6,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,39 +20,48 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 54,
+    "queued": 53,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2160,
-    "estimateMinutes": 2160
+    "minutes": 2120,
+    "estimateMinutes": 2120
    },
    "Claude": {
     "queued": 1,
-    "running": 0,
+    "running": 1,
     "doneToday": 1,
-    "minutes": 60,
+    "minutes": 120,
     "estimateMinutes": 60
    }
   },
-  "queued": 55,
-  "running": 0,
+  "queued": 54,
+  "running": 1,
   "doneToday": 1,
   "lanes": {
    "Codex": 1,
-   "Claude": 1
+   "Claude": 2
   },
   "laneCap": {
    "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2220,
-  "estimatedFinish": "2026-10-31T07:24:12+00:00",
-  "estimateMinutes": 2160
+  "minutesRemaining": 2240,
+  "estimatedFinish": "2026-10-31T06:46:54+00:00",
+  "estimateMinutes": 2120
  },
- "lanes": [],
+ "lanes": [
+  {
+   "worker": "Claude",
+   "game": "server-stress",
+   "task": "P2FS65_server stress one screen",
+   "since": "2026-10-29T19:24:54+00:00",
+   "activity": "2026-10-29T19:24:57+00:00",
+   "commit": null
+  }
+ ],
  "codexLanes": 0,
- "claudeWorkers": 0,
+ "claudeWorkers": 1,
  "apiSpentUsd": 320.37,
  "claudeInSession": {
   "runs": 295,
@@ -4372,8 +4381,8 @@
    "nextTask": null,
    "costTotalUsd": 83.44,
    "latestChange": {
-    "text": "One screen: one row of controls, Reset and Why behind More, swipe from empty plate scrolls",
-    "at": "2026-10-25T07:33:51+00:00"
+    "text": "Daily fallback day key is the local date, not UTC (P2CP00)",
+    "at": "2026-10-29T18:44:27+00:00"
    },
    "promo": {
     "files": {
@@ -4414,7 +4423,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:40:04+00:00",
-   "lastChange": "2026-10-25T07:33:51+00:00",
+   "lastChange": "2026-10-29T18:44:27+00:00",
    "cost": {
     "apiUsd": 3.26,
     "codexRuns": 5,
@@ -4556,6 +4565,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-29T18:44:27+00:00",
+     "ok": true,
+     "note": "Daily fallback day key is the local date, not UTC (P2CP00)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T07:33:51+00:00",
      "ok": true,
      "note": "One screen: one row of controls, Reset and Why behind More, swipe from empty plate scrolls",
@@ -4620,12 +4635,6 @@
      "ok": true,
      "note": "fix: change daily at local midnight",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-21T17:13:29+00:00",
-     "ok": true,
-     "note": "fix: change daily at local midnight",
-     "source": "main commit"
     }
    ],
    "releaseHeld": true
@@ -23401,7 +23410,7 @@
    ]
   },
   {
-   "nextTask": "server-stress: the whole game fits one phone screen...",
+   "nextTask": null,
    "costTotalUsd": 65.2,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -23430,8 +23439,8 @@
    "title": "Server Stress",
    "line": "Night shift in a server room: every rack warms a light.",
    "url": "https://chenhsieh.github.io/server-stress/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Data-centre story with a human side, real tradeoffs instead",
    "shelfNote": "",
@@ -23449,7 +23458,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:44:50+00:00",
-   "lastChange": "2026-10-25T09:57:16+00:00",
+   "lastChange": "2026-10-29T19:24:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -23465,10 +23474,10 @@
    "tasks": [
     {
      "title": "P2FS65_server stress one screen",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "server-stress: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-25T09:57:16+00:00",
+     "since": "2026-10-29T19:24:54+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -23549,8 +23558,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 5
    },
