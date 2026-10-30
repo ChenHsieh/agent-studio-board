@@ -195,12 +195,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 274,
+   "count": 275,
    "firstTimePass": 95,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 224,
+   "guessed": 225,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -503,6 +503,15 @@
  ],
  "last": [
   {
+   "date": "2026-10-30",
+   "task": "blackout notice one screen",
+   "number": "130",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "the page only fails because of the first-run lesson. Measured (360x640): 647/640 without the lesson (passes, within 8 px), 838/640 with the "
+  },
+  {
    "date": "2026-10-29",
    "task": "review still a heap and out of the corner",
    "number": "161",
@@ -672,15 +681,6 @@
    "role": "build",
    "passed": "partial",
    "note": "matchmaker-chat, nothing published (the repo's browser test newly fails with my partial fix, and two parts need your wording/layout call)."
-  },
-  {
-   "date": "2026-10-29",
-   "task": "nobody looking one screen",
-   "number": "127",
-   "executor": "claude-sonnet",
-   "role": "design",
-   "passed": "yes",
-   "note": "nobody-looking. Live gate: A pass, C pass (page fits, 390 and 360), B fail. Published to main, live game.js matches; all 5 repo tests pass."
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."

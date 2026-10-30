@@ -1,11 +1,15 @@
 {
- "generated": "2026-10-30T04:35:45+00:00",
+ "generated": "2026-10-30T04:38:57+00:00",
  "ops": {
-  "count": 0,
-  "notes": [],
+  "count": 1,
+  "notes": [
+   "A running task has shown no progress for over 3 hours."
+  ],
   "info": []
  },
- "about": [],
+ "about": [
+  "A running task has shown no progress for over 3 hours."
+ ],
  "project": {
   "name": "Game studio",
   "noun": "game",
@@ -16,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 41,
+    "queued": 40,
     "running": 0,
     "doneToday": 0,
-    "minutes": 1640,
-    "estimateMinutes": 1640
+    "minutes": 1600,
+    "estimateMinutes": 1600
    },
    "Claude": {
     "queued": 1,
@@ -30,7 +34,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 42,
+  "queued": 41,
   "running": 0,
   "doneToday": 0,
   "lanes": {
@@ -42,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1700,
-  "estimatedFinish": "2026-10-31T07:55:45+00:00",
-  "estimateMinutes": 1640
+  "minutesRemaining": 1660,
+  "estimatedFinish": "2026-10-31T07:18:57+00:00",
+  "estimateMinutes": 1600
  },
  "lanes": [],
  "codexLanes": 0,
@@ -1642,7 +1646,7 @@
    ]
   },
   {
-   "nextTask": "blackout-notice: the whole game fits one phone screen...",
+   "nextTask": null,
    "costTotalUsd": 51.12,
    "latestChange": {
     "text": "One screen on phones: port_onescreen (kit 4) (P2FS04)",
@@ -1656,13 +1660,13 @@
     "caption": "Black out words on a stairwell notice until it says something kinder; 20 notices and a daily."
    },
    "why": "A scruffy hand-lettered hiring post and a job ad written mostly as a list of what the company is not.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 6
+    "daysInState": 4
    },
    "waitingOn": "owner",
    "id": "blackout-notice",
@@ -1671,8 +1675,8 @@
    "title": "Blackout Notice",
    "line": "Black out words on a stairwell notice until it says something kinder; 20 notices and a daily.",
    "url": "https://chenhsieh.github.io/blackout-notice/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Black out words on a stairwell notice until it says something kinder; 20",
    "shelfNote": "",
@@ -1694,29 +1698,29 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
-    "claudeRuns": 10,
+    "claudeRuns": 11,
     "apiRuns": 0,
     "codexTokens": 601307,
     "codexUsdEst": 0.72,
-    "claudeUsdEst": 36.0,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
+    "claudeUsdEst": 39.6,
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
     "totalUsdEst": 51.12
    },
    "tasks": [
     {
      "title": "P2FS50_blackout notice one screen",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "blackout-notice: the whole game fits one phone screen and Next shows after a win",
      "since": "2026-10-25T09:56:05+00:00",
-     "done": null,
+     "done": "2026-10-25T09:56:05+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "NOT YET: the page only fails because of the first-run lesson. Measured (360x640): 647/640 without the lesson (passes, within 8 px), 838/640 with the lesson, where the two lesson texts (Chinese-answer note 96 px + step..."
     },
     {
      "title": "P2BN07_fix couplet first minute",
@@ -1818,10 +1822,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 13
+    "done": 14
    },
    "verdict": {
     "date": "2026-10-24",
@@ -1829,7 +1833,7 @@
     "note": "The couplet game is a real choice and the reveal is the payoff, but nothing teaches the first move and the reveal marks are not explained"
    },
    "needsYou": "Read the 20 notices before it is promoted: the wording was written by the agent and no person has read it. Suggest: read levels 1 to 20 once, fix tone, then promote.",
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T09:16:57+00:00",
