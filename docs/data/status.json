@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-30T04:50:34+00:00",
+ "generated": "2026-10-30T04:53:47+00:00",
  "ops": {
-  "count": 1,
+  "count": 2,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -28,40 +28,31 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "doneToday": 0,
-    "minutes": 120,
+    "minutes": 60,
     "estimateMinutes": 60
    }
   },
   "queued": 39,
-  "running": 1,
+  "running": 0,
   "doneToday": 0,
   "lanes": {
    "Codex": 1,
-   "Claude": 2
+   "Claude": 1
   },
   "laneCap": {
    "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1640,
-  "estimatedFinish": "2026-10-31T06:10:34+00:00",
+  "minutesRemaining": 1580,
+  "estimatedFinish": "2026-10-31T06:13:47+00:00",
   "estimateMinutes": 1520
  },
- "lanes": [
-  {
-   "worker": "Claude",
-   "game": "seal-carver",
-   "task": "P2FS46_seal carver one screen",
-   "since": "2026-10-30T04:46:06+00:00",
-   "activity": "2026-10-30T04:49:55+00:00",
-   "commit": null
-  }
- ],
+ "lanes": [],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 0,
  "apiSpentUsd": 320.37,
  "claudeInSession": {
   "runs": 298,
@@ -23014,23 +23005,23 @@
     "caption": "Carve a short phrase into a square seal stone, one box."
    },
    "why": "A video of a seal-editor tool for Chinese seal carving.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "seal carver one screen",
+   "waitingOn": "none",
    "id": "seal-carver",
    "number": 80,
    "repo": "seal-carver",
    "title": "Seal Carver",
    "line": "Carve a short phrase into a square seal stone, one box.",
    "url": "https://chenhsieh.github.io/seal-carver/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Teach placement so it is reasoning, not trial and error",
    "shelfNote": "",
@@ -23052,29 +23043,29 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 2,
     "codexTokens": 129278,
     "codexUsdEst": 0.16,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 17,
-    "earlierUsdEst": 61.2,
+    "claudeUsdEst": 7.2,
+    "earlierRounds": 16,
+    "earlierUsdEst": 57.6,
     "totalUsdEst": 64.96
    },
    "tasks": [
     {
      "title": "P2FS46_seal carver one screen",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "seal-carver: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-30T04:46:06+00:00",
-     "done": null,
+     "since": "2026-10-25T09:55:46+00:00",
+     "done": "2026-10-25T09:55:46+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "NOT YET (one gate line left): seal-carver now fits the screen in play (C passes: 640/640 at 360x640 where it was 1.09x, 844/844 at 390x844, 568/568 at 320x568), live on main (, live bytes match). B still fails only at..."
     },
     {
      "title": "P1SC00_illegal move w2h3 cannot start",
@@ -23135,13 +23126,13 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-30T04:49:55+00:00",
