@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T17:25:10+00:00",
+ "generated": "2026-10-30T17:27:40+00:00",
  "ops": {
   "count": 3,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 45,
+    "queued": 44,
     "running": 0,
     "doneToday": 3,
-    "minutes": 1800,
-    "estimateMinutes": 1800
+    "minutes": 1760,
+    "estimateMinutes": 1760
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 9,
+    "doneToday": 10,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 46,
+  "queued": 45,
   "running": 6,
-  "doneToday": 12,
+  "doneToday": 13,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2220,
-  "estimatedFinish": "2026-10-31T23:25:10+00:00",
-  "estimateMinutes": 1800
+  "minutesRemaining": 2180,
+  "estimatedFinish": "2026-10-31T22:47:40+00:00",
+  "estimateMinutes": 1760
  },
  "lanes": [
   {
@@ -64,7 +64,7 @@
    "game": "gif-cities",
    "task": "P1GC01_gif cities loading and layout",
    "since": "2026-10-30T17:11:13+00:00",
-   "activity": "2026-10-30T17:20:21+00:00",
+   "activity": "2026-10-30T17:27:01+00:00",
    "commit": null
   },
   {
@@ -85,10 +85,10 @@
   },
   {
    "worker": "Claude",
-   "game": "long-way-round",
-   "task": "P2LR00_long way round core",
-   "since": "2026-10-30T16:53:55+00:00",
-   "activity": "2026-10-30T17:24:57+00:00",
+   "game": "Multiple games",
+   "task": "P2LR01_review long way round",
+   "since": null,
+   "activity": null,
    "commit": null
   },
   {
@@ -4428,8 +4428,8 @@
    "nextTask": null,
    "costTotalUsd": 83.44,
    "latestChange": {
-    "text": "Daily fallback day key is the local date, not UTC (P2CP00)",
-    "at": "2026-10-29T18:44:27+00:00"
+    "text": "Name More and Close in Chinese (were English on the zh page)",
+    "at": "2026-10-30T17:14:47+00:00"
    },
    "promo": {
     "files": {
@@ -4470,7 +4470,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:40:04+00:00",
-   "lastChange": "2026-10-29T18:44:27+00:00",
+   "lastChange": "2026-10-30T17:14:47+00:00",
    "cost": {
     "apiUsd": 3.26,
     "codexRuns": 5,
@@ -4612,6 +4612,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-30T17:14:47+00:00",
+     "ok": true,
+     "note": "Name More and Close in Chinese (were English on the zh page)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-29T18:44:27+00:00",
      "ok": true,
      "note": "Daily fallback day key is the local date, not UTC (P2CP00)",
@@ -4676,12 +4682,6 @@
      "ok": true,
      "note": "P3OR54_cymatic-plate-credits-page: WORKDIR",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T17:13:31+00:00",
-     "ok": true,
-     "note": "fix: change daily at local midnight",
-     "source": "board note"
     }
    ]
   },
@@ -8912,7 +8912,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:37:00+00:00",
-   "lastChange": "2026-10-30T17:20:21+00:00",
+   "lastChange": "2026-10-30T17:27:01+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -13887,7 +13887,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 8
+    "daysInState": 9
    },
    "waitingOn": "none",
    "id": "llm-game-of-life",
@@ -14278,15 +14278,15 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "long way round core",
+   "waitingOn": "fix long way round after review",
    "id": "long-way-round",
    "number": 166,
    "repo": "long-way-round",
    "title": "Long Way Round",
    "line": "",
    "url": "https://chenhsieh.github.io/long-way-round/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -14303,30 +14303,16 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 303207,
     "codexUsdEst": 0.36,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
     "totalUsdEst": 14.76
    },
    "tasks": [
-    {
-     "title": "P2LR00_long way round core",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "New game 繞遠路 Long Way Round: deliver the envelope while the nosy neighbour guesses the wrong door",
-     "since": "2026-10-30T16:53:55+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2LR02_fix long way round after review",
      "state": "queued",
@@ -14340,6 +14326,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2LR00_long way round core",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "New game 繞遠路 Long Way Round: deliver the envelope while the nosy neighbour guesses the wrong door",
+     "since": "2026-10-30T16:53:55+00:00",
+     "done": "2026-10-30T16:53:55+00:00",
+     "reviewed": false,
+     "minutes": 58,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "feat: deliver an envelope by misleading Auntie"
     },
     {
      "title": "P2LR00_long way round core",
@@ -14358,9 +14358,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": null,
    "needsYou": null,
@@ -32955,9 +32955,7 @@
   }
  ],
  "systemNeeds": [
-  "System needs: 8 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)",
-  "System needs: Pages build stuck or failed for 1 game(s): gif-cities (fix: re-run the Pages build in those repos (Settings, Pages) if an agent cannot)",
-  "System needs: Released game Cymatic Plate now fails what it passed at release: standard (fix: play it; keep it released or remove its row from board/released.tsv)"
+  "System needs: 8 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)"
  ],
  "releaseReady": [],
  "releaseRegressed": [],
