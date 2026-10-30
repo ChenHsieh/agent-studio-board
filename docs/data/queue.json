@@ -1,5 +1,5 @@
 {
- "generated": 1793384516,
+ "generated": 1793384659,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -208,23 +208,23 @@
    "created": 1793382549
   },
   {
-   "id": "P2PC01_review-paid-clapper",
-   "request": "Opus stranger review of paid-clapper after its core build",
-   "game": "Studio",
+   "id": "P2PC02_fix-paid-clapper-after-review",
+   "request": "The Paid Clapper: apply the stranger review's fix list, Codex",
+   "game": "Paid Clapper",
    "route": "Claude",
-   "model": "opus",
-   "effort": "high",
+   "model": "sonnet",
+   "effort": "default",
    "kind": "review",
-   "size": "studio",
+   "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2PC00_paid-clapper-core"
+    "P2PC01_review-paid-clapper"
    ],
    "priority": null,
-   "why": "",
+   "why": "Find the seat paid to start the applause by asking when each seat started clapping.",
    "state": "running",
-   "at": 1793339508,
-   "created": 1793339508
+   "at": 1793384583,
+   "created": 1793384583
   },
   {
    "id": "P3PL10_tree-hero-why-rollout",
@@ -991,28 +991,6 @@
     "P3OR44_kit-win-hold-and-higher-is-better"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 34.92
-  },
-  {
-   "id": "P2PC02_fix-paid-clapper-after-review",
-   "request": "The Paid Clapper: apply the stranger review's fix list, Codex",
-   "game": "Paid Clapper",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2PC01_review-paid-clapper"
-   ],
-   "priority": null,
-   "why": "Find the seat paid to start the applause by asking when each seat started clapping.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2PC01_review-paid-clapper"
-   ],
-   "created": 1793339539,
    "estPercentOfWeek": 34.92
   },
   {

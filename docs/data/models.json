@@ -195,12 +195,12 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 30,
+   "count": 31,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 28,
+   "guessed": 29,
    "topFailures": [],
    "flag": "give more"
   },
@@ -615,6 +615,15 @@
   },
   {
    "date": "2026-10-30",
+   "task": "review paid clapper",
+   "number": "167",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "naming with two seats left. \"Wrong seat: the clapper was D1.\" Retry, ask the same two questions, name D1, and it says \"the clapper was B1\" ("
+  },
+  {
+   "date": "2026-10-30",
    "task": "paid clapper core",
    "number": "167",
    "executor": "codex gpt-6-sol high",
@@ -684,15 +693,6 @@
    "role": "fix",
    "passed": "yes",
    "note": "DONE: the speed slider follows a finger drag again (live, main 2eba8e2, live bytes of index.html/style.css/app.js match)."
-  },
-  {
-   "date": "2026-10-30",
-   "task": "sockglass stranger rereview",
-   "number": "73",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "the peg count disagrees with the finger (above), and the result card hides it."
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
