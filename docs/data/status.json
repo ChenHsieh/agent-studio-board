@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T17:00:56+00:00",
+ "generated": "2026-10-30T17:03:29+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 48,
+    "queued": 51,
     "running": 0,
     "doneToday": 2,
-    "minutes": 1920,
-    "estimateMinutes": 1920
+    "minutes": 2040,
+    "estimateMinutes": 2040
    },
    "Claude": {
     "queued": 1,
-    "running": 6,
-    "doneToday": 3,
-    "minutes": 420,
-    "estimateMinutes": 210
+    "running": 3,
+    "doneToday": 4,
+    "minutes": 240,
+    "estimateMinutes": 120
    }
   },
-  "queued": 49,
-  "running": 6,
-  "doneToday": 5,
+  "queued": 52,
+  "running": 3,
+  "doneToday": 6,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,11 +42,19 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2340,
-  "estimatedFinish": "2026-11-01T01:00:56+00:00",
-  "estimateMinutes": 1920
+  "minutesRemaining": 2280,
+  "estimatedFinish": "2026-11-01T03:03:29+00:00",
+  "estimateMinutes": 2040
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "chai-boil",
+   "task": "P1CB15_chai boil total redesign",
+   "since": "2026-10-30T17:02:44+00:00",
+   "activity": "2026-10-30T17:03:02+00:00",
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "long-way-round",
@@ -62,42 +70,10 @@
    "since": "2026-10-30T16:52:39+00:00",
    "activity": "2026-10-30T16:52:39+00:00",
    "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "mushroom-gaps",
-   "task": "P3OR95_mushroom gaps save test",
-   "since": "2026-10-30T17:00:05+00:00",
-   "activity": "2026-10-30T17:00:47+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "drawing-circles",
-   "task": "P3OR97_drawing circles save test",
-   "since": "2026-10-30T17:00:20+00:00",
-   "activity": "2026-10-30T17:00:49+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "lantern-meeting",
-   "task": "P3OR98_lantern meeting save test",
-   "since": "2026-10-30T17:00:34+00:00",
-   "activity": "2026-10-30T17:00:56+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "stroke-tops",
-   "task": "P3OR99_stroke tops save test",
-   "since": "2026-10-30T17:00:36+00:00",
-   "activity": "2026-10-30T17:00:42+00:00",
-   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 6,
+ "claudeWorkers": 3,
  "apiSpentUsd": 320.37,
  "claudeInSession": {
   "runs": 299,
@@ -389,7 +365,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 1
+    "daysInState": 0
    },
    "waitingOn": "ac remote",
    "id": "ac-remote",
@@ -412,7 +388,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:13:24+00:00",
-   "lastChange": "2026-10-29T13:15:31+00:00",
+   "lastChange": "2026-10-30T17:01:51+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -431,7 +407,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Swap office seats each hour so nobody gets up to touch the air-conditioner remote: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-10-29T13:15:31+00:00",
+     "since": "2026-10-30T17:01:51+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2213,13 +2189,13 @@
    },
    "promo": null,
    "why": "An AI-made video post of a pot of milk tea foaming up on a wood fire, plus the Lunar Lander game.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 0
+    "daysInState": 9
    },
    "waitingOn": "owner",
    "id": "chai-boil",
@@ -2228,8 +2204,8 @@
    "title": "Chai Boil",
    "line": "One pot, one dial: let the chai rise to the rim, not over it.",
    "url": "https://chenhsieh.github.io/chai-boil/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "hyper-realistic visuals instead of computer-drawn",
    "shelfNote": "",
@@ -2243,7 +2219,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-30T09:05:03+00:00",
+   "lastChange": "2026-10-30T17:03:02+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 8,
@@ -2257,6 +2233,20 @@
     "totalUsdEst": 91.8
    },
    "tasks": [
+    {
+     "title": "P1CB15_chai boil total redesign",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-30T17:02:44+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2CB14_chai boil fix after look",
      "state": "done",
@@ -2354,25 +2344,11 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "OR LANE OK: Test: docs \"Chai Boil\" \"One pot of chai, one flame. Let it rise to the rim, turn it down before it boils over, and pour.\" https://chenhsieh"
-    },
-    {
-     "title": "P2FM31_chai boil first minute",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Chai Boil: add a short first-minute round so a new player learns the game in a few taps, with a one-line story.",
-     "since": "2026-10-22T21:47:48+00:00",
-     "done": "2026-10-22T21:47:48+00:00",
-     "reviewed": false,
-     "minutes": 48,
-     "tokens": 248610,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "feat: teach the first chai glass with a safe spill and scored pour"
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 22
    },
@@ -2382,7 +2358,7 @@
     "note": "Visual revamp, different kitchen"
    },
    "needsYou": "Prayer-flag strip in the mountain hut set: five extra colours on one strip, all six kitchens still pass the contrast check. Suggest: keep it; it costs little and no kitchen failed the contrast check.",
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-30T09:05:03+00:00",
@@ -5502,7 +5478,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Add a test that old and damaged saves...",
    "costTotalUsd": 100.62,
    "latestChange": {
     "text": "One screen: a swipe from anywhere but a control or tray gear scrolls the page",
@@ -5525,8 +5501,8 @@
    "title": "Drawing Circles",
    "line": "Stack gears until the puppy's leash goes slack.",
    "url": "https://chenhsieh.github.io/drawing-circles/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Flagship polish round: level 9 difficulty, How to play",
    "shelfNote": "",
@@ -5540,7 +5516,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T18:59:22+00:00",
-   "lastChange": "2026-10-30T17:00:49+00:00",
+   "lastChange": "2026-10-30T17:01:33+00:00",
    "cost": {
     "apiUsd": 12.59,
     "codexRuns": 4,
@@ -5556,10 +5532,10 @@
    "tasks": [
     {
      "title": "P3OR97_drawing circles save test",
-     "state": "running",
-     "worker": "Claude",
+     "state": "queued",
+     "worker": "Codex",
      "plan": "Add a test that old and damaged saves still load in drawing-circles (release checklist: save test)",
-     "since": "2026-10-30T17:00:20+00:00",
+     "since": "2026-10-30T17:01:33+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -5668,8 +5644,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
     "done": 8
    },
@@ -7335,7 +7311,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-09-11T21:17:44+00:00",
-   "lastChange": "2026-10-25T09:56:14+00:00",
+   "lastChange": "2026-10-30T17:00:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -7354,7 +7330,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "fly-song: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-25T09:56:14+00:00",
+     "since": "2026-10-30T17:00:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -9699,7 +9675,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 1
+    "daysInState": 0
    },
    "waitingOn": "gold star",
    "id": "gold-star",
@@ -9722,7 +9698,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:11:01+00:00",
-   "lastChange": "2026-10-29T05:25:19+00:00",
+   "lastChange": "2026-10-30T17:01:51+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -9741,7 +9717,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Choose a gold-star rule each morning so a class really learns while every desk games the stars: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-10-29T05:25:19+00:00",
+     "since": "2026-10-30T17:01:51+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -10067,7 +10043,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 5
+    "daysInState": 0
    },
    "waitingOn": "grub band one screen",
    "id": "grub-band",
@@ -10091,7 +10067,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T20:47:27+00:00",
-   "lastChange": "2026-10-25T09:56:47+00:00",
+   "lastChange": "2026-10-30T17:00:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -10110,7 +10086,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "grub-band: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-25T09:56:47+00:00",
+     "since": "2026-10-30T17:00:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -11638,7 +11614,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 3
+    "daysInState": 0
    },
    "waitingOn": "iron window garden",
    "id": "iron-window-garden",
@@ -11661,7 +11637,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:57:31+00:00",
-   "lastChange": "2026-10-27T14:05:40+00:00",
+   "lastChange": "2026-10-30T17:01:51+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -11680,7 +11656,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Water one pot a morning on a tiered window rack where water drips down the next day: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-10-27T14:05:40+00:00",
+     "since": "2026-10-30T17:01:51+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -12607,23 +12583,23 @@
     "caption": ""
    },
    "why": "A satirical post casting a lab's weekly group meeting as a palace court where the boss's nod buys supplies.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 9
+    "daysInState": 0
    },
-   "waitingOn": "lantern meeting save test",
+   "waitingOn": "none",
    "id": "lantern-meeting",
    "number": 112,
    "repo": "lantern-meeting",
    "title": "Lantern Meeting",
    "line": "",
    "url": "https://chenhsieh.github.io/lantern-meeting/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Politics of lab and corporate competition; rock-paper-scissors core; clearer...",
    "shelfNote": "",
@@ -12637,33 +12613,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T20:45:20+00:00",
-   "lastChange": "2026-10-30T17:00:56+00:00",
+   "lastChange": "2026-10-30T16:58:23+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 1,
     "codexTokens": 406690,
     "codexUsdEst": 0.49,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 12,
-    "earlierUsdEst": 43.2,
+    "claudeUsdEst": 7.2,
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
     "totalUsdEst": 47.29
    },
    "tasks": [
     {
      "title": "P3OR98_lantern meeting save test",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Add a test that old and damaged saves still load in lantern-meeting (release checklist: save test)",
-     "since": "2026-10-30T17:00:34+00:00",
-     "done": null,
+     "since": "2026-10-30T16:58:23+00:00",
+     "done": "2026-10-30T16:58:23+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 0,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: test/save_migration.test.mjs"
     },
     {
      "title": "P2FM45_lantern meeting first minute",
@@ -12738,9 +12714,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": {
     "date": "2026-10-21",
@@ -12748,7 +12724,7 @@
     "note": "Good board game feel; clarify what is shown; political/parish-style refinement; less text"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T01:56:59+00:00",
@@ -16555,7 +16531,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Add a test that old and damaged saves...",
    "costTotalUsd": 54.39,
    "latestChange": {
     "text": "One screen: a swipe that starts on the board scrolls the page (tap-only board)",
@@ -16584,8 +16560,8 @@
    "title": "Mushroom at the End",
    "line": "Grow mycelium threads across an old factory floor and cut.",
    "url": "https://chenhsieh.github.io/mushroom-gaps/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "wants this to happen; preview before commit, journalist research, taste visual...",
    "shelfNote": "",
@@ -16603,7 +16579,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:09:55+00:00",
-   "lastChange": "2026-10-30T17:00:47+00:00",
+   "lastChange": "2026-10-30T17:01:02+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -16619,10 +16595,10 @@
    "tasks": [
     {
      "title": "P3OR95_mushroom gaps save test",
-     "state": "running",
-     "worker": "Claude",
+     "state": "queued",
+     "worker": "Codex",
      "plan": "Add a test that old and damaged saves still load in mushroom-gaps (release checklist: save test)",
-     "since": "2026-10-30T17:00:05+00:00",
+     "since": "2026-10-30T17:01:02+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -16731,8 +16707,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
     "done": 8
    },
@@ -18301,7 +18277,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 2
+    "daysInState": 0
    },
    "waitingOn": "one umbrella",
    "id": "one-umbrella",
@@ -18324,7 +18300,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:05:09+00:00",
-   "lastChange": "2026-10-28T04:44:47+00:00",
+   "lastChange": "2026-10-30T17:01:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -18343,7 +18319,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Slide one umbrella between two walkers so both get home dry as the wind turns: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-10-28T04:44:47+00:00",
+     "since": "2026-10-30T17:01:52+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -22587,7 +22563,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-27T00:32:05+00:00",
+   "lastChange": "2026-10-30T17:01:51+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -22606,7 +22582,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "rumour-on-the-jetty: take the new play kit so the board and Undo fit a small phone",
-     "since": "2026-10-27T00:32:05+00:00",
+     "since": "2026-10-30T17:01:51+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -26346,7 +26322,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T00:56:56+00:00",
-   "lastChange": "2026-10-25T09:56:52+00:00",
+   "lastChange": "2026-10-30T17:00:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -26365,7 +26341,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "speaking-stone: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-25T09:56:52+00:00",
+     "since": "2026-10-30T17:00:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -26843,7 +26819,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:59:53+00:00",
-   "lastChange": "2026-10-29T22:32:20+00:00",
+   "lastChange": "2026-10-30T17:01:51+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -26862,7 +26838,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "",
-     "since": "2026-10-29T22:32:20+00:00",
+     "since": "2026-10-30T17:01:51+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -27189,7 +27165,7 @@
    ]
   },
   {
-   "nextTask": "stroke-tops: the whole game fits one phone screen...",
+   "nextTask": "Add a test that old and damaged saves...",
    "costTotalUsd": 65.09,
    "latestChange": {
     "text": "Sync fixed onescreen-shell (P2FS38 fixes: ghost click guard, bottom room)",
@@ -27209,7 +27185,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 5
+    "daysInState": 0
    },
    "waitingOn": "stroke tops save test",
    "id": "stroke-tops",
@@ -27218,8 +27194,8 @@
    "title": "Stroke Tops",
    "line": "A dish of wooden spinning tops, each carrying a Chinese.",
    "url": "https://chenhsieh.github.io/stroke-tops/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Make the top read as a top, soften level 3, add a daily",
    "shelfNote": "",
@@ -27233,7 +27209,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:39:08+00:00",
-   "lastChange": "2026-10-30T17:00:42+00:00",
+   "lastChange": "2026-10-30T17:01:59+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -27249,10 +27225,10 @@
    "tasks": [
     {
      "title": "P3OR99_stroke tops save test",
-     "state": "running",
-     "worker": "Claude",
+     "state": "queued",
+     "worker": "Codex",
      "plan": "Add a test that old and damaged saves still load in stroke-tops (release checklist: save test)",
-     "since": "2026-10-30T17:00:36+00:00",
+     "since": "2026-10-30T17:01:59+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -27266,7 +27242,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "stroke-tops: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-25T09:55:51+00:00",
+     "since": "2026-10-30T17:00:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -27319,8 +27295,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 1,
+    "queued": 2,
+    "running": 0,
     "waitingDesign": 0,
     "done": 3
    },
@@ -27423,7 +27399,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 5
+    "daysInState": 0
    },
    "waitingOn": "telephone of babel one screen",
    "id": "telephone-of-babel",
@@ -27447,7 +27423,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:30:37+00:00",
-   "lastChange": "2026-10-30T16:58:32+00:00",
+   "lastChange": "2026-10-30T17:00:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -27466,7 +27442,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "telephone-of-babel: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-25T09:56:33+00:00",
+     "since": "2026-10-30T17:00:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -31924,7 +31900,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 3
+    "daysInState": 0
    },
    "waitingOn": "watched pot",
    "id": "watched-pot",
@@ -31947,7 +31923,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:52:16+00:00",
-   "lastChange": "2026-10-27T07:22:33+00:00",
+   "lastChange": "2026-10-30T17:01:51+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -31966,7 +31942,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Moss that grows everywhere except where you look; look in the right places to grow the shape: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-10-27T07:22:33+00:00",
+     "since": "2026-10-30T17:01:51+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -32426,7 +32402,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:50:51+00:00",
-   "lastChange": "2026-10-29T20:04:33+00:00",
+   "lastChange": "2026-10-30T17:00:57+00:00",
    "cost": {
     "apiUsd": 7.14,
     "codexRuns": 5,
@@ -32445,7 +32421,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "zoom-out: the whole game fits one phone screen and Next shows after a win",
-     "since": "2026-10-29T20:04:33+00:00",
+     "since": "2026-10-30T17:00:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,

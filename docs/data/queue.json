@@ -1,19 +1,17 @@
 {
- "generated": 1793379673,
+ "generated": 1793379828,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
-  "lanesBusy": 2,
+  "lanesBusy": 0,
   "ready": 0,
   "waiting": 0,
   "queued": 0,
-  "running": 2,
+  "running": 0,
   "done24h": 4,
-  "modelsQueued": {
-   "openai/gpt-4.1": 2
-  },
+  "modelsQueued": {},
   "spendTodayUsd": 0.0,
-  "runsToday": 8,
-  "runsTodayUnpriced": 8,
+  "runsToday": 10,
+  "runsTodayUnpriced": 10,
   "spendTotalUsd": 15.81,
   "recent": [
    {
@@ -49,44 +47,27 @@
   "convertedRunning": 0,
   "claudeWorkers": 0,
   "claudeWorkerCap": 3,
-  "handedBack": 13,
-  "lastHandBack": 1792919797,
-  "lastHandBackN": 5
+  "handedBack": 20,
+  "lastHandBack": 1793379712,
+  "lastHandBackN": 7
  },
  "tasks": [
   {
-   "id": "P3OR97_drawing-circles-save-test",
-   "request": "Add a test that old and damaged saves still load in drawing-circles (release checklist: save test)",
-   "game": "Drawing Circles",
-   "route": "OpenRouter",
-   "model": "openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
+   "id": "P1CB15_chai-boil-total-redesign",
+   "request": "P1CB15_chai boil total redesign",
+   "game": "Chai Boil",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "max",
+   "kind": "design",
    "size": "one repo",
    "estMinutes": null,
    "after": [],
    "priority": "P1",
-   "why": "A post of a pelican on a bike drawn by 73 stacked spinning circles, credited to an AI demo.",
+   "why": "An AI-made video post of a pot of milk tea foaming up on a wood fire, plus the Lunar Lander game.",
    "state": "running",
-   "at": 1793379498,
-   "created": 1793379498
-  },
-  {
-   "id": "P3OR99_stroke-tops-save-test",
-   "request": "Add a test that old and damaged saves still load in stroke-tops (release checklist: save test)",
-   "game": "Stroke Tops",
-   "route": "OpenRouter",
-   "model": "openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "A small Japanese indie game where written characters are spinning tops that scatter into their strokes.",
-   "state": "running",
-   "at": 1793379508,
-   "created": 1793379508
+   "at": 1793379754,
+   "created": 1793379754
   },
   {
    "id": "P2LR00_long-way-round-core",
@@ -174,6 +155,24 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1793379662,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P3OR97_drawing-circles-save-test",
+   "request": "Add a test that old and damaged saves still load in drawing-circles (release checklist: save test)",
+   "game": "Drawing Circles",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A post of a pelican on a bike drawn by 73 stacked spinning circles, credited to an AI demo.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1793379693,
    "estPercentOfWeek": 0.25
   },
   {
@@ -374,6 +373,24 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1793379653,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P3OR99_stroke-tops-save-test",
+   "request": "Add a test that old and damaged saves still load in stroke-tops (release checklist: save test)",
+   "game": "Stroke Tops",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "A small Japanese indie game where written characters are spinning tops that scatter into their strokes.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1793379719,
    "estPercentOfWeek": 0.25
   },
   {
@@ -579,7 +596,7 @@
    "id": "P2n116_heap-board-fill-and-short-card",
    "request": "Heap board fill and short card",
    "game": "Still A Heap",
-   "route": "Claude",
+   "route": "Codex",
    "model": "gpt-6-sol",
    "effort": "xhigh",
    "kind": "build",
@@ -590,13 +607,14 @@
    "why": "A remix of the can-press toy and the swarm idea through the old paradox of the heap.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1793313140
+   "created": 1793379711,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2n88_watched-pot",
    "request": "look in the right places to grow the shape: build the core with placeholder shapes, then its first-minute round",
    "game": "Watched Pot",
-   "route": "Claude",
+   "route": "Codex",
    "model": "gpt-6-sol",
    "effort": "xhigh",
    "kind": "build",
@@ -609,13 +627,14 @@
    "why": "A remix of earlier ideas",
    "state": "ready",
    "waitingOn": [],
-   "created": 1793085753
+   "created": 1793379711,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2n90_iron-window-garden",
    "request": "Water one pot a morning on a tiered window rack where water drips down the next day: build the core with placeholder shapes, then its first-minute round",
    "game": "Iron Window Garden",
-   "route": "Claude",
+   "route": "Codex",
    "model": "gpt-6-sol",
    "effort": "xhigh",
    "kind": "build",
@@ -628,13 +647,14 @@
    "why": "A remix of the chai boil lag and Even Water, set on the planter racks behind iron window grilles.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1793109940
+   "created": 1793379711,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2n93_one-umbrella",
    "request": "Slide one umbrella between two walkers so both get home dry as the wind turns: build the core with placeholder shapes, then its first-minute round",
    "game": "One Umbrella",
-   "route": "Claude",
+   "route": "Codex",
    "model": "gpt-6-sol",
    "effort": "xhigh",
    "kind": "build",
@@ -647,13 +667,14 @@
    "why": "A remix of Even Water and Thin Walls: one pour shared fairly becomes one umbrella shared by two in the rain.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1793162687
+   "created": 1793379712,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2n95_gold-star",
    "request": "Choose a gold-star rule each morning so a class really learns while every desk games the stars: build the core with placeholder shapes, then its first-minute round",
    "game": "Gold Star",
-   "route": "Claude",
+   "route": "Codex",
    "model": "gpt-6-sol",
    "effort": "xhigh",
    "kind": "build",
@@ -666,13 +687,14 @@
    "why": "A remix of Pigeon Salon and Morning Three: training a judge by rewards, turned round onto a class of eight.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1793251519
+   "created": 1793379711,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2n96_ac-remote",
    "request": "Swap office seats each hour so nobody gets up to touch the air-conditioner remote: build the core with placeholder shapes, then its first-minute round",
    "game": "Ac Remote",
-   "route": "Claude",
+   "route": "Codex",
    "model": "gpt-6-sol",
    "effort": "xhigh",
    "kind": "build",
@@ -685,7 +707,8 @@
    "why": "A remix of the chai boil dial and Thin Walls, set in an office with one shared air-conditioner remote.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1793279731
+   "created": 1793379711,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL13_dancers-not-mad-why-rollout",
@@ -794,7 +817,7 @@
    "id": "P2AX16_kit-fit-rollout-rumour-on-the-jetty",
    "request": "rumour-on-the-jetty: take the new play kit so the board and Undo fit a small phone",
    "game": "Rumour On The Jetty",
-   "route": "Claude",
+   "route": "Codex",
    "model": "gpt-6-sol",
    "effort": "xhigh",
    "kind": "build",
@@ -809,7 +832,8 @@
    "waitingOn": [
     "P1AX12_kit-new-rule-and-short-screen-fit"
    ],
-   "created": 1793379657
+   "created": 1793379711,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2KT01_kit-win-hold-and-higher-is-better",

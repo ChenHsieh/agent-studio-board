@@ -42,8 +42,8 @@
   {
    "executor": "aider openrouter/openai/gpt-4.1",
    "role": "build",
-   "count": 60,
-   "firstTimePass": 93,
+   "count": 62,
+   "firstTimePass": 90,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": 0.0,
@@ -504,12 +504,30 @@
  "last": [
   {
    "date": "2026-10-30",
+   "task": "stroke tops save test",
+   "number": "84",
+   "executor": "aider openrouter/openai/gpt-4.1",
+   "role": "build",
+   "passed": "no",
+   "note": ""
+  },
+  {
+   "date": "2026-10-30",
    "task": "lantern meeting save test",
    "number": "112",
    "executor": "aider openrouter/openai/gpt-4.1",
    "role": "build",
    "passed": "yes",
    "note": "OR LANE OK, branch pushed"
+  },
+  {
+   "date": "2026-10-30",
+   "task": "drawing circles save test",
+   "number": "54",
+   "executor": "aider openrouter/openai/gpt-4.1",
+   "role": "build",
+   "passed": "no",
+   "note": ""
   },
   {
    "date": "2026-10-30",
@@ -663,24 +681,6 @@
    "role": "build",
    "passed": "yes",
    "note": "DONE. server-stress 360x640 C: page 1.08x -> 1.00x (691 -> 641 px); 390x844 1.00x. Only gaps changed in docs/style.css (app bottom padding 2"
-  },
-  {
-   "date": "2026-10-29",
-   "task": "slice and bake one screen",
-   "number": "34",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE. slice-and-bake 360x640 C: page 1.08x -> 1.00x (692 -> 640 px); 390x844 1.00x. Cause: the shared \"Why this exists\" foot (44 px button p"
-  },
-  {
-   "date": "2026-10-29",
-   "task": "hit or kit one screen",
-   "number": "126",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "hit-or-kit 360x640 needs a layout choice (page 731 px vs 640 = 1.14x, 83+ px over) and every free-size fix would shrink text. Nothing pushed"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
