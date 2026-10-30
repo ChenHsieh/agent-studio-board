@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T18:56:04+00:00",
+ "generated": "2026-10-30T18:59:14+00:00",
  "ops": {
   "count": 2,
   "notes": [
@@ -28,15 +28,15 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 6,
-    "doneToday": 27,
-    "minutes": 420,
-    "estimateMinutes": 210
+    "running": 5,
+    "doneToday": 28,
+    "minutes": 360,
+    "estimateMinutes": 180
    }
   },
   "queued": 48,
-  "running": 7,
-  "doneToday": 30,
+  "running": 6,
+  "doneToday": 31,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,8 +46,8 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2340,
-  "estimatedFinish": "2026-11-01T02:56:04+00:00",
+  "minutesRemaining": 2280,
+  "estimatedFinish": "2026-11-01T02:59:14+00:00",
   "estimateMinutes": 1920
  },
  "lanes": [
@@ -80,15 +80,7 @@
    "game": "sockglass",
    "task": "P1SG03_sockglass touch pegs",
    "since": "2026-10-30T18:16:27+00:00",
-   "activity": "2026-10-30T18:54:57+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "time-material",
-   "task": "P1TM07_visual round",
-   "since": "2026-10-30T18:06:17+00:00",
-   "activity": "2026-10-30T18:55:39+00:00",
+   "activity": "2026-10-30T18:59:12+00:00",
    "commit": null
   },
   {
@@ -96,24 +88,27 @@
    "game": "rumour-on-the-jetty",
    "task": "P2AX16_kit fit rollout rumour on the jetty",
    "since": "2026-10-30T18:46:10+00:00",
-   "activity": "2026-10-30T18:55:48+00:00",
-   "commit": null
+   "activity": "2026-10-30T18:59:14+00:00",
+   "commit": {
+    "at": "2026-10-30T18:57:14+00:00",
+    "subject": "fix: keep narrow towns readable and Undo reachable"
+   }
   },
   {
    "worker": "Claude",
    "game": "paid-clapper",
    "task": "P2PC02_fix paid clapper after review",
    "since": "2026-10-30T18:23:03+00:00",
-   "activity": "2026-10-30T18:52:51+00:00",
+   "activity": "2026-10-30T18:58:55+00:00",
    "commit": null
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 6,
+ "claudeWorkers": 5,
  "apiSpentUsd": 320.57,
  "claudeInSession": {
-  "runs": 304,
-  "usdEst": 1094.4,
+  "runs": 305,
+  "usdEst": 1098.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -187,7 +182,7 @@
   },
   {
    "day": "2026-10-30",
-   "changes": 11
+   "changes": 12
   }
  ],
  "houseRules": 25,
@@ -4445,15 +4440,15 @@
     "caption": "Ring notes on a brass plate covered in sand and watch the."
    },
    "why": "Chladni figures on a vibrating plate and a post of dye moving on vibrating milk.",
-   "state": "released",
+   "state": "ship",
    "stateFlags": {
     "refining": false,
     "resting": false,
-    "regressed": false,
+    "regressed": true,
     "reviseRound": 0,
-    "daysInState": 7
+    "daysInState": 10
    },
-   "waitingOn": "none",
+   "waitingOn": "owner",
    "id": "cymatic-plate",
    "number": 85,
    "repo": "cymatic-plate",
@@ -4466,7 +4461,7 @@
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
    "image": "promo/cymatic-plate/first.jpg",
-   "released": true,
+   "released": false,
    "releasedOn": "2026-10-23",
    "releasedNote": "public-ready, still being refined",
    "whyExists": "Chladni figures and a post of dye on milk inspired this. Each note shapes sand and moves dye drops, so the order you play changes the outcome. Worth playing to see how sound can guide patterns and movement on a plate.",
@@ -4688,7 +4683,8 @@
      "note": "P3OR54_cymatic-plate-credits-page: WORKDIR",
      "source": "main commit"
     }
-   ]
+   ],
+   "releaseHeld": true
   },
   {
    "nextTask": "Why this exists: finish the rollout on dancers-not-mad...",
@@ -18960,8 +18956,8 @@
    "nextTask": null,
    "costTotalUsd": 46.8,
    "latestChange": {
-    "text": "core: 'Today' alone in the HUD on narrow phones",
-    "at": "2026-10-30T18:07:31+00:00"
+    "text": "fix: naming too soon lists the seats that still fit instead of blaming one, plus review...",
+    "at": "2026-10-30T18:58:55+00:00"
    },
    "promo": null,
    "why": "Find the seat paid to start the applause by asking when each seat started clapping.",
@@ -18994,8 +18990,8 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-10-30T05:43:19+00:00",
-   "lastChange": "2026-10-30T18:52:51+00:00",
+   "firstSeen": "2026-10-30T05:48:11+00:00",
+   "lastChange": "2026-10-30T18:58:55+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -19052,6 +19048,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-30T18:58:55+00:00",
+     "ok": true,
+     "note": "fix: naming too soon lists the seats that still fit instead of blaming one, plus review fixes",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-30T18:07:31+00:00",
      "ok": true,
@@ -19116,12 +19118,6 @@
      "at": "2026-10-30T10:09:32+00:00",
      "ok": true,
      "note": "start: P2PC00_paid-clapper-core",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-30T05:48:11+00:00",
-     "ok": true,
-     "note": "feat: The Paid Clapper starts from the game template",
      "source": "main commit"
     }
    ]
@@ -22682,7 +22678,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-30T18:55:48+00:00",
+   "lastChange": "2026-10-30T18:59:14+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -22707,7 +22703,10 @@
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-30T18:57:14+00:00",
+      "subject": "fix: keep narrow towns readable and Undo reachable"
+     },
      "result": ""
     },
     {
@@ -25940,7 +25939,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:35:59+00:00",
-   "lastChange": "2026-10-30T18:54:57+00:00",
+   "lastChange": "2026-10-30T18:59:12+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -29811,10 +29810,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 57.84,
+   "costTotalUsd": 61.44,
    "latestChange": {
-    "text": "feat: one-screen counter: every print has a name, the controls fit at 360x640, nothing...",
-    "at": "2026-10-30T18:55:39+00:00"
+    "text": "visual round: photo-shop counter look, seeded daily, one-screen at 360x640",
+    "at": "2026-10-30T18:57:51+00:00"
    },
    "promo": {
     "files": {
@@ -29827,21 +29826,21 @@
    "why": "",
    "state": "ship",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 8
    },
-   "waitingOn": "visual round",
+   "waitingOn": "owner",
    "id": "time-material",
    "number": 23,
    "repo": "time-material",
    "title": "Time Material",
    "line": "Scrub through a frame history and draw with time.",
    "url": "https://chenhsieh.github.io/time-material/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Find the core and make the time-and-material rules",
    "shelfNote": "",
@@ -29855,34 +29854,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-19T17:54:51+00:00",
-   "lastChange": "2026-10-30T18:55:39+00:00",
+   "lastChange": "2026-10-30T18:57:51+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 12,
+    "claudeRuns": 13,
     "apiRuns": 2,
     "codexTokens": 196600,
     "codexUsdEst": 0.24,
-    "claudeUsdEst": 43.2,
+    "claudeUsdEst": 46.8,
     "earlierRounds": 4,
     "earlierUsdEst": 14.4,
-    "totalUsdEst": 57.84
+    "totalUsdEst": 61.44
    },
    "tasks": [
-    {
-     "title": "P1TM07_visual round",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Time as Material",
-     "since": "2026-10-30T18:06:17+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1TM04_slider drag hotfix",
      "state": "done",
@@ -29924,6 +29909,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "DONE: live main (bytes match). One-screen gate PASS strict at 390x844 and 360x640 (was 1.34x at 360x640). Start dial -> slider; ruler -> full-width time strip (never cropped); live/photo/card in one row (short) or two..."
+    },
+    {
+     "title": "P1TM07_visual round",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Time as Material",
+     "since": "2026-10-30T17:49:09+00:00",
+     "done": "2026-10-30T17:49:09+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "DONE: live main (bytes of index.html/style.css/app.js match; squash commit title on main repeats the stage-3 title by mistake: merge2 msg file took the wrong parent; content is the visual round, branch commit has the..."
     },
     {
      "title": "P2FS48_time material one screen",
@@ -29984,9 +29983,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 16
+    "done": 17
    },
    "verdict": {
     "date": "2026-10-22",
@@ -29994,8 +29993,14 @@
     "note": "A scan line now sweeps the live scene and your photo together, so you can watch the bar bend row by row; the match meter starts at 95 percent, so the first move feels small"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-30T18:57:51+00:00",
+     "ok": true,
+     "note": "visual round: photo-shop counter look, seeded daily, one-screen at 360x640",
+     "source": "board note"
+    },
     {
      "at": "2026-10-30T18:55:39+00:00",
      "ok": true,
@@ -30061,12 +30066,6 @@
      "ok": true,
      "note": "credits panel with licences in How to play, live",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-23T07:58:20+00:00",
-     "ok": true,
-     "note": "feat: a Credits panel in How to play lists who made what and which licences apply",
-     "source": "main commit"
     }
    ]
   },
@@ -33024,7 +33023,9 @@
   "System needs: 8 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)"
  ],
  "releaseReady": [],
- "releaseRegressed": [],
+ "releaseRegressed": [
+  "cymatic-plate"
+ ],
  "checksSummary": {
   "why": {
    "yes": 163,
