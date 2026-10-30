@@ -1,21 +1,46 @@
 {
- "generated": 1793379529,
+ "generated": 1793379673,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
-  "lanesBusy": 0,
-  "ready": 10,
+  "lanesBusy": 2,
+  "ready": 0,
   "waiting": 0,
-  "queued": 10,
-  "running": 0,
-  "done24h": 0,
+  "queued": 0,
+  "running": 2,
+  "done24h": 4,
   "modelsQueued": {
-   "openai/gpt-4.1": 10
+   "openai/gpt-4.1": 2
   },
   "spendTodayUsd": 0.0,
-  "runsToday": 0,
-  "runsTodayUnpriced": 0,
+  "runsToday": 8,
+  "runsTodayUnpriced": 8,
   "spendTotalUsd": 15.81,
-  "recent": [],
+  "recent": [
+   {
+    "id": "P3OR102_lie-flat-save-test",
+    "request": "Add a test that old and damaged saves still load in lie-flat (release checklist: save test)",
+    "model": "openai/gpt-4.1",
+    "at": 1793379522
+   },
+   {
+    "id": "P3OR100_telephone-of-babel-save-test",
+    "request": "Add a test that old and damaged saves still load in telephone-of-babel (release checklist: save test)",
+    "model": "openai/gpt-4.1",
+    "at": 1793379512
+   },
+   {
+    "id": "P3OR98_lantern-meeting-save-test",
+    "request": "Add a test that old and damaged saves still load in lantern-meeting (release checklist: save test)",
+    "model": "openai/gpt-4.1",
+    "at": 1793379503
+   },
+   {
+    "id": "P3OR96_peony-dream-save-test",
+    "request": "Add a test that old and damaged saves still load in peony-dream (release checklist: save test)",
+    "model": "openai/gpt-4.1",
+    "at": 1793379493
+   }
+  ],
   "label": "estimate"
  },
  "overflow": {
@@ -29,6 +54,40 @@
   "lastHandBackN": 5
  },
  "tasks": [
+  {
+   "id": "P3OR97_drawing-circles-save-test",
+   "request": "Add a test that old and damaged saves still load in drawing-circles (release checklist: save test)",
+   "game": "Drawing Circles",
+   "route": "OpenRouter",
+   "model": "openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A post of a pelican on a bike drawn by 73 stacked spinning circles, credited to an AI demo.",
+   "state": "running",
+   "at": 1793379498,
+   "created": 1793379498
+  },
+  {
+   "id": "P3OR99_stroke-tops-save-test",
+   "request": "Add a test that old and damaged saves still load in stroke-tops (release checklist: save test)",
+   "game": "Stroke Tops",
+   "route": "OpenRouter",
+   "model": "openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "A small Japanese indie game where written characters are spinning tops that scatter into their strokes.",
+   "state": "running",
+   "at": 1793379508,
+   "created": 1793379508
+  },
   {
    "id": "P2LR00_long-way-round-core",
    "request": "New game 繞遠路 Long Way Round: deliver the envelope while the nosy neighbour guesses the wrong door",
@@ -67,9 +126,9 @@
    "id": "P3OR93_sockglass-save-test",
    "request": "Add a test that old and damaged saves still load in sockglass (release checklist: save test)",
    "game": "Sockglass",
-   "route": "OpenRouter",
-   "model": "openai/gpt-4.1",
-   "effort": "default",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
@@ -78,15 +137,16 @@
    "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1793379478
+   "created": 1793379631,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3OR94_gif-cities-save-test",
    "request": "Add a test that old and damaged saves still load in gif-cities (release checklist: save test)",
    "game": "GIF Cities",
-   "route": "OpenRouter",
-   "model": "openai/gpt-4.1",
-   "effort": "default",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
@@ -95,15 +155,16 @@
    "why": "An Internet Archive reel on GifCities, its search engine of rescued GeoCities GIFs.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1793379483
+   "created": 1793379618,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3OR95_mushroom-gaps-save-test",
    "request": "Add a test that old and damaged saves still load in mushroom-gaps (release checklist: save test)",
    "game": "Mushroom at the End",
-   "route": "OpenRouter",
-   "model": "openai/gpt-4.1",
-   "effort": "default",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
@@ -112,41 +173,8 @@
    "why": "An anthropology trivia post about a book on matsutake mushrooms growing in the ruins of industry.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1793379488
-  },
-  {
-   "id": "P3OR96_peony-dream-save-test",
-   "request": "Add a test that old and damaged saves still load in peony-dream (release checklist: save test)",
-   "game": "Peony Dream",
-   "route": "OpenRouter",
-   "model": "openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "The classical play The Peony Pavilion (1598) and a saved essay note on love found in a dream.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1793379493
-  },
-  {
-   "id": "P3OR97_drawing-circles-save-test",
-   "request": "Add a test that old and damaged saves still load in drawing-circles (release checklist: save test)",
-   "game": "Drawing Circles",
-   "route": "OpenRouter",
-   "model": "openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A post of a pelican on a bike drawn by 73 stacked spinning circles, credited to an AI demo.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1793379498
+   "created": 1793379662,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL10_tree-hero-why-rollout",
@@ -243,7 +271,7 @@
    "why": "A small Japanese indie game where written characters are spinning tops that scatter into their strokes.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792922151
+   "created": 1793379657
   },
   {
    "id": "P2FS52_fly-song-one-screen",
@@ -260,7 +288,7 @@
    "why": "The MaleCNS v1.0 fly connectome and real recorded fruit-fly courtship song driven by its song neuron.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792922174
+   "created": 1793379657
   },
   {
    "id": "P2FS56_telephone-of-babel-one-screen",
@@ -277,7 +305,7 @@
    "why": "A viral family matchmaking chat that backfires over who a message is about, and a keyboard typing three languages at once.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792922193
+   "created": 1793379657
   },
   {
    "id": "P2FS57_zoom-out-one-screen",
@@ -294,7 +322,7 @@
    "why": "A panda meme zooming through an OK-sign and an eye out to the galaxy, and a meme shrinking an empire to two square metres.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1793304273
+   "created": 1793379657
   },
   {
    "id": "P2FS59_grub-band-one-screen",
@@ -311,7 +339,7 @@
    "why": "A bio-art piece of mealworms on foam with contact microphones played through a controller, plus a radial audio visualiser.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792922207
+   "created": 1793379657
   },
   {
    "id": "P2FS60_speaking-stone-one-screen",
@@ -328,32 +356,15 @@
    "why": "Screenshots arguing over a proposed test that would measure polish instead of substance.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1792922212
-  },
-  {
-   "id": "P3OR100_telephone-of-babel-save-test",
-   "request": "Add a test that old and damaged saves still load in telephone-of-babel (release checklist: save test)",
-   "game": "Telephone of Babel",
-   "route": "OpenRouter",
-   "model": "openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "A viral family matchmaking chat that backfires over who a message is about, and a keyboard typing three languages at once.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1793379512
+   "created": 1793379657
   },
   {
    "id": "P3OR101_tractatus-tree-save-test",
    "request": "Add a test that old and damaged saves still load in tractatus-tree (release checklist: save test)",
    "game": "Tractatus Tree",
-   "route": "OpenRouter",
-   "model": "openai/gpt-4.1",
-   "effort": "default",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
@@ -362,41 +373,8 @@
    "why": "A social post on Wittgenstein's numbered propositions (1, 1.1, 4.001 and so on).",
    "state": "ready",
    "waitingOn": [],
-   "created": 1793379517
-  },
-  {
-   "id": "P3OR98_lantern-meeting-save-test",
-   "request": "Add a test that old and damaged saves still load in lantern-meeting (release checklist: save test)",
-   "game": "Lantern Meeting",
-   "route": "OpenRouter",
-   "model": "openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "A satirical post casting a lab's weekly group meeting as a palace court where the boss's nod buys supplies.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1793379503
-  },
-  {
-   "id": "P3OR99_stroke-tops-save-test",
-   "request": "Add a test that old and damaged saves still load in stroke-tops (release checklist: save test)",
-   "game": "Stroke Tops",
-   "route": "OpenRouter",
-   "model": "openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "A small Japanese indie game where written characters are spinning tops that scatter into their strokes.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1793379508
+   "created": 1793379653,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL08_refusal-detour-why-rollout",
@@ -710,23 +688,6 @@
    "created": 1793279731
   },
   {
-   "id": "P3OR102_lie-flat-save-test",
-   "request": "Add a test that old and damaged saves still load in lie-flat (release checklist: save test)",
-   "game": "Lie Flat",
-   "route": "OpenRouter",
-   "model": "openai/gpt-4.1",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "A hexagonal origami twist-tessellation crease pattern; mark each fold of a crease pattern mountain or valley so the paper can lie flat.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1793379522
-  },
-  {
    "id": "P3PL13_dancers-not-mad-why-rollout",
    "request": "Why this exists: finish the rollout on dancers-not-mad (new test failure: test/anim_budget.mjs (layout shift))",
    "game": "Dancers Not Mad",
@@ -848,7 +809,7 @@
    "waitingOn": [
     "P1AX12_kit-new-rule-and-short-screen-fit"
    ],
-   "created": 1793061125
+   "created": 1793379657
   },
   {
    "id": "P2KT01_kit-win-hold-and-higher-is-better",
@@ -1112,6 +1073,74 @@
     "P2n90_iron-window-garden"
    ],
    "created": 1792700693
+  },
+  {
+   "id": "P3OR96_peony-dream-save-test",
+   "request": "Add a test that old and damaged saves still load in peony-dream (release checklist: save test)",
+   "game": "Peony Dream",
+   "route": "OpenRouter",
+   "model": "openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "The classical play The Peony Pavilion (1598) and a saved essay note on love found in a dream.",
+   "state": "done",
+   "at": 1793379493,
+   "created": 1793379493
+  },
+  {
+   "id": "P3OR100_telephone-of-babel-save-test",
+   "request": "Add a test that old and damaged saves still load in telephone-of-babel (release checklist: save test)",
+   "game": "Telephone of Babel",
+   "route": "OpenRouter",
+   "model": "openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "A viral family matchmaking chat that backfires over who a message is about, and a keyboard typing three languages at once.",
+   "state": "done",
+   "at": 1793379512,
+   "created": 1793379512
+  },
+  {
+   "id": "P3OR98_lantern-meeting-save-test",
+   "request": "Add a test that old and damaged saves still load in lantern-meeting (release checklist: save test)",
+   "game": "Lantern Meeting",
+   "route": "OpenRouter",
+   "model": "openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "A satirical post casting a lab's weekly group meeting as a palace court where the boss's nod buys supplies.",
+   "state": "done",
+   "at": 1793379503,
+   "created": 1793379503
+  },
+  {
+   "id": "P3OR102_lie-flat-save-test",
+   "request": "Add a test that old and damaged saves still load in lie-flat (release checklist: save test)",
+   "game": "Lie Flat",
+   "route": "OpenRouter",
+   "model": "openai/gpt-4.1",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "A hexagonal origami twist-tessellation crease pattern; mark each fold of a crease pattern mountain or valley so the paper can lie flat.",
+   "state": "done",
+   "at": 1793379522,
+   "created": 1793379522
   }
  ]
 }
