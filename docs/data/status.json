@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T17:10:42+00:00",
+ "generated": "2026-10-30T17:13:05+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -24,14 +24,14 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 3,
+    "running": 4,
     "doneToday": 9,
-    "minutes": 240,
-    "estimateMinutes": 120
+    "minutes": 300,
+    "estimateMinutes": 150
    }
   },
   "queued": 46,
-  "running": 3,
+  "running": 4,
   "doneToday": 12,
   "lanes": {
    "Codex": 1,
@@ -42,8 +42,8 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2040,
-  "estimatedFinish": "2026-10-31T23:10:42+00:00",
+  "minutesRemaining": 2100,
+  "estimatedFinish": "2026-10-31T23:13:05+00:00",
   "estimateMinutes": 1800
  },
  "lanes": [
@@ -53,6 +53,14 @@
    "task": "P1CB15_chai boil total redesign",
    "since": "2026-10-30T17:02:44+00:00",
    "activity": "2026-10-30T17:03:02+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "gif-cities",
+   "task": "P1GC01_gif cities loading and layout",
+   "since": "2026-10-30T17:11:13+00:00",
+   "activity": "2026-10-30T17:11:31+00:00",
    "commit": null
   },
   {
@@ -73,7 +81,7 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 3,
+ "claudeWorkers": 4,
  "apiSpentUsd": 320.57,
  "claudeInSession": {
   "runs": 299,
@@ -8848,23 +8856,23 @@
     "caption": "Stack rescued GIFs down a 1999 homepage so every visitor."
    },
    "why": "An Internet Archive reel on GifCities, its search engine of rescued GeoCities GIFs.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 0
+    "daysInState": 11
    },
-   "waitingOn": "none",
+   "waitingOn": "gif cities loading and layout",
    "id": "gif-cities",
    "number": 93,
    "repo": "gif-cities",
    "title": "GIF Cities",
    "line": "Stack rescued GIFs down a 1999 homepage so every visitor.",
    "url": "https://chenhsieh.github.io/gif-cities/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Flagship polish round: slower default pace with a speed",
    "shelfNote": "",
@@ -8882,7 +8890,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:37:00+00:00",
-   "lastChange": "2026-10-30T17:03:52+00:00",
+   "lastChange": "2026-10-30T17:11:31+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -8896,6 +8904,20 @@
     "totalUsdEst": 80.04
    },
    "tasks": [
+    {
+     "title": "P1GC01_gif cities loading and layout",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-10-30T17:11:13+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3OR94_gif cities save test",
      "state": "done",
@@ -8993,25 +9015,11 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "Slow/normal/fast playback, open levels, collection progress, and era notes are built; depth package written."
-    },
-    {
-     "title": "review of gif cities legible",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-10-18T20:14:46+00:00",
-     "done": "2026-10-18T20:14:46+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 10
    },
@@ -9021,7 +9029,7 @@
     "note": "Flagship polish round: slower default pace with a speed"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T08:19:34+00:00",
