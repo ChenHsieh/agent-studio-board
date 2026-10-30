@@ -1,5 +1,5 @@
 {
- "generated": 1793383451,
+ "generated": 1793383593,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -100,23 +100,6 @@
    "created": 1793379754
   },
   {
-   "id": "P1GC01_gif-cities-loading-and-layout",
-   "request": "P1GC01_gif cities loading and layout",
-   "game": "GIF Cities",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "An Internet Archive reel on GifCities, its search engine of rescued GeoCities GIFs.",
-   "state": "running",
-   "at": 1793380263,
-   "created": 1793380263
-  },
-  {
    "id": "P1MG03_mushroom-gaps-ui-collection-scoring",
    "request": "P1MG03_mushroom gaps ui collection scoring",
    "game": "Mushroom at the End",
@@ -202,24 +185,7 @@
    "created": 1793381804
   },
   {
-   "id": "P1TM04_slider-drag-hotfix",
-   "request": "Time as Material",
-   "game": "Time Material",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "default",
-   "kind": "fix",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "",
-   "state": "running",
-   "at": 1793382549,
-   "created": 1793382549
-  },
-  {
-   "id": "P1TM05_story-premise",
+   "id": "P1TM06_ux-refine",
    "request": "Time as Material",
    "game": "Time Material",
    "route": "Claude",
@@ -228,7 +194,28 @@
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P1TM05_story-premise"
+   ],
+   "priority": "P2",
+   "why": "",
+   "state": "running",
+   "at": 1793382549,
+   "created": 1793382549
+  },
+  {
+   "id": "P1TM07_visual-round",
+   "request": "Time as Material",
+   "game": "Time Material",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "default",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1TM06_ux-refine"
+   ],
    "priority": "P2",
    "why": "",
    "state": "running",
@@ -331,6 +318,23 @@
    "waitingOn": [],
    "created": 1792908660,
    "estPercentOfWeek": 34.92
+  },
+  {
+   "id": "P1FY51_felt-years-call-core",
+   "request": "Felt Years becomes Grandma's Sunday video call (Ask, Show, Wait, Bye): new core rules, bots, 12 levels, daily call, save kept",
+   "game": "Felt Years",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "A handwritten derivation that life's felt midpoint is about 18 if felt time runs as dx/x, plus a log-time ruler post.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1793383534
   },
   {
    "id": "P1NL05_face-research",
@@ -870,6 +874,48 @@
    "estPercentOfWeek": 34.92
   },
   {
+   "id": "P1FY52_felt-years-call-ui",
+   "request": "Felt Years call: every button says what it will do and shows it at once; first minute; one screen, big text",
+   "game": "Felt Years",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1FY51_felt-years-call-core"
+   ],
+   "priority": "P2",
+   "why": "A handwritten derivation that life's felt midpoint is about 18 if felt time runs as dx/x, plus a log-time ruler post.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1FY51_felt-years-call-core"
+   ],
+   "created": 1793383564
+  },
+  {
+   "id": "P1FY53_felt-years-call-visual",
+   "request": "Felt Years call: visual round, classy and consistent drawn figures for Mia, Grandma and Mum",
+   "game": "Felt Years",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1FY52_felt-years-call-ui"
+   ],
+   "priority": "P2",
+   "why": "A handwritten derivation that life's felt midpoint is about 18 if felt time runs as dx/x, plus a log-time ruler post.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1FY52_felt-years-call-ui"
+   ],
+   "created": 1793383588
+  },
+  {
    "id": "P1NL06_five-sections-design",
    "request": "Nobody Looking: five sections, each adds one new rule, first two built",
    "game": "Nobody Looking",
@@ -910,48 +956,6 @@
     "P1NL06_five-sections-design"
    ],
    "created": 1793382998
-  },
-  {
-   "id": "P1TM06_ux-refine",
-   "request": "Time as Material",
-   "game": "Time Material",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "default",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1TM05_story-premise"
-   ],
-   "priority": "P2",
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P1TM05_story-premise"
-   ],
-   "created": 1793382549
-  },
-  {
-   "id": "P1TM07_visual-round",
-   "request": "Time as Material",
-   "game": "Time Material",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "default",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1TM06_ux-refine"
-   ],
-   "priority": "P2",
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P1TM06_ux-refine"
-   ],
-   "created": 1793382549
   },
   {
    "id": "P2HN00_herbal-pages-stay-open",
@@ -1218,6 +1222,23 @@
    "created": 1792700693
   },
   {
+   "id": "P1GC01_gif-cities-loading-and-layout",
+   "request": "P1GC01_gif cities loading and layout",
+   "game": "GIF Cities",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "An Internet Archive reel on GifCities, its search engine of rescued GeoCities GIFs.",
+   "state": "done",
+   "at": 1793380263,
+   "created": 1793380263
+  },
+  {
    "id": "P3OR93_sockglass-save-test",
    "request": "Add a test that old and damaged saves still load in sockglass (release checklist: save test)",
    "game": "Sockglass",
@@ -1302,6 +1323,40 @@
    "at": 1793379938,
    "created": 1793379938,
    "estPercentOfWeek": 34.92
+  },
+  {
+   "id": "P1TM04_slider-drag-hotfix",
+   "request": "Time as Material",
+   "game": "Time Material",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "default",
+   "kind": "fix",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "",
+   "state": "done",
+   "at": 1793382549,
+   "created": 1793382549
+  },
+  {
+   "id": "P1TM05_story-premise",
+   "request": "Time as Material",
+   "game": "Time Material",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "default",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "",
+   "state": "done",
+   "at": 1793382549,
+   "created": 1793382549
   },
   {
    "id": "P3OR100_telephone-of-babel-save-test",

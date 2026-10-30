@@ -141,12 +141,12 @@
   {
    "executor": "claude-opus",
    "role": "build",
-   "count": 70,
+   "count": 72,
    "firstTimePass": 96,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": 0.01,
-   "guessed": 65,
+   "guessed": 67,
    "topFailures": [
     "rooms 16, 25 and 33 at 360x640 run 9-18 px past the screen after the f",
     "on small beds the canvas keeps its tall paper below the board, so on a",
@@ -167,6 +167,18 @@
     "levels 1-2 are deliberately easy for the nearest-expiry bot (they teac"
    ],
    "flag": "give more"
+  },
+  {
+   "executor": "claude-opus",
+   "role": "fix",
+   "count": 1,
+   "firstTimePass": 100,
+   "retries": 0,
+   "medianMinutes": null,
+   "costPerPass": null,
+   "guessed": 1,
+   "topFailures": [],
+   "flag": ""
   },
   {
    "executor": "claude-opus",
@@ -638,6 +650,33 @@
    "note": "seal-carver now fits the screen in play (C passes: 640/640 at 360x640 where it was 1.09x, 844/844 at 390x844, 568/568 at 320x568), live on m"
   },
   {
+   "date": "2026-10-30",
+   "task": "story premise",
+   "number": "",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE: design/STORY.md on branch chen-tm-slider-drag (ships to main with P1TM06). Premise 3 sentences EN+zh, player = counter of a neighbourh"
+  },
+  {
+   "date": "2026-10-30",
+   "task": "slider drag hotfix",
+   "number": "",
+   "executor": "claude-opus",
+   "role": "fix",
+   "passed": "yes",
+   "note": "DONE: the speed slider follows a finger drag again (live, main 2eba8e2, live bytes of index.html/style.css/app.js match)."
+  },
+  {
+   "date": "2026-10-30",
+   "task": "gif cities loading and layout",
+   "number": "93",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "levels 9-12 on a 360x640 phone still get a board about 63% wide (7 page rows + 2 tray rows cannot fit"
+  },
+  {
    "date": "2026-10-29",
    "task": "review still a heap and out of the corner",
    "number": "161",
@@ -654,33 +693,6 @@
    "role": "review",
    "passed": "",
    "note": ""
-  },
-  {
-   "date": "2026-10-29",
-   "task": "sync onescreen shell fix",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "fix",
-   "passed": "yes",
-   "note": "DONE. Copied the fixed docs/onescreen-shell.js/css (P2FS38) into the 22 shipped games that carried the old copies (tractatus-tree was alread"
-  },
-  {
-   "date": "2026-10-29",
-   "task": "coat corridor one screen",
-   "number": "122",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE. coat-corridor 360x640 C: page 1.03x -> 1.00x (661 -> 640 px); 390x844 stays 1.00x. One CSS line in docs/game.css: .board-shell max-wid"
-  },
-  {
-   "date": "2026-10-29",
-   "task": "own ground one screen",
-   "number": "138",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE. own-ground 360x640 C: page 1.04x -> 1.00x (665 -> 640 px); 390x844 1.00x. game.css: .board-shell max-width = min(360, max(308, (100dvh"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
