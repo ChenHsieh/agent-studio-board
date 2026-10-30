@@ -1,5 +1,5 @@
 {
- "generated": 1793385838,
+ "generated": 1793385981,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -138,16 +138,18 @@
    "created": 1793383564
   },
   {
-   "id": "P1NL04_journey-fix-after-first-minute",
-   "request": "Nobody Looking: find where a new player gets stuck after the first minute and put a clear next step on screen",
+   "id": "P1NL06_five-sections-design",
+   "request": "Nobody Looking: five sections, each adds one new rule, first two built",
    "game": "Nobody Looking",
    "route": "Claude",
    "model": "opus",
    "effort": "high",
-   "kind": "first-minute",
+   "kind": "design",
    "size": "one repo",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P1NL05_face-research"
+   ],
    "priority": "P2",
    "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
    "state": "running",
@@ -155,21 +157,21 @@
    "created": 1793382998
   },
   {
-   "id": "P1SB53_slice-and-bake-center-fix-and-visual-round",
-   "request": "P1SB53_slice and bake center fix and visual round",
+   "id": "P1SB54_slice-and-bake-release-review",
+   "request": "P1SB54_slice and bake release review",
    "game": "Slice and Bake",
    "route": "Claude",
    "model": "opus",
    "effort": "high",
-   "kind": "fix",
+   "kind": "review",
    "size": "one repo",
    "estMinutes": null,
    "after": [],
    "priority": "P2",
    "why": "Arrange coloured dough ropes in a log so each of five cuts shows the wanted pattern; every change alters this slice and the later ones.",
    "state": "running",
-   "at": 1793381804,
-   "created": 1793381804
+   "at": 1793385821,
+   "created": 1793385821
   },
   {
    "id": "P1TM07_visual-round",
@@ -189,6 +191,26 @@
    "state": "running",
    "at": 1793382549,
    "created": 1793382549
+  },
+  {
+   "id": "P2AX16_kit-fit-rollout-rumour-on-the-jetty",
+   "request": "rumour-on-the-jetty: take the new play kit so the board and Undo fit a small phone",
+   "game": "Rumour On The Jetty",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P1AX12_kit-new-rule-and-short-screen-fit"
+   ],
+   "priority": null,
+   "why": "You are a rumour hopping house to house in a harbour town",
+   "state": "running",
+   "at": 1793379711,
+   "created": 1793379711,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2PC02_fix-paid-clapper-after-review",
@@ -225,7 +247,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL15_flying-white-why-rollout",
@@ -245,7 +267,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL16_readable-nonsense-why-rollout",
@@ -265,7 +287,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3SV54_glasshouse-merge-save-tests",
@@ -287,41 +309,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908660,
-   "estPercentOfWeek": 24.03
-  },
-  {
-   "id": "P1NL05_face-research",
-   "request": "Nobody Looking: research what everyday things people see faces in, grouped into 5 themes",
-   "game": "Nobody Looking",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1793382998
-  },
-  {
-   "id": "P1SB54_slice-and-bake-release-review",
-   "request": "P1SB54_slice and bake release review",
-   "game": "Slice and Bake",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "Arrange coloured dough ropes in a log so each of five cuts shows the wanted pattern; every change alters this slice and the later ones.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1793385821
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2FS47_stroke-tops-one-screen",
@@ -441,7 +429,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL12_name-to-carry-why-rollout",
@@ -459,7 +447,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL14_speaking-stone-why-rollout",
@@ -477,7 +465,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL17_metagenome-profilers-why-build",
@@ -495,7 +483,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908804,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL07_gallery-guess-why-rollout",
@@ -513,7 +501,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL09_the-zipper-why-rollout",
@@ -531,7 +519,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL11_machine-rhythm-why-rollout",
@@ -549,7 +537,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL18_silva-to-maaslin2-why-build",
@@ -567,7 +555,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908809,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3d35_lens-screen-studio-320-fix",
@@ -585,7 +573,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792701959,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2LR02_fix-long-way-round-after-review",
@@ -605,7 +593,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1793339539,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2SSP00_same-spots-core",
@@ -623,7 +611,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1793339341,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2UX07_daily-brief-data",
@@ -660,7 +648,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1793379847,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2n88_watched-pot",
@@ -680,7 +668,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1793379711,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2n90_iron-window-garden",
@@ -700,7 +688,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1793379711,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2n93_one-umbrella",
@@ -720,7 +708,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1793379712,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2n95_gold-star",
@@ -740,7 +728,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1793379711,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2n96_ac-remote",
@@ -760,7 +748,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1793379711,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL13_dancers-not-mad-why-rollout",
@@ -778,7 +766,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908772,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3SV55_redacxiv-merge-save-tests",
@@ -799,7 +787,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908660,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3SV56_grad-survivor-merge-save-test",
@@ -819,7 +807,7 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1792908660,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P3PL19_glasshouse-why-build",
@@ -841,7 +829,7 @@
     "P3SV54_glasshouse-merge-save-tests"
    ],
    "created": 1792908813,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P1FY53_felt-years-call-visual",
@@ -863,27 +851,6 @@
     "P1FY52_felt-years-call-ui"
    ],
    "created": 1793383588
-  },
-  {
-   "id": "P1NL06_five-sections-design",
-   "request": "Nobody Looking: five sections, each adds one new rule, first two built",
-   "game": "Nobody Looking",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "design",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1NL05_face-research"
-   ],
-   "priority": "P2",
-   "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
-   "state": "waiting",
-   "waitingOn": [
-    "P1NL05_face-research"
-   ],
-   "created": 1793382998
   },
   {
    "id": "P1NL07_story-and-visual-round",
@@ -926,29 +893,7 @@
     "P3OR45_herbal-pages-stay-open-logic"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 24.03
-  },
-  {
-   "id": "P2AX16_kit-fit-rollout-rumour-on-the-jetty",
-   "request": "rumour-on-the-jetty: take the new play kit so the board and Undo fit a small phone",
-   "game": "Rumour On The Jetty",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "xhigh",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P1AX12_kit-new-rule-and-short-screen-fit"
-   ],
-   "priority": null,
-   "why": "You are a rumour hopping house to house in a harbour town",
-   "state": "waiting",
-   "waitingOn": [
-    "P1AX12_kit-new-rule-and-short-screen-fit"
-   ],
-   "created": 1793379711,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2KT01_kit-win-hold-and-higher-is-better",
@@ -970,7 +915,7 @@
     "P3OR44_kit-win-hold-and-higher-is-better"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2SSP01_review-same-spots",
@@ -1013,7 +958,7 @@
     "P2SSP01_review-same-spots"
    ],
    "created": 1793339539,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2UX08_daily-brief-first-screen",
@@ -1296,7 +1241,7 @@
    "state": "done",
    "at": 1793379938,
    "created": 1793379938,
-   "estPercentOfWeek": 24.03
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P1FY51_felt-years-call-core",
@@ -1331,6 +1276,57 @@
    "state": "done",
    "at": 1793380827,
    "created": 1793380827
+  },
+  {
+   "id": "P1NL04_journey-fix-after-first-minute",
+   "request": "Nobody Looking: find where a new player gets stuck after the first minute and put a clear next step on screen",
+   "game": "Nobody Looking",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "first-minute",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
+   "state": "done",
+   "at": 1793382998,
+   "created": 1793382998
+  },
+  {
+   "id": "P1NL05_face-research",
+   "request": "Nobody Looking: research what everyday things people see faces in, grouped into 5 themes",
+   "game": "Nobody Looking",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
+   "state": "done",
+   "at": 1793382998,
+   "created": 1793382998
+  },
+  {
+   "id": "P1SB53_slice-and-bake-center-fix-and-visual-round",
+   "request": "P1SB53_slice and bake center fix and visual round",
+   "game": "Slice and Bake",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "fix",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "Arrange coloured dough ropes in a log so each of five cuts shows the wanted pattern; every change alters this slice and the later ones.",
+   "state": "done",
+   "at": 1793381804,
+   "created": 1793381804
   },
   {
    "id": "P1TM04_slider-drag-hotfix",
