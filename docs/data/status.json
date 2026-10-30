@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T16:56:13+00:00",
+ "generated": "2026-10-30T16:58:33+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 45,
+    "queued": 54,
     "running": 0,
     "doneToday": 2,
-    "minutes": 1800,
-    "estimateMinutes": 1800
+    "minutes": 2160,
+    "estimateMinutes": 2160
    },
    "Claude": {
     "queued": 1,
@@ -30,7 +30,7 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 46,
+  "queued": 55,
   "running": 2,
   "doneToday": 2,
   "lanes": {
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1980,
-  "estimatedFinish": "2026-10-31T22:56:13+00:00",
-  "estimateMinutes": 1800
+  "minutesRemaining": 2340,
+  "estimatedFinish": "2026-11-01T04:58:33+00:00",
+  "estimateMinutes": 2160
  },
  "lanes": [
   {
@@ -5470,7 +5470,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Add a test that old and damaged saves...",
    "costTotalUsd": 100.62,
    "latestChange": {
     "text": "One screen: a swipe from anywhere but a control or tray gear scrolls the page",
@@ -5478,23 +5478,23 @@
    },
    "promo": null,
    "why": "A post of a pelican on a bike drawn by 73 stacked spinning circles, credited to an AI demo.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 5
+    "daysInState": 11
    },
-   "waitingOn": "none",
+   "waitingOn": "drawing circles save test",
    "id": "drawing-circles",
    "number": 54,
    "repo": "drawing-circles",
    "title": "Drawing Circles",
    "line": "Stack gears until the puppy's leash goes slack.",
    "url": "https://chenhsieh.github.io/drawing-circles/",
-   "stage": "review",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Flagship polish round: level 9 difficulty, How to play",
    "shelfNote": "",
@@ -5508,7 +5508,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T18:59:22+00:00",
-   "lastChange": "2026-10-25T08:27:08+00:00",
+   "lastChange": "2026-10-30T16:58:18+00:00",
    "cost": {
     "apiUsd": 12.59,
     "codexRuns": 4,
@@ -5522,6 +5522,20 @@
     "totalUsdEst": 100.62
    },
    "tasks": [
+    {
+     "title": "P3OR97_drawing circles save test",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Add a test that old and damaged saves still load in drawing-circles (release checklist: save test)",
+     "since": "2026-10-30T16:58:18+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1FS18_drawing circles one screen",
      "state": "done",
@@ -5619,24 +5633,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "drawing circles",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "",
-     "since": "2026-10-17T16:37:11+00:00",
-     "done": "2026-10-17T16:37:11+00:00",
-     "reviewed": false,
-     "minutes": 0,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "1. **What a player sees now:** the dotted shape is the thing to draw. The tip of the spinning circle leaves a line that grows each lap: gold where it keeps up with the puppy, red where it falls behind. The leash bar..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 8
@@ -5647,7 +5647,7 @@
     "note": "Flagship polish round: level 9 difficulty, How to play"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T08:27:08+00:00",
@@ -8825,7 +8825,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Add a test that old and damaged saves...",
    "costTotalUsd": 80.04,
    "latestChange": {
     "text": "One screen: a swipe from anywhere but a GIF tile scrolls the page",
@@ -8840,23 +8840,23 @@
     "caption": "Stack rescued GIFs down a 1999 homepage so every visitor."
    },
    "why": "An Internet Archive reel on GifCities, its search engine of rescued GeoCities GIFs.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 5
+    "daysInState": 11
    },
-   "waitingOn": "none",
+   "waitingOn": "gif cities save test",
    "id": "gif-cities",
    "number": 93,
    "repo": "gif-cities",
    "title": "GIF Cities",
    "line": "Stack rescued GIFs down a 1999 homepage so every visitor.",
    "url": "https://chenhsieh.github.io/gif-cities/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Flagship polish round: slower default pace with a speed",
    "shelfNote": "",
@@ -8874,7 +8874,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:37:00+00:00",
-   "lastChange": "2026-10-25T08:19:34+00:00",
+   "lastChange": "2026-10-30T16:58:03+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -8888,6 +8888,20 @@
     "totalUsdEst": 80.04
    },
    "tasks": [
+    {
+     "title": "P3OR94_gif cities save test",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Add a test that old and damaged saves still load in gif-cities (release checklist: save test)",
+     "since": "2026-10-30T16:58:03+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1FS17_gif cities one screen",
      "state": "done",
@@ -8985,24 +8999,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "gif cities growth",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "Explain hearts and great placements, add a collection, rethink the guest-book framing for young players, check whether live Giphy results are allowed.",
-     "since": "2026-10-18T20:13:59+00:00",
-     "done": "2026-10-18T20:13:59+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "GIF Cities now names every symbol in a key under the board, has a Rescued GIFs shelf with a signer total, and its hit counter says what it really counts."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 9
@@ -9013,7 +9013,7 @@
     "note": "Flagship polish round: slower default pace with a speed"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T08:19:34+00:00",
@@ -12560,7 +12560,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Add a test that old and damaged saves...",
    "costTotalUsd": 47.29,
    "latestChange": {
     "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -12575,23 +12575,23 @@
     "caption": ""
    },
    "why": "A satirical post casting a lab's weekly group meeting as a palace court where the boss's nod buys supplies.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 5
+    "daysInState": 9
    },
-   "waitingOn": "none",
+   "waitingOn": "lantern meeting save test",
    "id": "lantern-meeting",
    "number": 112,
    "repo": "lantern-meeting",
    "title": "Lantern Meeting",
    "line": "",
    "url": "https://chenhsieh.github.io/lantern-meeting/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Politics of lab and corporate competition; rock-paper-scissors core; clearer...",
    "shelfNote": "",
@@ -12605,7 +12605,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T20:45:20+00:00",
-   "lastChange": "2026-10-25T01:56:59+00:00",
+   "lastChange": "2026-10-30T16:58:23+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -12619,6 +12619,20 @@
     "totalUsdEst": 47.29
    },
    "tasks": [
+    {
+     "title": "P3OR98_lantern meeting save test",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Add a test that old and damaged saves still load in lantern-meeting (release checklist: save test)",
+     "since": "2026-10-30T16:58:23+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2FM45_lantern meeting first minute",
      "state": "done",
@@ -12691,7 +12705,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 5
@@ -12702,7 +12716,7 @@
     "note": "Good board game feel; clarify what is shown; political/parish-style refinement; less text"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T01:56:59+00:00",
@@ -16495,7 +16509,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Add a test that old and damaged saves...",
    "costTotalUsd": 54.39,
    "latestChange": {
     "text": "One screen: a swipe that starts on the board scrolls the page (tap-only board)",
@@ -16509,23 +16523,23 @@
     "caption": "Grow mycelium threads across an old factory floor and cut."
    },
    "why": "An anthropology trivia post about a book on matsutake mushrooms growing in the ruins of industry.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 5
+    "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "mushroom gaps save test",
    "id": "mushroom-gaps",
    "number": 68,
    "repo": "mushroom-gaps",
    "title": "Mushroom at the End",
    "line": "Grow mycelium threads across an old factory floor and cut.",
    "url": "https://chenhsieh.github.io/mushroom-gaps/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "wants this to happen; preview before commit, journalist research, taste visual...",
    "shelfNote": "",
@@ -16543,7 +16557,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:09:55+00:00",
-   "lastChange": "2026-10-25T07:01:28+00:00",
+   "lastChange": "2026-10-30T16:58:08+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -16557,6 +16571,20 @@
     "totalUsdEst": 54.39
    },
    "tasks": [
+    {
+     "title": "P3OR95_mushroom gaps save test",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Add a test that old and damaged saves still load in mushroom-gaps (release checklist: save test)",
+     "since": "2026-10-30T16:58:08+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1FS26_mushroom gaps one screen",
      "state": "done",
@@ -16654,31 +16682,17 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "feat: see the wind stop before mushrooms grow"
-    },
-    {
-     "title": "mushroom gaps cause effect",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "Clear cause and effect for each tap, a story for the cave, keep the brick faces.",
-     "since": "2026-10-19T17:54:51+00:00",
-     "done": "2026-10-19T17:54:51+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Brief: expert/mushroom-gaps/packages/BRIEF_20261019.md: draw the wind (animated streamlines over reachable floor), hold-preview shows tiles going still and +N, sealing stops the wind before mushrooms pop; labelled..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 8
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T07:01:28+00:00",
@@ -18972,7 +18986,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Add a test that old and damaged saves...",
    "costTotalUsd": 61.79,
    "latestChange": {
     "text": "One screen: win scroll pinned to the bottom with Next level first, board takes the room...",
@@ -18988,21 +19002,21 @@
    "why": "The classical play The Peony Pavilion (1598) and a saved essay note on love found in a dream.",
    "state": "ship",
    "stateFlags": {
-    "refining": false,
+    "refining": true,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 6
    },
-   "waitingOn": "owner",
+   "waitingOn": "peony dream save test",
    "id": "peony-dream",
    "number": 99,
    "repo": "peony-dream",
    "title": "Peony Dream",
    "line": "Paint half a face on a sheet of silk, close the silk on.",
    "url": "https://chenhsieh.github.io/peony-dream/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Eastern ink visual direction instead of raster",
    "shelfNote": "",
@@ -19020,7 +19034,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-18T01:51:43+00:00",
-   "lastChange": "2026-10-25T06:22:05+00:00",
+   "lastChange": "2026-10-30T16:58:13+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -19034,6 +19048,20 @@
     "totalUsdEst": 61.79
    },
    "tasks": [
+    {
+     "title": "P3OR96_peony dream save test",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Add a test that old and damaged saves still load in peony-dream (release checklist: save test)",
+     "since": "2026-10-30T16:58:13+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1FS21_peony dream one screen",
      "state": "done",
@@ -19131,24 +19159,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "peony dream ink visual",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Eastern ink visual direction instead of raster placeholders; smoother fold-and-print play.",
-     "since": "2026-10-19T17:54:51+00:00",
-     "done": "2026-10-19T17:54:51+00:00",
-     "reviewed": true,
-     "minutes": 17,
-     "tokens": 196334,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Peony Dream now shows portrait progress, teaches its first ink-and-hinge move, and has richer wet-ink material."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 8
@@ -19159,7 +19173,7 @@
     "note": "Choosing what the mirror may copy is a real decision (the obvious paint-and-fold never reaches par from level 4 on); next is fitting a small phone"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T06:22:05+00:00",
@@ -25740,7 +25754,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Add a test that old and damaged saves...",
    "costTotalUsd": 61.41,
    "latestChange": {
     "text": "One screen: win card pinned to the bottom with Next level first, swipe from the window...",
@@ -25755,23 +25769,23 @@
     "caption": "Drag tissue-paper socks onto a dark bedroom window; where."
    },
    "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 5
+    "daysInState": 6
    },
-   "waitingOn": "none",
+   "waitingOn": "sockglass save test",
    "id": "sockglass",
    "number": 73,
    "repo": "sockglass",
    "title": "Sockglass",
    "line": "Drag tissue-paper socks onto a dark bedroom window; where.",
    "url": "https://chenhsieh.github.io/sockglass/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Make sock sizes and counts readable and let the theme",
    "shelfNote": "",
@@ -25785,7 +25799,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:35:59+00:00",
-   "lastChange": "2026-10-25T06:29:02+00:00",
+   "lastChange": "2026-10-30T16:57:58+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -25799,6 +25813,20 @@
     "totalUsdEst": 61.41
    },
    "tasks": [
+    {
+     "title": "P3OR93_sockglass save test",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Add a test that old and damaged saves still load in sockglass (release checklist: save test)",
+     "since": "2026-10-30T16:57:58+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1FS22_sockglass one screen",
      "state": "done",
@@ -25899,7 +25927,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 7
@@ -25910,7 +25938,7 @@
     "note": "The window and the colour mixing read well, but hanging each sock over its own picture already wins levels 4 to 6, so those levels need a real choice"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T06:29:02+00:00",
@@ -27115,7 +27143,7 @@
    ]
   },
   {
-   "nextTask": "stroke-tops: the whole game fits one phone screen...",
+   "nextTask": "Add a test that old and damaged saves...",
    "costTotalUsd": 65.09,
    "latestChange": {
     "text": "Sync fixed onescreen-shell (P2FS38 fixes: ghost click guard, bottom room)",
@@ -27137,7 +27165,7 @@
     "reviseRound": 0,
     "daysInState": 5
    },
-   "waitingOn": "stroke tops one screen",
+   "waitingOn": "stroke tops save test",
    "id": "stroke-tops",
    "number": 84,
    "repo": "stroke-tops",
@@ -27159,7 +27187,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:39:08+00:00",
-   "lastChange": "2026-10-29T18:03:26+00:00",
+   "lastChange": "2026-10-30T16:58:28+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -27173,6 +27201,20 @@
     "totalUsdEst": 65.09
    },
    "tasks": [
+    {
+     "title": "P3OR99_stroke tops save test",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Add a test that old and damaged saves still load in stroke-tops (release checklist: save test)",
+     "since": "2026-10-30T16:58:28+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2FS47_stroke tops one screen",
      "state": "queued",
@@ -27231,7 +27273,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 3
@@ -27315,7 +27357,7 @@
    ]
   },
   {
-   "nextTask": "telephone-of-babel: the whole game fits one phone screen...",
+   "nextTask": "Add a test that old and damaged saves...",
    "costTotalUsd": 76.14,
    "latestChange": {
     "text": "Sync fixed onescreen-shell (P2FS38 fixes: ghost click guard, bottom room)",
@@ -27337,7 +27379,7 @@
     "reviseRound": 0,
     "daysInState": 5
    },
-   "waitingOn": "telephone of babel one screen",
+   "waitingOn": "telephone of babel save test",
    "id": "telephone-of-babel",
    "number": 76,
    "repo": "telephone-of-babel",
@@ -27359,7 +27401,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:30:37+00:00",
-   "lastChange": "2026-10-29T18:03:07+00:00",
+   "lastChange": "2026-10-30T16:58:32+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -27373,6 +27415,20 @@
     "totalUsdEst": 76.14
    },
    "tasks": [
+    {
+     "title": "P3OR100_telephone of babel save test",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Add a test that old and damaged saves still load in telephone-of-babel (release checklist: save test)",
+     "since": "2026-10-30T16:58:32+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2FS56_telephone of babel one screen",
      "state": "queued",
@@ -27459,7 +27515,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 5
