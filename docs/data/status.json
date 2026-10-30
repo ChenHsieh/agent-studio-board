@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T19:16:53+00:00",
+ "generated": "2026-10-30T19:19:30+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -17,10 +17,10 @@
   "workers": {
    "Codex": {
     "queued": 46,
-    "running": 1,
-    "doneToday": 3,
-    "minutes": 1880,
-    "estimateMinutes": 1880
+    "running": 0,
+    "doneToday": 4,
+    "minutes": 1840,
+    "estimateMinutes": 1840
    },
    "Claude": {
     "queued": 1,
@@ -31,8 +31,8 @@
    }
   },
   "queued": 47,
-  "running": 5,
-  "doneToday": 34,
+  "running": 4,
+  "doneToday": 35,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2180,
-  "estimatedFinish": "2026-11-01T02:36:53+00:00",
-  "estimateMinutes": 1880
+  "minutesRemaining": 2140,
+  "estimatedFinish": "2026-11-01T01:59:30+00:00",
+  "estimateMinutes": 1840
  },
  "lanes": [
   {
@@ -68,7 +68,7 @@
    "game": "nobody-looking",
    "task": "P1NL07_story and visual round",
    "since": "2026-10-30T19:07:36+00:00",
-   "activity": "2026-10-30T19:15:31+00:00",
+   "activity": "2026-10-30T19:18:54+00:00",
    "commit": null
   },
   {
@@ -78,19 +78,11 @@
    "since": null,
    "activity": null,
    "commit": null
-  },
-  {
-   "worker": "Codex",
-   "game": "rumour-on-the-jetty",
-   "task": "P2AX16_kit fit rollout rumour on the jetty",
-   "since": "2026-10-30T19:09:37+00:00",
-   "activity": "2026-10-30T19:09:20+00:00",
-   "commit": null
   }
  ],
- "codexLanes": 1,
+ "codexLanes": 0,
  "claudeWorkers": 4,
- "apiSpentUsd": 320.57,
+ "apiSpentUsd": 320.62,
  "claudeInSession": {
   "runs": 308,
   "usdEst": 1108.8,
@@ -167,7 +159,7 @@
   },
   {
    "day": "2026-10-30",
-   "changes": 14
+   "changes": 15
   }
  ],
  "houseRules": 25,
@@ -17172,7 +17164,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T17:56:06+00:00",
-   "lastChange": "2026-10-30T19:15:31+00:00",
+   "lastChange": "2026-10-30T19:18:54+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -17320,6 +17312,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-30T19:03:04+00:00",
+     "ok": true,
+     "note": "feat: the museum gets a second room: Storage 1-8, then a Kitchen where knobs shut their eyes and wake up again (P1NL06)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-30T18:44:14+00:00",
      "ok": true,
      "note": "P1NL04: first minute never ignores a touch, ends on Start level 1; level 1 rings its first slide; one-line goals",
@@ -17378,12 +17376,6 @@
      "ok": true,
      "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T06:28:13+00:00",
-     "ok": true,
-     "note": "P1NL02: museum drawer look live (jade discs/arcs, face as foam shadow + deep holes + tick, lid blink), save migrates cabinet players",
-     "source": "board note"
     }
    ]
   },
@@ -22608,30 +22600,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 50.4,
+   "costTotalUsd": 50.58,
    "latestChange": {
     "text": "fix: keep every town readable with Undo in reach",
-    "at": "2026-10-30T19:17:10+00:00"
+    "at": "2026-10-30T19:17:14+00:00"
    },
    "promo": null,
    "why": "You are a rumour hopping house to house in a harbour town",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 7
+    "daysInState": 0
    },
-   "waitingOn": "kit fit rollout rumour on the jetty",
+   "waitingOn": "none",
    "id": "rumour-on-the-jetty",
    "number": 154,
    "repo": "rumour-on-the-jetty",
    "title": "Rumour On The Jetty",
    "line": "",
    "url": "https://chenhsieh.github.io/rumour-on-the-jetty/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -22645,33 +22637,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:50:03+00:00",
-   "lastChange": "2026-10-30T19:17:10+00:00",
+   "lastChange": "2026-10-30T19:17:14+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 2,
     "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 152544,
+    "codexUsdEst": 0.18,
     "claudeUsdEst": 7.2,
     "earlierRounds": 12,
     "earlierUsdEst": 43.2,
-    "totalUsdEst": 50.4
+    "totalUsdEst": 50.58
    },
    "tasks": [
     {
      "title": "P2AX16_kit fit rollout rumour on the jetty",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "rumour-on-the-jetty: take the new play kit so the board and Undo fit a small phone",
-     "since": "2026-10-30T19:09:37+00:00",
-     "done": null,
+     "since": "2026-10-30T17:01:51+00:00",
+     "done": "2026-10-30T17:01:51+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 23,
+     "tokens": 152544,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "fix: keep every town readable with Undo in reach"
     },
     {
      "title": "P2RJT00_rumour on the jetty",
@@ -22704,9 +22696,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": {
     "date": "2026-10-23",
@@ -22714,8 +22706,14 @@
     "note": "Choosing when to leave holds (the obvious walk wins none of levels 4 to 7) but the town does not fit a phone and each house is hard to read"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-30T19:17:14+00:00",
+     "ok": true,
+     "note": "fix: keep every town readable with Undo in reach",
+     "source": "board note"
+    },
     {
      "at": "2026-10-30T19:17:10+00:00",
      "ok": true,
@@ -22781,12 +22779,6 @@
      "ok": true,
      "note": "built P1 core: 12 towns, exact par, hold-boat preview, first minute; live; template_check 12/13 (fit at 320x568)",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-24T00:17:16+00:00",
-     "ok": true,
-     "note": "feat: Rumour on the Jetty plays: whisper house to house, then leave by boat",
-     "source": "main commit"
     }
    ]
   },
