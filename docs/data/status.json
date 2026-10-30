@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T18:08:40+00:00",
+ "generated": "2026-10-30T18:11:04+00:00",
  "ops": {
   "count": 5,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 50,
+    "queued": 49,
     "running": 0,
     "doneToday": 3,
-    "minutes": 2000,
-    "estimateMinutes": 2000
+    "minutes": 1960,
+    "estimateMinutes": 1960
    },
    "Claude": {
     "queued": 1,
     "running": 10,
-    "doneToday": 14,
+    "doneToday": 16,
     "minutes": 660,
     "estimateMinutes": 330
    }
   },
-  "queued": 51,
+  "queued": 50,
   "running": 10,
-  "doneToday": 17,
+  "doneToday": 19,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2660,
-  "estimatedFinish": "2026-11-01T03:28:40+00:00",
-  "estimateMinutes": 2000
+  "minutesRemaining": 2620,
+  "estimatedFinish": "2026-11-01T02:51:04+00:00",
+  "estimateMinutes": 1960
  },
  "lanes": [
   {
@@ -64,7 +64,7 @@
    "game": "lantern-meeting",
    "task": "P1LM03_lantern meeting story and first minute",
    "since": "2026-10-30T17:20:30+00:00",
-   "activity": "2026-10-30T17:53:03+00:00",
+   "activity": "2026-10-30T18:09:02+00:00",
    "commit": null
   },
   {
@@ -96,7 +96,7 @@
    "game": "sockglass",
    "task": "P1SG01_sockglass release blockers",
    "since": "2026-10-30T17:38:34+00:00",
-   "activity": "2026-10-30T18:05:34+00:00",
+   "activity": "2026-10-30T18:10:48+00:00",
    "commit": null
   },
   {
@@ -104,7 +104,7 @@
    "game": "sockglass",
    "task": "P1SG02_sockglass stranger rereview",
    "since": "2026-10-30T18:07:46+00:00",
-   "activity": "2026-10-30T18:07:46+00:00",
+   "activity": "2026-10-30T18:10:48+00:00",
    "commit": null
   },
   {
@@ -125,18 +125,23 @@
   },
   {
    "worker": "Claude",
-   "game": "paid-clapper",
-   "task": "P2PC00_paid clapper core",
-   "since": "2026-10-30T16:52:39+00:00",
-   "activity": "2026-10-30T18:07:31+00:00",
-   "commit": {
-    "at": "2026-10-30T18:07:31+00:00",
-    "subject": "core: 'Today' alone in the HUD on narrow phones"
-   }
+   "game": "sockglass",
+   "task": "P2FM60_sockglass first minute",
+   "since": "2026-10-30T18:10:48+00:00",
+   "activity": "2026-10-30T18:10:48+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P2PC01_review paid clapper",
+   "since": null,
+   "activity": null,
+   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 10,
+ "claudeWorkers": 11,
  "apiSpentUsd": 320.57,
  "claudeInSession": {
   "runs": 301,
@@ -4472,15 +4477,15 @@
     "caption": "Ring notes on a brass plate covered in sand and watch the."
    },
    "why": "Chladni figures on a vibrating plate and a post of dye moving on vibrating milk.",
-   "state": "ship",
+   "state": "released",
    "stateFlags": {
     "refining": false,
     "resting": false,
-    "regressed": true,
+    "regressed": false,
     "reviseRound": 0,
-    "daysInState": 10
+    "daysInState": 7
    },
-   "waitingOn": "owner",
+   "waitingOn": "none",
    "id": "cymatic-plate",
    "number": 85,
    "repo": "cymatic-plate",
@@ -4493,7 +4498,7 @@
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
    "image": "promo/cymatic-plate/first.jpg",
-   "released": false,
+   "released": true,
    "releasedOn": "2026-10-23",
    "releasedNote": "public-ready, still being refined",
    "whyExists": "Chladni figures and a post of dye on milk inspired this. Each note shapes sand and moves dye drops, so the order you play changes the outcome. Worth playing to see how sound can guide patterns and movement on a plate.",
@@ -4715,8 +4720,7 @@
      "note": "P3OR54_cymatic-plate-credits-page: WORKDIR",
      "source": "main commit"
     }
-   ],
-   "releaseHeld": true
+   ]
   },
   {
    "nextTask": "Why this exists: finish the rollout on dancers-not-mad...",
@@ -6621,7 +6625,7 @@
    ]
   },
   {
-   "nextTask": "Felt Years call: visual round, classy and consistent...",
+   "nextTask": "Felt Years becomes Grandma's Sunday video call (Ask...",
    "costTotalUsd": 69.62,
    "latestChange": {
     "text": "One screen: result card is a bottom sheet with Next first (P2FS58)",
@@ -6643,7 +6647,7 @@
     "reviseRound": 1,
     "daysInState": 9
    },
-   "waitingOn": "felt years call visual",
+   "waitingOn": "felt years call core",
    "id": "felt-years",
    "number": 98,
    "repo": "felt-years",
@@ -6665,7 +6669,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T23:11:23+00:00",
-   "lastChange": "2026-10-30T18:06:28+00:00",
+   "lastChange": "2026-10-30T18:10:24+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
@@ -6679,6 +6683,20 @@
     "totalUsdEst": 69.62
    },
    "tasks": [
+    {
+     "title": "P1FY51_felt years call core",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Felt Years becomes Grandma's Sunday video call (Ask, Show, Wait, Bye): new core rules, bots, 12 levels, daily call, save kept",
+     "since": "2026-10-30T18:10:24+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1FY53_felt years call visual",
      "state": "queued",
@@ -6699,20 +6717,6 @@
      "worker": "Codex",
      "plan": "Felt Years call: every button says what it will do and shows it at once; first minute; one screen, big text",
      "since": "2026-10-30T18:06:04+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P1FY51_felt years call core",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Felt Years becomes Grandma's Sunday video call (Ask, Show, Wait, Bye): new core rules, bots, 12 levels, daily call, save kept",
-     "since": "2026-10-30T18:05:34+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -12632,10 +12636,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 47.29,
+   "costTotalUsd": 54.49,
    "latestChange": {
-    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
-    "at": "2026-10-25T01:56:59+00:00"
+    "text": "Lantern Meeting: short phones scroll naturally; tests pass at 320 (P1LM03)",
+    "at": "2026-10-30T18:09:02+00:00"
    },
    "promo": {
     "files": {
@@ -12675,8 +12679,8 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-10-20T20:45:20+00:00",
-   "lastChange": "2026-10-30T17:53:03+00:00",
+   "firstSeen": "2026-10-20T20:55:21+00:00",
+   "lastChange": "2026-10-30T18:09:02+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -12685,9 +12689,9 @@
     "codexTokens": 406690,
     "codexUsdEst": 0.49,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 11,
-    "earlierUsdEst": 39.6,
-    "totalUsdEst": 47.29
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
+    "totalUsdEst": 54.49
    },
    "tasks": [
     {
@@ -12804,6 +12808,24 @@
    "inProgress": true,
    "history": [
     {
+     "at": "2026-10-30T18:09:02+00:00",
+     "ok": true,
+     "note": "Lantern Meeting: short phones scroll naturally; tests pass at 320 (P1LM03)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-30T17:53:03+00:00",
+     "ok": true,
+     "note": "Lantern Meeting: story card, practice round in the court, always-visible order chart, council wording, one screen, fairer seeds (P1LM03)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-30T17:45:58+00:00",
+     "ok": true,
+     "note": "WIP P1LM03: story card, practice round in the real court, always-visible order chart, council wording, one screen, strict seeds",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T01:56:59+00:00",
      "ok": true,
      "note": "Zoom guard updated: taps are never cancelled (P1ZM00)",
@@ -12855,24 +12877,6 @@
      "at": "2026-10-21T07:47:29+00:00",
      "ok": true,
      "note": "feat: make meeting choices feel clicky",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T07:37:08+00:00",
-     "ok": false,
-     "note": "see",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T05:42:22+00:00",
-     "ok": true,
-     "note": "P2LM02 council spin (motion/lobby/objection, win the vote), 3-page how-to, guided first week, EN+ZH court lines; live main",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T05:40:23+00:00",
-     "ok": true,
-     "note": "feat: Lantern Meeting becomes a council: table a motion, lobby the Chair, raise an objection",
      "source": "main commit"
     }
    ]
@@ -19001,15 +19005,15 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "paid clapper core",
+   "waitingOn": "fix paid clapper after review",
    "id": "paid-clapper",
    "number": 167,
    "repo": "paid-clapper",
    "title": "Paid Clapper",
    "line": "",
    "url": "https://chenhsieh.github.io/paid-clapper/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -19026,33 +19030,16 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 13,
-    "earlierUsdEst": 46.8,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 12,
+    "earlierUsdEst": 43.2,
     "totalUsdEst": 46.8
    },
    "tasks": [
-    {
-     "title": "P2PC00_paid clapper core",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "New game 帶頭鼓掌的人 The Paid Clapper: find the seat paid to start the applause by asking when each seat started",
-     "since": "2026-10-30T16:52:39+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-30T18:07:31+00:00",
-      "subject": "core: 'Today' alone in the HUD on narrow phones"
-     },
-     "result": ""
-    },
     {
      "title": "P2PC02_fix paid clapper after review",
      "state": "queued",
@@ -19066,13 +19053,27 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2PC00_paid clapper core",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "New game 帶頭鼓掌的人 The Paid Clapper: find the seat paid to start the applause by asking when each seat started",
+     "since": "2026-10-30T16:52:39+00:00",
+     "done": "2026-10-30T16:52:39+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P2PC00_paid-clapper-core: RESULT (Claude Opus, 2026-10-30)"
     }
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
@@ -25924,8 +25925,8 @@
    "nextTask": null,
    "costTotalUsd": 61.41,
    "latestChange": {
-    "text": "Readable at a glance: every text 20 px or more, sock lengths as 20 px labels, pattern...",
-    "at": "2026-10-30T18:05:34+00:00"
+    "text": "Goal bar label follows the language switch (was stuck on 'Pictures lit' in Chinese)",
+    "at": "2026-10-30T18:10:48+00:00"
    },
    "promo": {
     "files": {
@@ -25944,7 +25945,7 @@
     "reviseRound": 2,
     "daysInState": 6
    },
-   "waitingOn": "sockglass stranger rereview",
+   "waitingOn": "sockglass first minute",
    "id": "sockglass",
    "number": 73,
    "repo": "sockglass",
@@ -25966,7 +25967,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:35:59+00:00",
-   "lastChange": "2026-10-30T18:07:46+00:00",
+   "lastChange": "2026-10-30T18:10:48+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -25980,6 +25981,20 @@
     "totalUsdEst": 61.41
    },
    "tasks": [
+    {
+     "title": "P2FM60_sockglass first minute",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Sockglass first-minute round (built inside P1SG01)",
+     "since": "2026-10-30T18:10:48+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SG02_sockglass stranger rereview",
      "state": "running",
@@ -26077,25 +26092,11 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1SK00 Sockglass (#73): story, tonight's window, share. DONE. main , live bytes match (rules, game, shell, index, look, strings); test/story_daily.test.mjs passes against the LIVE page at 390x844 and 320x568 (30 checks,..."
-    },
-    {
-     "title": "P1SD38_studio standard sockglass",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-21T22:13:33+00:00",
-     "done": "2026-10-21T22:13:33+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 2,
+    "running": 3,
     "waitingDesign": 0,
     "done": 8
    },
@@ -26107,6 +26108,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-30T18:10:48+00:00",
+     "ok": true,
+     "note": "Goal bar label follows the language switch (was stuck on 'Pictures lit' in Chinese)",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-30T18:05:34+00:00",
      "ok": true,
@@ -26171,12 +26178,6 @@
      "at": "2026-10-24T11:37:45+00:00",
      "ok": true,
      "note": "start: P2SG00_sockglass-levels-need-a-choice",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T08:06:22+00:00",
-     "ok": true,
-     "note": "feat: Sockglass story, tonight's window and its share text",
      "source": "main commit"
     }
    ]
@@ -26623,7 +26624,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 0
+    "daysInState": 1
    },
    "waitingOn": "none",
    "id": "spirit-billboard",
@@ -33051,9 +33052,7 @@
   "System needs: Released game Cymatic Plate now fails what it passed at release: standard (fix: play it; keep it released or remove its row from board/released.tsv)"
  ],
  "releaseReady": [],
- "releaseRegressed": [
-  "cymatic-plate"
- ],
+ "releaseRegressed": [],
  "checksSummary": {
   "why": {
    "yes": 163,
@@ -33074,14 +33073,14 @@
    "ran": 0
   },
   "first_minute": {
-   "yes": 54,
+   "yes": 55,
    "no": 0,
-   "unknown": 114,
+   "unknown": 113,
    "ran": 0
   },
   "a11y": {
-   "yes": 17,
-   "no": 144,
+   "yes": 18,
+   "no": 143,
    "unknown": 7,
    "ran": 0
   },
@@ -33092,9 +33091,9 @@
    "ran": 0
   },
   "saves": {
-   "yes": 100,
+   "yes": 101,
    "no": 0,
-   "unknown": 68,
+   "unknown": 67,
    "ran": 0
   },
   "standard": {

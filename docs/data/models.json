@@ -207,12 +207,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 276,
+   "count": 277,
    "firstTimePass": 95,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 226,
+   "guessed": 227,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -400,10 +400,10 @@
   {
    "executor": "codex gpt-6-sol high",
    "role": "design",
-   "count": 3,
+   "count": 4,
    "firstTimePass": 100,
    "retries": 0,
-   "medianMinutes": 36,
+   "medianMinutes": 32.5,
    "costPerPass": null,
    "guessed": 0,
    "topFailures": [],
@@ -615,6 +615,15 @@
   },
   {
    "date": "2026-10-30",
+   "task": "paid clapper core",
+   "number": "167",
+   "executor": "codex gpt-6-sol high",
+   "role": "design",
+   "passed": "",
+   "note": "exhausted, 180k tokens: at 320x568 the 7-row halls draw seats at about 37 px (44 at 360x640, 56 at 390). The brief's 568 px budget assumed a"
+  },
+  {
+   "date": "2026-10-30",
    "task": "review long way round",
    "number": "166",
    "executor": "claude-opus",
@@ -651,6 +660,15 @@
   },
   {
    "date": "2026-10-30",
+   "task": "sockglass first minute",
+   "number": "73",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "the premise card before the round is 59 words (the playable gate's advisory A1 asks for 40); left as is, it was owner's story pass."
+  },
+  {
+   "date": "2026-10-30",
    "task": "story premise",
    "number": "",
    "executor": "claude-opus",
@@ -675,24 +693,6 @@
    "role": "build",
    "passed": "yes",
    "note": "levels 9-12 on a 360x640 phone still get a board about 63% wide (7 page rows + 2 tray rows cannot fit"
-  },
-  {
-   "date": "2026-10-29",
-   "task": "review still a heap and out of the corner",
-   "number": "161",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "",
-   "note": ""
-  },
-  {
-   "date": "2026-10-29",
-   "task": "lot waits reset review",
-   "number": "121",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "",
-   "note": ""
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."

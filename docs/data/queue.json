@@ -1,5 +1,5 @@
 {
- "generated": 1793383737,
+ "generated": 1793383879,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -240,21 +240,23 @@
    "created": 1793382549
   },
   {
-   "id": "P2PC00_paid-clapper-core",
-   "request": "New game 帶頭鼓掌的人 The Paid Clapper: find the seat paid to start the applause by asking when each seat started",
-   "game": "Paid Clapper",
+   "id": "P2PC01_review-paid-clapper",
+   "request": "Opus stranger review of paid-clapper after its core build",
+   "game": "Studio",
    "route": "Claude",
    "model": "opus",
    "effort": "high",
-   "kind": "build",
-   "size": "one repo",
+   "kind": "review",
+   "size": "studio",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P2PC00_paid-clapper-core"
+   ],
    "priority": null,
-   "why": "Find the seat paid to start the applause by asking when each seat started clapping.",
+   "why": "",
    "state": "running",
-   "at": 1793379159,
-   "created": 1793379159
+   "at": 1793339508,
+   "created": 1793339508
   },
   {
    "id": "P3PL10_tree-hero-why-rollout",
@@ -351,7 +353,7 @@
    "why": "A handwritten derivation that life's felt midpoint is about 18 if felt time runs as dx/x, plus a log-time ruler post.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1793383534
+   "created": 1793383824
   },
   {
    "id": "P1NL05_face-research",
@@ -1041,27 +1043,6 @@
    "estPercentOfWeek": 34.92
   },
   {
-   "id": "P2PC01_review-paid-clapper",
-   "request": "Opus stranger review of paid-clapper after its core build",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2PC00_paid-clapper-core"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2PC00_paid-clapper-core"
-   ],
-   "created": 1793339508
-  },
-  {
    "id": "P2PC02_fix-paid-clapper-after-review",
    "request": "The Paid Clapper: apply the stranger review's fix list, Codex",
    "game": "Paid Clapper",
@@ -1254,6 +1235,23 @@
    "state": "done",
    "at": 1793380263,
    "created": 1793380263
+  },
+  {
+   "id": "P2FM60_sockglass-first-minute",
+   "request": "Sockglass first-minute round (built inside P1SG01)",
+   "game": "Sockglass",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "first-minute",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
+   "state": "done",
+   "at": 1793383848,
+   "created": 1793383848
   },
   {
    "id": "P3OR93_sockglass-save-test",
@@ -1459,6 +1457,23 @@
    "state": "done",
    "at": 1793379235,
    "created": 1793379235
+  },
+  {
+   "id": "P2PC00_paid-clapper-core",
+   "request": "New game 帶頭鼓掌的人 The Paid Clapper: find the seat paid to start the applause by asking when each seat started",
+   "game": "Paid Clapper",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "Find the seat paid to start the applause by asking when each seat started clapping.",
+   "state": "done",
+   "at": 1793379159,
+   "created": 1793379159
   },
   {
    "id": "P3OR102_lie-flat-save-test",
