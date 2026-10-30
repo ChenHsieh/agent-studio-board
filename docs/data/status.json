@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T09:03:20+00:00",
+ "generated": "2026-10-30T09:06:19+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 47,
+    "queued": 46,
     "running": 1,
-    "doneToday": 0,
-    "minutes": 1920,
-    "estimateMinutes": 1920
+    "doneToday": 1,
+    "minutes": 1880,
+    "estimateMinutes": 1880
    },
    "Claude": {
     "queued": 1,
@@ -30,9 +30,9 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 48,
+  "queued": 47,
   "running": 1,
-  "doneToday": 0,
+  "doneToday": 1,
   "lanes": {
    "Codex": 1,
    "Claude": 1
@@ -42,20 +42,20 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1980,
-  "estimatedFinish": "2026-10-31T17:03:20+00:00",
-  "estimateMinutes": 1920
+  "minutesRemaining": 1940,
+  "estimatedFinish": "2026-10-31T16:26:19+00:00",
+  "estimateMinutes": 1880
  },
  "lanes": [
   {
    "worker": "Codex",
-   "game": "chai-boil",
-   "task": "P2CB14_chai boil fix after look",
-   "since": "2026-10-30T08:42:55+00:00",
-   "activity": "2026-10-30T09:03:18+00:00",
+   "game": "long-way-round",
+   "task": "P2LR00_long way round core",
+   "since": "2026-10-30T09:05:03+00:00",
+   "activity": "2026-10-30T09:06:18+00:00",
    "commit": {
-    "at": "2026-10-30T08:53:01+00:00",
-    "subject": "fix: clear dial label and add a watching frog"
+    "at": "2026-10-30T09:05:06+00:00",
+    "subject": "start: P2LR00_long-way-round-core"
    }
   }
  ],
@@ -138,7 +138,7 @@
   },
   {
    "day": "2026-10-30",
-   "changes": 1
+   "changes": 2
   }
  ],
  "houseRules": 25,
@@ -2169,20 +2169,20 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 91.56,
+   "costTotalUsd": 91.8,
    "latestChange": {
-    "text": "feat: show chai as a moving line drawing",
-    "at": "2026-10-29T04:31:46+00:00"
+    "text": "fix: clear dial label and add a watching frog",
+    "at": "2026-10-30T09:05:03+00:00"
    },
    "promo": null,
    "why": "An AI-made video post of a pot of milk tea foaming up on a wood fire, plus the Lunar Lander game.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 9
+    "daysInState": 0
    },
    "waitingOn": "owner",
    "id": "chai-boil",
@@ -2191,8 +2191,8 @@
    "title": "Chai Boil",
    "line": "One pot, one dial: let the chai rise to the rim, not over it.",
    "url": "https://chenhsieh.github.io/chai-boil/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "hyper-realistic visuals instead of computer-drawn",
    "shelfNote": "",
@@ -2206,36 +2206,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-30T09:03:18+00:00",
+   "lastChange": "2026-10-30T09:05:03+00:00",
    "cost": {
     "apiUsd": 6.73,
-    "codexRuns": 7,
+    "codexRuns": 8,
     "claudeRuns": 11,
     "apiRuns": 3,
-    "codexTokens": 1694365,
-    "codexUsdEst": 2.03,
+    "codexTokens": 1889376,
+    "codexUsdEst": 2.27,
     "claudeUsdEst": 39.6,
     "earlierRounds": 12,
     "earlierUsdEst": 43.2,
-    "totalUsdEst": 91.56
+    "totalUsdEst": 91.8
    },
    "tasks": [
     {
      "title": "P2CB14_chai boil fix after look",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "",
      "since": "2026-10-30T08:42:55+00:00",
-     "done": null,
+     "done": "2026-10-30T08:42:55+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 20,
+     "tokens": 195011,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-30T08:53:01+00:00",
-      "subject": "fix: clear dial label and add a watching frog"
-     },
-     "result": ""
+     "commit": null,
+     "result": "fix: clear dial label and add a watching frog"
     },
     {
      "title": "P2CB13_chai boil black field look",
@@ -2338,9 +2335,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 21
+    "done": 22
    },
    "verdict": {
     "date": "2026-10-21",
@@ -2348,8 +2345,14 @@
     "note": "Visual revamp, different kitchen"
    },
    "needsYou": "Prayer-flag strip in the mountain hut set: five extra colours on one strip, all six kitchens still pass the contrast check. Suggest: keep it; it costs little and no kitchen failed the contrast check.",
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-30T09:05:03+00:00",
+     "ok": true,
+     "note": "fix: clear dial label and add a watching frog",
+     "source": "board note"
+    },
     {
      "at": "2026-10-29T04:31:46+00:00",
      "ok": true,
@@ -2414,12 +2417,6 @@
      "at": "2026-10-24T13:04:29+00:00",
      "ok": true,
      "note": "start: P1CB12_photo-kitchens-visual-build",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T09:10:53+00:00",
-     "ok": true,
-     "note": "design: Chai Boil spec keeps the copper lever labels and names the slip strings",
      "source": "main commit"
     }
    ]
@@ -14196,14 +14193,14 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "fix long way round after review",
+   "waitingOn": "long way round core",
    "id": "long-way-round",
    "number": 166,
    "repo": "long-way-round",
    "title": "Long Way Round",
    "line": "",
    "url": "https://chenhsieh.github.io/long-way-round/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
@@ -14217,7 +14214,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-30T05:42:34+00:00",
-   "lastChange": "2026-10-30T05:52:19+00:00",
+   "lastChange": "2026-10-30T09:06:18+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -14232,6 +14229,23 @@
    },
    "tasks": [
     {
+     "title": "P2LR00_long way round core",
+     "state": "running",
+     "worker": "Codex",
+     "plan": "New game 繞遠路 Long Way Round: deliver the envelope while the nosy neighbour guesses the wrong door",
+     "since": "2026-10-30T09:05:03+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": {
+      "at": "2026-10-30T09:05:06+00:00",
+      "subject": "start: P2LR00_long-way-round-core"
+     },
+     "result": ""
+    },
+    {
      "title": "P2LR02_fix long way round after review",
      "state": "queued",
      "worker": "Codex",
@@ -14244,25 +14258,11 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "P2LR00_long way round core",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "New game 繞遠路 Long Way Round: deliver the envelope while the nosy neighbour guesses the wrong door",
-     "since": "2026-10-30T05:49:01+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
@@ -21658,7 +21658,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 4
+    "daysInState": 5
    },
    "waitingOn": "none",
    "id": "ribosome-2048",
