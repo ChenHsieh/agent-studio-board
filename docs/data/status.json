@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T17:05:55+00:00",
+ "generated": "2026-10-30T17:08:19+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 46,
+    "queued": 45,
     "running": 0,
-    "doneToday": 2,
-    "minutes": 1840,
-    "estimateMinutes": 1840
+    "doneToday": 3,
+    "minutes": 1800,
+    "estimateMinutes": 1800
    },
    "Claude": {
     "queued": 1,
@@ -30,9 +30,9 @@
     "estimateMinutes": 120
    }
   },
-  "queued": 47,
+  "queued": 46,
   "running": 3,
-  "doneToday": 11,
+  "doneToday": 12,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2080,
-  "estimatedFinish": "2026-10-31T23:45:55+00:00",
-  "estimateMinutes": 1840
+  "minutesRemaining": 2040,
+  "estimatedFinish": "2026-10-31T23:08:19+00:00",
+  "estimateMinutes": 1800
  },
  "lanes": [
   {
@@ -68,7 +68,7 @@
    "game": "paid-clapper",
    "task": "P2PC00_paid clapper core",
    "since": "2026-10-30T16:52:39+00:00",
-   "activity": "2026-10-30T16:52:39+00:00",
+   "activity": "2026-10-30T17:07:42+00:00",
    "commit": null
   }
  ],
@@ -5478,31 +5478,31 @@
    ]
   },
   {
-   "nextTask": "Add a test that old and damaged saves...",
-   "costTotalUsd": 100.62,
+   "nextTask": null,
+   "costTotalUsd": 97.02,
    "latestChange": {
     "text": "One screen: a swipe from anywhere but a control or tray gear scrolls the page",
     "at": "2026-10-25T08:27:08+00:00"
    },
    "promo": null,
    "why": "A post of a pelican on a bike drawn by 73 stacked spinning circles, credited to an AI demo.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 11
+    "daysInState": 0
    },
-   "waitingOn": "drawing circles save test",
+   "waitingOn": "none",
    "id": "drawing-circles",
    "number": 54,
    "repo": "drawing-circles",
    "title": "Drawing Circles",
    "line": "Stack gears until the puppy's leash goes slack.",
    "url": "https://chenhsieh.github.io/drawing-circles/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "review",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Flagship polish round: level 9 difficulty, How to play",
    "shelfNote": "",
@@ -5521,28 +5521,28 @@
     "apiUsd": 12.59,
     "codexRuns": 4,
     "claudeRuns": 2,
-    "apiRuns": 2,
+    "apiRuns": 3,
     "codexTokens": 1359845,
     "codexUsdEst": 1.63,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 22,
-    "earlierUsdEst": 79.2,
-    "totalUsdEst": 100.62
+    "earlierRounds": 21,
+    "earlierUsdEst": 75.6,
+    "totalUsdEst": 97.02
    },
    "tasks": [
     {
      "title": "P3OR97_drawing circles save test",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude API",
      "plan": "Add a test that old and damaged saves still load in drawing-circles (release checklist: save test)",
      "since": "2026-10-30T17:05:38+00:00",
-     "done": null,
+     "done": "2026-10-30T17:05:38+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 1,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE by hand (claude-opus) after aider failed twice (readSave needs levelList and levelId): test/save_migration.test.mjs 9/9 pass, adds cases for the old 14-card book (unlock record kept, all cards open, old position ->..."
     },
     {
      "title": "P1FS18_drawing circles one screen",
@@ -5644,10 +5644,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 8
+    "done": 9
    },
    "verdict": {
     "date": "2026-10-19",
@@ -5655,7 +5655,7 @@
     "note": "Flagship polish round: level 9 difficulty, How to play"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T08:27:08+00:00",
@@ -17127,7 +17127,7 @@
     "reviseRound": 1,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "owner",
    "id": "nobody-looking",
    "number": 127,
    "repo": "nobody-looking",
@@ -17287,7 +17287,7 @@
     "verdict": "revise",
     "note": "not at ship level yet; back to refining"
    },
-   "needsYou": null,
+   "needsYou": "One-screen check B (a swipe on the board must scroll the page) fails games whose board needs every drag, such as this one, Seal Carver, Fly Swarm and Nesting Scrap, even when the play page already fits the phone and has nothing to scroll. Four one-screen tasks are stopped on it. A 5-line change makes B pass when the page fits (it still fails when the page is taller than the screen); tested on the live pages: this game and Seal Carver go from fail to pass. Yes or no? Suggest: yes.",
    "inProgress": false,
    "history": [
     {
@@ -18934,7 +18934,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-30T05:43:19+00:00",
-   "lastChange": "2026-10-30T16:52:39+00:00",
+   "lastChange": "2026-10-30T17:07:42+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
