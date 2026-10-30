@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T17:03:29+00:00",
+ "generated": "2026-10-30T17:05:55+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 51,
+    "queued": 46,
     "running": 0,
     "doneToday": 2,
-    "minutes": 2040,
-    "estimateMinutes": 2040
+    "minutes": 1840,
+    "estimateMinutes": 1840
    },
    "Claude": {
     "queued": 1,
     "running": 3,
-    "doneToday": 4,
+    "doneToday": 9,
     "minutes": 240,
     "estimateMinutes": 120
    }
   },
-  "queued": 52,
+  "queued": 47,
   "running": 3,
-  "doneToday": 6,
+  "doneToday": 11,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2280,
-  "estimatedFinish": "2026-11-01T03:03:29+00:00",
-  "estimateMinutes": 2040
+  "minutesRemaining": 2080,
+  "estimatedFinish": "2026-10-31T23:45:55+00:00",
+  "estimateMinutes": 1840
  },
  "lanes": [
   {
@@ -60,7 +60,7 @@
    "game": "long-way-round",
    "task": "P2LR00_long way round core",
    "since": "2026-10-30T16:53:55+00:00",
-   "activity": "2026-10-30T16:53:55+00:00",
+   "activity": "2026-10-30T17:05:06+00:00",
    "commit": null
   },
   {
@@ -74,7 +74,7 @@
  ],
  "codexLanes": 0,
  "claudeWorkers": 3,
- "apiSpentUsd": 320.37,
+ "apiSpentUsd": 320.57,
  "claudeInSession": {
   "runs": 299,
   "usdEst": 1076.4,
@@ -5516,7 +5516,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T18:59:22+00:00",
-   "lastChange": "2026-10-30T17:01:33+00:00",
+   "lastChange": "2026-10-30T17:05:38+00:00",
    "cost": {
     "apiUsd": 12.59,
     "codexRuns": 4,
@@ -5535,7 +5535,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Add a test that old and damaged saves still load in drawing-circles (release checklist: save test)",
-     "since": "2026-10-30T17:01:33+00:00",
+     "since": "2026-10-30T17:05:38+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -8833,7 +8833,7 @@
    ]
   },
   {
-   "nextTask": "Add a test that old and damaged saves...",
+   "nextTask": null,
    "costTotalUsd": 80.04,
    "latestChange": {
     "text": "One screen: a swipe from anywhere but a GIF tile scrolls the page",
@@ -8848,23 +8848,23 @@
     "caption": "Stack rescued GIFs down a 1999 homepage so every visitor."
    },
    "why": "An Internet Archive reel on GifCities, its search engine of rescued GeoCities GIFs.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 11
+    "daysInState": 0
    },
-   "waitingOn": "gif cities save test",
+   "waitingOn": "none",
    "id": "gif-cities",
    "number": 93,
    "repo": "gif-cities",
    "title": "GIF Cities",
    "line": "Stack rescued GIFs down a 1999 homepage so every visitor.",
    "url": "https://chenhsieh.github.io/gif-cities/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Flagship polish round: slower default pace with a speed",
    "shelfNote": "",
@@ -8882,33 +8882,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:37:00+00:00",
-   "lastChange": "2026-10-30T17:00:18+00:00",
+   "lastChange": "2026-10-30T17:03:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 1,
     "codexTokens": 700030,
     "codexUsdEst": 0.84,
-    "claudeUsdEst": 14.4,
-    "earlierRounds": 18,
-    "earlierUsdEst": 64.8,
+    "claudeUsdEst": 18.0,
+    "earlierRounds": 17,
+    "earlierUsdEst": 61.2,
     "totalUsdEst": 80.04
    },
    "tasks": [
     {
      "title": "P3OR94_gif cities save test",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "Add a test that old and damaged saves still load in gif-cities (release checklist: save test)",
-     "since": "2026-10-30T17:00:18+00:00",
-     "done": null,
+     "since": "2026-10-30T17:03:52+00:00",
+     "done": "2026-10-30T17:03:52+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 1,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: test/save_migration.test.mjs"
     },
     {
      "title": "P1FS17_gif cities one screen",
@@ -9010,10 +9010,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 9
+    "done": 10
    },
    "verdict": {
     "date": "2026-10-19",
@@ -9021,7 +9021,7 @@
     "note": "Flagship polish round: slower default pace with a speed"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T08:19:34+00:00",
@@ -14255,7 +14255,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-30T05:42:34+00:00",
-   "lastChange": "2026-10-30T16:53:55+00:00",
+   "lastChange": "2026-10-30T17:05:06+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -16531,7 +16531,7 @@
    ]
   },
   {
-   "nextTask": "Add a test that old and damaged saves...",
+   "nextTask": null,
    "costTotalUsd": 54.39,
    "latestChange": {
     "text": "One screen: a swipe that starts on the board scrolls the page (tap-only board)",
@@ -16545,23 +16545,23 @@
     "caption": "Grow mycelium threads across an old factory floor and cut."
    },
    "why": "An anthropology trivia post about a book on matsutake mushrooms growing in the ruins of industry.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "mushroom gaps save test",
+   "waitingOn": "none",
    "id": "mushroom-gaps",
    "number": 68,
    "repo": "mushroom-gaps",
    "title": "Mushroom at the End",
    "line": "Grow mycelium threads across an old factory floor and cut.",
    "url": "https://chenhsieh.github.io/mushroom-gaps/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "wants this to happen; preview before commit, journalist research, taste visual...",
    "shelfNote": "",
@@ -16579,33 +16579,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:09:55+00:00",
-   "lastChange": "2026-10-30T17:01:02+00:00",
+   "lastChange": "2026-10-30T17:03:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 5,
+    "claudeRuns": 6,
     "apiRuns": 1,
     "codexTokens": 322256,
     "codexUsdEst": 0.39,
-    "claudeUsdEst": 18.0,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
+    "claudeUsdEst": 21.6,
+    "earlierRounds": 9,
+    "earlierUsdEst": 32.4,
     "totalUsdEst": 54.39
    },
    "tasks": [
     {
      "title": "P3OR95_mushroom gaps save test",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "Add a test that old and damaged saves still load in mushroom-gaps (release checklist: save test)",
-     "since": "2026-10-30T17:01:02+00:00",
-     "done": null,
+     "since": "2026-10-30T17:03:52+00:00",
+     "done": "2026-10-30T17:03:52+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 0,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: test/save_migration.test.mjs"
     },
     {
      "title": "P1FS26_mushroom gaps one screen",
@@ -16707,14 +16707,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 8
+    "done": 9
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T07:01:28+00:00",
@@ -25776,7 +25776,7 @@
    ]
   },
   {
-   "nextTask": "Add a test that old and damaged saves...",
+   "nextTask": null,
    "costTotalUsd": 61.41,
    "latestChange": {
     "text": "One screen: win card pinned to the bottom with Next level first, swipe from the window...",
@@ -25791,23 +25791,23 @@
     "caption": "Drag tissue-paper socks onto a dark bedroom window; where."
    },
    "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 6
+    "daysInState": 0
    },
-   "waitingOn": "sockglass save test",
+   "waitingOn": "none",
    "id": "sockglass",
    "number": 73,
    "repo": "sockglass",
    "title": "Sockglass",
    "line": "Drag tissue-paper socks onto a dark bedroom window; where.",
    "url": "https://chenhsieh.github.io/sockglass/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Make sock sizes and counts readable and let the theme",
    "shelfNote": "",
@@ -25821,33 +25821,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:35:59+00:00",
-   "lastChange": "2026-10-30T17:00:31+00:00",
+   "lastChange": "2026-10-30T17:03:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 6,
+    "claudeRuns": 7,
     "apiRuns": 0,
     "codexTokens": 170850,
     "codexUsdEst": 0.21,
-    "claudeUsdEst": 21.6,
-    "earlierRounds": 11,
-    "earlierUsdEst": 39.6,
+    "claudeUsdEst": 25.2,
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
     "totalUsdEst": 61.41
    },
    "tasks": [
     {
      "title": "P3OR93_sockglass save test",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "Add a test that old and damaged saves still load in sockglass (release checklist: save test)",
-     "since": "2026-10-30T17:00:31+00:00",
-     "done": null,
+     "since": "2026-10-30T17:03:52+00:00",
+     "done": "2026-10-30T17:03:52+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 0,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: test/save_migration.test.mjs"
     },
     {
      "title": "P1FS22_sockglass one screen",
@@ -25949,10 +25949,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 7
+    "done": 8
    },
    "verdict": {
     "date": "2026-10-24",
@@ -25960,7 +25960,7 @@
     "note": "The window and the colour mixing read well, but hanging each sock over its own picture already wins levels 4 to 6, so those levels need a real choice"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-25T06:29:02+00:00",
@@ -26819,7 +26819,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:59:53+00:00",
-   "lastChange": "2026-10-30T17:01:51+00:00",
+   "lastChange": "2026-10-30T17:04:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -26838,7 +26838,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "",
-     "since": "2026-10-30T17:01:51+00:00",
+     "since": "2026-10-30T17:04:07+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -27165,7 +27165,7 @@
    ]
   },
   {
-   "nextTask": "Add a test that old and damaged saves...",
+   "nextTask": "stroke-tops: the whole game fits one phone screen...",
    "costTotalUsd": 65.09,
    "latestChange": {
     "text": "Sync fixed onescreen-shell (P2FS38 fixes: ghost click guard, bottom room)",
@@ -27187,7 +27187,7 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "stroke tops save test",
+   "waitingOn": "stroke tops one screen",
    "id": "stroke-tops",
    "number": 84,
    "repo": "stroke-tops",
@@ -27209,34 +27209,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:39:08+00:00",
-   "lastChange": "2026-10-30T17:01:59+00:00",
+   "lastChange": "2026-10-30T17:03:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 1,
     "codexTokens": 238662,
     "codexUsdEst": 0.29,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 17,
-    "earlierUsdEst": 61.2,
+    "claudeUsdEst": 7.2,
+    "earlierRounds": 16,
+    "earlierUsdEst": 57.6,
     "totalUsdEst": 65.09
    },
    "tasks": [
-    {
-     "title": "P3OR99_stroke tops save test",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Add a test that old and damaged saves still load in stroke-tops (release checklist: save test)",
-     "since": "2026-10-30T17:01:59+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2FS47_stroke tops one screen",
      "state": "queued",
@@ -27250,6 +27236,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P3OR99_stroke tops save test",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Add a test that old and damaged saves still load in stroke-tops (release checklist: save test)",
+     "since": "2026-10-30T17:03:52+00:00",
+     "done": "2026-10-30T17:03:52+00:00",
+     "reviewed": false,
+     "minutes": 0,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "OR LANE OK: Test: test/save_migration.test.mjs"
     },
     {
      "title": "P1SD39_studio standard stroke tops",
@@ -27295,10 +27295,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": null,
    "needsYou": null,
@@ -30089,7 +30089,7 @@
    ]
   },
   {
-   "nextTask": "Add a test that old and damaged saves...",
+   "nextTask": null,
    "costTotalUsd": 86.95,
    "latestChange": {
     "text": "One screen, check B: a vertical swipe on the board scrolls the page unless it starts...",
@@ -30097,23 +30097,23 @@
    },
    "promo": null,
    "why": "A social post on Wittgenstein's numbered propositions (1, 1.1, 4.001 and so on).",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 9
+    "daysInState": 0
    },
-   "waitingOn": "tractatus tree save test",
+   "waitingOn": "none",
    "id": "tractatus-tree",
    "number": 91,
    "repo": "tractatus-tree",
    "title": "Tractatus Tree",
    "line": "The numbered pages of a 1921 book are shuffled into a few.",
    "url": "https://chenhsieh.github.io/tractatus-tree/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Teach the philosophy gradually through play, not as homework",
    "shelfNote": "",
@@ -30131,33 +30131,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:14:42+00:00",
-   "lastChange": "2026-10-30T17:00:53+00:00",
+   "lastChange": "2026-10-30T17:03:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 8,
+    "claudeRuns": 9,
     "apiRuns": 2,
     "codexTokens": 461261,
     "codexUsdEst": 0.55,
-    "claudeUsdEst": 28.8,
-    "earlierRounds": 16,
-    "earlierUsdEst": 57.6,
+    "claudeUsdEst": 32.4,
+    "earlierRounds": 15,
+    "earlierUsdEst": 54.0,
     "totalUsdEst": 86.95
    },
    "tasks": [
     {
      "title": "P3OR101_tractatus tree save test",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "Add a test that old and damaged saves still load in tractatus-tree (release checklist: save test)",
-     "since": "2026-10-30T17:00:53+00:00",
-     "done": null,
+     "since": "2026-10-30T17:03:52+00:00",
+     "done": "2026-10-30T17:03:52+00:00",
      "reviewed": false,
-     "minutes": null,
+     "minutes": 1,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "OR LANE OK: Test: test/save_migration.test.mjs"
     },
     {
      "title": "P2FS39_tractatus tree one screen",
@@ -30259,10 +30259,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 12
+    "done": 13
    },
    "verdict": {
     "date": "2026-10-21",
@@ -30270,7 +30270,7 @@
     "note": "Reveal text; humour or dark spin; growth"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-27T01:16:18+00:00",
