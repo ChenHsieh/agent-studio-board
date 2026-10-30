@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T17:47:00+00:00",
+ "generated": "2026-10-30T17:49:20+00:00",
  "ops": {
   "count": 3,
   "notes": [
@@ -20,22 +20,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 44,
+    "queued": 46,
     "running": 0,
     "doneToday": 3,
-    "minutes": 1760,
-    "estimateMinutes": 1760
+    "minutes": 1840,
+    "estimateMinutes": 1840
    },
    "Claude": {
     "queued": 1,
-    "running": 7,
+    "running": 9,
     "doneToday": 11,
-    "minutes": 480,
-    "estimateMinutes": 240
+    "minutes": 600,
+    "estimateMinutes": 300
    }
   },
-  "queued": 45,
-  "running": 7,
+  "queued": 47,
+  "running": 9,
   "doneToday": 14,
   "lanes": {
    "Codex": 1,
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2240,
-  "estimatedFinish": "2026-10-31T23:07:00+00:00",
-  "estimateMinutes": 1760
+  "minutesRemaining": 2440,
+  "estimatedFinish": "2026-11-01T00:29:20+00:00",
+  "estimateMinutes": 1840
  },
  "lanes": [
   {
@@ -96,7 +96,23 @@
    "game": "sockglass",
    "task": "P1SG01_sockglass release blockers",
    "since": "2026-10-30T17:38:34+00:00",
-   "activity": "2026-10-30T17:45:42+00:00",
+   "activity": "2026-10-30T17:47:45+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "time-material",
+   "task": "P1TM04_slider drag hotfix",
+   "since": "2026-10-30T17:49:09+00:00",
+   "activity": "2026-10-30T17:49:09+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "time-material",
+   "task": "P1TM05_story premise",
+   "since": "2026-10-30T17:49:09+00:00",
+   "activity": "2026-10-30T17:49:09+00:00",
    "commit": null
   },
   {
@@ -112,7 +128,7 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 7,
+ "claudeWorkers": 9,
  "apiSpentUsd": 320.57,
  "claudeInSession": {
   "runs": 299,
@@ -25887,7 +25903,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:35:59+00:00",
-   "lastChange": "2026-10-30T17:45:42+00:00",
+   "lastChange": "2026-10-30T17:47:45+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -29757,7 +29773,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Time as Material",
    "costTotalUsd": 54.24,
    "latestChange": {
     "text": "One screen: compact play layout, rare actions behind More (P2FS48)",
@@ -29774,21 +29790,21 @@
    "why": "",
    "state": "ship",
    "stateFlags": {
-    "refining": false,
+    "refining": true,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 8
    },
-   "waitingOn": "owner",
+   "waitingOn": "slider drag hotfix",
    "id": "time-material",
    "number": 23,
    "repo": "time-material",
    "title": "Time Material",
    "line": "Scrub through a frame history and draw with time.",
    "url": "https://chenhsieh.github.io/time-material/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Find the core and make the time-and-material rules",
    "shelfNote": "",
@@ -29802,7 +29818,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-09-20T20:53:51+00:00",
-   "lastChange": "2026-10-29T18:55:22+00:00",
+   "lastChange": "2026-10-30T17:49:09+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -29816,6 +29832,62 @@
     "totalUsdEst": 54.24
    },
    "tasks": [
+    {
+     "title": "P1TM04_slider drag hotfix",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Time as Material",
+     "since": "2026-10-30T17:49:09+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1TM05_story premise",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Time as Material",
+     "since": "2026-10-30T17:49:09+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1TM06_ux refine",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Time as Material",
+     "since": "2026-10-30T17:49:09+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1TM07_visual round",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Time as Material",
+     "since": "2026-10-30T17:49:09+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2FS48_time material one screen",
      "state": "done",
@@ -29871,67 +29943,11 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "OR LANE OK: Test: --check docs/app.js && python3 -c \"import csv;a=open('docs/app.js',encoding='utf-8').read;rows=list(csv.DictReader(open('"
-    },
-    {
-     "title": "P1TM02_scan to photo transform",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Time as Material: make the animation from the live subject to the photo show the real transformation, not the same crop.",
-     "since": "2026-10-23T21:34:05+00:00",
-     "done": "2026-10-23T21:34:05+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Tapping or holding the live view or photo plays the scan turning into the photo: live frames stack into 8 time slices, the strip slides into the photo frame, the slices blend into the photo, with the written caption for..."
-    },
-    {
-     "title": "P1TM03_story why it matters",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Time as Material: a short story that says why decoding time is worth doing.",
-     "since": "2026-10-23T21:34:05+00:00",
-     "done": "2026-10-23T21:34:05+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "P1TM03 done by planner (Opus) 2026-10-23 18:10"
-    },
-    {
-     "title": "P2RL15_credits panel time material",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Time Material: a Credits panel naming every source and licence (release checklist)",
-     "since": "2026-10-23T06:28:20+00:00",
-     "done": "2026-10-23T06:28:20+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "P2RL15 time-material credits panel: DONE, LIVE."
-    },
-    {
-     "title": "P3OR43_time material ruler legible",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "Time Material: the time ruler numbers readable on small phones (OpenRouter lane)",
-     "since": "2026-10-23T01:30:33+00:00",
-     "done": "2026-10-23T01:30:33+00:00",
-     "reviewed": false,
-     "minutes": 49,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "DONE by the planner by hand (2026-10-23) after 3 aider failures: the TEST line itself was broken (bash expands ${SPEEDS[s.speed]} inside double quotes, so it could never pass). Edits exactly as specified; greps verified..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 0,
+    "queued": 2,
+    "running": 2,
     "waitingDesign": 0,
     "done": 13
    },
@@ -29941,7 +29957,7 @@
     "note": "A scan line now sweeps the live scene and your photo together, so you can watch the bar bend row by row; the match meter starts at 95 percent, so the first move feels small"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-29T18:55:22+00:00",
