@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T17:37:18+00:00",
+ "generated": "2026-10-30T17:39:50+00:00",
  "ops": {
   "count": 3,
   "notes": [
@@ -28,14 +28,14 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 6,
+    "running": 7,
     "doneToday": 11,
-    "minutes": 420,
-    "estimateMinutes": 210
+    "minutes": 480,
+    "estimateMinutes": 240
    }
   },
   "queued": 45,
-  "running": 6,
+  "running": 7,
   "doneToday": 14,
   "lanes": {
    "Codex": 1,
@@ -46,8 +46,8 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2180,
-  "estimatedFinish": "2026-10-31T22:57:18+00:00",
+  "minutesRemaining": 2240,
+  "estimatedFinish": "2026-10-31T22:59:50+00:00",
   "estimateMinutes": 1760
  },
  "lanes": [
@@ -72,7 +72,7 @@
    "game": "lantern-meeting",
    "task": "P1LM03_lantern meeting story and first minute",
    "since": "2026-10-30T17:20:30+00:00",
-   "activity": "2026-10-30T17:35:26+00:00",
+   "activity": "2026-10-30T17:39:48+00:00",
    "commit": null
   },
   {
@@ -93,10 +93,18 @@
   },
   {
    "worker": "Claude",
+   "game": "sockglass",
+   "task": "P1SG01_sockglass release blockers",
+   "since": "2026-10-30T17:38:34+00:00",
+   "activity": "2026-10-30T17:38:39+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
    "game": "paid-clapper",
    "task": "P2PC00_paid clapper core",
    "since": "2026-10-30T16:52:39+00:00",
-   "activity": "2026-10-30T17:24:55+00:00",
+   "activity": "2026-10-30T17:38:23+00:00",
    "commit": {
     "at": "2026-10-30T17:24:55+00:00",
     "subject": "core: the hall answers by minimax, seating-plan board, lesson, wrong-name sheet, solver gate"
@@ -104,7 +112,7 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 6,
+ "claudeWorkers": 7,
  "apiSpentUsd": 320.57,
  "claudeInSession": {
   "runs": 299,
@@ -8866,8 +8874,8 @@
    "nextTask": null,
    "costTotalUsd": 80.04,
    "latestChange": {
-    "text": "One screen: a swipe from anywhere but a GIF tile scrolls the page",
-    "at": "2026-10-25T08:19:34+00:00"
+    "text": "Chinese page names the guestbook bar and replay buttons; after the last card a line says...",
+    "at": "2026-10-30T17:14:53+00:00"
    },
    "promo": {
     "files": {
@@ -9054,6 +9062,12 @@
    "inProgress": true,
    "history": [
     {
+     "at": "2026-10-30T17:14:53+00:00",
+     "ok": true,
+     "note": "Chinese page names the guestbook bar and replay buttons; after the last card a line says to press Play",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T08:19:34+00:00",
      "ok": true,
      "note": "One screen: a swipe from anywhere but a GIF tile scrolls the page",
@@ -9117,12 +9131,6 @@
      "at": "2026-10-19T19:23:26+00:00",
      "ok": false,
      "note": "flagship-round- locally verified: shared target, speed, Next and Play controls make guestbook progress and visitor playback touchable; 390x844 and 320x568 real-touch screenshots reviewed; publish blocked because origin push needs explicit approval",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-19T16:54:06+00:00",
-     "ok": true,
-     "note": "review R24: speed row fits 320x568",
      "source": "board note"
     }
    ]
@@ -12643,7 +12651,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T20:45:20+00:00",
-   "lastChange": "2026-10-30T17:35:26+00:00",
+   "lastChange": "2026-10-30T17:39:48+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -18989,7 +18997,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-30T05:43:19+00:00",
-   "lastChange": "2026-10-30T17:24:55+00:00",
+   "lastChange": "2026-10-30T17:38:23+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -25849,23 +25857,23 @@
     "caption": "Drag tissue-paper socks onto a dark bedroom window; where."
    },
    "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 0
+    "daysInState": 6
    },
-   "waitingOn": "none",
+   "waitingOn": "sockglass release blockers",
    "id": "sockglass",
    "number": 73,
    "repo": "sockglass",
    "title": "Sockglass",
    "line": "Drag tissue-paper socks onto a dark bedroom window; where.",
    "url": "https://chenhsieh.github.io/sockglass/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Make sock sizes and counts readable and let the theme",
    "shelfNote": "",
@@ -25879,7 +25887,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:35:59+00:00",
-   "lastChange": "2026-10-30T17:03:52+00:00",
+   "lastChange": "2026-10-30T17:38:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -25893,6 +25901,20 @@
     "totalUsdEst": 61.41
    },
    "tasks": [
+    {
+     "title": "P1SG01_sockglass release blockers",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Sockglass release blockers: all text >= 20 px incl. sock lengths, colour-blind cue, first-minute round, stranger re-review of levels 4-6",
+     "since": "2026-10-30T17:38:34+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P3OR93_sockglass save test",
      "state": "done",
@@ -25990,25 +26012,11 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "sockglass clarity",
-     "state": "done",
-     "worker": "Codex",
-     "plan": "Make sock sizes and counts readable and let the theme explain why socks go on the window.",
-     "since": "2026-10-19T17:54:51+00:00",
-     "done": "2026-10-19T17:54:51+00:00",
-     "reviewed": true,
-     "minutes": 15,
-     "tokens": 170850,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Warm-window story, clear sock pane counts, and live picture progress added."
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 8
    },
@@ -26018,7 +26026,7 @@
     "note": "The window and the colour mixing read well, but hanging each sock over its own picture already wins levels 4 to 6, so those levels need a real choice"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-25T06:29:02+00:00",
@@ -33002,9 +33010,9 @@
    "ran": 0
   },
   "saves": {
-   "yes": 100,
+   "yes": 101,
    "no": 0,
-   "unknown": 68,
+   "unknown": 67,
    "ran": 0
   },
   "standard": {
