@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T19:19:30+00:00",
+ "generated": "2026-10-30T19:22:08+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 46,
+    "queued": 47,
     "running": 0,
     "doneToday": 4,
-    "minutes": 1840,
-    "estimateMinutes": 1840
+    "minutes": 1880,
+    "estimateMinutes": 1880
    },
    "Claude": {
     "queued": 1,
-    "running": 4,
-    "doneToday": 31,
-    "minutes": 300,
-    "estimateMinutes": 150
+    "running": 3,
+    "doneToday": 32,
+    "minutes": 240,
+    "estimateMinutes": 120
    }
   },
-  "queued": 47,
-  "running": 4,
-  "doneToday": 35,
+  "queued": 48,
+  "running": 3,
+  "doneToday": 36,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2140,
-  "estimatedFinish": "2026-11-01T01:59:30+00:00",
-  "estimateMinutes": 1840
+  "minutesRemaining": 2120,
+  "estimatedFinish": "2026-11-01T02:42:08+00:00",
+  "estimateMinutes": 1880
  },
  "lanes": [
   {
@@ -68,21 +68,13 @@
    "game": "nobody-looking",
    "task": "P1NL07_story and visual round",
    "since": "2026-10-30T19:07:36+00:00",
-   "activity": "2026-10-30T19:18:54+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P1SG04_review sockglass after peg fix",
-   "since": null,
-   "activity": null,
+   "activity": "2026-10-30T19:20:54+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 4,
- "apiSpentUsd": 320.62,
+ "claudeWorkers": 3,
+ "apiSpentUsd": 320.72,
  "claudeInSession": {
   "runs": 308,
   "usdEst": 1108.8,
@@ -17164,7 +17156,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T17:56:06+00:00",
-   "lastChange": "2026-10-30T19:18:54+00:00",
+   "lastChange": "2026-10-30T19:20:54+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -25850,7 +25842,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Sockglass: Play button on the first card always...",
    "costTotalUsd": 61.41,
    "latestChange": {
     "text": "fix: the full star is reachable by touch; the win card says how many drags went over the...",
@@ -25865,23 +25857,23 @@
     "caption": "Drag tissue-paper socks onto a dark bedroom window; where."
    },
    "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
-   "state": "shelved",
+   "state": "ship",
    "stateFlags": {
-    "refining": false,
-    "resting": true,
+    "refining": true,
+    "resting": false,
     "regressed": false,
-    "reviseRound": 3,
+    "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "sockglass first minute polish",
    "id": "sockglass",
    "number": 73,
    "repo": "sockglass",
    "title": "Sockglass",
    "line": "Drag tissue-paper socks onto a dark bedroom window; where.",
    "url": "https://chenhsieh.github.io/sockglass/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Make sock sizes and counts readable and let the theme",
    "shelfNote": "",
@@ -25895,7 +25887,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:35:59+00:00",
-   "lastChange": "2026-10-30T19:08:58+00:00",
+   "lastChange": "2026-10-30T19:20:51+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -25909,6 +25901,20 @@
     "totalUsdEst": 61.41
    },
    "tasks": [
+    {
+     "title": "P2SG05_sockglass first minute polish",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Sockglass: Play button on the first card always visible, one line that explains pegs, all pegs fit on the line",
+     "since": "2026-10-30T19:20:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1SG03_sockglass touch pegs",
      "state": "done",
@@ -26006,35 +26012,21 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P2SG00 Sockglass (#73): levels 4-6 and the generated windows need a real choice; small-phone fit."
-    },
-    {
-     "title": "P3OR74_sockglass save migration test",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Sockglass: a test that an old save survives the new daily build",
-     "since": "2026-10-24T08:08:42+00:00",
-     "done": "2026-10-24T08:08:42+00:00",
-     "reviewed": false,
-     "minutes": 5,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "OR LANE OK: Test: test/save_migration.test.mjs"
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 12
    },
    "verdict": {
     "date": "2026-10-30",
-    "verdict": "revise",
-    "note": "Levels 4 to 6 now need a real choice (hanging each sock on its own picture clears none of levels 4 to 8), but the peg cut was counted as if a sock could land upright in one go: by touch a sock always lands lying across and standing it up costs a peg, so the full star cannot be reached on levels 4, 6, 8 and window 10, and the win card says No pegs left either way"
+    "verdict": "ship",
+    "note": "The full star is now reachable by touch on every level and the daily, the win card counts drags over the pegs honestly, and hanging each sock on its own picture still clears none of levels 4 to 8"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-30T19:08:58+00:00",
