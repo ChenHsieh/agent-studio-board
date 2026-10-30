@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T10:08:19+00:00",
+ "generated": "2026-10-30T10:10:49+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,11 +16,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 46,
+    "queued": 45,
     "running": 1,
-    "doneToday": 1,
-    "minutes": 1880,
-    "estimateMinutes": 1880
+    "doneToday": 2,
+    "minutes": 1840,
+    "estimateMinutes": 1840
    },
    "Claude": {
     "queued": 1,
@@ -30,9 +30,9 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 47,
+  "queued": 46,
   "running": 1,
-  "doneToday": 1,
+  "doneToday": 2,
   "lanes": {
    "Codex": 1,
    "Claude": 1
@@ -42,18 +42,21 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1940,
-  "estimatedFinish": "2026-10-31T17:28:19+00:00",
-  "estimateMinutes": 1880
+  "minutesRemaining": 1900,
+  "estimatedFinish": "2026-10-31T16:50:49+00:00",
+  "estimateMinutes": 1840
  },
  "lanes": [
   {
    "worker": "Codex",
-   "game": "long-way-round",
-   "task": "P2LR00_long way round core",
-   "since": "2026-10-30T10:03:42+00:00",
-   "activity": "2026-10-30T10:08:17+00:00",
-   "commit": null
+   "game": "paid-clapper",
+   "task": "P2PC00_paid clapper core",
+   "since": "2026-10-30T10:09:30+00:00",
+   "activity": "2026-10-30T10:10:45+00:00",
+   "commit": {
+    "at": "2026-10-30T10:09:32+00:00",
+    "subject": "start: P2PC00_paid-clapper-core"
+   }
   }
  ],
  "codexLanes": 1,
@@ -135,7 +138,7 @@
   },
   {
    "day": "2026-10-30",
-   "changes": 3
+   "changes": 4
   }
  ],
  "houseRules": 25,
@@ -14175,10 +14178,10 @@
   },
   {
    "nextTask": "Long Way Round: apply the stranger review's fix...",
-   "costTotalUsd": 10.8,
+   "costTotalUsd": 11.16,
    "latestChange": {
     "text": "feat: deliver an envelope by misleading Auntie",
-    "at": "2026-10-30T10:08:26+00:00"
+    "at": "2026-10-30T10:09:29+00:00"
    },
    "promo": null,
    "why": "",
@@ -14190,14 +14193,14 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "long way round core",
+   "waitingOn": "fix long way round after review",
    "id": "long-way-round",
    "number": 166,
    "repo": "long-way-round",
    "title": "Long Way Round",
    "line": "",
    "url": "https://chenhsieh.github.io/long-way-round/",
-   "stage": "building",
+   "stage": "queued",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
@@ -14211,34 +14214,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-30T05:42:34+00:00",
-   "lastChange": "2026-10-30T10:08:26+00:00",
+   "lastChange": "2026-10-30T10:09:29+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 0,
     "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 303207,
+    "codexUsdEst": 0.36,
     "claudeUsdEst": 0.0,
     "earlierRounds": 3,
     "earlierUsdEst": 10.8,
-    "totalUsdEst": 10.8
+    "totalUsdEst": 11.16
    },
    "tasks": [
-    {
-     "title": "P2LR00_long way round core",
-     "state": "running",
-     "worker": "Codex",
-     "plan": "New game 繞遠路 Long Way Round: deliver the envelope while the nosy neighbour guesses the wrong door",
-     "since": "2026-10-30T10:03:42+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2LR02_fix long way round after review",
      "state": "queued",
@@ -14252,18 +14241,38 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2LR00_long way round core",
+     "state": "done",
+     "worker": "Codex",
+     "plan": "New game 繞遠路 Long Way Round: deliver the envelope while the nosy neighbour guesses the wrong door",
+     "since": "2026-10-30T09:05:03+00:00",
+     "done": "2026-10-30T09:05:03+00:00",
+     "reviewed": false,
+     "minutes": 58,
+     "tokens": 303207,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "feat: deliver an envelope by misleading Auntie"
     }
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-30T10:09:29+00:00",
+     "ok": true,
+     "note": "feat: deliver an envelope by misleading Auntie",
+     "source": "board note"
+    },
     {
      "at": "2026-10-30T10:08:26+00:00",
      "ok": true,
@@ -18849,14 +18858,14 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "fix paid clapper after review",
+   "waitingOn": "paid clapper core",
    "id": "paid-clapper",
    "number": 167,
    "repo": "paid-clapper",
    "title": "Paid Clapper",
    "line": "",
    "url": "https://chenhsieh.github.io/paid-clapper/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
@@ -18870,7 +18879,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-30T05:43:19+00:00",
-   "lastChange": "2026-10-30T05:52:19+00:00",
+   "lastChange": "2026-10-30T10:10:45+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -18885,6 +18894,23 @@
    },
    "tasks": [
     {
+     "title": "P2PC00_paid clapper core",
+     "state": "running",
+     "worker": "Codex",
+     "plan": "New game 帶頭鼓掌的人 The Paid Clapper: find the seat paid to start the applause by asking when each seat started",
+     "since": "2026-10-30T10:09:30+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": {
+      "at": "2026-10-30T10:09:32+00:00",
+      "subject": "start: P2PC00_paid-clapper-core"
+     },
+     "result": ""
+    },
+    {
      "title": "P2PC02_fix paid clapper after review",
      "state": "queued",
      "worker": "Codex",
@@ -18897,25 +18923,11 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
-    },
-    {
-     "title": "P2PC00_paid clapper core",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "New game 帶頭鼓掌的人 The Paid Clapper: find the seat paid to start the applause by asking when each seat started",
-     "since": "2026-10-30T05:49:01+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
