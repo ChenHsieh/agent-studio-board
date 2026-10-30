@@ -1,5 +1,5 @@
 {
- "generated": 1793384023,
+ "generated": 1793384175,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -117,40 +117,6 @@
    "created": 1793380444
   },
   {
-   "id": "P1SG01_sockglass-release-blockers",
-   "request": "Sockglass release blockers: all text >= 20 px incl. sock lengths, colour-blind cue, first-minute round, stranger re-review of levels 4-6",
-   "game": "Sockglass",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
-   "state": "running",
-   "at": 1793381914,
-   "created": 1793381914
-  },
-  {
-   "id": "P1SG02_sockglass-stranger-rereview",
-   "request": "Opus stranger re-review of Sockglass (levels 4-6 choice, after 10-24 fix and the 10-30 readability pass)",
-   "game": "Sockglass",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
-   "state": "running",
-   "at": 1793383647,
-   "created": 1793383647
-  },
-  {
    "id": "P1FY51_felt-years-call-core",
    "request": "Felt Years becomes Grandma's Sunday video call (Ask, Show, Wait, Bye): new core rules, bots, 12 levels, daily call, save kept",
    "game": "Felt Years",
@@ -257,6 +223,25 @@
    "state": "running",
    "at": 1793339508,
    "created": 1793339508
+  },
+  {
+   "id": "P1SG03_sockglass-touch-pegs",
+   "request": "Sockglass: count pegs the way a finger plays, so the full star is reachable on every window",
+   "game": "Sockglass",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1SG02_sockglass-stranger-rereview"
+   ],
+   "priority": "P1",
+   "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1793384125
   },
   {
    "id": "P3PL10_tree-hero-why-rollout",
@@ -1218,6 +1203,40 @@
    "state": "done",
    "at": 1793380263,
    "created": 1793380263
+  },
+  {
+   "id": "P1SG01_sockglass-release-blockers",
+   "request": "Sockglass release blockers: all text >= 20 px incl. sock lengths, colour-blind cue, first-minute round, stranger re-review of levels 4-6",
+   "game": "Sockglass",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
+   "state": "done",
+   "at": 1793381914,
+   "created": 1793381914
+  },
+  {
+   "id": "P1SG02_sockglass-stranger-rereview",
+   "request": "Opus stranger re-review of Sockglass (levels 4-6 choice, after 10-24 fix and the 10-30 readability pass)",
+   "game": "Sockglass",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P1",
+   "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
+   "state": "done",
+   "at": 1793383647,
+   "created": 1793383647
   },
   {
    "id": "P2FM60_sockglass-first-minute",

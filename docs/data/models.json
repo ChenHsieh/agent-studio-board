@@ -141,12 +141,12 @@
   {
    "executor": "claude-opus",
    "role": "build",
-   "count": 73,
+   "count": 74,
    "firstTimePass": 96,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": 0.01,
-   "guessed": 68,
+   "guessed": 69,
    "topFailures": [
     "rooms 16, 25 and 33 at 360x640 run 9-18 px past the screen after the f",
     "on small beds the canvas keeps its tall paper below the board, so on a",
@@ -195,12 +195,12 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 29,
+   "count": 30,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 27,
+   "guessed": 28,
    "topFailures": [],
    "flag": "give more"
   },
@@ -687,12 +687,12 @@
   },
   {
    "date": "2026-10-30",
-   "task": "lantern meeting story and first minute",
-   "number": "112",
+   "task": "sockglass stranger rereview",
+   "number": "73",
    "executor": "claude-opus",
-   "role": "build",
+   "role": "review",
    "passed": "yes",
-   "note": "kit top-bar buttons stay at the kit's 12 px (20 px does not fit at 360 beside the title); \"Why this exists\" is English in zh; 320x568 scroll"
+   "note": "the peg count disagrees with the finger (above), and the result card hides it."
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."

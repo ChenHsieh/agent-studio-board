@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-30T18:13:26+00:00",
+ "generated": "2026-10-30T18:16:00+00:00",
  "ops": {
-  "count": 5,
+  "count": 2,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 48,
+    "queued": 49,
     "running": 0,
     "doneToday": 3,
-    "minutes": 1920,
-    "estimateMinutes": 1920
+    "minutes": 1960,
+    "estimateMinutes": 1960
    },
    "Claude": {
     "queued": 1,
-    "running": 10,
-    "doneToday": 17,
-    "minutes": 660,
-    "estimateMinutes": 330
+    "running": 8,
+    "doneToday": 19,
+    "minutes": 540,
+    "estimateMinutes": 270
    }
   },
-  "queued": 49,
-  "running": 10,
-  "doneToday": 20,
+  "queued": 50,
+  "running": 8,
+  "doneToday": 22,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2580,
-  "estimatedFinish": "2026-11-01T02:13:26+00:00",
-  "estimateMinutes": 1920
+  "minutesRemaining": 2500,
+  "estimatedFinish": "2026-11-01T02:56:00+00:00",
+  "estimateMinutes": 1960
  },
  "lanes": [
   {
@@ -64,7 +64,7 @@
    "game": "felt-years",
    "task": "P1FY51_felt years call core",
    "since": "2026-10-30T18:11:36+00:00",
-   "activity": "2026-10-30T18:11:42+00:00",
+   "activity": "2026-10-30T18:15:37+00:00",
    "commit": null
   },
   {
@@ -80,7 +80,7 @@
    "game": "nobody-looking",
    "task": "P1NL04_journey fix after first minute",
    "since": "2026-10-30T17:56:38+00:00",
-   "activity": "2026-10-30T17:56:42+00:00",
+   "activity": "2026-10-30T18:14:31+00:00",
    "commit": null
   },
   {
@@ -101,18 +101,10 @@
   },
   {
    "worker": "Claude",
-   "game": "sockglass",
-   "task": "P1SG02_sockglass stranger rereview",
-   "since": "2026-10-30T18:07:46+00:00",
-   "activity": "2026-10-30T18:10:48+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
    "game": "time-material",
    "task": "P1TM06_ux refine",
    "since": "2026-10-30T18:06:17+00:00",
-   "activity": "2026-10-30T18:06:17+00:00",
+   "activity": "2026-10-30T18:15:55+00:00",
    "commit": null
   },
   {
@@ -120,7 +112,7 @@
    "game": "time-material",
    "task": "P1TM07_visual round",
    "since": "2026-10-30T18:06:17+00:00",
-   "activity": "2026-10-30T18:06:17+00:00",
+   "activity": "2026-10-30T18:15:55+00:00",
    "commit": null
   },
   {
@@ -133,7 +125,7 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 10,
+ "claudeWorkers": 9,
  "apiSpentUsd": 320.57,
  "claudeInSession": {
   "runs": 301,
@@ -6661,7 +6653,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T23:11:23+00:00",
-   "lastChange": "2026-10-30T18:11:42+00:00",
+   "lastChange": "2026-10-30T18:15:37+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
@@ -17233,7 +17225,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T17:56:06+00:00",
-   "lastChange": "2026-10-30T17:56:42+00:00",
+   "lastChange": "2026-10-30T18:14:31+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -25914,7 +25906,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Sockglass: count pegs the way a finger plays...",
    "costTotalUsd": 61.41,
    "latestChange": {
     "text": "Goal bar label follows the language switch (was stuck on 'Pictures lit' in Chinese)",
@@ -25934,10 +25926,10 @@
     "refining": false,
     "resting": false,
     "regressed": false,
-    "reviseRound": 2,
-    "daysInState": 6
+    "reviseRound": 3,
+    "daysInState": 0
    },
-   "waitingOn": "sockglass stranger rereview",
+   "waitingOn": "sockglass release blockers",
    "id": "sockglass",
    "number": 73,
    "repo": "sockglass",
@@ -25959,26 +25951,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:35:59+00:00",
-   "lastChange": "2026-10-30T18:10:48+00:00",
+   "lastChange": "2026-10-30T18:15:25+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 8,
+    "claudeRuns": 9,
     "apiRuns": 0,
     "codexTokens": 170850,
     "codexUsdEst": 0.21,
-    "claudeUsdEst": 28.8,
-    "earlierRounds": 9,
-    "earlierUsdEst": 32.4,
+    "claudeUsdEst": 32.4,
+    "earlierRounds": 8,
+    "earlierUsdEst": 28.8,
     "totalUsdEst": 61.41
    },
    "tasks": [
     {
-     "title": "P1SG02_sockglass stranger rereview",
+     "title": "P1SG01_sockglass release blockers",
      "state": "running",
      "worker": "Claude",
-     "plan": "Opus stranger re-review of Sockglass (levels 4-6 choice, after 10-24 fix and the 10-30 readability pass)",
-     "since": "2026-10-30T18:07:46+00:00",
+     "plan": "Sockglass release blockers: all text >= 20 px incl. sock lengths, colour-blind cue, first-minute round, stranger re-review of levels 4-6",
+     "since": "2026-10-30T17:38:34+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -25988,11 +25980,11 @@
      "result": ""
     },
     {
-     "title": "P1SG01_sockglass release blockers",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Sockglass release blockers: all text >= 20 px incl. sock lengths, colour-blind cue, first-minute round, stranger re-review of levels 4-6",
-     "since": "2026-10-30T17:38:34+00:00",
+     "title": "P1SG03_sockglass touch pegs",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Sockglass: count pegs the way a finger plays, so the full star is reachable on every window",
+     "since": "2026-10-30T18:15:25+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -26014,6 +26006,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "PASS: Sockglass first-minute round (taste/FIRST_MINUTE.md), live on main (commits , ), built in P1SG01."
+    },
+    {
+     "title": "P1SG02_sockglass stranger rereview",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Opus stranger re-review of Sockglass (levels 4-6 choice, after 10-24 fix and the 10-30 readability pass)",
+     "since": "2026-10-30T18:07:27+00:00",
+     "done": "2026-10-30T18:07:27+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "sockglass (live https://chenhsieh.github.io/sockglass/, origin/main ; every player gets seed 1, verified live board == rules.init(id,1))"
     },
     {
      "title": "P3OR93_sockglass save test",
@@ -26070,32 +26076,18 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "OR LANE OK: Test: test/save_migration.test.mjs"
-    },
-    {
-     "title": "P1SK00_story daily and share",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Sockglass (#73): a story, a daily generated level, and a share line with emoji and a link.",
-     "since": "2026-10-24T02:54:42+00:00",
-     "done": "2026-10-24T02:54:42+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "P1SK00 Sockglass (#73): story, tonight's window, share. DONE. main , live bytes match (rules, game, shell, index, look, strings); test/story_daily.test.mjs passes against the LIVE page at 390x844 and 320x568 (30 checks,..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 2,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
-    "done": 9
+    "done": 10
    },
    "verdict": {
-    "date": "2026-10-24",
+    "date": "2026-10-30",
     "verdict": "revise",
-    "note": "The window and the colour mixing read well, but hanging each sock over its own picture already wins levels 4 to 6, so those levels need a real choice"
+    "note": "Levels 4 to 6 now need a real choice (hanging each sock on its own picture clears none of levels 4 to 8), but the peg cut was counted as if a sock could land upright in one go: by touch a sock always lands lying across and standing it up costs a peg, so the full star cannot be reached on levels 4, 6, 8 and window 10, and the win card says No pegs left either way"
    },
    "needsYou": null,
    "inProgress": true,
@@ -29874,7 +29866,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T14:34:22+00:00",
-   "lastChange": "2026-10-30T18:06:17+00:00",
+   "lastChange": "2026-10-30T18:15:55+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -33040,8 +33032,7 @@
   }
  ],
  "systemNeeds": [
-  "System needs: 8 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)",
-  "System needs: Released game Cymatic Plate now fails what it passed at release: standard (fix: play it; keep it released or remove its row from board/released.tsv)"
+  "System needs: 8 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)"
  ],
  "releaseReady": [],
  "releaseRegressed": [],
