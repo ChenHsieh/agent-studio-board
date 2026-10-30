@@ -263,12 +263,12 @@
   {
    "executor": "claude-sonnet",
    "role": "review",
-   "count": 2,
+   "count": 3,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 2,
+   "guessed": 3,
    "topFailures": [],
    "flag": ""
   },
@@ -615,6 +615,15 @@
   },
   {
    "date": "2026-10-30",
+   "task": "fix paid clapper after review",
+   "number": "167",
+   "executor": "claude-sonnet",
+   "role": "review",
+   "passed": "yes",
+   "note": "at 320x568 the too-soon sheet covers the two ringed seats; the daily has no goal line on short phones."
+  },
+  {
+   "date": "2026-10-30",
    "task": "review paid clapper",
    "number": "167",
    "executor": "claude-opus",
@@ -684,15 +693,6 @@
    "role": "build",
    "passed": "yes",
    "note": "first minute has no scripted fail-safe step; og.png preview still the old navy look; zh strings need owner's read (ZH-CHECK in design/STORY."
-  },
-  {
-   "date": "2026-10-30",
-   "task": "ux refine",
-   "number": "",
-   "executor": "claude-opus",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE: live main ef39403 (bytes match). One-screen gate PASS strict at 390x844 and 360x640 (was 1.34x at 360x640). Start dial -> slider; rule"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
