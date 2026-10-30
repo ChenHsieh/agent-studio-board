@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T19:37:28+00:00",
+ "generated": "2026-10-30T19:40:41+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 47,
+    "queued": 46,
     "running": 0,
     "doneToday": 4,
-    "minutes": 1880,
-    "estimateMinutes": 1880
+    "minutes": 1840,
+    "estimateMinutes": 1840
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 33,
+    "doneToday": 34,
     "minutes": 180,
     "estimateMinutes": 90
    }
   },
-  "queued": 48,
+  "queued": 47,
   "running": 2,
-  "doneToday": 37,
+  "doneToday": 38,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,9 +42,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2060,
-  "estimatedFinish": "2026-11-01T02:57:28+00:00",
-  "estimateMinutes": 1880
+  "minutesRemaining": 2020,
+  "estimatedFinish": "2026-11-01T02:20:41+00:00",
+  "estimateMinutes": 1840
  },
  "lanes": [
   {
@@ -58,9 +58,9 @@
   {
    "worker": "Claude",
    "game": "nobody-looking",
-   "task": "P1NL07_story and visual round",
-   "since": "2026-10-30T19:07:36+00:00",
-   "activity": "2026-10-30T19:33:22+00:00",
+   "task": "P1NL08_night street roll section",
+   "since": "2026-10-30T19:40:18+00:00",
+   "activity": "2026-10-30T19:40:26+00:00",
    "commit": null
   }
  ],
@@ -68,8 +68,8 @@
  "claudeWorkers": 2,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
-  "runs": 308,
-  "usdEst": 1108.8,
+  "runs": 309,
+  "usdEst": 1112.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -143,7 +143,7 @@
   },
   {
    "day": "2026-10-30",
-   "changes": 15
+   "changes": 16
   }
  ],
  "houseRules": 25,
@@ -17122,11 +17122,11 @@
    ]
   },
   {
-   "nextTask": "Nobody Looking: build the night street gallery, where...",
-   "costTotalUsd": 75.86,
+   "nextTask": "Nobody Looking: build the garden court, where buds...",
+   "costTotalUsd": 79.46,
    "latestChange": {
-    "text": "feat: a night shift in a museum:",
-    "at": "2026-10-30T19:33:22+00:00"
+    "text": "P1NL07: night round look (flash prints, red-eye), story lines EN+zh, galleries named,...",
+    "at": "2026-10-30T19:38:32+00:00"
    },
    "promo": {
     "files": {
@@ -17166,40 +17166,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T17:56:06+00:00",
-   "lastChange": "2026-10-30T19:33:22+00:00",
+   "lastChange": "2026-10-30T19:40:26+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 14,
+    "claudeRuns": 15,
     "apiRuns": 0,
     "codexTokens": 215851,
     "codexUsdEst": 0.26,
-    "claudeUsdEst": 50.4,
+    "claudeUsdEst": 54.0,
     "earlierRounds": 7,
     "earlierUsdEst": 25.2,
-    "totalUsdEst": 75.86
+    "totalUsdEst": 79.46
    },
    "tasks": [
     {
-     "title": "P1NL07_story and visual round",
+     "title": "P1NL08_night street roll section",
      "state": "running",
      "worker": "Claude",
-     "plan": "Nobody Looking: say the story in two lines and give it a creepy-museum look that is not the AI default",
-     "since": "2026-10-30T19:07:36+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P1NL08_night street roll section",
-     "state": "queued",
-     "worker": "Codex",
      "plan": "Nobody Looking: build the night street gallery, where cars keep rolling until something stops them",
-     "since": "2026-10-30T18:54:42+00:00",
+     "since": "2026-10-30T19:40:18+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -17279,6 +17265,20 @@
      "result": "P1NL06_five-sections-design: DONE. Nobody Looking has five planned galleries with one new rule each; the first two are built and"
     },
     {
+     "title": "P1NL07_story and visual round",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Nobody Looking: say the story in two lines and give it a creepy-museum look that is not the AI default",
+     "since": "2026-10-30T17:56:38+00:00",
+     "done": "2026-10-30T17:56:38+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1NL07_story-and-visual-round: DONE. Nobody Looking is now a night shift in a museum: every board is a flash print from the"
+    },
+    {
      "title": "P2FS44_nobody looking one screen",
      "state": "done",
      "worker": "Claude",
@@ -17294,10 +17294,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
+    "queued": 2,
     "running": 1,
     "waitingDesign": 0,
-    "done": 15
+    "done": 16
    },
    "verdict": {
     "date": "2026-10-23",
@@ -17307,6 +17307,12 @@
    "needsYou": "One-screen check B (a swipe on the board must scroll the page) fails games whose board needs every drag, such as this one, Seal Carver, Fly Swarm and Nesting Scrap, even when the play page already fits the phone and has nothing to scroll. Four one-screen tasks are stopped on it. A 5-line change makes B pass when the page fits (it still fails when the page is taller than the screen); tested on the live pages: this game and Seal Carver go from fail to pass. Yes or no? Suggest: yes.",
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-30T19:38:32+00:00",
+     "ok": true,
+     "note": "P1NL07: night round look (flash prints, red-eye), story lines EN+zh, galleries named, closing line; live",
+     "source": "board note"
+    },
     {
      "at": "2026-10-30T19:33:22+00:00",
      "ok": true,
@@ -17371,12 +17377,6 @@
      "at": "2026-10-24T23:11:25+00:00",
      "ok": true,
      "note": "Daily and later endless boards come from a hard bank of 71 boards (P1NL03)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T23:05:24+00:00",
-     "ok": true,
-     "note": "start: P1NL03 daily from the hard bank",
      "source": "main commit"
     }
    ]
