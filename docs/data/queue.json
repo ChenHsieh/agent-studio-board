@@ -1,5 +1,5 @@
 {
- "generated": 1793339436,
+ "generated": 1793339580,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -725,6 +725,135 @@
    "estPercentOfWeek": 0.25
   },
   {
+   "id": "P2LR01_review-long-way-round",
+   "request": "Opus stranger review of long-way-round after its core build",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2LR00_long-way-round-core"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2LR00_long-way-round-core"
+   ],
+   "created": 1793339508
+  },
+  {
+   "id": "P2LR02_fix-long-way-round-after-review",
+   "request": "Long Way Round: apply the stranger review's fix list, Codex",
+   "game": "Long Way Round",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2LR01_review-long-way-round"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2LR01_review-long-way-round"
+   ],
+   "created": 1793339539,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2PC01_review-paid-clapper",
+   "request": "Opus stranger review of paid-clapper after its core build",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2PC00_paid-clapper-core"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2PC00_paid-clapper-core"
+   ],
+   "created": 1793339508
+  },
+  {
+   "id": "P2PC02_fix-paid-clapper-after-review",
+   "request": "The Paid Clapper: apply the stranger review's fix list, Codex",
+   "game": "Paid Clapper",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2PC01_review-paid-clapper"
+   ],
+   "priority": null,
+   "why": "Find the seat paid to start the applause by asking when each seat started clapping.",
+   "state": "waiting",
+   "waitingOn": [
+    "P2PC01_review-paid-clapper"
+   ],
+   "created": 1793339539,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2SSP01_review-same-spots",
+   "request": "Opus stranger review of same-spots after its core build",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2SSP00_same-spots-core"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2SSP00_same-spots-core"
+   ],
+   "created": 1793339508
+  },
+  {
+   "id": "P2SSP02_fix-same-spots-after-review",
+   "request": "Same Spots: apply the stranger review's fix list, Codex",
+   "game": "Same Spots",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2SSP01_review-same-spots"
+   ],
+   "priority": null,
+   "why": "A creature-design plate of an invented spotted beast, beside an ad with one bright seat among grey ones and a handbook chapter on disguise.",
+   "state": "waiting",
+   "waitingOn": [
+    "P2SSP01_review-same-spots"
+   ],
+   "created": 1793339539,
+   "estPercentOfWeek": 0.25
+  },
+  {
    "id": "P2UX08_daily-brief-first-screen",
    "request": "Board opens on a daily brief with three decisions and their defaults",
    "game": "Studio",
@@ -852,23 +981,6 @@
    "state": "done",
    "at": 1793304842,
    "created": 1793304842
-  },
-  {
-   "id": "P2FS69_sync-onescreen-shell-fix",
-   "request": "Copy the fixed one-screen shell files into shipped games that carry the old copy",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "fix",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1793296264,
-   "created": 1793296264
   },
   {
    "id": "P2LW04_lot-waits-reset-review",
