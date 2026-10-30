@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T16:53:38+00:00",
+ "generated": "2026-10-30T16:56:13+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -24,14 +24,14 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 2,
     "doneToday": 0,
-    "minutes": 120,
-    "estimateMinutes": 60
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
   "queued": 46,
-  "running": 1,
+  "running": 2,
   "doneToday": 2,
   "lanes": {
    "Codex": 1,
@@ -42,11 +42,19 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1920,
-  "estimatedFinish": "2026-10-31T22:53:38+00:00",
+  "minutesRemaining": 1980,
+  "estimatedFinish": "2026-10-31T22:56:13+00:00",
   "estimateMinutes": 1800
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "long-way-round",
+   "task": "P2LR00_long way round core",
+   "since": "2026-10-30T16:53:55+00:00",
+   "activity": "2026-10-30T16:53:55+00:00",
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "paid-clapper",
@@ -57,7 +65,7 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 2,
  "apiSpentUsd": 320.37,
  "claudeInSession": {
   "runs": 299,
@@ -14190,15 +14198,15 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "fix long way round after review",
+   "waitingOn": "long way round core",
    "id": "long-way-round",
    "number": 166,
    "repo": "long-way-round",
    "title": "Long Way Round",
    "line": "",
    "url": "https://chenhsieh.github.io/long-way-round/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -14211,7 +14219,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-30T05:42:34+00:00",
-   "lastChange": "2026-10-30T10:09:29+00:00",
+   "lastChange": "2026-10-30T16:53:55+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -14225,6 +14233,20 @@
     "totalUsdEst": 11.16
    },
    "tasks": [
+    {
+     "title": "P2LR00_long way round core",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "New game 繞遠路 Long Way Round: deliver the envelope while the nosy neighbour guesses the wrong door",
+     "since": "2026-10-30T16:53:55+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2LR02_fix long way round after review",
      "state": "queued",
@@ -14256,7 +14278,7 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
