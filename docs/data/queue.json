@@ -1,5 +1,5 @@
 {
- "generated": 1793382720,
+ "generated": 1793383012,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -168,6 +168,23 @@
    "created": 1793380827
   },
   {
+   "id": "P1NL04_journey-fix-after-first-minute",
+   "request": "Nobody Looking: find where a new player gets stuck after the first minute and put a clear next step on screen",
+   "game": "Nobody Looking",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "first-minute",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
+   "state": "running",
+   "at": 1793382998,
+   "created": 1793382998
+  },
+  {
    "id": "P1SB53_slice-and-bake-center-fix-and-visual-round",
    "request": "P1SB53_slice and bake center fix and visual round",
    "game": "Slice and Bake",
@@ -314,6 +331,23 @@
    "waitingOn": [],
    "created": 1792908660,
    "estPercentOfWeek": 25.95
+  },
+  {
+   "id": "P1NL05_face-research",
+   "request": "Nobody Looking: research what everyday things people see faces in, grouped into 5 themes",
+   "game": "Nobody Looking",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1793382998
   },
   {
    "id": "P2FS47_stroke-tops-one-screen",
@@ -834,6 +868,48 @@
    ],
    "created": 1792908813,
    "estPercentOfWeek": 25.95
+  },
+  {
+   "id": "P1NL06_five-sections-design",
+   "request": "Nobody Looking: five sections, each adds one new rule, first two built",
+   "game": "Nobody Looking",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "design",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1NL05_face-research"
+   ],
+   "priority": "P2",
+   "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1NL05_face-research"
+   ],
+   "created": 1793382998
+  },
+  {
+   "id": "P1NL07_story-and-visual-round",
+   "request": "Nobody Looking: say the story in two lines and give it a creepy-museum look that is not the AI default",
+   "game": "Nobody Looking",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1NL06_five-sections-design"
+   ],
+   "priority": "P2",
+   "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
+   "state": "waiting",
+   "waitingOn": [
+    "P1NL06_five-sections-design"
+   ],
+   "created": 1793382998
   },
   {
    "id": "P1TM06_ux-refine",

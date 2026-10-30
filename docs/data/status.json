@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T17:54:07+00:00",
+ "generated": "2026-10-30T17:56:38+00:00",
  "ops": {
   "count": 3,
   "notes": [
@@ -20,22 +20,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 46,
+    "queued": 49,
     "running": 0,
     "doneToday": 3,
-    "minutes": 1840,
-    "estimateMinutes": 1840
+    "minutes": 1960,
+    "estimateMinutes": 1960
    },
    "Claude": {
     "queued": 1,
-    "running": 9,
+    "running": 10,
     "doneToday": 11,
-    "minutes": 600,
-    "estimateMinutes": 300
+    "minutes": 660,
+    "estimateMinutes": 330
    }
   },
-  "queued": 47,
-  "running": 9,
+  "queued": 50,
+  "running": 10,
   "doneToday": 14,
   "lanes": {
    "Codex": 1,
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2440,
-  "estimatedFinish": "2026-11-01T00:34:07+00:00",
-  "estimateMinutes": 1840
+  "minutesRemaining": 2620,
+  "estimatedFinish": "2026-11-01T02:36:38+00:00",
+  "estimateMinutes": 1960
  },
  "lanes": [
   {
@@ -56,7 +56,7 @@
    "game": "chai-boil",
    "task": "P1CB15_chai boil total redesign",
    "since": "2026-10-30T17:02:44+00:00",
-   "activity": "2026-10-30T17:50:34+00:00",
+   "activity": "2026-10-30T17:54:46+00:00",
    "commit": null
   },
   {
@@ -104,7 +104,7 @@
    "game": "time-material",
    "task": "P1TM04_slider drag hotfix",
    "since": "2026-10-30T17:49:09+00:00",
-   "activity": "2026-10-30T17:49:09+00:00",
+   "activity": "2026-10-30T17:55:55+00:00",
    "commit": null
   },
   {
@@ -112,7 +112,7 @@
    "game": "time-material",
    "task": "P1TM05_story premise",
    "since": "2026-10-30T17:49:09+00:00",
-   "activity": "2026-10-30T17:49:09+00:00",
+   "activity": "2026-10-30T17:55:55+00:00",
    "commit": null
   },
   {
@@ -2274,7 +2274,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-30T17:50:34+00:00",
+   "lastChange": "2026-10-30T17:54:46+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 8,
@@ -4464,15 +4464,15 @@
     "caption": "Ring notes on a brass plate covered in sand and watch the."
    },
    "why": "Chladni figures on a vibrating plate and a post of dye moving on vibrating milk.",
-   "state": "released",
+   "state": "ship",
    "stateFlags": {
     "refining": false,
     "resting": false,
-    "regressed": false,
+    "regressed": true,
     "reviseRound": 0,
-    "daysInState": 7
+    "daysInState": 10
    },
-   "waitingOn": "none",
+   "waitingOn": "owner",
    "id": "cymatic-plate",
    "number": 85,
    "repo": "cymatic-plate",
@@ -4485,7 +4485,7 @@
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
    "image": "promo/cymatic-plate/first.jpg",
-   "released": true,
+   "released": false,
    "releasedOn": "2026-10-23",
    "releasedNote": "public-ready, still being refined",
    "whyExists": "Chladni figures and a post of dye on milk inspired this. Each note shapes sand and moves dye drops, so the order you play changes the outcome. Worth playing to see how sound can guide patterns and movement on a plate.",
@@ -4707,7 +4707,8 @@
      "note": "P3OR54_cymatic-plate-credits-page: WORKDIR",
      "source": "main commit"
     }
-   ]
+   ],
+   "releaseHeld": true
   },
   {
    "nextTask": "Why this exists: finish the rollout on dancers-not-mad...",
@@ -17184,7 +17185,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Nobody Looking: research what everyday things people see...",
    "costTotalUsd": 68.66,
    "latestChange": {
     "text": "A swipe that starts on a dish with no open slot scrolls the page (P2FS44)",
@@ -17198,13 +17199,13 @@
     "caption": "Twelve shelves of eyes and mouths: slide pieces until no face is left."
    },
    "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 0
+    "daysInState": 7
    },
    "waitingOn": "owner",
    "id": "nobody-looking",
@@ -17213,8 +17214,8 @@
    "title": "Nobody Looking",
    "line": "Twelve shelves of eyes and mouths: slide pieces until no face is left.",
    "url": "https://chenhsieh.github.io/nobody-looking/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Slide eyes and mouths until no face is left; placeholder shapes, 12 shelves",
    "shelfNote": "",
@@ -17228,7 +17229,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T17:56:06+00:00",
-   "lastChange": "2026-10-29T18:24:59+00:00",
+   "lastChange": "2026-10-30T17:56:20+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -17242,6 +17243,62 @@
     "totalUsdEst": 68.66
    },
    "tasks": [
+    {
+     "title": "P1NL05_face research",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Nobody Looking: research what everyday things people see faces in, grouped into 5 themes",
+     "since": "2026-10-30T17:56:20+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1NL07_story and visual round",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Nobody Looking: say the story in two lines and give it a creepy-museum look that is not the AI default",
+     "since": "2026-10-30T17:56:20+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1NL06_five sections design",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Nobody Looking: five sections, each adds one new rule, first two built",
+     "since": "2026-10-30T17:56:15+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P1NL04_journey fix after first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Nobody Looking: find where a new player gets stuck after the first minute and put a clear next step on screen",
+     "since": "2026-10-30T17:55:56+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2FS44_nobody looking one screen",
      "state": "done",
@@ -17297,66 +17354,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1NL01_visual-round-design: Nobody Looking visual round (design only). On main (, design/ only; live game bytes unchanged, md5 of game.js identical; live page re-checked at 390x844 and 320x568, zero console errors)."
-    },
-    {
-     "title": "P1NL00_slide and swap feel and depth",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Nobody Looking (#127): sliding and swapping works smoothly with a finger, and a check of how deep the game really is.",
-     "since": "2026-10-24T02:25:45+00:00",
-     "done": "2026-10-24T02:25:45+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "P1NL00_slide-and-swap-feel-and-depth: Nobody Looking (#127) slide feel + depth. LIVE on main, live game.js/game.css bytes match the branch."
-    },
-    {
-     "title": "P1NL02_visual round build",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Nobody Looking: build the chosen look and the slide animations.",
-     "since": "2026-10-24T02:25:45+00:00",
-     "done": "2026-10-24T02:25:45+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "P1NL02_visual-round-build: Nobody Looking now draws the museum storage drawer from design/VISUAL_ROUND.md. LIVE on main; live game.js, game.css, game.config.js bytes match the branch; live page looked at 390x844 and..."
-    },
-    {
-     "title": "P2RL05_credits licences nobody looking",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Nobody Looking: credits name every source and its licence (release checklist)",
-     "since": "2026-10-23T02:39:30+00:00",
-     "done": "2026-10-23T02:39:30+00:00",
-     "reviewed": false,
-     "minutes": 1,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "OR LANE OK: Test: -e \"const vm=require('vm');const c={window:{}};vm.runInNewContext(require('fs').readFileSync('docs/game.config.js','utf8'),c);const k=c.window.GAME_CONFIG.credits;proc"
-    },
-    {
-     "title": "P3OR15_nobody looking engine test",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Nobody Looking: add a test for the generator, moves, solver replay and share text (OpenRouter lane)",
-     "since": "2026-10-22T21:16:30+00:00",
-     "done": "2026-10-22T21:16:30+00:00",
-     "reviewed": false,
-     "minutes": 9,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "OR LANE OK: Test: test/engine.test.mjs | tail -1 | grep -qx 'ok 6 cases'"
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 4,
     "running": 0,
     "waitingDesign": 0,
     "done": 12
@@ -17367,7 +17368,7 @@
     "note": "not at ship level yet; back to refining"
    },
    "needsYou": "One-screen check B (a swipe on the board must scroll the page) fails games whose board needs every drag, such as this one, Seal Carver, Fly Swarm and Nesting Scrap, even when the play page already fits the phone and has nothing to scroll. Four one-screen tasks are stopped on it. A 5-line change makes B pass when the page fits (it still fails when the page is taller than the screen); tested on the live pages: this game and Seal Carver go from fail to pass. Yes or no? Suggest: yes.",
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-29T18:24:59+00:00",
@@ -18977,10 +18978,10 @@
   },
   {
    "nextTask": "The Paid Clapper: apply the stranger review's fix...",
-   "costTotalUsd": 10.8,
+   "costTotalUsd": 43.2,
    "latestChange": {
-    "text": "P2PC00_paid-clapper-core handed to Claude: Codex quota ran out;",
-    "at": "2026-10-30T10:35:42+00:00"
+    "text": "core: tips on the answer that needs them, floating message line, press feedback, zh name...",
+    "at": "2026-10-30T17:44:34+00:00"
    },
    "promo": null,
    "why": "Find the seat paid to start the applause by asking when each seat started clapping.",
@@ -19022,9 +19023,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
-    "totalUsdEst": 10.8
+    "earlierRounds": 12,
+    "earlierUsdEst": 43.2,
+    "totalUsdEst": 43.2
    },
    "tasks": [
     {
@@ -19070,10 +19071,64 @@
    "inProgress": true,
    "history": [
     {
+     "at": "2026-10-30T17:44:34+00:00",
+     "ok": true,
+     "note": "core: tips on the answer that needs them, floating message line, press feedback, zh name on one line, og image",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-30T17:24:55+00:00",
+     "ok": true,
+     "note": "core: the hall answers by minimax, seating-plan board, lesson, wrong-name sheet, solver gate",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-30T10:35:42+00:00",
      "ok": false,
      "note": "P2PC00_paid-clapper-core handed to Claude: Codex quota ran out;",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-30T10:35:39+00:00",
+     "ok": true,
+     "note": "wip: P2PC00_paid-clapper-core final (Codex lane autosave 06:35)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-30T10:33:38+00:00",
+     "ok": true,
+     "note": "wip: P2PC00_paid-clapper-core (Codex lane autosave 06:33)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-30T10:25:36+00:00",
+     "ok": true,
+     "note": "wip: P2PC00_paid-clapper-core (Codex lane autosave 06:25)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-30T10:22:27+00:00",
+     "ok": true,
+     "note": "feat: ask seats to find the clapper",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-30T10:17:34+00:00",
+     "ok": true,
+     "note": "wip: P2PC00_paid-clapper-core (Codex lane autosave 06:17)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-30T10:12:30+00:00",
+     "ok": true,
+     "note": "test: port hall solver",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-30T10:09:32+00:00",
+     "ok": true,
+     "note": "start: P2PC00_paid-clapper-core",
+     "source": "main commit"
     },
     {
      "at": "2026-10-30T05:48:11+00:00",
@@ -29818,7 +29873,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-09-20T20:53:51+00:00",
-   "lastChange": "2026-10-30T17:49:09+00:00",
+   "lastChange": "2026-10-30T17:55:55+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -32988,7 +33043,9 @@
   "System needs: Pages build stuck or failed for 1 game(s): gif-cities (fix: re-run the Pages build in those repos (Settings, Pages) if an agent cannot)"
  ],
  "releaseReady": [],
- "releaseRegressed": [],
+ "releaseRegressed": [
+  "cymatic-plate"
+ ],
  "checksSummary": {
   "why": {
    "yes": 163,
