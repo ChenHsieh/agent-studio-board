@@ -141,12 +141,12 @@
   {
    "executor": "claude-opus",
    "role": "build",
-   "count": 75,
+   "count": 76,
    "firstTimePass": 96,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": 0.01,
-   "guessed": 70,
+   "guessed": 71,
    "topFailures": [
     "rooms 16, 25 and 33 at 360x640 run 9-18 px past the screen after the f",
     "on small beds the canvas keeps its tall paper below the board, so on a",
@@ -678,21 +678,21 @@
   },
   {
    "date": "2026-10-30",
+   "task": "ux refine",
+   "number": "",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE: live main ef39403 (bytes match). One-screen gate PASS strict at 390x844 and 360x640 (was 1.34x at 360x640). Start dial -> slider; rule"
+  },
+  {
+   "date": "2026-10-30",
    "task": "story premise",
    "number": "",
    "executor": "claude-opus",
    "role": "build",
    "passed": "yes",
    "note": "DONE: design/STORY.md on branch chen-tm-slider-drag (ships to main with P1TM06). Premise 3 sentences EN+zh, player = counter of a neighbourh"
-  },
-  {
-   "date": "2026-10-30",
-   "task": "slider drag hotfix",
-   "number": "",
-   "executor": "claude-opus",
-   "role": "fix",
-   "passed": "yes",
-   "note": "DONE: the speed slider follows a finger drag again (live, main 2eba8e2, live bytes of index.html/style.css/app.js match)."
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
