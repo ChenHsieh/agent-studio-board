@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T05:37:40+00:00",
+ "generated": "2026-10-30T05:41:32+00:00",
  "ops": {
   "count": 2,
   "notes": [
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 38,
+    "queued": 39,
     "running": 0,
     "doneToday": 0,
-    "minutes": 1520,
-    "estimateMinutes": 1520
+    "minutes": 1560,
+    "estimateMinutes": 1560
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 60
    }
   },
-  "queued": 39,
+  "queued": 40,
   "running": 0,
   "doneToday": 0,
   "lanes": {
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1580,
-  "estimatedFinish": "2026-10-31T06:57:40+00:00",
-  "estimateMinutes": 1520
+  "minutesRemaining": 1620,
+  "estimatedFinish": "2026-10-31T07:41:32+00:00",
+  "estimateMinutes": 1560
  },
  "lanes": [],
  "codexLanes": 0,
@@ -2156,7 +2156,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "P2CB14_chai boil fix after look",
    "costTotalUsd": 91.56,
    "latestChange": {
     "text": "feat: show chai as a moving line drawing",
@@ -2164,13 +2164,13 @@
    },
    "promo": null,
    "why": "An AI-made video post of a pot of milk tea foaming up on a wood fire, plus the Lunar Lander game.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 1
+    "daysInState": 9
    },
    "waitingOn": "owner",
    "id": "chai-boil",
@@ -2179,8 +2179,8 @@
    "title": "Chai Boil",
    "line": "One pot, one dial: let the chai rise to the rim, not over it.",
    "url": "https://chenhsieh.github.io/chai-boil/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "hyper-realistic visuals instead of computer-drawn",
    "shelfNote": "",
@@ -2194,7 +2194,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T02:36:30+00:00",
-   "lastChange": "2026-10-29T04:31:46+00:00",
+   "lastChange": "2026-10-30T05:40:00+00:00",
    "cost": {
     "apiUsd": 6.73,
     "codexRuns": 7,
@@ -2208,6 +2208,20 @@
     "totalUsdEst": 91.56
    },
    "tasks": [
+    {
+     "title": "P2CB14_chai boil fix after look",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-10-30T05:40:00+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2CB13_chai boil black field look",
      "state": "done",
@@ -2305,24 +2319,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "feat: teach the first chai glass with a safe spill and scored pour"
-    },
-    {
-     "title": "P1CB08_chai draw helper pot",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "The pot, face, foam, steam and glass are redrawn as lit cut paper with one light side",
-     "since": "2026-10-22T03:58:31+00:00",
-     "done": "2026-10-22T03:58:31+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "P1CB08 chai-draw-helper-pot: DONE, live (main , https://chenhsieh.github.io/chai-boil/, live bytes match, zero console errors)."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 21
@@ -2333,7 +2333,7 @@
     "note": "Visual revamp, different kitchen"
    },
    "needsYou": "Prayer-flag strip in the mountain hut set: five extra colours on one strip, all six kitchens still pass the contrast check. Suggest: keep it; it costs little and no kitchen failed the contrast check.",
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-29T04:31:46+00:00",
