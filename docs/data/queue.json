@@ -1,5 +1,5 @@
 {
- "generated": 1793381280,
+ "generated": 1793381855,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -151,23 +151,21 @@
    "created": 1793380827
   },
   {
-   "id": "P2LR01_review-long-way-round",
-   "request": "Opus stranger review of long-way-round after its core build",
-   "game": "Studio",
+   "id": "P1SB53_slice-and-bake-center-fix-and-visual-round",
+   "request": "P1SB53_slice and bake center fix and visual round",
+   "game": "Slice and Bake",
    "route": "Claude",
    "model": "opus",
    "effort": "high",
-   "kind": "review",
-   "size": "studio",
+   "kind": "fix",
+   "size": "one repo",
    "estMinutes": null,
-   "after": [
-    "P2LR00_long-way-round-core"
-   ],
-   "priority": null,
-   "why": "",
+   "after": [],
+   "priority": "P2",
+   "why": "Arrange coloured dough ropes in a log so each of five cuts shows the wanted pattern; every change alters this slice and the later ones.",
    "state": "running",
-   "at": 1793339508,
-   "created": 1793339508
+   "at": 1793381804,
+   "created": 1793381804
   },
   {
    "id": "P2PC00_paid-clapper-core",
@@ -531,6 +529,26 @@
    "estPercentOfWeek": 25.95
   },
   {
+   "id": "P2LR02_fix-long-way-round-after-review",
+   "request": "Long Way Round: apply the stranger review's fix list, Codex",
+   "game": "Long Way Round",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2LR01_review-long-way-round"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1793339539,
+   "estPercentOfWeek": 25.95
+  },
+  {
    "id": "P2SSP00_same-spots-core",
    "request": "Same Spots (同一身斑): build the core (repaint creatures so none looks different in any hawk's view), Codex",
    "game": "Same Spots",
@@ -830,28 +848,6 @@
     "P3OR44_kit-win-hold-and-higher-is-better"
    ],
    "created": 1792715918,
-   "estPercentOfWeek": 25.95
-  },
-  {
-   "id": "P2LR02_fix-long-way-round-after-review",
-   "request": "Long Way Round: apply the stranger review's fix list, Codex",
-   "game": "Long Way Round",
-   "route": "Codex",
-   "model": "gpt-6-sol",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2LR01_review-long-way-round"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2LR01_review-long-way-round"
-   ],
-   "created": 1793339539,
    "estPercentOfWeek": 25.95
   },
   {
@@ -1222,6 +1218,25 @@
    "state": "done",
    "at": 1793379235,
    "created": 1793379235
+  },
+  {
+   "id": "P2LR01_review-long-way-round",
+   "request": "Opus stranger review of long-way-round after its core build",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2LR00_long-way-round-core"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1793339508,
+   "created": 1793339508
   },
   {
    "id": "P3OR102_lie-flat-save-test",
