@@ -1,15 +1,11 @@
 {
- "generated": "2026-10-30T23:45:46+00:00",
+ "generated": "2026-10-30T23:49:04+00:00",
  "ops": {
-  "count": 2,
-  "notes": [
-   "A running task has shown no progress for over 3 hours."
-  ],
+  "count": 0,
+  "notes": [],
   "info": []
  },
- "about": [
-  "A running task has shown no progress for over 3 hours."
- ],
+ "about": [],
  "project": {
   "name": "Game studio",
   "noun": "game",
@@ -20,8 +16,8 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 46,
-    "running": 0,
+    "queued": 45,
+    "running": 1,
     "doneToday": 4,
     "minutes": 1840,
     "estimateMinutes": 1840
@@ -34,8 +30,8 @@
     "estimateMinutes": 90
    }
   },
-  "queued": 47,
-  "running": 2,
+  "queued": 46,
+  "running": 3,
   "doneToday": 38,
   "lanes": {
    "Codex": 1,
@@ -47,7 +43,7 @@
   },
   "codexPaused": false,
   "minutesRemaining": 2020,
-  "estimatedFinish": "2026-11-01T06:25:46+00:00",
+  "estimatedFinish": "2026-11-01T06:29:04+00:00",
   "estimateMinutes": 1840
  },
  "lanes": [
@@ -66,6 +62,17 @@
    "since": "2026-10-30T19:40:18+00:00",
    "activity": "2026-10-30T19:46:44+00:00",
    "commit": null
+  },
+  {
+   "worker": "Codex",
+   "game": "long-way-round",
+   "task": "P2LR02_fix long way round after review",
+   "since": "2026-10-30T23:46:01+00:00",
+   "activity": "2026-10-30T23:48:58+00:00",
+   "commit": {
+    "at": "2026-10-30T23:46:08+00:00",
+    "subject": "start: P2LR02_fix-long-way-round-after-review"
+   }
   }
  ],
  "codexLanes": 1,
@@ -5729,11 +5736,8 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 14.4,
-   "latestChange": {
-    "text": "No accidental zoom on phones:",
-    "at": "2026-10-25T01:44:59+00:00"
-   },
+   "costTotalUsd": 3.6,
+   "latestChange": null,
    "promo": null,
    "why": "Screenshots about rules drawn around places instead of their purpose.",
    "state": "gated",
@@ -5742,7 +5746,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 5
+    "daysInState": 7
    },
    "waitingOn": "none",
    "id": "drum-rule",
@@ -5765,8 +5769,8 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-10-22T20:26:22+00:00",
-   "lastChange": "2026-10-25T01:44:59+00:00",
+   "firstSeen": "2026-10-23T03:04:56+00:00",
+   "lastChange": "2026-10-23T03:04:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -5775,9 +5779,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
-    "totalUsdEst": 14.4
+    "earlierRounds": 0,
+    "earlierUsdEst": 0.0,
+    "totalUsdEst": 3.6
    },
    "tasks": [
     {
@@ -5804,32 +5808,7 @@
    "verdict": null,
    "needsYou": null,
    "inProgress": false,
-   "history": [
-    {
-     "at": "2026-10-25T01:44:59+00:00",
-     "ok": true,
-     "note": "No accidental zoom on phones:",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T22:46:20+00:00",
-     "ok": true,
-     "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T20:27:44+00:00",
-     "ok": true,
-     "note": "feat: Drum Rule starts from the game template",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T20:26:22+00:00",
-     "ok": true,
-     "note": "Initial commit",
-     "source": "main commit"
-    }
-   ]
+   "history": []
   },
   {
    "nextTask": null,
@@ -14228,7 +14207,7 @@
    ]
   },
   {
-   "nextTask": "Long Way Round: apply the stranger review's fix...",
+   "nextTask": null,
    "costTotalUsd": 14.76,
    "latestChange": {
     "text": "Long Way Round: the lane from Auntie's window (Opus core rebuild)",
@@ -14251,7 +14230,7 @@
    "title": "Long Way Round",
    "line": "",
    "url": "https://chenhsieh.github.io/long-way-round/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
@@ -14266,7 +14245,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-30T05:42:34+00:00",
-   "lastChange": "2026-10-30T17:24:57+00:00",
+   "lastChange": "2026-10-30T23:48:58+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -14282,16 +14261,19 @@
    "tasks": [
     {
      "title": "P2LR02_fix long way round after review",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Long Way Round: apply the stranger review's fix list, Codex",
-     "since": "2026-10-30T05:52:19+00:00",
+     "since": "2026-10-30T23:46:01+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-10-30T23:46:08+00:00",
+      "subject": "start: P2LR02_fix-long-way-round-after-review"
+     },
      "result": ""
     },
     {
@@ -14324,8 +14306,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
