@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-31T13:10:48+00:00",
+ "generated": "2026-10-31T13:13:18+00:00",
  "ops": {
-  "count": 1,
+  "count": 2,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,22 +20,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 42,
+    "queued": 40,
     "running": 0,
     "doneToday": 0,
-    "minutes": 1680,
-    "estimateMinutes": 1680
+    "minutes": 1600,
+    "estimateMinutes": 1600
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 2,
     "doneToday": 0,
-    "minutes": 120,
-    "estimateMinutes": 60
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
-  "queued": 43,
-  "running": 1,
+  "queued": 41,
+  "running": 2,
   "doneToday": 0,
   "lanes": {
    "Codex": 1,
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1800,
-  "estimatedFinish": "2026-11-01T17:10:48+00:00",
-  "estimateMinutes": 1680
+  "minutesRemaining": 1780,
+  "estimatedFinish": "2026-11-01T15:53:18+00:00",
+  "estimateMinutes": 1600
  },
  "lanes": [
   {
@@ -58,10 +58,18 @@
    "since": null,
    "activity": null,
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P1SB56_share text cuter and ui refine",
+   "since": null,
+   "activity": null,
+   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 2,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
   "runs": 317,
@@ -4127,11 +4135,8 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 14.4,
-   "latestChange": {
-    "text": "No accidental zoom on phones:",
-    "at": "2026-10-25T01:46:00+00:00"
-   },
+   "costTotalUsd": 3.6,
+   "latestChange": null,
    "promo": null,
    "why": "A hobby post of an energy-drink can pressed into rings of diamond facets.",
    "state": "gated",
@@ -4140,7 +4145,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 6
+    "daysInState": 8
    },
    "waitingOn": "none",
    "id": "crushed-can",
@@ -4163,8 +4168,8 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-10-22T20:36:12+00:00",
-   "lastChange": "2026-10-25T01:46:00+00:00",
+   "firstSeen": "2026-10-23T03:04:53+00:00",
+   "lastChange": "2026-10-23T03:04:53+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -4173,9 +4178,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
-    "totalUsdEst": 14.4
+    "earlierRounds": 0,
+    "earlierUsdEst": 0.0,
+    "totalUsdEst": 3.6
    },
    "tasks": [
     {
@@ -4202,32 +4207,7 @@
    "verdict": null,
    "needsYou": null,
    "inProgress": false,
-   "history": [
-    {
-     "at": "2026-10-25T01:46:00+00:00",
-     "ok": true,
-     "note": "No accidental zoom on phones:",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T22:48:57+00:00",
-     "ok": true,
-     "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T20:47:53+00:00",
-     "ok": true,
-     "note": "feat: Can Lantern starts from the game template",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T20:36:12+00:00",
-     "ok": true,
-     "note": "Initial commit",
-     "source": "main commit"
-    }
-   ]
+   "history": []
   },
   {
    "nextTask": null,
@@ -25400,15 +25380,15 @@
    },
    "promo": null,
    "why": "Arrange coloured dough ropes in a log so each of five cuts shows the wanted pattern; every change alters this slice and the later ones.",
-   "state": "ship",
+   "state": "released",
    "stateFlags": {
     "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 1
+    "daysInState": 0
    },
-   "waitingOn": "owner",
+   "waitingOn": "none",
    "id": "slice-and-bake",
    "number": 34,
    "repo": "slice-and-bake",
@@ -25421,9 +25401,9 @@
    "priorityNote": "Make cutting and adjusting legible; refresh the visual",
    "shelfNote": "",
    "image": "img/games/slice-and-bake-1.webp",
-   "released": false,
-   "releasedOn": null,
-   "releasedNote": "",
+   "released": true,
+   "releasedOn": "2026-10-31",
+   "releasedNote": "public-ready, still being refined",
    "whyExists": "Photos of homemade patterned cookies sparked this puzzle. Each move changes every future slice, so you see how small steps shape the whole result. Worth playing to notice how sequence and structure create patterns.",
    "archived": false,
    "archivedOn": null,
@@ -25564,9 +25544,9 @@
     "done": 12
    },
    "verdict": {
-    "date": "2026-10-30",
-    "verdict": "ship",
-    "note": "One tap is one move and order matters: reading the wanted cookie from the outside in is the whole game, copying it move by move toward the picture stalls on every ticket, and five baked slices land on the tray when you get it"
+    "date": "2026-10-31",
+    "verdict": "release",
+    "note": "public-ready, still being refined"
    },
    "needsYou": null,
    "inProgress": false,
