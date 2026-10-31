@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31T02:13:38+00:00",
+ "generated": "2026-10-31T02:16:40+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 44,
+    "queued": 43,
     "running": 0,
     "doneToday": 4,
-    "minutes": 1760,
-    "estimateMinutes": 1760
+    "minutes": 1720,
+    "estimateMinutes": 1720
    },
    "Claude": {
     "queued": 1,
     "running": 1,
-    "doneToday": 37,
+    "doneToday": 38,
     "minutes": 120,
     "estimateMinutes": 60
    }
   },
-  "queued": 45,
+  "queued": 44,
   "running": 1,
-  "doneToday": 41,
+  "doneToday": 42,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1880,
-  "estimatedFinish": "2026-11-01T07:33:38+00:00",
-  "estimateMinutes": 1760
+  "minutesRemaining": 1840,
+  "estimatedFinish": "2026-11-01T06:56:40+00:00",
+  "estimateMinutes": 1720
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "nobody-looking",
-   "task": "P1NL09_garden court grow section",
-   "since": "2026-10-31T01:53:41+00:00",
-   "activity": "2026-10-31T02:13:36+00:00",
+   "task": "P1NL10_instrument room mood section",
+   "since": "2026-10-31T02:15:06+00:00",
+   "activity": "2026-10-31T02:15:17+00:00",
    "commit": null
   }
  ],
@@ -64,8 +64,8 @@
  "claudeWorkers": 1,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
-  "runs": 312,
-  "usdEst": 1123.2,
+  "runs": 313,
+  "usdEst": 1126.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -139,7 +139,7 @@
   },
   {
    "day": "2026-10-30",
-   "changes": 21
+   "changes": 22
   }
  ],
  "houseRules": 25,
@@ -17124,11 +17124,11 @@
    ]
   },
   {
-   "nextTask": "Nobody Looking: build the instrument room, where smiling...",
-   "costTotalUsd": 83.06,
+   "nextTask": null,
+   "costTotalUsd": 86.66,
    "latestChange": {
-    "text": "feat: a garden court where buds count down and open into eyes (Garden 1-8) (P1NL09)",
-    "at": "2026-10-31T02:13:39+00:00"
+    "text": "P1NL09: Garden 1-8 (buds grow into eyes) live",
+    "at": "2026-10-31T02:15:05+00:00"
    },
    "promo": {
     "files": {
@@ -17168,40 +17168,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T17:56:06+00:00",
-   "lastChange": "2026-10-31T02:13:39+00:00",
+   "lastChange": "2026-10-31T02:15:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 16,
+    "claudeRuns": 17,
     "apiRuns": 0,
     "codexTokens": 215851,
     "codexUsdEst": 0.26,
-    "claudeUsdEst": 57.6,
+    "claudeUsdEst": 61.2,
     "earlierRounds": 7,
     "earlierUsdEst": 25.2,
-    "totalUsdEst": 83.06
+    "totalUsdEst": 86.66
    },
    "tasks": [
     {
-     "title": "P1NL09_garden court grow section",
+     "title": "P1NL10_instrument room mood section",
      "state": "running",
      "worker": "Claude",
-     "plan": "Nobody Looking: build the garden court, where buds open into eyes after a few moves",
-     "since": "2026-10-31T01:53:41+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P1NL10_instrument room mood section",
-     "state": "queued",
-     "worker": "Codex",
      "plan": "Nobody Looking: build the instrument room, where smiling faces stay and frowning ones must go",
-     "since": "2026-10-30T18:54:42+00:00",
+     "since": "2026-10-31T02:15:06+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -17223,6 +17209,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1NL08 night street (ROLL) + 320x568 Undo fix: DONE, live at https://chenhsieh.github.io/nobody-looking/ (main , tag pre-nl-street)"
+    },
+    {
+     "title": "P1NL09_garden court grow section",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Nobody Looking: build the garden court, where buds open into eyes after a few moves",
+     "since": "2026-10-30T18:54:42+00:00",
+     "done": "2026-10-30T18:54:42+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1NL09 garden court (GROW): DONE, live at https://chenhsieh.github.io/nobody-looking/ (main , tag pre-nl-garden)"
     },
     {
      "title": "P1NL04_journey fix after first minute",
@@ -17296,10 +17296,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 17
+    "done": 18
    },
    "verdict": {
     "date": "2026-10-23",
@@ -17309,6 +17309,12 @@
    "needsYou": "One-screen check B (a swipe on the board must scroll the page) fails games whose board needs every drag, such as this one, Seal Carver, Fly Swarm and Nesting Scrap, even when the play page already fits the phone and has nothing to scroll. Four one-screen tasks are stopped on it. A 5-line change makes B pass when the page fits (it still fails when the page is taller than the screen); tested on the live pages: this game and Seal Carver go from fail to pass. Yes or no? Suggest: yes.",
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-31T02:15:05+00:00",
+     "ok": true,
+     "note": "P1NL09: Garden 1-8 (buds grow into eyes) live",
+     "source": "board note"
+    },
     {
      "at": "2026-10-31T02:13:39+00:00",
      "ok": true,
@@ -17373,12 +17379,6 @@
      "at": "2026-10-29T18:21:41+00:00",
      "ok": true,
      "note": "start: P2FS44",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-29T18:19:31+00:00",
-     "ok": true,
-     "note": "One screen (A): pinned result sheet via port_onescreen; meta.draggable keeps dish drags (P2FS43)",
      "source": "main commit"
     }
    ]
