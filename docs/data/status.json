@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-31T03:21:27+00:00",
+ "generated": "2026-10-31T03:24:15+00:00",
  "ops": {
-  "count": 2,
+  "count": 4,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -47,36 +47,16 @@
   },
   "codexPaused": false,
   "minutesRemaining": 1660,
-  "estimatedFinish": "2026-11-01T06:01:27+00:00",
+  "estimatedFinish": "2026-11-01T06:04:15+00:00",
   "estimateMinutes": 1600
  },
- "lanes": [
-  {
-   "worker": "Codex",
-   "game": "still-a-heap",
-   "task": "heap board fill and short card",
-   "since": "2026-10-31T03:09:28+00:00",
-   "activity": "2026-10-31T03:17:07+00:00",
-   "commit": {
-    "at": "2026-10-31T03:12:39+00:00",
-    "subject": "fix: plate fills width, pans only when a column would drop under 44 px"
-   }
-  },
-  {
-   "worker": "Claude",
-   "game": "slice-and-bake",
-   "task": "P3SB55_slice and bake small phone fold",
-   "since": "2026-10-31T02:57:20+00:00",
-   "activity": "2026-10-31T03:18:58+00:00",
-   "commit": null
-  }
- ],
+ "lanes": [],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 0,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
-  "runs": 315,
-  "usdEst": 1134.0,
+  "runs": 317,
+  "usdEst": 1141.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -25455,21 +25435,21 @@
    "why": "Arrange coloured dough ropes in a log so each of five cuts shows the wanted pattern; every change alters this slice and the later ones.",
    "state": "ship",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "slice and bake small phone fold",
+   "waitingOn": "owner",
    "id": "slice-and-bake",
    "number": 34,
    "repo": "slice-and-bake",
    "title": "Slice and Bake",
    "line": "Move dough before each cut to match the next slice.",
    "url": "https://chenhsieh.github.io/slice-and-bake/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Make cutting and adjusting legible; refresh the visual",
    "shelfNote": "",
@@ -25487,29 +25467,29 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 8,
+    "claudeRuns": 9,
     "apiRuns": 1,
     "codexTokens": 407560,
     "codexUsdEst": 0.49,
-    "claudeUsdEst": 28.8,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
+    "claudeUsdEst": 32.4,
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
     "totalUsdEst": 79.69
    },
    "tasks": [
     {
      "title": "P3SB55_slice and bake small phone fold",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Cut and bake stays on screen on a small phone in Chinese",
-     "since": "2026-10-31T02:57:20+00:00",
-     "done": null,
+     "since": "2026-10-30T18:52:10+00:00",
+     "done": "2026-10-30T18:52:10+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE. slice-and-bake main . @media (max-height:600px) spacing: bake row bottom en max 541, zh max 536 at 320x568 (was 557-583 / 578); Try again one line at 20px. Tests run_all + run_browser PASS; onescreen strict live..."
     },
     {
      "title": "P1SB54_slice and bake release review",
@@ -25612,9 +25592,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 11
+    "done": 12
    },
    "verdict": {
     "date": "2026-10-30",
@@ -25622,7 +25602,7 @@
     "note": "One tap is one move and order matters: reading the wanted cookie from the outside in is the whole game, copying it move by move toward the picture stalls on every ticket, and five baked slices land on the tray when you get it"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-31T03:21:31+00:00",
@@ -26872,30 +26852,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 22.03,
+   "costTotalUsd": 18.43,
    "latestChange": {
     "text": "plate fills width, pans only for 9 columns; first-visit card fits one screen (P2n116)",
     "at": "2026-10-31T03:21:32+00:00"
    },
    "promo": null,
    "why": "A remix of the can-press toy and the swarm idea through the old paradox of the heap.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 1
+    "daysInState": 0
    },
-   "waitingOn": "heap board fill and short card",
+   "waitingOn": "none",
    "id": "still-a-heap",
    "number": 160,
    "repo": "still-a-heap",
    "title": "Still A Heap",
    "line": "",
    "url": "https://chenhsieh.github.io/still-a-heap/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -26913,31 +26893,28 @@
     "apiUsd": 0.0,
     "codexRuns": 1,
     "claudeRuns": 0,
-    "apiRuns": 0,
+    "apiRuns": 1,
     "codexTokens": 361179,
     "codexUsdEst": 0.43,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 6,
-    "earlierUsdEst": 21.6,
-    "totalUsdEst": 22.03
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
+    "totalUsdEst": 18.43
    },
    "tasks": [
     {
      "title": "heap board fill and short card",
-     "state": "running",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude API",
      "plan": "",
-     "since": "2026-10-31T03:09:28+00:00",
-     "done": null,
+     "since": "2026-10-30T17:04:07+00:00",
+     "done": "2026-10-30T17:04:07+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-10-31T03:12:39+00:00",
-      "subject": "fix: plate fills width, pans only when a column would drop under 44 px"
-     },
-     "result": ""
+     "commit": null,
+     "result": "DONE (resumed Codex WIP). still-a-heap main . Plate fills width; 9-column plates widen to keep 44 px columns and pan at 320/390 (7 of 9 columns visible on plate 4 at 320). Card shows premise, one picture, Play...."
     },
     {
      "title": "still a heap",
@@ -26956,9 +26933,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": {
     "date": "2026-10-29",
@@ -26966,7 +26943,7 @@
     "note": "The stop-while-it-still-reaches-the-line idea works and bots lose, but at 320 wide the plate is a narrow strip with empty space around it and the opening card is long, so the first grain comes late"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-31T03:21:32+00:00",
