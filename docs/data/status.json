@@ -1,11 +1,15 @@
 {
- "generated": "2026-10-31T12:50:32+00:00",
+ "generated": "2026-10-31T12:54:50+00:00",
  "ops": {
-  "count": 0,
-  "notes": [],
+  "count": 1,
+  "notes": [
+   "A game changed in the last hour with no claimed task on it."
+  ],
   "info": []
  },
- "about": [],
+ "about": [
+  "A game changed in the last hour with no claimed task on it."
+ ],
  "project": {
   "name": "Game studio",
   "noun": "game",
@@ -16,39 +20,48 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 41,
+    "queued": 40,
     "running": 0,
     "doneToday": 0,
-    "minutes": 1640,
-    "estimateMinutes": 1640
+    "minutes": 1600,
+    "estimateMinutes": 1600
    },
    "Claude": {
     "queued": 1,
-    "running": 0,
+    "running": 1,
     "doneToday": 0,
-    "minutes": 60,
+    "minutes": 120,
     "estimateMinutes": 60
    }
   },
-  "queued": 42,
-  "running": 0,
+  "queued": 41,
+  "running": 1,
   "doneToday": 0,
   "lanes": {
    "Codex": 1,
-   "Claude": 1
+   "Claude": 2
   },
   "laneCap": {
    "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1700,
-  "estimatedFinish": "2026-11-01T16:10:32+00:00",
-  "estimateMinutes": 1640
+  "minutesRemaining": 1720,
+  "estimatedFinish": "2026-11-01T15:34:50+00:00",
+  "estimateMinutes": 1600
  },
- "lanes": [],
+ "lanes": [
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P1GRX00_grass crossword realistic grass",
+   "since": null,
+   "activity": null,
+   "commit": null
+  }
+ ],
  "codexLanes": 0,
- "claudeWorkers": 0,
+ "claudeWorkers": 1,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
   "runs": 317,
@@ -11160,10 +11173,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 21.6,
+   "costTotalUsd": 54.0,
    "latestChange": {
-    "text": "first-minute start/stop fix; replay works from Home; gates 3x390+1x320 green",
-    "at": "2026-10-23T14:24:57+00:00"
+    "text": "One screen on phones: port_onescreen (kit 2) (P2FS04)",
+    "at": "2026-10-25T09:17:28+00:00"
    },
    "promo": {
     "files": {
@@ -11216,9 +11229,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 18.0,
-    "earlierRounds": 1,
-    "earlierUsdEst": 3.6,
-    "totalUsdEst": 21.6
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
+    "totalUsdEst": 54.0
    },
    "tasks": [
     {
@@ -11303,10 +11316,40 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T09:17:28+00:00",
+     "ok": true,
+     "note": "One screen on phones: port_onescreen (kit 2) (P2FS04)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T04:37:44+00:00",
+     "ok": true,
+     "note": "Hit or Kit: the Blanks paper as one-axis bars with the blank's ghost line, the rule in one sentence, rule-first card (P2HK00)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T01:41:30+00:00",
+     "ok": true,
+     "note": "No accidental zoom on phones:",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-24T22:41:56+00:00",
+     "ok": true,
+     "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-23T14:24:57+00:00",
      "ok": true,
      "note": "first-minute start/stop fix; replay works from Home; gates 3x390+1x320 green",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-23T14:24:10+00:00",
+     "ok": true,
+     "note": "feat: Hit or Kit opens with a three-step practice case",
+     "source": "main commit"
     },
     {
      "at": "2026-10-22T22:39:48+00:00",
@@ -11331,6 +11374,12 @@
      "ok": true,
      "note": "P2SV53 live: weeks 3-5 (25 cases), casebook + lab rules, daily from all weeks, zh-Hant, hub link on silva-to-maaslin2; gates pass",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-22T07:55:59+00:00",
+     "ok": true,
+     "note": "feat: Hit or Kit gets weeks 3 to 5, a casebook with sources and a lab rules wall",
+     "source": "main commit"
     },
     {
      "at": "2026-10-22T07:46:48+00:00",
@@ -22411,7 +22460,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 3
+    "daysInState": 4
    },
    "waitingOn": "none",
    "id": "round-table",
