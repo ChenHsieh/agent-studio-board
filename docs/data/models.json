@@ -141,12 +141,12 @@
   {
    "executor": "claude-opus",
    "role": "build",
-   "count": 86,
+   "count": 87,
    "firstTimePass": 96,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": 0.01,
-   "guessed": 81,
+   "guessed": 82,
    "topFailures": [
     "rooms 16, 25 and 33 at 360x640 run 9-18 px past the screen after the f",
     "on small beds the canvas keeps its tall paper below the board, so on a",
@@ -534,6 +534,15 @@
   },
   {
    "date": "2026-10-31",
+   "task": "geometric cast exposure story",
+   "number": "",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "the first minute is about 56 words EN (target under 50). Cut: shorten scanStack to \"One row at a time.\" and give level 1 a short reading lin"
+  },
+  {
+   "date": "2026-10-31",
    "task": "story intro client brief",
    "number": "",
    "executor": "claude-opus",
@@ -684,15 +693,6 @@
    "role": "build",
    "passed": "",
    "note": "exhausted, 142k tokens: DONE (resumed Codex WIP). still-a-heap main 5ec58d3. Plate fills width; 9-column plates widen to keep 44 px columns "
-  },
-  {
-   "date": "2026-10-30",
-   "task": "sockglass first minute polish",
-   "number": "73",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE. Sockglass main 775bb15. Play and toggles pinned to card bottom (Play bottom 808/844, 604/640, 532/568, en and zh-Hant); third how-to l"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
