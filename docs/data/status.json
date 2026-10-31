@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-31T13:17:17+00:00",
+ "generated": "2026-10-31T13:20:39+00:00",
  "ops": {
-  "count": 3,
+  "count": 4,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -28,14 +28,14 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 3,
+    "running": 4,
     "doneToday": 0,
-    "minutes": 240,
-    "estimateMinutes": 120
+    "minutes": 300,
+    "estimateMinutes": 150
    }
   },
   "queued": 41,
-  "running": 3,
+  "running": 4,
   "doneToday": 0,
   "lanes": {
    "Codex": 1,
@@ -46,8 +46,8 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1840,
-  "estimatedFinish": "2026-11-01T15:57:17+00:00",
+  "minutesRemaining": 1900,
+  "estimatedFinish": "2026-11-01T16:00:39+00:00",
   "estimateMinutes": 1600
  },
  "lanes": [
@@ -70,6 +70,14 @@
   {
    "worker": "Claude",
    "game": "Multiple games",
+   "task": "P1TRP00_visual and intro rework",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
    "task": "P2NL11_share text and preview image",
    "since": null,
    "activity": null,
@@ -77,7 +85,7 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 3,
+ "claudeWorkers": 4,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
   "runs": 317,
@@ -12145,10 +12153,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 11.21,
+   "costTotalUsd": 47.21,
    "latestChange": {
-    "text": "feat: teach Knockout Plate through a three-step lab round",
-    "at": "2026-10-22T23:57:44+00:00"
+    "text": "Sync fixed onescreen-shell (P2FS38 fixes: ghost click guard, bottom room)",
+    "at": "2026-10-29T18:00:40+00:00"
    },
    "promo": null,
    "why": "A lab story of knocking out bacterial genes one by one, plus a challenge to predict knockouts never seen.",
@@ -12158,7 +12166,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 8
+    "daysInState": 1
    },
    "waitingOn": "none",
    "id": "knockout-plate",
@@ -12185,8 +12193,8 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-10-20T05:05:56+00:00",
-   "lastChange": "2026-10-22T23:57:44+00:00",
+   "firstSeen": "2026-10-20T04:39:50+00:00",
+   "lastChange": "2026-10-29T18:00:40+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -12195,9 +12203,9 @@
     "codexTokens": 343098,
     "codexUsdEst": 0.41,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 2,
-    "earlierUsdEst": 7.2,
-    "totalUsdEst": 11.21
+    "earlierRounds": 12,
+    "earlierUsdEst": 43.2,
+    "totalUsdEst": 47.21
    },
    "tasks": [
     {
@@ -12258,10 +12266,46 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-29T18:00:40+00:00",
+     "ok": true,
+     "note": "Sync fixed onescreen-shell (P2FS38 fixes: ghost click guard, bottom room)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T09:07:09+00:00",
+     "ok": true,
+     "note": "One screen on phones: result sheet (P2FS04)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T02:59:10+00:00",
+     "ok": true,
+     "note": "Zoom guard updated: taps are never cancelled (P1ZM00)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T01:32:43+00:00",
+     "ok": true,
+     "note": "No accidental zoom on phones:",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-24T22:31:11+00:00",
+     "ok": true,
+     "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-22T23:57:44+00:00",
      "ok": true,
      "note": "feat: teach Knockout Plate through a three-step lab round",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-22T23:56:28+00:00",
+     "ok": true,
+     "note": "feat: teach Knockout Plate through a three-step lab round",
+     "source": "main commit"
     },
     {
      "at": "2026-10-21T07:28:28+00:00",
@@ -12270,21 +12314,27 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-21T07:27:25+00:00",
+     "ok": true,
+     "note": "feat: make Knockout Plate respond to every touch",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-21T05:19:46+00:00",
      "ok": true,
      "note": "P1KP01 knock-out verb, step-by-step colony + Why replay, Suspect/Cleared/Brake key, guided level 1, levels 3 and 5 resized; live main",
      "source": "board note"
     },
     {
+     "at": "2026-10-21T05:17:58+00:00",
+     "ok": true,
+     "note": "feat: Knockout Plate is easier to understand: knock out genes, watch the colony answer",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-20T16:13:32+00:00",
      "ok": true,
      "note": "prototype live (6 levels, notebook, ghost counts, daily, how-to pages, bots table); main https://chenhsieh.github.io/knockout-plate/",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-20T05:05:56+00:00",
-     "ok": true,
-     "note": "NOT_DONE P2n01: greedy/careful mean ratio 1.46 (L2), 1.12 (L3), 1.43 (L5) below 1.5x;",
      "source": "board note"
     }
    ]
