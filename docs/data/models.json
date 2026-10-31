@@ -141,12 +141,12 @@
   {
    "executor": "claude-opus",
    "role": "build",
-   "count": 83,
+   "count": 84,
    "firstTimePass": 96,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": 0.01,
-   "guessed": 78,
+   "guessed": 79,
    "topFailures": [
     "rooms 16, 25 and 33 at 360x640 run 9-18 px past the screen after the f",
     "on small beds the canvas keeps its tall paper below the board, so on a",
@@ -525,6 +525,15 @@
   },
   {
    "date": "2026-10-31",
+   "task": "grass crossword realistic grass",
+   "number": "86",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "on 6-7 packet family beds the result sheet page is 901 px at 390x844 (packet tray second row), unrelated to this change."
+  },
+  {
+   "date": "2026-10-31",
    "task": "boil as grief study and spin",
    "number": "",
    "executor": "claude-opus",
@@ -684,15 +693,6 @@
    "role": "design",
    "passed": "",
    "note": "exhausted, 180k tokens: at 320x568 the 7-row halls draw seats at about 37 px (44 at 360x640, 56 at 390). The brief's 568 px budget assumed a"
-  },
-  {
-   "date": "2026-10-30",
-   "task": "review long way round",
-   "number": "166",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "the payoff is hidden. When she leaves to warn the wrong shop (bell on the door, \"Gone to warn Herbs\"), the result sheet covers the board wit"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
