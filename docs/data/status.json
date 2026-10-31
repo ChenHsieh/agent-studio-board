@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-31T13:13:18+00:00",
+ "generated": "2026-10-31T13:17:17+00:00",
  "ops": {
-  "count": 2,
+  "count": 3,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -28,14 +28,14 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
+    "running": 3,
     "doneToday": 0,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "minutes": 240,
+    "estimateMinutes": 120
    }
   },
   "queued": 41,
-  "running": 2,
+  "running": 3,
   "doneToday": 0,
   "lanes": {
    "Codex": 1,
@@ -46,8 +46,8 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1780,
-  "estimatedFinish": "2026-11-01T15:53:18+00:00",
+  "minutesRemaining": 1840,
+  "estimatedFinish": "2026-11-01T15:57:17+00:00",
   "estimateMinutes": 1600
  },
  "lanes": [
@@ -66,10 +66,18 @@
    "since": null,
    "activity": null,
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P2NL11_share text and preview image",
+   "since": null,
+   "activity": null,
+   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 3,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
   "runs": 317,
@@ -5701,11 +5709,8 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 14.4,
-   "latestChange": {
-    "text": "No accidental zoom on phones:",
-    "at": "2026-10-25T01:44:59+00:00"
-   },
+   "costTotalUsd": 3.6,
+   "latestChange": null,
    "promo": null,
    "why": "Screenshots about rules drawn around places instead of their purpose.",
    "state": "gated",
@@ -5714,7 +5719,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 6
+    "daysInState": 8
    },
    "waitingOn": "none",
    "id": "drum-rule",
@@ -5737,8 +5742,8 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-10-22T20:26:22+00:00",
-   "lastChange": "2026-10-25T01:44:59+00:00",
+   "firstSeen": "2026-10-23T03:04:56+00:00",
+   "lastChange": "2026-10-23T03:04:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -5747,9 +5752,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
-    "totalUsdEst": 14.4
+    "earlierRounds": 0,
+    "earlierUsdEst": 0.0,
+    "totalUsdEst": 3.6
    },
    "tasks": [
     {
@@ -5776,32 +5781,7 @@
    "verdict": null,
    "needsYou": null,
    "inProgress": false,
-   "history": [
-    {
-     "at": "2026-10-25T01:44:59+00:00",
-     "ok": true,
-     "note": "No accidental zoom on phones:",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T22:46:20+00:00",
-     "ok": true,
-     "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T20:27:44+00:00",
-     "ok": true,
-     "note": "feat: Drum Rule starts from the game template",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T20:26:22+00:00",
-     "ok": true,
-     "note": "Initial commit",
-     "source": "main commit"
-    }
-   ]
+   "history": []
   },
   {
    "nextTask": null,
@@ -17076,12 +17056,12 @@
     "caption": "Twelve shelves of eyes and mouths: slide pieces until no face is left."
    },
    "why": "Photos of things that look back: jade fragments set as emoticons, a stared-at character, look-alike mascots, a potato with a grave face.",
-   "state": "shelved",
+   "state": "released",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
-    "reviseRound": 1,
+    "reviseRound": 0,
     "daysInState": 0
    },
    "waitingOn": "owner",
@@ -17097,9 +17077,9 @@
    "priorityNote": "Slide eyes and mouths until no face is left; placeholder shapes, 12 shelves",
    "shelfNote": "",
    "image": "promo/nobody-looking/first.jpg",
-   "released": false,
-   "releasedOn": null,
-   "releasedNote": "",
+   "released": true,
+   "releasedOn": "2026-10-31",
+   "releasedNote": "public-ready, still being refined",
    "whyExists": "Photos of objects that seem to look back inspired this. Faces appear where none were meant, and your moves erase them. Play to notice how easily we see eyes where there are none.",
    "archived": false,
    "archivedOn": null,
@@ -17240,9 +17220,9 @@
     "done": 19
    },
    "verdict": {
-    "date": "2026-10-23",
-    "verdict": "revise",
-    "note": "not at ship level yet; back to refining"
+    "date": "2026-10-31",
+    "verdict": "release",
+    "note": "public-ready, still being refined"
    },
    "needsYou": "One-screen check B (a swipe on the board must scroll the page) fails games whose board needs every drag, such as this one, Seal Carver, Fly Swarm and Nesting Scrap, even when the play page already fits the phone and has nothing to scroll. Four one-screen tasks are stopped on it. A 5-line change makes B pass when the page fits (it still fails when the page is taller than the screen); tested on the live pages: this game and Seal Carver go from fail to pass. Yes or no? Suggest: yes.",
    "inProgress": false,
