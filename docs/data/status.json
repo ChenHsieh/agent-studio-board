@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31T01:14:34+00:00",
+ "generated": "2026-10-31T01:17:04+00:00",
  "ops": {
   "count": 0,
   "notes": [],
@@ -16,23 +16,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 46,
+    "queued": 45,
     "running": 0,
     "doneToday": 4,
-    "minutes": 1840,
-    "estimateMinutes": 1840
+    "minutes": 1800,
+    "estimateMinutes": 1800
    },
    "Claude": {
     "queued": 1,
     "running": 2,
-    "doneToday": 34,
+    "doneToday": 35,
     "minutes": 180,
     "estimateMinutes": 90
    }
   },
-  "queued": 47,
+  "queued": 46,
   "running": 2,
-  "doneToday": 38,
+  "doneToday": 39,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,17 +42,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2020,
-  "estimatedFinish": "2026-11-01T07:54:34+00:00",
-  "estimateMinutes": 1840
+  "minutesRemaining": 1980,
+  "estimatedFinish": "2026-11-01T07:17:04+00:00",
+  "estimateMinutes": 1800
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "felt-years",
-   "task": "P1FY52_felt years call ui",
-   "since": "2026-10-30T18:36:19+00:00",
-   "activity": "2026-10-31T01:12:46+00:00",
+   "task": "P1FY53_felt years call visual",
+   "since": "2026-10-31T01:15:58+00:00",
+   "activity": "2026-10-31T01:16:49+00:00",
    "commit": null
   },
   {
@@ -68,8 +68,8 @@
  "claudeWorkers": 2,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
-  "runs": 309,
-  "usdEst": 1112.4,
+  "runs": 310,
+  "usdEst": 1116.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -143,7 +143,7 @@
   },
   {
    "day": "2026-10-30",
-   "changes": 18
+   "changes": 19
   }
  ],
  "houseRules": 25,
@@ -6550,11 +6550,11 @@
    ]
   },
   {
-   "nextTask": "Felt Years call: visual round, classy and consistent...",
-   "costTotalUsd": 73.22,
+   "nextTask": null,
+   "costTotalUsd": 76.82,
    "latestChange": {
-    "text": "feat: every move says what it will do; the first minute teaches the goodbye",
-    "at": "2026-10-31T01:12:46+00:00"
+    "text": "UI round: moves say what they will do with two-word reasons, Mia moves with closeness,...",
+    "at": "2026-10-31T01:15:54+00:00"
    },
    "promo": {
     "files": {
@@ -6572,7 +6572,7 @@
     "reviseRound": 1,
     "daysInState": 9
    },
-   "waitingOn": "felt years call ui",
+   "waitingOn": "felt years call visual",
    "id": "felt-years",
    "number": 98,
    "repo": "felt-years",
@@ -6594,40 +6594,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T23:11:23+00:00",
-   "lastChange": "2026-10-31T01:12:46+00:00",
+   "lastChange": "2026-10-31T01:16:49+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
-    "claudeRuns": 5,
+    "claudeRuns": 6,
     "apiRuns": 0,
     "codexTokens": 1015931,
     "codexUsdEst": 1.22,
-    "claudeUsdEst": 18.0,
+    "claudeUsdEst": 21.6,
     "earlierRounds": 15,
     "earlierUsdEst": 54.0,
-    "totalUsdEst": 73.22
+    "totalUsdEst": 76.82
    },
    "tasks": [
     {
-     "title": "P1FY52_felt years call ui",
+     "title": "P1FY53_felt years call visual",
      "state": "running",
      "worker": "Claude",
-     "plan": "Felt Years call: every button says what it will do and shows it at once; first minute; one screen, big text",
-     "since": "2026-10-30T18:36:19+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P1FY53_felt years call visual",
-     "state": "queued",
-     "worker": "Codex",
      "plan": "Felt Years call: visual round, classy and consistent drawn figures for Mia, Grandma and Mum",
-     "since": "2026-10-30T18:06:28+00:00",
+     "since": "2026-10-31T01:15:58+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -6649,6 +6635,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1FY51 felt-years \"The Call\" core: DONE (published)"
+    },
+    {
+     "title": "P1FY52_felt years call ui",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Felt Years call: every button says what it will do and shows it at once; first minute; one screen, big text",
+     "since": "2026-10-30T18:06:04+00:00",
+     "done": "2026-10-30T18:06:04+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1FY52 felt-years UI round on The Call: DONE (publish line at the end)"
     },
     {
      "title": "P2FS58_felt years one screen",
@@ -6722,10 +6722,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 11
+    "done": 12
    },
    "verdict": {
     "date": "2026-10-21",
@@ -6735,6 +6735,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-31T01:15:54+00:00",
+     "ok": true,
+     "note": "UI round: moves say what they will do with two-word reasons, Mia moves with closeness, memory rows, three-step first minute, reload keeps progress (P1FY52)",
+     "source": "board note"
+    },
     {
      "at": "2026-10-31T01:12:46+00:00",
      "ok": true,
@@ -6800,12 +6806,6 @@
      "ok": true,
      "note": "P1FY50 live : felt-year ribbons on the first card, waiting ribbons per person instead of jars, 3 first-step lessons, results say who waited how long, full zh parity, real title/share, local-midnight daily",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-21T08:47:55+00:00",
-     "ok": true,
-     "note": "feat: Felt Years explains itself: a child's year is long, a grandparent's is short",
-     "source": "main commit"
     }
    ]
   },
