@@ -207,12 +207,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 278,
+   "count": 279,
    "firstTimePass": 95,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 228,
+   "guessed": 229,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -615,6 +615,15 @@
   },
   {
    "date": "2026-10-30",
+   "task": "sockglass first minute polish",
+   "number": "73",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE. Sockglass main 775bb15. Play and toggles pinned to card bottom (Play bottom 808/844, 604/640, 532/568, en and zh-Hant); third how-to l"
+  },
+  {
+   "date": "2026-10-30",
    "task": "fix paid clapper after review",
    "number": "167",
    "executor": "claude-sonnet",
@@ -684,15 +693,6 @@
    "role": "build",
    "passed": "yes",
    "note": "the premise card before the round is 59 words (the playable gate's advisory A1 asks for 40); left as is, it was owner's story pass."
-  },
-  {
-   "date": "2026-10-30",
-   "task": "visual round",
-   "number": "",
-   "executor": "claude-opus",
-   "role": "build",
-   "passed": "yes",
-   "note": "first minute has no scripted fail-safe step; og.png preview still the old navy look; zh strings need owner's read (ZH-CHECK in design/STORY."
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."

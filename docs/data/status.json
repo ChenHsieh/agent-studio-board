@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-31T03:07:03+00:00",
+ "generated": "2026-10-31T03:10:06+00:00",
  "ops": {
-  "count": 1,
+  "count": 2,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 41,
-    "running": 0,
+    "queued": 40,
+    "running": 1,
     "doneToday": 4,
     "minutes": 1640,
     "estimateMinutes": 1640
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
-    "doneToday": 39,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "running": 1,
+    "doneToday": 40,
+    "minutes": 120,
+    "estimateMinutes": 60
    }
   },
-  "queued": 42,
+  "queued": 41,
   "running": 2,
-  "doneToday": 43,
+  "doneToday": 44,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1820,
-  "estimatedFinish": "2026-11-01T06:27:03+00:00",
+  "minutesRemaining": 1760,
+  "estimatedFinish": "2026-11-01T06:30:06+00:00",
   "estimateMinutes": 1640
  },
  "lanes": [
   {
-   "worker": "Claude",
-   "game": "sockglass",
-   "task": "P2SG05_sockglass first minute polish",
-   "since": "2026-10-31T02:50:17+00:00",
-   "activity": "2026-10-31T03:04:35+00:00",
+   "worker": "Codex",
+   "game": "still-a-heap",
+   "task": "heap board fill and short card",
+   "since": "2026-10-31T03:09:28+00:00",
+   "activity": "2026-10-31T03:09:28+00:00",
    "commit": null
   },
   {
@@ -64,16 +64,16 @@
    "game": "slice-and-bake",
    "task": "P3SB55_slice and bake small phone fold",
    "since": "2026-10-31T02:57:20+00:00",
-   "activity": "2026-10-31T03:06:36+00:00",
+   "activity": "2026-10-31T03:08:06+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
-  "runs": 314,
-  "usdEst": 1130.4,
+  "runs": 315,
+  "usdEst": 1134.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -147,7 +147,7 @@
   },
   {
    "day": "2026-10-30",
-   "changes": 23
+   "changes": 24
   }
  ],
  "houseRules": 25,
@@ -17895,10 +17895,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 7.42,
+   "costTotalUsd": 32.62,
    "latestChange": {
-    "text": "feat: teach the valleys in the first minute",
-    "at": "2026-10-22T21:00:12+00:00"
+    "text": "One screen on phones: port_onescreen (kit 2) (P2FS04)",
+    "at": "2026-10-25T09:16:25+00:00"
    },
    "promo": {
     "files": {
@@ -17941,7 +17941,7 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-10-21T20:20:07+00:00",
+   "firstSeen": "2026-10-21T19:48:04+00:00",
    "lastChange": "2026-10-25T09:57:02+00:00",
    "cost": {
     "apiUsd": 0.0,
@@ -17951,9 +17951,9 @@
     "codexTokens": 186626,
     "codexUsdEst": 0.22,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 0,
-    "earlierUsdEst": 0.0,
-    "totalUsdEst": 7.42
+    "earlierRounds": 7,
+    "earlierUsdEst": 25.2,
+    "totalUsdEst": 32.62
    },
    "tasks": [
     {
@@ -18010,16 +18010,64 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-10-25T09:16:25+00:00",
+     "ok": true,
+     "note": "One screen on phones: port_onescreen (kit 2) (P2FS04)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T01:40:54+00:00",
+     "ok": true,
+     "note": "No accidental zoom on phones:",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-24T22:39:53+00:00",
+     "ok": true,
+     "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-22T21:22:27+00:00",
+     "ok": true,
+     "note": "P3OR14_one-script-engine-test: WORKDIR",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-22T21:00:12+00:00",
      "ok": true,
      "note": "feat: teach the valleys in the first minute",
      "source": "board note"
     },
     {
+     "at": "2026-10-22T20:59:48+00:00",
+     "ok": true,
+     "note": "feat: teach the valleys in the first minute",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-21T20:20:07+00:00",
      "ok": true,
      "note": "P2HR03 prototype live; 8 maps, par by exact solver; greedy force bot loses 2+ shelves on 6 of 8; share card kit default",
      "source": "board note"
+    },
+    {
+     "at": "2026-10-21T20:18:55+00:00",
+     "ok": true,
+     "note": "feat: One Script prototype, eight maps",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-21T19:49:27+00:00",
+     "ok": true,
+     "note": "feat: One Script starts from the game template",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-21T19:48:04+00:00",
+     "ok": true,
+     "note": "Initial commit",
+     "source": "main commit"
     }
    ]
   },
@@ -25432,7 +25480,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T21:41:27+00:00",
-   "lastChange": "2026-10-31T03:06:36+00:00",
+   "lastChange": "2026-10-31T03:08:06+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -25815,10 +25863,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 61.41,
+   "costTotalUsd": 65.01,
    "latestChange": {
-    "text": "fix: the full star is reachable by touch; the win card says how many drags went over the...",
-    "at": "2026-10-30T19:08:58+00:00"
+    "text": "first-visit card keeps Play in view, pegs how-to line, nine pegs fit (P2SG05)",
+    "at": "2026-10-31T03:09:21+00:00"
    },
    "promo": {
     "files": {
@@ -25831,21 +25879,21 @@
    "why": "A viral flyer for a youth group's show-and-tell night of cute small things and treasured socks.",
    "state": "ship",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "sockglass first minute polish",
+   "waitingOn": "owner",
    "id": "sockglass",
    "number": 73,
    "repo": "sockglass",
    "title": "Sockglass",
    "line": "Drag tissue-paper socks onto a dark bedroom window; where.",
    "url": "https://chenhsieh.github.io/sockglass/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Make sock sizes and counts readable and let the theme",
    "shelfNote": "",
@@ -25859,33 +25907,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:35:59+00:00",
-   "lastChange": "2026-10-31T03:04:35+00:00",
+   "lastChange": "2026-10-31T03:09:21+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 11,
+    "claudeRuns": 12,
     "apiRuns": 0,
     "codexTokens": 170850,
     "codexUsdEst": 0.21,
-    "claudeUsdEst": 39.6,
+    "claudeUsdEst": 43.2,
     "earlierRounds": 6,
     "earlierUsdEst": 21.6,
-    "totalUsdEst": 61.41
+    "totalUsdEst": 65.01
    },
    "tasks": [
     {
      "title": "P2SG05_sockglass first minute polish",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Sockglass: Play button on the first card always visible, one line that explains pegs, all pegs fit on the line",
-     "since": "2026-10-31T02:50:17+00:00",
-     "done": null,
+     "since": "2026-10-30T19:20:51+00:00",
+     "done": "2026-10-30T19:20:51+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE. Sockglass main . Play and toggles pinned to card bottom (Play bottom 808/844, 604/640, 532/568, en and zh-Hant); third how-to line (en+zh) added; peg row compresses so 9 pegs sit inside the 360 canvas (level 8..."
     },
     {
      "title": "P1SG03_sockglass touch pegs",
@@ -25988,9 +26036,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 12
+    "done": 13
    },
    "verdict": {
     "date": "2026-10-30",
@@ -25998,8 +26046,14 @@
     "note": "The full star is now reachable by touch on every level and the daily, the win card counts drags over the pegs honestly, and hanging each sock on its own picture still clears none of levels 4 to 8"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-31T03:09:21+00:00",
+     "ok": true,
+     "note": "first-visit card keeps Play in view, pegs how-to line, nine pegs fit (P2SG05)",
+     "source": "board note"
+    },
     {
      "at": "2026-10-30T19:08:58+00:00",
      "ok": true,
@@ -26064,12 +26118,6 @@
      "at": "2026-10-24T16:30:48+00:00",
      "ok": true,
      "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T12:45:59+00:00",
-     "ok": true,
-     "note": "Sockglass levels 4-6 and the generated windows now need a real choice; small-phone fit",
      "source": "main commit"
     }
    ]
@@ -26820,7 +26868,7 @@
    ]
   },
   {
-   "nextTask": "heap board fill and short card",
+   "nextTask": null,
    "costTotalUsd": 18.43,
    "latestChange": {
     "text": "P2n116_heap-board-fill-and-short-card handed to Claude: Codex quota ran out;",
@@ -26843,7 +26891,7 @@
    "title": "Still A Heap",
    "line": "",
    "url": "https://chenhsieh.github.io/still-a-heap/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
@@ -26857,7 +26905,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:59:53+00:00",
-   "lastChange": "2026-10-30T17:04:07+00:00",
+   "lastChange": "2026-10-31T03:09:28+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -26873,10 +26921,10 @@
    "tasks": [
     {
      "title": "heap board fill and short card",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "",
-     "since": "2026-10-30T17:04:07+00:00",
+     "since": "2026-10-31T03:09:28+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -26901,8 +26949,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
