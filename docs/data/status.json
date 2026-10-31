@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-31T14:20:24+00:00",
+ "generated": "2026-10-31T14:23:21+00:00",
  "ops": {
-  "count": 5,
+  "count": 4,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,22 +20,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 41,
+    "queued": 40,
     "running": 0,
     "doneToday": 0,
-    "minutes": 1640,
-    "estimateMinutes": 1640
+    "minutes": 1600,
+    "estimateMinutes": 1600
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 3,
     "doneToday": 5,
-    "minutes": 120,
-    "estimateMinutes": 60
+    "minutes": 240,
+    "estimateMinutes": 120
    }
   },
-  "queued": 42,
-  "running": 1,
+  "queued": 41,
+  "running": 3,
   "doneToday": 5,
   "lanes": {
    "Codex": 1,
@@ -46,11 +46,19 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1760,
-  "estimatedFinish": "2026-11-01T17:40:24+00:00",
-  "estimateMinutes": 1640
+  "minutesRemaining": 1840,
+  "estimatedFinish": "2026-11-01T17:03:21+00:00",
+  "estimateMinutes": 1600
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "grass-crossword",
+   "task": "P1GRX01_grass crossword finer grass garden",
+   "since": "2026-10-31T14:23:20+00:00",
+   "activity": "2026-10-31T14:23:20+00:00",
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "Multiple games",
@@ -58,10 +66,18 @@
    "since": null,
    "activity": null,
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P1TM09_geometric cast exposure story",
+   "since": null,
+   "activity": null,
+   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 3,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
   "runs": 321,
@@ -9771,13 +9787,13 @@
     "caption": "A crossword dug into a garden bed, where every answer is."
    },
    "why": "A conceptual artwork from 2002: a newspaper crossword with every square green and every answer written as GRASS.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 0
+    "daysInState": 11
    },
    "waitingOn": "owner",
    "id": "grass-crossword",
@@ -9786,8 +9802,8 @@
    "title": "Grass Crossword",
    "line": "A crossword dug into a garden bed, where every answer is.",
    "url": "https://chenhsieh.github.io/grass-crossword/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "nearly ready; newspaper look, plain Share, a daily that is a new puzzle each...",
    "shelfNote": "",
@@ -9805,7 +9821,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:41:42+00:00",
-   "lastChange": "2026-10-31T13:37:44+00:00",
+   "lastChange": "2026-10-31T14:23:20+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
@@ -9819,6 +9835,20 @@
     "totalUsdEst": 69.92
    },
    "tasks": [
+    {
+     "title": "P1GRX01_grass crossword finer grass garden",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Finer grass, an admire view, and a realistic garden around the grid",
+     "since": "2026-10-31T14:23:20+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1FS10_grass crossword one screen",
      "state": "done",
@@ -9916,25 +9946,11 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "feat: Grass Crossword shares its own preview and plants by two taps"
-    },
-    {
-     "title": "grass crossword drag preview logic",
-     "state": "done",
-     "worker": "Claude API",
-     "plan": "Grass Crossword: make the drag preview plant exactly what it shows, rebuild the grass family levels as real crosswords, thumb-sized answers.",
-     "since": "2026-10-20T20:06:59+00:00",
-     "done": "2026-10-20T20:06:59+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Grass Crossword: live https://chenhsieh.github.io/grass-crossword/ (main , rollback tag pre-drag-logic-; live bytes of shell/rules/draw/css/html match; live level 17 loads with 5 answers, no console errors, own logo..."
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 17
    },
@@ -9944,7 +9960,7 @@
     "note": "Harder levels not intuitive; drag preview inconsistent"
    },
    "needsYou": "The credit links the artist's Instagram profile because the exact post address is unknown. Suggest: keep the profile link until the post is found.",
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-31T13:37:44+00:00",
