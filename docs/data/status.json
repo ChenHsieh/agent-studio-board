@@ -1,11 +1,15 @@
 {
- "generated": "2026-10-31T02:49:01+00:00",
+ "generated": "2026-10-31T02:52:10+00:00",
  "ops": {
-  "count": 0,
-  "notes": [],
+  "count": 1,
+  "notes": [
+   "A game changed in the last hour with no claimed task on it."
+  ],
   "info": []
  },
- "about": [],
+ "about": [
+  "A game changed in the last hour with no claimed task on it."
+ ],
  "project": {
   "name": "Game studio",
   "noun": "game",
@@ -16,39 +20,48 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 43,
+    "queued": 42,
     "running": 0,
     "doneToday": 4,
-    "minutes": 1720,
-    "estimateMinutes": 1720
+    "minutes": 1680,
+    "estimateMinutes": 1680
    },
    "Claude": {
     "queued": 1,
-    "running": 0,
+    "running": 1,
     "doneToday": 39,
-    "minutes": 60,
+    "minutes": 120,
     "estimateMinutes": 60
    }
   },
-  "queued": 44,
-  "running": 0,
+  "queued": 43,
+  "running": 1,
   "doneToday": 43,
   "lanes": {
    "Codex": 1,
-   "Claude": 1
+   "Claude": 2
   },
   "laneCap": {
    "Claude": 2,
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1780,
-  "estimatedFinish": "2026-11-01T07:29:01+00:00",
-  "estimateMinutes": 1720
+  "minutesRemaining": 1800,
+  "estimatedFinish": "2026-11-01T06:52:10+00:00",
+  "estimateMinutes": 1680
  },
- "lanes": [],
+ "lanes": [
+  {
+   "worker": "Claude",
+   "game": "sockglass",
+   "task": "P2SG05_sockglass first minute polish",
+   "since": "2026-10-31T02:50:17+00:00",
+   "activity": "2026-10-31T02:51:50+00:00",
+   "commit": null
+  }
+ ],
  "codexLanes": 0,
- "claudeWorkers": 0,
+ "claudeWorkers": 1,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
   "runs": 314,
@@ -7005,7 +7018,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 5
+    "daysInState": 6
    },
    "waitingOn": "none",
    "id": "floor-area",
@@ -21917,7 +21930,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 5
+    "daysInState": 6
    },
    "waitingOn": "none",
    "id": "rna-hero",
@@ -25793,7 +25806,7 @@
    ]
   },
   {
-   "nextTask": "Sockglass: Play button on the first card always...",
+   "nextTask": null,
    "costTotalUsd": 61.41,
    "latestChange": {
     "text": "fix: the full star is reachable by touch; the win card says how many drags went over the...",
@@ -25823,8 +25836,8 @@
    "title": "Sockglass",
    "line": "Drag tissue-paper socks onto a dark bedroom window; where.",
    "url": "https://chenhsieh.github.io/sockglass/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Make sock sizes and counts readable and let the theme",
    "shelfNote": "",
@@ -25838,7 +25851,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:35:59+00:00",
-   "lastChange": "2026-10-30T19:20:51+00:00",
+   "lastChange": "2026-10-31T02:51:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -25854,10 +25867,10 @@
    "tasks": [
     {
      "title": "P2SG05_sockglass first minute polish",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Sockglass: Play button on the first card always visible, one line that explains pegs, all pegs fit on the line",
-     "since": "2026-10-30T19:20:51+00:00",
+     "since": "2026-10-31T02:50:17+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -25966,8 +25979,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 12
    },
