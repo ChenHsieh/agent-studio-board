@@ -1,11 +1,15 @@
 {
- "generated": "2026-10-31T01:33:50+00:00",
+ "generated": "2026-10-31T01:36:19+00:00",
  "ops": {
-  "count": 0,
-  "notes": [],
+  "count": 1,
+  "notes": [
+   "A game changed in the last hour with no claimed task on it."
+  ],
   "info": []
  },
- "about": [],
+ "about": [
+  "A game changed in the last hour with no claimed task on it."
+ ],
  "project": {
   "name": "Game studio",
   "noun": "game",
@@ -24,15 +28,15 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
-    "doneToday": 35,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "running": 1,
+    "doneToday": 36,
+    "minutes": 120,
+    "estimateMinutes": 60
    }
   },
   "queued": 46,
-  "running": 2,
-  "doneToday": 39,
+  "running": 1,
+  "doneToday": 40,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -42,34 +46,26 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1980,
-  "estimatedFinish": "2026-11-01T07:33:50+00:00",
+  "minutesRemaining": 1920,
+  "estimatedFinish": "2026-11-01T07:36:19+00:00",
   "estimateMinutes": 1800
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "felt-years",
-   "task": "P1FY53_felt years call visual",
-   "since": "2026-10-31T01:15:58+00:00",
-   "activity": "2026-10-31T01:31:09+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
    "game": "nobody-looking",
    "task": "P1NL08_night street roll section",
    "since": "2026-10-30T19:40:18+00:00",
-   "activity": "2026-10-30T19:46:44+00:00",
+   "activity": "2026-10-31T01:36:02+00:00",
    "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
-  "runs": 310,
-  "usdEst": 1116.0,
+  "runs": 311,
+  "usdEst": 1119.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -143,7 +139,7 @@
   },
   {
    "day": "2026-10-30",
-   "changes": 19
+   "changes": 20
   }
  ],
  "houseRules": 25,
@@ -6551,10 +6547,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 76.82,
+   "costTotalUsd": 80.42,
    "latestChange": {
-    "text": "UI round: moves say what they will do with two-word reasons, Mia moves with closeness,...",
-    "at": "2026-10-31T01:15:54+00:00"
+    "text": "Visual round: two hands (Grandma in pen on ruled paper, Mia in teal+pink riso), model...",
+    "at": "2026-10-31T01:34:43+00:00"
    },
    "promo": {
     "files": {
@@ -6564,23 +6560,23 @@
     "caption": "Felt Years is a quiet solo puzzle about a goat whose life."
    },
    "why": "A handwritten derivation that life's felt midpoint is about 18 if felt time runs as dx/x, plus a log-time ruler post.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 9
+    "daysInState": 0
    },
-   "waitingOn": "felt years call visual",
+   "waitingOn": "none",
    "id": "felt-years",
    "number": 98,
    "repo": "felt-years",
    "title": "Felt Years",
    "line": "Felt Years is a quiet solo puzzle about a goat whose life.",
    "url": "https://chenhsieh.github.io/felt-years/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "A story for the proportional-time idea, a stated goal",
    "shelfNote": "",
@@ -6594,34 +6590,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T23:11:23+00:00",
-   "lastChange": "2026-10-31T01:31:09+00:00",
+   "lastChange": "2026-10-31T01:34:43+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
-    "claudeRuns": 6,
+    "claudeRuns": 7,
     "apiRuns": 0,
     "codexTokens": 1015931,
     "codexUsdEst": 1.22,
-    "claudeUsdEst": 21.6,
+    "claudeUsdEst": 25.2,
     "earlierRounds": 15,
     "earlierUsdEst": 54.0,
-    "totalUsdEst": 76.82
+    "totalUsdEst": 80.42
    },
    "tasks": [
-    {
-     "title": "P1FY53_felt years call visual",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Felt Years call: visual round, classy and consistent drawn figures for Mia, Grandma and Mum",
-     "since": "2026-10-31T01:15:58+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P1FY51_felt years call core",
      "state": "done",
@@ -6635,6 +6617,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1FY51 felt-years \"The Call\" core: DONE (published)"
+    },
+    {
+     "title": "P1FY53_felt years call visual",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Felt Years call: visual round, classy and consistent drawn figures for Mia, Grandma and Mum",
+     "since": "2026-10-30T18:06:28+00:00",
+     "done": "2026-10-30T18:06:28+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1FY53 felt-years visual round: DONE (published)"
     },
     {
      "title": "P1FY52_felt years call ui",
@@ -6723,9 +6719,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 12
+    "done": 13
    },
    "verdict": {
     "date": "2026-10-21",
@@ -6733,8 +6729,14 @@
     "note": "Cannot understand it: needs a plain first minute"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-31T01:34:43+00:00",
+     "ok": true,
+     "note": "Visual round: two hands (Grandma in pen on ruled paper, Mia in teal+pink riso), model sheet, figures everywhere (P1FY53)",
+     "source": "board note"
+    },
     {
      "at": "2026-10-31T01:15:54+00:00",
      "ok": true,
@@ -6800,12 +6802,6 @@
      "ok": true,
      "note": "feat: show Felt Years in link previews",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T08:51:18+00:00",
-     "ok": true,
-     "note": "P1FY50 live : felt-year ribbons on the first card, waiting ribbons per person instead of jars, 3 first-step lessons, results say who waited how long, full zh parity, real title/share, local-midnight daily",
-     "source": "board note"
     }
    ]
   },
@@ -16926,7 +16922,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 5
+    "daysInState": 6
    },
    "waitingOn": "none",
    "id": "no-unison",
@@ -17172,7 +17168,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T17:56:06+00:00",
-   "lastChange": "2026-10-30T19:46:44+00:00",
+   "lastChange": "2026-10-31T01:36:02+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -25258,7 +25254,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 5
+    "daysInState": 6
    },
    "waitingOn": "none",
    "id": "silent-disco",
