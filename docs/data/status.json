@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31T01:51:55+00:00",
+ "generated": "2026-10-31T01:54:31+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,23 +20,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 45,
+    "queued": 44,
     "running": 0,
     "doneToday": 4,
-    "minutes": 1800,
-    "estimateMinutes": 1800
+    "minutes": 1760,
+    "estimateMinutes": 1760
    },
    "Claude": {
     "queued": 1,
     "running": 1,
-    "doneToday": 36,
+    "doneToday": 37,
     "minutes": 120,
     "estimateMinutes": 60
    }
   },
-  "queued": 46,
+  "queued": 45,
   "running": 1,
-  "doneToday": 40,
+  "doneToday": 41,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1920,
-  "estimatedFinish": "2026-11-01T07:51:55+00:00",
-  "estimateMinutes": 1800
+  "minutesRemaining": 1880,
+  "estimatedFinish": "2026-11-01T07:14:31+00:00",
+  "estimateMinutes": 1760
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "nobody-looking",
-   "task": "P1NL08_night street roll section",
-   "since": "2026-10-30T19:40:18+00:00",
-   "activity": "2026-10-31T01:51:51+00:00",
+   "task": "P1NL09_garden court grow section",
+   "since": "2026-10-31T01:53:41+00:00",
+   "activity": "2026-10-31T01:54:22+00:00",
    "commit": null
   }
  ],
@@ -64,8 +64,8 @@
  "claudeWorkers": 1,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
-  "runs": 311,
-  "usdEst": 1119.6,
+  "runs": 312,
+  "usdEst": 1123.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -139,7 +139,7 @@
   },
   {
    "day": "2026-10-30",
-   "changes": 20
+   "changes": 21
   }
  ],
  "houseRules": 25,
@@ -3482,7 +3482,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 5
+    "daysInState": 6
    },
    "waitingOn": "none",
    "id": "connectle",
@@ -6738,6 +6738,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-10-31T01:31:09+00:00",
+     "ok": true,
+     "note": "feat: two hands draw the same call (Grandma in pen, Mia in riso)",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-31T01:15:54+00:00",
      "ok": true,
      "note": "UI round: moves say what they will do with two-word reasons, Mia moves with closeness, memory rows, three-step first minute, reload keeps progress (P1FY52)",
@@ -6796,12 +6802,6 @@
      "ok": true,
      "note": "feat: show Felt Years in link previews",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-21T16:59:18+00:00",
-     "ok": true,
-     "note": "feat: show Felt Years in link previews",
-     "source": "main commit"
     }
    ]
   },
@@ -17124,11 +17124,11 @@
    ]
   },
   {
-   "nextTask": "Nobody Looking: build the garden court, where buds...",
-   "costTotalUsd": 79.46,
+   "nextTask": "Nobody Looking: build the instrument room, where smiling...",
+   "costTotalUsd": 83.06,
    "latestChange": {
-    "text": "P1NL07: night round look (flash prints, red-eye), story lines EN+zh, galleries named,...",
-    "at": "2026-10-30T19:38:32+00:00"
+    "text": "P1NL08: Street 1-8 (roll) live; Undo stays on screen at 320x568",
+    "at": "2026-10-31T01:53:36+00:00"
    },
    "promo": {
     "files": {
@@ -17168,40 +17168,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T17:56:06+00:00",
-   "lastChange": "2026-10-31T01:51:51+00:00",
+   "lastChange": "2026-10-31T01:54:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 15,
+    "claudeRuns": 16,
     "apiRuns": 0,
     "codexTokens": 215851,
     "codexUsdEst": 0.26,
-    "claudeUsdEst": 54.0,
+    "claudeUsdEst": 57.6,
     "earlierRounds": 7,
     "earlierUsdEst": 25.2,
-    "totalUsdEst": 79.46
+    "totalUsdEst": 83.06
    },
    "tasks": [
     {
-     "title": "P1NL08_night street roll section",
+     "title": "P1NL09_garden court grow section",
      "state": "running",
      "worker": "Claude",
-     "plan": "Nobody Looking: build the night street gallery, where cars keep rolling until something stops them",
-     "since": "2026-10-30T19:40:18+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P1NL09_garden court grow section",
-     "state": "queued",
-     "worker": "Codex",
      "plan": "Nobody Looking: build the garden court, where buds open into eyes after a few moves",
-     "since": "2026-10-30T18:54:42+00:00",
+     "since": "2026-10-31T01:53:41+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -17223,6 +17209,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P1NL08_night street roll section",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Nobody Looking: build the night street gallery, where cars keep rolling until something stops them",
+     "since": "2026-10-30T19:38:17+00:00",
+     "done": "2026-10-30T19:38:17+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P1NL08 night street (ROLL) + 320x568 Undo fix: DONE, live at https://chenhsieh.github.io/nobody-looking/ (main , tag pre-nl-street)"
     },
     {
      "title": "P1NL04_journey fix after first minute",
@@ -17296,10 +17296,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 1,
     "running": 1,
     "waitingDesign": 0,
-    "done": 16
+    "done": 17
    },
    "verdict": {
     "date": "2026-10-23",
@@ -17309,6 +17309,12 @@
    "needsYou": "One-screen check B (a swipe on the board must scroll the page) fails games whose board needs every drag, such as this one, Seal Carver, Fly Swarm and Nesting Scrap, even when the play page already fits the phone and has nothing to scroll. Four one-screen tasks are stopped on it. A 5-line change makes B pass when the page fits (it still fails when the page is taller than the screen); tested on the live pages: this game and Seal Carver go from fail to pass. Yes or no? Suggest: yes.",
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-10-31T01:53:36+00:00",
+     "ok": true,
+     "note": "P1NL08: Street 1-8 (roll) live; Undo stays on screen at 320x568",
+     "source": "board note"
+    },
     {
      "at": "2026-10-30T19:38:32+00:00",
      "ok": true,
@@ -17373,12 +17379,6 @@
      "at": "2026-10-25T01:43:12+00:00",
      "ok": true,
      "note": "No accidental zoom on phones:",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T23:11:25+00:00",
-     "ok": true,
-     "note": "Daily and later endless boards come from a hard bank of 71 boards (P1NL03)",
      "source": "main commit"
     }
    ]
@@ -24838,7 +24838,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 5
+    "daysInState": 6
    },
    "waitingOn": "none",
    "id": "sigil-wheel",
