@@ -207,12 +207,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 279,
+   "count": 280,
    "firstTimePass": 95,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 229,
+   "guessed": 230,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -451,10 +451,10 @@
   {
    "executor": "codex gpt-6-sol xhigh",
    "role": "build",
-   "count": 40,
+   "count": 41,
    "firstTimePass": 88,
    "retries": 14,
-   "medianMinutes": 25.0,
+   "medianMinutes": 25,
    "costPerPass": null,
    "guessed": 0,
    "topFailures": [
@@ -514,6 +514,15 @@
   }
  ],
  "last": [
+  {
+   "date": "2026-10-30",
+   "task": "slice and bake small phone fold",
+   "number": "34",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE. slice-and-bake main c09b3f0. @media (max-height:600px) spacing: bake row bottom en max 541, zh max 536 at 320x568 (was 557-583 / 578);"
+  },
   {
    "date": "2026-10-30",
    "task": "stroke tops save test",
@@ -615,6 +624,15 @@
   },
   {
    "date": "2026-10-30",
+   "task": "heap board fill and short card",
+   "number": "",
+   "executor": "codex gpt-6-sol xhigh",
+   "role": "build",
+   "passed": "",
+   "note": "exhausted, 142k tokens: DONE (resumed Codex WIP). still-a-heap main 5ec58d3. Plate fills width; 9-column plates widen to keep 44 px columns "
+  },
+  {
+   "date": "2026-10-30",
    "task": "sockglass first minute polish",
    "number": "73",
    "executor": "claude-sonnet",
@@ -675,24 +693,6 @@
    "role": "build",
    "passed": "yes",
    "note": "the page only fails because of the first-run lesson. Measured (360x640): 647/640 without the lesson (passes, within 8 px), 838/640 with the "
-  },
-  {
-   "date": "2026-10-30",
-   "task": "seal carver one screen",
-   "number": "80",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "seal-carver now fits the screen in play (C passes: 640/640 at 360x640 where it was 1.09x, 844/844 at 390x844, 568/568 at 320x568), live on m"
-  },
-  {
-   "date": "2026-10-30",
-   "task": "sockglass first minute",
-   "number": "73",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "the premise card before the round is 59 words (the playable gate's advisory A1 asks for 40); left as is, it was owner's story pass."
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
