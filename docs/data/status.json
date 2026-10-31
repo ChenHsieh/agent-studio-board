@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31T15:09:43+00:00",
+ "generated": "2026-10-31T15:12:31+00:00",
  "ops": {
   "count": 3,
   "notes": [
@@ -28,15 +28,15 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 2,
-    "doneToday": 8,
-    "minutes": 180,
-    "estimateMinutes": 90
+    "running": 1,
+    "doneToday": 9,
+    "minutes": 120,
+    "estimateMinutes": 60
    }
   },
   "queued": 45,
-  "running": 2,
-  "doneToday": 8,
+  "running": 1,
+  "doneToday": 9,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,19 +46,11 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1940,
-  "estimatedFinish": "2026-11-01T20:29:43+00:00",
+  "minutesRemaining": 1880,
+  "estimatedFinish": "2026-11-01T20:32:31+00:00",
   "estimateMinutes": 1760
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "grass-crossword",
-   "task": "P1GRX01_grass crossword finer grass garden",
-   "since": "2026-10-31T14:23:20+00:00",
-   "activity": "2026-10-31T15:09:43+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "Multiple games",
@@ -69,11 +61,11 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 2,
+ "claudeWorkers": 1,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
-  "runs": 324,
-  "usdEst": 1166.4,
+  "runs": 325,
+  "usdEst": 1170.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -151,7 +143,7 @@
   },
   {
    "day": "2026-10-31",
-   "changes": 5
+   "changes": 6
   }
  ],
  "houseRules": 25,
@@ -9765,10 +9757,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 69.92,
+   "costTotalUsd": 73.52,
    "latestChange": {
-    "text": "living grass clumps with wind sway, wildflowers on a finished page, emoji share row,...",
-    "at": "2026-10-31T13:37:44+00:00"
+    "text": "finer grass, meadow and concrete planter around the grid, admire view, og on meadow...",
+    "at": "2026-10-31T15:11:17+00:00"
    },
    "promo": {
     "files": {
@@ -9779,13 +9771,13 @@
     "caption": "A crossword dug into a garden bed, where every answer is."
    },
    "why": "A conceptual artwork from 2002: a newspaper crossword with every square green and every answer written as GRASS.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 11
+    "daysInState": 0
    },
    "waitingOn": "owner",
    "id": "grass-crossword",
@@ -9794,8 +9786,8 @@
    "title": "Grass Crossword",
    "line": "A crossword dug into a garden bed, where every answer is.",
    "url": "https://chenhsieh.github.io/grass-crossword/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "nearly ready; newspaper look, plain Share, a daily that is a new puzzle each...",
    "shelfNote": "",
@@ -9813,33 +9805,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:41:42+00:00",
-   "lastChange": "2026-10-31T15:09:43+00:00",
+   "lastChange": "2026-10-31T15:11:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 6,
-    "claudeRuns": 9,
+    "claudeRuns": 10,
     "apiRuns": 2,
     "codexTokens": 1267904,
     "codexUsdEst": 1.52,
-    "claudeUsdEst": 32.4,
+    "claudeUsdEst": 36.0,
     "earlierRounds": 10,
     "earlierUsdEst": 36.0,
-    "totalUsdEst": 69.92
+    "totalUsdEst": 73.52
    },
    "tasks": [
     {
      "title": "P1GRX01_grass crossword finer grass garden",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Finer grass, an admire view, and a realistic garden around the grid",
      "since": "2026-10-31T14:23:20+00:00",
-     "done": null,
+     "done": "2026-10-31T14:23:20+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P1GRX01 grass-crossword: DONE, live at https://chenhsieh.github.io/grass-crossword/ (main -> , tag pre-grass-garden; served draw.js, garden.js, look.css, og.png sha1 match)."
     },
     {
      "title": "P1FS10_grass crossword one screen",
@@ -9942,9 +9934,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 17
+    "done": 18
    },
    "verdict": {
     "date": "2026-10-20",
@@ -9952,8 +9944,14 @@
     "note": "Harder levels not intuitive; drag preview inconsistent"
    },
    "needsYou": "The credit links the artist's Instagram profile because the exact post address is unknown. Suggest: keep the profile link until the post is found.",
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-10-31T15:11:17+00:00",
+     "ok": true,
+     "note": "finer grass, meadow and concrete planter around the grid, admire view, og on meadow (P1GRX01)",
+     "source": "board note"
+    },
     {
      "at": "2026-10-31T13:37:44+00:00",
      "ok": true,
@@ -10013,12 +10011,6 @@
      "ok": true,
      "note": "start: P1GX02 visual round build",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T09:06:03+00:00",
-     "ok": true,
-     "note": "P1GX00: one Share button, daily is a generated bed from a 120-bed pool (never a shipped level), tap shows ghost then Plant, Rotate, hint on levels 1-3; live",
-     "source": "board note"
     }
    ]
   },
