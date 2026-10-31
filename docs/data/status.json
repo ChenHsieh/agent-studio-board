@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31T02:54:57+00:00",
+ "generated": "2026-10-31T02:57:40+00:00",
  "ops": {
   "count": 1,
   "notes": [
@@ -20,22 +20,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 42,
+    "queued": 41,
     "running": 0,
     "doneToday": 4,
-    "minutes": 1680,
-    "estimateMinutes": 1680
+    "minutes": 1640,
+    "estimateMinutes": 1640
    },
    "Claude": {
     "queued": 1,
-    "running": 1,
+    "running": 2,
     "doneToday": 39,
-    "minutes": 120,
-    "estimateMinutes": 60
+    "minutes": 180,
+    "estimateMinutes": 90
    }
   },
-  "queued": 43,
-  "running": 1,
+  "queued": 42,
+  "running": 2,
   "doneToday": 43,
   "lanes": {
    "Codex": 1,
@@ -46,9 +46,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1800,
-  "estimatedFinish": "2026-11-01T06:54:57+00:00",
-  "estimateMinutes": 1680
+  "minutesRemaining": 1820,
+  "estimatedFinish": "2026-11-01T06:17:40+00:00",
+  "estimateMinutes": 1640
  },
  "lanes": [
   {
@@ -58,10 +58,18 @@
    "since": "2026-10-31T02:50:17+00:00",
    "activity": "2026-10-31T02:51:50+00:00",
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "slice-and-bake",
+   "task": "P3SB55_slice and bake small phone fold",
+   "since": "2026-10-31T02:57:20+00:00",
+   "activity": "2026-10-31T02:57:20+00:00",
+   "commit": null
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 1,
+ "claudeWorkers": 2,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
   "runs": 314,
@@ -4244,7 +4252,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 5
+    "daysInState": 6
    },
    "waitingOn": "none",
    "id": "curve-shot",
@@ -7942,7 +7950,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 5
+    "daysInState": 6
    },
    "waitingOn": "none",
    "id": "fold-bot",
@@ -25386,7 +25394,7 @@
    ]
   },
   {
-   "nextTask": "Cut and bake stays on screen on a...",
+   "nextTask": null,
    "costTotalUsd": 76.09,
    "latestChange": {
     "text": "centred bake fix (test/centre.js 0.5 -> 0 cells), order-slip look, menu and tray round;...",
@@ -25409,8 +25417,8 @@
    "title": "Slice and Bake",
    "line": "Move dough before each cut to match the next slice.",
    "url": "https://chenhsieh.github.io/slice-and-bake/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Make cutting and adjusting legible; refresh the visual",
    "shelfNote": "",
@@ -25424,7 +25432,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T21:41:27+00:00",
-   "lastChange": "2026-10-30T18:52:10+00:00",
+   "lastChange": "2026-10-31T02:57:20+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -25440,10 +25448,10 @@
    "tasks": [
     {
      "title": "P3SB55_slice and bake small phone fold",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Cut and bake stays on screen on a small phone in Chinese",
-     "since": "2026-10-30T18:52:10+00:00",
+     "since": "2026-10-31T02:57:20+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -25552,8 +25560,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 11
    },
@@ -31046,7 +31054,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 5
+    "daysInState": 6
    },
    "waitingOn": "none",
    "id": "triop-game",
