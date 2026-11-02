@@ -1,5 +1,5 @@
 {
- "generated": 1793640407,
+ "generated": 1793641064,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -108,40 +108,6 @@
    "after": [],
    "priority": "P2",
    "why": "A panda meme zooming through an OK-sign and an eye out to the galaxy, and a meme shrinking an empire to two square metres.",
-   "state": "running",
-   "at": 1793640233,
-   "created": 1793640233
-  },
-  {
-   "id": "P2FS59_grub-band-one-screen",
-   "request": "grub-band: the whole game fits one phone screen and Next shows after a win",
-   "game": "Grub Band",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "A bio-art piece of mealworms on foam with contact microphones played through a controller, plus a radial audio visualiser.",
-   "state": "running",
-   "at": 1793640233,
-   "created": 1793640233
-  },
-  {
-   "id": "P2FS60_speaking-stone-one-screen",
-   "request": "speaking-stone: the whole game fits one phone screen and Next shows after a win",
-   "game": "Speaking Stone",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "Screenshots arguing over a proposed test that would measure polish instead of substance.",
    "state": "running",
    "at": 1793640233,
    "created": 1793640233
@@ -266,44 +232,6 @@
    "created": 1793640218
   },
   {
-   "id": "P2LR02_fix-long-way-round-after-review",
-   "request": "Long Way Round: apply the stranger review's fix list, Codex",
-   "game": "Long Way Round",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2LR01_review-long-way-round"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1793640233,
-   "created": 1793640233
-  },
-  {
-   "id": "P2SSP02_fix-same-spots-after-review",
-   "request": "Same Spots: apply the stranger review's fix list, Codex",
-   "game": "Same Spots",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2SSP01_review-same-spots"
-   ],
-   "priority": null,
-   "why": "A creature-design plate of an invented spotted beast, beside an ad with one bright seat among grey ones and a handbook chapter on disguise.",
-   "state": "running",
-   "at": 1793640233,
-   "created": 1793640233
-  },
-  {
    "id": "P2n88_watched-pot",
    "request": "look in the right places to grow the shape: build the core with placeholder shapes, then its first-minute round",
    "game": "Watched Pot",
@@ -394,6 +322,23 @@
    ],
    "priority": "P1",
    "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1793640233
+  },
+  {
+   "id": "P2FS60_speaking-stone-one-screen",
+   "request": "speaking-stone: the whole game fits one phone screen and Next shows after a win",
+   "game": "Speaking Stone",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "Screenshots arguing over a proposed test that would measure polish instead of substance.",
    "state": "ready",
    "waitingOn": [],
    "created": 1793640233
@@ -494,6 +439,25 @@
    "size": "studio",
    "estMinutes": null,
    "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1793640233
+  },
+  {
+   "id": "P2LR02_fix-long-way-round-after-review",
+   "request": "Long Way Round: apply the stranger review's fix list, Codex",
+   "game": "Long Way Round",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2LR01_review-long-way-round"
+   ],
    "priority": null,
    "why": "",
    "state": "ready",
@@ -753,6 +717,27 @@
    "created": 1793640233
   },
   {
+   "id": "P2SSP02_fix-same-spots-after-review",
+   "request": "Same Spots: apply the stranger review's fix list, Codex",
+   "game": "Same Spots",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2SSP01_review-same-spots"
+   ],
+   "priority": null,
+   "why": "A creature-design plate of an invented spotted beast, beside an ad with one bright seat among grey ones and a handbook chapter on disguise.",
+   "state": "waiting",
+   "waitingOn": [
+    "P2SSP01_review-same-spots"
+   ],
+   "created": 1793640233
+  },
+  {
    "id": "P2UX08_daily-brief-first-screen",
    "request": "Board opens on a daily brief with three decisions and their defaults",
    "game": "Studio",
@@ -862,6 +847,23 @@
     "P2n89_round-table",
     "P2n90_iron-window-garden"
    ],
+   "created": 1793640233
+  },
+  {
+   "id": "P2FS59_grub-band-one-screen",
+   "request": "grub-band: the whole game fits one phone screen and Next shows after a win",
+   "game": "Grub Band",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P2",
+   "why": "A bio-art piece of mealworms on foam with contact microphones played through a controller, plus a radial audio visualiser.",
+   "state": "done",
+   "at": 1793640233,
    "created": 1793640233
   }
  ]
