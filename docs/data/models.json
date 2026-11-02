@@ -384,10 +384,10 @@
   {
    "executor": "codex gpt-6-sol high",
    "role": "build",
-   "count": 46,
+   "count": 47,
    "firstTimePass": 78,
-   "retries": 29,
-   "medianMinutes": 16.0,
+   "retries": 30,
+   "medianMinutes": 16,
    "costPerPass": 0.0,
    "guessed": 0,
    "topFailures": [
@@ -552,6 +552,15 @@
   },
   {
    "date": "2026-11-02",
+   "task": "watched pot",
+   "number": "157",
+   "executor": "codex gpt-6-sol high",
+   "role": "build",
+   "passed": "",
+   "note": "exhausted, 173k tokens: at 320 px the HUD still wraps to two rows and the board sits left of centre with room unused below (kit layout; fix "
+  },
+  {
+   "date": "2026-11-02",
    "task": "grub band one screen",
    "number": "120",
    "executor": "claude-sonnet",
@@ -684,15 +693,6 @@
    "role": "build",
    "passed": "yes",
    "note": "the admire button can touch the end of a long goal line. The family result page still scrolls about 54 px at 390 (packet tray, pre-existing)"
-  },
-  {
-   "date": "2026-10-31",
-   "task": "grass crossword realistic grass",
-   "number": "86",
-   "executor": "claude-opus",
-   "role": "build",
-   "passed": "yes",
-   "note": "on 6-7 packet family beds the result sheet page is 901 px at 390x844 (packet tray second row), unrelated to this change."
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
