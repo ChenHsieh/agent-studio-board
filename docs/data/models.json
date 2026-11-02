@@ -141,12 +141,12 @@
   {
    "executor": "claude-opus",
    "role": "build",
-   "count": 92,
+   "count": 93,
    "firstTimePass": 97,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": 0.01,
-   "guessed": 87,
+   "guessed": 88,
    "topFailures": [
     "rooms 16, 25 and 33 at 360x640 run 9-18 px past the screen after the f",
     "on small beds the canvas keeps its tall paper below the board, so on a",
@@ -605,6 +605,15 @@
    "note": "DONE on branch, NOT PUBLISHED: merge2.sh to main was denied by the permission classifier (production deploy). Branch chen-onescreen-p2fs47 ("
   },
   {
+   "date": "2026-11-02",
+   "task": "sumo vs sumo collectibles",
+   "number": "",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "P1MH64 sumo-vs-sumo-collectibles: DONE, live at https://chenhsieh.github.io/mirror-hold/ (main 60e6cca, squash of chen-mh-sumo a03fa03; tag "
+  },
+  {
    "date": "2026-10-31",
    "task": "share text and preview image",
    "number": "",
@@ -684,15 +693,6 @@
    "role": "build",
    "passed": "yes",
    "note": "at phone size the oats and rye heads are pale and thin against the stone, so oats read as \"wispy grass\" more than oats until you zoom (admir"
-  },
-  {
-   "date": "2026-10-31",
-   "task": "grass crossword finer grass garden",
-   "number": "86",
-   "executor": "claude-opus",
-   "role": "build",
-   "passed": "yes",
-   "note": "the admire button can touch the end of a long goal line. The family result page still scrolls about 54 px at 390 (packet tray, pre-existing)"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
