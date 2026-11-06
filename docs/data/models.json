@@ -207,12 +207,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 302,
+   "count": 303,
    "firstTimePass": 95,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 252,
+   "guessed": 253,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -263,14 +263,14 @@
   {
    "executor": "claude-sonnet",
    "role": "review",
-   "count": 4,
+   "count": 5,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 4,
+   "guessed": 5,
    "topFailures": [],
-   "flag": ""
+   "flag": "give more"
   },
   {
    "executor": "codex gpt-5.6-luna medium",
@@ -384,10 +384,10 @@
   {
    "executor": "codex gpt-6-sol high",
    "role": "build",
-   "count": 51,
-   "firstTimePass": 78,
-   "retries": 30,
-   "medianMinutes": 18,
+   "count": 52,
+   "firstTimePass": 77,
+   "retries": 32,
+   "medianMinutes": 18.5,
    "costPerPass": 0.0,
    "guessed": 0,
    "topFailures": [
@@ -564,6 +564,15 @@
   },
   {
    "date": "2026-11-05",
+   "task": "tickets 15 17 fit 320",
+   "number": "",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE (live, main c9e3d2f, pre-tag pre-p3sb58). Slice and Bake tickets 15 and 17 at 320x568 on a first visit were 30 px over (page 598 of 568"
+  },
+  {
+   "date": "2026-11-05",
    "task": "glasshouse why build",
    "number": "3",
    "executor": "claude-sonnet",
@@ -645,6 +654,15 @@
   },
   {
    "date": "2026-11-05",
+   "task": "rolling back",
+   "number": "163",
+   "executor": "codex gpt-6-sol high",
+   "role": "build",
+   "passed": "partial",
+   "note": "built, 115k tokens: the tone is one placeholder pluck and the push is silent, so the whole game leans on a sound that is not designed yet (h"
+  },
+  {
+   "date": "2026-11-05",
    "task": "one umbrella",
    "number": "162",
    "executor": "codex gpt-6-sol high",
@@ -687,24 +705,6 @@
    "role": "review",
    "passed": "yes",
    "note": "the endless run-over sheet says \"Both home, wetter shoulder 10 of 10\" after a soak (title and share line are wrong for endless); also \"Wet 0"
-  },
-  {
-   "date": "2026-11-05",
-   "task": "daily brief first screen",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "design",
-   "passed": "yes",
-   "note": "P2UX08 daily-brief-first-screen: DONE, LIVE at https://chenhsieh.github.io/agent-studio-board/ (main 60ea386d, then data 2ef2c215 adds data/"
-  },
-  {
-   "date": "2026-11-05",
-   "task": "daily brief data",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "design",
-   "passed": "yes",
-   "note": "whether the cheap defaults should really go ahead on their own from 2026-11-09 (this is the design's rule; the board will show each date). O"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
