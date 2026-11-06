@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06T02:13:51+00:00",
+ "generated": "2026-11-06T02:24:41+00:00",
  "ops": {
   "count": 3,
   "notes": [
@@ -22,23 +22,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 3,
-    "running": 1,
-    "doneToday": 2,
-    "minutes": 160,
-    "estimateMinutes": 160
+    "queued": 2,
+    "running": 0,
+    "doneToday": 3,
+    "minutes": 80,
+    "estimateMinutes": 80
    },
    "Claude": {
     "queued": 1,
-    "running": 6,
+    "running": 7,
     "doneToday": 3,
-    "minutes": 420,
-    "estimateMinutes": 210
+    "minutes": 480,
+    "estimateMinutes": 240
    }
   },
-  "queued": 4,
+  "queued": 3,
   "running": 7,
-  "doneToday": 5,
+  "doneToday": 6,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -48,20 +48,28 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 580,
-  "estimatedFinish": "2026-11-06T05:43:51+00:00",
-  "estimateMinutes": 210
+  "minutesRemaining": 560,
+  "estimatedFinish": "2026-11-06T06:24:41+00:00",
+  "estimateMinutes": 240
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "ac-remote",
+   "task": "P2AC03_ac remote clarity",
+   "since": "2026-11-06T02:22:44+00:00",
+   "activity": "2026-11-06T02:22:50+00:00",
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "round-table",
    "task": "P2RT00_round table review fixes",
    "since": "2026-11-06T02:07:54+00:00",
-   "activity": "2026-11-06T02:07:58+00:00",
+   "activity": "2026-11-06T02:21:28+00:00",
    "commit": {
-    "at": "2026-11-06T02:07:58+00:00",
-    "subject": "start: P2RT00 round table review fixes"
+    "at": "2026-11-06T02:21:28+00:00",
+    "subject": "wip: round table harder levels, daily generator, icons outside seats, share dots"
    }
   },
   {
@@ -70,25 +78,6 @@
    "task": "P2SSP03_same spots clarity",
    "since": "2026-11-06T01:56:19+00:00",
    "activity": "2026-11-06T02:12:40+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Codex",
-   "game": "gold-star",
-   "task": "gold star preview and par",
-   "since": "2026-11-06T01:46:25+00:00",
-   "activity": "2026-11-06T02:13:40+00:00",
-   "commit": {
-    "at": "2026-11-06T02:10:31+00:00",
-    "subject": "wip: P2n119_gold-star-preview-and-par (Codex lane autosave 21:10)"
-   }
-  },
-  {
-   "worker": "Claude",
-   "game": "rolling-back",
-   "task": "rolling back",
-   "since": "2026-11-06T01:20:06+00:00",
-   "activity": "2026-11-06T02:12:18+00:00",
    "commit": null
   },
   {
@@ -124,12 +113,12 @@
    "commit": null
   }
  ],
- "codexLanes": 1,
+ "codexLanes": 0,
  "claudeWorkers": 7,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
-  "runs": 363,
-  "usdEst": 1306.8,
+  "runs": 364,
+  "usdEst": 1310.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -219,7 +208,7 @@
   },
   {
    "day": "2026-11-05",
-   "changes": 30
+   "changes": 32
   }
  ],
  "houseRules": 25,
@@ -425,7 +414,7 @@
    ]
   },
   {
-   "nextTask": "P2AC03_ac remote clarity",
+   "nextTask": "The AC Remote visual round: one office with...",
    "costTotalUsd": 21.6,
    "latestChange": {
     "text": "core live: readable mugs, hold to preview a swap, kit lesson, drawn preview, kit 21",
@@ -448,8 +437,8 @@
    "title": "Ac Remote",
    "line": "",
    "url": "https://chenhsieh.github.io/ac-remote/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -462,7 +451,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:13:24+00:00",
-   "lastChange": "2026-11-06T01:56:19+00:00",
+   "lastChange": "2026-11-06T02:22:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -478,10 +467,10 @@
    "tasks": [
     {
      "title": "P2AC03_ac remote clarity",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "",
-     "since": "2026-11-06T01:56:19+00:00",
+     "since": "2026-11-06T02:22:44+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -520,8 +509,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -5198,7 +5187,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 11
+    "daysInState": 12
    },
    "waitingOn": "none",
    "id": "do-what-you-think",
@@ -9762,30 +9751,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 21.6,
+   "costTotalUsd": 25.55,
    "latestChange": {
-    "text": "core live: hold a card to read every desk, first minute, drawn preview, kit 21",
-    "at": "2026-11-06T00:41:43+00:00"
+    "text": "feat: preview cards before posting and show par on wins",
+    "at": "2026-11-06T02:19:24+00:00"
    },
    "promo": null,
    "why": "A remix of Pigeon Salon and Morning Three: training a judge by rewards, turned round onto a class of eight.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
     "daysInState": 0
    },
-   "waitingOn": "gold star preview and par",
+   "waitingOn": "none",
    "id": "gold-star",
    "number": 164,
    "repo": "gold-star",
    "title": "Gold Star",
    "line": "",
    "url": "https://chenhsieh.github.io/gold-star/",
-   "stage": "building",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -9798,36 +9787,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:11:01+00:00",
-   "lastChange": "2026-11-06T02:13:40+00:00",
+   "lastChange": "2026-11-06T02:19:24+00:00",
    "cost": {
     "apiUsd": 0.0,
-    "codexRuns": 0,
+    "codexRuns": 1,
     "claudeRuns": 1,
     "apiRuns": 0,
-    "codexTokens": 0,
-    "codexUsdEst": 0.0,
+    "codexTokens": 291927,
+    "codexUsdEst": 0.35,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
-    "totalUsdEst": 21.6
+    "earlierRounds": 6,
+    "earlierUsdEst": 21.6,
+    "totalUsdEst": 25.55
    },
    "tasks": [
     {
      "title": "gold star preview and par",
-     "state": "running",
+     "state": "done",
      "worker": "Codex",
      "plan": "Gold Star fix: see every desk before posting (tap to look, tap again to post) and make par the headline",
      "since": "2026-11-06T01:46:25+00:00",
-     "done": null,
+     "done": "2026-11-06T01:46:25+00:00",
      "reviewed": false,
-     "minutes": null,
-     "tokens": null,
+     "minutes": 29,
+     "tokens": 291927,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-11-06T02:10:31+00:00",
-      "subject": "wip: P2n119_gold-star-preview-and-par (Codex lane autosave 21:10)"
-     },
-     "result": ""
+     "commit": null,
+     "result": "feat: preview cards before posting and show par on wins"
     },
     {
      "title": "gold star",
@@ -9846,9 +9832,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": {
     "date": "2026-11-06",
@@ -9856,8 +9842,20 @@
     "note": "Reaching the line is easy once you look ahead a day, and the stars are the real puzzle, but the only way to see a card before posting it is a hidden press and hold"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-06T02:19:24+00:00",
+     "ok": true,
+     "note": "feat: preview cards before posting and show par on wins",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-06T02:19:21+00:00",
+     "ok": true,
+     "note": "feat: preview cards before posting and show par on wins",
+     "source": "main commit"
+    },
     {
      "at": "2026-11-06T00:41:43+00:00",
      "ok": true,
@@ -22640,23 +22638,23 @@
    },
    "promo": null,
    "why": "A remix of Whiteboard Song and Not Yet through the myth of the stone that always rolls back down.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
     "daysInState": 0
    },
-   "waitingOn": "rolling back",
+   "waitingOn": "none",
    "id": "rolling-back",
    "number": 163,
    "repo": "rolling-back",
    "title": "Rolling Back",
    "line": "",
    "url": "https://chenhsieh.github.io/rolling-back/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -22673,36 +22671,36 @@
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 8,
-    "earlierUsdEst": 28.8,
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 7,
+    "earlierUsdEst": 25.2,
     "totalUsdEst": 28.8
    },
    "tasks": [
     {
      "title": "rolling back",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Push a stone up a hill note by note; it rolls back playing your climb backwards: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-11-06T01:20:06+00:00",
-     "done": null,
+     "since": "2026-11-06T01:19:15+00:00",
+     "done": "2026-11-06T01:19:15+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P2n94 Rolling Back (滾回來), lane L10 (Opus): core build + first-minute round + stranger review half."
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": {
     "date": "2026-11-06",
@@ -22710,7 +22708,7 @@
     "note": "The first roll back lands: your silent climb comes back as a tune; but the only sound is a placeholder pluck, \"never down\" is learned only by trying, and a scoreless toy has no bot gate; reviewer also built it"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-11-06T02:13:55+00:00",
@@ -23012,7 +23010,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:54:48+00:00",
-   "lastChange": "2026-11-06T02:07:58+00:00",
+   "lastChange": "2026-11-06T02:21:28+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -23038,8 +23036,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-11-06T02:07:58+00:00",
-      "subject": "start: P2RT00 round table review fixes"
+      "at": "2026-11-06T02:21:28+00:00",
+      "subject": "wip: round table harder levels, daily generator, icons outside seats, share dots"
      },
      "result": ""
     },
