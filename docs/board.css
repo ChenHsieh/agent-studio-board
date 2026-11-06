@@ -403,3 +403,35 @@ body.sheet-open { overflow: hidden; }
 .rgames { margin: 8px 0 0; padding-left: 20px; font-size: 16px; }
 .rgames[hidden] { display: none; }
 .rbar .q-done { background: #8f9b71; } .rbar .q-running { background: var(--accent); } .rbar .q-queued { background: #3c5a7a; }
+
+/* Daily brief: the first screen (P2UX08; design BOARD_UX_20261023 section 4, mock brief.html) */
+.brief { margin: 14px 0 8px; }
+.bhead { margin: 0 0 4px; }
+.btitle { font: 600 24px/1.2 var(--serif); text-transform: none; letter-spacing: -0.01em; color: var(--ink); margin: 0; }
+.bsince { margin: 4px 0 0; font: 12px var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.bh { display: flex; justify-content: space-between; gap: 12px; font: 700 13px var(--mono); text-transform: uppercase; letter-spacing: 0.08em; margin: 22px 0 2px; padding-top: 8px; border-top: 2px solid var(--ink); }
+.bh span { color: var(--muted); font-weight: 500; text-align: right; }
+.brows { list-style: none; margin: 0; padding: 0; }
+.brows > li { padding: 12px 0; border-bottom: 1px solid var(--rule); font-size: 17px; }
+.bdec { display: grid; grid-template-columns: 30px 1fr; gap: 0 8px; }
+.bdec .k { font: 700 26px/1.1 var(--serif); color: var(--accent); }
+.bbody { min-width: 0; }
+.bbody p { margin: 0; }
+.bdec .lead { font-size: 17px; font-weight: 600; overflow-wrap: anywhere; }
+.bmeta { font: 13px/1.5 var(--mono); color: var(--muted); margin-top: 4px !important; }
+.bdefault { margin-top: 6px !important; font-size: 16px; }
+.bdefault b { font: 700 12px var(--mono); text-transform: uppercase; letter-spacing: 0.06em; margin-right: 6px; }
+.bbtns { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.bbtns button { font: 600 15px var(--mono); min-height: 44px; padding: 0 14px; border: 2px solid var(--ink); background: var(--paper); color: var(--ink); border-radius: 3px; cursor: pointer; }
+.bbtns button.go { background: var(--ink); color: var(--paper); }
+.bnote { font-size: 15px; color: var(--muted); margin: 10px 0 0; }
+.blink { font: 600 15px var(--mono); min-height: 44px; padding: 0 4px; border: 0; background: none; color: var(--ink); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.brief .n { font: 600 14px var(--mono); color: var(--muted); margin-right: 5px; }
+.bstuck .why { display: block; font-size: 15px; color: var(--muted); margin-top: 2px; }
+.bstuck .flag { font: 700 11px var(--mono); text-transform: uppercase; letter-spacing: 0.06em; padding: 2px 6px; border: 1.5px solid var(--accent); color: var(--accent); border-radius: 2px; margin-left: 4px; vertical-align: 2px; white-space: nowrap; }
+.bstats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-top: 10px; }
+.bstats div { background: var(--tone); padding: 10px 12px; }
+.bstats b { display: block; font: 700 24px/1.2 var(--serif); }
+.bstats span { font-size: 14px; color: var(--muted); }
+.studio-h { margin: 30px 0 0; padding-top: 10px; border-top: 2px solid var(--ink); color: var(--ink); font-size: 13px; }
+body.qmode .brief, body.cmode .brief, body.mmode .brief, body.pmode .brief { display: none; }

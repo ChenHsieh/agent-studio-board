@@ -152,7 +152,7 @@ function renderModels() {
     const fails = (r.topFailures || []).length ? `<small>Most common misses: ${(r.topFailures || []).map(esc).join('; ')}</small>` : '';
     return `<li><b>${esc(r.executor)}</b> <span class="mrole">${esc(r.role)}</span>${r.flag ? ` <span class="mflag">${esc(r.flag)}</span>` : ''}<br>${esc(bits.join(' · '))}${fails}</li>`;
   }).join('');
-  const last = (models.last || []).map((t) => `<li><time>${esc(t.date)}</time> ${t.number ? `<span class="num">#${esc(t.number)}</span> ` : ''}${esc(t.task)}<br><span class="mrole">${esc(t.executor)} · ${esc(t.role)} · ${esc(PASSED_WORD[t.passed] || t.passed)}</span>${t.note ? `<small>${esc(t.note)}</small>` : ''}</li>`).join('');
+  const last = (models.last || []).map((t) => `<li><time>${esc(t.date)}</time> ${t.number ? `<span class="num">#${esc(t.number)}</span> ` : ''}${esc(plain(t.task))}<br><span class="mrole">${esc(t.executor)} · ${esc(t.role)} · ${esc(PASSED_WORD[t.passed] || t.passed)}</span>${t.note ? `<small>${esc(t.note)}</small>` : ''}</li>`).join('');
   box.innerHTML = `<h2 id="m-h">Models <small>who ran what, and how it went</small></h2>
   ${models.workflowNote ? `<p class="mnote"><b>What we changed:</b> ${esc(models.workflowNote)}</p>` : ''}
   <p class="ckey">'Passed first time' means the task's own checks passed without a retry. Rows marked estimated are read from the task's report, not from a check. Flags: under 60% says route that work elsewhere, over 85% says give it more.</p>
@@ -364,8 +364,12 @@ function lanesHtml() {
   const lanes = data.lanes || [];
   const rows = lanes.map((l) => {
     const g = data.games.find((x) => x.id === l.game);
-    const beat = l.commit ? `last commit ${ago(l.commit.at)}: “${esc(l.commit.subject)}”` : `no commit yet; log active ${ago(l.activity)}`;
-    return `<li class="lane"><span class="who">${esc(l.worker)}</span><span class="what"><b>${esc(g ? g.title : l.game)}</b> · ${esc(l.task)}</span><span class="beat">started ${ago(l.since)} · ${beat}</span></li>`;
+    // game number and name, and the plan line (board/plans.tsv) instead of a task id (P2UX08)
+    const t = g && (g.tasks || []).find((x) => x.title === l.task);
+    const what = plain((t && t.plan) || l.task) || 'Working';
+    const who = g ? `${g.number ? `#${g.number} ` : ''}${g.title}` : (l.game && l.game !== 'Multiple games' ? l.game : 'Studio');
+    const beat = l.commit ? `last commit ${ago(l.commit.at)}: “${esc(plain(l.commit.subject))}”` : `no commit yet; log active ${ago(l.activity)}`;
+    return `<li class="lane"><span class="who">${esc(l.worker)}</span><span class="what"><b>${esc(who)}</b> · ${esc(what)}</span><span class="beat">started ${ago(l.since)} · ${beat}</span></li>`;
   });
   const q = data.queue || {};
   const paused = !!q.codexPaused;
