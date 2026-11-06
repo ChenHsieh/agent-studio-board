@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06T01:20:58+00:00",
+ "generated": "2026-11-06T01:31:30+00:00",
  "ops": {
   "count": 12,
   "notes": [
@@ -22,22 +22,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 5,
+    "queued": 6,
     "running": 1,
     "doneToday": 1,
-    "minutes": 240,
-    "estimateMinutes": 240
+    "minutes": 280,
+    "estimateMinutes": 280
    },
    "Claude": {
     "queued": 1,
-    "running": 9,
+    "running": 8,
     "doneToday": 0,
-    "minutes": 600,
-    "estimateMinutes": 300
+    "minutes": 540,
+    "estimateMinutes": 270
    }
   },
-  "queued": 6,
-  "running": 10,
+  "queued": 7,
+  "running": 9,
   "doneToday": 1,
   "lanes": {
    "Codex": 1,
@@ -48,28 +48,20 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 840,
-  "estimatedFinish": "2026-11-06T06:20:58+00:00",
-  "estimateMinutes": 300
+  "minutesRemaining": 820,
+  "estimatedFinish": "2026-11-06T06:11:30+00:00",
+  "estimateMinutes": 280
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "same-spots",
-   "task": "P2SSP02_fix same spots after review",
-   "since": "2026-11-06T01:04:44+00:00",
-   "activity": "2026-11-06T01:08:43+00:00",
-   "commit": null
-  },
   {
    "worker": "Codex",
    "game": "watched-pot",
    "task": "P2WP00_watched pot review fixes",
    "since": "2026-11-06T00:38:34+00:00",
-   "activity": "2026-11-06T01:20:57+00:00",
+   "activity": "2026-11-06T01:31:24+00:00",
    "commit": {
-    "at": "2026-11-06T01:18:49+00:00",
-    "subject": "wip: P2WP00_watched-pot-review-fixes (Codex lane autosave 20:18)"
+    "at": "2026-11-06T01:30:44+00:00",
+    "subject": "fix: clear stale touch state"
    }
   },
   {
@@ -82,18 +74,18 @@
   },
   {
    "worker": "Claude",
-   "game": "iron-window-garden",
-   "task": "iron window garden",
-   "since": "2026-11-06T00:32:06+00:00",
-   "activity": "2026-11-06T01:18:47+00:00",
+   "game": "rolling-back",
+   "task": "rolling back",
+   "since": "2026-11-06T01:20:06+00:00",
+   "activity": "2026-11-06T01:30:22+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
-   "game": "rolling-back",
-   "task": "rolling back",
-   "since": "2026-11-06T01:20:06+00:00",
-   "activity": "2026-11-06T01:20:20+00:00",
+   "game": "Multiple games",
+   "task": "review round table and iron window garden",
+   "since": null,
+   "activity": null,
    "commit": null
   },
   {
@@ -133,16 +125,16 @@
    "game": "lens-screen",
    "task": "lens screen studio 320 fix",
    "since": "2026-11-06T00:50:44+00:00",
-   "activity": "2026-11-06T00:50:52+00:00",
+   "activity": "2026-11-06T01:30:42+00:00",
    "commit": null
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 9,
+ "claudeWorkers": 8,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
-  "runs": 356,
-  "usdEst": 1281.6,
+  "runs": 359,
+  "usdEst": 1292.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -232,7 +224,7 @@
   },
   {
    "day": "2026-11-05",
-   "changes": 19
+   "changes": 21
   }
  ],
  "houseRules": 25,
@@ -11736,30 +11728,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 14.4,
+   "costTotalUsd": 21.6,
    "latestChange": {
-    "text": "P2n90_iron-window-garden handed to Claude: Codex quota ran out;",
-    "at": "2026-10-27T14:05:40+00:00"
+    "text": "core live: rack, drip arrow, forecast, awning, hold preview; 12 levels + daily all bots...",
+    "at": "2026-11-06T01:26:42+00:00"
    },
    "promo": null,
    "why": "A remix of the chai boil lag and Even Water, set on the planter racks behind iron window grilles.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "iron window garden",
+   "waitingOn": "none",
    "id": "iron-window-garden",
    "number": 159,
    "repo": "iron-window-garden",
    "title": "Iron Window Garden",
    "line": "",
    "url": "https://chenhsieh.github.io/iron-window-garden/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -11772,45 +11764,57 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:57:31+00:00",
-   "lastChange": "2026-11-06T01:18:47+00:00",
+   "lastChange": "2026-11-06T01:26:42+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
-    "totalUsdEst": 14.4
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
+    "totalUsdEst": 21.6
    },
    "tasks": [
     {
      "title": "iron window garden",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Water one pot a morning on a tiered window rack where water drips down the next day: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-11-06T00:32:06+00:00",
-     "done": null,
+     "since": "2026-11-02T17:23:53+00:00",
+     "done": "2026-11-02T17:23:53+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P2n90 Iron Window Garden (鐵窗花) core build: DONE, LIVE at https://chenhsieh.github.io/iron-window-garden/"
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-06T01:26:42+00:00",
+     "ok": true,
+     "note": "core live: rack, drip arrow, forecast, awning, hold preview; 12 levels + daily all bots lose; a11y/onescreen/template 23/23 PASS",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-06T01:23:54+00:00",
+     "ok": true,
+     "note": "feat: Iron Window Garden core: water one pot each morning, the drip lands below by morning, keep every pot green all week",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-27T14:05:40+00:00",
      "ok": false,
@@ -12988,7 +12992,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T04:07:44+00:00",
-   "lastChange": "2026-11-06T00:50:52+00:00",
+   "lastChange": "2026-11-06T01:30:42+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -22599,7 +22603,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:08:19+00:00",
-   "lastChange": "2026-11-06T01:20:20+00:00",
+   "lastChange": "2026-11-06T01:30:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -22889,7 +22893,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Round Table: a table the obvious turn cannot...",
    "costTotalUsd": 18.19,
    "latestChange": {
     "text": "feat: turn the table to feed every seat",
@@ -22897,23 +22901,23 @@
    },
    "promo": null,
    "why": "A remix of equal-shares and gift-route ideas with the shared-table ledger, scaled to a banquet lazy Susan.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 9
+    "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "round table review fixes",
    "id": "round-table",
    "number": 158,
    "repo": "round-table",
    "title": "Round Table",
    "line": "",
    "url": "https://chenhsieh.github.io/round-table/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -22926,7 +22930,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:54:48+00:00",
-   "lastChange": "2026-10-27T12:50:56+00:00",
+   "lastChange": "2026-11-06T01:31:27+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -22940,6 +22944,20 @@
     "totalUsdEst": 18.19
    },
    "tasks": [
+    {
+     "title": "P2RT00_round table review fixes",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Round Table: a table the obvious turn cannot clear, a real safe fail on level 2, a fresh daily",
+     "since": "2026-11-06T01:31:27+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "round table",
      "state": "done",
@@ -22956,14 +22974,14 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-27T12:50:56+00:00",
@@ -23407,30 +23425,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 14.4,
+   "costTotalUsd": 21.6,
    "latestChange": {
-    "text": "core built and live: tap-to-repaint hill, preview saves/exposes, 12 hills + daily,...",
-    "at": "2026-11-06T00:59:21+00:00"
+    "text": "fix round live: hills need a plan (preview-greedy misses par), hill 1 explains the mark,...",
+    "at": "2026-11-06T01:29:13+00:00"
    },
    "promo": null,
    "why": "A creature-design plate of an invented spotted beast, beside an ad with one bright seat among grey ones and a handbook chapter on disguise.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
     "daysInState": 0
    },
-   "waitingOn": "fix same spots after review",
+   "waitingOn": "none",
    "id": "same-spots",
    "number": 168,
    "repo": "same-spots",
    "title": "Same Spots",
    "line": "",
    "url": "https://chenhsieh.github.io/same-spots/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -23443,34 +23461,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-30T05:44:03+00:00",
-   "lastChange": "2026-11-06T01:08:43+00:00",
+   "lastChange": "2026-11-06T01:29:13+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 3,
-    "earlierUsdEst": 10.8,
-    "totalUsdEst": 14.4
+    "claudeUsdEst": 7.2,
+    "earlierRounds": 4,
+    "earlierUsdEst": 14.4,
+    "totalUsdEst": 21.6
    },
    "tasks": [
-    {
-     "title": "P2SSP02_fix same spots after review",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Same Spots: apply the stranger review's fix list, Codex",
-     "since": "2026-11-06T01:04:44+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2SSP00_same spots core",
      "state": "done",
@@ -23484,13 +23488,27 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P2SSP00_same-spots-core: DONE, live at https://chenhsieh.github.io/same-spots/ (main -> , tag pre-ssp00-core; Live bytes checked (game.js, levels.json, og.png, game.css, index.html md5 match) and played live at 390x844,..."
+    },
+    {
+     "title": "P2SSP02_fix same spots after review",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Same Spots: apply the stranger review's fix list, Codex",
+     "since": "2026-11-02T17:23:53+00:00",
+     "done": "2026-11-02T17:23:53+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P2SSP02_fix-same-spots-after-review: Live bytes match (game.js, levels.json, game.css, game.config.js); played live at 390x844 and 320x568, zero console errors."
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": {
     "date": "2026-11-06",
@@ -23498,8 +23516,20 @@
     "note": "Copying a neighbour loses on every hill after 3, but trying markings in the preview and keeping the best reaches par on most hills: the hills need a real plan"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-06T01:29:13+00:00",
+     "ok": true,
+     "note": "fix round live: hills need a plan (preview-greedy misses par), hill 1 explains the mark, lesson survives reload",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-06T01:27:01+00:00",
+     "ok": true,
+     "note": "fix: Same Spots hills need a plan, not the best-looking roll",
+     "source": "main commit"
+    },
     {
      "at": "2026-11-06T00:59:21+00:00",
      "ok": true,
@@ -27436,7 +27466,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 9
+    "daysInState": 10
    },
    "waitingOn": "none",
    "id": "anechoic-fugue",
@@ -32512,7 +32542,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:52:16+00:00",
-   "lastChange": "2026-11-06T01:20:57+00:00",
+   "lastChange": "2026-11-06T01:31:24+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -32538,8 +32568,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-11-06T01:18:49+00:00",
-      "subject": "wip: P2WP00_watched-pot-review-fixes (Codex lane autosave 20:18)"
+      "at": "2026-11-06T01:30:44+00:00",
+      "subject": "fix: clear stale touch state"
      },
      "result": ""
     },

@@ -1,5 +1,5 @@
 {
- "generated": 1793928074,
+ "generated": 1793928711,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -96,25 +96,6 @@
    "created": 1793640233
   },
   {
-   "id": "P2SSP02_fix-same-spots-after-review",
-   "request": "Same Spots: apply the stranger review's fix list, Codex",
-   "game": "Same Spots",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2SSP01_review-same-spots"
-   ],
-   "priority": null,
-   "why": "A creature-design plate of an invented spotted beast, beside an ad with one bright seat among grey ones and a handbook chapter on disguise.",
-   "state": "running",
-   "at": 1793640233,
-   "created": 1793640233
-  },
-  {
    "id": "P2WP00_watched-pot-review-fixes",
    "request": "Watched Pot: keep the grown stone in view on the win, a fresh daily stone every day, bigger cells on small phones",
    "game": "Watched Pot",
@@ -154,25 +135,6 @@
    "created": 1793927883
   },
   {
-   "id": "P2n90_iron-window-garden",
-   "request": "Water one pot a morning on a tiered window rack where water drips down the next day: build the core with placeholder shapes, then its first-minute round",
-   "game": "Iron Window Garden",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2n86_round4-template-repos"
-   ],
-   "priority": null,
-   "why": "A remix of the chai boil lag and Even Water, set on the planter racks behind iron window grilles.",
-   "state": "running",
-   "at": 1793640233,
-   "created": 1793640233
-  },
-  {
    "id": "P2n94_rolling-back",
    "request": "Push a stone up a hill note by note; build the core with placeholder shapes, then its first-minute round",
    "game": "Rolling Back",
@@ -190,6 +152,26 @@
    "state": "running",
    "at": 1793927955,
    "created": 1793927955
+  },
+  {
+   "id": "P2n98_review-round-table-and-iron-window-garden",
+   "request": "Play Round Table and Iron Window Garden cold as a stranger and decide ship, revise or shelf for each",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2n89_round-table",
+    "P2n90_iron-window-garden"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1793640233,
+   "created": 1793640233
   },
   {
    "id": "P3PL13_dancers-not-mad-why-rollout",
@@ -284,27 +266,48 @@
    "created": 1793640233
   },
   {
-   "id": "P2n98_review-round-table-and-iron-window-garden",
-   "request": "Play Round Table and Iron Window Garden cold as a stranger and decide ship, revise or shelf for each",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
+   "id": "P2IWG00_iron-window-garden-review-fixes",
+   "request": "Iron Window Garden: weeks where the closed can matters, the win picture stays in view",
+   "game": "Iron Window Garden",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
    "kind": "review",
-   "size": "studio",
+   "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2n89_round-table",
-    "P2n90_iron-window-garden"
+    "P2n98_review-round-table-and-iron-window-garden"
    ],
    "priority": null,
-   "why": "",
+   "why": "A remix of the chai boil lag and Even Water, set on the planter racks behind iron window grilles.",
    "state": "waiting",
    "waitingOn": [
-    "P2n89_round-table",
-    "P2n90_iron-window-garden"
+    "P2n98_review-round-table-and-iron-window-garden"
    ],
-   "created": 1793640233
+   "created": 1793928693,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2RT00_round-table-review-fixes",
+   "request": "Round Table: a table the obvious turn cannot clear, a real safe fail on level 2, a fresh daily",
+   "game": "Round Table",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2n98_review-round-table-and-iron-window-garden"
+   ],
+   "priority": null,
+   "why": "A remix of equal-shares and gift-route ideas with the shared-table ledger, scaled to a banquet lazy Susan.",
+   "state": "waiting",
+   "waitingOn": [
+    "P2n98_review-round-table-and-iron-window-garden"
+   ],
+   "created": 1793928687,
+   "estPercentOfWeek": 0.25
   }
  ]
 }
