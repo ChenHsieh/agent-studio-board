@@ -39,24 +39,29 @@
     }).filter(Boolean);
   }
 
-  const CHOICES = { cheap: [['yes', 'Yes, my pick'], ['not now', 'Not now'], ['why', 'Ask why']], 'only-you': [['I will do it', 'I will do it'], ['not now', 'Not now'], ['why', 'Ask why']] };
+  const CHOICES = { cheap: [['yes', 'Yes'], ['not now', 'Not now'], ['why', 'Why?']], 'only-you': [['I will do it', 'I will do it'], ['not now', 'Not now'], ['why', 'Why?']] };
   function answerLine(d, choice) { return `ask|${d.game}|${choice}`; }
+  // Cut at a word boundary so a card stays short on a phone; the full text is one tap away.
+  function clip(t, n) { t = clean(t); return t.length <= n ? t : `${t.slice(0, n).replace(/\s+\S*$/, '')}…`; }
   function holdsUp(d) {
     const parts = [];
     if (d.blocksGames) parts.push(`${d.blocksGames} ${d.blocksGames === 1 ? 'game' : 'games'}`);
     if (d.blocksTasks) parts.push(`${d.blocksTasks} ${d.blocksTasks === 1 ? 'task' : 'tasks'}`);
-    return parts.length ? `Holds up ${parts.join(' and ')}` : 'Holds nothing up yet';
+    return parts.length ? `holds up ${parts.join(' and ')}` : 'holds nothing up yet';
   }
   function decisionHtml(d) {
     const meta = [holdsUp(d)];
-    if (d.daysWaiting != null) meta.push(d.daysWaiting === 0 ? 'new today' : `waiting ${d.daysWaiting} ${d.daysWaiting === 1 ? 'day' : 'days'}`);
-    meta.push(d.kind === 'only-you' ? 'only you can do this' : 'no cost to you');
+    if (d.daysWaiting != null) meta.push(d.daysWaiting === 0 ? 'new today' : `${d.daysWaiting} ${d.daysWaiting === 1 ? 'day' : 'days'} waiting`);
+    if (d.goesAheadOn) meta.push(`Goes ahead on ${shortDay(d.goesAheadOn)}`);
+    else if (d.kind === 'only-you') meta.push('only you can do this');
     const pick = clean(d.pick);
-    const after = d.goesAheadOn ? `<p class="bdefault"><b>If you say nothing</b>Goes ahead on ${esc(shortDay(d.goesAheadOn))}.</p>`
-      : `<p class="bdefault"><b>If you say nothing</b>${esc(clean(d.ifNothing) || 'It waits for you.')}</p>`;
+    const line = d.kind === 'only-you' || !pick
+      ? `<p class="bdefault"><b>If you say nothing</b>${esc(clip(d.ifNothing || 'It waits for you.', 80))}</p>`
+      : `<p class="bdefault"><b>My pick</b>${esc(clip(pick, 70))}</p>`;
+    const more = [clean(d.facts), pick && d.kind === 'only-you' ? `My pick: ${pick}` : pick.length > 70 ? `My pick: ${pick}` : ''].filter(Boolean).join(' ');
     const btns = (CHOICES[d.kind] || CHOICES.cheap).map(([c, label], i) => `<button type="button" class="${i === 0 ? 'go' : ''}" data-copy="${esc(answerLine(d, c))}" aria-label="${esc(label)}: copy the answer line for the chat">${esc(label)}</button>`).join('');
-    return `<li class="bdec"><span class="k">${esc(d.rank)}</span><div class="bbody"><p class="lead">${nameHtml(d.gameName)}: ${esc(clean(d.question))}</p>`
-      + `<p class="bmeta">${esc(meta.join(' · '))}</p>${pick ? `<p class="bdefault"><b>My pick</b>${esc(pick)}</p>` : ''}${after}`
+    return `<li class="bdec"><span class="k">${esc(d.rank)}</span><div class="bbody"><details class="blead"><summary>${nameHtml(d.gameName)}: ${esc(clip(d.question, 72))}</summary><p class="bfacts">${esc(more)}</p></details>`
+      + `<p class="bmeta">${esc(meta.join(' · '))}</p>${line}`
       + `<div class="bbtns">${btns}</div></div></li>`;
   }
   function stuckHtml(s) {
@@ -76,20 +81,23 @@
   // The whole brief as HTML. opts: { now (ms), since: {at, first} }
   function html(b, opts) {
     const now = new Date(opts.now), since = opts.since;
-    const sinceText = since.first ? 'the last 3 days' : `since you last looked, ${longDay(since.at)} ${String(since.at.getHours()).padStart(2, '0')}:${String(since.at.getMinutes()).padStart(2, '0')}`;
+    const sinceText = since.first ? 'the last 3 days' : `since you last looked, ${shortDay(isoDay(since.at))} ${String(since.at.getHours()).padStart(2, '0')}:${String(since.at.getMinutes()).padStart(2, '0')}`;
     const ds = (b.decisions || []).slice(0, 3), more = Math.max(0, (b.openDecisions || 0) - ds.length);
     const groups = groupEvents(b.events, isoDay(since.at));
     const stuck = b.stuck || [];
     const nStuckTasks = stuck.filter((s) => s.kind === 'blocked').length, nCaps = stuck.filter((s) => s.kind === 'over-cap').length;
-    let h = `<div class="bhead"><h2 class="btitle">${esc(longDay(now))}</h2><p class="bsince">Daily brief · ${esc(sinceText)}</p></div>`;
+    let h = `<p class="bsince"><b>${esc(longDay(now))}</b> · daily brief, ${esc(sinceText)}</p>`;
     h += `<h3 class="bh">Decide today <span>${ds.length} of ${esc(b.openDecisions || 0)} open</span></h3>`;
-    h += ds.length ? `<ol class="brows bdecide">${ds.map(decisionHtml).join('')}</ol><p class="bnote">The buttons copy one answer line; paste it in the chat.${more ? ` <button type="button" class="blink" data-view="needs" data-brief-jump="1">${more} more in Needs you</button>` : ''}</p>`
+    h += ds.length ? `<ol class="brows bdecide">${ds.map(decisionHtml).join('')}</ol><p class="bnote">Each button copies one answer line to paste in the chat.${more ? ` <button type="button" class="blink" data-view="needs" data-brief-jump="1">${more} more in Needs you</button>` : ''}</p>`
       : '<p class="bnote">Nothing to decide today.</p>';
     h += `<h3 class="bh">What changed <span>${groups.length} ${groups.length === 1 ? 'group' : 'groups'}</span></h3>`;
     h += groups.length ? `<ul class="brows bchanged">${groups.map((g) => `<li>${esc(g.label)}: ${g.names.map(nameHtml).join(', ')}${g.more ? ` and ${g.more} more` : ''}.</li>`).join('')}</ul>`
       : `<p class="bnote">Nothing new ${since.first ? 'in the last 3 days' : 'since you last looked'}.</p>`;
     h += `<h3 class="bh">Stuck <span>${nStuckTasks} ${nStuckTasks === 1 ? 'task' : 'tasks'}${nCaps ? `, ${nCaps} ${nCaps === 1 ? 'lane' : 'lanes'} over the limit` : ''}</span></h3>`;
-    h += stuck.length ? `<ul class="brows bstuck">${stuck.map(stuckHtml).join('')}</ul>` : '<p class="bnote">Nothing is stuck.</p>';
+    // longest-stuck first, five at most, then the lanes over their limit
+    const blocked = stuck.filter((s) => s.kind !== 'over-cap').sort((a, b) => (b.days || 0) - (a.days || 0)), caps = stuck.filter((s) => s.kind === 'over-cap');
+    const shown = [...blocked.slice(0, 5), ...caps], rest = Math.max(0, blocked.length - 5);
+    h += shown.length ? `<ul class="brows bstuck">${shown.map(stuckHtml).join('')}</ul>${rest ? `<p class="bnote">and ${rest} more stuck ${rest === 1 ? 'task' : 'tasks'}.</p>` : ''}` : '<p class="bnote">Nothing is stuck.</p>';
     h += `<h3 class="bh">Spend so far <span>${esc((b.spend && b.spend.label) || 'estimate, not a bill')}</span></h3>${spendHtml(b.spend)}`;
     return h;
   }

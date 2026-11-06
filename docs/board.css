@@ -405,23 +405,25 @@ body.sheet-open { overflow: hidden; }
 .rbar .q-done { background: #8f9b71; } .rbar .q-running { background: var(--accent); } .rbar .q-queued { background: #3c5a7a; }
 
 /* Daily brief: the first screen (P2UX08; design BOARD_UX_20261023 section 4, mock brief.html) */
-.brief { margin: 14px 0 8px; }
-.bhead { margin: 0 0 4px; }
-.btitle { font: 600 24px/1.2 var(--serif); text-transform: none; letter-spacing: -0.01em; color: var(--ink); margin: 0; }
-.bsince { margin: 4px 0 0; font: 12px var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
-.bh { display: flex; justify-content: space-between; gap: 12px; font: 700 13px var(--mono); text-transform: uppercase; letter-spacing: 0.08em; margin: 22px 0 2px; padding-top: 8px; border-top: 2px solid var(--ink); }
+.brief { margin: 10px 0 8px; }
+.bsince { margin: 0; font: 12px/1.4 var(--mono); color: var(--muted); }
+.bsince b { color: var(--ink); }
+.bh { display: flex; justify-content: space-between; gap: 12px; font: 700 13px var(--mono); text-transform: uppercase; letter-spacing: 0.08em; margin: 14px 0 0; padding-top: 8px; border-top: 2px solid var(--ink); }
 .bh span { color: var(--muted); font-weight: 500; text-align: right; }
 .brows { list-style: none; margin: 0; padding: 0; }
-.brows > li { padding: 12px 0; border-bottom: 1px solid var(--rule); font-size: 17px; }
+.brows > li { padding: 9px 0; border-bottom: 1px solid var(--rule); font-size: 17px; }
 .bdec { display: grid; grid-template-columns: 30px 1fr; gap: 0 8px; }
 .bdec .k { font: 700 26px/1.1 var(--serif); color: var(--accent); }
 .bbody { min-width: 0; }
 .bbody p { margin: 0; }
-.bdec .lead { font-size: 17px; font-weight: 600; overflow-wrap: anywhere; }
-.bmeta { font: 13px/1.5 var(--mono); color: var(--muted); margin-top: 4px !important; }
-.bdefault { margin-top: 6px !important; font-size: 16px; }
+.blead summary { font-size: 16px; font-weight: 600; line-height: 1.35; overflow-wrap: anywhere; cursor: pointer; list-style: none; }
+.blead summary::-webkit-details-marker { display: none; }
+.blead[open] summary { margin-bottom: 4px; }
+.bfacts { font-size: 15px; color: var(--muted); }
+.bmeta { font: 12px/1.45 var(--mono); color: var(--muted); margin-top: 3px !important; }
+.bdefault { margin-top: 3px !important; font-size: 15px; line-height: 1.35; }
 .bdefault b { font: 700 12px var(--mono); text-transform: uppercase; letter-spacing: 0.06em; margin-right: 6px; }
-.bbtns { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.bbtns { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 7px; }
 .bbtns button { font: 600 15px var(--mono); min-height: 44px; padding: 0 14px; border: 2px solid var(--ink); background: var(--paper); color: var(--ink); border-radius: 3px; cursor: pointer; }
 .bbtns button.go { background: var(--ink); color: var(--paper); }
 .bnote { font-size: 15px; color: var(--muted); margin: 10px 0 0; }
