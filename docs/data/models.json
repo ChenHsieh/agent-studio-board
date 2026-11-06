@@ -235,12 +235,12 @@
   {
    "executor": "claude-sonnet",
    "role": "fix",
-   "count": 14,
-   "firstTimePass": 62,
+   "count": 15,
+   "firstTimePass": 64,
    "retries": 5,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 8,
+   "guessed": 9,
    "topFailures": [
     "the lesson start depends on the kit keeping [data-pl=\"howto-start\"] an",
     "after any go() to another screen the lesson is dropped and remembered",
@@ -663,6 +663,15 @@
   },
   {
    "date": "2026-11-05",
+   "task": "one umbrella fixes",
+   "number": "162",
+   "executor": "claude-sonnet",
+   "role": "fix",
+   "passed": "yes",
+   "note": "lane 1 is still 30 s of holding still (brief rule); visual round still not queued; re-review can now upgrade verdict to ship."
+  },
+  {
+   "date": "2026-11-05",
    "task": "review gold star and ac remote",
    "number": "164",
    "executor": "claude-opus",
@@ -696,15 +705,6 @@
    "role": "design",
    "passed": "yes",
    "note": "whether the cheap defaults should really go ahead on their own from 2026-11-09 (this is the design's rule; the board will show each date). O"
-  },
-  {
-   "date": "2026-11-05",
-   "task": "fix same spots after review",
-   "number": "168",
-   "executor": "claude-sonnet",
-   "role": "review",
-   "passed": "yes",
-   "note": "hills 4-12 are now hard (random bot 0%, every greedy reading of the preview misses par); nobody has played them yet, so the brief's open tar"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."

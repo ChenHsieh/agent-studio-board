@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-06T01:52:43+00:00",
+ "generated": "2026-11-06T02:03:16+00:00",
  "ops": {
-  "count": 6,
+  "count": 4,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "Two tasks share the number P2SSP01."
@@ -22,23 +22,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 3,
+    "queued": 4,
     "running": 1,
     "doneToday": 2,
-    "minutes": 160,
-    "estimateMinutes": 160
+    "minutes": 200,
+    "estimateMinutes": 200
    },
    "Claude": {
     "queued": 1,
     "running": 8,
-    "doneToday": 0,
+    "doneToday": 1,
     "minutes": 540,
     "estimateMinutes": 270
    }
   },
-  "queued": 4,
+  "queued": 5,
   "running": 9,
-  "doneToday": 2,
+  "doneToday": 3,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -48,8 +48,8 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 700,
-  "estimatedFinish": "2026-11-06T06:22:43+00:00",
+  "minutesRemaining": 740,
+  "estimatedFinish": "2026-11-06T06:33:16+00:00",
   "estimateMinutes": 270
  },
  "lanes": [
@@ -58,37 +58,37 @@
    "game": "iron-window-garden",
    "task": "P2IWG00_iron window garden review fixes",
    "since": "2026-11-06T01:33:52+00:00",
-   "activity": "2026-11-06T01:45:25+00:00",
+   "activity": "2026-11-06T02:01:26+00:00",
    "commit": {
     "at": "2026-11-06T01:45:25+00:00",
     "subject": "wip: win stays in view, basil colour, short result sheet"
    }
   },
   {
+   "worker": "Claude",
+   "game": "same-spots",
+   "task": "P2SSP03_same spots clarity",
+   "since": "2026-11-06T01:56:19+00:00",
+   "activity": "2026-11-06T02:01:09+00:00",
+   "commit": null
+  },
+  {
    "worker": "Codex",
    "game": "gold-star",
    "task": "gold star preview and par",
    "since": "2026-11-06T01:46:25+00:00",
-   "activity": "2026-11-06T01:52:10+00:00",
+   "activity": "2026-11-06T02:02:30+00:00",
    "commit": {
-    "at": "2026-11-06T01:52:04+00:00",
-    "subject": "feat: preview cards before posting"
+    "at": "2026-11-06T02:02:30+00:00",
+    "subject": "wip: P2n119_gold-star-preview-and-par (Codex lane autosave 21:02)"
    }
-  },
-  {
-   "worker": "Claude",
-   "game": "one-umbrella",
-   "task": "one umbrella fixes",
-   "since": "2026-11-06T01:19:27+00:00",
-   "activity": "2026-11-06T01:51:36+00:00",
-   "commit": null
   },
   {
    "worker": "Claude",
    "game": "rolling-back",
    "task": "rolling back",
    "since": "2026-11-06T01:20:06+00:00",
-   "activity": "2026-11-06T01:49:13+00:00",
+   "activity": "2026-11-06T01:59:56+00:00",
    "commit": null
   },
   {
@@ -136,8 +136,8 @@
  "claudeWorkers": 8,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
-  "runs": 361,
-  "usdEst": 1299.6,
+  "runs": 362,
+  "usdEst": 1303.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -227,7 +227,7 @@
   },
   {
    "day": "2026-11-05",
-   "changes": 26
+   "changes": 27
   }
  ],
  "houseRules": 25,
@@ -433,7 +433,7 @@
    ]
   },
   {
-   "nextTask": "The AC Remote visual round: one office with...",
+   "nextTask": "P2AC03_ac remote clarity",
    "costTotalUsd": 21.6,
    "latestChange": {
     "text": "core live: readable mugs, hold to preview a swap, kit lesson, drawn preview, kit 21",
@@ -449,7 +449,7 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "ac remote visual round",
+   "waitingOn": "ac remote clarity",
    "id": "ac-remote",
    "number": 165,
    "repo": "ac-remote",
@@ -470,7 +470,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:13:24+00:00",
-   "lastChange": "2026-11-06T01:12:00+00:00",
+   "lastChange": "2026-11-06T01:56:19+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -484,6 +484,20 @@
     "totalUsdEst": 21.6
    },
    "tasks": [
+    {
+     "title": "P2AC03_ac remote clarity",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-11-06T01:56:19+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "ac remote visual round",
      "state": "queued",
@@ -514,7 +528,7 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 2,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
@@ -1440,7 +1454,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 11
+    "daysInState": 12
    },
    "waitingOn": "none",
    "id": "billboard-wars",
@@ -3606,7 +3620,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 11
+    "daysInState": 12
    },
    "waitingOn": "none",
    "id": "connectle",
@@ -9792,7 +9806,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:11:01+00:00",
-   "lastChange": "2026-11-06T01:52:10+00:00",
+   "lastChange": "2026-11-06T02:02:30+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -9818,8 +9832,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-11-06T01:52:04+00:00",
-      "subject": "feat: preview cards before posting"
+      "at": "2026-11-06T02:02:30+00:00",
+      "subject": "wip: P2n119_gold-star-preview-and-par (Codex lane autosave 21:02)"
      },
      "result": ""
     },
@@ -11770,7 +11784,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:57:31+00:00",
-   "lastChange": "2026-11-06T01:45:25+00:00",
+   "lastChange": "2026-11-06T02:01:26+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -15407,7 +15421,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 11
+    "daysInState": 12
    },
    "waitingOn": "none",
    "id": "material-boards",
@@ -16232,7 +16246,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 11
+    "daysInState": 12
    },
    "waitingOn": "none",
    "id": "missing-field",
@@ -18600,30 +18614,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 28.8,
+   "costTotalUsd": 32.4,
    "latestChange": {
-    "text": "fix: One Umbrella end screen and share line no longer say \"both home\" after a soak",
-    "at": "2026-11-06T01:51:36+00:00"
+    "text": "P2n120 six fixes live: endless run-over text and share line, small-board wet numbers, how...",
+    "at": "2026-11-06T01:53:18+00:00"
    },
    "promo": null,
    "why": "A remix of Even Water and Thin Walls: one pour shared fairly becomes one umbrella shared by two in the rain.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
     "daysInState": 0
    },
-   "waitingOn": "one umbrella fixes",
+   "waitingOn": "none",
    "id": "one-umbrella",
    "number": 162,
    "repo": "one-umbrella",
    "title": "One Umbrella",
    "line": "",
    "url": "https://chenhsieh.github.io/one-umbrella/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -18636,33 +18650,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:05:09+00:00",
-   "lastChange": "2026-11-06T01:51:36+00:00",
+   "lastChange": "2026-11-06T01:53:18+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 7,
     "earlierUsdEst": 25.2,
-    "totalUsdEst": 28.8
+    "totalUsdEst": 32.4
    },
    "tasks": [
     {
      "title": "one umbrella fixes",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "One Umbrella: fix the endless run-over sheet and share line, readable wet labels on small boards, a gust picture in How to play",
-     "since": "2026-11-06T01:19:27+00:00",
-     "done": null,
+     "since": "2026-11-06T01:18:03+00:00",
+     "done": "2026-11-06T01:18:03+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P2n120 one-umbrella fixes: Live game.js md5 ... equals origin/main; live game.config.js no longer has the dropped sentence."
     },
     {
      "title": "one umbrella",
@@ -18681,9 +18695,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": {
     "date": "2026-11-05",
@@ -18691,8 +18705,14 @@
     "note": "The gust warning and the leaning shelter make the choice readable; fix the endless end sheet, small-screen labels and the How to play picture"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-06T01:53:18+00:00",
+     "ok": true,
+     "note": "P2n120 six fixes live: endless run-over text and share line, small-board wet numbers, how to play gust picture, resume line, why text",
+     "source": "board note"
+    },
     {
      "at": "2026-11-06T01:51:36+00:00",
      "ok": true,
@@ -21356,7 +21376,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 11
+    "daysInState": 12
    },
    "waitingOn": "none",
    "id": "redline-river",
@@ -22648,7 +22668,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:08:19+00:00",
-   "lastChange": "2026-11-06T01:49:13+00:00",
+   "lastChange": "2026-11-06T01:59:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -23487,23 +23507,23 @@
    },
    "promo": null,
    "why": "A creature-design plate of an invented spotted beast, beside an ad with one bright seat among grey ones and a handbook chapter on disguise.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 1,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "same spots clarity",
    "id": "same-spots",
    "number": 168,
    "repo": "same-spots",
    "title": "Same Spots",
    "line": "",
    "url": "https://chenhsieh.github.io/same-spots/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -23516,7 +23536,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-30T05:44:03+00:00",
-   "lastChange": "2026-11-06T01:29:13+00:00",
+   "lastChange": "2026-11-06T02:01:09+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -23530,6 +23550,20 @@
     "totalUsdEst": 21.6
    },
    "tasks": [
+    {
+     "title": "P2SSP03_same spots clarity",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-11-06T01:56:19+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2SSP00_same spots core",
      "state": "done",
@@ -23561,7 +23595,7 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
@@ -23571,7 +23605,7 @@
     "note": "Copying a neighbour loses on every hill after 3, but trying markings in the preview and keeping the best reaches par on most hills: the hills need a real plan"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-11-06T01:29:13+00:00",
@@ -24657,7 +24691,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 11
+    "daysInState": 12
    },
    "waitingOn": "none",
    "id": "service-lane",
@@ -25340,7 +25374,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 11
+    "daysInState": 12
    },
    "waitingOn": "none",
    "id": "sigil-wheel",
@@ -28227,7 +28261,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 11
+    "daysInState": 12
    },
    "waitingOn": "none",
    "id": "tell",
