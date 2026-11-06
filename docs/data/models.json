@@ -235,9 +235,9 @@
   {
    "executor": "claude-sonnet",
    "role": "fix",
-   "count": 13,
-   "firstTimePass": 67,
-   "retries": 4,
+   "count": 14,
+   "firstTimePass": 62,
+   "retries": 5,
    "medianMinutes": null,
    "costPerPass": null,
    "guessed": 8,
@@ -528,6 +528,15 @@
  "last": [
   {
    "date": "2026-11-05",
+   "task": "lens screen studio 320 fix",
+   "number": "41",
+   "executor": "claude-sonnet",
+   "role": "fix",
+   "passed": "no",
+   "note": "DONE (live, main 791955e, pre-tag pre-p3d35): the studio build (twelve client visits with wishes, reactions, studio wall) is published, and "
+  },
+  {
+   "date": "2026-11-05",
    "task": "grad survivor merge save test",
    "number": "",
    "executor": "claude-sonnet",
@@ -696,15 +705,6 @@
    "role": "review",
    "passed": "yes",
    "note": "hills 4-12 are now hard (random bot 0%, every greedy reading of the preview misses par); nobody has played them yet, so the brief's open tar"
-  },
-  {
-   "date": "2026-11-05",
-   "task": "review same spots",
-   "number": "168",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "with the preview, a 5x5 hill is a scan for the biggest Saves number, not a plan; and 4-6 overlapping dashed boxes read as clutter (nothing o"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
