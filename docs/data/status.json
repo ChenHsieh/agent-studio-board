@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-06T00:47:18+00:00",
+ "generated": "2026-11-06T00:59:36+00:00",
  "ops": {
-  "count": 8,
+  "count": 10,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,22 +20,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 10,
+    "queued": 6,
     "running": 1,
     "doneToday": 1,
-    "minutes": 440,
-    "estimateMinutes": 440
+    "minutes": 280,
+    "estimateMinutes": 280
    },
    "Claude": {
     "queued": 1,
-    "running": 12,
+    "running": 10,
     "doneToday": 0,
-    "minutes": 780,
-    "estimateMinutes": 390
+    "minutes": 660,
+    "estimateMinutes": 330
    }
   },
-  "queued": 11,
-  "running": 13,
+  "queued": 7,
+  "running": 11,
   "doneToday": 1,
   "lanes": {
    "Codex": 1,
@@ -46,31 +46,15 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1220,
-  "estimatedFinish": "2026-11-06T08:07:18+00:00",
-  "estimateMinutes": 440
+  "minutesRemaining": 940,
+  "estimatedFinish": "2026-11-06T06:29:36+00:00",
+  "estimateMinutes": 330
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "mind-gym",
-   "task": "P2MG04_mind gym small phone",
-   "since": "2026-11-06T00:41:19+00:00",
-   "activity": "2026-11-06T00:46:08+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "same-spots",
-   "task": "P2SSP00_same spots core",
-   "since": "2026-11-06T00:18:36+00:00",
-   "activity": "2026-11-06T00:44:50+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
    "game": "Multiple games",
-   "task": "P2UX08_daily brief first screen",
+   "task": "P2SSP01_review same spots",
    "since": null,
    "activity": null,
    "commit": null
@@ -80,10 +64,10 @@
    "game": "watched-pot",
    "task": "P2WP00_watched pot review fixes",
    "since": "2026-11-06T00:38:34+00:00",
-   "activity": "2026-11-06T00:46:59+00:00",
+   "activity": "2026-11-06T00:59:26+00:00",
    "commit": {
-    "at": "2026-11-06T00:46:42+00:00",
-    "subject": "wip: P2WP00_watched-pot-review-fixes (Codex lane autosave 19:46)"
+    "at": "2026-11-06T00:54:44+00:00",
+    "subject": "wip: P2WP00_watched-pot-review-fixes (Codex lane autosave 19:54)"
    }
   },
   {
@@ -91,7 +75,7 @@
    "game": "iron-window-garden",
    "task": "iron window garden",
    "since": "2026-11-06T00:32:06+00:00",
-   "activity": "2026-11-06T00:41:44+00:00",
+   "activity": "2026-11-06T00:54:50+00:00",
    "commit": null
   },
   {
@@ -99,10 +83,10 @@
    "game": "one-umbrella",
    "task": "one umbrella",
    "since": "2026-11-06T00:18:34+00:00",
-   "activity": "2026-11-06T00:46:31+00:00",
+   "activity": "2026-11-06T00:56:35+00:00",
    "commit": {
-    "at": "2026-11-06T00:39:34+00:00",
-    "subject": "wip: lane layout for phones, slanted dry shelter, HUD split, no Undo in a real-time walk"
+    "at": "2026-11-06T00:56:35+00:00",
+    "subject": "wip: 0.25 s step so a walk is 120 moves (playable gate cap 128)"
    }
   },
   {
@@ -110,7 +94,7 @@
    "game": "ac-remote",
    "task": "ac remote",
    "since": "2026-11-06T00:41:48+00:00",
-   "activity": "2026-11-06T00:45:48+00:00",
+   "activity": "2026-11-06T00:51:54+00:00",
    "commit": null
   },
   {
@@ -131,14 +115,6 @@
   },
   {
    "worker": "Claude",
-   "game": "readable-nonsense",
-   "task": "P3PL16_readable nonsense why rollout",
-   "since": "2026-11-06T00:45:18+00:00",
-   "activity": "2026-11-06T00:45:21+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
    "game": "metagenome-profilers",
    "task": "P3PL17_metagenome profilers why build",
    "since": null,
@@ -155,19 +131,27 @@
   },
   {
    "worker": "Claude",
-   "game": "BioRedactle-nextjs",
-   "task": "P3SV55_redacxiv merge save tests",
-   "since": "2026-11-06T00:36:25+00:00",
-   "activity": "2026-11-06T00:37:15+00:00",
+   "game": "glasshouse",
+   "task": "P3PL19_glasshouse why build",
+   "since": "2026-11-06T00:57:57+00:00",
+   "activity": "2026-11-06T00:58:01+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "lens-screen",
+   "task": "lens screen studio 320 fix",
+   "since": "2026-11-06T00:50:44+00:00",
+   "activity": "2026-11-06T00:50:52+00:00",
    "commit": null
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 12,
+ "claudeWorkers": 10,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
-  "runs": 346,
-  "usdEst": 1245.6,
+  "runs": 351,
+  "usdEst": 1263.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -257,7 +241,7 @@
   },
   {
    "day": "2026-11-05",
-   "changes": 10
+   "changes": 15
   }
  ],
  "houseRules": 25,
@@ -500,7 +484,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:13:24+00:00",
-   "lastChange": "2026-11-06T00:45:48+00:00",
+   "lastChange": "2026-11-06T00:51:54+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -9314,7 +9298,7 @@
    ]
   },
   {
-   "nextTask": "Why this exists: add the section to glasshouse...",
+   "nextTask": null,
    "costTotalUsd": 57.6,
    "latestChange": {
     "text": "save migration, settings, crew save tests merged (no visible change)",
@@ -9337,8 +9321,8 @@
    "title": "Glasshouse",
    "line": "Lead a line of students through a greenhouse.",
    "url": "https://chenhsieh.github.io/glasshouse/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Decide the best public role for a finished personal game",
    "shelfNote": "",
@@ -9352,7 +9336,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T23:15:14+00:00",
-   "lastChange": "2026-11-06T00:36:24+00:00",
+   "lastChange": "2026-11-06T00:58:01+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -9368,10 +9352,10 @@
    "tasks": [
     {
      "title": "P3PL19_glasshouse why build",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Why this exists: add the section to glasshouse through its build step",
-     "since": "2026-11-02T17:23:53+00:00",
+     "since": "2026-11-06T00:57:57+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -9480,8 +9464,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 8
    },
@@ -11749,7 +11733,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:57:31+00:00",
-   "lastChange": "2026-11-06T00:41:44+00:00",
+   "lastChange": "2026-11-06T00:54:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12927,7 +12911,7 @@
    ]
   },
   {
-   "nextTask": "Lens Screen: finish the client-studio round (one element...",
+   "nextTask": null,
    "costTotalUsd": 32.4,
    "latestChange": {
     "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
@@ -12941,7 +12925,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 3
+    "daysInState": 0
    },
    "waitingOn": "lens screen studio 320 fix",
    "id": "lens-screen",
@@ -12950,8 +12934,8 @@
    "title": "Lens Screen",
    "line": "Drag a screen over the cup.",
    "url": "https://chenhsieh.github.io/lens-screen/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P3",
    "priorityNote": "Storyteller pass on why it is fun",
    "shelfNote": "",
@@ -12965,7 +12949,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T04:07:44+00:00",
-   "lastChange": "2026-11-02T17:23:53+00:00",
+   "lastChange": "2026-11-06T00:50:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -12981,10 +12965,10 @@
    "tasks": [
     {
      "title": "lens screen studio 320 fix",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Lens Screen: finish the client-studio round (one element spills off the left edge on the last level at 320 wide), then publish",
-     "since": "2026-11-02T17:23:53+00:00",
+     "since": "2026-11-06T00:50:44+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -13023,8 +13007,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
@@ -15582,14 +15566,14 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 14.4,
+   "costTotalUsd": 21.6,
    "latestChange": {
-    "text": "Mind Gym live: days 1-5, crates by hand (balance puzzle) or Assistant; bot gate passed",
-    "at": "2026-11-04T02:08:29+00:00"
+    "text": "P2MG04 320px board full width, labels clear; live",
+    "at": "2026-11-06T00:50:43+00:00"
    },
    "promo": null,
    "why": "",
-   "state": "building",
+   "state": "playable",
    "stateFlags": {
     "refining": false,
     "resting": false,
@@ -15597,15 +15581,15 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "mind gym small phone",
+   "waitingOn": "none",
    "id": "mind-gym",
    "number": 170,
    "repo": "mind-gym",
    "title": "Mind Gym",
    "line": "",
    "url": "https://chenhsieh.github.io/mind-gym/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -15618,45 +15602,57 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-11-04T01:25:05+00:00",
-   "lastChange": "2026-11-06T00:46:08+00:00",
+   "lastChange": "2026-11-06T00:50:43+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
-    "totalUsdEst": 14.4
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
+    "totalUsdEst": 21.6
    },
    "tasks": [
     {
      "title": "P2MG04_mind gym small phone",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Mind Gym: the board fits a 320 px phone and Huge text",
-     "since": "2026-11-06T00:41:19+00:00",
-     "done": null,
+     "since": "2026-11-04T02:08:23+00:00",
+     "done": "2026-11-04T02:08:23+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE (live, main , pre-tag pre-p2mg04). Mind Gym at 320x568: the board now takes the full width (296-300 px, was 200 px squeezed beside an empty note column), so Delivered/Sets, Strength, Strain, Assistant and the..."
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-06T00:50:43+00:00",
+     "ok": true,
+     "note": "P2MG04 320px board full width, labels clear; live",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-06T00:49:38+00:00",
+     "ok": true,
+     "note": "fix: Mind Gym fits a 320 px phone: board full width, labels no longer collide",
+     "source": "main commit"
+    },
     {
      "at": "2026-11-04T02:08:29+00:00",
      "ok": true,
@@ -18558,7 +18554,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:05:09+00:00",
-   "lastChange": "2026-11-06T00:46:31+00:00",
+   "lastChange": "2026-11-06T00:56:35+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -18584,8 +18580,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-11-06T00:39:34+00:00",
-      "subject": "wip: lane layout for phones, slanted dry shelter, HUD split, no Undo in a real-time walk"
+      "at": "2026-11-06T00:56:35+00:00",
+      "subject": "wip: 0.25 s step so a walk is 120 moves (playable gate cap 128)"
      },
      "result": ""
     }
@@ -20977,10 +20973,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 58.97,
+   "costTotalUsd": 62.57,
    "latestChange": {
-    "text": "test: save migration and tile save tests run in npm test",
-    "at": "2026-11-06T00:37:15+00:00"
+    "text": "save migration and tile save tests merged and wired into npm test (no visible change)",
+    "at": "2026-11-06T00:47:47+00:00"
    },
    "promo": {
     "files": {
@@ -20993,7 +20989,7 @@
    "why": "The word game Redactle, with real open-access biology papers; guess words to unblank a hidden paper's title and abstract; decoys come from other papers.",
    "state": "released",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
@@ -21006,8 +21002,8 @@
    "title": "Redacxiv",
    "line": "Reveal a paper's title with word tiles.",
    "url": "https://chenhsieh.github.io/redacxiv/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Interface and visual pass; make the first game winnable for",
    "shelfNote": "",
@@ -21021,33 +21017,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T23:15:14+00:00",
-   "lastChange": "2026-11-06T00:37:15+00:00",
+   "lastChange": "2026-11-06T00:47:47+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
-    "claudeRuns": 5,
+    "claudeRuns": 6,
     "apiRuns": 2,
     "codexTokens": 1140773,
     "codexUsdEst": 1.37,
-    "claudeUsdEst": 18.0,
+    "claudeUsdEst": 21.6,
     "earlierRounds": 11,
     "earlierUsdEst": 39.6,
-    "totalUsdEst": 58.97
+    "totalUsdEst": 62.57
    },
    "tasks": [
     {
      "title": "P3SV55_redacxiv merge save tests",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Redacxiv: merge the save tests to main",
-     "since": "2026-11-06T00:36:25+00:00",
-     "done": null,
+     "since": "2026-11-02T17:23:53+00:00",
+     "done": "2026-11-02T17:23:53+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P3SV55 DONE (tests merged) with one open item. BioRedactle-nextjs main : scripts/test-save-migration.ts (195 lines) and scripts/test-tile-saves.ts (143) merged, each branch touched only its one file. package.json \"test\"..."
     },
     {
      "title": "P1FS13_redacxiv one screen",
@@ -21150,9 +21146,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 11
+    "done": 12
    },
    "verdict": {
     "date": "2026-10-20",
@@ -21160,8 +21156,14 @@
     "note": "Redacxiv is ready"
    },
    "needsYou": "The Pages build is stuck: the live page was patched by hand because a full rebuild needs npm, and the old BioRedactle address still returns 404. Suggest: fix the build so the patch is not the only copy; leave the old address.",
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-06T00:47:47+00:00",
+     "ok": true,
+     "note": "save migration and tile save tests merged and wired into npm test (no visible change)",
+     "source": "board note"
+    },
     {
      "at": "2026-11-06T00:37:15+00:00",
      "ok": true,
@@ -21212,12 +21214,6 @@
     },
     {
      "at": "2026-10-21T19:32:52+00:00",
-     "ok": false,
-     "note": "see",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T19:25:22+00:00",
      "ok": false,
      "note": "see",
      "source": "board note"
@@ -23324,10 +23320,10 @@
   },
   {
    "nextTask": "Same Spots: apply the stranger review's fix list...",
-   "costTotalUsd": 7.2,
+   "costTotalUsd": 14.4,
    "latestChange": {
-    "text": "feat: Same Spots starts from the game template",
-    "at": "2026-10-30T05:46:38+00:00"
+    "text": "core built and live: tap-to-repaint hill, preview saves/exposes, 12 hills + daily,...",
+    "at": "2026-11-06T00:59:21+00:00"
    },
    "promo": null,
    "why": "A creature-design plate of an invented spotted beast, beside an ad with one bright seat among grey ones and a handbook chapter on disguise.",
@@ -23339,15 +23335,15 @@
     "reviseRound": 0,
     "daysInState": 3
    },
-   "waitingOn": "same spots core",
+   "waitingOn": "fix same spots after review",
    "id": "same-spots",
    "number": 168,
    "repo": "same-spots",
    "title": "Same Spots",
    "line": "",
    "url": "https://chenhsieh.github.io/same-spots/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -23360,34 +23356,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-30T05:44:03+00:00",
-   "lastChange": "2026-11-06T00:44:50+00:00",
+   "lastChange": "2026-11-06T00:59:21+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 2,
-    "earlierUsdEst": 7.2,
-    "totalUsdEst": 7.2
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 3,
+    "earlierUsdEst": 10.8,
+    "totalUsdEst": 14.4
    },
    "tasks": [
-    {
-     "title": "P2SSP00_same spots core",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Same Spots (同一身斑): build the core (repaint creatures so none looks different in any hawk's view), Codex",
-     "since": "2026-11-06T00:18:36+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2SSP02_fix same spots after review",
      "state": "queued",
@@ -23401,18 +23383,44 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2SSP00_same spots core",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Same Spots (同一身斑): build the core (repaint creatures so none looks different in any hawk's view), Codex",
+     "since": "2026-11-02T17:23:53+00:00",
+     "done": "2026-11-02T17:23:53+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P2SSP00_same-spots-core: DONE, live at https://chenhsieh.github.io/same-spots/ (main -> , tag pre-ssp00-core; Live bytes checked (game.js, levels.json, og.png, game.css, index.html md5 match) and played live at 390x844,..."
     }
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-06T00:59:21+00:00",
+     "ok": true,
+     "note": "core built and live: tap-to-repaint hill, preview saves/exposes, 12 hills + daily, obvious plays miss par 100%",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-06T00:53:36+00:00",
+     "ok": true,
+     "note": "feat: Same Spots is playable: hide every odd one on the hill",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-30T05:46:38+00:00",
      "ok": true,
@@ -31639,31 +31647,31 @@
    ]
   },
   {
-   "nextTask": "UGA Grad Survivor: merge the save test to...",
-   "costTotalUsd": 61.2,
+   "nextTask": null,
+   "costTotalUsd": 64.8,
    "latestChange": {
-    "text": "Zoom guard updated: taps are never cancelled (P1ZM00)",
-    "at": "2026-10-25T02:48:58+00:00"
+    "text": "save test merged (no visible change)",
+    "at": "2026-11-06T00:48:31+00:00"
    },
    "promo": null,
    "why": "Life as a bioinformatics PhD student at UGA, told in the swipe-card style of Reigns.",
    "state": "released",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 13
    },
-   "waitingOn": "grad survivor merge save test",
+   "waitingOn": "none",
    "id": "uga-grad-survivor",
    "number": 2,
    "repo": "UGA-grad-survivor",
    "title": "UGA Grad Survivor",
    "line": "Swipe through a PhD.",
    "url": "https://chenhsieh.github.io/UGA-grad-survivor/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -31676,34 +31684,34 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-10-17T22:50:42+00:00",
-   "lastChange": "2026-11-02T17:23:53+00:00",
+   "firstSeen": "2026-10-17T23:15:14+00:00",
+   "lastChange": "2026-11-06T00:48:31+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 5,
+    "claudeRuns": 6,
     "apiRuns": 2,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 18.0,
+    "claudeUsdEst": 21.6,
     "earlierRounds": 12,
     "earlierUsdEst": 43.2,
-    "totalUsdEst": 61.2
+    "totalUsdEst": 64.8
    },
    "tasks": [
     {
      "title": "P3SV56_grad survivor merge save test",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "UGA Grad Survivor: merge the save test to main",
      "since": "2026-11-02T17:23:53+00:00",
-     "done": null,
+     "done": "2026-11-02T17:23:53+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P3SV56 DONE. UGA-grad-survivor main : test/save.test.mjs (157 lines, only file) merged. Read it: covers v3 kept, v3 without badges gives empty array, v2 ignored, corrupt JSON ignored, saved run valid/unknown..."
     },
     {
      "title": "P3OR87_grad survivor save test",
@@ -31805,10 +31813,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 7
+    "done": 8
    },
    "verdict": {
     "date": "2026-10-20",
@@ -31816,8 +31824,26 @@
     "note": "Looks good"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-06T00:48:31+00:00",
+     "ok": true,
+     "note": "save test merged (no visible change)",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-06T00:47:58+00:00",
+     "ok": true,
+     "note": "start: P3SV56 grad survivor merge save test",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T06:14:45+00:00",
+     "ok": true,
+     "note": "P3OR87_grad-survivor-save-test: WORKDIR",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T02:48:58+00:00",
      "ok": true,
@@ -31864,30 +31890,6 @@
      "at": "2026-10-20T20:20:18+00:00",
      "ok": true,
      "note": "fix: answers fit on small phones, Chinese mode says cards are English",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T20:10:44+00:00",
-     "ok": true,
-     "note": "copy edit: 182 strings plainer (cards, character/advisor rules match code, Year N fall/spring labels, endings, speaker labels); data diff proves strings only; main https://chenhsieh.github.io/UGA-grad-survivor/",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-20T20:07:08+00:00",
-     "ok": true,
-     "note": "fix: cards read like a tired grad student, not a joke generator",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T19:53:42+00:00",
-     "ok": true,
-     "note": "start screen waits for player, advisor picked not dealt, timeline facts fixed in cards, callbacks gated, timeline test; live",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-20T19:51:56+00:00",
-     "ok": true,
-     "note": "fix: start screen waits for the player, advisor is picked not dealt, cards stop contradicting the semester",
      "source": "main commit"
     }
    ]
@@ -32419,7 +32421,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:52:16+00:00",
-   "lastChange": "2026-11-06T00:46:59+00:00",
+   "lastChange": "2026-11-06T00:59:26+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -32445,8 +32447,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-11-06T00:46:42+00:00",
-      "subject": "wip: P2WP00_watched-pot-review-fixes (Codex lane autosave 19:46)"
+      "at": "2026-11-06T00:54:44+00:00",
+      "subject": "wip: P2WP00_watched-pot-review-fixes (Codex lane autosave 19:54)"
      },
      "result": ""
     },
@@ -33148,30 +33150,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 86.59,
+   "costTotalUsd": 90.19,
    "latestChange": {
-    "text": "One screen: result card pinned to the bottom with Next level first; a swipe from the...",
-    "at": "2026-10-25T06:39:12+00:00"
+    "text": "Why this exists section live (P3PL16)",
+    "at": "2026-11-06T00:57:56+00:00"
    },
    "promo": null,
    "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 15
+    "daysInState": 0
    },
-   "waitingOn": "readable nonsense why rollout",
+   "waitingOn": "none",
    "id": "readable-nonsense",
    "number": 75,
    "repo": "readable-nonsense",
    "title": "阿嬤讀得出來",
    "line": "A famous Tang poem line is printed as fake glyphs with.",
    "url": "https://chenhsieh.github.io/readable-nonsense/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Start error blocks play",
    "shelfNote": "",
@@ -33185,27 +33187,27 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:29:52+00:00",
-   "lastChange": "2026-11-06T00:45:21+00:00",
+   "lastChange": "2026-11-06T00:57:56+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 3,
-    "claudeRuns": 9,
+    "claudeRuns": 10,
     "apiRuns": 0,
     "codexTokens": 697578,
     "codexUsdEst": 0.84,
-    "claudeUsdEst": 32.4,
+    "claudeUsdEst": 36.0,
     "earlierRounds": 14,
     "earlierUsdEst": 50.4,
-    "totalUsdEst": 86.59
+    "totalUsdEst": 90.19
    },
    "tasks": [
     {
      "title": "P3PL16_readable nonsense why rollout",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Why this exists: finish the rollout on readable-nonsense (new test failure: test/onerule.test.mjs, the How to play car)",
-     "since": "2026-11-06T00:45:18+00:00",
-     "done": null,
+     "since": "2026-11-02T17:23:53+00:00",
+     "done": "2026-11-02T17:23:53+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -33314,9 +33316,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 12
+    "done": 13
    },
    "verdict": {
     "date": "2026-10-21",
@@ -33324,8 +33326,20 @@
     "note": "Start error"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-06T00:57:56+00:00",
+     "ok": true,
+     "note": "Why this exists section live (P3PL16)",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-06T00:56:37+00:00",
+     "ok": true,
+     "note": "feat: a Why this exists button on the How to play card",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T06:39:12+00:00",
      "ok": true,
@@ -33385,18 +33399,6 @@
      "ok": true,
      "note": "visual round: 3 mocks (primer, stamps, calendar), primer picked, build spec in design/VISUAL_ROUND.md",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-24T00:48:18+00:00",
-     "ok": true,
-     "note": "design: three looks for the visual round, school primer picked",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T23:54:26+00:00",
-     "ok": true,
-     "note": "P3OR33_readable-nonsense-link-preview: WORKDIR",
-     "source": "main commit"
     }
    ]
   }
@@ -33476,9 +33478,9 @@
    "ran": 0
   },
   "saves": {
-   "yes": 103,
+   "yes": 105,
    "no": 0,
-   "unknown": 68,
+   "unknown": 66,
    "ran": 0
   },
   "standard": {

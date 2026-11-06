@@ -1,5 +1,5 @@
 {
- "generated": 1793926053,
+ "generated": 1793926793,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -28,9 +28,9 @@
  },
  "tasks": [
   {
-   "id": "P3PL16_readable-nonsense-why-rollout",
-   "request": "Why this exists: finish the rollout on readable-nonsense (new test failure: test/onerule.test.mjs, the How to play car)",
-   "game": "阿嬤讀得出來",
+   "id": "P3PL19_glasshouse-why-build",
+   "request": "Why this exists: add the section to glasshouse through its build step",
+   "game": "Glasshouse",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
@@ -38,10 +38,10 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P1FS23_readable-nonsense-one-screen"
+    "P3SV54_glasshouse-merge-save-tests"
    ],
    "priority": "P1",
-   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
+   "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
    "state": "running",
    "at": 1793640233,
    "created": 1793640233
@@ -98,54 +98,34 @@
    "created": 1793640233
   },
   {
-   "id": "P2MG04_mind-gym-small-phone",
-   "request": "Mind Gym: the board fits a 320 px phone and Huge text",
-   "game": "Mind Gym",
+   "id": "P3d35_lens-screen-studio-320-fix",
+   "request": "Lens Screen: finish the client-studio round (one element spills off the left edge on the last level at 320 wide), then publish",
+   "game": "Lens Screen",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1LFT00_mind-gym-prototype"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1793758103,
-   "created": 1793758103
-  },
-  {
-   "id": "P2SSP00_same-spots-core",
-   "request": "Same Spots (同一身斑): build the core (repaint creatures so none looks different in any hawk's view), Codex",
-   "game": "Same Spots",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
+   "kind": "fix",
    "size": "one repo",
    "estMinutes": null,
    "after": [],
-   "priority": null,
-   "why": "A creature-design plate of an invented spotted beast, beside an ad with one bright seat among grey ones and a handbook chapter on disguise.",
+   "priority": "P3",
+   "why": "A short video of a photographer shooting through a printed patterned glass screen instead of using editing software.",
    "state": "running",
    "at": 1793640233,
    "created": 1793640233
   },
   {
-   "id": "P2UX08_daily-brief-first-screen",
-   "request": "Board opens on a daily brief with three decisions and their defaults",
+   "id": "P2SSP01_review-same-spots",
+   "request": "Opus stranger review of same-spots after its core build",
    "game": "Studio",
    "route": "Claude",
-   "model": "sonnet",
+   "model": "opus",
    "effort": "high",
-   "kind": "idea",
+   "kind": "review",
    "size": "studio",
    "estMinutes": null,
    "after": [
-    "P1UX06_action-sheet-and-request-cards",
-    "P2UX07_daily-brief-data"
+    "P2SSP00_same-spots-core"
    ],
    "priority": null,
    "why": "",
@@ -248,26 +228,6 @@
    "created": 1793640233
   },
   {
-   "id": "P3SV55_redacxiv-merge-save-tests",
-   "request": "Redacxiv: merge the save tests to main",
-   "game": "Redacxiv",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P3OR85_redacxiv-save-migration-test",
-    "P3OR86_redacxiv-tile-save-test"
-   ],
-   "priority": null,
-   "why": "The word game Redactle, with real open-access biology papers; guess words to unblank a hidden paper's title and abstract; decoys come from other papers.",
-   "state": "running",
-   "at": 1793640233,
-   "created": 1793640233
-  },
-  {
    "id": "P1MH65_bout3-turn-guardrail",
    "request": "Mirror Hold",
    "game": "Mirror Hold",
@@ -287,42 +247,6 @@
    "created": 1793924514
   },
   {
-   "id": "P3PL19_glasshouse-why-build",
-   "request": "Why this exists: add the section to glasshouse through its build step",
-   "game": "Glasshouse",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P3SV54_glasshouse-merge-save-tests"
-   ],
-   "priority": "P1",
-   "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1793640233
-  },
-  {
-   "id": "P3d35_lens-screen-studio-320-fix",
-   "request": "Lens Screen: finish the client-studio round (one element spills off the left edge on the last level at 320 wide), then publish",
-   "game": "Lens Screen",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "fix",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P3",
-   "why": "A short video of a photographer shooting through a printed patterned glass screen instead of using editing software.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1793640233
-  },
-  {
    "id": "P3SB58_tickets-15-17-fit-320",
    "request": "P3SB58_tickets 15 17 fit 320",
    "game": "Studio",
@@ -337,46 +261,6 @@
    "why": "",
    "state": "ready",
    "waitingOn": [],
-   "created": 1793640233
-  },
-  {
-   "id": "P3SV56_grad-survivor-merge-save-test",
-   "request": "UGA Grad Survivor: merge the save test to main",
-   "game": "UGA Grad Survivor",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P3OR87_grad-survivor-save-test"
-   ],
-   "priority": null,
-   "why": "Life as a bioinformatics PhD student at UGA, told in the swipe-card style of Reigns.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1793640233
-  },
-  {
-   "id": "P2SSP01_review-same-spots",
-   "request": "Opus stranger review of same-spots after its core build",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2SSP00_same-spots-core"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2SSP00_same-spots-core"
-   ],
    "created": 1793640233
   },
   {
