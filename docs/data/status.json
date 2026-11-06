@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-06T02:35:19+00:00",
+ "generated": "2026-11-06T02:45:53+00:00",
  "ops": {
-  "count": 3,
+  "count": 2,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "Two tasks share the number P2SSP01."
@@ -30,15 +30,15 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 6,
-    "doneToday": 4,
-    "minutes": 420,
-    "estimateMinutes": 210
+    "running": 4,
+    "doneToday": 6,
+    "minutes": 300,
+    "estimateMinutes": 150
    }
   },
   "queued": 3,
-  "running": 6,
-  "doneToday": 7,
+  "running": 4,
+  "doneToday": 9,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -48,27 +48,11 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 500,
-  "estimatedFinish": "2026-11-06T06:05:19+00:00",
-  "estimateMinutes": 210
+  "minutesRemaining": 380,
+  "estimatedFinish": "2026-11-06T05:15:53+00:00",
+  "estimateMinutes": 150
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "ac-remote",
-   "task": "P2AC03_ac remote clarity",
-   "since": "2026-11-06T02:22:44+00:00",
-   "activity": "2026-11-06T02:29:42+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "same-spots",
-   "task": "P2SSP03_same spots clarity",
-   "since": "2026-11-06T01:56:19+00:00",
-   "activity": "2026-11-06T02:33:27+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "dancers-not-mad",
@@ -103,11 +87,11 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 6,
+ "claudeWorkers": 4,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
-  "runs": 364,
-  "usdEst": 1310.4,
+  "runs": 366,
+  "usdEst": 1317.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -197,7 +181,7 @@
   },
   {
    "day": "2026-11-05",
-   "changes": 33
+   "changes": 35
   }
  ],
  "houseRules": 25,
@@ -404,10 +388,10 @@
   },
   {
    "nextTask": "The AC Remote visual round: one office with...",
-   "costTotalUsd": 21.6,
+   "costTotalUsd": 28.8,
    "latestChange": {
-    "text": "core live: readable mugs, hold to preview a swap, kit lesson, drawn preview, kit 21",
-    "at": "2026-11-06T01:04:31+00:00"
+    "text": "P2AC03: Huge text board readable at 320 px, lesson ring off the numbers, clearer first...",
+    "at": "2026-11-06T02:41:42+00:00"
    },
    "promo": null,
    "why": "A remix of the chai boil dial and Thin Walls, set in an office with one shared air-conditioner remote.",
@@ -419,15 +403,15 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "ac remote clarity",
+   "waitingOn": "ac remote visual round",
    "id": "ac-remote",
    "number": 165,
    "repo": "ac-remote",
    "title": "Ac Remote",
    "line": "",
    "url": "https://chenhsieh.github.io/ac-remote/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -440,34 +424,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:13:24+00:00",
-   "lastChange": "2026-11-06T02:29:42+00:00",
+   "lastChange": "2026-11-06T02:41:42+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
-    "totalUsdEst": 21.6
+    "claudeUsdEst": 7.2,
+    "earlierRounds": 6,
+    "earlierUsdEst": 21.6,
+    "totalUsdEst": 28.8
    },
    "tasks": [
-    {
-     "title": "P2AC03_ac remote clarity",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-11-06T02:22:44+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "ac remote visual round",
      "state": "queued",
@@ -481,6 +451,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2AC03_ac remote clarity",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-11-06T01:56:19+00:00",
+     "done": "2026-11-06T01:56:19+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P2AC03 AC Remote clarity (lane L13, Sonnet): DONE, live https://chenhsieh.github.io/ac-remote/ (main -> , tag pre-clarity)"
     },
     {
      "title": "ac remote",
@@ -499,9 +483,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": {
     "date": "2026-11-06",
@@ -511,6 +495,18 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-06T02:41:42+00:00",
+     "ok": true,
+     "note": "P2AC03: Huge text board readable at 320 px, lesson ring off the numbers, clearer first screen, '1 swap' share fix",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-06T02:40:41+00:00",
+     "ok": true,
+     "note": "fix: The AC Remote stays readable at Huge text on a small phone, and the lesson ring leaves the numbers alone",
+     "source": "main commit"
+    },
     {
      "at": "2026-11-06T01:04:31+00:00",
      "ok": true,
@@ -18766,7 +18762,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 1
+    "daysInState": 2
    },
    "waitingOn": "none",
    "id": "open-play",
@@ -23516,30 +23512,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 25.2,
+   "costTotalUsd": 28.8,
    "latestChange": {
-    "text": "fix: Same Spots opens on one card, creatures change markings, board cells stay 44 px on...",
-    "at": "2026-11-06T02:33:27+00:00"
+    "text": "P2SSP03: one first card, creatures change markings (no mud), cells >=44 px on 320 px...",
+    "at": "2026-11-06T02:36:30+00:00"
    },
    "promo": null,
    "why": "A creature-design plate of an invented spotted beast, beside an ad with one bright seat among grey ones and a handbook chapter on disguise.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
     "daysInState": 0
    },
-   "waitingOn": "same spots clarity",
+   "waitingOn": "none",
    "id": "same-spots",
    "number": 168,
    "repo": "same-spots",
    "title": "Same Spots",
    "line": "",
    "url": "https://chenhsieh.github.io/same-spots/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -23552,33 +23548,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-30T05:44:03+00:00",
-   "lastChange": "2026-11-06T02:33:27+00:00",
+   "lastChange": "2026-11-06T02:36:30+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 7.2,
+    "claudeUsdEst": 10.8,
     "earlierRounds": 5,
     "earlierUsdEst": 18.0,
-    "totalUsdEst": 25.2
+    "totalUsdEst": 28.8
    },
    "tasks": [
     {
      "title": "P2SSP03_same spots clarity",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "",
      "since": "2026-11-06T01:56:19+00:00",
-     "done": null,
+     "done": "2026-11-06T01:56:19+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P2SSP03 Same Spots clarity (lane L13, Sonnet): DONE, live https://chenhsieh.github.io/same-spots/ (main -> , tag pre-clarity)"
     },
     {
      "title": "P2SSP00_same spots core",
@@ -23611,9 +23607,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": {
     "date": "2026-11-06",
@@ -23621,8 +23617,14 @@
     "note": "Copying a neighbour loses on every hill after 3, but trying markings in the preview and keeping the best reaches par on most hills: the hills need a real plan"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-06T02:36:30+00:00",
+     "ok": true,
+     "note": "P2SSP03: one first card, creatures change markings (no mud), cells >=44 px on 320 px phones, 'best possible' win line",
+     "source": "board note"
+    },
     {
      "at": "2026-11-06T02:33:27+00:00",
      "ok": true,
@@ -29995,7 +29997,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 2
+    "daysInState": 3
    },
    "waitingOn": "none",
    "id": "three-dials",
