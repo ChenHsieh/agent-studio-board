@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-06T01:31:30+00:00",
+ "generated": "2026-11-06T01:42:07+00:00",
  "ops": {
-  "count": 12,
+  "count": 7,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "Two tasks share the number P2SSP01."
@@ -22,11 +22,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 6,
+    "queued": 5,
     "running": 1,
     "doneToday": 1,
-    "minutes": 280,
-    "estimateMinutes": 280
+    "minutes": 240,
+    "estimateMinutes": 240
    },
    "Claude": {
     "queued": 1,
@@ -36,7 +36,7 @@
     "estimateMinutes": 270
    }
   },
-  "queued": 7,
+  "queued": 6,
   "running": 9,
   "doneToday": 1,
   "lanes": {
@@ -48,21 +48,29 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 820,
-  "estimatedFinish": "2026-11-06T06:11:30+00:00",
-  "estimateMinutes": 280
+  "minutesRemaining": 780,
+  "estimatedFinish": "2026-11-06T06:12:07+00:00",
+  "estimateMinutes": 270
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "iron-window-garden",
+   "task": "P2IWG00_iron window garden review fixes",
+   "since": "2026-11-06T01:33:52+00:00",
+   "activity": "2026-11-06T01:41:44+00:00",
+   "commit": {
+    "at": "2026-11-06T01:41:44+00:00",
+    "subject": "wip: harder dailies and levels 7-12 with par 4 to 6"
+   }
+  },
   {
    "worker": "Codex",
    "game": "watched-pot",
    "task": "P2WP00_watched pot review fixes",
-   "since": "2026-11-06T00:38:34+00:00",
-   "activity": "2026-11-06T01:31:24+00:00",
-   "commit": {
-    "at": "2026-11-06T01:30:44+00:00",
-    "subject": "fix: clear stale touch state"
-   }
+   "since": "2026-11-06T01:39:36+00:00",
+   "activity": "2026-11-06T01:39:20+00:00",
+   "commit": null
   },
   {
    "worker": "Claude",
@@ -77,15 +85,7 @@
    "game": "rolling-back",
    "task": "rolling back",
    "since": "2026-11-06T01:20:06+00:00",
-   "activity": "2026-11-06T01:30:22+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "review round table and iron window garden",
-   "since": null,
-   "activity": null,
+   "activity": "2026-11-06T01:39:37+00:00",
    "commit": null
   },
   {
@@ -125,7 +125,7 @@
    "game": "lens-screen",
    "task": "lens screen studio 320 fix",
    "since": "2026-11-06T00:50:44+00:00",
-   "activity": "2026-11-06T01:30:42+00:00",
+   "activity": "2026-11-06T01:33:19+00:00",
    "commit": null
   }
  ],
@@ -133,8 +133,8 @@
  "claudeWorkers": 8,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
-  "runs": 359,
-  "usdEst": 1292.4,
+  "runs": 360,
+  "usdEst": 1296.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -224,7 +224,7 @@
   },
   {
    "day": "2026-11-05",
-   "changes": 21
+   "changes": 24
   }
  ],
  "houseRules": 25,
@@ -6687,7 +6687,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 5
+    "daysInState": 6
    },
    "waitingOn": "none",
    "id": "felt-years",
@@ -11728,30 +11728,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 21.6,
+   "costTotalUsd": 25.2,
    "latestChange": {
-    "text": "core live: rack, drip arrow, forecast, awning, hold preview; 12 levels + daily all bots...",
-    "at": "2026-11-06T01:26:42+00:00"
+    "text": "P2n98 review (self, flagged): revise (par = nights on most weeks, medal trivial; win...",
+    "at": "2026-11-06T01:32:46+00:00"
    },
    "promo": null,
    "why": "A remix of the chai boil lag and Even Water, set on the planter racks behind iron window grilles.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
-    "reviseRound": 0,
+    "reviseRound": 1,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "iron window garden review fixes",
    "id": "iron-window-garden",
    "number": 159,
    "repo": "iron-window-garden",
    "title": "Iron Window Garden",
    "line": "",
    "url": "https://chenhsieh.github.io/iron-window-garden/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -11764,7 +11764,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:57:31+00:00",
-   "lastChange": "2026-11-06T01:26:42+00:00",
+   "lastChange": "2026-11-06T01:41:44+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -11773,11 +11773,28 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
-    "totalUsdEst": 21.6
+    "earlierRounds": 6,
+    "earlierUsdEst": 21.6,
+    "totalUsdEst": 25.2
    },
    "tasks": [
+    {
+     "title": "P2IWG00_iron window garden review fixes",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Iron Window Garden: weeks where the closed can matters, the win picture stays in view",
+     "since": "2026-11-06T01:33:52+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": {
+      "at": "2026-11-06T01:41:44+00:00",
+      "subject": "wip: harder dailies and levels 7-12 with par 4 to 6"
+     },
+     "result": ""
+    },
     {
      "title": "iron window garden",
      "state": "done",
@@ -11795,14 +11812,24 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-11-06",
+    "verdict": "revise",
+    "note": "Watering the driest pot and every safe-tonight habit lose on every level after level 4, but most weeks need a can every morning, so the fewest-cans medal asks nothing; reviewer also built it"
+   },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-06T01:32:46+00:00",
+     "ok": true,
+     "note": "P2n98 review (self, flagged): revise (par = nights on most weeks, medal trivial; win sheet covers rack); fix task P2IWG00",
+     "source": "board note"
+    },
     {
      "at": "2026-11-06T01:26:42+00:00",
      "ok": true,
@@ -11999,7 +12026,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 11
+    "daysInState": 12
    },
    "waitingOn": "none",
    "id": "keep-both",
@@ -12537,7 +12564,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 11
+    "daysInState": 12
    },
    "waitingOn": "none",
    "id": "lamp-spiral",
@@ -12992,7 +13019,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T04:07:44+00:00",
-   "lastChange": "2026-11-06T01:30:42+00:00",
+   "lastChange": "2026-11-06T01:33:19+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -16598,7 +16625,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 11
+    "daysInState": 12
    },
    "waitingOn": "none",
    "id": "motif-hero",
@@ -17200,7 +17227,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 11
+    "daysInState": 12
    },
    "waitingOn": "none",
    "id": "no-unison",
@@ -17902,7 +17929,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 11
+    "daysInState": 12
    },
    "waitingOn": "none",
    "id": "notched-boat",
@@ -22603,7 +22630,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:08:19+00:00",
-   "lastChange": "2026-11-06T01:30:22+00:00",
+   "lastChange": "2026-11-06T01:39:37+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -22894,19 +22921,19 @@
   },
   {
    "nextTask": "Round Table: a table the obvious turn cannot...",
-   "costTotalUsd": 18.19,
+   "costTotalUsd": 21.79,
    "latestChange": {
-    "text": "feat: turn the table to feed every seat",
-    "at": "2026-10-27T12:50:56+00:00"
+    "text": "P2n98 review: revise (obvious safe-greedy clears 7/9 levels after 3, daily = 6 tables,...",
+    "at": "2026-11-06T01:32:46+00:00"
    },
    "promo": null,
    "why": "A remix of equal-shares and gift-route ideas with the shared-table ledger, scaled to a banquet lazy Susan.",
-   "state": "building",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
     "resting": false,
     "regressed": false,
-    "reviseRound": 0,
+    "reviseRound": 1,
     "daysInState": 0
    },
    "waitingOn": "round table review fixes",
@@ -22930,7 +22957,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:54:48+00:00",
-   "lastChange": "2026-11-06T01:31:27+00:00",
+   "lastChange": "2026-11-06T01:33:19+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -22939,9 +22966,9 @@
     "codexTokens": 157214,
     "codexUsdEst": 0.19,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
-    "totalUsdEst": 18.19
+    "earlierRounds": 6,
+    "earlierUsdEst": 21.6,
+    "totalUsdEst": 21.79
    },
    "tasks": [
     {
@@ -22949,7 +22976,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Round Table: a table the obvious turn cannot clear, a real safe fail on level 2, a fresh daily",
-     "since": "2026-11-06T01:31:27+00:00",
+     "since": "2026-11-06T01:33:19+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -22979,10 +23006,20 @@
     "waitingDesign": 0,
     "done": 1
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-11-06",
+    "verdict": "revise",
+    "note": "One turn feeds the whole table and reads well, but turning to feed the most seats without emptying a wanted dish clears 7 of 9 levels after level 3, and the daily is six tables in rotation"
+   },
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-06T01:32:46+00:00",
+     "ok": true,
+     "note": "P2n98 review: revise (obvious safe-greedy clears 7/9 levels after 3, daily = 6 tables, 320 scroll); fix task P2RT00",
+     "source": "board note"
+    },
     {
      "at": "2026-10-27T12:50:56+00:00",
      "ok": true,
@@ -25701,7 +25738,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 11
+    "daysInState": 12
    },
    "waitingOn": "none",
    "id": "silent-disco",
@@ -29682,7 +29719,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 11
+    "daysInState": 12
    },
    "waitingOn": "none",
    "id": "thirsty-clicks",
@@ -29878,10 +29915,10 @@
    },
    "promo": null,
    "why": "",
-   "state": "playable",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 2
@@ -32542,7 +32579,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:52:16+00:00",
-   "lastChange": "2026-11-06T01:31:24+00:00",
+   "lastChange": "2026-11-06T01:39:20+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -32561,16 +32598,13 @@
      "state": "running",
      "worker": "Codex",
      "plan": "Watched Pot: keep the grown stone in view on the win, a fresh daily stone every day, bigger cells on small phones",
-     "since": "2026-11-06T00:38:34+00:00",
+     "since": "2026-11-06T01:39:36+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-11-06T01:30:44+00:00",
-      "subject": "fix: clear stale touch state"
-     },
+     "commit": null,
      "result": ""
     },
     {
