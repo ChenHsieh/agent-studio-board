@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-06T00:38:28+00:00",
+ "generated": "2026-11-06T00:47:18+00:00",
  "ops": {
-  "count": 4,
+  "count": 8,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 16,
-    "running": 0,
-    "doneToday": 0,
-    "minutes": 640,
-    "estimateMinutes": 640
+    "queued": 10,
+    "running": 1,
+    "doneToday": 1,
+    "minutes": 440,
+    "estimateMinutes": 440
    },
    "Claude": {
     "queued": 1,
@@ -34,9 +34,9 @@
     "estimateMinutes": 390
    }
   },
-  "queued": 17,
-  "running": 12,
-  "doneToday": 0,
+  "queued": 11,
+  "running": 13,
+  "doneToday": 1,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -46,17 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1420,
-  "estimatedFinish": "2026-11-06T11:18:28+00:00",
-  "estimateMinutes": 640
+  "minutesRemaining": 1220,
+  "estimatedFinish": "2026-11-06T08:07:18+00:00",
+  "estimateMinutes": 440
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "long-way-round",
-   "task": "P2LR02_fix long way round after review",
-   "since": "2026-11-06T00:26:42+00:00",
-   "activity": "2026-11-06T00:33:52+00:00",
+   "game": "mind-gym",
+   "task": "P2MG04_mind gym small phone",
+   "since": "2026-11-06T00:41:19+00:00",
+   "activity": "2026-11-06T00:46:08+00:00",
    "commit": null
   },
   {
@@ -64,23 +64,34 @@
    "game": "same-spots",
    "task": "P2SSP00_same spots core",
    "since": "2026-11-06T00:18:36+00:00",
-   "activity": "2026-11-06T00:37:54+00:00",
+   "activity": "2026-11-06T00:44:50+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
    "game": "Multiple games",
-   "task": "P2UX07_daily brief data",
+   "task": "P2UX08_daily brief first screen",
    "since": null,
    "activity": null,
    "commit": null
+  },
+  {
+   "worker": "Codex",
+   "game": "watched-pot",
+   "task": "P2WP00_watched pot review fixes",
+   "since": "2026-11-06T00:38:34+00:00",
+   "activity": "2026-11-06T00:46:59+00:00",
+   "commit": {
+    "at": "2026-11-06T00:46:42+00:00",
+    "subject": "wip: P2WP00_watched-pot-review-fixes (Codex lane autosave 19:46)"
+   }
   },
   {
    "worker": "Claude",
    "game": "iron-window-garden",
    "task": "iron window garden",
    "since": "2026-11-06T00:32:06+00:00",
-   "activity": "2026-11-06T00:32:13+00:00",
+   "activity": "2026-11-06T00:41:44+00:00",
    "commit": null
   },
   {
@@ -88,26 +99,18 @@
    "game": "one-umbrella",
    "task": "one umbrella",
    "since": "2026-11-06T00:18:34+00:00",
-   "activity": "2026-11-06T00:36:22+00:00",
+   "activity": "2026-11-06T00:46:31+00:00",
    "commit": {
-    "at": "2026-11-06T00:28:34+00:00",
-    "subject": "wip: rain model per brief (no drying), 0.1 s step, bots table, kit 21"
+    "at": "2026-11-06T00:39:34+00:00",
+    "subject": "wip: lane layout for phones, slanted dry shelter, HUD split, no Undo in a real-time walk"
    }
   },
   {
    "worker": "Claude",
-   "game": "gold-star",
-   "task": "gold star",
-   "since": "2026-11-06T00:18:34+00:00",
-   "activity": "2026-11-06T00:33:19+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "name-to-carry",
-   "task": "P3PL12_name to carry why rollout",
-   "since": "2026-11-06T00:27:29+00:00",
-   "activity": "2026-11-06T00:37:07+00:00",
+   "game": "ac-remote",
+   "task": "ac remote",
+   "since": "2026-11-06T00:41:48+00:00",
+   "activity": "2026-11-06T00:45:48+00:00",
    "commit": null
   },
   {
@@ -124,6 +127,14 @@
    "task": "P3PL14_speaking stone why rollout",
    "since": "2026-11-02T17:26:15+00:00",
    "activity": "2026-11-06T00:24:45+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "readable-nonsense",
+   "task": "P3PL16_readable nonsense why rollout",
+   "since": "2026-11-06T00:45:18+00:00",
+   "activity": "2026-11-06T00:45:21+00:00",
    "commit": null
   },
   {
@@ -155,8 +166,8 @@
  "claudeWorkers": 12,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
-  "runs": 338,
-  "usdEst": 1216.8,
+  "runs": 346,
+  "usdEst": 1245.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -246,17 +257,17 @@
   },
   {
    "day": "2026-11-05",
-   "changes": 6
+   "changes": 10
   }
  ],
  "houseRules": 25,
  "games": [
   {
    "nextTask": null,
-   "costTotalUsd": 36.32,
+   "costTotalUsd": 39.92,
    "latestChange": {
-    "text": "feat: a Why this exists note in the How to play card",
-    "at": "2026-11-06T00:37:07+00:00"
+    "text": "Why this exists section live (P3PL12)",
+    "at": "2026-11-06T00:39:19+00:00"
    },
    "promo": {
     "files": {
@@ -266,10 +277,10 @@
     "caption": "Eight scenes, ministry tiers and a share card: carry a name through the forms, Mandarin first."
    },
    "why": "A paper abstract linking rare characters in given names to wellbeing, read with how Mandarin speakers spell out a name aloud.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
@@ -281,8 +292,8 @@
    "title": "A Name to Carry",
    "line": "Eight scenes, ministry tiers and a share card: carry a name through the forms, Mandarin first.",
    "url": "https://chenhsieh.github.io/name-to-carry/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Eight scenes, ministry tiers and a share card: carry a name through the forms,",
    "shelfNote": "",
@@ -296,27 +307,27 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T02:25:43+00:00",
-   "lastChange": "2026-11-06T00:37:07+00:00",
+   "lastChange": "2026-11-06T00:39:19+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 268663,
     "codexUsdEst": 0.32,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 9,
     "earlierUsdEst": 32.4,
-    "totalUsdEst": 36.32
+    "totalUsdEst": 39.92
    },
    "tasks": [
     {
      "title": "P3PL12_name to carry why rollout",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Why this exists: finish the rollout on name-to-carry (new test failure: test/name.test.mjs, zh glyphs 工 室 創 are mi)",
-     "since": "2026-11-06T00:27:29+00:00",
-     "done": null,
+     "since": "2026-11-02T17:23:53+00:00",
+     "done": "2026-11-02T17:23:53+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -369,14 +380,20 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": null,
    "needsYou": "Native read of the Mandarin phrases across the 8 scenes is still owed before sharing. Suggest: have a native reader check them first, Mandarin leads the game.",
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-06T00:39:19+00:00",
+     "ok": true,
+     "note": "Why this exists section live (P3PL12)",
+     "source": "board note"
+    },
     {
      "at": "2026-11-06T00:37:07+00:00",
      "ok": true,
@@ -442,17 +459,11 @@
      "ok": true,
      "note": "feat: A Name to Carry starts from the game template",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T02:25:43+00:00",
-     "ok": true,
-     "note": "Initial commit",
-     "source": "main commit"
     }
    ]
   },
   {
-   "nextTask": "Swap office seats each hour so nobody gets...",
+   "nextTask": null,
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "P2n96_ac-remote handed to Claude: Codex hit the 90 min cap;",
@@ -466,7 +477,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 3
+    "daysInState": 0
    },
    "waitingOn": "ac remote",
    "id": "ac-remote",
@@ -475,8 +486,8 @@
    "title": "Ac Remote",
    "line": "",
    "url": "https://chenhsieh.github.io/ac-remote/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -489,7 +500,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:13:24+00:00",
-   "lastChange": "2026-11-02T17:23:53+00:00",
+   "lastChange": "2026-11-06T00:45:48+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -505,10 +516,10 @@
    "tasks": [
     {
      "title": "ac remote",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Swap office seats each hour so nobody gets up to touch the air-conditioner remote: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-11-02T17:23:53+00:00",
+     "since": "2026-11-06T00:41:48+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -519,8 +530,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
@@ -7787,31 +7798,31 @@
    ]
   },
   {
-   "nextTask": "Why this exists: finish the rollout on flying-white...",
-   "costTotalUsd": 108.91,
+   "nextTask": null,
+   "costTotalUsd": 112.51,
    "latestChange": {
-    "text": "One screen: port to the one-screen glue, goals in one sentence",
-    "at": "2026-10-25T09:13:58+00:00"
+    "text": "Why this exists section live (P3PL15)",
+    "at": "2026-11-06T00:45:17+00:00"
    },
    "promo": null,
    "why": "A commentary on a 2002 martial-arts film that tells one story three ways, where the character for sword is written 19 ways.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 13
+    "daysInState": 0
    },
-   "waitingOn": "flying white why rollout",
+   "waitingOn": "none",
    "id": "flying-white",
    "number": 117,
    "repo": "flying-white",
    "title": "Flying White",
    "line": "",
    "url": "https://chenhsieh.github.io/flying-white/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Higher priority: real rubbing sources, hilarious teacher, growth, free writing",
    "shelfNote": "",
@@ -7825,27 +7836,27 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T05:31:34+00:00",
-   "lastChange": "2026-11-02T17:23:53+00:00",
+   "lastChange": "2026-11-06T00:45:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
-    "claudeRuns": 14,
+    "claudeRuns": 15,
     "apiRuns": 0,
     "codexTokens": 754828,
     "codexUsdEst": 0.91,
-    "claudeUsdEst": 50.4,
+    "claudeUsdEst": 54.0,
     "earlierRounds": 16,
     "earlierUsdEst": 57.6,
-    "totalUsdEst": 108.91
+    "totalUsdEst": 112.51
    },
    "tasks": [
     {
      "title": "P3PL15_flying white why rollout",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "Why this exists: finish the rollout on flying-white (new test failure: test/font.test.mjs, zh glyphs 偶制創原啟壓意控注然狀界)",
      "since": "2026-11-02T17:23:53+00:00",
-     "done": null,
+     "done": "2026-11-02T17:23:53+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -7953,10 +7964,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 18
+    "done": 19
    },
    "verdict": {
     "date": "2026-10-23",
@@ -7964,8 +7975,20 @@
     "note": "The deadpan red-seal teacher is the best thing here; after you hand in on a small phone the result draws over the top bar and Next sits below the screen"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-06T00:45:17+00:00",
+     "ok": true,
+     "note": "Why this exists section live (P3PL15)",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-06T00:43:58+00:00",
+     "ok": true,
+     "note": "feat: a Why this exists note in the How to play card",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T09:13:58+00:00",
      "ok": true,
@@ -8024,18 +8047,6 @@
      "at": "2026-10-23T03:59:03+00:00",
      "ok": true,
      "note": "ancient album surface live (paper ground, title slip, silk mounts, TW-Kai); main",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-23T03:57:25+00:00",
-     "ok": true,
-     "note": "feat: Flying White looks like an old album, not an app",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-23T02:09:59+00:00",
-     "ok": false,
-     "note": "see",
      "source": "board note"
     }
    ]
@@ -9745,30 +9756,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 14.4,
+   "costTotalUsd": 21.6,
    "latestChange": {
-    "text": "P2n95_gold-star handed to Claude: Codex quota ran out;",
-    "at": "2026-10-29T05:25:19+00:00"
+    "text": "core live: hold a card to read every desk, first minute, drawn preview, kit 21",
+    "at": "2026-11-06T00:41:43+00:00"
    },
    "promo": null,
    "why": "A remix of Pigeon Salon and Morning Three: training a judge by rewards, turned round onto a class of eight.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "gold star",
+   "waitingOn": "none",
    "id": "gold-star",
    "number": 164,
    "repo": "gold-star",
    "title": "Gold Star",
    "line": "",
    "url": "https://chenhsieh.github.io/gold-star/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -9781,45 +9792,57 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:11:01+00:00",
-   "lastChange": "2026-11-06T00:33:19+00:00",
+   "lastChange": "2026-11-06T00:41:43+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
-    "totalUsdEst": 14.4
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
+    "totalUsdEst": 21.6
    },
    "tasks": [
     {
      "title": "gold star",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Choose a gold-star rule each morning so a class really learns while every desk games the stars: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-11-06T00:18:34+00:00",
-     "done": null,
+     "since": "2026-11-02T17:23:53+00:00",
+     "done": "2026-11-02T17:23:53+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P2n95_gold-star: DONE (live https://chenhsieh.github.io/gold-star/, main , tag pre-l4-p2n95-gold-star)"
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-06T00:41:43+00:00",
+     "ok": true,
+     "note": "core live: hold a card to read every desk, first minute, drawn preview, kit 21",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-06T00:39:49+00:00",
+     "ok": true,
+     "note": "feat: Gold Star is playable: post a rule card each morning and watch the class copy what pays",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-29T05:25:19+00:00",
      "ok": false,
@@ -11726,7 +11749,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:57:31+00:00",
-   "lastChange": "2026-11-06T00:32:13+00:00",
+   "lastChange": "2026-11-06T00:41:44+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -14322,30 +14345,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 18.36,
+   "costTotalUsd": 25.56,
    "latestChange": {
-    "text": "see",
-    "at": "2026-10-31T00:12:07+00:00"
+    "text": "P2LR02 fix list 5/6 live (onboarding skip held back: ui gate conflict)",
+    "at": "2026-11-06T00:41:18+00:00"
    },
    "promo": null,
    "why": "",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 6
+    "daysInState": 0
    },
-   "waitingOn": "fix long way round after review",
+   "waitingOn": "none",
    "id": "long-way-round",
    "number": 166,
    "repo": "long-way-round",
    "title": "Long Way Round",
    "line": "",
    "url": "https://chenhsieh.github.io/long-way-round/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -14359,33 +14382,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-30T05:42:34+00:00",
-   "lastChange": "2026-11-06T00:33:52+00:00",
+   "lastChange": "2026-11-06T00:41:18+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 303207,
     "codexUsdEst": 0.36,
-    "claudeUsdEst": 3.6,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
-    "totalUsdEst": 18.36
+    "claudeUsdEst": 7.2,
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
+    "totalUsdEst": 25.56
    },
    "tasks": [
     {
      "title": "P2LR02_fix long way round after review",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Long Way Round: apply the stranger review's fix list, Codex",
-     "since": "2026-11-06T00:26:42+00:00",
-     "done": null,
+     "since": "2026-11-02T17:23:53+00:00",
+     "done": "2026-11-02T17:23:53+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE with 5 of 6 items live (main , pre-tag pre-p2lr02);"
     },
     {
      "title": "P2LR00_long way round core",
@@ -14418,9 +14441,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": {
     "date": "2026-10-30",
@@ -14428,8 +14451,20 @@
     "note": "Fooling Auntie with one sidestep is a real read and getting caught on level 2 teaches it, but two cards stand before the first step, the win card hides the shop she ran to, and three levels give par to any walk at the right decoy"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-06T00:41:18+00:00",
+     "ok": true,
+     "note": "P2LR02 fix list 5/6 live (onboarding skip held back: ui gate conflict)",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-06T00:39:35+00:00",
+     "ok": true,
+     "note": "fix: Auntie game after review: clearer lesson, win hold, harder decoy levels",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-31T00:12:07+00:00",
      "ok": false,
@@ -14470,7 +14505,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 43.48,
+   "costTotalUsd": 47.08,
    "latestChange": {
     "text": "Why this exists section live (P3PL11)",
     "at": "2026-11-06T00:27:29+00:00"
@@ -14516,9 +14551,9 @@
     "codexTokens": 232896,
     "codexUsdEst": 0.28,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
-    "totalUsdEst": 43.48
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
+    "totalUsdEst": 47.08
    },
    "tasks": [
     {
@@ -14581,6 +14616,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-11-06T00:25:29+00:00",
+     "ok": true,
+     "note": "feat: a Why this exists note in the How to play card",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T02:36:04+00:00",
      "ok": true,
      "note": "No accidental zoom on phones: viewport meta + a 326-byte inline guard (the page has a 200 KB budget) (P1ZM00)",
@@ -14639,12 +14680,6 @@
      "ok": true,
      "note": "LIVE https://chenhsieh.github.io/machine-rhythm/ (claude builder, batch4)",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-16T02:19:00+00:00",
-     "ok": true,
-     "note": "feat: run a toy line by pulling a stop cord on the beat",
-     "source": "main commit"
     }
    ]
   },
@@ -15546,7 +15581,7 @@
    ]
   },
   {
-   "nextTask": "Mind Gym: the board fits a 320 px...",
+   "nextTask": null,
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "Mind Gym live: days 1-5, crates by hand (balance puzzle) or Assistant; bot gate passed",
@@ -15560,7 +15595,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 1
+    "daysInState": 0
    },
    "waitingOn": "mind gym small phone",
    "id": "mind-gym",
@@ -15569,8 +15604,8 @@
    "title": "Mind Gym",
    "line": "",
    "url": "https://chenhsieh.github.io/mind-gym/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -15583,7 +15618,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-11-04T01:25:05+00:00",
-   "lastChange": "2026-11-04T02:08:29+00:00",
+   "lastChange": "2026-11-06T00:46:08+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -15599,10 +15634,10 @@
    "tasks": [
     {
      "title": "P2MG04_mind gym small phone",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Mind Gym: the board fits a 320 px phone and Huge text",
-     "since": "2026-11-04T02:08:23+00:00",
+     "since": "2026-11-06T00:41:19+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -15613,8 +15648,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
@@ -18523,7 +18558,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:05:09+00:00",
-   "lastChange": "2026-11-06T00:36:22+00:00",
+   "lastChange": "2026-11-06T00:46:31+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -18549,8 +18584,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-11-06T00:28:34+00:00",
-      "subject": "wip: rain model per brief (no drying), 0.1 s step, bots table, kit 21"
+      "at": "2026-11-06T00:39:34+00:00",
+      "subject": "wip: lane layout for phones, slanted dry shelter, HUD split, no Undo in a real-time walk"
      },
      "result": ""
     }
@@ -20944,8 +20979,8 @@
    "nextTask": null,
    "costTotalUsd": 58.97,
    "latestChange": {
-    "text": "Add generated puzzles [skip ci]",
-    "at": "2026-11-05T10:02:45+00:00"
+    "text": "test: save migration and tile save tests run in npm test",
+    "at": "2026-11-06T00:37:15+00:00"
    },
    "promo": {
     "files": {
@@ -20985,7 +21020,7 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-10-17T23:13:07+00:00",
+   "firstSeen": "2026-10-17T23:15:14+00:00",
    "lastChange": "2026-11-06T00:37:15+00:00",
    "cost": {
     "apiUsd": 0.0,
@@ -21128,6 +21163,18 @@
    "inProgress": true,
    "history": [
     {
+     "at": "2026-11-06T00:37:15+00:00",
+     "ok": true,
+     "note": "test: save migration and tile save tests run in npm test",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-11-06T00:36:33+00:00",
+     "ok": true,
+     "note": "start: P3SV55 redacxiv merge save tests",
+     "source": "main commit"
+    },
+    {
      "at": "2026-11-05T10:02:45+00:00",
      "ok": true,
      "note": "Add generated puzzles [skip ci]",
@@ -21146,6 +21193,18 @@
      "source": "main commit"
     },
     {
+     "at": "2026-10-25T06:15:45+00:00",
+     "ok": true,
+     "note": "P3OR86_redacxiv-tile-save-test: WORKDIR",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T06:14:43+00:00",
+     "ok": true,
+     "note": "P3OR85_redacxiv-save-migration-test: WORKDIR",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-22T17:05:03+00:00",
      "ok": true,
      "note": "fix: Redacxiv link preview text is under 120 characters",
@@ -21161,42 +21220,6 @@
      "at": "2026-10-21T19:25:22+00:00",
      "ok": false,
      "note": "see",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T19:15:52+00:00",
-     "ok": false,
-     "note": "see",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-20T23:38:45+00:00",
-     "ok": true,
-     "note": "old address redirect repo live, points to redacxiv",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-20T21:35:48+00:00",
-     "ok": true,
-     "note": "og image 1200x630 fresh, registry name; old-URL redirect not done (needs new repo)",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-20T21:35:00+00:00",
-     "ok": true,
-     "note": "fix: link preview is a fresh 1200x630 screen of today's puzzle",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T03:49:36+00:00",
-     "ok": true,
-     "note": "Document former Pages URL behavior",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T03:43:11+00:00",
-     "ok": false,
-     "note": "Tile answer-cue fix merged and static Pages branch deployed; public URL remains GitHub Pages 404 after propagation checks.",
      "source": "board note"
     }
    ]
@@ -23337,7 +23360,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-30T05:44:03+00:00",
-   "lastChange": "2026-11-06T00:37:54+00:00",
+   "lastChange": "2026-11-06T00:44:50+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -32359,7 +32382,7 @@
    ]
   },
   {
-   "nextTask": "Watched Pot: keep the grown stone in view...",
+   "nextTask": null,
    "costTotalUsd": 25.2,
    "latestChange": {
     "text": "P2n97 review: revise (win sheet hides the stone, daily pool 62 boards, 320 cells 37px);...",
@@ -32382,7 +32405,7 @@
    "title": "Watched Pot",
    "line": "",
    "url": "https://chenhsieh.github.io/watched-pot/",
-   "stage": "queued",
+   "stage": "building",
    "who": "Codex",
    "priority": null,
    "priorityNote": "",
@@ -32396,7 +32419,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:52:16+00:00",
-   "lastChange": "2026-11-06T00:31:59+00:00",
+   "lastChange": "2026-11-06T00:46:59+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -32412,16 +32435,19 @@
    "tasks": [
     {
      "title": "P2WP00_watched pot review fixes",
-     "state": "queued",
+     "state": "running",
      "worker": "Codex",
      "plan": "Watched Pot: keep the grown stone in view on the win, a fresh daily stone every day, bigger cells on small phones",
-     "since": "2026-11-06T00:31:08+00:00",
+     "since": "2026-11-06T00:38:34+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-11-06T00:46:42+00:00",
+      "subject": "wip: P2WP00_watched-pot-review-fixes (Codex lane autosave 19:46)"
+     },
      "result": ""
     },
     {
@@ -32440,8 +32466,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
@@ -33121,7 +33147,7 @@
    ]
   },
   {
-   "nextTask": "Why this exists: finish the rollout on readable-nonsense...",
+   "nextTask": null,
    "costTotalUsd": 86.59,
    "latestChange": {
     "text": "One screen: result card pinned to the bottom with Next level first; a swipe from the...",
@@ -33144,8 +33170,8 @@
    "title": "阿嬤讀得出來",
    "line": "A famous Tang poem line is printed as fake glyphs with.",
    "url": "https://chenhsieh.github.io/readable-nonsense/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Start error blocks play",
    "shelfNote": "",
@@ -33159,7 +33185,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:29:52+00:00",
-   "lastChange": "2026-11-02T17:23:53+00:00",
+   "lastChange": "2026-11-06T00:45:21+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 3,
@@ -33175,10 +33201,10 @@
    "tasks": [
     {
      "title": "P3PL16_readable nonsense why rollout",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Why this exists: finish the rollout on readable-nonsense (new test failure: test/onerule.test.mjs, the How to play car)",
-     "since": "2026-11-02T17:23:53+00:00",
+     "since": "2026-11-06T00:45:18+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -33287,8 +33313,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 12
    },
@@ -33480,5 +33506,6 @@
    "ran": 0
   }
  },
- "requestsCount": 0
+ "requestsCount": 0,
+ "briefDecisions": 9
 }

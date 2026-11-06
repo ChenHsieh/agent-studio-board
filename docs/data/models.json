@@ -207,12 +207,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 295,
+   "count": 297,
    "firstTimePass": 95,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 245,
+   "guessed": 247,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -223,12 +223,12 @@
   {
    "executor": "claude-sonnet",
    "role": "design",
-   "count": 26,
+   "count": 27,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 22,
+   "guessed": 23,
    "topFailures": [],
    "flag": "give more"
   },
@@ -384,10 +384,10 @@
   {
    "executor": "codex gpt-6-sol high",
    "role": "build",
-   "count": 47,
+   "count": 48,
    "firstTimePass": 78,
    "retries": 30,
-   "medianMinutes": 16,
+   "medianMinutes": 16.0,
    "costPerPass": 0.0,
    "guessed": 0,
    "topFailures": [
@@ -428,6 +428,18 @@
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": 17.0,
+   "costPerPass": null,
+   "guessed": 0,
+   "topFailures": [],
+   "flag": ""
+  },
+  {
+   "executor": "codex gpt-6-sol high",
+   "role": "review",
+   "count": 1,
+   "firstTimePass": 100,
+   "retries": 0,
+   "medianMinutes": 15,
    "costPerPass": null,
    "guessed": 0,
    "topFailures": [],
@@ -525,6 +537,24 @@
   },
   {
    "date": "2026-11-05",
+   "task": "flying white why rollout",
+   "number": "117",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "P3PL15 DONE and LIVE (flying-white, main 360c336, branch chen-pl-why 4e58e62)."
+  },
+  {
+   "date": "2026-11-05",
+   "task": "name to carry why rollout",
+   "number": "125",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "P3PL12 DONE and LIVE (name-to-carry, main 242ce44, branch chen-pl-why 537c622)."
+  },
+  {
+   "date": "2026-11-05",
    "task": "machine rhythm why rollout",
    "number": "89",
    "executor": "claude-sonnet",
@@ -540,6 +570,33 @@
    "role": "review",
    "passed": "yes",
    "note": "the win is hidden. The result sheet covers the bottom rows of the grown stone at 390x844 and the whole stone at 320x568, so the picture you "
+  },
+  {
+   "date": "2026-11-05",
+   "task": "gold star",
+   "number": "164",
+   "executor": "codex gpt-6-sol high",
+   "role": "build",
+   "passed": "",
+   "note": "exhausted, 286k tokens: hold is the only way to see the numbers before posting, and nothing teaches it but the board label \"Hold a card to s"
+  },
+  {
+   "date": "2026-11-05",
+   "task": "daily brief data",
+   "number": "",
+   "executor": "claude-sonnet",
+   "role": "design",
+   "passed": "yes",
+   "note": "whether the cheap defaults should really go ahead on their own from 2026-11-09 (this is the design's rule; the board will show each date). O"
+  },
+  {
+   "date": "2026-11-05",
+   "task": "fix long way round after review",
+   "number": "166",
+   "executor": "codex gpt-6-sol high",
+   "role": "review",
+   "passed": "yes",
+   "note": "built, 153k tokens: win card at 390 cuts the Save picture row below the fold (it scrolls inside); first minute still shows premise card then"
   },
   {
    "date": "2026-11-05",
@@ -648,51 +705,6 @@
    "role": "build",
    "passed": "",
    "note": "exhausted, 173k tokens: at 320 px the HUD still wraps to two rows and the board sits left of centre with room unused below (kit layout; fix "
-  },
-  {
-   "date": "2026-11-02",
-   "task": "low ai feel showcase",
-   "number": "",
-   "executor": "claude-opus",
-   "role": "build",
-   "passed": "yes",
-   "note": "P2LAF00 low-ai-feel showcase: DONE (pushed to ChenHsieh/low-ai-feel main 66eba7d, branch chen-laf-showcase)"
-  },
-  {
-   "date": "2026-11-02",
-   "task": "grub band one screen",
-   "number": "120",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "built and green on branch chen-onescreen-fs59 (ChenHsieh/grub-band, pushed), NOT published: merge2.sh was denied by the auto-mode classifier"
-  },
-  {
-   "date": "2026-11-02",
-   "task": "zoom out one screen",
-   "number": "79",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE on branch, NOT PUBLISHED (same merge2 denial). Branch chen-onescreen-p2fs57 (71d8f26) pushed; needs BR=chen-onescreen-p2fs57 TAG=pre-on"
-  },
-  {
-   "date": "2026-11-02",
-   "task": "telephone of babel one screen",
-   "number": "76",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE on branch, NOT PUBLISHED: merge2.sh to main was denied by the permission classifier earlier in this run, so I did not attempt it. Branc"
-  },
-  {
-   "date": "2026-11-02",
-   "task": "fly song one screen",
-   "number": "17",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "gate B (board swipe scrolls) cannot pass without changing gameplay. Fly Song steers by dragging a finger anywhere inside the dish (docs/game"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."

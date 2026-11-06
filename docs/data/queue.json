@@ -1,5 +1,5 @@
 {
- "generated": 1793925526,
+ "generated": 1793926053,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -28,18 +28,20 @@
  },
  "tasks": [
   {
-   "id": "P3PL12_name-to-carry-why-rollout",
-   "request": "Why this exists: finish the rollout on name-to-carry (new test failure: test/name.test.mjs, zh glyphs 工 室 創 are mi)",
-   "game": "A Name to Carry",
+   "id": "P3PL16_readable-nonsense-why-rollout",
+   "request": "Why this exists: finish the rollout on readable-nonsense (new test failure: test/onerule.test.mjs, the How to play car)",
+   "game": "阿嬤讀得出來",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
-   "after": [],
-   "priority": "P2",
-   "why": "A paper abstract linking rare characters in given names to wellbeing, read with how Mandarin speakers spell out a name aloud.",
+   "after": [
+    "P1FS23_readable-nonsense-one-screen"
+   ],
+   "priority": "P1",
+   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
    "state": "running",
    "at": 1793640233,
    "created": 1793640233
@@ -96,23 +98,23 @@
    "created": 1793640233
   },
   {
-   "id": "P2LR02_fix-long-way-round-after-review",
-   "request": "Long Way Round: apply the stranger review's fix list, Codex",
-   "game": "Long Way Round",
+   "id": "P2MG04_mind-gym-small-phone",
+   "request": "Mind Gym: the board fits a 320 px phone and Huge text",
+   "game": "Mind Gym",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
-   "kind": "review",
+   "kind": "build",
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2LR01_review-long-way-round"
+    "P1LFT00_mind-gym-prototype"
    ],
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1793640233,
-   "created": 1793640233
+   "at": 1793758103,
+   "created": 1793758103
   },
   {
    "id": "P2SSP00_same-spots-core",
@@ -132,17 +134,18 @@
    "created": 1793640233
   },
   {
-   "id": "P2UX07_daily-brief-data",
-   "request": "Daily brief data",
+   "id": "P2UX08_daily-brief-first-screen",
+   "request": "Board opens on a daily brief with three decisions and their defaults",
    "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
-   "effort": "medium",
+   "effort": "high",
    "kind": "idea",
    "size": "studio",
    "estMinutes": null,
    "after": [
-    "P1UX05_requests-file-and-planner"
+    "P1UX06_action-sheet-and-request-cards",
+    "P2UX07_daily-brief-data"
    ],
    "priority": null,
    "why": "",
@@ -209,9 +212,9 @@
    "created": 1793640233
   },
   {
-   "id": "P2n95_gold-star",
-   "request": "Choose a gold-star rule each morning so a class really learns while every desk games the stars: build the core with placeholder shapes, then its first-minute round",
-   "game": "Gold Star",
+   "id": "P2n96_ac-remote",
+   "request": "Swap office seats each hour so nobody gets up to touch the air-conditioner remote: build the core with placeholder shapes, then its first-minute round",
+   "game": "Ac Remote",
    "route": "Claude",
    "model": "opus",
    "effort": "high",
@@ -222,7 +225,7 @@
     "P2n86_round4-template-repos"
    ],
    "priority": null,
-   "why": "A remix of Pigeon Salon and Morning Three: training a judge by rewards, turned round onto a class of eight.",
+   "why": "A remix of the chai boil dial and Thin Walls, set in an office with one shared air-conditioner remote.",
    "state": "running",
    "at": 1793640233,
    "created": 1793640233
@@ -284,44 +287,6 @@
    "created": 1793924514
   },
   {
-   "id": "P3PL15_flying-white-why-rollout",
-   "request": "Why this exists: finish the rollout on flying-white (new test failure: test/font.test.mjs, zh glyphs 偶制創原啟壓意控注然狀界)",
-   "game": "Flying White",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1FS30_flying-white-one-screen"
-   ],
-   "priority": "P1",
-   "why": "A commentary on a 2002 martial-arts film that tells one story three ways, where the character for sword is written 19 ways.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1793640233
-  },
-  {
-   "id": "P3PL16_readable-nonsense-why-rollout",
-   "request": "Why this exists: finish the rollout on readable-nonsense (new test failure: test/onerule.test.mjs, the How to play car)",
-   "game": "阿嬤讀得出來",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1FS23_readable-nonsense-one-screen"
-   ],
-   "priority": "P1",
-   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1793640233
-  },
-  {
    "id": "P3PL19_glasshouse-why-build",
    "request": "Why this exists: add the section to glasshouse through its build step",
    "game": "Glasshouse",
@@ -353,44 +318,6 @@
    "after": [],
    "priority": "P3",
    "why": "A short video of a photographer shooting through a printed patterned glass screen instead of using editing software.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1793640233
-  },
-  {
-   "id": "P2MG04_mind-gym-small-phone",
-   "request": "Mind Gym: the board fits a 320 px phone and Huge text",
-   "game": "Mind Gym",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P1LFT00_mind-gym-prototype"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1793758103
-  },
-  {
-   "id": "P2n96_ac-remote",
-   "request": "Swap office seats each hour so nobody gets up to touch the air-conditioner remote: build the core with placeholder shapes, then its first-minute round",
-   "game": "Ac Remote",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2n86_round4-template-repos"
-   ],
-   "priority": null,
-   "why": "A remix of the chai boil dial and Thin Walls, set in an office with one shared air-conditioner remote.",
    "state": "ready",
    "waitingOn": [],
    "created": 1793640233
@@ -474,28 +401,6 @@
    "created": 1793640233
   },
   {
-   "id": "P2UX08_daily-brief-first-screen",
-   "request": "Board opens on a daily brief with three decisions and their defaults",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "idea",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1UX06_action-sheet-and-request-cards",
-    "P2UX07_daily-brief-data"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2UX07_daily-brief-data"
-   ],
-   "created": 1793640233
-  },
-  {
    "id": "P2n100_review-one-umbrella-and-rolling-back",
    "request": "Play One Umbrella and Rolling Back cold as a stranger and decide ship, revise or shelf for each",
    "game": "Studio",
@@ -536,7 +441,6 @@
    "why": "",
    "state": "waiting",
    "waitingOn": [
-    "P2n95_gold-star",
     "P2n96_ac-remote"
    ],
    "created": 1793640233
