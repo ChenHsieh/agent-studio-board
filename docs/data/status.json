@@ -1,14 +1,14 @@
 {
- "generated": "2026-11-06T00:14:47+00:00",
+ "generated": "2026-11-06T00:27:48+00:00",
  "ops": {
-  "count": 4,
+  "count": 2,
   "notes": [
-   "A running task has shown no progress for over 3 hours."
+   "A game changed in the last hour with no claimed task on it."
   ],
   "info": []
  },
  "about": [
-  "A running task has shown no progress for over 3 hours."
+  "A game changed in the last hour with no claimed task on it."
  ],
  "project": {
   "name": "Game studio",
@@ -20,22 +20,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 31,
+    "queued": 19,
     "running": 0,
     "doneToday": 0,
-    "minutes": 1240,
-    "estimateMinutes": 1240
+    "minutes": 760,
+    "estimateMinutes": 760
    },
    "Claude": {
     "queued": 1,
-    "running": 4,
+    "running": 12,
     "doneToday": 0,
-    "minutes": 300,
-    "estimateMinutes": 150
+    "minutes": 780,
+    "estimateMinutes": 390
    }
   },
-  "queued": 32,
-  "running": 4,
+  "queued": 20,
+  "running": 12,
   "doneToday": 0,
   "lanes": {
    "Codex": 1,
@@ -47,10 +47,77 @@
   },
   "codexPaused": false,
   "minutesRemaining": 1540,
-  "estimatedFinish": "2026-11-06T20:54:47+00:00",
-  "estimateMinutes": 1240
+  "estimatedFinish": "2026-11-06T13:07:48+00:00",
+  "estimateMinutes": 760
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P1MH61_expert webgl tech",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "herbal-of-nowhere",
+   "task": "P2HN00_herbal pages stay open",
+   "since": "2026-11-06T00:22:00+00:00",
+   "activity": "2026-11-06T00:25:44+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "long-way-round",
+   "task": "P2LR02_fix long way round after review",
+   "since": "2026-11-06T00:26:42+00:00",
+   "activity": "2026-11-06T00:26:55+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "same-spots",
+   "task": "P2SSP00_same spots core",
+   "since": "2026-11-06T00:18:36+00:00",
+   "activity": "2026-11-06T00:18:46+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "one-umbrella",
+   "task": "one umbrella",
+   "since": "2026-11-06T00:18:34+00:00",
+   "activity": "2026-11-06T00:27:29+00:00",
+   "commit": {
+    "at": "2026-11-06T00:21:40+00:00",
+    "subject": "start: P2n93_one-umbrella (resume from Codex WIP, Claude lane L3)"
+   }
+  },
+  {
+   "worker": "Claude",
+   "game": "gold-star",
+   "task": "gold star",
+   "since": "2026-11-06T00:18:34+00:00",
+   "activity": "2026-11-06T00:27:38+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "review coin dumplings and watched pot",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "name-to-carry",
+   "task": "P3PL12_name to carry why rollout",
+   "since": "2026-11-06T00:27:29+00:00",
+   "activity": "2026-11-06T00:27:47+00:00",
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "dancers-not-mad",
@@ -64,7 +131,7 @@
    "game": "speaking-stone",
    "task": "P3PL14_speaking stone why rollout",
    "since": "2026-11-02T17:26:15+00:00",
-   "activity": "2026-11-02T18:08:19+00:00",
+   "activity": "2026-11-06T00:24:45+00:00",
    "commit": null
   },
   {
@@ -85,11 +152,11 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 4,
+ "claudeWorkers": 12,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
-  "runs": 335,
-  "usdEst": 1206.0,
+  "runs": 337,
+  "usdEst": 1213.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -176,12 +243,16 @@
   {
    "day": "2026-11-03",
    "changes": 2
+  },
+  {
+   "day": "2026-11-05",
+   "changes": 3
   }
  ],
  "houseRules": 25,
  "games": [
   {
-   "nextTask": "Why this exists: finish the rollout on name-to-carry...",
+   "nextTask": null,
    "costTotalUsd": 32.72,
    "latestChange": {
     "text": "feat: load names with the game",
@@ -201,7 +272,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 3
+    "daysInState": 0
    },
    "waitingOn": "owner",
    "id": "name-to-carry",
@@ -210,8 +281,8 @@
    "title": "A Name to Carry",
    "line": "Eight scenes, ministry tiers and a share card: carry a name through the forms, Mandarin first.",
    "url": "https://chenhsieh.github.io/name-to-carry/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Eight scenes, ministry tiers and a share card: carry a name through the forms,",
    "shelfNote": "",
@@ -225,7 +296,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T02:25:43+00:00",
-   "lastChange": "2026-11-02T17:23:53+00:00",
+   "lastChange": "2026-11-06T00:27:47+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -241,10 +312,10 @@
    "tasks": [
     {
      "title": "P3PL12_name to carry why rollout",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Why this exists: finish the rollout on name-to-carry (new test failure: test/name.test.mjs, zh glyphs 工 室 創 are mi)",
-     "since": "2026-11-02T17:23:53+00:00",
+     "since": "2026-11-06T00:27:29+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -297,8 +368,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
@@ -9685,7 +9756,7 @@
    ]
   },
   {
-   "nextTask": "Choose a gold-star rule each morning so a...",
+   "nextTask": null,
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "P2n95_gold-star handed to Claude: Codex quota ran out;",
@@ -9699,7 +9770,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 3
+    "daysInState": 0
    },
    "waitingOn": "gold star",
    "id": "gold-star",
@@ -9708,8 +9779,8 @@
    "title": "Gold Star",
    "line": "",
    "url": "https://chenhsieh.github.io/gold-star/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -9722,7 +9793,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:11:01+00:00",
-   "lastChange": "2026-11-02T17:23:53+00:00",
+   "lastChange": "2026-11-06T00:27:38+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -9738,10 +9809,10 @@
    "tasks": [
     {
      "title": "gold star",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Choose a gold-star rule each morning so a class really learns while every desk games the stars: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-11-02T17:23:53+00:00",
+     "since": "2026-11-06T00:18:34+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -9752,8 +9823,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
@@ -10802,7 +10873,7 @@
    ]
   },
   {
-   "nextTask": "Herbal of Nowhere: opened pages stay open (Undo...",
+   "nextTask": null,
    "costTotalUsd": 39.85,
    "latestChange": {
     "text": "see",
@@ -10831,8 +10902,8 @@
    "title": "Herbal of Nowhere",
    "line": "Open pages to read their glyph names, compare, then name the last plant; wrong names cost hearts.",
    "url": "https://chenhsieh.github.io/herbal-of-nowhere/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "placeholder shapes, 12 folios",
    "shelfNote": "",
@@ -10846,7 +10917,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-11-02T17:23:53+00:00",
+   "lastChange": "2026-11-06T00:25:44+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -10862,10 +10933,10 @@
    "tasks": [
     {
      "title": "P2HN00_herbal pages stay open",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Herbal of Nowhere: opened pages stay open (Undo no longer refunds ink), glyphs no longer sit under the parts, counters agree",
-     "since": "2026-11-02T17:23:53+00:00",
+     "since": "2026-11-06T00:22:00+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -10932,8 +11003,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 4
    },
@@ -14262,7 +14333,7 @@
    ]
   },
   {
-   "nextTask": "Long Way Round: apply the stranger review's fix...",
+   "nextTask": null,
    "costTotalUsd": 18.36,
    "latestChange": {
     "text": "see",
@@ -14285,8 +14356,8 @@
    "title": "Long Way Round",
    "line": "",
    "url": "https://chenhsieh.github.io/long-way-round/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -14300,7 +14371,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-30T05:42:34+00:00",
-   "lastChange": "2026-11-02T17:23:53+00:00",
+   "lastChange": "2026-11-06T00:26:55+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -14316,10 +14387,10 @@
    "tasks": [
     {
      "title": "P2LR02_fix long way round after review",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Long Way Round: apply the stranger review's fix list, Codex",
-     "since": "2026-11-02T17:23:53+00:00",
+     "since": "2026-11-06T00:26:42+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -14358,8 +14429,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
@@ -14410,31 +14481,31 @@
    ]
   },
   {
-   "nextTask": "Why this exists: finish the rollout on machine-rhythm...",
-   "costTotalUsd": 39.88,
+   "nextTask": null,
+   "costTotalUsd": 43.48,
    "latestChange": {
-    "text": "No accidental zoom on phones: viewport meta + a 326-byte inline guard (the page has a 200...",
-    "at": "2026-10-25T02:36:04+00:00"
+    "text": "Why this exists section live (P3PL11)",
+    "at": "2026-11-06T00:27:29+00:00"
    },
    "promo": null,
    "why": "A slide from an art film about work being mapped onto the rhythms of machines rather than workers' judgement.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 3
+    "daysInState": 0
    },
-   "waitingOn": "machine rhythm why rollout",
+   "waitingOn": "none",
    "id": "machine-rhythm",
    "number": 89,
    "repo": "machine-rhythm",
    "title": "Machine Rhythm",
    "line": "A toy line runs on its own beat and every machine stamps.",
    "url": "https://chenhsieh.github.io/machine-rhythm/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "No guidance yet",
    "shelfNote": "",
@@ -14448,27 +14519,27 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:53:04+00:00",
-   "lastChange": "2026-11-02T17:23:53+00:00",
+   "lastChange": "2026-11-06T00:27:29+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 0,
     "codexTokens": 232896,
     "codexUsdEst": 0.28,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 10,
     "earlierUsdEst": 36.0,
-    "totalUsdEst": 39.88
+    "totalUsdEst": 43.48
    },
    "tasks": [
     {
      "title": "P3PL11_machine rhythm why rollout",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "Why this exists: finish the rollout on machine-rhythm (new test failures: first_words (36 words > 35) and phone_fir)",
      "since": "2026-11-02T17:23:53+00:00",
-     "done": null,
+     "done": "2026-11-02T17:23:53+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -14506,15 +14577,21 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-06T00:27:29+00:00",
+     "ok": true,
+     "note": "Why this exists section live (P3PL11)",
+     "source": "board note"
+    },
     {
      "at": "2026-10-25T02:36:04+00:00",
      "ok": true,
@@ -14579,12 +14656,6 @@
      "at": "2026-10-16T02:19:00+00:00",
      "ok": true,
      "note": "feat: run a toy line by pulling a stop cord on the beat",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-16T01:53:04+00:00",
-     "ok": true,
-     "note": "Initial commit",
      "source": "main commit"
     }
    ]
@@ -15788,7 +15859,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Mirror Hold: the next mark shows tick or...",
    "costTotalUsd": 87.55,
    "latestChange": {
     "text": "P1MH64: sumo vs sumo (print opponents, no red pullers), print collection + Wear,...",
@@ -15798,21 +15869,21 @@
    "why": "Manga panels of a sumo wrestler before a mirror and a hand scooping Edo-period hair wax from a red tin.",
    "state": "ship",
    "stateFlags": {
-    "refining": false,
+    "refining": true,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 13
    },
-   "waitingOn": "owner",
+   "waitingOn": "bout3 turn guardrail",
    "id": "mirror-hold",
    "number": 60,
    "repo": "mirror-hold",
    "title": "Mirror Hold",
    "line": "Wax a hairstyle, then test it against three pulls.",
    "url": "https://chenhsieh.github.io/mirror-hold/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Huge revamp planned by a cross-functional lead",
    "shelfNote": "",
@@ -15830,7 +15901,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T21:41:35+00:00",
-   "lastChange": "2026-11-02T18:16:04+00:00",
+   "lastChange": "2026-11-06T00:21:54+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -15844,6 +15915,20 @@
     "totalUsdEst": 87.55
    },
    "tasks": [
+    {
+     "title": "P1MH65_bout3 turn guardrail",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Mirror Hold: the next mark shows tick or cross as you turn; looking is free until you let go",
+     "since": "2026-11-06T00:21:54+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P1FS25_mirror hold one screen",
      "state": "done",
@@ -15941,24 +16026,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "OR LANE OK: Test: test/levels_units.js"
-    },
-    {
-     "title": "P1MH55_mirror hold level4 par over finger strokes",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Mirror Hold: level 4 par counts only strokes a finger can make",
-     "since": "2026-10-22T17:27:45+00:00",
-     "done": "2026-10-22T17:27:45+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "Par before/after (finger-reachable best vs computer par): L1-3,5-10,12 unchanged at 144. L4: before par 142, finger 144 (lesson broken); after par 142, finger 142 (up pull now strength 2, so one pull must be given up)...."
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 15
@@ -15969,7 +16040,7 @@
     "note": "Comb each pull the right way before the bout and the hair holds; a wrong stroke springs loose strands you can see, and the real prints make every client a person"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-11-02T18:16:04+00:00",
@@ -18427,7 +18498,7 @@
    ]
   },
   {
-   "nextTask": "Slide one umbrella between two walkers so both...",
+   "nextTask": null,
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "P2n93_one-umbrella handed to Claude: Codex quota ran out;",
@@ -18441,7 +18512,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 3
+    "daysInState": 0
    },
    "waitingOn": "one umbrella",
    "id": "one-umbrella",
@@ -18450,8 +18521,8 @@
    "title": "One Umbrella",
    "line": "",
    "url": "https://chenhsieh.github.io/one-umbrella/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -18464,7 +18535,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:05:09+00:00",
-   "lastChange": "2026-11-02T17:23:53+00:00",
+   "lastChange": "2026-11-06T00:27:29+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -18480,22 +18551,25 @@
    "tasks": [
     {
      "title": "one umbrella",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Slide one umbrella between two walkers so both get home dry as the wind turns: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-11-02T17:23:53+00:00",
+     "since": "2026-11-06T00:18:34+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": null,
+     "commit": {
+      "at": "2026-11-06T00:21:40+00:00",
+      "subject": "start: P2n93_one-umbrella (resume from Codex WIP, Claude lane L3)"
+     },
      "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
@@ -20882,8 +20956,8 @@
    "nextTask": "Redacxiv: merge the save tests to main",
    "costTotalUsd": 58.97,
    "latestChange": {
-    "text": "One screen: goal once, word sheet, pinned result sheet",
-    "at": "2026-10-25T07:11:17+00:00"
+    "text": "Add generated puzzles [skip ci]",
+    "at": "2026-11-05T10:02:45+00:00"
    },
    "promo": {
     "files": {
@@ -20923,8 +20997,8 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-10-17T22:48:07+00:00",
-   "lastChange": "2026-11-02T17:23:53+00:00",
+   "firstSeen": "2026-10-17T23:13:07+00:00",
+   "lastChange": "2026-11-05T10:02:45+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -21066,6 +21140,12 @@
    "inProgress": true,
    "history": [
     {
+     "at": "2026-11-05T10:02:45+00:00",
+     "ok": true,
+     "note": "Add generated puzzles [skip ci]",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T07:11:17+00:00",
      "ok": true,
      "note": "One screen: goal once, word sheet, pinned result sheet",
@@ -21130,12 +21210,6 @@
      "ok": false,
      "note": "Tile answer-cue fix merged and static Pages branch deployed; public URL remains GitHub Pages 404 after propagation checks.",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-20T03:40:00+00:00",
-     "ok": true,
-     "note": "Rename BioRedactle to Redacxiv",
-     "source": "main commit"
     }
    ]
   },
@@ -23238,7 +23312,7 @@
    ]
   },
   {
-   "nextTask": "Same Spots (同一身斑): build the core (repaint creatures...",
+   "nextTask": "Same Spots: apply the stranger review's fix list...",
    "costTotalUsd": 7.2,
    "latestChange": {
     "text": "feat: Same Spots starts from the game template",
@@ -23261,8 +23335,8 @@
    "title": "Same Spots",
    "line": "",
    "url": "https://chenhsieh.github.io/same-spots/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -23275,7 +23349,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-30T05:44:03+00:00",
-   "lastChange": "2026-11-02T17:23:53+00:00",
+   "lastChange": "2026-11-06T00:18:46+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -23291,10 +23365,10 @@
    "tasks": [
     {
      "title": "P2SSP00_same spots core",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Same Spots (同一身斑): build the core (repaint creatures so none looks different in any hawk's view), Codex",
-     "since": "2026-11-02T17:23:53+00:00",
+     "since": "2026-11-06T00:18:36+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -23319,8 +23393,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
@@ -26589,11 +26663,11 @@
    ]
   },
   {
-   "nextTask": "speaking-stone: the whole game fits one phone screen...",
-   "costTotalUsd": 47.0,
+   "nextTask": null,
+   "costTotalUsd": 54.2,
    "latestChange": {
-    "text": "One screen on phones: port_onescreen (kit 2) (P2FS04)",
-    "at": "2026-10-25T09:18:30+00:00"
+    "text": "P2FS60 swipe on board scrolls page (gate B), credit line removed; live",
+    "at": "2026-11-06T00:26:39+00:00"
    },
    "promo": {
     "files": {
@@ -26633,18 +26707,18 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T00:56:56+00:00",
-   "lastChange": "2026-11-02T18:08:19+00:00",
+   "lastChange": "2026-11-06T00:26:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 168742,
     "codexUsdEst": 0.2,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 13,
-    "earlierUsdEst": 46.8,
-    "totalUsdEst": 47.0
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 14,
+    "earlierUsdEst": 50.4,
+    "totalUsdEst": 54.2
    },
    "tasks": [
     {
@@ -26663,17 +26737,17 @@
     },
     {
      "title": "P2FS60_speaking stone one screen",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "speaking-stone: the whole game fits one phone screen and Next shows after a win",
      "since": "2026-11-02T17:23:53+00:00",
-     "done": null,
+     "done": "2026-11-02T17:23:53+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE. Speaking Stone: a swipe that starts on the board now scrolls the page; only the rope track drags the rope (gate B was the only failing line)."
     },
     {
      "title": "P2FM53_speaking stone first minute fix",
@@ -26691,15 +26765,27 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 1
+    "done": 2
    },
    "verdict": null,
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-06T00:26:39+00:00",
+     "ok": true,
+     "note": "P2FS60 swipe on board scrolls page (gate B), credit line removed; live",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-06T00:24:45+00:00",
+     "ok": true,
+     "note": "fix: a swipe on the board scrolls the page",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T09:18:30+00:00",
      "ok": true,
@@ -26759,18 +26845,6 @@
      "ok": false,
      "note": "see",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-22T01:12:21+00:00",
-     "ok": true,
-     "note": "P2n36 live: 6 seasons + daily, rope drag + test chips, exact best vs brute force (2,400 boards), real touch 390/320, template check 12/12; bots: always-open 1/6, highest-rope-that-fills 4/6, careful 6/6. Weakest: How to play shows 2 pictures not",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-22T01:11:16+00:00",
-     "ok": true,
-     "note": "feat: Speaking Stone, six seasons and a daily: set the rope and the test, then see who the town turned away",
-     "source": "main commit"
     }
    ]
   },
@@ -33319,7 +33393,8 @@
   }
  ],
  "systemNeeds": [
-  "System needs: 9 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)"
+  "System needs: 9 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)",
+  "System needs: Released game Cymatic Plate now fails what it passed at release: standard (fix: play it; keep it released or remove its row from board/released.tsv)"
  ],
  "releaseReady": [],
  "releaseRegressed": [
