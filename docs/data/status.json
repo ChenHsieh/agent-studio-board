@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-06T00:27:48+00:00",
+ "generated": "2026-11-06T00:38:28+00:00",
  "ops": {
-  "count": 2,
+  "count": 4,
   "notes": [
    "A game changed in the last hour with no claimed task on it."
   ],
@@ -20,11 +20,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 19,
+    "queued": 16,
     "running": 0,
     "doneToday": 0,
-    "minutes": 760,
-    "estimateMinutes": 760
+    "minutes": 640,
+    "estimateMinutes": 640
    },
    "Claude": {
     "queued": 1,
@@ -34,7 +34,7 @@
     "estimateMinutes": 390
    }
   },
-  "queued": 20,
+  "queued": 17,
   "running": 12,
   "doneToday": 0,
   "lanes": {
@@ -46,33 +46,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1540,
-  "estimatedFinish": "2026-11-06T13:07:48+00:00",
-  "estimateMinutes": 760
+  "minutesRemaining": 1420,
+  "estimatedFinish": "2026-11-06T11:18:28+00:00",
+  "estimateMinutes": 640
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P1MH61_expert webgl tech",
-   "since": null,
-   "activity": null,
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "herbal-of-nowhere",
-   "task": "P2HN00_herbal pages stay open",
-   "since": "2026-11-06T00:22:00+00:00",
-   "activity": "2026-11-06T00:25:44+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "long-way-round",
    "task": "P2LR02_fix long way round after review",
    "since": "2026-11-06T00:26:42+00:00",
-   "activity": "2026-11-06T00:26:55+00:00",
+   "activity": "2026-11-06T00:33:52+00:00",
    "commit": null
   },
   {
@@ -80,7 +64,23 @@
    "game": "same-spots",
    "task": "P2SSP00_same spots core",
    "since": "2026-11-06T00:18:36+00:00",
-   "activity": "2026-11-06T00:18:46+00:00",
+   "activity": "2026-11-06T00:37:54+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P2UX07_daily brief data",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "iron-window-garden",
+   "task": "iron window garden",
+   "since": "2026-11-06T00:32:06+00:00",
+   "activity": "2026-11-06T00:32:13+00:00",
    "commit": null
   },
   {
@@ -88,10 +88,10 @@
    "game": "one-umbrella",
    "task": "one umbrella",
    "since": "2026-11-06T00:18:34+00:00",
-   "activity": "2026-11-06T00:27:29+00:00",
+   "activity": "2026-11-06T00:36:22+00:00",
    "commit": {
-    "at": "2026-11-06T00:21:40+00:00",
-    "subject": "start: P2n93_one-umbrella (resume from Codex WIP, Claude lane L3)"
+    "at": "2026-11-06T00:28:34+00:00",
+    "subject": "wip: rain model per brief (no drying), 0.1 s step, bots table, kit 21"
    }
   },
   {
@@ -99,15 +99,7 @@
    "game": "gold-star",
    "task": "gold star",
    "since": "2026-11-06T00:18:34+00:00",
-   "activity": "2026-11-06T00:27:38+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "review coin dumplings and watched pot",
-   "since": null,
-   "activity": null,
+   "activity": "2026-11-06T00:33:19+00:00",
    "commit": null
   },
   {
@@ -115,7 +107,7 @@
    "game": "name-to-carry",
    "task": "P3PL12_name to carry why rollout",
    "since": "2026-11-06T00:27:29+00:00",
-   "activity": "2026-11-06T00:27:47+00:00",
+   "activity": "2026-11-06T00:37:07+00:00",
    "commit": null
   },
   {
@@ -149,14 +141,22 @@
    "since": null,
    "activity": null,
    "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "BioRedactle-nextjs",
+   "task": "P3SV55_redacxiv merge save tests",
+   "since": "2026-11-06T00:36:25+00:00",
+   "activity": "2026-11-06T00:37:15+00:00",
+   "commit": null
   }
  ],
- "codexLanes": 0,
+ "codexLanes": 1,
  "claudeWorkers": 12,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
-  "runs": 337,
-  "usdEst": 1213.2,
+  "runs": 338,
+  "usdEst": 1216.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -246,17 +246,17 @@
   },
   {
    "day": "2026-11-05",
-   "changes": 3
+   "changes": 6
   }
  ],
  "houseRules": 25,
  "games": [
   {
    "nextTask": null,
-   "costTotalUsd": 32.72,
+   "costTotalUsd": 36.32,
    "latestChange": {
-    "text": "feat: load names with the game",
-    "at": "2026-10-25T21:47:44+00:00"
+    "text": "feat: a Why this exists note in the How to play card",
+    "at": "2026-11-06T00:37:07+00:00"
    },
    "promo": {
     "files": {
@@ -296,7 +296,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T02:25:43+00:00",
-   "lastChange": "2026-11-06T00:27:47+00:00",
+   "lastChange": "2026-11-06T00:37:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -305,9 +305,9 @@
     "codexTokens": 268663,
     "codexUsdEst": 0.32,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 8,
-    "earlierUsdEst": 28.8,
-    "totalUsdEst": 32.72
+    "earlierRounds": 9,
+    "earlierUsdEst": 32.4,
+    "totalUsdEst": 36.32
    },
    "tasks": [
     {
@@ -377,6 +377,12 @@
    "needsYou": "Native read of the Mandarin phrases across the 8 scenes is still owed before sharing. Suggest: have a native reader check them first, Mandarin leads the game.",
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-06T00:37:07+00:00",
+     "ok": true,
+     "note": "feat: a Why this exists note in the How to play card",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T21:47:44+00:00",
      "ok": true,
@@ -9298,10 +9304,10 @@
   },
   {
    "nextTask": "Why this exists: add the section to glasshouse...",
-   "costTotalUsd": 54.0,
+   "costTotalUsd": 57.6,
    "latestChange": {
-    "text": "P3OR39_glasshouse-short-share-line: WORKDIR",
-    "at": "2026-10-23T00:42:01+00:00"
+    "text": "save migration, settings, crew save tests merged (no visible change)",
+    "at": "2026-11-06T00:36:24+00:00"
    },
    "promo": null,
    "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
@@ -9334,19 +9340,19 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-08-09T16:24:24+00:00",
-   "lastChange": "2026-11-02T17:23:53+00:00",
+   "firstSeen": "2026-10-17T23:15:14+00:00",
+   "lastChange": "2026-11-06T00:36:24+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 7,
+    "claudeRuns": 8,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 25.2,
+    "claudeUsdEst": 28.8,
     "earlierRounds": 8,
     "earlierUsdEst": 28.8,
-    "totalUsdEst": 54.0
+    "totalUsdEst": 57.6
    },
    "tasks": [
     {
@@ -9365,17 +9371,17 @@
     },
     {
      "title": "P3SV54_glasshouse merge save tests",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "Glasshouse: merge the save tests to main",
      "since": "2026-11-02T17:23:53+00:00",
-     "done": null,
+     "done": "2026-11-02T17:23:53+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P3SV54 DONE. glasshouse main : tests/save-migration.test.ts (8 cases), save-settings.test.ts, save-crew.test.ts (6) merged; nothing under src/ or docs/ changed (git diff vs origin/main on src docs is empty, so Pages..."
     },
     {
      "title": "P3OR83_glasshouse save settings test",
@@ -9463,10 +9469,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
-    "done": 7
+    "done": 8
    },
    "verdict": {
     "date": "2026-10-20",
@@ -9476,6 +9482,42 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-06T00:36:24+00:00",
+     "ok": true,
+     "note": "save migration, settings, crew save tests merged (no visible change)",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-06T00:36:12+00:00",
+     "ok": true,
+     "note": "test: save migration, settings and crew save tests (merged from the OpenRouter lane; type errors fixed)",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-11-06T00:35:06+00:00",
+     "ok": true,
+     "note": "start: P3SV54 glasshouse merge save tests",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T06:24:51+00:00",
+     "ok": true,
+     "note": "P3OR83_glasshouse-save-settings-test: WORKDIR",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T06:20:18+00:00",
+     "ok": true,
+     "note": "P3OR84_glasshouse-crew-save-test: WORKDIR",
+     "source": "main commit"
+    },
+    {
+     "at": "2026-10-25T06:14:29+00:00",
+     "ok": true,
+     "note": "P3OR82_glasshouse-save-migration-test: WORKDIR",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-23T00:42:01+00:00",
      "ok": true,
@@ -9492,60 +9534,6 @@
      "at": "2026-10-21T16:45:34+00:00",
      "ok": true,
      "note": "feat: the greenhouse is drawn as a blue print, and only the living things are coloured",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T11:49:37+00:00",
-     "ok": true,
-     "note": "first-run onboarding menu, own logo top-left, live main",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T11:48:53+00:00",
-     "ok": true,
-     "note": "feat: a first screen a stranger understands, with the game's own logo top-left",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T19:05:23+00:00",
-     "ok": true,
-     "note": "fix: move dev notes out of docs/ so Pages does not serve them",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T19:02:33+00:00",
-     "ok": true,
-     "note": "build: commit the built site to docs/ and publish Pages from main",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T05:13:08+00:00",
-     "ok": true,
-     "note": "feat: absolute link preview image, visit counter hook",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-17T23:15:14+00:00",
-     "ok": true,
-     "note": "CREDIT line under the rules on the How to play card in all 5 shipped languages (Snake); README already says Snake; live",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-17T22:52:55+00:00",
-     "ok": true,
-     "note": "feat: How to play says the game is Snake",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-15T14:18:46+00:00",
-     "ok": true,
-     "note": "feat:",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-14T20:04:27+00:00",
-     "ok": true,
-     "note": "feat: faster first minute and no swallowed input",
      "source": "main commit"
     }
    ]
@@ -9793,7 +9781,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:11:01+00:00",
-   "lastChange": "2026-11-06T00:27:38+00:00",
+   "lastChange": "2026-11-06T00:33:19+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -10874,10 +10862,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 39.85,
+   "costTotalUsd": 47.05,
    "latestChange": {
-    "text": "see",
-    "at": "2026-10-29T22:15:12+00:00"
+    "text": "pages stay open (undo no longer refunds), 2x2 name cluster, Named. result on level 1",
+    "at": "2026-11-06T00:34:57+00:00"
    },
    "promo": {
     "files": {
@@ -10887,23 +10875,23 @@
     "caption": "Open pages to read their glyph names, compare, then name the last plant; wrong names cost hearts."
    },
    "why": "Images of an old herbal whose plants never grew, written in a script with language-like statistics and no reader.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 14
+    "daysInState": 0
    },
-   "waitingOn": "herbal pages stay open",
+   "waitingOn": "none",
    "id": "herbal-of-nowhere",
    "number": 132,
    "repo": "herbal-of-nowhere",
    "title": "Herbal of Nowhere",
    "line": "Open pages to read their glyph names, compare, then name the last plant; wrong names cost hearts.",
    "url": "https://chenhsieh.github.io/herbal-of-nowhere/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "placeholder shapes, 12 folios",
    "shelfNote": "",
@@ -10917,33 +10905,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T18:07:55+00:00",
-   "lastChange": "2026-11-06T00:25:44+00:00",
+   "lastChange": "2026-11-06T00:34:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 0,
     "codexTokens": 209511,
     "codexUsdEst": 0.25,
-    "claudeUsdEst": 10.8,
-    "earlierRounds": 8,
-    "earlierUsdEst": 28.8,
-    "totalUsdEst": 39.85
+    "claudeUsdEst": 14.4,
+    "earlierRounds": 9,
+    "earlierUsdEst": 32.4,
+    "totalUsdEst": 47.05
    },
    "tasks": [
     {
      "title": "P2HN00_herbal pages stay open",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Herbal of Nowhere: opened pages stay open (Undo no longer refunds ink), glyphs no longer sit under the parts, counters agree",
-     "since": "2026-11-06T00:22:00+00:00",
-     "done": null,
+     "since": "2026-11-02T17:23:53+00:00",
+     "done": "2026-11-02T17:23:53+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P2HN00 DONE, live (main , tag pre-pages-open; served game.js sha256 matches origin/main)."
     },
     {
      "title": "P3RL23_credits licences herbal of nowhere",
@@ -11004,9 +10992,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": {
     "date": "2026-10-22",
@@ -11014,8 +11002,20 @@
     "note": "Read as few pages of a made-up herbal as you can, then name the last plant; picking a page is a real choice, but Undo gives the ink back"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-06T00:34:57+00:00",
+     "ok": true,
+     "note": "pages stay open (undo no longer refunds), 2x2 name cluster, Named. result on level 1",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-06T00:33:54+00:00",
+     "ok": true,
+     "note": "fix: opening a page is permanent; name glyphs sit in a 2x2 cluster beside each drawing",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-29T22:15:12+00:00",
      "ok": false,
@@ -11074,18 +11074,6 @@
      "at": "2026-10-22T19:25:34+00:00",
      "ok": true,
      "note": "Herbal of Nowhere:",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T19:04:21+00:00",
-     "ok": true,
-     "note": "feat: Herbal of Nowhere starts from the game template",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T19:02:58+00:00",
-     "ok": true,
-     "note": "Initial commit",
      "source": "main commit"
     }
    ]
@@ -11701,7 +11689,7 @@
    ]
   },
   {
-   "nextTask": "Water one pot a morning on a tiered...",
+   "nextTask": null,
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "P2n90_iron-window-garden handed to Claude: Codex quota ran out;",
@@ -11715,7 +11703,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 3
+    "daysInState": 0
    },
    "waitingOn": "iron window garden",
    "id": "iron-window-garden",
@@ -11724,8 +11712,8 @@
    "title": "Iron Window Garden",
    "line": "",
    "url": "https://chenhsieh.github.io/iron-window-garden/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -11738,7 +11726,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:57:31+00:00",
-   "lastChange": "2026-11-02T17:23:53+00:00",
+   "lastChange": "2026-11-06T00:32:13+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -11754,10 +11742,10 @@
    "tasks": [
     {
      "title": "iron window garden",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Water one pot a morning on a tiered window rack where water drips down the next day: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-11-02T17:23:53+00:00",
+     "since": "2026-11-06T00:32:06+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -11768,8 +11756,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
@@ -14371,7 +14359,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-30T05:42:34+00:00",
-   "lastChange": "2026-11-06T00:26:55+00:00",
+   "lastChange": "2026-11-06T00:33:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -18535,7 +18523,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:05:09+00:00",
-   "lastChange": "2026-11-06T00:27:29+00:00",
+   "lastChange": "2026-11-06T00:36:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -18561,8 +18549,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-11-06T00:21:40+00:00",
-      "subject": "start: P2n93_one-umbrella (resume from Codex WIP, Claude lane L3)"
+      "at": "2026-11-06T00:28:34+00:00",
+      "subject": "wip: rain model per brief (no drying), 0.1 s step, bots table, kit 21"
      },
      "result": ""
     }
@@ -20953,7 +20941,7 @@
    ]
   },
   {
-   "nextTask": "Redacxiv: merge the save tests to main",
+   "nextTask": null,
    "costTotalUsd": 58.97,
    "latestChange": {
     "text": "Add generated puzzles [skip ci]",
@@ -20983,8 +20971,8 @@
    "title": "Redacxiv",
    "line": "Reveal a paper's title with word tiles.",
    "url": "https://chenhsieh.github.io/redacxiv/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Interface and visual pass; make the first game winnable for",
    "shelfNote": "",
@@ -20998,7 +20986,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T23:13:07+00:00",
-   "lastChange": "2026-11-05T10:02:45+00:00",
+   "lastChange": "2026-11-06T00:37:15+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -21014,10 +21002,10 @@
    "tasks": [
     {
      "title": "P3SV55_redacxiv merge save tests",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Redacxiv: merge the save tests to main",
-     "since": "2026-11-02T17:23:53+00:00",
+     "since": "2026-11-06T00:36:25+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -21126,8 +21114,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 11
    },
@@ -23349,7 +23337,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-30T05:44:03+00:00",
-   "lastChange": "2026-11-06T00:18:46+00:00",
+   "lastChange": "2026-11-06T00:37:54+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -32371,31 +32359,31 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 21.6,
+   "nextTask": "Watched Pot: keep the grown stone in view...",
+   "costTotalUsd": 25.2,
    "latestChange": {
-    "text": "not merged: main push refused in Claude session, needs merge2.sh",
-    "at": "2026-11-02T18:04:17+00:00"
+    "text": "P2n97 review: revise (win sheet hides the stone, daily pool 62 boards, 320 cells 37px);...",
+    "at": "2026-11-06T00:31:59+00:00"
    },
    "promo": null,
    "why": "A remix of earlier ideas",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
-    "reviseRound": 0,
-    "daysInState": 3
+    "reviseRound": 1,
+    "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "watched pot review fixes",
    "id": "watched-pot",
    "number": 157,
    "repo": "watched-pot",
    "title": "Watched Pot",
    "line": "",
    "url": "https://chenhsieh.github.io/watched-pot/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -32408,7 +32396,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:52:16+00:00",
-   "lastChange": "2026-11-02T18:04:17+00:00",
+   "lastChange": "2026-11-06T00:31:59+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -32417,11 +32405,25 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 3.6,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
-    "totalUsdEst": 21.6
+    "earlierRounds": 6,
+    "earlierUsdEst": 21.6,
+    "totalUsdEst": 25.2
    },
    "tasks": [
+    {
+     "title": "P2WP00_watched pot review fixes",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Watched Pot: keep the grown stone in view on the win, a fresh daily stone every day, bigger cells on small phones",
+     "since": "2026-11-06T00:31:08+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "watched pot",
      "state": "done",
@@ -32438,15 +32440,25 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-11-06",
+    "verdict": "revise",
+    "note": "Looking is the only move and the obvious looks lose on 8 of 9 levels after level 3, but the win sheet hides the grown stone and the daily repeats from a pool of 62 boards"
+   },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-06T00:31:59+00:00",
+     "ok": true,
+     "note": "P2n97 review: revise (win sheet hides the stone, daily pool 62 boards, 320 cells 37px); fix task P2WP00 queued",
+     "source": "board note"
+    },
     {
      "at": "2026-11-02T18:04:17+00:00",
      "ok": true,
@@ -33438,9 +33450,9 @@
    "ran": 0
   },
   "saves": {
-   "yes": 102,
+   "yes": 103,
    "no": 0,
-   "unknown": 69,
+   "unknown": 68,
    "ran": 0
   },
   "standard": {
