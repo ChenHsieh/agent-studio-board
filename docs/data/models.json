@@ -195,24 +195,24 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 34,
+   "count": 35,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 32,
+   "guessed": 33,
    "topFailures": [],
    "flag": "give more"
   },
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 301,
+   "count": 302,
    "firstTimePass": 95,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 251,
+   "guessed": 252,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -384,10 +384,10 @@
   {
    "executor": "codex gpt-6-sol high",
    "role": "build",
-   "count": 48,
+   "count": 49,
    "firstTimePass": 78,
    "retries": 30,
-   "medianMinutes": 16.0,
+   "medianMinutes": 16,
    "costPerPass": 0.0,
    "guessed": 0,
    "topFailures": [
@@ -555,6 +555,15 @@
   },
   {
    "date": "2026-11-05",
+   "task": "glasshouse why build",
+   "number": "3",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "P3PL19 DONE and LIVE (glasshouse, main 0b95876, branch chen-pl-why a9b7b21)."
+  },
+  {
+   "date": "2026-11-05",
    "task": "readable nonsense why rollout",
    "number": "75",
    "executor": "claude-sonnet",
@@ -600,6 +609,15 @@
   },
   {
    "date": "2026-11-05",
+   "task": "ac remote",
+   "number": "165",
+   "executor": "codex gpt-6-sol high",
+   "role": "build",
+   "passed": "",
+   "note": "capped, 0k tokens: the preview only looks one hour ahead, and the whole afternoon depends on where the sun will be at 16:00; a new player ha"
+  },
+  {
+   "date": "2026-11-05",
    "task": "gold star",
    "number": "164",
    "executor": "codex gpt-6-sol high",
@@ -624,6 +642,15 @@
    "role": "design",
    "passed": "yes",
    "note": "whether the cheap defaults should really go ahead on their own from 2026-11-09 (this is the design's rule; the board will show each date). O"
+  },
+  {
+   "date": "2026-11-05",
+   "task": "review same spots",
+   "number": "168",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "with the preview, a 5x5 hill is a scan for the biggest Saves number, not a plan; and 4-6 overlapping dashed boxes read as clutter (nothing o"
   },
   {
    "date": "2026-11-05",
@@ -678,33 +705,6 @@
    "role": "build",
    "passed": "yes",
    "note": "DONE (live). Speaking Stone: a swipe that starts on the board now scrolls the page; only the rope track drags the rope (gate B was the only "
-  },
-  {
-   "date": "2026-11-05",
-   "task": "expert webgl tech",
-   "number": "",
-   "executor": "claude-opus",
-   "role": "build",
-   "passed": "yes",
-   "note": "P1MH61 expert-webgl-tech: DONE as an addendum (the original WebGL memo, designs/mirror_hold_3d/webgl_tech.md of 2026-10-31, was built in P1M"
-  },
-  {
-   "date": "2026-11-05",
-   "task": "expert art and assets",
-   "number": "",
-   "executor": "claude-opus",
-   "role": "build",
-   "passed": "yes",
-   "note": "opponent further toward the print (a) all of A1-A5, (b) skin + hair only, (c) stay plain. My pick: (a)."
-  },
-  {
-   "date": "2026-11-05",
-   "task": "expert game design",
-   "number": "",
-   "executor": "claude-opus",
-   "role": "design",
-   "passed": "yes",
-   "note": "free looking (D2) in every bout (a), bouts 3-5 only (b), or never (c). My pick: (a)."
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."

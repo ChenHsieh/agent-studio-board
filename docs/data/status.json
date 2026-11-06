@@ -1,14 +1,16 @@
 {
- "generated": "2026-11-06T00:59:36+00:00",
+ "generated": "2026-11-06T01:10:10+00:00",
  "ops": {
-  "count": 10,
+  "count": 14,
   "notes": [
-   "A game changed in the last hour with no claimed task on it."
+   "A game changed in the last hour with no claimed task on it.",
+   "Two tasks share the number P2SSP01."
   ],
   "info": []
  },
  "about": [
-  "A game changed in the last hour with no claimed task on it."
+  "A game changed in the last hour with no claimed task on it.",
+  "Two tasks share the number P2SSP01."
  ],
  "project": {
   "name": "Game studio",
@@ -20,22 +22,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 6,
+    "queued": 4,
     "running": 1,
     "doneToday": 1,
-    "minutes": 280,
-    "estimateMinutes": 280
+    "minutes": 200,
+    "estimateMinutes": 200
    },
    "Claude": {
     "queued": 1,
-    "running": 10,
+    "running": 9,
     "doneToday": 0,
-    "minutes": 660,
-    "estimateMinutes": 330
+    "minutes": 600,
+    "estimateMinutes": 300
    }
   },
-  "queued": 7,
-  "running": 11,
+  "queued": 5,
+  "running": 10,
   "doneToday": 1,
   "lanes": {
    "Codex": 1,
@@ -46,17 +48,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 940,
-  "estimatedFinish": "2026-11-06T06:29:36+00:00",
-  "estimateMinutes": 330
+  "minutesRemaining": 800,
+  "estimatedFinish": "2026-11-06T06:10:10+00:00",
+  "estimateMinutes": 300
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P2SSP01_review same spots",
-   "since": null,
-   "activity": null,
+   "game": "same-spots",
+   "task": "P2SSP02_fix same spots after review",
+   "since": "2026-11-06T01:04:44+00:00",
+   "activity": "2026-11-06T01:08:43+00:00",
    "commit": null
   },
   {
@@ -64,18 +66,26 @@
    "game": "watched-pot",
    "task": "P2WP00_watched pot review fixes",
    "since": "2026-11-06T00:38:34+00:00",
-   "activity": "2026-11-06T00:59:26+00:00",
+   "activity": "2026-11-06T01:10:10+00:00",
    "commit": {
-    "at": "2026-11-06T00:54:44+00:00",
-    "subject": "wip: P2WP00_watched-pot-review-fixes (Codex lane autosave 19:54)"
+    "at": "2026-11-06T01:02:45+00:00",
+    "subject": "wip: P2WP00_watched-pot-review-fixes (Codex lane autosave 20:02)"
    }
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "review gold star and ac remote",
+   "since": null,
+   "activity": null,
+   "commit": null
   },
   {
    "worker": "Claude",
    "game": "iron-window-garden",
    "task": "iron window garden",
    "since": "2026-11-06T00:32:06+00:00",
-   "activity": "2026-11-06T00:54:50+00:00",
+   "activity": "2026-11-06T01:04:31+00:00",
    "commit": null
   },
   {
@@ -83,19 +93,11 @@
    "game": "one-umbrella",
    "task": "one umbrella",
    "since": "2026-11-06T00:18:34+00:00",
-   "activity": "2026-11-06T00:56:35+00:00",
+   "activity": "2026-11-06T01:09:45+00:00",
    "commit": {
-    "at": "2026-11-06T00:56:35+00:00",
-    "subject": "wip: 0.25 s step so a walk is 120 moves (playable gate cap 128)"
+    "at": "2026-11-06T01:09:24+00:00",
+    "subject": "wip: lesson cue over the goal line, drawn link preview"
    }
-  },
-  {
-   "worker": "Claude",
-   "game": "ac-remote",
-   "task": "ac remote",
-   "since": "2026-11-06T00:41:48+00:00",
-   "activity": "2026-11-06T00:51:54+00:00",
-   "commit": null
   },
   {
    "worker": "Claude",
@@ -131,14 +133,6 @@
   },
   {
    "worker": "Claude",
-   "game": "glasshouse",
-   "task": "P3PL19_glasshouse why build",
-   "since": "2026-11-06T00:57:57+00:00",
-   "activity": "2026-11-06T00:58:01+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
    "game": "lens-screen",
    "task": "lens screen studio 320 fix",
    "since": "2026-11-06T00:50:44+00:00",
@@ -147,11 +141,11 @@
   }
  ],
  "codexLanes": 1,
- "claudeWorkers": 10,
+ "claudeWorkers": 9,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
-  "runs": 351,
-  "usdEst": 1263.6,
+  "runs": 353,
+  "usdEst": 1270.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -241,7 +235,7 @@
   },
   {
    "day": "2026-11-05",
-   "changes": 15
+   "changes": 17
   }
  ],
  "houseRules": 25,
@@ -448,30 +442,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 14.4,
+   "costTotalUsd": 21.6,
    "latestChange": {
-    "text": "P2n96_ac-remote handed to Claude: Codex hit the 90 min cap;",
-    "at": "2026-10-29T13:15:31+00:00"
+    "text": "core live: readable mugs, hold to preview a swap, kit lesson, drawn preview, kit 21",
+    "at": "2026-11-06T01:04:31+00:00"
    },
    "promo": null,
    "why": "A remix of the chai boil dial and Thin Walls, set in an office with one shared air-conditioner remote.",
-   "state": "building",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "ac remote",
+   "waitingOn": "none",
    "id": "ac-remote",
    "number": 165,
    "repo": "ac-remote",
    "title": "Ac Remote",
    "line": "",
    "url": "https://chenhsieh.github.io/ac-remote/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -484,45 +478,57 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:13:24+00:00",
-   "lastChange": "2026-11-06T00:51:54+00:00",
+   "lastChange": "2026-11-06T01:04:31+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
-    "totalUsdEst": 14.4
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
+    "totalUsdEst": 21.6
    },
    "tasks": [
     {
      "title": "ac remote",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Swap office seats each hour so nobody gets up to touch the air-conditioner remote: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-11-06T00:41:48+00:00",
-     "done": null,
+     "since": "2026-11-02T17:23:53+00:00",
+     "done": "2026-11-02T17:23:53+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "P2n96_ac-remote: DONE (live https://chenhsieh.github.io/ac-remote/, main , tag pre-l4-p2n96-ac-remote)"
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-06T01:04:31+00:00",
+     "ok": true,
+     "note": "core live: readable mugs, hold to preview a swap, kit lesson, drawn preview, kit 21",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-06T01:03:07+00:00",
+     "ok": true,
+     "note": "feat: The AC Remote is playable: swap mugs between desks so nobody grabs the remote after 2 pm",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-29T13:15:31+00:00",
      "ok": false,
@@ -9299,30 +9305,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 57.6,
+   "costTotalUsd": 61.2,
    "latestChange": {
-    "text": "save migration, settings, crew save tests merged (no visible change)",
-    "at": "2026-11-06T00:36:24+00:00"
+    "text": "Why this exists section live (P3PL19)",
+    "at": "2026-11-06T01:06:59+00:00"
    },
    "promo": null,
    "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
    "state": "released",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 1,
     "daysInState": 13
    },
-   "waitingOn": "glasshouse why build",
+   "waitingOn": "none",
    "id": "glasshouse",
    "number": 3,
    "repo": "glasshouse",
    "title": "Glasshouse",
    "line": "Lead a line of students through a greenhouse.",
    "url": "https://chenhsieh.github.io/glasshouse/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Decide the best public role for a finished personal game",
    "shelfNote": "",
@@ -9336,27 +9342,27 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T23:15:14+00:00",
-   "lastChange": "2026-11-06T00:58:01+00:00",
+   "lastChange": "2026-11-06T01:06:59+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 8,
+    "claudeRuns": 9,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 28.8,
+    "claudeUsdEst": 32.4,
     "earlierRounds": 8,
     "earlierUsdEst": 28.8,
-    "totalUsdEst": 57.6
+    "totalUsdEst": 61.2
    },
    "tasks": [
     {
      "title": "P3PL19_glasshouse why build",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Why this exists: add the section to glasshouse through its build step",
-     "since": "2026-11-06T00:57:57+00:00",
-     "done": null,
+     "since": "2026-11-02T17:23:53+00:00",
+     "done": "2026-11-02T17:23:53+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
@@ -9465,9 +9471,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 8
+    "done": 9
    },
    "verdict": {
     "date": "2026-10-20",
@@ -9475,8 +9481,20 @@
     "note": "Fine; default menu page is gone: needs an onboarding page"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-06T01:06:59+00:00",
+     "ok": true,
+     "note": "Why this exists section live (P3PL19)",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-06T01:06:00+00:00",
+     "ok": true,
+     "note": "feat: a Why this exists link on the menu",
+     "source": "main commit"
+    },
     {
      "at": "2026-11-06T00:36:24+00:00",
      "ok": true,
@@ -9517,18 +9535,6 @@
      "at": "2026-10-23T00:42:01+00:00",
      "ok": true,
      "note": "P3OR39_glasshouse-short-share-line: WORKDIR",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T16:47:24+00:00",
-     "ok": true,
-     "note": "P1GH40 visual revamp live: hand-tinted cyanotype board, growing plants, paper figures, title plate, OFL fonts",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T16:45:34+00:00",
-     "ok": true,
-     "note": "feat: the greenhouse is drawn as a blue print, and only the living things are coloured",
      "source": "main commit"
     }
    ]
@@ -11733,7 +11739,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:57:31+00:00",
-   "lastChange": "2026-11-06T00:54:50+00:00",
+   "lastChange": "2026-11-06T01:04:31+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -18518,10 +18524,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 14.4,
+   "costTotalUsd": 18.0,
    "latestChange": {
-    "text": "P2n93_one-umbrella handed to Claude: Codex quota ran out;",
-    "at": "2026-10-28T04:44:47+00:00"
+    "text": "feat: One Umbrella is playable: drag one umbrella over two walkers as the wind turns",
+    "at": "2026-11-06T01:09:45+00:00"
    },
    "promo": null,
    "why": "A remix of Even Water and Thin Walls: one pour shared fairly becomes one umbrella shared by two in the rain.",
@@ -18554,7 +18560,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:05:09+00:00",
-   "lastChange": "2026-11-06T00:56:35+00:00",
+   "lastChange": "2026-11-06T01:09:45+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -18563,9 +18569,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 0.0,
-    "earlierRounds": 4,
-    "earlierUsdEst": 14.4,
-    "totalUsdEst": 14.4
+    "earlierRounds": 5,
+    "earlierUsdEst": 18.0,
+    "totalUsdEst": 18.0
    },
    "tasks": [
     {
@@ -18580,8 +18586,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-11-06T00:56:35+00:00",
-      "subject": "wip: 0.25 s step so a walk is 120 moves (playable gate cap 128)"
+      "at": "2026-11-06T01:09:24+00:00",
+      "subject": "wip: lesson cue over the goal line, drawn link preview"
      },
      "result": ""
     }
@@ -18596,6 +18602,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-06T01:09:45+00:00",
+     "ok": true,
+     "note": "feat: One Umbrella is playable: drag one umbrella over two walkers as the wind turns",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-28T04:44:47+00:00",
      "ok": false,
@@ -23319,7 +23331,7 @@
    ]
   },
   {
-   "nextTask": "Same Spots: apply the stranger review's fix list...",
+   "nextTask": null,
    "costTotalUsd": 14.4,
    "latestChange": {
     "text": "core built and live: tap-to-repaint hill, preview saves/exposes, 12 hills + daily,...",
@@ -23327,13 +23339,13 @@
    },
    "promo": null,
    "why": "A creature-design plate of an invented spotted beast, beside an ad with one bright seat among grey ones and a handbook chapter on disguise.",
-   "state": "building",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
     "resting": false,
     "regressed": false,
-    "reviseRound": 0,
-    "daysInState": 3
+    "reviseRound": 1,
+    "daysInState": 0
    },
    "waitingOn": "fix same spots after review",
    "id": "same-spots",
@@ -23342,8 +23354,8 @@
    "title": "Same Spots",
    "line": "",
    "url": "https://chenhsieh.github.io/same-spots/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -23356,7 +23368,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-30T05:44:03+00:00",
-   "lastChange": "2026-11-06T00:59:21+00:00",
+   "lastChange": "2026-11-06T01:08:43+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -23372,10 +23384,10 @@
    "tasks": [
     {
      "title": "P2SSP02_fix same spots after review",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Same Spots: apply the stranger review's fix list, Codex",
-     "since": "2026-11-02T17:23:53+00:00",
+     "since": "2026-11-06T01:04:44+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -23400,12 +23412,16 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 1
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-11-06",
+    "verdict": "revise",
+    "note": "Copying a neighbour loses on every hill after 3, but trying markings in the preview and keeping the best reaches par on most hills: the hills need a real plan"
+   },
    "needsYou": null,
    "inProgress": true,
    "history": [
@@ -29311,7 +29327,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 11
+    "daysInState": 12
    },
    "waitingOn": "none",
    "id": "think-elephant",
@@ -32421,7 +32437,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:52:16+00:00",
-   "lastChange": "2026-11-06T00:59:26+00:00",
+   "lastChange": "2026-11-06T01:10:10+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -32447,8 +32463,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-11-06T00:54:44+00:00",
-      "subject": "wip: P2WP00_watched-pot-review-fixes (Codex lane autosave 19:54)"
+      "at": "2026-11-06T01:02:45+00:00",
+      "subject": "wip: P2WP00_watched-pot-review-fixes (Codex lane autosave 20:02)"
      },
      "result": ""
     },

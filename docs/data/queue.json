@@ -1,5 +1,5 @@
 {
- "generated": 1793926793,
+ "generated": 1793927428,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -27,25 +27,6 @@
   "lastHandBackN": 7
  },
  "tasks": [
-  {
-   "id": "P3PL19_glasshouse-why-build",
-   "request": "Why this exists: add the section to glasshouse through its build step",
-   "game": "Glasshouse",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P3SV54_glasshouse-merge-save-tests"
-   ],
-   "priority": "P1",
-   "why": "A lab-supply company's Snake reskin promo game, and the idea that Snake's tail rule should be literally true.",
-   "state": "running",
-   "at": 1793640233,
-   "created": 1793640233
-  },
   {
    "id": "P3PL14_speaking-stone-why-rollout",
    "request": "Why this exists: finish the rollout on speaking-stone (new test failure: test/first_minute_play.mjs no longer sees )",
@@ -115,20 +96,20 @@
    "created": 1793640233
   },
   {
-   "id": "P2SSP01_review-same-spots",
-   "request": "Opus stranger review of same-spots after its core build",
-   "game": "Studio",
+   "id": "P2SSP02_fix-same-spots-after-review",
+   "request": "Same Spots: apply the stranger review's fix list, Codex",
+   "game": "Same Spots",
    "route": "Claude",
-   "model": "opus",
+   "model": "sonnet",
    "effort": "high",
    "kind": "review",
-   "size": "studio",
+   "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2SSP00_same-spots-core"
+    "P2SSP01_review-same-spots"
    ],
    "priority": null,
-   "why": "",
+   "why": "A creature-design plate of an invented spotted beast, beside an ad with one bright seat among grey ones and a handbook chapter on disguise.",
    "state": "running",
    "at": 1793640233,
    "created": 1793640233
@@ -152,6 +133,26 @@
    "at": 1793925068,
    "created": 1793925068,
    "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2n101_review-gold-star-and-ac-remote",
+   "request": "Play Gold Star and The AC Remote cold as a stranger and decide ship, revise or shelf for each",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2n95_gold-star",
+    "P2n96_ac-remote"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1793640233,
+   "created": 1793640233
   },
   {
    "id": "P2n90_iron-window-garden",
@@ -187,25 +188,6 @@
    ],
    "priority": null,
    "why": "A remix of Even Water and Thin Walls: one pour shared fairly becomes one umbrella shared by two in the rain.",
-   "state": "running",
-   "at": 1793640233,
-   "created": 1793640233
-  },
-  {
-   "id": "P2n96_ac-remote",
-   "request": "Swap office seats each hour so nobody gets up to touch the air-conditioner remote: build the core with placeholder shapes, then its first-minute round",
-   "game": "Ac Remote",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2n86_round4-template-repos"
-   ],
-   "priority": null,
-   "why": "A remix of the chai boil dial and Thin Walls, set in an office with one shared air-conditioner remote.",
    "state": "running",
    "at": 1793640233,
    "created": 1793640233
@@ -264,27 +246,6 @@
    "created": 1793640233
   },
   {
-   "id": "P2SSP02_fix-same-spots-after-review",
-   "request": "Same Spots: apply the stranger review's fix list, Codex",
-   "game": "Same Spots",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2SSP01_review-same-spots"
-   ],
-   "priority": null,
-   "why": "A creature-design plate of an invented spotted beast, beside an ad with one bright seat among grey ones and a handbook chapter on disguise.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2SSP01_review-same-spots"
-   ],
-   "created": 1793640233
-  },
-  {
    "id": "P2n100_review-one-umbrella-and-rolling-back",
    "request": "Play One Umbrella and Rolling Back cold as a stranger and decide ship, revise or shelf for each",
    "game": "Studio",
@@ -304,28 +265,6 @@
    "waitingOn": [
     "P2n93_one-umbrella",
     "P2n94_rolling-back"
-   ],
-   "created": 1793640233
-  },
-  {
-   "id": "P2n101_review-gold-star-and-ac-remote",
-   "request": "Play Gold Star and The AC Remote cold as a stranger and decide ship, revise or shelf for each",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2n95_gold-star",
-    "P2n96_ac-remote"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2n96_ac-remote"
    ],
    "created": 1793640233
   },
