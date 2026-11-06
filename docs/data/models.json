@@ -141,12 +141,12 @@
   {
    "executor": "claude-opus",
    "role": "build",
-   "count": 93,
+   "count": 96,
    "firstTimePass": 97,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": 0.01,
-   "guessed": 88,
+   "guessed": 91,
    "topFailures": [
     "rooms 16, 25 and 33 at 360x640 run 9-18 px past the screen after the f",
     "on small beds the canvas keeps its tall paper below the board, so on a",
@@ -515,6 +515,15 @@
  ],
  "last": [
   {
+   "date": "2026-11-03",
+   "task": "open play prototype",
+   "number": "",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "names shorten to 3 letters and still touch; headers sit tight on the court edge."
+  },
+  {
    "date": "2026-11-02",
    "task": "tree hero why rollout",
    "number": "11",
@@ -561,6 +570,15 @@
   },
   {
    "date": "2026-11-02",
+   "task": "low ai feel showcase",
+   "number": "",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "P2LAF00 low-ai-feel showcase: DONE (pushed to ChenHsieh/low-ai-feel main 66eba7d, branch chen-laf-showcase)"
+  },
+  {
+   "date": "2026-11-02",
    "task": "grub band one screen",
    "number": "120",
    "executor": "claude-sonnet",
@@ -603,6 +621,15 @@
    "role": "build",
    "passed": "yes",
    "note": "DONE on branch, NOT PUBLISHED: merge2.sh to main was denied by the permission classifier (production deploy). Branch chen-onescreen-p2fs47 ("
+  },
+  {
+   "date": "2026-11-02",
+   "task": "pid tuning game",
+   "number": "",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "the obvious \"max Brake\" and \"all max\" still finish calm, and its best setting"
   },
   {
    "date": "2026-11-02",
@@ -666,33 +693,6 @@
    "role": "build",
    "passed": "yes",
    "note": "flying tufts mid-air still read a little like ink scribbles; during the push-in the far-left puller is cropped at 360 px; 2D fallback has th"
-  },
-  {
-   "date": "2026-10-31",
-   "task": "build 3d mirror hold",
-   "number": "60",
-   "executor": "claude-opus",
-   "role": "build",
-   "passed": "yes",
-   "note": "neck stretch reads as a head yank (neck mostly hidden under the head from above); ginkgo-knot fan on client 10 is hard to read at phone size"
-  },
-  {
-   "date": "2026-10-31",
-   "task": "resources and clear goal study",
-   "number": "",
-   "executor": "claude-opus",
-   "role": "build",
-   "passed": "yes",
-   "note": "P1MC07 resources-and-clear-goal-study: DONE (study only; live game unchanged)"
-  },
-  {
-   "date": "2026-10-31",
-   "task": "grass crossword meaning titles stone",
-   "number": "86",
-   "executor": "claude-opus",
-   "role": "build",
-   "passed": "yes",
-   "note": "at phone size the oats and rye heads are pale and thin against the stone, so oats read as \"wispy grass\" more than oats until you zoom (admir"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
