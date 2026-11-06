@@ -3,64 +3,67 @@
  "plan_type": "plus",
  "windows": {
   "5h": {
-   "used_percent": 8.0,
+   "used_percent": 18.0,
    "window_minutes": 300,
    "resets_at": 1793944866,
-   "burn_percent_per_hour": 52.3,
-   "burn_basis_min": 9,
-   "eta_hours_to_empty": 1.8,
-   "eta_empty_epoch": 1793933761,
+   "burn_percent_per_hour": 54.27,
+   "burn_basis_min": 20,
+   "eta_hours_to_empty": 1.5,
+   "eta_empty_epoch": 1793933513,
+   "runs_out_before_reset": true,
+   "early_estimate": true,
+   "remaining_percent": 82.0,
+   "spark": [
+    8.0,
+    18.0
+   ]
+  },
+  "weekly": {
+   "used_percent": 8.0,
+   "window_minutes": 10080,
+   "resets_at": 1794400821,
+   "burn_percent_per_hour": 8.58,
+   "burn_basis_min": 42,
+   "eta_hours_to_empty": 10.7,
+   "eta_empty_epoch": 1793966681,
    "runs_out_before_reset": true,
    "early_estimate": true,
    "remaining_percent": 92.0,
    "spark": [
-    8.0
-   ]
-  },
-  "weekly": {
-   "used_percent": 7.0,
-   "window_minutes": 10080,
-   "resets_at": 1794400821,
-   "burn_percent_per_hour": 9.6,
-   "burn_basis_min": 31,
-   "eta_hours_to_empty": 9.7,
-   "eta_empty_epoch": 1793962295,
-   "runs_out_before_reset": true,
-   "early_estimate": true,
-   "remaining_percent": 93.0,
-   "spark": [
     3.0,
     3.0,
     5.0,
-    7.0
+    7.0,
+    8.0
    ]
   }
  },
  "binding": "5h",
- "used_percent": 8.0,
+ "used_percent": 18.0,
  "window_minutes": 300,
  "resets_at": 1793944866,
- "burn_percent_per_hour": 52.3,
- "burn_basis_min": 9,
- "eta_hours_to_empty": 1.8,
- "eta_empty_epoch": 1793933761,
+ "burn_percent_per_hour": 54.27,
+ "burn_basis_min": 20,
+ "eta_hours_to_empty": 1.5,
+ "eta_empty_epoch": 1793933513,
  "runs_out_before_reset": true,
- "codex_tasks_ready": 0,
+ "codex_tasks_ready": 1,
  "codex_tasks_done_3h": 0,
  "early_estimate": true,
  "spark": [
-  8.0
+  8.0,
+  18.0
  ],
- "generated": 1793927428,
+ "generated": 1793928074,
  "est_percent_per_task_used": 0.25,
- "est_percent_for_ready_queue": 0.0,
+ "est_percent_for_ready_queue": 0.2,
  "lanes_target": 1,
- "remaining_percent": 92.0,
+ "remaining_percent": 82.0,
  "providers": {
   "claude": {
    "meteredUsd": 320.89,
-   "inSessionRuns": 353,
-   "inSessionUsdEst": 1270.8,
+   "inSessionRuns": 356,
+   "inSessionUsdEst": 1281.6,
    "label": "estimate",
    "limit": "cap not readable from here"
   },
@@ -73,7 +76,7 @@
  },
  "watch": {
   "everyMin": 2,
-  "lastCheck": 1793927406,
+  "lastCheck": 1793928041,
   "resetEvent": 1793923920
  }
 }

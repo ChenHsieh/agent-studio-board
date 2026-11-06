@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-06T01:10:10+00:00",
+ "generated": "2026-11-06T01:20:58+00:00",
  "ops": {
-  "count": 14,
+  "count": 12,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "Two tasks share the number P2SSP01."
@@ -22,11 +22,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 4,
+    "queued": 5,
     "running": 1,
     "doneToday": 1,
-    "minutes": 200,
-    "estimateMinutes": 200
+    "minutes": 240,
+    "estimateMinutes": 240
    },
    "Claude": {
     "queued": 1,
@@ -36,7 +36,7 @@
     "estimateMinutes": 300
    }
   },
-  "queued": 5,
+  "queued": 6,
   "running": 10,
   "doneToday": 1,
   "lanes": {
@@ -48,8 +48,8 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 800,
-  "estimatedFinish": "2026-11-06T06:10:10+00:00",
+  "minutesRemaining": 840,
+  "estimatedFinish": "2026-11-06T06:20:58+00:00",
   "estimateMinutes": 300
  },
  "lanes": [
@@ -66,18 +66,18 @@
    "game": "watched-pot",
    "task": "P2WP00_watched pot review fixes",
    "since": "2026-11-06T00:38:34+00:00",
-   "activity": "2026-11-06T01:10:10+00:00",
+   "activity": "2026-11-06T01:20:57+00:00",
    "commit": {
-    "at": "2026-11-06T01:02:45+00:00",
-    "subject": "wip: P2WP00_watched-pot-review-fixes (Codex lane autosave 20:02)"
+    "at": "2026-11-06T01:18:49+00:00",
+    "subject": "wip: P2WP00_watched-pot-review-fixes (Codex lane autosave 20:18)"
    }
   },
   {
    "worker": "Claude",
-   "game": "Multiple games",
-   "task": "review gold star and ac remote",
-   "since": null,
-   "activity": null,
+   "game": "one-umbrella",
+   "task": "one umbrella fixes",
+   "since": "2026-11-06T01:19:27+00:00",
+   "activity": "2026-11-06T01:20:29+00:00",
    "commit": null
   },
   {
@@ -85,19 +85,16 @@
    "game": "iron-window-garden",
    "task": "iron window garden",
    "since": "2026-11-06T00:32:06+00:00",
-   "activity": "2026-11-06T01:04:31+00:00",
+   "activity": "2026-11-06T01:18:47+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
-   "game": "one-umbrella",
-   "task": "one umbrella",
-   "since": "2026-11-06T00:18:34+00:00",
-   "activity": "2026-11-06T01:09:45+00:00",
-   "commit": {
-    "at": "2026-11-06T01:09:24+00:00",
-    "subject": "wip: lesson cue over the goal line, drawn link preview"
-   }
+   "game": "rolling-back",
+   "task": "rolling back",
+   "since": "2026-11-06T01:20:06+00:00",
+   "activity": "2026-11-06T01:20:20+00:00",
+   "commit": null
   },
   {
    "worker": "Claude",
@@ -144,8 +141,8 @@
  "claudeWorkers": 9,
  "apiSpentUsd": 320.89,
  "claudeInSession": {
-  "runs": 353,
-  "usdEst": 1270.8,
+  "runs": 356,
+  "usdEst": 1281.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -235,7 +232,7 @@
   },
   {
    "day": "2026-11-05",
-   "changes": 17
+   "changes": 19
   }
  ],
  "houseRules": 25,
@@ -441,7 +438,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "The AC Remote visual round: one office with...",
    "costTotalUsd": 21.6,
    "latestChange": {
     "text": "core live: readable mugs, hold to preview a swap, kit lesson, drawn preview, kit 21",
@@ -449,23 +446,23 @@
    },
    "promo": null,
    "why": "A remix of the chai boil dial and Thin Walls, set in an office with one shared air-conditioner remote.",
-   "state": "shelved",
+   "state": "ship",
    "stateFlags": {
-    "refining": false,
-    "resting": true,
+    "refining": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "ac remote visual round",
    "id": "ac-remote",
    "number": 165,
    "repo": "ac-remote",
    "title": "Ac Remote",
    "line": "",
    "url": "https://chenhsieh.github.io/ac-remote/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -478,7 +475,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:13:24+00:00",
-   "lastChange": "2026-11-06T01:04:31+00:00",
+   "lastChange": "2026-11-06T01:12:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -492,6 +489,20 @@
     "totalUsdEst": 21.6
    },
    "tasks": [
+    {
+     "title": "ac remote visual round",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "The AC Remote visual round: one office with lights, vent, west blinds and a water cooler; mugs with their own patterns",
+     "since": "2026-11-06T01:12:00+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "ac remote",
      "state": "done",
@@ -508,14 +519,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-11-06",
+    "verdict": "ship",
+    "note": "Looking one hour ahead loses every hard day and planning three hours ahead is needed, the sun moving round the office makes it, and the mugs read at phone size"
+   },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-11-06T01:04:31+00:00",
@@ -9745,7 +9760,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Gold Star fix: see every desk before posting...",
    "costTotalUsd": 21.6,
    "latestChange": {
     "text": "core live: hold a card to read every desk, first minute, drawn preview, kit 21",
@@ -9753,23 +9768,23 @@
    },
    "promo": null,
    "why": "A remix of Pigeon Salon and Morning Three: training a judge by rewards, turned round onto a class of eight.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
-    "reviseRound": 0,
+    "reviseRound": 1,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "gold star preview and par",
    "id": "gold-star",
    "number": 164,
    "repo": "gold-star",
    "title": "Gold Star",
    "line": "",
    "url": "https://chenhsieh.github.io/gold-star/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -9782,7 +9797,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:11:01+00:00",
-   "lastChange": "2026-11-06T00:41:43+00:00",
+   "lastChange": "2026-11-06T01:12:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -9796,6 +9811,20 @@
     "totalUsdEst": 21.6
    },
    "tasks": [
+    {
+     "title": "gold star preview and par",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Gold Star fix: see every desk before posting (tap to look, tap again to post) and make par the headline",
+     "since": "2026-11-06T01:12:00+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "gold star",
      "state": "done",
@@ -9812,14 +9841,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 1
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-11-06",
+    "verdict": "revise",
+    "note": "Reaching the line is easy once you look ahead a day, and the stars are the real puzzle, but the only way to see a card before posting it is a hidden press and hold"
+   },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-11-06T00:41:43+00:00",
@@ -11739,7 +11772,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:57:31+00:00",
-   "lastChange": "2026-11-06T01:04:31+00:00",
+   "lastChange": "2026-11-06T01:18:47+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -18524,22 +18557,22 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 18.0,
+   "costTotalUsd": 25.2,
    "latestChange": {
-    "text": "feat: One Umbrella is playable: drag one umbrella over two walkers as the wind turns",
-    "at": "2026-11-06T01:09:45+00:00"
+    "text": "P2n100 review: revise (endless end sheet, small-board labels, How to play picture); fix...",
+    "at": "2026-11-06T01:18:37+00:00"
    },
    "promo": null,
    "why": "A remix of Even Water and Thin Walls: one pour shared fairly becomes one umbrella shared by two in the rain.",
-   "state": "building",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
     "resting": false,
     "regressed": false,
-    "reviseRound": 0,
+    "reviseRound": 1,
     "daysInState": 0
    },
-   "waitingOn": "one umbrella",
+   "waitingOn": "one umbrella fixes",
    "id": "one-umbrella",
    "number": 162,
    "repo": "one-umbrella",
@@ -18560,48 +18593,75 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:05:09+00:00",
-   "lastChange": "2026-11-06T01:09:45+00:00",
+   "lastChange": "2026-11-06T01:20:29+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 0,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 5,
-    "earlierUsdEst": 18.0,
-    "totalUsdEst": 18.0
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 6,
+    "earlierUsdEst": 21.6,
+    "totalUsdEst": 25.2
    },
    "tasks": [
     {
-     "title": "one umbrella",
+     "title": "one umbrella fixes",
      "state": "running",
      "worker": "Claude",
-     "plan": "Slide one umbrella between two walkers so both get home dry as the wind turns: build the core with placeholder shapes, then its first-minute round",
-     "since": "2026-11-06T00:18:34+00:00",
+     "plan": "One Umbrella: fix the endless run-over sheet and share line, readable wet labels on small boards, a gust picture in How to play",
+     "since": "2026-11-06T01:19:27+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
-     "commit": {
-      "at": "2026-11-06T01:09:24+00:00",
-      "subject": "wip: lesson cue over the goal line, drawn link preview"
-     },
+     "commit": null,
      "result": ""
+    },
+    {
+     "title": "one umbrella",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Slide one umbrella between two walkers so both get home dry as the wind turns: build the core with placeholder shapes, then its first-minute round",
+     "since": "2026-11-02T17:23:53+00:00",
+     "done": "2026-11-02T17:23:53+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P2n93_one-umbrella: DONE (Claude lane L3, Opus; resumed from the Codex WIP branch, which was rebuilt rather than patched)"
     }
    ],
    "taskCounts": {
     "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 0
+    "done": 1
    },
-   "verdict": null,
+   "verdict": {
+    "date": "2026-11-05",
+    "verdict": "revise",
+    "note": "The gust warning and the leaning shelter make the choice readable; fix the endless end sheet, small-screen labels and the How to play picture"
+   },
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-06T01:18:37+00:00",
+     "ok": true,
+     "note": "P2n100 review: revise (endless end sheet, small-board labels, How to play picture); fix task P2n120 queued",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-06T01:11:30+00:00",
+     "ok": true,
+     "note": "P2n93 core live: drag one umbrella over two walkers, gust preview, 6 lanes + daily, bots table, first minute; gates green",
+     "source": "board note"
+    },
     {
      "at": "2026-11-06T01:09:45+00:00",
      "ok": true,
@@ -22510,23 +22570,23 @@
    },
    "promo": null,
    "why": "A remix of Whiteboard Song and Not Yet through the myth of the stone that always rolls back down.",
-   "state": "shelved",
+   "state": "building",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 8
+    "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "rolling back",
    "id": "rolling-back",
    "number": 163,
    "repo": "rolling-back",
    "title": "Rolling Back",
    "line": "",
    "url": "https://chenhsieh.github.io/rolling-back/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -22539,7 +22599,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:08:19+00:00",
-   "lastChange": "2026-10-28T21:57:14+00:00",
+   "lastChange": "2026-11-06T01:20:20+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -22552,16 +22612,31 @@
     "earlierUsdEst": 21.6,
     "totalUsdEst": 21.6
    },
-   "tasks": [],
+   "tasks": [
+    {
+     "title": "rolling back",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Push a stone up a hill note by note; it rolls back playing your climb backwards: build the core with placeholder shapes, then its first-minute round",
+     "since": "2026-11-06T01:20:06+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    }
+   ],
    "taskCounts": {
     "queued": 0,
-    "running": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 0
    },
    "verdict": null,
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-10-28T21:57:14+00:00",
@@ -32437,7 +32512,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:52:16+00:00",
-   "lastChange": "2026-11-06T01:10:10+00:00",
+   "lastChange": "2026-11-06T01:20:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -32463,8 +32538,8 @@
      "tokens": null,
      "reviewOutcome": null,
      "commit": {
-      "at": "2026-11-06T01:02:45+00:00",
-      "subject": "wip: P2WP00_watched-pot-review-fixes (Codex lane autosave 20:02)"
+      "at": "2026-11-06T01:18:49+00:00",
+      "subject": "wip: P2WP00_watched-pot-review-fixes (Codex lane autosave 20:18)"
      },
      "result": ""
     },
@@ -33488,8 +33563,8 @@
    "ran": 0
   },
   "credits": {
-   "yes": 84,
-   "no": 78,
+   "yes": 83,
+   "no": 79,
    "unknown": 9,
    "ran": 0
   },
