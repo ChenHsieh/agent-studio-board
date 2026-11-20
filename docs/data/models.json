@@ -141,12 +141,12 @@
   {
    "executor": "claude-opus",
    "role": "build",
-   "count": 243,
+   "count": 245,
    "firstTimePass": 99,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 238,
+   "guessed": 240,
    "topFailures": [
     "rooms 16, 25 and 33 at 360x640 run 9-18 px past the screen after the f",
     "on small beds the canvas keeps its tall paper below the board, so on a",
@@ -171,12 +171,12 @@
   {
    "executor": "claude-opus",
    "role": "fix",
-   "count": 22,
-   "firstTimePass": 75,
+   "count": 23,
+   "firstTimePass": 76,
    "retries": 5,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 17,
+   "guessed": 18,
    "topFailures": [
     "DONE",
     "nothing is measured yet. Squeaky Floor's risk is that the flow trap is",
@@ -211,12 +211,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 452,
+   "count": 454,
    "firstTimePass": 96,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 399,
+   "guessed": 401,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -239,12 +239,12 @@
   {
    "executor": "claude-sonnet",
    "role": "fix",
-   "count": 35,
-   "firstTimePass": 85,
+   "count": 36,
+   "firstTimePass": 86,
    "retries": 5,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 29,
+   "guessed": 30,
    "topFailures": [
     "the lesson start depends on the kit keeping [data-pl=\"howto-start\"] an",
     "after any go() to another screen the lesson is dropped and remembered",
@@ -267,12 +267,12 @@
   {
    "executor": "claude-sonnet",
    "role": "review",
-   "count": 23,
+   "count": 24,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 23,
+   "guessed": 24,
    "topFailures": [],
    "flag": "give more"
   },
@@ -601,12 +601,48 @@
   },
   {
    "date": "2026-11-19",
+   "task": "guide lines words and daily head",
+   "number": "140",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE (live main 15d951d, branch chen-p2n123)."
+  },
+  {
+   "date": "2026-11-19",
    "task": "one loop review",
    "number": "198",
    "executor": "claude-opus",
    "role": "review",
    "passed": "yes",
    "note": "the core rule (a number counts its sides on the loop) is never said on screen, and the closed loop, the moment of the game, sits under the r"
+  },
+  {
+   "date": "2026-11-19",
+   "task": "still fall lead",
+   "number": "193",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "the goat and hachures are judged only on mocks; at the 44 px floor on 320 the goat is small, and the mock's start stones read as a snowman ("
+  },
+  {
+   "date": "2026-11-19",
+   "task": "clean features lead",
+   "number": "96",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "at 390x844 the dish is 80 percent of today's diameter and about 100 px stays free under the tray on short levels; at 320x568 neurons are dra"
+  },
+  {
+   "date": "2026-11-19",
+   "task": "fix the night lead",
+   "number": "190",
+   "executor": "claude-opus",
+   "role": "fix",
+   "passed": "yes",
+   "note": "DONE"
   },
   {
    "date": "2026-11-19",
@@ -697,42 +733,6 @@
    "role": "review",
    "passed": "yes",
    "note": "at 390 level 1 the first-minute card keeps Skip in its own column, so the text wraps over six narrow lines and the board drops to 288 px wit"
-  },
-  {
-   "date": "2026-11-19",
-   "task": "rereview marble machine and pinch points",
-   "number": "19",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "on tunes 4, 6 and 8 the first fix you try is always the answer"
-  },
-  {
-   "date": "2026-11-19",
-   "task": "ring of keys true words",
-   "number": "178",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "share line emoji vs kit lint; test/lesson_check.test.mjs test 3 fails on this game (it injects a cell move {i:0}; fails on the untouched pri"
-  },
-  {
-   "date": "2026-11-19",
-   "task": "still a heap walk words resume",
-   "number": "160",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "the new-rule strip (plates 2, 3) is much taller than the goal line, so the board still jumps 60-90 px when the strip closes on the first tak"
-  },
-  {
-   "date": "2026-11-19",
-   "task": "incense seal clock",
-   "number": "176",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "P2FX00_incense-seal-clock: DONE, live https://chenhsieh.github.io/incense-seal-clock/ (main 5453543, branch chen-fx00)"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."

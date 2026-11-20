@@ -1,7 +1,7 @@
 {
  "generated": "2026-11-20",
  "since": "2026-11-06",
- "openDecisions": 11,
+ "openDecisions": 12,
  "decisions": [
   {
    "game": "play-template",
@@ -220,6 +220,25 @@
    "ifNothing": "Nothing happens until you answer; no work is spent on it.",
    "answer": "ask|coin-dumplings|",
    "rank": 11
+  },
+  {
+   "game": "fix-the-night",
+   "gameName": "#190 Fix The Night",
+   "games": [
+    "fix-the-night"
+   ],
+   "question": "Level 1 goal line reads \"Tap twice to calm.",
+   "facts": "Level 1 goal line reads \"Tap twice to calm. Dials into the stripes.\" A first-time reader asks tap what, calm what. Options: keep it; \"Tap a thing twice. Get its dial into the stripes.\"; \"Get every dial into the stripes.\" (the lesson strip now teaches the tap).",
+   "pick": "The last one.",
+   "kind": "cheap",
+   "daysWaiting": 0,
+   "goesAheadOn": "2026-11-23",
+   "blocksGames": 1,
+   "blocksTasks": 0,
+   "blocks": 1,
+   "ifNothing": "Goes ahead with the pick on 2026-11-23.",
+   "answer": "ask|fix-the-night|",
+   "rank": 12
   }
  ],
  "events": [
@@ -1134,9 +1153,9 @@
   {
    "kind": "over-cap",
    "lane": "Building",
-   "count": 22,
+   "count": 19,
    "cap": 6,
-   "why": "22 games in building, limit 6. New work waits until some move on."
+   "why": "19 games in building, limit 6. New work waits until some move on."
   },
   {
    "kind": "over-cap",
