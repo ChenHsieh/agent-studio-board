@@ -141,12 +141,12 @@
   {
    "executor": "claude-opus",
    "role": "build",
-   "count": 249,
+   "count": 250,
    "firstTimePass": 99,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 244,
+   "guessed": 245,
    "topFailures": [
     "rooms 16, 25 and 33 at 360x640 run 9-18 px past the screen after the f",
     "on small beds the canvas keeps its tall paper below the board, so on a",
@@ -199,24 +199,24 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 167,
+   "count": 168,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 165,
+   "guessed": 166,
    "topFailures": [],
    "flag": "give more"
   },
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 464,
+   "count": 466,
    "firstTimePass": 96,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 411,
+   "guessed": 413,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -239,12 +239,12 @@
   {
    "executor": "claude-sonnet",
    "role": "fix",
-   "count": 38,
-   "firstTimePass": 86,
+   "count": 39,
+   "firstTimePass": 87,
    "retries": 5,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 32,
+   "guessed": 33,
    "topFailures": [
     "the lesson start depends on the kit keeping [data-pl=\"howto-start\"] an",
     "after any go() to another screen the lesson is dropped and remembered",
@@ -556,6 +556,24 @@
  "last": [
   {
    "date": "2026-11-20",
+   "task": "whos at the door visual study",
+   "number": "181",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "canvas HUD and plate words are 22 px at 360 wide, so about 18 px on a 320 phone (live is 20 px, about 16); the build must not shrink them, a"
+  },
+  {
+   "date": "2026-11-20",
+   "task": "review between the ropes and drying table",
+   "number": "172",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "the first minute. Off-guide moves leave \"Tap Undo, then try again.\" which follows the player into the daily and into level 3 where nothing c"
+  },
+  {
+   "date": "2026-11-20",
    "task": "rereview next please and fool the algorithm",
    "number": "94",
    "executor": "claude-opus",
@@ -565,12 +583,39 @@
   },
   {
    "date": "2026-11-20",
+   "task": "speaking stone fixes",
+   "number": "123",
+   "executor": "claude-sonnet",
+   "role": "fix",
+   "passed": "yes",
+   "note": "DONE"
+  },
+  {
+   "date": "2026-11-20",
    "task": "marble machine obvious play fixes",
    "number": "19",
    "executor": "claude-sonnet",
    "role": "fix",
    "passed": "yes",
    "note": "DONE"
+  },
+  {
+   "date": "2026-11-20",
+   "task": "squeaky floor lead build board",
+   "number": "194",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE (2026-11-20 00:40). Branch chen-nb31 on ChenHsieh/squeaky-floor, pushed, NOT published (build 2 publishes). Based on chen-lead-20261120"
+  },
+  {
+   "date": "2026-11-20",
+   "task": "mushroom gaps lead build",
+   "number": "68",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "at 390 an empty band between meter strip and card; next level's lesson not previewed on win card; real-touch checks were Playwright taps at "
   },
   {
    "date": "2026-11-19",
@@ -688,51 +733,6 @@
    "role": "build",
    "passed": "yes",
    "note": "P2SL47_slitherlink-og-url: DONE 2026-11-19. docs/index.html og:url and og:image (and README Live link) now /slitherlink/. Source of truth is"
-  },
-  {
-   "date": "2026-11-19",
-   "task": "one loop",
-   "number": "198",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "at 320x568 the 7x7 daily board is small on the result view (about 170 px) and cells are 41 px while playing (below the 44 px floor; unchange"
-  },
-  {
-   "date": "2026-11-19",
-   "task": "one loop review",
-   "number": "198",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "the core rule (a number counts its sides on the loop) is never said on screen, and the closed loop, the moment of the game, sits under the r"
-  },
-  {
-   "date": "2026-11-19",
-   "task": "still fall lead",
-   "number": "193",
-   "executor": "claude-opus",
-   "role": "build",
-   "passed": "yes",
-   "note": "the goat and hachures are judged only on mocks; at the 44 px floor on 320 the goat is small, and the mock's start stones read as a snowman ("
-  },
-  {
-   "date": "2026-11-19",
-   "task": "squeaky floor lead",
-   "number": "194",
-   "executor": "claude-opus",
-   "role": "build",
-   "passed": "yes",
-   "note": "at 320 the key does not fit on level 4 (Retry night is 46 CSS px tall), so the 320 stranger relies on the first card for what a nail means."
-  },
-  {
-   "date": "2026-11-19",
-   "task": "the sixth clipping lead",
-   "number": "173",
-   "executor": "claude-opus",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."

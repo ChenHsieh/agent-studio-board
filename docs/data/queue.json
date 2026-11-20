@@ -1,5 +1,5 @@
 {
- "generated": 1795150861,
+ "generated": 1795151403,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -64,44 +64,6 @@
    "state": "running",
    "at": 1795147990,
    "created": 1795147990
-  },
-  {
-   "id": "P2NB27_mushroom-gaps-lead-build",
-   "request": "Build the lead's result card for Mushroom at the End: one wording table for every outcome, checked by a test",
-   "game": "Mushroom at the End",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P2NX22_mushroom-gaps-lead"
-   ],
-   "priority": "P1",
-   "why": "An anthropology trivia post about a book on matsutake mushrooms growing in the ruins of industry.",
-   "state": "running",
-   "at": 1795147990,
-   "created": 1795147990
-  },
-  {
-   "id": "P2NF83_speaking-stone-fixes",
-   "request": "P2NF83_speaking stone fixes",
-   "game": "Speaking Stone",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "fix",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR09_review-speaking-stone"
-   ],
-   "priority": "P2",
-   "why": "Screenshots arguing over a proposed test that would measure polish instead of substance.",
-   "state": "running",
-   "at": 1795148955,
-   "created": 1795148955
   },
   {
    "id": "P2NV114_copy-paste-visual-study",
@@ -174,6 +136,25 @@
    "created": 1793640233
   },
   {
+   "id": "P2KS00_kit-sync-batch-1",
+   "request": "Bring one-umbrella, the-walker, three-copies, gold-star, watched-pot up to the newest play-template kit, re-run each game's checks and publish each one once",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3KT57_lesson-pointer-on-wrong-step"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1795150927,
+   "created": 1795150927
+  },
+  {
    "id": "P2NB28_the-sixth-clipping-lead-build",
    "request": "Build the lead's coach for The Sixth Clipping so no line ever says a story happened when none did",
    "game": "The Sixth Clipping",
@@ -212,17 +193,17 @@
    "created": 1795148458
   },
   {
-   "id": "P2NB31_squeaky-floor-lead-build-board",
-   "request": "Squeaky Floor: the floor drawn as an old wooden house at night, goal lines name the step",
+   "id": "P2NB32_squeaky-floor-lead-build-share-publish",
+   "request": "Squeaky Floor: share marks per night, logo, preview picture, publish once",
    "game": "Squeaky Floor",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
    "kind": "build",
-   "size": "several repos",
+   "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NX24_squeaky-floor-lead"
+    "P2NB31_squeaky-floor-lead-build-board"
    ],
    "priority": null,
    "why": "",
@@ -288,8 +269,46 @@
    "created": 1795149961
   },
   {
-   "id": "P2NR125_review-between-the-ropes-and-drying-table",
-   "request": "First stranger review of Between the Ropes and Drying Table, which are built and live but were never played by a reviewer",
+   "id": "P2NF87_between-the-ropes-review-fixes",
+   "request": "P2NF87_between the ropes review fixes",
+   "game": "Between The Ropes",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR125_review-between-the-ropes-and-drying-table"
+   ],
+   "priority": null,
+   "why": "An old film of a slow practitioner moving inside a cube strung with ropes; move a soft ball of light slowly through a cube of strings without touching one.",
+   "state": "running",
+   "at": 1795150956,
+   "created": 1795150956
+  },
+  {
+   "id": "P2NF88_drying-table-review-fixes",
+   "request": "P2NF88_drying table review fixes",
+   "game": "Drying Table",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR125_review-between-the-ropes-and-drying-table"
+   ],
+   "priority": null,
+   "why": "A photo of a shared ping-pong table covered in vegetables drying in the sun.",
+   "state": "running",
+   "at": 1795150956,
+   "created": 1795150956
+  },
+  {
+   "id": "P2NR127_rereview-speaking-stone",
+   "request": "P2NR127_rereview speaking stone",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
@@ -297,7 +316,28 @@
    "kind": "review",
    "size": "studio",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P2NF83_speaking-stone-fixes"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1795148981,
+   "created": 1795148981
+  },
+  {
+   "id": "P2NR93_review-literal-spirit",
+   "request": "P2NR93_review literal spirit",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2n103_literal-spirit"
+   ],
    "priority": null,
    "why": "",
    "state": "running",
@@ -317,25 +357,6 @@
    "after": [],
    "priority": null,
    "why": "",
-   "state": "running",
-   "at": 1795147990,
-   "created": 1795147990
-  },
-  {
-   "id": "P2NV110_whos-at-the-door-visual-study",
-   "request": "Who's at the Door: visual round design study after a ship verdict (look, mock, build tasks)",
-   "game": "Whos At The Door",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "visual",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P2NR113_rereview-close-a-door-and-whos-at-the-door"
-   ],
-   "priority": null,
-   "why": "A chat about a stranger who walked into a lab with a plausible story and left, and a run of security failures where one tiny key opened many doors.",
    "state": "running",
    "at": 1795147990,
    "created": 1795147990
@@ -398,6 +419,42 @@
    "created": 1795147990
   },
   {
+   "id": "P2NV117_whos-at-the-door-visual-build-theme",
+   "request": "P2NV117_whos at the door visual build theme",
+   "game": "Whos At The Door",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NV110_whos-at-the-door-visual-study"
+   ],
+   "priority": null,
+   "why": "A chat about a stranger who walked into a lab with a plausible story and left, and a run of security failures where one tiny key opened many doors.",
+   "state": "running",
+   "at": 1795150922,
+   "created": 1795150922
+  },
+  {
+   "id": "P3KT58_kit-mistake-by-reachable-score",
+   "request": "P3KT58_kit mistake by reachable score",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1795150552,
+   "created": 1795150552
+  },
+  {
    "id": "P3PL13_dancers-not-mad-why-rollout",
    "request": "Why this exists: finish the rollout on dancers-not-mad (new test failure: test/anim_budget.mjs (layout shift))",
    "game": "Dancers Not Mad",
@@ -434,8 +491,261 @@
    "created": 1795148020
   },
   {
-   "id": "P2NR93_review-literal-spirit",
-   "request": "P2NR93_review literal spirit",
+   "id": "P1NT04_chen-feedback-audit",
+   "request": "P1NT04_chen feedback audit",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795151257
+  },
+  {
+   "id": "P2KS01_kit-sync-batch-2",
+   "request": "Bring same-spots, short-calls, market-day, last-piece, rumour-on-the-jetty up to the newest play-template kit, re-run each game's checks and publish each one once",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3KT57_lesson-pointer-on-wrong-step"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795150949
+  },
+  {
+   "id": "P2KS02_kit-sync-batch-3",
+   "request": "Bring gilded-poster, iron-window-garden, painted-walls, restored, round-table up to the newest play-template kit, re-run each game's checks and publish each one once",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3KT57_lesson-pointer-on-wrong-step"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795150970
+  },
+  {
+   "id": "P2KS03_kit-sync-batch-4",
+   "request": "Bring the-office-lottery, long-way-round, stray-cat, sounds-like, the-draw up to the newest play-template kit, re-run each game's checks and publish each one once",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3KT57_lesson-pointer-on-wrong-step"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795150992
+  },
+  {
+   "id": "P2KS04_kit-sync-batch-5",
+   "request": "Bring ac-remote, rolling-back, paid-clapper up to the newest play-template kit, re-run each game's checks and publish each one once",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3KT57_lesson-pointer-on-wrong-step"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795151015
+  },
+  {
+   "id": "P2KS05_kit-sync-batch-6",
+   "request": "Bring copy-drift, even-water, morning-three, one-thread up to the newest play-template kit, re-run each game's checks and publish each one once",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3KT57_lesson-pointer-on-wrong-step"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795151036
+  },
+  {
+   "id": "P2KS06_kit-sync-batch-7",
+   "request": "Bring own-ground, pigeon-salon, radish-omelette up to the newest play-template kit, re-run each game's checks and publish each one once",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P3KT57_lesson-pointer-on-wrong-step"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795151059
+  },
+  {
+   "id": "P2NR130_rereview-close-a-door-and-ring-of-keys",
+   "request": "Play close-a-door and ring-of-keys as a stranger after tonight's fixes and give each a verdict",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795151081
+  },
+  {
+   "id": "P2NR131_rereview-pick-a-swarm-and-pinch-points",
+   "request": "Play pick-a-swarm and pinch-points as a stranger after tonight's fixes and give each a verdict",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795151092
+  },
+  {
+   "id": "P2NR132_rereview-two-tigers-and-guide-lines",
+   "request": "Play two-tigers and guide-lines as a stranger after tonight's fixes and give each a verdict",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795151103
+  },
+  {
+   "id": "P2NR133_rereview-no-favorites-and-one-loop",
+   "request": "Play no-favorites and one-loop as a stranger after tonight's fixes and give each a verdict",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795151114
+  },
+  {
+   "id": "P2NR134_rereview-flying-white-and-incense-seal-clock",
+   "request": "Play flying-white and incense-seal-clock as a stranger after tonight's fixes and give each a verdict",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795151125
+  },
+  {
+   "id": "P2NR135_rereview-drum-rule-and-rna-hero",
+   "request": "Play drum-rule and rna-hero as a stranger after tonight's fixes and give each a verdict",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795151137
+  },
+  {
+   "id": "P2NR136_rereview-two-carts-and-marble-machine",
+   "request": "Play two-carts and marble-machine as a stranger after tonight's fixes and give each a verdict",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NF79_two-carts-board-fills-and-families",
+    "P2NF80_marble-machine-obvious-play-fixes"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795151148
+  },
+  {
+   "id": "P2NR138_resting-rereview-tree-hero-and-motif-hero",
+   "request": "Bring tree-hero and motif-hero off the resting shelf: play their live fixes as a stranger and give each a verdict",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
@@ -443,14 +753,97 @@
    "kind": "review",
    "size": "studio",
    "estMinutes": null,
-   "after": [
-    "P2n103_literal-spirit"
-   ],
+   "after": [],
    "priority": null,
    "why": "",
    "state": "ready",
    "waitingOn": [],
-   "created": 1795147990
+   "created": 1795151170
+  },
+  {
+   "id": "P2NR139_resting-rereview-lantern-meeting-and-letter-lines",
+   "request": "Bring lantern-meeting and letter-lines off the resting shelf: play their live fixes as a stranger and give each a verdict",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795151180
+  },
+  {
+   "id": "P2NR140_resting-rereview-shortest-law-and-lamp-spiral",
+   "request": "Bring shortest-law and lamp-spiral off the resting shelf: play their live fixes as a stranger and give each a verdict",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795151191
+  },
+  {
+   "id": "P2NR141_resting-rereview-thirsty-clicks-and-acrylic-beacon",
+   "request": "Bring thirsty-clicks and acrylic-beacon off the resting shelf: play their live fixes as a stranger and give each a verdict",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795151202
+  },
+  {
+   "id": "P2NR142_resting-rereview-floating-city-and-knockout-plate",
+   "request": "Bring floating-city and knockout-plate off the resting shelf: play their live fixes as a stranger and give each a verdict",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795151213
+  },
+  {
+   "id": "P2NR143_resting-rereview-hallway-posters-and-felt-years",
+   "request": "Bring hallway-posters and felt-years off the resting shelf: play their live fixes as a stranger and give each a verdict",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795151224
   },
   {
    "id": "P2NV115_next-please-visual-study",
@@ -472,6 +865,40 @@
    "created": 1795148092
   },
   {
+   "id": "P2NV119_kingfisher-visual-study",
+   "request": "Design the look of kingfisher after its ship verdict: three directions, one picked, a mock, a destination pick and the build tasks",
+   "game": "Kingfisher",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "An airbrushed kingfisher on a branch inside a loop of household objects, captioned as something happening meanwhile.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795151235
+  },
+  {
+   "id": "P2NV120_out-of-the-corner-visual-study",
+   "request": "Design the look of out-of-the-corner after its ship verdict: three directions, one picked, a mock, a destination pick and the build tasks",
+   "game": "Out Of The Corner",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "A remix of Nobody Looking and Walls Have Ears through averted vision, how faint stars vanish when looked at directly.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795151246
+  },
+  {
    "id": "P2NW05_rewrite-slab",
    "request": "Slab!: rewrite the idea so the helper's habit changes after each call, then gate it again",
    "game": "Studio",
@@ -487,23 +914,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1795148020
-  },
-  {
-   "id": "P3KT58_kit-mistake-by-reachable-score",
-   "request": "P3KT58_kit mistake by reachable score",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795150552
   },
   {
    "id": "P3KT59_kit-undo-line-later",
@@ -574,27 +984,6 @@
    "created": 1795150666
   },
   {
-   "id": "P2NB32_squeaky-floor-lead-build-share-publish",
-   "request": "Squeaky Floor: share marks per night, logo, preview picture, publish once",
-   "game": "Squeaky Floor",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NB31_squeaky-floor-lead-build-board"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NB31_squeaky-floor-lead-build-board"
-   ],
-   "created": 1795149558
-  },
-  {
    "id": "P2NR122_rereview-the-apprentice-and-fix-the-night-after-lead",
    "request": "Play the-apprentice and fix-the-night after their latest fix as a stranger and give each a verdict",
    "game": "Studio",
@@ -634,8 +1023,7 @@
    "why": "",
    "state": "waiting",
    "waitingOn": [
-    "P2NB26_clean-features-lead-build",
-    "P2NB27_mushroom-gaps-lead-build"
+    "P2NB26_clean-features-lead-build"
    ],
    "created": 1795147990
   },
@@ -683,27 +1071,6 @@
    "created": 1795148492
   },
   {
-   "id": "P2NR127_rereview-speaking-stone",
-   "request": "P2NR127_rereview speaking stone",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF83_speaking-stone-fixes"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NF83_speaking-stone-fixes"
-   ],
-   "created": 1795148981
-  },
-  {
    "id": "P2NR128_rereview-dancers-not-mad-after-fixes",
    "request": "P2NR128_rereview dancers not mad after fixes",
    "game": "Studio",
@@ -746,25 +1113,27 @@
    "created": 1795149558
   },
   {
-   "id": "P2NV117_whos-at-the-door-visual-build-theme",
-   "request": "P2NV117_whos at the door visual build theme",
-   "game": "Whos At The Door",
+   "id": "P2NR137_rereview-three-shadows-and-crushed-can",
+   "request": "Play three-shadows and crushed-can as a stranger after tonight's fixes and give each a verdict",
+   "game": "Studio",
    "route": "Claude",
-   "model": "sonnet",
+   "model": "opus",
    "effort": "high",
-   "kind": "visual",
+   "kind": "review",
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NV110_whos-at-the-door-visual-study"
+    "P2NF85_three-shadows-walls-and-over-par",
+    "P2NF86_can-lantern-words-and-win-view"
    ],
    "priority": null,
-   "why": "A chat about a stranger who walked into a lab with a plausible story and left, and a run of security failures where one tiny key opened many doors.",
+   "why": "",
    "state": "waiting",
    "waitingOn": [
-    "P2NV110_whos-at-the-door-visual-study"
+    "P2NF85_three-shadows-walls-and-over-par",
+    "P2NF86_can-lantern-words-and-win-view"
    ],
-   "created": 1795150828
+   "created": 1795151159
   },
   {
    "id": "P2NV118_whos-at-the-door-visual-build-board",
@@ -777,15 +1146,307 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NV110_whos-at-the-door-visual-study"
+    "P2NV117_whos-at-the-door-visual-build-theme"
    ],
    "priority": null,
    "why": "A chat about a stranger who walked into a lab with a plausible story and left, and a run of security failures where one tiny key opened many doors.",
    "state": "waiting",
    "waitingOn": [
-    "P2NV110_whos-at-the-door-visual-study"
+    "P2NV117_whos-at-the-door-visual-build-theme"
    ],
-   "created": 1795150839
+   "created": 1795150922
+  },
+  {
+   "id": "P2NV121_worm-bed-visual-build",
+   "request": "P2NV121_worm bed visual build",
+   "game": "Worm Bed",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NV113_worm-bed-visual-study"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NV113_worm-bed-visual-study"
+   ],
+   "created": 1795151375
+  },
+  {
+   "id": "P2NV122_the-long-table-visual-build-chrome",
+   "request": "P2NV122_the long table visual build chrome",
+   "game": "The Long Table",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NV111_the-long-table-visual-study"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NV111_the-long-table-visual-study"
+   ],
+   "created": 1795151384
+  },
+  {
+   "id": "P2NV123_worm-bed-visual-motion-og",
+   "request": "P2NV123_worm bed visual motion og",
+   "game": "Worm Bed",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NV121_worm-bed-visual-build"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NV121_worm-bed-visual-build"
+   ],
+   "created": 1795151375
+  },
+  {
+   "id": "P2NV124_one-more-chair-visual-build-board",
+   "request": "P2NV124_one more chair visual build board",
+   "game": "One More Chair",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NV112_one-more-chair-visual-study"
+   ],
+   "priority": null,
+   "why": "Walkers loop a waiting room on fixed paths; place one chair so nobody bumps all day.",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NV112_one-more-chair-visual-study"
+   ],
+   "created": 1795151380
+  },
+  {
+   "id": "P2NV125_the-long-table-visual-build-board",
+   "request": "P2NV125_the long table visual build board",
+   "game": "The Long Table",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NV122_the-long-table-visual-build-chrome"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NV122_the-long-table-visual-build-chrome"
+   ],
+   "created": 1795151345
+  },
+  {
+   "id": "P2NV126_one-more-chair-visual-build-chrome",
+   "request": "P2NV126_one more chair visual build chrome",
+   "game": "One More Chair",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NV124_one-more-chair-visual-build-board"
+   ],
+   "priority": null,
+   "why": "Walkers loop a waiting room on fixed paths; place one chair so nobody bumps all day.",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NV124_one-more-chair-visual-build-board"
+   ],
+   "created": 1795151391
+  },
+  {
+   "id": "P2RC01_release-check-batch-1",
+   "request": "Release checklist pass on one-umbrella, the-walker, three-copies, gold-star, watched-pot: fix the mechanical gaps (licences list, accessibility, preview and share, console errors) and publish once",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2KS00_kit-sync-batch-1"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2KS00_kit-sync-batch-1"
+   ],
+   "created": 1795150938
+  },
+  {
+   "id": "P2RC02_release-check-batch-2",
+   "request": "Release checklist pass on same-spots, short-calls, market-day, last-piece, rumour-on-the-jetty: fix the mechanical gaps (licences list, accessibility, preview and share, console errors) and publish once",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2KS01_kit-sync-batch-2"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2KS01_kit-sync-batch-2"
+   ],
+   "created": 1795150960
+  },
+  {
+   "id": "P2RC03_release-check-batch-3",
+   "request": "Release checklist pass on gilded-poster, iron-window-garden, painted-walls, restored, round-table: fix the mechanical gaps (licences list, accessibility, preview and share, console errors) and publish once",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2KS02_kit-sync-batch-3"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2KS02_kit-sync-batch-3"
+   ],
+   "created": 1795150981
+  },
+  {
+   "id": "P2RC04_release-check-batch-4",
+   "request": "Release checklist pass on the-office-lottery, long-way-round, stray-cat, sounds-like, the-draw: fix the mechanical gaps (licences list, accessibility, preview and share, console errors) and publish once",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2KS03_kit-sync-batch-4"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2KS03_kit-sync-batch-4"
+   ],
+   "created": 1795151004
+  },
+  {
+   "id": "P2RC05_release-check-batch-5",
+   "request": "Release checklist pass on ac-remote, rolling-back, paid-clapper: fix the mechanical gaps (licences list, accessibility, preview and share, console errors) and publish once",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2KS04_kit-sync-batch-5"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2KS04_kit-sync-batch-5"
+   ],
+   "created": 1795151025
+  },
+  {
+   "id": "P2RC06_release-check-batch-6",
+   "request": "Release checklist pass on copy-drift, even-water, morning-three, one-thread: fix the mechanical gaps (licences list, accessibility, preview and share, console errors) and publish once",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2KS05_kit-sync-batch-6"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2KS05_kit-sync-batch-6"
+   ],
+   "created": 1795151048
+  },
+  {
+   "id": "P2RC07_release-check-batch-7",
+   "request": "Release checklist pass on own-ground, pigeon-salon, radish-omelette: fix the mechanical gaps (licences list, accessibility, preview and share, console errors) and publish once",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2KS06_kit-sync-batch-7"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2KS06_kit-sync-batch-7"
+   ],
+   "created": 1795151070
+  },
+  {
+   "id": "P2NB27_mushroom-gaps-lead-build",
+   "request": "Build the lead's result card for Mushroom at the End: one wording table for every outcome, checked by a test",
+   "game": "Mushroom at the End",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P2NX22_mushroom-gaps-lead"
+   ],
+   "priority": "P1",
+   "why": "An anthropology trivia post about a book on matsutake mushrooms growing in the ruins of industry.",
+   "state": "done",
+   "at": 1795147990,
+   "created": 1795147990
   },
   {
    "id": "P2NF81_pinch-points-first-minute-flatten",
@@ -805,6 +1466,25 @@
    "state": "done",
    "at": 1795147655,
    "created": 1795147655
+  },
+  {
+   "id": "P2NF83_speaking-stone-fixes",
+   "request": "P2NF83_speaking stone fixes",
+   "game": "Speaking Stone",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "fix",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR09_review-speaking-stone"
+   ],
+   "priority": "P2",
+   "why": "Screenshots arguing over a proposed test that would measure polish instead of substance.",
+   "state": "done",
+   "at": 1795148955,
+   "created": 1795148955
   },
   {
    "id": "P2NF80_marble-machine-obvious-play-fixes",
@@ -862,6 +1542,25 @@
    "state": "done",
    "at": 1795148406,
    "created": 1795148406
+  },
+  {
+   "id": "P2NB31_squeaky-floor-lead-build-board",
+   "request": "Squeaky Floor: the floor drawn as an old wooden house at night, goal lines name the step",
+   "game": "Squeaky Floor",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P2NX24_squeaky-floor-lead"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795149558,
+   "created": 1795149558
   },
   {
    "id": "P2NF75_still-a-heap-walk-words-resume",
@@ -1213,6 +1912,42 @@
    "after": [],
    "priority": null,
    "why": "",
+   "state": "done",
+   "at": 1795147990,
+   "created": 1795147990
+  },
+  {
+   "id": "P2NR125_review-between-the-ropes-and-drying-table",
+   "request": "First stranger review of Between the Ropes and Drying Table, which are built and live but were never played by a reviewer",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795147990,
+   "created": 1795147990
+  },
+  {
+   "id": "P2NV110_whos-at-the-door-visual-study",
+   "request": "Who's at the Door: visual round design study after a ship verdict (look, mock, build tasks)",
+   "game": "Whos At The Door",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P2NR113_rereview-close-a-door-and-whos-at-the-door"
+   ],
+   "priority": null,
+   "why": "A chat about a stranger who walked into a lab with a plausible story and left, and a run of security failures where one tiny key opened many doors.",
    "state": "done",
    "at": 1795147990,
    "created": 1795147990
