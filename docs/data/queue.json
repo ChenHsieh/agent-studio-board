@@ -1,5 +1,5 @@
 {
- "generated": 1795150223,
+ "generated": 1795150861,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -104,6 +104,25 @@
    "created": 1795148955
   },
   {
+   "id": "P2NV114_copy-paste-visual-study",
+   "request": "Hello Princess passed review: design its visual round and name a destination",
+   "game": "Hello Princess",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR117_rereview-two-tigers-and-copy-paste"
+   ],
+   "priority": "P2",
+   "why": "Copy-paste greeting replies with place, name and age swapped each time, plus a stack of identical installer dialogs.",
+   "state": "running",
+   "at": 1795147990,
+   "created": 1795147990
+  },
+  {
    "id": "P3PL14_speaking-stone-why-rollout",
    "request": "Why this exists: finish the rollout on speaking-stone (new test failure: test/first_minute_play.mjs no longer sees )",
    "game": "Speaking Stone",
@@ -138,25 +157,6 @@
    "created": 1793640233
   },
   {
-   "id": "P2NF80_marble-machine-obvious-play-fixes",
-   "request": "Marble Machine: the one-piece tunes get a real choice, the small-phone board is readable, and a shared daily link explains its pieces",
-   "game": "Marble Machine",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "fix",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR110_rereview-marble-machine-and-pinch-points"
-   ],
-   "priority": "P3",
-   "why": "A viral short of a marble bouncing off pinned discs, each hit a note.",
-   "state": "running",
-   "at": 1795147990,
-   "created": 1795147990
-  },
-  {
    "id": "P3PL18_silva-to-maaslin2-why-build",
    "request": "Why this exists: add the section to silva-to-maaslin2 through its build step",
    "game": "Studio",
@@ -174,23 +174,42 @@
    "created": 1793640233
   },
   {
-   "id": "P2NB29_still-fall-terrace-look",
-   "request": "Still Fall: the board becomes a cliff of terraces (ink wash darker with height, hachure cliff marks, a drawn goat)",
+   "id": "P2NB28_the-sixth-clipping-lead-build",
+   "request": "Build the lead's coach for The Sixth Clipping so no line ever says a story happened when none did",
+   "game": "The Sixth Clipping",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P2NX23_the-sixth-clipping-lead"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1795147990,
+   "created": 1795147990
+  },
+  {
+   "id": "P2NB30_still-fall-title-and-first-visit",
+   "request": "Still Fall: full name and a goat mark in the top bar, level 1 opens with no card, no 0 STEP, a share line about tries",
    "game": "Still Fall",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
-   "kind": "visual",
+   "kind": "build",
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NX25_still-fall-lead"
+    "P2NB29_still-fall-terrace-look"
    ],
    "priority": null,
    "why": "A post from someone who once ranked first and now sees only dark, answered with advice to drop the old titles and go where the sun is.",
    "state": "running",
-   "at": 1795148406,
-   "created": 1795148406
+   "at": 1795148458,
+   "created": 1795148458
   },
   {
    "id": "P2NB31_squeaky-floor-lead-build-board",
@@ -210,25 +229,6 @@
    "state": "running",
    "at": 1795149558,
    "created": 1795149558
-  },
-  {
-   "id": "P2NF79_two-carts-board-fills-and-families",
-   "request": "Two Carts: the score line stops being cut off on night 1, the board fills the phone so every spot is a thumb-sized target, and the first screen says each number is families.",
-   "game": "Two Carts",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR111_rereview-the-long-table-and-two-carts"
-   ],
-   "priority": null,
-   "why": "An airbrushed cluster of bubbles that grow by taking each other's space, and a playful map of a city's troubles drawn as attractions with catchments.",
-   "state": "running",
-   "at": 1795147535,
-   "created": 1795147535
   },
   {
    "id": "P2NF84_dancers-not-mad-fixes",
@@ -288,23 +288,6 @@
    "created": 1795149961
   },
   {
-   "id": "P2NR116_rereview-next-please-and-fool-the-algorithm",
-   "request": "Play the fixed Next Please and Forager as a stranger and give each a verdict",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1795147991,
-   "created": 1795147991
-  },
-  {
    "id": "P2NR125_review-between-the-ropes-and-drying-table",
    "request": "First stranger review of Between the Ropes and Drying Table, which are built and live but were never played by a reviewer",
    "game": "Studio",
@@ -358,91 +341,61 @@
    "created": 1795147990
   },
   {
-   "id": "P2NX23_the-sixth-clipping-lead",
-   "request": "Design lead pass on The Sixth Clipping: diagnose the one problem three fix rounds did not close, write one page of exact changes and a phone mock",
-   "game": "Studio",
+   "id": "P2NV111_the-long-table-visual-study",
+   "request": "The Long Table gets its own look: a design study, a mock and the build tasks for a Taiwanese seventh-month table on a pier, with the rules unchanged.",
+   "game": "The Long Table",
    "route": "Claude",
    "model": "opus",
    "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1795147991,
-   "created": 1795147991
-  },
-  {
-   "id": "P2SL47_slitherlink-og-url",
-   "request": "Point the Slitherlink link preview at the renamed address",
-   "game": "One Loop",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1795150154,
-   "created": 1795150154
-  },
-  {
-   "id": "P2n103_literal-spirit",
-   "request": "Literal Spirit (一板一眼): new game; write the cheapest paper charm so a literal-minded spirit fetches the peach without breaking anything.",
-   "game": "Literal Spirit",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
+   "kind": "visual",
+   "size": "several repos",
    "estMinutes": null,
    "after": [
-    "P2NS08_spike-guide-lines-literal-spirit-no-favorites"
+    "P2NR111_rereview-the-long-table-and-two-carts"
    ],
    "priority": null,
-   "why": "A pool of folk talisman charts read as instructions to a literal-minded agent.",
+   "why": "",
    "state": "running",
-   "at": 1794598936,
-   "created": 1794598936
+   "at": 1795147990,
+   "created": 1795147990
   },
   {
-   "id": "P3HX01_par-zero-gate",
-   "request": "Let the playable gate accept games whose par is 0 by design",
-   "game": "Studio",
+   "id": "P2NV112_one-more-chair-visual-study",
+   "request": "Design study for the look of one-more-chair: three directions, pick one, design doc and a mock, then write the Sonnet build tasks",
+   "game": "One More Chair",
    "route": "Claude",
-   "model": "sonnet",
+   "model": "opus",
    "effort": "high",
-   "kind": "build",
-   "size": "studio",
+   "kind": "visual",
+   "size": "several repos",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P2NR114_rereview-one-more-chair-and-worm-bed"
+   ],
+   "priority": null,
+   "why": "Walkers loop a waiting room on fixed paths; place one chair so nobody bumps all day.",
+   "state": "running",
+   "at": 1795147990,
+   "created": 1795147990
+  },
+  {
+   "id": "P2NV113_worm-bed-visual-study",
+   "request": "Design study for the look of worm-bed: three directions, pick one, design doc and a mock, then write the Sonnet build tasks",
+   "game": "Worm Bed",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P2NR114_rereview-one-more-chair-and-worm-bed"
+   ],
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1795149164,
-   "created": 1795149164
-  },
-  {
-   "id": "P3KT57_lesson-pointer-on-wrong-step",
-   "request": "The lesson ring points at the move the words say",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1795149695,
-   "created": 1795149695
+   "at": 1795147990,
+   "created": 1795147990
   },
   {
    "id": "P3PL13_dancers-not-mad-why-rollout",
@@ -462,9 +415,9 @@
    "created": 1793640233
   },
   {
-   "id": "P2NV114_copy-paste-visual-study",
-   "request": "Hello Princess passed review: design its visual round and name a destination",
-   "game": "Hello Princess",
+   "id": "P2NV116_forager-visual-study",
+   "request": "Forager visual round: keep the birds, clear the labels off the berries, sound, share picture, then write the build tasks",
+   "game": "Forager",
    "route": "Claude",
    "model": "opus",
    "effort": "high",
@@ -472,26 +425,26 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NR117_rereview-two-tigers-and-copy-paste"
+    "P2NR116_rereview-next-please-and-fool-the-algorithm"
    ],
-   "priority": "P2",
-   "why": "Copy-paste greeting replies with place, name and age swapped each time, plus a stack of identical installer dialogs.",
+   "priority": "P1",
+   "why": "Now The Forager: drag berries so a bird that always flies to the closest berry takes a much longer trip than the shortest round trip.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1795147990
+   "created": 1795148020
   },
   {
-   "id": "P2NV111_the-long-table-visual-study",
-   "request": "The Long Table gets its own look: a design study, a mock and the build tasks for a Taiwanese seventh-month table on a pier, with the rules unchanged.",
-   "game": "The Long Table",
+   "id": "P2NR93_review-literal-spirit",
+   "request": "P2NR93_review literal spirit",
+   "game": "Studio",
    "route": "Claude",
    "model": "opus",
    "effort": "high",
-   "kind": "visual",
-   "size": "several repos",
+   "kind": "review",
+   "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2NR111_rereview-the-long-table-and-two-carts"
+    "P2n103_literal-spirit"
    ],
    "priority": null,
    "why": "",
@@ -500,9 +453,9 @@
    "created": 1795147990
   },
   {
-   "id": "P2NV112_one-more-chair-visual-study",
-   "request": "Design study for the look of one-more-chair: three directions, pick one, design doc and a mock, then write the Sonnet build tasks",
-   "game": "One More Chair",
+   "id": "P2NV115_next-please-visual-study",
+   "request": "Design the look of Next Please: a drawn post office counter, regulars on their loops, then write the build tasks",
+   "game": "Next Please",
    "route": "Claude",
    "model": "opus",
    "effort": "high",
@@ -510,32 +463,13 @@
    "size": "several repos",
    "estMinutes": null,
    "after": [
-    "P2NR114_rereview-one-more-chair-and-worm-bed"
-   ],
-   "priority": null,
-   "why": "Walkers loop a waiting room on fixed paths; place one chair so nobody bumps all day.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795147990
-  },
-  {
-   "id": "P2NV113_worm-bed-visual-study",
-   "request": "Design study for the look of worm-bed: three directions, pick one, design doc and a mock, then write the Sonnet build tasks",
-   "game": "Worm Bed",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "visual",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P2NR114_rereview-one-more-chair-and-worm-bed"
+    "P2NR116_rereview-next-please-and-fool-the-algorithm"
    ],
    "priority": null,
    "why": "",
    "state": "ready",
    "waitingOn": [],
-   "created": 1795147990
+   "created": 1795148092
   },
   {
    "id": "P2NW05_rewrite-slab",
@@ -555,67 +489,89 @@
    "created": 1795148020
   },
   {
-   "id": "P2NV116_forager-visual-study",
-   "request": "Forager visual round: keep the birds, clear the labels off the berries, sound, share picture, then write the build tasks",
-   "game": "Forager",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR116_rereview-next-please-and-fool-the-algorithm"
-   ],
-   "priority": "P1",
-   "why": "Now The Forager: drag berries so a bird that always flies to the closest berry takes a much longer trip than the shortest round trip.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NR116_rereview-next-please-and-fool-the-algorithm"
-   ],
-   "created": 1795148020
-  },
-  {
-   "id": "P2NB28_the-sixth-clipping-lead-build",
-   "request": "Build the lead's coach for The Sixth Clipping so no line ever says a story happened when none did",
-   "game": "The Sixth Clipping",
+   "id": "P3KT58_kit-mistake-by-reachable-score",
+   "request": "P3KT58_kit mistake by reachable score",
+   "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
    "kind": "build",
-   "size": "several repos",
+   "size": "one repo",
    "estMinutes": null,
-   "after": [
-    "P2NX23_the-sixth-clipping-lead"
-   ],
+   "after": [],
    "priority": null,
    "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NX23_the-sixth-clipping-lead"
-   ],
-   "created": 1795147990
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795150552
   },
   {
-   "id": "P2NB30_still-fall-title-and-first-visit",
-   "request": "Still Fall: full name and a goat mark in the top bar, level 1 opens with no card, no 0 STEP, a share line about tries",
-   "game": "Still Fall",
+   "id": "P3KT59_kit-undo-line-later",
+   "request": "P3KT59_kit undo line later",
+   "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
-   "after": [
-    "P2NB29_still-fall-terrace-look"
-   ],
+   "after": [],
    "priority": null,
-   "why": "A post from someone who once ranked first and now sees only dark, answered with advice to drop the old titles and go where the sun is.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NB29_still-fall-terrace-look"
-   ],
-   "created": 1795148458
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795150563
+  },
+  {
+   "id": "P3KT60_lesson-check-equal-cost-moves",
+   "request": "P3KT60_lesson check equal cost moves",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795150606
+  },
+  {
+   "id": "P3KT61_kit-keep-goal-short-coach",
+   "request": "P3KT61_kit keep goal short coach",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795150655
+  },
+  {
+   "id": "P3KT62_kit-board-size-steady-lesson",
+   "request": "P3KT62_kit board size steady lesson",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795150666
   },
   {
    "id": "P2NB32_squeaky-floor-lead-build-share-publish",
@@ -790,46 +746,46 @@
    "created": 1795149558
   },
   {
-   "id": "P2NR93_review-literal-spirit",
-   "request": "P2NR93_review literal spirit",
-   "game": "Studio",
+   "id": "P2NV117_whos-at-the-door-visual-build-theme",
+   "request": "P2NV117_whos at the door visual build theme",
+   "game": "Whos At The Door",
    "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2n103_literal-spirit"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2n103_literal-spirit"
-   ],
-   "created": 1795147990
-  },
-  {
-   "id": "P2NV115_next-please-visual-study",
-   "request": "Design the look of Next Please: a drawn post office counter, regulars on their loops, then write the build tasks",
-   "game": "Next Please",
-   "route": "Claude",
-   "model": "opus",
+   "model": "sonnet",
    "effort": "high",
    "kind": "visual",
-   "size": "several repos",
+   "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NR116_rereview-next-please-and-fool-the-algorithm"
+    "P2NV110_whos-at-the-door-visual-study"
    ],
    "priority": null,
-   "why": "",
+   "why": "A chat about a stranger who walked into a lab with a plausible story and left, and a run of security failures where one tiny key opened many doors.",
    "state": "waiting",
    "waitingOn": [
-    "P2NR116_rereview-next-please-and-fool-the-algorithm"
+    "P2NV110_whos-at-the-door-visual-study"
    ],
-   "created": 1795148092
+   "created": 1795150828
+  },
+  {
+   "id": "P2NV118_whos-at-the-door-visual-build-board",
+   "request": "P2NV118_whos at the door visual build board",
+   "game": "Whos At The Door",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NV110_whos-at-the-door-visual-study"
+   ],
+   "priority": null,
+   "why": "A chat about a stranger who walked into a lab with a plausible story and left, and a run of security failures where one tiny key opened many doors.",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NV110_whos-at-the-door-visual-study"
+   ],
+   "created": 1795150839
   },
   {
    "id": "P2NF81_pinch-points-first-minute-flatten",
@@ -851,6 +807,25 @@
    "created": 1795147655
   },
   {
+   "id": "P2NF80_marble-machine-obvious-play-fixes",
+   "request": "Marble Machine: the one-piece tunes get a real choice, the small-phone board is readable, and a shared daily link explains its pieces",
+   "game": "Marble Machine",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "fix",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR110_rereview-marble-machine-and-pinch-points"
+   ],
+   "priority": "P3",
+   "why": "A viral short of a marble bouncing off pinned discs, each hit a note.",
+   "state": "done",
+   "at": 1795147990,
+   "created": 1795147990
+  },
+  {
    "id": "P2NB25_fix-the-night-lead-build",
    "request": "Build the lead's first minute for Fix the Night so level 1 gives one instruction at a time",
    "game": "Fix The Night",
@@ -868,6 +843,25 @@
    "state": "done",
    "at": 1795147990,
    "created": 1795147990
+  },
+  {
+   "id": "P2NB29_still-fall-terrace-look",
+   "request": "Still Fall: the board becomes a cliff of terraces (ink wash darker with height, hachure cliff marks, a drawn goat)",
+   "game": "Still Fall",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NX25_still-fall-lead"
+   ],
+   "priority": null,
+   "why": "A post from someone who once ranked first and now sees only dark, answered with advice to drop the old titles and go where the sun is.",
+   "state": "done",
+   "at": 1795148406,
+   "created": 1795148406
   },
   {
    "id": "P2NF75_still-a-heap-walk-words-resume",
@@ -942,6 +936,25 @@
    "state": "done",
    "at": 1795147022,
    "created": 1795147022
+  },
+  {
+   "id": "P2NF79_two-carts-board-fills-and-families",
+   "request": "Two Carts: the score line stops being cut off on night 1, the board fills the phone so every spot is a thumb-sized target, and the first screen says each number is families.",
+   "game": "Two Carts",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR111_rereview-the-long-table-and-two-carts"
+   ],
+   "priority": null,
+   "why": "An airbrushed cluster of bubbles that grow by taking each other's space, and a playful map of a city's troubles drawn as attractions with catchments.",
+   "state": "done",
+   "at": 1795147535,
+   "created": 1795147535
   },
   {
    "id": "P2NF82_two-tigers-fixes",
@@ -1103,6 +1116,23 @@
    "created": 1795145805
   },
   {
+   "id": "P2NR116_rereview-next-please-and-fool-the-algorithm",
+   "request": "Play the fixed Next Please and Forager as a stranger and give each a verdict",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795147991,
+   "created": 1795147991
+  },
+  {
    "id": "P2NR117_rereview-two-tigers-and-copy-paste",
    "request": "Play the fixed Two Tigers and Copy Paste as a stranger and give each a verdict",
    "game": "Studio",
@@ -1256,6 +1286,23 @@
    "created": 1795146197
   },
   {
+   "id": "P2NX23_the-sixth-clipping-lead",
+   "request": "Design lead pass on The Sixth Clipping: diagnose the one problem three fix rounds did not close, write one page of exact changes and a phone mock",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795147991,
+   "created": 1795147991
+  },
+  {
    "id": "P2NX24_squeaky-floor-lead",
    "request": "Squeaky Floor design lead: make the board itself say what each square is (house, veranda, Grandma's door, quiet boards) so a stranger reads the goal and rules without the card",
    "game": "Squeaky Floor",
@@ -1313,6 +1360,23 @@
    "created": 1795145909
   },
   {
+   "id": "P2SL47_slitherlink-og-url",
+   "request": "Point the Slitherlink link preview at the renamed address",
+   "game": "One Loop",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795150154,
+   "created": 1795150154
+  },
+  {
    "id": "P2n123_guide-lines-words-and-daily-head",
    "request": "Guide Lines: plain first-minute words and the daily date no longer runs into the red-line count",
    "game": "Guide Lines",
@@ -1349,6 +1413,23 @@
    "state": "done",
    "at": 1795147203,
    "created": 1795147203
+  },
+  {
+   "id": "P3HX01_par-zero-gate",
+   "request": "Let the playable gate accept games whose par is 0 by design",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795149164,
+   "created": 1795149164
   },
   {
    "id": "P3KT54_market-day-premise-line",
@@ -1402,6 +1483,23 @@
    "state": "done",
    "at": 1795148759,
    "created": 1795148759
+  },
+  {
+   "id": "P3KT57_lesson-pointer-on-wrong-step",
+   "request": "The lesson ring points at the move the words say",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795149695,
+   "created": 1795149695
   }
  ]
 }
