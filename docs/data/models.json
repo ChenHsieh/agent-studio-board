@@ -141,12 +141,12 @@
   {
    "executor": "claude-opus",
    "role": "build",
-   "count": 266,
+   "count": 271,
    "firstTimePass": 99,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 261,
+   "guessed": 266,
    "topFailures": [
     "rooms 16, 25 and 33 at 360x640 run 9-18 px past the screen after the f",
     "on small beds the canvas keeps its tall paper below the board, so on a",
@@ -211,12 +211,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 506,
+   "count": 509,
    "firstTimePass": 96,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 451,
+   "guessed": 454,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -519,12 +519,12 @@
   {
    "executor": "other",
    "role": "build",
-   "count": 10,
+   "count": 11,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
-   "costPerPass": 0.02,
-   "guessed": 10,
+   "costPerPass": 0.01,
+   "guessed": 11,
    "topFailures": [],
    "flag": "give more"
   },
@@ -700,39 +700,39 @@
   },
   {
    "date": "2026-11-20",
-   "task": "pick a swarm visual study",
-   "number": "177",
-   "executor": "claude-opus",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE. P2NV134 visual round study for Sparrows on the Wire (pick-a-swarm), 2026-11-20 01:50-01:56 EST. No repo change, nothing published."
-  },
-  {
-   "date": "2026-11-20",
-   "task": "still a heap visual polish",
-   "number": "160",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "kit is still 19 (a sync would give a proper tall-board hook); empty band at the bottom on plates without a strip."
-  },
-  {
-   "date": "2026-11-20",
-   "task": "the sixth clipping visual polish",
-   "number": "173",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "320 wide Huge text still hides the goal line (out of scope)."
-  },
-  {
-   "date": "2026-11-20",
-   "task": "mushroom gaps visual polish",
-   "number": "68",
+   "task": "flying white visual polish",
+   "number": "117",
    "executor": "claude-sonnet",
    "role": "build",
    "passed": "yes",
    "note": "DONE"
+  },
+  {
+   "date": "2026-11-20",
+   "task": "marble machine visual study",
+   "number": "19",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "at 320 the area round the spring is crowded (tags 1 and 3, the dial chip and a grip within 80 px), and 56 px ramps is what the must-keep pan"
+  },
+  {
+   "date": "2026-11-20",
+   "task": "two carts visual study",
+   "number": "179",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "at 320x568 nothing changes in size (32.7 px spots, canvas numbers about 15 px); the look cannot fix that without owner's kit call."
+  },
+  {
+   "date": "2026-11-20",
+   "task": "no favorites visual study",
+   "number": "141",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "only direction A mocked; at 390 the board leaves about 150 px of empty ground above and below the tray (width-bound); the share symbols are "
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
