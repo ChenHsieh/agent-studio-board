@@ -199,24 +199,24 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 152,
+   "count": 153,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 150,
+   "guessed": 151,
    "topFailures": [],
    "flag": "give more"
   },
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 439,
+   "count": 442,
    "firstTimePass": 96,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 386,
+   "guessed": 389,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -555,6 +555,42 @@
  ],
  "last": [
   {
+   "date": "2026-11-19",
+   "task": "kit premise short first card",
+   "number": "",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE. Kit 36 (play-template main 12a7a85, squash of branch chen-kit-premise-line2)."
+  },
+  {
+   "date": "2026-11-19",
+   "task": "crushed can newrule popup 320",
+   "number": "145",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "P3KT14: DONE (template only; template has no live page)"
+  },
+  {
+   "date": "2026-11-19",
+   "task": "one loop review",
+   "number": "198",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "the core rule (a number counts its sides on the loop) is never said on screen, and the closed loop, the moment of the game, sits under the r"
+  },
+  {
+   "date": "2026-11-19",
+   "task": "rna hero visual build",
+   "number": "8",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "the enlarged fold box opens at top-left of a diagonal fold, so some blank before scrolling; Enlarge sits below the fold at 320 so needs a sc"
+  },
+  {
    "date": "2026-11-18",
    "task": "one loop build",
    "number": "",
@@ -697,42 +733,6 @@
    "role": "build",
    "passed": "yes",
    "note": "no room in the 6 px gaps."
-  },
-  {
-   "date": "2026-11-13",
-   "task": "one thread visual design",
-   "number": "133",
-   "executor": "claude-opus",
-   "role": "design",
-   "passed": "yes",
-   "note": "DONE P2n110: One Thread visual round design (design only; game unchanged, nothing published). Live looked at myself at 390x844 and 320x568 ("
-  },
-  {
-   "date": "2026-11-13",
-   "task": "one more chair",
-   "number": "149",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "the result sheet covers the lower half of the board at 320x568 (the kit's sheet), so the calm final day is hard to see right after a win; a "
-  },
-  {
-   "date": "2026-11-13",
-   "task": "review drum rule and three shadows",
-   "number": "146",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "on a 320 wide phone the game about place WORDS shows shapes only (circle, square, diamond), the \"No drums:\" label is gone and the board sits"
-  },
-  {
-   "date": "2026-11-13",
-   "task": "review guide lines and no favorites",
-   "number": "141",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "the board. At 390 it is about 256 css px wide with empty page below; at 320x568 the daily board is 176 px, pushed left, and Undo/Hint/More a"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
