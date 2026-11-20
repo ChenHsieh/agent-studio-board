@@ -199,24 +199,24 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 221,
+   "count": 224,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 219,
+   "guessed": 222,
    "topFailures": [],
    "flag": "give more"
   },
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 578,
+   "count": 587,
    "firstTimePass": 96,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 522,
+   "guessed": 531,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -565,6 +565,15 @@
   },
   {
    "date": "2026-11-20",
+   "task": "date line under daily result title",
+   "number": "",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE. Kit 54 (play-template main b85c6ee). core.js renderResult: on the daily with a game resultTitle, #result-sub (made by the kit if absen"
+  },
+  {
+   "date": "2026-11-20",
    "task": "kit better higher test honours besttext",
    "number": "",
    "executor": "claude-sonnet",
@@ -682,26 +691,17 @@
   },
   {
    "date": "2026-11-20",
-   "task": "two carts",
-   "number": "179",
+   "task": "release check no favorites guide lines",
+   "number": "141",
    "executor": "claude-sonnet",
    "role": "build",
    "passed": "yes",
-   "note": "DONE - two-carts published once (main 1e0e6fe, live game.js sha1 equals main): share line now \"Night 5\" (zh-Hant unchanged). Looked at 390 a"
+   "note": "DONE P2RC27 (Sonnet, 2026-11-20 04:02-04:16 EST)"
   },
   {
    "date": "2026-11-20",
-   "task": "pinch points one more chair",
-   "number": "149",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE - pinch-points and one-more-chair published once each (2026-11-20 EST); live game.js sha1 equals main for both."
-  },
-  {
-   "date": "2026-11-20",
-   "task": "squeaky floor still fall",
-   "number": "194",
+   "task": "release check drum rule",
+   "number": "142",
    "executor": "claude-sonnet",
    "role": "build",
    "passed": "yes",
@@ -709,17 +709,8 @@
   },
   {
    "date": "2026-11-20",
-   "task": "release check flying white one loop",
-   "number": "117",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "partial",
-   "note": "DONE (partial by design: mechanical fixes only). Skipped: none (one-loop verdict ship, flying-white ship; no running task on either repo)."
-  },
-  {
-   "date": "2026-11-20",
-   "task": "release check clean features mushroom gaps",
-   "number": "96",
+   "task": "release check short calls last piece market day",
+   "number": "188",
    "executor": "claude-sonnet",
    "role": "build",
    "passed": "yes",
@@ -727,12 +718,21 @@
   },
   {
    "date": "2026-11-20",
-   "task": "release check whos at the door copy paste",
-   "number": "181",
+   "task": "release check stray cat sounds like rumour",
+   "number": "148",
    "executor": "claude-sonnet",
    "role": "build",
    "passed": "yes",
    "note": "DONE"
+  },
+  {
+   "date": "2026-11-20",
+   "task": "release check forager",
+   "number": "",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE P2RC15 release check, Forager (fool-the-algorithm, live /forager/). Sonnet in-session, 2026-11-20. Latest verdict row: ship (not revise"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."

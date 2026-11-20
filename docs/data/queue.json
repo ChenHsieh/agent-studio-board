@@ -1,5 +1,5 @@
 {
- "generated": 1795165584,
+ "generated": 1795166149,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -28,25 +28,6 @@
  },
  "tasks": [
   {
-   "id": "P2NV189_tree-hero-visual-build-chrome",
-   "request": "P2NV189_tree hero visual build chrome",
-   "game": "Tree Hero",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P2NV188_tree-hero-visual-build-board"
-   ],
-   "priority": "P1",
-   "why": "Fitch maximum-parsimony phylogenetics; swap branches of a seven-species tree until it needs the fewest evolutionary changes; no timeline, undo is free.",
-   "state": "running",
-   "at": 1795163219,
-   "created": 1795163219
-  },
-  {
    "id": "P2NV192_motif-hero-visual-build-play",
    "request": "Motif Hero: bigger words, shape grades, a Menu on the result",
    "game": "Motif Hero",
@@ -64,6 +45,25 @@
    "state": "running",
    "at": 1795163488,
    "created": 1795163488
+  },
+  {
+   "id": "P2NV200_the-apprentice-visual-build-board",
+   "request": "The Apprentice: the board becomes the keeper's tool-shed wall; the goal is never covered on small phones",
+   "game": "The Apprentice",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P2NV182_the-apprentice-visual-study"
+   ],
+   "priority": "P1",
+   "why": "A viral second-person court scene where a cherished dancer draws a blade, recast in a reply as the orphan her ruler secretly raised.",
+   "state": "running",
+   "at": 1795164874,
+   "created": 1795164874
   },
   {
    "id": "P3PL14_speaking-stone-why-rollout",
@@ -98,6 +98,25 @@
    "state": "running",
    "at": 1793640233,
    "created": 1793640233
+  },
+  {
+   "id": "P2NV202_floating-city-visual-build-layout",
+   "request": "P2NV202_floating city visual build layout",
+   "game": "Floating City",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NV186_floating-city-visual-study"
+   ],
+   "priority": "P3",
+   "why": "Images of a concrete tunnel element towed by tugs that floats like a ship, and its section with hollow chambers.",
+   "state": "running",
+   "at": 1795165049,
+   "created": 1795165049
   },
   {
    "id": "P3PL18_silva-to-maaslin2-why-build",
@@ -154,28 +173,103 @@
    "created": 1795164614
   },
   {
-   "id": "P2NR171_rereview-out-of-the-corner-and-next-please",
-   "request": "Out of the Corner and Next Please: look check after their visual builds",
+   "id": "P2KS11_kit-sync-one-more-chair",
+   "request": "Kit sync for One More Chair after its release check",
    "game": "Studio",
    "route": "Claude",
-   "model": "opus",
+   "model": "sonnet",
    "effort": "high",
-   "kind": "review",
-   "size": "studio",
+   "kind": "build",
+   "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NV147_out-of-the-corner-visual-build-deck",
-    "P2NV149_next-please-visual-build-chrome"
+    "P2RC13_pinch-points-one-more-chair"
    ],
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1795158924,
-   "created": 1795158924
+   "at": 1795164614,
+   "created": 1795164614
   },
   {
-   "id": "P2NR176_rereview-lantern-meeting-after-lead",
-   "request": "P2NR176_rereview lantern meeting after lead",
+   "id": "P2KS13_flying-white-kit-port",
+   "request": "Flying White: port to the current kit on a branch first (kit 4 broke 4 tests last time)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P2RC11_release-check-flying-white-one-loop"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1795164614,
+   "created": 1795164614
+  },
+  {
+   "id": "P2KS14_pinch-points-kit-port",
+   "request": "Pinch Points: port to the current kit on a branch first (kit 2 broke its layout last time)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P2RC13_pinch-points-one-more-chair"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1795164614,
+   "created": 1795164614
+  },
+  {
+   "id": "P2NF110_out-of-the-corner-fixes",
+   "request": "Out of the Corner: a still finger catches the star, honest win line, sky stays put under the finger",
+   "game": "Out Of The Corner",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "fix",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR171_rereview-out-of-the-corner-and-next-please"
+   ],
+   "priority": null,
+   "why": "A remix of Nobody Looking and Walls Have Ears through averted vision, how faint stars vanish when looked at directly.",
+   "state": "running",
+   "at": 1795165771,
+   "created": 1795165771
+  },
+  {
+   "id": "P2NR177_recheck-marble-machine-after-visual",
+   "request": "Marble Machine: stranger check after its puzzle-mode visual round",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NV160_marble-machine-visual-build-panel"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1795162436,
+   "created": 1795162436
+  },
+  {
+   "id": "P2NR178_rereview-letter-lines-after-lead",
+   "request": "P2NR178_rereview letter lines after lead",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
@@ -184,13 +278,51 @@
    "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2NB41_lantern-meeting-lead-build"
+    "P2NB42_letter-lines-lead-build"
    ],
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1795162196,
-   "created": 1795162196
+   "at": 1795162729,
+   "created": 1795162729
+  },
+  {
+   "id": "P2NR179_rereview-copy-paste-new-boards",
+   "request": "P2NR179_rereview copy paste new boards",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NB43_copy-paste-new-boards-and-gather-fix"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1795163136,
+   "created": 1795163136
+  },
+  {
+   "id": "P2NR180_rereview-thirsty-clicks-win-card",
+   "request": "Thirsty Clicks: cold re-review of the win card after the lead round",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NF108_thirsty-clicks-win-card"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1795164130,
+   "created": 1795164130
   },
   {
    "id": "P2NR191_resting-review-silent-disco-and-plain-telling",
@@ -208,25 +340,6 @@
    "state": "running",
    "at": 1795164614,
    "created": 1795164614
-  },
-  {
-   "id": "P2NV174_between-the-ropes-visual-build-floor",
-   "request": "Between the Ropes look, part 2: the black floor, cords, tape, lamp, window; logo and preview picture; publish",
-   "game": "Between The Ropes",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NV173_between-the-ropes-visual-build-chrome"
-   ],
-   "priority": null,
-   "why": "An old film of a slow practitioner moving inside a cube strung with ropes; move a soft ball of light slowly through a cube of strings without touching one.",
-   "state": "running",
-   "at": 1795161281,
-   "created": 1795161281
   },
   {
    "id": "P2NV177_drying-table-visual-build-table",
@@ -305,25 +418,6 @@
    "created": 1795163187
   },
   {
-   "id": "P2NV191_lamp-spiral-visual-build-board",
-   "request": "P2NV191_lamp spiral visual build board",
-   "game": "Lamp Spiral",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NV190_lamp-spiral-visual-build"
-   ],
-   "priority": null,
-   "why": "A news report of woodlice circling in tight spirals under artificial light.",
-   "state": "running",
-   "at": 1795163378,
-   "created": 1795163378
-  },
-  {
    "id": "P2NV194_shortest-law-visual-build",
    "request": "P2NV194_shortest law visual build",
    "game": "Shortest Law",
@@ -341,6 +435,25 @@
    "state": "running",
    "at": 1795163666,
    "created": 1795163666
+  },
+  {
+   "id": "P2NV197_no-unison-visual-build-marks",
+   "request": "P2NV197_no unison visual build marks",
+   "game": "No Unison",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P2NV196_no-unison-visual-build-layout"
+   ],
+   "priority": null,
+   "why": "An imagined stage of feuding musicians, sparked by images of rivals sharing one stage.",
+   "state": "running",
+   "at": 1795163776,
+   "created": 1795163776
   },
   {
    "id": "P2NV198_hallway-posters-visual-build-layout",
@@ -362,78 +475,8 @@
    "created": 1795164112
   },
   {
-   "id": "P2RC15_release-check-forager",
-   "request": "P2RC15_release check forager",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P2NR170_rereview-hallway-posters-and-fool-the-algorithm"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1795162742,
-   "created": 1795162742
-  },
-  {
-   "id": "P2RC17_release-check-stray-cat-sounds-like-rumour",
-   "request": "Release checklist for Stray Cat, Sounds Like and The Rumour on the Jetty after their kit 50 sync",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1795164614,
-   "created": 1795164614
-  },
-  {
-   "id": "P2RC18_release-check-short-calls-last-piece-market-day",
-   "request": "Release checklist for Short Calls, The Last Piece and Market Day after their kit 50 sync",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1795164614,
-   "created": 1795164614
-  },
-  {
-   "id": "P2RC19_release-check-drum-rule",
-   "request": "Release checklist for Drum Rule after its ship re-review",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1795164614,
-   "created": 1795164614
-  },
-  {
-   "id": "P2RC27_release-check-no-favorites-guide-lines",
-   "request": "No Favorites and Guide Lines: release checklist after the post-look review",
+   "id": "P2RC16_release-check-kingfisher-pick-a-swarm",
+   "request": "Release checklist for Kingfisher and Sparrows on the Wire after their visual rounds",
    "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
@@ -442,17 +485,17 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NR172_rereview-no-favorites-and-guide-lines"
+    "P2NR166_rereview-kingfisher-and-pick-a-swarm"
    ],
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1795165248,
-   "created": 1795165248
+   "at": 1795164118,
+   "created": 1795164118
   },
   {
-   "id": "P3KT72_date-line-under-daily-result-title",
-   "request": "P3KT72_date line under daily result title",
+   "id": "P2RC20_release-check-flagships-1113",
+   "request": "Release checklist for Drawing Circles, Signposts, GIF Cities and Local Hero (ship since 11-13)",
    "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
@@ -464,8 +507,27 @@
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1795162051,
-   "created": 1795162051
+   "at": 1795164614,
+   "created": 1795164614
+  },
+  {
+   "id": "P2RC21_release-check-three-shadows-incense-seal-clock",
+   "request": "P2RC21_release check three shadows incense seal clock",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR175_rereview-three-shadows-and-incense-seal-clock"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1795164300,
+   "created": 1795164300
   },
   {
    "id": "P3PL13_dancers-not-mad-why-rollout",
@@ -485,42 +547,23 @@
    "created": 1793640233
   },
   {
-   "id": "P2NV200_the-apprentice-visual-build-board",
-   "request": "The Apprentice: the board becomes the keeper's tool-shed wall; the goal is never covered on small phones",
-   "game": "The Apprentice",
+   "id": "P2NV204_lantern-meeting-visual-study",
+   "request": "P2NV204_lantern meeting visual study",
+   "game": "Lantern Meeting",
    "route": "Claude",
-   "model": "sonnet",
+   "model": "opus",
    "effort": "high",
    "kind": "visual",
    "size": "several repos",
    "estMinutes": null,
    "after": [
-    "P2NV182_the-apprentice-visual-study"
+    "P2NR176_rereview-lantern-meeting-after-lead"
    ],
-   "priority": "P1",
-   "why": "A viral second-person court scene where a cherished dancer draws a blade, recast in a reply as the orphan her ruler secretly raised.",
+   "priority": "P2",
+   "why": "A satirical post casting a lab's weekly group meeting as a palace court where the boss's nod buys supplies.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1795164874
-  },
-  {
-   "id": "P2NV202_floating-city-visual-build-layout",
-   "request": "P2NV202_floating city visual build layout",
-   "game": "Floating City",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NV186_floating-city-visual-study"
-   ],
-   "priority": "P3",
-   "why": "Images of a concrete tunnel element towed by tugs that floats like a ship, and its section with hollow chambers.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795165049
+   "created": 1795165599
   },
   {
    "id": "P2KS09_kit-sync-batch-9",
@@ -540,8 +583,8 @@
    "created": 1795164614
   },
   {
-   "id": "P2KS11_kit-sync-one-more-chair",
-   "request": "Kit sync for One More Chair after its release check",
+   "id": "P2KS12_kit-sync-next-please-no-favorites-out-of-the-corner",
+   "request": "Kit sync for Next Please, No Favorites and Out of the Corner after their re-reviews",
    "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
@@ -550,7 +593,8 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2RC13_pinch-points-one-more-chair"
+    "P2NR171_rereview-out-of-the-corner-and-next-please",
+    "P2NR172_rereview-no-favorites-and-guide-lines"
    ],
    "priority": null,
    "why": "",
@@ -559,46 +603,8 @@
    "created": 1795164614
   },
   {
-   "id": "P2KS13_flying-white-kit-port",
-   "request": "Flying White: port to the current kit on a branch first (kit 4 broke 4 tests last time)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P2RC11_release-check-flying-white-one-loop"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795164614
-  },
-  {
-   "id": "P2KS14_pinch-points-kit-port",
-   "request": "Pinch Points: port to the current kit on a branch first (kit 2 broke its layout last time)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P2RC13_pinch-points-one-more-chair"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795164614
-  },
-  {
-   "id": "P2NR178_rereview-letter-lines-after-lead",
-   "request": "P2NR178_rereview letter lines after lead",
+   "id": "P2NR185_rereview-tree-hero-and-lamp-spiral-after-look",
+   "request": "Re-review Tree Hero and Lamp Spiral after their look builds",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
@@ -607,65 +613,8 @@
    "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2NB42_letter-lines-lead-build"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795162729
-  },
-  {
-   "id": "P2NR179_rereview-copy-paste-new-boards",
-   "request": "P2NR179_rereview copy paste new boards",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NB43_copy-paste-new-boards-and-gather-fix"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795163136
-  },
-  {
-   "id": "P2NR180_rereview-thirsty-clicks-win-card",
-   "request": "Thirsty Clicks: cold re-review of the win card after the lead round",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF108_thirsty-clicks-win-card"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795164130
-  },
-  {
-   "id": "P2NR182_rereview-pick-a-swarm-after-sound-and-card",
-   "request": "Re-review Pick a Swarm after its sound and card build",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NV151_pick-a-swarm-visual-build-sound-and-card",
-    "P2NR166_rereview-kingfisher-and-pick-a-swarm"
+    "P2NV189_tree-hero-visual-build-chrome",
+    "P2NV191_lamp-spiral-visual-build-board"
    ],
    "priority": null,
    "why": "",
@@ -890,25 +839,6 @@
    "created": 1795164736
   },
   {
-   "id": "P2NV197_no-unison-visual-build-marks",
-   "request": "P2NV197_no unison visual build marks",
-   "game": "No Unison",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P2NV196_no-unison-visual-build-layout"
-   ],
-   "priority": null,
-   "why": "An imagined stage of feuding musicians, sparked by images of rivals sharing one stage.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795163776
-  },
-  {
    "id": "P2RC06_release-check-batch-6",
    "request": "Release checklist pass on copy-drift, even-water, morning-three, one-thread: fix the mechanical gaps (licences list, accessibility, preview and share, console errors) and publish once",
    "game": "Studio",
@@ -945,61 +875,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1795151070
-  },
-  {
-   "id": "P2RC16_release-check-kingfisher-pick-a-swarm",
-   "request": "Release checklist for Kingfisher and Sparrows on the Wire after their visual rounds",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR166_rereview-kingfisher-and-pick-a-swarm"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795164118
-  },
-  {
-   "id": "P2RC20_release-check-flagships-1113",
-   "request": "Release checklist for Drawing Circles, Signposts, GIF Cities and Local Hero (ship since 11-13)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795164614
-  },
-  {
-   "id": "P2RC21_release-check-three-shadows-incense-seal-clock",
-   "request": "P2RC21_release check three shadows incense seal clock",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR175_rereview-three-shadows-and-incense-seal-clock"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795164300
   },
   {
    "id": "P2NV193_motif-hero-visual-build-print",
@@ -1044,27 +919,6 @@
    "created": 1795164874
   },
   {
-   "id": "P2NV204_lantern-meeting-visual-study",
-   "request": "P2NV204_lantern meeting visual study",
-   "game": "Lantern Meeting",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR176_rereview-lantern-meeting-after-lead"
-   ],
-   "priority": "P2",
-   "why": "A satirical post casting a lab's weekly group meeting as a palace court where the boss's nod buys supplies.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NR176_rereview-lantern-meeting-after-lead"
-   ],
-   "created": 1795165569
-  },
-  {
    "id": "P2NV203_floating-city-visual-build-board",
    "request": "P2NV203_floating city visual build board",
    "game": "Floating City",
@@ -1086,9 +940,30 @@
    "created": 1795165049
   },
   {
-   "id": "P2KS12_kit-sync-next-please-no-favorites-out-of-the-corner",
-   "request": "Kit sync for Next Please, No Favorites and Out of the Corner after their re-reviews",
-   "game": "Studio",
+   "id": "P2NF111_silent-disco-review-fixes",
+   "request": "Silent Disco: one looks counter, win held before the card, board fits at 320, bigger board text",
+   "game": "Silent Disco",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR191_resting-review-silent-disco-and-plain-telling"
+   ],
+   "priority": null,
+   "why": "A Don Quixote windmill image, a news item on folk battle troupes competing in formation, and a tracker music sequencer.",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NR191_resting-review-silent-disco-and-plain-telling"
+   ],
+   "created": 1795166137
+  },
+  {
+   "id": "P2NF112_plain-telling-kit-sync-and-draw-tap",
+   "request": "Plain Telling: current kit, the Draw tap shows the solved night instead of skipping to the next level, candles counter counts candles",
+   "game": "Plain Telling",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
@@ -1096,16 +971,15 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NR171_rereview-out-of-the-corner-and-next-please",
-    "P2NR172_rereview-no-favorites-and-guide-lines"
+    "P2NR191_resting-review-silent-disco-and-plain-telling"
    ],
    "priority": null,
-   "why": "",
+   "why": "A commentary on a 2002 film that tells one story three ways in red, blue and white.",
    "state": "waiting",
    "waitingOn": [
-    "P2NR171_rereview-out-of-the-corner-and-next-please"
+    "P2NR191_resting-review-silent-disco-and-plain-telling"
    ],
-   "created": 1795164614
+   "created": 1795166137
   },
   {
    "id": "P2NR151_review-slab",
@@ -1168,7 +1042,6 @@
    "why": "",
    "state": "waiting",
    "waitingOn": [
-    "P2NV174_between-the-ropes-visual-build-floor",
     "P2NV177_drying-table-visual-build-table"
    ],
    "created": 1795164614
@@ -1193,29 +1066,6 @@
    "waitingOn": [
     "P2NV181_literal-spirit-visual-build-chrome",
     "P2NV185_ring-of-keys-visual-build-chrome"
-   ],
-   "created": 1795164614
-  },
-  {
-   "id": "P2NR185_rereview-tree-hero-and-lamp-spiral-after-look",
-   "request": "Re-review Tree Hero and Lamp Spiral after their look builds",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NV189_tree-hero-visual-build-chrome",
-    "P2NV191_lamp-spiral-visual-build-board"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NV189_tree-hero-visual-build-chrome",
-    "P2NV191_lamp-spiral-visual-build-board"
    ],
    "created": 1795164614
   },
@@ -1388,6 +1238,28 @@
     "P2NR186_rereview-motif-hero-and-no-unison-after-look"
    ],
    "created": 1795164614
+  },
+  {
+   "id": "P2RC28_next-please-release-check",
+   "request": "Next Please: release checklist after the window look",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P2NR171_rereview-out-of-the-corner-and-next-please",
+    "P2KS12_kit-sync-next-please-no-favorites-out-of-the-corner"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2KS12_kit-sync-next-please-no-favorites-out-of-the-corner"
+   ],
+   "created": 1795165771
   },
   {
    "id": "P2MC08_makeshift-stack-label",
@@ -1760,6 +1632,25 @@
    "estMinutes": null,
    "after": [
     "P2NV171_tree-hero-visual-study"
+   ],
+   "priority": "P1",
+   "why": "Fitch maximum-parsimony phylogenetics; swap branches of a seven-species tree until it needs the fewest evolutionary changes; no timeline, undo is free.",
+   "state": "done",
+   "at": 1795163219,
+   "created": 1795163219
+  },
+  {
+   "id": "P2NV189_tree-hero-visual-build-chrome",
+   "request": "P2NV189_tree hero visual build chrome",
+   "game": "Tree Hero",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P2NV188_tree-hero-visual-build-board"
    ],
    "priority": "P1",
    "why": "Fitch maximum-parsimony phylogenetics; swap branches of a seven-species tree until it needs the fewest evolutionary changes; no timeline, undo is free.",
@@ -4183,6 +4074,26 @@
    "created": 1795158912
   },
   {
+   "id": "P2NR171_rereview-out-of-the-corner-and-next-please",
+   "request": "Out of the Corner and Next Please: look check after their visual builds",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NV147_out-of-the-corner-visual-build-deck",
+    "P2NV149_next-please-visual-build-chrome"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795158924,
+   "created": 1795158924
+  },
+  {
    "id": "P2NR172_rereview-no-favorites-and-guide-lines",
    "request": "No Favorites and Guide Lines: look check after their visual builds",
    "game": "Studio",
@@ -4262,23 +4173,43 @@
    "created": 1795159069
   },
   {
-   "id": "P2NR177_recheck-marble-machine-after-visual",
-   "request": "Marble Machine: stranger check after its puzzle-mode visual round",
+   "id": "P2NR176_rereview-lantern-meeting-after-lead",
+   "request": "P2NR176_rereview lantern meeting after lead",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
    "effort": "high",
-   "kind": "visual",
+   "kind": "review",
    "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2NV160_marble-machine-visual-build-panel"
+    "P2NB41_lantern-meeting-lead-build"
    ],
    "priority": null,
    "why": "",
    "state": "done",
-   "at": 1795162436,
-   "created": 1795162436
+   "at": 1795162196,
+   "created": 1795162196
+  },
+  {
+   "id": "P2NR182_rereview-pick-a-swarm-after-sound-and-card",
+   "request": "Re-review Pick a Swarm after its sound and card build",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NV151_pick-a-swarm-visual-build-sound-and-card",
+    "P2NR166_rereview-kingfisher-and-pick-a-swarm"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795164614,
+   "created": 1795164614
   },
   {
    "id": "P2NR93_review-literal-spirit",
@@ -5339,6 +5270,25 @@
    "created": 1795161256
   },
   {
+   "id": "P2NV174_between-the-ropes-visual-build-floor",
+   "request": "Between the Ropes look, part 2: the black floor, cords, tape, lamp, window; logo and preview picture; publish",
+   "game": "Between The Ropes",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NV173_between-the-ropes-visual-build-chrome"
+   ],
+   "priority": null,
+   "why": "An old film of a slow practitioner moving inside a cube strung with ropes; move a soft ball of light slowly through a cube of strings without touching one.",
+   "state": "done",
+   "at": 1795161281,
+   "created": 1795161281
+  },
+  {
    "id": "P2NV176_drying-table-visual-build-chrome",
    "request": "Drying Table look, part 1: lane-table theme, fonts, one-row name, say the par number, day 1 lesson, share line",
    "game": "Drying Table",
@@ -5464,6 +5414,25 @@
    "estMinutes": null,
    "after": [
     "P2NV170_lamp-spiral-visual-study"
+   ],
+   "priority": null,
+   "why": "A news report of woodlice circling in tight spirals under artificial light.",
+   "state": "done",
+   "at": 1795163378,
+   "created": 1795163378
+  },
+  {
+   "id": "P2NV191_lamp-spiral-visual-build-board",
+   "request": "P2NV191_lamp spiral visual build board",
+   "game": "Lamp Spiral",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NV190_lamp-spiral-visual-build"
    ],
    "priority": null,
    "why": "A news report of woodlice circling in tight spirals under artificial light.",
@@ -5973,6 +5942,95 @@
    "created": 1795162436
   },
   {
+   "id": "P2RC15_release-check-forager",
+   "request": "P2RC15_release check forager",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P2NR170_rereview-hallway-posters-and-fool-the-algorithm"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795162742,
+   "created": 1795162742
+  },
+  {
+   "id": "P2RC17_release-check-stray-cat-sounds-like-rumour",
+   "request": "Release checklist for Stray Cat, Sounds Like and The Rumour on the Jetty after their kit 50 sync",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795164614,
+   "created": 1795164614
+  },
+  {
+   "id": "P2RC18_release-check-short-calls-last-piece-market-day",
+   "request": "Release checklist for Short Calls, The Last Piece and Market Day after their kit 50 sync",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795164614,
+   "created": 1795164614
+  },
+  {
+   "id": "P2RC19_release-check-drum-rule",
+   "request": "Release checklist for Drum Rule after its ship re-review",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795164614,
+   "created": 1795164614
+  },
+  {
+   "id": "P2RC27_release-check-no-favorites-guide-lines",
+   "request": "No Favorites and Guide Lines: release checklist after the post-look review",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR172_rereview-no-favorites-and-guide-lines"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795165248,
+   "created": 1795165248
+  },
+  {
    "id": "P2SL46_one-loop",
    "request": "P2SL46_one loop",
    "game": "One Loop",
@@ -6355,6 +6413,23 @@
    "state": "done",
    "at": 1795160489,
    "created": 1795160489
+  },
+  {
+   "id": "P3KT72_date-line-under-daily-result-title",
+   "request": "P3KT72_date line under daily result title",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795162051,
+   "created": 1795162051
   },
   {
    "id": "P3KT73_howto-focus-ring-after-touch",
