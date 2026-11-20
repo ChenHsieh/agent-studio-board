@@ -1,5 +1,5 @@
 {
- "generated": 1795153018,
+ "generated": 1795153688,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -64,25 +64,6 @@
    "created": 1795152094
   },
   {
-   "id": "P2NX26_speaking-stone-lead",
-   "request": "Speaking Stone: one design change so a retry cannot just look up the answer",
-   "game": "Speaking Stone",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR127_rereview-speaking-stone"
-   ],
-   "priority": "P2",
-   "why": "Screenshots arguing over a proposed test that would measure polish instead of substance.",
-   "state": "running",
-   "at": 1795151701,
-   "created": 1795151701
-  },
-  {
    "id": "P3PL14_speaking-stone-why-rollout",
    "request": "Why this exists: finish the rollout on speaking-stone (new test failure: test/first_minute_play.mjs no longer sees )",
    "game": "Speaking Stone",
@@ -115,6 +96,40 @@
    "state": "running",
    "at": 1793640233,
    "created": 1793640233
+  },
+  {
+   "id": "P2BX00_beetle-sound-shapes-measure",
+   "request": "Beetle in a Box: measure the sound-shapes rule set (design B) with bots before any screen work; build only if it is a real puzzle.",
+   "game": "Beetle in a Box",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P3",
+   "why": "A thread on Wittgenstein's limits of language, a post of made-up phonetic characters that look readable, and a mixed-language post.",
+   "state": "running",
+   "at": 1795152174,
+   "created": 1795152174
+  },
+  {
+   "id": "P2FP00_fake-philosopher-tests-green",
+   "request": "Fake Philosopher: make its own tests pass on a fresh copy (daily test and bot checks).",
+   "game": "Fake Philosopher",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": "P3",
+   "why": "A checklist post on how to pass as a continental philosopher, a prose poem's broken-off word, and a stick-figure meme of a speaker correcting himself.",
+   "state": "running",
+   "at": 1795152174,
+   "created": 1795152174
   },
   {
    "id": "P3PL18_silva-to-maaslin2-why-build",
@@ -248,9 +263,9 @@
    "created": 1795151036
   },
   {
-   "id": "P2NB30_still-fall-title-and-first-visit",
-   "request": "Still Fall: full name and a goat mark in the top bar, level 1 opens with no card, no 0 STEP, a share line about tries",
-   "game": "Still Fall",
+   "id": "P2KS06_kit-sync-batch-7",
+   "request": "Bring own-ground, pigeon-salon, radish-omelette up to the newest play-template kit, re-run each game's checks and publish each one once",
+   "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
@@ -258,13 +273,13 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NB29_still-fall-terrace-look"
+    "P3KT57_lesson-pointer-on-wrong-step"
    ],
    "priority": null,
-   "why": "A post from someone who once ranked first and now sees only dark, answered with advice to drop the old titles and go where the sun is.",
+   "why": "",
    "state": "running",
-   "at": 1795148458,
-   "created": 1795148458
+   "at": 1795151059,
+   "created": 1795151059
   },
   {
    "id": "P2NF85_three-shadows-walls-and-over-par",
@@ -305,68 +320,27 @@
    "created": 1795150956
   },
   {
-   "id": "P2NR122_rereview-the-apprentice-and-fix-the-night-after-lead",
-   "request": "Play the-apprentice and fix-the-night after their latest fix as a stranger and give each a verdict",
+   "id": "P2NR126_still-fall",
+   "request": "Still Fall: cold re-review after the terrace look and title builds, obvious play first",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
    "effort": "high",
-   "kind": "review",
+   "kind": "build",
    "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2NB24_the-apprentice-lead-build",
-    "P2NB25_fix-the-night-lead-build"
+    "P2NB30_still-fall-title-and-first-visit"
    ],
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1795147990,
-   "created": 1795147990
+   "at": 1795148492,
+   "created": 1795148492
   },
   {
-   "id": "P2NR123_rereview-clean-features-and-mushroom-gaps-after-lead",
-   "request": "Play clean-features and mushroom-gaps after their latest fix as a stranger and give each a verdict",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NB26_clean-features-lead-build",
-    "P2NB27_mushroom-gaps-lead-build"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1795147990,
-   "created": 1795147990
-  },
-  {
-   "id": "P2NR124_rereview-the-sixth-clipping-and-still-a-heap-after-lead",
-   "request": "Play the-sixth-clipping and still-a-heap after their latest fix as a stranger and give each a verdict",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NB28_the-sixth-clipping-lead-build",
-    "P2NF75_still-a-heap-walk-words-resume"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1795147990,
-   "created": 1795147990
-  },
-  {
-   "id": "P2NR130_rereview-close-a-door-and-ring-of-keys",
-   "request": "Play close-a-door and ring-of-keys as a stranger after tonight's fixes and give each a verdict",
+   "id": "P2NR131_rereview-pick-a-swarm-and-pinch-points",
+   "request": "Play pick-a-swarm and pinch-points as a stranger after tonight's fixes and give each a verdict",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
@@ -378,8 +352,42 @@
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1795151081,
-   "created": 1795151081
+   "at": 1795151092,
+   "created": 1795151092
+  },
+  {
+   "id": "P2NR132_rereview-two-tigers-and-guide-lines",
+   "request": "Play two-tigers and guide-lines as a stranger after tonight's fixes and give each a verdict",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1795151103,
+   "created": 1795151103
+  },
+  {
+   "id": "P2NR133_rereview-no-favorites-and-one-loop",
+   "request": "Play no-favorites and one-loop as a stranger after tonight's fixes and give each a verdict",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1795151114,
+   "created": 1795151114
   },
   {
    "id": "P2NR144_literal-spirit-fix",
@@ -437,8 +445,8 @@
    "created": 1795150922
   },
   {
-   "id": "P3KT63_apprentice-short-phone-below",
-   "request": "P3KT63_apprentice short phone below",
+   "id": "P3KT64_apprentice-daily-zh-buttons",
+   "request": "P3KT64_apprentice daily zh buttons",
    "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
@@ -450,8 +458,8 @@
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1795152065,
-   "created": 1795152065
+   "at": 1795152088,
+   "created": 1795152088
   },
   {
    "id": "P3PL13_dancers-not-mad-why-rollout",
@@ -490,38 +498,61 @@
    "created": 1795148020
   },
   {
-   "id": "P2BX00_beetle-sound-shapes-measure",
-   "request": "Beetle in a Box: measure the sound-shapes rule set (design B) with bots before any screen work; build only if it is a real puzzle.",
-   "game": "Beetle in a Box",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P3",
-   "why": "A thread on Wittgenstein's limits of language, a post of made-up phonetic characters that look readable, and a mixed-language post.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795152174
-  },
-  {
-   "id": "P2FP00_fake-philosopher-tests-green",
-   "request": "Fake Philosopher: make its own tests pass on a fresh copy (daily test and bot checks).",
-   "game": "Fake Philosopher",
+   "id": "P2NV129_clean-features-visual-polish",
+   "request": "Small wording and result-card polish for What the Dish Sees after its ship review",
+   "game": "What the Dish Sees",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
-   "kind": "build",
+   "kind": "visual",
    "size": "one repo",
    "estMinutes": null,
-   "after": [],
-   "priority": "P3",
-   "why": "A checklist post on how to pass as a continental philosopher, a prose poem's broken-off word, and a stick-figure meme of a speaker correcting himself.",
+   "after": [
+    "P2NR123_rereview-clean-features-and-mushroom-gaps-after-lead"
+   ],
+   "priority": "P1",
+   "why": "An essay arguing neural network features are already clean, and a petri-dish video of something first taken for ordinary bacteria.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1795152174
+   "created": 1795153172
+  },
+  {
+   "id": "P2NV130_mushroom-gaps-visual-polish",
+   "request": "Drawn link preview and one how-to line for Mushroom at the End after its ship review",
+   "game": "Mushroom at the End",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR123_rereview-clean-features-and-mushroom-gaps-after-lead"
+   ],
+   "priority": "P1",
+   "why": "An anthropology trivia post about a book on matsutake mushrooms growing in the ruins of industry.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795153172
+  },
+  {
+   "id": "P2NX28_the-apprentice-first-minute-lead",
+   "request": "The Apprentice: level 1 keeps its full board and its pointer on the card on small phones while the first-minute strip is up",
+   "game": "The Apprentice",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "first-minute",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR122_rereview-the-apprentice-and-fix-the-night-after-lead"
+   ],
+   "priority": "P1",
+   "why": "A viral second-person court scene where a cherished dancer draws a blade, recast in a reply as the orphan her ruler secretly raised.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795153307
   },
   {
    "id": "P2CY02_cymatic-ferrofluid-study",
@@ -541,74 +572,22 @@
    "created": 1795152174
   },
   {
-   "id": "P2KS06_kit-sync-batch-7",
-   "request": "Bring own-ground, pigeon-salon, radish-omelette up to the newest play-template kit, re-run each game's checks and publish each one once",
+   "id": "P2KT65_kit-hint-no-pointer",
+   "request": "Hint stops pointing at the answer in games with hidden bags",
    "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
+   "route": "Codex",
+   "model": "gpt-6-sol",
    "effort": "high",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
-   "after": [
-    "P3KT57_lesson-pointer-on-wrong-step"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795151059
-  },
-  {
-   "id": "P2NR131_rereview-pick-a-swarm-and-pinch-points",
-   "request": "Play pick-a-swarm and pinch-points as a stranger after tonight's fixes and give each a verdict",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
    "after": [],
    "priority": null,
    "why": "",
    "state": "ready",
    "waitingOn": [],
-   "created": 1795151092
-  },
-  {
-   "id": "P2NR132_rereview-two-tigers-and-guide-lines",
-   "request": "Play two-tigers and guide-lines as a stranger after tonight's fixes and give each a verdict",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795151103
-  },
-  {
-   "id": "P2NR133_rereview-no-favorites-and-one-loop",
-   "request": "Play no-favorites and one-loop as a stranger after tonight's fixes and give each a verdict",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795151114
+   "created": 1795153272,
+   "estPercentOfWeek": 0.25
   },
   {
    "id": "P2NR134_rereview-flying-white-and-incense-seal-clock",
@@ -913,6 +892,44 @@
    "created": 1795152616
   },
   {
+   "id": "P2NV131_the-sixth-clipping-visual-polish",
+   "request": "The Sixth Clipping: a drawn link preview, a share line with a picture of the result, and board 1's Hint that says the right thing on every phone",
+   "game": "The Sixth Clipping",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR124_rereview-the-sixth-clipping-and-still-a-heap-after-lead"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795153525
+  },
+  {
+   "id": "P2NV132_still-a-heap-visual-polish",
+   "request": "Still a Heap: the plate fills a tall phone, the heap stays put on the first take, and the plate and score never run together",
+   "game": "Still A Heap",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR124_rereview-the-sixth-clipping-and-still-a-heap-after-lead"
+   ],
+   "priority": null,
+   "why": "A remix of the can-press toy and the swarm idea through the old paradox of the heap.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795153551
+  },
+  {
    "id": "P2NW05_rewrite-slab",
    "request": "Slab!: rewrite the idea so the helper's habit changes after each call, then gate it again",
    "game": "Studio",
@@ -930,42 +947,171 @@
    "created": 1795148020
   },
   {
-   "id": "P3KT64_apprentice-daily-zh-buttons",
-   "request": "P3KT64_apprentice daily zh buttons",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795152088
-  },
-  {
-   "id": "P2NR126_still-fall",
-   "request": "Still Fall: cold re-review after the terrace look and title builds, obvious play first",
+   "id": "P2NX27_close-a-door-lead",
+   "request": "Close a Door: one design pass on why a stretch is slow, after three fix rounds",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
    "effort": "high",
    "kind": "build",
-   "size": "studio",
+   "size": "several repos",
    "estMinutes": null,
    "after": [
-    "P2NB30_still-fall-title-and-first-visit"
+    "P2NR130_rereview-close-a-door-and-ring-of-keys"
    ],
    "priority": null,
    "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795153415
+  },
+  {
+   "id": "P2NX29_ring-of-keys-lead",
+   "request": "Ring of Keys: one design pass on the crack and the end card, after three fix rounds",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P2NR130_rereview-close-a-door-and-ring-of-keys"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795153415
+  },
+  {
+   "id": "P2NF89_speaking-stone-kit-sync",
+   "request": "Speaking Stone moves to the current kit: one Menu on the result sheet, hint without the pointing hand",
+   "game": "Speaking Stone",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P2KT65_kit-hint-no-pointer"
+   ],
+   "priority": "P2",
+   "why": "Screenshots arguing over a proposed test that would measure polish instead of substance.",
    "state": "waiting",
    "waitingOn": [
-    "P2NB30_still-fall-title-and-first-visit"
+    "P2KT65_kit-hint-no-pointer"
    ],
-   "created": 1795148492
+   "created": 1795153307,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2NF90_speaking-stone-town-habits",
+   "request": "Speaking Stone: each season has a habit that says which bags lie; Try again brings a new queue",
+   "game": "Speaking Stone",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "xhigh",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NF89_speaking-stone-kit-sync"
+   ],
+   "priority": "P2",
+   "why": "Screenshots arguing over a proposed test that would measure polish instead of substance.",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NF89_speaking-stone-kit-sync"
+   ],
+   "created": 1795153307,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2NF91_speaking-stone-bags-you-can-read",
+   "request": "Speaking Stone: bags twice the size, a key for the season's habit, straw shows when bags open",
+   "game": "Speaking Stone",
+   "route": "Codex",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NF90_speaking-stone-town-habits"
+   ],
+   "priority": "P2",
+   "why": "Screenshots arguing over a proposed test that would measure polish instead of substance.",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NF90_speaking-stone-town-habits"
+   ],
+   "created": 1795153369,
+   "estPercentOfWeek": 0.25
+  },
+  {
+   "id": "P2NR146_rereview-speaking-stone-habits",
+   "request": "Opus re-review of Speaking Stone after the town-habits rebuild",
+   "game": "Speaking Stone",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NF91_speaking-stone-bags-you-can-read"
+   ],
+   "priority": "P2",
+   "why": "Screenshots arguing over a proposed test that would measure polish instead of substance.",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NF91_speaking-stone-bags-you-can-read"
+   ],
+   "created": 1795153332
+  },
+  {
+   "id": "P2NB33_close-a-door-lead-build",
+   "request": "Close a Door: build the lead design",
+   "game": "Close A Door",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P2NX27_close-a-door-lead"
+   ],
+   "priority": null,
+   "why": "A phone toy that judges a house plan by a morning routine walked through it, and a clip of a huge bull led into a room whose business is to say yes.",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NX27_close-a-door-lead"
+   ],
+   "created": 1795153415
+  },
+  {
+   "id": "P2NB34_ring-of-keys-lead-build",
+   "request": "Ring of Keys: build the lead design",
+   "game": "Ring Of Keys",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P2NX29_ring-of-keys-lead"
+   ],
+   "priority": null,
+   "why": "A thread about two bad days of security failures, one an important key that turned out to be tiny.",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NX29_ring-of-keys-lead"
+   ],
+   "created": 1795153415
   },
   {
    "id": "P2NR137_rereview-three-shadows-and-crushed-can",
@@ -988,6 +1134,48 @@
     "P2NF85_three-shadows-walls-and-over-par"
    ],
    "created": 1795151159
+  },
+  {
+   "id": "P2NR147_rereview-close-a-door-after-lead",
+   "request": "Close a Door: stranger re-review after the lead build",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NB33_close-a-door-lead-build"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NB33_close-a-door-lead-build"
+   ],
+   "created": 1795153415
+  },
+  {
+   "id": "P2NR148_rereview-ring-of-keys-after-lead",
+   "request": "Ring of Keys: stranger re-review after the lead build",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NB34_ring-of-keys-lead-build"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NB34_ring-of-keys-lead-build"
+   ],
+   "created": 1795153415
   },
   {
    "id": "P2NV118_whos-at-the-door-visual-build-board",
@@ -1335,6 +1523,25 @@
    "created": 1795147990
   },
   {
+   "id": "P2NX26_speaking-stone-lead",
+   "request": "Speaking Stone: one design change so a retry cannot just look up the answer",
+   "game": "Speaking Stone",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR127_rereview-speaking-stone"
+   ],
+   "priority": "P2",
+   "why": "Screenshots arguing over a proposed test that would measure polish instead of substance.",
+   "state": "done",
+   "at": 1795151701,
+   "created": 1795151701
+  },
+  {
    "id": "P2NF80_marble-machine-obvious-play-fixes",
    "request": "Marble Machine: the one-piece tunes get a real choice, the small-phone board is readable, and a shared daily link explains its pieces",
    "game": "Marble Machine",
@@ -1426,6 +1633,25 @@
    "state": "done",
    "at": 1795148406,
    "created": 1795148406
+  },
+  {
+   "id": "P2NB30_still-fall-title-and-first-visit",
+   "request": "Still Fall: full name and a goat mark in the top bar, level 1 opens with no card, no 0 STEP, a share line about tries",
+   "game": "Still Fall",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NB29_still-fall-terrace-look"
+   ],
+   "priority": null,
+   "why": "A post from someone who once ranked first and now sees only dark, answered with advice to drop the old titles and go where the sun is.",
+   "state": "done",
+   "at": 1795148458,
+   "created": 1795148458
   },
   {
    "id": "P2NB31_squeaky-floor-lead-build-board",
@@ -1877,6 +2103,66 @@
    "created": 1795147990
   },
   {
+   "id": "P2NR122_rereview-the-apprentice-and-fix-the-night-after-lead",
+   "request": "Play the-apprentice and fix-the-night after their latest fix as a stranger and give each a verdict",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NB24_the-apprentice-lead-build",
+    "P2NB25_fix-the-night-lead-build"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795147990,
+   "created": 1795147990
+  },
+  {
+   "id": "P2NR123_rereview-clean-features-and-mushroom-gaps-after-lead",
+   "request": "Play clean-features and mushroom-gaps after their latest fix as a stranger and give each a verdict",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NB26_clean-features-lead-build",
+    "P2NB27_mushroom-gaps-lead-build"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795147990,
+   "created": 1795147990
+  },
+  {
+   "id": "P2NR124_rereview-the-sixth-clipping-and-still-a-heap-after-lead",
+   "request": "Play the-sixth-clipping and still-a-heap after their latest fix as a stranger and give each a verdict",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NB28_the-sixth-clipping-lead-build",
+    "P2NF75_still-a-heap-walk-words-resume"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795147990,
+   "created": 1795147990
+  },
+  {
    "id": "P2NR125_review-between-the-ropes-and-drying-table",
    "request": "First stranger review of Between the Ropes and Drying Table, which are built and live but were never played by a reviewer",
    "game": "Studio",
@@ -1949,6 +2235,23 @@
    "state": "done",
    "at": 1795149558,
    "created": 1795149558
+  },
+  {
+   "id": "P2NR130_rereview-close-a-door-and-ring-of-keys",
+   "request": "Play close-a-door and ring-of-keys as a stranger after tonight's fixes and give each a verdict",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795151081,
+   "created": 1795151081
   },
   {
    "id": "P2NR93_review-literal-spirit",
@@ -2413,6 +2716,23 @@
    "state": "done",
    "at": 1795150666,
    "created": 1795150666
+  },
+  {
+   "id": "P3KT63_apprentice-short-phone-below",
+   "request": "P3KT63_apprentice short phone below",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795152065,
+   "created": 1795152065
   }
  ]
 }

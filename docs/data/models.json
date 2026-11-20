@@ -141,12 +141,12 @@
   {
    "executor": "claude-opus",
    "role": "build",
-   "count": 254,
+   "count": 255,
    "firstTimePass": 99,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 249,
+   "guessed": 250,
    "topFailures": [
     "rooms 16, 25 and 33 at 360x640 run 9-18 px past the screen after the f",
     "on small beds the canvas keeps its tall paper below the board, so on a",
@@ -199,24 +199,24 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 172,
+   "count": 176,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 170,
+   "guessed": 174,
    "topFailures": [],
    "flag": "give more"
   },
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 475,
+   "count": 477,
    "firstTimePass": 96,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 421,
+   "guessed": 423,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -556,6 +556,15 @@
  "last": [
   {
    "date": "2026-11-20",
+   "task": "apprentice short phone below",
+   "number": "",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "P3KT63 DONE. play-template kit 47 (main b1b152b). Config shortPhone: 'beside' (default) | 'below'. core.js fitBoard never sets pl-beside whe"
+  },
+  {
+   "date": "2026-11-20",
    "task": "kit board size steady lesson",
    "number": "",
    "executor": "claude-sonnet",
@@ -598,6 +607,15 @@
    "role": "design",
    "passed": "yes",
    "note": "P3KT58 DONE. play-template kit 43 (main 02c5691). core.js: a first-minute move is a mistake (Undo line) only when reachable(after) is worse "
+  },
+  {
+   "date": "2026-11-20",
+   "task": "speaking stone lead",
+   "number": "123",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "once the habit is named, the puzzle is counting; it may feel like arithmetic rather than judging people. The re-review should say whether re"
   },
   {
    "date": "2026-11-20",
@@ -655,6 +673,15 @@
   },
   {
    "date": "2026-11-20",
+   "task": "rereview close a door and ring of keys",
+   "number": "175",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "the board says \"3 = min\" but never shows that a stretch's minutes are a walk time plus a step per child (game.js cost()), so you cannot pred"
+  },
+  {
+   "date": "2026-11-20",
    "task": "rereview squeaky floor after lead",
    "number": "194",
    "executor": "claude-opus",
@@ -691,48 +718,21 @@
   },
   {
    "date": "2026-11-20",
-   "task": "rereview next please and fool the algorithm",
-   "number": "94",
+   "task": "rereview the sixth clipping and still a heap after lead",
+   "number": "173",
    "executor": "claude-opus",
    "role": "review",
    "passed": "yes",
-   "note": "there is no counter on the board. The regulars are rings of dots on cream, so \"nearest to the counter\" has nothing to point at and the post "
+   "note": "Hint on board 1. At 390 it says \"The +0 button now can force a story later.\" (false on board 1, and the coach just said to tap +0 every time"
   },
   {
    "date": "2026-11-20",
-   "task": "between the ropes review fixes",
-   "number": "172",
-   "executor": "claude-sonnet",
+   "task": "rereview clean features and mushroom gaps after lead",
+   "number": "96",
+   "executor": "claude-opus",
    "role": "review",
    "passed": "yes",
-   "note": "DONE (2026-11-20 00:31 EST). Live https://chenhsieh.github.io/between-the-ropes/ main 60af707 (kit 22 -> 42, version 0.1.1)."
-  },
-  {
-   "date": "2026-11-20",
-   "task": "can lantern words and win view",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "still yellow bars; the lantern drawing is the visual round. At 320 the lesson box is three lines tall and the daily 3-dot rows sit close to "
-  },
-  {
-   "date": "2026-11-20",
-   "task": "dancers not mad fixes",
-   "number": "109",
-   "executor": "claude-sonnet",
-   "role": "fix",
-   "passed": "yes",
-   "note": "POPULAR reaches best on level 6 (pads most dancers use); and level 4 any-tie 0% but random order 44%."
-  },
-  {
-   "date": "2026-11-20",
-   "task": "speaking stone fixes",
-   "number": "123",
-   "executor": "claude-sonnet",
-   "role": "fix",
-   "passed": "yes",
-   "note": "DONE"
+   "note": "at 390x844 the board stops at y 578 on level 1 (266 px empty below the tray; 152 px on level 5 and today), so the dish is smaller than the p"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
