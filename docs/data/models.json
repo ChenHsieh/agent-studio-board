@@ -141,12 +141,12 @@
   {
    "executor": "claude-opus",
    "role": "build",
-   "count": 262,
+   "count": 266,
    "firstTimePass": 99,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 257,
+   "guessed": 261,
    "topFailures": [
     "rooms 16, 25 and 33 at 360x640 run 9-18 px past the screen after the f",
     "on small beds the canvas keeps its tall paper below the board, so on a",
@@ -171,9 +171,9 @@
   {
    "executor": "claude-opus",
    "role": "fix",
-   "count": 23,
-   "firstTimePass": 76,
-   "retries": 5,
+   "count": 24,
+   "firstTimePass": 73,
+   "retries": 6,
    "medianMinutes": null,
    "costPerPass": null,
    "guessed": 18,
@@ -211,12 +211,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 501,
+   "count": 506,
    "firstTimePass": 96,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 446,
+   "guessed": 451,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -628,6 +628,15 @@
   },
   {
    "date": "2026-11-20",
+   "task": "one loop lesson fits",
+   "number": "198",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE P2SL48 Slitherlink first lesson fits one screen (Sonnet 5.5, 2026-11-20 01:03-02:00 EST). Live as main 51d444d (branch chen-lesson-fits"
+  },
+  {
+   "date": "2026-11-20",
    "task": "release check batch 5",
    "number": "",
    "executor": "claude-sonnet",
@@ -682,6 +691,24 @@
   },
   {
    "date": "2026-11-20",
+   "task": "rewrite slab",
+   "number": "",
+   "executor": "claude-opus",
+   "role": "fix",
+   "passed": "no",
+   "note": "DONE - Slab! (slab) re-gated PASS on its second chance (2026-11-20); solver spike queued as P2NS23_spike-slab."
+  },
+  {
+   "date": "2026-11-20",
+   "task": "pick a swarm visual study",
+   "number": "177",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE. P2NV134 visual round study for Sparrows on the Wire (pick-a-swarm), 2026-11-20 01:50-01:56 EST. No repo change, nothing published."
+  },
+  {
+   "date": "2026-11-20",
    "task": "still a heap visual polish",
    "number": "160",
    "executor": "claude-sonnet",
@@ -706,33 +733,6 @@
    "role": "build",
    "passed": "yes",
    "note": "DONE"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "clean features visual polish",
-   "number": "96",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "copy paste visual build",
-   "number": "53",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "one more chair visual build board",
-   "number": "149",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "the level 1 first-minute card is still a tall kit card, so level 1 at 390x844 scrolls 70 px while it is open (908 px before, 914 now, room b"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
