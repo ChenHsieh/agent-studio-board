@@ -199,24 +199,24 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 240,
+   "count": 242,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 238,
+   "guessed": 240,
    "topFailures": [],
    "flag": "give more"
   },
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 602,
+   "count": 608,
    "firstTimePass": 96,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 545,
+   "guessed": 551,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -239,12 +239,12 @@
   {
    "executor": "claude-sonnet",
    "role": "fix",
-   "count": 44,
-   "firstTimePass": 88,
+   "count": 45,
+   "firstTimePass": 89,
    "retries": 5,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 38,
+   "guessed": 39,
    "topFailures": [
     "the lesson start depends on the kit keeping [data-pl=\"howto-start\"] an",
     "after any go() to another screen the lesson is dropped and remembered",
@@ -556,6 +556,15 @@
  "last": [
   {
    "date": "2026-11-20",
+   "task": "template check win hold",
+   "number": "",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE. play-template main d6d406a (squash of chen-template-check-win-hold). kit VERSION 54 -> 55."
+  },
+  {
+   "date": "2026-11-20",
    "task": "howto focus ring after touch",
    "number": "",
    "executor": "claude-sonnet",
@@ -691,6 +700,15 @@
   },
   {
    "date": "2026-11-20",
+   "task": "copy paste release check",
+   "number": "53",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE"
+  },
+  {
+   "date": "2026-11-20",
    "task": "release check no favorites guide lines",
    "number": "141",
    "executor": "claude-sonnet",
@@ -700,39 +718,21 @@
   },
   {
    "date": "2026-11-20",
+   "task": "release check between the ropes drying table",
+   "number": "172",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE"
+  },
+  {
+   "date": "2026-11-20",
    "task": "release check three shadows incense seal clock",
    "number": "176",
    "executor": "claude-sonnet",
    "role": "build",
    "passed": "yes",
    "note": "DONE (nothing published: no mechanical game-side fix was open)"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "release check flagships 1113",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "partial",
-   "note": "DONE (partial by design: mechanical gaps closed, design-level gaps listed)"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "release check drum rule",
-   "number": "142",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "release check short calls last piece market day",
-   "number": "188",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
