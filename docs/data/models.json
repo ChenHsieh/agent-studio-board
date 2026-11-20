@@ -211,12 +211,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 483,
+   "count": 488,
    "firstTimePass": 96,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 428,
+   "guessed": 433,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -519,12 +519,12 @@
   {
    "executor": "other",
    "role": "build",
-   "count": 8,
+   "count": 9,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": 0.02,
-   "guessed": 8,
+   "guessed": 9,
    "topFailures": [],
    "flag": "give more"
   },
@@ -628,6 +628,33 @@
   },
   {
    "date": "2026-11-20",
+   "task": "clean features visual polish",
+   "number": "96",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE"
+  },
+  {
+   "date": "2026-11-20",
+   "task": "the long table visual build chrome",
+   "number": "189",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "rice and queue pieces are still kit circles (build 2 draws foods); top bar still two rows at 390 (kit's The idea button), as before."
+  },
+  {
+   "date": "2026-11-20",
+   "task": "worm bed visual build",
+   "number": "196",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE"
+  },
+  {
+   "date": "2026-11-20",
    "task": "whos at the door visual build theme",
    "number": "181",
    "executor": "claude-sonnet",
@@ -706,33 +733,6 @@
    "role": "fix",
    "passed": "yes",
    "note": "at 320x568 cells are ~37 px (under the 44 px floor; the floor cannot hold there and it was already that size at level open). The dev line \"C"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "rereview two carts and marble machine",
-   "number": "19",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "the Par / Left words in the side column: on night 1 with the card up they overlap their own numbers, and at 320 from night 3 \"Left\" spills f"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "rereview drum rule and rna hero",
-   "number": "142",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "at 320x568 lanes 3, 4 and 5 still render every sign as a shape (lots show circles/diamonds, \"No drums:\" becomes dots, Post becomes a tick) w"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "rereview flying white and incense seal clock",
-   "number": "176",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "the model card caption on the play screen does not fit its card at 390 EN (\"Shenlong copy of the / Palace Museum, Beijing 神 / 龍本\": \"Lanting "
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
