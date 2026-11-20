@@ -199,24 +199,24 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 170,
+   "count": 172,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 168,
+   "guessed": 170,
    "topFailures": [],
    "flag": "give more"
   },
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 474,
+   "count": 475,
    "firstTimePass": 96,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 420,
+   "guessed": 421,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -267,12 +267,12 @@
   {
    "executor": "claude-sonnet",
    "role": "review",
-   "count": 24,
+   "count": 25,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 24,
+   "guessed": 25,
    "topFailures": [],
    "flag": "give more"
   },
@@ -556,6 +556,15 @@
  "last": [
   {
    "date": "2026-11-20",
+   "task": "kit board size steady lesson",
+   "number": "",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "P3KT62 DONE-no-change (kit stays 46). Already steady from kits 28-46: new test/kit47_steady_board.test.mjs records the board on every animat"
+  },
+  {
+   "date": "2026-11-20",
    "task": "kit keep goal short coach",
    "number": "",
    "executor": "claude-sonnet",
@@ -646,6 +655,24 @@
   },
   {
    "date": "2026-11-20",
+   "task": "rereview squeaky floor after lead",
+   "number": "194",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "level 5 opens with \"Light on: that room is shut tonight.\" on night 1, when no room is lit, and the callout hides the goal line that says the"
+  },
+  {
+   "date": "2026-11-20",
+   "task": "rereview dancers not mad after fixes",
+   "number": "109",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "\"The whole square\", the finale, is solved by putting pins where the most dancers stand. It has three identical twin pairs, so spotting the t"
+  },
+  {
+   "date": "2026-11-20",
    "task": "rereview speaking stone",
    "number": "123",
    "executor": "claude-opus",
@@ -673,6 +700,15 @@
   },
   {
    "date": "2026-11-20",
+   "task": "between the ropes review fixes",
+   "number": "172",
+   "executor": "claude-sonnet",
+   "role": "review",
+   "passed": "yes",
+   "note": "DONE (2026-11-20 00:31 EST). Live https://chenhsieh.github.io/between-the-ropes/ main 60af707 (kit 22 -> 42, version 0.1.1)."
+  },
+  {
+   "date": "2026-11-20",
    "task": "can lantern words and win view",
    "number": "",
    "executor": "claude-sonnet",
@@ -697,42 +733,6 @@
    "role": "fix",
    "passed": "yes",
    "note": "DONE"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "marble machine obvious play fixes",
-   "number": "19",
-   "executor": "claude-sonnet",
-   "role": "fix",
-   "passed": "yes",
-   "note": "DONE"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "squeaky floor lead build share publish",
-   "number": "194",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE (2026-11-20 00:25). Squeaky Floor build 2 published once: main 46680c8 (tag pre-nb32), branch chen-nb32. Live md5 of index.html, game.j"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "squeaky floor lead build board",
-   "number": "194",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE (2026-11-20 00:40). Branch chen-nb31 on ChenHsieh/squeaky-floor, pushed, NOT published (build 2 publishes). Based on chen-lead-20261120"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "the sixth clipping lead build",
-   "number": "173",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE P2NB28. the-sixth-clipping main fd8f064 -> a70ed69 (branch chen-lead-build, built from the prototype fefa2cb items 1-7), live bytes mat"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
