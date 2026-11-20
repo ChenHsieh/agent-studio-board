@@ -199,24 +199,24 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 161,
+   "count": 163,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 159,
+   "guessed": 161,
    "topFailures": [],
    "flag": "give more"
   },
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 454,
+   "count": 456,
    "firstTimePass": 96,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 401,
+   "guessed": 403,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -239,12 +239,12 @@
   {
    "executor": "claude-sonnet",
    "role": "fix",
-   "count": 36,
+   "count": 37,
    "firstTimePass": 86,
    "retries": 5,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 30,
+   "guessed": 31,
    "topFailures": [
     "the lesson start depends on the kit keeping [data-pl=\"howto-start\"] an",
     "after any go() to another screen the lesson is dropped and remembered",
@@ -601,6 +601,15 @@
   },
   {
    "date": "2026-11-19",
+   "task": "no favorites words and win tray",
+   "number": "141",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE P2n124. No Favorites live main 2db3a92 (was a55e00f), kit 0.2.1 config version."
+  },
+  {
+   "date": "2026-11-19",
    "task": "guide lines words and daily head",
    "number": "140",
    "executor": "claude-sonnet",
@@ -664,6 +673,15 @@
   },
   {
    "date": "2026-11-19",
+   "task": "drum rule visual build sound og",
+   "number": "142",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE"
+  },
+  {
+   "date": "2026-11-19",
    "task": "drum rule visual build board",
    "number": "142",
    "executor": "claude-sonnet",
@@ -715,24 +733,6 @@
    "role": "review",
    "passed": "yes",
    "note": "the board never says crowding costs time, and its key says \"dot = child\" while the children are the big numbered shapes; child tokens still "
-  },
-  {
-   "date": "2026-11-19",
-   "task": "rereview ring of keys and pick a swarm",
-   "number": "177",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "DONE P2NR112 re-review: ring-of-keys REVISE (fix P2NF77 queued), pick-a-swarm REVISE (fix P2NF78 queued). Both second revises (1 earlier rev"
-  },
-  {
-   "date": "2026-11-19",
-   "task": "rereview the long table and two carts",
-   "number": "189",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "at 390 level 1 the first-minute card keeps Skip in its own column, so the text wraps over six narrow lines and the board drops to 288 px wit"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."

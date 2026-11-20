@@ -1,5 +1,5 @@
 {
- "generated": 1795148976,
+ "generated": 1795149532,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -45,6 +45,25 @@
    "state": "running",
    "at": 1795147990,
    "created": 1795147990
+  },
+  {
+   "id": "P2NF83_speaking-stone-fixes",
+   "request": "P2NF83_speaking stone fixes",
+   "game": "Speaking Stone",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "fix",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR09_review-speaking-stone"
+   ],
+   "priority": "P2",
+   "why": "Screenshots arguing over a proposed test that would measure polish instead of substance.",
+   "state": "running",
+   "at": 1795148955,
+   "created": 1795148955
   },
   {
    "id": "P3PL14_speaking-stone-why-rollout",
@@ -117,25 +136,6 @@
    "created": 1793640233
   },
   {
-   "id": "P2NB25_fix-the-night-lead-build",
-   "request": "Build the lead's first minute for Fix the Night so level 1 gives one instruction at a time",
-   "game": "Fix The Night",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "fix",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P2NX20_fix-the-night-lead"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1795147990,
-   "created": 1795147990
-  },
-  {
    "id": "P2NB29_still-fall-terrace-look",
    "request": "Still Fall: the board becomes a cliff of terraces (ink wash darker with height, hachure cliff marks, a drawn goat)",
    "game": "Still Fall",
@@ -193,42 +193,23 @@
    "created": 1795147535
   },
   {
-   "id": "P2NR09_review-speaking-stone",
-   "request": "Speaking Stone: BUILDING -> stranger review",
-   "game": "Studio",
+   "id": "P2NF84_dancers-not-mad-fixes",
+   "request": "P2NF84_dancers not mad fixes",
+   "game": "Dancers Not Mad",
    "route": "Claude",
-   "model": "opus",
+   "model": "sonnet",
    "effort": "high",
-   "kind": "review",
+   "kind": "fix",
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P1NC02_speaking-stone-gates-and-sheet"
+    "P2NR10_rereview-dancers-not-mad"
    ],
    "priority": null,
-   "why": "",
+   "why": "The saying that those who cannot hear the music think the dancers mad.",
    "state": "running",
-   "at": 1795147990,
-   "created": 1795147990
-  },
-  {
-   "id": "P2NR10_rereview-dancers-not-mad",
-   "request": "Dancers Not Mad",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P1NC03_dancers-not-mad-gates-and-sheet"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1795147990,
-   "created": 1795147990
+   "at": 1795149223,
+   "created": 1795149223
   },
   {
    "id": "P2NR116_rereview-next-please-and-fool-the-algorithm",
@@ -282,23 +263,38 @@
    "created": 1795147990
   },
   {
-   "id": "P2NV58_drum-rule-visual-build-sound-og",
-   "request": "Drum Rule whiteboard, part 2: magnet clack and eraser sounds, themed result sheets, drawn link preview, share line with circles and crosses",
-   "game": "Drum Rule",
+   "id": "P2NR121_rereview-short-calls-and-three-shadows",
+   "request": "Play Short Calls and Three Shadows after their fixes and give each a verdict",
+   "game": "Studio",
    "route": "Claude",
-   "model": "sonnet",
+   "model": "opus",
    "effort": "high",
-   "kind": "visual",
-   "size": "several repos",
+   "kind": "review",
+   "size": "studio",
    "estMinutes": null,
-   "after": [
-    "P2NV57_drum-rule-visual-build-board"
-   ],
+   "after": [],
    "priority": null,
-   "why": "Screenshots about rules drawn around places instead of their purpose.",
+   "why": "",
    "state": "running",
-   "at": 1794582828,
-   "created": 1794582828
+   "at": 1795147990,
+   "created": 1795147990
+  },
+  {
+   "id": "P2NR125_review-between-the-ropes-and-drying-table",
+   "request": "First stranger review of Between the Ropes and Drying Table, which are built and live but were never played by a reviewer",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1795147990,
+   "created": 1795147990
   },
   {
    "id": "P2NX19_the-apprentice-lead",
@@ -409,23 +405,38 @@
    "created": 1794598936
   },
   {
-   "id": "P2n124_no-favorites-words-and-win-tray",
-   "request": "No Favorites: plain first-minute words, the finished tray stays visible on win, bigger daily board on small phones",
-   "game": "No Favorites",
+   "id": "P3HX01_par-zero-gate",
+   "request": "Let the playable gate accept games whose par is 0 by design",
+   "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
    "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1795149164,
+   "created": 1795149164
+  },
+  {
+   "id": "P3KT55_look-is-not-a-lesson-move",
+   "request": "P3KT55_look is not a lesson move",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
    "size": "one repo",
    "estMinutes": null,
-   "after": [
-    "P2NR115_rereview-guide-lines-and-no-favorites"
-   ],
+   "after": [],
    "priority": null,
-   "why": "An engraved card of seven spiral worm rosettes knotted together in the centre.",
+   "why": "",
    "state": "running",
-   "at": 1795147203,
-   "created": 1795147203
+   "at": 1795148759,
+   "created": 1795148759
   },
   {
    "id": "P3PL13_dancers-not-mad-why-rollout",
@@ -459,40 +470,6 @@
    ],
    "priority": "P2",
    "why": "Copy-paste greeting replies with place, name and age swapped each time, plus a stack of identical installer dialogs.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795147990
-  },
-  {
-   "id": "P2NR121_rereview-short-calls-and-three-shadows",
-   "request": "Play Short Calls and Three Shadows after their fixes and give each a verdict",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795147990
-  },
-  {
-   "id": "P2NR125_review-between-the-ropes-and-drying-table",
-   "request": "First stranger review of Between the Ropes and Drying Table, which are built and live but were never played by a reviewer",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
    "state": "ready",
    "waitingOn": [],
    "created": 1795147990
@@ -608,23 +585,6 @@
    "created": 1795148020
   },
   {
-   "id": "P3KT55_look-is-not-a-lesson-move",
-   "request": "P3KT55_look is not a lesson move",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795148759
-  },
-  {
    "id": "P3KT56_premise-card-language-switch",
    "request": "P3KT56_premise card language switch",
    "game": "Studio",
@@ -705,27 +665,6 @@
    "created": 1795148020
   },
   {
-   "id": "P2NF83_speaking-stone-fixes",
-   "request": "P2NF83_speaking stone fixes",
-   "game": "Speaking Stone",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "fix",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR09_review-speaking-stone"
-   ],
-   "priority": "P2",
-   "why": "Screenshots arguing over a proposed test that would measure polish instead of substance.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NR09_review-speaking-stone"
-   ],
-   "created": 1795148955
-  },
-  {
    "id": "P2NB28_the-sixth-clipping-lead-build",
    "request": "Build the lead's coach for The Sixth Clipping so no line ever says a story happened when none did",
    "game": "The Sixth Clipping",
@@ -768,6 +707,48 @@
    "created": 1795148458
   },
   {
+   "id": "P2NB31_squeaky-floor-lead-build-board",
+   "request": "Squeaky Floor: the floor drawn as an old wooden house at night, goal lines name the step",
+   "game": "Squeaky Floor",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NX24_squeaky-floor-lead"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NX24_squeaky-floor-lead"
+   ],
+   "created": 1795149485
+  },
+  {
+   "id": "P2NB32_squeaky-floor-lead-build-share-publish",
+   "request": "Squeaky Floor: share marks per night, logo, preview picture, publish once",
+   "game": "Squeaky Floor",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NB31_squeaky-floor-lead-build-board"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NB31_squeaky-floor-lead-build-board"
+   ],
+   "created": 1795149503
+  },
+  {
    "id": "P2NR122_rereview-the-apprentice-and-fix-the-night-after-lead",
    "request": "Play the-apprentice and fix-the-night after their latest fix as a stranger and give each a verdict",
    "game": "Studio",
@@ -785,8 +766,7 @@
    "why": "",
    "state": "waiting",
    "waitingOn": [
-    "P2NB24_the-apprentice-lead-build",
-    "P2NB25_fix-the-night-lead-build"
+    "P2NB24_the-apprentice-lead-build"
    ],
    "created": 1795147990
   },
@@ -875,7 +855,49 @@
    "waitingOn": [
     "P2NF83_speaking-stone-fixes"
    ],
-   "created": 1795148974
+   "created": 1795148981
+  },
+  {
+   "id": "P2NR128_rereview-dancers-not-mad-after-fixes",
+   "request": "P2NR128_rereview dancers not mad after fixes",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NF84_dancers-not-mad-fixes"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NF84_dancers-not-mad-fixes"
+   ],
+   "created": 1795149262
+  },
+  {
+   "id": "P2NR129_rereview-squeaky-floor-after-lead",
+   "request": "Squeaky Floor: Opus re-review after the lead build, obvious play first",
+   "game": "Squeaky Floor",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NB32_squeaky-floor-lead-build-share-publish"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NB32_squeaky-floor-lead-build-share-publish"
+   ],
+   "created": 1795149530
   },
   {
    "id": "P2NR93_review-literal-spirit",
@@ -937,6 +959,25 @@
    "state": "done",
    "at": 1795147655,
    "created": 1795147655
+  },
+  {
+   "id": "P2NB25_fix-the-night-lead-build",
+   "request": "Build the lead's first minute for Fix the Night so level 1 gives one instruction at a time",
+   "game": "Fix The Night",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "fix",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P2NX20_fix-the-night-lead"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795147990,
+   "created": 1795147990
   },
   {
    "id": "P2NF75_still-a-heap-walk-words-resume",
@@ -1008,6 +1049,44 @@
    ],
    "priority": null,
    "why": "A goatherd chooses which mountain pass two tigers fight on each season, so neither grows strong enough to come down for the fields.",
+   "state": "done",
+   "at": 1795147990,
+   "created": 1795147990
+  },
+  {
+   "id": "P2NR09_review-speaking-stone",
+   "request": "Speaking Stone: BUILDING -> stranger review",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P1NC02_speaking-stone-gates-and-sheet"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795147990,
+   "created": 1795147990
+  },
+  {
+   "id": "P2NR10_rereview-dancers-not-mad",
+   "request": "Dancers Not Mad",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P1NC03_dancers-not-mad-gates-and-sheet"
+   ],
+   "priority": null,
+   "why": "",
    "state": "done",
    "at": 1795147990,
    "created": 1795147990
@@ -1219,6 +1298,25 @@
    "state": "done",
    "at": 1795147227,
    "created": 1795147227
+  },
+  {
+   "id": "P2n124_no-favorites-words-and-win-tray",
+   "request": "No Favorites: plain first-minute words, the finished tray stays visible on win, bigger daily board on small phones",
+   "game": "No Favorites",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR115_rereview-guide-lines-and-no-favorites"
+   ],
+   "priority": null,
+   "why": "An engraved card of seven spiral worm rosettes knotted together in the centre.",
+   "state": "done",
+   "at": 1795147203,
+   "created": 1795147203
   },
   {
    "id": "P3KT54_market-day-premise-line",
