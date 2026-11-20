@@ -199,24 +199,24 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 176,
+   "count": 180,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 174,
+   "guessed": 178,
    "topFailures": [],
    "flag": "give more"
   },
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 477,
+   "count": 480,
    "firstTimePass": 96,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 423,
+   "guessed": 425,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -239,12 +239,12 @@
   {
    "executor": "claude-sonnet",
    "role": "fix",
-   "count": 40,
-   "firstTimePass": 87,
+   "count": 41,
+   "firstTimePass": 88,
    "retries": 5,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 34,
+   "guessed": 35,
    "topFailures": [
     "the lesson start depends on the kit keeping [data-pl=\"howto-start\"] an",
     "after any go() to another screen the lesson is dropped and remembered",
@@ -267,12 +267,12 @@
   {
    "executor": "claude-sonnet",
    "role": "review",
-   "count": 25,
+   "count": 26,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 25,
+   "guessed": 26,
    "topFailures": [],
    "flag": "give more"
   },
@@ -673,6 +673,42 @@
   },
   {
    "date": "2026-11-20",
+   "task": "literal spirit fix",
+   "number": "147",
+   "executor": "claude-sonnet",
+   "role": "fix",
+   "passed": "yes",
+   "note": "at 320x568 cells are ~37 px (under the 44 px floor; the floor cannot hold there and it was already that size at level open). The dev line \"C"
+  },
+  {
+   "date": "2026-11-20",
+   "task": "rereview no favorites and one loop",
+   "number": "141",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "daily at 320x568, the worm-end numbers (20 px on a ~220 px board) spill out of their discs and sit on the nests; worm ends carry the worm's "
+  },
+  {
+   "date": "2026-11-20",
+   "task": "rereview two tigers and guide lines",
+   "number": "140",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "the lesson teaches by walking the player into a scripted mistake; after the 11-19 fix the goal line reads right, but every later level's goa"
+  },
+  {
+   "date": "2026-11-20",
+   "task": "rereview pick a swarm and pinch points",
+   "number": "119",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "the first screen is a premise card that ends \"This is a core build / Placeholder shapes and no sound yet.\" (swp_390_en/00_cold.png), then Ho"
+  },
+  {
+   "date": "2026-11-20",
    "task": "rereview close a door and ring of keys",
    "number": "175",
    "executor": "claude-opus",
@@ -697,42 +733,6 @@
    "role": "review",
    "passed": "yes",
    "note": "\"The whole square\", the finale, is solved by putting pins where the most dancers stand. It has three identical twin pairs, so spotting the t"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "rereview speaking stone",
-   "number": "123",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "the only cue that tells board kinds apart, how plump a bag looks, is a box of 7 to 10 css px at 390. So the first try is close to a guess, a"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "review between the ropes and drying table",
-   "number": "172",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "the first minute. Off-guide moves leave \"Tap Undo, then try again.\" which follows the player into the daily and into level 3 where nothing c"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "rereview the sixth clipping and still a heap after lead",
-   "number": "173",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "Hint on board 1. At 390 it says \"The +0 button now can force a story later.\" (false on board 1, and the coach just said to tap +0 every time"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "rereview clean features and mushroom gaps after lead",
-   "number": "96",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "at 390x844 the board stops at y 578 on level 1 (266 px empty below the tray; 152 px on level 5 and today), so the dish is smaller than the p"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
