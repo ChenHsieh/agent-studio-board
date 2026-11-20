@@ -141,12 +141,12 @@
   {
    "executor": "claude-opus",
    "role": "build",
-   "count": 271,
+   "count": 275,
    "firstTimePass": 99,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 266,
+   "guessed": 270,
    "topFailures": [
     "rooms 16, 25 and 33 at 360x640 run 9-18 px past the screen after the f",
     "on small beds the canvas keeps its tall paper below the board, so on a",
@@ -211,12 +211,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 509,
+   "count": 514,
    "firstTimePass": 96,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 454,
+   "guessed": 459,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -227,12 +227,12 @@
   {
    "executor": "claude-sonnet",
    "role": "design",
-   "count": 41,
+   "count": 42,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 37,
+   "guessed": 38,
    "topFailures": [],
    "flag": "give more"
   },
@@ -655,12 +655,30 @@
   },
   {
    "date": "2026-11-20",
+   "task": "drum rule lead",
+   "number": "142",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "Huge text on a phone under 380 wide keeps the shape fallback in a 200 px side column (\"Und o\" wraps in the row); out of this scope. At 390 t"
+  },
+  {
+   "date": "2026-11-20",
    "task": "two tigers first minute lead",
    "number": "180",
    "executor": "claude-opus",
    "role": "build",
    "passed": "yes",
    "note": "at 320 zh-Hant the three HUD lines touch (as before); later goal lines still name rules not the aim. Open on asks.tsv (not answered): 1-4% r"
+  },
+  {
+   "date": "2026-11-20",
+   "task": "ring of keys lead",
+   "number": "178",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE"
   },
   {
    "date": "2026-11-20",
@@ -700,39 +718,21 @@
   },
   {
    "date": "2026-11-20",
+   "task": "three shadows visual study",
+   "number": "146",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "at 320x568 the floor cells are 37 css px, still under 44 (walls already at their 80 px floor); only the kit message-slot option (owner's ope"
+  },
+  {
+   "date": "2026-11-20",
    "task": "flying white visual polish",
    "number": "117",
    "executor": "claude-sonnet",
    "role": "build",
    "passed": "yes",
    "note": "DONE"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "marble machine visual study",
-   "number": "19",
-   "executor": "claude-opus",
-   "role": "build",
-   "passed": "yes",
-   "note": "at 320 the area round the spring is crowded (tags 1 and 3, the dial chip and a grip within 80 px), and 56 px ramps is what the must-keep pan"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "two carts visual study",
-   "number": "179",
-   "executor": "claude-opus",
-   "role": "build",
-   "passed": "yes",
-   "note": "at 320x568 nothing changes in size (32.7 px spots, canvas numbers about 15 px); the look cannot fix that without owner's kit call."
-  },
-  {
-   "date": "2026-11-20",
-   "task": "no favorites visual study",
-   "number": "141",
-   "executor": "claude-opus",
-   "role": "build",
-   "passed": "yes",
-   "note": "only direction A mocked; at 390 the board leaves about 150 px of empty ground above and below the tray (width-bound); the share symbols are "
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
