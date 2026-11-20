@@ -141,12 +141,12 @@
   {
    "executor": "claude-opus",
    "role": "build",
-   "count": 260,
+   "count": 262,
    "firstTimePass": 99,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 255,
+   "guessed": 257,
    "topFailures": [
     "rooms 16, 25 and 33 at 360x640 run 9-18 px past the screen after the f",
     "on small beds the canvas keeps its tall paper below the board, so on a",
@@ -199,24 +199,24 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 188,
+   "count": 191,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 186,
+   "guessed": 189,
    "topFailures": [],
    "flag": "give more"
   },
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 498,
+   "count": 501,
    "firstTimePass": 96,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 442,
+   "guessed": 446,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -664,12 +664,30 @@
   },
   {
    "date": "2026-11-20",
+   "task": "close a door lead",
+   "number": "175",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE"
+  },
+  {
+   "date": "2026-11-20",
    "task": "speaking stone lead",
    "number": "123",
    "executor": "claude-opus",
    "role": "build",
    "passed": "yes",
    "note": "once the habit is named, the puzzle is counting; it may feel like arithmetic rather than judging people. The re-review should say whether re"
+  },
+  {
+   "date": "2026-11-20",
+   "task": "still a heap visual polish",
+   "number": "160",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "kit is still 19 (a sync would give a proper tall-board hook); empty band at the bottom on plates without a strip."
   },
   {
    "date": "2026-11-20",
@@ -700,26 +718,8 @@
   },
   {
    "date": "2026-11-20",
-   "task": "worm bed visual motion og",
-   "number": "196",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "the sway is subtle at 4 degrees on a 44 px sprout; the chipped corner on the og is a flat green triangle."
-  },
-  {
-   "date": "2026-11-20",
-   "task": "the long table visual build chrome",
-   "number": "189",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "rice and queue pieces are still kit circles (build 2 draws foods); top bar still two rows at 390 (kit's The idea button), as before."
-  },
-  {
-   "date": "2026-11-20",
-   "task": "worm bed visual build",
-   "number": "196",
+   "task": "copy paste visual build",
+   "number": "53",
    "executor": "claude-sonnet",
    "role": "build",
    "passed": "yes",
@@ -727,12 +727,12 @@
   },
   {
    "date": "2026-11-20",
-   "task": "whos at the door visual build board",
-   "number": "181",
+   "task": "one more chair visual build board",
+   "number": "149",
    "executor": "claude-sonnet",
    "role": "build",
    "passed": "yes",
-   "note": "at 320 the plate word \"Lamp\" and \"1 a knock\" fill the plate (18 px floor); morning board is mostly hidden by the result sheet; tells sit sli"
+   "note": "the level 1 first-minute card is still a tall kit card, so level 1 at 390x844 scrolls 70 px while it is open (908 px before, 914 now, room b"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
