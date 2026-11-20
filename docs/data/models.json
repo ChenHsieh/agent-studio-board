@@ -141,12 +141,12 @@
   {
    "executor": "claude-opus",
    "role": "build",
-   "count": 250,
+   "count": 253,
    "firstTimePass": 99,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 245,
+   "guessed": 248,
    "topFailures": [
     "rooms 16, 25 and 33 at 360x640 run 9-18 px past the screen after the f",
     "on small beds the canvas keeps its tall paper below the board, so on a",
@@ -199,24 +199,24 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 168,
+   "count": 170,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 166,
+   "guessed": 168,
    "topFailures": [],
    "flag": "give more"
   },
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 466,
+   "count": 469,
    "firstTimePass": 96,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 413,
+   "guessed": 416,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -227,24 +227,24 @@
   {
    "executor": "claude-sonnet",
    "role": "design",
-   "count": 40,
+   "count": 41,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 36,
+   "guessed": 37,
    "topFailures": [],
    "flag": "give more"
   },
   {
    "executor": "claude-sonnet",
    "role": "fix",
-   "count": 39,
+   "count": 40,
    "firstTimePass": 87,
    "retries": 5,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 33,
+   "guessed": 34,
    "topFailures": [
     "the lesson start depends on the kit keeping [data-pl=\"howto-start\"] an",
     "after any go() to another screen the lesson is dropped and remembered",
@@ -556,12 +556,75 @@
  "last": [
   {
    "date": "2026-11-20",
+   "task": "kit undo line later",
+   "number": "",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "P3KT59 DONE. play-template kit 44 (main 1a91bb6). firstminute.json undo step accepts optional \"later\" {en, zh-Hant}: shown when the mistake "
+  },
+  {
+   "date": "2026-11-20",
+   "task": "kit mistake by reachable score",
+   "number": "",
+   "executor": "claude-sonnet",
+   "role": "design",
+   "passed": "yes",
+   "note": "P3KT58 DONE. play-template kit 43 (main 02c5691). core.js: a first-minute move is a mistake (Undo line) only when reachable(after) is worse "
+  },
+  {
+   "date": "2026-11-20",
+   "task": "worm bed visual study",
+   "number": "196",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "the still mock scores 3 on \"feels alive\"; the crawl and crumble motion (P2NV123) carries it."
+  },
+  {
+   "date": "2026-11-20",
+   "task": "one more chair visual study",
+   "number": "149",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "the puzzle's own weak spot is unchanged by a look (4-6 spots, trying every spot finishes any level in about 5 tries); and the 320 fit has ze"
+  },
+  {
+   "date": "2026-11-20",
+   "task": "the long table visual study",
+   "number": "189",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "the food inside a lantern's window is about 19 css px at 320 (24 board units; live was 22), under the 32 px glyph line; the lantern itself i"
+  },
+  {
+   "date": "2026-11-20",
    "task": "whos at the door visual study",
    "number": "181",
    "executor": "claude-opus",
    "role": "build",
    "passed": "yes",
    "note": "canvas HUD and plate words are 22 px at 360 wide, so about 18 px on a 320 phone (live is 20 px, about 16); the build must not shrink them, a"
+  },
+  {
+   "date": "2026-11-20",
+   "task": "review literal spirit",
+   "number": "147",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "on a 320-wide phone the board grows after the first tap and hides Run; and a charm that spends twice the par gets the same \"Nothing broken\" "
+  },
+  {
+   "date": "2026-11-20",
+   "task": "rereview speaking stone",
+   "number": "123",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "the only cue that tells board kinds apart, how plump a bag looks, is a box of 7 to 10 css px at 390. So the first try is close to a guess, a"
   },
   {
    "date": "2026-11-20",
@@ -580,6 +643,24 @@
    "role": "review",
    "passed": "yes",
    "note": "there is no counter on the board. The regulars are rings of dots on cream, so \"nearest to the counter\" has nothing to point at and the post "
+  },
+  {
+   "date": "2026-11-20",
+   "task": "can lantern words and win view",
+   "number": "",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "still yellow bars; the lantern drawing is the visual round. At 320 the lesson box is three lines tall and the daily 3-dot rows sit close to "
+  },
+  {
+   "date": "2026-11-20",
+   "task": "dancers not mad fixes",
+   "number": "109",
+   "executor": "claude-sonnet",
+   "role": "fix",
+   "passed": "yes",
+   "note": "POPULAR reaches best on level 6 (pads most dancers use); and level 4 any-tie 0% but random order 44%."
   },
   {
    "date": "2026-11-20",
@@ -618,6 +699,15 @@
    "note": "at 390 an empty band between meter strip and card; next level's lesson not previewed on win card; real-touch checks were Playwright taps at "
   },
   {
+   "date": "2026-11-20",
+   "task": "clean features lead build",
+   "number": "96",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "at 390x844 the dish is 80 percent of the old diameter and about 100 px stays free under the tray on short levels; at 320x568 neurons draw at"
+  },
+  {
    "date": "2026-11-19",
    "task": "lesson pointer on wrong step",
    "number": "",
@@ -643,96 +733,6 @@
    "role": "design",
    "passed": "yes",
    "note": "DONE P3KT55. play-template main 1d827f7 (was b203201), kit VERSION 39 -> 40."
-  },
-  {
-   "date": "2026-11-19",
-   "task": "market day premise line",
-   "number": "174",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "the 3 remaining items above."
-  },
-  {
-   "date": "2026-11-19",
-   "task": "play template",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE. Kit 39 on play-template main (b203201). Kit 26 had already removed the primary \"Menu\"; the daily result's first button said \"Levels\". "
-  },
-  {
-   "date": "2026-11-19",
-   "task": "kit meter past par not clamped",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "the +3 label adds ~16px under the bar only while over par; no live game synced yet."
-  },
-  {
-   "date": "2026-11-19",
-   "task": "kit premise short first card",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE. Kit 36 (play-template main 12a7a85, squash of branch chen-kit-premise-line2)."
-  },
-  {
-   "date": "2026-11-19",
-   "task": "crushed can newrule popup 320",
-   "number": "145",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "P3KT14: DONE (template only; template has no live page)"
-  },
-  {
-   "date": "2026-11-19",
-   "task": "par zero gate",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "P3HX01_par-zero-gate: DONE 2026-11-19 (merged to origin/main 5627479, gates-ro refreshed)"
-  },
-  {
-   "date": "2026-11-19",
-   "task": "no favorites words and win tray",
-   "number": "141",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE P2n124. No Favorites live main 2db3a92 (was a55e00f), kit 0.2.1 config version."
-  },
-  {
-   "date": "2026-11-19",
-   "task": "guide lines words and daily head",
-   "number": "140",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE (live main 15d951d, branch chen-p2n123)."
-  },
-  {
-   "date": "2026-11-19",
-   "task": "literal spirit",
-   "number": "147",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "(1) no manual \"Step\" button (the kit stepper has none; Replay move is there); (2) HUD shows ink and par only: the"
-  },
-  {
-   "date": "2026-11-19",
-   "task": "slitherlink og url",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "P2SL47_slitherlink-og-url: DONE 2026-11-19. docs/index.html og:url and og:image (and README Live link) now /slitherlink/. Source of truth is"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
