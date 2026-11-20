@@ -42,7 +42,7 @@
   {
    "executor": "aider openrouter/openai/gpt-4.1",
    "role": "build",
-   "count": 61,
+   "count": 63,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
@@ -141,12 +141,12 @@
   {
    "executor": "claude-opus",
    "role": "build",
-   "count": 98,
-   "firstTimePass": 97,
+   "count": 243,
+   "firstTimePass": 99,
    "retries": 0,
    "medianMinutes": null,
-   "costPerPass": 0.01,
-   "guessed": 93,
+   "costPerPass": 0.0,
+   "guessed": 238,
    "topFailures": [
     "rooms 16, 25 and 33 at 360x640 run 9-18 px past the screen after the f",
     "on small beds the canvas keeps its tall paper below the board, so on a",
@@ -157,12 +157,12 @@
   {
    "executor": "claude-opus",
    "role": "design",
-   "count": 51,
+   "count": 60,
    "firstTimePass": 98,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 49,
+   "guessed": 58,
    "topFailures": [
     "levels 1-2 are deliberately easy for the nearest-expiry bot (they teac"
    ],
@@ -171,6 +171,22 @@
   {
    "executor": "claude-opus",
    "role": "fix",
+   "count": 22,
+   "firstTimePass": 75,
+   "retries": 5,
+   "medianMinutes": null,
+   "costPerPass": null,
+   "guessed": 17,
+   "topFailures": [
+    "DONE",
+    "nothing is measured yet. Squeaky Floor's risk is that the flow trap is",
+    "DONE - Fix the Night (別只搧煙) passes its solver spike: a ladder of 8 sta"
+   ],
+   "flag": ""
+  },
+  {
+   "executor": "claude-opus",
+   "role": "research",
    "count": 3,
    "firstTimePass": 100,
    "retries": 0,
@@ -182,37 +198,25 @@
   },
   {
    "executor": "claude-opus",
-   "role": "research",
-   "count": 2,
-   "firstTimePass": 100,
-   "retries": 0,
-   "medianMinutes": null,
-   "costPerPass": null,
-   "guessed": 2,
-   "topFailures": [],
-   "flag": ""
-  },
-  {
-   "executor": "claude-opus",
    "role": "review",
-   "count": 38,
+   "count": 152,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 36,
+   "guessed": 150,
    "topFailures": [],
    "flag": "give more"
   },
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 305,
-   "firstTimePass": 95,
+   "count": 439,
+   "firstTimePass": 96,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 255,
+   "guessed": 386,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -223,52 +227,52 @@
   {
    "executor": "claude-sonnet",
    "role": "design",
-   "count": 28,
+   "count": 38,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 24,
+   "guessed": 34,
    "topFailures": [],
    "flag": "give more"
   },
   {
    "executor": "claude-sonnet",
    "role": "fix",
-   "count": 15,
-   "firstTimePass": 64,
+   "count": 35,
+   "firstTimePass": 85,
    "retries": 5,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 9,
+   "guessed": 29,
    "topFailures": [
     "the lesson start depends on the kit keeping [data-pl=\"howto-start\"] an",
     "after any go() to another screen the lesson is dropped and remembered",
     "the fix is guarded by one flag; the kit's click order on the Play butt"
    ],
-   "flag": ""
+   "flag": "give more"
   },
   {
    "executor": "claude-sonnet",
    "role": "research",
-   "count": 11,
+   "count": 12,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 10,
+   "guessed": 11,
    "topFailures": [],
    "flag": "give more"
   },
   {
    "executor": "claude-sonnet",
    "role": "review",
-   "count": 6,
+   "count": 23,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 6,
+   "guessed": 23,
    "topFailures": [],
    "flag": "give more"
   },
@@ -523,188 +527,212 @@
    "guessed": 7,
    "topFailures": [],
    "flag": "give more"
+  },
+  {
+   "executor": "other",
+   "role": "design",
+   "count": 1,
+   "firstTimePass": 100,
+   "retries": 0,
+   "medianMinutes": null,
+   "costPerPass": null,
+   "guessed": 1,
+   "topFailures": [],
+   "flag": ""
+  },
+  {
+   "executor": "other",
+   "role": "review",
+   "count": 1,
+   "firstTimePass": 100,
+   "retries": 0,
+   "medianMinutes": null,
+   "costPerPass": null,
+   "guessed": 1,
+   "topFailures": [],
+   "flag": ""
   }
  ],
  "last": [
   {
-   "date": "2026-11-05",
-   "task": "lens screen studio 320 fix",
-   "number": "41",
-   "executor": "claude-sonnet",
-   "role": "fix",
-   "passed": "no",
-   "note": "DONE (live, main 791955e, pre-tag pre-p3d35): the studio build (twelve client visits with wishes, reactions, studio wall) is published, and "
-  },
-  {
-   "date": "2026-11-05",
-   "task": "grad survivor merge save test",
+   "date": "2026-11-18",
+   "task": "one loop build",
    "number": "",
    "executor": "claude-sonnet",
    "role": "build",
    "passed": "yes",
-   "note": "P3SV56 DONE. owner-grad-survivor main 1e57019: test/save.test.mjs (157 lines, only file) merged. Read it: covers v3 kept, v3 without badges "
+   "note": "DONE: live at https://chenhsieh.github.io/one-loop/ (title Slitherlink / 數回, repo slug one-loop pending rename). 12 levels, daily, endless, "
   },
   {
-   "date": "2026-11-05",
-   "task": "redacxiv merge save tests",
-   "number": "32",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "P3SV55 DONE (tests merged) with one open item. BioRedactle-nextjs main c682bba: scripts/test-save-migration.ts (195 lines) and scripts/test-"
-  },
-  {
-   "date": "2026-11-05",
-   "task": "glasshouse merge save tests",
-   "number": "3",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "P3SV54 DONE. glasshouse main 0899d05: tests/save-migration.test.ts (8 cases), save-settings.test.ts, save-crew.test.ts (6) merged; nothing u"
-  },
-  {
-   "date": "2026-11-05",
-   "task": "tickets 15 17 fit 320",
+   "date": "2026-11-18",
+   "task": "one loop solver",
    "number": "",
    "executor": "claude-sonnet",
    "role": "build",
    "passed": "yes",
-   "note": "DONE (live, main c9e3d2f, pre-tag pre-p3sb58). Slice and Bake tickets 15 and 17 at 320x568 on a first visit were 30 px over (page 598 of 568"
+   "note": "DONE: one-loop solver, generator, 12 levels, daily and bots are built, verified and in designs/inspo_slitherlink/solver/"
   },
   {
-   "date": "2026-11-05",
-   "task": "glasshouse why build",
-   "number": "3",
-   "executor": "claude-sonnet",
-   "role": "build",
+   "date": "2026-11-18",
+   "task": "one loop brief",
+   "number": "",
+   "executor": "claude-opus",
+   "role": "design",
    "passed": "yes",
-   "note": "P3PL19 DONE and LIVE (glasshouse, main 0b95876, branch chen-pl-why a9b7b21)."
+   "note": "DONE: core brief for One Loop (一圈), plain Slitherlink for phones. Taste gate PASS (one NO from the taste critic, no double-NO)."
   },
   {
-   "date": "2026-11-05",
-   "task": "readable nonsense why rollout",
-   "number": "75",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "P3PL16 DONE and LIVE (readable-nonsense, main 9dae754, branch chen-pl-why bd828f2)."
-  },
-  {
-   "date": "2026-11-05",
-   "task": "flying white why rollout",
-   "number": "117",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "P3PL15 DONE and LIVE (flying-white, main 360c336, branch chen-pl-why 4e58e62)."
-  },
-  {
-   "date": "2026-11-05",
-   "task": "name to carry why rollout",
-   "number": "125",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "P3PL12 DONE and LIVE (name-to-carry, main 242ce44, branch chen-pl-why 537c622)."
-  },
-  {
-   "date": "2026-11-05",
-   "task": "machine rhythm why rollout",
-   "number": "89",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "P3PL11 DONE and LIVE (machine-rhythm, main 2e768a1, branch chen-pl-why d1c8913)."
-  },
-  {
-   "date": "2026-11-05",
-   "task": "review round table and iron window garden",
+   "date": "2026-11-13",
+   "task": "iron window garden ladder",
    "number": "159",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "the obvious play wins. With the preview on, \"turn to feed the most seats without emptying a wanted dish\" wins at par on 7 of 9 levels after "
-  },
-  {
-   "date": "2026-11-05",
-   "task": "review coin dumplings and watched pot",
-   "number": "156",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "the win is hidden. The result sheet covers the bottom rows of the grown stone at 390x844 and the whole stone at 320x568, so the picture you "
-  },
-  {
-   "date": "2026-11-05",
-   "task": "ac remote",
-   "number": "165",
-   "executor": "codex gpt-6-sol high",
+   "executor": "aider openrouter/openai/gpt-4.1",
    "role": "build",
-   "passed": "",
-   "note": "capped, 0k tokens: the preview only looks one hour ahead, and the whole afternoon depends on where the sun will be at 16:00; a new player ha"
+   "passed": "yes",
+   "note": "OR LANE OK, branch pushed"
   },
   {
-   "date": "2026-11-05",
-   "task": "gold star",
-   "number": "164",
-   "executor": "codex gpt-6-sol high",
+   "date": "2026-11-13",
+   "task": "round table level goals",
+   "number": "158",
+   "executor": "aider openrouter/openai/gpt-4.1",
    "role": "build",
-   "passed": "",
-   "note": "exhausted, 286k tokens: hold is the only way to see the numbers before posting, and nothing teaches it but the board label \"Hold a card to s"
+   "passed": "yes",
+   "note": "OR LANE OK, branch pushed"
   },
   {
-   "date": "2026-11-05",
-   "task": "rolling back",
-   "number": "163",
-   "executor": "codex gpt-6-sol high",
+   "date": "2026-11-13",
+   "task": "kit game lost words",
+   "number": "",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "P3KT15: DONE. Kit 27 (play-template main f530e36): G.lostText(state) sets the lost message after a losing move, the idle/no-moves check and "
+  },
+  {
+   "date": "2026-11-13",
+   "task": "kit board full width 320",
+   "number": "",
+   "executor": "claude-sonnet",
    "role": "build",
    "passed": "partial",
-   "note": "built, 115k tokens: the tone is one placeholder pluck and the push is silent, so the whole game leans on a sound that is not designed yet (h"
+   "note": "tall boards (Three Shadows) and Huge text still get ~158-200 px at 320x568; more width needs vertical room the kit cannot"
   },
   {
-   "date": "2026-11-05",
-   "task": "one umbrella",
-   "number": "162",
-   "executor": "codex gpt-6-sol high",
+   "date": "2026-11-13",
+   "task": "sounds like",
+   "number": "148",
+   "executor": "claude-opus",
    "role": "build",
-   "passed": "",
-   "note": "exhausted, 165k tokens: the umbrella is interpolated, the wet meters step every 0.25 s."
+   "passed": "yes",
+   "note": "the word graph is thin (largest sound-alike group 22 words), so 8 of 12 levels and most dailies live in the 是/事/時/實 family; at 320x568 the b"
   },
   {
-   "date": "2026-11-05",
-   "task": "iron window garden",
-   "number": "159",
-   "executor": "codex gpt-6-sol high",
+   "date": "2026-11-13",
+   "task": "gift tins proto",
+   "number": "143",
+   "executor": "claude-opus",
    "role": "build",
-   "passed": "",
-   "note": "exhausted, 520k tokens: the result sheet still covers the lower part of a 3-tier rack at the win (kit layout; short racks now sit above it)."
+   "passed": "yes",
+   "note": "board text is fixed CSS size inside a canvas that shrinks, so on 6-door streets at 320x568 (and at Huge) the door labels, gap minutes and th"
   },
   {
-   "date": "2026-11-05",
-   "task": "one umbrella fixes",
-   "number": "162",
+   "date": "2026-11-13",
+   "task": "drum rule proto",
+   "number": "142",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "on a 320x568 phone the kit's compact layout pins the board to about 160 px, so lots and tray show the signs' shapes only (words are on the H"
+  },
+  {
+   "date": "2026-11-13",
+   "task": "no favorites proto",
+   "number": "141",
    "executor": "claude-sonnet",
-   "role": "fix",
+   "role": "build",
    "passed": "yes",
-   "note": "lane 1 is still 30 s of holding still (brief rule); visual round still not queued; re-review can now upgrade verdict to ship."
+   "note": "levels 8 and 12 have one drawn crossing that does not match the over/under rule (8: one end sits close to another worm; 12: one pair crosses"
   },
   {
-   "date": "2026-11-05",
-   "task": "review gold star and ac remote",
-   "number": "164",
+   "date": "2026-11-13",
+   "task": "crushed can proto",
+   "number": "145",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "the can is drawn as plain yellow bars (placeholder; the visual round should make the squeeze feel physical, with a crinkle sound, since the "
+  },
+  {
+   "date": "2026-11-13",
+   "task": "guide lines proto",
+   "number": "140",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "template_check 23/25 (see below); huge text at 320x568 does not fit one screen; the first-minute script is the kit's one-board lesson, not t"
+  },
+  {
+   "date": "2026-11-13",
+   "task": "no favorites crossings and words",
+   "number": "141",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "level 8 still has two ends (3 and 2, top) about 30 css px apart at 320; the 320 board is small."
+  },
+  {
+   "date": "2026-11-13",
+   "task": "guide lines fit and switch",
+   "number": "140",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "at 320x568 the board is 190 px, so points on a hard page are still close (24 px minimum, not 44); new-rule callout on level 4 at 320 covers "
+  },
+  {
+   "date": "2026-11-13",
+   "task": "ac remote visual round",
+   "number": "165",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "no room in the 6 px gaps."
+  },
+  {
+   "date": "2026-11-13",
+   "task": "one thread visual design",
+   "number": "133",
+   "executor": "claude-opus",
+   "role": "design",
+   "passed": "yes",
+   "note": "DONE P2n110: One Thread visual round design (design only; game unchanged, nothing published). Live looked at myself at 390x844 and 320x568 ("
+  },
+  {
+   "date": "2026-11-13",
+   "task": "one more chair",
+   "number": "149",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "the result sheet covers the lower half of the board at 320x568 (the kit's sheet), so the calm final day is hard to see right after a win; a "
+  },
+  {
+   "date": "2026-11-13",
+   "task": "review drum rule and three shadows",
+   "number": "146",
    "executor": "claude-opus",
    "role": "review",
    "passed": "yes",
-   "note": "you can only see what a card does by a press and hold nobody is told about (a tap posts at once). And the line is easy once you plan ahead: "
+   "note": "on a 320 wide phone the game about place WORDS shows shapes only (circle, square, diamond), the \"No drums:\" label is gone and the board sits"
   },
   {
-   "date": "2026-11-05",
-   "task": "review one umbrella and rolling back",
-   "number": "162",
+   "date": "2026-11-13",
+   "task": "review guide lines and no favorites",
+   "number": "141",
    "executor": "claude-opus",
    "role": "review",
    "passed": "yes",
-   "note": "the endless run-over sheet says \"Both home, wetter shoulder 10 of 10\" after a soak (title and share line are wrong for endless); also \"Wet 0"
+   "note": "the board. At 390 it is about 256 css px wide with empty page below; at 320x568 the daily board is 176 px, pushed left, and Undo/Hint/More a"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
