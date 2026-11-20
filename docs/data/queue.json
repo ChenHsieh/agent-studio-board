@@ -1,5 +1,5 @@
 {
- "generated": 1795166724,
+ "generated": 1795167304,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -119,6 +119,25 @@
    "created": 1795165049
   },
   {
+   "id": "P2NX37_marble-machine",
+   "request": "P2NX37_marble machine",
+   "game": "Marble Machine",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR177_recheck-marble-machine-after-visual"
+   ],
+   "priority": "P3",
+   "why": "A viral short of a marble bouncing off pinned discs, each hit a note.",
+   "state": "running",
+   "at": 1795166685,
+   "created": 1795166685
+  },
+  {
    "id": "P3PL18_silva-to-maaslin2-why-build",
    "request": "Why this exists: add the section to silva-to-maaslin2 through its build step",
    "game": "Studio",
@@ -136,8 +155,44 @@
    "created": 1793640233
   },
   {
+   "id": "P2FS70_onescreen-gate-inner-scroll",
+   "request": "The one-screen swipe check counts a board that scrolls its own page box as scrolling",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR178_rereview-letter-lines-after-lead"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1795166329,
+   "created": 1795166329
+  },
+  {
    "id": "P2KS08_kit-sync-batch-8",
    "request": "Kit sync for Worm Bed, The Long Table, Who's at the Door and The Sixth Clipping (kit 33-35 to current)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1795164614,
+   "created": 1795164614
+  },
+  {
+   "id": "P2KS09_kit-sync-batch-9",
+   "request": "Kit sync for Gilded Poster, Same Spots, Gold Star and Still a Heap",
    "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
@@ -249,27 +304,46 @@
    "created": 1795165771
   },
   {
-   "id": "P2NR177_recheck-marble-machine-after-visual",
-   "request": "Marble Machine: stranger check after its puzzle-mode visual round",
-   "game": "Studio",
+   "id": "P2NF111_silent-disco-review-fixes",
+   "request": "Silent Disco: one looks counter, win held before the card, board fits at 320, bigger board text",
+   "game": "Silent Disco",
    "route": "Claude",
-   "model": "opus",
+   "model": "sonnet",
    "effort": "high",
-   "kind": "visual",
-   "size": "studio",
+   "kind": "review",
+   "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NV160_marble-machine-visual-build-panel"
+    "P2NR191_resting-review-silent-disco-and-plain-telling"
    ],
    "priority": null,
-   "why": "",
+   "why": "A Don Quixote windmill image, a news item on folk battle troupes competing in formation, and a tracker music sequencer.",
    "state": "running",
-   "at": 1795162436,
-   "created": 1795162436
+   "at": 1795166137,
+   "created": 1795166137
   },
   {
-   "id": "P2NR185_rereview-tree-hero-and-lamp-spiral-after-look",
-   "request": "Re-review Tree Hero and Lamp Spiral after their look builds",
+   "id": "P2NF112_plain-telling-kit-sync-and-draw-tap",
+   "request": "Plain Telling: current kit, the Draw tap shows the solved night instead of skipping to the next level, candles counter counts candles",
+   "game": "Plain Telling",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR191_resting-review-silent-disco-and-plain-telling"
+   ],
+   "priority": null,
+   "why": "A commentary on a 2002 film that tells one story three ways in red, blue and white.",
+   "state": "running",
+   "at": 1795166137,
+   "created": 1795166137
+  },
+  {
+   "id": "P2NR183_rereview-between-the-ropes-and-drying-table-after-look",
+   "request": "Re-review Between the Ropes and Drying Table after their look builds",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
@@ -278,8 +352,8 @@
    "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2NV189_tree-hero-visual-build-chrome",
-    "P2NV191_lamp-spiral-visual-build-board"
+    "P2NV174_between-the-ropes-visual-build-floor",
+    "P2NV177_drying-table-visual-build-table"
    ],
    "priority": null,
    "why": "",
@@ -288,8 +362,8 @@
    "created": 1795164614
   },
   {
-   "id": "P2NR189_rereview-beetle-in-a-box-after-sound-guess",
-   "request": "Re-review Beetle in a Box after the sound-guess and colour-coach fix",
+   "id": "P2NR188_rereview-readable-nonsense-and-life-statistics-after-fixes",
+   "request": "Re-review Readable Nonsense and Life Statistics after their fixes",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
@@ -298,7 +372,8 @@
    "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2NF107_beetle-sound-guess-and-colour-coach"
+    "P2NF106_readable-nonsense-fixes",
+    "P2NF105_life-statistics-fixes"
    ],
    "priority": null,
    "why": "",
@@ -307,8 +382,8 @@
    "created": 1795164614
   },
   {
-   "id": "P2NR192_resting-review-four-thirty-three-and-the-folder",
-   "request": "Resting review: 4'33\" and The Folder, first stranger review",
+   "id": "P2NR193_resting-review-redline-river-and-orbit-rings",
+   "request": "Resting review: Redline River and Orbit Rings, first stranger review",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
@@ -324,23 +399,21 @@
    "created": 1795164614
   },
   {
-   "id": "P2NV177_drying-table-visual-build-table",
-   "request": "Drying Table look, part 2: the ping-pong table, net, shade, radish rounds, bamboo sieves, newspaper stack; logo and preview picture; publish",
-   "game": "Drying Table",
+   "id": "P2NR194_resting-review-rasp-and-billboard-wars",
+   "request": "Resting review: Rasp and Billboard Wars, first stranger review",
+   "game": "Studio",
    "route": "Claude",
-   "model": "sonnet",
+   "model": "opus",
    "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
+   "kind": "review",
+   "size": "studio",
    "estMinutes": null,
-   "after": [
-    "P2NV176_drying-table-visual-build-chrome"
-   ],
+   "after": [],
    "priority": null,
-   "why": "A photo of a shared ping-pong table covered in vegetables drying in the sun.",
+   "why": "",
    "state": "running",
-   "at": 1795161876,
-   "created": 1795161876
+   "at": 1795164614,
+   "created": 1795164614
   },
   {
    "id": "P2NV185_ring-of-keys-visual-build-chrome",
@@ -381,8 +454,8 @@
    "created": 1795163666
   },
   {
-   "id": "P2NV198_hallway-posters-visual-build-layout",
-   "request": "Hallway Posters: every word on the poster readable, Hang always on screen, crooked tag says why",
+   "id": "P2NV199_hallway-posters-visual-build-look",
+   "request": "Hallway Posters: the poster hangs on a school corkboard, done sheet counts crooked tags, new preview picture",
    "game": "Hallway Posters",
    "route": "Claude",
    "model": "sonnet",
@@ -391,7 +464,7 @@
    "size": "several repos",
    "estMinutes": null,
    "after": [
-    "P2NV183_hallway-posters-visual-study"
+    "P2NV198_hallway-posters-visual-build-layout"
    ],
    "priority": null,
    "why": "Hallway photos of handmade class posters that each model the same four bacterial strains with different craft materials.",
@@ -400,23 +473,23 @@
    "created": 1795164112
   },
   {
-   "id": "P2RC16_release-check-kingfisher-pick-a-swarm",
-   "request": "Release checklist for Kingfisher and Sparrows on the Wire after their visual rounds",
-   "game": "Studio",
+   "id": "P2NV207_knockout-plate-visual-build-layout",
+   "request": "Knockout Plate look, part 1: the bench layout, big clear words, the notebook always on screen",
+   "game": "Knockout Plate",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
-   "kind": "build",
+   "kind": "visual",
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NR166_rereview-kingfisher-and-pick-a-swarm"
+    "P2NV187_knockout-plate-visual-study"
    ],
    "priority": null,
-   "why": "",
+   "why": "A lab story of knocking out bacterial genes one by one, plus a challenge to predict knockouts never seen.",
    "state": "running",
-   "at": 1795164118,
-   "created": 1795164118
+   "at": 1795166657,
+   "created": 1795166657
   },
   {
    "id": "P2RC20_release-check-flagships-1113",
@@ -472,6 +545,25 @@
    "created": 1793640233
   },
   {
+   "id": "P2NF114_the-folder-say-rna-and-real-choice",
+   "request": "The Folder: says RNA and the pairing rule on screen, reachable gold, rings where trying each bead in turn is not enough",
+   "game": "The Folder",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR192_resting-review-four-thirty-three-and-the-folder"
+   ],
+   "priority": "P2",
+   "why": "A careless RNA folding program as the opponent, one of three greedy algorithms in the overnight Fool the Algorithm build.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795167103
+  },
+  {
    "id": "P2NV204_lantern-meeting-visual-study",
    "request": "P2NV204_lantern meeting visual study",
    "game": "Lantern Meeting",
@@ -491,9 +583,9 @@
    "created": 1795165599
   },
   {
-   "id": "P2FS70_onescreen-gate-inner-scroll",
-   "request": "The one-screen swipe check counts a board that scrolls its own page box as scrolling",
-   "game": "Studio",
+   "id": "P2NF113_four-thirty-three-real-choice-and-one-score",
+   "request": "Room Tone: rooms where tapping every quiet sound is not enough, one word for points, Try again after a short score",
+   "game": "Room Tone",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
@@ -501,30 +593,13 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NR178_rereview-letter-lines-after-lead"
+    "P2NR192_resting-review-four-thirty-three-and-the-folder"
    ],
-   "priority": null,
-   "why": "",
+   "priority": "P3",
+   "why": "The 1952 silent piece 4′33″ and a contest poster for it.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1795166329
-  },
-  {
-   "id": "P2KS09_kit-sync-batch-9",
-   "request": "Kit sync for Gilded Poster, Same Spots, Gold Star and Still a Heap",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795164614
+   "created": 1795167103
   },
   {
    "id": "P2KS12_kit-sync-next-please-no-favorites-out-of-the-corner",
@@ -547,28 +622,9 @@
    "created": 1795164614
   },
   {
-   "id": "P2NF111_silent-disco-review-fixes",
-   "request": "Silent Disco: one looks counter, win held before the card, board fits at 320, bigger board text",
-   "game": "Silent Disco",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR191_resting-review-silent-disco-and-plain-telling"
-   ],
-   "priority": null,
-   "why": "A Don Quixote windmill image, a news item on folk battle troupes competing in formation, and a tracker music sequencer.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795166137
-  },
-  {
-   "id": "P2NF112_plain-telling-kit-sync-and-draw-tap",
-   "request": "Plain Telling: current kit, the Draw tap shows the solved night instead of skipping to the next level, candles counter counts candles",
-   "game": "Plain Telling",
+   "id": "P2NF115_think-elephant",
+   "request": "P2NF115_think elephant",
+   "game": "Think Elephant",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
@@ -576,106 +632,13 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NR191_resting-review-silent-disco-and-plain-telling"
+    "P2NR187_rereview-notched-boat-and-think-elephant-after-fixes"
    ],
    "priority": null,
-   "why": "A commentary on a 2002 film that tells one story three ways in red, blue and white.",
+   "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1795166137
-  },
-  {
-   "id": "P2NR187_rereview-notched-boat-and-think-elephant-after-fixes",
-   "request": "Re-review Notched Boat and Think Elephant after their fixes",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF103_notched-boat-one-screen-and-first-step",
-    "P2NF104_think-elephant-real-choice-and-one-screen"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795164614
-  },
-  {
-   "id": "P2NR188_rereview-readable-nonsense-and-life-statistics-after-fixes",
-   "request": "Re-review Readable Nonsense and Life Statistics after their fixes",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF106_readable-nonsense-fixes",
-    "P2NF105_life-statistics-fixes"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795164614
-  },
-  {
-   "id": "P2NR190_rereview-speaking-stone-after-key-words",
-   "request": "Re-review Speaking Stone after the daily and key words fix",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF101_speaking-stone-daily-callout-and-key-words"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795164614
-  },
-  {
-   "id": "P2NR193_resting-review-redline-river-and-orbit-rings",
-   "request": "Resting review: Redline River and Orbit Rings, first stranger review",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795164614
-  },
-  {
-   "id": "P2NR194_resting-review-rasp-and-billboard-wars",
-   "request": "Resting review: Rasp and Billboard Wars, first stranger review",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795164614
+   "created": 1795167117
   },
   {
    "id": "P2NR195_resting-review-triangle-lexicon-and-lens-screen",
@@ -803,25 +766,6 @@
    "created": 1795166381
   },
   {
-   "id": "P2NV207_knockout-plate-visual-build-layout",
-   "request": "Knockout Plate look, part 1: the bench layout, big clear words, the notebook always on screen",
-   "game": "Knockout Plate",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NV187_knockout-plate-visual-study"
-   ],
-   "priority": null,
-   "why": "A lab story of knocking out bacterial genes one by one, plus a challenge to predict knockouts never seen.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795166657
-  },
-  {
    "id": "P2RC06_release-check-batch-6",
    "request": "Release checklist pass on copy-drift, even-water, morning-three, one-thread: fix the mechanical gaps (licences list, accessibility, preview and share, console errors) and publish once",
    "game": "Studio",
@@ -858,6 +802,25 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1795151070
+  },
+  {
+   "id": "P2RC25_release-check-tree-hero-lamp-spiral",
+   "request": "Release checklist for Tree Hero and Lamp Spiral after their re-review",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR185_rereview-tree-hero-and-lamp-spiral-after-look"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795164614
   },
   {
    "id": "P2NV201_the-apprentice-visual-build-chrome",
@@ -902,27 +865,6 @@
    "created": 1795165049
   },
   {
-   "id": "P2NX37_marble-machine",
-   "request": "P2NX37_marble machine",
-   "game": "Marble Machine",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR177_recheck-marble-machine-after-visual"
-   ],
-   "priority": "P3",
-   "why": "A viral short of a marble bouncing off pinned discs, each hit a note.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NR177_recheck-marble-machine-after-visual"
-   ],
-   "created": 1795166685
-  },
-  {
    "id": "P2NR151_review-slab",
    "request": "P2NR151_review slab",
    "game": "Studio",
@@ -962,28 +904,6 @@
    "state": "waiting",
    "waitingOn": [
     "P2NV195_shortest-law-level-order-and-daily-line"
-   ],
-   "created": 1795164614
-  },
-  {
-   "id": "P2NR183_rereview-between-the-ropes-and-drying-table-after-look",
-   "request": "Re-review Between the Ropes and Drying Table after their look builds",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NV174_between-the-ropes-visual-build-floor",
-    "P2NV177_drying-table-visual-build-table"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NV177_drying-table-visual-build-table"
    ],
    "created": 1795164614
   },
@@ -1051,27 +971,6 @@
     "P2NV194_shortest-law-visual-build"
    ],
    "created": 1795163666
-  },
-  {
-   "id": "P2NV199_hallway-posters-visual-build-look",
-   "request": "Hallway Posters: the poster hangs on a school corkboard, done sheet counts crooked tags, new preview picture",
-   "game": "Hallway Posters",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P2NV198_hallway-posters-visual-build-layout"
-   ],
-   "priority": null,
-   "why": "Hallway photos of handmade class posters that each model the same four bacterial strains with different craft materials.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NV198_hallway-posters-visual-build-layout"
-   ],
-   "created": 1795164112
   },
   {
    "id": "P2NV208_knockout-plate-visual-build-pieces",
@@ -1154,27 +1053,6 @@
    "state": "waiting",
    "waitingOn": [
     "P2NR184_rereview-literal-spirit-and-ring-of-keys-after-look"
-   ],
-   "created": 1795164614
-  },
-  {
-   "id": "P2RC25_release-check-tree-hero-lamp-spiral",
-   "request": "Release checklist for Tree Hero and Lamp Spiral after their re-review",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR185_rereview-tree-hero-and-lamp-spiral-after-look"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NR185_rereview-tree-hero-and-lamp-spiral-after-look"
    ],
    "created": 1795164614
   },
@@ -4171,6 +4049,25 @@
    "created": 1795162196
   },
   {
+   "id": "P2NR177_recheck-marble-machine-after-visual",
+   "request": "Marble Machine: stranger check after its puzzle-mode visual round",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NV160_marble-machine-visual-build-panel"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795162436,
+   "created": 1795162436
+  },
+  {
    "id": "P2NR178_rereview-letter-lines-after-lead",
    "request": "P2NR178_rereview letter lines after lead",
    "game": "Studio",
@@ -4248,8 +4145,103 @@
    "created": 1795164614
   },
   {
+   "id": "P2NR185_rereview-tree-hero-and-lamp-spiral-after-look",
+   "request": "Re-review Tree Hero and Lamp Spiral after their look builds",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NV189_tree-hero-visual-build-chrome",
+    "P2NV191_lamp-spiral-visual-build-board"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795164614,
+   "created": 1795164614
+  },
+  {
+   "id": "P2NR187_rereview-notched-boat-and-think-elephant-after-fixes",
+   "request": "Re-review Notched Boat and Think Elephant after their fixes",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NF103_notched-boat-one-screen-and-first-step",
+    "P2NF104_think-elephant-real-choice-and-one-screen"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795164614,
+   "created": 1795164614
+  },
+  {
+   "id": "P2NR189_rereview-beetle-in-a-box-after-sound-guess",
+   "request": "Re-review Beetle in a Box after the sound-guess and colour-coach fix",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NF107_beetle-sound-guess-and-colour-coach"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795164614,
+   "created": 1795164614
+  },
+  {
+   "id": "P2NR190_rereview-speaking-stone-after-key-words",
+   "request": "Re-review Speaking Stone after the daily and key words fix",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NF101_speaking-stone-daily-callout-and-key-words"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795164614,
+   "created": 1795164614
+  },
+  {
    "id": "P2NR191_resting-review-silent-disco-and-plain-telling",
    "request": "Resting review: Silent Disco and Plain Telling, first stranger review",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795164614,
+   "created": 1795164614
+  },
+  {
+   "id": "P2NR192_resting-review-four-thirty-three-and-the-folder",
+   "request": "Resting review: 4'33\" and The Folder, first stranger review",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
@@ -5361,6 +5353,25 @@
    "created": 1795161852
   },
   {
+   "id": "P2NV177_drying-table-visual-build-table",
+   "request": "Drying Table look, part 2: the ping-pong table, net, shade, radish rounds, bamboo sieves, newspaper stack; logo and preview picture; publish",
+   "game": "Drying Table",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NV176_drying-table-visual-build-chrome"
+   ],
+   "priority": null,
+   "why": "A photo of a shared ping-pong table covered in vegetables drying in the sun.",
+   "state": "done",
+   "at": 1795161876,
+   "created": 1795161876
+  },
+  {
    "id": "P2NV178_shortest-law-visual-study",
    "request": "P2NV178_shortest law visual study",
    "game": "Shortest Law",
@@ -5568,6 +5579,25 @@
    "state": "done",
    "at": 1795163776,
    "created": 1795163776
+  },
+  {
+   "id": "P2NV198_hallway-posters-visual-build-layout",
+   "request": "Hallway Posters: every word on the poster readable, Hang always on screen, crooked tag says why",
+   "game": "Hallway Posters",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P2NV183_hallway-posters-visual-study"
+   ],
+   "priority": null,
+   "why": "Hallway photos of handmade class posters that each model the same four bacterial strains with different craft materials.",
+   "state": "done",
+   "at": 1795164112,
+   "created": 1795164112
   },
   {
    "id": "P2NW05_rewrite-slab",
@@ -6069,6 +6099,25 @@
    "state": "done",
    "at": 1795162742,
    "created": 1795162742
+  },
+  {
+   "id": "P2RC16_release-check-kingfisher-pick-a-swarm",
+   "request": "Release checklist for Kingfisher and Sparrows on the Wire after their visual rounds",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR166_rereview-kingfisher-and-pick-a-swarm"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795164118,
+   "created": 1795164118
   },
   {
    "id": "P2RC17_release-check-stray-cat-sounds-like-rumour",
