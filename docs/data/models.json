@@ -211,12 +211,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 442,
+   "count": 446,
    "firstTimePass": 96,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 389,
+   "guessed": 393,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -556,6 +556,24 @@
  "last": [
   {
    "date": "2026-11-19",
+   "task": "play template",
+   "number": "",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE. Kit 39 on play-template main (b203201). Kit 26 had already removed the primary \"Menu\"; the daily result's first button said \"Levels\". "
+  },
+  {
+   "date": "2026-11-19",
+   "task": "kit meter past par not clamped",
+   "number": "",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "the +3 label adds ~16px under the bar only while over par; no live game synced yet."
+  },
+  {
+   "date": "2026-11-19",
    "task": "kit premise short first card",
    "number": "",
    "executor": "claude-sonnet",
@@ -583,12 +601,30 @@
   },
   {
    "date": "2026-11-19",
+   "task": "rna hero share og",
+   "number": "8",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "reloading mid-run loses the earlier drives (counter not saved, per spec), so a resumed run can read \"first drive\". Truck in og is small."
+  },
+  {
+   "date": "2026-11-19",
    "task": "rna hero visual build",
    "number": "8",
    "executor": "claude-sonnet",
    "role": "build",
    "passed": "yes",
    "note": "the enlarged fold box opens at top-left of a diagonal fold, so some blank before scrolling; Enlarge sits below the fold at 320 so needs a sc"
+  },
+  {
+   "date": "2026-11-19",
+   "task": "couplet hand ins and words",
+   "number": "",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "gloss strip is English-only in zh mode; 3-line footer on level 1 is tight to the leaf border."
   },
   {
    "date": "2026-11-18",
@@ -697,42 +733,6 @@
    "role": "build",
    "passed": "yes",
    "note": "the can is drawn as plain yellow bars (placeholder; the visual round should make the squeeze feel physical, with a crinkle sound, since the "
-  },
-  {
-   "date": "2026-11-13",
-   "task": "guide lines proto",
-   "number": "140",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "template_check 23/25 (see below); huge text at 320x568 does not fit one screen; the first-minute script is the kit's one-board lesson, not t"
-  },
-  {
-   "date": "2026-11-13",
-   "task": "no favorites crossings and words",
-   "number": "141",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "level 8 still has two ends (3 and 2, top) about 30 css px apart at 320; the 320 board is small."
-  },
-  {
-   "date": "2026-11-13",
-   "task": "guide lines fit and switch",
-   "number": "140",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "at 320x568 the board is 190 px, so points on a hard page are still close (24 px minimum, not 44); new-rule callout on level 4 at 320 covers "
-  },
-  {
-   "date": "2026-11-13",
-   "task": "ac remote visual round",
-   "number": "165",
-   "executor": "claude-opus",
-   "role": "build",
-   "passed": "yes",
-   "note": "no room in the 6 px gaps."
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
