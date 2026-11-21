@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T21:33:00+00:00",
+ "generated": "2026-11-21T21:41:57+00:00",
  "ops": {
   "count": 4,
   "notes": [
@@ -26,23 +26,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 67,
+    "queued": 65,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2680,
-    "estimateMinutes": 2680
+    "minutes": 2600,
+    "estimateMinutes": 2600
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 9,
+    "doneToday": 11,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 68,
+  "queued": 66,
   "running": 6,
-  "doneToday": 9,
+  "doneToday": 11,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -52,25 +52,25 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3100,
-  "estimatedFinish": "2026-11-23T18:13:00+00:00",
-  "estimateMinutes": 2680
+  "minutesRemaining": 3020,
+  "estimatedFinish": "2026-11-23T17:01:57+00:00",
+  "estimateMinutes": 2600
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "lens-screen",
-   "task": "P2NF120_lens screen big words and fit",
-   "since": "2026-11-21T21:30:53+00:00",
-   "activity": "2026-11-21T21:30:53+00:00",
+   "game": "fake-philosopher",
+   "task": "P2NF121_fake philosopher review fixes",
+   "since": "2026-11-21T21:41:10+00:00",
+   "activity": "2026-11-21T21:41:40+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P2NT05_destinations for shipped games",
-   "since": null,
-   "activity": null,
+   "game": "readable-nonsense",
+   "task": "P2NX38_readable nonsense small phone lead",
+   "since": "2026-11-21T21:33:20+00:00",
+   "activity": "2026-11-21T21:33:20+00:00",
    "commit": null
   },
   {
@@ -110,8 +110,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1182,
-  "usdEst": 4255.2,
+  "runs": 1184,
+  "usdEst": 4262.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -221,7 +221,7 @@
   },
   {
    "day": "2026-11-21",
-   "changes": 6
+   "changes": 7
   }
  ],
  "houseRules": 25,
@@ -7711,7 +7711,7 @@
    ]
   },
   {
-   "nextTask": "Fake Philosopher: slips that read, one goal line...",
+   "nextTask": null,
    "costTotalUsd": 61.94,
    "latestChange": {
     "text": "tests green on fresh clone; accepted bot-gate findings recorded; no player-visible change",
@@ -7734,8 +7734,8 @@
    "title": "Fake Philosopher",
    "line": "Build an ornate paragraph while a sceptical reader tries.",
    "url": "https://chenhsieh.github.io/fake-philosopher/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P3",
    "priorityNote": "A story, slower flashing, clear whether it is logic or",
    "shelfNote": "",
@@ -7749,7 +7749,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:37:21+00:00",
-   "lastChange": "2026-11-21T20:53:22+00:00",
+   "lastChange": "2026-11-21T21:41:40+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -7765,10 +7765,10 @@
    "tasks": [
     {
      "title": "P2NF121_fake philosopher review fixes",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Fake Philosopher: slips that read, one goal line per level, the Mohist's finger shows the count, fits a small phone",
-     "since": "2026-11-21T20:53:22+00:00",
+     "since": "2026-11-21T21:41:10+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -7863,8 +7863,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 6
    },
@@ -16200,30 +16200,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 39.6,
+   "costTotalUsd": 43.2,
    "latestChange": {
-    "text": "P3d35 studio published; flare disc kept inside picture; 320 overflow not reproducible",
-    "at": "2026-11-06T01:44:51+00:00"
+    "text": "P2NF120: big words, worded result buttons, swipe scrolls page, fits small phones",
+    "at": "2026-11-21T21:40:46+00:00"
    },
    "promo": null,
    "why": "A short video of a photographer shooting through a printed patterned glass screen instead of using editing software.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 1
+    "daysInState": 0
    },
-   "waitingOn": "lens screen big words and fit",
+   "waitingOn": "none",
    "id": "lens-screen",
    "number": 41,
    "repo": "lens-screen",
    "title": "Lens Screen",
    "line": "Drag a screen over the cup.",
    "url": "https://chenhsieh.github.io/lens-screen/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Storyteller pass on why it is fun",
    "shelfNote": "",
@@ -16237,33 +16237,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T04:07:44+00:00",
-   "lastChange": "2026-11-21T21:30:53+00:00",
+   "lastChange": "2026-11-21T21:40:46+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 2,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 10,
     "earlierUsdEst": 36.0,
-    "totalUsdEst": 39.6
+    "totalUsdEst": 43.2
    },
    "tasks": [
     {
      "title": "P2NF120_lens screen big words and fit",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Lens Screen: bigger words, worded result buttons, one screen on phones",
-     "since": "2026-11-21T21:30:53+00:00",
-     "done": null,
+     "since": "2026-11-21T20:53:22+00:00",
+     "done": "2026-11-21T20:53:22+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE"
     },
     {
      "title": "lens screen studio 320 fix",
@@ -16310,9 +16310,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": {
     "date": "2026-11-20",
@@ -16320,8 +16320,14 @@
     "note": "Taping each screen where it helps most right now misses the best photo on most later visits, a real choice, but the words are small, the photo buttons have no words and the page scrolls on smaller phones"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-21T21:40:46+00:00",
+     "ok": true,
+     "note": "P2NF120: big words, worded result buttons, swipe scrolls page, fits small phones",
+     "source": "board note"
+    },
     {
      "at": "2026-11-06T01:44:51+00:00",
      "ok": true,
@@ -16386,12 +16392,6 @@
      "at": "2026-10-15T19:40:32+00:00",
      "ok": true,
      "note": "feat: guide the first picture clearly",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-15T04:08:56+00:00",
-     "ok": true,
-     "note": "feat: tape printed screens in front of a camera and shoot the photo",
      "source": "main commit"
     }
    ]
@@ -38224,7 +38224,7 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-10-21T05:00:44+00:00",
+   "firstSeen": "2026-10-21T05:05:24+00:00",
    "lastChange": "2026-11-21T21:16:53+00:00",
    "cost": {
     "apiUsd": 0.0,
@@ -38373,6 +38373,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-11-21T21:13:28+00:00",
+     "ok": true,
+     "note": "fix: a small phone shows the whole level on one screen, and the win keeps the quote above the result card",
+     "source": "main commit"
+    },
+    {
      "at": "2026-11-20T09:31:57+00:00",
      "ok": true,
      "note": "P2NR187 review: revise; fix P2NF115 queued (320 tray, first-screen goal, quote under win card)",
@@ -38431,12 +38437,6 @@
      "ok": true,
      "note": "feat: bigger readable words, a chalk path and a door arrow in the forest",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T15:10:27+00:00",
-     "ok": true,
-     "note": "P1TE05: first-time lessons for the forest (level 5) and the room (level 9), skip and replay-safe; TE03/TE04 merged; main live",
-     "source": "board note"
     }
    ]
   },
@@ -43431,7 +43431,7 @@
    ]
   },
   {
-   "nextTask": "Readable Nonsense: one lead pass on the small-phone...",
+   "nextTask": null,
    "costTotalUsd": 93.79,
    "latestChange": {
     "text": "first screen says how to stamp; loss card says what A-ma read; lesson 8 is a new line;...",
@@ -43454,8 +43454,8 @@
    "title": "阿嬤讀得出來",
    "line": "A famous Tang poem line is printed as fake glyphs with.",
    "url": "https://chenhsieh.github.io/readable-nonsense/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Start error blocks play",
    "shelfNote": "",
@@ -43469,7 +43469,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:29:52+00:00",
-   "lastChange": "2026-11-21T20:53:22+00:00",
+   "lastChange": "2026-11-21T21:33:20+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 3,
@@ -43485,10 +43485,10 @@
    "tasks": [
     {
      "title": "P2NX38_readable nonsense small phone lead",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Readable Nonsense: one lead pass on the small-phone first minute and the win screen",
-     "since": "2026-11-21T20:53:22+00:00",
+     "since": "2026-11-21T21:33:20+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -43597,8 +43597,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 14
    },
