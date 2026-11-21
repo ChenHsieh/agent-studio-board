@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T22:56:47+00:00",
+ "generated": "2026-11-21T23:06:12+00:00",
  "ops": {
   "count": 5,
   "notes": [
@@ -28,23 +28,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 60,
+    "queued": 59,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2400,
-    "estimateMinutes": 2400
+    "minutes": 2360,
+    "estimateMinutes": 2360
    },
    "Claude": {
     "queued": 1,
     "running": 7,
-    "doneToday": 26,
+    "doneToday": 28,
     "minutes": 480,
     "estimateMinutes": 240
    }
   },
-  "queued": 61,
+  "queued": 60,
   "running": 7,
-  "doneToday": 26,
+  "doneToday": 28,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -54,9 +54,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2880,
-  "estimatedFinish": "2026-11-23T14:56:47+00:00",
-  "estimateMinutes": 2400
+  "minutesRemaining": 2840,
+  "estimatedFinish": "2026-11-23T14:26:12+00:00",
+  "estimateMinutes": 2360
  },
  "lanes": [
   {
@@ -77,10 +77,10 @@
   },
   {
    "worker": "Claude",
-   "game": "biosteganography",
-   "task": "P2NX40_biosteganography lead pass",
-   "since": "2026-11-21T22:42:09+00:00",
-   "activity": "2026-11-21T22:42:26+00:00",
+   "game": "Multiple games",
+   "task": "P2NR219_rereview knockout plate round5",
+   "since": null,
+   "activity": null,
    "commit": null
   },
   {
@@ -120,8 +120,8 @@
  "claudeWorkers": 7,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1200,
-  "usdEst": 4320.0,
+  "runs": 1202,
+  "usdEst": 4327.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -231,7 +231,7 @@
   },
   {
    "day": "2026-11-21",
-   "changes": 17
+   "changes": 18
   }
  ],
  "houseRules": 25,
@@ -1967,11 +1967,11 @@
    ]
   },
   {
-   "nextTask": "Straighten the Stripes: house text sizes, nothing cut...",
-   "costTotalUsd": 61.39,
+   "nextTask": "Straighten the Stripes: cold Opus re-review after the...",
+   "costTotalUsd": 64.99,
    "latestChange": {
-    "text": "re-review P2NR211: revise (3rd); lead pass P2NX40 queued; obvious play still at par on 4...",
-    "at": "2026-11-21T22:41:24+00:00"
+    "text": "lead pass: queued NF133 sizes/320, NF134 drawn preview, NR226 re-review",
+    "at": "2026-11-21T22:58:33+00:00"
    },
    "promo": {
     "files": {
@@ -1990,15 +1990,15 @@
     "reviseRound": 3,
     "daysInState": 0
    },
-   "waitingOn": "biosteganography lead pass",
+   "waitingOn": "rereview stripes after lead builds",
    "id": "biosteganography",
    "number": 6,
    "repo": "biosteganography",
    "title": "Biosteganography",
    "line": "Straighten the stripes to find a hidden repeat.",
    "url": "https://chenhsieh.github.io/biosteganography/demo/snap.html",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
@@ -2012,26 +2012,40 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-08-20T15:13:59+00:00",
-   "lastChange": "2026-11-21T22:56:41+00:00",
+   "lastChange": "2026-11-21T22:58:33+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 0,
     "codexTokens": 155094,
     "codexUsdEst": 0.19,
-    "claudeUsdEst": 10.8,
+    "claudeUsdEst": 14.4,
     "earlierRounds": 14,
     "earlierUsdEst": 50.4,
-    "totalUsdEst": 61.39
+    "totalUsdEst": 64.99
    },
    "tasks": [
     {
-     "title": "P2NX40_biosteganography lead pass",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Straighten the stripes: one lead pass on why following the cue still solves most cases, plus text sizes and 320 fit",
-     "since": "2026-11-21T22:42:09+00:00",
+     "title": "P2NR226_rereview stripes after lead builds",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Straighten the Stripes: cold Opus re-review after the readability and preview builds",
+     "since": "2026-11-21T22:57:53+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P2NF134_stripes drawn preview",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Straighten the Stripes: drawn link preview instead of a screenshot",
+     "since": "2026-11-21T22:57:49+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2045,7 +2059,7 @@
      "state": "queued",
      "worker": "Codex",
      "plan": "Straighten the Stripes: house text sizes, nothing cut at 320, long text behind Why",
-     "since": "2026-11-21T22:56:41+00:00",
+     "since": "2026-11-21T22:57:20+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2053,6 +2067,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2NX40_biosteganography lead pass",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Straighten the stripes: one lead pass on why following the cue still solves most cases, plus text sizes and 320 fit",
+     "since": "2026-11-21T22:40:53+00:00",
+     "done": "2026-11-21T22:40:53+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "DONE P2NX40 lead pass, Straighten the Stripes (biosteganography), Opus 5.5 high, 2026-11-21 17:42-18:00 EST. Design only: worktree removed)."
     },
     {
      "title": "P2NF123_biosteganography stripes 320 and real reading",
@@ -2112,10 +2140,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 1,
+    "queued": 3,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": {
     "date": "2026-11-21",
@@ -2125,6 +2153,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-21T22:58:33+00:00",
+     "ok": true,
+     "note": "lead pass: queued NF133 sizes/320, NF134 drawn preview, NR226 re-review",
+     "source": "board note"
+    },
     {
      "at": "2026-11-21T22:41:24+00:00",
      "ok": true,
@@ -2187,12 +2221,6 @@
     },
     {
      "at": "2026-10-21T16:18:34+00:00",
-     "ok": false,
-     "note": "see",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T16:05:41+00:00",
      "ok": false,
      "note": "see",
      "source": "board note"
@@ -13382,7 +13410,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 43.2,
+   "costTotalUsd": 46.8,
    "latestChange": {
     "text": "one screen guess, 45 clean sheets, best single guess line and beat count",
     "at": "2026-11-21T22:55:04+00:00"
@@ -13428,9 +13456,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 10.8,
-    "earlierRounds": 9,
-    "earlierUsdEst": 32.4,
-    "totalUsdEst": 43.2
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
+    "totalUsdEst": 46.8
    },
    "tasks": [
     {
@@ -13525,6 +13553,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-11-21T22:53:25+00:00",
+     "ok": true,
+     "note": "feat: Herbarium fits one screen, uses only clean pressed sheets, and says what a good guess is",
+     "source": "main commit"
+    },
+    {
      "at": "2026-10-25T03:58:15+00:00",
      "ok": true,
      "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
@@ -13582,12 +13616,6 @@
      "at": "2026-09-20T15:44:55+00:00",
      "ok": true,
      "note": "Keep the menu button off the header",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-09-20T14:31:19+00:00",
-     "ok": true,
-     "note": "Settings menu, mechanism diagram, and the shared kit",
      "source": "main commit"
     }
    ]

@@ -141,12 +141,12 @@
   {
    "executor": "claude-opus",
    "role": "build",
-   "count": 302,
+   "count": 303,
    "firstTimePass": 99,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 297,
+   "guessed": 298,
    "topFailures": [
     "rooms 16, 25 and 33 at 360x640 run 9-18 px past the screen after the f",
     "on small beds the canvas keeps its tall paper below the board, so on a",
@@ -199,12 +199,12 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 258,
+   "count": 259,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 256,
+   "guessed": 257,
    "topFailures": [],
    "flag": "give more"
   },
@@ -556,6 +556,15 @@
  "last": [
   {
    "date": "2026-11-21",
+   "task": "biosteganography lead pass",
+   "number": "6",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE P2NX40 lead pass, Straighten the Stripes (biosteganography), Opus 5.5 high, 2026-11-21 17:42-18:00 EST. Design only: no game files chan"
+  },
+  {
+   "date": "2026-11-21",
    "task": "no unison rule words lead",
    "number": "108",
    "executor": "claude-opus",
@@ -637,6 +646,15 @@
   },
   {
    "date": "2026-11-21",
+   "task": "rereview herbarium guess after fixes",
+   "number": "20",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "the comparison is soft (a free win on year), and half the dailies repeat an answer inside the same day."
+  },
+  {
+   "date": "2026-11-21",
    "task": "rereview biosteganography after fixes",
    "number": "6",
    "executor": "claude-opus",
@@ -715,24 +733,6 @@
    "role": "review",
    "passed": "yes",
    "note": "DONE P2NR203 re-review of the-folder after P2NF114, 2026-11-21 15:54-16:00 EST. Verdict revise (live unchanged). Nothing queued: the only re"
-  },
-  {
-   "date": "2026-11-21",
-   "task": "rereview four thirty three after fixes",
-   "number": "100",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "a room whose pencils are not spent never ends (room 1 with no tap stayed in play 40 s past its 0:14 clock; only Reset gets out), and the roo"
-  },
-  {
-   "date": "2026-11-21",
-   "task": "rereview silent disco after fixes",
-   "number": "105",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "on the live page, everything P2NR191 listed (still live). On the branch: level 1's goal \"Watch the tempo. Same speed, same song.\" comes righ"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."

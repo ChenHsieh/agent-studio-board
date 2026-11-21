@@ -1,5 +1,5 @@
 {
- "generated": 1795301821,
+ "generated": 1795302386,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -27,25 +27,6 @@
   "lastHandBackN": 7
  },
  "tasks": [
-  {
-   "id": "P2NX40_biosteganography-lead-pass",
-   "request": "Straighten the stripes: one lead pass on why following the cue still solves most cases, plus text sizes and 320 fit",
-   "game": "Biosteganography",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR211_rereview-biosteganography-after-fixes"
-   ],
-   "priority": "P1",
-   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
-   "state": "running",
-   "at": 1795300853,
-   "created": 1795300853
-  },
   {
    "id": "P3PL14_speaking-stone-why-rollout",
    "request": "Why this exists: finish the rollout on speaking-stone (new test failure: test/first_minute_play.mjs no longer sees )",
@@ -137,6 +118,25 @@
    "created": 1795294402
   },
   {
+   "id": "P2NR219_rereview-knockout-plate-round5",
+   "request": "Knockout Plate: stranger re-review of the live page after tonight's change; ship goes to its release check",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NV208_knockout-plate-visual-build-pieces"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
    "id": "P3PL13_dancers-not-mad-why-rollout",
    "request": "Why this exists: finish the rollout on dancers-not-mad (new test failure: test/anim_budget.mjs (layout shift))",
    "game": "Dancers Not Mad",
@@ -190,6 +190,25 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1795297494
+  },
+  {
+   "id": "P2NF133_stripes-text-sizes-and-320",
+   "request": "Straighten the Stripes: house text sizes, nothing cut at 320, long text behind Why",
+   "game": "Biosteganography",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NX40_biosteganography-lead-pass"
+   ],
+   "priority": "P1",
+   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795301840
   },
   {
    "id": "P2NF125_alias-loaf-review-fixes",
@@ -416,44 +435,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1795298002
-  },
-  {
-   "id": "P2NR212_rereview-herbarium-guess-after-fixes",
-   "request": "Herbarium Guess: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF124_herbarium-one-screen-clean-deck-and-a-target"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR219_rereview-knockout-plate-round5",
-   "request": "Knockout Plate: stranger re-review of the live page after tonight's change; ship goes to its release check",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NV208_knockout-plate-visual-build-pieces"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
   },
   {
    "id": "P2NR220_rereview-the-apprentice-round5",
@@ -837,27 +818,6 @@
    "created": 1795294402
   },
   {
-   "id": "P2NF133_stripes-text-sizes-and-320",
-   "request": "Straighten the Stripes: house text sizes, nothing cut at 320, long text behind Why",
-   "game": "Biosteganography",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NX40_biosteganography-lead-pass"
-   ],
-   "priority": "P1",
-   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NX40_biosteganography-lead-pass"
-   ],
-   "created": 1795301801
-  },
-  {
    "id": "P2NF134_stripes-drawn-preview",
    "request": "Straighten the Stripes: drawn link preview instead of a screenshot",
    "game": "Biosteganography",
@@ -868,15 +828,15 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NX40_biosteganography-lead-pass"
+    "P2NF133_stripes-text-sizes-and-320"
    ],
    "priority": "P1",
    "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
    "state": "waiting",
    "waitingOn": [
-    "P2NX40_biosteganography-lead-pass"
+    "P2NF133_stripes-text-sizes-and-320"
    ],
-   "created": 1795301812
+   "created": 1795301869
   },
   {
    "id": "P2NR224_rereview-readable-nonsense-small-phone",
@@ -898,6 +858,27 @@
     "P2NB44_readable-nonsense-small-phone-layout"
    ],
    "created": 1795297521
+  },
+  {
+   "id": "P2NR226_rereview-stripes-after-lead-builds",
+   "request": "Straighten the Stripes: cold Opus re-review after the readability and preview builds",
+   "game": "Biosteganography",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NF134_stripes-drawn-preview"
+   ],
+   "priority": "P1",
+   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NF134_stripes-drawn-preview"
+   ],
+   "created": 1795301873
   },
   {
    "id": "P2NV212_lantern-meeting-visual-build-pieces",
@@ -1381,6 +1362,25 @@
    "created": 1795294402
   },
   {
+   "id": "P2NX40_biosteganography-lead-pass",
+   "request": "Straighten the stripes: one lead pass on why following the cue still solves most cases, plus text sizes and 320 fit",
+   "game": "Biosteganography",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR211_rereview-biosteganography-after-fixes"
+   ],
+   "priority": "P1",
+   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
+   "state": "done",
+   "at": 1795300853,
+   "created": 1795300853
+  },
+  {
    "id": "P2NF118_orbit-rings-review-fixes",
    "request": "Orbit Rings: tell wheels and windows apart, readable letters, real goal lines, fits a small phone",
    "game": "Orbit Rings",
@@ -1678,6 +1678,25 @@
    "estMinutes": null,
    "after": [
     "P2NF123_biosteganography-stripes-320-and-real-reading"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2NR212_rereview-herbarium-guess-after-fixes",
+   "request": "Herbarium Guess: stranger re-review after its review fixes (obvious play first, five-second test)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NF124_herbarium-one-screen-clean-deck-and-a-target"
    ],
    "priority": null,
    "why": "",
