@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T22:10:01+00:00",
+ "generated": "2026-11-21T22:20:07+00:00",
  "ops": {
   "count": 4,
   "notes": [
@@ -26,23 +26,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 65,
+    "queued": 61,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2600,
-    "estimateMinutes": 2600
+    "minutes": 2440,
+    "estimateMinutes": 2440
    },
    "Claude": {
     "queued": 1,
-    "running": 6,
-    "doneToday": 17,
-    "minutes": 420,
-    "estimateMinutes": 210
+    "running": 8,
+    "doneToday": 20,
+    "minutes": 540,
+    "estimateMinutes": 270
    }
   },
-  "queued": 66,
-  "running": 6,
-  "doneToday": 17,
+  "queued": 62,
+  "running": 8,
+  "doneToday": 20,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -52,25 +52,41 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3020,
-  "estimatedFinish": "2026-11-23T17:30:01+00:00",
-  "estimateMinutes": 2600
+  "minutesRemaining": 2980,
+  "estimatedFinish": "2026-11-23T15:00:07+00:00",
+  "estimateMinutes": 2440
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "spirit-billboard",
-   "task": "P2NF122_spirit billboard review fixes",
-   "since": "2026-11-21T22:03:27+00:00",
-   "activity": "2026-11-21T22:09:49+00:00",
+   "game": "herbarium-guess",
+   "task": "P2NF124_herbarium one screen clean deck and a target",
+   "since": "2026-11-21T22:18:48+00:00",
+   "activity": "2026-11-21T22:18:48+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
    "game": "Multiple games",
-   "task": "P2NR209_rereview fake philosopher after fixes",
+   "task": "P2NR210_rereview spirit billboard after fixes",
    "since": null,
    "activity": null,
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "the-apprentice",
+   "task": "P2NV201_the apprentice visual build chrome",
+   "since": "2026-11-21T22:18:48+00:00",
+   "activity": "2026-11-21T22:19:01+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "knockout-plate",
+   "task": "P2NV208_knockout plate visual build pieces",
+   "since": "2026-11-21T22:18:50+00:00",
+   "activity": "2026-11-21T22:19:00+00:00",
    "commit": null
   },
   {
@@ -107,11 +123,11 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 6,
+ "claudeWorkers": 8,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1191,
-  "usdEst": 4287.6,
+  "runs": 1194,
+  "usdEst": 4298.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -221,7 +237,7 @@
   },
   {
    "day": "2026-11-21",
-   "changes": 11
+   "changes": 13
   }
  ],
  "houseRules": 25,
@@ -1957,11 +1973,11 @@
    ]
   },
   {
-   "nextTask": "Straighten the Stripes: fits a 320 phone, and...",
-   "costTotalUsd": 54.19,
+   "nextTask": null,
+   "costTotalUsd": 57.79,
    "latestChange": {
-    "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
-    "at": "2026-10-25T03:51:44+00:00"
+    "text": "Stripes: fits 320, read the lean from case 4, share lines",
+    "at": "2026-11-21T22:18:23+00:00"
    },
    "promo": {
     "files": {
@@ -1972,23 +1988,23 @@
     "caption": "Straighten the stripes to find a hidden repeat."
    },
    "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 2,
-    "daysInState": 1
+    "daysInState": 0
    },
-   "waitingOn": "biosteganography stripes 320 and real reading",
+   "waitingOn": "none",
    "id": "biosteganography",
    "number": 6,
    "repo": "biosteganography",
    "title": "Biosteganography",
    "line": "Straighten the stripes to find a hidden repeat.",
    "url": "https://chenhsieh.github.io/biosteganography/demo/snap.html",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
@@ -2001,34 +2017,34 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-08-20T14:55:10+00:00",
-   "lastChange": "2026-11-21T20:53:22+00:00",
+   "firstSeen": "2026-08-20T15:13:59+00:00",
+   "lastChange": "2026-11-21T22:18:23+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 0,
     "codexTokens": 155094,
     "codexUsdEst": 0.19,
-    "claudeUsdEst": 7.2,
+    "claudeUsdEst": 10.8,
     "earlierRounds": 13,
     "earlierUsdEst": 46.8,
-    "totalUsdEst": 54.19
+    "totalUsdEst": 57.79
    },
    "tasks": [
     {
      "title": "P2NF123_biosteganography stripes 320 and real reading",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "done",
+     "worker": "Claude",
      "plan": "Straighten the Stripes: fits a 320 phone, and from case 4 the player reads the lean instead of following an arrow",
      "since": "2026-11-21T20:53:22+00:00",
-     "done": null,
+     "done": "2026-11-21T20:53:22+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE"
     },
     {
      "title": "P3OR65_name biosteganography title",
@@ -2074,10 +2090,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": {
     "date": "2026-11-20",
@@ -2085,8 +2101,20 @@
     "note": "Following the arrow and the hint that names the button solves cases 1 to 5 and the daily well inside par, and at 320 wide the page spills off the side; from case 4 the player should read the lean instead"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-21T22:18:23+00:00",
+     "ok": true,
+     "note": "Stripes: fits 320, read the lean from case 4, share lines",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-21T22:17:12+00:00",
+     "ok": true,
+     "note": "fix:",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-25T03:51:44+00:00",
      "ok": true,
@@ -2146,18 +2174,6 @@
      "ok": true,
      "note": "first-visit repeat mission, case progress, and live alignment evidence are published; 390x844 and 320x568 real-touch checks passed",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-19T20:45:40+00:00",
-     "ok": true,
-     "note": "Add a first-visit repeat-finding mission, visible 0/9 case progress, and a live explanation of why a straight width is or is not the reported DNA repeat.",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-15T14:16:48+00:00",
-     "ok": true,
-     "note": "feat:",
-     "source": "main commit"
     }
    ]
   },
@@ -7711,7 +7727,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Fake Philosopher: the claim a renaming adds shows...",
    "costTotalUsd": 65.54,
    "latestChange": {
     "text": "review fixes: slips fit, goal line per level, finger count, board fits small phone, marks...",
@@ -7719,23 +7735,23 @@
    },
    "promo": null,
    "why": "A checklist post on how to pass as a continental philosopher, a prose poem's broken-off word, and a stick-figure meme of a speaker correcting himself.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
-    "reviseRound": 1,
+    "reviseRound": 2,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "fake philosopher finger and new claim",
    "id": "fake-philosopher",
    "number": 97,
    "repo": "fake-philosopher",
    "title": "Fake Philosopher",
    "line": "Build an ornate paragraph while a sceptical reader tries.",
    "url": "https://chenhsieh.github.io/fake-philosopher/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P3",
    "priorityNote": "A story, slower flashing, clear whether it is logic or",
    "shelfNote": "",
@@ -7749,7 +7765,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:37:21+00:00",
-   "lastChange": "2026-11-21T22:03:20+00:00",
+   "lastChange": "2026-11-21T22:17:51+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -7763,6 +7779,20 @@
     "totalUsdEst": 65.54
    },
    "tasks": [
+    {
+     "title": "P2NF132_fake philosopher finger and new claim",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Fake Philosopher: the claim a renaming adds shows on the page, and the sceptic's arm really rises",
+     "since": "2026-11-21T22:17:51+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2NF121_fake philosopher review fixes",
      "state": "done",
@@ -7863,18 +7893,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 7
    },
    "verdict": {
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "verdict": "revise",
-    "note": "Saving the one paradox that covers two claims is a real choice that covering each claim at once never reaches par on, but the slips clip their words, every level says the same thing and the sceptic's raised finger is a meter with three boxes"
+    "note": "Slips now fit and each level says its own goal, but the circle a renaming adds never appears on the page and the sceptic says he raised a finger while his arm stays at his side"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-11-21T22:03:20+00:00",
@@ -13329,7 +13359,7 @@
    ]
   },
   {
-   "nextTask": "Herbarium: the guess fits one screen, no field...",
+   "nextTask": null,
    "costTotalUsd": 39.6,
    "latestChange": {
     "text": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
@@ -13352,8 +13382,8 @@
    "title": "Herbarium Guess",
    "line": "Place a pressed plant in place and year.",
    "url": "https://chenhsieh.github.io/herbarium-guess/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P3",
    "priorityNote": "Story and mechanism pass; pending a merge decision",
    "shelfNote": "",
@@ -13367,7 +13397,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-09-20T05:10:20+00:00",
-   "lastChange": "2026-11-21T20:53:22+00:00",
+   "lastChange": "2026-11-21T22:18:48+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -13383,10 +13413,10 @@
    "tasks": [
     {
      "title": "P2NF124_herbarium one screen clean deck and a target",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Herbarium: the guess fits one screen, no field photos or visible labels, and each daily says what a good guess is",
-     "since": "2026-11-21T20:53:22+00:00",
+     "since": "2026-11-21T22:18:48+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -13453,8 +13483,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 4
    },
@@ -15229,7 +15259,7 @@
    ]
   },
   {
-   "nextTask": "Knockout Plate look, part 2: the caps and...",
+   "nextTask": null,
    "costTotalUsd": 61.61,
    "latestChange": {
     "text": "Bench look: box of caps and plate, canvas sized to the screen, notebook always on screen,...",
@@ -15252,8 +15282,8 @@
    "title": "Knockout Plate",
    "line": "",
    "url": "https://chenhsieh.github.io/knockout-plate/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -15271,7 +15301,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T04:39:50+00:00",
-   "lastChange": "2026-11-21T20:53:22+00:00",
+   "lastChange": "2026-11-21T22:19:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -15287,10 +15317,10 @@
    "tasks": [
     {
      "title": "P2NV208_knockout plate visual build pieces",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Knockout Plate look, part 2: the caps and the plate drawn in full, the cap click, preview picture and share line",
-     "since": "2026-11-21T20:53:22+00:00",
+     "since": "2026-11-21T22:18:50+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -15385,8 +15415,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 6
    },
@@ -33928,30 +33958,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 54.29,
+   "costTotalUsd": 61.49,
    "latestChange": {
-    "text": "Sync fixed onescreen-shell (P2FS38 fixes)",
-    "at": "2026-10-29T18:09:56+00:00"
+    "text": "review fixes: honest goal line, score words, board labels, daily locked until level 4,...",
+    "at": "2026-11-21T22:12:43+00:00"
    },
    "promo": null,
    "why": "A roadside spirit-guide advertising billboard, plus a joke about a bugged room where the unseen audience reacts.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 1
+    "daysInState": 0
    },
-   "waitingOn": "spirit billboard review fixes",
+   "waitingOn": "none",
    "id": "spirit-billboard",
    "number": 70,
    "repo": "spirit-billboard",
    "title": "Spirit Billboard",
    "line": "Paste pictures on a roadside billboard and watch the.",
    "url": "https://chenhsieh.github.io/spirit-billboard/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Make the premise digestible with a new spin",
    "shelfNote": "",
@@ -33965,33 +33995,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T23:26:27+00:00",
-   "lastChange": "2026-11-21T22:09:49+00:00",
+   "lastChange": "2026-11-21T22:12:43+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 0,
+    "claudeRuns": 1,
     "apiRuns": 1,
     "codexTokens": 242964,
     "codexUsdEst": 0.29,
-    "claudeUsdEst": 0.0,
-    "earlierRounds": 15,
-    "earlierUsdEst": 54.0,
-    "totalUsdEst": 54.29
+    "claudeUsdEst": 3.6,
+    "earlierRounds": 16,
+    "earlierUsdEst": 57.6,
+    "totalUsdEst": 61.49
    },
    "tasks": [
     {
      "title": "P2NF122_spirit billboard review fixes",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Spirit Billboard: honest goal line and score words, tap-to-change shown on the board, gentle daily, fits a small phone",
-     "since": "2026-11-21T22:03:27+00:00",
-     "done": null,
+     "since": "2026-11-21T20:53:22+00:00",
+     "done": "2026-11-21T20:53:22+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE"
     },
     {
      "title": "spirit billboard fair",
@@ -34024,9 +34054,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 2
+    "done": 3
    },
    "verdict": {
     "date": "2026-11-20",
@@ -34034,8 +34064,20 @@
     "note": "Reading a fair crowd's hands, laughs and walk-offs is a warm guessing game that careful play wins and hopeful retiling mostly loses from street six on, but the sign says everyone when it means seven, and a score of 12 against par 5 reads like a mistake"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-21T22:12:43+00:00",
+     "ok": true,
+     "note": "review fixes: honest goal line, score words, board labels, daily locked until level 4, fits small phone",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-21T22:11:08+00:00",
+     "ok": true,
+     "note": "fix: the goal line says how many hands, the score reads as a score, the board says how to change a picture",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-29T18:09:56+00:00",
      "ok": true,
@@ -34094,18 +34136,6 @@
      "at": "2026-10-18T07:12:08+00:00",
      "ok": true,
      "note": "feat: first card shows the goal and one rule; later rules arrive on their own level",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-17T22:28:38+00:00",
-     "ok": true,
-     "note": "CREDIT line on the How to play card under the rules, EN+ZH (saved billboard photo, Mastermind); live",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-17T22:26:21+00:00",
-     "ok": true,
-     "note": "feat: How to play card names where the game comes from",
      "source": "main commit"
     }
    ]
@@ -36071,7 +36101,7 @@
    ]
   },
   {
-   "nextTask": "The Apprentice: shed-wall endings, preview picture and plain...",
+   "nextTask": null,
    "costTotalUsd": 91.61,
    "latestChange": {
     "text": "tool-shed board: cart wheel, linen aprons with slate tags, her door strip, nailed cards;...",
@@ -36094,8 +36124,8 @@
    "title": "The Apprentice",
    "line": "",
    "url": "https://chenhsieh.github.io/the-apprentice/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "a teach-then-betrayed story with real potential; frame the story, the...",
    "shelfNote": "",
@@ -36109,7 +36139,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:54:20+00:00",
-   "lastChange": "2026-11-21T20:53:22+00:00",
+   "lastChange": "2026-11-21T22:19:01+00:00",
    "cost": {
     "apiUsd": 1.49,
     "codexRuns": 1,
@@ -36125,10 +36155,10 @@
    "tasks": [
     {
      "title": "P2NV201_the apprentice visual build chrome",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "The Apprentice: shed-wall endings, preview picture and plain share line",
-     "since": "2026-11-21T20:53:22+00:00",
+     "since": "2026-11-21T22:18:48+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -36237,8 +36267,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 14
    },

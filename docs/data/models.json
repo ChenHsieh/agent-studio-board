@@ -199,24 +199,24 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 255,
+   "count": 256,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 253,
+   "guessed": 254,
    "topFailures": [],
    "flag": "give more"
   },
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 618,
+   "count": 619,
    "firstTimePass": 96,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 561,
+   "guessed": 562,
    "topFailures": [
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
     "Before: b_logo, c_meta, d_share, e_daily FAIL. After (live): a-f all o",
@@ -267,12 +267,12 @@
   {
    "executor": "claude-sonnet",
    "role": "review",
-   "count": 29,
+   "count": 30,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 29,
+   "guessed": 30,
    "topFailures": [],
    "flag": "give more"
   },
@@ -610,6 +610,15 @@
   },
   {
    "date": "2026-11-21",
+   "task": "rereview fake philosopher after fixes",
+   "number": "97",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "DONE P2NR209 re-review fake-philosopher (live main 7e872c0 after P2NF121): revise -> P2NF132_fake-philosopher-finger-and-new-claim (Sonnet, "
+  },
+  {
+   "date": "2026-11-21",
    "task": "rereview lens screen after fixes",
    "number": "41",
    "executor": "claude-opus",
@@ -691,6 +700,24 @@
   },
   {
    "date": "2026-11-21",
+   "task": "biosteganography stripes 320 and real reading",
+   "number": "6",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE"
+  },
+  {
+   "date": "2026-11-21",
+   "task": "spirit billboard review fixes",
+   "number": "70",
+   "executor": "claude-sonnet",
+   "role": "review",
+   "passed": "yes",
+   "note": "DONE"
+  },
+  {
+   "date": "2026-11-21",
    "task": "fake philosopher review fixes",
    "number": "97",
    "executor": "claude-sonnet",
@@ -706,33 +733,6 @@
    "role": "build",
    "passed": "yes",
    "note": "at 320x568 the result card's second button row sits at the very bottom edge; the two-line wordmark sits tight against the top."
-  },
-  {
-   "date": "2026-11-21",
-   "task": "orbit rings review fixes",
-   "number": "81",
-   "executor": "claude-sonnet",
-   "role": "review",
-   "passed": "yes",
-   "note": "result page at 390x844 is 1086 tall (result sheet is allowed to cover the board per task); at 320 the board is small with empty space below."
-  },
-  {
-   "date": "2026-11-21",
-   "task": "think elephant",
-   "number": "115",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "EN level name truncated (\"The elephant in the f...\") at 320; EN hint/score tight."
-  },
-  {
-   "date": "2026-11-20",
-   "task": "template check win hold",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE. play-template main d6d406a (squash of chen-template-check-win-hold). kit VERSION 54 -> 55."
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."

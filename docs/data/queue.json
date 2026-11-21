@@ -1,5 +1,5 @@
 {
- "generated": 1795299016,
+ "generated": 1795299621,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -27,6 +27,25 @@
   "lastHandBackN": 7
  },
  "tasks": [
+  {
+   "id": "P2NV201_the-apprentice-visual-build-chrome",
+   "request": "The Apprentice: shed-wall endings, preview picture and plain share line",
+   "game": "The Apprentice",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NV200_the-apprentice-visual-build-board"
+   ],
+   "priority": "P1",
+   "why": "A viral second-person court scene where a cherished dancer draws a blade, recast in a reply as the orphan her ruler secretly raised.",
+   "state": "running",
+   "at": 1795294402,
+   "created": 1795294402
+  },
   {
    "id": "P3PL14_speaking-stone-why-rollout",
    "request": "Why this exists: finish the rollout on speaking-stone (new test failure: test/first_minute_play.mjs no longer sees )",
@@ -62,20 +81,20 @@
    "created": 1793640233
   },
   {
-   "id": "P2NF122_spirit-billboard-review-fixes",
-   "request": "Spirit Billboard: honest goal line and score words, tap-to-change shown on the board, gentle daily, fits a small phone",
-   "game": "Spirit Billboard",
+   "id": "P2NF124_herbarium-one-screen-clean-deck-and-a-target",
+   "request": "Herbarium: the guess fits one screen, no field photos or visible labels, and each daily says what a good guess is",
+   "game": "Herbarium Guess",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
-   "kind": "review",
+   "kind": "build",
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NR198_resting-review-fake-philosopher-and-spirit-billboard"
+    "P2NR196_resting-review-biosteganography-and-herbarium-guess"
    ],
    "priority": "P3",
-   "why": "A roadside spirit-guide advertising billboard, plus a joke about a bugged room where the unseen audience reacts.",
+   "why": "Pressed plant herbarium specimens from open archives, with the label cropped away; guess where and when a real specimen was collected from the plant alone.",
    "state": "running",
    "at": 1795294402,
    "created": 1795294402
@@ -98,8 +117,8 @@
    "created": 1793640233
   },
   {
-   "id": "P2NR209_rereview-fake-philosopher-after-fixes",
-   "request": "Fake Philosopher: stranger re-review after its review fixes (obvious play first, five-second test)",
+   "id": "P2NR210_rereview-spirit-billboard-after-fixes",
+   "request": "Spirit Billboard: stranger re-review after its review fixes (obvious play first, five-second test)",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
@@ -108,10 +127,29 @@
    "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2NF121_fake-philosopher-review-fixes"
+    "P2NF122_spirit-billboard-review-fixes"
    ],
    "priority": null,
    "why": "",
+   "state": "running",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2NV208_knockout-plate-visual-build-pieces",
+   "request": "Knockout Plate look, part 2: the caps and the plate drawn in full, the cap click, preview picture and share line",
+   "game": "Knockout Plate",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NV207_knockout-plate-visual-build-layout"
+   ],
+   "priority": null,
+   "why": "A lab story of knocking out bacterial genes one by one, plus a challenge to predict knockouts never seen.",
    "state": "running",
    "at": 1795294402,
    "created": 1795294402
@@ -151,44 +189,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1795297494
-  },
-  {
-   "id": "P2NF123_biosteganography-stripes-320-and-real-reading",
-   "request": "Straighten the Stripes: fits a 320 phone, and from case 4 the player reads the lean instead of following an arrow",
-   "game": "Biosteganography",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR196_resting-review-biosteganography-and-herbarium-guess"
-   ],
-   "priority": "P1",
-   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
-  },
-  {
-   "id": "P2NV201_the-apprentice-visual-build-chrome",
-   "request": "The Apprentice: shed-wall endings, preview picture and plain share line",
-   "game": "The Apprentice",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NV200_the-apprentice-visual-build-board"
-   ],
-   "priority": "P1",
-   "why": "A viral second-person court scene where a cherished dancer draws a blade, recast in a reply as the orphan her ruler secretly raised.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
   },
   {
    "id": "P2NF125_alias-loaf-review-fixes",
@@ -267,25 +267,6 @@
    "created": 1795294402
   },
   {
-   "id": "P2NF124_herbarium-one-screen-clean-deck-and-a-target",
-   "request": "Herbarium: the guess fits one screen, no field photos or visible labels, and each daily says what a good guess is",
-   "game": "Herbarium Guess",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR196_resting-review-biosteganography-and-herbarium-guess"
-   ],
-   "priority": "P3",
-   "why": "Pressed plant herbarium specimens from open archives, with the label cropped away; guess where and when a real specimen was collected from the plant alone.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
-  },
-  {
    "id": "P2NF128_four-thirty-three-big-words-and-room-ends",
    "request": "Room Tone: the room's rule and score in big type with par on screen, and a room ends when its clock runs out",
    "game": "Room Tone",
@@ -341,6 +322,25 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1795298917
+  },
+  {
+   "id": "P2NF132_fake-philosopher-finger-and-new-claim",
+   "request": "Fake Philosopher: the claim a renaming adds shows on the page, and the sceptic's arm really rises",
+   "game": "Fake Philosopher",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR209_rereview-fake-philosopher-after-fixes"
+   ],
+   "priority": "P3",
+   "why": "A checklist post on how to pass as a continental philosopher, a prose poem's broken-off word, and a stick-figure meme of a speaker correcting himself.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795299471
   },
   {
    "id": "P2FS70_onescreen-gate-inner-scroll",
@@ -456,20 +456,20 @@
    "created": 1795298002
   },
   {
-   "id": "P2NV208_knockout-plate-visual-build-pieces",
-   "request": "Knockout Plate look, part 2: the caps and the plate drawn in full, the cap click, preview picture and share line",
-   "game": "Knockout Plate",
+   "id": "P2NR211_rereview-biosteganography-after-fixes",
+   "request": "Biosteganography: stranger re-review after its review fixes (obvious play first, five-second test)",
+   "game": "Studio",
    "route": "Claude",
-   "model": "sonnet",
+   "model": "opus",
    "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
+   "kind": "review",
+   "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2NV207_knockout-plate-visual-build-layout"
+    "P2NF123_biosteganography-stripes-320-and-real-reading"
    ],
    "priority": null,
-   "why": "A lab story of knocking out bacterial genes one by one, plus a challenge to predict knockouts never seen.",
+   "why": "",
    "state": "ready",
    "waitingOn": [],
    "created": 1795294402
@@ -941,48 +941,6 @@
    "created": 1795294402
   },
   {
-   "id": "P2NR210_rereview-spirit-billboard-after-fixes",
-   "request": "Spirit Billboard: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF122_spirit-billboard-review-fixes"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NF122_spirit-billboard-review-fixes"
-   ],
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR211_rereview-biosteganography-after-fixes",
-   "request": "Biosteganography: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF123_biosteganography-stripes-320-and-real-reading"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NF123_biosteganography-stripes-320-and-real-reading"
-   ],
-   "created": 1795294402
-  },
-  {
    "id": "P2NR212_rereview-herbarium-guess-after-fixes",
    "request": "Herbarium Guess: stranger re-review after its review fixes (obvious play first, five-second test)",
    "game": "Studio",
@@ -1406,6 +1364,25 @@
    "created": 1795294402
   },
   {
+   "id": "P2NF123_biosteganography-stripes-320-and-real-reading",
+   "request": "Straighten the Stripes: fits a 320 phone, and from case 4 the player reads the lean instead of following an arrow",
+   "game": "Biosteganography",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR196_resting-review-biosteganography-and-herbarium-guess"
+   ],
+   "priority": "P1",
+   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
    "id": "P2NX38_readable-nonsense-small-phone-lead",
    "request": "Readable Nonsense: one lead pass on the small-phone first minute and the win screen",
    "game": "阿嬤讀得出來",
@@ -1477,6 +1454,25 @@
    ],
    "priority": "P3",
    "why": "A checklist post on how to pass as a continental philosopher, a prose poem's broken-off word, and a stick-figure meme of a speaker correcting himself.",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2NF122_spirit-billboard-review-fixes",
+   "request": "Spirit Billboard: honest goal line and score words, tap-to-change shown on the board, gentle daily, fits a small phone",
+   "game": "Spirit Billboard",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR198_resting-review-fake-philosopher-and-spirit-billboard"
+   ],
+   "priority": "P3",
+   "why": "A roadside spirit-guide advertising billboard, plus a joke about a bugged room where the unseen audience reacts.",
    "state": "done",
    "at": 1795294402,
    "created": 1795294402
@@ -1627,6 +1623,25 @@
    "estMinutes": null,
    "after": [
     "P2NF120_lens-screen-big-words-and-fit"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2NR209_rereview-fake-philosopher-after-fixes",
+   "request": "Fake Philosopher: stranger re-review after its review fixes (obvious play first, five-second test)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NF121_fake-philosopher-review-fixes"
    ],
    "priority": null,
    "why": "",
