@@ -1,5 +1,5 @@
 {
- "generated": 1795297869,
+ "generated": 1795298517,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -98,20 +98,20 @@
    "created": 1793640233
   },
   {
-   "id": "P2NX39_no-unison-rule-words-lead",
-   "request": "No Unison: each song's new rule readable in full on the board at every phone size, and songs that repeat a decision made different",
-   "game": "No Unison",
+   "id": "P2NR206_rereview-orbit-rings-after-fixes",
+   "request": "Orbit Rings: stranger re-review after its review fixes (obvious play first, five-second test)",
+   "game": "Studio",
    "route": "Claude",
    "model": "opus",
    "effort": "high",
-   "kind": "build",
-   "size": "one repo",
+   "kind": "review",
+   "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2NR186_rereview-motif-hero-and-no-unison-after-look"
+    "P2NF118_orbit-rings-review-fixes"
    ],
    "priority": null,
-   "why": "An imagined stage of feuding musicians, sparked by images of rivals sharing one stage.",
+   "why": "",
    "state": "running",
    "at": 1795294402,
    "created": 1795294402
@@ -418,42 +418,23 @@
    "created": 1795294402
   },
   {
-   "id": "P2NR204_rereview-think-elephant-after-fixes",
-   "request": "Think Elephant: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
+   "id": "P2NB45_no-unison-rule-in-goal",
+   "request": "No Unison: each song's rule shown in full above the board",
+   "game": "No Unison",
    "route": "Claude",
-   "model": "opus",
+   "model": "sonnet",
    "effort": "high",
-   "kind": "review",
-   "size": "studio",
+   "kind": "build",
+   "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NF115_think-elephant"
+    "P2NX39_no-unison-rule-words-lead"
    ],
    "priority": null,
-   "why": "",
+   "why": "An imagined stage of feuding musicians, sparked by images of rivals sharing one stage.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR206_rereview-orbit-rings-after-fixes",
-   "request": "Orbit Rings: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF118_orbit-rings-review-fixes"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
+   "created": 1795298002
   },
   {
    "id": "P2NR208_rereview-lens-screen-after-fixes",
@@ -1214,6 +1195,27 @@
    "created": 1795294402
   },
   {
+   "id": "P2NR225_rereview-no-unison-rule-words",
+   "request": "No Unison: cold re-review after the rule-words build",
+   "game": "No Unison",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NB45_no-unison-rule-in-goal"
+   ],
+   "priority": null,
+   "why": "An imagined stage of feuding musicians, sparked by images of rivals sharing one stage.",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NB45_no-unison-rule-in-goal"
+   ],
+   "created": 1795298002
+  },
+  {
    "id": "P2NV210_thirsty-clicks-visual-build-flat",
    "request": "Thirsty Clicks: the board becomes a seed flat seen from above, with a punched tag on a stake for every listen",
    "game": "Thirsty Clicks",
@@ -1540,6 +1542,25 @@
    "created": 1795294402
   },
   {
+   "id": "P2NR204_rereview-think-elephant-after-fixes",
+   "request": "Think Elephant: stranger re-review after its review fixes (obvious play first, five-second test)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NF115_think-elephant"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
    "id": "P2NR205_rereview-billboard-wars-after-fixes",
    "request": "Billboard Wars: stranger re-review after its review fixes (obvious play first, five-second test)",
    "game": "Studio",
@@ -1647,6 +1668,25 @@
    "after": [],
    "priority": null,
    "why": "",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2NX39_no-unison-rule-words-lead",
+   "request": "No Unison: each song's new rule readable in full on the board at every phone size, and songs that repeat a decision made different",
+   "game": "No Unison",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR186_rereview-motif-hero-and-no-unison-after-look"
+   ],
+   "priority": null,
+   "why": "An imagined stage of feuding musicians, sparked by images of rivals sharing one stage.",
    "state": "done",
    "at": 1795294402,
    "created": 1795294402
