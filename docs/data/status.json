@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T21:41:57+00:00",
+ "generated": "2026-11-21T21:50:33+00:00",
  "ops": {
   "count": 4,
   "notes": [
@@ -26,23 +26,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 65,
+    "queued": 66,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2600,
-    "estimateMinutes": 2600
+    "minutes": 2640,
+    "estimateMinutes": 2640
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 11,
+    "doneToday": 12,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 66,
+  "queued": 67,
   "running": 6,
-  "doneToday": 11,
+  "doneToday": 12,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -52,9 +52,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3020,
-  "estimatedFinish": "2026-11-23T17:01:57+00:00",
-  "estimateMinutes": 2600
+  "minutesRemaining": 3060,
+  "estimatedFinish": "2026-11-23T17:50:33+00:00",
+  "estimateMinutes": 2640
  },
  "lanes": [
   {
@@ -67,10 +67,10 @@
   },
   {
    "worker": "Claude",
-   "game": "readable-nonsense",
-   "task": "P2NX38_readable nonsense small phone lead",
-   "since": "2026-11-21T21:33:20+00:00",
-   "activity": "2026-11-21T21:33:20+00:00",
+   "game": "no-unison",
+   "task": "P2NX39_no unison rule words lead",
+   "since": "2026-11-21T21:45:39+00:00",
+   "activity": "2026-11-21T21:45:39+00:00",
    "commit": null
   },
   {
@@ -110,8 +110,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1184,
-  "usdEst": 4262.4,
+  "runs": 1185,
+  "usdEst": 4266.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -21519,7 +21519,7 @@
    ]
   },
   {
-   "nextTask": "No Unison: each song's new rule readable in...",
+   "nextTask": null,
    "costTotalUsd": 65.46,
    "latestChange": {
     "text": "clearer singers by shape, tails with the singer's notch, ticks on sung cells, a starburst...",
@@ -21542,8 +21542,8 @@
    "title": "No Unison",
    "line": "",
    "url": "https://chenhsieh.github.io/no-unison/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -21561,7 +21561,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T17:28:17+00:00",
-   "lastChange": "2026-11-21T20:53:22+00:00",
+   "lastChange": "2026-11-21T21:45:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -21577,10 +21577,10 @@
    "tasks": [
     {
      "title": "P2NX39_no unison rule words lead",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "No Unison: each song's new rule readable in full on the board at every phone size, and songs that repeat a decision made different",
-     "since": "2026-11-21T20:53:22+00:00",
+     "since": "2026-11-21T21:45:39+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -21689,8 +21689,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 9
    },
@@ -43431,7 +43431,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Readable Nonsense: cold re-review after the small-phone layout...",
    "costTotalUsd": 93.79,
    "latestChange": {
     "text": "first screen says how to stamp; loss card says what A-ma read; lesson 8 is a new line;...",
@@ -43447,15 +43447,15 @@
     "reviseRound": 3,
     "daysInState": 1
    },
-   "waitingOn": "readable nonsense small phone lead",
+   "waitingOn": "rereview readable nonsense small phone",
    "id": "readable-nonsense",
    "number": 75,
    "repo": "readable-nonsense",
    "title": "阿嬤讀得出來",
    "line": "A famous Tang poem line is printed as fake glyphs with.",
    "url": "https://chenhsieh.github.io/readable-nonsense/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Start error blocks play",
    "shelfNote": "",
@@ -43469,26 +43469,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:29:52+00:00",
-   "lastChange": "2026-11-21T21:33:20+00:00",
+   "lastChange": "2026-11-21T21:45:21+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 3,
-    "claudeRuns": 11,
+    "claudeRuns": 12,
     "apiRuns": 0,
     "codexTokens": 697578,
     "codexUsdEst": 0.84,
-    "claudeUsdEst": 39.6,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
+    "claudeUsdEst": 43.2,
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
     "totalUsdEst": 93.79
    },
    "tasks": [
     {
-     "title": "P2NX38_readable nonsense small phone lead",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Readable Nonsense: one lead pass on the small-phone first minute and the win screen",
-     "since": "2026-11-21T21:33:20+00:00",
+     "title": "P2NR224_rereview readable nonsense small phone",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Readable Nonsense: cold re-review after the small-phone layout build",
+     "since": "2026-11-21T21:45:21+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -43496,6 +43496,34 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2NB44_readable nonsense small phone layout",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Readable Nonsense: goal and ruler on small phones, whole line above the win card",
+     "since": "2026-11-21T21:44:54+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P2NX38_readable nonsense small phone lead",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Readable Nonsense: one lead pass on the small-phone first minute and the win screen",
+     "since": "2026-11-21T20:53:22+00:00",
+     "done": "2026-11-21T20:53:22+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "DONE"
     },
     {
      "title": "P2NF106_readable nonsense fixes",
@@ -43566,41 +43594,13 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "For a player: nothing yet; three printed-matter looks (school primer, composition paper with rubber stamps, tear-off calendar) were mocked at 390x844 and 320x568, and the school primer was picked (vertical line, Zhuyin..."
-    },
-    {
-     "title": "P1RN42_copy and zhuyin",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Readable Nonsense: fix the clumsy wording and spell the sounds the Taiwanese way (Zhuyin).",
-     "since": "2026-10-24T00:21:42+00:00",
-     "done": "2026-10-24T00:21:42+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "For a player: every string reads plainly in English and 繁中 (one name for stamps, \"714 lines fit\" instead of a bare \"30%\", no \"She mumbles\", no filler gloss, How to play names Zhuyin/注音 and says tone marks do not count),..."
-    },
-    {
-     "title": "P1RN43_daily and collection",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Readable Nonsense: a daily to revisit, a collection, and a How to play page that is refined.",
-     "since": "2026-10-24T00:21:42+00:00",
-     "done": "2026-10-24T00:21:42+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "For a player: \"Today's line\" (level 10, a button at the top of Levels) is a new puzzle every day from the local date, picked so the stamp that leaves the fewest lines misses the best route (14 consecutive dates give 14..."
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 2,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 14
+    "done": 15
    },
    "verdict": {
     "date": "2026-11-20",

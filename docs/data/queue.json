@@ -1,5 +1,5 @@
 {
- "generated": 1795297357,
+ "generated": 1795297869,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -27,25 +27,6 @@
   "lastHandBackN": 7
  },
  "tasks": [
-  {
-   "id": "P2NX38_readable-nonsense-small-phone-lead",
-   "request": "Readable Nonsense: one lead pass on the small-phone first minute and the win screen",
-   "game": "阿嬤讀得出來",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR188_rereview-readable-nonsense-and-life-statistics-after-fixes"
-   ],
-   "priority": "P1",
-   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
-   "state": "running",
-   "at": 1795294402,
-   "created": 1795294402
-  },
   {
    "id": "P3PL14_speaking-stone-why-rollout",
    "request": "Why this exists: finish the rollout on speaking-stone (new test failure: test/first_minute_play.mjs no longer sees )",
@@ -117,6 +98,25 @@
    "created": 1793640233
   },
   {
+   "id": "P2NX39_no-unison-rule-words-lead",
+   "request": "No Unison: each song's new rule readable in full on the board at every phone size, and songs that repeat a decision made different",
+   "game": "No Unison",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR186_rereview-motif-hero-and-no-unison-after-look"
+   ],
+   "priority": null,
+   "why": "An imagined stage of feuding musicians, sparked by images of rivals sharing one stage.",
+   "state": "running",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
    "id": "P3PL13_dancers-not-mad-why-rollout",
    "request": "Why this exists: finish the rollout on dancers-not-mad (new test failure: test/anim_budget.mjs (layout shift))",
    "game": "Dancers Not Mad",
@@ -132,6 +132,25 @@
    "state": "running",
    "at": 1793640233,
    "created": 1793640233
+  },
+  {
+   "id": "P2NB44_readable-nonsense-small-phone-layout",
+   "request": "Readable Nonsense: goal and ruler on small phones, whole line above the win card",
+   "game": "阿嬤讀得出來",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NX38_readable-nonsense-small-phone-lead"
+   ],
+   "priority": "P1",
+   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795297494
   },
   {
    "id": "P2NF123_biosteganography-stripes-320-and-real-reading",
@@ -532,25 +551,6 @@
    "created": 1795294402
   },
   {
-   "id": "P2NX39_no-unison-rule-words-lead",
-   "request": "No Unison: each song's new rule readable in full on the board at every phone size, and songs that repeat a decision made different",
-   "game": "No Unison",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR186_rereview-motif-hero-and-no-unison-after-look"
-   ],
-   "priority": null,
-   "why": "An imagined stage of feuding musicians, sparked by images of rivals sharing one stage.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
-  },
-  {
    "id": "P2RC06_release-check-batch-6",
    "request": "Release checklist pass on copy-drift, even-water, morning-three, one-thread: fix the mechanical gaps (licences list, accessibility, preview and share, console errors) and publish once",
    "game": "Studio",
@@ -873,6 +873,27 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1795294402
+  },
+  {
+   "id": "P2NR224_rereview-readable-nonsense-small-phone",
+   "request": "Readable Nonsense: cold re-review after the small-phone layout build",
+   "game": "阿嬤讀得出來",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NB44_readable-nonsense-small-phone-layout"
+   ],
+   "priority": "P1",
+   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NB44_readable-nonsense-small-phone-layout"
+   ],
+   "created": 1795297521
   },
   {
    "id": "P2NV212_lantern-meeting-visual-build-pieces",
@@ -1401,6 +1422,25 @@
    "waitingOn": [
     "P2NR223_rereview-letter-lines-round5"
    ],
+   "created": 1795294402
+  },
+  {
+   "id": "P2NX38_readable-nonsense-small-phone-lead",
+   "request": "Readable Nonsense: one lead pass on the small-phone first minute and the win screen",
+   "game": "阿嬤讀得出來",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR188_rereview-readable-nonsense-and-life-statistics-after-fixes"
+   ],
+   "priority": "P1",
+   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
+   "state": "done",
+   "at": 1795294402,
    "created": 1795294402
   },
   {
