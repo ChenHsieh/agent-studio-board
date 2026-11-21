@@ -1,5 +1,5 @@
 {
- "generated": 1795295713,
+ "generated": 1795296234,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -62,6 +62,25 @@
    "created": 1793640233
   },
   {
+   "id": "P2NF118_orbit-rings-review-fixes",
+   "request": "Orbit Rings: tell wheels and windows apart, readable letters, real goal lines, fits a small phone",
+   "game": "Orbit Rings",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR193_resting-review-redline-river-and-orbit-rings"
+   ],
+   "priority": "P3",
+   "why": "A math visualization post of permutation orbits and the Hungarian Rings puzzle.",
+   "state": "running",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
    "id": "P3PL18_silva-to-maaslin2-why-build",
    "request": "Why this exists: add the section to silva-to-maaslin2 through its build step",
    "game": "Studio",
@@ -79,27 +98,8 @@
    "created": 1793640233
   },
   {
-   "id": "P2NF115_think-elephant",
-   "request": "P2NF115_think elephant",
-   "game": "Think Elephant",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR187_rereview-notched-boat-and-think-elephant-after-fixes"
-   ],
-   "priority": null,
-   "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
-   "state": "running",
-   "at": 1795292689,
-   "created": 1795292689
-  },
-  {
-   "id": "P2NR215_rereview-marble-machine-round5",
-   "request": "Marble Machine: stranger re-review of the live page after tonight's change; ship goes to its release check",
+   "id": "P2NR218_rereview-floating-city-round5",
+   "request": "Floating City: stranger re-review of the live page after tonight's change; ship goes to its release check",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
@@ -108,7 +108,7 @@
    "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2NX37_marble-machine"
+    "P2NV203_floating-city-visual-build-board"
    ],
    "priority": null,
    "why": "",
@@ -262,25 +262,6 @@
    ],
    "priority": "P2",
    "why": "A satirical post casting a lab's weekly group meeting as a palace court where the boss's nod buys supplies.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
-  },
-  {
-   "id": "P2NF118_orbit-rings-review-fixes",
-   "request": "Orbit Rings: tell wheels and windows apart, readable letters, real goal lines, fits a small phone",
-   "game": "Orbit Rings",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR193_resting-review-redline-river-and-orbit-rings"
-   ],
-   "priority": "P3",
-   "why": "A math visualization post of permutation orbits and the Hungarian Rings puzzle.",
    "state": "ready",
    "waitingOn": [],
    "created": 1795294402
@@ -475,8 +456,8 @@
    "created": 1795294402
   },
   {
-   "id": "P2NR217_rereview-hallway-posters-round5",
-   "request": "Hallway Posters: stranger re-review of the live page after tonight's change; ship goes to its release check",
+   "id": "P2NR204_rereview-think-elephant-after-fixes",
+   "request": "Think Elephant: stranger re-review after its review fixes (obvious play first, five-second test)",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
@@ -485,26 +466,7 @@
    "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2NV199_hallway-posters-visual-build-look"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR218_rereview-floating-city-round5",
-   "request": "Floating City: stranger re-review of the live page after tonight's change; ship goes to its release check",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NV203_floating-city-visual-build-board"
+    "P2NF115_think-elephant"
    ],
    "priority": null,
    "why": "",
@@ -739,6 +701,44 @@
    "created": 1795294402
   },
   {
+   "id": "P2RC31_release-check-marble-machine",
+   "request": "Marble Machine: release checklist pass after its re-review (credits, previews, accessible play, console)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR215_rereview-marble-machine-round5"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795294402
+  },
+  {
+   "id": "P2RC33_release-check-hallway-posters",
+   "request": "Hallway Posters: release checklist pass after its re-review (credits, previews, accessible play, console)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR217_rereview-hallway-posters-round5"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795294402
+  },
+  {
    "id": "P2RC40_release-check-honest-sign-scribes-blotter",
    "request": "Honest Sign and Scribes Blotter: first release checklist pass (credits, previews, accessible play, console)",
    "game": "Studio",
@@ -952,27 +952,6 @@
    "state": "waiting",
    "waitingOn": [
     "P2KS16_plain-telling-kit-port"
-   ],
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR204_rereview-think-elephant-after-fixes",
-   "request": "Think Elephant: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF115_think-elephant"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NF115_think-elephant"
    ],
    "created": 1795294402
   },
@@ -1358,27 +1337,6 @@
    "created": 1795294402
   },
   {
-   "id": "P2RC31_release-check-marble-machine",
-   "request": "Marble Machine: release checklist pass after its re-review (credits, previews, accessible play, console)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR215_rereview-marble-machine-round5"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NR215_rereview-marble-machine-round5"
-   ],
-   "created": 1795294402
-  },
-  {
    "id": "P2RC32_release-check-out-of-the-corner",
    "request": "Out of the Corner: release checklist pass after its re-review (credits, previews, accessible play, console)",
    "game": "Studio",
@@ -1396,27 +1354,6 @@
    "state": "waiting",
    "waitingOn": [
     "P2NR216_rereview-out-of-the-corner-round5"
-   ],
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC33_release-check-hallway-posters",
-   "request": "Hallway Posters: release checklist pass after its re-review (credits, previews, accessible play, console)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR217_rereview-hallway-posters-round5"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NR217_rereview-hallway-posters-round5"
    ],
    "created": 1795294402
   },
@@ -1547,6 +1484,25 @@
    "created": 1795294402
   },
   {
+   "id": "P2NF115_think-elephant",
+   "request": "P2NF115_think elephant",
+   "game": "Think Elephant",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR187_rereview-notched-boat-and-think-elephant-after-fixes"
+   ],
+   "priority": null,
+   "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
+   "state": "done",
+   "at": 1795292689,
+   "created": 1795292689
+  },
+  {
    "id": "P2NR181_rereview-crushed-can-and-shortest-law",
    "request": "Re-review Crushed Can and Shortest Law after their look builds",
    "game": "Studio",
@@ -1616,6 +1572,44 @@
    "estMinutes": null,
    "after": [
     "P2NF119_triangle-lexicon-par-and-fit"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2NR215_rereview-marble-machine-round5",
+   "request": "Marble Machine: stranger re-review of the live page after tonight's change; ship goes to its release check",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NX37_marble-machine"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2NR217_rereview-hallway-posters-round5",
+   "request": "Hallway Posters: stranger re-review of the live page after tonight's change; ship goes to its release check",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NV199_hallway-posters-visual-build-look"
    ],
    "priority": null,
    "why": "",

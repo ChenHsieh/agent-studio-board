@@ -199,12 +199,12 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 249,
+   "count": 251,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 247,
+   "guessed": 249,
    "topFailures": [],
    "flag": "give more"
   },
@@ -556,6 +556,24 @@
  "last": [
   {
    "date": "2026-11-21",
+   "task": "rereview hallway posters round5",
+   "number": "113",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "at 320 the key chips under the poster are five bare \"?\" boxes (no words until you tap one), and on the done sheet the share preview line is "
+  },
+  {
+   "date": "2026-11-21",
+   "task": "rereview marble machine round5",
+   "number": "19",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "today's daily at 390. Three rule lines make the panel 432 px, so the 7-piece machine sits in a narrow column in the top 40% with tags 1, 2 a"
+  },
+  {
+   "date": "2026-11-21",
    "task": "rereview triangle lexicon after fixes",
    "number": "28",
    "executor": "claude-opus",
@@ -607,6 +625,15 @@
    "role": "review",
    "passed": "yes",
    "note": "on 1-2 tap cans the \"lit lantern\" is a dark grey can with one gold stripe (little glow); at 320 the NEW RULE callout covers the level row, g"
+  },
+  {
+   "date": "2026-11-21",
+   "task": "think elephant",
+   "number": "115",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "EN level name truncated (\"The elephant in the f...\") at 320; EN hint/score tight."
   },
   {
    "date": "2026-11-20",
@@ -706,33 +733,6 @@
    "role": "build",
    "passed": "yes",
    "note": "P3KT62 DONE-no-change (kit stays 46). Already steady from kits 28-46: new test/kit47_steady_board.test.mjs records the board on every animat"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "kit keep goal short coach",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "P3KT61 DONE. play-template kit 46 (main f40238d). Config keepGoalInLesson: true sets html[data-pl-keep-goal]; kit.css short-phone rule now `"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "lesson check equal cost moves",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "no",
-   "note": "P3KT60 DONE. play-template kit 45 (main fe33bd9). tools/lesson_check.mjs: on the first level, when firstminute.json has an undo step, explor"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "kit undo line later",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "P3KT59 DONE. play-template kit 44 (main 1a91bb6). firstminute.json undo step accepts optional \"later\" {en, zh-Hant}: shown when the mistake "
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
