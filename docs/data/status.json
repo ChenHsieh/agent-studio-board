@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T22:28:11+00:00",
+ "generated": "2026-11-21T22:37:45+00:00",
  "ops": {
   "count": 4,
   "notes": [
@@ -34,15 +34,15 @@
    },
    "Claude": {
     "queued": 1,
-    "running": 8,
-    "doneToday": 21,
-    "minutes": 540,
-    "estimateMinutes": 270
+    "running": 7,
+    "doneToday": 23,
+    "minutes": 480,
+    "estimateMinutes": 240
    }
   },
   "queued": 61,
-  "running": 8,
-  "doneToday": 21,
+  "running": 7,
+  "doneToday": 23,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -52,8 +52,8 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2940,
-  "estimatedFinish": "2026-11-23T14:28:11+00:00",
+  "minutesRemaining": 2880,
+  "estimatedFinish": "2026-11-23T14:37:45+00:00",
   "estimateMinutes": 2400
  },
  "lanes": [
@@ -67,26 +67,18 @@
   },
   {
    "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P2NR211_rereview biosteganography after fixes",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
+  {
+   "worker": "Claude",
    "game": "the-apprentice",
    "task": "P2NV201_the apprentice visual build chrome",
    "since": "2026-11-21T22:18:48+00:00",
    "activity": "2026-11-21T22:19:01+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "knockout-plate",
-   "task": "P2NV208_knockout plate visual build pieces",
-   "since": "2026-11-21T22:18:50+00:00",
-   "activity": "2026-11-21T22:26:44+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P2NV215_flying white kit layout study",
-   "since": null,
-   "activity": null,
    "commit": null
   },
   {
@@ -123,11 +115,11 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 8,
+ "claudeWorkers": 7,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1195,
-  "usdEst": 4302.0,
+  "runs": 1197,
+  "usdEst": 4309.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -237,7 +229,7 @@
   },
   {
    "day": "2026-11-21",
-   "changes": 13
+   "changes": 14
   }
  ],
  "houseRules": 25,
@@ -9362,7 +9354,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Flying White moves to the new shared kit...",
    "costTotalUsd": 148.51,
    "latestChange": {
     "text": "Play pinned on first card at 320, logo at top edge, local-day stamp",
@@ -9372,21 +9364,21 @@
    "why": "A commentary on a 2002 martial-arts film that tells one story three ways, where the character for sword is written 19 ways.",
    "state": "ship",
    "stateFlags": {
-    "refining": false,
+    "refining": true,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "owner",
+   "waitingOn": "flying white kit layout port",
    "id": "flying-white",
    "number": 117,
    "repo": "flying-white",
    "title": "Flying White",
    "line": "",
    "url": "https://chenhsieh.github.io/flying-white/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Higher priority: real rubbing sources, hilarious teacher, growth, free writing",
    "shelfNote": "",
@@ -9400,7 +9392,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T05:31:34+00:00",
-   "lastChange": "2026-11-20T08:54:57+00:00",
+   "lastChange": "2026-11-21T22:32:08+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -9414,6 +9406,20 @@
     "totalUsdEst": 148.51
    },
    "tasks": [
+    {
+     "title": "P2KS17_flying white kit layout port",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Flying White moves to the new shared kit with bigger readable text and the same size paper to write on",
+     "since": "2026-11-21T22:32:08+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2NV141_flying white visual polish",
      "state": "done",
@@ -9511,24 +9517,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "DONE P2NX04: Flying White lead design written; the decision is that each stroke has its own speed. The teacher writes it first in red. Match it and the stroke is circled; otherwise he writes 快 or 慢 beside it."
-    },
-    {
-     "title": "P3PL15_flying white why rollout",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Why this exists: finish the rollout on flying-white (new test failure: test/font.test.mjs, zh glyphs 偶制創原啟壓意控注然狀界)",
-     "since": "2026-11-02T17:23:53+00:00",
-     "done": "2026-11-02T17:23:53+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 26
@@ -9539,7 +9531,7 @@
     "note": "The source names now sit on two short lines inside the model card at 320, the model-speed line still shows, and quick straight swipes still earn nothing outside one ring on level 5"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-11-20T08:54:57+00:00",
@@ -15260,30 +15252,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 61.61,
+   "costTotalUsd": 65.21,
    "latestChange": {
-    "text": "Bench look: box of caps and plate, canvas sized to the screen, notebook always on screen,...",
-    "at": "2026-11-20T10:10:48+00:00"
+    "text": "colonies drawn with tape tags, cap click and lift, Why tab, share line, drawn link preview",
+    "at": "2026-11-21T22:33:23+00:00"
    },
    "promo": null,
    "why": "A lab story of knocking out bacterial genes one by one, plus a challenge to predict knockouts never seen.",
    "state": "ship",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "knockout plate visual build pieces",
+   "waitingOn": "owner",
    "id": "knockout-plate",
    "number": 103,
    "repo": "knockout-plate",
    "title": "Knockout Plate",
    "line": "",
    "url": "https://chenhsieh.github.io/knockout-plate/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -15300,34 +15292,34 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-10-20T04:39:50+00:00",
-   "lastChange": "2026-11-21T22:26:44+00:00",
+   "firstSeen": "2026-10-20T05:05:56+00:00",
+   "lastChange": "2026-11-21T22:33:23+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 0,
     "codexTokens": 343098,
     "codexUsdEst": 0.41,
-    "claudeUsdEst": 14.4,
+    "claudeUsdEst": 18.0,
     "earlierRounds": 13,
     "earlierUsdEst": 46.8,
-    "totalUsdEst": 61.61
+    "totalUsdEst": 65.21
    },
    "tasks": [
     {
      "title": "P2NV208_knockout plate visual build pieces",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Knockout Plate look, part 2: the caps and the plate drawn in full, the cap click, preview picture and share line",
-     "since": "2026-11-21T22:18:50+00:00",
-     "done": null,
+     "since": "2026-11-21T20:53:22+00:00",
+     "done": "2026-11-21T20:53:22+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE"
     },
     {
      "title": "P2NV207_knockout plate visual build layout",
@@ -15416,9 +15408,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": {
     "date": "2026-11-20",
@@ -15426,8 +15418,20 @@
     "note": "One gene per plate never reaches the best count, the practice plate now waits for your two taps, and level 1 fits the phone"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-21T22:33:23+00:00",
+     "ok": true,
+     "note": "colonies drawn with tape tags, cap click and lift, Why tab, share line, drawn link preview",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-21T22:32:13+00:00",
+     "ok": true,
+     "note": "feat: Knockout Plate colonies are drawn, with tape tags, a clicking cap and a share line",
+     "source": "main commit"
+    },
     {
      "at": "2026-11-20T10:10:48+00:00",
      "ok": true,
@@ -15486,18 +15490,6 @@
      "at": "2026-10-22T23:57:44+00:00",
      "ok": true,
      "note": "feat: teach Knockout Plate through a three-step lab round",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-22T23:56:28+00:00",
-     "ok": true,
-     "note": "feat: teach Knockout Plate through a three-step lab round",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T07:28:28+00:00",
-     "ok": true,
-     "note": "feat: make Knockout Plate respond to every touch",
      "source": "board note"
     }
    ]

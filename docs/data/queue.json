@@ -1,5 +1,5 @@
 {
- "generated": 1795300105,
+ "generated": 1795300678,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -117,36 +117,17 @@
    "created": 1793640233
   },
   {
-   "id": "P2NV208_knockout-plate-visual-build-pieces",
-   "request": "Knockout Plate look, part 2: the caps and the plate drawn in full, the cap click, preview picture and share line",
-   "game": "Knockout Plate",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NV207_knockout-plate-visual-build-layout"
-   ],
-   "priority": null,
-   "why": "A lab story of knocking out bacterial genes one by one, plus a challenge to predict knockouts never seen.",
-   "state": "running",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NV215_flying-white-kit-layout-study",
-   "request": "Flying White: a layout study for the move to the current shared kit, so the next port matches the live look at 390 and 320",
+   "id": "P2NR211_rereview-biosteganography-after-fixes",
+   "request": "Biosteganography: stranger re-review after its review fixes (obvious play first, five-second test)",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
    "effort": "high",
-   "kind": "build",
-   "size": "one repo",
+   "kind": "review",
+   "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2KS13_flying-white-kit-port"
+    "P2NF123_biosteganography-stripes-320-and-real-reading"
    ],
    "priority": null,
    "why": "",
@@ -170,6 +151,25 @@
    "state": "running",
    "at": 1793640233,
    "created": 1793640233
+  },
+  {
+   "id": "P2KS17_flying-white-kit-layout-port",
+   "request": "Flying White moves to the new shared kit with bigger readable text and the same size paper to write on",
+   "game": "Flying White",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NV215_flying-white-kit-layout-study"
+   ],
+   "priority": "P1",
+   "why": "A commentary on a 2002 martial-arts film that tells one story three ways, where the character for sword is written 19 ways.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795300328
   },
   {
    "id": "P2NB44_readable-nonsense-small-phone-layout",
@@ -456,8 +456,8 @@
    "created": 1795298002
   },
   {
-   "id": "P2NR211_rereview-biosteganography-after-fixes",
-   "request": "Biosteganography: stranger re-review after its review fixes (obvious play first, five-second test)",
+   "id": "P2NR219_rereview-knockout-plate-round5",
+   "request": "Knockout Plate: stranger re-review of the live page after tonight's change; ship goes to its release check",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
@@ -466,7 +466,7 @@
    "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2NF123_biosteganography-stripes-320-and-real-reading"
+    "P2NV208_knockout-plate-visual-build-pieces"
    ],
    "priority": null,
    "why": "",
@@ -1003,27 +1003,6 @@
    "state": "waiting",
    "waitingOn": [
     "P2KS12_kit-sync-next-please-no-favorites-out-of-the-corner"
-   ],
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR219_rereview-knockout-plate-round5",
-   "request": "Knockout Plate: stranger re-review of the live page after tonight's change; ship goes to its release check",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NV208_knockout-plate-visual-build-pieces"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NV208_knockout-plate-visual-build-pieces"
    ],
    "created": 1795294402
   },
@@ -1717,6 +1696,44 @@
    "size": "studio",
    "estMinutes": null,
    "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2NV208_knockout-plate-visual-build-pieces",
+   "request": "Knockout Plate look, part 2: the caps and the plate drawn in full, the cap click, preview picture and share line",
+   "game": "Knockout Plate",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NV207_knockout-plate-visual-build-layout"
+   ],
+   "priority": null,
+   "why": "A lab story of knocking out bacterial genes one by one, plus a challenge to predict knockouts never seen.",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2NV215_flying-white-kit-layout-study",
+   "request": "Flying White: a layout study for the move to the current shared kit, so the next port matches the live look at 390 and 320",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2KS13_flying-white-kit-port"
+   ],
    "priority": null,
    "why": "",
    "state": "done",
