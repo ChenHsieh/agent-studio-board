@@ -199,12 +199,12 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 259,
+   "count": 261,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 257,
+   "guessed": 259,
    "topFailures": [],
    "flag": "give more"
   },
@@ -619,6 +619,24 @@
   },
   {
    "date": "2026-11-21",
+   "task": "rereview the apprentice round5",
+   "number": "152",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "DONE - re-review round 5 of The Apprentice after the visual builds P2NV200 + P2NV201, 2026-11-21 18:11-18:16 EST, live https://chenhsieh.git"
+  },
+  {
+   "date": "2026-11-21",
+   "task": "rereview knockout plate round5",
+   "number": "103",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "DONE - re-review round 5 of Knockout Plate after the visual builds P2NV207 + P2NV208, 2026-11-21 18:02-18:12 EST, live https://chenhsieh.git"
+  },
+  {
+   "date": "2026-11-21",
    "task": "rereview floating city round5",
    "number": "55",
    "executor": "claude-opus",
@@ -715,24 +733,6 @@
    "role": "review",
    "passed": "yes",
    "note": "DONE P2NR205 re-review of billboard-wars after P2NF117, 2026-11-21 16:00-16:04 EST. Verdict SHIP. No destination is named for billboard-wars"
-  },
-  {
-   "date": "2026-11-21",
-   "task": "rereview think elephant after fixes",
-   "number": "115",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "small words, not the game. Three polish items, not queued (ship with no destination), for owner if wanted:"
-  },
-  {
-   "date": "2026-11-21",
-   "task": "rereview the folder after fixes",
-   "number": "46",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "DONE P2NR203 re-review of the-folder after P2NF114, 2026-11-21 15:54-16:00 EST. Verdict revise (live unchanged). Nothing queued: the only re"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."

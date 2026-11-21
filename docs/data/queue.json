@@ -1,5 +1,5 @@
 {
- "generated": 1795302386,
+ "generated": 1795302962,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -113,25 +113,6 @@
    ],
    "priority": null,
    "why": "A commentary on a 2002 film that tells one story three ways in red, blue and white.",
-   "state": "running",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR219_rereview-knockout-plate-round5",
-   "request": "Knockout Plate: stranger re-review of the live page after tonight's change; ship goes to its release check",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NV208_knockout-plate-visual-build-pieces"
-   ],
-   "priority": null,
-   "why": "",
    "state": "running",
    "at": 1795294402,
    "created": 1795294402
@@ -437,25 +418,6 @@
    "created": 1795298002
   },
   {
-   "id": "P2NR220_rereview-the-apprentice-round5",
-   "request": "The Apprentice: stranger re-review of the live page after tonight's change; ship goes to its release check",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NV201_the-apprentice-visual-build-chrome"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
-  },
-  {
    "id": "P2NV209_thirsty-clicks-visual-build-chrome",
    "request": "Thirsty Clicks: a one-row top bar with a nursery-tag mark, the HUD and the gardens line big and out of the board",
    "game": "Thirsty Clicks",
@@ -657,6 +619,44 @@
    "estMinutes": null,
    "after": [
     "P2NR218_rereview-floating-city-round5"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795294402
+  },
+  {
+   "id": "P2RC35_release-check-knockout-plate",
+   "request": "Knockout Plate: release checklist pass after its re-review (credits, previews, accessible play, console)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR219_rereview-knockout-plate-round5"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795294402
+  },
+  {
+   "id": "P2RC36_release-check-the-apprentice",
+   "request": "The Apprentice: release checklist pass after its re-review (credits, previews, accessible play, console)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR220_rereview-the-apprentice-round5"
    ],
    "priority": null,
    "why": "",
@@ -879,6 +879,27 @@
     "P2NF134_stripes-drawn-preview"
    ],
    "created": 1795301873
+  },
+  {
+   "id": "P3NF136_the-apprentice-polish-320-ring-and-fit",
+   "request": "The Apprentice: the lesson ring leaves the word whole on a small phone, level 5 and Chinese fit the screen",
+   "game": "The Apprentice",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2RC36_release-check-the-apprentice"
+   ],
+   "priority": "P1",
+   "why": "A viral second-person court scene where a cherished dancer draws a blade, recast in a reply as the orphan her ruler secretly raised.",
+   "state": "waiting",
+   "waitingOn": [
+    "P2RC36_release-check-the-apprentice"
+   ],
+   "created": 1795302943
   },
   {
    "id": "P2NV212_lantern-meeting-visual-build-pieces",
@@ -1200,48 +1221,6 @@
    "created": 1795294402
   },
   {
-   "id": "P2RC35_release-check-knockout-plate",
-   "request": "Knockout Plate: release checklist pass after its re-review (credits, previews, accessible play, console)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR219_rereview-knockout-plate-round5"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NR219_rereview-knockout-plate-round5"
-   ],
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC36_release-check-the-apprentice",
-   "request": "The Apprentice: release checklist pass after its re-review (credits, previews, accessible play, console)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR220_rereview-the-apprentice-round5"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NR220_rereview-the-apprentice-round5"
-   ],
-   "created": 1795294402
-  },
-  {
    "id": "P2RC37_release-check-thirsty-clicks",
    "request": "Thirsty Clicks: release checklist pass after its re-review (credits, previews, accessible play, console)",
    "game": "Studio",
@@ -1303,6 +1282,27 @@
     "P2NR223_rereview-letter-lines-round5"
    ],
    "created": 1795294402
+  },
+  {
+   "id": "P3NF135_knockout-plate-polish-zh-title-and-practice-cap",
+   "request": "Knockout Plate",
+   "game": "Knockout Plate",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2RC35_release-check-knockout-plate"
+   ],
+   "priority": null,
+   "why": "A lab story of knocking out bacterial genes one by one, plus a challenge to predict knockouts never seen.",
+   "state": "waiting",
+   "waitingOn": [
+    "P2RC35_release-check-knockout-plate"
+   ],
+   "created": 1795302640
   },
   {
    "id": "P2NF123_biosteganography-stripes-320-and-real-reading",
@@ -1754,6 +1754,44 @@
    "estMinutes": null,
    "after": [
     "P2NV203_floating-city-visual-build-board"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2NR219_rereview-knockout-plate-round5",
+   "request": "Knockout Plate: stranger re-review of the live page after tonight's change; ship goes to its release check",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NV208_knockout-plate-visual-build-pieces"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2NR220_rereview-the-apprentice-round5",
+   "request": "The Apprentice: stranger re-review of the live page after tonight's change; ship goes to its release check",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NV201_the-apprentice-visual-build-chrome"
    ],
    "priority": null,
    "why": "",
