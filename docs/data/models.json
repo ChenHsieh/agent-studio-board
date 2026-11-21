@@ -141,12 +141,12 @@
   {
    "executor": "claude-opus",
    "role": "build",
-   "count": 298,
+   "count": 299,
    "firstTimePass": 99,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 293,
+   "guessed": 294,
    "topFailures": [
     "rooms 16, 25 and 33 at 360x640 run 9-18 px past the screen after the f",
     "on small beds the canvas keeps its tall paper below the board, so on a",
@@ -199,12 +199,12 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 251,
+   "count": 252,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 249,
+   "guessed": 250,
    "topFailures": [],
    "flag": "give more"
   },
@@ -267,12 +267,12 @@
   {
    "executor": "claude-sonnet",
    "role": "review",
-   "count": 27,
+   "count": 28,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 27,
+   "guessed": 28,
    "topFailures": [],
    "flag": "give more"
   },
@@ -556,6 +556,24 @@
  "last": [
   {
    "date": "2026-11-21",
+   "task": "destinations for shipped games",
+   "number": "",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "how much to accept (pick: the three best bets only), answer 11-13 first, Copy Drift/Morning Three/One Thread stay parked (his 10-23 pullback"
+  },
+  {
+   "date": "2026-11-21",
+   "task": "rereview floating city round5",
+   "number": "55",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "on level 1 the tap ring sits on top of the teal room's up arrow, and about 1 frame in 6 the room flashes to the pale emptied look (down arro"
+  },
+  {
+   "date": "2026-11-21",
    "task": "rereview hallway posters round5",
    "number": "113",
    "executor": "claude-opus",
@@ -625,6 +643,15 @@
    "role": "review",
    "passed": "yes",
    "note": "on 1-2 tap cans the \"lit lantern\" is a dark grey can with one gold stripe (little glow); at 320 the NEW RULE callout covers the level row, g"
+  },
+  {
+   "date": "2026-11-21",
+   "task": "orbit rings review fixes",
+   "number": "81",
+   "executor": "claude-sonnet",
+   "role": "review",
+   "passed": "yes",
+   "note": "result page at 390x844 is 1086 tall (result sheet is allowed to cover the board per task); at 320 the board is small with empty space below."
   },
   {
    "date": "2026-11-21",
@@ -706,33 +733,6 @@
    "role": "build",
    "passed": "yes",
    "note": "DONE-no-change. Covered by P3KT67 (play-template main 7cb52d1, kit 50): tools/lesson_check.mjs line 36 normalises apply() (bare state or {st"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "apprentice daily zh buttons",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "P3KT64 DONE. play-template kit 49 (main 3f67019; the commit subject says \"kit 48\" because the message file was not overwritten, the tree is "
-  },
-  {
-   "date": "2026-11-20",
-   "task": "apprentice short phone below",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "P3KT63 DONE. play-template kit 47 (main b1b152b). Config shortPhone: 'beside' (default) | 'below'. core.js fitBoard never sets pl-beside whe"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "kit board size steady lesson",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "P3KT62 DONE-no-change (kit stays 46). Already steady from kits 28-46: new test/kit47_steady_board.test.mjs records the board on every animat"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T21:23:35+00:00",
+ "generated": "2026-11-21T21:33:00+00:00",
  "ops": {
   "count": 4,
   "notes": [
@@ -26,23 +26,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 69,
+    "queued": 67,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2760,
-    "estimateMinutes": 2760
+    "minutes": 2680,
+    "estimateMinutes": 2680
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 7,
+    "doneToday": 9,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 70,
+  "queued": 68,
   "running": 6,
-  "doneToday": 7,
+  "doneToday": 9,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -52,23 +52,23 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3180,
-  "estimatedFinish": "2026-11-23T19:23:35+00:00",
-  "estimateMinutes": 2760
+  "minutesRemaining": 3100,
+  "estimatedFinish": "2026-11-23T18:13:00+00:00",
+  "estimateMinutes": 2680
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "orbit-rings",
-   "task": "P2NF118_orbit rings review fixes",
-   "since": "2026-11-21T21:16:53+00:00",
-   "activity": "2026-11-21T21:23:25+00:00",
+   "game": "lens-screen",
+   "task": "P2NF120_lens screen big words and fit",
+   "since": "2026-11-21T21:30:53+00:00",
+   "activity": "2026-11-21T21:30:53+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
    "game": "Multiple games",
-   "task": "P2NR218_rereview floating city round5",
+   "task": "P2NT05_destinations for shipped games",
    "since": null,
    "activity": null,
    "commit": null
@@ -110,8 +110,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1180,
-  "usdEst": 4248.0,
+  "runs": 1182,
+  "usdEst": 4255.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -221,7 +221,7 @@
   },
   {
    "day": "2026-11-21",
-   "changes": 5
+   "changes": 6
   }
  ],
  "houseRules": 25,
@@ -8422,7 +8422,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 1
+    "daysInState": 0
    },
    "waitingOn": "owner",
    "id": "floating-city",
@@ -8580,9 +8580,9 @@
     "done": 8
    },
    "verdict": {
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "verdict": "ship",
-    "note": "Picking the move that looks most level now sinks the city on harbour town and the old quarter, the goal sits above the board, and the whole level fits a small phone"
+    "note": "The city is now a concrete hull in a slate basin with teal rooms to empty and houses on a crane hook, and picking the move that looks most level still sinks it on harbour town and the old quarter"
    },
    "needsYou": null,
    "inProgress": false,
@@ -16199,7 +16199,7 @@
    ]
   },
   {
-   "nextTask": "Lens Screen: bigger words, worded result buttons, one...",
+   "nextTask": null,
    "costTotalUsd": 39.6,
    "latestChange": {
     "text": "P3d35 studio published; flare disc kept inside picture; 320 overflow not reproducible",
@@ -16222,8 +16222,8 @@
    "title": "Lens Screen",
    "line": "Drag a screen over the cup.",
    "url": "https://chenhsieh.github.io/lens-screen/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P3",
    "priorityNote": "Storyteller pass on why it is fun",
    "shelfNote": "",
@@ -16237,7 +16237,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T04:07:44+00:00",
-   "lastChange": "2026-11-21T20:53:22+00:00",
+   "lastChange": "2026-11-21T21:30:53+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -16253,10 +16253,10 @@
    "tasks": [
     {
      "title": "P2NF120_lens screen big words and fit",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Lens Screen: bigger words, worded result buttons, one screen on phones",
-     "since": "2026-11-21T20:53:22+00:00",
+     "since": "2026-11-21T21:30:53+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -16309,8 +16309,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
@@ -23636,30 +23636,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 72.29,
+   "costTotalUsd": 75.89,
    "latestChange": {
-    "text": "Sync fixed onescreen-shell (P2FS38 fixes: ghost click guard, bottom room)",
-    "at": "2026-10-29T18:01:44+00:00"
+    "text": "P2NF118: wheel colours, open-frame windows, goal lines, one screen on small phones",
+    "at": "2026-11-21T21:30:49+00:00"
    },
    "promo": null,
    "why": "A math visualization post of permutation orbits and the Hungarian Rings puzzle.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 1
+    "daysInState": 0
    },
-   "waitingOn": "orbit rings review fixes",
+   "waitingOn": "none",
    "id": "orbit-rings",
    "number": 81,
    "repo": "orbit-rings",
    "title": "Orbit Rings",
    "line": "Rings of coloured balls cross each other, and a ball.",
    "url": "https://chenhsieh.github.io/orbit-rings/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "An eccentric twist from the inspiration collection and a",
    "shelfNote": "",
@@ -23673,33 +23673,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:37:01+00:00",
-   "lastChange": "2026-11-21T21:23:25+00:00",
+   "lastChange": "2026-11-21T21:30:49+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 1,
+    "claudeRuns": 2,
     "apiRuns": 1,
     "codexTokens": 241668,
     "codexUsdEst": 0.29,
-    "claudeUsdEst": 3.6,
+    "claudeUsdEst": 7.2,
     "earlierRounds": 19,
     "earlierUsdEst": 68.4,
-    "totalUsdEst": 72.29
+    "totalUsdEst": 75.89
    },
    "tasks": [
     {
      "title": "P2NF118_orbit rings review fixes",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Orbit Rings: tell wheels and windows apart, readable letters, real goal lines, fits a small phone",
-     "since": "2026-11-21T21:16:53+00:00",
-     "done": null,
+     "since": "2026-11-21T20:53:22+00:00",
+     "done": "2026-11-21T20:53:22+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE"
     },
     {
      "title": "orbit rings llull",
@@ -23746,9 +23746,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": {
     "date": "2026-11-20",
@@ -23756,8 +23756,20 @@
     "note": "Turning paper wheels to fill letter windows is a real puzzle where turning whatever fills a window now reaches par a quarter of the time on levels four and five and never on six to eight, but two wheels share one colour, windows look like letters, the words on the letters are too small to read and late levels have no goal line"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-21T21:30:49+00:00",
+     "ok": true,
+     "note": "P2NF118: wheel colours, open-frame windows, goal lines, one screen on small phones",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-21T21:28:24+00:00",
+     "ok": true,
+     "note": "fix: each wheel has its own colour, windows read as open frames, every level says what to do",
+     "source": "main commit"
+    },
     {
      "at": "2026-10-29T18:01:44+00:00",
      "ok": true,
@@ -23816,18 +23828,6 @@
      "at": "2026-10-18T08:34:11+00:00",
      "ok": true,
      "note": "also fixed test/r1016 daily check, which had been failing on main since the lock shipped",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-18T08:30:17+00:00",
-     "ok": true,
-     "note": "fix: Today stays open for old saves;",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-18T06:47:50+00:00",
-     "ok": true,
-     "note": "Today locked until levels 1-3 are solved; live",
      "source": "board note"
     }
    ]
