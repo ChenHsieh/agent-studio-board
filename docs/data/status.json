@@ -1,9 +1,8 @@
 {
- "generated": "2026-11-21T20:39:00+00:00",
+ "generated": "2026-11-21T20:48:12+00:00",
  "ops": {
-  "count": 8,
+  "count": 4,
   "notes": [
-   "A running task has shown no progress for over 3 hours.",
    "Two tasks share the number P2NF18.",
    "Two tasks share the number P2NR115.",
    "Two tasks share the number P2SSP01.",
@@ -12,7 +11,6 @@
   "info": []
  },
  "about": [
-  "A running task has shown no progress for over 3 hours.",
   "Two tasks share the number P2NF18.",
   "Two tasks share the number P2NR115.",
   "Two tasks share the number P2SSP01.",
@@ -28,23 +26,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 76,
+    "queued": 75,
     "running": 0,
     "doneToday": 0,
-    "minutes": 3040,
-    "estimateMinutes": 3040
+    "minutes": 3000,
+    "estimateMinutes": 3000
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 0,
+    "doneToday": 1,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 77,
+  "queued": 76,
   "running": 6,
-  "doneToday": 0,
+  "doneToday": 1,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -54,9 +52,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3460,
-  "estimatedFinish": "2026-11-23T23:19:00+00:00",
-  "estimateMinutes": 3040
+  "minutesRemaining": 3420,
+  "estimatedFinish": "2026-11-23T22:48:12+00:00",
+  "estimateMinutes": 3000
  },
  "lanes": [
   {
@@ -64,13 +62,13 @@
    "game": "think-elephant",
    "task": "P2NF115_think elephant",
    "since": "2026-11-21T20:25:28+00:00",
-   "activity": "2026-11-21T20:35:29+00:00",
+   "activity": "2026-11-21T20:47:22+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
    "game": "Multiple games",
-   "task": "P2NR181_rereview crushed can and shortest law",
+   "task": "P2NR202_rereview four thirty three after fixes",
    "since": null,
    "activity": null,
    "commit": null
@@ -112,8 +110,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1171,
-  "usdEst": 4215.6,
+  "runs": 1173,
+  "usdEst": 4222.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -220,6 +218,10 @@
   {
    "day": "2026-11-20",
    "changes": 257
+  },
+  {
+   "day": "2026-11-21",
+   "changes": 3
   }
  ],
  "houseRules": 25,
@@ -4929,10 +4931,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 82.8,
+   "costTotalUsd": 86.4,
    "latestChange": {
-    "text": "lantern stall chrome: slab-sign name and lit-can logo, plate buttons with a hard step,...",
-    "at": "2026-11-20T08:47:24+00:00"
+    "text": "P2NR181 re-review after lantern look: ship; release check P2RC22 next",
+    "at": "2026-11-21T20:39:58+00:00"
    },
    "promo": null,
    "why": "A hobby post of an energy-drink can pressed into rings of diamond facets.",
@@ -4942,7 +4944,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 1
+    "daysInState": 0
    },
    "waitingOn": "owner",
    "id": "crushed-can",
@@ -4966,7 +4968,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-22T20:36:12+00:00",
-   "lastChange": "2026-11-20T08:47:24+00:00",
+   "lastChange": "2026-11-21T20:39:58+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -4975,9 +4977,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 39.6,
-    "earlierRounds": 12,
-    "earlierUsdEst": 43.2,
-    "totalUsdEst": 82.8
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
+    "totalUsdEst": 86.4
    },
    "tasks": [
     {
@@ -5100,13 +5102,19 @@
     "done": 11
    },
    "verdict": {
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "verdict": "ship",
-    "note": "The first lesson says the numbers are depths and the sweep from the top dead-ends on four of cans 4 to 8; it still looks like yellow bars, which is the visual round"
+    "note": "After the lantern look the sweep from the top still dead-ends on four of cans 4 to 8, the can now crumples like metal, and the finished order hangs lit at dusk"
    },
    "needsYou": null,
    "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-21T20:39:58+00:00",
+     "ok": true,
+     "note": "P2NR181 re-review after lantern look: ship; release check P2RC22 next",
+     "source": "board note"
+    },
     {
      "at": "2026-11-20T08:47:24+00:00",
      "ok": true,
@@ -5166,12 +5174,6 @@
      "ok": true,
      "note": "chore: sync kit 23 to 25",
      "source": "main commit"
-    },
-    {
-     "at": "2026-11-13T13:00:53+00:00",
-     "ok": true,
-     "note": "Can Lantern: undone taps count (undo costs 1), dead-end message, share line uses the kit score",
-     "source": "board note"
     }
    ]
   },
@@ -22055,7 +22057,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 22
+    "daysInState": 23
    },
    "waitingOn": "none",
    "id": "not-yet",
@@ -31533,10 +31535,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 86.99,
+   "costTotalUsd": 90.59,
    "latestChange": {
-    "text": "level order: easy trio after Flood pulse; daily says Find the law",
-    "at": "2026-11-20T10:09:17+00:00"
+    "text": "P2NR181 re-review after bench finish: ship; release check P2RC22 next",
+    "at": "2026-11-21T20:39:58+00:00"
    },
    "promo": null,
    "why": "A joke page of physics equations whose conclusion is only that things fall, plus symbolic-regression software.",
@@ -31546,7 +31548,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 1
+    "daysInState": 0
    },
    "waitingOn": "owner",
    "id": "shortest-law",
@@ -31570,7 +31572,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T05:07:40+00:00",
-   "lastChange": "2026-11-20T10:09:17+00:00",
+   "lastChange": "2026-11-21T20:39:58+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -31579,9 +31581,9 @@
     "codexTokens": 493545,
     "codexUsdEst": 0.59,
     "claudeUsdEst": 28.8,
-    "earlierRounds": 16,
-    "earlierUsdEst": 57.6,
-    "totalUsdEst": 86.99
+    "earlierRounds": 17,
+    "earlierUsdEst": 61.2,
+    "totalUsdEst": 90.59
    },
    "tasks": [
     {
@@ -31704,13 +31706,19 @@
     "done": 11
    },
    "verdict": {
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "verdict": "ship",
-    "note": "The plain best-fit play now reaches the best on only one of levels 4 to 8, the play page fits a phone, and sending the chart to the reviewer is still the moment that lands"
+    "note": "After the bench finish the plain best-fit play reaches the best on one of levels 4 to 8, every label reads at 320, and the shutter opening on your curve is still the moment"
    },
    "needsYou": null,
    "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-21T20:39:58+00:00",
+     "ok": true,
+     "note": "P2NR181 re-review after bench finish: ship; release check P2RC22 next",
+     "source": "board note"
+    },
     {
      "at": "2026-11-20T10:09:17+00:00",
      "ok": true,
@@ -31776,12 +31784,6 @@
      "ok": true,
      "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-23T12:39:20+00:00",
-     "ok": true,
-     "note": "first-minute lesson: premise card + 3 live boards; gates green; live bytes match",
-     "source": "board note"
     }
    ]
   },
@@ -32339,31 +32341,31 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 43.98,
+   "nextTask": "Silent Disco: publish the finished review fixes (one...",
+   "costTotalUsd": 47.58,
    "latestChange": {
-    "text": "not merged: touch_play and drag_play assert old strings, edit refused",
-    "at": "2026-11-20T10:12:54+00:00"
+    "text": "P2NR200 re-review: revise (live unchanged; fix branch passes); P2NF127 publishes it",
+    "at": "2026-11-21T20:46:04+00:00"
    },
    "promo": null,
    "why": "A Don Quixote windmill image, a news item on folk battle troupes competing in formation, and a tracker music sequencer.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
-    "reviseRound": 1,
-    "daysInState": 1
+    "reviseRound": 2,
+    "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "silent disco publish review fixes",
    "id": "silent-disco",
    "number": 105,
    "repo": "silent-disco",
    "title": "Silent Disco",
    "line": "",
    "url": "https://chenhsieh.github.io/silent-disco/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -32377,7 +32379,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T16:29:01+00:00",
-   "lastChange": "2026-11-20T10:12:54+00:00",
+   "lastChange": "2026-11-21T20:46:04+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -32386,11 +32388,25 @@
     "codexTokens": 645935,
     "codexUsdEst": 0.78,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
-    "totalUsdEst": 43.98
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
+    "totalUsdEst": 47.58
    },
    "tasks": [
+    {
+     "title": "P2NF127_silent disco publish review fixes",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Silent Disco: publish the finished review fixes (one Looks counter, fits a small phone, rooms stay in view at the win)",
+     "since": "2026-11-21T20:46:04+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2NF111_silent disco review fixes",
      "state": "done",
@@ -32463,19 +32479,25 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 5
    },
    "verdict": {
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "verdict": "revise",
-    "note": "Sorting dancers by speed and then borrowing headphones is a real choice, but the card hides the opened rooms, three counters disagree and the board runs off a small phone"
+    "note": "The fixes are built and pass on their branch (one Looks counter, fits a small phone, rooms stay in view at the win) but were never published, so the live page still scrolls and shows three counters"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-21T20:46:04+00:00",
+     "ok": true,
+     "note": "P2NR200 re-review: revise (live unchanged; fix branch passes); P2NF127 publishes it",
+     "source": "board note"
+    },
     {
      "at": "2026-11-20T10:12:54+00:00",
      "ok": true,
@@ -32541,12 +32563,6 @@
      "ok": true,
      "note": "P2PT04 drag feel live: lift, lit doors, fly-in, spring back",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-21T08:33:34+00:00",
-     "ok": true,
-     "note": "feat: dancers lift, follow the finger, light the doors that fit and land with a pop",
-     "source": "main commit"
     }
    ]
   },
@@ -38209,7 +38225,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T05:00:44+00:00",
-   "lastChange": "2026-11-21T20:35:29+00:00",
+   "lastChange": "2026-11-21T20:47:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,

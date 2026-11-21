@@ -1,5 +1,5 @@
 {
- "generated": 1795292919,
+ "generated": 1795294113,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -98,8 +98,8 @@
    "created": 1795292689
   },
   {
-   "id": "P2NR181_rereview-crushed-can-and-shortest-law",
-   "request": "Re-review Crushed Can and Shortest Law after their look builds",
+   "id": "P2NR202_rereview-four-thirty-three-after-fixes",
+   "request": "Four Thirty Three: stranger re-review after its review fixes (obvious play first, five-second test)",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
@@ -108,14 +108,13 @@
    "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2NV166_can-lantern-visual-build-chrome",
-    "P2NV195_shortest-law-level-order-and-daily-line"
+    "P2NF113_four-thirty-three-real-choice-and-one-score"
    ],
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1795292690,
-   "created": 1795292690
+   "at": 1795169660,
+   "created": 1795169660
   },
   {
    "id": "P3PL13_dancers-not-mad-why-rollout",
@@ -438,42 +437,23 @@
    "created": 1795292689
   },
   {
-   "id": "P2NR200_rereview-silent-disco-after-fixes",
-   "request": "Silent Disco: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
+   "id": "P2NF127_silent-disco-publish-review-fixes",
+   "request": "Silent Disco: publish the finished review fixes (one Looks counter, fits a small phone, rooms stay in view at the win)",
+   "game": "Silent Disco",
    "route": "Claude",
-   "model": "opus",
+   "model": "sonnet",
    "effort": "high",
    "kind": "review",
-   "size": "studio",
+   "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NF111_silent-disco-review-fixes"
+    "P2NR200_rereview-silent-disco-after-fixes"
    ],
    "priority": null,
-   "why": "",
+   "why": "A Don Quixote windmill image, a news item on folk battle troupes competing in formation, and a tracker music sequencer.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1795169635
-  },
-  {
-   "id": "P2NR202_rereview-four-thirty-three-after-fixes",
-   "request": "Four Thirty Three: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF113_four-thirty-three-real-choice-and-one-score"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795169660
+   "created": 1795293964
   },
   {
    "id": "P2NR203_rereview-the-folder-after-fixes",
@@ -738,6 +718,25 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1795151070
+  },
+  {
+   "id": "P2RC22_release-check-crushed-can-shortest-law",
+   "request": "Release checklist for Crushed Can and Shortest Law after their re-review",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR181_rereview-crushed-can-and-shortest-law"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795164614
   },
   {
    "id": "P2RC24_release-check-literal-spirit-ring-of-keys",
@@ -1394,27 +1393,6 @@
    "created": 1795169457
   },
   {
-   "id": "P2RC22_release-check-crushed-can-shortest-law",
-   "request": "Release checklist for Crushed Can and Shortest Law after their re-review",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR181_rereview-crushed-can-and-shortest-law"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NR181_rereview-crushed-can-and-shortest-law"
-   ],
-   "created": 1795164614
-  },
-  {
    "id": "P2RC28_next-please-release-check",
    "request": "Next Please: release checklist after the window look",
    "game": "Studio",
@@ -1624,6 +1602,26 @@
     "P2NR223_rereview-letter-lines-round5"
    ],
    "created": 1795170020
+  },
+  {
+   "id": "P2NR181_rereview-crushed-can-and-shortest-law",
+   "request": "Re-review Crushed Can and Shortest Law after their look builds",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NV166_can-lantern-visual-build-chrome",
+    "P2NV195_shortest-law-level-order-and-daily-line"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795292690,
+   "created": 1795292690
   }
  ]
 }
