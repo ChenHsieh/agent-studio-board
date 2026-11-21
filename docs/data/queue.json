@@ -1,5 +1,5 @@
 {
- "generated": 1795301252,
+ "generated": 1795301821,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -81,25 +81,6 @@
    "created": 1793640233
   },
   {
-   "id": "P2NF124_herbarium-one-screen-clean-deck-and-a-target",
-   "request": "Herbarium: the guess fits one screen, no field photos or visible labels, and each daily says what a good guess is",
-   "game": "Herbarium Guess",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR196_resting-review-biosteganography-and-herbarium-guess"
-   ],
-   "priority": "P3",
-   "why": "Pressed plant herbarium specimens from open archives, with the label cropped away; guess where and when a real specimen was collected from the plant alone.",
-   "state": "running",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
    "id": "P3PL18_silva-to-maaslin2-why-build",
    "request": "Why this exists: add the section to silva-to-maaslin2 through its build step",
    "game": "Studio",
@@ -115,6 +96,45 @@
    "state": "running",
    "at": 1793640233,
    "created": 1793640233
+  },
+  {
+   "id": "P2KS12_kit-sync-next-please-no-favorites-out-of-the-corner",
+   "request": "Kit sync for Next Please, No Favorites and Out of the Corner after their re-reviews",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR171_rereview-out-of-the-corner-and-next-please",
+    "P2NR172_rereview-no-favorites-and-guide-lines"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2KS16_plain-telling-kit-port",
+   "request": "P2KS16_plain telling kit port",
+   "game": "Plain Telling",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NF112_plain-telling-kit-sync-and-draw-tap"
+   ],
+   "priority": null,
+   "why": "A commentary on a 2002 film that tells one story three ways in red, blue and white.",
+   "state": "running",
+   "at": 1795294402,
+   "created": 1795294402
   },
   {
    "id": "P3PL13_dancers-not-mad-why-rollout",
@@ -360,26 +380,6 @@
    "created": 1795294402
   },
   {
-   "id": "P2KS12_kit-sync-next-please-no-favorites-out-of-the-corner",
-   "request": "Kit sync for Next Please, No Favorites and Out of the Corner after their re-reviews",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR171_rereview-out-of-the-corner-and-next-please",
-    "P2NR172_rereview-no-favorites-and-guide-lines"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
-  },
-  {
    "id": "P2KS15_still-fall-kit-port",
    "request": "P2KS15_still fall kit port",
    "game": "Studio",
@@ -394,25 +394,6 @@
    ],
    "priority": null,
    "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
-  },
-  {
-   "id": "P2KS16_plain-telling-kit-port",
-   "request": "P2KS16_plain telling kit port",
-   "game": "Plain Telling",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NF112_plain-telling-kit-sync-and-draw-tap"
-   ],
-   "priority": null,
-   "why": "A commentary on a 2002 film that tells one story three ways in red, blue and white.",
    "state": "ready",
    "waitingOn": [],
    "created": 1795294402
@@ -435,6 +416,25 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1795298002
+  },
+  {
+   "id": "P2NR212_rereview-herbarium-guess-after-fixes",
+   "request": "Herbarium Guess: stranger re-review after its review fixes (obvious play first, five-second test)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NF124_herbarium-one-screen-clean-deck-and-a-target"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795294402
   },
   {
    "id": "P2NR219_rereview-knockout-plate-round5",
@@ -837,6 +837,48 @@
    "created": 1795294402
   },
   {
+   "id": "P2NF133_stripes-text-sizes-and-320",
+   "request": "Straighten the Stripes: house text sizes, nothing cut at 320, long text behind Why",
+   "game": "Biosteganography",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NX40_biosteganography-lead-pass"
+   ],
+   "priority": "P1",
+   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NX40_biosteganography-lead-pass"
+   ],
+   "created": 1795301801
+  },
+  {
+   "id": "P2NF134_stripes-drawn-preview",
+   "request": "Straighten the Stripes: drawn link preview instead of a screenshot",
+   "game": "Biosteganography",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NX40_biosteganography-lead-pass"
+   ],
+   "priority": "P1",
+   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NX40_biosteganography-lead-pass"
+   ],
+   "created": 1795301812
+  },
+  {
    "id": "P2NR224_rereview-readable-nonsense-small-phone",
    "request": "Readable Nonsense: cold re-review after the small-phone layout build",
    "game": "阿嬤讀得出來",
@@ -918,27 +960,6 @@
    "state": "waiting",
    "waitingOn": [
     "P2KS16_plain-telling-kit-port"
-   ],
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR212_rereview-herbarium-guess-after-fixes",
-   "request": "Herbarium Guess: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF124_herbarium-one-screen-clean-deck-and-a-target"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NF124_herbarium-one-screen-clean-deck-and-a-target"
    ],
    "created": 1795294402
   },
@@ -1431,6 +1452,25 @@
    ],
    "priority": "P3",
    "why": "A roadside spirit-guide advertising billboard, plus a joke about a bugged room where the unseen audience reacts.",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2NF124_herbarium-one-screen-clean-deck-and-a-target",
+   "request": "Herbarium: the guess fits one screen, no field photos or visible labels, and each daily says what a good guess is",
+   "game": "Herbarium Guess",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR196_resting-review-biosteganography-and-herbarium-guess"
+   ],
+   "priority": "P3",
+   "why": "Pressed plant herbarium specimens from open archives, with the label cropped away; guess where and when a real specimen was collected from the plant alone.",
    "state": "done",
    "at": 1795294402,
    "created": 1795294402
