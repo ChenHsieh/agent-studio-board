@@ -141,12 +141,12 @@
   {
    "executor": "claude-opus",
    "role": "build",
-   "count": 303,
+   "count": 304,
    "firstTimePass": 99,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 298,
+   "guessed": 299,
    "topFailures": [
     "rooms 16, 25 and 33 at 360x640 run 9-18 px past the screen after the f",
     "on small beds the canvas keeps its tall paper below the board, so on a",
@@ -583,6 +583,15 @@
   },
   {
    "date": "2026-11-21",
+   "task": "pinch points kit layout study",
+   "number": "119",
+   "executor": "claude-opus",
+   "role": "build",
+   "passed": "yes",
+   "note": "the large-text audit; the HUD, ruler numbers and Slow motion tag are fixed px and fail at the large scale, which the port has to fix without"
+  },
+  {
+   "date": "2026-11-21",
    "task": "flying white kit layout study",
    "number": "117",
    "executor": "claude-opus",
@@ -724,15 +733,6 @@
    "role": "review",
    "passed": "yes",
    "note": "level 4's words promise a pin that is not there. Second: below the control row at 390 about 400 px of the screen is empty while the board co"
-  },
-  {
-   "date": "2026-11-21",
-   "task": "rereview billboard wars after fixes",
-   "number": "58",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "DONE P2NR205 re-review of billboard-wars after P2NF117, 2026-11-21 16:00-16:04 EST. Verdict SHIP. No destination is named for billboard-wars"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
