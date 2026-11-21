@@ -1,5 +1,5 @@
 {
- "generated": 1795298517,
+ "generated": 1795299016,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -62,9 +62,9 @@
    "created": 1793640233
   },
   {
-   "id": "P2NF121_fake-philosopher-review-fixes",
-   "request": "Fake Philosopher: slips that read, one goal line per level, the Mohist's finger shows the count, fits a small phone",
-   "game": "Fake Philosopher",
+   "id": "P2NF122_spirit-billboard-review-fixes",
+   "request": "Spirit Billboard: honest goal line and score words, tap-to-change shown on the board, gentle daily, fits a small phone",
+   "game": "Spirit Billboard",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
@@ -75,7 +75,7 @@
     "P2NR198_resting-review-fake-philosopher-and-spirit-billboard"
    ],
    "priority": "P3",
-   "why": "A checklist post on how to pass as a continental philosopher, a prose poem's broken-off word, and a stick-figure meme of a speaker correcting himself.",
+   "why": "A roadside spirit-guide advertising billboard, plus a joke about a bugged room where the unseen audience reacts.",
    "state": "running",
    "at": 1795294402,
    "created": 1795294402
@@ -98,8 +98,8 @@
    "created": 1793640233
   },
   {
-   "id": "P2NR206_rereview-orbit-rings-after-fixes",
-   "request": "Orbit Rings: stranger re-review after its review fixes (obvious play first, five-second test)",
+   "id": "P2NR209_rereview-fake-philosopher-after-fixes",
+   "request": "Fake Philosopher: stranger re-review after its review fixes (obvious play first, five-second test)",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
@@ -108,7 +108,7 @@
    "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2NF118_orbit-rings-review-fixes"
+    "P2NF121_fake-philosopher-review-fixes"
    ],
    "priority": null,
    "why": "",
@@ -267,25 +267,6 @@
    "created": 1795294402
   },
   {
-   "id": "P2NF122_spirit-billboard-review-fixes",
-   "request": "Spirit Billboard: honest goal line and score words, tap-to-change shown on the board, gentle daily, fits a small phone",
-   "game": "Spirit Billboard",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR198_resting-review-fake-philosopher-and-spirit-billboard"
-   ],
-   "priority": "P3",
-   "why": "A roadside spirit-guide advertising billboard, plus a joke about a bugged room where the unseen audience reacts.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
-  },
-  {
    "id": "P2NF124_herbarium-one-screen-clean-deck-and-a-target",
    "request": "Herbarium: the guess fits one screen, no field photos or visible labels, and each daily says what a good guess is",
    "game": "Herbarium Guess",
@@ -322,6 +303,44 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1795294402
+  },
+  {
+   "id": "P2NF130_orbit-rings-level4-words-and-zh-labels",
+   "request": "Orbit Rings: level 4 stops naming a pinned letter that is not there; Chinese mode names its levels and Why button in Chinese",
+   "game": "Orbit Rings",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR206_rereview-orbit-rings-after-fixes"
+   ],
+   "priority": "P3",
+   "why": "A math visualization post of permutation orbits and the Hungarian Rings puzzle.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795298602
+  },
+  {
+   "id": "P2NF131_lens-screen-small-phone-rule-line",
+   "request": "Lens Screen: phones shorter than 700 px show the drag instruction again, the Chinese name stays on one line, and the result buttons sit on screen",
+   "game": "Lens Screen",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR208_rereview-lens-screen-after-fixes"
+   ],
+   "priority": "P3",
+   "why": "A short video of a photographer shooting through a printed patterned glass screen instead of using editing software.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795298917
   },
   {
    "id": "P2FS70_onescreen-gate-inner-scroll",
@@ -435,25 +454,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1795298002
-  },
-  {
-   "id": "P2NR208_rereview-lens-screen-after-fixes",
-   "request": "Lens Screen: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF120_lens-screen-big-words-and-fit"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
   },
   {
    "id": "P2NV208_knockout-plate-visual-build-pieces",
@@ -937,27 +937,6 @@
    "state": "waiting",
    "waitingOn": [
     "P2KS16_plain-telling-kit-port"
-   ],
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR209_rereview-fake-philosopher-after-fixes",
-   "request": "Fake Philosopher: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF121_fake-philosopher-review-fixes"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NF121_fake-philosopher-review-fixes"
    ],
    "created": 1795294402
   },
@@ -1484,6 +1463,25 @@
    "created": 1795294402
   },
   {
+   "id": "P2NF121_fake-philosopher-review-fixes",
+   "request": "Fake Philosopher: slips that read, one goal line per level, the Mohist's finger shows the count, fits a small phone",
+   "game": "Fake Philosopher",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR198_resting-review-fake-philosopher-and-spirit-billboard"
+   ],
+   "priority": "P3",
+   "why": "A checklist post on how to pass as a continental philosopher, a prose poem's broken-off word, and a stick-figure meme of a speaker correcting himself.",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
    "id": "P2NF115_think-elephant",
    "request": "P2NF115_think elephant",
    "game": "Think Elephant",
@@ -1580,6 +1578,25 @@
    "created": 1795294402
   },
   {
+   "id": "P2NR206_rereview-orbit-rings-after-fixes",
+   "request": "Orbit Rings: stranger re-review after its review fixes (obvious play first, five-second test)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NF118_orbit-rings-review-fixes"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
    "id": "P2NR207_rereview-triangle-lexicon-after-fixes",
    "request": "Triangle Lexicon: stranger re-review after its review fixes (obvious play first, five-second test)",
    "game": "Studio",
@@ -1591,6 +1608,25 @@
    "estMinutes": null,
    "after": [
     "P2NF119_triangle-lexicon-par-and-fit"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2NR208_rereview-lens-screen-after-fixes",
+   "request": "Lens Screen: stranger re-review after its review fixes (obvious play first, five-second test)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NF120_lens-screen-big-words-and-fit"
    ],
    "priority": null,
    "why": "",

@@ -199,12 +199,12 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 253,
+   "count": 255,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 251,
+   "guessed": 253,
    "topFailures": [],
    "flag": "give more"
   },
@@ -267,12 +267,12 @@
   {
    "executor": "claude-sonnet",
    "role": "review",
-   "count": 28,
+   "count": 29,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 28,
+   "guessed": 29,
    "topFailures": [],
    "flag": "give more"
   },
@@ -610,12 +610,30 @@
   },
   {
    "date": "2026-11-21",
+   "task": "rereview lens screen after fixes",
+   "number": "41",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "on a small phone the game no longer says what to drag; it relies on the pulsing DRAG tile alone."
+  },
+  {
+   "date": "2026-11-21",
    "task": "rereview triangle lexicon after fixes",
    "number": "28",
    "executor": "claude-opus",
    "role": "review",
    "passed": "yes",
    "note": "DONE P2NR207 re-review of triangle-lexicon after P2NF119, 2026-11-21 16:05-16:13 EST. Verdict revise (2nd revise row, plain Sonnet fix queue"
+  },
+  {
+   "date": "2026-11-21",
+   "task": "rereview orbit rings after fixes",
+   "number": "81",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "level 4's words promise a pin that is not there. Second: below the control row at 390 about 400 px of the screen is empty while the board co"
   },
   {
    "date": "2026-11-21",
@@ -673,6 +691,15 @@
   },
   {
    "date": "2026-11-21",
+   "task": "fake philosopher review fixes",
+   "number": "97",
+   "executor": "claude-sonnet",
+   "role": "review",
+   "passed": "yes",
+   "note": "DONE"
+  },
+  {
+   "date": "2026-11-21",
    "task": "lens screen big words and fit",
    "number": "41",
    "executor": "claude-sonnet",
@@ -706,33 +733,6 @@
    "role": "build",
    "passed": "yes",
    "note": "DONE. play-template main d6d406a (squash of chen-template-check-win-hold). kit VERSION 54 -> 55."
-  },
-  {
-   "date": "2026-11-20",
-   "task": "howto focus ring after touch",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "no",
-   "note": "DONE. Kit 53 (play-template main 98b8a11). focus handed back to the ? button (and the prem"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "date line under daily result title",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE. Kit 54 (play-template main b85c6ee). core.js renderResult: on the daily with a game resultTitle, #result-sub (made by the kit if absen"
-  },
-  {
-   "date": "2026-11-20",
-   "task": "kit better higher test honours besttext",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."

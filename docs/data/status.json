@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T22:01:42+00:00",
+ "generated": "2026-11-21T22:10:01+00:00",
  "ops": {
   "count": 4,
   "notes": [
@@ -26,23 +26,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 66,
+    "queued": 65,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2640,
-    "estimateMinutes": 2640
+    "minutes": 2600,
+    "estimateMinutes": 2600
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 14,
+    "doneToday": 17,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 67,
+  "queued": 66,
   "running": 6,
-  "doneToday": 14,
+  "doneToday": 17,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -52,23 +52,23 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 3060,
-  "estimatedFinish": "2026-11-23T18:01:42+00:00",
-  "estimateMinutes": 2640
+  "minutesRemaining": 3020,
+  "estimatedFinish": "2026-11-23T17:30:01+00:00",
+  "estimateMinutes": 2600
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "fake-philosopher",
-   "task": "P2NF121_fake philosopher review fixes",
-   "since": "2026-11-21T21:41:10+00:00",
-   "activity": "2026-11-21T22:01:34+00:00",
+   "game": "spirit-billboard",
+   "task": "P2NF122_spirit billboard review fixes",
+   "since": "2026-11-21T22:03:27+00:00",
+   "activity": "2026-11-21T22:09:49+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
    "game": "Multiple games",
-   "task": "P2NR206_rereview orbit rings after fixes",
+   "task": "P2NR209_rereview fake philosopher after fixes",
    "since": null,
    "activity": null,
    "commit": null
@@ -110,8 +110,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1187,
-  "usdEst": 4273.2,
+  "runs": 1191,
+  "usdEst": 4287.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -221,7 +221,7 @@
   },
   {
    "day": "2026-11-21",
-   "changes": 7
+   "changes": 11
   }
  ],
  "houseRules": 25,
@@ -7712,30 +7712,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 61.94,
+   "costTotalUsd": 65.54,
    "latestChange": {
-    "text": "fix: every slip word fits, one goal line per level, the finger counts, no empty half,...",
-    "at": "2026-11-21T22:01:46+00:00"
+    "text": "review fixes: slips fit, goal line per level, finger count, board fits small phone, marks...",
+    "at": "2026-11-21T22:03:20+00:00"
    },
    "promo": null,
    "why": "A checklist post on how to pass as a continental philosopher, a prose poem's broken-off word, and a stick-figure meme of a speaker correcting himself.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 1
+    "daysInState": 0
    },
-   "waitingOn": "fake philosopher review fixes",
+   "waitingOn": "none",
    "id": "fake-philosopher",
    "number": 97,
    "repo": "fake-philosopher",
    "title": "Fake Philosopher",
    "line": "Build an ornate paragraph while a sceptical reader tries.",
    "url": "https://chenhsieh.github.io/fake-philosopher/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "A story, slower flashing, clear whether it is logic or",
    "shelfNote": "",
@@ -7749,33 +7749,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:37:21+00:00",
-   "lastChange": "2026-11-21T22:01:46+00:00",
+   "lastChange": "2026-11-21T22:03:20+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 1,
     "codexTokens": 620398,
     "codexUsdEst": 0.74,
-    "claudeUsdEst": 7.2,
+    "claudeUsdEst": 10.8,
     "earlierRounds": 15,
     "earlierUsdEst": 54.0,
-    "totalUsdEst": 61.94
+    "totalUsdEst": 65.54
    },
    "tasks": [
     {
      "title": "P2NF121_fake philosopher review fixes",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Fake Philosopher: slips that read, one goal line per level, the Mohist's finger shows the count, fits a small phone",
-     "since": "2026-11-21T21:41:10+00:00",
-     "done": null,
+     "since": "2026-11-21T20:53:22+00:00",
+     "done": "2026-11-21T20:53:22+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE"
     },
     {
      "title": "P2FP00_fake philosopher tests green",
@@ -7864,9 +7864,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": {
     "date": "2026-11-20",
@@ -7874,8 +7874,14 @@
     "note": "Saving the one paradox that covers two claims is a real choice that covering each claim at once never reaches par on, but the slips clip their words, every level says the same thing and the sceptic's raised finger is a meter with three boxes"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-21T22:03:20+00:00",
+     "ok": true,
+     "note": "review fixes: slips fit, goal line per level, finger count, board fits small phone, marks and par on win sheet",
+     "source": "board note"
+    },
     {
      "at": "2026-11-21T22:01:46+00:00",
      "ok": true,
@@ -7941,12 +7947,6 @@
      "ok": true,
      "note": "feat: match court claims by shape",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-21T05:38:57+00:00",
-     "ok": true,
-     "note": "feat: match court claims by shape",
-     "source": "main commit"
     }
    ]
   },
@@ -16199,31 +16199,31 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 46.8,
+   "nextTask": "Lens Screen: phones shorter than 700 px show...",
+   "costTotalUsd": 50.4,
    "latestChange": {
-    "text": "P2NF120: big words, worded result buttons, swipe scrolls page, fits small phones",
-    "at": "2026-11-21T21:40:46+00:00"
+    "text": "P2NR208 re-review: revise, P2NF131 queued (rule line hidden under 700 px tall)",
+    "at": "2026-11-21T22:09:04+00:00"
    },
    "promo": null,
    "why": "A short video of a photographer shooting through a printed patterned glass screen instead of using editing software.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
-    "reviseRound": 1,
+    "reviseRound": 2,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "lens screen small phone rule line",
    "id": "lens-screen",
    "number": 41,
    "repo": "lens-screen",
    "title": "Lens Screen",
    "line": "Drag a screen over the cup.",
    "url": "https://chenhsieh.github.io/lens-screen/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P3",
    "priorityNote": "Storyteller pass on why it is fun",
    "shelfNote": "",
@@ -16237,7 +16237,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T04:07:44+00:00",
-   "lastChange": "2026-11-21T21:40:46+00:00",
+   "lastChange": "2026-11-21T22:09:04+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -16246,11 +16246,25 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 11,
-    "earlierUsdEst": 39.6,
-    "totalUsdEst": 46.8
+    "earlierRounds": 12,
+    "earlierUsdEst": 43.2,
+    "totalUsdEst": 50.4
    },
    "tasks": [
+    {
+     "title": "P2NF131_lens screen small phone rule line",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Lens Screen: phones shorter than 700 px show the drag instruction again, the Chinese name stays on one line, and the result buttons sit on screen",
+     "since": "2026-11-21T22:08:37+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2NF120_lens screen big words and fit",
      "state": "done",
@@ -16309,19 +16323,25 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
    },
    "verdict": {
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "verdict": "revise",
-    "note": "Taping each screen where it helps most right now misses the best photo on most later visits, a real choice, but the words are small, the photo buttons have no words and the page scrolls on smaller phones"
+    "note": "The words are now big and the photo buttons say what they do, but on phones shorter than 700 px the line that says what to drag is hidden, and the Chinese title breaks onto two lines"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-21T22:09:04+00:00",
+     "ok": true,
+     "note": "P2NR208 re-review: revise, P2NF131 queued (rule line hidden under 700 px tall)",
+     "source": "board note"
+    },
     {
      "at": "2026-11-21T21:40:46+00:00",
      "ok": true,
@@ -16387,12 +16407,6 @@
      "ok": true,
      "note": "P3 core verdict + brief",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-15T20:44:05+00:00",
-     "ok": true,
-     "note": "feat: credit lightnlense",
-     "source": "main commit"
     }
    ]
   },
@@ -23635,31 +23649,31 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 75.89,
+   "nextTask": "Orbit Rings: level 4 stops naming a pinned...",
+   "costTotalUsd": 79.49,
    "latestChange": {
-    "text": "P2NF118: wheel colours, open-frame windows, goal lines, one screen on small phones",
-    "at": "2026-11-21T21:30:49+00:00"
+    "text": "P2NR206 re-review: revise, P2NF130 queued (level 4 pinned-letter words, zh labels)",
+    "at": "2026-11-21T22:09:04+00:00"
    },
    "promo": null,
    "why": "A math visualization post of permutation orbits and the Hungarian Rings puzzle.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
-    "reviseRound": 1,
+    "reviseRound": 2,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "orbit rings level4 words and zh labels",
    "id": "orbit-rings",
    "number": 81,
    "repo": "orbit-rings",
    "title": "Orbit Rings",
    "line": "Rings of coloured balls cross each other, and a ball.",
    "url": "https://chenhsieh.github.io/orbit-rings/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P3",
    "priorityNote": "An eccentric twist from the inspiration collection and a",
    "shelfNote": "",
@@ -23673,7 +23687,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:37:01+00:00",
-   "lastChange": "2026-11-21T21:30:49+00:00",
+   "lastChange": "2026-11-21T22:09:04+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -23682,11 +23696,25 @@
     "codexTokens": 241668,
     "codexUsdEst": 0.29,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 19,
-    "earlierUsdEst": 68.4,
-    "totalUsdEst": 75.89
+    "earlierRounds": 20,
+    "earlierUsdEst": 72.0,
+    "totalUsdEst": 79.49
    },
    "tasks": [
+    {
+     "title": "P2NF130_orbit rings level4 words and zh labels",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Orbit Rings: level 4 stops naming a pinned letter that is not there; Chinese mode names its levels and Why button in Chinese",
+     "since": "2026-11-21T22:03:22+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2NF118_orbit rings review fixes",
      "state": "done",
@@ -23745,19 +23773,25 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
    },
    "verdict": {
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "verdict": "revise",
-    "note": "Turning paper wheels to fill letter windows is a real puzzle where turning whatever fills a window now reaches par a quarter of the time on levels four and five and never on six to eight, but two wheels share one colour, windows look like letters, the words on the letters are too small to read and late levels have no goal line"
+    "note": "Each wheel now has its own colour and every window reads as an empty frame, but level 4 still asks you to keep a pinned letter that is not on the board, and Chinese mode leaves the level names in English"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-21T22:09:04+00:00",
+     "ok": true,
+     "note": "P2NR206 re-review: revise, P2NF130 queued (level 4 pinned-letter words, zh labels)",
+     "source": "board note"
+    },
     {
      "at": "2026-11-21T21:30:49+00:00",
      "ok": true,
@@ -23822,12 +23856,6 @@
      "at": "2026-10-18T08:34:11+00:00",
      "ok": true,
      "note": "daily-keep- live: review of the Today lock; an old save that already played a daily keeps Today open (was re-locked, even Done today greyed out);",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-18T08:34:11+00:00",
-     "ok": true,
-     "note": "also fixed test/r1016 daily check, which had been failing on main since the lock shipped",
      "source": "board note"
     }
    ]
@@ -33899,7 +33927,7 @@
    ]
   },
   {
-   "nextTask": "Spirit Billboard: honest goal line and score words...",
+   "nextTask": null,
    "costTotalUsd": 54.29,
    "latestChange": {
     "text": "Sync fixed onescreen-shell (P2FS38 fixes)",
@@ -33922,8 +33950,8 @@
    "title": "Spirit Billboard",
    "line": "Paste pictures on a roadside billboard and watch the.",
    "url": "https://chenhsieh.github.io/spirit-billboard/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P3",
    "priorityNote": "Make the premise digestible with a new spin",
    "shelfNote": "",
@@ -33937,7 +33965,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T23:26:27+00:00",
-   "lastChange": "2026-11-21T20:53:22+00:00",
+   "lastChange": "2026-11-21T22:09:49+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -33953,10 +33981,10 @@
    "tasks": [
     {
      "title": "P2NF122_spirit billboard review fixes",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Spirit Billboard: honest goal line and score words, tap-to-change shown on the board, gentle daily, fits a small phone",
-     "since": "2026-11-21T20:53:22+00:00",
+     "since": "2026-11-21T22:03:27+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -33995,8 +34023,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 2
    },
@@ -38188,10 +38216,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 90.11,
+   "costTotalUsd": 93.71,
    "latestChange": {
-    "text": "P2NF115: 320x568 one screen, tray one sideways row, quote above result card",
-    "at": "2026-11-21T21:16:53+00:00"
+    "text": "P2NR204 re-review: ship (no destination, nothing queued)",
+    "at": "2026-11-21T22:09:04+00:00"
    },
    "promo": null,
    "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
@@ -38225,7 +38253,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T05:05:24+00:00",
-   "lastChange": "2026-11-21T21:16:53+00:00",
+   "lastChange": "2026-11-21T22:09:04+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -38234,9 +38262,9 @@
     "codexTokens": 91844,
     "codexUsdEst": 0.11,
     "claudeUsdEst": 43.2,
-    "earlierRounds": 13,
-    "earlierUsdEst": 46.8,
-    "totalUsdEst": 90.11
+    "earlierRounds": 14,
+    "earlierUsdEst": 50.4,
+    "totalUsdEst": 93.71
    },
    "tasks": [
     {
@@ -38367,6 +38395,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-11-21T22:09:04+00:00",
+     "ok": true,
+     "note": "P2NR204 re-review: ship (no destination, nothing queued)",
+     "source": "board note"
+    },
+    {
      "at": "2026-11-21T21:16:53+00:00",
      "ok": true,
      "note": "P2NF115: 320x568 one screen, tray one sideways row, quote above result card",
@@ -38431,12 +38465,6 @@
      "ok": true,
      "note": "P2TE06: hint, rule line and result quote are real 20-26 px text; forest draws the chalk route and a door arrow; main live",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-24T15:18:15+00:00",
-     "ok": true,
-     "note": "feat: bigger readable words, a chalk path and a door arrow in the forest",
-     "source": "main commit"
     }
    ]
   },
