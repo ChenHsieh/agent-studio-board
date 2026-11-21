@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-21T23:44:54+00:00",
+ "generated": "2026-11-21T23:54:23+00:00",
  "ops": {
-  "count": 7,
+  "count": 10,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "Two tasks share the number P2NF18.",
@@ -28,23 +28,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 57,
+    "queued": 52,
     "running": 0,
     "doneToday": 0,
-    "minutes": 2280,
-    "estimateMinutes": 2280
+    "minutes": 2080,
+    "estimateMinutes": 2080
    },
    "Claude": {
     "queued": 1,
-    "running": 7,
-    "doneToday": 33,
-    "minutes": 480,
-    "estimateMinutes": 240
+    "running": 8,
+    "doneToday": 37,
+    "minutes": 540,
+    "estimateMinutes": 270
    }
   },
-  "queued": 58,
-  "running": 7,
-  "doneToday": 33,
+  "queued": 53,
+  "running": 8,
+  "doneToday": 37,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -54,9 +54,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2760,
-  "estimatedFinish": "2026-11-23T13:44:54+00:00",
-  "estimateMinutes": 2280
+  "minutesRemaining": 2620,
+  "estimatedFinish": "2026-11-23T10:34:23+00:00",
+  "estimateMinutes": 2080
  },
  "lanes": [
   {
@@ -77,10 +77,18 @@
   },
   {
    "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P2RC26_release check motif hero no unison",
-   "since": null,
-   "activity": null,
+   "game": "orbit-rings",
+   "task": "P2NF130_orbit rings level4 words and zh labels",
+   "since": "2026-11-21T23:50:13+00:00",
+   "activity": "2026-11-21T23:50:39+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "lens-screen",
+   "task": "P2NF131_lens screen small phone rule line",
+   "since": "2026-11-21T23:50:16+00:00",
+   "activity": "2026-11-21T23:50:16+00:00",
    "commit": null
   },
   {
@@ -117,11 +125,11 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 7,
+ "claudeWorkers": 8,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1208,
-  "usdEst": 4348.8,
+  "runs": 1212,
+  "usdEst": 4363.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -16292,7 +16300,7 @@
    ]
   },
   {
-   "nextTask": "Lens Screen: phones shorter than 700 px show...",
+   "nextTask": null,
    "costTotalUsd": 50.4,
    "latestChange": {
     "text": "P2NR208 re-review: revise, P2NF131 queued (rule line hidden under 700 px tall)",
@@ -16315,8 +16323,8 @@
    "title": "Lens Screen",
    "line": "Drag a screen over the cup.",
    "url": "https://chenhsieh.github.io/lens-screen/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P3",
    "priorityNote": "Storyteller pass on why it is fun",
    "shelfNote": "",
@@ -16330,7 +16338,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T04:07:44+00:00",
-   "lastChange": "2026-11-21T22:09:04+00:00",
+   "lastChange": "2026-11-21T23:50:16+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -16346,10 +16354,10 @@
    "tasks": [
     {
      "title": "P2NF131_lens screen small phone rule line",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Lens Screen: phones shorter than 700 px show the drag instruction again, the Chinese name stays on one line, and the result buttons sit on screen",
-     "since": "2026-11-21T22:08:37+00:00",
+     "since": "2026-11-21T23:50:16+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -16416,8 +16424,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 4
    },
@@ -23748,7 +23756,7 @@
    ]
   },
   {
-   "nextTask": "Orbit Rings: level 4 stops naming a pinned...",
+   "nextTask": null,
    "costTotalUsd": 79.49,
    "latestChange": {
     "text": "P2NR206 re-review: revise, P2NF130 queued (level 4 pinned-letter words, zh labels)",
@@ -23771,8 +23779,8 @@
    "title": "Orbit Rings",
    "line": "Rings of coloured balls cross each other, and a ball.",
    "url": "https://chenhsieh.github.io/orbit-rings/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P3",
    "priorityNote": "An eccentric twist from the inspiration collection and a",
    "shelfNote": "",
@@ -23786,7 +23794,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T01:37:01+00:00",
-   "lastChange": "2026-11-21T22:09:04+00:00",
+   "lastChange": "2026-11-21T23:50:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -23802,10 +23810,10 @@
    "tasks": [
     {
      "title": "P2NF130_orbit rings level4 words and zh labels",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Orbit Rings: level 4 stops naming a pinned letter that is not there; Chinese mode names its levels and Why button in Chinese",
-     "since": "2026-11-21T22:03:22+00:00",
+     "since": "2026-11-21T23:50:13+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -23872,8 +23880,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 4
    },
@@ -43878,8 +43886,8 @@
    "ran": 0
   },
   "credits": {
-   "yes": 82,
-   "no": 80,
+   "yes": 83,
+   "no": 79,
    "unknown": 36,
    "ran": 0
   },
