@@ -199,12 +199,12 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 248,
+   "count": 249,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 246,
+   "guessed": 247,
    "topFailures": [],
    "flag": "give more"
   },
@@ -556,6 +556,15 @@
  "last": [
   {
    "date": "2026-11-21",
+   "task": "rereview triangle lexicon after fixes",
+   "number": "28",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "DONE P2NR207 re-review of triangle-lexicon after P2NF119, 2026-11-21 16:05-16:13 EST. Verdict revise (2nd revise row, plain Sonnet fix queue"
+  },
+  {
+   "date": "2026-11-21",
    "task": "rereview billboard wars after fixes",
    "number": "58",
    "executor": "claude-opus",
@@ -724,15 +733,6 @@
    "role": "build",
    "passed": "yes",
    "note": "P3KT59 DONE. play-template kit 44 (main 1a91bb6). firstminute.json undo step accepts optional \"later\" {en, zh-Hant}: shown when the mistake "
-  },
-  {
-   "date": "2026-11-20",
-   "task": "kit mistake by reachable score",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "design",
-   "passed": "yes",
-   "note": "P3KT58 DONE. play-template kit 43 (main 02c5691). core.js: a first-minute move is a mistake (Undo line) only when reachable(after) is worse "
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
