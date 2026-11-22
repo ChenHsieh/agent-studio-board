@@ -1,5 +1,5 @@
 {
- "generated": 1795324800,
+ "generated": 1795325368,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -98,16 +98,18 @@
    "created": 1793640233
   },
   {
-   "id": "P2RC43_release-check-gallery-guess-mirror-hold",
-   "request": "Gallery Guess and Mirror Hold: first release checklist pass (credits, previews, accessible play, console)",
+   "id": "P2NR222_rereview-lantern-meeting-round5",
+   "request": "Lantern Meeting: stranger re-review of the live page after tonight's change; ship goes to its release check",
    "game": "Studio",
    "route": "Claude",
-   "model": "sonnet",
+   "model": "opus",
    "effort": "high",
-   "kind": "build",
-   "size": "one repo",
+   "kind": "review",
+   "size": "studio",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P2NV212_lantern-meeting-visual-build-pieces"
+   ],
    "priority": null,
    "why": "",
    "state": "running",
@@ -200,44 +202,6 @@
    "estMinutes": null,
    "after": [
     "P2NF126_coat-corridor-review-fixes"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR221_rereview-thirsty-clicks-round5",
-   "request": "Thirsty Clicks: stranger re-review of the live page after tonight's change; ship goes to its release check",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NV210_thirsty-clicks-visual-build-flat"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR222_rereview-lantern-meeting-round5",
-   "request": "Lantern Meeting: stranger re-review of the live page after tonight's change; ship goes to its release check",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NV212_lantern-meeting-visual-build-pieces"
    ],
    "priority": null,
    "why": "",
@@ -361,6 +325,25 @@
    "created": 1795294402
   },
   {
+   "id": "P2RC37_release-check-thirsty-clicks",
+   "request": "Thirsty Clicks: release checklist pass after its re-review (credits, previews, accessible play, console)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR221_rereview-thirsty-clicks-round5"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795294402
+  },
+  {
    "id": "P2RC44_release-check-thumb-stand-peony-dream",
    "request": "Thumb Stand and Peony Dream: first release checklist pass (credits, previews, accessible play, console)",
    "game": "Studio",
@@ -446,27 +429,6 @@
    "state": "waiting",
    "waitingOn": [
     "P2NB40_slab-core"
-   ],
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC37_release-check-thirsty-clicks",
-   "request": "Thirsty Clicks: release checklist pass after its re-review (credits, previews, accessible play, console)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR221_rereview-thirsty-clicks-round5"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NR221_rereview-thirsty-clicks-round5"
    ],
    "created": 1795294402
   },
@@ -1463,6 +1425,25 @@
    "created": 1795294402
   },
   {
+   "id": "P2NR221_rereview-thirsty-clicks-round5",
+   "request": "Thirsty Clicks: stranger re-review of the live page after tonight's change; ship goes to its release check",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NV210_thirsty-clicks-visual-build-flat"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
    "id": "P2NT05_destinations-for-shipped-games",
    "request": "a proposed place to go for every shipped game that has none yet (proposal only, nothing decided)",
    "game": "Studio",
@@ -1840,6 +1821,23 @@
   {
    "id": "P2RC42_release-check-sockglass-time-material",
    "request": "Sockglass and Time as Material: first release checklist pass (credits, previews, accessible play, console)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2RC43_release-check-gallery-guess-mirror-hold",
+   "request": "Gallery Guess and Mirror Hold: first release checklist pass (credits, previews, accessible play, console)",
    "game": "Studio",
    "route": "Claude",
    "model": "sonnet",

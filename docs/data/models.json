@@ -199,24 +199,24 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 263,
+   "count": 264,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 261,
+   "guessed": 262,
    "topFailures": [],
    "flag": "give more"
   },
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 662,
+   "count": 663,
    "firstTimePass": 96,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 604,
+   "guessed": 605,
    "topFailures": [
     "DONE",
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
@@ -556,6 +556,15 @@
  "last": [
   {
    "date": "2026-11-22",
+   "task": "release check gallery guess mirror hold",
+   "number": "22",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE for the mechanical part (gallery-guess published once); NOT YET for the rest"
+  },
+  {
+   "date": "2026-11-22",
    "task": "release check sockglass time material",
    "number": "23",
    "executor": "claude-sonnet",
@@ -580,6 +589,15 @@
    "role": "build",
    "passed": "yes",
    "note": "both games newest verdict is ship, no asks/archived row, no other session on either repo."
+  },
+  {
+   "date": "2026-11-22",
+   "task": "rereview thirsty clicks round5",
+   "number": "107",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "canvas captions are small at 320 (\"PROPAGATION FLAT 04\", \"POSSIBLE GARDENS\", \"Listens 2 · safe count 5\" about 10-14 px) and the board sits s"
   },
   {
    "date": "2026-11-22",
@@ -715,24 +733,6 @@
    "role": "build",
    "passed": "yes",
    "note": "changes levels in seq.js and the tests that read them): songs 4, 6, 10, 11 all ask who sings which of two figures. Options: (a) replace 4, 1"
-  },
-  {
-   "date": "2026-11-21",
-   "task": "readable nonsense small phone lead",
-   "number": "75",
-   "executor": "claude-opus",
-   "role": "build",
-   "passed": "yes",
-   "note": "the daily filter, call 6. Options: (a) reading-order + random-share filters as measured, regenerate game-rules.js, two added daily-test chec"
-  },
-  {
-   "date": "2026-11-21",
-   "task": "pinch points kit layout study",
-   "number": "119",
-   "executor": "claude-opus",
-   "role": "build",
-   "passed": "yes",
-   "note": "the large-text audit; the HUD, ruler numbers and Slow motion tag are fixed px and fail at the large scale, which the port has to fix without"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."

@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-22T05:19:47+00:00",
+ "generated": "2026-11-22T05:29:15+00:00",
  "ops": {
-  "count": 7,
+  "count": 6,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "Two tasks share the number P2NF18.",
@@ -28,22 +28,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 20,
+    "queued": 19,
     "running": 0,
     "doneToday": 0,
-    "minutes": 800,
-    "estimateMinutes": 800
+    "minutes": 760,
+    "estimateMinutes": 760
    },
    "Claude": {
     "queued": 1,
-    "running": 6,
+    "running": 5,
     "doneToday": 0,
-    "minutes": 420,
-    "estimateMinutes": 210
+    "minutes": 360,
+    "estimateMinutes": 180
    }
   },
-  "queued": 21,
-  "running": 6,
+  "queued": 20,
+  "running": 5,
   "doneToday": 0,
   "lanes": {
    "Codex": 1,
@@ -54,19 +54,11 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1220,
-  "estimatedFinish": "2026-11-22T18:39:47+00:00",
-  "estimateMinutes": 800
+  "minutesRemaining": 1120,
+  "estimatedFinish": "2026-11-22T18:09:15+00:00",
+  "estimateMinutes": 760
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P2RC43_release check gallery guess mirror hold",
-   "since": null,
-   "activity": null,
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "the-apprentice",
@@ -109,11 +101,11 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 6,
+ "claudeWorkers": 5,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1248,
-  "usdEst": 4492.8,
+  "runs": 1253,
+  "usdEst": 4510.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -227,7 +219,7 @@
   },
   {
    "day": "2026-11-22",
-   "changes": 1
+   "changes": 2
   }
  ],
  "houseRules": 25,
@@ -10305,10 +10297,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 53.92,
+   "costTotalUsd": 57.52,
    "latestChange": {
-    "text": "visual round built: fits 320x568, 18px floor, HUD row Lives/Placed, glyph cues, word end...",
-    "at": "2026-11-13T22:53:25+00:00"
+    "text": "share line shortened to 117 characters (release check)",
+    "at": "2026-11-22T05:23:09+00:00"
    },
    "promo": null,
    "why": "Public-domain objects from The Metropolitan Museum of Art's open collection API.",
@@ -10345,8 +10337,8 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-09-21T02:50:33+00:00",
-   "lastChange": "2026-11-13T22:53:25+00:00",
+   "firstSeen": "2026-10-14T20:04:03+00:00",
+   "lastChange": "2026-11-22T05:23:09+00:00",
    "cost": {
     "apiUsd": 3.31,
     "codexRuns": 1,
@@ -10355,9 +10347,9 @@
     "codexTokens": 177723,
     "codexUsdEst": 0.21,
     "claudeUsdEst": 21.6,
-    "earlierRounds": 8,
-    "earlierUsdEst": 28.8,
-    "totalUsdEst": 53.92
+    "earlierRounds": 9,
+    "earlierUsdEst": 32.4,
+    "totalUsdEst": 57.52
    },
    "tasks": [
     {
@@ -10488,6 +10480,18 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-11-22T05:23:09+00:00",
+     "ok": true,
+     "note": "share line shortened to 117 characters (release check)",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-22T05:22:08+00:00",
+     "ok": true,
+     "note": "fix: share line is under 120 characters",
+     "source": "main commit"
+    },
+    {
      "at": "2026-11-13T22:53:25+00:00",
      "ok": true,
      "note": "visual round built: fits 320x568, 18px floor, HUD row Lives/Placed, glyph cues, word end tags, short strip dates, new share line, drawn og; live",
@@ -10545,18 +10549,6 @@
      "at": "2026-10-20T05:45:30+00:00",
      "ok": true,
      "note": "ship standard: home, archive, practice by department E/M/H, stats, collection, one-rule how-to; cross-links removed; live",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-20T05:43:06+00:00",
-     "ok": true,
-     "note": "feat: archive, practice by department with difficulty, stats and a collection",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-20T04:03:08+00:00",
-     "ok": true,
-     "note": "Capped share text, permanent time-and-dig ranks and finds; live checked with touch at 390 and 320.",
      "source": "board note"
     }
    ]
@@ -38600,7 +38592,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 2
+    "daysInState": 0
    },
    "waitingOn": "owner",
    "id": "thirsty-clicks",
@@ -38762,9 +38754,9 @@
     "done": 10
    },
    "verdict": {
-    "date": "2026-11-20",
+    "date": "2026-11-22",
     "verdict": "ship",
-    "note": "Micing every plant in order still misses the safe count on levels 4 to 6, and the winning tap now leaves a card that says over, on or under the safe count with Try again first when over"
+    "note": "Live game unchanged and still fits one phone screen; marking every plant in order still misses the safe count on levels 4 to 6; the new seed-flat look is built and waits on one top-bar call at 320 wide"
    },
    "needsYou": null,
    "inProgress": false,
