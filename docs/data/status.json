@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T06:55:12+00:00",
+ "generated": "2026-11-22T07:04:41+00:00",
  "ops": {
   "count": 10,
   "notes": [
@@ -28,22 +28,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 7,
+    "queued": 10,
     "running": 0,
     "doneToday": 0,
-    "minutes": 280,
-    "estimateMinutes": 280
+    "minutes": 400,
+    "estimateMinutes": 400
    },
    "Claude": {
     "queued": 1,
-    "running": 5,
+    "running": 6,
     "doneToday": 2,
-    "minutes": 360,
-    "estimateMinutes": 180
+    "minutes": 420,
+    "estimateMinutes": 210
    }
   },
-  "queued": 8,
-  "running": 5,
+  "queued": 11,
+  "running": 6,
   "doneToday": 2,
   "lanes": {
    "Codex": 1,
@@ -54,15 +54,23 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 640,
-  "estimatedFinish": "2026-11-22T11:35:12+00:00",
-  "estimateMinutes": 280
+  "minutesRemaining": 820,
+  "estimatedFinish": "2026-11-22T13:44:41+00:00",
+  "estimateMinutes": 400
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "Multiple games",
-   "task": "P2RC46_release check life statistics",
+   "task": "P2NR227_rereview no unison after next level fit",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P2UX09_refresh release sweep files",
    "since": null,
    "activity": null,
    "commit": null
@@ -101,11 +109,11 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 5,
+ "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1267,
-  "usdEst": 4561.2,
+  "runs": 1270,
+  "usdEst": 4572.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -219,7 +227,7 @@
   },
   {
    "day": "2026-11-22",
-   "changes": 11
+   "changes": 13
   }
  ],
  "houseRules": 25,
@@ -16949,10 +16957,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 75.83,
+   "costTotalUsd": 79.43,
    "latestChange": {
-    "text": "fix: link preview picture and tags, licences listed",
-    "at": "2026-11-22T06:54:18+00:00"
+    "text": "release check: link preview picture, og/twitter tags, licences",
+    "at": "2026-11-22T06:55:52+00:00"
    },
    "promo": null,
    "why": "",
@@ -16990,7 +16998,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T22:49:26+00:00",
-   "lastChange": "2026-11-22T06:54:18+00:00",
+   "lastChange": "2026-11-22T06:55:52+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -16999,9 +17007,9 @@
     "codexTokens": 191550,
     "codexUsdEst": 0.23,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 19,
-    "earlierUsdEst": 68.4,
-    "totalUsdEst": 75.83
+    "earlierRounds": 20,
+    "earlierUsdEst": 72.0,
+    "totalUsdEst": 79.43
    },
    "tasks": [
     {
@@ -17061,6 +17069,12 @@
    "needsYou": null,
    "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-22T06:55:52+00:00",
+     "ok": true,
+     "note": "release check: link preview picture, og/twitter tags, licences",
+     "source": "board note"
+    },
     {
      "at": "2026-11-22T06:54:18+00:00",
      "ok": true,
@@ -17126,12 +17140,6 @@
      "ok": true,
      "note": "feat: the board says what to do: flip a clue, then tap the place",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-18T19:40:45+00:00",
-     "ok": true,
-     "note": "guide- live : first screen leads with a one-line goal; six one-rule pages use looping real-board demos; level 1 keeps its first-clue hand coach; v2 saves preserve settings, unlocks, solved coins, and current level under guide v3; live real-touch",
-     "source": "board note"
     }
    ]
   },
@@ -19970,7 +19978,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Mirror Hold: check the first minute against the...",
    "costTotalUsd": 94.75,
    "latestChange": {
     "text": "board answers real finger drag on every level",
@@ -19980,21 +19988,21 @@
    "why": "Manga panels of a sumo wrestler before a mirror and a hand scooping Edo-period hair wax from a red tin.",
    "state": "ship",
    "stateFlags": {
-    "refining": false,
+    "refining": true,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 30
    },
-   "waitingOn": "owner",
+   "waitingOn": "mirror hold first minute",
    "id": "mirror-hold",
    "number": 60,
    "repo": "mirror-hold",
    "title": "Mirror Hold",
    "line": "Wax a hairstyle, then test it against three pulls.",
    "url": "https://chenhsieh.github.io/mirror-hold/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Huge revamp planned by a cross-functional lead",
    "shelfNote": "",
@@ -20012,7 +20020,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T21:41:35+00:00",
-   "lastChange": "2026-11-13T10:09:49+00:00",
+   "lastChange": "2026-11-22T07:01:16+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -20026,6 +20034,20 @@
     "totalUsdEst": 94.75
    },
    "tasks": [
+    {
+     "title": "P2FM65_mirror hold first minute",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Mirror Hold: check the first minute against the house standard and close its gaps",
+     "since": "2026-11-22T07:01:16+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2MH66_mirror hold drag gate",
      "state": "done",
@@ -20123,24 +20145,10 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P1MH56_print-hero-and-card-sizes RESULT (Claude overflow, Sonnet, 2026-10-23;"
-    },
-    {
-     "title": "P3OR29_mirror hold link preview",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Mirror Hold: a proper link preview (picture and one-line description) when the game is shared",
-     "since": "2026-10-22T23:42:55+00:00",
-     "done": "2026-10-22T23:42:55+00:00",
-     "reviewed": false,
-     "minutes": 114,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": "OR LANE OK: Test: docs \"Mirror Hold\" \"Comb a sumo topknot in one oiled stroke so every strand points where the bout will pull.\" https://chenhsieh.g"
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 17
@@ -20151,7 +20159,7 @@
     "note": "Comb each pull the right way before the bout and the hair holds; a wrong stroke springs loose strands you can see, and the real prints make every client a person"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-11-13T10:09:49+00:00",
@@ -22365,10 +22373,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 54.0,
+   "costTotalUsd": 57.6,
    "latestChange": {
-    "text": "P2NR187 review: ship; no destination, nothing queued",
-    "at": "2026-11-20T09:31:57+00:00"
+    "text": "release check: link preview picture, og/twitter tags, licences",
+    "at": "2026-11-22T07:03:29+00:00"
    },
    "promo": null,
    "why": "Two Chinese sayings about boats: notching the boat to find a dropped sword, and learning as rowing upstream.",
@@ -22402,7 +22410,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T01:39:00+00:00",
-   "lastChange": "2026-11-20T09:31:57+00:00",
+   "lastChange": "2026-11-22T07:03:29+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -22411,9 +22419,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 10.8,
-    "earlierRounds": 12,
-    "earlierUsdEst": 43.2,
-    "totalUsdEst": 54.0
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
+    "totalUsdEst": 57.6
    },
    "tasks": [
     {
@@ -22473,6 +22481,12 @@
    "needsYou": null,
    "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-22T07:03:29+00:00",
+     "ok": true,
+     "note": "release check: link preview picture, og/twitter tags, licences",
+     "source": "board note"
+    },
     {
      "at": "2026-11-20T09:31:57+00:00",
      "ok": true,
@@ -22538,12 +22552,6 @@
      "ok": true,
      "note": "P2BT02 stretches 7-12 live : seating, rising river, flood, cargo, crossing lines, all-in-one; exact par, how-to pages, live save loads",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-21T19:41:40+00:00",
-     "ok": true,
-     "note": "feat: notched boat stretches 7-12, one new decision each",
-     "source": "main commit"
     }
    ]
   },
@@ -41366,7 +41374,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 4,
-    "daysInState": 1
+    "daysInState": 2
    },
    "waitingOn": "owner",
    "id": "two-tigers",

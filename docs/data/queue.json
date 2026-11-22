@@ -1,5 +1,5 @@
 {
- "generated": 1795330525,
+ "generated": 1795331095,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -79,21 +79,42 @@
    "created": 1793640233
   },
   {
-   "id": "P2RC46_release-check-life-statistics",
-   "request": "Life Statistics: first release checklist pass (logo mark, preview meta, share line, accessible play)",
+   "id": "P2NR227_rereview-no-unison-after-next-level-fit",
+   "request": "Re-review No Unison now that Next level keeps the button row on a small phone",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NF142_no-unison-next-level-board-height"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1795330796,
+   "created": 1795330796
+  },
+  {
+   "id": "P2UX09_refresh-release-sweep-files",
+   "request": "Re-run the stored release sweep so release checks stop printing stale lines",
    "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
    "kind": "build",
-   "size": "one repo",
+   "size": "studio",
    "estMinutes": null,
-   "after": [],
+   "after": [
+    "P2RC34_release-check-floating-city"
+   ],
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1795294402,
-   "created": 1795294402
+   "at": 1795330922,
+   "created": 1795330922
   },
   {
    "id": "P3PL13_dancers-not-mad-why-rollout",
@@ -111,6 +132,25 @@
    "state": "running",
    "at": 1793640233,
    "created": 1793640233
+  },
+  {
+   "id": "P2FM65_mirror-hold-first-minute",
+   "request": "Mirror Hold: check the first minute against the house standard and close its gaps",
+   "game": "Mirror Hold",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "first-minute",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2RC43_release-check-gallery-guess-mirror-hold"
+   ],
+   "priority": "P1",
+   "why": "Manga panels of a sumo wrestler before a mirror and a hand scooping Edo-period hair wax from a red tin.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795330876
   },
   {
    "id": "P2NR223_rereview-letter-lines-round5",
@@ -131,6 +171,63 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1795294402
+  },
+  {
+   "id": "P2NR228_rereview-coat-corridor-after-caption-and-sizes",
+   "request": "Re-review Coat Corridor after the caption, one door name and bigger text went live",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NR214_rereview-coat-corridor-after-fixes"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795330811
+  },
+  {
+   "id": "P2NR229_rereview-lantern-meeting-after-small-phone-fix",
+   "request": "Re-review Lantern Meeting now the practice round keeps Next on the smallest phone",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2RC38_release-check-lantern-meeting"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795330822
+  },
+  {
+   "id": "P2NR230_rereview-the-apprentice-after-320-polish",
+   "request": "Re-review The Apprentice after the small-phone fit and lesson-ring polish",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P3NF136_the-apprentice-polish-320-ring-and-fit"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795330830
   },
   {
    "id": "P2RC06_release-check-batch-6",
@@ -183,23 +280,6 @@
    "after": [
     "P2NR221_rereview-thirsty-clicks-round5"
    ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC47_release-check-notched-boat",
-   "request": "Notched Boat: first release checklist pass (preview meta, share line, board snapshot, accessible play)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
    "priority": null,
    "why": "",
    "state": "ready",
@@ -1853,6 +1933,40 @@
   {
    "id": "P2RC45_release-check-beetle-in-a-box",
    "request": "Beetle in a Box: first release checklist pass (logo mark, preview meta, share line, accessible play)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2RC46_release-check-life-statistics",
+   "request": "Life Statistics: first release checklist pass (logo mark, preview meta, share line, accessible play)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2RC47_release-check-notched-boat",
+   "request": "Notched Boat: first release checklist pass (preview meta, share line, board snapshot, accessible play)",
    "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
