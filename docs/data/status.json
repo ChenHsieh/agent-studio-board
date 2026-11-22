@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-22T00:33:06+00:00",
+ "generated": "2026-11-22T00:42:33+00:00",
  "ops": {
-  "count": 10,
+  "count": 8,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "Two tasks share the number P2NF18.",
@@ -28,23 +28,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 50,
+    "queued": 49,
     "running": 0,
     "doneToday": 1,
-    "minutes": 2000,
-    "estimateMinutes": 2000
+    "minutes": 1960,
+    "estimateMinutes": 1960
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 41,
+    "doneToday": 43,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 51,
+  "queued": 50,
   "running": 6,
-  "doneToday": 42,
+  "doneToday": 44,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -54,23 +54,23 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2420,
-  "estimatedFinish": "2026-11-23T09:53:06+00:00",
-  "estimateMinutes": 2000
+  "minutesRemaining": 2380,
+  "estimatedFinish": "2026-11-23T09:22:33+00:00",
+  "estimateMinutes": 1960
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "four-thirty-three",
-   "task": "P2NF128_four thirty three big words and room ends",
-   "since": "2026-11-22T00:24:33+00:00",
-   "activity": "2026-11-22T00:29:16+00:00",
+   "game": "Multiple games",
+   "task": "P2FS70_onescreen gate inner scroll",
+   "since": null,
+   "activity": null,
    "commit": null
   },
   {
    "worker": "Claude",
    "game": "Multiple games",
-   "task": "P2NR216_rereview out of the corner round5",
+   "task": "P2NR201_rereview plain telling after fixes",
    "since": null,
    "activity": null,
    "commit": null
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1217,
-  "usdEst": 4381.2,
+  "runs": 1219,
+  "usdEst": 4388.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -223,7 +223,7 @@
   },
   {
    "day": "2026-11-21",
-   "changes": 26
+   "changes": 27
   }
  ],
  "houseRules": 25,
@@ -249,7 +249,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 15
+    "daysInState": 16
    },
    "waitingOn": "owner",
    "id": "name-to-carry",
@@ -23953,31 +23953,31 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 54.6,
+   "nextTask": "Out of the Corner: the Chinese counter row...",
+   "costTotalUsd": 58.2,
    "latestChange": {
-    "text": "kit 51 -> 55",
-    "at": "2026-11-22T00:25:52+00:00"
+    "text": "re-review round 5: revise (blind stop-and-go still wins 63-69% nights 4-6; zh HUD N4);...",
+    "at": "2026-11-22T00:41:21+00:00"
    },
    "promo": null,
    "why": "A remix of Nobody Looking and Walls Have Ears through averted vision, how faint stars vanish when looked at directly.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
-    "reviseRound": 1,
+    "reviseRound": 2,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "owner",
    "id": "out-of-the-corner",
    "number": 161,
    "repo": "out-of-the-corner",
    "title": "Out Of The Corner",
    "line": "",
    "url": "https://chenhsieh.github.io/out-of-the-corner/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -23990,7 +23990,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:02:46+00:00",
-   "lastChange": "2026-11-22T00:25:52+00:00",
+   "lastChange": "2026-11-22T00:41:21+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -23999,11 +23999,25 @@
     "codexTokens": 503313,
     "codexUsdEst": 0.6,
     "claudeUsdEst": 21.6,
-    "earlierRounds": 9,
-    "earlierUsdEst": 32.4,
-    "totalUsdEst": 54.6
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
+    "totalUsdEst": 58.2
    },
    "tasks": [
+    {
+     "title": "P2NF137_out of the corner zh hud words",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Out of the Corner: the Chinese counter row says 第 4 夜 and 天亮, not N4",
+     "since": "2026-11-22T00:41:08+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2NF110_out of the corner fixes",
      "state": "done",
@@ -24104,19 +24118,25 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 7
    },
    "verdict": {
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "verdict": "revise",
-    "note": "Wandering the finger at random still finds every star on most nights, and a solved first night is titled one short of par, so a still finger should be what catches a star"
+    "note": "A still finger now catches a star and the win card says how many seconds were left, but stopping anywhere for a second still catches most stars, and the Chinese counter row reads N4"
    },
-   "needsYou": null,
-   "inProgress": false,
+   "needsYou": "Random wandering no longer wins, but standing still anywhere for a second catches a star: a finger that moves half a second and stops for under a second, without looking, still clears nights 4 to 6 about 63 to 69 percent of the time (a player who stops when a star shows wins 84 to 99 percent). Options: keep it as an easy calm toy; hold 1 second instead of 0.6 (blind stopping drops to 35 to 62 percent, a seeing player keeps 94 to 98); shorter dawn 30 s (blind 24 to 58, slow seeing player 54 to 75); narrower ring (blind 16 to 38, but slow players fall to 4 to 14). Suggest: hold 1 second, then a 3-person playtest.",
+   "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-22T00:41:21+00:00",
+     "ok": true,
+     "note": "re-review round 5: revise (blind stop-and-go still wins 63-69% nights 4-6; zh HUD N4); fix P2NF137 queued; rules options in asks.tsv",
+     "source": "board note"
+    },
     {
      "at": "2026-11-22T00:25:52+00:00",
      "ok": true,
@@ -24182,12 +24202,6 @@
      "ok": true,
      "note": "Out of the Corner: tank-night look, rooftop water tank, lit colour for caught stars (P2n117)",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-28T04:24:58+00:00",
-     "ok": true,
-     "note": "feat: Find and join faint stars with a sideways gaze",
-     "source": "board note"
     }
    ]
   },
@@ -28822,23 +28836,23 @@
    },
    "promo": null,
    "why": "The 1952 silent piece 4′33″ and a contest poster for it.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 2,
     "daysInState": 0
    },
-   "waitingOn": "four thirty three big words and room ends",
+   "waitingOn": "none",
    "id": "four-thirty-three",
    "number": 100,
    "repo": "four-thirty-three",
    "title": "Room Tone",
    "line": "A small solo puzzle.",
    "url": "https://chenhsieh.github.io/four-thirty-three/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "Return to the idea that every ambient sound counts; find",
    "shelfNote": "",
@@ -28856,33 +28870,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-18T06:19:46+00:00",
-   "lastChange": "2026-11-22T00:29:16+00:00",
+   "lastChange": "2026-11-22T00:24:17+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 1,
     "codexTokens": 559786,
     "codexUsdEst": 0.67,
-    "claudeUsdEst": 7.2,
-    "earlierRounds": 16,
-    "earlierUsdEst": 57.6,
+    "claudeUsdEst": 10.8,
+    "earlierRounds": 15,
+    "earlierUsdEst": 54.0,
     "totalUsdEst": 65.47
    },
    "tasks": [
     {
      "title": "P2NF128_four thirty three big words and room ends",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Room Tone: the room's rule and score in big type with par on screen, and a room ends when its clock runs out",
-     "since": "2026-11-22T00:24:33+00:00",
-     "done": null,
+     "since": "2026-11-22T00:24:17+00:00",
+     "done": "2026-11-22T00:24:17+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE"
     },
     {
      "title": "P2NF113_four thirty three real choice and one score",
@@ -28971,9 +28985,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": {
     "date": "2026-11-21",
@@ -28981,7 +28995,7 @@
     "note": "Tapping every quiet sound as it comes now falls short on all of rooms 4 to 8 and losing says how far, but the room's rule and score are small grey text, par only shows at the end, and a room you never mark never ends"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-11-22T00:23:47+00:00",
@@ -43911,5 +43925,5 @@
   }
  },
  "requestsCount": 0,
- "briefDecisions": 14
+ "briefDecisions": 15
 }
