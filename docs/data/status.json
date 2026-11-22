@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-22T06:16:54+00:00",
+ "generated": "2026-11-22T06:26:16+00:00",
  "ops": {
-  "count": 7,
+  "count": 6,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "Two tasks share the number P2NF18.",
@@ -28,11 +28,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 13,
+    "queued": 12,
     "running": 0,
     "doneToday": 0,
-    "minutes": 520,
-    "estimateMinutes": 520
+    "minutes": 480,
+    "estimateMinutes": 480
    },
    "Claude": {
     "queued": 1,
@@ -42,7 +42,7 @@
     "estimateMinutes": 210
    }
   },
-  "queued": 14,
+  "queued": 13,
   "running": 6,
   "doneToday": 1,
   "lanes": {
@@ -54,9 +54,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 940,
-  "estimatedFinish": "2026-11-22T14:56:54+00:00",
-  "estimateMinutes": 520
+  "minutesRemaining": 900,
+  "estimatedFinish": "2026-11-22T14:26:16+00:00",
+  "estimateMinutes": 480
  },
  "lanes": [
   {
@@ -69,10 +69,10 @@
   },
   {
    "worker": "Claude",
-   "game": "readable-nonsense",
-   "task": "P2NR224_rereview readable nonsense small phone",
-   "since": "2026-11-22T06:10:29+00:00",
-   "activity": "2026-11-22T06:10:29+00:00",
+   "game": "no-unison",
+   "task": "P2NR225_rereview no unison rule words",
+   "since": "2026-11-22T06:17:05+00:00",
+   "activity": "2026-11-22T06:17:05+00:00",
    "commit": null
   },
   {
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1260,
-  "usdEst": 4536.0,
+  "runs": 1261,
+  "usdEst": 4539.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -21642,7 +21642,7 @@
    ]
   },
   {
-   "nextTask": "No Unison: cold re-review after the rule-words build",
+   "nextTask": null,
    "costTotalUsd": 69.06,
    "latestChange": {
     "text": "each song's rule above the board (EN/zh, to 320 wide), status strip replaces the dark...",
@@ -21665,8 +21665,8 @@
    "title": "No Unison",
    "line": "",
    "url": "https://chenhsieh.github.io/no-unison/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -21684,7 +21684,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T17:33:34+00:00",
-   "lastChange": "2026-11-22T03:18:55+00:00",
+   "lastChange": "2026-11-22T06:17:05+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -21700,10 +21700,10 @@
    "tasks": [
     {
      "title": "P2NR225_rereview no unison rule words",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "No Unison: cold re-review after the rule-words build",
-     "since": "2026-11-21T21:53:22+00:00",
+     "since": "2026-11-22T06:17:05+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -21812,8 +21812,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 11
    },
@@ -43598,23 +43598,23 @@
    },
    "promo": null,
    "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 4,
     "daysInState": 0
    },
-   "waitingOn": "rereview readable nonsense small phone",
+   "waitingOn": "none",
    "id": "readable-nonsense",
    "number": 75,
    "repo": "readable-nonsense",
    "title": "阿嬤讀得出來",
    "line": "A famous Tang poem line is printed as fake glyphs with.",
    "url": "https://chenhsieh.github.io/readable-nonsense/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Start error blocks play",
    "shelfNote": "",
@@ -43628,33 +43628,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:29:52+00:00",
-   "lastChange": "2026-11-22T06:10:29+00:00",
+   "lastChange": "2026-11-22T03:05:22+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 3,
-    "claudeRuns": 13,
+    "claudeRuns": 14,
     "apiRuns": 0,
     "codexTokens": 697578,
     "codexUsdEst": 0.84,
-    "claudeUsdEst": 46.8,
-    "earlierRounds": 13,
-    "earlierUsdEst": 46.8,
+    "claudeUsdEst": 50.4,
+    "earlierRounds": 12,
+    "earlierUsdEst": 43.2,
     "totalUsdEst": 97.39
    },
    "tasks": [
     {
      "title": "P2NR224_rereview readable nonsense small phone",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Readable Nonsense: cold re-review after the small-phone layout build",
-     "since": "2026-11-22T06:10:29+00:00",
-     "done": null,
+     "since": "2026-11-21T21:45:21+00:00",
+     "done": "2026-11-21T21:45:21+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE - revise (fourth review). P2NB44 delivered calls 1, 2, 4 (except 44 px rack) and 5; it opened one new defect: on phones under 701 px tall, A-ma's box in the shared row cuts off what she reads."
     },
     {
      "title": "P2NB44_readable nonsense small phone layout",
@@ -43757,9 +43757,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 16
+    "done": 17
    },
    "verdict": {
     "date": "2026-11-22",
@@ -43767,7 +43767,7 @@
     "note": "The goal now shows on every phone and a win keeps the whole poem line above the card, but on phones under 700 px tall the box that shows what A-ma reads cuts off 7-character lines and the hold preview, and reading the rack left to right still wins 5 of the next 7 dailies"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-11-22T03:05:22+00:00",
