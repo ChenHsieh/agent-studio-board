@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-22T02:09:04+00:00",
+ "generated": "2026-11-22T02:18:28+00:00",
  "ops": {
-  "count": 9,
+  "count": 8,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "Two tasks share the number P2NF18.",
@@ -28,23 +28,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 43,
+    "queued": 42,
     "running": 0,
     "doneToday": 1,
-    "minutes": 1720,
-    "estimateMinutes": 1720
+    "minutes": 1680,
+    "estimateMinutes": 1680
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 51,
+    "doneToday": 52,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 44,
+  "queued": 43,
   "running": 6,
-  "doneToday": 52,
+  "doneToday": 53,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -54,9 +54,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2140,
-  "estimatedFinish": "2026-11-23T06:49:04+00:00",
-  "estimateMinutes": 1720
+  "minutesRemaining": 2100,
+  "estimatedFinish": "2026-11-23T06:18:28+00:00",
+  "estimateMinutes": 1680
  },
  "lanes": [
   {
@@ -69,10 +69,10 @@
   },
   {
    "worker": "Claude",
-   "game": "thirsty-clicks",
-   "task": "P2NV209_thirsty clicks visual build chrome",
-   "since": "2026-11-22T02:03:22+00:00",
-   "activity": "2026-11-22T02:07:24+00:00",
+   "game": "lantern-meeting",
+   "task": "P2NV211_lantern meeting visual build",
+   "since": "2026-11-22T02:10:54+00:00",
+   "activity": "2026-11-22T02:10:59+00:00",
    "commit": null
   },
   {
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1227,
-  "usdEst": 4417.2,
+  "runs": 1228,
+  "usdEst": 4420.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -15799,7 +15799,7 @@
    ]
   },
   {
-   "nextTask": "Lantern Meeting visual build 1: the lacquer table...",
+   "nextTask": "Lantern Meeting visual build 2: move cards with...",
    "costTotalUsd": 58.09,
    "latestChange": {
     "text": "lead build: council stays under the result, Try again first on a loss, seats tappable for...",
@@ -15829,8 +15829,8 @@
    "title": "Lantern Meeting",
    "line": "",
    "url": "https://chenhsieh.github.io/lantern-meeting/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Politics of lab and corporate competition; rock-paper-scissors core; clearer...",
    "shelfNote": "",
@@ -15844,7 +15844,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T20:56:30+00:00",
-   "lastChange": "2026-11-21T20:53:22+00:00",
+   "lastChange": "2026-11-22T02:10:59+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -15860,10 +15860,10 @@
    "tasks": [
     {
      "title": "P2NV211_lantern meeting visual build",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Lantern Meeting visual build 1: the lacquer table with standing lanterns and name cards, top bar at full size",
-     "since": "2026-11-21T20:53:22+00:00",
+     "since": "2026-11-22T02:10:54+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -15972,8 +15972,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 10
    },
@@ -17155,7 +17155,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 27
+    "daysInState": 28
    },
    "waitingOn": "none",
    "id": "lindy-shelf",
@@ -38605,15 +38605,15 @@
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "thirsty clicks visual build chrome",
+   "waitingOn": "thirsty clicks visual build flat",
    "id": "thirsty-clicks",
    "number": 107,
    "repo": "thirsty-clicks",
    "title": "Thirsty Clicks",
    "line": "",
    "url": "https://chenhsieh.github.io/thirsty-clicks/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -38631,34 +38631,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T17:19:46+00:00",
-   "lastChange": "2026-11-22T02:07:24+00:00",
+   "lastChange": "2026-11-21T20:53:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 7,
+    "claudeRuns": 8,
     "apiRuns": 0,
     "codexTokens": 211336,
     "codexUsdEst": 0.25,
-    "claudeUsdEst": 25.2,
-    "earlierRounds": 12,
-    "earlierUsdEst": 43.2,
+    "claudeUsdEst": 28.8,
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
     "totalUsdEst": 68.65
    },
    "tasks": [
-    {
-     "title": "P2NV209_thirsty clicks visual build chrome",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Thirsty Clicks: a one-row top bar with a nursery-tag mark, the HUD and the gardens line big and out of the board",
-     "since": "2026-11-22T02:03:22+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2NV210_thirsty clicks visual build flat",
      "state": "queued",
@@ -38672,6 +38658,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2NV209_thirsty clicks visual build chrome",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Thirsty Clicks: a one-row top bar with a nursery-tag mark, the HUD and the gardens line big and out of the board",
+     "since": "2026-11-21T20:53:22+00:00",
+     "done": "2026-11-21T20:53:22+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "P2NV210 publishes)"
     },
     {
      "title": "P2NV205_thirsty clicks visual study",
@@ -38760,9 +38760,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 8
+    "done": 9
    },
    "verdict": {
     "date": "2026-11-20",
