@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-22T04:13:06+00:00",
+ "generated": "2026-11-22T04:22:38+00:00",
  "ops": {
-  "count": 9,
+  "count": 8,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "Two tasks share the number P2NF18.",
@@ -28,23 +28,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 31,
+    "queued": 29,
     "running": 0,
     "doneToday": 1,
-    "minutes": 1240,
-    "estimateMinutes": 1240
+    "minutes": 1160,
+    "estimateMinutes": 1160
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 64,
+    "doneToday": 66,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 32,
+  "queued": 30,
   "running": 6,
-  "doneToday": 65,
+  "doneToday": 67,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -54,25 +54,25 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1660,
-  "estimatedFinish": "2026-11-23T00:53:06+00:00",
-  "estimateMinutes": 1240
+  "minutesRemaining": 1580,
+  "estimatedFinish": "2026-11-22T23:42:38+00:00",
+  "estimateMinutes": 1160
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P2KS19_still a heap kit port",
-   "since": null,
-   "activity": null,
+   "game": "flying-white",
+   "task": "P2KS17_flying white kit layout port",
+   "since": "2026-11-22T04:17:22+00:00",
+   "activity": "2026-11-22T04:22:07+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
-   "game": "lantern-meeting",
-   "task": "P2NV212_lantern meeting visual build pieces",
-   "since": "2026-11-22T03:53:03+00:00",
-   "activity": "2026-11-22T04:01:55+00:00",
+   "game": "letter-lines",
+   "task": "P2NV214_letter lines visual build desk",
+   "since": "2026-11-22T04:13:12+00:00",
+   "activity": "2026-11-22T04:20:36+00:00",
    "commit": null
   },
   {
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1240,
-  "usdEst": 4464.0,
+  "runs": 1242,
+  "usdEst": 4471.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -223,7 +223,7 @@
   },
   {
    "day": "2026-11-21",
-   "changes": 45
+   "changes": 47
   }
  ],
  "houseRules": 25,
@@ -9403,7 +9403,7 @@
    ]
   },
   {
-   "nextTask": "Flying White moves to the new shared kit...",
+   "nextTask": null,
    "costTotalUsd": 148.51,
    "latestChange": {
     "text": "Play pinned on first card at 320, logo at top edge, local-day stamp",
@@ -9426,8 +9426,8 @@
    "title": "Flying White",
    "line": "",
    "url": "https://chenhsieh.github.io/flying-white/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Higher priority: real rubbing sources, hilarious teacher, growth, free writing",
    "shelfNote": "",
@@ -9441,7 +9441,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T05:31:34+00:00",
-   "lastChange": "2026-11-21T22:32:08+00:00",
+   "lastChange": "2026-11-22T04:22:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -9457,10 +9457,10 @@
    "tasks": [
     {
      "title": "P2KS17_flying white kit layout port",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Flying White moves to the new shared kit with bigger readable text and the same size paper to write on",
-     "since": "2026-11-21T22:32:08+00:00",
+     "since": "2026-11-22T04:17:22+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -9569,8 +9569,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 26
    },
@@ -15799,10 +15799,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 61.69,
+   "costTotalUsd": 65.29,
    "latestChange": {
-    "text": "visual build: lacquer table, lanterns behind name cards, forecast inside slips, full-size...",
-    "at": "2026-11-22T02:34:23+00:00"
+    "text": "P2NV212 visual build 2: paper move/evidence cards, panel ledge, seat flip + clapper,...",
+    "at": "2026-11-22T04:16:59+00:00"
    },
    "promo": {
     "files": {
@@ -15815,21 +15815,21 @@
    "why": "A satirical post casting a lab's weekly group meeting as a palace court where the boss's nod buys supplies.",
    "state": "ship",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "lantern meeting visual build pieces",
+   "waitingOn": "owner",
    "id": "lantern-meeting",
    "number": 112,
    "repo": "lantern-meeting",
    "title": "Lantern Meeting",
    "line": "",
    "url": "https://chenhsieh.github.io/lantern-meeting/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Politics of lab and corporate competition; rock-paper-scissors core; clearer...",
    "shelfNote": "",
@@ -15843,34 +15843,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T20:56:30+00:00",
-   "lastChange": "2026-11-22T04:01:55+00:00",
+   "lastChange": "2026-11-22T04:16:59+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
-    "claudeRuns": 7,
+    "claudeRuns": 8,
     "apiRuns": 1,
     "codexTokens": 406690,
     "codexUsdEst": 0.49,
-    "claudeUsdEst": 25.2,
+    "claudeUsdEst": 28.8,
     "earlierRounds": 10,
     "earlierUsdEst": 36.0,
-    "totalUsdEst": 61.69
+    "totalUsdEst": 65.29
    },
    "tasks": [
-    {
-     "title": "P2NV212_lantern meeting visual build pieces",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Lantern Meeting visual build 2: move cards with seals, evidence tiles, the panel ledge, flip and light motion, new og.png",
-     "since": "2026-11-22T03:53:03+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2NV211_lantern meeting visual build",
      "state": "done",
@@ -15884,6 +15870,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "DONE (live, main , tag pre-lm-build1; served style.css and shell.js match the build; live page rendered at 390x844, no console errors)"
+    },
+    {
+     "title": "P2NV212_lantern meeting visual build pieces",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Lantern Meeting visual build 2: move cards with seals, evidence tiles, the panel ledge, flip and light motion, new og.png",
+     "since": "2026-11-21T20:53:22+00:00",
+     "done": "2026-11-21T20:53:22+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "DONE (live, main , tag pre-lm-build2; served og.png, style.css, draw.js equal the branch bytes)"
     },
     {
      "title": "P2NV204_lantern meeting visual study",
@@ -15972,9 +15972,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 11
+    "done": 12
    },
    "verdict": {
     "date": "2026-11-20",
@@ -15982,8 +15982,14 @@
     "note": "Always tabling a motion runs out of evidence and misses the goal, reading the seats wins, and a finished season now keeps the council and its lit lanterns on screen with Try again first after a loss"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-22T04:16:59+00:00",
+     "ok": true,
+     "note": "P2NV212 visual build 2: paper move/evidence cards, panel ledge, seat flip + clapper, lantern fill, table og",
+     "source": "board note"
+    },
     {
      "at": "2026-11-22T02:34:23+00:00",
      "ok": true,
@@ -16049,12 +16055,6 @@
      "ok": true,
      "note": "feat: learn council votes in a first-minute round",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-22T23:50:11+00:00",
-     "ok": true,
-     "note": "feat: learn council votes in a first-minute round",
-     "source": "main commit"
     }
    ]
   },
@@ -16496,7 +16496,7 @@
    ]
   },
   {
-   "nextTask": "P2NV214_letter lines visual build desk",
+   "nextTask": null,
    "costTotalUsd": 61.73,
    "latestChange": {
     "text": "lead build live: one screen, result in mm, share row, new preview",
@@ -16519,8 +16519,8 @@
    "title": "Letter Lines",
    "line": "",
    "url": "https://chenhsieh.github.io/letter-lines/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -16534,7 +16534,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T20:19:59+00:00",
-   "lastChange": "2026-11-21T20:53:22+00:00",
+   "lastChange": "2026-11-22T04:20:36+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -16550,10 +16550,10 @@
    "tasks": [
     {
      "title": "P2NV214_letter lines visual build desk",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "",
-     "since": "2026-11-21T20:53:22+00:00",
+     "since": "2026-11-22T04:13:12+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -16662,8 +16662,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 9
    },
@@ -34636,10 +34636,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 76.03,
+   "costTotalUsd": 79.63,
    "latestChange": {
-    "text": "feat: Still a Heap moves to the current shared kit; the opening caption no longer blocks...",
-    "at": "2026-11-22T04:11:39+00:00"
+    "text": "kit 19 to 55; opening caption passes swipes through, Taken counter full size",
+    "at": "2026-11-22T04:13:12+00:00"
    },
    "promo": null,
    "why": "A remix of the can-press toy and the swarm idea through the old paradox of the heap.",
@@ -34672,7 +34672,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:59:53+00:00",
-   "lastChange": "2026-11-22T04:11:39+00:00",
+   "lastChange": "2026-11-22T04:13:12+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -34681,9 +34681,9 @@
     "codexTokens": 361179,
     "codexUsdEst": 0.43,
     "claudeUsdEst": 14.4,
-    "earlierRounds": 17,
-    "earlierUsdEst": 61.2,
-    "totalUsdEst": 76.03
+    "earlierRounds": 18,
+    "earlierUsdEst": 64.8,
+    "totalUsdEst": 79.63
    },
    "tasks": [
     {
@@ -34786,6 +34786,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-11-22T04:13:12+00:00",
+     "ok": true,
+     "note": "kit 19 to 55; opening caption passes swipes through, Taken counter full size",
+     "source": "board note"
+    },
+    {
      "at": "2026-11-22T04:11:39+00:00",
      "ok": true,
      "note": "feat: Still a Heap moves to the current shared kit; the opening caption no longer blocks swipes and the Taken counter is full size",
@@ -34849,12 +34855,6 @@
      "at": "2026-11-13T20:50:11+00:00",
      "ok": true,
      "note": "stranger re-review after the walking hand rule: REVISE. Core now holds (11 first-idea routes at par on 0 of 63 plates and real dailies); a dimmed column refuses with no reason, empty bubble on plate 2, dailies all one shape. Fix task P2NF61",
-     "source": "board note"
-    },
-    {
-     "at": "2026-11-13T20:32:30+00:00",
-     "ok": true,
-     "note": "walking hand rule: dim unreachable columns, new plates 1/4-6, 9 columns fit, one HUD form, Stop gap; obvious play 0/13 at par",
      "source": "board note"
     }
    ]
