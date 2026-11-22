@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T05:57:59+00:00",
+ "generated": "2026-11-22T06:07:25+00:00",
  "ops": {
   "count": 7,
   "notes": [
@@ -28,23 +28,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 15,
+    "queued": 13,
     "running": 0,
     "doneToday": 0,
-    "minutes": 600,
-    "estimateMinutes": 600
+    "minutes": 520,
+    "estimateMinutes": 520
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 0,
+    "doneToday": 1,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 16,
+  "queued": 14,
   "running": 6,
-  "doneToday": 0,
+  "doneToday": 1,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -54,9 +54,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1020,
-  "estimatedFinish": "2026-11-22T15:57:59+00:00",
-  "estimateMinutes": 600
+  "minutesRemaining": 940,
+  "estimatedFinish": "2026-11-22T14:47:25+00:00",
+  "estimateMinutes": 520
  },
  "lanes": [
   {
@@ -64,15 +64,15 @@
    "game": "coat-corridor",
    "task": "P2NF140_coat corridor caption and text size",
    "since": "2026-11-22T05:46:20+00:00",
-   "activity": "2026-11-22T05:53:32+00:00",
+   "activity": "2026-11-22T06:06:28+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P2RC38_release check lantern meeting",
-   "since": null,
-   "activity": null,
+   "game": "biosteganography",
+   "task": "P2NR226_rereview stripes after lead builds",
+   "since": "2026-11-22T06:00:34+00:00",
+   "activity": "2026-11-22T06:00:34+00:00",
    "commit": null
   },
   {
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1257,
-  "usdEst": 4525.2,
+  "runs": 1259,
+  "usdEst": 4532.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -227,7 +227,7 @@
   },
   {
    "day": "2026-11-22",
-   "changes": 3
+   "changes": 4
   }
  ],
  "houseRules": 25,
@@ -1963,7 +1963,7 @@
    ]
   },
   {
-   "nextTask": "Straighten the Stripes: cold Opus re-review after the...",
+   "nextTask": null,
    "costTotalUsd": 75.79,
    "latestChange": {
     "text": "root demo/ now matches docs/demo (text sizes, Why button, drawn og.png)",
@@ -1993,8 +1993,8 @@
    "title": "Biosteganography",
    "line": "Straighten the stripes to find a hidden repeat.",
    "url": "https://chenhsieh.github.io/biosteganography/demo/snap.html",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
@@ -2008,7 +2008,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T14:16:48+00:00",
-   "lastChange": "2026-11-22T04:05:37+00:00",
+   "lastChange": "2026-11-22T06:00:34+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -2024,10 +2024,10 @@
    "tasks": [
     {
      "title": "P2NR226_rereview stripes after lead builds",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Straighten the Stripes: cold Opus re-review after the readability and preview builds",
-     "since": "2026-11-21T22:57:53+00:00",
+     "since": "2026-11-22T06:00:34+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2136,8 +2136,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 8
    },
@@ -3690,7 +3690,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:52:34+00:00",
-   "lastChange": "2026-11-22T05:53:32+00:00",
+   "lastChange": "2026-11-22T06:06:28+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -15817,10 +15817,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 65.29,
+   "costTotalUsd": 68.89,
    "latestChange": {
-    "text": "fix: on a 320x568 phone the practice round keeps its Next button on screen and the How to...",
-    "at": "2026-11-22T05:57:48+00:00"
+    "text": "320x568 practice round keeps Next on screen, How to play Play button fully visible,...",
+    "at": "2026-11-22T05:59:38+00:00"
    },
    "promo": {
     "files": {
@@ -15861,7 +15861,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T20:56:30+00:00",
-   "lastChange": "2026-11-22T05:57:48+00:00",
+   "lastChange": "2026-11-22T05:59:38+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -15870,9 +15870,9 @@
     "codexTokens": 406690,
     "codexUsdEst": 0.49,
     "claudeUsdEst": 28.8,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
-    "totalUsdEst": 65.29
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
+    "totalUsdEst": 68.89
    },
    "tasks": [
     {
@@ -16003,6 +16003,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-11-22T05:59:38+00:00",
+     "ok": true,
+     "note": "320x568 practice round keeps Next on screen, How to play Play button fully visible, LICENSES.txt added",
+     "source": "board note"
+    },
+    {
      "at": "2026-11-22T05:57:48+00:00",
      "ok": true,
      "note": "fix: on a 320x568 phone the practice round keeps its Next button on screen and the How to play card shows its whole Play button",
@@ -16066,12 +16072,6 @@
      "at": "2026-10-25T01:56:59+00:00",
      "ok": true,
      "note": "Zoom guard updated: taps are never cancelled (P1ZM00)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-25T01:13:56+00:00",
-     "ok": true,
-     "note": "No accidental zoom on phones:",
      "source": "main commit"
     }
    ]
@@ -36388,6 +36388,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-11-22T05:43:34+00:00",
+     "ok": true,
+     "note": "fix: 320 ring leaves the tool word, one screen on every level, Chinese lines break evenly",
+     "source": "main commit"
+    },
+    {
      "at": "2026-11-22T04:48:04+00:00",
      "ok": true,
      "note": "release check: licences listed in docs/LICENSES.txt (nothing third-party bundled)",
@@ -36446,12 +36452,6 @@
      "ok": true,
      "note": "small-phone board: full width at 320, seven bands, true 18 px words, box test; huge text at 320 still broken (kit)",
      "source": "board note"
-    },
-    {
-     "at": "2026-11-20T05:21:55+00:00",
-     "ok": true,
-     "note": "feat: the board on small phones fills the width and no word sits on a picture",
-     "source": "main commit"
     }
    ]
   },
