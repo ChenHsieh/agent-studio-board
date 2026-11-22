@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-22T02:38:04+00:00",
+ "generated": "2026-11-22T02:47:35+00:00",
  "ops": {
-  "count": 8,
+  "count": 7,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "Two tasks share the number P2NF18.",
@@ -28,23 +28,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 40,
+    "queued": 39,
     "running": 0,
     "doneToday": 1,
-    "minutes": 1600,
-    "estimateMinutes": 1600
+    "minutes": 1560,
+    "estimateMinutes": 1560
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 54,
+    "doneToday": 55,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 41,
+  "queued": 40,
   "running": 6,
-  "doneToday": 55,
+  "doneToday": 56,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -54,25 +54,25 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2020,
-  "estimatedFinish": "2026-11-23T05:18:04+00:00",
-  "estimateMinutes": 1600
+  "minutesRemaining": 1980,
+  "estimatedFinish": "2026-11-23T04:47:35+00:00",
+  "estimateMinutes": 1560
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "fake-philosopher",
+   "task": "P2NF132_fake philosopher finger and new claim",
+   "since": "2026-11-22T02:41:12+00:00",
+   "activity": "2026-11-22T02:45:29+00:00",
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "biosteganography",
    "task": "P2NF133_stripes text sizes and 320",
    "since": "2026-11-22T02:34:27+00:00",
-   "activity": "2026-11-22T02:37:04+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P3OPS00_refresh release records",
-   "since": null,
-   "activity": null,
+   "activity": "2026-11-22T02:44:05+00:00",
    "commit": null
   },
   {
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1230,
-  "usdEst": 4428.0,
+  "runs": 1231,
+  "usdEst": 4431.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -2004,7 +2004,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-08-20T15:13:59+00:00",
-   "lastChange": "2026-11-22T02:37:04+00:00",
+   "lastChange": "2026-11-22T02:44:05+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -7769,7 +7769,7 @@
    ]
   },
   {
-   "nextTask": "Fake Philosopher: the claim a renaming adds shows...",
+   "nextTask": null,
    "costTotalUsd": 65.54,
    "latestChange": {
     "text": "review fixes: slips fit, goal line per level, finger count, board fits small phone, marks...",
@@ -7792,8 +7792,8 @@
    "title": "Fake Philosopher",
    "line": "Build an ornate paragraph while a sceptical reader tries.",
    "url": "https://chenhsieh.github.io/fake-philosopher/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P3",
    "priorityNote": "A story, slower flashing, clear whether it is logic or",
    "shelfNote": "",
@@ -7807,7 +7807,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:37:21+00:00",
-   "lastChange": "2026-11-21T22:17:51+00:00",
+   "lastChange": "2026-11-22T02:45:29+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -7823,10 +7823,10 @@
    "tasks": [
     {
      "title": "P2NF132_fake philosopher finger and new claim",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Fake Philosopher: the claim a renaming adds shows on the page, and the sceptic's arm really rises",
-     "since": "2026-11-21T22:17:51+00:00",
+     "since": "2026-11-22T02:41:12+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -7935,8 +7935,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 7
    },
@@ -15992,6 +15992,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-11-22T02:33:19+00:00",
+     "ok": true,
+     "note": "feat: Lantern Meeting is a lacquer table at night: paper lanterns, name cards, forecast marks inside the tell slips, full-size top bar",
+     "source": "main commit"
+    },
+    {
      "at": "2026-11-20T08:58:10+00:00",
      "ok": true,
      "note": "lead build: council stays under the result, Try again first on a loss, seats tappable for habits, drawn preview, votes share line",
@@ -16050,12 +16056,6 @@
      "ok": true,
      "note": "feat: learn council votes in a first-minute round",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T17:48:29+00:00",
-     "ok": true,
-     "note": "feat: preview Lantern Meeting in shared links",
-     "source": "board note"
     }
    ]
   },
@@ -43920,15 +43920,15 @@
    "ran": 0
   },
   "console": {
-   "yes": 1,
-   "no": 0,
-   "unknown": 197,
+   "yes": 98,
+   "no": 1,
+   "unknown": 99,
    "ran": 0
   },
   "live": {
-   "yes": 1,
-   "no": 0,
-   "unknown": 197,
+   "yes": 97,
+   "no": 2,
+   "unknown": 99,
    "ran": 0
   },
   "name": {
