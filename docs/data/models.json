@@ -199,12 +199,12 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 270,
+   "count": 273,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 268,
+   "guessed": 271,
    "topFailures": [],
    "flag": "give more"
   },
@@ -664,6 +664,33 @@
   },
   {
    "date": "2026-11-22",
+   "task": "rereview the apprentice after 320 polish",
+   "number": "152",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "zh canvas labels crowd and clip (day label tops cut on every zh level)."
+  },
+  {
+   "date": "2026-11-22",
+   "task": "rereview lantern meeting after small phone fix",
+   "number": "112",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "at 320 the level 1 hint \"Tap Objection.\" is below the fold."
+  },
+  {
+   "date": "2026-11-22",
+   "task": "rereview no unison after next level fit",
+   "number": "108",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "songs 4/6/10/11 feel like one puzzle reskinned (owner's call)."
+  },
+  {
+   "date": "2026-11-22",
    "task": "rereview stripes after lead builds",
    "number": "",
    "executor": "claude-opus",
@@ -706,33 +733,6 @@
    "role": "review",
    "passed": "yes",
    "note": "canvas captions are small at 320 (\"PROPAGATION FLAT 04\", \"POSSIBLE GARDENS\", \"Listens 2 · safe count 5\" about 10-14 px) and the board sits s"
-  },
-  {
-   "date": "2026-11-22",
-   "task": "rereview coat corridor after fixes",
-   "number": "122",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "DONE P2NR214 re-review of Coat Corridor after P2NF126 (Opus 5.5, 2026-11-22 00:37-00:43 EST, 6 min, real touch, EN + zh). Verdict REVISE (se"
-  },
-  {
-   "date": "2026-11-22",
-   "task": "rereview alias loaf after fixes",
-   "number": "33",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "DONE P2NR213 re-review of Alias Loaf after P2NF125 (Opus 5.5, 2026-11-22 00:43-00:46 EST, 4 min, real touch, EN). Verdict REVISE on the live"
-  },
-  {
-   "date": "2026-11-22",
-   "task": "no unison next level board height",
-   "number": "108",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE. After a win, Next level (and Try again) now re-fits the board, so Play / Listen / Step / Undo stay on screen on every song. One change"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
