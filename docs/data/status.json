@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T04:32:02+00:00",
+ "generated": "2026-11-22T04:42:01+00:00",
  "ops": {
   "count": 8,
   "notes": [
@@ -28,23 +28,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 29,
+    "queued": 27,
     "running": 0,
     "doneToday": 1,
-    "minutes": 1160,
-    "estimateMinutes": 1160
+    "minutes": 1080,
+    "estimateMinutes": 1080
    },
    "Claude": {
     "queued": 1,
-    "running": 6,
-    "doneToday": 66,
-    "minutes": 420,
-    "estimateMinutes": 210
+    "running": 7,
+    "doneToday": 67,
+    "minutes": 480,
+    "estimateMinutes": 240
    }
   },
-  "queued": 30,
-  "running": 6,
-  "doneToday": 67,
+  "queued": 28,
+  "running": 7,
+  "doneToday": 68,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -54,9 +54,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1580,
-  "estimatedFinish": "2026-11-22T23:52:02+00:00",
-  "estimateMinutes": 1160
+  "minutesRemaining": 1560,
+  "estimatedFinish": "2026-11-22T22:42:01+00:00",
+  "estimateMinutes": 1080
  },
  "lanes": [
   {
@@ -64,15 +64,23 @@
    "game": "flying-white",
    "task": "P2KS17_flying white kit layout port",
    "since": "2026-11-22T04:17:22+00:00",
-   "activity": "2026-11-22T04:22:07+00:00",
+   "activity": "2026-11-22T04:40:00+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
-   "game": "letter-lines",
-   "task": "P2NV214_letter lines visual build desk",
-   "since": "2026-11-22T04:13:12+00:00",
-   "activity": "2026-11-22T04:29:02+00:00",
+   "game": "Multiple games",
+   "task": "P2RC35_release check knockout plate",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P2RC36_release check the apprentice",
+   "since": null,
+   "activity": null,
    "commit": null
   },
   {
@@ -109,11 +117,11 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 6,
+ "claudeWorkers": 7,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1242,
-  "usdEst": 4471.2,
+  "runs": 1243,
+  "usdEst": 4474.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -223,7 +231,7 @@
   },
   {
    "day": "2026-11-21",
-   "changes": 47
+   "changes": 48
   }
  ],
  "houseRules": 25,
@@ -5403,15 +5411,15 @@
     "caption": "Ring notes on a brass plate covered in sand and watch the."
    },
    "why": "Chladni figures on a vibrating plate and a post of dye moving on vibrating milk.",
-   "state": "released",
+   "state": "ship",
    "stateFlags": {
     "refining": false,
     "resting": false,
-    "regressed": false,
+    "regressed": true,
     "reviseRound": 0,
-    "daysInState": 29
+    "daysInState": 32
    },
-   "waitingOn": "none",
+   "waitingOn": "owner",
    "id": "cymatic-plate",
    "number": 85,
    "repo": "cymatic-plate",
@@ -5424,7 +5432,7 @@
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
    "image": "promo/cymatic-plate/first.jpg",
-   "released": true,
+   "released": false,
    "releasedOn": "2026-10-23",
    "releasedNote": "public-ready, still being refined",
    "whyExists": "Chladni figures and a post of dye on milk inspired this. Each note shapes sand and moves dye drops, so the order you play changes the outcome. Worth playing to see how sound can guide patterns and movement on a plate.",
@@ -5646,7 +5654,8 @@
      "note": "P3OR54_cymatic-plate-credits-page: WORKDIR",
      "source": "main commit"
     }
-   ]
+   ],
+   "releaseHeld": true
   },
   {
    "nextTask": null,
@@ -8296,7 +8305,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 4,
-    "daysInState": 1
+    "daysInState": 2
    },
    "waitingOn": "owner",
    "id": "fix-the-night",
@@ -9441,7 +9450,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T05:31:34+00:00",
-   "lastChange": "2026-11-22T04:22:07+00:00",
+   "lastChange": "2026-11-22T04:40:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -15991,6 +16000,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-11-22T04:15:17+00:00",
+     "ok": true,
+     "note": "feat: Lantern Meeting move and evidence cards are thick rice paper that lift when picked, seats flip with a wooden tap and a winning lantern fills with light",
+     "source": "main commit"
+    },
+    {
      "at": "2026-11-22T02:34:23+00:00",
      "ok": true,
      "note": "visual build: lacquer table, lanterns behind name cards, forecast inside slips, full-size top bar, compact seats when crowded",
@@ -16049,12 +16064,6 @@
      "ok": true,
      "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T23:51:15+00:00",
-     "ok": true,
-     "note": "feat: learn council votes in a first-minute round",
-     "source": "board note"
     }
    ]
   },
@@ -16497,30 +16506,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 61.73,
+   "costTotalUsd": 65.33,
    "latestChange": {
-    "text": "lead build live: one screen, result in mm, share row, new preview",
-    "at": "2026-11-20T09:06:02+00:00"
+    "text": "reading-room table look: leather, date-due slip, paper result sheet, RETURNED stamp,...",
+    "at": "2026-11-22T04:32:46+00:00"
    },
    "promo": null,
    "why": "A typography tool that joins every copy of a chosen letter on a scanned book page with coloured lines.",
    "state": "ship",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "letter lines visual build desk",
+   "waitingOn": "owner",
    "id": "letter-lines",
    "number": 110,
    "repo": "letter-lines",
    "title": "Letter Lines",
    "line": "",
    "url": "https://chenhsieh.github.io/letter-lines/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -16534,34 +16543,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T20:19:59+00:00",
-   "lastChange": "2026-11-22T04:29:02+00:00",
+   "lastChange": "2026-11-22T04:32:46+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
-    "claudeRuns": 6,
+    "claudeRuns": 7,
     "apiRuns": 1,
     "codexTokens": 441045,
     "codexUsdEst": 0.53,
-    "claudeUsdEst": 21.6,
+    "claudeUsdEst": 25.2,
     "earlierRounds": 11,
     "earlierUsdEst": 39.6,
-    "totalUsdEst": 61.73
+    "totalUsdEst": 65.33
    },
    "tasks": [
-    {
-     "title": "P2NV214_letter lines visual build desk",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "",
-     "since": "2026-11-22T04:13:12+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2NV213_letter lines visual build page",
      "state": "done",
@@ -16575,6 +16570,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P2NV214 starts from it."
+    },
+    {
+     "title": "P2NV214_letter lines visual build desk",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "",
+     "since": "2026-11-21T20:53:22+00:00",
+     "done": "2026-11-21T20:53:22+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "DONE - live at https://chenhsieh.github.io/letter-lines/ (main , tag pre-ll-desk; One publish."
     },
     {
      "title": "P2NV206_letter lines visual study",
@@ -16663,9 +16672,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 9
+    "done": 10
    },
    "verdict": {
     "date": "2026-11-20",
@@ -16673,8 +16682,14 @@
     "note": "Inking the nearest circled letter next never makes the shortest stroke, and the poem, the stroke and the controls now share one phone screen with the result in millimetres of ink"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-22T04:32:46+00:00",
+     "ok": true,
+     "note": "reading-room table look: leather, date-due slip, paper result sheet, RETURNED stamp, stroke replay",
+     "source": "board note"
+    },
     {
      "at": "2026-11-20T09:06:02+00:00",
      "ok": true,
@@ -16740,12 +16755,6 @@
      "ok": true,
      "note": "feat: drag letter strokes with three-tier hints and page navigation",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T09:35:44+00:00",
-     "ok": true,
-     "note": "P2LL30 live : Tangled pages, six untangle pages (tap a crossing = 2-opt swap, ink drops), exact-search checked, traps on 4-6",
-     "source": "board note"
     }
    ]
   },
@@ -43862,10 +43871,13 @@
   }
  ],
  "systemNeeds": [
-  "System needs: 14 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)"
+  "System needs: 14 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)",
+  "System needs: Released game Cymatic Plate now fails what it passed at release: standard (fix: play it; keep it released or remove its row from board/released.tsv)"
  ],
  "releaseReady": [],
- "releaseRegressed": [],
+ "releaseRegressed": [
+  "cymatic-plate"
+ ],
  "checksSummary": {
   "why": {
    "yes": 176,

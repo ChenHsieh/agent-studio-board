@@ -1,5 +1,5 @@
 {
- "generated": 1795321370,
+ "generated": 1795322534,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -98,20 +98,39 @@
    "created": 1793640233
   },
   {
-   "id": "P2NV214_letter-lines-visual-build-desk",
-   "request": "P2NV214_letter lines visual build desk",
-   "game": "Letter Lines",
+   "id": "P2RC35_release-check-knockout-plate",
+   "request": "Knockout Plate: release checklist pass after its re-review (credits, previews, accessible play, console)",
+   "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
-   "kind": "visual",
+   "kind": "build",
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NV213_letter-lines-visual-build-page"
+    "P2NR219_rereview-knockout-plate-round5"
    ],
    "priority": null,
-   "why": "A typography tool that joins every copy of a chosen letter on a scanned book page with coloured lines.",
+   "why": "",
+   "state": "running",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2RC36_release-check-the-apprentice",
+   "request": "The Apprentice: release checklist pass after its re-review (credits, previews, accessible play, console)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR220_rereview-the-apprentice-round5"
+   ],
+   "priority": null,
+   "why": "",
    "state": "running",
    "at": 1795294402,
    "created": 1795294402
@@ -267,6 +286,26 @@
    "created": 1795294402
   },
   {
+   "id": "P2NR223_rereview-letter-lines-round5",
+   "request": "Letter Lines: stranger re-review of the live page after tonight's change; ship goes to its release check",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NV214_letter-lines-visual-build-desk",
+    "P2NV206_letter-lines-visual-study"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795294402
+  },
+  {
    "id": "P2NR225_rereview-no-unison-rule-words",
    "request": "No Unison: cold re-review after the rule-words build",
    "game": "No Unison",
@@ -354,44 +393,6 @@
    "estMinutes": null,
    "after": [
     "P2NR218_rereview-floating-city-round5"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC35_release-check-knockout-plate",
-   "request": "Knockout Plate: release checklist pass after its re-review (credits, previews, accessible play, console)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR219_rereview-knockout-plate-round5"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC36_release-check-the-apprentice",
-   "request": "The Apprentice: release checklist pass after its re-review (credits, previews, accessible play, console)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR220_rereview-the-apprentice-round5"
    ],
    "priority": null,
    "why": "",
@@ -574,28 +575,6 @@
    "state": "waiting",
    "waitingOn": [
     "P2NB40_slab-core"
-   ],
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR223_rereview-letter-lines-round5",
-   "request": "Letter Lines: stranger re-review of the live page after tonight's change; ship goes to its release check",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NV214_letter-lines-visual-build-desk",
-    "P2NV206_letter-lines-visual-study"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NV214_letter-lines-visual-build-desk"
    ],
    "created": 1795294402
   },
@@ -1719,6 +1698,25 @@
    "estMinutes": null,
    "after": [
     "P2FS70_onescreen-gate-inner-scroll"
+   ],
+   "priority": null,
+   "why": "A typography tool that joins every copy of a chosen letter on a scanned book page with coloured lines.",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2NV214_letter-lines-visual-build-desk",
+   "request": "P2NV214_letter lines visual build desk",
+   "game": "Letter Lines",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NV213_letter-lines-visual-build-page"
    ],
    "priority": null,
    "why": "A typography tool that joins every copy of a chosen letter on a scanned book page with coloured lines.",
