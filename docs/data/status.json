@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-22T03:25:28+00:00",
+ "generated": "2026-11-22T03:35:18+00:00",
  "ops": {
-  "count": 5,
+  "count": 6,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "Two tasks share the number P2NF18.",
@@ -28,23 +28,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 35,
+    "queued": 33,
     "running": 0,
     "doneToday": 1,
-    "minutes": 1400,
-    "estimateMinutes": 1400
+    "minutes": 1320,
+    "estimateMinutes": 1320
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 59,
+    "doneToday": 61,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 36,
+  "queued": 34,
   "running": 6,
-  "doneToday": 60,
+  "doneToday": 62,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -54,25 +54,25 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1820,
-  "estimatedFinish": "2026-11-23T02:45:28+00:00",
-  "estimateMinutes": 1400
+  "minutesRemaining": 1740,
+  "estimatedFinish": "2026-11-23T01:35:18+00:00",
+  "estimateMinutes": 1320
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "biosteganography",
-   "task": "P2NF134_stripes drawn preview",
-   "since": "2026-11-22T03:19:04+00:00",
-   "activity": "2026-11-22T03:22:47+00:00",
+   "game": "letter-lines",
+   "task": "P2NV213_letter lines visual build page",
+   "since": "2026-11-22T03:30:33+00:00",
+   "activity": "2026-11-22T03:34:35+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
-   "game": "thirsty-clicks",
-   "task": "P2NV210_thirsty clicks visual build flat",
-   "since": "2026-11-22T02:53:07+00:00",
-   "activity": "2026-11-22T03:23:26+00:00",
+   "game": "Multiple games",
+   "task": "P2RC28_next please release check",
+   "since": null,
+   "activity": null,
    "commit": null
   },
   {
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1235,
-  "usdEst": 4446.0,
+  "runs": 1237,
+  "usdEst": 4453.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -223,7 +223,7 @@
   },
   {
    "day": "2026-11-21",
-   "changes": 42
+   "changes": 43
   }
  ],
  "houseRules": 25,
@@ -1960,10 +1960,10 @@
   },
   {
    "nextTask": "Straighten the Stripes: cold Opus re-review after the...",
-   "costTotalUsd": 68.59,
+   "costTotalUsd": 72.19,
    "latestChange": {
-    "text": "feat: link preview is a drawn picture of static turning into stripes",
-    "at": "2026-11-22T03:22:47+00:00"
+    "text": "NOT_DONE live: drawn og.png merged to docs/demo but Pages serves root demo/ (path /), see...",
+    "at": "2026-11-22T03:30:27+00:00"
    },
    "promo": {
     "files": {
@@ -1982,15 +1982,15 @@
     "reviseRound": 3,
     "daysInState": 0
    },
-   "waitingOn": "stripes drawn preview",
+   "waitingOn": "rereview stripes after lead builds",
    "id": "biosteganography",
    "number": 6,
    "repo": "biosteganography",
    "title": "Biosteganography",
    "line": "Straighten the stripes to find a hidden repeat.",
    "url": "https://chenhsieh.github.io/biosteganography/demo/snap.html",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
@@ -2004,34 +2004,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-14T20:04:43+00:00",
-   "lastChange": "2026-11-22T03:22:47+00:00",
+   "lastChange": "2026-11-22T03:30:27+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 5,
+    "claudeRuns": 6,
     "apiRuns": 0,
     "codexTokens": 155094,
     "codexUsdEst": 0.19,
-    "claudeUsdEst": 18.0,
+    "claudeUsdEst": 21.6,
     "earlierRounds": 14,
     "earlierUsdEst": 50.4,
-    "totalUsdEst": 68.59
+    "totalUsdEst": 72.19
    },
    "tasks": [
-    {
-     "title": "P2NF134_stripes drawn preview",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Straighten the Stripes: drawn link preview instead of a screenshot",
-     "since": "2026-11-22T03:19:04+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2NR226_rereview stripes after lead builds",
      "state": "queued",
@@ -2045,6 +2031,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2NF134_stripes drawn preview",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Straighten the Stripes: drawn link preview instead of a screenshot",
+     "since": "2026-11-21T22:57:49+00:00",
+     "done": "2026-11-21T22:57:49+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "NOT YET - the drawn preview is merged to main (, tag pre-stripes-og) but is NOT what the live site serves."
     },
     {
      "title": "P2NF133_stripes text sizes and 320",
@@ -2133,9 +2133,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 6
+    "done": 7
    },
    "verdict": {
     "date": "2026-11-21",
@@ -2145,6 +2145,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-22T03:30:27+00:00",
+     "ok": true,
+     "note": "NOT_DONE live: drawn og.png merged to docs/demo but Pages serves root demo/ (path /), see result P2NF134",
+     "source": "board note"
+    },
     {
      "at": "2026-11-22T03:22:47+00:00",
      "ok": true,
@@ -2209,12 +2215,6 @@
      "at": "2026-10-24T16:28:07+00:00",
      "ok": true,
      "note": "fix: the served game page names Biosteganography",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T16:22:26+00:00",
-     "ok": true,
-     "note": "fix: the page and game titles name Biosteganography",
      "source": "main commit"
     }
    ]
@@ -16497,7 +16497,7 @@
    ]
   },
   {
-   "nextTask": "P2NV213_letter lines visual build page",
+   "nextTask": "P2NV214_letter lines visual build desk",
    "costTotalUsd": 61.73,
    "latestChange": {
     "text": "lead build live: one screen, result in mm, share row, new preview",
@@ -16520,8 +16520,8 @@
    "title": "Letter Lines",
    "line": "",
    "url": "https://chenhsieh.github.io/letter-lines/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -16535,7 +16535,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T20:19:59+00:00",
-   "lastChange": "2026-11-21T20:53:22+00:00",
+   "lastChange": "2026-11-22T03:34:35+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 2,
@@ -16551,10 +16551,10 @@
    "tasks": [
     {
      "title": "P2NV213_letter lines visual build page",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "",
-     "since": "2026-11-21T20:53:22+00:00",
+     "since": "2026-11-22T03:30:33+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -16663,8 +16663,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 8
    },
@@ -38599,21 +38599,21 @@
    "why": "A post saying tomatoes scream when hurt, from the published finding that stressed plants click in ultrasound.",
    "state": "ship",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "thirsty clicks visual build flat",
+   "waitingOn": "owner",
    "id": "thirsty-clicks",
    "number": 107,
    "repo": "thirsty-clicks",
    "title": "Thirsty Clicks",
    "line": "",
    "url": "https://chenhsieh.github.io/thirsty-clicks/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -38631,34 +38631,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T17:19:46+00:00",
-   "lastChange": "2026-11-22T03:23:26+00:00",
+   "lastChange": "2026-11-21T20:53:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 8,
+    "claudeRuns": 9,
     "apiRuns": 0,
     "codexTokens": 211336,
     "codexUsdEst": 0.25,
-    "claudeUsdEst": 28.8,
-    "earlierRounds": 11,
-    "earlierUsdEst": 39.6,
+    "claudeUsdEst": 32.4,
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
     "totalUsdEst": 68.65
    },
    "tasks": [
-    {
-     "title": "P2NV210_thirsty clicks visual build flat",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Thirsty Clicks: the board becomes a seed flat seen from above, with a punched tag on a stake for every listen",
-     "since": "2026-11-22T02:53:07+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2NV209_thirsty clicks visual build chrome",
      "state": "done",
@@ -38672,6 +38658,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "P2NV210 publishes)"
+    },
+    {
+     "title": "P2NV210_thirsty clicks visual build flat",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Thirsty Clicks: the board becomes a seed flat seen from above, with a punched tag on a stake for every listen",
+     "since": "2026-11-21T20:53:22+00:00",
+     "done": "2026-11-21T20:53:22+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "the shared ui_gate fails U7 at 320 px wide because build 1 moved Levels and How to play into More there; main passes it)"
     },
     {
      "title": "P2NV205_thirsty clicks visual study",
@@ -38760,9 +38760,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 9
+    "done": 10
    },
    "verdict": {
     "date": "2026-11-20",
@@ -38770,7 +38770,7 @@
     "note": "Micing every plant in order still misses the safe count on levels 4 to 6, and the winning tap now leaves a card that says over, on or under the safe count with Try again first when over"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-11-20T09:19:26+00:00",

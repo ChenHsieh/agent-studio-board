@@ -1,5 +1,5 @@
 {
- "generated": 1795317941,
+ "generated": 1795318531,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -27,25 +27,6 @@
   "lastHandBackN": 7
  },
  "tasks": [
-  {
-   "id": "P2NF134_stripes-drawn-preview",
-   "request": "Straighten the Stripes: drawn link preview instead of a screenshot",
-   "game": "Biosteganography",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NF133_stripes-text-sizes-and-320"
-   ],
-   "priority": "P1",
-   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
-   "state": "running",
-   "at": 1795301869,
-   "created": 1795301869
-  },
   {
    "id": "P3PL14_speaking-stone-why-rollout",
    "request": "Why this exists: finish the rollout on speaking-stone (new test failure: test/first_minute_play.mjs no longer sees )",
@@ -98,9 +79,9 @@
    "created": 1793640233
   },
   {
-   "id": "P2NV210_thirsty-clicks-visual-build-flat",
-   "request": "Thirsty Clicks: the board becomes a seed flat seen from above, with a punched tag on a stake for every listen",
-   "game": "Thirsty Clicks",
+   "id": "P2NV213_letter-lines-visual-build-page",
+   "request": "P2NV213_letter lines visual build page",
+   "game": "Letter Lines",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
@@ -108,10 +89,30 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NV209_thirsty-clicks-visual-build-chrome"
+    "P2FS70_onescreen-gate-inner-scroll"
    ],
    "priority": null,
-   "why": "A post saying tomatoes scream when hurt, from the published finding that stressed plants click in ultrasound.",
+   "why": "A typography tool that joins every copy of a chosen letter on a scanned book page with coloured lines.",
+   "state": "running",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2RC28_next-please-release-check",
+   "request": "Next Please: release checklist after the window look",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P2NR171_rereview-out-of-the-corner-and-next-please",
+    "P2KS12_kit-sync-next-please-no-favorites-out-of-the-corner"
+   ],
+   "priority": null,
+   "why": "",
    "state": "running",
    "at": 1795294402,
    "created": 1795294402
@@ -191,6 +192,25 @@
    "created": 1795297521
   },
   {
+   "id": "P2NR226_rereview-stripes-after-lead-builds",
+   "request": "Straighten the Stripes: cold Opus re-review after the readability and preview builds",
+   "game": "Biosteganography",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NF134_stripes-drawn-preview"
+   ],
+   "priority": "P1",
+   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795301873
+  },
+  {
    "id": "P2NV212_lantern-meeting-visual-build-pieces",
    "request": "Lantern Meeting visual build 2: move cards with seals, evidence tiles, the panel ledge, flip and light motion, new og.png",
    "game": "Lantern Meeting",
@@ -267,6 +287,25 @@
    "created": 1795294402
   },
   {
+   "id": "P2NR221_rereview-thirsty-clicks-round5",
+   "request": "Thirsty Clicks: stranger re-review of the live page after tonight's change; ship goes to its release check",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NV210_thirsty-clicks-visual-build-flat"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795294402
+  },
+  {
    "id": "P2NR225_rereview-no-unison-rule-words",
    "request": "No Unison: cold re-review after the rule-words build",
    "game": "No Unison",
@@ -284,25 +323,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1795298002
-  },
-  {
-   "id": "P2NV213_letter-lines-visual-build-page",
-   "request": "P2NV213_letter lines visual build page",
-   "game": "Letter Lines",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2FS70_onescreen-gate-inner-scroll"
-   ],
-   "priority": null,
-   "why": "A typography tool that joins every copy of a chosen letter on a scanned book page with coloured lines.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
   },
   {
    "id": "P2RC06_release-check-batch-6",
@@ -335,26 +355,6 @@
    "estMinutes": null,
    "after": [
     "P2KS06_kit-sync-batch-7"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC28_next-please-release-check",
-   "request": "Next Please: release checklist after the window look",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P2NR171_rereview-out-of-the-corner-and-next-please",
-    "P2KS12_kit-sync-next-please-no-favorites-out-of-the-corner"
    ],
    "priority": null,
    "why": "",
@@ -575,27 +575,6 @@
    "created": 1795294402
   },
   {
-   "id": "P2NR226_rereview-stripes-after-lead-builds",
-   "request": "Straighten the Stripes: cold Opus re-review after the readability and preview builds",
-   "game": "Biosteganography",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NF134_stripes-drawn-preview"
-   ],
-   "priority": "P1",
-   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NF134_stripes-drawn-preview"
-   ],
-   "created": 1795301873
-  },
-  {
    "id": "P3NF136_the-apprentice-polish-320-ring-and-fit",
    "request": "The Apprentice: the lesson ring leaves the word whole on a small phone, level 5 and Chinese fit the screen",
    "game": "The Apprentice",
@@ -634,27 +613,6 @@
    "state": "waiting",
    "waitingOn": [
     "P2NB40_slab-core"
-   ],
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR221_rereview-thirsty-clicks-round5",
-   "request": "Thirsty Clicks: stranger re-review of the live page after tonight's change; ship goes to its release check",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NV210_thirsty-clicks-visual-build-flat"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NV210_thirsty-clicks-visual-build-flat"
    ],
    "created": 1795294402
   },
@@ -862,6 +820,25 @@
    "state": "done",
    "at": 1795301840,
    "created": 1795301840
+  },
+  {
+   "id": "P2NF134_stripes-drawn-preview",
+   "request": "Straighten the Stripes: drawn link preview instead of a screenshot",
+   "game": "Biosteganography",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NF133_stripes-text-sizes-and-320"
+   ],
+   "priority": "P1",
+   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
+   "state": "done",
+   "at": 1795301869,
+   "created": 1795301869
   },
   {
    "id": "P2NV201_the-apprentice-visual-build-chrome",
@@ -1730,6 +1707,25 @@
    "estMinutes": null,
    "after": [
     "P2NV205_thirsty-clicks-visual-study"
+   ],
+   "priority": null,
+   "why": "A post saying tomatoes scream when hurt, from the published finding that stressed plants click in ultrasound.",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2NV210_thirsty-clicks-visual-build-flat",
+   "request": "Thirsty Clicks: the board becomes a seed flat seen from above, with a punched tag on a stake for every listen",
+   "game": "Thirsty Clicks",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NV209_thirsty-clicks-visual-build-chrome"
    ],
    "priority": null,
    "why": "A post saying tomatoes scream when hurt, from the published finding that stressed plants click in ultrasound.",
