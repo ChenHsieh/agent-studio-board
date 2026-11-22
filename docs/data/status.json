@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T02:28:00+00:00",
+ "generated": "2026-11-22T02:38:04+00:00",
  "ops": {
   "count": 8,
   "notes": [
@@ -28,23 +28,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 41,
+    "queued": 40,
     "running": 0,
     "doneToday": 1,
-    "minutes": 1640,
-    "estimateMinutes": 1640
+    "minutes": 1600,
+    "estimateMinutes": 1600
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 53,
+    "doneToday": 54,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 42,
+  "queued": 41,
   "running": 6,
-  "doneToday": 54,
+  "doneToday": 55,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -54,17 +54,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2060,
-  "estimatedFinish": "2026-11-23T05:48:00+00:00",
-  "estimateMinutes": 1640
+  "minutesRemaining": 2020,
+  "estimatedFinish": "2026-11-23T05:18:04+00:00",
+  "estimateMinutes": 1600
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "lantern-meeting",
-   "task": "P2NV211_lantern meeting visual build",
-   "since": "2026-11-22T02:10:54+00:00",
-   "activity": "2026-11-22T02:10:59+00:00",
+   "game": "biosteganography",
+   "task": "P2NF133_stripes text sizes and 320",
+   "since": "2026-11-22T02:34:27+00:00",
+   "activity": "2026-11-22T02:37:04+00:00",
    "commit": null
   },
   {
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1229,
-  "usdEst": 4424.4,
+  "runs": 1230,
+  "usdEst": 4428.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -223,7 +223,7 @@
   },
   {
    "day": "2026-11-21",
-   "changes": 37
+   "changes": 38
   }
  ],
  "houseRules": 25,
@@ -1982,15 +1982,15 @@
     "reviseRound": 3,
     "daysInState": 0
    },
-   "waitingOn": "rereview stripes after lead builds",
+   "waitingOn": "stripes text sizes and 320",
    "id": "biosteganography",
    "number": 6,
    "repo": "biosteganography",
    "title": "Biosteganography",
    "line": "Straighten the stripes to find a hidden repeat.",
    "url": "https://chenhsieh.github.io/biosteganography/demo/snap.html",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
@@ -2004,7 +2004,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-08-20T15:13:59+00:00",
-   "lastChange": "2026-11-21T22:58:33+00:00",
+   "lastChange": "2026-11-22T02:37:04+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -2018,6 +2018,20 @@
     "totalUsdEst": 64.99
    },
    "tasks": [
+    {
+     "title": "P2NF133_stripes text sizes and 320",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Straighten the Stripes: house text sizes, nothing cut at 320, long text behind Why",
+     "since": "2026-11-22T02:34:27+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2NR226_rereview stripes after lead builds",
      "state": "queued",
@@ -2038,20 +2052,6 @@
      "worker": "Codex",
      "plan": "Straighten the Stripes: drawn link preview instead of a screenshot",
      "since": "2026-11-21T22:57:49+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
-    {
-     "title": "P2NF133_stripes text sizes and 320",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Straighten the Stripes: house text sizes, nothing cut at 320, long text behind Why",
-     "since": "2026-11-21T22:57:20+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2132,8 +2132,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 3,
-    "running": 0,
+    "queued": 2,
+    "running": 1,
     "waitingDesign": 0,
     "done": 5
    },
@@ -15800,10 +15800,10 @@
   },
   {
    "nextTask": "Lantern Meeting visual build 2: move cards with...",
-   "costTotalUsd": 58.09,
+   "costTotalUsd": 61.69,
    "latestChange": {
-    "text": "lead build: council stays under the result, Try again first on a loss, seats tappable for...",
-    "at": "2026-11-20T08:58:10+00:00"
+    "text": "visual build: lacquer table, lanterns behind name cards, forecast inside slips, full-size...",
+    "at": "2026-11-22T02:34:23+00:00"
    },
    "promo": {
     "files": {
@@ -15822,15 +15822,15 @@
     "reviseRound": 0,
     "daysInState": 1
    },
-   "waitingOn": "lantern meeting visual build",
+   "waitingOn": "lantern meeting visual build pieces",
    "id": "lantern-meeting",
    "number": 112,
    "repo": "lantern-meeting",
    "title": "Lantern Meeting",
    "line": "",
    "url": "https://chenhsieh.github.io/lantern-meeting/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Politics of lab and corporate competition; rock-paper-scissors core; clearer...",
    "shelfNote": "",
@@ -15844,34 +15844,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T20:56:30+00:00",
-   "lastChange": "2026-11-22T02:10:59+00:00",
+   "lastChange": "2026-11-22T02:34:23+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
-    "claudeRuns": 6,
+    "claudeRuns": 7,
     "apiRuns": 1,
     "codexTokens": 406690,
     "codexUsdEst": 0.49,
-    "claudeUsdEst": 21.6,
+    "claudeUsdEst": 25.2,
     "earlierRounds": 10,
     "earlierUsdEst": 36.0,
-    "totalUsdEst": 58.09
+    "totalUsdEst": 61.69
    },
    "tasks": [
-    {
-     "title": "P2NV211_lantern meeting visual build",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Lantern Meeting visual build 1: the lacquer table with standing lanterns and name cards, top bar at full size",
-     "since": "2026-11-22T02:10:54+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2NV212_lantern meeting visual build pieces",
      "state": "queued",
@@ -15885,6 +15871,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2NV211_lantern meeting visual build",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Lantern Meeting visual build 1: the lacquer table with standing lanterns and name cards, top bar at full size",
+     "since": "2026-11-21T20:53:22+00:00",
+     "done": "2026-11-21T20:53:22+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "DONE (live, main , tag pre-lm-build1; served style.css and shell.js match the build; live page rendered at 390x844, no console errors)"
     },
     {
      "title": "P2NV204_lantern meeting visual study",
@@ -15973,9 +15973,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 10
+    "done": 11
    },
    "verdict": {
     "date": "2026-11-20",
@@ -15985,6 +15985,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-22T02:34:23+00:00",
+     "ok": true,
+     "note": "visual build: lacquer table, lanterns behind name cards, forecast inside slips, full-size top bar, compact seats when crowded",
+     "source": "board note"
+    },
     {
      "at": "2026-11-20T08:58:10+00:00",
      "ok": true,
@@ -16050,12 +16056,6 @@
      "ok": true,
      "note": "feat: preview Lantern Meeting in shared links",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-21T17:47:27+00:00",
-     "ok": true,
-     "note": "feat: preview Lantern Meeting in shared links",
-     "source": "main commit"
     }
    ]
   },
@@ -23667,7 +23667,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 17
+    "daysInState": 18
    },
    "waitingOn": "none",
    "id": "open-play",
@@ -39072,7 +39072,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 18
+    "daysInState": 19
    },
    "waitingOn": "none",
    "id": "three-dials",
@@ -43896,39 +43896,39 @@
    "ran": 0
   },
   "a11y": {
-   "yes": 54,
-   "no": 137,
+   "yes": 53,
+   "no": 138,
    "unknown": 7,
    "ran": 0
   },
   "credits": {
-   "yes": 122,
-   "no": 67,
-   "unknown": 9,
+   "yes": 125,
+   "no": 70,
+   "unknown": 3,
    "ran": 0
   },
   "saves": {
-   "yes": 134,
+   "yes": 141,
    "no": 0,
-   "unknown": 64,
+   "unknown": 57,
    "ran": 0
   },
   "standard": {
-   "yes": 67,
-   "no": 122,
-   "unknown": 9,
+   "yes": 68,
+   "no": 124,
+   "unknown": 6,
    "ran": 0
   },
   "console": {
-   "yes": 162,
+   "yes": 1,
    "no": 0,
-   "unknown": 36,
+   "unknown": 197,
    "ran": 0
   },
   "live": {
-   "yes": 156,
-   "no": 4,
-   "unknown": 38,
+   "yes": 1,
+   "no": 0,
+   "unknown": 197,
    "ran": 0
   },
   "name": {
