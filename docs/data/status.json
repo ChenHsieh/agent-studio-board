@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T07:23:31+00:00",
+ "generated": "2026-11-22T07:33:00+00:00",
  "ops": {
   "count": 10,
   "notes": [
@@ -28,23 +28,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 7,
+    "queued": 6,
     "running": 0,
     "doneToday": 0,
-    "minutes": 280,
-    "estimateMinutes": 280
+    "minutes": 240,
+    "estimateMinutes": 240
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 7,
+    "doneToday": 8,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 8,
+  "queued": 7,
   "running": 6,
-  "doneToday": 7,
+  "doneToday": 8,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -54,9 +54,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 700,
-  "estimatedFinish": "2026-11-22T12:03:31+00:00",
-  "estimateMinutes": 280
+  "minutesRemaining": 660,
+  "estimatedFinish": "2026-11-22T11:33:00+00:00",
+  "estimateMinutes": 240
  },
  "lanes": [
   {
@@ -64,15 +64,15 @@
    "game": "mirror-hold",
    "task": "P2FM65_mirror hold first minute",
    "since": "2026-11-22T07:20:29+00:00",
-   "activity": "2026-11-22T07:20:29+00:00",
+   "activity": "2026-11-22T07:30:23+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P2RC48_release check coat corridor",
-   "since": null,
-   "activity": null,
+   "game": "coat-corridor",
+   "task": "P2NV217_coat corridor visual study",
+   "since": "2026-11-22T07:32:08+00:00",
+   "activity": "2026-11-22T07:32:08+00:00",
    "commit": null
   },
   {
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1275,
-  "usdEst": 4590.0,
+  "runs": 1276,
+  "usdEst": 4593.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -227,7 +227,7 @@
   },
   {
    "day": "2026-11-22",
-   "changes": 13
+   "changes": 14
   }
  ],
  "houseRules": 25,
@@ -3646,11 +3646,11 @@
    ]
   },
   {
-   "nextTask": "Coat Corridor: design its first visual round (study...",
-   "costTotalUsd": 54.23,
+   "nextTask": null,
+   "costTotalUsd": 57.83,
    "latestChange": {
-    "text": "caption wraps inside the board, one name for the door, text at accessible sizes on tall...",
-    "at": "2026-11-22T06:39:41+00:00"
+    "text": "About page drops studio credit line; docs/LICENSES.txt added",
+    "at": "2026-11-22T07:31:40+00:00"
    },
    "promo": {
     "files": {
@@ -3675,8 +3675,8 @@
    "title": "Coat Corridor",
    "line": "Six floors of coats and cloth: clip, double stitch, and a certified daily.",
    "url": "https://chenhsieh.github.io/coat-corridor/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Six floors of coats and cloth: clip, double stitch, and a certified daily.",
    "shelfNote": "",
@@ -3690,7 +3690,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:52:34+00:00",
-   "lastChange": "2026-11-22T07:18:41+00:00",
+   "lastChange": "2026-11-22T07:32:08+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -3699,17 +3699,17 @@
     "codexTokens": 189074,
     "codexUsdEst": 0.23,
     "claudeUsdEst": 10.8,
-    "earlierRounds": 12,
-    "earlierUsdEst": 43.2,
-    "totalUsdEst": 54.23
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
+    "totalUsdEst": 57.83
    },
    "tasks": [
     {
      "title": "P2NV217_coat corridor visual study",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Coat Corridor: design its first visual round (study, mock, build tasks)",
-     "since": "2026-11-22T07:18:41+00:00",
+     "since": "2026-11-22T07:32:08+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -3776,8 +3776,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 4
    },
@@ -3789,6 +3789,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-22T07:31:40+00:00",
+     "ok": true,
+     "note": "About page drops studio credit line; docs/LICENSES.txt added",
+     "source": "board note"
+    },
     {
      "at": "2026-11-22T06:39:41+00:00",
      "ok": true,
@@ -3854,12 +3860,6 @@
      "ok": true,
      "note": "feat: teach the red lining through a four-step first-minute round",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-22T20:37:29+00:00",
-     "ok": true,
-     "note": "feat: teach the red lining through a four-step first-minute round",
-     "source": "main commit"
     }
    ]
   },
@@ -20034,7 +20034,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T21:41:35+00:00",
-   "lastChange": "2026-11-22T07:20:29+00:00",
+   "lastChange": "2026-11-22T07:30:23+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
