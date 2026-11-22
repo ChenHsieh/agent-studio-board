@@ -211,12 +211,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 649,
+   "count": 650,
    "firstTimePass": 96,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 591,
+   "guessed": 592,
    "topFailures": [
     "DONE",
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
@@ -673,6 +673,15 @@
   },
   {
    "date": "2026-11-21",
+   "task": "letter lines visual build page",
+   "number": "110",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE (pushed, not merged, not published) - branch chen-ll-page in play_night_20261014/repos/letter-lines (5 commits on origin/main 314fde2)."
+  },
+  {
+   "date": "2026-11-21",
    "task": "lantern meeting visual build",
    "number": "112",
    "executor": "claude-sonnet",
@@ -724,15 +733,6 @@
    "role": "build",
    "passed": "yes",
    "note": "how much to accept (pick: the three best bets only), answer 11-13 first, Copy Drift/Morning Three/One Thread stay parked (his 10-23 pullback"
-  },
-  {
-   "date": "2026-11-21",
-   "task": "rereview the apprentice round5",
-   "number": "152",
-   "executor": "claude-opus",
-   "role": "review",
-   "passed": "yes",
-   "note": "DONE - re-review round 5 of The Apprentice after the visual builds P2NV200 + P2NV201, 2026-11-21 18:11-18:16 EST, live https://chenhsieh.git"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
