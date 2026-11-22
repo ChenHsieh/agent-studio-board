@@ -1,5 +1,5 @@
 {
- "generated": 1795306423,
+ "generated": 1795307600,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -77,8 +77,8 @@
    "priority": "P3",
    "why": "The 1952 silent piece 4′33″ and a contest poster for it.",
    "state": "running",
-   "at": 1795294402,
-   "created": 1795294402
+   "at": 1795307057,
+   "created": 1795307057
   },
   {
    "id": "P3PL18_silva-to-maaslin2-why-build",
@@ -98,40 +98,21 @@
    "created": 1793640233
   },
   {
-   "id": "P2KS12_kit-sync-next-please-no-favorites-out-of-the-corner",
-   "request": "Kit sync for Next Please, No Favorites and Out of the Corner after their re-reviews",
+   "id": "P2NR216_rereview-out-of-the-corner-round5",
+   "request": "Out of the Corner: stranger re-review of the live page after tonight's change; ship goes to its release check",
    "game": "Studio",
    "route": "Claude",
-   "model": "sonnet",
+   "model": "opus",
    "effort": "high",
-   "kind": "build",
-   "size": "one repo",
+   "kind": "review",
+   "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2NR171_rereview-out-of-the-corner-and-next-please",
-    "P2NR172_rereview-no-favorites-and-guide-lines"
+    "P2NF110_out-of-the-corner-fixes",
+    "P2KS12_kit-sync-next-please-no-favorites-out-of-the-corner"
    ],
    "priority": null,
    "why": "",
-   "state": "running",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2KS16_plain-telling-kit-port",
-   "request": "P2KS16_plain telling kit port",
-   "game": "Plain Telling",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NF112_plain-telling-kit-sync-and-draw-tap"
-   ],
-   "priority": null,
-   "why": "A commentary on a 2002 film that tells one story three ways in red, blue and white.",
    "state": "running",
    "at": 1795294402,
    "created": 1795294402
@@ -399,6 +380,26 @@
    "created": 1795298002
   },
   {
+   "id": "P2NR201_rereview-plain-telling-after-fixes",
+   "request": "Plain Telling: stranger re-review after its review fixes (obvious play first, five-second test)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NF112_plain-telling-kit-sync-and-draw-tap",
+    "P2KS16_plain-telling-kit-port"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795294402
+  },
+  {
    "id": "P2NV209_thirsty-clicks-visual-build-chrome",
    "request": "Thirsty Clicks: a one-row top bar with a nursery-tag mark, the HUD and the gardens line big and out of the board",
    "game": "Thirsty Clicks",
@@ -448,6 +449,26 @@
    "estMinutes": null,
    "after": [
     "P2KS06_kit-sync-batch-7"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795294402
+  },
+  {
+   "id": "P2RC28_next-please-release-check",
+   "request": "Next Please: release checklist after the window look",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P2NR171_rereview-out-of-the-corner-and-next-please",
+    "P2KS12_kit-sync-next-please-no-favorites-out-of-the-corner"
    ],
    "priority": null,
    "why": "",
@@ -792,28 +813,6 @@
    "created": 1795294402
   },
   {
-   "id": "P2NR201_rereview-plain-telling-after-fixes",
-   "request": "Plain Telling: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF112_plain-telling-kit-sync-and-draw-tap",
-    "P2KS16_plain-telling-kit-port"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2KS16_plain-telling-kit-port"
-   ],
-   "created": 1795294402
-  },
-  {
    "id": "P2NR213_rereview-alias-loaf-after-fixes",
    "request": "Alias Loaf: stranger re-review after its review fixes (obvious play first, five-second test)",
    "game": "Studio",
@@ -852,28 +851,6 @@
    "state": "waiting",
    "waitingOn": [
     "P2NF126_coat-corridor-review-fixes"
-   ],
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR216_rereview-out-of-the-corner-round5",
-   "request": "Out of the Corner: stranger re-review of the live page after tonight's change; ship goes to its release check",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF110_out-of-the-corner-fixes",
-    "P2KS12_kit-sync-next-please-no-favorites-out-of-the-corner"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2KS12_kit-sync-next-please-no-favorites-out-of-the-corner"
    ],
    "created": 1795294402
   },
@@ -1022,28 +999,6 @@
    "state": "waiting",
    "waitingOn": [
     "P2NV213_letter-lines-visual-build-page"
-   ],
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC28_next-please-release-check",
-   "request": "Next Please: release checklist after the window look",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P2NR171_rereview-out-of-the-corner-and-next-please",
-    "P2KS12_kit-sync-next-please-no-favorites-out-of-the-corner"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2KS12_kit-sync-next-please-no-favorites-out-of-the-corner"
    ],
    "created": 1795294402
   },
@@ -1360,6 +1315,45 @@
    "state": "done",
    "at": 1795298917,
    "created": 1795298917
+  },
+  {
+   "id": "P2KS12_kit-sync-next-please-no-favorites-out-of-the-corner",
+   "request": "Kit sync for Next Please, No Favorites and Out of the Corner after their re-reviews",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR171_rereview-out-of-the-corner-and-next-please",
+    "P2NR172_rereview-no-favorites-and-guide-lines"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2KS16_plain-telling-kit-port",
+   "request": "P2KS16_plain telling kit port",
+   "game": "Plain Telling",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NF112_plain-telling-kit-sync-and-draw-tap"
+   ],
+   "priority": null,
+   "why": "A commentary on a 2002 film that tells one story three ways in red, blue and white.",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
   },
   {
    "id": "P2NF115_think-elephant",
