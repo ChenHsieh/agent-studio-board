@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T04:03:42+00:00",
+ "generated": "2026-11-22T04:13:06+00:00",
  "ops": {
   "count": 9,
   "notes": [
@@ -28,23 +28,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 32,
+    "queued": 31,
     "running": 0,
     "doneToday": 1,
-    "minutes": 1280,
-    "estimateMinutes": 1280
+    "minutes": 1240,
+    "estimateMinutes": 1240
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 63,
+    "doneToday": 64,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 33,
+  "queued": 32,
   "running": 6,
-  "doneToday": 64,
+  "doneToday": 65,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -54,17 +54,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1700,
-  "estimatedFinish": "2026-11-23T01:23:42+00:00",
-  "estimateMinutes": 1280
+  "minutesRemaining": 1660,
+  "estimatedFinish": "2026-11-23T00:53:06+00:00",
+  "estimateMinutes": 1240
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "biosteganography",
-   "task": "P2NF139_stripes publish root demo",
-   "since": "2026-11-22T03:58:20+00:00",
-   "activity": "2026-11-22T04:01:34+00:00",
+   "game": "Multiple games",
+   "task": "P2KS19_still a heap kit port",
+   "since": null,
+   "activity": null,
    "commit": null
   },
   {
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1239,
-  "usdEst": 4460.4,
+  "runs": 1240,
+  "usdEst": 4464.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -223,7 +223,7 @@
   },
   {
    "day": "2026-11-21",
-   "changes": 44
+   "changes": 45
   }
  ],
  "houseRules": 25,
@@ -1960,10 +1960,10 @@
   },
   {
    "nextTask": "Straighten the Stripes: cold Opus re-review after the...",
-   "costTotalUsd": 72.19,
+   "costTotalUsd": 75.79,
    "latestChange": {
-    "text": "feat: the live Straighten the Stripes page has readable text, a Why button and the drawn...",
-    "at": "2026-11-22T04:01:34+00:00"
+    "text": "root demo/ now matches docs/demo (text sizes, Why button, drawn og.png)",
+    "at": "2026-11-22T04:05:37+00:00"
    },
    "promo": {
     "files": {
@@ -1982,15 +1982,15 @@
     "reviseRound": 3,
     "daysInState": 0
    },
-   "waitingOn": "stripes publish root demo",
+   "waitingOn": "rereview stripes after lead builds",
    "id": "biosteganography",
    "number": 6,
    "repo": "biosteganography",
    "title": "Biosteganography",
    "line": "Straighten the stripes to find a hidden repeat.",
    "url": "https://chenhsieh.github.io/biosteganography/demo/snap.html",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
@@ -2004,34 +2004,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T14:16:48+00:00",
-   "lastChange": "2026-11-22T04:01:34+00:00",
+   "lastChange": "2026-11-22T04:05:37+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 6,
+    "claudeRuns": 7,
     "apiRuns": 0,
     "codexTokens": 155094,
     "codexUsdEst": 0.19,
-    "claudeUsdEst": 21.6,
+    "claudeUsdEst": 25.2,
     "earlierRounds": 14,
     "earlierUsdEst": 50.4,
-    "totalUsdEst": 72.19
+    "totalUsdEst": 75.79
    },
    "tasks": [
-    {
-     "title": "P2NF139_stripes publish root demo",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Make the live Straighten the Stripes page serve tonight's text-size fix and drawn preview",
-     "since": "2026-11-22T03:58:20+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2NR226_rereview stripes after lead builds",
      "state": "queued",
@@ -2045,6 +2031,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2NF139_stripes publish root demo",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Make the live Straighten the Stripes page serve tonight's text-size fix and drawn preview",
+     "since": "2026-11-22T03:58:01+00:00",
+     "done": "2026-11-22T03:58:01+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "DONE - root demo/ (what Pages serves) now matches docs/demo/: snap.html (text sizes, full case name at 320, Why button) and og.png (drawn preview). Merged to main (tag pre-stripes-root-demo), one publish."
     },
     {
      "title": "P2NF134_stripes drawn preview",
@@ -2133,9 +2133,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 7
+    "done": 8
    },
    "verdict": {
     "date": "2026-11-21",
@@ -2145,6 +2145,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-22T04:05:37+00:00",
+     "ok": true,
+     "note": "root demo/ now matches docs/demo (text sizes, Why button, drawn og.png)",
+     "source": "board note"
+    },
     {
      "at": "2026-11-22T04:01:34+00:00",
      "ok": true,
@@ -2209,12 +2215,6 @@
      "at": "2026-10-25T01:24:40+00:00",
      "ok": true,
      "note": "Zoom guard updated: taps are never cancelled (P1ZM00)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-25T00:43:53+00:00",
-     "ok": true,
-     "note": "No accidental zoom on phones:",
      "source": "main commit"
     }
    ]
@@ -34636,10 +34636,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 72.43,
+   "costTotalUsd": 76.03,
    "latestChange": {
-    "text": "NOT_DONE kit 19 -> 55: swipe covered by first-minute caption, move-count 22px; port task...",
-    "at": "2026-11-22T02:01:48+00:00"
+    "text": "feat: Still a Heap moves to the current shared kit; the opening caption no longer blocks...",
+    "at": "2026-11-22T04:11:39+00:00"
    },
    "promo": null,
    "why": "A remix of the can-press toy and the swarm idea through the old paradox of the heap.",
@@ -34672,7 +34672,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T00:59:53+00:00",
-   "lastChange": "2026-11-22T02:01:48+00:00",
+   "lastChange": "2026-11-22T04:11:39+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -34681,9 +34681,9 @@
     "codexTokens": 361179,
     "codexUsdEst": 0.43,
     "claudeUsdEst": 14.4,
-    "earlierRounds": 16,
-    "earlierUsdEst": 57.6,
-    "totalUsdEst": 72.43
+    "earlierRounds": 17,
+    "earlierUsdEst": 61.2,
+    "totalUsdEst": 76.03
    },
    "tasks": [
     {
@@ -34786,6 +34786,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-11-22T04:11:39+00:00",
+     "ok": true,
+     "note": "feat: Still a Heap moves to the current shared kit; the opening caption no longer blocks swipes and the Taken counter is full size",
+     "source": "main commit"
+    },
+    {
      "at": "2026-11-22T02:01:48+00:00",
      "ok": true,
      "note": "NOT_DONE kit 19 -> 55: swipe covered by first-minute caption, move-count 22px; port task P2KS19",
@@ -34850,12 +34856,6 @@
      "ok": true,
      "note": "walking hand rule: dim unreachable columns, new plates 1/4-6, 9 columns fit, one HUD form, Stop gap; obvious play 0/13 at par",
      "source": "board note"
-    },
-    {
-     "at": "2026-11-13T20:31:03+00:00",
-     "ok": true,
-     "note": "feat: the hand walks, so every take is a choice",
-     "source": "main commit"
     }
    ]
   },
