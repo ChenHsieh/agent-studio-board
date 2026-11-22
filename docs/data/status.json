@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T02:18:28+00:00",
+ "generated": "2026-11-22T02:28:00+00:00",
  "ops": {
   "count": 8,
   "notes": [
@@ -28,23 +28,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 42,
+    "queued": 41,
     "running": 0,
     "doneToday": 1,
-    "minutes": 1680,
-    "estimateMinutes": 1680
+    "minutes": 1640,
+    "estimateMinutes": 1640
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 52,
+    "doneToday": 53,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 43,
+  "queued": 42,
   "running": 6,
-  "doneToday": 53,
+  "doneToday": 54,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -54,25 +54,25 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2100,
-  "estimatedFinish": "2026-11-23T06:18:28+00:00",
-  "estimateMinutes": 1680
+  "minutesRemaining": 2060,
+  "estimatedFinish": "2026-11-23T05:48:00+00:00",
+  "estimateMinutes": 1640
  },
  "lanes": [
-  {
-   "worker": "Claude",
-   "game": "alias-loaf",
-   "task": "P2NF125_alias loaf review fixes",
-   "since": "2026-11-22T01:14:49+00:00",
-   "activity": "2026-11-22T01:48:46+00:00",
-   "commit": null
-  },
   {
    "worker": "Claude",
    "game": "lantern-meeting",
    "task": "P2NV211_lantern meeting visual build",
    "since": "2026-11-22T02:10:54+00:00",
    "activity": "2026-11-22T02:10:59+00:00",
+   "commit": null
+  },
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P3OPS00_refresh release records",
+   "since": null,
+   "activity": null,
    "commit": null
   },
   {
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1228,
-  "usdEst": 4420.8,
+  "runs": 1229,
+  "usdEst": 4424.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -839,23 +839,23 @@
    },
    "promo": null,
    "why": "A screenshot of a long keyword-filter spreadsheet plus photos of a tray of slice-and-bake cookies with swirled patterns.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 1
+    "daysInState": 0
    },
-   "waitingOn": "alias loaf review fixes",
+   "waitingOn": "none",
    "id": "alias-loaf",
    "number": 33,
    "repo": "alias-loaf",
    "title": "Alias Loaf",
    "line": "Set the cutter to catch one seed family.",
    "url": "https://chenhsieh.github.io/alias-loaf/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Introduce the mechanics one at a time and give the player a",
    "shelfNote": "",
@@ -869,33 +869,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-14T23:19:56+00:00",
-   "lastChange": "2026-11-22T01:48:46+00:00",
+   "lastChange": "2026-11-21T20:53:22+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 1,
     "codexTokens": 0,
     "codexUsdEst": 0.0,
-    "claudeUsdEst": 10.8,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
+    "claudeUsdEst": 14.4,
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
     "totalUsdEst": 61.2
    },
    "tasks": [
     {
      "title": "P2NF125_alias loaf review fixes",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Alias Loaf: one pair of names for the two packet groups, readable shapes, authored late levels with a real choice, fits a phone",
-     "since": "2026-11-22T01:14:49+00:00",
-     "done": null,
+     "since": "2026-11-21T20:53:22+00:00",
+     "done": "2026-11-21T20:53:22+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "Blocker: the one test that asserts an old string was not updated because the permission check refused the edit."
     },
     {
      "title": "P2FS53_alias loaf one screen",
@@ -956,9 +956,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": {
     "date": "2026-11-20",
@@ -966,7 +966,7 @@
     "note": "Setting a seed-packet filter with too few marks is a real choice from level 5, but copying the first good packet or the best single change still reaches par on levels 4, 7 and 8, the two groups go by five names, two pairs of shapes look alike and the late shelves scroll off the phone"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-10-29T19:06:48+00:00",
@@ -6102,7 +6102,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 27
+    "daysInState": 28
    },
    "waitingOn": "none",
    "id": "do-what-you-think",
