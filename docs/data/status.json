@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T02:47:35+00:00",
+ "generated": "2026-11-22T02:57:07+00:00",
  "ops": {
   "count": 7,
   "notes": [
@@ -28,23 +28,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 39,
+    "queued": 37,
     "running": 0,
     "doneToday": 1,
-    "minutes": 1560,
-    "estimateMinutes": 1560
+    "minutes": 1480,
+    "estimateMinutes": 1480
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 55,
+    "doneToday": 57,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 40,
+  "queued": 38,
   "running": 6,
-  "doneToday": 56,
+  "doneToday": 58,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -54,25 +54,25 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1980,
-  "estimatedFinish": "2026-11-23T04:47:35+00:00",
-  "estimateMinutes": 1560
+  "minutesRemaining": 1900,
+  "estimatedFinish": "2026-11-23T03:37:07+00:00",
+  "estimateMinutes": 1480
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "fake-philosopher",
-   "task": "P2NF132_fake philosopher finger and new claim",
-   "since": "2026-11-22T02:41:12+00:00",
-   "activity": "2026-11-22T02:45:29+00:00",
+   "game": "readable-nonsense",
+   "task": "P2NB44_readable nonsense small phone layout",
+   "since": "2026-11-22T02:49:56+00:00",
+   "activity": "2026-11-22T02:51:32+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
-   "game": "biosteganography",
-   "task": "P2NF133_stripes text sizes and 320",
-   "since": "2026-11-22T02:34:27+00:00",
-   "activity": "2026-11-22T02:44:05+00:00",
+   "game": "thirsty-clicks",
+   "task": "P2NV210_thirsty clicks visual build flat",
+   "since": "2026-11-22T02:53:07+00:00",
+   "activity": "2026-11-22T02:53:10+00:00",
    "commit": null
   },
   {
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1231,
-  "usdEst": 4431.6,
+  "runs": 1233,
+  "usdEst": 4438.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -223,7 +223,7 @@
   },
   {
    "day": "2026-11-21",
-   "changes": 38
+   "changes": 40
   }
  ],
  "houseRules": 25,
@@ -1960,10 +1960,10 @@
   },
   {
    "nextTask": "Straighten the Stripes: cold Opus re-review after the...",
-   "costTotalUsd": 64.99,
+   "costTotalUsd": 68.59,
    "latestChange": {
-    "text": "lead pass: queued NF133 sizes/320, NF134 drawn preview, NR226 re-review",
-    "at": "2026-11-21T22:58:33+00:00"
+    "text": "text sizes: readable play screen, one status line, long why behind Why, fits 320",
+    "at": "2026-11-22T02:52:29+00:00"
    },
    "promo": {
     "files": {
@@ -1982,15 +1982,15 @@
     "reviseRound": 3,
     "daysInState": 0
    },
-   "waitingOn": "stripes text sizes and 320",
+   "waitingOn": "rereview stripes after lead builds",
    "id": "biosteganography",
    "number": 6,
    "repo": "biosteganography",
    "title": "Biosteganography",
    "line": "Straighten the stripes to find a hidden repeat.",
    "url": "https://chenhsieh.github.io/biosteganography/demo/snap.html",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
@@ -2003,35 +2003,21 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-08-20T15:13:59+00:00",
-   "lastChange": "2026-11-22T02:44:05+00:00",
+   "firstSeen": "2026-08-20T15:45:01+00:00",
+   "lastChange": "2026-11-22T02:52:29+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 0,
     "codexTokens": 155094,
     "codexUsdEst": 0.19,
-    "claudeUsdEst": 14.4,
+    "claudeUsdEst": 18.0,
     "earlierRounds": 14,
     "earlierUsdEst": 50.4,
-    "totalUsdEst": 64.99
+    "totalUsdEst": 68.59
    },
    "tasks": [
-    {
-     "title": "P2NF133_stripes text sizes and 320",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Straighten the Stripes: house text sizes, nothing cut at 320, long text behind Why",
-     "since": "2026-11-22T02:34:27+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2NR226_rereview stripes after lead builds",
      "state": "queued",
@@ -2059,6 +2045,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2NF133_stripes text sizes and 320",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Straighten the Stripes: house text sizes, nothing cut at 320, long text behind Why",
+     "since": "2026-11-21T22:57:20+00:00",
+     "done": "2026-11-21T22:57:20+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "DONE (merged to main , tag pre-stripes-text; live bytes of docs/demo/snap.html match, rendered at 320x568 with scrollHeight 568)"
     },
     {
      "title": "P2NX40_biosteganography lead pass",
@@ -2133,9 +2133,9 @@
    ],
    "taskCounts": {
     "queued": 2,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": {
     "date": "2026-11-21",
@@ -2145,6 +2145,18 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-22T02:52:29+00:00",
+     "ok": true,
+     "note": "text sizes: readable play screen, one status line, long why behind Why, fits 320",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-22T02:44:05+00:00",
+     "ok": true,
+     "note": "feat: every word on the Straighten the Stripes play screen is readable, the long explanation sits behind Why",
+     "source": "main commit"
+    },
     {
      "at": "2026-11-21T22:58:33+00:00",
      "ok": true,
@@ -2201,18 +2213,6 @@
     },
     {
      "at": "2026-10-21T16:47:27+00:00",
-     "ok": false,
-     "note": "see",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T16:37:20+00:00",
-     "ok": true,
-     "note": "feat: open Straighten the stripes from the site home",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T16:18:34+00:00",
      "ok": false,
      "note": "see",
      "source": "board note"
@@ -5250,7 +5250,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 27
+    "daysInState": 28
    },
    "waitingOn": "none",
    "id": "curve-shot",
@@ -7770,30 +7770,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 65.54,
+   "costTotalUsd": 69.14,
    "latestChange": {
-    "text": "review fixes: slips fit, goal line per level, finger count, board fits small phone, marks...",
-    "at": "2026-11-21T22:03:20+00:00"
+    "text": "fix: renaming's added claim shown, arm climbs and points at refuted claim, finish slip...",
+    "at": "2026-11-22T02:49:53+00:00"
    },
    "promo": null,
    "why": "A checklist post on how to pass as a continental philosopher, a prose poem's broken-off word, and a stick-figure meme of a speaker correcting himself.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 2,
     "daysInState": 0
    },
-   "waitingOn": "fake philosopher finger and new claim",
+   "waitingOn": "none",
    "id": "fake-philosopher",
    "number": 97,
    "repo": "fake-philosopher",
    "title": "Fake Philosopher",
    "line": "Build an ornate paragraph while a sceptical reader tries.",
    "url": "https://chenhsieh.github.io/fake-philosopher/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P3",
    "priorityNote": "A story, slower flashing, clear whether it is logic or",
    "shelfNote": "",
@@ -7807,33 +7807,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T22:37:21+00:00",
-   "lastChange": "2026-11-22T02:45:29+00:00",
+   "lastChange": "2026-11-22T02:49:53+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 1,
     "codexTokens": 620398,
     "codexUsdEst": 0.74,
-    "claudeUsdEst": 10.8,
+    "claudeUsdEst": 14.4,
     "earlierRounds": 15,
     "earlierUsdEst": 54.0,
-    "totalUsdEst": 65.54
+    "totalUsdEst": 69.14
    },
    "tasks": [
     {
      "title": "P2NF132_fake philosopher finger and new claim",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Fake Philosopher: the claim a renaming adds shows on the page, and the sceptic's arm really rises",
-     "since": "2026-11-22T02:41:12+00:00",
-     "done": null,
+     "since": "2026-11-21T22:17:51+00:00",
+     "done": "2026-11-21T22:17:51+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE. Drawing and strings only; levels/rules untouched (best play scores equal par on L1,4,7,8,daily at 390 and 320)."
     },
     {
      "title": "P2NF121_fake philosopher review fixes",
@@ -7936,9 +7936,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 7
+    "done": 8
    },
    "verdict": {
     "date": "2026-11-21",
@@ -7946,8 +7946,20 @@
     "note": "Slips now fit and each level says its own goal, but the circle a renaming adds never appears on the page and the sceptic says he raised a finger while his arm stays at his side"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-22T02:49:53+00:00",
+     "ok": true,
+     "note": "fix: renaming's added claim shown, arm climbs and points at refuted claim, finish slip reads finish",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-22T02:48:24+00:00",
+     "ok": true,
+     "note": "fix: a renaming adds a visible claim, and the sceptic raises his arm notch by notch",
+     "source": "main commit"
+    },
     {
      "at": "2026-11-21T22:03:20+00:00",
      "ok": true,
@@ -8006,18 +8018,6 @@
      "at": "2026-10-22T23:00:01+00:00",
      "ok": true,
      "note": "feat: teach the court debate in three playable steps",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-22T22:58:58+00:00",
-     "ok": true,
-     "note": "feat: teach the court debate in three playable steps",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T05:40:00+00:00",
-     "ok": true,
-     "note": "feat: match court claims by shape",
      "source": "board note"
     }
    ]
@@ -8748,7 +8748,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 27
+    "daysInState": 28
    },
    "waitingOn": "none",
    "id": "floor-area",
@@ -9672,7 +9672,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 27
+    "daysInState": 28
    },
    "waitingOn": "none",
    "id": "fold-bot",
@@ -38589,7 +38589,7 @@
    ]
   },
   {
-   "nextTask": "Thirsty Clicks: the board becomes a seed flat...",
+   "nextTask": null,
    "costTotalUsd": 68.65,
    "latestChange": {
     "text": "P2NR180 re-review: ship; win card holds with real touch at 4 sizes; visual study P2NV205...",
@@ -38612,8 +38612,8 @@
    "title": "Thirsty Clicks",
    "line": "",
    "url": "https://chenhsieh.github.io/thirsty-clicks/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -38631,7 +38631,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T17:19:46+00:00",
-   "lastChange": "2026-11-21T20:53:22+00:00",
+   "lastChange": "2026-11-22T02:53:10+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -38647,10 +38647,10 @@
    "tasks": [
     {
      "title": "P2NV210_thirsty clicks visual build flat",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Thirsty Clicks: the board becomes a seed flat seen from above, with a punched tag on a stake for every listen",
-     "since": "2026-11-21T20:53:22+00:00",
+     "since": "2026-11-22T02:53:07+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -38759,8 +38759,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 9
    },
@@ -43595,15 +43595,15 @@
     "reviseRound": 3,
     "daysInState": 1
    },
-   "waitingOn": "rereview readable nonsense small phone",
+   "waitingOn": "readable nonsense small phone layout",
    "id": "readable-nonsense",
    "number": 75,
    "repo": "readable-nonsense",
    "title": "阿嬤讀得出來",
    "line": "A famous Tang poem line is printed as fake glyphs with.",
    "url": "https://chenhsieh.github.io/readable-nonsense/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Start error blocks play",
    "shelfNote": "",
@@ -43617,7 +43617,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:29:52+00:00",
-   "lastChange": "2026-11-21T21:45:21+00:00",
+   "lastChange": "2026-11-22T02:51:32+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 3,
@@ -43632,11 +43632,11 @@
    },
    "tasks": [
     {
-     "title": "P2NR224_rereview readable nonsense small phone",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Readable Nonsense: cold re-review after the small-phone layout build",
-     "since": "2026-11-21T21:45:21+00:00",
+     "title": "P2NB44_readable nonsense small phone layout",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Readable Nonsense: goal and ruler on small phones, whole line above the win card",
+     "since": "2026-11-22T02:49:56+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -43646,11 +43646,11 @@
      "result": ""
     },
     {
-     "title": "P2NB44_readable nonsense small phone layout",
+     "title": "P2NR224_rereview readable nonsense small phone",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Readable Nonsense: goal and ruler on small phones, whole line above the win card",
-     "since": "2026-11-21T21:44:54+00:00",
+     "plan": "Readable Nonsense: cold re-review after the small-phone layout build",
+     "since": "2026-11-21T21:45:21+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -43745,8 +43745,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 15
    },
