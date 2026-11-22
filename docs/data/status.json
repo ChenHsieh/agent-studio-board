@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T08:11:19+00:00",
+ "generated": "2026-11-22T08:20:50+00:00",
  "ops": {
   "count": 4,
   "notes": [
@@ -26,23 +26,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 7,
+    "queued": 6,
     "running": 0,
     "doneToday": 0,
-    "minutes": 280,
-    "estimateMinutes": 280
+    "minutes": 240,
+    "estimateMinutes": 240
    },
    "Claude": {
     "queued": 1,
-    "running": 6,
-    "doneToday": 10,
-    "minutes": 420,
-    "estimateMinutes": 210
+    "running": 5,
+    "doneToday": 12,
+    "minutes": 360,
+    "estimateMinutes": 180
    }
   },
-  "queued": 8,
-  "running": 6,
-  "doneToday": 10,
+  "queued": 7,
+  "running": 5,
+  "doneToday": 12,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -52,25 +52,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 700,
-  "estimatedFinish": "2026-11-22T12:51:19+00:00",
-  "estimateMinutes": 280
+  "minutesRemaining": 600,
+  "estimatedFinish": "2026-11-22T12:20:50+00:00",
+  "estimateMinutes": 240
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "coat-corridor",
-   "task": "P2NV218_coat corridor visual build board",
-   "since": "2026-11-22T07:50:00+00:00",
-   "activity": "2026-11-22T08:05:58+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "the-apprentice",
-   "task": "P3NF143_the apprentice zh day label clip",
-   "since": "2026-11-22T07:59:54+00:00",
-   "activity": "2026-11-22T08:09:09+00:00",
+   "task": "P2NV219_coat corridor visual build chrome",
+   "since": "2026-11-22T08:18:23+00:00",
+   "activity": "2026-11-22T08:20:32+00:00",
    "commit": null
   },
   {
@@ -107,11 +99,11 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 6,
+ "claudeWorkers": 5,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1278,
-  "usdEst": 4600.8,
+  "runs": 1280,
+  "usdEst": 4608.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -225,7 +217,7 @@
   },
   {
    "day": "2026-11-22",
-   "changes": 16
+   "changes": 18
   }
  ],
  "houseRules": 25,
@@ -3644,11 +3636,11 @@
    ]
   },
   {
-   "nextTask": "P2NV219_coat corridor visual build chrome",
-   "costTotalUsd": 61.43,
+   "nextTask": null,
+   "costTotalUsd": 65.03,
    "latestChange": {
-    "text": "visual study P2NV217: dry cleaner's look designed and mocked...",
-    "at": "2026-11-22T07:48:49+00:00"
+    "text": "dry cleaner's board: shelves, rail, bagged coats, porthole doors, claim tickets, lining...",
+    "at": "2026-11-22T08:17:48+00:00"
    },
    "promo": {
     "files": {
@@ -3666,7 +3658,7 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "coat corridor visual build board",
+   "waitingOn": "coat corridor visual build chrome",
    "id": "coat-corridor",
    "number": 122,
    "repo": "coat-corridor",
@@ -3687,27 +3679,27 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-10-21T21:53:56+00:00",
-   "lastChange": "2026-11-22T08:05:58+00:00",
+   "firstSeen": "2026-10-21T22:00:53+00:00",
+   "lastChange": "2026-11-22T08:20:32+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 4,
+    "claudeRuns": 5,
     "apiRuns": 0,
     "codexTokens": 189074,
     "codexUsdEst": 0.23,
-    "claudeUsdEst": 14.4,
+    "claudeUsdEst": 18.0,
     "earlierRounds": 13,
     "earlierUsdEst": 46.8,
-    "totalUsdEst": 61.43
+    "totalUsdEst": 65.03
    },
    "tasks": [
     {
-     "title": "P2NV218_coat corridor visual build board",
+     "title": "P2NV219_coat corridor visual build chrome",
      "state": "running",
      "worker": "Claude",
      "plan": "",
-     "since": "2026-11-22T07:50:00+00:00",
+     "since": "2026-11-22T08:18:23+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -3717,18 +3709,18 @@
      "result": ""
     },
     {
-     "title": "P2NV219_coat corridor visual build chrome",
-     "state": "queued",
-     "worker": "Codex",
+     "title": "P2NV218_coat corridor visual build board",
+     "state": "done",
+     "worker": "Claude",
      "plan": "",
-     "since": "2026-11-22T07:48:41+00:00",
-     "done": null,
+     "since": "2026-11-22T07:48:11+00:00",
+     "done": "2026-11-22T07:48:11+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE"
     },
     {
      "title": "P2NV217_coat corridor visual study",
@@ -3802,10 +3794,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
+    "queued": 0,
     "running": 1,
     "waitingDesign": 0,
-    "done": 5
+    "done": 6
    },
    "verdict": {
     "date": "2026-11-22",
@@ -3815,6 +3807,18 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-22T08:17:48+00:00",
+     "ok": true,
+     "note": "dry cleaner's board: shelves, rail, bagged coats, porthole doors, claim tickets, lining opens at the win (P2NV218)",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-22T08:16:16+00:00",
+     "ok": true,
+     "note": "feat: the corridor is now a dry cleaner's after closing",
+     "source": "main commit"
+    },
     {
      "at": "2026-11-22T07:48:49+00:00",
      "ok": true,
@@ -3873,18 +3877,6 @@
      "at": "2026-10-25T09:12:51+00:00",
      "ok": true,
      "note": "One screen on phones: port_onescreen (kit 2) (P2FS04)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-25T01:38:49+00:00",
-     "ok": true,
-     "note": "No accidental zoom on phones:",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T22:39:15+00:00",
-     "ok": true,
-     "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
      "source": "main commit"
     }
    ]
@@ -36229,30 +36221,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 102.41,
+   "costTotalUsd": 106.01,
    "latestChange": {
-    "text": "320 ring off the tool word, page = screen on every level at 320/360/390, balanced zh...",
-    "at": "2026-11-22T05:46:14+00:00"
+    "text": "zh day label on the slate whole at 390 and 320 (slate taller/text lower); English...",
+    "at": "2026-11-22T08:19:58+00:00"
    },
    "promo": null,
    "why": "A viral second-person court scene where a cherished dancer draws a blade, recast in a reply as the orphan her ruler secretly raised.",
    "state": "ship",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "the apprentice zh day label clip",
+   "waitingOn": "owner",
    "id": "the-apprentice",
    "number": 152,
    "repo": "the-apprentice",
    "title": "The Apprentice",
    "line": "",
    "url": "https://chenhsieh.github.io/the-apprentice/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "a teach-then-betrayed story with real potential; frame the story, the...",
    "shelfNote": "",
@@ -36266,33 +36258,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-23T23:54:20+00:00",
-   "lastChange": "2026-11-22T08:09:09+00:00",
+   "lastChange": "2026-11-22T08:19:58+00:00",
    "cost": {
     "apiUsd": 1.49,
     "codexRuns": 1,
-    "claudeRuns": 14,
+    "claudeRuns": 15,
     "apiRuns": 1,
     "codexTokens": 99040,
     "codexUsdEst": 0.12,
-    "claudeUsdEst": 50.4,
+    "claudeUsdEst": 54.0,
     "earlierRounds": 14,
     "earlierUsdEst": 50.4,
-    "totalUsdEst": 102.41
+    "totalUsdEst": 106.01
    },
    "tasks": [
     {
      "title": "P3NF143_the apprentice zh day label clip",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Stop the Chinese day label on the board having its character tops cut off",
-     "since": "2026-11-22T07:59:54+00:00",
-     "done": null,
+     "since": "2026-11-22T07:59:45+00:00",
+     "done": "2026-11-22T07:59:45+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE the-apprentice: Chinese day label (第N天，共M天。) is whole on the slate at 390 and 320. Live on https://chenhsieh.github.io/the-apprentice/ (main ; live game.js is byte-identical to the branch; zh live shot at 320..."
     },
     {
      "title": "P3NF136_the apprentice polish 320 ring and fit",
@@ -36395,9 +36387,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 16
+    "done": 17
    },
    "verdict": {
     "date": "2026-11-22",
@@ -36405,8 +36397,20 @@
     "note": "On every phone size the whole board now fits the screen in English and Chinese, the first lesson ring no longer hides its word, and showing the tool that covers the most inspectors still loses from level 4 on."
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-22T08:19:58+00:00",
+     "ok": true,
+     "note": "zh day label on the slate whole at 390 and 320 (slate taller/text lower); English pixel-identical",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-22T08:18:41+00:00",
+     "ok": true,
+     "note": "fix: Chinese day label on the slate is whole at every width",
+     "source": "main commit"
+    },
     {
      "at": "2026-11-22T05:46:14+00:00",
      "ok": true,
@@ -36466,18 +36470,6 @@
      "ok": true,
      "note": "feat: The Apprentice first minute is one voice on every phone, and short screens get the short board",
      "source": "main commit"
-    },
-    {
-     "at": "2026-11-20T06:36:39+00:00",
-     "ok": true,
-     "note": "lead P2NX28: cold first minute fixed on prototype (pointer on card, one voice); build P2NB39 queued",
-     "source": "board note"
-    },
-    {
-     "at": "2026-11-20T05:23:59+00:00",
-     "ok": true,
-     "note": "small-phone board: full width at 320, seven bands, true 18 px words, box test; huge text at 320 still broken (kit)",
-     "source": "board note"
     }
    ]
   },
