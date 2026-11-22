@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T06:07:25+00:00",
+ "generated": "2026-11-22T06:16:54+00:00",
  "ops": {
   "count": 7,
   "notes": [
@@ -55,7 +55,7 @@
   },
   "codexPaused": false,
   "minutesRemaining": 940,
-  "estimatedFinish": "2026-11-22T14:47:25+00:00",
+  "estimatedFinish": "2026-11-22T14:56:54+00:00",
   "estimateMinutes": 520
  },
  "lanes": [
@@ -69,10 +69,10 @@
   },
   {
    "worker": "Claude",
-   "game": "biosteganography",
-   "task": "P2NR226_rereview stripes after lead builds",
-   "since": "2026-11-22T06:00:34+00:00",
-   "activity": "2026-11-22T06:00:34+00:00",
+   "game": "readable-nonsense",
+   "task": "P2NR224_rereview readable nonsense small phone",
+   "since": "2026-11-22T06:10:29+00:00",
+   "activity": "2026-11-22T06:10:29+00:00",
    "commit": null
   },
   {
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1259,
-  "usdEst": 4532.4,
+  "runs": 1260,
+  "usdEst": 4536.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -1963,7 +1963,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Straighten the Stripes: the match line no longer...",
    "costTotalUsd": 75.79,
    "latestChange": {
     "text": "root demo/ now matches docs/demo (text sizes, Why button, drawn og.png)",
@@ -1983,18 +1983,18 @@
     "refining": false,
     "resting": false,
     "regressed": false,
-    "reviseRound": 3,
-    "daysInState": 1
+    "reviseRound": 4,
+    "daysInState": 0
    },
-   "waitingOn": "rereview stripes after lead builds",
+   "waitingOn": "stripes readout row overflow",
    "id": "biosteganography",
    "number": 6,
    "repo": "biosteganography",
    "title": "Biosteganography",
    "line": "Straighten the stripes to find a hidden repeat.",
    "url": "https://chenhsieh.github.io/biosteganography/demo/snap.html",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
@@ -2008,26 +2008,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-15T14:16:48+00:00",
-   "lastChange": "2026-11-22T06:00:34+00:00",
+   "lastChange": "2026-11-22T06:09:11+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 7,
+    "claudeRuns": 8,
     "apiRuns": 0,
     "codexTokens": 155094,
     "codexUsdEst": 0.19,
-    "claudeUsdEst": 25.2,
-    "earlierRounds": 14,
-    "earlierUsdEst": 50.4,
+    "claudeUsdEst": 28.8,
+    "earlierRounds": 13,
+    "earlierUsdEst": 46.8,
     "totalUsdEst": 75.79
    },
    "tasks": [
     {
-     "title": "P2NR226_rereview stripes after lead builds",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Straighten the Stripes: cold Opus re-review after the readability and preview builds",
-     "since": "2026-11-22T06:00:34+00:00",
+     "title": "P2NF141_stripes readout row overflow",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Straighten the Stripes: the match line no longer pushes the page wider than the phone from case 3 on",
+     "since": "2026-11-22T06:09:11+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2049,6 +2049,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "DONE - root demo/ (what Pages serves) now matches docs/demo/: snap.html (text sizes, full case name at 320, Why button) and og.png (drawn preview). Merged to main (tag pre-stripes-root-demo), one publish."
+    },
+    {
+     "title": "P2NR226_rereview stripes after lead builds",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Straighten the Stripes: cold Opus re-review after the readability and preview builds",
+     "since": "2026-11-21T22:57:53+00:00",
+     "done": "2026-11-21T22:57:53+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "DONE - revise. P2NF134 (drawn preview) ships; P2NF133 (text sizes) REGRESSED: from case 3 on, the match line runs off the right edge at 375-414 wide and the page grows to 408-429 px, cutting the win card. Verdict for..."
     },
     {
      "title": "P2NF134_stripes drawn preview",
@@ -2119,32 +2133,18 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "OR LANE OK: Test: grep -q '<title>Biosteganography: straighten the stripes</title>' docs/index.html && grep -q 'og:title\" content=\"Biosteganography: straighten the stripes\"' docs/index.html"
-    },
-    {
-     "title": "P1SD13_studio standard biosteganography",
-     "state": "done",
-     "worker": "Claude",
-     "plan": "Fix share preview, logo and share text",
-     "since": "2026-10-22T07:57:39+00:00",
-     "done": "2026-10-22T07:57:39+00:00",
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
     }
    ],
    "taskCounts": {
-    "queued": 0,
-    "running": 1,
+    "queued": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 8
+    "done": 9
    },
    "verdict": {
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "verdict": "revise",
-    "note": "Fits a 320 phone now and the arrow only shows up close, but sweeping right still solves cases 4, 5, 7 and 8 inside par, and the play text is 12 to 16 px"
+    "note": "Text is readable and the link preview is a drawn picture now, but from case 3 on the match line runs off the right edge on most phones and cuts the win card; sweeping still solves cases 4, 5, 7 and 8 inside par"
    },
    "needsYou": null,
    "inProgress": true,
@@ -43590,7 +43590,7 @@
    ]
   },
   {
-   "nextTask": "Readable Nonsense: cold re-review after the small-phone layout...",
+   "nextTask": null,
    "costTotalUsd": 97.39,
    "latestChange": {
     "text": "goal always shown on small phones, slim ruler, one-row A-ma box and buttons, win keeps...",
@@ -43603,8 +43603,8 @@
     "refining": false,
     "resting": false,
     "regressed": false,
-    "reviseRound": 3,
-    "daysInState": 2
+    "reviseRound": 4,
+    "daysInState": 0
    },
    "waitingOn": "rereview readable nonsense small phone",
    "id": "readable-nonsense",
@@ -43613,8 +43613,8 @@
    "title": "阿嬤讀得出來",
    "line": "A famous Tang poem line is printed as fake glyphs with.",
    "url": "https://chenhsieh.github.io/readable-nonsense/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Start error blocks play",
    "shelfNote": "",
@@ -43628,7 +43628,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:29:52+00:00",
-   "lastChange": "2026-11-22T03:05:22+00:00",
+   "lastChange": "2026-11-22T06:10:29+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 3,
@@ -43644,10 +43644,10 @@
    "tasks": [
     {
      "title": "P2NR224_rereview readable nonsense small phone",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Readable Nonsense: cold re-review after the small-phone layout build",
-     "since": "2026-11-21T21:45:21+00:00",
+     "since": "2026-11-22T06:10:29+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -43756,15 +43756,15 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 16
    },
    "verdict": {
-    "date": "2026-11-20",
+    "date": "2026-11-22",
     "verdict": "revise",
-    "note": "Stamping whatever leaves the fewest lines still loses from lesson 5 and the daily changes line every day, but on a 360 or 320 wide phone the how-to-stamp line is hidden, lesson 2 scrolls, and the win card covers the line A-ma reads"
+    "note": "The goal now shows on every phone and a win keeps the whole poem line above the card, but on phones under 700 px tall the box that shows what A-ma reads cuts off 7-character lines and the hold preview, and reading the rack left to right still wins 5 of the next 7 dailies"
    },
    "needsYou": null,
    "inProgress": true,

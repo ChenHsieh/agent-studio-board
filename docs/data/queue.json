@@ -1,5 +1,5 @@
 {
- "generated": 1795327657,
+ "generated": 1795328226,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -27,25 +27,6 @@
   "lastHandBackN": 7
  },
  "tasks": [
-  {
-   "id": "P2NR226_rereview-stripes-after-lead-builds",
-   "request": "Straighten the Stripes: cold Opus re-review after the readability and preview builds",
-   "game": "Biosteganography",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NF134_stripes-drawn-preview"
-   ],
-   "priority": "P1",
-   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
-   "state": "running",
-   "at": 1795301873,
-   "created": 1795301873
-  },
   {
    "id": "P2NF140_coat-corridor-caption-and-text-size",
    "request": "Coat Corridor: the hint under the board fits on screen, text is big enough to read, the daily needs a plan",
@@ -117,6 +98,25 @@
    "created": 1793640233
   },
   {
+   "id": "P2NR225_rereview-no-unison-rule-words",
+   "request": "No Unison: cold re-review after the rule-words build",
+   "game": "No Unison",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NB45_no-unison-rule-in-goal"
+   ],
+   "priority": null,
+   "why": "An imagined stage of feuding musicians, sparked by images of rivals sharing one stage.",
+   "state": "running",
+   "at": 1795298002,
+   "created": 1795298002
+  },
+  {
    "id": "P3PL13_dancers-not-mad-why-rollout",
    "request": "Why this exists: finish the rollout on dancers-not-mad (new test failure: test/anim_budget.mjs (layout shift))",
    "game": "Dancers Not Mad",
@@ -134,23 +134,21 @@
    "created": 1793640233
   },
   {
-   "id": "P2NR224_rereview-readable-nonsense-small-phone",
-   "request": "Readable Nonsense: cold re-review after the small-phone layout build",
-   "game": "阿嬤讀得出來",
+   "id": "P2NF141_stripes-readout-row-overflow",
+   "request": "Straighten the Stripes: the match line no longer pushes the page wider than the phone from case 3 on",
+   "game": "Biosteganography",
    "route": "Claude",
-   "model": "opus",
+   "model": "sonnet",
    "effort": "high",
-   "kind": "review",
+   "kind": "build",
    "size": "one repo",
    "estMinutes": null,
-   "after": [
-    "P2NB44_readable-nonsense-small-phone-layout"
-   ],
+   "after": [],
    "priority": "P1",
-   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
+   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1795297521
+   "created": 1795327751
   },
   {
    "id": "P2NR223_rereview-letter-lines-round5",
@@ -171,25 +169,6 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1795294402
-  },
-  {
-   "id": "P2NR225_rereview-no-unison-rule-words",
-   "request": "No Unison: cold re-review after the rule-words build",
-   "game": "No Unison",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NB45_no-unison-rule-in-goal"
-   ],
-   "priority": null,
-   "why": "An imagined stage of feuding musicians, sparked by images of rivals sharing one stage.",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795298002
   },
   {
    "id": "P2RC06_release-check-batch-6",
@@ -469,6 +448,44 @@
    "state": "done",
    "at": 1795319881,
    "created": 1795319881
+  },
+  {
+   "id": "P2NR224_rereview-readable-nonsense-small-phone",
+   "request": "Readable Nonsense: cold re-review after the small-phone layout build",
+   "game": "阿嬤讀得出來",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NB44_readable-nonsense-small-phone-layout"
+   ],
+   "priority": "P1",
+   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
+   "state": "done",
+   "at": 1795297521,
+   "created": 1795297521
+  },
+  {
+   "id": "P2NR226_rereview-stripes-after-lead-builds",
+   "request": "Straighten the Stripes: cold Opus re-review after the readability and preview builds",
+   "game": "Biosteganography",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NF134_stripes-drawn-preview"
+   ],
+   "priority": "P1",
+   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
+   "state": "done",
+   "at": 1795301873,
+   "created": 1795301873
   },
   {
    "id": "P2NV201_the-apprentice-visual-build-chrome",

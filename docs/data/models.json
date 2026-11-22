@@ -199,12 +199,12 @@
   {
    "executor": "claude-opus",
    "role": "review",
-   "count": 267,
+   "count": 269,
    "firstTimePass": 100,
    "retries": 0,
    "medianMinutes": null,
    "costPerPass": null,
-   "guessed": 265,
+   "guessed": 267,
    "topFailures": [],
    "flag": "give more"
   },
@@ -619,6 +619,24 @@
   },
   {
    "date": "2026-11-22",
+   "task": "rereview stripes after lead builds",
+   "number": "",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "DONE - revise. P2NF134 (drawn preview) ships; P2NF133 (text sizes) REGRESSED: from case 3 on, the match line runs off the right edge at 375-"
+  },
+  {
+   "date": "2026-11-22",
+   "task": "rereview readable nonsense small phone",
+   "number": "75",
+   "executor": "claude-opus",
+   "role": "review",
+   "passed": "yes",
+   "note": "DONE - revise (fourth review). P2NB44 delivered calls 1, 2, 4 (except 44 px rack) and 5; it opened one new defect: on phones under 701 px ta"
+  },
+  {
+   "date": "2026-11-22",
    "task": "rereview lantern meeting round5",
    "number": "112",
    "executor": "claude-opus",
@@ -715,24 +733,6 @@
    "role": "build",
    "passed": "yes",
    "note": "nothing mechanical left to fix, nothing published."
-  },
-  {
-   "date": "2026-11-21",
-   "task": "release check marble machine",
-   "number": "19",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "nothing mechanical left to fix, nothing published; remaining items need a layout/look call."
-  },
-  {
-   "date": "2026-11-21",
-   "task": "acrylic beacon release check",
-   "number": "44",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "two game-side fixes ready on branch chen-relcheck-acrylic-beacon (pushed, NOT merged, NOT published), blocked by one old test."
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."
