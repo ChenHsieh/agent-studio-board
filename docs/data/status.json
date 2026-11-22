@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T07:14:04+00:00",
+ "generated": "2026-11-22T07:23:31+00:00",
  "ops": {
   "count": 10,
   "notes": [
@@ -37,14 +37,14 @@
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 5,
+    "doneToday": 7,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
   "queued": 8,
   "running": 6,
-  "doneToday": 5,
+  "doneToday": 7,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -55,22 +55,22 @@
   },
   "codexPaused": false,
   "minutesRemaining": 700,
-  "estimatedFinish": "2026-11-22T11:54:04+00:00",
+  "estimatedFinish": "2026-11-22T12:03:31+00:00",
   "estimateMinutes": 280
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P2NR228_rereview coat corridor after caption and sizes",
-   "since": null,
-   "activity": null,
+   "game": "mirror-hold",
+   "task": "P2FM65_mirror hold first minute",
+   "since": "2026-11-22T07:20:29+00:00",
+   "activity": "2026-11-22T07:20:29+00:00",
    "commit": null
   },
   {
    "worker": "Claude",
    "game": "Multiple games",
-   "task": "P2UX09_refresh release sweep files",
+   "task": "P2RC48_release check coat corridor",
    "since": null,
    "activity": null,
    "commit": null
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1273,
-  "usdEst": 4582.8,
+  "runs": 1275,
+  "usdEst": 4590.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -3646,7 +3646,7 @@
    ]
   },
   {
-   "nextTask": null,
+   "nextTask": "Coat Corridor: design its first visual round (study...",
    "costTotalUsd": 54.23,
    "latestChange": {
     "text": "caption wraps inside the board, one name for the door, text at accessible sizes on tall...",
@@ -3660,23 +3660,23 @@
     "caption": "Six floors of coats and cloth: clip, double stitch, and a certified daily."
    },
    "why": "A fashion clip of white lab coats worn over loud colours in a tiled hospital corridor.",
-   "state": "shelved",
+   "state": "ship",
    "stateFlags": {
-    "refining": false,
-    "resting": true,
+    "refining": true,
+    "resting": false,
     "regressed": false,
-    "reviseRound": 2,
+    "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "coat corridor visual study",
    "id": "coat-corridor",
    "number": 122,
    "repo": "coat-corridor",
    "title": "Coat Corridor",
    "line": "Six floors of coats and cloth: clip, double stitch, and a certified daily.",
    "url": "https://chenhsieh.github.io/coat-corridor/",
-   "stage": "live",
-   "who": null,
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P2",
    "priorityNote": "Six floors of coats and cloth: clip, double stitch, and a certified daily.",
    "shelfNote": "",
@@ -3690,7 +3690,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:52:34+00:00",
-   "lastChange": "2026-11-22T06:39:41+00:00",
+   "lastChange": "2026-11-22T07:18:41+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -3704,6 +3704,20 @@
     "totalUsdEst": 54.23
    },
    "tasks": [
+    {
+     "title": "P2NV217_coat corridor visual study",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "Coat Corridor: design its first visual round (study, mock, build tasks)",
+     "since": "2026-11-22T07:18:41+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2NF126_coat corridor review fixes",
      "state": "done",
@@ -3762,18 +3776,18 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 0,
     "waitingDesign": 0,
     "done": 4
    },
    "verdict": {
     "date": "2026-11-22",
-    "verdict": "revise",
-    "note": "Twelve floors now and walking toward the rack misses the best count from floor 6 on, but the line under the board runs off the screen, most words are too small to read on a phone, and today's corridor is still a walk"
+    "verdict": "ship",
+    "note": "Every caption now sits whole inside the board on every floor and phone size in English and Chinese, Try again lights up after a slip, and the later floors still need a plan instead of a straight walk to the rack."
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
     {
      "at": "2026-11-22T06:39:41+00:00",
@@ -19978,7 +19992,7 @@
    ]
   },
   {
-   "nextTask": "Mirror Hold: check the first minute against the...",
+   "nextTask": null,
    "costTotalUsd": 94.75,
    "latestChange": {
     "text": "board answers real finger drag on every level",
@@ -20001,8 +20015,8 @@
    "title": "Mirror Hold",
    "line": "Wax a hairstyle, then test it against three pulls.",
    "url": "https://chenhsieh.github.io/mirror-hold/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Huge revamp planned by a cross-functional lead",
    "shelfNote": "",
@@ -20020,7 +20034,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-17T21:41:35+00:00",
-   "lastChange": "2026-11-22T07:01:16+00:00",
+   "lastChange": "2026-11-22T07:20:29+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -20036,10 +20050,10 @@
    "tasks": [
     {
      "title": "P2FM65_mirror hold first minute",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Mirror Hold: check the first minute against the house standard and close its gaps",
-     "since": "2026-11-22T07:01:16+00:00",
+     "since": "2026-11-22T07:20:29+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -20148,8 +20162,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 17
    },
@@ -22373,7 +22387,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 57.6,
+   "costTotalUsd": 61.2,
    "latestChange": {
     "text": "release check: link preview picture, og/twitter tags, licences",
     "at": "2026-11-22T07:03:29+00:00"
@@ -22419,9 +22433,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 10.8,
-    "earlierRounds": 13,
-    "earlierUsdEst": 46.8,
-    "totalUsdEst": 57.6
+    "earlierRounds": 14,
+    "earlierUsdEst": 50.4,
+    "totalUsdEst": 61.2
    },
    "tasks": [
     {
@@ -22488,6 +22502,12 @@
      "source": "board note"
     },
     {
+     "at": "2026-11-22T07:01:53+00:00",
+     "ok": true,
+     "note": "fix: link preview picture and tags, licences listed",
+     "source": "main commit"
+    },
+    {
      "at": "2026-11-20T09:31:57+00:00",
      "ok": true,
      "note": "P2NR187 review: ship; no destination, nothing queued",
@@ -22545,12 +22565,6 @@
      "at": "2026-10-23T01:23:12+00:00",
      "ok": false,
      "note": "see",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T19:44:34+00:00",
-     "ok": true,
-     "note": "P2BT02 stretches 7-12 live : seating, rising river, flood, cargo, crossing lines, all-in-one; exact par, how-to pages, live save loads",
      "source": "board note"
     }
    ]
@@ -43890,14 +43904,14 @@
    "ran": 0
   },
   "a11y": {
-   "yes": 56,
-   "no": 138,
+   "yes": 60,
+   "no": 134,
    "unknown": 4,
    "ran": 0
   },
   "credits": {
-   "yes": 126,
-   "no": 69,
+   "yes": 130,
+   "no": 65,
    "unknown": 3,
    "ran": 0
   },
@@ -43908,21 +43922,21 @@
    "ran": 0
   },
   "standard": {
-   "yes": 68,
-   "no": 124,
-   "unknown": 6,
+   "yes": 76,
+   "no": 119,
+   "unknown": 3,
    "ran": 0
   },
   "console": {
-   "yes": 98,
-   "no": 1,
-   "unknown": 99,
+   "yes": 155,
+   "no": 0,
+   "unknown": 43,
    "ran": 0
   },
   "live": {
-   "yes": 97,
-   "no": 2,
-   "unknown": 99,
+   "yes": 150,
+   "no": 3,
+   "unknown": 45,
    "ran": 0
   },
   "name": {

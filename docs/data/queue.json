@@ -1,5 +1,5 @@
 {
- "generated": 1795331657,
+ "generated": 1795332224,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -27,6 +27,25 @@
   "lastHandBackN": 7
  },
  "tasks": [
+  {
+   "id": "P2FM65_mirror-hold-first-minute",
+   "request": "Mirror Hold: check the first minute against the house standard and close its gaps",
+   "game": "Mirror Hold",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "first-minute",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2RC43_release-check-gallery-guess-mirror-hold"
+   ],
+   "priority": "P1",
+   "why": "Manga panels of a sumo wrestler before a mirror and a hand scooping Edo-period hair wax from a red tin.",
+   "state": "running",
+   "at": 1795330876,
+   "created": 1795330876
+  },
   {
    "id": "P3PL14_speaking-stone-why-rollout",
    "request": "Why this exists: finish the rollout on speaking-stone (new test failure: test/first_minute_play.mjs no longer sees )",
@@ -79,42 +98,23 @@
    "created": 1793640233
   },
   {
-   "id": "P2NR228_rereview-coat-corridor-after-caption-and-sizes",
-   "request": "Re-review Coat Corridor after the caption, one door name and bigger text went live",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NR214_rereview-coat-corridor-after-fixes"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "running",
-   "at": 1795330811,
-   "created": 1795330811
-  },
-  {
-   "id": "P2UX09_refresh-release-sweep-files",
-   "request": "Re-run the stored release sweep so release checks stop printing stale lines",
+   "id": "P2RC48_release-check-coat-corridor",
+   "request": "Coat Corridor: close the machine-checkable release checklist gaps",
    "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
    "kind": "build",
-   "size": "studio",
+   "size": "several repos",
    "estMinutes": null,
    "after": [
-    "P2RC34_release-check-floating-city"
+    "P2NR228_rereview-coat-corridor-after-caption-and-sizes"
    ],
    "priority": null,
    "why": "",
    "state": "running",
-   "at": 1795330922,
-   "created": 1795330922
+   "at": 1795331958,
+   "created": 1795331958
   },
   {
    "id": "P3PL13_dancers-not-mad-why-rollout",
@@ -134,23 +134,23 @@
    "created": 1793640233
   },
   {
-   "id": "P2FM65_mirror-hold-first-minute",
-   "request": "Mirror Hold: check the first minute against the house standard and close its gaps",
-   "game": "Mirror Hold",
+   "id": "P2NV217_coat-corridor-visual-study",
+   "request": "Coat Corridor: design its first visual round (study, mock, build tasks)",
+   "game": "Coat Corridor",
    "route": "Claude",
    "model": "opus",
    "effort": "high",
-   "kind": "first-minute",
-   "size": "one repo",
+   "kind": "visual",
+   "size": "several repos",
    "estMinutes": null,
    "after": [
-    "P2RC43_release-check-gallery-guess-mirror-hold"
+    "P2NR228_rereview-coat-corridor-after-caption-and-sizes"
    ],
-   "priority": "P1",
-   "why": "Manga panels of a sumo wrestler before a mirror and a hand scooping Edo-period hair wax from a red tin.",
+   "priority": "P2",
+   "why": "A fashion clip of white lab coats worn over loud colours in a tiled hospital corridor.",
    "state": "ready",
    "waitingOn": [],
-   "created": 1795330876
+   "created": 1795331921
   },
   {
    "id": "P2NR223_rereview-letter-lines-round5",
@@ -1410,6 +1410,25 @@
    "created": 1795330796
   },
   {
+   "id": "P2NR228_rereview-coat-corridor-after-caption-and-sizes",
+   "request": "Re-review Coat Corridor after the caption, one door name and bigger text went live",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NR214_rereview-coat-corridor-after-fixes"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795330811,
+   "created": 1795330811
+  },
+  {
    "id": "P2NR229_rereview-lantern-meeting-after-small-phone-fix",
    "request": "Re-review Lantern Meeting now the practice round keeps Next on the smallest phone",
    "game": "Studio",
@@ -1980,6 +1999,25 @@
    "state": "done",
    "at": 1795294402,
    "created": 1795294402
+  },
+  {
+   "id": "P2UX09_refresh-release-sweep-files",
+   "request": "Re-run the stored release sweep so release checks stop printing stale lines",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2RC34_release-check-floating-city"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795330922,
+   "created": 1795330922
   },
   {
    "id": "P3NF135_knockout-plate-polish-zh-title-and-practice-cap",
