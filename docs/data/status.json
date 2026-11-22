@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-22T01:30:48+00:00",
+ "generated": "2026-11-22T01:40:30+00:00",
  "ops": {
-  "count": 5,
+  "count": 6,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "Two tasks share the number P2NF18.",
@@ -28,23 +28,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 44,
+    "queued": 43,
     "running": 0,
     "doneToday": 1,
-    "minutes": 1760,
-    "estimateMinutes": 1760
+    "minutes": 1720,
+    "estimateMinutes": 1720
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 49,
+    "doneToday": 50,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 45,
+  "queued": 44,
   "running": 6,
-  "doneToday": 50,
+  "doneToday": 51,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -54,25 +54,25 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2180,
-  "estimatedFinish": "2026-11-23T06:50:48+00:00",
-  "estimateMinutes": 1760
+  "minutesRemaining": 2140,
+  "estimatedFinish": "2026-11-23T06:20:30+00:00",
+  "estimateMinutes": 1720
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P2KS09_kit sync batch 9",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "alias-loaf",
    "task": "P2NF125_alias loaf review fixes",
    "since": "2026-11-22T01:14:49+00:00",
    "activity": "2026-11-22T01:14:55+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "coat-corridor",
-   "task": "P2NF126_coat corridor review fixes",
-   "since": "2026-11-22T01:16:23+00:00",
-   "activity": "2026-11-22T01:27:02+00:00",
    "commit": null
   },
   {
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1225,
-  "usdEst": 4410.0,
+  "runs": 1226,
+  "usdEst": 4413.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -223,7 +223,7 @@
   },
   {
    "day": "2026-11-21",
-   "changes": 32
+   "changes": 33
   }
  ],
  "houseRules": 25,
@@ -3643,10 +3643,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 39.83,
+   "costTotalUsd": 43.43,
    "latestChange": {
-    "text": "One screen at 360x640: board takes the room left, 44 px cell floor (P2FS68)",
-    "at": "2026-10-29T19:15:05+00:00"
+    "text": "twelve floors, goal line per floor, rack+clip legend, short daily (par 6-10), rule shows...",
+    "at": "2026-11-22T01:37:18+00:00"
    },
    "promo": {
     "files": {
@@ -3656,23 +3656,23 @@
     "caption": "Six floors of coats and cloth: clip, double stitch, and a certified daily."
    },
    "why": "A fashion clip of white lab coats worn over loud colours in a tiled hospital corridor.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 1
+    "daysInState": 0
    },
-   "waitingOn": "coat corridor review fixes",
+   "waitingOn": "none",
    "id": "coat-corridor",
    "number": 122,
    "repo": "coat-corridor",
    "title": "Coat Corridor",
    "line": "Six floors of coats and cloth: clip, double stitch, and a certified daily.",
    "url": "https://chenhsieh.github.io/coat-corridor/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P2",
    "priorityNote": "Six floors of coats and cloth: clip, double stitch, and a certified daily.",
    "shelfNote": "",
@@ -3686,33 +3686,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:52:34+00:00",
-   "lastChange": "2026-11-22T01:27:02+00:00",
+   "lastChange": "2026-11-22T01:37:18+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 0,
     "codexTokens": 189074,
     "codexUsdEst": 0.23,
-    "claudeUsdEst": 7.2,
+    "claudeUsdEst": 10.8,
     "earlierRounds": 9,
     "earlierUsdEst": 32.4,
-    "totalUsdEst": 39.83
+    "totalUsdEst": 43.43
    },
    "tasks": [
     {
      "title": "P2NF126_coat corridor review fixes",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Coat Corridor: six more floors with a real choice, a goal line per floor, the new rule shown when it starts, a daily that is not mostly waiting",
-     "since": "2026-11-22T01:16:23+00:00",
-     "done": null,
+     "since": "2026-11-21T20:53:22+00:00",
+     "done": "2026-11-21T20:53:22+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE - coat-corridor main , https://chenhsieh.github.io/coat-corridor/"
     },
     {
      "title": "P2FS68_coat corridor one screen",
@@ -3759,9 +3759,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": {
     "date": "2026-11-20",
@@ -3769,8 +3769,14 @@
     "note": "Hiding in a moving white coat to pass the mirror doors and stepping out at the red rack is a clear and fitting idea, but there are only six short floors that walking toward the rack mostly solves, every floor says the same line, and the daily is 21 beats of waiting"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-22T01:37:18+00:00",
+     "ok": true,
+     "note": "twelve floors, goal line per floor, rack+clip legend, short daily (par 6-10), rule shows at floor start",
+     "source": "board note"
+    },
     {
      "at": "2026-10-29T19:15:05+00:00",
      "ok": true,
@@ -3835,12 +3841,6 @@
      "at": "2026-10-21T21:53:56+00:00",
      "ok": true,
      "note": "feat: Coat Corridor starts from the game template",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T21:52:34+00:00",
-     "ok": true,
-     "note": "Initial commit",
      "source": "main commit"
     }
    ]
