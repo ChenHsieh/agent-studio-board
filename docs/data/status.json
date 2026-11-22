@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-22T07:42:50+00:00",
+ "generated": "2026-11-22T07:52:28+00:00",
  "ops": {
-  "count": 8,
+  "count": 7,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "Two tasks share the number P2NF18.",
@@ -28,23 +28,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 6,
+    "queued": 7,
     "running": 0,
     "doneToday": 0,
-    "minutes": 240,
-    "estimateMinutes": 240
+    "minutes": 280,
+    "estimateMinutes": 280
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 8,
+    "doneToday": 9,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 7,
+  "queued": 8,
   "running": 6,
-  "doneToday": 8,
+  "doneToday": 9,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -54,9 +54,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 660,
-  "estimatedFinish": "2026-11-22T11:42:50+00:00",
-  "estimateMinutes": 240
+  "minutesRemaining": 700,
+  "estimatedFinish": "2026-11-22T12:32:28+00:00",
+  "estimateMinutes": 280
  },
  "lanes": [
   {
@@ -70,9 +70,9 @@
   {
    "worker": "Claude",
    "game": "coat-corridor",
-   "task": "P2NV217_coat corridor visual study",
-   "since": "2026-11-22T07:32:08+00:00",
-   "activity": "2026-11-22T07:32:08+00:00",
+   "task": "P2NV218_coat corridor visual build board",
+   "since": "2026-11-22T07:50:00+00:00",
+   "activity": "2026-11-22T07:50:07+00:00",
    "commit": null
   },
   {
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1276,
-  "usdEst": 4593.6,
+  "runs": 1277,
+  "usdEst": 4597.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -227,7 +227,7 @@
   },
   {
    "day": "2026-11-22",
-   "changes": 14
+   "changes": 15
   }
  ],
  "houseRules": 25,
@@ -3646,11 +3646,11 @@
    ]
   },
   {
-   "nextTask": null,
-   "costTotalUsd": 57.83,
+   "nextTask": "P2NV219_coat corridor visual build chrome",
+   "costTotalUsd": 61.43,
    "latestChange": {
-    "text": "About page drops studio credit line; docs/LICENSES.txt added",
-    "at": "2026-11-22T07:31:40+00:00"
+    "text": "visual study P2NV217: dry cleaner's look designed and mocked...",
+    "at": "2026-11-22T07:48:49+00:00"
    },
    "promo": {
     "files": {
@@ -3668,7 +3668,7 @@
     "reviseRound": 0,
     "daysInState": 0
    },
-   "waitingOn": "coat corridor visual study",
+   "waitingOn": "coat corridor visual build board",
    "id": "coat-corridor",
    "number": 122,
    "repo": "coat-corridor",
@@ -3690,26 +3690,26 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T21:52:34+00:00",
-   "lastChange": "2026-11-22T07:32:08+00:00",
+   "lastChange": "2026-11-22T07:50:07+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 3,
+    "claudeRuns": 4,
     "apiRuns": 0,
     "codexTokens": 189074,
     "codexUsdEst": 0.23,
-    "claudeUsdEst": 10.8,
+    "claudeUsdEst": 14.4,
     "earlierRounds": 13,
     "earlierUsdEst": 46.8,
-    "totalUsdEst": 57.83
+    "totalUsdEst": 61.43
    },
    "tasks": [
     {
-     "title": "P2NV217_coat corridor visual study",
+     "title": "P2NV218_coat corridor visual build board",
      "state": "running",
      "worker": "Claude",
-     "plan": "Coat Corridor: design its first visual round (study, mock, build tasks)",
-     "since": "2026-11-22T07:32:08+00:00",
+     "plan": "",
+     "since": "2026-11-22T07:50:00+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -3717,6 +3717,34 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2NV219_coat corridor visual build chrome",
+     "state": "queued",
+     "worker": "Codex",
+     "plan": "",
+     "since": "2026-11-22T07:48:41+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
+    {
+     "title": "P2NV217_coat corridor visual study",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Coat Corridor: design its first visual round (study, mock, build tasks)",
+     "since": "2026-11-22T07:18:41+00:00",
+     "done": "2026-11-22T07:18:41+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "DONE"
     },
     {
      "title": "P2NF126_coat corridor review fixes",
@@ -3776,10 +3804,10 @@
     }
    ],
    "taskCounts": {
-    "queued": 0,
+    "queued": 1,
     "running": 1,
     "waitingDesign": 0,
-    "done": 4
+    "done": 5
    },
    "verdict": {
     "date": "2026-11-22",
@@ -3789,6 +3817,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-22T07:48:49+00:00",
+     "ok": true,
+     "note": "visual study P2NV217: dry cleaner's look designed and mocked (designs/visual/coat-corridor), builds P2NV218/P2NV219 queued; nothing published",
+     "source": "board note"
+    },
     {
      "at": "2026-11-22T07:31:40+00:00",
      "ok": true,
@@ -3854,12 +3888,6 @@
      "ok": true,
      "note": "P3OR22_coat-corridor-engine-test: WORKDIR",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T20:37:31+00:00",
-     "ok": true,
-     "note": "feat: teach the red lining through a four-step first-minute round",
-     "source": "board note"
     }
    ]
   },

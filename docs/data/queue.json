@@ -1,5 +1,5 @@
 {
- "generated": 1795332793,
+ "generated": 1795333961,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -47,23 +47,23 @@
    "created": 1795330876
   },
   {
-   "id": "P2NV217_coat-corridor-visual-study",
-   "request": "Coat Corridor: design its first visual round (study, mock, build tasks)",
+   "id": "P2NV218_coat-corridor-visual-build-board",
+   "request": "P2NV218_coat corridor visual build board",
    "game": "Coat Corridor",
    "route": "Claude",
-   "model": "opus",
+   "model": "sonnet",
    "effort": "high",
    "kind": "visual",
    "size": "several repos",
    "estMinutes": null,
    "after": [
-    "P2NR228_rereview-coat-corridor-after-caption-and-sizes"
+    "P2NV217_coat-corridor-visual-study"
    ],
    "priority": "P2",
    "why": "A fashion clip of white lab coats worn over loud colours in a tiled hospital corridor.",
    "state": "running",
-   "at": 1795331921,
-   "created": 1795331921
+   "at": 1795333691,
+   "created": 1795333691
   },
   {
    "id": "P3PL14_speaking-stone-why-rollout",
@@ -209,6 +209,27 @@
    "state": "ready",
    "waitingOn": [],
    "created": 1795294402
+  },
+  {
+   "id": "P2NV219_coat-corridor-visual-build-chrome",
+   "request": "P2NV219_coat corridor visual build chrome",
+   "game": "Coat Corridor",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "visual",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P2NV218_coat-corridor-visual-build-board"
+   ],
+   "priority": "P2",
+   "why": "A fashion clip of white lab coats worn over loud colours in a tiled hospital corridor.",
+   "state": "waiting",
+   "waitingOn": [
+    "P2NV218_coat-corridor-visual-build-board"
+   ],
+   "created": 1795333721
   },
   {
    "id": "P2NR151_review-slab",
@@ -553,6 +574,25 @@
    "state": "done",
    "at": 1795294402,
    "created": 1795294402
+  },
+  {
+   "id": "P2NV217_coat-corridor-visual-study",
+   "request": "Coat Corridor: design its first visual round (study, mock, build tasks)",
+   "game": "Coat Corridor",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "visual",
+   "size": "several repos",
+   "estMinutes": null,
+   "after": [
+    "P2NR228_rereview-coat-corridor-after-caption-and-sizes"
+   ],
+   "priority": "P2",
+   "why": "A fashion clip of white lab coats worn over loud colours in a tiled hospital corridor.",
+   "state": "done",
+   "at": 1795331921,
+   "created": 1795331921
   },
   {
    "id": "P2NF118_orbit-rings-review-fixes",
