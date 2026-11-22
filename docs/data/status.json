@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T05:00:49+00:00",
+ "generated": "2026-11-22T05:10:18+00:00",
  "ops": {
   "count": 7,
   "notes": [
@@ -28,11 +28,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 25,
+    "queued": 24,
     "running": 0,
     "doneToday": 0,
-    "minutes": 1000,
-    "estimateMinutes": 1000
+    "minutes": 960,
+    "estimateMinutes": 960
    },
    "Claude": {
     "queued": 1,
@@ -42,7 +42,7 @@
     "estimateMinutes": 210
    }
   },
-  "queued": 26,
+  "queued": 25,
   "running": 6,
   "doneToday": 0,
   "lanes": {
@@ -54,17 +54,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1420,
-  "estimatedFinish": "2026-11-22T21:40:49+00:00",
-  "estimateMinutes": 1000
+  "minutesRemaining": 1380,
+  "estimatedFinish": "2026-11-22T21:10:18+00:00",
+  "estimateMinutes": 960
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "flying-white",
-   "task": "P2KS17_flying white kit layout port",
-   "since": "2026-11-22T04:17:22+00:00",
-   "activity": "2026-11-22T04:47:58+00:00",
+   "game": "pinch-points",
+   "task": "P2KS18_pinch points kit layout port",
+   "since": "2026-11-22T05:04:20+00:00",
+   "activity": "2026-11-22T05:04:29+00:00",
    "commit": null
   },
   {
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1246,
-  "usdEst": 4485.6,
+  "runs": 1247,
+  "usdEst": 4489.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -9413,21 +9413,21 @@
    "why": "A commentary on a 2002 martial-arts film that tells one story three ways, where the character for sword is written 19 ways.",
    "state": "ship",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 2
    },
-   "waitingOn": "flying white kit layout port",
+   "waitingOn": "owner",
    "id": "flying-white",
    "number": 117,
    "repo": "flying-white",
    "title": "Flying White",
    "line": "",
    "url": "https://chenhsieh.github.io/flying-white/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "Higher priority: real rubbing sources, hilarious teacher, growth, free writing",
    "shelfNote": "",
@@ -9441,7 +9441,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T05:31:34+00:00",
-   "lastChange": "2026-11-22T04:47:58+00:00",
+   "lastChange": "2026-11-20T08:54:57+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 4,
@@ -9455,20 +9455,6 @@
     "totalUsdEst": 148.51
    },
    "tasks": [
-    {
-     "title": "P2KS17_flying white kit layout port",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Flying White moves to the new shared kit with bigger readable text and the same size paper to write on",
-     "since": "2026-11-22T04:17:22+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2NV141_flying white visual polish",
      "state": "done",
@@ -9566,11 +9552,25 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "DONE P2NX04: Flying White lead design written; the decision is that each stroke has its own speed. The teacher writes it first in red. Match it and the stroke is circled; otherwise he writes 快 or 慢 beside it."
+    },
+    {
+     "title": "P3PL15_flying white why rollout",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Why this exists: finish the rollout on flying-white (new test failure: test/font.test.mjs, zh glyphs 偶制創原啟壓意控注然狀界)",
+     "since": "2026-11-02T17:23:53+00:00",
+     "done": "2026-11-02T17:23:53+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
     "done": 26
    },
@@ -9580,7 +9580,7 @@
     "note": "The source names now sit on two short lines inside the model card at 320, the model-speed line still shows, and quick straight swipes still earn nothing outside one ring on level 5"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-11-20T08:54:57+00:00",
@@ -15490,10 +15490,22 @@
      "source": "board note"
     },
     {
+     "at": "2026-11-22T04:56:28+00:00",
+     "ok": true,
+     "note": "fix:",
+     "source": "main commit"
+    },
+    {
      "at": "2026-11-22T04:44:39+00:00",
      "ok": true,
      "note": "release check: top-bar game mark is a keyboard-reachable button, colour cues listed in a11y.json",
      "source": "board note"
+    },
+    {
+     "at": "2026-11-22T04:42:45+00:00",
+     "ok": true,
+     "note": "fix:",
+     "source": "main commit"
     },
     {
      "at": "2026-11-21T22:33:23+00:00",
@@ -15541,18 +15553,6 @@
      "at": "2026-10-25T09:07:09+00:00",
      "ok": true,
      "note": "One screen on phones: result sheet (P2FS04)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-25T02:59:10+00:00",
-     "ok": true,
-     "note": "Zoom guard updated: taps are never cancelled (P1ZM00)",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-25T01:32:43+00:00",
-     "ok": true,
-     "note": "No accidental zoom on phones:",
      "source": "main commit"
     }
    ]
@@ -25673,7 +25673,7 @@
    ]
   },
   {
-   "nextTask": "Pinch Points moves to the current kit: one...",
+   "nextTask": null,
    "costTotalUsd": 75.94,
    "latestChange": {
     "text": "Flatten button says 1 pinch (singular) when one is enough",
@@ -25702,8 +25702,8 @@
    "title": "Pinch Points",
    "line": "Pinch six stones flat as the surface flattens live; par set by search, plus a daily.",
    "url": "https://chenhsieh.github.io/pinch-points/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "turns an esoteric paper into an interactive game; explain the mechanism, show...",
    "shelfNote": "",
@@ -25717,7 +25717,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T20:47:18+00:00",
-   "lastChange": "2026-11-21T23:33:35+00:00",
+   "lastChange": "2026-11-22T05:04:29+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -25733,10 +25733,10 @@
    "tasks": [
     {
      "title": "P2KS18_pinch points kit layout port",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Pinch Points moves to the current kit: one row of three buttons, the ruler above the stone, every phone fits",
-     "since": "2026-11-21T23:33:35+00:00",
+     "since": "2026-11-22T05:04:20+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -25845,8 +25845,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 12
    },
