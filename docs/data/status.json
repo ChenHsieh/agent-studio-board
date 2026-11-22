@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-22T03:16:02+00:00",
+ "generated": "2026-11-22T03:25:28+00:00",
  "ops": {
-  "count": 6,
+  "count": 5,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "Two tasks share the number P2NF18.",
@@ -28,23 +28,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 36,
+    "queued": 35,
     "running": 0,
     "doneToday": 1,
-    "minutes": 1440,
-    "estimateMinutes": 1440
+    "minutes": 1400,
+    "estimateMinutes": 1400
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 58,
+    "doneToday": 59,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 37,
+  "queued": 36,
   "running": 6,
-  "doneToday": 59,
+  "doneToday": 60,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -54,17 +54,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1860,
-  "estimatedFinish": "2026-11-23T03:16:02+00:00",
-  "estimateMinutes": 1440
+  "minutesRemaining": 1820,
+  "estimatedFinish": "2026-11-23T02:45:28+00:00",
+  "estimateMinutes": 1400
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "no-unison",
-   "task": "P2NB45_no unison rule in goal",
-   "since": "2026-11-22T03:05:53+00:00",
-   "activity": "2026-11-22T03:13:11+00:00",
+   "game": "biosteganography",
+   "task": "P2NF134_stripes drawn preview",
+   "since": "2026-11-22T03:19:04+00:00",
+   "activity": "2026-11-22T03:22:47+00:00",
    "commit": null
   },
   {
@@ -72,7 +72,7 @@
    "game": "thirsty-clicks",
    "task": "P2NV210_thirsty clicks visual build flat",
    "since": "2026-11-22T02:53:07+00:00",
-   "activity": "2026-11-22T03:14:54+00:00",
+   "activity": "2026-11-22T03:23:26+00:00",
    "commit": null
   },
   {
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1234,
-  "usdEst": 4442.4,
+  "runs": 1235,
+  "usdEst": 4446.0,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -223,7 +223,7 @@
   },
   {
    "day": "2026-11-21",
-   "changes": 41
+   "changes": 42
   }
  ],
  "houseRules": 25,
@@ -1962,8 +1962,8 @@
    "nextTask": "Straighten the Stripes: cold Opus re-review after the...",
    "costTotalUsd": 68.59,
    "latestChange": {
-    "text": "text sizes: readable play screen, one status line, long why behind Why, fits 320",
-    "at": "2026-11-22T02:52:29+00:00"
+    "text": "feat: link preview is a drawn picture of static turning into stripes",
+    "at": "2026-11-22T03:22:47+00:00"
    },
    "promo": {
     "files": {
@@ -1982,15 +1982,15 @@
     "reviseRound": 3,
     "daysInState": 0
    },
-   "waitingOn": "rereview stripes after lead builds",
+   "waitingOn": "stripes drawn preview",
    "id": "biosteganography",
    "number": 6,
    "repo": "biosteganography",
    "title": "Biosteganography",
    "line": "Straighten the stripes to find a hidden repeat.",
    "url": "https://chenhsieh.github.io/biosteganography/demo/snap.html",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P1",
    "priorityNote": "Bioinformatics round: make the idea legible in the first",
    "shelfNote": "",
@@ -2003,8 +2003,8 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-08-20T15:45:01+00:00",
-   "lastChange": "2026-11-22T02:52:29+00:00",
+   "firstSeen": "2026-10-14T20:04:43+00:00",
+   "lastChange": "2026-11-22T03:22:47+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -2019,11 +2019,11 @@
    },
    "tasks": [
     {
-     "title": "P2NR226_rereview stripes after lead builds",
-     "state": "queued",
-     "worker": "Codex",
-     "plan": "Straighten the Stripes: cold Opus re-review after the readability and preview builds",
-     "since": "2026-11-21T22:57:53+00:00",
+     "title": "P2NF134_stripes drawn preview",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Straighten the Stripes: drawn link preview instead of a screenshot",
+     "since": "2026-11-22T03:19:04+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2033,11 +2033,11 @@
      "result": ""
     },
     {
-     "title": "P2NF134_stripes drawn preview",
+     "title": "P2NR226_rereview stripes after lead builds",
      "state": "queued",
      "worker": "Codex",
-     "plan": "Straighten the Stripes: drawn link preview instead of a screenshot",
-     "since": "2026-11-21T22:57:49+00:00",
+     "plan": "Straighten the Stripes: cold Opus re-review after the readability and preview builds",
+     "since": "2026-11-21T22:57:53+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -2132,8 +2132,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 6
    },
@@ -2145,6 +2145,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-22T03:22:47+00:00",
+     "ok": true,
+     "note": "feat: link preview is a drawn picture of static turning into stripes",
+     "source": "main commit"
+    },
     {
      "at": "2026-11-22T02:52:29+00:00",
      "ok": true,
@@ -2210,12 +2216,6 @@
      "ok": true,
      "note": "fix: the page and game titles name Biosteganography",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T16:47:27+00:00",
-     "ok": false,
-     "note": "see",
-     "source": "board note"
     }
    ]
   },
@@ -21626,10 +21626,10 @@
   },
   {
    "nextTask": "No Unison: cold re-review after the rule-words build",
-   "costTotalUsd": 65.46,
+   "costTotalUsd": 69.06,
    "latestChange": {
-    "text": "clearer singers by shape, tails with the singer's notch, ticks on sung cells, a starburst...",
-    "at": "2026-11-20T09:25:23+00:00"
+    "text": "each song's rule above the board (EN/zh, to 320 wide), status strip replaces the dark...",
+    "at": "2026-11-22T03:18:55+00:00"
    },
    "promo": null,
    "why": "An imagined stage of feuding musicians, sparked by images of rivals sharing one stage.",
@@ -21641,15 +21641,15 @@
     "reviseRound": 1,
     "daysInState": 1
    },
-   "waitingOn": "no unison rule in goal",
+   "waitingOn": "rereview no unison rule words",
    "id": "no-unison",
    "number": 108,
    "repo": "no-unison",
    "title": "No Unison",
    "line": "",
    "url": "https://chenhsieh.github.io/no-unison/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -21667,34 +21667,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T17:28:17+00:00",
-   "lastChange": "2026-11-22T03:13:11+00:00",
+   "lastChange": "2026-11-22T03:18:55+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
-    "claudeRuns": 7,
+    "claudeRuns": 8,
     "apiRuns": 0,
     "codexTokens": 551214,
     "codexUsdEst": 0.66,
-    "claudeUsdEst": 25.2,
+    "claudeUsdEst": 28.8,
     "earlierRounds": 11,
     "earlierUsdEst": 39.6,
-    "totalUsdEst": 65.46
+    "totalUsdEst": 69.06
    },
    "tasks": [
-    {
-     "title": "P2NB45_no unison rule in goal",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "No Unison: each song's rule shown in full above the board",
-     "since": "2026-11-22T03:05:53+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2NR225_rereview no unison rule words",
      "state": "queued",
@@ -21708,6 +21694,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2NB45_no unison rule in goal",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "No Unison: each song's rule shown in full above the board",
+     "since": "2026-11-21T21:53:22+00:00",
+     "done": "2026-11-21T21:53:22+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "DONE"
     },
     {
      "title": "P2NX39_no unison rule words lead",
@@ -21796,9 +21796,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 10
+    "done": 11
    },
    "verdict": {
     "date": "2026-11-20",
@@ -21808,6 +21808,12 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-22T03:18:55+00:00",
+     "ok": true,
+     "note": "each song's rule above the board (EN/zh, to 320 wide), status strip replaces the dark band, Today name fits, daily result one filled button",
+     "source": "board note"
+    },
     {
      "at": "2026-11-20T09:25:23+00:00",
      "ok": true,
@@ -21873,12 +21879,6 @@
      "ok": true,
      "note": "P2NU41: rebuilt as a music puzzle (critter band, echo/reverb/pitch knobs, no-unison clash rule, 8 songs, daily, share links, Web Audio engine); live ; weakest: EN teach line punctuation",
      "source": "board note"
-    },
-    {
-     "at": "2026-10-21T18:46:09+00:00",
-     "ok": true,
-     "note": "feat: a critter band sings the audience's tune with echo, reverb and pitch knobs",
-     "source": "main commit"
     }
    ]
   },
@@ -38631,7 +38631,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T17:19:46+00:00",
-   "lastChange": "2026-11-22T03:14:54+00:00",
+   "lastChange": "2026-11-22T03:23:26+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
