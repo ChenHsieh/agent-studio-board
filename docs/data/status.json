@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-22T03:44:54+00:00",
+ "generated": "2026-11-22T03:54:23+00:00",
  "ops": {
-  "count": 6,
+  "count": 8,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "Two tasks share the number P2NF18.",
@@ -28,23 +28,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 33,
+    "queued": 32,
     "running": 0,
     "doneToday": 1,
-    "minutes": 1320,
-    "estimateMinutes": 1320
+    "minutes": 1280,
+    "estimateMinutes": 1280
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 61,
+    "doneToday": 62,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 34,
+  "queued": 33,
   "running": 6,
-  "doneToday": 62,
+  "doneToday": 63,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -54,25 +54,25 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1740,
-  "estimatedFinish": "2026-11-23T01:44:54+00:00",
-  "estimateMinutes": 1320
+  "minutesRemaining": 1700,
+  "estimatedFinish": "2026-11-23T01:14:23+00:00",
+  "estimateMinutes": 1280
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "lantern-meeting",
+   "task": "P2NV212_lantern meeting visual build pieces",
+   "since": "2026-11-22T03:53:03+00:00",
+   "activity": "2026-11-22T03:53:12+00:00",
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "letter-lines",
    "task": "P2NV213_letter lines visual build page",
    "since": "2026-11-22T03:30:33+00:00",
    "activity": "2026-11-22T03:39:39+00:00",
-   "commit": null
-  },
-  {
-   "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P2RC28_next please release check",
-   "since": null,
-   "activity": null,
    "commit": null
   },
   {
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1237,
-  "usdEst": 4453.2,
+  "runs": 1238,
+  "usdEst": 4456.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -223,7 +223,7 @@
   },
   {
    "day": "2026-11-21",
-   "changes": 43
+   "changes": 44
   }
  ],
  "houseRules": 25,
@@ -5403,15 +5403,15 @@
     "caption": "Ring notes on a brass plate covered in sand and watch the."
    },
    "why": "Chladni figures on a vibrating plate and a post of dye moving on vibrating milk.",
-   "state": "ship",
+   "state": "released",
    "stateFlags": {
     "refining": false,
     "resting": false,
-    "regressed": true,
+    "regressed": false,
     "reviseRound": 0,
-    "daysInState": 32
+    "daysInState": 29
    },
-   "waitingOn": "owner",
+   "waitingOn": "none",
    "id": "cymatic-plate",
    "number": 85,
    "repo": "cymatic-plate",
@@ -5424,7 +5424,7 @@
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
    "image": "promo/cymatic-plate/first.jpg",
-   "released": false,
+   "released": true,
    "releasedOn": "2026-10-23",
    "releasedNote": "public-ready, still being refined",
    "whyExists": "Chladni figures and a post of dye on milk inspired this. Each note shapes sand and moves dye drops, so the order you play changes the outcome. Worth playing to see how sound can guide patterns and movement on a plate.",
@@ -5646,8 +5646,7 @@
      "note": "P3OR54_cymatic-plate-credits-page: WORKDIR",
      "source": "main commit"
     }
-   ],
-   "releaseHeld": true
+   ]
   },
   {
    "nextTask": null,
@@ -14565,7 +14564,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 27
+    "daysInState": 28
    },
    "waitingOn": "none",
    "id": "jar-stage",
@@ -15799,7 +15798,7 @@
    ]
   },
   {
-   "nextTask": "Lantern Meeting visual build 2: move cards with...",
+   "nextTask": null,
    "costTotalUsd": 61.69,
    "latestChange": {
     "text": "visual build: lacquer table, lanterns behind name cards, forecast inside slips, full-size...",
@@ -15829,8 +15828,8 @@
    "title": "Lantern Meeting",
    "line": "",
    "url": "https://chenhsieh.github.io/lantern-meeting/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Politics of lab and corporate competition; rock-paper-scissors core; clearer...",
    "shelfNote": "",
@@ -15844,7 +15843,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T20:56:30+00:00",
-   "lastChange": "2026-11-22T02:34:23+00:00",
+   "lastChange": "2026-11-22T03:53:12+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -15860,10 +15859,10 @@
    "tasks": [
     {
      "title": "P2NV212_lantern meeting visual build pieces",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Lantern Meeting visual build 2: move cards with seals, evidence tiles, the panel ledge, flip and light motion, new og.png",
-     "since": "2026-11-21T20:53:22+00:00",
+     "since": "2026-11-22T03:53:03+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -15972,8 +15971,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 11
    },
@@ -21175,10 +21174,10 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 46.8,
+   "costTotalUsd": 54.0,
    "latestChange": {
-    "text": "kit 54 -> 55",
-    "at": "2026-11-21T23:18:21+00:00"
+    "text": "release check: first-minute ring above the slip (clear of +3 and Hint), result line keeps...",
+    "at": "2026-11-22T03:52:11+00:00"
    },
    "promo": null,
    "why": "",
@@ -21211,7 +21210,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-11-13T19:59:58+00:00",
-   "lastChange": "2026-11-21T23:18:21+00:00",
+   "lastChange": "2026-11-22T03:52:11+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 0,
@@ -21220,9 +21219,9 @@
     "codexTokens": 0,
     "codexUsdEst": 0.0,
     "claudeUsdEst": 18.0,
-    "earlierRounds": 8,
-    "earlierUsdEst": 28.8,
-    "totalUsdEst": 46.8
+    "earlierRounds": 10,
+    "earlierUsdEst": 36.0,
+    "totalUsdEst": 54.0
    },
    "tasks": [
     {
@@ -21311,6 +21310,18 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-11-22T03:52:11+00:00",
+     "ok": true,
+     "note": "release check: first-minute ring above the slip (clear of +3 and Hint), result line keeps possible 4 together, LICENSES covers sounds/images/code",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-22T03:50:08+00:00",
+     "ok": true,
+     "note": "fix: first-minute ring clear of the slip cost and Hint, result line keeps \"possible 4\" together",
+     "source": "main commit"
+    },
+    {
      "at": "2026-11-21T23:18:21+00:00",
      "ok": true,
      "note": "kit 54 -> 55",
@@ -21369,18 +21380,6 @@
      "ok": true,
      "note": "review P2NR96: revise (cost of a call unreadable while holding, squares and Idle never explained, win line says calls for idle ticks, board 208 px on level 1 at 320); nearest-now play loses levels 2-8 and the daily; fix queued P2NF62",
      "source": "board note"
-    },
-    {
-     "at": "2026-11-13T20:37:02+00:00",
-     "ok": true,
-     "note": "core build live, 8 mornings + daily, obvious play misses par 5/5 from level 4",
-     "source": "board note"
-    },
-    {
-     "at": "2026-11-13T20:35:45+00:00",
-     "ok": true,
-     "note": "feat: Next Please, call the numbers (core build, 8 mornings, daily)",
-     "source": "main commit"
     }
    ]
   },
@@ -26519,7 +26518,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 27
+    "daysInState": 28
    },
    "waitingOn": "none",
    "id": "rain-signal",
@@ -43863,13 +43862,10 @@
   }
  ],
  "systemNeeds": [
-  "System needs: 14 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)",
-  "System needs: Released game Cymatic Plate now fails what it passed at release: standard (fix: play it; keep it released or remove its row from board/released.tsv)"
+  "System needs: 14 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)"
  ],
  "releaseReady": [],
- "releaseRegressed": [
-  "cymatic-plate"
- ],
+ "releaseRegressed": [],
  "checksSummary": {
   "why": {
    "yes": 176,
