@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T01:01:48+00:00",
+ "generated": "2026-11-22T01:11:27+00:00",
  "ops": {
   "count": 6,
   "notes": [
@@ -28,23 +28,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 47,
+    "queued": 46,
     "running": 0,
     "doneToday": 1,
-    "minutes": 1880,
-    "estimateMinutes": 1880
+    "minutes": 1840,
+    "estimateMinutes": 1840
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 46,
+    "doneToday": 47,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 48,
+  "queued": 47,
   "running": 6,
-  "doneToday": 47,
+  "doneToday": 48,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -54,9 +54,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2300,
-  "estimatedFinish": "2026-11-23T08:21:48+00:00",
-  "estimateMinutes": 1880
+  "minutesRemaining": 2260,
+  "estimatedFinish": "2026-11-23T07:51:27+00:00",
+  "estimateMinutes": 1840
  },
  "lanes": [
   {
@@ -69,10 +69,10 @@
   },
   {
    "worker": "Claude",
-   "game": "out-of-the-corner",
-   "task": "P2NF137_out of the corner zh hud words",
-   "since": "2026-11-22T00:58:01+00:00",
-   "activity": "2026-11-22T01:01:13+00:00",
+   "game": "triangle-lexicon",
+   "task": "P2NF129_triangle lexicon say light and bigger board",
+   "since": "2026-11-22T01:08:15+00:00",
+   "activity": "2026-11-22T01:10:44+00:00",
    "commit": null
   },
   {
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1222,
-  "usdEst": 4399.2,
+  "runs": 1223,
+  "usdEst": 4402.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -223,7 +223,7 @@
   },
   {
    "day": "2026-11-21",
-   "changes": 29
+   "changes": 30
   }
  ],
  "houseRules": 25,
@@ -23954,17 +23954,17 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 58.2,
+   "costTotalUsd": 65.4,
    "latestChange": {
-    "text": "re-review round 5: revise (blind stop-and-go still wins 63-69% nights 4-6; zh HUD N4);...",
-    "at": "2026-11-22T00:41:21+00:00"
+    "text": "zh counter row keeps 第 N 夜 / 天亮; daily says 今晚",
+    "at": "2026-11-22T01:08:04+00:00"
    },
    "promo": null,
    "why": "A remix of Nobody Looking and Walls Have Ears through averted vision, how faint stars vanish when looked at directly.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 2,
     "daysInState": 0
@@ -23976,8 +23976,8 @@
    "title": "Out Of The Corner",
    "line": "",
    "url": "https://chenhsieh.github.io/out-of-the-corner/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -23990,33 +23990,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:02:46+00:00",
-   "lastChange": "2026-11-22T01:01:13+00:00",
+   "lastChange": "2026-11-22T01:08:04+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 6,
+    "claudeRuns": 7,
     "apiRuns": 0,
     "codexTokens": 503313,
     "codexUsdEst": 0.6,
-    "claudeUsdEst": 21.6,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
-    "totalUsdEst": 58.2
+    "claudeUsdEst": 25.2,
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
+    "totalUsdEst": 65.4
    },
    "tasks": [
     {
      "title": "P2NF137_out of the corner zh hud words",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Out of the Corner: the Chinese counter row says 第 4 夜 and 天亮, not N4",
-     "since": "2026-11-22T00:58:01+00:00",
-     "done": null,
+     "since": "2026-11-22T00:41:08+00:00",
+     "done": "2026-11-22T00:41:08+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE P2NF137 Sonnet."
     },
     {
      "title": "P2NF110_out of the corner fixes",
@@ -24119,9 +24119,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 7
+    "done": 8
    },
    "verdict": {
     "date": "2026-11-21",
@@ -24129,8 +24129,20 @@
     "note": "A still finger now catches a star and the win card says how many seconds were left, but stopping anywhere for a second still catches most stars, and the Chinese counter row reads N4"
    },
    "needsYou": "Random wandering no longer wins, but standing still anywhere for a second catches a star: a finger that moves half a second and stops for under a second, without looking, still clears nights 4 to 6 about 63 to 69 percent of the time (a player who stops when a star shows wins 84 to 99 percent). Options: keep it as an easy calm toy; hold 1 second instead of 0.6 (blind stopping drops to 35 to 62 percent, a seeing player keeps 94 to 98); shorter dawn 30 s (blind 24 to 58, slow seeing player 54 to 75); narrower ring (blind 16 to 38, but slow players fall to 4 to 14). Suggest: hold 1 second, then a 3-person playtest.",
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-22T01:08:04+00:00",
+     "ok": true,
+     "note": "zh counter row keeps 第 N 夜 / 天亮; daily says 今晚",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-22T01:06:58+00:00",
+     "ok": true,
+     "note": "fix: Chinese counter row keeps its words (第 N 夜, 天亮) and the daily says 今晚",
+     "source": "main commit"
+    },
     {
      "at": "2026-11-22T00:41:21+00:00",
      "ok": true,
@@ -24190,18 +24202,6 @@
      "ok": true,
      "note": "red-torch rooftop look live",
      "source": "board note"
-    },
-    {
-     "at": "2026-11-13T07:53:39+00:00",
-     "ok": true,
-     "note": "feat: red-torch rooftop look for Out of the Corner",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-30T04:44:52+00:00",
-     "ok": true,
-     "note": "Out of the Corner: tank-night look, rooftop water tank, lit colour for caught stars (P2n117)",
-     "source": "main commit"
     }
    ]
   },
@@ -40571,7 +40571,7 @@
    ]
   },
   {
-   "nextTask": "Triangle Lexicon: say it is about bending light...",
+   "nextTask": null,
    "costTotalUsd": 61.42,
    "latestChange": {
     "text": "real par and best, goal above the board, level grid behind Levels, 18 px words, fits...",
@@ -40600,8 +40600,8 @@
    "title": "Triangle Lexicon",
    "line": "Follow a small language through a triangle.",
    "url": "https://chenhsieh.github.io/triangle-lexicon/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": "P2",
    "priorityNote": "Snappier interaction and a distinctive taste for the",
    "shelfNote": "",
@@ -40615,7 +40615,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-14T16:56:58+00:00",
-   "lastChange": "2026-11-21T21:08:39+00:00",
+   "lastChange": "2026-11-22T01:10:44+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -40631,10 +40631,10 @@
    "tasks": [
     {
      "title": "P2NF129_triangle lexicon say light and bigger board",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Triangle Lexicon: say it is about bending light, show where the light enters and leaves, bigger board",
-     "since": "2026-11-21T21:08:39+00:00",
+     "since": "2026-11-22T01:08:15+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -40715,8 +40715,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 5
    },
