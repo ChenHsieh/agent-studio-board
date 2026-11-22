@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-22T00:42:33+00:00",
+ "generated": "2026-11-22T00:52:10+00:00",
  "ops": {
-  "count": 8,
+  "count": 6,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "Two tasks share the number P2NF18.",
@@ -28,23 +28,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 49,
+    "queued": 48,
     "running": 0,
     "doneToday": 1,
-    "minutes": 1960,
-    "estimateMinutes": 1960
+    "minutes": 1920,
+    "estimateMinutes": 1920
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 43,
+    "doneToday": 45,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 50,
+  "queued": 49,
   "running": 6,
-  "doneToday": 44,
+  "doneToday": 46,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -54,25 +54,25 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2380,
-  "estimatedFinish": "2026-11-23T09:22:33+00:00",
-  "estimateMinutes": 1960
+  "minutesRemaining": 2340,
+  "estimatedFinish": "2026-11-23T08:52:10+00:00",
+  "estimateMinutes": 1920
  },
  "lanes": [
   {
    "worker": "Claude",
    "game": "Multiple games",
-   "task": "P2FS70_onescreen gate inner scroll",
+   "task": "P2KS15_still fall kit port",
    "since": null,
    "activity": null,
    "commit": null
   },
   {
    "worker": "Claude",
-   "game": "Multiple games",
-   "task": "P2NR201_rereview plain telling after fixes",
-   "since": null,
-   "activity": null,
+   "game": "plain-telling",
+   "task": "P2NF138_plain telling draw tap and candles",
+   "since": "2026-11-22T00:48:21+00:00",
+   "activity": "2026-11-22T00:48:41+00:00",
    "commit": null
   },
   {
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1219,
-  "usdEst": 4388.4,
+  "runs": 1221,
+  "usdEst": 4395.6,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -223,7 +223,7 @@
   },
   {
    "day": "2026-11-21",
-   "changes": 27
+   "changes": 28
   }
  ],
  "houseRules": 25,
@@ -19634,7 +19634,7 @@
     "resting": true,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 15
+    "daysInState": 16
    },
    "waitingOn": "none",
    "id": "mind-gym",
@@ -25935,30 +25935,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 43.41,
+   "costTotalUsd": 47.01,
    "latestChange": {
-    "text": "NOT_DONE kit port: layout still red at 360x640 and audit canvas words",
-    "at": "2026-11-22T00:28:14+00:00"
+    "text": "re-review: revise (Draw touch still jumps to next night 5/5 live, HUD counts taps); kit...",
+    "at": "2026-11-22T00:47:17+00:00"
    },
    "promo": null,
    "why": "A commentary on a 2002 film that tells one story three ways in red, blue and white.",
-   "state": "shelved",
+   "state": "revise",
    "stateFlags": {
     "refining": false,
-    "resting": true,
+    "resting": false,
     "regressed": false,
-    "reviseRound": 1,
+    "reviseRound": 2,
     "daysInState": 0
    },
-   "waitingOn": "none",
+   "waitingOn": "plain telling draw tap and candles",
    "id": "plain-telling",
    "number": 116,
    "repo": "plain-telling",
    "title": "Plain Telling",
    "line": "",
    "url": "https://chenhsieh.github.io/plain-telling/",
-   "stage": "live",
-   "who": null,
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -25972,7 +25972,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T05:04:55+00:00",
-   "lastChange": "2026-11-22T00:28:14+00:00",
+   "lastChange": "2026-11-22T00:48:41+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -25981,11 +25981,25 @@
     "codexTokens": 175748,
     "codexUsdEst": 0.21,
     "claudeUsdEst": 7.2,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
-    "totalUsdEst": 43.41
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
+    "totalUsdEst": 47.01
    },
    "tasks": [
+    {
+     "title": "P2NF138_plain telling draw tap and candles",
+     "state": "running",
+     "worker": "Claude",
+     "plan": "Plain Telling: tapping Draw on a phone shows the solved night instead of skipping to the next one; the candle count matches",
+     "since": "2026-11-22T00:48:21+00:00",
+     "done": null,
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": ""
+    },
     {
      "title": "P2KS16_plain telling kit port",
      "state": "done",
@@ -26031,18 +26045,24 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 3
    },
    "verdict": {
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "verdict": "revise",
-    "note": "Lighting candles to strike false panels is a real choice, but on a phone the Draw tap jumps straight to the next night, the candles counter counts taps and the scroll words are too small"
+    "note": "Lighting candles to strike false panels is still a real choice, but tapping Draw on a phone still skips the solved night and the candle counter counts taps"
    },
    "needsYou": null,
-   "inProgress": false,
+   "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-22T00:47:17+00:00",
+     "ok": true,
+     "note": "re-review: revise (Draw touch still jumps to next night 5/5 live, HUD counts taps); kit port not live; fix P2NF138 (game.js touchend + candle counter) queued",
+     "source": "board note"
+    },
     {
      "at": "2026-11-22T00:28:14+00:00",
      "ok": true,
@@ -26107,12 +26127,6 @@
      "at": "2026-10-21T05:18:15+00:00",
      "ok": true,
      "note": "feat: six nights of Plain Telling, one scroll, red and blue tellings",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T05:07:49+00:00",
-     "ok": true,
-     "note": "feat: Plain Telling starts from the game template",
      "source": "main commit"
     }
    ]
