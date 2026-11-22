@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T05:29:15+00:00",
+ "generated": "2026-11-22T05:38:55+00:00",
  "ops": {
   "count": 6,
   "notes": [
@@ -28,22 +28,22 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 19,
+    "queued": 17,
     "running": 0,
     "doneToday": 0,
-    "minutes": 760,
-    "estimateMinutes": 760
+    "minutes": 680,
+    "estimateMinutes": 680
    },
    "Claude": {
     "queued": 1,
-    "running": 5,
+    "running": 6,
     "doneToday": 0,
-    "minutes": 360,
-    "estimateMinutes": 180
+    "minutes": 420,
+    "estimateMinutes": 210
    }
   },
-  "queued": 20,
-  "running": 5,
+  "queued": 18,
+  "running": 6,
   "doneToday": 0,
   "lanes": {
    "Codex": 1,
@@ -54,11 +54,19 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1120,
-  "estimatedFinish": "2026-11-22T18:09:15+00:00",
-  "estimateMinutes": 760
+  "minutesRemaining": 1100,
+  "estimatedFinish": "2026-11-22T16:58:55+00:00",
+  "estimateMinutes": 680
  },
  "lanes": [
+  {
+   "worker": "Claude",
+   "game": "Multiple games",
+   "task": "P2NR214_rereview coat corridor after fixes",
+   "since": null,
+   "activity": null,
+   "commit": null
+  },
   {
    "worker": "Claude",
    "game": "the-apprentice",
@@ -101,11 +109,11 @@
   }
  ],
  "codexLanes": 0,
- "claudeWorkers": 5,
+ "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1253,
-  "usdEst": 4510.8,
+  "runs": 1254,
+  "usdEst": 4514.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -5399,15 +5407,15 @@
     "caption": "Ring notes on a brass plate covered in sand and watch the."
    },
    "why": "Chladni figures on a vibrating plate and a post of dye moving on vibrating milk.",
-   "state": "released",
+   "state": "ship",
    "stateFlags": {
     "refining": false,
     "resting": false,
-    "regressed": false,
+    "regressed": true,
     "reviseRound": 0,
-    "daysInState": 30
+    "daysInState": 33
    },
-   "waitingOn": "none",
+   "waitingOn": "owner",
    "id": "cymatic-plate",
    "number": 85,
    "repo": "cymatic-plate",
@@ -5420,7 +5428,7 @@
    "priorityNote": "Strong; polish and sound",
    "shelfNote": "",
    "image": "promo/cymatic-plate/first.jpg",
-   "released": true,
+   "released": false,
    "releasedOn": "2026-10-23",
    "releasedNote": "public-ready, still being refined",
    "whyExists": "Chladni figures and a post of dye on milk inspired this. Each note shapes sand and moves dye drops, so the order you play changes the outcome. Worth playing to see how sound can guide patterns and movement on a plate.",
@@ -5642,7 +5650,8 @@
      "note": "P3OR54_cymatic-plate-credits-page: WORKDIR",
      "source": "main commit"
     }
-   ]
+   ],
+   "releaseHeld": true
   },
   {
    "nextTask": null,
@@ -15815,7 +15824,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
-    "daysInState": 2
+    "daysInState": 0
    },
    "waitingOn": "owner",
    "id": "lantern-meeting",
@@ -15973,9 +15982,9 @@
     "done": 12
    },
    "verdict": {
-    "date": "2026-11-20",
+    "date": "2026-11-22",
     "verdict": "ship",
-    "note": "Always tabling a motion runs out of evidence and misses the goal, reading the seats wins, and a finished season now keeps the council and its lit lanterns on screen with Try again first after a loss"
+    "note": "The new lacquer table with standing lanterns reads at a glance, always tabling a motion still misses the goal, and a finished season keeps the council on screen; on the smallest phones the practice round hides its Next button below the screen"
    },
    "needsYou": null,
    "inProgress": false,
@@ -43855,7 +43864,9 @@
   "System needs: 14 open decisions have waited more than a day (fix: answer them in the Needs you list; each has a suggested default)"
  ],
  "releaseReady": [],
- "releaseRegressed": [],
+ "releaseRegressed": [
+  "cymatic-plate"
+ ],
  "checksSummary": {
   "why": {
    "yes": 176,
@@ -43888,8 +43899,8 @@
    "ran": 0
   },
   "credits": {
-   "yes": 125,
-   "no": 70,
+   "yes": 126,
+   "no": 69,
    "unknown": 3,
    "ran": 0
   },

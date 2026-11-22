@@ -1,5 +1,5 @@
 {
- "generated": 1795325368,
+ "generated": 1795325949,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -98,8 +98,8 @@
    "created": 1793640233
   },
   {
-   "id": "P2NR222_rereview-lantern-meeting-round5",
-   "request": "Lantern Meeting: stranger re-review of the live page after tonight's change; ship goes to its release check",
+   "id": "P2NR214_rereview-coat-corridor-after-fixes",
+   "request": "Coat Corridor: stranger re-review after its review fixes (obvious play first, five-second test)",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
@@ -108,7 +108,7 @@
    "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2NV212_lantern-meeting-visual-build-pieces"
+    "P2NF126_coat-corridor-review-fixes"
    ],
    "priority": null,
    "why": "",
@@ -183,25 +183,6 @@
    "estMinutes": null,
    "after": [
     "P2NF125_alias-loaf-review-fixes"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR214_rereview-coat-corridor-after-fixes",
-   "request": "Coat Corridor: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF126_coat-corridor-review-fixes"
    ],
    "priority": null,
    "why": "",
@@ -344,6 +325,25 @@
    "created": 1795294402
   },
   {
+   "id": "P2RC38_release-check-lantern-meeting",
+   "request": "Lantern Meeting: release checklist pass after its re-review (credits, previews, accessible play, console)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR222_rereview-lantern-meeting-round5"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795294402
+  },
+  {
    "id": "P2RC44_release-check-thumb-stand-peony-dream",
    "request": "Thumb Stand and Peony Dream: first release checklist pass (credits, previews, accessible play, console)",
    "game": "Studio",
@@ -429,27 +429,6 @@
    "state": "waiting",
    "waitingOn": [
     "P2NB40_slab-core"
-   ],
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC38_release-check-lantern-meeting",
-   "request": "Lantern Meeting: release checklist pass after its re-review (credits, previews, accessible play, console)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR222_rereview-lantern-meeting-round5"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "waiting",
-   "waitingOn": [
-    "P2NR222_rereview-lantern-meeting-round5"
    ],
    "created": 1795294402
   },
@@ -1436,6 +1415,25 @@
    "estMinutes": null,
    "after": [
     "P2NV210_thirsty-clicks-visual-build-flat"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2NR222_rereview-lantern-meeting-round5",
+   "request": "Lantern Meeting: stranger re-review of the live page after tonight's change; ship goes to its release check",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2NV212_lantern-meeting-visual-build-pieces"
    ],
    "priority": null,
    "why": "",
