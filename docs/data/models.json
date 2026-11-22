@@ -211,12 +211,12 @@
   {
    "executor": "claude-sonnet",
    "role": "build",
-   "count": 667,
+   "count": 670,
    "firstTimePass": 96,
    "retries": 1,
    "medianMinutes": null,
    "costPerPass": 0.0,
-   "guessed": 608,
+   "guessed": 611,
    "topFailures": [
     "DONE",
     "Studio standard audit before: c_meta, d_share FAIL. After (live, 2026-",
@@ -565,6 +565,15 @@
   },
   {
    "date": "2026-11-22",
+   "task": "release check thumb stand peony dream",
+   "number": "78",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE (checklist pass; nothing published, no player-facing change was mechanical)"
+  },
+  {
+   "date": "2026-11-22",
    "task": "release check gallery guess mirror hold",
    "number": "22",
    "executor": "claude-sonnet",
@@ -682,12 +691,30 @@
   },
   {
    "date": "2026-11-22",
+   "task": "no unison next level board height",
+   "number": "108",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "DONE. After a win, Next level (and Try again) now re-fits the board, so Play / Listen / Step / Undo stay on screen on every song. One change"
+  },
+  {
+   "date": "2026-11-22",
    "task": "stripes readout row overflow",
    "number": "",
    "executor": "claude-sonnet",
    "role": "build",
    "passed": "no",
    "note": "a permission check refused my one compound command (copy demo/snap.html to docs/demo/snap.html, mkdir logs dir, start a local python http.se"
+  },
+  {
+   "date": "2026-11-22",
+   "task": "coat corridor caption and text size",
+   "number": "122",
+   "executor": "claude-sonnet",
+   "role": "build",
+   "passed": "yes",
+   "note": "it needs the three pinned generator hashes in test/engine.test.mjs re-pinned, and I was told never to change a test; the permission check al"
   },
   {
    "date": "2026-11-22",
@@ -706,33 +733,6 @@
    "role": "build",
    "passed": "yes",
    "note": "claim 23:17, done 00:03 (46 min)."
-  },
-  {
-   "date": "2026-11-21",
-   "task": "refresh release records",
-   "number": "",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE (mostly). Continued the earlier worker's run (logs/P3OPS00_refresh-release-records): probe, a11y (99 touched games), one-screen audit ("
-  },
-  {
-   "date": "2026-11-21",
-   "task": "knockout plate polish zh title and practice cap",
-   "number": "103",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE - Knockout Plate polish, 2026-11-21 23:48-23:57, published once (main 319450d), live draw.js sha1 equals main, live onescreen_gate --st"
-  },
-  {
-   "date": "2026-11-21",
-   "task": "release check the apprentice",
-   "number": "152",
-   "executor": "claude-sonnet",
-   "role": "build",
-   "passed": "yes",
-   "note": "DONE - release check of The Apprentice, 2026-11-21 23:33-23:48, published once (main 47d040c); live LICENSES.txt answers 200, live game.js s"
   }
  ],
  "workflowNote": "Small text and data edits go to cheap OpenRouter models: gpt-4.1 writes whole files and has passed every task given so far; a smaller model handles one-file edits well but sometimes replies in chat instead of editing, so its failures move to gpt-4.1. Codex builds pass their gates more often at higher effort, and runs stopped by the weekly quota are no longer counted against it. Claude keeps design, review and judgment work; Sonnet fix tasks on shared lesson code failed most often, so those now go to a designer first. Most Claude rows before 22 October did not record the model, so their pass rates are estimates."

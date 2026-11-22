@@ -1,5 +1,5 @@
 {
- "generated": 1795329358,
+ "generated": 1795329958,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -27,25 +27,6 @@
   "lastHandBackN": 7
  },
  "tasks": [
-  {
-   "id": "P2NF140_coat-corridor-caption-and-text-size",
-   "request": "Coat Corridor: the hint under the board fits on screen, text is big enough to read, the daily needs a plan",
-   "game": "Coat Corridor",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR214_rereview-coat-corridor-after-fixes"
-   ],
-   "priority": "P2",
-   "why": "A fashion clip of white lab coats worn over loud colours in a tiled hospital corridor.",
-   "state": "running",
-   "at": 1795326161,
-   "created": 1795326161
-  },
   {
    "id": "P3PL14_speaking-stone-why-rollout",
    "request": "Why this exists: finish the rollout on speaking-stone (new test failure: test/first_minute_play.mjs no longer sees )",
@@ -98,9 +79,28 @@
    "created": 1793640233
   },
   {
-   "id": "P2NF142_no-unison-next-level-board-height",
-   "request": "No Unison: after a win, Next level no longer pushes the Play/Listen/Step/Undo row below the screen on small phones",
-   "game": "No Unison",
+   "id": "P2RC34_release-check-floating-city",
+   "request": "Floating City: release checklist pass after its re-review (credits, previews, accessible play, console)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR218_rereview-floating-city-round5"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "running",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2RC45_release-check-beetle-in-a-box",
+   "request": "Beetle in a Box: first release checklist pass (logo mark, preview meta, share line, accessible play)",
+   "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
@@ -109,10 +109,10 @@
    "estMinutes": null,
    "after": [],
    "priority": null,
-   "why": "An imagined stage of feuding musicians, sparked by images of rivals sharing one stage.",
+   "why": "",
    "state": "running",
-   "at": 1795328800,
-   "created": 1795328800
+   "at": 1795294402,
+   "created": 1795294402
   },
   {
    "id": "P3PL13_dancers-not-mad-why-rollout",
@@ -190,25 +190,6 @@
    "created": 1795294402
   },
   {
-   "id": "P2RC34_release-check-floating-city",
-   "request": "Floating City: release checklist pass after its re-review (credits, previews, accessible play, console)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR218_rereview-floating-city-round5"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
-  },
-  {
    "id": "P2RC37_release-check-thirsty-clicks",
    "request": "Thirsty Clicks: release checklist pass after its re-review (credits, previews, accessible play, console)",
    "game": "Studio",
@@ -221,40 +202,6 @@
    "after": [
     "P2NR221_rereview-thirsty-clicks-round5"
    ],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC44_release-check-thumb-stand-peony-dream",
-   "request": "Thumb Stand and Peony Dream: first release checklist pass (credits, previews, accessible play, console)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "ready",
-   "waitingOn": [],
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC45_release-check-beetle-in-a-box",
-   "request": "Beetle in a Box: first release checklist pass (logo mark, preview meta, share line, accessible play)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
    "priority": null,
    "why": "",
    "state": "ready",
@@ -998,6 +945,23 @@
    "state": "done",
    "at": 1795308437,
    "created": 1795308437
+  },
+  {
+   "id": "P2NF142_no-unison-next-level-board-height",
+   "request": "No Unison: after a win, Next level no longer pushes the Play/Listen/Step/Undo row below the screen on small phones",
+   "game": "No Unison",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "An imagined stage of feuding musicians, sparked by images of rivals sharing one stage.",
+   "state": "done",
+   "at": 1795328800,
+   "created": 1795328800
   },
   {
    "id": "P2NR181_rereview-crushed-can-and-shortest-law",
@@ -1872,6 +1836,23 @@
   {
    "id": "P2RC43_release-check-gallery-guess-mirror-hold",
    "request": "Gallery Guess and Mirror Hold: first release checklist pass (credits, previews, accessible play, console)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [],
+   "priority": null,
+   "why": "",
+   "state": "done",
+   "at": 1795294402,
+   "created": 1795294402
+  },
+  {
+   "id": "P2RC44_release-check-thumb-stand-peony-dream",
+   "request": "Thumb Stand and Peony Dream: first release checklist pass (credits, previews, accessible play, console)",
    "game": "Studio",
    "route": "Claude",
    "model": "sonnet",
