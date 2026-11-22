@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-22T02:57:07+00:00",
+ "generated": "2026-11-22T03:06:40+00:00",
  "ops": {
-  "count": 7,
+  "count": 6,
   "notes": [
    "A game changed in the last hour with no claimed task on it.",
    "Two tasks share the number P2NF18.",
@@ -28,23 +28,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 37,
+    "queued": 36,
     "running": 0,
     "doneToday": 1,
-    "minutes": 1480,
-    "estimateMinutes": 1480
+    "minutes": 1440,
+    "estimateMinutes": 1440
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 57,
+    "doneToday": 58,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 38,
+  "queued": 37,
   "running": 6,
-  "doneToday": 58,
+  "doneToday": 59,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -54,17 +54,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1900,
-  "estimatedFinish": "2026-11-23T03:37:07+00:00",
-  "estimateMinutes": 1480
+  "minutesRemaining": 1860,
+  "estimatedFinish": "2026-11-23T03:06:40+00:00",
+  "estimateMinutes": 1440
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "readable-nonsense",
-   "task": "P2NB44_readable nonsense small phone layout",
-   "since": "2026-11-22T02:49:56+00:00",
-   "activity": "2026-11-22T02:51:32+00:00",
+   "game": "no-unison",
+   "task": "P2NB45_no unison rule in goal",
+   "since": "2026-11-22T03:05:53+00:00",
+   "activity": "2026-11-22T03:05:56+00:00",
    "commit": null
   },
   {
@@ -72,7 +72,7 @@
    "game": "thirsty-clicks",
    "task": "P2NV210_thirsty clicks visual build flat",
    "since": "2026-11-22T02:53:07+00:00",
-   "activity": "2026-11-22T02:53:10+00:00",
+   "activity": "2026-11-22T03:06:06+00:00",
    "commit": null
   },
   {
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1233,
-  "usdEst": 4438.8,
+  "runs": 1234,
+  "usdEst": 4442.4,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -223,7 +223,7 @@
   },
   {
    "day": "2026-11-21",
-   "changes": 40
+   "changes": 41
   }
  ],
  "houseRules": 25,
@@ -21625,7 +21625,7 @@
    ]
   },
   {
-   "nextTask": "No Unison: each song's rule shown in full...",
+   "nextTask": "No Unison: cold re-review after the rule-words build",
    "costTotalUsd": 65.46,
    "latestChange": {
     "text": "clearer singers by shape, tails with the singer's notch, ticks on sung cells, a starburst...",
@@ -21648,8 +21648,8 @@
    "title": "No Unison",
    "line": "",
    "url": "https://chenhsieh.github.io/no-unison/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -21667,7 +21667,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T17:28:17+00:00",
-   "lastChange": "2026-11-21T21:53:22+00:00",
+   "lastChange": "2026-11-22T03:05:56+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -21683,10 +21683,10 @@
    "tasks": [
     {
      "title": "P2NB45_no unison rule in goal",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "No Unison: each song's rule shown in full above the board",
-     "since": "2026-11-21T21:53:22+00:00",
+     "since": "2026-11-22T03:05:53+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -21795,8 +21795,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 2,
-    "running": 0,
+    "queued": 1,
+    "running": 1,
     "waitingDesign": 0,
     "done": 10
    },
@@ -30717,7 +30717,7 @@
     "resting": false,
     "regressed": false,
     "reviseRound": 1,
-    "daysInState": 27
+    "daysInState": 28
    },
    "waitingOn": "none",
    "id": "seed-spiral",
@@ -38631,7 +38631,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-20T17:19:46+00:00",
-   "lastChange": "2026-11-22T02:53:10+00:00",
+   "lastChange": "2026-11-22T03:06:06+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -43580,10 +43580,10 @@
   },
   {
    "nextTask": "Readable Nonsense: cold re-review after the small-phone layout...",
-   "costTotalUsd": 93.79,
+   "costTotalUsd": 97.39,
    "latestChange": {
-    "text": "first screen says how to stamp; loss card says what A-ma read; lesson 8 is a new line;...",
-    "at": "2026-11-20T08:29:23+00:00"
+    "text": "goal always shown on small phones, slim ruler, one-row A-ma box and buttons, win keeps...",
+    "at": "2026-11-22T03:05:22+00:00"
    },
    "promo": null,
    "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
@@ -43595,15 +43595,15 @@
     "reviseRound": 3,
     "daysInState": 1
    },
-   "waitingOn": "readable nonsense small phone layout",
+   "waitingOn": "rereview readable nonsense small phone",
    "id": "readable-nonsense",
    "number": 75,
    "repo": "readable-nonsense",
    "title": "阿嬤讀得出來",
    "line": "A famous Tang poem line is printed as fake glyphs with.",
    "url": "https://chenhsieh.github.io/readable-nonsense/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "queued",
+   "who": "Codex",
    "priority": "P1",
    "priorityNote": "Start error blocks play",
    "shelfNote": "",
@@ -43617,34 +43617,20 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-16T00:29:52+00:00",
-   "lastChange": "2026-11-22T02:51:32+00:00",
+   "lastChange": "2026-11-22T03:05:22+00:00",
    "cost": {
     "apiUsd": 2.95,
     "codexRuns": 3,
-    "claudeRuns": 12,
+    "claudeRuns": 13,
     "apiRuns": 0,
     "codexTokens": 697578,
     "codexUsdEst": 0.84,
-    "claudeUsdEst": 43.2,
+    "claudeUsdEst": 46.8,
     "earlierRounds": 13,
     "earlierUsdEst": 46.8,
-    "totalUsdEst": 93.79
+    "totalUsdEst": 97.39
    },
    "tasks": [
-    {
-     "title": "P2NB44_readable nonsense small phone layout",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Readable Nonsense: goal and ruler on small phones, whole line above the win card",
-     "since": "2026-11-22T02:49:56+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2NR224_rereview readable nonsense small phone",
      "state": "queued",
@@ -43658,6 +43644,20 @@
      "reviewOutcome": null,
      "commit": null,
      "result": ""
+    },
+    {
+     "title": "P2NB44_readable nonsense small phone layout",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Readable Nonsense: goal and ruler on small phones, whole line above the win card",
+     "since": "2026-11-21T21:44:54+00:00",
+     "done": "2026-11-21T21:44:54+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "NOT YET (one item): everything shipped and live except call 4's \"rack cards at least 44 px wide\". Rack cards are drawn inside the canvas by docs/draw.js (not on the allowed file list); at 320x568 the board is 239 px..."
     },
     {
      "title": "P2NX38_readable nonsense small phone lead",
@@ -43746,9 +43746,9 @@
    ],
    "taskCounts": {
     "queued": 1,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 15
+    "done": 16
    },
    "verdict": {
     "date": "2026-11-20",
@@ -43758,6 +43758,18 @@
    "needsYou": null,
    "inProgress": true,
    "history": [
+    {
+     "at": "2026-11-22T03:05:22+00:00",
+     "ok": true,
+     "note": "goal always shown on small phones, slim ruler, one-row A-ma box and buttons, win keeps whole line above card (rack card 44 px not done)",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-22T03:03:38+00:00",
+     "ok": true,
+     "note": "feat: the goal sentence always shows on small phones, and a win keeps the whole poem line above the card",
+     "source": "main commit"
+    },
     {
      "at": "2026-11-20T08:29:23+00:00",
      "ok": true,
@@ -43816,18 +43828,6 @@
      "at": "2026-10-24T01:51:50+00:00",
      "ok": true,
      "note": "primer look built: vertical line, Zhuyin column with tones, flash cards, lines-fit ruler, A-ma reads box; fits 320x568",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-24T01:50:02+00:00",
-     "ok": true,
-     "note": "feat: the page reads like a school primer, with Zhuyin in a column beside each character",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-24T01:12:20+00:00",
-     "ok": true,
-     "note": "copy rewrite en+zh, Zhuyin tone marks from MOE (tones.json), no pinyin, copy+zhuyin size tests",
      "source": "board note"
     }
    ]
