@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T05:10:18+00:00",
+ "generated": "2026-11-22T05:19:47+00:00",
  "ops": {
   "count": 7,
   "notes": [
@@ -28,11 +28,11 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 24,
+    "queued": 20,
     "running": 0,
     "doneToday": 0,
-    "minutes": 960,
-    "estimateMinutes": 960
+    "minutes": 800,
+    "estimateMinutes": 800
    },
    "Claude": {
     "queued": 1,
@@ -42,7 +42,7 @@
     "estimateMinutes": 210
    }
   },
-  "queued": 25,
+  "queued": 21,
   "running": 6,
   "doneToday": 0,
   "lanes": {
@@ -54,17 +54,17 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 1380,
-  "estimatedFinish": "2026-11-22T21:10:18+00:00",
-  "estimateMinutes": 960
+  "minutesRemaining": 1220,
+  "estimatedFinish": "2026-11-22T18:39:47+00:00",
+  "estimateMinutes": 800
  },
  "lanes": [
   {
    "worker": "Claude",
-   "game": "pinch-points",
-   "task": "P2KS18_pinch points kit layout port",
-   "since": "2026-11-22T05:04:20+00:00",
-   "activity": "2026-11-22T05:04:29+00:00",
+   "game": "Multiple games",
+   "task": "P2RC43_release check gallery guess mirror hold",
+   "since": null,
+   "activity": null,
    "commit": null
   },
   {
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1247,
-  "usdEst": 4489.2,
+  "runs": 1248,
+  "usdEst": 4492.8,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -224,6 +224,10 @@
   {
    "day": "2026-11-21",
    "changes": 51
+  },
+  {
+   "day": "2026-11-22",
+   "changes": 1
   }
  ],
  "houseRules": 25,
@@ -25674,7 +25678,7 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 75.94,
+   "costTotalUsd": 79.54,
    "latestChange": {
     "text": "Flatten button says 1 pinch (singular) when one is enough",
     "at": "2026-11-20T08:41:50+00:00"
@@ -25689,21 +25693,21 @@
    "why": "A graphics-paper figure of a statue flattened two ways, and an old woodblock page of a perforated scholar's stone.",
    "state": "ship",
    "stateFlags": {
-    "refining": true,
+    "refining": false,
     "resting": false,
     "regressed": false,
     "reviseRound": 0,
     "daysInState": 2
    },
-   "waitingOn": "pinch points kit layout port",
+   "waitingOn": "owner",
    "id": "pinch-points",
    "number": 119,
    "repo": "pinch-points",
    "title": "Pinch Points",
    "line": "Pinch six stones flat as the surface flattens live; par set by search, plus a daily.",
    "url": "https://chenhsieh.github.io/pinch-points/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": "P1",
    "priorityNote": "turns an esoteric paper into an interactive game; explain the mechanism, show...",
    "shelfNote": "",
@@ -25717,7 +25721,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T20:47:18+00:00",
-   "lastChange": "2026-11-22T05:04:29+00:00",
+   "lastChange": "2026-11-22T05:14:47+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -25726,25 +25730,11 @@
     "codexTokens": 280385,
     "codexUsdEst": 0.34,
     "claudeUsdEst": 39.6,
-    "earlierRounds": 10,
-    "earlierUsdEst": 36.0,
-    "totalUsdEst": 75.94
+    "earlierRounds": 11,
+    "earlierUsdEst": 39.6,
+    "totalUsdEst": 79.54
    },
    "tasks": [
-    {
-     "title": "P2KS18_pinch points kit layout port",
-     "state": "running",
-     "worker": "Claude",
-     "plan": "Pinch Points moves to the current kit: one row of three buttons, the ruler above the stone, every phone fits",
-     "since": "2026-11-22T05:04:20+00:00",
-     "done": null,
-     "reviewed": false,
-     "minutes": null,
-     "tokens": null,
-     "reviewOutcome": null,
-     "commit": null,
-     "result": ""
-    },
     {
      "title": "P2NV136_pinch points visual polish",
      "state": "done",
@@ -25842,11 +25832,25 @@
      "reviewOutcome": null,
      "commit": null,
      "result": "DONE (Sonnet worker). Pinch Points now shows the movement. Published to main (commits , ); live bytes match origin/main (game.js, game.css, index.html, explain.words.js)."
+    },
+    {
+     "title": "P2PP04_pinch points visual round design",
+     "state": "done",
+     "worker": "Claude",
+     "plan": "Pinch Points: visual round with the taste spin, three looks and a pick",
+     "since": "2026-10-24T06:59:29+00:00",
+     "done": "2026-10-24T06:59:29+00:00",
+     "reviewed": false,
+     "minutes": null,
+     "tokens": null,
+     "reviewOutcome": null,
+     "commit": null,
+     "result": "DONE (planner, Opus). Pinch Points visual round, design only; game unchanged. main : design/mock_a.html, mock_b.html, mock_c.html, design/VISUAL_ROUND.md, design/visual/ (engine renders of level 2, subset fonts with..."
     }
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
     "done": 12
    },
@@ -25856,7 +25860,7 @@
     "note": "After the word polish, pinching the sharpest points still misses par on every stone after the cube and on 60 dailies, and each goal now fits two lines on a small phone"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
     {
      "at": "2026-11-20T08:41:50+00:00",
@@ -25922,12 +25926,6 @@
      "at": "2026-11-13T16:20:14+00:00",
      "ok": true,
      "note": "stranger review P2NR65: fix task P2NF41",
-     "source": "board note"
-    },
-    {
-     "at": "2026-11-13T11:18:04+00:00",
-     "ok": true,
-     "note": "visual build: paper-model sheet, red hats, spread ruler, cut-out net, pinned win sheet; live",
      "source": "board note"
     }
    ]
@@ -43898,8 +43896,8 @@
    "ran": 0
   },
   "credits": {
-   "yes": 126,
-   "no": 69,
+   "yes": 125,
+   "no": 70,
    "unknown": 3,
    "ran": 0
   },
@@ -43916,15 +43914,15 @@
    "ran": 0
   },
   "console": {
-   "yes": 98,
+   "yes": 99,
    "no": 1,
-   "unknown": 99,
+   "unknown": 98,
    "ran": 0
   },
   "live": {
-   "yes": 97,
+   "yes": 98,
    "no": 2,
-   "unknown": 99,
+   "unknown": 98,
    "ran": 0
   },
   "name": {
