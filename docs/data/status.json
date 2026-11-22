@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T00:52:10+00:00",
+ "generated": "2026-11-22T01:01:48+00:00",
  "ops": {
   "count": 6,
   "notes": [
@@ -28,23 +28,23 @@
  "queue": {
   "workers": {
    "Codex": {
-    "queued": 48,
+    "queued": 47,
     "running": 0,
     "doneToday": 1,
-    "minutes": 1920,
-    "estimateMinutes": 1920
+    "minutes": 1880,
+    "estimateMinutes": 1880
    },
    "Claude": {
     "queued": 1,
     "running": 6,
-    "doneToday": 45,
+    "doneToday": 46,
     "minutes": 420,
     "estimateMinutes": 210
    }
   },
-  "queued": 49,
+  "queued": 48,
   "running": 6,
-  "doneToday": 46,
+  "doneToday": 47,
   "lanes": {
    "Codex": 1,
    "Claude": 2
@@ -54,9 +54,9 @@
    "Codex": null
   },
   "codexPaused": false,
-  "minutesRemaining": 2340,
-  "estimatedFinish": "2026-11-23T08:52:10+00:00",
-  "estimateMinutes": 1920
+  "minutesRemaining": 2300,
+  "estimatedFinish": "2026-11-23T08:21:48+00:00",
+  "estimateMinutes": 1880
  },
  "lanes": [
   {
@@ -69,10 +69,10 @@
   },
   {
    "worker": "Claude",
-   "game": "plain-telling",
-   "task": "P2NF138_plain telling draw tap and candles",
-   "since": "2026-11-22T00:48:21+00:00",
-   "activity": "2026-11-22T00:48:41+00:00",
+   "game": "out-of-the-corner",
+   "task": "P2NF137_out of the corner zh hud words",
+   "since": "2026-11-22T00:58:01+00:00",
+   "activity": "2026-11-22T01:01:13+00:00",
    "commit": null
   },
   {
@@ -112,8 +112,8 @@
  "claudeWorkers": 6,
  "apiSpentUsd": 422.07,
  "claudeInSession": {
-  "runs": 1221,
-  "usdEst": 4395.6,
+  "runs": 1222,
+  "usdEst": 4399.2,
   "note": "Claude in-session, estimated from the ledger"
  },
  "rates": {
@@ -223,7 +223,7 @@
   },
   {
    "day": "2026-11-21",
-   "changes": 28
+   "changes": 29
   }
  ],
  "houseRules": 25,
@@ -23953,7 +23953,7 @@
    ]
   },
   {
-   "nextTask": "Out of the Corner: the Chinese counter row...",
+   "nextTask": null,
    "costTotalUsd": 58.2,
    "latestChange": {
     "text": "re-review round 5: revise (blind stop-and-go still wins 63-69% nights 4-6; zh HUD N4);...",
@@ -23976,8 +23976,8 @@
    "title": "Out Of The Corner",
    "line": "",
    "url": "https://chenhsieh.github.io/out-of-the-corner/",
-   "stage": "queued",
-   "who": "Codex",
+   "stage": "building",
+   "who": "Claude",
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -23990,7 +23990,7 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-25T01:02:46+00:00",
-   "lastChange": "2026-11-22T00:41:21+00:00",
+   "lastChange": "2026-11-22T01:01:13+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
@@ -24006,10 +24006,10 @@
    "tasks": [
     {
      "title": "P2NF137_out of the corner zh hud words",
-     "state": "queued",
-     "worker": "Codex",
+     "state": "running",
+     "worker": "Claude",
      "plan": "Out of the Corner: the Chinese counter row says 第 4 夜 and 天亮, not N4",
-     "since": "2026-11-22T00:41:08+00:00",
+     "since": "2026-11-22T00:58:01+00:00",
      "done": null,
      "reviewed": false,
      "minutes": null,
@@ -24118,8 +24118,8 @@
     }
    ],
    "taskCounts": {
-    "queued": 1,
-    "running": 0,
+    "queued": 0,
+    "running": 1,
     "waitingDesign": 0,
     "done": 7
    },
@@ -25935,30 +25935,30 @@
   },
   {
    "nextTask": null,
-   "costTotalUsd": 47.01,
+   "costTotalUsd": 54.21,
    "latestChange": {
-    "text": "re-review: revise (Draw touch still jumps to next night 5/5 live, HUD counts taps); kit...",
-    "at": "2026-11-22T00:47:17+00:00"
+    "text": "Draw tap stays on the solved night (0/5 jumps live); HUD counts candles",
+    "at": "2026-11-22T00:58:00+00:00"
    },
    "promo": null,
    "why": "A commentary on a 2002 film that tells one story three ways in red, blue and white.",
-   "state": "revise",
+   "state": "shelved",
    "stateFlags": {
     "refining": false,
-    "resting": false,
+    "resting": true,
     "regressed": false,
     "reviseRound": 2,
     "daysInState": 0
    },
-   "waitingOn": "plain telling draw tap and candles",
+   "waitingOn": "none",
    "id": "plain-telling",
    "number": 116,
    "repo": "plain-telling",
    "title": "Plain Telling",
    "line": "",
    "url": "https://chenhsieh.github.io/plain-telling/",
-   "stage": "building",
-   "who": "Claude",
+   "stage": "live",
+   "who": null,
    "priority": null,
    "priorityNote": "",
    "shelfNote": "",
@@ -25972,33 +25972,33 @@
    "archivedKind": "",
    "archivedNote": "",
    "firstSeen": "2026-10-21T05:04:55+00:00",
-   "lastChange": "2026-11-22T00:48:41+00:00",
+   "lastChange": "2026-11-22T00:58:00+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 1,
-    "claudeRuns": 2,
+    "claudeRuns": 3,
     "apiRuns": 0,
     "codexTokens": 175748,
     "codexUsdEst": 0.21,
-    "claudeUsdEst": 7.2,
-    "earlierRounds": 11,
-    "earlierUsdEst": 39.6,
-    "totalUsdEst": 47.01
+    "claudeUsdEst": 10.8,
+    "earlierRounds": 12,
+    "earlierUsdEst": 43.2,
+    "totalUsdEst": 54.21
    },
    "tasks": [
     {
      "title": "P2NF138_plain telling draw tap and candles",
-     "state": "running",
+     "state": "done",
      "worker": "Claude",
      "plan": "Plain Telling: tapping Draw on a phone shows the solved night instead of skipping to the next one; the candle count matches",
-     "since": "2026-11-22T00:48:21+00:00",
-     "done": null,
+     "since": "2026-11-22T00:47:17+00:00",
+     "done": "2026-11-22T00:47:17+00:00",
      "reviewed": false,
      "minutes": null,
      "tokens": null,
      "reviewOutcome": null,
      "commit": null,
-     "result": ""
+     "result": "DONE P2NF138 Sonnet."
     },
     {
      "title": "P2KS16_plain telling kit port",
@@ -26045,9 +26045,9 @@
    ],
    "taskCounts": {
     "queued": 0,
-    "running": 1,
+    "running": 0,
     "waitingDesign": 0,
-    "done": 3
+    "done": 4
    },
    "verdict": {
     "date": "2026-11-21",
@@ -26055,8 +26055,20 @@
     "note": "Lighting candles to strike false panels is still a real choice, but tapping Draw on a phone still skips the solved night and the candle counter counts taps"
    },
    "needsYou": null,
-   "inProgress": true,
+   "inProgress": false,
    "history": [
+    {
+     "at": "2026-11-22T00:58:00+00:00",
+     "ok": true,
+     "note": "Draw tap stays on the solved night (0/5 jumps live); HUD counts candles",
+     "source": "board note"
+    },
+    {
+     "at": "2026-11-22T00:56:02+00:00",
+     "ok": true,
+     "note": "fix: tapping Draw on a phone shows the solved night and result sheet; the counter shows candles lit",
+     "source": "main commit"
+    },
     {
      "at": "2026-11-22T00:47:17+00:00",
      "ok": true,
@@ -26115,18 +26127,6 @@
      "at": "2026-10-22T21:13:45+00:00",
      "ok": true,
      "note": "feat: teach the first telling in three playable steps",
-     "source": "main commit"
-    },
-    {
-     "at": "2026-10-21T05:19:32+00:00",
-     "ok": true,
-     "note": "P2HR01 live prototype on the template: 6 nights + daily + endless, template check 12/12; https://chenhsieh.github.io/plain-telling/",
-     "source": "board note"
-    },
-    {
-     "at": "2026-10-21T05:18:15+00:00",
-     "ok": true,
-     "note": "feat: six nights of Plain Telling, one scroll, red and blue tellings",
      "source": "main commit"
     }
    ]
@@ -28845,8 +28845,8 @@
    "nextTask": null,
    "costTotalUsd": 65.47,
    "latestChange": {
-    "text": "goal 22px score 24px with par, room ends at clock; share/og not done",
-    "at": "2026-11-22T00:23:47+00:00"
+    "text": "feat: link preview picture, emoji result line, bigger drawn words, Why? in Chinese",
+    "at": "2026-11-22T00:34:38+00:00"
    },
    "promo": null,
    "why": "The 1952 silent piece 4′33″ and a contest poster for it.",
@@ -28883,8 +28883,8 @@
    "archivedOn": null,
    "archivedKind": "",
    "archivedNote": "",
-   "firstSeen": "2026-10-18T06:19:46+00:00",
-   "lastChange": "2026-11-22T00:24:17+00:00",
+   "firstSeen": "2026-10-18T06:20:45+00:00",
+   "lastChange": "2026-11-22T00:34:38+00:00",
    "cost": {
     "apiUsd": 0.0,
     "codexRuns": 3,
@@ -29012,6 +29012,12 @@
    "inProgress": false,
    "history": [
     {
+     "at": "2026-11-22T00:34:38+00:00",
+     "ok": true,
+     "note": "feat: link preview picture, emoji result line, bigger drawn words, Why? in Chinese",
+     "source": "main commit"
+    },
+    {
      "at": "2026-11-22T00:23:47+00:00",
      "ok": true,
      "note": "goal 22px score 24px with par, room ends at clock; share/og not done",
@@ -29076,12 +29082,6 @@
      "ok": true,
      "note": "'Why this exists' section and no link to or mention of the hub page (P1PL00 rollout)",
      "source": "main commit"
-    },
-    {
-     "at": "2026-10-22T23:13:54+00:00",
-     "ok": true,
-     "note": "feat: play Room Tone’s first-minute score before level 1",
-     "source": "board note"
     }
    ]
   },
