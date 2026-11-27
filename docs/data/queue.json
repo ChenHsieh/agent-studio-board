@@ -1,5 +1,5 @@
 {
- "generated": 1795335664,
+ "generated": 1795792311,
  "defaultPercentPerCodexTask": 0.25,
  "openrouter": {
   "lanesBusy": 0,
@@ -27,25 +27,6 @@
   "lastHandBackN": 7
  },
  "tasks": [
-  {
-   "id": "P2NV219_coat-corridor-visual-build-chrome",
-   "request": "P2NV219_coat corridor visual build chrome",
-   "game": "Coat Corridor",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P2NV218_coat-corridor-visual-build-board"
-   ],
-   "priority": "P2",
-   "why": "A fashion clip of white lab coats worn over loud colours in a tiled hospital corridor.",
-   "state": "running",
-   "at": 1795333721,
-   "created": 1795333721
-  },
   {
    "id": "P3PL14_speaking-stone-why-rollout",
    "request": "Why this exists: finish the rollout on speaking-stone (new test failure: test/first_minute_play.mjs no longer sees )",
@@ -115,8 +96,8 @@
    "created": 1793640233
   },
   {
-   "id": "P2NR223_rereview-letter-lines-round5",
-   "request": "Letter Lines: stranger re-review of the live page after tonight's change; ship goes to its release check",
+   "id": "P2NR239_rereview-triangle-lexicon-after-lead",
+   "request": "Opus cold re-review of Triangle Lexicon after the Chinese build",
    "game": "Studio",
    "route": "Claude",
    "model": "opus",
@@ -125,14 +106,51 @@
    "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2NV214_letter-lines-visual-build-desk",
-    "P2NV206_letter-lines-visual-study"
+    "P2TL00_triangle-lexicon-chinese-and-language-button"
    ],
    "priority": null,
    "why": "",
    "state": "ready",
    "waitingOn": [],
-   "created": 1795294402
+   "created": 1795625296
+  },
+  {
+   "id": "P2NR240_rereview-lens-screen-after-lead",
+   "request": "Opus cold re-review of Lens Screen after the Chinese card and 320 fix",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2LN00_lens-screen-chinese-card-and-320"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795625732
+  },
+  {
+   "id": "P2NR241_rereview-fake-philosopher-after-lead",
+   "request": "Opus cold re-review of Fake Philosopher after the Chinese paper build",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "opus",
+   "effort": "high",
+   "kind": "review",
+   "size": "studio",
+   "estMinutes": null,
+   "after": [
+    "P2FP01_fake-philosopher-paper-in-chinese"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795626023
   },
   {
    "id": "P2RC06_release-check-batch-6",
@@ -192,6 +210,25 @@
    "created": 1795294402
   },
   {
+   "id": "P2RC39_release-check-letter-lines",
+   "request": "Letter Lines: release checklist pass after its re-review (credits, previews, accessible play, console)",
+   "game": "Studio",
+   "route": "Claude",
+   "model": "sonnet",
+   "effort": "high",
+   "kind": "build",
+   "size": "one repo",
+   "estMinutes": null,
+   "after": [
+    "P2NR223_rereview-letter-lines-round5"
+   ],
+   "priority": null,
+   "why": "",
+   "state": "ready",
+   "waitingOn": [],
+   "created": 1795294402
+  },
+  {
    "id": "P2NR151_review-slab",
    "request": "P2NR151_review slab",
    "game": "Studio",
@@ -213,49 +250,30 @@
    "created": 1795294402
   },
   {
-   "id": "P2RC39_release-check-letter-lines",
-   "request": "Letter Lines: release checklist pass after its re-review (credits, previews, accessible play, console)",
+   "id": "P2NR236_rereview-dynasty-after-lead",
+   "request": "Dynasty cold re-review after the play-screen lead builds",
    "game": "Studio",
    "route": "Claude",
-   "model": "sonnet",
+   "model": "opus",
    "effort": "high",
-   "kind": "build",
-   "size": "one repo",
+   "kind": "review",
+   "size": "studio",
    "estMinutes": null,
    "after": [
-    "P2NR223_rereview-letter-lines-round5"
+    "P2DG06_dynasty-retry-says-one-is-wrong"
    ],
    "priority": null,
    "why": "",
    "state": "waiting",
    "waitingOn": [
-    "P2NR223_rereview-letter-lines-round5"
+    "P2DG06_dynasty-retry-says-one-is-wrong"
    ],
-   "created": 1795294402
+   "created": 1795624406
   },
   {
-   "id": "P2FM65_mirror-hold-first-minute",
-   "request": "Mirror Hold: check the first minute against the house standard and close its gaps",
-   "game": "Mirror Hold",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "first-minute",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2RC43_release-check-gallery-guess-mirror-hold"
-   ],
-   "priority": "P1",
-   "why": "Manga panels of a sumo wrestler before a mirror and a hand scooping Edo-period hair wax from a red tin.",
-   "state": "done",
-   "at": 1795330876,
-   "created": 1795330876
-  },
-  {
-   "id": "P2NB44_readable-nonsense-small-phone-layout",
-   "request": "Readable Nonsense: goal and ruler on small phones, whole line above the win card",
-   "game": "阿嬤讀得出來",
+   "id": "P2DG04_dynasty-play-screen-one-screen",
+   "request": "Dynasty: picture, trolley and all nine eras on one phone screen",
+   "game": "Dynasty Guess",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
@@ -263,262 +281,17 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NX38_readable-nonsense-small-phone-lead"
+    "P2NX41_dynasty-guess-play-screen-lead"
    ],
    "priority": "P1",
-   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
+   "why": "Open collection records of National Palace Museum objects; read material, form, glaze and wear on one real object and guess its period.",
    "state": "done",
-   "at": 1795297494,
-   "created": 1795297494
+   "at": 1795753287,
+   "created": 1795753287
   },
   {
-   "id": "P2NF123_biosteganography-stripes-320-and-real-reading",
-   "request": "Straighten the Stripes: fits a 320 phone, and from case 4 the player reads the lean instead of following an arrow",
-   "game": "Biosteganography",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR196_resting-review-biosteganography-and-herbarium-guess"
-   ],
-   "priority": "P1",
-   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NF133_stripes-text-sizes-and-320",
-   "request": "Straighten the Stripes: house text sizes, nothing cut at 320, long text behind Why",
-   "game": "Biosteganography",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NX40_biosteganography-lead-pass"
-   ],
-   "priority": "P1",
-   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
-   "state": "done",
-   "at": 1795301840,
-   "created": 1795301840
-  },
-  {
-   "id": "P2NF134_stripes-drawn-preview",
-   "request": "Straighten the Stripes: drawn link preview instead of a screenshot",
-   "game": "Biosteganography",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NF133_stripes-text-sizes-and-320"
-   ],
-   "priority": "P1",
-   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
-   "state": "done",
-   "at": 1795301869,
-   "created": 1795301869
-  },
-  {
-   "id": "P2NF139_stripes-publish-root-demo",
-   "request": "Make the live Straighten the Stripes page serve tonight's text-size fix and drawn preview",
-   "game": "Biosteganography",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": "P1",
-   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
-   "state": "done",
-   "at": 1795319881,
-   "created": 1795319881
-  },
-  {
-   "id": "P2NR224_rereview-readable-nonsense-small-phone",
-   "request": "Readable Nonsense: cold re-review after the small-phone layout build",
-   "game": "阿嬤讀得出來",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NB44_readable-nonsense-small-phone-layout"
-   ],
-   "priority": "P1",
-   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
-   "state": "done",
-   "at": 1795297521,
-   "created": 1795297521
-  },
-  {
-   "id": "P2NR226_rereview-stripes-after-lead-builds",
-   "request": "Straighten the Stripes: cold Opus re-review after the readability and preview builds",
-   "game": "Biosteganography",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NF134_stripes-drawn-preview"
-   ],
-   "priority": "P1",
-   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
-   "state": "done",
-   "at": 1795301873,
-   "created": 1795301873
-  },
-  {
-   "id": "P2NV201_the-apprentice-visual-build-chrome",
-   "request": "The Apprentice: shed-wall endings, preview picture and plain share line",
-   "game": "The Apprentice",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NV200_the-apprentice-visual-build-board"
-   ],
-   "priority": "P1",
-   "why": "A viral second-person court scene where a cherished dancer draws a blade, recast in a reply as the orphan her ruler secretly raised.",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NX38_readable-nonsense-small-phone-lead",
-   "request": "Readable Nonsense: one lead pass on the small-phone first minute and the win screen",
-   "game": "阿嬤讀得出來",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR188_rereview-readable-nonsense-and-life-statistics-after-fixes"
-   ],
-   "priority": "P1",
-   "why": "A viral image of fake characters, each a radical plus its Bopomofo spelling, that Taiwanese readers still read as a famous Tang poem line.",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NX40_biosteganography-lead-pass",
-   "request": "Straighten the stripes: one lead pass on why following the cue still solves most cases, plus text sizes and 320 fit",
-   "game": "Biosteganography",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR211_rereview-biosteganography-after-fixes"
-   ],
-   "priority": "P1",
-   "why": "A hackathon joke that turned a FASTA file into a PNG by writing its characters as pixel colours.",
-   "state": "done",
-   "at": 1795300853,
-   "created": 1795300853
-  },
-  {
-   "id": "P3NF136_the-apprentice-polish-320-ring-and-fit",
-   "request": "The Apprentice: the lesson ring leaves the word whole on a small phone, level 5 and Chinese fit the screen",
-   "game": "The Apprentice",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2RC36_release-check-the-apprentice"
-   ],
-   "priority": "P1",
-   "why": "A viral second-person court scene where a cherished dancer draws a blade, recast in a reply as the orphan her ruler secretly raised.",
-   "state": "done",
-   "at": 1795302943,
-   "created": 1795302943
-  },
-  {
-   "id": "P3NF143_the-apprentice-zh-day-label-clip",
-   "request": "Stop the Chinese day label on the board having its character tops cut off",
-   "game": "The Apprentice",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR230_rereview-the-apprentice-after-320-polish"
-   ],
-   "priority": "P1",
-   "why": "A viral second-person court scene where a cherished dancer draws a blade, recast in a reply as the orphan her ruler secretly raised.",
-   "state": "done",
-   "at": 1795334385,
-   "created": 1795334385
-  },
-  {
-   "id": "P2NF125_alias-loaf-review-fixes",
-   "request": "Alias Loaf: one pair of names for the two packet groups, readable shapes, authored late levels with a real choice, fits a phone",
-   "game": "Alias Loaf",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR197_resting-review-alias-loaf-and-coat-corridor"
-   ],
-   "priority": "P2",
-   "why": "A screenshot of a long keyword-filter spreadsheet plus photos of a tray of slice-and-bake cookies with swirled patterns.",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NF126_coat-corridor-review-fixes",
-   "request": "Coat Corridor: six more floors with a real choice, a goal line per floor, the new rule shown when it starts, a daily that is not mostly waiting",
-   "game": "Coat Corridor",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR197_resting-review-alias-loaf-and-coat-corridor"
-   ],
-   "priority": "P2",
-   "why": "A fashion clip of white lab coats worn over loud colours in a tiled hospital corridor.",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NF129_triangle-lexicon-say-light-and-bigger-board",
-   "request": "Triangle Lexicon: say it is about bending light, show where the light enters and leaves, bigger board",
+   "id": "P2TL00_triangle-lexicon-chinese-and-language-button",
+   "request": "Triangle Lexicon",
    "game": "Triangle Lexicon",
    "route": "Claude",
    "model": "sonnet",
@@ -527,245 +300,17 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NR207_rereview-triangle-lexicon-after-fixes"
+    "P2NX44_triangle-lexicon-lead"
    ],
    "priority": "P2",
    "why": "Photos including a coffee package with a green triangle pattern and a nine-line glyph system, mixed with a colour-sweeper puzzle.",
    "state": "done",
-   "at": 1795295319,
-   "created": 1795295319
+   "at": 1795753287,
+   "created": 1795753287
   },
   {
-   "id": "P2NV211_lantern-meeting-visual-build",
-   "request": "Lantern Meeting visual build 1: the lacquer table with standing lanterns and name cards, top bar at full size",
-   "game": "Lantern Meeting",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NV204_lantern-meeting-visual-study"
-   ],
-   "priority": "P2",
-   "why": "A satirical post casting a lab's weekly group meeting as a palace court where the boss's nod buys supplies.",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NV212_lantern-meeting-visual-build-pieces",
-   "request": "Lantern Meeting visual build 2: move cards with seals, evidence tiles, the panel ledge, flip and light motion, new og.png",
-   "game": "Lantern Meeting",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NV211_lantern-meeting-visual-build"
-   ],
-   "priority": "P2",
-   "why": "A satirical post casting a lab's weekly group meeting as a palace court where the boss's nod buys supplies.",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NV217_coat-corridor-visual-study",
-   "request": "Coat Corridor: design its first visual round (study, mock, build tasks)",
-   "game": "Coat Corridor",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "visual",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P2NR228_rereview-coat-corridor-after-caption-and-sizes"
-   ],
-   "priority": "P2",
-   "why": "A fashion clip of white lab coats worn over loud colours in a tiled hospital corridor.",
-   "state": "done",
-   "at": 1795331921,
-   "created": 1795331921
-  },
-  {
-   "id": "P2NV218_coat-corridor-visual-build-board",
-   "request": "P2NV218_coat corridor visual build board",
-   "game": "Coat Corridor",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P2NV217_coat-corridor-visual-study"
-   ],
-   "priority": "P2",
-   "why": "A fashion clip of white lab coats worn over loud colours in a tiled hospital corridor.",
-   "state": "done",
-   "at": 1795333691,
-   "created": 1795333691
-  },
-  {
-   "id": "P2NF118_orbit-rings-review-fixes",
-   "request": "Orbit Rings: tell wheels and windows apart, readable letters, real goal lines, fits a small phone",
-   "game": "Orbit Rings",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR193_resting-review-redline-river-and-orbit-rings"
-   ],
-   "priority": "P3",
-   "why": "A math visualization post of permutation orbits and the Hungarian Rings puzzle.",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NF120_lens-screen-big-words-and-fit",
-   "request": "Lens Screen: bigger words, worded result buttons, one screen on phones",
-   "game": "Lens Screen",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR195_resting-review-triangle-lexicon-and-lens-screen"
-   ],
-   "priority": "P3",
-   "why": "A short video of a photographer shooting through a printed patterned glass screen instead of using editing software.",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NF121_fake-philosopher-review-fixes",
-   "request": "Fake Philosopher: slips that read, one goal line per level, the Mohist's finger shows the count, fits a small phone",
-   "game": "Fake Philosopher",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR198_resting-review-fake-philosopher-and-spirit-billboard"
-   ],
-   "priority": "P3",
-   "why": "A checklist post on how to pass as a continental philosopher, a prose poem's broken-off word, and a stick-figure meme of a speaker correcting himself.",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NF122_spirit-billboard-review-fixes",
-   "request": "Spirit Billboard: honest goal line and score words, tap-to-change shown on the board, gentle daily, fits a small phone",
-   "game": "Spirit Billboard",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR198_resting-review-fake-philosopher-and-spirit-billboard"
-   ],
-   "priority": "P3",
-   "why": "A roadside spirit-guide advertising billboard, plus a joke about a bugged room where the unseen audience reacts.",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NF124_herbarium-one-screen-clean-deck-and-a-target",
-   "request": "Herbarium: the guess fits one screen, no field photos or visible labels, and each daily says what a good guess is",
-   "game": "Herbarium Guess",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR196_resting-review-biosteganography-and-herbarium-guess"
-   ],
-   "priority": "P3",
-   "why": "Pressed plant herbarium specimens from open archives, with the label cropped away; guess where and when a real specimen was collected from the plant alone.",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NF128_four-thirty-three-big-words-and-room-ends",
-   "request": "Room Tone: the room's rule and score in big type with par on screen, and a room ends when its clock runs out",
-   "game": "Room Tone",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR202_rereview-four-thirty-three-after-fixes"
-   ],
-   "priority": "P3",
-   "why": "The 1952 silent piece 4′33″ and a contest poster for it.",
-   "state": "done",
-   "at": 1795307057,
-   "created": 1795307057
-  },
-  {
-   "id": "P2NF130_orbit-rings-level4-words-and-zh-labels",
-   "request": "Orbit Rings: level 4 stops naming a pinned letter that is not there; Chinese mode names its levels and Why button in Chinese",
-   "game": "Orbit Rings",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR206_rereview-orbit-rings-after-fixes"
-   ],
-   "priority": "P3",
-   "why": "A math visualization post of permutation orbits and the Hungarian Rings puzzle.",
-   "state": "done",
-   "at": 1795298602,
-   "created": 1795298602
-  },
-  {
-   "id": "P2NF131_lens-screen-small-phone-rule-line",
-   "request": "Lens Screen: phones shorter than 700 px show the drag instruction again, the Chinese name stays on one line, and the result buttons sit on screen",
-   "game": "Lens Screen",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR208_rereview-lens-screen-after-fixes"
-   ],
-   "priority": "P3",
-   "why": "A short video of a photographer shooting through a printed patterned glass screen instead of using editing software.",
-   "state": "done",
-   "at": 1795298917,
-   "created": 1795298917
-  },
-  {
-   "id": "P2NF132_fake-philosopher-finger-and-new-claim",
-   "request": "Fake Philosopher: the claim a renaming adds shows on the page, and the sceptic's arm really rises",
+   "id": "P2FP01_fake-philosopher-paper-in-chinese",
+   "request": "Fake Philosopher: the paper, level names and Why? in Chinese",
    "game": "Fake Philosopher",
    "route": "Claude",
    "model": "sonnet",
@@ -774,18 +319,18 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NR209_rereview-fake-philosopher-after-fixes"
+    "P2NX46_fake-philosopher-lead"
    ],
    "priority": "P3",
    "why": "A checklist post on how to pass as a continental philosopher, a prose poem's broken-off word, and a stick-figure meme of a speaker correcting himself.",
    "state": "done",
-   "at": 1795299471,
-   "created": 1795299471
+   "at": 1795753287,
+   "created": 1795753287
   },
   {
-   "id": "P2FS70_onescreen-gate-inner-scroll",
-   "request": "The one-screen swipe check counts a board that scrolls its own page box as scrolling",
-   "game": "Studio",
+   "id": "P2LN00_lens-screen-chinese-card-and-320",
+   "request": "Lens Screen",
+   "game": "Lens Screen",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
@@ -793,1324 +338,51 @@
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NR178_rereview-letter-lines-after-lead"
+    "P2NX45_lens-screen-lead"
    ],
-   "priority": null,
-   "why": "",
+   "priority": "P3",
+   "why": "A short video of a photographer shooting through a printed patterned glass screen instead of using editing software.",
    "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
+   "at": 1795753287,
+   "created": 1795753287
   },
   {
-   "id": "P2KS09_kit-sync-batch-9",
-   "request": "Kit sync for Gilded Poster, Same Spots, Gold Star and Still a Heap",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2KS12_kit-sync-next-please-no-favorites-out-of-the-corner",
-   "request": "Kit sync for Next Please, No Favorites and Out of the Corner after their re-reviews",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR171_rereview-out-of-the-corner-and-next-please",
-    "P2NR172_rereview-no-favorites-and-guide-lines"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2KS15_still-fall-kit-port",
-   "request": "P2KS15_still fall kit port",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2KS10_kit-sync-batch-10"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2KS16_plain-telling-kit-port",
-   "request": "P2KS16_plain telling kit port",
+   "id": "P2NF146_plain-telling-night2-white-and-counter",
+   "request": "P2NF146_plain telling night2 white and counter",
    "game": "Plain Telling",
    "route": "Claude",
-   "model": "sonnet",
+   "model": "opus",
    "effort": "high",
    "kind": "build",
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2NF112_plain-telling-kit-sync-and-draw-tap"
+    "P2NR238_rereview-plain-telling-after-lead"
    ],
    "priority": null,
    "why": "A commentary on a 2002 film that tells one story three ways in red, blue and white.",
    "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
+   "at": 1795753362,
+   "created": 1795753362
   },
   {
-   "id": "P2KS19_still-a-heap-kit-port",
-   "request": "P2KS19_still a heap kit port",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2KS09_kit-sync-batch-9"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795312897,
-   "created": 1795312897
-  },
-  {
-   "id": "P2NB45_no-unison-rule-in-goal",
-   "request": "No Unison: each song's rule shown in full above the board",
-   "game": "No Unison",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NX39_no-unison-rule-words-lead"
-   ],
-   "priority": null,
-   "why": "An imagined stage of feuding musicians, sparked by images of rivals sharing one stage.",
-   "state": "done",
-   "at": 1795298002,
-   "created": 1795298002
-  },
-  {
-   "id": "P2NF115_think-elephant",
-   "request": "P2NF115_think elephant",
-   "game": "Think Elephant",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR187_rereview-notched-boat-and-think-elephant-after-fixes"
-   ],
-   "priority": null,
-   "why": "Touch cells of a dark room to narrow down which elephant is there (blind men and the elephant, Guess Who splitting), then name it.",
-   "state": "done",
-   "at": 1795292689,
-   "created": 1795292689
-  },
-  {
-   "id": "P2NF137_out-of-the-corner-zh-hud-words",
-   "request": "Out of the Corner: the Chinese counter row says 第 4 夜 and 天亮, not N4",
-   "game": "Out Of The Corner",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR216_rereview-out-of-the-corner-round5"
-   ],
-   "priority": null,
-   "why": "A remix of Nobody Looking and Walls Have Ears through averted vision, how faint stars vanish when looked at directly.",
-   "state": "done",
-   "at": 1795308068,
-   "created": 1795308068
-  },
-  {
-   "id": "P2NF138_plain-telling-draw-tap-and-candles",
-   "request": "Plain Telling: tapping Draw on a phone shows the solved night instead of skipping to the next one; the candle count matches",
-   "game": "Plain Telling",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR201_rereview-plain-telling-after-fixes"
-   ],
-   "priority": null,
-   "why": "A commentary on a 2002 film that tells one story three ways in red, blue and white.",
-   "state": "done",
-   "at": 1795308437,
-   "created": 1795308437
-  },
-  {
-   "id": "P2NF142_no-unison-next-level-board-height",
-   "request": "No Unison: after a win, Next level no longer pushes the Play/Listen/Step/Undo row below the screen on small phones",
-   "game": "No Unison",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "An imagined stage of feuding musicians, sparked by images of rivals sharing one stage.",
-   "state": "done",
-   "at": 1795328800,
-   "created": 1795328800
-  },
-  {
-   "id": "P2NR181_rereview-crushed-can-and-shortest-law",
-   "request": "Re-review Crushed Can and Shortest Law after their look builds",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NV166_can-lantern-visual-build-chrome",
-    "P2NV195_shortest-law-level-order-and-daily-line"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795292690,
-   "created": 1795292690
-  },
-  {
-   "id": "P2NR201_rereview-plain-telling-after-fixes",
-   "request": "Plain Telling: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF112_plain-telling-kit-sync-and-draw-tap",
-    "P2KS16_plain-telling-kit-port"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR203_rereview-the-folder-after-fixes",
-   "request": "The Folder: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF114_the-folder-say-rna-and-real-choice"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR204_rereview-think-elephant-after-fixes",
-   "request": "Think Elephant: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF115_think-elephant"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR205_rereview-billboard-wars-after-fixes",
-   "request": "Billboard Wars: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF117_billboard-wars-readable-rays-and-fit"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR206_rereview-orbit-rings-after-fixes",
-   "request": "Orbit Rings: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF118_orbit-rings-review-fixes"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR207_rereview-triangle-lexicon-after-fixes",
-   "request": "Triangle Lexicon: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF119_triangle-lexicon-par-and-fit"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR208_rereview-lens-screen-after-fixes",
-   "request": "Lens Screen: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF120_lens-screen-big-words-and-fit"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR209_rereview-fake-philosopher-after-fixes",
-   "request": "Fake Philosopher: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF121_fake-philosopher-review-fixes"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR210_rereview-spirit-billboard-after-fixes",
-   "request": "Spirit Billboard: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF122_spirit-billboard-review-fixes"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR211_rereview-biosteganography-after-fixes",
-   "request": "Biosteganography: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF123_biosteganography-stripes-320-and-real-reading"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR212_rereview-herbarium-guess-after-fixes",
-   "request": "Herbarium Guess: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF124_herbarium-one-screen-clean-deck-and-a-target"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR213_rereview-alias-loaf-after-fixes",
-   "request": "Alias Loaf: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF125_alias-loaf-review-fixes"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR214_rereview-coat-corridor-after-fixes",
-   "request": "Coat Corridor: stranger re-review after its review fixes (obvious play first, five-second test)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF126_coat-corridor-review-fixes"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR215_rereview-marble-machine-round5",
-   "request": "Marble Machine: stranger re-review of the live page after tonight's change; ship goes to its release check",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NX37_marble-machine"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR216_rereview-out-of-the-corner-round5",
-   "request": "Out of the Corner: stranger re-review of the live page after tonight's change; ship goes to its release check",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF110_out-of-the-corner-fixes",
-    "P2KS12_kit-sync-next-please-no-favorites-out-of-the-corner"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR217_rereview-hallway-posters-round5",
-   "request": "Hallway Posters: stranger re-review of the live page after tonight's change; ship goes to its release check",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NV199_hallway-posters-visual-build-look"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR218_rereview-floating-city-round5",
-   "request": "Floating City: stranger re-review of the live page after tonight's change; ship goes to its release check",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NV203_floating-city-visual-build-board"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR219_rereview-knockout-plate-round5",
-   "request": "Knockout Plate: stranger re-review of the live page after tonight's change; ship goes to its release check",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NV208_knockout-plate-visual-build-pieces"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR220_rereview-the-apprentice-round5",
-   "request": "The Apprentice: stranger re-review of the live page after tonight's change; ship goes to its release check",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NV201_the-apprentice-visual-build-chrome"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR221_rereview-thirsty-clicks-round5",
-   "request": "Thirsty Clicks: stranger re-review of the live page after tonight's change; ship goes to its release check",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NV210_thirsty-clicks-visual-build-flat"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR222_rereview-lantern-meeting-round5",
-   "request": "Lantern Meeting: stranger re-review of the live page after tonight's change; ship goes to its release check",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NV212_lantern-meeting-visual-build-pieces"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NR225_rereview-no-unison-rule-words",
-   "request": "No Unison: cold re-review after the rule-words build",
-   "game": "No Unison",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NB45_no-unison-rule-in-goal"
-   ],
-   "priority": null,
-   "why": "An imagined stage of feuding musicians, sparked by images of rivals sharing one stage.",
-   "state": "done",
-   "at": 1795298002,
-   "created": 1795298002
-  },
-  {
-   "id": "P2NR227_rereview-no-unison-after-next-level-fit",
-   "request": "Re-review No Unison now that Next level keeps the button row on a small phone",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NF142_no-unison-next-level-board-height"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795330796,
-   "created": 1795330796
-  },
-  {
-   "id": "P2NR228_rereview-coat-corridor-after-caption-and-sizes",
-   "request": "Re-review Coat Corridor after the caption, one door name and bigger text went live",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2NR214_rereview-coat-corridor-after-fixes"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795330811,
-   "created": 1795330811
-  },
-  {
-   "id": "P2NR229_rereview-lantern-meeting-after-small-phone-fix",
-   "request": "Re-review Lantern Meeting now the practice round keeps Next on the smallest phone",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2RC38_release-check-lantern-meeting"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795330822,
-   "created": 1795330822
-  },
-  {
-   "id": "P2NR230_rereview-the-apprentice-after-320-polish",
-   "request": "Re-review The Apprentice after the small-phone fit and lesson-ring polish",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "review",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P3NF136_the-apprentice-polish-320-ring-and-fit"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795330830,
-   "created": 1795330830
-  },
-  {
-   "id": "P2NT05_destinations-for-shipped-games",
-   "request": "a proposed place to go for every shipped game that has none yet (proposal only, nothing decided)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NV208_knockout-plate-visual-build-pieces",
-   "request": "Knockout Plate look, part 2: the caps and the plate drawn in full, the cap click, preview picture and share line",
-   "game": "Knockout Plate",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NV207_knockout-plate-visual-build-layout"
-   ],
-   "priority": null,
-   "why": "A lab story of knocking out bacterial genes one by one, plus a challenge to predict knockouts never seen.",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NV209_thirsty-clicks-visual-build-chrome",
-   "request": "Thirsty Clicks: a one-row top bar with a nursery-tag mark, the HUD and the gardens line big and out of the board",
-   "game": "Thirsty Clicks",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NV205_thirsty-clicks-visual-study"
-   ],
-   "priority": null,
-   "why": "A post saying tomatoes scream when hurt, from the published finding that stressed plants click in ultrasound.",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NV210_thirsty-clicks-visual-build-flat",
-   "request": "Thirsty Clicks: the board becomes a seed flat seen from above, with a punched tag on a stake for every listen",
-   "game": "Thirsty Clicks",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NV209_thirsty-clicks-visual-build-chrome"
-   ],
-   "priority": null,
-   "why": "A post saying tomatoes scream when hurt, from the published finding that stressed plants click in ultrasound.",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NV213_letter-lines-visual-build-page",
-   "request": "P2NV213_letter lines visual build page",
+   "id": "P2NF147_letter-lines-three-bugs",
+   "request": "Letter Lines: pencil practice readable on leather, zh rings on the right characters, no grey block after zh find wins",
    "game": "Letter Lines",
    "route": "Claude",
    "model": "sonnet",
    "effort": "high",
-   "kind": "visual",
+   "kind": "fix",
    "size": "one repo",
    "estMinutes": null,
    "after": [
-    "P2FS70_onescreen-gate-inner-scroll"
+    "P2NR223_rereview-letter-lines-round5"
    ],
    "priority": null,
    "why": "A typography tool that joins every copy of a chosen letter on a scanned book page with coloured lines.",
    "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NV214_letter-lines-visual-build-desk",
-   "request": "P2NV214_letter lines visual build desk",
-   "game": "Letter Lines",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "visual",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NV213_letter-lines-visual-build-page"
-   ],
-   "priority": null,
-   "why": "A typography tool that joins every copy of a chosen letter on a scanned book page with coloured lines.",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NV215_flying-white-kit-layout-study",
-   "request": "Flying White: a layout study for the move to the current shared kit, so the next port matches the live look at 390 and 320",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2KS13_flying-white-kit-port"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NV216_pinch-points-kit-layout-study",
-   "request": "Pinch Points: a layout study for the move to the current shared kit, so the next port matches the live look at 390 and 320",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2KS14_pinch-points-kit-port"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2NX39_no-unison-rule-words-lead",
-   "request": "No Unison: each song's new rule readable in full on the board at every phone size, and songs that repeat a decision made different",
-   "game": "No Unison",
-   "route": "Claude",
-   "model": "opus",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR186_rereview-motif-hero-and-no-unison-after-look"
-   ],
-   "priority": null,
-   "why": "An imagined stage of feuding musicians, sparked by images of rivals sharing one stage.",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC22_release-check-crushed-can-shortest-law",
-   "request": "Release checklist for Crushed Can and Shortest Law after their re-review",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR181_rereview-crushed-can-and-shortest-law"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC24_release-check-literal-spirit-ring-of-keys",
-   "request": "Release checklist for Literal Spirit and Ring of Keys after their re-review",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR184_rereview-literal-spirit-and-ring-of-keys-after-look"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC26_release-check-motif-hero-no-unison",
-   "request": "Release checklist for Motif Hero and No Unison after their re-review",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR186_rereview-motif-hero-and-no-unison-after-look"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC28_next-please-release-check",
-   "request": "Next Please: release checklist after the window look",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P2NR171_rereview-out-of-the-corner-and-next-please",
-    "P2KS12_kit-sync-next-please-no-favorites-out-of-the-corner"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC30_acrylic-beacon-release-check",
-   "request": "Acrylic Beacon: close the release checklist gaps a machine can close",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR199_rereview-acrylic-beacon-words-and-coves"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC31_release-check-marble-machine",
-   "request": "Marble Machine: release checklist pass after its re-review (credits, previews, accessible play, console)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR215_rereview-marble-machine-round5"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC32_release-check-out-of-the-corner",
-   "request": "Out of the Corner: release checklist pass after its re-review (credits, previews, accessible play, console)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR216_rereview-out-of-the-corner-round5"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC33_release-check-hallway-posters",
-   "request": "Hallway Posters: release checklist pass after its re-review (credits, previews, accessible play, console)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR217_rereview-hallway-posters-round5"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC34_release-check-floating-city",
-   "request": "Floating City: release checklist pass after its re-review (credits, previews, accessible play, console)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR218_rereview-floating-city-round5"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC35_release-check-knockout-plate",
-   "request": "Knockout Plate: release checklist pass after its re-review (credits, previews, accessible play, console)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR219_rereview-knockout-plate-round5"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC36_release-check-the-apprentice",
-   "request": "The Apprentice: release checklist pass after its re-review (credits, previews, accessible play, console)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR220_rereview-the-apprentice-round5"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC38_release-check-lantern-meeting",
-   "request": "Lantern Meeting: release checklist pass after its re-review (credits, previews, accessible play, console)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2NR222_rereview-lantern-meeting-round5"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795326368,
-   "created": 1795326368
-  },
-  {
-   "id": "P2RC40_release-check-honest-sign-scribes-blotter",
-   "request": "Honest Sign and Scribes Blotter: first release checklist pass (credits, previews, accessible play, console)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC41_release-check-mint-same-badge",
-   "request": "Mint and Same Badge: first release checklist pass (credits, previews, accessible play, console)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC42_release-check-sockglass-time-material",
-   "request": "Sockglass and Time as Material: first release checklist pass (credits, previews, accessible play, console)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC43_release-check-gallery-guess-mirror-hold",
-   "request": "Gallery Guess and Mirror Hold: first release checklist pass (credits, previews, accessible play, console)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC44_release-check-thumb-stand-peony-dream",
-   "request": "Thumb Stand and Peony Dream: first release checklist pass (credits, previews, accessible play, console)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC45_release-check-beetle-in-a-box",
-   "request": "Beetle in a Box: first release checklist pass (logo mark, preview meta, share line, accessible play)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC46_release-check-life-statistics",
-   "request": "Life Statistics: first release checklist pass (logo mark, preview meta, share line, accessible play)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC47_release-check-notched-boat",
-   "request": "Notched Boat: first release checklist pass (preview meta, share line, board snapshot, accessible play)",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
-  },
-  {
-   "id": "P2RC48_release-check-coat-corridor",
-   "request": "Coat Corridor: close the machine-checkable release checklist gaps",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "several repos",
-   "estMinutes": null,
-   "after": [
-    "P2NR228_rereview-coat-corridor-after-caption-and-sizes"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795331958,
-   "created": 1795331958
-  },
-  {
-   "id": "P2UX09_refresh-release-sweep-files",
-   "request": "Re-run the stored release sweep so release checks stop printing stale lines",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [
-    "P2RC34_release-check-floating-city"
-   ],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795330922,
-   "created": 1795330922
-  },
-  {
-   "id": "P3NF135_knockout-plate-polish-zh-title-and-practice-cap",
-   "request": "Knockout Plate",
-   "game": "Knockout Plate",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "one repo",
-   "estMinutes": null,
-   "after": [
-    "P2RC35_release-check-knockout-plate"
-   ],
-   "priority": null,
-   "why": "A lab story of knocking out bacterial genes one by one, plus a challenge to predict knockouts never seen.",
-   "state": "done",
-   "at": 1795302640,
-   "created": 1795302640
-  },
-  {
-   "id": "P3OPS00_refresh-release-records",
-   "request": "Refresh the stored accessibility and one-screen records the release check reads",
-   "game": "Studio",
-   "route": "Claude",
-   "model": "sonnet",
-   "effort": "high",
-   "kind": "build",
-   "size": "studio",
-   "estMinutes": null,
-   "after": [],
-   "priority": null,
-   "why": "",
-   "state": "done",
-   "at": 1795294402,
-   "created": 1795294402
+   "at": 1795753376,
+   "created": 1795753376
   }
  ]
 }

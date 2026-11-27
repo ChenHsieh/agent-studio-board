@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-22",
- "since": "2026-11-08",
- "openDecisions": 15,
+ "generated": "2026-11-27",
+ "since": "2026-11-13",
+ "openDecisions": 18,
  "decisions": [
   {
    "game": "play-template",
@@ -13,7 +13,7 @@
    "facts": "Bigger text (house rule 24) wraps the top-bar buttons onto a second row, and the shared layout check then fails the home screen of every game on the new kit. A 4-line change to that check (a button below the title row counts as clear of it) was tested on a copy: fail becomes pass. The accessible-tex",
    "pick": "Apply the 4-line change. Then: The two-row bar, since text never shrinks.",
    "kind": "cheap",
-   "daysWaiting": 30,
+   "daysWaiting": 35,
    "goesAheadOn": "2026-11-09",
    "blocksGames": 17,
    "blocksTasks": 0,
@@ -21,27 +21,6 @@
    "ifNothing": "Goes ahead with the pick on 2026-11-09.",
    "answer": "ask|play-template|",
    "rank": 1
-  },
-  {
-   "game": "nobody-looking",
-   "gameName": "#127 Nobody Looking",
-   "games": [
-    "fly-swarm",
-    "nobody-looking",
-    "seal-carver"
-   ],
-   "question": "One-screen check B (a swipe on the board must scroll the page) fails games whose board needs every drag, such as this one, Seal Carver, Fly Swarm and Nesting Scrap, even when the play page already fits the phone and has nothing to scroll.",
-   "facts": "One-screen check B (a swipe on the board must scroll the page) fails games whose board needs every drag, such as this one, Seal Carver, Fly Swarm and Nesting Scrap, even when the play page already fits the phone and has nothing to scroll. Four one-screen tasks are stopped on it. A 5-line change make",
-   "pick": "Yes.",
-   "kind": "cheap",
-   "daysWaiting": 23,
-   "goesAheadOn": "2026-11-09",
-   "blocksGames": 3,
-   "blocksTasks": 4,
-   "blocks": 7,
-   "ifNothing": "Goes ahead with the pick on 2026-11-09.",
-   "answer": "ask|nobody-looking|",
-   "rank": 2
   },
   {
    "game": "colony-count",
@@ -57,13 +36,34 @@
    "facts": "GoatCounter visit counter is wired but off in five games (this one, Walls Have Ears, Cymatic Plate, Glasshouse, UGA Grad Survivor) until a site code is chosen.",
    "pick": "Sign up with one shared code and switch all five on.",
    "kind": "only-you",
-   "daysWaiting": 30,
+   "daysWaiting": 35,
    "goesAheadOn": null,
    "blocksGames": 5,
-   "blocksTasks": 0,
-   "blocks": 5,
+   "blocksTasks": 2,
+   "blocks": 7,
    "ifNothing": "Nothing happens until you answer; no work is spent on it.",
    "answer": "ask|colony-count|",
+   "rank": 2
+  },
+  {
+   "game": "nobody-looking",
+   "gameName": "#127 Nobody Looking",
+   "games": [
+    "fly-swarm",
+    "nobody-looking",
+    "seal-carver"
+   ],
+   "question": "One-screen check B (a swipe on the board must scroll the page) fails games whose board needs every drag, such as this one, Seal Carver, Fly Swarm and Nesting Scrap, even when the play page already fits the phone and has nothing to scroll.",
+   "facts": "One-screen check B (a swipe on the board must scroll the page) fails games whose board needs every drag, such as this one, Seal Carver, Fly Swarm and Nesting Scrap, even when the play page already fits the phone and has nothing to scroll. Four one-screen tasks are stopped on it. A 5-line change make",
+   "pick": "Yes.",
+   "kind": "cheap",
+   "daysWaiting": 28,
+   "goesAheadOn": "2026-11-09",
+   "blocksGames": 3,
+   "blocksTasks": 4,
+   "blocks": 7,
+   "ifNothing": "Goes ahead with the pick on 2026-11-09.",
+   "answer": "ask|nobody-looking|",
    "rank": 3
   },
   {
@@ -79,7 +79,7 @@
    "facts": "Eleven shipped games had no named place to go (rule ). designs/destinations/PROPOSALS_20261113.md proposes one route each: three logic puzzles (Scribe's Blotter, Honest Sign, Mint) on one free indie-game page first, Same Badge as a class demo, Time as Material and Gallery Guess at a festival or muse",
    "pick": "Accept all picks; polish continues on these routes.",
    "kind": "cheap",
-   "daysWaiting": 9,
+   "daysWaiting": 14,
    "goesAheadOn": "2026-11-16",
    "blocksGames": 4,
    "blocksTasks": 1,
@@ -87,6 +87,63 @@
    "ifNothing": "Goes ahead with the pick on 2026-11-16.",
    "answer": "ask|destinations|",
    "rank": 4
+  },
+  {
+   "game": "fake-philosopher",
+   "gameName": "#97 Fake Philosopher",
+   "games": [
+    "fake-philosopher"
+   ],
+   "question": "The whole paper in Chinese mode (claims, Latin tags as 文言 classical tags, myths, coined words), zh level names (白馬論, 指物論, 堅白論...), a Chinese Why?, and the finish as a whole word (\"Unnahbarkeit.\" / 云爾。) instead of \"Unnah-\" are written as options with a pick in designs/FAKE_PHILOSOPHER_LEAD_20261125.m",
+   "facts": "The whole paper in Chinese mode (claims, Latin tags as 文言 classical tags, myths, coined words), zh level names (白馬論, 指物論, 堅白論...), a Chinese Why?, and the finish as a whole word (\"Unnahbarkeit.\" / 云爾。) instead of \"Unnah-\" are written as options with a pick in designs/FAKE_PHILOSOPHER_LEAD_20261125.m",
+   "pick": "Yes to the picks.",
+   "kind": "only-you",
+   "daysWaiting": 2,
+   "goesAheadOn": null,
+   "blocksGames": 1,
+   "blocksTasks": 2,
+   "blocks": 3,
+   "ifNothing": "Nothing happens until you answer; no work is spent on it.",
+   "answer": "ask|fake-philosopher|",
+   "rank": 5
+  },
+  {
+   "game": "lens-screen",
+   "gameName": "#41 Lens Screen",
+   "games": [
+    "lens-screen"
+   ],
+   "question": "Chinese words for the How to play card (拍出客人想要的照片。 / 把網片拖到觀景窗上，眼睛要看得清楚。 / 靈感來自 lightnlense。每張網片都是畫出來的。) and the language chip 繁中 -> 中文 are options with a pick in designs/LENS_SCREEN_LEAD_20261125.md; the 320 px slide and wordmark fixes ride along.",
+   "facts": "Chinese words for the How to play card (拍出客人想要的照片。 / 把網片拖到觀景窗上，眼睛要看得清楚。 / 靈感來自 lightnlense。每張網片都是畫出來的。) and the language chip 繁中 -> 中文 are options with a pick in designs/LENS_SCREEN_LEAD_20261125.md; the 320 px slide and wordmark fixes ride along. The build stays unmerged until you say yes.",
+   "pick": "Yes to the picks.",
+   "kind": "only-you",
+   "daysWaiting": 2,
+   "goesAheadOn": null,
+   "blocksGames": 1,
+   "blocksTasks": 2,
+   "blocks": 3,
+   "ifNothing": "Nothing happens until you answer; no work is spent on it.",
+   "answer": "ask|lens-screen|",
+   "rank": 6
+  },
+  {
+   "game": "triangle-lexicon",
+   "gameName": "#28 Triangle Lexicon",
+   "games": [
+    "triangle-lexicon"
+   ],
+   "question": "Chinese words for the How to play card, every level hint, the notebook and 12 level names, plus a 中文/EN button between Levels and ?, are written as options with a pick in designs/TRIANGLE_LEXICON_LEAD_20261125.md.",
+   "facts": "Chinese words for the How to play card, every level hint, the notebook and 12 level names, plus a 中文/EN button between Levels and ?, are written as options with a pick in designs/TRIANGLE_LEXICON_LEAD_20261125.md. Level 5 English hint would become \"The prism with red and blue lines splits white ligh",
+   "pick": "Yes to the picks.",
+   "kind": "only-you",
+   "daysWaiting": 2,
+   "goesAheadOn": null,
+   "blocksGames": 1,
+   "blocksTasks": 2,
+   "blocks": 3,
+   "ifNothing": "Nothing happens until you answer; no work is spent on it.",
+   "answer": "ask|triangle-lexicon|",
+   "rank": 7
   },
   {
    "game": "blackout-notice",
@@ -98,14 +155,14 @@
    "facts": "Read the 20 notices before it is promoted: the wording was written by the agent and no person has read it.",
    "pick": "Read levels 1 to 20 once, fix tone, then promote.",
    "kind": "only-you",
-   "daysWaiting": 30,
+   "daysWaiting": 35,
    "goesAheadOn": null,
    "blocksGames": 1,
    "blocksTasks": 0,
    "blocks": 1,
    "ifNothing": "Nothing happens until you answer; no work is spent on it.",
    "answer": "ask|blackout-notice|",
-   "rank": 5
+   "rank": 8
   },
   {
    "game": "chai-boil",
@@ -117,14 +174,14 @@
    "facts": "Prayer-flag strip in the mountain hut set: five extra colours on one strip, all six kitchens still pass the contrast check.",
    "pick": "Keep it; it costs little and no kitchen failed the contrast check.",
    "kind": "cheap",
-   "daysWaiting": 30,
+   "daysWaiting": 35,
    "goesAheadOn": "2026-11-09",
    "blocksGames": 1,
    "blocksTasks": 0,
    "blocks": 1,
    "ifNothing": "Goes ahead with the pick on 2026-11-09.",
    "answer": "ask|chai-boil|",
-   "rank": 6
+   "rank": 9
   },
   {
    "game": "grass-crossword",
@@ -136,14 +193,14 @@
    "facts": "The credit links the artist's Instagram profile because the exact post address is unknown.",
    "pick": "Keep the profile link until the post is found.",
    "kind": "cheap",
-   "daysWaiting": 30,
+   "daysWaiting": 35,
    "goesAheadOn": "2026-11-09",
    "blocksGames": 1,
    "blocksTasks": 0,
    "blocks": 1,
    "ifNothing": "Goes ahead with the pick on 2026-11-09.",
    "answer": "ask|grass-crossword|",
-   "rank": 7
+   "rank": 10
   },
   {
    "game": "lot-waits",
@@ -155,14 +212,14 @@
    "facts": "Native read of the 14 composed poems and their plain-language lines is owed.",
    "pick": "One native read of all fourteen before the share card goes out.",
    "kind": "only-you",
-   "daysWaiting": 30,
+   "daysWaiting": 35,
    "goesAheadOn": null,
    "blocksGames": 1,
    "blocksTasks": 0,
    "blocks": 1,
    "ifNothing": "Nothing happens until you answer; no work is spent on it.",
    "answer": "ask|lot-waits|",
-   "rank": 8
+   "rank": 11
   },
   {
    "game": "name-to-carry",
@@ -174,14 +231,14 @@
    "facts": "Native read of the Mandarin phrases across the 8 scenes is still owed before sharing.",
    "pick": "Have a native reader check them first, Mandarin leads the game.",
    "kind": "only-you",
-   "daysWaiting": 30,
+   "daysWaiting": 35,
    "goesAheadOn": null,
    "blocksGames": 1,
    "blocksTasks": 0,
    "blocks": 1,
    "ifNothing": "Nothing happens until you answer; no work is spent on it.",
    "answer": "ask|name-to-carry|",
-   "rank": 9
+   "rank": 12
   },
   {
    "game": "redacxiv",
@@ -193,14 +250,14 @@
    "facts": "The Pages build is stuck: the live page was patched by hand because a full rebuild needs npm, and the old BioRedactle address still returns 404.",
    "pick": "Fix the build so the patch is not the only copy; leave the old address.",
    "kind": "cheap",
-   "daysWaiting": 30,
+   "daysWaiting": 35,
    "goesAheadOn": "2026-11-09",
    "blocksGames": 1,
    "blocksTasks": 0,
    "blocks": 1,
    "ifNothing": "Goes ahead with the pick on 2026-11-09.",
    "answer": "ask|redacxiv|",
-   "rank": 10
+   "rank": 13
   },
   {
    "game": "coin-dumplings",
@@ -212,14 +269,14 @@
    "facts": "Fourth review says revise for one reason: a How to play card (35 words, it scrolls, second picture cut off) still opens in front of level 1, where the design asked for no card or one picture and Play. The rest of the design list is in, and guessing still loses from level 3 on.",
    "pick": "One small fix that trims the card to its first picture and Play, then the visual round.",
    "kind": "only-you",
-   "daysWaiting": 9,
+   "daysWaiting": 14,
    "goesAheadOn": null,
    "blocksGames": 1,
    "blocksTasks": 0,
    "blocks": 1,
    "ifNothing": "Nothing happens until you answer; no work is spent on it.",
    "answer": "ask|coin-dumplings|",
-   "rank": 11
+   "rank": 14
   },
   {
    "game": "close-a-door",
@@ -231,14 +288,14 @@
    "facts": "Fourth review says revise. The lead build is all in: each stretch shows walk+crowd, the last child is ringed, a lock names the children who changed way, and locking every shortcut still misses the bell on houses 4-8. Left: house 1 shows the walk+crowd key before it is taught and its lesson says \"Fiv",
    "pick": "The narrow second lead.",
    "kind": "only-you",
-   "daysWaiting": 2,
+   "daysWaiting": 7,
    "goesAheadOn": null,
    "blocksGames": 1,
    "blocksTasks": 0,
    "blocks": 1,
    "ifNothing": "Nothing happens until you answer; no work is spent on it.",
    "answer": "ask|close-a-door|",
-   "rank": 12
+   "rank": 15
   },
   {
    "game": "fix-the-night",
@@ -250,14 +307,14 @@
    "facts": "Level 1 goal line reads \"Tap twice to calm. Dials into the stripes.\" A first-time reader asks tap what, calm what. Options: keep it; \"Tap a thing twice. Get its dial into the stripes.\"; \"Get every dial into the stripes.\" (the lesson strip now teaches the tap).",
    "pick": "The last one.",
    "kind": "cheap",
-   "daysWaiting": 2,
+   "daysWaiting": 7,
    "goesAheadOn": "2026-11-23",
    "blocksGames": 1,
    "blocksTasks": 0,
    "blocks": 1,
    "ifNothing": "Goes ahead with the pick on 2026-11-23.",
    "answer": "ask|fix-the-night|",
-   "rank": 13
+   "rank": 16
   },
   {
    "game": "two-tigers",
@@ -269,14 +326,14 @@
    "facts": "Fourth review says revise. The lead build is in: the ringed pass wins level 1 in one tap, passes say \"+N to West\", the fight line says who won, and keeping the beam level still misses par on every level from 3. Left: a pass card says \"+2 to East\" while East grows by 1 (the card is the fight bonus, t",
    "pick": "The narrow second lead.",
    "kind": "only-you",
-   "daysWaiting": 2,
+   "daysWaiting": 7,
    "goesAheadOn": null,
    "blocksGames": 1,
    "blocksTasks": 0,
    "blocks": 1,
    "ifNothing": "Nothing happens until you answer; no work is spent on it.",
    "answer": "ask|two-tigers|",
-   "rank": 14
+   "rank": 17
   },
   {
    "game": "out-of-the-corner",
@@ -288,17 +345,59 @@
    "facts": "Random wandering no longer wins, but standing still anywhere for a second catches a star: a finger that moves half a second and stops for under a second, without looking, still clears nights 4 to 6 about 63 to 69 percent of the time (a player who stops when a star shows wins 84 to 99 percent). Optio",
    "pick": "Hold 1 second, then a 3-person playtest.",
    "kind": "only-you",
-   "daysWaiting": 1,
+   "daysWaiting": 6,
    "goesAheadOn": null,
    "blocksGames": 1,
    "blocksTasks": 0,
    "blocks": 1,
    "ifNothing": "Nothing happens until you answer; no work is spent on it.",
    "answer": "ask|out-of-the-corner|",
-   "rank": 15
+   "rank": 18
   }
  ],
  "events": [
+  {
+   "kind": "regressed",
+   "game": "slice-and-bake",
+   "at": "2026-11-27",
+   "note": "No longer passes a release check it passed before.",
+   "gameName": "#34 Slice and Bake"
+  },
+  {
+   "kind": "regressed",
+   "game": "cymatic-plate",
+   "at": "2026-11-27",
+   "note": "No longer passes a release check it passed before.",
+   "gameName": "#85 Cymatic Plate"
+  },
+  {
+   "kind": "ship",
+   "game": "orbit-rings",
+   "at": "2026-11-25",
+   "note": "Turning paper wheels to carry letters into their windows is a real puzzle where turning whatever fills a window now still falls short from level six, every wheel has its own colour, and level 4 and th",
+   "gameName": "#81 Orbit Rings"
+  },
+  {
+   "kind": "revise",
+   "game": "makeshift-chair",
+   "at": "2026-11-25",
+   "note": "Stacking junk under a broken chair reads at a glance and the squash shows its cause on the board, but the plain fill-the-next-gap play reaches par on most later chairs, Chinese mode leaves English lin",
+   "gameName": "#35 Makeshift Chair"
+  },
+  {
+   "kind": "revise",
+   "game": "letter-lines",
+   "at": "2026-11-25",
+   "note": "The library table looks right and the nearest-letter path still misses the shortest stroke on every story page, but the pencil practice a new player meets first is dark text on dark green leather, and",
+   "gameName": "#110 Letter Lines"
+  },
+  {
+   "kind": "ship",
+   "game": "four-thirty-three",
+   "at": "2026-11-25",
+   "note": "Listening to the room and spending two pencils on the quiet sounds that ring together is a real choice the habit of tapping each sound as it comes misses, and the title, the Chinese words and the resu",
+   "gameName": "#100 Room Tone"
+  },
   {
    "kind": "ship",
    "game": "no-unison",
@@ -1542,9 +1641,11 @@
  "groups": [
   {
    "kind": "ship",
-   "count": 86,
-   "line": "86 games rated ship: #108 No Unison, #122 Coat Corridor, #115 Think Elephant and 83 more.",
+   "count": 88,
+   "line": "88 games rated ship: #81 Orbit Rings, #100 Room Tone, #108 No Unison and 85 more.",
    "games": [
+    "orbit-rings",
+    "four-thirty-three",
     "no-unison",
     "coat-corridor",
     "think-elephant",
@@ -1635,9 +1736,11 @@
   },
   {
    "kind": "revise",
-   "count": 60,
-   "line": "You sent 60 games back to refining: #28 Triangle Lexicon, #115 Think Elephant, #46 The Folder and 57 more.",
+   "count": 62,
+   "line": "You sent 62 games back to refining: #35 Makeshift Chair, #110 Letter Lines, #28 Triangle Lexicon and 59 more.",
    "games": [
+    "makeshift-chair",
+    "letter-lines",
     "triangle-lexicon",
     "think-elephant",
     "the-folder",
@@ -1744,6 +1847,15 @@
     "whiteboard-song",
     "tractatus-tree"
    ]
+  },
+  {
+   "kind": "regressed",
+   "count": 2,
+   "line": "2 games no longer pass a release check they passed before: #34 Slice and Bake, #85 Cymatic Plate.",
+   "games": [
+    "slice-and-bake",
+    "cymatic-plate"
+   ]
   }
  ],
  "stuck": [
@@ -1751,41 +1863,153 @@
    "kind": "blocked",
    "game": "",
    "gameName": "Studio tools",
-   "days": 2,
+   "days": 7,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "",
+   "gameName": "Studio tools",
+   "days": 1,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "dynasty-guess",
+   "gameName": "#50 Dynasty Guess",
+   "days": 1,
    "why": "Waiting; no reason written yet."
   },
   {
    "kind": "blocked",
    "game": "even-water",
    "gameName": "#131 Even Water",
-   "days": 30,
+   "days": 35,
    "why": "Stopped by the game checks after the build; needs a look before it goes on."
   },
   {
    "kind": "blocked",
    "game": "speaking-stone",
    "gameName": "#123 Speaking Stone",
-   "days": 30,
+   "days": 35,
    "why": "Stopped by the game checks after the build; needs a look before it goes on."
   },
   {
    "kind": "blocked",
-   "game": "",
-   "gameName": "Studio tools",
-   "days": 2,
+   "game": "honest-sign",
+   "gameName": "#150 Honest Sign",
+   "days": 5,
    "why": "Waiting; no reason written yet."
   },
   {
    "kind": "blocked",
-   "game": "",
-   "gameName": "Studio tools",
-   "days": 8,
-   "why": "Stopped by the game checks after the build; needs a look before it goes on."
+   "game": "scribes-blotter",
+   "gameName": "#151 Scribes Blotter",
+   "days": 5,
+   "why": "Waiting; no reason written yet."
   },
   {
    "kind": "blocked",
-   "game": "rasp",
-   "gameName": "#67 Rasp",
+   "game": "mint",
+   "gameName": "#153 Mint",
+   "days": 5,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "time-material",
+   "gameName": "#23 Time Material",
+   "days": 5,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "watched-pot",
+   "gameName": "#157 Watched Pot",
+   "days": 5,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "whos-at-the-door",
+   "gameName": "#181 Whos At The Door",
+   "days": 5,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "worm-bed",
+   "gameName": "#196 Worm Bed",
+   "days": 5,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "beetle-in-a-box",
+   "gameName": "#52 Beetle in a Box",
+   "days": 5,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "life-statistics",
+   "gameName": "#64 Life from Statistics",
+   "days": 5,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "colony-count",
+   "gameName": "#95 Colony Count",
+   "days": 1,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "colony-count",
+   "gameName": "#95 Colony Count",
+   "days": 1,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "fake-philosopher",
+   "gameName": "#97 Fake Philosopher",
+   "days": 1,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "flying-white",
+   "gameName": "#117 Flying White",
+   "days": 5,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "flying-white",
+   "gameName": "#117 Flying White",
+   "days": 5,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "pinch-points",
+   "gameName": "#119 Pinch Points",
+   "days": 5,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "pinch-points",
+   "gameName": "#119 Pinch Points",
+   "days": 5,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "lens-screen",
+   "gameName": "#41 Lens Screen",
    "days": 1,
    "why": "Waiting; no reason written yet."
   },
@@ -1793,22 +2017,120 @@
    "kind": "blocked",
    "game": "",
    "gameName": "Studio tools",
-   "days": 2,
+   "days": 7,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "",
+   "gameName": "Studio tools",
+   "days": 14,
+   "why": "Stopped by the game checks after the build; needs a look before it goes on."
+  },
+  {
+   "kind": "blocked",
+   "game": "rasp",
+   "gameName": "#67 Rasp",
+   "days": 7,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "silent-disco",
+   "gameName": "#105 Silent Disco",
+   "days": 5,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "coat-corridor",
+   "gameName": "#122 Coat Corridor",
+   "days": 5,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "coat-corridor",
+   "gameName": "#122 Coat Corridor",
+   "days": 5,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "",
+   "gameName": "Studio tools",
+   "days": 5,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "biosteganography",
+   "gameName": "#6 Biosteganography",
+   "days": 5,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "herbarium-guess",
+   "gameName": "#20 Herbarium Guess",
+   "days": 1,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "",
+   "gameName": "Studio tools",
+   "days": 1,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "",
+   "gameName": "Studio tools",
+   "days": 1,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "lantern-meeting",
+   "gameName": "#112 Lantern Meeting",
+   "days": 5,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "lantern-meeting",
+   "gameName": "#112 Lantern Meeting",
+   "days": 5,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "triangle-lexicon",
+   "gameName": "#28 Triangle Lexicon",
+   "days": 1,
+   "why": "Waiting; no reason written yet."
+  },
+  {
+   "kind": "blocked",
+   "game": "",
+   "gameName": "Studio tools",
+   "days": 7,
    "why": "Waiting; no reason written yet."
   },
   {
    "kind": "over-cap",
    "lane": "Refining",
-   "count": 7,
+   "count": 6,
    "cap": 4,
-   "why": "7 games in refining, limit 4. New work waits until some move on."
+   "why": "6 games in refining, limit 4. New work waits until some move on."
   }
  ],
  "spend": {
   "label": "estimate, not a bill",
-  "usdTotal": 6353,
+  "usdTotal": 6472,
   "usdPerShippedGame": 38.0,
-  "gamesShipped": 114,
+  "gamesShipped": 115,
   "claudeShare": 0.99,
   "codexWeek": {
    "usedPct": 12,
